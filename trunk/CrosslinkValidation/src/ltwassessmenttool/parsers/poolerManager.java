@@ -358,7 +358,7 @@ public class poolerManager {
                         }
                         RunTopics.add(thisTopic);
                         isThisTopic = true;
-                    } else if (xsr.getLocalName().equals("outgoinglinks")) {
+                    } else if (xsr.getLocalName().equals("outgoinglinks")  || xsr.getLocalName().equals("outgoing")) {
                         isOutgoing = true;
                         anchorsVbyTopic = new Vector<String[]>();
                         anchorsHT = new Hashtable<String, Hashtable<String, Vector<String[]>>>();
@@ -440,7 +440,7 @@ public class poolerManager {
                         }
                         //topicAnchorsHT
                         isThisTopic = false;
-                    } else if (xsr.getLocalName().equals("outgoinglinks")) {
+                    } else if (xsr.getLocalName().equals("outgoinglinks") || xsr.getLocalName().equals("outgoing")) {
                         if (isOutgoing) {
                             topicAnchorsHT.put("outgoing : " + thisTopicFileID, anchorsVbyTopic);
                             poolOutgoingData.put(thisTopicFileID, anchorsHT);
