@@ -92,157 +92,57 @@ public class resourcesManager {
         }
     }
     
-    private void updateElement()
+    private void updateElement(String childTagName, String childTextNode)
     {
-    	
-    }
-    
-    public void updateTBANavigationIndex(String[] navIndices) {
-
-            Document doc = readingXMLFromFile(resourceXMLFile);
-
-            NodeList titleNodeList = doc.getElementsByTagName(afTitleTag);
-            for (int i = 0; i < titleNodeList.getLength(); i++) {
-                Element titleElmn = (Element) titleNodeList.item(i);
-                NodeList subNodeList = titleElmn.getElementsByTagName(afTBANavigationIndexTag);
-                Element subElmn = (Element) subNodeList.item(0);
-                // add NEW
-                Element clonedElmn = (Element) doc.createElement(afTBANavigationIndexTag);
-                subElmn.getParentNode().insertBefore(clonedElmn, subElmn.getNextSibling());
-                String navIndexLine = navIndices[0] + " : " + navIndices[1] + " , " + navIndices[2] + " , " + navIndices[3] + " , " + navIndices[4];
-                clonedElmn.appendChild(doc.createTextNode(navIndexLine));
-                // remove OLD element
-                subElmn.getParentNode().removeChild(subElmn);
-            }
-            updateResources(doc);
-    }
-
-    public void updateTABNavigationIndex(String[] navIndices) {
         Document doc = readingXMLFromFile(resourceXMLFile);
 
         NodeList titleNodeList = doc.getElementsByTagName(afTitleTag);
         for (int i = 0; i < titleNodeList.getLength(); i++) {
             Element titleElmn = (Element) titleNodeList.item(i);
-            NodeList subNodeList = titleElmn.getElementsByTagName(afTABNavigationIndexTag);
-            Element subElmn = (Element) subNodeList.item(0);
+            NodeList subNodeList = titleElmn.getElementsByTagName(childTagName);
             // add NEW
-            Element clonedElmn = (Element) doc.createElement(afTABNavigationIndexTag);
-            subElmn.getParentNode().insertBefore(clonedElmn, subElmn.getNextSibling());
-            String navIndexLine = navIndices[0] + " : " + navIndices[1] + " , " + navIndices[2] + " , " + navIndices[3] + " , " + navIndices[4];
-            clonedElmn.appendChild(doc.createTextNode(navIndexLine));
-            // remove OLD element
-            subElmn.getParentNode().removeChild(subElmn);
-        }
+            Element clonedElmn = (Element) doc.createElement(childTagName);
+            clonedElmn.appendChild(doc.createTextNode(childTagName));
+            if (childTextNode.length() > 0)
+            	 clonedElmn.appendChild(doc.createTextNode(childTextNode));
+            
+            if (subNodeList.getLength() > 0) {
+                Element subElmn = (Element) subNodeList.item(0);
+                subElmn.getParentNode().insertBefore(clonedElmn, subElmn.getNextSibling());
+
+                // remove OLD element
+                subElmn.getParentNode().removeChild(subElmn);
+            }
+            else
+            	titleElmn.insertBefore(clonedElmn, null);
+            
+            break; // only the first one
+        }        
         updateResources(doc);
+    }
+    
+    public void updateTBANavigationIndex(String[] navIndices) {      
+    	updateElement(afTBANavigationIndexTag, navIndices[0] + " : " + navIndices[1] + " , " + navIndices[2] + " , " + navIndices[3] + " , " + navIndices[4]);
+    }
+
+    public void updateTABNavigationIndex(String[] navIndices) {
+        updateElement(afTABNavigationIndexTag, navIndices[0] + " : " + navIndices[1] + " , " + navIndices[2] + " , " + navIndices[3] + " , " + navIndices[4]);
     }
 
     public void updateTopicCollType(String collType) {
-        try {
-            Document doc = readingXMLFromFile(resourceXMLFile);
-
-            TransformerFactory tFactory = TransformerFactory.newInstance();
-            Transformer tformer = tFactory.newTransformer();
-            Source source = new DOMSource(doc);
-            Result result = new StreamResult(new FileWriter(resourceXMLFile));
-
-            NodeList titleNodeList = doc.getElementsByTagName(afTitleTag);
-            for (int i = 0; i < titleNodeList.getLength(); i++) {
-                Element titleElmn = (Element) titleNodeList.item(i);
-                NodeList subNodeList = titleElmn.getElementsByTagName(afTopicCollTypeTag);
-                // add NEW
-                Element clonedElmn = (Element) doc.createElement(afTopicCollTypeTag);
-                clonedElmn.appendChild(doc.createTextNode(collType));
-                
-                if (subNodeList.getLength() > 0) {
-	                Element subElmn = (Element) subNodeList.item(0);
-	                subElmn.getParentNode().insertBefore(clonedElmn, subElmn.getNextSibling());
-
-	                // remove OLD element
-	                subElmn.getParentNode().removeChild(subElmn);
-                }
-                else
-                	titleElmn.insertBefore(clonedElmn, null);
-
-                tformer.transform(source, result);
-            }
-
-        } catch (IOException ex) {
-            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (TransformerException ex) {
-            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        
+        updateElement(afTopicCollTypeTag, "");
     }
 
     public void updateLinkCollType(String collType) {
-        try {
-            Document doc = readingXMLFromFile(resourceXMLFile);
-
-            TransformerFactory tFactory = TransformerFactory.newInstance();
-            Transformer tformer = tFactory.newTransformer();
-            Source source = new DOMSource(doc);
-            Result result = new StreamResult(new FileWriter(resourceXMLFile));
-
-            NodeList titleNodeList = doc.getElementsByTagName(afTitleTag);
-            for (int i = 0; i < titleNodeList.getLength(); i++) {
-                Element titleElmn = (Element) titleNodeList.item(i);
-                NodeList subNodeList = titleElmn.getElementsByTagName(afLinkCollTypeTag);
-                Element subElmn = (Element) subNodeList.item(0);
-                // add NEW
-                Element clonedElmn = (Element) doc.createElement(afLinkCollTypeTag);
-                subElmn.getParentNode().insertBefore(clonedElmn, subElmn.getNextSibling());
-                clonedElmn.appendChild(doc.createTextNode(collType));
-                // remove OLD element
-                subElmn.getParentNode().removeChild(subElmn);
-
-                tformer.transform(source, result);
-            }
-
-        } catch (IOException ex) {
-            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (TransformerException ex) {
-            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        updateElement(afLinkCollTypeTag, "");
     }
 
     public void updateCurrTopicID(String currTopicPath) {
-        try {
-            Document doc = readingXMLFromFile(resourceXMLFile);
-
-            TransformerFactory tFactory = TransformerFactory.newInstance();
-            Transformer tformer = tFactory.newTransformer();
-            Source source = new DOMSource(doc);
-            Result result = new StreamResult(new FileWriter(resourceXMLFile));
-
-            NodeList titleNodeList = doc.getElementsByTagName(afTitleTag);
-            for (int i = 0; i < titleNodeList.getLength(); i++) {
-                Element titleElmn = (Element) titleNodeList.item(i);
-                NodeList subNodeList = titleElmn.getElementsByTagName(afCurrTopicTag);
-                Element subElmn = (Element) subNodeList.item(0);
-                // add NEW
-                Element clonedElmn = (Element) doc.createElement(afCurrTopicTag);
-                subElmn.getParentNode().insertBefore(clonedElmn, subElmn.getNextSibling());
-                clonedElmn.appendChild(doc.createTextNode(currTopicPath));
-                // remove OLD element
-                subElmn.getParentNode().removeChild(subElmn);
-
-                tformer.transform(source, result);
-            }
-
-        } catch (IOException ex) {
-            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (TransformerException ex) {
-            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        updateElement(afCurrTopicTag, "");
     }
 
     public void updateTopicList(Vector<String> topicFilesV) {
-        try {
             Document doc = readingXMLFromFile(resourceXMLFile);
-            TransformerFactory tFactory = TransformerFactory.newInstance();
-            Transformer tformer = tFactory.newTransformer();
-            Source source = new DOMSource(doc);
-            Result result = new StreamResult(new FileWriter(resourceXMLFile));
             NodeList titleNodeList = doc.getElementsByTagName(afTitleTag);
             Vector<String> filterElementsV = new Vector<String>();
             for (int i = 0; i < titleNodeList.getLength(); i++) {
@@ -270,23 +170,14 @@ public class resourcesManager {
                     subElmn.appendChild(newElmn);
                     newElmn.appendChild(doc.createTextNode(thisAnchorList));
                 }
-                tformer.transform(source, result);
             }
             condenceXml(resourceXMLFile);
-        } catch (IOException ex) {
-            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (TransformerException ex) {
-            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
-        }
+            updateResources(doc);
     }
 
     public void updateCurrAnchorFOL(Vector<String> currAnchorFOLV) {
-        try {
             Document doc = readingXMLFromFile(resourceXMLFile);
-            TransformerFactory tFactory = TransformerFactory.newInstance();
-            Transformer tformer = tFactory.newTransformer();
-            Source source = new DOMSource(doc);
-            Result result = new StreamResult(new FileWriter(resourceXMLFile));
+
             NodeList titleNodeList = doc.getElementsByTagName(afTitleTag);
             Vector<String> filterElementsV = new Vector<String>();
             for (int i = 0; i < titleNodeList.getLength(); i++) {
@@ -314,24 +205,14 @@ public class resourcesManager {
                     subElmn.appendChild(newElmn);
                     newElmn.appendChild(doc.createTextNode(thisAnchorList));
                 }
-                tformer.transform(source, result);
             }
             condenceXml(resourceXMLFile);
-
-        } catch (IOException ex) {
-            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (TransformerException ex) {
-            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
-        }
+            updateResources(doc);
     }
 
     public void updateCurrBepOffsetList(Vector<String> bepSetV) {
-        try {
             Document doc = readingXMLFromFile(resourceXMLFile);
-            TransformerFactory tFactory = TransformerFactory.newInstance();
-            Transformer tformer = tFactory.newTransformer();
-            Source source = new DOMSource(doc);
-            Result result = new StreamResult(new FileWriter(resourceXMLFile));
+
             NodeList titleNodeList = doc.getElementsByTagName(afTitleTag);
             Vector<String> filterElementsV = new Vector<String>();
             for (int i = 0; i < titleNodeList.getLength(); i++) {
@@ -359,15 +240,9 @@ public class resourcesManager {
                     subElmn.appendChild(newElmn);
                     newElmn.appendChild(doc.createTextNode(thisBepList));
                 }
-                tformer.transform(source, result);
             }
             condenceXml(resourceXMLFile);
-
-        } catch (IOException ex) {
-            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (TransformerException ex) {
-            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
-        }
+            updateResources(doc);
     }
 
     private void condenceXml(String xmlFile) {
