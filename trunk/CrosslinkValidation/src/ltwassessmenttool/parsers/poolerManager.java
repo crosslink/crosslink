@@ -2,6 +2,7 @@ package ltwassessmenttool.parsers;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.HashMap;
@@ -48,7 +49,7 @@ public class poolerManager {
     private Hashtable<String, Hashtable<String, Hashtable<String, Vector<String[]>>>> poolOutgoingData = new Hashtable<String, Hashtable<String, Hashtable<String, Vector<String[]>>>>();
     //6) Incoming Pooling Data
     private Hashtable<String, Hashtable<String, Vector<String[]>>> poolIncomingData = new Hashtable<String, Hashtable<String, Vector<String[]>>>();
-    resourcesManager resManager;
+    static resourcesManager resManager;
     String afXmlPath = "";
 
     static void log(Object content) {
@@ -59,7 +60,7 @@ public class poolerManager {
         System.err.println("errlog: " + content);
     }
 
-    public poolerManager() {
+    public poolerManager(String xmlFile) throws Exception {
 
         resManager = new resourcesManager();
 
@@ -70,9 +71,13 @@ public class poolerManager {
 
         afProperty = new String[]{"", "", "", ""};
 
-        afXmlPath = resManager.getPoolXMLFile();
+        afXmlPath = xmlFile;
 
         getPoolerData();
+    }
+    
+    public poolerManager() throws Exception {
+    	this(resManager.getPoolXMLFile());	
     }
 
     // <editor-fold defaultstate="collapsed" desc="GET Pool Properties">
@@ -290,11 +295,11 @@ public class poolerManager {
 
     }
 
-    private void getPoolerData() {
+    private void getPoolerData() throws FileNotFoundException {
         try {
-            String poolXMLPath = resManager.getPoolXMLFile();
+            String poolXMLPath = afXmlPath;//resManager.getPoolXMLFile();
             if (poolXMLPath.length() == 0 || !new File(poolXMLPath).exists())
-            	return;
+            	throw new FileNotFoundException();
             XMLInputFactory inputFactory = XMLInputFactory.newInstance();
             InputStream in = new FileInputStream(poolXMLPath);
             XMLStreamReader xsr = inputFactory.createXMLStreamReader(in);
