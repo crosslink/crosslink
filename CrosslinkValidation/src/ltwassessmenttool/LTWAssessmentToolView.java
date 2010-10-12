@@ -699,7 +699,7 @@ public class LTWAssessmentToolView extends FrameView {
                         String poolingMsg = thisXMLFile.getName() + " - Load Successful: \r\n" + toPooling.getPoolingMsg();
                         JOptionPane.showMessageDialog(LTWAssessmentToolApp.getApplication().getMainFrame(), poolingMsg);
                         // =====================================================
-                        updatePoolerToResourceXML();
+                        updatePoolerToResourceXML(thisXMLFile.getAbsolutePath());
                         myTABTxtPaneManager = new tabTxtPaneManager();
                         myTBATxtPaneManager = new tbaTxtPaneManager();
                         // =====================================================
@@ -773,8 +773,16 @@ public class LTWAssessmentToolView extends FrameView {
         LTWAssessmentToolApp.getApplication().show(assessmentSetBox);
     }
 
-    private void updatePoolerToResourceXML() {
-        myPooler = new poolerManager();
+    private void updatePoolerToResourceXML(String poolFile) {
+		try {
+	    	if (poolFile == null || poolFile.length() == 0)
+				myPooler = new poolerManager();
+			else
+	    		myPooler = new poolerManager(poolFile);
+		} catch (Exception e) {
+			e.printStackTrace();
+		} 
+		
         afProperty = myPooler.getPoolProperty();    // [0]:participant-id, [1]:run-id, [2]:task, [3]:collection
         RunTopics = myPooler.getAllTopicsInPool();  // Vector<String[]>: [0]:File, [1]:Name
         // ---------------------------------------------------------------------
