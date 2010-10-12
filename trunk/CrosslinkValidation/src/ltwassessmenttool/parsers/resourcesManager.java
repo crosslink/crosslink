@@ -102,7 +102,7 @@ public class resourcesManager {
             NodeList subNodeList = titleElmn.getElementsByTagName(childTagName);
             // add NEW
             Element clonedElmn = (Element) doc.createElement(childTagName);
-            clonedElmn.appendChild(doc.createTextNode(childTagName));
+           // clonedElmn.appendChild(doc.createTextNode(childTagName));
             if (childTextNode.length() > 0)
             	 clonedElmn.appendChild(doc.createTextNode(childTextNode));
             
@@ -130,119 +130,66 @@ public class resourcesManager {
     }
 
     public void updateTopicCollType(String collType) {
-        updateElement(afTopicCollTypeTag, "");
+        updateElement(afTopicCollTypeTag, collType);
     }
 
     public void updateLinkCollType(String collType) {
-        updateElement(afLinkCollTypeTag, "");
+        updateElement(afLinkCollTypeTag, collType);
     }
 
     public void updateCurrTopicID(String currTopicPath) {
-        updateElement(afCurrTopicTag, "");
+        updateElement(afCurrTopicTag, currTopicPath);
     }
 
-    public void updateTopicList(Vector<String> topicFilesV) {
-            Document doc = readingXMLFromFile(resourceXMLFile);
-            NodeList titleNodeList = doc.getElementsByTagName(afTitleTag);
-            Vector<String> filterElementsV = new Vector<String>();
-            for (int i = 0; i < titleNodeList.getLength(); i++) {
-                Element titleElmn = (Element) titleNodeList.item(i);
-                NodeList subNodeList = titleElmn.getElementsByTagName(afltwTopicsTag);
-                Node subNode = subNodeList.item(0);
-                Element subElmn = (Element) subNode;
-                NodeList subElmnNodes = subElmn.getChildNodes();
-                for (int j = 0; j < subElmnNodes.getLength(); j++) {
-                    Node subElmnNode = subElmnNodes.item(j);
-                    if (subElmnNode.getNodeType() == Node.ELEMENT_NODE) {
-                        String thisSElmnNode = subElmnNodes.item(j).getNodeName();
-                        if (!filterElementsV.contains(thisSElmnNode)) {
-                            filterElementsV.add(thisSElmnNode);
-                        }
-                    }
-                }
-                // Remove These Elements
-                for (String thisElmn : filterElementsV) {
-                    filterElements(doc, thisElmn);
-                }
-                for (int j = 0; j < topicFilesV.size(); j++) {
-                    String thisAnchorList = topicFilesV.elementAt(j);
-                    Element newElmn = (Element) doc.createElement(afTopicPrefixTag + (j + 1));
-                    subElmn.appendChild(newElmn);
-                    newElmn.appendChild(doc.createTextNode(thisAnchorList));
-                }
+    private void updateElementList(String childTagName, String subChildTagName, Vector<String> list) {
+        Document doc = readingXMLFromFile(resourceXMLFile);
+        NodeList titleNodeList = doc.getElementsByTagName(afTitleTag);
+        Vector<String> filterElementsV = new Vector<String>();
+        for (int i = 0; i < titleNodeList.getLength(); i++) {
+            Element titleElmn = (Element) titleNodeList.item(i);
+            NodeList subNodeList = titleElmn.getElementsByTagName(childTagName);
+            
+            if (subNodeList.getLength() > 0) {
+	            Node subNode = subNodeList.item(0);
+	            Element subElmn = (Element) subNode;
+	            NodeList subElmnNodes = subElmn.getChildNodes();
+	            for (int j = 0; j < subElmnNodes.getLength(); j++) {
+	                Node subElmnNode = subElmnNodes.item(j);
+	                if (subElmnNode.getNodeType() == Node.ELEMENT_NODE) {
+	                    String thisSElmnNode = subElmnNodes.item(j).getNodeName();
+	                    if (!filterElementsV.contains(thisSElmnNode)) {
+	                        filterElementsV.add(thisSElmnNode);
+	                    }
+	                }
+	            }
+	            
+	            // Remove These Elements
+	            for (String thisElmn : filterElementsV) {
+	                filterElements(doc, thisElmn);
+	            }
+	            for (int j = 0; j < list.size(); j++) {
+	                String thisAnchorList = list.elementAt(j);
+	                Element newElmn = (Element) doc.createElement(subChildTagName + (j + 1));
+	                subElmn.appendChild(newElmn);
+	                newElmn.appendChild(doc.createTextNode(thisAnchorList));
+	            }
             }
-            condenceXml(resourceXMLFile);
-            updateResources(doc);
+        }
+        updateResources(doc);
+        
+        //condenceXml(resourceXMLFile);
+    }
+    
+    public void updateTopicList(Vector<String> topicFilesV) {
+        updateElementList(afltwTopicsTag, afTopicPrefixTag, topicFilesV);
     }
 
     public void updateCurrAnchorFOL(Vector<String> currAnchorFOLV) {
-            Document doc = readingXMLFromFile(resourceXMLFile);
-
-            NodeList titleNodeList = doc.getElementsByTagName(afTitleTag);
-            Vector<String> filterElementsV = new Vector<String>();
-            for (int i = 0; i < titleNodeList.getLength(); i++) {
-                Element titleElmn = (Element) titleNodeList.item(i);
-                NodeList subNodeList = titleElmn.getElementsByTagName(afAnchorFOLTag);
-                Element subElmn = (Element) subNodeList.item(0);
-                NodeList subElmnNodes = subElmn.getChildNodes();
-                // Get all Elements
-                for (int j = 0; j < subElmnNodes.getLength(); j++) {
-                    Node subElmnNode = subElmnNodes.item(j);
-                    if (subElmnNode.getNodeType() == Node.ELEMENT_NODE) {
-                        String thisSElmnNode = subElmnNodes.item(j).getNodeName();
-                        if (!filterElementsV.contains(thisSElmnNode)) {
-                            filterElementsV.add(thisSElmnNode);
-                        }
-                    }
-                }
-                // Remove These Elements
-                for (String thisElmn : filterElementsV) {
-                    filterElements(doc, thisElmn);
-                }
-                for (int j = 0; j < currAnchorFOLV.size(); j++) {
-                    String thisAnchorList = currAnchorFOLV.elementAt(j);
-                    Element newElmn = (Element) doc.createElement(afAnchorFOLPrefixTag + (j + 1));
-                    subElmn.appendChild(newElmn);
-                    newElmn.appendChild(doc.createTextNode(thisAnchorList));
-                }
-            }
-            condenceXml(resourceXMLFile);
-            updateResources(doc);
+    	updateElementList(afAnchorFOLTag, afAnchorFOLPrefixTag, currAnchorFOLV);
     }
 
     public void updateCurrBepOffsetList(Vector<String> bepSetV) {
-            Document doc = readingXMLFromFile(resourceXMLFile);
-
-            NodeList titleNodeList = doc.getElementsByTagName(afTitleTag);
-            Vector<String> filterElementsV = new Vector<String>();
-            for (int i = 0; i < titleNodeList.getLength(); i++) {
-                Element titleElmn = (Element) titleNodeList.item(i);
-                NodeList subNodeList = titleElmn.getElementsByTagName(afBepOffsetTag);
-                Element subElmn = (Element) subNodeList.item(0);
-                NodeList subElmnNodes = subElmn.getChildNodes();
-                // Get all Elements
-                for (int j = 0; j < subElmnNodes.getLength(); j++) {
-                    Node subElmnNode = subElmnNodes.item(j);
-                    if (subElmnNode.getNodeType() == Node.ELEMENT_NODE) {
-                        String thisSElmnNode = subElmnNodes.item(j).getNodeName();
-                        if (!filterElementsV.contains(thisSElmnNode)) {
-                            filterElementsV.add(thisSElmnNode);
-                        }
-                    }
-                }
-                // Remove These Elements
-                for (String thisElmn : filterElementsV) {
-                    filterElements(doc, thisElmn);
-                }
-                for (int j = 0; j < bepSetV.size(); j++) {
-                    String thisBepList = bepSetV.elementAt(j);
-                    Element newElmn = (Element) doc.createElement(afBepOffsetPrefixTag + (j + 1));
-                    subElmn.appendChild(newElmn);
-                    newElmn.appendChild(doc.createTextNode(thisBepList));
-                }
-            }
-            condenceXml(resourceXMLFile);
-            updateResources(doc);
+        updateElementList(afBepOffsetTag, afBepOffsetPrefixTag, bepSetV);
     }
 
     private void condenceXml(String xmlFile) {
@@ -267,102 +214,15 @@ public class resourcesManager {
     }
 
     public void updateWikipediaCollectionDirectory(String newWikipediaCorpusURL) {
-        try {
-            Document doc = readingXMLFromFile(resourceXMLFile);
-
-            TransformerFactory tFactory = TransformerFactory.newInstance();
-            Transformer tformer = tFactory.newTransformer();
-            Source source = new DOMSource(doc);
-            Result result = new StreamResult(new FileWriter(resourceXMLFile));
-
-            NodeList titleNodeList = doc.getElementsByTagName(afTitleTag);
-            for (int i = 0; i < titleNodeList.getLength(); i++) {
-                Element titleElmn = (Element) titleNodeList.item(i);
-                NodeList subNodeList = titleElmn.getElementsByTagName(afWikipediaCollTag);
-                
-                // add NEW
-                Element clonedElmn = (Element) doc.createElement(afWikipediaCollTag);  
-                clonedElmn.appendChild(doc.createTextNode(newWikipediaCorpusURL));
-                if (subNodeList.getLength() > 0) {
-	                Element subElmn = (Element) subNodeList.item(0);
-
-	                subElmn.getParentNode().insertBefore(clonedElmn, subElmn.getNextSibling());   
-	                // remove OLD element
-	                subElmn.getParentNode().removeChild(subElmn);
-	
-                } 
-                else
-                	titleElmn.insertBefore(clonedElmn, null);
-                tformer.transform(source, result);
-            }
-
-        } catch (IOException ex) {
-            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (TransformerException ex) {
-            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        updateElement(afWikipediaCollTag, newWikipediaCorpusURL);
     }
 
     public void updateTeAraCollectionDirectory(String newTeAraCorpusURL) {
-        try {
-            Document doc = readingXMLFromFile(resourceXMLFile);
-
-            TransformerFactory tFactory = TransformerFactory.newInstance();
-            Transformer tformer = tFactory.newTransformer();
-            Source source = new DOMSource(doc);
-            Result result = new StreamResult(new FileWriter(resourceXMLFile));
-
-            NodeList titleNodeList = doc.getElementsByTagName(afTitleTag);
-            for (int i = 0; i < titleNodeList.getLength(); i++) {
-                Element titleElmn = (Element) titleNodeList.item(i);
-                NodeList subNodeList = titleElmn.getElementsByTagName(afTeAraCollTag);
-                Element subElmn = (Element) subNodeList.item(0);
-                // add NEW
-                Element clonedElmn = (Element) doc.createElement(afTeAraCollTag);
-                subElmn.getParentNode().insertBefore(clonedElmn, subElmn.getNextSibling());
-                clonedElmn.appendChild(doc.createTextNode(newTeAraCorpusURL));
-                // remove OLD element
-                subElmn.getParentNode().removeChild(subElmn);
-
-                tformer.transform(source, result);
-            }
-
-        } catch (IOException ex) {
-            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (TransformerException ex) {
-            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        updateElement(afTeAraCollTag, newTeAraCorpusURL);
     }
 
     public void updateAFXmlFile(String newAFXmlURL) {
-        try {
-            Document doc = readingXMLFromFile(resourceXMLFile);
-
-            TransformerFactory tFactory = TransformerFactory.newInstance();
-            Transformer tformer = tFactory.newTransformer();
-            Source source = new DOMSource(doc);
-            Result result = new StreamResult(new FileWriter(resourceXMLFile));
-
-            NodeList titleNodeList = doc.getElementsByTagName(afTitleTag);
-            for (int i = 0; i < titleNodeList.getLength(); i++) {
-                Element titleElmn = (Element) titleNodeList.item(i);
-                NodeList subNodeList = titleElmn.getElementsByTagName(afPoolPathTag);
-                Element subElmn = (Element) subNodeList.item(0);
-                // add NEW
-                Element clonedElmn = (Element) doc.createElement(afPoolPathTag);
-                subElmn.getParentNode().insertBefore(clonedElmn, subElmn.getNextSibling());
-                clonedElmn.appendChild(doc.createTextNode(newAFXmlURL));
-                // remove OLD element
-                subElmn.getParentNode().removeChild(subElmn);
-
-                tformer.transform(source, result);
-            }
-
-        } catch (IOException ex) {
-            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (TransformerException ex) {
-            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        updateElement(afPoolPathTag, newAFXmlURL);
     }
 
     private void filterElements(Node parent, String filter) {
