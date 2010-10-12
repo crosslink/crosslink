@@ -807,6 +807,10 @@ public class LTWAssessmentToolView extends FrameView {
         } else {
             this.rscManager.updateLinkCollType(resourceMap.getString("collectionType.TeAra"));
         }
+        /*
+         * TODO if it is loading action, we need to clear up the old topic list
+         */
+        
         // ---------------------------------------------------------------------
         // 2) current Topics List
         topicFileIDsV.removeAllElements();

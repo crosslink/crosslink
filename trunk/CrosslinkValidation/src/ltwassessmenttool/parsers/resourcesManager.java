@@ -155,24 +155,29 @@ public class resourcesManager {
 	            NodeList subElmnNodes = subElmn.getChildNodes();
 	            for (int j = 0; j < subElmnNodes.getLength(); j++) {
 	                Node subElmnNode = subElmnNodes.item(j);
-	                if (subElmnNode.getNodeType() == Node.ELEMENT_NODE) {
-	                    String thisSElmnNode = subElmnNodes.item(j).getNodeName();
-	                    if (!filterElementsV.contains(thisSElmnNode)) {
-	                        filterElementsV.add(thisSElmnNode);
-	                    }
-	                }
+	                
+	                if (list == null)
+	                	subElmn.removeChild(subElmnNode);
+	                else
+		                if (subElmnNode.getNodeType() == Node.ELEMENT_NODE) {
+		                    String thisSElmnNode = subElmnNodes.item(j).getNodeName();
+		                    if (!filterElementsV.contains(thisSElmnNode)) {
+		                        filterElementsV.add(thisSElmnNode);
+		                    }
+		                }
 	            }
 	            
 	            // Remove These Elements
 	            for (String thisElmn : filterElementsV) {
 	                filterElements(doc, thisElmn);
 	            }
-	            for (int j = 0; j < list.size(); j++) {
-	                String thisAnchorList = list.elementAt(j);
-	                Element newElmn = (Element) doc.createElement(subChildTagName + (j + 1));
-	                subElmn.appendChild(newElmn);
-	                newElmn.appendChild(doc.createTextNode(thisAnchorList));
-	            }
+	            if (list != null)
+		            for (int j = 0; j < list.size(); j++) {
+		                String thisAnchorList = list.elementAt(j);
+		                Element newElmn = (Element) doc.createElement(subChildTagName + (j + 1));
+		                subElmn.appendChild(newElmn);
+		                newElmn.appendChild(doc.createTextNode(thisAnchorList));
+		            }
             }
         }
         updateResources(doc);
