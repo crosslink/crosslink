@@ -63,7 +63,7 @@ public class tbaTxtPaneManager {
         this.contentType = resourceMap.getString("html.content.type");
         this.topicBepsHTPrefix = resourceMap.getString("topicBepsHT.Prefix");
 
-        this.myRunsPooler = new poolerManager();
+        this.myRunsPooler = poolerManager.getInstance();
         this.myRSCManager = new resourcesManager();
         this.myFOLMatcher = new FOLTXTMatcher();
 

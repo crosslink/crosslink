@@ -179,7 +179,7 @@ public class LTWAssessmentToolView extends FrameView {
 
     private boolean corpusDirChecker(boolean topicIsWikipedia) {
         boolean rightCorpusDir = false;
-        if (rscManager.getWikipediaCollectionFolder().trim().equals("") || rscManager.getTeAraCollectionFolder().trim().equals("") || rscManager.getWikipediaCollectionFolder() == null || rscManager.getTeAraCollectionFolder() == null) {
+        if (rscManager.getWikipediaCollectionFolder().trim().equals("") /*|| rscManager.getTeAraCollectionFolder().trim().equals("") */|| rscManager.getWikipediaCollectionFolder() == null/* || rscManager.getTeAraCollectionFolder() == null*/) {
             rightCorpusDir = false;
             JOptionPane.showMessageDialog(mainPanel, "The Collection Directory is Empty!");
         } else {
@@ -189,13 +189,13 @@ public class LTWAssessmentToolView extends FrameView {
             String ranTopicID = topicIDsV.elementAt(myTopicNum);
             String runFilePath = "";
             String collectionFolder = "";
-            if (topicIsWikipedia) {
+//            if (topicIsWikipedia) {
                 collectionFolder = rscManager.getWikipediaCollectionFolder();
                 runFilePath = rscManager.getWikipediaCollectionFolder() + rscManager.getWikipediaFilePathByName(ranTopicID + ".xml");
-            } else {
-                collectionFolder = rscManager.getTeAraCollectionFolder();
-                runFilePath = rscManager.getTeAraCollectionFolder() + rscManager.getTeAraFilePathByName(ranTopicID + ".xml");
-            }
+//            } else {
+//                collectionFolder = rscManager.getTeAraCollectionFolder();
+//                runFilePath = rscManager.getTeAraCollectionFolder() + rscManager.getTeAraFilePathByName(ranTopicID + ".xml");
+//            }
             File ranXmlFile = new File(runFilePath);
             if (ranXmlFile.exists()) {
                 rightCorpusDir = true;
@@ -714,7 +714,9 @@ public class LTWAssessmentToolView extends FrameView {
                     }
                 } catch (IOException ex) {
                     Logger.getLogger(LTWAssessmentToolView.class.getName()).log(Level.SEVERE, null, ex);
-                }
+                } catch (Exception e) {
+					e.printStackTrace();
+				}
             } else {
                 String notXMLMsg = "Error Msg: The submission run must be an XML file.\r\n" +
                         "The file selected, " + thisXMLFile.getName() + "is invalid.";
@@ -776,9 +778,9 @@ public class LTWAssessmentToolView extends FrameView {
     private void updatePoolerToResourceXML(String poolFile) {
 		try {
 	    	if (poolFile == null || poolFile.length() == 0)
-				myPooler = new poolerManager();
+				myPooler = poolerManager.getInstance();
 			else
-	    		myPooler = new poolerManager(poolFile);
+	    		myPooler = poolerManager.getInstance(poolFile);
 		} catch (Exception e) {
 			e.printStackTrace();
 		} 
@@ -787,34 +789,34 @@ public class LTWAssessmentToolView extends FrameView {
         RunTopics = myPooler.getAllTopicsInPool();  // Vector<String[]>: [0]:File, [1]:Name
         // ---------------------------------------------------------------------
         String myAFTask = afProperty[2].trim();
-        if (myAFTask.equals(resourceMap.getString("task.ltwF2F")) || myAFTask.equals(resourceMap.getString("task.ltwA2B"))) {
+//        if (myAFTask.equals(resourceMap.getString("task.ltwF2F")) || myAFTask.equals(resourceMap.getString("task.ltwA2B"))) {
             isTopicWikipedia = true;
             isLinkWikipedia = true;
             System.setProperty(sysPropertyIsTopicWikiKey, "true");
             System.setProperty(sysPropertyIsLinkWikiKey, "true");
-        } else if (myAFTask.equals(resourceMap.getString("task.ltaraA2B"))) {
-            isTopicWikipedia = false;
-            isLinkWikipedia = false;
-            System.setProperty(sysPropertyIsTopicWikiKey, "false");
-            System.setProperty(sysPropertyIsLinkWikiKey, "false");
-        } else if (myAFTask.equals(resourceMap.getString("task.ltaratwA2B"))) {
-            isTopicWikipedia = false;
-            isLinkWikipedia = true;
-            System.setProperty(sysPropertyIsTopicWikiKey, "false");
-            System.setProperty(sysPropertyIsLinkWikiKey, "true");
-        }
+//        } else if (myAFTask.equals(resourceMap.getString("task.ltaraA2B"))) {
+//            isTopicWikipedia = false;
+//            isLinkWikipedia = false;
+//            System.setProperty(sysPropertyIsTopicWikiKey, "false");
+//            System.setProperty(sysPropertyIsLinkWikiKey, "false");
+//        } else if (myAFTask.equals(resourceMap.getString("task.ltaratwA2B"))) {
+//            isTopicWikipedia = false;
+//            isLinkWikipedia = true;
+//            System.setProperty(sysPropertyIsTopicWikiKey, "false");
+//            System.setProperty(sysPropertyIsLinkWikiKey, "true");
+//        }
         // ---------------------------------------------------------------------
         // 1) topic collection type --> link collection type
-        if (isTopicWikipedia) {
+//        if (isTopicWikipedia) {
             this.rscManager.updateTopicCollType(resourceMap.getString("collectionType.Wikipedia"));
-        } else {
-            this.rscManager.updateTopicCollType(resourceMap.getString("collectionType.TeAra"));
-        }
-        if (isLinkWikipedia) {
+//        } else {
+//            this.rscManager.updateTopicCollType(resourceMap.getString("collectionType.TeAra"));
+//        }
+//        if (isLinkWikipedia) {
             this.rscManager.updateLinkCollType(resourceMap.getString("collectionType.Wikipedia"));
-        } else {
-            this.rscManager.updateLinkCollType(resourceMap.getString("collectionType.TeAra"));
-        }
+//        } else {
+//            this.rscManager.updateLinkCollType(resourceMap.getString("collectionType.TeAra"));
+//        }
         /*
          * TODO if it is loading action, we need to clear up the old topic list
          */
@@ -830,14 +832,15 @@ public class LTWAssessmentToolView extends FrameView {
         // ---------------------------------------------------------------------
         // Get Topic ID & xmlFile Path --> record them into ToolResource XML
         currTopicID = topicFileIDsV.elementAt(0);
-        if (isTopicWikipedia) {
+//        if (isTopicWikipedia) {
             // current Topic
 //            String wikipediaTopicFileDir = resourceMap.getString("wikipedia.topics.folder");
-            currTopicFilePath = wikipediaTopicFileDir + currTopicID + ".xml";
-        } else {
-            // need to find out from TeAra Collection Folders
-            currTopicFilePath = this.rscManager.getTeAraCollectionFolder() + this.rscManager.getTeAraFilePathByName(currTopicID + ".xml");
-        }
+            //currTopicFilePath = wikipediaTopicFileDir + currTopicID + ".xml";
+            currTopicFilePath = "resources" + File.separator + "Topics" + File.separator + currTopicID + ".xml";
+//        } else {
+//            // need to find out from TeAra Collection Folders
+//            currTopicFilePath = this.rscManager.getTeAraCollectionFolder() + this.rscManager.getTeAraFilePathByName(currTopicID + ".xml");
+//        }
         this.rscManager.updateCurrTopicID(currTopicFilePath);
         // ---------------------------------------------------------------------
         // make sure the NAV to be ZERO every time when a new Submission is loaded
@@ -845,7 +848,6 @@ public class LTWAssessmentToolView extends FrameView {
         this.rscManager.updateTABNavigationIndex(navIndices);
         this.rscManager.updateTBANavigationIndex(navIndices);
     }
-    // </editor-fold>
 
     // <editor-fold defaultstate="collapsed" desc="Pre-Variables-Declaration">
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -905,13 +907,13 @@ public class LTWAssessmentToolView extends FrameView {
         String lastTopicIDIndex = lastTBAIndicesSA[0];
         // Get Topic ID & xmlFile Path --> record them into ToolResource XML
         currTopicID = topicFileIDsV.elementAt(Integer.valueOf(lastTopicIDIndex));
-        if (isTopicWikipedia) {
+//        if (isTopicWikipedia) {
             // current Topic
             currTopicFilePath = wikipediaTopicFileDir + currTopicID + ".xml";
-        } else {
-            // need to find out from TeAra Collection Folders
-            currTopicFilePath = rscManager.getTeAraCollectionFolder() + rscManager.getTeAraFilePathByName(currTopicID + ".xml");
-        }
+//        } else {
+//            // need to find out from TeAra Collection Folders
+//            currTopicFilePath = rscManager.getTeAraCollectionFolder() + rscManager.getTeAraFilePathByName(currTopicID + ".xml");
+//        }
         rscManager.updateCurrTopicID(currTopicFilePath);
         // ---------------------------------------------------------------------
         // init Topic Text Pane Content
@@ -995,13 +997,13 @@ public class LTWAssessmentToolView extends FrameView {
         // ---------------------------------------------------------------------
         // Get Topic ID & xmlFile Path --> record them into ToolResource XML
         currTopicID = topicFileIDsV.elementAt(Integer.valueOf(lastTopicIDIndex));
-        if (isTopicWikipedia) {
+//        if (isTopicWikipedia) {
             // current Topic
             currTopicFilePath = wikipediaTopicFileDir + currTopicID + ".xml";
-        } else {
-            // need to find out from TeAra Collection Folders
-            currTopicFilePath = rscManager.getTeAraCollectionFolder() + rscManager.getTeAraFilePathByName(currTopicID + ".xml");
-        }
+//        } else {
+//            // need to find out from TeAra Collection Folders
+//            currTopicFilePath = rscManager.getTeAraCollectionFolder() + rscManager.getTeAraFilePathByName(currTopicID + ".xml");
+//        }
         rscManager.updateCurrTopicID(currTopicFilePath);
         // ---------------------------------------------------------------------
         // SET Topic Text Pane Content

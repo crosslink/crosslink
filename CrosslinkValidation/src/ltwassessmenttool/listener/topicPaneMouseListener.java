@@ -68,7 +68,7 @@ public class topicPaneMouseListener implements MouseInputListener {
     HashMap<String, Vector<String[]>> anchorFileSAVBySCRBepOLHM = new HashMap<String, Vector<String[]>>();
     // Import Extenal Classes
     private paneTableIndexing myPaneTableIndexing;
-    private poolerManager myPooler = new poolerManager();
+    private poolerManager myPooler = poolerManager.getInstance();
     private resourcesManager myRSCManager = new resourcesManager();
     private FOLTXTMatcher myFOLMatcher = new FOLTXTMatcher();
     // Declair Highlight Painter
