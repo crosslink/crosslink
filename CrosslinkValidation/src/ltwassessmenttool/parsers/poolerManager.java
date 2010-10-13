@@ -137,23 +137,23 @@ public class poolerManager {
             myAFTopicColl = afProperty[3].trim();
             myAFLinkColl = afProperty[3].trim();
         }
-        if (Boolean.valueOf(System.getProperty(sysPropertyIsTopicWikiKey))){
+//        if (Boolean.valueOf(System.getProperty(sysPropertyIsTopicWikiKey))){
             String subPath = resManager.getWikipediaFilePathByName(xmlFileID + ".xml");
             if (subPath.equals("FileNotFound.xml")){
-                xmlFilePath = "resources\\Tool_Resources\\" + subPath;
+                xmlFilePath = "resources" + File.separator + "Tool_Resources" + File.separator + subPath;
             } else {
                 xmlFilePath = resManager.getWikipediaCollectionFolder() + subPath;
             }
 //            xmlFilePath = resManager.getWikipediaCollectionFolder() + resManager.getWikipediaFilePathByName(bepFileID + ".xml");
-        } else {
-            String subPath = resManager.getTeAraFilePathByName(xmlFileID + ".xml");
-            if (subPath.equals("FileNotFound.xml")){
-                xmlFilePath = "resources\\Tool_Resources\\" + subPath;
-            } else {
-                xmlFilePath = resManager.getTeAraCollectionFolder() + subPath;
-            }
-//            xmlFilePath = resManager.getTeAraCollectionFolder() + resManager.getTeAraFilePathByName(bepFileID + ".xml");
-        }
+//        } else {
+//            String subPath = resManager.getTeAraFilePathByName(xmlFileID + ".xml");
+//            if (subPath.equals("FileNotFound.xml")){
+//                xmlFilePath = "resources" + File.separator + "Tool_Resources" + File.separator + subPath;
+//            } else {
+//                xmlFilePath = resManager.getTeAraCollectionFolder() + subPath;
+//            }
+////            xmlFilePath = resManager.getTeAraCollectionFolder() + resManager.getTeAraFilePathByName(bepFileID + ".xml");
+//        }
 //        if (myAFTask.equals(resourceMap.getString("task.ltwF2F")) || myAFTask.equals(resourceMap.getString("task.ltwA2B"))) {
 //            if (myAFTopicColl.equals(resourceMap.getString("collection.Wikipedia"))) {
 //                xmlFilePath = resManager.getWikipediaCollectionFolder() + resManager.getWikipediaFilePathByName(bepFileID + ".xml");
@@ -381,11 +381,12 @@ public class poolerManager {
                     } else if (tagName.equals("anchor")) {
                         String[] thisAnchorProperty = new String[3];
                         for (int i = 0; i < xsr.getAttributeCount(); i++) {
-                            if (xsr.getAttributeLocalName(i).equals("aname")) {
+                            String aName = xsr.getAttributeLocalName(i);
+                            if (aName.equals("aname") || aName.equals("name")) {
                                 thisAnchorProperty[2] = xsr.getAttributeValue(i);
-                            } else if (xsr.getAttributeLocalName(i).equals("aoffset")) {
+                            } else if (aName.equals("aoffset") || aName.equals("offset")) {
                                 thisAnchorProperty[0] = xsr.getAttributeValue(i);
-                            } else if (xsr.getAttributeLocalName(i).equals("alength")) {
+                            } else if (aName.equals("alength") || aName.equals("length")) {
                                 thisAnchorProperty[1] = xsr.getAttributeValue(i);
                             }
                         }
@@ -395,11 +396,12 @@ public class poolerManager {
                     } else if (tagName.equals("subanchor")) {
                         String[] thisSubAnchorProperty = new String[3];
                         for (int i = 0; i < xsr.getAttributeCount(); i++) {
-                            if (xsr.getAttributeLocalName(i).equals("saname")) {
+                            String aName = xsr.getAttributeLocalName(i);
+                            if (aName.equals("saname")) {
                                 thisSubAnchorProperty[2] = xsr.getAttributeValue(i);
-                            } else if (xsr.getAttributeLocalName(i).equals("saoffset")) {
+                            } else if (aName.equals("saoffset")) {
                                 thisSubAnchorProperty[0] = xsr.getAttributeValue(i);
-                            } else if (xsr.getAttributeLocalName(i).equals("salength")) {
+                            } else if (aName.equals("salength")) {
                                 thisSubAnchorProperty[1] = xsr.getAttributeValue(i);
                             }
                         }
@@ -409,7 +411,7 @@ public class poolerManager {
                     } else if (tagName.equals("tobep")) {
                         String[] thisToBepProperty = new String[2];
                         for (int i = 0; i < xsr.getAttributeCount(); i++) {
-                            if (xsr.getAttributeLocalName(i).equals("tboffset")) {
+                            if (xsr.getAttributeLocalName(i).equals("tboffset") || xsr.getAttributeLocalName(i).equals("offset")) {
                                 thisToBepProperty[0] = xsr.getAttributeValue(i);
                             }
                         }

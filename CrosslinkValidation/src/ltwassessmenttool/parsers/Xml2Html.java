@@ -45,13 +45,13 @@ public class Xml2Html {
     public Xml2Html(String xmlFilePath, boolean isWikipedia) {
 
         org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(ltwassessmenttool.LTWAssessmentToolApp.class).getContext().getResourceMap(LTWAssessmentToolView.class);
-        this.htmlFileTopFolder = resourceMap.getString("temp.folder");
+        this.htmlFileTopFolder = resourceMap.getString("temp.folder") + File.separator;
 
         this.xmlPath = xmlFilePath;
         this.xmlFileID = xmlFilePath.substring(xmlFilePath.lastIndexOf(File.separator) + 1, xmlFilePath.lastIndexOf(".xml"));
 
         this.appDirectory = System.getProperty("user.dir");
-        this.imageDirectory = "file:\\" + this.appDirectory + "\\images\\";
+        this.imageDirectory = "file:\\" + this.appDirectory + File.separator + "images" + File.separator;
 
         // populate topic HTML
         if (isWikipedia) {
@@ -82,7 +82,7 @@ public class Xml2Html {
 
     private boolean isImageExist(String imageID) {
         boolean isImageExist = false;
-        String imgFolderPath = "images/";
+        String imgFolderPath = "images" + File.separator;
         File imgFolder = new File(imgFolderPath);
         if (imgFolder.isDirectory()) {
             File[] imgFiles = imgFolder.listFiles();
