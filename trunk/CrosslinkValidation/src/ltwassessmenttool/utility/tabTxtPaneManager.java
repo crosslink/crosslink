@@ -108,19 +108,19 @@ public class tabTxtPaneManager {
     // 3) Update Topic Text Pane
     private void updateTopicPaneStatus(String myTopicID) {
         String topicXmlPath = "";
-        if (myRSCManager.getTopicCollType().equals(wikipediaCollTitle)) {
+//        if (myRSCManager.getTopicCollType().equals(wikipediaCollTitle)) {
             isTopicWikipedia = true;
             topicXmlPath = wikipediaTopicDirectory + myTopicID + ".xml";
-        } else if (myRSCManager.getTopicCollType().equals(teAraCollTitle)) {
-            isTopicWikipedia = false;
-            String subPath = myRSCManager.getTeAraFilePathByName(myTopicID + ".xml");
-            if (subPath.equals("FileNotFound.xml")){
-                topicXmlPath = "resources\\Tool_Resources\\" + subPath;
-            } else {
-                topicXmlPath = myRSCManager.getTeAraCollectionFolder() + subPath;
-            }
-//            topicXmlPath = myRSCManager.getTeAraCollectionFolder() + myRSCManager.getTeAraFilePathByName(myTopicID + ".xml");
-        }
+//        } else if (myRSCManager.getTopicCollType().equals(teAraCollTitle)) {
+//            isTopicWikipedia = false;
+//            String subPath = myRSCManager.getTeAraFilePathByName(myTopicID + ".xml");
+//            if (subPath.equals("FileNotFound.xml")){
+//                topicXmlPath = "resources" + File.separator + "Tool_Resources" + File.separator + subPath;
+//            } else {
+//                topicXmlPath = myRSCManager.getTeAraCollectionFolder() + subPath;
+//            }
+////            topicXmlPath = myRSCManager.getTeAraCollectionFolder() + myRSCManager.getTeAraFilePathByName(myTopicID + ".xml");
+//        }
         myRSCManager.updateCurrTopicID(topicXmlPath);
         boolean isTopicText = true;
         // Set Topic Content Text
@@ -153,7 +153,7 @@ public class tabTxtPaneManager {
             isLinkWikipedia = true;
             String subPath = myRSCManager.getWikipediaFilePathByName(thisBepFileID + ".xml");
             if (subPath.equals("FileNotFound.xml")){
-                linkXmlPath = "resources\\Tool_Resources\\" + subPath;
+                linkXmlPath = "resources" + File.separator + "Tool_Resources" + File.separator + subPath;
             } else {
                 linkXmlPath = myRSCManager.getWikipediaCollectionFolder() + subPath;
             }
@@ -162,7 +162,7 @@ public class tabTxtPaneManager {
             isLinkWikipedia = false;
             String subPath = myRSCManager.getTeAraFilePathByName(thisBepFileID + ".xml");
             if (subPath.equals("FileNotFound.xml")){
-                linkXmlPath = "resources\\Tool_Resources\\" + subPath;
+                linkXmlPath = "resources" + File.separator + "Tool_Resources" + File.separator + subPath;
             } else {
                 linkXmlPath = myRSCManager.getTeAraCollectionFolder() + subPath;
             }

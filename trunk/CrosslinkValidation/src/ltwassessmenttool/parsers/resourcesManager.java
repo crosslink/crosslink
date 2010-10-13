@@ -172,7 +172,6 @@ public class resourcesManager {
 	            for (String thisElmn : filterElementsV) {
 	                filterElements(doc, thisElmn);
 	            }
-                    break;
             }
             else {
                 subElmn = (Element) doc.createElement(childTagName);
@@ -185,6 +184,8 @@ public class resourcesManager {
                     subElmn.appendChild(newElmn);
                     newElmn.appendChild(doc.createTextNode(thisAnchorList));
                 }
+
+            break;
         }
         updateResources(doc);
         

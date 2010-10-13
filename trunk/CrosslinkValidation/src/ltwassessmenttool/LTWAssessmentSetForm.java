@@ -221,14 +221,14 @@ public class LTWAssessmentSetForm extends javax.swing.JDialog {
         // Get Topic ID & xmlFile Path --> record them into ToolResource XML
         String currTopicFilePath = "";
         String currTopicID = topicFileIDsV.elementAt(0);
-        if (isTopicWikipedia) {
+//        if (isTopicWikipedia) {
             // current Topic
-            String wikipediaTopicFileDir = resourceMap.getString("wikipedia.topics.folder");
+            String wikipediaTopicFileDir = resourceMap.getString("wikipedia.topics.folder")  + File.separator;
             currTopicFilePath = wikipediaTopicFileDir + currTopicID + ".xml";
-        } else {
-            // need to find out from TeAra Collection Folders
-            currTopicFilePath = this.toolRscManager.getTeAraCollectionFolder() + this.toolRscManager.getTeAraFilePathByName(currTopicID + ".xml");
-        }
+//        } else {
+//            // need to find out from TeAra Collection Folders
+//            currTopicFilePath = this.toolRscManager.getTeAraCollectionFolder() + this.toolRscManager.getTeAraFilePathByName(currTopicID + ".xml");
+//        }
         this.toolRscManager.updateCurrTopicID(currTopicFilePath);
     }
 }

@@ -142,7 +142,7 @@ public class LTWAssessmentToolView extends FrameView {
         os.addObserver(fuObserver);
 
         resourceMap = getResourceMap();
-        wikipediaTopicFileDir = resourceMap.getString("wikipedia.topics.folder");
+        wikipediaTopicFileDir = resourceMap.getString("wikipedia.topics.folder") + File.separator;
         textContentType = resourceMap.getString("html.content.type");
         bepIconImageFilePath = resourceMap.getString("bepIcon.imageFilePath");
         topicAnchorsHTPrefix = resourceMap.getString("topicAnchorsHT.Prefix");
@@ -191,7 +191,8 @@ public class LTWAssessmentToolView extends FrameView {
             String collectionFolder = "";
 //            if (topicIsWikipedia) {
                 collectionFolder = rscManager.getWikipediaCollectionFolder();
-                runFilePath = rscManager.getWikipediaCollectionFolder() + rscManager.getWikipediaFilePathByName(ranTopicID + ".xml");
+//                runFilePath = rscManager.getWikipediaCollectionFolder() + rscManager.getWikipediaFilePathByName(ranTopicID + ".xml");
+              runFilePath =   "resources" + File.separator + "Topics" + File.separator + ranTopicID + ".xml";
 //            } else {
 //                collectionFolder = rscManager.getTeAraCollectionFolder();
 //                runFilePath = rscManager.getTeAraCollectionFolder() + rscManager.getTeAraFilePathByName(ranTopicID + ".xml");

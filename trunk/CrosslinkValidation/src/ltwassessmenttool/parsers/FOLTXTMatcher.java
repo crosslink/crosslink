@@ -56,8 +56,8 @@ public class FOLTXTMatcher {
         this.myPooler = poolerManager.getInstance();
 
         org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(ltwassessmenttool.LTWAssessmentToolApp.class).getContext().getResourceMap(LTWAssessmentToolView.class);
-        this.wikipediaTopicFileDir = resourceMap.getString("wikipedia.topics.folder");
-        this.tempFileDir = resourceMap.getString("temp.folder");
+        this.wikipediaTopicFileDir = resourceMap.getString("wikipedia.topics.folder") + File.separator;
+        this.tempFileDir = resourceMap.getString("temp.folder") + File.separator;
         this.wikipediaTypeName = resourceMap.getString("collectionType.Wikipedia");
         this.tearaTypeName = resourceMap.getString("collectionType.TeAra");
 
@@ -83,7 +83,7 @@ public class FOLTXTMatcher {
         entityNumExpressV = new Vector<String>();
         entityExpressV = new Vector<String>();
 
-        String entityListFile = "resources\\Tool_Resources\\entityList.txt";
+        String entityListFile = "resources" + File.separator + "Tool_Resources" + File.separator + "entityList.txt";
         File entityFile = new File(entityListFile);
         if (entityFile.isFile()) {
             try {
@@ -468,23 +468,23 @@ public class FOLTXTMatcher {
         try {
             fullScreenText = linkTxtPane.getDocument().getText(0, linkTxtPane.getDocument().getLength());
             String bepFilePath = "";
-            if (isWikipedia) {
+//            if (isWikipedia) {
                 String subPath = myRSCManager.getWikipediaFilePathByName(bepFileID + ".xml");
                 if (subPath.equals("FileNotFound.xml")) {
-                    bepFilePath = "resources\\Tool_Resources\\" + subPath;
+                    bepFilePath = "resources" + File.separator + "Tool_Resources" + File.separator + subPath;
                 } else {
                     bepFilePath = myRSCManager.getWikipediaCollectionFolder() + subPath;
                 }
 //                bepFilePath = myRSCManager.getWikipediaCollectionFolder() + myRSCManager.getWikipediaFilePathByName(bepFileID + ".xml");
-            } else {
-                String subPath = myRSCManager.getTeAraFilePathByName(bepFileID + ".xml");
-                if (subPath.equals("FileNotFound.xml")) {
-                    bepFilePath = "resources\\Tool_Resources\\" + subPath;
-                } else {
-                    bepFilePath = myRSCManager.getTeAraCollectionFolder() + subPath;
-                }
-//                bepFilePath = myRSCManager.getTeAraCollectionFolder() + myRSCManager.getTeAraFilePathByName(bepFileID + ".xml");
-            }
+//            } else {
+//                String subPath = myRSCManager.getTeAraFilePathByName(bepFileID + ".xml");
+//                if (subPath.equals("FileNotFound.xml")) {
+//                    bepFilePath = "resources" + File.separator + "Tool_Resources" + File.separator + subPath;
+//                } else {
+//                    bepFilePath = myRSCManager.getTeAraCollectionFolder() + subPath;
+//                }
+////                bepFilePath = myRSCManager.getTeAraCollectionFolder() + myRSCManager.getTeAraFilePathByName(bepFileID + ".xml");
+//            }
             String targetFilePath = "resources\\Temp\\" + bepFileID + "_pureTxt.txt";
             fullXmlText = ConvertXMLtoTXT(bepFilePath, targetFilePath, isWikipedia);
         } catch (BadLocationException ex) {
@@ -501,11 +501,11 @@ public class FOLTXTMatcher {
         try {
             fullScreenText = txtPane.getDocument().getText(0, txtPane.getDocument().getLength());
             String xmlFilePath = "";
-            if (isWikipedia) {
+//            if (isWikipedia) {
                 xmlFilePath = wikipediaTopicFileDir + xmlFileID + ".xml";
-            } else {
-                xmlFilePath = myRSCManager.getTeAraCollectionFolder() + myRSCManager.getTeAraFilePathByName(xmlFileID + ".xml");
-            }
+//            } else {
+//                xmlFilePath = myRSCManager.getTeAraCollectionFolder() + myRSCManager.getTeAraFilePathByName(xmlFileID + ".xml");
+//            }
             String targetFilePath = "resources\\Topics\\" + xmlFileID + "_pureTxt.txt";
             fullXmlText = ConvertXMLtoTXT(xmlFilePath, targetFilePath, isWikipedia);
         } catch (BadLocationException ex) {
