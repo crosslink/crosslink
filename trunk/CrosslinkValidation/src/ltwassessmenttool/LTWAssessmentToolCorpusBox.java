@@ -97,30 +97,30 @@ public class LTWAssessmentToolCorpusBox extends javax.swing.JDialog {
         }
     }
 
-    @Action
-    public void browseTeAraCorpus() {
-        JFileChooser fc = new JFileChooser(currentOpenDir);
-        fc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
-        fc.setMultiSelectionEnabled(false);
-
-        int returnVal = fc.showOpenDialog(this);
-        if (returnVal == JFileChooser.APPROVE_OPTION) {
-            File thisDir = fc.getSelectedFile();
-            String absFilePath = thisDir.getAbsolutePath();
-            if (absFilePath.lastIndexOf(File.separator) >= 0) {
-                currentOpenDir = absFilePath.substring(0, absFilePath.lastIndexOf(File.separator));
-            } else if (absFilePath.lastIndexOf(File.separator) >= 0) {
-                currentOpenDir = absFilePath.substring(0, absFilePath.lastIndexOf(File.separator));
-            }
-            if (thisDir.isDirectory() && thisDir.exists()) {
-                // get & Display Directory Path
-                this.taAraPathTxtField.setText(absFilePath);
-            } else {
-                String notDirMsg = "Please select the Top Directory of the TeAra 2009 Collection.";
-                JOptionPane.showMessageDialog(this, notDirMsg);
-            }
-        }
-    }
+//    @Action
+//    public void browseTeAraCorpus() {
+//        JFileChooser fc = new JFileChooser(currentOpenDir);
+//        fc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+//        fc.setMultiSelectionEnabled(false);
+//
+//        int returnVal = fc.showOpenDialog(this);
+//        if (returnVal == JFileChooser.APPROVE_OPTION) {
+//            File thisDir = fc.getSelectedFile();
+//            String absFilePath = thisDir.getAbsolutePath();
+//            if (absFilePath.lastIndexOf(File.separator) >= 0) {
+//                currentOpenDir = absFilePath.substring(0, absFilePath.lastIndexOf(File.separator));
+//            } else if (absFilePath.lastIndexOf(File.separator) >= 0) {
+//                currentOpenDir = absFilePath.substring(0, absFilePath.lastIndexOf(File.separator));
+//            }
+//            if (thisDir.isDirectory() && thisDir.exists()) {
+//                // get & Display Directory Path
+//                this.taAraPathTxtField.setText(absFilePath);
+//            } else {
+//                String notDirMsg = "Please select the Top Directory of the TeAra 2009 Collection.";
+//                JOptionPane.showMessageDialog(this, notDirMsg);
+//            }
+//        }
+//    }
     // </editor-fold>
 
     /** This method is called from within the constructor to

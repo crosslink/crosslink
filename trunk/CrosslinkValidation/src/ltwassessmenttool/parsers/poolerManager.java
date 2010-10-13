@@ -32,12 +32,12 @@ public class poolerManager {
     private final String sysPropertyKey = "isTABKey";
     private final String sysPropertyIsTopicWikiKey = "isTopicWikipedia";
     private final String sysPropertyIsLinkWikiKey = "isLinkWikipedia";
-    org.jdesktop.application.ResourceMap resourceMap;
-    private String resourceXMLFile = "";
-    private String fileNotFoundXmlPath = "";
-    private String afTasnCollectionErrors = "";
+    static org.jdesktop.application.ResourceMap resourceMap;
+    private static String resourceXMLFile = "";
+    private static String fileNotFoundXmlPath = "";
+    private static String afTasnCollectionErrors = "";
     //1) including participant-id, run-id, task, collection
-    private String[] afProperty = new String[4];
+    private static String[] afProperty = new String[4];
     //2) record Topic -> [0]:File & [1]:Name
     private Vector<String[]> RunTopics = new Vector<String[]>();
     //3) record Topic (outgoing : topicFile) -> [0]:Offset & [1]:Length & [2]:Anchor_Name
@@ -50,7 +50,31 @@ public class poolerManager {
     //6) Incoming Pooling Data
     private Hashtable<String, Hashtable<String, Vector<String[]>>> poolIncomingData = new Hashtable<String, Hashtable<String, Vector<String[]>>>();
     static resourcesManager resManager;
-    String afXmlPath = "";
+    static String afXmlPath = "";
+    static poolerManager instance = null;
+
+    static {
+        resManager = new resourcesManager();
+
+        resourceMap = org.jdesktop.application.Application.getInstance(ltwassessmenttool.LTWAssessmentToolApp.class).getContext().getResourceMap(LTWAssessmentToolView.class);
+        resourceXMLFile = resourceMap.getString("ResourceXMLFilePath");
+        fileNotFoundXmlPath = resourceMap.getString("fileNotFound.ReplacedXmlPath");
+        afTasnCollectionErrors = resourceMap.getString("AssFormXml.taskCollectionError");
+
+        afProperty = new String[]{"", "", "", ""};
+    }
+
+    public static poolerManager getInstance() {
+        if (instance == null)
+            instance = new poolerManager();
+        return instance;
+    }
+
+    public static poolerManager getInstance(String xmlFile) {
+        if (instance == null || (afXmlPath.length() > 0) && !xmlFile.equals(afXmlPath))
+            instance = new poolerManager(xmlFile);
+        return instance;
+    }
 
     static void log(Object content) {
         System.out.println(content);
@@ -60,24 +84,13 @@ public class poolerManager {
         System.err.println("errlog: " + content);
     }
 
-    public poolerManager(String xmlFile) throws Exception {
-
-        resManager = new resourcesManager();
-
-        resourceMap = org.jdesktop.application.Application.getInstance(ltwassessmenttool.LTWAssessmentToolApp.class).getContext().getResourceMap(LTWAssessmentToolView.class);
-        resourceXMLFile = resourceMap.getString("ResourceXMLFilePath");
-        fileNotFoundXmlPath = resourceMap.getString("fileNotFound.ReplacedXmlPath");
-        afTasnCollectionErrors = resourceMap.getString("AssFormXml.taskCollectionError");
-
-        afProperty = new String[]{"", "", "", ""};
-
+    public poolerManager(String xmlFile) {
         afXmlPath = xmlFile;
-
         getPoolerData();
     }
     
-    public poolerManager() throws Exception {
-    	this(resManager.getPoolXMLFile());	
+    public poolerManager() {
+        getPoolerData();
     }
 
     // <editor-fold defaultstate="collapsed" desc="GET Pool Properties">
@@ -295,11 +308,12 @@ public class poolerManager {
 
     }
 
-    private void getPoolerData() throws FileNotFoundException {
+    private void getPoolerData() {
         try {
             String poolXMLPath = afXmlPath;//resManager.getPoolXMLFile();
             if (poolXMLPath.length() == 0 || !new File(poolXMLPath).exists())
-            	throw new FileNotFoundException();
+                return;
+            	//throw new FileNotFoundException();
             XMLInputFactory inputFactory = XMLInputFactory.newInstance();
             InputStream in = new FileInputStream(poolXMLPath);
             XMLStreamReader xsr = inputFactory.createXMLStreamReader(in);
@@ -327,7 +341,8 @@ public class poolerManager {
             while (xsr.hasNext()) {
                 xsr.next();
                 if (xsr.isStartElement()) {
-                    if (xsr.getLocalName().equals("inexltw-assessment")) {
+                    String tagName = xsr.getLocalName();
+                    if (tagName.equals("inexltw-assessment") || tagName.equals("inexltw-submission")) {
                         for (int i = 0; i < xsr.getAttributeCount(); i++) {
                             if (xsr.getAttributeLocalName(i).equals("participant-id")) {
                                 afProperty[0] = xsr.getAttributeValue(i);
@@ -337,7 +352,7 @@ public class poolerManager {
                                 afProperty[2] = xsr.getAttributeValue(i);
                             }
                         }
-                    } else if (xsr.getLocalName().equals("collection")) {
+                    } else if (tagName.equals("collection")) {
                         xsr.next();
                         if (xsr.isCharacters()) {
                             if (afProperty[3].equals("") || afProperty[3] == null) {
@@ -346,7 +361,7 @@ public class poolerManager {
                                 afProperty[3] = afProperty[3] + " : " + xsr.getText();
                             }
                         }
-                    } else if (xsr.getLocalName().equals("topic")) {
+                    } else if (tagName.equals("topic")) {
                         String[] thisTopic = new String[2];
                         for (int i = 0; i < xsr.getAttributeCount(); i++) {
                             if (xsr.getAttributeLocalName(i).equals("file")) {
@@ -358,12 +373,12 @@ public class poolerManager {
                         }
                         RunTopics.add(thisTopic);
                         isThisTopic = true;
-                    } else if (xsr.getLocalName().equals("outgoinglinks")  || xsr.getLocalName().equals("outgoing")) {
+                    } else if (tagName.equals("outgoinglinks")  || tagName.equals("outgoing")) {
                         isOutgoing = true;
                         anchorsVbyTopic = new Vector<String[]>();
                         anchorsHT = new Hashtable<String, Hashtable<String, Vector<String[]>>>();
                         subAnchorsVbyTopic = new Vector<String[]>();
-                    } else if (xsr.getLocalName().equals("anchor")) {
+                    } else if (tagName.equals("anchor")) {
                         String[] thisAnchorProperty = new String[3];
                         for (int i = 0; i < xsr.getAttributeCount(); i++) {
                             if (xsr.getAttributeLocalName(i).equals("aname")) {
@@ -377,7 +392,7 @@ public class poolerManager {
                         anchorsVbyTopic.add(thisAnchorProperty);
                         thisAnchorSet = thisAnchorProperty[0] + "_" + thisAnchorProperty[1];
                         subAnchorsToBepsHT = new Hashtable<String, Vector<String[]>>();
-                    } else if (xsr.getLocalName().equals("subanchor")) {
+                    } else if (tagName.equals("subanchor")) {
                         String[] thisSubAnchorProperty = new String[3];
                         for (int i = 0; i < xsr.getAttributeCount(); i++) {
                             if (xsr.getAttributeLocalName(i).equals("saname")) {
@@ -391,7 +406,7 @@ public class poolerManager {
                         subAnchorsVbyTopic.add(thisSubAnchorProperty);
                         thisSubAnchorSet = thisSubAnchorProperty[0] + "_" + thisSubAnchorProperty[1];
                         toBepsVbySubAnchor = new Vector<String[]>();
-                    } else if (xsr.getLocalName().equals("tobep")) {
+                    } else if (tagName.equals("tobep")) {
                         String[] thisToBepProperty = new String[2];
                         for (int i = 0; i < xsr.getAttributeCount(); i++) {
                             if (xsr.getAttributeLocalName(i).equals("tboffset")) {
@@ -403,11 +418,11 @@ public class poolerManager {
                             thisToBepProperty[1] = xsr.getText();
                         }
                         toBepsVbySubAnchor.add(thisToBepProperty);
-                    } else if (xsr.getLocalName().equals("incominglinks")) {
+                    } else if (tagName.equals("incominglinks")) {
                         isIncoming = true;
                         bepOffsetVbyTopic = new Vector<String[]>();
                         bepsHT = new Hashtable<String, Vector<String[]>>();
-                    } else if (xsr.getLocalName().equals("bep")) {
+                    } else if (tagName.equals("bep")) {
                         String[] thisBepProperty = new String[1];
                         for (int i = 0; i < xsr.getAttributeCount(); i++) {
                             if (xsr.getAttributeLocalName(i).equals("boffset")) {
@@ -417,7 +432,7 @@ public class poolerManager {
                         }
                         bepOffsetVbyTopic.add(thisBepProperty);
                         fromAnchorsV = new Vector<String[]>();
-                    } else if (xsr.getLocalName().equals("fromanchor")) {
+                    } else if (tagName.equals("fromanchor")) {
                         String[] fromAnchorProperty = new String[4];
                         for (int i = 0; i < xsr.getAttributeCount(); i++) {
                             if (xsr.getAttributeLocalName(i).equals("faoffset")) {
@@ -435,28 +450,29 @@ public class poolerManager {
                         fromAnchorsV.add(fromAnchorProperty);
                     }
                 } else if (xsr.isEndElement()) {
-                    if (xsr.getLocalName().equals("topic")) {
+                    String tagName = xsr.getLocalName();
+                    if (tagName.equals("topic")) {
                         if (isThisTopic) {
                         }
                         //topicAnchorsHT
                         isThisTopic = false;
-                    } else if (xsr.getLocalName().equals("outgoinglinks") || xsr.getLocalName().equals("outgoing")) {
+                    } else if (tagName.equals("outgoinglinks") || tagName.equals("outgoing")) {
                         if (isOutgoing) {
                             topicAnchorsHT.put("outgoing : " + thisTopicFileID, anchorsVbyTopic);
                             poolOutgoingData.put(thisTopicFileID, anchorsHT);
                         }
                         isOutgoing = false;
-                    } else if (xsr.getLocalName().equals("anchor")) {
+                    } else if (tagName.equals("anchor")) {
                         anchorsHT.put(thisAnchorSet, subAnchorsToBepsHT);
-                    } else if (xsr.getLocalName().equals("subanchor")) {
+                    } else if (tagName.equals("subanchor")) {
                         subAnchorsToBepsHT.put(thisSubAnchorSet, toBepsVbySubAnchor);
-                    } else if (xsr.getLocalName().equals("incominglinks")) {
+                    } else if (tagName.equals("incominglinks")) {
                         if (isIncoming) {
                             topicBepsHT.put("incoming : " + thisTopicFileID, bepOffsetVbyTopic);
                             poolIncomingData.put(thisTopicFileID, bepsHT);
                         }
                         isIncoming = false;
-                    } else if (xsr.getLocalName().equals("bep")) {
+                    } else if (tagName.equals("bep")) {
                         bepsHT.put(thisInBepOffset, fromAnchorsV);
                     }
                 }
@@ -466,6 +482,8 @@ public class poolerManager {
             Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
         } catch (XMLStreamException ex) {
             Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (Exception ex) { 
+        	Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
     // </editor-fold>

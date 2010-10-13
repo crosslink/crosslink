@@ -54,7 +54,7 @@ public class paneTableIndexing {
         this.wikipediaCollTitle = resourceMap.getString("collectionType.Wikipedia");
         this.teAraCollTitle = resourceMap.getString("collectionType.TeAra");
         // ---------------------------------------------------------------------
-        this.myRunsPooler = new poolerManager();
+        this.myRunsPooler = poolerManager.getInstance();
         this.myRSCManager = new resourcesManager();
         this.myFOLMatcher = new FOLTXTMatcher();
         // [0]:participant-id, [1]:run-id, [2]:task, [3]:collection

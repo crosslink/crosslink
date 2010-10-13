@@ -181,7 +181,7 @@ public class LTWAssessmentSetForm extends javax.swing.JDialog {
 
     private void updatePoolerToResourceXML() {
         org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(ltwassessmenttool.LTWAssessmentToolApp.class).getContext().getResourceMap(LTWAssessmentToolView.class);
-        poolerManager myPooler = new poolerManager();
+        poolerManager myPooler = poolerManager.getInstance();
         afProperty = myPooler.getPoolProperty();    // [0]:participant-id, [1]:run-id, [2]:task, [3]:collection
         RunTopics = myPooler.getAllTopicsInPool();  // Vector<String[]>: [0]:File, [1]:Name
         // ---------------------------------------------------------------------

@@ -53,7 +53,7 @@ public class FOLTXTMatcher {
     public FOLTXTMatcher() {
 
         this.myRSCManager = new resourcesManager();
-        this.myPooler = new poolerManager();
+        this.myPooler = poolerManager.getInstance();
 
         org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(ltwassessmenttool.LTWAssessmentToolApp.class).getContext().getResourceMap(LTWAssessmentToolView.class);
         this.wikipediaTopicFileDir = resourceMap.getString("wikipedia.topics.folder");

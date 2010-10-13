@@ -66,7 +66,7 @@ public class paneTableMouseListener extends MouseAdapter {
         this.myPaneTable = paneTable;
         // declare External Classes
         this.rscManager = new resourcesManager();
-        this.myRunsPooler = new poolerManager();
+        this.myRunsPooler = poolerManager.getInstance();
 
         this.isTAB = Boolean.valueOf(System.getProperty(sysPropertyKey));
         // For Outgoing
@@ -274,7 +274,7 @@ public class paneTableMouseListener extends MouseAdapter {
             this.isTAB = Boolean.valueOf(System.getProperty(sysPropertyKey));
             if (this.isTAB) {
                 // For Outgoing
-                this.myRunsPooler = new poolerManager();
+                this.myRunsPooler = poolerManager.getInstance();
                 this.tabSManager = new tabTxtPaneManager();
                 this.poolOutgoingData = myRunsPooler.getOutgoingPool();
                 TABIndice = new Hashtable<String, String[]>();
@@ -302,7 +302,7 @@ public class paneTableMouseListener extends MouseAdapter {
                 updateTABPanes();
             } else {
                 // For Incoming
-                this.myRunsPooler = new poolerManager();
+                this.myRunsPooler = poolerManager.getInstance();
                 this.tbaSManager = new tbaTxtPaneManager();
                 this.poolIncomingData = myRunsPooler.getIncomingPool();
                 TBAIndice = new Hashtable<String, String[]>();

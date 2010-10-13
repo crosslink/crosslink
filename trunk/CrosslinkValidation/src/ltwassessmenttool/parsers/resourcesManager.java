@@ -148,10 +148,11 @@ public class resourcesManager {
         for (int i = 0; i < titleNodeList.getLength(); i++) {
             Element titleElmn = (Element) titleNodeList.item(i);
             NodeList subNodeList = titleElmn.getElementsByTagName(childTagName);
-            
+
+            Element subElmn = null;
             if (subNodeList.getLength() > 0) {
 	            Node subNode = subNodeList.item(0);
-	            Element subElmn = (Element) subNode;
+	            subElmn = (Element) subNode;
 	            NodeList subElmnNodes = subElmn.getChildNodes();
 	            for (int j = 0; j < subElmnNodes.getLength(); j++) {
 	                Node subElmnNode = subElmnNodes.item(j);
@@ -171,14 +172,19 @@ public class resourcesManager {
 	            for (String thisElmn : filterElementsV) {
 	                filterElements(doc, thisElmn);
 	            }
-	            if (list != null)
-		            for (int j = 0; j < list.size(); j++) {
-		                String thisAnchorList = list.elementAt(j);
-		                Element newElmn = (Element) doc.createElement(subChildTagName + (j + 1));
-		                subElmn.appendChild(newElmn);
-		                newElmn.appendChild(doc.createTextNode(thisAnchorList));
-		            }
+                    break;
             }
+            else {
+                subElmn = (Element) doc.createElement(childTagName);
+                titleElmn.appendChild(subElmn);
+            }
+            if (list != null)
+                for (int j = 0; j < list.size(); j++) {
+                    String thisAnchorList = list.elementAt(j);
+                    Element newElmn = (Element) doc.createElement(subChildTagName + (j + 1));
+                    subElmn.appendChild(newElmn);
+                    newElmn.appendChild(doc.createTextNode(thisAnchorList));
+                }
         }
         updateResources(doc);
         
@@ -344,17 +350,19 @@ public class resourcesManager {
         for (int i = 0; i < titleNodeList.getLength(); i++) {
             Element titleElmn = (Element) titleNodeList.item(i);
             NodeList subNodeList = titleElmn.getElementsByTagName(afltwTopicsTag);
-            Element subElmn = (Element) subNodeList.item(0);
+            if (subNodeList.getLength() > 0) {
+                Element subElmn = (Element) subNodeList.item(0);
 
-            NodeList subElmnNodes = subElmn.getChildNodes();
-            for (int j = 0; j < subElmnNodes.getLength(); j++) {
-                String thisSElmnNode = subElmnNodes.item(j).getNodeName();
-                NodeList thisSSElmn = subElmn.getElementsByTagName(thisSElmnNode);
-                Element targetElmn = (Element) thisSSElmn.item(0);
-                Node firstNode = targetElmn.getFirstChild();
-                String thisTopicID = firstNode.getTextContent();
-                if (!topicIDsV.contains(thisTopicID)) {
-                    topicIDsV.add(thisTopicID);
+                NodeList subElmnNodes = subElmn.getChildNodes();
+                for (int j = 0; j < subElmnNodes.getLength(); j++) {
+                    String thisSElmnNode = subElmnNodes.item(j).getNodeName();
+                    NodeList thisSSElmn = subElmn.getElementsByTagName(thisSElmnNode);
+                    Element targetElmn = (Element) thisSSElmn.item(0);
+                    Node firstNode = targetElmn.getFirstChild();
+                    String thisTopicID = firstNode.getTextContent();
+                    if (!topicIDsV.contains(thisTopicID)) {
+                        topicIDsV.add(thisTopicID);
+                    }
                 }
             }
         }
@@ -446,12 +454,12 @@ public class resourcesManager {
         return wikipediaFilePath;
     }
 
-    public String getTeAraFilePathByName(String fileName) {
-        String TeAraPathFile = getDataByTagName(afTitleTag, afTeAraFilePathTag);
-        String TeAraDir = getTeAraCollectionFolder();
-        String teAraFilePath = getTargetFilePathByFileName(TeAraDir, TeAraPathFile, fileName);
-        return teAraFilePath;
-    }
+//    public String getTeAraFilePathByName(String fileName) {
+//        String TeAraPathFile = getDataByTagName(afTitleTag, afTeAraFilePathTag);
+//        String TeAraDir = getTeAraCollectionFolder();
+//        String teAraFilePath = getTargetFilePathByFileName(TeAraDir, TeAraPathFile, fileName);
+//        return teAraFilePath;
+//    }
 
     public String[] getWikipediaFilePathByName(String[] fileNameArray) {
         String WikipediaPathFile = "";
@@ -464,16 +472,16 @@ public class resourcesManager {
         return wikipediaFilePathArray;
     }
 
-    public String[] getTeAraFilePathByName(String[] fileNameArray) {
-        String TeAraPathFile = getDataByTagName(afTitleTag, afTeAraFilePathTag);
-        String TeAraDir = getTeAraCollectionFolder();
-        Vector<String> filePathV = new Vector<String>();
-        for (String thisXmlFile : fileNameArray) {
-            filePathV.add(getTargetFilePathByFileName(TeAraDir, TeAraPathFile, thisXmlFile));
-        }
-        String[] teAraFilePathArray = (String[]) filePathV.toArray();
-        return teAraFilePathArray;
-    }
+//    public String[] getTeAraFilePathByName(String[] fileNameArray) {
+//        String TeAraPathFile = getDataByTagName(afTitleTag, afTeAraFilePathTag);
+//        String TeAraDir = getTeAraCollectionFolder();
+//        Vector<String> filePathV = new Vector<String>();
+//        for (String thisXmlFile : fileNameArray) {
+//            filePathV.add(getTargetFilePathByFileName(TeAraDir, TeAraPathFile, thisXmlFile));
+//        }
+//        String[] teAraFilePathArray = (String[]) filePathV.toArray();
+//        return teAraFilePathArray;
+//    }
 
     private String getTargetFilePathByFileName(String topDir, String pathCollectionFile, String fileName) {
         String thisFileFullPath = "";
@@ -519,10 +527,10 @@ public class resourcesManager {
         return wikipediaCollectionFolder;
     }
 
-    public String getTeAraCollectionFolder() {
-        String teAraCollectionFolder = getDataByTagName(afTitleTag, afTeAraCollTag);
-        return teAraCollectionFolder;
-    }
+//    public String getTeAraCollectionFolder() {
+//        String teAraCollectionFolder = getDataByTagName(afTitleTag, afTeAraCollTag);
+//        return teAraCollectionFolder;
+//    }
 
     public String getPoolXMLFile() {
         String poolXMLFilePath = getDataByTagName(afTitleTag, afPoolPathTag);

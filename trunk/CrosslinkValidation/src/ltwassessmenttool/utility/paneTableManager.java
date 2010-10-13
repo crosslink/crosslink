@@ -32,7 +32,7 @@ public class paneTableManager {
         wikipediaCollTitle = resourceMap.getString("collectionType.Wikipedia");
         teAraCollTitle = resourceMap.getString("collectionType.TeAra");
         // ---------------------------------------------------------------------
-        this.myRunsPooler = new poolerManager();
+        this.myRunsPooler = poolerManager.getInstance();
         this.myRSCManager = new resourcesManager();
         this.myFOLMatcher = new FOLTXTMatcher();
         this.myTableIndexing = tabIndexing;
