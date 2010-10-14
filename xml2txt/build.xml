@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="xml2txt" default="compile" basedir=".">  
+	<property name="xml2txt.classpath" value="${basedir}/lib"/> 
+	<property name="lib.dir" value="${basedir}/lib"/>
+    <property name="src.dir" value="${basedir}/src" />
+	<property name="build.dir" value="${basedir}/bin" />  
+	<property name="dist.dir" value="${basedir}/dist" />
+	
+	<target name="compile">
+	        <mkdir dir="${build.dir}" />
+	        <javac srcdir="${src.dir}" destdir="${build.dir}" compiler="gcj" executable="gcj" classpathref="xml2txt.classpath">
+	             <include name="**/*.class"/>
+	        </javac>
+	</target>
+</project>
+
