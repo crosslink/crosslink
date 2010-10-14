@@ -534,7 +534,7 @@ public class topicPaneMouseListener implements MouseInputListener {
             Vector<String[]> myVSA = aLinksHM.get(keyObj);
             String[] keySA = keyObj.toString().split("_");
             String[] thisAnchorSet = new String[]{keySA[0], String.valueOf(Integer.valueOf(keySA[1]) - Integer.valueOf(keySA[0])), "NOANCHORNAME"};
-            String[] scrAnchorPosSA = myFOLMatcher.getSCRAnchorPosSA(topicTextPane, currTopicID, thisAnchorSet);
+            String[] scrAnchorPosSA = myFOLMatcher.getSCRAnchorPosSA(topicTextPane, currTopicID, thisAnchorSet, true);
             String mySCRAnchorPos = scrAnchorPosSA[1] + "_" + scrAnchorPosSA[2];
             bepFileSAVBySCRAnchorOLHM.put(mySCRAnchorPos, myVSA);
         }
