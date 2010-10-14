@@ -98,14 +98,14 @@ public class xml2txt {
 			if (args.length < 2)
 				usage();
 			int pos = 0, pos2 = 0;
-        	if ((pos = args[1].indexOf(":", pos)) != -1){
+        	if ((pos = args[0].indexOf(":", pos)) != -1){
         		++pos;
-        		if ((pos2 = args[1].indexOf(":", pos)) != -1) { 
-        			offset = Integer.valueOf(args[1].substring(pos, pos2)).intValue();
-        			length = Integer.valueOf(args[1].substring(pos2 + 1)).intValue();
+        		if ((pos2 = args[0].indexOf(":", pos)) != -1) { 
+        			offset = Integer.valueOf(args[0].substring(pos, pos2)).intValue();
+        			length = Integer.valueOf(args[0].substring(pos2 + 1)).intValue();
         		}
         		else
-        			offset = Integer.valueOf(args[1].substring(pos + 1)).intValue();
+        			offset = Integer.valueOf(args[0].substring(pos + 1)).intValue();
         	}
         	System.err.printf("Showing offset: %d with length %d\n", (Object [])new Integer[] {new Integer(offset), new Integer(length)});
         	xmlfile = args[1];
@@ -113,7 +113,14 @@ public class xml2txt {
 		else 
 			xmlfile = args[0];
 		byte[] bytes = converter.convert(xmlfile);
-		System.out.print(new String(bytes));
+		if (length == -1)
+			length = bytes.length;
+		int count = 0;
+		while (count < length) {
+			System.out.print(new String(new byte[]{bytes[count + offset]}));
+			++count;
+		}
+		System.out.print("\n");
 	}
 
 }
