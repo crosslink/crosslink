@@ -1,6 +1,7 @@
 package ltwassessmenttool.utility;
 
 import java.awt.Insets;
+import java.io.File;
 import java.util.Hashtable;
 import java.util.Vector;
 import java.util.logging.Level;
@@ -134,7 +135,7 @@ public class tabTxtPaneManager {
 
     private void updateTopicPaneAnchorStatus(String topicID, String[] selectedAnchorOLNameSA) {
         // currAnchorSCRSet: [0]:Anchor_Name, [1]:Offset, [2]:Offset + Length
-        String[] currAnchorSCRSet = myFOLMatcher.getSCRAnchorPosSA(this.myTopicPane, topicID, selectedAnchorOLNameSA);
+        String[] currAnchorSCRSet = myFOLMatcher.getSCRAnchorPosSA(this.myTopicPane, topicID, selectedAnchorOLNameSA, true);
         String sPos = currAnchorSCRSet[1];
         String ePos = currAnchorSCRSet[2];
         updateTopicHighlighter(sPos + "_" + ePos);
@@ -149,7 +150,7 @@ public class tabTxtPaneManager {
         String thisBepOffset = BepOIDSA[0];
         String thisBepFileID = BepOIDSA[1];
         String linkXmlPath = "";
-        if (myRSCManager.getLinkCollType().equals(wikipediaCollTitle)) {
+//        if (myRSCManager.getLinkCollType().equals(wikipediaCollTitle)) {
             isLinkWikipedia = true;
             String subPath = myRSCManager.getWikipediaFilePathByName(thisBepFileID + ".xml");
             if (subPath.equals("FileNotFound.xml")){
@@ -158,16 +159,16 @@ public class tabTxtPaneManager {
                 linkXmlPath = myRSCManager.getWikipediaCollectionFolder() + subPath;
             }
 //            linkXmlPath = myRSCManager.getWikipediaCollectionFolder() + myRSCManager.getWikipediaFilePathByName(thisBepFileID + ".xml");
-        } else if (myRSCManager.getLinkCollType().equals(teAraCollTitle)) {
-            isLinkWikipedia = false;
-            String subPath = myRSCManager.getTeAraFilePathByName(thisBepFileID + ".xml");
-            if (subPath.equals("FileNotFound.xml")){
-                linkXmlPath = "resources" + File.separator + "Tool_Resources" + File.separator + subPath;
-            } else {
-                linkXmlPath = myRSCManager.getTeAraCollectionFolder() + subPath;
-            }
-//            linkXmlPath = myRSCManager.getTeAraCollectionFolder() + myRSCManager.getTeAraFilePathByName(thisBepFileID + ".xml");
-        }
+//        } else if (myRSCManager.getLinkCollType().equals(teAraCollTitle)) {
+//            isLinkWikipedia = false;
+//            String subPath = myRSCManager.getTeAraFilePathByName(thisBepFileID + ".xml");
+//            if (subPath.equals("FileNotFound.xml")){
+//                linkXmlPath = "resources" + File.separator + "Tool_Resources" + File.separator + subPath;
+//            } else {
+//                linkXmlPath = myRSCManager.getTeAraCollectionFolder() + subPath;
+//            }
+////            linkXmlPath = myRSCManager.getTeAraCollectionFolder() + myRSCManager.getTeAraFilePathByName(thisBepFileID + ".xml");
+//        }
         boolean isTopicText = false;
         setTextPaneContent(linkXmlPath, isTopicText);
     }

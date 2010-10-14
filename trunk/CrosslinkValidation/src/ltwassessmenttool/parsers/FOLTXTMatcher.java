@@ -367,12 +367,21 @@ public class FOLTXTMatcher {
         }
     }
 
-    private String getFullXmlTextByFileID(String fileID) {
+    private String getFullXmlText(String fileID, String xmlFilePath) {
         this.isTopicWikipedia = Boolean.valueOf(System.getProperty(sysPropertyIsTopicWikiKey));
-        String xmlFilePath = myPooler.getXmlFilePathByTargetID(fileID);
         String targetFilePath = tempFileDir + fileID + "_pureTxt.txt";
         String wikipediaTxt = ConvertXMLtoTXT(xmlFilePath, targetFilePath, this.isTopicWikipedia);
         return wikipediaTxt;
+    }
+
+    private String getFullXmlTextByFileID(String fileID) {
+        String xmlFilePath = myPooler.getXmlFilePathByTargetID(fileID);
+        return getFullXmlText(fileID, xmlFilePath);
+    }
+
+    private String getTopicFullXmlTextByFileID(String fileID) {
+        String xmlFilePath = "resources" + File.separator + "Topics" + File.separator + fileID + ".xml";
+         return getFullXmlText(fileID, xmlFilePath);
     }
 
     public String getWikiXmlTitleByFilePath(String xmlFilePath) {
@@ -448,10 +457,18 @@ public class FOLTXTMatcher {
     }
 
     public String[] getSCRAnchorPosSA(JTextPane myTextPane, String fileID, String[] thisAnchorXmlOLName) {
+        return getSCRAnchorPosSA(myTextPane, fileID, thisAnchorXmlOLName, false);
+    }
+
+    public String[] getSCRAnchorPosSA(JTextPane myTextPane, String fileID, String[] thisAnchorXmlOLName, boolean istopic) {
         // myScreenAnchorOL/thisAnchorSet
         // --> [0]:Offset, [1]:Length, [2]:Anchor_Name
         String[] myScreenAnchorPos = new String[3];
-        String myFullXmlTxt = getFullXmlTextByFileID(fileID);
+        String myFullXmlTxt = null;
+        if (istopic)
+            myFullXmlTxt = getTopicFullXmlTextByFileID(fileID);
+        else
+            myFullXmlTxt = getFullXmlTextByFileID(fileID);
         String fullScreenText = "";
         try {
             fullScreenText = myTextPane.getDocument().getText(0, myTextPane.getDocument().getLength());
@@ -473,7 +490,7 @@ public class FOLTXTMatcher {
                 if (subPath.equals("FileNotFound.xml")) {
                     bepFilePath = "resources" + File.separator + "Tool_Resources" + File.separator + subPath;
                 } else {
-                    bepFilePath = myRSCManager.getWikipediaCollectionFolder() + subPath;
+                    bepFilePath = myRSCManager.getWikipediaCollectionFolder() + File.separator + "pages" + File.separator + subPath;
                 }
 //                bepFilePath = myRSCManager.getWikipediaCollectionFolder() + myRSCManager.getWikipediaFilePathByName(bepFileID + ".xml");
 //            } else {
@@ -485,7 +502,7 @@ public class FOLTXTMatcher {
 //                }
 ////                bepFilePath = myRSCManager.getTeAraCollectionFolder() + myRSCManager.getTeAraFilePathByName(bepFileID + ".xml");
 //            }
-            String targetFilePath = "resources\\Temp\\" + bepFileID + "_pureTxt.txt";
+            String targetFilePath = "resources" + File.separator + "Temp" + File.separator + bepFileID + "_pureTxt.txt";
             fullXmlText = ConvertXMLtoTXT(bepFilePath, targetFilePath, isWikipedia);
         } catch (BadLocationException ex) {
             Logger.getLogger(FOLTXTMatcher.class.getName()).log(Level.SEVERE, null, ex);

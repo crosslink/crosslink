@@ -117,6 +117,9 @@ public class LTWAssessmentToolView extends FrameView {
     private Hashtable<String, Hashtable<String, Vector<String[]>>> poolIncomingData = new Hashtable<String, Hashtable<String, Vector<String[]>>>();
     // -------------------------------------------------------------------------
 
+    public static boolean forValidationOrAssessment = false; // false validation; true assessment
+    private String currentTopicXmlText = null;
+
     static void log(Object content) {
         System.out.println(content);
     }
@@ -284,6 +287,7 @@ public class LTWAssessmentToolView extends FrameView {
         linkTextScrollPane.setName("linkTextScrollPane"); // NOI18N
         linkTextScrollPane.setPreferredSize(new java.awt.Dimension(525, 400));
 
+        linkTextPane.setMinimumSize(new java.awt.Dimension(6, 121));
         linkTextPane.setName("linkTextPane"); // NOI18N
         linkTextPane.setPreferredSize(new java.awt.Dimension(525, 444));
         linkTextScrollPane.setViewportView(linkTextPane);
@@ -373,7 +377,7 @@ public class LTWAssessmentToolView extends FrameView {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(lblTargetPage, javax.swing.GroupLayout.DEFAULT_SIZE, 198, Short.MAX_VALUE)))
+                        .addComponent(lblTargetPage, javax.swing.GroupLayout.DEFAULT_SIZE, 167, Short.MAX_VALUE)))
                 .addContainerGap())
             .addComponent(jSplitPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1025, Short.MAX_VALUE)
         );
@@ -392,7 +396,7 @@ public class LTWAssessmentToolView extends FrameView {
                     .addComponent(lblPoolAnchor)
                     .addComponent(jLabel3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jSplitPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 601, Short.MAX_VALUE))
+                .addComponent(jSplitPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 594, Short.MAX_VALUE))
         );
 
         menuBar.setBackground(resourceMap.getColor("menuBar.background")); // NOI18N
@@ -487,7 +491,7 @@ public class LTWAssessmentToolView extends FrameView {
             .addComponent(statusPanelSeparator, javax.swing.GroupLayout.DEFAULT_SIZE, 1025, Short.MAX_VALUE)
             .addGroup(statusPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(statusMessageLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 468, Short.MAX_VALUE)
+                .addComponent(statusMessageLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 452, Short.MAX_VALUE)
                 .addGap(387, 387, 387)
                 .addComponent(progressBar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -503,7 +507,7 @@ public class LTWAssessmentToolView extends FrameView {
                     .addComponent(statusMessageLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(statusAnimationLabel)
                     .addComponent(progressBar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(11, 11, 11))
+                .addGap(12, 12, 12))
         );
 
         setComponent(mainPanel);

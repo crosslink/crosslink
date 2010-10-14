@@ -142,7 +142,7 @@ public class poolerManager {
             if (subPath.equals("FileNotFound.xml")){
                 xmlFilePath = "resources" + File.separator + "Tool_Resources" + File.separator + subPath;
             } else {
-                xmlFilePath = resManager.getWikipediaCollectionFolder() + subPath;
+                xmlFilePath = resManager.getWikipediaCollectionFolder() + File.separator + "pages" + File.separator + subPath;
             }
 //            xmlFilePath = resManager.getWikipediaCollectionFolder() + resManager.getWikipediaFilePathByName(bepFileID + ".xml");
 //        } else {
@@ -235,13 +235,16 @@ public class poolerManager {
     private HashMap<String, Vector<String[]>> getAnchorBepSetbyTopicID(String topicFileID, String afXmlPath) {
         // Format:
         // Anchor(1114_1133), Vector<String[]{123017, 1538}+>
-
-        String afTitleTag = "inexltw-assessment";
+        boolean forValidationOrAssessment = LTWAssessmentToolView.forValidationOrAssessment;
+        String afTitleTag = forValidationOrAssessment ? "inexltw-assessment" : "inexltw-submission";
         String afTopicTag = "topic";
-        String afOutgoingTag = "outgoinglinks";
+        String afOutgoingTag = forValidationOrAssessment ? "outgoinglinks" : "outgoing";
         String afAnchorTag = "anchor";
         String afSubAnchorTag = "subanchor";
         String afToBepTag = "tobep";
+        String offsetAttributeName = forValidationOrAssessment ? "aoffset" : "offset";
+        String lengthAttributeName = forValidationOrAssessment ? "alength" : "length";
+        String tboffsetAttributeName = forValidationOrAssessment ? "tboffset" : "offset";
 
         HashMap<String, Vector<String[]>> anchorBepsHT = new HashMap<String, Vector<String[]>>();
         Document xmlDoc = readingXMLFromFile(afXmlPath);
@@ -261,17 +264,29 @@ public class poolerManager {
                     Vector<String[]> anchorToBEPV;
                     for (int k = 0; k < anchorNodeList.getLength(); k++) {
                         Element anchorElmn = (Element) anchorNodeList.item(k);
-                        String aOffset = anchorElmn.getAttribute("aoffset");
-                        String aLength = anchorElmn.getAttribute("alength");
+                        String aOffset = anchorElmn.getAttribute( offsetAttributeName);
+                        String aLength = anchorElmn.getAttribute(lengthAttributeName);
                         anchorKey = aOffset + "_" + (Integer.valueOf(aOffset) + Integer.valueOf(aLength));
                         anchorToBEPV = new Vector<String[]>();
-                        NodeList subAnchorNodeList = anchorElmn.getElementsByTagName(afSubAnchorTag);
-                        for (int l = 0; l < subAnchorNodeList.getLength(); l++) {
-                            Element subAnchorElmn = (Element) subAnchorNodeList.item(l);
-                            NodeList toBepNodeList = subAnchorElmn.getElementsByTagName(afToBepTag);
+                        if (forValidationOrAssessment) {
+                            NodeList subAnchorNodeList = anchorElmn.getElementsByTagName(afSubAnchorTag);
+                            for (int l = 0; l < subAnchorNodeList.getLength(); l++) {
+                                Element subAnchorElmn = (Element) subAnchorNodeList.item(l);
+                                NodeList toBepNodeList = subAnchorElmn.getElementsByTagName(afToBepTag);
+                                for (int m = 0; m < toBepNodeList.getLength(); m++) {
+                                    Element toBepElmn = (Element) toBepNodeList.item(m);
+                                    String tbOffset = toBepElmn.getAttribute("tboffset");
+                                    Node tbXmlFileIDTextNode = toBepElmn.getFirstChild();
+                                    String tbFileID = tbXmlFileIDTextNode.getTextContent();
+                                    anchorToBEPV.add(new String[]{tbFileID, tbOffset});
+                                }
+                            }
+                        }
+                        else {
+                            NodeList toBepNodeList = anchorElmn.getElementsByTagName(afToBepTag);
                             for (int m = 0; m < toBepNodeList.getLength(); m++) {
                                 Element toBepElmn = (Element) toBepNodeList.item(m);
-                                String tbOffset = toBepElmn.getAttribute("tboffset");
+                                String tbOffset = toBepElmn.getAttribute("offset");
                                 Node tbXmlFileIDTextNode = toBepElmn.getFirstChild();
                                 String tbFileID = tbXmlFileIDTextNode.getTextContent();
                                 anchorToBEPV.add(new String[]{tbFileID, tbOffset});
