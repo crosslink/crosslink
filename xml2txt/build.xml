@@ -6,11 +6,23 @@
 	<property name="build.dir" value="${basedir}/bin" />  
 	<property name="dist.dir" value="${basedir}/dist" />
 	
+	<property name="dist.jar" value="${dist.dir}/xml2txt.jar" />
+	
 	<target name="compile">
 	        <mkdir dir="${build.dir}" />
 	        <javac srcdir="${src.dir}" destdir="${build.dir}" compiler="gcj" executable="gcj" classpathref="xml2txt.classpath">
 	             <include name="**/*.class"/>
 	        </javac>
+	</target>
+	
+	<target name="dist" depends="compile">
+		<mkdir dir="${dist.dir}" />
+		<jar jarfile="${dist.jar}" basedir="${build.dir}" excludes="*.o">
+			<manifest>
+				<attribute name="Created-By" value="Eric Tang" />
+				<attribute name="Main-Class" value="xml2txt" />
+			</manifest>
+		</jar>
 	</target>
 </project>
 
