@@ -72,7 +72,7 @@ public class topicPaneMouseListener implements MouseInputListener {
     private resourcesManager myRSCManager = new resourcesManager();
     private FOLTXTMatcher myFOLMatcher = new FOLTXTMatcher();
     // Declair Highlight Painter
-    highlightPainters painters;
+    highlightPainters painters = new highlightPainters();;
 
     private void log(Object txt) {
         System.out.println(String.valueOf(txt));
@@ -460,7 +460,7 @@ public class topicPaneMouseListener implements MouseInputListener {
         // 2) anchorFileSAVBySCRBepOLHM
         // ---------------------------------------------------------------------
         // initialize HighlightPainter
-        painters = new highlightPainters();
+//        painters = new highlightPainters();
         // The Length of a BEP ICON is 4 because of the setting of "TBEP"
         // initialize BEP Status: "669_673=669+4", "true" <-- default
         // Topic BEP Offset-Length Event
@@ -510,8 +510,8 @@ public class topicPaneMouseListener implements MouseInputListener {
     }
 
     private void activateTopicAnchorMouseListener() {
-        // initialize HighlightPainter
-        painters = new highlightPainters();
+//        // initialize HighlightPainter
+//        painters = new highlightPainters();
         // -----------------------------------------------------------------
         // initialize Anchor Status: "669_682", "true" <-- default
         Vector<String> anchorOLKey = myRSCManager.getCurrAnchorsSCROL();
@@ -533,7 +533,7 @@ public class topicPaneMouseListener implements MouseInputListener {
             Object keyObj = thisKey.next();
             Vector<String[]> myVSA = aLinksHM.get(keyObj);
             String[] keySA = keyObj.toString().split("_");
-            String[] thisAnchorSet = new String[]{keySA[0], String.valueOf(Integer.valueOf(keySA[1]) - Integer.valueOf(keySA[0])), "NOANCHORNAME"};
+            String[] thisAnchorSet = new String[]{keySA[0], String.valueOf(Integer.valueOf(keySA[1]) - Integer.valueOf(keySA[0])), keySA[2]};
             String[] scrAnchorPosSA = myFOLMatcher.getSCRAnchorPosSA(topicTextPane, currTopicID, thisAnchorSet, true);
             String mySCRAnchorPos = scrAnchorPosSA[1] + "_" + scrAnchorPosSA[2];
             bepFileSAVBySCRAnchorOLHM.put(mySCRAnchorPos, myVSA);
