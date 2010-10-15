@@ -283,11 +283,13 @@ public class LTWAssessmentToolView extends FrameView {
         rightSplitPane.setName("rightSplitPane"); // NOI18N
         rightSplitPane.setOneTouchExpandable(true);
 
-        linkTextScrollPane.setMinimumSize(new java.awt.Dimension(20, 20));
+        linkTextScrollPane.setMinimumSize(new java.awt.Dimension(560, 422));
         linkTextScrollPane.setName("linkTextScrollPane"); // NOI18N
         linkTextScrollPane.setPreferredSize(new java.awt.Dimension(525, 400));
 
-        linkTextPane.setMinimumSize(new java.awt.Dimension(6, 121));
+        linkTextPane.setEditable(false);
+        linkTextPane.setAutoscrolls(true);
+        linkTextPane.setMinimumSize(new java.awt.Dimension(560, 421));
         linkTextPane.setName("linkTextPane"); // NOI18N
         linkTextPane.setPreferredSize(new java.awt.Dimension(525, 444));
         linkTextScrollPane.setViewportView(linkTextPane);
@@ -295,9 +297,10 @@ public class LTWAssessmentToolView extends FrameView {
         rightSplitPane.setTopComponent(linkTextScrollPane);
 
         srcScrollPane.setBackground(resourceMap.getColor("srcScrollPane.background")); // NOI18N
+        srcScrollPane.setMaximumSize(new java.awt.Dimension(167, 167));
         srcScrollPane.setMinimumSize(new java.awt.Dimension(20, 20));
         srcScrollPane.setName("srcScrollPane"); // NOI18N
-        srcScrollPane.setPreferredSize(new java.awt.Dimension(525, 244));
+        srcScrollPane.setPreferredSize(new java.awt.Dimension(125, 244));
 
         paneTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -449,6 +452,7 @@ public class LTWAssessmentToolView extends FrameView {
         linkMenu.add(outRadioBtn);
 
         inRadioBtn.setText(resourceMap.getString("inRadioBtn.text")); // NOI18N
+        inRadioBtn.setEnabled(false);
         inRadioBtn.setName("inRadioBtn"); // NOI18N
         inRadioBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -758,7 +762,7 @@ public class LTWAssessmentToolView extends FrameView {
     private void inRadioBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inRadioBtnActionPerformed
         // populate Incoming Links T.B.A.
         setIncomingTBA();
-    }//GEN-LAST:event_inRadioBtnActionPerformed
+}//GEN-LAST:event_inRadioBtnActionPerformed
 
     public void highlightLastRow(int row) {
         int lastRow = tabTableModel.getRowCount();
