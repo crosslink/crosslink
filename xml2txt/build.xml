@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="xml2txt" default="compile" basedir=".">  
+<project name="xml2txt" default="dist" basedir=".">  
 	<property name="xml2txt.classpath" value="${basedir}/lib"/> 
 	<property name="lib.dir" value="${basedir}/lib"/>
     <property name="src.dir" value="${basedir}/src" />
@@ -8,10 +8,10 @@
 	
 	<property name="dist.jar" value="${dist.dir}/xml2txt.jar" />
 	
+	<!-- classpathref="${xml2txt.classpath} -->
 	<target name="compile">
 	        <mkdir dir="${build.dir}" />
-	        <javac srcdir="${src.dir}" destdir="${build.dir}" compiler="gcj" executable="gcj" classpathref="xml2txt.classpath">
-	             <include name="**/*.class"/>
+	        <javac srcdir="${src.dir}" destdir="${build.dir}" debug="true">
 	        </javac>
 	</target>
 	
@@ -20,9 +20,13 @@
 		<jar jarfile="${dist.jar}" basedir="${build.dir}" excludes="*.o">
 			<manifest>
 				<attribute name="Created-By" value="Eric Tang" />
-				<attribute name="Main-Class" value="xml2txt" />
+				<attribute name="Main-Class" value="crosslink.xml2txt" />
 			</manifest>
 		</jar>
+	</target>
+	
+	<target name="clean">
+	        <delete dir="${build.dir}" />
 	</target>
 </project>
 

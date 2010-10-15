@@ -1,13 +1,21 @@
-
+package crosslink;
 import java.io.FileInputStream;
 import java.io.IOException;
 
 public class xml2txt {
 
+	private static xml2txt instance = null;
+	
+	public static xml2txt getInstance() {
+		if (instance == null)
+			instance = new xml2txt();
+		return instance;
+	}
+	
 	/*
 	 * This snippet code is written by Andrew Trotman initially
 	 */
-	static void clean(byte[] file)
+	void clean(byte[] file)
 	{
 		//byte[] ch; //, *from, *to;
 		/*
@@ -22,7 +30,7 @@ public class xml2txt {
 				{
 				while (file[count] != '>')
 					file[count++] = ' ';
-				file[count++] = ' '; // replace >
+				file[count] = ' '; // replace >
 				}
 //			else if (!isalnum(ch))	// then remove it
 //				ch++ = ' ';

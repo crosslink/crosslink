@@ -10,13 +10,13 @@ main = xml2txt
 all: $(main) header lib
 
 $(main): $(OBJDIR)/$(main).o
-	$(CC) --main=$(main) $(LDFLAGS) -o $@ $^
+	$(CC) --main=crosslink.$(main) $(LDFLAGS) -o $@ $^
     	
-$(OBJDIR)/%.o: $(SRCDIR)/%.java
+$(OBJDIR)/%.o: $(SRCDIR)/crosslink/%.java
 	$(CC) $(CFLAGS) -c $< -o $@
 	
 header: ant
-	gcjh $(OBJDIR)/$(main).class
+	gcjh $(OBJDIR)/crosslink/$(main).class
 	
 ant:
 	ant compile
