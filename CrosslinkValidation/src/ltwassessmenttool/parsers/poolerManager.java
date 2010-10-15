@@ -266,7 +266,8 @@ public class poolerManager {
                         Element anchorElmn = (Element) anchorNodeList.item(k);
                         String aOffset = anchorElmn.getAttribute( offsetAttributeName);
                         String aLength = anchorElmn.getAttribute(lengthAttributeName);
-                        anchorKey = aOffset + "_" + (Integer.valueOf(aOffset) + Integer.valueOf(aLength));
+                        String anchorName = anchorElmn.getAttribute("name");
+                        anchorKey = aOffset + "_" + (Integer.valueOf(aOffset) + Integer.valueOf(aLength)) + "_" + anchorName;
                         anchorToBEPV = new Vector<String[]>();
                         if (forValidationOrAssessment) {
                             NodeList subAnchorNodeList = anchorElmn.getElementsByTagName(afSubAnchorTag);

@@ -984,6 +984,7 @@ public class LTWAssessmentToolView extends FrameView {
     // =========================================================================
     // Outgoing Links: T.A.B.
     // =========================================================================
+    // tagert, anchor and bep?
 
     private void setOutgoingTAB() {
         System.setProperty(sysPropertyIsTABKey, "true");
