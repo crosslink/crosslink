@@ -1,4 +1,4 @@
-package ltwassessmenttool.parsers;
+package ltwassessment.parsers;
 
 import com.sun.org.apache.xerces.internal.parsers.DOMParser;
 import java.io.BufferedWriter;
@@ -15,6 +15,9 @@ import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
 import javax.xml.stream.events.XMLEvent;
+
+import ltwassessment.AppResource;
+import ltwassessmenttool.parsers.Xml2Html;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
@@ -44,7 +47,7 @@ public class Xml2Html {
 
     public Xml2Html(String xmlFilePath, boolean isWikipedia) {
 
-        org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(ltwassessmenttool.LTWAssessmentToolApp.class).getContext().getResourceMap(LTWAssessmentToolView.class);
+        //org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(ltwassessment.LTWAssessmentToolApp.class).getContext().getResourceMap(LTWAssessmentToolView.class);
         this.htmlFileTopFolder = AppResource.getInstance().getResourceMap().getString("temp.folder") + File.separator;
 
         this.xmlPath = xmlFilePath;

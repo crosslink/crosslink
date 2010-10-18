@@ -1,8 +1,10 @@
-package ltwassessmenttool.utility;
+package ltwassessment.utility;
 
 import java.util.Observable;
 import java.util.Vector;
 import javax.swing.JLabel;
+
+import ltwassessmenttool.utility.ObservableSingleton;
 
 /**
  * @author Darren Huang

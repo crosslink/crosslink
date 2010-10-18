@@ -1,4 +1,4 @@
-package ltwassessmenttool.utility;
+package ltwassessment.utility;
 
 import java.awt.Insets;
 import java.io.File;
@@ -15,10 +15,12 @@ import javax.swing.text.Style;
 import javax.swing.text.StyleConstants;
 import javax.swing.text.StyledDocument;
 
-import ltwassessmenttool.parsers.FOLTXTMatcher;
-import ltwassessmenttool.parsers.Xml2Html;
-import ltwassessmenttool.parsers.poolerManager;
-import ltwassessmenttool.parsers.resourcesManager;
+import ltwassessment.parsers.FOLTXTMatcher;
+import ltwassessment.parsers.Xml2Html;
+import ltwassessment.parsers.poolerManager;
+import ltwassessment.parsers.resourcesManager;
+import ltwassessmenttool.utility.highlightPainters;
+import ltwassessmenttool.utility.tabTxtPaneManager;
 
 /**
  * @author Darren HUANG
@@ -55,7 +57,7 @@ public class tbaTxtPaneManager {
     }
 
     public tbaTxtPaneManager() {
-        org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(ltwassessmenttool.LTWAssessmentToolApp.class).getContext().getResourceMap(LTWAssessmentToolView.class);
+        //org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(ltwassessment.LTWAssessmentToolApp.class).getContext().getResourceMap(LTWAssessmentToolView.class);
         this.wikipediaCollTitle = AppResource.getInstance().getResourceMap().getString("collectionType.Wikipedia");
         this.teAraCollTitle = AppResource.getInstance().getResourceMap().getString("collectionType.TeAra");
         this.wikipediaTopicDirectory = AppResource.getInstance().getResourceMap().getString("wikipedia.topics.folder");

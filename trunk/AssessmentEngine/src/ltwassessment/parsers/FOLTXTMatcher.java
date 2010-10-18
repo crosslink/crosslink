@@ -1,4 +1,4 @@
-package ltwassessmenttool.parsers;
+package ltwassessment.parsers;
 
 import com.sun.org.apache.xpath.internal.XPathAPI;
 import java.io.BufferedReader;
@@ -18,6 +18,11 @@ import javax.swing.JTextPane;
 import javax.swing.text.BadLocationException;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
+
+import ltwassessment.AppResource;
+import ltwassessmenttool.parsers.FOLTXTMatcher;
+import ltwassessmenttool.parsers.poolerManager;
+import ltwassessmenttool.parsers.resourcesManager;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -55,7 +60,7 @@ public class FOLTXTMatcher {
         this.myRSCManager = new resourcesManager();
         this.myPooler = poolerManager.getInstance();
 
-        org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(ltwassessmenttool.LTWAssessmentToolApp.class).getContext().getResourceMap(LTWAssessmentToolView.class);
+        //org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(ltwassessment.LTWAssessmentToolApp.class).getContext().getResourceMap(LTWAssessmentToolView.class);
         this.wikipediaTopicFileDir = AppResource.getInstance().getResourceMap().getString("wikipedia.topics.folder") + File.separator;
         this.tempFileDir = AppResource.getInstance().getResourceMap().getString("temp.folder") + File.separator;
         this.wikipediaTypeName = AppResource.getInstance().getResourceMap().getString("collectionType.Wikipedia");
