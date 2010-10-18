@@ -18,8 +18,8 @@ import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
 
 import ltwassessment.AppResource;
-import ltwassessmenttool.parsers.poolerManager;
-import ltwassessmenttool.parsers.resourcesManager;
+import ltwassessment.parsers.poolerManager;
+import ltwassessment.parsers.resourcesManager;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -60,7 +60,7 @@ public class poolerManager {
     static {
         resManager = new resourcesManager();
 
-        //resourceMap = org.jdesktop.application.Application.getInstance(ltwassessment.LTWAssessmentToolApp.class).getContext().getResourceMap(LTWAssessmentToolView.class);
+        //resourceMap = org.jdesktop.application.Application.getInstance(ltwassessment.ltwassessmentApp.class).getContext().getResourceMap(ltwassessmentView.class);
         resourceXMLFile = AppResource.getInstance().getResourceMap().getString("ResourceXMLFilePath");
         fileNotFoundXmlPath = AppResource.getInstance().getResourceMap().getString("fileNotFound.ReplacedXmlPath");
         afTasnCollectionErrors = AppResource.getInstance().getResourceMap().getString("AssFormXml.taskCollectionError");
@@ -239,7 +239,7 @@ public class poolerManager {
     private HashMap<String, Vector<String[]>> getAnchorBepSetbyTopicID(String topicFileID, String afXmlPath) {
         // Format:
         // Anchor(1114_1133), Vector<String[]{123017, 1538}+>
-        boolean forValidationOrAssessment = LTWAssessmentToolView.forValidationOrAssessment;
+        boolean forValidationOrAssessment = AppResource.forValidationOrAssessment;
         String afTitleTag = forValidationOrAssessment ? "inexltw-assessment" : "inexltw-submission";
         String afTopicTag = "topic";
         String afOutgoingTag = forValidationOrAssessment ? "outgoinglinks" : "outgoing";

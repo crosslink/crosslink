@@ -40,26 +40,28 @@ import javax.swing.text.Highlighter;
 import javax.swing.text.Style;
 import javax.swing.text.StyleConstants;
 import javax.swing.text.StyledDocument;
-import ltwassessmenttool.parsers.Xml2Html;
+
+import ltwassessment.AppResource;
+import ltwassessment.parsers.FOLTXTMatcher;
+import ltwassessment.parsers.Xml2Html;
+import ltwassessment.parsers.assessmentFormXml;
+import ltwassessment.parsers.poolerManager;
+import ltwassessment.parsers.resourcesManager;
+import ltwassessment.utility.AttributiveCellRenderer;
+import ltwassessment.utility.InteractiveRenderer;
+import ltwassessment.utility.ObservableSingleton;
+import ltwassessment.utility.TABInteractiveTableModel;
+import ltwassessment.utility.TBAInteractiveTableModel;
+import ltwassessment.utility.fieldUpdateObserver;
+import ltwassessment.utility.highlightPainters;
+import ltwassessment.utility.paneTableIndexing;
+import ltwassessment.utility.paneTableManager;
+import ltwassessment.utility.tabTxtPaneManager;
+import ltwassessment.utility.tbaTxtPaneManager;
 import ltwassessmenttool.listener.CaretListenerLabel;
 import ltwassessmenttool.listener.linkPaneMouseListener;
 import ltwassessmenttool.listener.paneTableMouseListener;
 import ltwassessmenttool.listener.topicPaneMouseListener;
-import ltwassessmenttool.parsers.FOLTXTMatcher;
-import ltwassessmenttool.parsers.assessmentFormXml;
-import ltwassessmenttool.parsers.poolerManager;
-import ltwassessmenttool.parsers.resourcesManager;
-import ltwassessmenttool.utility.AttributiveCellRenderer;
-import ltwassessmenttool.utility.InteractiveRenderer;
-import ltwassessmenttool.utility.ObservableSingleton;
-import ltwassessmenttool.utility.TABInteractiveTableModel;
-import ltwassessmenttool.utility.TBAInteractiveTableModel;
-import ltwassessmenttool.utility.fieldUpdateObserver;
-import ltwassessmenttool.utility.highlightPainters;
-import ltwassessmenttool.utility.paneTableIndexing;
-import ltwassessmenttool.utility.paneTableManager;
-import ltwassessmenttool.utility.tabTxtPaneManager;
-import ltwassessmenttool.utility.tbaTxtPaneManager;
 import ltwassessmenttool.validation.Validator;
 
 /**
@@ -118,6 +120,7 @@ public class LTWAssessmentToolView extends FrameView {
     // -------------------------------------------------------------------------
 
     public static boolean forValidationOrAssessment = false; // false validation; true assessment
+    
     private String currentTopicXmlText = null;
 
     static void log(Object content) {
@@ -135,6 +138,11 @@ public class LTWAssessmentToolView extends FrameView {
 
     public LTWAssessmentToolView(SingleFrameApplication app) {
         super(app);
+        
+        // update resource manager first thing with the app starting up
+        AppResource.forValidationOrAssessment = false;
+        AppResource.getInstance().setResourceMap(org.jdesktop.application.Application.getInstance(ltwassessmenttool.LTWAssessmentToolApp.class).getContext().getResourceMap(ltwassessmenttool.LTWAssessmentToolView.class));
+
         initComponents();
 
         group.add(outRadioBtn);
@@ -145,6 +153,8 @@ public class LTWAssessmentToolView extends FrameView {
         os.addObserver(fuObserver);
 
         resourceMap = getResourceMap();
+        //AppResource.getInstance().setResourceMap(resourceMap);
+        
         wikipediaTopicFileDir = resourceMap.getString("wikipedia.topics.folder") + File.separator;
         textContentType = resourceMap.getString("html.content.type");
         bepIconImageFilePath = resourceMap.getString("bepIcon.imageFilePath");
@@ -177,7 +187,6 @@ public class LTWAssessmentToolView extends FrameView {
 
         // when the tool firstly starts
         System.setProperty(sysPropertyIsTABKey, "true");
-
     }
 
     private boolean corpusDirChecker(boolean topicIsWikipedia) {

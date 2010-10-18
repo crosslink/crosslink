@@ -2,12 +2,13 @@ package ltwassessment.utility;
 
 import java.util.Vector;
 
+import ltwassessment.AppResource;
 import ltwassessment.parsers.FOLTXTMatcher;
 import ltwassessment.parsers.poolerManager;
 import ltwassessment.parsers.resourcesManager;
-import ltwassessmenttool.utility.TABInteractiveTableModel;
-import ltwassessmenttool.utility.TBAInteractiveTableModel;
-import ltwassessmenttool.utility.paneTableIndexing;
+import ltwassessment.utility.TABInteractiveTableModel;
+import ltwassessment.utility.TBAInteractiveTableModel;
+import ltwassessment.utility.paneTableIndexing;
 
 /**
  * @author Darren HUANG
@@ -31,7 +32,7 @@ public class paneTableManager {
 
     public paneTableManager(paneTableIndexing tabIndexing) {
         // constant variables from resource
-        //org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(ltwassessment.LTWAssessmentToolApp.class).getContext().getResourceMap(LTWAssessmentToolView.class);
+        //org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(ltwassessment.ltwassessmentApp.class).getContext().getResourceMap(ltwassessmentView.class);
         wikipediaCollTitle = AppResource.getInstance().getResourceMap().getString("collectionType.Wikipedia");
         teAraCollTitle = AppResource.getInstance().getResourceMap().getString("collectionType.TeAra");
         // ---------------------------------------------------------------------

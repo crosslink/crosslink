@@ -3,7 +3,7 @@ package ltwassessment.utility;
 import java.util.Vector;
 import javax.swing.table.AbstractTableModel;
 
-import ltwassessmenttool.utility.TBARecord;
+import ltwassessment.utility.TBARecord;
 
 /**
  * @author Darren HUANG

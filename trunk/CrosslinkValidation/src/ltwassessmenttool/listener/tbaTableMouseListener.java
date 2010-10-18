@@ -8,10 +8,11 @@ import java.util.Hashtable;
 import java.util.Vector;
 import javax.swing.JTable;
 import javax.swing.JTextPane;
-import ltwassessmenttool.parsers.resourcesManager;
-import ltwassessmenttool.utility.AttributiveCellRenderer;
-import ltwassessmenttool.utility.paneTableIndexing;
-import ltwassessmenttool.utility.tbaTxtPaneManager;
+
+import ltwassessment.parsers.resourcesManager;
+import ltwassessment.utility.AttributiveCellRenderer;
+import ltwassessment.utility.paneTableIndexing;
+import ltwassessment.utility.tbaTxtPaneManager;
 
 /**
  * @author Darren HUANG
