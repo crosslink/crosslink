@@ -1,4 +1,4 @@
-package ltwassessmenttool.utility;
+package ltwassessment.utility;
 
 /**
  * Knuth-Morris-Pratt agent implementation for looking for bytes in a byte array.

@@ -1,4 +1,4 @@
-package ltwassessmenttool.utility;
+package ltwassessment.utility;
 
 import org.xml.sax.ErrorHandler;
 import org.xml.sax.SAXException;

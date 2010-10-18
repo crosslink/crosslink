@@ -1,4 +1,4 @@
-package ltwassessmenttool.utility;
+package ltwassessment.utility;
 
 import java.awt.Color;
 import java.awt.Component;

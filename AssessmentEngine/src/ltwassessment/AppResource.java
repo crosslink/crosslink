@@ -1,10 +1,12 @@
-package ltwassessmenttool;
+package ltwassessment;
 
 import org.jdesktop.application.Application;
 
 public class AppResource {
 	
 	public static AppResource instance = null;
+    public static boolean forValidationOrAssessment = false; 
+    
 	private org.jdesktop.application.ResourceMap resourceMap = null;
 
 	public AppResource() {

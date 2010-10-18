@@ -1,22 +1,24 @@
-package ltwassessmenttool.utility;
+package ltwassessment.utility;
 
 import java.util.Vector;
 import javax.swing.table.AbstractTableModel;
 
+import ltwassessmenttool.utility.TABRecord;
+
 /**
  * @author Darren HUANG
  */
-public class TBAInteractiveTableModel extends AbstractTableModel {
+public class TABInteractiveTableModel extends AbstractTableModel {
 
     public static final int TOPIC_INDEX = 0;
-    public static final int BEP_INDEX = 1;
-    public static final int ANCHOR_INDEX = 2;
-    public static final int FILEID_INDEX = 3;
+    public static final int ANCHOR_INDEX = 1;
+    public static final int SUBANCHOR_INDEX = 2;
+    public static final int BEP_INDEX = 3;
     public static final int HIDDEN_INDEX = 4;
     protected String[] columnNames;
     protected Vector dataVector;
 
-    public TBAInteractiveTableModel(String[] columnNames) {
+    public TABInteractiveTableModel(String[] columnNames) {
         this.columnNames = columnNames;
         this.dataVector = new Vector();
     }
@@ -38,9 +40,9 @@ public class TBAInteractiveTableModel extends AbstractTableModel {
     public Class getCloumnClass(int colIndex) {
         switch (colIndex) {
             case TOPIC_INDEX:
-            case BEP_INDEX:
             case ANCHOR_INDEX:
-            case FILEID_INDEX:
+            case SUBANCHOR_INDEX:
+            case BEP_INDEX:
                 return String.class;
             default:
                 return Object.class;
@@ -56,16 +58,16 @@ public class TBAInteractiveTableModel extends AbstractTableModel {
     }
 
     public Object getValueAt(int row, int column) {
-        TBARecord myRecord = (TBARecord) dataVector.get(row);
+        TABRecord myRecord = (TABRecord) dataVector.get(row);
         switch (column) {
             case TOPIC_INDEX:
                 return myRecord.getTopic();
-            case BEP_INDEX:
-                return myRecord.getBEP();
             case ANCHOR_INDEX:
                 return myRecord.getAnchor();
-            case FILEID_INDEX:
-                return myRecord.getAnchorFileID();
+            case SUBANCHOR_INDEX:
+                return myRecord.getSubAnchor();
+            case BEP_INDEX:
+                return myRecord.getBEP();
             case HIDDEN_INDEX:
                 return myRecord.getHiddenFieldValue();
             default:
@@ -75,19 +77,19 @@ public class TBAInteractiveTableModel extends AbstractTableModel {
 
     @Override
     public void setValueAt(Object value, int row, int column) {
-        TBARecord myRecord = (TBARecord) dataVector.get(row);
+        TABRecord myRecord = (TABRecord) dataVector.get(row);
         switch (column) {
             case TOPIC_INDEX:
                 myRecord.setTopic((String) value);
                 break;
-            case BEP_INDEX:
-                myRecord.setBEP((String) value);
-                break;
             case ANCHOR_INDEX:
                 myRecord.setAnchor((String) value);
                 break;
-            case FILEID_INDEX:
-                myRecord.setAnchorFileID((String) value);
+            case SUBANCHOR_INDEX:
+                myRecord.setSubAnchor((String) value);
+                break;
+            case BEP_INDEX:
+                myRecord.setBEP((String) value);
                 break;
             case HIDDEN_INDEX:
                 myRecord.setHiddenFieldValue((String) value);
@@ -102,11 +104,11 @@ public class TBAInteractiveTableModel extends AbstractTableModel {
         if (dataVector.size() == 0) {
             return false;
         }
-        TBARecord myRecord = (TBARecord) dataVector.get(dataVector.size() - 1);
+        TABRecord myRecord = (TABRecord) dataVector.get(dataVector.size() - 1);
         if (myRecord.getTopic().trim().equals("") &&
-                myRecord.getBEP().trim().equals("") &&
                 myRecord.getAnchor().trim().equals("") &&
-                myRecord.getAnchorFileID().trim().equals("")) {
+                myRecord.getSubAnchor().trim().equals("") &&
+                myRecord.getBEP().trim().equals("")) {
             return true;
         } else {
             return false;
@@ -114,7 +116,7 @@ public class TBAInteractiveTableModel extends AbstractTableModel {
     }
 
     public void addEmptyRow() {
-        dataVector.add(new TBARecord());
+        dataVector.add(new TABRecord());
         fireTableCellUpdated(dataVector.size() - 1, dataVector.size() - 1);
     }
 }

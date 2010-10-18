@@ -1,4 +1,4 @@
-package ltwassessmenttool.utility;
+package ltwassessment.utility;
 
 import java.io.Serializable;
 import java.util.Comparator;

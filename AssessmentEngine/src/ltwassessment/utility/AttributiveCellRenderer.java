@@ -1,4 +1,4 @@
-package ltwassessmenttool.utility;
+package ltwassessment.utility;
 
 import java.awt.Color;
 import java.awt.Component;
@@ -6,7 +6,10 @@ import java.util.Hashtable;
 import java.util.Vector;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableCellRenderer;
-import ltwassessmenttool.parsers.resourcesManager;
+
+import ltwassessment.parsers.resourcesManager;
+import ltwassessmenttool.utility.ObservableSingleton;
+import ltwassessmenttool.utility.paneTableIndexing;
 
 /**
  * @author Darren HUANG

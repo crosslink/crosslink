@@ -49,7 +49,7 @@
  *     chooser.addChoosableFileFilter(filter);
  *     chooser.showOpenDialog(this);
  */
-package ltwassessmenttool.utility;
+package ltwassessment.utility;
 
 /**
  * Created on 24 September 2007, 13:24

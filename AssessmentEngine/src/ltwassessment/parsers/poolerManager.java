@@ -1,4 +1,4 @@
-package ltwassessmenttool.parsers;
+package ltwassessment.parsers;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -17,6 +17,10 @@ import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
 
+import ltwassessment.AppResource;
+import ltwassessmenttool.parsers.poolerManager;
+import ltwassessmenttool.parsers.resourcesManager;
+
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -32,7 +36,7 @@ public class poolerManager {
     private final String sysPropertyKey = "isTABKey";
     private final String sysPropertyIsTopicWikiKey = "isTopicWikipedia";
     private final String sysPropertyIsLinkWikiKey = "isLinkWikipedia";
-    static org.jdesktop.application.ResourceMap resourceMap;
+    //static org.jdesktop.application.ResourceMap resourceMap;
     private static String resourceXMLFile = "";
     private static String fileNotFoundXmlPath = "";
     private static String afTasnCollectionErrors = "";
@@ -56,7 +60,7 @@ public class poolerManager {
     static {
         resManager = new resourcesManager();
 
-        resourceMap = org.jdesktop.application.Application.getInstance(ltwassessmenttool.LTWAssessmentToolApp.class).getContext().getResourceMap(LTWAssessmentToolView.class);
+        //resourceMap = org.jdesktop.application.Application.getInstance(ltwassessment.LTWAssessmentToolApp.class).getContext().getResourceMap(LTWAssessmentToolView.class);
         resourceXMLFile = AppResource.getInstance().getResourceMap().getString("ResourceXMLFilePath");
         fileNotFoundXmlPath = AppResource.getInstance().getResourceMap().getString("fileNotFound.ReplacedXmlPath");
         afTasnCollectionErrors = AppResource.getInstance().getResourceMap().getString("AssFormXml.taskCollectionError");
