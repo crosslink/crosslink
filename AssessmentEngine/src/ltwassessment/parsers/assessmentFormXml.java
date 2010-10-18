@@ -31,8 +31,8 @@ import javax.xml.validation.Validator;
 
 import ltwassessment.AppResource;
 import ltwassessment.utility.toolErrorHandler;
-import ltwassessmenttool.parsers.assessmentFormXml;
-import ltwassessmenttool.parsers.resourcesManager;
+import ltwassessment.parsers.assessmentFormXml;
+import ltwassessment.parsers.resourcesManager;
 
 import org.xml.sax.ErrorHandler;
 import org.xml.sax.SAXException;
@@ -68,7 +68,7 @@ public class assessmentFormXml {
         // 1) Title Tags
         docTitleTagHT.put(docLocalName, new String[]{"participant-id", "run-id", "task"});
         // 2) Collection Types
-        //org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(ltwassessment.LTWAssessmentToolApp.class).getContext().getResourceMap(LTWAssessmentToolView.class);
+        //org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(ltwassessment.ltwassessmentApp.class).getContext().getResourceMap(ltwassessmentView.class);
         collectionTypes[0] = AppResource.getInstance().getResourceMap().getString("collection.Wikipedia");
 //        collectionTypes[1] = AppResource.getInstance().getResourceMap().getString("collection.TeAra");
         // 4) get XML Schema File

@@ -24,14 +24,15 @@ import javax.swing.text.Position;
 import javax.swing.text.Style;
 import javax.swing.text.StyleConstants;
 import javax.swing.text.StyledDocument;
+
+import ltwassessment.parsers.FOLTXTMatcher;
+import ltwassessment.parsers.Xml2Html;
+import ltwassessment.parsers.poolerManager;
+import ltwassessment.parsers.resourcesManager;
+import ltwassessment.utility.AttributiveCellRenderer;
+import ltwassessment.utility.highlightPainters;
+import ltwassessment.utility.paneTableIndexing;
 import ltwassessmenttool.LTWAssessmentToolView;
-import ltwassessmenttool.parsers.FOLTXTMatcher;
-import ltwassessmenttool.parsers.Xml2Html;
-import ltwassessmenttool.parsers.poolerManager;
-import ltwassessmenttool.parsers.resourcesManager;
-import ltwassessmenttool.utility.AttributiveCellRenderer;
-import ltwassessmenttool.utility.highlightPainters;
-import ltwassessmenttool.utility.paneTableIndexing;
 
 /**
  * @author Darren HUANG

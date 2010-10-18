@@ -17,7 +17,7 @@ import javax.xml.stream.XMLStreamReader;
 import javax.xml.stream.events.XMLEvent;
 
 import ltwassessment.AppResource;
-import ltwassessmenttool.parsers.Xml2Html;
+import ltwassessment.parsers.Xml2Html;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
@@ -47,7 +47,7 @@ public class Xml2Html {
 
     public Xml2Html(String xmlFilePath, boolean isWikipedia) {
 
-        //org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(ltwassessment.LTWAssessmentToolApp.class).getContext().getResourceMap(LTWAssessmentToolView.class);
+        //org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(ltwassessment.ltwassessmentApp.class).getContext().getResourceMap(ltwassessmentView.class);
         this.htmlFileTopFolder = AppResource.getInstance().getResourceMap().getString("temp.folder") + File.separator;
 
         this.xmlPath = xmlFilePath;

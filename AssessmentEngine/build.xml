@@ -8,7 +8,10 @@
 	<property name="dist.jar" value="${dist.dir}/assessment-engine.jar" />
 	
 	<path id="class.path">
-            <pathelement location="${lib.dir}/appframework-1.0.3.jar"/>
+        <pathelement location="${lib.dir}/appframework-1.0.3.jar"/>
+		<pathelement location="${lib.dir}/xercesImpl.jar"/>
+		<pathelement location="${lib.dir}/xml2txt.jar"/>
+		<pathelement location="${lib.dir}/jdom.jar"/>
 	</path>
 	<!-- classpathref="${engine.classpath} -->
 	<target name="compile">

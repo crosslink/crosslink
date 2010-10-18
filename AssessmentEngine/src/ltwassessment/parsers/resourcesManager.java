@@ -24,7 +24,7 @@ import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
 import ltwassessment.AppResource;
-import ltwassessmenttool.parsers.resourcesManager;
+import ltwassessment.parsers.resourcesManager;
 
 import org.w3c.dom.CharacterData;
 import org.w3c.dom.Document;
@@ -68,7 +68,17 @@ public class resourcesManager {
 
     public resourcesManager() {
         // get toolResources XML file Location/Path
-        ////org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(ltwassessment.LTWAssessmentToolApp.class).getContext().getResourceMap(LTWAssessmentToolView.class);
+        ////org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(ltwassessment.ltwassessmentApp.class).getContext().getResourceMap(ltwassessmentView.class);
+    	//AppResource.getInstance().setResourceMap(org.jdesktop.application.Application.getInstance(ltwassessmenttool.LTWAssessmentToolApp.class).getContext().getResourceMap(ltwassessmenttool.LTWAssessmentToolView.class));
+    	init();
+    }
+    
+    public resourcesManager(org.jdesktop.application.ResourceMap resourceMap) {
+    	AppResource.getInstance().setResourceMap(resourceMap);
+    	init();
+    }
+    
+    private void init() {
         resourceXMLFile = AppResource.getInstance().getResourceMap().getString("ResourceXMLFilePath");
         afTasnCollectionErrors = AppResource.getInstance().getResourceMap().getString("AssFormXml.taskCollectionError");
         afErrorsFilePath = AppResource.getInstance().getResourceMap().getString("bepFile.ErrorXmlPath");

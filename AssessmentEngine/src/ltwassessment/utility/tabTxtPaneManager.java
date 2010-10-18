@@ -16,12 +16,13 @@ import javax.swing.text.Style;
 import javax.swing.text.StyleConstants;
 import javax.swing.text.StyledDocument;
 
+import ltwassessment.AppResource;
 import ltwassessment.parsers.FOLTXTMatcher;
 import ltwassessment.parsers.Xml2Html;
 import ltwassessment.parsers.poolerManager;
 import ltwassessment.parsers.resourcesManager;
-import ltwassessmenttool.utility.highlightPainters;
-import ltwassessmenttool.utility.tabTxtPaneManager;
+import ltwassessment.utility.highlightPainters;
+import ltwassessment.utility.tabTxtPaneManager;
 
 /**
  * @author Darren HUANG
@@ -59,7 +60,7 @@ public class tabTxtPaneManager {
     }
 
     public tabTxtPaneManager() {
-        //org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(ltwassessment.LTWAssessmentToolApp.class).getContext().getResourceMap(LTWAssessmentToolView.class);
+        //org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(ltwassessment.ltwassessmentApp.class).getContext().getResourceMap(ltwassessmentView.class);
         this.wikipediaCollTitle = AppResource.getInstance().getResourceMap().getString("collectionType.Wikipedia");
         this.teAraCollTitle = AppResource.getInstance().getResourceMap().getString("collectionType.TeAra");
         this.wikipediaTopicDirectory = AppResource.getInstance().getResourceMap().getString("wikipedia.topics.folder");

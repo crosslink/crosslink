@@ -5,8 +5,10 @@ import java.util.Collections;
 import java.util.Vector;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
-import ltwassessmenttool.parsers.poolerManager;
-import ltwassessmenttool.parsers.resourcesManager;
+
+import ltwassessment.parsers.poolerManager;
+import ltwassessment.parsers.resourcesManager;
+
 import org.jdesktop.application.Action;
 
 /**

@@ -5,7 +5,7 @@ import java.util.Observer;
 import java.util.Vector;
 import javax.swing.JLabel;
 
-import ltwassessmenttool.utility.ObservableSingleton;
+import ltwassessment.utility.ObservableSingleton;
 
 /**
  * @author Darren HUANG

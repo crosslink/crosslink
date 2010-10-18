@@ -318,7 +318,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="corpusMenuItem">
               <Properties>
                 <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
-                  <action class="ltwassessmenttool.LTWAssessmentToolView" id="showCorpusBox" methodName="showCorpusBox"/>
+                  <action class="ltwassessment.LTWAssessmentToolView" id="showCorpusBox" methodName="showCorpusBox"/>
                 </Property>
                 <Property name="text" type="java.lang.String" resourceKey="corpusMenuItem.text"/>
                 <Property name="name" type="java.lang.String" value="corpusMenuItem" noResource="true"/>
@@ -327,7 +327,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="loadMenuItem">
               <Properties>
                 <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
-                  <action class="ltwassessmenttool.LTWAssessmentToolView" id="loadSubmissionXML" methodName="loadSubmissionXML"/>
+                  <action class="ltwassessment.LTWAssessmentToolView" id="loadSubmissionXML" methodName="loadSubmissionXML"/>
                 </Property>
                 <Property name="text" type="java.lang.String" resourceKey="loadMenuItem.text"/>
                 <Property name="name" type="java.lang.String" value="loadMenuItem" noResource="true"/>
@@ -336,7 +336,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="splitMenuItem">
               <Properties>
                 <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
-                  <action class="ltwassessmenttool.LTWAssessmentToolView" id="splitSubmissionIntoTopics" methodName="splitSubmissionIntoTopics"/>
+                  <action class="ltwassessment.LTWAssessmentToolView" id="splitSubmissionIntoTopics" methodName="splitSubmissionIntoTopics"/>
                 </Property>
                 <Property name="text" type="java.lang.String" resourceKey="splitMenuItem.text"/>
                 <Property name="name" type="java.lang.String" value="splitMenuItem" noResource="true"/>
@@ -387,7 +387,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="aboutMenuItem">
               <Properties>
                 <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
-                  <action class="ltwassessmenttool.LTWAssessmentToolView" id="showAboutBox" methodName="showAboutBox"/>
+                  <action class="ltwassessment.LTWAssessmentToolView" id="showAboutBox" methodName="showAboutBox"/>
                 </Property>
                 <Property name="name" type="java.lang.String" value="aboutMenuItem" noResource="true"/>
               </Properties>

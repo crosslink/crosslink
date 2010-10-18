@@ -8,8 +8,8 @@ import javax.swing.JTable;
 import javax.swing.table.DefaultTableCellRenderer;
 
 import ltwassessment.parsers.resourcesManager;
-import ltwassessmenttool.utility.ObservableSingleton;
-import ltwassessmenttool.utility.paneTableIndexing;
+import ltwassessment.utility.ObservableSingleton;
+import ltwassessment.utility.paneTableIndexing;
 
 /**
  * @author Darren HUANG
