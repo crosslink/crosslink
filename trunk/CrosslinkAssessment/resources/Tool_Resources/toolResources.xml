@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toolResources>
+	<currTopicXmlFile>resources\Topics\50585.xml</currTopicXmlFile>
+    <poolingXmlFile>resources/Assessment_Form/QUT_LTW_a2b_TEST_AF.xml</poolingXmlFile>
+    <wikipediaCollectionPath>F:\Wikipedia_2009_Collection</wikipediaCollectionPath>
+    <tearaCollectionPath>F:\TeAra_2009_Collection\TeAra</tearaCollectionPath>
+    <wikipediaFilePath>resources\Tool_Resources\wikipediaFilePath.txt</wikipediaFilePath>
+	<tearaFilePath>resources\Tool_Resources\teAraFilePath.txt</tearaFilePath>
+	<ltwTopics>
+        <topic1>50585.xml</topic1>
+        <topic2>25640.xml</topic2>
+    </ltwTopics>
+</toolResources>
