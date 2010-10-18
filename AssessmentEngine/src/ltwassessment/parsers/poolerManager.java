@@ -1,8 +1,18 @@
 package ltwassessment.parsers;
 
+import com.ximpleware.AutoPilot;
+import com.ximpleware.ModifyException;
+import com.ximpleware.NavException;
+import com.ximpleware.TranscodeException;
+import com.ximpleware.VTDGen;
+import com.ximpleware.VTDNav;
+import com.ximpleware.XMLModifier;
+import com.ximpleware.XPathEvalException;
+import com.ximpleware.XPathParseException;
+
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.HashMap;
@@ -18,8 +28,6 @@ import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
 
 import ltwassessment.AppResource;
-import ltwassessment.parsers.poolerManager;
-import ltwassessment.parsers.resourcesManager;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -36,7 +44,6 @@ public class poolerManager {
     private final String sysPropertyKey = "isTABKey";
     private final String sysPropertyIsTopicWikiKey = "isTopicWikipedia";
     private final String sysPropertyIsLinkWikiKey = "isLinkWikipedia";
-    //static org.jdesktop.application.ResourceMap resourceMap;
     private static String resourceXMLFile = "";
     private static String fileNotFoundXmlPath = "";
     private static String afTasnCollectionErrors = "";
@@ -48,15 +55,15 @@ public class poolerManager {
     private Hashtable<String, Vector<String[]>> topicAnchorsHT = new Hashtable<String, Vector<String[]>>();
     //4) record Topic (incoming : topicFile) -> [0]:Offset
     private Hashtable<String, Vector<String[]>> topicBepsHT = new Hashtable<String, Vector<String[]>>();
-
     //5) Outgoing Pooling Data
     private Hashtable<String, Hashtable<String, Hashtable<String, Vector<String[]>>>> poolOutgoingData = new Hashtable<String, Hashtable<String, Hashtable<String, Vector<String[]>>>>();
     //6) Incoming Pooling Data
     private Hashtable<String, Hashtable<String, Vector<String[]>>> poolIncomingData = new Hashtable<String, Hashtable<String, Vector<String[]>>>();
+    private String poolXMLPath = "";
     static resourcesManager resManager;
     static String afXmlPath = "";
     static poolerManager instance = null;
-
+    
     static {
         resManager = new resourcesManager();
 
@@ -90,21 +97,480 @@ public class poolerManager {
 
     public poolerManager(String xmlFile) {
         afXmlPath = xmlFile;
-        getPoolerData();
+        getPoolData();
     }
     
     public poolerManager() {
-        getPoolerData();
+        getPoolData();
     }
 
     // <editor-fold defaultstate="collapsed" desc="GET Pool Properties">
+    // instant status
+    public int getPABepLinkStartP(String topicID, String[] pAnchorOLSA, String currALinkID) {
+        int pABepLinkStartP = -1;
+        VTDGen vg = new VTDGen();
+
+        if (vg.parseFile(poolXMLPath, true)) {
+            FileOutputStream fos = null;
+            try {
+                VTDNav vn = vg.getNav();
+                File fo = new File(poolXMLPath);
+                fos = new FileOutputStream(fo);
+
+                AutoPilot ap = new AutoPilot(vn);
+                XMLModifier xm = new XMLModifier(vn);
+
+                // Pool Anchor
+                String xPath = "/inexltw-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + pAnchorOLSA[0] + "' and @alength='" + pAnchorOLSA[1] + "']/subanchor/tobep";
+                ap.selectXPath(xPath);
+                int i = -1;
+                while ((i = ap.evalXPath()) != -1) {
+                    int l = vn.getAttrVal("tbstartp");
+                    int m = vn.getText();
+                    if (m != -1) {
+                        String rawTxt = vn.toRawString(m).toString();
+                        if (rawTxt.equals(currALinkID)) {
+                            if (l != -1) {
+                                pABepLinkStartP = Integer.valueOf(vn.toRawString(l));
+                            }
+                        }
+                    }
+                }
+                xm.output(fos);
+                fos.close();
+            } catch (IOException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (TranscodeException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (XPathEvalException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (NavException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (XPathParseException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (ModifyException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+        return pABepLinkStartP;
+    }
+
+    public String getPoolAnchorNameByOL(String topicID, String[] poolAnchorOL) {
+        String pAnchorName = "";
+        VTDGen vg = new VTDGen();
+
+        if (vg.parseFile(poolXMLPath, true)) {
+            FileOutputStream fos = null;
+            try {
+                VTDNav vn = vg.getNav();
+                File fo = new File(poolXMLPath);
+                fos = new FileOutputStream(fo);
+
+                AutoPilot ap = new AutoPilot(vn);
+                XMLModifier xm = new XMLModifier(vn);
+
+                // Pool Anchor
+                String xPath1 = "/inexltw-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + poolAnchorOL[0] + "' and @alength='" + poolAnchorOL[1] + "']";
+                ap.selectXPath(xPath1);
+                int k = -1;
+                while ((k = ap.evalXPath()) != -1) {
+                    int l = vn.getAttrVal("aname");
+                    if (l != -1) {
+                        pAnchorName = vn.toRawString(l);
+                    }
+                }
+                xm.output(fos);
+                fos.close();
+            } catch (IOException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (TranscodeException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (XPathEvalException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (NavException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (XPathParseException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (ModifyException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+        return pAnchorName;
+    }
+
+    public String getPoolAnchorStatus(String topicID, String[] poolAnchorOL) {
+        String pAnchorStatus = "";
+        VTDGen vg = new VTDGen();
+
+        if (vg.parseFile(poolXMLPath, true)) {
+            FileOutputStream fos = null;
+            try {
+                VTDNav vn = vg.getNav();
+                File fo = new File(poolXMLPath);
+                fos = new FileOutputStream(fo);
+
+                AutoPilot ap = new AutoPilot(vn);
+                XMLModifier xm = new XMLModifier(vn);
+
+                // Pool Anchor
+                String xPath1 = "/inexltw-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + poolAnchorOL[0] + "' and @alength='" + poolAnchorOL[1] + "']";
+                ap.selectXPath(xPath1);
+                int k = -1;
+                while ((k = ap.evalXPath()) != -1) {
+                    int l = vn.getAttrVal("arel");
+                    if (l != -1) {
+                        pAnchorStatus = vn.toRawString(l);
+                    }
+                }
+                xm.output(fos);
+                fos.close();
+            } catch (IOException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (TranscodeException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (XPathEvalException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (NavException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (XPathParseException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (ModifyException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+        return pAnchorStatus;
+    }
+
+    public Vector<String> getPoolAnchorAllLinkStatus(String topicID, String[] poolAnchorOL) {
+        Vector<String> pAnchorAllLinkStatus = new Vector<String>();
+        VTDGen vg = new VTDGen();
+
+        if (vg.parseFile(poolXMLPath, true)) {
+            FileOutputStream fos = null;
+            try {
+                VTDNav vn = vg.getNav();
+                File fo = new File(poolXMLPath);
+                fos = new FileOutputStream(fo);
+
+                AutoPilot ap = new AutoPilot(vn);
+                XMLModifier xm = new XMLModifier(vn);
+
+                // Pool Anchor
+                String xPath1 = "/inexltw-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + poolAnchorOL[0] + "' and @alength='" + poolAnchorOL[1] + "']/subanchor/tobep";
+                ap.selectXPath(xPath1);
+                int i = -1;
+                while ((i = ap.evalXPath()) != -1) {
+                    int j = vn.getAttrVal("tbrel");
+                    if (j != -1) {
+                        pAnchorAllLinkStatus.add(vn.toRawString(j));
+                    }
+                }
+                xm.output(fos);
+                fos.close();
+            } catch (IOException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (TranscodeException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (XPathEvalException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (NavException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (XPathParseException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (ModifyException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+        return pAnchorAllLinkStatus;
+    }
+
+    public String getPoolAnchorBepLinkStartP(String topicID, String[] poolAnchorOL, String targetID) {
+        String pAnchorStartP = "";
+        VTDGen vg = new VTDGen();
+
+        if (vg.parseFile(poolXMLPath, true)) {
+            FileOutputStream fos = null;
+            try {
+                VTDNav vn = vg.getNav();
+                File fo = new File(poolXMLPath);
+                fos = new FileOutputStream(fo);
+
+                AutoPilot ap = new AutoPilot(vn);
+                XMLModifier xm = new XMLModifier(vn);
+
+                // Pool Anchor
+                String xPath1 = "/inexltw-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + poolAnchorOL[0] + "' and @alength='" + poolAnchorOL[1] + "']/subanchor/tobep";
+                ap.selectXPath(xPath1);
+                int i = -1;
+                while ((i = ap.evalXPath()) != -1) {
+                    int j = vn.getAttrVal("tbstartp");
+                    int k = vn.getText();
+                    if (k != -1) {
+                        String rawTxt = vn.toRawString(k).toString();
+                        if (rawTxt.equals(targetID)) {
+                            if (j != -1) {
+                                pAnchorStartP = vn.toRawString(j);
+                            }
+                        }
+                    }
+                }
+                xm.output(fos);
+                fos.close();
+            } catch (IOException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (TranscodeException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (XPathEvalException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (NavException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (XPathParseException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (ModifyException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+        return pAnchorStartP;
+    }
+
+    public String getPoolAnchorBepLinkStatus(String topicID, String[] poolAnchorOL, String targetID) {
+        String pAnchorStatus = "";
+        VTDGen vg = new VTDGen();
+
+        if (vg.parseFile(poolXMLPath, true)) {
+            FileOutputStream fos = null;
+            try {
+                VTDNav vn = vg.getNav();
+                File fo = new File(poolXMLPath);
+                fos = new FileOutputStream(fo);
+
+                AutoPilot ap = new AutoPilot(vn);
+                XMLModifier xm = new XMLModifier(vn);
+
+                // Pool Anchor
+                String xPath1 = "/inexltw-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + poolAnchorOL[0] + "' and @alength='" + poolAnchorOL[1] + "']/subanchor/tobep";
+                ap.selectXPath(xPath1);
+                int i = -1;
+                while ((i = ap.evalXPath()) != -1) {
+                    int j = vn.getAttrVal("tbrel");
+                    int k = vn.getText();
+                    if (k != -1) {
+                        String rawTxt = vn.toRawString(k).toString();
+                        if (rawTxt.endsWith("\"")) {
+                            rawTxt = rawTxt.substring(0, rawTxt.length() - 1);
+                        }
+                        if (rawTxt.equals(targetID)) {
+                            if (j != -1) {
+                                pAnchorStatus = vn.toRawString(j);
+                            }
+                        }
+                    }
+                }
+                xm.output(fos);
+                fos.close();
+            } catch (IOException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (TranscodeException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (XPathEvalException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (NavException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (XPathParseException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (ModifyException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+        return pAnchorStatus;
+    }
+
+    public Vector<String> getPoolBepAllLinksStatusV(String topicID, String poolBepOffset) {
+        Vector<String> pBepAllLinkStatus = new Vector<String>();
+        VTDGen vg = new VTDGen();
+
+        if (vg.parseFile(poolXMLPath, true)) {
+            FileOutputStream fos = null;
+            try {
+                VTDNav vn = vg.getNav();
+                File fo = new File(poolXMLPath);
+                fos = new FileOutputStream(fo);
+
+                AutoPilot ap = new AutoPilot(vn);
+                XMLModifier xm = new XMLModifier(vn);
+                // Pool BEP
+                String xPath = "/inexltw-assessment/topic[@file='" + topicID.trim() + "']/incominglinks/bep[@boffset='" + poolBepOffset.trim() + "']/fromanchor";
+                ap.selectXPath(xPath);
+                int i = -1;
+                while ((i = ap.evalXPath()) != -1) {
+                    int j = vn.getAttrVal("farel");
+                    if (j != -1) {
+                        pBepAllLinkStatus.add(vn.toRawString(j));
+                    }
+                }
+                xm.output(fos);
+                fos.close();
+            } catch (IOException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (TranscodeException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (XPathEvalException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (NavException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (XPathParseException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (ModifyException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+        return pBepAllLinkStatus;
+    }
+
+    public String getPoolBepAnchorLinkStatus(String topicID, String poolBepOffset, String[] pBepLinkOLID) {
+        String pBepAnchorLinkStatus = "";
+        VTDGen vg = new VTDGen();
+
+        if (vg.parseFile(poolXMLPath, true)) {
+            FileOutputStream fos = null;
+            try {
+                VTDNav vn = vg.getNav();
+                File fo = new File(poolXMLPath);
+                fos = new FileOutputStream(fo);
+
+                AutoPilot ap = new AutoPilot(vn);
+                XMLModifier xm = new XMLModifier(vn);
+                // Pool BEP
+                String xPath = "/inexltw-assessment/topic[@file='" + topicID.trim() + "']/incominglinks/bep[@boffset='" + poolBepOffset.trim() + "']/fromanchor[@faoffset='" + pBepLinkOLID[0].trim() + "' and @falength='" + pBepLinkOLID[1].trim() + "']";
+                ap.selectXPath(xPath);
+                int i = -1;
+                while ((i = ap.evalXPath()) != -1) {
+                    int j = vn.getAttrVal("farel");
+                    int k = vn.getText();
+                    if (k != -1) {
+                        String rawTxt = vn.toRawString(k).toString();
+                        if (rawTxt.equals(pBepLinkOLID[2].trim())) {
+                            if (j != -1) {
+                                pBepAnchorLinkStatus = vn.toRawString(j);
+                            }
+                        }
+                    }
+                }
+                xm.output(fos);
+                fos.close();
+            } catch (IOException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (TranscodeException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (XPathEvalException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (NavException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (XPathParseException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (ModifyException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+        return pBepAnchorLinkStatus;
+    }
+
+    public String getPoolBepLinkAnchorName(String topicID, String poolBepOffset, String[] pBepLinkOLID) {
+        String pBepLinkAnchorName = "";
+        VTDGen vg = new VTDGen();
+
+        if (vg.parseFile(poolXMLPath, true)) {
+            FileOutputStream fos = null;
+            try {
+                VTDNav vn = vg.getNav();
+                File fo = new File(poolXMLPath);
+                fos = new FileOutputStream(fo);
+
+                AutoPilot ap = new AutoPilot(vn);
+                XMLModifier xm = new XMLModifier(vn);
+                // Pool BEP
+                String xPath = "/inexltw-assessment/topic[@file='" + topicID.trim() + "']/incominglinks/bep[@boffset='" + poolBepOffset.trim() + "']/fromanchor[@faoffset='" + pBepLinkOLID[0].trim() + "' and @falength='" + pBepLinkOLID[1].trim() + "']";
+                ap.selectXPath(xPath);
+                int i = -1;
+                while ((i = ap.evalXPath()) != -1) {
+                    int j = vn.getAttrVal("faanchor");
+                    int k = vn.getText();
+                    if (k != -1) {
+                        String rawTxt = vn.toRawString(k).toString();
+                        if (rawTxt.equals(pBepLinkOLID[2].trim())) {
+                            if (j != -1) {
+                                pBepLinkAnchorName = vn.toRawString(j);
+                            }
+                        }
+                    }
+                }
+                xm.output(fos);
+                fos.close();
+            } catch (IOException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (TranscodeException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (XPathEvalException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (NavException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (XPathParseException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (ModifyException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+        return pBepLinkAnchorName;
+    }
+
+    public String getPoolBepStatus(String topicID, String poolBepOffset) {
+        String pBepStatus = "";
+        VTDGen vg = new VTDGen();
+
+        if (vg.parseFile(poolXMLPath, true)) {
+            FileOutputStream fos = null;
+            try {
+                VTDNav vn = vg.getNav();
+                File fo = new File(poolXMLPath);
+                fos = new FileOutputStream(fo);
+
+                AutoPilot ap = new AutoPilot(vn);
+                XMLModifier xm = new XMLModifier(vn);
+                // Pool BEP
+                String xPath = "/inexltw-assessment/topic[@file='" + topicID.trim() + "']/incominglinks/bep[@boffset='" + poolBepOffset.trim() + "']";
+                ap.selectXPath(xPath);
+                int k = -1;
+                while ((k = ap.evalXPath()) != -1) {
+                    int l = vn.getAttrVal("borel");
+                    if (l != -1) {
+                        pBepStatus = vn.toRawString(l);
+                    }
+                }
+                xm.output(fos);
+                fos.close();
+            } catch (IOException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (TranscodeException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (XPathEvalException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (NavException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (XPathParseException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (ModifyException ex) {
+                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+        return pBepStatus;
+    }
+    // =========================================================================
+
     public Hashtable<String, Hashtable<String, Hashtable<String, Vector<String[]>>>> getOutgoingPool() {
-//        getPoolerData();
         return poolOutgoingData;
     }
 
     public Hashtable<String, Hashtable<String, Vector<String[]>>> getIncomingPool() {
-//        getPoolerData();
         return poolIncomingData;
     }
 
@@ -119,7 +585,7 @@ public class poolerManager {
     }
 
     public Hashtable<String, Vector<String[]>> getTopicAllAnchors() {
-        // record Topic (outgoing : topicFile) -> [0]:Offset & [1]:Length & [2]:Anchor_Name
+        // record Topic (outgoing : topicFile) -> [0]:Offset & [1]:Length & [2]:Anchor_Name & [3]:Status
         return topicAnchorsHT;
     }
 
@@ -141,90 +607,30 @@ public class poolerManager {
             myAFTopicColl = afProperty[3].trim();
             myAFLinkColl = afProperty[3].trim();
         }
-//        if (Boolean.valueOf(System.getProperty(sysPropertyIsTopicWikiKey))){
-            String subPath = resManager.getWikipediaFilePathByName(xmlFileID + ".xml");
-            if (subPath.equals("FileNotFound.xml")){
-                xmlFilePath = "resources" + File.separator + "Tool_Resources" + File.separator + subPath;
+        resourcesManager rscManager = new resourcesManager();
+//        if (Boolean.valueOf(System.getProperty(sysPropertyIsTopicWikiKey))) {
+            String subPath = rscManager.getWikipediaFilePathByName(xmlFileID + ".xml");
+            if (subPath.equals("FileNotFound.xml")) {
+                xmlFilePath = fileNotFoundXmlPath;
             } else {
                 xmlFilePath = resManager.getWikipediaCollectionFolder() + File.separator + "pages" + File.separator + subPath;
             }
-//            xmlFilePath = resManager.getWikipediaCollectionFolder() + resManager.getWikipediaFilePathByName(bepFileID + ".xml");
 //        } else {
-//            String subPath = resManager.getTeAraFilePathByName(xmlFileID + ".xml");
-//            if (subPath.equals("FileNotFound.xml")){
-//                xmlFilePath = "resources" + File.separator + "Tool_Resources" + File.separator + subPath;
+//            String subPath = rscManager.getTeAraFilePathByName(xmlFileID + ".xml");
+//            if (subPath.equals("FileNotFound.xml")) {
+//                xmlFilePath = fileNotFoundXmlPath;
 //            } else {
-//                xmlFilePath = resManager.getTeAraCollectionFolder() + subPath;
+//                xmlFilePath = subPath;
 //            }
-////            xmlFilePath = resManager.getTeAraCollectionFolder() + resManager.getTeAraFilePathByName(bepFileID + ".xml");
-//        }
-//        if (myAFTask.equals(AppResource.getInstance().getResourceMap().getString("task.ltwF2F")) || myAFTask.equals(AppResource.getInstance().getResourceMap().getString("task.ltwA2B"))) {
-//            if (myAFTopicColl.equals(AppResource.getInstance().getResourceMap().getString("collection.Wikipedia"))) {
-//                xmlFilePath = resManager.getWikipediaCollectionFolder() + resManager.getWikipediaFilePathByName(bepFileID + ".xml");
-//            }
-//        } else if (myAFTask.equals(AppResource.getInstance().getResourceMap().getString("task.ltaraA2B"))) {
-//            if (myAFTopicColl.equals(AppResource.getInstance().getResourceMap().getString("collection.TeAra"))) {
-//                xmlFilePath = resManager.getTeAraCollectionFolder() + resManager.getTeAraFilePathByName(bepFileID + ".xml");
-//            }
-//        } else {
-//            xmlFilePath = afTasnCollectionErrors + " : " + myAFTask + " - " + myAFTopicColl;
 //        }
         return xmlFilePath;
     }
 
     public HashMap<String, Vector<String[]>> getAnchorFileSetByBep(String topicFileID) {
         // assign a Topic File ID (i.e. 112398)
-        // to get Bep(Offset:1114), Vector<String[]{ID:123017, Offset:1538, Length:9, Name:TITLE}+>
+        // to get Bep(Offset:1114), Vector<String[]{Offset:1538, Length:9, Name:TITLE, ID:123017, Status}+>
         HashMap<String, Vector<String[]>> bepAnchorsHT = new HashMap<String, Vector<String[]>>();
-        bepAnchorsHT = getBepAnchorSetbyTopicID(topicFileID, afXmlPath);
-        return bepAnchorsHT;
-    }
-
-    private HashMap<String, Vector<String[]>> getBepAnchorSetbyTopicID(String topicFileID, String afXmlPath) {
-        // Format:
-        // Bep(Offset:1114), Vector<String[]{Offset:1538, Length:9, Name:TITLE, ID:123017}+>
-        String afTitleTag = "inexltw-assessment";
-        String afTopicTag = "topic";
-        String afIncomingTag = "incominglinks";
-        String afBepTag = "bep";
-        String afFromAnchorTag = "fromanchor";
-
-        HashMap<String, Vector<String[]>> bepAnchorsHT = new HashMap<String, Vector<String[]>>();
-        Document xmlDoc = readingXMLFromFile(afXmlPath);
-
-        NodeList titleNodeList = xmlDoc.getElementsByTagName(afTitleTag);
-        for (int i = 0; i < titleNodeList.getLength(); i++) {
-            Element titleElmn = (Element) titleNodeList.item(i);
-            NodeList topicNodeList = titleElmn.getElementsByTagName(afTopicTag);
-            for (int j = 0; j < topicNodeList.getLength(); j++) {
-                Element topicElmn = (Element) topicNodeList.item(j);
-                String thisTopicID = topicElmn.getAttribute("file");
-                if (thisTopicID.equals(topicFileID)) {
-                    NodeList linksNodeList = topicElmn.getElementsByTagName(afIncomingTag);
-                    Element incomingElmn = (Element) linksNodeList.item(0);
-                    NodeList bepNodeList = incomingElmn.getElementsByTagName(afBepTag);
-                    String bepOffsetKey = "";
-                    Vector<String[]> bepToAnchorFileV;
-                    for (int k = 0; k < bepNodeList.getLength(); k++) {
-                        Element anchorElmn = (Element) bepNodeList.item(k);
-                        String bOffset = anchorElmn.getAttribute("boffset");
-                        bepOffsetKey = bOffset;
-                        bepToAnchorFileV = new Vector<String[]>();
-                        NodeList fromAnchorNodeList = anchorElmn.getElementsByTagName(afFromAnchorTag);
-                        for (int l = 0; l < fromAnchorNodeList.getLength(); l++) {
-                            Element fromAnchorElmn = (Element) fromAnchorNodeList.item(l);
-                            String taOffset = fromAnchorElmn.getAttribute("faoffset");
-                            String taLength = fromAnchorElmn.getAttribute("falength");
-                            String taAName = fromAnchorElmn.getAttribute("faanchor");
-                            Node taXmlFileIDTextNode = fromAnchorElmn.getFirstChild();
-                            String taFileID = taXmlFileIDTextNode.getTextContent();
-                            bepToAnchorFileV.add(new String[]{taOffset, taLength, taAName, taFileID});
-                        }
-                        bepAnchorsHT.put(bepOffsetKey, bepToAnchorFileV);
-                    }
-                }
-            }
-        }
+        bepAnchorsHT = getBepAnchorSetbyTopicID(topicFileID, poolXMLPath);
         return bepAnchorsHT;
     }
 
@@ -232,7 +638,7 @@ public class poolerManager {
         // assign a Topic File ID (i.e. 112398)
         // to get Anchor(1114_1133), Vector<String[]{123017, 1538}+>
         HashMap<String, Vector<String[]>> anchorBepsHT = new HashMap<String, Vector<String[]>>();
-        anchorBepsHT = getAnchorBepSetbyTopicID(topicFileID, afXmlPath);
+        anchorBepsHT = getAnchorBepSetbyTopicID(topicFileID, poolXMLPath);
         return anchorBepsHT;
     }
 
@@ -304,6 +710,54 @@ public class poolerManager {
         }
         return anchorBepsHT;
     }
+    
+    private HashMap<String, Vector<String[]>> getBepAnchorSetbyTopicID(String topicFileID, String afXmlPath) {
+        // Format:
+        // Bep(Offset:1114), Vector<String[]{Offset:1538, Length:9, Name:TITLE, ID:123017}+>
+        String afTitleTag = "inexltw-assessment";
+        String afTopicTag = "topic";
+        String afIncomingTag = "incominglinks";
+        String afBepTag = "bep";
+        String afFromAnchorTag = "fromanchor";
+
+        HashMap<String, Vector<String[]>> bepAnchorsHT = new HashMap<String, Vector<String[]>>();
+        Document xmlDoc = readingXMLFromFile(afXmlPath);
+
+        NodeList titleNodeList = xmlDoc.getElementsByTagName(afTitleTag);
+        for (int i = 0; i < titleNodeList.getLength(); i++) {
+            Element titleElmn = (Element) titleNodeList.item(i);
+            NodeList topicNodeList = titleElmn.getElementsByTagName(afTopicTag);
+            for (int j = 0; j < topicNodeList.getLength(); j++) {
+                Element topicElmn = (Element) topicNodeList.item(j);
+                String thisTopicID = topicElmn.getAttribute("file");
+                if (thisTopicID.equals(topicFileID)) {
+                    NodeList linksNodeList = topicElmn.getElementsByTagName(afIncomingTag);
+                    Element incomingElmn = (Element) linksNodeList.item(0);
+                    NodeList bepNodeList = incomingElmn.getElementsByTagName(afBepTag);
+                    String bepOffsetKey = "";
+                    Vector<String[]> bepToAnchorFileV;
+                    for (int k = 0; k < bepNodeList.getLength(); k++) {
+                        Element anchorElmn = (Element) bepNodeList.item(k);
+                        String bOffset = anchorElmn.getAttribute("boffset");
+                        bepOffsetKey = bOffset;
+                        bepToAnchorFileV = new Vector<String[]>();
+                        NodeList fromAnchorNodeList = anchorElmn.getElementsByTagName(afFromAnchorTag);
+                        for (int l = 0; l < fromAnchorNodeList.getLength(); l++) {
+                            Element fromAnchorElmn = (Element) fromAnchorNodeList.item(l);
+                            String taOffset = fromAnchorElmn.getAttribute("faoffset");
+                            String taLength = fromAnchorElmn.getAttribute("falength");
+                            String taAName = fromAnchorElmn.getAttribute("faanchor");
+                            Node taXmlFileIDTextNode = fromAnchorElmn.getFirstChild();
+                            String taFileID = taXmlFileIDTextNode.getTextContent();
+                            bepToAnchorFileV.add(new String[]{taOffset, taLength, taAName, taFileID});
+                        }
+                        bepAnchorsHT.put(bepOffsetKey, bepToAnchorFileV);
+                    }
+                }
+            }
+        }
+        return bepAnchorsHT;
+    }
     // </editor-fold>
 
     // <editor-fold defaultstate="collapsed" desc="Pooling: poolSubmissionRuns()">
@@ -328,7 +782,7 @@ public class poolerManager {
 
     }
 
-    private void getPoolerData() {
+    private void getPoolData() {
         try {
             String poolXMLPath = afXmlPath;//resManager.getPoolXMLFile();
             if (poolXMLPath.length() == 0 || !new File(poolXMLPath).exists())
@@ -508,5 +962,4 @@ public class poolerManager {
         	Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-    // </editor-fold>
 }
