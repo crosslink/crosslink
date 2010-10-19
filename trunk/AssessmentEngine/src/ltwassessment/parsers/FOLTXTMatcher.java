@@ -570,7 +570,7 @@ public class FOLTXTMatcher {
 //            } else {
 //                xmlFilePath = myRSCManager.getTeAraCollectionFolder() + myRSCManager.getTeAraFilePathByName(xmlFileID + ".xml");
 //            }
-            String targetFilePath = "resources\\Topics\\" + xmlFileID + "_pureTxt.txt";
+            String targetFilePath = "resources" + File.separator + "Topics" + File.separator + xmlFileID + "_pureTxt.txt";
             fullXmlText = ConvertXMLtoTXT(xmlFilePath, targetFilePath, isWikipedia);
         } catch (BadLocationException ex) {
             Logger.getLogger(FOLTXTMatcher.class.getName()).log(Level.SEVERE, null, ex);
@@ -596,6 +596,36 @@ public class FOLTXTMatcher {
         return scrBepOffsetV;
     }
 
+    public String getBepSCRSP(JTextPane myTxtPane, String bepFileID, String bepOffset, boolean isWikipedia) {
+        String scrBepOffset = "";
+        String fullScreenText = "";
+        String fullXmlText = "";
+        try {
+            fullScreenText = myTxtPane.getDocument().getText(0, myTxtPane.getDocument().getLength());
+            String bepFilePath = "";
+//            if (isWikipedia) {
+                String subPath = myRSCManager.getWikipediaFilePathByName(bepFileID + ".xml");
+                if (subPath.equals("FileNotFound.xml")) {
+                    bepFilePath = "resources" + File.separator + "Tool_Resources" + File.separator + subPath;
+                } else {
+                    bepFilePath = subPath;
+                }
+//            } else {
+//                String subPath = myRSCManager.getTeAraFilePathByName(bepFileID + ".xml");
+//                if (subPath.equals("FileNotFound.xml")) {
+//                    bepFilePath = "resources\\Tool_Resources\\" + subPath;
+//                } else {
+//                    bepFilePath = subPath;
+//                }
+//            }
+            String targetFilePath = "resources" + File.separator + "Temp" + File.separator + bepFileID + "_pureTxt.txt";
+            fullXmlText = ConvertXMLtoTXT(bepFilePath, targetFilePath, isWikipedia);
+        } catch (BadLocationException ex) {
+            Logger.getLogger(FOLTXTMatcher.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return scrBepOffset = screenBepOffsetFinder(fullScreenText, fullXmlText, bepOffset);
+    }
+    
     public String getXmlBepOffset(JTextPane linkTxtPane, String currTopicID, String scrBepOffset) {
         String xmlBepOffset = "";
 
