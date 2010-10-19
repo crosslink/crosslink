@@ -5,7 +5,7 @@ import javax.swing.JTextPane;
 import javax.swing.SwingUtilities;
 import javax.swing.event.CaretEvent;
 import javax.swing.event.CaretListener;
-import ltwassessmenttool.parsers.FOLTXTMatcher;
+import ltwassessment.parsers.FOLTXTMatcher;
 
 /**
  * @author Darren HUANG
