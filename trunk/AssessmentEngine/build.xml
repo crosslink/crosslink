@@ -8,15 +8,14 @@
 	<property name="dist.jar" value="${dist.dir}/assessment-engine.jar" />
 	
 	<path id="class.path">
-        <pathelement location="${lib.dir}/appframework-1.0.3.jar"/>
-		<pathelement location="${lib.dir}/xercesImpl.jar"/>
-		<pathelement location="${lib.dir}/xml2txt.jar"/>
-		<pathelement location="${lib.dir}/jdom.jar"/>
+		 <fileset dir="${lib.dir}">
+		      <include name="*.jar"/>
+		    </fileset>
 	</path>
 	<!-- classpathref="${engine.classpath} -->
 	<target name="compile">
 	        <mkdir dir="${build.dir}" />
-	        <javac srcdir="${src.dir}" destdir="${build.dir}" debug="true">
+	        <javac srcdir="${src.dir}" destdir="${build.dir}" debug="on">
 	        	<classpath refid="class.path" />
 	        </javac>
 	</target>

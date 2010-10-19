@@ -1,4 +1,4 @@
-package ltwassessmenttool.validation;
+package ltwassessment.validation;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -16,6 +16,9 @@ import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
+
+import ltwassessment.validation.Validator;
+
 import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
 import org.xml.sax.SAXParseException;
@@ -45,7 +48,7 @@ public class Validator {
      * @throws <code>IOException</code> - when errors in parsing occur.
      */
     private Validator(URL schemaURL) throws IOException {
-//        org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(ltwassessmenttool.LTWAssessmentToolApp.class).getContext().getResourceMap(Validator.class);
+//        org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(ltwassessment.ltwassessmentApp.class).getContext().getResourceMap(Validator.class);
 //        this.DTDPath = resourceMap.getString("pooling.dtd");
 
 //        this.schemaURL = schemaURL;

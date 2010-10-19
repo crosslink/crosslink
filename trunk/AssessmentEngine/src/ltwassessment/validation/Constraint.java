@@ -1,4 +1,4 @@
-package ltwassessmenttool.validation;
+package ltwassessment.validation;
 
 import java.util.Hashtable;
 import java.util.Vector;
