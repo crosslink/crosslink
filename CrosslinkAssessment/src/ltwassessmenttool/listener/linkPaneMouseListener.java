@@ -34,16 +34,16 @@ import javax.swing.text.Style;
 import javax.swing.text.StyleConstants;
 import javax.swing.text.StyledDocument;
 import ltwassessmenttool.LTWAssessmentToolView;
-import ltwassessmenttool.parsers.FOLTXTMatcher;
-import ltwassessmenttool.parsers.Xml2Html;
-import ltwassessmenttool.parsers.poolerManager;
-import ltwassessmenttool.parsers.resourcesManager;
-import ltwassessmenttool.utility.BrowserControl;
-import ltwassessmenttool.utility.ObservableSingleton;
-import ltwassessmenttool.utility.highlightPainters;
-import ltwassessmenttool.utility.poolUpdater;
-import ltwassessmenttool.utility.tabTxtPaneManager;
-import ltwassessmenttool.utility.tbaTxtPaneManager;
+import ltwassessment.parsers.FOLTXTMatcher;
+import ltwassessment.parsers.Xml2Html;
+import ltwassessment.parsers.poolerManager;
+import ltwassessment.parsers.resourcesManager;
+import ltwassessment.utility.BrowserControl;
+import ltwassessment.utility.ObservableSingleton;
+import ltwassessment.utility.highlightPainters;
+import ltwassessment.utility.poolUpdater;
+import ltwassessment.utility.tabTxtPaneManager;
+import ltwassessment.utility.tbaTxtPaneManager;
 
 /**
  * @author Darren HUANG
@@ -662,11 +662,11 @@ public class linkPaneMouseListener implements MouseInputListener {
                 newTABFieldValues.add(nextLinkAnchorName);
                 newTABFieldValues.add(nextLinkID);
                 String pageTitle = "";
-                if (Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey))) {
+//                if (Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey))) {
                     pageTitle = this.myRSCManager.getWikipediaPageTitle(nextLinkID);
-                } else {
-                    pageTitle = this.myRSCManager.getTeAraFilePathByName(nextLinkID);
-                }
+//                } else {
+//                    pageTitle = this.myRSCManager.getTeAraFilePathByName(nextLinkID);
+//                }
                 newTABFieldValues.add(pageTitle.trim());
                 String[] pAnchorCompletionSA = this.myRSCManager.getIncomingCompletion();
                 newTABFieldValues.add(pAnchorCompletionSA[0] + " / " + pAnchorCompletionSA[1]);

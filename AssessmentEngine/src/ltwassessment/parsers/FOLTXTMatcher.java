@@ -640,11 +640,90 @@ public class FOLTXTMatcher {
         return scrBepOffset = screenBepOffsetFinder(fullScreenText, fullXmlText, bepOffset);
     }
     
-    public String getXmlBepOffset(JTextPane linkTxtPane, String currTopicID, String scrBepOffset) {
+    private Vector<String> getLinkXmlTextByID(String linkID) {
+        Vector<String> xmlSglCharV = new Vector<String>();
+        String xmlFilePath = "";
+        String targetFilePath = "";
+//        if (Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey))) {
+            xmlFilePath = this.myRSCManager.getWikipediaFilePathByName(linkID + ".xml");
+            targetFilePath = this.tempFileDir + xmlFilePath.substring(xmlFilePath.lastIndexOf("/") + 1, xmlFilePath.lastIndexOf(".xml")) + "_pureTxt.txt";
+//        } else {
+//            xmlFilePath = this.myRSCManager.getTeAraFilePathByName(linkID + ".xml");
+//            targetFilePath = this.tempFileDir + xmlFilePath.substring(xmlFilePath.lastIndexOf("\\"), xmlFilePath.lastIndexOf(".xml")) + "_pureTxt.txt";
+//        }
+        String wikipediaTxt = ConvertXMLtoTXT(xmlFilePath, targetFilePath, Boolean.valueOf(System.getProperty(sysPropertyIsTopicWikiKey)));
+        for (int i = 0; i < wikipediaTxt.length(); i++) {
+            String mySingle = wikipediaTxt.substring(i, i + 1);
+            xmlSglCharV.add(mySingle);
+        }
+        return xmlSglCharV;
+    }
+    
+    // <editor-fold defaultstate="collapsed" desc="Get F.O.L">
+    public String getXmlBepOffset(String linkID, String tilTxt) {
         String xmlBepOffset = "";
+        // [0]:Offset, [1]:Length, [2]: AnchorText
+        Vector<String> xmlSglCharV = this.getLinkXmlTextByID(linkID);
+        String pureScreenTxt = tilTxt.replaceAll("[\\s]+", "");
+        Vector<String> scrPureTxtCharV = new Vector<String>();
+        for (int i = 0; i < pureScreenTxt.length(); i++) {
+            String mySglChar = pureScreenTxt.substring(i, i + 1);
+            scrPureTxtCharV.add(mySglChar);
+        }
+        int xmlAnchorOffset = 0;
+        int xmlAnchorLength = 0;
+        int lastMatchedPosition = 0;
+        int xmlCounter = 0;
+        for (int j = 0; j < scrPureTxtCharV.size(); j++) {
+            String thisChar = scrPureTxtCharV.elementAt(j);
+            boolean notMatched = true;
+            while (notMatched) {
+                String xmlChar = xmlSglCharV.elementAt(xmlCounter);
+                // for &minus, &#xfeff;
+                boolean isEntity = false;
+                boolean isSpecial = false;
+                int entityLength = 0;
+                if (xmlChar.equals("&")) {
+                    String myEntity = "";
+                    for (int k = xmlCounter; k < xmlCounter + 10; k++) {
+                        entityLength++;
+                        myEntity = myEntity + xmlSglCharV.elementAt(k);
+                        if (xmlSglCharV.elementAt(k).equals(";")) {
+                            isEntity = true;
+                            break;
+                        }
+                    }
+                    if (isEntity) {
+                        if (entityExpressV.contains(myEntity) || entityNumExpressV.contains(myEntity)) {
+                            isSpecial = true;
+                        } else {
+                            isSpecial = true;
+                        }
+                    } else {
+                        isSpecial = false;
+                    }
+                }
+                // -------------------------------------------------------------
+                if (thisChar.equals(xmlChar)) {
+                    notMatched = false;
+                    lastMatchedPosition = xmlCounter;
+                } else if (isSpecial) {
+                    notMatched = false;
+                    lastMatchedPosition = xmlCounter + (entityLength - 1);
+                }
+                xmlCounter++;
+            }
+            // If still NO MATCHED --> Keep loop BOTH until their FIRST match
+            if (notMatched) {
+                xmlCounter = lastMatchedPosition + 1;
+            }
+        }
+        xmlAnchorOffset = xmlCounter;
+        xmlBepOffset = String.valueOf(xmlAnchorOffset);
 
         return xmlBepOffset;
     }
+    
     // </editor-fold>
     // =========================================================================
     // =========================================================================
@@ -765,4 +844,5 @@ public class FOLTXTMatcher {
         return doc;
     }
     // </editor-fold>
+
 }

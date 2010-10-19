@@ -28,17 +28,19 @@ import javax.swing.text.Highlighter.Highlight;
 import javax.swing.text.Style;
 import javax.swing.text.StyleConstants;
 import javax.swing.text.StyledDocument;
-import ltwassessmenttool.parsers.Xml2Html;
+
+import ltwassessment.AppResource;
+import ltwassessment.parsers.Xml2Html;
 import ltwassessmenttool.listener.CaretListenerLabel;
 import ltwassessmenttool.listener.linkPaneMouseListener;
 import ltwassessmenttool.listener.topicPaneMouseListener;
-import ltwassessmenttool.parsers.FOLTXTMatcher;
-import ltwassessmenttool.parsers.poolerManager;
-import ltwassessmenttool.parsers.resourcesManager;
-import ltwassessmenttool.utility.ObservableSingleton;
-import ltwassessmenttool.utility.fieldUpdateObserver;
-import ltwassessmenttool.utility.highlightPainters;
-import ltwassessmenttool.utility.poolUpdater;
+import ltwassessment.parsers.FOLTXTMatcher;
+import ltwassessment.parsers.poolerManager;
+import ltwassessment.parsers.resourcesManager;
+import ltwassessment.utility.ObservableSingleton;
+import ltwassessment.utility.fieldUpdateObserver;
+import ltwassessment.utility.highlightPainters;
+import ltwassessment.utility.poolUpdater;
 
 /**
  * The main frame for the Assessment Tool
@@ -117,6 +119,11 @@ public class LTWAssessmentToolView extends FrameView {
 
     public LTWAssessmentToolView(SingleFrameApplication app) {
         super(app);
+        
+     	// update resource manager first thing with the app starting up
+        AppResource.forValidationOrAssessment = true;
+        AppResource.getInstance().setResourceMap(org.jdesktop.application.Application.getInstance(ltwassessmenttool.LTWAssessmentToolApp.class).getContext().getResourceMap(ltwassessmenttool.LTWAssessmentToolView.class));
+
         initComponents();
 
         group.add(outRadioBtn);
@@ -697,11 +704,11 @@ public class LTWAssessmentToolView extends FrameView {
             newTABFieldValues.add(currAnchorName);
             newTABFieldValues.add(nextLinkID);
             String pageTitle = "";
-            if (Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey))) {
+//            if (Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey))) {
                 pageTitle = this.rscManager.getWikipediaPageTitle(nextLinkID);
-            } else {
-                pageTitle = this.rscManager.getTeAraFilePathByName(nextLinkID);
-            }
+//            } else {
+//                pageTitle = this.rscManager.getTeAraFilePathByName(nextLinkID);
+//            }
             newTABFieldValues.add(pageTitle.trim());
             String[] pAnchorCompletionSA = this.rscManager.getOutgoingCompletion();
             newTABFieldValues.add(pAnchorCompletionSA[0] + " / " + pAnchorCompletionSA[1]);
@@ -794,11 +801,11 @@ public class LTWAssessmentToolView extends FrameView {
             newTABFieldValues.add(nextLinkAnchorName);
             newTABFieldValues.add(nextLinkID);
             String pageTitle = "";
-            if (Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey))) {
+//            if (Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey))) {
                 pageTitle = this.rscManager.getWikipediaPageTitle(nextLinkID);
-            } else {
-                pageTitle = this.rscManager.getTeAraFilePathByName(nextLinkID);
-            }
+//            } else {
+//                pageTitle = this.rscManager.getTeAraFilePathByName(nextLinkID);
+//            }
             newTABFieldValues.add(pageTitle.trim());
             String[] pAnchorCompletionSA = this.rscManager.getIncomingCompletion();
             newTABFieldValues.add(pAnchorCompletionSA[0] + " / " + pAnchorCompletionSA[1]);
@@ -905,11 +912,11 @@ public class LTWAssessmentToolView extends FrameView {
             newTABFieldValues.add(currAnchorName);
             newTABFieldValues.add(nextLinkID);
             String pageTitle = "";
-            if (Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey))) {
+//            if (Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey))) {
                 pageTitle = this.rscManager.getWikipediaPageTitle(nextLinkID);
-            } else {
-                pageTitle = this.rscManager.getTeAraFilePathByName(nextLinkID);
-            }
+//            } else {
+//                pageTitle = this.rscManager.getTeAraFilePathByName(nextLinkID);
+//            }
             newTABFieldValues.add(pageTitle.trim());
             String[] pAnchorCompletionSA = this.rscManager.getOutgoingCompletion();
             newTABFieldValues.add(pAnchorCompletionSA[0] + " / " + pAnchorCompletionSA[1]);
@@ -1001,11 +1008,11 @@ public class LTWAssessmentToolView extends FrameView {
             newTABFieldValues.add(nextLinkAnchorName);
             newTABFieldValues.add(nextLinkID);
             String pageTitle = "";
-            if (Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey))) {
+//            if (Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey))) {
                 pageTitle = this.rscManager.getWikipediaPageTitle(nextLinkID);
-            } else {
-                pageTitle = this.rscManager.getTeAraFilePathByName(nextLinkID);
-            }
+//            } else {
+//                pageTitle = this.rscManager.getTeAraFilePathByName(nextLinkID);
+//            }
             newTABFieldValues.add(pageTitle.trim());
             String[] pAnchorCompletionSA = this.rscManager.getIncomingCompletion();
             newTABFieldValues.add(pAnchorCompletionSA[0] + " / " + pAnchorCompletionSA[1]);
@@ -1148,11 +1155,11 @@ public class LTWAssessmentToolView extends FrameView {
         newTABFieldValues.add(currAnchorName);
         newTABFieldValues.add(currTargetID);
         String pageTitle = "";
-        if (Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey))) {
+//        if (Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey))) {
             pageTitle = this.rscManager.getWikipediaPageTitle(currTargetID);
-        } else {
-            pageTitle = this.rscManager.getTeAraFilePathByName(currTargetID);
-        }
+//        } else {
+//            pageTitle = this.rscManager.getTeAraFilePathByName(currTargetID);
+//        }
         newTABFieldValues.add(pageTitle.trim());
         String[] pAnchorCompletionSA = this.rscManager.getOutgoingCompletion();
         newTABFieldValues.add(pAnchorCompletionSA[0] + " / " + pAnchorCompletionSA[1]);
@@ -1204,11 +1211,11 @@ public class LTWAssessmentToolView extends FrameView {
         String currTargetLength = CurrTopicBTargetOLID[1];
         String currTargetID = CurrTopicBTargetOLID[2];
         String currTargetFilePath = "";
-        if (this.isLinkWikipedia) {
+//        if (this.isLinkWikipedia) {
             currTargetFilePath = rscManager.getWikipediaFilePathByName(currTargetID + ".xml");
-        } else {
-            currTargetFilePath = rscManager.getTeAraFilePathByName(currTargetID + ".xml");
-        }
+//        } else {
+//            currTargetFilePath = rscManager.getTeAraFilePathByName(currTargetID + ".xml");
+//        }
         String currBALinkStatus = this.myPooler.getPoolBepAnchorLinkStatus(currTopicID, currBepOStatus[0], new String[]{currTargetOffset, currTargetLength, currTargetID});
         String toBALinkStatus = "";
         if (topicBepStatus.equals("-1")) {
@@ -1231,11 +1238,11 @@ public class LTWAssessmentToolView extends FrameView {
         newTABFieldValues.add(linkAnchorName);
         newTABFieldValues.add(currTargetID);
         String pageTitle = "";
-        if (Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey))) {
+//        if (Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey))) {
             pageTitle = this.rscManager.getWikipediaPageTitle(currTargetID);
-        } else {
-            pageTitle = this.rscManager.getTeAraFilePathByName(currTargetID);
-        }
+//        } else {
+//            pageTitle = this.rscManager.getTeAraFilePathByName(currTargetID);
+//        }
         newTABFieldValues.add(pageTitle.trim());
         String[] pAnchorCompletionSA = this.rscManager.getIncomingCompletion();
         newTABFieldValues.add(pAnchorCompletionSA[0] + " / " + pAnchorCompletionSA[1]);
