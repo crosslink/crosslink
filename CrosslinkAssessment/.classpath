@@ -11,5 +11,7 @@
 	<classpathentry kind="lib" path="lib/xercesImpl.jar"/>
 	<classpathentry kind="lib" path="lib/xercesSamples.jar"/>
 	<classpathentry kind="lib" path="lib/xml-apis.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/AssessmentEngine"/>
+	<classpathentry kind="lib" path="/AssessmentEngine/dist/assessment-engine.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
