@@ -15,7 +15,9 @@ import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
 import javax.xml.stream.events.XMLEvent;
-import ltwassessment.ltwassessmentView;
+
+import ltwassessment.AppResource;
+
 import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
@@ -59,7 +61,7 @@ public class Xml2Html {
 //        this.isTopicWikipedia = Boolean.valueOf(System.getProperty(sysPropertyIsTopicWikiKey));
 //        this.isLinkWikipedia = Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey));
 
-        org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(ltwassessment.ltwassessmentApp.class).getContext().getResourceMap(ltwassessmentView.class);
+        org.jdesktop.application.ResourceMap resourceMap = AppResource.getInstance().getResourceMap();
         this.htmlFileTopFolder = resourceMap.getString("temp.folder");
 
         this.xmlPath = xmlFilePath;

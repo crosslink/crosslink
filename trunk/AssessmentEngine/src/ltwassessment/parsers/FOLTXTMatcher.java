@@ -557,6 +557,20 @@ public class FOLTXTMatcher {
         return scrBepOffset = screenBepOffsetFinder(fullScreenText, fullXmlText, xmlBepOffset);
     }
 
+    public String[] getSCRAnchorNameSESA(JTextPane myTextPane, String fileID, String[] thisAnchorXmlOLName) {
+        // myScreenAnchorOL/thisAnchorSet
+        String[] myScreenAnchorPos = new String[3];
+        String myFullXmlTxt = getFullXmlTextByFileID(fileID);
+        String fullScreenText = "";
+        try {
+            fullScreenText = myTextPane.getDocument().getText(0, myTextPane.getDocument().getLength());
+        } catch (BadLocationException ex) {
+            Logger.getLogger(FOLTXTMatcher.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        // --> [0]:Anchor_Name, [1]:SP, [2]:EP
+        return myScreenAnchorPos = screenOffsetLengthFinder(fullScreenText, myFullXmlTxt, thisAnchorXmlOLName);
+    }
+    
     public Vector<String[]> getSCRBepPosV(JTextPane txtPane, String xmlFileID, Vector<String[]> xmlBepOffsetV, boolean isWikipedia) {
         Vector<String[]> scrBepOffsetV = new Vector<String[]>();
         Vector<String> bepSetV = new Vector<String>();
