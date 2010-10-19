@@ -28,6 +28,14 @@ public class fieldUpdateObserver implements Observer {
         this.lblTargetTitle = thisTargetTitle;
         this.lblCompletion = thisCompletion;
     }
+    
+    public fieldUpdateObserver(ObservableSingleton thisOS, JLabel thisTopicTitle, JLabel thisTopicID, JLabel thisAnchor, JLabel thisTargetPageID) {
+        this.myObservableSingleton = thisOS;
+        this.lblTopicTitle = thisTopicTitle;
+        this.lblTopicID = thisTopicID;
+        this.lblAnchor = thisAnchor;
+        this.lblTargetID = thisTargetPageID;
+    }
 
     public void update(Observable ov, Object obj) {
         if (this.myObservableSingleton == ov) {

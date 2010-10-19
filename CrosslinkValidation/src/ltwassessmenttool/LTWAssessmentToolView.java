@@ -58,11 +58,11 @@ import ltwassessment.utility.paneTableIndexing;
 import ltwassessment.utility.paneTableManager;
 import ltwassessment.utility.tabTxtPaneManager;
 import ltwassessment.utility.tbaTxtPaneManager;
+import ltwassessment.validation.Validator;
 import ltwassessmenttool.listener.CaretListenerLabel;
 import ltwassessmenttool.listener.linkPaneMouseListener;
 import ltwassessmenttool.listener.paneTableMouseListener;
 import ltwassessmenttool.listener.topicPaneMouseListener;
-import ltwassessmenttool.validation.Validator;
 
 /**
  * The main frame for the Assessment Tool
@@ -292,13 +292,13 @@ public class LTWAssessmentToolView extends FrameView {
         rightSplitPane.setName("rightSplitPane"); // NOI18N
         rightSplitPane.setOneTouchExpandable(true);
 
-        linkTextScrollPane.setMinimumSize(new java.awt.Dimension(560, 422));
+        linkTextScrollPane.setMinimumSize(new java.awt.Dimension(525, 444));
         linkTextScrollPane.setName("linkTextScrollPane"); // NOI18N
-        linkTextScrollPane.setPreferredSize(new java.awt.Dimension(525, 400));
+        linkTextScrollPane.setPreferredSize(new java.awt.Dimension(525, 444));
 
         linkTextPane.setEditable(false);
         linkTextPane.setAutoscrolls(true);
-        linkTextPane.setMinimumSize(new java.awt.Dimension(560, 421));
+        linkTextPane.setMinimumSize(new java.awt.Dimension(525, 444));
         linkTextPane.setName("linkTextPane"); // NOI18N
         linkTextPane.setPreferredSize(new java.awt.Dimension(525, 444));
         linkTextScrollPane.setViewportView(linkTextPane);
@@ -306,10 +306,10 @@ public class LTWAssessmentToolView extends FrameView {
         rightSplitPane.setTopComponent(linkTextScrollPane);
 
         srcScrollPane.setBackground(resourceMap.getColor("srcScrollPane.background")); // NOI18N
-        srcScrollPane.setMaximumSize(new java.awt.Dimension(167, 167));
-        srcScrollPane.setMinimumSize(new java.awt.Dimension(20, 20));
+        srcScrollPane.setMaximumSize(new java.awt.Dimension(20, 244));
+        srcScrollPane.setMinimumSize(new java.awt.Dimension(20, 244));
         srcScrollPane.setName("srcScrollPane"); // NOI18N
-        srcScrollPane.setPreferredSize(new java.awt.Dimension(125, 244));
+        srcScrollPane.setPreferredSize(new java.awt.Dimension(20, 244));
 
         paneTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -322,7 +322,10 @@ public class LTWAssessmentToolView extends FrameView {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
+        paneTable.setMaximumSize(new java.awt.Dimension(20, 72));
+        paneTable.setMinimumSize(new java.awt.Dimension(20, 72));
         paneTable.setName("paneTable"); // NOI18N
+        paneTable.setPreferredSize(new java.awt.Dimension(20, 72));
         srcScrollPane.setViewportView(paneTable);
 
         rightSplitPane.setRightComponent(srcScrollPane);

@@ -15,5 +15,6 @@
 	<classpathentry kind="src" path="/xml2txt"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/AssessmentEngine"/>
 	<classpathentry kind="lib" path="/AssessmentEngine/dist/assessment-engine.jar"/>
+	<classpathentry kind="lib" path="/home/monfee/workspace/AssessmentEngine/dist/assessment-engine.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

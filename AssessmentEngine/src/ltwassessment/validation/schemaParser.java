@@ -1,4 +1,4 @@
-  package ltwassessmenttool.validation;
+  package ltwassessment.validation;
 
 import java.io.IOException;
 import java.net.URL;
@@ -10,6 +10,10 @@ import java.util.Map;
 import java.util.Vector;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import ltwassessment.validation.Constraint;
+import ltwassessment.validation.DataConverter;
+import ltwassessment.validation.schemaParser;
 
 // JDOM classes used for document representation
 import org.jdom.Attribute;
