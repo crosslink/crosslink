@@ -95,7 +95,7 @@ public class resourcesManager {
     public resourcesManager() {
         // get toolResources XML file Location/Path
         ////org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(ltwassessment.ltwassessmentApp.class).getContext().getResourceMap(ltwassessmentView.class);
-    	//AppResource.getInstance().setResourceMap(org.jdesktop.application.Application.getInstance(ltwassessmenttool.LTWAssessmentToolApp.class).getContext().getResourceMap(ltwassessmenttool.LTWAssessmentToolView.class));
+    	//AppResource.getInstance().setResourceMap(org.jdesktop.application.Application.getInstance(ltwassessment.ltwassessmentApp.class).getContext().getResourceMap(ltwassessment.ltwassessmentView.class));
     	init();
     }
     
