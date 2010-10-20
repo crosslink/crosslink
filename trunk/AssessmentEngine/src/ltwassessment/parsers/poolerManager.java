@@ -60,12 +60,12 @@ public class poolerManager {
     //6) Incoming Pooling Data
     private Hashtable<String, Hashtable<String, Vector<String[]>>> poolIncomingData = new Hashtable<String, Hashtable<String, Vector<String[]>>>();
     private String poolXMLPath = "";
-    static resourcesManager resManager;
+//    static resourcesManager resManager;
     static String afXmlPath = "";
     static poolerManager instance = null;
     
     static {
-        resManager = new resourcesManager();
+//        resManager = new resourcesManager();
 
         //resourceMap = org.jdesktop.application.Application.getInstance(ltwassessment.ltwassessmentApp.class).getContext().getResourceMap(ltwassessmentView.class);
         resourceXMLFile = AppResource.getInstance().getResourceMap().getString("ResourceXMLFilePath");
@@ -82,7 +82,7 @@ public class poolerManager {
     }
 
     public static poolerManager getInstance(String xmlFile) {
-        if (instance == null || (afXmlPath.length() > 0) && !xmlFile.equals(afXmlPath))
+        if (instance == null || (afXmlPath.length() > 0)/* && !xmlFile.equals(afXmlPath)*/)
             instance = new poolerManager(xmlFile);
         return instance;
     }
@@ -607,13 +607,13 @@ public class poolerManager {
             myAFTopicColl = afProperty[3].trim();
             myAFLinkColl = afProperty[3].trim();
         }
-        resourcesManager rscManager = new resourcesManager();
+//        resourcesManager rscManager = new resourcesManager();
 //        if (Boolean.valueOf(System.getProperty(sysPropertyIsTopicWikiKey))) {
-            String subPath = rscManager.getWikipediaFilePathByName(xmlFileID + ".xml");
+            String subPath = resourcesManager.getInstance().getWikipediaFilePathByName(xmlFileID + ".xml");
             if (subPath.equals("FileNotFound.xml")) {
                 xmlFilePath = fileNotFoundXmlPath;
             } else {
-                xmlFilePath = resManager.getWikipediaCollectionFolder() + File.separator + "pages" + File.separator + subPath;
+                xmlFilePath = resourcesManager.getInstance().getWikipediaCollectionFolder() + File.separator + "pages" + File.separator + subPath;
             }
 //        } else {
 //            String subPath = rscManager.getTeAraFilePathByName(xmlFileID + ".xml");
@@ -784,7 +784,7 @@ public class poolerManager {
 
     private void getPoolData() {
         try {
-            String poolXMLPath = afXmlPath;//resManager.getPoolXMLFile();
+            poolXMLPath = afXmlPath;//resManager.getPoolXMLFile();
             if (poolXMLPath.length() == 0 || !new File(poolXMLPath).exists())
                 return;
             	//throw new FileNotFoundException();

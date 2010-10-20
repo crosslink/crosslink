@@ -157,7 +157,7 @@ public class linkPaneMouseListener implements MouseInputListener {
         myRSCManager = new resourcesManager();
         myFolMatcher = new FOLTXTMatcher();
         myPoolUpdater = new poolUpdater();
-        myPoolManager = new poolerManager();
+        myPoolManager = poolerManager.getInstance();
         myTABTxtPaneManager = new tabTxtPaneManager();
         myTBATxtPaneManager = new tbaTxtPaneManager();
         this.os = ObservableSingleton.getInstance();

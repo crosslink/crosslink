@@ -155,7 +155,7 @@ public class LTWAssessmentToolView extends FrameView {
         progressBar.setVisible(false);
         // =====================================================================
         rscManager = new resourcesManager();
-        myPooler = new poolerManager();
+        myPooler = poolerManager.getInstance();
         // =====================================================================
         // when the tool firstly starts:
         // For Link-the-Wikipedia A2B
