@@ -347,6 +347,7 @@ public class FOLTXTMatcher {
 			part = fullScreenTxt.substring(offset - gap, offset);
 			part = part.replaceAll("[\\W]", "");
 			sb.insert(0, part);
+			offset -= gap;
 		}
 //		
 //		myScreenPosition[0] = fullScreenTxt.substring(Integer.valueOf(myScreenPosition[1]), Integer.valueOf(myScreenPosition[1]) + aLength);
