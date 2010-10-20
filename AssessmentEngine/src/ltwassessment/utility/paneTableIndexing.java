@@ -56,7 +56,7 @@ public class paneTableIndexing {
         this.teAraCollTitle = AppResource.getInstance().getResourceMap().getString("collectionType.TeAra");
         // ---------------------------------------------------------------------
         this.myRunsPooler = poolerManager.getInstance();
-        this.myRSCManager = new resourcesManager();
+        this.myRSCManager = resourcesManager.getInstance();
         this.myFOLMatcher = new FOLTXTMatcher();
         // [0]:participant-id, [1]:run-id, [2]:task, [3]:collection
         this.afProperty = myRunsPooler.getPoolProperty();

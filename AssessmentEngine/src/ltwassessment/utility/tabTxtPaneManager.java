@@ -70,7 +70,7 @@ public class tabTxtPaneManager {
         this.topicBepsHTPrefix = AppResource.getInstance().getResourceMap().getString("topicBepsHT.Prefix");
 
         this.myRunsPooler = poolerManager.getInstance();
-        this.myRSCManager = new resourcesManager();
+        this.myRSCManager = resourcesManager.getInstance();
         this.myFOLMatcher = new FOLTXTMatcher();
 
         this.painters = new highlightPainters();

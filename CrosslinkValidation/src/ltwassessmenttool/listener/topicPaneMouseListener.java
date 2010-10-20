@@ -70,7 +70,7 @@ public class topicPaneMouseListener implements MouseInputListener {
     // Import Extenal Classes
     private paneTableIndexing myPaneTableIndexing;
     private poolerManager myPooler = poolerManager.getInstance();
-    private resourcesManager myRSCManager = new resourcesManager();
+    private resourcesManager myRSCManager = resourcesManager.getInstance();
     private FOLTXTMatcher myFOLMatcher = new FOLTXTMatcher();
     // Declair Highlight Painter
     highlightPainters painters = new highlightPainters();;

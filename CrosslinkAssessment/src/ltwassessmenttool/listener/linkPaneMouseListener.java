@@ -154,7 +154,7 @@ public class linkPaneMouseListener implements MouseInputListener {
         bepNonrelevantIconImageFilePath = resourceMap.getString("bepNonrelevantIcon.imageFilePath");
         paneContentType = resourceMap.getString("html.content.type");
 
-        myRSCManager = new resourcesManager();
+        myRSCManager = resourcesManager.getInstance();
         myFolMatcher = new FOLTXTMatcher();
         myPoolUpdater = new poolUpdater();
         myPoolManager = poolerManager.getInstance();

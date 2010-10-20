@@ -66,7 +66,7 @@ public class paneTableMouseListener extends MouseAdapter {
         this.linkTxtPane = linkTextPane;
         this.myPaneTable = paneTable;
         // declare External Classes
-        this.rscManager = new resourcesManager();
+        this.rscManager = resourcesManager.getInstance();
         this.myRunsPooler = poolerManager.getInstance();
 
         this.isTAB = Boolean.valueOf(System.getProperty(sysPropertyKey));

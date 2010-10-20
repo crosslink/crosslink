@@ -24,7 +24,7 @@ public class LTWAssessmentSetForm extends javax.swing.JDialog {
     public LTWAssessmentSetForm(java.awt.Frame parent) {
         super(parent);
         initComponents();
-        this.toolRscManager = new resourcesManager();
+        this.toolRscManager = resourcesManager.getInstance();
         getRootPane().setDefaultButton(closeBtn);
 
         String currAFFormPath = this.toolRscManager.getPoolXMLFile();
