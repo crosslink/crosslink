@@ -66,13 +66,13 @@ public class Xml2Html {
 
         this.xmlPath = xmlFilePath;
         this.appDirectory = System.getProperty("user.dir");
-        if (xmlFilePath.lastIndexOf("/") >= 0) {
-            this.xmlFileID = xmlFilePath.substring(xmlFilePath.lastIndexOf("/") + 1, xmlFilePath.lastIndexOf(".xml"));
+        if (xmlFilePath.lastIndexOf(File.separator) >= 0) {
+            this.xmlFileID = xmlFilePath.substring(xmlFilePath.lastIndexOf(File.separator) + 1, xmlFilePath.lastIndexOf(".xml"));
         } else if (xmlFilePath.lastIndexOf("\\") >= 0) {
             this.xmlFileID = xmlFilePath.substring(xmlFilePath.lastIndexOf("\\") + 1, xmlFilePath.lastIndexOf(".xml"));
         }
-        if (this.appDirectory.indexOf("/") >= 0) {
-            this.imageDirectory = "file:/" + this.appDirectory + "/images/";
+        if (this.appDirectory.indexOf(File.separator) >= 0) {
+            this.imageDirectory = "file:" + File.separator + this.appDirectory + File.separator + "images" + File.separator;
         } else if (this.appDirectory.indexOf("\\") >= 0) {
             this.imageDirectory = "file:\\" + this.appDirectory + "\\images\\";
         } else {

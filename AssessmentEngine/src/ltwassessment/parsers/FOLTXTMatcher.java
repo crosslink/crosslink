@@ -1,13 +1,16 @@
 package ltwassessment.parsers;
 
+import com.sun.org.apache.xerces.internal.parsers.DOMParser;
 import com.sun.org.apache.xpath.internal.XPathAPI;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.Enumeration;
 import java.util.Hashtable;
@@ -18,6 +21,7 @@ import javax.swing.JTextPane;
 import javax.swing.text.BadLocationException;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
 
 import ltwassessment.AppResource;
 import ltwassessment.parsers.FOLTXTMatcher;
@@ -29,6 +33,7 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
+import org.xml.sax.SAXException;
 
 /**
  * @author Darren Huang
@@ -50,6 +55,8 @@ public class FOLTXTMatcher {
     private String tearaTypeName = "";
     private boolean isTopicWikipedia = false;
     private boolean isLinkWikipedia = false;
+    private Document dummyXmlDoc = null;
+    private Element dummyElem = null;
 
     private static void log(Object text) {
         System.out.println(text);
@@ -77,8 +84,15 @@ public class FOLTXTMatcher {
             this.isLinkWikipedia = false;
         }
 
+        try {
+			dummyXmlDoc = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();
+		} catch (ParserConfigurationException e) {
+			e.printStackTrace();
+		}
+        dummyElem = dummyXmlDoc.createElement("root");
+        //this.dummyTextPane.setContentType(AppResource.getInstance().getResourceMap().getString("html.content.type"));
+        
         populateEntityV();
-
         getCurrFullXmlText();
     }
 
@@ -284,6 +298,14 @@ public class FOLTXTMatcher {
 		input=input.replaceAll("&gt;", ">");
 		input=input.replaceAll("&quot;", "\"");
 		input=input.replaceAll("&apos;", "'");
+		input=input.replaceAll("&nbsp;", " ");
+		
+		input=input.replaceAll("&#32;", " ");
+		input=input.replaceAll("&#38;", "&");
+		input=input.replaceAll("&#60;", "<");
+		input=input.replaceAll("&#62;", ">");
+		input=input.replaceAll("&#34;", "\"");
+		input=input.replaceAll("&#39;", "'");
 		//System.out.println(input);
 		return input;
 	}
@@ -293,30 +315,41 @@ public class FOLTXTMatcher {
         
 		int aOffset = Integer.valueOf(thisAnchorXmlOLName[0]);
 		int aLength = Integer.valueOf(thisAnchorXmlOLName[1]);
-		String aName = thisAnchorXmlOLName[2];
+		String aName = fullXmlTxt.substring(aOffset, aOffset + aLength); //thisAnchorXmlOLName[2];
 		
         myScreenPosition[0] = ""; //String.valueOf(aName);
         myScreenPosition[1] = String.valueOf(0);
         myScreenPosition[2] = String.valueOf(0);
 
-        String source = fullXmlTxt.substring(aOffset + aLength);
-        source.replaceAll("[\\W]", "");
-        int offset = fullScreenTxt.length() - source.length();
-//		int count = 0;
+        String source = this.parseXmlText(fullXmlTxt.substring(aOffset + aLength));
+//        List<String> puzzles = new Vector<String>();
+//        source = DeXMLify(source);
+        //String puzzle = source.replaceAll("[\\s]+", " ");
+
+        String puzzle = source.replaceAll("[\\W]", "");
+        int offset = puzzle.length();
+
 		int pos = 0;
+		offset = fullScreenTxt.length() - offset;
+		String part = fullScreenTxt.substring(offset);
+		part = part.replaceAll("[\\W]", "");
+		StringBuffer sb = new StringBuffer(part);
+		
 		while (offset > 0) {
-			String part = fullScreenTxt.substring(fullScreenTxt.length() - offset);
-			part.replaceAll("[\\W]", "");
-			if (source.equals(source) || part.length() >= source.length()) {
+			//puzzle.equals(part) || 
+			if (sb.length() >= puzzle.length() || puzzle.equals(sb.toString())) {
 //		        myScreenPosition[0] = String.valueOf(aName);
 		        myScreenPosition[1] = String.valueOf(offset - aLength);
 		        myScreenPosition[2] = String.valueOf(offset);
 		        break;
 			}
-			--offset;
+			int gap = puzzle.length() - sb.length();
+			part = fullScreenTxt.substring(offset - gap, offset);
+			part = part.replaceAll("[\\W]", "");
+			sb.insert(0, part);
 		}
-		
-		myScreenPosition[0] = fullScreenTxt.substring(Integer.valueOf(myScreenPosition[1]), aLength);
+//		
+//		myScreenPosition[0] = fullScreenTxt.substring(Integer.valueOf(myScreenPosition[1]), Integer.valueOf(myScreenPosition[1]) + aLength);
 //		{
 //			Vector<Integer> offsets = new Vector<Integer>();
 //			while ((pos = fullScreenTxt.indexOf(aName, pos)) > 0) {
@@ -330,9 +363,7 @@ public class FOLTXTMatcher {
 //		        myScreenPosition[2] = String.valueOf(offsets.get(0) + aName.length());
 //			}
 //		}
-		/*
-		 * TODO. finish the 
-		 */
+
     	return myScreenPosition;
     }
     // =========================================================================
@@ -742,6 +773,41 @@ public class FOLTXTMatcher {
         return xmlBepOffset;
     }
     
+    public String parseXmlText(String input) {
+    	StringBuffer sb = new StringBuffer("<?xml version=\"1.0\" encoding=\"UTF-8\"?><!DOCTYPE article SYSTEM \"article.dtd\"><article>");
+    	sb.append(input);
+    	sb.append("</article>");
+    	String out = input;
+        FileInputStream fileInputStream = null;
+        InputStreamReader inputStreamReader = null;
+        try {
+            ByteArrayInputStream bais = new ByteArrayInputStream(sb.toString().getBytes());
+            inputStreamReader = new InputStreamReader(bais, "UTF-8");
+            InputSource inputSource = new InputSource(inputStreamReader);
+
+            // Parse the XML File
+            DOMParser parser = new DOMParser();
+            parser.parse(inputSource);
+            Document tempDoc = parser.getDocument();
+
+            out = getNodeText(tempDoc, "article");
+//            //Elmen root = doc.getElementsByTagName("article"); //.getFirstChild();
+//            NodeList nodes = doc.getElementsByTagName("article"); //root.getChildNodes();
+//            for (int i = 0; i < nodes.getLength(); i++) {
+//                Node node = nodes.item(i);
+//                if (node.getNodeType() == Node.TEXT_NODE) {
+//            		out += node.getNodeValue();           	
+//                }         	
+//            }
+
+        } catch (SAXException ex) {
+        	ex.printStackTrace();
+        } catch (IOException ex) {
+        	ex.printStackTrace();
+        } finally {
+        	return out;
+        }
+    }
     // </editor-fold>
     // =========================================================================
     // =========================================================================
@@ -771,11 +837,11 @@ public class FOLTXTMatcher {
             //get the text of the document from the XMLfile Entry
 //            if (this.isTopicWikipedia) {
             if (isWikipedia) {
-                myPureTxt = getNodeText("article");
+                myPureTxt = getNodeText(doc, "article");
             } else {
-                myPureTxt = getNodeText("Entry");
+                myPureTxt = getNodeText(doc, "Entry");
                 if (myPureTxt.equals("")) {
-                    myPureTxt = getNodeText("SubEntryResources");
+                    myPureTxt = getNodeText(doc, "SubEntryResources");
                 }
             }
 
@@ -795,14 +861,14 @@ public class FOLTXTMatcher {
      * @param xpath - the xpath
      * @return - the text of the xpath
      */
-    private String getNodeText(String xpath) {
+    private String getNodeText(Document sourceDoc, String xpath) {
 
         NodeList nodelist;
         Element elem;
         String text = "";
 
         try {
-            nodelist = XPathAPI.selectNodeList(doc, xpath);
+            nodelist = XPathAPI.selectNodeList(sourceDoc, xpath);
 
             // Process the elements in the nodelist
             // note that because we usually specify a particular node we get the text of one node only
@@ -811,9 +877,9 @@ public class FOLTXTMatcher {
             for (int i = 0; i < nodelist.getLength(); i++) {
                 // Get element
                 org.w3c.dom.Node n = nodelist.item(i);
-                text = n.getTextContent();
+                text += n.getTextContent();
 
-                text += text;
+                //text += text;
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -827,7 +893,7 @@ public class FOLTXTMatcher {
      * @return - the text of the xpath
      */
     private String getNodeText(String xpath, int start) {
-        return getNodeText(xpath).substring(start);
+        return getNodeText(doc, xpath).substring(start);
     }
 
     /** gets the text for a given xpath from a given start position with a given length
@@ -837,7 +903,7 @@ public class FOLTXTMatcher {
      * @return - the text of the xpath
      */
     private String getNodeText(String xpath, int start, int length) {
-        String text = getNodeText(xpath);
+        String text = getNodeText(doc, xpath);
         int end = end = start + length;
         if (end > start + text.length()) {
             return text.substring(start);
