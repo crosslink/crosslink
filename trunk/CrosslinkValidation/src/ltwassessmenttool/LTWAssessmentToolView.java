@@ -276,13 +276,13 @@ public class LTWAssessmentToolView extends FrameView {
         topicTextScrollPane.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         topicTextScrollPane.setMaximumSize(new java.awt.Dimension(1600, 1600));
         topicTextScrollPane.setName("topicTextScrollPane"); // NOI18N
-        topicTextScrollPane.setPreferredSize(new java.awt.Dimension(500, 644));
+        topicTextScrollPane.setPreferredSize(new java.awt.Dimension(545, 644));
 
         topicTextPane.setEditable(false);
         topicTextPane.setDragEnabled(true);
         topicTextPane.setMaximumSize(new java.awt.Dimension(1600, 1600));
         topicTextPane.setName("topicTextPane"); // NOI18N
-        topicTextPane.setPreferredSize(new java.awt.Dimension(500, 644));
+        topicTextPane.setPreferredSize(new java.awt.Dimension(545, 644));
         topicTextScrollPane.setViewportView(topicTextPane);
 
         jSplitPane1.setLeftComponent(topicTextScrollPane);
@@ -306,7 +306,7 @@ public class LTWAssessmentToolView extends FrameView {
         rightSplitPane.setTopComponent(linkTextScrollPane);
 
         srcScrollPane.setBackground(resourceMap.getColor("srcScrollPane.background")); // NOI18N
-        srcScrollPane.setMaximumSize(new java.awt.Dimension(20, 244));
+        srcScrollPane.setMaximumSize(new java.awt.Dimension(60, 244));
         srcScrollPane.setMinimumSize(new java.awt.Dimension(20, 244));
         srcScrollPane.setName("srcScrollPane"); // NOI18N
         srcScrollPane.setPreferredSize(new java.awt.Dimension(20, 244));
