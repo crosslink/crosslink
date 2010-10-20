@@ -48,7 +48,8 @@ import org.xml.sax.SAXException;
  */
 public class resourcesManager {
 
-    private final String sysPropertyKey = "isTABKey";
+    private static resourcesManager instance;
+	private final String sysPropertyKey = "isTABKey";
     private final String sysPropertyIsTopicWikiKey = "isTopicWikipedia";
     private final String sysPropertyIsLinkWikiKey = "isLinkWikipedia";
     private final String bepLength = "4";
@@ -87,6 +88,12 @@ public class resourcesManager {
 	private String wikipediaCollTitle = "";
     private String afTopicPrefixTag = "topic";
     private String afPoolPathTag = "poolingXmlFile";
+    
+    public static resourcesManager getInstance() {
+        if (instance == null)
+            instance = new resourcesManager();
+        return instance;
+    }
 
     private static void log(Object text) {
         System.out.println(text);
@@ -123,17 +130,17 @@ public class resourcesManager {
         wikipediaPool = resourceMap.getString("pool.wikipedia");
         teAraPool = resourceMap.getString("pool.teara");
 
-        pooler = new poolerManager();
-        // ---------------------------------------------------------------------
-        // Hashtable<String, Hashtable<String, Hashtable<String, Vector<String[]>>>>
-        // topicFileID, <PoolAnchor_OL, <Anchor_OL, V<String[]{Offset, fileID, tbrel}
-        poolOutgoingData = pooler.getOutgoingPool();
-        // Hashtable<String, Vector<String[]>>
-        // incoming : topicID, V<String[]{bep Offset, borel}>
-        topicAllBEPs = pooler.getTopicAllBeps();
-        // Hashtable<String, Hashtable<String, Vector<String[]>>>
-        // topifFileID, <BEP_Offset, V<String[]{Offset, Length, AName, fileID, barel}
-        poolIncomingData = pooler.getIncomingPool();        
+//        pooler = poolerManager.getInstance();
+//        // ---------------------------------------------------------------------
+//        // Hashtable<String, Hashtable<String, Hashtable<String, Vector<String[]>>>>
+//        // topicFileID, <PoolAnchor_OL, <Anchor_OL, V<String[]{Offset, fileID, tbrel}
+//        poolOutgoingData = pooler.getOutgoingPool();
+//        // Hashtable<String, Vector<String[]>>
+//        // incoming : topicID, V<String[]{bep Offset, borel}>
+//        topicAllBEPs = pooler.getTopicAllBeps();
+//        // Hashtable<String, Hashtable<String, Vector<String[]>>>
+//        // topifFileID, <BEP_Offset, V<String[]{Offset, Length, AName, fileID, barel}
+//        poolIncomingData = pooler.getIncomingPool();        
     }
 
     // =========================================================================
