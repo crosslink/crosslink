@@ -12,10 +12,16 @@ public class xml2txt {
 		return instance;
 	}
 	
+	public String replaceNonAlphabet(String source, String with)
+	{
+		source.replaceAll("[\\W]", with);
+		return source;
+	}
+	
 	/*
 	 * This snippet code is written by Andrew Trotman initially
 	 */
-	void clean(byte[] file)
+	public byte[] clean(byte[] file)
 	{
 		//byte[] ch; //, *from, *to;
 		/*
@@ -47,24 +53,20 @@ public class xml2txt {
 			++count;
 			}
 
+
 	/*
 		now remove multiple, head, and tail spaces.
 	*/
-//	from = to = file;
-//	while (isspace(*from))
-//		from++;
-//	while (*from != '\0')
-//		{
-//		while (isalnum(*from))
-//			*to++ = *from++;
-//		if (isspace(*from))
-//			*to++ = *from++;
-//		while (isspace(*from))
-//			from++;
-//		}
-//	if (to > file && isspace(*(to - 1)))
-//		to--;
-//	*to = '\0';
+		int offset = 0;
+		int length = file.length;
+		while (Character.isWhitespace(file[offset]) && offset < length)
+			++offset;
+		while (Character.isWhitespace(file[length - 1]) && length > 0)
+			--length;
+		length -= offset;
+		byte[] result = new byte[length];
+		System.arraycopy(file, offset, result, 0, length);
+		return result;
 	}
 	
 	public byte[] convert(String xmlfile) {
@@ -82,12 +84,12 @@ public class xml2txt {
 		}
 //	    for (int i = 0; i < size;)
 //	        theChars[i] = (char)(bytes[i++]&0xff);
-		clean(bytes);
-		return bytes;
+		return clean(bytes);
 	}
 	
 	static void usage() {
 		System.out.println("Usage: xml2txt [-o:offset:length] input_xml");
+		//System.out.println("			[-r] -r replace the non-alphabet characters");
 		System.exit(-1);
 	}
 	

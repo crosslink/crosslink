@@ -748,7 +748,7 @@ public class assessmentFormXml {
             // -----------------------------------------------------------------
             xmlAssessXmlFileName = AFXmlFile;
             // Update Tool Resource XML --> targetFile
-            new resourcesManager().updateAFXmlFile(AFXmlFile);
+            resourcesManager.getInstance().updateAFXmlFile(AFXmlFile);
             // -----------------------------------------------------------------
             // 2) create XML writer
             out = new FileOutputStream(AFXmlFile);

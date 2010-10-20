@@ -65,7 +65,7 @@ public class poolerManager {
     static poolerManager instance = null;
     
     static {
-//        resManager = new resourcesManager();
+//        resManager = resourcesManager.getInstance();
 
         //resourceMap = org.jdesktop.application.Application.getInstance(ltwassessment.ltwassessmentApp.class).getContext().getResourceMap(ltwassessmentView.class);
         resourceXMLFile = AppResource.getInstance().getResourceMap().getString("ResourceXMLFilePath");
@@ -607,7 +607,7 @@ public class poolerManager {
             myAFTopicColl = afProperty[3].trim();
             myAFLinkColl = afProperty[3].trim();
         }
-//        resourcesManager rscManager = new resourcesManager();
+//        resourcesManager rscManager = resourcesManager.getInstance();
 //        if (Boolean.valueOf(System.getProperty(sysPropertyIsTopicWikiKey))) {
             String subPath = resourcesManager.getInstance().getWikipediaFilePathByName(xmlFileID + ".xml");
             if (subPath.equals("FileNotFound.xml")) {

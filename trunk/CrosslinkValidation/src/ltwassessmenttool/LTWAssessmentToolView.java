@@ -164,7 +164,7 @@ public class LTWAssessmentToolView extends FrameView {
         // =====================================================================
         progressBar.setVisible(false);
         // =====================================================================
-        rscManager = new resourcesManager();
+        rscManager = resourcesManager.getInstance();
         // =====================================================================
         // 0) check IF Pool XML File in
         String wikiCollectionFolder = rscManager.getWikipediaCollectionFolder();

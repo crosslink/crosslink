@@ -20,7 +20,7 @@ public class LTWAssessmentToolCorpusBox extends javax.swing.JDialog {
     public LTWAssessmentToolCorpusBox(java.awt.Frame parent) {
         super(parent);
         initComponents();
-        toolRscManager = new resourcesManager();
+        toolRscManager = resourcesManager.getInstance();
         getRootPane().setDefaultButton(OkBtn);
 
         String currWikipediaCollDir = this.toolRscManager.getWikipediaCollectionFolder();

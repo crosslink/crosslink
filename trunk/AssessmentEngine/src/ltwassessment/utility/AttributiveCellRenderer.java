@@ -52,7 +52,7 @@ public class AttributiveCellRenderer extends DefaultTableCellRenderer {
         this.isTABTask = isTAB;
         this.isTableClick = true;
 
-        this.myRSCManager = new resourcesManager();
+        this.myRSCManager = resourcesManager.getInstance();
         this.myTableIndexing = new paneTableIndexing(isTABTask);
         this.myIndicesByRowKey = this.myTableIndexing.getRowNAVIndices();
 
@@ -69,7 +69,7 @@ public class AttributiveCellRenderer extends DefaultTableCellRenderer {
         this.isTABTask = isTAB;
         this.isTopicPaneOLClick = true;
 
-        this.myRSCManager = new resourcesManager();
+        this.myRSCManager = resourcesManager.getInstance();
         this.myTableIndexing = new paneTableIndexing(isTABTask);
         this.myIndicesByRowKey = this.myTableIndexing.getRowNAVIndices();
 

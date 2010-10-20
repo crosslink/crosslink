@@ -57,7 +57,7 @@ public class FOLTXTMatcher {
 
     public FOLTXTMatcher() {
 
-        this.myRSCManager = new resourcesManager();
+        this.myRSCManager = resourcesManager.getInstance();
         this.myPooler = poolerManager.getInstance();
 
         //org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(ltwassessment.ltwassessmentApp.class).getContext().getResourceMap(ltwassessmentView.class);
@@ -291,27 +291,45 @@ public class FOLTXTMatcher {
     private String[] screenOffsetLengthFinder(String fullScreenTxt, String fullXmlTxt, String[] thisAnchorXmlOLName) {
     	String[] myScreenPosition = new String[3];
         
-		String aOffset = thisAnchorXmlOLName[0];
-		String aLength = thisAnchorXmlOLName[1];
+		int aOffset = Integer.valueOf(thisAnchorXmlOLName[0]);
+		int aLength = Integer.valueOf(thisAnchorXmlOLName[1]);
 		String aName = thisAnchorXmlOLName[2];
 		
-        myScreenPosition[0] = String.valueOf(aName);
+        myScreenPosition[0] = ""; //String.valueOf(aName);
         myScreenPosition[1] = String.valueOf(0);
         myScreenPosition[2] = String.valueOf(0);
 
-		int count = 0;
+        String source = fullXmlTxt.substring(aOffset + aLength);
+        source.replaceAll("[\\W]", "");
+        int offset = fullScreenTxt.length() - source.length();
+//		int count = 0;
 		int pos = 0;
-		Vector<Integer> offsets = new Vector<Integer>();
-		while ((pos = fullScreenTxt.indexOf(aName, pos)) > 0) {
-			offsets.add(pos);
-			pos += aName.length();
+		while (offset > 0) {
+			String part = fullScreenTxt.substring(fullScreenTxt.length() - offset);
+			part.replaceAll("[\\W]", "");
+			if (source.equals(source) || part.length() >= source.length()) {
+//		        myScreenPosition[0] = String.valueOf(aName);
+		        myScreenPosition[1] = String.valueOf(offset - aLength);
+		        myScreenPosition[2] = String.valueOf(offset);
+		        break;
+			}
+			--offset;
 		}
 		
-		if (offsets.size() == 1) {
-	        myScreenPosition[0] = String.valueOf(aName);
-	        myScreenPosition[1] = String.valueOf(offsets.get(0));
-	        myScreenPosition[2] = String.valueOf(offsets.get(0) + aName.length());
-		}
+		myScreenPosition[0] = fullScreenTxt.substring(Integer.valueOf(myScreenPosition[1]), aLength);
+//		{
+//			Vector<Integer> offsets = new Vector<Integer>();
+//			while ((pos = fullScreenTxt.indexOf(aName, pos)) > 0) {
+//				offsets.add(pos);
+//				pos += aName.length();
+//			}
+//			
+//			if (offsets.size() == 1) {
+//		        myScreenPosition[0] = String.valueOf(aName);
+//		        myScreenPosition[1] = String.valueOf(offsets.get(0));
+//		        myScreenPosition[2] = String.valueOf(offsets.get(0) + aName.length());
+//			}
+//		}
 		/*
 		 * TODO. finish the 
 		 */

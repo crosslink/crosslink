@@ -37,7 +37,7 @@ public class paneTableManager {
         teAraCollTitle = AppResource.getInstance().getResourceMap().getString("collectionType.TeAra");
         // ---------------------------------------------------------------------
         this.myRunsPooler = poolerManager.getInstance();
-        this.myRSCManager = new resourcesManager();
+        this.myRSCManager = resourcesManager.getInstance();
         this.myFOLMatcher = new FOLTXTMatcher();
         this.myTableIndexing = tabIndexing;
     }

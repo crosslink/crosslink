@@ -48,7 +48,7 @@ public class linkPaneMouseListener implements MouseInputListener {
         this.myLinkPane = myLinkPane;
         this.myPaneTable = paneTable;
         
-        myRSCManager = new resourcesManager();
+        myRSCManager = resourcesManager.getInstance();
         myTABTxtPaneManager = new tabTxtPaneManager();
         myTBATxtPaneManager = new tbaTxtPaneManager();
 

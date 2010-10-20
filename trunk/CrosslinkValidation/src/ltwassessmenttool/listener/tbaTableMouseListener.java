@@ -51,7 +51,7 @@ public class tbaTableMouseListener extends MouseAdapter {
         this.myTBATable = tbaTable;
         this.poolIncomingData = poolIncomingData;
         // declare External Classes
-        rscManager = new resourcesManager();
+        rscManager = resourcesManager.getInstance();
         txtPManager = new tbaTxtPaneManager();
         // indexing
         TBAIndice = new Hashtable<String, String[]>();
