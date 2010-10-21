@@ -20,7 +20,7 @@
 		<jar jarfile="${dist.jar}" basedir="${build.dir}" excludes="*.o">
 			<manifest>
 				<attribute name="Created-By" value="Eric Tang" />
-				<attribute name="Main-Class" value="crosslink.xml2txt" />
+				<attribute name="Main-Class" value="crosslink.XML2TXT" />
 			</manifest>
 		</jar>
 	</target>

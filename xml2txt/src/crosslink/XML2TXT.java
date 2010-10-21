@@ -2,13 +2,17 @@ package crosslink;
 import java.io.FileInputStream;
 import java.io.IOException;
 
-public class xml2txt {
+public class XML2TXT {
 
-	private static xml2txt instance = null;
+	private static XML2TXT instance = null;
 	
-	public static xml2txt getInstance() {
+	public XML2TXT() {
+		
+	}
+	
+	public static XML2TXT getInstance() {
 		if (instance == null)
-			instance = new xml2txt();
+			instance = new XML2TXT();
 		return instance;
 	}
 	
@@ -69,7 +73,7 @@ public class xml2txt {
 		return result;
 	}
 	
-	public byte[] convert(String xmlfile) {
+	public byte[] convertFile(String xmlfile) {
 
 	    int size;
 	    byte[] bytes = null;
@@ -87,8 +91,20 @@ public class xml2txt {
 		return clean(bytes);
 	}
 	
+	public byte[] convert(String xml) {
+		return clean(xml.getBytes());
+	}
+	
+	public String getText(String xmlfile) {
+		return new String(convert(xmlfile));
+	}
+	
+	public String getXmlFileText(String xmlfile) {
+		return new String(convertFile(xmlfile));
+	}
+	
 	static void usage() {
-		System.out.println("Usage: xml2txt [-o:offset:length] input_xml");
+		System.out.println("Usage: XML2TXT [-o:offset:length] input_xml");
 		//System.out.println("			[-r] -r replace the non-alphabet characters");
 		System.exit(-1);
 	}
@@ -101,7 +117,7 @@ public class xml2txt {
 			usage();
 		}
 		int offset = 0, length = -1;
-		xml2txt converter = new xml2txt();
+		XML2TXT converter = new XML2TXT();
 		String xmlfile = null;
 		if (args[0].charAt(0) == '-')
 		{
