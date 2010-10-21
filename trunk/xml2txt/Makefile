@@ -5,7 +5,7 @@ SRCDIR = src
 OBJDIR = bin
 BINDIR = .
 
-main = xml2txt
+main = XML2TXT
 
 all: $(main) header lib
 
@@ -16,7 +16,8 @@ $(OBJDIR)/%.o: $(SRCDIR)/crosslink/%.java
 	$(CC) $(CFLAGS) -c $< -o $@
 	
 header: ant
-	gcjh $(OBJDIR)/crosslink/$(main).class
+	#\rm $(main).h
+	gcjh $(OBJDIR)/crosslink/$(main).class -o $(main).h -cni
 	
 ant:
 	ant compile
@@ -25,4 +26,4 @@ lib:
 	ar rcs $(BINDIR)/libxml2txt.a $(OBJDIR)/*.o
 		
 clean :
-	\rm $(OBJDIR)/*.o $(main)
+	\rm -rf $(OBJDIR)/* $(main) $(main).h
