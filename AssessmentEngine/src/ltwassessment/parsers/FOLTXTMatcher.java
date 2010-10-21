@@ -816,7 +816,7 @@ public class FOLTXTMatcher {
 
     public String ConvertXMLtoTXT(String inname, String outname, boolean isWikipedia) {
 //        String myPureTxt = convertXMLFileToTxt(inname, outname, isWikipedia);
-    	String myPureTxt = new String(crosslink.xml2txt.getInstance().convert(inname));
+    	String myPureTxt = new String(crosslink.XML2TXT.getInstance().convert(inname));
         // write the text to a new file
         try {
 			BufferedWriter out = new BufferedWriter(new FileWriter(outname));
