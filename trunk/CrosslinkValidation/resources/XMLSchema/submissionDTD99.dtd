@@ -12,16 +12,16 @@
 
     <?xml version="1.0"?>
 
-    <!DOCTYPE inexltw-submission SYSTEM "submissionDTD99.dtd">
+    <!DOCTYPE crosslink-submission SYSTEM "submissionDTD99.dtd">
 
-    <inexltw-submission>
+    <crosslink-submission>
     ...
-    </inexltw-submission>
+    </crosslink-submission>
 -->
 
 <!--- Put your DTDDoc comment here. -->
-<!ELEMENT inexltw-submission (topic|collections|description|details)*>
-<!ATTLIST inexltw-submission
+<!ELEMENT crosslink-submission (topic|collections|description|details)*>
+<!ATTLIST crosslink-submission
     task CDATA #IMPLIED
     run-id CDATA #IMPLIED
     participant-id CDATA #IMPLIED

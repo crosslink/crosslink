@@ -61,16 +61,17 @@ public class XML2TXT {
 	/*
 		now remove multiple, head, and tail spaces.
 	*/
-		int offset = 0;
-		int length = file.length;
-		while (Character.isWhitespace(file[offset]) && offset < length)
-			++offset;
-		while (Character.isWhitespace(file[length - 1]) && length > 0)
-			--length;
-		length -= offset;
-		byte[] result = new byte[length];
-		System.arraycopy(file, offset, result, 0, length);
-		return result;
+//		int offset = 0;
+//		int length = file.length;
+//		while (Character.isWhitespace(file[offset]) && offset < length)
+//			++offset;
+//		while (Character.isWhitespace(file[length - 1]) && length > 0)
+//			--length;
+//		length -= offset;
+//		byte[] result = new byte[length];
+//		System.arraycopy(file, offset, result, 0, length);
+//		return result;
+		return file;
 	}
 	
 	public byte[] convertFile(String xmlfile) {
