@@ -121,7 +121,7 @@ public class poolerManager {
                 XMLModifier xm = new XMLModifier(vn);
 
                 // Pool Anchor
-                String xPath = "/inexltw-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + pAnchorOLSA[0] + "' and @alength='" + pAnchorOLSA[1] + "']/subanchor/tobep";
+                String xPath = "/crosslink-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + pAnchorOLSA[0] + "' and @alength='" + pAnchorOLSA[1] + "']/subanchor/tobep";
                 ap.selectXPath(xPath);
                 int i = -1;
                 while ((i = ap.evalXPath()) != -1) {
@@ -170,7 +170,7 @@ public class poolerManager {
                 XMLModifier xm = new XMLModifier(vn);
 
                 // Pool Anchor
-                String xPath1 = "/inexltw-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + poolAnchorOL[0] + "' and @alength='" + poolAnchorOL[1] + "']";
+                String xPath1 = "/crosslink-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + poolAnchorOL[0] + "' and @alength='" + poolAnchorOL[1] + "']";
                 ap.selectXPath(xPath1);
                 int k = -1;
                 while ((k = ap.evalXPath()) != -1) {
@@ -213,7 +213,7 @@ public class poolerManager {
                 XMLModifier xm = new XMLModifier(vn);
 
                 // Pool Anchor
-                String xPath1 = "/inexltw-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + poolAnchorOL[0] + "' and @alength='" + poolAnchorOL[1] + "']";
+                String xPath1 = "/crosslink-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + poolAnchorOL[0] + "' and @alength='" + poolAnchorOL[1] + "']";
                 ap.selectXPath(xPath1);
                 int k = -1;
                 while ((k = ap.evalXPath()) != -1) {
@@ -256,7 +256,7 @@ public class poolerManager {
                 XMLModifier xm = new XMLModifier(vn);
 
                 // Pool Anchor
-                String xPath1 = "/inexltw-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + poolAnchorOL[0] + "' and @alength='" + poolAnchorOL[1] + "']/subanchor/tobep";
+                String xPath1 = "/crosslink-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + poolAnchorOL[0] + "' and @alength='" + poolAnchorOL[1] + "']/subanchor/tobep";
                 ap.selectXPath(xPath1);
                 int i = -1;
                 while ((i = ap.evalXPath()) != -1) {
@@ -299,7 +299,7 @@ public class poolerManager {
                 XMLModifier xm = new XMLModifier(vn);
 
                 // Pool Anchor
-                String xPath1 = "/inexltw-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + poolAnchorOL[0] + "' and @alength='" + poolAnchorOL[1] + "']/subanchor/tobep";
+                String xPath1 = "/crosslink-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + poolAnchorOL[0] + "' and @alength='" + poolAnchorOL[1] + "']/subanchor/tobep";
                 ap.selectXPath(xPath1);
                 int i = -1;
                 while ((i = ap.evalXPath()) != -1) {
@@ -348,7 +348,7 @@ public class poolerManager {
                 XMLModifier xm = new XMLModifier(vn);
 
                 // Pool Anchor
-                String xPath1 = "/inexltw-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + poolAnchorOL[0] + "' and @alength='" + poolAnchorOL[1] + "']/subanchor/tobep";
+                String xPath1 = "/crosslink-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + poolAnchorOL[0] + "' and @alength='" + poolAnchorOL[1] + "']/subanchor/tobep";
                 ap.selectXPath(xPath1);
                 int i = -1;
                 while ((i = ap.evalXPath()) != -1) {
@@ -399,7 +399,7 @@ public class poolerManager {
                 AutoPilot ap = new AutoPilot(vn);
                 XMLModifier xm = new XMLModifier(vn);
                 // Pool BEP
-                String xPath = "/inexltw-assessment/topic[@file='" + topicID.trim() + "']/incominglinks/bep[@boffset='" + poolBepOffset.trim() + "']/fromanchor";
+                String xPath = "/crosslink-assessment/topic[@file='" + topicID.trim() + "']/incominglinks/bep[@boffset='" + poolBepOffset.trim() + "']/fromanchor";
                 ap.selectXPath(xPath);
                 int i = -1;
                 while ((i = ap.evalXPath()) != -1) {
@@ -441,7 +441,7 @@ public class poolerManager {
                 AutoPilot ap = new AutoPilot(vn);
                 XMLModifier xm = new XMLModifier(vn);
                 // Pool BEP
-                String xPath = "/inexltw-assessment/topic[@file='" + topicID.trim() + "']/incominglinks/bep[@boffset='" + poolBepOffset.trim() + "']/fromanchor[@faoffset='" + pBepLinkOLID[0].trim() + "' and @falength='" + pBepLinkOLID[1].trim() + "']";
+                String xPath = "/crosslink-assessment/topic[@file='" + topicID.trim() + "']/incominglinks/bep[@boffset='" + poolBepOffset.trim() + "']/fromanchor[@faoffset='" + pBepLinkOLID[0].trim() + "' and @falength='" + pBepLinkOLID[1].trim() + "']";
                 ap.selectXPath(xPath);
                 int i = -1;
                 while ((i = ap.evalXPath()) != -1) {
@@ -489,7 +489,7 @@ public class poolerManager {
                 AutoPilot ap = new AutoPilot(vn);
                 XMLModifier xm = new XMLModifier(vn);
                 // Pool BEP
-                String xPath = "/inexltw-assessment/topic[@file='" + topicID.trim() + "']/incominglinks/bep[@boffset='" + poolBepOffset.trim() + "']/fromanchor[@faoffset='" + pBepLinkOLID[0].trim() + "' and @falength='" + pBepLinkOLID[1].trim() + "']";
+                String xPath = "/crosslink-assessment/topic[@file='" + topicID.trim() + "']/incominglinks/bep[@boffset='" + poolBepOffset.trim() + "']/fromanchor[@faoffset='" + pBepLinkOLID[0].trim() + "' and @falength='" + pBepLinkOLID[1].trim() + "']";
                 ap.selectXPath(xPath);
                 int i = -1;
                 while ((i = ap.evalXPath()) != -1) {
@@ -537,7 +537,7 @@ public class poolerManager {
                 AutoPilot ap = new AutoPilot(vn);
                 XMLModifier xm = new XMLModifier(vn);
                 // Pool BEP
-                String xPath = "/inexltw-assessment/topic[@file='" + topicID.trim() + "']/incominglinks/bep[@boffset='" + poolBepOffset.trim() + "']";
+                String xPath = "/crosslink-assessment/topic[@file='" + topicID.trim() + "']/incominglinks/bep[@boffset='" + poolBepOffset.trim() + "']";
                 ap.selectXPath(xPath);
                 int k = -1;
                 while ((k = ap.evalXPath()) != -1) {
@@ -646,7 +646,7 @@ public class poolerManager {
         // Format:
         // Anchor(1114_1133), Vector<String[]{123017, 1538}+>
         boolean forValidationOrAssessment = AppResource.forValidationOrAssessment;
-        String afTitleTag = forValidationOrAssessment ? "inexltw-assessment" : "inexltw-submission";
+        String afTitleTag = forValidationOrAssessment ? "crosslink-assessment" : "crosslink-submission";
         String afTopicTag = "topic";
         String afOutgoingTag = forValidationOrAssessment ? "outgoinglinks" : "outgoing";
         String afAnchorTag = "anchor";
@@ -714,7 +714,7 @@ public class poolerManager {
     private HashMap<String, Vector<String[]>> getBepAnchorSetbyTopicID(String topicFileID, String afXmlPath) {
         // Format:
         // Bep(Offset:1114), Vector<String[]{Offset:1538, Length:9, Name:TITLE, ID:123017}+>
-        String afTitleTag = "inexltw-assessment";
+        String afTitleTag = "crosslink-assessment";
         String afTopicTag = "topic";
         String afIncomingTag = "incominglinks";
         String afBepTag = "bep";
@@ -816,7 +816,7 @@ public class poolerManager {
                 xsr.next();
                 if (xsr.isStartElement()) {
                     String tagName = xsr.getLocalName();
-                    if (tagName.equals("inexltw-assessment") || tagName.equals("inexltw-submission")) {
+                    if (tagName.equals("crosslink-assessment") || tagName.equals("crosslink-submission")) {
                         for (int i = 0; i < xsr.getAttributeCount(); i++) {
                             if (xsr.getAttributeLocalName(i).equals("participant-id")) {
                                 afProperty[0] = xsr.getAttributeValue(i);

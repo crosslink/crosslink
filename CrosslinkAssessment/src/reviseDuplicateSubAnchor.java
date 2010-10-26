@@ -75,7 +75,7 @@ public class reviseDuplicateSubAnchor {
                                 XMLModifier xm = new XMLModifier(vn);
 
                                 Vector<String[]> pAnchorOLV = new Vector<String[]>();
-                                String xPath = "/inexltw-assessment/topic/outgoinglinks/anchor";
+                                String xPath = "/crosslink-assessment/topic/outgoinglinks/anchor";
                                 ap.selectXPath(xPath);
                                 int i = -1;
                                 while ((i = ap.evalXPath()) != -1) {
@@ -97,7 +97,7 @@ public class reviseDuplicateSubAnchor {
                                     saOLRecorder = new Vector<String>();
                                     String thisAOffset = thisAOLSet[0].trim();
                                     String thisALength = thisAOLSet[1].trim();
-                                    String xPathT = "/inexltw-assessment/topic/outgoinglinks/anchor[@aoffset='" + thisAOffset + "' and @alength='" + thisALength + "']/subanchor";
+                                    String xPathT = "/crosslink-assessment/topic/outgoinglinks/anchor[@aoffset='" + thisAOffset + "' and @alength='" + thisALength + "']/subanchor";
                                     ap.selectXPath(xPathT);
                                     int ii = -1;
                                     while ((ii = ap.evalXPath()) != -1) {

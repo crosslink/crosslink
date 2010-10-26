@@ -183,7 +183,7 @@ public class locateABWikiFilesToDIR {
                     fos = new FileOutputStream(fo);
                     AutoPilot ap = new AutoPilot(vn);
                     XMLModifier xm = new XMLModifier(vn);
-                    String xPath = "/inexltw-assessment/topic/outgoinglinks/anchor/subanchor/tobep";
+                    String xPath = "/crosslink-assessment/topic/outgoinglinks/anchor/subanchor/tobep";
                     ap.selectXPath(xPath);
                     int i = -1;
                     while ((i = ap.evalXPath()) != -1) {
@@ -245,7 +245,7 @@ public class locateABWikiFilesToDIR {
                     fos = new FileOutputStream(fo);
                     AutoPilot ap = new AutoPilot(vn);
                     XMLModifier xm = new XMLModifier(vn);
-                    String xPath = "/inexltw-assessment/topic/incominglinks/bep/fromanchor";
+                    String xPath = "/crosslink-assessment/topic/incominglinks/bep/fromanchor";
                     ap.selectXPath(xPath);
                     int i = -1;
                     while ((i = ap.evalXPath()) != -1) {

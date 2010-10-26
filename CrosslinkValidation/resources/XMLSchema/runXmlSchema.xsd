@@ -2,7 +2,7 @@
     targetNamespace="http://xml.netbeans.org/schema/runXmlSchema"
     xmlns:tns="http://xml.netbeans.org/schema/runXmlSchema"
     elementFormDefault="qualified">
-    <xsd:element name="inexltw-submission">
+    <xsd:element name="crosslink-submission">
         <xsd:complexType>
             <xsd:sequence>
                 <xsd:element name="details">

@@ -650,7 +650,7 @@ public class genResultSet {
                             // -------------------------------------------------
                             String fileTxt = "";
                             String nameTxt = "";
-                            String xPath = "/inexltw-assessment/topic";
+                            String xPath = "/crosslink-assessment/topic";
                             ap.selectXPath(xPath);
                             int i = -1;
                             while ((i = ap.evalXPath()) != -1) {
@@ -667,7 +667,7 @@ public class genResultSet {
                             // -------------------------------------------------
                             // Hashtable<TopicID, Vector<new String[]{aoffset, alength, aname, bepOffset, bepFileID}>>
                             Vector<String[]> pAnchorSet = new Vector<String[]>();
-                            String xPath1 = "/inexltw-assessment/topic[@file='" + fileTxt + "']/outgoinglinks/anchor";
+                            String xPath1 = "/crosslink-assessment/topic[@file='" + fileTxt + "']/outgoinglinks/anchor";
                             ap.selectXPath(xPath1);
                             int i1 = -1;
                             while ((i1 = ap.evalXPath()) != -1) {
@@ -689,7 +689,7 @@ public class genResultSet {
                             // -------------------------------------------------
                             // Hashtable<TopicID, Vector<new String[]{boffset, aOffset, alength, aname, aFileID}>>
                             Vector<String[]> pBepSet = new Vector<String[]>();
-                            String xPath2 = "/inexltw-assessment/topic[@file='" + fileTxt + "']/incominglinks/bep";
+                            String xPath2 = "/crosslink-assessment/topic[@file='" + fileTxt + "']/incominglinks/bep";
                             ap.selectXPath(xPath2);
                             int i2 = -1;
                             while ((i2 = ap.evalXPath()) != -1) {
@@ -712,7 +712,7 @@ public class genResultSet {
                                 String pAOffset = pAnchorOLName[0];
                                 String pALength = pAnchorOLName[1];
                                 String pAName = pAnchorOLName[2];
-                                String xPath11 = "/inexltw-assessment/topic[@file='" + fileTxt + "']/outgoinglinks/anchor[@aoffset='" + pAOffset + "' and @alength='" + pALength + "']/subanchor/tobep";
+                                String xPath11 = "/crosslink-assessment/topic[@file='" + fileTxt + "']/outgoinglinks/anchor[@aoffset='" + pAOffset + "' and @alength='" + pALength + "']/subanchor/tobep";
                                 ap.selectXPath(xPath11);
                                 int i11 = -1;
                                 while ((i11 = ap.evalXPath()) != -1) {
@@ -737,7 +737,7 @@ public class genResultSet {
                             Vector<String[]> myTIncomingData = new Vector<String[]>();
                             for (String[] pBepO : pBepSet) {
                                 String pBOffset = pBepO[0];
-                                String xPath11 = "/inexltw-assessment/topic[@file='" + fileTxt + "']/incominglinks/bep[@boffset='" + pBOffset + "']/fromanchor";
+                                String xPath11 = "/crosslink-assessment/topic[@file='" + fileTxt + "']/incominglinks/bep[@boffset='" + pBOffset + "']/fromanchor";
                                 ap.selectXPath(xPath11);
                                 int i22 = -1;
                                 while ((i22 = ap.evalXPath()) != -1) {
@@ -803,8 +803,8 @@ public class genResultSet {
 //                            AutoPilot ap = new AutoPilot(vn);
 //                            XMLModifier xm = new XMLModifier(vn);
 //
-////                            String xPath = "/inexltw-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + pAnchorOL[0] + "' and @alength='" + pAnchorOL[1] + "']/subanchor/tobep";
-//                            String xPath = "/inexltw-assessment/topic";
+////                            String xPath = "/crosslink-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + pAnchorOL[0] + "' and @alength='" + pAnchorOL[1] + "']/subanchor/tobep";
+//                            String xPath = "/crosslink-assessment/topic";
 //                            ap.selectXPath(xPath);
 //                            int i = -1;
 //                            while ((i = ap.evalXPath()) != -1) {
@@ -1028,9 +1028,9 @@ public class genResultSet {
                 AutoPilot ap = new AutoPilot(vn);
                 XMLModifier xm = new XMLModifier(vn);
                 /**
-                 * <inexltw-submission participant-id="5" run-id="QUT_LTW_A2B_SEA_01" task="LTW_A2B">
+                 * <crosslink-submission participant-id="5" run-id="QUT_LTW_A2B_SEA_01" task="LTW_A2B">
                  */
-                String xPath = "/inexltw-submission";
+                String xPath = "/crosslink-submission";
                 ap.selectXPath(xPath);
                 int i = -1;
                 while ((i = ap.evalXPath()) != -1) {
@@ -1433,7 +1433,7 @@ public class genResultSet {
                  * <topic file="10313" name="E. O. Wilson">
                  */
                 Vector<String> topicIDV = new Vector<String>();
-                String xPath = "/inexltw-submission/topic";
+                String xPath = "/crosslink-submission/topic";
                 ap.selectXPath(xPath);
                 int i = -1;
                 while ((i = ap.evalXPath()) != -1) {
@@ -1461,7 +1461,7 @@ public class genResultSet {
                      * </anchor>
                      */
                     anchorOLSA = new Vector<String[]>();
-                    String xPath1 = "/inexltw-submission/topic[@file='" + thisTID + "']/outgoing/anchor";
+                    String xPath1 = "/crosslink-submission/topic[@file='" + thisTID + "']/outgoing/anchor";
                     ap.selectXPath(xPath1);
                     int i1 = -1;
                     String anchorOffset = "";
@@ -1481,7 +1481,7 @@ public class genResultSet {
                         String anchorO = anchorOL[0];
                         String anchorL = anchorOL[1];
                         // -----------------------------------------------------
-                        String xPath11 = "/inexltw-submission/topic[@file='" + thisTID + "']/outgoing/anchor[@offset='" + anchorO + "' and @length='" + anchorL + "']/tobep";
+                        String xPath11 = "/crosslink-submission/topic[@file='" + thisTID + "']/outgoing/anchor[@offset='" + anchorO + "' and @length='" + anchorL + "']/tobep";
                         ap.selectXPath(xPath11);
                         int i11 = -1;
                         String bepOffset = "";
@@ -1504,7 +1504,7 @@ public class genResultSet {
                      * 	</bep>
                      */
                     bepOSA = new Vector<String>();
-                    String xPath2 = "/inexltw-submission/topic[@file='" + thisTID + "']/incoming/bep";
+                    String xPath2 = "/crosslink-submission/topic[@file='" + thisTID + "']/incoming/bep";
                     ap.selectXPath(xPath2);
                     int i2 = -1;
                     String bepOffset = "";
@@ -1520,7 +1520,7 @@ public class genResultSet {
                     for (String thisBepO : bepOSA) {
                         String bepO = thisBepO;
                         // -----------------------------------------------------
-                        String xPath22 = "/inexltw-submission/topic[@file='" + thisTID + "']/incoming/bep[@offset='" + bepO + "']/fromanchor";
+                        String xPath22 = "/crosslink-submission/topic[@file='" + thisTID + "']/incoming/bep[@offset='" + bepO + "']/fromanchor";
                         ap.selectXPath(xPath22);
                         int i22 = -1;
                         String fAnchorOffset = "";
@@ -1805,7 +1805,7 @@ public class genResultSet {
 //                    XMLModifier xm = new XMLModifier(vn);
 //
 //                    Vector<String> topicIDV = new Vector<String>();
-//                    String xPath = "/inexltw-submission/topic";
+//                    String xPath = "/crosslink-submission/topic";
 //                    ap.selectXPath(xPath);
 //                    int i = -1;
 //                    while ((i = ap.evalXPath()) != -1) {
@@ -1829,7 +1829,7 @@ public class genResultSet {
 //                        anchorOLNVSA = new Vector<String[]>();
 //                        bepOVSA = new Vector<String[]>();
 //                        // ---------------------------------------------------------
-//                        String xPath1 = "/inexltw-submission/topic[@file='" + thisTID + "']/outgoing/anchor";
+//                        String xPath1 = "/crosslink-submission/topic[@file='" + thisTID + "']/outgoing/anchor";
 //                        ap.selectXPath(xPath1);
 //                        int i1 = -1;
 //                        String anchorOffset = "";
@@ -1847,7 +1847,7 @@ public class genResultSet {
 //                        }
 //                        topicIDAnchorOLHT.put(thisTID, anchorOLNVSA);
 //                        // ---------------------------------------------------------
-//                        String xPath2 = "/inexltw-submission/topic[@file='" + thisTID + "']/incoming/bep";
+//                        String xPath2 = "/crosslink-submission/topic[@file='" + thisTID + "']/incoming/bep";
 //                        ap.selectXPath(xPath2);
 //                        int i2 = -1;
 //                        String bepOffset = "";
@@ -1875,7 +1875,7 @@ public class genResultSet {
 //                            String anchorOffset = tIDAnchorOLName[0];
 //                            String anchorLength = tIDAnchorOLName[1];
 //                            String anchorKey = anchorOffset + "_" + anchorLength;
-//                            String xPath3 = "/inexltw-submission/topic[@file='" + thisTID + "']/outgoing/anchor[@offset='" + anchorOffset + "' and @length='" + anchorLength + "']/tobep";
+//                            String xPath3 = "/crosslink-submission/topic[@file='" + thisTID + "']/outgoing/anchor[@offset='" + anchorOffset + "' and @length='" + anchorLength + "']/tobep";
 //                            ap.selectXPath(xPath3);
 //                            int i1 = -1;
 //                            String bepOffset = "";
@@ -1900,7 +1900,7 @@ public class genResultSet {
 //                            String bepOffset = tIDBepOffset[0].trim();
 //                            String bepONum = tIDBepOffset[0].trim() + "_" + String.valueOf(bepOSupCounter);
 //                            bepOSupCounter++;
-//                            String xPath3 = "/inexltw-submission/topic[@file='" + thisTID + "']/incoming/bep[@offset='" + bepOffset + "']/fromanchor";
+//                            String xPath3 = "/crosslink-submission/topic[@file='" + thisTID + "']/incoming/bep[@offset='" + bepOffset + "']/fromanchor";
 //                            ap.selectXPath(xPath3);
 //                            int i1 = -1;
 //                            String linkAOffset = "";
@@ -2111,7 +2111,7 @@ public class genResultSet {
                 XMLModifier xm = new XMLModifier(vn);
 
                 Vector<String> topicIDV = new Vector<String>();
-                String xPath = "/inexltw-submission/topic";
+                String xPath = "/crosslink-submission/topic";
                 ap.selectXPath(xPath);
                 int i = -1;
                 while ((i = ap.evalXPath()) != -1) {
@@ -2135,7 +2135,7 @@ public class genResultSet {
                     anchorOLNVSA = new Vector<String[]>();
                     bepOVSA = new Vector<String[]>();
                     // ---------------------------------------------------------
-                    String xPath1 = "/inexltw-submission/topic[@file='" + thisTID + "']/outgoing/anchor";
+                    String xPath1 = "/crosslink-submission/topic[@file='" + thisTID + "']/outgoing/anchor";
                     ap.selectXPath(xPath1);
                     int i1 = -1;
                     String anchorOffset = "";
@@ -2153,7 +2153,7 @@ public class genResultSet {
                     }
                     topicIDAnchorOLHT.put(thisTID, anchorOLNVSA);
                     // ---------------------------------------------------------
-                    String xPath2 = "/inexltw-submission/topic[@file='" + thisTID + "']/incoming/bep";
+                    String xPath2 = "/crosslink-submission/topic[@file='" + thisTID + "']/incoming/bep";
                     ap.selectXPath(xPath2);
                     int i2 = -1;
                     String bepOffset = "";
@@ -2183,7 +2183,7 @@ public class genResultSet {
                         String anchorOffset = tIDAnchorOLName[0];
                         String anchorLength = tIDAnchorOLName[1];
                         String anchorKey = anchorOffset + "_" + anchorLength;
-                        String xPath3 = "/inexltw-submission/topic[@file='" + thisTID + "']/outgoing/anchor[@offset='" + anchorOffset + "' and @length='" + anchorLength + "']/tobep";
+                        String xPath3 = "/crosslink-submission/topic[@file='" + thisTID + "']/outgoing/anchor[@offset='" + anchorOffset + "' and @length='" + anchorLength + "']/tobep";
                         ap.selectXPath(xPath3);
                         int i1 = -1;
                         String bepOffset = "";
@@ -2208,7 +2208,7 @@ public class genResultSet {
                         String bepOffset = tIDBepOffset[0].trim();
                         String bepONum = tIDBepOffset[0].trim() + "_" + String.valueOf(bepOSupCounter);
                         bepOSupCounter++;
-                        String xPath3 = "/inexltw-submission/topic[@file='" + thisTID + "']/incoming/bep[@offset='" + bepOffset + "']/fromanchor";
+                        String xPath3 = "/crosslink-submission/topic[@file='" + thisTID + "']/incoming/bep[@offset='" + bepOffset + "']/fromanchor";
                         ap.selectXPath(xPath3);
                         int i1 = -1;
                         String linkAOffset = "";
@@ -2293,7 +2293,7 @@ public class genResultSet {
                 String element = node.getNodeName();
                 // =============================================================
                 // Start of Tag: -----------------------------------------------
-                if (element.equals("inexltw-submission")) {
+                if (element.equals("crosslink-submission")) {
                     isRootFlag = true;
                 }
                 // =============================================================
@@ -2621,9 +2621,9 @@ public class genResultSet {
                             String lastLine;
                             while ((strLine = br.readLine()) != null) {
                                 String thisLine = strLine.trim();
-                                if (thisLine.indexOf("<inexltw-submission") != -1) {
+                                if (thisLine.indexOf("<crosslink-submission") != -1) {
                                     log(thisLine);
-                                    // <inexltw-submission participant-id="119" run-id="Wollongong_LTWF2F_01" task="LTW_F2F">
+                                    // <crosslink-submission participant-id="119" run-id="Wollongong_LTWF2F_01" task="LTW_F2F">
                                     int pIDStart = thisLine.indexOf("participant-id=") + 16;
                                     int pIDEnd = thisLine.indexOf("\"", pIDStart);
                                     participantID = thisLine.substring(pIDStart, pIDEnd);
@@ -2847,7 +2847,7 @@ public class genResultSet {
                 log("NodeName: " + element);
                 // =============================================================
                 // Start of Tag: -----------------------------------------------
-                if (element.equals("inexltw-submission")) {
+                if (element.equals("crosslink-submission")) {
                     isRootFlag = true;
                     log("isRootFlag: " + isRootFlag);
                 }
@@ -3178,7 +3178,7 @@ public class genResultSet {
                 String participantID = "";
                 String runID = "";
                 String task = "";
-                String xPath0 = "/inexltw-submission";
+                String xPath0 = "/crosslink-submission";
                 ap.selectXPath(xPath0);
                 int i0 = -1;
                 while ((i0 = ap.evalXPath()) != -1) {
@@ -3196,7 +3196,7 @@ public class genResultSet {
                     runPropertyV.add(runID);
                     runPropertyV.add(task);
                 }
-                String xPath = "/inexltw-submission/topic";
+                String xPath = "/crosslink-submission/topic";
                 ap.selectXPath(xPath);
                 int i = -1;
                 while ((i = ap.evalXPath()) != -1) {
@@ -3242,7 +3242,7 @@ public class genResultSet {
                 XMLModifier xm = new XMLModifier(vn);
 
                 Vector<String> topicIDV = new Vector<String>();
-                String xPath = "/inexltw-submission/topic";
+                String xPath = "/crosslink-submission/topic";
                 ap.selectXPath(xPath);
                 int i = -1;
                 while ((i = ap.evalXPath()) != -1) {
@@ -3256,7 +3256,7 @@ public class genResultSet {
                 for (String thisTID : topicIDV) {
                     linksV = new Vector<String>();
                     // ---------------------------------------------------------
-                    String xPath1 = "/inexltw-submission/topic[@file='" + thisTID + "']/outgoing/linkto";
+                    String xPath1 = "/crosslink-submission/topic[@file='" + thisTID + "']/outgoing/linkto";
                     ap.selectXPath(xPath1);
                     int i1 = -1;
                     String outgoingLinks = "";
@@ -3268,7 +3268,7 @@ public class genResultSet {
                     }
                     linksV.add(outgoingLinks);
                     // ---------------------------------------------------------
-                    String xPath2 = "/inexltw-submission/topic[@file='" + thisTID + "']/incoming/linkfrom";
+                    String xPath2 = "/crosslink-submission/topic[@file='" + thisTID + "']/incoming/linkfrom";
                     ap.selectXPath(xPath2);
                     int i2 = -1;
                     String incomingLinks = "";

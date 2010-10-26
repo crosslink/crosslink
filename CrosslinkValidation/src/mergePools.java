@@ -167,7 +167,7 @@ public class mergePools {
                             fos = new FileOutputStream(fo);
                             AutoPilot ap = new AutoPilot(vn);
                             XMLModifier xm = new XMLModifier(vn);
-                            String xPath = "/inexltw-assessment/topic/outgoinglinks/anchor";
+                            String xPath = "/crosslink-assessment/topic/outgoinglinks/anchor";
                             ap.selectXPath(xPath);
                             int i = -1;
                             while ((i = ap.evalXPath()) != -1) {
@@ -206,7 +206,7 @@ public class mergePools {
 //                    // ---------------------------------------------
 //                    Vector<String> linkIDVS = new Vector<String>();
 //                    // ---------------------------------------------
-//                    String xPathT1 = "/inexltw-assessment/topic/outgoinglinks/anchor[@aoffset='" + preOffset + "' and @alength='" + preLength + "']/subanchor/tobep";
+//                    String xPathT1 = "/crosslink-assessment/topic/outgoinglinks/anchor[@aoffset='" + preOffset + "' and @alength='" + preLength + "']/subanchor/tobep";
 //                    ap.selectXPath(xPathT1);
 //                    int l1 = -1;
 //                    while ((l1 = ap.evalXPath()) != -1) {
@@ -217,7 +217,7 @@ public class mergePools {
 //                        }
 //                    }
 //                    // ---------------------------------------------
-//                    String xPathT2 = "/inexltw-assessment/topic/outgoinglinks/anchor[@aoffset='" + bAOffset + "' and @alength='" + bALength + "']/subanchor/tobep";
+//                    String xPathT2 = "/crosslink-assessment/topic/outgoinglinks/anchor[@aoffset='" + bAOffset + "' and @alength='" + bALength + "']/subanchor/tobep";
 //                    ap.selectXPath(xPathT2);
 //                    int l2 = -1;
 //                    while ((l2 = ap.evalXPath()) != -1) {
@@ -440,7 +440,7 @@ public class mergePools {
                 AutoPilot ap = new AutoPilot(vn);
                 XMLModifier xm = new XMLModifier(vn);
 
-                String xPath = "/inexltw-assessment/topic/incominglinks/bep";
+                String xPath = "/crosslink-assessment/topic/incominglinks/bep";
                 ap.selectXPath(xPath);
                 int i = -1;
                 while ((i = ap.evalXPath()) != -1) {
@@ -459,7 +459,7 @@ public class mergePools {
 //                bOffsetVS.add("0");
                 for (String thisBOffset : bOffsetVS) {
                     log("thisBOffset: " + thisBOffset);
-                    String xPathT = "/inexltw-assessment/topic/incominglinks/bep[@boffset='" + thisBOffset + "']/fromanchor";
+                    String xPathT = "/crosslink-assessment/topic/incominglinks/bep[@boffset='" + thisBOffset + "']/fromanchor";
                     ap.selectXPath(xPathT);
                     int k = -1;
                     while ((k = ap.evalXPath()) != -1) {
@@ -557,7 +557,7 @@ public class mergePools {
                 AutoPilot ap = new AutoPilot(vn);
                 XMLModifier xm = new XMLModifier(vn);
 
-                String xPath = "/inexltw-assessment/topic/outgoinglinks/anchor";
+                String xPath = "/crosslink-assessment/topic/outgoinglinks/anchor";
                 ap.selectXPath(xPath);
                 int i = -1;
                 while ((i = ap.evalXPath()) != -1) {
@@ -616,7 +616,7 @@ public class mergePools {
                             fos = new FileOutputStream(fo);
                             AutoPilot ap = new AutoPilot(vn);
                             XMLModifier xm = new XMLModifier(vn);
-                            String xPath = "/inexltw-assessment/topic/outgoinglinks/anchor/subanchor/tobep";
+                            String xPath = "/crosslink-assessment/topic/outgoinglinks/anchor/subanchor/tobep";
                             ap.selectXPath(xPath);
                             int i = -1;
                             while ((i = ap.evalXPath()) != -1) {
@@ -677,7 +677,7 @@ public class mergePools {
                             fos = new FileOutputStream(fo);
                             AutoPilot ap = new AutoPilot(vn);
                             XMLModifier xm = new XMLModifier(vn);
-                            String xPath = "/inexltw-assessment/topic/incominglinks/bep/fromanchor";
+                            String xPath = "/crosslink-assessment/topic/incominglinks/bep/fromanchor";
                             ap.selectXPath(xPath);
                             int i = -1;
                             while ((i = ap.evalXPath()) != -1) {
@@ -1255,7 +1255,7 @@ public class mergePools {
                 AutoPilot ap = new AutoPilot(vn);
                 XMLModifier xm = new XMLModifier(vn);
 
-                String xPath = "/inexltw-assessment/topic/outgoinglinks/anchor";
+                String xPath = "/crosslink-assessment/topic/outgoinglinks/anchor";
                 ap.selectXPath(xPath);
 
 
@@ -1297,7 +1297,7 @@ public class mergePools {
 
                         }
 //                        else if (myOffset == thisOffset) {
-//                            String xPath2 = "/inexltw-assessment/topic/outgoinglinks/anchor/subanchor/tobep";
+//                            String xPath2 = "/crosslink-assessment/topic/outgoinglinks/anchor/subanchor/tobep";
 //                            ap.selectXPath(xPath2);
 //                            int k = -1;
 //                            boolean isINSERT = true;

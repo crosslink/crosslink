@@ -1,5 +1,5 @@
-<!ELEMENT inexltw-submission (details, description, collections, topic+)>
-<!ATTLIST inexltw-submission
+<!ELEMENT crosslink-submission (details, description, collections, topic+)>
+<!ATTLIST crosslink-submission
    participant-id CDATA #REQUIRED
    run-id CDATA #REQUIRED
    task (LTW_A2B|LTAra_A2B|LTAraTW_A2B) #REQUIRED

@@ -48,7 +48,7 @@ public class poolUpdater {
                 AutoPilot ap = new AutoPilot(vn);
                 XMLModifier xm = new XMLModifier(vn);
 
-                String xPath = "/inexltw-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + pAnchorOL[0] + "' and @alength='" + pAnchorOL[1] + "']/subanchor/tobep";
+                String xPath = "/crosslink-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + pAnchorOL[0] + "' and @alength='" + pAnchorOL[1] + "']/subanchor/tobep";
                 ap.selectXPath(xPath);
                 int i = -1;
                 while ((i = ap.evalXPath()) != -1) {
@@ -100,7 +100,7 @@ public class poolUpdater {
                 AutoPilot ap = new AutoPilot(vn);
                 XMLModifier xm = new XMLModifier(vn);
 
-                String xPath1 = "/inexltw-assessment/topic[@file='" + topicID + "']/incominglinks/bep[@boffset='" + pBepOffset + "']";
+                String xPath1 = "/crosslink-assessment/topic[@file='" + topicID + "']/incominglinks/bep[@boffset='" + pBepOffset + "']";
                 ap.selectXPath(xPath1);
                 int k = -1;
                 while ((k = ap.evalXPath()) != -1) {
@@ -142,7 +142,7 @@ public class poolUpdater {
                 AutoPilot ap = new AutoPilot(vn);
                 XMLModifier xm = new XMLModifier(vn);
 
-                String xPath1 = "/inexltw-assessment/topic[@file='" + topicID + "']/incominglinks/bep[@boffset='" + poolBepO + "']";
+                String xPath1 = "/crosslink-assessment/topic[@file='" + topicID + "']/incominglinks/bep[@boffset='" + poolBepO + "']";
                 ap.selectXPath(xPath1);
                 int k = -1;
                 while ((k = ap.evalXPath()) != -1) {
@@ -152,7 +152,7 @@ public class poolUpdater {
                     }
                 }
 
-                String xPath2 = "/inexltw-assessment/topic[@file='" + topicID + "']/incominglinks/bep[@boffset='" + poolBepO + "']/fromanchor";
+                String xPath2 = "/crosslink-assessment/topic[@file='" + topicID + "']/incominglinks/bep[@boffset='" + poolBepO + "']/fromanchor";
                 ap.selectXPath(xPath2);
                 int i = -1;
                 while ((i = ap.evalXPath()) != -1) {
@@ -198,7 +198,7 @@ public class poolUpdater {
                 AutoPilot ap = new AutoPilot(vn);
                 XMLModifier xm = new XMLModifier(vn);
 
-                String xPath = "/inexltw-assessment/topic[@file='" + topicID + "']/incominglinks/bep[@boffset='" + poolBepO + "']/fromanchor[@faoffset='" + targetOffset + "' and @falength='" + targetLength + "']";
+                String xPath = "/crosslink-assessment/topic[@file='" + topicID + "']/incominglinks/bep[@boffset='" + poolBepO + "']/fromanchor[@faoffset='" + targetOffset + "' and @falength='" + targetLength + "']";
                 ap.selectXPath(xPath);
                 int i = -1;
                 while ((i = ap.evalXPath()) != -1) {
@@ -251,7 +251,7 @@ public class poolUpdater {
 
                 log(poolAnchorOL[0] + " - " + poolAnchorOL[1] + " - " + topicID);
                 // Anchor
-                String xPath1 = "/inexltw-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + poolAnchorOL[0] + "' and @alength='" + poolAnchorOL[1] + "']";
+                String xPath1 = "/crosslink-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + poolAnchorOL[0] + "' and @alength='" + poolAnchorOL[1] + "']";
                 ap.selectXPath(xPath1);
                 int k = -1;
                 while ((k = ap.evalXPath()) != -1) {
@@ -293,7 +293,7 @@ public class poolUpdater {
                 XMLModifier xm = new XMLModifier(vn);
 
                 // Anchor
-                String xPath1 = "/inexltw-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + poolAnchorOL[0] + "' and @alength='" + poolAnchorOL[1] + "']";
+                String xPath1 = "/crosslink-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + poolAnchorOL[0] + "' and @alength='" + poolAnchorOL[1] + "']";
                 ap.selectXPath(xPath1);
                 int k = -1;
                 while ((k = ap.evalXPath()) != -1) {
@@ -303,7 +303,7 @@ public class poolUpdater {
                     }
                 }
                 // Anchor -> Bep Links
-                String xPath2 = "/inexltw-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + poolAnchorOL[0] + "' and @alength='" + poolAnchorOL[1] + "']/subanchor/tobep";
+                String xPath2 = "/crosslink-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + poolAnchorOL[0] + "' and @alength='" + poolAnchorOL[1] + "']/subanchor/tobep";
                 ap.selectXPath(xPath2);
                 int i = -1;
                 while ((i = ap.evalXPath()) != -1) {
@@ -347,7 +347,7 @@ public class poolUpdater {
                 AutoPilot ap = new AutoPilot(vn);
                 XMLModifier xm = new XMLModifier(vn);
 
-                String xPath = "/inexltw-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + poolAnchorOL[0] + "' and @alength='" + poolAnchorOL[1] + "']/subanchor/tobep";
+                String xPath = "/crosslink-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + poolAnchorOL[0] + "' and @alength='" + poolAnchorOL[1] + "']/subanchor/tobep";
                 ap.selectXPath(xPath);
                 int i = -1;
                 while ((i = ap.evalXPath()) != -1) {
@@ -399,7 +399,7 @@ public class poolUpdater {
                 AutoPilot ap = new AutoPilot(vn);
                 XMLModifier xm = new XMLModifier(vn);
 
-                String xPath = "/inexltw-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + poolAnchorOL[0] + "' and @alength='" + poolAnchorOL[1] + "']/subanchor/tobep";
+                String xPath = "/crosslink-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + poolAnchorOL[0] + "' and @alength='" + poolAnchorOL[1] + "']/subanchor/tobep";
                 ap.selectXPath(xPath);
                 int i = -1;
                 while ((i = ap.evalXPath()) != -1) {

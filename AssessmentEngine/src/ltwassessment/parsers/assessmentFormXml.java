@@ -49,7 +49,7 @@ public class assessmentFormXml {
      * 3) Te Ara --> to --> Wikipedia
      */
     private String AFXmlFile = "";
-    private String docLocalName = "inexltw-submission";
+    private String docLocalName = "crosslink-submission";
     private String collectionTag = "collection";
     private Hashtable<String, String[]> docTitleTagHT = new Hashtable<String, String[]>();
     private String[] collectionTypes = new String[2];
@@ -277,7 +277,7 @@ public class assessmentFormXml {
                         int event = xsr.getEventType();
                         if (event == XMLStreamConstants.START_ELEMENT) {
                             currLocalName = xsr.getLocalName();
-                            // <inexltw-submission
+                            // <crosslink-submission
                             if (xsr.getLocalName().equals(docLocalName)) {
                                 for (int i = 0; i < xsr.getAttributeCount(); i++) {
                                     String attrName = xsr.getAttributeLocalName(i);
@@ -429,7 +429,7 @@ public class assessmentFormXml {
                         if (event == XMLStreamConstants.START_ELEMENT) {
                             currLocalName = xsr.getLocalName();
                             if (xsr.getLocalName().equals(docLocalName)) {
-                                // <inexltw-submission
+                                // <crosslink-submission
                                 for (int i = 0; i < xsr.getAttributeCount(); i++) {
                                     String attrName = xsr.getAttributeLocalName(i);
                                     String attrValue = xsr.getAttributeValue(i);
@@ -714,7 +714,7 @@ public class assessmentFormXml {
     private void produceAssessmentFormXml(String submissionFile, String[] property, Hashtable<String, Hashtable<String, Hashtable<String, Hashtable<String, Vector<String>>>>> poolResultHT, Hashtable<String, String> topicFileNameHT) {
         try {
             Hashtable<String, String[]> docElmnsHT = new Hashtable<String, String[]>();
-            String docTitleTag = "inexltw-assessment";
+            String docTitleTag = "crosslink-assessment";
             docElmnsHT.put(docTitleTag, new String[]{"participant-id", "run-id", "task"});
             String outgoingLinkTag = "outgoinglinks";
             Hashtable<String, String[]> outgoingElmnsHT = new Hashtable<String, String[]>();

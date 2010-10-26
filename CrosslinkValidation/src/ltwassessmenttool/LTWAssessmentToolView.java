@@ -576,12 +576,12 @@ public class LTWAssessmentToolView extends FrameView {
                 }
                 // -----------------------------------------------------------------
                 String runProperty = "";
-                String endTag = "</inexltw-submission>";
+                String endTag = "</crosslink-submission>";
                 Vector<String> topicBodyV = new Vector<String>();
                 Vector<String> topicFileIDV = new Vector<String>();
                 String thisRunContent = sb.toString();
                 // 1) get run Property
-                String root = "<inexltw-submission";
+                String root = "<crosslink-submission";
                 runProperty = thisRunContent.substring(thisRunContent.indexOf(root), thisRunContent.indexOf("</collections>") + 14);
                 boolean loopFlag = true;
                 int fromCounter = 0;
