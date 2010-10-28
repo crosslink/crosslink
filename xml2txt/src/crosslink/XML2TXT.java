@@ -139,15 +139,19 @@ public class XML2TXT {
 		}			
 		else 
 			xmlfile = args[0];
-		byte[] bytes = converter.convert(xmlfile);
+		byte[] bytes = converter.convertFile(xmlfile);
 		if (length == -1)
 			length = bytes.length;
-		int count = 0;
-		while (count < length) {
-			System.out.print(new String(new byte[]{bytes[count + offset]}));
-			++count;
-		}
-		System.out.print("\n");
+		
+		byte[] result = new byte[length];
+		System.arraycopy(bytes, offset, result, 0, length);
+//		int count = 0;
+//		while (count < length) {
+//			System.out.print(new String(new byte[]{bytes[count + offset]}));
+//			++count;
+//		}
+		//System.out.print("\n");
+		System.out.print(new String(result));
 	}
 
 }
