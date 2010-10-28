@@ -651,10 +651,10 @@ public class poolerManager {
         String afOutgoingTag = forValidationOrAssessment ? "outgoinglinks" : "outgoing";
         String afAnchorTag = "anchor";
         String afSubAnchorTag = "subanchor";
-        String afToBepTag = "tobep";
+        String afToBepTag = "tofile";
         String offsetAttributeName = forValidationOrAssessment ? "aoffset" : "offset";
         String lengthAttributeName = forValidationOrAssessment ? "alength" : "length";
-        String tboffsetAttributeName = forValidationOrAssessment ? "tboffset" : "offset";
+        String tboffsetAttributeName = forValidationOrAssessment ? "tboffset" : "bep_offset";
 
         HashMap<String, Vector<String[]>> anchorBepsHT = new HashMap<String, Vector<String[]>>();
         Document xmlDoc = readingXMLFromFile(afXmlPath);
@@ -686,7 +686,7 @@ public class poolerManager {
                                 NodeList toBepNodeList = subAnchorElmn.getElementsByTagName(afToBepTag);
                                 for (int m = 0; m < toBepNodeList.getLength(); m++) {
                                     Element toBepElmn = (Element) toBepNodeList.item(m);
-                                    String tbOffset = toBepElmn.getAttribute("tboffset");
+                                    String tbOffset = toBepElmn.getAttribute(tboffsetAttributeName);
                                     Node tbXmlFileIDTextNode = toBepElmn.getFirstChild();
                                     String tbFileID = tbXmlFileIDTextNode.getTextContent();
                                     anchorToBEPV.add(new String[]{tbFileID, tbOffset});

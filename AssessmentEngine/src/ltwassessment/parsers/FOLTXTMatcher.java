@@ -321,34 +321,11 @@ public class FOLTXTMatcher {
         myScreenPosition[1] = String.valueOf(0);
         myScreenPosition[2] = String.valueOf(0);
 
-        String source = this.parseXmlText(fullXmlTxt.substring(aOffset + aLength));
-//        List<String> puzzles = new Vector<String>();
-//        source = DeXMLify(source);
-        //String puzzle = source.replaceAll("[\\s]+", " ");
-
-        String puzzle = source.replaceAll("[\\W]", "");
-        int offset = puzzle.length();
-
-		int pos = 0;
-		offset = fullScreenTxt.length() - offset;
-		String part = fullScreenTxt.substring(offset);
-		part = part.replaceAll("[\\W]", "");
-		StringBuffer sb = new StringBuffer(part);
-		
-		while (offset > 0) {
-			//puzzle.equals(part) || 
-			if (sb.length() >= puzzle.length() || puzzle.equals(sb.toString())) {
-//		        myScreenPosition[0] = String.valueOf(aName);
-		        myScreenPosition[1] = String.valueOf(offset - aLength);
-		        myScreenPosition[2] = String.valueOf(offset);
-		        break;
-			}
-			int gap = puzzle.length() - sb.length();
-			part = fullScreenTxt.substring(offset - gap, offset);
-			part = part.replaceAll("[\\W]", "");
-			sb.insert(0, part);
-			offset -= gap;
-		}
+        int offset = Integer.parseInt(screenBepOffsetFinder(fullScreenTxt, fullXmlTxt, Integer.toString(aOffset + aLength)));
+        while (Character.isWhitespace(fullScreenTxt.charAt(offset)))
+        	--offset;
+        myScreenPosition[1] = String.valueOf(offset - aLength);
+        myScreenPosition[2] = String.valueOf(offset);
 //		
 //		myScreenPosition[0] = fullScreenTxt.substring(Integer.valueOf(myScreenPosition[1]), Integer.valueOf(myScreenPosition[1]) + aLength);
 //		{
@@ -370,73 +347,106 @@ public class FOLTXTMatcher {
     // =========================================================================
 
     private String screenBepOffsetFinder(String fullScreenTxt, String fullXmlTxt, String bepOffset) {
-        // thisAnchorSet --> [0]:Offset, [1]:Length, [2]:Anchor_Name
-        // myScreenPosition --> [0]:Anchor_Name, [1]:Offset, [2]:Offset+Length
-        String mySCRBepOffset = "";
-        String xmlBepOffset = bepOffset;
-        String myXmlTxt = fullXmlTxt.substring(0, Integer.valueOf(xmlBepOffset));
-        String myPureXmlTxt = myXmlTxt.replaceAll("\\s", "");
-        int myPureXmlOffset = myPureXmlTxt.length();
-        Vector<String> pureXmlCharV = new Vector<String>();
-        for (int i = 0; i < myPureXmlTxt.length(); i++) {
-            pureXmlCharV.add(myPureXmlTxt.substring(i, i + 1));
-        }
-        Vector<String> screenTxtCharV = new Vector<String>();
-        for (int j = 0; j < fullScreenTxt.length(); j++) {
-            screenTxtCharV.add(fullScreenTxt.substring(j, j + 1));
-        }
-        int scrBepOffset = 0;
-        int lastMatchedPosition = 0;
-        int scrCharCounter = 0;
-        for (int i = 0; i < pureXmlCharV.size(); i++) {
-            String thisXmlChar = pureXmlCharV.elementAt(i);
-            // -------------------------------------------------------------
-            boolean isEntity = false;
-            boolean isSpecial = false;
-            int entityLength = 0;
-            if (thisXmlChar.equals("&")) {
-                String myEntity = "";
-                for (int j = i; j < i + 10; j++) {
-                    entityLength++;
-                    myEntity = myEntity + pureXmlCharV.elementAt(j);
-                    if (pureXmlCharV.elementAt(j).equals(";")) {
-                        isEntity = true;
-                        break;
-                    }
-                }
-                if (isEntity) {
-                    if (entityExpressV.contains(myEntity) || entityNumExpressV.contains(myEntity)) {
-                        isSpecial = true;
-                    } else {
-                        isSpecial = true;
-                    }
-                } else {
-                    isSpecial = false;
-                }
-            }
-            // -------------------------------------------------------------
-            if (isSpecial) {
-                i = i + (entityLength - 1);
-                if (i - (entityLength - 1) <= myPureXmlOffset && myPureXmlOffset <= i) {
-                    scrBepOffset = lastMatchedPosition + 1;
-                }
-                scrCharCounter++;
-            } else {
-                boolean notMatched = true;
-                while (notMatched) {
-                    String scrChar = screenTxtCharV.elementAt(scrCharCounter);
-                    if (thisXmlChar.equals(scrChar)) {
-                        notMatched = false;
-                        lastMatchedPosition = scrCharCounter;
-                    }
-                    scrCharCounter++;
-                }
-            }
-        }
-        scrBepOffset = scrCharCounter;
-        mySCRBepOffset = String.valueOf(scrBepOffset);
-        return mySCRBepOffset;
+        String source = this.parseXmlText(fullXmlTxt.substring(Integer.parseInt(bepOffset)));
+//      List<String> puzzles = new Vector<String>();
+//      source = DeXMLify(source);
+      //String puzzle = source.replaceAll("[\\W]+", " ");
+
+		String puzzle = source.replaceAll("[\\s]+", "");
+		int offset = puzzle.length();
+
+		int pos = 0;
+		offset = fullScreenTxt.length() - offset;
+		String part = fullScreenTxt.substring(offset);
+		part = part.replaceAll("[\\s]+", "");
+		StringBuffer sb = new StringBuffer(part);
+		
+		int sb_len = sb.length();
+		int puzzle_len = puzzle.length();
+		int gap = 0;
+		while (offset > 0) {
+			//puzzle.equals(part) || 
+			sb_len = sb.length();
+			puzzle_len = puzzle.length();
+			if (sb_len >= puzzle_len || puzzle.equals(sb.toString())) 
+		        break;
+		
+			gap = puzzle.length() - sb.length();
+			part = fullScreenTxt.substring(offset - gap, offset);
+			part = part.replaceAll("[\\s]+", "");
+			sb.insert(0, part);
+			offset -= gap;
+		}
+		return String.valueOf(offset);
     }
+//    private String screenBepOffsetFinder(String fullScreenTxt, String fullXmlTxt, String bepOffset) {
+//        // thisAnchorSet --> [0]:Offset, [1]:Length, [2]:Anchor_Name
+//        // myScreenPosition --> [0]:Anchor_Name, [1]:Offset, [2]:Offset+Length
+//        String mySCRBepOffset = "0";
+//        String xmlBepOffset = bepOffset;
+//        String myXmlTxt = fullXmlTxt.substring(0, Integer.valueOf(xmlBepOffset));
+//        String myPureXmlTxt = myXmlTxt.replaceAll("\\s", "");
+//        int myPureXmlOffset = myPureXmlTxt.length();
+//        Vector<String> pureXmlCharV = new Vector<String>();
+//        for (int i = 0; i < myPureXmlTxt.length(); i++) {
+//            pureXmlCharV.add(myPureXmlTxt.substring(i, i + 1));
+//        }
+//        Vector<String> screenTxtCharV = new Vector<String>();
+//        for (int j = 0; j < fullScreenTxt.length(); j++) {
+//            screenTxtCharV.add(fullScreenTxt.substring(j, j + 1));
+//        }
+//        int scrBepOffset = 0;
+//        int lastMatchedPosition = 0;
+//        int scrCharCounter = 0;
+//        for (int i = 0; i < pureXmlCharV.size(); i++) {
+//            String thisXmlChar = pureXmlCharV.elementAt(i);
+//            // -------------------------------------------------------------
+//            boolean isEntity = false;
+//            boolean isSpecial = false;
+//            int entityLength = 0;
+//            if (thisXmlChar.equals("&")) {
+//                String myEntity = "";
+//                for (int j = i; j < i + 10; j++) {
+//                    entityLength++;
+//                    myEntity = myEntity + pureXmlCharV.elementAt(j);
+//                    if (pureXmlCharV.elementAt(j).equals(";")) {
+//                        isEntity = true;
+//                        break;
+//                    }
+//                }
+//                if (isEntity) {
+//                    if (entityExpressV.contains(myEntity) || entityNumExpressV.contains(myEntity)) {
+//                        isSpecial = true;
+//                    } else {
+//                        isSpecial = true;
+//                    }
+//                } else {
+//                    isSpecial = false;
+//                }
+//            }
+//            // -------------------------------------------------------------
+//            if (isSpecial) {
+//                i = i + (entityLength - 1);
+//                if (i - (entityLength - 1) <= myPureXmlOffset && myPureXmlOffset <= i) {
+//                    scrBepOffset = lastMatchedPosition + 1;
+//                }
+//                scrCharCounter++;
+//            } else {
+//                boolean notMatched = true;
+//                while (notMatched) {
+//                    String scrChar = screenTxtCharV.elementAt(scrCharCounter);
+//                    if (thisXmlChar.equals(scrChar)) {
+//                        notMatched = false;
+//                        lastMatchedPosition = scrCharCounter;
+//                    }
+//                    scrCharCounter++;
+//                }
+//            }
+//        }
+//        scrBepOffset = scrCharCounter;
+//        mySCRBepOffset = String.valueOf(scrBepOffset);
+//        return mySCRBepOffset;
+//    }
     // =========================================================================
 
     private void getCurrFullXmlText() {
@@ -576,7 +586,7 @@ public class FOLTXTMatcher {
     }
 
     public String getScreenBepOffset(JTextPane linkTxtPane, String bepFileID, String xmlBepOffset, boolean isWikipedia) {
-        String scrBepOffset = "";
+        String scrBepOffset = "0";
         String fullScreenText = "";
         String fullXmlText = "";
         try {
@@ -816,7 +826,7 @@ public class FOLTXTMatcher {
 
     public String ConvertXMLtoTXT(String inname, String outname, boolean isWikipedia) {
 //        String myPureTxt = convertXMLFileToTxt(inname, outname, isWikipedia);
-    	String myPureTxt = new String(crosslink.XML2TXT.getInstance().convert(inname));
+    	String myPureTxt = new String(crosslink.XML2TXT.getInstance().convertFile(inname));
         // write the text to a new file
         try {
 			BufferedWriter out = new BufferedWriter(new FileWriter(outname));

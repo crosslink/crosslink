@@ -1013,7 +1013,7 @@ public class LTWAssessmentToolView extends FrameView {
         // ---------------------------------------------------------------------
         // Get Last Indices
         String[] lastTABIndices = rscManager.getTABNavigationIndex();
-        String lastRowIndex = lastTABIndices[0];
+        String lastRowIndex = lastTABIndices[0] == null ? "0" : lastTABIndices[0];
         String[] lastTABIndicesSA = lastTABIndices[1].split(" , ");
         String lastTopicIDIndex = lastTABIndicesSA[0];
         // ---------------------------------------------------------------------
@@ -1075,12 +1075,15 @@ public class LTWAssessmentToolView extends FrameView {
         // ---------------------------------------------------------------------
         // According to TAB-Navigation-Indices
         // TODO: populate the "Last" BEP Link & Highlight Table Row
-        String[] thisRowValuesSA = paneTableIndexing.getTableValuesByRowIndexWOText().elementAt(Integer.valueOf(lastRowIndex));
-        int updateLevel = 2;
-        if (isTAB) {
-            this.myTABTxtPaneManager.updateTXTPanes(this.topicTextPane, this.linkTextPane, this.paneTable, thisRowValuesSA, updateLevel);
-        } else {
-            this.myTBATxtPaneManager.updateTXTPanes(this.topicTextPane, this.linkTextPane, this.paneTable, thisRowValuesSA, updateLevel);
+        Vector<String[]> paneTableRowIndexWOText = paneTableIndexing.getTableValuesByRowIndexWOText();
+        if (paneTableRowIndexWOText.size() > 0) {
+	        String[] thisRowValuesSA = paneTableRowIndexWOText.elementAt(Integer.valueOf(lastRowIndex));
+	        int updateLevel = 2;
+	        if (isTAB) {
+	            this.myTABTxtPaneManager.updateTXTPanes(this.topicTextPane, this.linkTextPane, this.paneTable, thisRowValuesSA, updateLevel);
+	        } else {
+	            this.myTBATxtPaneManager.updateTXTPanes(this.topicTextPane, this.linkTextPane, this.paneTable, thisRowValuesSA, updateLevel);
+	        }
         }
         // ---------------------------------------------------------------------
         paneTable.setDefaultRenderer(Object.class, new AttributiveCellRenderer(Integer.valueOf(lastRowIndex), 3, isTAB));

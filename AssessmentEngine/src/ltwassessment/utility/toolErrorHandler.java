@@ -10,11 +10,11 @@ import org.xml.sax.SAXParseException;
 public class toolErrorHandler implements ErrorHandler {
 
     public void warning(SAXParseException ex) throws SAXException {
-        System.err.println("err:" + ex.getMessage());
+        System.err.println("Warning:" + ex.getMessage());
     }
 
     public void error(SAXParseException ex) throws SAXException {
-        System.err.println("err:" + ex.getMessage());
+        System.err.println("Error:" + ex.getMessage());
     }
 
     public void fatalError(SAXParseException ex) throws SAXException {
