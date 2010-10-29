@@ -1099,6 +1099,8 @@ public class LTWAssessmentToolView extends FrameView {
             createTopicTextPane(xmlFilePath);
         } else {
             this.topicTextPane.setContentType(textContentType);
+            this.topicTextPane.setFont(resourceMap.getFont("topicTextPane.font"));
+            this.topicTextPane.putClientProperty(topicTextPane.HONOR_DISPLAY_PROPERTIES, Boolean.TRUE);
             this.topicTextPane.setText("<b>The topic file is missing or specified wrongly!!!</b>");
         }
     }
@@ -1115,6 +1117,8 @@ public class LTWAssessmentToolView extends FrameView {
 //        try {
         Xml2Html xmlParser = new Xml2Html(xmlFilePath, isTopicWikipedia);
         this.topicTextPane.setContentType(textContentType);
+        this.topicTextPane.setFont(resourceMap.getFont("topicTextPane.font"));
+        this.topicTextPane.putClientProperty(topicTextPane.HONOR_DISPLAY_PROPERTIES, Boolean.TRUE);
         this.topicTextPane.setText(xmlParser.getHtmlContent().toString());
 //            java.net.URL htmlFileURL = new File(xmlParser.getHtmlPath().toString()).toURI().toURL();
 //            this.topicTextPane.setPage(htmlFileURL);

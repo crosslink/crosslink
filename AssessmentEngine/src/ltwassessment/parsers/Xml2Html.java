@@ -236,8 +236,8 @@ public class Xml2Html {
                 break;
             case Node.TEXT_NODE:
             	String textContent = node.getNodeValue();
-            	if (textContent.startsWith("\nhttp://www.nationmaster.com"))
-            		System.out.println("I got you");
+//            	if (textContent.startsWith("\nhttp://www.nationmaster.com"))
+//            		System.out.println("I got you");
                 htmlSB.append(textContent);
                 break;
         }
