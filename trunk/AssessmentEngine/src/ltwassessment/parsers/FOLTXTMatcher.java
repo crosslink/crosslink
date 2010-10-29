@@ -321,11 +321,15 @@ public class FOLTXTMatcher {
         myScreenPosition[1] = String.valueOf(0);
         myScreenPosition[2] = String.valueOf(0);
 
-        int offset = Integer.parseInt(screenBepOffsetFinder(fullScreenTxt, fullXmlTxt, Integer.toString(aOffset + aLength)));
-        while (Character.isWhitespace(fullScreenTxt.charAt(offset)))
-        	--offset;
-        myScreenPosition[1] = String.valueOf(offset - aLength);
-        myScreenPosition[2] = String.valueOf(offset);
+        int offset = Integer.parseInt(screenBepOffsetFinder(fullScreenTxt, fullXmlTxt, Integer.toString(aOffset)));
+//        if (Character.isWhitespace(fullScreenTxt.charAt(offset))) {
+//	        while (Character.isWhitespace(fullScreenTxt.charAt(offset)))
+//	        	--offset;
+//	        ++offset;
+//        }
+        myScreenPosition[1] = String.valueOf(offset);
+        myScreenPosition[2] = String.valueOf(offset + aLength);
+        myScreenPosition[0] = fullScreenTxt.substring(offset, offset + aLength);
 //		
 //		myScreenPosition[0] = fullScreenTxt.substring(Integer.valueOf(myScreenPosition[1]), Integer.valueOf(myScreenPosition[1]) + aLength);
 //		{
@@ -352,18 +356,19 @@ public class FOLTXTMatcher {
 //      source = DeXMLify(source);
       //String puzzle = source.replaceAll("[\\W]+", " ");
 
-		String puzzle = source.replaceAll("[\\s]+", "");
+		String puzzle = source.replaceAll("\\s+", "");
 		int offset = puzzle.length();
 
 		int pos = 0;
 		offset = fullScreenTxt.length() - offset;
 		String part = fullScreenTxt.substring(offset);
-		part = part.replaceAll("[\\s]+", "");
+		part = part.replaceAll("\\s+", "");
 		StringBuffer sb = new StringBuffer(part);
 		
 		int sb_len = sb.length();
 		int puzzle_len = puzzle.length();
 		int gap = 0;
+		String replace_part = null;
 		while (offset > 0) {
 			//puzzle.equals(part) || 
 			sb_len = sb.length();
@@ -372,10 +377,10 @@ public class FOLTXTMatcher {
 		        break;
 		
 			gap = puzzle.length() - sb.length();
-			part = fullScreenTxt.substring(offset - gap, offset);
-			part = part.replaceAll("[\\s]+", "");
-			sb.insert(0, part);
 			offset -= gap;
+			part = fullScreenTxt.substring(offset, offset + gap);
+			replace_part = part.replaceAll("\\s+", "");
+			sb.insert(0, replace_part);
 		}
 		return String.valueOf(offset);
     }
