@@ -55,9 +55,8 @@ public class FOLTXTMatcher {
     private String tearaTypeName = "";
     private boolean isTopicWikipedia = false;
     private boolean isLinkWikipedia = false;
-    private Document dummyXmlDoc = null;
-    private Element dummyElem = null;
-
+    private JTextPane dummyPane = new JTextPane();
+    
     private static void log(Object text) {
         System.out.println(text);
     }
@@ -83,14 +82,8 @@ public class FOLTXTMatcher {
         } else if (this.tearaTypeName.equals(myRSCManager.getLinkCollType())) {
             this.isLinkWikipedia = false;
         }
-
-        try {
-			dummyXmlDoc = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();
-		} catch (ParserConfigurationException e) {
-			e.printStackTrace();
-		}
-        dummyElem = dummyXmlDoc.createElement("root");
-        //this.dummyTextPane.setContentType(AppResource.getInstance().getResourceMap().getString("html.content.type"));
+        
+        dummyPane.setContentType("text/html");
         
         populateEntityV();
         getCurrFullXmlText();
@@ -351,6 +344,8 @@ public class FOLTXTMatcher {
     // =========================================================================
 
     private String screenBepOffsetFinder(String fullScreenTxt, String fullXmlTxt, String bepOffset) {
+    	if (bepOffset.length() == 0)
+    		bepOffset = "0";
         String source = this.parseXmlText(fullXmlTxt.substring(Integer.parseInt(bepOffset)));
 //      List<String> puzzles = new Vector<String>();
 //      source = DeXMLify(source);
@@ -807,14 +802,9 @@ public class FOLTXTMatcher {
             Document tempDoc = parser.getDocument();
 
             out = getNodeText(tempDoc, "article");
-//            //Elmen root = doc.getElementsByTagName("article"); //.getFirstChild();
-//            NodeList nodes = doc.getElementsByTagName("article"); //root.getChildNodes();
-//            for (int i = 0; i < nodes.getLength(); i++) {
-//                Node node = nodes.item(i);
-//                if (node.getNodeType() == Node.TEXT_NODE) {
-//            		out += node.getNodeValue();           	
-//                }         	
-//            }
+            String content = "<html><body>" + out + "</body></html>";
+            dummyPane.setText(content);
+            out = dummyPane.getDocument().getText(0, dummyPane.getDocument().getLength());
 
         } catch (SAXException ex) {
         	ex.printStackTrace();
