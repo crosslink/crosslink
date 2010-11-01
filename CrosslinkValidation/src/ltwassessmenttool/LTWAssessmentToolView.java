@@ -3,6 +3,7 @@
  */
 package ltwassessmenttool;
 
+import java.awt.Font;
 import java.awt.Insets;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -276,13 +277,13 @@ public class LTWAssessmentToolView extends FrameView {
         topicTextScrollPane.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         topicTextScrollPane.setMaximumSize(new java.awt.Dimension(1600, 1600));
         topicTextScrollPane.setName("topicTextScrollPane"); // NOI18N
-        topicTextScrollPane.setPreferredSize(new java.awt.Dimension(545, 644));
+        topicTextScrollPane.setPreferredSize(new java.awt.Dimension(500, 644));
 
         topicTextPane.setEditable(false);
         topicTextPane.setDragEnabled(true);
         topicTextPane.setMaximumSize(new java.awt.Dimension(1600, 1600));
         topicTextPane.setName("topicTextPane"); // NOI18N
-        topicTextPane.setPreferredSize(new java.awt.Dimension(545, 644));
+        topicTextPane.setPreferredSize(new java.awt.Dimension(500, 644));
         topicTextScrollPane.setViewportView(topicTextPane);
 
         jSplitPane1.setLeftComponent(topicTextScrollPane);
@@ -292,11 +293,12 @@ public class LTWAssessmentToolView extends FrameView {
         rightSplitPane.setName("rightSplitPane"); // NOI18N
         rightSplitPane.setOneTouchExpandable(true);
 
-        linkTextScrollPane.setMinimumSize(new java.awt.Dimension(525, 444));
+        linkTextScrollPane.setMinimumSize(new java.awt.Dimension(20, 20));
         linkTextScrollPane.setName("linkTextScrollPane"); // NOI18N
-        linkTextScrollPane.setPreferredSize(new java.awt.Dimension(525, 444));
+        linkTextScrollPane.setPreferredSize(new java.awt.Dimension(525, 400));
 
         linkTextPane.setEditable(false);
+        linkTextPane.setFont(resourceMap.getFont("linkTextPane.font")); // NOI18N
         linkTextPane.setAutoscrolls(true);
         linkTextPane.setMinimumSize(new java.awt.Dimension(525, 444));
         linkTextPane.setName("linkTextPane"); // NOI18N
@@ -306,10 +308,10 @@ public class LTWAssessmentToolView extends FrameView {
         rightSplitPane.setTopComponent(linkTextScrollPane);
 
         srcScrollPane.setBackground(resourceMap.getColor("srcScrollPane.background")); // NOI18N
-        srcScrollPane.setMaximumSize(new java.awt.Dimension(60, 244));
-        srcScrollPane.setMinimumSize(new java.awt.Dimension(20, 244));
+        srcScrollPane.setMaximumSize(new java.awt.Dimension(167, 167));
+        srcScrollPane.setMinimumSize(new java.awt.Dimension(20, 20));
         srcScrollPane.setName("srcScrollPane"); // NOI18N
-        srcScrollPane.setPreferredSize(new java.awt.Dimension(20, 244));
+        srcScrollPane.setPreferredSize(new java.awt.Dimension(125, 244));
 
         paneTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -1099,8 +1101,6 @@ public class LTWAssessmentToolView extends FrameView {
             createTopicTextPane(xmlFilePath);
         } else {
             this.topicTextPane.setContentType(textContentType);
-            this.topicTextPane.setFont(resourceMap.getFont("topicTextPane.font"));
-            this.topicTextPane.putClientProperty(topicTextPane.HONOR_DISPLAY_PROPERTIES, Boolean.TRUE);
             this.topicTextPane.setText("<b>The topic file is missing or specified wrongly!!!</b>");
         }
     }
@@ -1117,8 +1117,9 @@ public class LTWAssessmentToolView extends FrameView {
 //        try {
         Xml2Html xmlParser = new Xml2Html(xmlFilePath, isTopicWikipedia);
         this.topicTextPane.setContentType(textContentType);
-        this.topicTextPane.setFont(resourceMap.getFont("topicTextPane.font"));
-        this.topicTextPane.putClientProperty(topicTextPane.HONOR_DISPLAY_PROPERTIES, Boolean.TRUE);
+////        this.topicTextPane.setFont(resourceMap.getFont("topicTextPane.font"));
+//        this.topicTextPane.setFont(new Font("WenQuanYi Zen Hei", Font.PLAIN, 10)/*resourceMap.getFont("topicTextPane.font")*/);
+//        this.topicTextPane.putClientProperty(topicTextPane.HONOR_DISPLAY_PROPERTIES, Boolean.TRUE);
         this.topicTextPane.setText(xmlParser.getHtmlContent().toString());
 //            java.net.URL htmlFileURL = new File(xmlParser.getHtmlPath().toString()).toURI().toURL();
 //            this.topicTextPane.setPage(htmlFileURL);

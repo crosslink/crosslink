@@ -5,7 +5,8 @@ import org.jdesktop.application.Application;
 public class AppResource {
 	
 	public static AppResource instance = null;
-    public static boolean forValidationOrAssessment = false; 
+    public static boolean forValidationOrAssessment = false;
+    public static String targetLang = "en"; // zh, ja, ko
     
 	private org.jdesktop.application.ResourceMap resourceMap = null;
 
