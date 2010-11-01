@@ -139,6 +139,7 @@
                     <Component class="javax.swing.JTextPane" name="linkTextPane">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
+                        <Property name="font" type="java.awt.Font" resourceKey="linkTextPane.font"/>
                         <Property name="autoscrolls" type="boolean" value="true"/>
                         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                           <Dimension value="[525, 444]"/>
