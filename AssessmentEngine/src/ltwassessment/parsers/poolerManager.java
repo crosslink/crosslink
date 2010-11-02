@@ -613,7 +613,7 @@ public class poolerManager {
             if (subPath.equals("FileNotFound.xml")) {
                 xmlFilePath = fileNotFoundXmlPath;
             } else {
-                xmlFilePath = resourcesManager.getInstance().getWikipediaCollectionFolder() + File.separator + "pages" + File.separator + subPath;
+                xmlFilePath = resourcesManager.getInstance().getWikipediaCollectionFolder() + subPath;
             }
 //        } else {
 //            String subPath = rscManager.getTeAraFilePathByName(xmlFileID + ".xml");
@@ -867,6 +867,14 @@ public class poolerManager {
                         anchorsVbyTopic.add(thisAnchorProperty);
                         thisAnchorSet = thisAnchorProperty[0] + "_" + thisAnchorProperty[1];
                         subAnchorsToBepsHT = new Hashtable<String, Vector<String[]>>();
+                        
+                        if (!AppResource.forValidationOrAssessment) {
+                            String[] thisSubAnchorProperty = new String[3];
+                            System.arraycopy(thisAnchorProperty, 0, thisSubAnchorProperty, 0, 3);
+                            subAnchorsVbyTopic.add(thisSubAnchorProperty);
+                            thisSubAnchorSet = thisSubAnchorProperty[0] + "_" + thisSubAnchorProperty[1];
+                            toBepsVbySubAnchor = new Vector<String[]>();                        	
+                        }
                     } else if (tagName.equals("subanchor")) {
                         String[] thisSubAnchorProperty = new String[3];
                         for (int i = 0; i < xsr.getAttributeCount(); i++) {
@@ -882,12 +890,16 @@ public class poolerManager {
                         subAnchorsVbyTopic.add(thisSubAnchorProperty);
                         thisSubAnchorSet = thisSubAnchorProperty[0] + "_" + thisSubAnchorProperty[1];
                         toBepsVbySubAnchor = new Vector<String[]>();
-                    } else if (tagName.equals(SubmissionFormat.getAftobeptag())) {
-                        String[] thisToBepProperty = new String[2];
+                    } else if (tagName.equals(SubmissionFormat.getAftobeptag())) { // tobep , now tofile
+                        String[] thisToBepProperty = new String[4];
                         for (int i = 0; i < xsr.getAttributeCount(); i++) {
-                            if (xsr.getAttributeLocalName(i).equals("tboffset") || xsr.getAttributeLocalName(i).equals("offset")) {
+                            if (xsr.getAttributeLocalName(i).equals(SubmissionFormat.getTboffsetAttributeName())) {
                                 thisToBepProperty[0] = xsr.getAttributeValue(i);
                             }
+                            else if (xsr.getAttributeLocalName(i).equals("lang"))
+                            	thisToBepProperty[2] = xsr.getAttributeValue(i);
+                        	else if (xsr.getAttributeLocalName(i).equals("title"))
+                        		thisToBepProperty[3] = xsr.getAttributeValue(i);
                         }
                         xsr.next();
                         if (xsr.isCharacters()) {
@@ -940,6 +952,9 @@ public class poolerManager {
                         isOutgoing = false;
                     } else if (tagName.equals("anchor")) {
                         anchorsHT.put(thisAnchorSet, subAnchorsToBepsHT);
+                        
+                        if (!AppResource.forValidationOrAssessment)
+                        	subAnchorsToBepsHT.put(thisSubAnchorSet, toBepsVbySubAnchor);
                     } else if (tagName.equals("subanchor")) {
                         subAnchorsToBepsHT.put(thisSubAnchorSet, toBepsVbySubAnchor);
                     } else if (tagName.equals("incominglinks")) {

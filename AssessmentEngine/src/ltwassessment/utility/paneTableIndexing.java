@@ -411,14 +411,20 @@ public class paneTableIndexing {
                             String[] myTABLine = new String[4];
                             myTABLine[0] = getTopicIDNamePair(thisTopic);
                             myTABLine[1] = getAnchorOLNamePair(thisTopic, thisAnchor);
-                            myTABLine[2] = getAnchorOLNamePair(thisTopic, thisSubAnchor);
+                            if (AppResource.forValidationOrAssessment)
+                            	myTABLine[2] = getAnchorOLNamePair(thisTopic, thisSubAnchor);
+                            else
+                            	myTABLine[2] = bepSA[3];
                             myTABLine[3] = getLinkBepIdONamePair(bepSet);
                             myTableSetV.add(myTABLine);
                             // Without Text
                             String[] myTABWOTextLine = new String[4];
                             myTABWOTextLine[0] = thisTopic;
                             myTABWOTextLine[1] = thisAnchor;
-                            myTABWOTextLine[2] = thisSubAnchor;
+                            if (AppResource.forValidationOrAssessment)
+                            	 myTABWOTextLine[2] = thisSubAnchor;
+                            else
+                            	 myTABWOTextLine[2] = bepSA[3];
                             myTABWOTextLine[3] = bepSet;
                             paneTableRowIndexWOText.add(myTABWOTextLine);
                         }
@@ -599,19 +605,20 @@ public class paneTableIndexing {
                 Vector<String[]> anchorsV = topicAnchorsHT.get(keyObj);
                 for (String[] thisAnchorSA : anchorsV) {
                     String OLSet = thisAnchorSA[0].trim() + "_" + thisAnchorSA[1].trim();
-                    if (OLSet.equals(anchorOL)) {
-                        return myPair = anchorOL + " : " + thisAnchorSA[2].trim();
-                    } else {
-                        String[] anchorOLSA = anchorOL.split("_");
-                        int sPoint = Integer.valueOf(thisAnchorSA[0].trim());
-                        int ePoint = Integer.valueOf(thisAnchorSA[0].trim()) + Integer.valueOf(thisAnchorSA[1].trim());
-                        int thisPoint = Integer.valueOf(anchorOLSA[0].trim());
-                        int thisLength = Integer.valueOf(anchorOLSA[1].trim());
-                        if (thisPoint >= sPoint && thisPoint <= ePoint) {
-                            String anchorName = thisAnchorSA[2].trim().substring(thisPoint - sPoint, (thisPoint - sPoint) + thisLength);
-                            return myPair = anchorOL + " : " + anchorName;
-                        }
-                    }
+//                    if (OLSet.equals(anchorOL)) {
+//                        return myPair = anchorOL + " : " + thisAnchorSA[2].trim();
+//                    } else {
+//                        String[] anchorOLSA = anchorOL.split("_");
+//                        int sPoint = Integer.valueOf(thisAnchorSA[0].trim());
+//                        int ePoint = Integer.valueOf(thisAnchorSA[0].trim()) + Integer.valueOf(thisAnchorSA[1].trim());
+//                        int thisPoint = Integer.valueOf(anchorOLSA[0].trim());
+//                        int thisLength = Integer.valueOf(anchorOLSA[1].trim());
+//                        if (thisPoint >= sPoint && thisPoint <= ePoint) {
+//                            String anchorName = thisAnchorSA[2].trim().substring(thisPoint - sPoint, (thisPoint - sPoint) + thisLength);
+//                            return myPair = anchorOL + " : " + anchorName;
+//                        }
+//                    }
+                    return myPair = anchorOL + " : " + thisAnchorSA[2].trim();
                 }
             }
         }
