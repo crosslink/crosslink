@@ -597,7 +597,7 @@ public class FOLTXTMatcher {
                 if (subPath.equals("FileNotFound.xml")) {
                     bepFilePath = "resources" + File.separator + "Tool_Resources" + File.separator + subPath;
                 } else {
-                    bepFilePath = myRSCManager.getWikipediaCollectionFolder() + File.separator + "pages" + File.separator + subPath;
+                    bepFilePath = myRSCManager.getWikipediaCollectionFolder() + subPath;
                 }
 //                bepFilePath = myRSCManager.getWikipediaCollectionFolder() + myRSCManager.getWikipediaFilePathByName(bepFileID + ".xml");
 //            } else {
