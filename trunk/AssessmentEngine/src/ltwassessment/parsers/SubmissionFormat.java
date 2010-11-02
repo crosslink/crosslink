@@ -1,5 +1,7 @@
 package ltwassessment.parsers;
 
+import ltwassessment.AppResource;
+
 public class SubmissionFormat {
 	public static final String OUTGOING_TAG_NAME = "outgoing";
 	public static final String OUTGOINGLINKS_TAG_NAME = "outgoinglinks";
@@ -20,8 +22,12 @@ public class SubmissionFormat {
 
 	}
 	
+	public static String getRootTag() {
+		return AppResource.forValidationOrAssessment ? "crosslink-assessment" : "crosslink-submission";
+	}
+	
 	public static String getOutgoingTag() {
-		return OUTGOING_TAG_NAME;
+		return AppResource.forValidationOrAssessment ? "outgoinglinks" : "outgoing";
 	}
 	
 	public static String getOutgoingLinksTag() {
@@ -48,16 +54,16 @@ public class SubmissionFormat {
 		return afToBepTag;
 	}
 
-	public static String getOffsetattributename() {
-		return offsetAttributeName;
+	public static String getOffsetAttributeName() {
+		return AppResource.forValidationOrAssessment ? "aoffset" : "offset";
 	}
 
-	public static String getLengthattributename() {
-		return lengthAttributeName;
+	public static String getLengthAttributeName() {
+		return AppResource.forValidationOrAssessment ? "alength" : "length";
 	}
 
-	public static String getTboffsetattributename() {
-		return tboffsetAttributeName;
+	public static String getTboffsetAttributeName() {
+		return AppResource.forValidationOrAssessment ? "tboffset" : "bep_offset";
 	}
 
 	public SubmissionFormat getInstance() {

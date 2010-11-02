@@ -882,7 +882,7 @@ public class poolerManager {
                         subAnchorsVbyTopic.add(thisSubAnchorProperty);
                         thisSubAnchorSet = thisSubAnchorProperty[0] + "_" + thisSubAnchorProperty[1];
                         toBepsVbySubAnchor = new Vector<String[]>();
-                    } else if (tagName.equals("tobep")) {
+                    } else if (tagName.equals(SubmissionFormat.getAftobeptag())) {
                         String[] thisToBepProperty = new String[2];
                         for (int i = 0; i < xsr.getAttributeCount(); i++) {
                             if (xsr.getAttributeLocalName(i).equals("tboffset") || xsr.getAttributeLocalName(i).equals("offset")) {

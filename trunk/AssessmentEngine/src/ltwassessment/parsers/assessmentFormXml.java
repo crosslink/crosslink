@@ -226,8 +226,8 @@ public class assessmentFormXml {
     String outgoingTag = "outgoing";
     String anchorTag = "anchor";
     String[] anchorAttrs = new String[]{"name", "offset", "length"};
-    String toBepTag = "tobep";
-    String[] toBepAttrs = new String[]{"offset"};
+    String toBepTag = SubmissionFormat.getAftobeptag();
+    String[] toBepAttrs = new String[]{"bep_offset", "lang", "title"};
     String incomingTag = "incoming";
     String bepTag = "bep";
     String[] bepAttrs = new String[]{"offset"};
@@ -718,7 +718,7 @@ public class assessmentFormXml {
             docElmnsHT.put(docTitleTag, new String[]{"participant-id", "run-id", "task"});
             String outgoingLinkTag = "outgoinglinks";
             Hashtable<String, String[]> outgoingElmnsHT = new Hashtable<String, String[]>();
-            outgoingElmnsHT.put(outgoingLinkTag, new String[]{"anchor", "subanchor", "tobep"});
+            outgoingElmnsHT.put(outgoingLinkTag, new String[]{"anchor", "subanchor", SubmissionFormat.getAftobeptag()});
             Hashtable<String, String[]> anchorElmnsHT = new Hashtable<String, String[]>();
             anchorElmnsHT.put(outgoingElmnsHT.get(outgoingLinkTag)[0], new String[]{"arel", "aname", "aoffset", "alength"});
             Hashtable<String, String[]> subanchorElmnsHT = new Hashtable<String, String[]>();
