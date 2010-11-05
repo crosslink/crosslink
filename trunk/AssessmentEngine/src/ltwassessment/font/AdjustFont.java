@@ -10,6 +10,7 @@ import javax.swing.JTextPane;
 import ltwassessment.AppResource;
 
 public class AdjustFont {
+	private static Font zhFontOrigin = null;
 	private static Font zhFont = null;
 	private static final String zhFontFile = "wqy-zenhei.ttc";
 	private static AdjustFont instance = null;
@@ -17,8 +18,10 @@ public class AdjustFont {
 	
 	public AdjustFont() {
 		try {
-			if (zhFont == null)
-				zhFont = java.awt.Font.createFont(java.awt.Font.TRUETYPE_FONT, getClass().getResourceAsStream(zhFontFile));
+			if (zhFont == null) {
+				zhFontOrigin = java.awt.Font.createFont(java.awt.Font.TRUETYPE_FONT, getClass().getResourceAsStream(zhFontFile));
+				zhFont = zhFontOrigin.deriveFont(Font.PLAIN, 13);
+			}
 		} catch (FontFormatException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -32,7 +35,7 @@ public class AdjustFont {
 		return instance;
 	}
 
-	static void setFont(JComponent jCom) {
+	public static void setFont(JComponent jCom) {
 		if (AppResource.targetLang.equals("zh"))
 			jCom.setFont(zhFont);
 		//else (AppResource.targetLang.equals("zh"))

@@ -49,6 +49,7 @@ import javax.swing.text.StyleConstants;
 import javax.swing.text.StyledDocument;
 
 import ltwassessment.AppResource;
+import ltwassessment.font.AdjustFont;
 import ltwassessment.parsers.FOLTXTMatcher;
 import ltwassessment.parsers.Xml2Html;
 import ltwassessment.parsers.assessmentFormXml;
@@ -765,6 +766,11 @@ public class LTWAssessmentToolView extends FrameView {
                     // TODO: update to against schema or DTD
                     // 2) convert submission XML into Pool XML for validation
                     // TODO: We kept this form just because it already have been done.
+                	
+                	// set UI font
+                	AdjustFont.setFont(anchorBepTable);
+                	AdjustFont.setFont(linkTextPane);
+                	
                     File schemaFile = new File(xmlSchemaFile);
                     Validator validator = Validator.getInstance(schemaFile.toURI().toURL());
                     String msgFromValidation = validator.validateSubmissionXML(fileList);

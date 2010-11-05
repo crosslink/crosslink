@@ -409,6 +409,9 @@ public class paneTableIndexing {
                         Object subAnchorKeyObj = subAnchorKeyEnu.nextElement();
                         String thisSubAnchor = subAnchorKeyObj.toString();  // Subanchor(1114_13)
                         Vector<String[]> bepsV = subAnchorBEPsH.get(subAnchorKeyObj);
+                        /*
+                         * contain lang info here "zh", "ja", "ko"
+                         */
                         for (String[] bepSA : bepsV) {
                             String bepOffset = bepSA[0];
                             String bepFileID = bepSA[1];
