@@ -53,7 +53,7 @@ public class AttributiveCellRenderer extends DefaultTableCellRenderer {
         this.isTableClick = true;
 
         this.myRSCManager = resourcesManager.getInstance();
-        this.myTableIndexing = new paneTableIndexing(isTABTask);
+        this.myTableIndexing = paneTableIndexing.getInstance();
         this.myIndicesByRowKey = this.myTableIndexing.getRowNAVIndices();
 
         this.newTABFieldValues = new Vector<String>();
@@ -70,7 +70,7 @@ public class AttributiveCellRenderer extends DefaultTableCellRenderer {
         this.isTopicPaneOLClick = true;
 
         this.myRSCManager = resourcesManager.getInstance();
-        this.myTableIndexing = new paneTableIndexing(isTABTask);
+        this.myTableIndexing = paneTableIndexing.getInstance();
         this.myIndicesByRowKey = this.myTableIndexing.getRowNAVIndices();
 
         this.newTABFieldValues = new Vector<String>();
@@ -92,7 +92,7 @@ public class AttributiveCellRenderer extends DefaultTableCellRenderer {
 
 //        this.isTABTask = Boolean.valueOf(System.getProperty(sysPropertyKey));
 //        log("isTABTask: " + isTABTask);
-//        this.myTableIndexing = new paneTableIndexing(isTABTask);
+//        this.myTableIndexing = paneTableIndexing.getInstance();
 
         Component c = super.getTableCellRendererComponent(table, value,
                 isSelected, hasFocus,

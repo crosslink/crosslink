@@ -4,20 +4,21 @@ import java.awt.Font;
 import java.awt.FontFormatException;
 import java.io.IOException;
 
+import javax.swing.JComponent;
 import javax.swing.JTextPane;
 
 import ltwassessment.AppResource;
 
 public class AdjustFont {
 	private static Font zhFont = null;
-	private static final String zhFontPath = "ltwassessment/font/wqy-zenhei.ttc";
-	private AdjustFont instance = null;
+	private static final String zhFontFile = "wqy-zenhei.ttc";
+	private static AdjustFont instance = null;
 	
 	
 	public AdjustFont() {
 		try {
 			if (zhFont == null)
-				zhFont = java.awt.Font.createFont(java.awt.Font.TRUETYPE_FONT, getClass().getResourceAsStream(zhFontPath));
+				zhFont = java.awt.Font.createFont(java.awt.Font.TRUETYPE_FONT, getClass().getResourceAsStream(zhFontFile));
 		} catch (FontFormatException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -25,16 +26,17 @@ public class AdjustFont {
 		}
 	}
 	
-	public AdjustFont getInstance() {
+	public static AdjustFont getInstance() {
 		if (instance == null)
 			instance = new AdjustFont();
 		return instance;
 	}
 
-	static void setFont(JTextPane pane) {
+	static void setFont(JComponent jCom) {
 		if (AppResource.targetLang.equals("zh"))
-			pane.setFont(new Font("WenQuanYi Zen Hei", Font.PLAIN, 13)/*resourceMap.getFont("topicTextPane.font")*/);
+			jCom.setFont(zhFont);
 		//else (AppResource.targetLang.equals("zh"))
-		pane.putClientProperty(pane.HONOR_DISPLAY_PROPERTIES, Boolean.TRUE);
+		if (jCom instanceof JTextPane)
+			jCom.putClientProperty(((JTextPane)jCom).HONOR_DISPLAY_PROPERTIES, Boolean.TRUE);
 	}
 }
