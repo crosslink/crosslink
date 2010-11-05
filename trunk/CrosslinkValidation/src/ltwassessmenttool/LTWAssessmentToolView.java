@@ -245,12 +245,10 @@ public class LTWAssessmentToolView extends FrameView {
         topicTextScrollPane = new javax.swing.JScrollPane();
         topicTextPane = new javax.swing.JTextPane();
         rightSplitPane = new javax.swing.JSplitPane();
-        srcScrollPane = new javax.swing.JScrollPane(paneTable);
-        paneTable = new javax.swing.JTable();
         linkTextScrollPane = new javax.swing.JScrollPane();
         linkTextPane = new javax.swing.JTextPane();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jScrollPane2 = new javax.swing.JScrollPane();
+        srcScrollPane = new javax.swing.JScrollPane(paneTable);
+        paneTable = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         lblTopicTitle = new javax.swing.JLabel();
@@ -310,6 +308,20 @@ public class LTWAssessmentToolView extends FrameView {
         rightSplitPane.setName("rightSplitPane"); // NOI18N
         rightSplitPane.setOneTouchExpandable(true);
 
+        linkTextScrollPane.setMinimumSize(new java.awt.Dimension(20, 20));
+        linkTextScrollPane.setName("linkTextScrollPane"); // NOI18N
+        linkTextScrollPane.setPreferredSize(new java.awt.Dimension(525, 400));
+
+        linkTextPane.setEditable(false);
+        linkTextPane.setFont(resourceMap.getFont("linkTextPane.font")); // NOI18N
+        linkTextPane.setAutoscrolls(true);
+        linkTextPane.setMinimumSize(new java.awt.Dimension(525, 444));
+        linkTextPane.setName("linkTextPane"); // NOI18N
+        linkTextPane.setPreferredSize(new java.awt.Dimension(525, 444));
+        linkTextScrollPane.setViewportView(linkTextPane);
+
+        rightSplitPane.setTopComponent(linkTextScrollPane);
+
         srcScrollPane.setBackground(resourceMap.getColor("srcScrollPane.background")); // NOI18N
         srcScrollPane.setMaximumSize(new java.awt.Dimension(167, 167));
         srcScrollPane.setMinimumSize(new java.awt.Dimension(20, 20));
@@ -335,26 +347,6 @@ public class LTWAssessmentToolView extends FrameView {
         srcScrollPane.setViewportView(paneTable);
 
         rightSplitPane.setRightComponent(srcScrollPane);
-
-        linkTextScrollPane.setMinimumSize(new java.awt.Dimension(20, 20));
-        linkTextScrollPane.setName("linkTextScrollPane"); // NOI18N
-        linkTextScrollPane.setPreferredSize(new java.awt.Dimension(525, 400));
-
-        linkTextPane.setEditable(false);
-        linkTextPane.setFont(resourceMap.getFont("linkTextPane.font")); // NOI18N
-        linkTextPane.setAutoscrolls(true);
-        linkTextPane.setMinimumSize(new java.awt.Dimension(525, 444));
-        linkTextPane.setName("linkTextPane"); // NOI18N
-        linkTextPane.setPreferredSize(new java.awt.Dimension(525, 444));
-        linkTextScrollPane.setViewportView(linkTextPane);
-
-        rightSplitPane.setTopComponent(linkTextScrollPane);
-
-        jScrollPane1.setName("jScrollPane1"); // NOI18N
-        rightSplitPane.setTopComponent(jScrollPane1);
-
-        jScrollPane2.setName("jScrollPane2"); // NOI18N
-        rightSplitPane.setBottomComponent(jScrollPane2);
 
         jSplitPane1.setRightComponent(rightSplitPane);
 
@@ -437,7 +429,7 @@ public class LTWAssessmentToolView extends FrameView {
                     .addComponent(lblPoolAnchor)
                     .addComponent(jLabel3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jSplitPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 379, Short.MAX_VALUE))
+                .addComponent(jSplitPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 594, Short.MAX_VALUE))
         );
 
         menuBar.setBackground(resourceMap.getColor("menuBar.background")); // NOI18N
@@ -579,7 +571,7 @@ public class LTWAssessmentToolView extends FrameView {
             statusPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(statusPanelLayout.createSequentialGroup()
                 .addComponent(statusPanelSeparator, javax.swing.GroupLayout.PREFERRED_SIZE, 2, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(112, 112, 112)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(statusPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(statusMessageLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(statusAnimationLabel)
@@ -957,8 +949,6 @@ public class LTWAssessmentToolView extends FrameView {
     private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItemJa;
     private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItemKo;
     private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItemZh;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JSplitPane jSplitPane1;
     private javax.swing.JLabel lblPoolAnchor;
     private javax.swing.JLabel lblTargetPage;
@@ -1136,9 +1126,6 @@ public class LTWAssessmentToolView extends FrameView {
         paneTableIndexing = paneTableIndexing.getInstance();
         myPaneTableManager = new paneTableManager(paneTableIndexing);
         myPaneTableManager.populateTABTable(tabTableModel);
-        srcScrollPane.invalidate();
-        srcScrollPane.repaint();
-        
         // Hidden Field Column
         TableColumn hiddenTC = paneTable.getColumnModel().getColumn(TABInteractiveTableModel.HIDDEN_INDEX);
         hiddenTC.setMinWidth(2);
