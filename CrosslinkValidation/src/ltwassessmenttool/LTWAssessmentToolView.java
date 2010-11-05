@@ -11,6 +11,9 @@ import java.io.DataInputStream;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
 import javax.swing.text.BadLocationException;
 import org.jdesktop.application.Action;
 import org.jdesktop.application.ResourceMap;
@@ -32,6 +35,9 @@ import javax.swing.ImageIcon;
 import javax.swing.JDialog;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
+import javax.swing.JSpinner;
+import javax.swing.JTable;
+import javax.swing.ScrollPaneConstants;
 
 import javax.swing.JOptionPane;
 import javax.swing.ListSelectionModel;
@@ -131,7 +137,7 @@ public class LTWAssessmentToolView extends FrameView {
     static void errlog(Object content) {
         System.err.println("errlog: " + content);
     }
-    public static final String[] outgoingTABColumnNames = {"Topic", "Pool Anchor", "Anchor", "BEP", "HiddenField"};
+    public static final String[] outgoingTABColumnNames = {"Topic", "Anchor (offset_length: name)", "Target Title (fileid: title)", "BEP", "HiddenField"};
     public static final String[] incomingTBAColumnNames = {"Topic", "BEP", "Anchor", "File ID", "HiddenField"};
     protected TABInteractiveTableModel tabTableModel;
     protected TBAInteractiveTableModel tbaTableModel;
@@ -148,6 +154,10 @@ public class LTWAssessmentToolView extends FrameView {
 
         group.add(outRadioBtn);
         group.add(inRadioBtn);
+
+        buttonGroup1.add(jRadioButtonMenuItemZh);
+        buttonGroup1.add(jRadioButtonMenuItemJa);
+        buttonGroup1.add(jRadioButtonMenuItemKo);
 
         ObservableSingleton os = ObservableSingleton.getInstance();
         fieldUpdateObserver fuObserver = new fieldUpdateObserver(os, this.lblTopicTitle, this.lblTopicID, this.lblPoolAnchor, this.lblTargetPage);
@@ -235,10 +245,12 @@ public class LTWAssessmentToolView extends FrameView {
         topicTextScrollPane = new javax.swing.JScrollPane();
         topicTextPane = new javax.swing.JTextPane();
         rightSplitPane = new javax.swing.JSplitPane();
-        linkTextScrollPane = new javax.swing.JScrollPane();
-        linkTextPane = new javax.swing.JTextPane();
         srcScrollPane = new javax.swing.JScrollPane(paneTable);
         paneTable = new javax.swing.JTable();
+        linkTextScrollPane = new javax.swing.JScrollPane();
+        linkTextPane = new javax.swing.JTextPane();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jScrollPane2 = new javax.swing.JScrollPane();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         lblTopicTitle = new javax.swing.JLabel();
@@ -258,6 +270,10 @@ public class LTWAssessmentToolView extends FrameView {
         linkMenu = new javax.swing.JMenu();
         outRadioBtn = new javax.swing.JRadioButtonMenuItem();
         inRadioBtn = new javax.swing.JRadioButtonMenuItem();
+        jMenuLang = new javax.swing.JMenu();
+        jRadioButtonMenuItemZh = new javax.swing.JRadioButtonMenuItem();
+        jRadioButtonMenuItemJa = new javax.swing.JRadioButtonMenuItem();
+        jRadioButtonMenuItemKo = new javax.swing.JRadioButtonMenuItem();
         javax.swing.JMenu helpMenu = new javax.swing.JMenu();
         javax.swing.JMenuItem aboutMenuItem = new javax.swing.JMenuItem();
         statusPanel = new javax.swing.JPanel();
@@ -265,6 +281,7 @@ public class LTWAssessmentToolView extends FrameView {
         statusMessageLabel = new javax.swing.JLabel();
         statusAnimationLabel = new javax.swing.JLabel();
         progressBar = new javax.swing.JProgressBar();
+        buttonGroup1 = new javax.swing.ButtonGroup();
 
         org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(ltwassessmenttool.LTWAssessmentToolApp.class).getContext().getResourceMap(LTWAssessmentToolView.class);
         mainPanel.setBackground(resourceMap.getColor("mainPanel.background")); // NOI18N
@@ -293,26 +310,13 @@ public class LTWAssessmentToolView extends FrameView {
         rightSplitPane.setName("rightSplitPane"); // NOI18N
         rightSplitPane.setOneTouchExpandable(true);
 
-        linkTextScrollPane.setMinimumSize(new java.awt.Dimension(20, 20));
-        linkTextScrollPane.setName("linkTextScrollPane"); // NOI18N
-        linkTextScrollPane.setPreferredSize(new java.awt.Dimension(525, 400));
-
-        linkTextPane.setEditable(false);
-        linkTextPane.setFont(resourceMap.getFont("linkTextPane.font")); // NOI18N
-        linkTextPane.setAutoscrolls(true);
-        linkTextPane.setMinimumSize(new java.awt.Dimension(525, 444));
-        linkTextPane.setName("linkTextPane"); // NOI18N
-        linkTextPane.setPreferredSize(new java.awt.Dimension(525, 444));
-        linkTextScrollPane.setViewportView(linkTextPane);
-
-        rightSplitPane.setTopComponent(linkTextScrollPane);
-
         srcScrollPane.setBackground(resourceMap.getColor("srcScrollPane.background")); // NOI18N
         srcScrollPane.setMaximumSize(new java.awt.Dimension(167, 167));
         srcScrollPane.setMinimumSize(new java.awt.Dimension(20, 20));
         srcScrollPane.setName("srcScrollPane"); // NOI18N
         srcScrollPane.setPreferredSize(new java.awt.Dimension(125, 244));
 
+        paneTable.setFont(resourceMap.getFont("paneTable.font")); // NOI18N
         paneTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -331,6 +335,26 @@ public class LTWAssessmentToolView extends FrameView {
         srcScrollPane.setViewportView(paneTable);
 
         rightSplitPane.setRightComponent(srcScrollPane);
+
+        linkTextScrollPane.setMinimumSize(new java.awt.Dimension(20, 20));
+        linkTextScrollPane.setName("linkTextScrollPane"); // NOI18N
+        linkTextScrollPane.setPreferredSize(new java.awt.Dimension(525, 400));
+
+        linkTextPane.setEditable(false);
+        linkTextPane.setFont(resourceMap.getFont("linkTextPane.font")); // NOI18N
+        linkTextPane.setAutoscrolls(true);
+        linkTextPane.setMinimumSize(new java.awt.Dimension(525, 444));
+        linkTextPane.setName("linkTextPane"); // NOI18N
+        linkTextPane.setPreferredSize(new java.awt.Dimension(525, 444));
+        linkTextScrollPane.setViewportView(linkTextPane);
+
+        rightSplitPane.setTopComponent(linkTextScrollPane);
+
+        jScrollPane1.setName("jScrollPane1"); // NOI18N
+        rightSplitPane.setTopComponent(jScrollPane1);
+
+        jScrollPane2.setName("jScrollPane2"); // NOI18N
+        rightSplitPane.setBottomComponent(jScrollPane2);
 
         jSplitPane1.setRightComponent(rightSplitPane);
 
@@ -413,7 +437,7 @@ public class LTWAssessmentToolView extends FrameView {
                     .addComponent(lblPoolAnchor)
                     .addComponent(jLabel3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jSplitPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 594, Short.MAX_VALUE))
+                .addComponent(jSplitPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 379, Short.MAX_VALUE))
         );
 
         menuBar.setBackground(resourceMap.getColor("menuBar.background")); // NOI18N
@@ -477,6 +501,41 @@ public class LTWAssessmentToolView extends FrameView {
 
         menuBar.add(linkMenu);
 
+        jMenuLang.setText(resourceMap.getString("jMenuLang.text")); // NOI18N
+        jMenuLang.setName("jMenuLang"); // NOI18N
+
+        jRadioButtonMenuItemZh.setSelected(true);
+        jRadioButtonMenuItemZh.setText(resourceMap.getString("jRadioButtonMenuItemZh.text")); // NOI18N
+        jRadioButtonMenuItemZh.setName("jRadioButtonMenuItemZh"); // NOI18N
+        jRadioButtonMenuItemZh.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButtonMenuItemZhActionPerformed(evt);
+            }
+        });
+        jMenuLang.add(jRadioButtonMenuItemZh);
+
+        jRadioButtonMenuItemJa.setSelected(true);
+        jRadioButtonMenuItemJa.setText(resourceMap.getString("jRadioButtonMenuItemJa.text")); // NOI18N
+        jRadioButtonMenuItemJa.setName("jRadioButtonMenuItemJa"); // NOI18N
+        jRadioButtonMenuItemJa.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButtonMenuItemJaActionPerformed(evt);
+            }
+        });
+        jMenuLang.add(jRadioButtonMenuItemJa);
+
+        jRadioButtonMenuItemKo.setSelected(true);
+        jRadioButtonMenuItemKo.setText(resourceMap.getString("jRadioButtonMenuItemKo.text")); // NOI18N
+        jRadioButtonMenuItemKo.setName("jRadioButtonMenuItemKo"); // NOI18N
+        jRadioButtonMenuItemKo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButtonMenuItemKoActionPerformed(evt);
+            }
+        });
+        jMenuLang.add(jRadioButtonMenuItemKo);
+
+        menuBar.add(jMenuLang);
+
         helpMenu.setBackground(resourceMap.getColor("helpMenu.background")); // NOI18N
         helpMenu.setText(resourceMap.getString("helpMenu.text")); // NOI18N
         helpMenu.setName("helpMenu"); // NOI18N
@@ -520,7 +579,7 @@ public class LTWAssessmentToolView extends FrameView {
             statusPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(statusPanelLayout.createSequentialGroup()
                 .addComponent(statusPanelSeparator, javax.swing.GroupLayout.PREFERRED_SIZE, 2, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(112, 112, 112)
                 .addGroup(statusPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(statusMessageLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(statusAnimationLabel)
@@ -778,6 +837,18 @@ public class LTWAssessmentToolView extends FrameView {
         setIncomingTBA();
 }//GEN-LAST:event_inRadioBtnActionPerformed
 
+    private void jRadioButtonMenuItemZhActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonMenuItemZhActionPerformed
+        AppResource.targetLang = "zh";
+    }//GEN-LAST:event_jRadioButtonMenuItemZhActionPerformed
+
+    private void jRadioButtonMenuItemJaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonMenuItemJaActionPerformed
+        AppResource.targetLang = "ja";
+    }//GEN-LAST:event_jRadioButtonMenuItemJaActionPerformed
+
+    private void jRadioButtonMenuItemKoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonMenuItemKoActionPerformed
+        AppResource.targetLang = "ko";
+    }//GEN-LAST:event_jRadioButtonMenuItemKoActionPerformed
+
     public void highlightLastRow(int row) {
         int lastRow = tabTableModel.getRowCount();
         if (row == lastRow - 1) {
@@ -874,6 +945,7 @@ public class LTWAssessmentToolView extends FrameView {
 
     // <editor-fold defaultstate="collapsed" desc="Pre-Variables-Declaration">
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JMenuItem corpusMenuItem;
     private javax.swing.JRadioButtonMenuItem inRadioBtn;
     private javax.swing.JLabel jLabel1;
@@ -881,6 +953,12 @@ public class LTWAssessmentToolView extends FrameView {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JMenu jMenuLang;
+    private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItemJa;
+    private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItemKo;
+    private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItemZh;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JSplitPane jSplitPane1;
     private javax.swing.JLabel lblPoolAnchor;
     private javax.swing.JLabel lblTargetPage;
@@ -960,7 +1038,7 @@ public class LTWAssessmentToolView extends FrameView {
         paneTable.addMouseListener(new paneTableMouseListener(this.topicTextPane, this.linkTextPane, this.paneTable));
         // populate TAB Table, including Hidden Field
         boolean isTAB = false;
-        paneTableIndexing = new paneTableIndexing(isTAB);
+        paneTableIndexing = paneTableIndexing.getInstance();
         myPaneTableManager = new paneTableManager(paneTableIndexing);
         myPaneTableManager.populateTBATable(tbaTableModel);
         // Hidden Field Column
@@ -1055,9 +1133,12 @@ public class LTWAssessmentToolView extends FrameView {
         paneTable.addMouseListener(new paneTableMouseListener(this.topicTextPane, this.linkTextPane, this.paneTable));
         // populate TAB Table, including Hidden Field
         boolean isTAB = true;
-        paneTableIndexing = new paneTableIndexing(isTAB);
+        paneTableIndexing = paneTableIndexing.getInstance();
         myPaneTableManager = new paneTableManager(paneTableIndexing);
         myPaneTableManager.populateTABTable(tabTableModel);
+        srcScrollPane.invalidate();
+        srcScrollPane.repaint();
+        
         // Hidden Field Column
         TableColumn hiddenTC = paneTable.getColumnModel().getColumn(TABInteractiveTableModel.HIDDEN_INDEX);
         hiddenTC.setMinWidth(2);

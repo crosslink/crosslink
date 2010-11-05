@@ -241,7 +241,7 @@ public class linkPaneMouseListener implements MouseInputListener {
          * CASE 3: Double-Left-Click -> Change BEP Position
          */
         this.isTAB = Boolean.valueOf(System.getProperty(sysPropertyKey));
-        this.myPaneTableIndexing = new paneTableIndexing(this.isTAB);
+        this.myPaneTableIndexing = paneTableIndexing.getInstance(this.isTAB);
         activateMouseClickEvent(me);
     }
 
