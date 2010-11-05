@@ -193,7 +193,7 @@ public class LTWAssessmentToolView extends FrameView {
         }
         // =====================================================================
 
-//        paneTable.addMouseListener(new paneTableMouseListener(this.topicTextPane, this.linkTextPane, this.paneTable));
+//        anchorBepTable.addMouseListener(new paneTableMouseListener(this.topicTextPane, this.linkTextPane, this.anchorBepTable));
 
 
         // when the tool firstly starts
@@ -247,8 +247,8 @@ public class LTWAssessmentToolView extends FrameView {
         rightSplitPane = new javax.swing.JSplitPane();
         linkTextScrollPane = new javax.swing.JScrollPane();
         linkTextPane = new javax.swing.JTextPane();
-        srcScrollPane = new javax.swing.JScrollPane(paneTable);
-        paneTable = new javax.swing.JTable();
+        anchorBepTablePane = new javax.swing.JScrollPane();
+        anchorBepTable = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         lblTopicTitle = new javax.swing.JLabel();
@@ -322,31 +322,35 @@ public class LTWAssessmentToolView extends FrameView {
 
         rightSplitPane.setTopComponent(linkTextScrollPane);
 
-        srcScrollPane.setBackground(resourceMap.getColor("srcScrollPane.background")); // NOI18N
-        srcScrollPane.setMaximumSize(new java.awt.Dimension(167, 167));
-        srcScrollPane.setMinimumSize(new java.awt.Dimension(20, 20));
-        srcScrollPane.setName("srcScrollPane"); // NOI18N
-        srcScrollPane.setPreferredSize(new java.awt.Dimension(125, 244));
+        anchorBepTablePane.setName("anchorBepTablePane"); // NOI18N
 
-        paneTable.setFont(resourceMap.getFont("paneTable.font")); // NOI18N
-        paneTable.setModel(new javax.swing.table.DefaultTableModel(
+        anchorBepTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
                 {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},                
                 {null, null, null, null}
             },
             new String [] {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
-        paneTable.setMaximumSize(new java.awt.Dimension(20, 72));
-        paneTable.setMinimumSize(new java.awt.Dimension(20, 72));
-        paneTable.setName("paneTable"); // NOI18N
-        paneTable.setPreferredSize(new java.awt.Dimension(20, 72));
-        srcScrollPane.setViewportView(paneTable);
+        anchorBepTable.setName("anchorBepTable"); // NOI18N
+        anchorBepTablePane.setViewportView(anchorBepTable);
 
-        rightSplitPane.setRightComponent(srcScrollPane);
+        rightSplitPane.setRightComponent(anchorBepTablePane);
 
         jSplitPane1.setRightComponent(rightSplitPane);
 
@@ -844,11 +848,11 @@ public class LTWAssessmentToolView extends FrameView {
     public void highlightLastRow(int row) {
         int lastRow = tabTableModel.getRowCount();
         if (row == lastRow - 1) {
-            paneTable.setRowSelectionInterval(lastRow - 1, lastRow - 1);
+        	anchorBepTable.setRowSelectionInterval(lastRow - 1, lastRow - 1);
         } else {
-            paneTable.setRowSelectionInterval(row + 1, row + 1);
+            anchorBepTable.setRowSelectionInterval(row + 1, row + 1);
         }
-        paneTable.setRowSelectionInterval(0, 0);
+        anchorBepTable.setRowSelectionInterval(0, 0);
     }
 
     @Action
@@ -957,15 +961,15 @@ public class LTWAssessmentToolView extends FrameView {
     private javax.swing.JMenu linkMenu;
     private javax.swing.JTextPane linkTextPane;
     private javax.swing.JScrollPane linkTextScrollPane;
+    private javax.swing.JScrollPane anchorBepTablePane;
+    private javax.swing.JTable anchorBepTable;
     private javax.swing.JMenuItem loadMenuItem;
     private javax.swing.JPanel mainPanel;
     private javax.swing.JMenuBar menuBar;
     private javax.swing.JRadioButtonMenuItem outRadioBtn;
-    private javax.swing.JTable paneTable;
     private javax.swing.JProgressBar progressBar;
     private javax.swing.JSplitPane rightSplitPane;
     private javax.swing.JMenuItem splitMenuItem;
-    private javax.swing.JScrollPane srcScrollPane;
     private javax.swing.JLabel statusAnimationLabel;
     private javax.swing.JLabel statusMessageLabel;
     private javax.swing.JPanel statusPanel;
@@ -1019,20 +1023,20 @@ public class LTWAssessmentToolView extends FrameView {
         // ---------------------------------------------------------------------
         // populate SRC JTable
         tbaTableModel = new TBAInteractiveTableModel(incomingTBAColumnNames);
-        paneTable.setModel(tbaTableModel);
-        paneTable.repaint();
-        paneTable.setSurrendersFocusOnKeystroke(true);
-        paneTable.setEnabled(false);
-        paneTable.setCellSelectionEnabled(true);
-        paneTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-        paneTable.addMouseListener(new paneTableMouseListener(this.topicTextPane, this.linkTextPane, this.paneTable));
+        anchorBepTable.setModel(tbaTableModel);
+        anchorBepTable.repaint();
+        anchorBepTable.setSurrendersFocusOnKeystroke(true);
+        anchorBepTable.setEnabled(false);
+        anchorBepTable.setCellSelectionEnabled(true);
+        anchorBepTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        anchorBepTable.addMouseListener(new paneTableMouseListener(this.topicTextPane, this.linkTextPane, this.anchorBepTable));
         // populate TAB Table, including Hidden Field
         boolean isTAB = false;
         paneTableIndexing = paneTableIndexing.getInstance();
         myPaneTableManager = new paneTableManager(paneTableIndexing);
         myPaneTableManager.populateTBATable(tbaTableModel);
         // Hidden Field Column
-        TableColumn hiddenTC = paneTable.getColumnModel().getColumn(TBAInteractiveTableModel.HIDDEN_INDEX);
+        TableColumn hiddenTC = anchorBepTable.getColumnModel().getColumn(TBAInteractiveTableModel.HIDDEN_INDEX);
         hiddenTC.setMinWidth(2);
         hiddenTC.setPreferredWidth(2);
         hiddenTC.setMaxWidth(2);
@@ -1042,7 +1046,7 @@ public class LTWAssessmentToolView extends FrameView {
         // create Caret the status pane
         CaretListenerLabel caretListenerLabel = new CaretListenerLabel("Caret Status", this.topicTextPane, this.statusMessageLabel);
         this.topicTextPane.addCaretListener(caretListenerLabel);
-        topicPaneMouseListener mtTopicPaneListener = new topicPaneMouseListener(this.topicTextPane, this.linkTextPane, this.currBepSCROffset, this.paneTable, this.paneTableIndexing);
+        topicPaneMouseListener mtTopicPaneListener = new topicPaneMouseListener(this.topicTextPane, this.linkTextPane, this.currBepSCROffset, this.anchorBepTable, this.paneTableIndexing);
         this.topicTextPane.addMouseListener(mtTopicPaneListener);
         this.topicTextPane.addMouseMotionListener(mtTopicPaneListener);
         // ---------------------------------------------------------------------
@@ -1051,7 +1055,7 @@ public class LTWAssessmentToolView extends FrameView {
         this.topicTextPane.repaint();
         // ---------------------------------------------------------------------
         // set up linkPaneMouseListener();
-        linkPaneMouseListener myLPMListener = new linkPaneMouseListener(this.topicTextPane, this.linkTextPane, this.paneTable);
+        linkPaneMouseListener myLPMListener = new linkPaneMouseListener(this.topicTextPane, this.linkTextPane, this.anchorBepTable);
         this.linkTextPane.addMouseListener(myLPMListener);
         // ---------------------------------------------------------------------
         // According to TAB-Navigation-Indices
@@ -1059,13 +1063,13 @@ public class LTWAssessmentToolView extends FrameView {
         String[] thisRowValuesSA = paneTableIndexing.getTableValuesByRowIndexWOText().elementAt(Integer.valueOf(lastRowIndex));
         int updateLevel = 2;
         if (isTAB) {
-            this.myTABTxtPaneManager.updateTXTPanes(topicTextPane, linkTextPane, paneTable, thisRowValuesSA, updateLevel);
+            this.myTABTxtPaneManager.updateTXTPanes(topicTextPane, linkTextPane, anchorBepTable, thisRowValuesSA, updateLevel);
         } else {
-            this.myTBATxtPaneManager.updateTXTPanes(topicTextPane, linkTextPane, paneTable, thisRowValuesSA, updateLevel);
+            this.myTBATxtPaneManager.updateTXTPanes(topicTextPane, linkTextPane, anchorBepTable, thisRowValuesSA, updateLevel);
         }
         // ---------------------------------------------------------------------
-        paneTable.setDefaultRenderer(Object.class, new AttributiveCellRenderer(Integer.valueOf(lastRowIndex), 3, isTAB));
-        paneTable.repaint();
+        anchorBepTable.setDefaultRenderer(Object.class, new AttributiveCellRenderer(Integer.valueOf(lastRowIndex), 3, isTAB));
+        anchorBepTable.repaint();
     }
     // =========================================================================
     // Outgoing Links: T.A.B.
@@ -1112,22 +1116,22 @@ public class LTWAssessmentToolView extends FrameView {
         setTopicTextHighlighter(currAnchorSCROLPairs);
         // ---------------------------------------------------------------------
         // Clean JTable
-        paneTable.removeAll();
+        anchorBepTable.removeAll();
         // populate SRC JTable
         tabTableModel = new TABInteractiveTableModel(outgoingTABColumnNames);
-        paneTable.setModel(tabTableModel);
-        paneTable.setSurrendersFocusOnKeystroke(true);
-        paneTable.setEnabled(false);
-        paneTable.setCellSelectionEnabled(true);
-        paneTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-        paneTable.addMouseListener(new paneTableMouseListener(this.topicTextPane, this.linkTextPane, this.paneTable));
+        anchorBepTable.setModel(tabTableModel);
+        anchorBepTable.setSurrendersFocusOnKeystroke(true);
+        anchorBepTable.setEnabled(false);
+        anchorBepTable.setCellSelectionEnabled(true);
+        anchorBepTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        anchorBepTable.addMouseListener(new paneTableMouseListener(this.topicTextPane, this.linkTextPane, this.anchorBepTable));
         // populate TAB Table, including Hidden Field
         boolean isTAB = true;
         paneTableIndexing = paneTableIndexing.getInstance();
         myPaneTableManager = new paneTableManager(paneTableIndexing);
         myPaneTableManager.populateTABTable(tabTableModel);
         // Hidden Field Column
-        TableColumn hiddenTC = paneTable.getColumnModel().getColumn(TABInteractiveTableModel.HIDDEN_INDEX);
+        TableColumn hiddenTC = anchorBepTable.getColumnModel().getColumn(TABInteractiveTableModel.HIDDEN_INDEX);
         hiddenTC.setMinWidth(2);
         hiddenTC.setPreferredWidth(2);
         hiddenTC.setMaxWidth(2);
@@ -1135,12 +1139,12 @@ public class LTWAssessmentToolView extends FrameView {
         // ---------------------------------------------------------------------
         // initialize Topic and Link Content Panels
         this.topicTextPane.addCaretListener(caretListenerLabel);
-        topicPaneMouseListener mtTopicPaneListener = new topicPaneMouseListener(this.topicTextPane, this.linkTextPane, this.currAnchorSCROLPairs, this.paneTable, this.paneTableIndexing);
+        topicPaneMouseListener mtTopicPaneListener = new topicPaneMouseListener(this.topicTextPane, this.linkTextPane, this.currAnchorSCROLPairs, this.anchorBepTable, this.paneTableIndexing);
         this.topicTextPane.addMouseListener(mtTopicPaneListener);
         this.topicTextPane.addMouseMotionListener(mtTopicPaneListener);
         // ---------------------------------------------------------------------
         // set up linkPaneMouseListener()
-        linkPaneMouseListener myLPMListener = new linkPaneMouseListener(this.topicTextPane, this.linkTextPane, this.paneTable);
+        linkPaneMouseListener myLPMListener = new linkPaneMouseListener(this.topicTextPane, this.linkTextPane, this.anchorBepTable);
         this.linkTextPane.addMouseListener(myLPMListener);
         // ---------------------------------------------------------------------
         // According to TAB-Navigation-Indices
@@ -1150,14 +1154,14 @@ public class LTWAssessmentToolView extends FrameView {
 	        String[] thisRowValuesSA = paneTableRowIndexWOText.elementAt(Integer.valueOf(lastRowIndex));
 	        int updateLevel = 2;
 	        if (isTAB) {
-	            this.myTABTxtPaneManager.updateTXTPanes(this.topicTextPane, this.linkTextPane, this.paneTable, thisRowValuesSA, updateLevel);
+	            this.myTABTxtPaneManager.updateTXTPanes(this.topicTextPane, this.linkTextPane, this.anchorBepTable, thisRowValuesSA, updateLevel);
 	        } else {
-	            this.myTBATxtPaneManager.updateTXTPanes(this.topicTextPane, this.linkTextPane, this.paneTable, thisRowValuesSA, updateLevel);
+	            this.myTBATxtPaneManager.updateTXTPanes(this.topicTextPane, this.linkTextPane, this.anchorBepTable, thisRowValuesSA, updateLevel);
 	        }
         }
         // ---------------------------------------------------------------------
-        paneTable.setDefaultRenderer(Object.class, new AttributiveCellRenderer(Integer.valueOf(lastRowIndex), 3, isTAB));
-        paneTable.repaint();
+        anchorBepTable.setDefaultRenderer(Object.class, new AttributiveCellRenderer(Integer.valueOf(lastRowIndex), 3, isTAB));
+        anchorBepTable.repaint();
     }
     // =========================================================================
     // =========================================================================
