@@ -8,5 +8,7 @@
 	<classpathentry kind="lib" path="/CrosslinkEvaluation/lib/xercesImpl.jar"/>
 	<classpathentry kind="lib" path="/CrosslinkValidation/lib/vtd-xml.jar"/>
 	<classpathentry kind="lib" path="/CrosslinkValidation/lib/jdom.jar"/>
+	<classpathentry kind="lib" path="/CrosslinkEvaluation/lib/xalan.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
