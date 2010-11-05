@@ -152,23 +152,10 @@
                     </Component>
                   </SubComponents>
                 </Container>
-                <Container class="javax.swing.JScrollPane" name="srcScrollPane">
+                <Container class="javax.swing.JScrollPane" name="anchorBepTablePane">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" resourceKey="srcScrollPane.background"/>
-                    <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[167, 167]"/>
-                    </Property>
-                    <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[20, 20]"/>
-                    </Property>
-                    <Property name="name" type="java.lang.String" value="srcScrollPane" noResource="true"/>
-                    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[125, 244]"/>
-                    </Property>
+                    <Property name="name" type="java.lang.String" value="anchorBepTablePane" noResource="true"/>
                   </Properties>
-                  <AuxValues>
-                    <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JScrollPane(paneTable)"/>
-                  </AuxValues>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout$JSplitPaneConstraintsDescription">
                       <JSplitPaneConstraints position="right"/>
@@ -177,7 +164,7 @@
 
                   <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                   <SubComponents>
-                    <Component class="javax.swing.JTable" name="paneTable">
+                    <Component class="javax.swing.JTable" name="anchorBepTable">
                       <Properties>
                         <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                           <Table columnCount="4" rowCount="4">
@@ -187,16 +174,7 @@
                             <Column editable="true" title="Title 4" type="java.lang.Object"/>
                           </Table>
                         </Property>
-                        <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                          <Dimension value="[20, 72]"/>
-                        </Property>
-                        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                          <Dimension value="[20, 72]"/>
-                        </Property>
-                        <Property name="name" type="java.lang.String" value="paneTable" noResource="true"/>
-                        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                          <Dimension value="[20, 72]"/>
-                        </Property>
+                        <Property name="name" type="java.lang.String" value="anchorBepTable" noResource="true"/>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -383,6 +361,44 @@
             </MenuItem>
           </SubComponents>
         </Menu>
+        <Menu class="javax.swing.JMenu" name="jMenuLang">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="jMenuLang.text"/>
+            <Property name="name" type="java.lang.String" value="jMenuLang" noResource="true"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JRadioButtonMenuItem" name="jRadioButtonMenuItemZh">
+              <Properties>
+                <Property name="selected" type="boolean" value="true"/>
+                <Property name="text" type="java.lang.String" resourceKey="jRadioButtonMenuItemZh.text"/>
+                <Property name="name" type="java.lang.String" value="jRadioButtonMenuItemZh" noResource="true"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButtonMenuItemZhActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JRadioButtonMenuItem" name="jRadioButtonMenuItemJa">
+              <Properties>
+                <Property name="selected" type="boolean" value="true"/>
+                <Property name="text" type="java.lang.String" resourceKey="jRadioButtonMenuItemJa.text"/>
+                <Property name="name" type="java.lang.String" value="jRadioButtonMenuItemJa" noResource="true"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButtonMenuItemJaActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JRadioButtonMenuItem" name="jRadioButtonMenuItemKo">
+              <Properties>
+                <Property name="selected" type="boolean" value="true"/>
+                <Property name="text" type="java.lang.String" resourceKey="jRadioButtonMenuItemKo.text"/>
+                <Property name="name" type="java.lang.String" value="jRadioButtonMenuItemKo" noResource="true"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButtonMenuItemKoActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
         <Menu class="javax.swing.JMenu" name="helpMenu">
           <Properties>
             <Property name="background" type="java.awt.Color" resourceKey="helpMenu.background"/>
@@ -479,6 +495,8 @@
         </Component>
       </SubComponents>
     </Container>
+    <Component class="javax.swing.ButtonGroup" name="buttonGroup1">
+    </Component>
   </NonVisualComponents>
   <Properties>
     <Property name="component" type="javax.swing.JComponent" editor="org.netbeans.modules.form.ComponentChooserEditor">
