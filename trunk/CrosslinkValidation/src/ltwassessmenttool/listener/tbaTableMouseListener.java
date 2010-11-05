@@ -56,7 +56,7 @@ public class tbaTableMouseListener extends MouseAdapter {
         // indexing
         TBAIndice = new Hashtable<String, String[]>();
         indexTBAData(this.poolIncomingData);
-        tbaTableIndexing = new paneTableIndexing(isTAB);
+        tbaTableIndexing = paneTableIndexing.getInstance();
         NAVIndice = tbaTableIndexing.getRowNAVIndices();
 
         String[] lastTBANavSA = rscManager.getTBANavigationIndex();
