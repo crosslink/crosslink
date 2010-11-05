@@ -29,8 +29,8 @@ public class paneTableIndexing {
     private Vector<String[]> paneTableRowIndex = new Vector<String[]>();
     private Vector<String[]> paneTableRowIndexWOText = new Vector<String[]>();
     // TAB: Outgoing Variables
-    private Hashtable<String, Vector<String[]>> topicAnchorsHT = new Hashtable<String, Vector<String[]>>();
-    private Hashtable<String, Hashtable<String, Hashtable<String, Vector<String[]>>>> poolOutgoingData = new Hashtable<String, Hashtable<String, Hashtable<String, Vector<String[]>>>>();
+    private Hashtable<String, Vector<String[]>> topicAnchorsHT = null; //new Hashtable<String, Vector<String[]>>();
+    private Hashtable<String, Hashtable<String, Hashtable<String, Vector<String[]>>>> poolOutgoingData = null; //new Hashtable<String, Hashtable<String, Hashtable<String, Vector<String[]>>>>();
     private Hashtable<String, Vector<String>> tabAnchorByTopicHT;
     private Hashtable<String, Vector<String>> tabAnchorByTopicHTWOTxt;
     private Hashtable<String, Vector<String>> tabBepByTopicAnchorHT;
@@ -46,6 +46,14 @@ public class paneTableIndexing {
     private Hashtable<String, Vector<String[]>> tbaAnchorFileByTopicBepHTWOTxt;
     private Hashtable<String, String[]> NAVIndice;
 
+    private static paneTableIndexing instance = null;
+    
+    public static paneTableIndexing getInstance() {
+    	if (instance == null)
+    		instance = new paneTableIndexing(true);
+    	return instance;
+    }
+    
     static void log(Object content) {
         System.out.println(content);
     }
@@ -415,7 +423,7 @@ public class paneTableIndexing {
                             	myTABLine[2] = getAnchorOLNamePair(thisTopic, thisSubAnchor);
                             else
                             	myTABLine[2] = bepSA[3];
-                            myTABLine[3] = getLinkBepIdONamePair(bepSet);
+                            myTABLine[3] = getLinkBepIdONamePair(bepSet); //String.valueOf(bepOffset); //bepSet; //
                             myTableSetV.add(myTABLine);
                             // Without Text
                             String[] myTABWOTextLine = new String[4];
@@ -605,24 +613,24 @@ public class paneTableIndexing {
                 Vector<String[]> anchorsV = topicAnchorsHT.get(keyObj);
                 for (String[] thisAnchorSA : anchorsV) {
                     String OLSet = thisAnchorSA[0].trim() + "_" + thisAnchorSA[1].trim();
-//                    if (OLSet.equals(anchorOL)) {
-//                        return myPair = anchorOL + " : " + thisAnchorSA[2].trim();
+                    if (OLSet.equals(anchorOL)) //{
+                        return myPair = anchorOL + " : " + thisAnchorSA[2].trim();
 //                    } else {
-//                        String[] anchorOLSA = anchorOL.split("_");
-//                        int sPoint = Integer.valueOf(thisAnchorSA[0].trim());
-//                        int ePoint = Integer.valueOf(thisAnchorSA[0].trim()) + Integer.valueOf(thisAnchorSA[1].trim());
-//                        int thisPoint = Integer.valueOf(anchorOLSA[0].trim());
-//                        int thisLength = Integer.valueOf(anchorOLSA[1].trim());
-//                        if (thisPoint >= sPoint && thisPoint <= ePoint) {
-//                            String anchorName = thisAnchorSA[2].trim().substring(thisPoint - sPoint, (thisPoint - sPoint) + thisLength);
-//                            return myPair = anchorOL + " : " + anchorName;
-//                        }
+////                        String[] anchorOLSA = anchorOL.split("_");
+////                        int sPoint = Integer.valueOf(thisAnchorSA[0].trim());
+////                        int ePoint = Integer.valueOf(thisAnchorSA[0].trim()) + Integer.valueOf(thisAnchorSA[1].trim());
+////                        int thisPoint = Integer.valueOf(anchorOLSA[0].trim());
+////                        int thisLength = Integer.valueOf(anchorOLSA[1].trim());
+////                        if (thisPoint >= sPoint && thisPoint <= ePoint) {
+////                            String anchorName = thisAnchorSA[2].trim().substring(thisPoint - sPoint, (thisPoint - sPoint) + thisLength);
+////                            return myPair = anchorOL + " : " + anchorName;
+////                        }
 //                    }
-                    return myPair = anchorOL + " : " + thisAnchorSA[2].trim();
+//                    return myPair = anchorOL + " : " + thisAnchorSA[2].trim();
                 }
             }
         }
-        return myPair = anchorOL + " : ";
+        return myPair = "Error: " + anchorOL + " not found! ";
     }
 
     private String getTopicIDNamePair(String topicFileID) {

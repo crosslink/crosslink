@@ -697,10 +697,15 @@ public class poolerManager {
                             NodeList toBepNodeList = anchorElmn.getElementsByTagName(afToBepTag);
                             for (int m = 0; m < toBepNodeList.getLength(); m++) {
                                 Element toBepElmn = (Element) toBepNodeList.item(m);
-                                String tbOffset = toBepElmn.getAttribute("offset");
+                                
+                                // new
+                                String target_lang = anchorElmn.getAttribute( offsetAttributeName);
+                                String target_title = anchorElmn.getAttribute(lengthAttributeName);
+
+                                String tbOffset = toBepElmn.getAttribute("bep_offset");
                                 Node tbXmlFileIDTextNode = toBepElmn.getFirstChild();
                                 String tbFileID = tbXmlFileIDTextNode.getTextContent();
-                                anchorToBEPV.add(new String[]{tbFileID, tbOffset});
+                                anchorToBEPV.add(new String[]{tbFileID, tbOffset, target_lang, target_title});
                             }
                         }
                         anchorBepsHT.put(anchorKey, anchorToBEPV);
