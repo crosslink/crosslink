@@ -22,8 +22,15 @@
 	<resources>
 		<j2se href="http://java.sun.com/products/autodl/j2se" version="1.5+"/>
 		<jar href="CrosslinkValidation.jar"/>
-		<!-- <property name="sun.java2d.opengl" value="True" /> -->
-		<!-- <extension name="lwjgl" href="http://lwjgl.org/jnlp/extension.php" /> -->
+		<jar href="lib/appframework-1.0.3.jar" /> 
+		<jar href="lib/jdom.jar" /> 
+		<jar href="lib/org.eclipse.swt.win32.win32.x86_3.3.0.v3346.jar" /> 
+		<jar href="lib/resolver.jar" /> 
+		<jar href="lib/swing-worker-1.2.jar" /> 
+		<jar href="lib/vtd-xml.jar" /> 
+		<jar href="lib/xercesImpl.jar" /> 
+		<jar href="lib/xercesSamples.jar" /> 
+		<jar href="lib/xml-apis.jar" /> 
 	</resources>
 
 	<application-desc main-class="ltwassessmenttool.LTWAssessmentToolApp" />
