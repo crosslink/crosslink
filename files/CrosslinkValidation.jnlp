@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp
+	spec="1.0+"
+	codebase="http://crosslink.googlecode.com/svn/files"
+	href="CrosslinkValidation.jnlp">
+	<information>
+		<title>Crosslink Validation Program</title>
+		<vendor>Eric Tang</vendor>
+		<homepage href="http://crosslink.googlecode.com"/>
+
+		<description>Crosslink Validation Program</description>
+		<description kind="short">Crosslink Validation Program for validating the crosslink submissions</description>
+		<icon href="icon.png"/>
+		<!--<icon kind="splash" href="splash.gif"/>-->
+		<offline-allowed/>
+	</information>
+
+	<security>
+		<all-permissions/>
+	</security>
+
+	<resources>
+		<j2se href="http://java.sun.com/products/autodl/j2se" version="1.5+"/>
+		<jar href="CrosslinkValidation.jar"/>
+		<!-- <property name="sun.java2d.opengl" value="True" /> -->
+		<!-- <extension name="lwjgl" href="http://lwjgl.org/jnlp/extension.php" /> -->
+	</resources>
+
+	<application-desc main-class="ltwassessmenttool.LTWAssessmentToolApp" />
+</jnlp>
