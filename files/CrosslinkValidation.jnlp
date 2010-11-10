@@ -29,7 +29,6 @@
 		<jar href="lib/swing-worker-1.2.jar" /> 
 		<jar href="lib/vtd-xml.jar" /> 
 		<jar href="lib/xercesImpl.jar" /> 
-		<jar href="lib/xercesSamples.jar" /> 
 		<jar href="lib/xml-apis.jar" /> 
 	</resources>
 
