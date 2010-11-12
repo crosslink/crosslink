@@ -9,7 +9,7 @@ import java.util.Vector;
 import javax.swing.JTable;
 import javax.swing.JTextPane;
 
-import ltwassessment.parsers.poolerManager;
+import ltwassessment.parsers.PoolerManager;
 import ltwassessment.parsers.resourcesManager;
 import ltwassessment.utility.AttributiveCellRenderer;
 import ltwassessment.utility.paneTableIndexing;
@@ -29,7 +29,7 @@ public class paneTableMouseListener extends MouseAdapter {
     private tbaTxtPaneManager tbaSManager;
     private paneTableIndexing tabTableIndexing;
     private paneTableIndexing tbaTableIndexing;
-    private poolerManager myRunsPooler;
+    private PoolerManager myRunsPooler;
     private JTextPane topicTxtPane;
     private JTextPane linkTxtPane;
     private JTable myPaneTable;
@@ -67,7 +67,7 @@ public class paneTableMouseListener extends MouseAdapter {
         this.myPaneTable = paneTable;
         // declare External Classes
         this.rscManager = resourcesManager.getInstance();
-        this.myRunsPooler = poolerManager.getInstance();
+        this.myRunsPooler = PoolerManager.getInstance();
 
         this.isTAB = Boolean.valueOf(System.getProperty(sysPropertyKey));
         // For Outgoing
@@ -275,7 +275,7 @@ public class paneTableMouseListener extends MouseAdapter {
             this.isTAB = Boolean.valueOf(System.getProperty(sysPropertyKey));
             if (this.isTAB) {
                 // For Outgoing
-                this.myRunsPooler = poolerManager.getInstance();
+                this.myRunsPooler = PoolerManager.getInstance();
                 this.tabSManager = new tabTxtPaneManager();
                 this.poolOutgoingData = myRunsPooler.getOutgoingPool();
                 TABIndice = new Hashtable<String, String[]>();
@@ -303,7 +303,7 @@ public class paneTableMouseListener extends MouseAdapter {
                 updateTABPanes();
             } else {
                 // For Incoming
-                this.myRunsPooler = poolerManager.getInstance();
+                this.myRunsPooler = PoolerManager.getInstance();
                 this.tbaSManager = new tbaTxtPaneManager();
                 this.poolIncomingData = myRunsPooler.getIncomingPool();
                 TBAIndice = new Hashtable<String, String[]>();
