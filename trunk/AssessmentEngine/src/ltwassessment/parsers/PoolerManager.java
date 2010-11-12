@@ -29,6 +29,7 @@ import javax.xml.stream.XMLStreamReader;
 
 import ltwassessment.AppResource;
 
+import org.jdesktop.application.ResourceMap;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -39,7 +40,7 @@ import org.xml.sax.SAXException;
 /**
  * @author Darren Huang @QUT
  */
-public class poolerManager {
+public class PoolerManager {
 
     private final String sysPropertyKey = "isTABKey";
     private final String sysPropertyIsTopicWikiKey = "isTopicWikipedia";
@@ -59,31 +60,32 @@ public class poolerManager {
     private Hashtable<String, Hashtable<String, Hashtable<String, Vector<String[]>>>> poolOutgoingData = new Hashtable<String, Hashtable<String, Hashtable<String, Vector<String[]>>>>();
     //6) Incoming Pooling Data
     private Hashtable<String, Hashtable<String, Vector<String[]>>> poolIncomingData = new Hashtable<String, Hashtable<String, Vector<String[]>>>();
-    private String poolXMLPath = "";
+    private static String poolXMLPath = "";
 //    static resourcesManager resManager;
     static String afXmlPath = "";
-    static poolerManager instance = null;
+    static PoolerManager instance = null;
     
     static {
 //        resManager = resourcesManager.getInstance();
 
         //resourceMap = org.jdesktop.application.Application.getInstance(ltwassessment.ltwassessmentApp.class).getContext().getResourceMap(ltwassessmentView.class);
-        resourceXMLFile = AppResource.getInstance().getResourceMap().getString("ResourceXMLFilePath");
-        fileNotFoundXmlPath = AppResource.getInstance().getResourceMap().getString("fileNotFound.ReplacedXmlPath");
-        afTasnCollectionErrors = AppResource.getInstance().getResourceMap().getString("AssFormXml.taskCollectionError");
-
+    	ResourceMap resourceMap = AppResource.getInstance().getResourceMap();
+        resourceXMLFile = resourceMap.getString("ResourceXMLFilePath");
+        fileNotFoundXmlPath = resourceMap.getString("fileNotFound.ReplacedXmlPath");
+        afTasnCollectionErrors = resourceMap.getString("AssFormXml.taskCollectionError");
+        afXmlPath = resourceMap.getString("pool.wikipedia");
         afProperty = new String[]{"", "", "", ""};
     }
 
-    public static poolerManager getInstance() {
+    public static PoolerManager getInstance() {
         if (instance == null)
-            instance = new poolerManager();
+            instance = new PoolerManager();
         return instance;
     }
 
-    public static poolerManager getInstance(String xmlFile) {
+    public static PoolerManager getInstance(String xmlFile) {
         if (instance == null || (afXmlPath.length() > 0)/* && !xmlFile.equals(afXmlPath)*/)
-            instance = new poolerManager(xmlFile);
+            instance = new PoolerManager(xmlFile);
         return instance;
     }
 
@@ -95,12 +97,13 @@ public class poolerManager {
         System.err.println("errlog: " + content);
     }
 
-    public poolerManager(String xmlFile) {
+    public PoolerManager(String xmlFile) {
         afXmlPath = xmlFile;
         getPoolData();
     }
     
-    public poolerManager() {
+    public PoolerManager() {
+        afProperty = new String[]{"", "", "", ""};
         getPoolData();
     }
 
@@ -139,17 +142,17 @@ public class poolerManager {
                 xm.output(fos);
                 fos.close();
             } catch (IOException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (TranscodeException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (XPathEvalException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (NavException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (XPathParseException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (ModifyException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
         return pABepLinkStartP;
@@ -182,17 +185,17 @@ public class poolerManager {
                 xm.output(fos);
                 fos.close();
             } catch (IOException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (TranscodeException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (XPathEvalException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (NavException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (XPathParseException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (ModifyException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
         return pAnchorName;
@@ -225,17 +228,17 @@ public class poolerManager {
                 xm.output(fos);
                 fos.close();
             } catch (IOException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (TranscodeException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (XPathEvalException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (NavException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (XPathParseException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (ModifyException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
         return pAnchorStatus;
@@ -268,17 +271,17 @@ public class poolerManager {
                 xm.output(fos);
                 fos.close();
             } catch (IOException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (TranscodeException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (XPathEvalException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (NavException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (XPathParseException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (ModifyException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
         return pAnchorAllLinkStatus;
@@ -317,17 +320,17 @@ public class poolerManager {
                 xm.output(fos);
                 fos.close();
             } catch (IOException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (TranscodeException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (XPathEvalException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (NavException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (XPathParseException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (ModifyException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
         return pAnchorStartP;
@@ -369,17 +372,17 @@ public class poolerManager {
                 xm.output(fos);
                 fos.close();
             } catch (IOException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (TranscodeException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (XPathEvalException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (NavException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (XPathParseException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (ModifyException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
         return pAnchorStatus;
@@ -411,17 +414,17 @@ public class poolerManager {
                 xm.output(fos);
                 fos.close();
             } catch (IOException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (TranscodeException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (XPathEvalException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (NavException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (XPathParseException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (ModifyException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
         return pBepAllLinkStatus;
@@ -459,17 +462,17 @@ public class poolerManager {
                 xm.output(fos);
                 fos.close();
             } catch (IOException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (TranscodeException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (XPathEvalException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (NavException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (XPathParseException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (ModifyException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
         return pBepAnchorLinkStatus;
@@ -507,17 +510,17 @@ public class poolerManager {
                 xm.output(fos);
                 fos.close();
             } catch (IOException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (TranscodeException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (XPathEvalException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (NavException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (XPathParseException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (ModifyException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
         return pBepLinkAnchorName;
@@ -549,17 +552,17 @@ public class poolerManager {
                 xm.output(fos);
                 fos.close();
             } catch (IOException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (TranscodeException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (XPathEvalException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (NavException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (XPathParseException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             } catch (ModifyException ex) {
-                Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
         return pBepStatus;
@@ -625,7 +628,55 @@ public class poolerManager {
 //        }
         return xmlFilePath;
     }
+    
+    private HashMap<String, Vector<String[]>> getBepAnchorSetbyTopicID(String topicFileID, String afXmlPath) {
+        // Format:
+        // Bep(Offset:1114), Vector<String[]{Offset:1538, Length:9, Name:TITLE, ID:123017}+>
+        String afTitleTag = "crosslink-assessment";
+        String afTopicTag = "topic";
+        String afIncomingTag = "incominglinks";
+        String afBepTag = "bep";
+        String afFromAnchorTag = "fromanchor";
 
+        HashMap<String, Vector<String[]>> bepAnchorsHT = new HashMap<String, Vector<String[]>>();
+        Document xmlDoc = readingXMLFromFile(afXmlPath);
+
+        NodeList titleNodeList = xmlDoc.getElementsByTagName(afTitleTag);
+        for (int i = 0; i < titleNodeList.getLength(); i++) {
+            Element titleElmn = (Element) titleNodeList.item(i);
+            NodeList topicNodeList = titleElmn.getElementsByTagName(afTopicTag);
+            for (int j = 0; j < topicNodeList.getLength(); j++) {
+                Element topicElmn = (Element) topicNodeList.item(j);
+                String thisTopicID = topicElmn.getAttribute("file");
+                if (thisTopicID.equals(topicFileID)) {
+                    NodeList linksNodeList = topicElmn.getElementsByTagName(afIncomingTag);
+                    Element incomingElmn = (Element) linksNodeList.item(0);
+                    NodeList bepNodeList = incomingElmn.getElementsByTagName(afBepTag);
+                    String bepOffsetKey = "";
+                    Vector<String[]> bepToAnchorFileV;
+                    for (int k = 0; k < bepNodeList.getLength(); k++) {
+                        Element anchorElmn = (Element) bepNodeList.item(k);
+                        String bOffset = anchorElmn.getAttribute("boffset");
+                        bepOffsetKey = bOffset;
+                        bepToAnchorFileV = new Vector<String[]>();
+                        NodeList fromAnchorNodeList = anchorElmn.getElementsByTagName(afFromAnchorTag);
+                        for (int l = 0; l < fromAnchorNodeList.getLength(); l++) {
+                            Element fromAnchorElmn = (Element) fromAnchorNodeList.item(l);
+                            String taOffset = fromAnchorElmn.getAttribute("faoffset");
+                            String taLength = fromAnchorElmn.getAttribute("falength");
+                            String taAName = fromAnchorElmn.getAttribute("faanchor");
+                            Node taXmlFileIDTextNode = fromAnchorElmn.getFirstChild();
+                            String taFileID = taXmlFileIDTextNode.getTextContent();
+                            bepToAnchorFileV.add(new String[]{taOffset, taLength, taAName, taFileID});
+                        }
+                        bepAnchorsHT.put(bepOffsetKey, bepToAnchorFileV);
+                    }
+                }
+            }
+        }
+        return bepAnchorsHT;
+    }
+    
     public HashMap<String, Vector<String[]>> getAnchorFileSetByBep(String topicFileID) {
         // assign a Topic File ID (i.e. 112398)
         // to get Bep(Offset:1114), Vector<String[]{Offset:1538, Length:9, Name:TITLE, ID:123017, Status}+>
@@ -677,23 +728,28 @@ public class poolerManager {
                         String aOffset = anchorElmn.getAttribute( offsetAttributeName);
                         String aLength = anchorElmn.getAttribute(lengthAttributeName);
                         String anchorName = anchorElmn.getAttribute("name");
-                        anchorKey = aOffset + "_" + (Integer.valueOf(aOffset) + Integer.valueOf(aLength)) + "_" + anchorName;
+                        	
                         anchorToBEPV = new Vector<String[]>();
                         if (forValidationOrAssessment) {
+                        	anchorKey = aOffset + "_" + aLength;
                             NodeList subAnchorNodeList = anchorElmn.getElementsByTagName(afSubAnchorTag);
                             for (int l = 0; l < subAnchorNodeList.getLength(); l++) {
                                 Element subAnchorElmn = (Element) subAnchorNodeList.item(l);
                                 NodeList toBepNodeList = subAnchorElmn.getElementsByTagName(afToBepTag);
                                 for (int m = 0; m < toBepNodeList.getLength(); m++) {
                                     Element toBepElmn = (Element) toBepNodeList.item(m);
-                                    String tbOffset = toBepElmn.getAttribute(tboffsetAttributeName);
+                                    String tbOffset = toBepElmn.getAttribute(tboffsetAttributeName);                                
+                                    String tbStartP = toBepElmn.getAttribute("tbstartp");
+                                    String tbRel = toBepElmn.getAttribute("tbrel");
+
                                     Node tbXmlFileIDTextNode = toBepElmn.getFirstChild();
                                     String tbFileID = tbXmlFileIDTextNode.getTextContent();
-                                    anchorToBEPV.add(new String[]{tbFileID, tbOffset});
+                                    anchorToBEPV.add(new String[]{tbOffset, tbStartP, tbFileID, tbRel});
                                 }
                             }
                         }
                         else {
+                        	anchorKey = aOffset + "_" + (Integer.valueOf(aOffset) + Integer.valueOf(aLength)) + "_" + anchorName;
                             NodeList toBepNodeList = anchorElmn.getElementsByTagName(afToBepTag);
                             for (int m = 0; m < toBepNodeList.getLength(); m++) {
                                 Element toBepElmn = (Element) toBepNodeList.item(m);
@@ -716,53 +772,6 @@ public class poolerManager {
         return anchorBepsHT;
     }
     
-    private HashMap<String, Vector<String[]>> getBepAnchorSetbyTopicID(String topicFileID, String afXmlPath) {
-        // Format:
-        // Bep(Offset:1114), Vector<String[]{Offset:1538, Length:9, Name:TITLE, ID:123017}+>
-        String afTitleTag = "crosslink-assessment";
-        String afTopicTag = "topic";
-        String afIncomingTag = "incominglinks";
-        String afBepTag = "bep";
-        String afFromAnchorTag = "fromanchor";
-
-        HashMap<String, Vector<String[]>> bepAnchorsHT = new HashMap<String, Vector<String[]>>();
-        Document xmlDoc = readingXMLFromFile(afXmlPath);
-
-        NodeList titleNodeList = xmlDoc.getElementsByTagName(afTitleTag);
-        for (int i = 0; i < titleNodeList.getLength(); i++) {
-            Element titleElmn = (Element) titleNodeList.item(i);
-            NodeList topicNodeList = titleElmn.getElementsByTagName(afTopicTag);
-            for (int j = 0; j < topicNodeList.getLength(); j++) {
-                Element topicElmn = (Element) topicNodeList.item(j);
-                String thisTopicID = topicElmn.getAttribute("file");
-                if (thisTopicID.equals(topicFileID)) {
-                    NodeList linksNodeList = topicElmn.getElementsByTagName(afIncomingTag);
-                    Element incomingElmn = (Element) linksNodeList.item(0);
-                    NodeList bepNodeList = incomingElmn.getElementsByTagName(afBepTag);
-                    String bepOffsetKey = "";
-                    Vector<String[]> bepToAnchorFileV;
-                    for (int k = 0; k < bepNodeList.getLength(); k++) {
-                        Element anchorElmn = (Element) bepNodeList.item(k);
-                        String bOffset = anchorElmn.getAttribute("boffset");
-                        bepOffsetKey = bOffset;
-                        bepToAnchorFileV = new Vector<String[]>();
-                        NodeList fromAnchorNodeList = anchorElmn.getElementsByTagName(afFromAnchorTag);
-                        for (int l = 0; l < fromAnchorNodeList.getLength(); l++) {
-                            Element fromAnchorElmn = (Element) fromAnchorNodeList.item(l);
-                            String taOffset = fromAnchorElmn.getAttribute("faoffset");
-                            String taLength = fromAnchorElmn.getAttribute("falength");
-                            String taAName = fromAnchorElmn.getAttribute("faanchor");
-                            Node taXmlFileIDTextNode = fromAnchorElmn.getFirstChild();
-                            String taFileID = taXmlFileIDTextNode.getTextContent();
-                            bepToAnchorFileV.add(new String[]{taOffset, taLength, taAName, taFileID});
-                        }
-                        bepAnchorsHT.put(bepOffsetKey, bepToAnchorFileV);
-                    }
-                }
-            }
-        }
-        return bepAnchorsHT;
-    }
     // </editor-fold>
 
     // <editor-fold defaultstate="collapsed" desc="Pooling: poolSubmissionRuns()">
@@ -864,7 +873,7 @@ public class poolerManager {
                         anchorsHT = new Hashtable<String, Hashtable<String, Vector<String[]>>>();
                         subAnchorsVbyTopic = new Vector<String[]>();
                     } else if (tagName.equals("anchor")) {
-                        String[] thisAnchorProperty = new String[3];
+                        String[] thisAnchorProperty = new String[4];
                         for (int i = 0; i < xsr.getAttributeCount(); i++) {
                             String aName = xsr.getAttributeLocalName(i);
                             if (aName.equals("aname") || aName.equals("name")) {
@@ -873,6 +882,8 @@ public class poolerManager {
                                 thisAnchorProperty[0] = xsr.getAttributeValue(i);
                             } else if (aName.equals("alength") || aName.equals("length")) {
                                 thisAnchorProperty[1] = xsr.getAttributeValue(i);
+                            }  else if (xsr.getAttributeLocalName(i).equals("arel")) {
+                                thisAnchorProperty[3] = xsr.getAttributeValue(i);
                             }
                         }
                         anchorsVbyTopic.add(thisAnchorProperty);
@@ -887,30 +898,44 @@ public class poolerManager {
                             toBepsVbySubAnchor = new Vector<String[]>();                        	
                         }
                     } else if (tagName.equals("subanchor")) {
-                        String[] thisSubAnchorProperty = new String[3];
+                    	String[] thisSubAnchorProperty = new String[4];
                         for (int i = 0; i < xsr.getAttributeCount(); i++) {
-                            String aName = xsr.getAttributeLocalName(i);
-                            if (aName.equals("saname")) {
-                                thisSubAnchorProperty[2] = xsr.getAttributeValue(i);
-                            } else if (aName.equals("saoffset")) {
+                            if (xsr.getAttributeLocalName(i).equals("saoffset")) {
                                 thisSubAnchorProperty[0] = xsr.getAttributeValue(i);
-                            } else if (aName.equals("salength")) {
+                            } else if (xsr.getAttributeLocalName(i).equals("salength")) {
                                 thisSubAnchorProperty[1] = xsr.getAttributeValue(i);
+                            } else if (xsr.getAttributeLocalName(i).equals("saname")) {
+                                thisSubAnchorProperty[2] = xsr.getAttributeValue(i);
+                            } else if (xsr.getAttributeLocalName(i).equals("sarel")) {
+                                thisSubAnchorProperty[3] = xsr.getAttributeValue(i);
                             }
                         }
                         subAnchorsVbyTopic.add(thisSubAnchorProperty);
                         thisSubAnchorSet = thisSubAnchorProperty[0] + "_" + thisSubAnchorProperty[1];
                         toBepsVbySubAnchor = new Vector<String[]>();
                     } else if (tagName.equals(SubmissionFormat.getAftobeptag())) { // tobep , now tofile
-                        String[] thisToBepProperty = new String[4];
-                        for (int i = 0; i < xsr.getAttributeCount(); i++) {
-                            if (xsr.getAttributeLocalName(i).equals(SubmissionFormat.getTboffsetAttributeName())) {
-                                thisToBepProperty[0] = xsr.getAttributeValue(i);
+                        String[] thisToBepProperty = null;
+                        if (AppResource.forValidationOrAssessment) {
+                            thisToBepProperty = new String[3];
+                            for (int i = 0; i < xsr.getAttributeCount(); i++) {
+                                if (xsr.getAttributeLocalName(i).equals("tboffset")) {
+                                    thisToBepProperty[0] = xsr.getAttributeValue(i);
+                                } else if (xsr.getAttributeLocalName(i).equals("tbrel")) {
+                                    thisToBepProperty[2] = xsr.getAttributeValue(i);
+                                }
                             }
-                            else if (xsr.getAttributeLocalName(i).equals("lang"))
-                            	thisToBepProperty[2] = xsr.getAttributeValue(i);
-                        	else if (xsr.getAttributeLocalName(i).equals("title"))
-                        		thisToBepProperty[3] = xsr.getAttributeValue(i);
+                        }
+                        else {
+	                        thisToBepProperty = new String[4];
+	                        for (int i = 0; i < xsr.getAttributeCount(); i++) {
+	                            if (xsr.getAttributeLocalName(i).equals(SubmissionFormat.getTboffsetAttributeName())) {
+	                                thisToBepProperty[0] = xsr.getAttributeValue(i);
+	                            }
+	                            else if (xsr.getAttributeLocalName(i).equals("lang"))
+	                            	thisToBepProperty[2] = xsr.getAttributeValue(i);
+	                        	else if (xsr.getAttributeLocalName(i).equals("title"))
+	                        		thisToBepProperty[3] = xsr.getAttributeValue(i);
+	                        }
                         }
                         xsr.next();
                         if (xsr.isCharacters()) {
@@ -922,12 +947,15 @@ public class poolerManager {
                         bepOffsetVbyTopic = new Vector<String[]>();
                         bepsHT = new Hashtable<String, Vector<String[]>>();
                     } else if (tagName.equals("bep")) {
-                        String[] thisBepProperty = new String[1];
+                        String[] thisBepProperty = new String[2];
                         for (int i = 0; i < xsr.getAttributeCount(); i++) {
                             if (xsr.getAttributeLocalName(i).equals("boffset")) {
                                 thisBepProperty[0] = xsr.getAttributeValue(i);
                                 thisInBepOffset = xsr.getAttributeValue(i);
                             }
+	                        else if (xsr.getAttributeLocalName(i).equals("borel")) {
+	                            thisBepProperty[1] = xsr.getAttributeValue(i);
+	                        }
                         }
                         bepOffsetVbyTopic.add(thisBepProperty);
                         fromAnchorsV = new Vector<String[]>();
@@ -981,11 +1009,11 @@ public class poolerManager {
             }
             in.close();
         } catch (IOException ex) {
-            Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
         } catch (XMLStreamException ex) {
-            Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
         } catch (Exception ex) { 
-        	Logger.getLogger(poolerManager.class.getName()).log(Level.SEVERE, null, ex);
+        	Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 }

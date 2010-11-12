@@ -18,7 +18,7 @@ import javax.swing.text.StyledDocument;
 import ltwassessment.AppResource;
 import ltwassessment.parsers.FOLTXTMatcher;
 import ltwassessment.parsers.Xml2Html;
-import ltwassessment.parsers.poolerManager;
+import ltwassessment.parsers.PoolerManager;
 import ltwassessment.parsers.resourcesManager;
 import ltwassessment.utility.highlightPainters;
 import ltwassessment.utility.tabTxtPaneManager;
@@ -29,7 +29,7 @@ import ltwassessment.utility.tabTxtPaneManager;
 public class tbaTxtPaneManager {
 
     protected final int bepLength = 4;
-    private poolerManager myRunsPooler;
+    private PoolerManager myRunsPooler;
     private resourcesManager myRSCManager;
     private FOLTXTMatcher myFOLMatcher;
     private String wikipediaCollTitle = "";
@@ -67,7 +67,7 @@ public class tbaTxtPaneManager {
         this.contentType = AppResource.getInstance().getResourceMap().getString("html.content.type");
         this.topicBepsHTPrefix = AppResource.getInstance().getResourceMap().getString("topicBepsHT.Prefix");
 
-        this.myRunsPooler = poolerManager.getInstance();
+        this.myRunsPooler = PoolerManager.getInstance();
         this.myRSCManager = resourcesManager.getInstance();
         this.myFOLMatcher = new FOLTXTMatcher();
 

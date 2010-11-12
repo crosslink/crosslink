@@ -83,7 +83,7 @@ public class resourcesManager {
     private Hashtable<String, Hashtable<String, Hashtable<String, Vector<String[]>>>> poolOutgoingData = new Hashtable<String, Hashtable<String, Hashtable<String, Vector<String[]>>>>();
     private Hashtable<String, Vector<String[]>> topicAllBEPs = new Hashtable<String, Vector<String[]>>();
     private Hashtable<String, Hashtable<String, Vector<String[]>>> poolIncomingData = new Hashtable<String, Hashtable<String, Vector<String[]>>>();
-    private poolerManager pooler = null;
+    private PoolerManager pooler = PoolerManager.getInstance();
     
 	private String wikipediaCollTitle = "";
     private String afTopicPrefixTag = "topic";
@@ -130,7 +130,7 @@ public class resourcesManager {
         wikipediaPool = resourceMap.getString("pool.wikipedia");
         teAraPool = resourceMap.getString("pool.teara");
 
-//        pooler = poolerManager.getInstance();
+//        pooler = PoolerManager.getInstance();
 //        // ---------------------------------------------------------------------
 //        // Hashtable<String, Hashtable<String, Hashtable<String, Vector<String[]>>>>
 //        // topicFileID, <PoolAnchor_OL, <Anchor_OL, V<String[]{Offset, fileID, tbrel}
@@ -141,6 +141,67 @@ public class resourcesManager {
 //        // Hashtable<String, Hashtable<String, Vector<String[]>>>
 //        // topifFileID, <BEP_Offset, V<String[]{Offset, Length, AName, fileID, barel}
 //        poolIncomingData = pooler.getIncomingPool();        
+    }
+    
+    // =========================================================================
+    // =========================================================================
+    // <editor-fold defaultstate="collapsed" desc="Update RSC">
+    public void updateOutgoingCompletion(String outgoingCompletion) {
+        try {
+            Document doc = readingXMLFromFile(resourceXMLFile);
+
+            TransformerFactory tFactory = TransformerFactory.newInstance();
+            Transformer tformer = tFactory.newTransformer();
+            Source source = new DOMSource(doc);
+            Result result = new StreamResult(new FileWriter(resourceXMLFile));
+
+            NodeList titleNodeList = doc.getElementsByTagName(afTitleTag);
+            for (int i = 0; i < titleNodeList.getLength(); i++) {
+                Element titleElmn = (Element) titleNodeList.item(i);
+                NodeList subNodeList = titleElmn.getElementsByTagName("outgoingCompletion");
+                Element subElmn = (Element) subNodeList.item(0);
+                // add NEW
+                Element clonedElmn = (Element) doc.createElement("outgoingCompletion");
+                subElmn.getParentNode().insertBefore(clonedElmn, subElmn.getNextSibling());
+                clonedElmn.appendChild(doc.createTextNode(outgoingCompletion));
+                // remove OLD element
+                subElmn.getParentNode().removeChild(subElmn);
+                tformer.transform(source, result);
+            }
+        } catch (IOException ex) {
+            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (TransformerException ex) {
+            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    public void updateIncomingCompletion(String incomingCompletion) {
+        try {
+            Document doc = readingXMLFromFile(resourceXMLFile);
+
+            TransformerFactory tFactory = TransformerFactory.newInstance();
+            Transformer tformer = tFactory.newTransformer();
+            Source source = new DOMSource(doc);
+            Result result = new StreamResult(new FileWriter(resourceXMLFile));
+
+            NodeList titleNodeList = doc.getElementsByTagName(afTitleTag);
+            for (int i = 0; i < titleNodeList.getLength(); i++) {
+                Element titleElmn = (Element) titleNodeList.item(i);
+                NodeList subNodeList = titleElmn.getElementsByTagName("incomingCompletion");
+                Element subElmn = (Element) subNodeList.item(0);
+                // add NEW
+                Element clonedElmn = (Element) doc.createElement("incomingCompletion");
+                subElmn.getParentNode().insertBefore(clonedElmn, subElmn.getNextSibling());
+                clonedElmn.appendChild(doc.createTextNode(incomingCompletion));
+                // remove OLD element
+                subElmn.getParentNode().removeChild(subElmn);
+                tformer.transform(source, result);
+            }
+        } catch (IOException ex) {
+            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (TransformerException ex) {
+            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     // =========================================================================
@@ -661,67 +722,6 @@ public class resourcesManager {
 
     }
     
-    // =========================================================================
-    // =========================================================================
-    // <editor-fold defaultstate="collapsed" desc="Update RSC">
-    public void updateOutgoingCompletion(String outgoingCompletion) {
-        try {
-            Document doc = readingXMLFromFile(resourceXMLFile);
-
-            TransformerFactory tFactory = TransformerFactory.newInstance();
-            Transformer tformer = tFactory.newTransformer();
-            Source source = new DOMSource(doc);
-            Result result = new StreamResult(new FileWriter(resourceXMLFile));
-
-            NodeList titleNodeList = doc.getElementsByTagName(afTitleTag);
-            for (int i = 0; i < titleNodeList.getLength(); i++) {
-                Element titleElmn = (Element) titleNodeList.item(i);
-                NodeList subNodeList = titleElmn.getElementsByTagName("outgoingCompletion");
-                Element subElmn = (Element) subNodeList.item(0);
-                // add NEW
-                Element clonedElmn = (Element) doc.createElement("outgoingCompletion");
-                subElmn.getParentNode().insertBefore(clonedElmn, subElmn.getNextSibling());
-                clonedElmn.appendChild(doc.createTextNode(outgoingCompletion));
-                // remove OLD element
-                subElmn.getParentNode().removeChild(subElmn);
-                tformer.transform(source, result);
-            }
-        } catch (IOException ex) {
-            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (TransformerException ex) {
-            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }
-
-    public void updateIncomingCompletion(String incomingCompletion) {
-        try {
-            Document doc = readingXMLFromFile(resourceXMLFile);
-
-            TransformerFactory tFactory = TransformerFactory.newInstance();
-            Transformer tformer = tFactory.newTransformer();
-            Source source = new DOMSource(doc);
-            Result result = new StreamResult(new FileWriter(resourceXMLFile));
-
-            NodeList titleNodeList = doc.getElementsByTagName(afTitleTag);
-            for (int i = 0; i < titleNodeList.getLength(); i++) {
-                Element titleElmn = (Element) titleNodeList.item(i);
-                NodeList subNodeList = titleElmn.getElementsByTagName("incomingCompletion");
-                Element subElmn = (Element) subNodeList.item(0);
-                // add NEW
-                Element clonedElmn = (Element) doc.createElement("incomingCompletion");
-                subElmn.getParentNode().insertBefore(clonedElmn, subElmn.getNextSibling());
-                clonedElmn.appendChild(doc.createTextNode(incomingCompletion));
-                // remove OLD element
-                subElmn.getParentNode().removeChild(subElmn);
-                tformer.transform(source, result);
-            }
-        } catch (IOException ex) {
-            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (TransformerException ex) {
-            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }
-
     public void updateTABNavIndex(String topicID, String[] pAnchorOLSA, String[] linkBepOID) {
         // Format: new String[]{0, 1_2_0_0}
         String pAnchorO = pAnchorOLSA[0];
