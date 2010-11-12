@@ -35,7 +35,7 @@ import ltwassessmenttool.listener.CaretListenerLabel;
 import ltwassessmenttool.listener.linkPaneMouseListener;
 import ltwassessmenttool.listener.topicPaneMouseListener;
 import ltwassessment.parsers.FOLTXTMatcher;
-import ltwassessment.parsers.poolerManager;
+import ltwassessment.parsers.PoolerManager;
 import ltwassessment.parsers.resourcesManager;
 import ltwassessment.utility.ObservableSingleton;
 import ltwassessment.utility.fieldUpdateObserver;
@@ -81,7 +81,7 @@ public class LTWAssessmentToolView extends FrameView {
     // For Incoming: [0]:Offset
     // -------------------------------------------------------------------------
     // Declare External Classes
-    private poolerManager myPooler;
+    private PoolerManager myPooler;
     private resourcesManager rscManager;
     private highlightPainters painters;
     private ObservableSingleton os = null;
@@ -155,7 +155,7 @@ public class LTWAssessmentToolView extends FrameView {
         progressBar.setVisible(false);
         // =====================================================================
         rscManager = resourcesManager.getInstance();
-        myPooler = poolerManager.getInstance();
+        myPooler = PoolerManager.getInstance();
         // =====================================================================
         // when the tool firstly starts:
         // For Link-the-Wikipedia A2B
@@ -189,9 +189,6 @@ public class LTWAssessmentToolView extends FrameView {
             String[] tabCompletedRatio = this.rscManager.getTABCompletedRatio();
             this.rscManager.updateOutgoingCompletion(tabCompletedRatio[0] + " : " + tabCompletedRatio[1]);
             System.setProperty(sysPropertyTABCompletedRatioKey, tabCompletedRatio[0] + "_" + tabCompletedRatio[1]);
-            String[] tbaCompletedRatio = this.rscManager.getTBACompletedRatio();
-            this.rscManager.updateIncomingCompletion(tbaCompletedRatio[0] + " : " + tbaCompletedRatio[1]);
-            System.setProperty(sysPropertyTBACompletedRatioKey, tbaCompletedRatio[0] + "_" + tbaCompletedRatio[1]);
             // -----------------------------------------------------------------
             if (rscManager.getLinkingMode().toLowerCase().equals("outgoing")) {
                 painters = new highlightPainters();
@@ -211,7 +208,13 @@ public class LTWAssessmentToolView extends FrameView {
                 this.inRadioBtn.setSelected(false);
                 // -------------------------------------------------------------
                 setOutgoingTAB();
-            } else if (rscManager.getLinkingMode().toLowerCase().equals("incoming")) {
+            } 
+            // we don't need incoming for crosslink
+            else if (rscManager.getLinkingMode().toLowerCase().equals("incoming")) {
+                String[] tbaCompletedRatio = this.rscManager.getTBACompletedRatio();
+                this.rscManager.updateIncomingCompletion(tbaCompletedRatio[0] + " : " + tbaCompletedRatio[1]);
+                System.setProperty(sysPropertyTBACompletedRatioKey, tbaCompletedRatio[0] + "_" + tbaCompletedRatio[1]);
+
                 painters = new highlightPainters();
                 // -------------------------------------------------------------
                 // scrS, String[]{O,S, num}

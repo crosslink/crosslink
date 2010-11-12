@@ -31,7 +31,7 @@ import javax.swing.text.StyledDocument;
 import ltwassessmenttool.LTWAssessmentToolView;
 import ltwassessment.parsers.FOLTXTMatcher;
 import ltwassessment.parsers.Xml2Html;
-import ltwassessment.parsers.poolerManager;
+import ltwassessment.parsers.PoolerManager;
 import ltwassessment.parsers.resourcesManager;
 import ltwassessment.utility.ObservableSingleton;
 import ltwassessment.utility.highlightPainters;
@@ -77,7 +77,7 @@ public class topicPaneMouseListener implements MouseInputListener {
     private HashMap<String, String> bepSEPosAssStatusHM = new HashMap<String, String>();
     private HashMap<String, Vector<String[]>> anchorFileSAVBySCRBepOLHM = new HashMap<String, Vector<String[]>>();
     // Import Extenal Classes
-    private poolerManager poolerManager = poolerManager.getInstance();
+    private PoolerManager poolerManager = poolerManager.getInstance();
     private poolUpdater pUpdater = new poolUpdater();
     private resourcesManager myRSCManager = resourcesManager.getInstance();
     private FOLTXTMatcher myFOLMatcher = new FOLTXTMatcher();
