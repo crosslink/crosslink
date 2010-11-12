@@ -25,7 +25,7 @@ import javax.xml.parsers.ParserConfigurationException;
 
 import ltwassessment.AppResource;
 import ltwassessment.parsers.FOLTXTMatcher;
-import ltwassessment.parsers.poolerManager;
+import ltwassessment.parsers.PoolerManager;
 import ltwassessment.parsers.resourcesManager;
 
 import org.w3c.dom.Document;
@@ -44,7 +44,7 @@ public class FOLTXTMatcher {
     private final String sysPropertyIsTopicWikiKey = "isTopicWikipedia";
     private final String sysPropertyIsLinkWikiKey = "isLinkWikipedia";
     private resourcesManager myRSCManager;
-    private poolerManager myPooler;
+    private PoolerManager myPooler;
     private Vector<String> xmlSingleCharV = new Vector<String>();
     private String wikipediaTopicFileDir = "";
     private String tempFileDir = "";
@@ -64,7 +64,7 @@ public class FOLTXTMatcher {
     public FOLTXTMatcher() {
 
         this.myRSCManager = resourcesManager.getInstance();
-        this.myPooler = poolerManager.getInstance();
+        this.myPooler = PoolerManager.getInstance();
 
         //org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(ltwassessment.ltwassessmentApp.class).getContext().getResourceMap(ltwassessmentView.class);
         this.wikipediaTopicFileDir = AppResource.getInstance().getResourceMap().getString("wikipedia.topics.folder") + File.separator;

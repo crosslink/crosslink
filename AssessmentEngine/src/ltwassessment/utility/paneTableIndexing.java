@@ -7,7 +7,7 @@ import java.util.Vector;
 
 import ltwassessment.AppResource;
 import ltwassessment.parsers.FOLTXTMatcher;
-import ltwassessment.parsers.poolerManager;
+import ltwassessment.parsers.PoolerManager;
 import ltwassessment.parsers.resourcesManager;
 
 /**
@@ -16,7 +16,7 @@ import ltwassessment.parsers.resourcesManager;
 public class paneTableIndexing {
     // External Classes
 
-    private poolerManager myRunsPooler;
+    private PoolerManager myRunsPooler;
     private resourcesManager myRSCManager;
     private FOLTXTMatcher myFOLMatcher;
     // Global Variables
@@ -63,7 +63,7 @@ public class paneTableIndexing {
         this.wikipediaCollTitle = AppResource.getInstance().getResourceMap().getString("collectionType.Wikipedia");
         this.teAraCollTitle = AppResource.getInstance().getResourceMap().getString("collectionType.TeAra");
         // ---------------------------------------------------------------------
-        this.myRunsPooler = poolerManager.getInstance();
+        this.myRunsPooler = PoolerManager.getInstance();
         this.myRSCManager = resourcesManager.getInstance();
         this.myFOLMatcher = new FOLTXTMatcher();
         // [0]:participant-id, [1]:run-id, [2]:task, [3]:collection

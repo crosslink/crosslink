@@ -12,6 +12,10 @@ import ltwassessment.AppResource;
 public class AdjustFont {
 	private static Font zhFontOrigin = null;
 	private static Font zhFont = null;
+//	private static Font jaFontOrigin = null;
+//	private static Font jaFont = null;
+//	private static Font koFontOrigin = null;
+//	private static Font koFont = null;	
 	private static final String zhFontFile = "wqy-zenhei.ttc";
 	private static AdjustFont instance = null;
 	
@@ -36,7 +40,7 @@ public class AdjustFont {
 	}
 
 	public static void setFont(JComponent jCom) {
-		if (AppResource.targetLang.equals("zh"))
+		if (AppResource.targetLang.equals("zh") || AppResource.targetLang.equals("jp") || AppResource.targetLang.equals("ko"))
 			jCom.setFont(zhFont);
 		//else (AppResource.targetLang.equals("zh"))
 		if (jCom instanceof JTextPane)
