@@ -36,7 +36,7 @@ import javax.swing.text.StyledDocument;
 import ltwassessmenttool.LTWAssessmentToolView;
 import ltwassessment.parsers.FOLTXTMatcher;
 import ltwassessment.parsers.Xml2Html;
-import ltwassessment.parsers.poolerManager;
+import ltwassessment.parsers.PoolerManager;
 import ltwassessment.parsers.resourcesManager;
 import ltwassessment.utility.BrowserControl;
 import ltwassessment.utility.ObservableSingleton;
@@ -70,7 +70,7 @@ public class linkPaneMouseListener implements MouseInputListener {
     private resourcesManager myRSCManager;
     private FOLTXTMatcher myFolMatcher;
     private poolUpdater myPoolUpdater;
-    private poolerManager myPoolManager;
+    private PoolerManager myPoolManager;
     private tabTxtPaneManager myTABTxtPaneManager;
     private tbaTxtPaneManager myTBATxtPaneManager;
     private String topicID = "";
@@ -157,7 +157,7 @@ public class linkPaneMouseListener implements MouseInputListener {
         myRSCManager = resourcesManager.getInstance();
         myFolMatcher = new FOLTXTMatcher();
         myPoolUpdater = new poolUpdater();
-        myPoolManager = poolerManager.getInstance();
+        myPoolManager = PoolerManager.getInstance();
         myTABTxtPaneManager = new tabTxtPaneManager();
         myTBATxtPaneManager = new tbaTxtPaneManager();
         this.os = ObservableSingleton.getInstance();
