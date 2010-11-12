@@ -6,7 +6,7 @@ import java.util.Vector;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 
-import ltwassessment.parsers.poolerManager;
+import ltwassessment.parsers.PoolerManager;
 import ltwassessment.parsers.resourcesManager;
 
 import org.jdesktop.application.Action;
@@ -183,7 +183,7 @@ public class LTWAssessmentSetForm extends javax.swing.JDialog {
 
     private void updatePoolerToResourceXML() {
         org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(ltwassessmenttool.LTWAssessmentToolApp.class).getContext().getResourceMap(LTWAssessmentToolView.class);
-        poolerManager myPooler = poolerManager.getInstance();
+        PoolerManager myPooler = PoolerManager.getInstance();
         afProperty = myPooler.getPoolProperty();    // [0]:participant-id, [1]:run-id, [2]:task, [3]:collection
         RunTopics = myPooler.getAllTopicsInPool();  // Vector<String[]>: [0]:File, [1]:Name
         // ---------------------------------------------------------------------

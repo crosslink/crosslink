@@ -53,7 +53,7 @@ import ltwassessment.font.AdjustFont;
 import ltwassessment.parsers.FOLTXTMatcher;
 import ltwassessment.parsers.Xml2Html;
 import ltwassessment.parsers.assessmentFormXml;
-import ltwassessment.parsers.poolerManager;
+import ltwassessment.parsers.PoolerManager;
 import ltwassessment.parsers.resourcesManager;
 import ltwassessment.utility.AttributiveCellRenderer;
 import ltwassessment.utility.InteractiveRenderer;
@@ -106,7 +106,7 @@ public class LTWAssessmentToolView extends FrameView {
     // For Incoming: [0]:Offset
     // -------------------------------------------------------------------------
     // Declare External Classes
-    private poolerManager myPooler;
+    private PoolerManager myPooler;
     private FOLTXTMatcher folMatcher;
     private paneTableManager myPaneTableManager;
     private paneTableIndexing paneTableIndexing;
@@ -874,9 +874,9 @@ public class LTWAssessmentToolView extends FrameView {
     private void updatePoolerToResourceXML(String poolFile) {
 		try {
 	    	if (poolFile == null || poolFile.length() == 0)
-				myPooler = poolerManager.getInstance();
+				myPooler = PoolerManager.getInstance();
 			else
-	    		myPooler = poolerManager.getInstance(poolFile);
+	    		myPooler = PoolerManager.getInstance(poolFile);
 		} catch (Exception e) {
 			e.printStackTrace();
 		} 

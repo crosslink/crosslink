@@ -27,7 +27,7 @@ import javax.swing.text.StyledDocument;
 
 import ltwassessment.parsers.FOLTXTMatcher;
 import ltwassessment.parsers.Xml2Html;
-import ltwassessment.parsers.poolerManager;
+import ltwassessment.parsers.PoolerManager;
 import ltwassessment.parsers.resourcesManager;
 import ltwassessment.utility.AttributiveCellRenderer;
 import ltwassessment.utility.highlightPainters;
@@ -69,7 +69,7 @@ public class topicPaneMouseListener implements MouseInputListener {
     HashMap<String, Vector<String[]>> anchorFileSAVBySCRBepOLHM = new HashMap<String, Vector<String[]>>();
     // Import Extenal Classes
     private paneTableIndexing myPaneTableIndexing;
-    private poolerManager myPooler = poolerManager.getInstance();
+    private PoolerManager myPooler = PoolerManager.getInstance();
     private resourcesManager myRSCManager = resourcesManager.getInstance();
     private FOLTXTMatcher myFOLMatcher = new FOLTXTMatcher();
     // Declair Highlight Painter
