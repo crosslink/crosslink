@@ -454,11 +454,11 @@ public class topicPaneMouseListener implements MouseInputListener {
         newTABFieldValues.add(anchorName);
         newTABFieldValues.add(anchorFileID);
         String pageTitle = "";
-        if (Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey))) {
+//        if (Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey))) {
             pageTitle = this.myRSCManager.getWikipediaPageTitle(anchorFileID);
-        } else {
-            pageTitle = this.myRSCManager.getTeAraFilePathByName(anchorFileID);
-        }
+//        } else {
+//            pageTitle = this.myRSCManager.getTeAraFilePathByName(anchorFileID);
+//        }
 
         newTABFieldValues.add(pageTitle.trim());
         String[] pAnchorCompletionSA = this.myRSCManager.getIncomingCompletion();
@@ -827,11 +827,11 @@ public class topicPaneMouseListener implements MouseInputListener {
                 newTABFieldValues.add(anchorName);
                 newTABFieldValues.add(anchorFileID);
                 String pageTitle = "";
-                if (Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey))) {
+//                if (Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey))) {
                     pageTitle = this.myRSCManager.getWikipediaPageTitle(anchorFileID);
-                } else {
-                    pageTitle = this.myRSCManager.getTeAraFilePathByName(anchorFileID);
-                }
+//                } else {
+//                    pageTitle = this.myRSCManager.getTeAraFilePathByName(anchorFileID);
+//                }
 
                 newTABFieldValues.add(pageTitle.trim());
                 String[] pAnchorCompletionSA = this.myRSCManager.getIncomingCompletion();
@@ -877,11 +877,11 @@ public class topicPaneMouseListener implements MouseInputListener {
                 newTABFieldValues.add(anchorName);
                 newTABFieldValues.add(anchorFileID);
                 String pageTitle = "";
-                if (Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey))) {
+//                if (Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey))) {
                     pageTitle = this.myRSCManager.getWikipediaPageTitle(anchorFileID);
-                } else {
-                    pageTitle = this.myRSCManager.getTeAraFilePathByName(anchorFileID);
-                }
+//                } else {
+//                    pageTitle = this.myRSCManager.getTeAraFilePathByName(anchorFileID);
+//                }
 
                 newTABFieldValues.add(pageTitle.trim());
                 String[] pAnchorCompletionSA = this.myRSCManager.getIncomingCompletion();

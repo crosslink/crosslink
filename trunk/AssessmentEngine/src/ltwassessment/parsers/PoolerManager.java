@@ -799,8 +799,10 @@ public class PoolerManager {
     private void getPoolData() {
         try {
             poolXMLPath = afXmlPath;//resManager.getPoolXMLFile();
-            if (poolXMLPath.length() == 0 || !new File(poolXMLPath).exists())
+            if (poolXMLPath.length() == 0 || !new File(poolXMLPath).exists()) {
+            	System.err.println("\"" + poolXMLPath + "\" doesn't exist!");
                 return;
+            }
             	//throw new FileNotFoundException();
             XMLInputFactory inputFactory = XMLInputFactory.newInstance();
             InputStream in = new FileInputStream(poolXMLPath);

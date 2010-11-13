@@ -186,11 +186,11 @@ public class LTWAssessmentToolView extends FrameView {
             // populate Topic & Link Panes
             // -----------------------------------------------------------------
             // new String[]{completed, total}
-            String[] tabCompletedRatio = this.rscManager.getTABCompletedRatio();
-            this.rscManager.updateOutgoingCompletion(tabCompletedRatio[0] + " : " + tabCompletedRatio[1]);
-            System.setProperty(sysPropertyTABCompletedRatioKey, tabCompletedRatio[0] + "_" + tabCompletedRatio[1]);
             // -----------------------------------------------------------------
             if (rscManager.getLinkingMode().toLowerCase().equals("outgoing")) {
+                String[] tabCompletedRatio = this.rscManager.getTABCompletedRatio();
+                this.rscManager.updateOutgoingCompletion(tabCompletedRatio[0] + " : " + tabCompletedRatio[1]);
+                System.setProperty(sysPropertyTABCompletedRatioKey, tabCompletedRatio[0] + "_" + tabCompletedRatio[1]);
                 painters = new highlightPainters();
                 // -------------------------------------------------------------
                 // scrSE, String[]{O,L,TXT,S,E,num}
