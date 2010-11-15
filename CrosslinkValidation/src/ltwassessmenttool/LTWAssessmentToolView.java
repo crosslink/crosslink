@@ -280,6 +280,8 @@ public class LTWAssessmentToolView extends FrameView {
         statusMessageLabel = new javax.swing.JLabel();
         statusAnimationLabel = new javax.swing.JLabel();
         progressBar = new javax.swing.JProgressBar();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextPane1 = new javax.swing.JTextPane();
         buttonGroup1 = new javax.swing.ButtonGroup();
 
         org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(ltwassessmenttool.LTWAssessmentToolApp.class).getContext().getResourceMap(LTWAssessmentToolView.class);
@@ -330,18 +332,6 @@ public class LTWAssessmentToolView extends FrameView {
                 {null, null, null, null},
                 {null, null, null, null},
                 {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},                
                 {null, null, null, null}
             },
             new String [] {
@@ -415,9 +405,9 @@ public class LTWAssessmentToolView extends FrameView {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(lblTargetPage, javax.swing.GroupLayout.DEFAULT_SIZE, 167, Short.MAX_VALUE)))
+                        .addComponent(lblTargetPage, javax.swing.GroupLayout.DEFAULT_SIZE, 1065, Short.MAX_VALUE)))
                 .addContainerGap())
-            .addComponent(jSplitPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1025, Short.MAX_VALUE)
+            .addComponent(jSplitPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1923, Short.MAX_VALUE)
         );
         mainPanelLayout.setVerticalGroup(
             mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -434,7 +424,7 @@ public class LTWAssessmentToolView extends FrameView {
                     .addComponent(lblPoolAnchor)
                     .addComponent(jLabel3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jSplitPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 594, Short.MAX_VALUE))
+                .addComponent(jSplitPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 492, Short.MAX_VALUE))
         );
 
         menuBar.setBackground(resourceMap.getColor("menuBar.background")); // NOI18N
@@ -558,14 +548,20 @@ public class LTWAssessmentToolView extends FrameView {
 
         progressBar.setName("progressBar"); // NOI18N
 
+        jScrollPane1.setName("jScrollPane1"); // NOI18N
+
+        jTextPane1.setName("jTextPane1"); // NOI18N
+        jScrollPane1.setViewportView(jTextPane1);
+
         javax.swing.GroupLayout statusPanelLayout = new javax.swing.GroupLayout(statusPanel);
         statusPanel.setLayout(statusPanelLayout);
         statusPanelLayout.setHorizontalGroup(
             statusPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(statusPanelSeparator, javax.swing.GroupLayout.DEFAULT_SIZE, 1025, Short.MAX_VALUE)
+            .addComponent(statusPanelSeparator, javax.swing.GroupLayout.DEFAULT_SIZE, 1923, Short.MAX_VALUE)
             .addGroup(statusPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(statusMessageLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 452, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1350, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(statusMessageLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)
                 .addGap(387, 387, 387)
                 .addComponent(progressBar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -576,12 +572,18 @@ public class LTWAssessmentToolView extends FrameView {
             statusPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(statusPanelLayout.createSequentialGroup()
                 .addComponent(statusPanelSeparator, javax.swing.GroupLayout.PREFERRED_SIZE, 2, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(statusPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(statusMessageLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(statusAnimationLabel)
-                    .addComponent(progressBar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(12, 12, 12))
+                .addGroup(statusPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(statusPanelLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(statusPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(statusMessageLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(statusAnimationLabel)
+                            .addComponent(progressBar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(15, 15, 15))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, statusPanelLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 6, Short.MAX_VALUE)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())))
         );
 
         setComponent(mainPanel);
@@ -947,6 +949,8 @@ public class LTWAssessmentToolView extends FrameView {
 
     // <editor-fold defaultstate="collapsed" desc="Pre-Variables-Declaration">
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTable anchorBepTable;
+    private javax.swing.JScrollPane anchorBepTablePane;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JMenuItem corpusMenuItem;
     private javax.swing.JRadioButtonMenuItem inRadioBtn;
@@ -959,7 +963,9 @@ public class LTWAssessmentToolView extends FrameView {
     private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItemJa;
     private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItemKo;
     private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItemZh;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSplitPane jSplitPane1;
+    private javax.swing.JTextPane jTextPane1;
     private javax.swing.JLabel lblPoolAnchor;
     private javax.swing.JLabel lblTargetPage;
     private javax.swing.JLabel lblTopicID;
@@ -967,8 +973,6 @@ public class LTWAssessmentToolView extends FrameView {
     private javax.swing.JMenu linkMenu;
     private javax.swing.JTextPane linkTextPane;
     private javax.swing.JScrollPane linkTextScrollPane;
-    private javax.swing.JScrollPane anchorBepTablePane;
-    private javax.swing.JTable anchorBepTable;
     private javax.swing.JMenuItem loadMenuItem;
     private javax.swing.JPanel mainPanel;
     private javax.swing.JMenuBar menuBar;

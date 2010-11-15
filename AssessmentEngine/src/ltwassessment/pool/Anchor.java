@@ -8,6 +8,8 @@ public class Anchor {
 	private int length = 0;
 	private String name = "";
 	
+	private boolean valid = false;
+
 	Vector<Target> targets = null;
 	
 	public int getOffset() {
@@ -41,4 +43,12 @@ public class Anchor {
 	public void insertTarget(Target target) {
 		targets.add(target);
 	}
+	
+	public boolean isValid() {
+		return valid;
+	}
+	
+	public void setValid(boolean valid) {
+		this.valid = valid;
+	}	
 }
