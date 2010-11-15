@@ -7,6 +7,7 @@ public class Anchor {
 	private int offset = 0;
 	private int length = 0;
 	private String name = "";
+	private int rank = 0;
 	
 	private boolean valid = false;
 
@@ -50,5 +51,13 @@ public class Anchor {
 	
 	public void setValid(boolean valid) {
 		this.valid = valid;
+	}
+
+	public void setRank(int rank) {
+		this.rank = rank;
+	}
+
+	public int getRank() {
+		return rank;
 	}	
 }

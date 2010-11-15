@@ -21,10 +21,23 @@ public class LinkedAnchorList {
 		}		
 	}
 	
-	public int after(int offset) {
-		int mid = anchorList.size() / 2;
+	public int after(int offset, int low, int high) {
+		int mid = (high - low) / 2;
 		
-		if ()
-		return -1;
+		Anchor midAnchor = anchorList.get(mid);
+		if (midAnchor.getOffset() > offset) {
+			if (mid == low)
+				return mid;
+			return after(offset, low, mid);
+		}
+		if (mid == high)
+			return -1;
+		return after(offset, mid, high);
+	}
+	
+	public int after(int offset) {
+		int low = 0, high = anchorList.size() - 1;
+
+		return after(offset, 0, high);
 	}
 }
