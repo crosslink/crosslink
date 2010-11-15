@@ -83,7 +83,7 @@ public class resourcesManager {
     private Hashtable<String, Hashtable<String, Hashtable<String, Vector<String[]>>>> poolOutgoingData = new Hashtable<String, Hashtable<String, Hashtable<String, Vector<String[]>>>>();
     private Hashtable<String, Vector<String[]>> topicAllBEPs = new Hashtable<String, Vector<String[]>>();
     private Hashtable<String, Hashtable<String, Vector<String[]>>> poolIncomingData = new Hashtable<String, Hashtable<String, Vector<String[]>>>();
-    private PoolerManager pooler = PoolerManager.getInstance();
+    public static PoolerManager pooler = null;
     
 	private String wikipediaCollTitle = "";
     private String afTopicPrefixTag = "topic";
@@ -141,6 +141,9 @@ public class resourcesManager {
 //        // Hashtable<String, Hashtable<String, Vector<String[]>>>
 //        // topifFileID, <BEP_Offset, V<String[]{Offset, Length, AName, fileID, barel}
 //        poolIncomingData = pooler.getIncomingPool();        
+        
+        if (AppResource.forValidationOrAssessment)
+        	pooler = PoolerManager.getInstance();
     }
     
     // =========================================================================
