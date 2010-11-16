@@ -9,6 +9,7 @@ public class Anchor {
 	private int extendedLength = 0; // overlapping
 	private String name = "";
 	private int rank = 0;
+//	private int over
 	
 	private boolean valid = false;
 	
@@ -17,6 +18,13 @@ public class Anchor {
 	private Anchor last = null;
 	
 	private Vector<Target> targets = null;
+	
+	public Anchor(int offset, int length, String name) {
+		super();
+		this.offset = offset;
+		this.length = length;
+		this.name = name;
+	}
 	
 	public int getExtendedLength() {
 		return extendedLength;
@@ -90,22 +98,22 @@ public class Anchor {
 		return rank;
 	}	
 	
-	public boolean validate() {
-		valid = false;
-		boolean result = true;
-		Anchor cur = next;
-		while (cur != null && cur != last) {		
-			if (!cur.validateIt());
-				result = false;
-			cur = cur.getNext();
-		}
-		result = last.validateIt();
+//	public boolean validate(Topic topic) {
+//		valid = false;
+//		boolean result = true;
+//		Anchor cur = next;
+//		while (cur != null && cur != last) {		
+//			if (!cur.validateIt(topic));
+//				result = false;
+//			cur = cur.getNext();
+//		}
+//		result = last.validateIt(topic);
+//
+//		return valid;
+//	}
 
-		return valid;
+	public boolean validate(Topic topic) {
+		return topic.matchAnchor(offset, length, name);
 	}
 
-	private boolean validateIt() {
-		// TODO Auto-generated method stub
-		return false;
-	}
 }

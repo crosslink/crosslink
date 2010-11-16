@@ -7,6 +7,14 @@ public class Target {
 	private int bepOffset = 0;
 	private boolean relevant = false;
 	
+	public Target(String lang, String title, String id, int bepOffset) {
+		super();
+		this.lang = lang;
+		this.title = title;
+		this.id = id;
+		this.bepOffset = bepOffset;
+	}
+
 	public boolean isRelevant() {
 		return relevant;
 	}

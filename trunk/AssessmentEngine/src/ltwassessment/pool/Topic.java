@@ -35,7 +35,7 @@ public class Topic {
 	}
 	
 	public boolean validateIt() {
-		valid = anchors.validateAll();
+		valid = anchors.validateAll(this);
 		
 		return valid;
 	}

@@ -69,7 +69,7 @@ public class Run {
                         String anchorName = anchorElmn.getAttribute("name");
                         	
 //                        anchorToBEPV = new Vector<String[]>();
-                        Anchor anchor = new Anchor()
+                        Anchor anchor = new Anchor(Integer.parseInt(aOffset), Integer.parseInt(aLength), anchorName);
                         if (forValidationOrAssessment) {
                         	anchorKey = aOffset + "_" + aLength;
                             NodeList subAnchorNodeList = anchorElmn.getElementsByTagName(afSubAnchorTag);
@@ -85,7 +85,7 @@ public class Run {
                                     Node tbXmlFileIDTextNode = toBepElmn.getFirstChild();
                                     String tbFileID = tbXmlFileIDTextNode.getTextContent();
                                     
-                                    anchorToBEPV.add(new String[]{tbOffset, tbStartP, tbFileID, tbRel});
+                                   // anchorToBEPV.add(new String[]{tbOffset, tbStartP, tbFileID, tbRel});
                                 }
                             }
                         }
@@ -102,15 +102,18 @@ public class Run {
                                 String tbOffset = toBepElmn.getAttribute("bep_offset");
                                 Node tbXmlFileIDTextNode = toBepElmn.getFirstChild();
                                 String tbFileID = tbXmlFileIDTextNode.getTextContent();
-                                anchorToBEPV.add(new String[]{tbFileID, tbOffset, target_lang, target_title});
+                                
+                                //anchorToBEPV.add(new String[]{tbFileID, tbOffset, target_lang, target_title});
+                                Target target = new Target(target_lang, target_title, tbFileID, Integer.parseInt(tbOffset));
                             }
                         }
-                        anchorBepsHT.put(anchorKey, anchorToBEPV);
+//                        anchorBepsHT.put(anchorKey, anchorToBEPV);
+                        anchors.insert(anchor);
                     }
 //                }
                     
                   // create a Topic here and add to topics
-                  topics.put(thisTopicID, new Topic());
+                  topics.put(thisTopicID, new Topic(thisTopicID, anchors));
             }
         }
 
