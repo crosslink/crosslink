@@ -4,8 +4,17 @@ public class Target {
 	private String lang = "";
 	private String title = "";
 	private String id = "";
-	private int bepOffset;
+	private int bepOffset = 0;
+	private boolean relevant = false;
 	
+	public boolean isRelevant() {
+		return relevant;
+	}
+
+	public void setRelevant(boolean relevant) {
+		this.relevant = relevant;
+	}
+
 	public String getLang() {
 		return lang;
 	}

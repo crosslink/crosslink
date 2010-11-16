@@ -21,6 +21,10 @@ public class LinkedAnchorList {
 		}		
 	}
 	
+	public void append(Anchor anchor) {
+		anchorList.add(anchor);
+	}
+	
 	public int after(int offset, int low, int high) {
 		int mid = (high - low) / 2;
 		
@@ -39,5 +43,18 @@ public class LinkedAnchorList {
 		int low = 0, high = anchorList.size() - 1;
 
 		return after(offset, 0, high);
+	}
+	
+	public void sortByRank() {
+		
+	}
+
+	public boolean validateAll() {
+		boolean result = true;
+		for (Anchor anchor: anchorList) {
+			if (!anchor.validate())
+				result = false;
+		}
+		return result;
 	}
 }
