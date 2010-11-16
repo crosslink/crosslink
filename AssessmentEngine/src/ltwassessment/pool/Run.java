@@ -1,0 +1,137 @@
+package ltwassessment.pool;
+
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Vector;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+
+import ltwassessment.AppResource;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.xml.sax.InputSource;
+import org.xml.sax.SAXException;
+
+public class Run {
+	
+	private HashMap<String, Topic> topics = null;
+	
+	public Run(File runFile) {
+		topics = (HashMap<String, Topic>) Collections.synchronizedMap(new HashMap<String, Topic>());
+		
+		read(runFile);
+	}
+	
+	public void add(Topic topic) {
+		topics.put(topic.getId(), topic);
+	}
+	
+	public void read(File runFile) {
+        boolean forValidationOrAssessment = AppResource.forValidationOrAssessment;
+        String afTitleTag = forValidationOrAssessment ? "crosslink-assessment" : "crosslink-submission";
+        String afTopicTag = "topic";
+        String afOutgoingTag = forValidationOrAssessment ? "outgoinglinks" : "outgoing";
+        String afAnchorTag = "anchor";
+        String afSubAnchorTag = "subanchor";
+        String afToBepTag = "tofile";
+        String offsetAttributeName = forValidationOrAssessment ? "aoffset" : "offset";
+        String lengthAttributeName = forValidationOrAssessment ? "alength" : "length";
+        String tboffsetAttributeName = forValidationOrAssessment ? "tboffset" : "bep_offset";
+
+        Document xmlDoc = readingXMLFromFile(runFile);
+
+        NodeList titleNodeList = xmlDoc.getElementsByTagName(afTitleTag);
+        for (int i = 0; i < titleNodeList.getLength(); i++) {
+            Element titleElmn = (Element) titleNodeList.item(i);
+            NodeList topicNodeList = titleElmn.getElementsByTagName(afTopicTag);
+            for (int j = 0; j < topicNodeList.getLength(); j++) {
+                Element topicElmn = (Element) topicNodeList.item(j);
+                String thisTopicID = topicElmn.getAttribute("file");
+//                if (thisTopicID.equals(topicFileID)) {
+                    NodeList linksNodeList = topicElmn.getElementsByTagName(afOutgoingTag);
+                    Element outgoingElmn = (Element) linksNodeList.item(0);
+                    NodeList anchorNodeList = outgoingElmn.getElementsByTagName(afAnchorTag);
+                    String anchorKey = "";
+//                    Vector<String[]> anchorToBEPV;
+                    LinkedAnchorList anchors = new LinkedAnchorList();
+                    for (int k = 0; k < anchorNodeList.getLength(); k++) {
+                        Element anchorElmn = (Element) anchorNodeList.item(k);
+                        String aOffset = anchorElmn.getAttribute( offsetAttributeName);
+                        String aLength = anchorElmn.getAttribute(lengthAttributeName);
+                        String anchorName = anchorElmn.getAttribute("name");
+                        	
+//                        anchorToBEPV = new Vector<String[]>();
+                        Anchor anchor = new Anchor()
+                        if (forValidationOrAssessment) {
+                        	anchorKey = aOffset + "_" + aLength;
+                            NodeList subAnchorNodeList = anchorElmn.getElementsByTagName(afSubAnchorTag);
+                            for (int l = 0; l < subAnchorNodeList.getLength(); l++) {
+                                Element subAnchorElmn = (Element) subAnchorNodeList.item(l);
+                                NodeList toBepNodeList = subAnchorElmn.getElementsByTagName(afToBepTag);
+                                for (int m = 0; m < toBepNodeList.getLength(); m++) {
+                                    Element toBepElmn = (Element) toBepNodeList.item(m);
+                                    String tbOffset = toBepElmn.getAttribute(tboffsetAttributeName);                                
+                                    String tbStartP = toBepElmn.getAttribute("tbstartp");
+                                    String tbRel = toBepElmn.getAttribute("tbrel");
+
+                                    Node tbXmlFileIDTextNode = toBepElmn.getFirstChild();
+                                    String tbFileID = tbXmlFileIDTextNode.getTextContent();
+                                    
+                                    anchorToBEPV.add(new String[]{tbOffset, tbStartP, tbFileID, tbRel});
+                                }
+                            }
+                        }
+                        else {
+                        	anchorKey = aOffset + "_" + (Integer.valueOf(aOffset) + Integer.valueOf(aLength)) + "_" + anchorName;
+                            NodeList toBepNodeList = anchorElmn.getElementsByTagName(afToBepTag);
+                            for (int m = 0; m < toBepNodeList.getLength(); m++) {
+                                Element toBepElmn = (Element) toBepNodeList.item(m);
+                                
+                                // new
+                                String target_lang = anchorElmn.getAttribute( offsetAttributeName);
+                                String target_title = anchorElmn.getAttribute(lengthAttributeName);
+
+                                String tbOffset = toBepElmn.getAttribute("bep_offset");
+                                Node tbXmlFileIDTextNode = toBepElmn.getFirstChild();
+                                String tbFileID = tbXmlFileIDTextNode.getTextContent();
+                                anchorToBEPV.add(new String[]{tbFileID, tbOffset, target_lang, target_title});
+                            }
+                        }
+                        anchorBepsHT.put(anchorKey, anchorToBEPV);
+                    }
+//                }
+                    
+                  // create a Topic here and add to topics
+                  topics.put(thisTopicID, new Topic());
+            }
+        }
+
+	}
+	
+    public static Document readingXMLFromFile(File xmlFile) {
+        DocumentBuilderFactory dBF = DocumentBuilderFactory.newInstance();
+        dBF.setIgnoringComments(true);
+        // Ignore the comments present in the XML File when reading the xml
+        DocumentBuilder builder = null;
+        Document doc = null;
+        try {
+            builder = dBF.newDocumentBuilder();
+            doc = builder.parse(xmlFile);
+        } catch (ParserConfigurationException e) {
+            e.printStackTrace();
+        } catch (SAXException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return doc;
+    }
+}
