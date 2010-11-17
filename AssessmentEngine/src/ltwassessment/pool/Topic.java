@@ -22,6 +22,10 @@ public class Topic {
 		this.anchors = anchors;
 	}
 	
+	public Topic(String idD) {
+		this.id = id;
+	}
+
 	public void setFilePath(String filePath) {
 		this.filePath = filePath;
 	}
@@ -61,5 +65,11 @@ public class Topic {
 		byte[] result = new byte[length];
 		System.arraycopy(bytes, offset, result, offset, length);
 		return new String(result).equals(name);
+	}
+
+	public LinkedAnchorList getAnchors() {
+		if (anchors == null)
+			 anchors = new LinkedAnchorList();
+		return anchors;
 	}
 }

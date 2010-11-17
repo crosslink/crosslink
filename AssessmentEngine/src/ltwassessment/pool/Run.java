@@ -24,10 +24,18 @@ public class Run {
 	
 	private HashMap<String, Topic> topics = null;
 	
+    public Run() {
+		init();
+	}
+    
 	public Run(File runFile) {
-		topics = (HashMap<String, Topic>) Collections.synchronizedMap(new HashMap<String, Topic>());
+		init();
 		
 		read(runFile);
+	}
+	
+	private void init() {
+		topics = (HashMap<String, Topic>) Collections.synchronizedMap(new HashMap<String, Topic>());
 	}
 	
 	public void add(Topic topic) {
@@ -55,13 +63,17 @@ public class Run {
             for (int j = 0; j < topicNodeList.getLength(); j++) {
                 Element topicElmn = (Element) topicNodeList.item(j);
                 String thisTopicID = topicElmn.getAttribute("file");
+                Topic topic = topics.get(thisTopicID);
+                if (topic == null)
+                	topic = new Topic(thisTopicID);
+                    topics.put(thisTopicID, topic);
 //                if (thisTopicID.equals(topicFileID)) {
                     NodeList linksNodeList = topicElmn.getElementsByTagName(afOutgoingTag);
                     Element outgoingElmn = (Element) linksNodeList.item(0);
                     NodeList anchorNodeList = outgoingElmn.getElementsByTagName(afAnchorTag);
                     String anchorKey = "";
 //                    Vector<String[]> anchorToBEPV;
-                    LinkedAnchorList anchors = new LinkedAnchorList();
+                    LinkedAnchorList anchors = topic.getAnchors();
                     for (int k = 0; k < anchorNodeList.getLength(); k++) {
                         Element anchorElmn = (Element) anchorNodeList.item(k);
                         String aOffset = anchorElmn.getAttribute( offsetAttributeName);
@@ -113,14 +125,13 @@ public class Run {
                     }
 //                }
                     
-                  // create a Topic here and add to topics
-                  topics.put(thisTopicID, new Topic(thisTopicID, anchors));
+
             }
-        }
+        } // for
 
 	}
-	
-    public static Document readingXMLFromFile(File xmlFile) {
+
+	public static Document readingXMLFromFile(File xmlFile) {
         DocumentBuilderFactory dBF = DocumentBuilderFactory.newInstance();
         dBF.setIgnoringComments(true);
         // Ignore the comments present in the XML File when reading the xml

@@ -4,27 +4,23 @@ import java.io.File;
 import java.util.Vector;
 
 public class Pool {
-	private Vector<Run> runs = null;
+	private Run runs = null;
 	
 	public Pool() {
-		runs = new Vector<Run>();
-	}
-	
-	public void add(Run run) {
-		runs.add(run);
+		runs = new Run();
 	}
 	
 	public void read(String rundir) {
 		File runDirHandler = new File(rundir);
 		File[] files = runDirHandler.listFiles();
 		
-		for (File file : files) {
-			Run run = new Run(file);
-			add(run);
-		}
+		for (File file : files) 
+			runs.read(file);
 	}
 	
-	public void mergeRuns() {
-		//TODO
+	public String output() {
+		StringBuffer poolXml = new StringBuffer();
+		
+		return poolXml.toString();
 	}
 }
