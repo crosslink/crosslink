@@ -14,9 +14,11 @@ public class Anchor {
 	private boolean valid = false;
 	
 	// for the overlapping Anchors
-	private Anchor next = null;
+	private Anchor first = null;
 	private Anchor last = null;
-	
+	private Anchor next = null;
+	private Anchor previous = null;
+
 	private Vector<Target> targets = null;
 	
 	public Anchor(int offset, int length, String name) {
@@ -34,12 +36,12 @@ public class Anchor {
 		this.extendedLength = extendedLength;
 	}
 
-	public Anchor getNext() {
-		return next;
+	public Anchor getFirst() {
+		return first;
 	}
 
-	public void setNext(Anchor next) {
-		this.next = next;
+	public void setFirst(Anchor first) {
+		this.first = first;
 	}
 
 	public Anchor getLast() {
@@ -50,6 +52,22 @@ public class Anchor {
 		this.last = last;
 	}
 	
+	public Anchor getNext() {
+		return next;
+	}
+
+	public void setNext(Anchor next) {
+		this.next = next;
+	}
+
+	public Anchor getPrevious() {
+		return previous;
+	}
+
+	public void setPrevious(Anchor previous) {
+		this.previous = previous;
+	}
+
 	public int getOffset() {
 		return offset;
 	}
@@ -101,11 +119,11 @@ public class Anchor {
 //	public boolean validate(Topic topic) {
 //		valid = false;
 //		boolean result = true;
-//		Anchor cur = next;
+//		Anchor cur = first;
 //		while (cur != null && cur != last) {		
 //			if (!cur.validateIt(topic));
 //				result = false;
-//			cur = cur.getNext();
+//			cur = cur.getFirst();
 //		}
 //		result = last.validateIt(topic);
 //
