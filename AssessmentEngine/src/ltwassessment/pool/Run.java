@@ -108,6 +108,7 @@ public class Run {
                             }
                         }
 //                        anchorBepsHT.put(anchorKey, anchorToBEPV);
+                        anchor.setRank(k);
                         anchors.insert(anchor);
                     }
 //                }
