@@ -66,10 +66,18 @@ public class LinkedAnchorList {
 					anchorList.add(anchor);		
 				else 
 					anchorList.add(index + 1, anchor);		
-					
+				
+				// to see if overlapping
+				if ((theOne.getOffset() + theOne.getLength()) > anchor.getOffset()) 
+					overlapping = true;
 			}
 			else {
 				anchorList.add(index, anchor);
+				
+				if ((anchor.getOffset() + anchor.getLength()) > theOne.getOffset()) { 
+					overlapping = true;
+					addBefore = true;
+				}
 			}
 			
 			// now link the anchors together if there is overlapping
