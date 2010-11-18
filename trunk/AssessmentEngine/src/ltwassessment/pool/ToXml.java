@@ -13,14 +13,26 @@ public class ToXml {
 	
 	public static void anchorToXml(Anchor anchor, StringBuffer xmlText) {
 		String anchorElementStart = "\t\t\t\t<anchor arel=\"-1\" aname=\"%s\" aoffset=\"%d\" alength=\"%d\">\n";
-		String anchorElementEnd = "\t\t\t\t</anchor>\n";
+//		String anchorElementEnd = "\t\t\t\t\t</subanchor>\n";
+		
+		xmlText.append(String.format(anchorElementStart, anchor.getName(), anchor.getOffset(), anchor.getLength()));
+		
+//		for (Target target : anchor.getTargets())
+//			targetToXml(target, xmlText);
+//		xmlText.append(anchorElementEnd);
+	}
+	
+	
+	public static void subAnchorToXml(Anchor anchor, StringBuffer xmlText) {
+		String anchorElementStart = "\t\t\t\t\t<subanchor arel=\"-1\" aname=\"%s\" aoffset=\"%d\" alength=\"%d\">\n";
+		String anchorElementEnd = "\t\t\t\t\t</subanchor>\n";
 		
 		xmlText.append(String.format(anchorElementStart, anchor.getName(), anchor.getOffset(), anchor.getLength()));
 		
 		for (Target target : anchor.getTargets())
 			targetToXml(target, xmlText);
 		xmlText.append(anchorElementEnd);
-	}
+	}	
 	
 	public static String targetToXml(Target target) {
 		StringBuffer xmlText = new StringBuffer();
@@ -29,7 +41,7 @@ public class ToXml {
 	}
 	
 	public static void targetToXml(Target target, StringBuffer xmlText) {
-		String targetElement = "\t\t\t\t\t<tobep tbrel=\"0\" timein=\"\" timeout=\"\" tboffset=\"%d\" tbstartp=\"-1\" lang=\"%s\" title=\"%s\">%s</tobep>\n";
+		String targetElement = "\t\t\t\t\t\t<tobep tbrel=\"0\" timein=\"\" timeout=\"\" tboffset=\"%d\" tbstartp=\"-1\" lang=\"%s\" title=\"%s\">%s</tobep>\n";
 		
 		xmlText.append(String.format(targetElement, target.getBepOffset(), target.getLang(), target.getTitle(), target.getId()));
 	}
@@ -52,8 +64,21 @@ public class ToXml {
 		
 		LinkedList<Anchor> anchorList = topic.getAnchors().getAnchorList();
 		
-		for (Anchor anchor : anchorList) 
-			anchorToXml(anchor, xmlText);
+		String anchorElementEnd = "\t\t\t\t</anchor>\n";
+		Anchor pre = null, anchor = null;
+		pre = anchorList.get(0);
+		anchorToXml(pre, xmlText);
+		for (int i = 1; i < anchorList.size(); ++i) {
+			anchor = anchorList.get(i);
+			subAnchorToXml(anchor, xmlText);
+			if (pre.getNext() != null && pre.getNext() == anchor)
+				;
+			else {
+				xmlText.append(anchorElementEnd);
+			}
+			pre = anchor;
+		}
+		xmlText.append(anchorElementEnd);
 		
 		xmlText.append(topicElemEnd);
 	}

@@ -18,13 +18,13 @@ public class PoolManager {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		if (args.length < 2) {
+		if (args.length < 1) {
 			System.err.println("Usage: program submissions_path");
 			System.exit(-1);
 		}
 
 		PoolManager manager = new PoolManager();
-		manager.genPool(args[1]);
+		manager.genPool(args[0]);
 	}
 
 }

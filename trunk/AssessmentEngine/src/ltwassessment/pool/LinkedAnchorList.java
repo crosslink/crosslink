@@ -37,10 +37,13 @@ public class LinkedAnchorList {
 		if (anchorList.size() == 0)
 			anchorList.add(anchor);
 		else {
-			int index = after(anchor.getOffset());
+			int index = -1;
 			Anchor theOne = null;
 			boolean overlapping = false;
 			boolean addBefore = false;
+			
+			index = after(anchor.getOffset());
+			
 			if (index == -1) 
 				theOne = anchorList.getLast();
 			else 
@@ -126,7 +129,7 @@ public class LinkedAnchorList {
 	 * @return the index of the anchor in the list
 	 */
 	public int after(int offset, int low, int high) {
-		int mid = (high - low) / 2;
+		int mid = (high - low) / 2 + low;
 		
 		if (mid == high || mid == low)
 			return mid;

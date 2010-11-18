@@ -35,7 +35,8 @@ public class Run {
 	}
 	
 	private void init() {
-		topics = (HashMap<String, Topic>) Collections.synchronizedMap(new HashMap<String, Topic>());
+		//topics = (HashMap<String, Topic>) Collections.synchronizedMap(new HashMap<String, Topic>());
+		topics = new HashMap<String, Topic>();
 	}
 	
 	public void add(Topic topic) {
