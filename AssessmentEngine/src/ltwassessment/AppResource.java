@@ -10,9 +10,10 @@ public class AppResource {
     public static String targetLang = "zh"; // zh, ja, ko
     
 	private org.jdesktop.application.ResourceMap resourceMap = null;
-	private static AdjustFont adjustFont = AdjustFont.getInstance();
+	private static AdjustFont adjustFont = null;
 
 	public AppResource() {
+		adjustFont = AdjustFont.getInstance();
 //		resourceMap = org.jdesktop.application.Application.getInstance(appClass.getClass()).getContext().getResourceMap(viewClass);
 	}
 
