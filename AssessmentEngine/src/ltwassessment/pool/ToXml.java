@@ -1,17 +1,25 @@
 package ltwassessment.pool;
 
+import java.util.LinkedList;
+
 public class ToXml {
 
 	public static String anchorToXml(Anchor anchor) {
 		StringBuffer xmlText = new StringBuffer();
 		
-		return anchorToXml(anchor, xmlText);
+		anchorToXml(anchor, xmlText);
+		return xmlText.toString();
 	}
 	
-	public static String anchorToXml(Anchor anchor, StringBuffer xmlText) {
-
+	public static void anchorToXml(Anchor anchor, StringBuffer xmlText) {
+		String anchorElementStart = "\t\t\t\t<anchor arel=\"-1\" aname=\"%s\" aoffset=\"%d\" alength=\"%d\">\n";
+		String anchorElementEnd = "\t\t\t\t</anchor>\n";
 		
-		return xmlText.toString();
+		xmlText.append(String.format(anchorElementStart, anchor.getName(), anchor.getOffset(), anchor.getLength()));
+		
+		for (Target target : anchor.getTargets())
+			targetToXml(target, xmlText);
+		xmlText.append(anchorElementEnd);
 	}
 	
 	public static String targetToXml(Target target) {
@@ -21,8 +29,9 @@ public class ToXml {
 	}
 	
 	public static void targetToXml(Target target, StringBuffer xmlText) {
-
+		String targetElement = "\t\t\t\t\t<tobep tbrel=\"0\" timein=\"\" timeout=\"\" tboffset=\"%d\" tbstartp=\"-1\" lang=\"%s\" title=\"%s\">%s</tobep>\n";
 		
+		xmlText.append(String.format(targetElement, target.getBepOffset(), target.getLang(), target.getTitle(), target.getId()));
 	}
 	
 	public static void startRootElement(StringBuffer xmlText) {
@@ -40,5 +49,12 @@ public class ToXml {
         						"\t\t\t<outgoinglinks>\n";
 		String topicElemEnd = "\t\t\t</outgoinglinks>\n\t\t</topic>\n";
 		xmlText.append(String.format(topicElemStart, topic.getId(), topic.getName()));
+		
+		LinkedList<Anchor> anchorList = topic.getAnchors().getAnchorList();
+		
+		for (Anchor anchor : anchorList) 
+			anchorToXml(anchor, xmlText);
+		
+		xmlText.append(topicElemEnd);
 	}
 }

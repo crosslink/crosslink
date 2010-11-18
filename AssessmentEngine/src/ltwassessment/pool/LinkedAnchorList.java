@@ -155,4 +155,8 @@ public class LinkedAnchorList {
 		}
 		return result;
 	}
+
+	public LinkedList<Anchor> getAnchorList() {
+		return anchorList;
+	}
 }
