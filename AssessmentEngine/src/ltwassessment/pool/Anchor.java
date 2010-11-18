@@ -26,6 +26,8 @@ public class Anchor {
 		this.offset = offset;
 		this.length = length;
 		this.name = name;
+		
+		targets = new Vector<Target>();
 	}
 	
 	public int getExtendedLength() {
