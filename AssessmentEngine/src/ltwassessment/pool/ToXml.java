@@ -75,6 +75,7 @@ public class ToXml {
 				;
 			else {
 				xmlText.append(anchorElementEnd);
+				anchorToXml(anchor, xmlText);
 			}
 			pre = anchor;
 		}

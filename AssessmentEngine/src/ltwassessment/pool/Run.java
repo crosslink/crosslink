@@ -39,6 +39,10 @@ public class Run {
 		topics = new HashMap<String, Topic>();
 	}
 	
+	public HashMap<String, Topic> getTopics() {
+		return topics;
+	}
+
 	public void add(Topic topic) {
 		topics.put(topic.getId(), topic);
 	}
