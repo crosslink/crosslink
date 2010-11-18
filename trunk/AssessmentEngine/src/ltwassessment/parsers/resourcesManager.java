@@ -661,9 +661,14 @@ public class resourcesManager {
 
     public String getWikipediaCollectionFolder() {
         String wikipediaCollectionFolder = getDataByTagName(afTitleTag, afWikipediaCollTag);
-        if (!wikipediaCollectionFolder.endsWith("pages") || !wikipediaCollectionFolder.endsWith("pages" + File.separator))
-        	wikipediaCollectionFolder += File.separator + "pages" + File.separator;
         return wikipediaCollectionFolder;
+    }
+    
+    public String getWikipediaFileFolder(String lang) {
+    	String wikiFileDir = getWikipediaCollectionFolder();
+//        if (!wikipediaCollectionFolder.endsWith("pages") || !wikipediaCollectionFolder.endsWith("pages" + File.separator))
+//        	wikipediaCollectionFolder += File.separator + "pages" + File.separator;
+    	return wikiFileDir + File.separator + lang + File.separator + "pages" + File.separator;
     }
 
 //    public String getTeAraCollectionFolder() {

@@ -159,9 +159,9 @@ public class tabTxtPaneManager {
             if (subPath.equals("FileNotFound.xml")){
                 linkXmlPath = "resources" + File.separator + "Tool_Resources" + File.separator + subPath;
             } else {
-                linkXmlPath = myRSCManager.getWikipediaCollectionFolder() + subPath;
+                linkXmlPath = myRSCManager.getWikipediaFileFolder(AppResource.targetLang) + subPath;
             }
-//            linkXmlPath = myRSCManager.getWikipediaCollectionFolder() + myRSCManager.getWikipediaFilePathByName(thisBepFileID + ".xml");
+//            linkXmlPath = myRSCManager.getWikipediaFileFolder(AppResource.targetLang) + myRSCManager.getWikipediaFilePathByName(thisBepFileID + ".xml");
 //        } else if (myRSCManager.getLinkCollType().equals(teAraCollTitle)) {
 //            isLinkWikipedia = false;
 //            String subPath = myRSCManager.getTeAraFilePathByName(thisBepFileID + ".xml");

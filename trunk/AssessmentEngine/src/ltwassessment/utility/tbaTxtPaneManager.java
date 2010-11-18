@@ -171,7 +171,7 @@ public class tbaTxtPaneManager {
             if (subPath.equals("FileNotFound.xml")){
                 linkXmlPath = "resources" + File.separator + "Tool_Resources" + File.separator + subPath;
             } else {
-                linkXmlPath = myRSCManager.getWikipediaCollectionFolder() + subPath;
+                linkXmlPath = myRSCManager.getWikipediaFileFolder(AppResource.targetLang) + subPath;
             }
 //        } else if (myRSCManager.getLinkCollType().equals(teAraCollTitle)) {
 //            isLinkWikipedia = false;

@@ -572,7 +572,7 @@ public class paneTableIndexing {
         String xmlFileIDNamePair = "";
         String linkXmlPath = "";
 //        if (myRSCManager.getLinkCollType().equals(wikipediaCollTitle)) {
-            linkXmlPath = myRSCManager.getWikipediaCollectionFolder() + myRSCManager.getWikipediaFilePathByName(xmlFileID + ".xml");
+            linkXmlPath = myRSCManager.getWikipediaFileFolder(AppResource.targetLang) + myRSCManager.getWikipediaFilePathByName(xmlFileID + ".xml");
 //        } else if (myRSCManager.getLinkCollType().equals(teAraCollTitle)) {
 //            linkXmlPath = myRSCManager.getTeAraCollectionFolder() + myRSCManager.getTeAraFilePathByName(xmlFileID + ".xml");
 //        }
@@ -589,7 +589,7 @@ public class paneTableIndexing {
 //        if (myRSCManager.getLinkCollType().equals(wikipediaCollTitle)) {
             if (myRSCManager.getWikipediaFilePathByName(xmlFileID + ".xml").equals("FileNotFound.xml")) {
             } else {
-                linkXmlPath = myRSCManager.getWikipediaCollectionFolder() + myRSCManager.getWikipediaFilePathByName(xmlFileID + ".xml");
+                linkXmlPath = myRSCManager.getWikipediaFileFolder(AppResource.targetLang) + myRSCManager.getWikipediaFilePathByName(xmlFileID + ".xml");
                 String bepXmlTitle = myFOLMatcher.getWikiXmlTitleByFilePath(linkXmlPath);
                 return bepIdONamePair = bepSet + " : " + bepXmlTitle;
             }

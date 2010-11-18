@@ -63,9 +63,10 @@ public class Run {
             for (int j = 0; j < topicNodeList.getLength(); j++) {
                 Element topicElmn = (Element) topicNodeList.item(j);
                 String thisTopicID = topicElmn.getAttribute("file");
+                String thisTopicName = topicElmn.getAttribute("name");
                 Topic topic = topics.get(thisTopicID);
                 if (topic == null)
-                	topic = new Topic(thisTopicID);
+                	topic = new Topic(thisTopicID, thisTopicName);
                     topics.put(thisTopicID, topic);
 //                if (thisTopicID.equals(topicFileID)) {
                     NodeList linksNodeList = topicElmn.getElementsByTagName(afOutgoingTag);
