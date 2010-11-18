@@ -5,15 +5,18 @@ import java.io.IOException;
 
 public class Topic {
 	private String id = null;
+	private String name = null;
+	
 	private String filePath = null;
 	private boolean valid = false;
 	private byte[] bytes = null; // the topic text in bytes
+	
 	private LinkedAnchorList anchors = null;
 	
-	public Topic(String id, String filePath) {
+	public Topic(String id, String name) {
 		super();
 		this.id = id;
-		this.filePath = filePath;
+		this.name = name;
 	}
 	
 	public Topic(String id, LinkedAnchorList anchors) {
@@ -21,7 +24,7 @@ public class Topic {
 		this.id = id;
 		this.anchors = anchors;
 	}
-	
+
 	public Topic(String idD) {
 		this.id = id;
 	}
@@ -29,7 +32,15 @@ public class Topic {
 	public void setFilePath(String filePath) {
 		this.filePath = filePath;
 	}
+	
+	public String getName() {
+		return name;
+	}
 
+	public void setName(String name) {
+		this.name = name;
+	}
+	
 	public String getId() {
 		return id;
 	}

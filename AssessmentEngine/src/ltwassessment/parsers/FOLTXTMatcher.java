@@ -597,9 +597,9 @@ public class FOLTXTMatcher {
                 if (subPath.equals("FileNotFound.xml")) {
                     bepFilePath = "resources" + File.separator + "Tool_Resources" + File.separator + subPath;
                 } else {
-                    bepFilePath = myRSCManager.getWikipediaCollectionFolder() + subPath;
+                    bepFilePath = myRSCManager.getWikipediaFileFolder(AppResource.targetLang) + subPath;
                 }
-//                bepFilePath = myRSCManager.getWikipediaCollectionFolder() + myRSCManager.getWikipediaFilePathByName(bepFileID + ".xml");
+//                bepFilePath = myRSCManager.getWikipediaFileFolder(AppResource.targetLang) + myRSCManager.getWikipediaFilePathByName(bepFileID + ".xml");
 //            } else {
 //                String subPath = myRSCManager.getTeAraFilePathByName(bepFileID + ".xml");
 //                if (subPath.equals("FileNotFound.xml")) {
