@@ -88,6 +88,7 @@ public class Run {
                         	
 //                        anchorToBEPV = new Vector<String[]>();
                         Anchor anchor = new Anchor(Integer.parseInt(aOffset), Integer.parseInt(aLength), anchorName);
+                        Target target = null;
                         if (forValidationOrAssessment) {
                         	anchorKey = aOffset + "_" + aLength;
                             NodeList subAnchorNodeList = anchorElmn.getElementsByTagName(afSubAnchorTag);
@@ -114,15 +115,16 @@ public class Run {
                                 Element toBepElmn = (Element) toBepNodeList.item(m);
                                 
                                 // new
-                                String target_lang = anchorElmn.getAttribute( offsetAttributeName);
-                                String target_title = anchorElmn.getAttribute(lengthAttributeName);
+                                String target_lang = anchorElmn.getAttribute(offsetAttributeName);
+                                String target_title = anchorElmn.getAttribute("title");
 
                                 String tbOffset = toBepElmn.getAttribute("bep_offset");
                                 Node tbXmlFileIDTextNode = toBepElmn.getFirstChild();
                                 String tbFileID = tbXmlFileIDTextNode.getTextContent();
                                 
                                 //anchorToBEPV.add(new String[]{tbFileID, tbOffset, target_lang, target_title});
-                                Target target = new Target(target_lang, target_title, tbFileID, Integer.parseInt(tbOffset));
+                                target = new Target(target_lang, target_title, tbFileID, Integer.parseInt(tbOffset));
+                                anchor.insertTarget(target);
                             }
                         }
 //                        anchorBepsHT.put(anchorKey, anchorToBEPV);

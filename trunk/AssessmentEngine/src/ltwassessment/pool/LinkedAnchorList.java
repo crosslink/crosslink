@@ -86,12 +86,12 @@ public class LinkedAnchorList {
 			// now link the anchors together if there is overlapping
 			if (overlapping) {
 				if (addBefore) {				
-					if (theOne.getNext() != null) {
-						anchor.setNext(theOne.getNext());
-						theOne.getNext().setPrevious(anchor);			
-					} 
-					anchor.setPrevious(theOne);
-					theOne.setNext(anchor);
+					if (theOne.getPrevious() != null) {
+						anchor.setPrevious(theOne.getPrevious());
+						theOne.getPrevious().setNext(anchor);			
+					}
+					anchor.setNext(theOne);
+					theOne.setPrevious(anchor);
 					
 //					if (theOne.getFirst() == null || theOne.getLast() == null) {
 //						theOne.setFirst(theOne);
@@ -105,13 +105,13 @@ public class LinkedAnchorList {
 //						theOne.setLast(anchor);
 //					}
 				}
-				else {
-					if (theOne.getPrevious() != null) {
-						anchor.setPrevious(theOne.getPrevious());
-						theOne.getPrevious().setNext(anchor);			
-					} 
-					anchor.setNext(theOne);
-					theOne.setPrevious(anchor);
+				else { //add after
+ 					if (theOne.getNext() != null) {
+						anchor.setNext(theOne.getNext());
+						theOne.getNext().setPrevious(anchor);			
+					}
+					anchor.setPrevious(theOne);
+					theOne.setNext(anchor);
 				}
 			}
 		}		
