@@ -55,7 +55,7 @@ public class ToXml {
 	}
 	
 	public static void endRootElement(StringBuffer xmlText) {
-		xmlText.append("</inexltw-assessment>\n");
+		xmlText.append("</crosslink-assessment>\n");
 	}
 	
 	public static void topicToXml(Topic topic, StringBuffer xmlText) {
