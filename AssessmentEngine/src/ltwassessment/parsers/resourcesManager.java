@@ -150,62 +150,63 @@ public class resourcesManager {
     // =========================================================================
     // <editor-fold defaultstate="collapsed" desc="Update RSC">
     public void updateOutgoingCompletion(String outgoingCompletion) {
-        try {
-            Document doc = readingXMLFromFile(resourceXMLFile);
-
-            TransformerFactory tFactory = TransformerFactory.newInstance();
-            Transformer tformer = tFactory.newTransformer();
-            Source source = new DOMSource(doc);
-            Result result = new StreamResult(new FileWriter(resourceXMLFile));
-
-            NodeList titleNodeList = doc.getElementsByTagName(afTitleTag);
-            for (int i = 0; i < titleNodeList.getLength(); i++) {
-                Element titleElmn = (Element) titleNodeList.item(i);
-                NodeList subNodeList = titleElmn.getElementsByTagName("outgoingCompletion");
-                Element subElmn = (Element) subNodeList.item(0);
-                // add NEW
-                Element clonedElmn = (Element) doc.createElement("outgoingCompletion");
-                subElmn.getParentNode().insertBefore(clonedElmn, subElmn.getNextSibling());
-                clonedElmn.appendChild(doc.createTextNode(outgoingCompletion));
-                // remove OLD element
-                subElmn.getParentNode().removeChild(subElmn);
-                tformer.transform(source, result);
-            }
-        } catch (IOException ex) {
-            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (TransformerException ex) {
-            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
-        }
+//        try {
+//            Document doc = readingXMLFromFile(resourceXMLFile);
+//
+//            TransformerFactory tFactory = TransformerFactory.newInstance();
+//            Transformer tformer = tFactory.newTransformer();
+//            Source source = new DOMSource(doc);
+//            Result result = new StreamResult(new FileWriter(resourceXMLFile));
+//
+//            NodeList titleNodeList = doc.getElementsByTagName(afTitleTag);
+//            for (int i = 0; i < titleNodeList.getLength(); i++) {
+//                Element titleElmn = (Element) titleNodeList.item(i);
+//                NodeList subNodeList = titleElmn.getElementsByTagName("outgoingCompletion");
+//                Element subElmn = (Element) subNodeList.item(0);
+//                // add NEW
+//                Element clonedElmn = (Element) doc.createElement("outgoingCompletion");
+//                subElmn.getParentNode().insertBefore(clonedElmn, subElmn.getNextSibling());
+//                clonedElmn.appendChild(doc.createTextNode(outgoingCompletion));
+//                // remove OLD element
+//                subElmn.getParentNode().removeChild(subElmn);
+//                tformer.transform(source, result);
+//            }
+//        } catch (IOException ex) {
+//            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
+//        } catch (TransformerException ex) {
+//            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+        updateElement("outgoingCompletion", outgoingCompletion);
     }
 
-    public void updateIncomingCompletion(String incomingCompletion) {
-        try {
-            Document doc = readingXMLFromFile(resourceXMLFile);
-
-            TransformerFactory tFactory = TransformerFactory.newInstance();
-            Transformer tformer = tFactory.newTransformer();
-            Source source = new DOMSource(doc);
-            Result result = new StreamResult(new FileWriter(resourceXMLFile));
-
-            NodeList titleNodeList = doc.getElementsByTagName(afTitleTag);
-            for (int i = 0; i < titleNodeList.getLength(); i++) {
-                Element titleElmn = (Element) titleNodeList.item(i);
-                NodeList subNodeList = titleElmn.getElementsByTagName("incomingCompletion");
-                Element subElmn = (Element) subNodeList.item(0);
-                // add NEW
-                Element clonedElmn = (Element) doc.createElement("incomingCompletion");
-                subElmn.getParentNode().insertBefore(clonedElmn, subElmn.getNextSibling());
-                clonedElmn.appendChild(doc.createTextNode(incomingCompletion));
-                // remove OLD element
-                subElmn.getParentNode().removeChild(subElmn);
-                tformer.transform(source, result);
-            }
-        } catch (IOException ex) {
-            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (TransformerException ex) {
-            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }
+//    public void updateIncomingCompletion(String incomingCompletion) {
+//        try {
+//            Document doc = readingXMLFromFile(resourceXMLFile);
+//
+//            TransformerFactory tFactory = TransformerFactory.newInstance();
+//            Transformer tformer = tFactory.newTransformer();
+//            Source source = new DOMSource(doc);
+//            Result result = new StreamResult(new FileWriter(resourceXMLFile));
+//
+//            NodeList titleNodeList = doc.getElementsByTagName(afTitleTag);
+//            for (int i = 0; i < titleNodeList.getLength(); i++) {
+//                Element titleElmn = (Element) titleNodeList.item(i);
+//                NodeList subNodeList = titleElmn.getElementsByTagName("incomingCompletion");
+//                Element subElmn = (Element) subNodeList.item(0);
+//                // add NEW
+//                Element clonedElmn = (Element) doc.createElement("incomingCompletion");
+//                subElmn.getParentNode().insertBefore(clonedElmn, subElmn.getNextSibling());
+//                clonedElmn.appendChild(doc.createTextNode(incomingCompletion));
+//                // remove OLD element
+//                subElmn.getParentNode().removeChild(subElmn);
+//                tformer.transform(source, result);
+//            }
+//        } catch (IOException ex) {
+//            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
+//        } catch (TransformerException ex) {
+//            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//    }
 
     // =========================================================================
     // =========================================================================
