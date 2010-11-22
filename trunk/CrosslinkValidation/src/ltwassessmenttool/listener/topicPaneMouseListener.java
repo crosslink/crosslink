@@ -71,7 +71,7 @@ public class topicPaneMouseListener implements MouseInputListener {
     private paneTableIndexing myPaneTableIndexing;
     private PoolerManager myPooler = PoolerManager.getInstance();
     private resourcesManager myRSCManager = resourcesManager.getInstance();
-    private FOLTXTMatcher myFOLMatcher = new FOLTXTMatcher();
+    private FOLTXTMatcher myFOLMatcher = FOLTXTMatcher.getInstance();
     // Declair Highlight Painter
     highlightPainters painters = new highlightPainters();;
 

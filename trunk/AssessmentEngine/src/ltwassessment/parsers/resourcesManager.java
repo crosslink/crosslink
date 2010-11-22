@@ -80,7 +80,7 @@ public class resourcesManager {
     private String afTABNavigationIndexTag = "tabNavigationIndex";
     private String afTBANavigationIndexTag = "tbaNavigationIndex";
     private Hashtable<String, Vector<String[]>> topicAllAnchors = new Hashtable<String, Vector<String[]>>();
-    private Hashtable<String, Hashtable<String, Hashtable<String, Vector<String[]>>>> poolOutgoingData = new Hashtable<String, Hashtable<String, Hashtable<String, Vector<String[]>>>>();
+    private Hashtable<String, Hashtable<String, Hashtable<String, Vector<String[]>>>> poolOutgoingData = null; //new Hashtable<String, Hashtable<String, Hashtable<String, Vector<String[]>>>>();
     private Hashtable<String, Vector<String[]>> topicAllBEPs = new Hashtable<String, Vector<String[]>>();
     private Hashtable<String, Hashtable<String, Vector<String[]>>> poolIncomingData = new Hashtable<String, Hashtable<String, Vector<String[]>>>();
     public static PoolerManager pooler = null;
@@ -128,22 +128,24 @@ public class resourcesManager {
         defaultWikipediaDirectory = resourceMap.getString("directory.Wikipedia");
         defaultTeAraDirectory = resourceMap.getString("directory.TeAra");
         wikipediaPool = resourceMap.getString("pool.wikipedia");
-        teAraPool = resourceMap.getString("pool.teara");
-
-//        pooler = PoolerManager.getInstance();
-//        // ---------------------------------------------------------------------
-//        // Hashtable<String, Hashtable<String, Hashtable<String, Vector<String[]>>>>
-//        // topicFileID, <PoolAnchor_OL, <Anchor_OL, V<String[]{Offset, fileID, tbrel}
-//        poolOutgoingData = pooler.getOutgoingPool();
-//        // Hashtable<String, Vector<String[]>>
-//        // incoming : topicID, V<String[]{bep Offset, borel}>
-//        topicAllBEPs = pooler.getTopicAllBeps();
-//        // Hashtable<String, Hashtable<String, Vector<String[]>>>
-//        // topifFileID, <BEP_Offset, V<String[]{Offset, Length, AName, fileID, barel}
-//        poolIncomingData = pooler.getIncomingPool();        
+        teAraPool = resourceMap.getString("pool.teara");     
         
         if (AppResource.forValidationOrAssessment)
         	pooler = PoolerManager.getInstance();
+    }
+    
+    public void pullPoolData() {
+      pooler = PoolerManager.getInstance();
+      // ---------------------------------------------------------------------
+      // Hashtable<String, Hashtable<String, Hashtable<String, Vector<String[]>>>>
+      // topicFileID, <PoolAnchor_OL, <Anchor_OL, V<String[]{Offset, fileID, tbrel}
+      poolOutgoingData = pooler.getOutgoingPool();
+      // Hashtable<String, Vector<String[]>>
+      // incoming : topicID, V<String[]{bep Offset, borel}>
+      topicAllBEPs = pooler.getTopicAllBeps();
+      // Hashtable<String, Hashtable<String, Vector<String[]>>>
+      // topifFileID, <BEP_Offset, V<String[]{Offset, Length, AName, fileID, barel}
+//      poolIncomingData = pooler.getIncomingPool();   	
     }
     
     // =========================================================================

@@ -25,7 +25,7 @@ public class CaretListenerLabel implements CaretListener {
 //        this.textPane = (JTextPane)
         this.statusLabel = label;
 
-        this.myMatcher = new FOLTXTMatcher();
+        this.myMatcher = FOLTXTMatcher.getInstance();
     }
 
     public void caretUpdate(CaretEvent e) {

@@ -24,10 +24,10 @@ public class ToXml {
 	
 	
 	public static void subAnchorToXml(Anchor anchor, StringBuffer xmlText) {
-		String anchorElementStart = "\t\t\t\t<subanchor arel=\"-1\" aname=\"%s\" aoffset=\"%d\" alength=\"%d\">\n";
+		String anchorElementStart = "\t\t\t\t<subanchor arel=\"-1\" aname=\"%s\" aoffset=\"%d\" alength=\"%d\" rank=\"%d\">\n";
 		String anchorElementEnd = "\t\t\t\t</subanchor>\n";
 		
-		xmlText.append(String.format(anchorElementStart, anchor.getName(), anchor.getOffset(), anchor.getLength()));
+		xmlText.append(String.format(anchorElementStart, anchor.getName(), anchor.getOffset(), anchor.getLength(), anchor.getRank()));
 		
 		for (Target target : anchor.getTargets())
 			targetToXml(target, xmlText);
