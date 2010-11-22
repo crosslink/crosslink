@@ -80,7 +80,7 @@ public class topicPaneMouseListener implements MouseInputListener {
     private PoolerManager poolerManager = PoolerManager.getInstance();
     private poolUpdater pUpdater = new poolUpdater();
     private resourcesManager myRSCManager = resourcesManager.getInstance();
-    private FOLTXTMatcher myFOLMatcher = new FOLTXTMatcher();
+    private FOLTXTMatcher myFOLMatcher = FOLTXTMatcher.getInstance();
     // Declair Highlight Painter
     private highlightPainters painters;
     // Color c = new Color(255, 255, 240);

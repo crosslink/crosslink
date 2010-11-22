@@ -20,7 +20,7 @@ public class CaretListenerLabel implements CaretListener {
     public CaretListenerLabel(String text, JTextPane textpane, JLabel label) {
         this.textPane = textpane;
         this.statusLabel = label;
-//        this.myMatcher = new FOLTXTMatcher();
+//        this.myMatcher = FOLTXTMatcher.getInstance();
     }
 
     public void caretUpdate(CaretEvent e) {

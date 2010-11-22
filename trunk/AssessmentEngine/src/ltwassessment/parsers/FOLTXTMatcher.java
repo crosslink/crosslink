@@ -57,6 +57,14 @@ public class FOLTXTMatcher {
     private boolean isLinkWikipedia = false;
     private JTextPane dummyPane = new JTextPane();
     
+    private static FOLTXTMatcher instance = null;
+    
+    public static FOLTXTMatcher getInstance() {
+    	if (instance == null)
+    		instance = new FOLTXTMatcher();
+    	return instance;
+    }
+    
     private static void log(Object text) {
         System.out.println(text);
     }
@@ -86,7 +94,7 @@ public class FOLTXTMatcher {
         dummyPane.setContentType("text/html");
         
         populateEntityV();
-        getCurrFullXmlText();
+//        getCurrFullXmlText();
     }
 
     // =========================================================================
