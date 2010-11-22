@@ -1155,7 +1155,7 @@ public class LTWAssessmentToolView extends FrameView {
         }
         String currTargetFilePath = rscManager.getWikipediaFileFolder(currTargetLang) + rscManager.getWikipediaFilePathByName(currTargetID + ".xml");
 
-        setTABLinkPaneContent(currTargetFilePath);
+        setTABLinkPaneContent(currTargetFilePath, currTargetLang);
         // bep_Offset, linkID, Status
         String[] CurrTopicATargetSIDStatus = rscManager.getCurrTopicABepSIDStatusSA(linkTextPane, currTopicID);
         setLinkBEPIcon(currTopicPAnchorStatus, CurrTopicATargetSIDStatus);
@@ -1362,18 +1362,18 @@ public class LTWAssessmentToolView extends FrameView {
     // =========================================================================
     // Link Pane: BEP
 
-    private void setTABLinkPaneContent(String xmlFilePath) {
+    private void setTABLinkPaneContent(String xmlFilePath, String lang) {
         if (!xmlFilePath.equals("")) {
-            createLinkTextPane(xmlFilePath);
+            createLinkTextPane(xmlFilePath, lang);
         } else {
             this.linkTextPane.setContentType(textContentType);
             this.linkTextPane.setText("<b>The target file is missing or specified wrongly!!!</b>");
         }
     }
 
-    private void setTBALinkPaneContent(String xmlFilePath, String bgStatus) {
+    private void setTBALinkPaneContent(String xmlFilePath, String bgStatus, String lang) {
         if (!xmlFilePath.equals("")) {
-            createLinkTextPane(xmlFilePath);
+            createLinkTextPane(xmlFilePath, lang);
             if (bgStatus.equals("-1")) {
                 this.linkTextPane.setBackground(this.linkPaneNonRelColor);
             } else if (bgStatus.equals("0")) {
@@ -1387,7 +1387,8 @@ public class LTWAssessmentToolView extends FrameView {
         }
     }
 
-    private void createLinkTextPane(String xmlFilePath) {
+    private void createLinkTextPane(String xmlFilePath, String lang) {
+    	AdjustFont.getInstance().setComponentFont(this.linkTextPane, lang);
         this.linkTextPane.setCaretPosition(0);
         this.linkTextPane.setMargin(new Insets(5, 5, 5, 5));
         initLinkDocument(xmlFilePath);
