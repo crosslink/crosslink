@@ -917,28 +917,19 @@ public class PoolerManager {
                         toBepsVbySubAnchor = new Vector<String[]>();
                     } else if (tagName.equals(SubmissionFormat.getAftobeptag())) { // tobep , now tofile
                         String[] thisToBepProperty = null;
-                        if (AppResource.forValidationOrAssessment) {
-                            thisToBepProperty = new String[3];
+//                        if (AppResource.forValidationOrAssessment) {
+                            thisToBepProperty = new String[5];
                             for (int i = 0; i < xsr.getAttributeCount(); i++) {
                                 if (xsr.getAttributeLocalName(i).equals("tboffset")) {
                                     thisToBepProperty[0] = xsr.getAttributeValue(i);
                                 } else if (xsr.getAttributeLocalName(i).equals("tbrel")) {
                                     thisToBepProperty[2] = xsr.getAttributeValue(i);
-                                }
-                            }
-                        }
-                        else {
-	                        thisToBepProperty = new String[4];
-	                        for (int i = 0; i < xsr.getAttributeCount(); i++) {
-	                            if (xsr.getAttributeLocalName(i).equals(SubmissionFormat.getTboffsetAttributeName())) {
-	                                thisToBepProperty[0] = xsr.getAttributeValue(i);
-	                            }
-	                            else if (xsr.getAttributeLocalName(i).equals("lang"))
-	                            	thisToBepProperty[2] = xsr.getAttributeValue(i);
+                                } else if (xsr.getAttributeLocalName(i).equals("lang"))
+	                            	thisToBepProperty[3] = xsr.getAttributeValue(i);
 	                        	else if (xsr.getAttributeLocalName(i).equals("title"))
-	                        		thisToBepProperty[3] = xsr.getAttributeValue(i);
-	                        }
-                        }
+	                        		thisToBepProperty[4] = xsr.getAttributeValue(i);
+                            }
+//                        }
                         xsr.next();
                         if (xsr.isCharacters()) {
                             thisToBepProperty[1] = xsr.getText();
