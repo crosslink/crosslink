@@ -71,7 +71,7 @@ public class tabTxtPaneManager {
 
         this.myRunsPooler = PoolerManager.getInstance();
         this.myRSCManager = resourcesManager.getInstance();
-        this.myFOLMatcher = new FOLTXTMatcher();
+        this.myFOLMatcher = FOLTXTMatcher.getInstance();
 
         this.painters = new highlightPainters();
     }

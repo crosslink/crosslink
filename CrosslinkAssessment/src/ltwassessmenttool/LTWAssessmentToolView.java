@@ -187,7 +187,7 @@ public class LTWAssessmentToolView extends FrameView {
             // -----------------------------------------------------------------
             // new String[]{completed, total}
             // -----------------------------------------------------------------
-            if (rscManager.getLinkingMode().toLowerCase().equals("outgoing")) {
+//            if (rscManager.getLinkingMode().toLowerCase().equals("outgoing")) {
                 String[] tabCompletedRatio = this.rscManager.getTABCompletedRatio();
                 this.rscManager.updateOutgoingCompletion(tabCompletedRatio[0] + " : " + tabCompletedRatio[1]);
                 System.setProperty(sysPropertyTABCompletedRatioKey, tabCompletedRatio[0] + "_" + tabCompletedRatio[1]);
@@ -210,37 +210,37 @@ public class LTWAssessmentToolView extends FrameView {
                 setOutgoingTAB();
             } 
             // we don't need incoming for crosslink
-            else if (rscManager.getLinkingMode().toLowerCase().equals("incoming")) {
-                String[] tbaCompletedRatio = this.rscManager.getTBACompletedRatio();
-                this.rscManager.updateIncomingCompletion(tbaCompletedRatio[0] + " : " + tbaCompletedRatio[1]);
-                System.setProperty(sysPropertyTBACompletedRatioKey, tbaCompletedRatio[0] + "_" + tbaCompletedRatio[1]);
-
-                painters = new highlightPainters();
-                // -------------------------------------------------------------
-                // scrS, String[]{O,S, num}
-                Hashtable<String, String[]> topicAnchorOSNHT = new Hashtable<String, String[]>();
-                topicAnchorOSNHT = populateTopicBepOSNHT();
-                // -------------------------------------------------------------
-                CaretListenerLabel caretListenerLabel = new CaretListenerLabel("Caret Status", this.topicTextPane, this.statusMessageLabel);
-                this.topicTextPane.addCaretListener(caretListenerLabel);
-                topicPaneMouseListener mtTopicPaneListener = new topicPaneMouseListener(this.topicTextPane, this.linkTextPane);
-                this.topicTextPane.addMouseListener(mtTopicPaneListener);
-                this.topicTextPane.addMouseMotionListener(mtTopicPaneListener);
-                linkPaneMouseListener myLPMListener = new linkPaneMouseListener(this.topicTextPane, this.linkTextPane);
-                this.linkTextPane.addMouseListener(myLPMListener);
-                // -------------------------------------------------------------
-                this.outRadioBtn.setSelected(false);
-                this.inRadioBtn.setSelected(true);
-                // -------------------------------------------------------------
-                setIncomingTBA();
-            } else {
-                String errInLinkingMode = "The system cannot indicate the linking mode, Outgoing or Incoming.\r\n" +
-                        " It might have been externally modified.\r\n" +
-                        "Please check the tool Resource file, \r\n" +
-                        "\resources\toolResources.xml";
-                JOptionPane.showMessageDialog(LTWAssessmentToolApp.getApplication().getMainFrame(), errInLinkingMode);
-            }
-        }
+//            else if (rscManager.getLinkingMode().toLowerCase().equals("incoming")) {
+//                String[] tbaCompletedRatio = this.rscManager.getTBACompletedRatio();
+//                this.rscManager.updateIncomingCompletion(tbaCompletedRatio[0] + " : " + tbaCompletedRatio[1]);
+//                System.setProperty(sysPropertyTBACompletedRatioKey, tbaCompletedRatio[0] + "_" + tbaCompletedRatio[1]);
+//
+//                painters = new highlightPainters();
+//                // -------------------------------------------------------------
+//                // scrS, String[]{O,S, num}
+//                Hashtable<String, String[]> topicAnchorOSNHT = new Hashtable<String, String[]>();
+//                topicAnchorOSNHT = populateTopicBepOSNHT();
+//                // -------------------------------------------------------------
+//                CaretListenerLabel caretListenerLabel = new CaretListenerLabel("Caret Status", this.topicTextPane, this.statusMessageLabel);
+//                this.topicTextPane.addCaretListener(caretListenerLabel);
+//                topicPaneMouseListener mtTopicPaneListener = new topicPaneMouseListener(this.topicTextPane, this.linkTextPane);
+//                this.topicTextPane.addMouseListener(mtTopicPaneListener);
+//                this.topicTextPane.addMouseMotionListener(mtTopicPaneListener);
+//                linkPaneMouseListener myLPMListener = new linkPaneMouseListener(this.topicTextPane, this.linkTextPane);
+//                this.linkTextPane.addMouseListener(myLPMListener);
+//                // -------------------------------------------------------------
+//                this.outRadioBtn.setSelected(false);
+//                this.inRadioBtn.setSelected(true);
+//                // -------------------------------------------------------------
+//                setIncomingTBA();
+//            } else {
+//                String errInLinkingMode = "The system cannot indicate the linking mode, Outgoing or Incoming.\r\n" +
+//                        " It might have been externally modified.\r\n" +
+//                        "Please check the tool Resource file, \r\n" +
+//                        "resources\toolResources.xml";
+//                JOptionPane.showMessageDialog(LTWAssessmentToolApp.getApplication().getMainFrame(), errInLinkingMode);
+//            }
+//        }
     }
 
     private boolean corpusDirChecker(boolean topicIsWikipedia) {
@@ -774,7 +774,7 @@ public class LTWAssessmentToolView extends FrameView {
             this.linkTextPane.setText(xmlHtmlText);
             this.linkTextPane.setCaretPosition(0);
             // --------------------------------------------------------- CHECK HERE
-            FOLTXTMatcher folMatcher = new FOLTXTMatcher();
+            FOLTXTMatcher folMatcher = FOLTXTMatcher.getInstance();
             String[] nextLinkSE = folMatcher.getSCRAnchorNameSESA(this.linkTextPane, nextLinkID, new String[]{nextLinkO, nextLinkL, ""});
             String nextLinkAnchorName = nextLinkSE[0];
             String nextLinkS = nextLinkSE[1];
@@ -981,7 +981,7 @@ public class LTWAssessmentToolView extends FrameView {
             this.linkTextPane.setText(xmlHtmlText);
             this.linkTextPane.setCaretPosition(0);
             // --------------------------------------------------------- CHECK HERE
-            FOLTXTMatcher folMatcher = new FOLTXTMatcher();
+            FOLTXTMatcher folMatcher = FOLTXTMatcher.getInstance();
             String[] nextLinkSE = folMatcher.getSCRAnchorNameSESA(this.linkTextPane, nextLinkID, new String[]{nextLinkO, nextLinkL, ""});
             String nextLinkAnchorName = nextLinkSE[0];
             String nextLinkS = nextLinkSE[1];
@@ -1119,8 +1119,8 @@ public class LTWAssessmentToolView extends FrameView {
 
         // ---------------------------------------------------------------------
         // For 1st time to get the ANCHOR OL name SE
-//        FOLTXTMatcher folMatcher = new FOLTXTMatcher();
-//        folMatcher = new FOLTXTMatcher();
+//        FOLTXTMatcher folMatcher = FOLTXTMatcher.getInstance();
+//        folMatcher = FOLTXTMatcher.getInstance();
 //        folMatcher.getSCRAnchorPosV(this.topicTextPane, currTopicID, topicAnchorsHT);
         // ---------------------------------------------------------------------
 
@@ -1194,7 +1194,7 @@ public class LTWAssessmentToolView extends FrameView {
         // For 1st time to get the ANCHOR OL name SE
 //        String topicBepsHTPrefix = "incoming : ";
 //        Vector<String[]> currBepXMLOffset = topicBepsHT.get(topicBepsHTPrefix + currTopicID);
-//        FOLTXTMatcher folMatcher = new FOLTXTMatcher();
+//        FOLTXTMatcher folMatcher = FOLTXTMatcher.getInstance();
 //        folMatcher.getBepSCRSPVS(this.topicTextPane, currTopicID, currBepXMLOffset, this.isTopicWikipedia);
         // ---------------------------------------------------------------------
 

@@ -408,13 +408,19 @@ public class resourcesManager {
 
     public String[] getTBANavigationIndex() {
         // [0]: Topic, [1]: Anchor, [2]: Subanchor, [3]: BEP
-        String[] NavigationIndex = getDataByTagName(afTitleTag, afTBANavigationIndexTag).split(" : ");
+    	String result = getDataByTagName(afTitleTag, afTBANavigationIndexTag);
+    	if (result.length() == 0)
+    		result = "0 : 0 , 0 , 0 , 0";
+        String[] NavigationIndex = result.split(" : ");
         return NavigationIndex;
     }
 
     public String[] getTABNavigationIndex() {
         // [0]: Topic, [1]: Anchor, [2]: Subanchor, [3]: BEP
-        String[] NavigationIndex = getDataByTagName(afTitleTag, afTABNavigationIndexTag).split(" : ");
+        String result = getDataByTagName(afTitleTag, afTABNavigationIndexTag);
+    	if (result.length() == 0)
+    		result = "0 : 0 , 0 , 0 , 0";
+        String[] NavigationIndex = result.split(" : ");
         return NavigationIndex;
     }
 
@@ -794,34 +800,7 @@ public class resourcesManager {
     }
 
     public void updateLinkingMode(String linkingMode) {
-        try {
-            Document doc = readingXMLFromFile(resourceXMLFile);
-
-            TransformerFactory tFactory = TransformerFactory.newInstance();
-            Transformer tformer = tFactory.newTransformer();
-            Source source = new DOMSource(doc);
-            Result result = new StreamResult(new FileWriter(resourceXMLFile));
-
-            NodeList titleNodeList = doc.getElementsByTagName(afTitleTag);
-            for (int i = 0; i < titleNodeList.getLength(); i++) {
-                Element titleElmn = (Element) titleNodeList.item(i);
-                NodeList subNodeList = titleElmn.getElementsByTagName(afLinkingModeTag);
-                Element subElmn = (Element) subNodeList.item(0);
-                // add NEW
-                Element clonedElmn = (Element) doc.createElement(afLinkingModeTag);
-                subElmn.getParentNode().insertBefore(clonedElmn, subElmn.getNextSibling());
-                clonedElmn.appendChild(doc.createTextNode(linkingMode));
-                // remove OLD element
-                subElmn.getParentNode().removeChild(subElmn);
-
-                tformer.transform(source, result);
-            }
-
-        } catch (IOException ex) {
-            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (TransformerException ex) {
-            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        updateElement(afLinkingModeTag, linkingMode);
     }
 
     private StringBuffer htmlSB = null;
@@ -1881,7 +1860,7 @@ public class resourcesManager {
         String currBepSCRS = this.pooler.getPoolAnchorBepLinkStartP(topicID, new String[]{currAnchorOLSA[0], currAnchorOLSA[1]}, bepFileID);
         currTopicABepSIDStatus = new String[]{currBepSCRS, bepFileID, bepStatus};
 
-//        FOLTXTMatcher folMatcher = new FOLTXTMatcher();
+//        FOLTXTMatcher folMatcher = FOLTXTMatcher.getInstance();
 //        if (Integer.valueOf(bepOffset) > -1) {
 //            boolean isLinkWikipedia = Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey));
 //            String currBepSCRS = folMatcher.getBepSCRSP(myLinkTextPane, bepFileID, bepOffset, isLinkWikipedia);
@@ -1950,18 +1929,21 @@ public class resourcesManager {
         for (int i = 0; i < titleNodeList.getLength(); i++) {
             Element titleElmn = (Element) titleNodeList.item(i);
             NodeList subNodeList = titleElmn.getElementsByTagName(afAnchorFOLTag);
-            Element subElmn = (Element) subNodeList.item(0);
-            NodeList subElmnNodes = subElmn.getChildNodes();
-            for (int j = 0; j < subElmnNodes.getLength(); j++) {
-                Node thisSElmnNode = subElmnNodes.item(j);
-                if (thisSElmnNode.getNodeType() == Node.ELEMENT_NODE) {
-                    Element thisSElmn = (Element) thisSElmnNode;
-                    Node firstNode = thisSElmn.getFirstChild();
-                    String anchorOLSet = firstNode.getTextContent();
-                    if (!currAnchorsOLSet.contains(anchorOLSet)) {
-                        currAnchorsOLSet.add(anchorOLSet);
-                    }
-                }
+            
+            if (subNodeList.getLength() > 0) {
+	            Element subElmn = (Element) subNodeList.item(0);
+	            NodeList subElmnNodes = subElmn.getChildNodes();
+	            for (int j = 0; j < subElmnNodes.getLength(); j++) {
+	                Node thisSElmnNode = subElmnNodes.item(j);
+	                if (thisSElmnNode.getNodeType() == Node.ELEMENT_NODE) {
+	                    Element thisSElmn = (Element) thisSElmnNode;
+	                    Node firstNode = thisSElmn.getFirstChild();
+	                    String anchorOLSet = firstNode.getTextContent();
+	                    if (!currAnchorsOLSet.contains(anchorOLSet)) {
+	                        currAnchorsOLSet.add(anchorOLSet);
+	                    }
+	                }
+	            }
             }
         }
         return currAnchorsOLSet;
@@ -2046,7 +2028,7 @@ public class resourcesManager {
         // String[]{Anchor_SP, EP}
         String currTopicBepSP = "";
         // convert OL into SCR SE
-        FOLTXTMatcher folMatcher = new FOLTXTMatcher();
+        FOLTXTMatcher folMatcher = FOLTXTMatcher.getInstance();
         String currBepOffset = this.getCurrTopicBepOffset();
         return currTopicBepSP = folMatcher.getBepSCRSP(myTextPane, topicID, currBepOffset, Boolean.valueOf(System.getProperty(sysPropertyIsTopicWikiKey)));
     }
@@ -2097,7 +2079,7 @@ public class resourcesManager {
         // ---------------------------------------------------------------------
         // Link BEP
         // convery BEP Offset into SCR Start Point
-        FOLTXTMatcher folMatcher = new FOLTXTMatcher();
+        FOLTXTMatcher folMatcher = FOLTXTMatcher.getInstance();
         // Anchor_Name, SP, EP
         String[] targetASA = folMatcher.getSCRAnchorNameSESA(myLinkTextPane, anchorFileID, new String[]{anchorOffset, anchorLength, anchorName});
         currTopicBAnchorSEIDStatus = new String[]{targetASA[1], targetASA[2], anchorFileID, anchorStatus};

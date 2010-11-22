@@ -870,7 +870,7 @@ public class PoolerManager {
                         RunTopics.add(thisTopic);
                         isThisTopic = true;
                     } else if (tagName.equals("outgoinglinks")  || tagName.equals("outgoing")) {
-                        isOutgoing = true;
+//                        isOutgoing = true;
                         anchorsVbyTopic = new Vector<String[]>();
                         anchorsHT = new Hashtable<String, Hashtable<String, Vector<String[]>>>();
                         subAnchorsVbyTopic = new Vector<String[]>();
@@ -986,11 +986,11 @@ public class PoolerManager {
                         //topicAnchorsHT
                         isThisTopic = false;
                     } else if (tagName.equals("outgoinglinks") || tagName.equals("outgoing")) {
-                        if (isOutgoing) {
+//                        if (isOutgoing) {
                             topicAnchorsHT.put("outgoing : " + thisTopicFileID, anchorsVbyTopic);
                             poolOutgoingData.put(thisTopicFileID, anchorsHT);
-                        }
-                        isOutgoing = false;
+//                        }
+//                        isOutgoing = false;
                     } else if (tagName.equals("anchor")) {
                         anchorsHT.put(thisAnchorSet, subAnchorsToBepsHT);
                         

@@ -155,7 +155,7 @@ public class linkPaneMouseListener implements MouseInputListener {
         paneContentType = resourceMap.getString("html.content.type");
 
         myRSCManager = resourcesManager.getInstance();
-        myFolMatcher = new FOLTXTMatcher();
+        myFolMatcher = FOLTXTMatcher.getInstance();
         myPoolUpdater = new poolUpdater();
         myPoolManager = PoolerManager.getInstance();
         myTABTxtPaneManager = new tabTxtPaneManager();

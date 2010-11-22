@@ -65,7 +65,7 @@ public class paneTableIndexing {
         // ---------------------------------------------------------------------
         this.myRunsPooler = PoolerManager.getInstance();
         this.myRSCManager = resourcesManager.getInstance();
-        this.myFOLMatcher = new FOLTXTMatcher();
+        this.myFOLMatcher = FOLTXTMatcher.getInstance();
         // [0]:participant-id, [1]:run-id, [2]:task, [3]:collection
         this.afProperty = myRunsPooler.getPoolProperty();
         // Vector<String[]>: [0]:FileID, [1]:Name
