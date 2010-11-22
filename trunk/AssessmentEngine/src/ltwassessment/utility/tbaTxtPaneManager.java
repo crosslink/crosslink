@@ -88,7 +88,7 @@ public class tbaTxtPaneManager {
 
         // 1) Update Topic TXT Pane
         if (paneUpdateLevel == 1) {
-            updateTopicPaneStatus(this.rowTopicID);
+            updateTopicPaneStatus(this.rowTopicID, AppResource.sourceLang);
         }
         // 1) + 2) Update BEP highlight on Topic TXT Pane &
         //    and Auto scrolling to Curr BEP Position
@@ -101,7 +101,7 @@ public class tbaTxtPaneManager {
             String[] anchorOLSA = rowAnchorXmlOLSet.split("_");
             rowAnchorXmlOffset = anchorOLSA[0];
             rowAnchorXmlLength = anchorOLSA[1];
-            updateLinkPaneAnchorStatus(anchorOLSA, rowAnchorFileID);
+            updateLinkPaneAnchorStatus(anchorOLSA, rowAnchorFileID, thisRowSA[4]);
         }
     }
 
@@ -110,7 +110,7 @@ public class tbaTxtPaneManager {
     // 1) check Topic Type & get Topic XML Path
     // 2) Update toolResources XML: currTopicXmlFile & currTopicAnchors
     // 3) Update Topic Text Pane
-    private void updateTopicPaneStatus(String myTopicID) {
+    private void updateTopicPaneStatus(String myTopicID, String lang) {
         String topicXmlPath = "";
 //        if (myRSCManager.getTopicCollType().equals(wikipediaCollTitle)) {
             isTopicWikipedia = true;
@@ -128,7 +128,7 @@ public class tbaTxtPaneManager {
         myRSCManager.updateCurrTopicID(topicXmlPath);
         // Set Topic Content Text
         boolean isTopicPane = true;
-        setTextPaneContent(topicXmlPath, isTopicPane);
+        setTextPaneContent(topicXmlPath, isTopicPane, lang);
         // INSERT BEP Icons
         Hashtable<String, Vector<String[]>> topicBepsHT = myRunsPooler.getTopicAllBeps();
         Vector<String[]> thisTopicBepsV = topicBepsHT.get(topicBepsHTPrefix + myTopicID);
@@ -162,7 +162,7 @@ public class tbaTxtPaneManager {
     }
     // 5) Update Link Text Pane & BEP
 
-    private void updateLinkPaneAnchorStatus(String[] anchorOLSA, String rowAnchorFileID) {
+    private void updateLinkPaneAnchorStatus(String[] anchorOLSA, String rowAnchorFileID, String lang) {
         String thisFileID = rowAnchorFileID;
         String linkXmlPath = "";
 //        if (myRSCManager.getLinkCollType().equals(wikipediaCollTitle)) {
@@ -183,7 +183,7 @@ public class tbaTxtPaneManager {
 //            }
 //        }
         boolean isTopicPane = false;
-        setTextPaneContent(linkXmlPath, isTopicPane);
+        setTextPaneContent(linkXmlPath, isTopicPane, lang);
     }
     // </editor-fold>
 
@@ -236,7 +236,7 @@ public class tbaTxtPaneManager {
         txtPane.repaint();
     }
 
-    private void setTextPaneContent(String xmlFilePath, boolean isTopicText) {
+    private void setTextPaneContent(String xmlFilePath, boolean isTopicText, String lang) {
         if (!xmlFilePath.equals("")) {
             if (isTopicText) {
                 createTopicTextPane(xmlFilePath);
