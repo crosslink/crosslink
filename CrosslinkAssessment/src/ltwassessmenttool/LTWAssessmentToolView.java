@@ -30,6 +30,7 @@ import javax.swing.text.StyleConstants;
 import javax.swing.text.StyledDocument;
 
 import ltwassessment.AppResource;
+import ltwassessment.font.AdjustFont;
 import ltwassessment.parsers.Xml2Html;
 import ltwassessmenttool.listener.CaretListenerLabel;
 import ltwassessmenttool.listener.linkPaneMouseListener;
@@ -852,6 +853,8 @@ public class LTWAssessmentToolView extends FrameView {
             String[] nextAnchorLinkOSIDStatusSA = nextAnchorBepLinkVSA.elementAt(1);
             String nextLinkO = nextAnchorLinkOSIDStatusSA[0];
             String nextLinkID = nextAnchorLinkOSIDStatusSA[2];
+            String nextLinkLang;
+            String nextLinkTitle;
             String nextLinkS = this.myPooler.getPoolAnchorBepLinkStartP(this.currTopicID, new String[]{nextAnchorO, nextAnchorL}, nextLinkID);
             String nextLinkStatus = this.myPooler.getPoolAnchorBepLinkStatus(this.currTopicID, new String[]{nextAnchorO, nextAnchorL}, nextLinkID);
             // -----------------------------------------------------------------
@@ -1043,7 +1046,7 @@ public class LTWAssessmentToolView extends FrameView {
 
     private void inRadioBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inRadioBtnActionPerformed
         // populate Incoming Links T.B.A.
-        setIncomingTBA();
+//        setIncomingTBA();
     }//GEN-LAST:event_inRadioBtnActionPerformed
     // </editor-fold>
 
@@ -1114,8 +1117,14 @@ public class LTWAssessmentToolView extends FrameView {
         Vector<String[]> topicIDNameVSA = this.myPooler.getAllTopicsInPool();
         currTopicName = topicIDNameVSA.elementAt(0)[1].trim();
         currTopicID = rscManager.getTopicID();
-        currTopicFilePath = rscManager.getCurrTopicXmlFile();
-        setTopicPaneContent(currTopicFilePath);
+        String topicLang = topicIDNameVSA.elementAt(0)[2];
+        if (currTopicID.length() > 0)
+        	currTopicFilePath = rscManager.getCurrTopicXmlFile();
+        else {
+        	currTopicID = topicIDNameVSA.elementAt(0)[0].trim();
+        	currTopicFilePath = rscManager.getTopicFilePath(currTopicID, topicLang);
+        }
+        setTopicPaneContent(currTopicFilePath, topicLang);
 
 
         // ---------------------------------------------------------------------
@@ -1135,14 +1144,16 @@ public class LTWAssessmentToolView extends FrameView {
         String[] currTopicAnchorNameSE = new String[]{currTopicOLNameSEStatus[2], currTopicOLNameSEStatus[3], currTopicOLNameSEStatus[4]};
         setTopicTextHighlighter(topicAnchorOLSEStatus, currTopicAnchorNameSE);
         // ---------------------------------------------------------------------
-        // Get current Link file ID & SCR BEP S
+        // Get current Link file ID & SCR BEP S, lang, title
         String[] CurrTopicATargetOID = rscManager.getCurrTopicATargetOID(linkTextPane, currTopicID);
         String currTargetOffset = CurrTopicATargetOID[0];
         String currTargetID = CurrTopicATargetOID[1];
+        String currTargetLang = CurrTopicATargetOID[2];
+        String pageTitle = CurrTopicATargetOID[3];;
         if (currTargetID.endsWith("\"")) {
             currTargetID = currTargetID.substring(0, currTargetID.length() - 1);
         }
-        String currTargetFilePath = rscManager.getWikipediaFileFolder("zh") + rscManager.getWikipediaFilePathByName(currTargetID + ".xml");
+        String currTargetFilePath = rscManager.getWikipediaFileFolder(currTargetLang) + rscManager.getWikipediaFilePathByName(currTargetID + ".xml");
 
         setTABLinkPaneContent(currTargetFilePath);
         // bep_Offset, linkID, Status
@@ -1158,9 +1169,8 @@ public class LTWAssessmentToolView extends FrameView {
         newTABFieldValues.add(this.currTopicID);
         newTABFieldValues.add(currAnchorName);
         newTABFieldValues.add(currTargetID);
-        String pageTitle = "";
 //        if (Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey))) {
-            pageTitle = this.rscManager.getWikipediaPageTitle(currTargetID);
+        //    pageTitle = this.rscManager.getWikipediaPageTitle(currTargetID);
 //        } else {
 //            pageTitle = this.rscManager.getTeAraFilePathByName(currTargetID);
 //        }
@@ -1173,95 +1183,96 @@ public class LTWAssessmentToolView extends FrameView {
     // Incoming Links: T.B.A.
     // =========================================================================
 
-    private void setIncomingTBA() {
-        System.setProperty(sysPropertyIsTABKey, "false");
-        rscManager.updateLinkingMode("incoming");
-        // Hashtable<incoming : topicFile>: [0]:Offset
-        // Hashtable<String, Hashtable<String, Vector<String[]>>>
-        topicBepsHT = myPooler.getTopicAllBeps();
-        // ---------------------------------------------------------------------
-        // 1) Get Topic ID & xmlFile Path
-        //    SET Topic Text Pane Content
-        // 2) Get all Anchor Text SCR SE + Status
-        //    SET Highlighter + Curr Anchor Text
-        // 3) Get Target Link
-        //    1st un-assessed Link, belonging to Curr Anchor Text
-        currTopicID = rscManager.getTopicID();
-        currTopicFilePath = rscManager.getCurrTopicXmlFile();
-        setTopicPaneContent(currTopicFilePath);
-
-
-        // ---------------------------------------------------------------------
-        // For 1st time to get the ANCHOR OL name SE
-//        String topicBepsHTPrefix = "incoming : ";
-//        Vector<String[]> currBepXMLOffset = topicBepsHT.get(topicBepsHTPrefix + currTopicID);
-//        FOLTXTMatcher folMatcher = FOLTXTMatcher.getInstance();
-//        folMatcher.getBepSCRSPVS(this.topicTextPane, currTopicID, currBepXMLOffset, this.isTopicWikipedia);
-        // ---------------------------------------------------------------------
-
-
-        // set Topic Bep ICONs
-        // V - String[]{Bep_Offset, S, Status}
-        topicBepScrStatus = rscManager.getTopicBepOSStatusVSA();
-        String currBepStartP = rscManager.getCurrTopicBepSCRS(this.topicTextPane, currTopicID);
-        // String[]{Bep_Offset, Status}
-        String[] currBepOStatus = rscManager.getCurrTopicBepOffsetStatus().split("_");
-        String topicBepStatus = currBepOStatus[1];
-        setTopicBEPIcon(topicBepScrStatus, currBepOStatus[0]);
-        // ---------------------------------------------------------------------
-        // Get current Link file ID & SCR Anchor S-E
-        String[] CurrTopicBTargetOLID = rscManager.getCurrTopicBTargetOLID(linkTextPane, currTopicID);
-        String currTargetOffset = CurrTopicBTargetOLID[0];
-        String currTargetLength = CurrTopicBTargetOLID[1];
-        String currTargetID = CurrTopicBTargetOLID[2];
-        String currTargetFilePath = "";
-//        if (this.isLinkWikipedia) {
-            currTargetFilePath = rscManager.getWikipediaFilePathByName(currTargetID + ".xml");
+//    private void setIncomingTBA() {
+//        System.setProperty(sysPropertyIsTABKey, "false");
+//        rscManager.updateLinkingMode("incoming");
+//        // Hashtable<incoming : topicFile>: [0]:Offset
+//        // Hashtable<String, Hashtable<String, Vector<String[]>>>
+//        topicBepsHT = myPooler.getTopicAllBeps();
+//        // ---------------------------------------------------------------------
+//        // 1) Get Topic ID & xmlFile Path
+//        //    SET Topic Text Pane Content
+//        // 2) Get all Anchor Text SCR SE + Status
+//        //    SET Highlighter + Curr Anchor Text
+//        // 3) Get Target Link
+//        //    1st un-assessed Link, belonging to Curr Anchor Text
+//        currTopicID = rscManager.getTopicID();
+//        currTopicFilePath = rscManager.getCurrTopicXmlFile();
+//        setTopicPaneContent(currTopicFilePath);
+//
+//
+//        // ---------------------------------------------------------------------
+//        // For 1st time to get the ANCHOR OL name SE
+////        String topicBepsHTPrefix = "incoming : ";
+////        Vector<String[]> currBepXMLOffset = topicBepsHT.get(topicBepsHTPrefix + currTopicID);
+////        FOLTXTMatcher folMatcher = FOLTXTMatcher.getInstance();
+////        folMatcher.getBepSCRSPVS(this.topicTextPane, currTopicID, currBepXMLOffset, this.isTopicWikipedia);
+//        // ---------------------------------------------------------------------
+//
+//
+//        // set Topic Bep ICONs
+//        // V - String[]{Bep_Offset, S, Status}
+//        topicBepScrStatus = rscManager.getTopicBepOSStatusVSA();
+//        String currBepStartP = rscManager.getCurrTopicBepSCRS(this.topicTextPane, currTopicID);
+//        // String[]{Bep_Offset, Status}
+//        String[] currBepOStatus = rscManager.getCurrTopicBepOffsetStatus().split("_");
+//        String topicBepStatus = currBepOStatus[1];
+//        setTopicBEPIcon(topicBepScrStatus, currBepOStatus[0]);
+//        // ---------------------------------------------------------------------
+//        // Get current Link file ID & SCR Anchor S-E
+//        String[] CurrTopicBTargetOLID = rscManager.getCurrTopicBTargetOLID(linkTextPane, currTopicID);
+//        String currTargetOffset = CurrTopicBTargetOLID[0];
+//        String currTargetLength = CurrTopicBTargetOLID[1];
+//        String currTargetID = CurrTopicBTargetOLID[2];
+//        String currTargetFilePath = "";
+////        if (this.isLinkWikipedia) {
+//            currTargetFilePath = rscManager.getWikipediaFilePathByName(currTargetID + ".xml");
+////        } else {
+////            currTargetFilePath = rscManager.getTeAraFilePathByName(currTargetID + ".xml");
+////        }
+//        String currBALinkStatus = this.myPooler.getPoolBepAnchorLinkStatus(currTopicID, currBepOStatus[0], new String[]{currTargetOffset, currTargetLength, currTargetID});
+//        String toBALinkStatus = "";
+//        if (topicBepStatus.equals("-1")) {
+//            toBALinkStatus = "-1";
 //        } else {
-//            currTargetFilePath = rscManager.getTeAraFilePathByName(currTargetID + ".xml");
+//            toBALinkStatus = currBALinkStatus;
 //        }
-        String currBALinkStatus = this.myPooler.getPoolBepAnchorLinkStatus(currTopicID, currBepOStatus[0], new String[]{currTargetOffset, currTargetLength, currTargetID});
-        String toBALinkStatus = "";
-        if (topicBepStatus.equals("-1")) {
-            toBALinkStatus = "-1";
-        } else {
-            toBALinkStatus = currBALinkStatus;
-        }
-        setTBALinkPaneContent(currTargetFilePath, toBALinkStatus);
-        // String[]{Anchor_SP, EP, File_ID, Status}
-        String[] CurrTopicBTargetSEIDStatus = rscManager.getCurrTopicBAnchorSEIDStatus(linkTextPane, currTopicID);
-        setLinkAnchorHighlighter(CurrTopicBTargetSEIDStatus);
-        // ---------------------------------------------------------------------
-        String currTopicOLSEStatusKey = currBepOStatus[0] + "_" + bepLength + "_" + currBepStartP + "_" + String.valueOf(Integer.valueOf(currBepStartP) + Integer.valueOf(bepLength)) + "_" + currBepOStatus[1];
-        System.setProperty(this.sysPropertyCurrTopicOLSEStatusKey, currTopicOLSEStatusKey);
-        // ---------------------------------------------------------------------
-        String linkAnchorName = this.myPooler.getPoolBepLinkAnchorName(currTopicID, currBepOStatus[0], new String[]{currTargetOffset, currTargetLength, currTargetID});
-        Vector<String> newTABFieldValues = new Vector<String>();
-        newTABFieldValues.add(this.currTopicName);
-        newTABFieldValues.add(this.currTopicID);
-        newTABFieldValues.add(linkAnchorName);
-        newTABFieldValues.add(currTargetID);
-        String pageTitle = "";
-//        if (Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey))) {
-            pageTitle = this.rscManager.getWikipediaPageTitle(currTargetID);
-//        } else {
-//            pageTitle = this.rscManager.getTeAraFilePathByName(currTargetID);
-//        }
-        newTABFieldValues.add(pageTitle.trim());
-        String[] pAnchorCompletionSA = this.rscManager.getIncomingCompletion();
-        newTABFieldValues.add(pAnchorCompletionSA[0] + " / " + pAnchorCompletionSA[1]);
-        os.setTABFieldValues(newTABFieldValues);
-    }
+//        setTBALinkPaneContent(currTargetFilePath, toBALinkStatus);
+//        // String[]{Anchor_SP, EP, File_ID, Status}
+//        String[] CurrTopicBTargetSEIDStatus = rscManager.getCurrTopicBAnchorSEIDStatus(linkTextPane, currTopicID);
+//        setLinkAnchorHighlighter(CurrTopicBTargetSEIDStatus);
+//        // ---------------------------------------------------------------------
+//        String currTopicOLSEStatusKey = currBepOStatus[0] + "_" + bepLength + "_" + currBepStartP + "_" + String.valueOf(Integer.valueOf(currBepStartP) + Integer.valueOf(bepLength)) + "_" + currBepOStatus[1];
+//        System.setProperty(this.sysPropertyCurrTopicOLSEStatusKey, currTopicOLSEStatusKey);
+//        // ---------------------------------------------------------------------
+//        String linkAnchorName = this.myPooler.getPoolBepLinkAnchorName(currTopicID, currBepOStatus[0], new String[]{currTargetOffset, currTargetLength, currTargetID});
+//        Vector<String> newTABFieldValues = new Vector<String>();
+//        newTABFieldValues.add(this.currTopicName);
+//        newTABFieldValues.add(this.currTopicID);
+//        newTABFieldValues.add(linkAnchorName);
+//        newTABFieldValues.add(currTargetID);
+//        String pageTitle = "";
+////        if (Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey))) {
+//            pageTitle = this.rscManager.getWikipediaPageTitle(currTargetID);
+////        } else {
+////            pageTitle = this.rscManager.getTeAraFilePathByName(currTargetID);
+////        }
+//        newTABFieldValues.add(pageTitle.trim());
+//        String[] pAnchorCompletionSA = this.rscManager.getIncomingCompletion();
+//        newTABFieldValues.add(pAnchorCompletionSA[0] + " / " + pAnchorCompletionSA[1]);
+//        os.setTABFieldValues(newTABFieldValues);
+//    }
     // =========================================================================
     // =========================================================================
     // </editor-fold>
 
     // <editor-fold defaultstate="collapsed" desc="Set Text Pane & Highlight Anchor">
     // Topic Pane: Anchor
-    private void setTopicPaneContent(String xmlFilePath) {
+    private void setTopicPaneContent(String xmlFilePath, String lang) {
         if (!xmlFilePath.equals("")) {
             createTopicTextPane(xmlFilePath);
         } else {
+        	AdjustFont.setComponentFont(topicTextPane, lang);
             this.topicTextPane.setContentType(textContentType);
             this.topicTextPane.setText("<b>The topic file is missing or specified wrongly!!!</b>");
         }
