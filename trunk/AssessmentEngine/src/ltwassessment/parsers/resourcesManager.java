@@ -806,11 +806,15 @@ public class resourcesManager {
     }
 
     private StringBuffer htmlSB = null;
-
+    
     public String getWikipediaPageTitle(String xmlFileID) {
+    	return getWikipediaPageTitle(xmlFileID, AppResource.targetLang);
+    }
+
+    public String getWikipediaPageTitle(String xmlFileID, String lang) {
         String thisPageTitle = "";
         htmlSB = new StringBuffer();
-        String xmlPath = this.getWikipediaFilePathByName(xmlFileID + ".xml");
+        String xmlPath = this.getWikipediaFileFolder(lang) + this.getWikipediaFilePathByName(xmlFileID + ".xml");
         pageTitleExtractor(xmlPath);
         return thisPageTitle = htmlSB.toString();
     }
@@ -1440,6 +1444,8 @@ public class resourcesManager {
 
                         nextTAB.add(nextTAnchorOL);
                         nextTAB.add(nextTABepOID);
+                        
+                        break;
                     }
                     pABepCounter++;
                 }
@@ -1833,7 +1839,9 @@ public class resourcesManager {
         String[] currBepSA = currBepVSA.elementAt(Integer.valueOf(bepLinkIndex));
         String bepOffset = currBepSA[0].trim();
         String bepFileID = currBepSA[1].trim();
-        return currTopicABepIDO = new String[]{bepOffset, bepFileID};
+        String bepLang = currBepSA[3].trim();
+        String bepTitle = currBepSA[4].trim();
+        return currTopicABepIDO = new String[]{bepOffset, bepFileID, bepLang, bepTitle};
     }
 
     public String[] getCurrTopicABepSIDStatusSA(JTextPane myLinkTextPane, String topicID) {
@@ -2335,6 +2343,10 @@ public class resourcesManager {
         }
         return mySortedNumbersV;
     }
+
+	public String getTopicFilePath(String topicID, String topicLang) {
+		return "resources" + File.separator + "Topics" + File.separator + topicLang + File.separator + topicID + ".xml";
+	}
 
 
     // </editor-fold>

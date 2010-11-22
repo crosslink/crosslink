@@ -832,10 +832,6 @@ public class LTWAssessmentToolView extends FrameView {
                     // 2) convert submission XML into Pool XML for validation
                     // TODO: We kept this form just because it already have been done.
                 	
-                	// set UI font
-                	AdjustFont.setFont(anchorBepTable);
-                	AdjustFont.setFont(linkTextPane);
-                	
                     File schemaFile = new File(xmlSchemaFile);
                     Validator validator = Validator.getInstance(schemaFile.toURI().toURL());
                     String msgFromValidation = validator.validateSubmissionXML(fileList);
@@ -849,6 +845,11 @@ public class LTWAssessmentToolView extends FrameView {
                         JOptionPane.showMessageDialog(LTWAssessmentToolApp.getApplication().getMainFrame(), poolingMsg);
                         // =====================================================
                         updatePoolerToResourceXML(thisXMLFile.getAbsolutePath());
+                        
+                    	// set UI font
+                    	AdjustFont.setComponentFont(anchorBepTable, AppResource.targetLang);
+                    	AdjustFont.setComponentFont(linkTextPane, AppResource.targetLang);
+                    	
                         myTABTxtPaneManager = new tabTxtPaneManager();
                         myTBATxtPaneManager = new tbaTxtPaneManager();
                         // =====================================================

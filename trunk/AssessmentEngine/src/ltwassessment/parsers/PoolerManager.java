@@ -288,7 +288,7 @@ public class PoolerManager {
     }
 
     public String getPoolAnchorBepLinkStartP(String topicID, String[] poolAnchorOL, String targetID) {
-        String pAnchorStartP = "";
+        String pAnchorStartP = "0";
         VTDGen vg = new VTDGen();
 
         if (vg.parseFile(poolXMLPath, true)) {
@@ -858,13 +858,16 @@ public class PoolerManager {
                             }
                         }
                     } else if (tagName.equals("topic")) {
-                        String[] thisTopic = new String[2];
+                        String[] thisTopic = new String[3];
+                        thisTopic[2] = "en";
                         for (int i = 0; i < xsr.getAttributeCount(); i++) {
                             if (xsr.getAttributeLocalName(i).equals("file")) {
                                 thisTopic[0] = xsr.getAttributeValue(i);
                                 thisTopicFileID = thisTopic[0];
                             } else if (xsr.getAttributeLocalName(i).equals("name")) {
                                 thisTopic[1] = xsr.getAttributeValue(i);
+                            } else if (xsr.getAttributeLocalName(i).equals("lang")) {
+                                thisTopic[2] = xsr.getAttributeValue(i);
                             }
                         }
                         RunTopics.add(thisTopic);
