@@ -1096,7 +1096,7 @@ public class LTWAssessmentToolView extends FrameView {
         // Get BEP Screen Position
         // --> Convert FOL to Screen Position --> record INTO toolResource.XML
         currBepXMLOffset = topicBepsHT.get(topicBepsHTPrefix + currTopicID);
-        folMatcher = new FOLTXTMatcher();
+        folMatcher = FOLTXTMatcher.getInstance();
         currBepSCROffset = folMatcher.getSCRBepPosV(this.topicTextPane, currTopicID, currBepXMLOffset, isTopicWikipedia);
         // set BEP ICONs
         setTopicBEPIcon(currBepSCROffset);
@@ -1187,7 +1187,7 @@ public class LTWAssessmentToolView extends FrameView {
         // Get Anchor Position from Pool XML
         // --> Convert FOL to Screen Position --> record INTO toolResource.XML
         currAnchorXMLOLPairs = topicAnchorsHT.get(topicAnchorsHTPrefix + currTopicID);
-        folMatcher = new FOLTXTMatcher();
+        folMatcher = FOLTXTMatcher.getInstance();
         currAnchorSCROLPairs = folMatcher.getSCRAnchorPosV(this.topicTextPane, currTopicID, topicAnchorsHT);
         // create the status pane
 //        CaretListenerLabel caretListenerLabel = new CaretListenerLabel("Caret Status", this.topicTextPane, this.statusMessageLabel);

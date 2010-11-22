@@ -51,7 +51,7 @@ public class SubmissionFormat {
 	}
 
 	public static String getAftobeptag() {
-		return afToBepTag;
+		return AppResource.forValidationOrAssessment ? "tobep" : afToBepTag;
 	}
 
 	public static String getOffsetAttributeName() {

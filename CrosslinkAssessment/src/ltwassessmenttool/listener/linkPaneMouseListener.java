@@ -256,7 +256,7 @@ public class linkPaneMouseListener implements MouseInputListener {
         // 1) BG Colour to RED
         // 2) Update Topic Anchor Link Status to -1
         // 3) GO NEXT
-        if (this.isTAB) {
+//        if (this.isTAB) {
             // For outgoing TAB
             // -----------------------------------------------------------------
             String[] currAnchorOLNameStatusSA = this.myRSCManager.getCurrTopicAnchorOLNameStatusSA();
@@ -280,32 +280,32 @@ public class linkPaneMouseListener implements MouseInputListener {
                     currALinkID, currLinkStatus);
             // -----------------------------------------------------------------
             goNextLink();
-        } else {
-            // For incoming TBA
-            // -----------------------------------------------------------------
-            String currBepOffset = this.myRSCManager.getCurrTopicBepOffset();
-            String[] currBLinkOLIDSA = this.myRSCManager.getCurrTopicBTargetOLID(this.myLinkPane, this.topicID);
-            logger("incoming_singleRightClick_" + currBepOffset + " --> " + currBLinkOLIDSA[2]);
-            // -----------------------------------------------------------------
-            String currBLinkStatus = this.myPoolManager.getPoolBepAnchorLinkStatus(topicID, currBepOffset, currBLinkOLIDSA);
-            if (currBLinkStatus.equals("0")) {
-                String[] inCompletion = this.myRSCManager.getIncomingCompletion();
-                String completedLinkN = inCompletion[0];
-                String totalLinkN = inCompletion[1];
-                completedLinkN = String.valueOf(Integer.valueOf(completedLinkN) + 1);
-                this.myRSCManager.updateIncomingCompletion(completedLinkN + " : " + totalLinkN);
-            }
-            // -----------------------------------------------------------------
-            this.myLinkPane.setBackground(this.linkPaneNonRelColor);
-            this.myLinkPane.repaint();
-            // -----------------------------------------------------------------
-            String currLinkStatus = "-1";
-            this.myPoolUpdater.updateTopicBepLinkRel(topicID, currBepOffset,
-                    currBLinkOLIDSA, currLinkStatus);
-            // -----------------------------------------------------------------
-//            log("START NEXT LINK ... ");
-            goNextLink();
-        }
+//        } else {
+//            // For incoming TBA
+//            // -----------------------------------------------------------------
+//            String currBepOffset = this.myRSCManager.getCurrTopicBepOffset();
+//            String[] currBLinkOLIDSA = this.myRSCManager.getCurrTopicBTargetOLID(this.myLinkPane, this.topicID);
+//            logger("incoming_singleRightClick_" + currBepOffset + " --> " + currBLinkOLIDSA[2]);
+//            // -----------------------------------------------------------------
+//            String currBLinkStatus = this.myPoolManager.getPoolBepAnchorLinkStatus(topicID, currBepOffset, currBLinkOLIDSA);
+//            if (currBLinkStatus.equals("0")) {
+//                String[] inCompletion = this.myRSCManager.getIncomingCompletion();
+//                String completedLinkN = inCompletion[0];
+//                String totalLinkN = inCompletion[1];
+//                completedLinkN = String.valueOf(Integer.valueOf(completedLinkN) + 1);
+//                this.myRSCManager.updateIncomingCompletion(completedLinkN + " : " + totalLinkN);
+//            }
+//            // -----------------------------------------------------------------
+//            this.myLinkPane.setBackground(this.linkPaneNonRelColor);
+//            this.myLinkPane.repaint();
+//            // -----------------------------------------------------------------
+//            String currLinkStatus = "-1";
+//            this.myPoolUpdater.updateTopicBepLinkRel(topicID, currBepOffset,
+//                    currBLinkOLIDSA, currLinkStatus);
+//            // -----------------------------------------------------------------
+////            log("START NEXT LINK ... ");
+//            goNextLink();
+//        }
     }
 
     private void doubleLeftClickEventAction() {
@@ -381,7 +381,7 @@ public class linkPaneMouseListener implements MouseInputListener {
         //       BG Colour to RED
         //       Update Topic Anchor/BEP Link Status to 1
         //       GO NEXT
-        if (this.isTAB) {
+//        if (this.isTAB) {
             // For outgoing TAB
             // -----------------------------------------------------------------
             String[] currAnchorOLNameStatusSA = this.myRSCManager.getCurrTopicAnchorOLNameStatusSA();
@@ -401,30 +401,30 @@ public class linkPaneMouseListener implements MouseInputListener {
                 // -------------------------------------------------------------
                 goNextLink();
             }
-        } else {
-            // For incoming TBA
-            // -----------------------------------------------------------------
-            String currBepOffset = this.myRSCManager.getCurrTopicBepOffset();
-            String[] currBLinkOLIDSA = this.myRSCManager.getCurrTopicBTargetOLID(this.myLinkPane, this.topicID);
-            logger("incoming_singleRightClick_" + currBepOffset + " --> " + currBLinkOLIDSA[2]);
-            // -----------------------------------------------------------------
-            this.myLinkPane.setBackground(this.linkPaneNonRelColor);
-            // -----------------------------------------------------------------
-            String currBLinkStatus = this.myPoolManager.getPoolBepAnchorLinkStatus(topicID, currBepOffset, currBLinkOLIDSA);
-            if (currBLinkStatus.equals("0")) {
-                String[] inCompletion = this.myRSCManager.getIncomingCompletion();
-                String completedLinkN = inCompletion[0];
-                String totalLinkN = inCompletion[1];
-                completedLinkN = String.valueOf(Integer.valueOf(completedLinkN) + 1);
-                this.myRSCManager.updateIncomingCompletion(completedLinkN + " : " + totalLinkN);
-            }
-            // -----------------------------------------------------------------
-            String currLinkStatus = "1";
-            this.myPoolUpdater.updateTopicBepLinkRel(topicID, currBepOffset,
-                    currBLinkOLIDSA, currLinkStatus);
-            // -----------------------------------------------------------------
-            goNextLink();
-        }
+//        } else {
+//            // For incoming TBA
+//            // -----------------------------------------------------------------
+//            String currBepOffset = this.myRSCManager.getCurrTopicBepOffset();
+//            String[] currBLinkOLIDSA = this.myRSCManager.getCurrTopicBTargetOLID(this.myLinkPane, this.topicID);
+//            logger("incoming_singleRightClick_" + currBepOffset + " --> " + currBLinkOLIDSA[2]);
+//            // -----------------------------------------------------------------
+//            this.myLinkPane.setBackground(this.linkPaneNonRelColor);
+//            // -----------------------------------------------------------------
+//            String currBLinkStatus = this.myPoolManager.getPoolBepAnchorLinkStatus(topicID, currBepOffset, currBLinkOLIDSA);
+//            if (currBLinkStatus.equals("0")) {
+//                String[] inCompletion = this.myRSCManager.getIncomingCompletion();
+//                String completedLinkN = inCompletion[0];
+//                String totalLinkN = inCompletion[1];
+//                completedLinkN = String.valueOf(Integer.valueOf(completedLinkN) + 1);
+//                this.myRSCManager.updateIncomingCompletion(completedLinkN + " : " + totalLinkN);
+//            }
+//            // -----------------------------------------------------------------
+//            String currLinkStatus = "1";
+//            this.myPoolUpdater.updateTopicBepLinkRel(topicID, currBepOffset,
+//                    currBLinkOLIDSA, currLinkStatus);
+//            // -----------------------------------------------------------------
+//            goNextLink();
+//        }
     }
 
     private void goNextLink() {

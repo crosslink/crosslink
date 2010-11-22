@@ -156,6 +156,7 @@ public class LTWAssessmentToolView extends FrameView {
         // =====================================================================
         rscManager = resourcesManager.getInstance();
         myPooler = PoolerManager.getInstance();
+        rscManager.pullPoolData();
         // =====================================================================
         // when the tool firstly starts:
         // For Link-the-Wikipedia A2B
@@ -1141,7 +1142,7 @@ public class LTWAssessmentToolView extends FrameView {
         if (currTargetID.endsWith("\"")) {
             currTargetID = currTargetID.substring(0, currTargetID.length() - 1);
         }
-        String currTargetFilePath = rscManager.getWikipediaFilePathByName(currTargetID + ".xml");
+        String currTargetFilePath = rscManager.getWikipediaFileFolder("zh") + rscManager.getWikipediaFilePathByName(currTargetID + ".xml");
 
         setTABLinkPaneContent(currTargetFilePath);
         // bep_Offset, linkID, Status

@@ -115,8 +115,8 @@ public class Run {
                                 Element toBepElmn = (Element) toBepNodeList.item(m);
                                 
                                 // new
-                                String target_lang = anchorElmn.getAttribute(offsetAttributeName);
-                                String target_title = anchorElmn.getAttribute("title");
+                                String target_lang = toBepElmn.getAttribute("lang");
+                                String target_title = toBepElmn.getAttribute("title");
 
                                 String tbOffset = toBepElmn.getAttribute("bep_offset");
                                 Node tbXmlFileIDTextNode = toBepElmn.getFirstChild();
