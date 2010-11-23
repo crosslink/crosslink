@@ -323,6 +323,7 @@ public class LTWAssessmentToolView extends FrameView {
         topicTextScrollPane.setName("topicTextScrollPane"); // NOI18N
         topicTextScrollPane.setPreferredSize(new java.awt.Dimension(500, 644));
 
+        topicTextPane.setBackground(resourceMap.getColor("topicTextPane.background")); // NOI18N
         topicTextPane.setEditable(false);
         topicTextPane.setDragEnabled(true);
         topicTextPane.setMaximumSize(new java.awt.Dimension(1600, 1600));
@@ -408,7 +409,7 @@ public class LTWAssessmentToolView extends FrameView {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblTopicID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblTopicTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 254, Short.MAX_VALUE))
+                    .addComponent(lblTopicTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 228, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(mainPanelLayout.createSequentialGroup()
@@ -421,22 +422,22 @@ public class LTWAssessmentToolView extends FrameView {
                         .addComponent(jLabel2)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblTargetTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 204, Short.MAX_VALUE)
+                    .addComponent(lblTargetTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 203, Short.MAX_VALUE)
                     .addComponent(lblTargetID, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(mainPanelLayout.createSequentialGroup()
                         .addComponent(jLabel7)
                         .addGap(28, 28, 28)
-                        .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, 88, Short.MAX_VALUE))
-                    .addComponent(lblCompletion, javax.swing.GroupLayout.DEFAULT_SIZE, 183, Short.MAX_VALUE))
+                        .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, 63, Short.MAX_VALUE))
+                    .addComponent(lblCompletion, javax.swing.GroupLayout.DEFAULT_SIZE, 173, Short.MAX_VALUE))
                 .addContainerGap())
             .addComponent(jSplitPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1025, Short.MAX_VALUE)
         );
         mainPanelLayout.setVerticalGroup(
             mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(mainPanelLayout.createSequentialGroup()
-                .addGap(11, 11, 11)
+                .addGap(12, 12, 12)
                 .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mainPanelLayout.createSequentialGroup()
@@ -464,7 +465,7 @@ public class LTWAssessmentToolView extends FrameView {
                             .addComponent(lblTopicTitle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(lblCompletion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jSplitPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 579, Short.MAX_VALUE))
+                .addComponent(jSplitPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 573, Short.MAX_VALUE))
         );
 
         menuBar.setBackground(resourceMap.getColor("menuBar.background")); // NOI18N
@@ -560,7 +561,7 @@ public class LTWAssessmentToolView extends FrameView {
             .addComponent(statusPanelSeparator, javax.swing.GroupLayout.DEFAULT_SIZE, 1025, Short.MAX_VALUE)
             .addGroup(statusPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(statusMessageLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 414, Short.MAX_VALUE)
+                .addComponent(statusMessageLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 420, Short.MAX_VALUE)
                 .addGap(223, 223, 223)
                 .addComponent(btnGoBack)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -1123,22 +1124,26 @@ public class LTWAssessmentToolView extends FrameView {
         else {
         	currTopicID = topicIDNameVSA.elementAt(0)[0].trim();
         	currTopicFilePath = rscManager.getTopicFilePath(currTopicID, topicLang);
+        	rscManager.updateCurrTopicID(currTopicFilePath);
         }
         setTopicPaneContent(currTopicFilePath, topicLang);
 
 
         // ---------------------------------------------------------------------
         // For 1st time to get the ANCHOR OL name SE
-//        FOLTXTMatcher folMatcher = FOLTXTMatcher.getInstance();
+        FOLTXTMatcher folMatcher = FOLTXTMatcher.getInstance();
 //        folMatcher = FOLTXTMatcher.getInstance();
-//        folMatcher.getSCRAnchorPosV(this.topicTextPane, currTopicID, topicAnchorsHT);
+        Vector<String> topicAnchorsOLNameSEVS = rscManager.getTopicAnchorsOLNameSEV();
+        if (topicAnchorsOLNameSEVS.size() == 0) {
+        	folMatcher.getSCRAnchorPosV(this.topicTextPane, currTopicID, topicAnchorsHT);
+        	topicAnchorsOLNameSEVS = rscManager.getTopicAnchorsOLNameSEV();
+        }     
         // ---------------------------------------------------------------------
-
         
         // String[]{Anchor_O, L, SP, EP, Status}
         topicAnchorOLSEStatus = rscManager.getTopicAnchorOLSEStatusVSA();
         // String[]{Anchor_O, L, Name, SP, EP, Status}
-        String[] currTopicOLNameSEStatus = rscManager.getCurrTopicAnchorOLNameSEStatusSA(this.topicTextPane, currTopicID);
+        String[] currTopicOLNameSEStatus = rscManager.getCurrTopicAnchorOLNameSEStatusSA(this.topicTextPane, currTopicID, topicAnchorsOLNameSEVS);
         String currTopicPAnchorStatus = currTopicOLNameSEStatus[5];
         // String[]{Name, SP, EP}
         String[] currTopicAnchorNameSE = new String[]{currTopicOLNameSEStatus[2], currTopicOLNameSEStatus[3], currTopicOLNameSEStatus[4]};

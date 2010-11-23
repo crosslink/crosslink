@@ -1795,7 +1795,7 @@ public class resourcesManager {
         return currTopicAnchorOLNameStatus;
     }
 
-    public String[] getCurrTopicAnchorOLNameSEStatusSA(JTextPane myTextPane, String topicID) {
+    public String[] getCurrTopicAnchorOLNameSEStatusSA(JTextPane myTextPane, String topicID, Vector<String> topicAnchorsOLNameSEVS) {
         // String[]{Anchor_O, L, Name, SP, EP, Status}
         String[] currTopicAnchorOLNameSE = new String[6];
         // String[]{anchor Offset, Length, Name, arel}
@@ -1805,7 +1805,7 @@ public class resourcesManager {
         // SP, EP
         String currAnchorS = "";
         String currAnchorE = "";
-        Vector<String> topicAnchorsOLNameSEVS = this.getTopicAnchorsOLNameSEV();
+        
         for (int i = 0; i < topicAnchorsOLNameSEVS.size(); i++) {
             String topicAnchorsOLNameSE = topicAnchorsOLNameSEVS.elementAt(i);
             String[] topicAnchorsOLNameSESA = topicAnchorsOLNameSE.split(" : ");
