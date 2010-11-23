@@ -593,9 +593,9 @@ public class resourcesManager {
         return currAnchorsOL;
     }
 
-    public String getWikipediaFilePathByName(String fileName) {
+    public String getWikipediaFilePathByName(String fileName, String lang) {
         String WikipediaPathFile = "";
-        String WikipediaDir = "";
+        String WikipediaDir = this.getWikipediaFileFolder(lang);
         String wikipediaFilePath = getTargetFilePathByFileName(WikipediaDir, WikipediaPathFile, fileName);
         return wikipediaFilePath;
     }
@@ -814,7 +814,7 @@ public class resourcesManager {
     public String getWikipediaPageTitle(String xmlFileID, String lang) {
         String thisPageTitle = "";
         htmlSB = new StringBuffer();
-        String xmlPath = this.getWikipediaFileFolder(lang) + this.getWikipediaFilePathByName(xmlFileID + ".xml");
+        String xmlPath = this.getWikipediaFilePathByName(xmlFileID + ".xml", lang);
         pageTitleExtractor(xmlPath);
         return thisPageTitle = htmlSB.toString();
     }
