@@ -461,19 +461,19 @@ public class FOLTXTMatcher {
         this.isTopicWikipedia = Boolean.valueOf(System.getProperty(sysPropertyIsTopicWikiKey));
         String xmlFilePath = getCurrentTopicFilePath();
         String targetFilePath = "";
-        if (this.isTopicWikipedia) {
+//        if (this.isTopicWikipedia) {
             if (xmlFilePath.lastIndexOf(File.separator) >= 0){
                 targetFilePath = this.tempFileDir + xmlFilePath.substring(xmlFilePath.lastIndexOf(File.separator), xmlFilePath.lastIndexOf(".xml")) + "_pureTxt.txt";
             } else if (xmlFilePath.lastIndexOf(File.separator) >= 0) {
                 targetFilePath = this.tempFileDir + xmlFilePath.substring(xmlFilePath.lastIndexOf(File.separator), xmlFilePath.lastIndexOf(".xml")) + "_pureTxt.txt";
             }
-        } else {
-            if (xmlFilePath.lastIndexOf(File.separator) >= 0){
-                targetFilePath = this.tempFileDir + xmlFilePath.substring(xmlFilePath.lastIndexOf(File.separator), xmlFilePath.lastIndexOf(".xml")) + "_pureTxt.txt";
-            } else if (xmlFilePath.lastIndexOf(File.separator) >= 0) {
-                targetFilePath = this.tempFileDir + xmlFilePath.substring(xmlFilePath.lastIndexOf(File.separator), xmlFilePath.lastIndexOf(".xml")) + "_pureTxt.txt";
-            }
-        }
+//        } else {
+//            if (xmlFilePath.lastIndexOf(File.separator) >= 0){
+//                targetFilePath = this.tempFileDir + xmlFilePath.substring(xmlFilePath.lastIndexOf(File.separator), xmlFilePath.lastIndexOf(".xml")) + "_pureTxt.txt";
+//            } else if (xmlFilePath.lastIndexOf(File.separator) >= 0) {
+//                targetFilePath = this.tempFileDir + xmlFilePath.substring(xmlFilePath.lastIndexOf(File.separator), xmlFilePath.lastIndexOf(".xml")) + "_pureTxt.txt";
+//            }
+//        }
         String wikipediaTxt = ConvertXMLtoTXT(xmlFilePath, targetFilePath, this.isTopicWikipedia);
         fullXmlTxt = wikipediaTxt;
         for (int i = 0; i < wikipediaTxt.length(); i++) {
@@ -535,7 +535,7 @@ public class FOLTXTMatcher {
     }
 
     public Vector<String[]> getSCRAnchorPosV(JTextPane textPane, String currTopicID, Hashtable<String, Vector<String[]>> topicAnchorsHT) {
-        //getCurrFullXmlText();
+        getCurrFullXmlText();
         // "outgoing : " + thisTopicFile, anchorsVbyTopic
         // Offset : Length : Anchor_Name : scrOffset : scrLength
         // record into toolResource.xml
