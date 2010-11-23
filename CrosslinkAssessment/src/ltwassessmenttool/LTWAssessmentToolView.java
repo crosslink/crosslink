@@ -300,6 +300,10 @@ public class LTWAssessmentToolView extends FrameView {
         linkMenu = new javax.swing.JMenu();
         outRadioBtn = new javax.swing.JRadioButtonMenuItem();
         inRadioBtn = new javax.swing.JRadioButtonMenuItem();
+        jMenuLang = new javax.swing.JMenu();
+        jRadioButtonMenuItemZh = new javax.swing.JRadioButtonMenuItem();
+        jRadioButtonMenuItemJa = new javax.swing.JRadioButtonMenuItem();
+        jRadioButtonMenuItemKo = new javax.swing.JRadioButtonMenuItem();
         javax.swing.JMenu helpMenu = new javax.swing.JMenu();
         javax.swing.JMenuItem aboutMenuItem = new javax.swing.JMenuItem();
         statusPanel = new javax.swing.JPanel();
@@ -465,7 +469,7 @@ public class LTWAssessmentToolView extends FrameView {
                             .addComponent(lblTopicTitle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(lblCompletion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jSplitPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 573, Short.MAX_VALUE))
+                .addComponent(jSplitPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 572, Short.MAX_VALUE))
         );
 
         menuBar.setBackground(resourceMap.getColor("menuBar.background")); // NOI18N
@@ -517,6 +521,41 @@ public class LTWAssessmentToolView extends FrameView {
         linkMenu.add(inRadioBtn);
 
         menuBar.add(linkMenu);
+
+        jMenuLang.setText(resourceMap.getString("jMenuLang.text")); // NOI18N
+        jMenuLang.setName("jMenuLang"); // NOI18N
+
+        jRadioButtonMenuItemZh.setSelected(true);
+        jRadioButtonMenuItemZh.setText(resourceMap.getString("jRadioButtonMenuItemZh.text")); // NOI18N
+        jRadioButtonMenuItemZh.setName("jRadioButtonMenuItemZh"); // NOI18N
+        jRadioButtonMenuItemZh.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButtonMenuItemZhActionPerformed(evt);
+            }
+        });
+        jMenuLang.add(jRadioButtonMenuItemZh);
+
+        jRadioButtonMenuItemJa.setSelected(true);
+        jRadioButtonMenuItemJa.setText(resourceMap.getString("jRadioButtonMenuItemJa.text")); // NOI18N
+        jRadioButtonMenuItemJa.setName("jRadioButtonMenuItemJa"); // NOI18N
+        jRadioButtonMenuItemJa.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButtonMenuItemJaActionPerformed(evt);
+            }
+        });
+        jMenuLang.add(jRadioButtonMenuItemJa);
+
+        jRadioButtonMenuItemKo.setSelected(true);
+        jRadioButtonMenuItemKo.setText(resourceMap.getString("jRadioButtonMenuItemKo.text")); // NOI18N
+        jRadioButtonMenuItemKo.setName("jRadioButtonMenuItemKo"); // NOI18N
+        jRadioButtonMenuItemKo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButtonMenuItemKoActionPerformed(evt);
+            }
+        });
+        jMenuLang.add(jRadioButtonMenuItemKo);
+
+        menuBar.add(jMenuLang);
 
         helpMenu.setBackground(resourceMap.getColor("helpMenu.background")); // NOI18N
         helpMenu.setText(resourceMap.getString("helpMenu.text")); // NOI18N
@@ -1049,6 +1088,18 @@ public class LTWAssessmentToolView extends FrameView {
         // populate Incoming Links T.B.A.
 //        setIncomingTBA();
     }//GEN-LAST:event_inRadioBtnActionPerformed
+
+    private void jRadioButtonMenuItemZhActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonMenuItemZhActionPerformed
+        AppResource.targetLang = "zh";
+}//GEN-LAST:event_jRadioButtonMenuItemZhActionPerformed
+
+    private void jRadioButtonMenuItemJaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonMenuItemJaActionPerformed
+        AppResource.targetLang = "ja";
+}//GEN-LAST:event_jRadioButtonMenuItemJaActionPerformed
+
+    private void jRadioButtonMenuItemKoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonMenuItemKoActionPerformed
+        AppResource.targetLang = "ko";
+}//GEN-LAST:event_jRadioButtonMenuItemKoActionPerformed
     // </editor-fold>
 
     // <editor-fold defaultstate="collapsed" desc="Pre-Variables-Declaration">
@@ -1063,6 +1114,10 @@ public class LTWAssessmentToolView extends FrameView {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JMenu jMenuLang;
+    private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItemJa;
+    private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItemKo;
+    private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItemZh;
     private javax.swing.JSplitPane jSplitPane1;
     private javax.swing.JLabel lblCompletion;
     private javax.swing.JLabel lblPoolAnchor;
@@ -1158,7 +1213,7 @@ public class LTWAssessmentToolView extends FrameView {
         if (currTargetID.endsWith("\"")) {
             currTargetID = currTargetID.substring(0, currTargetID.length() - 1);
         }
-        String currTargetFilePath = rscManager.getWikipediaFileFolder(currTargetLang) + rscManager.getWikipediaFilePathByName(currTargetID + ".xml");
+        String currTargetFilePath = rscManager.getWikipediaFilePathByName(currTargetID + ".xml", currTargetLang);
 
         setTABLinkPaneContent(currTargetFilePath, currTargetLang);
         // bep_Offset, linkID, Status
@@ -1394,6 +1449,7 @@ public class LTWAssessmentToolView extends FrameView {
 
     private void createLinkTextPane(String xmlFilePath, String lang) {
     	AdjustFont.getInstance().setComponentFont(this.linkTextPane, lang);
+    	AdjustFont.getInstance().setComponentFont(this.lblTopicTitle, lang);
         this.linkTextPane.setCaretPosition(0);
         this.linkTextPane.setMargin(new Insets(5, 5, 5, 5));
         initLinkDocument(xmlFilePath);
