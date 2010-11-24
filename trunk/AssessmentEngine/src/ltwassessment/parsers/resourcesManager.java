@@ -2116,18 +2116,20 @@ public class resourcesManager {
         for (int i = 0; i < titleNodeList.getLength(); i++) {
             Element titleElmn = (Element) titleNodeList.item(i);
             NodeList subNodeList = titleElmn.getElementsByTagName(afBepOffsetTag);
-            Element subElmn = (Element) subNodeList.item(0);
-            NodeList subElmnNodes = subElmn.getChildNodes();
-            for (int j = 0; j < subElmnNodes.getLength(); j++) {
-                Node thisSElmnNode = subElmnNodes.item(j);
-                if (thisSElmnNode.getNodeType() == Node.ELEMENT_NODE) {
-                    Element thisSElmn = (Element) thisSElmnNode;
-                    Node firstNode = thisSElmn.getFirstChild();
-                    String anchorOLSet = firstNode.getTextContent();
-                    if (!topicBepsOSList.contains(anchorOLSet)) {
-                        topicBepsOSList.add(anchorOLSet);
-                    }
-                }
+            if (subNodeList.getLength() > 0) {
+	            Element subElmn = (Element) subNodeList.item(0);
+	            NodeList subElmnNodes = subElmn.getChildNodes();
+	            for (int j = 0; j < subElmnNodes.getLength(); j++) {
+	                Node thisSElmnNode = subElmnNodes.item(j);
+	                if (thisSElmnNode.getNodeType() == Node.ELEMENT_NODE) {
+	                    Element thisSElmn = (Element) thisSElmnNode;
+	                    Node firstNode = thisSElmn.getFirstChild();
+	                    String anchorOLSet = firstNode.getTextContent();
+	                    if (!topicBepsOSList.contains(anchorOLSet)) {
+	                        topicBepsOSList.add(anchorOLSet);
+	                    }
+	                }
+	            }
             }
         }
         return topicBepsOSList;
