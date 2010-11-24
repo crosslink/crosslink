@@ -308,6 +308,17 @@ public class linkPaneMouseListener implements MouseInputListener {
 //            goNextLink();
 //        }
     }
+    
+    private void updateRelevantCompletion(String[] currAnchorOLNameStatusSA, String currALinkID) {
+        String currALinkStatus = this.myPoolManager.getPoolAnchorBepLinkStatus(topicID, new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1]}, currALinkID);
+        if (currALinkStatus.equals("0")) {
+            String[] outCompletion = this.myRSCManager.getOutgoingCompletion();
+            String completedLinkN = outCompletion[0];
+            String totalLinkN = outCompletion[1];
+            completedLinkN = String.valueOf(Integer.valueOf(completedLinkN) + 1);
+            this.myRSCManager.updateOutgoingCompletion(completedLinkN + " : " + totalLinkN);
+        }
+    }
 
     private void doubleLeftClickEventAction() {
         // 1) get the NEW BEP Start Point & Offset after Double-Click
@@ -324,6 +335,7 @@ public class linkPaneMouseListener implements MouseInputListener {
             currALinkOIDSA = this.myRSCManager.getCurrTopicATargetOID(this.myLinkPane, this.topicID);
             String currALinkOffset = currALinkOIDSA[0];
             String currALinkID = currALinkOIDSA[1];
+            String currALinkLang = currALinkOIDSA[3];
             // -----------------------------------------------------------------
             logger("outgoing_doubleLeftClick_" + currAnchorOLNameStatusSA[0] + "-" + currAnchorOLNameStatusSA[1] + " --> " + currALinkID);
             // -----------------------------------------------------------------
@@ -332,7 +344,7 @@ public class linkPaneMouseListener implements MouseInputListener {
                 int clickStartPoint = this.myLinkPane.getSelectionStart();
                 String scrTxtTilStartP = this.myLinkPane.getDocument().getText(0, clickStartPoint);
                 String linkBepStartP = String.valueOf(clickStartPoint);
-                String linkBepOffset = this.myFolMatcher.getXmlBepOffset(currALinkID, scrTxtTilStartP, AppResource.targetLang);
+                String linkBepOffset = this.myFolMatcher.getXmlBepOffset(currALinkID, scrTxtTilStartP, currALinkLang);
                 // -------------------------------------------------------------
                 // remove OLD Bep (if there is one) & insert new BEP
                 // repaint BG as RELEVANT
@@ -341,14 +353,8 @@ public class linkPaneMouseListener implements MouseInputListener {
                 this.myLinkPane.repaint();
                 // -------------------------------------------------------------
                 // Update Outgoing Completion
-                String currALinkStatus = this.myPoolManager.getPoolAnchorBepLinkStatus(topicID, new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1]}, currALinkID);
-                if (currALinkStatus.equals("0")) {
-                    String[] outCompletion = this.myRSCManager.getOutgoingCompletion();
-                    String completedLinkN = outCompletion[0];
-                    String totalLinkN = outCompletion[1];
-                    completedLinkN = String.valueOf(Integer.valueOf(completedLinkN) + 1);
-                    this.myRSCManager.updateOutgoingCompletion(completedLinkN + " : " + totalLinkN);
-                }
+                updateRelevantCompletion(currAnchorOLNameStatusSA, currALinkID);
+                
                 // -------------------------------------------------------------
                 // Update this PAnchor BEP Link Status
                 String currLinkStatus = "1";
@@ -390,6 +396,10 @@ public class linkPaneMouseListener implements MouseInputListener {
             String currALinkOffset = currALinkOIDSA[0];
             String currALinkID = currALinkOIDSA[1];
             logger("outgoing_singleRightClick_" + currAnchorOLNameStatusSA[0] + "-" + currAnchorOLNameStatusSA[1] + " --> " + currALinkID);
+            
+            // Update Outgoing Completion
+            updateRelevantCompletion(currAnchorOLNameStatusSA, currALinkID);
+            
             // -----------------------------------------------------------------
             int poolABepLinkStartP = this.myPoolManager.getPABepLinkStartP(topicID, new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1]}, currALinkID);
             // -----------------------------------------------------------------

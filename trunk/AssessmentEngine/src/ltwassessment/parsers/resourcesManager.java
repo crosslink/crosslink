@@ -251,7 +251,8 @@ public class resourcesManager {
                 subElmn.getParentNode().removeChild(subElmn);
             }
             else
-            	titleElmn.insertBefore(clonedElmn, null);
+//            	titleElmn.insertBefore(clonedElmn, null);
+            	titleElmn.appendChild(clonedElmn);
             
             break; // only the first one
         }        

@@ -9,20 +9,20 @@
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="英联邦">7435</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Elizabeth II" aoffset="3345" alength="12">
+			<anchor arel="1" aname="Elizabeth II" aoffset="3345" alength="12">
 				<subanchor arel="0" aname="Elizabeth II" aoffset="3345" alength="12" rank="18">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="伊丽莎白二世">23084</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="伊丽莎白二世">23084</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="New Guinea" aoffset="15864" alength="10">
+			<anchor arel="1" aname="New Guinea" aoffset="15864" alength="10">
 				<subanchor arel="0" aname="New Guinea" aoffset="15864" alength="10" rank="22">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="新幾內亞">50229</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="新幾內亞">50229</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="East India Company" aoffset="23526" alength="18">
+			<anchor arel="1" aname="East India Company" aoffset="23526" alength="18">
 				<subanchor arel="0" aname="East India Company" aoffset="23526" alength="18" rank="8">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="東印度公司">160042</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="不列颠东印度公司">159670</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="東印度公司">160042</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="不列颠东印度公司">159670</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="South Pacific" aoffset="25156" alength="13">
@@ -32,22 +32,22 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2010無綫節目巡禮">1160568</tobep>
 				</subanchor>
 				<subanchor arel="0" aname="Pacific Ocean" aoffset="25162" alength="13" rank="42">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="太平洋">3441</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="太平洋">3441</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Great Britain" aoffset="32576" alength="13">
+			<anchor arel="1" aname="Great Britain" aoffset="32576" alength="13">
 				<subanchor arel="0" aname="Great Britain" aoffset="32576" alength="13" rank="44">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="大不列顛島">86534</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="大不列顛島">86534</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="New South Wales" aoffset="34944" alength="15">
+			<anchor arel="-1" aname="New South Wales" aoffset="34944" alength="15">
 				<subanchor arel="0" aname="New South Wales" aoffset="34944" alength="15" rank="5">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="新南威爾士州">22762</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="新南威爾士州">22762</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="South Australia" aoffset="37480" alength="15">
+			<anchor arel="-1" aname="South Australia" aoffset="37480" alength="15">
 				<subanchor arel="0" aname="South Australia" aoffset="37480" alength="15" rank="33">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="南澳大利亚州">257309</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="南澳大利亚州">257309</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Western Australia" aoffset="37580" alength="17">
@@ -138,33 +138,33 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="世界遗产">1294</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Joan Sutherland" aoffset="134504" alength="15">
+			<anchor arel="1" aname="Joan Sutherland" aoffset="134504" alength="15">
 				<subanchor arel="0" aname="Joan Sutherland" aoffset="134504" alength="15" rank="39">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="瓊·蘇瑟蘭">393939</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="瓊·蘇瑟蘭">393939</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Australian English" aoffset="140992" alength="18">
+			<anchor arel="1" aname="Australian English" aoffset="140992" alength="18">
 				<subanchor arel="0" aname="Australian English" aoffset="140992" alength="18" rank="47">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="澳大利亚英语">492146</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="澳大利亚英语">492146</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="American English" aoffset="141331" alength="16">
+			<anchor arel="1" aname="American English" aoffset="141331" alength="16">
 				<subanchor arel="0" aname="American English" aoffset="141331" alength="16" rank="16">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="美国英语">2969</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="美国英语">2969</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Commonwealth Games" aoffset="148864" alength="18">
+			<anchor arel="1" aname="Commonwealth Games" aoffset="148864" alength="18">
 				<subanchor arel="0" aname="Commonwealth Games" aoffset="148864" alength="18" rank="35">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="英聯邦運動會">255676</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="英聯邦運動會">255676</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Grand Prix" aoffset="150049" alength="10">
+			<anchor arel="1" aname="Grand Prix" aoffset="150049" alength="10">
 				<subanchor arel="0" aname="Grand Prix" aoffset="150049" alength="10" rank="23">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="斯诺克职业选手世界排名">82629</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="斯诺克职业选手世界排名">82629</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="勞勃·阿特曼">648670</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="CSI犯罪現場：邁阿密章節列表">1157753</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="格蘭披治">93926</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="斯诺克职业选手世界排名">82629</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="斯诺克职业选手世界排名">82629</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="勞勃·阿特曼">648670</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="CSI犯罪現場：邁阿密章節列表">1157753</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="格蘭披治">93926</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Olympic Games" aoffset="150162" alength="13">
