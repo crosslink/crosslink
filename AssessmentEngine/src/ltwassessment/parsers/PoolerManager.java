@@ -616,7 +616,7 @@ public class PoolerManager {
             if (subPath.equals("FileNotFound.xml")) {
                 xmlFilePath = fileNotFoundXmlPath;
             } else {
-                xmlFilePath = resourcesManager.getInstance().getWikipediaFileFolder(AppResource.targetLang) + subPath;
+                xmlFilePath = /*resourcesManager.getInstance().getWikipediaFileFolder(AppResource.targetLang) + */subPath;
             }
 //        } else {
 //            String subPath = rscManager.getTeAraFilePathByName(xmlFileID + ".xml");

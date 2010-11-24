@@ -313,11 +313,13 @@ public class topicPaneMouseListener implements MouseInputListener {
         String bepID = "";
         bepOffset = pABepLinksVSA.elementAt(0)[0];
         bepID = pABepLinksVSA.elementAt(0)[1];
+        String bepLang = pABepLinksVSA.elementAt(0)[3];
+        String bepTitle = pABepLinksVSA.elementAt(0)[4];
         if (bepID.endsWith("\"")) {
             bepID = bepID.substring(0, bepID.length() - 1);
         }
         String bepRel = this.poolerManager.getPoolAnchorBepLinkStatus(this.currTopicID, currPAnchorOLStatus, bepID);
-        String bepXmlFilePath = myRSCManager.getWikipediaFilePathByName(bepID + ".xml", AppResource.sourceLang);
+        String bepXmlFilePath = myRSCManager.getWikipediaFilePathByName(bepID + ".xml", bepLang);
         String bepStartp = this.poolerManager.getPoolAnchorBepLinkStartP(this.currTopicID, currPAnchorOLStatus, bepID);
         if (bepXmlFilePath.startsWith(afTasnCollectionErrors)) {
             bepXmlFilePath = myRSCManager.getErrorXmlFilePath(bepXmlFilePath);

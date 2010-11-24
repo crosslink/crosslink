@@ -953,7 +953,7 @@ public class resourcesManager {
                         }
                         String thisPABepLinkStatus = this.pooler.getPoolAnchorBepLinkStatus(topicID, pAnchorOLSA, thisPABepLinkSet[1]);
                         // new String[]{Bep_Offset, StartPoint, ID, Status}
-                        nextTABepOID = new String[]{thisPABepLinkSet[0], bepLinkStartP, thisPABepLinkSet[1], thisPABepLinkStatus};
+                        nextTABepOID = new String[]{thisPABepLinkSet[0], bepLinkStartP, thisPABepLinkSet[1], thisPABepLinkStatus, thisPABepLinkSet[3]/*lang*/, thisPABepLinkSet[4]/*title*/};
 
                         nextTAB.add(pAnchorOLSA);
                         nextTAB.add(nextTABepOID);
@@ -1032,7 +1032,7 @@ public class resourcesManager {
                         // Bep(Offset:1114), Vector<String[]{Offset:1538, Length:9, Name:TITLE, ID:123017, Status}+>
                         String[] thisPBAnchorLinkSet = thisAnchorLinksVSA.elementAt(pBAnchorNewIndex);
                         String thisPBAnchorLinkStatus = this.pooler.getPoolBepAnchorLinkStatus(topicID, thisPBepOStatus[0], new String[]{thisPBAnchorLinkSet[0], thisPBAnchorLinkSet[1], thisPBAnchorLinkSet[3]});
-                        nextTBAnchorOLID = new String[]{thisPBAnchorLinkSet[0], thisPBAnchorLinkSet[1], thisPBAnchorLinkSet[3], thisPBAnchorLinkStatus};
+                        nextTBAnchorOLID = new String[]{thisPBAnchorLinkSet[0], thisPBAnchorLinkSet[1], thisPBAnchorLinkSet[2], thisPBAnchorLinkStatus, thisPBAnchorLinkSet[3], thisPBAnchorLinkSet[4]};
 
                         nextTBA.add(nextTBepO);
                         nextTBA.add(nextTBAnchorOLID);
@@ -1129,7 +1129,7 @@ public class resourcesManager {
                 bepLinkStartP = bepLinksOSIDS[1];
             }
         }
-        nextTABepOID = new String[]{thisPABepLinkSet[0], bepLinkStartP, thisPABepLinkSet[1], thisPABepLinkSet[2]};
+        nextTABepOID = new String[]{thisPABepLinkSet[0], bepLinkStartP, thisPABepLinkSet[1], thisPABepLinkSet[2], thisPABepLinkSet[3], thisPABepLinkSet[4]};
 
         nextTAB.add(nextTAnchorOL);
         nextTAB.add(nextTABepOID);
@@ -1218,7 +1218,7 @@ public class resourcesManager {
         Vector<String[]> thisAnchorLinksVSA = bepAnchorLinksHM.get(thisPBepOStatus[0]);
         // Bep(Offset:1114), Vector<String[]{Offset:1538, Length:9, Name:TITLE, ID:123017, Status}+>
         String[] thisPBAnchorLinkSet = thisAnchorLinksVSA.elementAt(pBAnchorNewIndex);
-        nextTBAnchorOLID = new String[]{thisPBAnchorLinkSet[0], thisPBAnchorLinkSet[1], thisPBAnchorLinkSet[3], thisPBAnchorLinkSet[4]};
+        nextTBAnchorOLID = new String[]{thisPBAnchorLinkSet[0], thisPBAnchorLinkSet[1], thisPBAnchorLinkSet[2], thisPBAnchorLinkSet[3], thisPBAnchorLinkSet[4]};
 
         nextTBA.add(nextTBepO);
         nextTBA.add(nextTBAnchorOLID);
@@ -1292,7 +1292,7 @@ public class resourcesManager {
                                 bepLinkStartP = bepLinksOSIDS[1];
                             }
                         }
-                        nextTABepOID = new String[]{thisPABepLinkSet[0], bepLinkStartP, thisPABepLinkSet[1], thisPABepLinkSet[2]};
+                        nextTABepOID = new String[]{thisPABepLinkSet[0], bepLinkStartP, thisPABepLinkSet[1], thisPABepLinkSet[2], thisPABepLinkSet[3], thisPABepLinkSet[4]};
 
                         nextTAB.add(nextTAnchorOL);
                         nextTAB.add(nextTABepOID);
@@ -1440,7 +1440,7 @@ public class resourcesManager {
                                 bepLinkStartP = bepLinksOSIDS[1];
                             }
                         }
-                        nextTABepOID = new String[]{thisPABepLinkSet[0], bepLinkStartP, thisPABepLinkSet[1], thisPABepLinkSet[2]};
+                        nextTABepOID = new String[]{thisPABepLinkSet[0], bepLinkStartP, thisPABepLinkSet[1], thisPABepLinkSet[2], thisPABepLinkSet[3], thisPABepLinkSet[4]};
 
                         nextTAB.add(nextTAnchorOL);
                         nextTAB.add(nextTABepOID);
