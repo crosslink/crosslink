@@ -41,7 +41,7 @@ public class ToXml {
 	}
 	
 	public static void targetToXml(Target target, StringBuffer xmlText) {
-		String targetElement = "\t\t\t\t\t<tobep tbrel=\"0\" timein=\"\" timeout=\"\" tboffset=\"%d\" tbstartp=\"0\" lang=\"%s\" title=\"%s\">%s</tobep>\n";
+		String targetElement = "\t\t\t\t\t<tobep tbrel=\"-1\" timein=\"\" timeout=\"\" tboffset=\"%d\" tbstartp=\"0\" lang=\"%s\" title=\"%s\">%s</tobep>\n";
 		
 		xmlText.append(String.format(targetElement, target.getBepOffset(), target.getLang(), target.getTitle(), target.getId()));
 	}

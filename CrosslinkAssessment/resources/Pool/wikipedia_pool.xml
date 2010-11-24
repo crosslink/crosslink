@@ -167,24 +167,24 @@
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="格蘭披治">93926</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Olympic Games" aoffset="150162" alength="13">
+			<anchor arel="1" aname="Olympic Games" aoffset="150162" alength="13">
 				<subanchor arel="0" aname="Olympic Games" aoffset="150162" alength="13" rank="43">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="奥林匹克运动会">22076</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="奥林匹克运动会">22076</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Library of Congress" aoffset="154389" alength="19">
+			<anchor arel="1" aname="Library of Congress" aoffset="154389" alength="19">
 				<subanchor arel="0" aname="Library of Congress" aoffset="154389" alength="19" rank="10">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="國會圖書館 (美國)">209577</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="國會圖書館 (美國)">209577</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="National University" aoffset="156699" alength="19">
+			<anchor arel="-1" aname="National University" aoffset="156699" alength="19">
 				<subanchor arel="0" aname="National University" aoffset="156699" alength="19" rank="31">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="林政則">207758</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="林政則">207758</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Torres Strait" aoffset="157311" alength="13">
+			<anchor arel="1" aname="Torres Strait" aoffset="157311" alength="13">
 				<subanchor arel="0" aname="Torres Strait" aoffset="157311" alength="13" rank="40">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="托雷斯海峡">490151</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="托雷斯海峡">490151</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Great Barrier Reef" aoffset="161785" alength="18">

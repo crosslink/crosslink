@@ -127,6 +127,8 @@ public class LTWAssessmentToolView extends FrameView {
 
         initComponents();
 
+        setAnchorColorHints();
+        
         group.add(outRadioBtn);
         group.add(inRadioBtn);
 
@@ -254,6 +256,21 @@ public class LTWAssessmentToolView extends FrameView {
 //        }
     }
 
+    
+    private void setAnchorColorHints() {
+    	jlblColorNotAssessed.setOpaque(true);
+    	jlblColorIncomplete.setOpaque(true);
+    	jlblColorCurrentAnchor.setOpaque(true);
+    	jlblColorRelevant.setOpaque(true);
+    	jlblColorIrrelevant.setOpaque(true);
+
+        jlblColorNotAssessed.setBackground(highlightPainters.COLOR_NOT_ASSESSED);
+        jlblColorIncomplete.setBackground(highlightPainters.COLOR_INCOMPLETE);
+        jlblColorCurrentAnchor.setBackground(highlightPainters.COLOR_SELECTED);
+        jlblColorRelevant.setBackground(highlightPainters.COLOR_RELEVENT);
+        jlblColorIrrelevant.setBackground(highlightPainters.COLOR_IRREVENT);   	
+    }
+
     private boolean corpusDirChecker(boolean topicIsWikipedia) {
         boolean rightCorpusDir = false;
         String ranTopicID = rscManager.getTopicID();
@@ -317,11 +334,17 @@ public class LTWAssessmentToolView extends FrameView {
         javax.swing.JMenuItem aboutMenuItem = new javax.swing.JMenuItem();
         statusPanel = new javax.swing.JPanel();
         javax.swing.JSeparator statusPanelSeparator = new javax.swing.JSeparator();
-        statusMessageLabel = new javax.swing.JLabel();
         statusAnimationLabel = new javax.swing.JLabel();
         progressBar = new javax.swing.JProgressBar();
         btnGoBack = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
+        jlblColorIrrelevant = new javax.swing.JLabel();
+        jlblColorRelevant = new javax.swing.JLabel();
+        jlblColorNotAssessed = new javax.swing.JLabel();
+        jlblColorCurrentAnchor = new javax.swing.JLabel();
+        statusMessageLabel = new javax.swing.JLabel();
+        jlblColorIncomplete = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
 
         org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(ltwassessmenttool.LTWAssessmentToolApp.class).getContext().getResourceMap(LTWAssessmentToolView.class);
         mainPanel.setBackground(resourceMap.getColor("mainPanel.background")); // NOI18N
@@ -423,7 +446,7 @@ public class LTWAssessmentToolView extends FrameView {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblTopicID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblTopicTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 228, Short.MAX_VALUE))
+                    .addComponent(lblTopicTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 345, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(mainPanelLayout.createSequentialGroup()
@@ -436,22 +459,22 @@ public class LTWAssessmentToolView extends FrameView {
                         .addComponent(jLabel2)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblTargetTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 203, Short.MAX_VALUE)
+                    .addComponent(lblTargetTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 320, Short.MAX_VALUE)
                     .addComponent(lblTargetID, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(mainPanelLayout.createSequentialGroup()
                         .addComponent(jLabel7)
                         .addGap(28, 28, 28)
-                        .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, 63, Short.MAX_VALUE))
-                    .addComponent(lblCompletion, javax.swing.GroupLayout.DEFAULT_SIZE, 173, Short.MAX_VALUE))
+                        .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, 197, Short.MAX_VALUE))
+                    .addComponent(lblCompletion, javax.swing.GroupLayout.DEFAULT_SIZE, 307, Short.MAX_VALUE))
                 .addContainerGap())
-            .addComponent(jSplitPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1025, Short.MAX_VALUE)
+            .addComponent(jSplitPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1393, Short.MAX_VALUE)
         );
         mainPanelLayout.setVerticalGroup(
             mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(mainPanelLayout.createSequentialGroup()
-                .addGap(12, 12, 12)
+                .addGap(30, 30, 30)
                 .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mainPanelLayout.createSequentialGroup()
@@ -582,11 +605,6 @@ public class LTWAssessmentToolView extends FrameView {
 
         statusPanelSeparator.setName("statusPanelSeparator"); // NOI18N
 
-        statusMessageLabel.setBackground(resourceMap.getColor("statusMessageLabel.background")); // NOI18N
-        statusMessageLabel.setName("statusMessageLabel"); // NOI18N
-        statusMessageLabel.setOpaque(true);
-        statusMessageLabel.setPreferredSize(new java.awt.Dimension(500, 18));
-
         statusAnimationLabel.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         statusAnimationLabel.setName("statusAnimationLabel"); // NOI18N
 
@@ -603,15 +621,52 @@ public class LTWAssessmentToolView extends FrameView {
         jButton1.setName("jButton1"); // NOI18N
         jButton1.setPreferredSize(new java.awt.Dimension(75, 23));
 
+        jlblColorIrrelevant.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jlblColorIrrelevant.setText(resourceMap.getString("jlblColorIrrelevant.text")); // NOI18N
+        jlblColorIrrelevant.setName("jlblColorIrrelevant"); // NOI18N
+
+        jlblColorRelevant.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jlblColorRelevant.setText(resourceMap.getString("jlblColorRelevant.text")); // NOI18N
+        jlblColorRelevant.setName("jlblColorRelevant"); // NOI18N
+
+        jlblColorNotAssessed.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jlblColorNotAssessed.setText(resourceMap.getString("jlblColorNotAssessed.text")); // NOI18N
+        jlblColorNotAssessed.setName("jlblColorNotAssessed"); // NOI18N
+
+        jlblColorCurrentAnchor.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jlblColorCurrentAnchor.setText(resourceMap.getString("jlblColorCurrentAnchor.text")); // NOI18N
+        jlblColorCurrentAnchor.setName("jlblColorCurrentAnchor"); // NOI18N
+
+        statusMessageLabel.setText(resourceMap.getString("statusMessageLabel.text")); // NOI18N
+        statusMessageLabel.setName("statusMessageLabel"); // NOI18N
+
+        jlblColorIncomplete.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jlblColorIncomplete.setText(resourceMap.getString("jlblColorIncomplete.text")); // NOI18N
+        jlblColorIncomplete.setName("jlblColorIncomplete"); // NOI18N
+
+        jLabel8.setText(resourceMap.getString("jLabel8.text")); // NOI18N
+        jLabel8.setName("jLabel8"); // NOI18N
+
         javax.swing.GroupLayout statusPanelLayout = new javax.swing.GroupLayout(statusPanel);
         statusPanel.setLayout(statusPanelLayout);
         statusPanelLayout.setHorizontalGroup(
             statusPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(statusPanelSeparator, javax.swing.GroupLayout.DEFAULT_SIZE, 1025, Short.MAX_VALUE)
-            .addGroup(statusPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(statusMessageLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 420, Short.MAX_VALUE)
-                .addGap(223, 223, 223)
+            .addComponent(statusPanelSeparator, javax.swing.GroupLayout.DEFAULT_SIZE, 1393, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, statusPanelLayout.createSequentialGroup()
+                .addComponent(jLabel8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jlblColorCurrentAnchor, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jlblColorNotAssessed)
+                .addGap(24, 24, 24)
+                .addComponent(jlblColorIncomplete)
+                .addGap(24, 24, 24)
+                .addComponent(jlblColorRelevant, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jlblColorIrrelevant, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(273, 273, 273)
+                .addComponent(statusMessageLabel)
+                .addGap(18, 18, 18)
                 .addComponent(btnGoBack)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(statusPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -625,21 +680,35 @@ public class LTWAssessmentToolView extends FrameView {
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(66, 66, 66))))
         );
+
+        statusPanelLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jlblColorCurrentAnchor, jlblColorIncomplete, jlblColorIrrelevant, jlblColorNotAssessed, jlblColorRelevant});
+
         statusPanelLayout.setVerticalGroup(
             statusPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(statusPanelLayout.createSequentialGroup()
                 .addComponent(statusPanelSeparator, javax.swing.GroupLayout.PREFERRED_SIZE, 2, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(statusPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(statusPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(statusMessageLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(statusAnimationLabel))
-                    .addGroup(statusPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(btnGoBack)
-                        .addComponent(progressBar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(statusPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(statusAnimationLabel, javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(statusPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(statusPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(btnGoBack)
+                                .addComponent(statusMessageLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(progressBar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(statusPanelLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(statusPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jlblColorCurrentAnchor)
+                            .addComponent(jlblColorNotAssessed)
+                            .addComponent(jlblColorIncomplete)
+                            .addComponent(jlblColorRelevant)
+                            .addComponent(jlblColorIrrelevant)
+                            .addComponent(jLabel8))))
                 .addContainerGap())
         );
+
+        statusPanelLayout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jlblColorCurrentAnchor, jlblColorIncomplete, jlblColorIrrelevant, jlblColorNotAssessed, jlblColorRelevant});
 
         setComponent(mainPanel);
         setMenuBar(menuBar);
@@ -1130,11 +1199,17 @@ public class LTWAssessmentToolView extends FrameView {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JMenu jMenuLang;
     private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItemJa;
     private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItemKo;
     private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItemZh;
     private javax.swing.JSplitPane jSplitPane1;
+    private javax.swing.JLabel jlblColorCurrentAnchor;
+    private javax.swing.JLabel jlblColorIncomplete;
+    private javax.swing.JLabel jlblColorIrrelevant;
+    private javax.swing.JLabel jlblColorNotAssessed;
+    private javax.swing.JLabel jlblColorRelevant;
     private javax.swing.JLabel lblCompletion;
     private javax.swing.JLabel lblPoolAnchor;
     private javax.swing.JLabel lblTargetID;
@@ -1213,6 +1288,9 @@ public class LTWAssessmentToolView extends FrameView {
         // String[]{Name, SP, EP}
         String[] currTopicAnchorNameSE = new String[]{currTopicOLNameSEStatus[2], currTopicOLNameSEStatus[3], currTopicOLNameSEStatus[4]};
         setTopicTextHighlighter(topicAnchorOLSEStatus, currTopicAnchorNameSE);
+        topicTextPane.getCaret().setDot(Integer.valueOf(currTopicAnchorNameSE[1]));
+        topicTextPane.scrollRectToVisible(topicTextPane.getVisibleRect());
+        topicTextPane.repaint();
         // ---------------------------------------------------------------------
         // Get current Link file ID & SCR BEP S, lang, title
         String[] CurrTopicATargetOID = rscManager.getCurrTopicATargetOID(linkTextPane, currTopicID);
