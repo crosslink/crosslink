@@ -277,6 +277,10 @@ public class resourcesManager {
     public void updateCurrTopicID(String currTopicPath) {
         updateElement(afCurrTopicTag, currTopicPath);
     }
+    
+    public void updateTopicID(String id) {
+        updateElement(afltwTopicsTag, id);
+    }
 
     private void updateElementList(String childTagName, String subChildTagName, Vector<String> list) {
         Document doc = readingXMLFromFile(resourceXMLFile);
@@ -1623,7 +1627,15 @@ public class resourcesManager {
     // 1) Get Topic ID
 
     public String getTopicID() {
-        return getDataByTagName(afTitleTag, afltwTopicsTag);
+    	String topicID[] = getDataByTagName(afTitleTag, afltwTopicsTag).split(":");
+        return topicID[0].trim();
+    }
+    
+    public String getTopicLang() {
+    	String topicID[] = getDataByTagName(afTitleTag, afltwTopicsTag).split(":");
+    	if (topicID.length < 2)
+    		return AppResource.sourceLang;
+        return topicID[1].trim();
     }
 
     public String getPoolAnchorCompletedStatus(String topicID, String[] poolAnchorOL) {

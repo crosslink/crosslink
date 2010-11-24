@@ -190,6 +190,15 @@ public class LTWAssessmentToolView extends FrameView {
             // new String[]{completed, total}
             // -----------------------------------------------------------------
 //            if (rscManager.getLinkingMode().toLowerCase().equals("outgoing")) {
+	            currTopicID = rscManager.getTopicID();
+	            if (currTopicID.length() == 0) {
+	                Vector<String[]> topicIDNameVSA = this.myPooler.getAllTopicsInPool();
+	            	currTopicID = topicIDNameVSA.elementAt(0)[0].trim();
+	                String topicLang = topicIDNameVSA.elementAt(0)[2];
+	            	currTopicFilePath = rscManager.getTopicFilePath(currTopicID, topicLang);
+	            	rscManager.updateTopicID(currTopicID + ":" + topicLang);
+	            	rscManager.updateCurrTopicID(currTopicFilePath);
+	            }
                 String[] tabCompletedRatio = this.rscManager.getTABCompletedRatio();
                 this.rscManager.updateOutgoingCompletion(tabCompletedRatio[0] + " : " + tabCompletedRatio[1]);
                 System.setProperty(sysPropertyTABCompletedRatioKey, tabCompletedRatio[0] + "_" + tabCompletedRatio[1]);
@@ -1177,17 +1186,11 @@ public class LTWAssessmentToolView extends FrameView {
         //    SET Highlighter + Curr Anchor Text
         // 3) Get Target Link
         //    1st un-assessed Link, belonging to Curr Anchor Text
-        Vector<String[]> topicIDNameVSA = this.myPooler.getAllTopicsInPool();
-        currTopicName = topicIDNameVSA.elementAt(0)[1].trim();
+
+        //currTopicName = topicIDNameVSA.elementAt(0)[1].trim();
         currTopicID = rscManager.getTopicID();
-        String topicLang = topicIDNameVSA.elementAt(0)[2];
-        if (currTopicID.length() > 0)
-        	currTopicFilePath = rscManager.getCurrTopicXmlFile();
-        else {
-        	currTopicID = topicIDNameVSA.elementAt(0)[0].trim();
-        	currTopicFilePath = rscManager.getTopicFilePath(currTopicID, topicLang);
-        	rscManager.updateCurrTopicID(currTopicFilePath);
-        }
+        currTopicFilePath = rscManager.getCurrTopicXmlFile();
+        String topicLang = rscManager.getTopicLang();
         setTopicPaneContent(currTopicFilePath, topicLang);
 
 
