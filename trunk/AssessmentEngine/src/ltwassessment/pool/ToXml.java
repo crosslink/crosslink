@@ -12,7 +12,7 @@ public class ToXml {
 	}
 	
 	public static void anchorToXml(Anchor anchor, StringBuffer xmlText) {
-		String anchorElementStart = "\t\t\t<anchor arel=\"-1\" aname=\"%s\" aoffset=\"%d\" alength=\"%d\">\n";
+		String anchorElementStart = "\t\t\t<anchor arel=\"0\" aname=\"%s\" aoffset=\"%d\" alength=\"%d\">\n";
 //		String anchorElementEnd = "\t\t\t\t\t</subanchor>\n";
 		
 		xmlText.append(String.format(anchorElementStart, anchor.getName(), anchor.getOffset(), anchor.getLength()));
@@ -24,7 +24,7 @@ public class ToXml {
 	
 	
 	public static void subAnchorToXml(Anchor anchor, StringBuffer xmlText) {
-		String anchorElementStart = "\t\t\t\t<subanchor arel=\"-1\" aname=\"%s\" aoffset=\"%d\" alength=\"%d\" rank=\"%d\">\n";
+		String anchorElementStart = "\t\t\t\t<subanchor arel=\"0\" aname=\"%s\" aoffset=\"%d\" alength=\"%d\" rank=\"%d\">\n";
 		String anchorElementEnd = "\t\t\t\t</subanchor>\n";
 		
 		xmlText.append(String.format(anchorElementStart, anchor.getName(), anchor.getOffset(), anchor.getLength(), anchor.getRank()));
@@ -41,7 +41,7 @@ public class ToXml {
 	}
 	
 	public static void targetToXml(Target target, StringBuffer xmlText) {
-		String targetElement = "\t\t\t\t\t<tobep tbrel=\"0\" timein=\"\" timeout=\"\" tboffset=\"%d\" tbstartp=\"-1\" lang=\"%s\" title=\"%s\">%s</tobep>\n";
+		String targetElement = "\t\t\t\t\t<tobep tbrel=\"0\" timein=\"\" timeout=\"\" tboffset=\"%d\" tbstartp=\"0\" lang=\"%s\" title=\"%s\">%s</tobep>\n";
 		
 		xmlText.append(String.format(targetElement, target.getBepOffset(), target.getLang(), target.getTitle(), target.getId()));
 	}
