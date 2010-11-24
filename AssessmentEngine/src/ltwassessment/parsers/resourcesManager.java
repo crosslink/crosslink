@@ -634,7 +634,7 @@ public class resourcesManager {
         if (pathCollectionFile.equals("")) {
             // IS Wikipedia
             String subFolder = fileName.substring(fileName.length() - 7, fileName.lastIndexOf(".xml"));
-            return thisFileFullPath = File.separator + subFolder + File.separator + fileName;
+            return thisFileFullPath = topDir + subFolder + File.separator + fileName;
         } else {
             // IS TeAra
             try {
@@ -2034,13 +2034,13 @@ public class resourcesManager {
         return currTopicBepOffset = currBepOSA[0];
     }
 
-    public String getCurrTopicBepSCRS(JTextPane myTextPane, String topicID) {
+    public String getCurrTopicBepSCRS(JTextPane myTextPane, String topicID, String lang) {
         // String[]{Anchor_SP, EP}
         String currTopicBepSP = "";
         // convert OL into SCR SE
         FOLTXTMatcher folMatcher = FOLTXTMatcher.getInstance();
         String currBepOffset = this.getCurrTopicBepOffset();
-        return currTopicBepSP = folMatcher.getBepSCRSP(myTextPane, topicID, currBepOffset, Boolean.valueOf(System.getProperty(sysPropertyIsTopicWikiKey)));
+        return currTopicBepSP = folMatcher.getBepSCRSP(myTextPane, topicID, currBepOffset, Boolean.valueOf(System.getProperty(sysPropertyIsTopicWikiKey)), lang);
     }
 
     public String[] getCurrTopicBTargetOLID(JTextPane myLinkTextPane, String topicID) {
@@ -2065,7 +2065,7 @@ public class resourcesManager {
         return currTopicBAnchorOLID = new String[]{anchorOffset, anchorLength, anchorFileID};
     }
 
-    public String[] getCurrTopicBAnchorSEIDStatus(JTextPane myLinkTextPane, String topicID) {
+    public String[] getCurrTopicBAnchorSEIDStatus(JTextPane myLinkTextPane, String topicID, String lang) {
         // String[]{Anchor_SP, EP, File_ID, Status}
         String[] currTopicBAnchorSEIDStatus = new String[4];
         // ---------------------------------------------------------------------
@@ -2091,7 +2091,7 @@ public class resourcesManager {
         // convery BEP Offset into SCR Start Point
         FOLTXTMatcher folMatcher = FOLTXTMatcher.getInstance();
         // Anchor_Name, SP, EP
-        String[] targetASA = folMatcher.getSCRAnchorNameSESA(myLinkTextPane, anchorFileID, new String[]{anchorOffset, anchorLength, anchorName});
+        String[] targetASA = folMatcher.getSCRAnchorNameSESA(myLinkTextPane, anchorFileID, new String[]{anchorOffset, anchorLength, anchorName}, lang);
         currTopicBAnchorSEIDStatus = new String[]{targetASA[1], targetASA[2], anchorFileID, anchorStatus};
         return currTopicBAnchorSEIDStatus;
     }

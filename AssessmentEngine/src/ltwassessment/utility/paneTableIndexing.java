@@ -572,7 +572,7 @@ public class paneTableIndexing {
         String xmlFileIDNamePair = "";
         String linkXmlPath = "";
 //        if (myRSCManager.getLinkCollType().equals(wikipediaCollTitle)) {
-            linkXmlPath = myRSCManager.getWikipediaFileFolder(AppResource.targetLang) + myRSCManager.getWikipediaFilePathByName(xmlFileID + ".xml");
+            linkXmlPath = myRSCManager.getWikipediaFilePathByName(xmlFileID + ".xml", AppResource.targetLang);
 //        } else if (myRSCManager.getLinkCollType().equals(teAraCollTitle)) {
 //            linkXmlPath = myRSCManager.getTeAraCollectionFolder() + myRSCManager.getTeAraFilePathByName(xmlFileID + ".xml");
 //        }
@@ -587,9 +587,9 @@ public class paneTableIndexing {
         String xmlFileID = bepSetSA[1].trim();
         String linkXmlPath = "";
 //        if (myRSCManager.getLinkCollType().equals(wikipediaCollTitle)) {
-            if (myRSCManager.getWikipediaFilePathByName(xmlFileID + ".xml").equals("FileNotFound.xml")) {
+            if (myRSCManager.getWikipediaFilePathByName(xmlFileID + ".xml", AppResource.targetLang).equals("FileNotFound.xml")) {
             } else {
-                linkXmlPath = myRSCManager.getWikipediaFileFolder(AppResource.targetLang) + myRSCManager.getWikipediaFilePathByName(xmlFileID + ".xml");
+                linkXmlPath = myRSCManager.getWikipediaFilePathByName(xmlFileID + ".xml", AppResource.targetLang);
                 String bepXmlTitle = myFOLMatcher.getWikiXmlTitleByFilePath(linkXmlPath);
                 return bepIdONamePair = bepSet + " : " + bepXmlTitle;
             }

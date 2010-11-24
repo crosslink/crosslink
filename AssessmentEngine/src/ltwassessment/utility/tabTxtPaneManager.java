@@ -89,19 +89,19 @@ public class tabTxtPaneManager {
         this.updateLevel = paneUpdateLevel;
 
         if (paneUpdateLevel == 1) {
-            updateTopicPaneStatus(this.rowTopicID);
+            updateTopicPaneStatus(this.rowTopicID, AppResource.sourceLang);
         }
         // update Anchor OL highlight & Auto scrolling to Curr Anchor Position
         if (paneUpdateLevel == 1 || paneUpdateLevel == 2) {
             String[] currAnchorXmlSet = this.rowAnchorSet.split("_");
-            updateTopicPaneAnchorStatus(this.rowTopicID, new String[]{currAnchorXmlSet[0], currAnchorXmlSet[1], ""});
+            updateTopicPaneAnchorStatus(this.rowTopicID, new String[]{currAnchorXmlSet[0], currAnchorXmlSet[1], ""}, AppResource.sourceLang);
         }
         // update 1st Link/Pane & BEP Offset
         if (paneUpdateLevel == 1 || paneUpdateLevel == 2 || paneUpdateLevel == 3) {
             String[] bepSet = this.rowBEPSet.split("_");
             rowBEPOffset = bepSet[0];
             rowBEPFileID = bepSet[1];
-            updateLinkPaneBepStatus(bepSet);
+            updateLinkPaneBepStatus(bepSet, AppResource.targetLang);
         }
     }
 
@@ -110,7 +110,7 @@ public class tabTxtPaneManager {
     // 1) check Topic Type & get Topic XML Path
     // 2) Update toolResources XML: currTopicXmlFile & currTopicAnchors
     // 3) Update Topic Text Pane
-    private void updateTopicPaneStatus(String myTopicID) {
+    private void updateTopicPaneStatus(String myTopicID, String lang) {
         String topicXmlPath = "";
 //        if (myRSCManager.getTopicCollType().equals(wikipediaCollTitle)) {
             isTopicWikipedia = true;
@@ -128,7 +128,7 @@ public class tabTxtPaneManager {
         myRSCManager.updateCurrTopicID(topicXmlPath);
         boolean isTopicText = true;
         // Set Topic Content Text
-        setTextPaneContent(topicXmlPath, isTopicText);
+        setTextPaneContent(topicXmlPath, isTopicText, lang);
         // Highlight Anchor Texts
         Hashtable<String, Vector<String[]>> topicAnchorsHT = myRunsPooler.getTopicAllAnchors();   // Upadte AnchorSCROL into toolResources XML
         Vector<String[]> currAnchorScreenOLPairs = myFOLMatcher.getSCRAnchorPosV(this.myTopicPane, myTopicID, topicAnchorsHT);
@@ -136,9 +136,9 @@ public class tabTxtPaneManager {
     }
     // 4) Highlight Anchor and Selected Anchor
 
-    private void updateTopicPaneAnchorStatus(String topicID, String[] selectedAnchorOLNameSA) {
+    private void updateTopicPaneAnchorStatus(String topicID, String[] selectedAnchorOLNameSA, String lang) {
         // currAnchorSCRSet: [0]:Anchor_Name, [1]:Offset, [2]:Offset + Length
-        String[] currAnchorSCRSet = myFOLMatcher.getSCRAnchorPosSA(this.myTopicPane, topicID, selectedAnchorOLNameSA, true);
+        String[] currAnchorSCRSet = myFOLMatcher.getSCRAnchorPosSA(this.myTopicPane, topicID, selectedAnchorOLNameSA, true, lang);
         String sPos = currAnchorSCRSet[1];
         String ePos = currAnchorSCRSet[2];
         updateTopicHighlighter(sPos + "_" + ePos);
@@ -149,13 +149,13 @@ public class tabTxtPaneManager {
     }
     // 5) Update Link Text Pane & BEP
 
-    private void updateLinkPaneBepStatus(String[] BepOIDSA) {
+    private void updateLinkPaneBepStatus(String[] BepOIDSA, String lang) {
         String thisBepOffset = BepOIDSA[0];
         String thisBepFileID = BepOIDSA[1];
         String linkXmlPath = "";
 //        if (myRSCManager.getLinkCollType().equals(wikipediaCollTitle)) {
             isLinkWikipedia = true;
-            String subPath = myRSCManager.getWikipediaFilePathByName(thisBepFileID + ".xml");
+            String subPath = myRSCManager.getWikipediaFilePathByName(thisBepFileID + ".xml", lang);
             if (subPath.equals("FileNotFound.xml")){
                 linkXmlPath = "resources" + File.separator + "Tool_Resources" + File.separator + subPath;
             } else {
@@ -173,7 +173,7 @@ public class tabTxtPaneManager {
 ////            linkXmlPath = myRSCManager.getTeAraCollectionFolder() + myRSCManager.getTeAraFilePathByName(thisBepFileID + ".xml");
 //        }
         boolean isTopicText = false;
-        setTextPaneContent(linkXmlPath, isTopicText);
+        setTextPaneContent(linkXmlPath, isTopicText, lang);
     }
     // </editor-fold>
 
@@ -216,12 +216,12 @@ public class tabTxtPaneManager {
         this.myTopicPane.repaint();
     }
 
-    private void setTextPaneContent(String xmlFilePath, boolean isTopicText) {
+    private void setTextPaneContent(String xmlFilePath, boolean isTopicText, String lang) {
         if (!xmlFilePath.equals("")) {
             if (isTopicText) {
                 createTopicTextPane(xmlFilePath);
             } else {
-                createLinkTextPane(xmlFilePath);
+                createLinkTextPane(xmlFilePath, lang);
             }
         } else {
             this.myTopicPane.setContentType(contentType);
@@ -238,7 +238,7 @@ public class tabTxtPaneManager {
         this.myTopicPane.setCaretPosition(0);
     }
 
-    private void createLinkTextPane(String xmlFilePath) {
+    private void createLinkTextPane(String xmlFilePath, String lang) {
         this.myLinkPane.setCaretPosition(0);
         this.myLinkPane.setMargin(new Insets(5, 5, 5, 5));
         Xml2Html xmlParser = new Xml2Html(xmlFilePath, isLinkWikipedia);
@@ -247,7 +247,7 @@ public class tabTxtPaneManager {
         this.myLinkPane.setCaretPosition(0);
 
         try {
-            String mySCRBepOffset = myFOLMatcher.getScreenBepOffset(this.myLinkPane, rowBEPFileID, rowBEPOffset, isLinkWikipedia);
+            String mySCRBepOffset = myFOLMatcher.getScreenBepOffset(this.myLinkPane, rowBEPFileID, rowBEPOffset, isLinkWikipedia, lang);
             StyledDocument styDoc = (StyledDocument) this.myLinkPane.getDocument();
             Style bepStyle = styDoc.addStyle("bepIcon", null);
             StyleConstants.setIcon(bepStyle, new ImageIcon(bepIconImageFilePath));

@@ -167,11 +167,11 @@ public class tbaTxtPaneManager {
         String linkXmlPath = "";
 //        if (myRSCManager.getLinkCollType().equals(wikipediaCollTitle)) {
             isLinkWikipedia = true;
-            String subPath = myRSCManager.getWikipediaFilePathByName(thisFileID + ".xml");
+            String subPath = myRSCManager.getWikipediaFilePathByName(thisFileID + ".xml", lang);
             if (subPath.equals("FileNotFound.xml")){
                 linkXmlPath = "resources" + File.separator + "Tool_Resources" + File.separator + subPath;
             } else {
-                linkXmlPath = myRSCManager.getWikipediaFileFolder(AppResource.targetLang) + subPath;
+                linkXmlPath = /*myRSCManager.getWikipediaFileFolder(AppResource.targetLang) + */subPath;
             }
 //        } else if (myRSCManager.getLinkCollType().equals(teAraCollTitle)) {
 //            isLinkWikipedia = false;
@@ -266,7 +266,7 @@ public class tbaTxtPaneManager {
         this.myLinkPane.setText(xmlParser.getHtmlContent().toString());
         this.myLinkPane.setCaretPosition(0);
         try {
-            String[] mySCRAnchorSEPos = myFOLMatcher.getSCRAnchorPosSA(myLinkPane, rowAnchorFileID, new String[]{rowAnchorXmlOffset, rowAnchorXmlLength, ""});
+            String[] mySCRAnchorSEPos = myFOLMatcher.getSCRAnchorPosSA(myLinkPane, rowAnchorFileID, new String[]{rowAnchorXmlOffset, rowAnchorXmlLength, ""}, AppResource.targetLang);
             Highlighter txtPaneHighlighter = this.myLinkPane.getHighlighter();
             int[] achorSCRPos = new int[]{Integer.valueOf(mySCRAnchorSEPos[1]), Integer.valueOf(mySCRAnchorSEPos[2])};
             Object anchorHighlightRef = txtPaneHighlighter.addHighlight(achorSCRPos[0], achorSCRPos[1], painters.getAnchorPainter());

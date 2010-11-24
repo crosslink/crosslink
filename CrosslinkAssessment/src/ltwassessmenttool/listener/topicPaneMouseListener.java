@@ -29,6 +29,7 @@ import javax.swing.text.Style;
 import javax.swing.text.StyleConstants;
 import javax.swing.text.StyledDocument;
 import ltwassessmenttool.LTWAssessmentToolView;
+import ltwassessment.AppResource;
 import ltwassessment.parsers.FOLTXTMatcher;
 import ltwassessment.parsers.Xml2Html;
 import ltwassessment.parsers.PoolerManager;
@@ -316,7 +317,7 @@ public class topicPaneMouseListener implements MouseInputListener {
             bepID = bepID.substring(0, bepID.length() - 1);
         }
         String bepRel = this.poolerManager.getPoolAnchorBepLinkStatus(this.currTopicID, currPAnchorOLStatus, bepID);
-        String bepXmlFilePath = myRSCManager.getWikipediaFilePathByName(bepID + ".xml");
+        String bepXmlFilePath = myRSCManager.getWikipediaFilePathByName(bepID + ".xml", AppResource.sourceLang);
         String bepStartp = this.poolerManager.getPoolAnchorBepLinkStartP(this.currTopicID, currPAnchorOLStatus, bepID);
         if (bepXmlFilePath.startsWith(afTasnCollectionErrors)) {
             bepXmlFilePath = myRSCManager.getErrorXmlFilePath(bepXmlFilePath);
@@ -337,7 +338,7 @@ public class topicPaneMouseListener implements MouseInputListener {
                 String[] unAssLinkOID = pAUNAssBLinkVSA.elementAt(1);
                 // new String[]{tbOffset, tbStartP, tbFileID, tbRel}
                 String unAssLinkID = unAssLinkOID[2];
-                String unAssLinkFPath = myRSCManager.getWikipediaFilePathByName(unAssLinkID + ".xml");
+                String unAssLinkFPath = myRSCManager.getWikipediaFilePathByName(unAssLinkID + ".xml", AppResource.targetLang);
                 if (unAssLinkFPath.startsWith(afTasnCollectionErrors)) {
                     unAssLinkFPath = myRSCManager.getErrorXmlFilePath(unAssLinkFPath);
                 }
@@ -409,7 +410,7 @@ public class topicPaneMouseListener implements MouseInputListener {
         String anchorName = bepAnchorLinks.elementAt(0)[2];
         String anchorFileID = bepAnchorLinks.elementAt(0)[3];
         String anchorStatus = this.poolerManager.getPoolBepAnchorLinkStatus(currTopicID, currPBepOffset, new String[]{anchorOffset, anchorLength, anchorFileID});
-        String anchorXmlFilePath = poolerManager.getXmlFilePathByTargetID(anchorFileID);
+        String anchorXmlFilePath = poolerManager.getXmlFilePathByTargetID(anchorFileID, AppResource.targetLang);
         // When Errors:
         if (anchorXmlFilePath.startsWith(afTasnCollectionErrors)) {
             anchorXmlFilePath = myRSCManager.getErrorXmlFilePath(anchorXmlFilePath);
@@ -422,7 +423,7 @@ public class topicPaneMouseListener implements MouseInputListener {
         this.linkTextPane.setCaretPosition(0);
         // --------------------------------------------------------- CHECK HERE
         // get SCR Anchor Offset-Length
-        String[] mySCRAnchorSEPos = myFOLMatcher.getSCRAnchorNameSESA(linkTextPane, anchorFileID, new String[]{anchorOffset, anchorLength, anchorName});
+        String[] mySCRAnchorSEPos = myFOLMatcher.getSCRAnchorNameSESA(linkTextPane, anchorFileID, new String[]{anchorOffset, anchorLength, anchorName}, AppResource.sourceLang);
         // Highlight Anchor Txt in JTextPane
         updateLinkAnchorHighlight(linkTextPane, mySCRAnchorSEPos);
         // ---------------------------------------------------------
@@ -485,7 +486,7 @@ public class topicPaneMouseListener implements MouseInputListener {
         String bepOffset = pABepLinksVSA.elementAt(0)[0];
         String bepID = pABepLinksVSA.elementAt(0)[1];
         String bepRel = this.poolerManager.getPoolAnchorBepLinkStatus(this.currTopicID, currPAnchorOLStatus, bepID);
-        String bepXmlFilePath = poolerManager.getXmlFilePathByTargetID(bepID);
+        String bepXmlFilePath = poolerManager.getXmlFilePathByTargetID(bepID, AppResource.sourceLang);
         String bepStartp = this.poolerManager.getPoolAnchorBepLinkStartP(this.currTopicID, currPAnchorOLStatus, bepID);
 
         // In the case of Errors --> Refresh Link Pane
@@ -712,7 +713,7 @@ public class topicPaneMouseListener implements MouseInputListener {
                     Vector<String[]> nextUnAssTAB = this.myRSCManager.getCurrPAnchorUNAssBLinkWithUpdateNAV(this.currTopicID, new String[]{pAnchorO, pAnchorL}, new String[]{bepOffset, bepID});
                     String[] unAssBEPOID = nextUnAssTAB.elementAt(1);
                     String unAssBepID = unAssBEPOID[1];
-                    String unAssBepFilePath = poolerManager.getXmlFilePathByTargetID(unAssBepID);
+                    String unAssBepFilePath = poolerManager.getXmlFilePathByTargetID(unAssBepID, AppResource.sourceLang);
                     if (unAssBepFilePath.startsWith(afTasnCollectionErrors)) {
                         unAssBepFilePath = myRSCManager.getErrorXmlFilePath(unAssBepFilePath);
                     }
@@ -781,7 +782,7 @@ public class topicPaneMouseListener implements MouseInputListener {
         String anchorName = bepAnchorLinkVSA.elementAt(0)[2];
         String anchorFileID = bepAnchorLinkVSA.elementAt(0)[3];
         String anchorStatus = this.poolerManager.getPoolBepAnchorLinkStatus(currTopicID, currPBepOffset, new String[]{anchorOffset, anchorLength, anchorFileID});
-        String anchorXmlFilePath = poolerManager.getXmlFilePathByTargetID(anchorFileID);
+        String anchorXmlFilePath = poolerManager.getXmlFilePathByTargetID(anchorFileID, AppResource.targetLang);
         // In the case of Errors --> Refresh Link Pane
         // populate Link Pane Content
         if (anchorXmlFilePath.startsWith(afTasnCollectionErrors)) {
@@ -843,7 +844,7 @@ public class topicPaneMouseListener implements MouseInputListener {
 
             String[] linkAnchorOLName = new String[]{anchorOffset, anchorLength, anchorName};
             // getSCRAnchorPosSA return String[]{Anchor_Name, StartP, EndP}
-            String[] linkAnchorSESA = this.myFOLMatcher.getSCRAnchorNameSESA(this.linkTextPane, anchorFileID, linkAnchorOLName);
+            String[] linkAnchorSESA = this.myFOLMatcher.getSCRAnchorNameSESA(this.linkTextPane, anchorFileID, linkAnchorOLName, AppResource.targetLang);
 //            this.updateLinkAnchorHighlight(this.linkTextPane, linkAnchorSESA);
             this.linkTextPane.getCaret().setDot(Integer.valueOf(linkAnchorSESA[2]));
             this.linkTextPane.scrollRectToVisible(this.linkTextPane.getVisibleRect());
@@ -893,7 +894,7 @@ public class topicPaneMouseListener implements MouseInputListener {
 
             String[] linkAnchorOLName = new String[]{anchorOffset, anchorLength, anchorName};
             // getSCRAnchorPosSA return String[]{Anchor_Name, StartP, EndP}
-            String[] linkAnchorSESA = this.myFOLMatcher.getSCRAnchorNameSESA(this.linkTextPane, anchorFileID, linkAnchorOLName);
+            String[] linkAnchorSESA = this.myFOLMatcher.getSCRAnchorNameSESA(this.linkTextPane, anchorFileID, linkAnchorOLName, AppResource.targetLang);
             this.updateLinkAnchorHighlight(this.linkTextPane, linkAnchorSESA);
             this.linkTextPane.getCaret().setDot(Integer.valueOf(linkAnchorSESA[2]));
             this.linkTextPane.scrollRectToVisible(this.linkTextPane.getVisibleRect());

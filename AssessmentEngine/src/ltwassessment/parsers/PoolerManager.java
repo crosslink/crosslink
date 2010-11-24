@@ -597,7 +597,7 @@ public class PoolerManager {
         return topicBepsHT;
     }
 
-    public String getXmlFilePathByTargetID(String xmlFileID) {
+    public String getXmlFilePathByTargetID(String xmlFileID, String lang) {
         String xmlFilePath = "";
         String myAFTask = afProperty[2].trim();
         String[] AFColls = afProperty[3].trim().split(" : ");
@@ -612,7 +612,7 @@ public class PoolerManager {
         }
 //        resourcesManager rscManager = resourcesManager.getInstance();
 //        if (Boolean.valueOf(System.getProperty(sysPropertyIsTopicWikiKey))) {
-            String subPath = resourcesManager.getInstance().getWikipediaFilePathByName(xmlFileID + ".xml");
+            String subPath = resourcesManager.getInstance().getWikipediaFilePathByName(xmlFileID + ".xml", lang);
             if (subPath.equals("FileNotFound.xml")) {
                 xmlFilePath = fileNotFoundXmlPath;
             } else {
@@ -680,7 +680,7 @@ public class PoolerManager {
     public HashMap<String, Vector<String[]>> getAnchorFileSetByBep(String topicFileID) {
         // assign a Topic File ID (i.e. 112398)
         // to get Bep(Offset:1114), Vector<String[]{Offset:1538, Length:9, Name:TITLE, ID:123017, Status}+>
-        HashMap<String, Vector<String[]>> bepAnchorsHT = new HashMap<String, Vector<String[]>>();
+        HashMap<String, Vector<String[]>> bepAnchorsHT = null; //new HashMap<String, Vector<String[]>>();
         bepAnchorsHT = getBepAnchorSetbyTopicID(topicFileID, poolXMLPath);
         return bepAnchorsHT;
     }

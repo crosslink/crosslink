@@ -331,6 +331,7 @@ public class LTWAssessmentToolView extends FrameView {
         topicTextPane.setEditable(false);
         topicTextPane.setDragEnabled(true);
         topicTextPane.setMaximumSize(new java.awt.Dimension(1600, 1600));
+        topicTextPane.setMinimumSize(new java.awt.Dimension(500, 644));
         topicTextPane.setName("topicTextPane"); // NOI18N
         topicTextPane.setPreferredSize(new java.awt.Dimension(500, 644));
         topicTextScrollPane.setViewportView(topicTextPane);
@@ -682,6 +683,8 @@ public class LTWAssessmentToolView extends FrameView {
             String[] nextAnchorLinkOSIDStatusSA = nextAnchorBepLinkVSA.elementAt(1);
             String nextLinkO = nextAnchorLinkOSIDStatusSA[0];
             String nextLinkID = nextAnchorLinkOSIDStatusSA[2];
+            String nextLinkLang = nextAnchorLinkOSIDStatusSA[4];
+            String nextLinkTitle = nextAnchorLinkOSIDStatusSA[5];
             String nextLinkS = this.myPooler.getPoolAnchorBepLinkStartP(this.currTopicID, new String[]{nextAnchorO, nextAnchorL}, nextLinkID);
             String nextLinkStatus = this.myPooler.getPoolAnchorBepLinkStatus(this.currTopicID, new String[]{nextAnchorO, nextAnchorL}, nextLinkID);
             // =================================================================
@@ -709,7 +712,7 @@ public class LTWAssessmentToolView extends FrameView {
             // =================================================================
             // Link Pane
             // =================================================================
-            String bepXmlFilePath = this.myPooler.getXmlFilePathByTargetID(nextLinkID);
+            String bepXmlFilePath = this.myPooler.getXmlFilePathByTargetID(nextLinkID, nextLinkLang);
             if (bepXmlFilePath.startsWith(afTasnCollectionErrors)) {
                 bepXmlFilePath = rscManager.getErrorXmlFilePath(bepXmlFilePath);
             }
@@ -785,6 +788,8 @@ public class LTWAssessmentToolView extends FrameView {
             String nextLinkL = nextLinkOLStatusStatus[1];
             String nextLinkID = nextLinkOLStatusStatus[2];
             String nextLinkStatus = nextLinkOLStatusStatus[3];
+            String nextLinkLang = nextLinkOLStatusStatus[4];
+            String nextLinkTitle = nextLinkOLStatusStatus[5];
             // -------------------------------------------------------------
             // Update Pool Anchor Status <-- When GO NEXT Pool Anchor
             // because the PRE-Pool_Anchor might have been completed.
@@ -805,7 +810,7 @@ public class LTWAssessmentToolView extends FrameView {
                 System.setProperty(this.sysPropertyCurrTopicOLSEStatusKey, currTopicOLSEStatusKey);
             }
             // -------------------------------------------------------------
-            String anchorXmlFilePath = this.myPooler.getXmlFilePathByTargetID(nextLinkID);
+            String anchorXmlFilePath = this.myPooler.getXmlFilePathByTargetID(nextLinkID, nextLinkLang);
             // When Errors:
             if (anchorXmlFilePath.startsWith(afTasnCollectionErrors)) {
                 anchorXmlFilePath = rscManager.getErrorXmlFilePath(anchorXmlFilePath);
@@ -817,7 +822,7 @@ public class LTWAssessmentToolView extends FrameView {
             this.linkTextPane.setCaretPosition(0);
             // --------------------------------------------------------- CHECK HERE
             FOLTXTMatcher folMatcher = FOLTXTMatcher.getInstance();
-            String[] nextLinkSE = folMatcher.getSCRAnchorNameSESA(this.linkTextPane, nextLinkID, new String[]{nextLinkO, nextLinkL, ""});
+            String[] nextLinkSE = folMatcher.getSCRAnchorNameSESA(this.linkTextPane, nextLinkID, new String[]{nextLinkO, nextLinkL, ""}, nextLinkLang);
             String nextLinkAnchorName = nextLinkSE[0];
             String nextLinkS = nextLinkSE[1];
             String nextLinkE = nextLinkSE[2];
@@ -893,8 +898,8 @@ public class LTWAssessmentToolView extends FrameView {
             String[] nextAnchorLinkOSIDStatusSA = nextAnchorBepLinkVSA.elementAt(1);
             String nextLinkO = nextAnchorLinkOSIDStatusSA[0];
             String nextLinkID = nextAnchorLinkOSIDStatusSA[2];
-            String nextLinkLang;
-            String nextLinkTitle;
+            String nextLinkLang = nextAnchorLinkOSIDStatusSA[4];
+            String nextLinkTitle = nextAnchorLinkOSIDStatusSA[5];
             String nextLinkS = this.myPooler.getPoolAnchorBepLinkStartP(this.currTopicID, new String[]{nextAnchorO, nextAnchorL}, nextLinkID);
             String nextLinkStatus = this.myPooler.getPoolAnchorBepLinkStatus(this.currTopicID, new String[]{nextAnchorO, nextAnchorL}, nextLinkID);
             // -----------------------------------------------------------------
@@ -918,7 +923,7 @@ public class LTWAssessmentToolView extends FrameView {
                 System.setProperty(sysPropertyCurrTopicOLSEStatusKey, sysPropertyValue);
             }
             // -----------------------------------------------------------------
-            String bepXmlFilePath = this.myPooler.getXmlFilePathByTargetID(nextLinkID);
+            String bepXmlFilePath = this.myPooler.getXmlFilePathByTargetID(nextLinkID, nextLinkLang);
             // When Errors:
             if (bepXmlFilePath.startsWith(afTasnCollectionErrors)) {
                 bepXmlFilePath = rscManager.getErrorXmlFilePath(bepXmlFilePath);
@@ -994,6 +999,8 @@ public class LTWAssessmentToolView extends FrameView {
             String nextLinkL = nextLinkOLStatusStatus[1];
             String nextLinkID = nextLinkOLStatusStatus[2];
             String nextLinkStatus = nextLinkOLStatusStatus[3];
+            String nextLinkLang = nextLinkOLStatusStatus[4];
+            String nextLinkTitle = nextLinkOLStatusStatus[5];
             // -------------------------------------------------------------
             // Update Pool Anchor Status <-- When GO NEXT Pool Anchor
             // because the PRE-Pool_Anchor might have been completed.
@@ -1014,7 +1021,7 @@ public class LTWAssessmentToolView extends FrameView {
                 System.setProperty(this.sysPropertyCurrTopicOLSEStatusKey, currTopicOLSEStatusKey);
             }
             // -------------------------------------------------------------
-            String anchorXmlFilePath = this.myPooler.getXmlFilePathByTargetID(nextLinkID);
+            String anchorXmlFilePath = this.myPooler.getXmlFilePathByTargetID(nextLinkID, nextLinkLang);
             // When Errors:
             if (anchorXmlFilePath.startsWith(afTasnCollectionErrors)) {
                 anchorXmlFilePath = rscManager.getErrorXmlFilePath(anchorXmlFilePath);
@@ -1026,7 +1033,7 @@ public class LTWAssessmentToolView extends FrameView {
             this.linkTextPane.setCaretPosition(0);
             // --------------------------------------------------------- CHECK HERE
             FOLTXTMatcher folMatcher = FOLTXTMatcher.getInstance();
-            String[] nextLinkSE = folMatcher.getSCRAnchorNameSESA(this.linkTextPane, nextLinkID, new String[]{nextLinkO, nextLinkL, ""});
+            String[] nextLinkSE = folMatcher.getSCRAnchorNameSESA(this.linkTextPane, nextLinkID, new String[]{nextLinkO, nextLinkL, ""}, nextLinkLang);
             String nextLinkAnchorName = nextLinkSE[0];
             String nextLinkS = nextLinkSE[1];
             String nextLinkE = nextLinkSE[2];
@@ -1449,7 +1456,7 @@ public class LTWAssessmentToolView extends FrameView {
 
     private void createLinkTextPane(String xmlFilePath, String lang) {
     	AdjustFont.getInstance().setComponentFont(this.linkTextPane, lang);
-    	AdjustFont.getInstance().setComponentFont(this.lblTopicTitle, lang);
+    	AdjustFont.getInstance().setComponentFont(this.lblTargetTitle, lang);
         this.linkTextPane.setCaretPosition(0);
         this.linkTextPane.setMargin(new Insets(5, 5, 5, 5));
         initLinkDocument(xmlFilePath);

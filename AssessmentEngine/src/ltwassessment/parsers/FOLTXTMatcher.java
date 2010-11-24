@@ -489,8 +489,8 @@ public class FOLTXTMatcher {
         return wikipediaTxt;
     }
 
-    private String getFullXmlTextByFileID(String fileID) {
-        String xmlFilePath = myPooler.getXmlFilePathByTargetID(fileID);
+    private String getFullXmlTextByFileID(String fileID, String lang) {
+        String xmlFilePath = myPooler.getXmlFilePathByTargetID(fileID, lang);
         return getFullXmlText(fileID, xmlFilePath);
     }
 
@@ -571,11 +571,11 @@ public class FOLTXTMatcher {
         return screenAnchorPos;
     }
 
-    public String[] getSCRAnchorPosSA(JTextPane myTextPane, String fileID, String[] thisAnchorXmlOLName) {
-        return getSCRAnchorPosSA(myTextPane, fileID, thisAnchorXmlOLName, false);
+    public String[] getSCRAnchorPosSA(JTextPane myTextPane, String fileID, String[] thisAnchorXmlOLName, String lang) {
+        return getSCRAnchorPosSA(myTextPane, fileID, thisAnchorXmlOLName, false, lang);
     }
 
-    public String[] getSCRAnchorPosSA(JTextPane myTextPane, String fileID, String[] thisAnchorXmlOLName, boolean istopic) {
+    public String[] getSCRAnchorPosSA(JTextPane myTextPane, String fileID, String[] thisAnchorXmlOLName, boolean istopic, String lang) {
         // myScreenAnchorOL/thisAnchorSet
         // --> [0]:Offset, [1]:Length, [2]:Anchor_Name
         String[] myScreenAnchorPos = new String[3];
@@ -583,7 +583,7 @@ public class FOLTXTMatcher {
         if (istopic)
             myFullXmlTxt = getTopicFullXmlTextByFileID(fileID);
         else
-            myFullXmlTxt = getFullXmlTextByFileID(fileID);
+            myFullXmlTxt = getFullXmlTextByFileID(fileID, lang);
         String fullScreenText = "";
         try {
             fullScreenText = myTextPane.getDocument().getText(0, myTextPane.getDocument().getLength());
@@ -593,7 +593,7 @@ public class FOLTXTMatcher {
         return myScreenAnchorPos = screenOffsetLengthFinder(fullScreenText, myFullXmlTxt, thisAnchorXmlOLName);
     }
 
-    public String getScreenBepOffset(JTextPane linkTxtPane, String bepFileID, String xmlBepOffset, boolean isWikipedia) {
+    public String getScreenBepOffset(JTextPane linkTxtPane, String bepFileID, String xmlBepOffset, boolean isWikipedia, String lang) {
         String scrBepOffset = "0";
         String fullScreenText = "";
         String fullXmlText = "";
@@ -601,7 +601,7 @@ public class FOLTXTMatcher {
             fullScreenText = linkTxtPane.getDocument().getText(0, linkTxtPane.getDocument().getLength());
             String bepFilePath = "";
 //            if (isWikipedia) {
-                String subPath = myRSCManager.getWikipediaFilePathByName(bepFileID + ".xml");
+                String subPath = myRSCManager.getWikipediaFilePathByName(bepFileID + ".xml", lang);
                 if (subPath.equals("FileNotFound.xml")) {
                     bepFilePath = "resources" + File.separator + "Tool_Resources" + File.separator + subPath;
                 } else {
@@ -625,10 +625,10 @@ public class FOLTXTMatcher {
         return scrBepOffset = screenBepOffsetFinder(fullScreenText, fullXmlText, xmlBepOffset);
     }
 
-    public String[] getSCRAnchorNameSESA(JTextPane myTextPane, String fileID, String[] thisAnchorXmlOLName) {
+    public String[] getSCRAnchorNameSESA(JTextPane myTextPane, String fileID, String[] thisAnchorXmlOLName, String lang) {
         // myScreenAnchorOL/thisAnchorSet
         String[] myScreenAnchorPos = new String[3];
-        String myFullXmlTxt = getFullXmlTextByFileID(fileID);
+        String myFullXmlTxt = getFullXmlTextByFileID(fileID, lang);
         String fullScreenText = "";
         try {
             fullScreenText = myTextPane.getDocument().getText(0, myTextPane.getDocument().getLength());
@@ -678,7 +678,7 @@ public class FOLTXTMatcher {
         return scrBepOffsetV;
     }
 
-    public String getBepSCRSP(JTextPane myTxtPane, String bepFileID, String bepOffset, boolean isWikipedia) {
+    public String getBepSCRSP(JTextPane myTxtPane, String bepFileID, String bepOffset, boolean isWikipedia, String lang) {
         String scrBepOffset = "";
         String fullScreenText = "";
         String fullXmlText = "";
@@ -686,7 +686,7 @@ public class FOLTXTMatcher {
             fullScreenText = myTxtPane.getDocument().getText(0, myTxtPane.getDocument().getLength());
             String bepFilePath = "";
 //            if (isWikipedia) {
-                String subPath = myRSCManager.getWikipediaFilePathByName(bepFileID + ".xml");
+                String subPath = myRSCManager.getWikipediaFilePathByName(bepFileID + ".xml", lang);
                 if (subPath.equals("FileNotFound.xml")) {
                     bepFilePath = "resources" + File.separator + "Tool_Resources" + File.separator + subPath;
                 } else {
@@ -708,12 +708,12 @@ public class FOLTXTMatcher {
         return scrBepOffset = screenBepOffsetFinder(fullScreenText, fullXmlText, bepOffset);
     }
     
-    private Vector<String> getLinkXmlTextByID(String linkID) {
+    private Vector<String> getLinkXmlTextByID(String linkID, String lang) {
         Vector<String> xmlSglCharV = new Vector<String>();
         String xmlFilePath = "";
         String targetFilePath = "";
 //        if (Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey))) {
-            xmlFilePath = this.myRSCManager.getWikipediaFilePathByName(linkID + ".xml");
+            xmlFilePath = this.myRSCManager.getWikipediaFilePathByName(linkID + ".xml", lang);
             targetFilePath = this.tempFileDir + xmlFilePath.substring(xmlFilePath.lastIndexOf("/") + 1, xmlFilePath.lastIndexOf(".xml")) + "_pureTxt.txt";
 //        } else {
 //            xmlFilePath = this.myRSCManager.getTeAraFilePathByName(linkID + ".xml");
@@ -728,10 +728,10 @@ public class FOLTXTMatcher {
     }
     
     // <editor-fold defaultstate="collapsed" desc="Get F.O.L">
-    public String getXmlBepOffset(String linkID, String tilTxt) {
+    public String getXmlBepOffset(String linkID, String tilTxt, String lang) {
         String xmlBepOffset = "";
         // [0]:Offset, [1]:Length, [2]: AnchorText
-        Vector<String> xmlSglCharV = this.getLinkXmlTextByID(linkID);
+        Vector<String> xmlSglCharV = this.getLinkXmlTextByID(linkID, lang);
         String pureScreenTxt = tilTxt.replaceAll("[\\s]+", "");
         Vector<String> scrPureTxtCharV = new Vector<String>();
         for (int i = 0; i < pureScreenTxt.length(); i++) {
