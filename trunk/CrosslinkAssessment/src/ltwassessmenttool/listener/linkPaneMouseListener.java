@@ -442,8 +442,8 @@ public class linkPaneMouseListener implements MouseInputListener {
         // 2) If Not, Go Next
 //        log("COMPLETION ... ");
         String[] tabCompletedRatio = this.myRSCManager.getOutgoingCompletion();
-        String[] tbaCompletedRatio = this.myRSCManager.getIncomingCompletion();
-        if (tabCompletedRatio[0].equals(tabCompletedRatio[1]) && tbaCompletedRatio[0].equals(tbaCompletedRatio[1])) {
+//        String[] tbaCompletedRatio = this.myRSCManager.getIncomingCompletion();
+        if (tabCompletedRatio[0].equals(tabCompletedRatio[1])/* && tbaCompletedRatio[0].equals(tbaCompletedRatio[1])*/) {
             int option = JOptionPane.showConfirmDialog(this.myTopicPane, "The Assessment is completed.\r\n" +
                     "Please zip the result file and log together \r\n" +
                     "and upload it to the INEX. \r\n" +
@@ -457,11 +457,11 @@ public class linkPaneMouseListener implements MouseInputListener {
                 javax.swing.SwingUtilities.getWindowAncestor(this.myLinkPane).dispose();
                 System.exit(0);
             }
-        } else if (this.isTAB && tabCompletedRatio[0].equals(tabCompletedRatio[1]) && !tbaCompletedRatio[0].equals(tbaCompletedRatio[1])) {
+        } else if (this.isTAB && tabCompletedRatio[0].equals(tabCompletedRatio[1])/* && !tbaCompletedRatio[0].equals(tbaCompletedRatio[1])*/) {
             JOptionPane.showMessageDialog(this.myTopicPane, "The Outgoing Assessment is completed. \r\n" +
                     "Please click \"OK\" button and switch to Incoming Mode to complete the assessment.\r\n" +
-                    "The progress of Incoming is " + tbaCompletedRatio[0] + " out of " + tbaCompletedRatio[1] + ".");
-        } else if (!this.isTAB && !tabCompletedRatio[0].equals(tabCompletedRatio[1]) && tbaCompletedRatio[0].equals(tbaCompletedRatio[1])) {
+                    /*"The progress of Incoming is " + tbaCompletedRatio[0] + " out of " + tbaCompletedRatio[1] + */".");
+        } else if (!this.isTAB && !tabCompletedRatio[0].equals(tabCompletedRatio[1])/* && tbaCompletedRatio[0].equals(tbaCompletedRatio[1])*/) {
             JOptionPane.showMessageDialog(this.myTopicPane, "The Incoming Assessment is completed. \r\n" +
                     "Please click \"OK\" button and switch to Outgoing Mode to complete the assessment.\r\n" +
                     "The progress of Outgoing is " + tabCompletedRatio[0] + " out of " + tabCompletedRatio[1] + ".");
