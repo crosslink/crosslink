@@ -85,7 +85,9 @@ public class LinkedAnchorList {
 			
 			// now link the anchors together if there is overlapping
 			if (overlapping) {
-				if (addBefore) {				
+				Anchor first = theOne.getFirst();
+				Anchor last = theOne.getLast();
+				if (addBefore) {
 					if (theOne.getPrevious() != null) {
 						anchor.setPrevious(theOne.getPrevious());
 						theOne.getPrevious().setNext(anchor);			
@@ -93,16 +95,16 @@ public class LinkedAnchorList {
 					anchor.setNext(theOne);
 					theOne.setPrevious(anchor);
 					
-//					if (theOne.getFirst() == null || theOne.getLast() == null) {
-//						theOne.setFirst(theOne);
-//						anchor.setFirst(theOne);
+//					if (first == null/* || theOne.getLast() == null*/) {
+//						first = theOne;
+//						theOne.setFirst(first);
+//						anchor.setFirst(first);
 //						theOne.setLast(anchor);
 //						anchor.setLast(anchor);
 //					}
 //					else {
-//						anchor.setFirst(theOne.getFirst());
-//						anchor.setLast(anchor);
-//						theOne.setLast(anchor);
+//						anchor.setFirst(first);
+//						anchor.setLast(last);
 //					}
 				}
 				else { //add after
@@ -112,11 +114,25 @@ public class LinkedAnchorList {
 					}
 					anchor.setPrevious(theOne);
 					theOne.setNext(anchor);
+					
+//					if (first == null/* || theOne.getLast() == null*/) {
+//						first = theOne;
+//						theOne.setFirst(first);
+//						anchor.setFirst(first);
+//						theOne.setLast(anchor);
+//						anchor.setLast(anchor);
+//					}
+//					else {
+//						anchor.setFirst(first);
+//						anchor.setLast(last);
+//					}
 				}
+				
+//				if ()
 			}
 		}		
 	}
-	
+
 	public void append(Anchor anchor) {
 		anchorList.add(anchor);
 	}
@@ -161,5 +177,31 @@ public class LinkedAnchorList {
 
 	public LinkedList<Anchor> getAnchorList() {
 		return anchorList;
+	}
+	
+	public void calculateOverlappedAnchorExtensionLength() {
+		if (anchorList.size() > 0) {
+			int count = 0;
+			Anchor anchor = null;
+			Anchor next = null;
+			while (count < anchorList.size()) {
+				anchor = anchorList.get(count);
+				
+				next = anchor.getNext();
+				if (next != null) {
+					while (next != null) {
+						++count;
+						int extension  = anchor.getOffset() + anchor.getLength() + anchor.getExtendedLength();
+						int nextEnd = (next.getOffset() + next.getLength());
+						if (extension < nextEnd)
+							anchor.setExtendedLength(nextEnd - extension);
+							
+						next = next.getNext();
+					}
+				}
+				
+				++count;
+			}
+		}
 	}
 }

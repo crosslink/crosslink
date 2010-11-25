@@ -21,6 +21,14 @@ public class Anchor {
 
 	private Vector<Target> targets = null;
 	
+//	public Anchor(Anchor anchor) {
+//		this.offset = anchor.getOffset();
+//		this.length = anchor.getLength();
+//		this = anchor;
+//		this = anchor;
+//		this = anchor;
+//	}
+	
 	public Anchor(int offset, int length, String name) {
 		super();
 		this.offset = offset;
