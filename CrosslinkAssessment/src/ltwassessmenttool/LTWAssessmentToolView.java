@@ -95,6 +95,7 @@ public class LTWAssessmentToolView extends FrameView {
 //    private String[] afProperty = new String[4];
 //    private Vector<String[]> RunTopics = new Vector<String[]>();
     private Hashtable<String, Vector<String[]>> topicAnchorsHT = new Hashtable<String, Vector<String[]>>();
+    private Hashtable<String, Vector<String[]>> topicSubanchorsHT = new Hashtable<String, Vector<String[]>>();
     private Hashtable<String, Vector<String[]>> topicBepsHT = new Hashtable<String, Vector<String[]>>();
 //    private Hashtable<String, String[]> topicAnchorOLTSENHT = new Hashtable<String, String[]>();
     // -------------------------------------------------------------------------
@@ -983,6 +984,8 @@ public class LTWAssessmentToolView extends FrameView {
             // -----------------------------------------------------------------
             // Update Pool Anchor Status <-- When GO NEXT Pool Anchor
             // because the PRE-Pool_Anchor might have been completed.
+            updateTopicAnchorsHighlight(this.topicTextPane, new String[]{currPAnchorS, currPAnchorE, currPAnchorStatus}, new String[]{nextAnchorS, nextAnchorE});
+            
             if (!nextAnchorO.equals(currPAnchorO)) {
                 String poolAnchorStatus = "";
                 if (!currPAnchorStatus.equals("0")){
@@ -992,7 +995,7 @@ public class LTWAssessmentToolView extends FrameView {
                 }
                 myPUpdater.updatePoolAnchorStatus(this.currTopicID, currPAnchorOLSA, poolAnchorStatus);
                 // Highlight Anchor/BEP + Auto Scrolling
-                updateTopicAnchorsHighlight(this.topicTextPane, new String[]{currPAnchorS, currPAnchorE, currPAnchorStatus}, new String[]{nextAnchorS, nextAnchorE});
+                
                 this.topicTextPane.getCaret().setDot(Integer.valueOf(nextAnchorE));
                 this.topicTextPane.scrollRectToVisible(this.topicTextPane.getVisibleRect());
                 this.topicTextPane.repaint();
@@ -1254,6 +1257,7 @@ public class LTWAssessmentToolView extends FrameView {
         // Get Pool Properties
         // Hashtable<outgoing : topicFileID>: [0]:Offset, [1]:Length, [2]:Anchor_Name
         topicAnchorsHT = myPooler.getTopicAllAnchors();
+//        topicSubanchorsHT = myPooler.getTopicAllSubanchors();
         // ---------------------------------------------------------------------
         // 1) Get Topic ID & xmlFile Path
         //    SET Topic Text Pane Content
