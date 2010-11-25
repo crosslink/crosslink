@@ -50,29 +50,29 @@
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="南澳大利亚州">257309</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Western Australia" aoffset="37580" alength="17">
+			<anchor arel="1" aname="Western Australia" aoffset="37580" alength="17">
 				<subanchor arel="0" aname="Western Australia" aoffset="37580" alength="17" rank="28">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="西澳大利亚州">176023</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="西澳大利亚州">176023</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Federal government" aoffset="40210" alength="18">
+			<anchor arel="1" aname="Federal government" aoffset="40210" alength="18">
 				<subanchor arel="0" aname="Federal government" aoffset="40210" alength="18" rank="26">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="聯邦政府">134086</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="聯邦政府">134086</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Northern Territory" aoffset="44212" alength="18">
+			<anchor arel="1" aname="Northern Territory" aoffset="44212" alength="18">
 				<subanchor arel="0" aname="Northern Territory" aoffset="44212" alength="18" rank="37">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="北領地">314878</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="北領地">314878</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="New Zealand" aoffset="44722" alength="11">
+			<anchor arel="1" aname="New Zealand" aoffset="44722" alength="11">
 				<subanchor arel="0" aname="New Zealand" aoffset="44722" alength="11" rank="14">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="新西兰">532</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="新西兰">532</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="World War II" aoffset="47215" alength="12">
+			<anchor arel="1" aname="World War II" aoffset="47215" alength="12">
 				<subanchor arel="0" aname="World War II" aoffset="47215" alength="12" rank="2">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="第二次世界大战">305</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="第二次世界大战">305</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="United States" aoffset="47574" alength="13">

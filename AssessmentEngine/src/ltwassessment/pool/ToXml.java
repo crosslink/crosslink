@@ -15,7 +15,7 @@ public class ToXml {
 		String anchorElementStart = "\t\t\t<anchor arel=\"0\" aname=\"%s\" aoffset=\"%d\" alength=\"%d\">\n";
 //		String anchorElementEnd = "\t\t\t\t\t</subanchor>\n";
 		
-		xmlText.append(String.format(anchorElementStart, anchor.getName(), anchor.getOffset(), anchor.getLength()));
+		xmlText.append(String.format(anchorElementStart, anchor.getName(), anchor.getOffset(), anchor.getLength() + anchor.getExtendedLength()));
 		
 //		for (Target target : anchor.getTargets())
 //			targetToXml(target, xmlText);
@@ -64,6 +64,7 @@ public class ToXml {
 		String topicElemEnd = "\t\t</outgoinglinks>\n\t</topic>\n";
 		xmlText.append(String.format(topicElemStart, topic.getId(), topic.getName()));
 		
+		topic.getAnchors().calculateOverlappedAnchorExtensionLength();
 		LinkedList<Anchor> anchorList = topic.getAnchors().getAnchorList();
 		
 		String anchorElementEnd = "\t\t\t</anchor>\n";
