@@ -60,6 +60,8 @@ public class PoolerManager {
     private Hashtable<String, Hashtable<String, Hashtable<String, Vector<String[]>>>> poolOutgoingData = new Hashtable<String, Hashtable<String, Hashtable<String, Vector<String[]>>>>();
     //6) Incoming Pooling Data
     private Hashtable<String, Hashtable<String, Vector<String[]>>> poolIncomingData = new Hashtable<String, Hashtable<String, Vector<String[]>>>();
+    //7) record Topic (outgoing : topicFile) -> [0]:Offset & [1]:Length & [2]:Subanchor_Name
+    private Hashtable<String, Vector<String[]>> topicSubanchorsHT = new Hashtable<String, Vector<String[]>>();
     private static String poolXMLPath = "";
 //    static resourcesManager resManager;
     static String afXmlPath = "";
@@ -592,6 +594,11 @@ public class PoolerManager {
         return topicAnchorsHT;
     }
 
+    public Hashtable<String, Vector<String[]>> getTopicAllSubanchors() {
+        // record Topic (outgoing : topicFile) -> [0]:Offset & [1]:Length & [2]:Anchor_Name & [3]:Status
+        return topicSubanchorsHT ;
+    }
+    
     public Hashtable<String, Vector<String[]>> getTopicAllBeps() {
         // record Topic (incoming : topicFile) -> [0]:Offset
         return topicBepsHT;
@@ -904,14 +911,16 @@ public class PoolerManager {
                         }
                     } else if (tagName.equals("subanchor")) {
                     	String[] thisSubAnchorProperty = new String[4];
+                    	String attrName = "";
                         for (int i = 0; i < xsr.getAttributeCount(); i++) {
-                            if (xsr.getAttributeLocalName(i).equals("saoffset")) {
+                        	attrName = xsr.getAttributeLocalName(i);
+                            if (attrName.equals("saoffset")) {
                                 thisSubAnchorProperty[0] = xsr.getAttributeValue(i);
-                            } else if (xsr.getAttributeLocalName(i).equals("salength")) {
+                            } else if (attrName.equals("salength")) {
                                 thisSubAnchorProperty[1] = xsr.getAttributeValue(i);
-                            } else if (xsr.getAttributeLocalName(i).equals("saname")) {
+                            } else if (attrName.equals("saname")) {
                                 thisSubAnchorProperty[2] = xsr.getAttributeValue(i);
-                            } else if (xsr.getAttributeLocalName(i).equals("sarel")) {
+                            } else if (attrName.equals("sarel")) {
                                 thisSubAnchorProperty[3] = xsr.getAttributeValue(i);
                             }
                         }
@@ -982,6 +991,7 @@ public class PoolerManager {
                     } else if (tagName.equals("outgoinglinks") || tagName.equals("outgoing")) {
 //                        if (isOutgoing) {
                             topicAnchorsHT.put("outgoing : " + thisTopicFileID, anchorsVbyTopic);
+                            topicSubanchorsHT.put("outgoing : " + thisTopicFileID, subAnchorsVbyTopic);
                             poolOutgoingData.put(thisTopicFileID, anchorsHT);
 //                        }
 //                        isOutgoing = false;

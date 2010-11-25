@@ -541,7 +541,7 @@ public class FOLTXTMatcher {
         // record into toolResource.xml
         Vector<String> anchorSetV = new Vector<String>();
         // anchorsVbyTopic --> [0]:Offset, [1]:Length, [3]:Anchor_Name
-        Vector<String[]> anchorOLV = new Vector<String[]>();
+        Vector<String[]> anchorOLV = null; //new Vector<String[]>();
         Enumeration keyEnu = topicAnchorsHT.keys();
         while (keyEnu.hasMoreElements()) {
             Object keyObj = keyEnu.nextElement();
@@ -549,6 +549,7 @@ public class FOLTXTMatcher {
             String thisTopicID = keySet[1];
             if (currTopicID.equals(thisTopicID)) {
                 anchorOLV = topicAnchorsHT.get(keyObj);
+                break;
             }
         }
         // [0]:Offset, [1]:Length, [3]:Anchor_Name

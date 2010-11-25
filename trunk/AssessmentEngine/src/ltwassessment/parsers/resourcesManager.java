@@ -79,7 +79,8 @@ public class resourcesManager {
     private String afBepOffsetPrefixTag = "bep";
     private String afTABNavigationIndexTag = "tabNavigationIndex";
     private String afTBANavigationIndexTag = "tbaNavigationIndex";
-    private Hashtable<String, Vector<String[]>> topicAllAnchors = new Hashtable<String, Vector<String[]>>();
+    private Hashtable<String, Vector<String[]>> topicAllAnchors = null; //new Hashtable<String, Vector<String[]>>();
+    private Hashtable<String, Vector<String[]>> topicAllSubanchors = null; 
     private Hashtable<String, Hashtable<String, Hashtable<String, Vector<String[]>>>> poolOutgoingData = null; //new Hashtable<String, Hashtable<String, Hashtable<String, Vector<String[]>>>>();
     private Hashtable<String, Vector<String[]>> topicAllBEPs = new Hashtable<String, Vector<String[]>>();
     private Hashtable<String, Hashtable<String, Vector<String[]>>> poolIncomingData = new Hashtable<String, Hashtable<String, Vector<String[]>>>();
@@ -1540,6 +1541,18 @@ public class resourcesManager {
         Vector<String[]> sortedPoolAnchorsOLV = sortOLVectorSANumbers(poolAnchorsOLV);
         return sortedPoolAnchorsOLV;
     }
+    
+    public Vector<String[]> getPoolSubanchorsOLNameStatusV() {
+        // anchor String[]{Offset, Length, Name, Status}
+        // status: 0 <-- normal, 1 <-- completed, -1 <-- non-relevant
+        // Get Sorted Anchor OL
+        // Hashtable<String, Vector<String[]>>
+        // outgoing : topicID, V<String[]{anchor Offset, Length, Name, arel}>
+        topicAllSubanchors = pooler.getTopicAllSubanchors();
+        Vector<String[]> poolAnchorsOLV = topicAllSubanchors.elements().nextElement();
+        Vector<String[]> sortedPoolAnchorsOLV = sortOLVectorSANumbers(poolAnchorsOLV);
+        return sortedPoolAnchorsOLV;
+    }
 
     public Hashtable<String, Vector<String[]>> getPoolAnchorBepLinksHT() {
         Vector<String> targetFileID = new Vector<String>();
@@ -1807,12 +1820,57 @@ public class resourcesManager {
         currTopicAnchorOLNameStatus = new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1], currAnchorOLNameStatusSA[2], currAnchorOLNameStatusSA[3]};
         return currTopicAnchorOLNameStatus;
     }
+    
+    public String[] getCurrTopicSubanchorOLNameStatusSA() {
+        // String[]{Anchor_Offset, Length}
+        String[] currTopicAnchorOLNameStatus = new String[2];
+        // ---------------------------------------------------------------------
+        // 1) ONLY 1 Topic, so topicIndex = 0
+        // anchor-bep Index: 0 , 0 , 0 , 0 --> pool_Anchor , bep_Link , non-used , non-used
+        String[] tabIndexSA = this.getTABNavigationIndex();
+        String topicIndex = tabIndexSA[0].trim();
+        String[] abIndex = tabIndexSA[1].trim().split(" , ");
+        String poolAnchorIndex = abIndex[0].trim();
+        String bepLinkIndex = abIndex[1].trim();
+        // ---------------------------------------------------------------------
+        // 2) Get current Anchor OL
+        // String[]{anchor Offset, Length, Name, arel}
+        Vector<String[]> poolAnchorsOLNameStatusVSA = getPoolSubanchorsOLNameStatusV();
+        String[] currAnchorOLNameStatusSA = poolAnchorsOLNameStatusVSA.elementAt(Integer.valueOf(poolAnchorIndex));
+        currTopicAnchorOLNameStatus = new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1], currAnchorOLNameStatusSA[2], currAnchorOLNameStatusSA[3]};
+        return currTopicAnchorOLNameStatus;
+    }
 
     public String[] getCurrTopicAnchorOLNameSEStatusSA(JTextPane myTextPane, String topicID, Vector<String> topicAnchorsOLNameSEVS) {
         // String[]{Anchor_O, L, Name, SP, EP, Status}
         String[] currTopicAnchorOLNameSE = new String[6];
         // String[]{anchor Offset, Length, Name, arel}
         String[] currAnchorOLSA = this.getCurrTopicAnchorOLNameStatusSA();
+        String currAnchorO = currAnchorOLSA[0];
+        String currAnchorL = currAnchorOLSA[1];
+        // SP, EP
+        String currAnchorS = "";
+        String currAnchorE = "";
+        
+        for (int i = 0; i < topicAnchorsOLNameSEVS.size(); i++) {
+            String topicAnchorsOLNameSE = topicAnchorsOLNameSEVS.elementAt(i);
+            String[] topicAnchorsOLNameSESA = topicAnchorsOLNameSE.split(" : ");
+            if (currAnchorO.equals(topicAnchorsOLNameSESA[0]) && currAnchorL.equals(topicAnchorsOLNameSESA[1])) {
+                currAnchorS = topicAnchorsOLNameSESA[3];
+                currAnchorE = topicAnchorsOLNameSESA[4];
+                break;
+            }
+        }
+        String[] currTopicAnchorSE = new String[]{currAnchorS, currAnchorE};
+        currTopicAnchorOLNameSE = new String[]{currAnchorOLSA[0], currAnchorOLSA[1], currAnchorOLSA[2], currTopicAnchorSE[0], currTopicAnchorSE[1], currAnchorOLSA[3]};
+        return currTopicAnchorOLNameSE;
+    }
+    
+    public String[] getCurrTopicSubanchorOLNameSEStatusSA(JTextPane myTextPane, String topicID, Vector<String> topicAnchorsOLNameSEVS) {
+        // String[]{Anchor_O, L, Name, SP, EP, Status}
+        String[] currTopicAnchorOLNameSE = new String[6];
+        // String[]{anchor Offset, Length, Name, arel}
+        String[] currAnchorOLSA = this.getCurrTopicSubanchorOLNameStatusSA();
         String currAnchorO = currAnchorOLSA[0];
         String currAnchorL = currAnchorOLSA[1];
         // SP, EP

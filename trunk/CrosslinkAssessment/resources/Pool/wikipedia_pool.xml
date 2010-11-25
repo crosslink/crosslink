@@ -4,263 +4,263 @@
 	<collection>Korean Wikipedia 2010 Collection</collection>
 	<topic file="4689264" name="Australia">
 		<outgoinglinks>
-			<anchor arel="1" aname="Commonwealth of Nations" aoffset="801" alength="23">
-				<subanchor arel="0" aname="Commonwealth of Nations" aoffset="801" alength="23" rank="4">
-					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="英联邦">7435</tobep>
+			<anchor arel="0" aname="Commonwealth of Nations" aoffset="801" alength="23">
+				<subanchor sarel="0" saname="Commonwealth of Nations" saoffset="801" salength="23" rank="4">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="英联邦">7435</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="Elizabeth II" aoffset="3345" alength="12">
-				<subanchor arel="0" aname="Elizabeth II" aoffset="3345" alength="12" rank="18">
-					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="伊丽莎白二世">23084</tobep>
+			<anchor arel="0" aname="Elizabeth II" aoffset="3345" alength="12">
+				<subanchor sarel="0" saname="Elizabeth II" saoffset="3345" salength="12" rank="18">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="伊丽莎白二世">23084</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="New Guinea" aoffset="15864" alength="10">
-				<subanchor arel="0" aname="New Guinea" aoffset="15864" alength="10" rank="22">
-					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="新幾內亞">50229</tobep>
+			<anchor arel="0" aname="New Guinea" aoffset="15864" alength="10">
+				<subanchor sarel="0" saname="New Guinea" saoffset="15864" salength="10" rank="22">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="新幾內亞">50229</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="East India Company" aoffset="23526" alength="18">
-				<subanchor arel="0" aname="East India Company" aoffset="23526" alength="18" rank="8">
-					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="東印度公司">160042</tobep>
+			<anchor arel="-1" aname="East India Company" aoffset="23526" alength="18">
+				<subanchor sarel="0" saname="East India Company" saoffset="23526" salength="18" rank="8">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="東印度公司">160042</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="不列颠东印度公司">159670</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="South Pacific" aoffset="25156" alength="13">
-				<subanchor arel="0" aname="South Pacific" aoffset="25156" alength="13" rank="41">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="新宿KOMA劇場">414315</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="最高電影票房收入列表">537442</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2010無綫節目巡禮">1160568</tobep>
+			<anchor arel="-1" aname="South Pacific" aoffset="25156" alength="19">
+				<subanchor sarel="0" saname="South Pacific" saoffset="25156" salength="13" rank="41">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="新宿KOMA劇場">414315</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="最高電影票房收入列表">537442</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2010無綫節目巡禮">1160568</tobep>
 				</subanchor>
-				<subanchor arel="0" aname="Pacific Ocean" aoffset="25162" alength="13" rank="42">
+				<subanchor sarel="0" saname="Pacific Ocean" saoffset="25162" salength="13" rank="42">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="太平洋">3441</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="Great Britain" aoffset="32576" alength="13">
-				<subanchor arel="0" aname="Great Britain" aoffset="32576" alength="13" rank="44">
-					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="大不列顛島">86534</tobep>
+			<anchor arel="0" aname="Great Britain" aoffset="32576" alength="13">
+				<subanchor sarel="0" saname="Great Britain" saoffset="32576" salength="13" rank="44">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="大不列顛島">86534</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="-1" aname="New South Wales" aoffset="34944" alength="15">
-				<subanchor arel="0" aname="New South Wales" aoffset="34944" alength="15" rank="5">
+			<anchor arel="0" aname="New South Wales" aoffset="34944" alength="15">
+				<subanchor sarel="0" saname="New South Wales" saoffset="34944" salength="15" rank="5">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="新南威爾士州">22762</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="-1" aname="South Australia" aoffset="37480" alength="15">
-				<subanchor arel="0" aname="South Australia" aoffset="37480" alength="15" rank="33">
+			<anchor arel="0" aname="South Australia" aoffset="37480" alength="15">
+				<subanchor sarel="0" saname="South Australia" saoffset="37480" salength="15" rank="33">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="南澳大利亚州">257309</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="Western Australia" aoffset="37580" alength="17">
-				<subanchor arel="0" aname="Western Australia" aoffset="37580" alength="17" rank="28">
-					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="西澳大利亚州">176023</tobep>
+			<anchor arel="0" aname="Western Australia" aoffset="37580" alength="17">
+				<subanchor sarel="0" saname="Western Australia" saoffset="37580" salength="17" rank="28">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="西澳大利亚州">176023</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="Federal government" aoffset="40210" alength="18">
-				<subanchor arel="0" aname="Federal government" aoffset="40210" alength="18" rank="26">
-					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="聯邦政府">134086</tobep>
+			<anchor arel="0" aname="Federal government" aoffset="40210" alength="18">
+				<subanchor sarel="0" saname="Federal government" saoffset="40210" salength="18" rank="26">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="聯邦政府">134086</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="Northern Territory" aoffset="44212" alength="18">
-				<subanchor arel="0" aname="Northern Territory" aoffset="44212" alength="18" rank="37">
-					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="北領地">314878</tobep>
+			<anchor arel="0" aname="Northern Territory" aoffset="44212" alength="18">
+				<subanchor sarel="0" saname="Northern Territory" saoffset="44212" salength="18" rank="37">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="北領地">314878</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="New Zealand" aoffset="44722" alength="11">
-				<subanchor arel="0" aname="New Zealand" aoffset="44722" alength="11" rank="14">
-					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="新西兰">532</tobep>
+			<anchor arel="0" aname="New Zealand" aoffset="44722" alength="11">
+				<subanchor sarel="0" saname="New Zealand" saoffset="44722" salength="11" rank="14">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="新西兰">532</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="World War II" aoffset="47215" alength="12">
-				<subanchor arel="0" aname="World War II" aoffset="47215" alength="12" rank="2">
-					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="第二次世界大战">305</tobep>
+			<anchor arel="0" aname="World War II" aoffset="47215" alength="12">
+				<subanchor sarel="0" saname="World War II" saoffset="47215" salength="12" rank="2">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="第二次世界大战">305</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="United States" aoffset="47574" alength="13">
-				<subanchor arel="0" aname="United States" aoffset="47574" alength="13" rank="30">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="合眾國">192127</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="姬拉·麗莉">538457</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="美國">481</tobep>
+				<subanchor sarel="0" saname="United States" saoffset="47574" salength="13" rank="30">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="合眾國">192127</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="姬拉·麗莉">538457</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="美國">481</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="The Queen" aoffset="51894" alength="9">
-				<subanchor arel="0" aname="The Queen" aoffset="51894" alength="9" rank="48">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2006年電影列表">500359</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="英女皇 (電影)">499766</tobep>
+				<subanchor sarel="0" saname="The Queen" saoffset="51894" salength="9" rank="48">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2006年電影列表">500359</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="英女皇 (電影)">499766</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="House of Representatives" aoffset="56939" alength="24">
-				<subanchor arel="0" aname="House of Representatives" aoffset="56939" alength="24" rank="7">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="众议院">139361</tobep>
+				<subanchor sarel="0" saname="House of Representatives" saoffset="56939" salength="24" rank="7">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="众议院">139361</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Australian Capital Territory" aoffset="57167" alength="28">
-				<subanchor arel="0" aname="Australian Capital Territory" aoffset="57167" alength="28" rank="12">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="澳大利亞首都特區">311876</tobep>
+				<subanchor sarel="0" saname="Australian Capital Territory" saoffset="57167" salength="28" rank="12">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="澳大利亞首都特區">311876</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="National Party" aoffset="59314" alength="14">
-				<subanchor arel="0" aname="National Party" aoffset="59314" alength="14" rank="32">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="国民党 (南非)">240844</tobep>
+				<subanchor sarel="0" saname="National Party" saoffset="59314" salength="14" rank="32">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="国民党 (南非)">240844</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="McDonald Islands" aoffset="68578" alength="16">
-				<subanchor arel="0" aname="McDonald Islands" aoffset="68578" alength="16" rank="49">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="生態區列表">664060</tobep>
+				<subanchor sarel="0" saname="McDonald Islands" saoffset="68578" salength="16" rank="49">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="生態區列表">664060</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Indigenous Australians" aoffset="90562" alength="22">
-				<subanchor arel="0" aname="Indigenous Australians" aoffset="90562" alength="22" rank="36">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="澳大利亚原住民">273273</tobep>
+				<subanchor sarel="0" saname="Indigenous Australians" saoffset="90562" salength="22" rank="36">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="澳大利亚原住民">273273</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="The Economist" aoffset="94444" alength="13">
-				<subanchor arel="0" aname="The Economist" aoffset="94444" alength="13" rank="20">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="经济学人">33677</tobep>
+				<subanchor sarel="0" saname="The Economist" saoffset="94444" salength="13" rank="20">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="经济学人">33677</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Australian dollar" aoffset="95742" alength="17">
-				<subanchor arel="0" aname="Australian dollar" aoffset="95742" alength="17" rank="29">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="澳大利亚元">47646</tobep>
+				<subanchor sarel="0" saname="Australian dollar" saoffset="95742" salength="17" rank="29">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="澳大利亚元">47646</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="South Korea" aoffset="97430" alength="11">
-				<subanchor arel="0" aname="South Korea" aoffset="97430" alength="11" rank="13">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="大韩民国">3121</tobep>
+				<subanchor sarel="0" saname="South Korea" saoffset="97430" salength="11" rank="13">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="大韩民国">3121</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Immigration Department" aoffset="104931" alength="22">
-				<subanchor arel="0" aname="Immigration Department" aoffset="104931" alength="22" rank="25">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="入境事務處">124313</tobep>
+				<subanchor sarel="0" saname="Immigration Department" saoffset="104931" salength="22" rank="25">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="入境事務處">124313</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="World Heritage Site" aoffset="128721" alength="19">
-				<subanchor arel="0" aname="World Heritage Site" aoffset="128721" alength="19" rank="3">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="世界遗产">1294</tobep>
+				<subanchor sarel="0" saname="World Heritage Site" saoffset="128721" salength="19" rank="3">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="世界遗产">1294</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="Joan Sutherland" aoffset="134504" alength="15">
-				<subanchor arel="0" aname="Joan Sutherland" aoffset="134504" alength="15" rank="39">
-					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="瓊·蘇瑟蘭">393939</tobep>
+			<anchor arel="0" aname="Joan Sutherland" aoffset="134504" alength="15">
+				<subanchor sarel="0" saname="Joan Sutherland" saoffset="134504" salength="15" rank="39">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="瓊·蘇瑟蘭">393939</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="Australian English" aoffset="140992" alength="18">
-				<subanchor arel="0" aname="Australian English" aoffset="140992" alength="18" rank="47">
-					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="澳大利亚英语">492146</tobep>
+			<anchor arel="0" aname="Australian English" aoffset="140992" alength="18">
+				<subanchor sarel="0" saname="Australian English" saoffset="140992" salength="18" rank="47">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="澳大利亚英语">492146</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="American English" aoffset="141331" alength="16">
-				<subanchor arel="0" aname="American English" aoffset="141331" alength="16" rank="16">
-					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="美国英语">2969</tobep>
+			<anchor arel="0" aname="American English" aoffset="141331" alength="16">
+				<subanchor sarel="0" saname="American English" saoffset="141331" salength="16" rank="16">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="美国英语">2969</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="Commonwealth Games" aoffset="148864" alength="18">
-				<subanchor arel="0" aname="Commonwealth Games" aoffset="148864" alength="18" rank="35">
-					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="英聯邦運動會">255676</tobep>
+			<anchor arel="0" aname="Commonwealth Games" aoffset="148864" alength="18">
+				<subanchor sarel="0" saname="Commonwealth Games" saoffset="148864" salength="18" rank="35">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="英聯邦運動會">255676</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="Grand Prix" aoffset="150049" alength="10">
-				<subanchor arel="0" aname="Grand Prix" aoffset="150049" alength="10" rank="23">
+			<anchor arel="0" aname="Grand Prix" aoffset="150049" alength="10">
+				<subanchor sarel="0" saname="Grand Prix" saoffset="150049" salength="10" rank="23">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="斯诺克职业选手世界排名">82629</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="斯诺克职业选手世界排名">82629</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="勞勃·阿特曼">648670</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="CSI犯罪現場：邁阿密章節列表">1157753</tobep>
-					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="格蘭披治">93926</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="格蘭披治">93926</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="Olympic Games" aoffset="150162" alength="13">
-				<subanchor arel="0" aname="Olympic Games" aoffset="150162" alength="13" rank="43">
-					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="奥林匹克运动会">22076</tobep>
+			<anchor arel="0" aname="Olympic Games" aoffset="150162" alength="13">
+				<subanchor sarel="0" saname="Olympic Games" saoffset="150162" salength="13" rank="43">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="奥林匹克运动会">22076</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="Library of Congress" aoffset="154389" alength="19">
-				<subanchor arel="0" aname="Library of Congress" aoffset="154389" alength="19" rank="10">
-					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="國會圖書館 (美國)">209577</tobep>
+			<anchor arel="0" aname="Library of Congress" aoffset="154389" alength="19">
+				<subanchor sarel="0" saname="Library of Congress" saoffset="154389" salength="19" rank="10">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="國會圖書館 (美國)">209577</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="-1" aname="National University" aoffset="156699" alength="19">
-				<subanchor arel="0" aname="National University" aoffset="156699" alength="19" rank="31">
+			<anchor arel="0" aname="National University" aoffset="156699" alength="19">
+				<subanchor sarel="0" saname="National University" saoffset="156699" salength="19" rank="31">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="林政則">207758</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="Torres Strait" aoffset="157311" alength="13">
-				<subanchor arel="0" aname="Torres Strait" aoffset="157311" alength="13" rank="40">
-					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="托雷斯海峡">490151</tobep>
+			<anchor arel="0" aname="Torres Strait" aoffset="157311" alength="13">
+				<subanchor sarel="0" saname="Torres Strait" saoffset="157311" salength="13" rank="40">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="托雷斯海峡">490151</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Great Barrier Reef" aoffset="161785" alength="18">
-				<subanchor arel="0" aname="Great Barrier Reef" aoffset="161785" alength="18" rank="6">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="大堡礁">51739</tobep>
+				<subanchor sarel="0" saname="Great Barrier Reef" saoffset="161785" salength="18" rank="6">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="大堡礁">51739</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Proceedings of the National Academy of Sciences" aoffset="163754" alength="47">
-				<subanchor arel="0" aname="Proceedings of the National Academy of Sciences" aoffset="163754" alength="47" rank="0">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="美国国家科学院院刊">535951</tobep>
+				<subanchor sarel="0" saname="Proceedings of the National Academy of Sciences" saoffset="163754" salength="47" rank="0">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="美国国家科学院院刊">535951</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Environmental Sustainability Index" aoffset="164529" alength="34">
-				<subanchor arel="0" aname="Environmental Sustainability Index" aoffset="164529" alength="34" rank="11">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="環境可持續指數">274656</tobep>
+				<subanchor sarel="0" saname="Environmental Sustainability Index" saoffset="164529" salength="34" rank="11">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="環境可持續指數">274656</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="The Times" aoffset="164930" alength="9">
-				<subanchor arel="0" aname="The Times" aoffset="164930" alength="9" rank="24">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="泰晤士报">110789</tobep>
+				<subanchor sarel="0" saname="The Times" saoffset="164930" salength="9" rank="24">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="泰晤士报">110789</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="19th century" aoffset="166590" alength="12">
-				<subanchor arel="0" aname="19th century" aoffset="166590" alength="12" rank="19">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="19世纪">4708</tobep>
+				<subanchor sarel="0" saname="19th century" saoffset="166590" salength="12" rank="19">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="19世纪">4708</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Foreign Affairs" aoffset="166782" alength="15">
-				<subanchor arel="0" aname="Foreign Affairs" aoffset="166782" alength="15" rank="34">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="外交 (杂志)">255523</tobep>
+				<subanchor sarel="0" saname="Foreign Affairs" saoffset="166782" salength="15" rank="34">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="外交 (杂志)">255523</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="February 2004" aoffset="172937" alength="13">
-				<subanchor arel="0" aname="February 2004" aoffset="172937" alength="13" rank="45">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2004年2月">5175</tobep>
+				<subanchor sarel="0" saname="February 2004" saoffset="172937" salength="13" rank="45">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2004年2月">5175</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="de facto" aoffset="174480" alength="8">
-				<subanchor arel="0" aname="de facto" aoffset="174480" alength="8" rank="38">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="第四權">331505</tobep>
+				<subanchor sarel="0" saname="de facto" saoffset="174480" salength="8" rank="38">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="第四權">331505</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="-1" aname="History of Australia" aoffset="176844" alength="20">
-				<subanchor arel="0" aname="History of Australia" aoffset="176844" alength="20" rank="9">
+			<anchor arel="0" aname="History of Australia" aoffset="176844" alength="20">
+				<subanchor sarel="0" saname="History of Australia" saoffset="176844" salength="20" rank="9">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="澳大利亚历史">186267</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="-1" aname="The World" aoffset="178902" alength="9">
-				<subanchor arel="0" aname="The World" aoffset="178902" alength="9" rank="27">
+			<anchor arel="0" aname="The World" aoffset="178902" alength="9">
+				<subanchor sarel="0" saname="The World" saoffset="178902" salength="9" rank="27">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="世界群島">165161</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="世界 (电影)">110502</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="Mariana Islands" aoffset="200835" alength="15">
-				<subanchor arel="0" aname="Mariana Islands" aoffset="200835" alength="15" rank="21">
-					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="马里亚纳群岛">34063</tobep>
+			<anchor arel="0" aname="Mariana Islands" aoffset="200835" alength="15">
+				<subanchor sarel="0" saname="Mariana Islands" saoffset="200835" salength="15" rank="21">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="马里亚纳群岛">34063</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="European Union" aoffset="213419" alength="14">
-				<subanchor arel="0" aname="European Union" aoffset="213419" alength="14" rank="15">
-					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="欧洲联盟">1720</tobep>
+			<anchor arel="0" aname="European Union" aoffset="213419" alength="14">
+				<subanchor sarel="0" saname="European Union" saoffset="213419" salength="14" rank="15">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="欧洲联盟">1720</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="Indian Ocean" aoffset="235116" alength="12">
-				<subanchor arel="0" aname="Indian Ocean" aoffset="235116" alength="12" rank="17">
-					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="印度洋">16421</tobep>
+			<anchor arel="0" aname="Indian Ocean" aoffset="235116" alength="12">
+				<subanchor sarel="0" saname="Indian Ocean" saoffset="235116" salength="12" rank="17">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="印度洋">16421</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="Sandwich Islands" aoffset="237784" alength="16">
-				<subanchor arel="0" aname="Sandwich Islands" aoffset="237784" alength="16" rank="46">
-					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="三明治群島">449880</tobep>
+			<anchor arel="0" aname="Sandwich Islands" aoffset="237784" alength="16">
+				<subanchor sarel="0" saname="Sandwich Islands" saoffset="237784" salength="16" rank="46">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="三明治群島">449880</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Reserve Bank of Australia" aoffset="165228" alength="25">
-				<subanchor arel="0" aname="Reserve Bank of Australia" aoffset="165228" alength="25" rank="1">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="麥覺理街 (雪梨)">1213515</tobep>
+				<subanchor sarel="0" saname="Reserve Bank of Australia" saoffset="165228" salength="25" rank="1">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="麥覺理街 (雪梨)">1213515</tobep>
 				</subanchor>
 			</anchor>
 		</outgoinglinks>
