@@ -739,6 +739,7 @@ public class LTWAssessmentToolView extends FrameView {
             String currPAnchorL = currTopicOLSEStatusSA[1];
             String currPAnchorS = currTopicOLSEStatusSA[2];
             String currPAnchorE = currTopicOLSEStatusSA[3];
+            String currPAnchorExt = currTopicOLSEStatusSA[4];
             String[] currPAnchorOLSA = new String[]{currPAnchorO, currPAnchorL};
             String currPAnchorStatus = this.myPooler.getPoolAnchorStatus(currTopicID, currPAnchorOLSA);
             // -----------------------------------------------------------------
@@ -764,6 +765,7 @@ public class LTWAssessmentToolView extends FrameView {
             String nextLinkID = nextAnchorLinkOSIDStatusSA[2];
             String nextLinkLang = nextAnchorLinkOSIDStatusSA[4];
             String nextLinkTitle = nextAnchorLinkOSIDStatusSA[5];
+            String nextLinkExtLength = nextAnchorLinkOSIDStatusSA[6];
             String nextLinkS = this.myPooler.getPoolAnchorBepLinkStartP(this.currTopicID, new String[]{nextAnchorO, nextAnchorL}, nextLinkID);
             String nextLinkStatus = this.myPooler.getPoolAnchorBepLinkStatus(this.currTopicID, new String[]{nextAnchorO, nextAnchorL}, nextLinkID);
             // =================================================================
@@ -780,7 +782,7 @@ public class LTWAssessmentToolView extends FrameView {
                 }
                 myPUpdater.updatePoolAnchorStatus(this.currTopicID, currPAnchorOLSA, poolAnchorStatus);
                 // Highlight Anchor/BEP + Auto Scrolling
-                updateTopicAnchorsHighlight(this.topicTextPane, new String[]{currPAnchorS, currPAnchorE, currPAnchorStatus}, new String[]{nextAnchorS, nextAnchorE});
+                updateTopicAnchorsHighlight(this.topicTextPane, new String[]{currPAnchorS, currPAnchorE, currPAnchorStatus, currPAnchorExt}, new String[]{nextAnchorS, nextAnchorE, nextLinkExtLength});
                 this.topicTextPane.getCaret().setDot(Integer.valueOf(nextAnchorE));
                 this.topicTextPane.scrollRectToVisible(this.topicTextPane.getVisibleRect());
                 this.topicTextPane.repaint();
@@ -973,19 +975,18 @@ public class LTWAssessmentToolView extends FrameView {
             String nextAnchorS = nextAnchorOLSEStatusSA[2];
             String nextAnchorE = nextAnchorOLSEStatusSA[3];
             String nextAnchorStatus = this.myPooler.getPoolAnchorStatus(this.currTopicID, new String[]{nextAnchorO, nextAnchorL});
-            // new String[]{tbOffset, tbStartP, tbFileID, tbRel}
+            // new String[]{tbOffset, tbStartP, tbFileID, tbRel, tblang, tbtitle, subanchor name, subanchor offset, sa length, sarel}
             String[] nextAnchorLinkOSIDStatusSA = nextAnchorBepLinkVSA.elementAt(1);
             String nextLinkO = nextAnchorLinkOSIDStatusSA[0];
             String nextLinkID = nextAnchorLinkOSIDStatusSA[2];
             String nextLinkLang = nextAnchorLinkOSIDStatusSA[4];
             String nextLinkTitle = nextAnchorLinkOSIDStatusSA[5];
+            String nextLinkSubanchorLength = nextAnchorLinkOSIDStatusSA[8];
             String nextLinkS = this.myPooler.getPoolAnchorBepLinkStartP(this.currTopicID, new String[]{nextAnchorO, nextAnchorL}, nextLinkID);
             String nextLinkStatus = this.myPooler.getPoolAnchorBepLinkStatus(this.currTopicID, new String[]{nextAnchorO, nextAnchorL}, nextLinkID);
             // -----------------------------------------------------------------
             // Update Pool Anchor Status <-- When GO NEXT Pool Anchor
             // because the PRE-Pool_Anchor might have been completed.
-            updateTopicAnchorsHighlight(this.topicTextPane, new String[]{currPAnchorS, currPAnchorE, currPAnchorStatus}, new String[]{nextAnchorS, nextAnchorE});
-            
             if (!nextAnchorO.equals(currPAnchorO)) {
                 String poolAnchorStatus = "";
                 if (!currPAnchorStatus.equals("0")){
@@ -995,7 +996,7 @@ public class LTWAssessmentToolView extends FrameView {
                 }
                 myPUpdater.updatePoolAnchorStatus(this.currTopicID, currPAnchorOLSA, poolAnchorStatus);
                 // Highlight Anchor/BEP + Auto Scrolling
-                
+                updateTopicAnchorsHighlight(this.topicTextPane, new String[]{currPAnchorS, currPAnchorE, currPAnchorStatus}, new String[]{nextAnchorS, nextAnchorE});
                 this.topicTextPane.getCaret().setDot(Integer.valueOf(nextAnchorE));
                 this.topicTextPane.scrollRectToVisible(this.topicTextPane.getVisibleRect());
                 this.topicTextPane.repaint();
@@ -1290,7 +1291,7 @@ public class LTWAssessmentToolView extends FrameView {
         String[] currTopicOLNameSEStatus = rscManager.getCurrTopicAnchorOLNameSEStatusSA(this.topicTextPane, currTopicID, topicAnchorsOLNameSEVS);
         String currTopicPAnchorStatus = currTopicOLNameSEStatus[5];
         // String[]{Name, SP, EP}
-        String[] currTopicAnchorNameSE = new String[]{currTopicOLNameSEStatus[2], currTopicOLNameSEStatus[3], currTopicOLNameSEStatus[4]};
+        String[] currTopicAnchorNameSE = new String[]{currTopicOLNameSEStatus[2], currTopicOLNameSEStatus[3], currTopicOLNameSEStatus[4], currTopicOLNameSEStatus[6]};
         setTopicTextHighlighter(topicAnchorOLSEStatus, currTopicAnchorNameSE);
         topicTextPane.getCaret().setDot(Integer.valueOf(currTopicAnchorNameSE[1]));
         topicTextPane.scrollRectToVisible(topicTextPane.getVisibleRect());
@@ -1312,7 +1313,7 @@ public class LTWAssessmentToolView extends FrameView {
         String[] CurrTopicATargetSIDStatus = rscManager.getCurrTopicABepSIDStatusSA(linkTextPane, currTopicID);
         setLinkBEPIcon(currTopicPAnchorStatus, CurrTopicATargetSIDStatus);
         // ---------------------------------------------------------------------
-        String currTopicOLSEStatusKey = currTopicOLNameSEStatus[0] + "_" + currTopicOLNameSEStatus[1] + "_" + currTopicOLNameSEStatus[3] + "_" + currTopicOLNameSEStatus[4] + "_" + currTopicOLNameSEStatus[5];
+        String currTopicOLSEStatusKey = currTopicOLNameSEStatus[0] + "_" + currTopicOLNameSEStatus[1] + "_" + currTopicOLNameSEStatus[3] + "_" + currTopicOLNameSEStatus[4] + "_" + currTopicOLNameSEStatus[5] + "_" + currTopicOLNameSEStatus[6];
         System.setProperty(this.sysPropertyCurrTopicOLSEStatusKey, currTopicOLSEStatusKey);
         // ---------------------------------------------------------------------
         String currAnchorName = this.myPooler.getPoolAnchorNameByOL(this.currTopicID, new String[]{currTopicOLNameSEStatus[0], currTopicOLNameSEStatus[1]});
@@ -1455,20 +1456,48 @@ public class LTWAssessmentToolView extends FrameView {
             Highlighter highlighter = this.topicTextPane.getHighlighter();
             highlighter.removeAllHighlights();
             Object anchorHighlightReference;
+            int curr_ext_length = Integer.parseInt(currTopicAnchorSCRSE[3]);
+
+            int sp1 = 0, se1 = 0;
             for (String[] thisAnchorSA : topicAnchorOLSEStatusVSA) {
                 String thisAnchorSP = thisAnchorSA[2];
-                if (thisAnchorSP.equals(currAnchorSP)) {
-                    anchorHighlightReference = highlighter.addHighlight(Integer.valueOf(thisAnchorSA[2]), Integer.valueOf(thisAnchorSA[3]), painters.getSelectedPainter());
-                } else {
-                    int thisAnchorStatus = Integer.valueOf(thisAnchorSA[4]);
-                    if (thisAnchorStatus == 0) {
-                        anchorHighlightReference = highlighter.addHighlight(Integer.valueOf(thisAnchorSA[2]), Integer.valueOf(thisAnchorSA[3]), painters.getAnchorPainter());
-                    } else if (thisAnchorStatus == 1) {
-                        anchorHighlightReference = highlighter.addHighlight(Integer.valueOf(thisAnchorSA[2]), Integer.valueOf(thisAnchorSA[3]), painters.getCompletePainter());
-                    } else if (thisAnchorStatus == -1) {
-                        anchorHighlightReference = highlighter.addHighlight(Integer.valueOf(thisAnchorSA[2]), Integer.valueOf(thisAnchorSA[3]), painters.getIrrelevantPainter());
+                int thisAnchorStatus = Integer.valueOf(thisAnchorSA[4]);
+                int ext_length = Integer.valueOf(thisAnchorSA[5]);
+            	int sp = Integer.valueOf(thisAnchorSA[2]);
+            	int se = Integer.valueOf(thisAnchorSA[3]);
+
+            	sp1 = sp;
+                if (thisAnchorSP.equals(currAnchorSP)) {                 
+                    if (curr_ext_length > 0) {
+//                    	sp1 = se;
+                    	se1 = se + curr_ext_length;
                     }
+                    else {
+                    	se1 = sp1;
+//                    	sp1 = sp;
+                    }
+                } 
+                else {
+//                    if (ext_length > 0) {
+//                    	sp1 = sp;
+                    	se1 = se + ext_length;
+//                    }
                 }
+
+                
+                if (se1 > sp1) {
+	                if (thisAnchorStatus == 0) {
+	                    anchorHighlightReference = highlighter.addHighlight(sp1, se1, painters.getAnchorPainter());
+	                } else if (thisAnchorStatus == 1) {
+	                    anchorHighlightReference = highlighter.addHighlight(sp1, se1, painters.getCompletePainter());
+	                } else if (thisAnchorStatus == -1) {
+	                    anchorHighlightReference = highlighter.addHighlight(sp1, se1, painters.getIrrelevantPainter());
+	                }
+                }
+                
+                if (thisAnchorSP.equals(currAnchorSP))
+                    anchorHighlightReference = highlighter.addHighlight(sp, se, painters.getSelectedPainter()); 
+                 
             }
         } catch (BadLocationException ex) {
             Logger.getLogger(LTWAssessmentToolView.class.getName()).log(Level.SEVERE, null, ex);
@@ -1637,6 +1666,8 @@ public class LTWAssessmentToolView extends FrameView {
             int[] achorSCRPos = new int[]{Integer.valueOf(currAnchorSE[0]), Integer.valueOf(currAnchorSE[1])};
             log("PRE: " + preAnchorSEStatus[0] + " - " + preAnchorSEStatus[1] + " - " + preAnchorSEStatus[2]);
             log("CURR: " + currAnchorSE[0] + " - " + currAnchorSE[1]);
+            int extLength = Integer.parseInt(preAnchorSEStatus[3]);
+            int sp, se;
             for (int i = 0; i < highlights.length; i++) {
                 int sPos = highlights[i].getStartOffset();
                 int ePos = highlights[i].getEndOffset();
@@ -1665,6 +1696,9 @@ public class LTWAssessmentToolView extends FrameView {
                             break;
                         }
                     }
+//                    else if (Integer.valueOf(preAnchorSEStatus[1])) {
+//                    	txtPaneHighlighter.removeHighlight(highlights[i]);
+//                    }
                 }
             }
         } catch (BadLocationException ex) {

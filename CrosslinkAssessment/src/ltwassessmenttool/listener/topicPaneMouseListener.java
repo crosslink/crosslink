@@ -177,11 +177,11 @@ public class topicPaneMouseListener implements MouseInputListener {
     // </editor-fold>
     // <editor-fold defaultstate="collapsed" desc="Mouse Event Action">
     // Get Caret Event when Mouse Click
-    private String[] currSCRSEName = null;
+    private String[] currSCRSEName =  new String[4];
     private boolean withinTarget = false;
 
     private void mouseHoverCaretEvent(MouseEvent me) {
-        currSCRSEName = new String[3];
+//        currSCRSEName =;
         this.isOutgoingTAB = Boolean.valueOf(System.getProperty(sysPropertyKey));
         // Move Caret with mouse pointer
         Point pt = me.getPoint();
@@ -198,7 +198,7 @@ public class topicPaneMouseListener implements MouseInputListener {
             } else {
                 currSCRSEName = getBepSETitleByDot(thisCaret);
             }
-            if (currSCRSEName != null && currSCRSEName.length == 3) {
+            if (currSCRSEName != null/* && currSCRSEName.length == 3*/) {
                 withinTarget = true;
                 this.topicTextPane.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
             } else {
@@ -1103,7 +1103,7 @@ public class topicPaneMouseListener implements MouseInputListener {
                         thisAnchorSA[2].toString().trim();
                 currAnchorSCRName =
                         this.topicTextPane.getSelectedText();
-                return selectedAnchorSEName = new String[]{String.valueOf(aStartPoint), String.valueOf(aEndPoint), currAnchorSCRName};
+                return selectedAnchorSEName = new String[]{String.valueOf(aStartPoint), String.valueOf(aEndPoint), currAnchorSCRName, thisAnchorSA[5]};
             }
 
         }

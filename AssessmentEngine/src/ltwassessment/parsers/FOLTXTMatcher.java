@@ -563,7 +563,7 @@ public class FOLTXTMatcher {
         for (String[] thisAnchorSet : anchorOLV) {
             String[] scrFOL = screenOffsetLengthFinder(fullScreenText, fullXmlTxt, thisAnchorSet);
             screenAnchorPos.add(scrFOL);
-            anchorSetV.add(thisAnchorSet[0] + " : " + thisAnchorSet[1] + " : " + thisAnchorSet[2] + " : " + scrFOL[1] + " : " + scrFOL[2]);
+            anchorSetV.add(thisAnchorSet[0] + " : " + thisAnchorSet[1] + " : " + thisAnchorSet[2] + " : " + scrFOL[1] + " : " + scrFOL[2]  + " : " + thisAnchorSet[4]);
         }
         // ============================
         // record into toolResource.xml
