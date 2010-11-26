@@ -1445,7 +1445,7 @@ public class resourcesManager {
                 Vector<String[]> bepLinksVSA = anchorBepLinksOIDStatus.get(pAnchorO + "_" + pAnchorL);
 //                log("bepLinksVSA: " + bepLinksVSA.size());
                 for (String[] bepLinksOSIDStatus : bepLinksVSA) {
-                    if (linkBepID.equals(bepLinksOSIDStatus[1])) {
+                    if (linkBepID.equals(bepLinksOSIDStatus[1])/* && pAnchorOLSA[0].equals(bepLinksOSIDStatus[6])*/) {
                         pABepIndex = pABepCounter;
                         // =====================================================
                         if (pABepIndex == bepLinksVSA.size() - 1) {

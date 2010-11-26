@@ -177,7 +177,7 @@ public class topicPaneMouseListener implements MouseInputListener {
     // </editor-fold>
     // <editor-fold defaultstate="collapsed" desc="Mouse Event Action">
     // Get Caret Event when Mouse Click
-    private String[] currSCRSEName =  new String[4];
+    private String[] currSCRSEName = null;
     private boolean withinTarget = false;
 
     private void mouseHoverCaretEvent(MouseEvent me) {
@@ -311,13 +311,29 @@ public class topicPaneMouseListener implements MouseInputListener {
         Vector<String[]> pABepLinksVSA = poolAnchorBepLinksHT.get(pAnchorOL);
         String bepOffset = "";
         String bepID = "";
-        bepOffset = pABepLinksVSA.elementAt(0)[0];
-        bepID = pABepLinksVSA.elementAt(0)[1];
-        String bepLang = pABepLinksVSA.elementAt(0)[3];
-        String bepTitle = pABepLinksVSA.elementAt(0)[4];
-        if (bepID.endsWith("\"")) {
-            bepID = bepID.substring(0, bepID.length() - 1);
-        }
+        String bepLang = "";
+        String bepTitle = "";
+        String[] bepInfo = pABepLinksVSA.get(0);
+        bepOffset = bepInfo[0];
+        bepID = bepInfo[1];
+        bepLang = bepInfo[3];
+        bepTitle = bepInfo[4];
+        if (bepInfo[6] != pAnchorO || Integer.parseInt(bepInfo[8]) != 0)
+	        for (int i = 1; i < pABepLinksVSA.size(); ++i) {
+	        	bepInfo = pABepLinksVSA.get(i);
+	        	if (bepInfo[6].equals(pAnchorO)) {
+			        bepOffset = bepInfo[0];
+			        bepID = bepInfo[1];
+			        bepLang = bepInfo[3];
+			        bepTitle = bepInfo[4];
+			        if (bepID.endsWith("\"")) {
+			            bepID = bepID.substring(0, bepID.length() - 1);
+			        }
+			        
+			        if (Integer.parseInt(bepInfo[8]) == 0)
+			        	break;
+	        	}
+	        }
         String bepRel = this.poolerManager.getPoolAnchorBepLinkStatus(this.currTopicID, currPAnchorOLStatus, bepID);
         String bepXmlFilePath = myRSCManager.getWikipediaFilePathByName(bepID + ".xml", bepLang);
         String bepStartp = this.poolerManager.getPoolAnchorBepLinkStartP(this.currTopicID, currPAnchorOLStatus, bepID);
@@ -376,7 +392,7 @@ public class topicPaneMouseListener implements MouseInputListener {
         // ---------------------------------------------------------------------
         // 3) update NAV Indices in toolResources XML
         this.myRSCManager.updateTABNavIndex(this.currTopicID, currPAnchorOLStatus, new String[]{bepOffset, bepID});
-        System.setProperty(sysPropertyCurrTopicOLSEStatusKey, pAnchorOL + "_" + currSCRSEName[0] + "_" + currSCRSEName[1] + "_" + pAnchorStatus);
+        System.setProperty(sysPropertyCurrTopicOLSEStatusKey, pAnchorOL + "_" + currSCRSEName[0] + "_" + currSCRSEName[1] + "_" + pAnchorStatus + "_" + currSCRSEName[3]);
         // ---------------------------------------------------------------------
         String currAnchorName = this.poolerManager.getPoolAnchorNameByOL(this.currTopicID, currPAnchorOLStatus);
         Vector<String> newTABFieldValues = new Vector<String>();
