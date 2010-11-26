@@ -952,14 +952,25 @@ public class resourcesManager {
                         Vector<String[]> thisBepLinksVSA = anchorBepLinksOIDStatus.get(thisPAnchorOLNameStatus[0] + "_" + thisPAnchorOLNameStatus[1]);
                         String[] thisPABepLinkSet = thisBepLinksVSA.elementAt(pABepNewIndex);
                         String bepLinkStartP = "";
+                        String subAnchorName = null;
+                        String subAnchorOffset = null;
+                        String subAnchorLength = null;
+                        String subAnchorRel = null;
                         for (String[] bepLinksOSIDS : bepLinksOSIDStatusVSA) {
                             if (bepLinksOSIDS[0].equals(thisPABepLinkSet[0])) {
                                 bepLinkStartP = bepLinksOSIDS[1];
+                                subAnchorName = bepLinksOSIDS[4];
+                                subAnchorOffset = bepLinksOSIDS[5];
+                                subAnchorLength = bepLinksOSIDS[6];
+                                subAnchorRel = bepLinksOSIDS[7];
+                                break;
                             }
                         }
+                        nextTABepOID = new String[]{thisPABepLinkSet[0], bepLinkStartP, thisPABepLinkSet[1], thisPABepLinkSet[2], thisPABepLinkSet[3], thisPABepLinkSet[4], subAnchorName, subAnchorOffset, subAnchorLength, subAnchorRel};
+
                         String thisPABepLinkStatus = this.pooler.getPoolAnchorBepLinkStatus(topicID, pAnchorOLSA, thisPABepLinkSet[1]);
                         // new String[]{Bep_Offset, StartPoint, ID, Status}
-                        nextTABepOID = new String[]{thisPABepLinkSet[0], bepLinkStartP, thisPABepLinkSet[1], thisPABepLinkStatus, thisPABepLinkSet[3]/*lang*/, thisPABepLinkSet[4]/*title*/};
+//                        nextTABepOID = new String[]{thisPABepLinkSet[0], bepLinkStartP, thisPABepLinkSet[1], thisPABepLinkStatus, thisPABepLinkSet[3]/*lang*/, thisPABepLinkSet[4]/*title*/};
 
                         nextTAB.add(pAnchorOLSA);
                         nextTAB.add(nextTABepOID);
@@ -1130,12 +1141,21 @@ public class resourcesManager {
         Vector<String[]> thisBepLinksVSA = anchorBepLinksOIDStatus.get(thisPAnchorOLNameStatus[0] + "_" + thisPAnchorOLNameStatus[1]);
         String[] thisPABepLinkSet = thisBepLinksVSA.elementAt(pABepNewIndex);
         String bepLinkStartP = "";
+        String subAnchorName = null;
+        String subAnchorOffset = null;
+        String subAnchorLength = null;
+        String subAnchorRel = null;
         for (String[] bepLinksOSIDS : bepLinksOSIDStatusVSA) {
             if (bepLinksOSIDS[0].equals(thisPABepLinkSet[0])) {
                 bepLinkStartP = bepLinksOSIDS[1];
+                subAnchorName = bepLinksOSIDS[4];
+                subAnchorOffset = bepLinksOSIDS[5];
+                subAnchorLength = bepLinksOSIDS[6];
+                subAnchorRel = bepLinksOSIDS[7];
+                break;
             }
         }
-        nextTABepOID = new String[]{thisPABepLinkSet[0], bepLinkStartP, thisPABepLinkSet[1], thisPABepLinkSet[2], thisPABepLinkSet[3], thisPABepLinkSet[4]};
+        nextTABepOID = new String[]{thisPABepLinkSet[0], bepLinkStartP, thisPABepLinkSet[1], thisPABepLinkSet[2], thisPABepLinkSet[3], thisPABepLinkSet[4], subAnchorName, subAnchorOffset, subAnchorLength, subAnchorRel};
 
         nextTAB.add(nextTAnchorOL);
         nextTAB.add(nextTABepOID);
@@ -1293,12 +1313,21 @@ public class resourcesManager {
                         Vector<String[]> thisBepLinksVSA = anchorBepLinksOIDStatus.get(thisPAnchorOLNameStatus[0] + "_" + thisPAnchorOLNameStatus[1]);
                         String[] thisPABepLinkSet = thisBepLinksVSA.elementAt(pABepNewIndex);
                         String bepLinkStartP = "";
+                        String subAnchorName = null;
+                        String subAnchorOffset = null;
+                        String subAnchorLength = null;
+                        String subAnchorRel = null;
                         for (String[] bepLinksOSIDS : bepLinksOSIDStatusVSA) {
                             if (bepLinksOSIDS[0].equals(thisPABepLinkSet[0])) {
                                 bepLinkStartP = bepLinksOSIDS[1];
+                                subAnchorName = bepLinksOSIDS[4];
+                                subAnchorOffset = bepLinksOSIDS[5];
+                                subAnchorLength = bepLinksOSIDS[6];
+                                subAnchorRel = bepLinksOSIDS[7];
+                                break;
                             }
                         }
-                        nextTABepOID = new String[]{thisPABepLinkSet[0], bepLinkStartP, thisPABepLinkSet[1], thisPABepLinkSet[2], thisPABepLinkSet[3], thisPABepLinkSet[4]};
+                        nextTABepOID = new String[]{thisPABepLinkSet[0], bepLinkStartP, thisPABepLinkSet[1], thisPABepLinkSet[2], thisPABepLinkSet[3], thisPABepLinkSet[4], subAnchorName, subAnchorOffset, subAnchorLength, subAnchorRel};
 
                         nextTAB.add(nextTAnchorOL);
                         nextTAB.add(nextTABepOID);
@@ -1441,12 +1470,21 @@ public class resourcesManager {
                         Vector<String[]> thisBepLinksVSA = anchorBepLinksOIDStatus.get(thisPAnchorOLNameStatus[0] + "_" + thisPAnchorOLNameStatus[1]);
                         String[] thisPABepLinkSet = thisBepLinksVSA.elementAt(pABepNewIndex);
                         String bepLinkStartP = "";
+                        String subAnchorName = null;
+                        String subAnchorOffset = null;
+                        String subAnchorLength = null;
+                        String subAnchorRel = null;
                         for (String[] bepLinksOSIDS : bepLinksOSIDStatusVSA) {
                             if (bepLinksOSIDS[0].equals(thisPABepLinkSet[0])) {
                                 bepLinkStartP = bepLinksOSIDS[1];
+                                subAnchorName = bepLinksOSIDS[4];
+                                subAnchorOffset = bepLinksOSIDS[5];
+                                subAnchorLength = bepLinksOSIDS[6];
+                                subAnchorRel = bepLinksOSIDS[7];
+                                break;
                             }
                         }
-                        nextTABepOID = new String[]{thisPABepLinkSet[0], bepLinkStartP, thisPABepLinkSet[1], thisPABepLinkSet[2], thisPABepLinkSet[3], thisPABepLinkSet[4]};
+                        nextTABepOID = new String[]{thisPABepLinkSet[0], bepLinkStartP, thisPABepLinkSet[1], thisPABepLinkSet[2], thisPABepLinkSet[3], thisPABepLinkSet[4], subAnchorName, subAnchorOffset, subAnchorLength, subAnchorRel};
 
                         nextTAB.add(nextTAnchorOL);
                         nextTAB.add(nextTABepOID);
@@ -1852,17 +1890,20 @@ public class resourcesManager {
         String currAnchorS = "";
         String currAnchorE = "";
         
+        String extensionLength = null;
+        
         for (int i = 0; i < topicAnchorsOLNameSEVS.size(); i++) {
             String topicAnchorsOLNameSE = topicAnchorsOLNameSEVS.elementAt(i);
             String[] topicAnchorsOLNameSESA = topicAnchorsOLNameSE.split(" : ");
             if (currAnchorO.equals(topicAnchorsOLNameSESA[0]) && currAnchorL.equals(topicAnchorsOLNameSESA[1])) {
                 currAnchorS = topicAnchorsOLNameSESA[3];
                 currAnchorE = topicAnchorsOLNameSESA[4];
+                extensionLength = topicAnchorsOLNameSESA[5];
                 break;
             }
         }
         String[] currTopicAnchorSE = new String[]{currAnchorS, currAnchorE};
-        currTopicAnchorOLNameSE = new String[]{currAnchorOLSA[0], currAnchorOLSA[1], currAnchorOLSA[2], currTopicAnchorSE[0], currTopicAnchorSE[1], currAnchorOLSA[3]};
+        currTopicAnchorOLNameSE = new String[]{currAnchorOLSA[0], currAnchorOLSA[1], currAnchorOLSA[2], currTopicAnchorSE[0], currTopicAnchorSE[1], currAnchorOLSA[3], extensionLength};
         return currTopicAnchorOLNameSE;
     }
     
@@ -1996,7 +2037,7 @@ public class resourcesManager {
                 String pAnchorOffset = pAnchorSA[0];
                 String pAnchorStatus = pAnchorSA[3];
                 if (anchorSA[0].trim().equals(pAnchorOffset)) {
-                    topicAnchorSCRStatusVSA.add(new String[]{anchorSA[0].trim(), anchorSA[1].trim(), anchorSA[3].trim(), anchorSA[4].trim(), pAnchorStatus});
+                    topicAnchorSCRStatusVSA.add(new String[]{anchorSA[0].trim(), anchorSA[1].trim(), anchorSA[3].trim(), anchorSA[4].trim(), pAnchorStatus, anchorSA[5].trim()});
                 }
             }
         }

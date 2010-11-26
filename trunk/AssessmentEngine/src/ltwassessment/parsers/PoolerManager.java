@@ -695,7 +695,7 @@ public class PoolerManager {
     public HashMap<String, Vector<String[]>> getBepSetByAnchor(String topicFileID) {
         // assign a Topic File ID (i.e. 112398)
         // to get Anchor(1114_1133), Vector<String[]{123017, 1538}+>
-        HashMap<String, Vector<String[]>> anchorBepsHT = new HashMap<String, Vector<String[]>>();
+        HashMap<String, Vector<String[]>> anchorBepsHT = null; //new HashMap<String, Vector<String[]>>();
         anchorBepsHT = getAnchorBepSetbyTopicID(topicFileID, poolXMLPath);
         return anchorBepsHT;
     }
@@ -709,7 +709,7 @@ public class PoolerManager {
         String afOutgoingTag = forValidationOrAssessment ? "outgoinglinks" : "outgoing";
         String afAnchorTag = "anchor";
         String afSubAnchorTag = "subanchor";
-        String afToBepTag = "tofile";
+        String afToBepTag = forValidationOrAssessment ? "tobep" : "tofile";
         String offsetAttributeName = forValidationOrAssessment ? "aoffset" : "offset";
         String lengthAttributeName = forValidationOrAssessment ? "alength" : "length";
         String tboffsetAttributeName = forValidationOrAssessment ? "tboffset" : "bep_offset";
@@ -735,6 +735,7 @@ public class PoolerManager {
                         String aOffset = anchorElmn.getAttribute( offsetAttributeName);
                         String aLength = anchorElmn.getAttribute(lengthAttributeName);
                         String anchorName = anchorElmn.getAttribute("name");
+                        String aExtLength = anchorElmn.getAttribute("ext_length");
                         	
                         anchorToBEPV = new Vector<String[]>();
                         if (forValidationOrAssessment) {
@@ -742,6 +743,11 @@ public class PoolerManager {
                             NodeList subAnchorNodeList = anchorElmn.getElementsByTagName(afSubAnchorTag);
                             for (int l = 0; l < subAnchorNodeList.getLength(); l++) {
                                 Element subAnchorElmn = (Element) subAnchorNodeList.item(l);
+                                String saOffset = subAnchorElmn.getAttribute("saoffset");
+                                String saLength = subAnchorElmn.getAttribute("salength");
+                                String sanchorName = subAnchorElmn.getAttribute("saname");
+                                String sarel = subAnchorElmn.getAttribute("sarel");
+                                
                                 NodeList toBepNodeList = subAnchorElmn.getElementsByTagName(afToBepTag);
                                 for (int m = 0; m < toBepNodeList.getLength(); m++) {
                                     Element toBepElmn = (Element) toBepNodeList.item(m);
@@ -751,7 +757,7 @@ public class PoolerManager {
 
                                     Node tbXmlFileIDTextNode = toBepElmn.getFirstChild();
                                     String tbFileID = tbXmlFileIDTextNode.getTextContent();
-                                    anchorToBEPV.add(new String[]{tbOffset, tbStartP, tbFileID, tbRel});
+                                    anchorToBEPV.add(new String[]{tbOffset, tbStartP, tbFileID, tbRel, sanchorName, saOffset, saLength, sarel});
                                 }
                             }
                         }
@@ -885,7 +891,7 @@ public class PoolerManager {
                         anchorsHT = new Hashtable<String, Hashtable<String, Vector<String[]>>>();
                         subAnchorsVbyTopic = new Vector<String[]>();
                     } else if (tagName.equals("anchor")) {
-                        String[] thisAnchorProperty = new String[4];
+                        String[] thisAnchorProperty = new String[5];
                         for (int i = 0; i < xsr.getAttributeCount(); i++) {
                             String aName = xsr.getAttributeLocalName(i);
                             if (aName.equals("aname") || aName.equals("name")) {
@@ -896,6 +902,8 @@ public class PoolerManager {
                                 thisAnchorProperty[1] = xsr.getAttributeValue(i);
                             }  else if (xsr.getAttributeLocalName(i).equals("arel")) {
                                 thisAnchorProperty[3] = xsr.getAttributeValue(i);
+                            } else if (xsr.getAttributeLocalName(i).equals("ext_length")) {
+                                thisAnchorProperty[4] = xsr.getAttributeValue(i);
                             }
                         }
                         anchorsVbyTopic.add(thisAnchorProperty);
