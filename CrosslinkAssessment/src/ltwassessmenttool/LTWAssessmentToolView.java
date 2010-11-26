@@ -958,6 +958,7 @@ public class LTWAssessmentToolView extends FrameView {
             String currPAnchorL = currTopicOLSEStatusSA[1];
             String currPAnchorS = currTopicOLSEStatusSA[2];
             String currPAnchorE = currTopicOLSEStatusSA[3];
+            String currPAnchorExt = currTopicOLSEStatusSA[4];
             String[] currPAnchorOLSA = new String[]{currPAnchorO, currPAnchorL};
             String currPAnchorStatus = this.myPooler.getPoolAnchorStatus(currTopicID, currPAnchorOLSA);
             String[] currALinkOIDSA = this.rscManager.getCurrTopicATargetOID(this.linkTextPane, this.currTopicID);
@@ -996,7 +997,7 @@ public class LTWAssessmentToolView extends FrameView {
                 }
                 myPUpdater.updatePoolAnchorStatus(this.currTopicID, currPAnchorOLSA, poolAnchorStatus);
                 // Highlight Anchor/BEP + Auto Scrolling
-                updateTopicAnchorsHighlight(this.topicTextPane, new String[]{currPAnchorS, currPAnchorE, currPAnchorStatus}, new String[]{nextAnchorS, nextAnchorE});
+                updateTopicAnchorsHighlight(this.topicTextPane, new String[]{currPAnchorS, currPAnchorE, currPAnchorStatus, currPAnchorExt}, new String[]{nextAnchorS, nextAnchorE, nextLinkSubanchorLength});
                 this.topicTextPane.getCaret().setDot(Integer.valueOf(nextAnchorE));
                 this.topicTextPane.scrollRectToVisible(this.topicTextPane.getVisibleRect());
                 this.topicTextPane.repaint();
@@ -1469,7 +1470,7 @@ public class LTWAssessmentToolView extends FrameView {
             	sp1 = sp;
                 if (thisAnchorSP.equals(currAnchorSP)) {                 
                     if (curr_ext_length > 0) {
-//                    	sp1 = se;
+                    	sp1 = se;
                     	se1 = se + curr_ext_length;
                     }
                     else {
