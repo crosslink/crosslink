@@ -770,6 +770,19 @@ public class LTWAssessmentToolView extends FrameView {
             String nextLinkExtLength = nextAnchorLinkOSIDStatusSA[6];
             String nextLinkS = this.myPooler.getPoolAnchorBepLinkStartP(this.currTopicID, new String[]{nextAnchorO, nextAnchorL}, nextLinkID);
             String nextLinkStatus = this.myPooler.getPoolAnchorBepLinkStatus(this.currTopicID, new String[]{nextAnchorO, nextAnchorL}, nextLinkID);
+            
+            // re-adjust the anchor offset and length
+            int offset = Integer.parseInt(nextAnchorLinkOSIDStatusSA[6]);
+            int length = Integer.parseInt(nextAnchorLinkOSIDStatusSA[7]);
+            int anchorOffset = Integer.parseInt(nextAnchorO);
+            int screenOffset = Integer.parseInt(nextAnchorS) + offset - anchorOffset;
+            nextAnchorS = String.valueOf(screenOffset);
+            nextAnchorE = String.valueOf(screenOffset + length);
+            
+            int extLength = Integer.parseInt(currPAnchorExt);
+            if (extLength > 0)
+            	currPAnchorE = String.valueOf(Integer.parseInt(currPAnchorE) + extLength);
+            
             // =================================================================
             // Topic Pane
             // =================================================================
@@ -784,7 +797,7 @@ public class LTWAssessmentToolView extends FrameView {
                 }
                 myPUpdater.updatePoolAnchorStatus(this.currTopicID, currPAnchorOLSA, poolAnchorStatus);
                 // Highlight Anchor/BEP + Auto Scrolling
-                updateTopicAnchorsHighlight(this.topicTextPane, new String[]{currPAnchorS, currPAnchorE, currPAnchorStatus, currPAnchorExt}, new String[]{nextAnchorS, nextAnchorE, nextLinkExtLength});
+                updateTopicAnchorsHighlight(this.topicTextPane, new String[]{currPAnchorS, currPAnchorE, currPAnchorStatus}, new String[]{nextAnchorS, nextAnchorE});
                 this.topicTextPane.getCaret().setDot(Integer.valueOf(nextAnchorE));
                 this.topicTextPane.scrollRectToVisible(this.topicTextPane.getVisibleRect());
                 this.topicTextPane.repaint();
@@ -987,6 +1000,19 @@ public class LTWAssessmentToolView extends FrameView {
             String nextLinkSubanchorLength = nextAnchorLinkOSIDStatusSA[8];
             String nextLinkS = this.myPooler.getPoolAnchorBepLinkStartP(this.currTopicID, new String[]{nextAnchorO, nextAnchorL}, nextLinkID);
             String nextLinkStatus = this.myPooler.getPoolAnchorBepLinkStatus(this.currTopicID, new String[]{nextAnchorO, nextAnchorL}, nextLinkID);
+            
+            // re-adjust the anchor offset and length
+            int offset = Integer.parseInt(nextAnchorLinkOSIDStatusSA[6]);
+            int length = Integer.parseInt(nextAnchorLinkOSIDStatusSA[7]);
+            int anchorOffset = Integer.parseInt(nextAnchorO);
+            int screenOffset = Integer.parseInt(nextAnchorS) + offset - anchorOffset;
+            nextAnchorS = String.valueOf(screenOffset);
+            nextAnchorE = String.valueOf(screenOffset + length);
+            
+            int extLength = Integer.parseInt(currPAnchorExt);
+            if (extLength > 0)
+            	currPAnchorE = String.valueOf(Integer.parseInt(currPAnchorE) + extLength);
+            
             // -----------------------------------------------------------------
             // Update Pool Anchor Status <-- When GO NEXT Pool Anchor
             // because the PRE-Pool_Anchor might have been completed.
@@ -1669,8 +1695,8 @@ public class LTWAssessmentToolView extends FrameView {
             int[] achorSCRPos = new int[]{Integer.valueOf(currAnchorSE[0]), Integer.valueOf(currAnchorSE[1])};
             log("PRE: " + preAnchorSEStatus[0] + " - " + preAnchorSEStatus[1] + " - " + preAnchorSEStatus[2]);
             log("CURR: " + currAnchorSE[0] + " - " + currAnchorSE[1]);
-            int extLength = Integer.parseInt(preAnchorSEStatus[3]);
-            int sp, se;
+//            int extLength = Integer.parseInt(preAnchorSEStatus[3]);
+//            int sp, se;
             for (int i = 0; i < highlights.length; i++) {
                 int sPos = highlights[i].getStartOffset();
                 int ePos = highlights[i].getEndOffset();
