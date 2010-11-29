@@ -231,6 +231,8 @@
         </Component>
         <Component class="javax.swing.JLabel" name="lblPoolAnchor">
           <Properties>
+            <Property name="font" type="java.awt.Font" resourceKey="lblPoolAnchor.font"/>
+            <Property name="foreground" type="java.awt.Color" resourceKey="lblPoolAnchor.foreground"/>
             <Property name="text" type="java.lang.String" resourceKey="lblPoolAnchor.text"/>
             <Property name="name" type="java.lang.String" value="lblPoolAnchor" noResource="true"/>
           </Properties>
@@ -449,7 +451,7 @@
               <Component id="statusPanelSeparator" alignment="0" pref="1393" max="32767" attributes="0"/>
               <Group type="102" alignment="1" attributes="0">
                   <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace pref="10" max="32767" attributes="0"/>
                   <Component id="jlblColorCurrentAnchor" linkSize="1" min="-2" pref="110" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="jlblColorNotAssessed" linkSize="1" min="-2" max="-2" attributes="0"/>

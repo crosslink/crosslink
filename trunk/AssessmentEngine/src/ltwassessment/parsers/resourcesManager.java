@@ -919,7 +919,7 @@ public class resourcesManager {
                         pABepIndex = pABepCounter;
                         // =====================================================
                         pAnchorNewIndex = pAnchorIndex;
-                        pABepNewIndex = pABepIndex;
+                        pABepNewIndex = Integer.parseInt(bepLinksOSIDStatus[9]); // pABepIndex;
                         boolean stillFindingFlag = true;
                         do {
                             String[] thisPAOLNameStatus = poolAnchorsOLNameStatusVSA.elementAt(pAnchorNewIndex);
@@ -956,13 +956,13 @@ public class resourcesManager {
                         String subAnchorOffset = null;
                         String subAnchorLength = null;
                         String subAnchorRel = null;
+                        subAnchorName = thisPABepLinkSet[4];
+                        subAnchorOffset = thisPABepLinkSet[5];
+                        subAnchorLength = thisPABepLinkSet[6];
+                        subAnchorRel = thisPABepLinkSet[7];
                         for (String[] bepLinksOSIDS : bepLinksOSIDStatusVSA) {
                             if (bepLinksOSIDS[0].equals(thisPABepLinkSet[0])) {
                                 bepLinkStartP = bepLinksOSIDS[1];
-                                subAnchorName = bepLinksOSIDS[4];
-                                subAnchorOffset = bepLinksOSIDS[5];
-                                subAnchorLength = bepLinksOSIDS[6];
-                                subAnchorRel = bepLinksOSIDS[7];
                                 break;
                             }
                         }
@@ -974,6 +974,7 @@ public class resourcesManager {
 
                         nextTAB.add(pAnchorOLSA);
                         nextTAB.add(nextTABepOID);
+                        break;
                     }
                     pABepCounter++;
                 }
@@ -1053,6 +1054,7 @@ public class resourcesManager {
 
                         nextTBA.add(nextTBepO);
                         nextTBA.add(nextTBAnchorOLID);
+                        break;
                     }
                     pBAnchorCounter++;
                 }
@@ -1145,13 +1147,13 @@ public class resourcesManager {
         String subAnchorOffset = null;
         String subAnchorLength = null;
         String subAnchorRel = null;
+        subAnchorName = thisPABepLinkSet[4];
+        subAnchorOffset = thisPABepLinkSet[5];
+        subAnchorLength = thisPABepLinkSet[6];
+        subAnchorRel = thisPABepLinkSet[7];
         for (String[] bepLinksOSIDS : bepLinksOSIDStatusVSA) {
             if (bepLinksOSIDS[0].equals(thisPABepLinkSet[0])) {
                 bepLinkStartP = bepLinksOSIDS[1];
-                subAnchorName = bepLinksOSIDS[4];
-                subAnchorOffset = bepLinksOSIDS[5];
-                subAnchorLength = bepLinksOSIDS[6];
-                subAnchorRel = bepLinksOSIDS[7];
                 break;
             }
         }
@@ -1282,7 +1284,7 @@ public class resourcesManager {
                 Vector<String[]> bepLinksVSA = anchorBepLinksOIDStatus.get(pAnchorO + "_" + pAnchorL);
                 for (String[] bepLinksOSIDStatus : bepLinksVSA) {
                     if (linkBepID.equals(bepLinksOSIDStatus[1])) {
-                        pABepIndex = pABepCounter;
+                        pABepIndex = Integer.parseInt(bepLinksOSIDStatus[9]); // pABepCounter;
                         // =====================================================
                         // Inidcate the Current AB Index --> Get the PRE one
                         // pABepIndex == 0 : Go Back PRE Anchor 's Last BEP link
@@ -1317,13 +1319,13 @@ public class resourcesManager {
                         String subAnchorOffset = null;
                         String subAnchorLength = null;
                         String subAnchorRel = null;
+                        subAnchorName = thisPABepLinkSet[4];
+                        subAnchorOffset = thisPABepLinkSet[5];
+                        subAnchorLength = thisPABepLinkSet[6];
+                        subAnchorRel = thisPABepLinkSet[7];
                         for (String[] bepLinksOSIDS : bepLinksOSIDStatusVSA) {
                             if (bepLinksOSIDS[0].equals(thisPABepLinkSet[0])) {
                                 bepLinkStartP = bepLinksOSIDS[1];
-                                subAnchorName = bepLinksOSIDS[4];
-                                subAnchorOffset = bepLinksOSIDS[5];
-                                subAnchorLength = bepLinksOSIDS[6];
-                                subAnchorRel = bepLinksOSIDS[7];
                                 break;
                             }
                         }
@@ -1331,6 +1333,7 @@ public class resourcesManager {
 
                         nextTAB.add(nextTAnchorOL);
                         nextTAB.add(nextTABepOID);
+                        break;
                     }
                     pABepCounter++;
                 }
@@ -1361,7 +1364,7 @@ public class resourcesManager {
         Vector<String[]> poolBepOStatusVSA = this.getPoolBEPsOStatusV();
         for (String[] pBepOStatus : poolBepOStatusVSA) {
             if (pBepO.equals(pBepOStatus[0])) {
-                pBepIndex = pBepCounter;
+                pBepIndex = Integer.parseInt(pBepOStatus[9]); // pBepCounter;
                 // -------------------------------------------------------------
                 int pBAnchorCounter = 0;
                 HashMap<String, Vector<String[]>> bepAnchorLinksHM = pooler.getAnchorFileSetByBep(topicID);
@@ -1474,13 +1477,13 @@ public class resourcesManager {
                         String subAnchorOffset = null;
                         String subAnchorLength = null;
                         String subAnchorRel = null;
+                        subAnchorName = thisPABepLinkSet[4];
+                        subAnchorOffset = thisPABepLinkSet[5];
+                        subAnchorLength = thisPABepLinkSet[6];
+                        subAnchorRel = thisPABepLinkSet[7];
                         for (String[] bepLinksOSIDS : bepLinksOSIDStatusVSA) {
                             if (bepLinksOSIDS[0].equals(thisPABepLinkSet[0])) {
                                 bepLinkStartP = bepLinksOSIDS[1];
-                                subAnchorName = bepLinksOSIDS[4];
-                                subAnchorOffset = bepLinksOSIDS[5];
-                                subAnchorLength = bepLinksOSIDS[6];
-                                subAnchorRel = bepLinksOSIDS[7];
                                 break;
                             }
                         }
@@ -1556,6 +1559,7 @@ public class resourcesManager {
 
                         nextTBA.add(nextTBepO);
                         nextTBA.add(nextTBAnchorOLID);
+                        break;
                     }
                     pBAnchorCounter++;
                 }

@@ -947,8 +947,8 @@ public class PoolerManager {
                     		thisToBepProperty[6] = "";
                 			thisToBepProperty[7] = "";
                 			thisToBepProperty[8] = "";
-                        	if (index > 3)
-                        		System.err.println("We got more than 3 beps here");
+//                        	if (index > 3)
+//                        		System.err.println("We got more than 3 beps here");
                             thisToBepProperty[9] = String.valueOf(index++);
                             for (int i = 0; i < xsr.getAttributeCount(); i++) {
                                 if (xsr.getAttributeLocalName(i).equals("tboffset")) {
