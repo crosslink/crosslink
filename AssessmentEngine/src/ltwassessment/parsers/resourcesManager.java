@@ -956,10 +956,10 @@ public class resourcesManager {
                         String subAnchorOffset = null;
                         String subAnchorLength = null;
                         String subAnchorRel = null;
-                        subAnchorName = thisPABepLinkSet[4];
-                        subAnchorOffset = thisPABepLinkSet[5];
-                        subAnchorLength = thisPABepLinkSet[6];
-                        subAnchorRel = thisPABepLinkSet[7];
+                        subAnchorName = thisPABepLinkSet[5];
+                        subAnchorOffset = thisPABepLinkSet[6];
+                        subAnchorLength = thisPABepLinkSet[7];
+                        subAnchorRel = thisPABepLinkSet[8];
                         for (String[] bepLinksOSIDS : bepLinksOSIDStatusVSA) {
                             if (bepLinksOSIDS[0].equals(thisPABepLinkSet[0])) {
                                 bepLinkStartP = bepLinksOSIDS[1];
@@ -1147,10 +1147,10 @@ public class resourcesManager {
         String subAnchorOffset = null;
         String subAnchorLength = null;
         String subAnchorRel = null;
-        subAnchorName = thisPABepLinkSet[4];
-        subAnchorOffset = thisPABepLinkSet[5];
-        subAnchorLength = thisPABepLinkSet[6];
-        subAnchorRel = thisPABepLinkSet[7];
+        subAnchorName = thisPABepLinkSet[5];
+        subAnchorOffset = thisPABepLinkSet[6];
+        subAnchorLength = thisPABepLinkSet[7];
+        subAnchorRel = thisPABepLinkSet[8];
         for (String[] bepLinksOSIDS : bepLinksOSIDStatusVSA) {
             if (bepLinksOSIDS[0].equals(thisPABepLinkSet[0])) {
                 bepLinkStartP = bepLinksOSIDS[1];
@@ -1319,10 +1319,10 @@ public class resourcesManager {
                         String subAnchorOffset = null;
                         String subAnchorLength = null;
                         String subAnchorRel = null;
-                        subAnchorName = thisPABepLinkSet[4];
-                        subAnchorOffset = thisPABepLinkSet[5];
-                        subAnchorLength = thisPABepLinkSet[6];
-                        subAnchorRel = thisPABepLinkSet[7];
+                        subAnchorName = thisPABepLinkSet[5];
+                        subAnchorOffset = thisPABepLinkSet[6];
+                        subAnchorLength = thisPABepLinkSet[7];
+                        subAnchorRel = thisPABepLinkSet[8];
                         for (String[] bepLinksOSIDS : bepLinksOSIDStatusVSA) {
                             if (bepLinksOSIDS[0].equals(thisPABepLinkSet[0])) {
                                 bepLinkStartP = bepLinksOSIDS[1];
@@ -1477,10 +1477,10 @@ public class resourcesManager {
                         String subAnchorOffset = null;
                         String subAnchorLength = null;
                         String subAnchorRel = null;
-                        subAnchorName = thisPABepLinkSet[4];
-                        subAnchorOffset = thisPABepLinkSet[5];
-                        subAnchorLength = thisPABepLinkSet[6];
-                        subAnchorRel = thisPABepLinkSet[7];
+                        subAnchorName = thisPABepLinkSet[5];
+                        subAnchorOffset = thisPABepLinkSet[6];
+                        subAnchorLength = thisPABepLinkSet[7];
+                        subAnchorRel = thisPABepLinkSet[8];
                         for (String[] bepLinksOSIDS : bepLinksOSIDStatusVSA) {
                             if (bepLinksOSIDS[0].equals(thisPABepLinkSet[0])) {
                                 bepLinkStartP = bepLinksOSIDS[1];
