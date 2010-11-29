@@ -1,6 +1,9 @@
 package ltwassessment.pool;
 
+import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.Map;
+import java.util.Set;
 
 public class ToXml {
 
@@ -29,8 +32,16 @@ public class ToXml {
 		
 		xmlText.append(String.format(anchorElementStart, anchor.getName(), anchor.getOffset(), anchor.getLength(), anchor.getRank()));
 		
-		for (Target target : anchor.getTargets())
-			targetToXml(target, xmlText);
+		Set set = anchor.getTargets().entrySet();
+		Iterator i = set.iterator();
+
+	    while(i.hasNext()) {
+	    	Map.Entry me = (Map.Entry)i.next();
+	    	Target target = (Target)me.getValue();
+	    	targetToXml(target, xmlText);
+	    }
+//		for (Target target : anchor.getTargets())
+//			targetToXml(target, xmlText);
 		xmlText.append(anchorElementEnd);
 	}	
 	

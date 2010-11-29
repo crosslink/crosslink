@@ -1,5 +1,9 @@
 package ltwassessment.pool;
 
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 import java.util.Vector;
 
 public class Anchor {
@@ -19,7 +23,8 @@ public class Anchor {
 	private Anchor next = null;
 	private Anchor previous = null;
 
-	private Vector<Target> targets = null;
+//	private Vector<Target> targets = null;
+	private Map<String, Target>	targets = null;
 	
 //	public Anchor(Anchor anchor) {
 //		this.offset = anchor.getOffset();
@@ -35,7 +40,8 @@ public class Anchor {
 		this.length = length;
 		this.name = name;
 		
-		targets = new Vector<Target>();
+//		targets = new Vector<Target>();
+		targets = new HashMap<String, Target>();
 	}
 	
 	public int getExtendedLength() {
@@ -102,12 +108,13 @@ public class Anchor {
 		this.name = name;
 	}
 	
-	public Vector<Target> getTargets() {
+	public Map<String, Target> getTargets() {
 		return targets;
 	}
 	
 	public void insertTarget(Target target) {
-		targets.add(target);
+		if (!targets.containsKey((target.getId()))) 
+			targets.put(target.getId(), target);
 	}
 	
 	public boolean isValid() {
