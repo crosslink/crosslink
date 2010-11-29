@@ -222,10 +222,10 @@ public class topicPaneMouseListener implements MouseInputListener {
                 this.preTHyperOLSEStatus = System.getProperty(sysPropertyCurrTopicOLSEStatusKey);
                 // -------------------------------------------------------------
                 // 1) Highlight Anchor/BEP + Auto Scrolling
-                String currAnchorO = currSCRSEName[5];
-                String currAnchorL = currSCRSEName[6];
+                String currAnchorO = currSCRSEName[4];
+                String currAnchorL = currSCRSEName[5];
                 String currAnchorStatus = poolerManager.getPoolAnchorStatus(this.currTopicID, new String[]{currAnchorO, currAnchorL});
-                String[] scrSEPosKey = new String[]{currSCRSEName[0], currSCRSEName[1], currSCRSEName[3], currSCRSEName[0], currSCRSEName[1]};
+                String[] scrSEPosKey = new String[]{currSCRSEName[2], currSCRSEName[0], currSCRSEName[1], currSCRSEName[3], currSCRSEName[0], currSCRSEName[1]};
 //                String[] scrSEPosKey = new String[]{currSCRSEName[0], currSCRSEName[1], currSCRSEName[3]};
                 String[] preAnchorOLSEStatus = this.preTHyperOLSEStatus.split("_");
                 String[] preAnchorSEStatus = new String[]{preAnchorOLSEStatus[2], preAnchorOLSEStatus[3], preAnchorOLSEStatus[4]};
