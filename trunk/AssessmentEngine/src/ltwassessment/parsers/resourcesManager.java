@@ -1947,7 +1947,7 @@ public class resourcesManager {
 
     public String[] getCurrTopicATargetOID(JTextPane myLinkTextPane, String topicID) {
         // String[]{Bep_Offset, File_ID}
-        String[] currTopicABepIDO = new String[2];
+//        String[] currTopicABepIDO = new String[2];
         // ---------------------------------------------------------------------
         // ONLY 1 Topic, so topicIndex = 0
         // anchor-bep Index: 0 , 0 , 0 , 0 --> pool_Anchor , bep_Link , non-used , non-used
@@ -1966,7 +1966,16 @@ public class resourcesManager {
         String bepFileID = currBepSA[1].trim();
         String bepLang = currBepSA[3].trim();
         String bepTitle = currBepSA[4].trim();
-        return currTopicABepIDO = new String[]{bepOffset, bepFileID, bepLang, bepTitle};
+
+        String subAnchorName = null;
+        String subAnchorOffset = null;
+        String subAnchorLength = null;
+        String subAnchorRel = null;
+        subAnchorName = currBepSA[5];
+        subAnchorOffset = currBepSA[6];
+        subAnchorLength = currBepSA[7];
+        subAnchorRel = currBepSA[8];
+        return /*currTopicABepIDO = */new String[]{bepOffset, bepFileID, bepLang, bepTitle, subAnchorName, subAnchorOffset, subAnchorLength, subAnchorRel};
     }
 
     public String[] getCurrTopicABepSIDStatusSA(JTextPane myLinkTextPane, String topicID) {

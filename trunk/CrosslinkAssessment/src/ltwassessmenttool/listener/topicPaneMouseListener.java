@@ -222,11 +222,31 @@ public class topicPaneMouseListener implements MouseInputListener {
                 this.preTHyperOLSEStatus = System.getProperty(sysPropertyCurrTopicOLSEStatusKey);
                 // -------------------------------------------------------------
                 // 1) Highlight Anchor/BEP + Auto Scrolling
-                String[] scrSEPosKey = new String[]{currSCRSEName[0], currSCRSEName[1]};
+                String currAnchorO = currSCRSEName[5];
+                String currAnchorL = currSCRSEName[6];
+                String currAnchorStatus = poolerManager.getPoolAnchorStatus(this.currTopicID, new String[]{currAnchorO, currAnchorL});
+                String[] scrSEPosKey = new String[]{currSCRSEName[0], currSCRSEName[1], currSCRSEName[3], currSCRSEName[0], currSCRSEName[1]};
+//                String[] scrSEPosKey = new String[]{currSCRSEName[0], currSCRSEName[1], currSCRSEName[3]};
                 String[] preAnchorOLSEStatus = this.preTHyperOLSEStatus.split("_");
                 String[] preAnchorSEStatus = new String[]{preAnchorOLSEStatus[2], preAnchorOLSEStatus[3], preAnchorOLSEStatus[4]};
-
-                updateTopicAnchorsHighlight(this.topicTextPane, scrSEPosKey, preAnchorSEStatus);
+                
+//                String currTopicOLSEStatus = System.getProperty(sysPropertyCurrTopicOLSEStatusKey);
+//                String[] currTopicOLSEStatusSA = currTopicOLSEStatus.split("_");
+//                String currPAnchorO = currTopicOLSEStatusSA[0];
+//                String currPAnchorL = currTopicOLSEStatusSA[1];
+//                String currPAnchorS = currTopicOLSEStatusSA[2];
+//                String currPAnchorE = currTopicOLSEStatusSA[3];
+//                String currPAnchorExt = currTopicOLSEStatusSA[4];
+//                String[] currPAnchorOLSA = new String[]{currPAnchorO, currPAnchorL};
+////                String currPAnchorStatus = this.poolerManager.getPoolAnchorStatus(topicID, currPAnchorOLSA);
+////                String[] currALinkOIDSA = this.myRSCManager.getCurrTopicATargetOID(this.myLinkPane, this.topicID);
+////                String currALinkOffset = currALinkOIDSA[0];
+////                String currALinkID = currALinkOIDSA[1];
+////                String[] currPALinkOIDSA = new String[]{currALinkOffset, currALinkID};
+////                String currPALinkStatus = this.myPoolManager.getPoolAnchorBepLinkStatus(topicID, currPAnchorOLSA, currALinkID);
+//
+                LTWAssessmentToolView.updateTopicAnchorsHighlight(this.topicTextPane, preAnchorSEStatus, scrSEPosKey, Integer.parseInt(currAnchorStatus));
+//                LTWAssessmentToolView.updateTopicAnchorsHighlight(this.topicTextPane, scrSEPosKey, preAnchorSEStatus, bepLength);
                 this.topicTextPane.getCaret().setDot(Integer.valueOf(currSCRSEName[1]));
                 this.topicTextPane.scrollRectToVisible(this.topicTextPane.getVisibleRect());
                 this.topicTextPane.repaint();
@@ -969,60 +989,60 @@ public class topicPaneMouseListener implements MouseInputListener {
         }
     }
 
-    private void updateTopicAnchorsHighlight(JTextPane topicPane, String[] currAnchorSE, String[] preAnchorSEStatus) {
-        // This might need to handle: isAssessment
-        // 1) YES: Highlight Curr Selected Anchor Text, keep others remaining as THEIR Colors
-        // 2) NO: Highlight Curr Selected Anchor Text, keep others remaining as Anchor Text Color
-        try {
-            boolean preDONEFlag = false;
-            boolean currDONEFlag = false;
-            Highlighter txtPaneHighlighter = topicPane.getHighlighter();
-            Highlight[] highlights = txtPaneHighlighter.getHighlights();
-            Object anchorHighlightRef = null;
-            int[] achorSCRPos = new int[]{Integer.valueOf(currAnchorSE[0]), Integer.valueOf(currAnchorSE[1])};
-            for (int i = 0; i <
-                    highlights.length; i++) {
-                int sPos = highlights[i].getStartOffset();
-                int ePos = highlights[i].getEndOffset();
-                if (achorSCRPos[0] == sPos && achorSCRPos[1] == ePos) {
-                    txtPaneHighlighter.removeHighlight(highlights[i]);
-                    anchorHighlightRef =
-                            txtPaneHighlighter.addHighlight(sPos, ePos, painters.getSelectedPainter());
-                    topicPane.repaint();
-                    currDONEFlag =
-                            true;
-                    if (currDONEFlag && preDONEFlag) {
-                        break;
-                    }
-
-                } else {
-                    if (Integer.valueOf(preAnchorSEStatus[0]) == sPos && Integer.valueOf(preAnchorSEStatus[1]) == ePos) {
-                        txtPaneHighlighter.removeHighlight(highlights[i]);
-                        String pAnchorStatus = preAnchorSEStatus[2];
-                        if (Integer.valueOf(pAnchorStatus) == 1) {
-                            anchorHighlightRef = txtPaneHighlighter.addHighlight(sPos, ePos, painters.getCompletePainter());
-                        } else if (Integer.valueOf(pAnchorStatus) == -1) {
-                            anchorHighlightRef = txtPaneHighlighter.addHighlight(sPos, ePos, painters.getIrrelevantPainter());
-                        } else {
-                            anchorHighlightRef = txtPaneHighlighter.addHighlight(sPos, ePos, painters.getAnchorPainter());
-                        }
-
-                        topicPane.repaint();
-                        preDONEFlag =
-                                true;
-                        if (currDONEFlag && preDONEFlag) {
-                            break;
-                        }
-
-
-                    }
-
-                }
-            }
-        } catch (BadLocationException ex) {
-            Logger.getLogger(topicPaneMouseListener.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }
+//    private void updateTopicAnchorsHighlight(JTextPane topicPane, String[] currAnchorSE, String[] preAnchorSEStatus) {
+//        // This might need to handle: isAssessment
+//        // 1) YES: Highlight Curr Selected Anchor Text, keep others remaining as THEIR Colors
+//        // 2) NO: Highlight Curr Selected Anchor Text, keep others remaining as Anchor Text Color
+//        try {
+//            boolean preDONEFlag = false;
+//            boolean currDONEFlag = false;
+//            Highlighter txtPaneHighlighter = topicPane.getHighlighter();
+//            Highlight[] highlights = txtPaneHighlighter.getHighlights();
+//            Object anchorHighlightRef = null;
+//            int[] achorSCRPos = new int[]{Integer.valueOf(currAnchorSE[0]), Integer.valueOf(currAnchorSE[1])};
+//            for (int i = 0; i <
+//                    highlights.length; i++) {
+//                int sPos = highlights[i].getStartOffset();
+//                int ePos = highlights[i].getEndOffset();
+//                if (achorSCRPos[0] == sPos && achorSCRPos[1] == ePos) {
+//                    txtPaneHighlighter.removeHighlight(highlights[i]);
+//                    anchorHighlightRef =
+//                            txtPaneHighlighter.addHighlight(sPos, ePos, painters.getSelectedPainter());
+//                    topicPane.repaint();
+//                    currDONEFlag =
+//                            true;
+//                    if (currDONEFlag && preDONEFlag) {
+//                        break;
+//                    }
+//
+//                } else {
+//                    if (Integer.valueOf(preAnchorSEStatus[0]) == sPos && Integer.valueOf(preAnchorSEStatus[1]) == ePos) {
+//                        txtPaneHighlighter.removeHighlight(highlights[i]);
+//                        String pAnchorStatus = preAnchorSEStatus[2];
+//                        if (Integer.valueOf(pAnchorStatus) == 1) {
+//                            anchorHighlightRef = txtPaneHighlighter.addHighlight(sPos, ePos, painters.getCompletePainter());
+//                        } else if (Integer.valueOf(pAnchorStatus) == -1) {
+//                            anchorHighlightRef = txtPaneHighlighter.addHighlight(sPos, ePos, painters.getIrrelevantPainter());
+//                        } else {
+//                            anchorHighlightRef = txtPaneHighlighter.addHighlight(sPos, ePos, painters.getAnchorPainter());
+//                        }
+//
+//                        topicPane.repaint();
+//                        preDONEFlag =
+//                                true;
+//                        if (currDONEFlag && preDONEFlag) {
+//                            break;
+//                        }
+//
+//
+//                    }
+//
+//                }
+//            }
+//        } catch (BadLocationException ex) {
+//            Logger.getLogger(topicPaneMouseListener.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//    }
 
     private void updatePaneBepIcon(JTextPane txtPane, Vector<String> bepSCROffset, boolean isTopicBEP) {
         // TODO: "isHighlighBEP"
@@ -1112,6 +1132,10 @@ public class topicPaneMouseListener implements MouseInputListener {
 
             int aStartPoint = Integer.valueOf(thisAnchorSA[3]);
             int aEndPoint = Integer.valueOf(thisAnchorSA[4]);
+            int extLength = Integer.valueOf(thisAnchorSA[5]);
+            
+            if (extLength > 0)
+            	aEndPoint += extLength;
             if (aStartPoint <= thisdot && thisdot <= aEndPoint) {
                 this.topicTextPane.setSelectionStart(Integer.valueOf(aStartPoint));
                 this.topicTextPane.setSelectionEnd(Integer.valueOf(aEndPoint));
@@ -1119,7 +1143,8 @@ public class topicPaneMouseListener implements MouseInputListener {
                         thisAnchorSA[2].toString().trim();
                 currAnchorSCRName =
                         this.topicTextPane.getSelectedText();
-                return selectedAnchorSEName = new String[]{String.valueOf(aStartPoint), String.valueOf(aEndPoint), currAnchorSCRName, thisAnchorSA[5]};
+//                return selectedAnchorSEName = new String[]{String.valueOf(aStartPoint), String.valueOf(aEndPoint), currAnchorSCRName, thisAnchorSA[5]};
+                return selectedAnchorSEName = new String[]{thisAnchorSA[3], thisAnchorSA[4], currAnchorSCRName, thisAnchorSA[5], thisAnchorSA[0], thisAnchorSA[1]};
             }
 
         }
