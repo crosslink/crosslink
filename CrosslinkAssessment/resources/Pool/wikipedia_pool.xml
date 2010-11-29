@@ -4,7 +4,7 @@
 	<collection>Korean Wikipedia 2010 Collection</collection>
 	<topic file="4689264" name="Australia">
 		<outgoinglinks>
-			<anchor arel="-1" aname="Commonwealth of Nations" aoffset="801" alength="23" ext_length="0">
+			<anchor arel="0" aname="Commonwealth of Nations" aoffset="801" alength="23" ext_length="0">
 				<subanchor sarel="0" saname="Commonwealth of Nations" saoffset="801" salength="23" rank="4">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="英联邦">7435</tobep>
 				</subanchor>
@@ -19,17 +19,17 @@
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="新幾內亞">50229</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="-1" aname="East India Company" aoffset="23526" alength="18" ext_length="0">
+			<anchor arel="0" aname="East India Company" aoffset="23526" alength="18" ext_length="0">
 				<subanchor sarel="0" saname="East India Company" saoffset="23526" salength="18" rank="8">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="東印度公司">160042</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="不列颠东印度公司">159670</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="-1" aname="South Pacific" aoffset="25156" alength="13" ext_length="6">
+			<anchor arel="0" aname="South Pacific" aoffset="25156" alength="13" ext_length="6">
 				<subanchor sarel="0" saname="South Pacific" saoffset="25156" salength="13" rank="41">
-					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="新宿KOMA劇場">414315</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="最高電影票房收入列表">537442</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2010無綫節目巡禮">1160568</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="新宿KOMA劇場">414315</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="Pacific Ocean" saoffset="25162" salength="13" rank="42">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="太平洋">3441</tobep>
@@ -77,15 +77,15 @@
 			</anchor>
 			<anchor arel="0" aname="United States" aoffset="47574" alength="13" ext_length="0">
 				<subanchor sarel="0" saname="United States" saoffset="47574" salength="13" rank="30">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="美國">481</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="合眾國">192127</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="姬拉·麗莉">538457</tobep>
-					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="美國">481</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="The Queen" aoffset="51894" alength="9" ext_length="0">
 				<subanchor sarel="0" saname="The Queen" saoffset="51894" salength="9" rank="48">
-					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2006年電影列表">500359</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="英女皇 (電影)">499766</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2006年電影列表">500359</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="House of Representatives" aoffset="56939" alength="24" ext_length="0">
@@ -161,10 +161,9 @@
 			<anchor arel="0" aname="Grand Prix" aoffset="150049" alength="10" ext_length="0">
 				<subanchor sarel="0" saname="Grand Prix" saoffset="150049" salength="10" rank="23">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="斯诺克职业选手世界排名">82629</tobep>
-					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="斯诺克职业选手世界排名">82629</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="格蘭披治">93926</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="勞勃·阿特曼">648670</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="CSI犯罪現場：邁阿密章節列表">1157753</tobep>
-					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="格蘭披治">93926</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Olympic Games" aoffset="150162" alength="13" ext_length="0">

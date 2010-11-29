@@ -841,6 +841,7 @@ public class PoolerManager {
             Vector<String[]> fromAnchorsV = new Vector<String[]>();
             Vector<String[]> bepOffsetVbyTopic = new Vector<String[]>();
             String[] thisSubAnchorProperty = null;
+            int index = 0;
 
             while (xsr.hasNext()) {
                 xsr.next();
@@ -918,6 +919,7 @@ public class PoolerManager {
                             thisSubAnchorSet = thisSubAnchorProperty[0] + "_" + thisSubAnchorProperty[1];
                             toBepsVbySubAnchor = new Vector<String[]>();                        	
                         }
+                        index = 0;
                     } else if (tagName.equals("subanchor")) {
                     	thisSubAnchorProperty = new String[4];
                     	String attrName = "";
@@ -938,12 +940,16 @@ public class PoolerManager {
                         toBepsVbySubAnchor = new Vector<String[]>();
                     } else if (tagName.equals(SubmissionFormat.getAftobeptag())) { // tobep , now tofile
                         String[] thisToBepProperty = null;
+
 //                        if (AppResource.forValidationOrAssessment) {
-                            thisToBepProperty = new String[9];
+                            thisToBepProperty = new String[10];
                         	thisToBepProperty[5] = "";
                     		thisToBepProperty[6] = "";
                 			thisToBepProperty[7] = "";
                 			thisToBepProperty[8] = "";
+                        	if (index > 3)
+                        		System.err.println("We got more than 3 beps here");
+                            thisToBepProperty[9] = String.valueOf(index++);
                             for (int i = 0; i < xsr.getAttributeCount(); i++) {
                                 if (xsr.getAttributeLocalName(i).equals("tboffset")) {
                                     thisToBepProperty[0] = xsr.getAttributeValue(i);
@@ -961,6 +967,7 @@ public class PoolerManager {
                     			thisToBepProperty[7] = thisSubAnchorProperty[1]; // length
                     			thisToBepProperty[8] = thisSubAnchorProperty[3]; // status
                             }
+
                         xsr.next();
                         if (xsr.isCharacters()) {
                             thisToBepProperty[1] = xsr.getText();
@@ -1016,7 +1023,6 @@ public class PoolerManager {
 //                        isOutgoing = false;
                     } else if (tagName.equals("anchor")) {
                         anchorsHT.put(thisAnchorSet, subAnchorsToBepsHT);
-                        
                         if (!AppResource.forValidationOrAssessment)
                         	subAnchorsToBepsHT.put(thisSubAnchorSet, toBepsVbySubAnchor);
                     } else if (tagName.equals("subanchor")) {
@@ -1031,7 +1037,9 @@ public class PoolerManager {
                         isIncoming = false;
                     } else if (tagName.equals("bep")) {
                         bepsHT.put(thisInBepOffset, fromAnchorsV);
-                    }
+                    } /*else if (tagName.equals(SubmissionFormat.getAftobeptag())) {
+                        ++index;
+                    }*/
                 }
             }
             in.close();

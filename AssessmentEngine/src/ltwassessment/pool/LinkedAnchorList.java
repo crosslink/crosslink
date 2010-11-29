@@ -52,7 +52,7 @@ public class LinkedAnchorList {
 			if (anchor.getOffset() == theOne.getOffset()) { //which means definitely overlapping
 				overlapping = true;
 				if (anchor.getLength() == theOne.getLength()) { // same anchor, merge the targets 
-					theOne.getTargets().addAll(anchor.getTargets());
+					theOne.getTargets().putAll(anchor.getTargets());
 					return; 
 				}
 				else if (anchor.getLength() > theOne.getLength()) {// add to the end

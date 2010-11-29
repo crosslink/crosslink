@@ -1446,7 +1446,7 @@ public class resourcesManager {
 //                log("bepLinksVSA: " + bepLinksVSA.size());
                 for (String[] bepLinksOSIDStatus : bepLinksVSA) {
                     if (linkBepID.equals(bepLinksOSIDStatus[1])/* && pAnchorOLSA[0].equals(bepLinksOSIDStatus[6])*/) {
-                        pABepIndex = pABepCounter;
+                        pABepIndex = Integer.parseInt(bepLinksOSIDStatus[9]); //pABepCounter;
                         // =====================================================
                         if (pABepIndex == bepLinksVSA.size() - 1) {
                             if (pAnchorIndex == poolAnchorsOLNameStatusVSA.size() - 1) {
@@ -1637,7 +1637,16 @@ public class resourcesManager {
                     // ---------------------------------------------------------
 //                    aBepLinksV = newBepLinksV;
                 }
-                poolAnchorBepLinksHT.put(poolAnchorOL, aBepLinksV);
+                Vector<String[]> bepLinksVSorted = new Vector<String[]>(aBepLinksV.size());
+                bepLinksVSorted.setSize(aBepLinksV.size());
+                for (String[] bepInfo : aBepLinksV) {
+                	int index = Integer.parseInt(bepInfo[9]);
+                	if (index > 3)
+                		System.err.println("We got more than 3 beps here");
+                	bepLinksVSorted.set(index, bepInfo);
+                }
+                
+                poolAnchorBepLinksHT.put(poolAnchorOL, bepLinksVSorted);
             }
         }
         return poolAnchorBepLinksHT;
