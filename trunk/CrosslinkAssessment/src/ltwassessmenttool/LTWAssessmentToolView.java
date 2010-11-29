@@ -1575,6 +1575,9 @@ public class LTWAssessmentToolView extends FrameView {
             	int sp = Integer.valueOf(thisAnchorSA[2]);
             	int se = Integer.valueOf(thisAnchorSA[3]);
                 
+            	if (ext_length > 0)
+            		se += ext_length;
+            	
                 if (thisAnchorSP.equals(currAnchorSP))
                 	updateSelectedAnchorHightlighter(this.topicTextPane, currTopicAnchorSCRSE, thisAnchorStatus);
                     //anchorHighlightReference = highlighter.addHighlight(sp, se, painters.getSelectedPainter()); 
@@ -1761,7 +1764,7 @@ public class LTWAssessmentToolView extends FrameView {
             for (int i = 0; i < highlights.length; i++) {
                 int sPos = highlights[i].getStartOffset();
                 int ePos = highlights[i].getEndOffset();
-                if (achorSCRPos[0] == sPos && achorSCRPos[1] == ePos) {
+                if (achorSCRPos[0] == sPos/* && achorSCRPos[1] == ePos*/) {
                     txtPaneHighlighter.removeHighlight(highlights[i]);
                     // String[]{Name, SP, EP, extLength, subSP, subEP}
                     updateSelectedAnchorHightlighter(topicPane, currAnchorSE, currLinkStatus);
