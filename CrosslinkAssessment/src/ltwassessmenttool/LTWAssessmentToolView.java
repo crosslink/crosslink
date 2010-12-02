@@ -728,7 +728,7 @@ public class LTWAssessmentToolView extends FrameView {
         // using Image Loader
     }
 
-    public ScreenAnchor getNextAnchor(Vector<String[]> nextAnchorBepLinkVSA, String[] currPAnchorOLSA, String[] currPALinkOIDSA) {
+    public void updateAnchorChanges(Vector<String[]> nextAnchorBepLinkVSA, String[] currTopicOLSEStatusSA, String[] currPAnchorOLSA, String[] currPALinkOIDSA) {
         // Get PoolAnchor O, L, S, E, Status
         String[] nextAnchorOLSEStatusSA = nextAnchorBepLinkVSA.elementAt(0);
         String nextAnchorO = nextAnchorOLSEStatusSA[0];
@@ -791,10 +791,14 @@ public class LTWAssessmentToolView extends FrameView {
         screenAnchor.setExtLength(anchorExt);
         
         screenAnchor.setLink(link);
-        return screenAnchor;
+
+
+        updateAnchor(currTopicOLSEStatusSA, screenAnchor);
+
+        updateFields(screenAnchor, link);
     }
     
-    private void updateAnchorChanges(String[] currTopicOLSEStatusSA, ScreenAnchor scrAnchor) {
+    private void updateAnchor(String[] currTopicOLSEStatusSA, ScreenAnchor scrAnchor) {
         poolUpdater myPUpdater = new poolUpdater();
         String currPAnchorO = currTopicOLSEStatusSA[0];
         String currPAnchorL = currTopicOLSEStatusSA[1];
@@ -914,11 +918,7 @@ public class LTWAssessmentToolView extends FrameView {
             //    With TAB Nav Update --> NEXT TAB
             Vector<String[]> nextAnchorBepLinkVSA = this.rscManager.getPreTABWithUpdateNAV(this.currTopicID, currPAnchorOLSA, currPALinkOIDSA);
             
-            ScreenAnchor screenAnchor = this.getNextAnchor(nextAnchorBepLinkVSA, currPAnchorOLSA, currPALinkOIDSA);
-            Link link = screenAnchor.getLink();
-            updateAnchorChanges(currTopicOLSEStatusSA, screenAnchor);
-
-            updateFields(screenAnchor, link);
+            this.updateAnchorChanges(nextAnchorBepLinkVSA, currTopicOLSEStatusSA, currPAnchorOLSA, currPALinkOIDSA);
     }
 
     @Action
@@ -942,11 +942,7 @@ public class LTWAssessmentToolView extends FrameView {
             //    With TAB Nav Update --> NEXT TAB
             Vector<String[]> nextAnchorBepLinkVSA = rscManager.getNextTABWithUpdateNAV(currTopicID, currPAnchorOLSA, currPALinkOIDSA);
 
-            ScreenAnchor screenAnchor = this.getNextAnchor(nextAnchorBepLinkVSA, currPAnchorOLSA, currPALinkOIDSA);
-            Link link = screenAnchor.getLink();
-            updateAnchorChanges(currTopicOLSEStatusSA, screenAnchor);
-
-            updateFields(screenAnchor, link);
+            this.updateAnchorChanges(nextAnchorBepLinkVSA, currTopicOLSEStatusSA, currPAnchorOLSA, currPALinkOIDSA);
     }
     // </editor-fold>
 
