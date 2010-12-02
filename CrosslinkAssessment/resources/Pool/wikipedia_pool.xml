@@ -88,19 +88,19 @@
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2006年電影列表">500359</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="House of Representatives" aoffset="56939" alength="24" ext_length="0">
+			<anchor arel="1" aname="House of Representatives" aoffset="56939" alength="24" ext_length="0">
 				<subanchor sarel="0" saname="House of Representatives" saoffset="56939" salength="24" rank="7">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="众议院">139361</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="众议院">139361</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Australian Capital Territory" aoffset="57167" alength="28" ext_length="0">
+			<anchor arel="1" aname="Australian Capital Territory" aoffset="57167" alength="28" ext_length="0">
 				<subanchor sarel="0" saname="Australian Capital Territory" saoffset="57167" salength="28" rank="12">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="澳大利亞首都特區">311876</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="澳大利亞首都特區">311876</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="National Party" aoffset="59314" alength="14" ext_length="0">
 				<subanchor sarel="0" saname="National Party" saoffset="59314" salength="14" rank="32">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="国民党 (南非)">240844</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="国民党 (南非)">240844</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="McDonald Islands" aoffset="68578" alength="16" ext_length="0">
@@ -237,24 +237,24 @@
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="世界 (电影)">110502</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Mariana Islands" aoffset="200835" alength="15" ext_length="0">
+			<anchor arel="1" aname="Mariana Islands" aoffset="200835" alength="15" ext_length="0">
 				<subanchor sarel="0" saname="Mariana Islands" saoffset="200835" salength="15" rank="21">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="马里亚纳群岛">34063</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="马里亚纳群岛">34063</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="European Union" aoffset="213419" alength="14" ext_length="0">
+			<anchor arel="1" aname="European Union" aoffset="213419" alength="14" ext_length="0">
 				<subanchor sarel="0" saname="European Union" saoffset="213419" salength="14" rank="15">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="欧洲联盟">1720</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="欧洲联盟">1720</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Indian Ocean" aoffset="235116" alength="12" ext_length="0">
+			<anchor arel="1" aname="Indian Ocean" aoffset="235116" alength="12" ext_length="0">
 				<subanchor sarel="0" saname="Indian Ocean" saoffset="235116" salength="12" rank="17">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="印度洋">16421</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="印度洋">16421</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Sandwich Islands" aoffset="237784" alength="16" ext_length="0">
+			<anchor arel="1" aname="Sandwich Islands" aoffset="237784" alength="16" ext_length="0">
 				<subanchor sarel="0" saname="Sandwich Islands" saoffset="237784" salength="16" rank="46">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="三明治群島">449880</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="三明治群島">449880</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="Reserve Bank of Australia" aoffset="165228" alength="25" ext_length="0">
