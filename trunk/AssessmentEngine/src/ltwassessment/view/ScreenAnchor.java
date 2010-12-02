@@ -3,16 +3,20 @@ package ltwassessment.view;
 import ltwassessment.pool.Anchor;
 
 public class ScreenAnchor {
+	private int offset;
+	private	int	length;
 	private String screenPosStart;
 	private String screenPosEnd;
 	private String status;
-	private String extLength;
+	private int extLength;
+	
+	private Link link;
 
 	private String screenSubPosStart;
 	private String screenSubPosEnd;
 	
 	public ScreenAnchor(String screenPosStart, String screenPosEnd,
-			String status, String extLength) {
+			String status, int extLength) {
 		super();
 		this.screenPosStart = screenPosStart;
 		this.screenPosEnd = screenPosEnd;
@@ -21,7 +25,7 @@ public class ScreenAnchor {
 	}
 	
 	public ScreenAnchor(String screenPosStart, String screenPosEnd,
-			String status, String extLength, String screenSubPosStart,
+			String status, int extLength, String screenSubPosStart,
 			String screenSubPosEnd) {
 		super();
 		this.screenPosStart = screenPosStart;
@@ -30,6 +34,10 @@ public class ScreenAnchor {
 		this.extLength = extLength;
 		this.screenSubPosStart = screenSubPosStart;
 		this.screenSubPosEnd = screenSubPosEnd;
+	}
+
+	public ScreenAnchor() {
+
 	}
 
 	public String getScreenPosStart() {
@@ -56,11 +64,11 @@ public class ScreenAnchor {
 		this.status = status;
 	}
 
-	public String getExtLength() {
+	public int getExtLength() {
 		return extLength;
 	}
 
-	public void setExtLength(String extLength) {
+	public void setExtLength(int extLength) {
 		this.extLength = extLength;
 	}
 
@@ -78,6 +86,30 @@ public class ScreenAnchor {
 
 	public void setScreenSubPosEnd(String screenSubPosEnd) {
 		this.screenSubPosEnd = screenSubPosEnd;
+	}
+
+	public void setLength(int length) {
+		this.length = length;
+	}
+
+	public int getLength() {
+		return length;
+	}
+
+	public void setOffset(int offset) {
+		this.offset = offset;
+	}
+
+	public int getOffset() {
+		return offset;
+	}
+
+	public void setLink(Link link) {
+		this.link = link;
+	}
+
+	public Link getLink() {
+		return link;
 	}
 
 	
