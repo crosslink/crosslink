@@ -52,21 +52,21 @@ public class LTWAssessmentToolView extends FrameView {
 
     // -------------------------------------------------------------------------
     // constant variables
-    protected final int bepLength = 4;
+    protected final static int bepLength = 4;
     private final static String sysPropertyIsTABKey = "isTABKey";
-    private final String sysPropertyIsTopicWikiKey = "isTopicWikipedia";
-    private final String sysPropertyIsLinkWikiKey = "isLinkWikipedia";
-    private final String sysPropertyTABCompletedRatioKey = "tabCompletedRatio";
-    private final String sysPropertyTBACompletedRatioKey = "tbaCompletedRatio";
+    private final static String sysPropertyIsTopicWikiKey = "isTopicWikipedia";
+    private final static String sysPropertyIsLinkWikiKey = "isLinkWikipedia";
+    private final static String sysPropertyTABCompletedRatioKey = "tabCompletedRatio";
+    private final static String sysPropertyTBACompletedRatioKey = "tbaCompletedRatio";
     private final static String sysPropertyCurrTopicOLSEStatusKey = "currTopicOLSE";
-    private ResourceMap resourceMap;
-    private String textContentType = "";
+    private static ResourceMap resourceMap;
+    private static String textContentType = "";
 //    private String wikipediaTopicFileDir = "";
 //    private String topicAnchorsHTPrefix = "";
 //    private String topicBepsHTPrefix = "";
     private String defaultWikipediaDirectory = "";
     private String defaultTeAraDirectory = "";
-    private String afTasnCollectionErrors = "";
+    private static String afTasnCollectionErrors = "";
     private String defaultPoolXmlFilePath = "";
     // -------------------------------------------------------------------------
     // Variables
@@ -74,7 +74,7 @@ public class LTWAssessmentToolView extends FrameView {
     private boolean isLinkWikipedia = false;
     private String currTopicFilePath = "";
     private static String currTopicID = "";
-    private String currTopicName = "";
+    private static String currTopicName = "";
     // -------------------------------------------------------------------------
     private Vector<String[]> topicAnchorOLSEStatus = new Vector<String[]>();
     private Vector<String[]> topicBepScrStatus = new Vector<String[]>();
@@ -84,10 +84,10 @@ public class LTWAssessmentToolView extends FrameView {
     // For Incoming: [0]:Offset
     // -------------------------------------------------------------------------
     // Declare External Classes
-    private PoolerManager myPooler;
-    private resourcesManager rscManager;
+    private static PoolerManager myPooler;
+    private static resourcesManager rscManager = null;
     private static highlightPainters painters = new highlightPainters();;
-    private ObservableSingleton os = null;
+    private static ObservableSingleton os = null;
     private fieldUpdateObserver fuObserver = null;
     // -------------------------------------------------------------------------
     //1) including participant-id, run-id, task, collection
@@ -101,14 +101,16 @@ public class LTWAssessmentToolView extends FrameView {
     private Hashtable<String, Vector<String[]>> topicBepsHT = new Hashtable<String, Vector<String[]>>();
 //    private Hashtable<String, String[]> topicAnchorOLTSENHT = new Hashtable<String, String[]>();
     // -------------------------------------------------------------------------
-    private Color linkPaneWhiteColor = Color.WHITE;
-    private Color linkPaneRelColor = new Color(168, 232, 177);
-    private Color linkPaneNonRelColor = new Color(255, 183, 165);
+    private static Color linkPaneWhiteColor = Color.WHITE;
+    private static Color linkPaneRelColor = new Color(168, 232, 177);
+    private static Color linkPaneNonRelColor = new Color(255, 183, 165);
     // -------------------------------------------------------------------------
-    private String bepIconImageFilePath = "";
-    private String bepIconCompleted = "";
-    private String bepIconNonrelevant = "";
-    private String bepIconHighlight = "";
+    private static String bepIconImageFilePath = "";
+    private static String bepIconCompleted = "";
+    private static String bepIconNonrelevant = "";
+    private static String bepIconHighlight = "";
+    
+    private static poolUpdater myPUpdater = null;
 
     static void log(Object content) {
         System.out.println(content);
@@ -163,6 +165,8 @@ public class LTWAssessmentToolView extends FrameView {
         rscManager = resourcesManager.getInstance();
         myPooler = PoolerManager.getInstance();
         rscManager.pullPoolData();
+        
+        myPUpdater = new poolUpdater();
         // =====================================================================
         // when the tool firstly starts:
         // For Link-the-Wikipedia A2B
@@ -377,6 +381,7 @@ public class LTWAssessmentToolView extends FrameView {
         linkTextScrollPane.setName("linkTextScrollPane"); // NOI18N
         linkTextScrollPane.setPreferredSize(new java.awt.Dimension(525, 400));
 
+        linkTextPane.setEditable(false);
         linkTextPane.setName("linkTextPane"); // NOI18N
         linkTextPane.setPreferredSize(new java.awt.Dimension(525, 444));
         linkTextScrollPane.setViewportView(linkTextPane);
@@ -728,7 +733,7 @@ public class LTWAssessmentToolView extends FrameView {
         // using Image Loader
     }
 
-    public void updateAnchorChanges(Vector<String[]> nextAnchorBepLinkVSA, String[] currTopicOLSEStatusSA, String[] currPAnchorOLSA, String[] currPALinkOIDSA) {
+    private static void updateAnchorChanges(Vector<String[]> nextAnchorBepLinkVSA, String[] currTopicOLSEStatusSA, String[] currPAnchorOLSA, String[] currPALinkOIDSA) {
         // Get PoolAnchor O, L, S, E, Status
         String[] nextAnchorOLSEStatusSA = nextAnchorBepLinkVSA.elementAt(0);
         String nextAnchorO = nextAnchorOLSEStatusSA[0];
@@ -736,7 +741,7 @@ public class LTWAssessmentToolView extends FrameView {
         String nextAnchorS = nextAnchorOLSEStatusSA[2];
         String nextAnchorE = nextAnchorOLSEStatusSA[3];
         String nextAnchorExt = nextAnchorOLSEStatusSA[5];
-        String nextAnchorStatus = this.myPooler.getPoolAnchorStatus(this.currTopicID, new String[]{nextAnchorO, nextAnchorL});
+        String nextAnchorStatus = myPooler.getPoolAnchorStatus(currTopicID, new String[]{nextAnchorO, nextAnchorL});
         
     	int anchorEnd = Integer.valueOf(nextAnchorE);
     	int anchorExt = Integer.valueOf(nextAnchorExt);
@@ -755,8 +760,8 @@ public class LTWAssessmentToolView extends FrameView {
         String nextLinkTitle = nextAnchorLinkOSIDStatusSA[5];
         String nextLinkAnchorName = nextAnchorLinkOSIDStatusSA[6];
 //        String nextLinkExtLength = "0"; //nextAnchorLinkOSIDStatusSA[6];
-        String nextLinkS = this.myPooler.getPoolAnchorBepLinkStartP(this.currTopicID, new String[]{nextAnchorO, nextAnchorL}, nextLinkID);
-        String nextLinkStatus = this.myPooler.getPoolAnchorBepLinkStatus(this.currTopicID, new String[]{nextAnchorO, nextAnchorL}, nextLinkID);
+        String nextLinkS = myPooler.getPoolAnchorBepLinkStartP(currTopicID, new String[]{nextAnchorO, nextAnchorL}, nextLinkID);
+        String nextLinkStatus = myPooler.getPoolAnchorBepLinkStatus(currTopicID, new String[]{nextAnchorO, nextAnchorL}, nextLinkID);
         
         Link link = new Link();
         link.setAnchorName(nextLinkAnchorName);
@@ -798,8 +803,7 @@ public class LTWAssessmentToolView extends FrameView {
         updateFields(screenAnchor, link);
     }
     
-    private void updateAnchor(String[] currTopicOLSEStatusSA, ScreenAnchor scrAnchor) {
-        poolUpdater myPUpdater = new poolUpdater();
+    private static void updateAnchor(String[] currTopicOLSEStatusSA, ScreenAnchor scrAnchor) {
         String currPAnchorO = currTopicOLSEStatusSA[0];
         String currPAnchorL = currTopicOLSEStatusSA[1];
         String[] currPAnchorOLSA = new String[]{currPAnchorO, currPAnchorL};
@@ -807,7 +811,7 @@ public class LTWAssessmentToolView extends FrameView {
         String currPAnchorE = currTopicOLSEStatusSA[3];
         String currPAnchorExt = currTopicOLSEStatusSA[5];
 
-        String currPAnchorStatus = this.myPooler.getPoolAnchorStatus(currTopicID, currPAnchorOLSA);
+        String currPAnchorStatus = myPooler.getPoolAnchorStatus(currTopicID, currPAnchorOLSA);
         String[] targetAnchorScreenInfo = new String[]{"", scrAnchor.getScreenPosStart(), scrAnchor.getScreenPosEnd(), String.valueOf(scrAnchor.getExtLength()), scrAnchor.getScreenSubPosStart(), scrAnchor.getScreenSubPosEnd()};
         if (!targetAnchorScreenInfo[4].equals(currPAnchorS) || !targetAnchorScreenInfo[5].equals(currPAnchorE)) {
             int extLength = Integer.parseInt(currPAnchorExt);
@@ -818,6 +822,16 @@ public class LTWAssessmentToolView extends FrameView {
             updateTopicAnchorsHighlight(topicTextPane, new String[]{currPAnchorS, currPAnchorE, currPAnchorStatus, currPAnchorExt}, targetAnchorScreenInfo, Integer.parseInt(scrAnchor.getStatus()));
             
             if (scrAnchor.getOffset() != Integer.parseInt(currPAnchorO)) {
+//          if (currPALinkStatus.equals("-1")) {
+//              if (currPAnchorStatus.equals("-1")) {
+//                  poolAnchorStatus = currPAnchorStatus;
+//              } else {
+//                  poolAnchorStatus = this.myRSCManager.getPoolAnchorCompletedStatus(topicID, currPAnchorOLSA);
+//              }
+//          } else {
+//              poolAnchorStatus = this.myRSCManager.getPoolAnchorCompletedStatus(topicID, currPAnchorOLSA);
+//          }
+//          this.myPoolUpdater.updatePoolAnchorStatus(topicID, currPAnchorOLSA, poolAnchorStatus);
                 String poolAnchorStatus = "";
                 if (!currPAnchorStatus.equals("0")){
                     poolAnchorStatus = currPAnchorStatus;
@@ -836,19 +850,19 @@ public class LTWAssessmentToolView extends FrameView {
         }
     }
     
-    private void updateFields(ScreenAnchor screenAnchor, Link link) {
+    private static void updateFields(ScreenAnchor screenAnchor, Link link) {
         // =================================================================
         // Link Pane
         // =================================================================
-        String bepXmlFilePath = this.myPooler.getXmlFilePathByTargetID(link.getId(), link.getLang());
+        String bepXmlFilePath = myPooler.getXmlFilePathByTargetID(link.getId(), link.getLang());
         if (bepXmlFilePath.startsWith(afTasnCollectionErrors)) {
             bepXmlFilePath = rscManager.getErrorXmlFilePath(bepXmlFilePath);
         }
         Xml2Html xmlParser = new Xml2Html(bepXmlFilePath, Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey)));
         String xmlHtmlText = xmlParser.getHtmlContent().toString();
-        this.linkTextPane.setContentType(this.textContentType);
-        this.linkTextPane.setText(xmlHtmlText);
-        this.linkTextPane.setCaretPosition(0);
+        linkTextPane.setContentType(textContentType);
+        linkTextPane.setText(xmlHtmlText);
+        linkTextPane.setCaretPosition(0);
         // -------------------------------------------------------------
         // -------------------------------------------------------------
         int screenAnchorStatus = Integer.valueOf(screenAnchor.getStatus());
@@ -859,36 +873,36 @@ public class LTWAssessmentToolView extends FrameView {
                 Vector<String> bepSCROffset = new Vector<String>();
                 bepSCROffset.add(String.valueOf(link.getStartPos()));
                 boolean isTopicBEP = false;
-                updatePaneBepIcon(this.linkTextPane, bepSCROffset, isTopicBEP);
-                this.linkTextPane.getCaret().setDot(link.getStartPos());
-                this.linkTextPane.scrollRectToVisible(this.linkTextPane.getVisibleRect());
-                this.linkTextPane.setBackground(this.linkPaneRelColor);
+                updatePaneBepIcon(linkTextPane, bepSCROffset, isTopicBEP);
+                linkTextPane.getCaret().setDot(link.getStartPos());
+                linkTextPane.scrollRectToVisible(linkTextPane.getVisibleRect());
+                linkTextPane.setBackground(linkPaneRelColor);
             } else if (linkStatus == -1) {
-                this.linkTextPane.setBackground(this.linkPaneNonRelColor);
+                linkTextPane.setBackground(linkPaneNonRelColor);
             } else if (linkStatus == 0) {
-                this.linkTextPane.setBackground(this.linkPaneWhiteColor);
+                linkTextPane.setBackground(linkPaneWhiteColor);
             }
-            this.linkTextPane.repaint();
+            linkTextPane.repaint();
         } else if (screenAnchorStatus == -1) {
-            this.linkTextPane.setBackground(this.linkPaneNonRelColor);
-            this.linkTextPane.repaint();
+            linkTextPane.setBackground(linkPaneNonRelColor);
+            linkTextPane.repaint();
         }    	
         // -------------------------------------------------------------
         // -------------------------------------------------------------
-//        String currAnchorName = this.myPooler.getPoolAnchorNameByOL(this.currTopicID, new String[]{String.valueOf(screenAnchor.getOffset()), String.valueOf(screenAnchor.getLength())});
+//        String currAnchorName = myPooler.getPoolAnchorNameByOL(currTopicID, new String[]{String.valueOf(screenAnchor.getOffset()), String.valueOf(screenAnchor.getLength())});
         Vector<String> newTABFieldValues = new Vector<String>();
-        newTABFieldValues.add(this.currTopicName);
-        newTABFieldValues.add(this.currTopicID);
+        newTABFieldValues.add(currTopicName);
+        newTABFieldValues.add(currTopicID);
         newTABFieldValues.add(link.getAnchorName());
         newTABFieldValues.add(link.getId());
         String pageTitle = "";
 //        if (Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey))) {
-            pageTitle = this.rscManager.getWikipediaPageTitle(link.getId());
+            pageTitle = rscManager.getWikipediaPageTitle(link.getId());
 //        } else {
-//            pageTitle = this.rscManager.getTeAraFilePathByName(nextLinkID);
+//            pageTitle = rscManager.getTeAraFilePathByName(nextLinkID);
 //        }
         newTABFieldValues.add(pageTitle.trim());
-        String[] pAnchorCompletionSA = this.rscManager.getOutgoingCompletion();
+        String[] pAnchorCompletionSA = rscManager.getOutgoingCompletion();
         newTABFieldValues.add(pAnchorCompletionSA[0] + " / " + pAnchorCompletionSA[1]);
         os.setTABFieldValues(newTABFieldValues);
     }
@@ -907,22 +921,26 @@ public class LTWAssessmentToolView extends FrameView {
             String currPAnchorL = currTopicOLSEStatusSA[1];
             String[] currPAnchorOLSA = new String[]{currPAnchorO, currPAnchorL};
             // -----------------------------------------------------------------
-            String[] currALinkOIDSA = this.rscManager.getCurrTopicATargetOID(this.linkTextPane, this.currTopicID);
+            String[] currALinkOIDSA = rscManager.getCurrTopicATargetOID(linkTextPane, currTopicID);
             String currALinkO = currALinkOIDSA[0];
             String currALinkID = currALinkOIDSA[1];
             String[] currPALinkOIDSA = new String[]{currALinkO, currALinkID};
 
-//          String currALinkStatus = this.myPooler.getPoolAnchorBepLinkStatus(currTopicID, currPAnchorOLSA, currALinkID);
+//          String currALinkStatus = myPooler.getPoolAnchorBepLinkStatus(currTopicID, currPAnchorOLSA, currALinkID);
             // =================================================================
             // 1) Get the NEXT Anchor O, L, S, E, Status + its BEP link O, S, ID, Status
             //    With TAB Nav Update --> NEXT TAB
-            Vector<String[]> nextAnchorBepLinkVSA = this.rscManager.getPreTABWithUpdateNAV(this.currTopicID, currPAnchorOLSA, currPALinkOIDSA);
+            Vector<String[]> nextAnchorBepLinkVSA = rscManager.getPreTABWithUpdateNAV(currTopicID, currPAnchorOLSA, currPALinkOIDSA);
             
-            this.updateAnchorChanges(nextAnchorBepLinkVSA, currTopicOLSEStatusSA, currPAnchorOLSA, currPALinkOIDSA);
+            updateAnchorChanges(nextAnchorBepLinkVSA, currTopicOLSEStatusSA, currPAnchorOLSA, currPALinkOIDSA);
     }
 
     @Action
     public void btnGoForwardALink() {
+    	moveForwardALink(false);
+    }
+    
+    public static void moveForwardALink(boolean updateCurrAnchorStatus) {
         // Click the button to Go Back one Link
 //        poolUpdater myPUpdater = new poolUpdater();
 //        boolean isTABOutgoing = Boolean.valueOf(System.getProperty(sysPropertyIsTABKey));
@@ -937,13 +955,30 @@ public class LTWAssessmentToolView extends FrameView {
             String currALinkOffset = currALinkOIDSA[0];
             String currALinkID = currALinkOIDSA[1];
             String[] currPALinkOIDSA = new String[]{currALinkOffset, currALinkID};
+            
+            if (updateCurrAnchorStatus) {
+            	String currPALinkStatus = myPooler.getPoolAnchorBepLinkStatus(currTopicID, currPAnchorOLSA, currALinkID);
+            	String currPAnchorStatus = myPooler.getPoolAnchorStatus(currTopicID, currPAnchorOLSA);
+            	String poolAnchorStatus = "";
+            	if (currPALinkStatus.equals("-1")) {
+            		if (currPAnchorStatus.equals("-1")) {
+			          poolAnchorStatus = currPAnchorStatus;
+            		} else {
+			        poolAnchorStatus = rscManager.getPoolAnchorCompletedStatus(currTopicID, currPAnchorOLSA);
+            		}
+            	} else {
+			      poolAnchorStatus = rscManager.getPoolAnchorCompletedStatus(currTopicID, currPAnchorOLSA);
+            	}
+            	myPUpdater.updatePoolAnchorStatus(currTopicID, currPAnchorOLSA, poolAnchorStatus);            	
+            }
             // -------------------------------------------------------------
             // 1) Get the NEXT Anchor O, L, S, E, Status + its BEP link O, S, ID, Status
             //    With TAB Nav Update --> NEXT TAB
             Vector<String[]> nextAnchorBepLinkVSA = rscManager.getNextTABWithUpdateNAV(currTopicID, currPAnchorOLSA, currPALinkOIDSA);
 
-            this.updateAnchorChanges(nextAnchorBepLinkVSA, currTopicOLSEStatusSA, currPAnchorOLSA, currPALinkOIDSA);
+            updateAnchorChanges(nextAnchorBepLinkVSA, currTopicOLSEStatusSA, currPAnchorOLSA, currPALinkOIDSA);
     }
+
     // </editor-fold>
 
     @Action
@@ -1570,7 +1605,7 @@ public class LTWAssessmentToolView extends FrameView {
         }
     }
 
-    private void updatePaneBepIcon(JTextPane txtPane, Vector<String> bepSCROffset, boolean isHighlighBEP) {
+    private static void updatePaneBepIcon(JTextPane txtPane, Vector<String> bepSCROffset, boolean isHighlighBEP) {
         // TODO: "isHighlighBEP"
         // 1) YES: Remove previous Highlight BEPs + Make a new Highlight BEP
         // 2) NO: INSERT BEP ICONs for this Topic
@@ -1595,7 +1630,7 @@ public class LTWAssessmentToolView extends FrameView {
             if (isHighlighBEP) {
                 for (String[] scrBepOS : HBepSCROffsetV) {
                     styDoc.remove(Integer.valueOf(scrBepOS[1]), bepLength);
-                    String thisPBepStatus = this.myPooler.getPoolBepStatus(this.currTopicID, scrBepOS[0]);
+                    String thisPBepStatus = myPooler.getPoolBepStatus(currTopicID, scrBepOS[0]);
                     if (Integer.valueOf(thisPBepStatus) == 1) {
                         styDoc.insertString(Integer.valueOf(scrBepOS[1]), "CBEP", bepCStyle);
                     } else if (Integer.valueOf(thisPBepStatus) == -1) {
