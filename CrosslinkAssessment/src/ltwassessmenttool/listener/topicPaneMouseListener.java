@@ -226,6 +226,8 @@ public class topicPaneMouseListener implements MouseInputListener {
                 String currAnchorL = currSCRSEName[5];
                 String currAnchorStatus = poolerManager.getPoolAnchorStatus(this.currTopicID, new String[]{currAnchorO, currAnchorL});
                 String[] scrSEPosKey = new String[]{currSCRSEName[2], currSCRSEName[0], currSCRSEName[1], currSCRSEName[3], currSCRSEName[0], currSCRSEName[1]};
+            	int anchorEnd = Integer.valueOf(scrSEPosKey[2]) + Integer.valueOf(scrSEPosKey[3]);
+            	scrSEPosKey[2] = String.valueOf(anchorEnd);
 //                String[] scrSEPosKey = new String[]{currSCRSEName[0], currSCRSEName[1], currSCRSEName[3]};
                 String[] preAnchorOLSEStatus = this.preTHyperOLSEStatus.split("_");
                 String[] preAnchorSEStatus = new String[]{preAnchorOLSEStatus[2], preAnchorOLSEStatus[3], preAnchorOLSEStatus[4]};
@@ -1144,7 +1146,8 @@ public class topicPaneMouseListener implements MouseInputListener {
                 currAnchorSCRName =
                         this.topicTextPane.getSelectedText();
 //                return selectedAnchorSEName = new String[]{String.valueOf(aStartPoint), String.valueOf(aEndPoint), currAnchorSCRName, thisAnchorSA[5]};
-                return selectedAnchorSEName = new String[]{thisAnchorSA[3], thisAnchorSA[4], currAnchorSCRName, thisAnchorSA[5], thisAnchorSA[0], thisAnchorSA[1]};
+                selectedAnchorSEName = new String[]{thisAnchorSA[3], thisAnchorSA[4], currAnchorSCRName, thisAnchorSA[5], thisAnchorSA[0], thisAnchorSA[1]};
+                break;
             }
 
         }
