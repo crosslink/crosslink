@@ -4,7 +4,7 @@
 	<collection>Korean Wikipedia 2010 Collection</collection>
 	<topic file="4689264" name="Australia">
 		<outgoinglinks>
-			<anchor arel="0" aname="Commonwealth of Nations" aoffset="801" alength="23" ext_length="0">
+			<anchor arel="-1" aname="Commonwealth of Nations" aoffset="801" alength="23" ext_length="0">
 				<subanchor sarel="0" saname="Commonwealth of Nations" saoffset="801" salength="23" rank="4">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="英联邦">7435</tobep>
 				</subanchor>
@@ -29,7 +29,7 @@
 				<subanchor sarel="0" saname="South Pacific" saoffset="25156" salength="13" rank="41">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="最高電影票房收入列表">537442</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2010無綫節目巡禮">1160568</tobep>
-					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="新宿KOMA劇場">414315</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="新宿KOMA劇場">414315</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="Pacific Ocean" saoffset="25162" salength="13" rank="42">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="太平洋">3441</tobep>
