@@ -206,7 +206,7 @@ public class genResultSet {
             FileWriter fw = new FileWriter(new File(targetEvalFile));
             fw.write("<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>");
             fw.write("\n");
-            fw.write("<inex-submission participant-id=\"" + a2bSubmissionProperty.elementAt(0) + "\" run-id=\"" + a2bSubmissionProperty.elementAt(1) + "\" task=\"" + a2bSubmissionProperty.elementAt(2) + "\" format=\"FOL\">");
+            fw.write("<crosslink-submission participant-id=\"" + a2bSubmissionProperty.elementAt(0) + "\" run-id=\"" + a2bSubmissionProperty.elementAt(1) + "\" task=\"" + a2bSubmissionProperty.elementAt(2) + "\" format=\"FOL\">");
             fw.write("\n");
             fw.write("<details><machine><cpu>AMD Athlon64 3500+</cpu><speed>2.2GHz</speed><cores></cores><hyperthreads></hyperthreads><memory>2GB</memory></machine><time>1160.26 seconds</time></details>");
             fw.write("\n");
@@ -302,7 +302,7 @@ public class genResultSet {
                 fw.write("</topic>");
                 fw.write("\n");
             }
-            fw.write("</inex-submission>");
+            fw.write("</crosslink-submission>");
             fw.close();
         } catch (IOException ex) {
             Logger.getLogger(genResultSet.class.getName()).log(Level.SEVERE, null, ex);
@@ -905,7 +905,7 @@ public class genResultSet {
             FileWriter fw = new FileWriter(new File(targetEvalFile));
             fw.write("<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>");
             fw.write("\n");
-            fw.write("<inex-submission participant-id=\"" + a2bSubmissionProperty.elementAt(0) + "\" run-id=\"" + a2bSubmissionProperty.elementAt(1) + "\" task=\"" + a2bSubmissionProperty.elementAt(2) + "\" format=\"FOL\">");
+            fw.write("<crosslink-submission participant-id=\"" + a2bSubmissionProperty.elementAt(0) + "\" run-id=\"" + a2bSubmissionProperty.elementAt(1) + "\" task=\"" + a2bSubmissionProperty.elementAt(2) + "\" format=\"FOL\">");
             fw.write("\n");
             fw.write("<details><machine><cpu>AMD Athlon64 3500+</cpu><speed>2.2GHz</speed><cores></cores><hyperthreads></hyperthreads><memory>2GB</memory></machine><time>1160.26 seconds</time></details>");
             fw.write("\n");
@@ -1008,7 +1008,7 @@ public class genResultSet {
                 fw.write("</topic>");
                 fw.write("\n");
             }
-            fw.write("</inex-submission>");
+            fw.write("</crosslink-submission>");
             fw.close();
         } catch (IOException ex) {
             Logger.getLogger(genResultSet.class.getName()).log(Level.SEVERE, null, ex);
@@ -1145,7 +1145,7 @@ public class genResultSet {
             FileWriter fw = new FileWriter(new File(rsXmlFPath));
 //            fw.write("<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>");
 //            fw.write("\n");
-            fw.write("<inex-submission participant-id='999' run-id='Wikipoedia_GT_Baseline' task='LTW_F2FonA2B' format='FOL'>");
+            fw.write("<crosslink-submission participant-id='999' run-id='Wikipoedia_GT_Baseline' task='LTW_F2FonA2B' format='FOL'>");
             fw.write("\n");
             fw.write("<details>");
             fw.write("\n");
@@ -1190,7 +1190,7 @@ public class genResultSet {
                 fw.write("</topic>");
                 fw.write("\n");
             }
-            fw.write("</inex-submission>");
+            fw.write("</crosslink-submission>");
             fw.close();
         } catch (IOException ex) {
             Logger.getLogger(genResultSet.class.getName()).log(Level.SEVERE, null, ex);
@@ -1275,7 +1275,7 @@ public class genResultSet {
             FileWriter fw = new FileWriter(new File(rsXmlFPath));
 //            fw.write("<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>");
 //            fw.write("\n");
-            fw.write("<inex-submission participant-id='999' run-id='Wikipoedia_GT_Baseline' task='LTW_F2FonA2B' format='FOL'>");
+            fw.write("<crosslink-submission participant-id='999' run-id='Wikipoedia_GT_Baseline' task='LTW_F2FonA2B' format='FOL'>");
             fw.write("\n");
             fw.write("<details>");
             fw.write("\n");
@@ -1335,7 +1335,7 @@ public class genResultSet {
                 fw.write("</topic>");
                 fw.write("\n");
             }
-            fw.write("</inex-submission>");
+            fw.write("</crosslink-submission>");
             fw.close();
         } catch (IOException ex) {
             Logger.getLogger(genResultSet.class.getName()).log(Level.SEVERE, null, ex);
@@ -2013,7 +2013,7 @@ public class genResultSet {
             FileWriter fw = new FileWriter(new File(targetFilePath));
             fw.write("<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>");
             fw.write("\n");
-            fw.write("<inex-submission participant-id=\"" + xmlRunProperty.elementAt(0) + "\" run-id=\"" + xmlRunProperty.elementAt(1) + "\" task=\"" + xmlRunProperty.elementAt(2) + "\" format=\"FOL\">");
+            fw.write("<crosslink-submission participant-id=\"" + xmlRunProperty.elementAt(0) + "\" run-id=\"" + xmlRunProperty.elementAt(1) + "\" task=\"" + xmlRunProperty.elementAt(2) + "\" format=\"FOL\">");
             fw.write("\n");
             fw.write("<details><machine><cpu>AMD Athlon64 3500+</cpu><speed>2.2GHz</speed><cores></cores><hyperthreads></hyperthreads><memory>2GB</memory></machine><time>1160.26 seconds</time></details>");
             fw.write("\n");
@@ -2091,7 +2091,7 @@ public class genResultSet {
                 fw.write("</topic>");
                 fw.write("\n");
             }
-            fw.write("</inex-submission>");
+            fw.write("</crosslink-submission>");
             fw.close();
         } catch (IOException ex) {
             Logger.getLogger(genResultSet.class.getName()).log(Level.SEVERE, null, ex);
@@ -2701,7 +2701,7 @@ public class genResultSet {
             String rID = runProperty.elementAt(1);
             String task = runProperty.elementAt(2);
 
-            fw.write("<inex-submission participant-id='" + pID + "' run-id='" + rID + "' task='" + task + "' format='FOL'>");
+            fw.write("<crosslink-submission participant-id='" + pID + "' run-id='" + rID + "' task='" + task + "' format='FOL'>");
             fw.write("\n");
             fw.write("<details>");
             fw.write("\n");
@@ -2770,7 +2770,7 @@ public class genResultSet {
                 fw.write("\n");
             }
 
-            fw.write("</inex-submission>");
+            fw.write("</crosslink-submission>");
             fw.write("\n");
             fw.close();
         } catch (IOException ex) {
@@ -3085,7 +3085,7 @@ public class genResultSet {
             String task = runProperty.elementAt(2);
             String tName = runProperty.elementAt(3);
 
-            fw.write("<inex-submission participant-id='" + pID + "' run-id='" + rID + "' task='" + task + "' format='FOL'>");
+            fw.write("<crosslink-submission participant-id='" + pID + "' run-id='" + rID + "' task='" + task + "' format='FOL'>");
             fw.write("\n");
             fw.write("<details>");
             fw.write("\n");
@@ -3153,7 +3153,7 @@ public class genResultSet {
                 fw.write("\n");
             }
 
-            fw.write("</inex-submission>");
+            fw.write("</crosslink-submission>");
             fw.write("\n");
             fw.close();
         } catch (IOException ex) {
