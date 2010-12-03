@@ -51,7 +51,7 @@ import javax.xml.bind.annotation.XmlType;
     "collections",
     "topic"
 })
-@XmlRootElement(name = "inex-submission")
+@XmlRootElement(name = "crosslink-submission")
 public class InexSubmission {
 
     @XmlElement(required = true)
