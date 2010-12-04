@@ -32,12 +32,22 @@ public class Pool2ResultSet {
     // Hashtable<TopicID, Vector<new String[]{boffset, aOffset, alength, aname, aFileID}>>
     private static Hashtable<String, Vector<String[]>> topicInData = new Hashtable<String, Vector<String[]>>();
     
-    static void log(Object obj) {
+    public Pool2ResultSet() {
+
+	}
+
+	public Pool2ResultSet(String resultSetFile, String poolDir) {
+		super();
+		this.resultSetFile = resultSetFile;
+		this.poolDir = poolDir;
+	}
+
+	static void log(Object obj) {
         System.out.println(obj.toString());
     }
     
-    private static void produceA2BManualResultSet(String poolFileDir) {
-        populateTopicOutInData(poolFileDir);
+    public void produceA2BManualResultSet() {
+        populateTopicOutInData(poolDir);
         // ---------------------------------------------------------------------
         produceA2BManualResultSet(topicIDName, topicOutData, topicInData);
     }
@@ -198,7 +208,7 @@ public class Pool2ResultSet {
         }
     }
     
-    private static void produceA2BManualResultSet(Vector<String[]> myTopicIDName, Hashtable<String, Vector<String[]>> myTopicOutData, Hashtable<String, Vector<String[]>> myTopicInData) {
+    private void produceA2BManualResultSet(Vector<String[]> myTopicIDName, Hashtable<String, Vector<String[]>> myTopicOutData, Hashtable<String, Vector<String[]>> myTopicInData) {
         /**
          * <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
          * <ltwResultsetType>
@@ -211,9 +221,9 @@ public class Pool2ResultSet {
          * </ltw_Topic>
          */
         try {
-            String rDir = "C:\\JTemp\\LTWEvaluationTool\\Resources\\";
-            String rsXmlFPath = rDir + "33A2BManualResultSet_FullOutName.xml";
-            FileWriter fw = new FileWriter(new File(rsXmlFPath));
+//            String rDir = "C:\\JTemp\\LTWEvaluationTool\\Resources\\";
+//            String resultSetFile = rDir + "33A2BManualResultSet_FullOutName.xml";
+            FileWriter fw = new FileWriter(new File(resultSetFile));
             fw.write("<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>");
             fw.write("\n");
             fw.write("<ltwResultsetType>");
@@ -265,7 +275,7 @@ public class Pool2ResultSet {
             fw.write("</ltwResultsetType>");
             fw.close();
         } catch (IOException ex) {
-            Logger.getLogger(pool2ResultSet.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Pool2ResultSet.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
     
@@ -273,11 +283,14 @@ public class Pool2ResultSet {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		if (args.length < 1) {
-			System.err.println("Usage: program submissions_path");
+		if (args.length < 2) {
+			System.err.println("Usage: program pool_path resultset_file");
 			System.exit(-1);
 		}
 
-		Pool2ResultSet manager = new Pool2ResultSet();
+//		resultSetFile = args[1];
+//		poolDir = args[0];
+		Pool2ResultSet pool2ResultSet = new Pool2ResultSet(args[0], args[1]);
+		pool2ResultSet.produceA2BManualResultSet();
 	}
 }
