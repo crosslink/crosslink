@@ -290,7 +290,7 @@ public class Pool2ResultSet {
 
 //		resultSetFile = args[1];
 //		poolDir = args[0];
-		Pool2ResultSet pool2ResultSet = new Pool2ResultSet(args[0], args[1]);
+		Pool2ResultSet pool2ResultSet = new Pool2ResultSet(args[1], args[0]);
 		pool2ResultSet.produceA2BManualResultSet();
 	}
 }
