@@ -40,137 +40,146 @@ public class genResultSet {
     private static int allowedAnchorNumber = 50;
     private static int allowedInLinkNumber = 250;
     private static int option = 4;
+    private static String destDir = ".";
 
     public static void main(String[] args) {
+    	
+    	if (args.length < 1) {
+    		System.out.println("Usage: program /path/to/runs_folder [/path/to/dest]");
+    		System.exit(-1);
+    	}
+    	
+    	if (args.length >= 2)
+    		destDir = args[1];
 
-        String topicFileDir = "";
-        String topicFileFPath = "";
-        String gtDir = "";
-        String outgoingGTDir = "";
-        String incomingGTDir = "";
-        String a2bRunsRootDir = "";
+//        String topicFileDir = "";
+//        String topicFileFPath = "";
+//        String gtDir = "";
+//        String outgoingGTDir = "";
+//        String incomingGTDir = "";
+//        String a2bRunsRootDir = "";
 
         Vector<String> f2fRunDirV = new Vector<String>();
 
-        switch (option) {
-            case 0:
-                // convert XML to Text
-                topicFileDir = "C:\\PHD\\INEX_2009\\LTW2009_TOPICS_F2F\\LTW2009_F2FTOPICS\\";
-                topicFileFPath = topicFileDir + "LTW2009_F2FTOPICS.txt";
-                gtDir = "C:\\PHD\\INEX_2009\\LTW2009_TOPICS_F2F\\LTW2009_GROUND_TRUTH\\";
-                convertToF2FResultSet(topicFileFPath, gtDir);
-                break;
-            case 1:
-//                f2fRunDirV.add("C:\\PHD\\INEX_2009\\LTW2009_TOPICS_F2F\\Wikipedia_F2F\\QUT");
-//                f2fRunDirV.add("C:\\PHD\\INEX_2009\\LTW2009_TOPICS_F2F\\Wikipedia_F2F\\UKP");
+//        switch (option) {
+//            case 0:
+//                // convert XML to Text
+//                topicFileDir = "C:\\PHD\\INEX_2009\\LTW2009_TOPICS_F2F\\LTW2009_F2FTOPICS\\";
+//                topicFileFPath = topicFileDir + "LTW2009_F2FTOPICS.txt";
+//                gtDir = "C:\\PHD\\INEX_2009\\LTW2009_TOPICS_F2F\\LTW2009_GROUND_TRUTH\\";
+//                convertToF2FResultSet(topicFileFPath, gtDir);
+//                break;
+//            case 1:
+////                f2fRunDirV.add("C:\\PHD\\INEX_2009\\LTW2009_TOPICS_F2F\\Wikipedia_F2F\\QUT");
+////                f2fRunDirV.add("C:\\PHD\\INEX_2009\\LTW2009_TOPICS_F2F\\Wikipedia_F2F\\UKP");
+////                f2fRunDirV.add("C:\\PHD\\INEX_2009\\LTW2009_TOPICS_F2F\\Wikipedia_F2F\\WOLLONGONG");
+////                f2fRunDirV.add("G:\\PHD_Tools\\LTW2009_SUBMISSION\\Wikipedia_F2FonA2B\\UWaterloo");
+////                f2fRunDirV.add("C:\\PHD\\INEX_2009\\LTW2009_SUBMISSION\\Wikipedia_F2FonA2B\\QUT");
+////                f2fRunDirV.add("C:\\PHD\\INEX_2009\\LTW2009_SUBMISSION\\Wikipedia_F2F\\QUT");
+////                f2fRunDirV.add("C:\\PHD\\INEX_2009\\LTW2009_SUBMISSION\\Wikipedia_F2FonA2B\\Otago");
+////                f2fRunDirV.add("C:\\PHD\\INEX_2009\\LTW2009_SUBMISSION\\Wikipedia_F2F\\OTAGO");
+//                f2fRunDirV.add("C:\\PHD\\INEX_2009\\24TOPICS_POOL\\From_Andrew");
+//                convertF2FRunToEvalForm(f2fRunDirV);
+//                break;
+//            case 2:
+////                f2fRunDirV.add("C:\\PHD\\INEX_2009\\LTW2009_TOPICS_F2F\\Wikipedia_F2F\\QUT");
+////                f2fRunDirV.add("C:\\PHD\\INEX_2009\\LTW2009_TOPICS_F2F\\Wikipedia_F2F\\UKP");
 //                f2fRunDirV.add("C:\\PHD\\INEX_2009\\LTW2009_TOPICS_F2F\\Wikipedia_F2F\\WOLLONGONG");
-//                f2fRunDirV.add("G:\\PHD_Tools\\LTW2009_SUBMISSION\\Wikipedia_F2FonA2B\\UWaterloo");
-//                f2fRunDirV.add("C:\\PHD\\INEX_2009\\LTW2009_SUBMISSION\\Wikipedia_F2FonA2B\\QUT");
-//                f2fRunDirV.add("C:\\PHD\\INEX_2009\\LTW2009_SUBMISSION\\Wikipedia_F2F\\QUT");
-//                f2fRunDirV.add("C:\\PHD\\INEX_2009\\LTW2009_SUBMISSION\\Wikipedia_F2FonA2B\\Otago");
-//                f2fRunDirV.add("C:\\PHD\\INEX_2009\\LTW2009_SUBMISSION\\Wikipedia_F2F\\OTAGO");
-                f2fRunDirV.add("C:\\PHD\\INEX_2009\\24TOPICS_POOL\\From_Andrew");
-                convertF2FRunToEvalForm(f2fRunDirV);
-                break;
-            case 2:
+//                reformateRuns(f2fRunDirV);
+//                break;
+//            case 3:
 //                f2fRunDirV.add("C:\\PHD\\INEX_2009\\LTW2009_TOPICS_F2F\\Wikipedia_F2F\\QUT");
-//                f2fRunDirV.add("C:\\PHD\\INEX_2009\\LTW2009_TOPICS_F2F\\Wikipedia_F2F\\UKP");
-                f2fRunDirV.add("C:\\PHD\\INEX_2009\\LTW2009_TOPICS_F2F\\Wikipedia_F2F\\WOLLONGONG");
-                reformateRuns(f2fRunDirV);
-                break;
-            case 3:
-                f2fRunDirV.add("C:\\PHD\\INEX_2009\\LTW2009_TOPICS_F2F\\Wikipedia_F2F\\QUT");
-//                f2fRunDirV.add("C:\\PHD\\INEX_2009\\LTW2009_TOPICS_F2F\\Wikipedia_F2F\\UKP");
-//                f2fRunDirV.add("C:\\PHD\\INEX_2009\\LTW2009_TOPICS_F2F\\Wikipedia_F2F\\WOLLONGONG");
-                parseF2FRunToEvalForm(f2fRunDirV);
-                break;
-            case 4:
+////                f2fRunDirV.add("C:\\PHD\\INEX_2009\\LTW2009_TOPICS_F2F\\Wikipedia_F2F\\UKP");
+////                f2fRunDirV.add("C:\\PHD\\INEX_2009\\LTW2009_TOPICS_F2F\\Wikipedia_F2F\\WOLLONGONG");
+//                parseF2FRunToEvalForm(f2fRunDirV);
+//                break;
+//            case 4:
 //                f2fRunDirV.add("C:\\PHD\\INEX_2009\\LTW2009_TOPICS_F2F\\Wikipedia_F2F\\QUT");
 //                f2fRunDirV.add("C:\\PHD\\INEX_2009\\LTW2009_TOPICS_F2F\\Wikipedia_F2F\\UKP");
 //                f2fRunDirV.add("C:\\PHD\\INEX_2009\\LTW2009_TOPICS_F2F\\Wikipedia_F2F\\WOLLONGONG");
 //                f2fRunDirV.add("C:\\PHD\\INEX_2009\\LTW2009_SUBMISSION\\Wikipedia_F2F\\From_Johannes");
                 //f2fRunDirV.add("C:\\PHD\\INEX_2009\\LTW2009_SUBMISSION\\Wikipedia_F2FonA2B\\FROM_Eric");
-                f2fRunDirV.add("/data/corpus/inex/2009/ltw/unofficial_runs/");
+                f2fRunDirV.add(args[0]);
                 readToParseF2FToEvalForm(f2fRunDirV);
-                break;
-            case 5:
-                // convert XML to Text
-                topicFileDir = "C:\\PHD\\INEX_2009\\LTW2009_TOPICS_F2F\\LTW2009_F2FTOPICS\\";
-                topicFileFPath = topicFileDir + "LTW2009_F2FTOPICS.txt";
-                outgoingGTDir = "C:\\PHD\\INEX_2009\\LTW2009_TOPICS_F2F\\LTW2009_GROUND_TRUTH\\LTW2009_TOPICS_F2FGT\\LTW2009_GROUND_TRUTH_OUTGOING\\";
-                incomingGTDir = "C:\\PHD\\INEX_2009\\LTW2009_TOPICS_F2F\\LTW2009_GROUND_TRUTH\\LTW2009_TOPICS_F2FGT\\LTW2009_GROUND_TRUTH_INCOMING\\";
-                produceF2FGTResultSet(topicFileFPath, outgoingGTDir, incomingGTDir);
-                break;
-            case 6:
-                // convert XML to Text
-                topicFileDir = "C:\\PHD\\INEX_2009\\LTW2009_TOPICS_A2B\\LTW2009_Topics\\XML\\";
-                outgoingGTDir = "C:\\PHD\\INEX_2009\\LTW2009_TOPICS_A2B\\LTW2009_TOPICS_A2BGT\\A2B_OUTGOING_BACKUP\\";
-                incomingGTDir = "C:\\PHD\\INEX_2009\\LTW2009_TOPICS_A2B\\LTW2009_TOPICS_A2BGT\\A2B_INCOMING_BACKUP\\";
-                produceA2BGTResultSet(topicFileDir, outgoingGTDir, incomingGTDir);
-                break;
-            case 7:
-                // convert A2B Runs to Evaluation XML Form
-                a2bRunsRootDir = "C:\\PHD\\INEX_2009\\LTW2009_SUBMISSION\\Wikipedia_A2B\\";
-                Vector<String> a2bRunsDirVS = new Vector<String>();
-                a2bRunsDirVS.add(a2bRunsRootDir + "OTAGO");
-                a2bRunsDirVS.add(a2bRunsRootDir + "QUT");
-                a2bRunsDirVS.add(a2bRunsRootDir + "UAMS");
-                a2bRunsDirVS.add(a2bRunsRootDir + "UWaterloo");
-                convertA2BRunToEvalXML(a2bRunsDirVS);
-                break;
-            case 8:
-                // convert XML to Text
-                topicFileDir = "C:\\Users\\Darren\\Desktop\\INEX_2009\\LTW2009_TOPICS\\LTW2009_Topics\\XML\\";
-                outgoingGTDir = "C:\\Users\\Darren\\Desktop\\INEX_2009\\LTW2009_TOPICS_A2B\\POOL_GROUNDTRUTH\\A2B_OUTGOING_BACKUP\\";
-                incomingGTDir = "";
-//                produceA2FGTResultSet(topicFileDir, outgoingGTDir, incomingGTDir);
-                break;
-            case 9:
-                // inspect submission against Wikipedia GR
-                Vector<String> runsDirV = new Vector<String>();
-                runsDirV.add("C:\\PHD\\INEX_2009\\LTW2009_SUBMISSION\\Wikipedia_A2B\\OTAGO");
-                runsDirV.add("C:\\PHD\\INEX_2009\\LTW2009_SUBMISSION\\Wikipedia_A2B\\QUT");
-                runsDirV.add("C:\\PHD\\INEX_2009\\LTW2009_SUBMISSION\\Wikipedia_A2B\\UAMS");
-                runsDirV.add("C:\\PHD\\INEX_2009\\LTW2009_SUBMISSION\\Wikipedia_A2B\\UWaterloo");
-                inspectA2BRunAgainstGT(runsDirV);
-                break;
-            case 10:
-                // convert XML to Text
-                topicFileDir = "C:\\PHD\\INEX_2009\\LTW2009_TOPICS_F2F\\LTW2009_F2FTOPICS\\";
-                topicFileFPath = topicFileDir + "LTW2009_F2FTOPICS.txt";
-                outgoingGTDir = "C:\\PHD\\INEX_2009\\LTW2009_TOPICS_F2F\\LTW2009_GROUND_TRUTH\\LTW2009_TOPICS_F2FGT\\LTW2009_GROUND_TRUTH_OUTGOING\\";
-                incomingGTDir = "C:\\PHD\\INEX_2009\\LTW2009_TOPICS_F2F\\LTW2009_GROUND_TRUTH\\LTW2009_TOPICS_F2FGT\\LTW2009_GROUND_TRUTH_INCOMING\\";
-                produceF2FGTBaseline(topicFileFPath, outgoingGTDir, incomingGTDir);
-                break;
-            case 11:
-                // convert XML to Text
-                topicFileDir = "C:\\PHD\\INEX_2009\\LTW2009_TOPICS_A2B\\LTW2009_Topics\\XML\\";
-                outgoingGTDir = "C:\\PHD\\INEX_2009\\LTW2009_TOPICS_A2B\\LTW2009_TOPICS_A2BGT\\A2B_OUTGOING_BACKUP\\";
-                incomingGTDir = "C:\\PHD\\INEX_2009\\LTW2009_TOPICS_A2B\\LTW2009_TOPICS_A2BGT\\A2B_INCOMING_BACKUP\\";
-                produceA2BGTBaseline(topicFileDir, outgoingGTDir, incomingGTDir);
-                break;
-            case 12:
-                // convert A2B Runs to Evaluation XML Form
-                a2bRunsRootDir = "C:\\PHD\\INEX_2009\\LTW2009_SUBMISSION\\Wikipedia_A2B\\";
-                Vector<String> a2bSubmissionDirVS = new Vector<String>();
-//                a2bSubmissionDirVS.add(a2bRunsRootDir + "OTAGO");
-//                a2bSubmissionDirVS.add(a2bRunsRootDir + "QUT");
-                a2bSubmissionDirVS.add(a2bRunsRootDir + "UAMS");
-//                a2bSubmissionDirVS.add(a2bRunsRootDir + "UWaterloo");
-                boolean onlyLimitNu = true;
-                // only 50 outgoing and 250 incoming
-                parseA2BRunToEvalXML(a2bSubmissionDirVS, onlyLimitNu);
-                break;
-            case 13:
-                String poolFileDir = "G:\\PHD_Tools\\LTW2009_Assessment_Results\\0000_POOL";
-                produceA2BManualResultSet(poolFileDir);
-                break;
-            case 14:
-                produceA2BManualBaseline();
-                break;
-            default:
-                log("This is the default option...");
-        }
+//                break;
+//            case 5:
+//                // convert XML to Text
+//                topicFileDir = "C:\\PHD\\INEX_2009\\LTW2009_TOPICS_F2F\\LTW2009_F2FTOPICS\\";
+//                topicFileFPath = topicFileDir + "LTW2009_F2FTOPICS.txt";
+//                outgoingGTDir = "C:\\PHD\\INEX_2009\\LTW2009_TOPICS_F2F\\LTW2009_GROUND_TRUTH\\LTW2009_TOPICS_F2FGT\\LTW2009_GROUND_TRUTH_OUTGOING\\";
+//                incomingGTDir = "C:\\PHD\\INEX_2009\\LTW2009_TOPICS_F2F\\LTW2009_GROUND_TRUTH\\LTW2009_TOPICS_F2FGT\\LTW2009_GROUND_TRUTH_INCOMING\\";
+//                produceF2FGTResultSet(topicFileFPath, outgoingGTDir, incomingGTDir);
+//                break;
+//            case 6:
+//                // convert XML to Text
+//                topicFileDir = "C:\\PHD\\INEX_2009\\LTW2009_TOPICS_A2B\\LTW2009_Topics\\XML\\";
+//                outgoingGTDir = "C:\\PHD\\INEX_2009\\LTW2009_TOPICS_A2B\\LTW2009_TOPICS_A2BGT\\A2B_OUTGOING_BACKUP\\";
+//                incomingGTDir = "C:\\PHD\\INEX_2009\\LTW2009_TOPICS_A2B\\LTW2009_TOPICS_A2BGT\\A2B_INCOMING_BACKUP\\";
+//                produceA2BGTResultSet(topicFileDir, outgoingGTDir, incomingGTDir);
+//                break;
+//            case 7:
+//                // convert A2B Runs to Evaluation XML Form
+//                a2bRunsRootDir = "C:\\PHD\\INEX_2009\\LTW2009_SUBMISSION\\Wikipedia_A2B\\";
+//                Vector<String> a2bRunsDirVS = new Vector<String>();
+//                a2bRunsDirVS.add(a2bRunsRootDir + "OTAGO");
+//                a2bRunsDirVS.add(a2bRunsRootDir + "QUT");
+//                a2bRunsDirVS.add(a2bRunsRootDir + "UAMS");
+//                a2bRunsDirVS.add(a2bRunsRootDir + "UWaterloo");
+//                convertA2BRunToEvalXML(a2bRunsDirVS);
+//                break;
+//            case 8:
+//                // convert XML to Text
+//                topicFileDir = "C:\\Users\\Darren\\Desktop\\INEX_2009\\LTW2009_TOPICS\\LTW2009_Topics\\XML\\";
+//                outgoingGTDir = "C:\\Users\\Darren\\Desktop\\INEX_2009\\LTW2009_TOPICS_A2B\\POOL_GROUNDTRUTH\\A2B_OUTGOING_BACKUP\\";
+//                incomingGTDir = "";
+////                produceA2FGTResultSet(topicFileDir, outgoingGTDir, incomingGTDir);
+//                break;
+//            case 9:
+//                // inspect submission against Wikipedia GR
+//                Vector<String> runsDirV = new Vector<String>();
+//                runsDirV.add("C:\\PHD\\INEX_2009\\LTW2009_SUBMISSION\\Wikipedia_A2B\\OTAGO");
+//                runsDirV.add("C:\\PHD\\INEX_2009\\LTW2009_SUBMISSION\\Wikipedia_A2B\\QUT");
+//                runsDirV.add("C:\\PHD\\INEX_2009\\LTW2009_SUBMISSION\\Wikipedia_A2B\\UAMS");
+//                runsDirV.add("C:\\PHD\\INEX_2009\\LTW2009_SUBMISSION\\Wikipedia_A2B\\UWaterloo");
+//                inspectA2BRunAgainstGT(runsDirV);
+//                break;
+//            case 10:
+//                // convert XML to Text
+//                topicFileDir = "C:\\PHD\\INEX_2009\\LTW2009_TOPICS_F2F\\LTW2009_F2FTOPICS\\";
+//                topicFileFPath = topicFileDir + "LTW2009_F2FTOPICS.txt";
+//                outgoingGTDir = "C:\\PHD\\INEX_2009\\LTW2009_TOPICS_F2F\\LTW2009_GROUND_TRUTH\\LTW2009_TOPICS_F2FGT\\LTW2009_GROUND_TRUTH_OUTGOING\\";
+//                incomingGTDir = "C:\\PHD\\INEX_2009\\LTW2009_TOPICS_F2F\\LTW2009_GROUND_TRUTH\\LTW2009_TOPICS_F2FGT\\LTW2009_GROUND_TRUTH_INCOMING\\";
+//                produceF2FGTBaseline(topicFileFPath, outgoingGTDir, incomingGTDir);
+//                break;
+//            case 11:
+//                // convert XML to Text
+//                topicFileDir = "C:\\PHD\\INEX_2009\\LTW2009_TOPICS_A2B\\LTW2009_Topics\\XML\\";
+//                outgoingGTDir = "C:\\PHD\\INEX_2009\\LTW2009_TOPICS_A2B\\LTW2009_TOPICS_A2BGT\\A2B_OUTGOING_BACKUP\\";
+//                incomingGTDir = "C:\\PHD\\INEX_2009\\LTW2009_TOPICS_A2B\\LTW2009_TOPICS_A2BGT\\A2B_INCOMING_BACKUP\\";
+//                produceA2BGTBaseline(topicFileDir, outgoingGTDir, incomingGTDir);
+//                break;
+//            case 12:
+//                // convert A2B Runs to Evaluation XML Form
+//                a2bRunsRootDir = "C:\\PHD\\INEX_2009\\LTW2009_SUBMISSION\\Wikipedia_A2B\\";
+//                Vector<String> a2bSubmissionDirVS = new Vector<String>();
+////                a2bSubmissionDirVS.add(a2bRunsRootDir + "OTAGO");
+////                a2bSubmissionDirVS.add(a2bRunsRootDir + "QUT");
+//                a2bSubmissionDirVS.add(a2bRunsRootDir + "UAMS");
+////                a2bSubmissionDirVS.add(a2bRunsRootDir + "UWaterloo");
+//                boolean onlyLimitNu = true;
+//                // only 50 outgoing and 250 incoming
+//                parseA2BRunToEvalXML(a2bSubmissionDirVS, onlyLimitNu);
+//                break;
+//            case 13:
+//                String poolFileDir = "G:\\PHD_Tools\\LTW2009_Assessment_Results\\0000_POOL";
+//                produceA2BManualResultSet(poolFileDir);
+//                break;
+//            case 14:
+//                produceA2BManualBaseline();
+//                break;
+//            default:
+//                log("This is the default option...");
+//        }
     }
     // =========================================================================
 
@@ -2694,7 +2703,7 @@ public class genResultSet {
 //            String rDir = "C:\\PHD\\INEX_2009\\LTW2009_TOPICS_F2F\\Wikipedia_F2F\\RevisedSubmission\\";
 //            String rDir = "C:\\PHD\\INEX_2009\\LTW2009_SUBMISSION\\Wikipedia_F2F\\RevisedSubmission\\";
             //String rDir = "C:\\PHD\\INEX_2009\\LTW2009_SUBMISSION\\Wikipedia_F2FonA2B\\FROM_Eric\\";
-        	String rDir = "/data/corpus/inex/2009/ltw/unofficial_runs_revised/";
+        	String rDir = destDir + File.separator; //"/data/corpus/inex/2009/ltw/unofficial_runs_revised/";
             String rsXmlFPath = rDir + thisRunName + "_WithoutName.xml";
             FileWriter fw = new FileWriter(new File(rsXmlFPath));
             String pID = runProperty.elementAt(0);
