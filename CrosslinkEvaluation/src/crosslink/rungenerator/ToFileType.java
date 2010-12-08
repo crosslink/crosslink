@@ -10,17 +10,19 @@ package crosslink.rungenerator;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.XmlValue;
 
 
 /**
- * <p>Java class for linktoType complex type.
+ * <p>Java class for tofileType complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="linktoType">
+ * &lt;complexType name="tofileType">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
@@ -37,21 +39,18 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "linktoType", propOrder = {
-    "bep_offset",
-    "lang",
-    "title",
-    "file"
+@XmlType(name = "tofileType", propOrder = {
+//	"tofile"
 })
-public class LinktoType {
+public class ToFileType {
 
-    @XmlElement(required = true)
+    @XmlValue
     protected String file;
-    @XmlElement(required = true)
+    @XmlAttribute(name = "bep_offset", required = true)
     protected String bep_offset;
-    @XmlElement(required = true)
+    @XmlAttribute(required = true)
     protected String lang;
-    @XmlElement(required = true)
+    @XmlAttribute(required = true)
     protected String title;
 
     /**
@@ -67,7 +66,7 @@ public class LinktoType {
     }
 
     /**
-     * Sets the value of the file property.
+     * Sets the value of the tofile property.
      * 
      * @param value
      *     allowed object is
@@ -78,29 +77,43 @@ public class LinktoType {
         this.file = value;
     }
 
-    /**
-     * Gets the value of the bep_offset property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getBepOffset() {
-        return bep_offset;
-    }
+//    /**
+//     * Gets the value of the bep_offset property.
+//     * 
+//     * @return
+//     *     possible object is
+//     *     {@link String }
+//     *     
+//     */
+//    public String getBepOffset() {
+//        return bep_offset;
+//    }
+//
+//    /**
+//     * Sets the value of the bep_offset property.
+//     * 
+//     * @param value
+//     *     allowed object is
+//     *     {@link String }
+//     *     
+//     */
+//    public void setBepOffset(String value) {
+//        this.bep_offset = value;
+//    }
 
-    /**
-     * Sets the value of the bep_offset property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setBepOffset(String value) {
-        this.bep_offset = value;
-    }
+	/**
+	 * @return the bep_offset
+	 */
+	public String getBep_offset() {
+		return bep_offset;
+	}
+
+	/**
+	 * @param bep_offset the bep_offset to set
+	 */
+	public void setBep_offset(String bep_offset) {
+		this.bep_offset = bep_offset;
+	}
 
 	/**
 	 * @return the lang

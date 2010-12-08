@@ -50,25 +50,22 @@
     <xsd:element name="outgoing" type="outgoingType"/>
     <xsd:complexType name="outgoingType">
         <xsd:sequence>
-            <xsd:element ref="anchor"/>
-            <xsd:element ref="tofile"/>
+            <xsd:element ref="anchor" minOccurs="0" maxOccurs="unbounded"/>
         </xsd:sequence>
     </xsd:complexType>
     <xsd:element name="anchor" type="anchorType"/>
     <xsd:complexType name="anchorType">
         <xsd:sequence>
-            <xsd:element name="file" type="xsd:string"/>
-            <xsd:element name="offset" type="xsd:string"/>
-            <xsd:element name="length" type="xsd:string"/>
+            <xsd:element ref="tofile" minOccurs="0" maxOccurs="unbounded"/>
         </xsd:sequence>
+        <xsd:attribute name="offset" type="xsd:string" use="required"/>
+        <xsd:attribute name="length" type="xsd:string" use="required"/>
+        <xsd:attribute name="name" type="xsd:string" use="required"/>
     </xsd:complexType>
-    <xsd:element name="tofile" type="linktoType"/>
-    <xsd:complexType name="linktoType">
-        <xsd:sequence>
-            <xsd:element name="bep" type="xsd:string"/>
-            <xsd:element name="lang" type="xsd:string"/>
-            <xsd:element name="title" type="xsd:string"/>
-            <xsd:element name="file" type="xsd:string"/>
-        </xsd:sequence>
+    <xsd:element name="tofile" type="tofileType"/>
+    <xsd:complexType name="tofileType" mixed="true">
+        <xsd:attribute name="bep_offset" type="xsd:string"/>
+        <xsd:attribute name="lang" type="xsd:string"/>
+        <xsd:attribute name="title" type="xsd:string"/>        
     </xsd:complexType>
 </xsd:schema>

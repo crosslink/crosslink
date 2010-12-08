@@ -410,7 +410,7 @@ public final class plotsCalculation {
                         String toFile = "";
                         String toFileID = "";
                         String toBep = "";
-                        List<crosslink.rungenerator.LinktoType> linkTo = pis.getTopic().get(i).getOutgoing().getLink().get(j).getLinkto();
+                        List<crosslink.rungenerator.ToFileType> linkTo = pis.getTopic().get(i).getOutgoing().getLink().get(j).getLinkto();
                         for (int k = 0; k < linkTo.size(); k++) {
                             toFile = linkTo.get(k).getFile().toString().trim();
                             if (!toFile.equals("")) {

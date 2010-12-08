@@ -35,12 +35,12 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "linkingType", propOrder = {
-    "outgoing"
+@XmlType(name = "outgoingType", propOrder = {
+    "anchor"
 })
 public class OutgoingType {
 
-    protected List<LinkType> outgoing;
+    protected List<AnchorType> anchor;
 
     /**
      * Gets the value of the outgoing property.
@@ -60,15 +60,15 @@ public class OutgoingType {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@outgoing LinkType }
+     * {@outgoing AnchorType }
      * 
      * 
      */
-    public List<LinkType> getLink() {
-        if (outgoing == null) {
-            outgoing = new ArrayList<LinkType>();
+    public List<AnchorType> getAnchor() {
+        if (anchor == null) {
+            anchor = new ArrayList<AnchorType>();
         }
-        return this.outgoing;
+        return this.anchor;
     }
 
 }
