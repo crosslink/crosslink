@@ -19,7 +19,7 @@ is divided into following sections:
   - cleanup
 
         -->
-<project xmlns:j2seproject1="http://www.netbeans.org/ns/j2se-project/1" xmlns:j2seproject3="http://www.netbeans.org/ns/j2se-project/3" xmlns:jaxrpc="http://www.netbeans.org/ns/j2se-project/jax-rpc" basedir=".." default="default" name="LTWEvaluationTool-impl">
+<project xmlns:j2seproject1="http://www.netbeans.org/ns/j2se-project/1" xmlns:j2seproject3="http://www.netbeans.org/ns/j2se-project/3" xmlns:jaxrpc="http://www.netbeans.org/ns/j2se-project/jax-rpc" basedir=".." default="default" name="CrosslinkEvaluation-impl">
     <fail message="Please build using Ant 1.7.1 or higher.">
         <condition>
             <not>
@@ -606,7 +606,7 @@ is divided into following sections:
     </target>
     <target depends="init,compile-test,-pre-test-run" if="have.tests" name="-do-test-run">
         <j2seproject3:junit testincludes="**/*Test.java"/>
-    </target> 
+    </target>
     <target depends="init,compile-test,-pre-test-run,-do-test-run" if="have.tests" name="-post-test-run">
         <fail if="tests.failed" unless="ignore.failing.tests">Some tests failed; see details above.</fail>
     </target>
