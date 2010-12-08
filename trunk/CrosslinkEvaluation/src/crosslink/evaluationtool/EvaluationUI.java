@@ -28,6 +28,7 @@ import crosslink.measures.metricsCalculation;
 import crosslink.measures.plotsCalculation;
 import crosslink.resultsetGenerator.LtwResultsetType;
 import crosslink.rungenerator.InexSubmission;
+import crosslink.rungenerator.ToFileType;
 import crosslink.rungenerator.TopicType;
 import crosslink.util.JChartDialog;
 import crosslink.util.ioFileFilter;
@@ -1000,28 +1001,29 @@ public class EvaluationUI extends JFrame {
                         result[7] = topicLinks[1];
                         // -----------------------------------------------------
 //                        result[3] = topic.getName();
-                        if (topic.getOutgoing().getLink().isEmpty()) {
+                        if (topic.getOutgoing().getAnchor().isEmpty()) {
                             result[4] = "0";
                         } else {
-                            if (topic.getOutgoing().getLink().get(0).getLinkto().isEmpty()) {
+                            if (topic.getOutgoing().getAnchor().get(0).getTofile().isEmpty()) {
                                 result[4] = "0";
                             } else {
                                 // ============================
                                 int outLinkCount = 0;
                                 int outNonduplicateCount = 0;
                                 List outItemsList = new ArrayList();
-                                for (int j = 0; j < topic.getOutgoing().getLink().size(); j++) {
-                                    List<crosslink.rungenerator.LinktoType> linkTo = topic.getOutgoing().getLink().get(j).getLinkto();
+                                for (int j = 0; j < topic.getOutgoing().getAnchor().size(); j++) {
+                                    List<crosslink.rungenerator.ToFileType> linkTo = topic.getOutgoing().getAnchor().get(j).getTofile();
                                     for (int k = 0; k < linkTo.size(); k++) {
                                         outLinkCount++;
-                                        int endop = linkTo.get(k).getFile().toLowerCase().trim().indexOf(".xml");
-                                        if (endop != -1) {
-                                            String outFile = linkTo.get(k).getFile().toString();
+                                        ToFileType tofile = linkTo.get(k);
+//                                        int endop = tofile.toString().toLowerCase().trim().indexOf(".xml");
+//                                        if (endop != -1) {
+                                            String outFile = tofile.toString(); //.toString();
                                             if (!outItemsList.contains(outFile)) {
                                                 outItemsList.add(outFile);
                                                 outNonduplicateCount++;
                                             }
-                                        }
+//                                        }
                                     }
                                 }
                                 // ============================

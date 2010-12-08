@@ -45,7 +45,7 @@ public class LinkType {
 
     @XmlElement(required = true)
     protected AnchorType anchor;
-    protected List<LinktoType> tofile;
+    protected List<ToFileType> tofile;
 
     /**
      * Gets the value of the anchor property.
@@ -89,13 +89,13 @@ public class LinkType {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link LinktoType }
+     * {@link ToFileType }
      * 
      * 
      */
-    public List<LinktoType> getLinkto() {
+    public List<ToFileType> getLinkto() {
         if (tofile == null) {
-            tofile = new ArrayList<LinktoType>();
+            tofile = new ArrayList<ToFileType>();
         }
         return this.tofile;
     }

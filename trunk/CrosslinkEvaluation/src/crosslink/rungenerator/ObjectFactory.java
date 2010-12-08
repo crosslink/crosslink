@@ -65,11 +65,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link LinktoType }
+     * Create an instance of {@link ToFileType }
      * 
      */
-    public LinktoType createLinktoType() {
-        return new LinktoType();
+    public ToFileType createLinktoType() {
+        return new ToFileType();
     }
 
     /**
@@ -157,12 +157,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link LinktoType }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link ToFileType }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "", name = "linkto")
-    public JAXBElement<LinktoType> createLinkto(LinktoType value) {
-        return new JAXBElement<LinktoType>(_Linkto_QNAME, LinktoType.class, null, value);
+    public JAXBElement<ToFileType> createLinkto(ToFileType value) {
+        return new JAXBElement<ToFileType>(_Linkto_QNAME, ToFileType.class, null, value);
     }
 
     /**
