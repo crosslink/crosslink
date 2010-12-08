@@ -754,36 +754,45 @@ public class EvaluationUI extends JFrame {
             for (int i = 0; i < result.size(); i++) {
                 objData[i] = result.get(i);
             }
-            Hashtable compareHash = new Hashtable();
-
-            for (int j = 1; j < objData.length; j = j + 2) {
-                ArrayList<Object[]> threeColl = new ArrayList<Object[]>();
-//                threeColl.add(objData[j - 2]);
-                threeColl.add(objData[j - 1]);
-                threeColl.add(objData[j]);
-                compareHash.put(objData[j][2], threeColl);
+            
+            Object[][] evaData = null;
+            if (result.size() > 1) {
+	            Hashtable compareHash = new Hashtable();
+	
+	            for (int j = 1; j < objData.length; j = j + 2) {
+	                ArrayList<Object[]> threeColl = new ArrayList<Object[]>();
+	//                threeColl.add(objData[j - 2]);
+	                threeColl.add(objData[j - 1]);
+	                threeColl.add(objData[j]);
+	                compareHash.put(objData[j][2], threeColl);
+	            }
+	            Vector v = new Vector(compareHash.keySet());
+	            Collections.sort(v, Collections.reverseOrder());
+	            
+	            evaData = new Object[result.size()][];
+	            int sortIndex = 0;
+	            int colorCount = 0;
+	            for (Enumeration e = v.elements(); e.hasMoreElements();) {
+	                Object key = (Object) e.nextElement();
+	                ArrayList<Object[]> sortColl = (ArrayList<Object[]>) compareHash.get(key);
+	                evaData[sortIndex] = sortColl.get(0);
+	                evaData[sortIndex + 1] = sortColl.get(1);
+	//                evaData[sortIndex + 2] = sortColl.get(2);
+	                if (colorCount < 5) {
+	                    evaData[sortIndex][10] = spColor[colorCount][0];
+	                    evaData[sortIndex + 1][10] = spColor[colorCount][1];
+	//                    evaData[sortIndex + 2][10] = spColor[colorCount][2];
+	                    evaData[sortIndex][11] = Boolean.TRUE;
+	                    evaData[sortIndex + 1][11] = Boolean.TRUE;
+	//                    evaData[sortIndex + 2][11] = Boolean.TRUE;
+	                }
+	                colorCount++;
+	                sortIndex = sortIndex + 2;
+	            }
             }
-            Vector v = new Vector(compareHash.keySet());
-            Collections.sort(v, Collections.reverseOrder());
-            Object[][] evaData = new Object[result.size()][];
-            int sortIndex = 0;
-            int colorCount = 0;
-            for (Enumeration e = v.elements(); e.hasMoreElements();) {
-                Object key = (Object) e.nextElement();
-                ArrayList<Object[]> sortColl = (ArrayList<Object[]>) compareHash.get(key);
-                evaData[sortIndex] = sortColl.get(0);
-                evaData[sortIndex + 1] = sortColl.get(1);
-//                evaData[sortIndex + 2] = sortColl.get(2);
-                if (colorCount < 5) {
-                    evaData[sortIndex][10] = spColor[colorCount][0];
-                    evaData[sortIndex + 1][10] = spColor[colorCount][1];
-//                    evaData[sortIndex + 2][10] = spColor[colorCount][2];
-                    evaData[sortIndex][11] = Boolean.TRUE;
-                    evaData[sortIndex + 1][11] = Boolean.TRUE;
-//                    evaData[sortIndex + 2][11] = Boolean.TRUE;
-                }
-                colorCount++;
-                sortIndex = sortIndex + 2;
+            else {
+            	evaData = objData;
+            	evaData[0][10] = spColor[0][0];
             }
             // END of sort the result
             // =================================================================
