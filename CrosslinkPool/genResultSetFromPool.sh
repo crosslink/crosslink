@@ -26,4 +26,4 @@ if [ -n "$1" ]
 then
   arguments=$1
 fi
-java -cp $cp:./bin crosslink.PoolManager ${arguments}
+java -cp $cp:./bin crosslink.Pool2ResultSet ${arguments}

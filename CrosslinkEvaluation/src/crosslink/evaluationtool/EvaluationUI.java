@@ -47,8 +47,8 @@ public class EvaluationUI extends JFrame {
 //    private String[] resultSetArray = {"6600F2FWikiResultSet.xml", "50A2BWikiResultSet.xml", "50A2BManualResultSet.xml"};
     // For 2009
 //    private String[] resultSetArray = {"5000F2FWikiResultSet.xml", "33A2BWikiResultSet.xml", "33A2BManualResultSet.xml"};
-    private String[] resultSetArray = {"33A2BWikiResultSet.xml", "33A2BWikiResultSet.xml", "33A2BManualResultSet.xml"};
-    private String resultFilePath = "50A2BManualResultSet.xml";
+    private String[] resultSetArray = {"A2BWikiResultSet.xml", "A2BWikiResultSet.xml", "A2BManualResultSet.xml"};
+    private String resultFilePath = "A2BManualResultSet.xml";
     private String schemaFilePath = "LTW06Schema.xsd";
 
     private static void log(Object aObject) {

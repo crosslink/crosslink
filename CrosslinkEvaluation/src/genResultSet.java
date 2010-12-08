@@ -2704,7 +2704,7 @@ public class genResultSet {
 //            String rDir = "C:\\PHD\\INEX_2009\\LTW2009_SUBMISSION\\Wikipedia_F2F\\RevisedSubmission\\";
             //String rDir = "C:\\PHD\\INEX_2009\\LTW2009_SUBMISSION\\Wikipedia_F2FonA2B\\FROM_Eric\\";
         	String rDir = destDir + File.separator; //"/data/corpus/inex/2009/ltw/unofficial_runs_revised/";
-            String rsXmlFPath = rDir + thisRunName + "_WithoutName.xml";
+            String rsXmlFPath = rDir + thisRunName + "_4EVAL.xml";
             FileWriter fw = new FileWriter(new File(rsXmlFPath));
             String pID = runProperty.elementAt(0);
             String rID = runProperty.elementAt(1);
