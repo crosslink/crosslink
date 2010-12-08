@@ -401,16 +401,16 @@ public final class plotsCalculation {
                 int endP = pis.getTopic().get(i).getFile().toLowerCase().indexOf(".xml");
                 String topicID = pis.getTopic().get(i).getFile().substring(0, endP);
 
-                String[] outLinks = new String[pis.getTopic().get(i).getOutgoing().getLink().size()];
-                if (!pis.getTopic().get(i).getOutgoing().getLink().isEmpty()) {
+                String[] outLinks = new String[pis.getTopic().get(i).getOutgoing().getAnchor().size()];
+                if (!pis.getTopic().get(i).getOutgoing().getAnchor().isEmpty()) {
 
                     Vector outF2FV = new Vector();
-                    for (int j = 0; j < pis.getTopic().get(i).getOutgoing().getLink().size(); j++) {
+                    for (int j = 0; j < pis.getTopic().get(i).getOutgoing().getAnchor().size(); j++) {
 
                         String toFile = "";
                         String toFileID = "";
                         String toBep = "";
-                        List<crosslink.rungenerator.ToFileType> linkTo = pis.getTopic().get(i).getOutgoing().getLink().get(j).getLinkto();
+                        List<crosslink.rungenerator.ToFileType> linkTo = pis.getTopic().get(i).getOutgoing().getAnchor().get(j).getTofile();
                         for (int k = 0; k < linkTo.size(); k++) {
                             toFile = linkTo.get(k).getFile().toString().trim();
                             if (!toFile.equals("")) {
@@ -444,26 +444,26 @@ public final class plotsCalculation {
                 }
                 runTable.put(topicID + "_" + outgoingTag, outLinks);
 
-                String[] inLinks = new String[pis.getTopic().get(i).getIncoming().getLink().size()];
-                if (!pis.getTopic().get(i).getIncoming().getLink().isEmpty()) {
-                    for (int k = 0; k < pis.getTopic().get(i).getIncoming().getLink().size(); k++) {
-                        String fromFile = pis.getTopic().get(i).getIncoming().getLink().get(k).getAnchor().getFile().toString().trim();
-                        if (!fromFile.equals("")) {
-                            int endip = fromFile.toLowerCase().indexOf(".xml");
-                            if (endip != -1) {
-                                inLinks[k] = fromFile.substring(0, endip);
-                            }
-                        }
-                    }
-                    if (inLinks[0] == null) {
-                        inLinks = new String[1];
-                        inLinks[0] = "";
-                    }
-                } else {
-                    inLinks = new String[1];
-                    inLinks[0] = "";
-                }
-                runTable.put(topicID + "_" + incomingTag, inLinks);
+//                String[] inLinks = new String[pis.getTopic().get(i).getIncoming().getLink().size()];
+//                if (!pis.getTopic().get(i).getIncoming().getLink().isEmpty()) {
+//                    for (int k = 0; k < pis.getTopic().get(i).getIncoming().getLink().size(); k++) {
+//                        String fromFile = pis.getTopic().get(i).getIncoming().getLink().get(k).getAnchor().getFile().toString().trim();
+//                        if (!fromFile.equals("")) {
+//                            int endip = fromFile.toLowerCase().indexOf(".xml");
+//                            if (endip != -1) {
+//                                inLinks[k] = fromFile.substring(0, endip);
+//                            }
+//                        }
+//                    }
+//                    if (inLinks[0] == null) {
+//                        inLinks = new String[1];
+//                        inLinks[0] = "";
+//                    }
+//                } else {
+//                    inLinks = new String[1];
+//                    inLinks[0] = "";
+//                }
+//                runTable.put(topicID + "_" + incomingTag, inLinks);
 
             }
 
