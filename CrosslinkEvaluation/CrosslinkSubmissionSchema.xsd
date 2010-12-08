@@ -43,23 +43,15 @@
     <xsd:complexType name="topicType">
         <xsd:sequence>
             <xsd:element ref="outgoing"/>
-            <xsd:element ref="incoming"/>
         </xsd:sequence>
         <xsd:attribute name="file" type="xsd:string" use="required"/>
         <xsd:attribute name="name" type="xsd:string" use="required"/>    
     </xsd:complexType>
-    <xsd:element name="outgoing" type="linkingType"/>
-    <xsd:element name="incoming" type="linkingType"/>
-    <xsd:complexType name="linkingType">
-        <xsd:sequence>
-            <xsd:element ref="link" minOccurs="0" maxOccurs="unbounded"/>
-        </xsd:sequence>
-    </xsd:complexType>
-    <xsd:element name="link" type="linkType"/>
-    <xsd:complexType name="linkType">
+    <xsd:element name="outgoing" type="outgoingType"/>
+    <xsd:complexType name="outgoingType">
         <xsd:sequence>
             <xsd:element ref="anchor"/>
-            <xsd:element ref="linkto" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:element ref="tofile"/>
         </xsd:sequence>
     </xsd:complexType>
     <xsd:element name="anchor" type="anchorType"/>
@@ -70,11 +62,13 @@
             <xsd:element name="length" type="xsd:string"/>
         </xsd:sequence>
     </xsd:complexType>
-    <xsd:element name="linkto" type="linktoType"/>
+    <xsd:element name="tofile" type="linktoType"/>
     <xsd:complexType name="linktoType">
         <xsd:sequence>
-            <xsd:element name="file" type="xsd:string"/>
             <xsd:element name="bep" type="xsd:string"/>
+            <xsd:element name="lang" type="xsd:string"/>
+            <xsd:element name="title" type="xsd:string"/>
+            <xsd:element name="file" type="xsd:string"/>
         </xsd:sequence>
     </xsd:complexType>
 </xsd:schema>

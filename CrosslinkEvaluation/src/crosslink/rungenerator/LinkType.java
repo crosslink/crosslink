@@ -27,7 +27,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element ref="{}anchor"/>
- *         &lt;element ref="{}linkto" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element ref="{}tofile" maxOccurs="unbounded" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -39,13 +39,13 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "linkType", propOrder = {
     "anchor",
-    "linkto"
+    "tofile"
 })
 public class LinkType {
 
     @XmlElement(required = true)
     protected AnchorType anchor;
-    protected List<LinktoType> linkto;
+    protected List<LinktoType> tofile;
 
     /**
      * Gets the value of the anchor property.
@@ -72,13 +72,13 @@ public class LinkType {
     }
 
     /**
-     * Gets the value of the linkto property.
+     * Gets the value of the tofile property.
      * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the linkto property.
+     * This is why there is not a <CODE>set</CODE> method for the tofile property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
@@ -94,10 +94,10 @@ public class LinkType {
      * 
      */
     public List<LinktoType> getLinkto() {
-        if (linkto == null) {
-            linkto = new ArrayList<LinktoType>();
+        if (tofile == null) {
+            tofile = new ArrayList<LinktoType>();
         }
-        return this.linkto;
+        return this.tofile;
     }
 
 }

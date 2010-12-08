@@ -2622,6 +2622,7 @@ public class genResultSet {
                         String topicName = "";
                         String linkToFiles = "";
                         String linkFromFiles = "";
+                        int pos = 0;
                         try {
                             FileInputStream fis = new FileInputStream(thisRunFPath);
                             DataInputStream dis = new DataInputStream(fis);
@@ -2658,22 +2659,25 @@ public class genResultSet {
                                     topicName = thisLine.substring(tNameStart, tNameEnd);
                                     log(topicFile + " : " + topicName);                              	
                                     topicFileNameHT.put(topicFile, topicName);
+                                    
+                                    tLinksV = new Vector<String>();
                                 } 
-                                if (thisLine.indexOf("<linkto>") != -1) {
+                                if ((pos = thisLine.indexOf("<tofile")) != -1) {
+                                	pos += 7;
                                     // <linkto>48361, 3434750</linkto>
-                                    int linktoStart = thisLine.indexOf("<linkto>") + 8;
-                                    int linktoEnd = thisLine.indexOf("</linkto>", linktoStart);
+                                    int linktoStart = thisLine.indexOf(">", pos) + 1;
+                                    
+                                    int linktoEnd = thisLine.indexOf("</tofile>", linktoStart);
                                     linkToFiles = thisLine.substring(linktoStart, linktoEnd);
                                 }
-                                if (thisLine.indexOf("<linkfrom>") != -1) {
-                                    // <linkfrom>48361, 3434750</linkfrom>
-                                    int linkfromStart = thisLine.indexOf("<linkfrom>") + 8;
-                                    int linkfromEnd = thisLine.indexOf("</linkfrom>", linkfromStart);
-                                    linkFromFiles = thisLine.substring(linkfromStart, linkfromEnd);
-                                } 
+//                                if (thisLine.indexOf("<linkfrom>") != -1) {
+//                                    // <linkfrom>48361, 3434750</linkfrom>
+//                                    int linkfromStart = thisLine.indexOf("<linkfrom>") + 8;
+//                                    int linkfromEnd = thisLine.indexOf("</linkfrom>", linkfromStart);
+//                                    linkFromFiles = thisLine.substring(linkfromStart, linkfromEnd);
+//                                } 
                                 if (thisLine.indexOf("</topic>") != -1) {
                                     // END of Topic
-                                    tLinksV = new Vector<String>();
                                     tLinksV.add(linkToFiles);
                                     tLinksV.add(linkFromFiles);
                                     if (topicFile.length() == 0)
@@ -2732,10 +2736,10 @@ public class genResultSet {
                 if (topicID.length() == 0)
                 	System.err.println("Enpty topic id.");
                 
-                String tName = "";
+                Vector<String> linkDataVS = runEData.get(topicID);
+                String tName = linkDataVS.elementAt(1);
                 fw.write("<topic file='" + topicID + ".xml' name='" + tName + "'>");
                 fw.write("\n");
-                Vector<String> linkDataVS = runEData.get(topicID);
                 // -------------------------------------------------------------
                 String outStrSet = linkDataVS.elementAt(0);
                 fw.write("<outgoing>");
@@ -2756,24 +2760,24 @@ public class genResultSet {
                 fw.write("</outgoing>");
                 fw.write("\n");
                 // -------------------------------------------------------------
-                String inStrSet = linkDataVS.elementAt(1);
-                fw.write("<incoming>");
-                fw.write("\n");
-                if (!inStrSet.equals("")) {
-                    String[] incomingLinks = inStrSet.split(",");
-                    for (String inLinkID : incomingLinks) {
-                        fw.write("<link>");
-                        fw.write("\n");
-                        fw.write("<anchor><file>");
-                        fw.write(inLinkID);
-                        fw.write(".xml</file></anchor>");
-                        fw.write("\n");
-                        fw.write("</link>");
-                        fw.write("\n");
-                    }
-                }
-                fw.write("</incoming>");
-                fw.write("\n");
+//                String inStrSet = linkDataVS.elementAt(1);
+//                fw.write("<incoming>");
+//                fw.write("\n");
+//                if (!inStrSet.equals("")) {
+//                    String[] incomingLinks = inStrSet.split(",");
+//                    for (String inLinkID : incomingLinks) {
+//                        fw.write("<link>");
+//                        fw.write("\n");
+//                        fw.write("<anchor><file>");
+//                        fw.write(inLinkID);
+//                        fw.write(".xml</file></anchor>");
+//                        fw.write("\n");
+//                        fw.write("</link>");
+//                        fw.write("\n");
+//                    }
+//                }
+//                fw.write("</incoming>");
+//                fw.write("\n");
                 // -------------------------------------------------------------
                 fw.write("</topic>");
                 fw.write("\n");

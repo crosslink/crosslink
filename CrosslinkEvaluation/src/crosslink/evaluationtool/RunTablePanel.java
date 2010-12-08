@@ -194,9 +194,9 @@ public class RunTablePanel extends JPanel {
         "Topic",
         "Name",
         "# of Outgoing",
-        "Outgoing Result",
+        "Outgoing Result"/*,
         "# of Incoming",
-        "Incoming Result"
+        "Incoming Result"*/
         };
         
         return new DefaultTableModel(runData, columnNames){
@@ -207,10 +207,13 @@ public class RunTablePanel extends JPanel {
              * then the last column would contain text ("true"/"false"),
              * rather than a check box.
              */
-            @Override
-            public Class getColumnClass(int c) {
-                return getValueAt(0, c).getClass();
-            }
+//            @Override
+//            public Class getColumnClass(int c) {
+//            	Object obj = getValueAt(0, c);
+//            	if (obj != null)
+//            		return obj.getClass();
+//                return null;
+//            }
         };
         
     }

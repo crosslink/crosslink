@@ -26,7 +26,6 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element ref="{}outgoing"/>
- *         &lt;element ref="{}incoming"/>
  *       &lt;/sequence>
  *       &lt;attribute name="file" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
  *       &lt;attribute name="name" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
@@ -39,15 +38,15 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "topicType", propOrder = {
-    "outgoing",
-    "incoming"
+    "outgoing"/*,
+    "incoming"*/
 })
 public class TopicType {
 
     @XmlElement(required = true)
-    protected LinkingType outgoing;
-    @XmlElement(required = true)
-    protected LinkingType incoming;
+    protected OutgoingType outgoing;
+//    @XmlElement(required = true)
+//    protected OutgoingType incoming;
     @XmlAttribute(required = true)
     protected String file;
     @XmlAttribute(required = true)
@@ -58,10 +57,10 @@ public class TopicType {
      * 
      * @return
      *     possible object is
-     *     {@link LinkingType }
+     *     {@link OutgoingType }
      *     
      */
-    public LinkingType getOutgoing() {
+    public OutgoingType getOutgoing() {
         return outgoing;
     }
 
@@ -70,36 +69,36 @@ public class TopicType {
      * 
      * @param value
      *     allowed object is
-     *     {@link LinkingType }
+     *     {@link OutgoingType }
      *     
      */
-    public void setOutgoing(LinkingType value) {
+    public void setOutgoing(OutgoingType value) {
         this.outgoing = value;
     }
 
-    /**
-     * Gets the value of the incoming property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link LinkingType }
-     *     
-     */
-    public LinkingType getIncoming() {
-        return incoming;
-    }
-
-    /**
-     * Sets the value of the incoming property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link LinkingType }
-     *     
-     */
-    public void setIncoming(LinkingType value) {
-        this.incoming = value;
-    }
+//    /**
+//     * Gets the value of the incoming property.
+//     * 
+//     * @return
+//     *     possible object is
+//     *     {@link OutgoingType }
+//     *     
+//     */
+//    public OutgoingType getIncoming() {
+//        return incoming;
+//    }
+//
+//    /**
+//     * Sets the value of the incoming property.
+//     * 
+//     * @param value
+//     *     allowed object is
+//     *     {@link OutgoingType }
+//     *     
+//     */
+//    public void setIncoming(OutgoingType value) {
+//        this.incoming = value;
+//    }
 
     /**
      * Gets the value of the file property.

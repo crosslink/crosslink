@@ -36,20 +36,20 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "linkingType", propOrder = {
-    "link"
+    "outgoing"
 })
-public class LinkingType {
+public class OutgoingType {
 
-    protected List<LinkType> link;
+    protected List<LinkType> outgoing;
 
     /**
-     * Gets the value of the link property.
+     * Gets the value of the outgoing property.
      * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the link property.
+     * This is why there is not a <CODE>set</CODE> method for the outgoing property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
@@ -60,15 +60,15 @@ public class LinkingType {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link LinkType }
+     * {@outgoing LinkType }
      * 
      * 
      */
     public List<LinkType> getLink() {
-        if (link == null) {
-            link = new ArrayList<LinkType>();
+        if (outgoing == null) {
+            outgoing = new ArrayList<LinkType>();
         }
-        return this.link;
+        return this.outgoing;
     }
 
 }
