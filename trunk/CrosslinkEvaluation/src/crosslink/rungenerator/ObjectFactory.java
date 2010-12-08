@@ -97,11 +97,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link LinkingType }
+     * Create an instance of {@link OutgoingType }
      * 
      */
-    public LinkingType createLinkingType() {
-        return new LinkingType();
+    public OutgoingType createLinkingType() {
+        return new OutgoingType();
     }
 
     /**
@@ -121,12 +121,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link LinkingType }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link OutgoingType }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "", name = "outgoing")
-    public JAXBElement<LinkingType> createOutgoing(LinkingType value) {
-        return new JAXBElement<LinkingType>(_Outgoing_QNAME, LinkingType.class, null, value);
+    public JAXBElement<OutgoingType> createOutgoing(OutgoingType value) {
+        return new JAXBElement<OutgoingType>(_Outgoing_QNAME, OutgoingType.class, null, value);
     }
 
     /**
@@ -175,12 +175,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link LinkingType }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link OutgoingType }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "", name = "incoming")
-    public JAXBElement<LinkingType> createIncoming(LinkingType value) {
-        return new JAXBElement<LinkingType>(_Incoming_QNAME, LinkingType.class, null, value);
+    public JAXBElement<OutgoingType> createIncoming(OutgoingType value) {
+        return new JAXBElement<OutgoingType>(_Incoming_QNAME, OutgoingType.class, null, value);
     }
 
     /**

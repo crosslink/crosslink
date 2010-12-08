@@ -24,8 +24,10 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
+ *         &lt;element name="bep_offset" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="lang" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="title" type="{http://www.w3.org/2001/XMLSchema}string"/>         
  *         &lt;element name="file" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="bep" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -36,15 +38,21 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "linktoType", propOrder = {
-    "file",
-    "bep"
+    "bep_offset",
+    "lang",
+    "title",
+    "file"
 })
 public class LinktoType {
 
     @XmlElement(required = true)
     protected String file;
     @XmlElement(required = true)
-    protected String bep;
+    protected String bep_offset;
+    @XmlElement(required = true)
+    protected String lang;
+    @XmlElement(required = true)
+    protected String title;
 
     /**
      * Gets the value of the file property.
@@ -71,27 +79,55 @@ public class LinktoType {
     }
 
     /**
-     * Gets the value of the bep property.
+     * Gets the value of the bep_offset property.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getBep() {
-        return bep;
+    public String getBepOffset() {
+        return bep_offset;
     }
 
     /**
-     * Sets the value of the bep property.
+     * Sets the value of the bep_offset property.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setBep(String value) {
-        this.bep = value;
+    public void setBepOffset(String value) {
+        this.bep_offset = value;
     }
+
+	/**
+	 * @return the lang
+	 */
+	public String getLang() {
+		return lang;
+	}
+
+	/**
+	 * @param lang the lang to set
+	 */
+	public void setLang(String lang) {
+		this.lang = lang;
+	}
+
+	/**
+	 * @return the title
+	 */
+	public String getTitle() {
+		return title;
+	}
+
+	/**
+	 * @param title the title to set
+	 */
+	public void setTitle(String title) {
+		this.title = title;
+	}
 
 }

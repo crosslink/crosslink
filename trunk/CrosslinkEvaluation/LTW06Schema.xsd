@@ -2,7 +2,7 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
             elementFormDefault="qualified" 
             attributeFormDefault="unqualified">
-    <xsd:element name="inex-submission">
+    <xsd:element name="crosslink-submission">
         <xsd:complexType>
             <xsd:sequence>
                 <xsd:element ref="details"/>

@@ -49,7 +49,7 @@ public class EvaluationUI extends JFrame {
 //    private String[] resultSetArray = {"5000F2FWikiResultSet.xml", "33A2BWikiResultSet.xml", "33A2BManualResultSet.xml"};
     private String[] resultSetArray = {"A2BWikiResultSet.xml", "A2BWikiResultSet.xml", "A2BManualResultSet.xml"};
     private String resultFilePath = "A2BManualResultSet.xml";
-    private String schemaFilePath = "LTW06Schema.xsd";
+    private String schemaFilePath = "CrosslinkSubmissionSchema.xsd";
 
     private static void log(Object aObject) {
         System.out.println(String.valueOf(aObject));
@@ -717,15 +717,15 @@ public class EvaluationUI extends JFrame {
 //                        spColor[i][2], Boolean.TRUE, Boolean.FALSE
 //                    });
 //                } else {
-                result.add(new Object[]{
-                            er.runId, "incoming", er.incomming[metricsCalculation.R_MAP],
-                            er.incomming[metricsCalculation.R_RPREC], er.incomming[metricsCalculation.R_P5],
-                            er.incomming[metricsCalculation.R_P10],
-                            er.incomming[metricsCalculation.R_P20],
-                            er.incomming[metricsCalculation.R_P30], er.incomming[metricsCalculation.R_P50],
-                            er.incomming[metricsCalculation.R_P250],
-                            Color.LIGHT_GRAY, Boolean.FALSE, Boolean.FALSE
-                        });
+//                result.add(new Object[]{
+//                            er.runId, "incoming", er.incomming[metricsCalculation.R_MAP],
+//                            er.incomming[metricsCalculation.R_RPREC], er.incomming[metricsCalculation.R_P5],
+//                            er.incomming[metricsCalculation.R_P10],
+//                            er.incomming[metricsCalculation.R_P20],
+//                            er.incomming[metricsCalculation.R_P30], er.incomming[metricsCalculation.R_P50],
+//                            er.incomming[metricsCalculation.R_P250],
+//                            Color.LIGHT_GRAY, Boolean.FALSE, Boolean.FALSE
+//                        });
                 result.add(new Object[]{
                             er.runId, "outgoing", er.outgoing[metricsCalculation.R_MAP],
                             er.outgoing[metricsCalculation.R_RPREC], er.outgoing[metricsCalculation.R_P5],
@@ -936,7 +936,7 @@ public class EvaluationUI extends JFrame {
                 // -------------------------------------------------------------
 
                 ArrayList<String[]> result = retrieveRunData(files);
-                Object[][] r = new Object[result.size()][8];
+                Object[][] r = new Object[result.size()][6];
                 int count = 0;
                 for (String[] x : result) {
                     r[count][0] = x[0];
@@ -945,8 +945,8 @@ public class EvaluationUI extends JFrame {
                     r[count][3] = x[3];
                     r[count][4] = x[4];
                     r[count][5] = x[5];
-                    r[count][6] = x[6];
-                    r[count][7] = x[7];
+//                    r[count][6] = x[6];
+//                    r[count][7] = x[7];
                     count++;
                 }
 
@@ -1030,31 +1030,31 @@ public class EvaluationUI extends JFrame {
                                 result[4] = "" + outLinkCount + "(" + outNonduplicateCount + ")";
                             }
                         }
-                        if (topic.getIncoming().getLink().isEmpty()) {
-                            result[6] = "0";
-                        } else {
-                            if (topic.getIncoming().getLink().get(0).getAnchor().getFile().toString().equalsIgnoreCase("")) {
-                                result[6] = "0";
-                            } else {
-                                // ============================
-                                int inLinkCount = 0;
-                                int inNonduplicateCount = 0;
-                                List inItemsList = new ArrayList();
-                                for (int j = 0; j < topic.getIncoming().getLink().size(); j++) {
-                                    int endop = topic.getIncoming().getLink().get(j).getAnchor().getFile().toString().toLowerCase().indexOf(".xml");
-                                    if (endop != -1) {
-                                        String inFile = topic.getIncoming().getLink().get(j).getAnchor().getFile().toString();
-                                        if (!inItemsList.contains(inFile)) {
-                                            inItemsList.add(inFile);
-                                            inNonduplicateCount++;
-                                        }
-                                    }
-                                }
-                                // ============================
-                                // totalFiles:nonDuplicateFiles
-                                result[6] = "" + topic.getIncoming().getLink().size() + "(" + inNonduplicateCount + ")";
-                            }
-                        }
+//                        if (topic.getIncoming().getLink().isEmpty()) {
+//                            result[6] = "0";
+//                        } else {
+//                            if (topic.getIncoming().getLink().get(0).getAnchor().getFile().toString().equalsIgnoreCase("")) {
+//                                result[6] = "0";
+//                            } else {
+//                                // ============================
+//                                int inLinkCount = 0;
+//                                int inNonduplicateCount = 0;
+//                                List inItemsList = new ArrayList();
+//                                for (int j = 0; j < topic.getIncoming().getLink().size(); j++) {
+//                                    int endop = topic.getIncoming().getLink().get(j).getAnchor().getFile().toString().toLowerCase().indexOf(".xml");
+//                                    if (endop != -1) {
+//                                        String inFile = topic.getIncoming().getLink().get(j).getAnchor().getFile().toString();
+//                                        if (!inItemsList.contains(inFile)) {
+//                                            inItemsList.add(inFile);
+//                                            inNonduplicateCount++;
+//                                        }
+//                                    }
+//                                }
+//                                // ============================
+//                                // totalFiles:nonDuplicateFiles
+//                                result[6] = "" + topic.getIncoming().getLink().size() + "(" + inNonduplicateCount + ")";
+//                            }
+//                        }
                         bigResult.add(result);
                     }
                 }
@@ -1098,7 +1098,7 @@ public class EvaluationUI extends JFrame {
                         }
                     }
 
-                    resultLinksTable.put(topicID + ".xml", outCount + ";" + inCount);
+                    resultLinksTable.put(topicID/* + ".xml"*/, outCount + ";" + inCount);
                     log("Outgoing Links: " + outCount);
                     log("Incoming Links: " + inCount);
                 }
@@ -1163,7 +1163,7 @@ public class EvaluationUI extends JFrame {
             resultSet = resultSetArray[2];
         }
 
-        return resultSet;
+        return "resultsets" + File.separator + resultSet;
     }
 
     private void runsXMLConvertor(Hashtable runsHashData) {
