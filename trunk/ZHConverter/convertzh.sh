@@ -1,9 +1,9 @@
 #!/bin/bash
 
 jarfile=dist/ZHConverter.jar
-if ! [ -e  $jarfile]
+if ! [ -e  $jarfile ]
 then
 	ant dist
 fi
 
-java -jar $jarfile 
+java -jar $jarfile "$@"

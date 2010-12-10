@@ -49,6 +49,11 @@ for distribution.
 -->
 	<!-- excludes="**/**/*DB*.java,**/**/Database.java,**/**/DB2NestedXML.java"-->
 	<target name="compile" depends="createBinDir">
+		<copy verbose="true" todir="${build.dir}">
+			<fileset dir="${src.dir}">
+				<include name="**/*.properties" />
+			</fileset>
+		</copy>
 		<javac srcdir="${src.dir}" 
 			destdir="${build.dir}"
 			
@@ -78,7 +83,13 @@ for distribution.
 	
 	<target name="dist" depends="compile">
 		<mkdir dir="${dist.dir}" />
-		<jar jarfile="${dist.jar}" basedir="${build.dir}" />
+	     <delete file="${dist.jar}"/>
+	     <delete file="MANIFEST.MF"/>
+	     <manifest file="MANIFEST.MF">
+	        <attribute name="Built-By" value="Eric Tang"/>
+	        <attribute name="Main-Class" value="com.spreada.utils.chinese.ZHConverter"/>
+	    </manifest>
+		<jar jarfile="${dist.jar}" basedir="${build.dir}" manifest="MANIFEST.MF"/>
 	</target>
 	
 </project>

@@ -1,7 +1,9 @@
 package com.spreada.utils.chinese;
 
 import java.io.BufferedReader;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -187,8 +189,64 @@ public class ZHConverter {
 		}
 		return c;
 	}
+	
+	private static void usage() {
+		System.out.println("Usage:");
+		System.out.println("program -f file [-T]");
+		System.out.println("or");
+		System.out.println("program -s input_string [-T]");
+		System.out.println("");
+		System.out.println("Note: last option -T is optional, default or incorrect option will lead to converting input to simplified Chinese.");
+		System.out.println("With -T, input will be converted into traditional Chinese");
+		System.exit(-1);
+	}
+	
+	private static String convertString(String input, int toform) {
+		return ZHConverter.convert(input, toform);	
+	}
+	
+	private static String convertFile(String filename, int toform) {
+	    int size;
+	    byte[] bytes = null;
+		try {
+			FileInputStream fis = new FileInputStream(filename);
+			size = fis.available();
+		    bytes    = new byte[size];
+		    fis.read(bytes, 0, size);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+		return convertString(new String(bytes), toform);
+	}
 
 	public static void main(String[] args) {
+		if (args.length < 2)
+			usage();
 		
+		String result = null;
+		
+		try {
+			int toform = SIMPLIFIED;
+			if (args.length >= 3) {
+				if (args[2].charAt(1) == 'T')
+					toform = TRADITIONAL;
+			}
+			
+			if (args[0].equals("-f")) {
+				result = convertFile(args[1], toform);
+			}
+			else if (args[0].equals("-s")) {
+				result = convertString(args[1], toform);
+			}
+			else
+				usage();
+		}
+		catch (Exception ex) {
+			ex.printStackTrace();
+			usage();
+		}
+		
+		System.out.println(result);
 	}
 }
