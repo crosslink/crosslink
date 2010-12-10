@@ -2,6 +2,10 @@ package crosslink;
 import java.io.FileInputStream;
 import java.io.IOException;
 
+/*
+ * @author Eric Tang
+ * 
+ */
 public class XML2TXT {
 
 	private static XML2TXT instance = null;

@@ -1,0 +1,84 @@
+<!-- 
+Note: 
+    basedir defaults to directory ant runs from
+    create ~user/.ant-global.properties for overriding properties other than basedir
+    if you want to overide basedir do so on the command line  e.g.   ant -Dbasedir=/home/user/
+    
+    .ant-global.properties format
+
+    build.compiler=jikes
+
+Usage: 
+    ant                    default compile
+    ant clean              clean classes and distribution directorys
+    ant client-jar          build client jar 
+    ant onsite-jar          build server jar 
+    ant jars               build both jars 
+    ant toolJar            build only the jar to run the tools.
+
+
+
+-->
+
+<project name="ZHConverter" default="compile" basedir=".">
+    <property name="zhconverter.home" location="${basedir}"/>
+	<property name="lib.dir" value="${basedir}/lib"/>
+    
+    <property name="src.dir" value="src" />
+    <!-- Define build.dir so that it can be overried if this is used as a subant -->   
+    <property name="build.dir" value="${basedir}/bin" />  
+	<property name="scripts.dir" value="${basedir}/scripts" />  
+        
+	<property name="debug.dir" value="${basedir}/debug" />
+	<property name="dist.dir" value="${basedir}/dist" />
+	
+	<property name="dist.jar" value="${dist.dir}/ZHConverter.jar" />
+        
+
+    <property file="ant-build.properties" />
+    
+	<!-- Define the class path -->
+	<path id="project.class.path">
+
+	</path>
+	
+					
+	<!-- Compiles all classes except those which are tools for internal use at Phasefale 
+This task also excludes the compilation of demo or testing classes which aren't need
+for distribution.
+-->
+	<!-- excludes="**/**/*DB*.java,**/**/Database.java,**/**/DB2NestedXML.java"-->
+	<target name="compile" depends="createBinDir">
+		<javac srcdir="${src.dir}" 
+			destdir="${build.dir}"
+			
+			source="1.6" 
+			target="1.6" debug="off">
+			<classpath refid="project.class.path" />
+		</javac>
+	</target>
+
+	<target name="clean">
+		<delete dir="${build.dir}" />
+		<delete dir="${debug.dir}" />
+		<delete dir="${dist.dir}" />
+	</target>
+	
+	<target name="createDistDir">
+		<mkdir dir="${dist.dir}" />
+	</target>
+	
+	<target name="createBinDir">
+		<mkdir dir="${build.dir}" />
+	</target>
+        
+	<target name="createDebugDir">
+		<mkdir dir="${debug.dir}" />
+	</target>
+	
+	<target name="dist" depends="compile">
+		<mkdir dir="${dist.dir}" />
+		<jar jarfile="${dist.jar}" basedir="${build.dir}" />
+	</target>
+	
+</project>
