@@ -235,9 +235,11 @@ public class ZHConverter {
 			
 			if (args[0].equals("-f")) {
 				result = convertFile(args[1], toform);
+				System.out.print(result);
 			}
 			else if (args[0].equals("-s")) {
 				result = convertString(args[1], toform);
+				System.out.println(result);
 			}
 			else
 				usage();
@@ -246,7 +248,5 @@ public class ZHConverter {
 			ex.printStackTrace();
 			usage();
 		}
-		
-		System.out.println(result);
 	}
 }

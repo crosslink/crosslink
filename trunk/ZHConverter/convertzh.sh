@@ -1,6 +1,8 @@
 #!/bin/bash
 
-jarfile=dist/ZHConverter.jar
+home=`dirname $0`
+jarfile=${home}/dist/ZHConverter.jar
+
 if ! [ -e  $jarfile ]
 then
 	ant dist
