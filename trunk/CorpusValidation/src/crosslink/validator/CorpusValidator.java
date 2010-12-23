@@ -15,7 +15,10 @@ import org.xml.sax.XMLReader;
 
 public class CorpusValidator {
 
+//	static boolean good = true;
+	
 	public static void recordError(String inputfile, String errorType) {
+//		good = false;
 		System.out.println(errorType + ":" + inputfile);
 	}
 	
@@ -43,21 +46,21 @@ public class CorpusValidator {
           	Stack stack = WildcardFiles.listFilesInStack(args[0], true);
           	while (!stack.isEmpty())
             {
+//          		good = true;
                 File onefile = (File)stack.pop();
             	inputfile = onefile.getCanonicalPath();
                 reader.parse(new InputSource(inputfile));
                 	// do whatever you want with the input file...
             }
         } catch (ParserConfigurationException e) {
-            e.printStackTrace();
-            recordError(inputfile, "ParserConfigurationException");
+        	recordError(inputfile, "ParserConfigurationException");
+            e.printStackTrace();     
         } catch (SAXException e) {
-            e.printStackTrace();
             recordError(inputfile, "SAXException");
-        } catch (IOException e) {
             e.printStackTrace();
+        } catch (IOException e) {
             recordError(inputfile, "IOException");
+            e.printStackTrace();
         } 
-
 	}
 }
