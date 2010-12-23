@@ -3,6 +3,8 @@ package crosslink.validator;
 import java.io.File;
 import java.io.FileFilter;
 import java.io.FilenameFilter;
+import java.util.Arrays;
+import java.util.Stack;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -25,20 +27,16 @@ class WildcardFiles implements FilenameFilter, FileFilter
 	    
 	   WildcardFiles(String search)
 	   {
+		   createPattern(search);      
+	   }
+	   
+	   private void createPattern(String search) {
 		   String reform = search;
 		   //reform = reform.replaceAll("\\.", "\\.");  
 		   //reform = reform.replaceAll("\\?", "."); 
 		   reform = reform.replaceAll("\\*", ".*");
 		   
 		   pattern = Pattern.compile(reform);
-			
-//			File[] arrFile = new File(inputFileDir).listFiles(new FilenameFilter()
-//{
-//	public boolean accept(File dir, String name)
-//{
-//	return (name.toLowerCase().matches(wildcard));
-//}
-//});	      
 	   }
 	   
 	   public static String getDirectory()
@@ -56,11 +54,37 @@ class WildcardFiles implements FilenameFilter, FileFilter
 			}		   
 	   }
 	   
-	   public static File[] listFiles(String inputfile) 
+//	   private static void listFiles(String inputfile, Stack stack) 
+//	   {
+//			File[] arrFile = new File(inputFileDir).listFiles((FileFilter)new WildcardFiles(wildcard));
+//			stack.addAll(Arrays.asList(arrFile));
+//	   }
+	   
+	   public static Stack listFilesInStack(String inputfile, boolean includeSubFolder) 
 	   {
 		   breakFile(inputfile);
-			File[] arrFile = new File(inputFileDir).listFiles((FileFilter)new WildcardFiles(wildcard));
-		    return arrFile;
+		   WildcardFiles wildcardfiles = new WildcardFiles(wildcard);
+		   Stack<File> stack = new Stack();
+		   if (includeSubFolder) {
+			   File[] allFiles = new File(inputFileDir).listFiles();
+			    for (File f : allFiles) {
+			        if (f.isDirectory()) {
+			            stack.push(f);
+			        }
+			        else if (wildcardfiles.accept(f))
+			        	stack.push(f);
+			    }
+			    return stack;
+		   }
+		   File[] arrFile = new File(inputFileDir).listFiles((FileFilter)wildcardfiles);
+		   stack.addAll(Arrays.asList(arrFile));
+		   return stack;
+	   }
+	   
+	   public static Stack listFilesInStack(String inputfile) 
+	   {
+		   breakFile(inputfile);
+		   return listFilesInStack(inputfile, false);
 	   }
 	   
 	   /**
