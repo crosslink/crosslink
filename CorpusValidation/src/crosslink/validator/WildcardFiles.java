@@ -24,7 +24,8 @@ class WildcardFiles implements FilenameFilter, FileFilter
 	   private Pattern pattern;
 	   private static String wildcard = "";
 	   private static String inputFileDir = ".";
-	    
+	   private static WildcardFiles wildcardfiles = null; //new WildcardFiles(wildcard);
+	   
 	   WildcardFiles(String search)
 	   {
 		   createPattern(search);      
@@ -51,6 +52,9 @@ class WildcardFiles implements FilenameFilter, FileFilter
 			if ((lastIndex = inputfile.lastIndexOf(File.separator)) > -1) {
 				inputFileDir = inputfile.substring(0, lastIndex);
 				wildcard = inputfile.substring(lastIndex + 1);
+				wildcard.trim();
+				if (wildcard.length() == 0)
+					wildcard = "*";
 			}		   
 	   }
 	   
@@ -63,7 +67,7 @@ class WildcardFiles implements FilenameFilter, FileFilter
 	   public static Stack listFilesInStack(String inputfile, boolean includeSubFolder) 
 	   {
 		   breakFile(inputfile);
-		   WildcardFiles wildcardfiles = new WildcardFiles(wildcard);
+		   wildcardfiles = new WildcardFiles(wildcard);
 		   Stack<File> stack = new Stack();
 		   if (includeSubFolder) {
 			   File[] allFiles = new File(inputFileDir).listFiles();
@@ -101,12 +105,25 @@ class WildcardFiles implements FilenameFilter, FileFilter
 		WildcardFiles.wildcard = wildcard;
 	}
 
+	/**
+	 * @return the wildcardfiles
+	 */
+	public static WildcardFiles getInstance() {
+		return wildcardfiles;
+	}
+
+	public File[] listSubfolderFiles(File subfolder) 
+	{
+		File[] arrFile = subfolder.listFiles((FileFilter)this);
+		return arrFile;
+	}
+	
 	public static String[] list(String inputfile) 
-	   {
-		   breakFile(inputfile);
-			String[] arrFile = new File(inputFileDir).list(new WildcardFiles(wildcard));
-		    return arrFile;
-	   }
+	{
+		breakFile(inputfile);
+		String[] arrFile = new File(inputFileDir).list(new WildcardFiles(wildcard));
+		return arrFile;
+	}
 	   
 	   private boolean match(String name) 
 	   {

@@ -20,4 +20,4 @@ append_jars_to_cp() {
 
 append_jars_to_cp lib
 
-java -cp $cp:./bin crosslink.validator.CorpusValidator $@
+java -cp $cp:./bin crosslink.validator.CorpusValidator "$@"
