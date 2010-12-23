@@ -25,14 +25,14 @@ import org.xml.sax.SAXParseException;
 
 public class SimpleErrorHandler implements ErrorHandler {
     public void warning(SAXParseException e) {
-        System.out.println(e.getMessage());
+        System.err.println(e.getMessage());
     }
 
     public void error(SAXParseException e) {
-        System.out.println(e.getMessage());
+        System.err.println(e.getMessage());
     }
 
     public void fatalError(SAXParseException e) {
-        System.out.println(e.getMessage());
+        System.err.println(e.getMessage());
     }
 }
