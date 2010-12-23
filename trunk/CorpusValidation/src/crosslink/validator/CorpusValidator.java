@@ -2,6 +2,7 @@ package crosslink.validator;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Stack;
 
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
@@ -14,10 +15,20 @@ import org.xml.sax.XMLReader;
 
 public class CorpusValidator {
 
+	public static void recordError(String inputfile, String errorType) {
+		System.out.println(errorType + ":" + inputfile);
+	}
+	
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
+		if (args.length != 1) {
+			System.out.println("Usage: proram inputfile");
+			System.exit(-1);
+		}
+		
+		String inputfile = null;
         try {
             SAXParserFactory factory = SAXParserFactory.newInstance();
             factory.setValidating(false);
@@ -28,20 +39,25 @@ public class CorpusValidator {
             XMLReader reader = parser.getXMLReader();
             reader.setErrorHandler(new com.edankert.SimpleErrorHandler());
             
-          	String[] arrFile = WildcardFiles.list(args[0]);
-            for (String onefile : arrFile) 
+//          	String[] arrFile = WildcardFiles.list(args[0]);
+          	Stack stack = WildcardFiles.listFilesInStack(args[0], true);
+          	while (!stack.isEmpty())
             {
-            	String inputfile = WildcardFiles.getDirectory() + File.separator + onefile;
+                File onefile = (File)stack.pop();
+            	inputfile = onefile.getCanonicalPath();
                 reader.parse(new InputSource(inputfile));
                 	// do whatever you want with the input file...
             }
         } catch (ParserConfigurationException e) {
             e.printStackTrace();
+            recordError(inputfile, "ParserConfigurationException");
         } catch (SAXException e) {
             e.printStackTrace();
+            recordError(inputfile, "SAXException");
         } catch (IOException e) {
             e.printStackTrace();
-        }
+            recordError(inputfile, "IOException");
+        } 
 
 	}
 }
