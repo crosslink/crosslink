@@ -71,6 +71,7 @@ public class CorpusValidator {
 
             
 //          	String[] arrFile = WildcardFiles.list(args[0]);
+        int filecount = 0;
       	Stack<File> stack = null;
       	
       	for (String input : args) {
@@ -85,6 +86,7 @@ public class CorpusValidator {
                 }
                 System.err.println("validating " + onefile.getAbsolutePath() + "...");
                 errorHandler.setFilename(onefile.getAbsolutePath());
+                ++filecount;
                 try {
                 	inputfile = onefile.getCanonicalPath();
                 	Document document = builder.parse(new InputSource(inputfile)); //dom
@@ -99,5 +101,7 @@ public class CorpusValidator {
                 } 
             }
       	}
+      	
+      	System.err.println("Xml file(s) validation finished: " + filecount);
 	}
 }
