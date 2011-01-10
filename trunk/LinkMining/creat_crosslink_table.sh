@@ -6,19 +6,20 @@
 
 cat $1 | while read line
 do
-	source=`echo $line -f 1 -d :
-	dest=`echo $line -f 2 -d :
-	titles=`echo $line -f 3 -d :
+	source=`echo $line | cut -f 1 -d :`
+	dest=`echo $line | cut -f 2 -d :`
+	titles=`echo $line | cut -f 3 -d :`
 	
-	source_title=`echo $titles -f 1 -d |`
-	dest_title=`echo $titles -f 2 -d |`
+	source_title=`echo $titles | cut -f 1 -d\|`
+	dest_title=`echo $titles | cut -f 2 -d\|`
 	
 	if [ "${source}" -gt "0" ]; then
 		echo "${source}:${dest}:${source_title}"
 	fi
 		
-	if [ "${source}" -gt "0" ]; then
+	if [ "${dest}" -gt "0" ]; then
 		echo "${dest}:${source}:${dest_title}" 1>&2
 	fi
 	
+#	exit
 done
