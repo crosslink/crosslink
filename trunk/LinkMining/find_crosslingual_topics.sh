@@ -13,6 +13,8 @@ cp_topic_path=$2
 # 
 cl_table_path=$3
 
+corpus_path=$4
+
 if [ -e $cl_table_path ]
 then
 	echo "the cross-lingual link table: \"$cl_table_path\" does't not exist"
@@ -21,29 +23,32 @@ fi
 
 for file in `ls $topic_path`
 do
-
-	input=echo $file
+	source_id=`echo $file | cut -f 1 -d .`
+	line=`grep ^$source_id: $cl_table_path`
 	
-	len=${#input}
-	
-	#echo $len
-	
-	
-	subdir=
-	
-	if [ "$len" -gt "3" ]
+	if [ "$?" -eq "0" ]
 	then
-	subdir=${input: -3}
-	else
-	subdir=`printf "%03d" $input`
+		input=`echo $line | cut -f 2 -d :`
+		
+		len=${#input}
+		
+		#echo $len
+		
+		subdir=
+		
+		if [ "$len" -gt "3" ]
+		then
+			subdir=${input: -3}
+		else
+			subdir=`printf "%03d" $input`
+		fi
+		
+		#echo $subdir
+		
+		filename=$subdir/${input}.xml
+		
+		filename="pages/$filename"
+		#; cat $filename | head -n 50
+		echo "cp $corpus_path/$filename $cp_topic_path"
 	fi
-	
-	#echo $subdir
-	
-	filename=$subdir/${input}.xml
-	
-	filename="pages/$filename"
-	#; cat $filename | head -n 50
-	echo $filename
-
 done
