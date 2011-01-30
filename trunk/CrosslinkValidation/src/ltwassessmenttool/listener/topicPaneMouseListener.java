@@ -25,6 +25,7 @@ import javax.swing.text.Style;
 import javax.swing.text.StyleConstants;
 import javax.swing.text.StyledDocument;
 
+import ltwassessment.AppResource;
 import ltwassessment.parsers.FOLTXTMatcher;
 import ltwassessment.parsers.Xml2Html;
 import ltwassessment.parsers.PoolerManager;
@@ -128,7 +129,7 @@ public class topicPaneMouseListener implements MouseInputListener {
     // <editor-fold defaultstate="collapsed" desc="Mouse Event Action">
     // Get Caret Event when Mouse Click
     private void activateTopicPaneMouseClickEvant(MouseEvent mce) {
-        this.isOutgoingTAB = Boolean.valueOf(System.getProperty(sysPropertyKey));
+//        this.isOutgoingTAB = Boolean.valueOf(System.getProperty(sysPropertyKey));
         Point point = mce.getPoint();
         if (mce.getButton() == MouseEvent.BUTTON1) {
             // <editor-fold defaultstate="collapsed" desc="Left-Click to Open Target Links">
@@ -152,14 +153,14 @@ public class topicPaneMouseListener implements MouseInputListener {
                 this.topicTextPane.scrollRectToVisible(this.topicTextPane.getVisibleRect());
                 this.topicTextPane.repaint();
                 // -------------------------------------------------------------
-                if (isOutgoingTAB) {
+//                if (isOutgoingTAB) {
                     activateTopicAnchorMouseListener();
                     // Outgoing: Detect Anchor Text
                     // <editor-fold defaultstate="collapsed" desc="Click to Open LinkPane & Update TAB Table">
                     Vector<String[]> bepLinkIDOV = (Vector<String[]>) bepFileSAVBySCRAnchorOLHM.get(scrSEPosKey);
                     String bepFileID = bepLinkIDOV.elementAt(0)[0];
                     String bepFileOffset = bepLinkIDOV.elementAt(0)[1];
-                    String bepXmlFilePath = myPooler.getXmlFilePathByTargetID(bepFileID);
+                    String bepXmlFilePath = myPooler.getXmlFilePathByTargetID(bepFileID, AppResource.targetLang);
                     // When Errors:
                     // bepXmlPath = afTasnCollectionErrors + " : " + myAFTask + " - " + myAFCollection
                     if (bepXmlFilePath.startsWith(afTasnCollectionErrors)) {
@@ -201,75 +202,75 @@ public class topicPaneMouseListener implements MouseInputListener {
                     myPaneTable.setDefaultRenderer(Object.class, new AttributiveCellRenderer(currTopicID, currAnchorXmlOL, bepFileOffset, bepFileID, isOutgoingTAB));
                     myPaneTable.repaint();
                 // </editor-fold>
-                } else {
-                    activateTopicBepMouseListener();
-                    // Click on Incoming Topic Pane:
-                    // 0) Highlight BEP <-- Change Icon
-                    // 1) Get Anchor XML OL Set for this Clicked BEP ICON
-                    // 2) Set link Txt Pane Content
-                    // <editor-fold defaultstate="collapsed" desc="Click to Open LinkPane & Update TBA Table">
-                    // Vector<String[]{ID:123017, Offset:1538, Length:9, Name:TITLE}+>
-                    log("anchorFileSAVBySCRBepOLHM.size(): " + anchorFileSAVBySCRBepOLHM.size());
-                    log("scrSEPosKey: " + scrSEPosKey);
-                    Vector<String[]> anchorOLLinkIDV = (Vector<String[]>) anchorFileSAVBySCRBepOLHM.get(scrSEPosKey);
-                    String anchorOffset = anchorOLLinkIDV.elementAt(0)[0];
-                    String anchorLength = anchorOLLinkIDV.elementAt(0)[1];
-                    String anchorName = anchorOLLinkIDV.elementAt(0)[2];
-                    String anchorFileID = anchorOLLinkIDV.elementAt(0)[3];
-                    String anchorXmlFilePath = myPooler.getXmlFilePathByTargetID(anchorFileID);
-                    // ---------------------------------------------------------
-                    // When Errors:
-                    // bepXmlPath = afTasnCollectionErrors + " : " + myAFTask + " - " + myAFCollection
-                    if (anchorXmlFilePath.startsWith(afTasnCollectionErrors)) {
-                        anchorXmlFilePath = myRSCManager.getErrorXmlFilePath(anchorXmlFilePath);
-                    }
-//                    if (anchorXmlFilePath.startsWith(myRSCManager.getWikipediaCollectionFolder())) {
-                        isWikipedia = true;
-//                    } else if (anchorXmlFilePath.startsWith(myRSCManager.getTeAraCollectionFolder())) {
-//                        isWikipedia = false;
+//                } else {
+//                    activateTopicBepMouseListener();
+//                    // Click on Incoming Topic Pane:
+//                    // 0) Highlight BEP <-- Change Icon
+//                    // 1) Get Anchor XML OL Set for this Clicked BEP ICON
+//                    // 2) Set link Txt Pane Content
+//                    // <editor-fold defaultstate="collapsed" desc="Click to Open LinkPane & Update TBA Table">
+//                    // Vector<String[]{ID:123017, Offset:1538, Length:9, Name:TITLE}+>
+//                    log("anchorFileSAVBySCRBepOLHM.size(): " + anchorFileSAVBySCRBepOLHM.size());
+//                    log("scrSEPosKey: " + scrSEPosKey);
+//                    Vector<String[]> anchorOLLinkIDV = (Vector<String[]>) anchorFileSAVBySCRBepOLHM.get(scrSEPosKey);
+//                    String anchorOffset = anchorOLLinkIDV.elementAt(0)[0];
+//                    String anchorLength = anchorOLLinkIDV.elementAt(0)[1];
+//                    String anchorName = anchorOLLinkIDV.elementAt(0)[2];
+//                    String anchorFileID = anchorOLLinkIDV.elementAt(0)[3];
+//                    String anchorXmlFilePath = myPooler.getXmlFilePathByTargetID(anchorFileID, AppResource.sourceLang);
+//                    // ---------------------------------------------------------
+//                    // When Errors:
+//                    // bepXmlPath = afTasnCollectionErrors + " : " + myAFTask + " - " + myAFCollection
+//                    if (anchorXmlFilePath.startsWith(afTasnCollectionErrors)) {
+//                        anchorXmlFilePath = myRSCManager.getErrorXmlFilePath(anchorXmlFilePath);
 //                    }
-                    Xml2Html xmlParser = new Xml2Html(anchorXmlFilePath, isWikipedia);
-                    String xmlHtmlText = xmlParser.getHtmlContent().toString();
-                    this.linkTextPane.setContentType(paneContentType);
-                    this.linkTextPane.setText(xmlHtmlText);
-                    this.linkTextPane.setCaretPosition(0);
-                    // ---------------------------------------------------------
-                    // get SCR Anchor Offset-Length
-                    String[] mySCRAnchorSEPos = myFOLMatcher.getSCRAnchorPosSA(linkTextPane, anchorFileID, new String[]{anchorOffset, anchorLength, anchorName});
-                    // Highlight Anchor Txt in JTextPane
-                    boolean isAssessment = false;
-                    updateLinkAnchorTxtsHighlight(linkTextPane, mySCRAnchorSEPos, isAssessment);
-                    // ---------------------------------------------------------
-                    // Renew Link Text Pane Listener for Detecting Anchor Text & Right/Left Click
-                    System.setProperty(sysPropertyKey, String.valueOf(isOutgoingTAB));
-//                    linkPaneMouseListener myLPMListener = new linkPaneMouseListener(this.topicTextPane, this.linkTextPane, this.myPaneTable);
-//                    this.linkTextPane.addMouseListener(myLPMListener);
-                    this.linkTextPane.getCaret().setDot(Integer.valueOf(mySCRAnchorSEPos[1].trim()));
-                    this.linkTextPane.scrollRectToVisible(this.linkTextPane.getVisibleRect());
-                    this.linkTextPane.repaint();
-                    // -------------------------------------------------------------
-                    // -------------------------------------------------------------
-                    // Highlight TBATable ROW:
-                    String[] linkAnchorXmlOL = new String[]{anchorOffset, anchorLength};
-                    Vector<String> bepOLListV = myRSCManager.getCurrBepsOV();
-                    String bepSCROffset = SEPosTextSet[0];
-                    String bepXmlOffset = "";
-                    for (String thisBepOL : bepOLListV) {
-                        String[] bepOLSA = thisBepOL.split(" : ");
-                        if (bepOLSA[1].equals(bepSCROffset)) {
-                            bepXmlOffset = bepOLSA[0];
-                        }
-                    }
-                    this.currTopicXmlPath = myRSCManager.getCurrTopicXmlFile();
-                    if (Boolean.valueOf(System.getProperty(sysPropertyIsTopicWikiKey))) {
-                        this.currTopicID = currTopicXmlPath.substring(currTopicXmlPath.lastIndexOf(File.separator) + 1, currTopicXmlPath.length() - 4);
-                    } else {
-                        this.currTopicID = currTopicXmlPath.substring(currTopicXmlPath.lastIndexOf(File.separator) + 1, currTopicXmlPath.length() - 4);
-                    }
-                    this.myPaneTable.setDefaultRenderer(Object.class, new AttributiveCellRenderer(currTopicID, linkAnchorXmlOL, bepXmlOffset, anchorFileID, isOutgoingTAB));
-                    this.myPaneTable.repaint();
-                // </editor-fold>
-                }
+////                    if (anchorXmlFilePath.startsWith(myRSCManager.getWikipediaCollectionFolder())) {
+//                        isWikipedia = true;
+////                    } else if (anchorXmlFilePath.startsWith(myRSCManager.getTeAraCollectionFolder())) {
+////                        isWikipedia = false;
+////                    }
+//                    Xml2Html xmlParser = new Xml2Html(anchorXmlFilePath, isWikipedia);
+//                    String xmlHtmlText = xmlParser.getHtmlContent().toString();
+//                    this.linkTextPane.setContentType(paneContentType);
+//                    this.linkTextPane.setText(xmlHtmlText);
+//                    this.linkTextPane.setCaretPosition(0);
+//                    // ---------------------------------------------------------
+//                    // get SCR Anchor Offset-Length
+//                    String[] mySCRAnchorSEPos = myFOLMatcher.getSCRAnchorPosSA(linkTextPane, anchorFileID, new String[]{anchorOffset, anchorLength, anchorName});
+//                    // Highlight Anchor Txt in JTextPane
+//                    boolean isAssessment = false;
+//                    updateLinkAnchorTxtsHighlight(linkTextPane, mySCRAnchorSEPos, isAssessment);
+//                    // ---------------------------------------------------------
+//                    // Renew Link Text Pane Listener for Detecting Anchor Text & Right/Left Click
+//                    System.setProperty(sysPropertyKey, String.valueOf(isOutgoingTAB));
+////                    linkPaneMouseListener myLPMListener = new linkPaneMouseListener(this.topicTextPane, this.linkTextPane, this.myPaneTable);
+////                    this.linkTextPane.addMouseListener(myLPMListener);
+//                    this.linkTextPane.getCaret().setDot(Integer.valueOf(mySCRAnchorSEPos[1].trim()));
+//                    this.linkTextPane.scrollRectToVisible(this.linkTextPane.getVisibleRect());
+//                    this.linkTextPane.repaint();
+//                    // -------------------------------------------------------------
+//                    // -------------------------------------------------------------
+//                    // Highlight TBATable ROW:
+//                    String[] linkAnchorXmlOL = new String[]{anchorOffset, anchorLength};
+//                    Vector<String> bepOLListV = myRSCManager.getCurrBepsOV();
+//                    String bepSCROffset = SEPosTextSet[0];
+//                    String bepXmlOffset = "";
+//                    for (String thisBepOL : bepOLListV) {
+//                        String[] bepOLSA = thisBepOL.split(" : ");
+//                        if (bepOLSA[1].equals(bepSCROffset)) {
+//                            bepXmlOffset = bepOLSA[0];
+//                        }
+//                    }
+//                    this.currTopicXmlPath = myRSCManager.getCurrTopicXmlFile();
+//                    if (Boolean.valueOf(System.getProperty(sysPropertyIsTopicWikiKey))) {
+//                        this.currTopicID = currTopicXmlPath.substring(currTopicXmlPath.lastIndexOf(File.separator) + 1, currTopicXmlPath.length() - 4);
+//                    } else {
+//                        this.currTopicID = currTopicXmlPath.substring(currTopicXmlPath.lastIndexOf(File.separator) + 1, currTopicXmlPath.length() - 4);
+//                    }
+//                    this.myPaneTable.setDefaultRenderer(Object.class, new AttributiveCellRenderer(currTopicID, linkAnchorXmlOL, bepXmlOffset, anchorFileID, isOutgoingTAB));
+//                    this.myPaneTable.repaint();
+//                // </editor-fold>
+//                }
             }
         // </editor-fold>
         }
@@ -535,7 +536,7 @@ public class topicPaneMouseListener implements MouseInputListener {
             Vector<String[]> myVSA = aLinksHM.get(keyObj);
             String[] keySA = keyObj.toString().split("_");
             String[] thisAnchorSet = new String[]{keySA[0], String.valueOf(Integer.valueOf(keySA[1]) - Integer.valueOf(keySA[0])), keySA[2]};
-            String[] scrAnchorPosSA = myFOLMatcher.getSCRAnchorPosSA(topicTextPane, currTopicID, thisAnchorSet, true);
+            String[] scrAnchorPosSA = myFOLMatcher.getSCRAnchorPosSA(topicTextPane, currTopicID, thisAnchorSet, true, AppResource.sourceLang);
             String mySCRAnchorPos = scrAnchorPosSA[1] + "_" + scrAnchorPosSA[2];
             bepFileSAVBySCRAnchorOLHM.put(mySCRAnchorPos, myVSA);
         }

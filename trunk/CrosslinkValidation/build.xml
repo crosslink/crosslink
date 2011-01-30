@@ -71,4 +71,17 @@
     nbproject/build-impl.xml file. 
 
     -->
+	
+    <target name="release" depends="CrosslinkValidation-impl.jar">
+    	  <tstamp>
+    	    <format property="TODAY" pattern="yyyyMMDD"/>
+    	  </tstamp>
+    	  <zip destfile="CrosslinkValidation-${TODAY}.zip">
+    	  	<zipfileset dir="resources" prefix="resources" />
+    	  	<zipfileset dir="lib" prefix="lib" />
+    	  	<zipfileset dir="." includes="Instruction_v01.docx"/>
+    	  	<zipfileset dir="." includes="run.*"/>
+    	  	<zipfileset dir="${dist.dir}" includes="*.jar"/>
+    	  </zip>
+    </target>
 </project>
