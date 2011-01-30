@@ -9,12 +9,10 @@
 	<classpathentry kind="lib" path="lib/swing-worker-1.2.jar"/>
 	<classpathentry kind="lib" path="lib/vtd-xml.jar"/>
 	<classpathentry kind="lib" path="lib/xercesImpl.jar"/>
-	<classpathentry kind="lib" path="lib/xercesSamples.jar"/>
 	<classpathentry kind="lib" path="lib/xml-apis.jar"/>
-	<classpathentry kind="lib" path="/xml2txt/dist/xml2txt.jar"/>
 	<classpathentry kind="src" path="/xml2txt"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/AssessmentEngine"/>
-	<classpathentry kind="lib" path="/AssessmentEngine/dist/assessment-engine.jar"/>
-	<classpathentry kind="lib" path="/home/monfee/workspace/AssessmentEngine/dist/assessment-engine.jar"/>
+	<classpathentry kind="lib" path="lib/xml2txt.jar"/>
+	<classpathentry kind="lib" path="lib/assessment-engine.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
