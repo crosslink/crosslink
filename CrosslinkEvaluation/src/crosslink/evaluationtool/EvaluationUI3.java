@@ -11,6 +11,8 @@ import java.awt.event.ActionEvent;
 import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.*;
 import javax.xml.XMLConstants;
 import javax.xml.bind.JAXBContext;
@@ -84,14 +86,17 @@ public class EvaluationUI3 extends JFrame {
 
         runTbRowMenu = new javax.swing.JPopupMenu();
         jMenuItemDelete = new javax.swing.JMenuItem();
+        buttonGroup1 = new javax.swing.ButtonGroup();
+        buttonGroup2 = new javax.swing.ButtonGroup();
+        rsGroup = new javax.swing.ButtonGroup();
         openfilesPanel = new javax.swing.JPanel();
         filedirectoryTextField = new javax.swing.JTextField();
         openfilesButton = new javax.swing.JButton();
         filecleanButton = new javax.swing.JButton();
         jPanel6 = new javax.swing.JPanel();
-        byrunRadioButton = new javax.swing.JRadioButton();
-        byrunRadioButton2 = new javax.swing.JRadioButton();
-        byrunRadioButton3 = new javax.swing.JRadioButton();
+        jRBF2FWikirs = new javax.swing.JRadioButton();
+        jRBA2BWikirs = new javax.swing.JRadioButton();
+        jRBA2BManualrs = new javax.swing.JRadioButton();
         filecleanButton1 = new javax.swing.JButton();
         runtablePanel = new javax.swing.JPanel();
         fullruntableButton = new javax.swing.JButton();
@@ -107,8 +112,12 @@ public class EvaluationUI3 extends JFrame {
         RPCurveRadioButton = new javax.swing.JRadioButton();
         getplotsButton = new javax.swing.JButton();
         calculationPanel1 = new javax.swing.JPanel();
-        byrunRadioButton1 = new javax.swing.JRadioButton();
         evaluateButton1 = new javax.swing.JButton();
+        jRBFileToFile = new javax.swing.JRadioButton();
+        jRBFileToBep = new javax.swing.JRadioButton();
+        topicSelectionPanel = new javax.swing.JPanel();
+        jRBalltopics = new javax.swing.JRadioButton();
+        jRBonlysubmitted = new javax.swing.JRadioButton();
         fileMenuBar = new javax.swing.JMenuBar();
         fileMenu = new javax.swing.JMenu();
         aboutMenuItem = new javax.swing.JMenuItem();
@@ -121,6 +130,9 @@ public class EvaluationUI3 extends JFrame {
             }
         });
         runTbRowMenu.add(jMenuItemDelete);
+
+        add(jRBalltopics);
+        add(jRBonlysubmitted);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Link the Wiki Evaluation Tool");
@@ -142,17 +154,17 @@ public class EvaluationUI3 extends JFrame {
 
         jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Result Calculation", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
 
-        byrunRadioButton.setSelected(true);
-        byrunRadioButton.setText("by Run");
-        byrunRadioButton.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
+        jRBF2FWikirs.setSelected(true);
+        jRBF2FWikirs.setText("F2F Ground-Truth");
+        jRBF2FWikirs.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
 
-        byrunRadioButton2.setSelected(true);
-        byrunRadioButton2.setText("by Run");
-        byrunRadioButton2.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
+        jRBA2BWikirs.setSelected(true);
+        jRBA2BWikirs.setText("A2B Ground-Truth");
+        jRBA2BWikirs.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
 
-        byrunRadioButton3.setSelected(true);
-        byrunRadioButton3.setText("by Run");
-        byrunRadioButton3.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
+        jRBA2BManualrs.setSelected(true);
+        jRBA2BManualrs.setText("A2B Manual Assessment");
+        jRBA2BManualrs.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
 
         org.jdesktop.layout.GroupLayout jPanel6Layout = new org.jdesktop.layout.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -160,19 +172,19 @@ public class EvaluationUI3 extends JFrame {
             jPanel6Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(jPanel6Layout.createSequentialGroup()
                 .addContainerGap()
-                .add(byrunRadioButton)
+                .add(jRBF2FWikirs)
                 .add(40, 40, 40)
-                .add(byrunRadioButton2)
+                .add(jRBA2BWikirs)
                 .add(45, 45, 45)
-                .add(byrunRadioButton3)
-                .addContainerGap(347, Short.MAX_VALUE))
+                .add(jRBA2BManualrs)
+                .addContainerGap(91, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(jPanel6Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                .add(byrunRadioButton)
-                .add(byrunRadioButton2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 17, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .add(byrunRadioButton3, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 17, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .add(jRBF2FWikirs)
+                .add(jRBA2BWikirs, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 17, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(jRBA2BManualrs, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 17, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
         );
 
         filecleanButton1.setText("Load");
@@ -247,19 +259,17 @@ public class EvaluationUI3 extends JFrame {
         runtablePanelLayout.setHorizontalGroup(
             runtablePanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(runtablePanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .add(runtablePanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(org.jdesktop.layout.GroupLayout.TRAILING, runtablePanelLayout.createSequentialGroup()
-                        .add(fullruntableButton)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(runtablecleanallButton))
-                    .add(org.jdesktop.layout.GroupLayout.TRAILING, runTablePanelHolder, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 636, Short.MAX_VALUE)))
+                .addContainerGap(418, Short.MAX_VALUE)
+                .add(fullruntableButton)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(runtablecleanallButton))
+            .add(org.jdesktop.layout.GroupLayout.TRAILING, runTablePanelHolder, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 636, Short.MAX_VALUE)
         );
         runtablePanelLayout.setVerticalGroup(
             runtablePanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(org.jdesktop.layout.GroupLayout.TRAILING, runtablePanelLayout.createSequentialGroup()
-                .add(runTablePanelHolder, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 143, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .add(runTablePanelHolder, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 129, Short.MAX_VALUE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(runtablePanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(fullruntableButton)
                     .add(runtablecleanallButton)))
@@ -287,17 +297,17 @@ public class EvaluationUI3 extends JFrame {
         evatablePanel.setLayout(evatablePanelLayout);
         evatablePanelLayout.setHorizontalGroup(
             evatablePanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(evaTablePanelHolder, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 636, Short.MAX_VALUE)
             .add(org.jdesktop.layout.GroupLayout.TRAILING, evatablePanelLayout.createSequentialGroup()
-                .addContainerGap(306, Short.MAX_VALUE)
+                .addContainerGap(364, Short.MAX_VALUE)
                 .add(fullevatableButton)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(evatablecleanallButton)
-                .add(82, 82, 82))
-            .add(evaTablePanelHolder, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 648, Short.MAX_VALUE)
+                .addContainerGap())
         );
         evatablePanelLayout.setVerticalGroup(
             evatablePanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(org.jdesktop.layout.GroupLayout.TRAILING, evatablePanelLayout.createSequentialGroup()
+            .add(evatablePanelLayout.createSequentialGroup()
                 .add(evaTablePanelHolder, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 203, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .add(evatablePanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
@@ -314,12 +324,7 @@ public class EvaluationUI3 extends JFrame {
         getplotsButton.setText("Get Plots");
         getplotsButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                try {
-					getplotsButtonActionPerformed(evt);
-				} catch (Exception e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
+                getplotsButtonActionPerformed(evt);
             }
         });
 
@@ -330,7 +335,7 @@ public class EvaluationUI3 extends JFrame {
             .add(org.jdesktop.layout.GroupLayout.TRAILING, plotPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .add(RPCurveRadioButton)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 386, Short.MAX_VALUE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 374, Short.MAX_VALUE)
                 .add(getplotsButton)
                 .addContainerGap())
         );
@@ -343,10 +348,6 @@ public class EvaluationUI3 extends JFrame {
 
         calculationPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Result Calculation", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
 
-        byrunRadioButton1.setSelected(true);
-        byrunRadioButton1.setText("by Run");
-        byrunRadioButton1.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
-
         evaluateButton1.setText("Evaluate");
         evaluateButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -354,22 +355,71 @@ public class EvaluationUI3 extends JFrame {
             }
         });
 
+        jRBFileToFile.setSelected(true);
+        jRBFileToFile.setText("File to File");
+
+        jRBFileToBep.setText("File to Bep");
+
         org.jdesktop.layout.GroupLayout calculationPanel1Layout = new org.jdesktop.layout.GroupLayout(calculationPanel1);
         calculationPanel1.setLayout(calculationPanel1Layout);
         calculationPanel1Layout.setHorizontalGroup(
             calculationPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(calculationPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .add(byrunRadioButton1)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 474, Short.MAX_VALUE)
+                .add(jRBFileToFile)
+                .add(48, 48, 48)
+                .add(jRBFileToBep)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 302, Short.MAX_VALUE)
                 .add(evaluateButton1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 86, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         calculationPanel1Layout.setVerticalGroup(
             calculationPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(calculationPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                .add(byrunRadioButton1)
-                .add(evaluateButton1))
+            .add(calculationPanel1Layout.createSequentialGroup()
+                .add(calculationPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(calculationPanel1Layout.createSequentialGroup()
+                        .add(23, 23, 23)
+                        .add(calculationPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                            .add(jRBFileToFile)
+                            .add(jRBFileToBep)))
+                    .add(calculationPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .add(evaluateButton1)))
+                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        topicSelectionPanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Topic Selection", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
+
+        jRBalltopics.setSelected(true);
+        jRBalltopics.setText("Use all topics");
+        jRBalltopics.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
+
+        jRBonlysubmitted.setText("Use only submitted topics");
+        jRBonlysubmitted.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
+
+        org.jdesktop.layout.GroupLayout topicSelectionPanelLayout = new org.jdesktop.layout.GroupLayout(topicSelectionPanel);
+        topicSelectionPanel.setLayout(topicSelectionPanelLayout);
+        topicSelectionPanelLayout.setHorizontalGroup(
+            topicSelectionPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(0, 636, Short.MAX_VALUE)
+            .add(topicSelectionPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                .add(topicSelectionPanelLayout.createSequentialGroup()
+                    .addContainerGap()
+                    .add(jRBalltopics)
+                    .add(28, 28, 28)
+                    .add(jRBonlysubmitted)
+                    .addContainerGap(303, Short.MAX_VALUE)))
+        );
+        topicSelectionPanelLayout.setVerticalGroup(
+            topicSelectionPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(0, 50, Short.MAX_VALUE)
+            .add(topicSelectionPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                .add(topicSelectionPanelLayout.createSequentialGroup()
+                    .add(16, 16, 16)
+                    .add(topicSelectionPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                        .add(jRBalltopics)
+                        .add(jRBonlysubmitted))
+                    .addContainerGap(17, Short.MAX_VALUE)))
         );
 
         fileMenu.setMnemonic('F');
@@ -403,35 +453,34 @@ public class EvaluationUI3 extends JFrame {
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(layout.createSequentialGroup()
                 .addContainerGap()
-                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, plotPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, evatablePanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, runtablePanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, openfilesPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(openfilesPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .add(layout.createSequentialGroup()
+                        .add(12, 12, 12)
+                        .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(org.jdesktop.layout.GroupLayout.TRAILING, plotPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .add(org.jdesktop.layout.GroupLayout.TRAILING, evatablePanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .add(org.jdesktop.layout.GroupLayout.TRAILING, calculationPanel1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .add(runtablePanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .add(topicSelectionPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap())
-            .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                .add(layout.createSequentialGroup()
-                    .add(12, 12, 12)
-                    .add(calculationPanel1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .add(12, 12, 12)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(org.jdesktop.layout.GroupLayout.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(36, Short.MAX_VALUE)
+                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .add(openfilesPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(runtablePanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .add(68, 68, 68)
+                .add(18, 18, 18)
+                .add(topicSelectionPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(19, 19, 19)
+                .add(calculationPanel1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(evatablePanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(plotPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
-            .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                .add(org.jdesktop.layout.GroupLayout.TRAILING, layout.createSequentialGroup()
-                    .addContainerGap(395, Short.MAX_VALUE)
-                    .add(calculationPanel1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                    .add(335, 335, 335)))
         );
 
         pack();
@@ -1027,10 +1076,8 @@ public class EvaluationUI3 extends JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JRadioButton RPCurveRadioButton;
     private javax.swing.JMenuItem aboutMenuItem;
-    private javax.swing.JRadioButton byrunRadioButton;
-    private javax.swing.JRadioButton byrunRadioButton1;
-    private javax.swing.JRadioButton byrunRadioButton2;
-    private javax.swing.JRadioButton byrunRadioButton3;
+    private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.JPanel calculationPanel1;
     private javax.swing.JPanel evaTablePanelHolder;
     private javax.swing.JButton evaluateButton1;
@@ -1047,13 +1094,22 @@ public class EvaluationUI3 extends JFrame {
     private javax.swing.JButton getplotsButton;
     private javax.swing.JMenuItem jMenuItemDelete;
     private javax.swing.JPanel jPanel6;
+    private javax.swing.JRadioButton jRBA2BManualrs;
+    private javax.swing.JRadioButton jRBA2BWikirs;
+    private javax.swing.JRadioButton jRBF2FWikirs;
+    private javax.swing.JRadioButton jRBFileToBep;
+    private javax.swing.JRadioButton jRBFileToFile;
+    private javax.swing.JRadioButton jRBalltopics;
+    private javax.swing.JRadioButton jRBonlysubmitted;
     private javax.swing.JButton openfilesButton;
     private javax.swing.JPanel openfilesPanel;
     private javax.swing.JPanel plotPanel;
+    private javax.swing.ButtonGroup rsGroup;
     private javax.swing.JPanel runTablePanelHolder;
     private javax.swing.JPopupMenu runTbRowMenu;
     private javax.swing.JPanel runtablePanel;
     private javax.swing.JButton runtablecleanallButton;
+    private javax.swing.JPanel topicSelectionPanel;
     // End of variables declaration//GEN-END:variables
 
 }
