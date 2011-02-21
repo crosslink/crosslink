@@ -141,7 +141,7 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="filecleanButton" min="-2" pref="90" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                                  <Component id="filecleanButton1" min="-2" pref="90" max="-2" attributes="0"/>
+                                  <Component id="uploadButton" min="-2" pref="90" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="filedirectoryTextField" pref="596" max="32767" attributes="0"/>
@@ -167,7 +167,7 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="filecleanButton1" min="-2" max="-2" attributes="0"/>
+                          <Component id="uploadButton" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
@@ -284,7 +284,7 @@
             </Component>
           </SubComponents>
         </Container>
-        <Component class="javax.swing.JButton" name="filecleanButton1">
+        <Component class="javax.swing.JButton" name="uploadButton">
           <Properties>
             <Property name="text" type="java.lang.String" value="Load"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -292,7 +292,7 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="filecleanButton1ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="uploadButtonActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
@@ -547,7 +547,7 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Component id="evaluateButton1" alignment="0" pref="692" max="32767" attributes="0"/>
+              <Component id="evaluateButton" alignment="0" pref="692" max="32767" attributes="0"/>
               <Component id="calculationPanel1" alignment="0" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
@@ -557,7 +557,7 @@
                   <EmptySpace max="32767" attributes="0"/>
                   <Component id="calculationPanel1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="evaluateButton1" min="-2" max="-2" attributes="0"/>
+                  <Component id="evaluateButton" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -619,12 +619,12 @@
             </Component>
           </SubComponents>
         </Container>
-        <Component class="javax.swing.JButton" name="evaluateButton1">
+        <Component class="javax.swing.JButton" name="evaluateButton">
           <Properties>
             <Property name="text" type="java.lang.String" value="Evaluate"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="evaluateButton1ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="evaluateButtonActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
