@@ -100,7 +100,7 @@ public class EvaluationUI3 extends JFrame {
         jRBA2BWikirs = new javax.swing.JRadioButton();
 
         jRBA2BManualrs = new javax.swing.JRadioButton();
-        filecleanButton1 = new javax.swing.JButton();
+        uploadButton = new javax.swing.JButton();
         runtablePanel = new javax.swing.JPanel();
         fullruntableButton = new javax.swing.JButton();
         runtablecleanallButton = new javax.swing.JButton();
@@ -121,7 +121,7 @@ public class EvaluationUI3 extends JFrame {
         calculationPanel1 = new javax.swing.JPanel();
         jRBFileToFile = new javax.swing.JRadioButton();
         jRBFileToBep = new javax.swing.JRadioButton();
-        evaluateButton1 = new javax.swing.JButton();
+        evaluateButton = new javax.swing.JButton();
         fileMenuBar = new javax.swing.JMenuBar();
         fileMenu = new javax.swing.JMenu();
         aboutMenuItem = new javax.swing.JMenuItem();
@@ -195,11 +195,11 @@ public class EvaluationUI3 extends JFrame {
 
         jRBA2BWikirs.setVisible(false);
 
-        filecleanButton1.setText("Load");
-        filecleanButton1.setPreferredSize(new java.awt.Dimension(180, 23));
-        filecleanButton1.addActionListener(new java.awt.event.ActionListener() {
+        uploadButton.setText("Load");
+        uploadButton.setPreferredSize(new java.awt.Dimension(180, 23));
+        uploadButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                filecleanButton1ActionPerformed(evt);
+                uploadButtonActionPerformed(evt);
             }
         });
 
@@ -216,7 +216,7 @@ public class EvaluationUI3 extends JFrame {
                             .add(openfilesPanelLayout.createSequentialGroup()
                                 .add(filecleanButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 90, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                                 .add(18, 18, 18)
-                                .add(filecleanButton1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 90, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                                .add(uploadButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 90, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                             .add(openfilesPanelLayout.createSequentialGroup()
                                 .add(filedirectoryTextField, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 596, Short.MAX_VALUE)
                                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
@@ -234,7 +234,7 @@ public class EvaluationUI3 extends JFrame {
                 .add(openfilesPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                     .add(openfilesPanelLayout.createSequentialGroup()
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(filecleanButton1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                        .add(uploadButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                     .add(openfilesPanelLayout.createSequentialGroup()
                         .add(6, 6, 6)
                         .add(filecleanButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
@@ -412,10 +412,10 @@ public class EvaluationUI3 extends JFrame {
                 .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        evaluateButton1.setText("Evaluate");
-        evaluateButton1.addActionListener(new java.awt.event.ActionListener() {
+        evaluateButton.setText("Evaluate");
+        evaluateButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                evaluateButton1ActionPerformed(evt);
+                evaluateButtonActionPerformed(evt);
             }
         });
 
@@ -423,7 +423,7 @@ public class EvaluationUI3 extends JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(evaluateButton1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 692, Short.MAX_VALUE)
+            .add(evaluateButton, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 692, Short.MAX_VALUE)
             .add(calculationPanel1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
@@ -432,7 +432,7 @@ public class EvaluationUI3 extends JFrame {
                 .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .add(calculationPanel1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
-                .add(evaluateButton1)
+                .add(evaluateButton)
                 .addContainerGap())
         );
 
@@ -722,7 +722,7 @@ public class EvaluationUI3 extends JFrame {
         this.realRunTablePanel.cleanAllRunTable();
     }//GEN-LAST:event_runtablecleanallButtonActionPerformed
 
-    private void uploadButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_uploadButtonActionPerformed
+    private void load() {
         // BUGS: NEED to be fixed
 
         String[] fl = this.filedirectoryTextField.getText().split(";");
@@ -771,7 +771,7 @@ public class EvaluationUI3 extends JFrame {
         }
 
         this.filedirectoryTextField.setText(strFiles);
-    }//GEN-LAST:event_uploadButtonActionPerformed
+    }
 
     private void filecleanButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_filecleanButtonActionPerformed
         filedirectoryTextField.setText("");
@@ -879,12 +879,163 @@ public class EvaluationUI3 extends JFrame {
         }
     }//GEN-LAST:event_openfilesButtonActionPerformed
 
-    private void evaluateButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_evaluateButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_evaluateButton1ActionPerformed
+    private void evaluateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_evaluateButtonActionPerformed
+        try {
+            resultFilePath = getResultSetPath();
+            File resultFile = new File(resultFilePath);
+            ArrayList<Object[]> result = new ArrayList<Object[]>();
 
-    private void filecleanButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_filecleanButton1ActionPerformed
-        // TODO add your handling code here:
+            boolean useAllTopics = false;
+            boolean useFileToBep = false;
+            boolean useAnchorGToFile = false;
+            boolean useAnchorGToBEP = false;
+
+            if (this.jRBalltopics.getModel().isSelected()) {
+                useAllTopics = true;
+            }
+            if (this.jRBFileToBep.getModel().isSelected()) {
+                useFileToBep = true;
+            }
+//            else if (this.jRBAnchorToFile.getModel().isSelected()) {
+//                useAnchorGToFile = true;
+//            } else if (this.jRBAnchorToBEP.getModel().isSelected()) {
+//                useAnchorGToBEP = true;
+//            }
+
+            Color[][] spColor = {
+                {new Color(150, 0, 0), new Color(150, 0, 0), new Color(150, 0, 0)},
+                {new Color(0, 150, 0), new Color(0, 150, 0), new Color(0, 150, 0)},
+                {new Color(0, 0, 150), new Color(0, 0, 150), new Color(0, 0, 150)},
+                {new Color(150, 150, 0), new Color(150, 150, 0), new Color(150, 150, 0)},
+                {new Color(200, 0, 200), new Color(200, 0, 200), new Color(200, 0, 200)}
+            };
+
+
+
+            for (int i = 0; i < this.runFileCache.length; i++) {
+
+                metricsCalculation.EvaluationResult er;
+
+                er = metricsCalculation.calculate(resultFile, this.runFileCache[i], useAllTopics, useFileToBep, useAnchorGToFile, useAnchorGToBEP);
+
+//                if (i < 5) {
+//                    result.add(new Object[]{
+//                        er.runId, "incoming", er.incomming[metricsCalculation.R_MAP],
+//                        er.incomming[metricsCalculation.R_RPREC],er.incomming[metricsCalculation.R_P5],
+//                        er.incomming[metricsCalculation.R_P10],
+//                        er.incomming[metricsCalculation.R_P20],
+//                        er.incomming[metricsCalculation.R_P30], er.incomming[metricsCalculation.R_P50],
+//                        er.incomming[metricsCalculation.R_P250],
+//                        spColor[i][0], Boolean.TRUE, Boolean.FALSE
+//                    });
+//                    result.add(new Object[]{
+//                        er.runId, "outgoing", er.outgoing[metricsCalculation.R_MAP],
+//                        er.outgoing[metricsCalculation.R_RPREC],er.outgoing[metricsCalculation.R_P5],
+//                        er.outgoing[metricsCalculation.R_P10],
+//                        er.outgoing[metricsCalculation.R_P20],
+//                        er.outgoing[metricsCalculation.R_P30], er.outgoing[metricsCalculation.R_P50],
+//                        er.outgoing[metricsCalculation.R_P250],
+//                        spColor[i][1], Boolean.TRUE, Boolean.FALSE
+//                    });
+//                    result.add(new Object[]{
+//                        er.runId, "f_score", er.combination[metricsCalculation.R_MAP],
+//                        er.combination[metricsCalculation.R_RPREC],er.combination[metricsCalculation.R_P5],
+//                        er.combination[metricsCalculation.R_P10],
+//                        er.combination[metricsCalculation.R_P20],
+//                        er.combination[metricsCalculation.R_P30], er.combination[metricsCalculation.R_P50],
+//                        er.combination[metricsCalculation.R_P250],
+//                        spColor[i][2], Boolean.TRUE, Boolean.FALSE
+//                    });
+//                } else {
+//                result.add(new Object[]{
+//                            er.runId, "incoming", er.incomming[metricsCalculation.R_MAP],
+//                            er.incomming[metricsCalculation.R_RPREC], er.incomming[metricsCalculation.R_P5],
+//                            er.incomming[metricsCalculation.R_P10],
+//                            er.incomming[metricsCalculation.R_P20],
+//                            er.incomming[metricsCalculation.R_P30], er.incomming[metricsCalculation.R_P50],
+//                            er.incomming[metricsCalculation.R_P250],
+//                            Color.LIGHT_GRAY, Boolean.FALSE, Boolean.FALSE
+//                        });
+                result.add(new Object[]{
+                            er.runId, "outgoing", er.outgoing[metricsCalculation.R_MAP],
+                            er.outgoing[metricsCalculation.R_RPREC], er.outgoing[metricsCalculation.R_P5],
+                            er.outgoing[metricsCalculation.R_P10],
+                            er.outgoing[metricsCalculation.R_P20],
+                            er.outgoing[metricsCalculation.R_P30], er.outgoing[metricsCalculation.R_P50],
+                            er.outgoing[metricsCalculation.R_P250],
+                            Color.LIGHT_GRAY, Boolean.FALSE, Boolean.FALSE
+                        });
+//                result.add(new Object[]{
+//                            er.runId, "f_score", er.combination[metricsCalculation.R_MAP],
+//                            er.combination[metricsCalculation.R_RPREC], er.combination[metricsCalculation.R_P5],
+//                            er.combination[metricsCalculation.R_P10],
+//                            er.combination[metricsCalculation.R_P20],
+//                            er.combination[metricsCalculation.R_P30], er.combination[metricsCalculation.R_P50],
+//                            er.combination[metricsCalculation.R_P250],
+//                            Color.LIGHT_GRAY, Boolean.FALSE, Boolean.FALSE
+//                        });
+//                }
+            }
+            // -----------------------------------------------------------------
+            // =================================================================
+            // Sort the "result" by f-score value decreasingly
+            Object[][] objData = new Object[result.size()][];
+            for (int i = 0; i < result.size(); i++) {
+                objData[i] = result.get(i);
+            }
+
+            Object[][] evaData = null;
+            if (result.size() > 1) {
+	            Hashtable compareHash = new Hashtable();
+
+	            for (int j = 1; j < objData.length; j = j + 2) {
+	                ArrayList<Object[]> threeColl = new ArrayList<Object[]>();
+	//                threeColl.add(objData[j - 2]);
+	                threeColl.add(objData[j - 1]);
+	                threeColl.add(objData[j]);
+	                compareHash.put(objData[j][2], threeColl);
+	            }
+	            Vector v = new Vector(compareHash.keySet());
+	            Collections.sort(v, Collections.reverseOrder());
+
+	            evaData = new Object[result.size()][];
+	            int sortIndex = 0;
+	            int colorCount = 0;
+	            for (Enumeration e = v.elements(); e.hasMoreElements();) {
+	                Object key = (Object) e.nextElement();
+	                ArrayList<Object[]> sortColl = (ArrayList<Object[]>) compareHash.get(key);
+	                evaData[sortIndex] = sortColl.get(0);
+	                evaData[sortIndex + 1] = sortColl.get(1);
+	//                evaData[sortIndex + 2] = sortColl.get(2);
+	                if (colorCount < 5) {
+	                    evaData[sortIndex][10] = spColor[colorCount][0];
+	                    evaData[sortIndex + 1][10] = spColor[colorCount][1];
+	//                    evaData[sortIndex + 2][10] = spColor[colorCount][2];
+	                    evaData[sortIndex][11] = Boolean.TRUE;
+	                    evaData[sortIndex + 1][11] = Boolean.TRUE;
+	//                    evaData[sortIndex + 2][11] = Boolean.TRUE;
+	                }
+	                colorCount++;
+	                sortIndex = sortIndex + 2;
+	            }
+            }
+            else {
+            	evaData = objData;
+            	evaData[0][10] = spColor[0][0];
+            }
+            // END of sort the result
+            // =================================================================
+            // -----------------------------------------------------------------
+
+            this.realEvaTablePanel.evaluateRunsToTable(evaData);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+//            JOptionPane.showMessageDialog(this, ex.toString(), "Exception Board", JOptionPane.ERROR_MESSAGE);
+        }
+    }//GEN-LAST:event_evaluateButtonActionPerformed
+
+    private void uploadButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_filecleanButton1ActionPerformed
+    	load();
     }//GEN-LAST:event_filecleanButton1ActionPerformed
 
     private ArrayList<String[]> retrieveRunData(File[] file) {
@@ -1101,14 +1252,13 @@ public class EvaluationUI3 extends JFrame {
     private javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.JPanel calculationPanel1;
     private javax.swing.JPanel evaTablePanelHolder;
-    private javax.swing.JButton evaluateButton1;
+    private javax.swing.JButton evaluateButton;
     private javax.swing.JPanel evatablePanel;
     private javax.swing.JButton evatablecleanallButton;
     private javax.swing.JMenuItem exitMenuItem;
     private javax.swing.JMenu fileMenu;
     private javax.swing.JMenuBar fileMenuBar;
     private javax.swing.JButton filecleanButton;
-    private javax.swing.JButton filecleanButton1;
     private javax.swing.JTextField filedirectoryTextField;
     private javax.swing.JButton fullevatableButton;
     private javax.swing.JButton fullruntableButton;
@@ -1132,6 +1282,7 @@ public class EvaluationUI3 extends JFrame {
     private javax.swing.JPanel runtablePanel;
     private javax.swing.JButton runtablecleanallButton;
     private javax.swing.JPanel topicSelectionPanel;
+    private javax.swing.JButton uploadButton;
     // End of variables declaration//GEN-END:variables
 
 }
