@@ -303,6 +303,7 @@ public class LTWAssessmentToolView extends FrameView {
 
         jSplitPane1.setBackground(resourceMap.getColor("jSplitPane1.background")); // NOI18N
         jSplitPane1.setBorder(null);
+        jSplitPane1.setMinimumSize(new java.awt.Dimension(254, 350));
         jSplitPane1.setName("jSplitPane1"); // NOI18N
 
         topicTextScrollPane.setBackground(resourceMap.getColor("topicTextScrollPane.background")); // NOI18N
@@ -315,6 +316,7 @@ public class LTWAssessmentToolView extends FrameView {
         topicTextPane.setEditable(false);
         topicTextPane.setDragEnabled(true);
         topicTextPane.setMaximumSize(new java.awt.Dimension(1600, 1600));
+        topicTextPane.setMinimumSize(new java.awt.Dimension(256, 430));
         topicTextPane.setName("topicTextPane"); // NOI18N
         topicTextPane.setPreferredSize(new java.awt.Dimension(500, 644));
         topicTextScrollPane.setViewportView(topicTextPane);
@@ -333,8 +335,7 @@ public class LTWAssessmentToolView extends FrameView {
         linkTextPane.setBackground(resourceMap.getColor("linkTextPane.background")); // NOI18N
         linkTextPane.setEditable(false);
         linkTextPane.setFont(resourceMap.getFont("linkTextPane.font")); // NOI18N
-        linkTextPane.setAutoscrolls(true);
-        linkTextPane.setMinimumSize(new java.awt.Dimension(525, 444));
+        linkTextPane.setMinimumSize(new java.awt.Dimension(125, 244));
         linkTextPane.setName("linkTextPane"); // NOI18N
         linkTextPane.setPreferredSize(new java.awt.Dimension(525, 444));
         linkTextScrollPane.setViewportView(linkTextPane);
@@ -354,7 +355,10 @@ public class LTWAssessmentToolView extends FrameView {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
+        anchorBepTable.setMaximumSize(new java.awt.Dimension(2147, 720));
+        anchorBepTable.setMinimumSize(new java.awt.Dimension(10, 32));
         anchorBepTable.setName("anchorBepTable"); // NOI18N
+        anchorBepTable.setPreferredSize(new java.awt.Dimension(10, 72));
         anchorBepTablePane.setViewportView(anchorBepTable);
 
         rightSplitPane.setRightComponent(anchorBepTablePane);
@@ -427,7 +431,7 @@ public class LTWAssessmentToolView extends FrameView {
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblTopicID, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(60, Short.MAX_VALUE))
+                .addContainerGap(76, Short.MAX_VALUE))
             .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel2Layout.createSequentialGroup()
                     .addGap(2156, 2156, 2156)
@@ -465,19 +469,19 @@ public class LTWAssessmentToolView extends FrameView {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 1385, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(192, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(jSplitPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1577, Short.MAX_VALUE))
+                .addComponent(jSplitPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1397, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(58, Short.MAX_VALUE))
+                .addContainerGap(354, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                     .addGap(64, 64, 64)
-                    .addComponent(jSplitPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 54, Short.MAX_VALUE)))
+                    .addComponent(jSplitPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 350, Short.MAX_VALUE)))
         );
 
         jSplitPane2.setLeftComponent(jPanel1);
@@ -516,7 +520,7 @@ public class LTWAssessmentToolView extends FrameView {
                 .addGap(18, 18, 18)
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabelCollection, javax.swing.GroupLayout.DEFAULT_SIZE, 938, Short.MAX_VALUE)
+                .addComponent(jLabelCollection, javax.swing.GroupLayout.DEFAULT_SIZE, 760, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel4Layout.setVerticalGroup(
@@ -535,12 +539,12 @@ public class LTWAssessmentToolView extends FrameView {
         mainPanel.setLayout(mainPanelLayout);
         mainPanelLayout.setHorizontalGroup(
             mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jSplitPane2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1577, Short.MAX_VALUE)
+            .addComponent(jSplitPane2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1397, Short.MAX_VALUE)
         );
         mainPanelLayout.setVerticalGroup(
             mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(mainPanelLayout.createSequentialGroup()
-                .addComponent(jSplitPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 219, Short.MAX_VALUE)
+                .addComponent(jSplitPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 470, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
