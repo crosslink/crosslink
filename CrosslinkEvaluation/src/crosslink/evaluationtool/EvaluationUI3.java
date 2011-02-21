@@ -70,6 +70,8 @@ public class EvaluationUI3 extends JFrame {
 
 
         initComponents();
+
+        jRBA2BWikirs.setVisible(false);
         // ------------------------------------------
         resultFilePath = getResultSetPath();
         // ------------------------------------------
@@ -96,6 +98,7 @@ public class EvaluationUI3 extends JFrame {
         jPanel6 = new javax.swing.JPanel();
         jRBF2FWikirs = new javax.swing.JRadioButton();
         jRBA2BWikirs = new javax.swing.JRadioButton();
+
         jRBA2BManualrs = new javax.swing.JRadioButton();
         filecleanButton1 = new javax.swing.JButton();
         runtablePanel = new javax.swing.JPanel();
@@ -136,7 +139,7 @@ public class EvaluationUI3 extends JFrame {
         add(jRBonlysubmitted);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Link the Wiki Evaluation Tool");
+        setTitle("NTCIR 9: Crosslink Evaluationl"); // NOI18N
 
         openfilesButton.setText("Open Files");
         openfilesButton.addActionListener(new java.awt.event.ActionListener() {
@@ -153,19 +156,20 @@ public class EvaluationUI3 extends JFrame {
             }
         });
 
-        jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Result Calculation", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
+        jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "QRels Selection", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
 
         rsGroup.add(jRBF2FWikirs);
         jRBF2FWikirs.setSelected(true);
-        jRBF2FWikirs.setText("F2F Ground-Truth");
+        jRBF2FWikirs.setText("Wikipedia Ground-Truth");
         jRBF2FWikirs.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
 
         rsGroup.add(jRBA2BWikirs);
-        jRBA2BWikirs.setText("A2B Ground-Truth");
+        jRBA2BWikirs.setText("Wikipedia A2B Ground-Truth");
         jRBA2BWikirs.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
+        jRBA2BWikirs.setEnabled(false);
 
         rsGroup.add(jRBA2BManualrs);
-        jRBA2BManualrs.setText("A2B Manual Assessment");
+        jRBA2BManualrs.setText("Manual Assessment");
         jRBA2BManualrs.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
 
         org.jdesktop.layout.GroupLayout jPanel6Layout = new org.jdesktop.layout.GroupLayout(jPanel6);
@@ -179,7 +183,7 @@ public class EvaluationUI3 extends JFrame {
                 .add(jRBA2BWikirs)
                 .add(45, 45, 45)
                 .add(jRBA2BManualrs)
-                .addContainerGap(135, Short.MAX_VALUE))
+                .addContainerGap(61, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
@@ -188,6 +192,8 @@ public class EvaluationUI3 extends JFrame {
                 .add(jRBA2BWikirs, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 17, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .add(jRBA2BManualrs, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 17, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
         );
+
+        jRBA2BWikirs.setVisible(false);
 
         filecleanButton1.setText("Load");
         filecleanButton1.setPreferredSize(new java.awt.Dimension(180, 23));
@@ -234,8 +240,6 @@ public class EvaluationUI3 extends JFrame {
                         .add(filecleanButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-
-        jPanel6.getAccessibleContext().setAccessibleName("Result Set Selection");
 
         runtablePanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Run Information", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
         runtablePanel.setName("File Information"); // NOI18N
@@ -379,7 +383,7 @@ public class EvaluationUI3 extends JFrame {
                 .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        calculationPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Result Calculation", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
+        calculationPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Task Selection", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
 
         buttonGroup2.add(jRBFileToFile);
         jRBFileToFile.setSelected(true);
@@ -1067,7 +1071,7 @@ public class EvaluationUI3 extends JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
 
             public void run() {
-                new EvaluationUI2().setVisible(true);
+                new EvaluationUI3().setVisible(true);
             }
         });
     }
