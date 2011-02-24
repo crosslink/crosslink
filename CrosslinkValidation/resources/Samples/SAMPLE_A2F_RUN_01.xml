@@ -1,0 +1,561 @@
+<crosslink-submission participant-id="5" run-id="SAMPLE_A2F_RUN_01" task="A2F" default_lang="zh">
+	<details>
+		<machine>
+			<cpu>Core 2 Duo</cpu>
+			<speed>2.33 MHz</speed>
+			<cores>2</cores>
+			<hyperthreads>1</hyperthreads>
+			<memory>8GB</memory>
+		</machine>
+		<time>TBC</time>
+	</details>
+	<description> 
+		This is a sample run using a simple link discovery algorithm
+	</description>
+	<collections><collection>wikipedia</collection></collections>
+	<topic file="19501" name="Martial arts">
+		<outgoing>
+			<anchor offset="65751" length="17" name="Republic of China">
+				<tofile bep_offset="0" lang="zh" title="中華民國">271</tofile>
+			</anchor>
+			<anchor offset="47890" length="12" name="World War II">
+				<tofile bep_offset="0" lang="zh" title="第二次世界大战">305</tofile>
+			</anchor>
+			<anchor offset="30466" length="20" name="Chinese martial arts">
+				<tofile bep_offset="0" lang="zh" title="中国武术">1219</tofile>
+			</anchor>
+			<anchor offset="16644" length="15" name="26th century BC">
+				<tofile bep_offset="0" lang="zh" title="前26世纪">180091</tofile>
+			</anchor>
+			<anchor offset="16443" length="15" name="20th century BC">
+				<tofile bep_offset="0" lang="zh" title="前20世纪">180085</tofile>
+			</anchor>
+			<anchor offset="76777" length="18" name="Fujian White Crane">
+				<tofile bep_offset="0" lang="zh" title="白鶴拳">469755</tofile>
+			</anchor>
+			<anchor offset="29401" length="9" name="East Asia">
+				<tofile bep_offset="0" lang="zh" title="东亚">1032</tofile>
+			</anchor>
+			<anchor offset="331" length="12" name="Martial arts">
+				<tofile bep_offset="0" lang="zh" title="武術">1105</tofile>
+			</anchor>
+			<anchor offset="1039" length="12" name="19th century">
+				<tofile bep_offset="0" lang="zh" title="19世纪">4708</tofile>
+			</anchor>
+			<anchor offset="3499" length="12" name="15th century">
+				<tofile bep_offset="0" lang="zh" title="15世纪">5372</tofile>
+			</anchor>
+			<anchor offset="24417" length="13" name="United States">
+				<tofile bep_offset="0" lang="zh" title="合眾國">192127</tofile>
+				<tofile bep_offset="0" lang="zh" title="姬拉·麗莉">538457</tofile>
+				<tofile bep_offset="0" lang="zh" title="美國">481</tofile>
+			</anchor>
+			<anchor offset="32037" length="13" name="Olympic Games">
+				<tofile bep_offset="0" lang="zh" title="奥林匹克运动会">22076</tofile>
+			</anchor>
+			<anchor offset="554" length="15" name="Performing arts">
+				<tofile bep_offset="0" lang="zh" title="表演艺术">405487</tofile>
+			</anchor>
+			<anchor offset="3746" length="14" name="martial artist">
+				<tofile bep_offset="0" lang="zh" title="武術家">727429</tofile>
+			</anchor>
+			<anchor offset="42515" length="14" name="Modern history">
+				<tofile bep_offset="0" lang="zh" title="現代史">86784</tofile>
+			</anchor>
+			<anchor offset="16413" length="9" name="Near East">
+				<tofile bep_offset="0" lang="zh" title="近東">121596</tofile>
+			</anchor>
+			<anchor offset="78232" length="7" name="kung fu">
+				<tofile bep_offset="0" lang="zh" title="無綫電視外購美國劇集列表">800034</tofile>
+			</anchor>
+			<anchor offset="10054" length="7" name="Kung Fu">
+				<tofile bep_offset="0" lang="zh" title="無綫電視外購美國劇集列表">800034</tofile>
+			</anchor>
+			<anchor offset="104916" length="14" name="United Kingdom">
+				<tofile bep_offset="0" lang="zh" title="聯合王國 (消歧義)">1121129</tofile>
+				<tofile bep_offset="0" lang="zh" title="英国">39793</tofile>
+			</anchor>
+			<anchor offset="17063" length="4" name="Asia">
+				<tofile bep_offset="0" lang="zh" title="亚洲">471</tofile>
+				<tofile bep_offset="0" lang="zh" title="Asia">429656</tofile>
+			</anchor>
+			<anchor offset="94453" length="6" name="Greece">
+				<tofile bep_offset="0" lang="zh" title="希腊">1201</tofile>
+			</anchor>
+			<anchor offset="93567" length="6" name="France">
+				<tofile bep_offset="0" lang="zh" title="法国">543</tofile>
+			</anchor>
+			<anchor offset="107223" length="10" name="Uzbekistan">
+				<tofile bep_offset="0" lang="zh" title="乌兹别克斯坦">5303</tofile>
+			</anchor>
+			<anchor offset="109924" length="10" name="University">
+				<tofile bep_offset="0" lang="zh" title="大學">1438</tofile>
+				<tofile bep_offset="0" lang="zh" title="愛民頓輕鐵">1204827</tofile>
+			</anchor>
+			<anchor offset="104614" length="6" name="Turkey">
+				<tofile bep_offset="0" lang="zh" title="土耳其">3338</tofile>
+				<tofile bep_offset="0" lang="zh" title="火雞">100743</tofile>
+			</anchor>
+			<anchor offset="97901" length="5" name="Italy">
+				<tofile bep_offset="0" lang="zh" title="意大利">3448</tofile>
+				<tofile bep_offset="0" lang="zh" title="義大利 (消歧義)">940484</tofile>
+			</anchor>
+			<anchor offset="66444" length="5" name="Dance">
+				<tofile bep_offset="0" lang="zh" title="舞蹈">2108</tofile>
+			</anchor>
+			<anchor offset="104375" length="11" name="Switzerland">
+				<tofile bep_offset="0" lang="zh" title="瑞士">3243</tofile>
+				<tofile bep_offset="0" lang="zh" title="电子前哨基金会">1239793</tofile>
+			</anchor>
+			<anchor offset="97716" length="6" name="Israel">
+				<tofile bep_offset="0" lang="zh" title="以色列">3516</tofile>
+			</anchor>
+			<anchor offset="38956" length="2" name="It">
+				<tofile bep_offset="0" lang="zh" title="斯蒂芬·金">4177</tofile>
+				<tofile bep_offset="0" lang="zh" title="IT">17652</tofile>
+			</anchor>
+			<anchor offset="103231" length="8" name="Portugal">
+				<tofile bep_offset="0" lang="zh" title="葡萄牙">4880</tofile>
+			</anchor>
+			<anchor offset="37036" length="8" name="Americas">
+				<tofile bep_offset="0" lang="zh" title="美洲">4359</tofile>
+			</anchor>
+			<anchor offset="97671" length="4" name="Iran">
+				<tofile bep_offset="0" lang="zh" title="伊朗">5870</tofile>
+			</anchor>
+			<anchor offset="29706" length="5" name="1980s">
+				<tofile bep_offset="0" lang="zh" title="1980年代">7651</tofile>
+			</anchor>
+			<anchor offset="29696" length="5" name="1970s">
+				<tofile bep_offset="0" lang="zh" title="1970年代">7649</tofile>
+			</anchor>
+			<anchor offset="104427" length="8" name="Thailand">
+				<tofile bep_offset="0" lang="zh" title="泰国">10926</tofile>
+			</anchor>
+			<anchor offset="111955" length="8" name="Database">
+				<tofile bep_offset="0" lang="zh" title="数据库">8070</tofile>
+			</anchor>
+			<anchor offset="18073" length="3" name="600">
+				<tofile bep_offset="0" lang="zh" title="600年">14031</tofile>
+			</anchor>
+			<anchor offset="20792" length="3" name="550">
+				<tofile bep_offset="0" lang="zh" title="550年">13979</tofile>
+			</anchor>
+			<anchor offset="19795" length="3" name="350">
+				<tofile bep_offset="0" lang="zh" title="350年">13239</tofile>
+			</anchor>
+			<anchor offset="60623" length="4" name="Judo">
+				<tofile bep_offset="0" lang="zh" title="柔道">21424</tofile>
+			</anchor>
+			<anchor offset="19669" length="3" name="War">
+				<tofile bep_offset="0" lang="zh" title="战争">16800</tofile>
+				<tofile bep_offset="0" lang="zh" title="戰爭 (專輯)">1049917</tofile>
+			</anchor>
+			<anchor offset="19662" length="3" name="Art">
+				<tofile bep_offset="0" lang="zh" title="艺术">2117</tofile>
+			</anchor>
+			<anchor offset="111030" length="11" name="Renaissance">
+				<tofile bep_offset="0" lang="zh" title="文艺复兴">20344</tofile>
+				<tofile bep_offset="0" lang="zh" title="2006年電影列表">500359</tofile>
+				<tofile bep_offset="0" lang="zh" title="文艺复兴 (消歧义)">1188624</tofile>
+			</anchor>
+			<anchor offset="42477" length="5" name="South">
+				<tofile bep_offset="0" lang="zh" title="南">21421</tofile>
+			</anchor>
+			<anchor offset="3691" length="1" name="A">
+				<tofile bep_offset="0" lang="zh" title="A+">23155</tofile>
+				<tofile bep_offset="0" lang="zh" title="Portal:新加坡/需要进行的工作">458258</tofile>
+				<tofile bep_offset="0" lang="zh" title="A (濱崎步單曲)">1018505</tofile>
+				<tofile bep_offset="0" lang="zh" title="紐約地鐵A線">394646</tofile>
+				<tofile bep_offset="0" lang="zh" title="А">86750</tofile>
+			</anchor>
+			<anchor offset="41662" length="1" name="8">
+				<tofile bep_offset="0" lang="zh" title="8">23385</tofile>
+				<tofile bep_offset="0" lang="zh" title="8½">386447</tofile>
+				<tofile bep_offset="0" lang="zh" title="8年">12631</tofile>
+			</anchor>
+			<anchor offset="29355" length="1" name="6">
+				<tofile bep_offset="0" lang="zh" title="6">23383</tofile>
+				<tofile bep_offset="0" lang="zh" title="6年">12623</tofile>
+				<tofile bep_offset="0" lang="zh" title="紐約地鐵6號線">381911</tofile>
+			</anchor>
+			<anchor offset="66411" length="2" name="12">
+				<tofile bep_offset="0" lang="zh" title="12">23389</tofile>
+				<tofile bep_offset="0" lang="zh" title="12年">12637</tofile>
+			</anchor>
+			<anchor offset="27300" length="5" name="1920s">
+				<tofile bep_offset="0" lang="zh" title="1920年代">23686</tofile>
+			</anchor>
+		</outgoing>
+</topic>
+	<topic file="299098" name="Femme fatale">
+		<outgoing>
+			<anchor offset="48837" length="21" name="University of Chicago">
+				<tofile bep_offset="0" lang="zh" title="芝加哥大学">21741</tofile>
+			</anchor>
+			<anchor offset="51634" length="12" name="The Creation">
+				<tofile bep_offset="0" lang="zh" title="創世紀 (海頓)">1044413</tofile>
+			</anchor>
+			<anchor offset="388" length="12" name="Femme fatale">
+				<tofile bep_offset="0" lang="zh" title="蛇蝎美人">1123508</tofile>
+			</anchor>
+			<anchor offset="8891" length="12" name="19th century">
+				<tofile bep_offset="0" lang="zh" title="19世纪">4708</tofile>
+			</anchor>
+			<anchor offset="8868" length="15" name="Western culture">
+				<tofile bep_offset="0" lang="zh" title="西方文化">257257</tofile>
+			</anchor>
+			<anchor offset="49059" length="7" name="History">
+				<tofile bep_offset="0" lang="zh" title="历史">23</tofile>
+				<tofile bep_offset="0" lang="zh" title="歷史頻道">728644</tofile>
+			</anchor>
+			<anchor offset="52239" length="4" name="Film">
+				<tofile bep_offset="0" lang="zh" title="电影">48</tofile>
+			</anchor>
+			<anchor offset="3142" length="8" name="Shanghai">
+				<tofile bep_offset="0" lang="zh" title="上海市">235</tofile>
+			</anchor>
+			<anchor offset="51294" length="7" name="Culture">
+				<tofile bep_offset="0" lang="zh" title="文化">1174</tofile>
+				<tofile bep_offset="0" lang="zh" title="菲臘·西摩·荷夫曼">238716</tofile>
+			</anchor>
+			<anchor offset="41396" length="6" name="Venice">
+				<tofile bep_offset="0" lang="zh" title="威尼斯">87413</tofile>
+			</anchor>
+			<anchor offset="4200" length="6" name="Spirit">
+				<tofile bep_offset="0" lang="zh" title="灵">162060</tofile>
+				<tofile bep_offset="0" lang="zh" title="小马王">1005098</tofile>
+				<tofile bep_offset="0" lang="zh" title="無綫電視外購動畫列表">342569</tofile>
+				<tofile bep_offset="0" lang="zh" title="美国动画">95904</tofile>
+			</anchor>
+			<anchor offset="15922" length="6" name="Salome">
+				<tofile bep_offset="0" lang="zh" title="莎乐美">107018</tofile>
+				<tofile bep_offset="0" lang="zh" title="莎樂美 (歌劇)">713447</tofile>
+				<tofile bep_offset="0" lang="zh" title="莎樂美 (消歧義)">756992</tofile>
+			</anchor>
+			<anchor offset="49379" length="6" name="Oxford">
+				<tofile bep_offset="0" lang="zh" title="牛津">546526</tofile>
+				<tofile bep_offset="0" lang="zh" title="牛津纺">1261595</tofile>
+				<tofile bep_offset="0" lang="zh" title="牛津 (消歧義)">118675</tofile>
+			</anchor>
+			<anchor offset="24052" length="6" name="Heaven">
+				<tofile bep_offset="0" lang="zh" title="天國">129009</tofile>
+				<tofile bep_offset="0" lang="zh" title="天堂 (消歧义)">124101</tofile>
+				<tofile bep_offset="0" lang="zh" title="HEAVEN">1013370</tofile>
+			</anchor>
+			<anchor offset="18587" length="6" name="German">
+				<tofile bep_offset="0" lang="zh" title="德意志">48199</tofile>
+			</anchor>
+			<anchor offset="657" length="6" name="Female">
+				<tofile bep_offset="0" lang="zh" title="雌性">211409</tofile>
+			</anchor>
+			<anchor offset="25086" length="6" name="Falcon">
+				<tofile bep_offset="0" lang="zh" title="Falcon">1013130</tofile>
+				<tofile bep_offset="0" lang="zh" title="隼">20674</tofile>
+				<tofile bep_offset="0" lang="zh" title="隼 (消歧義)">628852</tofile>
+			</anchor>
+			<anchor offset="33619" length="6" name="Comics">
+				<tofile bep_offset="0" lang="zh" title="漫画">2746</tofile>
+			</anchor>
+			<anchor offset="16355" length="6" name="Beauty">
+				<tofile bep_offset="0" lang="zh" title="美">59079</tofile>
+			</anchor>
+			<anchor offset="52721" length="6" name="August">
+				<tofile bep_offset="0" lang="zh" title="8月">2081</tofile>
+				<tofile bep_offset="0" lang="zh" title="埃里克·克莱普顿">519111</tofile>
+				<tofile bep_offset="0" lang="zh" title="August">896146</tofile>
+			</anchor>
+			<anchor offset="49086" length="10" name="Television">
+				<tofile bep_offset="0" lang="zh" title="电视">2793</tofile>
+			</anchor>
+			<anchor offset="23529" length="5" name="1940s">
+				<tofile bep_offset="0" lang="zh" title="1940年代">7643</tofile>
+			</anchor>
+			<anchor offset="49167" length="3" name="199">
+				<tofile bep_offset="0" lang="zh" title="199年">13080</tofile>
+				<tofile bep_offset="0" lang="zh" title="199">327408</tofile>
+			</anchor>
+			<anchor offset="664" length="5" name="stock">
+				<tofile bep_offset="0" lang="zh" title="狙击步枪">19301</tofile>
+			</anchor>
+			<anchor offset="4285" length="1" name="6">
+				<tofile bep_offset="0" lang="zh" title="6">23383</tofile>
+				<tofile bep_offset="0" lang="zh" title="6年">12623</tofile>
+				<tofile bep_offset="0" lang="zh" title="紐約地鐵6號線">381911</tofile>
+			</anchor>
+			<anchor offset="51651" length="9" name="Marketing">
+				<tofile bep_offset="0" lang="zh" title="市场营销">32810</tofile>
+			</anchor>
+			<anchor offset="50425" length="12" name="Bibliography">
+				<tofile bep_offset="0" lang="zh" title="目录学">34467</tofile>
+			</anchor>
+			<anchor offset="38830" length="1" name="I">
+				<tofile bep_offset="0" lang="zh" title="И">88141</tofile>
+				<tofile bep_offset="0" lang="zh" title="I">6199</tofile>
+				<tofile bep_offset="0" lang="zh" title="I&quot;s">179482</tofile>
+				<tofile bep_offset="0" lang="zh" title="汉语人称代词">864753</tofile>
+				<tofile bep_offset="0" lang="zh" title="い">100964</tofile>
+			</anchor>
+			<anchor offset="2658" length="1" name="A">
+				<tofile bep_offset="0" lang="zh" title="A+">23155</tofile>
+				<tofile bep_offset="0" lang="zh" title="Portal:新加坡/需要进行的工作">458258</tofile>
+				<tofile bep_offset="0" lang="zh" title="A (濱崎步單曲)">1018505</tofile>
+				<tofile bep_offset="0" lang="zh" title="紐約地鐵A線">394646</tofile>
+				<tofile bep_offset="0" lang="zh" title="А">86750</tofile>
+			</anchor>
+			<anchor offset="2250" length="1" name="1">
+				<tofile bep_offset="0" lang="zh" title="1">106115</tofile>
+				<tofile bep_offset="0" lang="zh" title="精選輯">921188</tofile>
+				<tofile bep_offset="0" lang="zh" title="1年">12616</tofile>
+				<tofile bep_offset="0" lang="zh" title="紐約地鐵1號線">380914</tofile>
+			</anchor>
+			<anchor offset="49386" length="7" name="English">
+				<tofile bep_offset="0" lang="zh" title="正弦">107467</tofile>
+			</anchor>
+			<anchor offset="48851" length="7" name="Chicago">
+				<tofile bep_offset="0" lang="zh" title="芝加哥">21033</tofile>
+				<tofile bep_offset="0" lang="zh" title="芝加哥 (音樂劇)">459199</tofile>
+				<tofile bep_offset="0" lang="zh" title="無綫電視外購美國電影列表">1075202</tofile>
+				<tofile bep_offset="0" lang="zh" title="越獄風雲">382656</tofile>
+				<tofile bep_offset="0" lang="zh" title="芝加哥 (消歧義)">500664</tofile>
+			</anchor>
+			<anchor offset="7803" length="4" name="Troy">
+				<tofile bep_offset="0" lang="zh" title="特洛伊">37838</tofile>
+			</anchor>
+			<anchor offset="49225" length="4" name="Toni">
+				<tofile bep_offset="0" lang="zh" title="盧奇諾·維斯孔蒂">704015</tofile>
+			</anchor>
+			<anchor offset="52244" length="4" name="Noir">
+				<tofile bep_offset="0" lang="zh" title="NOIR">484060</tofile>
+			</anchor>
+			<anchor offset="38278" length="4" name="Nico">
+				<tofile bep_offset="0" lang="zh" title="Nico">597828</tofile>
+			</anchor>
+			<anchor offset="11345" length="4" name="Monk">
+				<tofile bep_offset="0" lang="zh" title="神探阿蒙">76008</tofile>
+				<tofile bep_offset="0" lang="zh" title="無綫電視外購美國劇集列表">800034</tofile>
+				<tofile bep_offset="0" lang="zh" title="明珠台電視劇集列表 (2009年)">1081081</tofile>
+				<tofile bep_offset="0" lang="zh" title="明珠台電視劇集列表 (2009年)">1081081</tofile>
+				<tofile bep_offset="0" lang="zh" title="修士">631110</tofile>
+			</anchor>
+			<anchor offset="16148" length="4" name="King">
+				<tofile bep_offset="0" lang="zh" title="王 (國際象棋)">598048</tofile>
+				<tofile bep_offset="0" lang="zh" title="王">163374</tofile>
+				<tofile bep_offset="0" lang="zh" title="央街-大學路-士巴單拿線">666623</tofile>
+				<tofile bep_offset="0" lang="zh" title="王 (消歧義)">586687</tofile>
+			</anchor>
+			<anchor offset="27851" length="4" name="Jane">
+				<tofile bep_offset="0" lang="zh" title="布羅爾－單福線">666642</tofile>
+			</anchor>
+			<anchor offset="30203" length="4" name="Heat">
+				<tofile bep_offset="0" lang="zh" title="無綫電視外購美國電影列表">1075202</tofile>
+				<tofile bep_offset="0" lang="zh" title="1995年電影列表">504220</tofile>
+				<tofile bep_offset="0" lang="zh" title="熱量">161387</tofile>
+				<tofile bep_offset="0" lang="zh" title="罗伯特·德尼罗">116436</tofile>
+				<tofile bep_offset="0" lang="zh" title="娜塔莉·波特曼">606791</tofile>
+			</anchor>
+			<anchor offset="37342" length="4" name="Gear">
+				<tofile bep_offset="0" lang="zh" title="齿轮">122519</tofile>
+			</anchor>
+			<anchor offset="44861" length="4" name="Bond">
+				<tofile bep_offset="0" lang="zh" title="BOND">13423</tofile>
+				<tofile bep_offset="0" lang="zh" title="娄宿">127720</tofile>
+				<tofile bep_offset="0" lang="zh" title="债券">326722</tofile>
+			</anchor>
+			<anchor offset="38912" length="4" name="Bell">
+				<tofile bep_offset="0" lang="zh" title="贝尔">83091</tofile>
+				<tofile bep_offset="0" lang="zh" title="铃">247912</tofile>
+			</anchor>
+			<anchor offset="1967" length="3" name="The">
+				<tofile bep_offset="0" lang="zh" title="Ҫ">277626</tofile>
+			</anchor>
+			<anchor offset="16346" length="5" name="Curse">
+				<tofile bep_offset="0" lang="zh" title="銀月">310428</tofile>
+			</anchor>
+			<anchor offset="25078" length="7" name="Maltese">
+				<tofile bep_offset="0" lang="zh" title="馬爾濟斯">344003</tofile>
+			</anchor>
+			<anchor offset="49230" length="7" name="Bentley">
+				<tofile bep_offset="0" lang="zh" title="賓利">340270</tofile>
+			</anchor>
+			<anchor offset="31679" length="5" name="Stone">
+				<tofile bep_offset="0" lang="zh" title="英石">348420</tofile>
+				<tofile bep_offset="0" lang="zh" title="罗伯特·德尼罗">116436</tofile>
+				<tofile bep_offset="0" lang="zh" title="石 (质量单位)">612957</tofile>
+			</anchor>
+			<anchor offset="43211" length="5" name="Brest">
+				<tofile bep_offset="0" lang="zh" title="布雷斯特">285479</tofile>
+			</anchor>
+			<anchor offset="46777" length="1" name="7">
+				<tofile bep_offset="0" lang="zh" title="紐約地鐵7號線">380015</tofile>
+				<tofile bep_offset="0" lang="zh" title="7">39399</tofile>
+				<tofile bep_offset="0" lang="zh" title="7年">12630</tofile>
+			</anchor>
+		</outgoing>
+</topic>
+	<topic file="4689264" name="Australia">
+		<outgoing>
+			<anchor offset="163754" length="47" name="Proceedings of the National Academy of Sciences">
+				<tofile bep_offset="0" lang="zh" title="美国国家科学院院刊">535951</tofile>
+			</anchor>
+			<anchor offset="165228" length="25" name="Reserve Bank of Australia">
+				<tofile bep_offset="0" lang="zh" title="麥覺理街 (雪梨)">1213515</tofile>
+			</anchor>
+			<anchor offset="47215" length="12" name="World War II">
+				<tofile bep_offset="0" lang="zh" title="第二次世界大战">305</tofile>
+			</anchor>
+			<anchor offset="128721" length="19" name="World Heritage Site">
+				<tofile bep_offset="0" lang="zh" title="世界遗产">1294</tofile>
+			</anchor>
+			<anchor offset="801" length="23" name="Commonwealth of Nations">
+				<tofile bep_offset="0" lang="zh" title="英联邦">7435</tofile>
+			</anchor>
+			<anchor offset="34944" length="15" name="New South Wales">
+				<tofile bep_offset="0" lang="zh" title="新南威爾士州">22762</tofile>
+			</anchor>
+			<anchor offset="161785" length="18" name="Great Barrier Reef">
+				<tofile bep_offset="0" lang="zh" title="大堡礁">51739</tofile>
+			</anchor>
+			<anchor offset="56939" length="24" name="House of Representatives">
+				<tofile bep_offset="0" lang="zh" title="众议院">139361</tofile>
+			</anchor>
+			<anchor offset="23526" length="18" name="East India Company">
+				<tofile bep_offset="0" lang="zh" title="東印度公司">160042</tofile>
+				<tofile bep_offset="0" lang="zh" title="不列颠东印度公司">159670</tofile>
+			</anchor>
+			<anchor offset="176844" length="20" name="History of Australia">
+				<tofile bep_offset="0" lang="zh" title="澳大利亚历史">186267</tofile>
+			</anchor>
+			<anchor offset="154389" length="19" name="Library of Congress">
+				<tofile bep_offset="0" lang="zh" title="國會圖書館 (美國)">209577</tofile>
+			</anchor>
+			<anchor offset="164529" length="34" name="Environmental Sustainability Index">
+				<tofile bep_offset="0" lang="zh" title="環境可持續指數">274656</tofile>
+			</anchor>
+			<anchor offset="57167" length="28" name="Australian Capital Territory">
+				<tofile bep_offset="0" lang="zh" title="澳大利亞首都特區">311876</tofile>
+			</anchor>
+			<anchor offset="97430" length="11" name="South Korea">
+				<tofile bep_offset="0" lang="zh" title="大韩民国">3121</tofile>
+			</anchor>
+			<anchor offset="44722" length="11" name="New Zealand">
+				<tofile bep_offset="0" lang="zh" title="新西兰">532</tofile>
+			</anchor>
+			<anchor offset="213419" length="14" name="European Union">
+				<tofile bep_offset="0" lang="zh" title="欧洲联盟">1720</tofile>
+			</anchor>
+			<anchor offset="141331" length="16" name="American English">
+				<tofile bep_offset="0" lang="zh" title="美国英语">2969</tofile>
+			</anchor>
+			<anchor offset="235116" length="12" name="Indian Ocean">
+				<tofile bep_offset="0" lang="zh" title="印度洋">16421</tofile>
+			</anchor>
+			<anchor offset="3345" length="12" name="Elizabeth II">
+				<tofile bep_offset="0" lang="zh" title="伊丽莎白二世">23084</tofile>
+			</anchor>
+			<anchor offset="166590" length="12" name="19th century">
+				<tofile bep_offset="0" lang="zh" title="19世纪">4708</tofile>
+			</anchor>
+			<anchor offset="94444" length="13" name="The Economist">
+				<tofile bep_offset="0" lang="zh" title="经济学人">33677</tofile>
+			</anchor>
+			<anchor offset="200835" length="15" name="Mariana Islands">
+				<tofile bep_offset="0" lang="zh" title="马里亚纳群岛">34063</tofile>
+			</anchor>
+			<anchor offset="15864" length="10" name="New Guinea">
+				<tofile bep_offset="0" lang="zh" title="新幾內亞">50229</tofile>
+			</anchor>
+			<anchor offset="150049" length="10" name="Grand Prix">
+				<tofile bep_offset="0" lang="zh" title="斯诺克职业选手世界排名">82629</tofile>
+				<tofile bep_offset="0" lang="zh" title="斯诺克职业选手世界排名">82629</tofile>
+				<tofile bep_offset="0" lang="zh" title="勞勃·阿特曼">648670</tofile>
+				<tofile bep_offset="0" lang="zh" title="CSI犯罪現場：邁阿密章節列表">1157753</tofile>
+				<tofile bep_offset="0" lang="zh" title="格蘭披治">93926</tofile>
+			</anchor>
+			<anchor offset="164930" length="9" name="The Times">
+				<tofile bep_offset="0" lang="zh" title="泰晤士报">110789</tofile>
+			</anchor>
+			<anchor offset="104931" length="22" name="Immigration Department">
+				<tofile bep_offset="0" lang="zh" title="入境事務處">124313</tofile>
+			</anchor>
+			<anchor offset="40210" length="18" name="Federal government">
+				<tofile bep_offset="0" lang="zh" title="聯邦政府">134086</tofile>
+			</anchor>
+			<anchor offset="178902" length="9" name="The World">
+				<tofile bep_offset="0" lang="zh" title="世界群島">165161</tofile>
+				<tofile bep_offset="0" lang="zh" title="世界 (电影)">110502</tofile>
+			</anchor>
+			<anchor offset="37580" length="17" name="Western Australia">
+				<tofile bep_offset="0" lang="zh" title="西澳大利亚州">176023</tofile>
+			</anchor>
+			<anchor offset="95742" length="17" name="Australian dollar">
+				<tofile bep_offset="0" lang="zh" title="澳大利亚元">47646</tofile>
+			</anchor>
+			<anchor offset="47574" length="13" name="United States">
+				<tofile bep_offset="0" lang="zh" title="合眾國">192127</tofile>
+				<tofile bep_offset="0" lang="zh" title="姬拉·麗莉">538457</tofile>
+				<tofile bep_offset="0" lang="zh" title="美國">481</tofile>
+			</anchor>
+			<anchor offset="156699" length="19" name="National University">
+				<tofile bep_offset="0" lang="zh" title="林政則">207758</tofile>
+			</anchor>
+			<anchor offset="59314" length="14" name="National Party">
+				<tofile bep_offset="0" lang="zh" title="国民党 (南非)">240844</tofile>
+			</anchor>
+			<anchor offset="37480" length="15" name="South Australia">
+				<tofile bep_offset="0" lang="zh" title="南澳大利亚州">257309</tofile>
+			</anchor>
+			<anchor offset="166782" length="15" name="Foreign Affairs">
+				<tofile bep_offset="0" lang="zh" title="外交 (杂志)">255523</tofile>
+			</anchor>
+			<anchor offset="148864" length="18" name="Commonwealth Games">
+				<tofile bep_offset="0" lang="zh" title="英聯邦運動會">255676</tofile>
+			</anchor>
+			<anchor offset="90562" length="22" name="Indigenous Australians">
+				<tofile bep_offset="0" lang="zh" title="澳大利亚原住民">273273</tofile>
+			</anchor>
+			<anchor offset="44212" length="18" name="Northern Territory">
+				<tofile bep_offset="0" lang="zh" title="北領地">314878</tofile>
+			</anchor>
+			<anchor offset="174480" length="8" name="de facto">
+				<tofile bep_offset="0" lang="zh" title="第四權">331505</tofile>
+			</anchor>
+			<anchor offset="134504" length="15" name="Joan Sutherland">
+				<tofile bep_offset="0" lang="zh" title="瓊·蘇瑟蘭">393939</tofile>
+			</anchor>
+			<anchor offset="157311" length="13" name="Torres Strait">
+				<tofile bep_offset="0" lang="zh" title="托雷斯海峡">490151</tofile>
+			</anchor>
+			<anchor offset="25156" length="13" name="South Pacific">
+				<tofile bep_offset="0" lang="zh" title="新宿KOMA劇場">414315</tofile>
+				<tofile bep_offset="0" lang="zh" title="最高電影票房收入列表">537442</tofile>
+				<tofile bep_offset="0" lang="zh" title="2010無綫節目巡禮">1160568</tofile>
+			</anchor>
+			<anchor offset="25162" length="13" name="Pacific Ocean">
+				<tofile bep_offset="0" lang="zh" title="太平洋">3441</tofile>
+			</anchor>
+			<anchor offset="150162" length="13" name="Olympic Games">
+				<tofile bep_offset="0" lang="zh" title="奥林匹克运动会">22076</tofile>
+			</anchor>
+			<anchor offset="32576" length="13" name="Great Britain">
+				<tofile bep_offset="0" lang="zh" title="大不列顛島">86534</tofile>
+			</anchor>
+			<anchor offset="172937" length="13" name="February 2004">
+				<tofile bep_offset="0" lang="zh" title="2004年2月">5175</tofile>
+			</anchor>
+			<anchor offset="237784" length="16" name="Sandwich Islands">
+				<tofile bep_offset="0" lang="zh" title="三明治群島">449880</tofile>
+			</anchor>
+			<anchor offset="140992" length="18" name="Australian English">
+				<tofile bep_offset="0" lang="zh" title="澳大利亚英语">492146</tofile>
+			</anchor>
+			<anchor offset="51894" length="9" name="The Queen">
+				<tofile bep_offset="0" lang="zh" title="2006年電影列表">500359</tofile>
+				<tofile bep_offset="0" lang="zh" title="英女皇 (電影)">499766</tofile>
+			</anchor>
+			<anchor offset="68578" length="16" name="McDonald Islands">
+				<tofile bep_offset="0" lang="zh" title="生態區列表">664060</tofile>
+			</anchor>
+		</outgoing>
+</topic>
+</crosslink-submission>
