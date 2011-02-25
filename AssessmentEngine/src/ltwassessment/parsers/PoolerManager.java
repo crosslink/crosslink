@@ -913,8 +913,8 @@ public class PoolerManager {
                         subAnchorsToBepsHT = new Hashtable<String, Vector<String[]>>();
                         
                         if (!AppResource.forValidationOrAssessment) {
-                            thisSubAnchorProperty = new String[3];
-                            System.arraycopy(thisAnchorProperty, 0, thisSubAnchorProperty, 0, 3);
+                            thisSubAnchorProperty = new String[4];
+                            System.arraycopy(thisAnchorProperty, 0, thisSubAnchorProperty, 0, 4);
                             subAnchorsVbyTopic.add(thisSubAnchorProperty);
                             thisSubAnchorSet = thisSubAnchorProperty[0] + "_" + thisSubAnchorProperty[1];
                             toBepsVbySubAnchor = new Vector<String[]>();                        	
