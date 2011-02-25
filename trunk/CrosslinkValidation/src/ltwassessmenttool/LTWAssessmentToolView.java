@@ -215,11 +215,12 @@ public class LTWAssessmentToolView extends FrameView {
             int myTopicNum = numGenerator.nextInt(topicIDsV.size());
             String ranTopicID = topicIDsV.elementAt(myTopicNum);
             String runFilePath = "";
-            String collectionFolder = "";
+            //String collectionFolder = "";
 //            if (topicIsWikipedia) {
-                collectionFolder = rscManager.getWikipediaCollectionFolder();
+                //collectionFolder = rscManager.getWikipediaCollectionFolder();
+            String topicFolder = "resources" + File.separator + "Topics" + File.separator;
 //                runFilePath = rscManager.getWikipediaCollectionFolder() + rscManager.getWikipediaFilePathByName(ranTopicID + ".xml");
-              runFilePath =   "resources" + File.separator + "Topics" + File.separator + ranTopicID + ".xml";
+              runFilePath =  topicFolder + AppResource.sourceLang + File.separator + ranTopicID + ".xml";
 //            } else {
 //                collectionFolder = rscManager.getTeAraCollectionFolder();
 //                runFilePath = rscManager.getTeAraCollectionFolder() + rscManager.getTeAraFilePathByName(ranTopicID + ".xml");
@@ -229,7 +230,7 @@ public class LTWAssessmentToolView extends FrameView {
                 rightCorpusDir = true;
             } else {
                 rightCorpusDir = false;
-                JOptionPane.showMessageDialog(mainPanel, "The XML File, " + ranTopicID + ".xml , cannot be found in specified Collection Directory, " + collectionFolder + "!");
+                JOptionPane.showMessageDialog(mainPanel, "The XML File, " + ranTopicID + ".xml , cannot be found in topic folder, " + topicFolder + "!");
             }
         }
         return rightCorpusDir;
@@ -857,7 +858,7 @@ public class LTWAssessmentToolView extends FrameView {
                         myTABTxtPaneManager = new tabTxtPaneManager();
                         myTBATxtPaneManager = new tbaTxtPaneManager();
                         // =====================================================
-                        boolean rightCorpusDir = corpusDirChecker(isTopicWikipedia);
+                        boolean rightCorpusDir = true; //corpusDirChecker(isTopicWikipedia);
                         if (rightCorpusDir) {
                             if (outRadioBtn.isSelected()) {
                                 setOutgoingTAB();

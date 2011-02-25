@@ -594,7 +594,7 @@ public class FOLTXTMatcher {
         return myScreenAnchorPos = screenOffsetLengthFinder(fullScreenText, myFullXmlTxt, thisAnchorXmlOLName);
     }
 
-    public String getScreenBepOffset(JTextPane linkTxtPane, String bepFileID, String xmlBepOffset, boolean isWikipedia, String lang) {
+    public String getScreenBepOffset(JTextPane linkTxtPane, String bepFileID, String xmlBepOffset, boolean isWikipedia) {
         String scrBepOffset = "0";
         String fullScreenText = "";
         String fullXmlText = "";
@@ -602,12 +602,13 @@ public class FOLTXTMatcher {
             fullScreenText = linkTxtPane.getDocument().getText(0, linkTxtPane.getDocument().getLength());
             String bepFilePath = "";
 //            if (isWikipedia) {
-                String subPath = myRSCManager.getWikipediaFilePathByName(bepFileID + ".xml", lang);
-                if (subPath.equals("FileNotFound.xml")) {
-                    bepFilePath = "resources" + File.separator + "Tool_Resources" + File.separator + subPath;
-                } else {
-                    bepFilePath = myRSCManager.getWikipediaFileFolder(AppResource.targetLang) + subPath;
-                }
+            bepFilePath = myRSCManager.getWikipediaFilePathByName(bepFileID + ".xml", AppResource.targetLang);
+//                String subPath = myRSCManager.getWikipediaFilePathByName(bepFileID + ".xml", lang);
+//                if (subPath.equals("FileNotFound.xml")) {
+//                    bepFilePath = "resources" + File.separator + "Tool_Resources" + File.separator + subPath;
+//                } else {
+//                    bepFilePath = myRSCManager.getWikipediaFileFolder(AppResource.targetLang) + subPath;
+//                }
 //                bepFilePath = myRSCManager.getWikipediaFileFolder(AppResource.targetLang) + myRSCManager.getWikipediaFilePathByName(bepFileID + ".xml");
 //            } else {
 //                String subPath = myRSCManager.getTeAraFilePathByName(bepFileID + ".xml");
