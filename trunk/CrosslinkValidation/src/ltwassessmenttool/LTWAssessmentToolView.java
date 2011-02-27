@@ -1181,7 +1181,7 @@ public class LTWAssessmentToolView extends FrameView {
         currTopicID = topicFileIDsV.elementAt(Integer.valueOf(lastTopicIDIndex));
 //        if (isTopicWikipedia) {
             // current Topic
-            currTopicFilePath = wikipediaTopicFileDir + currTopicID + ".xml";
+            currTopicFilePath = wikipediaTopicFileDir + AppResource.sourceLang + File.separator +  currTopicID + ".xml";
 //        } else {
 //            // need to find out from TeAra Collection Folders
 //            currTopicFilePath = rscManager.getTeAraCollectionFolder() + rscManager.getTeAraFilePathByName(currTopicID + ".xml");

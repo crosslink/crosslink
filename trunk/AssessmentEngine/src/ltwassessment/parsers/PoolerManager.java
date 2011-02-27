@@ -943,6 +943,7 @@ public class PoolerManager {
 
 //                        if (AppResource.forValidationOrAssessment) {
                             thisToBepProperty = new String[10];
+                            thisToBepProperty[0] = "0";
                         	thisToBepProperty[5] = "";
                     		thisToBepProperty[6] = "";
                 			thisToBepProperty[7] = "";
