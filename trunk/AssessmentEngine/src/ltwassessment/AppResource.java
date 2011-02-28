@@ -1,5 +1,7 @@
 package ltwassessment;
 
+import java.io.File;
+
 import org.jdesktop.application.Application;
 import ltwassessment.font.AdjustFont;;
 
@@ -30,5 +32,25 @@ public class AppResource {
 	
 	public void setResourceMap(org.jdesktop.application.ResourceMap resourceMap) {
 		this.resourceMap = resourceMap;
+	}
+	
+	public static String getTopicDirectory() {
+		return getTopicDirectory(sourceLang);
+    }
+	
+	public static String getTopicDirectory(String topicLang) {
+		return "resources" + File.separator + "Topics" + File.separator + topicLang + File.separator;
+    }
+    
+    public static String getTopicPathNameByFileID(String fileID) {
+        return getTopicDirectory() + fileID;
+    }
+    public static String getTopicXmlPathNameByFileID(String fileID) {
+        return getTopicPathNameByFileID(fileID) + ".xml";
+    }
+
+	public static String getTopicXmlPathNameByFileID(String topicID,
+			String topicLang) {
+    	return getTopicDirectory(topicLang) + topicID + ".xml";
 	}
 }
