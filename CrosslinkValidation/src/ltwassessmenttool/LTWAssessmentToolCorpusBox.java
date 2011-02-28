@@ -2,6 +2,7 @@ package ltwassessmenttool;
 
 import java.io.File;
 import javax.swing.JFileChooser;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 import ltwassessment.parsers.resourcesManager;
@@ -16,6 +17,7 @@ import org.jdesktop.application.Action;
 public class LTWAssessmentToolCorpusBox extends javax.swing.JDialog {
 
     resourcesManager toolRscManager = null;
+    private JLabel jLableCollection = null;
 
     public LTWAssessmentToolCorpusBox(java.awt.Frame parent) {
         super(parent);
@@ -33,7 +35,11 @@ public class LTWAssessmentToolCorpusBox extends javax.swing.JDialog {
 //        }
     }
 
-    @Action
+    public void setJLableCollection(JLabel lableCollection) {
+		jLableCollection = lableCollection;
+	}
+
+	@Action
     public void OKCorpusBox() {
         String myWikipediaPath = this.wikiPathTxtField.getText();
 //        String myTeAraPath = this.taAraPathTxtField.getText();
@@ -59,6 +65,7 @@ public class LTWAssessmentToolCorpusBox extends javax.swing.JDialog {
                 String notDirMsg = "TeAra Collection location must be a Directory.";
                 JOptionPane.showMessageDialog(rootPane, notDirMsg);
             } */else {
+            	jLableCollection.setText(myWikipediaPath);
                 toolRscManager.updateWikipediaCollectionDirectory(myWikipediaPath);
 //                toolRscManager.updateTeAraCollectionDirectory(myTeAraPath);
                 dispose();

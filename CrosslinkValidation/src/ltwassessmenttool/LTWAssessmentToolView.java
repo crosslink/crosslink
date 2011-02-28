@@ -218,9 +218,9 @@ public class LTWAssessmentToolView extends FrameView {
             //String collectionFolder = "";
 //            if (topicIsWikipedia) {
                 //collectionFolder = rscManager.getWikipediaCollectionFolder();
-            String topicFolder = "resources" + File.separator + "Topics" + File.separator;
+//            String topicFolder = AppResource.getTopicDirectoryh();
 //                runFilePath = rscManager.getWikipediaCollectionFolder() + rscManager.getWikipediaFilePathByName(ranTopicID + ".xml");
-              runFilePath =  topicFolder + AppResource.sourceLang + File.separator + ranTopicID + ".xml";
+              runFilePath =  AppResource.getTopicXmlPathNameByFileID(ranTopicID);
 //            } else {
 //                collectionFolder = rscManager.getTeAraCollectionFolder();
 //                runFilePath = rscManager.getTeAraCollectionFolder() + rscManager.getTeAraFilePathByName(ranTopicID + ".xml");
@@ -230,7 +230,7 @@ public class LTWAssessmentToolView extends FrameView {
                 rightCorpusDir = true;
             } else {
                 rightCorpusDir = false;
-                JOptionPane.showMessageDialog(mainPanel, "The XML File, " + ranTopicID + ".xml , cannot be found in topic folder, " + topicFolder + "!");
+                JOptionPane.showMessageDialog(mainPanel, "Cannot find topic  " + runFilePath + "!");
             }
         }
         return rightCorpusDir;
@@ -846,7 +846,7 @@ public class LTWAssessmentToolView extends FrameView {
                     } else {
                         // Get returned valid file
                         assessmentFormXml toPooling = new assessmentFormXml(fileList);
-                        String poolingMsg = thisXMLFile.getName() + " - Load Successful: \r\n" + toPooling.getPoolingMsg();
+                        String poolingMsg = "Submission for topic" + thisXMLFile.getName() + " is successful loaded: \r\n" + toPooling.getPoolingMsg() + "\r\n Please be patient, it may take a few minutes to discovery all the links";
                         JOptionPane.showMessageDialog(LTWAssessmentToolApp.getApplication().getMainFrame(), poolingMsg);
                         // =====================================================
                         updatePoolerToResourceXML(thisXMLFile.getAbsolutePath());
@@ -886,6 +886,7 @@ public class LTWAssessmentToolView extends FrameView {
             JFrame mainFrame = LTWAssessmentToolApp.getApplication().getMainFrame();
             corpusBox = new LTWAssessmentToolCorpusBox(mainFrame);
             corpusBox.setLocationRelativeTo(mainFrame);
+            ((LTWAssessmentToolCorpusBox) corpusBox).setJLableCollection(this.jLabelCollection);
         }
         LTWAssessmentToolApp.getApplication().show(corpusBox);
     }
