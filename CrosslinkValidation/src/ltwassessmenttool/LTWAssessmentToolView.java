@@ -182,8 +182,8 @@ public class LTWAssessmentToolView extends FrameView {
         String wikiCollectionFolder = rscManager.getWikipediaCollectionFolder();
 //        String tearaCollectionFolder = rscManager.getTeAraCollectionFolder();
         if (wikiCollectionFolder.equals("") /*|| tearaCollectionFolder.equals("")*/) {
-            String msgTxt = "Please specify the directories of Wikipedia and TeAra collections." +
-                    "\r\n Then Load a submission file to start running the tool.";
+            String msgTxt = "Please specify the directories of Wikipedia collections." +
+                    "\r\n Then split a submission and load a single run file to validate your work.";
             JOptionPane.showMessageDialog(mainPanel, msgTxt);
         } else {
 //            String msgTxt = "The directories of Wikipedia collections:\r\n" +
