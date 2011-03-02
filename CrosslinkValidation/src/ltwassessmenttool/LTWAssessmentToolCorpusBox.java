@@ -44,19 +44,19 @@ public class LTWAssessmentToolCorpusBox extends javax.swing.JDialog {
         String myWikipediaPath = this.wikiPathTxtField.getText();
 //        String myTeAraPath = this.taAraPathTxtField.getText();
         if (myWikipediaPath.equals("")/* && myTeAraPath.equals("")*/) {
-            String notDirMsg = "Please specify Wikipedia Collection Directories.";
+            String notDirMsg = "Please specify Wikipedia Collection Directory.";
             JOptionPane.showMessageDialog(rootPane, notDirMsg);
         } /*else if (myWikipediaPath.equals("")) {
-            String notDirMsg = "Please specify Wikipedia Collection Directories.";
+            String notDirMsg = "Please specify Wikipedia Collection Directory.";
             JOptionPane.showMessageDialog(rootPane, notDirMsg);
         } else if (myTeAraPath.equals("")) {
-            String notDirMsg = "Please specify TeAra Collection Directories.";
+            String notDirMsg = "Please specify TeAra Collection Directory.";
             JOptionPane.showMessageDialog(rootPane, notDirMsg);
         } */else {
             File myWikipediaDir = new File(myWikipediaPath);
 //            File myTeAraDir = new File(myTeAraPath);
             if (!myWikipediaDir.isDirectory() /*&& !myTeAraDir.isDirectory()*/) {
-                String notDirMsg = "Wikipedia and TeAra Collection location must be Directories.";
+                String notDirMsg = "Wikipedia and TeAra Collection location must be Directory.";
                 JOptionPane.showMessageDialog(rootPane, notDirMsg);
             } else if (!myWikipediaDir.isDirectory()) {
                 String notDirMsg = "Wikipedia Collection location must be a Directory.";
