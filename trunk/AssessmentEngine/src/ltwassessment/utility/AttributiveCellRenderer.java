@@ -34,8 +34,8 @@ public class AttributiveCellRenderer extends DefaultTableCellRenderer {
     private boolean isTableClick = false;
     private boolean isTopicPaneOLClick = false;
     private resourcesManager myRSCManager;
-    private PaneTableIndexing myTableIndexing;
-    private Hashtable<String, String[]> myIndicesByRowKey;
+    private PaneTableIndexing myTableIndexing = null;
+    private Hashtable<String, String[]> myIndicesByRowKey = null;
     private Vector<String> newTABFieldValues = null;
     private ObservableSingleton os = null;
 

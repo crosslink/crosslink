@@ -967,11 +967,11 @@ public class LTWAssessmentToolView extends FrameView {
                         // =====================================================
                         boolean rightCorpusDir = true; //corpusDirChecker(isTopicWikipedia);
                         if (rightCorpusDir) {
-                            if (outRadioBtn.isSelected()) {
+//                            if (outRadioBtn.isSelected()) {
                                 setOutgoingTAB();
-                            } else if (inRadioBtn.isSelected()) {
-                                setIncomingTBA();
-                            }
+//                            } else if (inRadioBtn.isSelected()) {
+//                                setIncomingTBA();
+//                            }
                         }
                     }
                 } catch (IOException ex) {
@@ -1015,7 +1015,7 @@ public class LTWAssessmentToolView extends FrameView {
 
     private void inRadioBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inRadioBtnActionPerformed
         // populate Incoming Links T.B.A.
-        setIncomingTBA();
+//        setIncomingTBA();
 }//GEN-LAST:event_inRadioBtnActionPerformed
 
     private void jRadioButtonMenuItemZhActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonMenuItemZhActionPerformed
@@ -1182,89 +1182,89 @@ public class LTWAssessmentToolView extends FrameView {
     // =========================================================================
     // Incoming Links: T.B.A.
     // =========================================================================
-    private void setIncomingTBA() {
-        System.setProperty(sysPropertyIsTABKey, "false");
-        // Hashtable<incoming : topicFile>: [0]:Offset
-        // Hashtable<String, Hashtable<String, Vector<String[]>>>
-        topicBepsHT = myPooler.getTopicAllBeps();
-        poolIncomingData = myPooler.getIncomingPool();
-        // ---------------------------------------------------------------------
-        // Get Last Indices
-        String[] lastTBAIndices = rscManager.getTBANavigationIndex();
-        String lastRowIndex = lastTBAIndices[0];
-        String[] lastTBAIndicesSA = lastTBAIndices[1].split(" , ");
-        String lastTopicIDIndex = lastTBAIndicesSA[0];
-        // Get Topic ID & xmlFile Path --> record them into ToolResource XML
-        currTopicID = topicFileIDsV.elementAt(Integer.valueOf(lastTopicIDIndex));
-//        if (isTopicWikipedia) {
-            // current Topic
-            currTopicFilePath = wikipediaTopicFileDir + currTopicID + ".xml";
+//    private void setIncomingTBA() {
+//        System.setProperty(sysPropertyIsTABKey, "false");
+//        // Hashtable<incoming : topicFile>: [0]:Offset
+//        // Hashtable<String, Hashtable<String, Vector<String[]>>>
+//        topicBepsHT = myPooler.getTopicAllBeps();
+//        poolIncomingData = myPooler.getIncomingPool();
+//        // ---------------------------------------------------------------------
+//        // Get Last Indices
+//        String[] lastTBAIndices = rscManager.getTBANavigationIndex();
+//        String lastRowIndex = lastTBAIndices[0];
+//        String[] lastTBAIndicesSA = lastTBAIndices[1].split(" , ");
+//        String lastTopicIDIndex = lastTBAIndicesSA[0];
+//        // Get Topic ID & xmlFile Path --> record them into ToolResource XML
+//        currTopicID = topicFileIDsV.elementAt(Integer.valueOf(lastTopicIDIndex));
+////        if (isTopicWikipedia) {
+//            // current Topic
+//            currTopicFilePath = wikipediaTopicFileDir + currTopicID + ".xml";
+////        } else {
+////            // need to find out from TeAra Collection Folders
+////            currTopicFilePath = rscManager.getTeAraCollectionFolder() + rscManager.getTeAraFilePathByName(currTopicID + ".xml");
+////        }
+//        rscManager.updateCurrTopicID(currTopicFilePath);
+//        // ---------------------------------------------------------------------
+//        // init Topic Text Pane Content
+//        setTextPaneContent(currTopicFilePath);
+//        // Get BEP Screen Position
+//        // --> Convert FOL to Screen Position --> record INTO toolResource.XML
+//        currBepXMLOffset = topicBepsHT.get(topicBepsHTPrefix + currTopicID);
+//        folMatcher = FOLTXTMatcher.getInstance();
+//        currBepSCROffset = folMatcher.getSCRBepPosV(this.topicTextPane, currTopicID, currBepXMLOffset, isTopicWikipedia);
+//        // set BEP ICONs
+//        setTopicBEPIcon(currBepSCROffset);
+//        // ---------------------------------------------------------------------
+//        // populate SRC JTable
+//        tbaTableModel = new TBAInteractiveTableModel(incomingTBAColumnNames);
+//        anchorBepTable.setModel(tbaTableModel);
+//        anchorBepTable.repaint();
+//        anchorBepTable.setSurrendersFocusOnKeystroke(true);
+//        anchorBepTable.setEnabled(false);
+//        anchorBepTable.setCellSelectionEnabled(true);
+//        anchorBepTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+//        anchorBepTable.addMouseListener(new paneTableMouseListener(this.topicTextPane, this.linkTextPane, this.anchorBepTable));
+//        // populate TAB Table, including Hidden Field
+//        boolean isTAB = false;
+//        paneTableIndexing = paneTableIndexing.getInstance();
+//        myPaneTableManager = new PaneTableManager(paneTableIndexing);
+//        myPaneTableManager.populateTBATable(tbaTableModel);
+//        // Hidden Field Column
+//        TableColumn hiddenTC = anchorBepTable.getColumnModel().getColumn(TBAInteractiveTableModel.HIDDEN_INDEX);
+//        hiddenTC.setMinWidth(2);
+//        hiddenTC.setPreferredWidth(2);
+//        hiddenTC.setMaxWidth(2);
+//        hiddenTC.setCellRenderer(new InteractiveRenderer(TBAInteractiveTableModel.HIDDEN_INDEX));
+//        // ---------------------------------------------------------------------
+//        // initialize Topic Panel "BEP" Listener
+//        // create Caret the status pane
+////        CaretListenerLabel caretListenerLabel = new CaretListenerLabel("Caret Status", this.topicTextPane, this.statusMessageLabel);
+////        this.topicTextPane.addCaretListener(caretListenerLabel);
+//        topicPaneMouseListener mtTopicPaneListener = new topicPaneMouseListener(this.topicTextPane, this.linkTextPane, this.currBepSCROffset, this.anchorBepTable, this.paneTableIndexing);
+//        this.topicTextPane.addMouseListener(mtTopicPaneListener);
+//        this.topicTextPane.addMouseMotionListener(mtTopicPaneListener);
+//        // ---------------------------------------------------------------------
+//        this.topicTextPane.getCaret().setDot(Integer.valueOf(currBepSCROffset.elementAt(0)[0]));
+//        this.topicTextPane.scrollRectToVisible(this.topicTextPane.getVisibleRect());
+//        this.topicTextPane.repaint();
+//        // ---------------------------------------------------------------------
+//        // set up linkPaneMouseListener();
+//        linkPaneMouseListener myLPMListener = new linkPaneMouseListener(this.topicTextPane, this.linkTextPane, this.anchorBepTable);
+//        this.linkTextPane.addMouseListener(myLPMListener);
+//        // ---------------------------------------------------------------------
+//        // According to TAB-Navigation-Indices
+//        // TODO: populate the "Last" BEP Link & Highlight Table Row
+//        String[] thisRowValuesSA = paneTableIndexing.getTableValuesByRowIndexWOText().elementAt(Integer.valueOf(lastRowIndex));
+//        int updateLevel = 2;
+//        if (isTAB) {
+//            this.myTABTxtPaneManager.updateTXTPanes(topicTextPane, linkTextPane, anchorBepTable, thisRowValuesSA, updateLevel);
 //        } else {
-//            // need to find out from TeAra Collection Folders
-//            currTopicFilePath = rscManager.getTeAraCollectionFolder() + rscManager.getTeAraFilePathByName(currTopicID + ".xml");
+//            this.myTBATxtPaneManager.updateTXTPanes(topicTextPane, linkTextPane, anchorBepTable, thisRowValuesSA, updateLevel);
 //        }
-        rscManager.updateCurrTopicID(currTopicFilePath);
-        // ---------------------------------------------------------------------
-        // init Topic Text Pane Content
-        setTextPaneContent(currTopicFilePath);
-        // Get BEP Screen Position
-        // --> Convert FOL to Screen Position --> record INTO toolResource.XML
-        currBepXMLOffset = topicBepsHT.get(topicBepsHTPrefix + currTopicID);
-        folMatcher = FOLTXTMatcher.getInstance();
-        currBepSCROffset = folMatcher.getSCRBepPosV(this.topicTextPane, currTopicID, currBepXMLOffset, isTopicWikipedia);
-        // set BEP ICONs
-        setTopicBEPIcon(currBepSCROffset);
-        // ---------------------------------------------------------------------
-        // populate SRC JTable
-        tbaTableModel = new TBAInteractiveTableModel(incomingTBAColumnNames);
-        anchorBepTable.setModel(tbaTableModel);
-        anchorBepTable.repaint();
-        anchorBepTable.setSurrendersFocusOnKeystroke(true);
-        anchorBepTable.setEnabled(false);
-        anchorBepTable.setCellSelectionEnabled(true);
-        anchorBepTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-        anchorBepTable.addMouseListener(new paneTableMouseListener(this.topicTextPane, this.linkTextPane, this.anchorBepTable));
-        // populate TAB Table, including Hidden Field
-        boolean isTAB = false;
-        paneTableIndexing = paneTableIndexing.getInstance();
-        myPaneTableManager = new PaneTableManager(paneTableIndexing);
-        myPaneTableManager.populateTBATable(tbaTableModel);
-        // Hidden Field Column
-        TableColumn hiddenTC = anchorBepTable.getColumnModel().getColumn(TBAInteractiveTableModel.HIDDEN_INDEX);
-        hiddenTC.setMinWidth(2);
-        hiddenTC.setPreferredWidth(2);
-        hiddenTC.setMaxWidth(2);
-        hiddenTC.setCellRenderer(new InteractiveRenderer(TBAInteractiveTableModel.HIDDEN_INDEX));
-        // ---------------------------------------------------------------------
-        // initialize Topic Panel "BEP" Listener
-        // create Caret the status pane
-//        CaretListenerLabel caretListenerLabel = new CaretListenerLabel("Caret Status", this.topicTextPane, this.statusMessageLabel);
-//        this.topicTextPane.addCaretListener(caretListenerLabel);
-        topicPaneMouseListener mtTopicPaneListener = new topicPaneMouseListener(this.topicTextPane, this.linkTextPane, this.currBepSCROffset, this.anchorBepTable, this.paneTableIndexing);
-        this.topicTextPane.addMouseListener(mtTopicPaneListener);
-        this.topicTextPane.addMouseMotionListener(mtTopicPaneListener);
-        // ---------------------------------------------------------------------
-        this.topicTextPane.getCaret().setDot(Integer.valueOf(currBepSCROffset.elementAt(0)[0]));
-        this.topicTextPane.scrollRectToVisible(this.topicTextPane.getVisibleRect());
-        this.topicTextPane.repaint();
-        // ---------------------------------------------------------------------
-        // set up linkPaneMouseListener();
-        linkPaneMouseListener myLPMListener = new linkPaneMouseListener(this.topicTextPane, this.linkTextPane, this.anchorBepTable);
-        this.linkTextPane.addMouseListener(myLPMListener);
-        // ---------------------------------------------------------------------
-        // According to TAB-Navigation-Indices
-        // TODO: populate the "Last" BEP Link & Highlight Table Row
-        String[] thisRowValuesSA = paneTableIndexing.getTableValuesByRowIndexWOText().elementAt(Integer.valueOf(lastRowIndex));
-        int updateLevel = 2;
-        if (isTAB) {
-            this.myTABTxtPaneManager.updateTXTPanes(topicTextPane, linkTextPane, anchorBepTable, thisRowValuesSA, updateLevel);
-        } else {
-            this.myTBATxtPaneManager.updateTXTPanes(topicTextPane, linkTextPane, anchorBepTable, thisRowValuesSA, updateLevel);
-        }
-        // ---------------------------------------------------------------------
-        anchorBepTable.setDefaultRenderer(Object.class, new AttributiveCellRenderer(Integer.valueOf(lastRowIndex), 3, isTAB));
-        anchorBepTable.repaint();
-    }
+//        // ---------------------------------------------------------------------
+//        anchorBepTable.setDefaultRenderer(Object.class, new AttributiveCellRenderer(Integer.valueOf(lastRowIndex), 3, isTAB));
+//        anchorBepTable.repaint();
+//    }
     // =========================================================================
     // Outgoing Links: T.A.B.
     // =========================================================================
@@ -1314,13 +1314,17 @@ public class LTWAssessmentToolView extends FrameView {
         ((DefaultTableModel)anchorBepTable.getModel()).setRowCount(0);
         ((DefaultTableModel)anchorBepTable.getModel()).fireTableDataChanged();
         anchorBepTable.repaint();
+        
         // populate SRC JTable
-
+        anchorBepTable.addMouseListener(new paneTableMouseListener(this.topicTextPane, this.linkTextPane, this.anchorBepTable));
+        
         // populate TAB Table, including Hidden Field
         boolean isTAB = true;
         paneTableIndexing = PaneTableIndexing.getInstance();
+        paneTableIndexing.populateTABIndexing();
         myPaneTableManager = new PaneTableManager(paneTableIndexing);
         myPaneTableManager.populateTABTable(tabTableModel);
+
         // Hidden Field Column
         TableColumn hiddenTC = anchorBepTable.getColumnModel().getColumn(TABInteractiveTableModel.HIDDEN_INDEX);
         hiddenTC.setMinWidth(2);
@@ -1344,11 +1348,11 @@ public class LTWAssessmentToolView extends FrameView {
         if (paneTableRowIndexWOText.size() > 0) {
 	        String[] thisRowValuesSA = paneTableRowIndexWOText.elementAt(Integer.valueOf(lastRowIndex));
 	        int updateLevel = 2;
-	        if (isTAB) {
+//	        if (isTAB) {
 	            this.myTABTxtPaneManager.updateTXTPanes(this.topicTextPane, this.linkTextPane, this.anchorBepTable, thisRowValuesSA, updateLevel);
-	        } else {
-	            this.myTBATxtPaneManager.updateTXTPanes(this.topicTextPane, this.linkTextPane, this.anchorBepTable, thisRowValuesSA, updateLevel);
-	        }
+//	        } else {
+//	            this.myTBATxtPaneManager.updateTXTPanes(this.topicTextPane, this.linkTextPane, this.anchorBepTable, thisRowValuesSA, updateLevel);
+//	        }
         }
         // ---------------------------------------------------------------------
         anchorBepTable.setDefaultRenderer(Object.class, new AttributiveCellRenderer(Integer.valueOf(lastRowIndex), 3, isTAB));
@@ -1436,7 +1440,13 @@ public class LTWAssessmentToolView extends FrameView {
         anchorBepTable.setEnabled(false);
         anchorBepTable.setCellSelectionEnabled(true);
         anchorBepTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-        anchorBepTable.addMouseListener(new paneTableMouseListener(this.topicTextPane, this.linkTextPane, this.anchorBepTable));
+        
+        // Hidden Field Column
+        TableColumn hiddenTC = anchorBepTable.getColumnModel().getColumn(TABInteractiveTableModel.HIDDEN_INDEX);
+        hiddenTC.setMinWidth(2);
+        hiddenTC.setPreferredWidth(2);
+        hiddenTC.setMaxWidth(2);
+        hiddenTC.setCellRenderer(new InteractiveRenderer(TABInteractiveTableModel.HIDDEN_INDEX));
     }
 }
 

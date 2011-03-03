@@ -128,7 +128,7 @@ public class topicPaneMouseListener implements MouseInputListener {
 
     // <editor-fold defaultstate="collapsed" desc="Mouse Event Action">
     // Get Caret Event when Mouse Click
-    private void activateTopicPaneMouseClickEvant(MouseEvent mce) {
+    private void activateTopicPaneMouseClickEvent(MouseEvent mce) {
 //        this.isOutgoingTAB = Boolean.valueOf(System.getProperty(sysPropertyKey));
         Point point = mce.getPoint();
         if (mce.getButton() == MouseEvent.BUTTON1) {
@@ -545,7 +545,7 @@ public class topicPaneMouseListener implements MouseInputListener {
 
     // <editor-fold defaultstate="collapsed" desc="Mouse Events">
     public void mouseClicked(MouseEvent mce) {
-        activateTopicPaneMouseClickEvant(mce);
+        activateTopicPaneMouseClickEvent(mce);
     }
 
     public void mouseMoved(MouseEvent me) {

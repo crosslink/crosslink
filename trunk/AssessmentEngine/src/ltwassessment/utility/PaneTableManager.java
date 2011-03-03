@@ -43,8 +43,7 @@ public class PaneTableManager {
     }
 
     public void populateTABTable(TABInteractiveTableModel tabTableModel) {
-        isTAB = true;
-        paneTableValueSetV = myTableIndexing.getPaneTableValueSet(isTAB);
+        paneTableValueSetV = myTableIndexing.getPaneTableValueSet();
         int hiddenItem = 0;
         int size = paneTableValueSetV.size();
         for (int i = 0; i < size; i++) {
@@ -61,20 +60,19 @@ public class PaneTableManager {
         tabTableModel.fireTableDataChanged();
     }
 
-    public void populateTBATable(TBAInteractiveTableModel tbaTableModel) {
-        isTAB = false;
-        paneTableValueSetV = myTableIndexing.getPaneTableValueSet(isTAB);
-        int hiddenItem = 0;
-        for (int i = 0; i < paneTableValueSetV.size(); i++) {
-            String[] thisTBASet = paneTableValueSetV.elementAt(i);
-            if (!tbaTableModel.hasEmptyRow()) {
-                tbaTableModel.addEmptyRow();
-            }
-            for (int j = 0; j < thisTBASet.length; j++) {
-                tbaTableModel.setValueAt(thisTBASet[j], i, j);
-            }
-            tbaTableModel.setValueAt("linkAnchorItem_" + hiddenItem, i, thisTBASet.length);
-            hiddenItem++;
-        }
-    }
+//    public void populateTBATable(TBAInteractiveTableModel tbaTableModel) {
+//        paneTableValueSetV = myTableIndexing.getPaneTableValueSet();
+//        int hiddenItem = 0;
+//        for (int i = 0; i < paneTableValueSetV.size(); i++) {
+//            String[] thisTBASet = paneTableValueSetV.elementAt(i);
+//            if (!tbaTableModel.hasEmptyRow()) {
+//                tbaTableModel.addEmptyRow();
+//            }
+//            for (int j = 0; j < thisTBASet.length; j++) {
+//                tbaTableModel.setValueAt(thisTBASet[j], i, j);
+//            }
+//            tbaTableModel.setValueAt("linkAnchorItem_" + hiddenItem, i, thisTBASet.length);
+//            hiddenItem++;
+//        }
+//    }
 }
