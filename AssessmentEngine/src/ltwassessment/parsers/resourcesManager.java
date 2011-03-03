@@ -636,37 +636,46 @@ public class resourcesManager {
 //    }
 
     private String getTargetFilePathByFileName(String topDir, String pathCollectionFile, String fileName) {
+    	if (fileName.length() <= 4) {
+    		System.err.println("Invalid file id: " + fileName);
+    		return "FileNotFound.xml";
+    	}
         String thisFileFullPath = "";
-        if (pathCollectionFile.equals("")) {
+//        if (pathCollectionFile.equals("")) {
             // IS Wikipedia
-            String subFolder = fileName.substring(fileName.length() - 7, fileName.lastIndexOf(".xml"));
+            int lastPos = fileName.lastIndexOf(".xml");
+            String subFolder;
+            if (lastPos < 3)
+            	subFolder = String.format("%03d", Integer.parseInt(fileName.substring(0, lastPos)));
+            else
+            	subFolder = fileName.substring(fileName.length() - 7, lastPos);
             return thisFileFullPath = topDir + subFolder + File.separator + fileName;
-        } else {
-            // IS TeAra
-            try {
-                BufferedReader br = new BufferedReader(new FileReader(pathCollectionFile));
-                String currTopPath = "";
-                String thisLine = "";
-                while ((thisLine = br.readLine()) != null) {
-                    if (thisLine.startsWith("Path : ")) {
-                        currTopPath = thisLine.split(" : ")[1].trim();
-                    } else {
-                        String[] thisFileListSA = thisLine.split(" ; ");
-                        List thisL = Arrays.asList(thisFileListSA);
-                        Vector thisV = new Vector(thisL);
-                        if (thisV.contains(fileName)) {
-                            return thisFileFullPath = currTopPath + File.separator + fileName;
-                        }
-                    }
-                }
-                br.close();
-            } catch (IOException ex) {
-                Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
-            }
-        }
+//        } else {
+//            // IS TeAra
+//            try {
+//                BufferedReader br = new BufferedReader(new FileReader(pathCollectionFile));
+//                String currTopPath = "";
+//                String thisLine = "";
+//                while ((thisLine = br.readLine()) != null) {
+//                    if (thisLine.startsWith("Path : ")) {
+//                        currTopPath = thisLine.split(" : ")[1].trim();
+//                    } else {
+//                        String[] thisFileListSA = thisLine.split(" ; ");
+//                        List thisL = Arrays.asList(thisFileListSA);
+//                        Vector thisV = new Vector(thisL);
+//                        if (thisV.contains(fileName)) {
+//                            return thisFileFullPath = currTopPath + File.separator + fileName;
+//                        }
+//                    }
+//                }
+//                br.close();
+//            } catch (IOException ex) {
+//                Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
+//            }
+//        }
         // Here it should return "File NOT FOUND XML file for display"
 //        log("fileName: " + fileName);
-        return thisFileFullPath = "FileNotFound.xml";
+//        return thisFileFullPath = "FileNotFound.xml";
     }
 
     public String getCurrTopicXmlFile() {

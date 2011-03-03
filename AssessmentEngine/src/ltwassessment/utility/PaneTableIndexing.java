@@ -31,20 +31,20 @@ public class PaneTableIndexing {
     // TAB: Outgoing Variables
     private Hashtable<String, Vector<String[]>> topicAnchorsHT = null; //new Hashtable<String, Vector<String[]>>();
     private Hashtable<String, Hashtable<String, Hashtable<String, Vector<String[]>>>> poolOutgoingData = null; //new Hashtable<String, Hashtable<String, Hashtable<String, Vector<String[]>>>>();
-    private Hashtable<String, Vector<String>> tabAnchorByTopicHT;
-    private Hashtable<String, Vector<String>> tabAnchorByTopicHTWOTxt;
-    private Hashtable<String, Vector<String>> tabBepByTopicAnchorHT;
-    private Hashtable<String, Vector<String>> tabBepByTopicAnchorHTWOTxt;
+    private Hashtable<String, Vector<String>> tabAnchorByTopicHT = null;
+    private Hashtable<String, Vector<String>> tabAnchorByTopicHTWOTxt = null;
+    private Hashtable<String, Vector<String>> tabBepByTopicAnchorHT = null;
+    private Hashtable<String, Vector<String>> tabBepByTopicAnchorHTWOTxt = null;
     // TBA: Incoming Variables
     private Hashtable<String, Vector<String[]>> topicBepsHT = new Hashtable<String, Vector<String[]>>();
     private Hashtable<String, Hashtable<String, Vector<String[]>>> poolIncomingData = new Hashtable<String, Hashtable<String, Vector<String[]>>>();
-    private Hashtable<String, Vector<String>> tbaBepByTopicHT;
-    private Hashtable<String, Vector<String>> tbaBepByTopicHTWOTxt;
-    private Hashtable<String, Vector<String[]>> tbaTargetFileByTopicBepHT;
-    private Hashtable<String, Vector<String[]>> tbaTargetFileByTopicBepHTWOTxt;
-    private Hashtable<String, Vector<String[]>> tbaAnchorFileByTopicBepHT;
-    private Hashtable<String, Vector<String[]>> tbaAnchorFileByTopicBepHTWOTxt;
-    private Hashtable<String, String[]> NAVIndice;
+    private Hashtable<String, Vector<String>> tbaBepByTopicHT = null;
+    private Hashtable<String, Vector<String>> tbaBepByTopicHTWOTxt = null;
+    private Hashtable<String, Vector<String[]>> tbaTargetFileByTopicBepHT = null;
+    private Hashtable<String, Vector<String[]>> tbaTargetFileByTopicBepHTWOTxt = null;
+    private Hashtable<String, Vector<String[]>> tbaAnchorFileByTopicBepHT = null;
+    private Hashtable<String, Vector<String[]>> tbaAnchorFileByTopicBepHTWOTxt = null;
+    private Hashtable<String, String[]> NAVIndice = null;
 
     private static PaneTableIndexing instance = null;
     
@@ -59,24 +59,26 @@ public class PaneTableIndexing {
     }
 
     public PaneTableIndexing(boolean isTAB) {
+        this.NAVIndice = new Hashtable<String, String[]>();
+        this.tableTopicIDNameV = new Vector<String>();
+        this.tableTopicIDV = new Vector<String>();
+        this.tabAnchorByTopicHT = new Hashtable<String, Vector<String>>();
+        this.tabAnchorByTopicHTWOTxt = new Hashtable<String, Vector<String>>();
+        this.tabBepByTopicAnchorHT = new Hashtable<String, Vector<String>>();
+        this.tabBepByTopicAnchorHTWOTxt = new Hashtable<String, Vector<String>>();
+        
         //org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(ltwassessment.ltwassessmentApp.class).getContext().getResourceMap(ltwassessmentView.class);
         this.wikipediaCollTitle = AppResource.getInstance().getResourceMap().getString("collectionType.Wikipedia");
 //        this.teAraCollTitle = AppResource.getInstance().getResourceMap().getString("collectionType.TeAra");
         // ---------------------------------------------------------------------
-        this.myRunsPooler = PoolerManager.getInstance();
+
         this.myRSCManager = resourcesManager.getInstance();
         this.myFOLMatcher = FOLTXTMatcher.getInstance();
-        // [0]:participant-id, [1]:run-id, [2]:task, [3]:collection
-        this.afProperty = myRunsPooler.getPoolProperty();
-        // Vector<String[]>: [0]:FileID, [1]:Name
-        this.RunTopics = myRunsPooler.getAllTopicsInPool();
+
         // ---------------------------------------------------------------------
 
 //        if (isTAB) {
-            // Hashtable<outgoing : topicFileID>: [0]:Offset, [1]:Length, [2]:Anchor_Name
-            this.topicAnchorsHT = myRunsPooler.getTopicAllAnchors();
             // Topic --> outgoing --> anchor --> subanchor --> BEPs
-            this.poolOutgoingData = myRunsPooler.getOutgoingPool();
             // For GET Methods called by Other Classes
             // populate Row Number, Navigation Indices HT
 
@@ -103,13 +105,6 @@ public class PaneTableIndexing {
 
     // <editor-fold defaultstate="collapsed" desc="Populate All Variables via Indexing">
     private void populateTBAIndexing() {
-        this.NAVIndice = new Hashtable<String, String[]>();
-        this.tableTopicIDNameV = new Vector<String>();
-        this.tableTopicIDV = new Vector<String>();
-        this.tabAnchorByTopicHT = new Hashtable<String, Vector<String>>();
-        this.tabAnchorByTopicHTWOTxt = new Hashtable<String, Vector<String>>();
-        this.tabBepByTopicAnchorHT = new Hashtable<String, Vector<String>>();
-        this.tabBepByTopicAnchorHTWOTxt = new Hashtable<String, Vector<String>>();
         // Get All Column Value in an String[] stored in Vector<String[]>
         this.paneTableRowIndex = getPaneTableValueSet();
         
@@ -260,7 +255,10 @@ public class PaneTableIndexing {
         NAVIndice.put(String.valueOf(rowCounter), thisNavIndicesSA);
     }
 
-    private void populateTABIndexing() {
+    public void populateTABIndexing() {
+        // Get All Column Value in an String[] stored in Vector<String[]>
+        this.paneTableRowIndex = getPaneTableValueSet();
+        
         String thisTopicIDName = "";
         String thisTopicID = "";
         String lastTopicIDName = "";
@@ -373,6 +371,18 @@ public class PaneTableIndexing {
         // Target: String[4]:
         // TAB: Topic(22560) : Anchor(1114_19) : Subanchor(1114_13) : BEP([0]:1538, [1]:123017)
         // TBA: Topic(22560) : BEP(1538) : Anchor(1114_13) : FileID(123017)
+        this.myRunsPooler = PoolerManager.getInstance();
+        this.poolOutgoingData = myRunsPooler.getOutgoingPool();
+        // [0]:participant-id, [1]:run-id, [2]:task, [3]:collection
+        this.afProperty = myRunsPooler.getPoolProperty();
+        // Vector<String[]>: [0]:FileID, [1]:Name
+        this.RunTopics = myRunsPooler.getAllTopicsInPool();
+        
+        // Hashtable<outgoing : topicFileID>: [0]:Offset, [1]:Length, [2]:Anchor_Name
+        this.topicAnchorsHT = myRunsPooler.getTopicAllAnchors();
+        
+        paneTableRowIndexWOText.clear();
+        
         Vector<String[]> myTableSetV = new Vector<String[]>();
         Vector<String> myTopicIDsV = new Vector<String>();
 //        if (isTAB) {

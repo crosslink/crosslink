@@ -147,7 +147,7 @@ public class topicPaneMouseListener implements MouseInputListener {
 
     // <editor-fold defaultstate="collapsed" desc="Mouse Events">
     public void mouseClicked(MouseEvent mce) {
-        activateTopicPaneMouseClickEvant(mce);
+        activateTopicPaneMouseClickEvent(mce);
     }
 
     public void mouseMoved(MouseEvent me) {
@@ -208,7 +208,7 @@ public class topicPaneMouseListener implements MouseInputListener {
         }
     }
 
-    private void activateTopicPaneMouseClickEvant(MouseEvent mce) {
+    private void activateTopicPaneMouseClickEvent(MouseEvent mce) {
         this.isOutgoingTAB = Boolean.valueOf(System.getProperty(sysPropertyKey));
         Point point = mce.getPoint();
         if (mce.getButton() == MouseEvent.BUTTON1) {
