@@ -2,13 +2,14 @@ package ltwassessment.utility;
 
 import java.util.Vector;
 import javax.swing.table.AbstractTableModel;
+import javax.swing.table.DefaultTableModel;
 
 import ltwassessment.utility.TABRecord;
 
 /**
  * @author Darren HUANG
  */
-public class TABInteractiveTableModel extends AbstractTableModel {
+public class TABInteractiveTableModel extends DefaultTableModel {
 
     public static final int TOPIC_INDEX = 0;
     public static final int ANCHOR_INDEX = 1;
@@ -50,7 +51,7 @@ public class TABInteractiveTableModel extends AbstractTableModel {
     }
 
     public int getRowCount() {
-        return dataVector.size();
+        return dataVector == null ? 0 : dataVector.size();
     }
 
     public int getColumnCount() {

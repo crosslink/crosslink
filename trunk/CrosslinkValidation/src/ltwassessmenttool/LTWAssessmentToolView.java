@@ -41,6 +41,7 @@ import javax.swing.ScrollPaneConstants;
 
 import javax.swing.JOptionPane;
 import javax.swing.ListSelectionModel;
+import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumn;
 import javax.swing.text.Highlighter;
 // import Classes
@@ -62,8 +63,8 @@ import ltwassessment.utility.TABInteractiveTableModel;
 import ltwassessment.utility.TBAInteractiveTableModel;
 import ltwassessment.utility.fieldUpdateObserver;
 import ltwassessment.utility.highlightPainters;
-import ltwassessment.utility.paneTableIndexing;
-import ltwassessment.utility.paneTableManager;
+import ltwassessment.utility.PaneTableIndexing;
+import ltwassessment.utility.PaneTableManager;
 import ltwassessment.utility.tabTxtPaneManager;
 import ltwassessment.utility.tbaTxtPaneManager;
 import ltwassessment.validation.Validator;
@@ -108,8 +109,8 @@ public class LTWAssessmentToolView extends FrameView {
     // Declare External Classes
     private PoolerManager myPooler;
     private FOLTXTMatcher folMatcher;
-    private paneTableManager myPaneTableManager;
-    private paneTableIndexing paneTableIndexing;
+    private PaneTableManager myPaneTableManager;
+    private PaneTableIndexing paneTableIndexing;
     private resourcesManager rscManager;
     private tabTxtPaneManager myTABTxtPaneManager;
     private tbaTxtPaneManager myTBATxtPaneManager;
@@ -152,6 +153,7 @@ public class LTWAssessmentToolView extends FrameView {
         AppResource.getInstance().setResourceMap(org.jdesktop.application.Application.getInstance(ltwassessmenttool.LTWAssessmentToolApp.class).getContext().getResourceMap(ltwassessmenttool.LTWAssessmentToolView.class));
 
         initComponents();
+        customiseComponents();
 
         group.add(outRadioBtn);
         group.add(inRadioBtn);
@@ -343,10 +345,108 @@ public class LTWAssessmentToolView extends FrameView {
 
         rightSplitPane.setTopComponent(linkTextScrollPane);
 
-        anchorBepTablePane.setName("anchorBepTablePane"); // NOI18N
+        anchorBepTablePane.setMinimumSize(new java.awt.Dimension(25, 32767));
+        anchorBepTablePane.setName("anchorBepTablePane");
+        anchorBepTablePane.setPreferredSize(new java.awt.Dimension(471, 32767));
 
         anchorBepTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
                 {null, null, null, null},
                 {null, null, null, null},
                 {null, null, null, null},
@@ -356,13 +456,20 @@ public class LTWAssessmentToolView extends FrameView {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
+        anchorBepTable.setColumnSelectionAllowed(true);
         anchorBepTable.setMaximumSize(new java.awt.Dimension(2147, 720));
-        anchorBepTable.setMinimumSize(new java.awt.Dimension(10, 32));
+        anchorBepTable.setMinimumSize(new java.awt.Dimension(410, 332));
         anchorBepTable.setName("anchorBepTable"); // NOI18N
-        anchorBepTable.setPreferredSize(new java.awt.Dimension(10, 72));
+        anchorBepTable.setPreferredSize(new java.awt.Dimension(410, 1872));
+        anchorBepTable.setRequestFocusEnabled(false);
         anchorBepTablePane.setViewportView(anchorBepTable);
+        anchorBepTable.getColumnModel().getSelectionModel().setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        anchorBepTable.getColumnModel().getColumn(0).setHeaderValue(resourceMap.getString("anchorBepTable.columnModel.title0")); // NOI18N
+        anchorBepTable.getColumnModel().getColumn(1).setHeaderValue(resourceMap.getString("anchorBepTable.columnModel.title1")); // NOI18N
+        anchorBepTable.getColumnModel().getColumn(2).setHeaderValue(resourceMap.getString("anchorBepTable.columnModel.title2")); // NOI18N
+        anchorBepTable.getColumnModel().getColumn(3).setHeaderValue(resourceMap.getString("anchorBepTable.columnModel.title3")); // NOI18N
 
-        rightSplitPane.setRightComponent(anchorBepTablePane);
+        rightSplitPane.setBottomComponent(anchorBepTablePane);
 
         jSplitPane1.setRightComponent(rightSplitPane);
 
@@ -432,7 +539,7 @@ public class LTWAssessmentToolView extends FrameView {
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblTopicID, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(76, Short.MAX_VALUE))
+                .addContainerGap(72, Short.MAX_VALUE))
             .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel2Layout.createSequentialGroup()
                     .addGap(2156, 2156, 2156)
@@ -846,7 +953,7 @@ public class LTWAssessmentToolView extends FrameView {
                     } else {
                         // Get returned valid file
                         assessmentFormXml toPooling = new assessmentFormXml(fileList);
-                        String poolingMsg = "Submission for topic" + thisXMLFile.getName() + " is successful loaded: \r\n" + toPooling.getPoolingMsg() + "\r\n Please be patient, it may take a few minutes to discovery all the links";
+                        String poolingMsg = "Submission for topic " + thisXMLFile.getName() + " is successful loaded: \r\n" + toPooling.getPoolingMsg() + "\r\n Please be patient, it may take a few minutes to discovery all the links";
                         JOptionPane.showMessageDialog(LTWAssessmentToolApp.getApplication().getMainFrame(), poolingMsg);
                         // =====================================================
                         updatePoolerToResourceXML(thisXMLFile.getAbsolutePath());
@@ -1120,7 +1227,7 @@ public class LTWAssessmentToolView extends FrameView {
         // populate TAB Table, including Hidden Field
         boolean isTAB = false;
         paneTableIndexing = paneTableIndexing.getInstance();
-        myPaneTableManager = new paneTableManager(paneTableIndexing);
+        myPaneTableManager = new PaneTableManager(paneTableIndexing);
         myPaneTableManager.populateTBATable(tbaTableModel);
         // Hidden Field Column
         TableColumn hiddenTC = anchorBepTable.getColumnModel().getColumn(TBAInteractiveTableModel.HIDDEN_INDEX);
@@ -1204,18 +1311,15 @@ public class LTWAssessmentToolView extends FrameView {
         // ---------------------------------------------------------------------
         // Clean JTable
         anchorBepTable.removeAll();
+        ((DefaultTableModel)anchorBepTable.getModel()).setRowCount(0);
+        ((DefaultTableModel)anchorBepTable.getModel()).fireTableDataChanged();
+        anchorBepTable.repaint();
         // populate SRC JTable
-        tabTableModel = new TABInteractiveTableModel(outgoingTABColumnNames);
-        anchorBepTable.setModel(tabTableModel);
-        anchorBepTable.setSurrendersFocusOnKeystroke(true);
-        anchorBepTable.setEnabled(false);
-        anchorBepTable.setCellSelectionEnabled(true);
-        anchorBepTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-        anchorBepTable.addMouseListener(new paneTableMouseListener(this.topicTextPane, this.linkTextPane, this.anchorBepTable));
+
         // populate TAB Table, including Hidden Field
         boolean isTAB = true;
-        paneTableIndexing = paneTableIndexing.getInstance();
-        myPaneTableManager = new paneTableManager(paneTableIndexing);
+        paneTableIndexing = PaneTableIndexing.getInstance();
+        myPaneTableManager = new PaneTableManager(paneTableIndexing);
         myPaneTableManager.populateTABTable(tabTableModel);
         // Hidden Field Column
         TableColumn hiddenTC = anchorBepTable.getColumnModel().getColumn(TABInteractiveTableModel.HIDDEN_INDEX);
@@ -1321,6 +1425,19 @@ public class LTWAssessmentToolView extends FrameView {
         this.topicTextPane.repaint();
     }
     // </editor-fold>
+
+    private void customiseComponents() {
+        anchorBepTablePane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+        anchorBepTable.setAutoResizeMode(JTable.AUTO_RESIZE_LAST_COLUMN);
+        
+        tabTableModel = new TABInteractiveTableModel(outgoingTABColumnNames);
+        anchorBepTable.setModel(tabTableModel);
+        anchorBepTable.setSurrendersFocusOnKeystroke(true);
+        anchorBepTable.setEnabled(false);
+        anchorBepTable.setCellSelectionEnabled(true);
+        anchorBepTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        anchorBepTable.addMouseListener(new paneTableMouseListener(this.topicTextPane, this.linkTextPane, this.anchorBepTable));
+    }
 }
 
 
