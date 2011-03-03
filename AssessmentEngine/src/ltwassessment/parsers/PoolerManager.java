@@ -86,7 +86,7 @@ public class PoolerManager {
     }
 
     public static PoolerManager getInstance(String xmlFile) {
-        if (instance == null || (afXmlPath.length() > 0)/* && !xmlFile.equals(afXmlPath)*/)
+        if (instance == null || afXmlPath == null || afXmlPath.length() == 0 || !xmlFile.equals(afXmlPath))
             instance = new PoolerManager(xmlFile);
         return instance;
     }
@@ -812,10 +812,16 @@ public class PoolerManager {
     private void getPoolData() {
         try {
             poolXMLPath = afXmlPath;//resManager.getPoolXMLFile();
-            if (poolXMLPath.length() == 0 || !new File(poolXMLPath).exists()) {
+            if (poolXMLPath == null || poolXMLPath.length() == 0)
+            	return;
+            
+            if (!new File(poolXMLPath).exists()) {
             	System.err.println("\"" + poolXMLPath + "\" doesn't exist!");
                 return;
             }
+            
+            poolOutgoingData.clear();
+            
             	//throw new FileNotFoundException();
             XMLInputFactory inputFactory = XMLInputFactory.newInstance();
             InputStream in = new FileInputStream(poolXMLPath);

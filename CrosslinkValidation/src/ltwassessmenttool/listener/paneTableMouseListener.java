@@ -12,7 +12,7 @@ import javax.swing.JTextPane;
 import ltwassessment.parsers.PoolerManager;
 import ltwassessment.parsers.resourcesManager;
 import ltwassessment.utility.AttributiveCellRenderer;
-import ltwassessment.utility.paneTableIndexing;
+import ltwassessment.utility.PaneTableIndexing;
 import ltwassessment.utility.tabTxtPaneManager;
 import ltwassessment.utility.tbaTxtPaneManager;
 
@@ -27,8 +27,8 @@ public class paneTableMouseListener extends MouseAdapter {
     private resourcesManager rscManager;
     private tabTxtPaneManager tabSManager;
     private tbaTxtPaneManager tbaSManager;
-    private paneTableIndexing tabTableIndexing;
-    private paneTableIndexing tbaTableIndexing;
+    private PaneTableIndexing tabTableIndexing;
+    private PaneTableIndexing tbaTableIndexing;
     private PoolerManager myRunsPooler;
     private JTextPane topicTxtPane;
     private JTextPane linkTxtPane;
@@ -75,14 +75,14 @@ public class paneTableMouseListener extends MouseAdapter {
         this.poolOutgoingData = myRunsPooler.getOutgoingPool();
         TABIndice = new Hashtable<String, String[]>();
         indexTABData(this.poolOutgoingData);
-        tabTableIndexing = paneTableIndexing.getInstance();
+        tabTableIndexing = PaneTableIndexing.getInstance();
         tabNAVIndice = tabTableIndexing.getRowNAVIndices();
         // For Incoming
         this.tbaSManager = new tbaTxtPaneManager();
         this.poolIncomingData = myRunsPooler.getIncomingPool();
         TBAIndice = new Hashtable<String, String[]>();
         indexTBAData(this.poolIncomingData);
-        tbaTableIndexing = paneTableIndexing.getInstance();
+        tbaTableIndexing = PaneTableIndexing.getInstance();
         tabNAVIndice = tbaTableIndexing.getRowNAVIndices();
     }
 
@@ -280,7 +280,7 @@ public class paneTableMouseListener extends MouseAdapter {
                 this.poolOutgoingData = myRunsPooler.getOutgoingPool();
                 TABIndice = new Hashtable<String, String[]>();
                 indexTABData(this.poolOutgoingData);
-                tabTableIndexing = paneTableIndexing.getInstance();
+                tabTableIndexing = PaneTableIndexing.getInstance();
                 tabNAVIndice = tabTableIndexing.getRowNAVIndices();
 
                 // -----------------------------------------------------------------
@@ -308,7 +308,7 @@ public class paneTableMouseListener extends MouseAdapter {
                 this.poolIncomingData = myRunsPooler.getIncomingPool();
                 TBAIndice = new Hashtable<String, String[]>();
                 indexTBAData(this.poolIncomingData);
-                tbaTableIndexing = paneTableIndexing.getInstance();
+                tbaTableIndexing = PaneTableIndexing.getInstance();
                 tabNAVIndice = tbaTableIndexing.getRowNAVIndices();
 
                 // -----------------------------------------------------------------

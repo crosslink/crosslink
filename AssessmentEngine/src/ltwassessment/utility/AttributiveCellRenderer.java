@@ -9,7 +9,7 @@ import javax.swing.table.DefaultTableCellRenderer;
 
 import ltwassessment.parsers.resourcesManager;
 import ltwassessment.utility.ObservableSingleton;
-import ltwassessment.utility.paneTableIndexing;
+import ltwassessment.utility.PaneTableIndexing;
 
 /**
  * @author Darren HUANG
@@ -34,7 +34,7 @@ public class AttributiveCellRenderer extends DefaultTableCellRenderer {
     private boolean isTableClick = false;
     private boolean isTopicPaneOLClick = false;
     private resourcesManager myRSCManager;
-    private paneTableIndexing myTableIndexing;
+    private PaneTableIndexing myTableIndexing;
     private Hashtable<String, String[]> myIndicesByRowKey;
     private Vector<String> newTABFieldValues = null;
     private ObservableSingleton os = null;
@@ -53,7 +53,7 @@ public class AttributiveCellRenderer extends DefaultTableCellRenderer {
         this.isTableClick = true;
 
         this.myRSCManager = resourcesManager.getInstance();
-        this.myTableIndexing = paneTableIndexing.getInstance();
+        this.myTableIndexing = PaneTableIndexing.getInstance();
         this.myIndicesByRowKey = this.myTableIndexing.getRowNAVIndices();
 
         this.newTABFieldValues = new Vector<String>();
@@ -70,7 +70,7 @@ public class AttributiveCellRenderer extends DefaultTableCellRenderer {
         this.isTopicPaneOLClick = true;
 
         this.myRSCManager = resourcesManager.getInstance();
-        this.myTableIndexing = paneTableIndexing.getInstance();
+        this.myTableIndexing = PaneTableIndexing.getInstance();
         this.myIndicesByRowKey = this.myTableIndexing.getRowNAVIndices();
 
         this.newTABFieldValues = new Vector<String>();
@@ -92,7 +92,7 @@ public class AttributiveCellRenderer extends DefaultTableCellRenderer {
 
 //        this.isTABTask = Boolean.valueOf(System.getProperty(sysPropertyKey));
 //        log("isTABTask: " + isTABTask);
-//        this.myTableIndexing = paneTableIndexing.getInstance();
+//        this.myTableIndexing = PaneTableIndexing.getInstance();
 
         Component c = super.getTableCellRendererComponent(table, value,
                 isSelected, hasFocus,

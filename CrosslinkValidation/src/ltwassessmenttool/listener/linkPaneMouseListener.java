@@ -10,7 +10,7 @@ import javax.swing.event.MouseInputListener;
 
 import ltwassessment.parsers.resourcesManager;
 import ltwassessment.utility.AttributiveCellRenderer;
-import ltwassessment.utility.paneTableIndexing;
+import ltwassessment.utility.PaneTableIndexing;
 import ltwassessment.utility.tabTxtPaneManager;
 import ltwassessment.utility.tbaTxtPaneManager;
 
@@ -29,7 +29,7 @@ public class linkPaneMouseListener implements MouseInputListener {
     private resourcesManager myRSCManager;
     private tabTxtPaneManager myTABTxtPaneManager;
     private tbaTxtPaneManager myTBATxtPaneManager;
-    private paneTableIndexing myPaneTableIndexing;
+    private PaneTableIndexing myPaneTableIndexing;
     // Declare TAB Index Variables
     private int currRowIndex = 0;
     private int currTopicIndex = 0;
@@ -241,7 +241,7 @@ public class linkPaneMouseListener implements MouseInputListener {
          * CASE 3: Double-Left-Click -> Change BEP Position
          */
         this.isTAB = Boolean.valueOf(System.getProperty(sysPropertyKey));
-        this.myPaneTableIndexing = paneTableIndexing.getInstance();
+        this.myPaneTableIndexing = PaneTableIndexing.getInstance();
         activateMouseClickEvent(me);
     }
 

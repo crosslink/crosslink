@@ -13,7 +13,7 @@ import ltwassessment.parsers.resourcesManager;
 /**
  * @author Darren HUANG
  */
-public class paneTableIndexing {
+public class PaneTableIndexing {
     // External Classes
 
     private PoolerManager myRunsPooler;
@@ -46,11 +46,11 @@ public class paneTableIndexing {
     private Hashtable<String, Vector<String[]>> tbaAnchorFileByTopicBepHTWOTxt;
     private Hashtable<String, String[]> NAVIndice;
 
-    private static paneTableIndexing instance = null;
+    private static PaneTableIndexing instance = null;
     
-    public static paneTableIndexing getInstance() {
+    public static PaneTableIndexing getInstance() {
     	if (instance == null)
-    		instance = new paneTableIndexing(true);
+    		instance = new PaneTableIndexing(true);
     	return instance;
     }
     
@@ -58,10 +58,10 @@ public class paneTableIndexing {
         System.out.println(content);
     }
 
-    public paneTableIndexing(boolean isTAB) {
+    public PaneTableIndexing(boolean isTAB) {
         //org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(ltwassessment.ltwassessmentApp.class).getContext().getResourceMap(ltwassessmentView.class);
         this.wikipediaCollTitle = AppResource.getInstance().getResourceMap().getString("collectionType.Wikipedia");
-        this.teAraCollTitle = AppResource.getInstance().getResourceMap().getString("collectionType.TeAra");
+//        this.teAraCollTitle = AppResource.getInstance().getResourceMap().getString("collectionType.TeAra");
         // ---------------------------------------------------------------------
         this.myRunsPooler = PoolerManager.getInstance();
         this.myRSCManager = resourcesManager.getInstance();
@@ -71,45 +71,48 @@ public class paneTableIndexing {
         // Vector<String[]>: [0]:FileID, [1]:Name
         this.RunTopics = myRunsPooler.getAllTopicsInPool();
         // ---------------------------------------------------------------------
-        // populate Row Number, Navigation Indices HT
-        this.NAVIndice = new Hashtable<String, String[]>();
-        this.tableTopicIDNameV = new Vector<String>();
-        this.tableTopicIDV = new Vector<String>();
-        if (isTAB) {
+
+//        if (isTAB) {
             // Hashtable<outgoing : topicFileID>: [0]:Offset, [1]:Length, [2]:Anchor_Name
             this.topicAnchorsHT = myRunsPooler.getTopicAllAnchors();
             // Topic --> outgoing --> anchor --> subanchor --> BEPs
             this.poolOutgoingData = myRunsPooler.getOutgoingPool();
             // For GET Methods called by Other Classes
-            this.tabAnchorByTopicHT = new Hashtable<String, Vector<String>>();
-            this.tabAnchorByTopicHTWOTxt = new Hashtable<String, Vector<String>>();
-            this.tabBepByTopicAnchorHT = new Hashtable<String, Vector<String>>();
-            this.tabBepByTopicAnchorHTWOTxt = new Hashtable<String, Vector<String>>();
-            // Get All Column Value in an String[] stored in Vector<String[]>
-            this.paneTableRowIndex = getPaneTableValueSet(isTAB);
+            // populate Row Number, Navigation Indices HT
+
             // populate All Indexing Variables /above
-            populateTABIndexing();
-        } else {
-            // Hashtable<incoming : topicFileID>: [0]:Offset
-            this.topicBepsHT = myRunsPooler.getTopicAllBeps();
-            // TopicID --> BEP Offset --> Anchor: Offset, Length, Name, FileID
-            this.poolIncomingData = myRunsPooler.getIncomingPool();
-            // For GET Methods called by Other Classes
-            this.tbaBepByTopicHT = new Hashtable<String, Vector<String>>();
-            this.tbaBepByTopicHTWOTxt = new Hashtable<String, Vector<String>>();
-            this.tbaTargetFileByTopicBepHT = new Hashtable<String, Vector<String[]>>();
-            this.tbaTargetFileByTopicBepHTWOTxt = new Hashtable<String, Vector<String[]>>();
-            this.tbaAnchorFileByTopicBepHT = new Hashtable<String, Vector<String[]>>();
-            this.tbaAnchorFileByTopicBepHTWOTxt = new Hashtable<String, Vector<String[]>>();
-            // Get All Column Value in an String[] stored in Vector<String[]>
-            this.paneTableRowIndex = getPaneTableValueSet(isTAB);
-            // populate All Indexing Variables /above
-            populateTBAIndexing();
-        }
+//            populateTABIndexing();
+//        } else {
+//            // Hashtable<incoming : topicFileID>: [0]:Offset
+//            this.topicBepsHT = myRunsPooler.getTopicAllBeps();
+//            // TopicID --> BEP Offset --> Anchor: Offset, Length, Name, FileID
+//            this.poolIncomingData = myRunsPooler.getIncomingPool();
+//            // For GET Methods called by Other Classes
+//            this.tbaBepByTopicHT = new Hashtable<String, Vector<String>>();
+//            this.tbaBepByTopicHTWOTxt = new Hashtable<String, Vector<String>>();
+//            this.tbaTargetFileByTopicBepHT = new Hashtable<String, Vector<String[]>>();
+//            this.tbaTargetFileByTopicBepHTWOTxt = new Hashtable<String, Vector<String[]>>();
+//            this.tbaAnchorFileByTopicBepHT = new Hashtable<String, Vector<String[]>>();
+//            this.tbaAnchorFileByTopicBepHTWOTxt = new Hashtable<String, Vector<String[]>>();
+//            // Get All Column Value in an String[] stored in Vector<String[]>
+//            this.paneTableRowIndex = getPaneTableValueSet(isTAB);
+//            // populate All Indexing Variables /above
+//            populateTBAIndexing();
+//        }
     }
 
     // <editor-fold defaultstate="collapsed" desc="Populate All Variables via Indexing">
     private void populateTBAIndexing() {
+        this.NAVIndice = new Hashtable<String, String[]>();
+        this.tableTopicIDNameV = new Vector<String>();
+        this.tableTopicIDV = new Vector<String>();
+        this.tabAnchorByTopicHT = new Hashtable<String, Vector<String>>();
+        this.tabAnchorByTopicHTWOTxt = new Hashtable<String, Vector<String>>();
+        this.tabBepByTopicAnchorHT = new Hashtable<String, Vector<String>>();
+        this.tabBepByTopicAnchorHTWOTxt = new Hashtable<String, Vector<String>>();
+        // Get All Column Value in an String[] stored in Vector<String[]>
+        this.paneTableRowIndex = getPaneTableValueSet();
+        
         String thisTopicIDName = "";
         String thisTopicID = "";
         String lastTopicIDName = "";
@@ -366,13 +369,13 @@ public class paneTableIndexing {
         NAVIndice.put(String.valueOf(rowCounter), thisNavIndicesSA);
     }
 
-    public Vector<String[]> getPaneTableValueSet(boolean isTAB) {
+    public Vector<String[]> getPaneTableValueSet() {
         // Target: String[4]:
         // TAB: Topic(22560) : Anchor(1114_19) : Subanchor(1114_13) : BEP([0]:1538, [1]:123017)
         // TBA: Topic(22560) : BEP(1538) : Anchor(1114_13) : FileID(123017)
         Vector<String[]> myTableSetV = new Vector<String[]>();
         Vector<String> myTopicIDsV = new Vector<String>();
-        if (isTAB) {
+//        if (isTAB) {
             // Topic --> outgoing --> pool anchor --> anchor --> BEP Links
             // Hashtable<outgoing : topicFileID, Vector<[0]:Offset, [1]:Length, [2]:Anchor_Name>>
             Hashtable<String, Vector<String>> myTopicAnchorOLHT = new Hashtable<String, Vector<String>>();
@@ -442,63 +445,63 @@ public class paneTableIndexing {
                     }
                 }
             }
-        } else {
-            // Topic --> incoming --> bep --> anchorOL --> fileID
-            // Hashtable<outgoing : topicFileID, Vector<[0]:Offset, [1]:Length, [2]:Anchor_Name>>
-            Hashtable<String, Vector<String>> myTopicBepOHT = new Hashtable<String, Vector<String>>();
-            Vector<String> myBepOV = new Vector<String>();
-            Enumeration topicKeyEnu = poolIncomingData.keys();
-            while (topicKeyEnu.hasMoreElements()) {
-                // Get Topic ID
-                Object topicKeyObj = topicKeyEnu.nextElement();
-                if (!myTopicIDsV.contains(topicKeyObj.toString())) {
-                    myTopicIDsV.add(topicKeyObj.toString());
-                }
-                // Get BEP Offset
-                myBepOV = new Vector<String>();
-                Hashtable<String, Vector<String[]>> bepAnchorsHT = poolIncomingData.get(topicKeyObj);
-                Enumeration bepKeyEnu = bepAnchorsHT.keys();
-                while (bepKeyEnu.hasMoreElements()) {
-                    Object bepOObj = bepKeyEnu.nextElement();
-                    if (!myBepOV.contains(bepOObj.toString())) {
-                        myBepOV.add(bepOObj.toString());
-                    }
-                }
-                Vector<String> mySortedBepOV = sortVectorNumbers(myBepOV);
-                myTopicBepOHT.put(topicKeyObj.toString(), mySortedBepOV);
-            }
-            Collections.sort(myTopicIDsV);
-            for (String thisTopicID : myTopicIDsV) {
-                Hashtable<String, Vector<String[]>> bepAnchorsHT = poolIncomingData.get(thisTopicID);
-                Vector<String> bepOV = myTopicBepOHT.get(thisTopicID);
-                for (String thisBepOffset : bepOV) {
-                    // Bep(1256)
-                    Vector<String[]> bepAnchorsV = bepAnchorsHT.get(thisBepOffset);
-                    for (String[] anchorSetSA : bepAnchorsV) {
-                        String anchorOffset = anchorSetSA[0];
-                        String anchorLength = anchorSetSA[1];
-                        String anchorName = anchorSetSA[2];
-                        String xmlFileID = anchorSetSA[3];
-                        // add to TABSet
-                        // Topic(22560) : Anchor(1114_19) : Subanchor(1114_13) : BEP([0]:1538, [1]:123017)
-                        // With Text
-                        String[] myTBALine = new String[4];
-                        myTBALine[0] = getTopicIDNamePair(thisTopicID);
-                        myTBALine[1] = thisBepOffset;
-                        myTBALine[2] = anchorOffset + "_" + anchorLength + " : " + anchorName;
-                        myTBALine[3] = getLinkXmlFileIdNamePair(xmlFileID);
-                        myTableSetV.add(myTBALine);
-                        // Without Text
-                        String[] myTBAWOTextLine = new String[4];
-                        myTBAWOTextLine[0] = thisTopicID;
-                        myTBAWOTextLine[1] = thisBepOffset;
-                        myTBAWOTextLine[2] = anchorOffset + "_" + anchorLength;
-                        myTBAWOTextLine[3] = xmlFileID;
-                        paneTableRowIndexWOText.add(myTBAWOTextLine);
-                    }
-                }
-            }
-        }
+//        } else {
+//            // Topic --> incoming --> bep --> anchorOL --> fileID
+//            // Hashtable<outgoing : topicFileID, Vector<[0]:Offset, [1]:Length, [2]:Anchor_Name>>
+//            Hashtable<String, Vector<String>> myTopicBepOHT = new Hashtable<String, Vector<String>>();
+//            Vector<String> myBepOV = new Vector<String>();
+//            Enumeration topicKeyEnu = poolIncomingData.keys();
+//            while (topicKeyEnu.hasMoreElements()) {
+//                // Get Topic ID
+//                Object topicKeyObj = topicKeyEnu.nextElement();
+//                if (!myTopicIDsV.contains(topicKeyObj.toString())) {
+//                    myTopicIDsV.add(topicKeyObj.toString());
+//                }
+//                // Get BEP Offset
+//                myBepOV = new Vector<String>();
+//                Hashtable<String, Vector<String[]>> bepAnchorsHT = poolIncomingData.get(topicKeyObj);
+//                Enumeration bepKeyEnu = bepAnchorsHT.keys();
+//                while (bepKeyEnu.hasMoreElements()) {
+//                    Object bepOObj = bepKeyEnu.nextElement();
+//                    if (!myBepOV.contains(bepOObj.toString())) {
+//                        myBepOV.add(bepOObj.toString());
+//                    }
+//                }
+//                Vector<String> mySortedBepOV = sortVectorNumbers(myBepOV);
+//                myTopicBepOHT.put(topicKeyObj.toString(), mySortedBepOV);
+//            }
+//            Collections.sort(myTopicIDsV);
+//            for (String thisTopicID : myTopicIDsV) {
+//                Hashtable<String, Vector<String[]>> bepAnchorsHT = poolIncomingData.get(thisTopicID);
+//                Vector<String> bepOV = myTopicBepOHT.get(thisTopicID);
+//                for (String thisBepOffset : bepOV) {
+//                    // Bep(1256)
+//                    Vector<String[]> bepAnchorsV = bepAnchorsHT.get(thisBepOffset);
+//                    for (String[] anchorSetSA : bepAnchorsV) {
+//                        String anchorOffset = anchorSetSA[0];
+//                        String anchorLength = anchorSetSA[1];
+//                        String anchorName = anchorSetSA[2];
+//                        String xmlFileID = anchorSetSA[3];
+//                        // add to TABSet
+//                        // Topic(22560) : Anchor(1114_19) : Subanchor(1114_13) : BEP([0]:1538, [1]:123017)
+//                        // With Text
+//                        String[] myTBALine = new String[4];
+//                        myTBALine[0] = getTopicIDNamePair(thisTopicID);
+//                        myTBALine[1] = thisBepOffset;
+//                        myTBALine[2] = anchorOffset + "_" + anchorLength + " : " + anchorName;
+//                        myTBALine[3] = getLinkXmlFileIdNamePair(xmlFileID);
+//                        myTableSetV.add(myTBALine);
+//                        // Without Text
+//                        String[] myTBAWOTextLine = new String[4];
+//                        myTBAWOTextLine[0] = thisTopicID;
+//                        myTBAWOTextLine[1] = thisBepOffset;
+//                        myTBAWOTextLine[2] = anchorOffset + "_" + anchorLength;
+//                        myTBAWOTextLine[3] = xmlFileID;
+//                        paneTableRowIndexWOText.add(myTBAWOTextLine);
+//                    }
+//                }
+//            }
+//        }
         return myTableSetV;
     }
     // </editor-fold>

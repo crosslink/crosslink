@@ -11,7 +11,7 @@ import javax.swing.JTextPane;
 
 import ltwassessment.parsers.resourcesManager;
 import ltwassessment.utility.AttributiveCellRenderer;
-import ltwassessment.utility.paneTableIndexing;
+import ltwassessment.utility.PaneTableIndexing;
 import ltwassessment.utility.tbaTxtPaneManager;
 
 /**
@@ -21,7 +21,7 @@ public class tbaTableMouseListener extends MouseAdapter {
 
     private resourcesManager rscManager;
     private tbaTxtPaneManager txtPManager;
-    private paneTableIndexing tbaTableIndexing;
+    private PaneTableIndexing tbaTableIndexing;
     private JTextPane topicTxtPane;
     private JTextPane linkTxtPane;
     private JTable myTBATable;
@@ -56,7 +56,7 @@ public class tbaTableMouseListener extends MouseAdapter {
         // indexing
         TBAIndice = new Hashtable<String, String[]>();
         indexTBAData(this.poolIncomingData);
-        tbaTableIndexing = paneTableIndexing.getInstance();
+        tbaTableIndexing = PaneTableIndexing.getInstance();
         NAVIndice = tbaTableIndexing.getRowNAVIndices();
 
         String[] lastTBANavSA = rscManager.getTBANavigationIndex();

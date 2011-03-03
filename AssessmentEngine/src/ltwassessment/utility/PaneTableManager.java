@@ -8,12 +8,12 @@ import ltwassessment.parsers.PoolerManager;
 import ltwassessment.parsers.resourcesManager;
 import ltwassessment.utility.TABInteractiveTableModel;
 import ltwassessment.utility.TBAInteractiveTableModel;
-import ltwassessment.utility.paneTableIndexing;
+import ltwassessment.utility.PaneTableIndexing;
 
 /**
  * @author Darren HUANG
  */
-public class paneTableManager {
+public class PaneTableManager {
 
     // constant variables
     private boolean isTAB = false;
@@ -24,13 +24,13 @@ public class paneTableManager {
     private PoolerManager myRunsPooler;
     private resourcesManager myRSCManager;
     private FOLTXTMatcher myFOLMatcher;
-    private paneTableIndexing myTableIndexing;
+    private PaneTableIndexing myTableIndexing;
 
     static void log(Object content) {
         System.out.println(content);
     }
 
-    public paneTableManager(paneTableIndexing tabIndexing) {
+    public PaneTableManager(PaneTableIndexing tabIndexing) {
         // constant variables from resource
         //org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(ltwassessment.ltwassessmentApp.class).getContext().getResourceMap(ltwassessmentView.class);
         wikipediaCollTitle = AppResource.getInstance().getResourceMap().getString("collectionType.Wikipedia");
@@ -46,7 +46,8 @@ public class paneTableManager {
         isTAB = true;
         paneTableValueSetV = myTableIndexing.getPaneTableValueSet(isTAB);
         int hiddenItem = 0;
-        for (int i = 0; i < paneTableValueSetV.size(); i++) {
+        int size = paneTableValueSetV.size();
+        for (int i = 0; i < size; i++) {
             String[] thisTABSet = paneTableValueSetV.elementAt(i);
             if (!tabTableModel.hasEmptyRow()) {
                 tabTableModel.addEmptyRow();
@@ -57,6 +58,7 @@ public class paneTableManager {
             tabTableModel.setValueAt("linkBepItem_" + hiddenItem, i, thisTABSet.length);
             hiddenItem++;
         }
+        tabTableModel.fireTableDataChanged();
     }
 
     public void populateTBATable(TBAInteractiveTableModel tbaTableModel) {

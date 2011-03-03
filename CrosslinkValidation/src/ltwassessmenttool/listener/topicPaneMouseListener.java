@@ -32,7 +32,7 @@ import ltwassessment.parsers.PoolerManager;
 import ltwassessment.parsers.resourcesManager;
 import ltwassessment.utility.AttributiveCellRenderer;
 import ltwassessment.utility.highlightPainters;
-import ltwassessment.utility.paneTableIndexing;
+import ltwassessment.utility.PaneTableIndexing;
 import ltwassessmenttool.LTWAssessmentToolView;
 
 /**
@@ -69,7 +69,7 @@ public class topicPaneMouseListener implements MouseInputListener {
     HashMap<String, String> bepSEPosAssStatusHM = new HashMap<String, String>();
     HashMap<String, Vector<String[]>> anchorFileSAVBySCRBepOLHM = new HashMap<String, Vector<String[]>>();
     // Import Extenal Classes
-    private paneTableIndexing myPaneTableIndexing;
+    private PaneTableIndexing myPaneTableIndexing;
     private PoolerManager myPooler = PoolerManager.getInstance();
     private resourcesManager myRSCManager = resourcesManager.getInstance();
     private FOLTXTMatcher myFOLMatcher = FOLTXTMatcher.getInstance();
@@ -80,7 +80,7 @@ public class topicPaneMouseListener implements MouseInputListener {
         System.out.println(String.valueOf(txt));
     }
 
-    public topicPaneMouseListener(JTextPane topicPane, JTextPane linkPane, Vector<String[]> scrSEPosVSA, JTable paneTable, paneTableIndexing paneTableIndexing) {
+    public topicPaneMouseListener(JTextPane topicPane, JTextPane linkPane, Vector<String[]> scrSEPosVSA, JTable paneTable, PaneTableIndexing paneTableIndexing) {
         org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(ltwassessmenttool.LTWAssessmentToolApp.class).getContext().getResourceMap(LTWAssessmentToolView.class);
         afTasnCollectionErrors = resourceMap.getString("AssFormXml.taskCollectionError");
         bepIconImageFilePath = resourceMap.getString("bepIcon.imageFilePath");
