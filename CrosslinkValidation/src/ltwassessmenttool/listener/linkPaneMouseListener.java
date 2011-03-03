@@ -210,7 +210,7 @@ public class linkPaneMouseListener implements MouseInputListener {
         // 1) Update Topic & Link Txt Panes
         // 2) Highlight paneTable ROW: 1st BEP link of the Selected Anchor
         if (paneUpdateLevel > 0 && paneUpdateLevel <= 3) {
-            if (isTAB) {
+//            if (isTAB) {
                 String[] thisRowSA = this.myPaneTableIndexing.rowTABSAByIndices(currTopicIndex, currPoolAnchorIndex, currBepLinkIndex);
                 this.myTABTxtPaneManager.updateTXTPanes(this.myTopicPane, this.myLinkPane, this.myPaneTable, thisRowSA, paneUpdateLevel);
                 String topicID = thisRowSA[0];
@@ -219,16 +219,16 @@ public class linkPaneMouseListener implements MouseInputListener {
                 String bepLinkID = thisRowSA[3].split("_")[1];
                 this.myPaneTable.setDefaultRenderer(Object.class, new AttributiveCellRenderer(topicID, anchorXmlOL, bepOffset, bepLinkID, isTAB));
                 this.myPaneTable.repaint();
-            } else {
-                String[] thisRowSA = this.myPaneTableIndexing.rowTBASAByIndices(currTopicIndex, currBepIndex, currAnchorLinkIndex);
-                this.myTBATxtPaneManager.updateTXTPanes(this.myTopicPane, this.myLinkPane, this.myPaneTable, thisRowSA, paneUpdateLevel);
-                String topicID = thisRowSA[0];
-                String bepOffset = thisRowSA[1];
-                String[] anchorXmlOL = thisRowSA[2].split("_");
-                String anchorLinkID = thisRowSA[3];
-                this.myPaneTable.setDefaultRenderer(Object.class, new AttributiveCellRenderer(topicID, anchorXmlOL, bepOffset, anchorLinkID, isTAB));
-                this.myPaneTable.repaint();
-            }
+//            } else {
+//                String[] thisRowSA = this.myPaneTableIndexing.rowTBASAByIndices(currTopicIndex, currBepIndex, currAnchorLinkIndex);
+//                this.myTBATxtPaneManager.updateTXTPanes(this.myTopicPane, this.myLinkPane, this.myPaneTable, thisRowSA, paneUpdateLevel);
+//                String topicID = thisRowSA[0];
+//                String bepOffset = thisRowSA[1];
+//                String[] anchorXmlOL = thisRowSA[2].split("_");
+//                String anchorLinkID = thisRowSA[3];
+//                this.myPaneTable.setDefaultRenderer(Object.class, new AttributiveCellRenderer(topicID, anchorXmlOL, bepOffset, anchorLinkID, isTAB));
+//                this.myPaneTable.repaint();
+//            }
         }
     }
     // </editor-fold>

@@ -23,11 +23,11 @@ public class PaneTableIndexing {
     private String wikipediaCollTitle = "";
     private String teAraCollTitle = "";
     private String[] afProperty = new String[4];
-    private Vector<String[]> RunTopics = new Vector<String[]>();
-    private Vector<String> tableTopicIDNameV = new Vector<String>();
-    private Vector<String> tableTopicIDV = new Vector<String>();
-    private Vector<String[]> paneTableRowIndex = new Vector<String[]>();
-    private Vector<String[]> paneTableRowIndexWOText = new Vector<String[]>();
+    private Vector<String[]> RunTopics = null; //new Vector<String[]>();
+    private Vector<String> tableTopicIDNameV = null; //new Vector<String>();
+    private Vector<String> tableTopicIDV = null; //new Vector<String>();
+    private Vector<String[]> paneTableRowIndex = null; //new Vector<String[]>();
+    private Vector<String[]> paneTableRowIndexWOText =  new Vector<String[]>();
     // TAB: Outgoing Variables
     private Hashtable<String, Vector<String[]>> topicAnchorsHT = null; //new Hashtable<String, Vector<String[]>>();
     private Hashtable<String, Hashtable<String, Hashtable<String, Vector<String[]>>>> poolOutgoingData = null; //new Hashtable<String, Hashtable<String, Hashtable<String, Vector<String[]>>>>();
@@ -36,8 +36,8 @@ public class PaneTableIndexing {
     private Hashtable<String, Vector<String>> tabBepByTopicAnchorHT = null;
     private Hashtable<String, Vector<String>> tabBepByTopicAnchorHTWOTxt = null;
     // TBA: Incoming Variables
-    private Hashtable<String, Vector<String[]>> topicBepsHT = new Hashtable<String, Vector<String[]>>();
-    private Hashtable<String, Hashtable<String, Vector<String[]>>> poolIncomingData = new Hashtable<String, Hashtable<String, Vector<String[]>>>();
+    private Hashtable<String, Vector<String[]>> topicBepsHT = null; //new Hashtable<String, Vector<String[]>>();
+    private Hashtable<String, Hashtable<String, Vector<String[]>>> poolIncomingData = null; //new Hashtable<String, Hashtable<String, Vector<String[]>>>();
     private Hashtable<String, Vector<String>> tbaBepByTopicHT = null;
     private Hashtable<String, Vector<String>> tbaBepByTopicHTWOTxt = null;
     private Hashtable<String, Vector<String[]>> tbaTargetFileByTopicBepHT = null;
@@ -58,15 +58,7 @@ public class PaneTableIndexing {
         System.out.println(content);
     }
 
-    public PaneTableIndexing(boolean isTAB) {
-        this.NAVIndice = new Hashtable<String, String[]>();
-        this.tableTopicIDNameV = new Vector<String>();
-        this.tableTopicIDV = new Vector<String>();
-        this.tabAnchorByTopicHT = new Hashtable<String, Vector<String>>();
-        this.tabAnchorByTopicHTWOTxt = new Hashtable<String, Vector<String>>();
-        this.tabBepByTopicAnchorHT = new Hashtable<String, Vector<String>>();
-        this.tabBepByTopicAnchorHTWOTxt = new Hashtable<String, Vector<String>>();
-        
+    public PaneTableIndexing(boolean isTAB) {       
         //org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(ltwassessment.ltwassessmentApp.class).getContext().getResourceMap(ltwassessmentView.class);
         this.wikipediaCollTitle = AppResource.getInstance().getResourceMap().getString("collectionType.Wikipedia");
 //        this.teAraCollTitle = AppResource.getInstance().getResourceMap().getString("collectionType.TeAra");
@@ -104,160 +96,168 @@ public class PaneTableIndexing {
     }
 
     // <editor-fold defaultstate="collapsed" desc="Populate All Variables via Indexing">
-    private void populateTBAIndexing() {
-        // Get All Column Value in an String[] stored in Vector<String[]>
-        this.paneTableRowIndex = getPaneTableValueSet();
-        
-        String thisTopicIDName = "";
-        String thisTopicID = "";
-        String lastTopicIDName = "";
-        String lastTopicID = "";
-        String thisBepOffset = "";
-        Vector<String> bepOffsetV = new Vector<String>();
-        String thisTopicBepOffset = "";
-        String lastTopicBepOffset = "";
-        String[] thisAnchorOLNameSA;
-        String[] thisAnchorOLSA;
-        String[] thisFileIDNameSA;
-        String[] thisFileIDSA;
-        Vector<String[]> AnchorOLNameFileIDNameSAV = new Vector<String[]>();
-        Vector<String[]> AnchorOLFileIDSAV = new Vector<String[]>();
-        String[] thisAnchorOLNameFileIDNameSA;
-        String[] thisAnchorOLFileIDSA;
-        Vector<String[]> TargetFileIDNameSAV = new Vector<String[]>();
-        Vector<String[]> TargetFileIDSAV = new Vector<String[]>();
-
-        int rowCounter = 0;
-        int topicIDIndexCounter = 0;
-        int bepIndexCounter = 0;
-        int fileIndexCounter = 0;
-        int anchorFileIndexCounter = 0;
-
-        for (String[] thisTBASet : paneTableRowIndex) {
-            thisTopicIDName = thisTBASet[0];
-            thisTopicID = thisTopicIDName.split(" : ")[0].trim();
-            if (!tableTopicIDNameV.contains(thisTopicIDName)) {
-                tableTopicIDNameV.add(thisTopicIDName);    // Topic -> 50268
-                tableTopicIDV.add(thisTopicID);
-                if (bepOffsetV.size() > 0) {
-                    topicIDIndexCounter++;
-                    tbaBepByTopicHT.put(lastTopicIDName, bepOffsetV);
-                    tbaBepByTopicHTWOTxt.put(lastTopicID, bepOffsetV);
-                }
-                lastTopicIDName = thisTopicIDName;
-                lastTopicID = thisTopicID;
-
-                bepIndexCounter = 0;
-                bepOffsetV = new Vector<String>(); // Anchor -> 1794_16 : Name
-                thisBepOffset = thisTBASet[1];
-                bepOffsetV.add(thisBepOffset);
-
-                thisTopicBepOffset = thisTopicID + " : " + thisBepOffset; // 50268 : 1256
-                if (AnchorOLNameFileIDNameSAV.size() > 0) {
-                    tbaAnchorFileByTopicBepHT.put(lastTopicBepOffset, AnchorOLNameFileIDNameSAV);
-                    tbaAnchorFileByTopicBepHTWOTxt.put(lastTopicBepOffset, AnchorOLFileIDSAV);
-                    tbaTargetFileByTopicBepHT.put(lastTopicBepOffset, TargetFileIDNameSAV);
-                    tbaTargetFileByTopicBepHTWOTxt.put(lastTopicBepOffset, TargetFileIDSAV);
-                }
-                lastTopicBepOffset = thisTopicBepOffset;
-                // -------------------------------------------------------------
-                // Anchor O L Name - Link ID Name
-                anchorFileIndexCounter = 0;
-                AnchorOLNameFileIDNameSAV = new Vector<String[]>();
-                AnchorOLFileIDSAV = new Vector<String[]>();
-                TargetFileIDNameSAV = new Vector<String[]>();
-                TargetFileIDSAV = new Vector<String[]>();
-
-                String[] thisAnchorSet = thisTBASet[2].split(" : ");
-                thisAnchorOLSA = thisAnchorSet[0].trim().split("_");
-                thisAnchorOLNameSA = new String[]{thisAnchorOLSA[0], thisAnchorOLSA[1], thisAnchorSet[1].trim()};
-
-                thisFileIDNameSA = thisTBASet[3].split(" : ");
-                thisFileIDSA = new String[]{thisFileIDNameSA[0]};
-
-                thisAnchorOLFileIDSA = new String[]{thisAnchorOLSA[0], thisAnchorOLSA[1], thisFileIDNameSA[0]};
-                thisAnchorOLNameFileIDNameSA = new String[]{thisAnchorOLSA[0], thisAnchorOLSA[1], thisAnchorSet[1].trim(), thisFileIDNameSA[0], thisFileIDNameSA[1]};
-
-                TargetFileIDSAV.add(thisFileIDSA);
-                TargetFileIDNameSAV.add(thisFileIDNameSA);
-                AnchorOLFileIDSAV.add(thisAnchorOLFileIDSA);
-                AnchorOLNameFileIDNameSAV.add(thisAnchorOLNameFileIDNameSA);
-
-            } else {
-                if (!bepOffsetV.contains(thisTBASet[1])) {
-                    thisBepOffset = thisTBASet[1];
-                    bepOffsetV.add(thisBepOffset);
-                    bepIndexCounter++;
-
-                    thisTopicBepOffset = thisTopicID + " : " + thisBepOffset; // 50268 : 1256
-                    if (AnchorOLNameFileIDNameSAV.size() > 0) {
-                        tbaAnchorFileByTopicBepHT.put(lastTopicBepOffset, AnchorOLNameFileIDNameSAV);
-                        tbaAnchorFileByTopicBepHTWOTxt.put(lastTopicBepOffset, AnchorOLFileIDSAV);
-                        tbaTargetFileByTopicBepHT.put(lastTopicBepOffset, TargetFileIDNameSAV);
-                        tbaTargetFileByTopicBepHTWOTxt.put(lastTopicBepOffset, TargetFileIDSAV);
-                    }
-                    lastTopicBepOffset = thisTopicBepOffset;
-                    // ---------------------------------------------------------
-                    // Anchor O L Name - Link ID Name
-                    anchorFileIndexCounter = 0;
-                    AnchorOLNameFileIDNameSAV = new Vector<String[]>();
-                    AnchorOLFileIDSAV = new Vector<String[]>();
-                    TargetFileIDNameSAV = new Vector<String[]>();
-                    TargetFileIDSAV = new Vector<String[]>();
-
-                    String[] thisAnchorSet = thisTBASet[2].split(" : ");
-                    thisAnchorOLSA = thisAnchorSet[0].trim().split("_");
-                    thisAnchorOLNameSA = new String[]{thisAnchorOLSA[0], thisAnchorOLSA[1], thisAnchorSet[1].trim()};
-
-                    thisFileIDNameSA = thisTBASet[3].split(" : ");
-                    thisFileIDSA = new String[]{thisFileIDNameSA[0]};
-
-                    thisAnchorOLFileIDSA = new String[]{thisAnchorOLSA[0], thisAnchorOLSA[1], thisFileIDNameSA[0]};
-                    thisAnchorOLNameFileIDNameSA = new String[]{thisAnchorOLSA[0], thisAnchorOLSA[1], thisAnchorSet[1].trim(), thisFileIDNameSA[0], thisFileIDNameSA[1]};
-
-                    TargetFileIDSAV.add(thisFileIDSA);
-                    TargetFileIDNameSAV.add(thisFileIDNameSA);
-                    AnchorOLFileIDSAV.add(thisAnchorOLFileIDSA);
-                    AnchorOLNameFileIDNameSAV.add(thisAnchorOLNameFileIDNameSA);
-                } else {
-                    String[] thisAnchorSet = thisTBASet[2].split(" : ");
-                    thisAnchorOLSA = thisAnchorSet[0].trim().split("_");
-                    thisAnchorOLNameSA = new String[]{thisAnchorOLSA[0], thisAnchorOLSA[1], thisAnchorSet[1].trim()};
-
-                    thisFileIDNameSA = thisTBASet[3].split(" : ");
-                    thisFileIDSA = new String[]{thisFileIDNameSA[0]};
-
-                    thisAnchorOLFileIDSA = new String[]{thisAnchorOLSA[0], thisAnchorOLSA[1], thisFileIDNameSA[0]};
-                    thisAnchorOLNameFileIDNameSA = new String[]{thisAnchorOLSA[0], thisAnchorOLSA[1], thisAnchorSet[1].trim(), thisFileIDNameSA[0], thisFileIDNameSA[1]};
-
-                    TargetFileIDSAV.add(thisFileIDSA);
-                    TargetFileIDNameSAV.add(thisFileIDNameSA);
-                    AnchorOLFileIDSAV.add(thisAnchorOLFileIDSA);
-                    AnchorOLNameFileIDNameSAV.add(thisAnchorOLNameFileIDNameSA);
-                    anchorFileIndexCounter++;
-                }
-            }
-            String[] thisNavIndicesSA = new String[]{String.valueOf(topicIDIndexCounter), String.valueOf(bepIndexCounter),
-                String.valueOf("0"), String.valueOf(anchorFileIndexCounter)};
-            NAVIndice.put(String.valueOf(rowCounter), thisNavIndicesSA);
-            rowCounter++;
-        }
-        // Last ONEs
-        tbaBepByTopicHT.put(thisTopicIDName, bepOffsetV);
-        tbaBepByTopicHTWOTxt.put(thisTopicID, bepOffsetV);
-        tbaAnchorFileByTopicBepHT.put(thisTopicBepOffset, AnchorOLNameFileIDNameSAV);
-        tbaAnchorFileByTopicBepHTWOTxt.put(thisTopicBepOffset, AnchorOLFileIDSAV);
-        tbaTargetFileByTopicBepHT.put(thisTopicBepOffset, TargetFileIDNameSAV);
-        tbaTargetFileByTopicBepHTWOTxt.put(thisTopicBepOffset, TargetFileIDSAV);
-
-        String[] thisNavIndicesSA = new String[]{String.valueOf(topicIDIndexCounter), String.valueOf(bepIndexCounter),
-            String.valueOf("0"), String.valueOf(anchorFileIndexCounter)};
-        NAVIndice.put(String.valueOf(rowCounter), thisNavIndicesSA);
-    }
+//    private void populateTBAIndexing() {
+//        // Get All Column Value in an String[] stored in Vector<String[]>
+//        this.paneTableRowIndex = getPaneTableValueSet();
+//        
+//        String thisTopicIDName = "";
+//        String thisTopicID = "";
+//        String lastTopicIDName = "";
+//        String lastTopicID = "";
+//        String thisBepOffset = "";
+//        Vector<String> bepOffsetV = new Vector<String>();
+//        String thisTopicBepOffset = "";
+//        String lastTopicBepOffset = "";
+//        String[] thisAnchorOLNameSA;
+//        String[] thisAnchorOLSA;
+//        String[] thisFileIDNameSA;
+//        String[] thisFileIDSA;
+//        Vector<String[]> AnchorOLNameFileIDNameSAV = new Vector<String[]>();
+//        Vector<String[]> AnchorOLFileIDSAV = new Vector<String[]>();
+//        String[] thisAnchorOLNameFileIDNameSA;
+//        String[] thisAnchorOLFileIDSA;
+//        Vector<String[]> TargetFileIDNameSAV = new Vector<String[]>();
+//        Vector<String[]> TargetFileIDSAV = new Vector<String[]>();
+//
+//        int rowCounter = 0;
+//        int topicIDIndexCounter = 0;
+//        int bepIndexCounter = 0;
+//        int fileIndexCounter = 0;
+//        int anchorFileIndexCounter = 0;
+//
+//        for (String[] thisTBASet : paneTableRowIndex) {
+//            thisTopicIDName = thisTBASet[0];
+//            thisTopicID = thisTopicIDName.split(" : ")[0].trim();
+//            if (!tableTopicIDNameV.contains(thisTopicIDName)) {
+//                tableTopicIDNameV.add(thisTopicIDName);    // Topic -> 50268
+//                tableTopicIDV.add(thisTopicID);
+//                if (bepOffsetV.size() > 0) {
+//                    topicIDIndexCounter++;
+//                    tbaBepByTopicHT.put(lastTopicIDName, bepOffsetV);
+//                    tbaBepByTopicHTWOTxt.put(lastTopicID, bepOffsetV);
+//                }
+//                lastTopicIDName = thisTopicIDName;
+//                lastTopicID = thisTopicID;
+//
+//                bepIndexCounter = 0;
+//                bepOffsetV = new Vector<String>(); // Anchor -> 1794_16 : Name
+//                thisBepOffset = thisTBASet[1];
+//                bepOffsetV.add(thisBepOffset);
+//
+//                thisTopicBepOffset = thisTopicID + " : " + thisBepOffset; // 50268 : 1256
+//                if (AnchorOLNameFileIDNameSAV.size() > 0) {
+//                    tbaAnchorFileByTopicBepHT.put(lastTopicBepOffset, AnchorOLNameFileIDNameSAV);
+//                    tbaAnchorFileByTopicBepHTWOTxt.put(lastTopicBepOffset, AnchorOLFileIDSAV);
+//                    tbaTargetFileByTopicBepHT.put(lastTopicBepOffset, TargetFileIDNameSAV);
+//                    tbaTargetFileByTopicBepHTWOTxt.put(lastTopicBepOffset, TargetFileIDSAV);
+//                }
+//                lastTopicBepOffset = thisTopicBepOffset;
+//                // -------------------------------------------------------------
+//                // Anchor O L Name - Link ID Name
+//                anchorFileIndexCounter = 0;
+//                AnchorOLNameFileIDNameSAV = new Vector<String[]>();
+//                AnchorOLFileIDSAV = new Vector<String[]>();
+//                TargetFileIDNameSAV = new Vector<String[]>();
+//                TargetFileIDSAV = new Vector<String[]>();
+//
+//                String[] thisAnchorSet = thisTBASet[2].split(" : ");
+//                thisAnchorOLSA = thisAnchorSet[0].trim().split("_");
+//                thisAnchorOLNameSA = new String[]{thisAnchorOLSA[0], thisAnchorOLSA[1], thisAnchorSet[1].trim()};
+//
+//                thisFileIDNameSA = thisTBASet[3].split(" : ");
+//                thisFileIDSA = new String[]{thisFileIDNameSA[0]};
+//
+//                thisAnchorOLFileIDSA = new String[]{thisAnchorOLSA[0], thisAnchorOLSA[1], thisFileIDNameSA[0]};
+//                thisAnchorOLNameFileIDNameSA = new String[]{thisAnchorOLSA[0], thisAnchorOLSA[1], thisAnchorSet[1].trim(), thisFileIDNameSA[0], thisFileIDNameSA[1]};
+//
+//                TargetFileIDSAV.add(thisFileIDSA);
+//                TargetFileIDNameSAV.add(thisFileIDNameSA);
+//                AnchorOLFileIDSAV.add(thisAnchorOLFileIDSA);
+//                AnchorOLNameFileIDNameSAV.add(thisAnchorOLNameFileIDNameSA);
+//
+//            } else {
+//                if (!bepOffsetV.contains(thisTBASet[1])) {
+//                    thisBepOffset = thisTBASet[1];
+//                    bepOffsetV.add(thisBepOffset);
+//                    bepIndexCounter++;
+//
+//                    thisTopicBepOffset = thisTopicID + " : " + thisBepOffset; // 50268 : 1256
+//                    if (AnchorOLNameFileIDNameSAV.size() > 0) {
+//                        tbaAnchorFileByTopicBepHT.put(lastTopicBepOffset, AnchorOLNameFileIDNameSAV);
+//                        tbaAnchorFileByTopicBepHTWOTxt.put(lastTopicBepOffset, AnchorOLFileIDSAV);
+//                        tbaTargetFileByTopicBepHT.put(lastTopicBepOffset, TargetFileIDNameSAV);
+//                        tbaTargetFileByTopicBepHTWOTxt.put(lastTopicBepOffset, TargetFileIDSAV);
+//                    }
+//                    lastTopicBepOffset = thisTopicBepOffset;
+//                    // ---------------------------------------------------------
+//                    // Anchor O L Name - Link ID Name
+//                    anchorFileIndexCounter = 0;
+//                    AnchorOLNameFileIDNameSAV = new Vector<String[]>();
+//                    AnchorOLFileIDSAV = new Vector<String[]>();
+//                    TargetFileIDNameSAV = new Vector<String[]>();
+//                    TargetFileIDSAV = new Vector<String[]>();
+//
+//                    String[] thisAnchorSet = thisTBASet[2].split(" : ");
+//                    thisAnchorOLSA = thisAnchorSet[0].trim().split("_");
+//                    thisAnchorOLNameSA = new String[]{thisAnchorOLSA[0], thisAnchorOLSA[1], thisAnchorSet[1].trim()};
+//
+//                    thisFileIDNameSA = thisTBASet[3].split(" : ");
+//                    thisFileIDSA = new String[]{thisFileIDNameSA[0]};
+//
+//                    thisAnchorOLFileIDSA = new String[]{thisAnchorOLSA[0], thisAnchorOLSA[1], thisFileIDNameSA[0]};
+//                    thisAnchorOLNameFileIDNameSA = new String[]{thisAnchorOLSA[0], thisAnchorOLSA[1], thisAnchorSet[1].trim(), thisFileIDNameSA[0], thisFileIDNameSA[1]};
+//
+//                    TargetFileIDSAV.add(thisFileIDSA);
+//                    TargetFileIDNameSAV.add(thisFileIDNameSA);
+//                    AnchorOLFileIDSAV.add(thisAnchorOLFileIDSA);
+//                    AnchorOLNameFileIDNameSAV.add(thisAnchorOLNameFileIDNameSA);
+//                } else {
+//                    String[] thisAnchorSet = thisTBASet[2].split(" : ");
+//                    thisAnchorOLSA = thisAnchorSet[0].trim().split("_");
+//                    thisAnchorOLNameSA = new String[]{thisAnchorOLSA[0], thisAnchorOLSA[1], thisAnchorSet[1].trim()};
+//
+//                    thisFileIDNameSA = thisTBASet[3].split(" : ");
+//                    thisFileIDSA = new String[]{thisFileIDNameSA[0]};
+//
+//                    thisAnchorOLFileIDSA = new String[]{thisAnchorOLSA[0], thisAnchorOLSA[1], thisFileIDNameSA[0]};
+//                    thisAnchorOLNameFileIDNameSA = new String[]{thisAnchorOLSA[0], thisAnchorOLSA[1], thisAnchorSet[1].trim(), thisFileIDNameSA[0], thisFileIDNameSA[1]};
+//
+//                    TargetFileIDSAV.add(thisFileIDSA);
+//                    TargetFileIDNameSAV.add(thisFileIDNameSA);
+//                    AnchorOLFileIDSAV.add(thisAnchorOLFileIDSA);
+//                    AnchorOLNameFileIDNameSAV.add(thisAnchorOLNameFileIDNameSA);
+//                    anchorFileIndexCounter++;
+//                }
+//            }
+//            String[] thisNavIndicesSA = new String[]{String.valueOf(topicIDIndexCounter), String.valueOf(bepIndexCounter),
+//                String.valueOf("0"), String.valueOf(anchorFileIndexCounter)};
+//            NAVIndice.put(String.valueOf(rowCounter), thisNavIndicesSA);
+//            rowCounter++;
+//        }
+//        // Last ONEs
+//        tbaBepByTopicHT.put(thisTopicIDName, bepOffsetV);
+//        tbaBepByTopicHTWOTxt.put(thisTopicID, bepOffsetV);
+//        tbaAnchorFileByTopicBepHT.put(thisTopicBepOffset, AnchorOLNameFileIDNameSAV);
+//        tbaAnchorFileByTopicBepHTWOTxt.put(thisTopicBepOffset, AnchorOLFileIDSAV);
+//        tbaTargetFileByTopicBepHT.put(thisTopicBepOffset, TargetFileIDNameSAV);
+//        tbaTargetFileByTopicBepHTWOTxt.put(thisTopicBepOffset, TargetFileIDSAV);
+//
+//        String[] thisNavIndicesSA = new String[]{String.valueOf(topicIDIndexCounter), String.valueOf(bepIndexCounter),
+//            String.valueOf("0"), String.valueOf(anchorFileIndexCounter)};
+//        NAVIndice.put(String.valueOf(rowCounter), thisNavIndicesSA);
+//    }
 
     public void populateTABIndexing() {
         // Get All Column Value in an String[] stored in Vector<String[]>
         this.paneTableRowIndex = getPaneTableValueSet();
+
+        this.NAVIndice = new Hashtable<String, String[]>();
+        this.tableTopicIDNameV = new Vector<String>();
+        this.tableTopicIDV = new Vector<String>();
+        this.tabAnchorByTopicHT = new Hashtable<String, Vector<String>>();
+        this.tabAnchorByTopicHTWOTxt = new Hashtable<String, Vector<String>>();
+        this.tabBepByTopicAnchorHT = new Hashtable<String, Vector<String>>();
+        this.tabBepByTopicAnchorHTWOTxt = new Hashtable<String, Vector<String>>();
         
         String thisTopicIDName = "";
         String thisTopicID = "";
