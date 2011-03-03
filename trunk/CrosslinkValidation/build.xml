@@ -74,13 +74,14 @@
 	
     <target name="release" depends="CrosslinkValidation-impl.jar">
     	  <tstamp>
-    	    <format property="TODAY" pattern="yyyyMMDD"/>
+    	    <format property="TODAY" pattern="yyyyMMdd"/>
     	  </tstamp>
     	  <zip destfile="CrosslinkValidation-${TODAY}.zip">
     	  	<zipfileset dir="resources" prefix="resources" excludes="toolResources.xml" />
     	  	<zipfileset dir="lib" prefix="lib" />
     	  	<zipfileset dir="." includes="Instruction_v01.docx"/>
     	  	<zipfileset dir="." includes="run.*"/>
+    	  	<zipfileset dir="." includes="article.dtd"/>
     	  	<zipfileset dir="." includes="toolResources.xml" prefix="resources" />
     	  	<zipfileset dir="${dist.dir}" includes="*.jar"/>
     	  </zip>
