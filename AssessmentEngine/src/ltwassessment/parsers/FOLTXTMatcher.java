@@ -413,9 +413,9 @@ public class FOLTXTMatcher {
 				if (AppResource.debug == true && !puzzle.equals(sb.toString())) {
 					System.err.println("Puzzle:");
 					System.err.println(puzzle);
-					System.err.println("");
 					System.err.println("SB:");
 					System.err.println(sb.toString());
+					System.err.println("");
 				}
 		        break;
 			}
