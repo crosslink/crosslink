@@ -8,7 +8,9 @@ import java.awt.Insets;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.DataInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.OutputStreamWriter;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -67,6 +69,7 @@ import ltwassessment.utility.PaneTableIndexing;
 import ltwassessment.utility.PaneTableManager;
 import ltwassessment.utility.tabTxtPaneManager;
 import ltwassessment.utility.tbaTxtPaneManager;
+import ltwassessment.validation.ValidationMessage;
 import ltwassessment.validation.Validator;
 import ltwassessmenttool.listener.CaretListenerLabel;
 import ltwassessmenttool.listener.linkPaneMouseListener;
@@ -139,7 +142,7 @@ public class LTWAssessmentToolView extends FrameView {
     static void errlog(Object content) {
         System.err.println("errlog: " + content);
     }
-    public static final String[] outgoingTABColumnNames = {"Topic", "Anchor (offset_length: name)", "Target Title (fileid: title)", "BEP", "HiddenField"};
+    public static final String[] outgoingTABColumnNames = {"Topic", "Anchor (offset_length: name)", "Target Language", "BEP  (bep_fileid: title)", "HiddenField"};
     public static final String[] incomingTBAColumnNames = {"Topic", "BEP", "Anchor", "File ID", "HiddenField"};
     protected TABInteractiveTableModel tabTableModel;
     protected TBAInteractiveTableModel tbaTableModel;
@@ -162,9 +165,9 @@ public class LTWAssessmentToolView extends FrameView {
         buttonGroup1.add(jRadioButtonMenuItemJa);
         buttonGroup1.add(jRadioButtonMenuItemKo);
 
-        ObservableSingleton os = ObservableSingleton.getInstance();
-        fieldUpdateObserver fuObserver = new fieldUpdateObserver(os, this.lblTopicTitle, this.lblTopicID, this.lblPoolAnchor, this.lblTargetPage);
-        os.addObserver(fuObserver);
+//        ObservableSingleton os = ObservableSingleton.getInstance();
+//        fieldUpdateObserver fuObserver = new fieldUpdateObserver(os, this.lblTopicTitle, this.lblTopicID, this.lblPoolAnchor, this.lblTargetPage);
+//        os.addObserver(fuObserver);
 
         resourceMap = getResourceMap();
         //AppResource.getInstance().setResourceMap(resourceMap);
@@ -187,7 +190,14 @@ public class LTWAssessmentToolView extends FrameView {
             String msgTxt = "Please specify the home of Wikipedia collections." +
                     "\r\n Then split a submission and load a single run file to validate your work.";
             JOptionPane.showMessageDialog(mainPanel, msgTxt);
-        } else {
+        } else if (!(new File(wikiCollectionFolder).exists())) {
+        	rscManager.updateWikipediaCollectionDirectory("");
+            String msgTxt = "Please re-specify the home of Wikipedia collections." +
+                    "\r\n" + wikiCollectionFolder + " is not a valid directory.";
+            JOptionPane.showMessageDialog(mainPanel, msgTxt);
+        	wikiCollectionFolder = "";
+        }
+//        else {
 //            String msgTxt = "The directories of Wikipedia collections:\r\n" +
 //                    "Wikipedia Collection: " + wikiCollectionFolder + "\r\n" +
 //                   // "TeAra Collection: " + tearaCollectionFolder + "\r\n" +
@@ -196,7 +206,7 @@ public class LTWAssessmentToolView extends FrameView {
 //        	jLabelCollection.setText(wikiCollectionFolder + "   " +
 //                  "Please re-specify the directories if collections have been moved.");
         	jLabelCollection.setText(wikiCollectionFolder);
-        }
+//        }
         // =====================================================================
 
 //        anchorBepTable.addMouseListener(new paneTableMouseListener(this.topicTextPane, this.linkTextPane, this.anchorBepTable));
@@ -258,24 +268,15 @@ public class LTWAssessmentToolView extends FrameView {
         linkTextPane = new javax.swing.JTextPane();
         anchorBepTablePane = new javax.swing.JScrollPane();
         anchorBepTable = new javax.swing.JTable();
-        jPanel2 = new javax.swing.JPanel();
-        jLabelTopicTitle = new javax.swing.JLabel();
-        lblTargetPage2 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        lblTopicTitle = new javax.swing.JLabel();
-        jLabelTargetPage = new javax.swing.JLabel();
-        lblTargetPage = new javax.swing.JLabel();
-        lblTopicID = new javax.swing.JLabel();
-        jLabelAnchor = new javax.swing.JLabel();
-        lblPoolAnchor = new javax.swing.JLabel();
-        lblTargetPage1 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextPane1 = new javax.swing.JTextPane();
+        msgTxtPane = new javax.swing.JTextPane();
         jPanel4 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabelCollection = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
         menuBar = new javax.swing.JMenuBar();
         javax.swing.JMenu fileMenu = new javax.swing.JMenu();
         javax.swing.JMenuItem exitMenuItem = new javax.swing.JMenuItem();
@@ -299,29 +300,33 @@ public class LTWAssessmentToolView extends FrameView {
         mainPanel.setName("mainPanel"); // NOI18N
         mainPanel.setPreferredSize(new java.awt.Dimension(1032, 780));
 
+        jSplitPane2.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         jSplitPane2.setOrientation(javax.swing.JSplitPane.VERTICAL_SPLIT);
+        jSplitPane2.setMinimumSize(new java.awt.Dimension(27, 533));
         jSplitPane2.setName("jSplitPane2"); // NOI18N
 
         jPanel1.setName("jPanel1"); // NOI18N
+        jPanel1.setPreferredSize(new java.awt.Dimension(356, 657));
 
         jSplitPane1.setBackground(resourceMap.getColor("jSplitPane1.background")); // NOI18N
         jSplitPane1.setBorder(null);
         jSplitPane1.setMinimumSize(new java.awt.Dimension(254, 350));
         jSplitPane1.setName("jSplitPane1"); // NOI18N
+        jSplitPane1.setPreferredSize(new java.awt.Dimension(277, 644));
 
         topicTextScrollPane.setBackground(resourceMap.getColor("topicTextScrollPane.background")); // NOI18N
         topicTextScrollPane.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         topicTextScrollPane.setMaximumSize(new java.awt.Dimension(1600, 1600));
         topicTextScrollPane.setName("topicTextScrollPane"); // NOI18N
-        topicTextScrollPane.setPreferredSize(new java.awt.Dimension(500, 644));
+        topicTextScrollPane.setPreferredSize(new java.awt.Dimension(200, 644));
 
         topicTextPane.setBackground(resourceMap.getColor("topicTextPane.background")); // NOI18N
         topicTextPane.setEditable(false);
         topicTextPane.setDragEnabled(true);
         topicTextPane.setMaximumSize(new java.awt.Dimension(1600, 1600));
-        topicTextPane.setMinimumSize(new java.awt.Dimension(256, 430));
+        topicTextPane.setMinimumSize(new java.awt.Dimension(256, 530));
         topicTextPane.setName("topicTextPane"); // NOI18N
-        topicTextPane.setPreferredSize(new java.awt.Dimension(500, 644));
+        topicTextPane.setPreferredSize(new java.awt.Dimension(257, 644));
         topicTextScrollPane.setViewportView(topicTextPane);
 
         jSplitPane1.setLeftComponent(topicTextScrollPane);
@@ -330,24 +335,26 @@ public class LTWAssessmentToolView extends FrameView {
         rightSplitPane.setOrientation(javax.swing.JSplitPane.VERTICAL_SPLIT);
         rightSplitPane.setName("rightSplitPane"); // NOI18N
         rightSplitPane.setOneTouchExpandable(true);
+        rightSplitPane.setPreferredSize(new java.awt.Dimension(257, 433));
 
         linkTextScrollPane.setMinimumSize(new java.awt.Dimension(20, 20));
         linkTextScrollPane.setName("linkTextScrollPane"); // NOI18N
-        linkTextScrollPane.setPreferredSize(new java.awt.Dimension(525, 400));
+        linkTextScrollPane.setPreferredSize(new java.awt.Dimension(257, 400));
 
         linkTextPane.setBackground(resourceMap.getColor("linkTextPane.background")); // NOI18N
         linkTextPane.setEditable(false);
         linkTextPane.setFont(resourceMap.getFont("linkTextPane.font")); // NOI18N
-        linkTextPane.setMinimumSize(new java.awt.Dimension(125, 244));
+        linkTextPane.setMaximumSize(new java.awt.Dimension(21444, 21647));
+        linkTextPane.setMinimumSize(new java.awt.Dimension(125, 444));
         linkTextPane.setName("linkTextPane"); // NOI18N
-        linkTextPane.setPreferredSize(new java.awt.Dimension(525, 444));
+        linkTextPane.setPreferredSize(new java.awt.Dimension(225, 444));
         linkTextScrollPane.setViewportView(linkTextPane);
 
         rightSplitPane.setTopComponent(linkTextScrollPane);
 
-        anchorBepTablePane.setMinimumSize(new java.awt.Dimension(25, 32767));
+        anchorBepTablePane.setMinimumSize(new java.awt.Dimension(25, 227));
         anchorBepTablePane.setName("anchorBepTablePane");
-        anchorBepTablePane.setPreferredSize(new java.awt.Dimension(471, 32767));
+        anchorBepTablePane.setPreferredSize(new java.awt.Dimension(257, 227));
 
         anchorBepTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -460,7 +467,7 @@ public class LTWAssessmentToolView extends FrameView {
         anchorBepTable.setMaximumSize(new java.awt.Dimension(2147, 720));
         anchorBepTable.setMinimumSize(new java.awt.Dimension(410, 332));
         anchorBepTable.setName("anchorBepTable"); // NOI18N
-        anchorBepTable.setPreferredSize(new java.awt.Dimension(410, 1872));
+        anchorBepTable.setPreferredSize(new java.awt.Dimension(210, 1872));
         anchorBepTable.setRequestFocusEnabled(false);
         anchorBepTablePane.setViewportView(anchorBepTable);
         anchorBepTable.getColumnModel().getSelectionModel().setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
@@ -473,140 +480,36 @@ public class LTWAssessmentToolView extends FrameView {
 
         jSplitPane1.setRightComponent(rightSplitPane);
 
-        jPanel2.setName("jPanel2"); // NOI18N
-        jPanel2.setPreferredSize(new java.awt.Dimension(1031, 59));
-
-        jLabelTopicTitle.setFont(resourceMap.getFont("jLabelTopicTitle.font")); // NOI18N
-        jLabelTopicTitle.setText(resourceMap.getString("jLabelTopicTitle.text")); // NOI18N
-        jLabelTopicTitle.setName("jLabelTopicTitle"); // NOI18N
-
-        lblTargetPage2.setAlignmentX(0.5F);
-        lblTargetPage2.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
-        lblTargetPage2.setMaximumSize(new java.awt.Dimension(255555555, 25555555));
-        lblTargetPage2.setMinimumSize(new java.awt.Dimension(255, 184));
-        lblTargetPage2.setName("lblTargetPage2"); // NOI18N
-        lblTargetPage2.setPreferredSize(new java.awt.Dimension(255, 184));
-
-        jLabel2.setFont(resourceMap.getFont("jLabel2.font")); // NOI18N
-        jLabel2.setText(resourceMap.getString("jLabel2.text")); // NOI18N
-        jLabel2.setName("jLabel2"); // NOI18N
-
-        lblTopicTitle.setText(resourceMap.getString("lblTopicTitle.text")); // NOI18N
-        lblTopicTitle.setMaximumSize(new java.awt.Dimension(50, 14));
-        lblTopicTitle.setMinimumSize(new java.awt.Dimension(50, 14));
-        lblTopicTitle.setName("lblTopicTitle"); // NOI18N
-        lblTopicTitle.setPreferredSize(new java.awt.Dimension(50, 14));
-
-        jLabelTargetPage.setFont(resourceMap.getFont("jLabelTargetPage.font")); // NOI18N
-        jLabelTargetPage.setText(resourceMap.getString("jLabelTargetPage.text")); // NOI18N
-        jLabelTargetPage.setName("jLabelTargetPage"); // NOI18N
-
-        lblTargetPage.setText(resourceMap.getString("lblTargetPage.text")); // NOI18N
-        lblTargetPage.setName("lblTargetPage"); // NOI18N
-
-        lblTopicID.setText(resourceMap.getString("lblTopicID.text")); // NOI18N
-        lblTopicID.setMaximumSize(new java.awt.Dimension(30, 14));
-        lblTopicID.setMinimumSize(new java.awt.Dimension(30, 14));
-        lblTopicID.setName("lblTopicID"); // NOI18N
-        lblTopicID.setPreferredSize(new java.awt.Dimension(30, 14));
-
-        jLabelAnchor.setFont(resourceMap.getFont("jLabelAnchor.font")); // NOI18N
-        jLabelAnchor.setText(resourceMap.getString("jLabelAnchor.text")); // NOI18N
-        jLabelAnchor.setName("jLabelAnchor"); // NOI18N
-
-        lblPoolAnchor.setText(resourceMap.getString("lblPoolAnchor.text")); // NOI18N
-        lblPoolAnchor.setName("lblPoolAnchor"); // NOI18N
-
-        lblTargetPage1.setName("lblTargetPage1"); // NOI18N
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabelTopicTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lblTopicTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(165, 165, 165)
-                .addComponent(lblTargetPage2, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(202, 202, 202)
-                .addComponent(jLabelTargetPage, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(207, 207, 207)
-                .addComponent(jLabelAnchor, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(251, 251, 251)
-                .addComponent(lblPoolAnchor, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lblTopicID, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel2Layout.createSequentialGroup()
-                    .addGap(2156, 2156, 2156)
-                    .addComponent(lblTargetPage1, javax.swing.GroupLayout.PREFERRED_SIZE, 283, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(lblTargetPage, javax.swing.GroupLayout.PREFERRED_SIZE, 283, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabelTopicTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(lblTargetPage2, javax.swing.GroupLayout.PREFERRED_SIZE, 36, Short.MAX_VALUE)
-                            .addComponent(lblPoolAnchor, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblTopicID, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE)))
-                    .addComponent(lblTopicTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE)
-                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabelTargetPage, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE)
-                        .addComponent(jLabelAnchor, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE)))
-                .addContainerGap())
-            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel2Layout.createSequentialGroup()
-                    .addContainerGap()
-                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(lblTargetPage, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 35, Short.MAX_VALUE)
-                        .addComponent(lblTargetPage1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 35, Short.MAX_VALUE))
-                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-        );
-
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 1385, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(jSplitPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1409, Short.MAX_VALUE))
+            .addComponent(jSplitPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 2602, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(365, Short.MAX_VALUE))
-            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                    .addContainerGap(48, Short.MAX_VALUE)
-                    .addComponent(jSplitPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 363, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addComponent(jSplitPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 350, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         jSplitPane2.setLeftComponent(jPanel1);
 
+        jPanel3.setFocusable(false);
+        jPanel3.setMinimumSize(new java.awt.Dimension(25, 52));
         jPanel3.setName("jPanel3"); // NOI18N
+        jPanel3.setPreferredSize(new java.awt.Dimension(256, 52));
         jPanel3.setLayout(new java.awt.BorderLayout());
 
         jScrollPane1.setName("jScrollPane1"); // NOI18N
 
-        jTextPane1.setBackground(resourceMap.getColor("jTextPane1.background")); // NOI18N
-        jTextPane1.setName("jTextPane1"); // NOI18N
-        jScrollPane1.setViewportView(jTextPane1);
+        msgTxtPane.setBackground(resourceMap.getColor("msgTxtPane.background")); // NOI18N
+        msgTxtPane.setEditable(false);
+        msgTxtPane.setFocusable(false);
+        msgTxtPane.setMinimumSize(new java.awt.Dimension(6, 3));
+        msgTxtPane.setName("msgTxtPane"); // NOI18N
+        msgTxtPane.setPreferredSize(new java.awt.Dimension(6, 13));
+        jScrollPane1.setViewportView(msgTxtPane);
 
         jPanel3.add(jScrollPane1, java.awt.BorderLayout.CENTER);
 
@@ -633,8 +536,8 @@ public class LTWAssessmentToolView extends FrameView {
                 .addGap(18, 18, 18)
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabelCollection, javax.swing.GroupLayout.DEFAULT_SIZE, 772, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jLabelCollection, javax.swing.GroupLayout.PREFERRED_SIZE, 2119, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -648,17 +551,48 @@ public class LTWAssessmentToolView extends FrameView {
 
         jSplitPane2.setRightComponent(jPanel3);
 
+        jPanel2.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        jPanel2.setMinimumSize(new java.awt.Dimension(283, 36));
+        jPanel2.setName("jPanel2"); // NOI18N
+        jPanel2.setPreferredSize(new java.awt.Dimension(284, 36));
+
+        jLabel2.setFont(resourceMap.getFont("jLabel2.font")); // NOI18N
+        jLabel2.setForeground(resourceMap.getColor("jLabel2.foreground")); // NOI18N
+        jLabel2.setText(resourceMap.getString("jLabel2.text")); // NOI18N
+        jLabel2.setName("jLabel2"); // NOI18N
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(771, 771, 771)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 517, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(316, 316, 316))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(5, 5, 5)
+                .addComponent(jLabel2)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout mainPanelLayout = new javax.swing.GroupLayout(mainPanel);
         mainPanel.setLayout(mainPanelLayout);
         mainPanelLayout.setHorizontalGroup(
             mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jSplitPane2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1409, Short.MAX_VALUE)
+            .addComponent(jSplitPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 2604, Short.MAX_VALUE)
+            .addGroup(mainPanelLayout.createSequentialGroup()
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 1606, Short.MAX_VALUE)
+                .addContainerGap())
         );
         mainPanelLayout.setVerticalGroup(
             mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(mainPanelLayout.createSequentialGroup()
-                .addComponent(jSplitPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 468, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jSplitPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 713, Short.MAX_VALUE))
         );
 
         menuBar.setBackground(resourceMap.getColor("menuBar.background")); // NOI18N
@@ -772,7 +706,7 @@ public class LTWAssessmentToolView extends FrameView {
     }// </editor-fold>//GEN-END:initComponents
 
     // <editor-fold defaultstate="collapsed" desc="Menu Bar Event Action">
-    String currentOpenDir = "C:\\";
+    String currentOpenDir = "";
 
     private String splitSubmissionByTopics(String runFileAbsPath) {
         String isSplitOK = "Error Msg: ";
@@ -807,9 +741,11 @@ public class LTWAssessmentToolView extends FrameView {
             }
             if (subDirOK) {
                 // -----------------------------------------------------------------
-                fstream = new FileInputStream(runFileAbsPath);
-                DataInputStream in = new DataInputStream(fstream);
-                BufferedReader br = new BufferedReader(new InputStreamReader(in));
+//                fstream = new FileInputStream(runFileAbsPath);
+//                DataInputStream in = new DataInputStream(fstream, "UTF-8");
+//                BufferedReader br = new BufferedReader(new InputStreamReader(in));
+            	BufferedReader br = new BufferedReader(
+            	        new InputStreamReader(new FileInputStream(runFileAbsPath), "UTF8"));
                 String strLine;
                 while ((strLine = br.readLine()) != null) {
                     sb.append(strLine);
@@ -850,8 +786,9 @@ public class LTWAssessmentToolView extends FrameView {
                         topicSB.append(thisTopic);
                         topicSB.append(endTag);
                         String thisTopicRun = subDirectory + thisTopicID + ".xml";
-                        FileWriter fw = new FileWriter(thisTopicRun);
-                        BufferedWriter out = new BufferedWriter(fw);
+//                        FileWriter fw = new FileWriter(thisTopicRun, "UTF8");
+//                        BufferedWriter out = new BufferedWriter(fw);
+                        BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(thisTopicRun),"UTF8")); 
                         out.write(topicSB.toString());
                         out.close();
                     }
@@ -859,8 +796,9 @@ public class LTWAssessmentToolView extends FrameView {
                     return isSplitOK + "Topics might be dupicated! Please check...";
                 }
                 // -----------------------------------------------------------------
-                fstream.close();
-                in.close();
+//                fstream.close();
+//                in.close();
+                br.close();
                 return subDirectory;
             } else {
                 return isSplitOK + "Create Folder False: " + subDirectory + ".\r\n Check Directory status!";
@@ -926,6 +864,8 @@ public class LTWAssessmentToolView extends FrameView {
     @Action
     public void loadSubmissionXML() {
         // The user can only load one submission at a time to validate it.
+    	if (currentOpenDir.length() == 0)
+    		currentOpenDir = rscManager.getLastSeenSubmissionDirectory();
         JFileChooser fc = new JFileChooser(currentOpenDir);
         // Load only 1 XML file
         fc.setFileSelectionMode(JFileChooser.FILES_ONLY);
@@ -937,10 +877,15 @@ public class LTWAssessmentToolView extends FrameView {
             File[] xmlFiles = new File[]{thisXMLFile};
             List<File> tmp = Arrays.asList(xmlFiles);
             ArrayList<File> fileList = new ArrayList<File>(tmp);
-            if (absFilePath.lastIndexOf(File.separator) >= 0) {
-                currentOpenDir = absFilePath.substring(0, absFilePath.lastIndexOf(File.separator));
-            } else if (absFilePath.lastIndexOf(File.separator) >= 0) {
-                currentOpenDir = absFilePath.substring(0, absFilePath.lastIndexOf(File.separator));
+//            if (absFilePath.lastIndexOf(File.separator) >= 0) {
+//                currentOpenDir = absFilePath.substring(0, absFilePath.lastIndexOf(File.separator));
+//            } else if (absFilePath.lastIndexOf(File.separator) >= 0) {
+//                currentOpenDir = absFilePath.substring(0, absFilePath.lastIndexOf(File.separator));
+//            }
+            String parentDir = thisXMLFile.getParent();
+            if (!currentOpenDir.equals(parentDir) && parentDir != null && parentDir.length() >= 0) {
+            	rscManager.updateLastSeenSumbmissionDirectory(parentDir);
+            	currentOpenDir = parentDir;
             }
             if (thisXMLFile.isFile() && absFilePath.toLowerCase().endsWith(".xml")) {
                 try {
@@ -956,10 +901,16 @@ public class LTWAssessmentToolView extends FrameView {
                         // Errors: well-form or xml data
                         JOptionPane.showMessageDialog(LTWAssessmentToolApp.getApplication().getMainFrame(), msgFromValidation);
                     } else {
-                        // Get returned valid file
+                    	// clear the previous validation message
+                    	ValidationMessage.getInstance().flush();
+                    	
+                        // Get returned valid file    
                         assessmentFormXml toPooling = new assessmentFormXml(fileList);
                         String poolingMsg = "Submission for topic " + thisXMLFile.getName() + " is successful loaded: \r\n" + toPooling.getPoolingMsg() + "\r\n Please be patient, it may take a few minutes to discovery all the links";
-                        JOptionPane.showMessageDialog(LTWAssessmentToolApp.getApplication().getMainFrame(), poolingMsg);
+                        
+                        ValidationMessage.getInstance().append(poolingMsg);
+                        ValidationMessage.getInstance().flush();
+                        //JOptionPane.showMessageDialog(LTWAssessmentToolApp.getApplication().getMainFrame(), poolingMsg);
                         // =====================================================
                         updatePoolerToResourceXML(thisXMLFile.getAbsolutePath());
                         
@@ -978,6 +929,9 @@ public class LTWAssessmentToolView extends FrameView {
 //                                setIncomingTBA();
 //                            }
                         }
+                        
+                        // flush error message if there is any
+                    	ValidationMessage.getInstance().flush();
                     }
                 } catch (IOException ex) {
                     Logger.getLogger(LTWAssessmentToolView.class.getName()).log(Level.SEVERE, null, ex);
@@ -1141,10 +1095,7 @@ public class LTWAssessmentToolView extends FrameView {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabelAnchor;
     private javax.swing.JLabel jLabelCollection;
-    private javax.swing.JLabel jLabelTargetPage;
-    private javax.swing.JLabel jLabelTopicTitle;
     private javax.swing.JMenu jMenuLang;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
@@ -1156,19 +1107,13 @@ public class LTWAssessmentToolView extends FrameView {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSplitPane jSplitPane1;
     private javax.swing.JSplitPane jSplitPane2;
-    private javax.swing.JTextPane jTextPane1;
-    private javax.swing.JLabel lblPoolAnchor;
-    private javax.swing.JLabel lblTargetPage;
-    private javax.swing.JLabel lblTargetPage1;
-    private javax.swing.JLabel lblTargetPage2;
-    private javax.swing.JLabel lblTopicID;
-    private javax.swing.JLabel lblTopicTitle;
     private javax.swing.JMenu linkMenu;
     private javax.swing.JTextPane linkTextPane;
     private javax.swing.JScrollPane linkTextScrollPane;
     private javax.swing.JMenuItem loadMenuItem;
     private javax.swing.JPanel mainPanel;
     private javax.swing.JMenuBar menuBar;
+    private javax.swing.JTextPane msgTxtPane;
     private javax.swing.JRadioButtonMenuItem outRadioBtn;
     private javax.swing.JSplitPane rightSplitPane;
     private javax.swing.JMenuItem splitMenuItem;
@@ -1452,6 +1397,15 @@ public class LTWAssessmentToolView extends FrameView {
         hiddenTC.setPreferredWidth(2);
         hiddenTC.setMaxWidth(2);
         hiddenTC.setCellRenderer(new InteractiveRenderer(TABInteractiveTableModel.HIDDEN_INDEX));
+        
+        // Not showing some components are implemented
+//        jLabelTopicTitle.setVisible(false);
+//        jLabelTargetPage.setVisible(false);
+//        jLabelAnchor.setVisible(false);
+        // .setVisible(false);
+        
+        //
+        ValidationMessage.getInstance().setOutputPane(msgTxtPane);
     }
 }
 

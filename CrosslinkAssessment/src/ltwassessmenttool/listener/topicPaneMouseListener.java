@@ -5,6 +5,8 @@ import java.awt.Cursor;
 import java.awt.Point;
 import java.awt.event.MouseEvent;
 import java.io.BufferedWriter;
+import java.io.FileOutputStream;
+import java.io.OutputStreamWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -99,7 +101,8 @@ public class topicPaneMouseListener implements MouseInputListener {
         try {
             String targetFile = "resources\\Pool\\T" + this.currTopicID + "_ltwAssessTool2009.log";
             File poolFileWithName = new File(targetFile);
-            BufferedWriter bw = new BufferedWriter(new FileWriter(poolFileWithName, true));
+            BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(
+			        new FileOutputStream(poolFileWithName), "UTF8")); //new BufferedWriter(new FileWriter(poolFileWithName, true));
 
             DateFormat dateFormat = new SimpleDateFormat("ddMMyyHHmmss");
             Date date = new Date();
