@@ -6,6 +6,8 @@ import java.awt.Robot;
 import java.awt.event.InputEvent;
 import java.awt.event.MouseEvent;
 import java.io.BufferedWriter;
+import java.io.FileOutputStream;
+import java.io.OutputStreamWriter;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -97,7 +99,8 @@ public class linkPaneMouseListener implements MouseInputListener {
         try {
             String targetFile = "resources\\Pool\\T" + this.topicID + "_ltwAssessTool2009.log";
             File poolFileWithName = new File(targetFile);
-            BufferedWriter bw = new BufferedWriter(new FileWriter(poolFileWithName, true));
+            BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(
+			        new FileOutputStream(poolFileWithName), "UTF8")); //new BufferedWriter(new FileWriter(poolFileWithName, true));
 
             DateFormat dateFormat = new SimpleDateFormat("yyMMddHHmmss");
             Date date = new Date();

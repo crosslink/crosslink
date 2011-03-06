@@ -2,18 +2,18 @@ package ltwassessment.parsers;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.FileOutputStream;
+import java.io.OutputStreamWriter;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Hashtable;
-import java.util.List;
 import java.util.Vector;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -64,6 +64,7 @@ public class resourcesManager {
     private String wikipediaPool = "";
     private String teAraPool = "";
     // constants for toolResource XML
+    private static String lastSeenSubmissionDirTag = "LastSeenSubmissionFolder";
     private String afTitleTag = "toolResources";
     private String afLinkingModeTag = "linkingMode";
     private String afTopicCollTypeTag = "topicCollectionType";
@@ -260,6 +261,10 @@ public class resourcesManager {
         updateResources(doc);
     }
     
+    public void updateLastSeenSumbmissionDirectory(String dir) {
+    	updateElement(lastSeenSubmissionDirTag, dir);
+    }
+    
     public void updateTBANavigationIndex(String[] navIndices) {      
     	updateElement(afTBANavigationIndexTag, navIndices[0] + " : " + navIndices[1] + " , " + navIndices[2] + " , " + navIndices[3] + " , " + navIndices[4]);
     }
@@ -350,7 +355,8 @@ public class resourcesManager {
     private void condenceXml(String xmlFile) {
         try {
             String xmlContent = "";
-            BufferedReader br = new BufferedReader(new FileReader(xmlFile));
+            BufferedReader br = new BufferedReader(
+        	        new InputStreamReader(new FileInputStream(xmlFile), "UTF8")); //new BufferedReader(new FileReader(xmlFile));
             String thisLine = "";
             while ((thisLine = br.readLine()) != null) {
                 if (thisLine.trim().startsWith("\\n")) {
@@ -359,7 +365,8 @@ public class resourcesManager {
                     xmlContent = xmlContent + thisLine.trim();
                 }
             }
-            BufferedWriter bw = new BufferedWriter(new FileWriter(xmlFile));
+            BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(
+			        new FileOutputStream(xmlFile), "UTF8")); //new BufferedWriter(new FileWriter(xmlFile));
             bw.write(xmlContent);
             bw.close();
             br.close();
@@ -699,6 +706,10 @@ public class resourcesManager {
 //        String teAraCollectionFolder = getDataByTagName(afTitleTag, afTeAraCollTag);
 //        return teAraCollectionFolder;
 //    }
+    
+    public String getLastSeenSubmissionDirectory() {
+    	return getDataByTagName(afTitleTag, lastSeenSubmissionDirTag);
+    }
 
     public String getPoolXMLFile() {
         String poolXMLFilePath = getDataByTagName(afTitleTag, afPoolPathTag);
@@ -2407,6 +2418,8 @@ public class resourcesManager {
     public String getLinkingMode() {
         return getDataByTagName(afTitleTag, afLinkingModeTag);
     }
+    
+    
 
     // =========================================================================
     private Vector<String[]> sortOLVectorSANumbers(Vector<String[]> myOLSANumbersV) {

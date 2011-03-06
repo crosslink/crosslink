@@ -2,10 +2,11 @@ package ltwassessment.parsers;
 
 import com.sun.org.apache.xerces.internal.parsers.DOMParser;
 import java.io.BufferedWriter;
+import java.io.FileOutputStream;
+import java.io.OutputStreamWriter;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileWriter;
 import java.io.FilenameFilter;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -38,7 +39,7 @@ public class Xml2Html {
     private boolean isTopicWikipedia = false;
     private boolean isLinkWikipedia = false;
 
-    private String xmlUnicode = "utf-8";
+    private String xmlUnicode = "UTF8";
     private String imgFolderPath = "images/";
 
     private String appDirectory;
@@ -96,7 +97,8 @@ public class Xml2Html {
         try {
             clearFolder(this.htmlFileTopFolder, ".html");
             String htmlFilePath = this.htmlFileTopFolder + xmlFileID + ".html";
-            BufferedWriter bw = new BufferedWriter(new FileWriter(htmlFilePath));
+            BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(
+			        new FileOutputStream(htmlFilePath), "UTF8")); //new BufferedWriter(new FileWriter(htmlFilePath));
             bw.write(htmlSB.toString());
             bw.close();
             htmlFilePathSB.append(htmlFilePath);

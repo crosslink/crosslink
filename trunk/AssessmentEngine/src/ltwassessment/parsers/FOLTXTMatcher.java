@@ -4,6 +4,8 @@ import com.sun.org.apache.xerces.internal.parsers.DOMParser;
 import com.sun.org.apache.xpath.internal.XPathAPI;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.OutputStreamWriter;
+import java.io.FileOutputStream;
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.FileInputStream;
@@ -27,6 +29,8 @@ import ltwassessment.AppResource;
 import ltwassessment.parsers.FOLTXTMatcher;
 import ltwassessment.parsers.PoolerManager;
 import ltwassessment.parsers.resourcesManager;
+import ltwassessment.validation.InvalidOffsetException;
+import ltwassessment.validation.ValidationMessage;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -107,7 +111,8 @@ public class FOLTXTMatcher {
         File entityFile = new File(entityListFile);
         if (entityFile.isFile()) {
             try {
-                BufferedReader br = new BufferedReader(new FileReader(entityListFile));
+                BufferedReader br = new BufferedReader(
+            	        new InputStreamReader(new FileInputStream(entityListFile), "UTF8")); //new BufferedReader(new FileReader(entityListFile));
                 String thisLine = "";
                 while ((thisLine = br.readLine()) != null) {
                     String[] thisEntity = thisLine.split(" -- ");
@@ -316,21 +321,30 @@ public class FOLTXTMatcher {
         
 		int aOffset = Integer.valueOf(thisAnchorXmlOLName[0]);
 		int aLength = Integer.valueOf(thisAnchorXmlOLName[1]);
+
 		String aName = fullXmlTxt.substring(aOffset, aOffset + aLength); //thisAnchorXmlOLName[2];
 		
-        myScreenPosition[0] = ""; //String.valueOf(aName);
-        myScreenPosition[1] = String.valueOf(0);
-        myScreenPosition[2] = String.valueOf(0);
-
-        int offset = Integer.parseInt(screenBepOffsetFinder(fullScreenTxt, fullXmlTxt, Integer.toString(aOffset)));
-//        if (Character.isWhitespace(fullScreenTxt.charAt(offset))) {
-//	        while (Character.isWhitespace(fullScreenTxt.charAt(offset)))
-//	        	--offset;
-//	        ++offset;
-//        }
-        myScreenPosition[1] = String.valueOf(offset);
-        myScreenPosition[2] = String.valueOf(offset + aLength);
-        myScreenPosition[0] = fullScreenTxt.substring(offset, offset + aLength);
+    	try {
+	        myScreenPosition[0] = ""; //String.valueOf(aName);
+	        myScreenPosition[1] = String.valueOf(0);
+	        myScreenPosition[2] = String.valueOf(0);
+	
+	        int offset = Integer.parseInt(screenBepOffsetFinder(fullScreenTxt, fullXmlTxt, Integer.toString(aOffset)));
+	//        if (Character.isWhitespace(fullScreenTxt.charAt(offset))) {
+	//	        while (Character.isWhitespace(fullScreenTxt.charAt(offset)))
+	//	        	--offset;
+	//	        ++offset;
+	//        }
+	        myScreenPosition[1] = String.valueOf(offset);
+	        myScreenPosition[2] = String.valueOf(offset + aLength);
+	        myScreenPosition[0] = fullScreenTxt.substring(offset, offset + aLength);
+    	}
+    	catch (InvalidOffsetException ioe) {
+    		ValidationMessage.getInstance().append("Invalid offset " + aOffset + " for anchor " + aName);
+    	}
+    	catch (Exception ex){
+    		ex.printStackTrace();
+    	}
 //		
 //		myScreenPosition[0] = fullScreenTxt.substring(Integer.valueOf(myScreenPosition[1]), Integer.valueOf(myScreenPosition[1]) + aLength);
 //		{
@@ -351,7 +365,7 @@ public class FOLTXTMatcher {
     }
     // =========================================================================
 
-    private String screenBepOffsetFinder(String fullScreenTxt, String fullXmlTxt, String bepOffset) {
+    private String screenBepOffsetFinder(String fullScreenTxt, String fullXmlTxt, String bepOffset) throws InvalidOffsetException {
     	if (bepOffset.length() == 0)
     		bepOffset = "0";
         String source = this.parseXmlText(fullXmlTxt.substring(Integer.parseInt(bepOffset)));
@@ -363,8 +377,12 @@ public class FOLTXTMatcher {
 		int offset = puzzle.length();
 
 		int pos = 0;
+		if (offset > fullScreenTxt.length())
+			throw new InvalidOffsetException();
+		
 		offset = fullScreenTxt.length() - offset;
 		String part = fullScreenTxt.substring(offset);
+		
 		part = part.replaceAll("\\s+", "");
 		StringBuffer sb = new StringBuffer(part);
 		
@@ -376,8 +394,16 @@ public class FOLTXTMatcher {
 			//puzzle.equals(part) || 
 			sb_len = sb.length();
 			puzzle_len = puzzle.length();
-			if (sb_len >= puzzle_len || puzzle.equals(sb.toString())) 
+			if (sb_len >= puzzle_len || puzzle.equals(sb.toString())) {
+				if (AppResource.debug == true && !puzzle.equals(sb.toString())) {
+					System.err.println("Puzzle:");
+					System.err.println(puzzle);
+					System.err.println("");
+					System.err.println("SB:");
+					System.err.println(sb.toString());
+				}
 		        break;
+			}
 		
 			gap = puzzle.length() - sb.length();
 			offset -= gap;
@@ -624,7 +650,15 @@ public class FOLTXTMatcher {
         } catch (BadLocationException ex) {
             Logger.getLogger(FOLTXTMatcher.class.getName()).log(Level.SEVERE, null, ex);
         }
-        return scrBepOffset = screenBepOffsetFinder(fullScreenText, fullXmlText, xmlBepOffset);
+        try {
+        	if (Integer.parseInt(xmlBepOffset) == 0)
+        		scrBepOffset = "0";
+        	else
+        		scrBepOffset = screenBepOffsetFinder(fullScreenText, fullXmlText, xmlBepOffset);
+		} catch (InvalidOffsetException e) {
+			e.printStackTrace();
+		}
+        return scrBepOffset;
     }
 
     public String[] getSCRAnchorNameSESA(JTextPane myTextPane, String fileID, String[] thisAnchorXmlOLName, String lang) {
@@ -669,7 +703,13 @@ public class FOLTXTMatcher {
         Arrays.sort(xmlBepO);
         for (int xmlBepOffsetI : xmlBepO) {
             String thisXmlBepOffset = String.valueOf(xmlBepOffsetI);
-            String scrBepOffset = screenBepOffsetFinder(fullScreenText, fullXmlText, thisXmlBepOffset);
+            String scrBepOffset = "0";
+			try {
+				scrBepOffset = screenBepOffsetFinder(fullScreenText, fullXmlText, thisXmlBepOffset);
+			} catch (InvalidOffsetException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
             scrBepOffsetV.add(new String[]{scrBepOffset, String.valueOf(Integer.valueOf(scrBepOffset) + 4)});
             bepSetV.add(thisXmlBepOffset + " : " + scrBepOffset);
         }
@@ -707,7 +747,13 @@ public class FOLTXTMatcher {
         } catch (BadLocationException ex) {
             Logger.getLogger(FOLTXTMatcher.class.getName()).log(Level.SEVERE, null, ex);
         }
-        return scrBepOffset = screenBepOffsetFinder(fullScreenText, fullXmlText, bepOffset);
+        try {
+        	scrBepOffset = screenBepOffsetFinder(fullScreenText, fullXmlText, bepOffset);
+		} catch (InvalidOffsetException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return scrBepOffset;
     }
     
     private Vector<String> getLinkXmlTextByID(String linkID, String lang) {
@@ -794,16 +840,16 @@ public class FOLTXTMatcher {
         return xmlBepOffset;
     }
     
-    public String parseXmlText(String input) {
+    @SuppressWarnings("finally")
+	public String parseXmlText(String input) {
     	StringBuffer sb = new StringBuffer("<?xml version=\"1.0\" encoding=\"UTF-8\"?><!DOCTYPE article SYSTEM \"article.dtd\"><article>");
     	sb.append(input);
     	sb.append("</article>");
     	String out = input;
-        FileInputStream fileInputStream = null;
         InputStreamReader inputStreamReader = null;
         try {
             ByteArrayInputStream bais = new ByteArrayInputStream(sb.toString().getBytes());
-            inputStreamReader = new InputStreamReader(bais, "UTF-8");
+            inputStreamReader = new InputStreamReader(bais, "UTF8");
             InputSource inputSource = new InputSource(inputStreamReader);
 
             // Parse the XML File
@@ -834,7 +880,9 @@ public class FOLTXTMatcher {
     	String myPureTxt = new String(crosslink.XML2TXT.getInstance().convertFile(inname));
         // write the text to a new file
         try {
-			BufferedWriter out = new BufferedWriter(new FileWriter(outname));
+			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(
+			        new FileOutputStream(outname), "UTF8"));
+			
 			out.write(myPureTxt);
 			out.close();
 		} catch (IOException e) {
@@ -862,7 +910,8 @@ public class FOLTXTMatcher {
             }
 
             // write the text to a new file
-            BufferedWriter out = new BufferedWriter(new FileWriter(textfilename));
+            BufferedWriter out = new BufferedWriter(new OutputStreamWriter(
+			        new FileOutputStream(textfilename), "UTF8")); //new BufferedWriter(new FileWriter(textfilename));
             out.write(myPureTxt);
             out.close();
 
