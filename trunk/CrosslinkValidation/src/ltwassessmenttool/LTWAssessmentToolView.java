@@ -51,6 +51,8 @@ import javax.swing.text.Style;
 import javax.swing.text.StyleConstants;
 import javax.swing.text.StyledDocument;
 
+import javax.swing.SwingWorker;
+
 import ltwassessment.AppResource;
 import ltwassessment.font.AdjustFont;
 import ltwassessment.parsers.FOLTXTMatcher;
@@ -745,7 +747,7 @@ public class LTWAssessmentToolView extends FrameView {
 //                DataInputStream in = new DataInputStream(fstream, "UTF-8");
 //                BufferedReader br = new BufferedReader(new InputStreamReader(in));
             	BufferedReader br = new BufferedReader(
-            	        new InputStreamReader(new FileInputStream(runFileAbsPath), "UTF8"));
+            	        new InputStreamReader(new FileInputStream(runFileAbsPath), "UTF-8"));
                 String strLine;
                 while ((strLine = br.readLine()) != null) {
                     sb.append(strLine);
@@ -786,9 +788,9 @@ public class LTWAssessmentToolView extends FrameView {
                         topicSB.append(thisTopic);
                         topicSB.append(endTag);
                         String thisTopicRun = subDirectory + thisTopicID + ".xml";
-//                        FileWriter fw = new FileWriter(thisTopicRun, "UTF8");
+//                        FileWriter fw = new FileWriter(thisTopicRun, "UTF-8");
 //                        BufferedWriter out = new BufferedWriter(fw);
-                        BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(thisTopicRun),"UTF8")); 
+                        BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(thisTopicRun),"UTF-8")); 
                         out.write(topicSB.toString());
                         out.close();
                     }
@@ -901,8 +903,11 @@ public class LTWAssessmentToolView extends FrameView {
                         // Errors: well-form or xml data
                         JOptionPane.showMessageDialog(LTWAssessmentToolApp.getApplication().getMainFrame(), msgFromValidation);
                     } else {
+                    	// clear up all the contents 
+                    	clearCompents();
+                    	
                     	// clear the previous validation message
-                    	ValidationMessage.getInstance().flush();
+//                    	ValidationMessage.getInstance().flush();
                     	
                         // Get returned valid file    
                         assessmentFormXml toPooling = new assessmentFormXml(fileList);
@@ -921,17 +926,35 @@ public class LTWAssessmentToolView extends FrameView {
                         myTABTxtPaneManager = new tabTxtPaneManager();
                         myTBATxtPaneManager = new tbaTxtPaneManager();
                         // =====================================================
-                        boolean rightCorpusDir = true; //corpusDirChecker(isTopicWikipedia);
-                        if (rightCorpusDir) {
+//                        boolean rightCorpusDir = true; //corpusDirChecker(isTopicWikipedia);
+//                        if (rightCorpusDir) {
 //                            if (outRadioBtn.isSelected()) {
-                                setOutgoingTAB();
+                        SwingWorker worker = new SwingWorker<Void, Void>() {
+                            @Override
+                            public Void doInBackground() {
+                            	setOutgoingTAB();
+                            	ValidationMessage.getInstance().append("Finished loading.");
+                            	return null;
+                            }
+                            
+                            @Override
+                            protected void done() {
+                                try { 
+                                    // flush error message if there is any
+                                	ValidationMessage.getInstance().flush();
+                                } catch (Exception ignore) {
+                                }
+                            }
+
+                        };
+                        
+                        worker.execute();
+//                                setOutgoingTAB();
 //                            } else if (inRadioBtn.isSelected()) {
 //                                setIncomingTBA();
 //                            }
-                        }
+//                        }
                         
-                        // flush error message if there is any
-                    	ValidationMessage.getInstance().flush();
                     }
                 } catch (IOException ex) {
                     Logger.getLogger(LTWAssessmentToolView.class.getName()).log(Level.SEVERE, null, ex);
@@ -1259,11 +1282,6 @@ public class LTWAssessmentToolView extends FrameView {
         painters = new highlightPainters();
         setTopicTextHighlighter(currAnchorSCROLPairs);
         // ---------------------------------------------------------------------
-        // Clean JTable
-        anchorBepTable.removeAll();
-        ((DefaultTableModel)anchorBepTable.getModel()).setRowCount(0);
-        ((DefaultTableModel)anchorBepTable.getModel()).fireTableDataChanged();
-        anchorBepTable.repaint();
         
         // populate SRC JTable
         anchorBepTable.addMouseListener(new paneTableMouseListener(this.topicTextPane, this.linkTextPane, this.anchorBepTable));
@@ -1403,9 +1421,22 @@ public class LTWAssessmentToolView extends FrameView {
 //        jLabelTargetPage.setVisible(false);
 //        jLabelAnchor.setVisible(false);
         // .setVisible(false);
+    }
+    
+    private void clearCompents() {
+        // Clean JTable
+        anchorBepTable.removeAll();
+        ((DefaultTableModel)anchorBepTable.getModel()).setRowCount(0);
+        ((DefaultTableModel)anchorBepTable.getModel()).fireTableDataChanged();
+        anchorBepTable.repaint();
+        
+        topicTextPane.setText("");
+    	linkTextPane.setText("");
         
         //
         ValidationMessage.getInstance().setOutputPane(msgTxtPane);
+        msgTxtPane.setContentType("text/html");
+        msgTxtPane.setText("This is an information pane");	
     }
 }
 

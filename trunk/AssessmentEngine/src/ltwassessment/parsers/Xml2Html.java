@@ -39,7 +39,7 @@ public class Xml2Html {
     private boolean isTopicWikipedia = false;
     private boolean isLinkWikipedia = false;
 
-    private String xmlUnicode = "UTF8";
+    private String xmlUnicode = "UTF-8";
     private String imgFolderPath = "images/";
 
     private String appDirectory;
@@ -98,7 +98,7 @@ public class Xml2Html {
             clearFolder(this.htmlFileTopFolder, ".html");
             String htmlFilePath = this.htmlFileTopFolder + xmlFileID + ".html";
             BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(
-			        new FileOutputStream(htmlFilePath), "UTF8")); //new BufferedWriter(new FileWriter(htmlFilePath));
+			        new FileOutputStream(htmlFilePath), "UTF-8")); //new BufferedWriter(new FileWriter(htmlFilePath));
             bw.write(htmlSB.toString());
             bw.close();
             htmlFilePathSB.append(htmlFilePath);
@@ -248,7 +248,7 @@ public class Xml2Html {
     private void populateTeAraTopicHtml() {
         try {
             int nameCount = 0;
-            XMLStreamReader xsr = XMLInputFactory.newInstance().createXMLStreamReader(new FileInputStream(this.xmlPath), "utf-8");
+            XMLStreamReader xsr = XMLInputFactory.newInstance().createXMLStreamReader(new FileInputStream(this.xmlPath), "UTF-8");
             while (xsr.hasNext()) {
                 int eventType = xsr.next();
 
