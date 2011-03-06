@@ -138,7 +138,7 @@ public class tabTxtPaneManager {
 
     private void updateTopicPaneAnchorStatus(String topicID, String[] selectedAnchorOLNameSA, String lang) {
         // currAnchorSCRSet: [0]:Anchor_Name, [1]:Offset, [2]:Offset + Length
-        String[] currAnchorSCRSet = myFOLMatcher.getSCRAnchorPosSA(this.myTopicPane, topicID, selectedAnchorOLNameSA, true, lang);
+        String[] currAnchorSCRSet = myFOLMatcher.getSCRAnchorPosSA(this.myTopicPane, topicID, selectedAnchorOLNameSA, myFOLMatcher.getFullXmlTxt(), lang);
         String sPos = currAnchorSCRSet[1];
         String ePos = currAnchorSCRSet[2];
         updateTopicHighlighter(sPos + "_" + ePos);

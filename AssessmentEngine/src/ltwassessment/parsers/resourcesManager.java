@@ -231,7 +231,7 @@ public class resourcesManager {
         }
     }
     
-    private void updateElement(String childTagName, String childTextNode)
+    private synchronized void updateElement(String childTagName, String childTextNode)
     {
         Document doc = readingXMLFromFile(resourceXMLFile);
 
@@ -356,7 +356,7 @@ public class resourcesManager {
         try {
             String xmlContent = "";
             BufferedReader br = new BufferedReader(
-        	        new InputStreamReader(new FileInputStream(xmlFile), "UTF8")); //new BufferedReader(new FileReader(xmlFile));
+        	        new InputStreamReader(new FileInputStream(xmlFile), "UTF-8")); //new BufferedReader(new FileReader(xmlFile));
             String thisLine = "";
             while ((thisLine = br.readLine()) != null) {
                 if (thisLine.trim().startsWith("\\n")) {
@@ -366,7 +366,7 @@ public class resourcesManager {
                 }
             }
             BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(
-			        new FileOutputStream(xmlFile), "UTF8")); //new BufferedWriter(new FileWriter(xmlFile));
+			        new FileOutputStream(xmlFile), "UTF-8")); //new BufferedWriter(new FileWriter(xmlFile));
             bw.write(xmlContent);
             bw.close();
             br.close();
@@ -744,7 +744,7 @@ public class resourcesManager {
         return "";
     }
 
-    public Document readingXMLFromFile(String sourceXml) {
+    public synchronized Document readingXMLFromFile(String sourceXml) {
         DocumentBuilderFactory dBF = DocumentBuilderFactory.newInstance();
         dBF.setIgnoringComments(true);
         // Ignore the comments present in the XML File when reading the xml
@@ -845,7 +845,7 @@ public class resourcesManager {
         return thisPageTitle = htmlSB.toString();
     }
     // <editor-fold defaultstate="collapsed" desc="Wikipedia Page Title Finder">
-    private String xmlUnicode = "utf-8";
+    private String xmlUnicode = "UTF-8";
 
     private void pageTitleExtractor(String xmlPath) {
         try {

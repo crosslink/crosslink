@@ -527,6 +527,9 @@ public class topicPaneMouseListener implements MouseInputListener {
         } else {
             this.currTopicID = currTopicXmlPath.substring(currTopicXmlPath.lastIndexOf(File.separator) + 1, currTopicXmlPath.length() - 4);
         }
+        
+        String myFullXmlTxt = FOLTXTMatcher.getTopicFullXmlTextByFileID(currTopicID);
+
         HashMap<String, Vector<String[]>> aLinksHM = myPooler.getBepSetByAnchor(currTopicID);
         // Find screen OL from Xml OL for all Anchors here
         Set keySet = aLinksHM.keySet();
@@ -536,7 +539,7 @@ public class topicPaneMouseListener implements MouseInputListener {
             Vector<String[]> myVSA = aLinksHM.get(keyObj);
             String[] keySA = keyObj.toString().split("_");
             String[] thisAnchorSet = new String[]{keySA[0], String.valueOf(Integer.valueOf(keySA[1]) - Integer.valueOf(keySA[0])), keySA[2]};
-            String[] scrAnchorPosSA = myFOLMatcher.getSCRAnchorPosSA(topicTextPane, currTopicID, thisAnchorSet, true, AppResource.sourceLang);
+            String[] scrAnchorPosSA = myFOLMatcher.getSCRAnchorPosSA(topicTextPane, currTopicID, thisAnchorSet, myFullXmlTxt, AppResource.sourceLang);
             String mySCRAnchorPos = scrAnchorPosSA[1] + "_" + scrAnchorPosSA[2];
             bepFileSAVBySCRAnchorOLHM.put(mySCRAnchorPos, myVSA);
         }

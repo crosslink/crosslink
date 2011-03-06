@@ -13,6 +13,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.UnsupportedEncodingException;
 import java.util.Arrays;
 import java.util.Enumeration;
 import java.util.Hashtable;
@@ -51,7 +52,7 @@ public class FOLTXTMatcher {
     private PoolerManager myPooler;
     private Vector<String> xmlSingleCharV = new Vector<String>();
     private String wikipediaTopicFileDir = "";
-    private String tempFileDir = "";
+    private static String tempFileDir = "";
     private String fullXmlTxt = "";
     private Vector<String> entityNumExpressV;
     private Vector<String> entityExpressV;
@@ -101,7 +102,21 @@ public class FOLTXTMatcher {
 //        getCurrFullXmlText();
     }
 
-    // =========================================================================
+    /**
+	 * @return the fullXmlTxt
+	 */
+	public String getFullXmlTxt() {
+		return fullXmlTxt;
+	}
+
+	/**
+	 * @param fullXmlTxt the fullXmlTxt to set
+	 */
+	public void setFullXmlTxt(String fullXmlTxt) {
+		this.fullXmlTxt = fullXmlTxt;
+	}
+
+	// =========================================================================
     // =========================================================================
     private void populateEntityV() {
         entityNumExpressV = new Vector<String>();
@@ -112,7 +127,7 @@ public class FOLTXTMatcher {
         if (entityFile.isFile()) {
             try {
                 BufferedReader br = new BufferedReader(
-            	        new InputStreamReader(new FileInputStream(entityListFile), "UTF8")); //new BufferedReader(new FileReader(entityListFile));
+            	        new InputStreamReader(new FileInputStream(entityListFile), "UTF-8")); //new BufferedReader(new FileReader(entityListFile));
                 String thisLine = "";
                 while ((thisLine = br.readLine()) != null) {
                     String[] thisEntity = thisLine.split(" -- ");
@@ -394,7 +409,7 @@ public class FOLTXTMatcher {
 			//puzzle.equals(part) || 
 			sb_len = sb.length();
 			puzzle_len = puzzle.length();
-			if (sb_len >= puzzle_len || puzzle.equals(sb.toString())) {
+			if (sb_len >= puzzle_len/* || puzzle.equals(sb.toString())*/) {
 				if (AppResource.debug == true && !puzzle.equals(sb.toString())) {
 					System.err.println("Puzzle:");
 					System.err.println(puzzle);
@@ -484,7 +499,7 @@ public class FOLTXTMatcher {
     // =========================================================================
 
     private void getCurrFullXmlText() {
-        this.isTopicWikipedia = Boolean.valueOf(System.getProperty(sysPropertyIsTopicWikiKey));
+//        this.isTopicWikipedia = Boolean.valueOf(System.getProperty(sysPropertyIsTopicWikiKey));
         String xmlFilePath = getCurrentTopicFilePath();
         String targetFilePath = "";
 //        if (this.isTopicWikipedia) {
@@ -500,7 +515,7 @@ public class FOLTXTMatcher {
 //                targetFilePath = this.tempFileDir + xmlFilePath.substring(xmlFilePath.lastIndexOf(File.separator), xmlFilePath.lastIndexOf(".xml")) + "_pureTxt.txt";
 //            }
 //        }
-        String wikipediaTxt = ConvertXMLtoTXT(xmlFilePath, targetFilePath, this.isTopicWikipedia);
+        String wikipediaTxt = ConvertXMLtoTXT(xmlFilePath, targetFilePath);
         fullXmlTxt = wikipediaTxt;
         for (int i = 0; i < wikipediaTxt.length(); i++) {
             String mySingle = wikipediaTxt.substring(i, i + 1);
@@ -508,10 +523,10 @@ public class FOLTXTMatcher {
         }
     }
 
-    private String getFullXmlText(String fileID, String xmlFilePath) {
-        this.isTopicWikipedia = Boolean.valueOf(System.getProperty(sysPropertyIsTopicWikiKey));
+    private static String getFullXmlText(String fileID, String xmlFilePath) {
+//        this.isTopicWikipedia = Boolean.valueOf(System.getProperty(sysPropertyIsTopicWikiKey));
         String targetFilePath = tempFileDir + fileID + "_pureTxt.txt";
-        String wikipediaTxt = ConvertXMLtoTXT(xmlFilePath, targetFilePath, this.isTopicWikipedia);
+        String wikipediaTxt = ConvertXMLtoTXT(xmlFilePath, targetFilePath);
         return wikipediaTxt;
     }
 
@@ -520,7 +535,7 @@ public class FOLTXTMatcher {
         return getFullXmlText(fileID, xmlFilePath);
     }
 
-    private String getTopicFullXmlTextByFileID(String fileID) {
+    public static String getTopicFullXmlTextByFileID(String fileID) {
         String xmlFilePath = AppResource.getTopicXmlPathNameByFileID(fileID);
          return getFullXmlText(fileID, xmlFilePath);
     }
@@ -599,18 +614,15 @@ public class FOLTXTMatcher {
     }
 
     public String[] getSCRAnchorPosSA(JTextPane myTextPane, String fileID, String[] thisAnchorXmlOLName, String lang) {
-        return getSCRAnchorPosSA(myTextPane, fileID, thisAnchorXmlOLName, false, lang);
+            String myFullXmlTxt = getFullXmlTextByFileID(fileID, lang);
+        return getSCRAnchorPosSA(myTextPane, fileID, thisAnchorXmlOLName, myFullXmlTxt, lang);
     }
 
-    public String[] getSCRAnchorPosSA(JTextPane myTextPane, String fileID, String[] thisAnchorXmlOLName, boolean istopic, String lang) {
+    public String[] getSCRAnchorPosSA(JTextPane myTextPane, String fileID, String[] thisAnchorXmlOLName, String myFullXmlTxt, String lang) {
         // myScreenAnchorOL/thisAnchorSet
         // --> [0]:Offset, [1]:Length, [2]:Anchor_Name
         String[] myScreenAnchorPos = new String[3];
-        String myFullXmlTxt = null;
-        if (istopic)
-            myFullXmlTxt = getTopicFullXmlTextByFileID(fileID);
-        else
-            myFullXmlTxt = getFullXmlTextByFileID(fileID, lang);
+
         String fullScreenText = "";
         try {
             fullScreenText = myTextPane.getDocument().getText(0, myTextPane.getDocument().getLength());
@@ -646,7 +658,7 @@ public class FOLTXTMatcher {
 ////                bepFilePath = myRSCManager.getTeAraCollectionFolder() + myRSCManager.getTeAraFilePathByName(bepFileID + ".xml");
 //            }
             String targetFilePath = "resources" + File.separator + "Temp" + File.separator + bepFileID + "_pureTxt.txt";
-            fullXmlText = ConvertXMLtoTXT(bepFilePath, targetFilePath, isWikipedia);
+            fullXmlText = ConvertXMLtoTXT(bepFilePath, targetFilePath);
         } catch (BadLocationException ex) {
             Logger.getLogger(FOLTXTMatcher.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -689,7 +701,7 @@ public class FOLTXTMatcher {
 //                xmlFilePath = myRSCManager.getTeAraCollectionFolder() + myRSCManager.getTeAraFilePathByName(xmlFileID + ".xml");
 //            }
             String targetFilePath = AppResource.getTopicPathNameByFileID(xmlFileID) + "_pureTxt.txt";
-            fullXmlText = ConvertXMLtoTXT(xmlFilePath, targetFilePath, isWikipedia);
+            fullXmlText = ConvertXMLtoTXT(xmlFilePath, targetFilePath);
         } catch (BadLocationException ex) {
             Logger.getLogger(FOLTXTMatcher.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -743,7 +755,7 @@ public class FOLTXTMatcher {
 //                }
 //            }
             String targetFilePath = "resources" + File.separator + "Temp" + File.separator + bepFileID + "_pureTxt.txt";
-            fullXmlText = ConvertXMLtoTXT(bepFilePath, targetFilePath, isWikipedia);
+            fullXmlText = ConvertXMLtoTXT(bepFilePath, targetFilePath);
         } catch (BadLocationException ex) {
             Logger.getLogger(FOLTXTMatcher.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -767,7 +779,7 @@ public class FOLTXTMatcher {
 //            xmlFilePath = this.myRSCManager.getTeAraFilePathByName(linkID + ".xml");
 //            targetFilePath = this.tempFileDir + xmlFilePath.substring(xmlFilePath.lastIndexOf("\\"), xmlFilePath.lastIndexOf(".xml")) + "_pureTxt.txt";
 //        }
-        String wikipediaTxt = ConvertXMLtoTXT(xmlFilePath, targetFilePath, Boolean.valueOf(System.getProperty(sysPropertyIsTopicWikiKey)));
+        String wikipediaTxt = ConvertXMLtoTXT(xmlFilePath, targetFilePath);
         for (int i = 0; i < wikipediaTxt.length(); i++) {
             String mySingle = wikipediaTxt.substring(i, i + 1);
             xmlSglCharV.add(mySingle);
@@ -849,7 +861,7 @@ public class FOLTXTMatcher {
         InputStreamReader inputStreamReader = null;
         try {
             ByteArrayInputStream bais = new ByteArrayInputStream(sb.toString().getBytes());
-            inputStreamReader = new InputStreamReader(bais, "UTF8");
+            inputStreamReader = new InputStreamReader(bais, "UTF-8");
             InputSource inputSource = new InputSource(inputStreamReader);
 
             // Parse the XML File
@@ -875,13 +887,19 @@ public class FOLTXTMatcher {
     // =========================================================================
     // <editor-fold defaultstate="collapsed" desc="Convert XML to TXT">
 
-    public String ConvertXMLtoTXT(String inname, String outname, boolean isWikipedia) {
+    public static String ConvertXMLtoTXT(String inname, String outname) {
 //        String myPureTxt = convertXMLFileToTxt(inname, outname, isWikipedia);
-    	String myPureTxt = new String(crosslink.XML2TXT.getInstance().convertFile(inname));
+    	String myPureTxt = "";
+		try {
+			myPureTxt = new String(crosslink.XML2TXT.getInstance().convertFile(inname), "UTF-8");
+		} catch (UnsupportedEncodingException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
         // write the text to a new file
         try {
 			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(
-			        new FileOutputStream(outname), "UTF8"));
+			        new FileOutputStream(outname), "UTF-8"));
 			
 			out.write(myPureTxt);
 			out.close();
@@ -911,7 +929,7 @@ public class FOLTXTMatcher {
 
             // write the text to a new file
             BufferedWriter out = new BufferedWriter(new OutputStreamWriter(
-			        new FileOutputStream(textfilename), "UTF8")); //new BufferedWriter(new FileWriter(textfilename));
+			        new FileOutputStream(textfilename), "UTF-8")); //new BufferedWriter(new FileWriter(textfilename));
             out.write(myPureTxt);
             out.close();
 
