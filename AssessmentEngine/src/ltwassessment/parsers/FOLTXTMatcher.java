@@ -410,7 +410,7 @@ public class FOLTXTMatcher {
 			sb_len = sb.length();
 			puzzle_len = puzzle.length();
 			if (sb_len >= puzzle_len/* || puzzle.equals(sb.toString())*/) {
-				if (AppResource.debug == true && !puzzle.equals(sb.toString())) {
+				if (AppResource.debug == true && !Arrays.equals(puzzle.getBytes(), sb.toString().getBytes())/*!puzzle.equals(sb.toString())*/) {
 					System.err.println("Puzzle:");
 					System.err.println(puzzle);
 					System.err.println("SB:");
