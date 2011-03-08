@@ -68,6 +68,8 @@ public class InexSubmission {
     protected String participantId;
     @XmlAttribute(name = "run-id", required = true)
     protected String runId;
+    @XmlAttribute(name = "default_lang", required = true)
+    protected String defaultLang;
     @XmlAttribute(required = true)
     protected String task;
 
