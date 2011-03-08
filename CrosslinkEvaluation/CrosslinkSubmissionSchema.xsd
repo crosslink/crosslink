@@ -12,6 +12,7 @@
             </xsd:sequence>
             <xsd:attribute name="participant-id" type="xsd:string" use="required"/>
             <xsd:attribute name="run-id" type="xsd:string" use="required"/>
+            <xsd:attribute name="default_lang" type="xsd:string" use="required"/>
             <xsd:attribute name="task" type="xsd:string" use="required"/>
             <xsd:attribute name="format" type="xsd:string" use="required"/>
         </xsd:complexType>   
