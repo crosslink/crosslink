@@ -7,6 +7,10 @@ TARGET_LANG=en
 OTHER_LANG=
 OUTPUT=
 
+CORPUS_HOME=/data/corpus/wikipedia/all/
+
+filename=
+
 if [ "$TARGET_LANG" -eq "en" ]
 then
 	OTHER_LANG=$SOURCE_LANG
@@ -21,12 +25,32 @@ TARGET_TOPICS_PATH=~/experiments/ntcir-9-clld/topics/training/${TARGET_LANG}/
 SOURCE_CROSSLINK_MERGED_TABLE=~/experiments/ntcir-9-clld/assessment/wikipedia_groundtruth/link-mining/all/${SOURCE_LANG}2${TARGET_LANG}_merged.txt
 TARGET_CROSSLINK_MERGED_TABLE=~/experiments/ntcir-9-clld/assessment/wikipedia_groundtruth/link-mining/all/${TARGET_LANG}2${SOURCE_LANG}_merged.txt
 
-./find_crosslingual_topics.sh $TARGET_TOPICS_PATH $SOURCE_TOPICS_PATH ~/experiments/ntcir-9-clld/assessment/wikipedia_groundtruth/link-mining/${TARGET_LANG}-${SOURCE_LANG/${TARGET_LANG}2${SOURCE_LANG}_table.txt /data/corpus/wikipedia/all/
+./find_crosslingual_topics.sh $TARGET_TOPICS_PATH $SOURCE_TOPICS_PATH ~/experiments/ntcir-9-clld/assessment/wikipedia_groundtruth/link-mining/${TARGET_LANG}-${SOURCE_LANG/${TARGET_LANG}2${SOURCE_LANG}_table.txt $CORPUS_HOME 
 
 TMP_LINKS=/tmp/$0.tmp
 
-get_output_id_from_en() {
+get_file_path() {
+	len=${#1}
+	if [ "$len" -gt "3" ]
+	then
+		subdir=${$1: -3}
+	else
+		subdir=`printf "%03d" $input`
+	fi
 	
+	#echo $subdir
+	
+	filename=$subdir/${input}.xml
+	
+	filename="pages/$filename"
+}
+
+get_output_id_from_en() {
+	if [ -e $OTHER_LANG/$filename ]
+	then
+		grep 
+	else
+	fi 
 }
 
 get_output_id_from_other_lang() {
