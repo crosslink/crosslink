@@ -4,9 +4,10 @@
 # <source_document>:<target_document>:<source_document_title>|<target_document_title>
 # with this table we can create two crosslink tables for both languages and for easy processing
 
-rm extensions.txt
+extension_file=extensions.txt
+rm -f $extension_file 2>&1 1>/dev/null
 
-cat $1 | while read line
+grep "|" $1 | while read line
 do
 	source=`echo $line | cut -f 1 -d :`
 	dest=`echo $line | cut -f 2 -d :`
@@ -21,7 +22,7 @@ do
 	else
 		if [ "${dest}" -eq "0" ]
 		then
-			echo $titles >> extensions.txt
+			echo $titles >> $extension_file
 		fi
 	fi
 	
