@@ -30,8 +30,8 @@ public class CrosslinkMining {
 //			filename=
 	
 	private String crosslinkTablePath;
-	private String enLangCrosslinkTable; 
-	private String otherLangCrosslinkTable;
+	private CrosslinkTable enLangCrosslinkTable; 
+	private CrosslinkTable otherLangCrosslinkTable;
 
 
 	/**
@@ -119,27 +119,30 @@ public class CrosslinkMining {
         return "pages" + File.separator + subFolder + File.separator + targetId;
 	}
 	
-	private void output(String outString) {
-		// TODO Auto-generated method stub
-		System.out.println(outString);
+	public boolean wikiPageExists(String id, String lang) {
+		return new File(corpusHome + File.separator + otherLang + File.separator + wikiIdToPath(id)).exists();
 	}
 	
-	private String getOutputIdFromEnCorpus(String filename) {
-		if (new File(corpusHome + File.separator + otherLang + File.separator + filename).exists())
-			return "";
+	private void output(CrosslinkTable table, String id) {
+		System.out.println(String.format("%s:%s", id, table.getTargetId(id)));
+	}
+	
+	private void getOutputIdFromEnCorpus(String id) {
+		if (wikiPageExists(id, "en"))
+			output(enLangCrosslinkTable, id);
 
-		return getOutputIdFromOtherLang(filename);
+		getOutputIdFromOtherLang(id);
  	}
 
-	private String getOutputIdFromOtherLang(String filename) {
-		return "";
+	private void getOutputIdFromOtherLang(String id) {
+		if (wikiPageExists(id, otherLang))
+			output(otherLangCrosslinkTable, id);
 	}
 
 	private void createCrosslinkTable(String crosslinkTablePath) {
 		setCrosslinkTablePath(crosslinkTablePath);
-		enLangCrosslinkTable = String.format("%sen_corpus_%s2%s.txt", crosslinkTablePath + File.separator, sourceLang, targetLang);
-		otherLangCrosslinkTable = String.format("%s%s_corpus_%s2%s.txt", crosslinkTablePath + File.separator, otherLang, sourceLang, targetLang);
-		
+		enLangCrosslinkTable = new CrosslinkTable(String.format("%sen_corpus_%s2%s.txt", crosslinkTablePath + File.separator, sourceLang, targetLang));
+		otherLangCrosslinkTable = new CrosslinkTable(String.format("%s%s_corpus_%s2%s.txt", crosslinkTablePath + File.separator, otherLang, sourceLang, targetLang));
 	}
 	
  	private void getTopicLinks(String topicPath) {
@@ -180,15 +183,17 @@ public class CrosslinkMining {
 //                        System.out.println(line);
 //					 	target_id=`echo $line | cut -f 2 -d :`
 			 			String[] arr = line.split(":");
+			 			String sourceId = arr[0];
 			 			String targetId = arr[1];
-			 			String pagePath = wikiIdToPath(targetId);
+
 			 			
-			 			int count  = 0; //crosslinkTable.getTargetCount(pagePath);
-			 			if (count > 0) {
-			 				if (count > 1)
-			 					getOutputIdFromEnCorpus(pagePath);
-			 				else
-			 					getOutputIdFromOtherLang(pagePath);
+//			 			int count  = 0; //crosslinkTable.getTargetCount(pagePath);
+			 			if (enLangCrosslinkTable.hasSourceId(sourceId)) {
+
+//			 				if (otherLangCrosslinkTable.hasSourceId(sourceId))
+			 					getOutputIdFromEnCorpus(sourceId);
+//			 				else
+//			 					getOutputIdFromOtherLang(pagePath);
 			 			}
                     }
 
