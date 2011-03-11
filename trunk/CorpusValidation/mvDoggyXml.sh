@@ -29,7 +29,7 @@ do
   destdir=`dirname $file`
 
   echo "mkdir -p $doggypath/$destdir"
-  echo "mv -i $pathfile $doggypath/$destdir/"
+  echo "\mv $pathfile $doggypath/$destdir/"
   
   #ls $file
 
