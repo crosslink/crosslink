@@ -18,17 +18,97 @@ import ltwassessment.utility.WildcardFiles;
  */
 public class CrosslinkMining {
 	
-	private String SOURCE_LANG = "zh";
-	private String TARGET_LANG = "en";
+	private String sourceLang = "zh";
+	private String targetLang = "en";
 
-	private String OTHER_LANG = "";
+	private String otherLang = "";
 //			OUTPUT=
 
-	private String CORPUS_HOME = "/data/corpus/wikipedia/all/";
-
+	private String corpusHome = "/data/corpus/wikipedia/all/";
+	private String sourceTopicPath = null;
+	private String targetTopicPath = null ; //~/experiments/ntcir-9-clld/topics/training/${targetLang}/
 //			filename=
+	
+	private String crosslinkTablePath;
+	private String enLangCrosslinkTable; 
+	private String otherLangCrosslinkTable;
 
 
+	/**
+	 * @return the sourceLang
+	 */
+	public String getSourceLang() {
+		return sourceLang;
+	}
+
+	/**
+	 * @param sourceLang the sourceLang to set
+	 */
+	public void setSourceLang(String sourceLang) {
+		this.sourceLang = sourceLang;
+	}
+
+	/**
+	 * @return the targetLang
+	 */
+	public String getTargetLang() {
+		return targetLang;
+	}
+
+	/**
+	 * @param targetLang the targetLang to set
+	 */
+	public void setTargetLang(String targetLang) {
+		this.targetLang = targetLang;
+		
+		if ( targetLang.equalsIgnoreCase( "en")) 
+		    otherLang = sourceLang;
+		else
+			otherLang = targetLang;
+	}
+
+	/**
+	 * @return the otherLang
+	 */
+	public String getOtherLang() {
+		return otherLang;
+	}
+
+	/**
+	 * @param otherLang the otherLang to set
+	 */
+	public void setOtherLang(String otherLang) {
+		this.otherLang = otherLang;
+	}
+
+	/**
+	 * @return the corpusHome
+	 */
+	public String getCorpusHome() {
+		return corpusHome;
+	}
+
+	/**
+	 * @param corpusHome the corpusHome to set
+	 */
+	public void setCorpusHome(String corpusHome) {
+		this.corpusHome = corpusHome;
+	}
+
+	/**
+	 * @return the crosslinkTablePath
+	 */
+	public String getCrosslinkTablePath() {
+		return crosslinkTablePath;
+	}
+
+	/**
+	 * @param crosslinkTablePath the crosslinkTablePath to set
+	 */
+	public void setCrosslinkTablePath(String crosslinkTablePath) {
+		this.crosslinkTablePath = crosslinkTablePath;
+	}
+	
 	static public String wikiIdToPath(String targetId) {
         int lastPos = targetId.lastIndexOf(".xml");
         String subFolder;
@@ -39,27 +119,33 @@ public class CrosslinkMining {
         return "pages" + File.separator + subFolder + File.separator + targetId;
 	}
 	
-	private void output() {
+	private void output(String outString) {
 		// TODO Auto-generated method stub
-		
+		System.out.println(outString);
 	}
 	
 	private String getOutputIdFromEnCorpus(String filename) {
-		if (new File(CORPUS_HOME + File.separator + OTHER_LANG + File.separator + filename).exists())
-			output();
-		else
-			getOutputIdFromOtherLang(filename);
+		if (new File(corpusHome + File.separator + otherLang + File.separator + filename).exists())
+			return "";
+
+		return getOutputIdFromOtherLang(filename);
  	}
 
 	private String getOutputIdFromOtherLang(String filename) {
- 			
+		return "";
 	}
 
- 	private void getTopicLinks(String topicPath, CrosslinkTable crosslinkTable) {
+	private void createCrosslinkTable(String crosslinkTablePath) {
+		setCrosslinkTablePath(crosslinkTablePath);
+		enLangCrosslinkTable = String.format("%sen_corpus_%s2%s.txt", crosslinkTablePath + File.separator, sourceLang, targetLang);
+		otherLangCrosslinkTable = String.format("%s%s_corpus_%s2%s.txt", crosslinkTablePath + File.separator, otherLang, sourceLang, targetLang);
+		
+	}
+	
+ 	private void getTopicLinks(String topicPath) {
         int filecount = 0;
       	Stack<File> stack = null;
       	
-
       	stack = WildcardFiles.listFilesInStack(topicPath, true);
       	while (!stack.isEmpty())
         {
@@ -97,7 +183,7 @@ public class CrosslinkMining {
 			 			String targetId = arr[1];
 			 			String pagePath = wikiIdToPath(targetId);
 			 			
-			 			int count  = crosslinkTable.getTargetCount(pagePath);
+			 			int count  = 0; //crosslinkTable.getTargetCount(pagePath);
 			 			if (count > 0) {
 			 				if (count > 1)
 			 					getOutputIdFromEnCorpus(pagePath);
@@ -118,9 +204,7 @@ public class CrosslinkMining {
                     e.printStackTrace();
                 }
             }
-            catch (SAXException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
+            catch (IOException e) {
 				//recordError(inputfile, "IOException");
 				e.printStackTrace();
             } 
@@ -130,66 +214,42 @@ public class CrosslinkMining {
 
 
 	public void findWikiGroundTruth() {
-		if ( TARGET_LANG.equalsIgnoreCase( "en")) 
-		    OTHER_LANG = SOURCE_LANG;
-		else
-			OTHER_LANG=TARGET_LANG;
 
- 		SOURCE_TOPICS_PATH=~/experiments/ntcir-9-clld/topics/training/${SOURCE_LANG}/
- 		TARGET_TOPICS_PATH=~/experiments/ntcir-9-clld/topics/training/${TARGET_LANG}/
+// 		sourceCROSSLINK_MERGED_TABLE=~/experiments/ntcir-9-clld/assessment/wikipedia_groundtruth/link-mining/all/${sourceLang}2${targetLang}_merged.txt
+// 		targetCROSSLINK_MERGED_TABLE=~/experiments/ntcir-9-clld/assessment/wikipedia_groundtruth/link-mining/all/${targetLang}2${sourceLang}_merged.txt
 
+// 		./find_crosslingual_topics.sh $targetTopicPath $sourceTopicPath ~/experiments/ntcir-9-clld/assessment/wikipedia_groundtruth/link-mining/${targetLang}-${sourceLang/${targetLang}2${sourceLang}_table.txt $corpusHome 
 
- 		SOURCE_CROSSLINK_MERGED_TABLE=~/experiments/ntcir-9-clld/assessment/wikipedia_groundtruth/link-mining/all/${SOURCE_LANG}2${TARGET_LANG}_merged.txt
- 		TARGET_CROSSLINK_MERGED_TABLE=~/experiments/ntcir-9-clld/assessment/wikipedia_groundtruth/link-mining/all/${TARGET_LANG}2${SOURCE_LANG}_merged.txt
-
- 		./find_crosslingual_topics.sh $TARGET_TOPICS_PATH $SOURCE_TOPICS_PATH ~/experiments/ntcir-9-clld/assessment/wikipedia_groundtruth/link-mining/${TARGET_LANG}-${SOURCE_LANG/${TARGET_LANG}2${SOURCE_LANG}_table.txt $CORPUS_HOME 
-
- 			TMP_LINKS=/tmp/$0.tmp
-
- 			get_file_path() {
- 			len=${#1}
- 			if [ "$len" -gt "3" ]
- 				then
- 				subdir=${$1: -3}
- 			else
- 				subdir=`printf "%03d" $input`
- 				fi
- 				
- 				#echo $subdir
- 				
- 				filename=$subdir/${input}.xml
- 				
- 				filename="pages/$filename"
- 		}
-
-
-
-// 		get_topic_link $TARGET_TOPICS_PATH $TARGET_CROSSLINK_MERGED_TABLE
-// 		get_topic_link $SOURCE_TOPICS_PATH $SOURCE_CROSSLINK_MERGED_TABLE
+// 		get_topic_link $targetTopicPath $targetCROSSLINK_MERGED_TABLE
+// 		get_topic_link $sourceTopicPath $sourceCROSSLINK_MERGED_TABLE
 //
-// 		#get_zh_topics_links() {
-// 			#	for i in `ls $TARGET_TOPICS_PATH`
-// 			#	do
-// 				#	TOPIC_ID=``
-// 				#	
-// 				#	~/workspace/ant/build/release/link_extract $SOURCE_TOPICS_PATH/$i > $TMP_LINKS
-// 				#	
-// 				#	cat $TMP_LINKS | while read line
-// 				#	
-// 				#	
-// 				#	done
-// 				#
-// 				#}
-//
-// 		\rm -f $TMP_LINKS
 		
+	}
+	public static void usage() {
+		System.out.println("arg[0] source and target language pair, e.g en:zh");
+		System.out.println("arg[1] crosslink table path");
+		System.out.println("arg[2] corpora home");
+		System.exit(-1);
 	}
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
+		if (args.length < 2)
+			usage();
 		// TODO Auto-generated method stub
+		CrosslinkMining mining = new CrosslinkMining();
+		String[] arr = args[0].split(":");
+		if (arr.length != 2)
+			usage();
+		mining.setSourceLang(arr[0]);
+		mining.setTargetLang(arr[1]);
 
+		mining.createCrosslinkTable(args[1]);
+		if (args.length > 2)
+			mining.setCorpusHome(args[2]);
+		
+		mining.findWikiGroundTruth();
 	}
 
 }
