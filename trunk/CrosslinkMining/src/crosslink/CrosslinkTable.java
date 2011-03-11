@@ -24,6 +24,7 @@ import com.spreada.utils.chinese.ZHConverter;
 public class CrosslinkTable {
 	private String tablePath;
 	private String lang;
+	private String sourceLang;
 	private boolean isFromEnglishCorpus;
 	
 	private HashMap<String, CrosslinkTableEntry> table = new HashMap<String, CrosslinkTableEntry>();
@@ -50,11 +51,10 @@ public class CrosslinkTable {
 		this.isFromEnglishCorpus = isFromEnglishCorpus;
 	}
 
-	public CrosslinkTable(String tablePath) {
+	public CrosslinkTable(String tablePath, String sourceLang) {
 		super();
 		this.tablePath = tablePath;
-		
-		read();
+		this.sourceLang = sourceLang;
 	}
 
 	public void read() {
@@ -82,7 +82,7 @@ public class CrosslinkTable {
 	    		String tokens[]=line.split(":");
 	    		
 	//    		if (tokens.length!=2) continue;
-	    		String[] titles = tokens[2].split("|");
+	    		String[] titles = new String(tokens[2].getBytes(), "UTF-8").split("\\|");
 	    		if (titles.length != 2)
 	    			continue;
 	    		String targetTitle = titles[0];
@@ -91,7 +91,12 @@ public class CrosslinkTable {
 	    		String sourceId = tokens[0];
 	    		String targetId = tokens[1];
 	    		
-	    		CrosslinkTableEntry entry = new CrosslinkTableEntry(sourceId, targetId, sourceTitle, targetTitle);
+	    		CrosslinkTableEntry entry = null;
+	    		
+	    		if (!sourceLang.equalsIgnoreCase(lang))
+	    			entry = new CrosslinkTableEntry(sourceId, targetId, sourceTitle, targetTitle);
+	    		else
+	    			entry = new CrosslinkTableEntry(targetId, sourceId, targetTitle, sourceTitle);
 	    		
 	    		table.put(sourceId, entry);
 				

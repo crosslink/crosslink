@@ -109,6 +109,34 @@ public class CrosslinkMining {
 		this.crosslinkTablePath = crosslinkTablePath;
 	}
 	
+	/**
+	 * @return the sourceTopicPath
+	 */
+	public String getSourceTopicPath() {
+		return sourceTopicPath;
+	}
+
+	/**
+	 * @param sourceTopicPath the sourceTopicPath to set
+	 */
+	public void setSourceTopicPath(String sourceTopicPath) {
+		this.sourceTopicPath = sourceTopicPath;
+	}
+
+	/**
+	 * @return the targetTopicPath
+	 */
+	public String getTargetTopicPath() {
+		return targetTopicPath;
+	}
+
+	/**
+	 * @param targetTopicPath the targetTopicPath to set
+	 */
+	public void setTargetTopicPath(String targetTopicPath) {
+		this.targetTopicPath = targetTopicPath;
+	}
+
 	static public String wikiIdToPath(String targetId) {
         int lastPos = targetId.lastIndexOf(".xml");
         String subFolder;
@@ -141,8 +169,13 @@ public class CrosslinkMining {
 
 	private void createCrosslinkTable(String crosslinkTablePath) {
 		setCrosslinkTablePath(crosslinkTablePath);
-		enLangCrosslinkTable = new CrosslinkTable(String.format("%sen_corpus_%s2%s.txt", crosslinkTablePath + File.separator, sourceLang, targetLang));
-		otherLangCrosslinkTable = new CrosslinkTable(String.format("%s%s_corpus_%s2%s.txt", crosslinkTablePath + File.separator, otherLang, sourceLang, targetLang));
+		enLangCrosslinkTable = new CrosslinkTable(String.format("%sen_corpus_%s2en.txt", crosslinkTablePath + File.separator, otherLang), sourceLang);
+		enLangCrosslinkTable.setLang("en");
+		enLangCrosslinkTable.read();
+		
+		otherLangCrosslinkTable = new CrosslinkTable(String.format("%s%s_corpus_en2%s.txt", crosslinkTablePath + File.separator, otherLang, otherLang), sourceLang);
+		otherLangCrosslinkTable.setLang(otherLang);
+		otherLangCrosslinkTable.read();
 	}
 	
  	private void getTopicLinks(String topicPath) {
@@ -228,19 +261,22 @@ public class CrosslinkMining {
 // 		get_topic_link $targetTopicPath $targetCROSSLINK_MERGED_TABLE
 // 		get_topic_link $sourceTopicPath $sourceCROSSLINK_MERGED_TABLE
 //
-		
+		getTopicLinks(sourceTopicPath);
+		getTopicLinks(targetTopicPath);
 	}
 	public static void usage() {
 		System.out.println("arg[0] source and target language pair, e.g en:zh");
 		System.out.println("arg[1] crosslink table path");
-		System.out.println("arg[2] corpora home");
+		System.out.println("arg[2] source topics path");
+		System.out.println("arg[3] target topics path");
+		System.out.println("arg[4] corpora home");
 		System.exit(-1);
 	}
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		if (args.length < 2)
+		if (args.length < 4)
 			usage();
 		// TODO Auto-generated method stub
 		CrosslinkMining mining = new CrosslinkMining();
@@ -251,8 +287,12 @@ public class CrosslinkMining {
 		mining.setTargetLang(arr[1]);
 
 		mining.createCrosslinkTable(args[1]);
-		if (args.length > 2)
-			mining.setCorpusHome(args[2]);
+		
+		mining.setSourceTopicPath(args[2]);
+		mining.setTargetTopicPath(args[3]);
+		
+		if (args.length > 5)
+			mining.setCorpusHome(args[4]);
 		
 		mining.findWikiGroundTruth();
 	}
