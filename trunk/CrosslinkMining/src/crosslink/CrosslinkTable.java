@@ -23,7 +23,7 @@ import com.spreada.utils.chinese.ZHConverter;
 
 public class CrosslinkTable {
 	private String tablePath;
-	
+	private String lang;
 	private boolean isFromEnglishCorpus;
 	
 	private HashMap<String, CrosslinkTableEntry> table = new HashMap<String, CrosslinkTableEntry>();
@@ -33,6 +33,14 @@ public class CrosslinkTable {
 	 */
 	public boolean isFromEnglishCorpus() {
 		return isFromEnglishCorpus;
+	}
+
+	public String getLang() {
+		return lang;
+	}
+
+	public void setLang(String lang) {
+		this.lang = lang;
 	}
 
 	/**
@@ -45,6 +53,8 @@ public class CrosslinkTable {
 	public CrosslinkTable(String tablePath) {
 		super();
 		this.tablePath = tablePath;
+		
+		read();
 	}
 
 	public void read() {
@@ -107,5 +117,10 @@ public class CrosslinkTable {
 	public int getTargetCount(String pagePath) {
 		// TODO Auto-generated method stub
 		return 0;
+	}
+
+	public String getTargetId(String id) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }
