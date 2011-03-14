@@ -47,15 +47,21 @@ public class WildcardFiles implements FilenameFilter, FileFilter
 	   
 	   private static void breakFile(String inputfile)
 	   {
-			wildcard = inputfile;
-			int lastIndex = 0;
-			if ((lastIndex = inputfile.lastIndexOf(File.separator)) > -1) {
-				inputFileDir = inputfile.substring(0, lastIndex);
-				wildcard = inputfile.substring(lastIndex + 1);
-				wildcard.trim();
-				if (wildcard.length() == 0)
-					wildcard = "*";
-			}		   
+			if (new File(inputfile).isDirectory()) {
+				inputFileDir = inputfile;
+				wildcard = "*";		
+			}
+			else {
+				wildcard = inputfile;
+				int lastIndex = 0;
+				if ((lastIndex = inputfile.lastIndexOf(File.separator)) > -1) {
+					inputFileDir = inputfile.substring(0, lastIndex);
+					wildcard = inputfile.substring(lastIndex + 1);
+					wildcard.trim();
+					if (wildcard.length() == 0)
+						wildcard = "*";
+				}
+			}
 	   }
 	   
 //	   private static void listFiles(String inputfile, Stack stack) 

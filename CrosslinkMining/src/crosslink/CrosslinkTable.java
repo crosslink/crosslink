@@ -27,7 +27,8 @@ public class CrosslinkTable {
 	private String sourceLang;
 	private boolean isFromEnglishCorpus;
 	
-	private HashMap<String, CrosslinkTableEntry> table = new HashMap<String, CrosslinkTableEntry>();
+	private HashMap<String, CrosslinkTableEntry> mapForSourceId = new HashMap<String, CrosslinkTableEntry>();
+//	private HashMap<String, CrosslinkTableEntry> mapForTargetId = new HashMap<String, CrosslinkTableEntry>();
 
 	/**
 	 * @return the isFromEnglishCorpus
@@ -85,20 +86,28 @@ public class CrosslinkTable {
 	    		String[] titles = new String(tokens[2].getBytes(), "UTF-8").split("\\|");
 	    		if (titles.length != 2)
 	    			continue;
-	    		String targetTitle = titles[0];
-	    		String sourceTitle = titles[1];
-	    		
-	    		String sourceId = tokens[0];
-	    		String targetId = tokens[1];
+	    		String targetTitle = null;
+	    		String sourceTitle = null; 		
+	    		String sourceId = null;
+	    		String targetId = null;
 	    		
 	    		CrosslinkTableEntry entry = null;
 	    		
-	    		if (!sourceLang.equalsIgnoreCase(lang))
-	    			entry = new CrosslinkTableEntry(sourceId, targetId, sourceTitle, targetTitle);
-	    		else
-	    			entry = new CrosslinkTableEntry(targetId, sourceId, targetTitle, sourceTitle);
-	    		
-	    		table.put(sourceId, entry);
+	    		if (!sourceLang.equalsIgnoreCase(lang)) {
+		    		 targetTitle = titles[1];
+		    		 sourceTitle = titles[0]; 		
+		    		 sourceId = tokens[1];
+		    		 targetId = tokens[0];
+	    		}
+	    		else {
+		    		 targetTitle = titles[0];
+		    		 sourceTitle = titles[1]; 		
+		    		 sourceId = tokens[0];
+		    		 targetId = tokens[1];
+	    		}
+    			entry = new CrosslinkTableEntry(sourceId, targetId, sourceTitle, targetTitle);
+	    		mapForSourceId.put(sourceId, entry);
+//	    		mapForTargetId.put(targetId, entry);
 				
 	//    		if (lang.equals("zh"))
 	//    			articles.get(lang).put(ZHConverter.convert(tokens[0], ZHConverter.SIMPLIFIED), tokens[1]);
@@ -116,16 +125,27 @@ public class CrosslinkTable {
 	}
 	
 	public boolean hasSourceId(String id) {
-		return table.containsKey(id);
+		return mapForSourceId.containsKey(id);
 	}
+	
+//	public boolean hasTargetId(String id) {
+//		return mapForTargetId.containsKey(id);
+//	}
 
 	public int getTargetCount(String pagePath) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
-	public String getTargetId(String id) {
-		// TODO Auto-generated method stub
-		return null;
+	public String getTargetId(String sourceId) {
+		return mapForSourceId.get(sourceId).getTargetId();
 	}
+	
+	public String getSourceTitle(String sourceId) {
+		return mapForSourceId.get(sourceId).getSourceTitle();
+	}
+	
+	public String getTargetTitle(String sourceId) {
+		return mapForSourceId.get(sourceId).getTargetTitle();
+	}	
 }
