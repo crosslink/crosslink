@@ -96,15 +96,19 @@ public class CrosslinkTable {
 	    		if (!sourceLang.equalsIgnoreCase(lang)) {
 		    		 targetTitle = titles[1];
 		    		 sourceTitle = titles[0]; 		
-		    		 sourceId = tokens[1];
-		    		 targetId = tokens[0];
+		    		 sourceId = tokens[0];
+		    		 targetId = tokens[1];
 	    		}
 	    		else {
 		    		 targetTitle = titles[0];
 		    		 sourceTitle = titles[1]; 		
-		    		 sourceId = tokens[0];
-		    		 targetId = tokens[1];
+		    		 sourceId = tokens[1];
+		    		 targetId = tokens[0];
 	    		}
+	    		
+	    		if (Integer.parseInt(sourceId) == 0 || Integer.parseInt(targetId) == 0)
+	    			continue;
+	    		
     			entry = new CrosslinkTableEntry(sourceId, targetId, sourceTitle, targetTitle);
 	    		mapForSourceId.put(sourceId, entry);
 //	    		mapForTargetId.put(targetId, entry);
