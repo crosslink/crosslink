@@ -30,8 +30,8 @@ public class CrosslinkMining {
 //			filename=
 	
 	private String crosslinkTablePath;
-	private CrosslinkTable enLangCrosslinkTable; 
-	private CrosslinkTable otherLangCrosslinkTable;
+	private CrosslinkTable enCorpusCrosslinkTable; 
+	private CrosslinkTable otherCorpusCrosslinkTable;
 
 
 	/**
@@ -138,51 +138,54 @@ public class CrosslinkMining {
 	}
 
 	static public String wikiIdToPath(String targetId) {
-        int lastPos = targetId.lastIndexOf(".xml");
+//        int lastPos = targetId.lastIndexOf(".xml");
         String subFolder;
-        if (lastPos < 3)
-        	subFolder = String.format("%03d", Integer.parseInt(targetId.substring(0, lastPos)));
+        if (targetId.length() < 3)
+        	subFolder = String.format("%03d", Integer.parseInt(targetId));
         else
-        	subFolder = targetId.substring(targetId.length() - 7, lastPos);
+        	subFolder = targetId.substring(targetId.length() - 3); //(targetId.length() - 7);
         return "pages" + File.separator + subFolder + File.separator + targetId;
 	}
 	
 	public boolean wikiPageExists(String id, String lang) {
-		return new File(corpusHome + File.separator + otherLang + File.separator + wikiIdToPath(id)).exists();
+		String filename = corpusHome + File.separator + lang + File.separator + wikiIdToPath(id) + ".xml";
+		return new File(filename).exists();
 	}
 	
 	private void output(CrosslinkTable table, String id) {
-		System.out.println(String.format("%s:%s", id, table.getTargetId(id)));
+		System.out.println(String.format("%s:%s:(%s, %s)", id, table.getTargetId(id), table.getSourceTitle(id), table.getTargetTitle(id)));
 	}
 	
 	private void getOutputIdFromEnCorpus(String id) {
-		if (wikiPageExists(id, "en"))
-			output(enLangCrosslinkTable, id);
+		String targetId = enCorpusCrosslinkTable.getTargetId(id);
+		if (wikiPageExists(targetId, otherLang))
+			output(enCorpusCrosslinkTable, id);
 
 		getOutputIdFromOtherLang(id);
  	}
 
 	private void getOutputIdFromOtherLang(String id) {
-		if (wikiPageExists(id, otherLang))
-			output(otherLangCrosslinkTable, id);
+		String targetId = otherCorpusCrosslinkTable.getTargetId(id);
+		if (wikiPageExists(targetId, otherLang))
+			output(otherCorpusCrosslinkTable, id);
 	}
 
 	private void createCrosslinkTable(String crosslinkTablePath) {
 		setCrosslinkTablePath(crosslinkTablePath);
-		enLangCrosslinkTable = new CrosslinkTable(String.format("%sen_corpus_%s2en.txt", crosslinkTablePath + File.separator, otherLang), sourceLang);
-		enLangCrosslinkTable.setLang("en");
-		enLangCrosslinkTable.read();
+		enCorpusCrosslinkTable = new CrosslinkTable(String.format("%sen_corpus_%s2en.txt", crosslinkTablePath + File.separator, otherLang), sourceLang);
+		enCorpusCrosslinkTable.setLang("en");
+		enCorpusCrosslinkTable.read();
 		
-		otherLangCrosslinkTable = new CrosslinkTable(String.format("%s%s_corpus_en2%s.txt", crosslinkTablePath + File.separator, otherLang, otherLang), sourceLang);
-		otherLangCrosslinkTable.setLang(otherLang);
-		otherLangCrosslinkTable.read();
+		otherCorpusCrosslinkTable = new CrosslinkTable(String.format("%s%s_corpus_en2%s.txt", crosslinkTablePath + File.separator, otherLang, otherLang), sourceLang);
+		otherCorpusCrosslinkTable.setLang(otherLang);
+		otherCorpusCrosslinkTable.read();
 	}
 	
  	private void getTopicLinks(String topicPath) {
         int filecount = 0;
       	Stack<File> stack = null;
       	
-      	stack = WildcardFiles.listFilesInStack(topicPath, true);
+      	stack = WildcardFiles.listFilesInStack(topicPath);
       	while (!stack.isEmpty())
         {
 //          		good = true;
@@ -221,10 +224,15 @@ public class CrosslinkMining {
 
 			 			
 //			 			int count  = 0; //crosslinkTable.getTargetCount(pagePath);
-			 			if (enLangCrosslinkTable.hasSourceId(sourceId)) {
+			 			String id;
+			 			if (sourceLang.equalsIgnoreCase("en"))
+			 				id = targetId;
+			 			else
+			 				id = sourceId;
+			 			if (enCorpusCrosslinkTable.hasSourceId(id)) {
 
-//			 				if (otherLangCrosslinkTable.hasSourceId(sourceId))
-			 					getOutputIdFromEnCorpus(sourceId);
+//			 				if (otherCorpusCrosslinkTable.hasSourceId(sourceId))
+			 					getOutputIdFromEnCorpus(id);
 //			 				else
 //			 					getOutputIdFromOtherLang(pagePath);
 			 			}
