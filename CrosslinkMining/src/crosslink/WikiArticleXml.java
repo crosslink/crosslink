@@ -8,7 +8,7 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-public class TopicXml {
+public class WikiArticleXml {
 
 	private String xmlFile;
 
@@ -29,7 +29,7 @@ public class TopicXml {
 		return id;
 	}
 
-	public TopicXml(String xmlFile) {
+	public WikiArticleXml(String xmlFile) {
 		super();
 		this.xmlFile = xmlFile;
 		

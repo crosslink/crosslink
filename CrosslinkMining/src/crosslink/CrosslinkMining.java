@@ -4,7 +4,10 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
+import java.util.Set;
 import java.util.Stack;
 
 import org.w3c.dom.Document;
@@ -34,6 +37,7 @@ public class CrosslinkMining {
 	private CrosslinkTable otherCorpusCrosslinkTable;
 
 	private ResultSetXml resultSetOut = new ResultSetXml();
+	private ArrayList<CrosslinkTopic> topics = new ArrayList<CrosslinkTopic>();
 
 	/**
 	 * @return the sourceLang
@@ -153,26 +157,27 @@ public class CrosslinkMining {
 		return new File(filename).exists();
 	}
 	
-	private void output(CrosslinkTable table, String id) {
-		resultSetOut.outputLink(table.getTargetId(id));
-		System.err.println(String.format("%s:%s:(%s, %s)", id, table.getTargetId(id), table.getSourceTitle(id), table.getTargetTitle(id)));
+	private void output(CrosslinkTopic topic, CrosslinkTable table, String id) {
+//		resultSetOut.outputLink(table.getTargetId(id));
+		topic.addLink(id);
+//		System.err.println(String.format("%s:%s:(%s, %s)", id, table.getTargetId(id), table.getSourceTitle(id), table.getTargetTitle(id)));
 	}
 	
-	private void getOutputIdFromEnCorpus(String id) {
+	private String getOutputIdFromEnCorpus(String id) {
 		String targetId = enCorpusCrosslinkTable.getTargetId(id);
 		if (wikiPageExists(targetId, otherLang)) {
-			output(enCorpusCrosslinkTable, id);
+			output(topic, enCorpusCrosslinkTable, id);
 			return;
 		}
 
-		getOutputIdFromOtherLang(id);
+		getOutputIdFromOtherLang(topic, id);
  	}
 
-	private void getOutputIdFromOtherLang(String id) {
+	private String getOutputIdFromOtherLang(String id) {
 		String targetId = otherCorpusCrosslinkTable.getTargetId(id);
 		assert(targetId != null);
 		if (wikiPageExists(targetId, otherLang))
-			output(otherCorpusCrosslinkTable, id);
+			output(topic, otherCorpusCrosslinkTable, id);
 	}
 
 	private void createCrosslinkTable(String crosslinkTablePath) {
@@ -184,6 +189,68 @@ public class CrosslinkMining {
 		otherCorpusCrosslinkTable = new CrosslinkTable(String.format("%s%s_corpus_en2%s.txt", crosslinkTablePath + File.separator, otherLang, otherLang), sourceLang);
 		otherCorpusCrosslinkTable.setLang(otherLang);
 		otherCorpusCrosslinkTable.read();
+	}
+	
+	private ArrayList<String> extractLinksFromTopics(String inputfile) {
+		ArrayList<String> links = new ArrayList<String>();
+        String osName = System.getProperty("os.name");
+		//      String Command = Command2;
+		String Command = "/usr/local/bin/link_extract " + inputfile;
+		Process runCommand;
+		//if (osName.equalsIgnoreCase("Linux")) {
+		//  Command = Command2;
+		//runCommand = Runtime.getRuntime().exec(Command, null, fileHandlder);
+		//}
+		//else if (osName.equalsIgnoreCase("Solaris") || osName.equalsIgnoreCase("SunOS")) {
+		//  runCommand = Runtime.getRuntime().exec(new String[] {Command10, Command11, outputFile}, null, fileHandlder); //Command = Command10 + Command11;
+		//} else
+	    try {
+			runCommand = Runtime.getRuntime().exec(Command);
+
+	
+			//runCommand = Runtime.getRuntime().exec(new String[] {"bash", "-c \"cd /home/tangl3/corpus/wikipedia/wuuwiki/xml/wuu/; tar cjvf /home/tangl3/corpus/wikipedia/wuuwiki/xml/wuuwiki-20100207-pages-articles.xml.bz2 *\""}); // ; \\rm -rf /home/tangl3/corpus/wikipedia/wuuwiki/xml//wuu/*"});
+			//runCommand = Runtime.getRuntime().exec(Command, null, fileHandlder);
+			
+			BufferedReader Resultset = new BufferedReader(
+			        new InputStreamReader (
+			                runCommand.getInputStream(), "UTF-8"));
+			
+			String line;
+			while ((line = Resultset.readLine()) != null) {
+	 			String[] arr = line.split(":");
+	 			String sourceId = arr[0];
+	 			String targetId = arr[1];
+
+				links.add(targetId);
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return links;
+	}
+	
+	private String findCounterTopicId(String id) {
+		return id;
+		
+	}
+	
+	private void getIndirectLinks(ArrayList<String> links, CrosslinkTopic topic) {
+    	for (String id : links) {
+    		String targetId = null;
+			if (enCorpusCrosslinkTable.hasSourceId(id)) 
+				targetId = getOutputIdFromEnCorpus(id);
+			else if ((otherCorpusCrosslinkTable.hasSourceId(id))) 
+				targetId = getOutputIdFromOtherLang(id);
+			
+			if (targetId != null)
+				topic.addLink(targetId);
+        }		
+	}
+	
+	private void getDirectLinks(ArrayList<String> links, CrosslinkTopic topic) {
+    	for (String link : links)
+    		topic.getCounterPart().addLink(link);
 	}
 	
  	private void getTopicLinks(String topicPath, String lang) {
@@ -198,79 +265,28 @@ public class CrosslinkMining {
             ++filecount;
         	try {
 	        	String inputfile = onefile.getCanonicalPath();
-	        	TopicXml topic = new TopicXml(inputfile);
-	        	resultSetOut.outputTopicStart(topic.getTitle(), topic.getId());
+	        	CrosslinkTopic topic = new CrosslinkTopic(inputfile);
+	        	topics.add(topic);
         	
-                String osName = System.getProperty("os.name");
-//                    String Command = Command2;
-                String Command = "/usr/local/bin/link_extract " + inputfile;
-                Process runCommand;
-//                    if (osName.equalsIgnoreCase("Linux")) {
-//                        Command = Command2;
-//                        runCommand = Runtime.getRuntime().exec(Command, null, fileHandlder);
-//                    }
-//                    else if (osName.equalsIgnoreCase("Solaris") || osName.equalsIgnoreCase("SunOS")) {
-//                        runCommand = Runtime.getRuntime().exec(new String[] {Command10, Command11, outputFile}, null, fileHandlder); //Command = Command10 + Command11;
-//                    } else
-                    runCommand = Runtime.getRuntime().exec(Command);
-
-                //runCommand = Runtime.getRuntime().exec(new String[] {"bash", "-c \"cd /home/tangl3/corpus/wikipedia/wuuwiki/xml/wuu/; tar cjvf /home/tangl3/corpus/wikipedia/wuuwiki/xml/wuuwiki-20100207-pages-articles.xml.bz2 *\""}); // ; \\rm -rf /home/tangl3/corpus/wikipedia/wuuwiki/xml//wuu/*"});
-                //runCommand = Runtime.getRuntime().exec(Command, null, fileHandlder);
-
-                BufferedReader Resultset = new BufferedReader(
-                        new InputStreamReader (
-                                runCommand.getInputStream(), "UTF-8"));
-
-                String line;
-                while ((line = Resultset.readLine()) != null) {
-//                        System.out.println(line);
-//					 	target_id=`echo $line | cut -f 2 -d :`
-		 			String[] arr = line.split(":");
-		 			String sourceId = arr[0];
-		 			String targetId = arr[1];
-
-		 			
-//			 			int count  = 0; //crosslinkTable.getTargetCount(pagePath);
-		 			String id = targetId;
-//		 			if (lang.equalsIgnoreCase("en"))
-//		 				id = targetId;
-//		 			else
-//		 				id = sourceId;
-		 			if (enCorpusCrosslinkTable.hasSourceId(id)) {
-
-//			 				if (otherCorpusCrosslinkTable.hasSourceId(sourceId))
-		 					getOutputIdFromEnCorpus(id);
-//			 				else
-//			 					getOutputIdFromOtherLang(pagePath);
-		 			}
-		 			else if ((otherCorpusCrosslinkTable.hasSourceId(id))) {
-		 				getOutputIdFromOtherLang(id);
-		 			}
-		 				
-                }
-
-//                    Resultset = new BufferedReader(
-//                            new InputStreamReader (
-//                                    runCommand.getErrorStream()));
-//                    while ((line = Resultset.readLine()) != null)
-//                        System.out.println(line);
-
-            }
-            catch (IOException e) {
-				//recordError(inputfile, "IOException");
-				e.printStackTrace();
-            } 
+	        	ArrayList<String> links = extractLinksFromTopics(inputfile);
+	        	getIndirectLinks(links, topic);
+	        	
+	        	String counterPartTopicFile = findCounterTopicId(topic.getId());
+	        	ArrayList<String> directLinks = extractLinksFromTopics(inputfile);
+	        	getDirectLinks(directLinks, topic);
+        	}
             catch (Exception e) {
 				//recordError(inputfile, "IOException");
 				e.printStackTrace();
             } 
             finally {
-            	resultSetOut.outputTopicEnd();
+
             }
         }
  
  	}
 
+ 	
 
 	public void findWikiGroundTruth() {
 
@@ -282,13 +298,36 @@ public class CrosslinkMining {
 // 		get_topic_link $targetTopicPath $targetCROSSLINK_MERGED_TABLE
 // 		get_topic_link $sourceTopicPath $sourceCROSSLINK_MERGED_TABLE
 //
-		resultSetOut.open();
+
 		getTopicLinks(sourceTopicPath, sourceLang);
-		getTopicLinks(targetTopicPath, targetLang);
-		resultSetOut.close();
+//		getTopicLinks(targetTopicPath, targetLang, true);
+		createResultSet();
 		
 		System.out.println(resultSetOut.toString());
 	}
+	
+	public void createResultSet() {
+		resultSetOut.open();
+		for (CrosslinkTopic topic : topics) {
+			resultSetOut.outputTopicStart(topic.getTitle(), topic.getId());
+			Set<String> indirectLinks = topic.getGroundTruthIndirectLinks();
+			Iterator it = indirectLinks.iterator();
+			while (it.hasNext()) {
+			    // Get element
+				resultSetOut.outputLink((String) it.next());
+			}
+			Set<String> directLinks = topic.getGroundTruthDirectLinks();
+			it = directLinks.iterator();
+			while (it.hasNext()) {
+			    String id = (String) it.next();
+			    if (!indirectLinks.contains(id))
+			    	resultSetOut.outputLink(id);
+			}		
+        	resultSetOut.outputTopicEnd();	
+		}
+		resultSetOut.close();
+	}
+	
 	public static void usage() {
 		System.out.println("arg[0] source and target language pair, e.g en:zh");
 		System.out.println("arg[1] crosslink table path");
@@ -297,6 +336,7 @@ public class CrosslinkMining {
 		System.out.println("arg[4] corpora home");
 		System.exit(-1);
 	}
+	
 	/**
 	 * @param args
 	 */
