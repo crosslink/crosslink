@@ -292,15 +292,6 @@ public class CrosslinkMining {
 
 	public void findWikiGroundTruth() {
 
-// 		sourceCROSSLINK_MERGED_TABLE=~/experiments/ntcir-9-clld/assessment/wikipedia_groundtruth/link-mining/all/${sourceLang}2${targetLang}_merged.txt
-// 		targetCROSSLINK_MERGED_TABLE=~/experiments/ntcir-9-clld/assessment/wikipedia_groundtruth/link-mining/all/${targetLang}2${sourceLang}_merged.txt
-
-// 		./find_crosslingual_topics.sh $targetTopicPath $sourceTopicPath ~/experiments/ntcir-9-clld/assessment/wikipedia_groundtruth/link-mining/${targetLang}-${sourceLang/${targetLang}2${sourceLang}_table.txt $corpusHome 
-
-// 		get_topic_link $targetTopicPath $targetCROSSLINK_MERGED_TABLE
-// 		get_topic_link $sourceTopicPath $sourceCROSSLINK_MERGED_TABLE
-//
-
 		getTopicLinks(sourceTopicPath, sourceLang);
 //		getTopicLinks(targetTopicPath, targetLang, true);
 		createResultSet();
@@ -318,7 +309,7 @@ public class CrosslinkMining {
 			    // Get element
 				resultSetOut.outputLink((String) it.next());
 			}
-			Set<String> directLinks = topic.getLinks();
+			Set<String> directLinks = topic.getCounterPart().getLinks();
 			it = directLinks.iterator();
 			while (it.hasNext()) {
 			    String id = (String) it.next();
