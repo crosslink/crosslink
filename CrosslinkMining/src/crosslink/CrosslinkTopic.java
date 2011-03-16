@@ -38,7 +38,7 @@ public class CrosslinkTopic extends WikiArticleXml {
 	/**
 	 * @return the links
 	 */
-	public Set<String> getGroundTruthIndirectLinks() {
+	public Set<String> getLinks() {
 		return links;
 	}
 	
