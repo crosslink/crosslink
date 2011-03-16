@@ -166,18 +166,20 @@ public class CrosslinkMining {
 	private String getOutputIdFromEnCorpus(String id) {
 		String targetId = enCorpusCrosslinkTable.getTargetId(id);
 		if (wikiPageExists(targetId, otherLang)) {
-			output(topic, enCorpusCrosslinkTable, id);
-			return;
+//			output(topic, enCorpusCrosslinkTable, id);
+			return targetId;
 		}
 
-		getOutputIdFromOtherLang(topic, id);
+		return getOutputIdFromOtherLang(id);
  	}
 
 	private String getOutputIdFromOtherLang(String id) {
 		String targetId = otherCorpusCrosslinkTable.getTargetId(id);
-		assert(targetId != null);
+//		assert(targetId != null);
 		if (wikiPageExists(targetId, otherLang))
-			output(topic, otherCorpusCrosslinkTable, id);
+			return targetId;
+//			output(topic, otherCorpusCrosslinkTable, id);
+		return null;	
 	}
 
 	private void createCrosslinkTable(String crosslinkTablePath) {
@@ -310,13 +312,13 @@ public class CrosslinkMining {
 		resultSetOut.open();
 		for (CrosslinkTopic topic : topics) {
 			resultSetOut.outputTopicStart(topic.getTitle(), topic.getId());
-			Set<String> indirectLinks = topic.getGroundTruthIndirectLinks();
+			Set<String> indirectLinks = topic.getLinks();
 			Iterator it = indirectLinks.iterator();
 			while (it.hasNext()) {
 			    // Get element
 				resultSetOut.outputLink((String) it.next());
 			}
-			Set<String> directLinks = topic.getGroundTruthDirectLinks();
+			Set<String> directLinks = topic.getLinks();
 			it = directLinks.iterator();
 			while (it.hasNext()) {
 			    String id = (String) it.next();
