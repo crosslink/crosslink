@@ -34,6 +34,10 @@ public class CrosslinkTopic extends WikiArticleXml {
 	public CrosslinkTopic getCounterPart() {
 		return counterPart;
 	}
+	
+	public void setCounterTopic(CrosslinkTopic topic) {
+		counterPart = topic;
+	}
 
 	/**
 	 * @return the links
