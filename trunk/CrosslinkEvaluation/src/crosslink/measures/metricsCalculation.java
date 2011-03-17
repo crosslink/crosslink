@@ -190,26 +190,26 @@ public final class metricsCalculation {
                         }
                         resultTable.put(topicID + "_" + metricsCalculation.outgoingTag, outLinks);
                     }
-                    if (lrs.getLtwTopic().get(i).getIncomingLinks().getInLink().isEmpty()) {
-                        String[] inLinks = {""};
-                        resultTable.put(topicID + "_" + metricsCalculation.incomingTag, inLinks);
-                    } else {
-                        Vector inLinksV = new Vector();
-                        for (int k = 0; k < lrs.getLtwTopic().get(i).getIncomingLinks().getInLink().size(); k++) {
-                            String inLinkStr = lrs.getLtwTopic().get(i).getIncomingLinks().getInLink().get(k).getValue().toString().trim();
-                            if (!inLinksV.contains(inLinkStr)) {
-                                inLinksV.add(inLinkStr);
-                            }
-                        }
-                        String[] inLinks = new String[inLinksV.size()];
-                        Enumeration iEnu = inLinksV.elements();
-                        while (iEnu.hasMoreElements()) {
-                            Object obj = iEnu.nextElement();
-                            inLinks[inCount] = obj.toString().trim();
-                            inCount++;
-                        }
-                        resultTable.put(topicID + "_" + metricsCalculation.incomingTag, inLinks);
-                    }
+//                    if (lrs.getLtwTopic().get(i).getIncomingLinks().getInLink().isEmpty()) {
+//                        String[] inLinks = {""};
+//                        resultTable.put(topicID + "_" + metricsCalculation.incomingTag, inLinks);
+//                    } else {
+//                        Vector inLinksV = new Vector();
+//                        for (int k = 0; k < lrs.getLtwTopic().get(i).getIncomingLinks().getInLink().size(); k++) {
+//                            String inLinkStr = lrs.getLtwTopic().get(i).getIncomingLinks().getInLink().get(k).getValue().toString().trim();
+//                            if (!inLinksV.contains(inLinkStr)) {
+//                                inLinksV.add(inLinkStr);
+//                            }
+//                        }
+//                        String[] inLinks = new String[inLinksV.size()];
+//                        Enumeration iEnu = inLinksV.elements();
+//                        while (iEnu.hasMoreElements()) {
+//                            Object obj = iEnu.nextElement();
+//                            inLinks[inCount] = obj.toString().trim();
+//                            inCount++;
+//                        }
+//                        resultTable.put(topicID + "_" + metricsCalculation.incomingTag, inLinks);
+//                    }
                 }
             }
 

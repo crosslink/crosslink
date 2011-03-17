@@ -395,8 +395,11 @@ public final class fileToBepMeasures {
             runStatic = is.getRunId();
             for (int i = 0; i < is.getTopic().size(); i++) {
 
-                int endP = is.getTopic().get(i).getFile().toLowerCase().indexOf(".xml");
-                String topicID = is.getTopic().get(i).getFile().substring(0, endP);
+            	String fileId = is.getTopic().get(i).getFile().toLowerCase();
+                int endP = fileId.length();
+                if (fileId.indexOf(".xml") > 0)
+                	endP = fileId.toLowerCase().indexOf(".xml");
+                String topicID = fileId.substring(0, endP);
                 // -------------------------------------------------------------
                 // populate Outgoing Link Data from the submission Run
                 String[] outLinks = null;
@@ -503,8 +506,11 @@ public final class fileToBepMeasures {
             // Loop Different Topics
             for (int i = 0; i < is.getTopic().size(); i++) {
 
-                int endP = is.getTopic().get(i).getFile().toLowerCase().indexOf(".xml");
-                String topicID = is.getTopic().get(i).getFile().substring(0, endP);
+            	String fileId = is.getTopic().get(i).getFile().toLowerCase();
+                int endP = fileId.length();
+                if (fileId.indexOf(".xml") > 0)
+                	endP = fileId.toLowerCase().indexOf(".xml");
+                String topicID = fileId.substring(0, endP);
                 // -------------------------------------------------------------
                 // Inside Outgoing Links
                 String[] outLinks = null;
@@ -556,7 +562,7 @@ public final class fileToBepMeasures {
                             if (!toFile.equals("")) {
                                 int endop = toFile.toLowerCase().indexOf(".xml");
                                 if (endop != -1) {
-                                    toFileID = toFile.substring(0, endop);
+                                    toFile = toFile.substring(0, endop);
                                 }
                             }
                             if (linkTo.get(k).getBep_offset() != null) {
@@ -568,8 +574,9 @@ public final class fileToBepMeasures {
                             // to eliminate duplicate Anchor-BEP links
                             // aOffset_aLength_bFileID_bBep
                             // 99_13_1234_58
-                            if (!outF2GroupBepV.contains(aOffset + "_" + aLength + "_" + toFileID + "_" + toBep)) {
-                                outF2GroupBepV.add(aOffset + "_" + aLength + "_" + toFileID + "_" + toBep);
+                            String value = aOffset + "_" + aLength + "_" + toFile + "_" + toBep;
+                            if (!outF2GroupBepV.contains(value)) {
+                                outF2GroupBepV.add(value);
                             }
                         }
                         // ---------------------------------------------------------
@@ -733,7 +740,9 @@ public final class fileToBepMeasures {
                         String rsAnchorOffset = rsSet[0].trim();
                         String rsAnchorLength = rsSet[1].trim();
                         String rsbFileID = rsSet[2].trim();
-                        int rsbBEP = Integer.valueOf(rsSet[3].trim());
+                        int rsbBEP = 0;
+                        if (rsSet.length > 3)
+                        	rsbBEP = Integer.valueOf(rsSet[3].trim());
                         if (!aaptV.contains(rsAnchorOffset + "_" + rsAnchorLength)) {
                             aaptV.add(rsAnchorOffset + "_" + rsAnchorLength);
                         }
