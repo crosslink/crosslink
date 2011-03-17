@@ -358,26 +358,26 @@ public final class plotsCalculation {
                         }
                         resultTable.put(topicID + "_" + plotsCalculation.outgoingTag, outLinks);
                     }
-                    if (lrs.getLtwTopic().get(i).getIncomingLinks().getInLink().isEmpty()) {
-                        String[] inLinks = {""};
-                        resultTable.put(topicID + "_" + plotsCalculation.incomingTag, inLinks);
-                    } else {
-                        Vector inLinksV = new Vector();
-                        for (int k = 0; k < lrs.getLtwTopic().get(i).getIncomingLinks().getInLink().size(); k++) {
-                            String inLinkStr = lrs.getLtwTopic().get(i).getIncomingLinks().getInLink().get(k).getValue().toString().trim();
-                            if (!inLinksV.contains(inLinkStr)) {
-                                inLinksV.add(inLinkStr);
-                            }
-                        }
-                        String[] inLinks = new String[inLinksV.size()];
-                        Enumeration iEnu = inLinksV.elements();
-                        while (iEnu.hasMoreElements()) {
-                            Object obj = iEnu.nextElement();
-                            inLinks[inCount] = obj.toString().trim();
-                            inCount++;
-                        }
-                        resultTable.put(topicID + "_" + plotsCalculation.incomingTag, inLinks);
-                    }
+//                    if (lrs.getLtwTopic().get(i).getIncomingLinks().getInLink().isEmpty()) {
+//                        String[] inLinks = {""};
+//                        resultTable.put(topicID + "_" + plotsCalculation.incomingTag, inLinks);
+//                    } else {
+//                        Vector inLinksV = new Vector();
+//                        for (int k = 0; k < lrs.getLtwTopic().get(i).getIncomingLinks().getInLink().size(); k++) {
+//                            String inLinkStr = lrs.getLtwTopic().get(i).getIncomingLinks().getInLink().get(k).getValue().toString().trim();
+//                            if (!inLinksV.contains(inLinkStr)) {
+//                                inLinksV.add(inLinkStr);
+//                            }
+//                        }
+//                        String[] inLinks = new String[inLinksV.size()];
+//                        Enumeration iEnu = inLinksV.elements();
+//                        while (iEnu.hasMoreElements()) {
+//                            Object obj = iEnu.nextElement();
+//                            inLinks[inCount] = obj.toString().trim();
+//                            inCount++;
+//                        }
+//                        resultTable.put(topicID + "_" + plotsCalculation.incomingTag, inLinks);
+//                    }
                 }
             }
 
@@ -398,8 +398,11 @@ public final class plotsCalculation {
             plotStatic = pis.getRunId();
             for (int i = 0; i < pis.getTopic().size(); i++) {
 
-                int endP = pis.getTopic().get(i).getFile().toLowerCase().indexOf(".xml");
-                String topicID = pis.getTopic().get(i).getFile().substring(0, endP);
+            	String fileId = pis.getTopic().get(i).getFile();
+                int endP = fileId.length();
+                if (fileId.indexOf(".xml") > 0)
+                	endP = fileId.toLowerCase().indexOf(".xml");
+                String topicID = fileId.substring(0, endP);
 
                 String[] outLinks = new String[pis.getTopic().get(i).getOutgoing().getAnchor().size()];
                 if (!pis.getTopic().get(i).getOutgoing().getAnchor().isEmpty()) {
