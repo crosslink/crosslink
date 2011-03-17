@@ -232,9 +232,21 @@ public class CrosslinkMining {
 		return links;
 	}
 	
-	private String findCounterTopicId(String id) {
-		return id;
+	private String findCounterPartTopic(CrosslinkTopic topic) throws Exception {
+		String topicId = null;
+		String id = topic.getId();
+		if (enCorpusCrosslinkTable.hasSourceId(id)) {
+			topicId = enCorpusCrosslinkTable.getTargetId(id);
+			if (!wikiPageExists(topicId, targetLang))
+				topicId = null;
+		}
+		if (topicId == null && otherCorpusCrosslinkTable.hasSourceId(id))
+			topicId = otherCorpusCrosslinkTable.getTargetId(id);
+		if (topicId == null)
+			throw new Exception("No counterpart find for " + topic.getTitle() + " : " + id);
 		
+		
+		return targetTopicPath + File.separator + topicId + ".xml";
 	}
 	
 	private void getIndirectLinks(ArrayList<String> links, CrosslinkTopic topic) {
@@ -252,7 +264,7 @@ public class CrosslinkMining {
 	
 	private void getDirectLinks(ArrayList<String> links, CrosslinkTopic topic) {
     	for (String link : links)
-    		topic.getCounterPart().addLink(link);
+    		topic.addLink(link);
 	}
 	
  	private void getTopicLinks(String topicPath, String lang) {
@@ -273,9 +285,10 @@ public class CrosslinkMining {
 	        	ArrayList<String> links = extractLinksFromTopics(inputfile);
 	        	getIndirectLinks(links, topic);
 	        	
-	        	String counterPartTopicFile = findCounterTopicId(topic.getId());
-	        	ArrayList<String> directLinks = extractLinksFromTopics(inputfile);
-	        	getDirectLinks(directLinks, topic);
+	        	String counterPartTopicFile = findCounterPartTopic(topic);
+	        	topic.setCounterTopic(new CrosslinkTopic(counterPartTopicFile));
+	        	ArrayList<String> directLinks = extractLinksFromTopics(counterPartTopicFile);
+	        	getDirectLinks(directLinks, topic.getCounterPart());
         	}
             catch (Exception e) {
 				//recordError(inputfile, "IOException");

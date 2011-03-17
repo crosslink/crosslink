@@ -7,8 +7,8 @@ public class ResultSetXml {
 	
 	public static final String TOPIC_START = "\t<ltw_Topic name=\"%s\" id=\"%s\"> \n" + 
 											"\t\t<outgoingLinks>\n";
-	public static final String TOPIC_END = "\t</ltw_Topic> \n" + 
-											"\t\t</outgoingLinks>\n";
+	public static final String TOPIC_END =	"\t\t</outgoingLinks>\n" + 
+											"\t</ltw_Topic>\n";
 	public static final String LINK = "\t\t\t<outLink>%s</outLink>\n";
 	public static final String LINK2 = "\t\t\t<outLink aname=\"\" aoffset=\"%s\" alength=\"%d\" boffset=\"%d\">%s</outLink>\n";
 	
