@@ -411,7 +411,7 @@ public final class plotsCalculation {
                     for (int j = 0; j < pis.getTopic().get(i).getOutgoing().getAnchor().size(); j++) {
 
                         String toFile = "";
-                        String toFileID = "";
+//                        String toFileID = "";
                         String toBep = "";
                         List<crosslink.rungenerator.ToFileType> linkTo = pis.getTopic().get(i).getOutgoing().getAnchor().get(j).getTofile();
                         for (int k = 0; k < linkTo.size(); k++) {
@@ -419,11 +419,11 @@ public final class plotsCalculation {
                             if (!toFile.equals("")) {
                                 int endop = toFile.toLowerCase().indexOf(".xml");
                                 if (endop != -1) {
-                                    toFileID = toFile.substring(0, endop);
+                                    toFile = toFile.substring(0, endop);
                                 }
                             }
-                            if (!outF2FV.contains(toFileID)) {
-                                outF2FV.add(toFileID);
+                            if (!outF2FV.contains(toFile)) {
+                                outF2FV.add(toFile);
                             }
                         }
                     }
