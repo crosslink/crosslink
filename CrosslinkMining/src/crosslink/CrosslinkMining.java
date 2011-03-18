@@ -157,16 +157,16 @@ public class CrosslinkMining {
 		return new File(filename).exists();
 	}
 	
-	private void output(CrosslinkTopic topic, CrosslinkTable table, String id) {
+	private void output(CrosslinkTable table, String id) {
 //		resultSetOut.outputLink(table.getTargetId(id));
-		topic.addLink(id);
-//		System.err.println(String.format("%s:%s:(%s, %s)", id, table.getTargetId(id), table.getSourceTitle(id), table.getTargetTitle(id)));
+//		topic.addLink(id);
+		System.err.println(String.format("%s:%s:(%s, %s)", id, table.getTargetId(id), table.getSourceTitle(id), table.getTargetTitle(id)));
 	}
 	
 	private String getOutputIdFromEnCorpus(String id) {
 		String targetId = enCorpusCrosslinkTable.getTargetId(id);
 		if (wikiPageExists(targetId, otherLang)) {
-//			output(topic, enCorpusCrosslinkTable, id);
+			output(enCorpusCrosslinkTable, id);
 			return targetId;
 		}
 
@@ -176,9 +176,10 @@ public class CrosslinkMining {
 	private String getOutputIdFromOtherLang(String id) {
 		String targetId = otherCorpusCrosslinkTable.getTargetId(id);
 //		assert(targetId != null);
-		if (wikiPageExists(targetId, otherLang))
+		if (wikiPageExists(targetId, otherLang)) {
+			output(otherCorpusCrosslinkTable, id);
 			return targetId;
-//			output(topic, otherCorpusCrosslinkTable, id);
+		}
 		return null;	
 	}
 
@@ -260,11 +261,13 @@ public class CrosslinkMining {
 			if (targetId != null)
 				topic.addLink(targetId);
         }		
+    	System.err.println(String.format("Found %d indirect links", topic.getLinks().size()));
 	}
 	
 	private void getDirectLinks(ArrayList<String> links, CrosslinkTopic topic) {
     	for (String link : links)
     		topic.addLink(link);
+    	System.err.println(String.format("Found %d direct links", topic.getLinks().size()));
 	}
 	
  	private void getTopicLinks(String topicPath, String lang) {

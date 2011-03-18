@@ -167,6 +167,7 @@ public final class plotsCalculation {
                         for (int j = 0; j < resultSet.length; j++) {
                             if (link.equalsIgnoreCase(resultSet[j].trim())) {
                                 isMatched = true;
+                                break;
                             }
                         }
                         if (isMatched) {
@@ -197,6 +198,8 @@ public final class plotsCalculation {
                             RPmap.put(recallLevel, precAtR);
                         }
                     }
+                    
+                    log(key + " found " + mCount + " matches");
                 }
                 HashMap InterpolatedPR = PRPairFormalization(RPmap);
                 if (key.endsWith(outgoingTag)) {
