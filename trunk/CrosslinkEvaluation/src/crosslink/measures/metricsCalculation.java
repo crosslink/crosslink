@@ -28,10 +28,8 @@ import crosslink.rungenerator.InexSubmission;
  * Created on 27 September 2007, 11:26
  * @author Darren Huang
  */
-public final class metricsCalculation {
+public final class metricsCalculation extends Data {
 
-    private static String outgoingTag = "Outgoing_Links";
-    private static String incomingTag = "Incoming_Links";
     public static int R_MAP = 0;
     public static int R_RPREC = 1;
     public static int R_P5 = 2;
@@ -42,7 +40,7 @@ public final class metricsCalculation {
     public static int R_P250 = 7;
     public static int COL_NUM = 8;
     public static int RESULT_TYPE_NUM = 3;
-    private static String runStatic;
+//    private static String runStatic;
     private static boolean isUseAllTopics = false;
     private static boolean isFileToBEP = false;
     private static boolean isAnchorGToFile = false;
@@ -52,11 +50,6 @@ public final class metricsCalculation {
     private static boolean useRestrictedNum = false;
     private static int limitedOutLinks = 50;
     private static int limitedInLinks = 250;
-
-
-    private static void log(Object aObject) {
-        System.out.println(String.valueOf(aObject));
-    }
 
     private static void errlog(Object aObject) {
         System.err.println(String.valueOf(aObject));
@@ -96,10 +89,10 @@ public final class metricsCalculation {
 
         } else {
 
-            resultTable = metricsCalculation.getResultSet(resultfiles);
-            runTable = metricsCalculation.getRunSet(runfiles);
+            resultTable = getResultSet(resultfiles);
+            runTable = getRunSet(runfiles);
 
-            result.runId = metricsCalculation.runStatic;
+            result.runId = runId;
             // =================================================================
             String tempRunID = result.runId;
             // =================================================================
@@ -151,165 +144,6 @@ public final class metricsCalculation {
         }
 
         return result;
-    }
-
-    private static Hashtable getResultSet(File resultfiles) {
-        
-        Hashtable resultTable = new Hashtable();
-        try {
-            JAXBContext jc;
-            jc = JAXBContext.newInstance("crosslink.resultsetGenerator");
-            Unmarshaller um = jc.createUnmarshaller();
-            LtwResultsetType lrs = (LtwResultsetType) ((um.unmarshal(resultfiles)));
-
-            if (lrs.getLtwTopic().size() > 0) {
-                for (int i = 0; i < lrs.getLtwTopic().size(); i++) {
-
-                    int inCount = 0;
-                    int outCount = 0;
-
-                    String topicID = lrs.getLtwTopic().get(i).getId().trim();
-
-                    if (lrs.getLtwTopic().get(i).getOutgoingLinks().getOutLink().isEmpty()) {
-                        String[] outLinks = {""};
-                        resultTable.put(topicID + "_" + metricsCalculation.outgoingTag, outLinks);
-                    } else {
-                        Vector outLinksV = new Vector();
-                        for (int j = 0; j < lrs.getLtwTopic().get(i).getOutgoingLinks().getOutLink().size(); j++) {
-                            String outLinkStr = lrs.getLtwTopic().get(i).getOutgoingLinks().getOutLink().get(j).getValue().toString().trim();
-                            if (!outLinksV.contains(outLinkStr)) {
-                                outLinksV.add(outLinkStr);
-                            }
-                        }
-                        String[] outLinks = new String[outLinksV.size()];
-                        Enumeration oEnu = outLinksV.elements();
-                        while (oEnu.hasMoreElements()) {
-                            Object obj = oEnu.nextElement();
-                            outLinks[outCount] = obj.toString().trim();
-                            outCount++;
-                        }
-                        resultTable.put(topicID + "_" + metricsCalculation.outgoingTag, outLinks);
-                    }
-//                    if (lrs.getLtwTopic().get(i).getIncomingLinks().getInLink().isEmpty()) {
-//                        String[] inLinks = {""};
-//                        resultTable.put(topicID + "_" + metricsCalculation.incomingTag, inLinks);
-//                    } else {
-//                        Vector inLinksV = new Vector();
-//                        for (int k = 0; k < lrs.getLtwTopic().get(i).getIncomingLinks().getInLink().size(); k++) {
-//                            String inLinkStr = lrs.getLtwTopic().get(i).getIncomingLinks().getInLink().get(k).getValue().toString().trim();
-//                            if (!inLinksV.contains(inLinkStr)) {
-//                                inLinksV.add(inLinkStr);
-//                            }
-//                        }
-//                        String[] inLinks = new String[inLinksV.size()];
-//                        Enumeration iEnu = inLinksV.elements();
-//                        while (iEnu.hasMoreElements()) {
-//                            Object obj = iEnu.nextElement();
-//                            inLinks[inCount] = obj.toString().trim();
-//                            inCount++;
-//                        }
-//                        resultTable.put(topicID + "_" + metricsCalculation.incomingTag, inLinks);
-//                    }
-                }
-            }
-
-        } catch (JAXBException ex) {
-            ex.printStackTrace();
-        }
-
-        return resultTable;
-    }
-
-    private static Hashtable getRunSet(File runfiles) {
-        Hashtable runTable = new Hashtable();
-
-        try {
-
-            JAXBContext jc;
-            jc = JAXBContext.newInstance("crosslink.rungenerator");
-            Unmarshaller um = jc.createUnmarshaller();
-            InexSubmission is = (InexSubmission) ((um.unmarshal(runfiles)));
-
-            runStatic = is.getRunId();
-            for (int i = 0; i < is.getTopic().size(); i++) {
-
-//                int endP = is.getTopic().get(i).getFile().toLowerCase().indexOf(".xml");
-                String topicID = is.getTopic().get(i).getFile(); //.substring(0, endP);
-
-                String[] outLinks = null;
-                if (!is.getTopic().get(i).getOutgoing().getAnchor().isEmpty()) {
-
-                    Vector outF2FV = new Vector();
-                    for (int j = 0; j < is.getTopic().get(i).getOutgoing().getAnchor().size(); j++) {
-
-                        String toFile = "";
-//                        String toFileID = "";
-                        String toBep = "";
-                        List<crosslink.rungenerator.ToFileType> linkTo = is.getTopic().get(i).getOutgoing().getAnchor().get(j).getTofile();
-                        for (int k = 0; k < linkTo.size(); k++) {
-                            toFile = linkTo.get(k).getFile().toString().trim();
-//                            toFileId = toFile;
-//                            if (!toFile.equals("")) {
-//                                int endop = toFile.toLowerCase().indexOf(".xml");
-//                                if (endop != -1) {
-//                                    toFileID = toFile.substring(0, endop);
-//                                }
-//                            }
-                            if (!outF2FV.contains(toFile)) {
-                                outF2FV.add(toFile);
-                            } else {
-                                log(topicID + "<-- Topic ID: Duplicated: " + toFile);
-                            }
-                        }
-                    }
-
-                    if (outF2FV.size() >= 1) {
-                        outLinks = new String[outF2FV.size()];
-                        int olCounter = 0;
-                        Enumeration olEnu = outF2FV.elements();
-                        while (olEnu.hasMoreElements()) {
-                            Object olObj = olEnu.nextElement();
-                            outLinks[olCounter] = olObj.toString().trim();
-                            olCounter++;
-                        }
-                    } else {
-                        outLinks = new String[1];
-                        outLinks[0] = "";
-                    }
-
-                } else {
-                    outLinks = new String[1];
-                    outLinks[0] = "";
-                }
-                runTable.put(topicID + "_" + outgoingTag, outLinks);
-
-//                String[] inLinks = new String[is.getTopic().get(i).getIncoming().getLink().size()];
-//                if (!is.getTopic().get(i).getIncoming().getLink().isEmpty()) {
-//                    for (int k = 0; k < is.getTopic().get(i).getIncoming().getLink().size(); k++) {
-//                        String fromFile = is.getTopic().get(i).getIncoming().getLink().get(k).getAnchor().getFile().toString().trim();
-//                        if (!fromFile.equals("")) {
-//                            int endip = fromFile.toLowerCase().indexOf(".xml");
-//                            if (endip != -1) {
-//                                inLinks[k] = fromFile.substring(0, endip);
-//                            }
-//                        }
-//                    }
-//                    if (inLinks[0] == null) {
-//                        inLinks = new String[1];
-//                        inLinks[0] = "";
-//                    }
-//                } else {
-//                    inLinks = new String[1];
-//                    inLinks[0] = "";
-//                }
-//                runTable.put(topicID + "_" + incomingTag, inLinks);
-            }
-
-        } catch (JAXBException ex) {
-            ex.printStackTrace();
-        }
-
-        return runTable;
     }
 
     private static double[] getOutInMAP(String tempRunId, Hashtable resultTable, Hashtable runTable) {
@@ -374,6 +208,7 @@ public final class metricsCalculation {
                             // To find out if a RUN link in the Result Set (links)
                             if (link.equalsIgnoreCase(resultSet[j].trim())) {
                                 isMatched = true;
+                                break;
                             }
                         }
                         // =====================================================
@@ -478,6 +313,7 @@ public final class metricsCalculation {
                     for (int j = 0; j < resultSet.length; j++) {
                         if (link.equalsIgnoreCase(resultSet[j].trim())) {
                             isMatched = true;
+                            break;
                         }
                     }
                     if (isMatched) {
@@ -611,6 +447,7 @@ public final class metricsCalculation {
                     for (int j = 0; j < resultSet.length; j++) {
                         if (link.equalsIgnoreCase(resultSet[j].trim())) {
                             isMatched = true;
+                            break;
                         }
                     }
                     if (isMatched) {
@@ -813,7 +650,7 @@ public final class metricsCalculation {
             }
         }
 
-        if (isUseAllTopics) {
+        if (isUseAllTopics) { 	
             // Outgoing
             oiprecsat[0][0] = (double) outgoingPrecsAt[0] / (resultTable.size() / 2);
             oiprecsat[0][1] = (double) outgoingPrecsAt[1] / (resultTable.size() / 2);
