@@ -70,6 +70,8 @@ public class InexSubmission {
     protected String runId;
     @XmlAttribute(name = "default_lang", required = true)
     protected String defaultLang;
+    @XmlAttribute(name = "source_lang")
+    protected String sourceLang;
     @XmlAttribute(required = true)
     protected String task;
 
@@ -247,6 +249,34 @@ public class InexSubmission {
     }
 
     /**
+	 * @return the defaultLang
+	 */
+	public String getDefaultLang() {
+		return defaultLang;
+	}
+
+	/**
+	 * @param defaultLang the defaultLang to set
+	 */
+	public void setDefaultLang(String defaultLang) {
+		this.defaultLang = defaultLang;
+	}
+
+	/**
+	 * @return the sourceLang
+	 */
+	public String getSourceLang() {
+		return sourceLang;
+	}
+
+	/**
+	 * @param sourceLang the sourceLang to set
+	 */
+	public void setSourceLang(String sourceLang) {
+		this.sourceLang = sourceLang;
+	}
+
+	/**
      * Gets the value of the task property.
      * 
      * @return

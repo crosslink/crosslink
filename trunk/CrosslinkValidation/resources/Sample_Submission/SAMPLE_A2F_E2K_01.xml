@@ -1,0 +1,485 @@
+<crosslink-submission participant-id="SAMPLE" run-id="SAMPLE_A2F_E2K_01" task="A2F" default_lang="ko">
+	<details>
+		<machine>
+			<cpu>Core 2 Duo</cpu>
+			<speed>2.33 MHz</speed>
+			<cores>2</cores>
+			<hyperthreads>1</hyperthreads>
+			<memory>8GB</memory>
+		</machine>
+		<time>TBC</time>
+	</details>
+	<description> 
+		This is a sample run using a simple link discovery algorithm
+	</description>
+	<collections><collection>Korean Wikipedia</collection></collections>
+	<topic file="19501" name="Martial arts">
+		<outgoing>
+			<anchor offset="74256" length="28" name="List of martial arts weapons">
+				<tofile bep_offset="0" lang="ko" title="무술 무기 목록">463980</tofile>
+			</anchor>
+			<anchor offset="54607" length="26" name="United States Marine Corps">
+				<tofile bep_offset="0" lang="ko" title="미국 해병대">116553</tofile>
+			</anchor>
+			<anchor offset="19658" length="14" name="The Art of War">
+				<tofile bep_offset="0" lang="ko" title="손자병법">64354</tofile>
+			</anchor>
+			<anchor offset="46822" length="30" name="Ultimate Fighting Championship">
+				<tofile bep_offset="0" lang="ko" title="얼티밋 파이팅 챔피언십">129718</tofile>
+			</anchor>
+			<anchor offset="112789" length="22" name="Open Directory Project">
+				<tofile bep_offset="0" lang="ko" title="오픈 디렉터리 프로젝트">473314</tofile>
+			</anchor>
+			<anchor offset="32029" length="21" name="Ancient Olympic Games">
+				<tofile bep_offset="0" lang="ko" title="고대 올림픽">319347</tofile>
+			</anchor>
+			<anchor offset="43332" length="20" name="Summer Olympic Games">
+				<tofile bep_offset="0" lang="ko" title="하계 올림픽">34301</tofile>
+			</anchor>
+			<anchor offset="39888" length="19" name="Brazilian Jiu Jitsu">
+				<tofile bep_offset="0" lang="ko" title="브라질 유술">209093</tofile>
+			</anchor>
+			<anchor offset="54052" length="18" name="United States Army">
+				<tofile bep_offset="0" lang="ko" title="미국 육군">116551</tofile>
+			</anchor>
+			<anchor offset="8179" length="18" name="Mixed martial arts">
+				<tofile bep_offset="0" lang="ko" title="종합격투기">119104</tofile>
+			</anchor>
+			<anchor offset="65751" length="17" name="Republic of China">
+				<tofile bep_offset="0" lang="ko" title="중화민국">4061</tofile>
+			</anchor>
+			<anchor offset="16644" length="15" name="26th century BC">
+				<tofile bep_offset="0" lang="ko" title="기원전 26세기">195243</tofile>
+			</anchor>
+			<anchor offset="16443" length="15" name="20th century BC">
+				<tofile bep_offset="0" lang="ko" title="기원전 20세기">66815</tofile>
+			</anchor>
+			<anchor offset="88016" length="13" name="Tai chi chuan">
+				<tofile bep_offset="0" lang="ko" title="태극권">178394</tofile>
+			</anchor>
+			<anchor offset="47890" length="12" name="World War II">
+				<tofile bep_offset="0" lang="ko" title="제2차 세계 대전">10336</tofile>
+			</anchor>
+			<anchor offset="5230" length="16" name="Native Americans">
+				<tofile bep_offset="0" lang="ko" title="아메리카 원주민">52042</tofile>
+			</anchor>
+			<anchor offset="554" length="15" name="Performing arts">
+				<tofile bep_offset="0" lang="ko" title="공연 예술">263040</tofile>
+			</anchor>
+			<anchor offset="104916" length="14" name="United Kingdom">
+				<tofile bep_offset="0" lang="ko" title="연합 왕국">127786</tofile>
+				<tofile bep_offset="0" lang="ko" title="체첸 공화국">22</tofile>
+			</anchor>
+			<anchor offset="28001" length="14" name="Southeast Asia">
+				<tofile bep_offset="0" lang="ko" title="동남아시아">5739</tofile>
+			</anchor>
+			<anchor offset="35994" length="14" name="Canary Islands">
+				<tofile bep_offset="0" lang="ko" title="카나리아 제도">47092</tofile>
+			</anchor>
+			<anchor offset="24417" length="13" name="United States">
+				<tofile bep_offset="0" lang="ko" title="미국">754</tofile>
+			</anchor>
+			<anchor offset="37724" length="13" name="South America">
+				<tofile bep_offset="0" lang="ko" title="남아메리카">13460</tofile>
+			</anchor>
+			<anchor offset="32037" length="13" name="Olympic Games">
+				<tofile bep_offset="0" lang="ko" title="올림픽">4996</tofile>
+			</anchor>
+			<anchor offset="37468" length="13" name="North America">
+				<tofile bep_offset="0" lang="ko" title="북아메리카">13463</tofile>
+			</anchor>
+			<anchor offset="42276" length="12" name="South Africa">
+				<tofile bep_offset="0" lang="ko" title="남아프리카 공화국">9161</tofile>
+			</anchor>
+			<anchor offset="331" length="12" name="Martial arts">
+				<tofile bep_offset="0" lang="ko" title="무예">173162</tofile>
+			</anchor>
+			<anchor offset="1039" length="12" name="19th century">
+				<tofile bep_offset="0" lang="ko" title="체첸 공화국">22</tofile>
+			</anchor>
+			<anchor offset="3499" length="12" name="15th century">
+				<tofile bep_offset="0" lang="ko" title="15세기">3601</tofile>
+			</anchor>
+			<anchor offset="42071" length="11" name="West Africa">
+				<tofile bep_offset="0" lang="ko" title="서아프리카">15224</tofile>
+			</anchor>
+			<anchor offset="69411" length="11" name="New Zealand">
+				<tofile bep_offset="0" lang="ko" title="뉴질랜드">9164</tofile>
+			</anchor>
+			<anchor offset="30204" length="11" name="Jackie Chan">
+				<tofile bep_offset="0" lang="ko" title="성룡">78826</tofile>
+			</anchor>
+			<anchor offset="26455" length="11" name="British Raj">
+				<tofile bep_offset="0" lang="ko" title="영국령 인도 제국">302927</tofile>
+			</anchor>
+			<anchor offset="16328" length="10" name="Bronze Age">
+				<tofile bep_offset="0" lang="ko" title="청동기 시대">31756</tofile>
+			</anchor>
+			<anchor offset="10226" length="9" name="Wing Chun">
+				<tofile bep_offset="0" lang="ko" title="영춘권">209386</tofile>
+			</anchor>
+			<anchor offset="18189" length="9" name="Silk Road">
+				<tofile bep_offset="0" lang="ko" title="비단길">89028</tofile>
+			</anchor>
+			<anchor offset="16413" length="9" name="Near East">
+				<tofile bep_offset="0" lang="ko" title="근동">95653</tofile>
+			</anchor>
+			<anchor offset="9738" length="9" name="Muay Thai">
+				<tofile bep_offset="0" lang="ko" title="무에타이">210207</tofile>
+			</anchor>
+			<anchor offset="29401" length="9" name="East Asia">
+				<tofile bep_offset="0" lang="ko" title="동아시아">5736</tofile>
+			</anchor>
+			<anchor offset="39515" length="9" name="Bruce Lee">
+				<tofile bep_offset="0" lang="ko" title="이소룡">2553</tofile>
+			</anchor>
+			<anchor offset="19006" length="7" name="Sun Tzu">
+				<tofile bep_offset="0" lang="ko" title="손무">176859</tofile>
+			</anchor>
+			<anchor offset="85033" length="7" name="Hung Ga">
+				<tofile bep_offset="0" lang="ko" title="홍가권">118775</tofile>
+			</anchor>
+			<anchor offset="30375" length="6" name="Jet Li">
+				<tofile bep_offset="0" lang="ko" title="이연걸">101959</tofile>
+			</anchor>
+			<anchor offset="2643" length="12" name="Confucianism">
+				<tofile bep_offset="0" lang="ko" title="유교">9955</tofile>
+			</anchor>
+			<anchor offset="46840" length="12" name="Championship">
+				<tofile bep_offset="0" lang="ko" title="선수권 대회">246183</tofile>
+			</anchor>
+			<anchor offset="104375" length="11" name="Switzerland">
+				<tofile bep_offset="0" lang="ko" title="스위스">9825</tofile>
+			</anchor>
+			<anchor offset="111030" length="11" name="Renaissance">
+				<tofile bep_offset="0" lang="ko" title="르네상스">3208</tofile>
+			</anchor>
+			<anchor offset="102197" length="11" name="Philippines">
+				<tofile bep_offset="0" lang="ko" title="필리핀">103720</tofile>
+			</anchor>
+			<anchor offset="20536" length="11" name="Bodhidharma">
+				<tofile bep_offset="0" lang="ko" title="달마">45828</tofile>
+			</anchor>
+			<anchor offset="71119" length="11" name="Afghanistan">
+				<tofile bep_offset="0" lang="ko" title="아프가니스탄">8399</tofile>
+			</anchor>
+			<anchor offset="107223" length="10" name="Uzbekistan">
+				<tofile bep_offset="0" lang="ko" title="우즈베키스탄">10232</tofile>
+			</anchor>
+		</outgoing>
+</topic>
+	<topic file="299098" name="Femme fatale">
+		<outgoing>
+			<anchor offset="38099" length="22" name="The Velvet Underground">
+				<tofile bep_offset="0" lang="ko" title="벨벳 언더그라운드">429448</tofile>
+			</anchor>
+			<anchor offset="48837" length="21" name="University of Chicago">
+				<tofile bep_offset="0" lang="ko" title="시카고 대학교">34386</tofile>
+			</anchor>
+			<anchor offset="18021" length="16" name="John the Baptist">
+				<tofile bep_offset="0" lang="ko" title="세례 요한">13026</tofile>
+			</anchor>
+			<anchor offset="11775" length="15" name="Edgar Allan Poe">
+				<tofile bep_offset="0" lang="ko" title="에드거 앨런 포">43724</tofile>
+			</anchor>
+			<anchor offset="10021" length="13" name="Morgan le Fay">
+				<tofile bep_offset="0" lang="ko" title="모르가나 르 페이">297735</tofile>
+			</anchor>
+			<anchor offset="37558" length="20" name="Desperate Housewives">
+				<tofile bep_offset="0" lang="ko" title="위기의 주부들">319505</tofile>
+			</anchor>
+			<anchor offset="39730" length="17" name="Wuthering Heights">
+				<tofile bep_offset="0" lang="ko" title="폭풍의 언덕">77368</tofile>
+			</anchor>
+			<anchor offset="19488" length="15" name="Rudyard Kipling">
+				<tofile bep_offset="0" lang="ko" title="러디어드 키플링">107578</tofile>
+			</anchor>
+			<anchor offset="41756" length="15" name="Charles Dickens">
+				<tofile bep_offset="0" lang="ko" title="찰스 디킨스">747</tofile>
+			</anchor>
+			<anchor offset="15393" length="14" name="Gustave Moreau">
+				<tofile bep_offset="0" lang="ko" title="귀스타브 모로">4794</tofile>
+			</anchor>
+			<anchor offset="33612" length="13" name="Marvel Comics">
+				<tofile bep_offset="0" lang="ko" title="마블 코믹스">212050</tofile>
+			</anchor>
+			<anchor offset="51634" length="12" name="The Creation">
+				<tofile bep_offset="0" lang="ko" title="천지창조 (하이든)">322915</tofile>
+			</anchor>
+			<anchor offset="31672" length="12" name="Sharon Stone">
+				<tofile bep_offset="0" lang="ko" title="샤론 스톤">324757</tofile>
+			</anchor>
+			<anchor offset="14990" length="12" name="Gustav Klimt">
+				<tofile bep_offset="0" lang="ko" title="구스타프 클림트">66327</tofile>
+			</anchor>
+			<anchor offset="388" length="12" name="Femme fatale">
+				<tofile bep_offset="0" lang="ko" title="팜므 파탈 (동음이의)">268820</tofile>
+				<tofile bep_offset="0" lang="ko" title="팜므 파탈">268822</tofile>
+			</anchor>
+			<anchor offset="14766" length="12" name="Edvard Munch">
+				<tofile bep_offset="0" lang="ko" title="에드바르 뭉크">92306</tofile>
+			</anchor>
+			<anchor offset="18856" length="12" name="20th century">
+				<tofile bep_offset="0" lang="ko" title="20세기">380</tofile>
+			</anchor>
+			<anchor offset="8891" length="12" name="19th century">
+				<tofile bep_offset="0" lang="ko" title="체첸 공화국">22</tofile>
+			</anchor>
+			<anchor offset="17116" length="11" name="Oscar Wilde">
+				<tofile bep_offset="0" lang="ko" title="오스카 와일드">136848</tofile>
+			</anchor>
+			<anchor offset="43480" length="11" name="Ian Fleming">
+				<tofile bep_offset="0" lang="ko" title="이언 플레밍">21980</tofile>
+			</anchor>
+			<anchor offset="37336" length="10" name="Metal Gear">
+				<tofile bep_offset="0" lang="ko" title="메탈기어">34816</tofile>
+			</anchor>
+			<anchor offset="10556" length="10" name="John Keats">
+				<tofile bep_offset="0" lang="ko" title="존 키츠">328521</tofile>
+			</anchor>
+			<anchor offset="43106" length="10" name="Jean Genet">
+				<tofile bep_offset="0" lang="ko" title="장 주네">366712</tofile>
+			</anchor>
+			<anchor offset="44855" length="10" name="James Bond">
+				<tofile bep_offset="0" lang="ko" title="제임스 본드">105110</tofile>
+			</anchor>
+			<anchor offset="40139" length="10" name="Billy Budd">
+				<tofile bep_offset="0" lang="ko" title="빌리 버드 (오페라)">90627</tofile>
+			</anchor>
+			<anchor offset="4277" length="9" name="October 6">
+				<tofile bep_offset="0" lang="ko" title="10월 6일">1733</tofile>
+			</anchor>
+			<anchor offset="39140" length="8" name="Don Juan">
+				<tofile bep_offset="0" lang="ko" title="돈 조반니">85528</tofile>
+			</anchor>
+			<anchor offset="50425" length="12" name="Bibliography">
+				<tofile bep_offset="0" lang="ko" title="서지학">188176</tofile>
+			</anchor>
+			<anchor offset="49086" length="10" name="Television">
+				<tofile bep_offset="0" lang="ko" title="텔레비전">21951</tofile>
+			</anchor>
+			<anchor offset="4444" length="9" name="Mythology">
+				<tofile bep_offset="0" lang="ko" title="신화">8340</tofile>
+			</anchor>
+			<anchor offset="51651" length="9" name="Marketing">
+				<tofile bep_offset="0" lang="ko" title="마케팅">151935</tofile>
+			</anchor>
+			<anchor offset="51597" length="9" name="Elizabeth">
+				<tofile bep_offset="0" lang="ko" title="엘리자베스">5975</tofile>
+				<tofile bep_offset="0" lang="ko" title="엘리사벳">121473</tofile>
+			</anchor>
+			<anchor offset="7994" length="9" name="Cleopatra">
+				<tofile bep_offset="0" lang="ko" title="클레오파트라 (동음이의)">99383</tofile>
+			</anchor>
+			<anchor offset="6003" length="9" name="Aphrodite">
+				<tofile bep_offset="0" lang="ko" title="아프로디테">13768</tofile>
+			</anchor>
+			<anchor offset="3142" length="8" name="Shanghai">
+				<tofile bep_offset="0" lang="ko" title="상하이 시">34805</tofile>
+			</anchor>
+			<anchor offset="31445" length="8" name="Instinct">
+				<tofile bep_offset="0" lang="ko" title="본능">263112</tofile>
+			</anchor>
+			<anchor offset="51111" length="8" name="Dijkstra">
+				<tofile bep_offset="0" lang="ko" title="데이크스트라">40634</tofile>
+			</anchor>
+			<anchor offset="51638" length="8" name="Creation">
+				<tofile bep_offset="0" lang="ko" title="창조">136472</tofile>
+			</anchor>
+			<anchor offset="35335" length="8" name="Catwoman">
+				<tofile bep_offset="0" lang="ko" title="캣우먼">400776</tofile>
+			</anchor>
+			<anchor offset="25078" length="7" name="Maltese">
+				<tofile bep_offset="0" lang="ko" title="말티즈">281935</tofile>
+			</anchor>
+			<anchor offset="19496" length="7" name="Kipling">
+				<tofile bep_offset="0" lang="ko" title="키플링 역 (TTC)">387558</tofile>
+			</anchor>
+			<anchor offset="4021" length="7" name="History">
+				<tofile bep_offset="0" lang="ko" title="역사">543</tofile>
+			</anchor>
+			<anchor offset="43484" length="7" name="Fleming">
+				<tofile bep_offset="0" lang="ko" title="플레밍">31632</tofile>
+			</anchor>
+			<anchor offset="33234" length="7" name="Elektra">
+				<tofile bep_offset="0" lang="ko" title="엘렉트라 (오페라)">91893</tofile>
+			</anchor>
+			<anchor offset="13114" length="7" name="Dracula">
+				<tofile bep_offset="0" lang="ko" title="드라큘라">121868</tofile>
+			</anchor>
+			<anchor offset="51294" length="7" name="Culture">
+				<tofile bep_offset="0" lang="ko" title="문화">47166</tofile>
+			</anchor>
+			<anchor offset="48851" length="7" name="Chicago">
+				<tofile bep_offset="0" lang="ko" title="시카고 (동음이의)">312212</tofile>
+				<tofile bep_offset="0" lang="ko" title="시카고 (음악 그룹)">312035</tofile>
+				<tofile bep_offset="0" lang="ko" title="시카고">32194</tofile>
+			</anchor>
+			<anchor offset="49230" length="7" name="Bentley">
+				<tofile bep_offset="0" lang="ko" title="벤틀리">273420</tofile>
+			</anchor>
+			<anchor offset="41396" length="6" name="Venice">
+				<tofile bep_offset="0" lang="ko" title="베네치아">11770</tofile>
+			</anchor>
+			<anchor offset="38103" length="6" name="Velvet">
+				<tofile bep_offset="0" lang="ko" title="벨벳">294491</tofile>
+			</anchor>
+		</outgoing>
+</topic>
+	<topic file="4689264" name="Australia">
+		<outgoing>
+			<anchor offset="237756" length="44" name="South Georgia and the South Sandwich Islands">
+				<tofile bep_offset="0" lang="ko" title="사우스조지아 사우스샌드위치 제도">45112</tofile>
+			</anchor>
+			<anchor offset="111485" length="46" name="Programme for International Student Assessment">
+				<tofile bep_offset="0" lang="ko" title="OECD 국제학생평가프로그램">10002</tofile>
+			</anchor>
+			<anchor offset="60784" length="35" name="States and territories of Australia">
+				<tofile bep_offset="0" lang="ko" title="오스트레일리아의 행정 구역">115357</tofile>
+			</anchor>
+			<anchor offset="68561" length="33" name="Heard Island and McDonald Islands">
+				<tofile bep_offset="0" lang="ko" title="허드 맥도널드 제도">383662</tofile>
+			</anchor>
+			<anchor offset="209055" length="32" name="Saint Vincent and the Grenadines">
+				<tofile bep_offset="0" lang="ko" title="세인트빈센트 그레나딘">9529</tofile>
+			</anchor>
+			<anchor offset="200023" length="30" name="Federated States of Micronesia">
+				<tofile bep_offset="0" lang="ko" title="미크로네시아 연방">9282</tofile>
+			</anchor>
+			<anchor offset="235108" length="30" name="British Indian Ocean Territory">
+				<tofile bep_offset="0" lang="ko" title="영국령 인도양 지역">46407</tofile>
+			</anchor>
+			<anchor offset="68052" length="27" name="Ashmore and Cartier Islands">
+				<tofile bep_offset="0" lang="ko" title="애시모어 카르티에 제도">129949</tofile>
+			</anchor>
+			<anchor offset="138906" length="25" name="Nobel Prize in Literature">
+				<tofile bep_offset="0" lang="ko" title="노벨 문학상">663</tofile>
+			</anchor>
+			<anchor offset="237874" length="24" name="Turks and Caicos Islands">
+				<tofile bep_offset="0" lang="ko" title="터크스 케이커스 제도">44975</tofile>
+			</anchor>
+			<anchor offset="23520" length="24" name="Dutch East India Company">
+				<tofile bep_offset="0" lang="ko" title="네덜란드 동인도 회사">272021</tofile>
+			</anchor>
+			<anchor offset="208953" length="21" name="Saint Kitts and Nevis">
+				<tofile bep_offset="0" lang="ko" title="세인트키츠 네비스">9530</tofile>
+			</anchor>
+			<anchor offset="76231" length="21" name="2003 invasion of Iraq">
+				<tofile bep_offset="0" lang="ko" title="이라크 전쟁">405209</tofile>
+			</anchor>
+			<anchor offset="153392" length="39" name="International Hydrographic Organization">
+				<tofile bep_offset="0" lang="ko" title="국제 수로 기구">64522</tofile>
+			</anchor>
+			<anchor offset="141706" length="35" name="Australian Broadcasting Corporation">
+				<tofile bep_offset="0" lang="ko" title="ABC (오스트레일리아 방송사)">84102</tofile>
+			</anchor>
+			<anchor offset="156688" length="30" name="Australian National University">
+				<tofile bep_offset="0" lang="ko" title="오스트레일리아 국립 대학교">392169</tofile>
+			</anchor>
+			<anchor offset="68733" length="30" name="Australian Antarctic Territory">
+				<tofile bep_offset="0" lang="ko" title="오스트레일리아령 남극 지역">199473</tofile>
+			</anchor>
+			<anchor offset="19746" length="28" name="Australian Capital Territory">
+				<tofile bep_offset="0" lang="ko" title="오스트레일리아 수도 준주">116824</tofile>
+			</anchor>
+			<anchor offset="234929" length="27" name="British Antarctic Territory">
+				<tofile bep_offset="0" lang="ko" title="영국령 남극 지역">46408</tofile>
+			</anchor>
+			<anchor offset="143551" length="25" name="Reporters Without Borders">
+				<tofile bep_offset="0" lang="ko" title="국경 없는 기자회">38817</tofile>
+			</anchor>
+			<anchor offset="72185" length="24" name="World Trade Organization">
+				<tofile bep_offset="0" lang="ko" title="세계 무역 기구">43998</tofile>
+			</anchor>
+			<anchor offset="200826" length="24" name="Northern Mariana Islands">
+				<tofile bep_offset="0" lang="ko" title="북마리아나 제도">45071</tofile>
+			</anchor>
+			<anchor offset="94032" length="23" name="Human Development Index">
+				<tofile bep_offset="0" lang="ko" title="인간 개발 지수">49971</tofile>
+			</anchor>
+			<anchor offset="801" length="23" name="Commonwealth of Nations">
+				<tofile bep_offset="0" lang="ko" title="영국 연방">5785</tofile>
+			</anchor>
+			<anchor offset="48209" length="22" name="White Australia policy">
+				<tofile bep_offset="0" lang="ko" title="백호주의">179882</tofile>
+			</anchor>
+			<anchor offset="180686" length="22" name="Open Directory Project">
+				<tofile bep_offset="0" lang="ko" title="오픈 디렉터리 프로젝트">473314</tofile>
+			</anchor>
+			<anchor offset="235286" length="22" name="British Virgin Islands">
+				<tofile bep_offset="0" lang="ko" title="영령 버진 제도">46237</tofile>
+			</anchor>
+			<anchor offset="57763" length="22" name="Australian Labor Party">
+				<tofile bep_offset="0" lang="ko" title="오스트레일리아 노동당">113475</tofile>
+			</anchor>
+			<anchor offset="2152" length="22" name="Advance Australia Fair">
+				<tofile bep_offset="0" lang="ko" title="오스트레일리아의 국가">70770</tofile>
+			</anchor>
+			<anchor offset="31268" length="21" name="Torres Strait Islands">
+				<tofile bep_offset="0" lang="ko" title="토러스 해협 제도">397409</tofile>
+			</anchor>
+			<anchor offset="70598" length="21" name="Pacific Islands Forum">
+				<tofile bep_offset="0" lang="ko" title="태평양 제도 포럼">496666</tofile>
+			</anchor>
+			<anchor offset="234458" length="21" name="Akrotiri and Dhekelia">
+				<tofile bep_offset="0" lang="ko" title="아크로티리 데켈리아">44440</tofile>
+			</anchor>
+			<anchor offset="67074" length="20" name="Jervis Bay Territory">
+				<tofile bep_offset="0" lang="ko" title="저비스 베이 준주">191186</tofile>
+			</anchor>
+			<anchor offset="29039" length="20" name="History of Australia">
+				<tofile bep_offset="0" lang="ko" title="오스트레일리아의 역사">260414</tofile>
+			</anchor>
+			<anchor offset="146760" length="20" name="2000 Summer Olympics">
+				<tofile bep_offset="0" lang="ko" title="2000년 하계 올림픽">56979</tofile>
+			</anchor>
+			<anchor offset="146302" length="20" name="1956 Summer Olympics">
+				<tofile bep_offset="0" lang="ko" title="1956년 하계 올림픽">21875</tofile>
+			</anchor>
+			<anchor offset="87693" length="19" name="World Heritage Site">
+				<tofile bep_offset="0" lang="ko" title="세계유산">6344</tofile>
+			</anchor>
+			<anchor offset="209170" length="19" name="Trinidad and Tobago">
+				<tofile bep_offset="0" lang="ko" title="트리니다드 토바고">164825</tofile>
+			</anchor>
+			<anchor offset="154389" length="19" name="Library of Congress">
+				<tofile bep_offset="0" lang="ko" title="미국 의회도서관">194062</tofile>
+			</anchor>
+			<anchor offset="34353" length="19" name="Cape York Peninsula">
+				<tofile bep_offset="0" lang="ko" title="케이프요크 반도">83250</tofile>
+			</anchor>
+			<anchor offset="207638" length="19" name="Antigua and Barbuda">
+				<tofile bep_offset="0" lang="ko" title="앤티가 바부다">9944</tofile>
+			</anchor>
+			<anchor offset="79595" length="18" name="Great Barrier Reef">
+				<tofile bep_offset="0" lang="ko" title="그레이트배리어리프">83254</tofile>
+			</anchor>
+			<anchor offset="23526" length="18" name="East India Company">
+				<tofile bep_offset="0" lang="ko" title="동인도 회사">51235</tofile>
+				<tofile bep_offset="0" lang="ko" title="영국 동인도 회사">67016</tofile>
+			</anchor>
+			<anchor offset="203162" length="17" name="Wallis and Futuna">
+				<tofile bep_offset="0" lang="ko" title="왈리스 퓌튀나">45073</tofile>
+			</anchor>
+			<anchor offset="68406" length="17" name="Coral Sea Islands">
+				<tofile bep_offset="0" lang="ko" title="산호해 제도">486717</tofile>
+			</anchor>
+			<anchor offset="237654" length="16" name="Tristan da Cunha">
+				<tofile bep_offset="0" lang="ko" title="트리스탄다쿠냐 제도">46405</tofile>
+			</anchor>
+			<anchor offset="15858" length="16" name="Papua New Guinea">
+				<tofile bep_offset="0" lang="ko" title="파푸아 뉴기니">10764</tofile>
+			</anchor>
+			<anchor offset="71007" length="16" name="East Asia Summit">
+				<tofile bep_offset="0" lang="ko" title="동아시아 정상">84030</tofile>
+			</anchor>
+			<anchor offset="18326" length="15" name="New South Wales">
+				<tofile bep_offset="0" lang="ko" title="뉴사우스웨일스 주">5898</tofile>
+			</anchor>
+			<anchor offset="45551" length="12" name="World War II">
+				<tofile bep_offset="0" lang="ko" title="제2차 세계 대전">10336</tofile>
+			</anchor>
+		</outgoing>
+</topic>
+
+</crosslink-submission>

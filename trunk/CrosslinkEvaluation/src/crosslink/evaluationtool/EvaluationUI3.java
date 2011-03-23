@@ -5,6 +5,7 @@
  */
 package crosslink.evaluationtool;
 
+import crosslink.measures.ResultSetManager;
 import java.awt.Color;
 import java.awt.Point;
 import java.awt.event.ActionEvent;
@@ -50,7 +51,7 @@ public class EvaluationUI3 extends JFrame {
 //    private String[] resultSetArray = {"6600F2FWikiResultSet.xml", "50A2BWikiResultSet.xml", "50A2BManualResultSet.xml"};
     // For 2009
 //    private String[] resultSetArray = {"5000F2FWikiResultSet.xml", "33A2BWikiResultSet.xml", "33A2BManualResultSet.xml"};
-    private String[] resultSetArray = {"A2FWikiGroundTruthResultSet.xml", "A2FWikiGroundTruthResultSet.xml", "A2BManualResultSet.xml"};
+//    private String[] resultSetArray = {"A2FWikiGroundTruthResultSet", "A2FWikiGroundTruthResultSet", "A2BWikiManualResultSet"};
     private String resultFilePath = "A2BManualResultSet.xml";
     private String schemaFilePath = "CrosslinkSubmissionSchema.xsd";
 
@@ -162,6 +163,11 @@ public class EvaluationUI3 extends JFrame {
         jRBF2FWikirs.setSelected(true);
         jRBF2FWikirs.setText("Wikipedia Ground-Truth");
         jRBF2FWikirs.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
+        jRBF2FWikirs.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRBF2FWikirsActionPerformed(evt);
+            }
+        });
 
         rsGroup.add(jRBA2BWikirs);
         jRBA2BWikirs.setText("Wikipedia A2B Ground-Truth");
@@ -171,6 +177,11 @@ public class EvaluationUI3 extends JFrame {
         rsGroup.add(jRBA2BManualrs);
         jRBA2BManualrs.setText("Manual Assessment");
         jRBA2BManualrs.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
+        jRBA2BManualrs.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRBA2BManualrsActionPerformed(evt);
+            }
+        });
 
         org.jdesktop.layout.GroupLayout jPanel6Layout = new org.jdesktop.layout.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -1044,6 +1055,14 @@ public class EvaluationUI3 extends JFrame {
     	load();
     }//GEN-LAST:event_filecleanButton1ActionPerformed
 
+    private void jRBF2FWikirsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRBF2FWikirsActionPerformed
+        ResultSetManager.getInstance().setEveluationType(ResultSetManager.A2F_WIKI_GROUNDTRUTH);
+    }//GEN-LAST:event_jRBF2FWikirsActionPerformed
+
+    private void jRBA2BManualrsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRBA2BManualrsActionPerformed
+        ResultSetManager.getInstance().setEveluationType(ResultSetManager.A2B_WIKI_MANUAL);
+    }//GEN-LAST:event_jRBA2BManualrsActionPerformed
+
     private ArrayList<String[]> retrieveRunData(File[] file) {
 
         int runInfoColumnLength = 8;
@@ -1231,20 +1250,6 @@ public class EvaluationUI3 extends JFrame {
                 new EvaluationUI3().setVisible(true);
             }
         });
-    }
-
-    private String getResultSetPath() {
-        String resultSet = "";
-
-        if (this.jRBF2FWikirs.getModel().isSelected()) {
-            resultSet = resultSetArray[0];
-        } else if (this.jRBA2BWikirs.getModel().isSelected()) {
-            resultSet = resultSetArray[1];
-        } else if (this.jRBA2BManualrs.getModel().isSelected()) {
-            resultSet = resultSetArray[2];
-        }
-
-        return "resultsets" + File.separator + resultSet;
     }
 
     private void runsXMLConvertor(Hashtable runsHashData) {
