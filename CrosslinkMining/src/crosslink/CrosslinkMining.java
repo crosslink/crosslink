@@ -14,6 +14,7 @@ import org.w3c.dom.Document;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
+import ltwassessment.utility.FileUtil;
 import ltwassessment.utility.WildcardFiles;
 
 /*
@@ -152,8 +153,12 @@ public class CrosslinkMining {
         return "pages" + File.separator + subFolder + File.separator + targetId;
 	}
 	
+	public String getWikiPagePath(String id, String lang) {
+		return corpusHome + File.separator + lang + File.separator + wikiIdToPath(id) + ".xml";
+	}
+	
 	public boolean wikiPageExists(String id, String lang) {
-		String filename = corpusHome + File.separator + lang + File.separator + wikiIdToPath(id) + ".xml";
+		String filename = getWikiPagePath(id, lang);
 		return new File(filename).exists();
 	}
 	
@@ -174,12 +179,15 @@ public class CrosslinkMining {
  	}
 
 	private String getOutputIdFromOtherLang(String id) {
-		String targetId = otherCorpusCrosslinkTable.getTargetId(id);
-//		assert(targetId != null);
-		if (wikiPageExists(targetId, otherLang)) {
+		String targetId = null;
+		targetId = otherCorpusCrosslinkTable.getTargetId(id);
+		assert(targetId != null);
+		if (targetId != null && wikiPageExists(targetId, otherLang)) {
 			output(otherCorpusCrosslinkTable, id);
 			return targetId;
 		}
+		else
+			System.err.println(String.format("No coresponding topic for %s in %s corpus", id, targetLang));
 		return null;	
 	}
 
@@ -246,8 +254,13 @@ public class CrosslinkMining {
 		if (topicId == null)
 			throw new Exception("No counterpart find for " + topic.getTitle() + " : " + id);
 		
+		String targetTopicFile = targetTopicPath + File.separator + topicId + ".xml";
 		
-		return targetTopicPath + File.separator + topicId + ".xml";
+		if (! new File(targetTopicFile).exists()) {
+			String wikiFilePath = getWikiPagePath(topicId, targetLang);
+			FileUtil.copyFile(wikiFilePath, targetTopicFile);
+		}
+		return targetTopicFile;
 	}
 	
 	private void getIndirectLinks(ArrayList<String> links, CrosslinkTopic topic) {
