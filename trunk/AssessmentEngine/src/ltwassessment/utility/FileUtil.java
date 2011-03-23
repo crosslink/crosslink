@@ -34,4 +34,8 @@ public class FileUtil {
 			  }
 		 }
 	}
+	
+	public static void copyFile(String sourceFile, String destFile) throws IOException {
+		copyFile(new File(sourceFile), new File(destFile));
+	}
 }

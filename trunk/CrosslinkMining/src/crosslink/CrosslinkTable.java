@@ -142,14 +142,14 @@ public class CrosslinkTable {
 	}
 
 	public String getTargetId(String sourceId) {
-		return mapForSourceId.get(sourceId).getTargetId();
+		return mapForSourceId.get(sourceId) != null ? mapForSourceId.get(sourceId).getTargetId() : null;
 	}
 	
 	public String getSourceTitle(String sourceId) {
-		return mapForSourceId.get(sourceId).getSourceTitle();
+		return mapForSourceId.get(sourceId) != null ? mapForSourceId.get(sourceId).getSourceTitle() : null;
 	}
 	
 	public String getTargetTitle(String sourceId) {
-		return mapForSourceId.get(sourceId).getTargetTitle();
+		return mapForSourceId.get(sourceId) != null ? mapForSourceId.get(sourceId).getTargetTitle() : null;
 	}	
 }
