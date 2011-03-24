@@ -14,88 +14,26 @@ import crosslink.resultsetGenerator.LtwResultsetType;
 import crosslink.rungenerator.InexSubmission;
 
 public class Data {
-    protected static String outgoingTag = "Outgoing_Links";
-    protected static String incomingTag = "Incoming_Links";
+    public static String outgoingTag = "Outgoing_Links";
+    public static String incomingTag = "Incoming_Links";
     
     protected static String runId = "";
+    
+    protected static String currentSourceLang = null;
+    protected static String currentTargetLang = null;
     
 //    protected static void 
     protected static void log(Object aObject) {
         System.out.println(String.valueOf(aObject));
     }
     
-    protected static Hashtable getResultSet(File resultfiles) {
-        
-        Hashtable resultTable = new Hashtable();
-        try {
-            JAXBContext jc;
-            jc = JAXBContext.newInstance("crosslink.resultsetGenerator");
-            Unmarshaller um = jc.createUnmarshaller();
-            LtwResultsetType lrs = (LtwResultsetType) ((um.unmarshal(resultfiles)));
-
-            if (lrs.getLtwTopic().size() > 0) {
-                for (int i = 0; i < lrs.getLtwTopic().size(); i++) {
-
-                    int inCount = 0;
-                    int outCount = 0;
-
-                    String topicID = lrs.getLtwTopic().get(i).getId().trim();
-
-                    String[] outLinks = null;
-	                String[] emptyLinks = {""};
-                    if (lrs.getLtwTopic().get(i).getOutgoingLinks().getOutLink().isEmpty()) {
-                        outLinks = emptyLinks;
-                    } else {
-                        Vector outLinksV = new Vector();
-                        for (int j = 0; j < lrs.getLtwTopic().get(i).getOutgoingLinks().getOutLink().size(); j++) {
-                            String outLinkStr = lrs.getLtwTopic().get(i).getOutgoingLinks().getOutLink().get(j).getValue().toString().trim();
-                            if (!outLinksV.contains(outLinkStr)) {
-                                outLinksV.add(outLinkStr);
-                            }
-                        }
-                        outLinks = new String[outLinksV.size()];
-                        Enumeration oEnu = outLinksV.elements();
-                        while (oEnu.hasMoreElements()) {
-                            Object obj = oEnu.nextElement();
-                            outLinks[outCount] = obj.toString().trim();
-                            outCount++;
-                        }
-                        resultTable.put(topicID + "_" + outgoingTag, outLinks);
-                    }
-                    
-                    resultTable.put(topicID + "_" + outgoingTag, outLinks);
-	                resultTable.put(topicID + "_" + incomingTag, emptyLinks);
-//                    if (lrs.getLtwTopic().get(i).getIncomingLinks().getInLink().isEmpty()) {
-//                        String[] inLinks = {""};
-//                        resultTable.put(topicID + "_" + metricsCalculation.incomingTag, inLinks);
-//                    } else {
-//                        Vector inLinksV = new Vector();
-//                        for (int k = 0; k < lrs.getLtwTopic().get(i).getIncomingLinks().getInLink().size(); k++) {
-//                            String inLinkStr = lrs.getLtwTopic().get(i).getIncomingLinks().getInLink().get(k).getValue().toString().trim();
-//                            if (!inLinksV.contains(inLinkStr)) {
-//                                inLinksV.add(inLinkStr);
-//                            }
-//                        }
-//                        String[] inLinks = new String[inLinksV.size()];
-//                        Enumeration iEnu = inLinksV.elements();
-//                        while (iEnu.hasMoreElements()) {
-//                            Object obj = iEnu.nextElement();
-//                            inLinks[inCount] = obj.toString().trim();
-//                            inCount++;
-//                        }
-//                        resultTable.put(topicID + "_" + metricsCalculation.incomingTag, inLinks);
-//                    }
-                }
-            }
-
-        } catch (JAXBException ex) {
-            ex.printStackTrace();
-        }
-
-        return resultTable;
+    protected static Hashtable getResultSetLinks(/*File resultfile*/) {
+//    	String resultfile = 
+        return ResultSetManager.getInstance().getResultSetLinks(currentSourceLang, currentTargetLang);
+//        return resultTable;
     }
 
-    protected static Hashtable getRunSet(File runfiles) {
+    protected static Hashtable getRunSet(File runfiles) throws Exception {
         Hashtable runTable = new Hashtable();
 
         try {
@@ -105,6 +43,16 @@ public class Data {
             Unmarshaller um = jc.createUnmarshaller();
             InexSubmission is = (InexSubmission) ((um.unmarshal(runfiles)));
 
+            currentSourceLang = is.getSourceLang();
+            if (currentSourceLang == null || currentSourceLang.length() == 0)
+            	currentSourceLang = "en";
+            
+            // default lang is the target lang
+            currentTargetLang = is.getDefaultLang();
+            if (currentTargetLang == null || currentTargetLang.length() == 0)
+            	throw new Exception(String.format("Incorrect run file - %s which dosen't provide the target language", runfiles.getAbsoluteFile()));
+
+            
             runId = is.getRunId();
             for (int i = 0; i < is.getTopic().size(); i++) {
 

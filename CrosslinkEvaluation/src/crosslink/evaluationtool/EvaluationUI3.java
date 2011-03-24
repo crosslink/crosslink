@@ -52,7 +52,7 @@ public class EvaluationUI3 extends JFrame {
     // For 2009
 //    private String[] resultSetArray = {"5000F2FWikiResultSet.xml", "33A2BWikiResultSet.xml", "33A2BManualResultSet.xml"};
 //    private String[] resultSetArray = {"A2FWikiGroundTruthResultSet", "A2FWikiGroundTruthResultSet", "A2BWikiManualResultSet"};
-    private String resultFilePath = "A2BManualResultSet.xml";
+//    private String resultFilePath = "A2BManualResultSet.xml";
     private String schemaFilePath = "CrosslinkSubmissionSchema.xsd";
 
     private static void log(Object aObject) {
@@ -74,7 +74,7 @@ public class EvaluationUI3 extends JFrame {
 
         jRBA2BWikirs.setVisible(false);
         // ------------------------------------------
-        resultFilePath = getResultSetPath();
+//        resultFilePath = getResultSetPath();
         // ------------------------------------------
     }
 
@@ -577,8 +577,8 @@ public class EvaluationUI3 extends JFrame {
                 JOptionPane.showMessageDialog(this, "Please select the plot to draw", "Message Board", JOptionPane.INFORMATION_MESSAGE);
 
             } else {
-                resultFilePath = getResultSetPath();
-                File resultFile = new File(resultFilePath);
+//                resultFilePath = getResultSetPath();
+//                File resultFile = new File(resultFilePath);
                 Vector<Object[]> incommingPlotData = new Vector<Object[]>();
                 Vector<Object[]> outgoingPlotData = new Vector<Object[]>();
                 Vector<Object[]> combinationPlotData = new Vector<Object[]>();
@@ -586,7 +586,7 @@ public class EvaluationUI3 extends JFrame {
                 for (int i = 0; i < this.runFileCache.length; i++) {
                     plotsCalculation.PRCurveResult pcr;
 					try {
-						pcr = plotsCalculation.plotCalculate(resultFile, this.runFileCache[i], useAllTopics, useFileToBep, useAnchorToFile, useAnchorToBEP);
+						pcr = plotsCalculation.plotCalculate(/*resultFile, */this.runFileCache[i], useAllTopics, useFileToBep, useAnchorToFile, useAnchorToBEP);
 
 	                    if (plotHashmap.containsKey((Object) pcr.plotRunId)) {
 	
@@ -894,8 +894,8 @@ public class EvaluationUI3 extends JFrame {
 
     private void evaluateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_evaluateButtonActionPerformed
         try {
-            resultFilePath = getResultSetPath();
-            File resultFile = new File(resultFilePath);
+//            resultFilePath = getResultSetPath();
+//            File resultFile = new File(resultFilePath);
             ArrayList<Object[]> result = new ArrayList<Object[]>();
 
             boolean useAllTopics = false;
@@ -933,7 +933,7 @@ public class EvaluationUI3 extends JFrame {
 
                 metricsCalculation.EvaluationResult er;
 
-                er = metricsCalculation.calculate(resultFile, this.runFileCache[i], useAllTopics, useFileToBep, useAnchorGToFile, useAnchorGToBEP);
+                er = metricsCalculation.calculate(/*resultFile, */this.runFileCache[i], useAllTopics, useFileToBep, useAnchorGToFile, useAnchorGToBEP);
 
 //                if (i < 5) {
 //                    result.add(new Object[]{
@@ -1066,9 +1066,9 @@ public class EvaluationUI3 extends JFrame {
     private ArrayList<String[]> retrieveRunData(File[] file) {
 
         int runInfoColumnLength = 8;
-        resultFilePath = getResultSetPath();
-        log(resultFilePath);
-        Hashtable resultLinks = ResultSetLinksNo(new File(resultFilePath));
+//        resultFilePath = getResultSetPath();
+//        log(resultFilePath);
+        Hashtable resultLinks = ResultSetManager.getInstance().getResultSetLinks(resultSetPathFile); //ResultSetLinksNo(new File(resultFilePath));
 
         ArrayList<String[]> bigResult = new ArrayList<String[]>();
         // String[] result = null;

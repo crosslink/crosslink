@@ -60,6 +60,8 @@ public final class fileToBepPlotMeasures {
     // -------------------------------------------------------------------------
     private static boolean useOnlyAnchorGroup = false;
     // -------------------------------------------------------------------------
+    private static String currentSourceLang = null;
+    private static String currentTargetLang = null;
 
     private static void log(Object aObject) {
         System.out.println(String.valueOf(aObject));
@@ -72,7 +74,8 @@ public final class fileToBepPlotMeasures {
     public fileToBepPlotMeasures() {
     }
 
-    public static plotsCalculation.PRCurveResult getFileToBepPlotResult(File resultfile, File runfile, boolean isAllTopics, boolean useFileToBep, boolean useAnchorToFile, boolean useAnchorToBEP) {
+    public static plotsCalculation.PRCurveResult getFileToBepPlotResult(/*File resultfile, */File runfile, boolean isAllTopics, boolean useFileToBep, boolean useAnchorToFile, boolean useAnchorToBEP)
+    	throws Exception {
 
         isUseAllTopics = isAllTopics ? true : false;
         isFileToBEP = useFileToBep ? true : false;
@@ -82,15 +85,27 @@ public final class fileToBepPlotMeasures {
         plotsCalculation.PRCurveResult plotResult = new plotsCalculation.PRCurveResult();
         Hashtable resultTable = null;
         Hashtable runTable = null;
-
+        String resultfile = null;
         if (isFileToBEP) {
             // the performance is measured by each File-to-BEP
             // so the result is calculated by each File-to-BEP in Run against the ONE in ResultSet
-            resultTable = fileToBepPlotMeasures.getF2BPlotResultSet(resultfile);
             runTable = fileToBepPlotMeasures.getF2BPlotRunSet(runfile);
+            resultfile = ResultSetManager.getInstance().getResultSetPathFile(currentSourceLang, currentTargetLang);
+            resultTable = ResultSetManager.getInstance().getResultSet(resultfile);
+            if (resultTable == null) {
+            	resultTable = fileToBepPlotMeasures.getF2BPlotResultSet(new File(resultfile));
+            	ResultSetManager.getInstance().addResultSet(resultfile, resultTable);
+            }
         } else if (isAnchorGToFile || isAnchorGToBEP) {
-            resultTable = fileToBepPlotMeasures.getF2BPlotResultSetByGroup(resultfile);
             runTable = fileToBepPlotMeasures.getF2BPlotRunSetByGroup(runfile);
+            resultfile = ResultSetManager.getInstance().getResultSetPathFile(currentSourceLang, currentTargetLang);
+            resultTable = ResultSetManager.getInstance().getResultSet(resultfile);
+            if (resultTable == null) {
+            	resultTable = fileToBepPlotMeasures.getF2BPlotResultSetByGroup(new File(resultfile));
+            	ResultSetManager.getInstance().addResultSet(resultfile, resultTable);
+            }
+        } else {
+        	throw new Exception("Uncertain evaluation type");
         }
 
         // =================================================================
@@ -738,7 +753,7 @@ public final class fileToBepPlotMeasures {
     //          but compare them one by one as "BepFileID-Offset".
     //          We do not limit the number of Anchors per Topic as well as BEPs per Anchor
     // notes02: Incoming links should be further modified
-    private static Hashtable getF2BPlotRunSet(File runfiles) {
+    private static Hashtable getF2BPlotRunSet(File runfiles) throws Exception {
         Hashtable f2bRunTable = new Hashtable();
 
         try {
@@ -747,6 +762,15 @@ public final class fileToBepPlotMeasures {
             jc = JAXBContext.newInstance("crosslink.rungenerator");
             Unmarshaller um = jc.createUnmarshaller();
             InexSubmission is = (InexSubmission) ((um.unmarshal(runfiles)));
+            
+            currentSourceLang = is.getSourceLang();
+            if (currentSourceLang == null || currentSourceLang.length() == 0)
+            	currentSourceLang = "en";
+            
+            // default lang is the target lang
+            currentTargetLang = is.getDefaultLang();
+            if (currentTargetLang == null || currentTargetLang.length() == 0)
+            	throw new Exception(String.format("Incorrect run file - %s which dosen't provide the target language", runfiles.getAbsoluteFile()));
 
             plotStatic = is.getRunId();
             for (int i = 0; i < is.getTopic().size(); i++) {
@@ -846,7 +870,7 @@ public final class fileToBepPlotMeasures {
     //          maxAnchors == 0 or > size(): equal to size(), otherwise, specified number (e.g. 50)
     //          maxBepsPerAnchor == 0 or > size(): equal to size(), otherwise, specified number (e.g. 5)
     // notes02: Incoming links should be further modified
-    private static Hashtable getF2BPlotRunSetByGroup(File runfiles) {
+    private static Hashtable getF2BPlotRunSetByGroup(File runfiles) throws Exception {
 
         Hashtable f2bRunTableByGroup = new Hashtable();
         try {
@@ -855,6 +879,16 @@ public final class fileToBepPlotMeasures {
             Unmarshaller um = jc.createUnmarshaller();
             InexSubmission is = (InexSubmission) ((um.unmarshal(runfiles)));
 
+            currentSourceLang = is.getSourceLang();
+            if (currentSourceLang == null || currentSourceLang.length() == 0)
+            	currentSourceLang = "en";
+            
+            // default lang is the target lang
+            currentTargetLang = is.getDefaultLang();
+            if (currentTargetLang == null || currentTargetLang.length() == 0)
+            	throw new Exception(String.format("Incorrect run file - %s which dosen't provide the target language", runfiles.getAbsoluteFile()));
+
+            
             plotStatic = is.getRunId();
             // Loop Different Topics
             for (int i = 0; i < is.getTopic().size(); i++) {
