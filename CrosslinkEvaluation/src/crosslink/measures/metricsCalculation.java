@@ -72,7 +72,7 @@ public final class metricsCalculation extends Data {
         public double[] combination = new double[metricsCalculation.COL_NUM];
     }
 
-    public static EvaluationResult calculate(File resultfiles, File runfiles, boolean isAllTopics, boolean useFileToBep, boolean useAnchorToFile, boolean useAnchorToBEP) throws Exception {
+    public static EvaluationResult calculate(/*File resultfiles, */File runfiles, boolean isAllTopics, boolean useFileToBep, boolean useAnchorToFile, boolean useAnchorToBEP) throws Exception {
 
         isUseAllTopics = isAllTopics ? true : false;
         isFileToBEP = useFileToBep ? true : false;
@@ -85,12 +85,11 @@ public final class metricsCalculation extends Data {
 
         if (isFileToBEP || isAnchorGToFile || isAnchorGToBEP) {
 
-            result = fileToBepMeasures.getFileToBepResult(resultfiles, runfiles, isAllTopics, useFileToBep, useAnchorToFile, useAnchorToBEP);
+            result = fileToBepMeasures.getFileToBepResult(/*resultfiles, */runfiles, isAllTopics, useFileToBep, useAnchorToFile, useAnchorToBEP);
 
         } else {
-
-            resultTable = getResultSet(resultfiles);
             runTable = getRunSet(runfiles);
+            resultTable = getResultSetLinks(); //getResultSet(resultfiles);
 
             result.runId = runId;
             // =================================================================
