@@ -67,7 +67,7 @@ public final class plotsCalculation extends Data {
         public double[] combination = new double[plotsCalculation.RECALL_LEVEL];
     }
 
-    public static PRCurveResult plotCalculate(File resultfile, File runfile, boolean isAllTopics, boolean useFileToBep, boolean useAnchorToFile, boolean useAnchorToBEP) throws Exception {
+    public static PRCurveResult plotCalculate(/*File resultfile, */File runfile, boolean isAllTopics, boolean useFileToBep, boolean useAnchorToFile, boolean useAnchorToBEP) throws Exception {
 
         isUseAllTopics = isAllTopics ? true : false;
         isFileToBEP = useFileToBep ? true : false;
@@ -81,11 +81,11 @@ public final class plotsCalculation extends Data {
         Hashtable runTable = null;
         if (isFileToBEP || isAnchorGToFile || isAnchorGToBEP) {
 
-            plotResult = fileToBepPlotMeasures.getFileToBepPlotResult(resultfile, runfile, isAllTopics, useFileToBep, useAnchorToFile, useAnchorToBEP);
+            plotResult = fileToBepPlotMeasures.getFileToBepPlotResult(/*resultfile, */runfile, isAllTopics, useFileToBep, useAnchorToFile, useAnchorToBEP);
 
         } else {
-            resultTable = getResultSet(resultfile);
             runTable = getRunSet(runfile);
+            resultTable = getResultSetLinks(/*resultfile*/);
 
             // =================================================================
             // get Run ID: QUT_LTW_RUN_003

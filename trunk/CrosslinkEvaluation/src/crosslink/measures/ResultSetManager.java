@@ -2,9 +2,11 @@ package crosslink.measures;
 
 import java.io.File;
 import java.util.Collections;
+import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.Map;
+import java.util.Vector;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
@@ -30,7 +32,9 @@ public class ResultSetManager {
 	
 	private Map<String, String> langMap = new HashMap<String, String>();
 	
+	private Map<String, Hashtable> resultsetLinks = Collections.synchronizedMap(new HashMap<String, Hashtable>());
 	private Map<String, Hashtable> resultsets = Collections.synchronizedMap(new HashMap<String, Hashtable>());
+	private Map<String, Hashtable> resultsetLinksNo = Collections.synchronizedMap(new HashMap<String, Hashtable>());
 	
 	public ResultSetManager() {
 		setResultSetPath();
@@ -140,13 +144,104 @@ public class ResultSetManager {
         return resultLinksTable;
     }
     
-	public Hashtable getResultSet(String resultSetPathFile) {
-		return resultsets.get(resultSetPathFile);
+	public Hashtable getResultSetLinks(String resultSetPathFile) {
+		Hashtable table = resultsetLinks.get(resultSetPathFile);
+		if (table == null) {
+			table = loadResultSetLinks(resultSetPathFile);
+		}
+		return table;
 	}
 	
-	public void loadResultSet(String sourceLang, String targetLang) {
+	public Hashtable getResultSetLinks(String sourceLang, String targetLang) {
 		String resultSetPathFile = getResultSetPathFile(sourceLang, targetLang);
+		return getResultSetLinks(resultSetPathFile);
+	}
+
+	public void loadResultSetLinks(String sourceLang, String targetLang) {
+		String resultSetPathFile = getResultSetPathFile(sourceLang, targetLang);
+		loadResultSetLinks(resultSetPathFile);
+	}
+	
+	private Hashtable loadResultSetLinks(String resultSetPathFile) {
 		
-		ResultSetLinksNo(new File(resultSetPathFile));
+        Hashtable resultTable = new Hashtable();
+        Hashtable resultLinksTable = new Hashtable();
+        try {
+            JAXBContext jc;
+            jc = JAXBContext.newInstance("crosslink.resultsetGenerator");
+            Unmarshaller um = jc.createUnmarshaller();
+            LtwResultsetType lrs = (LtwResultsetType) ((um.unmarshal(new File(resultSetPathFile))));
+
+            if (lrs.getLtwTopic().size() > 0) {
+                for (int i = 0; i < lrs.getLtwTopic().size(); i++) {
+
+                    int inCount = 0;
+                    int outCount = 0;
+
+                    String topicID = lrs.getLtwTopic().get(i).getId().trim();
+
+                    String[] outLinks = null;
+	                String[] emptyLinks = {""};
+                    if (lrs.getLtwTopic().get(i).getOutgoingLinks().getOutLink().isEmpty()) {
+                        outLinks = emptyLinks;
+                    } else {
+                        Vector outLinksV = new Vector();
+                        for (int j = 0; j < lrs.getLtwTopic().get(i).getOutgoingLinks().getOutLink().size(); j++) {
+                            String outLinkStr = lrs.getLtwTopic().get(i).getOutgoingLinks().getOutLink().get(j).getValue().toString().trim();
+                            if (!outLinksV.contains(outLinkStr)) {
+                                outLinksV.add(outLinkStr);
+                            }
+                        }
+                        outLinks = new String[outLinksV.size()];
+                        Enumeration oEnu = outLinksV.elements();
+                        while (oEnu.hasMoreElements()) {
+                            Object obj = oEnu.nextElement();
+                            outLinks[outCount] = obj.toString().trim();
+                            outCount++;
+                        }
+                        resultTable.put(topicID + "_" + Data.outgoingTag, outLinks);
+                    }
+                    
+                    resultTable.put(topicID + "_" + Data.outgoingTag, outLinks);
+	                resultTable.put(topicID + "_" + Data.incomingTag, emptyLinks);
+	                resultLinksTable.put(topicID/* + ".xml"*/, outCount + ";" + inCount);
+//                    if (lrs.getLtwTopic().get(i).getIncomingLinks().getInLink().isEmpty()) {
+//                        String[] inLinks = {""};
+//                        resultTable.put(topicID + "_" + metricsCalculation.incomingTag, inLinks);
+//                    } else {
+//                        Vector inLinksV = new Vector();
+//                        for (int k = 0; k < lrs.getLtwTopic().get(i).getIncomingLinks().getInLink().size(); k++) {
+//                            String inLinkStr = lrs.getLtwTopic().get(i).getIncomingLinks().getInLink().get(k).getValue().toString().trim();
+//                            if (!inLinksV.contains(inLinkStr)) {
+//                                inLinksV.add(inLinkStr);
+//                            }
+//                        }
+//                        String[] inLinks = new String[inLinksV.size()];
+//                        Enumeration iEnu = inLinksV.elements();
+//                        while (iEnu.hasMoreElements()) {
+//                            Object obj = iEnu.nextElement();
+//                            inLinks[inCount] = obj.toString().trim();
+//                            inCount++;
+//                        }
+//                        resultTable.put(topicID + "_" + metricsCalculation.incomingTag, inLinks);
+//                    }
+                }
+            }
+
+        } catch (JAXBException ex) {
+            ex.printStackTrace();
+        }
+        
+        resultsetLinks.put(resultSetPathFile, resultTable);
+        resultsetLinksNo = Collections.synchronizedMap(new HashMap<String, Hashtable>()).put(resultSetPathFile, resultLinksTable);
+        return resultTable;
+	}
+	
+	public void addResultSet(String resultfile, Hashtable resultTable) {
+		resultsets.put(resultfile, resultTable);
+	}
+	
+	public Hashtable getResultSet(String resultfile) {
+		return resultsets.get(resultfile);
 	}
 }
