@@ -27,6 +27,10 @@ public class Data {
         System.out.println(String.valueOf(aObject));
     }
     
+    private static void errlog(Object aObject) {
+        System.err.println(String.valueOf(aObject));
+    }
+    
     protected static Hashtable getResultSetLinks(/*File resultfile*/) {
 //    	String resultfile = 
         return ResultSetManager.getInstance().getResultSetLinks(currentSourceLang, currentTargetLang);
