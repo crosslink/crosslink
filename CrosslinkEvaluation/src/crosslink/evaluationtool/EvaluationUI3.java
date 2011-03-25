@@ -73,6 +73,9 @@ public class EvaluationUI3 extends JFrame {
         initComponents();
 
         jRBA2BWikirs.setVisible(false);
+        if (!ResultSetManager.getInstance().checkIfManualResultSetAvailable())
+        	jRBA2BManualrs.setEnabled(false);
+        
         // ------------------------------------------
 //        resultFilePath = getResultSetPath();
         // ------------------------------------------
@@ -719,7 +722,7 @@ public class EvaluationUI3 extends JFrame {
     }//GEN-LAST:event_fullevatableButtonActionPerformed
 
     private void evatablecleanallButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_evatablecleanallButtonActionPerformed
-        // TODO add your handling code here:
+    	this.realEvaTablePanel.cleanAllEvaTable();
     }//GEN-LAST:event_evatablecleanallButtonActionPerformed
 
         private void fullruntableButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fullruntableButtonActionPerformed
@@ -762,20 +765,25 @@ public class EvaluationUI3 extends JFrame {
         this.runFileCache = files;
         // -------------------------------------------------------------
 
-        ArrayList<String[]> result = retrieveRunData(files);
-        Object[][] r = new Object[result.size()][6];
-        int count = 0;
-        for (String[] x : result) {
-            r[count][0] = x[0];
-            r[count][1] = x[1];
-            r[count][2] = x[2];
-            r[count][3] = x[3];
-            r[count][4] = x[4];
-            r[count][5] = x[5];
-            count++;
-        }
-
-        this.realRunTablePanel.uploadFileToTable(r);
+        ArrayList<String[]> result;
+		try {
+			result = retrieveRunData(files);
+	        Object[][] r = new Object[result.size()][6];
+	        int count = 0;
+	        for (String[] x : result) {
+	            r[count][0] = x[0];
+	                r[count][1] = x[1];
+	                r[count][2] = x[2];
+	                r[count][3] = x[3];
+	                r[count][4] = x[4];
+	                r[count][5] = x[5];
+	                count++;
+	        }
+	        this.realRunTablePanel.uploadFileToTable(r);
+		} catch (Exception e) {
+			e.printStackTrace();
+			JOptionPane.showMessageDialog(this, e.getMessage(), "Exception Message", JOptionPane.ERROR_MESSAGE);
+		}
 
         // record the file name into "filedirectoryTextField"
         String strFiles = "";
@@ -861,22 +869,27 @@ public class EvaluationUI3 extends JFrame {
                 this.runFileCache = files;
                 // -------------------------------------------------------------
 
-                ArrayList<String[]> result = retrieveRunData(files);
-                Object[][] r = new Object[result.size()][6];
-                int count = 0;
-                for (String[] x : result) {
-                    r[count][0] = x[0];
-                    r[count][1] = x[1];
-                    r[count][2] = x[2];
-                    r[count][3] = x[3];
-                    r[count][4] = x[4];
-                    r[count][5] = x[5];
+                try {
+					ArrayList<String[]> result = retrieveRunData(files);
+					Object[][] r = new Object[result.size()][6];
+					int count = 0;
+					for (String[] x : result) {
+					    r[count][0] = x[0];
+					    r[count][1] = x[1];
+					    r[count][2] = x[2];
+					    r[count][3] = x[3];
+					    r[count][4] = x[4];
+					    r[count][5] = x[5];
 //                    r[count][6] = x[6];
 //                    r[count][7] = x[7];
-                    count++;
-                }
+					    count++;
+					}
 
-                this.realRunTablePanel.uploadFileToTable(r);
+					this.realRunTablePanel.uploadFileToTable(r);
+				} catch (Exception e) {
+					e.printStackTrace();
+					JOptionPane.showMessageDialog(this, e.getMessage(), "Exception Message", JOptionPane.ERROR_MESSAGE);
+				}
 
                 // record the file name into "filedirectoryTextField"
                 String strFiles = "";
@@ -1005,10 +1018,41 @@ public class EvaluationUI3 extends JFrame {
             if (result.size() > 1) {
 	            Hashtable compareHash = new Hashtable();
 
-	            for (int j = 1; j < objData.length; j = j + 2) {
+//	            int j = 2;
+//	            for (; j < objData.length; j = j + 2) {
+//	                ArrayList<Object[]> threeColl = new ArrayList<Object[]>();
+////	                threeColl.add(objData[j - 2]);
+//	                threeColl.add(objData[j - 1]);
+//	                threeColl.add(objData[j]);
+//	                compareHash.put(objData[j][2], threeColl);
+//	            }
+//	            Vector v = new Vector(compareHash.keySet());
+//	            Collections.sort(v, Collections.reverseOrder());
+//
+//	            evaData = new Object[result.size()][];
+//	            int sortIndex = 0;
+//	            int colorCount = 0;
+//	            for (Enumeration e = v.elements(); e.hasMoreElements();) {
+//	                Object key = (Object) e.nextElement();
+//	                ArrayList<Object[]> sortColl = (ArrayList<Object[]>) compareHash.get(key);
+//	                evaData[sortIndex] = sortColl.get(0);
+//	                evaData[sortIndex + 1] = sortColl.get(1);
+////	                evaData[sortIndex + 2] = sortColl.get(2);
+//	                if (colorCount < 5) {
+//	                    evaData[sortIndex][10] = spColor[colorCount][0];
+//	                    evaData[sortIndex + 1][10] = spColor[colorCount][1];
+////	                    evaData[sortIndex + 2][10] = spColor[colorCount][2];
+//	                    evaData[sortIndex][11] = Boolean.TRUE;
+//	                    evaData[sortIndex + 1][11] = Boolean.TRUE;
+////	                    evaData[sortIndex + 2][11] = Boolean.TRUE;
+//	                }
+//	                colorCount++;
+//	                sortIndex = sortIndex + 2;
+//	            }
+
+	            int j = 0;
+	            for (; j < objData.length; ++j) {
 	                ArrayList<Object[]> threeColl = new ArrayList<Object[]>();
-	//                threeColl.add(objData[j - 2]);
-	                threeColl.add(objData[j - 1]);
 	                threeColl.add(objData[j]);
 	                compareHash.put(objData[j][2], threeColl);
 	            }
@@ -1022,18 +1066,12 @@ public class EvaluationUI3 extends JFrame {
 	                Object key = (Object) e.nextElement();
 	                ArrayList<Object[]> sortColl = (ArrayList<Object[]>) compareHash.get(key);
 	                evaData[sortIndex] = sortColl.get(0);
-	                evaData[sortIndex + 1] = sortColl.get(1);
-	//                evaData[sortIndex + 2] = sortColl.get(2);
 	                if (colorCount < 5) {
 	                    evaData[sortIndex][10] = spColor[colorCount][0];
-	                    evaData[sortIndex + 1][10] = spColor[colorCount][1];
-	//                    evaData[sortIndex + 2][10] = spColor[colorCount][2];
 	                    evaData[sortIndex][11] = Boolean.TRUE;
-	                    evaData[sortIndex + 1][11] = Boolean.TRUE;
-	//                    evaData[sortIndex + 2][11] = Boolean.TRUE;
 	                }
 	                colorCount++;
-	                sortIndex = sortIndex + 2;
+	                sortIndex++;
 	            }
             }
             else {
@@ -1063,12 +1101,12 @@ public class EvaluationUI3 extends JFrame {
         ResultSetManager.getInstance().setEveluationType(ResultSetManager.A2B_WIKI_MANUAL);
     }//GEN-LAST:event_jRBA2BManualrsActionPerformed
 
-    private ArrayList<String[]> retrieveRunData(File[] file) {
+    private ArrayList<String[]> retrieveRunData(File[] file) throws Exception {
 
         int runInfoColumnLength = 8;
 //        resultFilePath = getResultSetPath();
 //        log(resultFilePath);
-        Hashtable resultLinks = ResultSetManager.getInstance().getResultSetLinks(resultSetPathFile); //ResultSetLinksNo(new File(resultFilePath));
+//        Hashtable resultLinks = ResultSetLinksNo(new File(resultFilePath));
 
         ArrayList<String[]> bigResult = new ArrayList<String[]>();
         // String[] result = null;
@@ -1081,6 +1119,17 @@ public class EvaluationUI3 extends JFrame {
                 if (unmarshal instanceof InexSubmission) {
                     InexSubmission bt = (InexSubmission) unmarshal;
 
+                    String currentSourceLang = bt.getSourceLang();
+                    if (currentSourceLang == null || currentSourceLang.length() == 0)
+                    	currentSourceLang = "en";
+                    
+                    // default lang is the target lang
+                    String currentTargetLang = bt.getDefaultLang();
+                    if (currentTargetLang == null || currentTargetLang.length() == 0)
+                    	throw new Exception(String.format("Incorrect run file - %s which dosen't provide the target language", file[i]));
+
+                    Hashtable resultLinks = ResultSetManager.getInstance().getResultSetLinksNo(currentSourceLang, currentTargetLang);
+                    
                     String id = bt.getParticipantId();
                     String rid = bt.getRunId();
                     for (TopicType topic : bt.getTopic()) {
