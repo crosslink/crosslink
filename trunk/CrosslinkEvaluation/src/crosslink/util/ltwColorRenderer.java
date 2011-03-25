@@ -29,8 +29,6 @@ public class ltwColorRenderer extends JLabel
                             JTable table, Object color,
                             boolean isSelected, boolean hasFocus,
                             int row, int column) {
-        Color newColor = (Color)color;
-        setBackground(newColor);
         if (isBordered) {
             if (isSelected) {
                 if (selectedBorder == null) {
@@ -46,10 +44,13 @@ public class ltwColorRenderer extends JLabel
                 setBorder(unselectedBorder);
             }
         }
-        
-        setToolTipText("RGB value: " + newColor.getRed() + ", "
-//                                     + newColor.getGreen() + ", "
-                                     + newColor.getBlue());
+        if (color != null) {
+	        Color newColor = (Color)color;
+	        setBackground(newColor);
+	        setToolTipText("RGB value: " + newColor.getRed() + ", "
+	//                                     + newColor.getGreen() + ", "
+	                                     + newColor.getBlue());
+        }
         return this;
     }
 }

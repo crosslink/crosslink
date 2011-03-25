@@ -14,6 +14,8 @@ import javax.xml.bind.Unmarshaller;
 
 import crosslink.resultsetGenerator.LtwResultsetType;
 
+import ltwassessment.utility.WildcardFiles;
+
 public class ResultSetManager {
 	
 	public static final int A2F_WIKI_GROUNDTRUTH = 0;
@@ -25,6 +27,8 @@ public class ResultSetManager {
 	private int evaluationType = A2F_WIKI_GROUNDTRUTH;
 	
 	private static final String RESULTSET_PARENT_PATH = "resultsets";
+	private static final String RESULTSET_MANUAL_NAME = "Manual";
+	private static final String RESULTSET_GROUNDTRUTH_NAME = "GroundTruth";
 	
 	private StringBuffer resultsetPath = new StringBuffer();
 	
@@ -90,6 +94,11 @@ public class ResultSetManager {
 		this.evaluationType = evaluationType;
 	}
 
+	public boolean checkIfManualResultSetAvailable() {
+		String manulResultSetWildcard = resultsetPath + "*" + RESULTSET_MANUAL_NAME + "*.xml";
+		return WildcardFiles.listFilesInStack(manulResultSetWildcard).size() > 0;
+	}
+	
 	public String getResultSetPathFile(String sourceLang, String targetLang) {
 //        String resultSetType = "";
         String resultSetFile = null;
@@ -155,6 +164,20 @@ public class ResultSetManager {
 	public Hashtable getResultSetLinks(String sourceLang, String targetLang) {
 		String resultSetPathFile = getResultSetPathFile(sourceLang, targetLang);
 		return getResultSetLinks(resultSetPathFile);
+	}
+	
+	public Hashtable getResultSetLinksNo(String resultSetPathFile) {
+		Hashtable table = resultsetLinksNo.get(resultSetPathFile);
+		if (table == null) {
+			loadResultSetLinks(resultSetPathFile);
+			table = resultsetLinksNo.get(resultSetPathFile);
+		}
+		return table;
+	}
+	
+	public Hashtable getResultSetLinksNo(String sourceLang, String targetLang) {
+		String resultSetPathFile = getResultSetPathFile(sourceLang, targetLang);
+		return getResultSetLinksNo(resultSetPathFile);
 	}
 
 	public void loadResultSetLinks(String sourceLang, String targetLang) {
@@ -233,7 +256,7 @@ public class ResultSetManager {
         }
         
         resultsetLinks.put(resultSetPathFile, resultTable);
-        resultsetLinksNo = Collections.synchronizedMap(new HashMap<String, Hashtable>()).put(resultSetPathFile, resultLinksTable);
+        resultsetLinksNo.put(resultSetPathFile, resultLinksTable);
         return resultTable;
 	}
 	

@@ -135,7 +135,8 @@ public class EvaTablePanel extends JPanel {
                 public void tableChanged(TableModelEvent e) {
                     if(e.getType()==TableModelEvent.UPDATE){
                         if(emodel.getColumnClass(e.getColumn()).equals(Color.class)){
-                            if(colorChange==true) return;
+                            if(colorChange==true) 
+                            	return;
                             colorChange = true;
                             Object color = emodel.getValueAt(e.getFirstRow(), e.getColumn());
                             Object runId = emodel.getValueAt(e.getFirstRow(), 0);
