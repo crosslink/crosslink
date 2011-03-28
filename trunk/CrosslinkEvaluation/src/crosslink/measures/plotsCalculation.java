@@ -96,7 +96,7 @@ public final class plotsCalculation extends Data {
                 double anchorScore = 0.0;
                 // key is Topic ID_outgoing/incoming
                 String key = e.nextElement().toString();
-                if (key.contains("Incoming"))
+                if (key.endsWith(incomingTag))
                 	continue;
 
                 // get RUN link ID Array according to key
@@ -264,9 +264,11 @@ public final class plotsCalculation extends Data {
         for (int i = 0; i < FormalRecallLevel.length; i++) {
             List<Double> PRlist = new ArrayList<Double>();
             Iterator it = iRP.keySet().iterator();
+            Object prKey = null;
+            double recallL = FormalRecallLevel[i];
             while (it.hasNext()) {
-                Object prKey = it.next();   // prKey == Real Recall Value
-                double recallL = FormalRecallLevel[i];
+                prKey = it.next();   // prKey == Real Recall Value
+
                 if (recallL == 0.05) {
                     if (((Double) prKey) <= recallL) {
                         PRlist.add(iRP.get(prKey));
@@ -283,6 +285,9 @@ public final class plotsCalculation extends Data {
                 preP[i] = Collections.max(PRlist);
             }
         }
+        /*
+         * The interpolated P/R has to go down
+         */
         while (true) {
             int count = 0;
             double tmp = 0.0;

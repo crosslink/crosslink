@@ -193,8 +193,8 @@ public class RunTablePanel extends JPanel {
         "Run ID",
         "Topic",
         "Name",
-        "# of Outgoing",
-        "Outgoing Result"/*,
+        "# of links",
+        "# of links in qrel"/*,
         "# of Incoming",
         "Incoming Result"*/
         };
