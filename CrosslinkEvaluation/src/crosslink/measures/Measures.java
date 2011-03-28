@@ -22,11 +22,6 @@ import javax.xml.stream.XMLStreamReader;
 import crosslink.rungenerator.InexSubmission;
 
 public class Measures extends Data {
-	
-    protected static boolean isUseAllTopics = false;
-    protected static boolean isFileToBEP = false;
-    protected static boolean isAnchorGToFile = false;
-    protected static boolean isAnchorGToBEP = false;
     // -------------------------------------------------------------------------
     // 1) to calculate the score of each BEP pointed from the Anchor Topic
     protected static int distanceFactor = 1000;
@@ -44,7 +39,7 @@ public class Measures extends Data {
     protected static int bepDenominator = 0;
     // -------------------------------------------------------------------------
     protected static boolean useOnlyAnchorGroup = false;
-    // -------------------------------------------------------------------------
+    
     
     // =========================================================================
     // -------------------------------------------------------------------------

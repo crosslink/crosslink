@@ -816,7 +816,9 @@ public final class fileToBepMeasures extends Measures {
         // Precision@: ONLY Caculate Precision value at the @5, 10, 20, 30, 50, 250 values
         int recallDegree = 6;
         //        int[] pAtValue = {10, 30, 50, 100, 200};
-        int[] pAtValue = {5, 10, 20, 30, 50, 250};
+      
+//      int[] pAtValue = {5, 10, 20, 30, 50, 250};
+        
         double[][] oiprecsat = new double[2][recallDegree];
         double[] outgoingPrecsAt = new double[recallDegree];
         double[] incomingPrecsAt = new double[recallDegree];
