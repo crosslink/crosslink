@@ -51,7 +51,7 @@
             <Property name="editable" type="boolean" value="false"/>
             <Property name="lineWrap" type="boolean" value="true"/>
             <Property name="rows" type="int" value="8"/>
-            <Property name="text" type="java.lang.String" value="Crosslink Evaluation @NTCIR 9&#xa;&#xa;Copyright (c) 2007-2010&#xa;Queensland University of Technology&#xa;&#x9;&#xa;Organizers: Shlomo Geva, Andrew Trotman, Yue Xu, Eric Tang,  and Darren Huang"/>
+            <Property name="text" type="java.lang.String" value="Crosslink Evaluation @NTCIR 9&#xa;&#xa;Version: 2.0&#xa;&#xa;Copyright (c) 2007-2010&#xa;Queensland University of Technology&#xa;&#x9;&#xa;Organizers: Shlomo Geva, Andrew Trotman, Yue Xu, Eric Tang,  and Darren Huang"/>
             <Property name="wrapStyleWord" type="boolean" value="true"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="null"/>

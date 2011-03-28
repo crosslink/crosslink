@@ -41,19 +41,6 @@ public final class metricsCalculation extends Data {
     public static int COL_NUM = 8;
     public static int RESULT_TYPE_NUM = 3;
 //    private static String runStatic;
-    private static boolean isUseAllTopics = false;
-    private static boolean isFileToBEP = false;
-    private static boolean isAnchorGToFile = false;
-    private static boolean isAnchorGToBEP = false;
-    // -------------------------------------------------------------------------
-    // define the number of links accepted in Incoming & Outgoing
-    private static boolean useRestrictedNum = false;
-    private static int limitedOutLinks = 50;
-    private static int limitedInLinks = 250;
-
-    private static void errlog(Object aObject) {
-        System.err.println(String.valueOf(aObject));
-    }
 
     private metricsCalculation() {
     }
@@ -374,7 +361,7 @@ public final class metricsCalculation extends Data {
         // Precision@: ONLY Caculate Precision value at the @5, 10, 20, 30, 50, 250 values
         int recallDegree = 6;
         //        int[] pAtValue = {10, 30, 50, 100, 200};
-        int[] pAtValue = {5, 10, 20, 30, 50, 250};
+//        int[] pAtValue = {5, 10, 20, 30, 50, 250};
         double[][] oiprecsat = new double[2][recallDegree];
         double[] outgoingPrecsAt = new double[recallDegree];
         double[] incomingPrecsAt = new double[recallDegree];

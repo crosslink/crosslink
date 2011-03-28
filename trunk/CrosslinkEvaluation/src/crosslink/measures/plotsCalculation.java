@@ -37,20 +37,6 @@ public final class plotsCalculation extends Data {
     };
     public static int RESULT_TYPE_NUM = 3;
 //    private static String plotStatic;
-    private static boolean isUseAllTopics = false;
-    private static boolean isFileToBEP = false;
-    private static boolean isAnchorGToFile = false;
-    private static boolean isAnchorGToBEP = false;
-
-    // -------------------------------------------------------------------------
-    private static boolean useRestrictedNum = false;
-    // define the number of links accepted in Incoming & Outgoing
-    private static int limitedOutLinks = 50;
-    private static int limitedInLinks = 250;
-
-    private static void errlog(Object aObject) {
-        System.err.println(String.valueOf(aObject));
-    }
 
     public plotsCalculation() {
     }
@@ -92,7 +78,7 @@ public final class plotsCalculation extends Data {
             plotResult.plotRunId = runId;
 
             // =================================================================
-            HashMap incomingPRData = new HashMap();
+//            HashMap incomingPRData = new HashMap();
             HashMap outgoingPRData = new HashMap();
 
             double incomingAPs = 0.0;
@@ -110,6 +96,8 @@ public final class plotsCalculation extends Data {
                 double anchorScore = 0.0;
                 // key is Topic ID_outgoing/incoming
                 String key = e.nextElement().toString();
+                if (key.contains("Incoming"))
+                	continue;
 
                 // get RUN link ID Array according to key
                 String[] runValues = (String[]) runTable.get(key);
@@ -199,34 +187,34 @@ public final class plotsCalculation extends Data {
                 HashMap InterpolatedPR = PRPairFormalization(RPmap);
                 if (key.endsWith(outgoingTag)) {
                     outgoingPRData.put(key, InterpolatedPR);
-                } else if (key.endsWith(incomingTag)) {
+                } /*else if (key.endsWith(incomingTag)) {
                     incomingPRData.put(key, InterpolatedPR);
-                }
+                }*/
             }
             // =================================================================
             // For incoming links: calculate the average precision score
             //                     for each submission
-            for (int j = 0; j < FormalRecallLevel.length; j++) {
-                int inCount = 0;
-                double inaveP = 0.0;
-                Iterator in = incomingPRData.keySet().iterator();
-                while (in.hasNext()) {
-                    Object inKey = in.next();
-                    HashMap inAvePR = (HashMap) incomingPRData.get(inKey);
-                    Double v = (Double) inAvePR.get(FormalRecallLevel[j]);
-                    inaveP += v;
-                    inCount++;
-                }
-                // -------------------------------------------------------------
-                double inAP = 0.0;
-                if (isUseAllTopics) {
-                    inAP = (double) inaveP / (resultTable.size() / 2);
-                } else {
-                    inAP = (double) inaveP / inCount;
-                }
-                // -------------------------------------------------------------
-                plotResult.incomming[j] = inAP;
-            }
+//            for (int j = 0; j < FormalRecallLevel.length; j++) {
+//                int inCount = 0;
+//                double inaveP = 0.0;
+//                Iterator in = incomingPRData.keySet().iterator();
+//                while (in.hasNext()) {
+//                    Object inKey = in.next();
+//                    HashMap inAvePR = (HashMap) incomingPRData.get(inKey);
+//                    Double v = (Double) inAvePR.get(FormalRecallLevel[j]);
+//                    inaveP += v;
+//                    inCount++;
+//                }
+//                // -------------------------------------------------------------
+//                double inAP = 0.0;
+//                if (isUseAllTopics) {
+//                    inAP = (double) inaveP / (resultTable.size() / 2);
+//                } else {
+//                    inAP = (double) inaveP / inCount;
+//                }
+//                // -------------------------------------------------------------
+//                plotResult.incomming[j] = inAP;
+//            }
             // =================================================================
             // For outgoing links: calculate the average precision score
             //                     for each submission

@@ -22,12 +22,30 @@ public class Data {
     protected static String currentSourceLang = null;
     protected static String currentTargetLang = null;
     
+    // -------------------------------------------------------------------------
+    // define the number of links accepted in Incoming & Outgoing
+    protected static boolean useRestrictedNum = false;
+    protected static int limitedOutLinks = 50;
+    protected static int limitedInLinks = 250;
+    
+    protected static boolean isUseAllTopics = false;
+    protected static boolean isFileToBEP = false;
+    protected static boolean isAnchorGToFile = false;
+    protected static boolean isAnchorGToBEP = false;
+    
+    // -------------------------------------------------------------------------
+    // fro anchor to bep evaluation using manual assessment result
+    protected static int[] pAtValue = {5, 10, 20, 30, 50, 250};
+    // fro anchor to file (file to file) evaluation using Wikipedia ground truth
+    protected static int[] pAtValue_A2F = {5, 10, 20, 30, 50, 100};
+    
+    
 //    protected static void 
     protected static void log(Object aObject) {
         System.out.println(String.valueOf(aObject));
     }
     
-    private static void errlog(Object aObject) {
+    protected static void errlog(Object aObject) {
         System.err.println(String.valueOf(aObject));
     }
     
