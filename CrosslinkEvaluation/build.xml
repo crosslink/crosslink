@@ -71,4 +71,19 @@
     nbproject/build-impl.xml file. 
 
     -->
+    <target name="release" depends="CrosslinkEvaluation-impl.jar">
+    	  <tstamp>
+    	    <format property="TODAY" pattern="yyyyMMdd"/>
+    	  </tstamp>
+    	  <property name="release.file" value="CrosslinkEvaluation-${TODAY}.zip" />
+    	  <delete file="${release.file}"/>
+    	  <zip destfile="${release.file}">
+    	  	<zipfileset dir="resultsets" prefix="resultsets"/>
+    	  	<zipfileset dir="lib" prefix="lib" />
+    	  	<zipfileset dir="." includes="Instruction.pdf"/>
+    	  	<zipfileset dir="." includes="CrosslinkSubmissionSchema.xsd"/>
+    	  	<zipfileset dir="." includes="run.*"/>
+    	  	<zipfileset dir="${dist.dir}" includes="*.jar"/>
+    	  </zip>
+    </target>
 </project>
