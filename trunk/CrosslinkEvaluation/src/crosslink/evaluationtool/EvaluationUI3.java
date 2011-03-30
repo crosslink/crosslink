@@ -1094,10 +1094,13 @@ public class EvaluationUI3 extends JFrame {
     }//GEN-LAST:event_filecleanButton1ActionPerformed
 
     private void jRBF2FWikirsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRBF2FWikirsActionPerformed
+        jRBAnchorToBEP.setEnabled(false);
+        jRBFileToFile.setSelected(true);
         ResultSetManager.getInstance().setEveluationType(ResultSetManager.A2F_WIKI_GROUNDTRUTH);
     }//GEN-LAST:event_jRBF2FWikirsActionPerformed
 
     private void jRBA2BManualrsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRBA2BManualrsActionPerformed
+        jRBAnchorToBEP.setEnabled(true);
         ResultSetManager.getInstance().setEveluationType(ResultSetManager.A2B_WIKI_MANUAL);
     }//GEN-LAST:event_jRBA2BManualrsActionPerformed
 
