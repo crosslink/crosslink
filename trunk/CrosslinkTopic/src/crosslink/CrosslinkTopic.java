@@ -36,7 +36,20 @@ public class CrosslinkTopic {
 		StringBuffer sb = new StringBuffer();
 		while((pos = content.indexOf(LINK_START, pos)) > -1) {
 			sb.append(content.substring(pre_pos, pos));
-			pos = content.indexOf(LINK_END, pos);
+			
+			while (content.charAt(pos) != '>')
+				++pos;
+			++pos;
+			
+			while (content.charAt(pos) == '\r' || content.charAt(pos) == '\n')
+				++pos;
+			
+			pre_pos = pos;
+			
+			pos = content.indexOf(LINK_END, pre_pos);
+			
+			sb.append(content.substring(pre_pos, pos));
+			
 			pos += LINK_END.length();
 			while (content.charAt(pos) == '\r' || content.charAt(pos) == '\n')
 				++pos;
@@ -67,9 +80,10 @@ public class CrosslinkTopic {
 		for (String file : files) {
 			try {
 				String result = cleanLink(new String(readTopic(file), "UTF-8"));
-				StringBuffer resultFile = new StringBuffer(file);
+				StringBuffer resultFile = new StringBuffer(new File(file).getName());
 				if (outputPath != null && outputPath.length() > 0)
 					resultFile.insert(0, outputPath + File.separator);
+//				resultFile.append(new File(file).getName());
 				writeTopic(resultFile.toString(), result);
 			} catch (UnsupportedEncodingException e) {
 				e.printStackTrace();
@@ -112,7 +126,9 @@ public class CrosslinkTopic {
 				files = args;
 			
 			crosslinkTopic.processTopic(files);
+			return;
 		}
+
 		usage();
 	}
 }
