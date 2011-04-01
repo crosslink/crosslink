@@ -14,6 +14,9 @@ public class CrosslinkTopic {
 
 	private String outputPath = null;
 	
+	private static final String LINK_START = "<link";
+	private static final String LINK_END = "</link>";
+	
 	public CrosslinkTopic() {
 		
 	}
@@ -29,10 +32,18 @@ public class CrosslinkTopic {
 //		
 //		System.arraycopy(copy, 0, result, 0, count);
 		int pos = 0;
+		int pre_pos = 0;
 		StringBuffer sb = new StringBuffer();
-		while((pos = content.indexOf("<link)) > -1) {
-			
+		while((pos = content.indexOf(LINK_START, pos)) > -1) {
+			sb.append(content.substring(pre_pos, pos));
+			pos = content.indexOf(LINK_END, pos);
+			pos += LINK_END.length();
+			while (content.charAt(pos) == '\r' || content.charAt(pos) == '\n')
+				++pos;
+			pre_pos = pos;
 		}
+		if (pos < 0)
+			sb.append(content.substring(pre_pos));
 		
 		return sb.toString();
 	}
