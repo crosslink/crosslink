@@ -181,7 +181,9 @@ public class LTWAssessmentToolView extends FrameView {
         if (wikiCollectionFolder.exists()) {
             log("The Wikipedia Collection is ready.");
         } else {
-        	LTWAssessmentToolApp.getApplication().showCorpusBox();
+        	defaultWikipediaDirectory = resourcesManager.getInstance().getWikipediaCollectionFolder();
+        	if (!new File(defaultWikipediaDirectory).exists())
+        		LTWAssessmentToolApp.getApplication().showCorpusBox();
         	wikiCollectionFolder = new File(resourcesManager.getInstance().getWikipediaCollectionFolder());
         }
         

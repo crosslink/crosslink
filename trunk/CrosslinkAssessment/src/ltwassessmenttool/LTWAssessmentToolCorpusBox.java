@@ -56,10 +56,10 @@ public class LTWAssessmentToolCorpusBox extends javax.swing.JDialog {
             File myWikipediaDir = new File(myWikipediaPath);
 //            File myTeAraDir = new File(myTeAraPath);
             if (!myWikipediaDir.isDirectory() /*&& !myTeAraDir.isDirectory()*/) {
-                String notDirMsg = "Wikipedia and TeAra Collection location must be Directory.";
+                String notDirMsg = "Wikipedia Collections location must be Directory.";
                 JOptionPane.showMessageDialog(rootPane, notDirMsg);
             } else if (!myWikipediaDir.isDirectory()) {
-                String notDirMsg = "Wikipedia Collection location must be a Directory.";
+                String notDirMsg = "Wikipedia Collections location must be a Directory.";
                 JOptionPane.showMessageDialog(rootPane, notDirMsg);
             } /*else if (!myTeAraDir.isDirectory()) {
                 String notDirMsg = "TeAra Collection location must be a Directory.";
@@ -100,7 +100,7 @@ public class LTWAssessmentToolCorpusBox extends javax.swing.JDialog {
                 // get & Display Directory Path
                 this.wikiPathTxtField.setText(absFilePath);
             } else {
-                String notDirMsg = "Please select the Top Directory of the Wikipedia 2009 Collection.";
+                String notDirMsg = "Please select the Top Directory of the Wikipedia Collections.";
                 JOptionPane.showMessageDialog(this, notDirMsg);
             }
         }
