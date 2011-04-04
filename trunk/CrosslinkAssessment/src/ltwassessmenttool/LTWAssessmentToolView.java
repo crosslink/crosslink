@@ -352,6 +352,7 @@ public class LTWAssessmentToolView extends FrameView {
         statusMessageLabel = new javax.swing.JLabel();
         jlblColorIncomplete = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
+        buttonGroup1 = new javax.swing.ButtonGroup();
 
         org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(ltwassessmenttool.LTWAssessmentToolApp.class).getContext().getResourceMap(LTWAssessmentToolView.class);
         mainPanel.setBackground(resourceMap.getColor("mainPanel.background")); // NOI18N
@@ -455,7 +456,7 @@ public class LTWAssessmentToolView extends FrameView {
                     .addComponent(jLabel4))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblTopicTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 345, Short.MAX_VALUE)
+                    .addComponent(lblTopicTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 356, Short.MAX_VALUE)
                     .addComponent(lblTopicID, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -469,15 +470,15 @@ public class LTWAssessmentToolView extends FrameView {
                         .addComponent(jLabel2)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblTargetTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 320, Short.MAX_VALUE)
+                    .addComponent(lblTargetTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 331, Short.MAX_VALUE)
                     .addComponent(lblTargetID, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(mainPanelLayout.createSequentialGroup()
                         .addComponent(jLabel7)
                         .addGap(28, 28, 28)
-                        .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, 197, Short.MAX_VALUE))
-                    .addComponent(lblCompletion, javax.swing.GroupLayout.DEFAULT_SIZE, 307, Short.MAX_VALUE))
+                        .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, 223, Short.MAX_VALUE))
+                    .addComponent(lblCompletion, javax.swing.GroupLayout.DEFAULT_SIZE, 318, Short.MAX_VALUE))
                 .addContainerGap())
             .addComponent(jSplitPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1393, Short.MAX_VALUE)
         );
@@ -512,7 +513,7 @@ public class LTWAssessmentToolView extends FrameView {
                             .addComponent(lblTopicTitle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(lblCompletion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jSplitPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 572, Short.MAX_VALUE))
+                .addComponent(jSplitPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 567, Short.MAX_VALUE))
         );
 
         menuBar.setBackground(resourceMap.getColor("menuBar.background")); // NOI18N
@@ -568,7 +569,7 @@ public class LTWAssessmentToolView extends FrameView {
         jMenuLang.setText(resourceMap.getString("jMenuLang.text")); // NOI18N
         jMenuLang.setName("jMenuLang"); // NOI18N
 
-        jRadioButtonMenuItemZh.setSelected(true);
+        buttonGroup1.add(jRadioButtonMenuItemZh);
         jRadioButtonMenuItemZh.setText(resourceMap.getString("jRadioButtonMenuItemZh.text")); // NOI18N
         jRadioButtonMenuItemZh.setName("jRadioButtonMenuItemZh"); // NOI18N
         jRadioButtonMenuItemZh.addActionListener(new java.awt.event.ActionListener() {
@@ -578,7 +579,7 @@ public class LTWAssessmentToolView extends FrameView {
         });
         jMenuLang.add(jRadioButtonMenuItemZh);
 
-        jRadioButtonMenuItemJa.setSelected(true);
+        buttonGroup1.add(jRadioButtonMenuItemJa);
         jRadioButtonMenuItemJa.setText(resourceMap.getString("jRadioButtonMenuItemJa.text")); // NOI18N
         jRadioButtonMenuItemJa.setName("jRadioButtonMenuItemJa"); // NOI18N
         jRadioButtonMenuItemJa.addActionListener(new java.awt.event.ActionListener() {
@@ -588,7 +589,7 @@ public class LTWAssessmentToolView extends FrameView {
         });
         jMenuLang.add(jRadioButtonMenuItemJa);
 
-        jRadioButtonMenuItemKo.setSelected(true);
+        buttonGroup1.add(jRadioButtonMenuItemKo);
         jRadioButtonMenuItemKo.setText(resourceMap.getString("jRadioButtonMenuItemKo.text")); // NOI18N
         jRadioButtonMenuItemKo.setName("jRadioButtonMenuItemKo"); // NOI18N
         jRadioButtonMenuItemKo.addActionListener(new java.awt.event.ActionListener() {
@@ -664,7 +665,7 @@ public class LTWAssessmentToolView extends FrameView {
             .addComponent(statusPanelSeparator, javax.swing.GroupLayout.DEFAULT_SIZE, 1393, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, statusPanelLayout.createSequentialGroup()
                 .addComponent(jLabel8)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
                 .addComponent(jlblColorCurrentAnchor, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jlblColorNotAssessed)
@@ -1017,6 +1018,7 @@ public class LTWAssessmentToolView extends FrameView {
     // <editor-fold defaultstate="collapsed" desc="Pre-Variables-Declaration">
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnGoBack;
+    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JRadioButtonMenuItem inRadioBtn;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
@@ -1044,7 +1046,7 @@ public class LTWAssessmentToolView extends FrameView {
     private javax.swing.JLabel lblTopicID;
     private javax.swing.JLabel lblTopicTitle;
     private javax.swing.JMenu linkMenu;
-    private static javax.swing.JTextPane linkTextPane;
+    private javax.swing.JTextPane linkTextPane;
     private javax.swing.JScrollPane linkTextScrollPane;
     private javax.swing.JMenuItem loadMenuItem;
     private javax.swing.JPanel mainPanel;
@@ -1054,7 +1056,7 @@ public class LTWAssessmentToolView extends FrameView {
     private javax.swing.JLabel statusAnimationLabel;
     private javax.swing.JLabel statusMessageLabel;
     private javax.swing.JPanel statusPanel;
-    private static javax.swing.JTextPane topicTextPane;
+    private javax.swing.JTextPane topicTextPane;
     private javax.swing.JScrollPane topicTextScrollPane;
     private javax.swing.JMenu utilMenu;
     // End of variables declaration//GEN-END:variables
