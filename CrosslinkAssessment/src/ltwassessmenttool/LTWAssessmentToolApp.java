@@ -4,7 +4,10 @@
 
 package ltwassessmenttool;
 
+import java.awt.Dialog.ModalityType;
+
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 import org.jdesktop.application.Application;
 import org.jdesktop.application.SingleFrameApplication;
@@ -14,7 +17,7 @@ import org.jdesktop.application.SingleFrameApplication;
  */
 public class LTWAssessmentToolApp extends SingleFrameApplication {
 	
-	private static LTWAssessmentToolCorpusBox corpusBox = null;
+	private LTWAssessmentToolCorpusBox corpusBox = null;
 
     /**
      * At startup create and show the main frame of the application.
@@ -46,13 +49,23 @@ public class LTWAssessmentToolApp extends SingleFrameApplication {
         launch(LTWAssessmentToolApp.class, args);
     }
     
-    public static void showCorpusBox() {
+    public void showCorpusBox() {
         if (corpusBox == null) {
             JFrame mainFrame = LTWAssessmentToolApp.getApplication().getMainFrame();
             corpusBox = new LTWAssessmentToolCorpusBox(mainFrame);
+            //corpusBox.setModal(true);
+//            corpusBox.setModalityType(ModalityType.APPLICATION_MODAL);
+//            JOptionPane optionPane = new JOptionPane(
+//                    "The only way to close this dialog is by\n"
+//                        + "pressing one of the following buttons.\n"
+//                        + "Do you understand?", JOptionPane.QUESTION_MESSAGE,
+//                    JOptionPane.YES_NO_OPTION);
+//            corpusBox.setContentPane(optionPane);
             corpusBox.setLocationRelativeTo(mainFrame);
+            corpusBox.pack();
 //            ((LTWAssessmentToolCorpusBox) corpusBox).setJLableCollection(this.jLabelCollection);
         }
-        LTWAssessmentToolApp.getApplication().show(corpusBox);
+        corpusBox.setVisible(true);
+        //LTWAssessmentToolApp.getApplication().show(corpusBox);
     }
 }

@@ -180,7 +180,11 @@ public class LTWAssessmentToolView extends FrameView {
         File wikiCollectionFolder = new File(defaultWikipediaDirectory);
         if (wikiCollectionFolder.exists()) {
             log("The Wikipedia Collection is ready.");
+        } else {
+        	LTWAssessmentToolApp.getApplication().showCorpusBox();
+        	wikiCollectionFolder = new File(resourcesManager.getInstance().getWikipediaCollectionFolder());
         }
+        
         // 0-2) TeAra
         File tearaCollectionFolder = new File(defaultTeAraDirectory);
         if (tearaCollectionFolder.exists()) {
