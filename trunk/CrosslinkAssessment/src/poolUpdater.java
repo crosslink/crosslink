@@ -22,7 +22,7 @@ public class poolUpdater {
     static void log(Object obj) {
         System.out.println(obj.toString());
     }
-    private static String poolXMLPath = "resources\\Pool\\wikipedia_pool_TEST.xml";
+    private static String poolXMLPath = "resources" + File.separator + "Pool" + File.separator + "wikipedia_pool_TEST.xml";
     private static int option = 5;
 
     public static void main(String[] args) {

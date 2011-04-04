@@ -28,7 +28,7 @@ public class findPageTitle {
     public static void main(String[] args) {
 
         // title: <title>1985 BDO World Darts Championship</title>
-        String xmlPath = "resources\\collection_Wikipedia\\017\\7483017.xml";
+        String xmlPath = "resources" + File.separator + "collection_Wikipedia\\017\\7483017.xml";
         pageTitleExtractor(xmlPath);
 
     }

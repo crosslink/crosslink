@@ -55,8 +55,8 @@ public class linkPaneMouseListener implements MouseInputListener {
 
     protected final String poolXmlFileName = "wikipedia_pool.xml";
     protected final String loggerFileName = "_ltwAssessTool2009.log";
-    protected final String poolAndLogDir = "ltwTool\\resources\\Pool";
-    protected final String inexLTWURL = "http://www.inex.otago.ac.nz/tracks/wiki-link/wiki-link.asp";
+    protected final String poolAndLogDir = "resources" + File.separator + "Pool";
+    protected final String crosslinkURL = "http://ntcir.nii.ac.jp/CrossLink/";
     // Declare global variables
     protected final int bepLength = 4;
     private final String sysPropertyKey = "isTABKey";
@@ -97,7 +97,7 @@ public class linkPaneMouseListener implements MouseInputListener {
 
     private void logger(Object aObj) {
         try {
-            String targetFile = "resources\\Pool\\T" + this.topicID + "_ltwAssessTool2009.log";
+            String targetFile = "resources" + File.separator + "Pool" + File.separator + "T" + this.topicID + "_ltwAssessTool2009.log";
             File poolFileWithName = new File(targetFile);
             BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(
 			        new FileOutputStream(poolFileWithName), "UTF8")); //new BufferedWriter(new FileWriter(poolFileWithName, true));
@@ -118,9 +118,9 @@ public class linkPaneMouseListener implements MouseInputListener {
     private int globalPoolBackupCounter = 0;
 
     private void backupPool() {
-        String sourcePoolFPath = "resources\\Pool\\wikipedia_pool.xml";
+        String sourcePoolFPath = "resources" + File.separator + "Pool" + File.separator + "wikipedia_pool.xml";
         File srcFile = new File(sourcePoolFPath);
-        String backupPoolDir = "resources\\Pool\\POOL_BACKUP\\";
+        String backupPoolDir = "resources" + File.separator + "Pool" + File.separator + "POOL_BACKUP" + File.separator;
         DateFormat dateFormat = new SimpleDateFormat("yyMMddHHmmss");
         Date date = new Date();
         String currentDateTime = dateFormat.format(date).toString();
@@ -465,7 +465,7 @@ public class linkPaneMouseListener implements MouseInputListener {
                     JOptionPane.OK_OPTION);
             if (option == JOptionPane.OK_OPTION || option == JOptionPane.CLOSED_OPTION) {
                 BrowserControl openBrowser = new BrowserControl();
-                openBrowser.displayURL(inexLTWURL);
+                openBrowser.displayURL(crosslinkURL);
                 javax.swing.SwingUtilities.getWindowAncestor(this.myLinkPane).setVisible(false);
                 javax.swing.SwingUtilities.getWindowAncestor(this.myLinkPane).dispose();
                 System.exit(0);
