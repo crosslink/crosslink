@@ -10,9 +10,8 @@
 	<classpathentry kind="lib" path="lib/xercesImpl.jar"/>
 	<classpathentry kind="lib" path="lib/xml-apis.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/AssessmentEngine"/>
-	<classpathentry kind="lib" path="/AssessmentEngine/dist/assessment-engine.jar" sourcepath="/AssessmentEngine/src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="/AssessmentEngine/bin"/>
-	<classpathentry kind="lib" path="/xml2txt/dist/xml2txt.jar"/>
+	<classpathentry kind="lib" path="lib/xml2txt.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

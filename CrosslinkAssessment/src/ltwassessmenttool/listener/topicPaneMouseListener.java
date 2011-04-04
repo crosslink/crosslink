@@ -99,7 +99,7 @@ public class topicPaneMouseListener implements MouseInputListener {
 
     private void logger(Object aObj) {
         try {
-            String targetFile = "resources\\Pool\\T" + this.currTopicID + "_ltwAssessTool2009.log";
+            String targetFile = "resources" + File.separator + "Pool" + File.separator + "T" + this.currTopicID + "_ltwAssessTool2009.log";
             File poolFileWithName = new File(targetFile);
             BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(
 			        new FileOutputStream(poolFileWithName), "UTF8")); //new BufferedWriter(new FileWriter(poolFileWithName, true));
