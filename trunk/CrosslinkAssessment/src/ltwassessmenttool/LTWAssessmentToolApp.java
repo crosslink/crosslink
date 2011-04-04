@@ -4,6 +4,8 @@
 
 package ltwassessmenttool;
 
+import javax.swing.JFrame;
+
 import org.jdesktop.application.Application;
 import org.jdesktop.application.SingleFrameApplication;
 
@@ -11,6 +13,8 @@ import org.jdesktop.application.SingleFrameApplication;
  * The main class of the application.
  */
 public class LTWAssessmentToolApp extends SingleFrameApplication {
+	
+	private static LTWAssessmentToolCorpusBox corpusBox = null;
 
     /**
      * At startup create and show the main frame of the application.
@@ -40,5 +44,15 @@ public class LTWAssessmentToolApp extends SingleFrameApplication {
      */
     public static void main(String[] args) {
         launch(LTWAssessmentToolApp.class, args);
+    }
+    
+    public static void showCorpusBox() {
+        if (corpusBox == null) {
+            JFrame mainFrame = LTWAssessmentToolApp.getApplication().getMainFrame();
+            corpusBox = new LTWAssessmentToolCorpusBox(mainFrame);
+            corpusBox.setLocationRelativeTo(mainFrame);
+//            ((LTWAssessmentToolCorpusBox) corpusBox).setJLableCollection(this.jLabelCollection);
+        }
+        LTWAssessmentToolApp.getApplication().show(corpusBox);
     }
 }
