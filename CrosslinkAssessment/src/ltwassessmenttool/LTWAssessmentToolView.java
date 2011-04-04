@@ -1046,7 +1046,7 @@ public class LTWAssessmentToolView extends FrameView {
     private javax.swing.JLabel lblTopicID;
     private javax.swing.JLabel lblTopicTitle;
     private javax.swing.JMenu linkMenu;
-    private javax.swing.JTextPane linkTextPane;
+    private static javax.swing.JTextPane linkTextPane;
     private javax.swing.JScrollPane linkTextScrollPane;
     private javax.swing.JMenuItem loadMenuItem;
     private javax.swing.JPanel mainPanel;
@@ -1056,7 +1056,7 @@ public class LTWAssessmentToolView extends FrameView {
     private javax.swing.JLabel statusAnimationLabel;
     private javax.swing.JLabel statusMessageLabel;
     private javax.swing.JPanel statusPanel;
-    private javax.swing.JTextPane topicTextPane;
+    private static javax.swing.JTextPane topicTextPane;
     private javax.swing.JScrollPane topicTextScrollPane;
     private javax.swing.JMenu utilMenu;
     // End of variables declaration//GEN-END:variables
