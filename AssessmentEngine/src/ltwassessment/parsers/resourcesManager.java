@@ -1920,7 +1920,7 @@ public class resourcesManager {
         String currAnchorO = currAnchorOLSA[0];
         String currAnchorL = currAnchorOLSA[1];
         // SP, EP
-        String currAnchorS = "";
+        String currAnchorS = "0";
         String currAnchorE = "";
         
         String extensionLength = null;
