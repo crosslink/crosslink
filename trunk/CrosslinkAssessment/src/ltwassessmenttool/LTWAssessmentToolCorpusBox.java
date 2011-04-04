@@ -17,10 +17,10 @@ import org.jdesktop.application.Action;
 public class LTWAssessmentToolCorpusBox extends javax.swing.JDialog {
 
     resourcesManager toolRscManager = null;
-    private JLabel jLableCollection = null;
+//    private JLabel jLableCollection = null;
 
     public LTWAssessmentToolCorpusBox(java.awt.Frame parent) {
-        super(parent);
+        super(parent, true);
         initComponents();
         toolRscManager = resourcesManager.getInstance();
         getRootPane().setDefaultButton(OkBtn);
@@ -35,9 +35,9 @@ public class LTWAssessmentToolCorpusBox extends javax.swing.JDialog {
 //        }
     }
 
-    public void setJLableCollection(JLabel lableCollection) {
-		jLableCollection = lableCollection;
-	}
+//    public void setJLableCollection(JLabel lableCollection) {
+//		jLableCollection = lableCollection;
+//	}
 
 	@Action
     public void OKCorpusBox() {
@@ -65,7 +65,7 @@ public class LTWAssessmentToolCorpusBox extends javax.swing.JDialog {
                 String notDirMsg = "TeAra Collection location must be a Directory.";
                 JOptionPane.showMessageDialog(rootPane, notDirMsg);
             } */else {
-            	jLableCollection.setText(myWikipediaPath);
+//            	jLableCollection.setText(myWikipediaPath);
                 toolRscManager.updateWikipediaCollectionDirectory(myWikipediaPath);
 //                toolRscManager.updateTeAraCollectionDirectory(myTeAraPath);
                 dispose();
@@ -152,6 +152,8 @@ public class LTWAssessmentToolCorpusBox extends javax.swing.JDialog {
         jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setModal(true);
+        setModalExclusionType(java.awt.Dialog.ModalExclusionType.APPLICATION_EXCLUDE);
         setName("Form"); // NOI18N
 
         imageLabel.setName("imageLabel"); // NOI18N
@@ -181,6 +183,7 @@ public class LTWAssessmentToolCorpusBox extends javax.swing.JDialog {
         cancelBtn.setName("cancelBtn"); // NOI18N
 
         jLabel4.setFont(resourceMap.getFont("jLabel4.font")); // NOI18N
+        jLabel4.setForeground(resourceMap.getColor("jLabel4.foreground")); // NOI18N
         jLabel4.setText(resourceMap.getString("jLabel4.text")); // NOI18N
         jLabel4.setName("jLabel4"); // NOI18N
 
@@ -204,11 +207,11 @@ public class LTWAssessmentToolCorpusBox extends javax.swing.JDialog {
                         .addGroup(layout.createSequentialGroup()
                             .addGap(6, 6, 6)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.LEADING))
-                                .addComponent(OkBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(OkBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel4)
+                                    .addComponent(jLabel1)
+                                    .addComponent(jLabel5)))
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 16, Short.MAX_VALUE)
                             .addComponent(cancelBtn)))
                     .addGroup(layout.createSequentialGroup()
@@ -218,13 +221,13 @@ public class LTWAssessmentToolCorpusBox extends javax.swing.JDialog {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(imageLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 233, Short.MAX_VALUE)
+            .addComponent(imageLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 283, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 44, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel2)
