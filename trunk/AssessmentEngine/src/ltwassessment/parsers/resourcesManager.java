@@ -1599,7 +1599,8 @@ public class resourcesManager {
         // Hashtable<String, Vector<String[]>>
         // outgoing : topicID, V<String[]{anchor Offset, Length, Name, arel}>
         topicAllAnchors = pooler.getTopicAllAnchors();
-        Vector<String[]> poolAnchorsOLV = topicAllAnchors.elements().nextElement();
+        String topicID = this.getTopicID();
+        Vector<String[]> poolAnchorsOLV = topicAllAnchors.get("outgoing : " + topicID); //topicAllAnchors.elements().nextElement();
         Vector<String[]> sortedPoolAnchorsOLV = sortOLVectorSANumbers(poolAnchorsOLV);
         return sortedPoolAnchorsOLV;
     }

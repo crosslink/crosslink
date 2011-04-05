@@ -4,9 +4,9 @@
 	<collection>Korean Wikipedia 2010 Collection</collection>
 	<topic file="19501" name="Martial arts">
 		<outgoinglinks>
-			<anchor arel="0" aname="Martial arts" aoffset="331" alength="12" ext_length="0">
+			<anchor arel="1" aname="Martial arts" aoffset="331" alength="12" ext_length="0">
 				<subanchor sarel="0" saname="Martial arts" saoffset="331" salength="12" rank="30">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="武術">1105</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="武術">1105</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Performing arts" aoffset="554" alength="15" ext_length="0">
