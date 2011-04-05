@@ -352,7 +352,7 @@ public class CrosslinkMining {
 	
 	public static void usage() {
 		System.out.println("arg[0] source and target language pair, e.g en:zh");
-		System.out.println("arg[1] crosslink table path");
+		System.out.println("arg[1] crosslink tables path");
 		System.out.println("arg[2] source topics path");
 		System.out.println("arg[3] target topics path");
 		System.out.println("arg[4] corpora home");
