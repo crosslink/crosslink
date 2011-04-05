@@ -90,6 +90,8 @@ public class linkPaneMouseListener implements MouseInputListener {
     private ObservableSingleton os = null;
     private Hashtable<String, String[]> topicAnchorOLTSENHT = new Hashtable<String, String[]>();
     private Hashtable<String, Object> myTAnchorSEHiObj = new Hashtable<String, Object>();
+    
+    private boolean showOnce = false;
 
     private void log(String txt) {
         System.out.println(txt);
@@ -456,10 +458,10 @@ public class linkPaneMouseListener implements MouseInputListener {
 //        log("COMPLETION ... ");
         String[] tabCompletedRatio = this.myRSCManager.getOutgoingCompletion();
 //        String[] tbaCompletedRatio = this.myRSCManager.getIncomingCompletion();
-        if (Integer.parseInt(tabCompletedRatio[0]) > 0 && tabCompletedRatio[0].equals(tabCompletedRatio[1])/* && tbaCompletedRatio[0].equals(tbaCompletedRatio[1])*/) {
+        if (Integer.parseInt(tabCompletedRatio[0]) > 0 && tabCompletedRatio[0].equals(tabCompletedRatio[1])  && !showOnce /* && tbaCompletedRatio[0].equals(tbaCompletedRatio[1])*/) {
             int option = JOptionPane.showConfirmDialog(this.myTopicPane, "The Assessment is completed.\r\n" +
                     "Please zip the result file and log together \r\n" +
-                    "and upload it to the INEX. \r\n" +
+                    "and email it to the Crosslink organisers or other alternative way provided. \r\n" +
                     "The files, " + poolXmlFileName + " & T" + topicID + loggerFileName + " are located in the following directory: \r\n" +
                     poolAndLogDir, "Assessment Completion",
                     JOptionPane.OK_OPTION);
@@ -470,6 +472,8 @@ public class linkPaneMouseListener implements MouseInputListener {
                 javax.swing.SwingUtilities.getWindowAncestor(this.myLinkPane).dispose();
                 System.exit(0);
             }
+            showOnce = true;
+            return;
         } /*else if (this.isTAB && tabCompletedRatio[0].equals(tabCompletedRatio[1]) && !tbaCompletedRatio[0].equals(tbaCompletedRatio[1])) {
             JOptionPane.showMessageDialog(this.myTopicPane, "The Outgoing Assessment is completed. \r\n" +
                     "Please click \"OK\" button and switch to Incoming Mode to complete the assessment.\r\n" +
