@@ -7,7 +7,9 @@ import java.util.Iterator;
 import java.util.Set;
 import java.util.Set;
 
-public class CrosslinkTopic extends WikiArticleXml {
+import monolink.MonolinkTopic;
+
+public class CrosslinkTopic extends MonolinkTopic {
 	
 	// the existing or recommended links in the topics
 	private Set<String> links = Collections.synchronizedSet(new HashSet<String>());
