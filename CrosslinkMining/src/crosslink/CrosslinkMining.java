@@ -16,11 +16,12 @@ import org.xml.sax.SAXException;
 
 import ltwassessment.utility.FileUtil;
 import ltwassessment.utility.WildcardFiles;
+import monolink.MonolinkMining;
 
 /*
  * converted from the bash script, so mainly the naming is not changed
  */
-public class CrosslinkMining {
+public class CrosslinkMining extends MonolinkMining {
 	
 	private String sourceLang = "zh";
 	private String targetLang = "en";
@@ -37,7 +38,6 @@ public class CrosslinkMining {
 	private CrosslinkTable enCorpusCrosslinkTable; 
 	private CrosslinkTable otherCorpusCrosslinkTable;
 
-	private ResultSetXml resultSetOut = new ResultSetXml();
 	private ArrayList<CrosslinkTopic> topics = new ArrayList<CrosslinkTopic>();
 
 	/**
@@ -200,45 +200,6 @@ public class CrosslinkMining {
 		otherCorpusCrosslinkTable = new CrosslinkTable(String.format("%s%s_corpus_en2%s.txt", crosslinkTablePath + File.separator, otherLang, otherLang), sourceLang);
 		otherCorpusCrosslinkTable.setLang(otherLang);
 		otherCorpusCrosslinkTable.read();
-	}
-	
-	private ArrayList<String> extractLinksFromTopics(String inputfile) {
-		ArrayList<String> links = new ArrayList<String>();
-        String osName = System.getProperty("os.name");
-		//      String Command = Command2;
-		String Command = "/usr/local/bin/link_extract " + inputfile;
-		Process runCommand;
-		//if (osName.equalsIgnoreCase("Linux")) {
-		//  Command = Command2;
-		//runCommand = Runtime.getRuntime().exec(Command, null, fileHandlder);
-		//}
-		//else if (osName.equalsIgnoreCase("Solaris") || osName.equalsIgnoreCase("SunOS")) {
-		//  runCommand = Runtime.getRuntime().exec(new String[] {Command10, Command11, outputFile}, null, fileHandlder); //Command = Command10 + Command11;
-		//} else
-	    try {
-			runCommand = Runtime.getRuntime().exec(Command);
-
-	
-			//runCommand = Runtime.getRuntime().exec(new String[] {"bash", "-c \"cd /home/tangl3/corpus/wikipedia/wuuwiki/xml/wuu/; tar cjvf /home/tangl3/corpus/wikipedia/wuuwiki/xml/wuuwiki-20100207-pages-articles.xml.bz2 *\""}); // ; \\rm -rf /home/tangl3/corpus/wikipedia/wuuwiki/xml//wuu/*"});
-			//runCommand = Runtime.getRuntime().exec(Command, null, fileHandlder);
-			
-			BufferedReader Resultset = new BufferedReader(
-			        new InputStreamReader (
-			                runCommand.getInputStream(), "UTF-8"));
-			
-			String line;
-			while ((line = Resultset.readLine()) != null) {
-	 			String[] arr = line.split(":");
-	 			String sourceId = arr[0];
-	 			String targetId = arr[1];
-
-				links.add(targetId);
-			}
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		return links;
 	}
 	
 	private String findCounterPartTopic(CrosslinkTopic topic) throws Exception {
