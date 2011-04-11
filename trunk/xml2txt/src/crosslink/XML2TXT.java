@@ -1,6 +1,7 @@
 package crosslink;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 
 /*
  * @author Eric Tang
@@ -101,11 +102,23 @@ public class XML2TXT {
 	}
 	
 	public String getText(String xmlfile) {
-		return new String(convert(xmlfile));
+		String text = null;
+		try {
+			text = new String(convert(xmlfile), "UTF-8");
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+		}
+		return text;
 	}
 	
 	public String getXmlFileText(String xmlfile) {
-		return new String(convertFile(xmlfile));
+		String text = null;
+		try {
+			text = new String(convertFile(xmlfile), "UTF-8");
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+		}
+		return text;
 	}
 	
 	static void usage() {
