@@ -13,8 +13,7 @@
             <xsd:attribute name="participant-id" type="xsd:string" use="required"/>
             <xsd:attribute name="run-id" type="xsd:string" use="required"/>
             <xsd:attribute name="default_lang" type="xsd:string" use="required"/>
-            <xsd:attribute name="source-lang" type="xsd:string"/>
-            <xsd:attribute name="default-lang" type="xsd:string"/>
+            <xsd:attribute name="source_lang" type="xsd:string"/>
             <xsd:attribute name="task" type="xsd:string" use="required"/>
             <xsd:attribute name="format" type="xsd:string" use="required"/>
         </xsd:complexType>   
