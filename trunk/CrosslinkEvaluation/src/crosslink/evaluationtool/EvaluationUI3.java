@@ -743,14 +743,12 @@ public class EvaluationUI3 extends JFrame {
 
         String[] fl = this.filedirectoryTextField.getText().split(";");
 
-        File[] files = new File[fl.length];
-        for (int l = 0; l < files.length; l++) {
-            String afile = fl[l].toString().trim();
-            files[l] = new File(afile);
+        ArrayList<File> fileList = new ArrayList<File>();
+        for (int l = 0; l < fl.length; l++) {
+            String afile = fl[l].trim();
+            if (afile.length() > 0)
+            	fileList.add(new File(afile));
         }
-        // -------------------------------------------------------------
-        List<File> tmp = Arrays.asList(files);
-        ArrayList<File> fileList = new ArrayList<File>(tmp);
         for (int k = 0; k < fileList.size(); k++) {
             try {
                 JAXBContext jc = JAXBContext.newInstance("crosslink.rungenerator");
@@ -761,7 +759,7 @@ public class EvaluationUI3 extends JFrame {
                 fileList.remove(k);
             }
         }
-        files = fileList.toArray(new File[fileList.size()]);
+        File[] files = fileList.toArray(new File[fileList.size()]);
         this.runFileCache = files;
         // -------------------------------------------------------------
 
