@@ -1159,6 +1159,10 @@ public class EvaluationUI3 extends JFrame {
                                 List outItemsList = new ArrayList();
                                 for (int j = 0; j < topic.getOutgoing().getAnchor().size(); j++) {
                                     List<crosslink.rungenerator.ToFileType> linkTo = topic.getOutgoing().getAnchor().get(j).getTofile();
+                                    if (linkTo == null) {
+                                    	System.err.println("Empty anchor:" + topic.getOutgoing().getAnchor().get(j).getName());
+                                    	continue;
+                                    }
                                     for (int k = 0; k < linkTo.size(); k++) {
                                         outLinkCount++;
                                         ToFileType tofile = linkTo.get(k);
