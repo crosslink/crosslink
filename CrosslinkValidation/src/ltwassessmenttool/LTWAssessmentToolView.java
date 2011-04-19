@@ -920,6 +920,7 @@ public class LTWAssessmentToolView extends FrameView {
                         updatePoolerToResourceXML(thisXMLFile.getAbsolutePath());
                         
                     	// set UI font
+                        AdjustFont.setComponentFont(topicTextPane, AppResource.sourceLang);
                     	AdjustFont.setComponentFont(anchorBepTable, AppResource.targetLang);
                     	AdjustFont.setComponentFont(linkTextPane, AppResource.targetLang);
                     	

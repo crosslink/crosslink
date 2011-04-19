@@ -861,12 +861,19 @@ public class PoolerManager {
                                 afProperty[1] = xsr.getAttributeValue(i);
                             } else if (xsr.getAttributeLocalName(i).equals("task")) {
                                 afProperty[2] = xsr.getAttributeValue(i);
-                            } else if (xsr.getAttributeLocalName(i).equals("default-lang")) {
+                            } else if (xsr.getAttributeLocalName(i).equals("default_lang")) {
                             	String lang = xsr.getAttributeValue(i);
-                            	if (lang.equals("zh") || lang.equals("ja") || lang.equals("ko"))
+                            	if (lang.equals("zh") || lang.equals("ja") || lang.equals("ko") || lang.equals("en"))
                             		AppResource.targetLang = lang;
                             	else
                             		AppResource.targetLang = "zh";
+                            }
+                            else if (xsr.getAttributeLocalName(i).equals("source_lang")) {
+                            	String lang = xsr.getAttributeValue(i);
+                            	if (lang.equals("zh") || lang.equals("ja") || lang.equals("ko") || lang.equals("en"))
+                            		AppResource.sourceLang = lang;
+                            	else
+                            		AppResource.sourceLang = "en";
                             }
                         }
                     } else if (tagName.equals("collection")) {
