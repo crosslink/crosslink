@@ -91,22 +91,24 @@ public class Data {
                         String toFile = "";
 //                        String toFileID = "";
                         String toBep = "";
+                        log(topicID + "Anchor: " + is.getTopic().get(i).getOutgoing().getAnchor().get(j).getName());
                         List<crosslink.rungenerator.ToFileType> linkTo = is.getTopic().get(i).getOutgoing().getAnchor().get(j).getTofile();
-                        for (int k = 0; k < linkTo.size(); k++) {
-                            toFile = linkTo.get(k).getFile().toString().trim();
-//                            toFileId = toFile;
-//                            if (!toFile.equals("")) {
-//                                int endop = toFile.toLowerCase().indexOf(".xml");
-//                                if (endop != -1) {
-//                                    toFileID = toFile.substring(0, endop);
-//                                }
-//                            }
-                            if (!outF2FV.contains(toFile)) {
-                                outF2FV.add(toFile);
-                            } else {
-                                log(topicID + "<-- Topic ID: Duplicated: " + toFile);
-                            }
-                        }
+                        if (linkTo != null)
+	                        for (int k = 0; k < linkTo.size(); k++) {
+	                            toFile = linkTo.get(k).getFile().toString().trim();
+	//                            toFileId = toFile;
+	//                            if (!toFile.equals("")) {
+	//                                int endop = toFile.toLowerCase().indexOf(".xml");
+	//                                if (endop != -1) {
+	//                                    toFileID = toFile.substring(0, endop);
+	//                                }
+	//                            }
+	                            if (!outF2FV.contains(toFile)) {
+	                                outF2FV.add(toFile);
+	                            } else {
+	                                log(topicID + "<-- Topic ID: Duplicated: " + toFile);
+	                            }
+	                        }
                     }
 
                     if (outF2FV.size() >= 1) {
