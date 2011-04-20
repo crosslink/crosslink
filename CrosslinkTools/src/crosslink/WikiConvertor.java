@@ -40,10 +40,11 @@ public class WikiConvertor {
 	}
 	
 	private void write(String content) {
-
+		new File(new File(currentFileName).getParent()).mkdir();
         try {
 			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(currentFileName),"UTF-8")); 
 			out.write(content);
+			out.close();
 		} catch (UnsupportedEncodingException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -58,13 +59,15 @@ public class WikiConvertor {
 	
 	protected String getContent(String file) {
 		WikiArticleXml article = new WikiArticleXml(file);
-		String newfile = createNewPath(article.getId());
+		currentFileName = createNewPath(article.getId());
 		return article.getTitle();
 	}
 
 	public void convert(String[] args) {
-		if (args.length < 2)
+		if (args.length < 2) {
 			usage();
+			System.exit(-1);
+		}
 		
 		setNewPath(args[0]);
 //		wikiTitle.createTitleOnlyCorpus(args[1]);
@@ -83,10 +86,10 @@ public class WikiConvertor {
                 	stack.addAll(Arrays.asList(WildcardFiles.getInstance().listSubfolderFiles(onefile)));
                 	continue;
                 }
+                ++filecount;
                 if ((filecount % 1000) == 0)
                 	System.err.println("processing " + onefile.getAbsolutePath() + "...");
 
-                ++filecount;
                 try {
                 	inputfile = onefile.getCanonicalPath();
 

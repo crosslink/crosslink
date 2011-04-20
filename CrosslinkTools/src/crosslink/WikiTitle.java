@@ -1,12 +1,12 @@
 package crosslink;
 
-public class WikTitle extends WikiConvertor {
+public class WikiTitle extends WikiConvertor {
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		new WikTitle().convert(args);
+		new WikiTitle().convert(args);
 	}
 
 }
