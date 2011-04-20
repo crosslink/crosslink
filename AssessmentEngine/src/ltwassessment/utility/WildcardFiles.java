@@ -21,13 +21,13 @@ import java.util.regex.Pattern;
 
 public class WildcardFiles implements FilenameFilter, FileFilter
 {
-	   private Pattern pattern;
+	   private Pattern pattern = null;
 	   private static String wildcard = "";
 	   private static String inputFileDir = ".";
 	   private static WildcardFiles wildcardfiles = null; //new WildcardFiles(wildcard);
 	   
 	   WildcardFiles(){
-		   
+		   createPattern("*.*");   
 	   }
 	   
 	   WildcardFiles(String search)

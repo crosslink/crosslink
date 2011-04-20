@@ -88,7 +88,7 @@ public class WikiConvertor {
                 }
                 ++filecount;
                 if ((filecount % 1000) == 0)
-                	System.err.println("processing " + onefile.getAbsolutePath() + "...");
+                	System.err.println("finished processing " + filecount + " files.");
 
                 try {
                 	inputfile = onefile.getCanonicalPath();
