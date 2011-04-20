@@ -26,6 +26,10 @@ public class WildcardFiles implements FilenameFilter, FileFilter
 	   private static String inputFileDir = ".";
 	   private static WildcardFiles wildcardfiles = null; //new WildcardFiles(wildcard);
 	   
+	   WildcardFiles(){
+		   
+	   }
+	   
 	   WildcardFiles(String search)
 	   {
 		   createPattern(search);      
@@ -72,22 +76,34 @@ public class WildcardFiles implements FilenameFilter, FileFilter
 	   
 	   public static Stack listFilesInStack(String inputfile, boolean includeSubFolder) 
 	   {
-		   breakFile(inputfile);
-		   wildcardfiles = new WildcardFiles(wildcard);
+		   wildcardfiles = new WildcardFiles();
 		   Stack<File> stack = new Stack();
-		   if (includeSubFolder) {
-			   File[] allFiles = new File(inputFileDir).listFiles();
-			    for (File f : allFiles) {
-			        if (f.isDirectory()) {
-			            stack.push(f);
-			        }
-			        else if (wildcardfiles.accept(f))
-			        	stack.push(f);
-			    }
-			    return stack;
+		   File inputFileHandler = new File(inputfile);
+		   if (inputFileHandler.isFile()) {
+			   stack.add(new File(inputfile));
 		   }
-		   File[] arrFile = new File(inputFileDir).listFiles((FileFilter)wildcardfiles);
-		   stack.addAll(Arrays.asList(arrFile));
+		   else if (inputFileHandler.isDirectory() && includeSubFolder) {
+			   stack.addAll(Arrays.asList(wildcardfiles.listSubfolderFiles(inputFileHandler)));
+		   }
+		   else {
+			   breakFile(inputfile);
+			   wildcardfiles.createPattern(wildcard);
+//			   wildcardfiles = new WildcardFiles(wildcard);
+	
+			   if (includeSubFolder) {
+				   File[] allFiles = new File(inputFileDir).listFiles();
+				    for (File f : allFiles) {
+				        if (f.isDirectory()) {
+				            stack.push(f);
+				        }
+				        else if (wildcardfiles.accept(f))
+				        	stack.push(f);
+				    }
+				    return stack;
+			   }
+			   File[] arrFile = new File(inputFileDir).listFiles((FileFilter)wildcardfiles);
+			   stack.addAll(Arrays.asList(arrFile));
+		   }
 		   return stack;
 	   }
 	   

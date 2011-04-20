@@ -58,12 +58,12 @@ public class WikiArticleXml {
 		       Element titleElmnt = (Element) titleElmntLst.item(0);
 		       NodeList titleList = titleElmnt.getChildNodes();
 		       title = ((Node) titleList.item(0)).getNodeValue();
-		       System.err.println("Title : "  + title);
+//		       System.err.println("Title : "  + title);
 		       NodeList idElmntLst = articleElmnt.getElementsByTagName("id");
 		       Element idElmnt = (Element) idElmntLst.item(0);
 		       NodeList idList = idElmnt.getChildNodes();
 		       id = ((Node) idList.item(0)).getNodeValue();
-		       System.err.println("Id : " + id);
+//		       System.err.println("Id : " + id);
 			}
 
 //			  }
