@@ -337,7 +337,13 @@ public class FOLTXTMatcher {
 		int aOffset = Integer.valueOf(thisAnchorXmlOLName[0]);
 		int aLength = Integer.valueOf(thisAnchorXmlOLName[1]);
 
-		String aName = fullXmlTxt.substring(aOffset, aOffset + aLength); //thisAnchorXmlOLName[2];
+//		String aName = "";
+//		
+//		if (AppResource.sourceLang.equals("en"))
+//			fullXmlTxt.substring(aOffset, aOffset + aLength); //thisAnchorXmlOLName[2];
+//		else { // Unicode
+//			
+//		}
 		
     	try {
 	        myScreenPosition[0] = ""; //String.valueOf(aName);
@@ -355,7 +361,7 @@ public class FOLTXTMatcher {
 	        myScreenPosition[0] = fullScreenTxt.substring(offset, offset + aLength);
     	}
     	catch (InvalidOffsetException ioe) {
-    		ValidationMessage.getInstance().append("Invalid offset " + aOffset + " for anchor " + aName);
+    		ValidationMessage.getInstance().append("Invalid offset " + aOffset + " for anchor " + thisAnchorXmlOLName[2]);
     	}
     	catch (Exception ex){
     		ex.printStackTrace();
@@ -383,13 +389,25 @@ public class FOLTXTMatcher {
     private String screenBepOffsetFinder(String fullScreenTxt, String fullXmlTxt, String bepOffset) throws InvalidOffsetException {
     	if (bepOffset.length() == 0)
     		bepOffset = "0";
-        String source = this.parseXmlText(fullXmlTxt.substring(Integer.parseInt(bepOffset)));
+    	int offset = Integer.parseInt(bepOffset);
+    	byte[] bytes = fullXmlTxt.getBytes();
+    	int len = bytes.length - offset;
+    	byte[] puzzleBytes = new byte[len];
+
+    	System.arraycopy(bytes, offset, puzzleBytes, 0, len);
+//        String source = this.parseXmlText(fullXmlTxt.substring(len));
+    	String source = "";
+    	try {
+			source = new String(puzzleBytes, "UTF-8");
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+		}
 //      List<String> puzzles = new Vector<String>();
 //      source = DeXMLify(source);
       //String puzzle = source.replaceAll("[\\W]+", " ");
 
 		String puzzle = source.replaceAll("\\s+", "");
-		int offset = puzzle.length();
+		offset = puzzle.length();
 
 		int pos = 0;
 		if (offset > fullScreenTxt.length())
