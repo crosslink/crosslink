@@ -921,7 +921,10 @@ public class LTWAssessmentToolView extends FrameView {
                         
                     	// set UI font
                         AdjustFont.setComponentFont(topicTextPane, AppResource.sourceLang);
-                    	AdjustFont.setComponentFont(anchorBepTable, AppResource.targetLang);
+                        if (!AppResource.sourceLang.equals("en"))
+                        	AdjustFont.setComponentFont(anchorBepTable, AppResource.sourceLang);
+                        else
+                        	AdjustFont.setComponentFont(anchorBepTable, AppResource.targetLang);
                     	AdjustFont.setComponentFont(linkTextPane, AppResource.targetLang);
                     	
                         myTABTxtPaneManager = new tabTxtPaneManager();

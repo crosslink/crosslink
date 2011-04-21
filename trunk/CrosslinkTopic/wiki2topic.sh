@@ -1,3 +1,5 @@
 #!/bin/bash
 
-java -cp bin crosslink.CrosslinkTopic "$@" 
+path=`dirname $0`
+
+java -cp $path/bin crosslink.CrosslinkTopic "$@" 
