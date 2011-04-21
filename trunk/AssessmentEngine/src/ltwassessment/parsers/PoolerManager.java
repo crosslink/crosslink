@@ -887,7 +887,7 @@ public class PoolerManager {
                         }
                     } else if (tagName.equals("topic")) {
                         String[] thisTopic = new String[3];
-                        thisTopic[2] = "en";
+                        thisTopic[2] = AppResource.sourceLang;
                         for (int i = 0; i < xsr.getAttributeCount(); i++) {
                             if (xsr.getAttributeLocalName(i).equals("file")) {
                                 thisTopic[0] = xsr.getAttributeValue(i);
