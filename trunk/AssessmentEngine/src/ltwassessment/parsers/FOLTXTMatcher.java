@@ -337,6 +337,21 @@ public class FOLTXTMatcher {
 		int aOffset = Integer.valueOf(thisAnchorXmlOLName[0]);
 		int aLength = Integer.valueOf(thisAnchorXmlOLName[1]);
 
+    	byte[] bytes = fullXmlTxt.getBytes();
+//    	int len = bytes.length - aOffset;
+    	byte[] newBytes = new byte[aOffset];
+    	byte[] nameBytes = new byte[aLength];
+
+    	System.arraycopy(bytes, aOffset, nameBytes, 0, aLength);
+    	System.arraycopy(bytes, 0, newBytes, 0, aOffset);
+    	String source = "";
+    	String aName = "";
+    	try {
+    		aName = new String(nameBytes, "UTF-8");
+    		source = new String(newBytes, "UTF-8");
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+		}
 //		String aName = "";
 //		
 //		if (AppResource.sourceLang.equals("en"))
@@ -350,18 +365,18 @@ public class FOLTXTMatcher {
 	        myScreenPosition[1] = String.valueOf(0);
 	        myScreenPosition[2] = String.valueOf(0);
 	
-	        int offset = Integer.parseInt(screenBepOffsetFinder(fullScreenTxt, fullXmlTxt, Integer.toString(aOffset)));
+	        int offset = Integer.parseInt(screenBepOffsetFinder(fullScreenTxt, fullXmlTxt, Integer.toString(source.length())));
 	//        if (Character.isWhitespace(fullScreenTxt.charAt(offset))) {
 	//	        while (Character.isWhitespace(fullScreenTxt.charAt(offset)))
 	//	        	--offset;
 	//	        ++offset;
 	//        }
 	        myScreenPosition[1] = String.valueOf(offset);
-	        myScreenPosition[2] = String.valueOf(offset + aLength);
-	        myScreenPosition[0] = fullScreenTxt.substring(offset, offset + aLength);
+	        myScreenPosition[2] = String.valueOf(offset + aName.length());
+	        myScreenPosition[0] = fullScreenTxt.substring(offset, offset + aName.length());
     	}
     	catch (InvalidOffsetException ioe) {
-    		ValidationMessage.getInstance().append("Invalid offset " + aOffset + " for anchor " + thisAnchorXmlOLName[2]);
+    		ValidationMessage.getInstance().append("Invalid offset " + aOffset + " for anchor " + aName);
     	}
     	catch (Exception ex){
     		ex.printStackTrace();
@@ -389,25 +404,15 @@ public class FOLTXTMatcher {
     private String screenBepOffsetFinder(String fullScreenTxt, String fullXmlTxt, String bepOffset) throws InvalidOffsetException {
     	if (bepOffset.length() == 0)
     		bepOffset = "0";
-    	int offset = Integer.parseInt(bepOffset);
-    	byte[] bytes = fullXmlTxt.getBytes();
-    	int len = bytes.length - offset;
-    	byte[] puzzleBytes = new byte[len];
 
-    	System.arraycopy(bytes, offset, puzzleBytes, 0, len);
-//        String source = this.parseXmlText(fullXmlTxt.substring(len));
-    	String source = "";
-    	try {
-			source = new String(puzzleBytes, "UTF-8");
-		} catch (UnsupportedEncodingException e) {
-			e.printStackTrace();
-		}
+        String source = this.parseXmlText(fullXmlTxt.substring(Integer.parseInt(bepOffset)));
+
 //      List<String> puzzles = new Vector<String>();
 //      source = DeXMLify(source);
       //String puzzle = source.replaceAll("[\\W]+", " ");
 
 		String puzzle = source.replaceAll("\\s+", "");
-		offset = puzzle.length();
+		int offset = puzzle.length();
 
 		int pos = 0;
 		if (offset > fullScreenTxt.length())
