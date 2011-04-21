@@ -40,6 +40,10 @@ public class WikiConvertor {
 	}
 	
 	private void write(String content) {
+		if (content == null) {
+			System.err.println("Error in reading file " + currentFileName);
+			return;
+		}
 		new File(new File(currentFileName).getParent()).mkdir();
         try {
 			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(currentFileName),"UTF-8")); 
@@ -59,7 +63,6 @@ public class WikiConvertor {
 	
 	protected String getContent(String file) {
 		WikiArticleXml article = new WikiArticleXml(file);
-		currentFileName = createNewPath(article.getId());
 		return article.getTitle();
 	}
 
@@ -92,7 +95,12 @@ public class WikiConvertor {
 
                 try {
                 	inputfile = onefile.getCanonicalPath();
-
+            		String filename =  new File(inputfile).getName();
+            		String id = filename.substring(0, filename.indexOf('.'));
+            		currentFileName = createNewPath(id);
+            		
+            		if (new File(currentFileName).exists())
+            			continue;
                 	write(getContent(inputfile));
 //                reader.parse(new InputSource(inputfile)); //SAX
                 	// do whatever you want with the input file...
