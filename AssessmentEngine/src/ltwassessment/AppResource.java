@@ -14,7 +14,7 @@ public class AppResource {
     
 	private org.jdesktop.application.ResourceMap resourceMap = null;
 	private static AdjustFont adjustFont = null;
-	public static boolean debug = false;
+	public static boolean debug = true;
 
 	public AppResource() {
 		adjustFont = AdjustFont.getInstance();
