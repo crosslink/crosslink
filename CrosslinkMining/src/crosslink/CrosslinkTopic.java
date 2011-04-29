@@ -11,11 +11,6 @@ import monolink.MonolinkTopic;
 
 public class CrosslinkTopic extends MonolinkTopic {
 	
-	// the existing or recommended links in the topics
-	private Set<String> links = Collections.synchronizedSet(new HashSet<String>());
-//	private Set<String> groundTruthDirectLinks = Collections.synchronizedSet(new HashSet<String>());
-	
-	private String lang;
 	private String targetLang;
 	
 	private CrosslinkTopic counterPart;
@@ -39,16 +34,5 @@ public class CrosslinkTopic extends MonolinkTopic {
 	
 	public void setCounterTopic(CrosslinkTopic topic) {
 		counterPart = topic;
-	}
-
-	/**
-	 * @return the links
-	 */
-	public Set<String> getLinks() {
-		return links;
-	}
-	
-	public void addLink(String id) {
-		links.add(id);
 	}
 }

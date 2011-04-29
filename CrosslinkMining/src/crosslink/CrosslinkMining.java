@@ -22,15 +22,10 @@ import monolink.MonolinkMining;
  * converted from the bash script, so mainly the naming is not changed
  */
 public class CrosslinkMining extends MonolinkMining {
-	
-	private String sourceLang = "zh";
-	private String targetLang = "en";
 
 	private String otherLang = "";
 //			OUTPUT=
 
-	private String corpusHome = "/data/corpus/wikipedia/all/";
-	private String sourceTopicPath = null;
 	private String targetTopicPath = null ; //~/experiments/ntcir-9-clld/topics/training/${targetLang}/
 //			filename=
 	
@@ -41,31 +36,10 @@ public class CrosslinkMining extends MonolinkMining {
 	private ArrayList<CrosslinkTopic> topics = new ArrayList<CrosslinkTopic>();
 
 	/**
-	 * @return the sourceLang
-	 */
-	public String getSourceLang() {
-		return sourceLang;
-	}
-
-	/**
-	 * @param sourceLang the sourceLang to set
-	 */
-	public void setSourceLang(String sourceLang) {
-		this.sourceLang = sourceLang;
-	}
-
-	/**
-	 * @return the targetLang
-	 */
-	public String getTargetLang() {
-		return targetLang;
-	}
-
-	/**
 	 * @param targetLang the targetLang to set
 	 */
 	public void setTargetLang(String targetLang) {
-		this.targetLang = targetLang;
+		super.setTargetLang(targetLang);
 		
 		if ( targetLang.equalsIgnoreCase( "en")) 
 		    otherLang = sourceLang;
@@ -88,20 +62,6 @@ public class CrosslinkMining extends MonolinkMining {
 	}
 
 	/**
-	 * @return the corpusHome
-	 */
-	public String getCorpusHome() {
-		return corpusHome;
-	}
-
-	/**
-	 * @param corpusHome the corpusHome to set
-	 */
-	public void setCorpusHome(String corpusHome) {
-		this.corpusHome = corpusHome;
-	}
-
-	/**
 	 * @return the crosslinkTablePath
 	 */
 	public String getCrosslinkTablePath() {
@@ -113,20 +73,6 @@ public class CrosslinkMining extends MonolinkMining {
 	 */
 	public void setCrosslinkTablePath(String crosslinkTablePath) {
 		this.crosslinkTablePath = crosslinkTablePath;
-	}
-	
-	/**
-	 * @return the sourceTopicPath
-	 */
-	public String getSourceTopicPath() {
-		return sourceTopicPath;
-	}
-
-	/**
-	 * @param sourceTopicPath the sourceTopicPath to set
-	 */
-	public void setSourceTopicPath(String sourceTopicPath) {
-		this.sourceTopicPath = sourceTopicPath;
 	}
 
 	/**
@@ -236,12 +182,6 @@ public class CrosslinkMining extends MonolinkMining {
 				topic.addLink(targetId);
         }		
     	System.err.println(String.format("Found %d indirect links", topic.getLinks().size()));
-	}
-	
-	private void getDirectLinks(ArrayList<String> links, CrosslinkTopic topic) {
-    	for (String link : links)
-    		topic.addLink(link);
-    	System.err.println(String.format("Found %d direct links", topic.getLinks().size()));
 	}
 	
  	private void getTopicLinks(String topicPath, String lang) {

@@ -1,4 +1,4 @@
-package crosslink;
+package monolink;
 
 public class ResultSetXml {
 	public static final String START = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n" + 
