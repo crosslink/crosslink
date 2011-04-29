@@ -1,15 +1,85 @@
 package monolink;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Set;
+import java.util.Stack;
 
-import crosslink.ResultSetXml;
+import ltwassessment.utility.WildcardFiles;
 
 public class MonolinkMining {
-
+	
+	protected String sourceLang = "zh";
+	protected String targetLang = "en";
+	
+	protected String sourceTopicPath = null;
+	
+	protected String corpusHome = "/data/corpus/wikipedia/all/";
+	
 	protected ResultSetXml resultSetOut = new ResultSetXml();
+	
+	private ArrayList<MonolinkTopic> topics = new ArrayList<MonolinkTopic>();
+	
+	/**
+	 * @return the sourceLang
+	 */
+	public String getSourceLang() {
+		return sourceLang;
+	}
+
+	/**
+	 * @param sourceLang the sourceLang to set
+	 */
+	public void setSourceLang(String sourceLang) {
+		this.sourceLang = sourceLang;
+	}
+
+	/**
+	 * @return the targetLang
+	 */
+	public String getTargetLang() {
+		return targetLang;
+	}
+
+	/**
+	 * @param targetLang the targetLang to set
+	 */
+	public void setTargetLang(String targetLang) {
+		this.targetLang = targetLang;
+	}
+	
+	/**
+	 * @param corpusHome the corpusHome to set
+	 */
+	public void setCorpusHome(String corpusHome) {
+		this.corpusHome = corpusHome;
+	}
+	
+	/**
+	 * @return the corpusHome
+	 */
+	public String getCorpusHome() {
+		return corpusHome;
+	}
+	
+	
+	/**
+	 * @return the sourceTopicPath
+	 */
+	public String getSourceTopicPath() {
+		return sourceTopicPath;
+	}
+
+	/**
+	 * @param sourceTopicPath the sourceTopicPath to set
+	 */
+	public void setSourceTopicPath(String sourceTopicPath) {
+		this.sourceTopicPath = sourceTopicPath;
+	}
 	
 	protected ArrayList<String> extractLinksFromTopics(String inputfile) {
 		ArrayList<String> links = new ArrayList<String>();
@@ -49,12 +119,96 @@ public class MonolinkMining {
 		}
 		return links;
 	}
+	
+	protected void getDirectLinks(ArrayList<String> links, MonolinkTopic topic) {
+    	for (String link : links)
+    		topic.addLink(link);
+    	System.err.println(String.format("Found %d direct links", topic.getLinks().size()));
+	}
+	
+ 	private void getTopicLinks(String topicPath, String lang) {
+        int filecount = 0;
+      	Stack<File> stack = null;
+      	
+      	stack = WildcardFiles.listFilesInStack(topicPath);
+      	while (!stack.isEmpty())
+        {
+//          		good = true;
+            File onefile = (File)stack.pop();
+            ++filecount;
+        	try {
+	        	String inputfile = onefile.getCanonicalPath();
+	        	MonolinkTopic topic = new MonolinkTopic(inputfile);
+	        	topics.add(topic);
+        	
+	        	ArrayList<String> directLinks = extractLinksFromTopics(inputfile);
+	        	getDirectLinks(directLinks, topic);
+        	}
+            catch (Exception e) {
+				//recordError(inputfile, "IOException");
+				e.printStackTrace();
+            } 
+            finally {
+
+            }
+        }
+ 
+ 	}
+
+ 	
+
+	public void findWikiGroundTruth() {
+
+		getTopicLinks(sourceTopicPath, sourceLang);
+//		getTopicLinks(targetTopicPath, targetLang, true);
+		createResultSet();
+		
+		System.out.println(resultSetOut.toString());
+	}
+	
+	public void createResultSet() {
+		resultSetOut.open();
+		for (MonolinkTopic topic : topics) {
+			resultSetOut.outputTopicStart(topic.getTitle(), topic.getId());
+			Set<String> directLinks = topic.getLinks();
+			Iterator it = directLinks.iterator();
+			while (it.hasNext()) {
+			    String id = (String) it.next();
+			    if (!directLinks.contains(id))
+			    	resultSetOut.outputLink(id);
+			}		
+        	resultSetOut.outputTopicEnd();	
+		}
+		resultSetOut.close();
+	}	
+	
+	public static void usage() {
+		System.out.println("arg[0] topic lang, e.g en, zh");
+		System.out.println("arg[1] topics path");
+		System.out.println("arg[2] corpora home");
+		System.exit(-1);
+	}
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
+		if (args.length < 4)
+			usage();
 		// TODO Auto-generated method stub
+		MonolinkMining mining = new MonolinkMining();
+		String[] arr = args[0].split(":");
+		if (arr.length != 2)
+			usage();
+		mining.setSourceLang(arr[0]);
+		mining.setTargetLang(arr[0]);
+		
+		mining.setSourceTopicPath(args[2]);
+		
+		if (args.length > 5)
+			mining.setCorpusHome(args[4]);
+		
+		mining.findWikiGroundTruth();
 
 	}
 
