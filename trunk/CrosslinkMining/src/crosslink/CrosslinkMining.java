@@ -41,7 +41,7 @@ public class CrosslinkMining extends MonolinkMining {
 	public void setTargetLang(String targetLang) {
 		super.setTargetLang(targetLang);
 		
-		if ( targetLang.equalsIgnoreCase( "en")) 
+		if (targetLang.equalsIgnoreCase( "en")) 
 		    otherLang = sourceLang;
 		else
 			otherLang = targetLang;
@@ -116,7 +116,7 @@ public class CrosslinkMining extends MonolinkMining {
 	
 	private String getOutputIdFromEnCorpus(String id) {
 		String targetId = enCorpusCrosslinkTable.getTargetId(id);
-		if (wikiPageExists(targetId, otherLang)) {
+		if (wikiPageExists(targetId, targetLang)) {
 			output(enCorpusCrosslinkTable, id);
 			return targetId;
 		}
@@ -128,7 +128,7 @@ public class CrosslinkMining extends MonolinkMining {
 		String targetId = null;
 		targetId = otherCorpusCrosslinkTable.getTargetId(id);
 		assert(targetId != null);
-		if (targetId != null && wikiPageExists(targetId, otherLang)) {
+		if (targetId != null && wikiPageExists(targetId, targetLang)) {
 			output(otherCorpusCrosslinkTable, id);
 			return targetId;
 		}
@@ -197,6 +197,8 @@ public class CrosslinkMining extends MonolinkMining {
         	try {
 	        	String inputfile = onefile.getCanonicalPath();
 	        	CrosslinkTopic topic = new CrosslinkTopic(inputfile);
+	        	if (topic.getId().equals("583701"))
+	        		System.err.println("I got you");
 	        	topics.add(topic);
         	
 	        	ArrayList<String> links = extractLinksFromTopics(inputfile);
