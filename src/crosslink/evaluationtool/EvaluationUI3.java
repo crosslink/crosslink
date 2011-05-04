@@ -22,6 +22,8 @@ import javax.xml.bind.Unmarshaller;
 import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 
+import ltwassessment.utility.WildcardFiles;
+
 import org.jCharts.chartData.ChartDataException;
 import org.jCharts.properties.PropertyException;
 
@@ -746,8 +748,13 @@ public class EvaluationUI3 extends JFrame {
         ArrayList<File> fileList = new ArrayList<File>();
         for (int l = 0; l < fl.length; l++) {
             String afile = fl[l].trim();
-            if (afile.length() > 0)
-            	fileList.add(new File(afile));
+            if (afile.length() > 0) {
+            	File aFile = new File(afile);
+            	if (aFile.isDirectory())
+            		fileList.addAll(WildcardFiles.listFilesInStack(afile));
+            	else
+            		fileList.add(aFile);  	
+            }
         }
         for (int k = 0; k < fileList.size(); k++) {
             try {
