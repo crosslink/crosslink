@@ -8,7 +8,9 @@ import java.awt.event.MouseEvent;
 import java.awt.print.PrinterException;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.FileWriter;
+import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.text.MessageFormat;
 import java.text.SimpleDateFormat;
@@ -161,7 +163,9 @@ public class RunTablePanel extends JPanel {
                 columnTitle[i] = this.runsTable.getColumnModel().getColumn(i).getHeaderValue().toString();
             }
             String rowdata;
-            BufferedWriter bw = new BufferedWriter(new FileWriter(csvFile, true));
+//            BufferedWriter bw = new BufferedWriter(new FileWriter(csvFile, true));
+            BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(csvFile),"UTF-8")); 
+            
             PrintWriter pw = new PrintWriter(bw);
             for (int j=0; j<this.runsTable.getColumnCount(); j++) {
                 pw.print(columnTitle[j] + ",");
