@@ -54,6 +54,16 @@ public class Data {
         return ResultSetManager.getInstance().getResultSetLinks(currentSourceLang, currentTargetLang);
 //        return resultTable;
     }
+    
+    protected static double average(Hashtable<String, Double> table, int dividedBy) {
+    	double sum = 0.0;
+    	for (Double value : table.values()) {
+    		System.err.print(value + ", ");
+    		sum += value;
+    	}
+    	System.err.println();
+		return sum / (double)dividedBy;
+    }
 
     protected static Hashtable getRunSet(File runfiles) throws Exception {
         Hashtable runTable = new Hashtable();
