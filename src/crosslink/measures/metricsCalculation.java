@@ -142,6 +142,7 @@ public final class metricsCalculation extends Data {
         Hashtable outgoingHt = new Hashtable();
         Hashtable incomingHt = new Hashtable();
         // =============================================================
+        Hashtable<String, Double> averagePrecision = new Hashtable<String, Double>();
 
         // Loop all Topics in the submitted run
         for (Enumeration e = runTable.keys(); e.hasMoreElements();) {
@@ -157,6 +158,7 @@ public final class metricsCalculation extends Data {
             // =================================================================
 
             double APinR = 0.0;
+            String topicId = key.substring(0, key.indexOf("_"));
             if (runValues.length == 1 && runValues[0].equalsIgnoreCase("")) {
                 if (resultSet.length == 1 && resultSet[0].equalsIgnoreCase("")) {
                     aTopicAvePrecision = 1.0;
@@ -164,10 +166,13 @@ public final class metricsCalculation extends Data {
                     aTopicAvePrecision = 0.0;
                 }
                 // =============================================================
+                
                 if (key.endsWith("Outgoing_Links")) {
-                    outgoingHt.put(key.substring(0, key.indexOf("_Outgoing_Links")), "0");
+//                	topicId = key.substring(0, key.indexOf("_Outgoing_Links"));
+                    outgoingHt.put(topicId, "0");
                 } else if (key.endsWith("Incoming_Links")) {
-                    incomingHt.put(key.substring(0, key.indexOf("_Incoming_Links")), "0");
+//                	topicId = key.substring(0, key.indexOf("_Incoming_Links"));
+                    incomingHt.put(topicId, "0");
                 }
                 // =============================================================
             } else {
@@ -234,16 +239,22 @@ public final class metricsCalculation extends Data {
 
             // Add "aTopicAvePrecision" to related APs
             if (key.endsWith(outgoingTag)) {
-                outgoingAPs += aTopicAvePrecision;
+                averagePrecision.put(topicId, aTopicAvePrecision);
+//                outgoingAPs += aTopicAvePrecision;
             } else if (key.endsWith(incomingTag)) {
                 incomingAPs += aTopicAvePrecision;
             }
         }
+        
+        System.err.println("Calculating the Average Precision:");
+        
         if (isUseAllTopics) {
-            oimap[0] = (double) outgoingAPs / (resultTable.size() / 2);
+//            oimap[0] = (double) outgoingAPs / (resultTable.size() / 2);
+        	oimap[0] = average(averagePrecision, resultTable.size() / 2);
             oimap[1] = (double) incomingAPs / (resultTable.size() / 2);
         } else {
-            oimap[0] = (double) outgoingAPs / (runTable.size() / 2);
+//            oimap[0] = (double) outgoingAPs / (runTable.size() / 2);
+        	oimap[0] = average(averagePrecision, runTable.size() / 2);
             oimap[1] = (double) incomingAPs / (runTable.size() / 2);
         }
         return oimap;
@@ -366,6 +377,9 @@ public final class metricsCalculation extends Data {
         double[] outgoingPrecsAt = new double[recallDegree];
         double[] incomingPrecsAt = new double[recallDegree];
 
+        Hashtable<String, Double> precisionAt5 = new Hashtable<String, Double>();
+        Hashtable<String, Double> precisionAt10 = new Hashtable<String, Double>();
+        
         for (Enumeration e = runTable.keys(); e.hasMoreElements();) {
             double mCount = 0.;
             double anchorScore = 0.0;
@@ -375,11 +389,15 @@ public final class metricsCalculation extends Data {
             // get Result (incoming or outgoing) links array for each Topic
             String[] resultSet = (String[]) resultTable.get(key);
 
+            String topicId = key.substring(0, key.indexOf("_"));
             if (runValues.length == 1 && runValues[0].equalsIgnoreCase("")) {
                 if (resultSet.length == 1 && resultSet[0].equalsIgnoreCase("")) {
                     if (key.endsWith(outgoingTag)) {
-                        outgoingPrecsAt[0] += 1.0;
-                        outgoingPrecsAt[1] += 1.0;
+                    	
+//                        outgoingPrecsAt[0] += 1.0;
+//                        outgoingPrecsAt[1] += 1.0;
+                    	precisionAt5.put(topicId, 1.0);
+                    	precisionAt10.put(topicId, 1.0);
                         outgoingPrecsAt[2] += 1.0;
                         outgoingPrecsAt[3] += 1.0;
                         outgoingPrecsAt[4] += 1.0;
@@ -395,8 +413,10 @@ public final class metricsCalculation extends Data {
 
                 } else {
                     if (key.endsWith(outgoingTag)) {
-                        outgoingPrecsAt[0] += 0;
-                        outgoingPrecsAt[1] += 0;
+//                        outgoingPrecsAt[0] += 0;
+//                        outgoingPrecsAt[1] += 0;
+                    	precisionAt5.put(topicId, 0.0);
+                    	precisionAt10.put(topicId, 0.0);                    	
                         outgoingPrecsAt[2] += 0;
                         outgoingPrecsAt[3] += 0;
                         outgoingPrecsAt[4] += 0;
@@ -445,8 +465,10 @@ public final class metricsCalculation extends Data {
                     if (runItems.length <= pAtValue[0]) {
                         if ((i + 1) == runItems.length) {
                             if (key.endsWith(outgoingTag)) {
-                                outgoingPrecsAt[0] += (double) mCount / pAtValue[0];
-                                outgoingPrecsAt[1] += (double) mCount / pAtValue[1];
+//                                outgoingPrecsAt[0] += (double) mCount / pAtValue[0];
+//                                outgoingPrecsAt[1] += (double) mCount / pAtValue[1];
+                            	precisionAt5.put(topicId, (double) mCount / pAtValue[0]);
+                            	precisionAt10.put(topicId, (double) mCount / pAtValue[1]);                             	
                                 outgoingPrecsAt[2] += (double) mCount / pAtValue[2];
                                 outgoingPrecsAt[3] += (double) mCount / pAtValue[3];
                                 outgoingPrecsAt[4] += (double) mCount / pAtValue[4];
@@ -472,8 +494,10 @@ public final class metricsCalculation extends Data {
                         } else {
                             if ((i + 1) == runItems.length) {
                                 if (key.endsWith(outgoingTag)) {
-                                    outgoingPrecsAt[1] += (double) mCount / pAtValue[1];
-                                    outgoingPrecsAt[2] += (double) mCount / pAtValue[2];
+//                                    outgoingPrecsAt[1] += (double) mCount / pAtValue[1];
+//                                    outgoingPrecsAt[2] += (double) mCount / pAtValue[2];
+                                	precisionAt5.put(topicId, (double) mCount / pAtValue[0]);
+                                	precisionAt10.put(topicId, (double) mCount / pAtValue[1]);                                      
                                     outgoingPrecsAt[3] += (double) mCount / pAtValue[3];
                                     outgoingPrecsAt[4] += (double) mCount / pAtValue[4];
                                     outgoingPrecsAt[5] += (double) mCount / pAtValue[5];
@@ -489,13 +513,15 @@ public final class metricsCalculation extends Data {
                     } else if (runItems.length <= pAtValue[2]) {
                         if ((i + 1) == pAtValue[0]) {
                             if (key.endsWith(outgoingTag)) {
-                                outgoingPrecsAt[0] += (double) mCount / (i + 1);
+//                                outgoingPrecsAt[0] += (double) mCount / (i + 1);
+                            	precisionAt5.put(topicId, (double) mCount / (i + 1));
                             } else if (key.endsWith(incomingTag)) {
                                 incomingPrecsAt[0] += (double) mCount / (i + 1);
                             }
                         } else if ((i + 1) == pAtValue[1]) {
                             if (key.endsWith(outgoingTag)) {
-                                outgoingPrecsAt[1] += (double) mCount / (i + 1);
+//                                outgoingPrecsAt[1] += (double) mCount / (i + 1);
+                            	precisionAt10.put(topicId, (double) mCount / (i + 1));  
                             } else if (key.endsWith(incomingTag)) {
                                 incomingPrecsAt[1] += (double) mCount / (i + 1);
                             }
@@ -515,13 +541,15 @@ public final class metricsCalculation extends Data {
                     } else if (runItems.length <= pAtValue[3]) {
                         if ((i + 1) == pAtValue[0]) {
                             if (key.endsWith(outgoingTag)) {
-                                outgoingPrecsAt[0] += (double) mCount / (i + 1);
+//                                outgoingPrecsAt[0] += (double) mCount / (i + 1);
+                            	precisionAt5.put(topicId, (double) mCount / (i + 1));
                             } else if (key.endsWith(incomingTag)) {
                                 incomingPrecsAt[0] += (double) mCount / (i + 1);
                             }
                         } else if ((i + 1) == pAtValue[1]) {
                             if (key.endsWith(outgoingTag)) {
-                                outgoingPrecsAt[1] += (double) mCount / (i + 1);
+//                                outgoingPrecsAt[1] += (double) mCount / (i + 1);
+                            	precisionAt10.put(topicId, (double) mCount / (i + 1));  
                             } else if (key.endsWith(incomingTag)) {
                                 incomingPrecsAt[1] += (double) mCount / (i + 1);
                             }
@@ -545,14 +573,16 @@ public final class metricsCalculation extends Data {
                     } else if (runItems.length <= pAtValue[4]) {
                         if ((i + 1) == pAtValue[0]) {
                             if (key.endsWith(outgoingTag)) {
-                                outgoingPrecsAt[0] += (double) mCount / (i + 1);
+//                                outgoingPrecsAt[0] += (double) mCount / (i + 1);
+                                precisionAt5.put(topicId, (double) mCount / (i + 1));
                             } else if (key.endsWith(incomingTag)) {
                                 incomingPrecsAt[0] += (double) mCount / (i + 1);
                             }
 
                         } else if ((i + 1) == pAtValue[1]) {
                             if (key.endsWith(outgoingTag)) {
-                                outgoingPrecsAt[1] += (double) mCount / (i + 1);
+//                                outgoingPrecsAt[1] += (double) mCount / (i + 1);
+                            	precisionAt10.put(topicId, (double) mCount / (i + 1));  
                             } else if (key.endsWith(incomingTag)) {
                                 incomingPrecsAt[1] += (double) mCount / (i + 1);
                             }
@@ -584,14 +614,16 @@ public final class metricsCalculation extends Data {
                     } else {
                         if ((i + 1) == pAtValue[0]) {
                             if (key.endsWith(outgoingTag)) {
-                                outgoingPrecsAt[0] += (double) mCount / (i + 1);
+//                                outgoingPrecsAt[0] += (double) mCount / (i + 1);
+                                precisionAt5.put(topicId, (double) mCount / (i + 1));
                             } else if (key.endsWith(incomingTag)) {
                                 incomingPrecsAt[0] += (double) mCount / (i + 1);
                             }
 
                         } else if ((i + 1) == pAtValue[1]) {
                             if (key.endsWith(outgoingTag)) {
-                                outgoingPrecsAt[1] += (double) mCount / (i + 1);
+//                                outgoingPrecsAt[1] += (double) mCount / (i + 1);
+                            	precisionAt10.put(topicId, (double) mCount / (i + 1));  
                             } else if (key.endsWith(incomingTag)) {
                                 incomingPrecsAt[1] += (double) mCount / (i + 1);
                             }
@@ -635,11 +667,14 @@ public final class metricsCalculation extends Data {
                 }
             }
         }
-
+        System.err.println("Calculating the Precision @ N:");
         if (isUseAllTopics) { 	
             // Outgoing
-            oiprecsat[0][0] = (double) outgoingPrecsAt[0] / (resultTable.size() / 2);
-            oiprecsat[0][1] = (double) outgoingPrecsAt[1] / (resultTable.size() / 2);
+//            oiprecsat[0][0] = (double) outgoingPrecsAt[0] / (resultTable.size() / 2);
+//            oiprecsat[0][1] = (double) outgoingPrecsAt[1] / (resultTable.size() / 2);
+            
+            oiprecsat[0][0] = average(precisionAt5, resultTable.size() / 2);
+            oiprecsat[0][1] = average(precisionAt10, resultTable.size() / 2);
             oiprecsat[0][2] = (double) outgoingPrecsAt[2] / (resultTable.size() / 2);
             oiprecsat[0][3] = (double) outgoingPrecsAt[3] / (resultTable.size() / 2);
             oiprecsat[0][4] = (double) outgoingPrecsAt[4] / (resultTable.size() / 2);
@@ -653,8 +688,10 @@ public final class metricsCalculation extends Data {
             oiprecsat[1][5] = (double) incomingPrecsAt[5] / (resultTable.size() / 2);
         } else {
             // Outgoing
-            oiprecsat[0][0] = (double) outgoingPrecsAt[0] / (runTable.size() / 2);
-            oiprecsat[0][1] = (double) outgoingPrecsAt[1] / (runTable.size() / 2);
+//            oiprecsat[0][0] = (double) outgoingPrecsAt[0] / (runTable.size() / 2);
+//            oiprecsat[0][1] = (double) outgoingPrecsAt[1] / (runTable.size() / 2);
+            oiprecsat[0][0] = average(precisionAt5, runTable.size() / 2);
+            oiprecsat[0][1] = average(precisionAt10, runTable.size() / 2);            
             oiprecsat[0][2] = (double) outgoingPrecsAt[2] / (runTable.size() / 2);
             oiprecsat[0][3] = (double) outgoingPrecsAt[3] / (runTable.size() / 2);
             oiprecsat[0][4] = (double) outgoingPrecsAt[4] / (runTable.size() / 2);
