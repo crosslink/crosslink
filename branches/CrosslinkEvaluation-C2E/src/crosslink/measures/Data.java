@@ -1,6 +1,7 @@
 package crosslink.measures;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.List;
@@ -39,7 +40,6 @@ public class Data {
     // fro anchor to file (file to file) evaluation using Wikipedia ground truth
     protected static int[] pAtValue_A2F = {5, 10, 20, 30, 50, 100};
     
-    
 //    protected static void 
     protected static void log(Object aObject) {
         System.out.println(String.valueOf(aObject));
@@ -55,11 +55,16 @@ public class Data {
 //        return resultTable;
     }
     
-    protected static double average(Hashtable<String, Double> table, int dividedBy) {
+    protected static double average(ArrayList<TopicScore> table, int dividedBy) {
     	double sum = 0.0;
-    	for (Double value : table.values()) {
-    		System.err.print(value + ", ");
-    		sum += value;
+
+    	for (TopicScore score : table)
+    		System.err.print(score.getTopicId() + ", ");
+		System.err.println();
+    			
+    	for (TopicScore score : table) {
+    		System.err.print(score.getScore() + ", ");
+    		sum += score.getScore();
     	}
     	System.err.println();
 		return sum / (double)dividedBy;
@@ -101,7 +106,7 @@ public class Data {
                         String toFile = "";
 //                        String toFileID = "";
                         String toBep = "";
-                        log(topicID + "Anchor: " + is.getTopic().get(i).getOutgoing().getAnchor().get(j).getName());
+//                        log(topicID + "Anchor: " + is.getTopic().get(i).getOutgoing().getAnchor().get(j).getName());
                         List<crosslink.rungenerator.ToFileType> linkTo = is.getTopic().get(i).getOutgoing().getAnchor().get(j).getTofile();
                         if (linkTo != null)
 	                        for (int k = 0; k < linkTo.size(); k++) {
@@ -116,7 +121,7 @@ public class Data {
 	                            if (!outF2FV.contains(toFile)) {
 	                                outF2FV.add(toFile);
 	                            } else {
-	                                log(topicID + "<-- Topic ID: Duplicated: " + toFile);
+//	                                log(topicID + "<-- Topic ID: Duplicated: " + toFile);
 	                            }
 	                        }
                     }
