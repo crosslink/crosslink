@@ -22,6 +22,8 @@ import javax.xml.bind.Unmarshaller;
 import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 
+import ltwassessment.utility.WildcardFiles;
+
 import org.jCharts.chartData.ChartDataException;
 import org.jCharts.properties.PropertyException;
 
@@ -746,8 +748,13 @@ public class EvaluationUI3 extends JFrame {
         ArrayList<File> fileList = new ArrayList<File>();
         for (int l = 0; l < fl.length; l++) {
             String afile = fl[l].trim();
-            if (afile.length() > 0)
-            	fileList.add(new File(afile));
+            if (afile.length() > 0) {
+            	File aFile = new File(afile);
+            	if (aFile.isDirectory())
+            		fileList.addAll(WildcardFiles.listFilesInStack(afile));
+            	else
+            		fileList.add(aFile);  	
+            }
         }
         for (int k = 0; k < fileList.size(); k++) {
             try {
@@ -1159,6 +1166,10 @@ public class EvaluationUI3 extends JFrame {
                                 List outItemsList = new ArrayList();
                                 for (int j = 0; j < topic.getOutgoing().getAnchor().size(); j++) {
                                     List<crosslink.rungenerator.ToFileType> linkTo = topic.getOutgoing().getAnchor().get(j).getTofile();
+                                    if (linkTo == null) {
+                                    	System.err.println("Empty anchor:" + topic.getOutgoing().getAnchor().get(j).getName());
+                                    	continue;
+                                    }
                                     for (int k = 0; k < linkTo.size(); k++) {
                                         outLinkCount++;
                                         ToFileType tofile = linkTo.get(k);

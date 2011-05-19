@@ -1,6 +1,7 @@
 package crosslink.measures;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.List;
@@ -39,7 +40,6 @@ public class Data {
     // fro anchor to file (file to file) evaluation using Wikipedia ground truth
     protected static int[] pAtValue_A2F = {5, 10, 20, 30, 50, 100};
     
-    
 //    protected static void 
     protected static void log(Object aObject) {
         System.out.println(String.valueOf(aObject));
@@ -53,6 +53,21 @@ public class Data {
 //    	String resultfile = 
         return ResultSetManager.getInstance().getResultSetLinks(currentSourceLang, currentTargetLang);
 //        return resultTable;
+    }
+    
+    protected static double average(ArrayList<TopicScore> table, int dividedBy) {
+    	double sum = 0.0;
+
+    	for (TopicScore score : table)
+    		System.err.print(score.getTopicId() + ", ");
+		System.err.println();
+    			
+    	for (TopicScore score : table) {
+    		System.err.print(score.getScore() + ", ");
+    		sum += score.getScore();
+    	}
+    	System.err.println();
+		return sum / (double)dividedBy;
     }
 
     protected static Hashtable getRunSet(File runfiles) throws Exception {
@@ -91,22 +106,24 @@ public class Data {
                         String toFile = "";
 //                        String toFileID = "";
                         String toBep = "";
+//                        log(topicID + "Anchor: " + is.getTopic().get(i).getOutgoing().getAnchor().get(j).getName());
                         List<crosslink.rungenerator.ToFileType> linkTo = is.getTopic().get(i).getOutgoing().getAnchor().get(j).getTofile();
-                        for (int k = 0; k < linkTo.size(); k++) {
-                            toFile = linkTo.get(k).getFile().toString().trim();
-//                            toFileId = toFile;
-//                            if (!toFile.equals("")) {
-//                                int endop = toFile.toLowerCase().indexOf(".xml");
-//                                if (endop != -1) {
-//                                    toFileID = toFile.substring(0, endop);
-//                                }
-//                            }
-                            if (!outF2FV.contains(toFile)) {
-                                outF2FV.add(toFile);
-                            } else {
-                                log(topicID + "<-- Topic ID: Duplicated: " + toFile);
-                            }
-                        }
+                        if (linkTo != null)
+	                        for (int k = 0; k < linkTo.size(); k++) {
+	                            toFile = linkTo.get(k).getFile().toString().trim();
+	//                            toFileId = toFile;
+	//                            if (!toFile.equals("")) {
+	//                                int endop = toFile.toLowerCase().indexOf(".xml");
+	//                                if (endop != -1) {
+	//                                    toFileID = toFile.substring(0, endop);
+	//                                }
+	//                            }
+	                            if (!outF2FV.contains(toFile)) {
+	                                outF2FV.add(toFile);
+	                            } else {
+//	                                log(topicID + "<-- Topic ID: Duplicated: " + toFile);
+	                            }
+	                        }
                     }
 
                     if (outF2FV.size() >= 1) {
