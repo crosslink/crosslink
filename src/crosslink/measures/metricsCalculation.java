@@ -142,7 +142,7 @@ public final class metricsCalculation extends Data {
         Hashtable outgoingHt = new Hashtable();
         Hashtable incomingHt = new Hashtable();
         // =============================================================
-        Hashtable<String, Double> averagePrecision = new Hashtable<String, Double>();
+        ArrayList<TopicScore> averagePrecision = new ArrayList<TopicScore>();
 
         // Loop all Topics in the submitted run
         for (Enumeration e = runTable.keys(); e.hasMoreElements();) {
@@ -239,7 +239,8 @@ public final class metricsCalculation extends Data {
 
             // Add "aTopicAvePrecision" to related APs
             if (key.endsWith(outgoingTag)) {
-                averagePrecision.put(topicId, aTopicAvePrecision);
+            	TopicScore score = new TopicScore(topicId, aTopicAvePrecision); 
+                averagePrecision.add(score);
 //                outgoingAPs += aTopicAvePrecision;
             } else if (key.endsWith(incomingTag)) {
                 incomingAPs += aTopicAvePrecision;
@@ -377,8 +378,8 @@ public final class metricsCalculation extends Data {
         double[] outgoingPrecsAt = new double[recallDegree];
         double[] incomingPrecsAt = new double[recallDegree];
 
-        Hashtable<String, Double> precisionAt5 = new Hashtable<String, Double>();
-        Hashtable<String, Double> precisionAt10 = new Hashtable<String, Double>();
+        ArrayList<TopicScore> precisionAt5 = new ArrayList<TopicScore>();
+        ArrayList<TopicScore> precisionAt10 = new ArrayList<TopicScore>();
         
         for (Enumeration e = runTable.keys(); e.hasMoreElements();) {
             double mCount = 0.;
@@ -396,8 +397,8 @@ public final class metricsCalculation extends Data {
                     	
 //                        outgoingPrecsAt[0] += 1.0;
 //                        outgoingPrecsAt[1] += 1.0;
-                    	precisionAt5.put(topicId, 1.0);
-                    	precisionAt10.put(topicId, 1.0);
+                    	precisionAt5.add(new TopicScore(topicId, 1.0));
+                    	precisionAt10.add(new TopicScore(topicId, 1.0));
                         outgoingPrecsAt[2] += 1.0;
                         outgoingPrecsAt[3] += 1.0;
                         outgoingPrecsAt[4] += 1.0;
@@ -415,8 +416,8 @@ public final class metricsCalculation extends Data {
                     if (key.endsWith(outgoingTag)) {
 //                        outgoingPrecsAt[0] += 0;
 //                        outgoingPrecsAt[1] += 0;
-                    	precisionAt5.put(topicId, 0.0);
-                    	precisionAt10.put(topicId, 0.0);                    	
+                    	precisionAt5.add(new TopicScore(topicId, 0.0));
+                    	precisionAt10.add(new TopicScore(topicId, 0.0));                    	
                         outgoingPrecsAt[2] += 0;
                         outgoingPrecsAt[3] += 0;
                         outgoingPrecsAt[4] += 0;
@@ -467,8 +468,8 @@ public final class metricsCalculation extends Data {
                             if (key.endsWith(outgoingTag)) {
 //                                outgoingPrecsAt[0] += (double) mCount / pAtValue[0];
 //                                outgoingPrecsAt[1] += (double) mCount / pAtValue[1];
-                            	precisionAt5.put(topicId, (double) mCount / pAtValue[0]);
-                            	precisionAt10.put(topicId, (double) mCount / pAtValue[1]);                             	
+                            	precisionAt5.add(new TopicScore(topicId, (double) mCount / pAtValue[0]));
+                            	precisionAt10.add(new TopicScore(topicId, (double) mCount / pAtValue[1]));                             	
                                 outgoingPrecsAt[2] += (double) mCount / pAtValue[2];
                                 outgoingPrecsAt[3] += (double) mCount / pAtValue[3];
                                 outgoingPrecsAt[4] += (double) mCount / pAtValue[4];
@@ -496,8 +497,8 @@ public final class metricsCalculation extends Data {
                                 if (key.endsWith(outgoingTag)) {
 //                                    outgoingPrecsAt[1] += (double) mCount / pAtValue[1];
 //                                    outgoingPrecsAt[2] += (double) mCount / pAtValue[2];
-                                	precisionAt5.put(topicId, (double) mCount / pAtValue[0]);
-                                	precisionAt10.put(topicId, (double) mCount / pAtValue[1]);                                      
+                                	precisionAt5.add(new TopicScore(topicId, (double) mCount / pAtValue[0]));
+                                	precisionAt10.add(new TopicScore(topicId, (double) mCount / pAtValue[1]));                                      
                                     outgoingPrecsAt[3] += (double) mCount / pAtValue[3];
                                     outgoingPrecsAt[4] += (double) mCount / pAtValue[4];
                                     outgoingPrecsAt[5] += (double) mCount / pAtValue[5];
@@ -514,14 +515,14 @@ public final class metricsCalculation extends Data {
                         if ((i + 1) == pAtValue[0]) {
                             if (key.endsWith(outgoingTag)) {
 //                                outgoingPrecsAt[0] += (double) mCount / (i + 1);
-                            	precisionAt5.put(topicId, (double) mCount / (i + 1));
+                            	precisionAt5.add(new TopicScore(topicId, (double) mCount / (i + 1)));
                             } else if (key.endsWith(incomingTag)) {
                                 incomingPrecsAt[0] += (double) mCount / (i + 1);
                             }
                         } else if ((i + 1) == pAtValue[1]) {
                             if (key.endsWith(outgoingTag)) {
 //                                outgoingPrecsAt[1] += (double) mCount / (i + 1);
-                            	precisionAt10.put(topicId, (double) mCount / (i + 1));  
+                            	precisionAt10.add(new TopicScore(topicId, (double) mCount / (i + 1)));  
                             } else if (key.endsWith(incomingTag)) {
                                 incomingPrecsAt[1] += (double) mCount / (i + 1);
                             }
@@ -542,14 +543,14 @@ public final class metricsCalculation extends Data {
                         if ((i + 1) == pAtValue[0]) {
                             if (key.endsWith(outgoingTag)) {
 //                                outgoingPrecsAt[0] += (double) mCount / (i + 1);
-                            	precisionAt5.put(topicId, (double) mCount / (i + 1));
+                            	precisionAt5.add(new TopicScore(topicId, (double) mCount / (i + 1)));
                             } else if (key.endsWith(incomingTag)) {
                                 incomingPrecsAt[0] += (double) mCount / (i + 1);
                             }
                         } else if ((i + 1) == pAtValue[1]) {
                             if (key.endsWith(outgoingTag)) {
 //                                outgoingPrecsAt[1] += (double) mCount / (i + 1);
-                            	precisionAt10.put(topicId, (double) mCount / (i + 1));  
+                            	precisionAt10.add(new TopicScore(topicId, (double) mCount / (i + 1)));  
                             } else if (key.endsWith(incomingTag)) {
                                 incomingPrecsAt[1] += (double) mCount / (i + 1);
                             }
@@ -574,7 +575,7 @@ public final class metricsCalculation extends Data {
                         if ((i + 1) == pAtValue[0]) {
                             if (key.endsWith(outgoingTag)) {
 //                                outgoingPrecsAt[0] += (double) mCount / (i + 1);
-                                precisionAt5.put(topicId, (double) mCount / (i + 1));
+                                precisionAt5.add(new TopicScore(topicId, (double) mCount / (i + 1)));
                             } else if (key.endsWith(incomingTag)) {
                                 incomingPrecsAt[0] += (double) mCount / (i + 1);
                             }
@@ -582,7 +583,7 @@ public final class metricsCalculation extends Data {
                         } else if ((i + 1) == pAtValue[1]) {
                             if (key.endsWith(outgoingTag)) {
 //                                outgoingPrecsAt[1] += (double) mCount / (i + 1);
-                            	precisionAt10.put(topicId, (double) mCount / (i + 1));  
+                            	precisionAt10.add(new TopicScore(topicId, (double) mCount / (i + 1)));  
                             } else if (key.endsWith(incomingTag)) {
                                 incomingPrecsAt[1] += (double) mCount / (i + 1);
                             }
@@ -615,7 +616,7 @@ public final class metricsCalculation extends Data {
                         if ((i + 1) == pAtValue[0]) {
                             if (key.endsWith(outgoingTag)) {
 //                                outgoingPrecsAt[0] += (double) mCount / (i + 1);
-                                precisionAt5.put(topicId, (double) mCount / (i + 1));
+                                precisionAt5.add(new TopicScore(topicId, (double) mCount / (i + 1)));
                             } else if (key.endsWith(incomingTag)) {
                                 incomingPrecsAt[0] += (double) mCount / (i + 1);
                             }
@@ -623,7 +624,7 @@ public final class metricsCalculation extends Data {
                         } else if ((i + 1) == pAtValue[1]) {
                             if (key.endsWith(outgoingTag)) {
 //                                outgoingPrecsAt[1] += (double) mCount / (i + 1);
-                            	precisionAt10.put(topicId, (double) mCount / (i + 1));  
+                            	precisionAt10.add(new TopicScore(topicId, (double) mCount / (i + 1)));  
                             } else if (key.endsWith(incomingTag)) {
                                 incomingPrecsAt[1] += (double) mCount / (i + 1);
                             }
