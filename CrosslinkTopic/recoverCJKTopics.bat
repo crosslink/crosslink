@@ -1,4 +1,4 @@
-:: REMOVECJKTOPICS.BAT
+:: RECOVERCJKTOPICS.BAT
 :: remove the CJK counterparts of English topics from CJK document collections.
 
 @ECHO OFF
@@ -27,7 +27,7 @@ if NOT EXIST %CJK_CORPORA_PATH% (
 FOR %%A IN (zh ja ko) DO (
 	echo %%A 
 	if EXIST %CJK_CORPORA_PATH%\%%A (
-		echo "removing %%A topics from corpus..."
+		echo "recovering %%A topics to corpus..."
 		
 		set REMOVED_TOPICS_PATH=%CJK_CORPORA_PATH%\topics\%%A
 		if not EXIST %REMOVED_TOPICS_PATH% mkdir %REMOVED_TOPICS_PATH%
@@ -41,13 +41,14 @@ FOR %%A IN (zh ja ko) DO (
 			for /f "tokens=*" %%B in (%HOME_PATH%%%A_topics_list_win.txt) do (
 				set line=%%B
 				
-				set topic_file=%CJK_CORPORA_PATH%\%%A\!line!
-				set target_file=%CJK_CORPORA_PATH%\topics\%%A\!line!
-				for %%F in (%CJK_CORPORA_PATH%\topics\%%A\!line!) do set target_path=%%~dpF
+				set target_file=%CJK_CORPORA_PATH%\%%A\!line!
+				set topic_file=%CJK_CORPORA_PATH%\topics\%%A\!line!
+				for %%F in (%CJK_CORPORA_PATH%\%%A\!line!) do set target_path=%%~dpF
 				
-				if NOT EXIST !target_path! mkdir !target_path!
 				echo moving !topic_file! ...
-				move %CJK_CORPORA_PATH%\%%A\!line! !target_path!
+				if EXIST %CJK_CORPORA_PATH%\topics\%%A\!line! (
+					move %CJK_CORPORA_PATH%\topics\%%A\!line! !target_path!
+				)
 			)			
 		)
 	)	
