@@ -5,6 +5,10 @@
 #  This file contains information of the CJK counterparts of English
 #  test topics 
 #
+#  CJK document collections path: the home of the CJK Wikipedia 
+#  collections will be the directory holding the zh , or ja , or ko folder, 
+#  or all above folders
+#
 ############################################################################
 
 [1]. Use removeCJKTopics.sh to remove CJK counterparts of English from test document collections
@@ -16,6 +20,8 @@ or
 
 * On Windows
 Usage: removeCJKTopics.bat [CJK document collections path]
+
+if running the script successfully, the CJK counterparts of English topics will be moved to [CJK document collections path]//topics directory.
 
 [2]. If the scripts provided are not suitable for your needs, you may find the corresponding CJK counterparts in following files:
 
