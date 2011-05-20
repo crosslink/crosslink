@@ -5,7 +5,7 @@
 
 HOME_PATH=`dirname $0`
 
-langs="zh"
+langs="zh ja ko"
 CJK_CORPORA_PATH=$1
 
 if ! [ -n "$CJK_CORPORA_PATH" ]; then
@@ -20,24 +20,26 @@ fi
 
 for i in $langs
 do
-	echo "removing $i topics from corpus..."
+	if [ -e "$CJK_CORPORA_PATH/$i" ]; then
+		echo "removing $i topics from corpus..."
+		
+		REMOVED_TOPICS_PATH=$CJK_CORPORA_PATH/topics/${i}
+		mkdir -v -p $REMOVED_TOPICS_PATH
 	
-	REMOVED_TOPICS_PATH=$CJK_CORPORA_PATH/topics/${i}
-	mkdir -v -p $REMOVED_TOPICS_PATH
-
-	TOPICS=$HOME_PATH/${i}_topics_list.txt
-	
-	if [ -e "$TOPICS" ]; then
-		for topic in `cat $TOPICS`
-		do
-			topic_file=${CJK_CORPORA_PATH}/${i}/${topic}
-			echo $topic
-			target_file=${REMOVED_TOPICS_PATH}/${topic}
-			target_path=`dirname $target_file`
-			mkdir -p $target_path
-			mv -v $topic_file $target_path
-		done
-	else
-		echo "Error: no $TOPICS found"
+		TOPICS=$HOME_PATH/${i}_topics_list.txt
+		
+		if [ -e "$TOPICS" ]; then
+			for topic in `cat $TOPICS`
+			do
+				topic_file=${CJK_CORPORA_PATH}/${i}/${topic}
+				echo $topic
+				target_file=${REMOVED_TOPICS_PATH}/${topic}
+				target_path=`dirname $target_file`
+				mkdir -p $target_path
+				mv -v $topic_file $target_path
+			done
+		else
+			echo "Error: no $TOPICS found"
+		fi
 	fi
 done
