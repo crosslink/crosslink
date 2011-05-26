@@ -4,6 +4,8 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
+import ltwassessment.wiki.WikiArticleXml;
+
 public class MonolinkTopic extends WikiArticleXml {
 	// the existing or recommended links in the topics
 	protected Set<String> links = Collections.synchronizedSet(new HashSet<String>());
