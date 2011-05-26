@@ -2,6 +2,8 @@ package ltwassessment.utility;
 
 import java.util.Vector;
 
+import javax.swing.table.DefaultTableModel;
+
 import ltwassessment.AppResource;
 import ltwassessment.parsers.FOLTXTMatcher;
 import ltwassessment.parsers.PoolerManager;
@@ -51,12 +53,14 @@ public class PaneTableManager {
             if (!tabTableModel.hasEmptyRow()) {
                 tabTableModel.addEmptyRow();
             }
+            tabTableModel.setValueAt(i + 1, i, 0);
             for (int j = 0; j < thisTABSet.length; j++) {
-                tabTableModel.setValueAt(thisTABSet[j], i, j);
+                tabTableModel.setValueAt(thisTABSet[j], i, j + 1);
             }
-            tabTableModel.setValueAt("linkBepItem_" + hiddenItem, i, thisTABSet.length);
+            tabTableModel.setValueAt("linkBepItem_" + hiddenItem, i, TABInteractiveTableModel.HIDDEN_INDEX/*thisTABSet.length*/);
             hiddenItem++;
         }
+        tabTableModel.setRowCount(size);
         tabTableModel.fireTableDataChanged();
     }
 

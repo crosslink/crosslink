@@ -6,6 +6,7 @@ package ltwassessment.utility;
 public class TABRecord {
 
     // Column Titles
+	protected int	 rank;
     protected String topicCol;
     protected String anchorCol;
     protected String subAnchorCol;
@@ -54,4 +55,18 @@ public class TABRecord {
     public void setHiddenFieldValue(String hiddenFieldValue){
         this.fiddenFieldCol = hiddenFieldValue;
     }
+
+	/**
+	 * @return the rank
+	 */
+	public int getRank() {
+		return rank;
+	}
+
+	/**
+	 * @param rank the rank to set
+	 */
+	public void setRank(int rank) {
+		this.rank = rank;
+	}
 }

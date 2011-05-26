@@ -11,11 +11,12 @@ import ltwassessment.utility.TABRecord;
  */
 public class TABInteractiveTableModel extends DefaultTableModel {
 
-    public static final int TOPIC_INDEX = 0;
-    public static final int ANCHOR_INDEX = 1;
-    public static final int SUBANCHOR_INDEX = 2;
-    public static final int BEP_INDEX = 3;
-    public static final int HIDDEN_INDEX = 4;
+	public static final int RANK_INDEX = 0;
+    public static final int TOPIC_INDEX = 1;
+    public static final int ANCHOR_INDEX = 2;
+    public static final int SUBANCHOR_INDEX = 3;
+    public static final int BEP_INDEX = 4;
+    public static final int HIDDEN_INDEX = 5;
     protected String[] columnNames;
     protected Vector dataVector;
 
@@ -40,6 +41,7 @@ public class TABInteractiveTableModel extends DefaultTableModel {
 
     public Class getCloumnClass(int colIndex) {
         switch (colIndex) {
+        	case RANK_INDEX:
             case TOPIC_INDEX:
             case ANCHOR_INDEX:
             case SUBANCHOR_INDEX:
@@ -61,6 +63,8 @@ public class TABInteractiveTableModel extends DefaultTableModel {
     public Object getValueAt(int row, int column) {
         TABRecord myRecord = (TABRecord) dataVector.get(row);
         switch (column) {
+        	case RANK_INDEX:
+        		return myRecord.getRank();
             case TOPIC_INDEX:
                 return myRecord.getTopic();
             case ANCHOR_INDEX:
@@ -80,6 +84,9 @@ public class TABInteractiveTableModel extends DefaultTableModel {
     public void setValueAt(Object value, int row, int column) {
         TABRecord myRecord = (TABRecord) dataVector.get(row);
         switch (column) {
+	        case RANK_INDEX:
+	        	myRecord.setRank(row + 1);
+	        	break;
             case TOPIC_INDEX:
                 myRecord.setTopic((String) value);
                 break;
