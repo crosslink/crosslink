@@ -100,15 +100,15 @@ public class AttributiveCellRenderer extends DefaultTableCellRenderer {
         if (isTABTask) {
             // TAB Outgoing
             // <editor-fold defaultstate="collapsed" desc="For Topic AnchorOL - Click -> BEP Links">
-            if (column == 0) {
+            if (column == TABInteractiveTableModel.TOPIC_INDEX) {
                 thisTopicID = value.toString().split(" : ")[0].trim();
                 thisTopicTitle = value.toString().split(" : ")[1].trim();
-            } else if (column == 1) {
+            } else if (column == TABInteractiveTableModel.ANCHOR_INDEX) {
                 String[] thisTABAnchorSet = value.toString().split(" : ");
                 thisAnchorOffset = thisTABAnchorSet[0].trim().split("_")[0];
                 thisAnchorLength = thisTABAnchorSet[0].trim().split("_")[1];
                 thisAnchorText = thisTABAnchorSet[1].trim();
-            } else if (column == 3) {
+            } else if (column == TABInteractiveTableModel.BEP_INDEX) {
                 String[] thisTABBepLinkSet = value.toString().split(" : ");
                 thisBepOffset = thisTABBepLinkSet[0].split("_")[0];
                 thisLinkID = thisTABBepLinkSet[0].split("_")[1];
@@ -148,7 +148,7 @@ public class AttributiveCellRenderer extends DefaultTableCellRenderer {
                     c.setBackground(backColor);
                     c.setForeground(foreColor);
                 }
-                if (row == currClickRow && column == 3) {
+                if (row == currClickRow && column == TABInteractiveTableModel.BEP_INDEX) {
                     newTABFieldValues.add(thisTopicTitle);
                     newTABFieldValues.add(thisTopicID);
                     newTABFieldValues.add(thisAnchorText);
@@ -157,69 +157,70 @@ public class AttributiveCellRenderer extends DefaultTableCellRenderer {
                 }
             }
         // </editor-fold>
-        } else {
-            // TBA Incoming
-            // <editor-fold defaultstate="collapsed" desc="For Topic BEP - Click -> AnchorOL Links">
-            if (column == 0) {
-                thisTopicID = value.toString().split(" : ")[0].trim();
-                thisTopicTitle = value.toString().split(" : ")[1].trim();
-            } else if (column == 1) {
-                thisBepOffset = value.toString();
-            } else if (column == 2) {
-                String[] thisTBAAnchorOLName = value.toString().split(" : ");
-                thisAnchorOffset = thisTBAAnchorOLName[0].split("_")[0];
-                thisAnchorLength = thisTBAAnchorOLName[0].split("_")[1];
-                thisAnchorText = thisTBAAnchorOLName[1].trim();
-            } else if (column == 3) {
-                thisLinkID = value.toString().split(" : ")[0].trim();
-                thisLinkTitle = value.toString().split(" : ")[1].trim();
-            }
-            if (isTopicPaneOLClick) {
-                if (thisTopicID.equals(currTopicID) && thisAnchorOffset.equals(anchorXmlOffset) && thisAnchorLength.equals(anchorXmlLength) && thisBepOffset.equals(bepXmlOffset) && thisLinkID.equals(linkFileID)) {
-                    c.setBackground(currSelectedColor);
-                    c.setForeground(selectedFontColor);
-                    thisAnchorOffset = "";
-                    thisAnchorLength = "";
-                    thisLinkID = "";
-                    // ---------------------------------------------------------
-                    // ---------------------------------------------------------
-                    // Update TBA Navigation Indices
-                    String[] thisIndicesSA = myIndicesByRowKey.get(String.valueOf(row));
-                    String[] navIndices = new String[]{String.valueOf(row), thisIndicesSA[0], thisIndicesSA[1], thisIndicesSA[2], thisIndicesSA[3]};
-                    myRSCManager.updateTBANavigationIndex(navIndices);
-                    // ---------------------------------------------------------
-                    newTABFieldValues.add(thisTopicTitle);
-                    newTABFieldValues.add(thisTopicID);
-                    newTABFieldValues.add(thisAnchorText);
-                    newTABFieldValues.add(thisLinkTitle);
-                    os.setTABFieldValues(newTABFieldValues);
-                } else {
-                    c.setBackground(backColor);
-                    c.setForeground(foreColor);
-                }
-            } else if (isTableClick) {
-                if (row == currClickRow && column == currClickColumn) {
-                    c.setBackground(currSelectedColor);
-                    c.setForeground(selectedFontColor);
-                    // ---------------------------------------------------------
-                    // Update TBA Navigation Indices
-                    String[] thisIndicesSA = myIndicesByRowKey.get(String.valueOf(row));
-                    String[] navIndices = new String[]{String.valueOf(row), thisIndicesSA[0], thisIndicesSA[1], thisIndicesSA[2], thisIndicesSA[3]};
-                    myRSCManager.updateTBANavigationIndex(navIndices);
-                } else {
-                    c.setBackground(backColor);
-                    c.setForeground(foreColor);
-                }
-                if (row == currClickRow && column == 3) {
-                    newTABFieldValues.add(thisTopicTitle);
-                    newTABFieldValues.add(thisTopicID);
-                    newTABFieldValues.add(thisAnchorText);
-                    newTABFieldValues.add(thisLinkTitle);
-                    os.setTABFieldValues(newTABFieldValues);
-                }
-            }
-        // </editor-fold>
-        }
+        } 
+//        else {
+//            // TBA Incoming
+//            // <editor-fold defaultstate="collapsed" desc="For Topic BEP - Click -> AnchorOL Links">
+//            if (column == 0) {
+//                thisTopicID = value.toString().split(" : ")[0].trim();
+//                thisTopicTitle = value.toString().split(" : ")[1].trim();
+//            } else if (column == 1) {
+//                thisBepOffset = value.toString();
+//            } else if (column == 2) {
+//                String[] thisTBAAnchorOLName = value.toString().split(" : ");
+//                thisAnchorOffset = thisTBAAnchorOLName[0].split("_")[0];
+//                thisAnchorLength = thisTBAAnchorOLName[0].split("_")[1];
+//                thisAnchorText = thisTBAAnchorOLName[1].trim();
+//            } else if (column == 3) {
+//                thisLinkID = value.toString().split(" : ")[0].trim();
+//                thisLinkTitle = value.toString().split(" : ")[1].trim();
+//            }
+//            if (isTopicPaneOLClick) {
+//                if (thisTopicID.equals(currTopicID) && thisAnchorOffset.equals(anchorXmlOffset) && thisAnchorLength.equals(anchorXmlLength) && thisBepOffset.equals(bepXmlOffset) && thisLinkID.equals(linkFileID)) {
+//                    c.setBackground(currSelectedColor);
+//                    c.setForeground(selectedFontColor);
+//                    thisAnchorOffset = "";
+//                    thisAnchorLength = "";
+//                    thisLinkID = "";
+//                    // ---------------------------------------------------------
+//                    // ---------------------------------------------------------
+//                    // Update TBA Navigation Indices
+//                    String[] thisIndicesSA = myIndicesByRowKey.get(String.valueOf(row));
+//                    String[] navIndices = new String[]{String.valueOf(row), thisIndicesSA[0], thisIndicesSA[1], thisIndicesSA[2], thisIndicesSA[3]};
+//                    myRSCManager.updateTBANavigationIndex(navIndices);
+//                    // ---------------------------------------------------------
+//                    newTABFieldValues.add(thisTopicTitle);
+//                    newTABFieldValues.add(thisTopicID);
+//                    newTABFieldValues.add(thisAnchorText);
+//                    newTABFieldValues.add(thisLinkTitle);
+//                    os.setTABFieldValues(newTABFieldValues);
+//                } else {
+//                    c.setBackground(backColor);
+//                    c.setForeground(foreColor);
+//                }
+//            } else if (isTableClick) {
+//                if (row == currClickRow && column == currClickColumn) {
+//                    c.setBackground(currSelectedColor);
+//                    c.setForeground(selectedFontColor);
+//                    // ---------------------------------------------------------
+//                    // Update TBA Navigation Indices
+//                    String[] thisIndicesSA = myIndicesByRowKey.get(String.valueOf(row));
+//                    String[] navIndices = new String[]{String.valueOf(row), thisIndicesSA[0], thisIndicesSA[1], thisIndicesSA[2], thisIndicesSA[3]};
+//                    myRSCManager.updateTBANavigationIndex(navIndices);
+//                } else {
+//                    c.setBackground(backColor);
+//                    c.setForeground(foreColor);
+//                }
+//                if (row == currClickRow && column == 3) {
+//                    newTABFieldValues.add(thisTopicTitle);
+//                    newTABFieldValues.add(thisTopicID);
+//                    newTABFieldValues.add(thisAnchorText);
+//                    newTABFieldValues.add(thisLinkTitle);
+//                    os.setTABFieldValues(newTABFieldValues);
+//                }
+//            }
+//        // </editor-fold>
+//        }
         return c;
     }
 }

@@ -44,6 +44,7 @@ import ltwassessment.utility.highlightPainters;
 import ltwassessment.utility.poolUpdater;
 import ltwassessment.view.Link;
 import ltwassessment.view.ScreenAnchor;
+import ltwassessment.wiki.WikiArticleXml;
 
 /**
  * The main frame for the Assessment Tool
@@ -378,6 +379,8 @@ public class LTWAssessmentToolView extends FrameView {
         jLabel1.setText(resourceMap.getString("jLabel1.text")); // NOI18N
         jLabel1.setName("jLabel1"); // NOI18N
 
+        lblTopicTitle.setFont(resourceMap.getFont("lblTopicTitle.font")); // NOI18N
+        lblTopicTitle.setForeground(resourceMap.getColor("lblTopicTitle.foreground")); // NOI18N
         lblTopicTitle.setText(resourceMap.getString("lblTopicTitle.text")); // NOI18N
         lblTopicTitle.setMaximumSize(new java.awt.Dimension(30, 14));
         lblTopicTitle.setMinimumSize(new java.awt.Dimension(30, 14));
@@ -1127,7 +1130,7 @@ public class LTWAssessmentToolView extends FrameView {
         //currTopicName = topicIDNameVSA.elementAt(0)[1].trim();
         currTopicID = rscManager.getTopicID();
         currTopicFilePath = rscManager.getCurrTopicXmlFile();
-        currToipcName = 
+        currTopicName = new WikiArticleXml(currTopicFilePath).getTitle();
         String topicLang = rscManager.getTopicLang();
         setTopicPaneContent(currTopicFilePath, topicLang);
 

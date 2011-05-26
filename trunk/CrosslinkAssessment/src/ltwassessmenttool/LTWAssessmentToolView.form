@@ -132,6 +132,8 @@
             </Component>
             <Component class="javax.swing.JLabel" name="lblTopicTitle">
               <Properties>
+                <Property name="font" type="java.awt.Font" resourceKey="lblTopicTitle.font"/>
+                <Property name="foreground" type="java.awt.Color" resourceKey="lblTopicTitle.foreground"/>
                 <Property name="text" type="java.lang.String" resourceKey="lblTopicTitle.text"/>
                 <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                   <Dimension value="[30, 14]"/>
