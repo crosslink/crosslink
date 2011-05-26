@@ -1127,6 +1127,7 @@ public class LTWAssessmentToolView extends FrameView {
         //currTopicName = topicIDNameVSA.elementAt(0)[1].trim();
         currTopicID = rscManager.getTopicID();
         currTopicFilePath = rscManager.getCurrTopicXmlFile();
+        currToipcName = 
         String topicLang = rscManager.getTopicLang();
         setTopicPaneContent(currTopicFilePath, topicLang);
 
