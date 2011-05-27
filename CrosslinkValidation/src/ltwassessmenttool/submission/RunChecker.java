@@ -8,6 +8,9 @@ public class RunChecker {
 	
 	public void checkRun(String file) {
 		Run run = new Run(new File(file));
+		
+		System.err.println("Checking run: " + run.getRunName());
+		System.err.println("===========================================================================");
 		run.validate();	
 	}
 

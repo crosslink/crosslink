@@ -26,6 +26,7 @@ import org.xml.sax.SAXException;
 public class Run {
 	
 	private HashMap<String, Topic> topics = null;
+	private String runName = null;
 	
     public Run() {
 		init();
@@ -37,6 +38,14 @@ public class Run {
 		read(runFile);
 	}
 	
+	public String getRunName() {
+		return runName;
+	}
+
+	public void setRunName(String runName) {
+		this.runName = runName;
+	}
+
 	private void init() {
 		//topics = (HashMap<String, Topic>) Collections.synchronizedMap(new HashMap<String, Topic>());
 		topics = new HashMap<String, Topic>();
@@ -67,6 +76,17 @@ public class Run {
         NodeList titleNodeList = xmlDoc.getElementsByTagName(afTitleTag);
         for (int i = 0; i < titleNodeList.getLength(); i++) {
             Element titleElmn = (Element) titleNodeList.item(i);
+            runName =  titleElmn.getAttribute("run-id");
+            String sourceLang = titleElmn.getAttribute("source_lang");
+            String targetLang = titleElmn.getAttribute("default_lang");
+            if (sourceLang.length() > 0)
+            	AppResource.sourceLang = sourceLang;
+            
+            if (targetLang.length() == 0)
+            	System.err.println("Error: no \"default_lang\" attribute given in " + afTitleTag + " tag");
+            else
+            	AppResource.targetLang = targetLang;
+            
             NodeList topicNodeList = titleElmn.getElementsByTagName(afTopicTag);
             for (int j = 0; j < topicNodeList.getLength(); j++) {
                 Element topicElmn = (Element) topicNodeList.item(j);
