@@ -41,9 +41,15 @@ public class AppResource {
 	}
 
 	private void loadTopicList() {
+		String file = getTopicPathWithLang() + TOPIC_LIST_FILE;
+		File handler = new File(file);
+		
+		if (!handler.exists())
+			return;
+		
     	BufferedInputStream stream;
 		try {
-			stream = new BufferedInputStream(new FileInputStream(getTopicPathWithLang() + TOPIC_LIST_FILE));
+			stream = new BufferedInputStream(new FileInputStream(handler));
 	    	BufferedReader reader = new BufferedReader(new InputStreamReader(stream));
 	    	
         	while (true)
@@ -87,13 +93,16 @@ public class AppResource {
 	
 	public String getTopicDirectory(String lang, String fileID) {
 		String key = fileID + ".xml";
-		String dir;
-		if (topics.containsKey(key)) {
-			dir = getTopicPathWithLang(lang) + topics.get(key); 
+		StringBuffer dir = new StringBuffer(getTopicPathWithLang(lang));
+		if (topics.size() > 0) {
+			if (topics.containsKey(key)) {
+				dir.append(topics.get(key)); 
+			}
+			else
+				dir.append("test");
+			dir.append(File.separator);
 		}
-		else
-			dir = getTopicPathWithLang(lang) + "test";
-		return dir + File.separator;
+		return dir.toString();
     }
 	
 	public String getTopicDirectory(String fileID) {
