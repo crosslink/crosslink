@@ -5,6 +5,10 @@ import java.util.LinkedList;
 import java.util.Map;
 import java.util.Set;
 
+import ltwassessment.submission.Anchor;
+import ltwassessment.submission.Target;
+import ltwassessment.wiki.Topic;
+
 public class ToXml {
 
 	public static String anchorToXml(Anchor anchor) {

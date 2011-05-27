@@ -1,6 +1,8 @@
-package ltwassessment.pool;
+package ltwassessment.submission;
 
 import java.util.LinkedList;
+
+import ltwassessment.wiki.Topic;
 
 /**
  * @author monfee
