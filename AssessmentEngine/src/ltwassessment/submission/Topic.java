@@ -2,6 +2,7 @@ package ltwassessment.submission;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 
 import ltwassessment.AppResource;
 
@@ -80,10 +81,10 @@ public class Topic {
 		}
 	}
 	
-	public boolean matchAnchor(int offset, int length, String name) {
+	public String getAnchor(int offset, int length) throws UnsupportedEncodingException {
 		byte[] result = new byte[length];
 		System.arraycopy(bytes, offset, result, 0, length);
-		return new String(result).equals(name);
+		return new String(result, "UTF-8");
 	}
 
 	public LinkedAnchorList getAnchors() {

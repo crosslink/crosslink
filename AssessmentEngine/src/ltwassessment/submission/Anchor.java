@@ -1,5 +1,6 @@
 package ltwassessment.submission;
 
+import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -151,17 +152,29 @@ public class Anchor {
 //
 //		return valid;
 //	}
+	
+//	public boolean matchAnchor(int offset, int length, String name) {
+//
+//	}
 
 	public boolean validate(Topic topic) {
-		boolean ret = topic.matchAnchor(offset, length, name);
+		String result = null;
+		try {
+			result = topic.getAnchor(offset, length);
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+		}
 		
-		StringBuffer message = new StringBuffer(String.format(ANCHOR_CHECK_MESSAGE, topic.getName(), topic.getId(), this.getName(), this.getOffset(), this.getLength()));
+		boolean ret = result.equals(name);;
+		
+		StringBuffer message = new StringBuffer(String.format(ANCHOR_CHECK_MESSAGE, topic.getName(), topic.getId(), name, this.getOffset(), this.getLength()));
 		if (ret) {
 			message.append(ANCHOR_CHECK_STATUS_OK);
 			System.out.println(message);
 		}
 		else {
  			message.append(ANCHOR_CHECK_STATUS_ERROR);
+ 			message.append(". Got \"" + result + "\" from topic instead");
  			System.err.println(message);
 		}
 		
