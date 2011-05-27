@@ -2280,7 +2280,7 @@ public class LTWAssessmentToolView extends FrameView {
             // current Topic
 //            String wikipediaTopicFileDir = resourceMap.getString("wikipedia.topics.folder");
             //currTopicFilePath = wikipediaTopicFileDir + currTopicID + ".xml";
-            currTopicFilePath = "resources" + File.separator + "Topics" + File.separator + currTopicID + ".xml";
+            currTopicFilePath = AppResource.getTopicXmlPathNameByFileID(currTopicID); //"resources" + File.separator + "Topics" + File.separator + currTopicID + ".xml";
 //        } else {
 //            // need to find out from TeAra Collection Folders
 //            currTopicFilePath = this.rscManager.getTeAraCollectionFolder() + this.rscManager.getTeAraFilePathByName(currTopicID + ".xml");
