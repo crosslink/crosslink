@@ -235,7 +235,7 @@ public class LTWAssessmentToolView extends FrameView {
                 //collectionFolder = rscManager.getWikipediaCollectionFolder();
 //            String topicFolder = AppResource.getTopicDirectoryh();
 //                runFilePath = rscManager.getWikipediaCollectionFolder() + rscManager.getWikipediaFilePathByName(ranTopicID + ".xml");
-              runFilePath =  AppResource.getTopicXmlPathNameByFileID(ranTopicID);
+              runFilePath =  AppResource.getInstance().getTopicXmlPathNameByFileID(ranTopicID);
 //            } else {
 //                collectionFolder = rscManager.getTeAraCollectionFolder();
 //                runFilePath = rscManager.getTeAraCollectionFolder() + rscManager.getTeAraFilePathByName(ranTopicID + ".xml");
@@ -2280,7 +2280,7 @@ public class LTWAssessmentToolView extends FrameView {
             // current Topic
 //            String wikipediaTopicFileDir = resourceMap.getString("wikipedia.topics.folder");
             //currTopicFilePath = wikipediaTopicFileDir + currTopicID + ".xml";
-            currTopicFilePath = AppResource.getTopicXmlPathNameByFileID(currTopicID); //"resources" + File.separator + "Topics" + File.separator + currTopicID + ".xml";
+            currTopicFilePath = AppResource.getInstance().getTopicXmlPathNameByFileID(currTopicID); //"resources" + File.separator + "Topics" + File.separator + currTopicID + ".xml";
 //        } else {
 //            // need to find out from TeAra Collection Folders
 //            currTopicFilePath = this.rscManager.getTeAraCollectionFolder() + this.rscManager.getTeAraFilePathByName(currTopicID + ".xml");

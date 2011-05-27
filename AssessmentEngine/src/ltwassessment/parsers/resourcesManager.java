@@ -2504,7 +2504,7 @@ public class resourcesManager {
     }
 
 	public String getTopicFilePath(String topicID, String topicLang) {
-		return AppResource.getTopicXmlPathNameByFileID(topicID, topicLang);
+		return AppResource.getInstance().getTopicXmlPathNameByFileID(topicID, topicLang);
 	}
 
 
