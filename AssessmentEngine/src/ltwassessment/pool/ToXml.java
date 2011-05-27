@@ -7,7 +7,7 @@ import java.util.Set;
 
 import ltwassessment.submission.Anchor;
 import ltwassessment.submission.Target;
-import ltwassessment.wiki.Topic;
+import ltwassessment.submission.Topic;
 
 public class ToXml {
 

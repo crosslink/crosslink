@@ -1,9 +1,10 @@
-package ltwassessment.wiki;
+package ltwassessment.submission;
 
 import java.io.FileInputStream;
 import java.io.IOException;
 
-import ltwassessment.submission.LinkedAnchorList;
+import ltwassessment.AppResource;
+
 
 public class Topic {
 	private String id = null;
@@ -52,6 +53,11 @@ public class Topic {
 	}
 	
 	public boolean validateIt() {
+		if (bytes == null) {
+			filePath = AppResource.getInstance().getTopicXmlPathNameByFileID(id);
+			readTopicText();
+		}
+		
 		valid = anchors.validateAll(this);
 		
 		return valid;
@@ -63,11 +69,11 @@ public class Topic {
 	
 	public void readTopicText() {
 		int size = 0;
-	    byte[] bytes = null;
+//	    
 		try {
 			FileInputStream fis = new FileInputStream(filePath);
 			size = fis.available();
-		    bytes    = new byte[size];
+		    bytes = new byte[size];
 		    fis.read(bytes, 0, size);
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -76,7 +82,7 @@ public class Topic {
 	
 	public boolean matchAnchor(int offset, int length, String name) {
 		byte[] result = new byte[length];
-		System.arraycopy(bytes, offset, result, offset, length);
+		System.arraycopy(bytes, offset, result, 0, length);
 		return new String(result).equals(name);
 	}
 

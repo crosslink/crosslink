@@ -6,9 +6,12 @@ import java.util.Map;
 import java.util.Set;
 import java.util.Vector;
 
-import ltwassessment.wiki.Topic;
 
 public class Anchor {
+	
+	public static final String ANCHOR_CHECK_MESSAGE = "Topic: %s (%s), anchor: %s (%d, %d), ";
+	public static final String ANCHOR_CHECK_STATUS_OK = "ok";
+	public static final String ANCHOR_CHECK_STATUS_ERROR = "error";
 	
 	private int offset = 0;
 	private int length = 0;
@@ -150,7 +153,19 @@ public class Anchor {
 //	}
 
 	public boolean validate(Topic topic) {
-		return topic.matchAnchor(offset, length, name);
+		boolean ret = topic.matchAnchor(offset, length, name);
+		
+		StringBuffer message = new StringBuffer(String.format(ANCHOR_CHECK_MESSAGE, topic.getName(), topic.getId(), this.getName(), this.getOffset(), this.getLength()));
+		if (ret) {
+			message.append(ANCHOR_CHECK_STATUS_OK);
+			System.out.println(message);
+		}
+		else {
+ 			message.append(ANCHOR_CHECK_STATUS_ERROR);
+ 			System.err.println(message);
+		}
+		
+		return ret;
 	}
 
 }

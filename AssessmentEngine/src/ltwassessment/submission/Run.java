@@ -5,6 +5,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
 import java.util.Vector;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -12,7 +15,6 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
 import ltwassessment.AppResource;
-import ltwassessment.wiki.Topic;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -158,4 +160,17 @@ public class Run {
         }
         return doc;
     }
+	
+	public void validate() {
+		Set set = getTopics().entrySet();
+
+	    Iterator i = set.iterator();
+
+	    while(i.hasNext()) {
+	    	Map.Entry me = (Map.Entry)i.next();
+	    	Topic topic = (Topic)me.getValue();
+	    	
+	    	topic.validateIt();
+	    }
+	}
 }

@@ -7,7 +7,7 @@ import java.util.Set;
 import java.util.Vector;
 
 import ltwassessment.submission.Run;
-import ltwassessment.wiki.Topic;
+import ltwassessment.submission.Topic;
 
 public class Pool {
 	private Run runs = null;
