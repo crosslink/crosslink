@@ -1,4 +1,4 @@
-package ltwassessment.pool;
+package ltwassessment.submission;
 
 public class Target {
 	private String lang = "";

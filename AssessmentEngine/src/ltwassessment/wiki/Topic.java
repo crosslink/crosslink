@@ -1,7 +1,9 @@
-package ltwassessment.pool;
+package ltwassessment.wiki;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+
+import ltwassessment.submission.LinkedAnchorList;
 
 public class Topic {
 	private String id = null;

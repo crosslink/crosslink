@@ -1,6 +1,6 @@
 package ltwassessment.view;
 
-import ltwassessment.pool.Anchor;
+import ltwassessment.submission.Anchor;
 
 public class ScreenAnchor {
 	private int offset;
