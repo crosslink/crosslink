@@ -559,7 +559,7 @@ public class FOLTXTMatcher {
     }
 
     public static String getTopicFullXmlTextByFileID(String fileID) {
-        String xmlFilePath = AppResource.getTopicXmlPathNameByFileID(fileID);
+        String xmlFilePath = AppResource.getInstance().getTopicXmlPathNameByFileID(fileID);
          return getFullXmlText(fileID, xmlFilePath);
     }
 
@@ -723,7 +723,7 @@ public class FOLTXTMatcher {
 //            } else {
 //                xmlFilePath = myRSCManager.getTeAraCollectionFolder() + myRSCManager.getTeAraFilePathByName(xmlFileID + ".xml");
 //            }
-            String targetFilePath = AppResource.getTopicPathNameByFileID(xmlFileID) + "_pureTxt.txt";
+            String targetFilePath = AppResource.getInstance().getTopicPathNameByFileID(xmlFileID) + "_pureTxt.txt";
             fullXmlText = ConvertXMLtoTXT(xmlFilePath, targetFilePath);
         } catch (BadLocationException ex) {
             Logger.getLogger(FOLTXTMatcher.class.getName()).log(Level.SEVERE, null, ex);
