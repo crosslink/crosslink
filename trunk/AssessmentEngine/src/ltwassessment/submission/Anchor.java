@@ -10,7 +10,7 @@ import java.util.Vector;
 
 public class Anchor {
 	
-	public static final String ANCHOR_CHECK_MESSAGE = "Topic: %s (%s), anchor: %s (%d, %d): ";
+	public static final String ANCHOR_CHECK_MESSAGE = "Topic: %s (%s), anchor: %s (%d:%d): ";
 	public static final String ANCHOR_CHECK_STATUS_OK = "ok";
 	public static final String ANCHOR_CHECK_STATUS_ERROR = "error";
 	
