@@ -79,8 +79,7 @@ public class XML2TXT {
 		return file;
 	}
 	
-	public byte[] convertFile(String xmlfile) {
-
+	private byte[] read(String xmlfile) {
 	    int size;
 	    byte[] bytes = null;
 		try {
@@ -92,9 +91,15 @@ public class XML2TXT {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		return bytes;
+	}
+	
+	public byte[] convertFile(String xmlfile) {
+
+
 //	    for (int i = 0; i < size;)
 //	        theChars[i] = (char)(bytes[i++]&0xff);
-		return clean(bytes);
+		return clean(read(xmlfile));
 	}
 	
 	public byte[] convert(String xml) {
@@ -122,7 +127,12 @@ public class XML2TXT {
 	}
 	
 	static void usage() {
-		System.out.println("Usage: XML2TXT [-o:offset:length] input_xml");
+		System.out.println("Usage: ");
+		System.out.println("	XML2TXT [-o:offset:length] input_xml");
+		System.out.println("		return the text with given offset and length.");
+		System.out.println("Or ");
+		System.out.println("	XML2TXT input_xml");
+		System.out.println("		remove all the tags");
 		//System.out.println("			[-r] -r replace the non-alphabet characters");
 		System.exit(-1);
 	}
@@ -137,38 +147,54 @@ public class XML2TXT {
 		int offset = 0, length = -1;
 		XML2TXT converter = new XML2TXT();
 		String xmlfile = null;
-		if (args[0].charAt(0) == '-')
-		{
-			if (args.length < 2)
-				usage();
-			int pos = 0, pos2 = 0;
-        	if ((pos = args[0].indexOf(":", pos)) != -1){
-        		++pos;
-        		if ((pos2 = args[0].indexOf(":", pos)) != -1) { 
-        			offset = Integer.valueOf(args[0].substring(pos, pos2)).intValue();
-        			length = Integer.valueOf(args[0].substring(pos2 + 1)).intValue();
-        		}
-        		else
-        			offset = Integer.valueOf(args[0].substring(pos + 1)).intValue();
-        	}
-        	System.err.printf("Showing offset: %d with length %d\n", (Object [])new Integer[] {new Integer(offset), new Integer(length)});
-        	xmlfile = args[1];
-		}			
-		else 
-			xmlfile = args[0];
-		byte[] bytes = converter.convertFile(xmlfile);
-		if (length == -1)
-			length = bytes.length;
 		
-		byte[] result = new byte[length];
-		System.arraycopy(bytes, offset, result, 0, length);
+		byte[] bytes = null;
+		
+		try {
+			if (args[0].charAt(0) == '-')
+			{
+				if (args.length < 2)
+					usage();
+				int pos = 0, pos2 = 0;
+	        	if ((pos = args[0].indexOf(":", pos)) != -1){
+	        		++pos;
+	        		if ((pos2 = args[0].indexOf(":", pos)) != -1) { 
+	        			offset = Integer.valueOf(args[0].substring(pos, pos2)).intValue();
+	        			length = Integer.valueOf(args[0].substring(pos2 + 1)).intValue();
+	        		}
+	        		else
+	        			offset = Integer.valueOf(args[0].substring(pos + 1)).intValue();
+	        	}
+	        	System.err.printf("Showing offset: %d with length %d\n", (Object [])new Integer[] {new Integer(offset), new Integer(length)});
+	        	xmlfile = args[1];
+	        	
+	        	bytes = converter.read(xmlfile);
+	    		if (length == -1)
+	    			length = bytes.length;
+	    		
+	    		byte[] result = new byte[length];
+	    		System.arraycopy(bytes, offset, result, 0, length);
+	
+	    			System.out.println("Text:\"" + new String(result, "UTF-8") + "\"");
+	  
+			}			
+			else { 
+				xmlfile = args[0];
+				bytes = converter.convertFile(xmlfile);
+				System.out.println(new String(bytes, "UTF-8"));
+			}
+  		}
+		catch (UnsupportedEncodingException e) {
+ 			// TODO Auto-generated catch block
+			e.printStackTrace();
+ 		}
 //		int count = 0;
 //		while (count < length) {
 //			System.out.print(new String(new byte[]{bytes[count + offset]}));
 //			++count;
 //		}
 		//System.out.print("\n");
-		System.out.print(new String(result));
+
 	}
 
 }
