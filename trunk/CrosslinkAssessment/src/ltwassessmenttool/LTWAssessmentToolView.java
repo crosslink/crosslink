@@ -13,6 +13,7 @@ import org.jdesktop.application.ResourceMap;
 import org.jdesktop.application.SingleFrameApplication;
 import org.jdesktop.application.FrameView;
 import java.io.File;
+import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.Vector;
 import javax.swing.ButtonGroup;
@@ -203,7 +204,7 @@ public class LTWAssessmentToolView extends FrameView {
         // assume this must be TRUE
 //        boolean rightCorpusDir = corpusDirChecker(isTopicWikipedia);
 //        if (rightCorpusDir) {
-        if (true) {
+//        if (true) {
             log("Random XML file checking ... OK");
             // Topic and Link Panes Listeners
             // Check & Set Outgoing or Incoming
@@ -212,6 +213,9 @@ public class LTWAssessmentToolView extends FrameView {
             // new String[]{completed, total}
             // -----------------------------------------------------------------
 //            if (rscManager.getLinkingMode().toLowerCase().equals("outgoing")) {
+            
+            ArrayList<File> topics4Assessment = Assessment.getInstance().getTopics();
+            if (topics4Assessment.size() == 0) {
 	            currTopicID = rscManager.getTopicID();
 	            if (currTopicID.length() == 0) {
 	                Vector<String[]> topicIDNameVSA = this.myPooler.getAllTopicsInPool();
@@ -221,27 +225,15 @@ public class LTWAssessmentToolView extends FrameView {
 	            	rscManager.updateTopicID(currTopicID + ":" + topicLang);
 	            	rscManager.updateCurrTopicID(currTopicFilePath);
 	            }
-                String[] tabCompletedRatio = this.rscManager.getTABCompletedRatio();
-                this.rscManager.updateOutgoingCompletion(tabCompletedRatio[0] + " : " + tabCompletedRatio[1]);
-                System.setProperty(sysPropertyTABCompletedRatioKey, tabCompletedRatio[0] + "_" + tabCompletedRatio[1]);
+	            assess();
+            }
+            else {
+            	for (File file : topics4Assessment) {
+            		
+            	}
+            }
 
-                // -------------------------------------------------------------
-                // scrSE, String[]{O,L,TXT,S,E,num}
-//                topicAnchorOLTSENHT = populateTopicAnchorOLTSENHT();
-                // -------------------------------------------------------------
-                CaretListenerLabel caretListenerLabel = new CaretListenerLabel("Caret Status", this.topicTextPane, this.statusMessageLabel);
-                this.topicTextPane.addCaretListener(caretListenerLabel);
-                topicPaneMouseListener mtTopicPaneListener = new topicPaneMouseListener(this.topicTextPane, this.linkTextPane);
-                this.topicTextPane.addMouseListener(mtTopicPaneListener);
-                this.topicTextPane.addMouseMotionListener(mtTopicPaneListener);
-                linkPaneMouseListener myLPMListener = new linkPaneMouseListener(this.topicTextPane, this.linkTextPane);
-                this.linkTextPane.addMouseListener(myLPMListener);
-                // -------------------------------------------------------------
-                this.outRadioBtn.setSelected(true);
-                this.inRadioBtn.setSelected(false);
-                // -------------------------------------------------------------
-                setOutgoingTAB();
-            } 
+//        } 
             // we don't need incoming for crosslink
 //            else if (rscManager.getLinkingMode().toLowerCase().equals("incoming")) {
 //                String[] tbaCompletedRatio = this.rscManager.getTBACompletedRatio();
@@ -274,6 +266,29 @@ public class LTWAssessmentToolView extends FrameView {
 //                JOptionPane.showMessageDialog(LTWAssessmentToolApp.getApplication().getMainFrame(), errInLinkingMode);
 //            }
 //        }
+    }
+    
+    private void assess() {
+        String[] tabCompletedRatio = this.rscManager.getTABCompletedRatio();
+        this.rscManager.updateOutgoingCompletion(tabCompletedRatio[0] + " : " + tabCompletedRatio[1]);
+        System.setProperty(sysPropertyTABCompletedRatioKey, tabCompletedRatio[0] + "_" + tabCompletedRatio[1]);
+
+        // -------------------------------------------------------------
+        // scrSE, String[]{O,L,TXT,S,E,num}
+//      topicAnchorOLTSENHT = populateTopicAnchorOLTSENHT();
+        // -------------------------------------------------------------
+        CaretListenerLabel caretListenerLabel = new CaretListenerLabel("Caret Status", this.topicTextPane, this.statusMessageLabel);
+        this.topicTextPane.addCaretListener(caretListenerLabel);
+        topicPaneMouseListener mtTopicPaneListener = new topicPaneMouseListener(this.topicTextPane, this.linkTextPane);
+        this.topicTextPane.addMouseListener(mtTopicPaneListener);
+        this.topicTextPane.addMouseMotionListener(mtTopicPaneListener);
+        linkPaneMouseListener myLPMListener = new linkPaneMouseListener(this.topicTextPane, this.linkTextPane);
+        this.linkTextPane.addMouseListener(myLPMListener);
+        // -------------------------------------------------------------
+        this.outRadioBtn.setSelected(true);
+        this.inRadioBtn.setSelected(false);
+        // -------------------------------------------------------------
+        setOutgoingTAB();
     }
 
     
