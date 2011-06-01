@@ -75,7 +75,7 @@ public class PoolerManager {
         resourceXMLFile = resourceMap.getString("ResourceXMLFilePath");
         fileNotFoundXmlPath = resourceMap.getString("fileNotFound.ReplacedXmlPath");
         afTasnCollectionErrors = resourceMap.getString("AssFormXml.taskCollectionError");
-        afXmlPath = resourceMap.getString("pool.wikipedia");
+        afXmlPath = ""; //resourceMap.getString("pool.wikipedia");
         afProperty = new String[]{"", "", "", ""};
     }
 
@@ -897,6 +897,8 @@ public class PoolerManager {
                             } else if (xsr.getAttributeLocalName(i).equals("lang")) {
                                 thisTopic[2] = xsr.getAttributeValue(i);
                             }
+                            if (thisTopic[2] == null)
+                            	thisTopic[2] = "en";
                         }
                         RunTopics.add(thisTopic);
                         isThisTopic = true;
@@ -1065,4 +1067,9 @@ public class PoolerManager {
         	Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
+
+	public String getPoolTopicLang() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

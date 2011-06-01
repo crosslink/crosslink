@@ -132,8 +132,8 @@ public class resourcesManager {
         wikipediaPool = resourceMap.getString("pool.wikipedia");
         teAraPool = resourceMap.getString("pool.teara");     
         
-        if (AppResource.forValidationOrAssessment)
-        	pooler = PoolerManager.getInstance();
+//        if (AppResource.forValidationOrAssessment)
+//        	pooler = PoolerManager.getInstance();
     }
     
     public void pullPoolData() {
@@ -302,24 +302,25 @@ public class resourcesManager {
 	            Node subNode = subNodeList.item(0);
 	            subElmn = (Element) subNode;
 	            NodeList subElmnNodes = subElmn.getChildNodes();
+
 	            for (int j = 0; j < subElmnNodes.getLength(); j++) {
 	                Node subElmnNode = subElmnNodes.item(j);
 	                
-	                if (list == null)
+//	                if (list == null)
 	                	subElmn.removeChild(subElmnNode);
-	                else
-		                if (subElmnNode.getNodeType() == Node.ELEMENT_NODE) {
-		                    String thisSElmnNode = subElmnNodes.item(j).getNodeName();
-		                    if (!filterElementsV.contains(thisSElmnNode)) {
-		                        filterElementsV.add(thisSElmnNode);
-		                    }
-		                }
+//	                else
+//		                if (subElmnNode.getNodeType() == Node.ELEMENT_NODE) {
+//		                    String thisSElmnNode = subElmnNodes.item(j).getNodeName();
+//		                    if (!filterElementsV.contains(thisSElmnNode)) {
+//		                        filterElementsV.add(thisSElmnNode);
+//		                    }
+//		                }
 	            }
 	            
 	            // Remove These Elements
-	            for (String thisElmn : filterElementsV) {
-	                filterElements(doc, thisElmn);
-	            }
+//	            for (String thisElmn : filterElementsV) {
+//	                filterElements(doc, thisElmn);
+//	            }
             }
             else {
                 subElmn = (Element) doc.createElement(childTagName);
@@ -328,7 +329,7 @@ public class resourcesManager {
             if (list != null)
                 for (int j = 0; j < list.size(); j++) {
                     String thisAnchorList = list.elementAt(j);
-                    Element newElmn = (Element) doc.createElement(subChildTagName + (j + 1));
+                    Element newElmn = (Element) doc.createElement(subChildTagName/* + (j + 1)*/);
                     subElmn.appendChild(newElmn);
                     newElmn.appendChild(doc.createTextNode(thisAnchorList));
                 }

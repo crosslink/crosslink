@@ -15,6 +15,9 @@ import org.jdesktop.application.FrameView;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Hashtable;
+import java.util.Iterator;
+import java.util.Map.Entry;
+import java.util.Set;
 import java.util.Vector;
 import javax.swing.ButtonGroup;
 import javax.swing.ImageIcon;
@@ -170,11 +173,7 @@ public class LTWAssessmentToolView extends FrameView {
         // TODO: activate/fix the Progress Bar
         progressBar.setVisible(false);
         // =====================================================================
-        rscManager = resourcesManager.getInstance();
-        myPooler = PoolerManager.getInstance();
-        rscManager.pullPoolData();
-        
-        myPUpdater = new poolUpdater();
+
         // =====================================================================
         // when the tool firstly starts:
         // For Link-the-Wikipedia A2B
@@ -214,21 +213,25 @@ public class LTWAssessmentToolView extends FrameView {
             // -----------------------------------------------------------------
 //            if (rscManager.getLinkingMode().toLowerCase().equals("outgoing")) {
             
-            ArrayList<File> topics4Assessment = Assessment.getInstance().getTopics();
+            Hashtable<String, File> topics4Assessment = Assessment.getInstance().getTopics();
             if (topics4Assessment.size() == 0) {
-	            currTopicID = rscManager.getTopicID();
+	            currTopicID = rscManager.getInstance().getTopicID();
 	            if (currTopicID.length() == 0) {
-	                Vector<String[]> topicIDNameVSA = this.myPooler.getAllTopicsInPool();
-	            	currTopicID = topicIDNameVSA.elementAt(0)[0].trim();
-	                String topicLang = topicIDNameVSA.elementAt(0)[2];
-	            	currTopicFilePath = rscManager.getTopicFilePath(currTopicID, topicLang);
-	            	rscManager.updateTopicID(currTopicID + ":" + topicLang);
-	            	rscManager.updateCurrTopicID(currTopicFilePath);
+	            	//TODO : fix this
+
 	            }
-	            assess();
+	            else
+	            	assess(Assessment.getPoolFile(currTopicID));
             }
             else {
-            	for (File file : topics4Assessment) {
+            	Set set = topics4Assessment.entrySet();
+            	Iterator it  = set.iterator();
+            	while (it.hasNext()) {
+            		Entry entry = (Entry) it.next();
+            		currTopicID = (String) entry.getKey();
+//            		File file = (File) entry.getValue();
+//            		String filename =  file.getName();
+            		assess(Assessment.getPoolFile(currTopicID));
             		
             	}
             }
@@ -268,7 +271,29 @@ public class LTWAssessmentToolView extends FrameView {
 //        }
     }
     
-    private void assess() {
+    private void assess(String poolFile) {
+    	if (!new File(poolFile).exists()) {
+          String errMessage = "Cannot find pool file: " + poolFile + "\r\n";
+			JOptionPane.showMessageDialog(LTWAssessmentToolApp.getApplication().getMainFrame(), errMessage);    		
+    		return;
+    	}
+        myPooler = PoolerManager.getInstance(poolFile);
+        rscManager = resourcesManager.getInstance();
+        
+        String id = rscManager.getTopicID(); 
+        if (!id.equals(currTopicID)) {
+	        Vector<String[]> topicIDNameVSA = this.myPooler.getAllTopicsInPool();
+	    	currTopicID = topicIDNameVSA.elementAt(0)[0].trim();
+	        String topicLang = topicIDNameVSA.elementAt(0)[2];
+	    	currTopicFilePath = rscManager.getTopicFilePath(currTopicID, topicLang);
+	    	rscManager.updateTopicID(currTopicID + ":" + topicLang);
+	    	rscManager.updateCurrTopicID(currTopicFilePath);
+	    	rscManager.updateCurrAnchorFOL(null);
+        }
+        rscManager.pullPoolData();
+        
+        myPUpdater = new poolUpdater();
+    	
         String[] tabCompletedRatio = this.rscManager.getTABCompletedRatio();
         this.rscManager.updateOutgoingCompletion(tabCompletedRatio[0] + " : " + tabCompletedRatio[1]);
         System.setProperty(sysPropertyTABCompletedRatioKey, tabCompletedRatio[0] + "_" + tabCompletedRatio[1]);

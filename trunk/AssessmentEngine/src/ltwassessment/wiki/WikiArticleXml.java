@@ -39,19 +39,25 @@ public class WikiArticleXml {
 	}
 
 	public WikiArticleXml(String xmlFile) {
-		super();
-		this.xmlFile = xmlFile;
-		
-		read();
+		read(new File(xmlFile));
 	}
 	
-	public void read() {
-		String filename =  new File(xmlFile).getName();
+	public WikiArticleXml(File xmlFile) {
+		read(xmlFile);
+	}
+	
+	public void read() {	
+		read(new File(xmlFile));
+	}
+	
+	public void read(File file) {
+		this.xmlFile = file.getAbsolutePath();	
+		String filename =  file.getName();
 		id = filename.substring(0, filename.indexOf('.'));
 		int pos;
     	try {
 			BufferedReader br = new BufferedReader(
-			        new InputStreamReader(new FileInputStream(xmlFile), "UTF-8"));
+			        new InputStreamReader(new FileInputStream(file), "UTF-8"));
 			String strLine;
 			while ((strLine = br.readLine()) != null) {
 			    if ((pos = strLine.indexOf("<title>")) > -1) {
