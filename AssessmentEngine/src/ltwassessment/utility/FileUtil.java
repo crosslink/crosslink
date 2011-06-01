@@ -38,4 +38,14 @@ public class FileUtil {
 	public static void copyFile(String sourceFile, String destFile) throws IOException {
 		copyFile(new File(sourceFile), new File(destFile));
 	}
+	
+	public static void moveFile(String sourceFile, String destFile) throws IOException {
+		moveFile(new File(sourceFile), new File(destFile));
+	}
+	
+	public static void moveFile(File sourceFile, File destFile) throws IOException {
+		copyFile(sourceFile, destFile);
+		
+		sourceFile.delete();
+	}
 }
