@@ -27,9 +27,11 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
 import ltwassessment.AppResource;
+import ltwassessment.Assessment;
 import ltwassessment.parsers.FOLTXTMatcher;
 import ltwassessment.parsers.PoolerManager;
 import ltwassessment.parsers.resourcesManager;
+import ltwassessment.submission.Anchor;
 import ltwassessment.validation.InvalidOffsetException;
 import ltwassessment.validation.ValidationMessage;
 
@@ -625,9 +627,14 @@ public class FOLTXTMatcher {
         }
         Vector<String[]> screenAnchorPos = new Vector<String[]>();
         for (String[] thisAnchorSet : anchorOLV) {
-            String[] scrFOL = screenOffsetLengthFinder(fullScreenText, fullXmlTxt, thisAnchorSet);
-            screenAnchorPos.add(scrFOL);
-            anchorSetV.add(thisAnchorSet[0] + " : " + thisAnchorSet[1] + " : " + thisAnchorSet[2] + " : " + scrFOL[1] + " : " + scrFOL[2]  + " : " + thisAnchorSet[4]);
+        	Anchor anchor = new Anchor(Integer.valueOf(thisAnchorSet[0]), Integer.valueOf(thisAnchorSet[1]), thisAnchorSet[2]);
+        	boolean result = anchor.validate(Assessment.getInstance().getCurrentTopic());
+        	
+        	if (result) {
+	            String[] scrFOL = screenOffsetLengthFinder(fullScreenText, fullXmlTxt, thisAnchorSet);
+	            screenAnchorPos.add(scrFOL);
+	            anchorSetV.add(thisAnchorSet[0] + " : " + thisAnchorSet[1] + " : " + thisAnchorSet[2] + " : " + scrFOL[1] + " : " + scrFOL[2]  + " : " + thisAnchorSet[4]);
+        	}
         }
         // ============================
         // record into toolResource.xml

@@ -31,6 +31,8 @@ public class Topic {
 
 	public Topic(String idD) {
 		this.id = id;
+		
+		load();
 	}
 
 	public void setFilePath(String filePath) {
@@ -53,11 +55,15 @@ public class Topic {
 		return filePath;
 	}
 	
-	public boolean validateIt() {
+	public void load() {
 		if (bytes == null) {
 			filePath = AppResource.getInstance().getTopicXmlPathNameByFileID(id);
 			readTopicText();
 		}
+	}
+	
+	public boolean validateIt() {
+		load();
 		
 		valid = anchors.validateAll(this);
 		

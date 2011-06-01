@@ -123,7 +123,7 @@ public class linkPaneMouseListener implements MouseInputListener {
 
     private void backupPool() {
 //        String sourcePoolFPath = "resources" + File.separator + "Pool" + File.separator + "wikipedia_pool.xml";
-    	String sourcePoolFPath = Assessment.getPoolFile(topicID);
+    	String sourcePoolFPath = ltwassessment.Assessment.getPoolFile(topicID);
         File srcFile = new File(sourcePoolFPath);
         String backupPoolDir = "resources" + File.separator + "Pool" + File.separator + "POOL_BACKUP" + File.separator;
         DateFormat dateFormat = new SimpleDateFormat("yyMMddHHmmss");

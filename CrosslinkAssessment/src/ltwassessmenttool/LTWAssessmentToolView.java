@@ -34,6 +34,7 @@ import javax.swing.text.StyleConstants;
 import javax.swing.text.StyledDocument;
 
 import ltwassessment.AppResource;
+import ltwassessment.Assessment;
 import ltwassessment.font.AdjustFont;
 import ltwassessment.parsers.Xml2Html;
 import ltwassessmenttool.listener.CaretListenerLabel;
@@ -284,6 +285,9 @@ public class LTWAssessmentToolView extends FrameView {
         if (!id.equals(currTopicID)) {
 	        Vector<String[]> topicIDNameVSA = this.myPooler.getAllTopicsInPool();
 	    	currTopicID = topicIDNameVSA.elementAt(0)[0].trim();
+	    	
+	    	Assessment.getInstance().setCurrentTopicWithId(currTopicID);
+	    	
 	        String topicLang = topicIDNameVSA.elementAt(0)[2];
 	    	currTopicFilePath = rscManager.getTopicFilePath(currTopicID, topicLang);
 	    	rscManager.updateTopicID(currTopicID + ":" + topicLang);

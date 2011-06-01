@@ -1,6 +1,7 @@
-package ltwassessmenttool;
+package ltwassessment;
 
 import java.io.File;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Hashtable;
@@ -9,6 +10,7 @@ import java.util.Stack;
 import ltwassessment.AppResource;
 import ltwassessment.utility.FileUtil;
 import ltwassessment.utility.WildcardFiles;
+import ltwassessment.submission.Topic;
 
 public class Assessment {
 
@@ -22,6 +24,7 @@ public class Assessment {
 	
 	private Hashtable<String, File> topics = new Hashtable<String, File>();
 	
+	private Topic currentTopic;
 
 	public Assessment() {
 		loadTopicsForAssessment();
@@ -40,6 +43,20 @@ public class Assessment {
 	public Hashtable<String, File> getTopics() {
 		return topics;
 	}
+
+	public Topic getCurrentTopic() {
+		return currentTopic;
+	}
+
+
+	public void setCurrentTopicWithId(String currentTopicId) {
+		setCurrentTopic(new Topic(currentTopicId));
+	}
+	
+	public void setCurrentTopic(Topic currentTopic) {
+		this.currentTopic = currentTopic;
+	}
+
 
 	private void loadTopicsForAssessment() {
 		Stack<File> stack = WildcardFiles.listFilesInStack(ASSESSMENT_TOPIC_INBOX_PATH + "*.xml");
