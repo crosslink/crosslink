@@ -6,13 +6,18 @@ import ltwassessment.pool.Pool;
 
 public class PoolManager {
 
-	public void genPool(String submissionsPath) {
+	public void genPool(String submissionsPath, boolean splitTopic) {
 		Pool pool = new Pool();
 		pool.read(submissionsPath);
 		
-		String xml = pool.output();
+		/*String xml = */pool.output(splitTopic);
 		
-		System.out.println(xml);
+//		System.out.println(xml);
+	}
+	
+	public static void usage() {
+		System.err.println("Usage: [-s] program submissions_path");
+		System.exit(-1);	
 	}
 	
 	/**
@@ -20,12 +25,23 @@ public class PoolManager {
 	 */
 	public static void main(String[] args) {
 		if (args.length < 1) {
-			System.err.println("Usage: program submissions_path");
-			System.exit(-1);
+			usage();
 		}
 
+		String path;
+		boolean splitTopic = false;
+		
+		if (args[0].charAt(0) == '-') {
+			if (args[0].charAt(1) != 's' || args.length < 2)
+				usage();
+			splitTopic = true;
+			path = args[1];
+		}
+		else
+			path = args[0];
+
 		PoolManager manager = new PoolManager();
-		manager.genPool(args[0]);
+		manager.genPool(path, splitTopic);
 	}
 
 }
