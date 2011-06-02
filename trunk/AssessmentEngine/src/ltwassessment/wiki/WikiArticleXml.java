@@ -1,6 +1,7 @@
 package ltwassessment.wiki;
 
 import java.io.BufferedReader;
+import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -17,12 +18,14 @@ import org.w3c.dom.NodeList;
 
 public class WikiArticleXml {
 
-	private String xmlFile;
+	protected String xmlFile;
 
-	private String title;
-	private String id;
+	protected String title;
+	protected String id;
 	
 	protected int currentPos = 0;
+	
+	protected byte[] bytes = null; // the text in bytes
 	
 	/**
 	 * @return the title
@@ -38,26 +41,58 @@ public class WikiArticleXml {
 		return id;
 	}
 
-	public WikiArticleXml(String xmlFile) {
-		read(new File(xmlFile));
-	}
+//	public WikiArticleXml(String xmlFile) {
+//		read(new File(xmlFile));
+//	}
 	
 	public WikiArticleXml(File xmlFile) {
-		read(xmlFile);
+		extractTitle(xmlFile);
 	}
 	
+	public WikiArticleXml(String id) {
+		this.id = id;
+	}
+
+	public WikiArticleXml(String id2, String name) {
+		this.id = id;
+		this.title = name;
+	}
+
 	public void read() {	
-		read(new File(xmlFile));
+		readInBytes(new File(xmlFile));
 	}
 	
-	public void read(File file) {
+	public void readInBytes(File file) {
+		int size = 0;
+//	    
+		try {
+			FileInputStream fis = new FileInputStream(file);
+			size = fis.available();
+		    bytes = new byte[size];
+		    fis.read(bytes, 0, size);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}		
+	}
+	
+	public void extractTitle(File file) {
 		this.xmlFile = file.getAbsolutePath();	
 		String filename =  file.getName();
-		id = filename.substring(0, filename.indexOf('.'));
+		id = filename.substring(0, filename.indexOf('.'));	
+		
+		readInBytes(file);
+		extractTitle();
+	}
+	
+	public void extractTitle() {
+		extractTitle(bytes);
+	}
+	
+	public void extractTitle(byte[] content) {
 		int pos;
     	try {
 			BufferedReader br = new BufferedReader(
-			        new InputStreamReader(new FileInputStream(file), "UTF-8"));
+			        new InputStreamReader(new ByteArrayInputStream(content), "UTF-8"));
 			String strLine;
 			while ((strLine = br.readLine()) != null) {
 			    if ((pos = strLine.indexOf("<title>")) > -1) {

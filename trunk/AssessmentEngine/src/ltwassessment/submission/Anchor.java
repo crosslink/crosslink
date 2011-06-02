@@ -167,7 +167,7 @@ public class Anchor {
 		
 		boolean ret = result.equals(name);;
 		
-		StringBuffer message = new StringBuffer(String.format(ANCHOR_CHECK_MESSAGE, topic.getName(), topic.getId(), name, this.getOffset(), this.getLength()));
+		StringBuffer message = new StringBuffer(String.format(ANCHOR_CHECK_MESSAGE, topic.getTitle(), topic.getId(), name, this.getOffset(), this.getLength()));
 		if (ret) {
 			message.append(ANCHOR_CHECK_STATUS_OK);
 			System.out.println(message);

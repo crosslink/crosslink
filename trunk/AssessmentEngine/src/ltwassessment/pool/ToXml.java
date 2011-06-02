@@ -77,7 +77,7 @@ public class ToXml {
 		String topicElemStart = "\t<topic file=\"%s\" name=\"%s\">\n" + 
         						"\t\t<outgoinglinks>\n";
 		String topicElemEnd = "\t\t</outgoinglinks>\n\t</topic>\n";
-		xmlText.append(String.format(topicElemStart, topic.getId(), topic.getName()));
+		xmlText.append(String.format(topicElemStart, topic.getId(), topic.getTitle()));
 		
 		topic.getAnchors().calculateOverlappedAnchorExtensionLength();
 		LinkedList<Anchor> anchorList = topic.getAnchors().getAnchorList();

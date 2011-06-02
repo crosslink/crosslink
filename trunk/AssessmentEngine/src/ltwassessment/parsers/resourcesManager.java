@@ -1923,9 +1923,9 @@ public class resourcesManager {
         String currAnchorL = currAnchorOLSA[1];
         // SP, EP
         String currAnchorS = "0";
-        String currAnchorE = "";
+        String currAnchorE = "0";
         
-        String extensionLength = null;
+        String extensionLength = "0";  // extension length here means overlapping anchors
         
         for (int i = 0; i < topicAnchorsOLNameSEVS.size(); i++) {
             String topicAnchorsOLNameSE = topicAnchorsOLNameSEVS.elementAt(i);
