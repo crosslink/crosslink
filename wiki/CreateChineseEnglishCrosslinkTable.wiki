@@ -1,4 +1,4 @@
-=How Chinese/English crosslink table created?=
+=How is Chinese/English crosslink table created?=
 
 {{{
 wc -l ../en-zh/zh2en_table.txt 
