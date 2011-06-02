@@ -1,5 +1,6 @@
-How Chinese/English crosslink table created?
+=How Chinese/English crosslink table created?=
 
+{{{
 wc -l ../en-zh/zh2en_table.txt 
 169974 ../en-zh/zh2en_table.txt
 
@@ -15,15 +16,19 @@ cat both_zh2en_table_uniq.txt.2 zh_corpus_zh2en_table.txt.2 | sort -n | uniq -u 
 cat en_corpus_zh2en_table_uniq.txt.2 | while read line; do grep "^${line}:" ../en-zh/zh2en_table.txt ; done > en_corpus_zh2en_table_uniq.txt
 
 cat ../zh-en/zh2en_table.txt en_corpus_zh2en_table_uniq.txt | sort -n | uniq > both_zh2en_table.txt
+}}}
 
-Now tail both_zh2en_table.txt
-1306707:3940868:信譽系統
-1306805:1167798:大發 Fellow Max
-1307221:1714052:名古屋臨海高速鐵道西名古屋港線
-1307253:177066:全局唯一标识符
-1307253:27904751:全局唯一标识符
-1307280:11932713:我要唱下去
-1307315:22951462:奧罗奇语
-1307328:24466429:Music Bank
-1307328:24575041:Music Bank
-1307375:18205909:伏見車站 (愛知縣)
+Now
+{{{ 
+tail both_zh2en_table.txt
+}}}
+*1306707:3940868:信譽系統
+*1306805:1167798:大發 Fellow Max
+*1307221:1714052:名古屋臨海高速鐵道西名古屋港線
+*1307253:177066:全局唯一标识符
+*1307253:27904751:全局唯一标识符
+*1307280:11932713:我要唱下去
+*1307315:22951462:奧罗奇语
+*1307328:24466429:Music Bank
+*1307328:24575041:Music Bank
+*1307375:18205909:伏見車站 (愛知縣)
