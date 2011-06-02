@@ -61,7 +61,7 @@ public class resourcesManager {
     private String fileNotFoundXmlPath = "";
     private String defaultWikipediaDirectory = "";
     private String defaultTeAraDirectory = "";
-    private String wikipediaPool = "";
+//    private String wikipediaPool = "";
     private String teAraPool = "";
     // constants for toolResource XML
     private static String lastSeenSubmissionDirTag = "LastSeenSubmissionFolder";
@@ -128,9 +128,9 @@ public class resourcesManager {
         // resource constants for tool setting up property
         fileNotFoundXmlPath = resourceMap.getString("fileNotFound.ReplacedXmlPath");
         defaultWikipediaDirectory = resourceMap.getString("directory.Wikipedia");
-        defaultTeAraDirectory = resourceMap.getString("directory.TeAra");
-        wikipediaPool = resourceMap.getString("pool.wikipedia");
-        teAraPool = resourceMap.getString("pool.teara");     
+//        defaultTeAraDirectory = resourceMap.getString("directory.TeAra");
+//        wikipediaPool = resourceMap.getString("pool.wikipedia");
+//        teAraPool = resourceMap.getString("pool.teara");     
         
 //        if (AppResource.forValidationOrAssessment)
 //        	pooler = PoolerManager.getInstance();
@@ -2396,13 +2396,13 @@ public class resourcesManager {
         return fileNotFoundXmlPath;
     }
 
-    public String getWikipediaPoolXMLFile() {
-        return wikipediaPool;
-    }
+//    public String getWikipediaPoolXMLFile() {
+//        return wikipediaPool;
+//    }
 
-    public String getTeAraPoolXMLFile() {
-        return teAraPool;
-    }
+//    public String getTeAraPoolXMLFile() {
+//        return teAraPool;
+//    }
     // =========================================================================
 
     public String[] getOutgoingCompletion() {

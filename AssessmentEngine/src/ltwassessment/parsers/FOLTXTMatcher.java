@@ -627,14 +627,14 @@ public class FOLTXTMatcher {
         }
         Vector<String[]> screenAnchorPos = new Vector<String[]>();
         for (String[] thisAnchorSet : anchorOLV) {
-        	Anchor anchor = new Anchor(Integer.valueOf(thisAnchorSet[0]), Integer.valueOf(thisAnchorSet[1]), thisAnchorSet[2]);
-        	boolean result = anchor.validate(Assessment.getInstance().getCurrentTopic());
-        	
-        	if (result) {
+//        	Anchor anchor = new Anchor(Integer.valueOf(thisAnchorSet[0]), Integer.valueOf(thisAnchorSet[1]), thisAnchorSet[2]);
+//        	boolean result = anchor.validate(Assessment.getInstance().getCurrentTopic());
+//        	
+//        	if (result) {
 	            String[] scrFOL = screenOffsetLengthFinder(fullScreenText, fullXmlTxt, thisAnchorSet);
 	            screenAnchorPos.add(scrFOL);
 	            anchorSetV.add(thisAnchorSet[0] + " : " + thisAnchorSet[1] + " : " + thisAnchorSet[2] + " : " + scrFOL[1] + " : " + scrFOL[2]  + " : " + thisAnchorSet[4]);
-        	}
+//        	}
         }
         // ============================
         // record into toolResource.xml
