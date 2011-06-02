@@ -298,10 +298,6 @@ public class LTWAssessmentToolView extends FrameView {
         currTopicName = Assessment.getInstance().getCurrentTopic().getTitle();
         rscManager.pullPoolData();
     	
-        String[] tabCompletedRatio = this.rscManager.getTABCompletedRatio();
-        this.rscManager.updateOutgoingCompletion(tabCompletedRatio[0] + " : " + tabCompletedRatio[1]);
-        System.setProperty(sysPropertyTABCompletedRatioKey, tabCompletedRatio[0] + "_" + tabCompletedRatio[1]);
-
         // -------------------------------------------------------------
         // scrSE, String[]{O,L,TXT,S,E,num}
 //      topicAnchorOLTSENHT = populateTopicAnchorOLTSENHT();
@@ -1188,6 +1184,21 @@ public class LTWAssessmentToolView extends FrameView {
         	folMatcher.getSCRAnchorPosV(thisTopicTextPane, currTopicID, topicAnchorsHT);
         	topicAnchorsOLNameSEVS = rscManager.getTopicAnchorsOLNameSEV();
         }     
+        String[] tabCompletedRatio = this.rscManager.getTABCompletedRatio();
+        int completedAnchor = Integer.valueOf(tabCompletedRatio[0]);
+//        int totoalAnchorNumber = Integer.valueOf(tabCompletedRatio[1]);
+        
+//        String[] tabCompletedRatioRecorded = this.rscManager.getOutgoingCompletion();
+        int completedAnchorRecorded = 0; //Integer.valueOf(tabCompletedRatioRecorded[0]);
+        int totoalAnchorNumberRecored = topicAnchorsOLNameSEVS.size();
+        
+        if (completedAnchor >= totoalAnchorNumberRecored)
+        	completedAnchorRecorded = totoalAnchorNumberRecored;
+        else
+        	completedAnchorRecorded = completedAnchor;
+        
+        this.rscManager.updateOutgoingCompletion(String.valueOf(completedAnchorRecorded) + " : " + String.valueOf(totoalAnchorNumberRecored));
+        System.setProperty(sysPropertyTABCompletedRatioKey, String.valueOf(completedAnchorRecorded) + "_" + String.valueOf(totoalAnchorNumberRecored));
         // ---------------------------------------------------------------------
         
         // String[]{Anchor_O, L, SP, EP, Status}
