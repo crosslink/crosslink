@@ -35,6 +35,7 @@ import javax.swing.text.Highlighter.Highlight;
 import javax.swing.text.Style;
 import javax.swing.text.StyleConstants;
 import javax.swing.text.StyledDocument;
+
 import ltwassessmenttool.LTWAssessmentToolView;
 import ltwassessment.AppResource;
 import ltwassessment.parsers.FOLTXTMatcher;
@@ -120,7 +121,8 @@ public class linkPaneMouseListener implements MouseInputListener {
     private int globalPoolBackupCounter = 0;
 
     private void backupPool() {
-        String sourcePoolFPath = "resources" + File.separator + "Pool" + File.separator + "wikipedia_pool.xml";
+//        String sourcePoolFPath = "resources" + File.separator + "Pool" + File.separator + "wikipedia_pool.xml";
+    	String sourcePoolFPath = ltwassessment.Assessment.getPoolFile(topicID);
         File srcFile = new File(sourcePoolFPath);
         String backupPoolDir = "resources" + File.separator + "Pool" + File.separator + "POOL_BACKUP" + File.separator;
         DateFormat dateFormat = new SimpleDateFormat("yyMMddHHmmss");
@@ -162,8 +164,8 @@ public class linkPaneMouseListener implements MouseInputListener {
 
         myRSCManager = resourcesManager.getInstance();
         myFolMatcher = FOLTXTMatcher.getInstance();
-        myPoolUpdater = new PoolUpdater();
         myPoolManager = PoolerManager.getInstance();
+        myPoolUpdater = myPoolManager.getPoolUpdater();
         myTABTxtPaneManager = new tabTxtPaneManager();
         myTBATxtPaneManager = new tbaTxtPaneManager();
         this.os = ObservableSingleton.getInstance();
