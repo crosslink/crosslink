@@ -44,7 +44,7 @@ import ltwassessment.parsers.resourcesManager;
 import ltwassessment.utility.BrowserControl;
 import ltwassessment.utility.ObservableSingleton;
 import ltwassessment.utility.highlightPainters;
-import ltwassessment.utility.poolUpdater;
+import ltwassessment.utility.PoolUpdater;
 import ltwassessment.utility.tabTxtPaneManager;
 import ltwassessment.utility.tbaTxtPaneManager;
 
@@ -72,7 +72,7 @@ public class linkPaneMouseListener implements MouseInputListener {
     // import External Classes
     private resourcesManager myRSCManager;
     private FOLTXTMatcher myFolMatcher;
-    private poolUpdater myPoolUpdater;
+    private PoolUpdater myPoolUpdater;
     private PoolerManager myPoolManager;
     private tabTxtPaneManager myTABTxtPaneManager;
     private tbaTxtPaneManager myTBATxtPaneManager;
@@ -162,7 +162,7 @@ public class linkPaneMouseListener implements MouseInputListener {
 
         myRSCManager = resourcesManager.getInstance();
         myFolMatcher = FOLTXTMatcher.getInstance();
-        myPoolUpdater = new poolUpdater();
+        myPoolUpdater = new PoolUpdater();
         myPoolManager = PoolerManager.getInstance();
         myTABTxtPaneManager = new tabTxtPaneManager();
         myTBATxtPaneManager = new tbaTxtPaneManager();
