@@ -20,7 +20,7 @@ import ltwassessment.AppResource;
 /**
  * @author Darren
  */
-public class poolUpdater {
+public class PoolUpdater {
 
     private String poolXMLPath = "";
 
@@ -28,9 +28,10 @@ public class poolUpdater {
         System.out.println(obj.toString());
     }
 
-    public poolUpdater() {
+    public PoolUpdater(String poolXmlFile) {
         org.jdesktop.application.ResourceMap resourceMap = AppResource.getInstance().getResourceMap();
-        poolXMLPath = resourceMap.getString("pool.wikipedia");
+//        poolXMLPath = resourceMap.getString("pool.wikipedia");
+        poolXMLPath = poolXmlFile;
     }
 
     // =========================================================================
@@ -70,17 +71,17 @@ public class poolUpdater {
                 xm.output(fos);
                 fos.close();
             } catch (IOException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             } catch (TranscodeException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             } catch (XPathEvalException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             } catch (NavException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             } catch (XPathParseException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             } catch (ModifyException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
     }
@@ -114,17 +115,17 @@ public class poolUpdater {
                 fos.close();
 
             } catch (IOException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             } catch (TranscodeException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             } catch (XPathEvalException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             } catch (NavException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             } catch (XPathParseException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             } catch (ModifyException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
     }
@@ -166,17 +167,17 @@ public class poolUpdater {
                 fos.close();
 
             } catch (IOException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             } catch (TranscodeException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             } catch (XPathEvalException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             } catch (NavException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             } catch (XPathParseException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             } catch (ModifyException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
     }
@@ -218,17 +219,17 @@ public class poolUpdater {
                 fos.close();
 
             } catch (IOException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             } catch (TranscodeException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             } catch (XPathEvalException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             } catch (NavException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             } catch (XPathParseException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             } catch (ModifyException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
     }
@@ -264,17 +265,17 @@ public class poolUpdater {
                 xm.output(fos);
                 fos.close();
             } catch (IOException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             } catch (TranscodeException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             } catch (XPathEvalException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             } catch (NavException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             } catch (XPathParseException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             } catch (ModifyException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
     }
@@ -317,17 +318,17 @@ public class poolUpdater {
                 fos.close();
 
             } catch (IOException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             } catch (TranscodeException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             } catch (XPathEvalException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             } catch (NavException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             } catch (XPathParseException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             } catch (ModifyException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
     }
@@ -367,17 +368,17 @@ public class poolUpdater {
                 fos.close();
 
             } catch (IOException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             } catch (TranscodeException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             } catch (XPathEvalException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             } catch (NavException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             } catch (XPathParseException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             } catch (ModifyException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
     }
@@ -427,17 +428,17 @@ public class poolUpdater {
                 fos.close();
 
             } catch (IOException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             } catch (TranscodeException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             } catch (XPathEvalException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             } catch (NavException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             } catch (XPathParseException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             } catch (ModifyException ex) {
-                Logger.getLogger(poolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
     }

@@ -36,7 +36,6 @@ import javax.swing.text.Style;
 import javax.swing.text.StyleConstants;
 import javax.swing.text.StyledDocument;
 
-import ltwassessmenttool.Assessment;
 import ltwassessmenttool.LTWAssessmentToolView;
 import ltwassessment.AppResource;
 import ltwassessment.parsers.FOLTXTMatcher;
@@ -46,7 +45,7 @@ import ltwassessment.parsers.resourcesManager;
 import ltwassessment.utility.BrowserControl;
 import ltwassessment.utility.ObservableSingleton;
 import ltwassessment.utility.highlightPainters;
-import ltwassessment.utility.poolUpdater;
+import ltwassessment.utility.PoolUpdater;
 import ltwassessment.utility.tabTxtPaneManager;
 import ltwassessment.utility.tbaTxtPaneManager;
 
@@ -74,7 +73,7 @@ public class linkPaneMouseListener implements MouseInputListener {
     // import External Classes
     private resourcesManager myRSCManager;
     private FOLTXTMatcher myFolMatcher;
-    private poolUpdater myPoolUpdater;
+    private PoolUpdater myPoolUpdater;
     private PoolerManager myPoolManager;
     private tabTxtPaneManager myTABTxtPaneManager;
     private tbaTxtPaneManager myTBATxtPaneManager;
@@ -165,8 +164,8 @@ public class linkPaneMouseListener implements MouseInputListener {
 
         myRSCManager = resourcesManager.getInstance();
         myFolMatcher = FOLTXTMatcher.getInstance();
-        myPoolUpdater = new poolUpdater();
         myPoolManager = PoolerManager.getInstance();
+        myPoolUpdater = myPoolManager.getPoolUpdater();
         myTABTxtPaneManager = new tabTxtPaneManager();
         myTBATxtPaneManager = new tbaTxtPaneManager();
         this.os = ObservableSingleton.getInstance();

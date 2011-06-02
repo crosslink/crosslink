@@ -5,60 +5,35 @@ import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 
 import ltwassessment.AppResource;
+import ltwassessment.wiki.WikiArticleXml;
 
 
-public class Topic {
-	private String id = null;
-	private String name = null;
-	
-	private String filePath = null;
+public class Topic extends WikiArticleXml {
+
 	private boolean valid = false;
-	private byte[] bytes = null; // the topic text in bytes
-	
+		
 	private LinkedAnchorList anchors = null;
 	
 	public Topic(String id, String name) {
-		super();
-		this.id = id;
-		this.name = name;
+		super(id, name);
 	}
-	
-	public Topic(String id, LinkedAnchorList anchors) {
-		super();
-		this.id = id;
-		this.anchors = anchors;
-	}
+//	
+//	public Topic(String id, LinkedAnchorList anchors) {
+//		this.id = id;
+//		this.anchors = anchors;
+//	}
 
-	public Topic(String idD) {
-		this.id = id;
+	public Topic(String id) {
+		super(id);
 		
 		load();
 	}
 
-	public void setFilePath(String filePath) {
-		this.filePath = filePath;
-	}
-	
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-	
-	public String getId() {
-		return id;
-	}
-
-	public String getFilePath() {
-		return filePath;
-	}
-	
 	public void load() {
 		if (bytes == null) {
-			filePath = AppResource.getInstance().getTopicXmlPathNameByFileID(id);
-			readTopicText();
+			xmlFile = AppResource.getInstance().getTopicXmlPathNameByFileID(id);
+			read();
+			extractTitle();
 		}
 	}
 	
@@ -74,18 +49,6 @@ public class Topic {
 		return valid;
 	}
 	
-	public void readTopicText() {
-		int size = 0;
-//	    
-		try {
-			FileInputStream fis = new FileInputStream(filePath);
-			size = fis.available();
-		    bytes = new byte[size];
-		    fis.read(bytes, 0, size);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
 	
 	public String getAnchor(int offset, int length) throws UnsupportedEncodingException {
 		byte[] result = new byte[length];

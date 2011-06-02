@@ -28,6 +28,7 @@ import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
 
 import ltwassessment.AppResource;
+import ltwassessment.utility.PoolUpdater;
 
 import org.jdesktop.application.ResourceMap;
 import org.w3c.dom.Document;
@@ -66,6 +67,7 @@ public class PoolerManager {
 //    static resourcesManager resManager;
     static String afXmlPath = "";
     static PoolerManager instance = null;
+    private static PoolUpdater poolUpdater = null; 
     
     static {
 //        resManager = resourcesManager.getInstance();
@@ -80,14 +82,16 @@ public class PoolerManager {
     }
 
     public static PoolerManager getInstance() {
-        if (instance == null)
-            instance = new PoolerManager();
+//        if (instance == null)
+//            instance = new PoolerManager();
         return instance;
     }
 
     public static PoolerManager getInstance(String xmlFile) {
-        if (instance == null || afXmlPath == null || afXmlPath.length() == 0 || !xmlFile.equals(afXmlPath))
+        if (instance == null || afXmlPath == null || afXmlPath.length() == 0 || !xmlFile.equals(afXmlPath)) {
             instance = new PoolerManager(xmlFile);
+            poolUpdater = new PoolUpdater(xmlFile);
+        }
         return instance;
     }
 
@@ -109,7 +113,15 @@ public class PoolerManager {
         getPoolData();
     }
 
-    // <editor-fold defaultstate="collapsed" desc="GET Pool Properties">
+    public static PoolUpdater getPoolUpdater() {
+		return poolUpdater;
+	}
+
+	public static void setPoolUpdater(PoolUpdater poolUpdater) {
+		PoolerManager.poolUpdater = poolUpdater;
+	}
+
+	// <editor-fold defaultstate="collapsed" desc="GET Pool Properties"> 
     // instant status
     public int getPABepLinkStartP(String topicID, String[] pAnchorOLSA, String currALinkID) {
         int pABepLinkStartP = -1;

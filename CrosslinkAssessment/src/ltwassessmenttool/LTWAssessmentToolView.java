@@ -46,7 +46,7 @@ import ltwassessment.parsers.resourcesManager;
 import ltwassessment.utility.ObservableSingleton;
 import ltwassessment.utility.fieldUpdateObserver;
 import ltwassessment.utility.highlightPainters;
-import ltwassessment.utility.poolUpdater;
+import ltwassessment.utility.PoolUpdater;
 import ltwassessment.view.Link;
 import ltwassessment.view.ScreenAnchor;
 import ltwassessment.wiki.WikiArticleXml;
@@ -119,7 +119,7 @@ public class LTWAssessmentToolView extends FrameView {
     private static JTextPane topicTextPane = null;
     private static JTextPane linkTextPane = null;
     
-    private static poolUpdater myPUpdater = null;
+    private static PoolUpdater myPUpdater = null;
 
     static void log(Object content) {
         System.out.println(content);
@@ -280,13 +280,12 @@ public class LTWAssessmentToolView extends FrameView {
     	}
         myPooler = PoolerManager.getInstance(poolFile);
         rscManager = resourcesManager.getInstance();
-        
+        myPUpdater = myPooler.getPoolUpdater();
+       
         String id = rscManager.getTopicID(); 
         if (!id.equals(currTopicID)) {
 	        Vector<String[]> topicIDNameVSA = this.myPooler.getAllTopicsInPool();
 	    	currTopicID = topicIDNameVSA.elementAt(0)[0].trim();
-	    	
-	    	Assessment.getInstance().setCurrentTopicWithId(currTopicID);
 	    	
 	        String topicLang = topicIDNameVSA.elementAt(0)[2];
 	    	currTopicFilePath = rscManager.getTopicFilePath(currTopicID, topicLang);
@@ -294,9 +293,10 @@ public class LTWAssessmentToolView extends FrameView {
 	    	rscManager.updateCurrTopicID(currTopicFilePath);
 	    	rscManager.updateCurrAnchorFOL(null);
         }
-        rscManager.pullPoolData();
         
-        myPUpdater = new poolUpdater();
+        Assessment.getInstance().setCurrentTopicWithId(currTopicID);
+        currTopicName = Assessment.getInstance().getCurrentTopic().getTitle();
+        rscManager.pullPoolData();
     	
         String[] tabCompletedRatio = this.rscManager.getTABCompletedRatio();
         this.rscManager.updateOutgoingCompletion(tabCompletedRatio[0] + " : " + tabCompletedRatio[1]);
@@ -1021,7 +1021,7 @@ public class LTWAssessmentToolView extends FrameView {
     
     public static void moveForwardALink(boolean updateCurrAnchorStatus) {
         // Click the button to Go Back one Link
-//        poolUpdater myPUpdater = new poolUpdater();
+//        PoolUpdater myPUpdater = new PoolUpdater();
 //        boolean isTABOutgoing = Boolean.valueOf(System.getProperty(sysPropertyIsTABKey));
 //        if (isTABOutgoing) {
             // <editor-fold defaultstate="collapsed" desc="Update TAB Topic, Link">
@@ -1174,7 +1174,7 @@ public class LTWAssessmentToolView extends FrameView {
         //currTopicName = topicIDNameVSA.elementAt(0)[1].trim();
         currTopicID = rscManager.getTopicID();
         currTopicFilePath = rscManager.getCurrTopicXmlFile();
-        currTopicName = new WikiArticleXml(currTopicFilePath).getTitle();
+//        currTopicName = new WikiArticleXml(currTopicFilePath).getTitle();
         String topicLang = rscManager.getTopicLang();
         setTopicPaneContent(currTopicFilePath, topicLang);
 
