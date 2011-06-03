@@ -67,4 +67,8 @@ public class Pool {
 					e.printStackTrace();
 				}
 	}
+	
+	public void checkAnchors(int showMessage) {
+		runs.validate(showMessage);
+	}
 }

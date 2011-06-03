@@ -3,12 +3,14 @@ import java.io.File;
 import java.io.FileOutputStream;
 
 import ltwassessment.pool.Pool;
+import ltwassessment.submission.Anchor;
 
 public class PoolManager {
 
 	public void genPool(String submissionsPath, boolean splitTopic) {
 		Pool pool = new Pool();
 		pool.read(submissionsPath);
+		pool.checkAnchors(Anchor.SHOW_MESSAGE_ERROR);
 		
 		/*String xml = */pool.output(splitTopic);
 		

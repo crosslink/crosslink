@@ -37,10 +37,10 @@ public class Topic extends WikiArticleXml {
 		}
 	}
 	
-	public boolean validateIt() {
+	public boolean validateIt(int showMessage) {
 		load();
 		
-		valid = anchors.validateAll(this);
+		valid = anchors.validateAll(this, showMessage);
 		
 		return valid;
 	}

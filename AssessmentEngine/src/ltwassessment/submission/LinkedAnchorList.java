@@ -167,10 +167,10 @@ public class LinkedAnchorList {
 		
 	}
 
-	public boolean validateAll(Topic topic) {
+	public boolean validateAll(Topic topic, int showMessage) {
 		boolean result = true;
 		for (Anchor anchor: anchorList) {
-			if (!anchor.validate(topic))
+			if (!anchor.validate(topic, showMessage))
 				result = false;
 		}
 		return result;

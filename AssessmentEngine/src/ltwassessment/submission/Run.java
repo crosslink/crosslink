@@ -181,7 +181,7 @@ public class Run {
         return doc;
     }
 	
-	public void validate() {
+	public void validate(int showMessage) {
 		Set set = getTopics().entrySet();
 
 	    Iterator i = set.iterator();
@@ -190,7 +190,7 @@ public class Run {
 	    	Map.Entry me = (Map.Entry)i.next();
 	    	Topic topic = (Topic)me.getValue();
 	    	
-	    	topic.validateIt();
+	    	topic.validateIt(showMessage);
 	    }
 	}
 }
