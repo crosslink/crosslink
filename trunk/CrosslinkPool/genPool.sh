@@ -1,5 +1,6 @@
 #!/bin/bash
 
+base=`dirname $0`
 cp=
 
 append_jars_to_cp() {
@@ -18,7 +19,7 @@ append_jars_to_cp() {
     done
 }
 
-append_jars_to_cp lib
+append_jars_to_cp $base/lib
 
 arguments=""
 
@@ -26,4 +27,4 @@ if [ -n "$1" ]
 then
   arguments=$1
 fi
-java -cp $cp:./bin crosslink.PoolManager ${arguments}
+java -cp $cp:$base/bin crosslink.PoolManager ${arguments}

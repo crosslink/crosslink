@@ -14,6 +14,10 @@ public class Anchor {
 	public static final String ANCHOR_CHECK_STATUS_OK = "ok";
 	public static final String ANCHOR_CHECK_STATUS_ERROR = "error";
 	
+	public static final int SHOW_MESSAGE_NONE = 0;
+	public static final int SHOW_MESSAGE_OK = 2;
+	public static final int SHOW_MESSAGE_ERROR = 4;
+	
 	private int offset = 0;
 	private int length = 0;
 	private int extendedLength = 0; // overlapping
@@ -157,7 +161,7 @@ public class Anchor {
 //
 //	}
 
-	public boolean validate(Topic topic) {
+	public boolean validate(Topic topic, int showMessage) {
 		String result = null;
 		try {
 			result = topic.getAnchor(offset, length);
@@ -167,15 +171,21 @@ public class Anchor {
 		
 		boolean ret = result.equals(name);;
 		
-		StringBuffer message = new StringBuffer(String.format(ANCHOR_CHECK_MESSAGE, topic.getTitle(), topic.getId(), name, this.getOffset(), this.getLength()));
-		if (ret) {
-			message.append(ANCHOR_CHECK_STATUS_OK);
-			System.out.println(message);
-		}
-		else {
- 			message.append(ANCHOR_CHECK_STATUS_ERROR);
- 			message.append(". Got \"" + result + "\" from topic instead");
- 			System.err.println(message);
+		if (showMessage > SHOW_MESSAGE_NONE) {
+			StringBuffer message = new StringBuffer(String.format(ANCHOR_CHECK_MESSAGE, topic.getTitle(), topic.getId(), name, this.getOffset(), this.getLength()));
+			if (ret) {
+				if ((SHOW_MESSAGE_OK & showMessage) == SHOW_MESSAGE_OK) {
+					message.append(ANCHOR_CHECK_STATUS_OK);
+					System.out.println(message);
+				}
+			}
+			else {
+				if ((SHOW_MESSAGE_ERROR & showMessage) == SHOW_MESSAGE_ERROR) {
+		 			message.append(ANCHOR_CHECK_STATUS_ERROR);
+		 			message.append(". Got \"" + result + "\" from topic instead");
+		 			System.err.println(message);
+				}
+			}
 		}
 		
 		return ret;
