@@ -26,7 +26,8 @@ public class AppResource {
 	private static AdjustFont adjustFont = null;
 	public static boolean debug = true;
 	
-	private static String topicPath = "resources" + File.separator + "Topics";
+	public static String DEFAULT_TOPIC_PATH = "resources" + File.separator + "Topics";
+	private String topicPath = null;
 	public static final String TOPIC_LIST_FILE = "topics.txt"; 
 	
 	public static Hashtable<String, String> topics = new Hashtable<String, String>(); 
@@ -34,10 +35,24 @@ public class AppResource {
 	
 	public AppResource() {
 		adjustFont = AdjustFont.getInstance();
-		
+		topicPath = DEFAULT_TOPIC_PATH;
 		if (topics.size() == 0)
 			loadTopicList();
 //		resourceMap = org.jdesktop.application.Application.getInstance(appClass.getClass()).getContext().getResourceMap(viewClass);
+	}
+
+	/**
+	 * @return the topicPath
+	 */
+	public String getTopicPath() {
+		return topicPath;
+	}
+
+	/**
+	 * @param topicPath the topicPath to set
+	 */
+	public void setTopicPath(String topicPath) {
+		this.topicPath = topicPath;
 	}
 
 	private void loadTopicList() {
@@ -106,6 +121,8 @@ public class AppResource {
     }
 	
 	public String getTopicDirectory(String fileID) {
+		if (!topicPath.equals(DEFAULT_TOPIC_PATH))
+			return topicPath;
 		return getTopicDirectory(sourceLang, fileID);
     }
 	
