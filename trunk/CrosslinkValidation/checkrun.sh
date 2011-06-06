@@ -1,14 +1,16 @@
 #!/bin/bash
 
-CLASSPATH=lib/assessment-engine.jar:lib/xml2txt.jar
+base=`dirname $0`
 
-if [ -e bin ]; then
-	CLASSPATH=$CLASSPATH:bin
+CLASSPATH=$base/lib/assessment-engine.jar:$base/lib/xml2txt.jar
+
+if [ -e $base/bin ]; then
+	CLASSPATH=$CLASSPATH:$base/bin
 else
-	if [ -e dist/CrosslinkValidation.jar ]; then
-		CLASSPATH=$CLASSHPATH:dist/CrosslinkValidation.jar
+	if [ -e $base/dist/CrosslinkValidation.jar ]; then
+		CLASSPATH=$CLASSHPATH:$base/dist/CrosslinkValidation.jar
 	else
-		CLASSPATH=$CLASSHPATH:CrosslinkValidation.jar
+		CLASSPATH=$CLASSHPATH:$base/CrosslinkValidation.jar
 	fi
 fi
 

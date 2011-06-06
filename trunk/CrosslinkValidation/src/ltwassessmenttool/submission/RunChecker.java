@@ -2,6 +2,7 @@ package ltwassessmenttool.submission;
 
 import java.io.File;
 
+import ltwassessment.submission.Anchor;
 import ltwassessment.submission.Run;
 
 public class RunChecker {
@@ -11,7 +12,7 @@ public class RunChecker {
 		
 		System.err.println("Checking run: " + run.getRunName());
 		System.err.println("===========================================================================");
-		run.validate();	
+		run.validate(Anchor.SHOW_MESSAGE_ERROR | Anchor.SHOW_MESSAGE_OK);	
 	}
 
 	/**
