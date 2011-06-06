@@ -20,12 +20,12 @@ public class Pool {
 		runs = new Run();
 	}
 	
-	public void read(String rundir) {
+	public void read(String rundir, boolean checkAnchors) {
 		File runDirHandler = new File(rundir);
 		File[] files = runDirHandler.listFiles();
 		
 		for (File file : files) 
-			runs.read(file);
+			runs.read(file, checkAnchors);
 	}
 	
 	public void output(boolean splitTopic) {

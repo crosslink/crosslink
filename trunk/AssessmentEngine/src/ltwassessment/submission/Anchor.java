@@ -169,11 +169,11 @@ public class Anchor {
 			e.printStackTrace();
 		}
 		
-		boolean ret = result.equals(name);;
+		valid = result.equals(name);;
 		
 		if (showMessage > SHOW_MESSAGE_NONE) {
 			StringBuffer message = new StringBuffer(String.format(ANCHOR_CHECK_MESSAGE, topic.getTitle(), topic.getId(), name, this.getOffset(), this.getLength()));
-			if (ret) {
+			if (valid) {
 				if ((SHOW_MESSAGE_OK & showMessage) == SHOW_MESSAGE_OK) {
 					message.append(ANCHOR_CHECK_STATUS_OK);
 					System.out.println(message);
@@ -188,7 +188,7 @@ public class Anchor {
 			}
 		}
 		
-		return ret;
+		return valid;
 	}
 
 }

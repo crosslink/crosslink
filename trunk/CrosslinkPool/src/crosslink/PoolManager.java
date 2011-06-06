@@ -20,10 +20,10 @@ public class PoolManager {
 
 	public void genPool(String submissionsPath, boolean splitTopic) {
 		Pool pool = new Pool();
-		pool.read(submissionsPath);
+		pool.read(submissionsPath, validateAnchors);
 		
-		if (validateAnchors)
-			pool.checkAnchors(Anchor.SHOW_MESSAGE_ERROR);
+//		if (validateAnchors)
+//			pool.checkAnchors(Anchor.SHOW_MESSAGE_ERROR);
 		
 		/*String xml = */pool.output(splitTopic);
 		
@@ -52,7 +52,7 @@ public class PoolManager {
 		
 		for (int i = 0; i < args.length; ++i) {
 			if (args[i].charAt(0) == '-') {
-				if (args[0].charAt(1) == 's' ) {
+				if (args[i].charAt(1) == 's' ) {
 					splitTopic = true;
 					++param_start;
 				}
