@@ -189,7 +189,7 @@ public class LinkedAnchorList {
 				anchor = anchorList.get(count);
 				
 				next = anchor.getNext();
-				if (next != null) {
+//				if (next != null) {
 					while (next != null) {
 						++count;
 						int extension  = anchor.getOffset() + anchor.getLength() + anchor.getExtendedLength();
@@ -199,7 +199,7 @@ public class LinkedAnchorList {
 							
 						next = next.getNext();
 					}
-				}
+//				}
 				
 				++count;
 			}
