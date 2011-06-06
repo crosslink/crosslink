@@ -13,9 +13,11 @@ public class Topic extends WikiArticleXml {
 	private boolean valid = false;
 		
 	private LinkedAnchorList anchors = null;
-	
+		
 	public Topic(String id, String name) {
 		super(id, name);
+		
+		load();
 	}
 //	
 //	public Topic(String id, LinkedAnchorList anchors) {
@@ -51,6 +53,8 @@ public class Topic extends WikiArticleXml {
 	
 	
 	public String getAnchor(int offset, int length) throws UnsupportedEncodingException {
+		if ((offset + length) > bytes.length)
+			return "EXCEEDED TOPIC LENGTH";
 		byte[] result = new byte[length];
 		System.arraycopy(bytes, offset, result, 0, length);
 		return new String(result, "UTF-8");

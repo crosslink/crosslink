@@ -53,7 +53,7 @@ public class WikiArticleXml {
 		this.id = id;
 	}
 
-	public WikiArticleXml(String id2, String name) {
+	public WikiArticleXml(String id, String name) {
 		this.id = id;
 		this.title = name;
 	}
