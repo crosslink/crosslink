@@ -5,6 +5,8 @@ import java.util.LinkedList;
 import java.util.Map;
 import java.util.Set;
 
+import de.mpii.clix.support.XML;
+
 import ltwassessment.submission.Anchor;
 import ltwassessment.submission.Target;
 import ltwassessment.submission.Topic;
@@ -58,7 +60,7 @@ public class ToXml {
 	public static void targetToXml(Target target, StringBuffer xmlText) {
 		String targetElement = "\t\t\t\t\t<tobep tbrel=\"0\" timein=\"\" timeout=\"\" tboffset=\"%d\" tbstartp=\"0\" lang=\"%s\" title=\"%s\">%s</tobep>\n";
 		
-		xmlText.append(String.format(targetElement, target.getBepOffset(), target.getLang(), target.getTitle(), target.getId()));
+		xmlText.append(String.format(targetElement, target.getBepOffset(), target.getLang(), XML.XMLify(target.getTitle()), target.getId()));
 	}
 	
 	public static void startRootElement(StringBuffer xmlText) {
