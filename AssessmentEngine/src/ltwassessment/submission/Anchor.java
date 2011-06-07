@@ -7,6 +7,10 @@ import java.util.Map;
 import java.util.Set;
 import java.util.Vector;
 
+import crosslink.XML2TXT;
+
+import ltwassessment.parsers.FOLTXTMatcher;
+
 
 public class Anchor {
 	
@@ -169,7 +173,12 @@ public class Anchor {
 			e.printStackTrace();
 		}
 		
-		valid = result.equals(name);;
+		valid = result.equals(name);
+		
+		if (!valid && result.contains("&")) {
+			result = XML2TXT.getInstance().cleanTag(FOLTXTMatcher.parseXmlText(result));
+			valid = result.equals(name);
+		}
 		
 		if (showMessage > SHOW_MESSAGE_NONE) {
 			StringBuffer message = new StringBuffer(String.format(ANCHOR_CHECK_MESSAGE, topic.getTitle(), topic.getId(), name, this.getOffset(), this.getLength()));

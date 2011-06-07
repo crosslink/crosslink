@@ -11,6 +11,10 @@ public class XML2TXT {
 
 	private static XML2TXT instance = null;
 	
+	private static final String TAG_START_OPEN = "<";
+	private static final String TAG_END_OPEN = "</";
+	private static final char TAG_CLOSE = '>';
+	
 	public XML2TXT() {
 		
 	}
@@ -25,6 +29,26 @@ public class XML2TXT {
 	{
 		source.replaceAll("[\\W]", with);
 		return source;
+	}
+	
+	public String cleanTag(String content/*, String tagName*/) {
+		int pos = 0;
+		int pre_pos = 0;
+		StringBuffer sb = new StringBuffer();
+		pos = content.indexOf(TAG_START_OPEN, pos);
+		while(pos > -1) {
+			while (content.charAt(pos) != TAG_CLOSE)
+				++pos;
+			++pos;
+			
+			pre_pos = pos;
+			
+			pos = content.indexOf(TAG_START_OPEN, pre_pos);
+			if (pos != -1)		
+				sb.append(content.substring(pre_pos, pos));
+		}
+		
+		return sb.toString();
 	}
 	
 	/*
