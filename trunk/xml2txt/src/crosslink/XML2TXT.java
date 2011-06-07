@@ -36,21 +36,24 @@ public class XML2TXT {
 		int pre_pos = 0;
 		StringBuffer sb = new StringBuffer();
 		pos = content.indexOf(TAG_START_OPEN, pre_pos);
-		sb.append(content.substring(pre_pos, pos));
-		while(pos > -1) {
-			while (content.charAt(pos) != TAG_CLOSE)
+		if (pos > -1) {
+			sb.append(content.substring(pre_pos, pos));
+			while(pos > -1) {
+				while (content.charAt(pos) != TAG_CLOSE)
+					++pos;
 				++pos;
-			++pos;
-			
-			pre_pos = pos;
-			
-			pos = content.indexOf(TAG_START_OPEN, pre_pos);
-			if (pos != -1)		
-				sb.append(content.substring(pre_pos, pos));
+				
+				pre_pos = pos;
+				
+				pos = content.indexOf(TAG_START_OPEN, pre_pos);
+				if (pos != -1)		
+					sb.append(content.substring(pre_pos, pos));
+			}
+			if (pos < 0 && pre_pos >= 0)
+				sb.append(content.substring(pre_pos));
+			return sb.toString();
 		}
-		if (pos < 0 && pre_pos >= 0)
-			sb.append(content.substring(pre_pos));
-		return sb.toString();
+		return content;
 	}
 	
 	/*
