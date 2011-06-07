@@ -175,9 +175,12 @@ public class Anchor {
 		
 		valid = result.equals(name);
 		
-		if (!valid && (result.contains("&") || result.contains(">") || result.contains("<"))) {
-			String reform = XML2TXT.getInstance().cleanTag(result);
-			reform = XML2TXT.getInstance().cleanTag(FOLTXTMatcher.parseXmlText(reform));
+		if (!valid) {
+			String reform = result;
+			if (result.contains("<") || result.contains(">"))
+				reform = XML2TXT.getInstance().cleanTag(reform);
+			if (result.contains("&"))
+				reform = XML2TXT.getInstance().cleanTag(FOLTXTMatcher.parseXmlText(reform));
 			valid = reform.equals(name);
 		}
 		

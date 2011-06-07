@@ -27,4 +27,4 @@ if [ -n "$1" ]
 then
   arguments=$1
 fi
-java -cp $cp:$base/bin crosslink.PoolManager ${arguments}
+java -cp $cp:$base/bin crosslink.PoolManager "$@"
