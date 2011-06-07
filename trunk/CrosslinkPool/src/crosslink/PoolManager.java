@@ -31,7 +31,7 @@ public class PoolManager {
 	}
 	
 	public static void usage() {
-		System.err.println("Usage: [-s] [-v topic_path] program submissions_path");
+		System.err.println("Usage: [-s] [-c topic_path] program submissions_path");
 		System.exit(-1);	
 	}
 	
