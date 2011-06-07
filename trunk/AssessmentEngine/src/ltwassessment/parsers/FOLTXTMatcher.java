@@ -62,7 +62,7 @@ public class FOLTXTMatcher {
     private String tearaTypeName = "";
     private boolean isTopicWikipedia = false;
     private boolean isLinkWikipedia = false;
-    private JTextPane dummyPane = new JTextPane();
+    private static JTextPane dummyPane = new JTextPane();
     
     private static FOLTXTMatcher instance = null;
     
@@ -883,7 +883,7 @@ public class FOLTXTMatcher {
     }
     
     @SuppressWarnings("finally")
-	public String parseXmlText(String input) {
+	public static String parseXmlText(String input) {
     	StringBuffer sb = new StringBuffer("<?xml version=\"1.0\" encoding=\"UTF-8\"?><!DOCTYPE article SYSTEM \"article.dtd\"><article>");
     	sb.append(input);
     	sb.append("</article>");
@@ -974,7 +974,7 @@ public class FOLTXTMatcher {
      * @param xpath - the xpath
      * @return - the text of the xpath
      */
-    private String getNodeText(Document sourceDoc, String xpath) {
+    private static String getNodeText(Document sourceDoc, String xpath) {
 
         NodeList nodelist;
         Element elem;

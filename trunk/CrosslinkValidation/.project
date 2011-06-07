@@ -3,6 +3,7 @@
 	<name>CrosslinkValidation</name>
 	<comment></comment>
 	<projects>
+		<project>xml2txt</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

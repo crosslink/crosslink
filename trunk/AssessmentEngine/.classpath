@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="/xml2txt/dist/xml2txt.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/xml2txt"/>
 	<classpathentry kind="lib" path="/CrosslinkValidation/lib/vtd-xml.jar"/>
 	<classpathentry kind="lib" path="/CrosslinkValidation/lib/jdom.jar"/>
