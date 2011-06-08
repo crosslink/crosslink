@@ -21,7 +21,7 @@ public class RunChecker {
 	 */
 	public static void main(String[] args) {
 		if (args.length < 1) {
-
+			usage();
 		}
 
 		RunChecker checker = new RunChecker();
