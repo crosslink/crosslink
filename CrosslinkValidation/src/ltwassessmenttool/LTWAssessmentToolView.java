@@ -2285,7 +2285,7 @@ public class LTWAssessmentToolView extends FrameView {
 //            // need to find out from TeAra Collection Folders
 //            currTopicFilePath = this.rscManager.getTeAraCollectionFolder() + this.rscManager.getTeAraFilePathByName(currTopicID + ".xml");
 //        }
-        this.rscManager.updateCurrTopicID(currTopicFilePath);
+        this.rscManager.updateCurrTopicFilePath(currTopicFilePath);
         // ---------------------------------------------------------------------
         // make sure the NAV to be ZERO every time when a new Submission is loaded
         String[] navIndices = new String[]{"0", "0", "0", "0", "0"};
@@ -2452,7 +2452,7 @@ public class LTWAssessmentToolView extends FrameView {
 //            // need to find out from TeAra Collection Folders
 //            currTopicFilePath = rscManager.getTeAraCollectionFolder() + rscManager.getTeAraFilePathByName(currTopicID + ".xml");
 //        }
-        rscManager.updateCurrTopicID(currTopicFilePath);
+        rscManager.updateCurrTopicFilePath(currTopicFilePath);
         // ---------------------------------------------------------------------
         // SET Topic Text Pane Content
         setTextPaneContent(currTopicFilePath);

@@ -7,11 +7,17 @@ import java.util.Set;
 
 import de.mpii.clix.support.XML;
 
+import ltwassessment.AppResource;
 import ltwassessment.submission.Anchor;
 import ltwassessment.submission.Target;
 import ltwassessment.submission.Topic;
 
 public class ToXml {
+	
+	public static final String ASSESSMENT_TAG = "<crosslink-assessment participant-id=\"2273087\" run-id=\"2273087_A2B\" task=\"A2B\" default_lang=\"%s\" source_lang=\"%s\">\n" +
+	           "	<collection>Chinese Wikipedia 2010 Collection</collection>\n" +
+	           "	<collection>Japanese Wikipedia 2010 Collection</collection>\n" +
+	           "	<collection>Korean Wikipedia 2010 Collection</collection>\n";
 
 	public static String anchorToXml(Anchor anchor) {
 		StringBuffer xmlText = new StringBuffer();
@@ -64,11 +70,8 @@ public class ToXml {
 	}
 	
 	public static void startRootElement(StringBuffer xmlText) {
-		xmlText.append("<crosslink-assessment participant-id=\"2273087\" run-id=\"2273087_A2B\" task=\"A2B\">\n" +
-			           "	<collection>Chinese Wikipedia 2010 Collection</collection>\n" +
-			           "	<collection>Japanese Wikipedia 2010 Collection</collection>\n" +
-			           "	<collection>Korean Wikipedia 2010 Collection</collection>\n");
-		
+		String tagAssessment = String.format(ASSESSMENT_TAG, AppResource.targetLang, AppResource.sourceLang);
+		xmlText.append(tagAssessment);
 	}
 	
 	public static void endRootElement(StringBuffer xmlText) {

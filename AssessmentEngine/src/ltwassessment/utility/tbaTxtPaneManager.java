@@ -125,7 +125,7 @@ public class tbaTxtPaneManager {
 //            }
 ////            topicXmlPath = myRSCManager.getTeAraCollectionFolder() + myRSCManager.getTeAraFilePathByName(myTopicID + ".xml");
 //        }
-        myRSCManager.updateCurrTopicID(topicXmlPath);
+        myRSCManager.updateCurrTopicFilePath(topicXmlPath);
         // Set Topic Content Text
         boolean isTopicPane = true;
         setTextPaneContent(topicXmlPath, isTopicPane, lang);

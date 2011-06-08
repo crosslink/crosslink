@@ -231,6 +231,6 @@ public class LTWAssessmentSetForm extends javax.swing.JDialog {
 //            // need to find out from TeAra Collection Folders
 //            currTopicFilePath = this.toolRscManager.getTeAraCollectionFolder() + this.toolRscManager.getTeAraFilePathByName(currTopicID + ".xml");
 //        }
-        this.toolRscManager.updateCurrTopicID(currTopicFilePath);
+        this.toolRscManager.updateCurrTopicFilePath(currTopicFilePath);
     }
 }
