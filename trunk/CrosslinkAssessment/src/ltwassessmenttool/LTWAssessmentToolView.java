@@ -290,7 +290,7 @@ public class LTWAssessmentToolView extends FrameView {
 	        String topicLang = topicIDNameVSA.elementAt(0)[2];
 	    	currTopicFilePath = rscManager.getTopicFilePath(currTopicID, topicLang);
 	    	rscManager.updateTopicID(currTopicID + ":" + topicLang);
-	    	rscManager.updateCurrTopicID(currTopicFilePath);
+	    	rscManager.updateCurrTopicFilePath(currTopicFilePath);
 	    	rscManager.updateCurrAnchorFOL(null);
         }
         

@@ -281,7 +281,7 @@ public class resourcesManager {
         updateElement(afLinkCollTypeTag, collType);
     }
 
-    public void updateCurrTopicID(String currTopicPath) {
+    public void updateCurrTopicFilePath(String currTopicPath) {
         updateElement(afCurrTopicTag, currTopicPath);
     }
     
@@ -2504,9 +2504,9 @@ public class resourcesManager {
         return mySortedNumbersV;
     }
 
-	public String getTopicFilePath(String topicID, String topicLang) {
-		return AppResource.getInstance().getTopicXmlPathNameByFileID(topicID, topicLang);
-	}
+//	public String getTopicFilePath(String topicID, String topicLang) {
+//		return AppResource.getInstance().getTopicXmlPathNameByFileID(topicID, topicLang);
+//	}
 
 
     // </editor-fold>

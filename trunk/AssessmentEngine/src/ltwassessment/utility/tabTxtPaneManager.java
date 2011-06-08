@@ -125,7 +125,7 @@ public class tabTxtPaneManager {
 //            }
 ////            topicXmlPath = myRSCManager.getTeAraCollectionFolder() + myRSCManager.getTeAraFilePathByName(myTopicID + ".xml");
 //        }
-        myRSCManager.updateCurrTopicID(topicXmlPath);
+        myRSCManager.updateCurrTopicFilePath(topicXmlPath);
         boolean isTopicText = true;
         // Set Topic Content Text
         setTextPaneContent(topicXmlPath, isTopicText);
