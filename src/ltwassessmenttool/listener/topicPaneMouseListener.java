@@ -234,21 +234,6 @@ public class topicPaneMouseListener implements MouseInputListener {
 //                String[] scrSEPosKey = new String[]{currSCRSEName[0], currSCRSEName[1], currSCRSEName[3]};
                 String[] preAnchorOLSEStatus = this.preTHyperOLSEStatus.split("_");
                 String[] preAnchorSEStatus = new String[]{preAnchorOLSEStatus[2], preAnchorOLSEStatus[3], preAnchorOLSEStatus[4]};
-                
-//                String currTopicOLSEStatus = System.getProperty(sysPropertyCurrTopicOLSEStatusKey);
-//                String[] currTopicOLSEStatusSA = currTopicOLSEStatus.split("_");
-//                String currPAnchorO = currTopicOLSEStatusSA[0];
-//                String currPAnchorL = currTopicOLSEStatusSA[1];
-//                String currPAnchorS = currTopicOLSEStatusSA[2];
-//                String currPAnchorE = currTopicOLSEStatusSA[3];
-//                String currPAnchorExt = currTopicOLSEStatusSA[4];
-//                String[] currPAnchorOLSA = new String[]{currPAnchorO, currPAnchorL};
-////                String currPAnchorStatus = this.poolerManager.getPoolAnchorStatus(topicID, currPAnchorOLSA);
-////                String[] currALinkOIDSA = this.myRSCManager.getCurrTopicATargetOID(this.myLinkPane, this.topicID);
-////                String currALinkOffset = currALinkOIDSA[0];
-////                String currALinkID = currALinkOIDSA[1];
-////                String[] currPALinkOIDSA = new String[]{currALinkOffset, currALinkID};
-////                String currPALinkStatus = this.myPoolManager.getPoolAnchorBepLinkStatus(topicID, currPAnchorOLSA, currALinkID);
 //
                 LTWAssessmentToolView.updateTopicAnchorsHighlight(this.topicTextPane, preAnchorSEStatus, scrSEPosKey, Integer.parseInt(currAnchorStatus));
 //                LTWAssessmentToolView.updateTopicAnchorsHighlight(this.topicTextPane, scrSEPosKey, preAnchorSEStatus, bepLength);
