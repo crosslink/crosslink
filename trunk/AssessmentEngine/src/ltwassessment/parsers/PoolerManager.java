@@ -216,7 +216,7 @@ public class PoolerManager {
     }
 
     public String getPoolAnchorStatus(String topicID, String[] poolAnchorOL) {
-        String pAnchorStatus = "";
+        String pAnchorStatus = "0";
         VTDGen vg = new VTDGen();
 
         if (vg.parseFile(poolXMLPath, true)) {
