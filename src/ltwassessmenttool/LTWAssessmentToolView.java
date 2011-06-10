@@ -13,7 +13,11 @@ import org.jdesktop.application.ResourceMap;
 import org.jdesktop.application.SingleFrameApplication;
 import org.jdesktop.application.FrameView;
 import java.io.File;
+import java.util.ArrayList;
 import java.util.Hashtable;
+import java.util.Iterator;
+import java.util.Map.Entry;
+import java.util.Set;
 import java.util.Vector;
 import javax.swing.ButtonGroup;
 import javax.swing.ImageIcon;
@@ -30,6 +34,7 @@ import javax.swing.text.StyleConstants;
 import javax.swing.text.StyledDocument;
 
 import ltwassessment.AppResource;
+import ltwassessment.Assessment;
 import ltwassessment.font.AdjustFont;
 import ltwassessment.parsers.Xml2Html;
 import ltwassessmenttool.listener.CaretListenerLabel;
@@ -126,6 +131,32 @@ public class LTWAssessmentToolView extends FrameView {
     public static final String[] outgoingTABColumnNames = {"Topic", "Pool Anchor", "Anchor", "BEP", "HiddenField"};
     public static final String[] incomingTBAColumnNames = {"Topic", "BEP", "Anchor", "File ID", "HiddenField"};
     ButtonGroup group = new ButtonGroup();
+    
+    //    Runnable runnable = new BasicThread2();
+    // Create the thread supplying it with the runnable object
+    Thread threadAssessment = new Thread(new AssessmentThread());
+    private boolean assessmentLock = true; 
+    
+        /**
+	 * @return the assessmentLock
+	 */
+    synchronized public boolean isAssessmentLock() {
+		return assessmentLock;
+	}
+
+	/**
+	 * @param assessmentLock the assessmentLock to set
+	 */
+    synchronized public void setAssessmentLock(boolean assessmentLock) {
+		this.assessmentLock = assessmentLock;
+	}
+
+	class AssessmentThread implements Runnable {
+        // This method is called when the thread runs
+        public void run() {
+
+        }
+    }
 
     public LTWAssessmentToolView(SingleFrameApplication app) {
         super(app);
@@ -169,11 +200,7 @@ public class LTWAssessmentToolView extends FrameView {
         // TODO: activate/fix the Progress Bar
         progressBar.setVisible(false);
         // =====================================================================
-        rscManager = resourcesManager.getInstance();
-        myPooler = PoolerManager.getInstance();
-        rscManager.pullPoolData();
-        
-        myPUpdater = new PoolUpdater();
+
         // =====================================================================
         // when the tool firstly starts:
         // For Link-the-Wikipedia A2B
@@ -203,7 +230,7 @@ public class LTWAssessmentToolView extends FrameView {
         // assume this must be TRUE
 //        boolean rightCorpusDir = corpusDirChecker(isTopicWikipedia);
 //        if (rightCorpusDir) {
-        if (true) {
+//        if (true) {
             log("Random XML file checking ... OK");
             // Topic and Link Panes Listeners
             // Check & Set Outgoing or Incoming
@@ -212,36 +239,23 @@ public class LTWAssessmentToolView extends FrameView {
             // new String[]{completed, total}
             // -----------------------------------------------------------------
 //            if (rscManager.getLinkingMode().toLowerCase().equals("outgoing")) {
-	            currTopicID = rscManager.getTopicID();
+            
+//            threadAssessment.start();
+            Hashtable<String, File> topics4Assessment = Assessment.getInstance().getTopics();
+            if (topics4Assessment.size() == 0) {
+	            currTopicID = rscManager.getInstance().getTopicID();
 	            if (currTopicID.length() == 0) {
-	                Vector<String[]> topicIDNameVSA = this.myPooler.getAllTopicsInPool();
-	            	currTopicID = topicIDNameVSA.elementAt(0)[0].trim();
-	                String topicLang = topicIDNameVSA.elementAt(0)[2];
-	            	currTopicFilePath = rscManager.getTopicFilePath(currTopicID, topicLang);
-	            	rscManager.updateTopicID(currTopicID + ":" + topicLang);
-	            	rscManager.updateCurrTopicID(currTopicFilePath);
+	            	//TODO : fix this
 	            }
-                String[] tabCompletedRatio = this.rscManager.getTABCompletedRatio();
-                this.rscManager.updateOutgoingCompletion(tabCompletedRatio[0] + " : " + tabCompletedRatio[1]);
-                System.setProperty(sysPropertyTABCompletedRatioKey, tabCompletedRatio[0] + "_" + tabCompletedRatio[1]);
+	            else
+	            	assess(Assessment.getPoolFile(currTopicID));
+            }
+            else {
+        		currTopicID = null;
+        		assessNextTopic();
+            }
 
-                // -------------------------------------------------------------
-                // scrSE, String[]{O,L,TXT,S,E,num}
-//                topicAnchorOLTSENHT = populateTopicAnchorOLTSENHT();
-                // -------------------------------------------------------------
-                CaretListenerLabel caretListenerLabel = new CaretListenerLabel("Caret Status", this.topicTextPane, this.statusMessageLabel);
-                this.topicTextPane.addCaretListener(caretListenerLabel);
-                topicPaneMouseListener mtTopicPaneListener = new topicPaneMouseListener(this.topicTextPane, this.linkTextPane);
-                this.topicTextPane.addMouseListener(mtTopicPaneListener);
-                this.topicTextPane.addMouseMotionListener(mtTopicPaneListener);
-                linkPaneMouseListener myLPMListener = new linkPaneMouseListener(this.topicTextPane, this.linkTextPane);
-                this.linkTextPane.addMouseListener(myLPMListener);
-                // -------------------------------------------------------------
-                this.outRadioBtn.setSelected(true);
-                this.inRadioBtn.setSelected(false);
-                // -------------------------------------------------------------
-                setOutgoingTAB();
-            } 
+//        } 
             // we don't need incoming for crosslink
 //            else if (rscManager.getLinkingMode().toLowerCase().equals("incoming")) {
 //                String[] tbaCompletedRatio = this.rscManager.getTBACompletedRatio();
@@ -274,6 +288,70 @@ public class LTWAssessmentToolView extends FrameView {
 //                JOptionPane.showMessageDialog(LTWAssessmentToolApp.getApplication().getMainFrame(), errInLinkingMode);
 //            }
 //        }
+    }
+    
+    private void assessNextTopic() {
+    	if (currTopicID != null)
+    		Assessment.getInstance().finishTopic(currTopicID);
+    	currTopicID = Assessment.getInstance().getNextTopic();
+    	assess(Assessment.getPoolFile(currTopicID), true);
+    }
+    
+    private void resetResouceTopic(String topicLang) {
+    	currTopicFilePath = AppResource.getInstance().getTopicXmlPathNameByFileID(currTopicID, topicLang); //rscManager.getTopicFilePath(currTopicID, topicLang);
+    	rscManager.updateTopicID(currTopicID + ":" + topicLang);
+    	rscManager.updateCurrTopicFilePath(currTopicFilePath);
+    	rscManager.updateCurrAnchorFOL(null);
+    }
+    
+    private void assess(String poolFile) {
+    	assess(poolFile, false);
+    }
+    
+    private void assess(String poolFile, boolean reset) {
+    	if (!new File(poolFile).exists()) {
+          String errMessage = "Cannot find pool file: " + poolFile + "\r\n";
+			JOptionPane.showMessageDialog(LTWAssessmentToolApp.getApplication().getMainFrame(), errMessage);    		
+    		return;
+    	}
+        myPooler = PoolerManager.getInstance(poolFile);
+        rscManager = resourcesManager.getInstance();
+        myPUpdater = myPooler.getPoolUpdater();
+       
+        if (reset) {
+        	resetResouceTopic(AppResource.sourceLang);
+        } 
+        else {
+	        String id = rscManager.getTopicID(); 
+	        if (!id.equals(currTopicID)) {
+		        Vector<String[]> topicIDNameVSA = this.myPooler.getAllTopicsInPool();
+		    	currTopicID = topicIDNameVSA.elementAt(0)[0].trim();
+		    	
+		        String topicLang = topicIDNameVSA.elementAt(0)[2];
+		        resetResouceTopic(topicLang);
+	        }
+        }
+        
+        Assessment.getInstance().setCurrentTopicWithId(currTopicID);
+        currTopicName = Assessment.getInstance().getCurrentTopic().getTitle();
+        rscManager.pullPoolData();
+    	
+        // -------------------------------------------------------------
+        // scrSE, String[]{O,L,TXT,S,E,num}
+//      topicAnchorOLTSENHT = populateTopicAnchorOLTSENHT();
+        // -------------------------------------------------------------
+        CaretListenerLabel caretListenerLabel = new CaretListenerLabel("Caret Status", this.topicTextPane, this.statusMessageLabel);
+        this.topicTextPane.addCaretListener(caretListenerLabel);
+        topicPaneMouseListener mtTopicPaneListener = new topicPaneMouseListener(this.topicTextPane, this.linkTextPane);
+        this.topicTextPane.addMouseListener(mtTopicPaneListener);
+        this.topicTextPane.addMouseMotionListener(mtTopicPaneListener);
+        linkPaneMouseListener myLPMListener = new linkPaneMouseListener(this.topicTextPane, this.linkTextPane);
+        this.linkTextPane.addMouseListener(myLPMListener);
+        // -------------------------------------------------------------
+        this.outRadioBtn.setSelected(true);
+        this.inRadioBtn.setSelected(false);
+        // -------------------------------------------------------------
+        setOutgoingTAB();
     }
 
     
@@ -1130,7 +1208,7 @@ public class LTWAssessmentToolView extends FrameView {
         //currTopicName = topicIDNameVSA.elementAt(0)[1].trim();
         currTopicID = rscManager.getTopicID();
         currTopicFilePath = rscManager.getCurrTopicXmlFile();
-        currTopicName = new WikiArticleXml(currTopicFilePath).getTitle();
+//        currTopicName = new WikiArticleXml(currTopicFilePath).getTitle();
         String topicLang = rscManager.getTopicLang();
         setTopicPaneContent(currTopicFilePath, topicLang);
 
@@ -1144,6 +1222,21 @@ public class LTWAssessmentToolView extends FrameView {
         	folMatcher.getSCRAnchorPosV(thisTopicTextPane, currTopicID, topicAnchorsHT);
         	topicAnchorsOLNameSEVS = rscManager.getTopicAnchorsOLNameSEV();
         }     
+        String[] tabCompletedRatio = this.rscManager.getTABCompletedRatio();
+        int completedAnchor = Integer.valueOf(tabCompletedRatio[0]);
+//        int totoalAnchorNumber = Integer.valueOf(tabCompletedRatio[1]);
+        
+//        String[] tabCompletedRatioRecorded = this.rscManager.getOutgoingCompletion();
+        int completedAnchorRecorded = 0; //Integer.valueOf(tabCompletedRatioRecorded[0]);
+        int totoalAnchorNumberRecored = topicAnchorsOLNameSEVS.size();
+        
+        if (completedAnchor >= totoalAnchorNumberRecored)
+        	completedAnchorRecorded = totoalAnchorNumberRecored;
+        else
+        	completedAnchorRecorded = completedAnchor;
+        
+        this.rscManager.updateOutgoingCompletion(String.valueOf(completedAnchorRecorded) + " : " + String.valueOf(totoalAnchorNumberRecored));
+        System.setProperty(sysPropertyTABCompletedRatioKey, String.valueOf(completedAnchorRecorded) + "_" + String.valueOf(totoalAnchorNumberRecored));
         // ---------------------------------------------------------------------
         
         // String[]{Anchor_O, L, SP, EP, Status}
@@ -1292,10 +1385,10 @@ public class LTWAssessmentToolView extends FrameView {
     // <editor-fold defaultstate="collapsed" desc="Set Text Pane & Highlight Anchor">
     // Topic Pane: Anchor
     private void setTopicPaneContent(String xmlFilePath, String lang) {
+    	AdjustFont.setComponentFont(thisTopicTextPane, lang);
         if (!xmlFilePath.equals("")) {
             createTopicTextPane(xmlFilePath);
         } else {
-        	AdjustFont.setComponentFont(thisTopicTextPane, lang);
             this.topicTextPane.setContentType(textContentType);
             this.topicTextPane.setText("<b>The topic file is missing or specified wrongly!!!</b>");
         }
