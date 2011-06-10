@@ -179,6 +179,7 @@ public class LTWAssessmentToolView extends FrameView {
         fuObserver = new fieldUpdateObserver(os, this.lblTopicTitle, this.lblTopicID, this.lblPoolAnchor, this.lblTargetID, this.lblTargetTitle,
                 this.lblCompletion);
         os.addObserver(fuObserver);
+        
         // tool resource constant variables
         resourceMap = getResourceMap();
 //        wikipediaTopicFileDir = resourceMap.getString("wikipedia.topics.folder");
@@ -302,6 +303,25 @@ public class LTWAssessmentToolView extends FrameView {
     	rscManager.updateTopicID(currTopicID + ":" + topicLang);
     	rscManager.updateCurrTopicFilePath(currTopicFilePath);
     	rscManager.updateCurrAnchorFOL(null);
+    	
+    	FOLTXTMatcher.getInstance().getSCRAnchorPosV(thisTopicTextPane, currTopicID, topicAnchorsHT);
+    	Vector<String> topicAnchorsOLNameSEVS = rscManager.getTopicAnchorsOLNameSEV();
+        int completedAnchor = 0;
+		//      int totoalAnchorNumber = Integer.valueOf(tabCompletedRatio[1]);
+		
+		//String[] tabCompletedRatioRecorded = this.rscManager.getOutgoingCompletion();
+//		int completedAnchorRecorded = 0; //Integer.valueOf(tabCompletedRatioRecorded[0]);
+		int totoalAnchorNumberRecored = topicAnchorsOLNameSEVS.size();
+		
+//		for (int i = 0; i < totoalAnchorNumberRecored; ++i)
+//			if ()
+		
+//		if (completedAnchor >= totoalAnchorNumberRecored)
+//			completedAnchorRecorded = totoalAnchorNumberRecored;
+//		else
+//			completedAnchorRecorded = completedAnchor;
+		
+		this.rscManager.updateOutgoingCompletion(String.valueOf(completedAnchor) + " : " + String.valueOf(totoalAnchorNumberRecored));
     }
     
     private void assess(String poolFile) {
@@ -317,6 +337,8 @@ public class LTWAssessmentToolView extends FrameView {
         myPooler = PoolerManager.getInstance(poolFile);
         rscManager = resourcesManager.getInstance();
         myPUpdater = myPooler.getPoolUpdater();
+        
+        topicAnchorsHT = myPooler.getTopicAllAnchors();
        
         if (reset) {
         	resetResouceTopic(AppResource.sourceLang);
@@ -331,6 +353,8 @@ public class LTWAssessmentToolView extends FrameView {
 		        resetResouceTopic(topicLang);
 	        }
         }
+                
+        setupComponentFont();
         
         Assessment.getInstance().setCurrentTopicWithId(currTopicID);
         currTopicName = Assessment.getInstance().getCurrentTopic().getTitle();
@@ -1195,7 +1219,6 @@ public class LTWAssessmentToolView extends FrameView {
         // ---------------------------------------------------------------------
         // Get Pool Properties
         // Hashtable<outgoing : topicFileID>: [0]:Offset, [1]:Length, [2]:Anchor_Name
-        topicAnchorsHT = myPooler.getTopicAllAnchors();
 //        topicSubanchorsHT = myPooler.getTopicAllSubanchors();
         // ---------------------------------------------------------------------
         // 1) Get Topic ID & xmlFile Path
@@ -1215,28 +1238,14 @@ public class LTWAssessmentToolView extends FrameView {
 
         // ---------------------------------------------------------------------
         // For 1st time to get the ANCHOR OL name SE
-        FOLTXTMatcher folMatcher = FOLTXTMatcher.getInstance();
 //        folMatcher = FOLTXTMatcher.getInstance();
         Vector<String> topicAnchorsOLNameSEVS = rscManager.getTopicAnchorsOLNameSEV();
         if (topicAnchorsOLNameSEVS.size() == 0) {
-        	folMatcher.getSCRAnchorPosV(thisTopicTextPane, currTopicID, topicAnchorsHT);
+        	FOLTXTMatcher.getInstance().getSCRAnchorPosV(thisTopicTextPane, currTopicID, topicAnchorsHT);
         	topicAnchorsOLNameSEVS = rscManager.getTopicAnchorsOLNameSEV();
         }     
         String[] tabCompletedRatio = this.rscManager.getTABCompletedRatio();
-        int completedAnchor = Integer.valueOf(tabCompletedRatio[0]);
-//        int totoalAnchorNumber = Integer.valueOf(tabCompletedRatio[1]);
-        
-//        String[] tabCompletedRatioRecorded = this.rscManager.getOutgoingCompletion();
-        int completedAnchorRecorded = 0; //Integer.valueOf(tabCompletedRatioRecorded[0]);
-        int totoalAnchorNumberRecored = topicAnchorsOLNameSEVS.size();
-        
-        if (completedAnchor >= totoalAnchorNumberRecored)
-        	completedAnchorRecorded = totoalAnchorNumberRecored;
-        else
-        	completedAnchorRecorded = completedAnchor;
-        
-        this.rscManager.updateOutgoingCompletion(String.valueOf(completedAnchorRecorded) + " : " + String.valueOf(totoalAnchorNumberRecored));
-        System.setProperty(sysPropertyTABCompletedRatioKey, String.valueOf(completedAnchorRecorded) + "_" + String.valueOf(totoalAnchorNumberRecored));
+        System.setProperty(sysPropertyTABCompletedRatioKey, String.valueOf(tabCompletedRatio[0]) + "_" + String.valueOf(tabCompletedRatio[1]));
         // ---------------------------------------------------------------------
         
         // String[]{Anchor_O, L, SP, EP, Status}
@@ -1808,6 +1817,13 @@ public class LTWAssessmentToolView extends FrameView {
             topicBepOSNHT.put(tBS, new String[]{topicBepsOSSA[0], topicBepsOSSA[1], String.valueOf(i)});
         }
         return topicBepOSNHT;
+    }
+    
+    private void setupComponentFont() {
+    	
+    	AdjustFont.setComponentFont(lblTopicTitle, AppResource.sourceLang);
+    	AdjustFont.setComponentFont(lblPoolAnchor, AppResource.sourceLang);
+    	
     }
 // </editor-fold>
 }

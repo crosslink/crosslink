@@ -5,7 +5,9 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Hashtable;
+import java.util.Iterator;
 import java.util.Stack;
+import java.util.Map.Entry;
 
 import ltwassessment.AppResource;
 import ltwassessment.utility.FileUtil;
@@ -23,6 +25,7 @@ public class Assessment {
 	private static final String ASSESSMENT_POOL_PATH = "resources" + File.separator + "Pool" + File.separator;
 	
 	private Hashtable<String, File> topics = new Hashtable<String, File>();
+	private Iterator it  = null;
 	
 	private Topic currentTopic;
 
@@ -67,6 +70,11 @@ public class Assessment {
 			topics.put(topicID, file);
 		}
 		
+		it = topics.entrySet().iterator();
+	}
+	
+	public void finishTopic(String topic) {
+		finishTopic(topics.get(topic));
 	}
 	
 	public void finishTopic(File topicFile) {
@@ -79,5 +87,14 @@ public class Assessment {
 	
 	public static String getPoolFile(String id) {
 		return ASSESSMENT_POOL_PATH + ASSESSMENT_POOL_PREFIX + "_" + id + ".xml";
+	}
+	
+	public String getNextTopic() {
+		String topic = null;
+		if (it.hasNext()) {
+    		Entry entry = (Entry) it.next();
+    		topic = (String) entry.getKey();
+		}
+		return topic;
 	}
 }
