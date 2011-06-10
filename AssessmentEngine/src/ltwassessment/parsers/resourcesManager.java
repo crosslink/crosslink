@@ -1457,15 +1457,53 @@ public class resourcesManager {
         int pABepIndex = 0;
         int pAnchorCounter = 0;
         Vector<String[]> poolAnchorsOLNameStatusVSA = this.getPoolAnchorsOLNameStatusV();
-        for (String[] pAnchorOLNameStatus : poolAnchorsOLNameStatusVSA) {
+        int i = 0, j = 0;
+        String[] pAnchorOLNameStatus = null;
+        String[] thisPAnchorOLNameStatus = null;
+        String[] thisPAnchorSEStatus = null;
+        String[] firstTAnchorOL = null;
+        String[] firstTABepOID= null;
+        Hashtable<String, Vector<String[]>> anchorBepLinksOIDStatus = this.getPoolAnchorBepLinksHT();
+        String[] thisPABepLinkSet = null;
+        String bepLinkStartP = "";
+        String subAnchorName = null;
+        String subAnchorOffset = null;
+        String subAnchorLength = null;
+        String subAnchorRel = null;
+        
+        for (; i< poolAnchorsOLNameStatusVSA.size(); ++i) {
+        	pAnchorOLNameStatus = poolAnchorsOLNameStatusVSA.get(i);
+        	if (firstTAnchorOL == null && Integer.parseInt(pAnchorOLNameStatus[3]) == 0) {
+        		
+        		thisPAnchorOLNameStatus = poolAnchorsOLNameStatusVSA.elementAt(i);
+        		thisPAnchorSEStatus = this.getTopicAnchorSEStatusByOL(topicID, new String[]{thisPAnchorOLNameStatus[0], thisPAnchorOLNameStatus[1]});
+        		firstTAnchorOL = new String[]{thisPAnchorOLNameStatus[0], thisPAnchorOLNameStatus[1], thisPAnchorSEStatus[0], thisPAnchorSEStatus[1], thisPAnchorOLNameStatus[3], thisPAnchorOLNameStatus[4]};
+                Vector<String[]> thisBepLinksVSA = anchorBepLinksOIDStatus.get(thisPAnchorOLNameStatus[0] + "_" + thisPAnchorOLNameStatus[1]);
+ 
+                thisPABepLinkSet = thisBepLinksVSA.elementAt(0);
+        		
+        		j = 1;
+        		while (Integer.parseInt(thisPABepLinkSet[8]) != 0 && j < thisBepLinksVSA.size()) {
+        			thisPABepLinkSet = thisBepLinksVSA.elementAt(j);
+        			
+        			++j;
+        		}
+                subAnchorName = thisPABepLinkSet[5];
+                subAnchorOffset = thisPABepLinkSet[6];
+                subAnchorLength = thisPABepLinkSet[7];
+                subAnchorRel = thisPABepLinkSet[8];
+        		firstTABepOID = new String[]{thisPABepLinkSet[0], bepLinkStartP, thisPABepLinkSet[1], thisPABepLinkSet[2], thisPABepLinkSet[3], thisPABepLinkSet[4], subAnchorName, subAnchorOffset, subAnchorLength, subAnchorRel};
+        		pABepNewIndex = j - 1;
+        	}
             if (pAnchorO.equals(pAnchorOLNameStatus[0])) {
                 pAnchorIndex = pAnchorCounter;
                 // -------------------------------------------------------------
                 int pABepCounter = 0;
+                pABepNewIndex = 0;
                 HashMap<String, Vector<String[]>> anchorBepLinksHM = pooler.getBepSetByAnchor(topicID);
                 Vector<String[]> bepLinksOSIDStatusVSA = anchorBepLinksHM.get(pAnchorO + "_" + pAnchorL);
 //                log("bepLinksOSIDStatusVSA: " + bepLinksOSIDStatusVSA.size());
-                Hashtable<String, Vector<String[]>> anchorBepLinksOIDStatus = this.getPoolAnchorBepLinksHT();
+               
                 Vector<String[]> bepLinksVSA = anchorBepLinksOIDStatus.get(pAnchorO + "_" + pAnchorL);
 //                log("bepLinksVSA: " + bepLinksVSA.size());
                 for (String[] bepLinksOSIDStatus : bepLinksVSA) {
@@ -1486,18 +1524,18 @@ public class resourcesManager {
                         }
                         // -----------------------------------------------------
                         // Get PoolAnchor O, L, S, E, Status
-                        String[] thisPAnchorOLNameStatus = poolAnchorsOLNameStatusVSA.elementAt(pAnchorNewIndex);
-                        String[] thisPAnchorSEStatus = this.getTopicAnchorSEStatusByOL(topicID, new String[]{thisPAnchorOLNameStatus[0], thisPAnchorOLNameStatus[1]});
+                        thisPAnchorOLNameStatus = poolAnchorsOLNameStatusVSA.elementAt(pAnchorNewIndex);
+                        thisPAnchorSEStatus = this.getTopicAnchorSEStatusByOL(topicID, new String[]{thisPAnchorOLNameStatus[0], thisPAnchorOLNameStatus[1]});
                         nextTAnchorOL = new String[]{thisPAnchorOLNameStatus[0], thisPAnchorOLNameStatus[1], thisPAnchorSEStatus[0], thisPAnchorSEStatus[1], thisPAnchorOLNameStatus[3], thisPAnchorOLNameStatus[4]};
                         // Get TargetBepLink
                         // new String[]{tbOffset, tbStartP, tbFileID, tbRel}
                         Vector<String[]> thisBepLinksVSA = anchorBepLinksOIDStatus.get(thisPAnchorOLNameStatus[0] + "_" + thisPAnchorOLNameStatus[1]);
-                        String[] thisPABepLinkSet = thisBepLinksVSA.elementAt(pABepNewIndex);
-                        String bepLinkStartP = "";
-                        String subAnchorName = null;
-                        String subAnchorOffset = null;
-                        String subAnchorLength = null;
-                        String subAnchorRel = null;
+                        thisPABepLinkSet = thisBepLinksVSA.elementAt(pABepNewIndex);
+                        bepLinkStartP = "";
+                        subAnchorName = null;
+                        subAnchorOffset = null;
+                        subAnchorLength = null;
+                       subAnchorRel = null;
                         subAnchorName = thisPABepLinkSet[5];
                         subAnchorOffset = thisPABepLinkSet[6];
                         subAnchorLength = thisPABepLinkSet[7];
@@ -1520,8 +1558,14 @@ public class resourcesManager {
             }
             pAnchorCounter++;
         }
+        
+        
         this.updateTABNavigationIndex(new String[]{"0", String.valueOf(pAnchorNewIndex), String.valueOf(pABepNewIndex), "0", "0"});
 
+        if (nextTAB.size() == 0) {
+        	nextTAB.add(firstTAnchorOL);
+        	nextTAB.add(firstTABepOID);
+        }
         return nextTAB;
     }
 
@@ -1598,7 +1642,7 @@ public class resourcesManager {
         // status: 0 <-- normal, 1 <-- completed, -1 <-- non-relevant
         // Get Sorted Anchor OL
         // Hashtable<String, Vector<String[]>>
-        // outgoing : topicID, V<String[]{anchor Offset, Length, Name, arel}>
+        // outgoing : topicID, V<String[]{anchor Offset, Length, Name, arel, extension length}>
         topicAllAnchors = pooler.getTopicAllAnchors();
         String topicID = this.getTopicID();
         Vector<String[]> poolAnchorsOLV = topicAllAnchors.get("outgoing : " + topicID); //topicAllAnchors.elements().nextElement();
