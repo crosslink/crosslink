@@ -131,6 +131,32 @@ public class LTWAssessmentToolView extends FrameView {
     public static final String[] outgoingTABColumnNames = {"Topic", "Pool Anchor", "Anchor", "BEP", "HiddenField"};
     public static final String[] incomingTBAColumnNames = {"Topic", "BEP", "Anchor", "File ID", "HiddenField"};
     ButtonGroup group = new ButtonGroup();
+    
+    //    Runnable runnable = new BasicThread2();
+    // Create the thread supplying it with the runnable object
+    Thread threadAssessment = new Thread(new AssessmentThread());
+    private boolean assessmentLock = true; 
+    
+        /**
+	 * @return the assessmentLock
+	 */
+    synchronized public boolean isAssessmentLock() {
+		return assessmentLock;
+	}
+
+	/**
+	 * @param assessmentLock the assessmentLock to set
+	 */
+    synchronized public void setAssessmentLock(boolean assessmentLock) {
+		this.assessmentLock = assessmentLock;
+	}
+
+	class AssessmentThread implements Runnable {
+        // This method is called when the thread runs
+        public void run() {
+
+        }
+    }
 
     public LTWAssessmentToolView(SingleFrameApplication app) {
         super(app);
@@ -214,27 +240,19 @@ public class LTWAssessmentToolView extends FrameView {
             // -----------------------------------------------------------------
 //            if (rscManager.getLinkingMode().toLowerCase().equals("outgoing")) {
             
+//            threadAssessment.start();
             Hashtable<String, File> topics4Assessment = Assessment.getInstance().getTopics();
             if (topics4Assessment.size() == 0) {
 	            currTopicID = rscManager.getInstance().getTopicID();
 	            if (currTopicID.length() == 0) {
 	            	//TODO : fix this
-
 	            }
 	            else
 	            	assess(Assessment.getPoolFile(currTopicID));
             }
             else {
-            	Set set = topics4Assessment.entrySet();
-            	Iterator it  = set.iterator();
-            	while (it.hasNext()) {
-            		Entry entry = (Entry) it.next();
-            		currTopicID = (String) entry.getKey();
-//            		File file = (File) entry.getValue();
-//            		String filename =  file.getName();
-            		assess(Assessment.getPoolFile(currTopicID));
-            		
-            	}
+        		currTopicID = null;
+        		assessNextTopic();
             }
 
 //        } 
@@ -272,7 +290,25 @@ public class LTWAssessmentToolView extends FrameView {
 //        }
     }
     
+    private void assessNextTopic() {
+    	if (currTopicID != null)
+    		Assessment.getInstance().finishTopic(currTopicID);
+    	currTopicID = Assessment.getInstance().getNextTopic();
+    	assess(Assessment.getPoolFile(currTopicID), true);
+    }
+    
+    private void resetResouceTopic(String topicLang) {
+    	currTopicFilePath = AppResource.getInstance().getTopicXmlPathNameByFileID(currTopicID, topicLang); //rscManager.getTopicFilePath(currTopicID, topicLang);
+    	rscManager.updateTopicID(currTopicID + ":" + topicLang);
+    	rscManager.updateCurrTopicFilePath(currTopicFilePath);
+    	rscManager.updateCurrAnchorFOL(null);
+    }
+    
     private void assess(String poolFile) {
+    	assess(poolFile, false);
+    }
+    
+    private void assess(String poolFile, boolean reset) {
     	if (!new File(poolFile).exists()) {
           String errMessage = "Cannot find pool file: " + poolFile + "\r\n";
 			JOptionPane.showMessageDialog(LTWAssessmentToolApp.getApplication().getMainFrame(), errMessage);    		
@@ -282,16 +318,18 @@ public class LTWAssessmentToolView extends FrameView {
         rscManager = resourcesManager.getInstance();
         myPUpdater = myPooler.getPoolUpdater();
        
-        String id = rscManager.getTopicID(); 
-        if (!id.equals(currTopicID)) {
-	        Vector<String[]> topicIDNameVSA = this.myPooler.getAllTopicsInPool();
-	    	currTopicID = topicIDNameVSA.elementAt(0)[0].trim();
-	    	
-	        String topicLang = topicIDNameVSA.elementAt(0)[2];
-	    	currTopicFilePath = AppResource.getInstance().getTopicXmlPathNameByFileID(currTopicID, topicLang); // rscManager.getTopicFilePath(currTopicID, topicLang);
-	    	rscManager.updateTopicID(currTopicID + ":" + topicLang);
-	    	rscManager.updateCurrTopicFilePath(currTopicFilePath);
-	    	rscManager.updateCurrAnchorFOL(null);
+        if (reset) {
+        	resetResouceTopic(AppResource.sourceLang);
+        } 
+        else {
+	        String id = rscManager.getTopicID(); 
+	        if (!id.equals(currTopicID)) {
+		        Vector<String[]> topicIDNameVSA = this.myPooler.getAllTopicsInPool();
+		    	currTopicID = topicIDNameVSA.elementAt(0)[0].trim();
+		    	
+		        String topicLang = topicIDNameVSA.elementAt(0)[2];
+		        resetResouceTopic(topicLang);
+	        }
         }
         
         Assessment.getInstance().setCurrentTopicWithId(currTopicID);
@@ -1347,10 +1385,10 @@ public class LTWAssessmentToolView extends FrameView {
     // <editor-fold defaultstate="collapsed" desc="Set Text Pane & Highlight Anchor">
     // Topic Pane: Anchor
     private void setTopicPaneContent(String xmlFilePath, String lang) {
+    	AdjustFont.setComponentFont(thisTopicTextPane, lang);
         if (!xmlFilePath.equals("")) {
             createTopicTextPane(xmlFilePath);
         } else {
-        	AdjustFont.setComponentFont(thisTopicTextPane, lang);
             this.topicTextPane.setContentType(textContentType);
             this.topicTextPane.setText("<b>The topic file is missing or specified wrongly!!!</b>");
         }
