@@ -3,7 +3,9 @@ package ltwassessment.submission;
 import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Set;
 import java.util.Vector;
 
@@ -124,6 +126,16 @@ public class Anchor {
 	
 	public Map<String, Target> getTargets() {
 		return targets;
+	}
+	
+	public void addTargets(Map<String, Target> many) {
+		Set<String> entry = many.keySet();
+		Iterator it = entry.iterator();
+		while (it.hasNext()) {
+			String id = (String) it.next();
+			if (!targets.containsKey(id))
+				targets.put(id, many.get(id));
+		}
 	}
 	
 	public void insertTarget(Target target) {
