@@ -78,11 +78,13 @@ public class ToXml {
 		xmlText.append("</crosslink-assessment>\n");
 	}
 	
-	public static void topicToXml(Topic topic, StringBuffer xmlText) {
+	public static void topicToXml(Topic topic, StringBuffer xmlText) throws Exception {
 		String topicElemStart = "\t<topic file=\"%s\" name=\"%s\">\n" + 
         						"\t\t<outgoinglinks>\n";
 		String topicElemEnd = "\t\t</outgoinglinks>\n\t</topic>\n";
 		xmlText.append(String.format(topicElemStart, topic.getId(), topic.getTitle()));
+		
+		int offsetSofar = 0;
 		
 		topic.getAnchors().calculateOverlappedAnchorExtensionLength();
 		LinkedList<Anchor> anchorList = topic.getAnchors().getAnchorList();
@@ -90,9 +92,15 @@ public class ToXml {
 		String anchorElementEnd = "\t\t\t</anchor>\n";
 		Anchor pre = null, anchor = null;
 		pre = anchorList.get(0);
+		
+		offsetSofar = pre.getOffset();
+		
 		anchorToXml(pre, xmlText);
 		for (int i = 1; i < anchorList.size(); ++i) {
 			anchor = anchorList.get(i);
+			
+			if (anchor.getOffset() < offsetSofar)
+				throw new Exception("Incorrect anchor with an offset smaller than previous one!");
 			subAnchorToXml(pre, xmlText);
 			if (pre.getNext() != null && pre.getNext() == anchor)
 				;
@@ -104,6 +112,7 @@ public class ToXml {
 //					subAnchorToXml(anchor, xmlText);
 			}
 			pre = anchor;
+			offsetSofar = pre.getOffset();
 		}
 		subAnchorToXml(pre, xmlText);
 		xmlText.append(anchorElementEnd);

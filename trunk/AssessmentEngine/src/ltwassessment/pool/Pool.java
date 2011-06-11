@@ -28,7 +28,7 @@ public class Pool {
 			runs.read(file, checkAnchors);
 	}
 	
-	public void output(boolean splitTopic) {
+	public void output(boolean splitTopic) throws Exception {
 		StringBuffer poolXml = new StringBuffer();
 		
 		ToXml.startRootElement(poolXml);

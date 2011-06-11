@@ -25,7 +25,15 @@ public class PoolManager {
 //		if (validateAnchors)
 //			pool.checkAnchors(Anchor.SHOW_MESSAGE_ERROR);
 		
-		/*String xml = */pool.output(splitTopic);
+		/*String xml = */
+		try {
+			pool.output(splitTopic);
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			System.err.println("There is a sever bug in the pooling program, fixes needed");
+			System.exit(-2);
+		}
 		
 //		System.out.println(xml);
 	}
