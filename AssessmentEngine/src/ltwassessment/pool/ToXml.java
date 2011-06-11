@@ -99,8 +99,10 @@ public class ToXml {
 		for (int i = 1; i < anchorList.size(); ++i) {
 			anchor = anchorList.get(i);
 			
-			if (anchor.getOffset() < offsetSofar)
-				throw new Exception("Incorrect anchor with an offset smaller than previous one!");
+			if (anchor.getOffset() < offsetSofar) {
+				System.err.println("Topic id:" + topic.getId() + " Anchor: " + anchor.getName() + " Offset: " + anchor.getOffset());
+//				throw new Exception("Incorrect anch
+			}
 			subAnchorToXml(pre, xmlText);
 			if (pre.getNext() != null && pre.getNext() == anchor)
 				;

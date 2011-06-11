@@ -28,13 +28,10 @@ public class PoolManager {
 		/*String xml = */
 		try {
 			pool.output(splitTopic);
-		} catch (Exception e) {
-			e.printStackTrace();
-		} finally {
+		} catch (Exception e) {	
 			System.err.println("There is a sever bug in the pooling program, fixes needed");
 			System.exit(-2);
-		}
-		
+		} 
 //		System.out.println(xml);
 	}
 	
