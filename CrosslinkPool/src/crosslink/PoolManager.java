@@ -36,7 +36,7 @@ public class PoolManager {
 	}
 	
 	public static void usage() {
-		System.err.println("Usage: [-s] [-c topic_path] program submissions_path");
+		System.err.println("Usage: [-s] [-c] [-p topic_path] program submissions_path");
 		System.exit(-1);	
 	}
 	
@@ -61,7 +61,7 @@ public class PoolManager {
 					splitTopic = true;
 					++param_start;
 				}
-				else if (args[i].charAt(1) == 'c' ) {
+				else if (args[i].charAt(1) == 'p' ) {
 					manager.setValidateAnchors(true);
 					String topicPath = args[++i];
 					if (!new File(topicPath).exists()) {
@@ -73,6 +73,9 @@ public class PoolManager {
 					AppResource.getInstance().setTopicPath(topicPath);
 					param_start += 2;
 				}
+				else if (args[i].charAt(1) == 'c' ) {
+					manager.setValidateAnchors(true);
+				}				
 				else
 					usage();
 			}
