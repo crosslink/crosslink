@@ -44,18 +44,25 @@ public class LinkedAnchorList {
 			boolean overlapping = false;
 			boolean addBefore = false;
 			
-			index = after(anchor.getOffset());
+			index = after(anchor.getOffset(), anchor.getLength());
 			
 			if (index == -1) 
 				theOne = anchorList.getLast();
 			else 
 				theOne = anchorList.get(index);
 			
-//            if (anchor.getName().equals("春秋战国时期") || theOne.getName().equals("春秋战国时期"))
-//            	System.err.println("I got you!");
+            if ((anchor.getName().equals("古代") && anchor.getOffset() == 596)
+            		|| theOne.getName().equals("古代")  && theOne.getOffset() == 596)
+            	System.err.println("I got you!");
             
-			if (anchor.getOffset() == theOne.getOffset()) { //which means definitely overlapping
+			// to see if overlapping
+			if (anchor.getOffset() == theOne.getOffset()
+					|| (anchor.getOffset() > theOne.getOffset() && (theOne.getOffset() + theOne.getLength()) > anchor.getOffset()) 				
+						|| (anchor.getOffset() < theOne.getOffset() && (anchor.getOffset() + anchor.getLength()) > theOne.getOffset())
+						)
 				overlapping = true;
+            
+			if (overlapping) { //which means definitely overlapping
 				Anchor next = theOne;
 				while (true) {
 					theOne = next;
@@ -85,18 +92,10 @@ public class LinkedAnchorList {
 					anchorList.add(anchor);		
 				else 
 					anchorList.add(index + 1, anchor);		
-				
-				// to see if overlapping
-				if ((theOne.getOffset() + theOne.getLength()) > anchor.getOffset()) 
-					overlapping = true;
 			}
 			else { // add before
 				anchorList.add(index, anchor);
 				addBefore = true;	
-				
-				if ((anchor.getOffset() + anchor.getLength()) > theOne.getOffset()) { 
-					overlapping = true;
-				}
 			}
 			
 			// now link the anchors together if there is overlapping
@@ -159,7 +158,7 @@ public class LinkedAnchorList {
 	 * @param high
 	 * @return the index of the anchor in the list
 	 */
-	public int after(int offset, int low, int high) {
+	public int after(int offset, int length, int low, int high) {
 //		int mid = (high - low) / 2 + low;
 //		
 //		if (mid == high || mid == low)
@@ -171,22 +170,23 @@ public class LinkedAnchorList {
 //		return after(offset, mid, high);
 		
 		int mid;
-
+		Anchor target;
 		while (low < high)
 		{
 			mid = (low + high) / 2;
-			if (anchorList.get(mid).getOffset() < offset)
-				low = mid + 1;
+			target = anchorList.get(mid);
+			if (target.getOffset() < offset && (target.getOffset() + target.getLength()) < (offset + length))
+				low = mid;
 			else
 				high = mid;
 		}
 		return low;
 	}
 	
-	public int after(int offset) {
+	public int after(int offset, int length) {
 		int low = 0, high = anchorList.size() - 1;
 
-		return after(offset, low, high);
+		return after(offset, length, low, high);
 	}
 	
 	public void sortByRank() {
