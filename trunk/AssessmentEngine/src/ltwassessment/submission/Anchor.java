@@ -10,6 +10,7 @@ import java.util.Set;
 import java.util.Vector;
 
 import crosslink.XML2TXT;
+import de.mpii.clix.support.XML;
 
 import ltwassessment.parsers.FOLTXTMatcher;
 
@@ -189,10 +190,12 @@ public class Anchor {
 		
 		if (!valid) {
 			String reform = result;
-			if (result.contains("<") || result.contains(">"))
+			if (reform.contains("<") || reform.contains(">"))
 				reform = XML2TXT.getInstance().cleanTag(reform);
-			if (result.contains("&"))
-				reform = XML2TXT.getInstance().cleanTag(FOLTXTMatcher.parseXmlText(reform));
+			if (reform.contains("&")) {
+				reform = XML.unXMLify(reform);
+//				reform = XML2TXT.getInstance().cleanTag(FOLTXTMatcher.parseXmlText(reform));
+			}
 			valid = reform.equals(name);
 		}
 		
