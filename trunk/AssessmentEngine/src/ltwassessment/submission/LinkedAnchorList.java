@@ -36,6 +36,7 @@ public class LinkedAnchorList {
 	 */
 	public void insert(Anchor anchor) {
 		Anchor theOne = null;
+		Anchor first = null;
 		if (anchorList.size() == 0)
 			anchorList.add(anchor);
 		else {
@@ -50,18 +51,23 @@ public class LinkedAnchorList {
 			else 
 				theOne = anchorList.get(index);
 			
+//            if (anchor.getName().equals("春秋战国时期") || theOne.getName().equals("春秋战国时期"))
+//            	System.err.println("I got you!");
+            
 			if (anchor.getOffset() == theOne.getOffset()) { //which means definitely overlapping
 				overlapping = true;
-
 				Anchor next = theOne;
 				while (true) {
 					theOne = next;
-					if (next.getLength() >= anchor.getLength())
+					if ((anchor.getOffset() == next.getOffset() && next.getLength() >= anchor.getLength())
+							|| (next.getOffset() > anchor.getOffset()))
 						break;	
 					if ((next = next.getNext()) == null)
 						break;
 					++index;
 				}
+			}
+			if (anchor.getOffset() == theOne.getOffset()) {
 				if (anchor.getLength() == theOne.getLength()) { // same anchor, merge the targets 
 					theOne.addTargets(anchor.getTargets()); //theOne.getTargets().putAll(anchor.getTargets());
 					return; 
@@ -84,18 +90,17 @@ public class LinkedAnchorList {
 				if ((theOne.getOffset() + theOne.getLength()) > anchor.getOffset()) 
 					overlapping = true;
 			}
-			else {
+			else { // add before
 				anchorList.add(index, anchor);
+				addBefore = true;	
 				
 				if ((anchor.getOffset() + anchor.getLength()) > theOne.getOffset()) { 
 					overlapping = true;
-					addBefore = true;
 				}
 			}
 			
 			// now link the anchors together if there is overlapping
-			if (overlapping) {
-				Anchor first = theOne.getFirst();
+			if (overlapping) {			
 				Anchor last = theOne.getLast();
 				if (addBefore) {
 					if (theOne.getPrevious() != null) {
