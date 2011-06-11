@@ -94,69 +94,72 @@ public class Run {
                 String thisTopicID = topicElmn.getAttribute("file");
                 String thisTopicName = topicElmn.getAttribute("name");
                 Topic topic = topics.get(thisTopicID);
-                if (topic == null)
+                if (topic == null) {
                 	topic = new Topic(thisTopicID, thisTopicName);
-                    topics.put(thisTopicID, topic);
+                	topics.put(thisTopicID, topic);
+                }
 //                if (thisTopicID.equals(topicFileID)) {
-                    NodeList linksNodeList = topicElmn.getElementsByTagName(afOutgoingTag);
-                    Element outgoingElmn = (Element) linksNodeList.item(0);
-                    NodeList anchorNodeList = outgoingElmn.getElementsByTagName(afAnchorTag);
-                    String anchorKey = "";
+                NodeList linksNodeList = topicElmn.getElementsByTagName(afOutgoingTag);
+                Element outgoingElmn = (Element) linksNodeList.item(0);
+                NodeList anchorNodeList = outgoingElmn.getElementsByTagName(afAnchorTag);
+                String anchorKey = "";
 //                    Vector<String[]> anchorToBEPV;
-                    LinkedAnchorList anchors = topic.getAnchors();
-                    for (int k = 0; k < anchorNodeList.getLength(); k++) {
-                        Element anchorElmn = (Element) anchorNodeList.item(k);
-                        String aOffset = anchorElmn.getAttribute( offsetAttributeName);
-                        String aLength = anchorElmn.getAttribute(lengthAttributeName);
-                        String anchorName = anchorElmn.getAttribute("name");
-                        	
+                LinkedAnchorList anchors = topic.getAnchors();
+                for (int k = 0; k < anchorNodeList.getLength(); k++) {
+                    Element anchorElmn = (Element) anchorNodeList.item(k);
+                    String aOffset = anchorElmn.getAttribute( offsetAttributeName);
+                    String aLength = anchorElmn.getAttribute(lengthAttributeName);
+                    String anchorName = anchorElmn.getAttribute("name");
+                    	
 //                        anchorToBEPV = new Vector<String[]>();
-                        Anchor anchor = new Anchor(Integer.parseInt(aOffset), Integer.parseInt(aLength), anchorName);
-                        if (anchor.validate(topic, Anchor.SHOW_MESSAGE_ERROR)) {
-	                        Target target = null;
-	                        if (forValidationOrAssessment) {
-	                        	anchorKey = aOffset + "_" + aLength;
-	                            NodeList subAnchorNodeList = anchorElmn.getElementsByTagName(afSubAnchorTag);
-	                            for (int l = 0; l < subAnchorNodeList.getLength(); l++) {
-	                                Element subAnchorElmn = (Element) subAnchorNodeList.item(l);
-	                                NodeList toBepNodeList = subAnchorElmn.getElementsByTagName(afToBepTag);
-	                                for (int m = 0; m < toBepNodeList.getLength(); m++) {
-	                                    Element toBepElmn = (Element) toBepNodeList.item(m);
-	                                    String tbOffset = toBepElmn.getAttribute(tboffsetAttributeName);                                
-	                                    String tbStartP = toBepElmn.getAttribute("tbstartp");
-	                                    String tbRel = toBepElmn.getAttribute("tbrel");
-	
-	                                    Node tbXmlFileIDTextNode = toBepElmn.getFirstChild();
-	                                    String tbFileID = tbXmlFileIDTextNode.getTextContent();
-	                                    
-	                                   // anchorToBEPV.add(new String[]{tbOffset, tbStartP, tbFileID, tbRel});
-	                                }
-	                            }
-	                        }
-	                        else {
-	                        	anchorKey = aOffset + "_" + (Integer.valueOf(aOffset) + Integer.valueOf(aLength)) + "_" + anchorName;
-	                            NodeList toBepNodeList = anchorElmn.getElementsByTagName(afToBepTag);
-	                            for (int m = 0; m < toBepNodeList.getLength(); m++) {
-	                                Element toBepElmn = (Element) toBepNodeList.item(m);
-	                                
-	                                // new
-	                                String target_lang = toBepElmn.getAttribute("lang");
-	                                String target_title = toBepElmn.getAttribute("title");
-	
-	                                String tbOffset = toBepElmn.getAttribute("bep_offset");
-	                                Node tbXmlFileIDTextNode = toBepElmn.getFirstChild();
-	                                String tbFileID = tbXmlFileIDTextNode.getTextContent();
-	                                
-	                                //anchorToBEPV.add(new String[]{tbFileID, tbOffset, target_lang, target_title});
-	                                target = new Target(target_lang, target_title, tbFileID, Integer.parseInt(tbOffset));
-	                                anchor.insertTarget(target);
-	                            }
-	                        }
-	//                        anchorBepsHT.put(anchorKey, anchorToBEPV);
-	                        anchor.setRank(k);
-	                        anchors.insert(anchor);
+                    Anchor anchor = new Anchor(Integer.parseInt(aOffset), Integer.parseInt(aLength), anchorName);
+                    if (anchor.validate(topic, Anchor.SHOW_MESSAGE_ERROR)) {
+                        Target target = null;
+                        if (forValidationOrAssessment) {
+                        	anchorKey = aOffset + "_" + aLength;
+                            NodeList subAnchorNodeList = anchorElmn.getElementsByTagName(afSubAnchorTag);
+                            for (int l = 0; l < subAnchorNodeList.getLength(); l++) {
+                                Element subAnchorElmn = (Element) subAnchorNodeList.item(l);
+                                NodeList toBepNodeList = subAnchorElmn.getElementsByTagName(afToBepTag);
+                                for (int m = 0; m < toBepNodeList.getLength(); m++) {
+                                    Element toBepElmn = (Element) toBepNodeList.item(m);
+                                    String tbOffset = toBepElmn.getAttribute(tboffsetAttributeName);                                
+                                    String tbStartP = toBepElmn.getAttribute("tbstartp");
+                                    String tbRel = toBepElmn.getAttribute("tbrel");
+
+                                    Node tbXmlFileIDTextNode = toBepElmn.getFirstChild();
+                                    String tbFileID = tbXmlFileIDTextNode.getTextContent();
+                                    
+                                   // anchorToBEPV.add(new String[]{tbOffset, tbStartP, tbFileID, tbRel});
+                                }
+                            }
                         }
+                        else {
+                        	anchorKey = aOffset + "_" + (Integer.valueOf(aOffset) + Integer.valueOf(aLength)) + "_" + anchorName;
+                            NodeList toBepNodeList = anchorElmn.getElementsByTagName(afToBepTag);
+                            for (int m = 0; m < toBepNodeList.getLength(); m++) {
+                                Element toBepElmn = (Element) toBepNodeList.item(m);
+                                
+                                // new
+                                String target_lang = toBepElmn.getAttribute("lang");
+                                String target_title = toBepElmn.getAttribute("title");
+
+                                String tbOffset = toBepElmn.getAttribute("bep_offset");
+                                Node tbXmlFileIDTextNode = toBepElmn.getFirstChild();
+                                String tbFileID = tbXmlFileIDTextNode.getTextContent();
+                                
+                                //anchorToBEPV.add(new String[]{tbFileID, tbOffset, target_lang, target_title});
+                                target = new Target(target_lang, target_title, tbFileID, Integer.parseInt(tbOffset));
+                                anchor.insertTarget(target);
+                            }
+                        }
+//                        anchorBepsHT.put(anchorKey, anchorToBEPV);
+                        anchor.setRank(k);
+                        if (anchor.getOffset() == 805 && thisTopicID.equals("47565"))
+                        	System.err.println("I got you!");
+                        anchors.insert(anchor);
                     }
+                }
 //                }
                     
 
