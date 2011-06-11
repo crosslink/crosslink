@@ -7,5 +7,6 @@
 	<classpathentry kind="lib" path="lib/xercesImpl.jar"/>
 	<classpathentry kind="lib" path="lib/xml-apis.jar"/>
 	<classpathentry kind="lib" path="lib/vtd-xml.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/xml2txt"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
