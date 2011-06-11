@@ -44,6 +44,9 @@ public class LinkedAnchorList {
 			boolean overlapping = false;
 			boolean addBefore = false;
 			
+            if ((anchor.getName().equals("古代") && anchor.getOffset() == 596))
+            	System.err.println("I got you!");
+            
 			index = after(anchor.getOffset(), anchor.getLength());
 			
 			if (index == -1) 
@@ -51,8 +54,7 @@ public class LinkedAnchorList {
 			else 
 				theOne = anchorList.get(index);
 			
-            if ((anchor.getName().equals("古代") && anchor.getOffset() == 596)
-            		|| theOne.getName().equals("古代")  && theOne.getOffset() == 596)
+            if (theOne.getName().equals("古代")  && theOne.getOffset() == 596)
             	System.err.println("I got you!");
             
 			// to see if overlapping
@@ -175,8 +177,10 @@ public class LinkedAnchorList {
 		{
 			mid = (low + high) / 2;
 			target = anchorList.get(mid);
-			if (target.getOffset() < offset && (target.getOffset() + target.getLength()) < (offset + length))
-				low = mid;
+/*			if (target.getOffset() == offset && (target.getOffset() + target.getLength()) == (offset + length))
+				return mid;
+			else */if (target.getOffset() < offset && (target.getOffset() + target.getLength()) < (offset + length))
+				low = mid + 1;
 			else
 				high = mid;
 		}
