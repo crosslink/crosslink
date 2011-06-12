@@ -219,4 +219,7 @@ public class Anchor {
 		return valid;
 	}
 
+	public String toString() {
+		return "Anchor: " + getName() + " Offset: " + getOffset();
+	}
 }
