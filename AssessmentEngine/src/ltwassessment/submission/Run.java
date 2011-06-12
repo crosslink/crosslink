@@ -155,8 +155,8 @@ public class Run {
                         }
 //                        anchorBepsHT.put(anchorKey, anchorToBEPV);
                         anchor.setRank(k);
-                        if (anchor.getName().equals("古代") && anchor.getTargets().containsKey("4946747"))
-                        	System.err.println("I got you!");
+//                        if (anchor.getName().equals("古代") && anchor.getTargets().containsKey("4946747"))
+//                        	System.err.println("I got you!");
                         anchors.insert(anchor);
                     }
                 }
