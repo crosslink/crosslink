@@ -44,17 +44,17 @@ public class LinkedAnchorList {
 			boolean overlapping = false;
 			boolean addBefore = false;
 			
-            if ((anchor.getName().equals("国") && anchor.getOffset() == 593))
+            if ((anchor.getName().equals("古代") && anchor.getOffset() == 596))
             	System.err.println("I got you!");
             
 			index = after(anchor.getOffset(), anchor.getLength());
 			
-			if (index == -1 || index == 0) 
+			if (index == -1) 
 				theOne = anchorList.getLast();
 			else 
-				theOne = anchorList.get(index); // always get the one
+				theOne = anchorList.get(index);
 			
-            if (theOne.getName().equals("国")  && theOne.getOffset() == 593)
+            if (theOne.getName().equals("古代")  && theOne.getOffset() == 596)
             	System.err.println("I got you!");
             
 			// to see if overlapping
