@@ -86,37 +86,49 @@ public class ToXml {
 		
 		int offsetSofar = 0;
 		
-		topic.getAnchors().calculateOverlappedAnchorExtensionLength();
+//		topic.getAnchors().calculateOverlappedAnchorExtensionLength();
+		topic.getAnchors().connectIfOverlapped();
 		LinkedList<Anchor> anchorList = topic.getAnchors().getAnchorList();
 		
 		String anchorElementEnd = "\t\t\t</anchor>\n";
 		Anchor pre = null, anchor = null;
-		pre = anchorList.get(0);
 		
-		offsetSofar = pre.getOffset();
-		
+		Anchor start = anchorList.get(0);
+		offsetSofar = start.getOffset();
 		anchorToXml(pre, xmlText);
+		StringBuffer subanchorXmlText = new StringBuffer();
+		int offsetEnd = start.getOffset() + start.getLength(); // = offset + length;
+		
 		for (int i = 1; i < anchorList.size(); ++i) {
 			anchor = anchorList.get(i);
 			
 			if (anchor.getOffset() < offsetSofar) {
-				System.err.println("Topic id:" + topic.getId() + " Anchor: " + anchor.getName() + " Offset: " + anchor.getOffset());
+				System.err.println("Topic id:" + topic.getId() + " " + anchor.toString());
 //				throw new Exception("Incorrect anch
 			}
-			subAnchorToXml(pre, xmlText);
-			if (pre.getNext() != null && pre.getNext() == anchor)
-				;
+			subAnchorToXml(pre, subanchorXmlText);
+			if (pre.getNext() != null && pre.getNext() == anchor) {
+				int newOffsetEnd = anchor.getOffset() + anchor.getLength();
+				if (newOffsetEnd > offsetEnd)
+					offsetEnd = newOffsetEnd;
+			}
 			else {
+				start.setExtendedLength(offsetEnd - start.getOffset() - start.getLength());
+				anchorToXml(start, xmlText);
+				xmlText.append(subanchorXmlText);
 				xmlText.append(anchorElementEnd);
-				anchorToXml(anchor, xmlText);
 				
 //				if (i == (anchorList.size() - 1))
 //					subAnchorToXml(anchor, xmlText);
+				start = anchor;
 			}
 			pre = anchor;
 			offsetSofar = pre.getOffset();
 		}
-		subAnchorToXml(pre, xmlText);
+//		subAnchorToXml(pre, subanchorXmlText);
+		start.setExtendedLength(offsetEnd - start.getOffset() - start.getLength());
+		anchorToXml(start, xmlText);
+		xmlText.append(subanchorXmlText);
 		xmlText.append(anchorElementEnd);
 		
 		xmlText.append(topicElemEnd);
