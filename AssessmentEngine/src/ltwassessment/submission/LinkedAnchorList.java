@@ -250,7 +250,7 @@ public class LinkedAnchorList {
 						connectBefore(anchor, next);
 					}
 					
-					if (anchor.getNext() != next)
+					if (anchor.getNext() != null && anchor.getNext() != next)
 						System.err.println(anchor.toString() + " has incorrect connection with next one");
 				}
 				

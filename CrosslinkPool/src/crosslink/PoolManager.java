@@ -29,6 +29,7 @@ public class PoolManager {
 		try {
 			pool.output(splitTopic);
 		} catch (Exception e) {	
+			e.printStackTrace();
 			System.err.println("There is a sever bug in the pooling program, fixes needed");
 			System.exit(-2);
 		} 
@@ -75,6 +76,7 @@ public class PoolManager {
 				}
 				else if (args[i].charAt(1) == 'c' ) {
 					manager.setValidateAnchors(true);
+					++param_start;
 				}				
 				else
 					usage();

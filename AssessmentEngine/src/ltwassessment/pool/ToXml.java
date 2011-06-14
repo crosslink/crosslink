@@ -91,13 +91,14 @@ public class ToXml {
 		LinkedList<Anchor> anchorList = topic.getAnchors().getAnchorList();
 		
 		String anchorElementEnd = "\t\t\t</anchor>\n";
-		Anchor pre = null, anchor = null;
 		
 		Anchor start = anchorList.get(0);
+		Anchor pre = start, anchor = null;
 		offsetSofar = start.getOffset();
-		anchorToXml(pre, xmlText);
+//		anchorToXml(pre, xmlText);
 		StringBuffer subanchorXmlText = new StringBuffer();
 		int offsetEnd = start.getOffset() + start.getLength(); // = offset + length;
+		int newOffsetEnd = 0;
 		
 		for (int i = 1; i < anchorList.size(); ++i) {
 			anchor = anchorList.get(i);
@@ -108,7 +109,7 @@ public class ToXml {
 			}
 			subAnchorToXml(pre, subanchorXmlText);
 			if (pre.getNext() != null && pre.getNext() == anchor) {
-				int newOffsetEnd = anchor.getOffset() + anchor.getLength();
+				newOffsetEnd = anchor.getOffset() + anchor.getLength();
 				if (newOffsetEnd > offsetEnd)
 					offsetEnd = newOffsetEnd;
 			}
@@ -120,13 +121,19 @@ public class ToXml {
 				
 //				if (i == (anchorList.size() - 1))
 //					subAnchorToXml(anchor, xmlText);
+				subanchorXmlText.setLength(0);
 				start = anchor;
+				offsetEnd = start.getOffset() + start.getLength();
 			}
 			pre = anchor;
 			offsetSofar = pre.getOffset();
 		}
-//		subAnchorToXml(pre, subanchorXmlText);
+		subAnchorToXml(anchor, subanchorXmlText);
+		newOffsetEnd = anchor.getOffset() + anchor.getLength();
+		if (newOffsetEnd > offsetEnd)
+			offsetEnd = newOffsetEnd;
 		start.setExtendedLength(offsetEnd - start.getOffset() - start.getLength());
+		
 		anchorToXml(start, xmlText);
 		xmlText.append(subanchorXmlText);
 		xmlText.append(anchorElementEnd);
