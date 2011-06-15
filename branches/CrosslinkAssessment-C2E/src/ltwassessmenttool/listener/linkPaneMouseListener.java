@@ -41,7 +41,7 @@ import ltwassessment.AppResource;
 import ltwassessment.parsers.FOLTXTMatcher;
 import ltwassessment.parsers.Xml2Html;
 import ltwassessment.parsers.PoolerManager;
-import ltwassessment.parsers.resourcesManager;
+import ltwassessment.parsers.ResourcesManager;
 import ltwassessment.utility.BrowserControl;
 import ltwassessment.utility.ObservableSingleton;
 import ltwassessment.utility.highlightPainters;
@@ -71,7 +71,7 @@ public class linkPaneMouseListener implements MouseInputListener {
     private JTextPane myTopicPane;
     private JTextPane myLinkPane;
     // import External Classes
-    private resourcesManager myRSCManager;
+    private ResourcesManager myRSCManager;
     private FOLTXTMatcher myFolMatcher;
     private PoolUpdater myPoolUpdater;
     private PoolerManager myPoolManager;
@@ -162,7 +162,7 @@ public class linkPaneMouseListener implements MouseInputListener {
         bepNonrelevantIconImageFilePath = resourceMap.getString("bepNonrelevantIcon.imageFilePath");
         paneContentType = resourceMap.getString("html.content.type");
 
-        myRSCManager = resourcesManager.getInstance();
+        myRSCManager = ResourcesManager.getInstance();
         myFolMatcher = FOLTXTMatcher.getInstance();
         myPoolManager = PoolerManager.getInstance();
         myPoolUpdater = myPoolManager.getPoolUpdater();

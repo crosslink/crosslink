@@ -31,7 +31,7 @@ import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
 import ltwassessment.AppResource;
-import ltwassessment.parsers.resourcesManager;
+import ltwassessment.parsers.ResourcesManager;
 import ltwassessment.parsers.FOLTXTMatcher;
 
 import org.apache.xerces.parsers.DOMParser;
@@ -46,9 +46,9 @@ import org.xml.sax.SAXException;
 /**
  * @author Darren HUANG
  */
-public class resourcesManager {
+public class ResourcesManager {
 
-    private static resourcesManager instance;
+    private static ResourcesManager instance;
 	private final String sysPropertyKey = "isTABKey";
     private final String sysPropertyIsTopicWikiKey = "isTopicWikipedia";
     private final String sysPropertyIsLinkWikiKey = "isLinkWikipedia";
@@ -91,9 +91,9 @@ public class resourcesManager {
     private String afTopicPrefixTag = "topic";
     private String afPoolPathTag = "poolingXmlFile";
     
-    public static resourcesManager getInstance() {
+    public static ResourcesManager getInstance() {
         if (instance == null)
-            instance = new resourcesManager();
+            instance = new ResourcesManager();
         return instance;
     }
 
@@ -101,14 +101,14 @@ public class resourcesManager {
         System.out.println(text);
     }
 
-    public resourcesManager() {
+    public ResourcesManager() {
         // get toolResources XML file Location/Path
         ////org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(ltwassessment.ltwassessmentApp.class).getContext().getResourceMap(ltwassessmentView.class);
     	//AppResource.getInstance().setResourceMap(org.jdesktop.application.Application.getInstance(ltwassessment.ltwassessmentApp.class).getContext().getResourceMap(ltwassessment.ltwassessmentView.class));
     	init();
     }
     
-    public resourcesManager(org.jdesktop.application.ResourceMap resourceMap) {
+    public ResourcesManager(org.jdesktop.application.ResourceMap resourceMap) {
     	AppResource.getInstance().setResourceMap(resourceMap);
     	init();
     }
@@ -176,9 +176,9 @@ public class resourcesManager {
 //                tformer.transform(source, result);
 //            }
 //        } catch (IOException ex) {
-//            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
+//            Logger.getLogger(ResourcesManager.class.getName()).log(Level.SEVERE, null, ex);
 //        } catch (TransformerException ex) {
-//            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
+//            Logger.getLogger(ResourcesManager.class.getName()).log(Level.SEVERE, null, ex);
 //        }
         updateElement("outgoingCompletion", outgoingCompletion);
     }
@@ -206,9 +206,9 @@ public class resourcesManager {
 //                tformer.transform(source, result);
 //            }
 //        } catch (IOException ex) {
-//            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
+//            Logger.getLogger(ResourcesManager.class.getName()).log(Level.SEVERE, null, ex);
 //        } catch (TransformerException ex) {
-//            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
+//            Logger.getLogger(ResourcesManager.class.getName()).log(Level.SEVERE, null, ex);
 //        }
 //    }
 
@@ -225,9 +225,9 @@ public class resourcesManager {
             Transformer tformer = tFactory.newTransformer();
         	tformer.transform(source, result);
         } catch (IOException ex) {
-            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ResourcesManager.class.getName()).log(Level.SEVERE, null, ex);
         } catch (TransformerException ex) {
-            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ResourcesManager.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
     
@@ -372,7 +372,7 @@ public class resourcesManager {
             bw.close();
             br.close();
         } catch (IOException ex) {
-            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ResourcesManager.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
@@ -494,9 +494,9 @@ public class resourcesManager {
                 tformer.transform(source, result);
             }
         } catch (IOException ex) {
-            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ResourcesManager.class.getName()).log(Level.SEVERE, null, ex);
         } catch (TransformerException ex) {
-            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ResourcesManager.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
@@ -678,7 +678,7 @@ public class resourcesManager {
 //                }
 //                br.close();
 //            } catch (IOException ex) {
-//                Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
+//                Logger.getLogger(ResourcesManager.class.getName()).log(Level.SEVERE, null, ex);
 //            }
 //        }
         // Here it should return "File NOT FOUND XML file for display"
@@ -864,9 +864,9 @@ public class resourcesManager {
             fileInputStream.close();
             inputStreamReader.close();
         } catch (SAXException ex) {
-            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ResourcesManager.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
-            Logger.getLogger(resourcesManager.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ResourcesManager.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
     private boolean isTitleFlag = false;
@@ -2038,7 +2038,7 @@ public class resourcesManager {
         String subAnchorLength = null;
         String subAnchorRel = null;
         subAnchorName = currBepSA[5];
-        subAnchorOffset = currBepSA[6]
+        subAnchorOffset = currBepSA[6];
         subAnchorLength = currBepSA[7];
         subAnchorRel = currBepSA[8];
         return /*currTopicABepIDO = */new String[]{bepOffset, bepFileID, bepLang, bepTitle, subAnchorName, subAnchorOffset, subAnchorLength, subAnchorRel};

@@ -64,13 +64,13 @@ public class PoolerManager {
     //7) record Topic (outgoing : topicFile) -> [0]:Offset & [1]:Length & [2]:Subanchor_Name
     private Hashtable<String, Vector<String[]>> topicSubanchorsHT = new Hashtable<String, Vector<String[]>>();
     private static String poolXMLPath = "";
-//    static resourcesManager resManager;
+//    static ResourcesManager resManager;
     static String afXmlPath = "";
     static PoolerManager instance = null;
     private static PoolUpdater poolUpdater = null; 
     
     static {
-//        resManager = resourcesManager.getInstance();
+//        resManager = ResourcesManager.getInstance();
 
         //resourceMap = org.jdesktop.application.Application.getInstance(ltwassessment.ltwassessmentApp.class).getContext().getResourceMap(ltwassessmentView.class);
     	ResourceMap resourceMap = AppResource.getInstance().getResourceMap();
@@ -351,7 +351,7 @@ public class PoolerManager {
     }
 
     public String getPoolAnchorBepLinkStatus(String topicID, String[] poolAnchorOL, String targetID) {
-        String pAnchorStatus = "";
+        String pAnchorStatus = "0";
         VTDGen vg = new VTDGen();
 
         if (vg.parseFile(poolXMLPath, true)) {
@@ -629,13 +629,13 @@ public class PoolerManager {
             myAFTopicColl = afProperty[3].trim();
             myAFLinkColl = afProperty[3].trim();
         }
-//        resourcesManager rscManager = resourcesManager.getInstance();
+//        ResourcesManager rscManager = ResourcesManager.getInstance();
 //        if (Boolean.valueOf(System.getProperty(sysPropertyIsTopicWikiKey))) {
-            String subPath = resourcesManager.getInstance().getWikipediaFilePathByName(xmlFileID + ".xml", lang);
+            String subPath = ResourcesManager.getInstance().getWikipediaFilePathByName(xmlFileID + ".xml", lang);
             if (subPath.equals("FileNotFound.xml")) {
                 xmlFilePath = fileNotFoundXmlPath;
             } else {
-                xmlFilePath = /*resourcesManager.getInstance().getWikipediaFileFolder(AppResource.targetLang) + */subPath;
+                xmlFilePath = /*ResourcesManager.getInstance().getWikipediaFileFolder(AppResource.targetLang) + */subPath;
             }
 //        } else {
 //            String subPath = rscManager.getTeAraFilePathByName(xmlFileID + ".xml");
@@ -728,6 +728,10 @@ public class PoolerManager {
         
         byte[] bytes = FOLTXTMatcher.getInstance().getFullXmlTxt().getBytes();
         
+		int aExtLength;
+		int aOffset;
+		int aLength;
+        
         HashMap<String, Vector<String[]>> anchorBepsHT = new HashMap<String, Vector<String[]>>();
         Document xmlDoc = readingXMLFromFile(afXmlPath);
 
@@ -748,22 +752,29 @@ public class PoolerManager {
                         Element anchorElmn = (Element) anchorNodeList.item(k);
                         String anchorName = anchorElmn.getAttribute("name");
 
-                		int aExtLength = Integer.valueOf(anchorElmn.getAttribute("ext_length"));
-                		int aOffset = Integer.valueOf(anchorElmn.getAttribute(offsetAttributeName));
-                		int aLength = Integer.valueOf(anchorElmn.getAttribute(lengthAttributeName));
+                		aExtLength = Integer.valueOf(anchorElmn.getAttribute("ext_length"));
+                		aOffset = Integer.valueOf(anchorElmn.getAttribute(offsetAttributeName));
+                		aLength = Integer.valueOf(anchorElmn.getAttribute(lengthAttributeName));
                         	
-                        String aOffsetStr = String.valueOf(FOLTXTMatcher.byteOffsetToTextOffset(bytes, aOffset));;
-                        String aLengthStr =  String.valueOf(FOLTXTMatcher.textLength(bytes, aOffset, aLength));;
+                        String aOffsetStr = String.valueOf(FOLTXTMatcher.byteOffsetToTextOffset(bytes, aOffset));
+                        String aLengthStr =  String.valueOf(FOLTXTMatcher.textLength(bytes, aOffset, aLength));
                         String aExtLengthStr = String.valueOf(FOLTXTMatcher.textLength(bytes, aOffset + aLength, aExtLength));
                     	
                         anchorToBEPV = new Vector<String[]>();
                         if (forValidationOrAssessment) {
-                        	anchorKey = aOffset + "_" + aLength;
+                        	anchorKey = aOffsetStr + "_" + aLengthStr;
                             NodeList subAnchorNodeList = anchorElmn.getElementsByTagName(afSubAnchorTag);
                             for (int l = 0; l < subAnchorNodeList.getLength(); l++) {
                                 Element subAnchorElmn = (Element) subAnchorNodeList.item(l);
+                                           		                     		                        
                                 String saOffset = subAnchorElmn.getAttribute("saoffset");
                                 String saLength = subAnchorElmn.getAttribute("salength");
+                                
+//                                aOffset = FOLTXTMatcher.byteOffsetToTextOffset(bytes, aOffset);
+//                                aLength = FOLTXTMatcher.textLength(bytes, aOffset, aLength);
+//                                
+//                                saOffset = String.valueOf(aOffset);
+//                                saLength = String.valueOf(aLength);
                                 String sanchorName = subAnchorElmn.getAttribute("saname");
                                 String sarel = subAnchorElmn.getAttribute("sarel");
                                 
@@ -781,7 +792,7 @@ public class PoolerManager {
                             }
                         }
                         else {
-                        	anchorKey = aOffset + "_" + (Integer.valueOf(aOffset) + Integer.valueOf(aLength)) + "_" + anchorName;
+                        	anchorKey = aOffsetStr + "_" + (Integer.valueOf(aOffset) + Integer.valueOf(aLength)) + "_" + anchorName;
                             NodeList toBepNodeList = anchorElmn.getElementsByTagName(afToBepTag);
                             for (int m = 0; m < toBepNodeList.getLength(); m++) {
                                 Element toBepElmn = (Element) toBepNodeList.item(m);
@@ -868,6 +879,12 @@ public class PoolerManager {
             String[] thisSubAnchorProperty = null;
             int index = 0;
 
+            byte[] bytes = null;
+            
+    		int aExtLength = 0;
+    		int aOffset = 0;
+    		int aLength = 0;
+    		
             while (xsr.hasNext()) {
                 xsr.next();
                 if (xsr.isStartElement()) {
@@ -921,6 +938,13 @@ public class PoolerManager {
                         }
                         RunTopics.add(thisTopic);
                         isThisTopic = true;
+                        
+                        // setup the topic path stuff                        
+                        String currTopicFilePath = AppResource.getInstance().getTopicXmlPathNameByFileID(thisTopic[0], AppResource.sourceLang);
+                        ResourcesManager.getInstance().updateCurrTopicFilePath(currTopicFilePath);
+                        FOLTXTMatcher.getInstance().getCurrFullXmlText();
+                        bytes = FOLTXTMatcher.getInstance().getFullXmlTxt().getBytes();
+                        
                     } else if (tagName.equals("outgoinglinks")  || tagName.equals("outgoing")) {
 //                        isOutgoing = true;
                         anchorsVbyTopic = new Vector<String[]>();
@@ -933,15 +957,25 @@ public class PoolerManager {
                             if (aName.equals("aname") || aName.equals("name")) {
                                 thisAnchorProperty[2] = xsr.getAttributeValue(i);
                             } else if (aName.equals("aoffset") || aName.equals("offset")) {
-                                thisAnchorProperty[0] = xsr.getAttributeValue(i);
+                            	aOffset = Integer.valueOf(xsr.getAttributeValue(i));
+                                
                             } else if (aName.equals("alength") || aName.equals("length")) {
-                                thisAnchorProperty[1] = xsr.getAttributeValue(i);
+                            	aLength = Integer.valueOf(xsr.getAttributeValue(i));
+                                
                             }  else if (xsr.getAttributeLocalName(i).equals("arel")) {
                                 thisAnchorProperty[3] = xsr.getAttributeValue(i);
                             } else if (xsr.getAttributeLocalName(i).equals("ext_length")) {
-                                thisAnchorProperty[4] = xsr.getAttributeValue(i);
+                            	aExtLength = Integer.valueOf(xsr.getAttributeValue(i));
+                                
                             }
+                            
                         }
+                        thisAnchorProperty[0] = String.valueOf(aOffset);
+                        thisAnchorProperty[1] = String.valueOf(aLength);                        
+//                        thisAnchorProperty[0] = String.valueOf(FOLTXTMatcher.byteOffsetToTextOffset(bytes, aOffset));
+//                        thisAnchorProperty[1] = String.valueOf(FOLTXTMatcher.textLength(bytes, aOffset, aLength));
+                        thisAnchorProperty[4] = String.valueOf(FOLTXTMatcher.textLength(bytes, aOffset + aLength, aExtLength));
+                        
                         anchorsVbyTopic.add(thisAnchorProperty);
                         thisAnchorSet = thisAnchorProperty[0] + "_" + thisAnchorProperty[1];
                         subAnchorsToBepsHT = new Hashtable<String, Vector<String[]>>();
@@ -960,15 +994,18 @@ public class PoolerManager {
                         for (int i = 0; i < xsr.getAttributeCount(); i++) {
                         	attrName = xsr.getAttributeLocalName(i);
                             if (attrName.equals("saoffset")) {
-                                thisSubAnchorProperty[0] = xsr.getAttributeValue(i);
+                            	aOffset = Integer.valueOf(xsr.getAttributeValue(i));
                             } else if (attrName.equals("salength")) {
-                                thisSubAnchorProperty[1] = xsr.getAttributeValue(i);
+                            	aLength = Integer.valueOf(xsr.getAttributeValue(i));
                             } else if (attrName.equals("saname")) {
                                 thisSubAnchorProperty[2] = xsr.getAttributeValue(i);
                             } else if (attrName.equals("sarel")) {
                                 thisSubAnchorProperty[3] = xsr.getAttributeValue(i);
                             }
                         }
+                        thisSubAnchorProperty[0] = String.valueOf(FOLTXTMatcher.byteOffsetToTextOffset(bytes, aOffset));
+                        thisSubAnchorProperty[1] = String.valueOf(FOLTXTMatcher.textLength(bytes, aOffset, aLength));                      
+                        
                         subAnchorsVbyTopic.add(thisSubAnchorProperty);
                         thisSubAnchorSet = thisSubAnchorProperty[0] + "_" + thisSubAnchorProperty[1];
                         toBepsVbySubAnchor = new Vector<String[]>();

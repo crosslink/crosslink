@@ -42,7 +42,7 @@ import ltwassessmenttool.listener.linkPaneMouseListener;
 import ltwassessmenttool.listener.topicPaneMouseListener;
 import ltwassessment.parsers.FOLTXTMatcher;
 import ltwassessment.parsers.PoolerManager;
-import ltwassessment.parsers.resourcesManager;
+import ltwassessment.parsers.ResourcesManager;
 import ltwassessment.utility.ObservableSingleton;
 import ltwassessment.utility.fieldUpdateObserver;
 import ltwassessment.utility.highlightPainters;
@@ -91,7 +91,7 @@ public class LTWAssessmentToolView extends FrameView {
     // -------------------------------------------------------------------------
     // Declare External Classes
     private static PoolerManager myPooler;
-    private static resourcesManager rscManager = null;
+    private static ResourcesManager rscManager = null;
     private static highlightPainters painters = new highlightPainters();;
     private static ObservableSingleton os = null;
     private fieldUpdateObserver fuObserver = null;
@@ -216,10 +216,10 @@ public class LTWAssessmentToolView extends FrameView {
         if (wikiCollectionFolder.exists()) {
             log("The Wikipedia Collection is ready.");
         } else {
-        	defaultWikipediaDirectory = resourcesManager.getInstance().getWikipediaCollectionFolder();
+        	defaultWikipediaDirectory = ResourcesManager.getInstance().getWikipediaCollectionFolder();
         	if (!new File(defaultWikipediaDirectory).exists())
         		LTWAssessmentToolApp.getApplication().showCorpusBox();
-        	wikiCollectionFolder = new File(resourcesManager.getInstance().getWikipediaCollectionFolder());
+        	wikiCollectionFolder = new File(ResourcesManager.getInstance().getWikipediaCollectionFolder());
         }
         
         // 0-2) TeAra
@@ -332,8 +332,9 @@ public class LTWAssessmentToolView extends FrameView {
 			JOptionPane.showMessageDialog(LTWAssessmentToolApp.getApplication().getMainFrame(), errMessage);    		
     		return;
     	}
+    	
+        rscManager = ResourcesManager.getInstance();
         myPooler = PoolerManager.getInstance(poolFile);
-        rscManager = resourcesManager.getInstance();
         myPUpdater = myPooler.getPoolUpdater();
         
         topicAnchorsHT = myPooler.getTopicAllAnchors();

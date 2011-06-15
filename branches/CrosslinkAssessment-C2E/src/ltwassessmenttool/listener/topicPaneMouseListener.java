@@ -35,7 +35,7 @@ import ltwassessment.AppResource;
 import ltwassessment.parsers.FOLTXTMatcher;
 import ltwassessment.parsers.Xml2Html;
 import ltwassessment.parsers.PoolerManager;
-import ltwassessment.parsers.resourcesManager;
+import ltwassessment.parsers.ResourcesManager;
 import ltwassessment.utility.ObservableSingleton;
 import ltwassessment.utility.highlightPainters;
 import ltwassessment.utility.PoolUpdater;
@@ -82,7 +82,7 @@ public class topicPaneMouseListener implements MouseInputListener {
     // Import Extenal Classes
     private PoolerManager poolerManager = PoolerManager.getInstance();
     private PoolUpdater pUpdater = poolerManager.getPoolUpdater();
-    private resourcesManager myRSCManager = resourcesManager.getInstance();
+    private ResourcesManager myRSCManager = ResourcesManager.getInstance();
     private FOLTXTMatcher myFOLMatcher = FOLTXTMatcher.getInstance();
     // Declair Highlight Painter
     private highlightPainters painters;

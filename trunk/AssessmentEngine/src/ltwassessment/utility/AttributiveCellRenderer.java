@@ -7,7 +7,7 @@ import java.util.Vector;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableCellRenderer;
 
-import ltwassessment.parsers.resourcesManager;
+import ltwassessment.parsers.ResourcesManager;
 import ltwassessment.utility.ObservableSingleton;
 import ltwassessment.utility.PaneTableIndexing;
 
@@ -33,7 +33,7 @@ public class AttributiveCellRenderer extends DefaultTableCellRenderer {
     private boolean isTABTask = true;
     private boolean isTableClick = false;
     private boolean isTopicPaneOLClick = false;
-    private resourcesManager myRSCManager;
+    private ResourcesManager myRSCManager;
     private PaneTableIndexing myTableIndexing = null;
     private Hashtable<String, String[]> myIndicesByRowKey = null;
     private Vector<String> newTABFieldValues = null;
@@ -52,7 +52,7 @@ public class AttributiveCellRenderer extends DefaultTableCellRenderer {
         this.isTABTask = isTAB;
         this.isTableClick = true;
 
-        this.myRSCManager = resourcesManager.getInstance();
+        this.myRSCManager = ResourcesManager.getInstance();
         this.myTableIndexing = PaneTableIndexing.getInstance();
         this.myIndicesByRowKey = this.myTableIndexing.getRowNAVIndices();
 
@@ -69,7 +69,7 @@ public class AttributiveCellRenderer extends DefaultTableCellRenderer {
         this.isTABTask = isTAB;
         this.isTopicPaneOLClick = true;
 
-        this.myRSCManager = resourcesManager.getInstance();
+        this.myRSCManager = ResourcesManager.getInstance();
         this.myTableIndexing = PaneTableIndexing.getInstance();
         this.myIndicesByRowKey = this.myTableIndexing.getRowNAVIndices();
 
