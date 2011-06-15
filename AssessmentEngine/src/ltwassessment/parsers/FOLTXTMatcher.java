@@ -333,71 +333,62 @@ public class FOLTXTMatcher {
 		return input;
 	}
 	
+	
+	
+	public static int textLength(byte[] bytes, int byteOffset, int length) {
+		byte[] newBytes = new byte[length];
+		System.arraycopy(bytes, byteOffset, newBytes, 0, length);
+		String source = null;
+		try {
+			source = new String(newBytes, "UTF-8");
+		} catch (UnsupportedEncodingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return source.length();
+	}
+	
+	public static int byteOffsetToTextOffset(byte[] bytes, int byteOffset) {
+		return textLength(bytes, 0, byteOffset);
+	}
+	
     private String[] screenOffsetLengthFinder(String fullScreenTxt, String fullXmlTxt, String[] thisAnchorXmlOLName) {
-    	String[] myScreenPosition = new String[3];
+    	String[] myScreenPosition = new String[4];
         
 		int aOffset = Integer.valueOf(thisAnchorXmlOLName[0]);
 		int aLength = Integer.valueOf(thisAnchorXmlOLName[1]);
 
     	byte[] bytes = fullXmlTxt.getBytes();
 //    	int len = bytes.length - aOffset;
-    	byte[] newBytes = new byte[aOffset];
-    	byte[] nameBytes = new byte[aLength];
+    	
+    	int textOffset = byteOffsetToTextOffset(bytes, aOffset);
+    	int anchorTextLength = textLength(bytes, aOffset, aLength);
 
-    	System.arraycopy(bytes, aOffset, nameBytes, 0, aLength);
-    	System.arraycopy(bytes, 0, newBytes, 0, aOffset);
-    	String source = "";
-    	String aName = "";
-    	try {
-    		aName = new String(nameBytes, "UTF-8");
-    		source = new String(newBytes, "UTF-8");
-		} catch (UnsupportedEncodingException e) {
-			e.printStackTrace();
-		}
-//		String aName = "";
-//		
-//		if (AppResource.sourceLang.equals("en"))
-//			fullXmlTxt.substring(aOffset, aOffset + aLength); //thisAnchorXmlOLName[2];
-//		else { // Unicode
-//			
-//		}
-		
+    	String aName = fullXmlTxt.substring(textOffset, textOffset + anchorTextLength);
+
     	try {
 	        myScreenPosition[0] = ""; //String.valueOf(aName);
 	        myScreenPosition[1] = String.valueOf(0);
 	        myScreenPosition[2] = String.valueOf(0);
 	
-	        int offset = Integer.parseInt(screenBepOffsetFinder(fullScreenTxt, fullXmlTxt, Integer.toString(source.length())));
+	        int offset = Integer.parseInt(screenBepOffsetFinder(fullScreenTxt, fullXmlTxt, Integer.toString(textOffset)));
 	//        if (Character.isWhitespace(fullScreenTxt.charAt(offset))) {
 	//	        while (Character.isWhitespace(fullScreenTxt.charAt(offset)))
 	//	        	--offset;
 	//	        ++offset;
 	//        }
 	        myScreenPosition[1] = String.valueOf(offset);
-	        myScreenPosition[2] = String.valueOf(offset + aName.length());
+	        myScreenPosition[2] = String.valueOf(offset + anchorTextLength);
 	        myScreenPosition[0] = fullScreenTxt.substring(offset, offset + aName.length());
+//	        myScreenPosition[3] = String.valueOf(anchorTextExtLength);
     	}
     	catch (InvalidOffsetException ioe) {
     		ValidationMessage.getInstance().append("Invalid offset " + aOffset + " for anchor " + aName);
+    		ioe.printStackTrace();
     	}
     	catch (Exception ex){
     		ex.printStackTrace();
     	}
-//		
-//		myScreenPosition[0] = fullScreenTxt.substring(Integer.valueOf(myScreenPosition[1]), Integer.valueOf(myScreenPosition[1]) + aLength);
-//		{
-//			Vector<Integer> offsets = new Vector<Integer>();
-//			while ((pos = fullScreenTxt.indexOf(aName, pos)) > 0) {
-//				offsets.add(pos);
-//				pos += aName.length();
-//			}
-//			
-//			if (offsets.size() == 1) {
-//		        myScreenPosition[0] = String.valueOf(aName);
-//		        myScreenPosition[1] = String.valueOf(offsets.get(0));
-//		        myScreenPosition[2] = String.valueOf(offsets.get(0) + aName.length());
-//			}
-//		}
 
     	return myScreenPosition;
     }
@@ -523,23 +514,17 @@ public class FOLTXTMatcher {
 //    }
     // =========================================================================
 
-    private void getCurrFullXmlText() {
+    public void getCurrFullXmlText() {
 //        this.isTopicWikipedia = Boolean.valueOf(System.getProperty(sysPropertyIsTopicWikiKey));
         String xmlFilePath = getCurrentTopicFilePath();
         String targetFilePath = "";
-//        if (this.isTopicWikipedia) {
+
             if (xmlFilePath.lastIndexOf(File.separator) >= 0){
                 targetFilePath = this.tempFileDir + xmlFilePath.substring(xmlFilePath.lastIndexOf(File.separator), xmlFilePath.lastIndexOf(".xml")) + "_pureTxt.txt";
             } else if (xmlFilePath.lastIndexOf(File.separator) >= 0) {
                 targetFilePath = this.tempFileDir + xmlFilePath.substring(xmlFilePath.lastIndexOf(File.separator), xmlFilePath.lastIndexOf(".xml")) + "_pureTxt.txt";
             }
-//        } else {
-//            if (xmlFilePath.lastIndexOf(File.separator) >= 0){
-//                targetFilePath = this.tempFileDir + xmlFilePath.substring(xmlFilePath.lastIndexOf(File.separator), xmlFilePath.lastIndexOf(".xml")) + "_pureTxt.txt";
-//            } else if (xmlFilePath.lastIndexOf(File.separator) >= 0) {
-//                targetFilePath = this.tempFileDir + xmlFilePath.substring(xmlFilePath.lastIndexOf(File.separator), xmlFilePath.lastIndexOf(".xml")) + "_pureTxt.txt";
-//            }
-//        }
+
         String wikipediaTxt = ConvertXMLtoTXT(xmlFilePath, targetFilePath);
         fullXmlTxt = wikipediaTxt;
         for (int i = 0; i < wikipediaTxt.length(); i++) {
@@ -601,7 +586,6 @@ public class FOLTXTMatcher {
     }
 
     public Vector<String[]> getSCRAnchorPosV(JTextPane textPane, String currTopicID, Hashtable<String, Vector<String[]>> topicAnchorsHT) {
-        getCurrFullXmlText();
         // "outgoing : " + thisTopicFile, anchorsVbyTopic
         // Offset : Length : Anchor_Name : scrOffset : scrLength
         // record into toolResource.xml
@@ -633,7 +617,7 @@ public class FOLTXTMatcher {
 //        	if (result) {
 	            String[] scrFOL = screenOffsetLengthFinder(fullScreenText, fullXmlTxt, thisAnchorSet);
 	            screenAnchorPos.add(scrFOL);
-	            anchorSetV.add(thisAnchorSet[0] + " : " + thisAnchorSet[1] + " : " + thisAnchorSet[2] + " : " + scrFOL[1] + " : " + scrFOL[2]  + " : " + thisAnchorSet[4]);
+	            anchorSetV.add(thisAnchorSet[0] + " : " + thisAnchorSet[1] + " : " + thisAnchorSet[2] + " : " + scrFOL[1] + " : " + scrFOL[2]  + " : " +  scrFOL[3]);
 //        	}
         }
         // ============================

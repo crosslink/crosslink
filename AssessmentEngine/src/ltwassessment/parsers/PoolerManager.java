@@ -725,7 +725,9 @@ public class PoolerManager {
         String offsetAttributeName = forValidationOrAssessment ? "aoffset" : "offset";
         String lengthAttributeName = forValidationOrAssessment ? "alength" : "length";
         String tboffsetAttributeName = forValidationOrAssessment ? "tboffset" : "bep_offset";
-
+        
+        byte[] bytes = FOLTXTMatcher.getInstance().getFullXmlTxt().getBytes();
+        
         HashMap<String, Vector<String[]>> anchorBepsHT = new HashMap<String, Vector<String[]>>();
         Document xmlDoc = readingXMLFromFile(afXmlPath);
 
@@ -744,11 +746,16 @@ public class PoolerManager {
                     Vector<String[]> anchorToBEPV;
                     for (int k = 0; k < anchorNodeList.getLength(); k++) {
                         Element anchorElmn = (Element) anchorNodeList.item(k);
-                        String aOffset = anchorElmn.getAttribute( offsetAttributeName);
-                        String aLength = anchorElmn.getAttribute(lengthAttributeName);
                         String anchorName = anchorElmn.getAttribute("name");
-                        String aExtLength = anchorElmn.getAttribute("ext_length");
+
+                		int aExtLength = Integer.valueOf(anchorElmn.getAttribute("ext_length"));
+                		int aOffset = Integer.valueOf(anchorElmn.getAttribute(offsetAttributeName));
+                		int aLength = Integer.valueOf(anchorElmn.getAttribute(lengthAttributeName));
                         	
+                        String aOffsetStr = String.valueOf(FOLTXTMatcher.byteOffsetToTextOffset(bytes, aOffset));;
+                        String aLengthStr =  String.valueOf(FOLTXTMatcher.textLength(bytes, aOffset, aLength));;
+                        String aExtLengthStr = String.valueOf(FOLTXTMatcher.textLength(bytes, aOffset + aLength, aExtLength));
+                    	
                         anchorToBEPV = new Vector<String[]>();
                         if (forValidationOrAssessment) {
                         	anchorKey = aOffset + "_" + aLength;
