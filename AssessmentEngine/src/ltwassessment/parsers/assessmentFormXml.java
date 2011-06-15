@@ -32,7 +32,7 @@ import javax.xml.validation.Validator;
 import ltwassessment.AppResource;
 import ltwassessment.utility.toolErrorHandler;
 import ltwassessment.parsers.assessmentFormXml;
-import ltwassessment.parsers.resourcesManager;
+import ltwassessment.parsers.ResourcesManager;
 
 import org.xml.sax.ErrorHandler;
 import org.xml.sax.SAXException;
@@ -748,7 +748,7 @@ public class assessmentFormXml {
             // -----------------------------------------------------------------
             xmlAssessXmlFileName = AFXmlFile;
             // Update Tool Resource XML --> targetFile
-            resourcesManager.getInstance().updateAFXmlFile(AFXmlFile);
+            ResourcesManager.getInstance().updateAFXmlFile(AFXmlFile);
             // -----------------------------------------------------------------
             // 2) create XML writer
             out = new FileOutputStream(AFXmlFile);

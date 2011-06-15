@@ -30,7 +30,7 @@ import ltwassessment.AppResource;
 import ltwassessment.Assessment;
 import ltwassessment.parsers.FOLTXTMatcher;
 import ltwassessment.parsers.PoolerManager;
-import ltwassessment.parsers.resourcesManager;
+import ltwassessment.parsers.ResourcesManager;
 import ltwassessment.submission.Anchor;
 import ltwassessment.validation.InvalidOffsetException;
 import ltwassessment.validation.ValidationMessage;
@@ -50,7 +50,7 @@ public class FOLTXTMatcher {
     private final String sysPropertyKey = "isTABKey";
     private final String sysPropertyIsTopicWikiKey = "isTopicWikipedia";
     private final String sysPropertyIsLinkWikiKey = "isLinkWikipedia";
-    private resourcesManager myRSCManager;
+    private ResourcesManager myRSCManager;
     private PoolerManager myPooler;
     private Vector<String> xmlSingleCharV = new Vector<String>();
     private String wikipediaTopicFileDir = "";
@@ -78,7 +78,7 @@ public class FOLTXTMatcher {
 
     public FOLTXTMatcher() {
 
-        this.myRSCManager = resourcesManager.getInstance();
+        this.myRSCManager = ResourcesManager.getInstance();
         this.myPooler = PoolerManager.getInstance();
 
         //org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(ltwassessment.ltwassessmentApp.class).getContext().getResourceMap(ltwassessmentView.class);
@@ -581,8 +581,7 @@ public class FOLTXTMatcher {
     }
 
     private String getCurrentTopicFilePath() {
-        String topicXmlPath = "";
-        return topicXmlPath = myRSCManager.getCurrTopicXmlFile();
+        return myRSCManager.getCurrTopicXmlFile();
     }
 
     public Vector<String[]> getSCRAnchorPosV(JTextPane textPane, String currTopicID, Hashtable<String, Vector<String[]>> topicAnchorsHT) {
@@ -616,8 +615,9 @@ public class FOLTXTMatcher {
 //        	
 //        	if (result) {
 	            String[] scrFOL = screenOffsetLengthFinder(fullScreenText, fullXmlTxt, thisAnchorSet);
+        		scrFOL[3] = thisAnchorSet[4];
 	            screenAnchorPos.add(scrFOL);
-	            anchorSetV.add(thisAnchorSet[0] + " : " + thisAnchorSet[1] + " : " + thisAnchorSet[2] + " : " + scrFOL[1] + " : " + scrFOL[2]  + " : " +  scrFOL[3]);
+	            anchorSetV.add(thisAnchorSet[0] + " : " + thisAnchorSet[1] + " : " + thisAnchorSet[2] + " : " + scrFOL[1] + " : " + scrFOL[2]  + " : " +  thisAnchorSet[4]);
 //        	}
         }
         // ============================

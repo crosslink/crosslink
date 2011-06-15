@@ -8,7 +8,7 @@ import java.util.Vector;
 import ltwassessment.AppResource;
 import ltwassessment.parsers.FOLTXTMatcher;
 import ltwassessment.parsers.PoolerManager;
-import ltwassessment.parsers.resourcesManager;
+import ltwassessment.parsers.ResourcesManager;
 
 /**
  * @author Darren HUANG
@@ -17,7 +17,7 @@ public class PaneTableIndexing {
     // External Classes
 
     private PoolerManager myRunsPooler;
-    private resourcesManager myRSCManager;
+    private ResourcesManager myRSCManager;
     private FOLTXTMatcher myFOLMatcher;
     // Global Variables
     private String wikipediaCollTitle = "";
@@ -64,7 +64,7 @@ public class PaneTableIndexing {
 //        this.teAraCollTitle = AppResource.getInstance().getResourceMap().getString("collectionType.TeAra");
         // ---------------------------------------------------------------------
 
-        this.myRSCManager = resourcesManager.getInstance();
+        this.myRSCManager = ResourcesManager.getInstance();
         this.myFOLMatcher = FOLTXTMatcher.getInstance();
 
         // ---------------------------------------------------------------------

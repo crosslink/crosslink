@@ -19,7 +19,7 @@ import ltwassessment.AppResource;
 import ltwassessment.parsers.FOLTXTMatcher;
 import ltwassessment.parsers.Xml2Html;
 import ltwassessment.parsers.PoolerManager;
-import ltwassessment.parsers.resourcesManager;
+import ltwassessment.parsers.ResourcesManager;
 import ltwassessment.utility.highlightPainters;
 import ltwassessment.utility.tabTxtPaneManager;
 
@@ -30,7 +30,7 @@ public class tbaTxtPaneManager {
 
     protected final int bepLength = 4;
     private PoolerManager myRunsPooler;
-    private resourcesManager myRSCManager;
+    private ResourcesManager myRSCManager;
     private FOLTXTMatcher myFOLMatcher;
     private String wikipediaCollTitle = "";
     private String teAraCollTitle = "";
@@ -68,7 +68,7 @@ public class tbaTxtPaneManager {
         this.topicBepsHTPrefix = AppResource.getInstance().getResourceMap().getString("topicBepsHT.Prefix");
 
         this.myRunsPooler = PoolerManager.getInstance();
-        this.myRSCManager = resourcesManager.getInstance();
+        this.myRSCManager = ResourcesManager.getInstance();
         this.myFOLMatcher = FOLTXTMatcher.getInstance();
 
         this.painters = new highlightPainters();

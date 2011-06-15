@@ -7,7 +7,7 @@ import javax.swing.table.DefaultTableModel;
 import ltwassessment.AppResource;
 import ltwassessment.parsers.FOLTXTMatcher;
 import ltwassessment.parsers.PoolerManager;
-import ltwassessment.parsers.resourcesManager;
+import ltwassessment.parsers.ResourcesManager;
 import ltwassessment.utility.TABInteractiveTableModel;
 import ltwassessment.utility.TBAInteractiveTableModel;
 import ltwassessment.utility.PaneTableIndexing;
@@ -24,7 +24,7 @@ public class PaneTableManager {
     private Vector<String[]> paneTableValueSetV;
     // import external Classes
     private PoolerManager myRunsPooler;
-    private resourcesManager myRSCManager;
+    private ResourcesManager myRSCManager;
     private FOLTXTMatcher myFOLMatcher;
     private PaneTableIndexing myTableIndexing;
 
@@ -39,7 +39,7 @@ public class PaneTableManager {
         teAraCollTitle = AppResource.getInstance().getResourceMap().getString("collectionType.TeAra");
         // ---------------------------------------------------------------------
         this.myRunsPooler = PoolerManager.getInstance();
-        this.myRSCManager = resourcesManager.getInstance();
+        this.myRSCManager = ResourcesManager.getInstance();
         this.myFOLMatcher = FOLTXTMatcher.getInstance();
         this.myTableIndexing = tabIndexing;
     }
