@@ -5,7 +5,7 @@ import javax.swing.JFileChooser;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
-import ltwassessment.parsers.resourcesManager;
+import ltwassessment.parsers.ResourcesManager;
 
 import org.jdesktop.application.Action;
 
@@ -16,13 +16,13 @@ import org.jdesktop.application.Action;
  */
 public class LTWAssessmentToolCorpusBox extends javax.swing.JDialog {
 
-    resourcesManager toolRscManager = null;
+    ResourcesManager toolRscManager = null;
 //    private JLabel jLableCollection = null;
 
     public LTWAssessmentToolCorpusBox(java.awt.Frame parent) {
         super(parent, true);
         initComponents();
-        toolRscManager = resourcesManager.getInstance();
+        toolRscManager = ResourcesManager.getInstance();
         getRootPane().setDefaultButton(OkBtn);
 
         String currWikipediaCollDir = this.toolRscManager.getWikipediaCollectionFolder();
