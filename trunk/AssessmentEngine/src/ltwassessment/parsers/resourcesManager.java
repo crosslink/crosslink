@@ -2038,7 +2038,7 @@ public class resourcesManager {
         String subAnchorLength = null;
         String subAnchorRel = null;
         subAnchorName = currBepSA[5];
-        subAnchorOffset = currBepSA[6];
+        subAnchorOffset = currBepSA[6]
         subAnchorLength = currBepSA[7];
         subAnchorRel = currBepSA[8];
         return /*currTopicABepIDO = */new String[]{bepOffset, bepFileID, bepLang, bepTitle, subAnchorName, subAnchorOffset, subAnchorLength, subAnchorRel};
