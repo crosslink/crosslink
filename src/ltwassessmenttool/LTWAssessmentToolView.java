@@ -303,23 +303,21 @@ public class LTWAssessmentToolView extends FrameView {
     	rscManager.updateTopicID(currTopicID + ":" + topicLang);
     	rscManager.updateCurrTopicFilePath(currTopicFilePath);
     	rscManager.updateCurrAnchorFOL(null);
-    	
+    }
+    
+    private void setupTopic() {
+        currTopicFilePath = rscManager.getCurrTopicXmlFile();
+		//      currTopicName = new WikiArticleXml(currTopicFilePath).getTitle();
+		String topicLang = rscManager.getTopicLang();
+		setTopicPaneContent(currTopicFilePath, topicLang);
+		FOLTXTMatcher.getInstance().getCurrFullXmlText();
+    	    	
     	FOLTXTMatcher.getInstance().getSCRAnchorPosV(thisTopicTextPane, currTopicID, topicAnchorsHT);
     	Vector<String> topicAnchorsOLNameSEVS = rscManager.getTopicAnchorsOLNameSEV();
         int completedAnchor = 0;
 		//      int totoalAnchorNumber = Integer.valueOf(tabCompletedRatio[1]);
 		
-		//String[] tabCompletedRatioRecorded = this.rscManager.getOutgoingCompletion();
-//		int completedAnchorRecorded = 0; //Integer.valueOf(tabCompletedRatioRecorded[0]);
 		int totoalAnchorNumberRecored = topicAnchorsOLNameSEVS.size();
-		
-//		for (int i = 0; i < totoalAnchorNumberRecored; ++i)
-//			if ()
-		
-//		if (completedAnchor >= totoalAnchorNumberRecored)
-//			completedAnchorRecorded = totoalAnchorNumberRecored;
-//		else
-//			completedAnchorRecorded = completedAnchor;
 		
 		this.rscManager.updateOutgoingCompletion(String.valueOf(completedAnchor) + " : " + String.valueOf(totoalAnchorNumberRecored));
     }
@@ -353,7 +351,8 @@ public class LTWAssessmentToolView extends FrameView {
 		        resetResouceTopic(topicLang);
 	        }
         }
-                
+
+        setupTopic();        
         setupComponentFont();
         
         Assessment.getInstance().setCurrentTopicWithId(currTopicID);
