@@ -1003,8 +1003,10 @@ public class PoolerManager {
                                 thisSubAnchorProperty[3] = xsr.getAttributeValue(i);
                             }
                         }
-                        thisSubAnchorProperty[0] = String.valueOf(FOLTXTMatcher.byteOffsetToTextOffset(bytes, aOffset));
-                        thisSubAnchorProperty[1] = String.valueOf(FOLTXTMatcher.textLength(bytes, aOffset, aLength));                      
+//                        thisSubAnchorProperty[0] = String.valueOf(FOLTXTMatcher.byteOffsetToTextOffset(bytes, aOffset));
+//                        thisSubAnchorProperty[1] = String.valueOf(FOLTXTMatcher.textLength(bytes, aOffset, aLength)); 
+                        thisSubAnchorProperty[0] = String.valueOf(aOffset);
+                        thisSubAnchorProperty[1] = String.valueOf(aLength);                          
                         
                         subAnchorsVbyTopic.add(thisSubAnchorProperty);
                         thisSubAnchorSet = thisSubAnchorProperty[0] + "_" + thisSubAnchorProperty[1];
