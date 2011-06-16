@@ -225,7 +225,7 @@ public class Run {
 	    	Map.Entry me = (Map.Entry)i.next();
 	    	Topic topic = (Topic)me.getValue();
 	    	
-	    	topic.validateIt(showMessage);
+	    	topic.validateIt(showMessage, this.convertToTextOffset);
 	    }
 	}
 }

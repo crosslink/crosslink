@@ -975,7 +975,8 @@ public class PoolerManager {
                             
                         }
                         thisAnchorProperty[0] = String.valueOf(aOffset);
-                        thisAnchorProperty[1] = String.valueOf(aLength);                        
+                        thisAnchorProperty[1] = String.valueOf(aLength); 
+                        thisAnchorProperty[4] = String.valueOf(aExtLength);
 //                        thisAnchorProperty[0] = String.valueOf(FOLTXTMatcher.byteOffsetToTextOffset(bytes, aOffset));
 //                        thisAnchorProperty[1] = String.valueOf(FOLTXTMatcher.textLength(bytes, aOffset, aLength));
 //                        thisAnchorProperty[4] = String.valueOf(FOLTXTMatcher.textLength(bytes, aOffset + aLength, aExtLength));
