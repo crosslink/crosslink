@@ -292,44 +292,50 @@ public class ResourcesManager {
     private void updateElementList(String childTagName, String subChildTagName, Vector<String> list) {
         Document doc = readingXMLFromFile(resourceXMLFile);
         NodeList titleNodeList = doc.getElementsByTagName(afTitleTag);
-        Vector<String> filterElementsV = new Vector<String>();
+//        Vector<String> filterElementsV = new Vector<String>();
         for (int i = 0; i < titleNodeList.getLength(); i++) {
             Element titleElmn = (Element) titleNodeList.item(i);
             NodeList subNodeList = titleElmn.getElementsByTagName(childTagName);
-
-            Element subElmn = null;
-            if (subNodeList.getLength() > 0) {
-	            Node subNode = subNodeList.item(0);
-	            subElmn = (Element) subNode;
-	            NodeList subElmnNodes = subElmn.getChildNodes();
-
-	            for (int j = 0; j < subElmnNodes.getLength(); j++) {
-	                Node subElmnNode = subElmnNodes.item(j);
-	                
-//	                if (list == null)
-	                	subElmn.removeChild(subElmnNode);
-//	                else
-//		                if (subElmnNode.getNodeType() == Node.ELEMENT_NODE) {
-//		                    String thisSElmnNode = subElmnNodes.item(j).getNodeName();
-//		                    if (!filterElementsV.contains(thisSElmnNode)) {
-//		                        filterElementsV.add(thisSElmnNode);
-//		                    }
-//		                }
-	            }
-	            
-	            // Remove These Elements
-//	            for (String thisElmn : filterElementsV) {
-//	                filterElements(doc, thisElmn);
-//	            }
+            Node childNode = null;
+            
+            for (int j = 0; j < subNodeList.getLength(); j++) {
+            	childNode = subNodeList.item(j);
+	            childNode.getParentNode().removeChild(childNode);
             }
-            else {
+            Element subElmn = null;
+//            if (subNodeList.getLength() > 0) {
+//	            Node subNode = subNodeList.item(0);
+//	            subElmn = (Element) subNode;
+//	            NodeList subElmnNodes = subElmn.getChildNodes();
+//
+//	            for (int j = 0; j < subElmnNodes.getLength(); j++) {
+//	                Node subElmnNode = subElmnNodes.item(j);
+//	                
+////	                if (list == null)
+//	                	subElmn.removeChild(subElmnNode);
+////	                else
+////		                if (subElmnNode.getNodeType() == Node.ELEMENT_NODE) {
+////		                    String thisSElmnNode = subElmnNodes.item(j).getNodeName();
+////		                    if (!filterElementsV.contains(thisSElmnNode)) {
+////		                        filterElementsV.add(thisSElmnNode);
+////		                    }
+////		                }
+//	            }
+//	            
+//	            // Remove These Elements
+////	            for (String thisElmn : filterElementsV) {
+////	                filterElements(doc, thisElmn);
+////	            }
+//            }
+//            else {
+            
                 subElmn = (Element) doc.createElement(childTagName);
                 titleElmn.appendChild(subElmn);
-            }
+//            }
             if (list != null)
                 for (int j = 0; j < list.size(); j++) {
                     String thisAnchorList = list.elementAt(j);
-                    Element newElmn = (Element) doc.createElement(subChildTagName/* + (j + 1)*/);
+                    Element newElmn = (Element) doc.createElement(subChildTagName + (j + 1));
                     subElmn.appendChild(newElmn);
                     newElmn.appendChild(doc.createTextNode(thisAnchorList));
                 }
