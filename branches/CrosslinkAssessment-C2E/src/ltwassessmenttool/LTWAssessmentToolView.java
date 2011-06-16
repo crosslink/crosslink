@@ -59,12 +59,7 @@ public class LTWAssessmentToolView extends FrameView {
     // -------------------------------------------------------------------------
     // constant variables
     protected final static int bepLength = 4;
-    private final static String sysPropertyIsTABKey = "isTABKey";
-    private final static String sysPropertyIsTopicWikiKey = "isTopicWikipedia";
-    private final static String sysPropertyIsLinkWikiKey = "isLinkWikipedia";
-    private final static String sysPropertyTABCompletedRatioKey = "tabCompletedRatio";
-    private final static String sysPropertyTBACompletedRatioKey = "tbaCompletedRatio";
-    private final static String sysPropertyCurrTopicOLSEStatusKey = "currTopicOLSE";
+
     private static ResourceMap resourceMap;
     private static String textContentType = "";
 //    private String wikipediaTopicFileDir = "";
@@ -207,8 +202,8 @@ public class LTWAssessmentToolView extends FrameView {
         // For Link-the-Wikipedia A2B
         this.isTopicWikipedia = true;
         this.isLinkWikipedia = true;
-        System.setProperty(sysPropertyIsTopicWikiKey, "true");
-        System.setProperty(sysPropertyIsLinkWikiKey, "true");
+        System.setProperty(LTWAssessmentToolControler.sysPropertyIsTopicWikiKey, "true");
+        System.setProperty(LTWAssessmentToolControler.sysPropertyIsLinkWikiKey, "true");
         // =====================================================================
         // 0) Check Pool and Corpus are ready
         // 0-1) Wikipedia
@@ -984,8 +979,7 @@ public class LTWAssessmentToolView extends FrameView {
             }
             
             // update System Property
-            String sysPropertyValue = scrAnchor.getOffset() + "_" + scrAnchor.getLength() + "_" + scrAnchor.getScreenPosStart() + "_" + scrAnchor.getScreenPosEnd() + "_" + scrAnchor.getStatus() + "_" + scrAnchor.getExtLength();
-            System.setProperty(sysPropertyCurrTopicOLSEStatusKey, sysPropertyValue);
+            LTWAssessmentToolControler.setCurrentAnchorProperty(String.valueOf(scrAnchor.getOffset()), String.valueOf(scrAnchor.getLength()), scrAnchor.getScreenPosStart(), scrAnchor.getScreenPosEnd(), scrAnchor.getStatus(), String.valueOf(scrAnchor.getExtLength()));
         }
     }
     
@@ -997,7 +991,7 @@ public class LTWAssessmentToolView extends FrameView {
         if (bepXmlFilePath.startsWith(afTasnCollectionErrors)) {
             bepXmlFilePath = rscManager.getErrorXmlFilePath(bepXmlFilePath);
         }
-        Xml2Html xmlParser = new Xml2Html(bepXmlFilePath, Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey)));
+        Xml2Html xmlParser = new Xml2Html(bepXmlFilePath, Boolean.valueOf(System.getProperty(LTWAssessmentToolControler.sysPropertyIsLinkWikiKey)));
         String xmlHtmlText = xmlParser.getHtmlContent().toString();
         linkTextPane.setContentType(textContentType);
         linkTextPane.setText(xmlHtmlText);
@@ -1054,7 +1048,7 @@ public class LTWAssessmentToolView extends FrameView {
 //        if (isTABOutgoing) {
             // <editor-fold defaultstate="collapsed" desc="Update TAB Topic, Link">
             // =================================================================
-            String currTopicOLSEStatus = System.getProperty(sysPropertyCurrTopicOLSEStatusKey);
+            String currTopicOLSEStatus = System.getProperty(LTWAssessmentToolControler.sysPropertyCurrTopicOLSEStatusKey);
             String[] currTopicOLSEStatusSA = currTopicOLSEStatus.split("_");
             String currPAnchorO = currTopicOLSEStatusSA[0];
             String currPAnchorL = currTopicOLSEStatusSA[1];
@@ -1085,7 +1079,7 @@ public class LTWAssessmentToolView extends FrameView {
 //        boolean isTABOutgoing = Boolean.valueOf(System.getProperty(sysPropertyIsTABKey));
 //        if (isTABOutgoing) {
             // <editor-fold defaultstate="collapsed" desc="Update TAB Topic, Link">
-            String currTopicOLSEStatus = System.getProperty(sysPropertyCurrTopicOLSEStatusKey);
+            String currTopicOLSEStatus = System.getProperty(LTWAssessmentToolControler.sysPropertyCurrTopicOLSEStatusKey);
             String[] currTopicOLSEStatusSA = currTopicOLSEStatus.split("_");
             String currPAnchorO = currTopicOLSEStatusSA[0];
             String currPAnchorL = currTopicOLSEStatusSA[1];
@@ -1216,7 +1210,7 @@ public class LTWAssessmentToolView extends FrameView {
         // 2) --> Check AnchorOL Status
         // 3) highlight Topic Pane Anchors
         // 4) indciate CURRENT Topic Anchor Text & Target Link
-        System.setProperty(sysPropertyIsTABKey, "true");
+        System.setProperty(LTWAssessmentToolControler.sysPropertyIsTABKey, "true");
         rscManager.updateLinkingMode("outgoing");
         // ---------------------------------------------------------------------
         // Get Pool Properties
@@ -1247,7 +1241,7 @@ public class LTWAssessmentToolView extends FrameView {
         }     
         String[] tabCompletedRatio = this.rscManager.getTABCompletedRatio();
         this.rscManager.updateOutgoingCompletion(tabCompletedRatio[0] + " : " + tabCompletedRatio[1]);
-        System.setProperty(sysPropertyTABCompletedRatioKey, String.valueOf(tabCompletedRatio[0]) + "_" + String.valueOf(tabCompletedRatio[1]));
+        System.setProperty(LTWAssessmentToolControler.sysPropertyTABCompletedRatioKey, String.valueOf(tabCompletedRatio[0]) + "_" + String.valueOf(tabCompletedRatio[1]));
         // ---------------------------------------------------------------------
         
         // String[]{Anchor_O, L, SP, EP, Status}
@@ -1294,8 +1288,9 @@ public class LTWAssessmentToolView extends FrameView {
         String[] CurrTopicATargetSIDStatus = rscManager.getCurrTopicABepSIDStatusSA(thisLinkTextPane, currTopicID);
         setLinkBEPIcon(currTopicPAnchorStatus, CurrTopicATargetSIDStatus);
         // ---------------------------------------------------------------------
-        String currTopicOLSEStatusKey = currTopicOLNameSEStatus[0] + "_" + currTopicOLNameSEStatus[1] + "_" + currTopicOLNameSEStatus[3] + "_" + currTopicOLNameSEStatus[4] + "_" + currTopicOLNameSEStatus[5] + "_" + currTopicOLNameSEStatus[6];
-        System.setProperty(sysPropertyCurrTopicOLSEStatusKey, currTopicOLSEStatusKey);
+        LTWAssessmentToolControler.setCurrentAnchorProperty(currTopicOLNameSEStatus[0], currTopicOLNameSEStatus[1], currTopicOLNameSEStatus[3], currTopicOLNameSEStatus[4], currTopicOLNameSEStatus[5], currTopicOLNameSEStatus[6]);
+//        String currTopicOLSEStatusKey = currTopicOLNameSEStatus[0] + "_" + currTopicOLNameSEStatus[1] + "_" + currTopicOLNameSEStatus[3] + "_" + currTopicOLNameSEStatus[4] + "_" + currTopicOLNameSEStatus[5] + "_" + currTopicOLNameSEStatus[6];
+//        System.setProperty(sysPropertyCurrTopicOLSEStatusKey, currTopicOLSEStatusKey);
         // ---------------------------------------------------------------------
         String currAnchorName = myPooler.getPoolAnchorNameByOL(currTopicID, new String[]{currTopicOLNameSEStatus[0], currTopicOLNameSEStatus[1]});
         Vector<String> newTABFieldValues = new Vector<String>();

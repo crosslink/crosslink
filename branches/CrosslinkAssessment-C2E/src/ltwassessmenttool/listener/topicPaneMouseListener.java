@@ -50,11 +50,6 @@ public class topicPaneMouseListener implements MouseInputListener {
     // Constant Variables
     protected final int bepLength = 4;
     private final String sysPropertyKey = "isTABKey";
-    private final String sysPropertyIsTopicWikiKey = "isTopicWikipedia";
-    private final String sysPropertyIsLinkWikiKey = "isLinkWikipedia";
-    private final String sysPropertyTABCompletedRatioKey = "tabCompletedRatio";
-    private final String sysPropertyTBACompletedRatioKey = "tbaCompletedRatio";
-    private final String sysPropertyCurrTopicOLSEStatusKey = "currTopicOLSE";
     private String preTHyperOLSEStatus = "";
     private String paneContentType = "";
     private JTextPane topicTextPane;
@@ -224,7 +219,7 @@ public class topicPaneMouseListener implements MouseInputListener {
                 this.topicTextPane.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
                 // -------------------------------------------------------------
                 // Get CURR Topic OLSEStatus before we go to NEXT Pool Anchor
-                this.preTHyperOLSEStatus = System.getProperty(sysPropertyCurrTopicOLSEStatusKey);
+                this.preTHyperOLSEStatus = System.getProperty(LTWAssessmentToolControler.sysPropertyCurrTopicOLSEStatusKey);
                 // -------------------------------------------------------------
                 // 1) Highlight Anchor/BEP + Auto Scrolling
                 String currAnchorO = currSCRSEName[4];
@@ -293,7 +288,7 @@ public class topicPaneMouseListener implements MouseInputListener {
             if (withinTarget) {
                 logger("rightTopicAnchorClickToggle" + "_" + currSCRSEName[0] + "_" + currSCRSEName[1]);
 
-                this.preTHyperOLSEStatus = System.getProperty(sysPropertyCurrTopicOLSEStatusKey);
+                this.preTHyperOLSEStatus = System.getProperty(LTWAssessmentToolControler.sysPropertyCurrTopicOLSEStatusKey);
                 this.topicTextPane.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
                 // 1) Check the Status of the Anchor
                 // 2) Toggle the Anchor/BEP Highlight - Selected/NONRelevant
@@ -352,7 +347,7 @@ public class topicPaneMouseListener implements MouseInputListener {
         if (bepXmlFilePath.startsWith(afTasnCollectionErrors)) {
             bepXmlFilePath = myRSCManager.getErrorXmlFilePath(bepXmlFilePath);
         }
-        Xml2Html xmlParser = new Xml2Html(bepXmlFilePath, Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey)));
+        Xml2Html xmlParser = new Xml2Html(bepXmlFilePath, Boolean.valueOf(System.getProperty(LTWAssessmentToolControler.sysPropertyIsLinkWikiKey)));
         String xmlHtmlText = xmlParser.getHtmlContent().toString();
         this.linkTextPane.setContentType(paneContentType);
         this.linkTextPane.setText(xmlHtmlText);
@@ -372,7 +367,7 @@ public class topicPaneMouseListener implements MouseInputListener {
                 if (unAssLinkFPath.startsWith(afTasnCollectionErrors)) {
                     unAssLinkFPath = myRSCManager.getErrorXmlFilePath(unAssLinkFPath);
                 }
-                Xml2Html unAssXmlParser = new Xml2Html(unAssLinkFPath, Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey)));
+                Xml2Html unAssXmlParser = new Xml2Html(unAssLinkFPath, Boolean.valueOf(System.getProperty(LTWAssessmentToolControler.sysPropertyIsLinkWikiKey)));
                 String unAssXmlHtmlText = unAssXmlParser.getHtmlContent().toString();
                 this.linkTextPane.setContentType(paneContentType);
                 this.linkTextPane.setText(unAssXmlHtmlText);
@@ -404,7 +399,7 @@ public class topicPaneMouseListener implements MouseInputListener {
         // ---------------------------------------------------------------------
         // 3) update NAV Indices in toolResources XML
         this.myRSCManager.updateTABNavIndex(this.currTopicID, currPAnchorOLStatus, new String[]{bepOffset, bepID});
-        System.setProperty(sysPropertyCurrTopicOLSEStatusKey, pAnchorOL + "_" + currSCRSEName[0] + "_" + currSCRSEName[1] + "_" + pAnchorStatus + "_" + currSCRSEName[3]);
+        LTWAssessmentToolControler.setCurrentAnchorProperty(pAnchorOL, currSCRSEName[0], currSCRSEName[1], pAnchorStatus, currSCRSEName[3], currSCRSEName[4]);
         // ---------------------------------------------------------------------
         String currAnchorName = this.poolerManager.getPoolAnchorNameByOL(this.currTopicID, currPAnchorOLStatus);
         Vector<String> newTABFieldValues = new Vector<String>();
@@ -446,7 +441,7 @@ public class topicPaneMouseListener implements MouseInputListener {
             anchorXmlFilePath = myRSCManager.getErrorXmlFilePath(anchorXmlFilePath);
         }
 
-        Xml2Html xmlParser = new Xml2Html(anchorXmlFilePath, Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey)));
+        Xml2Html xmlParser = new Xml2Html(anchorXmlFilePath, Boolean.valueOf(System.getProperty(LTWAssessmentToolControler.sysPropertyIsLinkWikiKey)));
         String xmlHtmlText = xmlParser.getHtmlContent().toString();
         this.linkTextPane.setContentType(paneContentType);
         this.linkTextPane.setText(xmlHtmlText);
@@ -477,7 +472,8 @@ public class topicPaneMouseListener implements MouseInputListener {
         this.linkTextPane.repaint();
         // ---------------------------------------------------------
         this.myRSCManager.updateTBANavIndex(currTopicID, currPBepOffset, new String[]{anchorOffset, anchorLength, anchorFileID});
-        System.setProperty(sysPropertyCurrTopicOLSEStatusKey, currPBepOL + "_" + currSCRSEName[0] + "_" + currSCRSEName[1] + "_" + currPBepStatus);
+//        System.setProperty(sysPropertyCurrTopicOLSEStatusKey, currPBepOL + "_" + currSCRSEName[0] + "_" + currSCRSEName[1] + "_" + currPBepStatus);
+        LTWAssessmentToolControler.setCurrentAnchorProperty(currPBepOL, currSCRSEName[0], currSCRSEName[1], currPBepStatus, currSCRSEName[3], currSCRSEName[4]);
         // ---------------------------------------------------------------------
         Vector<String> newTABFieldValues = new Vector<String>();
         newTABFieldValues.add(this.currTopicName);
@@ -571,8 +567,7 @@ public class topicPaneMouseListener implements MouseInputListener {
                 // updare Pool XML
                 this.pUpdater.updatePoolAnchorStatus(this.currTopicID, currPAnchorOLStatus, toPAnchorStatus);
                 // update System Property
-                String sysPropertyValue = pAnchorOL + "_" + currSCRSEName[0] + "_" + currSCRSEName[1] + "_" + toPAnchorStatus;
-                System.setProperty(sysPropertyCurrTopicOLSEStatusKey, sysPropertyValue);
+                LTWAssessmentToolControler.setCurrentAnchorProperty(pAnchorOL, currSCRSEName[0], currSCRSEName[1], pAnchorStatus, currSCRSEName[3], currSCRSEName[4]);
                 // -------------------------------------------------------------
                 // -------------------------------------------------------------
                 String currAnchorName = this.poolerManager.getPoolAnchorNameByOL(this.currTopicID, currPAnchorOLStatus);
@@ -627,8 +622,7 @@ public class topicPaneMouseListener implements MouseInputListener {
                 // updare Pool XML
                 this.pUpdater.updatePoolAnchorStatus(this.currTopicID, currPAnchorOLStatus, toPAnchorStatus);
                 // update System Property
-                String sysPropertyValue = pAnchorOL + "_" + currSCRSEName[0] + "_" + currSCRSEName[1] + "_" + toPAnchorStatus;
-                System.setProperty(sysPropertyCurrTopicOLSEStatusKey, sysPropertyValue);
+                LTWAssessmentToolControler.setCurrentAnchorProperty(pAnchorOL, currSCRSEName[0], currSCRSEName[1], pAnchorStatus, currSCRSEName[3], currSCRSEName[4]);
                 // -------------------------------------------------------------
                 // -------------------------------------------------------------
                 String currAnchorName = this.poolerManager.getPoolAnchorNameByOL(this.currTopicID, currPAnchorOLStatus);
@@ -656,7 +650,7 @@ public class topicPaneMouseListener implements MouseInputListener {
             this.topicTextPane.scrollRectToVisible(this.topicTextPane.getVisibleRect());
             this.topicTextPane.repaint();
             // -----------------------------------------------------------------
-            Xml2Html xmlParser = new Xml2Html(bepXmlFilePath, Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey)));
+            Xml2Html xmlParser = new Xml2Html(bepXmlFilePath, Boolean.valueOf(System.getProperty(LTWAssessmentToolControler.sysPropertyIsLinkWikiKey)));
             String xmlHtmlText = xmlParser.getHtmlContent().toString();
             this.linkTextPane.setContentType(paneContentType);
             this.linkTextPane.setText(xmlHtmlText);
@@ -698,7 +692,7 @@ public class topicPaneMouseListener implements MouseInputListener {
                 this.pUpdater.updatePoolAnchorStatus(this.currTopicID, new String[]{pAnchorO, pAnchorL}, toPAnchorStatus);
                 // update System Property
                 String sysPropertyValue = pAnchorOL + "_" + currSCRSEName[0] + "_" + currSCRSEName[1] + "_" + toPAnchorStatus;
-                System.setProperty(sysPropertyCurrTopicOLSEStatusKey, sysPropertyValue);
+                System.setProperty(LTWAssessmentToolControler.sysPropertyCurrTopicOLSEStatusKey, sysPropertyValue);
                 // -------------------------------------------------------------
                 // -------------------------------------------------------------
                 String currAnchorName = this.poolerManager.getPoolAnchorNameByOL(this.currTopicID, currPAnchorOLStatus);
@@ -748,7 +742,7 @@ public class topicPaneMouseListener implements MouseInputListener {
                         unAssBepFilePath = myRSCManager.getErrorXmlFilePath(unAssBepFilePath);
                     }
 
-                    Xml2Html thisXmlParser = new Xml2Html(unAssBepFilePath, Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey)));
+                    Xml2Html thisXmlParser = new Xml2Html(unAssBepFilePath, Boolean.valueOf(System.getProperty(LTWAssessmentToolControler.sysPropertyIsLinkWikiKey)));
                     String thisXmlHtmlText = thisXmlParser.getHtmlContent().toString();
                     this.linkTextPane.setContentType(paneContentType);
                     this.linkTextPane.setText(thisXmlHtmlText);
@@ -770,8 +764,7 @@ public class topicPaneMouseListener implements MouseInputListener {
                 // updare Pool XML
                 this.pUpdater.updatePoolAnchorStatus(this.currTopicID, currPAnchorOLStatus, toPAnchorStatus);
                 // update System Property
-                String sysPropertyValue = pAnchorOL + "_" + currSCRSEName[0] + "_" + currSCRSEName[1] + "_" + toPAnchorStatus;
-                System.setProperty(sysPropertyCurrTopicOLSEStatusKey, sysPropertyValue);
+                LTWAssessmentToolControler.setCurrentAnchorProperty(pAnchorOL, currSCRSEName[0], currSCRSEName[1], pAnchorStatus, currSCRSEName[3], currSCRSEName[4]);
                 // -------------------------------------------------------------
                 // -------------------------------------------------------------
                 String currAnchorName = this.poolerManager.getPoolAnchorNameByOL(this.currTopicID, currPAnchorOLStatus);
@@ -821,7 +814,7 @@ public class topicPaneMouseListener implements MouseInputListener {
             anchorXmlFilePath = myRSCManager.getErrorXmlFilePath(anchorXmlFilePath);
         }
 
-        Xml2Html xmlParser = new Xml2Html(anchorXmlFilePath, Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey)));
+        Xml2Html xmlParser = new Xml2Html(anchorXmlFilePath, Boolean.valueOf(System.getProperty(LTWAssessmentToolControler.sysPropertyIsLinkWikiKey)));
         String xmlHtmlText = xmlParser.getHtmlContent().toString();
         this.linkTextPane.setContentType(paneContentType);
         this.linkTextPane.setText(xmlHtmlText);
@@ -886,7 +879,8 @@ public class topicPaneMouseListener implements MouseInputListener {
             // -----------------------------------------------------------------
             // updare Pool XML
             this.pUpdater.updatePoolBepStatus(this.currTopicID, currPBepOffset, toBepStatus);
-            System.setProperty(sysPropertyCurrTopicOLSEStatusKey, pBEPOL + "_" + currSCRSEName[0] + "_" + currSCRSEName[1] + "_" + toBepStatus);
+//            System.setProperty(sysPropertyCurrTopicOLSEStatusKey, pBEPOL + "_" + currSCRSEName[0] + "_" + currSCRSEName[1] + "_" + toBepStatus);
+            LTWAssessmentToolControler.setCurrentAnchorProperty(pBEPOL, currSCRSEName[0], currSCRSEName[1], toBepStatus, currSCRSEName[3], currSCRSEName[4]);
         } else if (Integer.valueOf(currPBepStatus) == -1) {
             // Toggle to PRE-STATUS: -1, 1 or 0
             // -----------------------------------------------------------------
@@ -962,7 +956,8 @@ public class topicPaneMouseListener implements MouseInputListener {
             }
             // updare Pool XML
             this.pUpdater.updatePoolBepStatus(this.currTopicID, currPBepOffset, currBepPreStatus);
-            System.setProperty(sysPropertyCurrTopicOLSEStatusKey, pBEPOL + "_" + currSCRSEName[0] + "_" + currSCRSEName[1] + "_" + currBepPreStatus);
+            LTWAssessmentToolControler.setCurrentAnchorProperty(pBEPOL, currSCRSEName[0], currSCRSEName[1], currBepPreStatus, currSCRSEName[3], currSCRSEName[4]);
+//            System.setProperty(sysPropertyCurrTopicOLSEStatusKey, pBEPOL + "_" + currSCRSEName[0] + "_" + currSCRSEName[1] + "_" + currBepPreStatus);
         }
 // </editor-fold>
 

@@ -59,11 +59,7 @@ public class linkPaneMouseListener implements MouseInputListener {
     // Declare global variables
     protected final int bepLength = 4;
     private final String sysPropertyKey = "isTABKey";
-    private final String sysPropertyIsTopicWikiKey = "isTopicWikipedia";
-    private final String sysPropertyIsLinkWikiKey = "isLinkWikipedia";
-    private final String sysPropertyTABCompletedRatioKey = "tabCompletedRatio";
-    private final String sysPropertyTBACompletedRatioKey = "tbaCompletedRatio";
-    private final String sysPropertyCurrTopicOLSEStatusKey = "currTopicOLSE";
+
     private boolean isTAB = false;
     highlightPainters painters;
     private JTextPane myTopicPane;
