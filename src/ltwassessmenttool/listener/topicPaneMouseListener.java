@@ -691,8 +691,7 @@ public class topicPaneMouseListener implements MouseInputListener {
                 log("Before Update POOL: " + pAnchorO + " - " + pAnchorL + " - " + toPAnchorStatus);
                 this.pUpdater.updatePoolAnchorStatus(this.currTopicID, new String[]{pAnchorO, pAnchorL}, toPAnchorStatus);
                 // update System Property
-                String sysPropertyValue = pAnchorOL + "_" + currSCRSEName[0] + "_" + currSCRSEName[1] + "_" + toPAnchorStatus;
-                System.setProperty(LTWAssessmentToolControler.sysPropertyCurrTopicOLSEStatusKey, sysPropertyValue);
+                LTWAssessmentToolControler.setCurrentAnchorProperty(pAnchorOL, currSCRSEName[0], currSCRSEName[1], pAnchorStatus, currSCRSEName[3], currSCRSEName[4]);
                 // -------------------------------------------------------------
                 // -------------------------------------------------------------
                 String currAnchorName = this.poolerManager.getPoolAnchorNameByOL(this.currTopicID, currPAnchorOLStatus);
