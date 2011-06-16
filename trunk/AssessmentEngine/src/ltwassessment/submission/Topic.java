@@ -62,6 +62,10 @@ public class Topic extends WikiArticleXml {
 		System.arraycopy(bytes, offset, result, 0, length);
 		return new String(result, "UTF-8");
 	}
+	
+	public String getAnchorWithCharacterOffset(int offset, int length) {
+		return fullText.substring(offset, offset + length);
+	}
 
 	public LinkedAnchorList getAnchors() {
 		if (anchors == null)

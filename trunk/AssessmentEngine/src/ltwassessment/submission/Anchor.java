@@ -178,10 +178,13 @@ public class Anchor {
 //
 //	}
 
-	public boolean validate(Topic topic, int showMessage) {
+	public boolean validate(Topic topic, int showMessage, boolean convertToTextOffset) {
 		String result = null;
 		try {
-			result = topic.getAnchor(offset, length);
+			if (convertToTextOffset)
+				result = topic.getAnchorWithCharacterOffset(offset, length);
+			else
+				result = topic.getAnchor(offset, length);
 		} catch (UnsupportedEncodingException e) {
 			e.printStackTrace();
 		}
