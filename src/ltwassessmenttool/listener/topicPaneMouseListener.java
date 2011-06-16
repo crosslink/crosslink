@@ -30,6 +30,8 @@ import javax.swing.text.Position;
 import javax.swing.text.Style;
 import javax.swing.text.StyleConstants;
 import javax.swing.text.StyledDocument;
+
+import ltwassessmenttool.LTWAssessmentToolControler;
 import ltwassessmenttool.LTWAssessmentToolView;
 import ltwassessment.AppResource;
 import ltwassessment.parsers.FOLTXTMatcher;
@@ -514,7 +516,7 @@ public class topicPaneMouseListener implements MouseInputListener {
         String bepOffset = pABepLinksVSA.elementAt(0)[0];
         String bepID = pABepLinksVSA.elementAt(0)[1];
         String bepRel = this.poolerManager.getPoolAnchorBepLinkStatus(this.currTopicID, currPAnchorOLStatus, bepID);
-        String bepXmlFilePath = poolerManager.getXmlFilePathByTargetID(bepID, AppResource.sourceLang);
+        String bepXmlFilePath = poolerManager.getXmlFilePathByTargetID(bepID, AppResource.targetLang);
         String bepStartp = this.poolerManager.getPoolAnchorBepLinkStartP(this.currTopicID, currPAnchorOLStatus, bepID);
 
         // In the case of Errors --> Refresh Link Pane
@@ -641,7 +643,7 @@ public class topicPaneMouseListener implements MouseInputListener {
                 os.setTABFieldValues(newTABFieldValues);
                 // </editor-fold>
             }
-
+            
         } else {
             log("CURR PAnchor is NOT PRE PAnchor...");
             // CURR PAnchor is NOT PRE PAnchor
@@ -786,6 +788,8 @@ public class topicPaneMouseListener implements MouseInputListener {
             }
 
         }
+        
+        LTWAssessmentToolControler.getInstance().goNextLink(false);
         // </editor-fold>
     }
 

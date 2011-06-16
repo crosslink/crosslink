@@ -36,6 +36,7 @@ import javax.swing.text.Style;
 import javax.swing.text.StyleConstants;
 import javax.swing.text.StyledDocument;
 
+import ltwassessmenttool.LTWAssessmentToolControler;
 import ltwassessmenttool.LTWAssessmentToolView;
 import ltwassessment.AppResource;
 import ltwassessment.parsers.FOLTXTMatcher;
@@ -54,10 +55,7 @@ import ltwassessment.utility.tbaTxtPaneManager;
  */
 public class linkPaneMouseListener implements MouseInputListener {
 
-    protected final String poolXmlFileName = "wikipedia_pool.xml";
-    protected final String loggerFileName = "_ltwAssessTool2009.log";
-    protected final String poolAndLogDir = "resources" + File.separator + "Pool";
-    protected final String crosslinkURL = "http://ntcir.nii.ac.jp/CrossLink/";
+
     // Declare global variables
     protected final int bepLength = 4;
     private final String sysPropertyKey = "isTABKey";
@@ -91,8 +89,6 @@ public class linkPaneMouseListener implements MouseInputListener {
     private ObservableSingleton os = null;
     private Hashtable<String, String[]> topicAnchorOLTSENHT = new Hashtable<String, String[]>();
     private Hashtable<String, Object> myTAnchorSEHiObj = new Hashtable<String, Object>();
-    
-    private boolean showOnce = false;
 
     private void log(String txt) {
         System.out.println(txt);
@@ -118,38 +114,7 @@ public class linkPaneMouseListener implements MouseInputListener {
             Logger.getLogger(linkPaneMouseListener.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-    private int globalPoolBackupCounter = 0;
-
-    private void backupPool() {
-//        String sourcePoolFPath = "resources" + File.separator + "Pool" + File.separator + "wikipedia_pool.xml";
-    	String sourcePoolFPath = ltwassessment.Assessment.getPoolFile(topicID);
-        File srcFile = new File(sourcePoolFPath);
-        String backupPoolDir = "resources" + File.separator + "Pool" + File.separator + "POOL_BACKUP" + File.separator;
-        DateFormat dateFormat = new SimpleDateFormat("yyMMddHHmmss");
-        Date date = new Date();
-        String currentDateTime = dateFormat.format(date).toString();
-        String backupPoolFPath = backupPoolDir + this.topicID + "_" + currentDateTime + "_Pool.xml";
-        File destFile = new File(backupPoolFPath);
-        InputStream in = null;
-        OutputStream out = null;
-        if (!destFile.exists() && srcFile.exists()) {
-            try {
-                destFile.createNewFile();
-                in = new FileInputStream(srcFile);
-                out = new FileOutputStream(destFile);
-                byte[] buf = new byte[1024];
-                int len;
-                while ((len = in.read(buf)) > 0) {
-                    out.write(buf, 0, len);
-                }
-                in.close();
-                out.close();
-            } catch (IOException ex) {
-                Logger.getLogger(linkPaneMouseListener.class.getName()).log(Level.SEVERE, null, ex);
-            }
-        }
-    }
-
+    
     public linkPaneMouseListener(JTextPane myTopicPane, JTextPane myLinkPane) {
         this.myTopicPane = myTopicPane;
         this.myLinkPane = myLinkPane;
@@ -287,7 +252,7 @@ public class linkPaneMouseListener implements MouseInputListener {
             this.myPoolUpdater.updateTopicAnchorLinkRel(topicID, new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1]},
                     currALinkID, currLinkStatus);
             // -----------------------------------------------------------------
-            goNextLink();
+            LTWAssessmentToolControler.getInstance().goNextLink(true);
 //        } else {
 //            // For incoming TBA
 //            // -----------------------------------------------------------------
@@ -417,7 +382,7 @@ public class linkPaneMouseListener implements MouseInputListener {
                 this.myPoolUpdater.updateTopicAnchorLinkRel(topicID, new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1]},
                         currALinkID, currLinkStatus);
                 // -------------------------------------------------------------
-                goNextLink();
+                LTWAssessmentToolControler.getInstance().goNextLink(true);
             }
 //        } else {
 //            // For incoming TBA
@@ -443,277 +408,6 @@ public class linkPaneMouseListener implements MouseInputListener {
 //            // -----------------------------------------------------------------
 //            goNextLink();
 //        }
-    }
-
-    private void goNextLink() {
-        // ---------------------------------------------------------------------
-        globalPoolBackupCounter++;
-        // Pool Assessment Result Back up
-        if (globalPoolBackupCounter % 10 == 0) {
-            backupPool();
-        }
-        // ---------------------------------------------------------------------
-        // 1) check Whether the assessment is Completed
-        //    If Yes, pop-up Survey Questionaire
-        //           --> Then Link for Upload Result XML, Logger & Questionaires
-        // 2) If Not, Go Next
-//        log("COMPLETION ... ");
-        String[] tabCompletedRatio = this.myRSCManager.getOutgoingCompletion();
-//        String[] tbaCompletedRatio = this.myRSCManager.getIncomingCompletion();
-        if (Integer.parseInt(tabCompletedRatio[0]) > 0 && tabCompletedRatio[0].equals(tabCompletedRatio[1])  && !showOnce /* && tbaCompletedRatio[0].equals(tbaCompletedRatio[1])*/) {
-            int option = JOptionPane.showConfirmDialog(this.myTopicPane, "The Assessment is completed.\r\n" +
-                    "Please zip the result file and log together \r\n" +
-                    "and email it to the Crosslink organisers or other alternative way provided. \r\n" +
-                    "The files, " + poolXmlFileName + " & T" + topicID + loggerFileName + " are located in the following directory: \r\n" +
-                    poolAndLogDir, "Assessment Completion",
-                    JOptionPane.OK_OPTION);
-            if (option == JOptionPane.OK_OPTION || option == JOptionPane.CLOSED_OPTION) {
-                BrowserControl openBrowser = new BrowserControl();
-                openBrowser.displayURL(crosslinkURL);
-                javax.swing.SwingUtilities.getWindowAncestor(this.myLinkPane).setVisible(false);
-                javax.swing.SwingUtilities.getWindowAncestor(this.myLinkPane).dispose();
-                System.exit(0);
-            }
-            showOnce = true;
-            return;
-        } /*else if (this.isTAB && tabCompletedRatio[0].equals(tabCompletedRatio[1]) && !tbaCompletedRatio[0].equals(tbaCompletedRatio[1])) {
-            JOptionPane.showMessageDialog(this.myTopicPane, "The Outgoing Assessment is completed. \r\n" +
-                    "Please click \"OK\" button and switch to Incoming Mode to complete the assessment.\r\n" +
-                    "The progress of Incoming is " + tbaCompletedRatio[0] + " out of " + tbaCompletedRatio[1] + ".");
-        } else if (!this.isTAB && !tabCompletedRatio[0].equals(tabCompletedRatio[1]) && tbaCompletedRatio[0].equals(tbaCompletedRatio[1])) {
-            JOptionPane.showMessageDialog(this.myTopicPane, "The Incoming Assessment is completed. \r\n" +
-                    "Please click \"OK\" button and switch to Outgoing Mode to complete the assessment.\r\n" +
-                    "The progress of Outgoing is " + tabCompletedRatio[0] + " out of " + tabCompletedRatio[1] + ".");
-        } */else {
-//            if (this.isTAB) {
-                // <editor-fold defaultstate="collapsed" desc="Update TAB Topic, Link">
-//                String currTopicOLSEStatus = System.getProperty(sysPropertyCurrTopicOLSEStatusKey);
-//                String[] currTopicOLSEStatusSA = currTopicOLSEStatus.split("_");
-//                String currPAnchorO = currTopicOLSEStatusSA[0];
-//                String currPAnchorL = currTopicOLSEStatusSA[1];
-//                String currPAnchorS = currTopicOLSEStatusSA[2];
-//                String currPAnchorE = currTopicOLSEStatusSA[3];
-//                String currPAnchorExt = currTopicOLSEStatusSA[4];
-//                String[] currPAnchorOLSA = new String[]{currPAnchorO, currPAnchorL};
-//                String currPAnchorStatus = this.myPoolManager.getPoolAnchorStatus(topicID, currPAnchorOLSA);
-//                String[] currALinkOIDSA = this.myRSCManager.getCurrTopicATargetOID(this.myLinkPane, this.topicID);
-//                String currALinkOffset = currALinkOIDSA[0];
-//                String currALinkID = currALinkOIDSA[1];
-//                String[] currPALinkOIDSA = new String[]{currALinkOffset, currALinkID};
-//                String currPALinkStatus = this.myPoolManager.getPoolAnchorBepLinkStatus(topicID, currPAnchorOLSA, currALinkID);
-//                // -------------------------------------------------------------
-//                // 1) Get the NEXT Anchor O, L, S, E, Status + its BEP link O, S, ID, Status
-//                //    With TAB Nav Update --> NEXT TAB
-//                Vector<String[]> nextAnchorBepLinkVSA = this.myRSCManager.getNextUNAssTABWithUpdateNAV(topicID, currPAnchorOLSA, currPALinkOIDSA);
-//                // Get PoolAnchor O, L, S, E, Status
-//                String[] nextAnchorOLSEStatusSA = nextAnchorBepLinkVSA.elementAt(0);
-//                String nextAnchorO = nextAnchorOLSEStatusSA[0];
-//                String nextAnchorL = nextAnchorOLSEStatusSA[1];
-//                String nextAnchorS = nextAnchorOLSEStatusSA[2];
-//                String nextAnchorE = nextAnchorOLSEStatusSA[3];
-//                String nextAnchorStatus = this.myPoolManager.getPoolAnchorStatus(topicID, new String[]{nextAnchorO, nextAnchorL});
-//                // new String[]{tbOffset, tbStartP, tbFileID, tbRel}
-//                String[] nextAnchorLinkOSIDStatusSA = nextAnchorBepLinkVSA.elementAt(1);
-//                String nextLinkO = nextAnchorLinkOSIDStatusSA[0];
-//                String nextLinkID = nextAnchorLinkOSIDStatusSA[2];
-//                String nextLinkLang = nextAnchorLinkOSIDStatusSA[4];
-//                String nextLinkTitle = nextAnchorLinkOSIDStatusSA[5];
-//                if (nextLinkID.endsWith("\"")) {
-//                    nextLinkID = nextLinkID.substring(0, nextLinkID.length() - 1);
-//                }
-//                String nextLinkS = this.myPoolManager.getPoolAnchorBepLinkStartP(topicID, new String[]{nextAnchorO, nextAnchorL}, nextLinkID);
-//                String nextLinkStatus = this.myPoolManager.getPoolAnchorBepLinkStatus(topicID, new String[]{nextAnchorO, nextAnchorL}, nextLinkID);
-//                
-//                String nextLinkExtLength = nextAnchorLinkOSIDStatusSA[6];
-//                
-//                // re-adjust the anchor offset and length
-//                int offset = Integer.parseInt(nextAnchorLinkOSIDStatusSA[6]);
-//                int length = Integer.parseInt(nextAnchorLinkOSIDStatusSA[7]);
-//                int anchorOffset = Integer.parseInt(nextAnchorO);
-//                int screenOffset = Integer.parseInt(nextAnchorS) + offset - anchorOffset;
-//                String nextSubanchorS = String.valueOf(screenOffset);
-//                String nextSubanchorE = String.valueOf(screenOffset + length);
-//                
-//                int extLength = Integer.parseInt(currPAnchorExt);
-//                if (extLength > 0)
-//                	currPAnchorE = String.valueOf(Integer.parseInt(currPAnchorE) + extLength);
-//                // -------------------------------------------------------------
-//                // Update Pool Anchor Status <-- When GO NEXT Pool Anchor
-//                // because the PRE-Pool_Anchor might have been completed.
-//                if (!nextAnchorO.equals(currPAnchorO)) {
-//                    // ---------------------------------------------------------
-//                    // Update Pool Anchor Status
-//                    String poolAnchorStatus = "";
-//                    if (currPALinkStatus.equals("-1")) {
-//                        if (currPAnchorStatus.equals("-1")) {
-//                            poolAnchorStatus = currPAnchorStatus;
-//                        } else {
-//                            poolAnchorStatus = this.myRSCManager.getPoolAnchorCompletedStatus(topicID, currPAnchorOLSA);
-//                        }
-//                    } else {
-//                        poolAnchorStatus = this.myRSCManager.getPoolAnchorCompletedStatus(topicID, currPAnchorOLSA);
-//                    }
-//                    this.myPoolUpdater.updatePoolAnchorStatus(topicID, currPAnchorOLSA, poolAnchorStatus);
-//                    // ---------------------------------------------------------
-//                    // Highlight Anchor/BEP + Auto Scrolling
-//                    String updatedPAnchorStatus = this.myPoolManager.getPoolAnchorStatus(topicID, currPAnchorOLSA);
-//                    LTWAssessmentToolView.updateTopicAnchorsHighlight(this.myTopicPane, new String[]{currPAnchorS, currPAnchorE, updatedPAnchorStatus}, new String[]{"", nextAnchorS, nextAnchorE, nextLinkExtLength, nextSubanchorS, nextSubanchorE}, Integer.parseInt(nextLinkStatus));
-//                    this.myTopicPane.getCaret().setDot(Integer.valueOf(nextAnchorE));
-//                    this.myTopicPane.scrollRectToVisible(this.myTopicPane.getVisibleRect());
-//                    this.myTopicPane.repaint();
-//                    // ---------------------------------------------------------
-//                    // set up Property
-//                    String sysPropertyValue = nextAnchorO + "_" + nextAnchorL + "_" + nextAnchorS + "_" + nextAnchorE + "_" + nextAnchorStatus;
-//                    System.setProperty(sysPropertyCurrTopicOLSEStatusKey, sysPropertyValue);
-//                }
-//                String bepXmlFilePath = this.myPoolManager.getXmlFilePathByTargetID(nextLinkID, nextLinkLang);
-//                if (bepXmlFilePath.startsWith(afTasnCollectionErrors)) {
-//                    bepXmlFilePath = myRSCManager.getErrorXmlFilePath(bepXmlFilePath);
-//                }
-//                Xml2Html xmlParser = new Xml2Html(bepXmlFilePath, Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey)));
-//                String xmlHtmlText = xmlParser.getHtmlContent().toString();
-//                this.myLinkPane.setContentType(paneContentType);
-//                this.myLinkPane.setText(xmlHtmlText);
-//                this.myLinkPane.setCaretPosition(0);
-//                // -------------------------------------------------------------
-//                // -------------------------------------------------------------
-//                if (Integer.valueOf(nextAnchorStatus) == 1 || Integer.valueOf(nextAnchorStatus) == 0) {
-//                    if (Integer.valueOf(nextLinkStatus) == 1) {
-//                        // Relevant --> Insert BEP --> BG = Green
-//                        Vector<String> bepSCROffset = new Vector<String>();
-//                        bepSCROffset.add(nextLinkS);
-//                        boolean isTopicBEP = false;
-//                        updatePaneBepIcon(this.myLinkPane, bepSCROffset, isTopicBEP);
-//                        this.myLinkPane.getCaret().setDot(Integer.valueOf(nextLinkS));
-//                        this.myLinkPane.scrollRectToVisible(this.myLinkPane.getVisibleRect());
-//                        this.myLinkPane.setBackground(this.linkPaneRelColor);
-//                    } else if (Integer.valueOf(nextLinkStatus) == -1) {
-//                        this.myLinkPane.setBackground(this.linkPaneNonRelColor);
-//                    } else if (Integer.valueOf(nextLinkStatus) == 0) {
-//                        this.myLinkPane.setBackground(this.linkPaneWhiteColor);
-//                    }
-//                    this.myLinkPane.repaint();
-//                } else if (Integer.valueOf(nextAnchorStatus) == -1) {
-//                    this.myLinkPane.setBackground(this.linkPaneNonRelColor);
-//                    this.myLinkPane.repaint();
-//                }
-//                // -------------------------------------------------------------
-//                // -------------------------------------------------------------
-//                String currAnchorName = this.myPoolManager.getPoolAnchorNameByOL(this.topicID, new String[]{nextAnchorO, nextAnchorL});
-//                Vector<String> newTABFieldValues = new Vector<String>();
-//                newTABFieldValues.add(this.currTopicName);
-//                newTABFieldValues.add(this.topicID);
-//                newTABFieldValues.add(currAnchorName);
-//                newTABFieldValues.add(nextLinkID);
-//                String pageTitle = "";
-//                pageTitle = this.myRSCManager.getWikipediaPageTitle(nextLinkID);
-//                newTABFieldValues.add(pageTitle.trim());
-//                String[] pAnchorCompletionSA = this.myRSCManager.getOutgoingCompletion();
-//                newTABFieldValues.add(pAnchorCompletionSA[0] + " / " + pAnchorCompletionSA[1]);
-//                os.setTABFieldValues(newTABFieldValues);
-                
-                LTWAssessmentToolView.moveForwardALink(true);
-                // ---------------------------------------------------------------------
-                // ---------------------------------------------------------------------
-                // </editor-fold>
-//            } else {
-//                // <editor-fold defaultstate="collapsed" desc="Update TBA Topic, Link">
-//                String currTopicOLSEStatus = System.getProperty(sysPropertyCurrTopicOLSEStatusKey);
-//                String[] currTopicOLSEStatusSA = currTopicOLSEStatus.split("_");
-//                String currBepOffset = currTopicOLSEStatusSA[0];
-//                String currBepSPoint = currTopicOLSEStatusSA[2];
-//                String[] currBLinkOLIDSA = this.myRSCManager.getCurrTopicBTargetOLID(this.myLinkPane, this.topicID);
-//                // -------------------------------------------------------------
-//                // 1) Get the NEXT Anchor O, L, S, E, Status + its BEP link O, S, ID, Status
-//                //    With TAB Nav Update --> NEXT TAB
-////                log("START NEXT TBA ... ");
-//                Vector<String[]> nextBepAnchorLinkVSA = this.myRSCManager.getNextUNAssTBAWithUpdateNAV(topicID, currBepOffset, currBLinkOLIDSA);
-////                log("END NEXT TBA ... ");
-//                // Get Pool Bep O, S, Status
-//                String[] nextBepOSStatus = nextBepAnchorLinkVSA.elementAt(0);
-//                String nextBepO = nextBepOSStatus[0];
-//                String nextBepS = nextBepOSStatus[1];
-//                String nextBepStatus = this.myPoolManager.getPoolBepStatus(topicID, currBepOffset);
-//                // Get Pool Bep - AnchorLink O, L, ID, Status
-//                String[] nextLinkOLStatusStatus = nextBepAnchorLinkVSA.elementAt(1);
-//                String nextLinkO = nextLinkOLStatusStatus[0];
-//                String nextLinkL = nextLinkOLStatusStatus[1];
-//                String nextLinkID = nextLinkOLStatusStatus[2];
-//                
-//                String nextLinkStatus = this.myPoolManager.getPoolBepAnchorLinkStatus(topicID, currBepOffset, new String[]{nextLinkO, nextLinkL, nextLinkID});
-////                log(nextLinkO + " - " + nextLinkL + " - " + nextLinkID);
-////                log("nextLinkStatus: " + nextLinkStatus);
-//                // -------------------------------------------------------------
-//                // Update Pool Anchor Status <-- When GO NEXT Pool Anchor
-//                // because the PRE-Pool_Anchor might have been completed.
-//                if (!nextBepO.equals(currBepOffset)) {
-//                    // Update Pool BEP Status
-//                    String poolBepStatus = this.myRSCManager.getPoolBepCompletedStatus(topicID, currBepOffset);
-//                    this.myPoolUpdater.updatePoolBepStatus(topicID, currBepOffset, poolBepStatus);
-//                    // Highlight Anchor/BEP + Auto Scrolling
-//                    Vector<String> bepSCROffset = new Vector<String>();
-//                    bepSCROffset.add(nextBepS);
-//                    boolean isTopicBEP = true;
-//                    updatePaneBepIcon(this.myTopicPane, bepSCROffset, isTopicBEP);
-//                    this.myTopicPane.getCaret().setDot(Integer.valueOf(nextBepS));
-//                    this.myTopicPane.scrollRectToVisible(this.myTopicPane.getVisibleRect());
-//                    this.myTopicPane.repaint();
-//                    // update System Property
-//                    String currTopicOLSEStatusKey = nextBepO + "_" + bepLength + "_" + nextBepS + "_" + String.valueOf(Integer.valueOf(nextBepS) + Integer.valueOf(bepLength)) + "_" + nextBepStatus;
-//                    System.setProperty(this.sysPropertyCurrTopicOLSEStatusKey, currTopicOLSEStatusKey);
-//                }
-//                // -------------------------------------------------------------
-//                String anchorXmlFilePath = this.myPoolManager.getXmlFilePathByTargetID(nextLinkID);
-//                if (anchorXmlFilePath.startsWith(afTasnCollectionErrors)) {
-//                    anchorXmlFilePath = myRSCManager.getErrorXmlFilePath(anchorXmlFilePath);
-//                }
-//                Xml2Html xmlParser = new Xml2Html(anchorXmlFilePath, Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey)));
-//                String xmlHtmlText = xmlParser.getHtmlContent().toString();
-//                this.myLinkPane.setContentType(paneContentType);
-//                this.myLinkPane.setText(xmlHtmlText);
-//                this.myLinkPane.setCaretPosition(0);
-//                // -------------------------------------------------------------
-//                String[] nextLinkSE = this.myFolMatcher.getSCRAnchorNameSESA(this.myLinkPane, nextLinkID, new String[]{nextLinkO, nextLinkL, ""});
-//                String nextLinkAnchorName = nextLinkSE[0];
-//                String nextLinkS = nextLinkSE[1];
-//                String nextLinkE = nextLinkSE[2];
-//                // Highlight Anchor Txt in JTextPane
-//                updateLinkAnchorHighlight(this.myLinkPane, new String[]{nextLinkS, nextLinkE});
-//                // ---------------------------------------------------------
-//                // Renew Link Text Pane Listener for Detecting Anchor Text & Right/Left Click
-//                this.myLinkPane.getCaret().setDot(Integer.valueOf(nextLinkE));
-//                this.myLinkPane.scrollRectToVisible(this.myLinkPane.getVisibleRect());
-//                if (Integer.valueOf(nextBepStatus) == 1 || Integer.valueOf(nextBepStatus) == 0) {
-//                    if (Integer.valueOf(nextLinkStatus) == 1) {
-//                        this.myLinkPane.setBackground(this.linkPaneRelColor);
-//                    } else if (Integer.valueOf(nextLinkStatus) == -1) {
-//                        this.myLinkPane.setBackground(this.linkPaneNonRelColor);
-//                    } else if (Integer.valueOf(nextLinkStatus) == 0) {
-//                        this.myLinkPane.setBackground(this.linkPaneWhiteColor);
-//                    }
-//                } else if (Integer.valueOf(nextBepStatus) == -1) {
-//                    this.myLinkPane.setBackground(this.linkPaneNonRelColor);
-//                }
-//                this.myLinkPane.repaint();
-//                // -------------------------------------------------------------
-//                Vector<String> newTABFieldValues = new Vector<String>();
-//                newTABFieldValues.add(this.currTopicName);
-//                newTABFieldValues.add(this.topicID);
-//                newTABFieldValues.add(nextLinkAnchorName);
-//                newTABFieldValues.add(nextLinkID);
-//                String pageTitle = "";
-////                if (Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey))) {
-//                    pageTitle = this.myRSCManager.getWikipediaPageTitle(nextLinkID);
-////                } else {
-////                    pageTitle = this.myRSCManager.getTeAraFilePathByName(nextLinkID);
-////                }
-//                newTABFieldValues.add(pageTitle.trim());
-//                String[] pAnchorCompletionSA = this.myRSCManager.getIncomingCompletion();
-//                newTABFieldValues.add(pAnchorCompletionSA[0] + " / " + pAnchorCompletionSA[1]);
-//                os.setTABFieldValues(newTABFieldValues);
-//                // </editor-fold>
-//            }
-        }
     }
 
     private class timerTask extends TimerTask {

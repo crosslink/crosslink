@@ -314,12 +314,12 @@ public class LTWAssessmentToolView extends FrameView {
     	    	
     	FOLTXTMatcher.getInstance().getSCRAnchorPosV(thisTopicTextPane, currTopicID, topicAnchorsHT);
     	Vector<String> topicAnchorsOLNameSEVS = rscManager.getTopicAnchorsOLNameSEV();
-        int completedAnchor = 0;
-		//      int totoalAnchorNumber = Integer.valueOf(tabCompletedRatio[1]);
-		
-		int totoalAnchorNumberRecored = topicAnchorsOLNameSEVS.size();
-		
-		this.rscManager.updateOutgoingCompletion(String.valueOf(completedAnchor) + " : " + String.valueOf(totoalAnchorNumberRecored));
+//        int completedAnchor = 0;
+//		//      int totoalAnchorNumber = Integer.valueOf(tabCompletedRatio[1]);
+//		
+//		int totoalAnchorNumberRecored = topicAnchorsOLNameSEVS.size();
+//		
+//		this.rscManager.updateOutgoingCompletion(String.valueOf(completedAnchor) + " : " + String.valueOf(totoalAnchorNumberRecored));
     }
     
     private void assess(String poolFile) {
@@ -371,6 +371,8 @@ public class LTWAssessmentToolView extends FrameView {
         this.topicTextPane.addMouseMotionListener(mtTopicPaneListener);
         linkPaneMouseListener myLPMListener = new linkPaneMouseListener(this.topicTextPane, this.linkTextPane);
         this.linkTextPane.addMouseListener(myLPMListener);
+        
+        LTWAssessmentToolControler.getInstance().setContainter(this.topicTextPane, this.linkTextPane);
         // -------------------------------------------------------------
         this.outRadioBtn.setSelected(true);
         this.inRadioBtn.setSelected(false);
@@ -1235,7 +1237,6 @@ public class LTWAssessmentToolView extends FrameView {
         String topicLang = rscManager.getTopicLang();
         setTopicPaneContent(currTopicFilePath, topicLang);
 
-
         // ---------------------------------------------------------------------
         // For 1st time to get the ANCHOR OL name SE
 //        folMatcher = FOLTXTMatcher.getInstance();
@@ -1245,6 +1246,7 @@ public class LTWAssessmentToolView extends FrameView {
         	topicAnchorsOLNameSEVS = rscManager.getTopicAnchorsOLNameSEV();
         }     
         String[] tabCompletedRatio = this.rscManager.getTABCompletedRatio();
+        this.rscManager.updateOutgoingCompletion(tabCompletedRatio[0] + " : " + tabCompletedRatio[1]);
         System.setProperty(sysPropertyTABCompletedRatioKey, String.valueOf(tabCompletedRatio[0]) + "_" + String.valueOf(tabCompletedRatio[1]));
         // ---------------------------------------------------------------------
         
