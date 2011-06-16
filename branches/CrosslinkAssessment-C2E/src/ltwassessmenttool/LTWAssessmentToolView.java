@@ -1268,7 +1268,14 @@ public class LTWAssessmentToolView extends FrameView {
         // re-adjust the anchor offset and length
         int offset = Integer.parseInt(CurrTopicATargetOID[5]);
         int length = Integer.parseInt(CurrTopicATargetOID[6]);
-        int anchorOffset = Integer.parseInt(currTopicOLNameSEStatus[0]);
+        
+        int anchorOffset = Integer.parseInt(currTopicOLNameSEStatus[0]);   
+        
+//      byte[] bytes = FOLTXTMatcher.getInstance().getFullXmlTxt().getBytes();
+//		offset = FOLTXTMatcher.byteOffsetToTextOffset(bytes, offset);
+//		length = FOLTXTMatcher.textLength(bytes, offset, length);
+
+//        anchorOffset = FOLTXTMatcher.byteOffsetToTextOffset(bytes, anchorOffset);
         int screenOffset = Integer.parseInt(currTopicOLNameSEStatus[3]) + offset - anchorOffset;
         String currAnchorS = String.valueOf(screenOffset);
         String currAnchorE = String.valueOf(screenOffset + length);      
