@@ -142,7 +142,7 @@ public class Run {
                     	
 //                        anchorToBEPV = new Vector<String[]>();
                     Anchor anchor = new Anchor(aOffset, aLength, anchorName);
-                    if (anchor.validate(topic, Anchor.SHOW_MESSAGE_ERROR)) {
+                    if (checkAnchors == false || (checkAnchors && anchor.validate(topic, Anchor.SHOW_MESSAGE_ERROR, convertToTextOffset))) {
                         Target target = null;
                         if (forValidationOrAssessment) {
                         	anchorKey = aOffset + "_" + aLength;

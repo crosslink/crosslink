@@ -26,6 +26,7 @@ public class WikiArticleXml {
 	protected int currentPos = 0;
 	
 	protected byte[] bytes = null; // the text in bytes
+	protected String fullText = null;
 	
 	/**
 	 * @return the title
@@ -59,6 +60,20 @@ public class WikiArticleXml {
 		this.bytes = bytes;
 	}
 
+	/**
+	 * @return the fullText
+	 */
+	public String getFullText() {
+		return fullText;
+	}
+
+	/**
+	 * @param fullText the fullText to set
+	 */
+	public void setFullText(String fullText) {
+		this.fullText = fullText;
+	}
+
 	public WikiArticleXml(File xmlFile) {
 		extractTitle(xmlFile);
 	}
@@ -84,6 +99,8 @@ public class WikiArticleXml {
 			size = fis.available();
 		    bytes = new byte[size];
 		    fis.read(bytes, 0, size);
+		    
+		    fullText = new String(bytes, "UTF-8");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}		
