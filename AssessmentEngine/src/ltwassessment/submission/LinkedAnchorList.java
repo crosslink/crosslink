@@ -222,10 +222,10 @@ public class LinkedAnchorList {
 		
 	}
 
-	public boolean validateAll(Topic topic, int showMessage) {
+	public boolean validateAll(Topic topic, int showMessage, boolean convertToTextOffset) {
 		boolean result = true;
 		for (Anchor anchor: anchorList) {
-			if (!anchor.validate(topic, showMessage))
+			if (!anchor.validate(topic, showMessage, convertToTextOffset))
 				result = false;
 		}
 		return result;
