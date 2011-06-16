@@ -333,25 +333,6 @@ public class FOLTXTMatcher {
 		return input;
 	}
 	
-	
-	
-	public static int textLength(byte[] bytes, int byteOffset, int length) {
-		byte[] newBytes = new byte[length];
-		System.arraycopy(bytes, byteOffset, newBytes, 0, length);
-		String source = null;
-		try {
-			source = new String(newBytes, "UTF-8");
-		} catch (UnsupportedEncodingException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		return source.length();
-	}
-	
-	public static int byteOffsetToTextOffset(byte[] bytes, int byteOffset) {
-		return textLength(bytes, 0, byteOffset);
-	}
-	
     private String[] screenOffsetLengthFinder(String fullScreenTxt, String fullXmlTxt, String[] thisAnchorXmlOLName) {
     	String[] myScreenPosition = new String[4];
         
@@ -361,8 +342,8 @@ public class FOLTXTMatcher {
     	byte[] bytes = fullXmlTxt.getBytes();
 //    	int len = bytes.length - aOffset;
     	
-    	int textOffset = byteOffsetToTextOffset(bytes, aOffset);
-    	int anchorTextLength = textLength(bytes, aOffset, aLength);
+    	int textOffset = aOffset; //byteOffsetToTextOffset(bytes, aOffset);
+    	int anchorTextLength = aLength; //textLength(bytes, aOffset, aLength);
 
     	String aName = fullXmlTxt.substring(textOffset, textOffset + anchorTextLength);
 

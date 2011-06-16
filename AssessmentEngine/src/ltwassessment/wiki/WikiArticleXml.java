@@ -45,6 +45,20 @@ public class WikiArticleXml {
 //		read(new File(xmlFile));
 //	}
 	
+	/**
+	 * @return the bytes
+	 */
+	public byte[] getBytes() {
+		return bytes;
+	}
+
+	/**
+	 * @param bytes the bytes to set
+	 */
+	public void setBytes(byte[] bytes) {
+		this.bytes = bytes;
+	}
+
 	public WikiArticleXml(File xmlFile) {
 		extractTitle(xmlFile);
 	}

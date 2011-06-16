@@ -25,6 +25,23 @@ public class XML2TXT {
 		return instance;
 	}
 	
+	public static int textLength(byte[] bytes, int byteOffset, int length) {
+		byte[] newBytes = new byte[length];
+		System.arraycopy(bytes, byteOffset, newBytes, 0, length);
+		String source = null;
+		try {
+			source = new String(newBytes, "UTF-8");
+		} catch (UnsupportedEncodingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return source.length();
+	}
+	
+	public static int byteOffsetToTextOffset(byte[] bytes, int byteOffset) {
+		return textLength(bytes, 0, byteOffset);
+	}
+	
 	public String replaceNonAlphabet(String source, String with)
 	{
 		source.replaceAll("[\\W]", with);
@@ -160,6 +177,9 @@ public class XML2TXT {
 		System.out.println("	XML2TXT [-o:offset:length] input_xml");
 		System.out.println("		return the text with given offset and length.");
 		System.out.println("Or ");
+		System.out.println("	XML2TXT [-O:offset:length] input_xml");
+		System.out.println("		return the text with given character offset and length.");
+		System.out.println("Or ");		
 		System.out.println("	XML2TXT input_xml");
 		System.out.println("		remove all the tags");
 		//System.out.println("			[-r] -r replace the non-alphabet characters");
@@ -182,7 +202,7 @@ public class XML2TXT {
 		try {
 			if (args[0].charAt(0) == '-')
 			{
-				if (args.length < 2)
+				if (args.length < 2 || args[0].length() != 2 || args[0].charAt(1) != 'o' || args[0].charAt(1) != 'O')
 					usage();
 				int pos = 0, pos2 = 0;
 	        	if ((pos = args[0].indexOf(":", pos)) != -1){
@@ -198,13 +218,23 @@ public class XML2TXT {
 	        	xmlfile = args[1];
 	        	
 	        	bytes = converter.read(xmlfile);
-	    		if (length == -1)
-	    			length = bytes.length;
-	    		
-	    		byte[] result = new byte[length];
-	    		System.arraycopy(bytes, offset, result, 0, length);
-	
-	    			System.out.println("Text:\"" + new String(result, "UTF-8") + "\"");
+	        	String text = null;
+	        	if (args[0].charAt(1) == 'o') {
+		    		if (length == -1)
+		    			length = bytes.length;
+		    		
+		    		byte[] result = new byte[length];
+		    		System.arraycopy(bytes, offset, result, 0, length);
+		    		text = new String(result, "UTF-8");
+	        	}
+	        	else {
+	        		String fulltext = new String(bytes, "UTF-8");
+		    		if (length == -1)
+		    			text = fulltext.substring(offset);
+		    		else
+		    			text = fulltext.substring(offset, offset + length);
+	        	}
+    			System.out.println("Text:\"" + text + "\"");
 	  
 			}			
 			else { 

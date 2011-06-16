@@ -23,11 +23,13 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
+import crosslink.XML2TXT;
+
 public class Run {
 	
 	private HashMap<String, Topic> topics = null;
 	private String runName = null;
-	
+	private boolean convertToTextOffset = true;
 	
     public Run() {
 		init();
@@ -45,6 +47,20 @@ public class Run {
 
 	public void setRunName(String runName) {
 		this.runName = runName;
+	}
+
+	/**
+	 * @return the convertToTextOffset
+	 */
+	public boolean isConvertToTextOffset() {
+		return convertToTextOffset;
+	}
+
+	/**
+	 * @param convertToTextOffset the convertToTextOffset to set
+	 */
+	public void setConvertToTextOffset(boolean convertToTextOffset) {
+		this.convertToTextOffset = convertToTextOffset;
 	}
 
 	private void init() {
@@ -75,6 +91,10 @@ public class Run {
         Document xmlDoc = readingXMLFromFile(runFile);
 
         NodeList titleNodeList = xmlDoc.getElementsByTagName(afTitleTag);
+        byte[] bytes = null;
+        
+		int aOffset = 0;
+		int aLength = 0;
         for (int i = 0; i < titleNodeList.getLength(); i++) {
             Element titleElmn = (Element) titleNodeList.item(i);
             runName =  titleElmn.getAttribute("run-id");
@@ -98,6 +118,10 @@ public class Run {
                 	topic = new Topic(thisTopicID, thisTopicName);
                 	topics.put(thisTopicID, topic);
                 }
+                if (convertToTextOffset) {
+                    bytes = topic.getBytes();
+                }
+
 //                if (thisTopicID.equals(topicFileID)) {
                 NodeList linksNodeList = topicElmn.getElementsByTagName(afOutgoingTag);
                 Element outgoingElmn = (Element) linksNodeList.item(0);
@@ -107,12 +131,17 @@ public class Run {
                 LinkedAnchorList anchors = topic.getAnchors();
                 for (int k = 0; k < anchorNodeList.getLength(); k++) {
                     Element anchorElmn = (Element) anchorNodeList.item(k);
-                    String aOffset = anchorElmn.getAttribute( offsetAttributeName);
-                    String aLength = anchorElmn.getAttribute(lengthAttributeName);
+                    aOffset = Integer.parseInt(anchorElmn.getAttribute( offsetAttributeName));
+                    aLength = Integer.parseInt(anchorElmn.getAttribute(lengthAttributeName));
                     String anchorName = anchorElmn.getAttribute("name");
+                    
+                    if (convertToTextOffset) {
+                    	aLength = XML2TXT.textLength(bytes, aOffset, aLength);
+                    	aOffset = XML2TXT.byteOffsetToTextOffset(bytes, aOffset);
+                    }
                     	
 //                        anchorToBEPV = new Vector<String[]>();
-                    Anchor anchor = new Anchor(Integer.parseInt(aOffset), Integer.parseInt(aLength), anchorName);
+                    Anchor anchor = new Anchor(aOffset, aLength, anchorName);
                     if (anchor.validate(topic, Anchor.SHOW_MESSAGE_ERROR)) {
                         Target target = null;
                         if (forValidationOrAssessment) {

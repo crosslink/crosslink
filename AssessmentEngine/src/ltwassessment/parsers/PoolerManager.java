@@ -756,9 +756,13 @@ public class PoolerManager {
                 		aOffset = Integer.valueOf(anchorElmn.getAttribute(offsetAttributeName));
                 		aLength = Integer.valueOf(anchorElmn.getAttribute(lengthAttributeName));
                         	
-                        String aOffsetStr = String.valueOf(FOLTXTMatcher.byteOffsetToTextOffset(bytes, aOffset));
-                        String aLengthStr =  String.valueOf(FOLTXTMatcher.textLength(bytes, aOffset, aLength));
-                        String aExtLengthStr = String.valueOf(FOLTXTMatcher.textLength(bytes, aOffset + aLength, aExtLength));
+                        String aOffsetStr = String.valueOf(aOffset);
+                        String aLengthStr =  String.valueOf(aLength);
+                        String aExtLengthStr = String.valueOf(aExtLength);
+//                      String aOffsetStr = String.valueOf(FOLTXTMatcher.byteOffsetToTextOffset(bytes, aOffset));
+//                      String aLengthStr =  String.valueOf(FOLTXTMatcher.textLength(bytes, aOffset, aLength));
+//						String aExtLengthStr = String.valueOf(FOLTXTMatcher.textLength(bytes, aOffset + aLength, aExtLength));
+                		
                     	
                         anchorToBEPV = new Vector<String[]>();
                         if (forValidationOrAssessment) {
@@ -939,11 +943,11 @@ public class PoolerManager {
                         RunTopics.add(thisTopic);
                         isThisTopic = true;
                         
-                        // setup the topic path stuff                        
-                        String currTopicFilePath = AppResource.getInstance().getTopicXmlPathNameByFileID(thisTopic[0], AppResource.sourceLang);
-                        ResourcesManager.getInstance().updateCurrTopicFilePath(currTopicFilePath);
-                        FOLTXTMatcher.getInstance().getCurrFullXmlText();
-                        bytes = FOLTXTMatcher.getInstance().getFullXmlTxt().getBytes();
+//                        // setup the topic path stuff                        
+//                        String currTopicFilePath = AppResource.getInstance().getTopicXmlPathNameByFileID(thisTopic[0], AppResource.sourceLang);
+//                        ResourcesManager.getInstance().updateCurrTopicFilePath(currTopicFilePath);
+//                        FOLTXTMatcher.getInstance().getCurrFullXmlText();
+//                        bytes = FOLTXTMatcher.getInstance().getFullXmlTxt().getBytes();
                         
                     } else if (tagName.equals("outgoinglinks")  || tagName.equals("outgoing")) {
 //                        isOutgoing = true;
@@ -974,7 +978,7 @@ public class PoolerManager {
                         thisAnchorProperty[1] = String.valueOf(aLength);                        
 //                        thisAnchorProperty[0] = String.valueOf(FOLTXTMatcher.byteOffsetToTextOffset(bytes, aOffset));
 //                        thisAnchorProperty[1] = String.valueOf(FOLTXTMatcher.textLength(bytes, aOffset, aLength));
-                        thisAnchorProperty[4] = String.valueOf(FOLTXTMatcher.textLength(bytes, aOffset + aLength, aExtLength));
+//                        thisAnchorProperty[4] = String.valueOf(FOLTXTMatcher.textLength(bytes, aOffset + aLength, aExtLength));
                         
                         anchorsVbyTopic.add(thisAnchorProperty);
                         thisAnchorSet = thisAnchorProperty[0] + "_" + thisAnchorProperty[1];
