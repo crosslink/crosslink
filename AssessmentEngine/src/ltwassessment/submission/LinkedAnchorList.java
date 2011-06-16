@@ -237,24 +237,48 @@ public class LinkedAnchorList {
 	
 	public void connectIfOverlapped() {
 		if (anchorList.size() > 0) {
-			int count = 0;
+			int count = 1;
 			Anchor anchor = null;
 			Anchor next = null;
-			while (count < (anchorList.size() - 1)) {
-				anchor = anchorList.get(count);
+
+			anchor = anchorList.get(0);
+			int nextEnd, offsetEnd = anchor.getOffset() + anchor.getLength();
+			boolean overlapped = false;
+			
+			for (;count < (anchorList.size() - 1); ++count) {
 				
-				next = anchorList.get(count + 1);
+				next = anchorList.get(count);
+				nextEnd = (next.getOffset() + next.getLength());
 				
-				if (anchor.getNext() == null || (anchor.getNext() != next)) {
-					if (isOverlapped(anchor, next)) {
-						connectBefore(anchor, next);
-					}
+				if (anchor.getNext() != null && anchor.getNext() == next) {
+						if (nextEnd > offsetEnd)
+							offsetEnd = nextEnd;
+				}
+				else {				
+//					if ((anchor.getNext() != null && (anchor.getNext() != next)))
+//						System.err.println(anchor.toString() + " has incorrect connection with next one");
 					
-					if (anchor.getNext() != null && anchor.getNext() != next)
-						System.err.println(anchor.toString() + " has incorrect connection with next one");
+					if (nextEnd <= offsetEnd || isOverlapped(anchor, next)) { // overlapped
+						if ((anchor.getNext() != null && (anchor.getNext() != next))) {
+							System.err.println(anchor.toString() + " has incorrect connection with next one");
+							connectAfter(anchor.getNext(), next);
+						}
+						connectBefore(anchor, next);
+						
+						if (nextEnd > offsetEnd)
+							offsetEnd = nextEnd;
+					}
+					else {
+						offsetEnd = nextEnd;
+						if ((anchor.getNext() != null && (anchor.getNext() != next))) {
+							System.err.println(anchor.toString() + " should not be linked with next one " + next.toString());
+							anchor.getNext().setPrevious(null);
+							anchor.setNext(null);
+						}
+					}
 				}
 				
-				++count;
+				anchor = next;
 			}
 		}
 	}
