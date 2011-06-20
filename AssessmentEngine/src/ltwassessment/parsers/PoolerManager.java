@@ -1101,6 +1101,7 @@ public class PoolerManager {
 //                        }
 //                        isOutgoing = false;
                     } else if (tagName.equals("anchor")) {
+                    	assert (anchorsHT.get(thisAnchorSet) == null);
                         anchorsHT.put(thisAnchorSet, subAnchorsToBepsHT);
                         if (!AppResource.forValidationOrAssessment)
                         	subAnchorsToBepsHT.put(thisSubAnchorSet, toBepsVbySubAnchor);
