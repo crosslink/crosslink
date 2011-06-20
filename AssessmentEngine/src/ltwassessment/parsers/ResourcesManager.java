@@ -1471,7 +1471,7 @@ public class ResourcesManager {
         int pABepIndex = 0;
         int pAnchorCounter = 0;
         Vector<String[]> poolAnchorsOLNameStatusVSA = this.getPoolAnchorsOLNameStatusV();
-        int i = 0, j = 0, k;
+        int i = 0, j = 0, k = 0;
         String[] pAnchorOLNameStatus = null;
         String[] thisPAnchorOLNameStatus = null;
         String[] thisPAnchorSEStatus = null;
@@ -1487,12 +1487,18 @@ public class ResourcesManager {
         
         boolean firstAnchorFound = false;
         
-        int lhs, rhs;
+        int lhs, rhs, step;
         	
-        if (forwardOrBackward) 
+        if (forwardOrBackward) {
         	i = 0;
-        else 
-        	i = poolAnchorsOLNameStatusVSA.size();
+        	pAnchorIndex = poolAnchorsOLNameStatusVSA.size() - 1;
+        	step = 1;
+        }
+        else {
+        	i = poolAnchorsOLNameStatusVSA.size() - 1;
+        	pAnchorIndex = 0;
+        	step = -1;
+        }
         
         while (true) {
 //        for (; i < poolAnchorsOLNameStatusVSA.size(); ++i) {
@@ -1536,97 +1542,130 @@ public class ResourcesManager {
         		pAnchorFirstIndex = i;
         		firstAnchorFound = true;
         		
-        		if (i > pAnchorIndex)
+       			if ((forwardOrBackward && i > pAnchorIndex) || (!forwardOrBackward && i < pAnchorIndex))
         			break;
+
         	}        	   	
         	
             if (pAnchorO.equals(pAnchorOLNameStatus[0])) {
-                pAnchorIndex = pAnchorCounter;
+                pAnchorIndex = i; //pAnchorCounter;
                 // -------------------------------------------------------------
 //                int pABepCounter = 0;
 //                pABepNewIndex = 0;
-                HashMap<String, Vector<String[]>> anchorBepLinksHM = pooler.getBepSetByAnchor(topicID);
-                Vector<String[]> bepLinksOSIDStatusVSA = anchorBepLinksHM.get(pAnchorO + "_" + pAnchorL);
+
 //                log("bepLinksOSIDStatusVSA: " + bepLinksOSIDStatusVSA.size());
                
                 Vector<String[]> bepLinksVSA = anchorBepLinksOIDStatus.get(pAnchorO + "_" + pAnchorL);
 //                log("bepLinksVSA: " + bepLinksVSA.size());
                 String[] bepLinksOSIDStatus = null;
-                for (k = 0; k < bepLinksVSA.size(); ++k) {
+                int k_lhs, k_rhs;
+                if (forwardOrBackward) 
+                	k = 0;
+                else
+                	k = bepLinksVSA.size() - 1;
+                while (true) {
+	                if (forwardOrBackward) {
+	                	k_lhs = k;
+	                	k_rhs = bepLinksVSA.size() - 1;               	
+	                }
+	                else {
+	                	k_lhs = 0;
+	                	k_rhs = k;                	
+	                }
+                	if (k_lhs > k_rhs)
+                		break;
+                	
                 	bepLinksOSIDStatus = bepLinksVSA.get(k);
                     if (linkBepID.equals(bepLinksOSIDStatus[1])/* && pAnchorOLSA[0].equals(bepLinksOSIDStatus[6])*/) 
                     	break;
+	                k += step;
                 }
                 
-                ++k;
+                k += step;
                 
-                if (nextUnassessed)
-                	for (; k < bepLinksVSA.size(); ++k) {
-                		bepLinksOSIDStatus = bepLinksVSA.get(k);
-                		if (bepLinksOSIDStatus.equals("0"))
-                			break;
-                	}
+                if (nextUnassessed) {
+                    while (true) {
+    	                if (forwardOrBackward) {
+    	                	k_lhs = k;
+    	                	k_rhs = bepLinksVSA.size() - 1;               	
+    	                }
+    	                else {
+    	                	k_lhs = 0;
+    	                	k_rhs = k;                	
+    	                }
+                    	if (k_lhs > k_rhs)
+                    		break;
+                    	
+                    	bepLinksOSIDStatus = bepLinksVSA.get(k);
+                        if (bepLinksOSIDStatus[2].equals("0"))
+                        	break;
+    	                k += step;
+                    }
+                }
                 
                 if (k >= bepLinksVSA.size()) {
                 	firstAnchorFound = false;
-                	continue;
+//                	continue;
                 }
-                pABepIndex = k; //Integer.parseInt(bepLinksOSIDStatus[9]); //pABepCounter;
-                // =====================================================
-//                if (pABepIndex == bepLinksVSA.size() - 1) {
-//                    if (pAnchorIndex == poolAnchorsOLNameStatusVSA.size() - 1) {
-//                        pAnchorNewIndex = 0;
-//                        pABepNewIndex = 0;
-//                    } else if (pAnchorIndex < poolAnchorsOLNameStatusVSA.size() - 1) {
-//                        pAnchorNewIndex = pAnchorIndex + 1;
-//                        pABepNewIndex = 0;
-//                    }
-//                } else if (pABepIndex < bepLinksVSA.size() - 1) {
-//                    pAnchorNewIndex = pAnchorIndex;
-//                    pABepNewIndex = pABepIndex + 1;
-//                }
-//                // -----------------------------------------------------
-//                // Get PoolAnchor O, L, S, E, Status
-//                thisPAnchorOLNameStatus = poolAnchorsOLNameStatusVSA.elementAt(pAnchorNewIndex);
-//                thisPAnchorSEStatus = this.getTopicAnchorSEStatusByOL(topicID, new String[]{thisPAnchorOLNameStatus[0], thisPAnchorOLNameStatus[1]});
-//                nextTAnchorOL = new String[]{thisPAnchorOLNameStatus[0], thisPAnchorOLNameStatus[1], thisPAnchorSEStatus[0], thisPAnchorSEStatus[1], thisPAnchorOLNameStatus[3], thisPAnchorOLNameStatus[4]};
-//                // Get TargetBepLink
-//                // new String[]{tbOffset, tbStartP, tbFileID, tbRel}
-//                Vector<String[]> thisBepLinksVSA = anchorBepLinksOIDStatus.get(thisPAnchorOLNameStatus[0] + "_" + thisPAnchorOLNameStatus[1]);
-//                thisPABepLinkSet = thisBepLinksVSA.elementAt(pABepNewIndex);
-                thisPABepLinkSet = bepLinksVSA.elementAt(pABepIndex);
-                bepLinkStartP = "0";
-                subAnchorName = null;
-                subAnchorOffset = null;
-                subAnchorLength = null;
-                subAnchorRel = null;
-                subAnchorName = thisPABepLinkSet[5];
-                subAnchorOffset = thisPABepLinkSet[6];
-                subAnchorLength = thisPABepLinkSet[7];
-                subAnchorRel = thisPABepLinkSet[8];
-                for (String[] bepLinksOSIDS : bepLinksOSIDStatusVSA) {
-                    if (bepLinksOSIDS[0].equals(thisPABepLinkSet[0])) {
-                        bepLinkStartP = bepLinksOSIDS[1];
-                        break;
-                    }
-                }
-                nextTABepOID = new String[]{thisPABepLinkSet[0], bepLinkStartP, thisPABepLinkSet[1], thisPABepLinkSet[2], thisPABepLinkSet[3], thisPABepLinkSet[4], subAnchorName, subAnchorOffset, subAnchorLength, subAnchorRel};
-
-                nextTAB.add(nextTAnchorOL);
-                nextTAB.add(nextTABepOID);
-                
-                break;
-//                    }
-//                    pABepCounter++;
-//                }
+                else {
+                	pABepIndex = k; //Integer.parseInt(bepLinksOSIDStatus[9]); //pABepCounter;
+	                // =====================================================
+	//                if (pABepIndex == bepLinksVSA.size() - 1) {
+	//                    if (pAnchorIndex == poolAnchorsOLNameStatusVSA.size() - 1) {
+	//                        pAnchorNewIndex = 0;
+	//                        pABepNewIndex = 0;
+	//                    } else if (pAnchorIndex < poolAnchorsOLNameStatusVSA.size() - 1) {
+	//                        pAnchorNewIndex = pAnchorIndex + 1;
+	//                        pABepNewIndex = 0;
+	//                    }
+	//                } else if (pABepIndex < bepLinksVSA.size() - 1) {
+	//                    pAnchorNewIndex = pAnchorIndex;
+	//                    pABepNewIndex = pABepIndex + 1;
+	//                }
+	//                // -----------------------------------------------------
+	//                // Get PoolAnchor O, L, S, E, Status
+                	thisPAnchorOLNameStatus = pAnchorOLNameStatus;
+//	                thisPAnchorOLNameStatus = poolAnchorsOLNameStatusVSA.elementAt(i);
+	                thisPAnchorSEStatus = this.getTopicAnchorSEStatusByOL(topicID, new String[]{thisPAnchorOLNameStatus[0], thisPAnchorOLNameStatus[1]});
+	                nextTAnchorOL = new String[]{thisPAnchorOLNameStatus[0], thisPAnchorOLNameStatus[1], thisPAnchorSEStatus[0], thisPAnchorSEStatus[1], thisPAnchorOLNameStatus[3], thisPAnchorOLNameStatus[4]};
+	//                // Get TargetBepLink
+	//                // new String[]{tbOffset, tbStartP, tbFileID, tbRel}
+	//                Vector<String[]> thisBepLinksVSA = anchorBepLinksOIDStatus.get(thisPAnchorOLNameStatus[0] + "_" + thisPAnchorOLNameStatus[1]);
+	//                thisPABepLinkSet = thisBepLinksVSA.elementAt(pABepNewIndex);
+	                thisPABepLinkSet = bepLinksVSA.elementAt(pABepIndex);
+	                bepLinkStartP = "0";
+	                subAnchorName = null;
+	                subAnchorOffset = null;
+	                subAnchorLength = null;
+	                subAnchorRel = null;
+	                subAnchorName = thisPABepLinkSet[5];
+	                subAnchorOffset = thisPABepLinkSet[6];
+	                subAnchorLength = thisPABepLinkSet[7];
+	                subAnchorRel = thisPABepLinkSet[8];
+	                
+	              HashMap<String, Vector<String[]>> anchorBepLinksHM = pooler.getBepSetByAnchor(topicID);
+	              Vector<String[]> bepLinksOSIDStatusVSA = anchorBepLinksHM.get(pAnchorO + "_" + pAnchorL);
+	                for (String[] bepLinksOSIDS : bepLinksOSIDStatusVSA) {
+	                    if (bepLinksOSIDS[0].equals(thisPABepLinkSet[0])) {
+	                        bepLinkStartP = bepLinksOSIDS[1];
+	                        break;
+	                    }
+	                }
+	                nextTABepOID = new String[]{thisPABepLinkSet[0], bepLinkStartP, thisPABepLinkSet[1], thisPABepLinkSet[2], thisPABepLinkSet[3], thisPABepLinkSet[4], subAnchorName, subAnchorOffset, subAnchorLength, subAnchorRel};
+	
+	                nextTAB.add(nextTAnchorOL);
+	                nextTAB.add(nextTABepOID);
+	                
+	                break;
+	//                    }
+	//                    pABepCounter++;
+	//                }
+	            }
             }
             
-            if (forwardOrBackward) 
-            	++i;
-            else 
-            	--i;
+            i += step;
             
-            pAnchorCounter++;
+//            pAnchorCounter++;
         }
         
         
