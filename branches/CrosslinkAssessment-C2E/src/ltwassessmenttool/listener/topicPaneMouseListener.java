@@ -735,8 +735,8 @@ public class topicPaneMouseListener implements MouseInputListener {
                     // RETURN V[String[]{anchor_O, L}, String[]{BepLink_O, ID}]
                     Vector<String[]> nextUnAssTAB = this.myRSCManager.getCurrPAnchorUNAssBLinkWithUpdateNAV(this.currTopicID, new String[]{pAnchorO, pAnchorL}, new String[]{bepOffset, bepID});
                     String[] unAssBEPOID = nextUnAssTAB.elementAt(1);
-                    String unAssBepID = unAssBEPOID[1];
-                    String unAssBepFilePath = poolerManager.getXmlFilePathByTargetID(unAssBepID, AppResource.sourceLang);
+                    String unAssBepID = unAssBEPOID[2];
+                    String unAssBepFilePath = poolerManager.getXmlFilePathByTargetID(unAssBepID, AppResource.targetLang);
                     if (unAssBepFilePath.startsWith(afTasnCollectionErrors)) {
                         unAssBepFilePath = myRSCManager.getErrorXmlFilePath(unAssBepFilePath);
                     }
