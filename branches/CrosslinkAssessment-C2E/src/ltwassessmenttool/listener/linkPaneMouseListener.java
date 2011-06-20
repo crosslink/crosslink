@@ -248,7 +248,7 @@ public class linkPaneMouseListener implements MouseInputListener {
             this.myPoolUpdater.updateTopicAnchorLinkRel(topicID, new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1]},
                     currALinkID, currLinkStatus);
             // -----------------------------------------------------------------
-            LTWAssessmentToolControler.getInstance().goNextLink(true);
+            LTWAssessmentToolControler.getInstance().goNextLink(true, true);
 //        } else {
 //            // For incoming TBA
 //            // -----------------------------------------------------------------
@@ -378,7 +378,7 @@ public class linkPaneMouseListener implements MouseInputListener {
                 this.myPoolUpdater.updateTopicAnchorLinkRel(topicID, new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1]},
                         currALinkID, currLinkStatus);
                 // -------------------------------------------------------------
-                LTWAssessmentToolControler.getInstance().goNextLink(true);
+                LTWAssessmentToolControler.getInstance().goNextLink(true, true);
             }
 //        } else {
 //            // For incoming TBA

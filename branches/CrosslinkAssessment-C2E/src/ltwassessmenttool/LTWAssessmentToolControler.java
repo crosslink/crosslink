@@ -53,7 +53,7 @@ public class LTWAssessmentToolControler {
         return instance;
     }
     
-    public void goNextLink(boolean updateCurrAnchorStatus) {
+    public void goNextLink(boolean updateCurrAnchorStatus, boolean nextUnassessed) {
         // ---------------------------------------------------------------------
         globalPoolBackupCounter++;
         // Pool Assessment Result Back up
@@ -96,7 +96,7 @@ public class LTWAssessmentToolControler {
         } */else {
 
                 
-                LTWAssessmentToolView.moveForwardALink(updateCurrAnchorStatus);
+                LTWAssessmentToolView.moveForwardALink(updateCurrAnchorStatus, nextUnassessed);
                 // ---------------------------------------------------------------------
                 // ---------------------------------------------------------------------
                 // </editor-fold>

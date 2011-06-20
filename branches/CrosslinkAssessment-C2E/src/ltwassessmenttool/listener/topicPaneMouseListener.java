@@ -781,7 +781,7 @@ public class topicPaneMouseListener implements MouseInputListener {
 
         }
         
-        LTWAssessmentToolControler.getInstance().goNextLink(false);
+        LTWAssessmentToolControler.getInstance().goNextLink(false, true);
         // </editor-fold>
     }
 

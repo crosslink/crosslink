@@ -1063,17 +1063,17 @@ public class LTWAssessmentToolView extends FrameView {
             // =================================================================
             // 1) Get the NEXT Anchor O, L, S, E, Status + its BEP link O, S, ID, Status
             //    With TAB Nav Update --> NEXT TAB
-            Vector<String[]> nextAnchorBepLinkVSA = rscManager.getPreTABWithUpdateNAV(currTopicID, currPAnchorOLSA, currPALinkOIDSA);
+            Vector<String[]> nextAnchorBepLinkVSA = rscManager.getPreTABWithUpdateNAV(currTopicID, currPAnchorOLSA, currPALinkOIDSA, false);
             
             updateAnchorChanges(nextAnchorBepLinkVSA, currTopicOLSEStatusSA, currPAnchorOLSA, currPALinkOIDSA);
     }
 
     @Action
     public void btnGoForwardALink() {
-    	moveForwardALink(false);
+    	moveForwardALink(false, false);
     }
     
-    public static void moveForwardALink(boolean updateCurrAnchorStatus) {
+    public static void moveForwardALink(boolean updateCurrAnchorStatus, boolean nextUnassessed) {
         // Click the button to Go Back one Link
 //        PoolUpdater myPUpdater = new PoolUpdater();
 //        boolean isTABOutgoing = Boolean.valueOf(System.getProperty(sysPropertyIsTABKey));
@@ -1102,12 +1102,13 @@ public class LTWAssessmentToolView extends FrameView {
             	} else {
 			      poolAnchorStatus = rscManager.getPoolAnchorCompletedStatus(currTopicID, currPAnchorOLSA);
             	}
-            	myPUpdater.updatePoolAnchorStatus(currTopicID, currPAnchorOLSA, poolAnchorStatus);            	
+            	if (!poolAnchorStatus.equals("0"))
+            		myPUpdater.updatePoolAnchorStatus(currTopicID, currPAnchorOLSA, poolAnchorStatus);            	
             }
             // -------------------------------------------------------------
             // 1) Get the NEXT Anchor O, L, S, E, Status + its BEP link O, S, ID, Status
             //    With TAB Nav Update --> NEXT TAB
-            Vector<String[]> nextAnchorBepLinkVSA = rscManager.getNextTABWithUpdateNAV(currTopicID, currPAnchorOLSA, currPALinkOIDSA);
+            Vector<String[]> nextAnchorBepLinkVSA = rscManager.getNextTABWithUpdateNAV(currTopicID, currPAnchorOLSA, currPALinkOIDSA, nextUnassessed);
 
             updateAnchorChanges(nextAnchorBepLinkVSA, currTopicOLSEStatusSA, currPAnchorOLSA, currPALinkOIDSA);
     }
