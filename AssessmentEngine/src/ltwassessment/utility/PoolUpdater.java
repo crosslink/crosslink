@@ -359,6 +359,7 @@ public class PoolUpdater {
                         if (rawTxt.equals(targetID)) {
                             if (j != -1) {
                                 xm.updateToken(j, tbRelStatus);
+                                break;
                             }
                         }
                     }
