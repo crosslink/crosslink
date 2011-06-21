@@ -51,7 +51,7 @@ public class topicPaneMouseListener implements MouseInputListener {
     // Constant Variables
     protected final int bepLength = 4;
     private final String sysPropertyKey = "isTABKey";
-    private String preTHyperOLSEStatus = "";
+    private String preTHyperOLSEStatus[] = null;
     private String paneContentType = "";
     private JTextPane topicTextPane;
     private JTextPane linkTextPane;
@@ -220,7 +220,7 @@ public class topicPaneMouseListener implements MouseInputListener {
                 this.topicTextPane.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
                 // -------------------------------------------------------------
                 // Get CURR Topic OLSEStatus before we go to NEXT Pool Anchor
-                this.preTHyperOLSEStatus = System.getProperty(CurrentFocusedAnchor.sysPropertyCurrTopicOLSEStatusKey);
+                this.preTHyperOLSEStatus = CurrentFocusedAnchor.getCurrentFocusedAnchor().toArray();
                 // -------------------------------------------------------------
                 // 1) Highlight Anchor/BEP + Auto Scrolling
                 String currAnchorO = currSCRSEName[4];
@@ -230,7 +230,7 @@ public class topicPaneMouseListener implements MouseInputListener {
             	int anchorEnd = Integer.valueOf(scrSEPosKey[2]) + Integer.valueOf(scrSEPosKey[3]);
             	scrSEPosKey[2] = String.valueOf(anchorEnd);
 //                String[] scrSEPosKey = new String[]{currSCRSEName[0], currSCRSEName[1], currSCRSEName[3]};
-                String[] preAnchorOLSEStatus = this.preTHyperOLSEStatus.split("_");
+                String[] preAnchorOLSEStatus = this.preTHyperOLSEStatus;
                 String[] preAnchorSEStatus = new String[]{preAnchorOLSEStatus[2], preAnchorOLSEStatus[3], preAnchorOLSEStatus[4]};
 //
                 LTWAssessmentToolView.updateTopicAnchorsHighlight(this.topicTextPane, preAnchorSEStatus, scrSEPosKey, Integer.parseInt(currAnchorStatus));
@@ -245,7 +245,7 @@ public class topicPaneMouseListener implements MouseInputListener {
                     // ---------------------------------------------------------
                     // Update PRE Pool Anchor Status <-- When GO NEXT Pool Anchor by AnchorText Click
                     // because the PRE-Pool_Anchor might have been completed.
-                    String[] preAnchorOLSEStatusSA = this.preTHyperOLSEStatus.split("_");
+                    String[] preAnchorOLSEStatusSA = this.preTHyperOLSEStatus;
                     String prePAnchorO = preAnchorOLSEStatusSA[0];
                     String prePAnchorL = preAnchorOLSEStatusSA[1];
 
@@ -275,7 +275,7 @@ public class topicPaneMouseListener implements MouseInputListener {
                     // ---------------------------------------------------------
                     // Update Pool BEP Status <-- When GO NEXT Pool BEP
                     // because the PRE-Pool_Bep might have been completed.
-                    String[] preBepOLSEStatusSA = this.preTHyperOLSEStatus.split("_");
+                    String[] preBepOLSEStatusSA = this.preTHyperOLSEStatus;
                     String prePBepO = preBepOLSEStatusSA[0];
                     String poolBepStatus = this.myRSCManager.getPoolBepCompletedStatus(this.currTopicID, prePBepO);
                     this.pUpdater.updatePoolBepStatus(this.currTopicID, prePBepO, poolBepStatus);
@@ -289,7 +289,7 @@ public class topicPaneMouseListener implements MouseInputListener {
             if (withinTarget) {
                 logger("rightTopicAnchorClickToggle" + "_" + currSCRSEName[0] + "_" + currSCRSEName[1]);
 
-                this.preTHyperOLSEStatus = System.getProperty(CurrentFocusedAnchor.sysPropertyCurrTopicOLSEStatusKey);
+                this.preTHyperOLSEStatus = CurrentFocusedAnchor.getCurrentFocusedAnchor().toArray();
                 this.topicTextPane.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
                 // 1) Check the Status of the Anchor
                 // 2) Toggle the Anchor/BEP Highlight - Selected/NONRelevant
@@ -523,7 +523,7 @@ public class topicPaneMouseListener implements MouseInputListener {
 // =====================================================================
 // CHECK: Pre-Highlight-Anchor might be the Curr-Anchor?
 
-        String[] preAnchorOLSEStatusSA = this.preTHyperOLSEStatus.split("_");
+        String[] preAnchorOLSEStatusSA = this.preTHyperOLSEStatus;
         String prePAnchorO = preAnchorOLSEStatusSA[0];
         String prePAnchorL = preAnchorOLSEStatusSA[1];
         String prePAnchorS = preAnchorOLSEStatusSA[2];
@@ -822,7 +822,7 @@ public class topicPaneMouseListener implements MouseInputListener {
         // ---------------------------------------------------------------------
         // =====================================================================
         // CHECK: Pre-BEP might be the Curr-BEP?
-        String[] preBepOLSEStatusSA = this.preTHyperOLSEStatus.split("_");
+        String[] preBepOLSEStatusSA = this.preTHyperOLSEStatus;
         String prePBepS = preBepOLSEStatusSA[2];
         String prePBepE = preBepOLSEStatusSA[3];
         String prePBepStatus = preBepOLSEStatusSA[4];
@@ -1039,7 +1039,7 @@ public class topicPaneMouseListener implements MouseInputListener {
         // 2) NO: INSERT BEP ICONs for this Topic
         try {
             // Get Pre-BEP data
-            String[] preBepOLSEStatusSA = this.preTHyperOLSEStatus.split("_");
+            String[] preBepOLSEStatusSA = this.preTHyperOLSEStatus;
             String prePBepO = preBepOLSEStatusSA[0];
             String prePBepL = preBepOLSEStatusSA[1];
             String prePBepS = preBepOLSEStatusSA[2];
