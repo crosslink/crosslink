@@ -25,23 +25,23 @@ public class Anchor {
 	public static final int SHOW_MESSAGE_OK = 2;
 	public static final int SHOW_MESSAGE_ERROR = 4;
 	
-	private int offset = 0;
-	private int length = 0;
-	private int extendedLength = 0; // overlapping
-	private String name = "";
-	private int rank = 0;
-//	private int over
+	protected int offset = 0;
+	protected int length = 0;
+	protected int extendedLength = 0; // overlapping
+	protected String name = "";
+	protected int rank = 0;
+//	protected int over
 	
-	private boolean valid = false;
+	protected boolean valid = false;
 	
 	// for the overlapping Anchors
-	private Anchor first = null;
-	private Anchor last = null;
-	private Anchor next = null;
-	private Anchor previous = null;
+	protected Anchor first = null;
+	protected Anchor last = null;
+	protected Anchor next = null;
+	protected Anchor previous = null;
 
-//	private Vector<Target> targets = null;
-	private Map<String, Target>	targets = null;
+//	protected Vector<Target> targets = null;
+	protected Map<String, Target>	targets = null;
 	
 //	public Anchor(Anchor anchor) {
 //		this.offset = anchor.getOffset();
@@ -225,5 +225,19 @@ public class Anchor {
 	@Override
 	public String toString() {
 		return "Anchor: " + getName() + " Offset: " + getOffset();
+	}
+	
+	public String offsetToString() {
+		return String.valueOf(offset);
+	}
+	
+
+	public String lengthToString() {
+		return String.valueOf(length);
+	}
+	
+
+	public String extendedLengthToString() {
+		return String.valueOf(extendedLength);
 	}
 }
