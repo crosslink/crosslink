@@ -54,7 +54,15 @@ public class CurrentFocusedAnchor extends IndexedAnchor {
     }
     
     public String[] toArray() {
-    	
-		return null; 	
+    	String[] array = new String[8];
+    	array[0] = this.offsetToString();
+    	array[1] = this.lengthToString();
+    	array[2] = this.screenPosStartToString();
+    	array[3] = this.screenPosEndToString();
+    	array[4] = this.statusToString();
+    	array[5] = this.extendedLengthToString();
+    	array[6] = this.offsetIndexToString();
+    	array[7] = this.lengthIndexToString();
+		return array; 	
     }
 }
