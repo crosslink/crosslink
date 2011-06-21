@@ -28,6 +28,8 @@ import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
 
 import ltwassessment.AppResource;
+import ltwassessment.assessment.Bep;
+import ltwassessment.assessment.IndexedAnchor;
 import ltwassessment.utility.PoolUpdater;
 
 import org.jdesktop.application.ResourceMap;
@@ -704,15 +706,15 @@ public class PoolerManager {
         return bepAnchorsHT;
     }
 
-    public HashMap<String, Vector<String[]>> getBepSetByAnchor(String topicFileID) {
+    public HashMap<String, Vector<IndexedAnchor>> getBepSetByAnchor(String topicFileID) {
         // assign a Topic File ID (i.e. 112398)
         // to get Anchor(1114_1133), Vector<String[]{123017, 1538}+>
-        HashMap<String, Vector<String[]>> anchorBepsHT = null; //new HashMap<String, Vector<String[]>>();
+        HashMap<String, Vector<IndexedAnchor>> anchorBepsHT = null; //new HashMap<String, Vector<String[]>>();
         anchorBepsHT = getAnchorBepSetbyTopicID(topicFileID, poolXMLPath);
         return anchorBepsHT;
     }
 
-    private HashMap<String, Vector<String[]>> getAnchorBepSetbyTopicID(String topicFileID, String afXmlPath) {
+    private HashMap<String, Vector<IndexedAnchor>> getAnchorBepSetbyTopicID(String topicFileID, String afXmlPath) {
         // Format:
         // Anchor(1114_1133), Vector<String[]{123017, 1538}+>
         boolean forValidationOrAssessment = AppResource.forValidationOrAssessment;
@@ -732,7 +734,7 @@ public class PoolerManager {
 		int aOffset;
 		int aLength;
         
-        HashMap<String, Vector<String[]>> anchorBepsHT = new HashMap<String, Vector<String[]>>();
+        HashMap<String, Vector<IndexedAnchor>> anchorBepsHT = new HashMap<String, Vector<IndexedAnchor>>();
         Document xmlDoc = readingXMLFromFile(afXmlPath);
 
         NodeList titleNodeList = xmlDoc.getElementsByTagName(afTitleTag);
@@ -747,7 +749,7 @@ public class PoolerManager {
                     Element outgoingElmn = (Element) linksNodeList.item(0);
                     NodeList anchorNodeList = outgoingElmn.getElementsByTagName(afAnchorTag);
                     String anchorKey = "";
-                    Vector<String[]> anchorToBEPV;
+                    Vector<IndexedAnchor> anchorToBEPV = new Vector<IndexedAnchor>();;
                     for (int k = 0; k < anchorNodeList.getLength(); k++) {
                         Element anchorElmn = (Element) anchorNodeList.item(k);
                         String anchorName = anchorElmn.getAttribute("name");
@@ -763,8 +765,7 @@ public class PoolerManager {
 //                      String aLengthStr =  String.valueOf(FOLTXTMatcher.textLength(bytes, aOffset, aLength));
 //						String aExtLengthStr = String.valueOf(FOLTXTMatcher.textLength(bytes, aOffset + aLength, aExtLength));
                 		
-                    	
-                        anchorToBEPV = new Vector<String[]>();
+                        IndexedAnchor anchor = null;
                         if (forValidationOrAssessment) {
                         	anchorKey = aOffsetStr + "_" + aLengthStr;
                             NodeList subAnchorNodeList = anchorElmn.getElementsByTagName(afSubAnchorTag);
@@ -781,7 +782,7 @@ public class PoolerManager {
 //                                saLength = String.valueOf(aLength);
                                 String sanchorName = subAnchorElmn.getAttribute("saname");
                                 String sarel = subAnchorElmn.getAttribute("sarel");
-                                
+                                anchor = new IndexedAnchor(Integer.parseInt(saOffset), Integer.parseInt(saLength), sanchorName);
                                 NodeList toBepNodeList = subAnchorElmn.getElementsByTagName(afToBepTag);
                                 for (int m = 0; m < toBepNodeList.getLength(); m++) {
                                     Element toBepElmn = (Element) toBepNodeList.item(m);
@@ -791,13 +792,18 @@ public class PoolerManager {
 
                                     Node tbXmlFileIDTextNode = toBepElmn.getFirstChild();
                                     String tbFileID = tbXmlFileIDTextNode.getTextContent();
-                                    anchorToBEPV.add(new String[]{tbOffset, tbStartP, tbFileID, tbRel, sanchorName, saOffset, saLength, sarel});
+                                                                       
+                                    //anchorToBEPV.add(new String[]{tbOffset, tbStartP, tbFileID, tbRel, sanchorName, saOffset, saLength, sarel});
+                                    anchor.addBep(new Bep(Integer.parseInt(tbOffset), Integer.parseInt(tbStartP), tbFileID, Integer.parseInt(tbRel)));
                                 }
                             }
                         }
                         else {
                         	anchorKey = aOffsetStr + "_" + (Integer.valueOf(aOffset) + Integer.valueOf(aLength)) + "_" + anchorName;
                             NodeList toBepNodeList = anchorElmn.getElementsByTagName(afToBepTag);
+                            anchor = new IndexedAnchor(aOffset, aLength, anchorName);
+                            anchor.setExtendedLength(aExtLength);
+                            
                             for (int m = 0; m < toBepNodeList.getLength(); m++) {
                                 Element toBepElmn = (Element) toBepNodeList.item(m);
                                 
@@ -808,7 +814,9 @@ public class PoolerManager {
                                 String tbOffset = toBepElmn.getAttribute("bep_offset");
                                 Node tbXmlFileIDTextNode = toBepElmn.getFirstChild();
                                 String tbFileID = tbXmlFileIDTextNode.getTextContent();
-                                anchorToBEPV.add(new String[]{tbFileID, tbOffset, target_lang, target_title});
+                                //anchorToBEPV.add(new String[]{tbFileID, tbOffset, target_lang, target_title});
+                                Bep bep = new Bep(tbFileID, Integer.parseInt(tbOffset), target_lang, target_title);
+                                anchor.addBep(bep);
                             }
                         }
                         anchorBepsHT.put(anchorKey, anchorToBEPV);

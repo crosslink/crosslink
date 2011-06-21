@@ -44,6 +44,7 @@ public class CurrentFocusedAnchor extends IndexedAnchor {
 		
 		this.status = status;
 		
+		setIndexOffset(offset, length);
 //    	setCurrentAnchorProperty(String.valueOf(offset), String.valueOf(length), String.valueOf(screenPosStart), String.valueOf(screenPosEnd), String.valueOf(status), String.valueOf(extLength));
     }
     
@@ -64,5 +65,10 @@ public class CurrentFocusedAnchor extends IndexedAnchor {
     	array[6] = this.offsetIndexToString();
     	array[7] = this.lengthIndexToString();
 		return array; 	
+    }
+    
+    public void setIndexOffset(int offset, int length) {
+    	this.setOffsetIndex(offset);
+    	this.setLengthIndex(length);
     }
 }
