@@ -4,12 +4,12 @@
 	<collection>Korean Wikipedia 2010 Collection</collection>
 	<topic file="47565" name="智力游戏">
 		<outgoinglinks>
-			<anchor arel="0" aname="智" aoffset="265" alength="1" ext_length="3">
+			<anchor arel="-1" aname="智" aoffset="265" alength="1" ext_length="3">
 				<subanchor sarel="0" saname="智" saoffset="265" salength="1" rank="91">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Book of Wisdom">555128</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Book of Wisdom">555128</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Wisdom, Montana">123324</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Wisdom">46029</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sophiology">6490676</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Wisdom">46029</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sophiology">6490676</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Olli Wisdom">2168657</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Pete Wisdom">412125</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Chile">5489</tobep>
@@ -18,7 +18,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Wisdom (film)">5977601</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Robert Wisdom">6229802</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Norman Wisdom">151532</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Intelligence">519280</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Intelligence">519280</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="智力" saoffset="265" salength="2" rank="31">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Intelligence agency">81014</tobep>
@@ -237,7 +237,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Major League Baseball on Fox broadcasters">6745318</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="是" aoffset="561" alength="1" ext_length="0">
+			<anchor arel="-1" aname="是" aoffset="561" alength="1" ext_length="0">
 				<subanchor sarel="0" saname="是" saoffset="561" salength="1" rank="154">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Isaz">1579113</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Zongzi">465125</tobep>
@@ -379,14 +379,14 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Swamping problem">16989249</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="，" aoffset="569" alength="1" ext_length="0">
+			<anchor arel="-1" aname="，" aoffset="569" alength="1" ext_length="0">
 				<subanchor sarel="0" saname="，" saoffset="569" salength="1" rank="135">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Comma">59125</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="合" aoffset="573" alength="1" ext_length="0">
+			<anchor arel="-1" aname="合" aoffset="573" alength="1" ext_length="0">
 				<subanchor sarel="0" saname="合" saoffset="573" salength="1" rank="119">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Richard Marx songwriting and production discography">19065223</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Richard Marx songwriting and production discography">19065223</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Co-co! Magazine">4098862</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Cobalt">24580536</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="CO">234610</tobep>
@@ -404,9 +404,9 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Groupe Latécoère">11578036</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="單" aoffset="574" alength="1" ext_length="0">
+			<anchor arel="-1" aname="單" aoffset="574" alength="1" ext_length="0">
 				<subanchor sarel="0" saname="單" saoffset="574" salength="1" rank="143">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Single (music)">156540</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Single (music)">156540</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Shan (surname)">9298630</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="DVD single">2140775</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Single track (rail)">3010919</tobep>
@@ -423,7 +423,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Single (Natasha Bedingfield song)">4987688</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="獨" aoffset="575" alength="1" ext_length="0">
+			<anchor arel="-1" aname="獨" aoffset="575" alength="1" ext_length="0">
 				<subanchor sarel="0" saname="獨" saoffset="575" salength="1" rank="120">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="When You&apos;re Alone, You&apos;re Not Alone">4009210</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Alone / But Never Alone">25866572</tobep>
@@ -441,7 +441,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Alone (E.M.D. song)">19304128</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="玩" aoffset="576" alength="1" ext_length="0">
+			<anchor arel="-1" aname="玩" aoffset="576" alength="1" ext_length="0">
 				<subanchor sarel="0" saname="玩" saoffset="576" salength="1" rank="117">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Game">18723138</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Child&apos;s Play (play)">7033833</tobep>
@@ -461,16 +461,16 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Major League Baseball on Fox broadcasters">6745318</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="。" aoffset="580" alength="1" ext_length="0">
+			<anchor arel="-1" aname="。" aoffset="580" alength="1" ext_length="0">
 				<subanchor sarel="0" saname="。" saoffset="580" salength="1" rank="137">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Full stop">23523100</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="通" aoffset="585" alength="1" ext_length="0">
+			<anchor arel="-1" aname="通" aoffset="585" alength="1" ext_length="0">
 				<subanchor sarel="0" saname="通" saoffset="585" salength="1" rank="145">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Link rot">365511</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Link+">1571552</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Link (film)">1705406</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Link (film)">1705406</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of diplomatic missions in Russia">13591903</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Johann Heinrich Friedrich Link">1437141</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="South Link (Link Light Rail)">12786645</tobep>
@@ -485,7 +485,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Link">41319</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="常" aoffset="586" alength="1" ext_length="0">
+			<anchor arel="-1" aname="常" aoffset="586" alength="1" ext_length="0">
 				<subanchor sarel="0" saname="常" saoffset="586" salength="1" rank="139">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Chang (surname)">1696072</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Vote early and vote often">25051397</tobep>
@@ -503,7 +503,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Super Dave (TV series)">5793882</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="時" aoffset="589" alength="1" ext_length="0">
+			<anchor arel="-1" aname="時" aoffset="589" alength="1" ext_length="0">
 				<subanchor sarel="0" saname="時" saoffset="589" salength="1" rank="121">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Grammatical tense">12947</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Time After Time">90132</tobep>
@@ -622,7 +622,7 @@
 			</anchor>
 			<anchor arel="0" aname="或" aoffset="596" alength="1" ext_length="0">
 				<subanchor sarel="0" saname="或" saoffset="596" salength="1" rank="112">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Demographics of Montenegro">3265937</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Demographics of Montenegro">3265937</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of languages by name">167473</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Or (heraldry)">1095461</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Rocky and Bullwinkle episodes">12745584</tobep>
@@ -828,9 +828,9 @@
 			</anchor>
 			<anchor arel="0" aname="雜誌" aoffset="615" alength="2" ext_length="0">
 				<subanchor sarel="0" saname="雜誌" saoffset="615" salength="2" rank="36">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Evropa (magazine)">8997642</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Magazine (artillery)">1463406</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Buffy the Vampire Slayer Magazine incorporating Angel Magazine">6135503</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Evropa (magazine)">8997642</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Magazine (artillery)">1463406</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Buffy the Vampire Slayer Magazine incorporating Angel Magazine">6135503</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Johnston McCulley bibliography">14479365</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Magazine (album)">4368009</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="John Lutz">2509871</tobep>
@@ -845,7 +845,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Magazine">21001</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="選" aoffset="618" alength="1" ext_length="0">
+			<anchor arel="-1" aname="選" aoffset="618" alength="1" ext_length="0">
 				<subanchor sarel="0" saname="選" saoffset="618" salength="1" rank="141">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="United Kingdom local elections, 1999">1850567</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Election (CBBC)">22645353</tobep>
@@ -864,7 +864,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of elections in Massachusetts">15600981</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="界" aoffset="624" alength="1" ext_length="0">
+			<anchor arel="-1" aname="界" aoffset="624" alength="1" ext_length="0">
 				<subanchor sarel="0" saname="界" saoffset="624" salength="1" rank="92">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of community colleges">1494052</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Community (trade union)">3699576</tobep>
@@ -885,7 +885,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Autonomous communities of Spain">55002</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="三" aoffset="626" alength="1" ext_length="0">
+			<anchor arel="-1" aname="三" aoffset="626" alength="1" ext_length="0">
 				<subanchor sarel="0" saname="三" saoffset="626" salength="1" rank="39">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="C++">72038</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="3rd Ring Road (Beijing)">746748</tobep>
@@ -899,7 +899,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="C Sharp (programming language)">2356196</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="大" aoffset="627" alength="1" ext_length="0">
+			<anchor arel="-1" aname="大" aoffset="627" alength="1" ext_length="0">
 				<subanchor sarel="0" saname="大" saoffset="627" salength="1" rank="138">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Large regiment">19774363</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="At-large">3995387</tobep>
@@ -922,7 +922,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="@Large">21518163</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="不" aoffset="628" alength="1" ext_length="3">
+			<anchor arel="-1" aname="不" aoffset="628" alength="1" ext_length="3">
 				<subanchor sarel="0" saname="不" saoffset="628" salength="1" rank="151">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Not Another Not Another Movie">20169617</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Not!">6678597</tobep>
@@ -1449,7 +1449,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Chess/Selected article/Introduction/Fortress (chess)">16657797</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="名" aoffset="763" alength="1" ext_length="0">
+			<anchor arel="-1" aname="名" aoffset="763" alength="1" ext_length="0">
 				<subanchor sarel="0" saname="名" saoffset="763" salength="1" rank="104">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of sovereign states">68253</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Table of the highest major summits of Colorado">16260765</tobep>
@@ -1471,7 +1471,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="School of Names">202690</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="填" aoffset="880" alength="1" ext_length="0">
+			<anchor arel="-1" aname="填" aoffset="880" alength="1" ext_length="0">
 				<subanchor sarel="0" saname="填" saoffset="880" salength="1" rank="111">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of tallest dams in the world">12755787</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Fill (music)">2877773</tobep>
@@ -1723,7 +1723,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="European Disability Forum">3313585</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Nonogram" aoffset="1176" alength="8" ext_length="0">
+			<anchor arel="-1" aname="Nonogram" aoffset="1176" alength="8" ext_length="0">
 				<subanchor sarel="0" saname="Nonogram" saoffset="1176" salength="8" rank="4">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Regular constraint">26400591</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Gemsweeper">16367475</tobep>
@@ -1950,8 +1950,8 @@
 			</anchor>
 			<anchor arel="0" aname="柯" aoffset="1518" alength="1" ext_length="7">
 				<subanchor sarel="0" saname="柯" saoffset="1518" salength="1" rank="85">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Åke">14786573</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Zhuge Ke">2451448</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Åke">14786573</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Zhuge Ke">2451448</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mudh Mudh Ke Na Dekkh Mudh Mudh Ke">26172264</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Operation Ke">2070801</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Lahore Ke Rang Hari Ke Sang">26974698</tobep>
@@ -2083,9 +2083,9 @@
 			</anchor>
 			<anchor arel="0" aname="數獨" aoffset="1568" alength="2" ext_length="0">
 				<subanchor sarel="0" saname="數獨" saoffset="1568" salength="2" rank="22">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mathematics of Sudoku">2912292</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sudoku Gridmaster">5163061</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Buku Sudoku">16751616</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mathematics of Sudoku">2912292</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sudoku Gridmaster">5163061</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Buku Sudoku">16751616</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sudoku Challenge!">19874662</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sudoku Cube">6439275</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Glossary of Sudoku">3115855</tobep>
@@ -2187,7 +2187,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Domain">47714</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="小" aoffset="1661" alength="1" ext_length="0">
+			<anchor arel="-1" aname="小" aoffset="1661" alength="1" ext_length="0">
 				<subanchor sarel="0" saname="小" saoffset="1661" salength="1" rank="127">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Wade Small">5208616</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Latin Extended Additional Unicode block">23508302</tobep>
@@ -2226,9 +2226,9 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of public housing authorities in Pennsylvania">25140199</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="個" aoffset="1708" alength="1" ext_length="0">
+			<anchor arel="-1" aname="個" aoffset="1708" alength="1" ext_length="0">
 				<subanchor sarel="0" saname="個" saoffset="1708" salength="1" rank="87">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="1 (number)">22770</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="1 (number)">22770</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Assist (ice hockey)">561277</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="A (TV system)">457499</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Íþróttabandalag Akraness">833817</tobep>
@@ -2238,10 +2238,10 @@
 			</anchor>
 			<anchor arel="0" aname="杯" aoffset="1709" alength="1" ext_length="1">
 				<subanchor sarel="0" saname="杯" saoffset="1709" salength="1" rank="70">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Book:Stanley Cup Finals">27628889</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="FA Cup">11237</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Oceania Cup Winners Cup">19126383</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ukrainian Cup">4983496</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Book:Stanley Cup Finals">27628889</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="FA Cup">11237</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Oceania Cup Winners Cup">19126383</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ukrainian Cup">4983496</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Copa del Rey">80967</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Treble (association football)">2261999</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Norwegian Football Cup">603997</tobep>
@@ -2257,9 +2257,9 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Rangers F.C. Hall of Fame">2040526</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="杯子" saoffset="1709" salength="2" rank="35">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Book:Stanley Cup Finals">27628889</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="FA Cup">11237</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of glassware">1254375</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Book:Stanley Cup Finals">27628889</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="FA Cup">11237</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of glassware">1254375</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Oceania Cup Winners Cup">19126383</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ukrainian Cup">4983496</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Copa del Rey">80967</tobep>
@@ -2467,7 +2467,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Palace Theatre, London">230266</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="參" aoffset="1891" alength="1" ext_length="0">
+			<anchor arel="-1" aname="參" aoffset="1891" alength="1" ext_length="0">
 				<subanchor sarel="0" saname="參" saoffset="1891" salength="1" rank="126">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Egypt men&apos;s national water polo team">22384321</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bulgaria men&apos;s national water polo team">22377593</tobep>
@@ -2481,7 +2481,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Japan men&apos;s national water polo team">22384987</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="考" aoffset="1892" alength="1" ext_length="0">
+			<anchor arel="-1" aname="考" aoffset="1892" alength="1" ext_length="0">
 				<subanchor sarel="0" saname="考" saoffset="1892" salength="1" rank="152">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Test and Test-and-set">2084574</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of England national rugby union team Test Series">18287376</tobep>
@@ -2500,7 +2500,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Test cricketers born in non-Test playing nations">11349020</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="資" aoffset="1893" alength="1" ext_length="1">
+			<anchor arel="-1" aname="資" aoffset="1893" alength="1" ext_length="1">
 				<subanchor sarel="0" saname="資" saoffset="1893" salength="1" rank="148">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Information">18985062</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Dagbladet Information">287104</tobep>
@@ -2535,7 +2535,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Physical information">243627</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="外" aoffset="1921" alength="1" ext_length="1">
+			<anchor arel="-1" aname="外" aoffset="1921" alength="1" ext_length="1">
 				<subanchor sarel="0" saname="外" saoffset="1921" salength="1" rank="153">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Outside (George Michael song)">3232248</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Outfielder">528703</tobep>
@@ -2592,7 +2592,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ministry (government department)">859401</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="連結" aoffset="1923" alength="2" ext_length="0">
+			<anchor arel="-1" aname="連結" aoffset="1923" alength="2" ext_length="0">
 				<subanchor sarel="0" saname="連結" saoffset="1923" salength="2" rank="147">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Links (magazine)">22973773</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Symbolic link">180473</tobep>

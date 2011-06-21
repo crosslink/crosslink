@@ -1114,14 +1114,16 @@ public class topicPaneMouseListener implements MouseInputListener {
     private CurrentFocusedAnchor getAnchorSENameByDot(int thisdot) {
 //        String[] selectedAnchorSEName = null;
         Vector<String[]> currAnchorSCRPos = new Vector<String[]>();
-        CurrentFocusedAnchor selectedAnchor = new CurrentFocusedAnchor();
+        CurrentFocusedAnchor selectedAnchor = null;
         Vector<String> currAnchorOLSet = myRSCManager.getTopicAnchorsOLNameSEV();
         for (String thisAnchorSet : currAnchorOLSet) {
             String[] thisAnchorSA = thisAnchorSet.split(" : ");
             currAnchorSCRPos.add(new String[]{thisAnchorSA[2], thisAnchorSA[3], thisAnchorSA[4]});
 
-        	int screenStart = Integer.valueOf(thisAnchorSA[0]);
-        	int screenAnchorLen = Integer.valueOf(thisAnchorSA[1]);
+        	int offset = Integer.valueOf(thisAnchorSA[0]);
+        	int length = Integer.valueOf(thisAnchorSA[1]);
+        	
+        	// this is screen pos
             int aStartPoint = Integer.valueOf(thisAnchorSA[3]);
             int aEndPoint = Integer.valueOf(thisAnchorSA[4]);
             int extLength = Integer.valueOf(thisAnchorSA[5]);
@@ -1129,6 +1131,7 @@ public class topicPaneMouseListener implements MouseInputListener {
             if (extLength > 0)
             	aEndPoint += extLength;
             if (aStartPoint <= thisdot && thisdot <= aEndPoint) {
+            	selectedAnchor = new CurrentFocusedAnchor();
                 this.topicTextPane.setSelectionStart(Integer.valueOf(aStartPoint));
                 this.topicTextPane.setSelectionEnd(Integer.valueOf(aEndPoint));
                 currAnchorSCRName =
@@ -1139,7 +1142,7 @@ public class topicPaneMouseListener implements MouseInputListener {
 //                selectedAnchorSEName = new String[]{thisAnchorSA[3], thisAnchorSA[4], currAnchorSCRName, thisAnchorSA[5], thisAnchorSA[0], thisAnchorSA[1]};
 //                                                      screenOffset    screenEnd        screenAnchorName,   extension length  offset      offset length
                 
-                selectedAnchor.setCurrentAnchorProperty(aStartPoint, aEndPoint - aStartPoint, screenStart, screenStart + screenAnchorLen, 0, extLength);
+                selectedAnchor.setCurrentAnchorProperty(offset, length, aStartPoint, aEndPoint, 0, extLength);
                 
                 selectedAnchor.setName(currAnchorSCRName);
 //                selectedAnchor.setScreenPosEnd();
