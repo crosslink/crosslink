@@ -35,6 +35,7 @@ import javax.swing.text.StyledDocument;
 
 import ltwassessment.AppResource;
 import ltwassessment.Assessment;
+import ltwassessment.assessment.CurrentFocusedAnchor;
 import ltwassessment.font.AdjustFont;
 import ltwassessment.parsers.Xml2Html;
 import ltwassessmenttool.listener.CaretListenerLabel;
@@ -979,7 +980,7 @@ public class LTWAssessmentToolView extends FrameView {
             }
             
             // update System Property
-            LTWAssessmentToolControler.setCurrentAnchorProperty(String.valueOf(scrAnchor.getOffset()), String.valueOf(scrAnchor.getLength()), scrAnchor.getScreenPosStart(), scrAnchor.getScreenPosEnd(), scrAnchor.getStatus(), String.valueOf(scrAnchor.getExtLength()));
+            CurrentFocusedAnchor.getCurrentFocusedAnchor().setCurrentAnchorProperty(scrAnchor.getOffset(), scrAnchor.getLength(), Integer.parseInt(scrAnchor.getScreenPosStart()), Integer.parseInt(scrAnchor.getScreenPosEnd()), Integer.parseInt(scrAnchor.getStatus()), scrAnchor.getExtLength());
         }
     }
     
@@ -1048,7 +1049,7 @@ public class LTWAssessmentToolView extends FrameView {
 //        if (isTABOutgoing) {
             // <editor-fold defaultstate="collapsed" desc="Update TAB Topic, Link">
             // =================================================================
-            String currTopicOLSEStatus = System.getProperty(LTWAssessmentToolControler.sysPropertyCurrTopicOLSEStatusKey);
+            String currTopicOLSEStatus = System.getProperty(CurrentFocusedAnchor.sysPropertyCurrTopicOLSEStatusKey);
             String[] currTopicOLSEStatusSA = currTopicOLSEStatus.split("_");
             String currPAnchorO = currTopicOLSEStatusSA[0];
             String currPAnchorL = currTopicOLSEStatusSA[1];
@@ -1079,7 +1080,7 @@ public class LTWAssessmentToolView extends FrameView {
 //        boolean isTABOutgoing = Boolean.valueOf(System.getProperty(sysPropertyIsTABKey));
 //        if (isTABOutgoing) {
             // <editor-fold defaultstate="collapsed" desc="Update TAB Topic, Link">
-            String currTopicOLSEStatus = System.getProperty(LTWAssessmentToolControler.sysPropertyCurrTopicOLSEStatusKey);
+            String currTopicOLSEStatus = System.getProperty(CurrentFocusedAnchor.sysPropertyCurrTopicOLSEStatusKey);
             String[] currTopicOLSEStatusSA = currTopicOLSEStatus.split("_");
             String currPAnchorO = currTopicOLSEStatusSA[0];
             String currPAnchorL = currTopicOLSEStatusSA[1];
@@ -1289,7 +1290,7 @@ public class LTWAssessmentToolView extends FrameView {
         String[] CurrTopicATargetSIDStatus = rscManager.getCurrTopicABepSIDStatusSA(thisLinkTextPane, currTopicID);
         setLinkBEPIcon(currTopicPAnchorStatus, CurrTopicATargetSIDStatus);
         // ---------------------------------------------------------------------
-        LTWAssessmentToolControler.setCurrentAnchorProperty(currTopicOLNameSEStatus[0], currTopicOLNameSEStatus[1], currTopicOLNameSEStatus[3], currTopicOLNameSEStatus[4], currTopicOLNameSEStatus[5], currTopicOLNameSEStatus[6]);
+        CurrentFocusedAnchor.getCurrentFocusedAnchor().setCurrentAnchorProperty(currTopicOLNameSEStatus[0], currTopicOLNameSEStatus[1], currTopicOLNameSEStatus[3], currTopicOLNameSEStatus[4], currTopicOLNameSEStatus[5], currTopicOLNameSEStatus[6]);
 //        String currTopicOLSEStatusKey = currTopicOLNameSEStatus[0] + "_" + currTopicOLNameSEStatus[1] + "_" + currTopicOLNameSEStatus[3] + "_" + currTopicOLNameSEStatus[4] + "_" + currTopicOLNameSEStatus[5] + "_" + currTopicOLNameSEStatus[6];
 //        System.setProperty(sysPropertyCurrTopicOLSEStatusKey, currTopicOLSEStatusKey);
         // ---------------------------------------------------------------------

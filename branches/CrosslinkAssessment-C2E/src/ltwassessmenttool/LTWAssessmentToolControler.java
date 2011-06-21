@@ -26,8 +26,6 @@ public class LTWAssessmentToolControler {
     public final static String sysPropertyTABCompletedRatioKey = "tabCompletedRatio";
     public final static String sysPropertyTBACompletedRatioKey = "tbaCompletedRatio";
     
-    public final static String sysPropertyCurrTopicOLSEStatusKey = "currTopicOLSE";
-    
     protected final String poolXmlFileName = "wikipedia_pool.xml";
     protected final String loggerFileName = "_ltwAssessTool2011.log";
     protected final String poolAndLogDir = "resources" + File.separator + "Pool";
@@ -135,12 +133,4 @@ public class LTWAssessmentToolControler {
 		}
     }
     
-    public static void setCurrentAnchorProperty(int offset, int length, int screenPosStart, int screenPosEnd, int status, int extLength) {
-    	setCurrentAnchorProperty(String.valueOf(offset), String.valueOf(length), String.valueOf(screenPosStart), String.valueOf(screenPosEnd), String.valueOf(status), String.valueOf(extLength));
-    }
-    
-    public static void setCurrentAnchorProperty(String offsetStr, String lengthStr, String screenPosStartStr, String screenPosEndStr, String statusStr, String extLengthStr) {
-    	String sysPropertyValue = offsetStr + "_" + lengthStr + "_" + screenPosStartStr + "_" + screenPosEndStr + "_" + statusStr + "_" + extLengthStr;
-    	System.setProperty(sysPropertyCurrTopicOLSEStatusKey, sysPropertyValue);
-    }
 }
