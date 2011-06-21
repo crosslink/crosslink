@@ -1112,8 +1112,9 @@ public class topicPaneMouseListener implements MouseInputListener {
     }
 
     private String[] getAnchorSENameByDot(int thisdot) {
-        String[] selectedAnchorSEName = null;
+//        String[] selectedAnchorSEName = null;
         Vector<String[]> currAnchorSCRPos = new Vector<String[]>();
+        CurrentFocusedAnchor selectedAnchor = new CurrentFocusedAnchor();
         Vector<String> currAnchorOLSet = myRSCManager.getTopicAnchorsOLNameSEV();
         for (String thisAnchorSet : currAnchorOLSet) {
             String[] thisAnchorSA = thisAnchorSet.split(" : ");
@@ -1133,7 +1134,10 @@ public class topicPaneMouseListener implements MouseInputListener {
                 currAnchorSCRName =
                         this.topicTextPane.getSelectedText();
 //                return selectedAnchorSEName = new String[]{String.valueOf(aStartPoint), String.valueOf(aEndPoint), currAnchorSCRName, thisAnchorSA[5]};
-                selectedAnchorSEName = new String[]{thisAnchorSA[3], thisAnchorSA[4], currAnchorSCRName, thisAnchorSA[5], thisAnchorSA[0], thisAnchorSA[1]};
+//                selectedAnchorSEName = new String[]{thisAnchorSA[3], thisAnchorSA[4], currAnchorSCRName, thisAnchorSA[5], thisAnchorSA[0], thisAnchorSA[1]};
+                
+                selectedAnchor.setCurrentAnchorProperty(thisAnchorSA[3], thisAnchorSA[4], currAnchorSCRName, thisAnchorSA[5], thisAnchorSA[0], thisAnchorSA[1]);
+//                CurrentFocusedAnchor.getCurrentFocusedAnchor().setIndexOffset(Integer.parseInt(thisAnchorSA[3]), Integer.parseInt(thisAnchorSA[4]));
                 break;
             }
 
@@ -1151,7 +1155,7 @@ public class topicPaneMouseListener implements MouseInputListener {
 //                return thisAnchorSet = new String[]{String.valueOf(aStartPoint), String.valueOf(aEndPoint), currAnchorSCRName};
 //            }
 //        }
-        return selectedAnchorSEName;
+        return selectedAnchor.toArray(); //selectedAnchorSEName;
     }
 
     private void toggleTopicAnchorColor(String[] prePAnchorSEStatus, String[] currPAnchorSE) {
