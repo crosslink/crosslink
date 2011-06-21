@@ -2198,14 +2198,14 @@ public class ResourcesManager {
 
     public String[] getTopicAnchorOLStatusBySE(String topicID, CurrentFocusedAnchor currSCRSEName) {
         String[] poolAnchorOLStatus = new String[3];
-        String pAnchorS = currSCRSEName.screenPosStartToString();
-        String pAnchorE = currSCRSEName.screenPosEndToString();
+        int pAnchorS = currSCRSEName.getScreenPosStart();
+        int pAnchorE = currSCRSEName.getScreenPosEnd();
         // String[]{Anchor_Offset, Length, S, E, Status}
         Vector<String[]> topicAnchorSCRStatusVSA = getTopicAnchorOLSEStatusVSA();
         for (String[] topicAnchorSCRStatus : topicAnchorSCRStatusVSA) {
-            String poolAnchorS = topicAnchorSCRStatus[2];
-            String poolAnchorE = topicAnchorSCRStatus[3];
-            if (poolAnchorS.equals(pAnchorS) && poolAnchorE.equals(pAnchorE)) {
+            int poolAnchorS = Integer.parseInt(topicAnchorSCRStatus[2]);
+            int poolAnchorE = Integer.parseInt(topicAnchorSCRStatus[3]);
+            if (poolAnchorS >= pAnchorS && poolAnchorE <= pAnchorE) {
                 poolAnchorOLStatus = new String[]{topicAnchorSCRStatus[0], topicAnchorSCRStatus[1], topicAnchorSCRStatus[4]};
             }
         }
