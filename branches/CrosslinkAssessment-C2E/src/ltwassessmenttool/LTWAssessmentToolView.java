@@ -1049,8 +1049,7 @@ public class LTWAssessmentToolView extends FrameView {
 //        if (isTABOutgoing) {
             // <editor-fold defaultstate="collapsed" desc="Update TAB Topic, Link">
             // =================================================================
-            String currTopicOLSEStatus = System.getProperty(CurrentFocusedAnchor.sysPropertyCurrTopicOLSEStatusKey);
-            String[] currTopicOLSEStatusSA = currTopicOLSEStatus.split("_");
+            String[] currTopicOLSEStatusSA = CurrentFocusedAnchor.getCurrentFocusedAnchor().toArray();
             String currPAnchorO = currTopicOLSEStatusSA[0];
             String currPAnchorL = currTopicOLSEStatusSA[1];
             String[] currPAnchorOLSA = new String[]{currPAnchorO, currPAnchorL};
@@ -1080,8 +1079,7 @@ public class LTWAssessmentToolView extends FrameView {
 //        boolean isTABOutgoing = Boolean.valueOf(System.getProperty(sysPropertyIsTABKey));
 //        if (isTABOutgoing) {
             // <editor-fold defaultstate="collapsed" desc="Update TAB Topic, Link">
-            String currTopicOLSEStatus = System.getProperty(CurrentFocusedAnchor.sysPropertyCurrTopicOLSEStatusKey);
-            String[] currTopicOLSEStatusSA = currTopicOLSEStatus.split("_");
+            String[] currTopicOLSEStatusSA = CurrentFocusedAnchor.getCurrentFocusedAnchor().toArray();
             String currPAnchorO = currTopicOLSEStatusSA[0];
             String currPAnchorL = currTopicOLSEStatusSA[1];
             String[] currPAnchorOLSA = new String[]{currPAnchorO, currPAnchorL};

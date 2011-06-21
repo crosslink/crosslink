@@ -71,4 +71,20 @@ public class CurrentFocusedAnchor extends IndexedAnchor {
     	this.setOffsetIndex(offset);
     	this.setLengthIndex(length);
     }
+
+	public int getScreenPosStart() {
+		return screenPosStart;
+	}
+
+	public void setScreenPosStart(int screenPosStart) {
+		this.screenPosStart = screenPosStart;
+	}
+
+	public int getScreenPosEnd() {
+		return screenPosEnd;
+	}
+
+	public void setScreenPosEnd(int screenPosEnd) {
+		this.screenPosEnd = screenPosEnd;
+	}
 }

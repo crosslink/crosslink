@@ -1120,6 +1120,8 @@ public class topicPaneMouseListener implements MouseInputListener {
             String[] thisAnchorSA = thisAnchorSet.split(" : ");
             currAnchorSCRPos.add(new String[]{thisAnchorSA[2], thisAnchorSA[3], thisAnchorSA[4]});
 
+        	int screenStart = Integer.valueOf(thisAnchorSA[0]);
+        	int screenAnchorLen = Integer.valueOf(thisAnchorSA[1]);
             int aStartPoint = Integer.valueOf(thisAnchorSA[3]);
             int aEndPoint = Integer.valueOf(thisAnchorSA[4]);
             int extLength = Integer.valueOf(thisAnchorSA[5]);
@@ -1136,7 +1138,10 @@ public class topicPaneMouseListener implements MouseInputListener {
 //                return selectedAnchorSEName = new String[]{String.valueOf(aStartPoint), String.valueOf(aEndPoint), currAnchorSCRName, thisAnchorSA[5]};
 //                selectedAnchorSEName = new String[]{thisAnchorSA[3], thisAnchorSA[4], currAnchorSCRName, thisAnchorSA[5], thisAnchorSA[0], thisAnchorSA[1]};
                 
-                selectedAnchor.setCurrentAnchorProperty(thisAnchorSA[3], thisAnchorSA[4], currAnchorSCRName, thisAnchorSA[5], thisAnchorSA[0], thisAnchorSA[1]);
+                selectedAnchor.setCurrentAnchorProperty(aStartPoint, aEndPoint - aStartPoint, screenStart, screenStart + screenAnchorLen, 0, extLength);
+                
+                selectedAnchor.setName(currAnchorSCRName);
+//                selectedAnchor.setScreenPosEnd();
 //                CurrentFocusedAnchor.getCurrentFocusedAnchor().setIndexOffset(Integer.parseInt(thisAnchorSA[3]), Integer.parseInt(thisAnchorSA[4]));
                 break;
             }
