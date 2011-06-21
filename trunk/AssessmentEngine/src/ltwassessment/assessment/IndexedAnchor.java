@@ -1,5 +1,7 @@
 package ltwassessment.assessment;
 
+import java.util.Vector;
+
 import ltwassessment.submission.Anchor;
 
 public class IndexedAnchor extends Anchor {
@@ -8,10 +10,11 @@ public class IndexedAnchor extends Anchor {
 	
 	protected int offsetIndex;
 	protected int lengthIndex;
+	
+	Vector<Bep> beps = new Vector<Bep>();
 
 	public IndexedAnchor(int offset, int length, String name) {
 		super(offset, length, name);
-		
 	}
 
 	/**
@@ -66,5 +69,9 @@ public class IndexedAnchor extends Anchor {
 
 	public String offsetIndexToString() {
 		return String.valueOf(offsetIndex);
+	}
+
+	public void addBep(Bep bep) {
+		beps.add(bep);
 	}
 }
