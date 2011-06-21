@@ -34,6 +34,7 @@ import javax.swing.text.StyledDocument;
 import ltwassessmenttool.LTWAssessmentToolControler;
 import ltwassessmenttool.LTWAssessmentToolView;
 import ltwassessment.AppResource;
+import ltwassessment.assessment.CurrentFocusedAnchor;
 import ltwassessment.parsers.FOLTXTMatcher;
 import ltwassessment.parsers.Xml2Html;
 import ltwassessment.parsers.PoolerManager;
@@ -219,7 +220,7 @@ public class topicPaneMouseListener implements MouseInputListener {
                 this.topicTextPane.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
                 // -------------------------------------------------------------
                 // Get CURR Topic OLSEStatus before we go to NEXT Pool Anchor
-                this.preTHyperOLSEStatus = System.getProperty(LTWAssessmentToolControler.sysPropertyCurrTopicOLSEStatusKey);
+                this.preTHyperOLSEStatus = System.getProperty(CurrentFocusedAnchor.sysPropertyCurrTopicOLSEStatusKey);
                 // -------------------------------------------------------------
                 // 1) Highlight Anchor/BEP + Auto Scrolling
                 String currAnchorO = currSCRSEName[4];
@@ -288,7 +289,7 @@ public class topicPaneMouseListener implements MouseInputListener {
             if (withinTarget) {
                 logger("rightTopicAnchorClickToggle" + "_" + currSCRSEName[0] + "_" + currSCRSEName[1]);
 
-                this.preTHyperOLSEStatus = System.getProperty(LTWAssessmentToolControler.sysPropertyCurrTopicOLSEStatusKey);
+                this.preTHyperOLSEStatus = System.getProperty(CurrentFocusedAnchor.sysPropertyCurrTopicOLSEStatusKey);
                 this.topicTextPane.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
                 // 1) Check the Status of the Anchor
                 // 2) Toggle the Anchor/BEP Highlight - Selected/NONRelevant
@@ -399,7 +400,7 @@ public class topicPaneMouseListener implements MouseInputListener {
         // ---------------------------------------------------------------------
         // 3) update NAV Indices in toolResources XML
         this.myRSCManager.updateTABNavIndex(this.currTopicID, currPAnchorOLStatus, new String[]{bepOffset, bepID});
-        LTWAssessmentToolControler.setCurrentAnchorProperty(pAnchorOL, currSCRSEName[0], currSCRSEName[1], pAnchorStatus, currSCRSEName[3], currSCRSEName[4]);
+        CurrentFocusedAnchor.getCurrentFocusedAnchor().setCurrentAnchorProperty(pAnchorOL, currSCRSEName[0], currSCRSEName[1], pAnchorStatus, currSCRSEName[3], currSCRSEName[4]);
         // ---------------------------------------------------------------------
         String currAnchorName = this.poolerManager.getPoolAnchorNameByOL(this.currTopicID, currPAnchorOLStatus);
         Vector<String> newTABFieldValues = new Vector<String>();
@@ -473,7 +474,7 @@ public class topicPaneMouseListener implements MouseInputListener {
         // ---------------------------------------------------------
         this.myRSCManager.updateTBANavIndex(currTopicID, currPBepOffset, new String[]{anchorOffset, anchorLength, anchorFileID});
 //        System.setProperty(sysPropertyCurrTopicOLSEStatusKey, currPBepOL + "_" + currSCRSEName[0] + "_" + currSCRSEName[1] + "_" + currPBepStatus);
-        LTWAssessmentToolControler.setCurrentAnchorProperty(currPBepOL, currSCRSEName[0], currSCRSEName[1], currPBepStatus, currSCRSEName[3], currSCRSEName[4]);
+        CurrentFocusedAnchor.getCurrentFocusedAnchor().setCurrentAnchorProperty(currPBepOL, currSCRSEName[0], currSCRSEName[1], currPBepStatus, currSCRSEName[3], currSCRSEName[4]);
         // ---------------------------------------------------------------------
         Vector<String> newTABFieldValues = new Vector<String>();
         newTABFieldValues.add(this.currTopicName);
@@ -567,7 +568,7 @@ public class topicPaneMouseListener implements MouseInputListener {
                 // updare Pool XML
                 this.pUpdater.updatePoolAnchorStatus(this.currTopicID, currPAnchorOLStatus, toPAnchorStatus);
                 // update System Property
-                LTWAssessmentToolControler.setCurrentAnchorProperty(pAnchorOL, currSCRSEName[0], currSCRSEName[1], pAnchorStatus, currSCRSEName[3], currSCRSEName[4]);
+                CurrentFocusedAnchor.getCurrentFocusedAnchor().setCurrentAnchorProperty(pAnchorOL, currSCRSEName[0], currSCRSEName[1], pAnchorStatus, currSCRSEName[3], currSCRSEName[4]);
                 // -------------------------------------------------------------
                 // -------------------------------------------------------------
                 String currAnchorName = this.poolerManager.getPoolAnchorNameByOL(this.currTopicID, currPAnchorOLStatus);
@@ -622,7 +623,7 @@ public class topicPaneMouseListener implements MouseInputListener {
                 // updare Pool XML
                 this.pUpdater.updatePoolAnchorStatus(this.currTopicID, currPAnchorOLStatus, toPAnchorStatus);
                 // update System Property
-                LTWAssessmentToolControler.setCurrentAnchorProperty(pAnchorOL, currSCRSEName[0], currSCRSEName[1], pAnchorStatus, currSCRSEName[3], currSCRSEName[4]);
+                CurrentFocusedAnchor.getCurrentFocusedAnchor().setCurrentAnchorProperty(pAnchorOL, currSCRSEName[0], currSCRSEName[1], pAnchorStatus, currSCRSEName[3], currSCRSEName[4]);
                 // -------------------------------------------------------------
                 // -------------------------------------------------------------
                 String currAnchorName = this.poolerManager.getPoolAnchorNameByOL(this.currTopicID, currPAnchorOLStatus);
@@ -691,7 +692,7 @@ public class topicPaneMouseListener implements MouseInputListener {
                 log("Before Update POOL: " + pAnchorO + " - " + pAnchorL + " - " + toPAnchorStatus);
                 this.pUpdater.updatePoolAnchorStatus(this.currTopicID, new String[]{pAnchorO, pAnchorL}, toPAnchorStatus);
                 // update System Property
-                LTWAssessmentToolControler.setCurrentAnchorProperty(pAnchorOL, currSCRSEName[0], currSCRSEName[1], pAnchorStatus, currSCRSEName[3], currSCRSEName[4]);
+                CurrentFocusedAnchor.getCurrentFocusedAnchor().setCurrentAnchorProperty(pAnchorOL, currSCRSEName[0], currSCRSEName[1], pAnchorStatus, currSCRSEName[3], currSCRSEName[4]);
                 // -------------------------------------------------------------
                 // -------------------------------------------------------------
                 String currAnchorName = this.poolerManager.getPoolAnchorNameByOL(this.currTopicID, currPAnchorOLStatus);
@@ -763,7 +764,7 @@ public class topicPaneMouseListener implements MouseInputListener {
                 // updare Pool XML
                 this.pUpdater.updatePoolAnchorStatus(this.currTopicID, currPAnchorOLStatus, toPAnchorStatus);
                 // update System Property
-                LTWAssessmentToolControler.setCurrentAnchorProperty(pAnchorOL, currSCRSEName[0], currSCRSEName[1], pAnchorStatus, currSCRSEName[3], currSCRSEName[4]);
+                CurrentFocusedAnchor.getCurrentFocusedAnchor().setCurrentAnchorProperty(pAnchorOL, currSCRSEName[0], currSCRSEName[1], pAnchorStatus, currSCRSEName[3], currSCRSEName[4]);
                 // -------------------------------------------------------------
                 // -------------------------------------------------------------
                 String currAnchorName = this.poolerManager.getPoolAnchorNameByOL(this.currTopicID, currPAnchorOLStatus);
@@ -879,7 +880,7 @@ public class topicPaneMouseListener implements MouseInputListener {
             // updare Pool XML
             this.pUpdater.updatePoolBepStatus(this.currTopicID, currPBepOffset, toBepStatus);
 //            System.setProperty(sysPropertyCurrTopicOLSEStatusKey, pBEPOL + "_" + currSCRSEName[0] + "_" + currSCRSEName[1] + "_" + toBepStatus);
-            LTWAssessmentToolControler.setCurrentAnchorProperty(pBEPOL, currSCRSEName[0], currSCRSEName[1], toBepStatus, currSCRSEName[3], currSCRSEName[4]);
+            CurrentFocusedAnchor.getCurrentFocusedAnchor().setCurrentAnchorProperty(pBEPOL, currSCRSEName[0], currSCRSEName[1], toBepStatus, currSCRSEName[3], currSCRSEName[4]);
         } else if (Integer.valueOf(currPBepStatus) == -1) {
             // Toggle to PRE-STATUS: -1, 1 or 0
             // -----------------------------------------------------------------
@@ -955,7 +956,7 @@ public class topicPaneMouseListener implements MouseInputListener {
             }
             // updare Pool XML
             this.pUpdater.updatePoolBepStatus(this.currTopicID, currPBepOffset, currBepPreStatus);
-            LTWAssessmentToolControler.setCurrentAnchorProperty(pBEPOL, currSCRSEName[0], currSCRSEName[1], currBepPreStatus, currSCRSEName[3], currSCRSEName[4]);
+            CurrentFocusedAnchor.getCurrentFocusedAnchor().setCurrentAnchorProperty(pBEPOL, currSCRSEName[0], currSCRSEName[1], currBepPreStatus, currSCRSEName[3], currSCRSEName[4]);
 //            System.setProperty(sysPropertyCurrTopicOLSEStatusKey, pBEPOL + "_" + currSCRSEName[0] + "_" + currSCRSEName[1] + "_" + currBepPreStatus);
         }
 // </editor-fold>
