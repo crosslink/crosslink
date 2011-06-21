@@ -31,6 +31,7 @@ import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
 import ltwassessment.AppResource;
+import ltwassessment.assessment.CurrentFocusedAnchor;
 import ltwassessment.assessment.IndexedAnchor;
 import ltwassessment.parsers.ResourcesManager;
 import ltwassessment.parsers.FOLTXTMatcher;
@@ -2195,10 +2196,10 @@ public class ResourcesManager {
         return currTopicABepSIDStatus;
     }
 
-    public String[] getTopicAnchorOLStatusBySE(String topicID, String[] poolAnchorSESA) {
+    public String[] getTopicAnchorOLStatusBySE(String topicID, CurrentFocusedAnchor currSCRSEName) {
         String[] poolAnchorOLStatus = new String[3];
-        String pAnchorS = poolAnchorSESA[0];
-        String pAnchorE = poolAnchorSESA[1];
+        String pAnchorS = currSCRSEName.screenPosStartToString();
+        String pAnchorE = currSCRSEName.screenPosEndToString();
         // String[]{Anchor_Offset, Length, S, E, Status}
         Vector<String[]> topicAnchorSCRStatusVSA = getTopicAnchorOLSEStatusVSA();
         for (String[] topicAnchorSCRStatus : topicAnchorSCRStatusVSA) {
@@ -2459,10 +2460,10 @@ public class ResourcesManager {
         return topicBepsOList;
     }
 
-    public String[] getTopicBepOStatusBySE(String topicID, String[] poolBepSE) {
+    public String[] getTopicBepOStatusBySE(String topicID, CurrentFocusedAnchor currSCRSEName) {
         // String[]{Bep_Offset, S, Status}
         String[] poolAnchorOLStatus = new String[3];
-        String poolBepS = poolBepSE[0];
+        String poolBepS = currSCRSEName.screenPosEndToString();
         // String[]{Bep_Offset, S, Status}
         Vector<String[]> topicBepOSStatusVSA = getTopicBepOSStatusVSA();
         for (String[] topicBepOSStatus : topicBepOSStatusVSA) {
