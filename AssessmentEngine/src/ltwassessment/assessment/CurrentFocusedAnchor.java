@@ -7,6 +7,8 @@ public class CurrentFocusedAnchor extends IndexedAnchor {
     private int screenPosStart;
     private int screenPosEnd;
     
+    private String screenAnchorText;
+    
     private static CurrentFocusedAnchor currentFocusedAnchor = null;
     
     static {
@@ -86,5 +88,13 @@ public class CurrentFocusedAnchor extends IndexedAnchor {
 
 	public void setScreenPosEnd(int screenPosEnd) {
 		this.screenPosEnd = screenPosEnd;
+	}
+
+	public String getScreenAnchorText() {
+		return screenAnchorText;
+	}
+
+	public void setScreenAnchorText(String screenAnchorText) {
+		this.screenAnchorText = screenAnchorText;
 	}
 }
