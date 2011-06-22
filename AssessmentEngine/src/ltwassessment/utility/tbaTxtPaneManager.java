@@ -265,15 +265,15 @@ public class tbaTxtPaneManager {
         this.myLinkPane.setContentType(contentType);
         this.myLinkPane.setText(xmlParser.getHtmlContent().toString());
         this.myLinkPane.setCaretPosition(0);
-        try {
-            String[] mySCRAnchorSEPos = myFOLMatcher.getSCRAnchorPosSA(myLinkPane, rowAnchorFileID, new String[]{rowAnchorXmlOffset, rowAnchorXmlLength, ""}, AppResource.targetLang);
-            Highlighter txtPaneHighlighter = this.myLinkPane.getHighlighter();
-            int[] achorSCRPos = new int[]{Integer.valueOf(mySCRAnchorSEPos[1]), Integer.valueOf(mySCRAnchorSEPos[2])};
-            Object anchorHighlightRef = txtPaneHighlighter.addHighlight(achorSCRPos[0], achorSCRPos[1], painters.getAnchorPainter());
-            this.myLinkPane.getCaret().setDot(Integer.valueOf(mySCRAnchorSEPos[2]));
-        } catch (BadLocationException ex) {
-            Logger.getLogger(tabTxtPaneManager.class.getName()).log(Level.SEVERE, null, ex);
-        }
+//        try {
+//            String[] mySCRAnchorSEPos = myFOLMatcher.getSCRAnchorPosSA(myLinkPane, rowAnchorFileID, new String[]{rowAnchorXmlOffset, rowAnchorXmlLength, ""}, AppResource.targetLang);
+//            Highlighter txtPaneHighlighter = this.myLinkPane.getHighlighter();
+//            int[] achorSCRPos = new int[]{Integer.valueOf(mySCRAnchorSEPos[1]), Integer.valueOf(mySCRAnchorSEPos[2])};
+//            Object anchorHighlightRef = txtPaneHighlighter.addHighlight(achorSCRPos[0], achorSCRPos[1], painters.getAnchorPainter());
+//            this.myLinkPane.getCaret().setDot(Integer.valueOf(mySCRAnchorSEPos[2]));
+//        } catch (BadLocationException ex) {
+//            Logger.getLogger(tabTxtPaneManager.class.getName()).log(Level.SEVERE, null, ex);
+//        }
         this.myLinkPane.scrollRectToVisible(this.myLinkPane.getVisibleRect());
         // Renew Link Text Pane Listener
         this.myLinkPane.repaint();

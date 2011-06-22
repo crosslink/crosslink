@@ -28,6 +28,7 @@ import javax.xml.parsers.ParserConfigurationException;
 
 import ltwassessment.AppResource;
 import ltwassessment.Assessment;
+import ltwassessment.assessment.IndexedAnchor;
 import ltwassessment.parsers.FOLTXTMatcher;
 import ltwassessment.parsers.PoolerManager;
 import ltwassessment.parsers.ResourcesManager;
@@ -333,11 +334,11 @@ public class FOLTXTMatcher {
 		return input;
 	}
 	
-    private String[] screenOffsetLengthFinder(String fullScreenTxt, String fullXmlTxt, String[] thisAnchorXmlOLName) {
+    private String[] screenOffsetLengthFinder(String fullScreenTxt, String fullXmlTxt, IndexedAnchor thisAnchorSet) {
     	String[] myScreenPosition = new String[4];
         
-		int aOffset = Integer.valueOf(thisAnchorXmlOLName[0]);
-		int aLength = Integer.valueOf(thisAnchorXmlOLName[1]);
+		int aOffset = thisAnchorSet.getOffset(); //Integer.valueOf(thisAnchorSet[0]);
+		int aLength = thisAnchorSet.getLength(); //Integer.valueOf(thisAnchorSet[1]);
 
     	byte[] bytes = fullXmlTxt.getBytes();
 //    	int len = bytes.length - aOffset;
@@ -565,13 +566,13 @@ public class FOLTXTMatcher {
         return myRSCManager.getCurrTopicXmlFile();
     }
 
-    public Vector<String[]> getSCRAnchorPosV(JTextPane textPane, String currTopicID, Hashtable<String, Vector<String[]>> topicAnchorsHT) {
+    public Vector<String[]> getSCRAnchorPosV(JTextPane textPane, String currTopicID, Hashtable<String, Vector<IndexedAnchor>> topicAnchorsHT) {
         // "outgoing : " + thisTopicFile, anchorsVbyTopic
         // Offset : Length : Anchor_Name : scrOffset : scrLength
         // record into toolResource.xml
         Vector<String> anchorSetV = new Vector<String>();
         // anchorsVbyTopic --> [0]:Offset, [1]:Length, [3]:Anchor_Name
-        Vector<String[]> anchorOLV = null; //new Vector<String[]>();
+        Vector<IndexedAnchor> anchorOLV = null; //new Vector<String[]>();
         Enumeration keyEnu = topicAnchorsHT.keys();
         while (keyEnu.hasMoreElements()) {
             Object keyObj = keyEnu.nextElement();
@@ -590,15 +591,15 @@ public class FOLTXTMatcher {
             Logger.getLogger(FOLTXTMatcher.class.getName()).log(Level.SEVERE, null, ex);
         }
         Vector<String[]> screenAnchorPos = new Vector<String[]>();
-        for (String[] thisAnchorSet : anchorOLV) {
+        for (IndexedAnchor thisAnchorSet : anchorOLV) {
 //        	Anchor anchor = new Anchor(Integer.valueOf(thisAnchorSet[0]), Integer.valueOf(thisAnchorSet[1]), thisAnchorSet[2]);
 //        	boolean result = anchor.validate(Assessment.getInstance().getCurrentTopic());
 //        	
 //        	if (result) {
 	            String[] scrFOL = screenOffsetLengthFinder(fullScreenText, fullXmlTxt, thisAnchorSet);
-        		scrFOL[3] = thisAnchorSet[4];
+        		scrFOL[3] = thisAnchorSet.extendedLengthToString(); //[4];
 	            screenAnchorPos.add(scrFOL);
-	            anchorSetV.add(thisAnchorSet[0] + " : " + thisAnchorSet[1] + " : " + thisAnchorSet[2] + " : " + scrFOL[1] + " : " + scrFOL[2]  + " : " +  thisAnchorSet[4]);
+	            anchorSetV.add(thisAnchorSet.getOffset()/*[0]*/ + " : " + thisAnchorSet.lengthToString()/*[1]*/ + " : " + thisAnchorSet.getName()/*[2]*/ + " : " + scrFOL[1] + " : " + scrFOL[2]  + " : " +  thisAnchorSet.extendedLengthToString()/*[4]*/);
 //        	}
         }
         // ============================
@@ -608,12 +609,12 @@ public class FOLTXTMatcher {
         return screenAnchorPos;
     }
 
-    public String[] getSCRAnchorPosSA(JTextPane myTextPane, String fileID, String[] thisAnchorXmlOLName, String lang) {
+    public String[] getSCRAnchorPosSA(JTextPane myTextPane, String fileID, IndexedAnchor thisAnchorXmlOLName, String lang) {
             String myFullXmlTxt = getFullXmlTextByFileID(fileID, lang);
         return getSCRAnchorPosSA(myTextPane, fileID, thisAnchorXmlOLName, myFullXmlTxt, lang);
     }
 
-    public String[] getSCRAnchorPosSA(JTextPane myTextPane, String fileID, String[] thisAnchorXmlOLName, String myFullXmlTxt, String lang) {
+    public String[] getSCRAnchorPosSA(JTextPane myTextPane, String fileID, IndexedAnchor thisAnchorXmlOLName, String myFullXmlTxt, String lang) {
         // myScreenAnchorOL/thisAnchorSet
         // --> [0]:Offset, [1]:Length, [2]:Anchor_Name
         String[] myScreenAnchorPos = new String[3];
@@ -668,7 +669,7 @@ public class FOLTXTMatcher {
         return scrBepOffset;
     }
 
-    public String[] getSCRAnchorNameSESA(JTextPane myTextPane, String fileID, String[] thisAnchorXmlOLName, String lang) {
+    public String[] getSCRAnchorNameSESA(JTextPane myTextPane, String fileID, IndexedAnchor thisAnchorXmlOLName, String lang) {
         // myScreenAnchorOL/thisAnchorSet
         String[] myScreenAnchorPos = new String[3];
         String myFullXmlTxt = getFullXmlTextByFileID(fileID, lang);
