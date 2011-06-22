@@ -17,6 +17,10 @@ public class IndexedAnchor extends Anchor {
 		super(offset, length, name);
 	}
 
+	public IndexedAnchor(String offset, String length, String name) {
+		super(Integer.parseInt(offset), Integer.parseInt(length), name);
+	}
+	
 	public IndexedAnchor(int offset, int length, String name, int rel) {
 		super(offset, length, name);
 		this.status = rel;

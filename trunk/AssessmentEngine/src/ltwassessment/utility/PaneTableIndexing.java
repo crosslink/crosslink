@@ -6,6 +6,8 @@ import java.util.Hashtable;
 import java.util.Vector;
 
 import ltwassessment.AppResource;
+import ltwassessment.assessment.Bep;
+import ltwassessment.assessment.IndexedAnchor;
 import ltwassessment.parsers.FOLTXTMatcher;
 import ltwassessment.parsers.PoolerManager;
 import ltwassessment.parsers.ResourcesManager;
@@ -29,8 +31,8 @@ public class PaneTableIndexing {
     private Vector<String[]> paneTableRowIndex = null; //new Vector<String[]>();
     private Vector<String[]> paneTableRowIndexWOText =  new Vector<String[]>();
     // TAB: Outgoing Variables
-    private Hashtable<String, Vector<String[]>> topicAnchorsHT = null; //new Hashtable<String, Vector<String[]>>();
-    private Hashtable<String, Hashtable<String, Hashtable<String, Vector<String[]>>>> poolOutgoingData = null; //new Hashtable<String, Hashtable<String, Hashtable<String, Vector<String[]>>>>();
+    private Hashtable<String, Vector<IndexedAnchor>> topicAnchorsHT = null; //new Hashtable<String, Vector<String[]>>();
+    private Hashtable<String, Hashtable<String, Hashtable<String, Vector<IndexedAnchor>>>> poolOutgoingData = null; //new Hashtable<String, Hashtable<String, Hashtable<String, Vector<String[]>>>>();
     private Hashtable<String, Vector<String>> tabAnchorByTopicHT = null;
     private Hashtable<String, Vector<String>> tabAnchorByTopicHTWOTxt = null;
     private Hashtable<String, Vector<String>> tabBepByTopicAnchorHT = null;
@@ -399,7 +401,7 @@ public class PaneTableIndexing {
                 }
                 // Get Anchor OL
                 myAnchorOLV = new Vector<String>();
-                Hashtable<String, Hashtable<String, Vector<String[]>>> anchorBepsH = poolOutgoingData.get(topicKeyObj);
+                Hashtable<String, Hashtable<String, Vector<IndexedAnchor>>> anchorBepsH = poolOutgoingData.get(topicKeyObj);
                 Enumeration anchorKeyEnu = anchorBepsH.keys();
                 while (anchorKeyEnu.hasMoreElements()) {
                     Object anchorOLObj = anchorKeyEnu.nextElement();
@@ -412,46 +414,47 @@ public class PaneTableIndexing {
             }
             Collections.sort(myTopicIDsV);
             for (String thisTopic : myTopicIDsV) {
-                Hashtable<String, Hashtable<String, Vector<String[]>>> anchorBepsH = poolOutgoingData.get(thisTopic);
+                Hashtable<String, Hashtable<String, Vector<IndexedAnchor>>> anchorBepsH = poolOutgoingData.get(thisTopic);
                 Vector<String> anchorOLV = myTopicAnchorOLHT.get(thisTopic);
                 for (String thisAnchor : anchorOLV) {
                     // Anchor(1114_19)
-                    Hashtable<String, Vector<String[]>> subAnchorBEPsH = anchorBepsH.get(thisAnchor);
+                    Hashtable<String, Vector<IndexedAnchor>> subAnchorBEPsH = anchorBepsH.get(thisAnchor);
                     Enumeration subAnchorKeyEnu = subAnchorBEPsH.keys();
                     while (subAnchorKeyEnu.hasMoreElements()) {
                         Object subAnchorKeyObj = subAnchorKeyEnu.nextElement();
                         String thisSubAnchor = subAnchorKeyObj.toString();  // Subanchor(1114_13)
-                        Vector<String[]> bepsV = subAnchorBEPsH.get(subAnchorKeyObj);
+                        Vector<IndexedAnchor> bepsV = subAnchorBEPsH.get(subAnchorKeyObj);
                         /*
                          * contain lang info here "zh", "ja", "ko"
                          */
-                        for (String[] bepSA : bepsV) {
-                            String bepOffset = bepSA[0];
-                            String bepFileID = bepSA[1];
-                            String bepSet = bepOffset + "_" + bepFileID;    // BEP([0]:1538, [1]:123017)
-                            // add to TABSet
-                            // Topic(22560) : Anchor(1114_19) : Subanchor(1114_13) : BEP([0]:1538, [1]:123017)
-                            // With Text
-                            String[] myTABLine = new String[4];
-                            myTABLine[0] = getTopicIDNamePair(thisTopic);
-                            myTABLine[1] = getAnchorOLNamePair(thisTopic, thisAnchor);
-                            if (AppResource.forValidationOrAssessment)
-                            	myTABLine[2] = getAnchorOLNamePair(thisTopic, thisSubAnchor);
-                            else
-                            	myTABLine[2] = bepSA[3];
-                            myTABLine[3] = getLinkBepIdONamePair(bepSet); //String.valueOf(bepOffset); //bepSet; //
-                            myTableSetV.add(myTABLine);
-                            // Without Text
-                            String[] myTABWOTextLine = new String[4];
-                            myTABWOTextLine[0] = thisTopic;
-                            myTABWOTextLine[1] = thisAnchor;
-                            if (AppResource.forValidationOrAssessment)
-                            	 myTABWOTextLine[2] = thisSubAnchor;
-                            else
-                            	 myTABWOTextLine[2] = bepSA[3];
-                            myTABWOTextLine[3] = bepSet;
-                            paneTableRowIndexWOText.add(myTABWOTextLine);
-                        }
+                        for (IndexedAnchor anchor : bepsV) 
+	                        for (Bep bepSA : anchor.getBeps()) {
+	                            String bepOffset = bepSA.offsetToString(); //[0];
+	                            String bepFileID = bepSA.getFileId(); //[1];
+	                            String bepSet = bepOffset + "_" + bepFileID;    // BEP([0]:1538, [1]:123017)
+	                            // add to TABSet
+	                            // Topic(22560) : Anchor(1114_19) : Subanchor(1114_13) : BEP([0]:1538, [1]:123017)
+	                            // With Text
+	                            String[] myTABLine = new String[4];
+	                            myTABLine[0] = getTopicIDNamePair(thisTopic);
+	                            myTABLine[1] = getAnchorOLNamePair(thisTopic, thisAnchor);
+	                            if (AppResource.forValidationOrAssessment)
+	                            	myTABLine[2] = getAnchorOLNamePair(thisTopic, thisSubAnchor);
+	                            else
+	                            	myTABLine[2] = bepSA.getTargetLang(); //[3];
+	                            myTABLine[3] = getLinkBepIdONamePair(bepSet); //String.valueOf(bepOffset); //bepSet; //
+	                            myTableSetV.add(myTABLine);
+	                            // Without Text
+	                            String[] myTABWOTextLine = new String[4];
+	                            myTABWOTextLine[0] = thisTopic;
+	                            myTABWOTextLine[1] = thisAnchor;
+	                            if (AppResource.forValidationOrAssessment)
+	                            	 myTABWOTextLine[2] = thisSubAnchor;
+	                            else
+	                            	 myTABWOTextLine[2] = bepSA.getTargetLang(); //[3];
+	                            myTABWOTextLine[3] = bepSet;
+	                            paneTableRowIndexWOText.add(myTABWOTextLine);
+	                        }
                     }
                 }
             }
@@ -626,11 +629,11 @@ public class PaneTableIndexing {
             Object keyObj = keyEnu.nextElement();
             String[] keyOutgoingTopicStr = keyObj.toString().split(" : ");
             if (keyOutgoingTopicStr[1].equals(topicID.trim())) {
-                Vector<String[]> anchorsV = topicAnchorsHT.get(keyObj);
-                for (String[] thisAnchorSA : anchorsV) {
-                    String OLSet = thisAnchorSA[0].trim() + "_" + thisAnchorSA[1].trim();
+                Vector<IndexedAnchor> anchorsV = topicAnchorsHT.get(keyObj);
+                for (IndexedAnchor thisAnchorSA : anchorsV) {
+                    String OLSet = thisAnchorSA.offsetToString().trim() + "_" + thisAnchorSA.lengthToString().trim();
                     if (OLSet.equals(anchorOL)) //{
-                        return myPair = anchorOL + " : " + thisAnchorSA[2].trim();
+                        return myPair = anchorOL + " : " + thisAnchorSA.getName()/*[2]*/.trim();
 //                    } else {
 ////                        String[] anchorOLSA = anchorOL.split("_");
 ////                        int sPoint = Integer.valueOf(thisAnchorSA[0].trim());

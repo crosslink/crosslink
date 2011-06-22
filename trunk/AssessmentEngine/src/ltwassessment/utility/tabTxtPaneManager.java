@@ -17,6 +17,7 @@ import javax.swing.text.StyleConstants;
 import javax.swing.text.StyledDocument;
 
 import ltwassessment.AppResource;
+import ltwassessment.assessment.IndexedAnchor;
 import ltwassessment.parsers.FOLTXTMatcher;
 import ltwassessment.parsers.Xml2Html;
 import ltwassessment.parsers.PoolerManager;
@@ -94,7 +95,7 @@ public class tabTxtPaneManager {
         // update Anchor OL highlight & Auto scrolling to Curr Anchor Position
         if (paneUpdateLevel == 1 || paneUpdateLevel == 2) {
             String[] currAnchorXmlSet = this.rowAnchorSet.split("_");
-            updateTopicPaneAnchorStatus(this.rowTopicID, new String[]{currAnchorXmlSet[0], currAnchorXmlSet[1], ""}, AppResource.sourceLang);
+            updateTopicPaneAnchorStatus(this.rowTopicID, new IndexedAnchor(currAnchorXmlSet[0], currAnchorXmlSet[1], "")/*String[]{currAnchorXmlSet[0], currAnchorXmlSet[1], ""}*/, AppResource.sourceLang);
         }
         // update 1st Link/Pane & BEP Offset
         if (paneUpdateLevel == 1 || paneUpdateLevel == 2 || paneUpdateLevel == 3) {
@@ -130,13 +131,13 @@ public class tabTxtPaneManager {
         // Set Topic Content Text
         setTextPaneContent(topicXmlPath, isTopicText);
         // Highlight Anchor Texts
-        Hashtable<String, Vector<String[]>> topicAnchorsHT = myRunsPooler.getTopicAllAnchors();   // Upadte AnchorSCROL into toolResources XML
+        Hashtable<String, Vector<IndexedAnchor>> topicAnchorsHT = myRunsPooler.getTopicAllAnchors();   // Upadte AnchorSCROL into toolResources XML
         Vector<String[]> currAnchorScreenOLPairs = myFOLMatcher.getSCRAnchorPosV(this.myTopicPane, myTopicID, topicAnchorsHT);
         setTopicTextHighlighter(currAnchorScreenOLPairs);
     }
     // 4) Highlight Anchor and Selected Anchor
 
-    private void updateTopicPaneAnchorStatus(String topicID, String[] selectedAnchorOLNameSA, String lang) {
+    private void updateTopicPaneAnchorStatus(String topicID, IndexedAnchor selectedAnchorOLNameSA, String lang) {
         // currAnchorSCRSet: [0]:Anchor_Name, [1]:Offset, [2]:Offset + Length
         String[] currAnchorSCRSet = myFOLMatcher.getSCRAnchorPosSA(this.myTopicPane, topicID, selectedAnchorOLNameSA, myFOLMatcher.getFullXmlTxt(), lang);
         String sPos = currAnchorSCRSet[1];
