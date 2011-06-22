@@ -17,6 +17,20 @@ public class IndexedAnchor extends Anchor {
 		super(offset, length, name);
 	}
 
+	public IndexedAnchor(int offset, int length, String name, int rel) {
+		super(offset, length, name);
+		this.status = rel;
+	}
+	
+	public IndexedAnchor(String offset, String length, String name, String rel) {
+		super(Integer.parseInt(offset), Integer.parseInt(length), name);
+		this.status = Integer.parseInt(rel);
+	}
+	
+	public IndexedAnchor() {
+		super(0, 0, "");
+	}
+
 	/**
 	 * @return the status
 	 */
@@ -74,4 +88,8 @@ public class IndexedAnchor extends Anchor {
 	public void addBep(Bep bep) {
 		beps.add(bep);
 	}
+	
+	public Vector<Bep> getBeps() {
+		return beps;
+	}	
 }
