@@ -32,7 +32,7 @@ public class PaneTableIndexing {
     private Vector<String[]> paneTableRowIndexWOText =  new Vector<String[]>();
     // TAB: Outgoing Variables
     private Hashtable<String, Vector<IndexedAnchor>> topicAnchorsHT = null; //new Hashtable<String, Vector<String[]>>();
-    private Hashtable<String, Hashtable<String, Hashtable<String, Vector<IndexedAnchor>>>> poolOutgoingData = null; //new Hashtable<String, Hashtable<String, Hashtable<String, Vector<String[]>>>>();
+    private Hashtable<String, Hashtable<String, Hashtable<String, Vector<Bep>>>> poolOutgoingData = null; //new Hashtable<String, Hashtable<String, Hashtable<String, Vector<String[]>>>>();
     private Hashtable<String, Vector<String>> tabAnchorByTopicHT = null;
     private Hashtable<String, Vector<String>> tabAnchorByTopicHTWOTxt = null;
     private Hashtable<String, Vector<String>> tabBepByTopicAnchorHT = null;
@@ -401,7 +401,7 @@ public class PaneTableIndexing {
                 }
                 // Get Anchor OL
                 myAnchorOLV = new Vector<String>();
-                Hashtable<String, Hashtable<String, Vector<IndexedAnchor>>> anchorBepsH = poolOutgoingData.get(topicKeyObj);
+                Hashtable<String, Hashtable<String, Vector<Bep>>> anchorBepsH = poolOutgoingData.get(topicKeyObj);
                 Enumeration anchorKeyEnu = anchorBepsH.keys();
                 while (anchorKeyEnu.hasMoreElements()) {
                     Object anchorOLObj = anchorKeyEnu.nextElement();
@@ -414,21 +414,21 @@ public class PaneTableIndexing {
             }
             Collections.sort(myTopicIDsV);
             for (String thisTopic : myTopicIDsV) {
-                Hashtable<String, Hashtable<String, Vector<IndexedAnchor>>> anchorBepsH = poolOutgoingData.get(thisTopic);
+                Hashtable<String, Hashtable<String, Vector<Bep>>> anchorBepsH = poolOutgoingData.get(thisTopic);
                 Vector<String> anchorOLV = myTopicAnchorOLHT.get(thisTopic);
                 for (String thisAnchor : anchorOLV) {
                     // Anchor(1114_19)
-                    Hashtable<String, Vector<IndexedAnchor>> subAnchorBEPsH = anchorBepsH.get(thisAnchor);
+                    Hashtable<String, Vector<Bep>> subAnchorBEPsH = anchorBepsH.get(thisAnchor);
                     Enumeration subAnchorKeyEnu = subAnchorBEPsH.keys();
                     while (subAnchorKeyEnu.hasMoreElements()) {
                         Object subAnchorKeyObj = subAnchorKeyEnu.nextElement();
                         String thisSubAnchor = subAnchorKeyObj.toString();  // Subanchor(1114_13)
-                        Vector<IndexedAnchor> bepsV = subAnchorBEPsH.get(subAnchorKeyObj);
+                        Vector<Bep> bepsV = subAnchorBEPsH.get(subAnchorKeyObj);
                         /*
                          * contain lang info here "zh", "ja", "ko"
                          */
-                        for (IndexedAnchor anchor : bepsV) 
-	                        for (Bep bepSA : anchor.getBeps()) {
+//                        for (IndexedAnchor anchor : bepsV) 
+	                        for (Bep bepSA : bepsV) {
 	                            String bepOffset = bepSA.offsetToString(); //[0];
 	                            String bepFileID = bepSA.getFileId(); //[1];
 	                            String bepSet = bepOffset + "_" + bepFileID;    // BEP([0]:1538, [1]:123017)

@@ -85,7 +85,7 @@ public class ResourcesManager {
     private String afTBANavigationIndexTag = "tbaNavigationIndex";
     private Hashtable<String, Vector<IndexedAnchor>> topicAllAnchors = null; //new Hashtable<String, Vector<String[]>>();
     private Hashtable<String, Vector<IndexedAnchor>> topicAllSubanchors = null; 
-    private Hashtable<String, Hashtable<String, Hashtable<String, Vector<IndexedAnchor>>>> poolOutgoingData = null; //new Hashtable<String, Hashtable<String, Hashtable<String, Vector<String[]>>>>();
+    private Hashtable<String, Hashtable<String, Hashtable<String, Vector<Bep>>>> poolOutgoingData = null; //new Hashtable<String, Hashtable<String, Hashtable<String, Vector<String[]>>>>();
 //    private Hashtable<String, Vector<IndexedAnchor>> topicAllBEPs = new Hashtable<String, Vector<IndexedAnchor>>();
     private Hashtable<String, Hashtable<String, Vector<String[]>>> poolIncomingData = new Hashtable<String, Hashtable<String, Vector<String[]>>>();
     public static PoolerManager pooler = null;
@@ -1799,19 +1799,19 @@ public class ResourcesManager {
         while (topicKeyEnu.hasMoreElements()) {
             Object topicKey = topicKeyEnu.nextElement();
             String myTopicID = topicKey.toString();
-            Hashtable<String, Hashtable<String, Vector<IndexedAnchor>>> poolAnchorsHT = poolOutgoingData.get(topicKey.toString());
+            Hashtable<String, Hashtable<String, Vector<Bep>>> poolAnchorsHT = poolOutgoingData.get(topicKey.toString());
             Enumeration poolAnchorKeys = poolAnchorsHT.keys();
             while (poolAnchorKeys.hasMoreElements()) {
                 Object pAnchorKey = poolAnchorKeys.nextElement();
                 poolAnchorOL = pAnchorKey.toString();
                 String[] pAnchorOL = poolAnchorOL.toString().split("_");
                 aBepLinksV = new Vector<Bep>();
-                Hashtable<String, Vector<IndexedAnchor>> anchorsHT = poolAnchorsHT.get(pAnchorKey.toString());
+                Hashtable<String, Vector<Bep>> anchorsHT = poolAnchorsHT.get(pAnchorKey.toString());
                 Enumeration anchorKeys = anchorsHT.keys();
                 while (anchorKeys.hasMoreElements()) {
                     Object anchorKey = anchorKeys.nextElement();
                     // V<String[]{Offset, fileID, tbrel/status}
-                    Vector<IndexedAnchor> bepLinksV = anchorsHT.get(anchorKey.toString());
+                    Vector<Bep> bepLinksV = anchorsHT.get(anchorKey.toString());
                     // ---------------------------------------------------------
                     /**
                      * used to record fileID to prevent from Duplicated Target File
@@ -1821,8 +1821,8 @@ public class ResourcesManager {
                      */
                     targetFileID = new Vector<String>();
 //                    Vector<String[]> newBepLinksV = new Vector<String[]>();
-                    for (IndexedAnchor anchor : bepLinksV)
-	                    for (Bep bepLinkSA : anchor.getBeps()) {
+//                    for (IndexedAnchor anchor : bepLinksV)
+	                    for (Bep bepLinkSA : bepLinksV) {
 	                        String thisBepFileID = bepLinkSA.getFileId();//[1];
 	                        if (!targetFileID.contains(thisBepFileID)) {
 	                            targetFileID.add(thisBepFileID);
