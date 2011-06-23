@@ -34,6 +34,7 @@ import javax.swing.text.StyledDocument;
 import ltwassessmenttool.LTWAssessmentToolControler;
 import ltwassessmenttool.LTWAssessmentToolView;
 import ltwassessment.AppResource;
+import ltwassessment.assessment.AssessedAnchor;
 import ltwassessment.assessment.Bep;
 import ltwassessment.assessment.CurrentFocusedAnchor;
 import ltwassessment.assessment.IndexedAnchor;
@@ -53,7 +54,7 @@ public class topicPaneMouseListener implements MouseInputListener {
     // Constant Variables
     protected final int bepLength = 4;
     private final String sysPropertyKey = "isTABKey";
-    private String preTHyperOLSEStatus[] = null;
+    private AssessedAnchor preTHyperOLSEStatus = null;
     private String paneContentType = "";
     private JTextPane topicTextPane;
     private JTextPane linkTextPane;
@@ -225,20 +226,20 @@ public class topicPaneMouseListener implements MouseInputListener {
                 this.topicTextPane.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
                 // -------------------------------------------------------------
                 // Get CURR Topic OLSEStatus before we go to NEXT Pool Anchor
-                this.preTHyperOLSEStatus = CurrentFocusedAnchor.getCurrentFocusedAnchor().toArray();
+                this.preTHyperOLSEStatus = CurrentFocusedAnchor.getCurrentFocusedAnchor().getAnchor(); //.toArray();
                 // -------------------------------------------------------------
                 // 1) Highlight Anchor/BEP + Auto Scrolling
                 String currAnchorO = currSCRSEName.offsetIndexToString();
                 String currAnchorL = currSCRSEName.lengthIndexToString();
-                String currAnchorStatus = poolerManager.getPoolAnchorStatus(this.currTopicID, new String[]{currAnchorO, currAnchorL});
+                String currAnchorStatus = poolerManager.getPoolAnchorStatus(this.currTopicID, currSCRSEName/*new String[]{currAnchorO, currAnchorL}*/);
                 String[] scrSEPosKey = new String[]{currSCRSEName.getName(), currSCRSEName.screenPosStartToString(), currSCRSEName.screenPosEndToString(), currSCRSEName.extendedLengthToString(), currSCRSEName.screenPosStartToString(), currSCRSEName.screenPosEndToString()};
             	int anchorEnd = Integer.valueOf(scrSEPosKey[2]) + Integer.valueOf(scrSEPosKey[3]);
             	scrSEPosKey[2] = String.valueOf(anchorEnd);
 //                String[] scrSEPosKey = new String[]{currSCRSEName.screenPosStartToString(), currSCRSEName.screenPosStartToString(), currSCRSEName.extendedLengthToString()};
-                String[] preAnchorOLSEStatus = this.preTHyperOLSEStatus;
-                String[] preAnchorSEStatus = new String[]{preAnchorOLSEStatus[2], preAnchorOLSEStatus[3], preAnchorOLSEStatus[4]};
+//                String[] preAnchorOLSEStatus = this.preTHyperOLSEStatus;
+//                String[] preAnchorSEStatus = new String[]{preAnchorOLSEStatus[2], preAnchorOLSEStatus[3], preAnchorOLSEStatus[4]};
 //
-                LTWAssessmentToolView.updateTopicAnchorsHighlight(this.topicTextPane, preAnchorSEStatus, scrSEPosKey, Integer.parseInt(currAnchorStatus));
+                LTWAssessmentToolView.updateTopicAnchorsHighlight(this.topicTextPane, preTHyperOLSEStatus/*preAnchorSEStatus*/, scrSEPosKey, Integer.parseInt(currAnchorStatus));
 //                LTWAssessmentToolView.updateTopicAnchorsHighlight(this.topicTextPane, scrSEPosKey, preAnchorSEStatus, bepLength);
                 this.topicTextPane.getCaret().setDot(Integer.valueOf(currSCRSEName.screenPosEndToString()));
                 this.topicTextPane.scrollRectToVisible(this.topicTextPane.getVisibleRect());
