@@ -225,10 +225,10 @@ public class topicPaneMouseListener implements MouseInputListener {
                 this.preTHyperOLSEStatus = CurrentFocusedAnchor.getCurrentFocusedAnchor().toArray();
                 // -------------------------------------------------------------
                 // 1) Highlight Anchor/BEP + Auto Scrolling
-                String currAnchorO = currSCRSEName.offsetIndexToString();
-                String currAnchorL = currSCRSEName.lengthIndexToString();
+                String currAnchorO = currSCRSEName.getAnchor().offsetIndexToString();
+                String currAnchorL = currSCRSEName.getAnchor().lengthIndexToString();
                 String currAnchorStatus = poolerManager.getPoolAnchorStatus(this.currTopicID, new String[]{currAnchorO, currAnchorL});
-                String[] scrSEPosKey = new String[]{currSCRSEName.getName(), currSCRSEName.screenPosStartToString(), currSCRSEName.screenPosEndToString(), currSCRSEName.extendedLengthToString(), currSCRSEName.screenPosStartToString(), currSCRSEName.screenPosEndToString()};
+                String[] scrSEPosKey = new String[]{currSCRSEName.getAnchor().getName(), currSCRSEName.screenPosStartToString(), currSCRSEName.screenPosEndToString(), currSCRSEName.getAnchor().extendedLengthToString(), currSCRSEName.screenPosStartToString(), currSCRSEName.screenPosEndToString()};
             	int anchorEnd = Integer.valueOf(scrSEPosKey[2]) + Integer.valueOf(scrSEPosKey[3]);
             	scrSEPosKey[2] = String.valueOf(anchorEnd);
 //                String[] scrSEPosKey = new String[]{currSCRSEName.screenPosStartToString(), currSCRSEName.screenPosEndToString(), currSCRSEName.extendedLengthToString()};
@@ -403,7 +403,7 @@ public class topicPaneMouseListener implements MouseInputListener {
         // ---------------------------------------------------------------------
         // 3) update NAV Indices in toolResources XML
         this.myRSCManager.updateTABNavIndex(this.currTopicID, currPAnchorOLStatus, new String[]{bepOffset, bepID});
-        CurrentFocusedAnchor.getCurrentFocusedAnchor().setCurrentAnchorProperty(pAnchorO, pAnchorOL, currSCRSEName.screenPosStartToString(), currSCRSEName.screenPosEndToString(), pAnchorStatus, currSCRSEName.extendedLengthToString()/*, currSCRSEName.offsetIndexToString()*/);
+        CurrentFocusedAnchor.getCurrentFocusedAnchor().setCurrentAnchorProperty(pAnchorO, pAnchorOL, currSCRSEName.screenPosStartToString(), currSCRSEName.screenPosEndToString(), pAnchorStatus, currSCRSEName.getAnchor().extendedLengthToString()/*, currSCRSEName.offsetIndexToString()*/);
         // ---------------------------------------------------------------------
         String currAnchorName = this.poolerManager.getPoolAnchorNameByOL(this.currTopicID, currPAnchorOLStatus);
         Vector<String> newTABFieldValues = new Vector<String>();
@@ -571,7 +571,7 @@ public class topicPaneMouseListener implements MouseInputListener {
                 // updare Pool XML
                 this.pUpdater.updatePoolAnchorStatus(this.currTopicID, currPAnchorOLStatus, toPAnchorStatus);
                 // update System Property
-                CurrentFocusedAnchor.getCurrentFocusedAnchor().setCurrentAnchorProperty(pAnchorO, pAnchorL, currSCRSEName.screenPosStartToString(), currSCRSEName.screenPosEndToString(), pAnchorStatus, currSCRSEName.extendedLengthToString()/*, currSCRSEName.offsetIndexToString()*/);
+                CurrentFocusedAnchor.getCurrentFocusedAnchor().setCurrentAnchorProperty(pAnchorO, pAnchorL, currSCRSEName.screenPosStartToString(), currSCRSEName.screenPosEndToString(), pAnchorStatus, currSCRSEName.getAnchor().extendedLengthToString()/*, currSCRSEName.offsetIndexToString()*/);
                 // -------------------------------------------------------------
                 // -------------------------------------------------------------
                 String currAnchorName = this.poolerManager.getPoolAnchorNameByOL(this.currTopicID, currPAnchorOLStatus);
@@ -626,7 +626,7 @@ public class topicPaneMouseListener implements MouseInputListener {
                 // updare Pool XML
                 this.pUpdater.updatePoolAnchorStatus(this.currTopicID, currPAnchorOLStatus, toPAnchorStatus);
                 // update System Property
-                CurrentFocusedAnchor.getCurrentFocusedAnchor().setCurrentAnchorProperty(pAnchorO, pAnchorL, currSCRSEName.screenPosStartToString(), currSCRSEName.screenPosEndToString(), pAnchorStatus, currSCRSEName.extendedLengthToString()/*, currSCRSEName.offsetIndexToString()*/);
+                CurrentFocusedAnchor.getCurrentFocusedAnchor().setCurrentAnchorProperty(pAnchorO, pAnchorL, currSCRSEName.screenPosStartToString(), currSCRSEName.screenPosEndToString(), pAnchorStatus, currSCRSEName.getAnchor().extendedLengthToString()/*, currSCRSEName.offsetIndexToString()*/);
                 // -------------------------------------------------------------
                 // -------------------------------------------------------------
                 String currAnchorName = this.poolerManager.getPoolAnchorNameByOL(this.currTopicID, currPAnchorOLStatus);
@@ -695,7 +695,7 @@ public class topicPaneMouseListener implements MouseInputListener {
                 log("Before Update POOL: " + pAnchorO + " - " + pAnchorL + " - " + toPAnchorStatus);
                 this.pUpdater.updatePoolAnchorStatus(this.currTopicID, new String[]{pAnchorO, pAnchorL}, toPAnchorStatus);
                 // update System Property
-                CurrentFocusedAnchor.getCurrentFocusedAnchor().setCurrentAnchorProperty(pAnchorO, pAnchorL, currSCRSEName.screenPosStartToString(), currSCRSEName.screenPosEndToString(), pAnchorStatus, currSCRSEName.extendedLengthToString()/*, currSCRSEName.offsetIndexToString()*/);
+                CurrentFocusedAnchor.getCurrentFocusedAnchor().setCurrentAnchorProperty(pAnchorO, pAnchorL, currSCRSEName.screenPosStartToString(), currSCRSEName.screenPosEndToString(), pAnchorStatus, currSCRSEName.getAnchor().extendedLengthToString()/*, currSCRSEName.offsetIndexToString()*/);
                 // -------------------------------------------------------------
                 // -------------------------------------------------------------
                 String currAnchorName = this.poolerManager.getPoolAnchorNameByOL(this.currTopicID, currPAnchorOLStatus);
