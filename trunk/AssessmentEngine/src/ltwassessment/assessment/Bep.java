@@ -13,7 +13,7 @@ public class Bep {
 	
 	private int index;
 	
-	IndexedAnchor associatedAnchor = null;
+	AssessedAnchor associatedAnchor = null;
 	
 	public Bep(int offset, int startP, String tbFileID, int rel) {
 		this.offset = offset;
@@ -109,11 +109,11 @@ public class Bep {
 		this.index = index;
 	}
 
-	public IndexedAnchor getAssociatedAnchor() {
+	public AssessedAnchor getAssociatedAnchor() {
 		return associatedAnchor;
 	}
 
-	public void setAssociatedAnchor(IndexedAnchor associatedAnchor) {
+	public void setAssociatedAnchor(AssessedAnchor associatedAnchor) {
 		this.associatedAnchor = associatedAnchor;
 	}
 

@@ -35,6 +35,7 @@ import javax.swing.text.StyledDocument;
 
 import ltwassessment.AppResource;
 import ltwassessment.Assessment;
+import ltwassessment.assessment.AssessedAnchor;
 import ltwassessment.assessment.Bep;
 import ltwassessment.assessment.CurrentFocusedAnchor;
 import ltwassessment.assessment.IndexedAnchor;
@@ -942,7 +943,7 @@ public class LTWAssessmentToolView extends FrameView {
         updateFields(nextAnchorBepLinkVSA);
     }
     
-    private static void updateAnchor(String[] currTopicOLSEStatusSA, IndexedAnchor indexedAnchor) {
+    private static void updateAnchor(String[] currTopicOLSEStatusSA, AssessedAnchor indexedAnchor) {
         String currPAnchorO = currTopicOLSEStatusSA[0];
         String currPAnchorL = currTopicOLSEStatusSA[1];
         String[] currPAnchorOLSA = new String[]{currPAnchorO, currPAnchorL};
@@ -959,7 +960,7 @@ public class LTWAssessmentToolView extends FrameView {
             	currPAnchorE = String.valueOf(Integer.parseInt(currPAnchorE) + extLength);
             // Highlight Anchor/BEP + Auto Scrolling
             // String[]{Name, SP, EP, extLength, subSP, subEP}
-            updateTopicAnchorsHighlight(topicTextPane, new String[]{currPAnchorS, currPAnchorE, currPAnchorStatus, currPAnchorExt}, targetAnchorScreenInfo, indexedAnchor.getStatus());
+            updateTopicAnchorsHighlight(topicTextPane, indexedAnchor/*new String[]{currPAnchorS, currPAnchorE, currPAnchorStatus, currPAnchorExt}*/, targetAnchorScreenInfo, indexedAnchor.getStatus());
             
             if (indexedAnchor.getOffset() != Integer.parseInt(currPAnchorO)) {
 //          if (currPALinkStatus.equals("-1")) {
@@ -1095,17 +1096,17 @@ public class LTWAssessmentToolView extends FrameView {
             String[] currPALinkOIDSA = new String[]{currALinkOffset, currALinkID};
             
             if (updateCurrAnchorStatus) {
-            	String currPALinkStatus = myPooler.getPoolAnchorBepLinkStatus(currTopicID, currPAnchorOLSA, currALinkID);
-            	String currPAnchorStatus = myPooler.getPoolAnchorStatus(currTopicID, currPAnchorOLSA);
+            	String currPALinkStatus = myPooler.getPoolAnchorBepLinkStatus(currTopicID, CurrentFocusedAnchor.getCurrentFocusedAnchor().getAnchor().getParent(), currALinkID);
+            	String currPAnchorStatus = myPooler.getPoolAnchorStatus(currTopicID, CurrentFocusedAnchor.getCurrentFocusedAnchor().getAnchor().getParent());
             	String poolAnchorStatus = "";
             	if (currPALinkStatus.equals("-1")) {
             		if (currPAnchorStatus.equals("-1")) {
 			          poolAnchorStatus = currPAnchorStatus;
             		} else {
-			        poolAnchorStatus = rscManager.getPoolAnchorCompletedStatus(currTopicID, currPAnchorOLSA);
+			        poolAnchorStatus = rscManager.getPoolAnchorCompletedStatus(currTopicID, CurrentFocusedAnchor.getCurrentFocusedAnchor().getAnchor().getParent());
             		}
             	} else {
-			      poolAnchorStatus = rscManager.getPoolAnchorCompletedStatus(currTopicID, currPAnchorOLSA);
+			      poolAnchorStatus = rscManager.getPoolAnchorCompletedStatus(currTopicID, CurrentFocusedAnchor.getCurrentFocusedAnchor().getAnchor().getParent());
             	}
             	if (!poolAnchorStatus.equals("0"))
             		myPUpdater.updatePoolAnchorStatus(currTopicID, currPAnchorOLSA, poolAnchorStatus);            	
@@ -1113,7 +1114,7 @@ public class LTWAssessmentToolView extends FrameView {
             // -------------------------------------------------------------
             // 1) Get the NEXT Anchor O, L, S, E, Status + its BEP link O, S, ID, Status
             //    With TAB Nav Update --> NEXT TAB
-            Bep nextAnchorBepLinkVSA = rscManager.getNextTABWithUpdateNAV(currTopicID, currPAnchorOLSA, currALinkOIDSA, nextUnassessed);
+            Bep nextAnchorBepLinkVSA = rscManager.getNextTABWithUpdateNAV(currTopicID, CurrentFocusedAnchor.getCurrentFocusedAnchor().getAnchor(), currALinkOIDSA, nextUnassessed);
 
             updateAnchorChanges(nextAnchorBepLinkVSA, currTopicOLSEStatusSA, currPAnchorOLSA, currALinkOIDSA);
     }
@@ -1695,7 +1696,7 @@ public class LTWAssessmentToolView extends FrameView {
         }
     }
 
-    public static void updateTopicAnchorsHighlight(JTextPane topicPane, String[] preAnchorSEStatus, String[] currAnchorSE, int currLinkStatus) {
+    public static void updateTopicAnchorsHighlight(JTextPane topicPane, AssessedAnchor preAnchorSEStatus, String[] currAnchorSE, int currLinkStatus) {
         // This might need to handle: isAssessment
         // 1) YES: Highlight Curr Selected Anchor Text, keep others remaining as THEIR Colors
         // 2) NO: Highlight Curr Selected Anchor Text, keep others remaining as Anchor Text Color
@@ -1706,11 +1707,11 @@ public class LTWAssessmentToolView extends FrameView {
             Highlight[] highlights = txtPaneHighlighter.getHighlights();
             Object anchorHighlightRef = null;
             int[] achorSCRPos = new int[]{Integer.valueOf(currAnchorSE[1]), Integer.valueOf(currAnchorSE[2])};
-            log("PRE: " + preAnchorSEStatus[0] + " - " + preAnchorSEStatus[1] + " - " + preAnchorSEStatus[2]);
+            log("PRE: " + preAnchorSEStatus.screenPosStartToString()/*[0]*/ + " - " + preAnchorSEStatus.screenPosEndToString()/*[1]*/ + " - " + preAnchorSEStatus.getName()/*[2]*/);
             log("CURR: " + currAnchorSE[1] + " - " + currAnchorSE[2]);
             
-            int preScreenS = Integer.valueOf(preAnchorSEStatus[0]);
-            int preScreenE = Integer.valueOf(preAnchorSEStatus[1]);
+            int preScreenS = preAnchorSEStatus.getScreenPosStart(); //Integer.valueOf(preAnchorSEStatus[0]);
+            int preScreenE = preAnchorSEStatus.getScreenPosEnd(); //Integer.valueOf(preAnchorSEStatus[1]);
 //            int extLength = Integer.parseInt(preAnchorSEStatus[3]);
 //            int sp, se;
             for (int i = 0; i < highlights.length; i++) {
@@ -1742,10 +1743,10 @@ public class LTWAssessmentToolView extends FrameView {
             updateSelectedAnchorHightlighter(topicPane, currAnchorSE, currLinkStatus);
             //anchorHighlightRef = txtPaneHighlighter.addHighlight(sPos, ePos, painters.getSelectedPainter());
 
-            String pAnchorStatus = preAnchorSEStatus[2];
-            if (Integer.valueOf(pAnchorStatus) == 1) {
+            int pAnchorStatus = preAnchorSEStatus.getStatus(); //preAnchorSEStatus[2];
+            if (pAnchorStatus == 1) {
                 anchorHighlightRef = txtPaneHighlighter.addHighlight(preScreenS, preScreenE, painters.getCompletePainter());
-            } else if (Integer.valueOf(pAnchorStatus) == -1) {
+            } else if (pAnchorStatus == -1) {
                 anchorHighlightRef = txtPaneHighlighter.addHighlight(preScreenS, preScreenE, painters.getIrrelevantPainter());
             } else {
                 anchorHighlightRef = txtPaneHighlighter.addHighlight(preScreenS, preScreenE, painters.getAnchorPainter());
