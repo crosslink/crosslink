@@ -39,6 +39,7 @@ import javax.swing.text.StyledDocument;
 import ltwassessmenttool.LTWAssessmentToolControler;
 import ltwassessmenttool.LTWAssessmentToolView;
 import ltwassessment.AppResource;
+import ltwassessment.assessment.Bep;
 import ltwassessment.parsers.FOLTXTMatcher;
 import ltwassessment.parsers.Xml2Html;
 import ltwassessment.parsers.PoolerManager;
@@ -229,8 +230,8 @@ public class linkPaneMouseListener implements MouseInputListener {
             // For outgoing TAB
             // -----------------------------------------------------------------
             String[] currAnchorOLNameStatusSA = this.myRSCManager.getCurrTopicAnchorOLNameStatusSA();
-            String[] currALinkOIDSA = this.myRSCManager.getCurrTopicATargetOID(this.myLinkPane, this.topicID);
-            String currALinkID = currALinkOIDSA[1];
+            Bep currALinkOIDSA = this.myRSCManager.getCurrTopicATargetOID(this.myLinkPane, this.topicID);
+            String currALinkID = currALinkOIDSA.getFileId(); //[1];
             logger("outgoing_singleRightClick_" + currAnchorOLNameStatusSA[0] + "-" + currAnchorOLNameStatusSA[1] + " --> " + currALinkID);
             // -----------------------------------------------------------------
             String currALinkStatus = this.myPoolManager.getPoolAnchorBepLinkStatus(topicID, new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1]}, currALinkID);
@@ -296,14 +297,14 @@ public class linkPaneMouseListener implements MouseInputListener {
         // 4) STAY, NOT Go Next
         if (this.isTAB) {
             String[] currAnchorOLNameStatusSA = null;
-            String[] currALinkOIDSA = null;
+            Bep currALinkOIDSA = null;
             String currBepOffset = "";
             String[] currBLinkOLIDSA = null;
             currAnchorOLNameStatusSA = this.myRSCManager.getCurrTopicAnchorOLNameStatusSA();
             currALinkOIDSA = this.myRSCManager.getCurrTopicATargetOID(this.myLinkPane, this.topicID);
-            String currALinkOffset = currALinkOIDSA[0];
-            String currALinkID = currALinkOIDSA[1];
-            String currALinkLang = currALinkOIDSA[3];
+            String currALinkOffset = currALinkOIDSA.offsetToString(); //[0];
+            String currALinkID = currALinkOIDSA.getFileId(); //[1];
+            String currALinkLang = currALinkOIDSA.getTargetLang(); //[3];
             // -----------------------------------------------------------------
             logger("outgoing_doubleLeftClick_" + currAnchorOLNameStatusSA[0] + "-" + currAnchorOLNameStatusSA[1] + " --> " + currALinkID);
             // -----------------------------------------------------------------
@@ -360,9 +361,9 @@ public class linkPaneMouseListener implements MouseInputListener {
             // For outgoing TAB
             // -----------------------------------------------------------------
             String[] currAnchorOLNameStatusSA = this.myRSCManager.getCurrTopicAnchorOLNameStatusSA();
-            String[] currALinkOIDSA = this.myRSCManager.getCurrTopicATargetOID(this.myLinkPane, this.topicID);
-            String currALinkOffset = currALinkOIDSA[0];
-            String currALinkID = currALinkOIDSA[1];
+            Bep currALinkOIDSA = this.myRSCManager.getCurrTopicATargetOID(this.myLinkPane, this.topicID);
+            String currALinkOffset = currALinkOIDSA.offsetToString(); //[0];
+            String currALinkID = currALinkOIDSA.getFileId(); //[1];
             logger("outgoing_singleRightClick_" + currAnchorOLNameStatusSA[0] + "-" + currAnchorOLNameStatusSA[1] + " --> " + currALinkID);
             
             // Update Outgoing Completion
