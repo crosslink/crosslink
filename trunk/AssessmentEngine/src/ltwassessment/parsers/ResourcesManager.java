@@ -94,6 +94,8 @@ public class ResourcesManager {
     private String afTopicPrefixTag = "topic";
     private String afPoolPathTag = "poolingXmlFile";
     
+    private Hashtable<String, Vector<Bep>> poolAnchorBepLinksHT = null;
+    
     public static ResourcesManager getInstance() {
         if (instance == null)
             instance = new ResourcesManager();
@@ -150,7 +152,8 @@ public class ResourcesManager {
 //      topicAllBEPs = pooler.getTopicAllBeps();
       // Hashtable<String, Hashtable<String, Vector<String[]>>>
       // topifFileID, <BEP_Offset, V<String[]{Offset, Length, AName, fileID, barel}
-//      poolIncomingData = pooler.getIncomingPool();   	
+//      poolIncomingData = pooler.getIncomingPool();
+      setPoolAnchorBepLinksHashtable();
     }
     
     // =========================================================================
@@ -791,7 +794,7 @@ public class ResourcesManager {
                 // -------------------------------------------------------------
                 int pABepCounter = 0;
 //                HashMap<String, Vector<String[]>> anchorBepLinksHM = pooler.getBepSetByAnchor(topicID);
-                Hashtable<String, Vector<Bep>> anchorBepLinksHM = this.getPoolAnchorBepLinksHT();
+                Hashtable<String, Vector<Bep>> anchorBepLinksHM = this.getPoolAnchorBepLinksHashtable();
                 Vector<Bep> bepLinksVSA = anchorBepLinksHM.get(pAnchorO + "_" + pAnchorL);
                 for (Bep bepLinksOSIDStatus : bepLinksVSA) {
                     if (linkBepID.equals(bepLinksOSIDStatus.relString()/*[2]*/)) {
@@ -942,7 +945,7 @@ public class ResourcesManager {
                 int pABepCounter = 0;
                 HashMap<String, Vector<IndexedAnchor>> anchorBepLinksHM = pooler.getBepSetByAnchor(topicID);
                 Vector<IndexedAnchor> bepLinksOSIDStatusVSA = anchorBepLinksHM.get(pAnchorO + "_" + pAnchorL);
-                Hashtable<String, Vector<Bep>> anchorBepLinksOIDStatus = this.getPoolAnchorBepLinksHT();
+                Hashtable<String, Vector<Bep>> anchorBepLinksOIDStatus = this.getPoolAnchorBepLinksHashtable();
                 Vector<Bep> bepLinksVSA = anchorBepLinksOIDStatus.get(pAnchorO + "_" + pAnchorL);
                 for (Bep bepLinksOSIDStatus : bepLinksVSA) {
                     if (linkBepID.equals(bepLinksOSIDStatus.getFileId()/*[1]*/)) {
@@ -1488,7 +1491,7 @@ public class ResourcesManager {
         String[] thisPAnchorSEStatus = null;
         String[] firstTAnchorOL = null;
         String[] firstTABepOID= null;
-        Hashtable<String, Vector<Bep>> anchorBepLinksOIDStatus = this.getPoolAnchorBepLinksHT();
+        Hashtable<String, Vector<Bep>> anchorBepLinksOIDStatus = this.getPoolAnchorBepLinksHashtable();
         Bep thisPABepLinkSet = null;
         String bepLinkStartP = "";
         String subAnchorName = null;
@@ -1788,11 +1791,15 @@ public class ResourcesManager {
         Vector<IndexedAnchor> sortedPoolAnchorsOLV = sortOLVectorSANumbers(poolAnchorsOLV);
         return sortedPoolAnchorsOLV;
     }
-
-    public Hashtable<String, Vector<Bep>> getPoolAnchorBepLinksHT() {
+    
+    public Hashtable<String, Vector<Bep>> getPoolAnchorBepLinksHashtable() {
+    	return poolAnchorBepLinksHT;
+    }
+    
+    public void setPoolAnchorBepLinksHashtable() {
         Vector<String> targetFileID = null; //new Vector<String>();
         // Pool_Anchor OL, BEPLinks V<String[]{Offset, fileID, tbrel/status}
-        Hashtable<String, Vector<Bep>> poolAnchorBepLinksHT = new Hashtable<String, Vector<Bep>>();
+        poolAnchorBepLinksHT = new Hashtable<String, Vector<Bep>>();
         String poolAnchorOL = "";
         Vector<Bep> aBepLinksV = null; //new Vector<String[]>();
         Enumeration topicKeyEnu = poolOutgoingData.keys();
@@ -1847,7 +1854,7 @@ public class ResourcesManager {
                 poolAnchorBepLinksHT.put(poolAnchorOL, bepLinksVSorted);
             }
         }
-        return poolAnchorBepLinksHT;
+//        return poolAnchorBepLinksHT;
     }
 
 //    public Vector<IndexedAnchor> getPoolBEPsOStatusV() {
@@ -2153,7 +2160,7 @@ public class ResourcesManager {
         // Pool_Anchor OL, BEPLinks V<String[]{Offset, fileID, tbrel/status}
         String[] currAnchorOLSA = getCurrTopicAnchorOLNameStatusSA();
         String currAnchorOL = currAnchorOLSA[0] + "_" + currAnchorOLSA[1];
-        Hashtable<String, Vector<Bep>> poolAnchorBepLinksHT = getPoolAnchorBepLinksHT();
+        Hashtable<String, Vector<Bep>> poolAnchorBepLinksHT = getPoolAnchorBepLinksHashtable();
         Vector<Bep> currBepVSA = poolAnchorBepLinksHT.get(currAnchorOL);
         Bep currBepSA = currBepVSA.elementAt(Integer.valueOf(bepLinkIndex));
         String bepOffset = currBepSA.offsetToString().trim();
@@ -2186,7 +2193,7 @@ public class ResourcesManager {
         // Pool_Anchor OL, BEPLinks V<String[]{Offset, fileID, tbrel/status}
         String[] currAnchorOLSA = getCurrTopicAnchorOLNameStatusSA();
         String currAnchorOL = currAnchorOLSA[0] + "_" + currAnchorOLSA[1];
-        Hashtable<String, Vector<Bep>> poolAnchorBepLinksHT = getPoolAnchorBepLinksHT();
+        Hashtable<String, Vector<Bep>> poolAnchorBepLinksHT = getPoolAnchorBepLinksHashtable();
         Vector<Bep> currBepVSA = poolAnchorBepLinksHT.get(currAnchorOL);
         Bep currBepSA = currBepVSA.elementAt(Integer.valueOf(bepLinkIndex));
         String bepOffset = currBepSA.offsetToString().trim();
@@ -2252,9 +2259,8 @@ public class ResourcesManager {
             for (IndexedAnchor pAnchorSA : poolAnchorsOLV) {
                 String pAnchorOffset = pAnchorSA.offsetToString(); //[0];
                 String pAnchorStatus = pAnchorSA.statusToString(); //[3];
-                if (anchorSA[0].trim().equals(pAnchorOffset)) {
+                if (anchorSA[0].trim().equals(pAnchorOffset)) 
                     topicAnchorSCRStatusVSA.add(new String[]{anchorSA[0].trim(), anchorSA[1].trim(), anchorSA[3].trim(), anchorSA[4].trim(), pAnchorStatus, anchorSA[5].trim()});
-                }
             }
         }
         return topicAnchorSCRStatusVSA;

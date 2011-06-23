@@ -963,9 +963,7 @@ public class PoolerManager {
 //                        isOutgoing = true;
                         anchorsVbyTopic = new Vector<IndexedAnchor>();
                         anchorsHT = new Hashtable<String, Hashtable<String, Vector<Bep>>>();
-                        subAnchorsVbyTopic = new Vector<IndexedAnchor>();
-                        
-                        subAnchorsToBepsHT = new Hashtable<String, Vector<Bep>>();
+                        subAnchorsVbyTopic = new Vector<IndexedAnchor>();                  
                     } else if (tagName.equals("anchor")) {
                         String[] thisAnchorProperty = new String[5];
                         for (int i = 0; i < xsr.getAttributeCount(); i++) {
@@ -995,7 +993,8 @@ public class PoolerManager {
                         
 //                        anchorsVbyTopic.add(thisAnchorProperty);
                         thisAnchorSet = thisAnchorProperty[0] + "_" + thisAnchorProperty[1];
-                                                
+                        subAnchorsToBepsHT = new Hashtable<String, Vector<Bep>>();
+                        
                         parsedAnchor = new IndexedAnchor(aOffset, aLength, thisAnchorProperty[2]);
                         if (!AppResource.forValidationOrAssessment) { // validation
 //                            thisSubAnchorProperty = new String[4];
@@ -1136,12 +1135,15 @@ public class PoolerManager {
                     } else if (tagName.equals("anchor")) {
                     	assert (anchorsHT.get(thisAnchorSet) == null);
                         anchorsHT.put(thisAnchorSet, subAnchorsToBepsHT);
-                        if (!AppResource.forValidationOrAssessment)
+                        if (!AppResource.forValidationOrAssessment) {
                         	subAnchorsToBepsHT.put(thisSubAnchorSet, parsedAnchor.getBeps()/*toBepsVbySubAnchor*/);
+                        	parsedAnchor = null;
+                        }
                     } else if (tagName.equals("subanchor")) {
                         subAnchorsToBepsHT.put(thisSubAnchorSet, parsedAnchor.getBeps()/*toBepsVbySubAnchor*/);
                     	thisSubAnchorSet = "";
                     	thisSubAnchorProperty = null;
+                    	parsedAnchor = null;
                     } else if (tagName.equals("incominglinks")) {
                         if (isIncoming) {
                             topicBepsHT.put("incoming : " + thisTopicFileID, bepOffsetVbyTopic);
