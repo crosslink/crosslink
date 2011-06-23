@@ -6,7 +6,7 @@ public class CurrentFocusedAnchor {
     
     private String screenAnchorText;
     
-    IndexedAnchor anchor = null;
+    AssessedAnchor anchor = null;
 
     private static CurrentFocusedAnchor currentFocusedAnchor = null;
     
@@ -15,12 +15,12 @@ public class CurrentFocusedAnchor {
     }
 
 	public CurrentFocusedAnchor(int offset, int length, String name) {
-		anchor = new IndexedAnchor(offset, length, name);
+		anchor = new AssessedAnchor(offset, length, name);
 		
 	}
 
     public CurrentFocusedAnchor() {
-    	anchor = new IndexedAnchor(0, 0, "");
+    	anchor = new AssessedAnchor(0, 0, "");
 	}
 
 	public static CurrentFocusedAnchor getCurrentFocusedAnchor() {
@@ -48,11 +48,11 @@ public class CurrentFocusedAnchor {
 		this.screenAnchorText = screenAnchorText;
 	}
 	    
-    public IndexedAnchor getAnchor() {
+    public AssessedAnchor getAnchor() {
 		return anchor;
 	}
 
-	public void setAnchor(IndexedAnchor anchor) {
+	public void setAnchor(AssessedAnchor anchor) {
 		this.anchor = anchor;
 	}
 }

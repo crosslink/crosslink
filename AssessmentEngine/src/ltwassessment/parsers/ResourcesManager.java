@@ -31,6 +31,7 @@ import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
 import ltwassessment.AppResource;
+import ltwassessment.assessment.AssessedAnchor;
 import ltwassessment.assessment.Bep;
 import ltwassessment.assessment.CurrentFocusedAnchor;
 import ltwassessment.assessment.IndexedAnchor;
@@ -1107,7 +1108,7 @@ public class ResourcesManager {
     // </editor-fold>
 
     // <editor-fold defaultstate="collapsed" desc="Get NEXT UNAssessed TAB/TBA & Update NAV Indice">
-    public Bep getNextUNAssTABWithUpdateNAV(String topicID, IndexedAnchor pAnchorOLSA, Bep linkBepOID) {
+    public Bep getNextUNAssTABWithUpdateNAV(String topicID, AssessedAnchor pAnchorOLSA, Bep linkBepOID) {
     	return getTABWithUpdateNAV(topicID, pAnchorOLSA, linkBepOID, true, true);
     }
 //        // RETURN V[String[]{anchor_O, L}, String[]{BepLink_O, ID}]
@@ -1461,15 +1462,15 @@ public class ResourcesManager {
     // </editor-fold>
 
     // <editor-fold defaultstate="collapsed" desc="Get NEXT TAB/TBA & Update NAV Indice">
-    public Bep getPreTABWithUpdateNAV(String topicID, IndexedAnchor pAnchorOLSA, Bep currALinkOIDSA, boolean nextUnassessed) {
+    public Bep getPreTABWithUpdateNAV(String topicID, AssessedAnchor pAnchorOLSA, Bep currALinkOIDSA, boolean nextUnassessed) {
     	return getTABWithUpdateNAV(topicID, pAnchorOLSA, currALinkOIDSA, nextUnassessed, false);
     }
     
-    public Bep getNextTABWithUpdateNAV(String topicID, IndexedAnchor pAnchorOLSA, Bep linkBepOID, boolean nextUnassessed) {
+    public Bep getNextTABWithUpdateNAV(String topicID, AssessedAnchor pAnchorOLSA, Bep linkBepOID, boolean nextUnassessed) {
     	return getTABWithUpdateNAV(topicID, pAnchorOLSA, linkBepOID, nextUnassessed, true);
     }
     
-    public Bep getTABWithUpdateNAV(String topicID, IndexedAnchor pAnchorOLSA, Bep currALinkOIDSA, boolean nextUnassessed, boolean forwardOrBackward) {
+    public Bep getTABWithUpdateNAV(String topicID, AssessedAnchor pAnchorOLSA, Bep currALinkOIDSA, boolean nextUnassessed, boolean forwardOrBackward) {
         // RETURN V[String[]{anchor_O, L}, String[]{BepLink_O, ID}]
         Bep nextTAB = null; //new Vector<String[]>();
         String[] nextTAnchorOL = null;
