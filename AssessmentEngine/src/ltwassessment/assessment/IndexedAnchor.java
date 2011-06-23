@@ -11,6 +11,9 @@ public class IndexedAnchor extends Anchor {
 	protected int offsetIndex;
 	protected int lengthIndex;
 	
+    private int screenPosStart;
+    private int screenPosEnd;
+    
 	Vector<Bep> beps = new Vector<Bep>();
 
 	public IndexedAnchor(int offset, int length, String name) {
@@ -96,4 +99,32 @@ public class IndexedAnchor extends Anchor {
 	public Vector<Bep> getBeps() {
 		return beps;
 	}	
+	
+	
+
+	public String screenPosStartToString() {
+		return String.valueOf(screenPosStart);
+	}
+	
+
+	public String screenPosEndToString() {
+		return String.valueOf(screenPosEnd);
+	}
+	
+
+	public int getScreenPosStart() {
+		return screenPosStart;
+	}
+
+	public void setScreenPosStart(int screenPosStart) {
+		this.screenPosStart = screenPosStart;
+	}
+
+	public int getScreenPosEnd() {
+		return screenPosEnd;
+	}
+
+	public void setScreenPosEnd(int screenPosEnd) {
+		this.screenPosEnd = screenPosEnd;
+	}
 }
