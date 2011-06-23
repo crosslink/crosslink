@@ -316,11 +316,11 @@ public class topicPaneMouseListener implements MouseInputListener {
         // <editor-fold defaultstate="collapsed" desc="Topic Anchor Click to open 1st BEP Link">
         // pAnchorOL, V<String[]{bepOffset, bepID}>
         Hashtable<String, Vector<Bep>> poolAnchorBepLinksHT = myRSCManager.getPoolAnchorBepLinksHashtable();
-        String[] currPAnchorOLStatus = myRSCManager.getTopicAnchorOLStatusBySE(currTopicID, currSCRSEName);
-        String pAnchorO = currPAnchorOLStatus[0];
-        String pAnchorL = currPAnchorOLStatus[1];
+//        String[] currPAnchorOLStatus = myRSCManager.getTopicAnchorOLStatusBySE(currTopicID, currSCRSEName);
+        String pAnchorO = currSCRSEName.offsetToString(); //currPAnchorOLStatus[0];
+        String pAnchorL = currSCRSEName.lengthToString(); //currPAnchorOLStatus[1];
         String pAnchorOL = pAnchorO + "_" + pAnchorL;
-        String pAnchorStatus = this.poolerManager.getPoolAnchorStatus(currTopicID, new String[]{currPAnchorOLStatus[0], currPAnchorOLStatus[1]});
+        String pAnchorStatus = this.poolerManager.getPoolAnchorStatus(currTopicID, currSCRSEName/*new String[]{currPAnchorOLStatus[0], currPAnchorOLStatus[1]}*/);
         Vector<Bep> pABepLinksVSA = poolAnchorBepLinksHT.get(pAnchorOL);
         String bepOffset = "";
         String bepID = "";
@@ -348,9 +348,9 @@ public class topicPaneMouseListener implements MouseInputListener {
 			        	break;
 	        	}
 	        }
-        String bepRel = this.poolerManager.getPoolAnchorBepLinkStatus(this.currTopicID, currPAnchorOLStatus, bepID);
+        String bepRel = this.poolerManager.getPoolAnchorBepLinkStatus(this.currTopicID, currSCRSEName, bepID);
         String bepXmlFilePath = myRSCManager.getWikipediaFilePathByName(bepID + ".xml", bepLang);
-        String bepStartp = this.poolerManager.getPoolAnchorBepLinkStartP(this.currTopicID, currPAnchorOLStatus, bepID);
+        String bepStartp = this.poolerManager.getPoolAnchorBepLinkStartP(this.currTopicID, currSCRSEName, bepID);
         if (bepXmlFilePath.startsWith(afTasnCollectionErrors)) {
             bepXmlFilePath = myRSCManager.getErrorXmlFilePath(bepXmlFilePath);
         }
@@ -366,10 +366,10 @@ public class topicPaneMouseListener implements MouseInputListener {
                 this.linkTextPane.setBackground(this.linkPaneWhiteColor);
                 this.linkTextPane.repaint();
             } else {
-                Vector<String[]> pAUNAssBLinkVSA = this.myRSCManager.getCurrPAnchorUNAssBLinkWithUpdateNAV(this.currTopicID, new String[]{pAnchorO, pAnchorL}, new String[]{bepOffset, bepID});
-                String[] unAssLinkOID = pAUNAssBLinkVSA.elementAt(1);
+                Bep pAUNAssBLinkVSA = this.myRSCManager.getNextUNAssTABWithUpdateNAV(this.currTopicID, currSCRSEName, bepInfo); //getCurrPAnchorUNAssBLinkWithUpdateNAV(this.currTopicID, new String[]{pAnchorO, pAnchorL}, new String[]{bepOffset, bepID});
+//                String[] unAssLinkOID = pAUNAssBLinkVSA.elementAt(1);
                 // new String[]{tbOffset, tbStartP, tbFileID, tbRel}
-                String unAssLinkID = unAssLinkOID[2];
+                String unAssLinkID = pAUNAssBLinkVSA.getFileId(); //unAssLinkOID[2];
                 String unAssLinkFPath = myRSCManager.getWikipediaFilePathByName(unAssLinkID + ".xml", AppResource.targetLang);
                 if (unAssLinkFPath.startsWith(afTasnCollectionErrors)) {
                     unAssLinkFPath = myRSCManager.getErrorXmlFilePath(unAssLinkFPath);
@@ -508,7 +508,7 @@ public class topicPaneMouseListener implements MouseInputListener {
         // GET CURR-Clicked Anchor + BEP Data
         // pAnchorOL, V<String[]{bepOffset, bepID}>
         Hashtable<String, Vector<Bep>> poolAnchorBepLinksHT = myRSCManager.getPoolAnchorBepLinksHashtable();
-        String[] currPAnchorOLStatus = myRSCManager.getTopicAnchorOLStatusBySE(currTopicID, currSCRSEName);
+//        String[] currPAnchorOLStatus = myRSCManager.getTopicAnchorOLStatusBySE(currTopicID, currSCRSEName);
         String pAnchorO = currPAnchorOLStatus[0];
         String pAnchorL = currPAnchorOLStatus[1];
         String pAnchorS = currSCRSEName.screenPosStartToString();
@@ -520,9 +520,9 @@ public class topicPaneMouseListener implements MouseInputListener {
         Bep firstLink = pABepLinksVSA.elementAt(0);
         String bepOffset = pABepLinksVSA.elementAt(0).offsetToString();//[0];
         String bepID = pABepLinksVSA.elementAt(0).getFileId(); //[1];
-        String bepRel = this.poolerManager.getPoolAnchorBepLinkStatus(this.currTopicID, currPAnchorOLStatus, bepID);
+        String bepRel = this.poolerManager.getPoolAnchorBepLinkStatus(this.currTopicID, currSCRSEName/*currPAnchorOLStatus*/, bepID);
         String bepXmlFilePath = poolerManager.getXmlFilePathByTargetID(bepID, AppResource.targetLang);
-        String bepStartp = this.poolerManager.getPoolAnchorBepLinkStartP(this.currTopicID, currPAnchorOLStatus, bepID);
+        String bepStartp = this.poolerManager.getPoolAnchorBepLinkStartP(this.currTopicID, currSCRSEName/*currPAnchorOLStatus*/, bepID);
 
         // In the case of Errors --> Refresh Link Pane
         if (bepXmlFilePath.startsWith(afTasnCollectionErrors)) {
@@ -1124,7 +1124,8 @@ public class topicPaneMouseListener implements MouseInputListener {
         Vector<String[]> currAnchorSCRPos = new Vector<String[]>();
         IndexedAnchor hoveredAnchor = null;
         
-        for (String thisAnchorSet : currAnchorOLSet) {
+        for (int i = 0; i < currAnchorOLSet.size(); ++i) {
+        	String thisAnchorSet = currAnchorOLSet.get(i);
             String[] thisAnchorSA = thisAnchorSet.split(" : ");
             currAnchorSCRPos.add(new String[]{thisAnchorSA[2], thisAnchorSA[3], thisAnchorSA[4]});
 
@@ -1146,14 +1147,16 @@ public class topicPaneMouseListener implements MouseInputListener {
                         thisAnchorSA[2].toString().trim();
                 currAnchorSCRName =
                         this.topicTextPane.getSelectedText();
+                hoveredAnchor = myRSCManager.getBepsPoolByAnchor(i);
 //                return hoveredAnchorSEName = new String[]{String.valueOf(aStartPoint), String.valueOf(aEndPoint), currAnchorSCRName, thisAnchorSA[5]};
 //                hoveredAnchorSEName = new String[]{thisAnchorSA[3], thisAnchorSA[4], currAnchorSCRName, thisAnchorSA[5], thisAnchorSA[0], thisAnchorSA[1]};
 //                                                      screenOffset    screenEnd        screenAnchorName,   extension length  offset      offset length
                 
-                hoveredAnchor = new IndexedAnchor();
-                hoveredAnchor.setCurrentAnchorProperty(offset, length, aStartPoint, aEndPoint, 0, extLength);
+//                hoveredAnchor = new IndexedAnchor();
+//                hoveredAnchor.setCurrentAnchorProperty(offset, length, aStartPoint, aEndPoint, 0, extLength);
+//                
+//                hoveredAnchor.setName(currAnchorSCRName);
                 
-                hoveredAnchor.setName(currAnchorSCRName);
 //                selectedAnchor.setScreenPosEnd();
 //                CurrentFocusedAnchor.getCurrentFocusedAnchor().setIndexOffset(Integer.parseInt(thisAnchorSA[3]), Integer.parseInt(thisAnchorSA[4]));
                 break;

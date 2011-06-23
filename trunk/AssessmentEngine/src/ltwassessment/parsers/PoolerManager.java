@@ -28,6 +28,7 @@ import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
 
 import ltwassessment.AppResource;
+import ltwassessment.assessment.AssessedAnchor;
 import ltwassessment.assessment.Bep;
 import ltwassessment.assessment.IndexedAnchor;
 import ltwassessment.utility.PoolUpdater;
@@ -45,6 +46,8 @@ import org.xml.sax.SAXException;
  */
 public class PoolerManager {
 
+	public final static String OUTGOING_KEY = "outgoing : ";
+	
     private final String sysPropertyKey = "isTABKey";
     private final String sysPropertyIsTopicWikiKey = "isTopicWikipedia";
     private final String sysPropertyIsLinkWikiKey = "isLinkWikipedia";
@@ -217,7 +220,7 @@ public class PoolerManager {
         return pAnchorName;
     }
 
-    public String getPoolAnchorStatus(String topicID, String[] poolAnchorOL) {
+    public String getPoolAnchorStatus(String topicID, IndexedAnchor poolAnchorOL) {
         String pAnchorStatus = "0";
         VTDGen vg = new VTDGen();
 
@@ -232,7 +235,7 @@ public class PoolerManager {
                 XMLModifier xm = new XMLModifier(vn);
 
                 // Pool Anchor
-                String xPath1 = "/crosslink-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + poolAnchorOL[0] + "' and @alength='" + poolAnchorOL[1] + "']";
+                String xPath1 = "/crosslink-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + poolAnchorOL.offsetToString()/*[0]*/ + "' and @alength='" + poolAnchorOL.lengthToString()/*[1]*/ + "']";
                 ap.selectXPath(xPath1);
                 int k = -1;
                 while ((k = ap.evalXPath()) != -1) {
@@ -260,7 +263,7 @@ public class PoolerManager {
         return pAnchorStatus;
     }
 
-    public Vector<String> getPoolAnchorAllLinkStatus(String topicID, String[] poolAnchorOL) {
+    public Vector<String> getPoolAnchorAllLinkStatus(String topicID, IndexedAnchor poolAnchorOL) {
         Vector<String> pAnchorAllLinkStatus = new Vector<String>();
         VTDGen vg = new VTDGen();
 
@@ -275,7 +278,7 @@ public class PoolerManager {
                 XMLModifier xm = new XMLModifier(vn);
 
                 // Pool Anchor
-                String xPath1 = "/crosslink-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + poolAnchorOL[0] + "' and @alength='" + poolAnchorOL[1] + "']/subanchor/tobep";
+                String xPath1 = "/crosslink-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + poolAnchorOL.offsetToString()/*[0]*/ + "' and @alength='" + poolAnchorOL.lengthToString()/*[1]*/ + "']/subanchor/tobep";
                 ap.selectXPath(xPath1);
                 int i = -1;
                 while ((i = ap.evalXPath()) != -1) {
@@ -303,7 +306,7 @@ public class PoolerManager {
         return pAnchorAllLinkStatus;
     }
 
-    public String getPoolAnchorBepLinkStartP(String topicID, String[] poolAnchorOL, String targetID) {
+    public String getPoolAnchorBepLinkStartP(String topicID, IndexedAnchor currSCRSEName, String targetID) {
         String pAnchorStartP = "0";
         VTDGen vg = new VTDGen();
 
@@ -318,7 +321,7 @@ public class PoolerManager {
                 XMLModifier xm = new XMLModifier(vn);
 
                 // Pool Anchor
-                String xPath1 = "/crosslink-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + poolAnchorOL[0] + "' and @alength='" + poolAnchorOL[1] + "']/subanchor/tobep";
+                String xPath1 = "/crosslink-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + currSCRSEName.offsetToString()/*[0]*/ + "' and @alength='" + currSCRSEName.lengthToString()/*[1]*/ + "']/subanchor/tobep";
                 ap.selectXPath(xPath1);
                 int i = -1;
                 while ((i = ap.evalXPath()) != -1) {
@@ -352,7 +355,7 @@ public class PoolerManager {
         return pAnchorStartP;
     }
 
-    public String getPoolAnchorBepLinkStatus(String topicID, String[] poolAnchorOL, String targetID) {
+    public String getPoolAnchorBepLinkStatus(String topicID, IndexedAnchor poolAnchorOL, String targetID) {
         String pAnchorStatus = "0";
         VTDGen vg = new VTDGen();
 
@@ -367,7 +370,7 @@ public class PoolerManager {
                 XMLModifier xm = new XMLModifier(vn);
 
                 // Pool Anchor
-                String xPath1 = "/crosslink-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + poolAnchorOL[0] + "' and @alength='" + poolAnchorOL[1] + "']/subanchor/tobep";
+                String xPath1 = "/crosslink-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + poolAnchorOL.offsetToString()/*[0]*/ + "' and @alength='" + poolAnchorOL.lengthToString()/*[1]*/ + "']/subanchor/tobep";
                 ap.selectXPath(xPath1);
                 int i = -1;
                 while ((i = ap.evalXPath()) != -1) {
@@ -765,7 +768,7 @@ public class PoolerManager {
 //                      String aLengthStr =  String.valueOf(FOLTXTMatcher.textLength(bytes, aOffset, aLength));
 //						String aExtLengthStr = String.valueOf(FOLTXTMatcher.textLength(bytes, aOffset + aLength, aExtLength));
                 		
-                        IndexedAnchor anchor = null;
+                        AssessedAnchor anchor = null;
                         if (forValidationOrAssessment) {
                         	anchorKey = aOffsetStr + "_" + aLengthStr;
                             NodeList subAnchorNodeList = anchorElmn.getElementsByTagName(afSubAnchorTag);
@@ -782,7 +785,7 @@ public class PoolerManager {
 //                                saLength = String.valueOf(aLength);
                                 String sanchorName = subAnchorElmn.getAttribute("saname");
                                 String sarel = subAnchorElmn.getAttribute("sarel");
-                                anchor = new IndexedAnchor(Integer.parseInt(saOffset), Integer.parseInt(saLength), sanchorName);
+                                anchor = new AssessedAnchor(Integer.parseInt(saOffset), Integer.parseInt(saLength), sanchorName);
                                 NodeList toBepNodeList = subAnchorElmn.getElementsByTagName(afToBepTag);
                                 for (int m = 0; m < toBepNodeList.getLength(); m++) {
                                     Element toBepElmn = (Element) toBepNodeList.item(m);
@@ -801,7 +804,7 @@ public class PoolerManager {
                         else {
                         	anchorKey = aOffsetStr + "_" + (Integer.valueOf(aOffset) + Integer.valueOf(aLength)) + "_" + anchorName;
                             NodeList toBepNodeList = anchorElmn.getElementsByTagName(afToBepTag);
-                            anchor = new IndexedAnchor(aOffset, aLength, anchorName);
+                            anchor = new AssessedAnchor(aOffset, aLength, anchorName);
                             anchor.setExtendedLength(aExtLength);
                             
                             for (int m = 0; m < toBepNodeList.getLength(); m++) {
@@ -899,6 +902,7 @@ public class PoolerManager {
     		int aLength = 0;
     		
     		IndexedAnchor parsedAnchor = null;
+    		AssessedAnchor parsedSubanchor = null;
     		
             while (xsr.hasNext()) {
                 xsr.next();
@@ -997,21 +1001,25 @@ public class PoolerManager {
                         thisAnchorSet = thisAnchorProperty[0] + "_" + thisAnchorProperty[1];
                         subAnchorsToBepsHT = new Hashtable<String, Vector<Bep>>();
                         
-                        parsedAnchor = new IndexedAnchor(aOffset, aLength, thisAnchorProperty[2]);
-                        parsedAnchor.setStatus(Integer.valueOf(thisAnchorProperty[3]));
+                        
+                        
                         
                         if (!AppResource.forValidationOrAssessment) { // validation
 //                            thisSubAnchorProperty = new String[4];
 //                            System.arraycopy(thisAnchorProperty, 0, thisSubAnchorProperty, 0, 4);
 //                            subAnchorsVbyTopic.add(thisSubAnchorProperty);
                             thisSubAnchorSet = thisSubAnchorProperty[0] + "_" + thisSubAnchorProperty[1];
-//                            toBepsVbySubAnchor = new Vector<IndexedAnchor>();
-                        	
-                        	parsedAnchor.setExtendedLength(aExtLength);
-                        	subAnchorsVbyTopic.add(parsedAnchor);
+//                            toBepsVbySubAnchor = new Vector<IndexedAnchor>();                        	
+
+                        	parsedSubanchor = new AssessedAnchor(aOffset, aLength, thisAnchorProperty[2]);
+                        	parsedSubanchor.setStatus(Integer.valueOf(thisAnchorProperty[3]));
+                        	parsedSubanchor.setExtendedLength(aExtLength);
+                        	subAnchorsVbyTopic.add(parsedSubanchor);
                         }
                         else {
 //                        	parsedAnchor = new IndexedAnchor(aOffset, aLength, thisAnchorProperty[2]);
+                        	parsedAnchor = new IndexedAnchor(aOffset, aLength, thisAnchorProperty[2]);
+                        	parsedAnchor.setStatus(Integer.valueOf(thisAnchorProperty[3]));
                         	parsedAnchor.setExtendedLength(aExtLength); 	
                         	anchorsVbyTopic.add(parsedAnchor);
                         }
@@ -1041,11 +1049,13 @@ public class PoolerManager {
 //                        subAnchorsVbyTopic.add(thisSubAnchorProperty);
                         thisSubAnchorSet = thisSubAnchorProperty[0] + "_" + thisSubAnchorProperty[1];
 //                        toBepsVbySubAnchor = new Vector<IndexedAnchor>();
-                        parsedAnchor = new IndexedAnchor(aOffset, aLength, thisSubAnchorProperty[2], Integer.valueOf(thisSubAnchorProperty[3]));
-                        parsedAnchor.setOffsetIndex(Integer.valueOf(thisAnchorProperty[0]));
-                        parsedAnchor.setLengthIndex(Integer.valueOf(thisAnchorProperty[1]));
+                        parsedSubanchor = new AssessedAnchor(aOffset, aLength, thisSubAnchorProperty[2], Integer.valueOf(thisSubAnchorProperty[3]));
+                        parsedSubanchor.setOffsetIndex(Integer.valueOf(thisAnchorProperty[0]));
+                        parsedSubanchor.setLengthIndex(Integer.valueOf(thisAnchorProperty[1]));
                         
-                        subAnchorsVbyTopic.add(parsedAnchor);
+                        subAnchorsVbyTopic.add(parsedSubanchor);
+                        parsedAnchor.addChildAnchor(parsedSubanchor);
+                        parsedSubanchor.setParent(parsedAnchor);
 //                        toBepsVbySubAnchor.add
                     } else if (tagName.equals(SubmissionFormat.getAftobeptag())) { // tobep , now tofile
                         String[] thisToBepProperty = null;
@@ -1089,8 +1099,8 @@ public class PoolerManager {
                         bep.setOffset(thisToBepProperty[0]);
                         bep.setFileId(thisToBepProperty[1]);
                         bep.setIndex(index++);
-                        parsedAnchor.addBep(bep);
-                        bep.setAssociatedAnchor(parsedAnchor);
+                        parsedSubanchor.addBep(bep);
+                        bep.setAssociatedAnchor(parsedSubanchor);
                     } else if (tagName.equals("incominglinks")) {
                         isIncoming = true;
                         bepOffsetVbyTopic = new Vector<String[]>();
@@ -1134,8 +1144,8 @@ public class PoolerManager {
                         isThisTopic = false;
                     } else if (tagName.equals("outgoinglinks") || tagName.equals("outgoing")) {
 //                        if (isOutgoing) {
-                            topicAnchorsHT.put("outgoing : " + thisTopicFileID, anchorsVbyTopic);
-                            topicSubanchorsHT.put("outgoing : " + thisTopicFileID, subAnchorsVbyTopic);
+                            topicAnchorsHT.put(OUTGOING_KEY + thisTopicFileID, anchorsVbyTopic);
+                            topicSubanchorsHT.put(OUTGOING_KEY + thisTopicFileID, subAnchorsVbyTopic);
                             poolOutgoingData.put(thisTopicFileID, anchorsHT);
 //                        }
 //                        isOutgoing = false;
@@ -1143,11 +1153,11 @@ public class PoolerManager {
                     	assert (anchorsHT.get(thisAnchorSet) == null);
                         anchorsHT.put(thisAnchorSet, subAnchorsToBepsHT);
                         if (!AppResource.forValidationOrAssessment) {
-                        	subAnchorsToBepsHT.put(thisSubAnchorSet, parsedAnchor.getBeps()/*toBepsVbySubAnchor*/);
+                        	subAnchorsToBepsHT.put(thisSubAnchorSet, parsedSubanchor.getBeps()/*toBepsVbySubAnchor*/);
                         	parsedAnchor = null;
                         }
                     } else if (tagName.equals("subanchor")) {
-                        subAnchorsToBepsHT.put(thisSubAnchorSet, parsedAnchor.getBeps()/*toBepsVbySubAnchor*/);
+                        subAnchorsToBepsHT.put(thisSubAnchorSet, parsedSubanchor.getBeps()/*toBepsVbySubAnchor*/);
                     	thisSubAnchorSet = "";
                     	thisSubAnchorProperty = null;
                     	parsedAnchor = null;

@@ -878,7 +878,7 @@ public class LTWAssessmentToolView extends FrameView {
         String nextAnchorS = nextAnchorBepLinkVSA.getAssociatedAnchor().screenPosStartToString(); //nextAnchorOLSEStatusSA[2];
         String nextAnchorE = nextAnchorBepLinkVSA.getAssociatedAnchor().screenPosEndToString(); //extAnchorOLSEStatusSA[3];
         String nextAnchorExt = nextAnchorBepLinkVSA.getAssociatedAnchor().extendedLengthToString(); //nextAnchorOLSEStatusSA[5];
-        String nextAnchorStatus = myPooler.getPoolAnchorStatus(currTopicID, new String[]{nextAnchorO, nextAnchorL});
+        String nextAnchorStatus = myPooler.getPoolAnchorStatus(currTopicID, nextAnchorBepLinkVSA.getAssociatedAnchor()/*new String[]{nextAnchorO, nextAnchorL}*/);
         
     	int anchorEnd = Integer.valueOf(nextAnchorE);
     	int anchorExt = Integer.valueOf(nextAnchorExt);
@@ -897,8 +897,8 @@ public class LTWAssessmentToolView extends FrameView {
         String nextLinkTitle = nextAnchorBepLinkVSA.getTargetTitle(); //nextAnchorLinkOSIDStatusSA[5];
         String nextLinkAnchorName = nextAnchorBepLinkVSA.getAssociatedAnchor().getName(); //nextAnchorLinkOSIDStatusSA[6];
 //        String nextLinkExtLength = "0"; //nextAnchorLinkOSIDStatusSA[6];
-        String nextLinkS = myPooler.getPoolAnchorBepLinkStartP(currTopicID, new String[]{nextAnchorO, nextAnchorL}, nextLinkID);
-        String nextLinkStatus = myPooler.getPoolAnchorBepLinkStatus(currTopicID, new String[]{nextAnchorO, nextAnchorL}, nextLinkID);
+        String nextLinkS = myPooler.getPoolAnchorBepLinkStartP(currTopicID, nextAnchorBepLinkVSA.getAssociatedAnchor(), nextLinkID);
+        String nextLinkStatus = myPooler.getPoolAnchorBepLinkStatus(currTopicID, nextAnchorBepLinkVSA.getAssociatedAnchor(), nextLinkID);
         
 //        Link link = new Link();
 //        link.setAnchorName(nextLinkAnchorName);
@@ -950,7 +950,7 @@ public class LTWAssessmentToolView extends FrameView {
         String currPAnchorE = currTopicOLSEStatusSA[3];
         String currPAnchorExt = currTopicOLSEStatusSA[5];
 
-        String currPAnchorStatus = myPooler.getPoolAnchorStatus(currTopicID, currPAnchorOLSA);
+        String currPAnchorStatus = myPooler.getPoolAnchorStatus(currTopicID, indexedAnchor);
         String[] targetAnchorScreenInfo = new String[]{"", indexedAnchor.screenPosStartToString(), indexedAnchor.screenPosEndToString(), 
         			indexedAnchor.extendedLengthToString(), indexedAnchor.screenPosStartToString(), indexedAnchor.screenPosEndToString()};
         if (!targetAnchorScreenInfo[4].equals(currPAnchorS) || !targetAnchorScreenInfo[5].equals(currPAnchorE)) {
@@ -976,7 +976,7 @@ public class LTWAssessmentToolView extends FrameView {
                 if (!currPAnchorStatus.equals("0")){
                     poolAnchorStatus = currPAnchorStatus;
                 } else {
-                    poolAnchorStatus = rscManager.getPoolAnchorCompletedStatus(currTopicID, currPAnchorOLSA);
+                    poolAnchorStatus = rscManager.getPoolAnchorCompletedStatus(currTopicID, indexedAnchor);
                 }
                 myPUpdater.updatePoolAnchorStatus(currTopicID, currPAnchorOLSA, poolAnchorStatus);
                 topicTextPane.getCaret().setDot(Integer.valueOf(indexedAnchor.getScreenPosEnd()));
@@ -1069,7 +1069,7 @@ public class LTWAssessmentToolView extends FrameView {
             // =================================================================
             // 1) Get the NEXT Anchor O, L, S, E, Status + its BEP link O, S, ID, Status
             //    With TAB Nav Update --> NEXT TAB
-            Bep nextAnchorBepLinkVSA = rscManager.getPreTABWithUpdateNAV(currTopicID, currPAnchorOLSA, currALinkOIDSA, false);
+            Bep nextAnchorBepLinkVSA = rscManager.getPreTABWithUpdateNAV(currTopicID, currALinkOIDSA.getAssociatedAnchor(), currALinkOIDSA, false);
             
             updateAnchorChanges(nextAnchorBepLinkVSA, currTopicOLSEStatusSA, currPAnchorOLSA, currALinkOIDSA);
     }

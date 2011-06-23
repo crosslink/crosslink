@@ -13,8 +13,8 @@ public class IndexedAnchor extends Anchor {
 	
     private int screenPosStart;
     private int screenPosEnd;
-    
-	Vector<Bep> beps = new Vector<Bep>();
+	
+	Vector<AssessedAnchor> childrenAnchors = new Vector<AssessedAnchor>();
 
 	public IndexedAnchor(int offset, int length, String name) {
 		super(offset, length, name);
@@ -91,17 +91,7 @@ public class IndexedAnchor extends Anchor {
 	public String offsetIndexToString() {
 		return String.valueOf(offsetIndex);
 	}
-
-	public void addBep(Bep bep) {
-		beps.add(bep);
-	}
 	
-	public Vector<Bep> getBeps() {
-		return beps;
-	}	
-	
-	
-
 	public String screenPosStartToString() {
 		return String.valueOf(screenPosStart);
 	}
@@ -149,5 +139,13 @@ public class IndexedAnchor extends Anchor {
 		//String sysPropertyValue = offsetStr + "_" + lengthStr + "_" + screenPosStartStr + "_" + screenPosEndStr + "_" + statusStr + "_" + extLengthStr;
 		//System.setProperty(sysPropertyCurrTopicOLSEStatusKey, sysPropertyValue);
 		setCurrentAnchorProperty(Integer.valueOf(offsetStr), Integer.valueOf(lengthStr), Integer.valueOf(screenPosStartStr), Integer.valueOf(screenPosEndStr), Integer.valueOf(statusStr), Integer.valueOf(extLengthStr));
+	}
+	
+	public void addChildAnchor(IndexedAnchor anchor) {
+		childrenAnchors.add((AssessedAnchor) anchor);
+	}
+
+	public Vector<AssessedAnchor> getChildrenAnchors() {
+		return childrenAnchors;
 	}
 }
