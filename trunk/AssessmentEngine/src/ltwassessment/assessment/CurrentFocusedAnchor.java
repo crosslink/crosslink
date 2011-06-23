@@ -26,25 +26,6 @@ public class CurrentFocusedAnchor {
 	public static CurrentFocusedAnchor getCurrentFocusedAnchor() {
 		return currentFocusedAnchor;
 	}
-
-
-//	public void setCurrentAnchorProperty(int offset, int length, int screenPosStart, int screenPosEnd, int status, int extLength) {
-//		anchor.setOffset(offset);
-//		anchor.setLength(length);
-//		this.screenPosStart = screenPosStart;
-//		this.screenPosEnd = screenPosEnd;
-//		
-//		anchor.setStatus(status);
-//		
-//		setIndexOffset(offset, length);
-////    	setCurrentAnchorProperty(String.valueOf(offset), String.valueOf(length), String.valueOf(screenPosStart), String.valueOf(screenPosEnd), String.valueOf(status), String.valueOf(extLength));
-//    }
-//    
-//    public void setCurrentAnchorProperty(String offsetStr, String lengthStr, String screenPosStartStr, String screenPosEndStr, String statusStr, String extLengthStr) {
-////    	String sysPropertyValue = offsetStr + "_" + lengthStr + "_" + screenPosStartStr + "_" + screenPosEndStr + "_" + statusStr + "_" + extLengthStr;
-////    	System.setProperty(sysPropertyCurrTopicOLSEStatusKey, sysPropertyValue);
-//    	setCurrentAnchorProperty(Integer.valueOf(offsetStr), Integer.valueOf(lengthStr), Integer.valueOf(screenPosStartStr), Integer.valueOf(screenPosEndStr), Integer.valueOf(statusStr), Integer.valueOf(extLengthStr));
-//    }
     
     public String[] toArray() {
     	String[] array = new String[8];
@@ -57,11 +38,6 @@ public class CurrentFocusedAnchor {
     	array[6] = anchor.offsetIndexToString();
     	array[7] = anchor.lengthIndexToString();
 		return array; 	
-    }
-    
-    public void setIndexOffset(int offset, int length) {
-    	anchor.setOffsetIndex(offset);
-    	anchor.setLengthIndex(length);
     }
 
 	public String getScreenAnchorText() {

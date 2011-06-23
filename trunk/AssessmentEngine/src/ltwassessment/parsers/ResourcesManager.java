@@ -2225,10 +2225,10 @@ public class ResourcesManager {
         return currTopicABepSIDStatus;
     }
 
-    public String[] getTopicAnchorOLStatusBySE(String topicID, CurrentFocusedAnchor currSCRSEName) {
+    public String[] getTopicAnchorOLStatusBySE(String topicID, IndexedAnchor currSCRSEName) {
         String[] poolAnchorOLStatus = new String[3];
-        int pAnchorS = currSCRSEName.getAnchor().getScreenPosStart();
-        int pAnchorE = currSCRSEName.getAnchor().getScreenPosEnd();
+        int pAnchorS = currSCRSEName.getScreenPosStart();
+        int pAnchorE = currSCRSEName.getScreenPosEnd();
         // String[]{Anchor_Offset, Length, S, E, Status}
         Vector<String[]> topicAnchorSCRStatusVSA = getTopicAnchorOLSEStatusVSA();
         for (String[] topicAnchorSCRStatus : topicAnchorSCRStatusVSA) {
