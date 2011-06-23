@@ -128,7 +128,7 @@ public class PoolerManager {
 
 	// <editor-fold defaultstate="collapsed" desc="GET Pool Properties"> 
     // instant status
-    public int getPABepLinkStartP(String topicID, String[] pAnchorOLSA, String currALinkID) {
+    public int getPABepLinkStartP(String topicID, IndexedAnchor pAnchorOLSA, String currALinkID) {
         int pABepLinkStartP = -1;
         VTDGen vg = new VTDGen();
 
@@ -143,7 +143,7 @@ public class PoolerManager {
                 XMLModifier xm = new XMLModifier(vn);
 
                 // Pool Anchor
-                String xPath = "/crosslink-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + pAnchorOLSA[0] + "' and @alength='" + pAnchorOLSA[1] + "']/subanchor/tobep";
+                String xPath = "/crosslink-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + pAnchorOLSA.offsetToString() + "' and @alength='" + pAnchorOLSA.lengthToString() + "']/subanchor/tobep";
                 ap.selectXPath(xPath);
                 int i = -1;
                 while ((i = ap.evalXPath()) != -1) {

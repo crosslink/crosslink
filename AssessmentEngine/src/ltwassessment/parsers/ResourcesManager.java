@@ -2069,7 +2069,7 @@ public class ResourcesManager {
     // -------------------------------------------------------------------------
     // 2) Get Topic Anchor OL & SCR-SE
 
-    public String[] getCurrTopicAnchorOLNameStatusSA() {
+    public IndexedAnchor getCurrTopicAnchorOLNameStatusSA() {
         // String[]{Anchor_Offset, Length}
         String[] currTopicAnchorOLNameStatus = new String[2];
         // ---------------------------------------------------------------------
@@ -2085,8 +2085,9 @@ public class ResourcesManager {
         // String[]{anchor Offset, Length, Name, arel}
         Vector<IndexedAnchor> poolAnchorsOLNameStatusVSA = getPoolAnchorsOLNameStatusV();
         IndexedAnchor currAnchorOLNameStatusSA = poolAnchorsOLNameStatusVSA.elementAt(Integer.valueOf(poolAnchorIndex));
-        currTopicAnchorOLNameStatus = new String[]{currAnchorOLNameStatusSA.offsetToString(), currAnchorOLNameStatusSA.lengthToString(), currAnchorOLNameStatusSA.getName(), currAnchorOLNameStatusSA.statusToString()};
-        return currTopicAnchorOLNameStatus;
+//        currTopicAnchorOLNameStatus = new String[]{currAnchorOLNameStatusSA.offsetToString(), currAnchorOLNameStatusSA.lengthToString(), currAnchorOLNameStatusSA.getName(), currAnchorOLNameStatusSA.statusToString()};
+        return currAnchorOLNameStatusSA;
+//        return currTopicAnchorOLNameStatus;
     }
     
     public String[] getCurrTopicSubanchorOLNameStatusSA() {
@@ -2113,9 +2114,9 @@ public class ResourcesManager {
         // String[]{Anchor_O, L, Name, SP, EP, Status}
         String[] currTopicAnchorOLNameSE = new String[6];
         // String[]{anchor Offset, Length, Name, arel}
-        String[] currAnchorOLSA = this.getCurrTopicAnchorOLNameStatusSA();
-        String currAnchorO = currAnchorOLSA[0];
-        String currAnchorL = currAnchorOLSA[1];
+        IndexedAnchor currAnchorOLSA = this.getCurrTopicAnchorOLNameStatusSA();
+        String currAnchorO = currAnchorOLSA.offsetToString(); //[0];
+        String currAnchorL = currAnchorOLSA.lengthToString(); //[1];
         // SP, EP
         String currAnchorS = "0";
         String currAnchorE = "0";
@@ -2133,7 +2134,7 @@ public class ResourcesManager {
             }
         }
         String[] currTopicAnchorSE = new String[]{currAnchorS, currAnchorE};
-        currTopicAnchorOLNameSE = new String[]{currAnchorOLSA[0], currAnchorOLSA[1], currAnchorOLSA[2], currTopicAnchorSE[0], currTopicAnchorSE[1], currAnchorOLSA[3], extensionLength};
+        currTopicAnchorOLNameSE = new String[]{currAnchorOLSA.offsetToString()/*[0]*/, currAnchorOLSA.lengthToString()/*[1]*/, currAnchorOLSA.getName()/*[2]*/, currTopicAnchorSE[0], currTopicAnchorSE[1], currAnchorOLSA.statusToString()/*[3]*/, extensionLength};
         return currTopicAnchorOLNameSE;
     }
     
@@ -2174,8 +2175,8 @@ public class ResourcesManager {
         // ---------------------------------------------------------------------
         // Get current Anchor SE
         // Pool_Anchor OL, BEPLinks V<String[]{Offset, fileID, tbrel/status}
-        String[] currAnchorOLSA = getCurrTopicAnchorOLNameStatusSA();
-        String currAnchorOL = currAnchorOLSA[0] + "_" + currAnchorOLSA[1];
+        IndexedAnchor currAnchorOLSA = getCurrTopicAnchorOLNameStatusSA();
+        String currAnchorOL = currAnchorOLSA.toKey(); //[0] + "_" + currAnchorOLSA[1];
         Hashtable<String, Vector<Bep>> poolAnchorBepLinksHT = getPoolAnchorBepLinksHashtable();
         Vector<Bep> currBepVSA = poolAnchorBepLinksHT.get(currAnchorOL);
         Bep currBepSA = currBepVSA.elementAt(Integer.valueOf(bepLinkIndex));
@@ -2208,8 +2209,8 @@ public class ResourcesManager {
         // ---------------------------------------------------------------------
         // Get current Anchor SE
         // Pool_Anchor OL, BEPLinks V<String[]{Offset, fileID, tbrel/status}
-        String[] currAnchorOLSA = getCurrTopicAnchorOLNameStatusSA();
-        String currAnchorOL = currAnchorOLSA[0] + "_" + currAnchorOLSA[1];
+        IndexedAnchor currAnchorOLSA = getCurrTopicAnchorOLNameStatusSA();
+        String currAnchorOL = currAnchorOLSA.toKey(); //[0] + "_" + currAnchorOLSA[1];
         Hashtable<String, Vector<Bep>> poolAnchorBepLinksHT = getPoolAnchorBepLinksHashtable();
         Vector<Bep> currBepVSA = poolAnchorBepLinksHT.get(currAnchorOL);
         Bep currBepSA = currBepVSA.elementAt(Integer.valueOf(bepLinkIndex));
