@@ -16,6 +16,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import ltwassessment.AppResource;
+import ltwassessment.assessment.IndexedAnchor;
 
 /**
  * @author Darren
@@ -236,7 +237,7 @@ public class PoolUpdater {
 
     // =========================================================================
     // =========================================================================
-    public void updatePoolAnchorStatus(String topicID, String[] poolAnchorOL, String pAnchorStatus) {
+    public void updatePoolAnchorStatus(String topicID, IndexedAnchor poolAnchorOL, String pAnchorStatus) {
         // For Right-Click on Anchor Text: ONLY change Pool Anchor Status, Keep panchor-BEPLinks Status
         VTDGen vg = new VTDGen();
         log("poolXMLPath: " + poolXMLPath);
@@ -250,9 +251,9 @@ public class PoolUpdater {
                 AutoPilot ap = new AutoPilot(vn);
                 XMLModifier xm = new XMLModifier(vn);
 
-                log(poolAnchorOL[0] + " - " + poolAnchorOL[1] + " - " + topicID);
+                log(poolAnchorOL.offsetToString()/*[0]*/ + " - " + poolAnchorOL.lengthToString()/*[1]*/ + " - " + topicID);
                 // Anchor
-                String xPath1 = "/crosslink-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + poolAnchorOL[0] + "' and @alength='" + poolAnchorOL[1] + "']";
+                String xPath1 = "/crosslink-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + poolAnchorOL.offsetToString()/*[0]*/ + "' and @alength='" + poolAnchorOL.lengthToString()/*[1]*/ + "']";
                 ap.selectXPath(xPath1);
                 int k = -1;
                 while ((k = ap.evalXPath()) != -1) {
@@ -333,7 +334,7 @@ public class PoolUpdater {
         }
     }
 
-    public void updateTopicAnchorLinkRel(String topicID, String[] poolAnchorOL, String targetLinkID, String tbRelStatus) {
+    public void updateTopicAnchorLinkRel(String topicID, IndexedAnchor poolAnchorOL, String targetLinkID, String tbRelStatus) {
         String targetID = targetLinkID;
 
         VTDGen vg = new VTDGen();
@@ -348,7 +349,7 @@ public class PoolUpdater {
                 AutoPilot ap = new AutoPilot(vn);
                 XMLModifier xm = new XMLModifier(vn);
 
-                String xPath = "/crosslink-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + poolAnchorOL[0] + "' and @alength='" + poolAnchorOL[1] + "']/subanchor/tobep";
+                String xPath = "/crosslink-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + poolAnchorOL.offsetToString() + "' and @alength='" + poolAnchorOL.lengthToString() + "']/subanchor/tobep";
                 ap.selectXPath(xPath);
                 int i = -1;
                 while ((i = ap.evalXPath()) != -1) {
@@ -384,7 +385,7 @@ public class PoolUpdater {
         }
     }
 
-    public void updateTopicAnchorLinkOSStatus(String topicID, String[] poolAnchorOL, String[] targetLinkOSID, String tbRelStatus) {
+    public void updateTopicAnchorLinkOSStatus(String topicID, IndexedAnchor poolAnchorOL, String[] targetLinkOSID, String tbRelStatus) {
         String targetOffset = targetLinkOSID[0];
         String targetStartP = targetLinkOSID[1];
         String targetID = targetLinkOSID[2];
@@ -401,7 +402,7 @@ public class PoolUpdater {
                 AutoPilot ap = new AutoPilot(vn);
                 XMLModifier xm = new XMLModifier(vn);
 
-                String xPath = "/crosslink-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + poolAnchorOL[0] + "' and @alength='" + poolAnchorOL[1] + "']/subanchor/tobep";
+                String xPath = "/crosslink-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + poolAnchorOL.offsetToString()/*[0]*/ + "' and @alength='" + poolAnchorOL.lengthToString()/*[1]*/ + "']/subanchor/tobep";
                 ap.selectXPath(xPath);
                 int i = -1;
                 while ((i = ap.evalXPath()) != -1) {

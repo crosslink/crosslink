@@ -148,4 +148,8 @@ public class IndexedAnchor extends Anchor {
 	public Vector<AssessedAnchor> getChildrenAnchors() {
 		return childrenAnchors;
 	}
+	
+	public String toKey() {
+		return this.offsetToString() + "_" +  this.lengthToString();
+	}
 }
