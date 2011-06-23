@@ -979,7 +979,7 @@ public class LTWAssessmentToolView extends FrameView {
                 } else {
                     poolAnchorStatus = rscManager.getPoolAnchorCompletedStatus(currTopicID, indexedAnchor);
                 }
-                myPUpdater.updatePoolAnchorStatus(currTopicID, currPAnchorOLSA, poolAnchorStatus);
+                myPUpdater.updatePoolAnchorStatus(currTopicID, indexedAnchor.getParent()/*currPAnchorOLSA*/, poolAnchorStatus);
                 topicTextPane.getCaret().setDot(Integer.valueOf(indexedAnchor.getScreenPosEnd()));
                 topicTextPane.scrollRectToVisible(topicTextPane.getVisibleRect());
                 topicTextPane.repaint();
@@ -1095,21 +1095,22 @@ public class LTWAssessmentToolView extends FrameView {
             String currALinkID = currALinkOIDSA.getFileId(); //[1];
             String[] currPALinkOIDSA = new String[]{currALinkOffset, currALinkID};
             
+            IndexedAnchor poolAnchor = CurrentFocusedAnchor.getCurrentFocusedAnchor().getAnchor().getParent();
             if (updateCurrAnchorStatus) {
-            	String currPALinkStatus = myPooler.getPoolAnchorBepLinkStatus(currTopicID, CurrentFocusedAnchor.getCurrentFocusedAnchor().getAnchor().getParent(), currALinkID);
-            	String currPAnchorStatus = myPooler.getPoolAnchorStatus(currTopicID, CurrentFocusedAnchor.getCurrentFocusedAnchor().getAnchor().getParent());
+            	String currPALinkStatus = myPooler.getPoolAnchorBepLinkStatus(currTopicID, poolAnchor, currALinkID);
+            	String currPAnchorStatus = myPooler.getPoolAnchorStatus(currTopicID, poolAnchor);
             	String poolAnchorStatus = "";
             	if (currPALinkStatus.equals("-1")) {
             		if (currPAnchorStatus.equals("-1")) {
 			          poolAnchorStatus = currPAnchorStatus;
             		} else {
-			        poolAnchorStatus = rscManager.getPoolAnchorCompletedStatus(currTopicID, CurrentFocusedAnchor.getCurrentFocusedAnchor().getAnchor().getParent());
+			        poolAnchorStatus = rscManager.getPoolAnchorCompletedStatus(currTopicID, poolAnchor);
             		}
             	} else {
-			      poolAnchorStatus = rscManager.getPoolAnchorCompletedStatus(currTopicID, CurrentFocusedAnchor.getCurrentFocusedAnchor().getAnchor().getParent());
+			      poolAnchorStatus = rscManager.getPoolAnchorCompletedStatus(currTopicID, poolAnchor);
             	}
             	if (!poolAnchorStatus.equals("0"))
-            		myPUpdater.updatePoolAnchorStatus(currTopicID, currPAnchorOLSA, poolAnchorStatus);            	
+            		myPUpdater.updatePoolAnchorStatus(currTopicID, poolAnchor/*currPAnchorOLSA*/, poolAnchorStatus);            	
             }
             // -------------------------------------------------------------
             // 1) Get the NEXT Anchor O, L, S, E, Status + its BEP link O, S, ID, Status
