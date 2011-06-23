@@ -127,4 +127,27 @@ public class IndexedAnchor extends Anchor {
 	public void setScreenPosEnd(int screenPosEnd) {
 		this.screenPosEnd = screenPosEnd;
 	}
+    
+    public void setIndexOffset(int offset, int length) {
+    	setOffsetIndex(offset);
+    	setLengthIndex(length);
+    }
+    
+	public void setCurrentAnchorProperty(int offset, int length, int screenPosStart, int screenPosEnd, int status, int extLength) {
+		setOffset(offset);
+		setLength(length);
+		screenPosStart = screenPosStart;
+		screenPosEnd = screenPosEnd;
+		
+		setStatus(status);
+		
+		setIndexOffset(offset, length);
+		//setCurrentAnchorProperty(String.valueOf(offset), String.valueOf(length), String.valueOf(screenPosStart), String.valueOf(screenPosEnd), String.valueOf(status), String.valueOf(extLength));
+	}
+	
+	public void setCurrentAnchorProperty(String offsetStr, String lengthStr, String screenPosStartStr, String screenPosEndStr, String statusStr, String extLengthStr) {
+		//String sysPropertyValue = offsetStr + "_" + lengthStr + "_" + screenPosStartStr + "_" + screenPosEndStr + "_" + statusStr + "_" + extLengthStr;
+		//System.setProperty(sysPropertyCurrTopicOLSEStatusKey, sysPropertyValue);
+		setCurrentAnchorProperty(Integer.valueOf(offsetStr), Integer.valueOf(lengthStr), Integer.valueOf(screenPosStartStr), Integer.valueOf(screenPosEndStr), Integer.valueOf(statusStr), Integer.valueOf(extLengthStr));
+	}
 }
