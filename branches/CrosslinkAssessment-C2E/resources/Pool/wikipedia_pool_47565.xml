@@ -108,7 +108,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Zushi Games games">20370587</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="游戏类型" aoffset="502" alength="4" ext_length="0">
+			<anchor arel="-1" aname="游戏类型" aoffset="502" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="游戏类型" saoffset="502" salength="4" rank="56">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mbube (genre)">498692</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Video game genres">2538794</tobep>
@@ -185,21 +185,21 @@
 			</anchor>
 			<anchor arel="0" aname="智力遊戲" aoffset="553" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="智力遊戲" saoffset="553" salength="4" rank="15">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of puzzle topics">632582</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Puzzle (Narnia)">3030288</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Japanese puzzle">271810</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Puzzle (Dada album)">19847011</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Dividend puzzle">8967691</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Puzzle video game">32393</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of DSiWare games (PAL region)">23614206</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Combination puzzle">14977455</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Media Puzzle">7788386</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Puzzle (Biffy Clyro album)">7756636</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Puzzle (film)">13356795</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Fifteen puzzle">432213</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of puzzle topics">632582</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Puzzle (Narnia)">3030288</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Japanese puzzle">271810</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Puzzle (Dada album)">19847011</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Dividend puzzle">8967691</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Puzzle video game">32393</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of DSiWare games (PAL region)">23614206</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Combination puzzle">14977455</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Media Puzzle">7788386</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Puzzle (Biffy Clyro album)">7756636</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Puzzle (film)">13356795</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Fifteen puzzle">432213</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="遊戲" saoffset="555" salength="2" rank="43">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Pokémon video games">2197048</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Pokémon video games">2197048</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Game">18723138</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Cleveland Force (1978–1988) players">19208137</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Strategy games/Strategy games topics">9408860</tobep>
@@ -1449,7 +1449,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Chess/Selected article/Introduction/Fortress (chess)">16657797</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="-1" aname="名" aoffset="763" alength="1" ext_length="0">
+			<anchor arel="0" aname="名" aoffset="763" alength="1" ext_length="0">
 				<subanchor sarel="0" saname="名" saoffset="763" salength="1" rank="104">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of sovereign states">68253</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Table of the highest major summits of Colorado">16260765</tobep>

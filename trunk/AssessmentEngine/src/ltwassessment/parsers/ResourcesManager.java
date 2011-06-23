@@ -1475,8 +1475,8 @@ public class ResourcesManager {
         String[] nextTAnchorOL = null;
         String[] nextTABepOID = null;
         // Format: new String[]{0, 1_2_0_0}
-        String pAnchorO = pAnchorOLSA[0];
-        String pAnchorL = pAnchorOLSA[1];
+        int pAnchorO = Integer.valueOf(pAnchorOLSA[0]);
+        int pAnchorL = Integer.valueOf(pAnchorOLSA[1]);
         String linkBepID = linkBepOID[1];
         // String[]{anchor Offset, Length, Name, arel}
         int pAnchorFirstIndex = 0;
@@ -1560,7 +1560,7 @@ public class ResourcesManager {
 
         	}        	   	
         	
-            if (pAnchorO.equals(pAnchorOLNameStatus.offsetToString())) {
+            if (pAnchorO == pAnchorOLNameStatus.getOffset()) {
                 pAnchorIndex = i; //pAnchorCounter;
                 // -------------------------------------------------------------
 //                int pABepCounter = 0;
