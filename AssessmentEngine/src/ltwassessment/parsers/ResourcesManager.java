@@ -85,7 +85,7 @@ public class ResourcesManager {
     private String afTABNavigationIndexTag = "tabNavigationIndex";
     private String afTBANavigationIndexTag = "tbaNavigationIndex";
     private Hashtable<String, Vector<IndexedAnchor>> topicAllAnchors = null; //new Hashtable<String, Vector<String[]>>();
-    private Hashtable<String, Vector<IndexedAnchor>> topicAllSubanchors = null; 
+    private Hashtable<String, Vector<AssessedAnchor>> topicAllSubanchors = null; 
     private Hashtable<String, Hashtable<String, Hashtable<String, Vector<Bep>>>> poolOutgoingData = null; //new Hashtable<String, Hashtable<String, Hashtable<String, Vector<String[]>>>>();
 //    private Hashtable<String, Vector<IndexedAnchor>> topicAllBEPs = new Hashtable<String, Vector<IndexedAnchor>>();
     private Hashtable<String, Hashtable<String, Vector<String[]>>> poolIncomingData = new Hashtable<String, Hashtable<String, Vector<String[]>>>();
@@ -148,6 +148,8 @@ public class ResourcesManager {
       // Hashtable<String, Hashtable<String, Hashtable<String, Vector<String[]>>>>
       // topicFileID, <PoolAnchor_OL, <Anchor_OL, V<String[]{Offset, fileID, tbrel}
       poolOutgoingData = pooler.getOutgoingPool();
+      topicAllAnchors = pooler.getTopicAllAnchors();
+      topicAllSubanchors = pooler.getTopicAllSubanchors();
       // Hashtable<String, Vector<String[]>>
       // incoming : topicID, V<String[]{bep Offset, borel}>
 //      topicAllBEPs = pooler.getTopicAllBeps();
@@ -161,63 +163,8 @@ public class ResourcesManager {
     // =========================================================================
     // <editor-fold defaultstate="collapsed" desc="Update RSC">
     public void updateOutgoingCompletion(String outgoingCompletion) {
-//        try {
-//            Document doc = readingXMLFromFile(resourceXMLFile);
-//
-//            TransformerFactory tFactory = TransformerFactory.newInstance();
-//            Transformer tformer = tFactory.newTransformer();
-//            Source source = new DOMSource(doc);
-//            Result result = new StreamResult(new FileWriter(resourceXMLFile));
-//
-//            NodeList titleNodeList = doc.getElementsByTagName(afTitleTag);
-//            for (int i = 0; i < titleNodeList.getLength(); i++) {
-//                Element titleElmn = (Element) titleNodeList.item(i);
-//                NodeList subNodeList = titleElmn.getElementsByTagName("outgoingCompletion");
-//                Element subElmn = (Element) subNodeList.item(0);
-//                // add NEW
-//                Element clonedElmn = (Element) doc.createElement("outgoingCompletion");
-//                subElmn.getParentNode().insertBefore(clonedElmn, subElmn.getNextSibling());
-//                clonedElmn.appendChild(doc.createTextNode(outgoingCompletion));
-//                // remove OLD element
-//                subElmn.getParentNode().removeChild(subElmn);
-//                tformer.transform(source, result);
-//            }
-//        } catch (IOException ex) {
-//            Logger.getLogger(ResourcesManager.class.getName()).log(Level.SEVERE, null, ex);
-//        } catch (TransformerException ex) {
-//            Logger.getLogger(ResourcesManager.class.getName()).log(Level.SEVERE, null, ex);
-//        }
         updateElement("outgoingCompletion", outgoingCompletion);
     }
-
-//    public void updateIncomingCompletion(String incomingCompletion) {
-//        try {
-//            Document doc = readingXMLFromFile(resourceXMLFile);
-//
-//            TransformerFactory tFactory = TransformerFactory.newInstance();
-//            Transformer tformer = tFactory.newTransformer();
-//            Source source = new DOMSource(doc);
-//            Result result = new StreamResult(new FileWriter(resourceXMLFile));
-//
-//            NodeList titleNodeList = doc.getElementsByTagName(afTitleTag);
-//            for (int i = 0; i < titleNodeList.getLength(); i++) {
-//                Element titleElmn = (Element) titleNodeList.item(i);
-//                NodeList subNodeList = titleElmn.getElementsByTagName("incomingCompletion");
-//                Element subElmn = (Element) subNodeList.item(0);
-//                // add NEW
-//                Element clonedElmn = (Element) doc.createElement("incomingCompletion");
-//                subElmn.getParentNode().insertBefore(clonedElmn, subElmn.getNextSibling());
-//                clonedElmn.appendChild(doc.createTextNode(incomingCompletion));
-//                // remove OLD element
-//                subElmn.getParentNode().removeChild(subElmn);
-//                tformer.transform(source, result);
-//            }
-//        } catch (IOException ex) {
-//            Logger.getLogger(ResourcesManager.class.getName()).log(Level.SEVERE, null, ex);
-//        } catch (TransformerException ex) {
-//            Logger.getLogger(ResourcesManager.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//    }
 
     // =========================================================================
     // =========================================================================
@@ -1781,24 +1728,24 @@ public class ResourcesManager {
         // Get Sorted Anchor OL
         // Hashtable<String, Vector<String[]>>
         // outgoing : topicID, V<String[]{anchor Offset, Length, Name, arel, extension length}>
-        topicAllAnchors = pooler.getTopicAllAnchors();
         String topicID = this.getTopicID();
-        Vector<IndexedAnchor> poolAnchorsOLV = topicAllAnchors.get("outgoing : " + topicID); //topicAllAnchors.elements().nextElement();
+        Vector<IndexedAnchor> poolAnchorsOLV = topicAllAnchors.get(PoolerManager.OUTGOING_KEY + topicID); //topicAllAnchors.elements().nextElement();
 //        Vector<IndexedAnchor> sortedPoolAnchorsOLV = sortOLVectorSANumbers(poolAnchorsOLV);
         return poolAnchorsOLV; 
 //        return sortedPoolAnchorsOLV;
     }
     
-    public Vector<IndexedAnchor> getPoolSubanchorsOLNameStatusV() {
+    public Vector<AssessedAnchor> getPoolSubanchorsOLNameStatusV() {
         // anchor String[]{Offset, Length, Name, Status}
         // status: 0 <-- normal, 1 <-- completed, -1 <-- non-relevant
         // Get Sorted Anchor OL
         // Hashtable<String, Vector<String[]>>
         // outgoing : topicID, V<String[]{anchor Offset, Length, Name, arel}>
-        topicAllSubanchors = pooler.getTopicAllSubanchors();
-        Vector<IndexedAnchor> poolAnchorsOLV = topicAllSubanchors.elements().nextElement();
-        Vector<IndexedAnchor> sortedPoolAnchorsOLV = sortOLVectorSANumbers(poolAnchorsOLV);
-        return sortedPoolAnchorsOLV;
+        
+//        Vector<AssessedAnchor> poolAnchorsOLV = topicAllSubanchors.elements().nextElement();
+//        Vector<IndexedAnchor> sortedPoolAnchorsOLV = sortOLVectorSANumbers(poolAnchorsOLV);
+    	return topicAllSubanchors.get(PoolerManager.OUTGOING_KEY + this.getTopicID());
+//        return sortedPoolAnchorsOLV;
     }
     
     
@@ -1808,8 +1755,12 @@ public class ResourcesManager {
     }
     
     public IndexedAnchor getBepsPoolByAnchor(int index) {
-    	String topicKey = getTopicID() + PoolerManager.OUTGOING_KEY;
+    	String topicKey = PoolerManager.OUTGOING_KEY + getTopicID();
     	return pooler.getTopicAllAnchors().get(topicKey).get(index);
+    }
+    
+    public Hashtable<String, Hashtable<String, Vector<Bep>>> getBepsByTopic(String topicKey) {
+    	return poolOutgoingData.get(topicKey);
     }
     
     public void setPoolAnchorBepLinksHashtable() {
@@ -1822,7 +1773,7 @@ public class ResourcesManager {
         while (topicKeyEnu.hasMoreElements()) {
             Object topicKey = topicKeyEnu.nextElement();
             String myTopicID = topicKey.toString();
-            Hashtable<String, Hashtable<String, Vector<Bep>>> poolAnchorsHT = poolOutgoingData.get(topicKey.toString());
+            Hashtable<String, Hashtable<String, Vector<Bep>>> poolAnchorsHT = getBepsByTopic(topicKey.toString());
             Enumeration poolAnchorKeys = poolAnchorsHT.keys();
             while (poolAnchorKeys.hasMoreElements()) {
                 Object pAnchorKey = poolAnchorKeys.nextElement();
@@ -2104,7 +2055,7 @@ public class ResourcesManager {
         // ---------------------------------------------------------------------
         // 2) Get current Anchor OL
         // String[]{anchor Offset, Length, Name, arel}
-        Vector<IndexedAnchor> poolAnchorsOLNameStatusVSA = getPoolSubanchorsOLNameStatusV();
+        Vector<AssessedAnchor> poolAnchorsOLNameStatusVSA = getPoolSubanchorsOLNameStatusV();
         IndexedAnchor currAnchorOLNameStatusSA = poolAnchorsOLNameStatusVSA.elementAt(Integer.valueOf(poolAnchorIndex));
         currTopicAnchorOLNameStatus = new String[]{currAnchorOLNameStatusSA.offsetToString(), currAnchorOLNameStatusSA.lengthToString(), currAnchorOLNameStatusSA.getName(), currAnchorOLNameStatusSA.statusToString()};
         return currTopicAnchorOLNameStatus;
@@ -2234,18 +2185,36 @@ public class ResourcesManager {
 //        }
         return currTopicABepSIDStatus;
     }
+    
+    public void setTopicAnchorOLStatusBySE() {
+        Vector<String> topicAnchorsOLNameSEV = getTopicAnchorsOLNameSEV();
+        Vector<IndexedAnchor> poolAnchorsOLV = getPoolAnchorsOLNameStatusV();
+        for (String anchorOLNameSE : topicAnchorsOLNameSEV) {
+            String[] anchorSA = anchorOLNameSE.split(" : ");
+            for (IndexedAnchor pAnchorSA : poolAnchorsOLV) {
+                String pAnchorOffset = pAnchorSA.offsetToString(); //[0];
+                String pAnchorStatus = pAnchorSA.statusToString(); //[3];
+                if (anchorSA[0].trim().equals(pAnchorOffset)) { 
+                	pAnchorSA.setScreenPosStart(Integer.parseInt(anchorSA[2]));
+                	pAnchorSA.setScreenPosEnd(Integer.parseInt(anchorSA[3]));
+                	break;
+                }
+            }
+        }
+    }
 
     public String[] getTopicAnchorOLStatusBySE(String topicID, IndexedAnchor currSCRSEName) {
         String[] poolAnchorOLStatus = new String[3];
-        int pAnchorS = currSCRSEName.getScreenPosStart();
+        int pAnchorS = currSCRSEName.getOffset(); //getScreenPosStart();
         int pAnchorE = currSCRSEName.getScreenPosEnd();
-        // String[]{Anchor_Offset, Length, S, E, Status}
+        // String[]{Anchor_Offset, Length, S, E, Status, extension length}
         Vector<String[]> topicAnchorSCRStatusVSA = getTopicAnchorOLSEStatusVSA();
         for (String[] topicAnchorSCRStatus : topicAnchorSCRStatusVSA) {
-            int poolAnchorS = Integer.parseInt(topicAnchorSCRStatus[2]);
-            int poolAnchorE = Integer.parseInt(topicAnchorSCRStatus[3]);
+            int poolAnchorS = Integer.parseInt(topicAnchorSCRStatus[0]);
+            int poolAnchorE = poolAnchorS + Integer.parseInt(topicAnchorSCRStatus[1]) + Integer.parseInt(topicAnchorSCRStatus[5]);
             if (poolAnchorS >= pAnchorS && poolAnchorE <= pAnchorE) {
-                poolAnchorOLStatus = new String[]{topicAnchorSCRStatus[0], topicAnchorSCRStatus[1], topicAnchorSCRStatus[4]};
+//                poolAnchorOLStatus = new String[]{topicAnchorSCRStatus[0], topicAnchorSCRStatus[1], topicAnchorSCRStatus[4]};
+                
             }
         }
         return poolAnchorOLStatus;
@@ -2267,7 +2236,7 @@ public class ResourcesManager {
         return poolAnchorSEStatus;
     }
 
-    public Vector<String[]> getTopicAnchorOLSEStatusVSA() {
+    private Vector<String[]> getTopicAnchorOLSEStatusVSA() {
         // String[]{Anchor_Offset, Length, S, E, Status}
         Vector<String[]> topicAnchorSCRStatusVSA = new Vector<String[]>();
         Vector<String> topicAnchorsOLNameSEV = getTopicAnchorsOLNameSEV();
@@ -2620,12 +2589,12 @@ public class ResourcesManager {
     
 
     // =========================================================================
-    private Vector<IndexedAnchor> sortOLVectorSANumbers(Vector<IndexedAnchor> myOLSANumbersV) {
+    private Vector<IndexedAnchor> sortOLVectorSANumbers(Vector<AssessedAnchor> poolAnchorsOLV) {
         // Vector<String[]{Anchor_Offset, Length, Status}
         Vector<IndexedAnchor> mySortedOLNumbersV = new Vector<IndexedAnchor>();
-        int[] thisIntA = new int[myOLSANumbersV.size()];
-        for (int i = 0; i < myOLSANumbersV.size(); i++) {
-            thisIntA[i] = myOLSANumbersV.elementAt(i).getOffset(); //Integer.valueOf(myOLSANumbersV.elementAt(i)[0]);
+        int[] thisIntA = new int[poolAnchorsOLV.size()];
+        for (int i = 0; i < poolAnchorsOLV.size(); i++) {
+            thisIntA[i] = poolAnchorsOLV.elementAt(i).getOffset(); //Integer.valueOf(myOLSANumbersV.elementAt(i)[0]);
         }
         for (int i = 0; i < thisIntA.length; i++) {
             for (int j = i + 1; j < thisIntA.length; j++) {
@@ -2639,7 +2608,7 @@ public class ResourcesManager {
         for (int i = 0; i < thisIntA.length; i++) {
 //            String thisINT = String.valueOf(thisIntA[i]);
             // ------------------------------------------
-            for (IndexedAnchor myOLSA : myOLSANumbersV) {
+            for (IndexedAnchor myOLSA : poolAnchorsOLV) {
                 if (myOLSA.getOffset() == thisIntA[i]/*[0].equals(thisINT)*/) {
                     mySortedOLNumbersV.add(myOLSA);
                     break;
