@@ -5,14 +5,15 @@ import java.util.Vector;
 import ltwassessment.submission.Anchor;
 
 public class IndexedAnchor extends Anchor {
+	public final static int UNINITIALIZED_VALUE = -1; 
 	
 	protected int status = 0;
 	
 	protected int offsetIndex;
 	protected int lengthIndex;
 	
-    private int screenPosStart;
-    private int screenPosEnd;
+    protected int screenPosStart = -1;
+    protected int screenPosEnd = -1;
 	
 	Vector<AssessedAnchor> childrenAnchors = new Vector<AssessedAnchor>();
 
