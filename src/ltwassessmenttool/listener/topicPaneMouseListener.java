@@ -294,7 +294,7 @@ public class topicPaneMouseListener implements MouseInputListener {
 
                 topicAnchorClickToLink(next);
                 
-                LTWAssessmentToolView.updateTopicAnchorsHighlight(this.topicTextPane, preTHyperOLSEStatus/*preAnchorSEStatus*/, scrSEPosKey, Integer.parseInt(currAnchorStatus));
+                LTWAssessmentToolView.updateTopicAnchorsHighlight(this.topicTextPane, preTHyperOLSEStatus/*preAnchorSEStatus*/, next, Integer.parseInt(currAnchorStatus));
 				//                  LTWAssessmentToolView.updateTopicAnchorsHighlight(this.topicTextPane, scrSEPosKey, preAnchorSEStatus, bepLength);
 				this.topicTextPane.getCaret().setDot(Integer.valueOf(currSCRSEName.screenPosEndToString()));
 				this.topicTextPane.scrollRectToVisible(this.topicTextPane.getVisibleRect());
