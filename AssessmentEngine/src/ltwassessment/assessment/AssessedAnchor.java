@@ -32,4 +32,20 @@ public class AssessedAnchor extends IndexedAnchor {
 	public Vector<Bep> getBeps() {
 		return beps;
 	}	
+	
+	@Override
+	public int getScreenPosStart() {
+		if (screenPosStart == UNINITIALIZED_VALUE) {
+			screenPosStart = offset - parent.getOffset() + parent.getScreenPosStart(); 
+		}
+		return screenPosStart;
+	}
+
+	@Override
+	public int getScreenPosEnd() {
+		if (screenPosEnd == UNINITIALIZED_VALUE) {
+			screenPosEnd = this.getScreenPosStart() + length;
+		}
+		return screenPosEnd;
+	}
 }
