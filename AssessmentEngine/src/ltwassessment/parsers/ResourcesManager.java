@@ -726,10 +726,10 @@ public class ResourcesManager {
 
     }
     
-    public void updateTABNavIndex(String topicID, String[] pAnchorOLSA, String[] linkBepOID) {
+    public void updateTABNavIndex(String topicID, IndexedAnchor currSCRSEName, String[] linkBepOID) {
         // Format: new String[]{0, 1_2_0_0}
-        String pAnchorO = pAnchorOLSA[0];
-        String pAnchorL = pAnchorOLSA[1];
+        String pAnchorO = currSCRSEName.offsetToString();
+        String pAnchorL = currSCRSEName.lengthToString();
         String linkBepID = linkBepOID[1];
         // String[]{anchor Offset, Length, Name, arel}
         int pAnchorIndex = 0;
@@ -2195,30 +2195,30 @@ public class ResourcesManager {
                 String pAnchorOffset = pAnchorSA.offsetToString(); //[0];
                 String pAnchorStatus = pAnchorSA.statusToString(); //[3];
                 if (anchorSA[0].trim().equals(pAnchorOffset)) { 
-                	pAnchorSA.setScreenPosStart(Integer.parseInt(anchorSA[2]));
-                	pAnchorSA.setScreenPosEnd(Integer.parseInt(anchorSA[3]));
+                	pAnchorSA.setScreenPosStart(Integer.parseInt(anchorSA[3]));
+                	pAnchorSA.setScreenPosEnd(Integer.parseInt(anchorSA[4]));
                 	break;
                 }
             }
         }
     }
 
-    public String[] getTopicAnchorOLStatusBySE(String topicID, IndexedAnchor currSCRSEName) {
-        String[] poolAnchorOLStatus = new String[3];
-        int pAnchorS = currSCRSEName.getOffset(); //getScreenPosStart();
-        int pAnchorE = currSCRSEName.getScreenPosEnd();
-        // String[]{Anchor_Offset, Length, S, E, Status, extension length}
-        Vector<String[]> topicAnchorSCRStatusVSA = getTopicAnchorOLSEStatusVSA();
-        for (String[] topicAnchorSCRStatus : topicAnchorSCRStatusVSA) {
-            int poolAnchorS = Integer.parseInt(topicAnchorSCRStatus[0]);
-            int poolAnchorE = poolAnchorS + Integer.parseInt(topicAnchorSCRStatus[1]) + Integer.parseInt(topicAnchorSCRStatus[5]);
-            if (poolAnchorS >= pAnchorS && poolAnchorE <= pAnchorE) {
+//    public String[] getTopicAnchorOLStatusBySE(String topicID, IndexedAnchor currSCRSEName) {
+//        String[] poolAnchorOLStatus = new String[3];
+//        int pAnchorS = currSCRSEName.getOffset(); //getScreenPosStart();
+//        int pAnchorE = currSCRSEName.getScreenPosEnd();
+//        // String[]{Anchor_Offset, Length, S, E, Status, extension length}
+//        Vector<String[]> topicAnchorSCRStatusVSA = getTopicAnchorOLSEStatusVSA();
+//        for (String[] topicAnchorSCRStatus : topicAnchorSCRStatusVSA) {
+//            int poolAnchorS = Integer.parseInt(topicAnchorSCRStatus[0]);
+//            int poolAnchorE = poolAnchorS + Integer.parseInt(topicAnchorSCRStatus[1]) + Integer.parseInt(topicAnchorSCRStatus[5]);
+//            if (poolAnchorS >= pAnchorS && poolAnchorE <= pAnchorE) {
 //                poolAnchorOLStatus = new String[]{topicAnchorSCRStatus[0], topicAnchorSCRStatus[1], topicAnchorSCRStatus[4]};
-                
-            }
-        }
-        return poolAnchorOLStatus;
-    }
+//                
+//            }
+//        }
+//        return poolAnchorOLStatus;
+//    }
 
     public String[] getTopicAnchorSEStatusByOL(String topicID, String[] poolAnchorOLSA) {
         String[] poolAnchorSEStatus = new String[3];
