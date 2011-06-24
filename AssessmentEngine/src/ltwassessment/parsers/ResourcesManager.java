@@ -726,11 +726,11 @@ public class ResourcesManager {
 
     }
     
-    public void updateTABNavIndex(String topicID, IndexedAnchor currSCRSEName, String[] linkBepOID) {
+    public void updateTABNavIndex(String topicID, IndexedAnchor currSCRSEName, Bep bepInfo) {
         // Format: new String[]{0, 1_2_0_0}
         String pAnchorO = currSCRSEName.offsetToString();
         String pAnchorL = currSCRSEName.lengthToString();
-        String linkBepID = linkBepOID[1];
+        String linkBepID = bepInfo.getFileId();
         // String[]{anchor Offset, Length, Name, arel}
         int pAnchorIndex = 0;
         int pABepIndex = 0;
@@ -1871,9 +1871,9 @@ public class ResourcesManager {
         return topicID[1].trim();
     }
 
-    public String getPoolAnchorCompletedStatus(String topicID, IndexedAnchor poolAnchorOL) {
+    public int getPoolAnchorCompletedStatus(String topicID, IndexedAnchor poolAnchorOL) {
         // RETURN new String[]{Completed, Total}
-        String poolBepCompletedStatus = "0";
+        int poolBepCompletedStatus = 0;
         int totalCounter = 0;
         int completeCounter = 0;
         int RelCounter = 0;
@@ -1892,9 +1892,9 @@ public class ResourcesManager {
         }
         if (completeCounter == totalCounter) {
             if (NONRelCounter == totalCounter) {
-                poolBepCompletedStatus = "-1";
+                poolBepCompletedStatus = -1;
             } else {
-                poolBepCompletedStatus = "1";
+                poolBepCompletedStatus = 1;
             }
         }
         return poolBepCompletedStatus;
