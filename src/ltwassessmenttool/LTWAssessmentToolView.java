@@ -1311,7 +1311,7 @@ public class LTWAssessmentToolView extends FrameView {
 //        String currTopicOLSEStatusKey = currTopicOLNameSEStatus[0] + "_" + currTopicOLNameSEStatus[1] + "_" + currTopicOLNameSEStatus[3] + "_" + currTopicOLNameSEStatus[4] + "_" + currTopicOLNameSEStatus[5] + "_" + currTopicOLNameSEStatus[6];
 //        System.setProperty(sysPropertyCurrTopicOLSEStatusKey, currTopicOLSEStatusKey);
         // ---------------------------------------------------------------------
-        String currAnchorName = myPooler.getPoolAnchorNameByOL(currTopicID, new String[]{currTopicOLNameSEStatus[0], currTopicOLNameSEStatus[1]});
+        String currAnchorName = CurrentFocusedAnchor.getCurrentFocusedAnchor().getAnchor().getName(); //myPooler.getPoolAnchorNameByOL(currTopicID, currSCRSEName/*new String[]{currTopicOLNameSEStatus[0], currTopicOLNameSEStatus[1]}*/);
         Vector<String> newTABFieldValues = new Vector<String>();
         newTABFieldValues.add(currTopicName);
         newTABFieldValues.add(currTopicID);

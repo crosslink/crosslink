@@ -317,7 +317,7 @@ public class topicPaneMouseListener implements MouseInputListener {
         // <editor-fold defaultstate="collapsed" desc="Topic Anchor Click to open 1st BEP Link">
         // pAnchorOL, V<String[]{bepOffset, bepID}>
         Hashtable<String, Vector<Bep>> poolAnchorBepLinksHT = myRSCManager.getPoolAnchorBepLinksHashtable();
-        String[] currPAnchorOLStatus = myRSCManager.getTopicAnchorOLStatusBySE(currTopicID, currSCRSEName);
+//        String[] currPAnchorOLStatus = myRSCManager.getTopicAnchorOLStatusBySE(currTopicID, currSCRSEName);
         String pAnchorO = currSCRSEName.offsetToString(); //currPAnchorOLStatus[0];
         String pAnchorL = currSCRSEName.lengthToString(); //currPAnchorOLStatus[1];
         String pAnchorOL = pAnchorO + "_" + pAnchorL;
@@ -406,11 +406,11 @@ public class topicPaneMouseListener implements MouseInputListener {
         // ---------------------------------------------------------------------
         // ---------------------------------------------------------------------
         // 3) update NAV Indices in toolResources XML
-        this.myRSCManager.updateTABNavIndex(this.currTopicID, currPAnchorOLStatus, new String[]{bepOffset, bepID});
+        this.myRSCManager.updateTABNavIndex(this.currTopicID, currSCRSEName, new String[]{bepOffset, bepID});
         CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(bepInfo.getAssociatedAnchor());
 //        CurrentFocusedAnchor.getCurrentFocusedAnchor().setCurrentAnchorProperty(pAnchorO, pAnchorOL, currSCRSEName.screenPosStartToString(), currSCRSEName.screenPosStartToString(), pAnchorStatus, currSCRSEName.extendedLengthToString()/*, currSCRSEName.offsetIndexToString()*/);
         // ---------------------------------------------------------------------
-        String currAnchorName = this.poolerManager.getPoolAnchorNameByOL(this.currTopicID, currPAnchorOLStatus);
+        String currAnchorName = this.poolerManager.getPoolAnchorNameByOL(this.currTopicID, currSCRSEName);
         Vector<String> newTABFieldValues = new Vector<String>();
         newTABFieldValues.add(this.currTopicName);
         newTABFieldValues.add(this.currTopicID);
@@ -509,9 +509,9 @@ public class topicPaneMouseListener implements MouseInputListener {
         // GET CURR-Clicked Anchor + BEP Data
         // pAnchorOL, V<String[]{bepOffset, bepID}>
         Hashtable<String, Vector<Bep>> poolAnchorBepLinksHT = myRSCManager.getPoolAnchorBepLinksHashtable();
-        String[] currPAnchorOLStatus = myRSCManager.getTopicAnchorOLStatusBySE(currTopicID, currSCRSEName);
-        String pAnchorO = currPAnchorOLStatus[0];
-        String pAnchorL = currPAnchorOLStatus[1];
+//        String[] currPAnchorOLStatus = myRSCManager.getTopicAnchorOLStatusBySE(currTopicID, currSCRSEName);
+        String pAnchorO = currSCRSEName.offsetToString(); //currPAnchorOLStatus[0];
+        String pAnchorL = currSCRSEName.lengthToString(); //currPAnchorOLStatus[1];
         String pAnchorS = currSCRSEName.screenPosStartToString();
         String pAnchorE = currSCRSEName.screenPosStartToString();
         String pAnchorOL = pAnchorO + "_" + pAnchorL;
@@ -580,7 +580,7 @@ public class topicPaneMouseListener implements MouseInputListener {
 //                CurrentFocusedAnchor.getCurrentFocusedAnchor().setCurrentAnchorProperty(pAnchorO, pAnchorL, currSCRSEName.screenPosStartToString(), currSCRSEName.screenPosStartToString(), pAnchorStatus, currSCRSEName.extendedLengthToString()/*, currSCRSEName.offsetIndexToString()*/);
                 // -------------------------------------------------------------
                 // -------------------------------------------------------------
-                String currAnchorName = this.poolerManager.getPoolAnchorNameByOL(this.currTopicID, currPAnchorOLStatus);
+                String currAnchorName = this.poolerManager.getPoolAnchorNameByOL(this.currTopicID, currSCRSEName/*currPAnchorOLStatus*/);
                 Vector<String> newTABFieldValues = new Vector<String>();
                 newTABFieldValues.add(this.currTopicName);
                 newTABFieldValues.add(this.currTopicID);
@@ -635,7 +635,7 @@ public class topicPaneMouseListener implements MouseInputListener {
 //                CurrentFocusedAnchor.getCurrentFocusedAnchor().setCurrentAnchorProperty(pAnchorO, pAnchorL, currSCRSEName.screenPosStartToString(), currSCRSEName.screenPosStartToString(), pAnchorStatus, currSCRSEName.extendedLengthToString()/*, currSCRSEName.offsetIndexToString()*/);
                 // -------------------------------------------------------------
                 // -------------------------------------------------------------
-                String currAnchorName = this.poolerManager.getPoolAnchorNameByOL(this.currTopicID, currPAnchorOLStatus);
+                String currAnchorName = this.poolerManager.getPoolAnchorNameByOL(this.currTopicID, currSCRSEName/*currPAnchorOLStatus*/);
                 Vector<String> newTABFieldValues = new Vector<String>();
                 newTABFieldValues.add(this.currTopicName);
                 newTABFieldValues.add(this.currTopicID);
