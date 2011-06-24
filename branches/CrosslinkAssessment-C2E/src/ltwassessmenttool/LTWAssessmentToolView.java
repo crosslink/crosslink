@@ -81,8 +81,8 @@ public class LTWAssessmentToolView extends FrameView {
     private static String currTopicID = "";
     private static String currTopicName = "";
     // -------------------------------------------------------------------------
-    private Vector<String[]> topicAnchorOLSEStatus = new Vector<String[]>();
-    private Vector<String[]> topicBepScrStatus = new Vector<String[]>();
+    private Vector<IndexedAnchor> topicAnchorOLSEStatus; // = new Vector<String[]>();
+//    private Vector<String[]> topicBepScrStatus = new Vector<String[]>();
 //    private Vector<String[]> currBepXMLOffset = new Vector<String[]>();
 //    private Vector<String[]> currBepSCROffset = new Vector<String[]>();
     // -------------------------------------------------------------------------
@@ -1246,14 +1246,24 @@ public class LTWAssessmentToolView extends FrameView {
         if (topicAnchorsOLNameSEVS.size() == 0) {
         	FOLTXTMatcher.getInstance().getSCRAnchorPosV(thisTopicTextPane, currTopicID, topicAnchorsHT);
         	topicAnchorsOLNameSEVS = rscManager.getTopicAnchorsOLNameSEV();
-        }     
+        }
+        
+        
+        /*************************************************************************
+         * PART 2
+         * 
+         * setup the screen start and end position of anchors
+         *************************************************************************/
+        rscManager.setTopicAnchorOLStatusBySE();
+        topicAnchorOLSEStatus = rscManager.getPoolAnchorsOLNameStatusV();
+        
         String[] tabCompletedRatio = this.rscManager.getTABCompletedRatio();
         this.rscManager.updateOutgoingCompletion(tabCompletedRatio[0] + " : " + tabCompletedRatio[1]);
         System.setProperty(LTWAssessmentToolControler.sysPropertyTABCompletedRatioKey, String.valueOf(tabCompletedRatio[0]) + "_" + String.valueOf(tabCompletedRatio[1]));
         // ---------------------------------------------------------------------
         
         // String[]{Anchor_O, L, SP, EP, Status}
-        topicAnchorOLSEStatus = rscManager.getTopicAnchorOLSEStatusVSA();
+//        topicAnchorOLSEStatus = rscManager.getTopicAnchorOLSEStatusVSA();
         // String[]{Anchor_O, L, Name, SP, EP, Status}
         String[] currTopicOLNameSEStatus = rscManager.getCurrTopicAnchorOLNameSEStatusSA(thisTopicTextPane, currTopicID, topicAnchorsOLNameSEVS);
         String currTopicPAnchorStatus = currTopicOLNameSEStatus[5];
@@ -1501,7 +1511,7 @@ public class LTWAssessmentToolView extends FrameView {
 		} 
     }
     
-    private void setTopicTextHighlighter(Vector<String[]> topicAnchorOLSEStatusVSA, String[] currTopicAnchorSCRSE) {
+    private void setTopicTextHighlighter(Vector<IndexedAnchor> topicAnchorOLSEStatus2, String[] currTopicAnchorSCRSE) {
         /**
          * Vector<String[]> topicAnchorSEVSA :
          *     String[]{Anchor_Offset, Length, S, E, Status}
@@ -1514,12 +1524,12 @@ public class LTWAssessmentToolView extends FrameView {
             highlighter.removeAllHighlights();
             Object anchorHighlightReference = null;
 
-            for (String[] thisAnchorSA : topicAnchorOLSEStatusVSA) {
-                String thisAnchorSP = thisAnchorSA[2];
-                int thisAnchorStatus = Integer.valueOf(thisAnchorSA[4]);
-                int ext_length = Integer.valueOf(thisAnchorSA[5]);
-            	int sp = Integer.valueOf(thisAnchorSA[2]);
-            	int se = Integer.valueOf(thisAnchorSA[3]);
+            for (IndexedAnchor thisAnchorSA : topicAnchorOLSEStatus2) {
+                String thisAnchorSP = thisAnchorSA.screenPosStartToString(); //[2];
+                int thisAnchorStatus = thisAnchorSA.getStatus(); //Integer.valueOf(thisAnchorSA[4]);
+                int ext_length = thisAnchorSA.getExtendedLength(); //Integer.valueOf(thisAnchorSA[5]);
+            	int sp = thisAnchorSA.getScreenPosStart(); //Integer.valueOf(thisAnchorSA[2]);
+            	int se = thisAnchorSA.getScreenPosEnd(); //Integer.valueOf(thisAnchorSA[3]);
                 
             	if (ext_length > 0)
             		se += ext_length;

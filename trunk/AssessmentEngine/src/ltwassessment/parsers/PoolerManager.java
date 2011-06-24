@@ -67,7 +67,7 @@ public class PoolerManager {
     //6) Incoming Pooling Data
     private Hashtable<String, Hashtable<String, Vector<String[]>>> poolIncomingData = new Hashtable<String, Hashtable<String, Vector<String[]>>>();
     //7) record Topic (outgoing : topicFile) -> [0]:Offset & [1]:Length & [2]:Subanchor_Name
-    private Hashtable<String, Vector<IndexedAnchor>> topicSubanchorsHT = new Hashtable<String, Vector<IndexedAnchor>>();
+    private Hashtable<String, Vector<AssessedAnchor>> topicSubanchorsHT = new Hashtable<String, Vector<AssessedAnchor>>();
     private static String poolXMLPath = "";
 //    static ResourcesManager resManager;
     static String afXmlPath = "";
@@ -611,7 +611,7 @@ public class PoolerManager {
         return topicAnchorsHT;
     }
 
-    public Hashtable<String, Vector<IndexedAnchor>> getTopicAllSubanchors() {
+    public Hashtable<String, Vector<AssessedAnchor>> getTopicAllSubanchors() {
         // record Topic (outgoing : topicFile) -> [0]:Offset & [1]:Length & [2]:Anchor_Name & [3]:Status
         return topicSubanchorsHT ;
     }
@@ -882,7 +882,7 @@ public class PoolerManager {
             Vector<IndexedAnchor> anchorsVbyTopic = new Vector<IndexedAnchor>();
             String thisAnchorSet = "";
             Hashtable<String, Hashtable<String, Vector<Bep>>> anchorsHT = new Hashtable<String, Hashtable<String, Vector<Bep>>>();
-            Vector<IndexedAnchor> subAnchorsVbyTopic = new Vector<IndexedAnchor>();
+            Vector<AssessedAnchor> subAnchorsVbyTopic = new Vector<AssessedAnchor>();
             String thisSubAnchorSet = "";
             Hashtable<String, Vector<Bep>> subAnchorsToBepsHT = new Hashtable<String, Vector<Bep>>();
 //            Vector<Bep> toBepsVbySubAnchor = new Vector<IndexedAnchor>();
@@ -968,7 +968,7 @@ public class PoolerManager {
 //                        isOutgoing = true;
                         anchorsVbyTopic = new Vector<IndexedAnchor>();
                         anchorsHT = new Hashtable<String, Hashtable<String, Vector<Bep>>>();
-                        subAnchorsVbyTopic = new Vector<IndexedAnchor>();                  
+                        subAnchorsVbyTopic = new Vector<AssessedAnchor>();                  
                     } else if (tagName.equals("anchor")) {
                         thisAnchorProperty = new String[5];
                         for (int i = 0; i < xsr.getAttributeCount(); i++) {
@@ -1160,7 +1160,7 @@ public class PoolerManager {
                         subAnchorsToBepsHT.put(thisSubAnchorSet, parsedSubanchor.getBeps()/*toBepsVbySubAnchor*/);
                     	thisSubAnchorSet = "";
                     	thisSubAnchorProperty = null;
-                    	parsedAnchor = null;
+                    	parsedSubanchor = null;
                     } else if (tagName.equals("incominglinks")) {
                         if (isIncoming) {
                             topicBepsHT.put("incoming : " + thisTopicFileID, bepOffsetVbyTopic);
