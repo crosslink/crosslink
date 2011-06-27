@@ -67,7 +67,7 @@ public class fieldUpdateObserver implements Observer {
         this.lblTargetID.setText(bep.getFileId());
         this.lblTargetTitle.setText(bep.getTargetTitle());
 //            this.lblCompletion.setText(tablblFieldSet.elementAt(5).toString());
-        this.lblTargetTitle.setText(outCompletionRatio + " / " + outCompletionRatio[1]);
+        this.lblCompletion.setText(outCompletionRatio[0] + " / " + outCompletionRatio[1]);
 //        }
     }
 }
