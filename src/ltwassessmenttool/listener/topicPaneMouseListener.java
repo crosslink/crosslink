@@ -231,18 +231,7 @@ public class topicPaneMouseListener implements MouseInputListener {
                 
                 AssessedAnchor next = null;
                 if (preTHyperOLSEStatus.getParent() == currSCRSEName) {
-                	int i = 0;
-                	for (; i < currSCRSEName.getChildrenAnchors().size(); ++i) {
-                		AssessedAnchor anchor = currSCRSEName.getChildrenAnchors().get(i);
-                		if (anchor == preTHyperOLSEStatus) {
-                			++i;
-                			break;
-                		}
-                	}
-                	if (i >= currSCRSEName.getChildrenAnchors().size())
-                		i = 0;
-                	
-                	next = currSCRSEName.getChildrenAnchors().get(i);
+                	next = preTHyperOLSEStatus.getParent().getNext(preTHyperOLSEStatus);
                 }
                 else {
 					next = currSCRSEName.getChildrenAnchors().get(0);
@@ -300,21 +289,6 @@ public class topicPaneMouseListener implements MouseInputListener {
 //                LTWAssessmentToolView.updateTopicAnchorsHighlight(this.topicTextPane, preTHyperOLSEStatus/*preAnchorSEStatus*/, next, Integer.parseInt(currAnchorStatus));
                 TopicHighlightManager.getInstance().update(preTHyperOLSEStatus, next);
                 
-				//                  LTWAssessmentToolView.updateTopicAnchorsHighlight(this.topicTextPane, scrSEPosKey, preAnchorSEStatus, bepLength);
-//				this.topicTextPane.getCaret().setDot(Integer.valueOf(currSCRSEName.screenPosEndToString()));
-//				this.topicTextPane.scrollRectToVisible(this.topicTextPane.getVisibleRect());
-//				this.topicTextPane.repaint();
-//                } else {
-//                    // ---------------------------------------------------------
-//                    // Update Pool BEP Status <-- When GO NEXT Pool BEP
-//                    // because the PRE-Pool_Bep might have been completed.
-//                    String[] preBepOLSEStatusSA = this.preTHyperOLSEStatus;
-//                    String prePBepO = preBepOLSEStatusSA[0];
-//                    String poolBepStatus = this.myRSCManager.getPoolBepCompletedStatus(this.currTopicID, prePBepO);
-//                    this.pUpdater.updatePoolBepStatus(this.currTopicID, prePBepO, poolBepStatus);
-//                    // ---------------------------------------------------------
-//                    topicBepClickToLink();
-//                }
             }
             // </editor-fold>
         } else if (mce.getButton() == MouseEvent.BUTTON3) {
@@ -328,11 +302,11 @@ public class topicPaneMouseListener implements MouseInputListener {
                 // 2) Toggle the Anchor/BEP Highlight - Selected/NONRelevant
                 // 3) Highlight/DIS-H Current Link Pane
                 // 4) Update Result XML
-                if (this.isOutgoingTAB) {
-                    topicAnchorClickToToggle();
-                } else {
+//                if (this.isOutgoingTAB) {
+                    topicAnchorClickToToggle(mce.isControlDown());
+//                } else {
 //                    topicBepClickToToggle();
-                }
+//                }
             }
             // </editor-fold>
         }
@@ -344,38 +318,9 @@ public class topicPaneMouseListener implements MouseInputListener {
         // <editor-fold defaultstate="collapsed" desc="Topic Anchor Click to open 1st BEP Link">
         // pAnchorOL, V<String[]{bepOffset, bepID}>
 //        Hashtable<String, Vector<Bep>> poolAnchorBepLinksHT = myRSCManager.getPoolAnchorBepLinksHashtable();
-////        String[] currPAnchorOLStatus = myRSCManager.getTopicAnchorOLStatusBySE(currTopicID, currSCRSEName);
-//        String pAnchorO = currSCRSEName.offsetToString(); //currPAnchorOLStatus[0];
-//        String pAnchorL = currSCRSEName.lengthToString(); //currPAnchorOLStatus[1];
-//        String pAnchorOL = pAnchorO + "_" + pAnchorL;
+
         String pAnchorStatus = this.poolerManager.getPoolAnchorStatus(currTopicID, currSCRSEName/*new String[]{currPAnchorOLStatus[0], currPAnchorOLStatus[1]}*/);
-//        Vector<Bep> pABepLinksVSA = poolAnchorBepLinksHT.get(pAnchorOL);
-//        String bepOffset = "";
-//        String bepID = "";
-//        String bepLang = "";
-//        String bepTitle = "";
-//        Bep bepInfo = pABepLinksVSA.get(0);
-//        bepOffset = bepInfo.offsetToString();
-//        bepID = bepInfo.getFileId();
-//        bepLang = bepInfo.getTargetLang();
-//        bepTitle = bepInfo.getTargetTitle();
-//        //if (bepInfo[6] != pAnchorO || Integer.parseInt(bepInfo[8]) != 0)
-//        if (!bepInfo.getAssociatedAnchor().offsetToString().equals(pAnchorO) || bepInfo.getAssociatedAnchor().getStatus() != 0)
-//	        for (int i = 1; i < pABepLinksVSA.size(); ++i) {
-//	        	bepInfo = pABepLinksVSA.get(i);
-//	        	if (bepInfo.getAssociatedAnchor().offsetToString().equals(pAnchorO)) {
-//			        bepOffset = bepInfo.offsetToString();
-//			        bepID = bepInfo.getFileId();
-//			        bepLang = bepInfo.getTargetLang();
-//			        bepTitle = bepInfo.getTargetTitle();
-//			        if (bepID.endsWith("\"")) {
-//			            bepID = bepID.substring(0, bepID.length() - 1);
-//			        }
-//			        
-//			        if (bepInfo.getAssociatedAnchor().getStatus() == 0)
-//			        	break;
-//	        	}
-//	        }
+
     	int i = 0;
     	Bep bepInfo = next.getBeps().get(i);
     	while (bepInfo.getRel() != 0 && i < next.getBeps().size()) {
@@ -401,10 +346,10 @@ public class topicPaneMouseListener implements MouseInputListener {
                 this.linkTextPane.setBackground(this.linkPaneWhiteColor);
                 this.linkTextPane.repaint();
             } else {
-                Bep pAUNAssBLinkVSA = this.myRSCManager.getNextUNAssTABWithUpdateNAV(this.currTopicID, currSCRSEName.getChildrenAnchors().get(0), bepInfo); //getCurrPAnchorUNAssBLinkWithUpdateNAV(this.currTopicID, new String[]{pAnchorO, pAnchorL}, new String[]{bepOffset, bepID});
+                bepInfo = this.myRSCManager.getNextUNAssTABWithUpdateNAV(this.currTopicID, currSCRSEName.getChildrenAnchors().get(0), bepInfo); //getCurrPAnchorUNAssBLinkWithUpdateNAV(this.currTopicID, new String[]{pAnchorO, pAnchorL}, new String[]{bepOffset, bepID});
 //                String[] unAssLinkOID = pAUNAssBLinkVSA.elementAt(1);
                 // new String[]{tbOffset, tbStartP, tbFileID, tbRel}
-                String unAssLinkID = pAUNAssBLinkVSA.getFileId(); //unAssLinkOID[2];
+                String unAssLinkID = bepInfo.getFileId(); //unAssLinkOID[2];
                 String unAssLinkFPath = myRSCManager.getWikipediaFilePathByName(unAssLinkID + ".xml", AppResource.targetLang);
                 if (unAssLinkFPath.startsWith(afTasnCollectionErrors)) {
                     unAssLinkFPath = myRSCManager.getErrorXmlFilePath(unAssLinkFPath);
@@ -445,18 +390,18 @@ public class topicPaneMouseListener implements MouseInputListener {
 //        CurrentFocusedAnchor.getCurrentFocusedAnchor().setCurrentAnchorProperty(pAnchorO, pAnchorOL, currSCRSEName.screenPosStartToString(), currSCRSEName.screenPosStartToString(), pAnchorStatus, currSCRSEName.extendedLengthToString()/*, currSCRSEName.offsetIndexToString()*/);
         // ---------------------------------------------------------------------
 //        String currAnchorName = this.poolerManager.getPoolAnchorNameByOL(this.currTopicID, currSCRSEName);
-        Vector<String> newTABFieldValues = new Vector<String>();
-        newTABFieldValues.add(this.currTopicName);
-        newTABFieldValues.add(this.currTopicID);
-        newTABFieldValues.add(bepInfo.getAssociatedAnchor().getName()/*currAnchorName*/);
-        newTABFieldValues.add(bepID);
-        String pageTitle = "";
-        pageTitle = this.myRSCManager.getWikipediaPageTitle(bepID);
-
-        newTABFieldValues.add(pageTitle.trim());
-        String[] pAnchorCompletionSA = this.myRSCManager.getOutgoingCompletion();
-        newTABFieldValues.add(pAnchorCompletionSA[0] + " / " + pAnchorCompletionSA[1]);
-        os.setTABFieldValues(newTABFieldValues);
+//        Vector<String> newTABFieldValues = new Vector<String>();
+//        newTABFieldValues.add(this.currTopicName);
+//        newTABFieldValues.add(this.currTopicID);
+//        newTABFieldValues.add(bepInfo.getAssociatedAnchor().getName()/*currAnchorName*/);
+//        newTABFieldValues.add(bepID);
+//        String pageTitle = "";
+//        pageTitle = this.myRSCManager.getWikipediaPageTitle(bepID);
+//
+//        newTABFieldValues.add(pageTitle.trim());
+//        String[] pAnchorCompletionSA = this.myRSCManager.getOutgoingCompletion();
+//        newTABFieldValues.add(pAnchorCompletionSA[0] + " / " + pAnchorCompletionSA[1]);
+        os.setTABFieldValues(bepInfo);
         // ---------------------------------------------------------------------
         // ---------------------------------------------------------------------
         // </editor-fold>
@@ -537,7 +482,7 @@ public class topicPaneMouseListener implements MouseInputListener {
 //        // </editor-fold>
 //    }
 
-    private void topicAnchorClickToToggle() {
+    private void topicAnchorClickToToggle(boolean markAllSubanchorsIrrelevant) {
         // <editor-fold defaultstate="collapsed" desc="Topic Anchor Click to toggle btw NONRel & Back">
         // ---------------------------------------------------------------------
         // GET CURR-Clicked Anchor + BEP Data
@@ -552,12 +497,13 @@ public class topicPaneMouseListener implements MouseInputListener {
         String pAnchorStatus = this.poolerManager.getPoolAnchorStatus(currTopicID, currSCRSEName/*new String[]{pAnchorO, pAnchorL}*/);
 
         Vector<Bep> pABepLinksVSA = poolAnchorBepLinksHT.get(pAnchorOL);
-        Bep firstLink = pABepLinksVSA.elementAt(0);
-        String bepOffset = pABepLinksVSA.elementAt(0).offsetToString();//[0];
-        String bepID = pABepLinksVSA.elementAt(0).getFileId(); //[1];
-        String bepRel = this.poolerManager.getPoolAnchorBepLinkStatus(this.currTopicID, currSCRSEName/*currPAnchorOLStatus*/, bepID);
+        Bep link = pABepLinksVSA.get(0);
+//        String bepOffset = link.offsetToString();//[0];
+        String bepID = link.getFileId(); //[1];
+        int bepRel = link.getRel();
+//        String bepRel = linthis.poolerManager.getPoolAnchorBepLinkStatus(this.currTopicID, currSCRSEName/*currPAnchorOLStatus*/, bepID);
         String bepXmlFilePath = poolerManager.getXmlFilePathByTargetID(bepID, AppResource.targetLang);
-        String bepStartp = this.poolerManager.getPoolAnchorBepLinkStartP(this.currTopicID, currSCRSEName/*currPAnchorOLStatus*/, bepID);
+        String bepStartp = link.startPToString(); //this.poolerManager.getPoolAnchorBepLinkStartP(this.currTopicID, currSCRSEName/*currPAnchorOLStatus*/, bepID);
 
         // In the case of Errors --> Refresh Link Pane
         if (bepXmlFilePath.startsWith(afTasnCollectionErrors)) {
@@ -566,22 +512,10 @@ public class topicPaneMouseListener implements MouseInputListener {
 // =====================================================================
 // CHECK: Pre-Highlight-Anchor might be the Curr-Anchor?
 
-//        String[] preAnchorOLSEStatusSA = this.preTHyperOLSEStatus;
-        String prePAnchorO = this.preTHyperOLSEStatus.offsetToString(); //preAnchorOLSEStatusSA[0];
-        String prePAnchorL = this.preTHyperOLSEStatus.lengthToString(); //preAnchorOLSEStatusSA[1];
-        String prePAnchorS = this.preTHyperOLSEStatus.screenPosStartToString(); //preAnchorOLSEStatusSA[2];
-        String prePAnchorE = this.preTHyperOLSEStatus.screenPosEndToString(); //preAnchorOLSEStatusSA[3];
-        String prePAnchorStatus = this.preTHyperOLSEStatus.statusToString(); //preAnchorOLSEStatusSA[4];
-        String prePAnchorSE = prePAnchorS + "_" + prePAnchorE;
+
+        int prePAnchorStatus = this.preTHyperOLSEStatus.getStatus(); 
         // ---------------------------------------------------------------------
-//        Xml2Html xmlParser = new Xml2Html(bepXmlFilePath, Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey)));
-//        String xmlHtmlText = xmlParser.getHtmlContent().toString();
-//        this.linkTextPane.setContentType(paneContentType);
-//        this.linkTextPane.setText(xmlHtmlText);
-//        this.linkTextPane.setCaretPosition(0);
-        // =====================================================================
-//        if (pAnchorS.equals(prePAnchorS)) {
-        if (preTHyperOLSEStatus == firstLink.getAssociatedAnchor()) {
+        if (preTHyperOLSEStatus == link.getAssociatedAnchor()) {
             log("CURR PAnchor is PRE PAnchor...");
             // CURR PAnchor is PRE PAnchor
             // -----------------------------------------------------------------
@@ -589,7 +523,7 @@ public class topicPaneMouseListener implements MouseInputListener {
             // DO-NOTHING for Topic Pane Anchor
             // It is still highlighted as YELLOW
             // -----------------------------------------------------------------
-            if (prePAnchorStatus.equals("1") || prePAnchorStatus.equals("0")) {
+            if (prePAnchorStatus == 1 || prePAnchorStatus == 0) {
                 // <editor-fold defaultstate="collapsed" desc="Toggle to NONRelevant -1">
                 // Toggle to NONRelevant -1, because it was 1 or 0
                 String toPAnchorStatus = "-1";
@@ -616,17 +550,9 @@ public class topicPaneMouseListener implements MouseInputListener {
                 // -------------------------------------------------------------
                 // -------------------------------------------------------------
                 String currAnchorName = this.poolerManager.getPoolAnchorNameByOL(this.currTopicID, currSCRSEName/*currPAnchorOLStatus*/);
-                Vector<String> newTABFieldValues = new Vector<String>();
-                newTABFieldValues.add(this.currTopicName);
-                newTABFieldValues.add(this.currTopicID);
-                newTABFieldValues.add(currAnchorName);
-                newTABFieldValues.add(bepID);
-                String pageTitle = this.myRSCManager.getWikipediaPageTitle(bepID);
-                newTABFieldValues.add(pageTitle.trim());
-                newTABFieldValues.add(outCompletedLinks + " / " + outCompletionRatio[1]);
-                os.setTABFieldValues(newTABFieldValues);
+
                 // </editor-fold>
-            } else if (prePAnchorStatus.equals("-1")) {
+            } else if (prePAnchorStatus == -1) {
                 // <editor-fold defaultstate="collapsed" desc="Toggle to PRE-STATUS: 1 or 0">
                 // Toggle to PRE-STATUS: 1 or 0
                 // b) Set Link Pane BG back to Pre-Status
@@ -670,21 +596,13 @@ public class topicPaneMouseListener implements MouseInputListener {
 //                CurrentFocusedAnchor.getCurrentFocusedAnchor().setCurrentAnchorProperty(pAnchorO, pAnchorL, currSCRSEName.screenPosStartToString(), currSCRSEName.screenPosStartToString(), pAnchorStatus, currSCRSEName.extendedLengthToString()/*, currSCRSEName.offsetIndexToString()*/);
                 // -------------------------------------------------------------
                 // -------------------------------------------------------------
-                String currAnchorName = this.poolerManager.getPoolAnchorNameByOL(this.currTopicID, currSCRSEName/*currPAnchorOLStatus*/);
-                Vector<String> newTABFieldValues = new Vector<String>();
-                newTABFieldValues.add(this.currTopicName);
-                newTABFieldValues.add(this.currTopicID);
-                newTABFieldValues.add(currAnchorName);
-                newTABFieldValues.add(bepID);
-                String pageTitle = this.myRSCManager.getWikipediaPageTitle(bepID);
-                newTABFieldValues.add(pageTitle.trim());
-                newTABFieldValues.add(outCompletedLinks + " / " + outCompletionRatio[1]);
-                os.setTABFieldValues(newTABFieldValues);
                 // </editor-fold>
             }
-            CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(firstLink.getAssociatedAnchor());
+            CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(link.getAssociatedAnchor());
             
-            LTWAssessmentToolControler.getInstance().goNextLink(false, true);        
+            link = LTWAssessmentToolControler.getInstance().goNextLink(false, true);
+            os.setTABFieldValues(link);
+            
         } else {
             log("CURR PAnchor is NOT PRE PAnchor...");
             // CURR PAnchor is NOT PRE PAnchor
@@ -693,7 +611,7 @@ public class topicPaneMouseListener implements MouseInputListener {
             // re-Store PRE PAnchor
             // Originally, "Highlight CURR PAnchor as YELLOW", but we don't need that
 //            toggleTopicAnchorColor(new String[]{prePAnchorS, prePAnchorE, prePAnchorStatus}, new String[]{pAnchorS, pAnchorE});
-            TopicHighlightManager.getInstance().update(preTHyperOLSEStatus, firstLink.getAssociatedAnchor());
+            TopicHighlightManager.getInstance().update(preTHyperOLSEStatus, link.getAssociatedAnchor());
             this.topicTextPane.getCaret().setDot(Integer.valueOf(currSCRSEName.screenPosStartToString()));
             this.topicTextPane.scrollRectToVisible(this.topicTextPane.getVisibleRect());
             this.topicTextPane.repaint();
@@ -739,19 +657,6 @@ public class topicPaneMouseListener implements MouseInputListener {
 //                log("Before Update POOL: " + pAnchorO + " - " + pAnchorL + " - " + toPAnchorStatus);
                 this.pUpdater.updatePoolAnchorStatus(this.currTopicID, currSCRSEName/*new String[]{pAnchorO, pAnchorL}*/, toPAnchorStatus);
 //                // update System Property
-//                CurrentFocusedAnchor.getCurrentFocusedAnchor().setCurrentAnchorProperty(pAnchorO, pAnchorL, currSCRSEName.screenPosStartToString(), currSCRSEName.screenPosStartToString(), pAnchorStatus, currSCRSEName.extendedLengthToString()/*, currSCRSEName.offsetIndexToString()*/);
-//                // -------------------------------------------------------------
-//                // -------------------------------------------------------------
-//                String currAnchorName = this.poolerManager.getPoolAnchorNameByOL(this.currTopicID, currPAnchorOLStatus);
-//                Vector<String> newTABFieldValues = new Vector<String>();
-//                newTABFieldValues.add(this.currTopicName);
-//                newTABFieldValues.add(this.currTopicID);
-//                newTABFieldValues.add(currAnchorName);
-//                newTABFieldValues.add(bepID);
-//                String pageTitle = this.myRSCManager.getWikipediaPageTitle(bepID);
-//                newTABFieldValues.add(pageTitle.trim());
-//                newTABFieldValues.add(outCompletedLinks + " / " + outCompletionRatio[1]);
-//                os.setTABFieldValues(newTABFieldValues);
                 // </editor-fold>
             } else if (pAnchorStatus.equals("-1")) {
                 // <editor-fold defaultstate="collapsed" desc="Toggle to PRE-STATUS: 1 or 0">
@@ -781,7 +686,7 @@ public class topicPaneMouseListener implements MouseInputListener {
                     // if (unAssCounter > 0) --> Go to 1st UN-Assessed Link
                     // ---------------------------------------------------------
                     // RETURN V[String[]{anchor_O, L}, String[]{BepLink_O, ID}]
-                    Bep nextUnAssTAB = this.myRSCManager.getNextUNAssTABWithUpdateNAV(this.currTopicID, currSCRSEName.getChildrenAnchors().get(0), firstLink); //.getCurrPAnchorUNAssBLinkWithUpdateNAV(this.currTopicID, new String[]{pAnchorO, pAnchorL}, new String[]{bepOffset, bepID});
+                    Bep nextUnAssTAB = this.myRSCManager.getNextUNAssTABWithUpdateNAV(this.currTopicID, currSCRSEName.getChildrenAnchors().get(0), link); //.getCurrPAnchorUNAssBLinkWithUpdateNAV(this.currTopicID, new String[]{pAnchorO, pAnchorL}, new String[]{bepOffset, bepID});
 //                    String[] unAssBEPOID = nextUnAssTAB.elementAt(1);
                     String unAssBepID = nextUnAssTAB.getFileId(); //unAssBEPOID[2];
                     String unAssBepFilePath = poolerManager.getXmlFilePathByTargetID(unAssBepID, nextUnAssTAB.getTargetLang());
@@ -796,9 +701,9 @@ public class topicPaneMouseListener implements MouseInputListener {
                     this.linkTextPane.setCaretPosition(0);
                     // ---------------------------------------------------------
                 } else {
-                    if (bepRel.equals("1")) {
+                    if (bepRel == 1) {
                         this.linkTextPane.setBackground(this.linkPaneRelColor);
-                    } else if (bepRel.equals("-1")) {
+                    } else if (bepRel == -1) {
                         this.linkTextPane.setBackground(this.linkPaneNonRelColor);
                     }
 
@@ -816,253 +721,6 @@ public class topicPaneMouseListener implements MouseInputListener {
         }
         // </editor-fold>
     }
-
-//    private void topicBepClickToToggle() {
-//        // <editor-fold defaultstate="collapsed" desc="Topic BEP Click to toggle btw NONRel & Back">
-//        // 1) Check the Status of the BEP
-//        // 2) Toggle Curr-BEP Highlight + Back-BEP Pre-Anchor
-//        // 3) Toggle Link Pane to Status
-//        // 4) Update Pool XML + Resource XML
-//        // ---------------------------------------------------------------------
-//        // Bep(Offset:1114), Vector<String[]{Offset:1538, Length:9, Name:TITLE, ID:123017, Status}+>
-//        HashMap<String, Vector<String[]>> bepAnchorLinksHM = poolerManager.getAnchorFileSetByBep(this.currTopicID);
-//        // String[]{Bep_Offset, S, Status}
-//        String[] currPBepOStatus = myRSCManager.getTopicAnchorOLStatusBySE(currTopicID, currSCRSEName);
-//        String currPBepOffset = currPBepOStatus[0];
-//        String currPBepStatus = this.poolerManager.getPoolBepStatus(currTopicID, currPBepOffset);
-//        String pBEPOL = currPBepOffset + "_" + String.valueOf(bepLength);
-//
-//        Vector<String[]> bepAnchorLinkVSA = bepAnchorLinksHM.get(currPBepOffset);
-//        String anchorOffset = bepAnchorLinkVSA.elementAt(0)[0];
-//        String anchorLength = bepAnchorLinkVSA.elementAt(0)[1];
-//        String anchorName = bepAnchorLinkVSA.elementAt(0)[2];
-//        String anchorFileID = bepAnchorLinkVSA.elementAt(0)[3];
-//        String anchorStatus = this.poolerManager.getPoolBepAnchorLinkStatus(currTopicID, currPBepOffset, new String[]{anchorOffset, anchorLength, anchorFileID});
-//        String anchorXmlFilePath = poolerManager.getXmlFilePathByTargetID(anchorFileID, AppResource.targetLang);
-//        // In the case of Errors --> Refresh Link Pane
-//        // populate Link Pane Content
-//        if (anchorXmlFilePath.startsWith(afTasnCollectionErrors)) {
-//            anchorXmlFilePath = myRSCManager.getErrorXmlFilePath(anchorXmlFilePath);
-//        }
-//
-//        Xml2Html xmlParser = new Xml2Html(anchorXmlFilePath, Boolean.valueOf(System.getProperty(LTWAssessmentToolControler.sysPropertyIsLinkWikiKey)));
-//        String xmlHtmlText = xmlParser.getHtmlContent().toString();
-//        this.linkTextPane.setContentType(paneContentType);
-//        this.linkTextPane.setText(xmlHtmlText);
-//        this.linkTextPane.setCaretPosition(0);
-//        // ---------------------------------------------------------------------
-//        // =====================================================================
-//        // CHECK: Pre-BEP might be the Curr-BEP?
-//        String[] preBepOLSEStatusSA = this.preTHyperOLSEStatus;
-//        String prePBepS = preBepOLSEStatusSA[2];
-//        String prePBepE = preBepOLSEStatusSA[3];
-//        String prePBepStatus = preBepOLSEStatusSA[4];
-//        String prePBepSE = prePBepS + "_" + prePBepE;
-//        //
-//        if (Integer.valueOf(currPBepStatus) == 1 || Integer.valueOf(currPBepStatus) == 0) {
-//            // Toggle to NONRelevant -1, because it was 1 or 0
-//            // -----------------------------------------------------------------
-//            // <editor-fold defaultstate="collapsed" desc="Toggle to NONRelevant -1">
-//            // a) highlight toggled Anchor & back-highlight Pre-Anchor
-//            // turn currPAnchor to RED
-//            String scrSEPosKey = currSCRSEName.screenPosStartToString() + "_" + currSCRSEName.screenPosStartToString();
-//            String toBepStatus = "-1";
-//            if (prePBepSE.equals(scrSEPosKey)) {
-//                // DO-NOTHING for Topic Pane BEP
-//            } else {
-//                String currBepStatus = "0";
-//                toggleTopicBepIcon(scrSEPosKey, currBepStatus);
-//                this.topicTextPane.getCaret().setDot(Integer.valueOf(currSCRSEName.screenPosStartToString()));
-//                this.topicTextPane.scrollRectToVisible(this.topicTextPane.getVisibleRect());
-//                this.topicTextPane.repaint();
-//                // + back-highlight Pre-PoolAnchor
-//                restorePrePoolBepIcon(prePBepS, prePBepStatus);
-//                // change INFO
-//                Vector<String> newTABFieldValues = new Vector<String>();
-//                newTABFieldValues.add(this.currTopicName);
-//                newTABFieldValues.add(this.currTopicID);
-//                newTABFieldValues.add(anchorName);
-//                newTABFieldValues.add(anchorFileID);
-//                String pageTitle = "";
-////                if (Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey))) {
-//                    pageTitle = this.myRSCManager.getWikipediaPageTitle(anchorFileID);
-////                } else {
-////                    pageTitle = this.myRSCManager.getTeAraFilePathByName(anchorFileID);
-////                }
-//
-//                newTABFieldValues.add(pageTitle.trim());
-//                String[] pAnchorCompletionSA = this.myRSCManager.getIncomingCompletion();
-//                newTABFieldValues.add(pAnchorCompletionSA[0] + " / " + pAnchorCompletionSA[1]);
-//                os.setTABFieldValues(newTABFieldValues);
-//            }
-//// -----------------------------------------------------------------
-//// b) highlight link anchor --> Set Link Pane BG as RED
-//
-//            IndexedAnchor linkAnchorOLName = new IndexedAnchor(anchorOffset, anchorLength, anchorName); //new String[]{anchorOffset, anchorLength, anchorName};
-//            // getSCRAnchorPosSA return String[]{Anchor_Name, StartP, EndP}
-//            String[] linkAnchorSESA = this.myFOLMatcher.getSCRAnchorNameSESA(this.linkTextPane, anchorFileID, linkAnchorOLName, AppResource.targetLang);
-////            this.updateLinkAnchorHighlight(this.linkTextPane, linkAnchorSESA);
-//            this.linkTextPane.getCaret().setDot(Integer.valueOf(linkAnchorSESA[2]));
-//            this.linkTextPane.scrollRectToVisible(this.linkTextPane.getVisibleRect());
-//            this.linkTextPane.setBackground(this.linkPaneNonRelColor);
-//            this.linkTextPane.repaint();
-//            // </editor-fold>
-//            // -----------------------------------------------------------------
-//            // updare Pool XML
-//            this.pUpdater.updatePoolBepStatus(this.currTopicID, currPBepOffset, toBepStatus);
-////            System.setProperty(sysPropertyCurrTopicOLSEStatusKey, pBEPOL + "_" + currSCRSEName.screenPosStartToString() + "_" + currSCRSEName.screenPosStartToString() + "_" + toBepStatus);
-//            CurrentFocusedAnchor.getCurrentFocusedAnchor().setCurrentAnchorProperty(pBEPO, pBEPL, currSCRSEName.screenPosStartToString(), currSCRSEName.screenPosStartToString(), toBepStatus, currSCRSEName.extendedLengthToString()/*, currSCRSEName.offsetIndexToString()*/);
-//        } else if (Integer.valueOf(currPBepStatus) == -1) {
-//            // Toggle to PRE-STATUS: -1, 1 or 0
-//            // -----------------------------------------------------------------
-//            // <editor-fold defaultstate="collapsed" desc="Toggle to PRE-STATUS: -1, 1 or 0">
-//            // a) Check Curr-Anchor Pre-Status:
-//            String scrSEPosKey = currSCRSEName.screenPosStartToString() + "_" + currSCRSEName.screenPosStartToString();
-//            if (prePBepSE.equals(scrSEPosKey)) {
-//                // DO-NOTHING for Topic Pane BEP
-//            } else {
-//                String currBepStatus = "0";
-//                this.toggleTopicBepIcon(scrSEPosKey, currBepStatus);
-//                this.topicTextPane.getCaret().setDot(Integer.valueOf(currSCRSEName.screenPosStartToString()));
-//                this.topicTextPane.scrollRectToVisible(this.topicTextPane.getVisibleRect());
-//                this.topicTextPane.repaint();
-//                // + back-highlight Pre-PoolAnchor
-//                restorePrePoolBepIcon(prePBepS, prePBepStatus);
-//                // change INFO
-//                Vector<String> newTABFieldValues = new Vector<String>();
-//                newTABFieldValues.add(this.currTopicName);
-//                newTABFieldValues.add(this.currTopicID);
-//                newTABFieldValues.add(anchorName);
-//                newTABFieldValues.add(anchorFileID);
-//                String pageTitle = "";
-////                if (Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey))) {
-//                    pageTitle = this.myRSCManager.getWikipediaPageTitle(anchorFileID);
-////                } else {
-////                    pageTitle = this.myRSCManager.getTeAraFilePathByName(anchorFileID);
-////                }
-//
-//                newTABFieldValues.add(pageTitle.trim());
-//                String[] pAnchorCompletionSA = this.myRSCManager.getIncomingCompletion();
-//                newTABFieldValues.add(pAnchorCompletionSA[0] + " / " + pAnchorCompletionSA[1]);
-//                os.setTABFieldValues(newTABFieldValues);
-//            }
-//// -----------------------------------------------------------------
-//// b) Set Link Pane BG back to Pre-Status
-//
-//            IndexedAnchor linkAnchorOLName = new IndexedAnchor(anchorOffset, anchorLength, anchorName); //String[]{anchorOffset, anchorLength, anchorName};
-//            // getSCRAnchorPosSA return String[]{Anchor_Name, StartP, EndP}
-//            String[] linkAnchorSESA = this.myFOLMatcher.getSCRAnchorNameSESA(this.linkTextPane, anchorFileID, linkAnchorOLName, AppResource.targetLang);
-//            this.updateLinkAnchorHighlight(this.linkTextPane, linkAnchorSESA);
-//            this.linkTextPane.getCaret().setDot(Integer.valueOf(linkAnchorSESA[2]));
-//            this.linkTextPane.scrollRectToVisible(this.linkTextPane.getVisibleRect());
-//            if (Integer.valueOf(anchorStatus) == 1) {
-//                this.linkTextPane.setBackground(this.linkPaneRelColor);
-//            } else if (Integer.valueOf(anchorStatus) == -1) {
-//                this.linkTextPane.setBackground(this.linkPaneNonRelColor);
-//            } else if (Integer.valueOf(anchorStatus) == 0) {
-//                this.linkTextPane.setBackground(this.linkPaneWhiteColor);
-//            }
-//
-//            this.linkTextPane.repaint();
-//            // </editor-fold>
-//            // -----------------------------------------------------------------
-//            int nonRelCounter = 0;
-//            String currBepPreStatus = "1";
-//            for (int i = 0; i <
-//                    bepAnchorLinkVSA.size(); i++) {
-//                String[] thisBEPLinksSA = bepAnchorLinkVSA.elementAt(i);
-//                String thisLinkAnchorStatus = thisBEPLinksSA[4];
-//                if (Integer.valueOf(thisLinkAnchorStatus) == 0 || thisLinkAnchorStatus.equals("")) {
-//                    currBepPreStatus = "0";
-//                } else if (Integer.valueOf(thisLinkAnchorStatus) == -1) {
-//                    nonRelCounter++;
-//                }
-//
-//            }
-//            if (Integer.valueOf(currBepPreStatus) != 0) {
-//                if (nonRelCounter == bepAnchorLinkVSA.size()) {
-//                    currBepPreStatus = "-1";
-//                }
-//
-//            }
-//            // updare Pool XML
-//            this.pUpdater.updatePoolBepStatus(this.currTopicID, currPBepOffset, currBepPreStatus);
-//            CurrentFocusedAnchor.getCurrentFocusedAnchor().setCurrentAnchorProperty(pBEPOL, currSCRSEName.screenPosStartToString(), currSCRSEName.screenPosStartToString(), currBepPreStatus, currSCRSEName.extendedLengthToString(), currSCRSEName.offsetIndexToString());
-////            System.setProperty(sysPropertyCurrTopicOLSEStatusKey, pBEPOL + "_" + currSCRSEName.screenPosStartToString() + "_" + currSCRSEName.screenPosStartToString() + "_" + currBepPreStatus);
-//        }
-//// </editor-fold>
-//
-//    }
-    // </editor-fold>
-
-    // <editor-fold defaultstate="collapsed" desc="Utilities: UPDATE & GET">
-//    private void updateLinkAnchorHighlight(JTextPane linkPane, String[] anchorSEPosSA) {
-//        // This might need to handle: isAssessment
-//        // 1) YES:
-//        // 2) NO: ONLY highlight Anchor Text
-//        try {
-//            Highlighter txtPaneHighlighter = linkPane.getHighlighter();
-//            int[] achorSCRPos = new int[]{Integer.valueOf(anchorSEPosSA[1]), Integer.valueOf(anchorSEPosSA[2])};
-//            Object aHighlightRef = txtPaneHighlighter.addHighlight(achorSCRPos[0], achorSCRPos[1], painters.getAnchorPainter());
-//        } catch (BadLocationException ex) {
-//            Logger.getLogger(topicPaneMouseListener.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//    }
-
-//    private void updateTopicAnchorsHighlight(JTextPane topicPane, String[] currAnchorSE, String[] preAnchorSEStatus) {
-//        // This might need to handle: isAssessment
-//        // 1) YES: Highlight Curr Selected Anchor Text, keep others remaining as THEIR Colors
-//        // 2) NO: Highlight Curr Selected Anchor Text, keep others remaining as Anchor Text Color
-//        try {
-//            boolean preDONEFlag = false;
-//            boolean currDONEFlag = false;
-//            Highlighter txtPaneHighlighter = topicPane.getHighlighter();
-//            Highlight[] highlights = txtPaneHighlighter.getHighlights();
-//            Object anchorHighlightRef = null;
-//            int[] achorSCRPos = new int[]{Integer.valueOf(currAnchorSE[0]), Integer.valueOf(currAnchorSE[1])};
-//            for (int i = 0; i <
-//                    highlights.length; i++) {
-//                int sPos = highlights[i].getStartOffset();
-//                int ePos = highlights[i].getEndOffset();
-//                if (achorSCRPos[0] == sPos && achorSCRPos[1] == ePos) {
-//                    txtPaneHighlighter.removeHighlight(highlights[i]);
-//                    anchorHighlightRef =
-//                            txtPaneHighlighter.addHighlight(sPos, ePos, painters.getSelectedPainter());
-//                    topicPane.repaint();
-//                    currDONEFlag =
-//                            true;
-//                    if (currDONEFlag && preDONEFlag) {
-//                        break;
-//                    }
-//
-//                } else {
-//                    if (Integer.valueOf(preAnchorSEStatus[0]) == sPos && Integer.valueOf(preAnchorSEStatus[1]) == ePos) {
-//                        txtPaneHighlighter.removeHighlight(highlights[i]);
-//                        String pAnchorStatus = preAnchorSEStatus[2];
-//                        if (Integer.valueOf(pAnchorStatus) == 1) {
-//                            anchorHighlightRef = txtPaneHighlighter.addHighlight(sPos, ePos, painters.getCompletePainter());
-//                        } else if (Integer.valueOf(pAnchorStatus) == -1) {
-//                            anchorHighlightRef = txtPaneHighlighter.addHighlight(sPos, ePos, painters.getIrrelevantPainter());
-//                        } else {
-//                            anchorHighlightRef = txtPaneHighlighter.addHighlight(sPos, ePos, painters.getAnchorPainter());
-//                        }
-//
-//                        topicPane.repaint();
-//                        preDONEFlag =
-//                                true;
-//                        if (currDONEFlag && preDONEFlag) {
-//                            break;
-//                        }
-//
-//
-//                    }
-//
-//                }
-//            }
-//        } catch (BadLocationException ex) {
-//            Logger.getLogger(topicPaneMouseListener.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//    }
 
     private void updatePaneBepIcon(JTextPane txtPane, Vector<String> bepSCROffset, boolean isTopicBEP) {
         // TODO: "isHighlighBEP"
@@ -1208,61 +866,6 @@ public class topicPaneMouseListener implements MouseInputListener {
 //        }
         return hoveredAnchor; //.toArray(); //selectedAnchorSEName;
     }
-
-//    private void toggleTopicAnchorColor(String[] prePAnchorSEStatus, String[] currPAnchorSE) {
-//        try {
-//            boolean preDONEFlag = false;
-//            boolean currDONEFlag = false;
-//            Highlighter txtPaneHighlighter = this.topicTextPane.getHighlighter();
-//            Highlight[] highlights = txtPaneHighlighter.getHighlights();
-//
-//            Object anchorHighlightRef = null;
-//            int[] currAnchorSE = new int[]{Integer.valueOf(currPAnchorSE[0]), Integer.valueOf(currPAnchorSE[1])};
-//
-//            for (int i = 0; i <
-//                    highlights.length; i++) {
-//                int sPos = highlights[i].getStartOffset();
-//                int ePos = highlights[i].getEndOffset();
-//                if (currAnchorSE[0] == sPos && currAnchorSE[1] == ePos) {
-//                    txtPaneHighlighter.removeHighlight(highlights[i]);
-//                    anchorHighlightRef =
-//                            txtPaneHighlighter.addHighlight(sPos, ePos, painters.getSelectedPainter());
-//                    this.topicTextPane.repaint();
-//                    currDONEFlag =
-//                            true;
-//                    if (currDONEFlag && preDONEFlag) {
-//                        break;
-//                    }
-//
-//                } else {
-//                    int[] preAnchorSE = new int[]{Integer.valueOf(prePAnchorSEStatus[0]), Integer.valueOf(prePAnchorSEStatus[1])};
-//                    if (preAnchorSE[0] == sPos && preAnchorSE[1] == ePos) {
-//                        txtPaneHighlighter.removeHighlight(highlights[i]);
-//                        String preAnchorStatus = prePAnchorSEStatus[2];
-//                        if (preAnchorStatus.equals("0")) {
-//                            anchorHighlightRef = txtPaneHighlighter.addHighlight(sPos, ePos, painters.getAnchorPainter());
-//                        } else if (preAnchorStatus.equals("1")) {
-//                            anchorHighlightRef = txtPaneHighlighter.addHighlight(sPos, ePos, painters.getCompletePainter());
-//                        } else if (preAnchorStatus.equals("-1")) {
-//                            anchorHighlightRef = txtPaneHighlighter.addHighlight(sPos, ePos, painters.getIrrelevantPainter());
-//                        }
-//
-//                        this.topicTextPane.repaint();
-//                        preDONEFlag =
-//                                true;
-//                        if (currDONEFlag && preDONEFlag) {
-//                            break;
-//                        }
-//
-//
-//                    }
-//
-//                }
-//            }
-//        } catch (BadLocationException ex) {
-//            Logger.getLogger(topicPaneMouseListener.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//    }
 
     private void restorePrePoolAnchorHighlight(String prePAnchorS, String prePAnchorE, String prePAnchorStatus) {
         try {
