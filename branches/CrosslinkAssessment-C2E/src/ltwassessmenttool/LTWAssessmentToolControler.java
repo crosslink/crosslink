@@ -15,6 +15,7 @@ import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import javax.swing.JTextPane;
 
+import ltwassessment.assessment.Bep;
 import ltwassessment.parsers.ResourcesManager;
 import ltwassessment.utility.BrowserControl;
 import ltwassessmenttool.listener.linkPaneMouseListener;
@@ -51,7 +52,7 @@ public class LTWAssessmentToolControler {
         return instance;
     }
     
-    public void goNextLink(boolean updateCurrAnchorStatus, boolean nextUnassessed) {
+    public Bep goNextLink(boolean updateCurrAnchorStatus, boolean nextUnassessed) {
         // ---------------------------------------------------------------------
         globalPoolBackupCounter++;
         // Pool Assessment Result Back up
@@ -82,7 +83,7 @@ public class LTWAssessmentToolControler {
                 System.exit(0);
             }
             showOnce = true;
-            return;
+            return null;
         } /*else if (this.isTAB && tabCompletedRatio[0].equals(tabCompletedRatio[1]) && !tbaCompletedRatio[0].equals(tbaCompletedRatio[1])) {
             JOptionPane.showMessageDialog(this.myTopicPane, "The Outgoing Assessment is completed. \r\n" +
                     "Please click \"OK\" button and switch to Incoming Mode to complete the assessment.\r\n" +
@@ -91,15 +92,16 @@ public class LTWAssessmentToolControler {
             JOptionPane.showMessageDialog(this.myTopicPane, "The Incoming Assessment is completed. \r\n" +
                     "Please click \"OK\" button and switch to Outgoing Mode to complete the assessment.\r\n" +
                     "The progress of Outgoing is " + tabCompletedRatio[0] + " out of " + tabCompletedRatio[1] + ".");
-        } */else {
+//        } */
+//        else {
 
                 
-                LTWAssessmentToolView.moveForwardALink(updateCurrAnchorStatus, nextUnassessed);
+        return LTWAssessmentToolView.moveForwardALink(updateCurrAnchorStatus, nextUnassessed);
                 // ---------------------------------------------------------------------
                 // ---------------------------------------------------------------------
                 // </editor-fold>
 //                // </editor-fold>
-        }
+//        }
     }
     
     private void backupPool() {

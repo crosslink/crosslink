@@ -4,14 +4,16 @@ import java.util.Observable;
 import java.util.Vector;
 import javax.swing.JLabel;
 
+import ltwassessment.assessment.Bep;
+
 /**
  * @author Darren Huang
  */
 public class ObservableSingleton extends Observable {
 
     private static ObservableSingleton instance = null;
-    // TAB Field Values Vector<String>
-    Vector<String> tabFieldValuesV = new Vector<String>();
+    // TAB Field Values Bep
+    Bep tabFieldValuesV = new Bep();
 
     protected ObservableSingleton() {
     }
@@ -23,8 +25,7 @@ public class ObservableSingleton extends Observable {
         return instance;
     }
 
-    public void setTABFieldValues(Vector<String> thisTABFieldValuesV) {
-        tabFieldValuesV.removeAllElements();
+    public void setTABFieldValues(Bep thisTABFieldValuesV) {
         // 0: topicTitle, 1: topicID, 2: anchorNameOL, 3: target File ID
         tabFieldValuesV = thisTABFieldValuesV;
         // invoke Change Event
@@ -32,7 +33,7 @@ public class ObservableSingleton extends Observable {
         notifyObservers(tabFieldValuesV);
     }
 
-    public Vector<String> getTABFieldValues() {
+    public Bep getTABFieldValues() {
         return tabFieldValuesV;
     }
 }
