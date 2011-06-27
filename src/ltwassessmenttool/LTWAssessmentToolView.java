@@ -53,6 +53,7 @@ import ltwassessment.utility.highlightPainters;
 import ltwassessment.utility.PoolUpdater;
 import ltwassessment.view.Link;
 import ltwassessment.view.ScreenAnchor;
+import ltwassessment.view.TopicHighlightManager;
 import ltwassessment.wiki.WikiArticleXml;
 
 /**
@@ -91,7 +92,7 @@ public class LTWAssessmentToolView extends FrameView {
     // Declare External Classes
     private static PoolerManager myPooler;
     private static ResourcesManager rscManager = null;
-    private static highlightPainters painters = new highlightPainters();;
+    private static highlightPainters painters = new highlightPainters();
     private static ObservableSingleton os = null;
     private fieldUpdateObserver fuObserver = null;
     // -------------------------------------------------------------------------
@@ -170,6 +171,8 @@ public class LTWAssessmentToolView extends FrameView {
         
         topicTextPane = thisTopicTextPane;
         linkTextPane = thisLinkTextPane;
+    	
+    	TopicHighlightManager.getInstance().setPane(thisTopicTextPane);
         
         group.add(outRadioBtn);
         group.add(inRadioBtn);
@@ -254,40 +257,6 @@ public class LTWAssessmentToolView extends FrameView {
         		currTopicID = null;
         		assessNextTopic();
             }
-
-//        } 
-            // we don't need incoming for crosslink
-//            else if (rscManager.getLinkingMode().toLowerCase().equals("incoming")) {
-//                String[] tbaCompletedRatio = this.rscManager.getTBACompletedRatio();
-//                this.rscManager.updateIncomingCompletion(tbaCompletedRatio[0] + " : " + tbaCompletedRatio[1]);
-//                System.setProperty(sysPropertyTBACompletedRatioKey, tbaCompletedRatio[0] + "_" + tbaCompletedRatio[1]);
-//
-//                painters = new highlightPainters();
-//                // -------------------------------------------------------------
-//                // scrS, String[]{O,S, num}
-//                Hashtable<String, String[]> topicAnchorOSNHT = new Hashtable<String, String[]>();
-//                topicAnchorOSNHT = populateTopicBepOSNHT();
-//                // -------------------------------------------------------------
-//                CaretListenerLabel caretListenerLabel = new CaretListenerLabel("Caret Status", this.topicTextPane, this.statusMessageLabel);
-//                this.topicTextPane.addCaretListener(caretListenerLabel);
-//                topicPaneMouseListener mtTopicPaneListener = new topicPaneMouseListener(this.topicTextPane, this.linkTextPane);
-//                this.topicTextPane.addMouseListener(mtTopicPaneListener);
-//                this.topicTextPane.addMouseMotionListener(mtTopicPaneListener);
-//                linkPaneMouseListener myLPMListener = new linkPaneMouseListener(this.topicTextPane, this.linkTextPane);
-//                this.linkTextPane.addMouseListener(myLPMListener);
-//                // -------------------------------------------------------------
-//                this.outRadioBtn.setSelected(false);
-//                this.inRadioBtn.setSelected(true);
-//                // -------------------------------------------------------------
-//                setIncomingTBA();
-//            } else {
-//                String errInLinkingMode = "The system cannot indicate the linking mode, Outgoing or Incoming.\r\n" +
-//                        " It might have been externally modified.\r\n" +
-//                        "Please check the tool Resource file, \r\n" +
-//                        "resources\toolResources.xml";
-//                JOptionPane.showMessageDialog(LTWAssessmentToolApp.getApplication().getMainFrame(), errInLinkingMode);
-//            }
-//        }
     }
     
     private void assessNextTopic() {
@@ -961,8 +930,8 @@ public class LTWAssessmentToolView extends FrameView {
 //            	currPAnchorE = String.valueOf(Integer.parseInt(currPAnchorE) + extLength);
             // Highlight Anchor/BEP + Auto Scrolling
             // String[]{Name, SP, EP, extLength, subSP, subEP}
-            updateTopicAnchorsHighlight(topicTextPane, currentAnchor/*new String[]{currPAnchorS, currPAnchorE, currPAnchorStatus, currPAnchorExt}*/, nextAnchor, currentAnchor.getStatus());
-            
+//            updateTopicAnchorsHighlight(topicTextPane, currentAnchor/*new String[]{currPAnchorS, currPAnchorE, currPAnchorStatus, currPAnchorExt}*/, nextAnchor, currentAnchor.getStatus());
+            TopicHighlightManager.getInstance().update(currentAnchor, nextAnchor);
 //            if (currentAnchor.getOffset() != Integer.parseInt(currPAnchorO)) {
 //          if (currPALinkStatus.equals("-1")) {
 //              if (currPAnchorStatus.equals("-1")) {
@@ -1251,12 +1220,18 @@ public class LTWAssessmentToolView extends FrameView {
         
         
         /*************************************************************************
-         * PART 2
+         * Step 2
          * 
          * setup the screen start and end position of anchors
          *************************************************************************/
         rscManager.setTopicAnchorOLStatusBySE();
         topicAnchorOLSEStatus = rscManager.getPoolAnchorsOLNameStatusV();
+        
+        /*************************************************************************
+         * Step 3
+         * 
+         ************************************************************************/
+        TopicHighlightManager.getInstance().initializeHighlighter(topicAnchorOLSEStatus);
         
         String[] tabCompletedRatio = this.rscManager.getTABCompletedRatio();
         this.rscManager.updateOutgoingCompletion(tabCompletedRatio[0] + " : " + tabCompletedRatio[1]);
@@ -1281,26 +1256,31 @@ public class LTWAssessmentToolView extends FrameView {
         String currTargetFilePath = rscManager.getWikipediaFilePathByName(currTargetID + ".xml", currTargetLang);
         
         // re-adjust the anchor offset and length
-        int offset = CurrTopicATargetOID.getAssociatedAnchor().getOffset(); //Integer.parseInt(CurrTopicATargetOID[5]);
-        int length = CurrTopicATargetOID.getAssociatedAnchor().getLength(); //Integer.parseInt(CurrTopicATargetOID[6]);
-        
-        int anchorOffset = Integer.parseInt(currTopicOLNameSEStatus[0]);   
-        
-//      byte[] bytes = FOLTXTMatcher.getInstance().getFullXmlTxt().getBytes();
-//		offset = FOLTXTMatcher.byteOffsetToTextOffset(bytes, offset);
-//		length = FOLTXTMatcher.textLength(bytes, offset, length);
-
-//        anchorOffset = FOLTXTMatcher.byteOffsetToTextOffset(bytes, anchorOffset);
-        int screenOffset = Integer.parseInt(currTopicOLNameSEStatus[3]) + offset - anchorOffset;
-        String currAnchorS = String.valueOf(screenOffset);
-        String currAnchorE = String.valueOf(screenOffset + length);      
+//        int offset = CurrTopicATargetOID.getAssociatedAnchor().getOffset(); //Integer.parseInt(CurrTopicATargetOID[5]);
+//        int length = CurrTopicATargetOID.getAssociatedAnchor().getLength(); //Integer.parseInt(CurrTopicATargetOID[6]);
+//        
+//        int anchorOffset = Integer.parseInt(currTopicOLNameSEStatus[0]);   
+//        
+////      byte[] bytes = FOLTXTMatcher.getInstance().getFullXmlTxt().getBytes();
+////		offset = FOLTXTMatcher.byteOffsetToTextOffset(bytes, offset);
+////		length = FOLTXTMatcher.textLength(bytes, offset, length);
+//
+////        anchorOffset = FOLTXTMatcher.byteOffsetToTextOffset(bytes, anchorOffset);
+//        int screenOffset = Integer.parseInt(currTopicOLNameSEStatus[3]) + offset - anchorOffset;
+//        String currAnchorS = String.valueOf(screenOffset);
+//        String currAnchorE = String.valueOf(screenOffset + length);      
         
         // String[]{Name, SP, EP, extLength, subSP, subEP}
-        String[] currTopicAnchorNameSE = new String[]{currTopicOLNameSEStatus[2], currTopicOLNameSEStatus[3], currTopicOLNameSEStatus[4], currTopicOLNameSEStatus[6], currAnchorS, currAnchorE};        
-        setTopicTextHighlighter(topicAnchorOLSEStatus, currTopicAnchorNameSE);
-        thisTopicTextPane.getCaret().setDot(Integer.valueOf(currTopicAnchorNameSE[1]));
-        thisTopicTextPane.scrollRectToVisible(thisTopicTextPane.getVisibleRect());
-        thisTopicTextPane.repaint();
+//        String[] currTopicAnchorNameSE = new String[]{currTopicOLNameSEStatus[2], currTopicOLNameSEStatus[3], currTopicOLNameSEStatus[4], currTopicOLNameSEStatus[6], currAnchorS, currAnchorE};        
+//        setTopicTextHighlighter(topicAnchorOLSEStatus, currTopicAnchorNameSE);
+//        thisTopicTextPane.getCaret().setDot(Integer.valueOf(currTopicAnchorNameSE[1]));
+//        thisTopicTextPane.scrollRectToVisible(thisTopicTextPane.getVisibleRect());
+//        thisTopicTextPane.repaint();
+        /*************************************************************************
+         * Step 5
+         * 
+         ************************************************************************/
+        TopicHighlightManager.getInstance().update(null, CurrTopicATargetOID.getAssociatedAnchor());
 
         setTABLinkPaneContent(currTargetFilePath, currTargetLang);
         // bep_Offset, linkID, Status
@@ -1440,124 +1420,107 @@ public class LTWAssessmentToolView extends FrameView {
         this.topicTextPane.setText(xmlParser.getHtmlContent().toString());
     }
 
-    private static void updateSelectedAnchorHightlighter(JTextPane topicTextPane, AssessedAnchor currAnchorSE, int thisAnchorStatus) {
-
-//        int curr_ext_length = Integer.parseInt(currTopicAnchorSCRSE[3]);
-    	int subanchorScreenStart = currAnchorSE.getScreenPosStart(); //Integer.valueOf(currAnchorSE[4]);
-    	int subanchorScreenEnd = currAnchorSE.getScreenPosEnd(); //Integer.valueOf(currAnchorSE[5]);
-    	Highlighter highlighter = topicTextPane.getHighlighter();
-        Object anchorHighlightReference = null;
+//    private static void updateSelectedAnchorHightlighter(JTextPane topicTextPane, AssessedAnchor currAnchorSE, int thisAnchorStatus) {
+//
+////        int curr_ext_length = Integer.parseInt(currTopicAnchorSCRSE[3]);
+//    	int subanchorScreenStart = currAnchorSE.getScreenPosStart(); //Integer.valueOf(currAnchorSE[4]);
+//    	int subanchorScreenEnd = currAnchorSE.getScreenPosEnd(); //Integer.valueOf(currAnchorSE[5]);
+//    	Highlighter highlighter = topicTextPane.getHighlighter();
+//        Object anchorHighlightReference = null;
+////        String currAnchorSP = currTopicAnchorSCRSE[1].trim();
+//        
+//    	int sp = currAnchorSE.getParent().getScreenPosStart(); //Integer.valueOf(currAnchorSEcurrAnchorSE[1]);
+//    	int se = currAnchorSE.getParent().getLength() + currAnchorSE.getParent().getExtendedLength(); //Integer.valueOf(currAnchorSE[2]);
+//    	
+//        int sp1 = 0, se1 = 0;
+//        int sp2 = 0, se2 = 0;
+//    	if (subanchorScreenStart != sp || subanchorScreenEnd != se) {
+//    		
+//    		if (subanchorScreenStart > sp) {
+//    			sp1 = sp;
+//    			se1 = subanchorScreenStart; 			
+//    		}
+//    		
+//    		if (subanchorScreenEnd < se) {
+//    			sp2 = subanchorScreenEnd;
+//    			se2 = se; 
+//    		}
+//
+//        } 
+//
+//    	try {
+//			anchorHighlightReference = highlighter.addHighlight(subanchorScreenStart, subanchorScreenEnd, painters.getSelectedPainter());
+//
+//	        if (se1 > sp1) {
+//	            if (thisAnchorStatus == 0) {
+//	                anchorHighlightReference = highlighter.addHighlight(sp1, se1, painters.getAnchorPainter());
+//	            } else if (thisAnchorStatus == 1) {
+//	                anchorHighlightReference = highlighter.addHighlight(sp1, se1, painters.getCompletePainter());
+//	            } else if (thisAnchorStatus == -1) {
+//	                anchorHighlightReference = highlighter.addHighlight(sp1, se1, painters.getIrrelevantPainter());
+//	            }
+//	        }
+//	        
+//	        if (se2 > sp2) {
+//	            if (thisAnchorStatus == 0) {
+//	                anchorHighlightReference = highlighter.addHighlight(sp2, se2, painters.getAnchorPainter());
+//	            } else if (thisAnchorStatus == 1) {
+//	                anchorHighlightReference = highlighter.addHighlight(sp2, se2, painters.getCompletePainter());
+//	            } else if (thisAnchorStatus == -1) {
+//	                anchorHighlightReference = highlighter.addHighlight(sp2, se2, painters.getIrrelevantPainter());
+//	            }
+//	        }		
+//        } catch (BadLocationException e) {
+//        	Logger.getLogger(LTWAssessmentToolView.class.getName()).log(Level.SEVERE, null, e);
+//		} 
+//    }
+    
+//    private void setTopicTextHighlighter(Vector<IndexedAnchor> topicAnchorOLSEStatus2, String[] currTopicAnchorSCRSE) {
+//        /**
+//         * Vector<String[]> topicAnchorSEVSA :
+//         *     String[]{Anchor_Offset, Length, S, E, Status}
+//         * String[] currTopicAnchorSCRSE :
+//         *     String[]{AnchorName, SP, EP}
+//         */
 //        String currAnchorSP = currTopicAnchorSCRSE[1].trim();
-        
-    	int sp = currAnchorSE.getParent().getScreenPosStart(); //Integer.valueOf(currAnchorSEcurrAnchorSE[1]);
-    	int se = currAnchorSE.getParent().getLength() + currAnchorSE.getParent().getExtendedLength(); //Integer.valueOf(currAnchorSE[2]);
-    	
-        int sp1 = 0, se1 = 0;
-        int sp2 = 0, se2 = 0;
-    	if (subanchorScreenStart != sp || subanchorScreenEnd != se) {
-    		
-    		if (subanchorScreenStart > sp) {
-    			sp1 = sp;
-    			se1 = subanchorScreenStart; 			
-    		}
-    		
-    		if (subanchorScreenEnd < se) {
-    			sp2 = subanchorScreenEnd;
-    			se2 = se; 
-    		}
-//            if (thisAnchorSP.equals(currAnchorSP)) {
-//            	if (curr_ext_length < 0) {
-//                	sp1 = sp1 + curr_ext_length;
-//                	se1 = se + curr_ext_length;                		
-//            	}
-//            	else if (curr_ext_length > 0) {
-//                	sp1 = se;
-//                	se1 = se + curr_ext_length;
+//        try {
+//            Highlighter highlighter = this.topicTextPane.getHighlighter();
+//            highlighter.removeAllHighlights();
+//            Object anchorHighlightReference = null;
+//
+//            for (IndexedAnchor thisAnchorSA : topicAnchorOLSEStatus2) {
+//                String thisAnchorSP = thisAnchorSA.screenPosStartToString(); //[2];
+//                int thisAnchorStatus = thisAnchorSA.getStatus(); //Integer.valueOf(thisAnchorSA[4]);
+//                int ext_length = thisAnchorSA.getExtendedLength(); //Integer.valueOf(thisAnchorSA[5]);
+//            	int sp = thisAnchorSA.getScreenPosStart(); //Integer.valueOf(thisAnchorSA[2]);
+//            	int se = thisAnchorSA.getScreenPosEnd(); //Integer.valueOf(thisAnchorSA[3]);
+//                
+//            	if (ext_length > 0)
+//            		se += ext_length;
+//            	
+//                if (thisAnchorSP.equals(currAnchorSP)) {
+////                	String [] currAnchorScreenInfo = new String[currTopicAnchorSCRSE.length];
+////                	System.arraycopy(currTopicAnchorSCRSE, 0, currAnchorScreenInfo, 0, currTopicAnchorSCRSE.length);
+////                	int anchorEnd = Integer.valueOf(currAnchorScreenInfo[2]) + Integer.valueOf(currAnchorScreenInfo[3]);
+////                	currAnchorScreenInfo[2] = String.valueOf(anchorEnd);
+//                	updateSelectedAnchorHightlighter(this.topicTextPane, thisAnchorSA.getChildrenAnchors().get(0)/*currAnchorScreenInfo*/, thisAnchorStatus);
+//                    //anchorHighlightReference = highlighter.addHighlight(sp, se, painters.getSelectedPainter()); 
 //                }
 //                else {
-//                	se1 = sp1;
-////                	sp1 = sp;
+//	                if (thisAnchorStatus == 0) {
+//	                    anchorHighlightReference = highlighter.addHighlight(sp, se, painters.getAnchorPainter());
+//	                } else if (thisAnchorStatus == 1) {
+//	                    anchorHighlightReference = highlighter.addHighlight(sp, se, painters.getCompletePainter());
+//	                } else if (thisAnchorStatus == -1) {
+//	                    anchorHighlightReference = highlighter.addHighlight(sp, se, painters.getIrrelevantPainter());
+//	                }
 //                }
-        } 
-//            else {
-//                if (ext_length > 0) {
-//                	sp1 = sp;
-//                	se1 = se + ext_length;
-//                }
-//            }	
-    	try {
-			anchorHighlightReference = highlighter.addHighlight(subanchorScreenStart, subanchorScreenEnd, painters.getSelectedPainter());
-
-	        if (se1 > sp1) {
-	            if (thisAnchorStatus == 0) {
-	                anchorHighlightReference = highlighter.addHighlight(sp1, se1, painters.getAnchorPainter());
-	            } else if (thisAnchorStatus == 1) {
-	                anchorHighlightReference = highlighter.addHighlight(sp1, se1, painters.getCompletePainter());
-	            } else if (thisAnchorStatus == -1) {
-	                anchorHighlightReference = highlighter.addHighlight(sp1, se1, painters.getIrrelevantPainter());
-	            }
-	        }
-	        
-	        if (se2 > sp2) {
-	            if (thisAnchorStatus == 0) {
-	                anchorHighlightReference = highlighter.addHighlight(sp2, se2, painters.getAnchorPainter());
-	            } else if (thisAnchorStatus == 1) {
-	                anchorHighlightReference = highlighter.addHighlight(sp2, se2, painters.getCompletePainter());
-	            } else if (thisAnchorStatus == -1) {
-	                anchorHighlightReference = highlighter.addHighlight(sp2, se2, painters.getIrrelevantPainter());
-	            }
-	        }		
-        } catch (BadLocationException e) {
-        	Logger.getLogger(LTWAssessmentToolView.class.getName()).log(Level.SEVERE, null, e);
-		} 
-    }
-    
-    private void setTopicTextHighlighter(Vector<IndexedAnchor> topicAnchorOLSEStatus2, String[] currTopicAnchorSCRSE) {
-        /**
-         * Vector<String[]> topicAnchorSEVSA :
-         *     String[]{Anchor_Offset, Length, S, E, Status}
-         * String[] currTopicAnchorSCRSE :
-         *     String[]{AnchorName, SP, EP}
-         */
-        String currAnchorSP = currTopicAnchorSCRSE[1].trim();
-        try {
-            Highlighter highlighter = this.topicTextPane.getHighlighter();
-            highlighter.removeAllHighlights();
-            Object anchorHighlightReference = null;
-
-            for (IndexedAnchor thisAnchorSA : topicAnchorOLSEStatus2) {
-                String thisAnchorSP = thisAnchorSA.screenPosStartToString(); //[2];
-                int thisAnchorStatus = thisAnchorSA.getStatus(); //Integer.valueOf(thisAnchorSA[4]);
-                int ext_length = thisAnchorSA.getExtendedLength(); //Integer.valueOf(thisAnchorSA[5]);
-            	int sp = thisAnchorSA.getScreenPosStart(); //Integer.valueOf(thisAnchorSA[2]);
-            	int se = thisAnchorSA.getScreenPosEnd(); //Integer.valueOf(thisAnchorSA[3]);
-                
-            	if (ext_length > 0)
-            		se += ext_length;
-            	
-                if (thisAnchorSP.equals(currAnchorSP)) {
-//                	String [] currAnchorScreenInfo = new String[currTopicAnchorSCRSE.length];
-//                	System.arraycopy(currTopicAnchorSCRSE, 0, currAnchorScreenInfo, 0, currTopicAnchorSCRSE.length);
-//                	int anchorEnd = Integer.valueOf(currAnchorScreenInfo[2]) + Integer.valueOf(currAnchorScreenInfo[3]);
-//                	currAnchorScreenInfo[2] = String.valueOf(anchorEnd);
-                	updateSelectedAnchorHightlighter(this.topicTextPane, thisAnchorSA.getChildrenAnchors().get(0)/*currAnchorScreenInfo*/, thisAnchorStatus);
-                    //anchorHighlightReference = highlighter.addHighlight(sp, se, painters.getSelectedPainter()); 
-                }
-                else {
-	                if (thisAnchorStatus == 0) {
-	                    anchorHighlightReference = highlighter.addHighlight(sp, se, painters.getAnchorPainter());
-	                } else if (thisAnchorStatus == 1) {
-	                    anchorHighlightReference = highlighter.addHighlight(sp, se, painters.getCompletePainter());
-	                } else if (thisAnchorStatus == -1) {
-	                    anchorHighlightReference = highlighter.addHighlight(sp, se, painters.getIrrelevantPainter());
-	                }
-                }
-                 
-            }
-        } catch (BadLocationException ex) {
-            Logger.getLogger(LTWAssessmentToolView.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }
+//                 
+//            }
+//        } catch (BadLocationException ex) {
+//            Logger.getLogger(LTWAssessmentToolView.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//    }
     // -------------------------------------------------------------------------
     // Topic Pane: BEP : need to be FIXED
 
@@ -1671,105 +1634,105 @@ public class LTWAssessmentToolView extends FrameView {
     // -------------------------------------------------------------------------
     // Link Pane: Anchor
 
-    private void setLinkAnchorHighlighter(String[] CurrTopicBTargetSEIDStatus) {
-        /**
-         * String[] topicAnchorSEVSA :
-         *     String[]{Anchor_SP, EP, File_ID, Status}
-         */
-        try {
-            Highlighter highlighter = this.linkTextPane.getHighlighter();
-            highlighter.removeAllHighlights();
-            Object anchorHighlightReference;
-            int thisAnchorStatus = Integer.valueOf(CurrTopicBTargetSEIDStatus[3]);
-            if (thisAnchorStatus == 0) {
-                anchorHighlightReference = highlighter.addHighlight(Integer.valueOf(CurrTopicBTargetSEIDStatus[0]), Integer.valueOf(CurrTopicBTargetSEIDStatus[1]), painters.getAnchorPainter());
-            } else if (thisAnchorStatus == 1) {
-                anchorHighlightReference = highlighter.addHighlight(Integer.valueOf(CurrTopicBTargetSEIDStatus[0]), Integer.valueOf(CurrTopicBTargetSEIDStatus[1]), painters.getCompletePainter());
-            } else if (thisAnchorStatus == -1) {
-                anchorHighlightReference = highlighter.addHighlight(Integer.valueOf(CurrTopicBTargetSEIDStatus[0]), Integer.valueOf(CurrTopicBTargetSEIDStatus[1]), painters.getIrrelevantPainter());
-            }
-        } catch (BadLocationException ex) {
-            Logger.getLogger(LTWAssessmentToolView.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }
+//    private void setLinkAnchorHighlighter(String[] CurrTopicBTargetSEIDStatus) {
+//        /**
+//         * String[] topicAnchorSEVSA :
+//         *     String[]{Anchor_SP, EP, File_ID, Status}
+//         */
+//        try {
+//            Highlighter highlighter = this.linkTextPane.getHighlighter();
+//            highlighter.removeAllHighlights();
+//            Object anchorHighlightReference;
+//            int thisAnchorStatus = Integer.valueOf(CurrTopicBTargetSEIDStatus[3]);
+//            if (thisAnchorStatus == 0) {
+//                anchorHighlightReference = highlighter.addHighlight(Integer.valueOf(CurrTopicBTargetSEIDStatus[0]), Integer.valueOf(CurrTopicBTargetSEIDStatus[1]), painters.getAnchorPainter());
+//            } else if (thisAnchorStatus == 1) {
+//                anchorHighlightReference = highlighter.addHighlight(Integer.valueOf(CurrTopicBTargetSEIDStatus[0]), Integer.valueOf(CurrTopicBTargetSEIDStatus[1]), painters.getCompletePainter());
+//            } else if (thisAnchorStatus == -1) {
+//                anchorHighlightReference = highlighter.addHighlight(Integer.valueOf(CurrTopicBTargetSEIDStatus[0]), Integer.valueOf(CurrTopicBTargetSEIDStatus[1]), painters.getIrrelevantPainter());
+//            }
+//        } catch (BadLocationException ex) {
+//            Logger.getLogger(LTWAssessmentToolView.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//    }
     // </editor-fold>
 
     // <editor-fold defaultstate="collapsed" desc="Update Anchor Highlight & BEP Icon">
-    private void updateLinkAnchorHighlight(JTextPane linkPane, String[] anchorSEPosSA) {
-        // This might need to handle: isAssessment
-        // 1) YES:
-        // 2) NO: ONLY highlight Anchor Text
-        try {
-            Highlighter txtPaneHighlighter = linkPane.getHighlighter();
-            int[] achorSCRPos = new int[]{Integer.valueOf(anchorSEPosSA[0]), Integer.valueOf(anchorSEPosSA[1])};
-            Object aHighlightRef = txtPaneHighlighter.addHighlight(achorSCRPos[0], achorSCRPos[1], painters.getAnchorPainter());
-        } catch (BadLocationException ex) {
-            Logger.getLogger(topicPaneMouseListener.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }
+//    private void updateLinkAnchorHighlight(JTextPane linkPane, String[] anchorSEPosSA) {
+//        // This might need to handle: isAssessment
+//        // 1) YES:
+//        // 2) NO: ONLY highlight Anchor Text
+//        try {
+//            Highlighter txtPaneHighlighter = linkPane.getHighlighter();
+//            int[] achorSCRPos = new int[]{Integer.valueOf(anchorSEPosSA[0]), Integer.valueOf(anchorSEPosSA[1])};
+//            Object aHighlightRef = txtPaneHighlighter.addHighlight(achorSCRPos[0], achorSCRPos[1], painters.getAnchorPainter());
+//        } catch (BadLocationException ex) {
+//            Logger.getLogger(topicPaneMouseListener.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//    }
 
-    public static void updateTopicAnchorsHighlight(JTextPane topicPane, AssessedAnchor preAnchorSEStatus, AssessedAnchor currAnchorSE/*String[] currAnchorSE*/, int currLinkStatus) {
-        // This might need to handle: isAssessment
-        // 1) YES: Highlight Curr Selected Anchor Text, keep others remaining as THEIR Colors
-        // 2) NO: Highlight Curr Selected Anchor Text, keep others remaining as Anchor Text Color
-        try {
-            boolean preDONEFlag = false;
-            boolean currDONEFlag = false;
-            Highlighter txtPaneHighlighter = topicPane.getHighlighter();
-            Highlight[] highlights = txtPaneHighlighter.getHighlights();
-            Object anchorHighlightRef = null;
-            int[] achorSCRPos = new int[]{currAnchorSE.getScreenPosStart(), currAnchorSE.getScreenPosEnd()/*Integer.valueOf(currAnchorSE[1]), Integer.valueOf(currAnchorSE[2])*/};
-            log("PRE: " + preAnchorSEStatus.screenPosStartToString()/*[0]*/ + " - " + preAnchorSEStatus.screenPosEndToString()/*[1]*/ + " - " + preAnchorSEStatus.getName()/*[2]*/);
-            log("CURR: " + currAnchorSE.screenPosStartToString() + " - " + currAnchorSE.screenPosEndToString());
-            
-            int preScreenS = preAnchorSEStatus.getScreenPosStart(); //Integer.valueOf(preAnchorSEStatus[0]);
-            int preScreenE = preAnchorSEStatus.getScreenPosEnd(); //Integer.valueOf(preAnchorSEStatus[1]);
-//            int extLength = Integer.parseInt(preAnchorSEStatus[3]);
-//            int sp, se;
-            for (int i = 0; i < highlights.length; i++) {
-                int sPos = highlights[i].getStartOffset();
-                int ePos = highlights[i].getEndOffset();
-                if (sPos >= achorSCRPos[0] &&  ePos <= achorSCRPos[1]) {
-                    txtPaneHighlighter.removeHighlight(highlights[i]);
-                    // String[]{Name, SP, EP, extLength, subSP, subEP}
-//                    currDONEFlag = true;
-//                    if (currDONEFlag && preDONEFlag) {
-//                        break;
+//    public static void updateTopicAnchorsHighlight(JTextPane topicPane, AssessedAnchor preAnchorSEStatus, AssessedAnchor currAnchorSE/*String[] currAnchorSE*/, int currLinkStatus) {
+//        // This might need to handle: isAssessment
+//        // 1) YES: Highlight Curr Selected Anchor Text, keep others remaining as THEIR Colors
+//        // 2) NO: Highlight Curr Selected Anchor Text, keep others remaining as Anchor Text Color
+//        try {
+//            boolean preDONEFlag = false;
+//            boolean currDONEFlag = false;
+//            Highlighter txtPaneHighlighter = topicPane.getHighlighter();
+//            Highlight[] highlights = txtPaneHighlighter.getHighlights();
+//            Object anchorHighlightRef = null;
+//            int[] achorSCRPos = new int[]{currAnchorSE.getScreenPosStart(), currAnchorSE.getScreenPosEnd()/*Integer.valueOf(currAnchorSE[1]), Integer.valueOf(currAnchorSE[2])*/};
+//            log("PRE: " + preAnchorSEStatus.screenPosStartToString()/*[0]*/ + " - " + preAnchorSEStatus.screenPosEndToString()/*[1]*/ + " - " + preAnchorSEStatus.getName()/*[2]*/);
+//            log("CURR: " + currAnchorSE.screenPosStartToString() + " - " + currAnchorSE.screenPosEndToString());
+//            
+//            int preScreenS = preAnchorSEStatus.getScreenPosStart(); //Integer.valueOf(preAnchorSEStatus[0]);
+//            int preScreenE = preAnchorSEStatus.getScreenPosEnd(); //Integer.valueOf(preAnchorSEStatus[1]);
+////            int extLength = Integer.parseInt(preAnchorSEStatus[3]);
+////            int sp, se;
+//            for (int i = 0; i < highlights.length; i++) {
+//                int sPos = highlights[i].getStartOffset();
+//                int ePos = highlights[i].getEndOffset();
+//                if (sPos >= achorSCRPos[0] &&  ePos <= achorSCRPos[1]) {
+//                    txtPaneHighlighter.removeHighlight(highlights[i]);
+//                    // String[]{Name, SP, EP, extLength, subSP, subEP}
+////                    currDONEFlag = true;
+////                    if (currDONEFlag && preDONEFlag) {
+////                        break;
+////                    }
+//                } else {
+//                    if (sPos >= preScreenS && ePos <= preScreenE) {
+//                        txtPaneHighlighter.removeHighlight(highlights[i]);
+//
+////                        topicPane.repaint();
+////                        preDONEFlag = true;
+////                        if (currDONEFlag && preDONEFlag) {
+////                            break;
+////                        }
 //                    }
-                } else {
-                    if (sPos >= preScreenS && ePos <= preScreenE) {
-                        txtPaneHighlighter.removeHighlight(highlights[i]);
-
-//                        topicPane.repaint();
-//                        preDONEFlag = true;
-//                        if (currDONEFlag && preDONEFlag) {
-//                            break;
-//                        }
-                    }
-//                    else if (Integer.valueOf(preAnchorSEStatus[1])) {
-//                    	txtPaneHighlighter.removeHighlight(highlights[i]);
-//                    }
-                }
-            }
-
-            int pAnchorStatus = preAnchorSEStatus.getStatus(); //preAnchorSEStatus[2];
-            if (pAnchorStatus == 1) {
-                anchorHighlightRef = txtPaneHighlighter.addHighlight(preScreenS, preScreenE, painters.getCompletePainter());
-            } else if (pAnchorStatus == -1) {
-                anchorHighlightRef = txtPaneHighlighter.addHighlight(preScreenS, preScreenE, painters.getIrrelevantPainter());
-            } else {
-                anchorHighlightRef = txtPaneHighlighter.addHighlight(preScreenS, preScreenE, painters.getAnchorPainter());
-            }
-            
-            
-            updateSelectedAnchorHightlighter(topicPane, currAnchorSE, currLinkStatus);
-            //anchorHighlightRef = txtPaneHighlighter.addHighlight(sPos, ePos, painters.getSelectedPainter());
-            
-            topicPane.repaint();
-        } catch (BadLocationException ex) {
-            Logger.getLogger(topicPaneMouseListener.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }
+////                    else if (Integer.valueOf(preAnchorSEStatus[1])) {
+////                    	txtPaneHighlighter.removeHighlight(highlights[i]);
+////                    }
+//                }
+//            }
+//
+//            int pAnchorStatus = preAnchorSEStatus.getStatus(); //preAnchorSEStatus[2];
+//            if (pAnchorStatus == 1) {
+//                anchorHighlightRef = txtPaneHighlighter.addHighlight(preScreenS, preScreenE, painters.getCompletePainter());
+//            } else if (pAnchorStatus == -1) {
+//                anchorHighlightRef = txtPaneHighlighter.addHighlight(preScreenS, preScreenE, painters.getIrrelevantPainter());
+//            } else {
+//                anchorHighlightRef = txtPaneHighlighter.addHighlight(preScreenS, preScreenE, painters.getAnchorPainter());
+//            }
+//            
+//            
+//            updateSelectedAnchorHightlighter(topicPane, currAnchorSE, currLinkStatus);
+//            //anchorHighlightRef = txtPaneHighlighter.addHighlight(sPos, ePos, painters.getSelectedPainter());
+//            
+//            topicPane.repaint();
+//        } catch (BadLocationException ex) {
+//            Logger.getLogger(topicPaneMouseListener.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//    }
 
     private static void updatePaneBepIcon(JTextPane txtPane, Vector<String> bepSCROffset, boolean isHighlighBEP) {
         // TODO: "isHighlighBEP"
@@ -1849,7 +1812,6 @@ public class LTWAssessmentToolView extends FrameView {
     	
     	AdjustFont.setComponentFont(lblTopicTitle, AppResource.sourceLang);
     	AdjustFont.setComponentFont(lblPoolAnchor, AppResource.sourceLang);
-    	
     }
 // </editor-fold>
 }
