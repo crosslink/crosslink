@@ -1751,9 +1751,6 @@ public class LTWAssessmentToolView extends FrameView {
 //                    }
                 }
             }
-            
-            updateSelectedAnchorHightlighter(topicPane, currAnchorSE, currLinkStatus);
-            //anchorHighlightRef = txtPaneHighlighter.addHighlight(sPos, ePos, painters.getSelectedPainter());
 
             int pAnchorStatus = preAnchorSEStatus.getStatus(); //preAnchorSEStatus[2];
             if (pAnchorStatus == 1) {
@@ -1763,6 +1760,11 @@ public class LTWAssessmentToolView extends FrameView {
             } else {
                 anchorHighlightRef = txtPaneHighlighter.addHighlight(preScreenS, preScreenE, painters.getAnchorPainter());
             }
+            
+            
+            updateSelectedAnchorHightlighter(topicPane, currAnchorSE, currLinkStatus);
+            //anchorHighlightRef = txtPaneHighlighter.addHighlight(sPos, ePos, painters.getSelectedPainter());
+            
             topicPane.repaint();
         } catch (BadLocationException ex) {
             Logger.getLogger(topicPaneMouseListener.class.getName()).log(Level.SEVERE, null, ex);
