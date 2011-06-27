@@ -252,6 +252,7 @@ public class topicPaneMouseListener implements MouseInputListener {
 //	                String currAnchorO = currSCRSEName.offsetIndexToString();
 //	                String currAnchorL = currSCRSEName.lengthIndexToString();
 	                String currAnchorStatus = poolerManager.getPoolAnchorStatus(this.currTopicID, currSCRSEName/*new String[]{currAnchorO, currAnchorL}*/);
+	                currSCRSEName.setStatus(Integer.parseInt(currAnchorStatus));
 //	                String[] scrSEPosKey = new String[]{currSCRSEName.getName(), currSCRSEName.screenPosStartToString(), currSCRSEName.screenPosEndToString(), currSCRSEName.extendedLengthToString(), currSCRSEName.screenPosStartToString(), currSCRSEName.screenPosEndToString()};
 //	            	int anchorEnd = Integer.valueOf(scrSEPosKey[2]) + Integer.valueOf(scrSEPosKey[3]);
 //	            	scrSEPosKey[2] = String.valueOf(anchorEnd);
@@ -271,6 +272,7 @@ public class topicPaneMouseListener implements MouseInputListener {
 //                    String prePAnchorL = preAnchorOLSEStatusSA[1];
 
                     int prePAnchorStatus = Integer.parseInt(this.poolerManager.getPoolAnchorStatus(this.currTopicID, this.preTHyperOLSEStatus.getParent()/*new String[]{prePAnchorO, prePAnchorL}*/));
+                    this.preTHyperOLSEStatus.getParent().setStatus(prePAnchorStatus);
                     int unAssCounter = 0;
                     Vector<String> thisPALinkStatusV = this.poolerManager.getPoolAnchorAllLinkStatus(currTopicID, this.preTHyperOLSEStatus.getParent()/*new String[]{prePAnchorO, prePAnchorL}*/);
                     for (String linkStatus : thisPALinkStatusV) {
@@ -299,9 +301,9 @@ public class topicPaneMouseListener implements MouseInputListener {
                 TopicHighlightManager.getInstance().update(preTHyperOLSEStatus, next);
                 
 				//                  LTWAssessmentToolView.updateTopicAnchorsHighlight(this.topicTextPane, scrSEPosKey, preAnchorSEStatus, bepLength);
-				this.topicTextPane.getCaret().setDot(Integer.valueOf(currSCRSEName.screenPosEndToString()));
-				this.topicTextPane.scrollRectToVisible(this.topicTextPane.getVisibleRect());
-				this.topicTextPane.repaint();
+//				this.topicTextPane.getCaret().setDot(Integer.valueOf(currSCRSEName.screenPosEndToString()));
+//				this.topicTextPane.scrollRectToVisible(this.topicTextPane.getVisibleRect());
+//				this.topicTextPane.repaint();
 //                } else {
 //                    // ---------------------------------------------------------
 //                    // Update Pool BEP Status <-- When GO NEXT Pool BEP
