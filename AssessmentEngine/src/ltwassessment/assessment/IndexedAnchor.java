@@ -15,7 +15,9 @@ public class IndexedAnchor extends Anchor {
     protected int screenPosStart = -1;
     protected int screenPosEnd = -1;
 	
-	Vector<AssessedAnchor> childrenAnchors = new Vector<AssessedAnchor>();
+	private Vector<AssessedAnchor> childrenAnchors = new Vector<AssessedAnchor>();
+	
+	private Object anchorHighlightReference = null;
 
 	public IndexedAnchor(int offset, int length, String name) {
 		super(offset, length, name);
@@ -152,5 +154,13 @@ public class IndexedAnchor extends Anchor {
 	
 	public String toKey() {
 		return this.offsetToString() + "_" +  this.lengthToString();
+	}
+
+	public Object getAnchorHighlightReference() {
+		return anchorHighlightReference;
+	}
+
+	public void setAnchorHighlightReference(Object anchorHighlightReference) {
+		this.anchorHighlightReference = anchorHighlightReference;
 	}
 }
