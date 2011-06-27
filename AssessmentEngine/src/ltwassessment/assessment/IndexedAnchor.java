@@ -1,8 +1,15 @@
 package ltwassessment.assessment;
 
 import java.util.Vector;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+import javax.swing.text.BadLocationException;
+import javax.swing.text.Highlighter;
 
 import ltwassessment.submission.Anchor;
+import ltwassessment.utility.highlightPainters;
+import ltwassessment.view.TopicHighlightManager;
 
 public class IndexedAnchor extends Anchor {
 	public final static int UNINITIALIZED_VALUE = -1; 
@@ -17,7 +24,7 @@ public class IndexedAnchor extends Anchor {
 	
 	private Vector<AssessedAnchor> childrenAnchors = new Vector<AssessedAnchor>();
 	
-	private Object anchorHighlightReference = null;
+	private Vector<Object> anchorHighlightReferences = new Vector<Object>();
 
 	public IndexedAnchor(int offset, int length, String name) {
 		super(offset, length, name);
@@ -156,11 +163,96 @@ public class IndexedAnchor extends Anchor {
 		return this.offsetToString() + "_" +  this.lengthToString();
 	}
 
-	public Object getAnchorHighlightReference() {
-		return anchorHighlightReference;
+	public Vector<Object> getAnchorHighlightReference() {
+		return anchorHighlightReferences;
 	}
 
-	public void setAnchorHighlightReference(Object anchorHighlightReference) {
-		this.anchorHighlightReference = anchorHighlightReference;
+	public void addAnchorHighlightReference(Object anchorHighlightReference) {
+		this.anchorHighlightReferences.add(anchorHighlightReference);
+	}
+	
+	public void setHighlighter(Highlighter txtPaneHighlighter, highlightPainters painters) {
+		Object anchorHighlightReference = null;
+        int ext_length = getExtendedLength(); 
+    	int sp = getScreenPosStart(); 
+    	int se = getScreenPosEnd() + ext_length;
+    	
+    	for (Object theHighlightReference : anchorHighlightReferences)
+    		txtPaneHighlighter.removeHighlight(theHighlightReference);
+    			
+    	try {
+    		if (status == 1) {
+	            anchorHighlightReference = txtPaneHighlighter.addHighlight(sp, se, painters.getCompletePainter());
+	        } else if (status == -1) {
+	            anchorHighlightReference = txtPaneHighlighter.addHighlight(sp, se, painters.getIrrelevantPainter());
+	        } 
+	        else {
+		        anchorHighlightReference = txtPaneHighlighter.addHighlight(sp, se, painters.getAnchorPainter());
+	        }
+	        
+	        anchorHighlightReferences.add(anchorHighlightReference);
+	    } catch (BadLocationException ex) {
+	        Logger.getLogger(TopicHighlightManager.class.getName()).log(Level.SEVERE, null, ex);
+	    } catch (Exception e) {
+			e.printStackTrace();
+		}	
+	}
+	
+	public void setToCurrentAnchor(Highlighter txtPaneHighlighter, highlightPainters painters, AssessedAnchor currAnchorSE) {	
+    	int subanchorScreenStart = currAnchorSE.getScreenPosStart(); 
+    	int subanchorScreenEnd = currAnchorSE.getScreenPosEnd(); 
+    	Object anchorHighlightReference = null;
+
+    	int sp = getScreenPosStart(); 
+    	int se = getLength() + getExtendedLength(); 
+    	
+    	for (Object theHighlightReference : anchorHighlightReferences)
+    		txtPaneHighlighter.removeHighlight(theHighlightReference);
+    	
+        int sp1 = 0, se1 = 0;
+        int sp2 = 0, se2 = 0;
+    	if (subanchorScreenStart != sp || subanchorScreenEnd != se) {
+    		
+    		if (subanchorScreenStart > sp) {
+    			sp1 = sp;
+    			se1 = subanchorScreenStart; 			
+    		}
+    		
+    		if (subanchorScreenEnd < se) {
+    			sp2 = subanchorScreenEnd;
+    			se2 = se; 
+    		}
+
+        } 
+
+    	try {
+			anchorHighlightReference = txtPaneHighlighter.addHighlight(subanchorScreenStart, subanchorScreenEnd, painters.getSelectedPainter());
+			anchorHighlightReferences.add(anchorHighlightReference);
+			
+	        if (se1 > sp1) {
+	            if (status == 1) {
+	                anchorHighlightReference = txtPaneHighlighter.addHighlight(sp1, se1, painters.getCompletePainter());
+	            } else if (status == -1) {
+	                anchorHighlightReference = txtPaneHighlighter.addHighlight(sp1, se1, painters.getIrrelevantPainter());
+	            }
+	            else
+	            	anchorHighlightReference = txtPaneHighlighter.addHighlight(sp1, se1, painters.getAnchorPainter());	  
+	            anchorHighlightReferences.add(anchorHighlightReference);
+	        }
+	        
+	        if (se2 > sp2) {
+	            if (status == 1) {
+	                anchorHighlightReference = txtPaneHighlighter.addHighlight(sp2, se2, painters.getCompletePainter());
+	            } else if (status == -1) {
+	                anchorHighlightReference = txtPaneHighlighter.addHighlight(sp2, se2, painters.getIrrelevantPainter());
+	            }
+	            else
+	            	anchorHighlightReference = txtPaneHighlighter.addHighlight(sp2, se2, painters.getAnchorPainter());
+	            anchorHighlightReferences.add(anchorHighlightReference);
+	        }
+    	}
+    	catch (BadLocationException ex) {
+	        Logger.getLogger(TopicHighlightManager.class.getName()).log(Level.SEVERE, null, ex);
+	    } 
 	}
 }
