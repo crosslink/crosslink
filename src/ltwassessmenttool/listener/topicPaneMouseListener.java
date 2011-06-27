@@ -389,98 +389,12 @@ public class topicPaneMouseListener implements MouseInputListener {
         CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(bepInfo.getAssociatedAnchor());
 //        CurrentFocusedAnchor.getCurrentFocusedAnchor().setCurrentAnchorProperty(pAnchorO, pAnchorOL, currSCRSEName.screenPosStartToString(), currSCRSEName.screenPosStartToString(), pAnchorStatus, currSCRSEName.extendedLengthToString()/*, currSCRSEName.offsetIndexToString()*/);
         // ---------------------------------------------------------------------
-//        String currAnchorName = this.poolerManager.getPoolAnchorNameByOL(this.currTopicID, currSCRSEName);
-//        Vector<String> newTABFieldValues = new Vector<String>();
-//        newTABFieldValues.add(this.currTopicName);
-//        newTABFieldValues.add(this.currTopicID);
-//        newTABFieldValues.add(bepInfo.getAssociatedAnchor().getName()/*currAnchorName*/);
-//        newTABFieldValues.add(bepID);
-//        String pageTitle = "";
-//        pageTitle = this.myRSCManager.getWikipediaPageTitle(bepID);
-//
-//        newTABFieldValues.add(pageTitle.trim());
-//        String[] pAnchorCompletionSA = this.myRSCManager.getOutgoingCompletion();
-//        newTABFieldValues.add(pAnchorCompletionSA[0] + " / " + pAnchorCompletionSA[1]);
+
         os.setTABFieldValues(bepInfo);
         // ---------------------------------------------------------------------
         // ---------------------------------------------------------------------
         // </editor-fold>
     }
-
-//    private void topicBepClickToLink() {
-//        // <editor-fold defaultstate="collapsed" desc="Topic BEP Click to open 1st Anchor Link">
-//        // Bep(Offset:1114), Vector<String[]{Offset:1538, Length:9, Name:TITLE, ID:123017, Status}+>
-//        HashMap<String, Vector<String[]>> bepAnchorLinksHM = poolerManager.getAnchorFileSetByBep(this.currTopicID);
-//        // String[]{Bep_Offset, S, Status}
-//        String[] currPBepOStatus = myRSCManager.getTopicAnchorOLStatusBySE(currTopicID, currSCRSEName);
-//        String currPBepOffset = currPBepOStatus[0];
-//        String currPBepOL = currPBepOStatus[0] + "_" + String.valueOf(bepLength);
-//        String currPBepStatus = this.poolerManager.getPoolBepStatus(currTopicID, currPBepOffset);
-//        Vector<String[]> bepAnchorLinks = bepAnchorLinksHM.get(currPBepOffset);
-//
-//        String anchorOffset = bepAnchorLinks.elementAt(0)[0];
-//        String anchorLength = bepAnchorLinks.elementAt(0)[1];
-//        String anchorName = bepAnchorLinks.elementAt(0)[2];
-//        String anchorFileID = bepAnchorLinks.elementAt(0)[3];
-//        String anchorStatus = this.poolerManager.getPoolBepAnchorLinkStatus(currTopicID, currPBepOffset, new String[]{anchorOffset, anchorLength, anchorFileID});
-//        String anchorXmlFilePath = poolerManager.getXmlFilePathByTargetID(anchorFileID, AppResource.targetLang);
-//        // When Errors:
-//        if (anchorXmlFilePath.startsWith(afTasnCollectionErrors)) {
-//            anchorXmlFilePath = myRSCManager.getErrorXmlFilePath(anchorXmlFilePath);
-//        }
-//
-//        Xml2Html xmlParser = new Xml2Html(anchorXmlFilePath, Boolean.valueOf(System.getProperty(LTWAssessmentToolControler.sysPropertyIsLinkWikiKey)));
-//        String xmlHtmlText = xmlParser.getHtmlContent().toString();
-//        this.linkTextPane.setContentType(paneContentType);
-//        this.linkTextPane.setText(xmlHtmlText);
-//        this.linkTextPane.setCaretPosition(0);
-//        // --------------------------------------------------------- CHECK HERE
-//        // get SCR Anchor Offset-Length
-//        String[] mySCRAnchorSEPos = myFOLMatcher.getSCRAnchorNameSESA(linkTextPane, anchorFileID, new IndexedAnchor(anchorOffset, anchorLength, anchorName), AppResource.sourceLang);
-//        // Highlight Anchor Txt in JTextPane
-//        updateLinkAnchorHighlight(linkTextPane, mySCRAnchorSEPos);
-//        // ---------------------------------------------------------
-//        // Renew Link Text Pane Listener for Detecting Anchor Text & Right/Left Click
-//        this.linkTextPane.getCaret().setDot(Integer.valueOf(mySCRAnchorSEPos[1].trim()));
-//        this.linkTextPane.scrollRectToVisible(this.linkTextPane.getVisibleRect());
-//
-//        if (Integer.valueOf(currPBepStatus) == 1 || Integer.valueOf(currPBepStatus) == 0) {
-//            if (Integer.valueOf(anchorStatus) == 1) {
-//                this.linkTextPane.setBackground(this.linkPaneRelColor);
-//            } else if (Integer.valueOf(anchorStatus) == -1) {
-//                this.linkTextPane.setBackground(this.linkPaneNonRelColor);
-//            } else if (Integer.valueOf(anchorStatus) == 0) {
-//                this.linkTextPane.setBackground(this.linkPaneWhiteColor);
-//            }
-//
-//        } else if (Integer.valueOf(currPBepStatus) == -1) {
-//            this.linkTextPane.setBackground(this.linkPaneNonRelColor);
-//        }
-//
-//        this.linkTextPane.repaint();
-//        // ---------------------------------------------------------
-//        this.myRSCManager.updateTBANavIndex(currTopicID, currPBepOffset, new IndexedAnchor(anchorOffset, anchorLength, anchorFileID));
-////        System.setProperty(sysPropertyCurrTopicOLSEStatusKey, currPBepOL + "_" + currSCRSEName.screenPosStartToString() + "_" + currSCRSEName.screenPosStartToString() + "_" + currPBepStatus);
-//        CurrentFocusedAnchor.getCurrentFocusedAnchor().setCurrentAnchorProperty(currPBepOL, currSCRSEName.screenPosStartToString(), currSCRSEName.screenPosStartToString(), currPBepStatus, currSCRSEName.extendedLengthToString(), currSCRSEName.offsetIndexToString());
-//        // ---------------------------------------------------------------------
-//        Vector<String> newTABFieldValues = new Vector<String>();
-//        newTABFieldValues.add(this.currTopicName);
-//        newTABFieldValues.add(this.currTopicID);
-//        newTABFieldValues.add(anchorName);
-//        newTABFieldValues.add(anchorFileID);
-//        String pageTitle = "";
-////        if (Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey))) {
-//            pageTitle = this.myRSCManager.getWikipediaPageTitle(anchorFileID);
-////        } else {
-////            pageTitle = this.myRSCManager.getTeAraFilePathByName(anchorFileID);
-////        }
-//
-//        newTABFieldValues.add(pageTitle.trim());
-//        String[] pAnchorCompletionSA = this.myRSCManager.getIncomingCompletion();
-//        newTABFieldValues.add(pAnchorCompletionSA[0] + " / " + pAnchorCompletionSA[1]);
-//        os.setTABFieldValues(newTABFieldValues);
-//        // </editor-fold>
-//    }
 
     private void topicAnchorClickToToggle(boolean markAllSubanchorsIrrelevant) {
         // <editor-fold defaultstate="collapsed" desc="Topic Anchor Click to toggle btw NONRel & Back">
