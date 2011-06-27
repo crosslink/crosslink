@@ -248,12 +248,12 @@ public class topicPaneMouseListener implements MouseInputListener {
                 }
 	                // -------------------------------------------------------------
 	                // 1) Highlight Anchor/BEP + Auto Scrolling
-	                String currAnchorO = currSCRSEName.offsetIndexToString();
-	                String currAnchorL = currSCRSEName.lengthIndexToString();
+//	                String currAnchorO = currSCRSEName.offsetIndexToString();
+//	                String currAnchorL = currSCRSEName.lengthIndexToString();
 	                String currAnchorStatus = poolerManager.getPoolAnchorStatus(this.currTopicID, currSCRSEName/*new String[]{currAnchorO, currAnchorL}*/);
-	                String[] scrSEPosKey = new String[]{currSCRSEName.getName(), currSCRSEName.screenPosStartToString(), currSCRSEName.screenPosEndToString(), currSCRSEName.extendedLengthToString(), currSCRSEName.screenPosStartToString(), currSCRSEName.screenPosEndToString()};
-	            	int anchorEnd = Integer.valueOf(scrSEPosKey[2]) + Integer.valueOf(scrSEPosKey[3]);
-	            	scrSEPosKey[2] = String.valueOf(anchorEnd);
+//	                String[] scrSEPosKey = new String[]{currSCRSEName.getName(), currSCRSEName.screenPosStartToString(), currSCRSEName.screenPosEndToString(), currSCRSEName.extendedLengthToString(), currSCRSEName.screenPosStartToString(), currSCRSEName.screenPosEndToString()};
+//	            	int anchorEnd = Integer.valueOf(scrSEPosKey[2]) + Integer.valueOf(scrSEPosKey[3]);
+//	            	scrSEPosKey[2] = String.valueOf(anchorEnd);
 	//                String[] scrSEPosKey = new String[]{currSCRSEName.screenPosStartToString(), currSCRSEName.screenPosStartToString(), currSCRSEName.extendedLengthToString()};
 //                String[] preAnchorOLSEStatus = this.preTHyperOLSEStatus;
 //                String[] preAnchorSEStatus = new String[]{preAnchorOLSEStatus[2], preAnchorOLSEStatus[3], preAnchorOLSEStatus[4]};
