@@ -45,6 +45,7 @@ import ltwassessment.parsers.ResourcesManager;
 import ltwassessment.utility.ObservableSingleton;
 import ltwassessment.utility.highlightPainters;
 import ltwassessment.utility.PoolUpdater;
+import ltwassessment.view.TopicHighlightManager;
 
 /**
  * @author Darren HUANG
@@ -294,7 +295,9 @@ public class topicPaneMouseListener implements MouseInputListener {
 
                 topicAnchorClickToLink(next);
                 
-                LTWAssessmentToolView.updateTopicAnchorsHighlight(this.topicTextPane, preTHyperOLSEStatus/*preAnchorSEStatus*/, next, Integer.parseInt(currAnchorStatus));
+//                LTWAssessmentToolView.updateTopicAnchorsHighlight(this.topicTextPane, preTHyperOLSEStatus/*preAnchorSEStatus*/, next, Integer.parseInt(currAnchorStatus));
+                TopicHighlightManager.getInstance().update(preTHyperOLSEStatus, next);
+                
 				//                  LTWAssessmentToolView.updateTopicAnchorsHighlight(this.topicTextPane, scrSEPosKey, preAnchorSEStatus, bepLength);
 				this.topicTextPane.getCaret().setDot(Integer.valueOf(currSCRSEName.screenPosEndToString()));
 				this.topicTextPane.scrollRectToVisible(this.topicTextPane.getVisibleRect());
@@ -575,7 +578,8 @@ public class topicPaneMouseListener implements MouseInputListener {
 //        this.linkTextPane.setText(xmlHtmlText);
 //        this.linkTextPane.setCaretPosition(0);
         // =====================================================================
-        if (pAnchorS.equals(prePAnchorS)) {
+//        if (pAnchorS.equals(prePAnchorS)) {
+        if (preTHyperOLSEStatus == firstLink.getAssociatedAnchor()) {
             log("CURR PAnchor is PRE PAnchor...");
             // CURR PAnchor is PRE PAnchor
             // -----------------------------------------------------------------
@@ -686,7 +690,8 @@ public class topicPaneMouseListener implements MouseInputListener {
             // Topic Pane
             // re-Store PRE PAnchor
             // Originally, "Highlight CURR PAnchor as YELLOW", but we don't need that
-            toggleTopicAnchorColor(new String[]{prePAnchorS, prePAnchorE, prePAnchorStatus}, new String[]{pAnchorS, pAnchorE});
+//            toggleTopicAnchorColor(new String[]{prePAnchorS, prePAnchorE, prePAnchorStatus}, new String[]{pAnchorS, pAnchorE});
+            TopicHighlightManager.getInstance().update(preTHyperOLSEStatus, firstLink.getAssociatedAnchor());
             this.topicTextPane.getCaret().setDot(Integer.valueOf(currSCRSEName.screenPosStartToString()));
             this.topicTextPane.scrollRectToVisible(this.topicTextPane.getVisibleRect());
             this.topicTextPane.repaint();
@@ -803,20 +808,6 @@ public class topicPaneMouseListener implements MouseInputListener {
                 this.myRSCManager.updateOutgoingCompletion(outCompletedLinks + " : " + outCompletionRatio[1]);
                 // updare Pool XML
                 this.pUpdater.updatePoolAnchorStatus(this.currTopicID, currSCRSEName/*currPAnchorOLStatus*/, toPAnchorStatus);
-                // update System Property
-//                CurrentFocusedAnchor.getCurrentFocusedAnchor().setCurrentAnchorProperty(pAnchorO, pAnchorOL, currSCRSEName.screenPosStartToString(), currSCRSEName.screenPosStartToString(), pAnchorStatus, currSCRSEName.extendedLengthToString()/*, currSCRSEName.offsetIndexToString()*/);
-//                // -------------------------------------------------------------
-//                // -------------------------------------------------------------
-//                String currAnchorName = this.poolerManager.getPoolAnchorNameByOL(this.currTopicID, currPAnchorOLStatus);
-//                Vector<String> newTABFieldValues = new Vector<String>();
-//                newTABFieldValues.add(this.currTopicName);
-//                newTABFieldValues.add(this.currTopicID);
-//                newTABFieldValues.add(currAnchorName);
-//                newTABFieldValues.add(bepID);
-//                String pageTitle = this.myRSCManager.getWikipediaPageTitle(bepID);
-//                newTABFieldValues.add(pageTitle.trim());
-//                newTABFieldValues.add(outCompletedLinks + " / " + outCompletionRatio[1]);
-//                os.setTABFieldValues(newTABFieldValues);
                 // </editor-fold>
             }
 
@@ -1003,18 +994,18 @@ public class topicPaneMouseListener implements MouseInputListener {
     // </editor-fold>
 
     // <editor-fold defaultstate="collapsed" desc="Utilities: UPDATE & GET">
-    private void updateLinkAnchorHighlight(JTextPane linkPane, String[] anchorSEPosSA) {
-        // This might need to handle: isAssessment
-        // 1) YES:
-        // 2) NO: ONLY highlight Anchor Text
-        try {
-            Highlighter txtPaneHighlighter = linkPane.getHighlighter();
-            int[] achorSCRPos = new int[]{Integer.valueOf(anchorSEPosSA[1]), Integer.valueOf(anchorSEPosSA[2])};
-            Object aHighlightRef = txtPaneHighlighter.addHighlight(achorSCRPos[0], achorSCRPos[1], painters.getAnchorPainter());
-        } catch (BadLocationException ex) {
-            Logger.getLogger(topicPaneMouseListener.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }
+//    private void updateLinkAnchorHighlight(JTextPane linkPane, String[] anchorSEPosSA) {
+//        // This might need to handle: isAssessment
+//        // 1) YES:
+//        // 2) NO: ONLY highlight Anchor Text
+//        try {
+//            Highlighter txtPaneHighlighter = linkPane.getHighlighter();
+//            int[] achorSCRPos = new int[]{Integer.valueOf(anchorSEPosSA[1]), Integer.valueOf(anchorSEPosSA[2])};
+//            Object aHighlightRef = txtPaneHighlighter.addHighlight(achorSCRPos[0], achorSCRPos[1], painters.getAnchorPainter());
+//        } catch (BadLocationException ex) {
+//            Logger.getLogger(topicPaneMouseListener.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//    }
 
 //    private void updateTopicAnchorsHighlight(JTextPane topicPane, String[] currAnchorSE, String[] preAnchorSEStatus) {
 //        // This might need to handle: isAssessment
@@ -1216,60 +1207,60 @@ public class topicPaneMouseListener implements MouseInputListener {
         return hoveredAnchor; //.toArray(); //selectedAnchorSEName;
     }
 
-    private void toggleTopicAnchorColor(String[] prePAnchorSEStatus, String[] currPAnchorSE) {
-        try {
-            boolean preDONEFlag = false;
-            boolean currDONEFlag = false;
-            Highlighter txtPaneHighlighter = this.topicTextPane.getHighlighter();
-            Highlight[] highlights = txtPaneHighlighter.getHighlights();
-
-            Object anchorHighlightRef = null;
-            int[] currAnchorSE = new int[]{Integer.valueOf(currPAnchorSE[0]), Integer.valueOf(currPAnchorSE[1])};
-
-            for (int i = 0; i <
-                    highlights.length; i++) {
-                int sPos = highlights[i].getStartOffset();
-                int ePos = highlights[i].getEndOffset();
-                if (currAnchorSE[0] == sPos && currAnchorSE[1] == ePos) {
-                    txtPaneHighlighter.removeHighlight(highlights[i]);
-                    anchorHighlightRef =
-                            txtPaneHighlighter.addHighlight(sPos, ePos, painters.getSelectedPainter());
-                    this.topicTextPane.repaint();
-                    currDONEFlag =
-                            true;
-                    if (currDONEFlag && preDONEFlag) {
-                        break;
-                    }
-
-                } else {
-                    int[] preAnchorSE = new int[]{Integer.valueOf(prePAnchorSEStatus[0]), Integer.valueOf(prePAnchorSEStatus[1])};
-                    if (preAnchorSE[0] == sPos && preAnchorSE[1] == ePos) {
-                        txtPaneHighlighter.removeHighlight(highlights[i]);
-                        String preAnchorStatus = prePAnchorSEStatus[2];
-                        if (preAnchorStatus.equals("0")) {
-                            anchorHighlightRef = txtPaneHighlighter.addHighlight(sPos, ePos, painters.getAnchorPainter());
-                        } else if (preAnchorStatus.equals("1")) {
-                            anchorHighlightRef = txtPaneHighlighter.addHighlight(sPos, ePos, painters.getCompletePainter());
-                        } else if (preAnchorStatus.equals("-1")) {
-                            anchorHighlightRef = txtPaneHighlighter.addHighlight(sPos, ePos, painters.getIrrelevantPainter());
-                        }
-
-                        this.topicTextPane.repaint();
-                        preDONEFlag =
-                                true;
-                        if (currDONEFlag && preDONEFlag) {
-                            break;
-                        }
-
-
-                    }
-
-                }
-            }
-        } catch (BadLocationException ex) {
-            Logger.getLogger(topicPaneMouseListener.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }
+//    private void toggleTopicAnchorColor(String[] prePAnchorSEStatus, String[] currPAnchorSE) {
+//        try {
+//            boolean preDONEFlag = false;
+//            boolean currDONEFlag = false;
+//            Highlighter txtPaneHighlighter = this.topicTextPane.getHighlighter();
+//            Highlight[] highlights = txtPaneHighlighter.getHighlights();
+//
+//            Object anchorHighlightRef = null;
+//            int[] currAnchorSE = new int[]{Integer.valueOf(currPAnchorSE[0]), Integer.valueOf(currPAnchorSE[1])};
+//
+//            for (int i = 0; i <
+//                    highlights.length; i++) {
+//                int sPos = highlights[i].getStartOffset();
+//                int ePos = highlights[i].getEndOffset();
+//                if (currAnchorSE[0] == sPos && currAnchorSE[1] == ePos) {
+//                    txtPaneHighlighter.removeHighlight(highlights[i]);
+//                    anchorHighlightRef =
+//                            txtPaneHighlighter.addHighlight(sPos, ePos, painters.getSelectedPainter());
+//                    this.topicTextPane.repaint();
+//                    currDONEFlag =
+//                            true;
+//                    if (currDONEFlag && preDONEFlag) {
+//                        break;
+//                    }
+//
+//                } else {
+//                    int[] preAnchorSE = new int[]{Integer.valueOf(prePAnchorSEStatus[0]), Integer.valueOf(prePAnchorSEStatus[1])};
+//                    if (preAnchorSE[0] == sPos && preAnchorSE[1] == ePos) {
+//                        txtPaneHighlighter.removeHighlight(highlights[i]);
+//                        String preAnchorStatus = prePAnchorSEStatus[2];
+//                        if (preAnchorStatus.equals("0")) {
+//                            anchorHighlightRef = txtPaneHighlighter.addHighlight(sPos, ePos, painters.getAnchorPainter());
+//                        } else if (preAnchorStatus.equals("1")) {
+//                            anchorHighlightRef = txtPaneHighlighter.addHighlight(sPos, ePos, painters.getCompletePainter());
+//                        } else if (preAnchorStatus.equals("-1")) {
+//                            anchorHighlightRef = txtPaneHighlighter.addHighlight(sPos, ePos, painters.getIrrelevantPainter());
+//                        }
+//
+//                        this.topicTextPane.repaint();
+//                        preDONEFlag =
+//                                true;
+//                        if (currDONEFlag && preDONEFlag) {
+//                            break;
+//                        }
+//
+//
+//                    }
+//
+//                }
+//            }
+//        } catch (BadLocationException ex) {
+//            Logger.getLogger(topicPaneMouseListener.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//    }
 
     private void restorePrePoolAnchorHighlight(String prePAnchorS, String prePAnchorE, String prePAnchorStatus) {
         try {

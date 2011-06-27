@@ -454,28 +454,28 @@ public class linkPaneMouseListener implements MouseInputListener {
         }
     }
 
-    private void updateLinkAnchorHighlight(JTextPane linkPane, String[] anchorSEPosSA) {
-        // This might need to handle: isAssessment
-        // 1) YES:
-        // 2) NO: ONLY highlight Anchor Text
-        try {
-            Highlighter txtPaneHighlighter = linkPane.getHighlighter();
-            int[] achorSCRPos = new int[]{Integer.valueOf(anchorSEPosSA[0]), Integer.valueOf(anchorSEPosSA[1])};
-            Object aHighlightRef = txtPaneHighlighter.addHighlight(achorSCRPos[0], achorSCRPos[1], painters.getAnchorPainter());
-            // -----------------------------------------------------------------
-            Document myDoc = linkPane.getDocument();
-            String myContent = myDoc.getText(0, myDoc.getLength()).toLowerCase();
-            String hiltTxt = this.currTopicName.trim();
-            int endIndex = 0;
-            int wordLength = hiltTxt.length();
-            while ((endIndex = myContent.indexOf(hiltTxt, endIndex)) != -1) {
-                aHighlightRef = txtPaneHighlighter.addHighlight(endIndex, endIndex + wordLength, painters.getIrrelevantPainter());
-                log("Topic Title Matched: " + endIndex);
-            }
-        } catch (BadLocationException ex) {
-            Logger.getLogger(topicPaneMouseListener.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }
+//    private void updateLinkAnchorHighlight(JTextPane linkPane, String[] anchorSEPosSA) {
+//        // This might need to handle: isAssessment
+//        // 1) YES:
+//        // 2) NO: ONLY highlight Anchor Text
+//        try {
+//            Highlighter txtPaneHighlighter = linkPane.getHighlighter();
+//            int[] achorSCRPos = new int[]{Integer.valueOf(anchorSEPosSA[0]), Integer.valueOf(anchorSEPosSA[1])};
+//            Object aHighlightRef = txtPaneHighlighter.addHighlight(achorSCRPos[0], achorSCRPos[1], painters.getAnchorPainter());
+//            // -----------------------------------------------------------------
+//            Document myDoc = linkPane.getDocument();
+//            String myContent = myDoc.getText(0, myDoc.getLength()).toLowerCase();
+//            String hiltTxt = this.currTopicName.trim();
+//            int endIndex = 0;
+//            int wordLength = hiltTxt.length();
+//            while ((endIndex = myContent.indexOf(hiltTxt, endIndex)) != -1) {
+//                aHighlightRef = txtPaneHighlighter.addHighlight(endIndex, endIndex + wordLength, painters.getIrrelevantPainter());
+//                log("Topic Title Matched: " + endIndex);
+//            }
+//        } catch (BadLocationException ex) {
+//            Logger.getLogger(topicPaneMouseListener.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//    }
 
 //    private void updateTopicAnchorsHighlight(JTextPane topicPane, String[] preAnchorSEStatus, String[] currAnchorSE) {
 //        // This might need to handle: isAssessment
