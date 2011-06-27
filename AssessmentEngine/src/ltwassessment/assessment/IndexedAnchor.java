@@ -172,6 +172,7 @@ public class IndexedAnchor extends Anchor {
 	}
 	
 	public void setHighlighter(Highlighter txtPaneHighlighter, highlightPainters painters) {
+		assert(this instanceof IndexedAnchor);
 		Object anchorHighlightReference = null;
         int ext_length = getExtendedLength(); 
     	int sp = getScreenPosStart(); 
@@ -204,9 +205,9 @@ public class IndexedAnchor extends Anchor {
     	Object anchorHighlightReference = null;
 
     	int sp = getScreenPosStart(); 
-    	int se = getLength() + getExtendedLength(); 
+    	int se = getScreenPosStart() + getLength() + getExtendedLength(); 
     	
-    	for (Object theHighlightReference : anchorHighlightReferences)
+    	for (Object theHighlightReference : currAnchorSE.getParent().getAnchorHighlightReference())
     		txtPaneHighlighter.removeHighlight(theHighlightReference);
     	
         int sp1 = 0, se1 = 0;
