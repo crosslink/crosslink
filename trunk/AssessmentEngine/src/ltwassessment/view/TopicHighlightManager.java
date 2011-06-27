@@ -44,10 +44,10 @@ public class TopicHighlightManager {
 	
 	public void update(AssessedAnchor preAnchor, AssessedAnchor currAnchor) {
 		if (preAnchor != null) {
-			preAnchor.setHighlighter(txtPaneHighlighter, painters);
+			preAnchor.getParent().setHighlighter(txtPaneHighlighter, painters);
 		}
 		
-		currAnchor.setToCurrentAnchor(txtPaneHighlighter, painters, currAnchor);
+		currAnchor.getParent().setToCurrentAnchor(txtPaneHighlighter, painters, currAnchor);
 		
         pane.getCaret().setDot(currAnchor.getScreenPosEnd());
         pane.scrollRectToVisible(pane.getVisibleRect());

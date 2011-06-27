@@ -249,34 +249,9 @@ public class linkPaneMouseListener implements MouseInputListener {
             String currLinkStatus = "-1";
             this.myPoolUpdater.updateTopicAnchorLinkRel(topicID, currAnchorOLNameStatusSA/*new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1]}*/,
                     currALinkID, currLinkStatus);
+            currALinkOIDSA.setRel(Bep.IRRELEVANT);
             // -----------------------------------------------------------------
             LTWAssessmentToolControler.getInstance().goNextLink(true, true);
-//        } else {
-//            // For incoming TBA
-//            // -----------------------------------------------------------------
-//            String currBepOffset = this.myRSCManager.getCurrTopicBepOffset();
-//            String[] currBLinkOLIDSA = this.myRSCManager.getCurrTopicBTargetOLID(this.myLinkPane, this.topicID);
-//            logger("incoming_singleRightClick_" + currBepOffset + " --> " + currBLinkOLIDSA[2]);
-//            // -----------------------------------------------------------------
-//            String currBLinkStatus = this.myPoolManager.getPoolBepAnchorLinkStatus(topicID, currBepOffset, currBLinkOLIDSA);
-//            if (currBLinkStatus.equals("0")) {
-//                String[] inCompletion = this.myRSCManager.getIncomingCompletion();
-//                String completedLinkN = inCompletion[0];
-//                String totalLinkN = inCompletion[1];
-//                completedLinkN = String.valueOf(Integer.valueOf(completedLinkN) + 1);
-//                this.myRSCManager.updateIncomingCompletion(completedLinkN + " : " + totalLinkN);
-//            }
-//            // -----------------------------------------------------------------
-//            this.myLinkPane.setBackground(this.linkPaneNonRelColor);
-//            this.myLinkPane.repaint();
-//            // -----------------------------------------------------------------
-//            String currLinkStatus = "-1";
-//            this.myPoolUpdater.updateTopicBepLinkRel(topicID, currBepOffset,
-//                    currBLinkOLIDSA, currLinkStatus);
-//            // -----------------------------------------------------------------
-////            log("START NEXT LINK ... ");
-//            goNextLink();
-//        }
     }
     
     private void updateRelevantCompletion(IndexedAnchor currAnchorOLNameStatusSA, String currALinkID) {

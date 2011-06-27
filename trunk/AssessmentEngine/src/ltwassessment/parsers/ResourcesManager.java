@@ -1441,11 +1441,6 @@ public class ResourcesManager {
         Bep firstTABepOID= null;
         Hashtable<String, Vector<Bep>> anchorBepLinksOIDStatus = this.getPoolAnchorBepLinksHashtable();
         Bep thisPABepLinkSet = null;
-//        String bepLinkStartP = "";
-//        String subAnchorName = null;
-//        String subAnchorOffset = null;
-//        String subAnchorLength = null;
-//        String subAnchorRel = null;
         
         boolean firstAnchorFound = false;
         
@@ -1494,11 +1489,6 @@ public class ResourcesManager {
         			thisPABepLinkSet = thisBepLinksVSA.elementAt(j);
         			++j;
         		}
-//                subAnchorName = thisPABepLinkSet.getAssociatedAnchor().getName(); //[5];
-//                subAnchorOffset = thisPABepLinkSet.getAssociatedAnchor().offsetToString(); //[6];
-//                subAnchorLength = thisPABepLinkSet.getAssociatedAnchor().lengthToString(); //[7];
-//                subAnchorRel = thisPABepLinkSet.getAssociatedAnchor().statusToString(); //[8];
-//        		firstTABepOID = new String[]{thisPABepLinkSet.offsetToString()/*[0]*/, bepLinkStartP, thisPABepLinkSet.getFileId()/*[1]*/, thisPABepLinkSet.relString()/*[2]*/, thisPABepLinkSet.getTargetLang()/*[3]*/, thisPABepLinkSet.getTargetTitle()/*[4]*/, subAnchorName, subAnchorOffset, subAnchorLength, subAnchorRel}; //new String[]{thisPABepLinkSet[0], bepLinkStartP, thisPABepLinkSet[1], thisPABepLinkSet[2], thisPABepLinkSet[3], thisPABepLinkSet[4], subAnchorName, subAnchorOffset, subAnchorLength, subAnchorRel};
         		firstTABepOID = thisPABepLinkSet;
         		firstTABepOID.getAssociatedAnchor().setScreenPosStart(Integer.parseInt(thisPAnchorSEStatus[0]));
         		firstTABepOID.getAssociatedAnchor().setScreenPosEnd(Integer.parseInt(thisPAnchorSEStatus[1]));
@@ -1574,59 +1564,16 @@ public class ResourcesManager {
                 else {
                 	pABepIndex = k; //Integer.parseInt(bepLinksOSIDStatus[9]); //pABepCounter;
 	                // =====================================================
-	//                if (pABepIndex == bepLinksVSA.size() - 1) {
-	//                    if (pAnchorIndex == poolAnchorsOLNameStatusVSA.size() - 1) {
-	//                        pAnchorNewIndex = 0;
-	//                        pABepNewIndex = 0;
-	//                    } else if (pAnchorIndex < poolAnchorsOLNameStatusVSA.size() - 1) {
-	//                        pAnchorNewIndex = pAnchorIndex + 1;
-	//                        pABepNewIndex = 0;
-	//                    }
-	//                } else if (pABepIndex < bepLinksVSA.size() - 1) {
-	//                    pAnchorNewIndex = pAnchorIndex;
-	//                    pABepNewIndex = pABepIndex + 1;
-	//                }
 	//                // -----------------------------------------------------
 	//                // Get PoolAnchor O, L, S, E, Status
                 	thisPAnchorOLNameStatus = pAnchorOLNameStatus;
 //	                thisPAnchorOLNameStatus = poolAnchorsOLNameStatusVSA.elementAt(i);
 	                thisPAnchorSEStatus = this.getTopicAnchorSEStatusByOL(topicID, new String[]{thisPAnchorOLNameStatus.offsetToString(), thisPAnchorOLNameStatus.lengthToString()});
-//	                nextTAnchorOL = new String[]{thisPAnchorOLNameStatus.offsetToString(), thisPAnchorOLNameStatus.lengthToString(), thisPAnchorSEStatus[0], thisPAnchorSEStatus[1], thisPAnchorOLNameStatus.statusToString(), thisPAnchorOLNameStatus.extendedLengthToString()};
-	//                // Get TargetBepLink
-	//                // new String[]{tbOffset, tbStartP, tbFileID, tbRel}
-	//                Vector<String[]> thisBepLinksVSA = anchorBepLinksOIDStatus.get(thisPAnchorOLNameStatus.offsetToString() + "_" + thisPAnchorOLNameStatus.lengthToString());
-	//                thisPABepLinkSet = thisBepLinksVSA.elementAt(pABepNewIndex);
 	                thisPABepLinkSet = bepLinksVSA.elementAt(pABepIndex);
 	                nextTAB = thisPABepLinkSet;
 	        		nextTAB.getAssociatedAnchor().setScreenPosStart(Integer.parseInt(thisPAnchorSEStatus[0]));
 	        		nextTAB.getAssociatedAnchor().setScreenPosEnd(Integer.parseInt(thisPAnchorSEStatus[1]));
-//	                bepLinkStartP = "0";
-//	                subAnchorName = null;
-//	                subAnchorOffset = null;
-//	                subAnchorLength = null;
-//	                subAnchorRel = null;
-//                    subAnchorName = thisPABepLinkSet.getAssociatedAnchor().getName(); //[5];
-//                    subAnchorOffset = thisPABepLinkSet.getAssociatedAnchor().offsetToString(); //[6];
-//                    subAnchorLength = thisPABepLinkSet.getAssociatedAnchor().lengthToString(); //[7];
-//                    subAnchorRel = thisPABepLinkSet.getAssociatedAnchor().statusToString(); //[8];
-//                    boolean stop = false;
-	                
-//	                HashMap<String, Vector<IndexedAnchor>> anchorBepLinksHM = pooler.getBepSetByAnchor(topicID);
-//	                Vector<IndexedAnchor> bepLinksOSIDStatusVSA = anchorBepLinksHM.get(pAnchorO + "_" + pAnchorL);
-//                    for (IndexedAnchor anchor : bepLinksOSIDStatusVSA) {
-//	                  	for (Bep bepLinksOSIDS : anchor.getBeps()) {
-//	//                        if (bepLinksOSIDS.offsetToString()/*[0]*/.equals(thisPABepLinkSet.get[0])) {
-//							if (bepLinksOSIDS.getOffset() == thisPABepLinkSet.getOffset())
-//						        bepLinkStartP = bepLinksOSIDS.startPToString(); //[1];
-//	                			stop = true;
-//	                            break;
-//						}
-//						if (stop)
-//							break;
-//                    }
-//                    nextTABepOID = new String[]{thisPABepLinkSet.offsetToString()/*[0]*/, bepLinkStartP, thisPABepLinkSet.getFileId()/*[1]*/, thisPABepLinkSet.relString()/*[2]*/, thisPABepLinkSet.getTargetLang()/*[3]*/, thisPABepLinkSet.getTargetTitle()/*[4]*/, subAnchorName, subAnchorOffset, subAnchorLength, subAnchorRel};	
-//	                nextTAB.add(nextTAnchorOL);
-//	                nextTAB.add(nextTABepOID);
+
 	                
 	                break;
 	//                    }
@@ -1639,8 +1586,6 @@ public class ResourcesManager {
             
 //            pAnchorCounter++;
         }
-        
-        
         
 
         if (nextTAB == null/*nextTAB.size() == 0*/) {

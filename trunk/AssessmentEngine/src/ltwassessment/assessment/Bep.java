@@ -1,6 +1,10 @@
 package ltwassessment.assessment;
 
 public class Bep {
+	public static final int IRRELEVANT = -1;
+	public static final int RELEVANT = 1;
+	public static final int UNASSESSED = 0;
+	
 	private int offset;
 	private int startP;
 	
@@ -16,6 +20,8 @@ public class Bep {
 	AssessedAnchor associatedAnchor = null;
 	
 	public Bep(int offset, int startP, String tbFileID, int rel) {
+		init();
+		
 		this.offset = offset;
 		this.startP = startP;
 		this.fileId = tbFileID;
@@ -23,6 +29,8 @@ public class Bep {
 	}
 	
 	public Bep(String offset, String startP, String tbFileID, String rel) {
+		init();
+		
 		this.offset = Integer.parseInt(offset);
 		this.startP = Integer.parseInt(startP);
 		this.fileId = tbFileID;
@@ -31,6 +39,8 @@ public class Bep {
 	
 	public Bep(String tbFileID, int tbOffset, String target_lang,
 			String target_title) {
+		init();
+		
 		this.fileId = tbFileID;
 		this.offset = tbOffset;
 		this.targetLang = target_lang;
@@ -38,7 +48,11 @@ public class Bep {
 	}
 	
 	public Bep() {
-		
+		init();
+	}
+	
+	private void init() {
+		rel = UNASSESSED;
 	}
 
 	public int getOffset() {
