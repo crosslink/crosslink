@@ -5,6 +5,11 @@ import java.util.Observer;
 import java.util.Vector;
 import javax.swing.JLabel;
 
+import ltwassessment.Assessment;
+import ltwassessment.assessment.Bep;
+
+import ltwassessment.parsers.ResourcesManager;
+
 /**
  * @author Darren HUANG
  */
@@ -39,25 +44,30 @@ public class fieldUpdateObserver implements Observer {
 
     public void update(Observable ov, Object obj) {
         if (this.myObservableSingleton == ov) {
-            Vector<String> tablblFieldSet = (Vector<String>) obj;
+            Bep tablblFieldSet = (Bep) obj;
             renewTABFieldLabels(tablblFieldSet);
         }
     }
 
-    private void renewTABFieldLabels(Vector<String> tablblFieldSet) {
+    private void renewTABFieldLabels(Bep bep) {
 //        if (tablblFieldSet.size() >= 1) {
 //            this.lblTargetTitle.setText(tablblFieldSet.elementAt(3).toString());
 //        }
 //        if (tablblFieldSet.size() >= 2) {
 //            this.lblAnchor.setText(tablblFieldSet.elementAt(2).toString());
 //        }
-        if (tablblFieldSet.size() == 6) {
-            this.lblTopicTitle.setText(tablblFieldSet.elementAt(0).toString());
-            this.lblTopicID.setText(tablblFieldSet.elementAt(1).toString());
-            this.lblAnchor.setText(tablblFieldSet.elementAt(2).toString());
-            this.lblTargetID.setText(tablblFieldSet.elementAt(3).toString());
-            this.lblTargetTitle.setText(tablblFieldSet.elementAt(4).toString());
-            this.lblCompletion.setText(tablblFieldSet.elementAt(5).toString());
-        }
+//        if (tablblFieldSet.size() == 6) {
+        String[] outCompletionRatio = ResourcesManager.getInstance().getOutgoingCompletion();
+        
+        this.lblTopicTitle.setText(Assessment.getInstance().getCurrentTopic().getTitle());
+        this.lblTopicID.setText(Assessment.getInstance().getCurrentTopic().getId());
+        
+        
+        this.lblAnchor.setText(bep.getAssociatedAnchor().getName());
+        this.lblTargetID.setText(bep.getFileId());
+        this.lblTargetTitle.setText(bep.getTargetTitle());
+//            this.lblCompletion.setText(tablblFieldSet.elementAt(5).toString());
+        this.lblTargetTitle.setText(outCompletionRatio + " / " + outCompletionRatio[1]);
+//        }
     }
 }

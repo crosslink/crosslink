@@ -256,4 +256,19 @@ public class IndexedAnchor extends Anchor {
 	        Logger.getLogger(TopicHighlightManager.class.getName()).log(Level.SEVERE, null, ex);
 	    } 
 	}
+	
+	public AssessedAnchor getNext(AssessedAnchor currentAnchor) {
+    	int i = 0;
+    	for (; i < getChildrenAnchors().size(); ++i) {
+    		AssessedAnchor anchor = getChildrenAnchors().get(i);
+    		if (anchor == currentAnchor) {
+    			++i;
+    			break;
+    		}
+    	}
+    	if (i >= getChildrenAnchors().size())
+    		i = 0;
+    	
+    	return getChildrenAnchors().get(i);
+	}
 }
