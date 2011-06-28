@@ -107,9 +107,9 @@ public class LTWAssessmentToolView extends FrameView {
     private Hashtable<String, Vector<String[]>> topicBepsHT = new Hashtable<String, Vector<String[]>>();
 //    private Hashtable<String, String[]> topicAnchorOLTSENHT = new Hashtable<String, String[]>();
     // -------------------------------------------------------------------------
-    private static Color linkPaneWhiteColor = Color.WHITE;
-    private static Color linkPaneRelColor = new Color(168, 232, 177);
-    private static Color linkPaneNonRelColor = new Color(255, 183, 165);
+//    private static Color linkPaneWhiteColor = Color.WHITE;
+//    private static Color linkPaneRelColor = new Color(168, 232, 177);
+//    private static Color linkPaneNonRelColor = new Color(255, 183, 165);
     // -------------------------------------------------------------------------
     private static String bepIconImageFilePath = "";
     private static String bepIconCompleted = "";
@@ -880,39 +880,39 @@ public class LTWAssessmentToolView extends FrameView {
         // =================================================================
         // Link Pane
         // =================================================================
-        String bepXmlFilePath = myPooler.getXmlFilePathByTargetID(bep.getFileId(), bep.getTargetLang());
-        if (bepXmlFilePath.startsWith(afTasnCollectionErrors)) {
-            bepXmlFilePath = rscManager.getErrorXmlFilePath(bepXmlFilePath);
-        }
-        Xml2Html xmlParser = new Xml2Html(bepXmlFilePath, Boolean.valueOf(System.getProperty(LTWAssessmentToolControler.sysPropertyIsLinkWikiKey)));
-        String xmlHtmlText = xmlParser.getHtmlContent().toString();
-        linkTextPane.setContentType(textContentType);
-        linkTextPane.setText(xmlHtmlText);
-        linkTextPane.setCaretPosition(0);
-        // -------------------------------------------------------------
-        // -------------------------------------------------------------
-        int screenAnchorStatus = Integer.valueOf(bep.getAssociatedAnchor().getStatus());
-        int linkStatus = bep.getRel(); //Integer.valueOf(link.getStatus());
-        if (screenAnchorStatus == 1 || screenAnchorStatus == 0) {
-            if (linkStatus == 1) {
-                // Relevant --> Insert BEP --> BG = Green
-                Vector<String> bepSCROffset = new Vector<String>();
-                bepSCROffset.add(String.valueOf(bep.getStartP()));
-                boolean isTopicBEP = false;
-                updatePaneBepIcon(linkTextPane, bepSCROffset, isTopicBEP);
-                linkTextPane.getCaret().setDot(bep.getStartP());
-                linkTextPane.scrollRectToVisible(linkTextPane.getVisibleRect());
-                linkTextPane.setBackground(linkPaneRelColor);
-            } else if (linkStatus == -1) {
-                linkTextPane.setBackground(linkPaneNonRelColor);
-            } else if (linkStatus == 0) {
-                linkTextPane.setBackground(linkPaneWhiteColor);
-            }
-            linkTextPane.repaint();
-        } else if (screenAnchorStatus == -1) {
-            linkTextPane.setBackground(linkPaneNonRelColor);
-            linkTextPane.repaint();
-        }    	
+//        String bepXmlFilePath = myPooler.getXmlFilePathByTargetID(bep.getFileId(), bep.getTargetLang());
+//        if (bepXmlFilePath.startsWith(afTasnCollectionErrors)) {
+//            bepXmlFilePath = rscManager.getErrorXmlFilePath(bepXmlFilePath);
+//        }
+//        Xml2Html xmlParser = new Xml2Html(bepXmlFilePath, Boolean.valueOf(System.getProperty(LTWAssessmentToolControler.sysPropertyIsLinkWikiKey)));
+//        String xmlHtmlText = xmlParser.getHtmlContent().toString();
+//        linkTextPane.setContentType(textContentType);
+//        linkTextPane.setText(xmlHtmlText);
+//        linkTextPane.setCaretPosition(0);
+//        // -------------------------------------------------------------
+//        // -------------------------------------------------------------
+//        int screenAnchorStatus = Integer.valueOf(bep.getAssociatedAnchor().getStatus());
+//        int linkStatus = bep.getRel(); //Integer.valueOf(link.getStatus());
+//        if (screenAnchorStatus == 1 || screenAnchorStatus == 0) {
+//            if (linkStatus == 1) {
+//                // Relevant --> Insert BEP --> BG = Green
+//                Vector<String> bepSCROffset = new Vector<String>();
+//                bepSCROffset.add(String.valueOf(bep.getStartP()));
+//                boolean isTopicBEP = false;
+//                updatePaneBepIcon(linkTextPane, bepSCROffset, isTopicBEP);
+//                linkTextPane.getCaret().setDot(bep.getStartP());
+//                linkTextPane.scrollRectToVisible(linkTextPane.getVisibleRect());
+//                linkTextPane.setBackground(linkPaneRelColor);
+//            } else if (linkStatus == -1) {
+//                linkTextPane.setBackground(linkPaneNonRelColor);
+//            } else if (linkStatus == 0) {
+//                linkTextPane.setBackground(linkPaneWhiteColor);
+//            }
+//            linkTextPane.repaint();
+//        } else if (screenAnchorStatus == -1) {
+//            linkTextPane.setBackground(linkPaneNonRelColor);
+//            linkTextPane.repaint();
+//        }    	
         // -------------------------------------------------------------
         // -------------------------------------------------------------
 //        String currAnchorName = myPooler.getPoolAnchorNameByOL(currTopicID, new String[]{String.valueOf(screenAnchor.getOffset()), String.valueOf(screenAnchor.getLength())});
@@ -1266,13 +1266,13 @@ public class LTWAssessmentToolView extends FrameView {
     private void setTBALinkPaneContent(String xmlFilePath, String bgStatus, String lang) {
         if (!xmlFilePath.equals("")) {
             createLinkTextPane(xmlFilePath, lang);
-            if (bgStatus.equals("-1")) {
-                this.linkTextPane.setBackground(this.linkPaneNonRelColor);
-            } else if (bgStatus.equals("0")) {
-                this.linkTextPane.setBackground(this.linkPaneWhiteColor);
-            } else if (bgStatus.equals("1")) {
-                this.linkTextPane.setBackground(this.linkPaneRelColor);
-            }
+//            if (bgStatus.equals("-1")) {
+//                this.linkTextPane.setBackground(this.linkPaneNonRelColor);
+//            } else if (bgStatus.equals("0")) {
+//                this.linkTextPane.setBackground(this.linkPaneWhiteColor);
+//            } else if (bgStatus.equals("1")) {
+//                this.linkTextPane.setBackground(this.linkPaneRelColor);
+//            }
         } else {
             this.linkTextPane.setContentType(textContentType);
             this.linkTextPane.setText("<b>The target file is missing or specified wrongly!!!</b>");
@@ -1313,16 +1313,16 @@ public class LTWAssessmentToolView extends FrameView {
                 Logger.getLogger(topicPaneMouseListener.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
-        if (Integer.valueOf(currTopicPAnchorStatus) == -1) {
-            this.linkTextPane.setBackground(this.linkPaneNonRelColor);
-        } else {
-            if (Integer.valueOf(bepStatus) == -1) {
-                this.linkTextPane.setBackground(this.linkPaneNonRelColor);
-            } else if (Integer.valueOf(bepStatus) == 1) {
-                this.linkTextPane.setBackground(this.linkPaneRelColor);
-            }
-        }
-        this.linkTextPane.repaint();
+//        if (Integer.valueOf(currTopicPAnchorStatus) == -1) {
+//            this.linkTextPane.setBackground(this.linkPaneNonRelColor);
+//        } else {
+//            if (Integer.valueOf(bepStatus) == -1) {
+//                this.linkTextPane.setBackground(this.linkPaneNonRelColor);
+//            } else if (Integer.valueOf(bepStatus) == 1) {
+//                this.linkTextPane.setBackground(this.linkPaneRelColor);
+//            }
+//        }
+//        this.linkTextPane.repaint();
     }
     // -------------------------------------------------------------------------
     // Link Pane: Anchor
