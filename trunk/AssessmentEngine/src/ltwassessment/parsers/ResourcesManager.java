@@ -1423,8 +1423,8 @@ public class ResourcesManager {
         String[] nextTAnchorOL = null;
         String[] nextTABepOID = null;
         // Format: new String[]{0, 1_2_0_0}
-        int pAnchorO = pAnchorOLSA.getOffset(); //Integer.valueOf(pAnchorOLSA[0]);
-        int pAnchorL = pAnchorOLSA.getLength(); //Integer.valueOf(pAnchorOLSA[1]);
+        int pAnchorO = pAnchorOLSA.getParent().getOffset(); //Integer.valueOf(pAnchorOLSA[0]);
+        int pAnchorL = pAnchorOLSA.getParent().getLength(); //Integer.valueOf(pAnchorOLSA[1]);
         String linkBepID = currALinkOIDSA.getFileId(); //[1];
         // String[]{anchor Offset, Length, Name, arel}
         int pAnchorFirstIndex = 0;
@@ -1566,13 +1566,13 @@ public class ResourcesManager {
 	                // =====================================================
 	//                // -----------------------------------------------------
 	//                // Get PoolAnchor O, L, S, E, Status
-                	thisPAnchorOLNameStatus = pAnchorOLNameStatus;
+//                	thisPAnchorOLNameStatus = pAnchorOLNameStatus;
 //	                thisPAnchorOLNameStatus = poolAnchorsOLNameStatusVSA.elementAt(i);
-	                thisPAnchorSEStatus = this.getTopicAnchorSEStatusByOL(topicID, new String[]{thisPAnchorOLNameStatus.offsetToString(), thisPAnchorOLNameStatus.lengthToString()});
+//	                thisPAnchorSEStatus = this.getTopicAnchorSEStatusByOL(topicID, new String[]{thisPAnchorOLNameStatus.offsetToString(), thisPAnchorOLNameStatus.lengthToString()});
 	                thisPABepLinkSet = bepLinksVSA.elementAt(pABepIndex);
 	                nextTAB = thisPABepLinkSet;
-	        		nextTAB.getAssociatedAnchor().setScreenPosStart(Integer.parseInt(thisPAnchorSEStatus[0]));
-	        		nextTAB.getAssociatedAnchor().setScreenPosEnd(Integer.parseInt(thisPAnchorSEStatus[1]));
+//	        		nextTAB.getAssociatedAnchor().setScreenPosStart(Integer.parseInt(thisPAnchorSEStatus[0]));
+//	        		nextTAB.getAssociatedAnchor().setScreenPosEnd(Integer.parseInt(thisPAnchorSEStatus[1]));
 
 	                
 	                break;
