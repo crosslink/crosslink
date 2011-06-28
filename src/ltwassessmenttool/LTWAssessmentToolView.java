@@ -859,14 +859,13 @@ public class LTWAssessmentToolView extends FrameView {
             poolAnchorStatus = rscManager.getPoolAnchorCompletedStatus(currTopicID, currentAnchor);
         }
         myPUpdater.updatePoolAnchorStatus(currTopicID, currentAnchor.getParent()/*currPAnchorOLSA*/, String.valueOf(poolAnchorStatus));
-        topicTextPane.getCaret().setDot(Integer.valueOf(currentAnchor.getScreenPosEnd()));
-        topicTextPane.scrollRectToVisible(topicTextPane.getVisibleRect());
-        topicTextPane.repaint();
-        
-	//      TopicHighlightManager.getInstance().update(currentAnchor, nextAnchor);
-	CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(currentAnchor, nextAnchor, nextAnchorBepLinkVSA);
+//        topicTextPane.getCaret().setDot(Integer.valueOf(currentAnchor.getScreenPosEnd()));
+//        topicTextPane.scrollRectToVisible(topicTextPane.getVisibleRect());
+//        topicTextPane.repaint();
+//        
+//	//      TopicHighlightManager.getInstance().update(currentAnchor, nextAnchor);
     }
-
+		CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(currentAnchor, nextAnchor, nextAnchorBepLinkVSA);
         updateFields(nextAnchorBepLinkVSA);
     }
     
