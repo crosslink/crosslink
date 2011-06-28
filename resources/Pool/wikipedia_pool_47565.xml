@@ -2282,8 +2282,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Son of God">28170</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="汉" aoffset="1755" alength="1" ext_length="2">
-				<subanchor sarel="0" saname="汉" saoffset="1755" salength="1" rank="52">
+			<anchor arel="-1" aname="汉" aoffset="1755" alength="1" ext_length="2">
+				<subanchor sarel="-1" saname="汉" saoffset="1755" salength="1" rank="52">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Han Han">21553573</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Han (surname)">5432856</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Kangxi radicals">1709013</tobep>
@@ -2302,7 +2302,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Han (Korean name)">12067230</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Han (name)">10171448</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="汉诺" saoffset="1755" salength="2" rank="59">
+				<subanchor sarel="-1" saname="汉诺" saoffset="1755" salength="2" rank="59">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hanno the Great">446236</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hanno, son of Bomilcar">6776170</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hanno">397240</tobep>
@@ -2315,7 +2315,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hanno Rund">8666496</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="汉诺塔" saoffset="1755" salength="3" rank="3">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of tallest buildings in Vietnam">27204809</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of tallest buildings in Vietnam">27204809</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Flag Tower of Hanoi">5790785</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Lotte Center Hanoi">27597352</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tower of Hanoy">1914696</tobep>

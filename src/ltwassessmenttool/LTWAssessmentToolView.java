@@ -173,6 +173,7 @@ public class LTWAssessmentToolView extends FrameView {
         linkTextPane = thisLinkTextPane;
     	
     	TopicHighlightManager.getInstance().setPane(thisTopicTextPane);
+    	TopicHighlightManager.getInstance().setLinkPane(thisLinkTextPane);
         
         group.add(outRadioBtn);
         group.add(inRadioBtn);
@@ -842,59 +843,38 @@ public class LTWAssessmentToolView extends FrameView {
 
     private static void updateAnchorChanges(Bep nextAnchorBepLinkVSA, Bep currALinkOIDSA) {
 
-        updateAnchor(currALinkOIDSA.getAssociatedAnchor()/*currTopicOLSEStatusSA*/, nextAnchorBepLinkVSA.getAssociatedAnchor());
+    	AssessedAnchor currentAnchor = currALinkOIDSA.getAssociatedAnchor();
+    	AssessedAnchor nextAnchor = nextAnchorBepLinkVSA.getAssociatedAnchor();
+    	
+//        updateAnchor(/*currTopicOLSEStatusSA*/, );
+        int currPAnchorStatus = Integer.parseInt(myPooler.getPoolAnchorStatus(currTopicID, currentAnchor));
+//      String[] targetAnchorScreenInfo = new String[]{"", currentAnchor.screenPosStartToString(), currentAnchor.screenPosEndToString(), 
+//		currentAnchor.extendedLengthToString(), currentAnchor.screenPosStartToString(), currentAnchor.screenPosEndToString()};
+//if (!targetAnchorScreenInfo[4].equals(currPAnchorS) || !targetAnchorScreenInfo[5].equals(currPAnchorE)) {
+    if (currentAnchor != nextAnchor) {
+        int poolAnchorStatus = 0;
+        if (currPAnchorStatus != 0){
+            poolAnchorStatus = currPAnchorStatus;
+        } else {
+            poolAnchorStatus = rscManager.getPoolAnchorCompletedStatus(currTopicID, currentAnchor);
+        }
+        myPUpdater.updatePoolAnchorStatus(currTopicID, currentAnchor.getParent()/*currPAnchorOLSA*/, String.valueOf(poolAnchorStatus));
+        topicTextPane.getCaret().setDot(Integer.valueOf(currentAnchor.getScreenPosEnd()));
+        topicTextPane.scrollRectToVisible(topicTextPane.getVisibleRect());
+        topicTextPane.repaint();
+        
+	//      TopicHighlightManager.getInstance().update(currentAnchor, nextAnchor);
+	CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(currentAnchor, nextAnchor, nextAnchorBepLinkVSA);
+    }
 
         updateFields(nextAnchorBepLinkVSA);
     }
     
-    private static void updateAnchor(AssessedAnchor currentAnchor, AssessedAnchor nextAnchor) {
-//        String currPAnchorO = assessedAnchor[0];
-//        String currPAnchorL = assessedAnchor[1];
-//        String[] currPAnchorOLSA = new String[]{currPAnchorO, currPAnchorL};
-//        String currPAnchorS = assessedAnchor[2];
-//        String currPAnchorE = assessedAnchor[3];
-//        String currPAnchorExt = assessedAnchor[5];
-
-        int currPAnchorStatus = Integer.parseInt(myPooler.getPoolAnchorStatus(currTopicID, currentAnchor));
-//        String[] targetAnchorScreenInfo = new String[]{"", currentAnchor.screenPosStartToString(), currentAnchor.screenPosEndToString(), 
-//        			currentAnchor.extendedLengthToString(), currentAnchor.screenPosStartToString(), currentAnchor.screenPosEndToString()};
-//        if (!targetAnchorScreenInfo[4].equals(currPAnchorS) || !targetAnchorScreenInfo[5].equals(currPAnchorE)) {
-        if (currentAnchor != nextAnchor) {
-//            int extLength = Integer.parseInt(currPAnchorExt);
-//            if (extLength > 0)
-//            	currPAnchorE = String.valueOf(Integer.parseInt(currPAnchorE) + extLength);
-            // Highlight Anchor/BEP + Auto Scrolling
-            // String[]{Name, SP, EP, extLength, subSP, subEP}
-//            updateTopicAnchorsHighlight(topicTextPane, currentAnchor/*new String[]{currPAnchorS, currPAnchorE, currPAnchorStatus, currPAnchorExt}*/, nextAnchor, currentAnchor.getStatus());
-            TopicHighlightManager.getInstance().update(currentAnchor, nextAnchor);
-//            if (currentAnchor.getOffset() != Integer.parseInt(currPAnchorO)) {
-//          if (currPALinkStatus.equals("-1")) {
-//              if (currPAnchorStatus.equals("-1")) {
-//                  poolAnchorStatus = currPAnchorStatus;
-//              } else {
-//                  poolAnchorStatus = this.myRSCManager.getPoolAnchorCompletedStatus(topicID, currPAnchorOLSA);
-//              }
-//          } else {
-//              poolAnchorStatus = this.myRSCManager.getPoolAnchorCompletedStatus(topicID, currPAnchorOLSA);
-//          }
-//          this.myPoolUpdater.updatePoolAnchorStatus(topicID, currPAnchorOLSA, poolAnchorStatus);
-                int poolAnchorStatus = 0;
-                if (currPAnchorStatus != 0){
-                    poolAnchorStatus = currPAnchorStatus;
-                } else {
-                    poolAnchorStatus = rscManager.getPoolAnchorCompletedStatus(currTopicID, currentAnchor);
-                }
-                myPUpdater.updatePoolAnchorStatus(currTopicID, currentAnchor.getParent()/*currPAnchorOLSA*/, String.valueOf(poolAnchorStatus));
-                topicTextPane.getCaret().setDot(Integer.valueOf(currentAnchor.getScreenPosEnd()));
-                topicTextPane.scrollRectToVisible(topicTextPane.getVisibleRect());
-                topicTextPane.repaint();
-            
-            // update System Property
-            CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(nextAnchor);
-        }
-//            CurrentFocusedAnchor.getCurrentFocusedAnchor().setCurrentAnchorProperty(indexedAnchor.getOffset(), indexedAnchor.getLength(), Integer.parseInt(indexedAnchor.getScreenPosStart()), Integer.parseInt(indexedAnchor.getScreenPosEnd()), Integer.parseInt(indexedAnchor.getStatus()), indexedAnchor.getExtLength());
-//        }
-    }
+//    private static void updateAnchor(AssessedAnchor currentAnchor, AssessedAnchor nextAnchor) {
+//
+////            CurrentFocusedAnchor.getCurrentFocusedAnchor().setCurrentAnchorProperty(indexedAnchor.getOffset(), indexedAnchor.getLength(), Integer.parseInt(indexedAnchor.getScreenPosStart()), Integer.parseInt(indexedAnchor.getScreenPosEnd()), Integer.parseInt(indexedAnchor.getStatus()), indexedAnchor.getExtLength());
+////        }
+//    }
     
     private static void updateFields(Bep bep) {
         // =================================================================
@@ -961,15 +941,15 @@ public class LTWAssessmentToolView extends FrameView {
 //        if (isTABOutgoing) {
             // <editor-fold defaultstate="collapsed" desc="Update TAB Topic, Link">
             // =================================================================
-            String[] currTopicOLSEStatusSA = CurrentFocusedAnchor.getCurrentFocusedAnchor().toArray();
-            String currPAnchorO = currTopicOLSEStatusSA[0];
-            String currPAnchorL = currTopicOLSEStatusSA[1];
-            String[] currPAnchorOLSA = new String[]{currPAnchorO, currPAnchorL};
-            // -----------------------------------------------------------------
-            Bep currALinkOIDSA = rscManager.getCurrTopicATargetOID(thisLinkTextPane, currTopicID);
-            String currALinkO = currALinkOIDSA.offsetToString(); //[0];
-            String currALinkID = currALinkOIDSA.getFileId(); //[1];
-            String[] currPALinkOIDSA = new String[]{currALinkO, currALinkID};
+//            String[] currTopicOLSEStatusSA = CurrentFocusedAnchor.getCurrentFocusedAnchor().toArray();
+//            String currPAnchorO = currTopicOLSEStatusSA[0];
+//            String currPAnchorL = currTopicOLSEStatusSA[1];
+//            String[] currPAnchorOLSA = new String[]{currPAnchorO, currPAnchorL};
+//            // -----------------------------------------------------------------
+            Bep currALinkOIDSA = CurrentFocusedAnchor.getCurrentFocusedAnchor().getCurrentBep(); //rscManager.getCurrTopicATargetOID(thisLinkTextPane, currTopicID);
+//            String currALinkO = currALinkOIDSA.offsetToString(); //[0];
+//            String currALinkID = currALinkOIDSA.getFileId(); //[1];
+//            String[] currPALinkOIDSA = new String[]{currALinkO, currALinkID};
 
 //          String currALinkStatus = myPooler.getPoolAnchorBepLinkStatus(currTopicID, currPAnchorOLSA, currALinkID);
             // =================================================================
@@ -991,19 +971,21 @@ public class LTWAssessmentToolView extends FrameView {
 //        boolean isTABOutgoing = Boolean.valueOf(System.getProperty(sysPropertyIsTABKey));
 //        if (isTABOutgoing) {
             // <editor-fold defaultstate="collapsed" desc="Update TAB Topic, Link">
-            String[] currTopicOLSEStatusSA = CurrentFocusedAnchor.getCurrentFocusedAnchor().toArray();
-            String currPAnchorO = currTopicOLSEStatusSA[0];
-            String currPAnchorL = currTopicOLSEStatusSA[1];
-            String[] currPAnchorOLSA = new String[]{currPAnchorO, currPAnchorL};
-            Bep currALinkOIDSA = rscManager.getCurrTopicATargetOID(linkTextPane, currTopicID);
-            String currALinkOffset = currALinkOIDSA.offsetToString(); //[0];
-            String currALinkID = currALinkOIDSA.getFileId(); //[1];
-            String[] currPALinkOIDSA = new String[]{currALinkOffset, currALinkID};
+//            String[] currTopicOLSEStatusSA = CurrentFocusedAnchor.getCurrentFocusedAnchor().toArray();
+//            String currPAnchorO = currTopicOLSEStatusSA[0];
+//            String currPAnchorL = currTopicOLSEStatusSA[1];
+//            String[] currPAnchorOLSA = new String[]{currPAnchorO, currPAnchorL};
+//            Bep currALinkOIDSA = rscManager.getCurrTopicATargetOID(linkTextPane, currTopicID);
+//            String currALinkOffset = currALinkOIDSA.offsetToString(); //[0];
+//            String currALinkID = currALinkOIDSA.getFileId(); //[1];
+//            String[] currPALinkOIDSA = new String[]{currALinkOffset, currALinkID};
             
             IndexedAnchor poolAnchor = CurrentFocusedAnchor.getCurrentFocusedAnchor().getAnchor().getParent();
+            Bep currentBep = CurrentFocusedAnchor.getCurrentFocusedAnchor().getCurrentBep();
             if (updateCurrAnchorStatus) {
-            	String currPALinkStatus = myPooler.getPoolAnchorBepLinkStatus(currTopicID, poolAnchor, currALinkID);
+            	String currPALinkStatus = myPooler.getPoolAnchorBepLinkStatus(currTopicID, poolAnchor, currentBep.getFileId());
             	int currPAnchorStatus = Integer.parseInt(myPooler.getPoolAnchorStatus(currTopicID, poolAnchor));
+            	poolAnchor.setStatus(currPAnchorStatus);
             	int poolAnchorStatus = 0;
             	if (currPALinkStatus.equals("-1")) {
             		if (currPAnchorStatus == -1) {
@@ -1020,9 +1002,9 @@ public class LTWAssessmentToolView extends FrameView {
             // -------------------------------------------------------------
             // 1) Get the NEXT Anchor O, L, S, E, Status + its BEP link O, S, ID, Status
             //    With TAB Nav Update --> NEXT TAB
-            Bep nextAnchorBepLinkVSA = rscManager.getNextTABWithUpdateNAV(currTopicID, CurrentFocusedAnchor.getCurrentFocusedAnchor().getAnchor(), currALinkOIDSA, nextUnassessed);
+            Bep nextAnchorBepLinkVSA = rscManager.getNextTABWithUpdateNAV(currTopicID, CurrentFocusedAnchor.getCurrentFocusedAnchor().getAnchor(), currentBep, nextUnassessed);
 
-            updateAnchorChanges(nextAnchorBepLinkVSA, currALinkOIDSA);
+            updateAnchorChanges(nextAnchorBepLinkVSA, currentBep);
             return nextAnchorBepLinkVSA;
     }
 
@@ -1197,123 +1179,15 @@ public class LTWAssessmentToolView extends FrameView {
          * Step 5
          * 
          ************************************************************************/
-        TopicHighlightManager.getInstance().update(null, CurrTopicATargetOID.getAssociatedAnchor());
-        
+//        TopicHighlightManager.getInstance().update(null, CurrTopicATargetOID.getAssociatedAnchor());
+        CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(null, CurrTopicATargetOID.getAssociatedAnchor(), CurrTopicATargetOID);
 
         setTABLinkPaneContent(currTargetFilePath, currTargetLang);
         // bep_Offset, linkID, Status
         String[] CurrTopicATargetSIDStatus = rscManager.getCurrTopicABepSIDStatusSA(thisLinkTextPane, currTopicID);
         setLinkBEPIcon(currTopicPAnchorStatus, CurrTopicATargetSIDStatus);
-        
-        
-        // ---------------------------------------------------------------------
-        CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(CurrTopicATargetOID.getAssociatedAnchor());
-//        CurrentFocusedAnchor.getCurrentFocusedAnchor().setCurrentAnchorProperty(currTopicOLNameSEStatus[0], currTopicOLNameSEStatus[1], currTopicOLNameSEStatus[3], currTopicOLNameSEStatus[4], currTopicOLNameSEStatus[5], currTopicOLNameSEStatus[6]);
-//        String currTopicOLSEStatusKey = currTopicOLNameSEStatus[0] + "_" + currTopicOLNameSEStatus[1] + "_" + currTopicOLNameSEStatus[3] + "_" + currTopicOLNameSEStatus[4] + "_" + currTopicOLNameSEStatus[5] + "_" + currTopicOLNameSEStatus[6];
-//        System.setProperty(sysPropertyCurrTopicOLSEStatusKey, currTopicOLSEStatusKey);
-        // ---------------------------------------------------------------------
-//        String currAnchorName = CurrentFocusedAnchor.getCurrentFocusedAnchor().getAnchor().getName(); //myPooler.getPoolAnchorNameByOL(currTopicID, currSCRSEName/*new String[]{currTopicOLNameSEStatus[0], currTopicOLNameSEStatus[1]}*/);
-//        Vector<String> newTABFieldValues = new Vector<String>();
-//        newTABFieldValues.add(currTopicName);
-//        newTABFieldValues.add(currTopicID);
-//        newTABFieldValues.add(currAnchorName);
-//        newTABFieldValues.add(currTargetID);
-////        if (Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey))) {
-//        //    pageTitle = rscManager.getWikipediaPageTitle(currTargetID);
-////        } else {
-////            pageTitle = rscManager.getTeAraFilePathByName(currTargetID);
-////        }
-//        newTABFieldValues.add(pageTitle.trim());
-//        String[] pAnchorCompletionSA = rscManager.getOutgoingCompletion();
-//        newTABFieldValues.add(pAnchorCompletionSA[0] + " / " + pAnchorCompletionSA[1]);
 
     }
-    // =========================================================================
-    // Incoming Links: T.B.A.
-    // =========================================================================
-
-//    private void setIncomingTBA() {
-//        System.setProperty(sysPropertyIsTABKey, "false");
-//        rscManager.updateLinkingMode("incoming");
-//        // Hashtable<incoming : topicFile>: [0]:Offset
-//        // Hashtable<String, Hashtable<String, Vector<String[]>>>
-//        topicBepsHT = myPooler.getTopicAllBeps();
-//        // ---------------------------------------------------------------------
-//        // 1) Get Topic ID & xmlFile Path
-//        //    SET Topic Text Pane Content
-//        // 2) Get all Anchor Text SCR SE + Status
-//        //    SET Highlighter + Curr Anchor Text
-//        // 3) Get Target Link
-//        //    1st un-assessed Link, belonging to Curr Anchor Text
-//        currTopicID = rscManager.getTopicID();
-//        currTopicFilePath = rscManager.getCurrTopicXmlFile();
-//        setTopicPaneContent(currTopicFilePath);
-//
-//
-//        // ---------------------------------------------------------------------
-//        // For 1st time to get the ANCHOR OL name SE
-////        String topicBepsHTPrefix = "incoming : ";
-////        Vector<String[]> currBepXMLOffset = topicBepsHT.get(topicBepsHTPrefix + currTopicID);
-////        FOLTXTMatcher folMatcher = FOLTXTMatcher.getInstance();
-////        folMatcher.getBepSCRSPVS(this.topicTextPane, currTopicID, currBepXMLOffset, this.isTopicWikipedia);
-//        // ---------------------------------------------------------------------
-//
-//
-//        // set Topic Bep ICONs
-//        // V - String[]{Bep_Offset, S, Status}
-//        topicBepScrStatus = rscManager.getTopicBepOSStatusVSA();
-//        String currBepStartP = rscManager.getCurrTopicBepSCRS(this.topicTextPane, currTopicID);
-//        // String[]{Bep_Offset, Status}
-//        String[] currBepOStatus = rscManager.getCurrTopicBepOffsetStatus().split("_");
-//        String topicBepStatus = currBepOStatus[1];
-//        setTopicBEPIcon(topicBepScrStatus, currBepOStatus[0]);
-//        // ---------------------------------------------------------------------
-//        // Get current Link file ID & SCR Anchor S-E
-//        String[] CurrTopicBTargetOLID = rscManager.getCurrTopicBTargetOLID(linkTextPane, currTopicID);
-//        String currTargetOffset = CurrTopicBTargetOLID[0];
-//        String currTargetLength = CurrTopicBTargetOLID[1];
-//        String currTargetID = CurrTopicBTargetOLID[2];
-//        String currTargetFilePath = "";
-////        if (this.isLinkWikipedia) {
-//            currTargetFilePath = rscManager.getWikipediaFilePathByName(currTargetID + ".xml");
-////        } else {
-////            currTargetFilePath = rscManager.getTeAraFilePathByName(currTargetID + ".xml");
-////        }
-//        String currBALinkStatus = this.myPooler.getPoolBepAnchorLinkStatus(currTopicID, currBepOStatus[0], new String[]{currTargetOffset, currTargetLength, currTargetID});
-//        String toBALinkStatus = "";
-//        if (topicBepStatus.equals("-1")) {
-//            toBALinkStatus = "-1";
-//        } else {
-//            toBALinkStatus = currBALinkStatus;
-//        }
-//        setTBALinkPaneContent(currTargetFilePath, toBALinkStatus);
-//        // String[]{Anchor_SP, EP, File_ID, Status}
-//        String[] CurrTopicBTargetSEIDStatus = rscManager.getCurrTopicBAnchorSEIDStatus(linkTextPane, currTopicID);
-//        setLinkAnchorHighlighter(CurrTopicBTargetSEIDStatus);
-//        // ---------------------------------------------------------------------
-//        String currTopicOLSEStatusKey = currBepOStatus[0] + "_" + bepLength + "_" + currBepStartP + "_" + String.valueOf(Integer.valueOf(currBepStartP) + Integer.valueOf(bepLength)) + "_" + currBepOStatus[1];
-//        System.setProperty(this.sysPropertyCurrTopicOLSEStatusKey, currTopicOLSEStatusKey);
-//        // ---------------------------------------------------------------------
-//        String linkAnchorName = this.myPooler.getPoolBepLinkAnchorName(currTopicID, currBepOStatus[0], new String[]{currTargetOffset, currTargetLength, currTargetID});
-//        Vector<String> newTABFieldValues = new Vector<String>();
-//        newTABFieldValues.add(this.currTopicName);
-//        newTABFieldValues.add(this.currTopicID);
-//        newTABFieldValues.add(linkAnchorName);
-//        newTABFieldValues.add(currTargetID);
-//        String pageTitle = "";
-////        if (Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey))) {
-//            pageTitle = this.rscManager.getWikipediaPageTitle(currTargetID);
-////        } else {
-////            pageTitle = this.rscManager.getTeAraFilePathByName(currTargetID);
-////        }
-//        newTABFieldValues.add(pageTitle.trim());
-//        String[] pAnchorCompletionSA = this.rscManager.getIncomingCompletion();
-//        newTABFieldValues.add(pAnchorCompletionSA[0] + " / " + pAnchorCompletionSA[1]);
-//        os.setTABFieldValues(newTABFieldValues);
-//    }
-    // =========================================================================
-    // =========================================================================
-    // </editor-fold>
 
     // <editor-fold defaultstate="collapsed" desc="Set Text Pane & Highlight Anchor">
     // Topic Pane: Anchor
@@ -1340,107 +1214,6 @@ public class LTWAssessmentToolView extends FrameView {
         this.topicTextPane.setText(xmlParser.getHtmlContent().toString());
     }
 
-//    private static void updateSelectedAnchorHightlighter(JTextPane topicTextPane, AssessedAnchor currAnchorSE, int thisAnchorStatus) {
-//
-////        int curr_ext_length = Integer.parseInt(currTopicAnchorSCRSE[3]);
-//    	int subanchorScreenStart = currAnchorSE.getScreenPosStart(); //Integer.valueOf(currAnchorSE[4]);
-//    	int subanchorScreenEnd = currAnchorSE.getScreenPosEnd(); //Integer.valueOf(currAnchorSE[5]);
-//    	Highlighter highlighter = topicTextPane.getHighlighter();
-//        Object anchorHighlightReference = null;
-////        String currAnchorSP = currTopicAnchorSCRSE[1].trim();
-//        
-//    	int sp = currAnchorSE.getParent().getScreenPosStart(); //Integer.valueOf(currAnchorSEcurrAnchorSE[1]);
-//    	int se = currAnchorSE.getParent().getLength() + currAnchorSE.getParent().getExtendedLength(); //Integer.valueOf(currAnchorSE[2]);
-//    	
-//        int sp1 = 0, se1 = 0;
-//        int sp2 = 0, se2 = 0;
-//    	if (subanchorScreenStart != sp || subanchorScreenEnd != se) {
-//    		
-//    		if (subanchorScreenStart > sp) {
-//    			sp1 = sp;
-//    			se1 = subanchorScreenStart; 			
-//    		}
-//    		
-//    		if (subanchorScreenEnd < se) {
-//    			sp2 = subanchorScreenEnd;
-//    			se2 = se; 
-//    		}
-//
-//        } 
-//
-//    	try {
-//			anchorHighlightReference = highlighter.addHighlight(subanchorScreenStart, subanchorScreenEnd, painters.getSelectedPainter());
-//
-//	        if (se1 > sp1) {
-//	            if (thisAnchorStatus == 0) {
-//	                anchorHighlightReference = highlighter.addHighlight(sp1, se1, painters.getAnchorPainter());
-//	            } else if (thisAnchorStatus == 1) {
-//	                anchorHighlightReference = highlighter.addHighlight(sp1, se1, painters.getCompletePainter());
-//	            } else if (thisAnchorStatus == -1) {
-//	                anchorHighlightReference = highlighter.addHighlight(sp1, se1, painters.getIrrelevantPainter());
-//	            }
-//	        }
-//	        
-//	        if (se2 > sp2) {
-//	            if (thisAnchorStatus == 0) {
-//	                anchorHighlightReference = highlighter.addHighlight(sp2, se2, painters.getAnchorPainter());
-//	            } else if (thisAnchorStatus == 1) {
-//	                anchorHighlightReference = highlighter.addHighlight(sp2, se2, painters.getCompletePainter());
-//	            } else if (thisAnchorStatus == -1) {
-//	                anchorHighlightReference = highlighter.addHighlight(sp2, se2, painters.getIrrelevantPainter());
-//	            }
-//	        }		
-//        } catch (BadLocationException e) {
-//        	Logger.getLogger(LTWAssessmentToolView.class.getName()).log(Level.SEVERE, null, e);
-//		} 
-//    }
-    
-//    private void setTopicTextHighlighter(Vector<IndexedAnchor> topicAnchorOLSEStatus2, String[] currTopicAnchorSCRSE) {
-//        /**
-//         * Vector<String[]> topicAnchorSEVSA :
-//         *     String[]{Anchor_Offset, Length, S, E, Status}
-//         * String[] currTopicAnchorSCRSE :
-//         *     String[]{AnchorName, SP, EP}
-//         */
-//        String currAnchorSP = currTopicAnchorSCRSE[1].trim();
-//        try {
-//            Highlighter highlighter = this.topicTextPane.getHighlighter();
-//            highlighter.removeAllHighlights();
-//            Object anchorHighlightReference = null;
-//
-//            for (IndexedAnchor thisAnchorSA : topicAnchorOLSEStatus2) {
-//                String thisAnchorSP = thisAnchorSA.screenPosStartToString(); //[2];
-//                int thisAnchorStatus = thisAnchorSA.getStatus(); //Integer.valueOf(thisAnchorSA[4]);
-//                int ext_length = thisAnchorSA.getExtendedLength(); //Integer.valueOf(thisAnchorSA[5]);
-//            	int sp = thisAnchorSA.getScreenPosStart(); //Integer.valueOf(thisAnchorSA[2]);
-//            	int se = thisAnchorSA.getScreenPosEnd(); //Integer.valueOf(thisAnchorSA[3]);
-//                
-//            	if (ext_length > 0)
-//            		se += ext_length;
-//            	
-//                if (thisAnchorSP.equals(currAnchorSP)) {
-////                	String [] currAnchorScreenInfo = new String[currTopicAnchorSCRSE.length];
-////                	System.arraycopy(currTopicAnchorSCRSE, 0, currAnchorScreenInfo, 0, currTopicAnchorSCRSE.length);
-////                	int anchorEnd = Integer.valueOf(currAnchorScreenInfo[2]) + Integer.valueOf(currAnchorScreenInfo[3]);
-////                	currAnchorScreenInfo[2] = String.valueOf(anchorEnd);
-//                	updateSelectedAnchorHightlighter(this.topicTextPane, thisAnchorSA.getChildrenAnchors().get(0)/*currAnchorScreenInfo*/, thisAnchorStatus);
-//                    //anchorHighlightReference = highlighter.addHighlight(sp, se, painters.getSelectedPainter()); 
-//                }
-//                else {
-//	                if (thisAnchorStatus == 0) {
-//	                    anchorHighlightReference = highlighter.addHighlight(sp, se, painters.getAnchorPainter());
-//	                } else if (thisAnchorStatus == 1) {
-//	                    anchorHighlightReference = highlighter.addHighlight(sp, se, painters.getCompletePainter());
-//	                } else if (thisAnchorStatus == -1) {
-//	                    anchorHighlightReference = highlighter.addHighlight(sp, se, painters.getIrrelevantPainter());
-//	                }
-//                }
-//                 
-//            }
-//        } catch (BadLocationException ex) {
-//            Logger.getLogger(LTWAssessmentToolView.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//    }
     // -------------------------------------------------------------------------
     // Topic Pane: BEP : need to be FIXED
 
