@@ -81,9 +81,9 @@ public class linkPaneMouseListener implements MouseInputListener {
     private String bepHighlightIconImageFilePath = "";
     private String bepCompletedIconImageFilePath = "";
     private String bepNonrelevantIconImageFilePath = "";
-    private Color linkPaneWhiteColor = Color.WHITE;
-    private Color linkPaneRelColor = new Color(168, 232, 177);
-    private Color linkPaneNonRelColor = new Color(255, 183, 165);
+//    private Color linkPaneWhiteColor = Color.WHITE;
+//    private Color linkPaneRelColor = new Color(168, 232, 177);
+//    private Color linkPaneNonRelColor = new Color(255, 183, 165);
     private ObservableSingleton os = null;
     private Hashtable<String, String[]> topicAnchorOLTSENHT = new Hashtable<String, String[]>();
     private Hashtable<String, Object> myTAnchorSEHiObj = new Hashtable<String, Object>();
@@ -244,12 +244,13 @@ public class linkPaneMouseListener implements MouseInputListener {
                 this.myRSCManager.updateOutgoingCompletion(completedLinkN + " : " + totalLinkN);
             }
             // -----------------------------------------------------------------
-            this.myLinkPane.setBackground(this.linkPaneNonRelColor);
-            this.myLinkPane.repaint();
-            String currLinkStatus = "-1";
+//            this.myLinkPane.setBackground(this.linkPaneNonRelColor);
+//            this.myLinkPane.repaint();
+
+            currALinkOIDSA.setRel(Bep.IRRELEVANT);
+            String currLinkStatus = currALinkOIDSA.relString();
             this.myPoolUpdater.updateTopicAnchorLinkRel(topicID, currAnchorOLNameStatusSA/*new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1]}*/,
                     currALinkID, currLinkStatus);
-            currALinkOIDSA.setRel(Bep.IRRELEVANT);
             // -----------------------------------------------------------------
             LTWAssessmentToolControler.getInstance().goNextLink(true, true);
     }
@@ -293,9 +294,9 @@ public class linkPaneMouseListener implements MouseInputListener {
                 // -------------------------------------------------------------
                 // remove OLD Bep (if there is one) & insert new BEP
                 // repaint BG as RELEVANT
-                this.updateLinkPaneBepIcon(clickStartPoint, preTBStartPoint);
-                this.myLinkPane.setBackground(this.linkPaneRelColor);
-                this.myLinkPane.repaint();
+//                this.updateLinkPaneBepIcon(clickStartPoint, preTBStartPoint);
+//                this.myLinkPane.setBackground(this.linkPaneRelColor);
+//                this.myLinkPane.repaint();
                 // -------------------------------------------------------------
                 // Update Outgoing Completion
                 updateRelevantCompletion(currALinkOIDSA.getAssociatedAnchor().getParent()/*currAnchorOLNameStatusSA*/, currALinkID);
@@ -349,9 +350,10 @@ public class linkPaneMouseListener implements MouseInputListener {
             int poolABepLinkStartP = this.myPoolManager.getPABepLinkStartP(topicID, currAnchorOLNameStatusSA/*new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1]}*/, currALinkID);
             // -----------------------------------------------------------------
             if (poolABepLinkStartP > -1) {
-                this.myLinkPane.setBackground(this.linkPaneNonRelColor);
+//                this.myLinkPane.setBackground(this.linkPaneNonRelColor);
                 // -------------------------------------------------------------
-                String currLinkStatus = "1";
+            	currALinkOIDSA.setRel(1);
+                String currLinkStatus = currALinkOIDSA.relString();
                 this.myPoolUpdater.updateTopicAnchorLinkRel(topicID, currAnchorOLNameStatusSA/*new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1]}*/,
                         currALinkID, currLinkStatus);
                 // -------------------------------------------------------------
