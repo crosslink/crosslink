@@ -39,7 +39,9 @@ import javax.swing.text.StyledDocument;
 import ltwassessmenttool.LTWAssessmentToolControler;
 import ltwassessmenttool.LTWAssessmentToolView;
 import ltwassessment.AppResource;
+import ltwassessment.assessment.AssessedAnchor;
 import ltwassessment.assessment.Bep;
+import ltwassessment.assessment.CurrentFocusedAnchor;
 import ltwassessment.assessment.IndexedAnchor;
 import ltwassessment.parsers.FOLTXTMatcher;
 import ltwassessment.parsers.Xml2Html;
@@ -252,12 +254,15 @@ public class linkPaneMouseListener implements MouseInputListener {
             this.myPoolUpdater.updateTopicAnchorLinkRel(topicID, currAnchorOLNameStatusSA/*new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1]}*/,
                     currALinkID, currLinkStatus);
             // -----------------------------------------------------------------
-            LTWAssessmentToolControler.getInstance().goNextLink(true, true);
+            AssessedAnchor previous =  currALinkOIDSA.getAssociatedAnchor();
+            Bep link = LTWAssessmentToolControler.getInstance().goNextLink(true, true);
+            CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(previous, link.getAssociatedAnchor(), link);
+            os.setTABFieldValues(link);
     }
     
-    private void updateRelevantCompletion(IndexedAnchor currAnchorOLNameStatusSA, String currALinkID) {
-        String currALinkStatus = this.myPoolManager.getPoolAnchorBepLinkStatus(topicID, currAnchorOLNameStatusSA/*new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1]}*/, currALinkID);
-        if (currALinkStatus.equals("0")) {
+    private void updateRelevantCompletion(Bep link) {
+//        String currALinkStatus = this.myPoolManager.getPoolAnchorBepLinkStatus(topicID, currAnchorOLNameStatusSA/*new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1]}*/, currALinkID);
+        if (link.getRel() ==0 ) {
             String[] outCompletion = this.myRSCManager.getOutgoingCompletion();
             String completedLinkN = outCompletion[0];
             String totalLinkN = outCompletion[1];
@@ -272,25 +277,27 @@ public class linkPaneMouseListener implements MouseInputListener {
         // 2) BG --> Green
         // 3) Update bepLink: SP, Offset, Status-Rel
         // 4) STAY, NOT Go Next
-        if (this.isTAB) {
-            IndexedAnchor currAnchorOLNameStatusSA = null;
-            Bep currALinkOIDSA = null;
-            String currBepOffset = "";
-            String[] currBLinkOLIDSA = null;
-            currAnchorOLNameStatusSA = this.myRSCManager.getCurrTopicAnchorOLNameStatusSA();
-            currALinkOIDSA = this.myRSCManager.getCurrTopicATargetOID(this.myLinkPane, this.topicID);
-            String currALinkOffset = currALinkOIDSA.offsetToString(); //[0];
-            String currALinkID = currALinkOIDSA.getFileId(); //[1];
-            String currALinkLang = currALinkOIDSA.getTargetLang(); //[3];
+//        if (this.isTAB) {
+//            IndexedAnchor currAnchorOLNameStatusSA = null;
+//            Bep currALinkOIDSA = null;
+//            String currBepOffset = "";
+//            String[] currBLinkOLIDSA = null;
+//            currAnchorOLNameStatusSA = this.myRSCManager.getCurrTopicAnchorOLNameStatusSA();
+//            currALinkOIDSA = this.myRSCManager.getCurrTopicATargetOID(this.myLinkPane, this.topicID);
+//            String currALinkOffset = currALinkOIDSA.offsetToString(); //[0];
+//            String currALinkID = currALinkOIDSA.getFileId(); //[1];
+//            String currALinkLang = currALinkOIDSA.getTargetLang(); //[3];
+//            // -----------------------------------------------------------------
+//            logger("outgoing_doubleLeftClick_" + currAnchorOLNameStatusSA.lengthToString() + "-" + currAnchorOLNameStatusSA.lengthToString() + " --> " + currALinkID);
             // -----------------------------------------------------------------
-            logger("outgoing_doubleLeftClick_" + currAnchorOLNameStatusSA.lengthToString() + "-" + currAnchorOLNameStatusSA.lengthToString() + " --> " + currALinkID);
-            // -----------------------------------------------------------------
+    	Bep currentLink = CurrentFocusedAnchor.getCurrentFocusedAnchor().getCurrentBep();
+    	String currALinkID = currentLink.getFileId();
             try {
-                int preTBStartPoint = this.myPoolManager.getPABepLinkStartP(topicID, currAnchorOLNameStatusSA/*new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1]}*/, currALinkID);
+                int preTBStartPoint = this.myPoolManager.getPABepLinkStartP(topicID, currentLink.getAssociatedAnchor().getParent()/*new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1]}*/, currALinkID);
                 int clickStartPoint = this.myLinkPane.getSelectionStart();
                 String scrTxtTilStartP = this.myLinkPane.getDocument().getText(0, clickStartPoint);
                 String linkBepStartP = String.valueOf(clickStartPoint);
-                String linkBepOffset = this.myFolMatcher.getXmlBepOffset(currALinkID, scrTxtTilStartP, currALinkLang);
+                String linkBepOffset = this.myFolMatcher.getXmlBepOffset(currALinkID, scrTxtTilStartP, currentLink.getTargetLang());
                 // -------------------------------------------------------------
                 // remove OLD Bep (if there is one) & insert new BEP
                 // repaint BG as RELEVANT
@@ -299,31 +306,33 @@ public class linkPaneMouseListener implements MouseInputListener {
 //                this.myLinkPane.repaint();
                 // -------------------------------------------------------------
                 // Update Outgoing Completion
-                updateRelevantCompletion(currALinkOIDSA.getAssociatedAnchor().getParent()/*currAnchorOLNameStatusSA*/, currALinkID);
+                String currALinkStatus = this.myPoolManager.getPoolAnchorBepLinkStatus(topicID, currentLink.getAssociatedAnchor().getParent(), currentLink.getFileId());
+                if (currALinkStatus.equals("0")) 
+                	updateRelevantCompletion(currentLink);
                 
                 // -------------------------------------------------------------
                 // Update this PAnchor BEP Link Status
                 String currLinkStatus = "1";
-                this.myPoolUpdater.updateTopicAnchorLinkOSStatus(topicID, currALinkOIDSA.getAssociatedAnchor().getParent()/*new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1]}*/,
+                this.myPoolUpdater.updateTopicAnchorLinkOSStatus(topicID, currentLink.getAssociatedAnchor().getParent()/*new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1]}*/,
                         new String[]{linkBepOffset, linkBepStartP, currALinkID},
                         currLinkStatus);
                 // -------------------------------------------------------------
                 // Check & Update this Pool Anchor Status/Completion
                 // according to its BEP links status
-                String[] thisPAnchorCRatio = this.myRSCManager.getPoolAnchorCompletedRatio(topicID, currALinkOIDSA.getAssociatedAnchor().getParent()/*new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1]}*/);
+                String[] thisPAnchorCRatio = this.myRSCManager.getPoolAnchorCompletedRatio(topicID, currentLink.getAssociatedAnchor().getParent()/*new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1]}*/);
                 if (thisPAnchorCRatio[0].equals(thisPAnchorCRatio[1])) {
                     String poolAnchorStatus = "1";
-                    this.myPoolUpdater.updatePoolAnchorStatus(topicID, currALinkOIDSA.getAssociatedAnchor().getParent()/*new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1]}*/,
+                    this.myPoolUpdater.updatePoolAnchorStatus(topicID, currentLink.getAssociatedAnchor().getParent()/*new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1]}*/,
                             poolAnchorStatus);
                 } else {
                     String poolAnchorStatus = "0";
-                    this.myPoolUpdater.updatePoolAnchorStatus(topicID, currALinkOIDSA.getAssociatedAnchor().getParent()/*new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1]}*/,
+                    this.myPoolUpdater.updatePoolAnchorStatus(topicID, currentLink.getAssociatedAnchor().getParent()/*new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1]}*/,
                             poolAnchorStatus);
                 }
             } catch (BadLocationException ex) {
                 Logger.getLogger(linkPaneMouseListener.class.getName()).log(Level.SEVERE, null, ex);
             }
-        }
+//        }
     }
 
     private void singleLeftClickEventAction() {
@@ -337,28 +346,36 @@ public class linkPaneMouseListener implements MouseInputListener {
 //        if (this.isTAB) {
             // For outgoing TAB
             // -----------------------------------------------------------------
-            IndexedAnchor currAnchorOLNameStatusSA = this.myRSCManager.getCurrTopicAnchorOLNameStatusSA();
-            Bep currALinkOIDSA = this.myRSCManager.getCurrTopicATargetOID(this.myLinkPane, this.topicID);
-            String currALinkOffset = currALinkOIDSA.offsetToString(); //[0];
-            String currALinkID = currALinkOIDSA.getFileId(); //[1];
-            logger("outgoing_doubleLeftClick_" + currAnchorOLNameStatusSA.lengthToString() + "-" + currAnchorOLNameStatusSA.lengthToString() + " --> " + currALinkID);
+//            IndexedAnchor currAnchorOLNameStatusSA = this.myRSCManager.getCurrTopicAnchorOLNameStatusSA();
+//            Bep currALinkOIDSA = this.myRSCManager.getCurrTopicATargetOID(this.myLinkPane, this.topicID);
+//            String currALinkOffset = currALinkOIDSA.offsetToString(); //[0];
+//            String currALinkID = currALinkOIDSA.getFileId(); //[1];
+//            logger("outgoing_doubleLeftClick_" + currAnchorOLNameStatusSA.lengthToString() + "-" + currAnchorOLNameStatusSA.lengthToString() + " --> " + currALinkID);
             
             // Update Outgoing Completion
-            updateRelevantCompletion(currAnchorOLNameStatusSA, currALinkID);
+            Bep currentLink = CurrentFocusedAnchor.getCurrentFocusedAnchor().getCurrentBep();
             
             // -----------------------------------------------------------------
-            int poolABepLinkStartP = this.myPoolManager.getPABepLinkStartP(topicID, currAnchorOLNameStatusSA/*new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1]}*/, currALinkID);
-            // -----------------------------------------------------------------
-            if (poolABepLinkStartP > -1) {
+//            int poolABepLinkStartP = this.myPoolManager.getPABepLinkStartP(topicID, currentLink.getAssociatedAnchor().getParent()/*new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1]}*/, currentLink.getFileId());
+//            // -----------------------------------------------------------------
+//            if (poolABepLinkStartP > -1) {
+            String currALinkStatus = this.myPoolManager.getPoolAnchorBepLinkStatus(topicID, currentLink.getAssociatedAnchor().getParent(), currentLink.getFileId());
+            if (currALinkStatus.equals("0")) {
+
 //                this.myLinkPane.setBackground(this.linkPaneNonRelColor);
                 // -------------------------------------------------------------
-            	currALinkOIDSA.setRel(1);
-                String currLinkStatus = currALinkOIDSA.relString();
-                this.myPoolUpdater.updateTopicAnchorLinkRel(topicID, currAnchorOLNameStatusSA/*new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1]}*/,
-                        currALinkID, currLinkStatus);
+                updateRelevantCompletion(currentLink);
+
                 // -------------------------------------------------------------
-                LTWAssessmentToolControler.getInstance().goNextLink(true, true);
             }
+            currentLink.setRel(Bep.RELEVANT);
+            this.myPoolUpdater.updateTopicAnchorLinkRel(topicID,  currentLink.getAssociatedAnchor().getParent()/*new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1]}*/,
+           		 currentLink.getFileId(), currentLink.relString());
+            
+            AssessedAnchor previous =   currentLink.getAssociatedAnchor();
+            Bep link = LTWAssessmentToolControler.getInstance().goNextLink(true, true);
+            CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(previous, link.getAssociatedAnchor(), link);
+            os.setTABFieldValues(link);
 //        } else {
 //            // For incoming TBA
 //            // -----------------------------------------------------------------
