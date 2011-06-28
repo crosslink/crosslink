@@ -16,6 +16,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import ltwassessment.AppResource;
+import ltwassessment.assessment.AssessedAnchor;
 import ltwassessment.assessment.IndexedAnchor;
 
 /**
@@ -444,4 +445,51 @@ public class PoolUpdater {
             }
         }
     }
+
+	public void updatePoolSubanchorStatus(String topicID,
+			AssessedAnchor poolAnchorOL) {
+        VTDGen vg = new VTDGen();
+        log("poolXMLPath: " + poolXMLPath);
+        if (vg.parseFile(poolXMLPath, true)) {
+            FileOutputStream fos = null;
+            try {
+                VTDNav vn = vg.getNav();
+                File fo = new File(poolXMLPath);
+                fos = new FileOutputStream(fo);
+
+                AutoPilot ap = new AutoPilot(vn);
+                XMLModifier xm = new XMLModifier(vn);
+
+                log(poolAnchorOL.offsetToString() + " - " + poolAnchorOL.lengthToString() + " - " + topicID);
+                // Anchor
+                String xPath1 = "/crosslink-assessment/topic[@file='" + topicID + 
+                		"']/outgoinglinks/anchor[@aoffset='" + poolAnchorOL.getParent().offsetToString() + "' and @alength='" + poolAnchorOL.getParent().lengthToString() + 
+                		"']/subanchor[@saoffset='" + poolAnchorOL.offsetToString() + "' and @salength='" + poolAnchorOL.lengthToString() + "']";
+                ap.selectXPath(xPath1);
+                int k = -1;
+                while ((k = ap.evalXPath()) != -1) {
+                    int l = vn.getAttrVal("sarel");
+                    if (l != -1) {
+                        log(poolAnchorOL.getStatus());
+                        xm.updateToken(l, poolAnchorOL.statusToString());
+                    }
+                }
+                xm.output(fos);
+                fos.close();
+            } catch (IOException ex) {
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (TranscodeException ex) {
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (XPathEvalException ex) {
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (NavException ex) {
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (XPathParseException ex) {
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (ModifyException ex) {
+                Logger.getLogger(PoolUpdater.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+		
+	}
 }

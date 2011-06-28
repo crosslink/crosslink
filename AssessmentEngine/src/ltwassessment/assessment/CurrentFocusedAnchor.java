@@ -1,12 +1,15 @@
 package ltwassessment.assessment;
 
+import ltwassessment.view.TopicHighlightManager;
+
 public class CurrentFocusedAnchor {
 	  
     public final static String sysPropertyCurrTopicOLSEStatusKey = "currTopicOLSE";
     
     private String screenAnchorText;
     
-    AssessedAnchor anchor = null;
+    private AssessedAnchor anchor = null;
+    private Bep currentBep = null;
 
     private static CurrentFocusedAnchor currentFocusedAnchor = null;
     
@@ -52,7 +55,20 @@ public class CurrentFocusedAnchor {
 		return anchor;
 	}
 
-	public void setAnchor(AssessedAnchor anchor) {
-		this.anchor = anchor;
+	public void setAnchor(AssessedAnchor previous, AssessedAnchor current, Bep bep) {
+		this.anchor = current;
+		
+		TopicHighlightManager.getInstance().update(previous, anchor);
+		TopicHighlightManager.getInstance().updateLinkPane(bep, bep.getFileId().equals(currentBep.getFileId()));
+		
+		this.currentBep = bep;
+	}
+
+	public Bep getCurrentBep() {
+		return currentBep;
+	}
+
+	public void setCurrentBep(Bep currentBep) {
+		this.currentBep = currentBep;
 	}
 }
