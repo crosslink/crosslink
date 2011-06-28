@@ -59,7 +59,7 @@ public class CurrentFocusedAnchor {
 		this.anchor = current;
 		
 		TopicHighlightManager.getInstance().update(previous, anchor);
-		TopicHighlightManager.getInstance().updateLinkPane(bep, bep.getFileId().equals(currentBep.getFileId()));
+		TopicHighlightManager.getInstance().updateLinkPane(bep, currentBep == null || bep.getFileId().equals(currentBep.getFileId()));
 		
 		this.currentBep = bep;
 	}
