@@ -411,6 +411,7 @@ public class topicPaneMouseListener implements MouseInputListener {
 
 
         int prePAnchorStatus = this.preTHyperOLSEStatus.getStatus(); 
+        int newCompletedCounter = 0;
         // ---------------------------------------------------------------------
         if (preTHyperOLSEStatus.getParent() == currSCRSEName) {
             log("CURR PAnchor is PRE PAnchor...");
@@ -420,6 +421,13 @@ public class topicPaneMouseListener implements MouseInputListener {
             // DO-NOTHING for Topic Pane Anchor
             // It is still highlighted as YELLOW
             // -----------------------------------------------------------------
+            for (Bep aBep : preTHyperOLSEStatus.getBeps())
+            	if (aBep.getRel() != -1) {
+            		if (aBep.getRel() == 0)
+            			newCompletedCounter++;
+            		
+            		aBep.setRel(-1);
+            	}
             if (prePAnchorStatus == 1 || prePAnchorStatus == 0) {
                 // <editor-fold defaultstate="collapsed" desc="Toggle to NONRelevant -1">
                 // Toggle to NONRelevant -1, because it was 1 or 0
@@ -429,14 +437,6 @@ public class topicPaneMouseListener implements MouseInputListener {
 //                this.linkTextPane.repaint();
                 // -----------------------------------------------------------------
                 // update Completion Ratio
-                int newCompletedCounter = 0;
-                for (Bep aBep : preTHyperOLSEStatus.getBeps())
-                	if (aBep.getRel() != -1) {
-                		if (aBep.getRel() == 0)
-                			newCompletedCounter++;
-                		
-                		aBep.setRel(-1);
-                	}
 //                Vector<String> pAnchorAllLinkStatus = this.poolerManager.getPoolAnchorAllLinkStatus(this.currTopicID, currSCRSEName/*new String[]{pAnchorO, pAnchorL}*/);
 //                for (String pAnchorLinkStatus : pAnchorAllLinkStatus) {
 //                    if (pAnchorLinkStatus.equals("0")) {
@@ -447,9 +447,6 @@ public class topicPaneMouseListener implements MouseInputListener {
                 preTHyperOLSEStatus.setStatus(prePAnchorStatus);
                 this.pUpdater.updatePoolSubanchorStatus(this.currTopicID, preTHyperOLSEStatus);
                         
-                String[] outCompletionRatio = this.myRSCManager.getOutgoingCompletion();
-                String outCompletedLinks = String.valueOf(Integer.valueOf(outCompletionRatio[0]) + newCompletedCounter);
-                this.myRSCManager.updateOutgoingCompletion(outCompletedLinks + " : " + outCompletionRatio[1]);
                 // updare Pool XML
 
                 // </editor-fold>
@@ -479,10 +476,11 @@ public class topicPaneMouseListener implements MouseInputListener {
                     toPAnchorStatus = "1";
                 }
 
-                String[] outCompletionRatio = this.myRSCManager.getOutgoingCompletion();
-                String outCompletedLinks = String.valueOf(Integer.valueOf(outCompletionRatio[0]) - unAssCounter);
-                this.myRSCManager.updateOutgoingCompletion(outCompletedLinks + " : " + outCompletionRatio[1]);
+//                String[] outCompletionRatio = this.myRSCManager.getOutgoingCompletion();
+//                String outCompletedLinks = String.valueOf(Integer.valueOf(outCompletionRatio[0]) - unAssCounter);
+//                this.myRSCManager.updateOutgoingCompletion(outCompletedLinks + " : " + outCompletionRatio[1]);
                 // updare Pool XML
+                newCompletedCounter -= unAssCounter;
                 this.pUpdater.updatePoolAnchorStatus(this.currTopicID, currSCRSEName/*currPAnchorOLStatus*/, toPAnchorStatus);
                 // update System Property
 //                CurrentFocusedAnchor.getCurrentFocusedAnchor().setCurrentAnchorProperty(pAnchorO, pAnchorL, currSCRSEName.screenPosStartToString(), currSCRSEName.screenPosStartToString(), pAnchorStatus, currSCRSEName.extendedLengthToString()/*, currSCRSEName.offsetIndexToString()*/);
@@ -490,7 +488,10 @@ public class topicPaneMouseListener implements MouseInputListener {
                 // -------------------------------------------------------------
                 // </editor-fold>
             }
-               
+            String[] outCompletionRatio = this.myRSCManager.getOutgoingCompletion();
+            String outCompletedLinks = String.valueOf(Integer.valueOf(outCompletionRatio[0]) + newCompletedCounter);
+            this.myRSCManager.updateOutgoingCompletion(outCompletedLinks + " : " + outCompletionRatio[1]);
+            
             Bep link = LTWAssessmentToolControler.getInstance().goNextLink(false, true);
             CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(preTHyperOLSEStatus, link.getAssociatedAnchor(), link);
             os.setTABFieldValues(link);
@@ -545,7 +546,7 @@ public class topicPaneMouseListener implements MouseInputListener {
 //                this.linkTextPane.repaint();
                 // -----------------------------------------------------------------
                 // update Completion Ratio
-                int newCompletedCounter = 0;
+                newCompletedCounter = 0;
                 Vector<String> pAnchorAllLinkStatus = this.poolerManager.getPoolAnchorAllLinkStatus(this.currTopicID, currSCRSEName/*new String[]{pAnchorO, pAnchorL}*/);
                 for (String pAnchorLinkStatus : pAnchorAllLinkStatus) {
                     if (pAnchorLinkStatus.equals("0")) {
