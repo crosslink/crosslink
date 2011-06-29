@@ -15,6 +15,7 @@ import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import javax.swing.JTextPane;
 
+import ltwassessment.Assessment;
 import ltwassessment.assessment.Bep;
 import ltwassessment.parsers.ResourcesManager;
 import ltwassessment.utility.BrowserControl;
@@ -109,7 +110,7 @@ public class LTWAssessmentToolControler {
     	String topicID = myRSCManager.getTopicID();
 		String sourcePoolFPath = ltwassessment.Assessment.getPoolFile(topicID);
 		File srcFile = new File(sourcePoolFPath);
-		String backupPoolDir = "resources" + File.separator + "Pool" + File.separator + "POOL_BACKUP" + File.separator;
+		String backupPoolDir = Assessment.ASSESSMENT_POOL_BACKUP_DIR;
 		DateFormat dateFormat = new SimpleDateFormat("yyMMddHHmmss");
 		Date date = new Date();
 		String currentDateTime = dateFormat.format(date).toString();

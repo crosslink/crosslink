@@ -17,6 +17,7 @@ import java.util.logging.Logger;
 
 import ltwassessment.AppResource;
 import ltwassessment.assessment.AssessedAnchor;
+import ltwassessment.assessment.Bep;
 import ltwassessment.assessment.IndexedAnchor;
 
 /**
@@ -238,7 +239,8 @@ public class PoolUpdater {
 
     // =========================================================================
     // =========================================================================
-    public void updatePoolAnchorStatus(String topicID, IndexedAnchor poolAnchorOL, String pAnchorStatus) {
+    public void updatePoolAnchorStatus(String topicID, IndexedAnchor poolAnchorOL) {
+    	String pAnchorStatus = poolAnchorOL.statusToString();
         // For Right-Click on Anchor Text: ONLY change Pool Anchor Status, Keep panchor-BEPLinks Status
         VTDGen vg = new VTDGen();
         log("poolXMLPath: " + poolXMLPath);
@@ -386,10 +388,11 @@ public class PoolUpdater {
         }
     }
 
-    public void updateTopicAnchorLinkOSStatus(String topicID, IndexedAnchor poolAnchorOL, String[] targetLinkOSID, String tbRelStatus) {
-        String targetOffset = targetLinkOSID[0];
-        String targetStartP = targetLinkOSID[1];
-        String targetID = targetLinkOSID[2];
+    public void updateTopicAnchorLinkOSStatus(String topicID, IndexedAnchor poolAnchorOL, Bep targetLinkOSID) {
+        String targetOffset = targetLinkOSID.offsetToString();
+        String targetStartP = targetLinkOSID.startPToString();
+        String targetID = targetLinkOSID.getFileId();
+        String tbRelStatus = targetLinkOSID.relString();
 
         VTDGen vg = new VTDGen();
 

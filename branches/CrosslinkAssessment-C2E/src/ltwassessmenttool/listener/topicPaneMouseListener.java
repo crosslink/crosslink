@@ -260,7 +260,8 @@ public class topicPaneMouseListener implements MouseInputListener {
                         prePAnchorStatus = this.myRSCManager.getPoolAnchorCompletedStatus(this.currTopicID, this.preTHyperOLSEStatus.getParent()/*new String[]{prePAnchorO, prePAnchorL}*/);
                     }
                 }
-                this.pUpdater.updatePoolAnchorStatus(this.currTopicID, this.preTHyperOLSEStatus.getParent()/*new String[]{prePAnchorO, prePAnchorL}*/, String.valueOf(prePAnchorStatus));
+                this.preTHyperOLSEStatus.getParent().setStatus(prePAnchorStatus);
+                this.pUpdater.updatePoolAnchorStatus(this.currTopicID, this.preTHyperOLSEStatus.getParent());
                 preTHyperOLSEStatus.setStatus(prePAnchorStatus);
                     // ---------------------------------------------------------                   
 
@@ -302,9 +303,9 @@ public class topicPaneMouseListener implements MouseInputListener {
         String pAnchorStatus = this.poolerManager.getPoolAnchorStatus(currTopicID, currSCRSEName/*new String[]{currPAnchorOLStatus[0], currPAnchorOLStatus[1]}*/);
 
     	int i = 0;
-    	Bep bepInfo = next.getBeps().get(i);
+    	Bep bepInfo = next.getBeps().get(i++);
     	while (bepInfo.getRel() != 0 && i < next.getBeps().size()) {
-    		bepInfo = next.getBeps().get(++i);
+    		bepInfo = next.getBeps().get(i++);
     	}
     	
     	
@@ -467,21 +468,23 @@ public class topicPaneMouseListener implements MouseInputListener {
                     }
 
                 }
-                String toPAnchorStatus = "";
+                int toPAnchorStatus = Bep.UNASSESSED;
                 if (nonRelCounter == pAnchorAllLinkStatus.size()) {
-                    toPAnchorStatus = "-1";
+                    toPAnchorStatus = -1;
                 } else if (unAssCounter > 0) {
-                    toPAnchorStatus = "0";
+                    toPAnchorStatus = 0;
                 } else {
-                    toPAnchorStatus = "1";
+                    toPAnchorStatus = 1;
                 }
 
 //                String[] outCompletionRatio = this.myRSCManager.getOutgoingCompletion();
 //                String outCompletedLinks = String.valueOf(Integer.valueOf(outCompletionRatio[0]) - unAssCounter);
 //                this.myRSCManager.updateOutgoingCompletion(outCompletedLinks + " : " + outCompletionRatio[1]);
                 // updare Pool XML
+                currSCRSEName.setStatus(toPAnchorStatus);
+                
                 newCompletedCounter -= unAssCounter;
-                this.pUpdater.updatePoolAnchorStatus(this.currTopicID, currSCRSEName/*currPAnchorOLStatus*/, toPAnchorStatus);
+                this.pUpdater.updatePoolAnchorStatus(this.currTopicID, currSCRSEName);
                 // update System Property
 //                CurrentFocusedAnchor.getCurrentFocusedAnchor().setCurrentAnchorProperty(pAnchorO, pAnchorL, currSCRSEName.screenPosStartToString(), currSCRSEName.screenPosStartToString(), pAnchorStatus, currSCRSEName.extendedLengthToString()/*, currSCRSEName.offsetIndexToString()*/);
                 // -------------------------------------------------------------
@@ -539,7 +542,7 @@ public class topicPaneMouseListener implements MouseInputListener {
             if (pAnchorStatus.equals("1") || pAnchorStatus.equals("0")) {
                 // <editor-fold defaultstate="collapsed" desc="Toggle to NONRelevant -1">
                 // Toggle to NONRelevant -1, because it was 1 or 0
-                String toPAnchorStatus = "-1";
+                int toPAnchorStatus = Bep.IRRELEVANT;
                 // -------------------------------------------------------------
 //                // Set Link Pane BG as RED
 //                this.linkTextPane.setBackground(this.linkPaneNonRelColor);
@@ -559,7 +562,8 @@ public class topicPaneMouseListener implements MouseInputListener {
                 this.myRSCManager.updateOutgoingCompletion(outCompletedLinks + " : " + outCompletionRatio[1]);
                 // updare Pool XML
 //                log("Before Update POOL: " + pAnchorO + " - " + pAnchorL + " - " + toPAnchorStatus);
-                this.pUpdater.updatePoolAnchorStatus(this.currTopicID, currSCRSEName/*new String[]{pAnchorO, pAnchorL}*/, toPAnchorStatus);
+                currSCRSEName.setStatus(toPAnchorStatus);
+                this.pUpdater.updatePoolAnchorStatus(this.currTopicID, currSCRSEName);
 //                // update System Property
                 // </editor-fold>
             } else if (pAnchorStatus.equals("-1")) {
@@ -576,13 +580,13 @@ public class topicPaneMouseListener implements MouseInputListener {
                     }
 
                 }
-                String toPAnchorStatus = "";
+                int toPAnchorStatus;
                 if (nonRelCounter == pAnchorAllLinkStatus.size()) {
-                    toPAnchorStatus = "-1";
+                    toPAnchorStatus = Bep.IRRELEVANT;
                 } else if (unAssCounter > 0) {
-                    toPAnchorStatus = "0";
+                    toPAnchorStatus = Bep.UNASSESSED;
                 } else {
-                    toPAnchorStatus = "1";
+                    toPAnchorStatus = Bep.RELEVANT;
                 }
 // -------------------------------------------------------------
 
@@ -618,7 +622,8 @@ public class topicPaneMouseListener implements MouseInputListener {
                 String outCompletedLinks = String.valueOf(Integer.valueOf(outCompletionRatio[0]) - unAssCounter);
                 this.myRSCManager.updateOutgoingCompletion(outCompletedLinks + " : " + outCompletionRatio[1]);
                 // updare Pool XML
-                this.pUpdater.updatePoolAnchorStatus(this.currTopicID, currSCRSEName/*currPAnchorOLStatus*/, toPAnchorStatus);
+                currSCRSEName.setStatus(toPAnchorStatus);
+                this.pUpdater.updatePoolAnchorStatus(this.currTopicID, currSCRSEName);
                 // </editor-fold>
             }
 

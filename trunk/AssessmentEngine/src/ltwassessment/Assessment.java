@@ -28,8 +28,23 @@ public class Assessment {
 	private Iterator it  = null;
 	
 	private Topic currentTopic;
+	
+	public static final String ASSESSMENT_POOL_BACKUP_DIR =  ASSESSMENT_POOL_PATH + File.separator + "POOL_BACKUP" + File.separator;
+	private static File poolDirHandler = null;
+	private static File poolBackupDirHandler = null;
+	
+	static {
+		poolDirHandler = new File(ASSESSMENT_POOL_PATH);
+		if (!poolDirHandler.exists())
+			poolDirHandler.mkdir();
+			
+		poolBackupDirHandler = new File(ASSESSMENT_POOL_BACKUP_DIR);
+		if (!poolBackupDirHandler.exists())
+			poolBackupDirHandler.mkdir();
+	}
 
 	public Assessment() {
+		
 		loadTopicsForAssessment();
 	}
 
