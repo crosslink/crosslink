@@ -17,6 +17,8 @@ import javax.swing.JTextPane;
 
 import ltwassessment.Assessment;
 import ltwassessment.assessment.Bep;
+import ltwassessment.assessment.CurrentFocusedAnchor;
+import ltwassessment.assessment.IndexedAnchor;
 import ltwassessment.parsers.ResourcesManager;
 import ltwassessment.utility.BrowserControl;
 import ltwassessmenttool.listener.linkPaneMouseListener;
@@ -97,7 +99,7 @@ public class LTWAssessmentToolControler {
 //        else {
 
                 
-        return LTWAssessmentToolView.moveForwardALink(updateCurrAnchorStatus, nextUnassessed);
+        return moveForwardALink(updateCurrAnchorStatus, nextUnassessed);
                 // ---------------------------------------------------------------------
                 // ---------------------------------------------------------------------
                 // </editor-fold>
@@ -134,6 +136,50 @@ public class LTWAssessmentToolControler {
 		        Logger.getLogger(linkPaneMouseListener.class.getName()).log(Level.SEVERE, null, ex);
 		    }
 		}
+    }
+    
+    public static Bep moveForwardALink(boolean updateCurrAnchorStatus, boolean nextUnassessed) {
+        // Click the button to Go Back one Link
+//        PoolUpdater myPUpdater = new PoolUpdater();
+//        boolean isTABOutgoing = Boolean.valueOf(System.getProperty(sysPropertyIsTABKey));
+//        if (isTABOutgoing) {
+            // <editor-fold defaultstate="collapsed" desc="Update TAB Topic, Link">
+//            String[] currTopicOLSEStatusSA = CurrentFocusedAnchor.getCurrentFocusedAnchor().toArray();
+//            String currPAnchorO = currTopicOLSEStatusSA[0];
+//            String currPAnchorL = currTopicOLSEStatusSA[1];
+//            String[] currPAnchorOLSA = new String[]{currPAnchorO, currPAnchorL};
+//            Bep currALinkOIDSA = rscManager.getCurrTopicATargetOID(linkTextPane, currTopicID);
+//            String currALinkOffset = currALinkOIDSA.offsetToString(); //[0];
+//            String currALinkID = currALinkOIDSA.getFileId(); //[1];
+//            String[] currPALinkOIDSA = new String[]{currALinkOffset, currALinkID};
+            
+            IndexedAnchor poolAnchor = CurrentFocusedAnchor.getCurrentFocusedAnchor().getAnchor().getParent();
+            Bep currentBep = CurrentFocusedAnchor.getCurrentFocusedAnchor().getCurrentBep();
+            if (updateCurrAnchorStatus) {
+            	String currPALinkStatus = myPooler.getPoolAnchorBepLinkStatus(currTopicID, currentBep);
+            	int currPAnchorStatus = Integer.parseInt(myPooler.getPoolAnchorStatus(currTopicID, poolAnchor));
+            	poolAnchor.setStatus(currPAnchorStatus);
+            	int poolAnchorStatus = 0;
+            	if (currPALinkStatus.equals("-1")) {
+            		if (currPAnchorStatus == -1) {
+			          poolAnchorStatus = currPAnchorStatus;
+            		} else {
+			        poolAnchorStatus = rscManager.getPoolAnchorCompletedStatus(currTopicID, poolAnchor);
+            		}
+            	} else {
+			      poolAnchorStatus = rscManager.getPoolAnchorCompletedStatus(currTopicID, poolAnchor);
+            	}
+            	poolAnchor.setStatus(poolAnchorStatus);
+//            	if (poolAnchorStatus != 0)
+            		myPUpdater.updatePoolAnchorStatus(currTopicID, poolAnchor);            	
+            }
+            // -------------------------------------------------------------
+            // 1) Get the NEXT Anchor O, L, S, E, Status + its BEP link O, S, ID, Status
+            //    With TAB Nav Update --> NEXT TAB
+            Bep nextAnchorBepLinkVSA = rscManager.getNextTABWithUpdateNAV(currTopicID, CurrentFocusedAnchor.getCurrentFocusedAnchor().getAnchor(), currentBep, nextUnassessed);
+
+            updateAnchorChanges(nextAnchorBepLinkVSA, currentBep);
+            return nextAnchorBepLinkVSA;
     }
     
 }
