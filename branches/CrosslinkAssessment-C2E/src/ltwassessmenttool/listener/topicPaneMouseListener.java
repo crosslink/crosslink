@@ -31,13 +31,13 @@ import javax.swing.text.Style;
 import javax.swing.text.StyleConstants;
 import javax.swing.text.StyledDocument;
 
-import ltwassessmenttool.LTWAssessmentToolControler;
 import ltwassessmenttool.LTWAssessmentToolView;
 import ltwassessment.AppResource;
 import ltwassessment.assessment.AssessedAnchor;
 import ltwassessment.assessment.Bep;
 import ltwassessment.assessment.CurrentFocusedAnchor;
 import ltwassessment.assessment.IndexedAnchor;
+import ltwassessment.assessment.LTWAssessmentToolControler;
 import ltwassessment.parsers.FOLTXTMatcher;
 import ltwassessment.parsers.Xml2Html;
 import ltwassessment.parsers.PoolerManager;

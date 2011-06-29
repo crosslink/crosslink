@@ -42,9 +42,9 @@ public class LTWAssessmentToolControler {
     private JTextPane myLinkPane = null;
     
     private boolean showOnce = false;
-	private static PoolUpdater myPUpdater;
-    private static PoolerManager myPooler;
-    private static ResourcesManager rscManager = null;
+	private PoolUpdater myPUpdater;
+    private PoolerManager myPooler;
+    private ResourcesManager rscManager = null;
     
     private static LTWAssessmentToolControler instance = null;
     
@@ -148,7 +148,7 @@ public class LTWAssessmentToolControler {
 		}
     }
     
-    public static Bep moveForwardALink(boolean updateCurrAnchorStatus, boolean nextUnassessed) {
+    public Bep moveForwardALink(boolean updateCurrAnchorStatus, boolean nextUnassessed) {
         // Click the button to Go Back one Link
 //        PoolUpdater myPUpdater = new PoolUpdater();
 //        boolean isTABOutgoing = Boolean.valueOf(System.getProperty(sysPropertyIsTABKey));
@@ -192,7 +192,7 @@ public class LTWAssessmentToolControler {
             return nextAnchorBepLinkVSA;
     }
     
-    private static void updateAnchorChanges(Bep nextAnchorBepLinkVSA, Bep currALinkOIDSA) {
+    public void updateAnchorChanges(Bep nextAnchorBepLinkVSA, Bep currALinkOIDSA) {
     	String currTopicID = rscManager.getTopicID();
     	AssessedAnchor currentAnchor = currALinkOIDSA.getAssociatedAnchor();
     	AssessedAnchor nextAnchor = nextAnchorBepLinkVSA.getAssociatedAnchor();
@@ -212,10 +212,10 @@ public class LTWAssessmentToolControler {
 
     }
 		CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(currentAnchor, nextAnchor, nextAnchorBepLinkVSA);
-        updateFields(nextAnchorBepLinkVSA);
+//        updateFields(nextAnchorBepLinkVSA);
     }
     
-    private static void updateFields(Bep bep) {
+    private void updateFields(Bep bep) {
         // =================================================================
         // Link Pane
         // =================================================================

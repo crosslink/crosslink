@@ -36,7 +36,6 @@ import javax.swing.text.Style;
 import javax.swing.text.StyleConstants;
 import javax.swing.text.StyledDocument;
 
-import ltwassessmenttool.LTWAssessmentToolControler;
 import ltwassessmenttool.LTWAssessmentToolView;
 import ltwassessment.AppResource;
 import ltwassessment.assessment.AssessedAnchor;
