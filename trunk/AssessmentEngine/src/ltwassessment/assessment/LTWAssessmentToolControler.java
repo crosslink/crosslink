@@ -1,4 +1,4 @@
-package ltwassessmenttool;
+package ltwassessment.assessment;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -19,9 +19,10 @@ import ltwassessment.Assessment;
 import ltwassessment.assessment.Bep;
 import ltwassessment.assessment.CurrentFocusedAnchor;
 import ltwassessment.assessment.IndexedAnchor;
+import ltwassessment.parsers.PoolerManager;
 import ltwassessment.parsers.ResourcesManager;
 import ltwassessment.utility.BrowserControl;
-import ltwassessmenttool.listener.linkPaneMouseListener;
+import ltwassessment.utility.PoolUpdater;
 
 public class LTWAssessmentToolControler {
 	public final static String sysPropertyIsTABKey = "isTABKey";
@@ -41,6 +42,9 @@ public class LTWAssessmentToolControler {
     private JTextPane myLinkPane = null;
     
     private boolean showOnce = false;
+	private static PoolUpdater myPUpdater;
+    private static PoolerManager myPooler;
+    private static ResourcesManager rscManager = null;
     
     private static LTWAssessmentToolControler instance = null;
     
@@ -55,7 +59,13 @@ public class LTWAssessmentToolControler {
         return instance;
     }
     
-    public Bep goNextLink(boolean updateCurrAnchorStatus, boolean nextUnassessed) {
+    public LTWAssessmentToolControler() {
+        rscManager = ResourcesManager.getInstance();
+        myPooler = PoolerManager.getInstance();
+        myPUpdater = myPooler.getPoolUpdater();
+	}
+
+	public Bep goNextLink(boolean updateCurrAnchorStatus, boolean nextUnassessed) {
         // ---------------------------------------------------------------------
         globalPoolBackupCounter++;
         // Pool Assessment Result Back up
@@ -133,7 +143,7 @@ public class LTWAssessmentToolControler {
 		        in.close();
 		        out.close();
 		    } catch (IOException ex) {
-		        Logger.getLogger(linkPaneMouseListener.class.getName()).log(Level.SEVERE, null, ex);
+		        Logger.getLogger(LTWAssessmentToolControler.class.getName()).log(Level.SEVERE, null, ex);
 		    }
 		}
     }
@@ -152,7 +162,7 @@ public class LTWAssessmentToolControler {
 //            String currALinkOffset = currALinkOIDSA.offsetToString(); //[0];
 //            String currALinkID = currALinkOIDSA.getFileId(); //[1];
 //            String[] currPALinkOIDSA = new String[]{currALinkOffset, currALinkID};
-            
+    	String currTopicID = rscManager.getTopicID();
             IndexedAnchor poolAnchor = CurrentFocusedAnchor.getCurrentFocusedAnchor().getAnchor().getParent();
             Bep currentBep = CurrentFocusedAnchor.getCurrentFocusedAnchor().getCurrentBep();
             if (updateCurrAnchorStatus) {
@@ -182,4 +192,83 @@ public class LTWAssessmentToolControler {
             return nextAnchorBepLinkVSA;
     }
     
+    private static void updateAnchorChanges(Bep nextAnchorBepLinkVSA, Bep currALinkOIDSA) {
+    	String currTopicID = rscManager.getTopicID();
+    	AssessedAnchor currentAnchor = currALinkOIDSA.getAssociatedAnchor();
+    	AssessedAnchor nextAnchor = nextAnchorBepLinkVSA.getAssociatedAnchor();
+    	
+//        updateAnchor(/*currTopicOLSEStatusSA*/, );
+        int currPAnchorStatus = Integer.parseInt(myPooler.getPoolAnchorStatus(currTopicID, currentAnchor));
+
+    if (currentAnchor.getParent() != nextAnchor.getParent()) {
+        int poolAnchorStatus = 0;
+        if (currPAnchorStatus != 0){
+            poolAnchorStatus = currPAnchorStatus;
+        } else {
+            poolAnchorStatus = rscManager.getPoolAnchorCompletedStatus(currTopicID, currentAnchor);
+        }
+        currentAnchor.getParent().setStatus(poolAnchorStatus);
+        myPUpdater.updatePoolAnchorStatus(currTopicID, currentAnchor.getParent());
+
+    }
+		CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(currentAnchor, nextAnchor, nextAnchorBepLinkVSA);
+        updateFields(nextAnchorBepLinkVSA);
+    }
+    
+    private static void updateFields(Bep bep) {
+        // =================================================================
+        // Link Pane
+        // =================================================================
+//        String bepXmlFilePath = myPooler.getXmlFilePathByTargetID(bep.getFileId(), bep.getTargetLang());
+//        if (bepXmlFilePath.startsWith(afTasnCollectionErrors)) {
+//            bepXmlFilePath = rscManager.getErrorXmlFilePath(bepXmlFilePath);
+//        }
+//        Xml2Html xmlParser = new Xml2Html(bepXmlFilePath, Boolean.valueOf(System.getProperty(LTWAssessmentToolControler.sysPropertyIsLinkWikiKey)));
+//        String xmlHtmlText = xmlParser.getHtmlContent().toString();
+//        linkTextPane.setContentType(textContentType);
+//        linkTextPane.setText(xmlHtmlText);
+//        linkTextPane.setCaretPosition(0);
+//        // -------------------------------------------------------------
+//        // -------------------------------------------------------------
+//        int screenAnchorStatus = Integer.valueOf(bep.getAssociatedAnchor().getStatus());
+//        int linkStatus = bep.getRel(); //Integer.valueOf(link.getStatus());
+//        if (screenAnchorStatus == 1 || screenAnchorStatus == 0) {
+//            if (linkStatus == 1) {
+//                // Relevant --> Insert BEP --> BG = Green
+//                Vector<String> bepSCROffset = new Vector<String>();
+//                bepSCROffset.add(String.valueOf(bep.getStartP()));
+//                boolean isTopicBEP = false;
+//                updatePaneBepIcon(linkTextPane, bepSCROffset, isTopicBEP);
+//                linkTextPane.getCaret().setDot(bep.getStartP());
+//                linkTextPane.scrollRectToVisible(linkTextPane.getVisibleRect());
+//                linkTextPane.setBackground(linkPaneRelColor);
+//            } else if (linkStatus == -1) {
+//                linkTextPane.setBackground(linkPaneNonRelColor);
+//            } else if (linkStatus == 0) {
+//                linkTextPane.setBackground(linkPaneWhiteColor);
+//            }
+//            linkTextPane.repaint();
+//        } else if (screenAnchorStatus == -1) {
+//            linkTextPane.setBackground(linkPaneNonRelColor);
+//            linkTextPane.repaint();
+//        }    	
+        // -------------------------------------------------------------
+        // -------------------------------------------------------------
+//        String currAnchorName = myPooler.getPoolAnchorNameByOL(currTopicID, new String[]{String.valueOf(screenAnchor.getOffset()), String.valueOf(screenAnchor.getLength())});
+//        Vector<String> newTABFieldValues = new Vector<String>();
+//        newTABFieldValues.add(currTopicName);
+//        newTABFieldValues.add(currTopicID);
+//        newTABFieldValues.add(bep.getAssociatedAnchor().getName());
+//        newTABFieldValues.add(bep.getFileId());
+//        String pageTitle = "";
+////        if (Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey))) {
+//            pageTitle = rscManager.getWikipediaPageTitle(bep.getFileId());
+////        } else {
+////            pageTitle = rscManager.getTeAraFilePathByName(nextLinkID);
+////        }
+//        newTABFieldValues.add(pageTitle.trim());
+//        String[] pAnchorCompletionSA = rscManager.getOutgoingCompletion();
+//        newTABFieldValues.add(pAnchorCompletionSA[0] + " / " + pAnchorCompletionSA[1]);
+//        os.setTABFieldValues(bep);
+    }
 }

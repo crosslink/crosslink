@@ -841,28 +841,7 @@ public class LTWAssessmentToolView extends FrameView {
         // using Image Loader
     }
 
-    private static void updateAnchorChanges(Bep nextAnchorBepLinkVSA, Bep currALinkOIDSA) {
 
-    	AssessedAnchor currentAnchor = currALinkOIDSA.getAssociatedAnchor();
-    	AssessedAnchor nextAnchor = nextAnchorBepLinkVSA.getAssociatedAnchor();
-    	
-//        updateAnchor(/*currTopicOLSEStatusSA*/, );
-        int currPAnchorStatus = Integer.parseInt(myPooler.getPoolAnchorStatus(currTopicID, currentAnchor));
-
-    if (currentAnchor.getParent() != nextAnchor.getParent()) {
-        int poolAnchorStatus = 0;
-        if (currPAnchorStatus != 0){
-            poolAnchorStatus = currPAnchorStatus;
-        } else {
-            poolAnchorStatus = rscManager.getPoolAnchorCompletedStatus(currTopicID, currentAnchor);
-        }
-        currentAnchor.getParent().setStatus(poolAnchorStatus);
-        myPUpdater.updatePoolAnchorStatus(currTopicID, currentAnchor.getParent());
-
-    }
-		CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(currentAnchor, nextAnchor, nextAnchorBepLinkVSA);
-        updateFields(nextAnchorBepLinkVSA);
-    }
     
 //    private static void updateAnchor(AssessedAnchor currentAnchor, AssessedAnchor nextAnchor) {
 //
@@ -870,62 +849,6 @@ public class LTWAssessmentToolView extends FrameView {
 ////        }
 //    }
     
-    private static void updateFields(Bep bep) {
-        // =================================================================
-        // Link Pane
-        // =================================================================
-//        String bepXmlFilePath = myPooler.getXmlFilePathByTargetID(bep.getFileId(), bep.getTargetLang());
-//        if (bepXmlFilePath.startsWith(afTasnCollectionErrors)) {
-//            bepXmlFilePath = rscManager.getErrorXmlFilePath(bepXmlFilePath);
-//        }
-//        Xml2Html xmlParser = new Xml2Html(bepXmlFilePath, Boolean.valueOf(System.getProperty(LTWAssessmentToolControler.sysPropertyIsLinkWikiKey)));
-//        String xmlHtmlText = xmlParser.getHtmlContent().toString();
-//        linkTextPane.setContentType(textContentType);
-//        linkTextPane.setText(xmlHtmlText);
-//        linkTextPane.setCaretPosition(0);
-//        // -------------------------------------------------------------
-//        // -------------------------------------------------------------
-//        int screenAnchorStatus = Integer.valueOf(bep.getAssociatedAnchor().getStatus());
-//        int linkStatus = bep.getRel(); //Integer.valueOf(link.getStatus());
-//        if (screenAnchorStatus == 1 || screenAnchorStatus == 0) {
-//            if (linkStatus == 1) {
-//                // Relevant --> Insert BEP --> BG = Green
-//                Vector<String> bepSCROffset = new Vector<String>();
-//                bepSCROffset.add(String.valueOf(bep.getStartP()));
-//                boolean isTopicBEP = false;
-//                updatePaneBepIcon(linkTextPane, bepSCROffset, isTopicBEP);
-//                linkTextPane.getCaret().setDot(bep.getStartP());
-//                linkTextPane.scrollRectToVisible(linkTextPane.getVisibleRect());
-//                linkTextPane.setBackground(linkPaneRelColor);
-//            } else if (linkStatus == -1) {
-//                linkTextPane.setBackground(linkPaneNonRelColor);
-//            } else if (linkStatus == 0) {
-//                linkTextPane.setBackground(linkPaneWhiteColor);
-//            }
-//            linkTextPane.repaint();
-//        } else if (screenAnchorStatus == -1) {
-//            linkTextPane.setBackground(linkPaneNonRelColor);
-//            linkTextPane.repaint();
-//        }    	
-        // -------------------------------------------------------------
-        // -------------------------------------------------------------
-//        String currAnchorName = myPooler.getPoolAnchorNameByOL(currTopicID, new String[]{String.valueOf(screenAnchor.getOffset()), String.valueOf(screenAnchor.getLength())});
-//        Vector<String> newTABFieldValues = new Vector<String>();
-//        newTABFieldValues.add(currTopicName);
-//        newTABFieldValues.add(currTopicID);
-//        newTABFieldValues.add(bep.getAssociatedAnchor().getName());
-//        newTABFieldValues.add(bep.getFileId());
-//        String pageTitle = "";
-////        if (Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey))) {
-//            pageTitle = rscManager.getWikipediaPageTitle(bep.getFileId());
-////        } else {
-////            pageTitle = rscManager.getTeAraFilePathByName(nextLinkID);
-////        }
-//        newTABFieldValues.add(pageTitle.trim());
-//        String[] pAnchorCompletionSA = rscManager.getOutgoingCompletion();
-//        newTABFieldValues.add(pAnchorCompletionSA[0] + " / " + pAnchorCompletionSA[1]);
-//        os.setTABFieldValues(bep);
-    }
     
     // <editor-fold defaultstate="collapsed" desc="Button Click to Go Back / Forward A Link">
     @Action
@@ -951,56 +874,12 @@ public class LTWAssessmentToolView extends FrameView {
             //    With TAB Nav Update --> NEXT TAB
             Bep nextAnchorBepLinkVSA = rscManager.getPreTABWithUpdateNAV(currTopicID, currALinkOIDSA.getAssociatedAnchor(), currALinkOIDSA, false);
             
-            updateAnchorChanges(nextAnchorBepLinkVSA, currALinkOIDSA);
+            LTWAssessmentToolControler.getInstance().updateAnchorChanges(nextAnchorBepLinkVSA, currALinkOIDSA);
     }
 
     @Action
     public void btnGoForwardALink() {
-    	moveForwardALink(false, false);
-    }
-    
-    public static Bep moveForwardALink(boolean updateCurrAnchorStatus, boolean nextUnassessed) {
-        // Click the button to Go Back one Link
-//        PoolUpdater myPUpdater = new PoolUpdater();
-//        boolean isTABOutgoing = Boolean.valueOf(System.getProperty(sysPropertyIsTABKey));
-//        if (isTABOutgoing) {
-            // <editor-fold defaultstate="collapsed" desc="Update TAB Topic, Link">
-//            String[] currTopicOLSEStatusSA = CurrentFocusedAnchor.getCurrentFocusedAnchor().toArray();
-//            String currPAnchorO = currTopicOLSEStatusSA[0];
-//            String currPAnchorL = currTopicOLSEStatusSA[1];
-//            String[] currPAnchorOLSA = new String[]{currPAnchorO, currPAnchorL};
-//            Bep currALinkOIDSA = rscManager.getCurrTopicATargetOID(linkTextPane, currTopicID);
-//            String currALinkOffset = currALinkOIDSA.offsetToString(); //[0];
-//            String currALinkID = currALinkOIDSA.getFileId(); //[1];
-//            String[] currPALinkOIDSA = new String[]{currALinkOffset, currALinkID};
-            
-            IndexedAnchor poolAnchor = CurrentFocusedAnchor.getCurrentFocusedAnchor().getAnchor().getParent();
-            Bep currentBep = CurrentFocusedAnchor.getCurrentFocusedAnchor().getCurrentBep();
-            if (updateCurrAnchorStatus) {
-            	String currPALinkStatus = myPooler.getPoolAnchorBepLinkStatus(currTopicID, currentBep);
-            	int currPAnchorStatus = Integer.parseInt(myPooler.getPoolAnchorStatus(currTopicID, poolAnchor));
-            	poolAnchor.setStatus(currPAnchorStatus);
-            	int poolAnchorStatus = 0;
-            	if (currPALinkStatus.equals("-1")) {
-            		if (currPAnchorStatus == -1) {
-			          poolAnchorStatus = currPAnchorStatus;
-            		} else {
-			        poolAnchorStatus = rscManager.getPoolAnchorCompletedStatus(currTopicID, poolAnchor);
-            		}
-            	} else {
-			      poolAnchorStatus = rscManager.getPoolAnchorCompletedStatus(currTopicID, poolAnchor);
-            	}
-            	poolAnchor.setStatus(poolAnchorStatus);
-//            	if (poolAnchorStatus != 0)
-            		myPUpdater.updatePoolAnchorStatus(currTopicID, poolAnchor);            	
-            }
-            // -------------------------------------------------------------
-            // 1) Get the NEXT Anchor O, L, S, E, Status + its BEP link O, S, ID, Status
-            //    With TAB Nav Update --> NEXT TAB
-            Bep nextAnchorBepLinkVSA = rscManager.getNextTABWithUpdateNAV(currTopicID, CurrentFocusedAnchor.getCurrentFocusedAnchor().getAnchor(), currentBep, nextUnassessed);
-
-            updateAnchorChanges(nextAnchorBepLinkVSA, currentBep);
-            return nextAnchorBepLinkVSA;
+    	LTWAssessmentToolControler.getInstance().moveForwardALink(false, false);
     }
 
     // </editor-fold>
