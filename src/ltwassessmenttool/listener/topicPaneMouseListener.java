@@ -374,7 +374,7 @@ public class topicPaneMouseListener implements MouseInputListener {
 //        CurrentFocusedAnchor.getCurrentFocusedAnchor().setCurrentAnchorProperty(pAnchorO, pAnchorOL, currSCRSEName.screenPosStartToString(), currSCRSEName.screenPosStartToString(), pAnchorStatus, currSCRSEName.extendedLengthToString()/*, currSCRSEName.offsetIndexToString()*/);
         // ---------------------------------------------------------------------
 
-        os.setTABFieldValues(bepInfo);
+//        os.setTABFieldValues(bepInfo);
         // ---------------------------------------------------------------------
         // ---------------------------------------------------------------------
         // </editor-fold>
@@ -497,7 +497,7 @@ public class topicPaneMouseListener implements MouseInputListener {
             
             Bep link = LTWAssessmentToolControler.getInstance().goNextLink(false, true);
             CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(preTHyperOLSEStatus, link.getAssociatedAnchor(), link);
-            os.setTABFieldValues(link);
+//            os.setTABFieldValues(link);
 //            int bepRel = link.getRel();
 //			if (bepRel == 1) {
 //                this.linkTextPane.setBackground(this.linkPaneRelColor);

@@ -86,7 +86,7 @@ public class linkPaneMouseListener implements MouseInputListener {
 //    private Color linkPaneWhiteColor = Color.WHITE;
 //    private Color linkPaneRelColor = new Color(168, 232, 177);
 //    private Color linkPaneNonRelColor = new Color(255, 183, 165);
-    private ObservableSingleton os = null;
+
     private Hashtable<String, String[]> topicAnchorOLTSENHT = new Hashtable<String, String[]>();
     private Hashtable<String, Object> myTAnchorSEHiObj = new Hashtable<String, Object>();
 
@@ -133,7 +133,7 @@ public class linkPaneMouseListener implements MouseInputListener {
         myPoolUpdater = myPoolManager.getPoolUpdater();
         myTABTxtPaneManager = new tabTxtPaneManager();
         myTBATxtPaneManager = new tbaTxtPaneManager();
-        this.os = ObservableSingleton.getInstance();
+
         // ---------------------------------------------------------------------
         // In case:
         // Outgoing Anchor TXT: scrSE, String[]{O,L,TXT,S,E,num}
@@ -251,13 +251,11 @@ public class linkPaneMouseListener implements MouseInputListener {
 
             currALinkOIDSA.setRel(Bep.IRRELEVANT);
             String currLinkStatus = currALinkOIDSA.relString();
-            this.myPoolUpdater.updateTopicAnchorLinkRel(topicID, currAnchorOLNameStatusSA/*new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1]}*/,
-                    currALinkID, currLinkStatus);
+            this.myPoolUpdater.updateTopicAnchorLinkRel(topicID, currALinkOIDSA);
             // -----------------------------------------------------------------
             AssessedAnchor previous =  currALinkOIDSA.getAssociatedAnchor();
             Bep link = LTWAssessmentToolControler.getInstance().goNextLink(true, true);
             CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(previous, link.getAssociatedAnchor(), link);
-            os.setTABFieldValues(link);
     }
     
     private void updateRelevantCompletion(Bep link) {
@@ -280,16 +278,18 @@ public class linkPaneMouseListener implements MouseInputListener {
         if (setBep)
         	this.myPoolUpdater.updateTopicAnchorLinkOSStatus(topicID, currentLink.getAssociatedAnchor().getParent(), currentLink);
         else
-        	this.myPoolUpdater.updateTopicAnchorLinkRel(topicID,  currentLink.getAssociatedAnchor().getParent()/*new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1]}*/,
-          		 currentLink.getFileId(), currentLink.relString());
+        	this.myPoolUpdater.updateTopicAnchorLinkRel(topicID,  currentLink);
         
-        if (currentLink.getAssociatedAnchor().getStatus() == -1) {
+        int status = currentLink.getAssociatedAnchor().getStatus();
+        if (status != Bep.RELEVANT) {
         	currentLink.getAssociatedAnchor().setStatus(Bep.RELEVANT);
-        	
+        	myPoolUpdater.updatePoolSubanchorStatus(this.topicID, currentLink.getAssociatedAnchor());
         }
-        if (currentLink.getAssociatedAnchor().getParent().getStatus() == -1) {
+        
+        status = currentLink.getAssociatedAnchor().getParent().getStatus();
+        if (status != Bep.RELEVANT) {
         	currentLink.getAssociatedAnchor().setStatus(Bep.RELEVANT);
-        	
+        	myPoolUpdater.updatePoolAnchorStatus(this.topicID, currentLink.getAssociatedAnchor().getParent());
         }
     }
 
@@ -384,7 +384,7 @@ public class linkPaneMouseListener implements MouseInputListener {
             AssessedAnchor previous =   currentLink.getAssociatedAnchor();
             Bep link = LTWAssessmentToolControler.getInstance().goNextLink(true, true);
             CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(previous, link.getAssociatedAnchor(), link);
-            os.setTABFieldValues(link);
+//            os.setTABFieldValues(link);
     }
 
     private class timerTask extends TimerTask {
