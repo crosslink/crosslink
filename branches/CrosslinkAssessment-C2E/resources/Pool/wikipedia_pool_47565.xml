@@ -2236,7 +2236,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Australian dollar">81215</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="杯" aoffset="1709" alength="1" ext_length="1">
+			<anchor arel="-1" aname="杯" aoffset="1709" alength="1" ext_length="1">
 				<subanchor sarel="0" saname="杯" saoffset="1709" salength="1" rank="70">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Book:Stanley Cup Finals">27628889</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="FA Cup">11237</tobep>
@@ -2275,7 +2275,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Taça de Portugal">3049365</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Rangers F.C. Hall of Fame">2040526</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="子" saoffset="1710" salength="1" rank="51">
+				<subanchor sarel="-1" saname="子" saoffset="1710" salength="1" rank="51">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Son">293302</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Rat (zodiac)">277037</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Viscount">79913</tobep>

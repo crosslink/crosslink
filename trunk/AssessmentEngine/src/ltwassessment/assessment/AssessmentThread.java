@@ -35,10 +35,12 @@ public class AssessmentThread extends Thread {
     private JTextPane myTopicPane;
     private JTextPane myLinkPane;
     
-    private ResourcesManager myRSCManager;
+	private static ResourcesManager myRSCManager;
+    private static PoolUpdater myPoolUpdater;
+    private static PoolerManager myPoolManager;
+    
     private FOLTXTMatcher myFolMatcher;
-    private PoolUpdater myPoolUpdater;
-    private PoolerManager myPoolManager;
+    
     private tabTxtPaneManager myTABTxtPaneManager;
     private tbaTxtPaneManager myTBATxtPaneManager;
     private String topicID = "";
@@ -105,7 +107,7 @@ public class AssessmentThread extends Thread {
         myRSCManager = ResourcesManager.getInstance();
         myFolMatcher = FOLTXTMatcher.getInstance();
         myPoolManager = PoolerManager.getInstance();
-        myPoolUpdater = myPoolManager.getPoolUpdater();
+        myPoolUpdater = PoolerManager.getPoolUpdater();
         myTABTxtPaneManager = new tabTxtPaneManager();
         myTBATxtPaneManager = new tbaTxtPaneManager();
 
@@ -117,12 +119,22 @@ public class AssessmentThread extends Thread {
         // ---------------------------------------------------------------------
 
         this.topicID = myRSCManager.getTopicID();
-        Vector<String[]> topicIDNameVSA = this.myPoolManager.getAllTopicsInPool();
+        Vector<String[]> topicIDNameVSA = AssessmentThread.myPoolManager.getAllTopicsInPool();
         this.currTopicName = topicIDNameVSA.elementAt(0)[1].trim();
-
 	}
 
+    public static void setMyRSCManager(ResourcesManager myRSCManager) {
+		AssessmentThread.myRSCManager = myRSCManager;
+	}
 
+	public static void setMyPoolUpdater(PoolUpdater myPoolUpdater) {
+		AssessmentThread.myPoolUpdater = myPoolUpdater;
+	}
+
+	public static void setMyPoolManager(PoolerManager myPoolManager) {
+		AssessmentThread.myPoolManager = myPoolManager;
+	}
+	
     public static boolean isReadyForNextLink() {
 		return readyForNextLink;
 	}
@@ -202,24 +214,24 @@ public class AssessmentThread extends Thread {
     private void updateRelevantCompletion(Bep link) {
 //        String currALinkStatus = this.myPoolManager.getPoolAnchorBepLinkStatus(topicID, currAnchorOLNameStatusSA/*new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1]}*/, currALinkID);
         if (link.getRel() ==0 ) {
-            String[] outCompletion = this.myRSCManager.getOutgoingCompletion();
+            String[] outCompletion = AssessmentThread.myRSCManager.getOutgoingCompletion();
             String completedLinkN = outCompletion[0];
             String totalLinkN = outCompletion[1];
             completedLinkN = String.valueOf(Integer.valueOf(completedLinkN) + 1);
-            this.myRSCManager.updateOutgoingCompletion(completedLinkN + " : " + totalLinkN);
+            AssessmentThread.myRSCManager.updateOutgoingCompletion(completedLinkN + " : " + totalLinkN);
         }
     }
     
     private void setRelevant(Bep currentLink, boolean setBep) {
-        String currALinkStatus = this.myPoolManager.getPoolAnchorBepLinkStatus(topicID, currentLink);
+        String currALinkStatus = AssessmentThread.myPoolManager.getPoolAnchorBepLinkStatus(topicID, currentLink);
         if (currALinkStatus.equals("0")) 
         	updateRelevantCompletion(currentLink);  	
         
         currentLink.setRel(Bep.RELEVANT);
         if (setBep)
-        	this.myPoolUpdater.updateTopicAnchorLinkOSStatus(topicID, currentLink.getAssociatedAnchor().getParent(), currentLink);
+        	AssessmentThread.myPoolUpdater.updateTopicAnchorLinkOSStatus(topicID, currentLink.getAssociatedAnchor().getParent(), currentLink);
         else
-        	this.myPoolUpdater.updateTopicAnchorLinkRel(topicID,  currentLink);
+        	AssessmentThread.myPoolUpdater.updateTopicAnchorLinkRel(topicID,  currentLink);
         
         int status = currentLink.getAssociatedAnchor().getStatus();
         if (status != Bep.RELEVANT) {
@@ -256,7 +268,7 @@ public class AssessmentThread extends Thread {
     	Bep currentLink = CurrentFocusedAnchor.getCurrentFocusedAnchor().getCurrentBep();
     	String currALinkID = currentLink.getFileId();
             try {
-                int preTBStartPoint = this.myPoolManager.getPABepLinkStartP(topicID, currentLink.getAssociatedAnchor().getParent()/*new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1]}*/, currALinkID);
+                int preTBStartPoint = AssessmentThread.myPoolManager.getPABepLinkStartP(topicID, currentLink.getAssociatedAnchor().getParent()/*new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1]}*/, currALinkID);
                 int clickStartPoint = this.myLinkPane.getSelectionStart();
                 String scrTxtTilStartP = this.myLinkPane.getDocument().getText(0, clickStartPoint);
                 String linkBepStartP = String.valueOf(clickStartPoint);
@@ -278,15 +290,15 @@ public class AssessmentThread extends Thread {
                 // -------------------------------------------------------------
                 // Check & Update this Pool Anchor Status/Completion
                 // according to its BEP links status
-                String[] thisPAnchorCRatio = this.myRSCManager.getPoolAnchorCompletedRatio(topicID, currentLink.getAssociatedAnchor().getParent()/*new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1]}*/);
+                String[] thisPAnchorCRatio = AssessmentThread.myRSCManager.getPoolAnchorCompletedRatio(topicID, currentLink.getAssociatedAnchor().getParent()/*new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1]}*/);
                 if (thisPAnchorCRatio[0].equals(thisPAnchorCRatio[1])) {
 //                    String poolAnchorStatus = "1";
                 	currentLink.getAssociatedAnchor().getParent().setStatus(Bep.RELEVANT);
-                    this.myPoolUpdater.updatePoolAnchorStatus(topicID, currentLink.getAssociatedAnchor().getParent());
+                    AssessmentThread.myPoolUpdater.updatePoolAnchorStatus(topicID, currentLink.getAssociatedAnchor().getParent());
                 } else {
 //                    String poolAnchorStatus = "0";
                 	currentLink.getAssociatedAnchor().getParent().setStatus(Bep.UNASSESSED);
-                    this.myPoolUpdater.updatePoolAnchorStatus(topicID, currentLink.getAssociatedAnchor().getParent());
+                    AssessmentThread.myPoolUpdater.updatePoolAnchorStatus(topicID, currentLink.getAssociatedAnchor().getParent());
                 }
             } catch (BadLocationException ex) {
                 Logger.getLogger(AssessmentThread.class.getName()).log(Level.SEVERE, null, ex);
