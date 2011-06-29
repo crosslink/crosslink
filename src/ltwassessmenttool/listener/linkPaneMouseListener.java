@@ -270,6 +270,28 @@ public class linkPaneMouseListener implements MouseInputListener {
             this.myRSCManager.updateOutgoingCompletion(completedLinkN + " : " + totalLinkN);
         }
     }
+    
+    private void setRelevant(Bep currentLink, boolean setBep) {
+        String currALinkStatus = this.myPoolManager.getPoolAnchorBepLinkStatus(topicID, currentLink.getAssociatedAnchor().getParent(), currentLink.getFileId());
+        if (currALinkStatus.equals("0")) 
+        	updateRelevantCompletion(currentLink);  	
+        
+        currentLink.setRel(Bep.RELEVANT);
+        if (setBep)
+        	this.myPoolUpdater.updateTopicAnchorLinkOSStatus(topicID, currentLink.getAssociatedAnchor().getParent(), currentLink);
+        else
+        	this.myPoolUpdater.updateTopicAnchorLinkRel(topicID,  currentLink.getAssociatedAnchor().getParent()/*new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1]}*/,
+          		 currentLink.getFileId(), currentLink.relString());
+        
+        if (currentLink.getAssociatedAnchor().getStatus() == -1) {
+        	currentLink.getAssociatedAnchor().setStatus(Bep.RELEVANT);
+        	
+        }
+        if (currentLink.getAssociatedAnchor().getParent().getStatus() == -1) {
+        	currentLink.getAssociatedAnchor().setStatus(Bep.RELEVANT);
+        	
+        }
+    }
 
     private void doubleLeftClickEventAction() {
         // 1) get the NEW BEP Start Point & Offset after Double-Click
@@ -306,28 +328,24 @@ public class linkPaneMouseListener implements MouseInputListener {
 //                this.myLinkPane.repaint();
                 // -------------------------------------------------------------
                 // Update Outgoing Completion
-                String currALinkStatus = this.myPoolManager.getPoolAnchorBepLinkStatus(topicID, currentLink.getAssociatedAnchor().getParent(), currentLink.getFileId());
-                if (currALinkStatus.equals("0")) 
-                	updateRelevantCompletion(currentLink);
+                setRelevant(currentLink, true);
                 
                 // -------------------------------------------------------------
                 // Update this PAnchor BEP Link Status
-                String currLinkStatus = "1";
-                this.myPoolUpdater.updateTopicAnchorLinkOSStatus(topicID, currentLink.getAssociatedAnchor().getParent()/*new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1]}*/,
-                        new String[]{linkBepOffset, linkBepStartP, currALinkID},
-                        currLinkStatus);
+//                String currLinkStatus = "1";
+                
                 // -------------------------------------------------------------
                 // Check & Update this Pool Anchor Status/Completion
                 // according to its BEP links status
                 String[] thisPAnchorCRatio = this.myRSCManager.getPoolAnchorCompletedRatio(topicID, currentLink.getAssociatedAnchor().getParent()/*new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1]}*/);
                 if (thisPAnchorCRatio[0].equals(thisPAnchorCRatio[1])) {
-                    String poolAnchorStatus = "1";
-                    this.myPoolUpdater.updatePoolAnchorStatus(topicID, currentLink.getAssociatedAnchor().getParent()/*new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1]}*/,
-                            poolAnchorStatus);
+//                    String poolAnchorStatus = "1";
+                	currentLink.getAssociatedAnchor().getParent().setStatus(Bep.RELEVANT);
+                    this.myPoolUpdater.updatePoolAnchorStatus(topicID, currentLink.getAssociatedAnchor().getParent());
                 } else {
-                    String poolAnchorStatus = "0";
-                    this.myPoolUpdater.updatePoolAnchorStatus(topicID, currentLink.getAssociatedAnchor().getParent()/*new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1]}*/,
-                            poolAnchorStatus);
+//                    String poolAnchorStatus = "0";
+                	currentLink.getAssociatedAnchor().getParent().setStatus(Bep.UNASSESSED);
+                    this.myPoolUpdater.updatePoolAnchorStatus(topicID, currentLink.getAssociatedAnchor().getParent());
                 }
             } catch (BadLocationException ex) {
                 Logger.getLogger(linkPaneMouseListener.class.getName()).log(Level.SEVERE, null, ex);
@@ -354,52 +372,19 @@ public class linkPaneMouseListener implements MouseInputListener {
             
             // Update Outgoing Completion
             Bep currentLink = CurrentFocusedAnchor.getCurrentFocusedAnchor().getCurrentBep();
-            
+            setRelevant(currentLink, false);
             // -----------------------------------------------------------------
 //            int poolABepLinkStartP = this.myPoolManager.getPABepLinkStartP(topicID, currentLink.getAssociatedAnchor().getParent()/*new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1]}*/, currentLink.getFileId());
 //            // -----------------------------------------------------------------
 //            if (poolABepLinkStartP > -1) {
-            String currALinkStatus = this.myPoolManager.getPoolAnchorBepLinkStatus(topicID, currentLink.getAssociatedAnchor().getParent(), currentLink.getFileId());
-            if (currALinkStatus.equals("0")) {
+//            String currALinkStatus = this.myPoolManager.getPoolAnchorBepLinkStatus(topicID, currentLink.getAssociatedAnchor().getParent(), currentLink.getFileId());
+            
 
-//                this.myLinkPane.setBackground(this.linkPaneNonRelColor);
-                // -------------------------------------------------------------
-                updateRelevantCompletion(currentLink);
-
-                // -------------------------------------------------------------
-            }
-            currentLink.setRel(Bep.RELEVANT);
-            this.myPoolUpdater.updateTopicAnchorLinkRel(topicID,  currentLink.getAssociatedAnchor().getParent()/*new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1]}*/,
-           		 currentLink.getFileId(), currentLink.relString());
             
             AssessedAnchor previous =   currentLink.getAssociatedAnchor();
             Bep link = LTWAssessmentToolControler.getInstance().goNextLink(true, true);
             CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(previous, link.getAssociatedAnchor(), link);
             os.setTABFieldValues(link);
-//        } else {
-//            // For incoming TBA
-//            // -----------------------------------------------------------------
-//            String currBepOffset = this.myRSCManager.getCurrTopicBepOffset();
-//            String[] currBLinkOLIDSA = this.myRSCManager.getCurrTopicBTargetOLID(this.myLinkPane, this.topicID);
-//            logger("incoming_singleRightClick_" + currBepOffset + " --> " + currBLinkOLIDSA[2]);
-//            // -----------------------------------------------------------------
-//            this.myLinkPane.setBackground(this.linkPaneNonRelColor);
-//            // -----------------------------------------------------------------
-//            String currBLinkStatus = this.myPoolManager.getPoolBepAnchorLinkStatus(topicID, currBepOffset, currBLinkOLIDSA);
-//            if (currBLinkStatus.equals("0")) {
-//                String[] inCompletion = this.myRSCManager.getIncomingCompletion();
-//                String completedLinkN = inCompletion[0];
-//                String totalLinkN = inCompletion[1];
-//                completedLinkN = String.valueOf(Integer.valueOf(completedLinkN) + 1);
-//                this.myRSCManager.updateIncomingCompletion(completedLinkN + " : " + totalLinkN);
-//            }
-//            // -----------------------------------------------------------------
-//            String currLinkStatus = "1";
-//            this.myPoolUpdater.updateTopicBepLinkRel(topicID, currBepOffset,
-//                    currBLinkOLIDSA, currLinkStatus);
-//            // -----------------------------------------------------------------
-//            goNextLink();
-//        }
     }
 
     private class timerTask extends TimerTask {
@@ -448,127 +433,58 @@ public class linkPaneMouseListener implements MouseInputListener {
         }
     }
 
-//    private void updateLinkAnchorHighlight(JTextPane linkPane, String[] anchorSEPosSA) {
-//        // This might need to handle: isAssessment
-//        // 1) YES:
-//        // 2) NO: ONLY highlight Anchor Text
+//    private void updatePaneBepIcon(JTextPane txtPane, Vector<String> bepSCROffset, boolean isHighlighBEP) {
+//        // TODO: "isHighlighBEP"
+//        // 1) YES: Remove previous Highlight BEPs + Make a new Highlight BEP
+//        // 2) NO: INSERT BEP ICONs for this Topic
 //        try {
-//            Highlighter txtPaneHighlighter = linkPane.getHighlighter();
-//            int[] achorSCRPos = new int[]{Integer.valueOf(anchorSEPosSA[0]), Integer.valueOf(anchorSEPosSA[1])};
-//            Object aHighlightRef = txtPaneHighlighter.addHighlight(achorSCRPos[0], achorSCRPos[1], painters.getAnchorPainter());
-//            // -----------------------------------------------------------------
-//            Document myDoc = linkPane.getDocument();
-//            String myContent = myDoc.getText(0, myDoc.getLength()).toLowerCase();
-//            String hiltTxt = this.currTopicName.trim();
-//            int endIndex = 0;
-//            int wordLength = hiltTxt.length();
-//            while ((endIndex = myContent.indexOf(hiltTxt, endIndex)) != -1) {
-//                aHighlightRef = txtPaneHighlighter.addHighlight(endIndex, endIndex + wordLength, painters.getIrrelevantPainter());
-//                log("Topic Title Matched: " + endIndex);
+//            StyledDocument styDoc = (StyledDocument) txtPane.getDocument();
+//            Vector<String[]> HBepSCROffsetV = new Vector<String[]>();
+//            Vector<String> bepOLListV = myRSCManager.getTopicBepsOSVS();
+//            for (String thisBepOL : bepOLListV) {
+//                String[] thisBepOLSA = thisBepOL.split(" : ");
+//                HBepSCROffsetV.add(thisBepOLSA);
 //            }
-//        } catch (BadLocationException ex) {
-//            Logger.getLogger(topicPaneMouseListener.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//    }
-
-//    private void updateTopicAnchorsHighlight(JTextPane topicPane, String[] preAnchorSEStatus, String[] currAnchorSE) {
-//        // This might need to handle: isAssessment
-//        // 1) YES: Highlight Curr Selected Anchor Text, keep others remaining as THEIR Colors
-//        // 2) NO: Highlight Curr Selected Anchor Text, keep others remaining as Anchor Text Color
-//        try {
-//            boolean preDONEFlag = false;
-//            boolean currDONEFlag = false;
-//            Highlighter txtPaneHighlighter = topicPane.getHighlighter();
-//            Highlight[] highlights = txtPaneHighlighter.getHighlights();
-//            Object anchorHighlightRef = null;
-//            int[] achorSCRPos = new int[]{Integer.valueOf(currAnchorSE[0]), Integer.valueOf(currAnchorSE[1])};
-//            for (int i = 0; i < highlights.length; i++) {
-//                int sPos = highlights[i].getStartOffset();
-//                int ePos = highlights[i].getEndOffset();
-//                if (achorSCRPos[0] == sPos && achorSCRPos[1] == ePos) {
-//                    txtPaneHighlighter.removeHighlight(highlights[i]);
-//                    anchorHighlightRef = txtPaneHighlighter.addHighlight(sPos, ePos, painters.getSelectedPainter());
-//                    topicPane.repaint();
-//                    currDONEFlag = true;
-//                    if (currDONEFlag && preDONEFlag) {
-//                        break;
+//
+//            Style bepHStyle = styDoc.addStyle("bepHIcon", null);
+//            StyleConstants.setIcon(bepHStyle, new ImageIcon(bepHighlightIconImageFilePath));
+//            Style bepCStyle = styDoc.addStyle("bepCIcon", null);
+//            StyleConstants.setIcon(bepCStyle, new ImageIcon(bepCompletedIconImageFilePath));
+//            Style bepNStyle = styDoc.addStyle("bepNIcon", null);
+//            StyleConstants.setIcon(bepNStyle, new ImageIcon(bepNonrelevantIconImageFilePath));
+//            Style bepStyle = styDoc.addStyle("bepIcon", null);
+//            StyleConstants.setIcon(bepStyle, new ImageIcon(bepIconImageFilePath));
+//
+//            if (isHighlighBEP) {
+//                for (String[] scrBepOS : HBepSCROffsetV) {
+//                    styDoc.remove(Integer.valueOf(scrBepOS[1]), bepLength);
+//                    String thisPBepStatus = this.myPoolManager.getPoolBepStatus(topicID, scrBepOS[0]);
+//                    if (Integer.valueOf(thisPBepStatus) == 1) {
+//                        styDoc.insertString(Integer.valueOf(scrBepOS[1]), "CBEP", bepCStyle);
+//                    } else if (Integer.valueOf(thisPBepStatus) == -1) {
+//                        styDoc.insertString(Integer.valueOf(scrBepOS[1]), "NBEP", bepNStyle);
+//                    } else if (Integer.valueOf(thisPBepStatus) == 0) {
+//                        styDoc.insertString(Integer.valueOf(scrBepOS[1]), "TBEP", bepStyle);
 //                    }
-//                } else {
-//                    if (Integer.valueOf(preAnchorSEStatus[0]) == sPos && Integer.valueOf(preAnchorSEStatus[1]) == ePos) {
-//                        txtPaneHighlighter.removeHighlight(highlights[i]);
-//                        String pAnchorStatus = preAnchorSEStatus[2];
-//                        if (Integer.valueOf(pAnchorStatus) == 1) {
-//                            anchorHighlightRef = txtPaneHighlighter.addHighlight(sPos, ePos, painters.getCompletePainter());
-//                        } else if (Integer.valueOf(pAnchorStatus) == -1) {
-//                            anchorHighlightRef = txtPaneHighlighter.addHighlight(sPos, ePos, painters.getIrrelevantPainter());
-//                        } else {
-//                            anchorHighlightRef = txtPaneHighlighter.addHighlight(sPos, ePos, painters.getAnchorPainter());
-//                        }
-//                        topicPane.repaint();
-//                        preDONEFlag = true;
-//                        if (currDONEFlag && preDONEFlag) {
-//                            break;
-//                        }
-//                    }
+//
 //                }
+//                for (String scrOffset : bepSCROffset) {
+//                    styDoc.remove(Integer.valueOf(scrOffset), bepLength);
+//                    styDoc.insertString(Integer.valueOf(scrOffset), "HBEP", bepHStyle);
+//                }
+//
+//            } else {
+//                for (String scrOffset : bepSCROffset) {
+//                    styDoc.insertString(Integer.valueOf(scrOffset), "TBEP", bepStyle);
+//                }
+//
+//
 //            }
+//
 //        } catch (BadLocationException ex) {
 //            Logger.getLogger(topicPaneMouseListener.class.getName()).log(Level.SEVERE, null, ex);
 //        }
+//        txtPane.repaint();
 //    }
-
-    private void updatePaneBepIcon(JTextPane txtPane, Vector<String> bepSCROffset, boolean isHighlighBEP) {
-        // TODO: "isHighlighBEP"
-        // 1) YES: Remove previous Highlight BEPs + Make a new Highlight BEP
-        // 2) NO: INSERT BEP ICONs for this Topic
-        try {
-            StyledDocument styDoc = (StyledDocument) txtPane.getDocument();
-            Vector<String[]> HBepSCROffsetV = new Vector<String[]>();
-            Vector<String> bepOLListV = myRSCManager.getTopicBepsOSVS();
-            for (String thisBepOL : bepOLListV) {
-                String[] thisBepOLSA = thisBepOL.split(" : ");
-                HBepSCROffsetV.add(thisBepOLSA);
-            }
-
-            Style bepHStyle = styDoc.addStyle("bepHIcon", null);
-            StyleConstants.setIcon(bepHStyle, new ImageIcon(bepHighlightIconImageFilePath));
-            Style bepCStyle = styDoc.addStyle("bepCIcon", null);
-            StyleConstants.setIcon(bepCStyle, new ImageIcon(bepCompletedIconImageFilePath));
-            Style bepNStyle = styDoc.addStyle("bepNIcon", null);
-            StyleConstants.setIcon(bepNStyle, new ImageIcon(bepNonrelevantIconImageFilePath));
-            Style bepStyle = styDoc.addStyle("bepIcon", null);
-            StyleConstants.setIcon(bepStyle, new ImageIcon(bepIconImageFilePath));
-
-            if (isHighlighBEP) {
-                for (String[] scrBepOS : HBepSCROffsetV) {
-                    styDoc.remove(Integer.valueOf(scrBepOS[1]), bepLength);
-                    String thisPBepStatus = this.myPoolManager.getPoolBepStatus(topicID, scrBepOS[0]);
-                    if (Integer.valueOf(thisPBepStatus) == 1) {
-                        styDoc.insertString(Integer.valueOf(scrBepOS[1]), "CBEP", bepCStyle);
-                    } else if (Integer.valueOf(thisPBepStatus) == -1) {
-                        styDoc.insertString(Integer.valueOf(scrBepOS[1]), "NBEP", bepNStyle);
-                    } else if (Integer.valueOf(thisPBepStatus) == 0) {
-                        styDoc.insertString(Integer.valueOf(scrBepOS[1]), "TBEP", bepStyle);
-                    }
-
-                }
-                for (String scrOffset : bepSCROffset) {
-                    styDoc.remove(Integer.valueOf(scrOffset), bepLength);
-                    styDoc.insertString(Integer.valueOf(scrOffset), "HBEP", bepHStyle);
-                }
-
-            } else {
-                for (String scrOffset : bepSCROffset) {
-                    styDoc.insertString(Integer.valueOf(scrOffset), "TBEP", bepStyle);
-                }
-
-
-            }
-
-        } catch (BadLocationException ex) {
-            Logger.getLogger(topicPaneMouseListener.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        txtPane.repaint();
-    }
-// </editor-fold>
+//// </editor-fold>
 }

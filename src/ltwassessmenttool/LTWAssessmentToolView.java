@@ -848,22 +848,17 @@ public class LTWAssessmentToolView extends FrameView {
     	
 //        updateAnchor(/*currTopicOLSEStatusSA*/, );
         int currPAnchorStatus = Integer.parseInt(myPooler.getPoolAnchorStatus(currTopicID, currentAnchor));
-//      String[] targetAnchorScreenInfo = new String[]{"", currentAnchor.screenPosStartToString(), currentAnchor.screenPosEndToString(), 
-//		currentAnchor.extendedLengthToString(), currentAnchor.screenPosStartToString(), currentAnchor.screenPosEndToString()};
-//if (!targetAnchorScreenInfo[4].equals(currPAnchorS) || !targetAnchorScreenInfo[5].equals(currPAnchorE)) {
-    if (currentAnchor != nextAnchor) {
+
+    if (currentAnchor.getParent() != nextAnchor.getParent()) {
         int poolAnchorStatus = 0;
         if (currPAnchorStatus != 0){
             poolAnchorStatus = currPAnchorStatus;
         } else {
             poolAnchorStatus = rscManager.getPoolAnchorCompletedStatus(currTopicID, currentAnchor);
         }
-        myPUpdater.updatePoolAnchorStatus(currTopicID, currentAnchor.getParent()/*currPAnchorOLSA*/, String.valueOf(poolAnchorStatus));
-//        topicTextPane.getCaret().setDot(Integer.valueOf(currentAnchor.getScreenPosEnd()));
-//        topicTextPane.scrollRectToVisible(topicTextPane.getVisibleRect());
-//        topicTextPane.repaint();
-//        
-//	//      TopicHighlightManager.getInstance().update(currentAnchor, nextAnchor);
+        currentAnchor.getParent().setStatus(poolAnchorStatus);
+        myPUpdater.updatePoolAnchorStatus(currTopicID, currentAnchor.getParent());
+
     }
 		CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(currentAnchor, nextAnchor, nextAnchorBepLinkVSA);
         updateFields(nextAnchorBepLinkVSA);
@@ -995,8 +990,9 @@ public class LTWAssessmentToolView extends FrameView {
             	} else {
 			      poolAnchorStatus = rscManager.getPoolAnchorCompletedStatus(currTopicID, poolAnchor);
             	}
-            	if (poolAnchorStatus != 0)
-            		myPUpdater.updatePoolAnchorStatus(currTopicID, poolAnchor/*currPAnchorOLSA*/, String.valueOf(poolAnchorStatus));            	
+            	poolAnchor.setStatus(poolAnchorStatus);
+//            	if (poolAnchorStatus != 0)
+            		myPUpdater.updatePoolAnchorStatus(currTopicID, poolAnchor);            	
             }
             // -------------------------------------------------------------
             // 1) Get the NEXT Anchor O, L, S, E, Status + its BEP link O, S, ID, Status
