@@ -57,7 +57,7 @@ public class AssessmentThread extends Thread {
     public static final int EVENT_SET_RELEVANT = 1;
     public static final int EVENT_SET_IRRELEVANT = 2;
     
-    private static boolean readyForNextLink = false;
+    private static boolean readyForNextLink = true;
     private static int task = EVENT_SET_NOTHING;
 
     private Hashtable<String, String[]> topicAnchorOLTSENHT = new Hashtable<String, String[]>();
@@ -147,8 +147,8 @@ public class AssessmentThread extends Thread {
 		return task;
 	}
 
-	public static synchronized void setTask(int task) {
-		task = task;
+	public static synchronized void setTask(int aTask) {
+		task = aTask;
 	}
 
 	public void run() {
