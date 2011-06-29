@@ -39,6 +39,7 @@ import ltwassessment.assessment.AssessedAnchor;
 import ltwassessment.assessment.Bep;
 import ltwassessment.assessment.CurrentFocusedAnchor;
 import ltwassessment.assessment.IndexedAnchor;
+import ltwassessment.assessment.LTWAssessmentToolControler;
 import ltwassessment.font.AdjustFont;
 import ltwassessment.parsers.Xml2Html;
 import ltwassessmenttool.listener.CaretListenerLabel;
