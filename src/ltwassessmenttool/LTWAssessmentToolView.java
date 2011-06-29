@@ -977,7 +977,7 @@ public class LTWAssessmentToolView extends FrameView {
             IndexedAnchor poolAnchor = CurrentFocusedAnchor.getCurrentFocusedAnchor().getAnchor().getParent();
             Bep currentBep = CurrentFocusedAnchor.getCurrentFocusedAnchor().getCurrentBep();
             if (updateCurrAnchorStatus) {
-            	String currPALinkStatus = myPooler.getPoolAnchorBepLinkStatus(currTopicID, poolAnchor, currentBep.getFileId());
+            	String currPALinkStatus = myPooler.getPoolAnchorBepLinkStatus(currTopicID, currentBep);
             	int currPAnchorStatus = Integer.parseInt(myPooler.getPoolAnchorStatus(currTopicID, poolAnchor));
             	poolAnchor.setStatus(currPAnchorStatus);
             	int poolAnchorStatus = 0;
