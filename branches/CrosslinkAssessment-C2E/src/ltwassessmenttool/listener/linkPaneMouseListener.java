@@ -90,7 +90,7 @@ public class linkPaneMouseListener implements MouseInputListener {
     private Hashtable<String, String[]> topicAnchorOLTSENHT = new Hashtable<String, String[]>();
     private Hashtable<String, Object> myTAnchorSEHiObj = new Hashtable<String, Object>();
     
-    private boolean readyForNextLink = true;
+    private boolean readyForNextLink = false;
     
 
     private void log(String txt) {
@@ -214,11 +214,7 @@ public class linkPaneMouseListener implements MouseInputListener {
                 // 2) BG --> Green
                 // 3) Update bepLink: SP, Offset, Status-Rel
                 // 4) STAY, NOT Go Next
-                if (this.isReadyForNextLink()) {
-                	this.setReadyForNextLink(false);
-                	doubleLeftClickEventAction();
-                	this.setReadyForNextLink(true);
-                }
+                doubleLeftClickEventAction();
                 Thread.yield();
             }
         } else if (noOfClicks == 1) {
@@ -232,11 +228,7 @@ public class linkPaneMouseListener implements MouseInputListener {
                 // 1) BG --> Red
                 // 2) Update bepLink: SP, Offset, Status-Rel
                 // 3) GO NEXT
-                if (this.isReadyForNextLink()) {
-                	this.setReadyForNextLink(false);
-                	singleRightClickEventAction();
-                	this.setReadyForNextLink(true);
-                }
+                singleRightClickEventAction();
             }
         }
     }
@@ -251,12 +243,13 @@ public class linkPaneMouseListener implements MouseInputListener {
 //        if (this.isTAB) {
             // For outgoing TAB
             // -----------------------------------------------------------------
-            IndexedAnchor currAnchorOLNameStatusSA = this.myRSCManager.getCurrTopicAnchorOLNameStatusSA();
-            Bep currALinkOIDSA = this.myRSCManager.getCurrTopicATargetOID(this.myLinkPane, this.topicID);
-            String currALinkID = currALinkOIDSA.getFileId(); //[1];
-            logger("outgoing_singleRightClick_" + currAnchorOLNameStatusSA.offsetToString() + "-" + currAnchorOLNameStatusSA.lengthToString() + " --> " + currALinkID);
+//            IndexedAnchor currAnchorOLNameStatusSA = this.myRSCManager.getCurrTopicAnchorOLNameStatusSA();
+//            Bep currALinkOIDSA = this.myRSCManager.getCurrTopicATargetOID(this.myLinkPane, this.topicID);
+//            String currALinkID = currALinkOIDSA.getFileId(); //[1];
+//            logger("outgoing_singleRightClick_" + currAnchorOLNameStatusSA.offsetToString() + "-" + currAnchorOLNameStatusSA.lengthToString() + " --> " + currALinkID);
+        Bep currentLink = CurrentFocusedAnchor.getCurrentFocusedAnchor().getCurrentBep();
             // -----------------------------------------------------------------
-            String currALinkStatus = this.myPoolManager.getPoolAnchorBepLinkStatus(topicID, currALinkOIDSA.getAssociatedAnchor().getParent()/*new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1]}*/, currALinkID);
+            String currALinkStatus = this.myPoolManager.getPoolAnchorBepLinkStatus(topicID, currentLink);
             if (currALinkStatus.equals("0")) {
                 String[] outCompletion = this.myRSCManager.getOutgoingCompletion();
                 String completedLinkN = outCompletion[0];
@@ -268,11 +261,11 @@ public class linkPaneMouseListener implements MouseInputListener {
 //            this.myLinkPane.setBackground(this.linkPaneNonRelColor);
 //            this.myLinkPane.repaint();
 
-            currALinkOIDSA.setRel(Bep.IRRELEVANT);
-            String currLinkStatus = currALinkOIDSA.relString();
-            this.myPoolUpdater.updateTopicAnchorLinkRel(topicID, currALinkOIDSA);
+            currentLink.setRel(Bep.IRRELEVANT);
+            String currLinkStatus = currentLink.relString();
+            this.myPoolUpdater.updateTopicAnchorLinkRel(topicID, currentLink);
             // -----------------------------------------------------------------
-            AssessedAnchor previous =  currALinkOIDSA.getAssociatedAnchor();
+            AssessedAnchor previous =  currentLink.getAssociatedAnchor();
             Bep link = LTWAssessmentToolControler.getInstance().goNextLink(true, true);
             CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(previous, link.getAssociatedAnchor(), link);
     }
@@ -289,7 +282,7 @@ public class linkPaneMouseListener implements MouseInputListener {
     }
     
     private void setRelevant(Bep currentLink, boolean setBep) {
-        String currALinkStatus = this.myPoolManager.getPoolAnchorBepLinkStatus(topicID, currentLink.getAssociatedAnchor().getParent(), currentLink.getFileId());
+        String currALinkStatus = this.myPoolManager.getPoolAnchorBepLinkStatus(topicID, currentLink);
         if (currALinkStatus.equals("0")) 
         	updateRelevantCompletion(currentLink);  	
         
