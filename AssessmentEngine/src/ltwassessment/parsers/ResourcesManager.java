@@ -1420,8 +1420,6 @@ public class ResourcesManager {
     public Bep getTABWithUpdateNAV(String topicID, AssessedAnchor pAnchorOLSA, Bep currALinkOIDSA, boolean nextUnassessed, boolean forwardOrBackward) {
         // RETURN V[String[]{anchor_O, L}, String[]{BepLink_O, ID}]
         Bep nextTAB = null; //new Vector<String[]>();
-        String[] nextTAnchorOL = null;
-        String[] nextTABepOID = null;
         // Format: new String[]{0, 1_2_0_0}
         int pAnchorO = pAnchorOLSA.getParent().getOffset(); //Integer.valueOf(pAnchorOLSA[0]);
         int pAnchorL = pAnchorOLSA.getParent().getLength(); //Integer.valueOf(pAnchorOLSA[1]);
@@ -1436,7 +1434,7 @@ public class ResourcesManager {
         int i = 0, j = 0, k = 0;
         IndexedAnchor pAnchorOLNameStatus = null;
         IndexedAnchor thisPAnchorOLNameStatus = null;
-        String[] thisPAnchorSEStatus = null;
+//        String[] thisPAnchorSEStatus = null;
 //        String[] firstTAnchorOL = null;
         Bep firstTABepOID= null;
         Hashtable<String, Vector<Bep>> anchorBepLinksOIDStatus = this.getPoolAnchorBepLinksHashtable();
@@ -1478,7 +1476,7 @@ public class ResourcesManager {
         	if ((!firstAnchorFound && !nextUnassessed) || (!firstAnchorFound && nextUnassessed && pAnchorOLNameStatus.getStatus() == 0)) {
         		
         		thisPAnchorOLNameStatus = poolAnchorsOLNameStatusVSA.elementAt(i);
-        		thisPAnchorSEStatus = this.getTopicAnchorSEStatusByOL(topicID, new String[]{thisPAnchorOLNameStatus.offsetToString(), thisPAnchorOLNameStatus.lengthToString()});
+//        		thisPAnchorSEStatus = this.getTopicAnchorSEStatusByOL(topicID, new String[]{thisPAnchorOLNameStatus.offsetToString(), thisPAnchorOLNameStatus.lengthToString()});
 //        		firstTAnchorOL = new String[]{thisPAnchorOLNameStatus.offsetToString(), thisPAnchorOLNameStatus.lengthToString(), thisPAnchorSEStatus[0], thisPAnchorSEStatus[1], thisPAnchorOLNameStatus.statusToString(), thisPAnchorOLNameStatus.extendedLengthToString()};
                 Vector<Bep> thisBepLinksVSA = anchorBepLinksOIDStatus.get(thisPAnchorOLNameStatus.offsetToString() + "_" + thisPAnchorOLNameStatus.lengthToString());
  
@@ -1490,8 +1488,8 @@ public class ResourcesManager {
         			++j;
         		}
         		firstTABepOID = thisPABepLinkSet;
-        		firstTABepOID.getAssociatedAnchor().setScreenPosStart(Integer.parseInt(thisPAnchorSEStatus[0]));
-        		firstTABepOID.getAssociatedAnchor().setScreenPosEnd(Integer.parseInt(thisPAnchorSEStatus[1]));
+//        		firstTABepOID.getAssociatedAnchor().setScreenPosStart(Integer.parseInt(thisPAnchorSEStatus[0]));
+//        		firstTABepOID.getAssociatedAnchor().setScreenPosEnd(Integer.parseInt(thisPAnchorSEStatus[1]));
         		pABepFirstIndex = j - 1;
         		pAnchorFirstIndex = i;
         		firstAnchorFound = true;
@@ -1509,7 +1507,13 @@ public class ResourcesManager {
 
 //                log("bepLinksOSIDStatusVSA: " + bepLinksOSIDStatusVSA.size());
                
-                Vector<Bep> bepLinksVSA = anchorBepLinksOIDStatus.get(pAnchorO + "_" + pAnchorL);
+                int subanchorIndex = 0;
+                for (AssessedAnchor subanchor : pAnchorOLSA.getParent().getChildrenAnchors()) {
+                	if (subanchor == pAnchorOLSA)
+                		break;
+                	++subanchorIndex;
+                }
+                Vector<Bep> bepLinksVSA = pAnchorOLSA.getBeps(); //anchorBepLinksOIDStatus.get(pAnchorO + "_" + pAnchorL);
 //                log("bepLinksVSA: " + bepLinksVSA.size());
                 Bep bepLinksOSIDStatus = null;
                 int k_lhs, k_rhs;
@@ -1557,8 +1561,22 @@ public class ResourcesManager {
                     }
                 }
                 
-                if (k >= bepLinksVSA.size()) {
-                	firstAnchorFound = false;
+                if ((forwardOrBackward && k >= bepLinksVSA.size()) || (!forwardOrBackward && k < 0)) {
+                	subanchorIndex += step;
+                	if ((forwardOrBackward && subanchorIndex >= pAnchorOLSA.getParent().getChildrenAnchors().size()) || (!forwardOrBackward && subanchorIndex < 0))
+                	   	firstAnchorFound = false;
+                	else {
+                		if (forwardOrBackward) {
+                			nextTAB = pAnchorOLSA.getParent().getChildrenAnchors().get(subanchorIndex).getBeps().firstElement();
+                			pABepIndex = 0;
+                		}
+                		else {
+                			nextTAB = pAnchorOLSA.getParent().getChildrenAnchors().get(subanchorIndex).getBeps().lastElement();
+                			pABepIndex = pAnchorOLSA.getParent().getChildrenAnchors().get(subanchorIndex).getBeps().size() - 1;
+                		}
+                		break;
+                	}
+                		
 //                	continue;
                 }
                 else {
