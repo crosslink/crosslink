@@ -1096,6 +1096,12 @@ public class PoolerManager {
                         bep.setTargetTitle(thisToBepProperty[4]);
                         bep.setTargetLang(thisToBepProperty[3]);
                         bep.setRel(thisToBepProperty[2]);
+                        if (bep.getRel() == 1 && parsedAnchor.getStatus() == -1)
+                        	parsedAnchor.setStatus(Bep.RELEVANT);
+                        if (parsedSubanchor.getStatus() == -1) {
+	                        if (bep.getRel() == 0)
+	                        		bep.setRel(Bep.IRRELEVANT);
+                        }
                         bep.setOffset(thisToBepProperty[0]);
                         bep.setFileId(thisToBepProperty[1]);
                         bep.setIndex(index++);
