@@ -22,6 +22,7 @@ import ltwassessment.assessment.IndexedAnchor;
 import ltwassessment.parsers.PoolerManager;
 import ltwassessment.parsers.ResourcesManager;
 import ltwassessment.parsers.Xml2Html;
+import ltwassessment.utility.ObservableSingleton;
 import ltwassessment.utility.highlightPainters;
 
 public class TopicHighlightManager {
@@ -44,6 +45,8 @@ public class TopicHighlightManager {
 	
 	private static TopicHighlightManager instance = null;
 	
+    private ObservableSingleton os = null;
+    
 	public TopicHighlightManager() {
         org.jdesktop.application.ResourceMap resourceMap = AppResource.getInstance().getResourceMap();
         afTasnCollectionErrors = resourceMap.getString("AssFormXml.taskCollectionError");
@@ -51,6 +54,8 @@ public class TopicHighlightManager {
         bepHighlightIconImageFilePath = resourceMap.getString("bepHighlightIcon.imageFilePath");
         bepCompletedIconImageFilePath = resourceMap.getString("bepCompletedIcon.imageFilePath");
         bepNonrelevantIconImageFilePath = resourceMap.getString("bepNonrelevantIcon.imageFilePath");
+        
+        this.os = ObservableSingleton.getInstance();
 	}
 	
 	public static TopicHighlightManager getInstance() {
@@ -115,6 +120,8 @@ public class TopicHighlightManager {
 	}
 	
 	public void updateLinkPane(Bep link, boolean updateText) {
+		os.setTABFieldValues(link);
+		
 		if (updateText)
 			updateLinkPaneText(link);
 		

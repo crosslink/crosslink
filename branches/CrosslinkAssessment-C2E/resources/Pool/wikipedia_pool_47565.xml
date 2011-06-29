@@ -1113,10 +1113,10 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="匈" aoffset="642" alength="1" ext_length="3">
-				<subanchor sarel="0" saname="匈" saoffset="642" salength="1" rank="63">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hungary national football team">679739</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Zomba, Hungary">11588471</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hungary">13275</tobep>
+				<subanchor sarel="-1" saname="匈" saoffset="642" salength="1" rank="63">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hungary national football team">679739</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Zomba, Hungary">11588471</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hungary">13275</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Greater Hungary (political concept)">1745221</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="King of Hungary">324235</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Damak, Hungary">11420471</tobep>
@@ -1133,12 +1133,12 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Kingdom of Hungary">879716</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Outline of Hungary">16278825</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="匈牙利" saoffset="642" salength="3" rank="9">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hungary national football team">679739</tobep>
+				<subanchor sarel="1" saname="匈牙利" saoffset="642" salength="3" rank="9">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hungary national football team">679739</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Zomba, Hungary">11588471</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hungary">13275</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of rulers of Hungary">156666</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Greater Hungary (political concept)">1745221</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of rulers of Hungary">156666</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Greater Hungary (political concept)">1745221</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="King of Hungary">324235</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="People&apos;s Republic of Hungary">5298454</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Damak, Hungary">11420471</tobep>
@@ -1151,7 +1151,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Kingdom of Hungary">879716</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Outline of Hungary">16278825</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="匈牙利的" saoffset="642" salength="4" rank="67">
+				<subanchor sarel="-1" saname="匈牙利的" saoffset="642" salength="4" rank="67">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hungary national football team">679739</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Zomba, Hungary">11588471</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hungary">13275</tobep>

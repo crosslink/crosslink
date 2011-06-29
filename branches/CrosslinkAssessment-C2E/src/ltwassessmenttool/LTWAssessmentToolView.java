@@ -924,7 +924,7 @@ public class LTWAssessmentToolView extends FrameView {
 //        newTABFieldValues.add(pageTitle.trim());
 //        String[] pAnchorCompletionSA = rscManager.getOutgoingCompletion();
 //        newTABFieldValues.add(pAnchorCompletionSA[0] + " / " + pAnchorCompletionSA[1]);
-        os.setTABFieldValues(bep);
+//        os.setTABFieldValues(bep);
     }
     
     // <editor-fold defaultstate="collapsed" desc="Button Click to Go Back / Forward A Link">
@@ -1168,7 +1168,7 @@ public class LTWAssessmentToolView extends FrameView {
         }
         String currTargetFilePath = rscManager.getWikipediaFilePathByName(currTargetID + ".xml", currTargetLang);
         
-        os.setTABFieldValues(CurrTopicATargetOID);
+//        os.setTABFieldValues(CurrTopicATargetOID);
         
         /*************************************************************************
          * Step 5
