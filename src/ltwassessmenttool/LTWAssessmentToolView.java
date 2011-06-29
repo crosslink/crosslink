@@ -36,6 +36,7 @@ import javax.swing.text.StyledDocument;
 import ltwassessment.AppResource;
 import ltwassessment.Assessment;
 import ltwassessment.assessment.AssessedAnchor;
+import ltwassessment.assessment.AssessmentThread;
 import ltwassessment.assessment.Bep;
 import ltwassessment.assessment.CurrentFocusedAnchor;
 import ltwassessment.assessment.IndexedAnchor;
@@ -121,6 +122,8 @@ public class LTWAssessmentToolView extends FrameView {
     private static JTextPane linkTextPane = null;
     
     private static PoolUpdater myPUpdater = null;
+    
+    private AssessmentThread assessmentThread = null;
 
     static void log(Object content) {
         System.out.println(content);
@@ -135,29 +138,29 @@ public class LTWAssessmentToolView extends FrameView {
     
     //    Runnable runnable = new BasicThread2();
     // Create the thread supplying it with the runnable object
-    Thread threadAssessment = new Thread(new AssessmentThread());
-    private boolean assessmentLock = true; 
-    
-        /**
-	 * @return the assessmentLock
-	 */
-    synchronized public boolean isAssessmentLock() {
-		return assessmentLock;
-	}
-
-	/**
-	 * @param assessmentLock the assessmentLock to set
-	 */
-    synchronized public void setAssessmentLock(boolean assessmentLock) {
-		this.assessmentLock = assessmentLock;
-	}
-
-	class AssessmentThread implements Runnable {
-        // This method is called when the thread runs
-        public void run() {
-
-        }
-    }
+//    Thread threadAssessment = new Thread(new AssessmentThread());
+//    private boolean assessmentLock = true; 
+//    
+//        /**
+//	 * @return the assessmentLock
+//	 */
+//    synchronized public boolean isAssessmentLock() {
+//		return assessmentLock;
+//	}
+//
+//	/**
+//	 * @param assessmentLock the assessmentLock to set
+//	 */
+//    synchronized public void setAssessmentLock(boolean assessmentLock) {
+//		this.assessmentLock = assessmentLock;
+//	}
+//
+//	class AssessmentThread implements Runnable {
+//        // This method is called when the thread runs
+//        public void run() {
+//
+//        }
+//    }
 
     public LTWAssessmentToolView(SingleFrameApplication app) {
         super(app);
@@ -259,6 +262,9 @@ public class LTWAssessmentToolView extends FrameView {
         		currTopicID = null;
         		assessNextTopic();
             }
+            
+            assessmentThread = new AssessmentThread(thisTopicTextPane, thisLinkTextPane);
+            assessmentThread.start();
     }
     
     private void assessNextTopic() {
@@ -306,6 +312,10 @@ public class LTWAssessmentToolView extends FrameView {
         rscManager = ResourcesManager.getInstance();
         myPooler = PoolerManager.getInstance(poolFile);
         myPUpdater = myPooler.getPoolUpdater();
+        
+        AssessmentThread.setMyPoolManager(myPooler);
+        AssessmentThread.setMyRSCManager(rscManager);
+        AssessmentThread.setMyPoolUpdater(myPUpdater);
         
         topicAnchorsHT = myPooler.getTopicAllAnchors();
        
