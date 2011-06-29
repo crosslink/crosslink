@@ -89,6 +89,9 @@ public class linkPaneMouseListener implements MouseInputListener {
 
     private Hashtable<String, String[]> topicAnchorOLTSENHT = new Hashtable<String, String[]>();
     private Hashtable<String, Object> myTAnchorSEHiObj = new Hashtable<String, Object>();
+    
+    private boolean readyForNextLink = true;
+    
 
     private void log(String txt) {
         System.out.println(txt);
@@ -148,7 +151,15 @@ public class linkPaneMouseListener implements MouseInputListener {
         this.currTopicName = topicIDNameVSA.elementAt(0)[1].trim();
     }
 
-    // <editor-fold defaultstate="collapsed" desc="Mouse Events">
+    public synchronized boolean isReadyForNextLink() {
+		return readyForNextLink;
+	}
+
+	public synchronized void setReadyForNextLink(boolean readyForNextLink) {
+		this.readyForNextLink = readyForNextLink;
+	}
+
+	// <editor-fold defaultstate="collapsed" desc="Mouse Events">
     public void mouseClicked(MouseEvent me) {
         /**
          * CASE 1: Left-Click -> RELEVANT + NEXT
@@ -203,7 +214,11 @@ public class linkPaneMouseListener implements MouseInputListener {
                 // 2) BG --> Green
                 // 3) Update bepLink: SP, Offset, Status-Rel
                 // 4) STAY, NOT Go Next
-                doubleLeftClickEventAction();
+                if (this.isReadyForNextLink()) {
+                	this.setReadyForNextLink(false);
+                	doubleLeftClickEventAction();
+                	this.setReadyForNextLink(true);
+                }
                 Thread.yield();
             }
         } else if (noOfClicks == 1) {
@@ -217,7 +232,11 @@ public class linkPaneMouseListener implements MouseInputListener {
                 // 1) BG --> Red
                 // 2) Update bepLink: SP, Offset, Status-Rel
                 // 3) GO NEXT
-                singleRightClickEventAction();
+                if (this.isReadyForNextLink()) {
+                	this.setReadyForNextLink(false);
+                	singleRightClickEventAction();
+                	this.setReadyForNextLink(true);
+                }
             }
         }
     }

@@ -305,6 +305,50 @@ public class PoolerManager {
         }
         return pAnchorAllLinkStatus;
     }
+    
+    public Vector<String> getPoolSubanchorAllLinkStatus(String topicID, AssessedAnchor poolAnchorOL) {
+        Vector<String> pAnchorAllLinkStatus = new Vector<String>();
+        VTDGen vg = new VTDGen();
+
+        if (vg.parseFile(poolXMLPath, true)) {
+            FileOutputStream fos = null;
+            try {
+                VTDNav vn = vg.getNav();
+                File fo = new File(poolXMLPath);
+                fos = new FileOutputStream(fo);
+
+                AutoPilot ap = new AutoPilot(vn);
+                XMLModifier xm = new XMLModifier(vn);
+
+                // Pool Anchor
+                String xPath1 = "/crosslink-assessment/topic[@file='" + topicID + "']/outgoinglinks/anchor[@aoffset='" + poolAnchorOL.getParent().offsetToString()/*[0]*/ + "' and @alength='" + poolAnchorOL.getParent().lengthToString()/*[1]*/ + 
+                		"']/subanchor[@saoffset='" + poolAnchorOL.offsetToString() + "' and @salength='" + poolAnchorOL.lengthToString() + "']/tobep";
+                ap.selectXPath(xPath1);
+                int i = -1;
+                while ((i = ap.evalXPath()) != -1) {
+                    int j = vn.getAttrVal("tbrel");
+                    if (j != -1) {
+                        pAnchorAllLinkStatus.add(vn.toRawString(j));
+                    }
+                }
+                xm.output(fos);
+                fos.close();
+            } catch (IOException ex) {
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (TranscodeException ex) {
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (XPathEvalException ex) {
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (NavException ex) {
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (XPathParseException ex) {
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (ModifyException ex) {
+                Logger.getLogger(PoolerManager.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+        return pAnchorAllLinkStatus;
+    }
 
     public String getPoolAnchorBepLinkStartP(String topicID, IndexedAnchor currSCRSEName, String targetID) {
         String pAnchorStartP = "0";

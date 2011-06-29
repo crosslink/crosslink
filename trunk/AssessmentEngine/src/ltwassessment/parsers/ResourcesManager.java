@@ -1836,13 +1836,23 @@ public class ResourcesManager {
 
     public int getPoolAnchorCompletedStatus(String topicID, IndexedAnchor poolAnchorOL) {
         // RETURN new String[]{Completed, Total}
+        Vector<String> tABepSetVSA = this.pooler.getPoolAnchorAllLinkStatus(topicID, poolAnchorOL);
+        return getCompletedStatus(tABepSetVSA);        
+    }
+    
+    public int getPoolSubanchorCompletedStatus(String topicID, AssessedAnchor poolAnchorOL) {
+        // RETURN new String[]{Completed, Total}
+        Vector<String> tABepSetVSA = this.pooler.getPoolSubanchorAllLinkStatus(topicID, poolAnchorOL);
+        return getCompletedStatus(tABepSetVSA);        
+    }
+    
+    public int getCompletedStatus(Vector<String> tABepSetVSA) {
         int poolBepCompletedStatus = 0;
         int totalCounter = 0;
         int completeCounter = 0;
         int RelCounter = 0;
         int NONRelCounter = 0;
-
-        Vector<String> tABepSetVSA = this.pooler.getPoolAnchorAllLinkStatus(topicID, poolAnchorOL);
+        
         totalCounter = tABepSetVSA.size();
         for (String bepLinkStatus : tABepSetVSA) {
             if (bepLinkStatus.equals("-1")) {
