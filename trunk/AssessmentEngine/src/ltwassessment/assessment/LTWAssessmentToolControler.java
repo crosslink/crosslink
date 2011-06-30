@@ -150,18 +150,6 @@ public class LTWAssessmentToolControler {
     
     public Bep moveForwardALink(boolean updateCurrAnchorStatus, boolean nextUnassessed) {
         // Click the button to Go Back one Link
-//        PoolUpdater myPUpdater = new PoolUpdater();
-//        boolean isTABOutgoing = Boolean.valueOf(System.getProperty(sysPropertyIsTABKey));
-//        if (isTABOutgoing) {
-            // <editor-fold defaultstate="collapsed" desc="Update TAB Topic, Link">
-//            String[] currTopicOLSEStatusSA = CurrentFocusedAnchor.getCurrentFocusedAnchor().toArray();
-//            String currPAnchorO = currTopicOLSEStatusSA[0];
-//            String currPAnchorL = currTopicOLSEStatusSA[1];
-//            String[] currPAnchorOLSA = new String[]{currPAnchorO, currPAnchorL};
-//            Bep currALinkOIDSA = rscManager.getCurrTopicATargetOID(linkTextPane, currTopicID);
-//            String currALinkOffset = currALinkOIDSA.offsetToString(); //[0];
-//            String currALinkID = currALinkOIDSA.getFileId(); //[1];
-//            String[] currPALinkOIDSA = new String[]{currALinkOffset, currALinkID};
     	String currTopicID = rscManager.getTopicID();
             IndexedAnchor poolAnchor = CurrentFocusedAnchor.getCurrentFocusedAnchor().getAnchor().getParent();
             Bep currentBep = CurrentFocusedAnchor.getCurrentFocusedAnchor().getCurrentBep();
@@ -172,9 +160,9 @@ public class LTWAssessmentToolControler {
             	int poolAnchorStatus = 0;
             	if (currPALinkStatus.equals("-1")) {
             		if (currPAnchorStatus == -1) {
-			          poolAnchorStatus = currPAnchorStatus;
+            			poolAnchorStatus = currPAnchorStatus;
             		} else {
-			        poolAnchorStatus = rscManager.getPoolAnchorCompletedStatus(currTopicID, poolAnchor);
+            			poolAnchorStatus = rscManager.getPoolAnchorCompletedStatus(currTopicID, poolAnchor);
             		}
             	} else {
 			      poolAnchorStatus = rscManager.getPoolAnchorCompletedStatus(currTopicID, poolAnchor);
@@ -186,7 +174,7 @@ public class LTWAssessmentToolControler {
             // -------------------------------------------------------------
             // 1) Get the NEXT Anchor O, L, S, E, Status + its BEP link O, S, ID, Status
             //    With TAB Nav Update --> NEXT TAB
-            Bep nextAnchorBepLinkVSA = rscManager.getNextTABWithUpdateNAV(currTopicID, CurrentFocusedAnchor.getCurrentFocusedAnchor().getAnchor(), currentBep, nextUnassessed);
+            Bep nextAnchorBepLinkVSA = rscManager.getNextTABWithUpdateNAV(currTopicID, currentBep, nextUnassessed);
 
             updateAnchorChanges(nextAnchorBepLinkVSA, currentBep);
             return nextAnchorBepLinkVSA;

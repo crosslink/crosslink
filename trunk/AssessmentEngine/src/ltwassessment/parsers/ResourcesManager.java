@@ -1055,8 +1055,8 @@ public class ResourcesManager {
     // </editor-fold>
 
     // <editor-fold defaultstate="collapsed" desc="Get NEXT UNAssessed TAB/TBA & Update NAV Indice">
-    public Bep getNextUNAssTABWithUpdateNAV(String topicID, AssessedAnchor pAnchorOLSA, Bep linkBepOID) {
-    	return getTABWithUpdateNAV(topicID, pAnchorOLSA, linkBepOID, true, true);
+    public Bep getNextUNAssTABWithUpdateNAV(String topicID, Bep linkBepOID) {
+    	return getTABWithUpdateNAV(topicID, linkBepOID, true, true);
     }
 //        // RETURN V[String[]{anchor_O, L}, String[]{BepLink_O, ID}]
 //        Vector<String[]> nextTAB = new Vector<String[]>();
@@ -1409,15 +1409,109 @@ public class ResourcesManager {
     // </editor-fold>
 
     // <editor-fold defaultstate="collapsed" desc="Get NEXT TAB/TBA & Update NAV Indice">
-    public Bep getPreTABWithUpdateNAV(String topicID, AssessedAnchor pAnchorOLSA, Bep currALinkOIDSA, boolean nextUnassessed) {
-    	return getTABWithUpdateNAV(topicID, pAnchorOLSA, currALinkOIDSA, nextUnassessed, false);
+    public Bep getPreTABWithUpdateNAV(String topicID,Bep currALinkOIDSA, boolean nextUnassessed) {
+    	return getTABWithUpdateNAV(topicID, currALinkOIDSA, nextUnassessed, false);
     }
     
-    public Bep getNextTABWithUpdateNAV(String topicID, AssessedAnchor pAnchorOLSA, Bep linkBepOID, boolean nextUnassessed) {
-    	return getTABWithUpdateNAV(topicID, pAnchorOLSA, linkBepOID, nextUnassessed, true);
+    public Bep getNextTABWithUpdateNAV(String topicID, Bep linkBepOID, boolean nextUnassessed) {
+    	return getTABWithUpdateNAV(topicID, linkBepOID, nextUnassessed, true);
     }
     
-    public Bep getTABWithUpdateNAV(String topicID, AssessedAnchor pAnchorOLSA, Bep currALinkOIDSA, boolean nextUnassessed, boolean forwardOrBackward) {
+    public Bep getTABWithUpdateNAV(String topicID, Bep currentLink, boolean nextUnassessed, boolean forwardOrBackward) {
+    	Bep link = null;
+    	IndexedAnchor anchor = null; 
+    	AssessedAnchor subanchor = null;
+    	
+    	link = forwardOrBackward ? currentLink.getAssociatedAnchor().getNextLink(currentLink, nextUnassessed) : currentLink.getAssociatedAnchor().getPreviousLink(currentLink, nextUnassessed);
+    	
+    	
+//    	subanchor = forwardOrBackward ? pAnchorOLSA.getParent().getNext(pAnchorOLSA, nextUnassessed) : pAnchorOLSA.getParent().getPrevious(pAnchorOLSA, nextUnassessed);
+//    	
+//    	if (subanchor != null)
+//    		link = forwardOrBackward ? subanchor.getNextLink(currALinkOIDSA, nextUnassessed) : subanchor.getPreviousLink(currALinkOIDSA, nextUnassessed);
+//		else {
+    	if (link == null) {
+			anchor = forwardOrBackward ? getNextAnchor(currentLink.getAssociatedAnchor().getParent(), nextUnassessed) : getPreviousAnchor(currentLink.getAssociatedAnchor().getParent(), nextUnassessed);
+			if (anchor != null) {
+				subanchor = forwardOrBackward ? anchor.getNext(null, nextUnassessed) : anchor.getPrevious(null, nextUnassessed);
+				if (subanchor != null)
+					link = forwardOrBackward ? subanchor.getNextLink(null, nextUnassessed) : subanchor.getPreviousLink(null, nextUnassessed);
+			}
+    	}
+    	 
+    	 if (link == null)
+    		 link = currentLink;
+    	return link;
+    }
+    
+    private IndexedAnchor getNextAnchor(IndexedAnchor currentAnchor, boolean nextUnassessed) {
+    	Vector<IndexedAnchor> poolAnchorsOLNameStatusVSA = this.getPoolAnchorsOLNameStatusV();
+    	int i = 0;
+    	IndexedAnchor anchor = null;
+    	IndexedAnchor  unassessedAnchor = null;
+    	for (; i < poolAnchorsOLNameStatusVSA.size(); ++i) {
+    		anchor = poolAnchorsOLNameStatusVSA.get(i);
+    		
+    		if (nextUnassessed && unassessedAnchor == null && anchor.checkStatus() == IndexedAnchor.ASSESSMENT_FINISHED_NO)
+    			unassessedAnchor = anchor;
+    		
+    		if (anchor == currentAnchor) {
+    			++i;
+    			break;
+    		}
+    	}
+    	
+    	if (nextUnassessed)
+	    	for (; i < poolAnchorsOLNameStatusVSA.size(); ++i) {
+	    		anchor = poolAnchorsOLNameStatusVSA.get(i);
+	    		if (anchor.checkStatus() == IndexedAnchor.ASSESSMENT_FINISHED_NO) {
+	    			unassessedAnchor = anchor;
+	    			break;
+	    		}
+	    	}
+    	
+    	if (i >= poolAnchorsOLNameStatusVSA.size())
+    		i = 0;
+    	
+    	anchor = poolAnchorsOLNameStatusVSA.get(i);
+    	return nextUnassessed ? unassessedAnchor : anchor;
+    }
+    
+    private IndexedAnchor getPreviousAnchor(IndexedAnchor currentAnchor, boolean nextUnassessed) {
+    	Vector<IndexedAnchor> poolAnchorsOLNameStatusVSA = this.getPoolAnchorsOLNameStatusV();
+    	int i = poolAnchorsOLNameStatusVSA.size() - 1;
+    	IndexedAnchor anchor = null;
+    	IndexedAnchor  unassessedAnchor = null;
+    	for (; i > -1; --i) {
+    		anchor = poolAnchorsOLNameStatusVSA.get(i);
+    		
+    		if (nextUnassessed && unassessedAnchor == null && anchor.checkStatus() == IndexedAnchor.ASSESSMENT_FINISHED_NO)
+    			unassessedAnchor = anchor;
+    		
+    		if (anchor == currentAnchor) {
+    			--i;
+    			break;
+    		}
+    	}
+    	
+    	if (nextUnassessed)
+	    	for (; i > -1; --i) {
+	    		anchor = poolAnchorsOLNameStatusVSA.get(i);
+	    		if (anchor.checkStatus() == IndexedAnchor.ASSESSMENT_FINISHED_NO) {
+	    			unassessedAnchor = anchor;
+	    			break;
+	    		}
+	    	}
+    	
+    	if (i < 0)
+    		i = poolAnchorsOLNameStatusVSA.size() - 1;
+    	
+    	anchor = poolAnchorsOLNameStatusVSA.get(i);
+    	return nextUnassessed ? unassessedAnchor : anchor;
+    }
+    
+    
+    public Bep getTABWithUpdateNAVOld(String topicID, AssessedAnchor pAnchorOLSA, Bep currALinkOIDSA, boolean nextUnassessed, boolean forwardOrBackward) {
         // RETURN V[String[]{anchor_O, L}, String[]{BepLink_O, ID}]
         Bep nextTAB = null; //new Vector<String[]>();
         // Format: new String[]{0, 1_2_0_0}
@@ -1836,14 +1930,37 @@ public class ResourcesManager {
 
     public int getPoolAnchorCompletedStatus(String topicID, IndexedAnchor poolAnchorOL) {
         // RETURN new String[]{Completed, Total}
-        Vector<String> tABepSetVSA = this.pooler.getPoolAnchorAllLinkStatus(topicID, poolAnchorOL);
-        return getCompletedStatus(tABepSetVSA);        
+    	int status = poolAnchorOL.getStatus();
+    	int subStatus = Bep.UNASSESSED;
+    	for (AssessedAnchor subanchor : poolAnchorOL.getChildrenAnchors()) {
+    		subStatus = getPoolSubanchorCompletedStatus(topicID, subanchor);
+    			
+    		if (subStatus == Bep.UNASSESSED) {
+    			status = Bep.UNASSESSED;
+    			break;
+    		}
+    			
+    		if (subStatus == Bep.RELEVANT)
+    			status = Bep.RELEVANT;
+    	}
+    	
+    	if (subStatus != Bep.UNASSESSED)
+    		poolAnchorOL.setStatus(status);
+    	else
+    		poolAnchorOL.setStatus(Bep.UNASSESSED);
+        return poolAnchorOL.getStatus();        
     }
     
     public int getPoolSubanchorCompletedStatus(String topicID, AssessedAnchor poolAnchorOL) {
         // RETURN new String[]{Completed, Total}
-        Vector<String> tABepSetVSA = this.pooler.getPoolSubanchorAllLinkStatus(topicID, poolAnchorOL);
-        return getCompletedStatus(tABepSetVSA);        
+    	int status;
+        if (poolAnchorOL.getStatus() != Bep.IRRELEVANT) {
+	        
+	        Vector<String> tABepSetVSA = this.pooler.getPoolSubanchorAllLinkStatus(topicID, poolAnchorOL);
+	        status  = getCompletedStatus(tABepSetVSA);
+	        poolAnchorOL.setStatus(status);
+        }
+        return poolAnchorOL.getStatus();        
     }
     
     public int getCompletedStatus(Vector<String> tABepSetVSA) {
