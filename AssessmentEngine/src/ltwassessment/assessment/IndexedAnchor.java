@@ -14,6 +14,9 @@ import ltwassessment.view.TopicHighlightManager;
 public class IndexedAnchor extends Anchor {
 	public final static int UNINITIALIZED_VALUE = -1; 
 	
+	public static final int ASSESSMENT_FINISHED_YES = 4;
+	public static final int ASSESSMENT_FINISHED_NO = 8;
+	
 	protected int status = 0;
 	
 	protected int offsetIndex;
@@ -257,18 +260,80 @@ public class IndexedAnchor extends Anchor {
 	    } 
 	}
 	
-	public AssessedAnchor getNext(AssessedAnchor currentAnchor) {
+	public AssessedAnchor getNext(AssessedAnchor currentAnchor, boolean needNotFinished) {
     	int i = 0;
-    	for (; i < getChildrenAnchors().size(); ++i) {
-    		AssessedAnchor anchor = getChildrenAnchors().get(i);
-    		if (anchor == currentAnchor) {
-    			++i;
-    			break;
-    		}
-    	}
+    	AssessedAnchor anchor = null;
+    	AssessedAnchor  unassessedAnchor = null;
+    	if (currentAnchor != null)
+	    	for (; i < getChildrenAnchors().size(); ++i) {
+	    		anchor = getChildrenAnchors().get(i);
+	    		
+	    		if (needNotFinished && unassessedAnchor == null && anchor.checkStatus() == ASSESSMENT_FINISHED_NO)
+	    			unassessedAnchor = anchor;
+	    		
+	    		if (anchor == currentAnchor) {
+	    			++i;
+	    			break;
+	    		}
+	    	}
+    	
+    	if (needNotFinished)
+	    	for (; i < getChildrenAnchors().size(); ++i) {
+	    		anchor = getChildrenAnchors().get(i);
+	    		if (anchor.checkStatus() == ASSESSMENT_FINISHED_NO) {
+	    			unassessedAnchor = anchor;
+	    			break;
+	    		}
+	    	}
+    	
     	if (i >= getChildrenAnchors().size())
     		i = 0;
     	
-    	return getChildrenAnchors().get(i);
+    	anchor = getChildrenAnchors().get(i);
+    	return needNotFinished ? unassessedAnchor : anchor;
+	}
+	
+	public AssessedAnchor getPrevious(AssessedAnchor currentAnchor, boolean needNotFinished) {		
+    	int i = getChildrenAnchors().size() - 1;
+    	AssessedAnchor anchor = null;
+    	AssessedAnchor  unassessedAnchor = null;
+    	if (currentAnchor != null)
+	    	for (; i > -1; --i) {
+	    		anchor = getChildrenAnchors().get(i);
+	    		
+	    		if (needNotFinished && unassessedAnchor == null && anchor.checkStatus() == ASSESSMENT_FINISHED_NO)
+	    			unassessedAnchor = anchor;
+	    		
+	    		if (anchor == currentAnchor) {
+	    			--i;
+	    			break;
+	    		}
+	    	}
+    	
+    	if (needNotFinished)
+	    	for (; i > -1; --i) {
+	    		anchor = getChildrenAnchors().get(i);
+	    		if (anchor.checkStatus() == ASSESSMENT_FINISHED_NO) {
+	    			unassessedAnchor = anchor;
+	    			break;
+	    		}
+	    	}
+    	
+    	if (i < 0)
+    		i = getChildrenAnchors().size() - 1;
+    	
+    	anchor = getChildrenAnchors().get(i);
+    	return needNotFinished ? unassessedAnchor : anchor;
+	}
+	
+	public int checkStatus() {
+		int finished = ASSESSMENT_FINISHED_YES;
+		for (AssessedAnchor subanchor : getChildrenAnchors()) {
+			if (subanchor.checkStatus() == ASSESSMENT_FINISHED_NO) {
+				finished = ASSESSMENT_FINISHED_NO;
+				break;
+			}
+		}
+		return finished;
 	}
 }

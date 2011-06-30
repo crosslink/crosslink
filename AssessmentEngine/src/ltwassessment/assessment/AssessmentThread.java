@@ -139,8 +139,8 @@ public class AssessmentThread extends Thread {
 		return readyForNextLink;
 	}
 
-	public static void setReadyForNextLink(boolean readyForNextLink) {
-		readyForNextLink = readyForNextLink;
+	private static void setReadyForNextLink(boolean ready) {
+		readyForNextLink = ready;
 	}
 	
 	public static synchronized int getTask() {
@@ -167,6 +167,11 @@ public class AssessmentThread extends Thread {
 					break;
 				default:
 					break;
+				}
+				try {
+					Thread.sleep(2000);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
 				}
 				setTask(EVENT_SET_NOTHING);
 				setReadyForNextLink(true);
