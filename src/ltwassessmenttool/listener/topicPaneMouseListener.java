@@ -38,6 +38,8 @@ import ltwassessment.assessment.Bep;
 import ltwassessment.assessment.CurrentFocusedAnchor;
 import ltwassessment.assessment.IndexedAnchor;
 import ltwassessment.assessment.LTWAssessmentToolControler;
+import ltwassessment.listener.linkPaneMouseListener;
+import ltwassessment.listener.topicPaneMouseListener;
 import ltwassessment.parsers.FOLTXTMatcher;
 import ltwassessment.parsers.Xml2Html;
 import ltwassessment.parsers.PoolerManager;

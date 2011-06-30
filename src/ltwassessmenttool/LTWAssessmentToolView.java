@@ -42,10 +42,10 @@ import ltwassessment.assessment.CurrentFocusedAnchor;
 import ltwassessment.assessment.IndexedAnchor;
 import ltwassessment.assessment.LTWAssessmentToolControler;
 import ltwassessment.font.AdjustFont;
+import ltwassessment.listener.CaretListenerLabel;
+import ltwassessment.listener.linkPaneMouseListener;
+import ltwassessment.listener.topicPaneMouseListener;
 import ltwassessment.parsers.Xml2Html;
-import ltwassessmenttool.listener.CaretListenerLabel;
-import ltwassessmenttool.listener.linkPaneMouseListener;
-import ltwassessmenttool.listener.topicPaneMouseListener;
 import ltwassessment.parsers.FOLTXTMatcher;
 import ltwassessment.parsers.PoolerManager;
 import ltwassessment.parsers.ResourcesManager;
@@ -80,11 +80,7 @@ public class LTWAssessmentToolView extends FrameView {
     // Variables
     private boolean isTopicWikipedia = false;
     private boolean isLinkWikipedia = false;
-    private String currTopicFilePath = "";
-    private static String currTopicID = "";
-    private static String currTopicName = "";
-    // -------------------------------------------------------------------------
-    private Vector<IndexedAnchor> topicAnchorOLSEStatus; // = new Vector<String[]>();
+
 //    private Vector<String[]> topicBepScrStatus = new Vector<String[]>();
 //    private Vector<String[]> currBepXMLOffset = new Vector<String[]>();
 //    private Vector<String[]> currBepSCROffset = new Vector<String[]>();
@@ -104,9 +100,7 @@ public class LTWAssessmentToolView extends FrameView {
     //4) record Topic (incoming : topicFile) -> [0]:Offset
 //    private String[] afProperty = new String[4];
 //    private Vector<String[]> RunTopics = new Vector<String[]>();
-    private Hashtable<String, Vector<IndexedAnchor>> topicAnchorsHT = new Hashtable<String, Vector<IndexedAnchor>>();
-    private Hashtable<String, Vector<String[]>> topicSubanchorsHT = new Hashtable<String, Vector<String[]>>();
-    private Hashtable<String, Vector<String[]>> topicBepsHT = new Hashtable<String, Vector<String[]>>();
+
 //    private Hashtable<String, String[]> topicAnchorOLTSENHT = new Hashtable<String, String[]>();
     // -------------------------------------------------------------------------
 //    private static Color linkPaneWhiteColor = Color.WHITE;
@@ -135,33 +129,9 @@ public class LTWAssessmentToolView extends FrameView {
     public static final String[] outgoingTABColumnNames = {"Topic", "Pool Anchor", "Anchor", "BEP", "HiddenField"};
     public static final String[] incomingTBAColumnNames = {"Topic", "BEP", "Anchor", "File ID", "HiddenField"};
     ButtonGroup group = new ButtonGroup();
-    
-    //    Runnable runnable = new BasicThread2();
-    // Create the thread supplying it with the runnable object
-//    Thread threadAssessment = new Thread(new AssessmentThread());
-//    private boolean assessmentLock = true; 
-//    
-//        /**
-//	 * @return the assessmentLock
-//	 */
-//    synchronized public boolean isAssessmentLock() {
-//		return assessmentLock;
-//	}
-//
-//	/**
-//	 * @param assessmentLock the assessmentLock to set
-//	 */
-//    synchronized public void setAssessmentLock(boolean assessmentLock) {
-//		this.assessmentLock = assessmentLock;
-//	}
-//
-//	class AssessmentThread implements Runnable {
-//        // This method is called when the thread runs
-//        public void run() {
-//
-//        }
-//    }
 
+	private static String currTopicID;
+    
     public LTWAssessmentToolView(SingleFrameApplication app) {
         super(app);
         
@@ -178,7 +148,13 @@ public class LTWAssessmentToolView extends FrameView {
     	
     	TopicHighlightManager.getInstance().setPane(thisTopicTextPane);
     	TopicHighlightManager.getInstance().setLinkPane(thisLinkTextPane);
-        
+    	
+    	LTWAssessmentToolControler.getInstance().setContainter(app.getMainFrame(), thisTopicTextPane, thisLinkTextPane);
+    	LTWAssessmentToolControler.getInstance().setStatusMessageLabel(statusMessageLabel);
+    	LTWAssessmentToolControler.getInstance().setLblPoolAnchor(lblPoolAnchor);
+    	LTWAssessmentToolControler.getInstance().setLblTargetTitle(lblTargetTitle);
+    	LTWAssessmentToolControler.getInstance().setLblTopicTitle(lblTopicTitle);
+    	
         group.add(outRadioBtn);
         group.add(inRadioBtn);
 
@@ -256,111 +232,17 @@ public class LTWAssessmentToolView extends FrameView {
 	            	//TODO : fix this
 	            }
 	            else
-	            	assess(Assessment.getPoolFile(currTopicID));
+	            	LTWAssessmentToolControler.getInstance().assess(Assessment.getPoolFile(currTopicID));
             }
             else {
         		currTopicID = null;
-        		assessNextTopic();
+        		LTWAssessmentToolControler.getInstance().assessNextTopic();
             }
             
             assessmentThread = new AssessmentThread(thisTopicTextPane, thisLinkTextPane);
             assessmentThread.start();
     }
-    
-    private void assessNextTopic() {
-    	if (currTopicID != null)
-    		Assessment.getInstance().finishTopic(currTopicID);
-    	currTopicID = Assessment.getInstance().getNextTopic();
-    	assess(Assessment.getPoolFile(currTopicID), true);
-    }
-    
-    private void resetResouceTopic(String topicLang) {
-    	currTopicFilePath = AppResource.getInstance().getTopicXmlPathNameByFileID(currTopicID, topicLang); //rscManager.getTopicFilePath(currTopicID, topicLang);
-    	rscManager.updateTopicID(currTopicID + ":" + topicLang);
-    	rscManager.updateCurrTopicFilePath(currTopicFilePath);
-    	rscManager.updateCurrAnchorFOL(null);
-    }
-    
-    private void setupTopic() {
-        currTopicFilePath = rscManager.getCurrTopicXmlFile();
-		//      currTopicName = new WikiArticleXml(currTopicFilePath).getTitle();
-		String topicLang = rscManager.getTopicLang();
-		setTopicPaneContent(currTopicFilePath, topicLang);
-		FOLTXTMatcher.getInstance().getCurrFullXmlText();
-    	    	
-    	FOLTXTMatcher.getInstance().getSCRAnchorPosV(thisTopicTextPane, currTopicID, topicAnchorsHT);
-    	Vector<String> topicAnchorsOLNameSEVS = rscManager.getTopicAnchorsOLNameSEV();
-//        int completedAnchor = 0;
-//		//      int totoalAnchorNumber = Integer.valueOf(tabCompletedRatio[1]);
-//		
-//		int totoalAnchorNumberRecored = topicAnchorsOLNameSEVS.size();
-//		
-//		this.rscManager.updateOutgoingCompletion(String.valueOf(completedAnchor) + " : " + String.valueOf(totoalAnchorNumberRecored));
-    }
-    
-    private void assess(String poolFile) {
-    	assess(poolFile, false);
-    }
-    
-    private void assess(String poolFile, boolean reset) {
-    	if (!new File(poolFile).exists()) {
-          String errMessage = "Cannot find pool file: " + poolFile + "\r\n";
-			JOptionPane.showMessageDialog(LTWAssessmentToolApp.getApplication().getMainFrame(), errMessage);    		
-    		return;
-    	}
-    	
-        rscManager = ResourcesManager.getInstance();
-        myPooler = PoolerManager.getInstance(poolFile);
-        myPUpdater = myPooler.getPoolUpdater();
-        
-        AssessmentThread.setMyPoolManager(myPooler);
-        AssessmentThread.setMyRSCManager(rscManager);
-        AssessmentThread.setMyPoolUpdater(myPUpdater);
-        
-        topicAnchorsHT = myPooler.getTopicAllAnchors();
        
-        if (reset) {
-        	resetResouceTopic(AppResource.sourceLang);
-        } 
-        else {
-	        String id = rscManager.getTopicID(); 
-	        if (!id.equals(currTopicID)) {
-		        Vector<String[]> topicIDNameVSA = this.myPooler.getAllTopicsInPool();
-		    	currTopicID = topicIDNameVSA.elementAt(0)[0].trim();
-		    	
-		        String topicLang = topicIDNameVSA.elementAt(0)[2];
-		        resetResouceTopic(topicLang);
-	        }
-        }
-
-        setupTopic();        
-        setupComponentFont();
-        
-        Assessment.getInstance().setCurrentTopicWithId(currTopicID);
-        currTopicName = Assessment.getInstance().getCurrentTopic().getTitle();
-        rscManager.pullPoolData();
-    	
-        // -------------------------------------------------------------
-        // scrSE, String[]{O,L,TXT,S,E,num}
-//      topicAnchorOLTSENHT = populateTopicAnchorOLTSENHT();
-        // -------------------------------------------------------------
-        CaretListenerLabel caretListenerLabel = new CaretListenerLabel("Caret Status", this.topicTextPane, this.statusMessageLabel);
-        this.topicTextPane.addCaretListener(caretListenerLabel);
-        topicPaneMouseListener mtTopicPaneListener = new topicPaneMouseListener(this.topicTextPane, this.linkTextPane);
-        this.topicTextPane.addMouseListener(mtTopicPaneListener);
-        this.topicTextPane.addMouseMotionListener(mtTopicPaneListener);
-        linkPaneMouseListener myLPMListener = new linkPaneMouseListener(this.topicTextPane, this.linkTextPane);
-        this.linkTextPane.addMouseListener(myLPMListener);
-        
-        LTWAssessmentToolControler.getInstance().setContainter(this.topicTextPane, this.linkTextPane);
-        // -------------------------------------------------------------
-        this.outRadioBtn.setSelected(true);
-        this.inRadioBtn.setSelected(false);
-        // -------------------------------------------------------------
-        setOutgoingTAB();
-    }
-
-    
     private void setAnchorColorHints() {
     	jlblColorNotAssessed.setOpaque(true);
     	jlblColorIncomplete.setOpaque(true);
@@ -884,6 +766,7 @@ public class LTWAssessmentToolView extends FrameView {
             // 1) Get the NEXT Anchor O, L, S, E, Status + its BEP link O, S, ID, Status
             //    With TAB Nav Update --> NEXT TAB
             Bep nextAnchorBepLinkVSA = rscManager.getPreTABWithUpdateNAV(currTopicID, currALinkOIDSA, false);
+            CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(currALinkOIDSA.getAssociatedAnchor(), nextAnchorBepLinkVSA.getAssociatedAnchor(), nextAnchorBepLinkVSA);
             
 //            LTWAssessmentToolControler.getInstance().updateAnchorChanges(nextAnchorBepLinkVSA, currALinkOIDSA);
     }
@@ -907,7 +790,7 @@ public class LTWAssessmentToolView extends FrameView {
 
     private void outRadioBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_outRadioBtnActionPerformed
         // populate Outgoing Links T.A.B.
-        setOutgoingTAB();
+//        setOutgoingTAB();
     }//GEN-LAST:event_outRadioBtnActionPerformed
 
     private void inRadioBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inRadioBtnActionPerformed
@@ -985,120 +868,8 @@ public class LTWAssessmentToolView extends FrameView {
     // =========================================================================
     // Outgoing Links: T.A.B.: populate Topic and Link Pane
     // =========================================================================
-    private void setOutgoingTAB() {
-        // 0) set System property to TAB Outgoing
-        // 1) populate Topic Pane <-- only one Topic
-        // 2) --> Check AnchorOL Status
-        // 3) highlight Topic Pane Anchors
-        // 4) indciate CURRENT Topic Anchor Text & Target Link
-        System.setProperty(LTWAssessmentToolControler.sysPropertyIsTABKey, "true");
-        rscManager.updateLinkingMode("outgoing");
-        // ---------------------------------------------------------------------
-        // Get Pool Properties
-        // Hashtable<outgoing : topicFileID>: [0]:Offset, [1]:Length, [2]:Anchor_Name
-//        topicSubanchorsHT = myPooler.getTopicAllSubanchors();
-        // ---------------------------------------------------------------------
-        // 1) Get Topic ID & xmlFile Path
-        //    SET Topic Text Pane Content
-        // 2) Get all Anchor Text SCR SE + Status
-        //    SET Highlighter + Curr Anchor Text
-        // 3) Get Target Link
-        //    1st un-assessed Link, belonging to Curr Anchor Text
-
-        //currTopicName = topicIDNameVSA.elementAt(0)[1].trim();
-        currTopicID = rscManager.getTopicID();
-        currTopicFilePath = rscManager.getCurrTopicXmlFile();
-//        currTopicName = new WikiArticleXml(currTopicFilePath).getTitle();
-        String topicLang = rscManager.getTopicLang();
-        setTopicPaneContent(currTopicFilePath, topicLang);
-
-        // ---------------------------------------------------------------------
-        // For 1st time to get the ANCHOR OL name SE
-//        folMatcher = FOLTXTMatcher.getInstance();
-        Vector<String> topicAnchorsOLNameSEVS = rscManager.getTopicAnchorsOLNameSEV();
-        if (topicAnchorsOLNameSEVS.size() == 0) {
-        	FOLTXTMatcher.getInstance().getSCRAnchorPosV(thisTopicTextPane, currTopicID, topicAnchorsHT);
-        	topicAnchorsOLNameSEVS = rscManager.getTopicAnchorsOLNameSEV();
-        }
-        
-        rscManager.checkAnchorStatus();
-        
-        /*************************************************************************
-         * Step 2
-         * 
-         * setup the screen start and end position of anchors
-         *************************************************************************/
-        rscManager.setTopicAnchorOLStatusBySE();
-        topicAnchorOLSEStatus = rscManager.getPoolAnchorsOLNameStatusV();
-        
-        /*************************************************************************
-         * Step 3
-         * 
-         ************************************************************************/
-        TopicHighlightManager.getInstance().initializeHighlighter(topicAnchorOLSEStatus);
-        
-        String[] tabCompletedRatio = this.rscManager.getTABCompletedRatio();
-        this.rscManager.updateOutgoingCompletion(tabCompletedRatio[0] + " : " + tabCompletedRatio[1]);
-        System.setProperty(LTWAssessmentToolControler.sysPropertyTABCompletedRatioKey, String.valueOf(tabCompletedRatio[0]) + "_" + String.valueOf(tabCompletedRatio[1]));
-        // ---------------------------------------------------------------------
-        
-        // String[]{Anchor_O, L, SP, EP, Status}
-//        topicAnchorOLSEStatus = rscManager.getTopicAnchorOLSEStatusVSA();
-        // String[]{Anchor_O, L, Name, SP, EP, Status}
-        String[] currTopicOLNameSEStatus = rscManager.getCurrTopicAnchorOLNameSEStatusSA(thisTopicTextPane, currTopicID, topicAnchorsOLNameSEVS);
-        String currTopicPAnchorStatus = currTopicOLNameSEStatus[5];
-        // ---------------------------------------------------------------------
-        // Get current Link file ID & SCR BEP S, lang, title
-        Bep CurrTopicATargetOID = rscManager.getCurrTopicATargetOID(thisLinkTextPane, currTopicID);
-        String currTargetOffset = CurrTopicATargetOID.offsetToString(); //[0];
-        String currTargetID = CurrTopicATargetOID.getFileId(); //[1];
-        String currTargetLang = CurrTopicATargetOID.getTargetLang(); //[2];
-        String pageTitle = CurrTopicATargetOID.getTargetTitle(); //[3];;
-        if (currTargetID.endsWith("\"")) {
-            currTargetID = currTargetID.substring(0, currTargetID.length() - 1);
-        }
-        String currTargetFilePath = rscManager.getWikipediaFilePathByName(currTargetID + ".xml", currTargetLang);
-        
-//        os.setTABFieldValues(CurrTopicATargetOID);
-        
-        /*************************************************************************
-         * Step 5
-         * 
-         ************************************************************************/
-//        TopicHighlightManager.getInstance().update(null, CurrTopicATargetOID.getAssociatedAnchor());
-        CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(null, CurrTopicATargetOID.getAssociatedAnchor(), CurrTopicATargetOID);
-
-        setTABLinkPaneContent(currTargetFilePath, currTargetLang);
-        // bep_Offset, linkID, Status
-        String[] CurrTopicATargetSIDStatus = rscManager.getCurrTopicABepSIDStatusSA(thisLinkTextPane, currTopicID);
-        setLinkBEPIcon(currTopicPAnchorStatus, CurrTopicATargetSIDStatus);
-
-    }
 
     // <editor-fold defaultstate="collapsed" desc="Set Text Pane & Highlight Anchor">
-    // Topic Pane: Anchor
-    private void setTopicPaneContent(String xmlFilePath, String lang) {
-    	AdjustFont.setComponentFont(thisTopicTextPane, lang);
-        if (!xmlFilePath.equals("")) {
-            createTopicTextPane(xmlFilePath);
-        } else {
-            this.topicTextPane.setContentType(textContentType);
-            this.topicTextPane.setText("<b>The topic file is missing or specified wrongly!!!</b>");
-        }
-    }
-
-    private void createTopicTextPane(String xmlFilePath) {
-        this.topicTextPane.setCaretPosition(0);
-        this.topicTextPane.setMargin(new Insets(5, 5, 5, 5));
-        initTopicDocument(xmlFilePath);
-        this.topicTextPane.setCaretPosition(0);
-    }
-
-    private void initTopicDocument(String xmlFilePath) {
-        Xml2Html xmlParser = new Xml2Html(xmlFilePath, this.isTopicWikipedia);
-        this.topicTextPane.setContentType(textContentType);
-        this.topicTextPane.setText(xmlParser.getHtmlContent().toString());
-    }
 
     // -------------------------------------------------------------------------
     // Topic Pane: BEP : need to be FIXED
@@ -1140,45 +911,21 @@ public class LTWAssessmentToolView extends FrameView {
     // =========================================================================
     // Link Pane: BEP
 
-    private void setTABLinkPaneContent(String xmlFilePath, String lang) {
-        if (!xmlFilePath.equals("")) {
-            createLinkTextPane(xmlFilePath, lang);
-        } else {
-            this.linkTextPane.setContentType(textContentType);
-            this.linkTextPane.setText("<b>The target file is missing or specified wrongly!!!</b>");
-        }
-    }
-
-    private void setTBALinkPaneContent(String xmlFilePath, String bgStatus, String lang) {
-        if (!xmlFilePath.equals("")) {
-            createLinkTextPane(xmlFilePath, lang);
-//            if (bgStatus.equals("-1")) {
-//                this.linkTextPane.setBackground(this.linkPaneNonRelColor);
-//            } else if (bgStatus.equals("0")) {
-//                this.linkTextPane.setBackground(this.linkPaneWhiteColor);
-//            } else if (bgStatus.equals("1")) {
-//                this.linkTextPane.setBackground(this.linkPaneRelColor);
-//            }
-        } else {
-            this.linkTextPane.setContentType(textContentType);
-            this.linkTextPane.setText("<b>The target file is missing or specified wrongly!!!</b>");
-        }
-    }
-
-    private void createLinkTextPane(String xmlFilePath, String lang) {
-    	AdjustFont.getInstance().setComponentFont(this.linkTextPane, lang);
-    	AdjustFont.getInstance().setComponentFont(this.lblTargetTitle, lang);
-        this.linkTextPane.setCaretPosition(0);
-        this.linkTextPane.setMargin(new Insets(5, 5, 5, 5));
-        initLinkDocument(xmlFilePath);
-        this.linkTextPane.setCaretPosition(0);
-    }
-
-    private void initLinkDocument(String xmlFilePath) {
-        Xml2Html xmlParser = new Xml2Html(xmlFilePath, this.isLinkWikipedia);
-        this.linkTextPane.setContentType(textContentType);
-        this.linkTextPane.setText(xmlParser.getHtmlContent().toString());
-    }
+//    private void setTBALinkPaneContent(String xmlFilePath, String bgStatus, String lang) {
+//        if (!xmlFilePath.equals("")) {
+//            createLinkTextPane(xmlFilePath, lang);
+////            if (bgStatus.equals("-1")) {
+////                this.linkTextPane.setBackground(this.linkPaneNonRelColor);
+////            } else if (bgStatus.equals("0")) {
+////                this.linkTextPane.setBackground(this.linkPaneWhiteColor);
+////            } else if (bgStatus.equals("1")) {
+////                this.linkTextPane.setBackground(this.linkPaneRelColor);
+////            }
+//        } else {
+//            this.linkTextPane.setContentType(textContentType);
+//            this.linkTextPane.setText("<b>The target file is missing or specified wrongly!!!</b>");
+//        }
+//    }
 
     private void setLinkBEPIcon(String currTopicPAnchorStatus, String[] CurrTopicATargetSIDStatus) {
         // Insert into Doc in JTextPane
@@ -1387,11 +1134,7 @@ public class LTWAssessmentToolView extends FrameView {
         return topicBepOSNHT;
     }
     
-    private void setupComponentFont() {
-    	
-    	AdjustFont.setComponentFont(lblTopicTitle, AppResource.sourceLang);
-    	AdjustFont.setComponentFont(lblPoolAnchor, AppResource.sourceLang);
-    }
+
 // </editor-fold>
 }
 
