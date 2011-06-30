@@ -116,8 +116,9 @@ public class linkPaneMouseListener implements MouseInputListener {
     private boolean SINGLECLICK = false;
 
     private void activateMouseClickEvent(MouseEvent mce) {
-    	if (!AssessmentThread.isReadyForNextLink())
+    	if (!AssessmentThread.isReadyForNextLink()) {
     		return;
+    	}
     	
         int noOfClicks = mce.getClickCount();
         int button = mce.getButton();
