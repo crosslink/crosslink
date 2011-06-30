@@ -89,16 +89,23 @@ public class TopicHighlightManager {
         	anchor.setHighlighter(txtPaneHighlighter, painters);
 	}
 	
+	public void update(IndexedAnchor preAnchor) {
+		preAnchor.setHighlighter(txtPaneHighlighter, painters);
+        		
+        pane.repaint();	
+	}
+	
 	public void update(AssessedAnchor preAnchor, AssessedAnchor currAnchor) {
 		if (preAnchor != null) {
-			preAnchor.getParent().setHighlighter(txtPaneHighlighter, painters);
+			update(preAnchor.getParent());
 		}
 		
-		currAnchor.getParent().setToCurrentAnchor(txtPaneHighlighter, painters, currAnchor);
+		if (currAnchor != null)
+			currAnchor.getParent().setToCurrentAnchor(txtPaneHighlighter, painters, currAnchor);
 		
         pane.getCaret().setDot(currAnchor.getScreenPosEnd());
         pane.scrollRectToVisible(pane.getVisibleRect());
-        pane.repaint();
+        pane.repaint();	
 	}
 
 	public void updateLinkPaneText(Bep link) {

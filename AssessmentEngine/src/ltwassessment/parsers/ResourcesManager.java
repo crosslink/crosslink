@@ -1423,7 +1423,11 @@ public class ResourcesManager {
     	AssessedAnchor subanchor = null;
     	
     	link = forwardOrBackward ? currentLink.getAssociatedAnchor().getNextLink(currentLink, nextUnassessed) : currentLink.getAssociatedAnchor().getPreviousLink(currentLink, nextUnassessed);
-    	
+    	if (link == null) {
+    		subanchor = forwardOrBackward ? currentLink.getAssociatedAnchor().getParent().getNext(currentLink.getAssociatedAnchor(), nextUnassessed) : currentLink.getAssociatedAnchor().getParent().getPrevious(currentLink.getAssociatedAnchor(), nextUnassessed);
+    		if (subanchor != null)
+    			link = forwardOrBackward ? subanchor.getNextLink(null, nextUnassessed) : subanchor.getPreviousLink(null, nextUnassessed);
+    	}
     	
 //    	subanchor = forwardOrBackward ? pAnchorOLSA.getParent().getNext(pAnchorOLSA, nextUnassessed) : pAnchorOLSA.getParent().getPrevious(pAnchorOLSA, nextUnassessed);
 //    	
