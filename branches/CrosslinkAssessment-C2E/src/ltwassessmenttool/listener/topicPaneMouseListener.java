@@ -391,75 +391,10 @@ public class topicPaneMouseListener implements MouseInputListener {
         if (preTHyperOLSEStatus.getParent() == currSCRSEName) {
             log("CURR PAnchor is PRE PAnchor...");
             // CURR PAnchor is PRE PAnchor
-            // -----------------------------------------------------------------
-            // Topic Pane
-            // DO-NOTHING for Topic Pane Anchor
-            // It is still highlighted as YELLOW
-            // -----------------------------------------------------------------
-            for (Bep aBep : preTHyperOLSEStatus.getBeps())
-            	if (aBep.getRel() != -1) {
-            		if (aBep.getRel() == 0)
-            			newCompletedCounter++;
-            		
-            		aBep.setRel(-1);
-            	}
-            if (prePAnchorStatus == 1 || prePAnchorStatus == 0) {
-                // <editor-fold defaultstate="collapsed" desc="Toggle to NONRelevant -1">
-                // Toggle to NONRelevant -1, because it was 1 or 0
-            	prePAnchorStatus = -1;
-                
-                preTHyperOLSEStatus.setStatus(prePAnchorStatus);
-                this.pUpdater.updatePoolSubanchorStatus(this.currTopicID, preTHyperOLSEStatus);
-                        
-                // updare Pool XML
-
-                // </editor-fold>
-            } else if (prePAnchorStatus == -1) {
-                // <editor-fold defaultstate="collapsed" desc="Toggle to PRE-STATUS: 1 or 0">
-                // Toggle to PRE-STATUS: 1 or 0
-                // b) Set Link Pane BG back to Pre-Status
-                // -------------------------------------------------------------
-                // update Completion Ratio
-                int unAssCounter = 0;
-                int nonRelCounter = 0;
-                Vector<String> pAnchorAllLinkStatus = this.poolerManager.getPoolSubanchorAllLinkStatus(this.currTopicID, preTHyperOLSEStatus);
-                for (String pAnchorLinkStatus : pAnchorAllLinkStatus) {
-                    if (pAnchorLinkStatus.equals("0")) {
-                        unAssCounter++;
-                    } else if (pAnchorLinkStatus.equals("-1")) {
-                        nonRelCounter++;
-                    }
-
-                }
-                int toPAnchorStatus = Bep.UNASSESSED;
-                if (nonRelCounter == pAnchorAllLinkStatus.size()) {
-                    toPAnchorStatus = -1;
-                } else if (unAssCounter > 0) {
-                    toPAnchorStatus = 0;
-                } else {
-                    toPAnchorStatus = 1;
-                }
-
-//                String[] outCompletionRatio = this.myRSCManager.getOutgoingCompletion();
-//                String outCompletedLinks = String.valueOf(Integer.valueOf(outCompletionRatio[0]) - unAssCounter);
-//                this.myRSCManager.updateOutgoingCompletion(outCompletedLinks + " : " + outCompletionRatio[1]);
-                // updare Pool XML
-                preTHyperOLSEStatus.setStatus(toPAnchorStatus);
-                
-                newCompletedCounter -= unAssCounter;
-                this.pUpdater.updatePoolSubanchorStatus(this.currTopicID, preTHyperOLSEStatus);
-                // update System Property
-//                CurrentFocusedAnchor.getCurrentFocusedAnchor().setCurrentAnchorProperty(pAnchorO, pAnchorL, currSCRSEName.screenPosStartToString(), currSCRSEName.screenPosStartToString(), pAnchorStatus, currSCRSEName.extendedLengthToString()/*, currSCRSEName.offsetIndexToString()*/);
-                // -------------------------------------------------------------
-                // -------------------------------------------------------------
-                // </editor-fold>
-            }
-            String[] outCompletionRatio = this.myRSCManager.getOutgoingCompletion();
-            String outCompletedLinks = String.valueOf(Integer.valueOf(outCompletionRatio[0]) + newCompletedCounter);
-            this.myRSCManager.updateOutgoingCompletion(outCompletedLinks + " : " + outCompletionRatio[1]);
-            
-            Bep link = LTWAssessmentToolControler.getInstance().goNextLink(false, true);
-            CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(preTHyperOLSEStatus, link.getAssociatedAnchor(), link);
+            LTWAssessmentToolControler.getInstance().setSubanchorIrrelevant(preTHyperOLSEStatus);
+            LTWAssessmentToolControler.getInstance().goNextLink(true, true);
+//            Bep link = LTWAssessmentToolControler.getInstance().goNextLink(true, true);
+//            CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(preTHyperOLSEStatus, link.getAssociatedAnchor(), link);
             
         } else {
             log("CURR PAnchor is NOT PRE PAnchor...");
@@ -469,66 +404,70 @@ public class topicPaneMouseListener implements MouseInputListener {
             // re-Store PRE PAnchor
             // Originally, "Highlight CURR PAnchor as YELLOW", but we don't need that
             // -----------------------------------------------------------------
+            for (AssessedAnchor subanchor : currSCRSEName.getChildrenAnchors())
+            	LTWAssessmentToolControler.getInstance().setSubanchorIrrelevant(subanchor);
             
-            if (pAnchorStatus.equals("1") || pAnchorStatus.equals("0")) {
-                // <editor-fold defaultstate="collapsed" desc="Toggle to NONRelevant -1">
-                // Toggle to NONRelevant -1, because it was 1 or 0
-                int toPAnchorStatus = Bep.IRRELEVANT;
-                // -------------------------------------------------------------
-//                // Set Link Pane BG as RED
-//                this.linkTextPane.setBackground(this.linkPaneNonRelColor);
-//                this.linkTextPane.repaint();
-                // -----------------------------------------------------------------
-                // update Completion Ratio
-                newCompletedCounter = 0;
-                Vector<String> pAnchorAllLinkStatus = this.poolerManager.getPoolAnchorAllLinkStatus(this.currTopicID, currSCRSEName/*new String[]{pAnchorO, pAnchorL}*/);
-                for (String pAnchorLinkStatus : pAnchorAllLinkStatus) {
-                    if (pAnchorLinkStatus.equals("0")) {
-                        newCompletedCounter++;
-                    }
-
-                }
-                String[] outCompletionRatio = this.myRSCManager.getOutgoingCompletion();
-                String outCompletedLinks = String.valueOf(Integer.valueOf(outCompletionRatio[0]) + newCompletedCounter);
-                this.myRSCManager.updateOutgoingCompletion(outCompletedLinks + " : " + outCompletionRatio[1]);
-                // updare Pool XML
-//                log("Before Update POOL: " + pAnchorO + " - " + pAnchorL + " - " + toPAnchorStatus);
-                currSCRSEName.setStatus(toPAnchorStatus);
-                this.pUpdater.updatePoolAnchorStatus(this.currTopicID, currSCRSEName);
-//                // update System Property
-                // </editor-fold>
-            } else if (pAnchorStatus.equals("-1")) {
-                // <editor-fold defaultstate="collapsed" desc="Toggle to PRE-STATUS: 1 or 0">
-                // Toggle to PRE-STATUS: 1 or 0 or -1
-                int unAssCounter = 0;
-                int nonRelCounter = 0;
-                Vector<String> pAnchorAllLinkStatus = this.poolerManager.getPoolAnchorAllLinkStatus(this.currTopicID, currSCRSEName/*new String[]{pAnchorO, pAnchorL}*/);
-                for (String pAnchorLinkStatus : pAnchorAllLinkStatus) {
-                    if (pAnchorLinkStatus.equals("0")) {
-                        unAssCounter++;
-                    } else if (pAnchorLinkStatus.equals("-1")) {
-                        nonRelCounter++;
-                    }
-
-                }
-                int toPAnchorStatus;
-                if (nonRelCounter == pAnchorAllLinkStatus.size()) {
-                    toPAnchorStatus = Bep.IRRELEVANT;
-                } else if (unAssCounter > 0) {
-                    toPAnchorStatus = Bep.UNASSESSED;
-                } else {
-                    toPAnchorStatus = Bep.RELEVANT;
-                }
-// -------------------------------------------------------------
-                // -------------------------------------------------------------
-                String[] outCompletionRatio = this.myRSCManager.getOutgoingCompletion();
-                String outCompletedLinks = String.valueOf(Integer.valueOf(outCompletionRatio[0]) - unAssCounter);
-                this.myRSCManager.updateOutgoingCompletion(outCompletedLinks + " : " + outCompletionRatio[1]);
-                // updare Pool XML
-                currSCRSEName.setStatus(toPAnchorStatus);
-                this.pUpdater.updatePoolAnchorStatus(this.currTopicID, currSCRSEName);
-                // </editor-fold>
-            }
+            currSCRSEName.statusCheck();
+    		TopicHighlightManager.getInstance().update(currSCRSEName);
+//            if (pAnchorStatus.equals("1") || pAnchorStatus.equals("0")) {
+//                // <editor-fold defaultstate="collapsed" desc="Toggle to NONRelevant -1">
+//                // Toggle to NONRelevant -1, because it was 1 or 0
+//                int toPAnchorStatus = Bep.IRRELEVANT;
+//                // -------------------------------------------------------------
+////                // Set Link Pane BG as RED
+////                this.linkTextPane.setBackground(this.linkPaneNonRelColor);
+////                this.linkTextPane.repaint();
+//                // -----------------------------------------------------------------
+//                // update Completion Ratio
+//                newCompletedCounter = 0;
+//                Vector<String> pAnchorAllLinkStatus = this.poolerManager.getPoolAnchorAllLinkStatus(this.currTopicID, currSCRSEName/*new String[]{pAnchorO, pAnchorL}*/);
+//                for (String pAnchorLinkStatus : pAnchorAllLinkStatus) {
+//                    if (pAnchorLinkStatus.equals("0")) {
+//                        newCompletedCounter++;
+//                    }
+//
+//                }
+//                String[] outCompletionRatio = this.myRSCManager.getOutgoingCompletion();
+//                String outCompletedLinks = String.valueOf(Integer.valueOf(outCompletionRatio[0]) + newCompletedCounter);
+//                this.myRSCManager.updateOutgoingCompletion(outCompletedLinks + " : " + outCompletionRatio[1]);
+//                // updare Pool XML
+////                log("Before Update POOL: " + pAnchorO + " - " + pAnchorL + " - " + toPAnchorStatus);
+//                currSCRSEName.setStatus(toPAnchorStatus);
+//                this.pUpdater.updatePoolAnchorStatus(this.currTopicID, currSCRSEName);
+////                // update System Property
+//                // </editor-fold>
+//            } else if (pAnchorStatus.equals("-1")) {
+//                // <editor-fold defaultstate="collapsed" desc="Toggle to PRE-STATUS: 1 or 0">
+//                // Toggle to PRE-STATUS: 1 or 0 or -1
+//                int unAssCounter = 0;
+//                int nonRelCounter = 0;
+//                Vector<String> pAnchorAllLinkStatus = this.poolerManager.getPoolAnchorAllLinkStatus(this.currTopicID, currSCRSEName/*new String[]{pAnchorO, pAnchorL}*/);
+//                for (String pAnchorLinkStatus : pAnchorAllLinkStatus) {
+//                    if (pAnchorLinkStatus.equals("0")) {
+//                        unAssCounter++;
+//                    } else if (pAnchorLinkStatus.equals("-1")) {
+//                        nonRelCounter++;
+//                    }
+//
+//                }
+//                int toPAnchorStatus;
+//                if (nonRelCounter == pAnchorAllLinkStatus.size()) {
+//                    toPAnchorStatus = Bep.IRRELEVANT;
+//                } else if (unAssCounter > 0) {
+//                    toPAnchorStatus = Bep.UNASSESSED;
+//                } else {
+//                    toPAnchorStatus = Bep.RELEVANT;
+//                }
+//// -------------------------------------------------------------
+//                // -------------------------------------------------------------
+//                String[] outCompletionRatio = this.myRSCManager.getOutgoingCompletion();
+//                String outCompletedLinks = String.valueOf(Integer.valueOf(outCompletionRatio[0]) - unAssCounter);
+//                this.myRSCManager.updateOutgoingCompletion(outCompletedLinks + " : " + outCompletionRatio[1]);
+//                // updare Pool XML
+//                currSCRSEName.setStatus(toPAnchorStatus);
+//                this.pUpdater.updatePoolAnchorStatus(this.currTopicID, currSCRSEName);
+//                // </editor-fold>
+//            }
 
         }
         // </editor-fold>

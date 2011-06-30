@@ -523,8 +523,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of IPC world records in swimming – Men&apos;s short course">24377565</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="屬" aoffset="590" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="屬" saoffset="590" salength="1" rank="50">
+			<anchor arel="-1" aname="屬" aoffset="590" alength="1" ext_length="1">
+				<subanchor sarel="-1" saname="屬" saoffset="590" salength="1" rank="50">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Isaz">1579113</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Is Is">11778974</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Isaiah">15088</tobep>
@@ -541,7 +541,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mohammadabad, Iran">17332983</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Is Underground">8837068</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="屬於" saoffset="590" salength="2" rank="128">
+				<subanchor sarel="-1" saname="屬於" saoffset="590" salength="2" rank="128">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Isaz">1579113</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Is Is">11778974</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Isaiah">15088</tobep>
@@ -701,8 +701,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Word Power">9010624</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="日" aoffset="607" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="日" saoffset="607" salength="1" rank="82">
+			<anchor arel="1" aname="日" aoffset="607" alength="1" ext_length="1">
+				<subanchor sarel="-1" saname="日" saoffset="607" salength="1" rank="82">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of collective nouns by subject I-Z">13018510</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Due Date">23829273</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Date-plum">2299783</tobep>
@@ -724,27 +724,27 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="2009 Japanese Grand Prix">20159025</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ancient Mysteries">5139104</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="日本" saoffset="607" salength="2" rank="10">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Jason DeLucia">3181057</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Japan national baseball team">3497139</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Empire of Japan">183897</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="The Japan Project: Made in Japan">2643460</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Beatmania video games">15308956</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Neo-Geo Pocket Color games">2004531</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Japan Football Association">2028981</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Outline of Japan">16278867</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Japan/Did you know">2604766</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Yakitate!! Japan">1496755</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Japan national football team">993546</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Nishi Japan">19423997</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Japan Japan">16832191</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Japan national rugby union team">759561</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Cinema of Japan">10790</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Japan">15573</tobep>
+				<subanchor sarel="1" saname="日本" saoffset="607" salength="2" rank="10">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Jason DeLucia">3181057</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Japan national baseball team">3497139</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Empire of Japan">183897</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="The Japan Project: Made in Japan">2643460</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Beatmania video games">15308956</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Neo-Geo Pocket Color games">2004531</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Japan Football Association">2028981</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Outline of Japan">16278867</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Japan/Did you know">2604766</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Yakitate!! Japan">1496755</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Japan national football team">993546</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Nishi Japan">19423997</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Japan Japan">16832191</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Japan national rugby union team">759561</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Cinema of Japan">10790</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Japan">15573</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="數理" aoffset="610" alength="2" ext_length="2">
-				<subanchor sarel="0" saname="數理" saoffset="610" salength="2" rank="53">
+			<anchor arel="-1" aname="數理" aoffset="610" alength="2" ext_length="2">
+				<subanchor sarel="-1" saname="數理" saoffset="610" salength="2" rank="53">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Multiplicity (mathematics)">19211790</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of scientific journals in mathematics">3687926</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mathematics (producer)">2244093</tobep>
@@ -759,7 +759,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tapering (mathematics)">25426649</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Wolf Prize in Mathematics">714278</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="理" saoffset="611" salength="1" rank="122">
+				<subanchor sarel="-1" saname="理" saoffset="611" salength="1" rank="122">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Maryland wildlife management areas">16769972</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Management">19881</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Management (game)">9405845</tobep>
@@ -774,7 +774,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Network management">41410</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="British Association of Colliery Management – Technical, Energy and Administrative Management">27656295</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="理科" saoffset="611" salength="2" rank="40">
+				<subanchor sarel="-1" saname="理科" saoffset="611" salength="2" rank="40">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Science education">181889</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hugo Award for Best Novelette">418595</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Science in science fiction">13670898</tobep>
@@ -790,7 +790,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Materials science in science fiction">13973150</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Science/Science portals">3553451</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="科" saoffset="612" salength="1" rank="57">
+				<subanchor sarel="-1" saname="科" saoffset="612" salength="1" rank="57">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Handbook On Japanese Military Forces">17254627</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Section line">12272865</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Section blue">20708676</tobep>
@@ -809,7 +809,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Kuwait">7515890</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Section (United States land surveying)">861717</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="科學" saoffset="612" salength="2" rank="41">
+				<subanchor sarel="-1" saname="科學" saoffset="612" salength="2" rank="41">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Science education">181889</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hugo Award for Best Novelette">418595</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Science in science fiction">13670898</tobep>
@@ -1449,7 +1449,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Chess/Selected article/Introduction/Fortress (chess)">16657797</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="名" aoffset="763" alength="1" ext_length="0">
+			<anchor arel="-1" aname="名" aoffset="763" alength="1" ext_length="0">
 				<subanchor sarel="0" saname="名" saoffset="763" salength="1" rank="104">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of sovereign states">68253</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Table of the highest major summits of Colorado">16260765</tobep>
@@ -1675,8 +1675,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of national championships in figure skating">9202654</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="騎士" aoffset="1067" alength="2" ext_length="2">
-				<subanchor sarel="0" saname="騎士" saoffset="1067" salength="2" rank="39">
+			<anchor arel="1" aname="騎士" aoffset="1067" alength="2" ext_length="2">
+				<subanchor sarel="-1" saname="騎士" saoffset="1067" salength="2" rank="39">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of World War II aces from Germany">2313567</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Michael Knight (Knight Rider)">16759831</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Knight Rider (1982 TV series)">43274</tobep>
@@ -1693,20 +1693,20 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bob Knight">4871</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Zat Knight">1053365</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="騎士巡邏" saoffset="1067" salength="4" rank="1">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Knight&apos;s tour">38501</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Michael Knight (Knight Rider)">16759831</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Jim Knight, Baron Knight of Weymouth">427676</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Heinrich Liebe">2273877</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Patrol">1464138</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Patrol chess">297631</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="USCGC Knight Island (WPB-1348)">26237876</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Knight v Knight">11170460</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Wolfgang Lüth">2476800</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Jill Knight, Baroness Knight of Collingtree">469586</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sky Knight">15653030</tobep>
+				<subanchor sarel="1" saname="騎士巡邏" saoffset="1067" salength="4" rank="1">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Knight&apos;s tour">38501</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Michael Knight (Knight Rider)">16759831</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Jim Knight, Baron Knight of Weymouth">427676</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Heinrich Liebe">2273877</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Patrol">1464138</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Patrol chess">297631</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="USCGC Knight Island (WPB-1348)">26237876</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Knight v Knight">11170460</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Wolfgang Lüth">2476800</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Jill Knight, Baroness Knight of Collingtree">469586</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sky Knight">15653030</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="士" saoffset="1068" salength="1" rank="105">
+				<subanchor sarel="-1" saname="士" saoffset="1068" salength="1" rank="105">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mainstreaming (education)">3614746</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Disability">56285</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ontarians with Disabilities Act">581381</tobep>
@@ -1733,8 +1733,8 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="孔" aoffset="1226" alength="1" ext_length="2">
-				<subanchor sarel="0" saname="孔" saoffset="1226" salength="1" rank="80">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Stian Hole">20272618</tobep>
+				<subanchor sarel="-1" saname="孔" saoffset="1226" salength="1" rank="80">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Stian Hole">20272618</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hole (band)">142537</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hole punch">744907</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Firestone Country Club">2022913</tobep>
@@ -2208,8 +2208,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Xiaozi">10615218</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="屋" aoffset="1662" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="屋" saoffset="1662" salength="1" rank="93">
+			<anchor arel="-1" aname="屋" aoffset="1662" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="屋" saoffset="1662" salength="1" rank="93">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="House">13590</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Affordable housing">3531662</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Assistant Secretary of Housing and Urban Development for Housing">13468691</tobep>
@@ -2735,7 +2735,7 @@
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Toys (album)">20386117</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="博" aoffset="2062" alength="1" ext_length="2">
+			<anchor arel="1" aname="博" aoffset="2062" alength="1" ext_length="2">
 				<subanchor sarel="-1" saname="博" saoffset="2062" salength="1" rank="142">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Doctor (title)">8881</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Boško Boškovič">12145321</tobep>

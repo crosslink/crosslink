@@ -212,8 +212,8 @@ public class AssessmentThread extends Thread {
             this.myPoolUpdater.updateTopicAnchorLinkRel(topicID, currentLink);
             // -----------------------------------------------------------------
             AssessedAnchor previous =  currentLink.getAssociatedAnchor();
-            Bep link = LTWAssessmentToolControler.getInstance().goNextLink(true, true);
-            CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(previous, link.getAssociatedAnchor(), link);
+            LTWAssessmentToolControler.getInstance().goNextLink(true, true);
+//            CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(previous, link.getAssociatedAnchor(), link);
     }
     
     private void updateRelevantCompletion(Bep link) {
@@ -340,8 +340,8 @@ public class AssessmentThread extends Thread {
 
             
             AssessedAnchor previous =   currentLink.getAssociatedAnchor();
-            Bep link = LTWAssessmentToolControler.getInstance().goNextLink(true, true);
-            CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(previous, link.getAssociatedAnchor(), link);
+            LTWAssessmentToolControler.getInstance().goNextLink(true, true);
+//            CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(previous, link.getAssociatedAnchor(), link);
 //            os.setTABFieldValues(link);
     }
     

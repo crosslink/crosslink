@@ -9,6 +9,7 @@ import java.io.OutputStream;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Vector;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -65,7 +66,7 @@ public class LTWAssessmentToolControler {
         myPUpdater = myPooler.getPoolUpdater();
 	}
 
-	public Bep goNextLink(boolean updateCurrAnchorStatus, boolean nextUnassessed) {
+	public void goNextLink(boolean updateCurrAnchorStatus, boolean nextUnassessed) {
         // ---------------------------------------------------------------------
         globalPoolBackupCounter++;
         // Pool Assessment Result Back up
@@ -96,7 +97,7 @@ public class LTWAssessmentToolControler {
                 System.exit(0);
             }
             showOnce = true;
-            return null;
+//            return null;
         } /*else if (this.isTAB && tabCompletedRatio[0].equals(tabCompletedRatio[1]) && !tbaCompletedRatio[0].equals(tbaCompletedRatio[1])) {
             JOptionPane.showMessageDialog(this.myTopicPane, "The Outgoing Assessment is completed. \r\n" +
                     "Please click \"OK\" button and switch to Incoming Mode to complete the assessment.\r\n" +
@@ -109,7 +110,7 @@ public class LTWAssessmentToolControler {
 //        else {
 
                 
-        return moveForwardALink(updateCurrAnchorStatus, nextUnassessed);
+        moveForwardALink(updateCurrAnchorStatus, nextUnassessed);
                 // ---------------------------------------------------------------------
                 // ---------------------------------------------------------------------
                 // </editor-fold>
@@ -117,6 +118,66 @@ public class LTWAssessmentToolControler {
 //        }
     }
     
+	public void setSubanchorIrrelevant(AssessedAnchor anchor) {
+        int newCompletedCounter = 0;
+        int prePAnchorStatus = anchor.getStatus();
+        String currTopicID = myRSCManager.getTopicID();
+        
+        for (Bep aBep : anchor.getBeps())
+        	if (aBep.getRel() != -1) {
+        		if (aBep.getRel() == 0)
+        			newCompletedCounter++;
+        		
+        		aBep.setRel(-1);
+        	}
+        if (prePAnchorStatus == 1 || prePAnchorStatus == 0) {
+            // <editor-fold defaultstate="collapsed" desc="Toggle to NONRelevant -1">
+            // Toggle to NONRelevant -1, because it was 1 or 0
+        	prePAnchorStatus = -1;
+            
+            anchor.setStatus(prePAnchorStatus);
+            myPUpdater.updatePoolSubanchorStatus(currTopicID, anchor);
+            
+            // updare Pool XML
+
+            // </editor-fold>
+        } else if (prePAnchorStatus == -1) {
+            // <editor-fold defaultstate="collapsed" desc="Toggle to PRE-STATUS: 1 or 0">
+            // Toggle to PRE-STATUS: 1 or 0
+            // b) Set Link Pane BG back to Pre-Status
+            // -------------------------------------------------------------
+            // update Completion Ratio
+            int unAssCounter = 0;
+            int nonRelCounter = 0;
+            Vector<String> pAnchorAllLinkStatus = myPooler.getPoolSubanchorAllLinkStatus(currTopicID, anchor);
+            for (String pAnchorLinkStatus : pAnchorAllLinkStatus) {
+                if (pAnchorLinkStatus.equals("0")) {
+                    unAssCounter++;
+                } else if (pAnchorLinkStatus.equals("-1")) {
+                    nonRelCounter++;
+                }
+
+            }
+            int toPAnchorStatus = Bep.UNASSESSED;
+            if (nonRelCounter == pAnchorAllLinkStatus.size()) {
+                toPAnchorStatus = -1;
+            } else if (unAssCounter > 0) {
+                toPAnchorStatus = 0;
+            } else {
+                toPAnchorStatus = 1;
+            }
+
+
+			anchor.setStatus(toPAnchorStatus);
+			
+			newCompletedCounter -= unAssCounter;
+			myPUpdater.updatePoolSubanchorStatus(currTopicID, anchor);
+        }
+        String[] outCompletionRatio = myRSCManager.getOutgoingCompletion();
+        String outCompletedLinks = String.valueOf(Integer.valueOf(outCompletionRatio[0]) + newCompletedCounter);
+        myRSCManager.updateOutgoingCompletion(outCompletedLinks + " : " + outCompletionRatio[1]);  
+	}
+	
     private void backupPool() {
 		//      String sourcePoolFPath = "resources" + File.separator + "Pool" + File.separator + "wikipedia_pool.xml";
     	String topicID = myRSCManager.getTopicID();
@@ -148,60 +209,64 @@ public class LTWAssessmentToolControler {
 		}
     }
     
-    public Bep moveForwardALink(boolean updateCurrAnchorStatus, boolean nextUnassessed) {
+    public void moveForwardALink(boolean updateCurrAnchorStatus, boolean nextUnassessed) {
         // Click the button to Go Back one Link
     	String currTopicID = rscManager.getTopicID();
             IndexedAnchor poolAnchor = CurrentFocusedAnchor.getCurrentFocusedAnchor().getAnchor().getParent();
             Bep currentBep = CurrentFocusedAnchor.getCurrentFocusedAnchor().getCurrentBep();
-            if (updateCurrAnchorStatus) {
-            	String currPALinkStatus = myPooler.getPoolAnchorBepLinkStatus(currTopicID, currentBep);
-            	int currPAnchorStatus = Integer.parseInt(myPooler.getPoolAnchorStatus(currTopicID, poolAnchor));
-            	poolAnchor.setStatus(currPAnchorStatus);
-            	int poolAnchorStatus = 0;
-            	if (currPALinkStatus.equals("-1")) {
-            		if (currPAnchorStatus == -1) {
-            			poolAnchorStatus = currPAnchorStatus;
-            		} else {
-            			poolAnchorStatus = rscManager.getPoolAnchorCompletedStatus(currTopicID, poolAnchor);
-            		}
-            	} else {
-			      poolAnchorStatus = rscManager.getPoolAnchorCompletedStatus(currTopicID, poolAnchor);
-            	}
-            	poolAnchor.setStatus(poolAnchorStatus);
-//            	if (poolAnchorStatus != 0)
-            		myPUpdater.updatePoolAnchorStatus(currTopicID, poolAnchor);            	
-            }
+//            if (updateCurrAnchorStatus) {
+//            	String currPALinkStatus = myPooler.getPoolAnchorBepLinkStatus(currTopicID, currentBep);
+//            	int currPAnchorStatus = Integer.parseInt(myPooler.getPoolAnchorStatus(currTopicID, poolAnchor));
+//            	poolAnchor.setStatus(currPAnchorStatus);
+//            	int poolAnchorStatus = 0;
+//            	if (currPALinkStatus.equals("-1")) {
+//            		if (currPAnchorStatus == -1) {
+//            			poolAnchorStatus = currPAnchorStatus;
+//            		} else {
+//            			poolAnchorStatus = rscManager.getPoolAnchorCompletedStatus(currTopicID, poolAnchor);
+//            		}
+//            	} else {
+//			      poolAnchorStatus = rscManager.getPoolAnchorCompletedStatus(currTopicID, poolAnchor);
+//            	}
+//            	poolAnchor.setStatus(poolAnchorStatus);
+////            	if (poolAnchorStatus != 0)
+//            		myPUpdater.updatePoolAnchorStatus(currTopicID, poolAnchor);            	
+//            }
             // -------------------------------------------------------------
             // 1) Get the NEXT Anchor O, L, S, E, Status + its BEP link O, S, ID, Status
             //    With TAB Nav Update --> NEXT TAB
             Bep nextAnchorBepLinkVSA = rscManager.getNextTABWithUpdateNAV(currTopicID, currentBep, nextUnassessed);
+            
+            if (updateCurrAnchorStatus && (nextAnchorBepLinkVSA.getAssociatedAnchor().getParent() != currentBep.getAssociatedAnchor().getParent()))
+            	currentBep.getAssociatedAnchor().getParent().statusCheck();
 
-            updateAnchorChanges(nextAnchorBepLinkVSA, currentBep);
-            return nextAnchorBepLinkVSA;
+//            updateAnchorChanges(nextAnchorBepLinkVSA, currentBep);
+//            return nextAnchorBepLinkVSA;
+            CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(currentBep.getAssociatedAnchor(), nextAnchorBepLinkVSA.getAssociatedAnchor(), nextAnchorBepLinkVSA);
     }
     
-    public void updateAnchorChanges(Bep nextAnchorBepLinkVSA, Bep currALinkOIDSA) {
-    	String currTopicID = rscManager.getTopicID();
-    	AssessedAnchor currentAnchor = currALinkOIDSA.getAssociatedAnchor();
-    	AssessedAnchor nextAnchor = nextAnchorBepLinkVSA.getAssociatedAnchor();
-    	
-//        updateAnchor(/*currTopicOLSEStatusSA*/, );
-        int currPAnchorStatus = Integer.parseInt(myPooler.getPoolAnchorStatus(currTopicID, currentAnchor));
-
-    if (currentAnchor.getParent() != nextAnchor.getParent()) {
-        int poolAnchorStatus = 0;
-        if (currPAnchorStatus != 0){
-            poolAnchorStatus = currPAnchorStatus;
-        } else {
-            poolAnchorStatus = rscManager.getPoolAnchorCompletedStatus(currTopicID, currentAnchor);
-        }
-        currentAnchor.getParent().setStatus(poolAnchorStatus);
-        myPUpdater.updatePoolAnchorStatus(currTopicID, currentAnchor.getParent());
-
-    }
-		CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(currentAnchor, nextAnchor, nextAnchorBepLinkVSA);
-//        updateFields(nextAnchorBepLinkVSA);
-    }
+//    public void updateAnchorChanges(Bep nextAnchorBepLinkVSA, Bep currALinkOIDSA) {
+//    	String currTopicID = rscManager.getTopicID();
+//    	AssessedAnchor currentAnchor = currALinkOIDSA.getAssociatedAnchor();
+//    	AssessedAnchor nextAnchor = nextAnchorBepLinkVSA.getAssociatedAnchor();
+//    	
+////        updateAnchor(/*currTopicOLSEStatusSA*/, );
+//        int currPAnchorStatus = Integer.parseInt(myPooler.getPoolAnchorStatus(currTopicID, currentAnchor));
+//
+//    if (currentAnchor.getParent() != nextAnchor.getParent()) {
+//        int poolAnchorStatus = 0;
+//        if (currPAnchorStatus != 0){
+//            poolAnchorStatus = currPAnchorStatus;
+//        } else {
+//            poolAnchorStatus = rscManager.getPoolAnchorCompletedStatus(currTopicID, currentAnchor);
+//        }
+//        currentAnchor.getParent().setStatus(poolAnchorStatus);
+//        myPUpdater.updatePoolAnchorStatus(currTopicID, currentAnchor.getParent());
+//
+//    }
+//		CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(currentAnchor, nextAnchor, nextAnchorBepLinkVSA);
+////        updateFields(nextAnchorBepLinkVSA);
+//    }
     
     private void updateFields(Bep bep) {
         // =================================================================
