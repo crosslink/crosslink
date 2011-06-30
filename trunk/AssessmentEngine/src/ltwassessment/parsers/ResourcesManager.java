@@ -1452,7 +1452,7 @@ public class ResourcesManager {
     	for (; i < poolAnchorsOLNameStatusVSA.size(); ++i) {
     		anchor = poolAnchorsOLNameStatusVSA.get(i);
     		
-    		if (nextUnassessed && unassessedAnchor == null && anchor.checkStatus() == IndexedAnchor.ASSESSMENT_FINISHED_NO)
+    		if (nextUnassessed && unassessedAnchor == null && anchor.getStatus() == Bep.UNASSESSED)
     			unassessedAnchor = anchor;
     		
     		if (anchor == currentAnchor) {
@@ -1464,7 +1464,7 @@ public class ResourcesManager {
     	if (nextUnassessed)
 	    	for (; i < poolAnchorsOLNameStatusVSA.size(); ++i) {
 	    		anchor = poolAnchorsOLNameStatusVSA.get(i);
-	    		if (anchor.checkStatus() == IndexedAnchor.ASSESSMENT_FINISHED_NO) {
+	    		if (anchor.getStatus() == Bep.UNASSESSED) {
 	    			unassessedAnchor = anchor;
 	    			break;
 	    		}
@@ -1485,7 +1485,7 @@ public class ResourcesManager {
     	for (; i > -1; --i) {
     		anchor = poolAnchorsOLNameStatusVSA.get(i);
     		
-    		if (nextUnassessed && unassessedAnchor == null && anchor.checkStatus() == IndexedAnchor.ASSESSMENT_FINISHED_NO)
+    		if (nextUnassessed && unassessedAnchor == null && anchor.getStatus() == Bep.UNASSESSED)
     			unassessedAnchor = anchor;
     		
     		if (anchor == currentAnchor) {
@@ -1497,7 +1497,7 @@ public class ResourcesManager {
     	if (nextUnassessed)
 	    	for (; i > -1; --i) {
 	    		anchor = poolAnchorsOLNameStatusVSA.get(i);
-	    		if (anchor.checkStatus() == IndexedAnchor.ASSESSMENT_FINISHED_NO) {
+	    		if (anchor.getStatus() == Bep.UNASSESSED) {
 	    			unassessedAnchor = anchor;
 	    			break;
 	    		}
@@ -2291,6 +2291,12 @@ public class ResourcesManager {
                 }
             }
         }
+    }
+    
+    public void checkAnchorStatus() {
+    	Vector<IndexedAnchor> poolAnchorsOLV = getPoolAnchorsOLNameStatusV();
+    	for (IndexedAnchor anchor : poolAnchorsOLV)
+    		anchor.statusCheck();
     }
 
 //    public String[] getTopicAnchorOLStatusBySE(String topicID, IndexedAnchor currSCRSEName) {

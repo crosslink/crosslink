@@ -48,7 +48,6 @@ public class AssessedAnchor extends IndexedAnchor {
 		return screenPosEnd;
 	}
 	
-	@Override
 	public int checkStatus() {
 		int finished = ASSESSMENT_FINISHED_NO;
 		if (status == Bep.IRRELEVANT)

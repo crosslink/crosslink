@@ -7,7 +7,10 @@ import java.util.logging.Logger;
 import javax.swing.text.BadLocationException;
 import javax.swing.text.Highlighter;
 
+import ltwassessment.parsers.PoolerManager;
+import ltwassessment.parsers.ResourcesManager;
 import ltwassessment.submission.Anchor;
+import ltwassessment.utility.PoolUpdater;
 import ltwassessment.utility.highlightPainters;
 import ltwassessment.view.TopicHighlightManager;
 
@@ -326,14 +329,27 @@ public class IndexedAnchor extends Anchor {
     	return needNotFinished ? unassessedAnchor : anchor;
 	}
 	
-	public int checkStatus() {
-		int finished = ASSESSMENT_FINISHED_YES;
-		for (AssessedAnchor subanchor : getChildrenAnchors()) {
-			if (subanchor.checkStatus() == ASSESSMENT_FINISHED_NO) {
-				finished = ASSESSMENT_FINISHED_NO;
-				break;
+	public void statusCheck() {
+		if (status == Bep.UNASSESSED) {
+			int rel = Bep.IRRELEVANT;
+			
+			for (AssessedAnchor subanchor : getChildrenAnchors()) {
+				if (subanchor.checkStatus() == ASSESSMENT_FINISHED_NO) {
+	//				finished = ASSESSMENT_FINISHED_NO;
+					rel = 0;
+					break;
+				}
+				
+				if (subanchor.getStatus() == Bep.RELEVANT)
+					rel = Bep.RELEVANT;
+			}
+
+		
+			if (rel != status) {
+				status = rel;
+				PoolerManager.getPoolUpdater().updatePoolAnchorStatus(ResourcesManager.getInstance().getTopicID(), this);
 			}
 		}
-		return finished;
+//		return finished;
 	}
 }
