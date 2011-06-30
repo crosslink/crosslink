@@ -1021,6 +1021,7 @@ public class LTWAssessmentToolView extends FrameView {
         	topicAnchorsOLNameSEVS = rscManager.getTopicAnchorsOLNameSEV();
         }
         
+        rscManager.checkAnchorStatus();
         
         /*************************************************************************
          * Step 2
