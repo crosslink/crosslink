@@ -1,4 +1,4 @@
-package ltwassessmenttool.listener;
+package ltwassessment.listener;
 
 import java.awt.Color;
 import java.awt.Cursor;
@@ -31,15 +31,12 @@ import javax.swing.text.Style;
 import javax.swing.text.StyleConstants;
 import javax.swing.text.StyledDocument;
 
-import ltwassessmenttool.LTWAssessmentToolView;
 import ltwassessment.AppResource;
 import ltwassessment.assessment.AssessedAnchor;
 import ltwassessment.assessment.Bep;
 import ltwassessment.assessment.CurrentFocusedAnchor;
 import ltwassessment.assessment.IndexedAnchor;
 import ltwassessment.assessment.LTWAssessmentToolControler;
-import ltwassessment.listener.linkPaneMouseListener;
-import ltwassessment.listener.topicPaneMouseListener;
 import ltwassessment.parsers.FOLTXTMatcher;
 import ltwassessment.parsers.Xml2Html;
 import ltwassessment.parsers.PoolerManager;
@@ -121,7 +118,7 @@ public class topicPaneMouseListener implements MouseInputListener {
     }
 
     public topicPaneMouseListener(JTextPane topicPane, JTextPane linkPane) {
-        org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(ltwassessmenttool.LTWAssessmentToolApp.class).getContext().getResourceMap(LTWAssessmentToolView.class);
+        org.jdesktop.application.ResourceMap resourceMap = AppResource.getInstance().getResourceMap();
         afTasnCollectionErrors = resourceMap.getString("AssFormXml.taskCollectionError");
         bepIconImageFilePath = resourceMap.getString("bepIcon.imageFilePath");
         bepHighlightIconImageFilePath = resourceMap.getString("bepHighlightIcon.imageFilePath");
