@@ -1,5 +1,6 @@
 package ltwassessment.assessment;
 
+import java.awt.Insets;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -9,21 +10,35 @@ import java.io.OutputStream;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Hashtable;
 import java.util.Vector;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import javax.swing.JComponent;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextPane;
 
+import org.jdesktop.application.FrameView;
+
+import ltwassessment.AppResource;
 import ltwassessment.Assessment;
 import ltwassessment.assessment.Bep;
 import ltwassessment.assessment.CurrentFocusedAnchor;
 import ltwassessment.assessment.IndexedAnchor;
+import ltwassessment.font.AdjustFont;
+import ltwassessment.listener.CaretListenerLabel;
+import ltwassessment.listener.linkPaneMouseListener;
+import ltwassessment.listener.topicPaneMouseListener;
+import ltwassessment.parsers.FOLTXTMatcher;
 import ltwassessment.parsers.PoolerManager;
 import ltwassessment.parsers.ResourcesManager;
+import ltwassessment.parsers.Xml2Html;
 import ltwassessment.utility.BrowserControl;
 import ltwassessment.utility.PoolUpdater;
+import ltwassessment.view.TopicHighlightManager;
 
 public class LTWAssessmentToolControler {
 	public final static String sysPropertyIsTABKey = "isTABKey";
@@ -42,19 +57,58 @@ public class LTWAssessmentToolControler {
     private JTextPane myTopicPane = null;
     private JTextPane myLinkPane = null;
     
+    private String currTopicFilePath = "";
+    
     private boolean showOnce = false;
 	private PoolUpdater myPUpdater;
     private PoolerManager myPooler;
     private ResourcesManager rscManager = null;
+    private JFrame mainFrame = null;
     
-    private static LTWAssessmentToolControler instance = null;
+    private Hashtable<String, Vector<IndexedAnchor>> topicAnchorsHT = new Hashtable<String, Vector<IndexedAnchor>>();
+    private Hashtable<String, Vector<String[]>> topicSubanchorsHT = new Hashtable<String, Vector<String[]>>();
+    private Hashtable<String, Vector<String[]>> topicBepsHT = new Hashtable<String, Vector<String[]>>();
     
-    public void setContainter(JTextPane myTopicPane, JTextPane myLinkPane) {
+    private static String currTopicID = "";
+    private static String currTopicName = "";
+    // -------------------------------------------------------------------------
+    private Vector<IndexedAnchor> topicAnchorOLSEStatus; // = new Vector<String[]>();
+	private JComponent lblTargetTitle;
+	private JLabel statusMessageLabel;
+	private JComponent lblPoolAnchor;
+	private JComponent lblTopicTitle;
+    
+    private static String textContentType = "";
+
+	private static LTWAssessmentToolControler instance = null;
+    
+    public void setContainter(JFrame mainView, JTextPane myTopicPane, JTextPane myLinkPane) {
+    	this.mainFrame = mainView;
     	this.myTopicPane = myTopicPane;
     	this.myLinkPane = myLinkPane;
     }
     
-    public static LTWAssessmentToolControler getInstance() {
+    public static void setTextContentType(String textContentType) {
+		LTWAssessmentToolControler.textContentType = textContentType;
+	}
+    
+    public void setLblTargetTitle(JComponent lblTargetTitle) {
+		this.lblTargetTitle = lblTargetTitle;
+	}
+
+	public void setStatusMessageLabel(JLabel statusMessageLabel) {
+		this.statusMessageLabel = statusMessageLabel;
+	}
+
+	public void setLblPoolAnchor(JComponent lblPoolAnchor) {
+		this.lblPoolAnchor = lblPoolAnchor;
+	}
+
+	public void setLblTopicTitle(JComponent lblTopicTitle) {
+		this.lblTopicTitle = lblTopicTitle;
+	}
+
+	public static LTWAssessmentToolControler getInstance() {
         if (instance == null)
             instance = new LTWAssessmentToolControler();
         return instance;
@@ -65,6 +119,14 @@ public class LTWAssessmentToolControler {
         myPooler = PoolerManager.getInstance();
         myPUpdater = myPooler.getPoolUpdater();
 	}
+    
+    public void assessNextTopic() {
+    	String currTopicID = rscManager.getTopicID();
+    	if (currTopicID != null)
+    		Assessment.getInstance().finishTopic(currTopicID);
+    	currTopicID = Assessment.getInstance().getNextTopic();
+    	assess(Assessment.getPoolFile(currTopicID), true);
+    }
 
 	public void goNextLink(boolean updateCurrAnchorStatus, boolean nextUnassessed) {
         // ---------------------------------------------------------------------
@@ -90,11 +152,12 @@ public class LTWAssessmentToolControler {
                     poolAndLogDir, "Assessment Completion",
                     JOptionPane.OK_OPTION);
             if (option == JOptionPane.OK_OPTION || option == JOptionPane.CLOSED_OPTION) {
-                BrowserControl openBrowser = new BrowserControl();
-                openBrowser.displayURL(crosslinkURL);
-                javax.swing.SwingUtilities.getWindowAncestor(this.myLinkPane).setVisible(false);
-                javax.swing.SwingUtilities.getWindowAncestor(this.myLinkPane).dispose();
-                System.exit(0);
+//                BrowserControl openBrowser = new BrowserControl();
+//                openBrowser.displayURL(crosslinkURL);
+//                javax.swing.SwingUtilities.getWindowAncestor(this.myLinkPane).setVisible(false);
+//                javax.swing.SwingUtilities.getWindowAncestor(this.myLinkPane).dispose();
+                assessNextTopic();
+//                System.exit(0);
             }
             showOnce = true;
 //            return null;
@@ -323,5 +386,233 @@ public class LTWAssessmentToolControler {
 //        String[] pAnchorCompletionSA = rscManager.getOutgoingCompletion();
 //        newTABFieldValues.add(pAnchorCompletionSA[0] + " / " + pAnchorCompletionSA[1]);
 //        os.setTABFieldValues(bep);
+    }
+    
+    public void assess(String poolFile) {
+    	assess(poolFile, false);
+    }
+    
+    private void assess(String poolFile, boolean reset) {
+    	if (!new File(poolFile).exists()) {
+          String errMessage = "Cannot find pool file: " + poolFile + "\r\n";
+			JOptionPane.showMessageDialog(mainFrame, errMessage);    		
+    		return;
+    	}
+    	
+        rscManager = ResourcesManager.getInstance();
+        myPooler = PoolerManager.getInstance(poolFile);
+        myPUpdater = myPooler.getPoolUpdater();
+        
+        AssessmentThread.setMyPoolManager(myPooler);
+        AssessmentThread.setMyRSCManager(rscManager);
+        AssessmentThread.setMyPoolUpdater(myPUpdater);
+        
+        topicAnchorsHT = myPooler.getTopicAllAnchors();
+       
+        if (reset) {
+        	resetResouceTopic(AppResource.sourceLang);
+        } 
+        else {
+	        String id = rscManager.getTopicID(); 
+	        if (!id.equals(currTopicID)) {
+		        Vector<String[]> topicIDNameVSA = this.myPooler.getAllTopicsInPool();
+		    	currTopicID = topicIDNameVSA.elementAt(0)[0].trim();
+		    	
+		        String topicLang = topicIDNameVSA.elementAt(0)[2];
+		        resetResouceTopic(topicLang);
+	        }
+        }
+
+        setupTopic();        
+        setupComponentFont();
+        
+        Assessment.getInstance().setCurrentTopicWithId(currTopicID);
+        currTopicName = Assessment.getInstance().getCurrentTopic().getTitle();
+        rscManager.pullPoolData();
+    	
+        // -------------------------------------------------------------
+        // scrSE, String[]{O,L,TXT,S,E,num}
+//      topicAnchorOLTSENHT = populateTopicAnchorOLTSENHT();
+        // -------------------------------------------------------------
+        CaretListenerLabel caretListenerLabel = new CaretListenerLabel("Caret Status", myTopicPane, statusMessageLabel);
+        myTopicPane.addCaretListener(caretListenerLabel);
+        topicPaneMouseListener mtTopicPaneListener = new topicPaneMouseListener(myTopicPane, myLinkPane);
+        myTopicPane.addMouseListener(mtTopicPaneListener);
+        myTopicPane.addMouseMotionListener(mtTopicPaneListener);
+        linkPaneMouseListener myLPMListener = new linkPaneMouseListener(myTopicPane, myLinkPane);
+        myLinkPane.addMouseListener(myLPMListener);
+        // -------------------------------------------------------------
+//        this.outRadioBtn.setSelected(true);
+//        this.inRadioBtn.setSelected(false);
+        // -------------------------------------------------------------
+        setOutgoingTAB();
+    }
+    
+    private void setOutgoingTAB() {
+        // 0) set System property to TAB Outgoing
+        // 1) populate Topic Pane <-- only one Topic
+        // 2) --> Check AnchorOL Status
+        // 3) highlight Topic Pane Anchors
+        // 4) indciate CURRENT Topic Anchor Text & Target Link
+        System.setProperty(LTWAssessmentToolControler.sysPropertyIsTABKey, "true");
+        rscManager.updateLinkingMode("outgoing");
+        // ---------------------------------------------------------------------
+        // Get Pool Properties
+        // Hashtable<outgoing : topicFileID>: [0]:Offset, [1]:Length, [2]:Anchor_Name
+//        topicSubanchorsHT = myPooler.getTopicAllSubanchors();
+        // ---------------------------------------------------------------------
+        // 1) Get Topic ID & xmlFile Path
+        //    SET Topic Text Pane Content
+        // 2) Get all Anchor Text SCR SE + Status
+        //    SET Highlighter + Curr Anchor Text
+        // 3) Get Target Link
+        //    1st un-assessed Link, belonging to Curr Anchor Text
+
+        //currTopicName = topicIDNameVSA.elementAt(0)[1].trim();
+        String currTopicID = rscManager.getTopicID();
+        String currTopicFilePath = rscManager.getCurrTopicXmlFile();
+//        currTopicName = new WikiArticleXml(currTopicFilePath).getTitle();
+        String topicLang = rscManager.getTopicLang();
+        setTopicPaneContent(currTopicFilePath, topicLang);
+
+        // ---------------------------------------------------------------------
+        // For 1st time to get the ANCHOR OL name SE
+//        folMatcher = FOLTXTMatcher.getInstance();
+        Vector<String> topicAnchorsOLNameSEVS = rscManager.getTopicAnchorsOLNameSEV();
+        if (topicAnchorsOLNameSEVS.size() == 0) {
+        	FOLTXTMatcher.getInstance().getSCRAnchorPosV(myTopicPane, currTopicID, topicAnchorsHT);
+        	topicAnchorsOLNameSEVS = rscManager.getTopicAnchorsOLNameSEV();
+        }
+        
+        rscManager.checkAnchorStatus();
+        
+        /*************************************************************************
+         * Step 2
+         * 
+         * setup the screen start and end position of anchors
+         *************************************************************************/
+        rscManager.setTopicAnchorOLStatusBySE();
+        topicAnchorOLSEStatus = rscManager.getPoolAnchorsOLNameStatusV();
+        
+        /*************************************************************************
+         * Step 3
+         * 
+         ************************************************************************/
+        TopicHighlightManager.getInstance().initializeHighlighter(topicAnchorOLSEStatus);
+        
+        String[] tabCompletedRatio = this.rscManager.getTABCompletedRatio();
+        this.rscManager.updateOutgoingCompletion(tabCompletedRatio[0] + " : " + tabCompletedRatio[1]);
+        System.setProperty(LTWAssessmentToolControler.sysPropertyTABCompletedRatioKey, String.valueOf(tabCompletedRatio[0]) + "_" + String.valueOf(tabCompletedRatio[1]));
+        // ---------------------------------------------------------------------
+        
+        // String[]{Anchor_O, L, SP, EP, Status}
+//        topicAnchorOLSEStatus = rscManager.getTopicAnchorOLSEStatusVSA();
+        // String[]{Anchor_O, L, Name, SP, EP, Status}
+        String[] currTopicOLNameSEStatus = rscManager.getCurrTopicAnchorOLNameSEStatusSA(myTopicPane, currTopicID, topicAnchorsOLNameSEVS);
+        String currTopicPAnchorStatus = currTopicOLNameSEStatus[5];
+        // ---------------------------------------------------------------------
+        // Get current Link file ID & SCR BEP S, lang, title
+        Bep CurrTopicATargetOID = rscManager.getCurrTopicATargetOID(myLinkPane, currTopicID);
+        String currTargetOffset = CurrTopicATargetOID.offsetToString(); //[0];
+        String currTargetID = CurrTopicATargetOID.getFileId(); //[1];
+        String currTargetLang = CurrTopicATargetOID.getTargetLang(); //[2];
+        String pageTitle = CurrTopicATargetOID.getTargetTitle(); //[3];;
+        if (currTargetID.endsWith("\"")) {
+            currTargetID = currTargetID.substring(0, currTargetID.length() - 1);
+        }
+        String currTargetFilePath = rscManager.getWikipediaFilePathByName(currTargetID + ".xml", currTargetLang);
+        
+//        os.setTABFieldValues(CurrTopicATargetOID);
+        
+        /*************************************************************************
+         * Step 5
+         * 
+         ************************************************************************/
+//        TopicHighlightManager.getInstance().update(null, CurrTopicATargetOID.getAssociatedAnchor());
+        CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(null, CurrTopicATargetOID.getAssociatedAnchor(), CurrTopicATargetOID);
+
+//        setTABLinkPaneContent(currTargetFilePath, currTargetLang);
+//        // bep_Offset, linkID, Status
+//        String[] CurrTopicATargetSIDStatus = rscManager.getCurrTopicABepSIDStatusSA(thisLinkTextPane, currTopicID);
+//        setLinkBEPIcon(currTopicPAnchorStatus, CurrTopicATargetSIDStatus);
+
+    }
+    
+    // Topic Pane: Anchor
+    private void setTopicPaneContent(String xmlFilePath, String lang) {
+    	AdjustFont.setComponentFont(myTopicPane, lang);
+        if (!xmlFilePath.equals("")) {
+            createTopicTextPane(xmlFilePath);
+        } else {
+            myTopicPane.setContentType(textContentType);
+            myTopicPane.setText("<b>The topic file is missing or specified wrongly!!!</b>");
+        }
+    }
+    
+    private void setupComponentFont() {
+    	AdjustFont.setComponentFont(lblTopicTitle, AppResource.sourceLang);
+    	AdjustFont.setComponentFont(lblPoolAnchor, AppResource.sourceLang);
+    }
+    
+    private void setupTopic() {
+        currTopicFilePath = rscManager.getCurrTopicXmlFile();
+		//      currTopicName = new WikiArticleXml(currTopicFilePath).getTitle();
+		String topicLang = rscManager.getTopicLang();
+		setTopicPaneContent(currTopicFilePath, topicLang);
+		FOLTXTMatcher.getInstance().getCurrFullXmlText();
+    	    	
+    	FOLTXTMatcher.getInstance().getSCRAnchorPosV(myTopicPane, currTopicID, topicAnchorsHT);
+    	Vector<String> topicAnchorsOLNameSEVS = rscManager.getTopicAnchorsOLNameSEV();
+//        int completedAnchor = 0;
+//		//      int totoalAnchorNumber = Integer.valueOf(tabCompletedRatio[1]);
+//		
+//		int totoalAnchorNumberRecored = topicAnchorsOLNameSEVS.size();
+//		
+//		this.rscManager.updateOutgoingCompletion(String.valueOf(completedAnchor) + " : " + String.valueOf(totoalAnchorNumberRecored));
+    }
+    
+    private void resetResouceTopic(String topicLang) {
+    	currTopicFilePath = AppResource.getInstance().getTopicXmlPathNameByFileID(currTopicID, topicLang); //rscManager.getTopicFilePath(currTopicID, topicLang);
+    	rscManager.updateTopicID(currTopicID + ":" + topicLang);
+    	rscManager.updateCurrTopicFilePath(currTopicFilePath);
+    	rscManager.updateCurrAnchorFOL(null);
+    }
+    
+    private void createLinkTextPane(String xmlFilePath, String lang) {
+    	AdjustFont.getInstance().setComponentFont(myLinkPane, lang);
+    	AdjustFont.getInstance().setComponentFont(lblTargetTitle, lang);
+        myLinkPane.setCaretPosition(0);
+        myLinkPane.setMargin(new Insets(5, 5, 5, 5));
+        initLinkDocument(xmlFilePath);
+        myLinkPane.setCaretPosition(0);
+    }
+    
+    private void setTABLinkPaneContent(String xmlFilePath, String lang) {
+        if (!xmlFilePath.equals("")) {
+            createLinkTextPane(xmlFilePath, lang);
+        } else {
+            myLinkPane.setContentType(textContentType);
+            myLinkPane.setText("<b>The target file is missing or specified wrongly!!!</b>");
+        }
+    }
+    
+    private void createTopicTextPane(String xmlFilePath) {
+        myTopicPane.setCaretPosition(0);
+        myTopicPane.setMargin(new Insets(5, 5, 5, 5));
+        initTopicDocument(xmlFilePath);
+        myTopicPane.setCaretPosition(0);
+    }
+
+    private void initTopicDocument(String xmlFilePath) {
+        Xml2Html xmlParser = new Xml2Html(xmlFilePath, true);
+        myTopicPane.setContentType(textContentType);
+        myTopicPane.setText(xmlParser.getHtmlContent().toString());
+    }
+    
+
+    private void initLinkDocument(String xmlFilePath) {
+        Xml2Html xmlParser = new Xml2Html(xmlFilePath, true);
+        myLinkPane.setContentType(textContentType);
+        myLinkPane.setText(xmlParser.getHtmlContent().toString());
     }
 }
