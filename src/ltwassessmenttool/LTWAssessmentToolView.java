@@ -885,7 +885,7 @@ public class LTWAssessmentToolView extends FrameView {
             //    With TAB Nav Update --> NEXT TAB
             Bep nextAnchorBepLinkVSA = rscManager.getPreTABWithUpdateNAV(currTopicID, currALinkOIDSA, false);
             
-            LTWAssessmentToolControler.getInstance().updateAnchorChanges(nextAnchorBepLinkVSA, currALinkOIDSA);
+//            LTWAssessmentToolControler.getInstance().updateAnchorChanges(nextAnchorBepLinkVSA, currALinkOIDSA);
     }
 
     @Action
