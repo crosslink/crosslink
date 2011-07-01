@@ -515,11 +515,13 @@ public class LTWAssessmentToolView extends FrameView {
 
         linkTextScrollPane.setMinimumSize(new java.awt.Dimension(20, 20));
         linkTextScrollPane.setName("linkTextScrollPane"); // NOI18N
-        linkTextScrollPane.setPreferredSize(new java.awt.Dimension(525, 400));
+        linkTextScrollPane.setPreferredSize(new java.awt.Dimension(226, 445));
+        linkTextScrollPane.setRequestFocusEnabled(false);
 
         thisLinkTextPane.setEditable(false);
+        thisLinkTextPane.setMaximumSize(new java.awt.Dimension(300, 400));
         thisLinkTextPane.setName("thisLinkTextPane"); // NOI18N
-        thisLinkTextPane.setPreferredSize(new java.awt.Dimension(525, 444));
+        thisLinkTextPane.setPreferredSize(new java.awt.Dimension(225, 444));
         linkTextScrollPane.setViewportView(thisLinkTextPane);
 
         jSplitPane1.setRightComponent(linkTextScrollPane);

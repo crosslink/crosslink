@@ -4,7 +4,7 @@
 	<collection>Korean Wikipedia 2010 Collection</collection>
 	<topic file="750323" name="僧伽">
 		<outgoinglinks>
-			<anchor arel="0" aname="僧" aoffset="265" alength="1" ext_length="1">
+			<anchor arel="-1" aname="僧" aoffset="265" alength="1" ext_length="1">
 				<subanchor sarel="-1" saname="僧" saoffset="265" salength="1" rank="66">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mr. Monk and Mrs. Monk">3765967</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Monk (Dungeons &amp; Dragons)">3616354</tobep>
@@ -22,18 +22,18 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Thelonious Monk">84250</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="僧伽" saoffset="265" salength="2" rank="13">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sangha Department (Congo)">1018850</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sangha people">18990183</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sangha River">513154</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Professional association">377828</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sangha-Mbaéré">768838</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sangha Department (Congo)">1018850</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sangha people">18990183</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sangha River">513154</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Professional association">377828</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sangha-Mbaéré">768838</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="伽" saoffset="266" salength="1" rank="70">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Gal (unit)">664655</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Gal (unit)">664655</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="佛" aoffset="474" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="佛" saoffset="474" salength="1" rank="69">
+				<subanchor sarel="-1" saname="佛" saoffset="474" salength="1" rank="69">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Buddhism">3267529</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Foshan">1029003</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Iconography of Gautama Buddha in Laos and Thailand">3919371</tobep>
@@ -91,7 +91,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="頭" aoffset="476" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="頭" saoffset="476" salength="1" rank="94">
+				<subanchor sarel="-1" saname="頭" saoffset="476" salength="1" rank="94">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of One Life to Live crew">21234647</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Head 2 Head">8418499</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Florida State Seminoles head football coaches">4489865</tobep>
@@ -126,7 +126,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="梵" aoffset="501" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="梵" saoffset="501" salength="1" rank="86">
+				<subanchor sarel="-1" saname="梵" saoffset="501" salength="1" rank="86">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Brahma Loga">2786401</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Henrietta M. King High School">19488649</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Brahman">20646880</tobep>
@@ -153,7 +153,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sanskrit">27698</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sanskrit drama">1924995</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="語" saoffset="502" salength="1" rank="223">
+				<subanchor sarel="-1" saname="語" saoffset="502" salength="1" rank="223">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Language">17524</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of endangered languages in North America">7909734</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of unclassified languages according to the Ethnologue">1255882</tobep>
@@ -171,8 +171,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of endangered languages in Asia">7916600</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="詞" aoffset="503" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="詞" saoffset="503" salength="1" rank="90">
+			<anchor arel="-1" aname="詞" aoffset="503" alength="1" ext_length="1">
+				<subanchor sarel="-1" saname="詞" saoffset="503" salength="1" rank="90">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bible">3390</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="1st Word/1st Word Plus">22466183</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Vocabulary">191445</tobep>
@@ -190,7 +190,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Oral literature">710771</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Word Power">9010624</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="詞語" saoffset="503" salength="2" rank="52">
+				<subanchor sarel="-1" saname="詞語" saoffset="503" salength="2" rank="52">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Words (F. R. David song)">7287446</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Words (Anthony David song)">18885460</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Words (Bee Gees song)">4329840</tobep>
@@ -4692,8 +4692,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Error (EP)">1297836</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="在家" aoffset="2016" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="在家" saoffset="2016" salength="2" rank="148">
+			<anchor arel="-1" aname="在家" aoffset="2016" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="在家" saoffset="2016" salength="2" rank="148">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="2009 Canadian Championship">19987414</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Primera División de México 2010 Bicentenario Liguilla Final">27456866</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Home from Home">1403697</tobep>
@@ -4711,8 +4711,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Home (Home album)">28084111</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="信" aoffset="2018" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="信" saoffset="2018" salength="1" rank="111">
+			<anchor arel="-1" aname="信" aoffset="2018" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="信" saoffset="2018" salength="1" rank="111">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Latin Extended Additional Unicode block">23508302</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Letter (alphabet)">3675310</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Letter railway station">27581736</tobep>
@@ -4734,8 +4734,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Belief">102883</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="經濟" aoffset="2022" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="經濟" saoffset="2022" salength="2" rank="40">
+			<anchor arel="-1" aname="經濟" aoffset="2022" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="經濟" saoffset="2022" salength="2" rank="40">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Economic system">692262</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Economy of Taiwan">30092</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Digital economy">9613511</tobep>
@@ -4756,7 +4756,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Political economy">46044</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Economy of Russia">25705</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="濟" saoffset="2023" salength="1" rank="235">
+				<subanchor sarel="-1" saname="濟" saoffset="2023" salength="1" rank="235">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Economic system">692262</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Digital economy">9613511</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Economy, Nova Scotia">1583272</tobep>
@@ -4773,8 +4773,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Political economy">46044</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="困難" aoffset="2024" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="困難" saoffset="2024" salength="2" rank="155">
+			<anchor arel="-1" aname="困難" aoffset="2024" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="困難" saoffset="2024" salength="2" rank="155">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Difficult Run">7126007</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Difficult Women">10240983</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of indices of freedom">1604579</tobep>
@@ -4786,7 +4786,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="International Scale of River Difficulty">2424579</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Difficult Loves">13224848</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="難" saoffset="2025" salength="1" rank="237">
+				<subanchor sarel="-1" saname="難" saoffset="2025" salength="1" rank="237">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Difficult Run">7126007</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Difficult Women">10240983</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of indices of freedom">1604579</tobep>
@@ -4798,8 +4798,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Difficult Loves">13224848</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="養" aoffset="2030" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="養" saoffset="2030" salength="1" rank="216">
+			<anchor arel="-1" aname="養" aoffset="2030" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="養" saoffset="2030" salength="1" rank="216">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of United States Air Force support squadrons">23790434</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Run support">11488507</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Operation SUPPORT">371186</tobep>
@@ -4816,29 +4816,29 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Price support">1953376</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="集會" aoffset="2037" alength="2" ext_length="0">
+			<anchor arel="-1" aname="集會" aoffset="2037" alength="2" ext_length="0">
 				<subanchor sarel="0" saname="集會" saoffset="2037" salength="2" rank="93">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Samoan Assemblies of God Churches in New Zealand">23979730</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Assembly modelling">2863774</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Freedom of assembly">333994</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of legislatures by country">408310</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Deliberative assembly">44418</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="California State Assembly">476068</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Assembly (demo party)">291109</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="California State Assembly districts">7912521</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="National Assembly">140559</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Madrid Assembly">13549785</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="New York State Assembly">581663</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Statewise Election history of Congress Party">5020938</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Goldheart Assembly">23628487</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Lordstown Assembly">4081841</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Assembly">54987</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Assembly language">1368</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Samoan Assemblies of God Churches in New Zealand">23979730</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Assembly modelling">2863774</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Freedom of assembly">333994</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of legislatures by country">408310</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Deliberative assembly">44418</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="California State Assembly">476068</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Assembly (demo party)">291109</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="California State Assembly districts">7912521</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="National Assembly">140559</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Madrid Assembly">13549785</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="New York State Assembly">581663</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Statewise Election history of Congress Party">5020938</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Goldheart Assembly">23628487</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Lordstown Assembly">4081841</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Assembly">54987</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Assembly language">1368</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="公開" aoffset="2041" alength="2" ext_length="0">
 				<subanchor sarel="0" saname="公開" saoffset="2041" salength="2" rank="187">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Gateway to the Open Mizuno Open Yomiuri Classic">14749826</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Gateway to the Open Mizuno Open Yomiuri Classic">14749826</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Grand Slam (tennis)">197638</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of airports by IATA code: Y">317150</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Open">514174</tobep>
@@ -4870,8 +4870,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Australian Group races">3243691</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="此在" aoffset="2057" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="此在" saoffset="2057" salength="2" rank="132">
+			<anchor arel="-1" aname="此在" aoffset="2057" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="此在" saoffset="2057" salength="2" rank="132">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="In This Light and on This Evening">23063276</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of This Is Daniel Cook episodes">13314655</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:American Civil War/This week in American Civil War history">13081356</tobep>
@@ -4958,27 +4958,27 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Door to Door">4853762</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="信徒" aoffset="2077" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="信徒" saoffset="2077" salength="2" rank="53">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bible believer">5216140</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Believer (Chic album)">13112970</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Friday Night at St. Andrews">26795173</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Daydream Believer">3904821</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Midnight Believer">16337014</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Believer (Goldfrapp song)">28022549</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Muslim">19541</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Believer&apos;s baptism">23277971</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="True believer">1205745</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Believer (band)">3674025</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Believer">8930773</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Christian">18337522</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="The Believer (magazine)">1942202</tobep>
+			<anchor arel="1" aname="信徒" aoffset="2077" alength="2" ext_length="0">
+				<subanchor sarel="1" saname="信徒" saoffset="2077" salength="2" rank="53">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bible believer">5216140</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Believer (Chic album)">13112970</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Friday Night at St. Andrews">26795173</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Daydream Believer">3904821</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Midnight Believer">16337014</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Believer (Goldfrapp song)">28022549</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Muslim">19541</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Believer&apos;s baptism">23277971</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="True believer">1205745</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Believer (band)">3674025</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Believer">8930773</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Christian">18337522</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="The Believer (magazine)">1942202</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="徒" saoffset="2078" salength="1" rank="221">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of programmes broadcast by MTV in Asia">8835136</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of bus routes in Edmonton">10502131</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="One Night Only (One Night Only album)">28027919</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Only (magazine)">2665387</tobep>
+				<subanchor sarel="-1" saname="徒" saoffset="2078" salength="1" rank="221">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of programmes broadcast by MTV in Asia">8835136</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of bus routes in Edmonton">10502131</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="One Night Only (One Night Only album)">28027919</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Only (magazine)">2665387</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Singles Only">2763322</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Only Sometimes">7910294</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of tunnels in the United Kingdom">166444</tobep>
@@ -4994,7 +4994,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Climate of California">8114986</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="相" aoffset="2115" alength="1" ext_length="1">
+			<anchor arel="-1" aname="相" aoffset="2115" alength="1" ext_length="1">
 				<subanchor sarel="0" saname="相" saoffset="2115" salength="1" rank="139">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Phase (matter)">23637</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Xiang of Xia">627167</tobep>
@@ -5041,8 +5041,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Shanhaiguan">671621</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="條目" aoffset="2117" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="條目" saoffset="2117" salength="2" rank="82">
+			<anchor arel="-1" aname="條目" aoffset="2117" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="條目" saoffset="2117" salength="2" rank="82">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Water Skiing Hall of Fame Inductees">5575787</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Passport stamp">11191702</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Market penetration">535121</tobep>
@@ -5059,7 +5059,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Entry visibility">23550691</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Nimbus Film">8590511</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="目" saoffset="2118" salength="1" rank="95">
+				<subanchor sarel="-1" saname="目" saoffset="2118" salength="1" rank="95">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Phasmatodea">341989</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of One Life to Live crew">21234647</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Head 2 Head">8418499</tobep>
@@ -5084,7 +5084,7 @@
 			</anchor>
 			<anchor arel="0" aname="佛教制度" aoffset="2171" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="佛教制度" saoffset="2171" salength="4" rank="0">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Newar caste system">7093812</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Newar caste system">7093812</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Danka system">16475343</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Buddhist Nation">11970605</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Education in Cambodia">8603747</tobep>
