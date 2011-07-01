@@ -347,6 +347,9 @@ public class FOLTXTMatcher {
     	int anchorTextLength = aLength; //textLength(bytes, aOffset, aLength);
 
     	String aName = fullXmlTxt.substring(textOffset, textOffset + anchorTextLength);
+    	String fullName = fullXmlTxt.substring(textOffset, textOffset + anchorTextLength + thisAnchorSet.getExtendedLength());
+    	
+    	thisAnchorSet.setName(fullName);
 
     	try {
 	        myScreenPosition[0] = ""; //String.valueOf(aName);

@@ -162,33 +162,7 @@ public class LTWAssessmentToolControler {
         if (globalPoolBackupCounter % 10 == 0) {
             backupPool();
         }
-        // ---------------------------------------------------------------------
-        // 1) check Whether the assessment is Completed
-        //    If Yes, pop-up Survey Questionaire
-        //           --> Then Link for Upload Result XML, Logger & Questionaires
-        // 2) If Not, Go Next
-//        log("COMPLETION ... ");
-        String[] tabCompletedRatio = this.rscManager.getOutgoingCompletion();
-        String topicID = rscManager.getTopicID();
-//        String[] tbaCompletedRatio = this.myRSCManager.getIncomingCompletion();
-        if (Integer.parseInt(tabCompletedRatio[0]) > 0 && tabCompletedRatio[0].equals(tabCompletedRatio[1])  && !showOnce /* && tbaCompletedRatio[0].equals(tbaCompletedRatio[1])*/) {
-            int option = JOptionPane.showConfirmDialog(this.myTopicPane, "The Assessment is completed.\r\n" +
-                    "Please zip the result file and log together \r\n" +
-                    "and email it to the Crosslink organisers or other alternative way provided. \r\n" +
-                    "The files, " + poolXmlFileName + " & T" + topicID + loggerFileName + " are located in the following directory: \r\n" +
-                    poolAndLogDir, "Assessment Completion",
-                    JOptionPane.OK_OPTION);
-            if (option == JOptionPane.OK_OPTION || option == JOptionPane.CLOSED_OPTION) {
-//                BrowserControl openBrowser = new BrowserControl();
-//                openBrowser.displayURL(crosslinkURL);
-//                javax.swing.SwingUtilities.getWindowAncestor(this.myLinkPane).setVisible(false);
-//                javax.swing.SwingUtilities.getWindowAncestor(this.myLinkPane).dispose();
-                assessNextTopic();
-//                System.exit(0);
-            }
-            showOnce = true;
-//            return null;
-        } /*else if (this.isTAB && tabCompletedRatio[0].equals(tabCompletedRatio[1]) && !tbaCompletedRatio[0].equals(tbaCompletedRatio[1])) {
+ /*else if (this.isTAB && tabCompletedRatio[0].equals(tabCompletedRatio[1]) && !tbaCompletedRatio[0].equals(tbaCompletedRatio[1])) {
             JOptionPane.showMessageDialog(this.myTopicPane, "The Outgoing Assessment is completed. \r\n" +
                     "Please click \"OK\" button and switch to Incoming Mode to complete the assessment.\r\n" +
                     "The progress of Incoming is " + tbaCompletedRatio[0] + " out of " + tbaCompletedRatio[1] + ".");
@@ -304,24 +278,6 @@ public class LTWAssessmentToolControler {
     	String currTopicID = rscManager.getTopicID();
             IndexedAnchor poolAnchor = CurrentFocusedAnchor.getCurrentFocusedAnchor().getAnchor().getParent();
             Bep currentBep = CurrentFocusedAnchor.getCurrentFocusedAnchor().getCurrentBep();
-//            if (updateCurrAnchorStatus) {
-//            	String currPALinkStatus = myPooler.getPoolAnchorBepLinkStatus(currTopicID, currentBep);
-//            	int currPAnchorStatus = Integer.parseInt(myPooler.getPoolAnchorStatus(currTopicID, poolAnchor));
-//            	poolAnchor.setStatus(currPAnchorStatus);
-//            	int poolAnchorStatus = 0;
-//            	if (currPALinkStatus.equals("-1")) {
-//            		if (currPAnchorStatus == -1) {
-//            			poolAnchorStatus = currPAnchorStatus;
-//            		} else {
-//            			poolAnchorStatus = rscManager.getPoolAnchorCompletedStatus(currTopicID, poolAnchor);
-//            		}
-//            	} else {
-//			      poolAnchorStatus = rscManager.getPoolAnchorCompletedStatus(currTopicID, poolAnchor);
-//            	}
-//            	poolAnchor.setStatus(poolAnchorStatus);
-////            	if (poolAnchorStatus != 0)
-//            		myPUpdater.updatePoolAnchorStatus(currTopicID, poolAnchor);            	
-//            }
             // -------------------------------------------------------------
             // 1) Get the NEXT Anchor O, L, S, E, Status + its BEP link O, S, ID, Status
             //    With TAB Nav Update --> NEXT TAB
@@ -330,6 +286,34 @@ public class LTWAssessmentToolControler {
             if (updateCurrAnchorStatus && (nextAnchorBepLinkVSA.getAssociatedAnchor().getParent() != currentBep.getAssociatedAnchor().getParent()))
             	currentBep.getAssociatedAnchor().getParent().statusCheck();
 
+            
+            // ---------------------------------------------------------------------
+            // 1) check Whether the assessment is Completed
+            //    If Yes, pop-up Survey Questionaire
+            //           --> Then Link for Upload Result XML, Logger & Questionaires
+            // 2) If Not, Go Next
+//          log("COMPLETION ... ");
+            String[] tabCompletedRatio = this.rscManager.getOutgoingCompletion();
+            String topicID = rscManager.getTopicID();
+//                  String[] tbaCompletedRatio = this.myRSCManager.getIncomingCompletion();
+			if (nextUnassessed && (nextAnchorBepLinkVSA == currentBep || (Integer.parseInt(tabCompletedRatio[0]) > 0 && tabCompletedRatio[0].equals(tabCompletedRatio[1])  && !showOnce ))) {
+			    int option = JOptionPane.showConfirmDialog(this.myTopicPane, "The Assessment is completed.\r\n" +
+			            "Please zip the result file and log together \r\n" +
+			            "and email it to the Crosslink organisers or other alternative way provided. \r\n" +
+			            "The files, " + poolXmlFileName + " & T" + topicID + loggerFileName + " are located in the following directory: \r\n" +
+			            poolAndLogDir, "Assessment Completion",
+			            JOptionPane.OK_OPTION);
+			    if (option == JOptionPane.OK_OPTION || option == JOptionPane.CLOSED_OPTION) {
+			//      BrowserControl openBrowser = new BrowserControl();
+			//openBrowser.displayURL(crosslinkURL);
+			//javax.swing.SwingUtilities.getWindowAncestor(this.myLinkPane).setVisible(false);
+			//javax.swing.SwingUtilities.getWindowAncestor(this.myLinkPane).dispose();
+			assessNextTopic();
+			//System.exit(0);
+			    }
+			    showOnce = true;
+			//  return null;
+			}
 //            updateAnchorChanges(nextAnchorBepLinkVSA, currentBep);
 //            return nextAnchorBepLinkVSA;
             CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(currentBep.getAssociatedAnchor(), nextAnchorBepLinkVSA.getAssociatedAnchor(), nextAnchorBepLinkVSA);
@@ -358,62 +342,6 @@ public class LTWAssessmentToolControler {
 ////        updateFields(nextAnchorBepLinkVSA);
 //    }
     
-    private void updateFields(Bep bep) {
-        // =================================================================
-        // Link Pane
-        // =================================================================
-//        String bepXmlFilePath = myPooler.getXmlFilePathByTargetID(bep.getFileId(), bep.getTargetLang());
-//        if (bepXmlFilePath.startsWith(afTasnCollectionErrors)) {
-//            bepXmlFilePath = rscManager.getErrorXmlFilePath(bepXmlFilePath);
-//        }
-//        Xml2Html xmlParser = new Xml2Html(bepXmlFilePath, Boolean.valueOf(System.getProperty(LTWAssessmentToolControler.sysPropertyIsLinkWikiKey)));
-//        String xmlHtmlText = xmlParser.getHtmlContent().toString();
-//        linkTextPane.setContentType(textContentType);
-//        linkTextPane.setText(xmlHtmlText);
-//        linkTextPane.setCaretPosition(0);
-//        // -------------------------------------------------------------
-//        // -------------------------------------------------------------
-//        int screenAnchorStatus = Integer.valueOf(bep.getAssociatedAnchor().getStatus());
-//        int linkStatus = bep.getRel(); //Integer.valueOf(link.getStatus());
-//        if (screenAnchorStatus == 1 || screenAnchorStatus == 0) {
-//            if (linkStatus == 1) {
-//                // Relevant --> Insert BEP --> BG = Green
-//                Vector<String> bepSCROffset = new Vector<String>();
-//                bepSCROffset.add(String.valueOf(bep.getStartP()));
-//                boolean isTopicBEP = false;
-//                updatePaneBepIcon(linkTextPane, bepSCROffset, isTopicBEP);
-//                linkTextPane.getCaret().setDot(bep.getStartP());
-//                linkTextPane.scrollRectToVisible(linkTextPane.getVisibleRect());
-//                linkTextPane.setBackground(linkPaneRelColor);
-//            } else if (linkStatus == -1) {
-//                linkTextPane.setBackground(linkPaneNonRelColor);
-//            } else if (linkStatus == 0) {
-//                linkTextPane.setBackground(linkPaneWhiteColor);
-//            }
-//            linkTextPane.repaint();
-//        } else if (screenAnchorStatus == -1) {
-//            linkTextPane.setBackground(linkPaneNonRelColor);
-//            linkTextPane.repaint();
-//        }    	
-        // -------------------------------------------------------------
-        // -------------------------------------------------------------
-//        String currAnchorName = myPooler.getPoolAnchorNameByOL(currTopicID, new String[]{String.valueOf(screenAnchor.getOffset()), String.valueOf(screenAnchor.getLength())});
-//        Vector<String> newTABFieldValues = new Vector<String>();
-//        newTABFieldValues.add(currTopicName);
-//        newTABFieldValues.add(currTopicID);
-//        newTABFieldValues.add(bep.getAssociatedAnchor().getName());
-//        newTABFieldValues.add(bep.getFileId());
-//        String pageTitle = "";
-////        if (Boolean.valueOf(System.getProperty(sysPropertyIsLinkWikiKey))) {
-//            pageTitle = rscManager.getWikipediaPageTitle(bep.getFileId());
-////        } else {
-////            pageTitle = rscManager.getTeAraFilePathByName(nextLinkID);
-////        }
-//        newTABFieldValues.add(pageTitle.trim());
-//        String[] pAnchorCompletionSA = rscManager.getOutgoingCompletion();
-//        newTABFieldValues.add(pAnchorCompletionSA[0] + " / " + pAnchorCompletionSA[1]);
-//        os.setTABFieldValues(bep);
-    }
     
     public void assess(String poolFile) {
     	assess(poolFile, false);
@@ -550,6 +478,14 @@ public class LTWAssessmentToolControler {
         String currTargetFilePath = rscManager.getWikipediaFilePathByName(currTargetID + ".xml", currTargetLang);
         
 //        os.setTABFieldValues(CurrTopicATargetOID);
+
+        
+
+        setTABLinkPaneContent(currTargetFilePath, currTargetLang);
+        // bep_Offset, linkID, Status
+        String[] CurrTopicATargetSIDStatus = rscManager.getCurrTopicABepSIDStatusSA(myLinkPane, currTopicID);
+        setLinkBEPIcon(currTopicPAnchorStatus, CurrTopicATargetSIDStatus);
+
         
         /*************************************************************************
          * Step 5
@@ -557,12 +493,7 @@ public class LTWAssessmentToolControler {
          ************************************************************************/
 //        TopicHighlightManager.getInstance().update(null, CurrTopicATargetOID.getAssociatedAnchor());
         CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(null, CurrTopicATargetOID.getAssociatedAnchor(), CurrTopicATargetOID);
-
-        setTABLinkPaneContent(currTargetFilePath, currTargetLang);
-        // bep_Offset, linkID, Status
-        String[] CurrTopicATargetSIDStatus = rscManager.getCurrTopicABepSIDStatusSA(myLinkPane, currTopicID);
-        setLinkBEPIcon(currTopicPAnchorStatus, CurrTopicATargetSIDStatus);
-
+        goNextLink(false, true);
     }
     
     // Topic Pane: Anchor
