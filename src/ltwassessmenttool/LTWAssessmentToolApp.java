@@ -5,6 +5,9 @@
 package ltwassessmenttool;
 
 import java.awt.Dialog.ModalityType;
+import java.awt.event.ActionEvent;
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
 
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
@@ -18,11 +21,40 @@ import org.jdesktop.application.SingleFrameApplication;
 public class LTWAssessmentToolApp extends SingleFrameApplication {
 	
 	private LTWAssessmentToolCorpusBox corpusBox = null;
+	
+	class MyWindowListener implements WindowListener {
+
+		  public void windowClosing(WindowEvent arg0) {
+			    System.exit(0);
+		  }
+
+		  public void windowOpened(WindowEvent arg0) {
+		  }
+
+		  public void windowClosed(WindowEvent arg0) {
+		  }
+
+		  public void windowIconified(WindowEvent arg0) {
+		  }
+
+		  public void windowDeiconified(WindowEvent arg0) {
+		  }
+
+		  public void windowActivated(WindowEvent arg0) {
+		  }
+
+		  public void windowDeactivated(WindowEvent arg0) {
+		  }
+
+	}
 
     /**
      * At startup create and show the main frame of the application.
      */
     @Override protected void startup() {
+//        JFrame mainFrame = LTWAssessmentToolApp.getApplication().getMainFrame();
+//        mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//        mainFrame.addWindowListener(new MyWindowListener());
         show(new LTWAssessmentToolView(this));
     }
 
@@ -52,6 +84,7 @@ public class LTWAssessmentToolApp extends SingleFrameApplication {
     public void showCorpusBox() {
         if (corpusBox == null) {
             JFrame mainFrame = LTWAssessmentToolApp.getApplication().getMainFrame();
+            
             corpusBox = new LTWAssessmentToolCorpusBox(mainFrame);
             //corpusBox.setModal(true);
 //            corpusBox.setModalityType(ModalityType.APPLICATION_MODAL);
@@ -68,4 +101,15 @@ public class LTWAssessmentToolApp extends SingleFrameApplication {
         corpusBox.setVisible(true);
         //LTWAssessmentToolApp.getApplication().show(corpusBox);
     }
+
+	@Override
+	protected void shutdown() {
+		super.shutdown();
+	}
+
+	@Override
+	public void quit(ActionEvent arg0) {
+		// TODO Auto-generated method stub
+		super.quit(arg0);
+	}
 }
