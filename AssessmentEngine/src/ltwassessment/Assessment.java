@@ -44,7 +44,6 @@ public class Assessment {
 	}
 
 	public Assessment() {
-		
 		loadTopicsForAssessment();
 	}
 
@@ -89,7 +88,9 @@ public class Assessment {
 	}
 	
 	public void finishTopic(String topic) {
-		finishTopic(topics.get(topic));
+		File topicFile = topics.get(topic);
+		if (topicFile != null)
+			finishTopic(topicFile);
 	}
 	
 	public void finishTopic(File topicFile) {
