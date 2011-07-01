@@ -64,7 +64,7 @@
                           <Component id="lblAnchor" pref="508" max="32767" attributes="0"/>
                           <Component id="lblPoolAnchor" min="-2" pref="382" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <Component id="jLabel2" pref="72" max="32767" attributes="0"/>
@@ -74,12 +74,12 @@
                           </Group>
                           <Group type="102" attributes="0">
                               <Component id="jLabel3" pref="90" max="32767" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
+                              <EmptySpace min="-2" max="-2" attributes="0"/>
                               <Component id="lblTargetID" min="-2" pref="203" max="-2" attributes="2"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="jLabel7" min="-2" pref="93" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="lblCompletion" min="-2" pref="173" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel7" pref="93" max="32767" attributes="0"/>
+                              <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblCompletion" pref="173" max="32767" attributes="0"/>
                               <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -89,22 +89,23 @@
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="lblPoolAnchor" alignment="2" min="-2" pref="31" max="-2" attributes="0"/>
-                                      <Component id="jLabel3" alignment="2" min="-2" pref="27" max="-2" attributes="0"/>
-                                      <Component id="lblTargetID" alignment="2" min="-2" pref="23" max="-2" attributes="0"/>
-                                      <Component id="jLabel7" alignment="2" min="-2" pref="31" max="-2" attributes="0"/>
-                                      <Component id="jLabel4" alignment="0" min="-2" pref="25" max="-2" attributes="1"/>
-                                      <Component id="lblTopicID" min="-2" pref="30" max="-2" attributes="1"/>
+                  <Group type="102" max="-2" attributes="0">
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="102" alignment="0" max="-2" attributes="0">
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="lblPoolAnchor" alignment="2" min="-2" pref="33" max="-2" attributes="0"/>
+                                  <Component id="jLabel3" alignment="2" min="-2" pref="27" max="-2" attributes="0"/>
+                                  <Component id="lblTargetID" alignment="2" min="-2" pref="23" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="2" attributes="0">
+                                      <EmptySpace min="2" pref="2" max="2" attributes="0"/>
+                                      <Component id="jLabel7" min="-2" pref="31" max="-2" attributes="0"/>
                                   </Group>
+                                  <Component id="jLabel4" alignment="0" min="-2" pref="25" max="-2" attributes="1"/>
+                                  <Component id="lblTopicID" min="-2" pref="30" max="-2" attributes="1"/>
                                   <Component id="jLabel6" min="-2" pref="24" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace max="-2" attributes="0"/>
+                              <EmptySpace min="-2" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="jLabel1" alignment="2" pref="32" max="32767" attributes="1"/>
                                   <Component id="lblTopicTitle" alignment="2" min="-2" pref="28" max="-2" attributes="1"/>
@@ -114,9 +115,12 @@
                                   <Component id="lblTargetTitle" alignment="0" min="-2" pref="24" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <Component id="lblCompletion" alignment="0" min="-2" pref="27" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lblCompletion" min="-2" pref="27" max="-2" attributes="0"/>
+                              <EmptySpace pref="44" max="32767" attributes="1"/>
+                          </Group>
                       </Group>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="0" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
