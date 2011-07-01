@@ -53,7 +53,7 @@ public class LTWAssessmentToolControler {
     public final static String sysPropertyTABCompletedRatioKey = "tabCompletedRatio";
     public final static String sysPropertyTBACompletedRatioKey = "tbaCompletedRatio";
     
-    protected final String poolXmlFileName = "wikipedia_pool.xml";
+//    protected final String poolXmlFileName = "wikipedia_pool.xml";
     protected final String loggerFileName = "_ltwAssessTool2011.log";
     protected final String poolAndLogDir = "resources" + File.separator + "Pool";
     protected final String crosslinkURL = "http://ntcir.nii.ac.jp/CrossLink/";
@@ -63,6 +63,7 @@ public class LTWAssessmentToolControler {
     private JTextPane myLinkPane = null;
     
     private String currTopicFilePath = "";
+    private String currAssessingPoolFile = "";
     
     private boolean showOnce = false;
 	private PoolUpdater myPUpdater;
@@ -147,12 +148,47 @@ public class LTWAssessmentToolControler {
         bepIconHighlight = resourceMap.getString("bepHighlightIcon.imageFilePath");
 	}
     
+    private int showAssessNextTopicDialog(String topicID) {
+		String msg = "<html><body>The assessment for topic " + currTopicName + "(" + topicID + ") is completed.<br>" +
+	            
+	            "Press OK to continue to assess next topic, otherwise this program will be closed.</body></html>";
+				JLabel msgLabel = new JLabel(msg);
+				AdjustFont.getInstance().setComponentFont(msgLabel, AppResource.sourceLang);
+			    int option = JOptionPane.showConfirmDialog(this.myTopicPane, msgLabel, "Information",
+			            JOptionPane.OK_OPTION);    
+			    return option;
+    }
+    
+    private void showAssessmentCompletionDialog() {
+		String msg = "<html><body>All the assessment completed, thank you very much for your efforts. <br>" + 
+				"If you are advised to submit the assessment files, " +
+	            "Please zip the result file and log together <br>" +
+	            "and email it to the Crosslink organisers or other alternative way provided. <br>" +
+	            "The files wikipedia_pool_*.xml are located in the following directory: <br>" +
+	            poolAndLogDir + " <br> <br>" +
+				"</body></html>";
+				JLabel msgLabel = new JLabel(msg);
+				AdjustFont.getInstance().setComponentFont(msgLabel, AppResource.sourceLang);
+			    JOptionPane.showMessageDialog(this.myTopicPane, msgLabel, "Information",
+			            JOptionPane.INFORMATION_MESSAGE);    
+    }
+    
+    private void finishAssessment() {
+    	showAssessmentCompletionDialog();
+		javax.swing.SwingUtilities.getWindowAncestor(this.myLinkPane).setVisible(false);
+		javax.swing.SwingUtilities.getWindowAncestor(this.myLinkPane).dispose();		    
+    	System.exit(0);    	
+    }
+    
     public void assessNextTopic() {
 //    	currTopicID = rscManager.getTopicID();
     	if (currTopicID != null && currTopicID.length() > 0)
     		Assessment.getInstance().finishTopic(currTopicID);
     	currTopicID = Assessment.getInstance().getNextTopic();
-    	assess(Assessment.getPoolFile(currTopicID), true);
+    	if (currTopicID == null)
+    		finishAssessment();
+    	else
+    		assess(Assessment.getPoolFile(currTopicID), true);
     }
 
 	public void goNextLink(boolean updateCurrAnchorStatus, boolean nextUnassessed) {
@@ -294,26 +330,24 @@ public class LTWAssessmentToolControler {
             // 2) If Not, Go Next
 //          log("COMPLETION ... ");
             String[] tabCompletedRatio = this.rscManager.getOutgoingCompletion();
-            String topicID = rscManager.getTopicID();
+//            String topicID = rscManager.getTopicID();
 //                  String[] tbaCompletedRatio = this.myRSCManager.getIncomingCompletion();
 			if (nextUnassessed && (nextAnchorBepLinkVSA == currentBep || (Integer.parseInt(tabCompletedRatio[0]) > 0 && tabCompletedRatio[0].equals(tabCompletedRatio[1])  && !showOnce ))) {
-			    int option = JOptionPane.showConfirmDialog(this.myTopicPane, "The Assessment is completed.\r\n" +
-			            "Please zip the result file and log together \r\n" +
-			            "and email it to the Crosslink organisers or other alternative way provided. \r\n" +
-			            "The files, " + poolXmlFileName + " & T" + topicID + loggerFileName + " are located in the following directory: \r\n" +
-			            poolAndLogDir, "Assessment Completion",
-			            JOptionPane.OK_OPTION);
-			    if (option == JOptionPane.OK_OPTION || option == JOptionPane.CLOSED_OPTION) {
+				int option  = this.showAssessNextTopicDialog(this.currTopicID);
+			    if (option == JOptionPane.OK_OPTION) {
 			//      BrowserControl openBrowser = new BrowserControl();
 			//openBrowser.displayURL(crosslinkURL);
-			//javax.swing.SwingUtilities.getWindowAncestor(this.myLinkPane).setVisible(false);
-			//javax.swing.SwingUtilities.getWindowAncestor(this.myLinkPane).dispose();
-			assessNextTopic();
-			//System.exit(0);
+
+			    	assessNextTopic();
+			
+			    }
+			    else {
+			    	finishAssessment();
 			    }
 			    showOnce = true;
 			//  return null;
 			}
+
 //            updateAnchorChanges(nextAnchorBepLinkVSA, currentBep);
 //            return nextAnchorBepLinkVSA;
             CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(currentBep.getAssociatedAnchor(), nextAnchorBepLinkVSA.getAssociatedAnchor(), nextAnchorBepLinkVSA);
@@ -353,6 +387,8 @@ public class LTWAssessmentToolControler {
 			JOptionPane.showMessageDialog(mainFrame, errMessage);    		
     		return;
     	}
+    	
+    	currAssessingPoolFile = poolFile;
     	
         rscManager = ResourcesManager.getInstance();
         myPooler = PoolerManager.getInstance(poolFile);
