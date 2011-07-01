@@ -5,7 +5,7 @@
 	<topic file="47565" name="智力游戏">
 		<outgoinglinks>
 			<anchor arel="-1" aname="智" aoffset="265" alength="1" ext_length="3">
-				<subanchor sarel="0" saname="智" saoffset="265" salength="1" rank="91">
+				<subanchor sarel="-1" saname="智" saoffset="265" salength="1" rank="91">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Book of Wisdom">555128</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Wisdom, Montana">123324</tobep>
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Wisdom">46029</tobep>
@@ -20,7 +20,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Norman Wisdom">151532</tobep>
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Intelligence">519280</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="智力" saoffset="265" salength="2" rank="31">
+				<subanchor sarel="-1" saname="智力" saoffset="265" salength="2" rank="31">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Intelligence agency">81014</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Criminal intelligence">2919515</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Intelligence (information gathering)">519276</tobep>
@@ -36,21 +36,21 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Location intelligence">10528515</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Intelligence">519280</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="智力游戏" saoffset="265" salength="4" rank="20">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of puzzle topics">632582</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Puzzle (Narnia)">3030288</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Japanese puzzle">271810</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Puzzle (Dada album)">19847011</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Dividend puzzle">8967691</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Puzzle video game">32393</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of DSiWare games (PAL region)">23614206</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Combination puzzle">14977455</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Media Puzzle">7788386</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Puzzle (Biffy Clyro album)">7756636</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Puzzle (film)">13356795</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Fifteen puzzle">432213</tobep>
+				<subanchor sarel="1" saname="智力游戏" saoffset="265" salength="4" rank="20">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of puzzle topics">632582</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Puzzle (Narnia)">3030288</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Japanese puzzle">271810</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Puzzle (Dada album)">19847011</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Dividend puzzle">8967691</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Puzzle video game">32393</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of DSiWare games (PAL region)">23614206</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Combination puzzle">14977455</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Media Puzzle">7788386</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Puzzle (Biffy Clyro album)">7756636</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Puzzle (film)">13356795</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Fifteen puzzle">432213</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="力" saoffset="266" salength="1" rank="81">
+				<subanchor sarel="-1" saname="力" saoffset="266" salength="1" rank="81">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Driving Force (3rd Force album)">11937068</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of United States Air Force Field Operating Agencies">5922061</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Space Force (Action Force)">13130124</tobep>
@@ -68,7 +68,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of militaries by country">7145213</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Force">10902</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="游" saoffset="267" salength="1" rank="108">
+				<subanchor sarel="-1" saname="游" saoffset="267" salength="1" rank="108">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of windmills in Vendée">18223771</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Kolo Touré">1024827</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of windmills in France">17484188</tobep>
@@ -86,7 +86,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Revenge Tour (Kiss Tour)">15614633</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="The Tour That Doesn&apos;t Tour Tour...Now On Tour">25524460</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="游戏" saoffset="267" salength="2" rank="47">
+				<subanchor sarel="-1" saname="游戏" saoffset="267" salength="2" rank="47">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Cleveland Force (1978–1988) players">19208137</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Game">18723138</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Strategy games/Strategy games topics">9408860</tobep>
