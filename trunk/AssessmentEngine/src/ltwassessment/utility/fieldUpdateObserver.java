@@ -19,26 +19,29 @@ public class fieldUpdateObserver implements Observer {
     private JLabel lblTopicTitle;
     private JLabel lblTopicID;
     private JLabel lblAnchor;
+    private JLabel lblSubanchor;
     private JLabel lblTargetID;
     private JLabel lblTargetTitle;
     private JLabel lblCompletion;
 
-    public fieldUpdateObserver(ObservableSingleton thisOS, JLabel thisTopicTitle, JLabel thisTopicID, JLabel thisAnchor, 
+    public fieldUpdateObserver(ObservableSingleton thisOS, JLabel thisTopicTitle, JLabel thisTopicID, JLabel thisAnchor, JLabel thisSubanchor,
             JLabel thisTargetID, JLabel thisTargetTitle, JLabel thisCompletion) {
         this.myObservableSingleton = thisOS;
         this.lblTopicTitle = thisTopicTitle;
         this.lblTopicID = thisTopicID;
         this.lblAnchor = thisAnchor;
+        this.lblSubanchor = thisSubanchor; 
         this.lblTargetID = thisTargetID;
         this.lblTargetTitle = thisTargetTitle;
         this.lblCompletion = thisCompletion;
     }
     
-    public fieldUpdateObserver(ObservableSingleton thisOS, JLabel thisTopicTitle, JLabel thisTopicID, JLabel thisAnchor, JLabel thisTargetPageID) {
+    public fieldUpdateObserver(ObservableSingleton thisOS, JLabel thisTopicTitle, JLabel thisTopicID, JLabel thisAnchor, JLabel thisSubanchor, JLabel thisTargetPageID) {
         this.myObservableSingleton = thisOS;
         this.lblTopicTitle = thisTopicTitle;
         this.lblTopicID = thisTopicID;
         this.lblAnchor = thisAnchor;
+        this.lblSubanchor = thisSubanchor; 
         this.lblTargetID = thisTargetPageID;
     }
 
@@ -63,7 +66,8 @@ public class fieldUpdateObserver implements Observer {
         this.lblTopicID.setText(Assessment.getInstance().getCurrentTopic().getId());
         
         
-        this.lblAnchor.setText(bep.getAssociatedAnchor().getName());
+        this.lblAnchor.setText(bep.getAssociatedAnchor().getParent().getName());
+        this.lblSubanchor.setText(bep.getAssociatedAnchor().getName());
         this.lblTargetID.setText(bep.getFileId());
         this.lblTargetTitle.setText(bep.getTargetTitle());
 //            this.lblCompletion.setText(tablblFieldSet.elementAt(5).toString());

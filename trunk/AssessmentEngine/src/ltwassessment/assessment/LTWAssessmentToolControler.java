@@ -15,13 +15,19 @@ import java.util.Vector;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import javax.swing.ImageIcon;
 import javax.swing.JComponent;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextPane;
+import javax.swing.text.BadLocationException;
+import javax.swing.text.Style;
+import javax.swing.text.StyleConstants;
+import javax.swing.text.StyledDocument;
 
 import org.jdesktop.application.FrameView;
+import org.jdesktop.application.ResourceMap;
 
 import ltwassessment.AppResource;
 import ltwassessment.Assessment;
@@ -53,7 +59,6 @@ public class LTWAssessmentToolControler {
     protected final String crosslinkURL = "http://ntcir.nii.ac.jp/CrossLink/";
     
 	private int globalPoolBackupCounter = 0;
-    private ResourcesManager myRSCManager = ResourcesManager.getInstance();
     private JTextPane myTopicPane = null;
     private JTextPane myLinkPane = null;
     
@@ -75,10 +80,17 @@ public class LTWAssessmentToolControler {
     private Vector<IndexedAnchor> topicAnchorOLSEStatus; // = new Vector<String[]>();
 	private JComponent lblTargetTitle;
 	private JLabel statusMessageLabel;
-	private JComponent lblPoolAnchor;
+	private JComponent lblPoolAnchor; // subanchor
+	private JComponent lblAnchor;
 	private JComponent lblTopicTitle;
+	private ResourceMap resourceMap;
     
     private static String textContentType = "";
+    
+    private static String bepIconImageFilePath = "";
+    private static String bepIconCompleted = "";
+    private static String bepIconNonrelevant = "";
+    private static String bepIconHighlight = "";
 
 	private static LTWAssessmentToolControler instance = null;
     
@@ -88,7 +100,11 @@ public class LTWAssessmentToolControler {
     	this.myLinkPane = myLinkPane;
     }
     
-    public static void setTextContentType(String textContentType) {
+    public static void setCurrTopicID(String currTopicID) {
+		LTWAssessmentToolControler.currTopicID = currTopicID;
+	}
+
+	public static void setTextContentType(String textContentType) {
 		LTWAssessmentToolControler.textContentType = textContentType;
 	}
     
@@ -103,6 +119,10 @@ public class LTWAssessmentToolControler {
 	public void setLblPoolAnchor(JComponent lblPoolAnchor) {
 		this.lblPoolAnchor = lblPoolAnchor;
 	}
+	
+	public void setLblAnchor(JComponent lblAnchor) {
+		this.lblAnchor = lblAnchor;
+	}
 
 	public void setLblTopicTitle(JComponent lblTopicTitle) {
 		this.lblTopicTitle = lblTopicTitle;
@@ -115,14 +135,21 @@ public class LTWAssessmentToolControler {
     }
     
     public LTWAssessmentToolControler() {
+    	resourceMap = AppResource.getInstance().getResourceMap();
+    	
         rscManager = ResourcesManager.getInstance();
         myPooler = PoolerManager.getInstance();
         myPUpdater = myPooler.getPoolUpdater();
+        
+        bepIconImageFilePath = resourceMap.getString("bepIcon.imageFilePath");
+        bepIconCompleted = resourceMap.getString("bepCompletedIcon.imageFilePath");
+        bepIconNonrelevant = resourceMap.getString("bepNonrelevantIcon.imageFilePath");
+        bepIconHighlight = resourceMap.getString("bepHighlightIcon.imageFilePath");
 	}
     
     public void assessNextTopic() {
-    	String currTopicID = rscManager.getTopicID();
-    	if (currTopicID != null)
+//    	currTopicID = rscManager.getTopicID();
+    	if (currTopicID != null && currTopicID.length() > 0)
     		Assessment.getInstance().finishTopic(currTopicID);
     	currTopicID = Assessment.getInstance().getNextTopic();
     	assess(Assessment.getPoolFile(currTopicID), true);
@@ -141,8 +168,8 @@ public class LTWAssessmentToolControler {
         //           --> Then Link for Upload Result XML, Logger & Questionaires
         // 2) If Not, Go Next
 //        log("COMPLETION ... ");
-        String[] tabCompletedRatio = this.myRSCManager.getOutgoingCompletion();
-        String topicID = myRSCManager.getTopicID();
+        String[] tabCompletedRatio = this.rscManager.getOutgoingCompletion();
+        String topicID = rscManager.getTopicID();
 //        String[] tbaCompletedRatio = this.myRSCManager.getIncomingCompletion();
         if (Integer.parseInt(tabCompletedRatio[0]) > 0 && tabCompletedRatio[0].equals(tabCompletedRatio[1])  && !showOnce /* && tbaCompletedRatio[0].equals(tbaCompletedRatio[1])*/) {
             int option = JOptionPane.showConfirmDialog(this.myTopicPane, "The Assessment is completed.\r\n" +
@@ -184,7 +211,7 @@ public class LTWAssessmentToolControler {
 	public void setSubanchorIrrelevant(AssessedAnchor anchor) {
         int newCompletedCounter = 0;
         int prePAnchorStatus = anchor.getStatus();
-        String currTopicID = myRSCManager.getTopicID();
+        String currTopicID = rscManager.getTopicID();
         
         for (Bep aBep : anchor.getBeps())
         	if (aBep.getRel() != -1) {
@@ -236,14 +263,14 @@ public class LTWAssessmentToolControler {
 			newCompletedCounter -= unAssCounter;
 			myPUpdater.updatePoolSubanchorStatus(currTopicID, anchor);
         }
-        String[] outCompletionRatio = myRSCManager.getOutgoingCompletion();
+        String[] outCompletionRatio = rscManager.getOutgoingCompletion();
         String outCompletedLinks = String.valueOf(Integer.valueOf(outCompletionRatio[0]) + newCompletedCounter);
-        myRSCManager.updateOutgoingCompletion(outCompletedLinks + " : " + outCompletionRatio[1]);  
+        rscManager.updateOutgoingCompletion(outCompletedLinks + " : " + outCompletionRatio[1]);  
 	}
 	
     private void backupPool() {
 		//      String sourcePoolFPath = "resources" + File.separator + "Pool" + File.separator + "wikipedia_pool.xml";
-    	String topicID = myRSCManager.getTopicID();
+    	String topicID = rscManager.getTopicID();
 		String sourcePoolFPath = ltwassessment.Assessment.getPoolFile(topicID);
 		File srcFile = new File(sourcePoolFPath);
 		String backupPoolDir = Assessment.ASSESSMENT_POOL_BACKUP_DIR;
@@ -531,10 +558,10 @@ public class LTWAssessmentToolControler {
 //        TopicHighlightManager.getInstance().update(null, CurrTopicATargetOID.getAssociatedAnchor());
         CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(null, CurrTopicATargetOID.getAssociatedAnchor(), CurrTopicATargetOID);
 
-//        setTABLinkPaneContent(currTargetFilePath, currTargetLang);
-//        // bep_Offset, linkID, Status
-//        String[] CurrTopicATargetSIDStatus = rscManager.getCurrTopicABepSIDStatusSA(thisLinkTextPane, currTopicID);
-//        setLinkBEPIcon(currTopicPAnchorStatus, CurrTopicATargetSIDStatus);
+        setTABLinkPaneContent(currTargetFilePath, currTargetLang);
+        // bep_Offset, linkID, Status
+        String[] CurrTopicATargetSIDStatus = rscManager.getCurrTopicABepSIDStatusSA(myLinkPane, currTopicID);
+        setLinkBEPIcon(currTopicPAnchorStatus, CurrTopicATargetSIDStatus);
 
     }
     
@@ -552,6 +579,7 @@ public class LTWAssessmentToolControler {
     private void setupComponentFont() {
     	AdjustFont.setComponentFont(lblTopicTitle, AppResource.sourceLang);
     	AdjustFont.setComponentFont(lblPoolAnchor, AppResource.sourceLang);
+    	AdjustFont.setComponentFont(lblAnchor, AppResource.sourceLang);
     }
     
     private void setupTopic() {
@@ -562,7 +590,7 @@ public class LTWAssessmentToolControler {
 		FOLTXTMatcher.getInstance().getCurrFullXmlText();
     	    	
     	FOLTXTMatcher.getInstance().getSCRAnchorPosV(myTopicPane, currTopicID, topicAnchorsHT);
-    	Vector<String> topicAnchorsOLNameSEVS = rscManager.getTopicAnchorsOLNameSEV();
+//    	Vector<String> topicAnchorsOLNameSEVS = rscManager.getTopicAnchorsOLNameSEV();
 //        int completedAnchor = 0;
 //		//      int totoalAnchorNumber = Integer.valueOf(tabCompletedRatio[1]);
 //		
@@ -576,6 +604,7 @@ public class LTWAssessmentToolControler {
     	rscManager.updateTopicID(currTopicID + ":" + topicLang);
     	rscManager.updateCurrTopicFilePath(currTopicFilePath);
     	rscManager.updateCurrAnchorFOL(null);
+    	rscManager.updateTABNavigationIndex(new String[]{"0", "0", "0", "0", "0"});
     }
     
     private void createLinkTextPane(String xmlFilePath, String lang) {
@@ -614,5 +643,26 @@ public class LTWAssessmentToolControler {
         Xml2Html xmlParser = new Xml2Html(xmlFilePath, true);
         myLinkPane.setContentType(textContentType);
         myLinkPane.setText(xmlParser.getHtmlContent().toString());
+    }
+    
+    private void setLinkBEPIcon(String currTopicPAnchorStatus, String[] CurrTopicATargetSIDStatus) {
+        // Insert into Doc in JTextPane
+        ImageIcon bepIcon = new ImageIcon(bepIconImageFilePath);
+        myLinkPane.insertIcon(bepIcon);
+        myLinkPane.repaint();
+        // bepSP: -1 or > -1
+        String bepSP = CurrTopicATargetSIDStatus[0].trim();
+        // bepStatus: 0 , -1 , 1
+        String bepStatus = CurrTopicATargetSIDStatus[2].trim();
+        if (Integer.valueOf(bepSP) > -1) {
+            StyledDocument styDoc = (StyledDocument) myLinkPane.getDocument();
+            Style bepStyle = styDoc.addStyle("bepIcon", null);
+            StyleConstants.setIcon(bepStyle, new ImageIcon(bepIconImageFilePath));
+            try {
+                styDoc.insertString(Integer.valueOf(bepSP), "TBEP", bepStyle);
+            } catch (BadLocationException ex) {
+                Logger.getLogger(topicPaneMouseListener.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
     }
 }
