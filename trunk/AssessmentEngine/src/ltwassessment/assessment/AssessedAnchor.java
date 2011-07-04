@@ -91,10 +91,12 @@ public class AssessedAnchor extends IndexedAnchor {
 	    		}
 	    	}
     	
-    	if (i >= getBeps().size())
-    		i = 0;
-    	
-    	link = getBeps().get(i);
+    	if (i >= getBeps().size()) {
+//    		i = 0;
+    		link = null;
+    	}
+    	else
+    	   	link = getBeps().get(i);
     	return needNotFinished ? unassessedLink : link;
 	}
 	
@@ -125,10 +127,12 @@ public class AssessedAnchor extends IndexedAnchor {
 	    		}
 	    	}
     	
-    	if (i < 0)
-    		i = getBeps().size() - 1;
-    	
-    	link = getBeps().get(i);
+    	if (i < 0) {
+    		//i = getBeps().size() - 1;
+    		link = null;
+    	}
+    	else
+    		link = getBeps().get(i);
     	return needNotFinished ? unassessedLink : link;
 	}
 }
