@@ -63,10 +63,6 @@ import ltwassessment.wiki.WikiArticleXml;
  */
 public class LTWAssessmentToolView extends FrameView {
 
-    // -------------------------------------------------------------------------
-    // constant variables
-    protected final static int bepLength = 4;
-
     private static ResourceMap resourceMap;
     private static String textContentType = "";
 //    private String wikipediaTopicFileDir = "";
@@ -219,19 +215,7 @@ public class LTWAssessmentToolView extends FrameView {
 //            if (rscManager.getLinkingMode().toLowerCase().equals("outgoing")) {
             
 //            threadAssessment.start();
-            Hashtable<String, File> topics4Assessment = Assessment.getInstance().getTopics();
-            if (topics4Assessment.size() == 0) {
-	            currTopicID = rscManager.getInstance().getTopicID();
-	            if (currTopicID.length() == 0) {
-	            	//TODO : fix this
-	            }
-	            else
-	            	LTWAssessmentToolControler.getInstance().assess(Assessment.getPoolFile(currTopicID));
-            }
-            else {
-            	LTWAssessmentToolControler.getInstance().setCurrTopicID(null); //currTopicID = null;
-        		LTWAssessmentToolControler.getInstance().assessNextTopic();
-            }
+            LTWAssessmentToolControler.getInstance().start();
             
             assessmentThread = new AssessmentThread(thisTopicTextPane, thisLinkTextPane);
             assessmentThread.start();
@@ -247,6 +231,7 @@ public class LTWAssessmentToolView extends FrameView {
     	LTWAssessmentToolControler.getInstance().setLblAnchor(lblAnchor);
     	LTWAssessmentToolControler.getInstance().setLblTargetTitle(lblTargetTitle);
     	LTWAssessmentToolControler.getInstance().setLblTopicTitle(lblTopicTitle);
+    	LTWAssessmentToolControler.getInstance().setLblCompletion(lblCompletion);
     	
     	LTWAssessmentToolControler.getInstance().setTextContentType(textContentType);
 		
@@ -267,24 +252,24 @@ public class LTWAssessmentToolView extends FrameView {
         jlblColorIrrelevant.setBackground(highlightPainters.COLOR_IRREVENT);   	
     }
 
-    private boolean corpusDirChecker(boolean topicIsWikipedia) {
-        boolean rightCorpusDir = false;
-        String ranTopicID = rscManager.getTopicID();
-        String runFilePath = "";
-        if (topicIsWikipedia) {
-            runFilePath = defaultWikipediaDirectory + ranTopicID + ".xml";
-        } else {
-            runFilePath = defaultTeAraDirectory + ranTopicID + ".xml";
-        }
-        File ranXmlFile = new File(runFilePath);
-        if (ranXmlFile.exists()) {
-            rightCorpusDir = true;
-        } else {
-            rightCorpusDir = false;
-            JOptionPane.showMessageDialog(mainPanel, "The XML File, " + ranTopicID + ".xml , cannot be found in specified Collection Directory, " + runFilePath + "!");
-        }
-        return rightCorpusDir;
-    }
+//    private boolean corpusDirChecker(boolean topicIsWikipedia) {
+//        boolean rightCorpusDir = false;
+//        String ranTopicID = rscManager.getTopicID();
+//        String runFilePath = "";
+//        if (topicIsWikipedia) {
+//            runFilePath = defaultWikipediaDirectory + ranTopicID + ".xml";
+//        } else {
+//            runFilePath = defaultTeAraDirectory + ranTopicID + ".xml";
+//        }
+//        File ranXmlFile = new File(runFilePath);
+//        if (ranXmlFile.exists()) {
+//            rightCorpusDir = true;
+//        } else {
+//            rightCorpusDir = false;
+//            JOptionPane.showMessageDialog(mainPanel, "The XML File, " + ranTopicID + ".xml , cannot be found in specified Collection Directory, " + runFilePath + "!");
+//        }
+//        return rightCorpusDir;
+//    }
 
     /** This method is called from within the constructor to
      * initialize the form.
@@ -884,28 +869,8 @@ public class LTWAssessmentToolView extends FrameView {
     @Action
     public void btnGoBackALink() {
         // Click the button to Go Back one Link
-//        boolean isTABOutgoing = Boolean.valueOf(System.getProperty(sysPropertyIsTABKey));
-//        if (isTABOutgoing) {
-            // <editor-fold defaultstate="collapsed" desc="Update TAB Topic, Link">
-            // =================================================================
-//            String[] currTopicOLSEStatusSA = CurrentFocusedAnchor.getCurrentFocusedAnchor().toArray();
-//            String currPAnchorO = currTopicOLSEStatusSA[0];
-//            String currPAnchorL = currTopicOLSEStatusSA[1];
-//            String[] currPAnchorOLSA = new String[]{currPAnchorO, currPAnchorL};
-//            // -----------------------------------------------------------------
-            Bep currALinkOIDSA = CurrentFocusedAnchor.getCurrentFocusedAnchor().getCurrentBep(); //rscManager.getCurrTopicATargetOID(thisLinkTextPane, currTopicID);
-//            String currALinkO = currALinkOIDSA.offsetToString(); //[0];
-//            String currALinkID = currALinkOIDSA.getFileId(); //[1];
-//            String[] currPALinkOIDSA = new String[]{currALinkO, currALinkID};
-
-//          String currALinkStatus = myPooler.getPoolAnchorBepLinkStatus(currTopicID, currPAnchorOLSA, currALinkID);
-            // =================================================================
-            // 1) Get the NEXT Anchor O, L, S, E, Status + its BEP link O, S, ID, Status
-            //    With TAB Nav Update --> NEXT TAB
-            Bep nextAnchorBepLinkVSA = rscManager.getPreTABWithUpdateNAV(currTopicID, currALinkOIDSA, false);
-            CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(currALinkOIDSA.getAssociatedAnchor(), nextAnchorBepLinkVSA.getAssociatedAnchor(), nextAnchorBepLinkVSA);
-            
-//            LTWAssessmentToolControler.getInstance().updateAnchorChanges(nextAnchorBepLinkVSA, currALinkOIDSA);
+        
+        LTWAssessmentToolControler.getInstance().moveBackwardALink();
     }
 
     @Action
@@ -1207,80 +1172,7 @@ public class LTWAssessmentToolView extends FrameView {
 //        }
 //    }
 
-    private static void updatePaneBepIcon(JTextPane txtPane, Vector<String> bepSCROffset, boolean isHighlighBEP) {
-        // TODO: "isHighlighBEP"
-        // 1) YES: Remove previous Highlight BEPs + Make a new Highlight BEP
-        // 2) NO: INSERT BEP ICONs for this Topic
-        try {
-            StyledDocument styDoc = (StyledDocument) txtPane.getDocument();
-            Vector<String[]> HBepSCROffsetV = new Vector<String[]>();
-            Vector<String> bepOLListV = rscManager.getTopicBepsOSVS();
-            for (String thisBepOL : bepOLListV) {
-                String[] thisBepOLSA = thisBepOL.split(" : ");
-                HBepSCROffsetV.add(thisBepOLSA);
-            }
 
-            Style bepHStyle = styDoc.addStyle("bepHIcon", null);
-            StyleConstants.setIcon(bepHStyle, new ImageIcon(bepIconHighlight));
-            Style bepCStyle = styDoc.addStyle("bepCIcon", null);
-            StyleConstants.setIcon(bepCStyle, new ImageIcon(bepIconCompleted));
-            Style bepNStyle = styDoc.addStyle("bepNIcon", null);
-            StyleConstants.setIcon(bepNStyle, new ImageIcon(bepIconNonrelevant));
-            Style bepStyle = styDoc.addStyle("bepIcon", null);
-            StyleConstants.setIcon(bepStyle, new ImageIcon(bepIconImageFilePath));
-
-            if (isHighlighBEP) {
-                for (String[] scrBepOS : HBepSCROffsetV) {
-                    styDoc.remove(Integer.valueOf(scrBepOS[1]), bepLength);
-                    String thisPBepStatus = myPooler.getPoolBepStatus(currTopicID, scrBepOS[0]);
-                    if (Integer.valueOf(thisPBepStatus) == 1) {
-                        styDoc.insertString(Integer.valueOf(scrBepOS[1]), "CBEP", bepCStyle);
-                    } else if (Integer.valueOf(thisPBepStatus) == -1) {
-                        styDoc.insertString(Integer.valueOf(scrBepOS[1]), "NBEP", bepNStyle);
-                    } else if (Integer.valueOf(thisPBepStatus) == 0) {
-                        styDoc.insertString(Integer.valueOf(scrBepOS[1]), "TBEP", bepStyle);
-                    }
-                }
-                for (String scrOffset : bepSCROffset) {
-                    styDoc.remove(Integer.valueOf(scrOffset), bepLength);
-                    styDoc.insertString(Integer.valueOf(scrOffset), "HBEP", bepHStyle);
-                }
-            } else {
-                for (String scrOffset : bepSCROffset) {
-                    styDoc.insertString(Integer.valueOf(scrOffset), "TBEP", bepStyle);
-                }
-            }
-        } catch (BadLocationException ex) {
-            Logger.getLogger(topicPaneMouseListener.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        txtPane.repaint();
-    }
-
-    private Hashtable<String, String[]> populateTopicAnchorOLTSENHT() {
-        Hashtable<String, String[]> thisAnchorOLTSENHT = new Hashtable<String, String[]>();
-        Vector<String> topicAnchorsOLNameSEVS = this.rscManager.getTopicAnchorsOLNameSEV();
-        for (int i = 0; i < topicAnchorsOLNameSEVS.size(); i++) {
-            String topicAnchorsOLNameSE = topicAnchorsOLNameSEVS.elementAt(i);
-            String[] topicAnchorsOLNameSESA = topicAnchorsOLNameSE.split(" : ");
-            String tASE = topicAnchorsOLNameSESA[3] + "_" + topicAnchorsOLNameSESA[4];
-            thisAnchorOLTSENHT.put(tASE, new String[]{topicAnchorsOLNameSESA[0], topicAnchorsOLNameSESA[1],
-                        topicAnchorsOLNameSESA[2], topicAnchorsOLNameSESA[3], topicAnchorsOLNameSESA[4], String.valueOf(i)});
-        }
-        return thisAnchorOLTSENHT;
-    }
-
-    private Hashtable<String, String[]> populateTopicBepOSNHT() {
-        Hashtable<String, String[]> topicBepOSNHT = new Hashtable<String, String[]>();
-        Vector<String> topicBepsOSVS = this.rscManager.getTopicBepsOSVS();
-        for (int i = 0; i < topicBepsOSVS.size(); i++) {
-            String topicBepsOS = topicBepsOSVS.elementAt(i);
-            String[] topicBepsOSSA = topicBepsOS.split(" : ");
-            String tBS = topicBepsOSSA[1];
-            topicBepOSNHT.put(tBS, new String[]{topicBepsOSSA[0], topicBepsOSSA[1], String.valueOf(i)});
-        }
-        return topicBepOSNHT;
-    }
-    
 
 // </editor-fold>
 }
