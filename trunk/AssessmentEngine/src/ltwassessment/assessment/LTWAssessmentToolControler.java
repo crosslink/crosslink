@@ -545,8 +545,8 @@ public class LTWAssessmentToolControler {
     
     private void setupComponentFont() {
     	AdjustFont.setComponentFont(lblTopicTitle, AppResource.sourceLang);
-    	AdjustFont.setComponentFont(lblPoolAnchor, AppResource.sourceLang);
-    	AdjustFont.setComponentFont(lblAnchor, AppResource.sourceLang);
+    	AdjustFont.setComponentFont(lblPoolAnchor, AppResource.sourceLang, 36);
+    	AdjustFont.setComponentFont(lblAnchor, AppResource.sourceLang, 36);
     }
     
     private void setupTopic() {
