@@ -54,7 +54,7 @@
                   <Component id="completionInfoPane" alignment="0" min="-2" max="-2" attributes="1"/>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="docInfoPane" pref="80" max="32767" attributes="1"/>
+                      <Component id="docInfoPane" pref="82" max="32767" attributes="1"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
@@ -78,12 +78,12 @@
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="jLabel6" min="-2" pref="150" max="-2" attributes="0"/>
-                              <Component id="lblAnchor" min="-2" pref="256" max="-2" attributes="1"/>
+                              <Component id="lblPoolAnchor" alignment="0" min="-2" pref="256" max="-2" attributes="1"/>
                           </Group>
                           <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblPoolAnchor" min="-2" pref="279" max="-2" attributes="1"/>
+                              <Component id="lblAnchor" min="-2" pref="279" max="-2" attributes="1"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
@@ -96,12 +96,17 @@
                               <Component id="jLabel6" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                               <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="lblAnchor" max="32767" attributes="1"/>
-                              <Component id="lblPoolAnchor" alignment="0" pref="42" max="32767" attributes="1"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                                  <Component id="lblAnchor" min="-2" pref="42" max="-2" attributes="1"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="lblPoolAnchor" min="-2" pref="52" max="-2" attributes="1"/>
+                              </Group>
                           </Group>
-                          <EmptySpace pref="20" max="32767" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -114,15 +119,6 @@
                     <Property name="name" type="java.lang.String" value="jLabel6" noResource="true"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="lblPoolAnchor">
-                  <Properties>
-                    <Property name="font" type="java.awt.Font" resourceKey="lblPoolAnchor.font"/>
-                    <Property name="foreground" type="java.awt.Color" resourceKey="lblPoolAnchor.foreground"/>
-                    <Property name="text" type="java.lang.String" resourceKey="lblPoolAnchor.text"/>
-                    <Property name="verticalAlignment" type="int" value="1"/>
-                    <Property name="name" type="java.lang.String" value="lblPoolAnchor" noResource="true"/>
-                  </Properties>
-                </Component>
                 <Component class="javax.swing.JLabel" name="lblAnchor">
                   <Properties>
                     <Property name="font" type="java.awt.Font" resourceKey="lblAnchor.font"/>
@@ -130,6 +126,15 @@
                     <Property name="text" type="java.lang.String" resourceKey="lblAnchor.text"/>
                     <Property name="verticalAlignment" type="int" value="1"/>
                     <Property name="name" type="java.lang.String" value="lblAnchor" noResource="true"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="lblPoolAnchor">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" resourceKey="lblPoolAnchor.font"/>
+                    <Property name="foreground" type="java.awt.Color" resourceKey="lblPoolAnchor.foreground"/>
+                    <Property name="text" type="java.lang.String" resourceKey="lblPoolAnchor.text"/>
+                    <Property name="verticalAlignment" type="int" value="1"/>
+                    <Property name="name" type="java.lang.String" value="lblPoolAnchor" noResource="true"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel9">
@@ -157,14 +162,17 @@
                           <Component id="sourceDocPanel" linkSize="11" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="targetDocPanel" linkSize="11" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="sourceDocPanel" alignment="0" min="0" max="32767" attributes="1"/>
-                      <Component id="targetDocPanel" alignment="0" max="32767" attributes="1"/>
+                      <Component id="sourceDocPanel" alignment="0" min="0" pref="82" max="32767" attributes="1"/>
+                      <Group type="102" attributes="0">
+                          <Component id="targetDocPanel" pref="70" max="32767" attributes="1"/>
+                          <EmptySpace min="12" pref="12" max="12" attributes="0"/>
+                      </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
@@ -182,13 +190,15 @@
                           <Group type="102" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jLabel3" min="-2" pref="81" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                                      <Component id="lblTargetID" min="-2" pref="159" max="-2" attributes="2"/>
-                                  </Group>
-                                  <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="2"/>
                                   <Component id="lblTargetTitle" alignment="1" pref="354" max="32767" attributes="2"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                          <Component id="jLabel3" alignment="1" max="32767" attributes="1"/>
+                                          <Component id="jLabel2" alignment="1" max="32767" attributes="3"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="lblTargetID" min="-2" pref="141" max="-2" attributes="2"/>
+                                  </Group>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
@@ -198,11 +208,13 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel3" min="-2" max="-2" attributes="1"/>
+                                  <Group type="102" attributes="0">
+                                      <Component id="jLabel3" min="-2" max="-2" attributes="1"/>
+                                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                                      <Component id="jLabel2" min="-2" max="-2" attributes="1"/>
+                                  </Group>
                                   <Component id="lblTargetID" min="-2" pref="18" max="-2" attributes="3"/>
                               </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jLabel2" min="-2" max="-2" attributes="1"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="lblTargetTitle" min="-2" pref="24" max="-2" attributes="1"/>
                               <EmptySpace max="-2" attributes="0"/>
@@ -254,8 +266,8 @@
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="jLabel4" min="-2" pref="69" max="-2" attributes="2"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="lblTopicID" min="-2" pref="137" max="-2" attributes="2"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="lblTopicID" min="-2" pref="160" max="-2" attributes="2"/>
                                   </Group>
                                   <Component id="jLabel1" alignment="0" min="-2" pref="78" max="-2" attributes="2"/>
                                   <Component id="lblTopicTitle" alignment="0" pref="354" max="32767" attributes="2"/>
