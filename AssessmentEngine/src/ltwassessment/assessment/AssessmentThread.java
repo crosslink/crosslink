@@ -195,14 +195,14 @@ public class AssessmentThread extends Thread {
 //            logger("outgoing_singleRightClick_" + currAnchorOLNameStatusSA.offsetToString() + "-" + currAnchorOLNameStatusSA.lengthToString() + " --> " + currALinkID);
         Bep currentLink = CurrentFocusedAnchor.getCurrentFocusedAnchor().getCurrentBep();
             // -----------------------------------------------------------------
-            String currALinkStatus = this.myPoolManager.getPoolAnchorBepLinkStatus(topicID, currentLink);
-            if (currALinkStatus.equals("0")) {
-                String[] outCompletion = this.myRSCManager.getOutgoingCompletion();
-                String completedLinkN = outCompletion[0];
-                String totalLinkN = outCompletion[1];
-                completedLinkN = String.valueOf(Integer.valueOf(completedLinkN) + 1);
-                this.myRSCManager.updateOutgoingCompletion(completedLinkN + " : " + totalLinkN);
-            }
+//            String currALinkStatus = this.myPoolManager.getPoolAnchorBepLinkStatus(topicID, currentLink);
+//            if (currALinkStatus.equals("0")) {
+//                String[] outCompletion = this.myRSCManager.getOutgoingCompletion();
+//                String completedLinkN = outCompletion[0];
+//                String totalLinkN = outCompletion[1];
+//                completedLinkN = String.valueOf(Integer.valueOf(completedLinkN) + 1);
+//                this.myRSCManager.updateOutgoingCompletion(completedLinkN + " : " + totalLinkN);
+//            }
             // -----------------------------------------------------------------
 //            this.myLinkPane.setBackground(this.linkPaneNonRelColor);
 //            this.myLinkPane.repaint();
@@ -216,21 +216,21 @@ public class AssessmentThread extends Thread {
 //            CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(previous, link.getAssociatedAnchor(), link);
     }
     
-    private void updateRelevantCompletion(Bep link) {
-//        String currALinkStatus = this.myPoolManager.getPoolAnchorBepLinkStatus(topicID, currAnchorOLNameStatusSA/*new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1]}*/, currALinkID);
-        if (link.getRel() ==0 ) {
-            String[] outCompletion = AssessmentThread.myRSCManager.getOutgoingCompletion();
-            String completedLinkN = outCompletion[0];
-            String totalLinkN = outCompletion[1];
-            completedLinkN = String.valueOf(Integer.valueOf(completedLinkN) + 1);
-            AssessmentThread.myRSCManager.updateOutgoingCompletion(completedLinkN + " : " + totalLinkN);
-        }
-    }
+//    private void updateRelevantCompletion(Bep link) {
+////        String currALinkStatus = this.myPoolManager.getPoolAnchorBepLinkStatus(topicID, currAnchorOLNameStatusSA/*new String[]{currAnchorOLNameStatusSA[0], currAnchorOLNameStatusSA[1]}*/, currALinkID);
+//        if (link.getRel() ==0 ) {
+//            String[] outCompletion = AssessmentThread.myRSCManager.getOutgoingCompletion();
+//            String completedLinkN = outCompletion[0];
+//            String totalLinkN = outCompletion[1];
+//            completedLinkN = String.valueOf(Integer.valueOf(completedLinkN) + 1);
+//            AssessmentThread.myRSCManager.updateOutgoingCompletion(completedLinkN + " : " + totalLinkN);
+//        }
+//    }
     
     private void setRelevant(Bep currentLink, boolean setBep) {
         String currALinkStatus = AssessmentThread.myPoolManager.getPoolAnchorBepLinkStatus(topicID, currentLink);
-        if (currALinkStatus.equals("0")) 
-        	updateRelevantCompletion(currentLink);  	
+//        if (currALinkStatus.equals("0")) 
+//        	updateRelevantCompletion(currentLink);  	
         
         currentLink.setRel(Bep.RELEVANT);
         if (setBep)

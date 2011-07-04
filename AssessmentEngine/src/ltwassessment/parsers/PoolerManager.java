@@ -1142,7 +1142,7 @@ public class PoolerManager {
                         
                         bep.setTargetTitle(thisToBepProperty[4]);
                         bep.setTargetLang(thisToBepProperty[3]);
-                        bep.setRel(thisToBepProperty[2]);
+                        bep.initRel(thisToBepProperty[2]);
                         if (bep.getRel() == 1 && parsedAnchor.getStatus() == -1)
                         	parsedAnchor.setStatus(Bep.RELEVANT);
                         if (parsedSubanchor.getStatus() == -1) {

@@ -1,9 +1,15 @@
 package ltwassessment.assessment;
 
-public class Bep {
+import java.util.Observable;
+
+public class Bep extends Observable {
 	public static final int IRRELEVANT = -1;
 	public static final int RELEVANT = 1;
 	public static final int UNASSESSED = 0;
+	
+	public static final int MARK_INITIALISED = 0;
+	public static final int MARK_ASSESSED = 1;
+	public static final int MARK_UNASSESSED = 2;
 	
 	private int offset;
 	private int startP;
@@ -52,6 +58,8 @@ public class Bep {
 	}
 	
 	private void init() {
+		Completion.getInstance().oneMoreLinkForAssessment();
+		this.addObserver(Completion.getInstance());
 		rel = UNASSESSED;
 	}
 
@@ -87,12 +95,33 @@ public class Bep {
 		return rel;
 	}
 
-	public void setRel(int rel) {
+	public void initRel(int rel) {
 		this.rel = rel;
+	}
+	
+	public void initRel(String rel) {
+		initRel(Integer.parseInt(rel));
+	}
+	
+	public void setRel(int rel) {
+		int oldRel = this.rel;
+		
+		if (oldRel != rel) {
+			int value;
+			if (rel == Bep.IRRELEVANT) { 
+				value = MARK_ASSESSED;
+			}
+			else {
+				value = MARK_UNASSESSED;
+			}
+			setChanged();
+			notifyObservers(value);
+			this.rel = rel;
+		}
 	}
 
 	public void setRel(String rel) {
-		this.rel = Integer.parseInt(rel);
+		setRel(Integer.parseInt(rel));
 	}
 	
 	public String relString() {
