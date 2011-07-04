@@ -53,6 +53,10 @@ public class LTWAssessmentToolControler {
     public final static String sysPropertyTABCompletedRatioKey = "tabCompletedRatio";
     public final static String sysPropertyTBACompletedRatioKey = "tbaCompletedRatio";
     
+    // -------------------------------------------------------------------------
+    // constant variables
+    protected final static int bepLength = 4;
+    
 //    protected final String poolXmlFileName = "wikipedia_pool.xml";
     protected final String loggerFileName = "_ltwAssessTool2011.log";
     protected final String poolAndLogDir = "resources" + File.separator + "Pool";
@@ -67,8 +71,8 @@ public class LTWAssessmentToolControler {
     
     private boolean showOnce = false;
 	private PoolUpdater myPUpdater;
-    private PoolerManager myPooler;
-    private ResourcesManager rscManager = null;
+    private static PoolerManager myPooler;
+    private static ResourcesManager rscManager = null;
     private JFrame mainFrame = null;
     
     private Hashtable<String, Vector<IndexedAnchor>> topicAnchorsHT = new Hashtable<String, Vector<IndexedAnchor>>();
@@ -93,6 +97,8 @@ public class LTWAssessmentToolControler {
     private static String bepIconNonrelevant = "";
     private static String bepIconHighlight = "";
 
+    private Completion linkCompletion = null;
+    		
 	private static LTWAssessmentToolControler instance = null;
     
     public void setContainter(JFrame mainView, JTextPane myTopicPane, JTextPane myLinkPane) {
@@ -127,6 +133,10 @@ public class LTWAssessmentToolControler {
 
 	public void setLblTopicTitle(JComponent lblTopicTitle) {
 		this.lblTopicTitle = lblTopicTitle;
+	}
+
+	public void setLblCompletion(JLabel lblCompletion) {
+		Completion.getInstance().setLblCompletion(lblCompletion);
 	}
 
 	public static LTWAssessmentToolControler getInstance() {
@@ -273,9 +283,9 @@ public class LTWAssessmentToolControler {
 			newCompletedCounter -= unAssCounter;
 			myPUpdater.updatePoolSubanchorStatus(currTopicID, anchor);
         }
-        String[] outCompletionRatio = rscManager.getOutgoingCompletion();
-        String outCompletedLinks = String.valueOf(Integer.valueOf(outCompletionRatio[0]) + newCompletedCounter);
-        rscManager.updateOutgoingCompletion(outCompletedLinks + " : " + outCompletionRatio[1]);  
+//        String[] outCompletionRatio = rscManager.getOutgoingCompletion();
+//        String outCompletedLinks = String.valueOf(Integer.valueOf(outCompletionRatio[0]) + newCompletedCounter);
+//        rscManager.updateOutgoingCompletion(outCompletedLinks + " : " + outCompletionRatio[1]);  
 	}
 	
     private void backupPool() {
@@ -307,6 +317,30 @@ public class LTWAssessmentToolControler {
 		        Logger.getLogger(LTWAssessmentToolControler.class.getName()).log(Level.SEVERE, null, ex);
 		    }
 		}
+    }
+    
+    public void moveBackwardALink() {
+	//      boolean isTABOutgoing = Boolean.valueOf(System.getProperty(sysPropertyIsTABKey));
+	//      if (isTABOutgoing) {
+    // <editor-fold defaultstate="collapsed" desc="Update TAB Topic, Link">
+    // =================================================================
+	//  String[] currTopicOLSEStatusSA = CurrentFocusedAnchor.getCurrentFocusedAnchor().toArray();
+	//  String currPAnchorO = currTopicOLSEStatusSA[0];
+	//String currPAnchorL = currTopicOLSEStatusSA[1];
+	//String[] currPAnchorOLSA = new String[]{currPAnchorO, currPAnchorL};
+	//// -----------------------------------------------------------------
+	Bep currALinkOIDSA = CurrentFocusedAnchor.getCurrentFocusedAnchor().getCurrentBep(); //rscManager.getCurrTopicATargetOID(thisLinkTextPane, currTopicID);
+	//String currALinkO = currALinkOIDSA.offsetToString(); //[0];
+	//String currALinkID = currALinkOIDSA.getFileId(); //[1];
+	//String[] currPALinkOIDSA = new String[]{currALinkO, currALinkID};
+	
+	//String currALinkStatus = myPooler.getPoolAnchorBepLinkStatus(currTopicID, currPAnchorOLSA, currALinkID);
+	// =================================================================
+	// 1) Get the NEXT Anchor O, L, S, E, Status + its BEP link O, S, ID, Status
+	//    With TAB Nav Update --> NEXT TAB
+	Bep nextAnchorBepLinkVSA = rscManager.getPreTABWithUpdateNAV(currTopicID, currALinkOIDSA, false);
+	CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(currALinkOIDSA.getAssociatedAnchor(), nextAnchorBepLinkVSA.getAssociatedAnchor(), nextAnchorBepLinkVSA);
+
     }
     
     public void moveForwardALink(boolean updateCurrAnchorStatus, boolean nextUnassessed) {
@@ -491,9 +525,9 @@ public class LTWAssessmentToolControler {
          ************************************************************************/
         TopicHighlightManager.getInstance().initializeHighlighter(topicAnchorOLSEStatus);
         
-        String[] tabCompletedRatio = this.rscManager.getTABCompletedRatio();
-        this.rscManager.updateOutgoingCompletion(tabCompletedRatio[0] + " : " + tabCompletedRatio[1]);
-        System.setProperty(LTWAssessmentToolControler.sysPropertyTABCompletedRatioKey, String.valueOf(tabCompletedRatio[0]) + "_" + String.valueOf(tabCompletedRatio[1]));
+//        String[] tabCompletedRatio = this.rscManager.getTABCompletedRatio();
+//        this.rscManager.updateOutgoingCompletion(tabCompletedRatio[0] + " : " + tabCompletedRatio[1]);
+//        System.setProperty(LTWAssessmentToolControler.sysPropertyTABCompletedRatioKey, String.valueOf(tabCompletedRatio[0]) + "_" + String.valueOf(tabCompletedRatio[1]));
         // ---------------------------------------------------------------------
         
         // String[]{Anchor_O, L, SP, EP, Status}
@@ -632,4 +666,96 @@ public class LTWAssessmentToolControler {
             }
         }
     }
+
+	public void start() {
+        Hashtable<String, File> topics4Assessment = Assessment.getInstance().getTopics();
+        if (topics4Assessment.size() == 0) {
+            currTopicID = rscManager.getInstance().getTopicID();
+            if (currTopicID.length() == 0) {
+            	//TODO : fix this
+            }
+            else
+            	LTWAssessmentToolControler.getInstance().assess(Assessment.getPoolFile(currTopicID));
+        }
+        else {
+        	LTWAssessmentToolControler.getInstance().setCurrTopicID(null); //currTopicID = null;
+    		LTWAssessmentToolControler.getInstance().assessNextTopic();
+        }
+		
+	}
+	
+    private static void updatePaneBepIcon(JTextPane txtPane, Vector<String> bepSCROffset, boolean isHighlighBEP) {
+        // TODO: "isHighlighBEP"
+        // 1) YES: Remove previous Highlight BEPs + Make a new Highlight BEP
+        // 2) NO: INSERT BEP ICONs for this Topic
+        try {
+            StyledDocument styDoc = (StyledDocument) txtPane.getDocument();
+            Vector<String[]> HBepSCROffsetV = new Vector<String[]>();
+            Vector<String> bepOLListV = rscManager.getTopicBepsOSVS();
+            for (String thisBepOL : bepOLListV) {
+                String[] thisBepOLSA = thisBepOL.split(" : ");
+                HBepSCROffsetV.add(thisBepOLSA);
+            }
+
+            Style bepHStyle = styDoc.addStyle("bepHIcon", null);
+            StyleConstants.setIcon(bepHStyle, new ImageIcon(bepIconHighlight));
+            Style bepCStyle = styDoc.addStyle("bepCIcon", null);
+            StyleConstants.setIcon(bepCStyle, new ImageIcon(bepIconCompleted));
+            Style bepNStyle = styDoc.addStyle("bepNIcon", null);
+            StyleConstants.setIcon(bepNStyle, new ImageIcon(bepIconNonrelevant));
+            Style bepStyle = styDoc.addStyle("bepIcon", null);
+            StyleConstants.setIcon(bepStyle, new ImageIcon(bepIconImageFilePath));
+
+            if (isHighlighBEP) {
+                for (String[] scrBepOS : HBepSCROffsetV) {
+                    styDoc.remove(Integer.valueOf(scrBepOS[1]), bepLength);
+                    String thisPBepStatus = myPooler.getPoolBepStatus(currTopicID, scrBepOS[0]);
+                    if (Integer.valueOf(thisPBepStatus) == 1) {
+                        styDoc.insertString(Integer.valueOf(scrBepOS[1]), "CBEP", bepCStyle);
+                    } else if (Integer.valueOf(thisPBepStatus) == -1) {
+                        styDoc.insertString(Integer.valueOf(scrBepOS[1]), "NBEP", bepNStyle);
+                    } else if (Integer.valueOf(thisPBepStatus) == 0) {
+                        styDoc.insertString(Integer.valueOf(scrBepOS[1]), "TBEP", bepStyle);
+                    }
+                }
+                for (String scrOffset : bepSCROffset) {
+                    styDoc.remove(Integer.valueOf(scrOffset), bepLength);
+                    styDoc.insertString(Integer.valueOf(scrOffset), "HBEP", bepHStyle);
+                }
+            } else {
+                for (String scrOffset : bepSCROffset) {
+                    styDoc.insertString(Integer.valueOf(scrOffset), "TBEP", bepStyle);
+                }
+            }
+        } catch (BadLocationException ex) {
+            Logger.getLogger(topicPaneMouseListener.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        txtPane.repaint();
+    }
+
+    private Hashtable<String, String[]> populateTopicAnchorOLTSENHT() {
+        Hashtable<String, String[]> thisAnchorOLTSENHT = new Hashtable<String, String[]>();
+        Vector<String> topicAnchorsOLNameSEVS = this.rscManager.getTopicAnchorsOLNameSEV();
+        for (int i = 0; i < topicAnchorsOLNameSEVS.size(); i++) {
+            String topicAnchorsOLNameSE = topicAnchorsOLNameSEVS.elementAt(i);
+            String[] topicAnchorsOLNameSESA = topicAnchorsOLNameSE.split(" : ");
+            String tASE = topicAnchorsOLNameSESA[3] + "_" + topicAnchorsOLNameSESA[4];
+            thisAnchorOLTSENHT.put(tASE, new String[]{topicAnchorsOLNameSESA[0], topicAnchorsOLNameSESA[1],
+                        topicAnchorsOLNameSESA[2], topicAnchorsOLNameSESA[3], topicAnchorsOLNameSESA[4], String.valueOf(i)});
+        }
+        return thisAnchorOLTSENHT;
+    }
+
+    private Hashtable<String, String[]> populateTopicBepOSNHT() {
+        Hashtable<String, String[]> topicBepOSNHT = new Hashtable<String, String[]>();
+        Vector<String> topicBepsOSVS = this.rscManager.getTopicBepsOSVS();
+        for (int i = 0; i < topicBepsOSVS.size(); i++) {
+            String topicBepsOS = topicBepsOSVS.elementAt(i);
+            String[] topicBepsOSSA = topicBepsOS.split(" : ");
+            String tBS = topicBepsOSSA[1];
+            topicBepOSNHT.put(tBS, new String[]{topicBepsOSSA[0], topicBepsOSSA[1], String.valueOf(i)});
+        }
+        return topicBepOSNHT;
+    }
+    
 }
