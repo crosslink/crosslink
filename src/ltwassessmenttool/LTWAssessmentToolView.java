@@ -297,20 +297,25 @@ public class LTWAssessmentToolView extends FrameView {
 
         mainPanel = new javax.swing.JPanel();
         jInfoPanel = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        lblTopicTitle = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        lblTopicID = new javax.swing.JLabel();
+        anchorInfoPane = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         lblPoolAnchor = new javax.swing.JLabel();
+        lblAnchor = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        docInfoPane = new javax.swing.JPanel();
+        targetDocPanel = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
+        lblTargetTitle = new javax.swing.JLabel();
         lblTargetID = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        lblAnchor = new javax.swing.JLabel();
-        lblTargetTitle = new javax.swing.JLabel();
+        sourceDocPanel = new javax.swing.JPanel();
+        lblTopicTitle = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        lblTopicID = new javax.swing.JLabel();
+        completionInfoPane = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         lblCompletion = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
         jSplitPane1 = new javax.swing.JSplitPane();
         topicTextScrollPane = new javax.swing.JScrollPane();
         thisTopicTextPane = new javax.swing.JTextPane();
@@ -354,13 +359,115 @@ public class LTWAssessmentToolView extends FrameView {
         jInfoPanel.setBackground(resourceMap.getColor("jInfoPanel.background")); // NOI18N
         jInfoPanel.setName("jInfoPanel"); // NOI18N
 
-        jLabel1.setFont(resourceMap.getFont("jLabel1.font")); // NOI18N
-        jLabel1.setText(resourceMap.getString("jLabel1.text")); // NOI18N
-        jLabel1.setName("jLabel1"); // NOI18N
+        anchorInfoPane.setBackground(resourceMap.getColor("anchorInfoPane.background")); // NOI18N
+        anchorInfoPane.setName("anchorInfoPane"); // NOI18N
+
+        jLabel6.setFont(resourceMap.getFont("jLabel6.font")); // NOI18N
+        jLabel6.setText(resourceMap.getString("jLabel6.text")); // NOI18N
+        jLabel6.setName("jLabel6"); // NOI18N
+
+        lblPoolAnchor.setFont(resourceMap.getFont("lblPoolAnchor.font")); // NOI18N
+        lblPoolAnchor.setForeground(resourceMap.getColor("lblPoolAnchor.foreground")); // NOI18N
+        lblPoolAnchor.setText(resourceMap.getString("lblPoolAnchor.text")); // NOI18N
+        lblPoolAnchor.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        lblPoolAnchor.setName("lblPoolAnchor"); // NOI18N
+
+        lblAnchor.setFont(resourceMap.getFont("lblAnchor.font")); // NOI18N
+        lblAnchor.setForeground(resourceMap.getColor("lblAnchor.foreground")); // NOI18N
+        lblAnchor.setText(resourceMap.getString("lblAnchor.text")); // NOI18N
+        lblAnchor.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        lblAnchor.setName("lblAnchor"); // NOI18N
+
+        jLabel9.setFont(resourceMap.getFont("jLabel9.font")); // NOI18N
+        jLabel9.setText(resourceMap.getString("jLabel9.text")); // NOI18N
+        jLabel9.setName("jLabel9"); // NOI18N
+
+        javax.swing.GroupLayout anchorInfoPaneLayout = new javax.swing.GroupLayout(anchorInfoPane);
+        anchorInfoPane.setLayout(anchorInfoPaneLayout);
+        anchorInfoPaneLayout.setHorizontalGroup(
+            anchorInfoPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(anchorInfoPaneLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(anchorInfoPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblAnchor, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(39, 39, 39)
+                .addGroup(anchorInfoPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel9)
+                    .addComponent(lblPoolAnchor, javax.swing.GroupLayout.PREFERRED_SIZE, 279, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
+        );
+        anchorInfoPaneLayout.setVerticalGroup(
+            anchorInfoPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(anchorInfoPaneLayout.createSequentialGroup()
+                .addGroup(anchorInfoPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel9))
+                .addGap(6, 6, 6)
+                .addGroup(anchorInfoPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(lblAnchor, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblPoolAnchor, javax.swing.GroupLayout.DEFAULT_SIZE, 42, Short.MAX_VALUE))
+                .addContainerGap(20, Short.MAX_VALUE))
+        );
+
+        docInfoPane.setBackground(resourceMap.getColor("docInfoPane.background")); // NOI18N
+        docInfoPane.setName("docInfoPane"); // NOI18N
+        docInfoPane.setPreferredSize(new java.awt.Dimension(55, 143));
+
+        targetDocPanel.setBackground(resourceMap.getColor("targetDocPanel.background")); // NOI18N
+        targetDocPanel.setName("targetDocPanel"); // NOI18N
+        targetDocPanel.setVerifyInputWhenFocusTarget(false);
+
+        jLabel3.setFont(resourceMap.getFont("jLabel3.font")); // NOI18N
+        jLabel3.setText(resourceMap.getString("jLabel3.text")); // NOI18N
+        jLabel3.setName("jLabel3"); // NOI18N
+
+        lblTargetTitle.setText(resourceMap.getString("lblTargetTitle.text")); // NOI18N
+        lblTargetTitle.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        lblTargetTitle.setName("lblTargetTitle"); // NOI18N
+
+        lblTargetID.setText(resourceMap.getString("lblTargetID.text")); // NOI18N
+        lblTargetID.setName("lblTargetID"); // NOI18N
+
+        jLabel2.setFont(resourceMap.getFont("jLabel2.font")); // NOI18N
+        jLabel2.setText(resourceMap.getString("jLabel2.text")); // NOI18N
+        jLabel2.setName("jLabel2"); // NOI18N
+
+        javax.swing.GroupLayout targetDocPanelLayout = new javax.swing.GroupLayout(targetDocPanel);
+        targetDocPanel.setLayout(targetDocPanelLayout);
+        targetDocPanelLayout.setHorizontalGroup(
+            targetDocPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(targetDocPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(targetDocPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(targetDocPanelLayout.createSequentialGroup()
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(27, 27, 27)
+                        .addComponent(lblTargetID, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel2)
+                    .addComponent(lblTargetTitle, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 354, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+        targetDocPanelLayout.setVerticalGroup(
+            targetDocPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(targetDocPanelLayout.createSequentialGroup()
+                .addGroup(targetDocPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel3)
+                    .addComponent(lblTargetID, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblTargetTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        sourceDocPanel.setBackground(resourceMap.getColor("sourceDocPanel.background")); // NOI18N
+        sourceDocPanel.setName("sourceDocPanel"); // NOI18N
 
         lblTopicTitle.setFont(resourceMap.getFont("lblTopicTitle.font")); // NOI18N
         lblTopicTitle.setForeground(resourceMap.getColor("lblTopicTitle.foreground")); // NOI18N
         lblTopicTitle.setText(resourceMap.getString("lblTopicTitle.text")); // NOI18N
+        lblTopicTitle.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         lblTopicTitle.setMaximumSize(new java.awt.Dimension(30, 14));
         lblTopicTitle.setMinimumSize(new java.awt.Dimension(30, 14));
         lblTopicTitle.setName("lblTopicTitle"); // NOI18N
@@ -370,6 +477,10 @@ public class LTWAssessmentToolView extends FrameView {
         jLabel4.setText(resourceMap.getString("jLabel4.text")); // NOI18N
         jLabel4.setName("jLabel4"); // NOI18N
 
+        jLabel1.setFont(resourceMap.getFont("jLabel1.font")); // NOI18N
+        jLabel1.setText(resourceMap.getString("jLabel1.text")); // NOI18N
+        jLabel1.setName("jLabel1"); // NOI18N
+
         lblTopicID.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         lblTopicID.setText(resourceMap.getString("lblTopicID.text")); // NOI18N
         lblTopicID.setMaximumSize(new java.awt.Dimension(30, 14));
@@ -377,32 +488,55 @@ public class LTWAssessmentToolView extends FrameView {
         lblTopicID.setName("lblTopicID"); // NOI18N
         lblTopicID.setPreferredSize(new java.awt.Dimension(30, 14));
 
-        jLabel6.setFont(resourceMap.getFont("jLabel6.font")); // NOI18N
-        jLabel6.setText(resourceMap.getString("jLabel6.text")); // NOI18N
-        jLabel6.setName("jLabel6"); // NOI18N
+        javax.swing.GroupLayout sourceDocPanelLayout = new javax.swing.GroupLayout(sourceDocPanel);
+        sourceDocPanel.setLayout(sourceDocPanelLayout);
+        sourceDocPanelLayout.setHorizontalGroup(
+            sourceDocPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(sourceDocPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(sourceDocPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(sourceDocPanelLayout.createSequentialGroup()
+                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(lblTopicID, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblTopicTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 354, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+        sourceDocPanelLayout.setVerticalGroup(
+            sourceDocPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(sourceDocPanelLayout.createSequentialGroup()
+                .addGroup(sourceDocPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel4)
+                    .addComponent(lblTopicID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(2, 2, 2)
+                .addComponent(lblTopicTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
 
-        lblPoolAnchor.setFont(resourceMap.getFont("lblPoolAnchor.font")); // NOI18N
-        lblPoolAnchor.setForeground(resourceMap.getColor("lblPoolAnchor.foreground")); // NOI18N
-        lblPoolAnchor.setText(resourceMap.getString("lblPoolAnchor.text")); // NOI18N
-        lblPoolAnchor.setName("lblPoolAnchor"); // NOI18N
+        javax.swing.GroupLayout docInfoPaneLayout = new javax.swing.GroupLayout(docInfoPane);
+        docInfoPane.setLayout(docInfoPaneLayout);
+        docInfoPaneLayout.setHorizontalGroup(
+            docInfoPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(docInfoPaneLayout.createSequentialGroup()
+                .addComponent(sourceDocPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(targetDocPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(55, 55, 55))
+        );
 
-        jLabel3.setFont(resourceMap.getFont("jLabel3.font")); // NOI18N
-        jLabel3.setText(resourceMap.getString("jLabel3.text")); // NOI18N
-        jLabel3.setName("jLabel3"); // NOI18N
+        docInfoPaneLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {sourceDocPanel, targetDocPanel});
 
-        lblTargetID.setText(resourceMap.getString("lblTargetID.text")); // NOI18N
-        lblTargetID.setName("lblTargetID"); // NOI18N
+        docInfoPaneLayout.setVerticalGroup(
+            docInfoPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(sourceDocPanel, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(targetDocPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
 
-        jLabel2.setFont(resourceMap.getFont("jLabel2.font")); // NOI18N
-        jLabel2.setText(resourceMap.getString("jLabel2.text")); // NOI18N
-        jLabel2.setName("jLabel2"); // NOI18N
-
-        lblAnchor.setForeground(resourceMap.getColor("lblAnchor.foreground")); // NOI18N
-        lblAnchor.setText(resourceMap.getString("lblAnchor.text")); // NOI18N
-        lblAnchor.setName("lblAnchor"); // NOI18N
-
-        lblTargetTitle.setText(resourceMap.getString("lblTargetTitle.text")); // NOI18N
-        lblTargetTitle.setName("lblTargetTitle"); // NOI18N
+        completionInfoPane.setBackground(resourceMap.getColor("completionInfoPane.background")); // NOI18N
+        completionInfoPane.setName("completionInfoPane"); // NOI18N
 
         jLabel7.setFont(resourceMap.getFont("jLabel7.font")); // NOI18N
         jLabel7.setText(resourceMap.getString("jLabel7.text")); // NOI18N
@@ -412,102 +546,61 @@ public class LTWAssessmentToolView extends FrameView {
         lblCompletion.setForeground(resourceMap.getColor("lblCompletion.foreground")); // NOI18N
         lblCompletion.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         lblCompletion.setText(resourceMap.getString("lblCompletion.text")); // NOI18N
+        lblCompletion.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         lblCompletion.setMaximumSize(new java.awt.Dimension(30, 14));
         lblCompletion.setMinimumSize(new java.awt.Dimension(30, 14));
         lblCompletion.setName("lblCompletion"); // NOI18N
         lblCompletion.setPreferredSize(new java.awt.Dimension(30, 14));
 
-        jLabel9.setFont(resourceMap.getFont("jLabel9.font")); // NOI18N
-        jLabel9.setText(resourceMap.getString("jLabel9.text")); // NOI18N
-        jLabel9.setName("jLabel9"); // NOI18N
+        javax.swing.GroupLayout completionInfoPaneLayout = new javax.swing.GroupLayout(completionInfoPane);
+        completionInfoPane.setLayout(completionInfoPaneLayout);
+        completionInfoPaneLayout.setHorizontalGroup(
+            completionInfoPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(completionInfoPaneLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(completionInfoPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(completionInfoPaneLayout.createSequentialGroup()
+                        .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())
+                    .addComponent(lblCompletion, javax.swing.GroupLayout.DEFAULT_SIZE, 180, Short.MAX_VALUE)))
+        );
+        completionInfoPaneLayout.setVerticalGroup(
+            completionInfoPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(completionInfoPaneLayout.createSequentialGroup()
+                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblCompletion, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
 
         javax.swing.GroupLayout jInfoPanelLayout = new javax.swing.GroupLayout(jInfoPanel);
         jInfoPanel.setLayout(jInfoPanelLayout);
         jInfoPanelLayout.setHorizontalGroup(
             jInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jInfoPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jInfoPanelLayout.createSequentialGroup()
-                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lblTopicID, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lblCompletion, javax.swing.GroupLayout.PREFERRED_SIZE, 247, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jInfoPanelLayout.createSequentialGroup()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(18, 18, 18)
-                        .addComponent(lblTopicTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 713, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addComponent(docInfoPane, javax.swing.GroupLayout.PREFERRED_SIZE, 786, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jInfoPanelLayout.createSequentialGroup()
-                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(lblPoolAnchor, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jInfoPanelLayout.createSequentialGroup()
-                        .addComponent(jLabel9)
-                        .addGap(37, 37, 37)
-                        .addComponent(lblAnchor, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGroup(jInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jInfoPanelLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lblTargetTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 411, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jInfoPanelLayout.createSequentialGroup()
-                        .addGap(7, 7, 7)
-                        .addComponent(lblTargetID, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(28, 28, 28))
+                .addComponent(anchorInfoPane, javax.swing.GroupLayout.PREFERRED_SIZE, 571, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(completionInfoPane, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(12, Short.MAX_VALUE))
         );
         jInfoPanelLayout.setVerticalGroup(
             jInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(completionInfoPane, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addGroup(jInfoPanelLayout.createSequentialGroup()
-                .addGroup(jInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jInfoPanelLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(jInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.CENTER, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblPoolAnchor, javax.swing.GroupLayout.Alignment.CENTER, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.CENTER, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblTargetID, javax.swing.GroupLayout.Alignment.CENTER, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jInfoPanelLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(jInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(lblTopicID, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(lblCompletion, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jInfoPanelLayout.createSequentialGroup()
-                            .addGroup(jInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.CENTER, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(lblTopicTitle, javax.swing.GroupLayout.Alignment.CENTER, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGroup(jInfoPanelLayout.createSequentialGroup()
-                                    .addComponent(lblTargetTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(20, 20, 20)))
-                            .addGap(0, 0, 0))
-                        .addGroup(jInfoPanelLayout.createSequentialGroup()
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addGroup(jInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel9)
-                                .addComponent(lblAnchor, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addContainerGap()))
-                    .addGroup(jInfoPanelLayout.createSequentialGroup()
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())))
+                .addContainerGap()
+                .addComponent(docInfoPane, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+                .addContainerGap())
+            .addGroup(jInfoPanelLayout.createSequentialGroup()
+                .addComponent(anchorInfoPane, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         jSplitPane1.setBackground(resourceMap.getColor("jSplitPane1.background")); // NOI18N
         jSplitPane1.setMinimumSize(new java.awt.Dimension(1, 1));
         jSplitPane1.setName("jSplitPane1"); // NOI18N
-        jSplitPane1.setPreferredSize(new java.awt.Dimension(632, 644));
+        jSplitPane1.setPreferredSize(new java.awt.Dimension(732, 644));
 
         topicTextScrollPane.setBackground(resourceMap.getColor("topicTextScrollPane.background")); // NOI18N
         topicTextScrollPane.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
@@ -526,9 +619,9 @@ public class LTWAssessmentToolView extends FrameView {
 
         jSplitPane1.setLeftComponent(topicTextScrollPane);
 
-        linkTextScrollPane.setMinimumSize(new java.awt.Dimension(0, 0));
+        linkTextScrollPane.setMinimumSize(new java.awt.Dimension(20, 20));
         linkTextScrollPane.setName("linkTextScrollPane"); // NOI18N
-        linkTextScrollPane.setPreferredSize(new java.awt.Dimension(126, 445));
+        linkTextScrollPane.setPreferredSize(new java.awt.Dimension(226, 445));
         linkTextScrollPane.setRequestFocusEnabled(false);
 
         thisLinkTextPane.setEditable(false);
@@ -543,18 +636,15 @@ public class LTWAssessmentToolView extends FrameView {
         mainPanel.setLayout(mainPanelLayout);
         mainPanelLayout.setHorizontalGroup(
             mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(mainPanelLayout.createSequentialGroup()
-                .addGroup(mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jSplitPane1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jInfoPanel, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jInfoPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jSplitPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1585, Short.MAX_VALUE)
         );
         mainPanelLayout.setVerticalGroup(
             mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(mainPanelLayout.createSequentialGroup()
-                .addComponent(jInfoPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jInfoPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jSplitPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 736, Short.MAX_VALUE))
+                .addComponent(jSplitPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 739, Short.MAX_VALUE))
         );
 
         menuBar.setBackground(resourceMap.getColor("menuBar.background")); // NOI18N
@@ -708,9 +798,9 @@ public class LTWAssessmentToolView extends FrameView {
         statusPanel.setLayout(statusPanelLayout);
         statusPanelLayout.setHorizontalGroup(
             statusPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(statusPanelSeparator, javax.swing.GroupLayout.DEFAULT_SIZE, 1691, Short.MAX_VALUE)
+            .addComponent(statusPanelSeparator, javax.swing.GroupLayout.DEFAULT_SIZE, 1585, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, statusPanelLayout.createSequentialGroup()
-                .addContainerGap(260, Short.MAX_VALUE)
+                .addContainerGap(154, Short.MAX_VALUE)
                 .addComponent(jLabel8)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jlblColorCurrentAnchor, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -864,8 +954,11 @@ public class LTWAssessmentToolView extends FrameView {
 
     // <editor-fold defaultstate="collapsed" desc="Pre-Variables-Declaration">
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel anchorInfoPane;
     private javax.swing.JButton btnGoBack;
     private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.JPanel completionInfoPane;
+    private javax.swing.JPanel docInfoPane;
     private javax.swing.JRadioButtonMenuItem inRadioBtn;
     private javax.swing.JButton jButton1;
     private javax.swing.JPanel jInfoPanel;
@@ -901,9 +994,11 @@ public class LTWAssessmentToolView extends FrameView {
     private javax.swing.JMenuBar menuBar;
     private javax.swing.JRadioButtonMenuItem outRadioBtn;
     private javax.swing.JProgressBar progressBar;
+    private javax.swing.JPanel sourceDocPanel;
     private javax.swing.JLabel statusAnimationLabel;
     private javax.swing.JLabel statusMessageLabel;
     private javax.swing.JPanel statusPanel;
+    private javax.swing.JPanel targetDocPanel;
     private javax.swing.JTextPane thisLinkTextPane;
     private javax.swing.JTextPane thisTopicTextPane;
     private javax.swing.JScrollPane topicTextScrollPane;
