@@ -6,6 +6,7 @@ public class Bep extends Observable {
 	public static final int IRRELEVANT = -1;
 	public static final int RELEVANT = 1;
 	public static final int UNASSESSED = 0;
+	private static final int UNINITIALISED = -2;
 	
 	public static final int MARK_INITIALISED = 0;
 	public static final int MARK_ASSESSED = 1;
@@ -60,7 +61,7 @@ public class Bep extends Observable {
 	private void init() {
 		Completion.getInstance().oneMoreLinkForAssessment();
 		this.addObserver(Completion.getInstance());
-		rel = UNASSESSED;
+		rel = UNINITIALISED;
 	}
 
 	public int getOffset() {
@@ -95,29 +96,38 @@ public class Bep extends Observable {
 		return rel;
 	}
 
-	public void initRel(int rel) {
-		this.rel = rel;
-	}
-	
-	public void initRel(String rel) {
-		initRel(Integer.parseInt(rel));
-	}
+//	public void initRel(int rel) {
+//		this.rel = rel;
+//	}
+//	
+//	public void initRel(String rel) {
+//		initRel(Integer.parseInt(rel));
+//	}
 	
 	public void setRel(int rel) {
 		int oldRel = this.rel;
 		
-		if (oldRel != rel) {
-			int value;
-			if (rel == Bep.IRRELEVANT) { 
+		int value = UNINITIALISED;
+		if (oldRel == Bep.UNINITIALISED) {
+			if (rel != Bep.UNASSESSED)
 				value = MARK_ASSESSED;
+		}
+		else {
+			if (rel != oldRel) {
+				if (rel == Bep.UNASSESSED) { 		
+					value = MARK_UNASSESSED;
+				}
+				else if (oldRel == Bep.UNASSESSED) {
+					value = MARK_ASSESSED;
+				}
 			}
-			else {
-				value = MARK_UNASSESSED;
-			}
+		}
+		
+		if (value != UNINITIALISED) {
 			setChanged();
 			notifyObservers(value);
-			this.rel = rel;
 		}
+		this.rel = rel;
 	}
 
 	public void setRel(String rel) {

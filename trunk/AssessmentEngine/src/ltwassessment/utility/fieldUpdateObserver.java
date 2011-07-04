@@ -22,10 +22,10 @@ public class fieldUpdateObserver implements Observer {
     private JLabel lblSubanchor;
     private JLabel lblTargetID;
     private JLabel lblTargetTitle;
-    private JLabel lblCompletion;
+//    private JLabel lblCompletion;
 
     public fieldUpdateObserver(ObservableSingleton thisOS, JLabel thisTopicTitle, JLabel thisTopicID, JLabel thisAnchor, JLabel thisSubanchor,
-            JLabel thisTargetID, JLabel thisTargetTitle, JLabel thisCompletion) {
+            JLabel thisTargetID, JLabel thisTargetTitle/*, JLabel thisCompletion*/) {
         this.myObservableSingleton = thisOS;
         this.lblTopicTitle = thisTopicTitle;
         this.lblTopicID = thisTopicID;
@@ -33,7 +33,7 @@ public class fieldUpdateObserver implements Observer {
         this.lblSubanchor = thisSubanchor; 
         this.lblTargetID = thisTargetID;
         this.lblTargetTitle = thisTargetTitle;
-        this.lblCompletion = thisCompletion;
+//        this.lblCompletion = thisCompletion;
     }
     
     public fieldUpdateObserver(ObservableSingleton thisOS, JLabel thisTopicTitle, JLabel thisTopicID, JLabel thisAnchor, JLabel thisSubanchor, JLabel thisTargetPageID) {
@@ -60,7 +60,7 @@ public class fieldUpdateObserver implements Observer {
 //            this.lblAnchor.setText(tablblFieldSet.elementAt(2).toString());
 //        }
 //        if (tablblFieldSet.size() == 6) {
-        String[] outCompletionRatio = ResourcesManager.getInstance().getOutgoingCompletion();
+//        String[] outCompletionRatio = ResourcesManager.getInstance().getOutgoingCompletion();
         
         this.lblTopicTitle.setText(Assessment.getInstance().getCurrentTopic().getTitle());
         this.lblTopicID.setText(Assessment.getInstance().getCurrentTopic().getId());
@@ -71,7 +71,7 @@ public class fieldUpdateObserver implements Observer {
         this.lblTargetID.setText(bep.getFileId());
         this.lblTargetTitle.setText(bep.getTargetTitle());
 //            this.lblCompletion.setText(tablblFieldSet.elementAt(5).toString());
-        this.lblCompletion.setText(outCompletionRatio[0] + " / " + outCompletionRatio[1]);
+//        this.lblCompletion.setText(outCompletionRatio[0] + " / " + outCompletionRatio[1]);
 //        }
     }
 }

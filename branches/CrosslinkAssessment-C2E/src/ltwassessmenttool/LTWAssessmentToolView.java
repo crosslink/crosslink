@@ -146,8 +146,7 @@ public class LTWAssessmentToolView extends FrameView {
         group.add(inRadioBtn);
 
         os = ObservableSingleton.getInstance();
-        fuObserver = new fieldUpdateObserver(os, this.lblTopicTitle, this.lblTopicID, this.lblAnchor, this.lblPoolAnchor, this.lblTargetID, this.lblTargetTitle,
-                this.lblCompletion);
+        fuObserver = new fieldUpdateObserver(os, this.lblTopicTitle, this.lblTopicID, this.lblAnchor, this.lblPoolAnchor, this.lblTargetID, this.lblTargetTitle);
         os.addObserver(fuObserver);
         
         // tool resource constant variables
