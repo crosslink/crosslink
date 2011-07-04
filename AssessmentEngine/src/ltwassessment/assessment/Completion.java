@@ -38,9 +38,7 @@ public class Completion implements Observer {
 		else if (value == Bep.MARK_UNASSESSED) {
 			--finishedLinks;
 		}
-		
-		if (lblCompletion != null)
-			lblCompletion.setText(finishedLinks + " / " + totalLinks);
+		displayCompletion();
 	}
 
 	public int getTotalLinks() {
@@ -61,5 +59,10 @@ public class Completion implements Observer {
    
 	public void oneMoreLinkForAssessment() {
 		++totalLinks;
+	}
+	
+	public void displayCompletion() {
+		if (lblCompletion != null)
+			lblCompletion.setText(finishedLinks + " / " + totalLinks);		
 	}
 }

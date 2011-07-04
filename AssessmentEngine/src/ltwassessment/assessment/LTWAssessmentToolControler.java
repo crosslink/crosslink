@@ -525,6 +525,12 @@ public class LTWAssessmentToolControler {
          ************************************************************************/
         TopicHighlightManager.getInstance().initializeHighlighter(topicAnchorOLSEStatus);
         
+        
+        /***********************8
+         * 
+         ***********************/
+        Completion.getInstance().displayCompletion();
+        
 //        String[] tabCompletedRatio = this.rscManager.getTABCompletedRatio();
 //        this.rscManager.updateOutgoingCompletion(tabCompletedRatio[0] + " : " + tabCompletedRatio[1]);
 //        System.setProperty(LTWAssessmentToolControler.sysPropertyTABCompletedRatioKey, String.valueOf(tabCompletedRatio[0]) + "_" + String.valueOf(tabCompletedRatio[1]));
