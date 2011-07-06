@@ -192,8 +192,8 @@ public class LTWAssessmentToolControler {
     
     public void assessNextTopic() {
 //    	currTopicID = rscManager.getTopicID();
-    	if (currTopicID != null && currTopicID.length() > 0)
-    		Assessment.getInstance().finishTopic(currTopicID);
+//    	if (currTopicID != null && currTopicID.length() > 0)
+//    		Assessment.getInstance().finishTopic(currTopicID);
     	currTopicID = Assessment.getInstance().getNextTopic();
     	if (currTopicID == null)
     		finishAssessment();
