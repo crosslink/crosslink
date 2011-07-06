@@ -148,8 +148,8 @@ public class AssessmentThread extends Thread {
 		return processingAnchor;
 	}
 
-	public static void setProcessingAnchor(AssessedAnchor processingAnchor) {
-		AssessmentThread.processingAnchor = processingAnchor;
+	public static void setProcessingAnchor(AssessedAnchor anchor) {
+		processingAnchor = anchor;
 	}
 
 	public static boolean isReadyForNextLink() {
@@ -171,35 +171,44 @@ public class AssessmentThread extends Thread {
 	public void run() {
 		while (true) {
 			if (getTask() != EVENT_SET_NOTHING) {
-				setReadyForNextLink(false);
-				switch (task) {
-				case EVENT_SET_BEP:
-					this.doubleLeftClickEventAction();
-					break;
-				case EVENT_SET_RELEVANT:
-					this.singleLeftClickEventAction();
-					break;
-				case EVENT_SET_IRRELEVANT:
-					this.singleRightClickEventAction();
-					break;
-				case EVENT_SET_SUBANCHOR_IRRELEVANT:
-					this.markCurrentSubanchorIrrelevant(true);
-					break;
-				case EVENT_SET_SUBANCHORS_IRRELEVANT:
-					this.markCurrentSubanchorIrrelevant(false);
-					break;
-				default:
-					break;
-				}
 				try {
+					setReadyForNextLink(false);
+					switch (task) {
+					case EVENT_SET_BEP:
+						this.doubleLeftClickEventAction();
+						break;
+					case EVENT_SET_RELEVANT:
+						this.singleLeftClickEventAction();
+						break;
+					case EVENT_SET_IRRELEVANT:
+						this.singleRightClickEventAction();
+						break;
+					case EVENT_SET_SUBANCHOR_IRRELEVANT:
+						this.markCurrentSubanchorIrrelevant(true);
+						break;
+					case EVENT_SET_SUBANCHORS_IRRELEVANT:
+						this.markCurrentSubanchorIrrelevant(false);
+						break;
+					default:
+						break;
+					}
+					
 					Thread.sleep(100);
-//					Thread.sleep(1000);
-				} catch (InterruptedException e) {
-					e.printStackTrace();
+					Thread.sleep(1000);
 				}
-				setTask(EVENT_SET_NOTHING);
-				setReadyForNextLink(true);
+				catch (InterruptedException e) {
+						e.printStackTrace();
+				}
+				catch (Exception ex) {
+					ex.printStackTrace();
+				}
+				finally {
+					setTask(EVENT_SET_NOTHING);
+					setReadyForNextLink(true);
+				}
+
 			}
+
 		}
     }
 	
@@ -404,5 +413,6 @@ public class AssessmentThread extends Thread {
             parent.statusCheck();
     		TopicHighlightManager.getInstance().update(parent);
         }
+        setProcessingAnchor(null);
     }
 }

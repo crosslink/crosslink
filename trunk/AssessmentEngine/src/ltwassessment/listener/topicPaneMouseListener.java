@@ -412,7 +412,7 @@ public class topicPaneMouseListener implements MouseInputListener {
 //            currSCRSEName.statusCheck();
 //    		TopicHighlightManager.getInstance().update(currSCRSEName);
         }
-        AssessmentThread.setProcessingAnchor(null);
+        
         // </editor-fold>
     }
 
