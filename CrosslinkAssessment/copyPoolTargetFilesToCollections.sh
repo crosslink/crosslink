@@ -21,7 +21,7 @@ COLLECTION_PATH=resources/Collections/$lang
 if [ -e "$POOL_PATH/$lang" ]; then
 	echo "copy target files from corpus to collections..."
 	
-	#mkdir -v -p $COLLECTION_PATH
+	mkdir -v -p $COLLECTION_PATH
 
 	cat $POOL_PATH/$lang/*.xml | grep "<tobep" | cut -f 2 -d ">" | cut -f 1 -d "<" | while read line
 		#for topic in `cat $TOPICS`
