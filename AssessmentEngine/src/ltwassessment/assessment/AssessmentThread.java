@@ -28,6 +28,7 @@ import ltwassessment.utility.PoolUpdater;
 import ltwassessment.utility.highlightPainters;
 import ltwassessment.utility.tabTxtPaneManager;
 import ltwassessment.utility.tbaTxtPaneManager;
+import ltwassessment.view.TopicHighlightManager;
 
 
 
@@ -38,6 +39,8 @@ public class AssessmentThread extends Thread {
 	private static ResourcesManager myRSCManager;
     private static PoolUpdater myPoolUpdater;
     private static PoolerManager myPoolManager;
+    
+    private static AssessedAnchor processingAnchor = null;
     
     private FOLTXTMatcher myFolMatcher;
     
@@ -56,6 +59,9 @@ public class AssessmentThread extends Thread {
     public static final int EVENT_SET_BEP = 0;
     public static final int EVENT_SET_RELEVANT = 1;
     public static final int EVENT_SET_IRRELEVANT = 2;
+    public static final int EVENT_SET_SUBANCHOR_IRRELEVANT = 3;
+    public static final int EVENT_SET_SUBANCHORS_IRRELEVANT = 4;
+    public static final int EVENT_NEW_ASSESSMENT = 5;
     
     private static boolean readyForNextLink = true;
     private static int task = EVENT_SET_NOTHING;
@@ -106,8 +112,6 @@ public class AssessmentThread extends Thread {
 
         myRSCManager = ResourcesManager.getInstance();
         myFolMatcher = FOLTXTMatcher.getInstance();
-        myPoolManager = PoolerManager.getInstance();
-        myPoolUpdater = PoolerManager.getPoolUpdater();
         myTABTxtPaneManager = new tabTxtPaneManager();
         myTBATxtPaneManager = new tbaTxtPaneManager();
 
@@ -118,11 +122,16 @@ public class AssessmentThread extends Thread {
 //        this.topicAnchorOLTSENHT = topicOLTSEIndex;
         // ---------------------------------------------------------------------
 
-        this.topicID = myRSCManager.getTopicID();
-        Vector<String[]> topicIDNameVSA = AssessmentThread.myPoolManager.getAllTopicsInPool();
-        this.currTopicName = topicIDNameVSA.elementAt(0)[1].trim();
+//        Vector<String[]> topicIDNameVSA = AssessmentThread.myPoolManager.getAllTopicsInPool();
+//        this.currTopicName = topicIDNameVSA.elementAt(0)[1].trim();
 	}
 
+    private void newAssessment() {
+        this.topicID = myRSCManager.getTopicID();
+        myPoolManager = PoolerManager.getInstance();
+        myPoolUpdater = PoolerManager.getPoolUpdater();
+    }
+    
     public static void setMyRSCManager(ResourcesManager myRSCManager) {
 		AssessmentThread.myRSCManager = myRSCManager;
 	}
@@ -135,7 +144,15 @@ public class AssessmentThread extends Thread {
 		AssessmentThread.myPoolManager = myPoolManager;
 	}
 	
-    public static boolean isReadyForNextLink() {
+    public static AssessedAnchor getProcessingAnchor() {
+		return processingAnchor;
+	}
+
+	public static void setProcessingAnchor(AssessedAnchor processingAnchor) {
+		AssessmentThread.processingAnchor = processingAnchor;
+	}
+
+	public static boolean isReadyForNextLink() {
 		return readyForNextLink;
 	}
 
@@ -164,6 +181,12 @@ public class AssessmentThread extends Thread {
 					break;
 				case EVENT_SET_IRRELEVANT:
 					this.singleRightClickEventAction();
+					break;
+				case EVENT_SET_SUBANCHOR_IRRELEVANT:
+					this.markCurrentSubanchorIrrelevant(true);
+					break;
+				case EVENT_SET_SUBANCHORS_IRRELEVANT:
+					this.markCurrentSubanchorIrrelevant(false);
 					break;
 				default:
 					break;
@@ -367,4 +390,19 @@ public class AssessmentThread extends Thread {
 //            Logger.getLogger(topicPaneMouseListener.class.getName()).log(Level.SEVERE, null, ex);
 //        }
 //    }
+    
+    public void markCurrentSubanchorIrrelevant(boolean onlyCurrentAnchor) {
+        if (onlyCurrentAnchor) {
+        	LTWAssessmentToolControler.getInstance().setSubanchorIrrelevant(processingAnchor);
+            LTWAssessmentToolControler.getInstance().goNextLink(true, true);
+        }
+        else {
+        	IndexedAnchor parent = processingAnchor.getParent();
+            for (AssessedAnchor subanchor : parent.getChildrenAnchors())
+            	LTWAssessmentToolControler.getInstance().setSubanchorIrrelevant(subanchor);
+            
+            parent.statusCheck();
+    		TopicHighlightManager.getInstance().update(parent);
+        }
+    }
 }

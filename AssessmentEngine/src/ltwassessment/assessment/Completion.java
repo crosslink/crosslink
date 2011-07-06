@@ -65,4 +65,8 @@ public class Completion implements Observer {
 		if (lblCompletion != null)
 			lblCompletion.setText(finishedLinks + " / " + totalLinks);		
 	}
+	
+	public boolean isFinished() {
+		return finishedLinks == totalLinks;
+	}
 }

@@ -6,7 +6,7 @@ public class Bep extends Observable {
 	public static final int IRRELEVANT = -1;
 	public static final int RELEVANT = 1;
 	public static final int UNASSESSED = 0;
-	private static final int UNINITIALISED = -2;
+//	private static final int UNINITIALISED = -2;
 	
 	public static final int MARK_INITIALISED = 0;
 	public static final int MARK_ASSESSED = 1;
@@ -61,7 +61,7 @@ public class Bep extends Observable {
 	private void init() {
 		Completion.getInstance().oneMoreLinkForAssessment();
 		this.addObserver(Completion.getInstance());
-		rel = UNINITIALISED;
+		rel = UNASSESSED;
 	}
 
 	public int getOffset() {
@@ -104,34 +104,38 @@ public class Bep extends Observable {
 //		initRel(Integer.parseInt(rel));
 //	}
 	
-	public void setRel(int rel) {
+	public void setRel(int status) {
 		int oldRel = this.rel;
 		
-		int value = UNINITIALISED;
-		if (oldRel == Bep.UNINITIALISED) {
-			if (rel != Bep.UNASSESSED)
-				value = MARK_ASSESSED;
+		int value = MARK_ASSESSED;
+		if (this.rel != status && (status == Bep.UNASSESSED || rel == Bep.UNASSESSED)) {
+//			if (oldRel == Bep.UNASSESSED) {
+//				if (status != Bep.UNASSESSED)
+//					value = MARK_ASSESSED;
+//			}
+//			else {
+//				if (status != oldRel) {
+//					if (status == Bep.UNASSESSED) { 		
+//						value = MARK_UNASSESSED;
+//					}
+//					else if (oldRel == Bep.UNASSESSED) {
+//						value = MARK_ASSESSED;
+//					}
+//				}
+//			}
+			if (status == Bep.UNASSESSED)
+				value = MARK_UNASSESSED;
+			
+//			if (value != UNASSESSED) {
+				setChanged();
+				notifyObservers(value);
+//			}
 		}
-		else {
-			if (rel != oldRel) {
-				if (rel == Bep.UNASSESSED) { 		
-					value = MARK_UNASSESSED;
-				}
-				else if (oldRel == Bep.UNASSESSED) {
-					value = MARK_ASSESSED;
-				}
-			}
-		}
-		
-		if (value != UNINITIALISED) {
-			setChanged();
-			notifyObservers(value);
-		}
-		this.rel = rel;
+		this.rel = status;
 	}
 
-	public void setRel(String rel) {
-		setRel(Integer.parseInt(rel));
+	public void setRel(String status) {
+		setRel(Integer.parseInt(status));
 	}
 	
 	public String relString() {
