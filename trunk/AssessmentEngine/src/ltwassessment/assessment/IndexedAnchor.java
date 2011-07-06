@@ -330,26 +330,32 @@ public class IndexedAnchor extends Anchor {
 	}
 	
 	public void statusCheck() {
-		if (status == Bep.UNASSESSED) {
-			int rel = Bep.IRRELEVANT;
+//		if (status == Bep.UNASSESSED) {
+			int rel = status; //Bep.IRRELEVANT;
+			
+			if (offset == 595)
+				System.out.println("Stop here");
 			
 			for (AssessedAnchor subanchor : getChildrenAnchors()) {
 				if (subanchor.checkStatus() == ASSESSMENT_FINISHED_NO) {
 	//				finished = ASSESSMENT_FINISHED_NO;
-					rel = 0;
+					rel = Bep.UNASSESSED;
 					break;
 				}
-				
-				if (subanchor.getStatus() == Bep.RELEVANT)
-					rel = Bep.RELEVANT;
+				else {
+					if (rel == Bep.UNASSESSED)
+						rel = subanchor.getStatus();
+					
+					if (subanchor.getStatus() == Bep.RELEVANT)
+						rel = Bep.RELEVANT;
+				}
 			}
-
 		
 			if (rel != status) {
 				status = rel;
 				PoolerManager.getPoolUpdater().updatePoolAnchorStatus(ResourcesManager.getInstance().getTopicID(), this);
 			}
-		}
+//		}
 //		return finished;
 	}
 }

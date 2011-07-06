@@ -2225,20 +2225,6 @@ public class ResourcesManager {
         Hashtable<String, Vector<Bep>> poolAnchorBepLinksHT = getPoolAnchorBepLinksHashtable();
         Vector<Bep> currBepVSA = poolAnchorBepLinksHT.get(currAnchorOL);
         Bep currBepSA = currBepVSA.elementAt(Integer.valueOf(bepLinkIndex));
-//        String bepOffset = currBepSA.offsetToString().trim();
-//        String bepFileID = currBepSA.getFileId().trim();
-//        String bepLang = currBepSA.getTargetLang().trim();
-//        String bepTitle = currBepSA.getTargetTitle().trim();
-//
-//        String subAnchorName = null;
-//        String subAnchorOffset = null;
-//        String subAnchorLength = null;
-//        String subAnchorRel = null;
-//        subAnchorName = currBepSA.getAssociatedAnchor().getName(); //[5];
-//        subAnchorOffset = currBepSA.getAssociatedAnchor().offsetToString(); //[6];
-//        subAnchorLength = currBepSA.getAssociatedAnchor().lengthToString(); //[7];
-//        subAnchorRel = currBepSA.getAssociatedAnchor().statusToString(); //[8];
-//        return /*currTopicABepIDO = */new String[]{bepOffset, bepFileID, bepLang, bepTitle, subAnchorName, subAnchorOffset, subAnchorLength, subAnchorRel};
         return currBepSA;
     }
 

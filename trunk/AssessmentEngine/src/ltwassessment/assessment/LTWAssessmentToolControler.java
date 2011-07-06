@@ -161,7 +161,7 @@ public class LTWAssessmentToolControler {
     private int showAssessNextTopicDialog(String topicID) {
 		String msg = "<html><body>The assessment for topic " + currTopicName + "(" + topicID + ") is completed.<br>" +
 	            
-	            "Press OK to continue to assess next topic, otherwise this program will be closed.</body></html>";
+	            "Press YES to continue to assess next topic, otherwise this program will be closed.</body></html>";
 				JLabel msgLabel = new JLabel(msg);
 				AdjustFont.getInstance().setComponentFont(msgLabel, AppResource.sourceLang);
 			    int option = JOptionPane.showConfirmDialog(this.myTopicPane, msgLabel, "Information",
@@ -234,11 +234,11 @@ public class LTWAssessmentToolControler {
         String currTopicID = rscManager.getTopicID();
         
         for (Bep aBep : anchor.getBeps())
-        	if (aBep.getRel() != -1) {
-        		if (aBep.getRel() == 0)
+        	if (aBep.getRel() != Bep.IRRELEVANT) {
+        		if (aBep.getRel() == Bep.UNASSESSED)
         			newCompletedCounter++;
         		
-        		aBep.setRel(-1);
+        		aBep.setRel(Bep.IRRELEVANT);
         	}
         if (prePAnchorStatus == 1 || prePAnchorStatus == 0) {
             // <editor-fold defaultstate="collapsed" desc="Toggle to NONRelevant -1">
@@ -363,10 +363,10 @@ public class LTWAssessmentToolControler {
             //           --> Then Link for Upload Result XML, Logger & Questionaires
             // 2) If Not, Go Next
 //          log("COMPLETION ... ");
-            String[] tabCompletedRatio = this.rscManager.getOutgoingCompletion();
+//            String[] tabCompletedRatio = this.rscManager.getOutgoingCompletion();
 //            String topicID = rscManager.getTopicID();
 //                  String[] tbaCompletedRatio = this.myRSCManager.getIncomingCompletion();
-			if (nextUnassessed && (nextAnchorBepLinkVSA == currentBep || (Integer.parseInt(tabCompletedRatio[0]) > 0 && tabCompletedRatio[0].equals(tabCompletedRatio[1])  && !showOnce ))) {
+			if (nextUnassessed && (nextAnchorBepLinkVSA == currentBep || (Completion.getInstance().isFinished() && !showOnce ))) {
 				int option  = this.showAssessNextTopicDialog(this.currTopicID);
 			    if (option == JOptionPane.OK_OPTION) {
 			//      BrowserControl openBrowser = new BrowserControl();
@@ -539,8 +539,8 @@ public class LTWAssessmentToolControler {
         // String[]{Anchor_O, L, SP, EP, Status}
 //        topicAnchorOLSEStatus = rscManager.getTopicAnchorOLSEStatusVSA();
         // String[]{Anchor_O, L, Name, SP, EP, Status}
-        String[] currTopicOLNameSEStatus = rscManager.getCurrTopicAnchorOLNameSEStatusSA(myTopicPane, currTopicID, topicAnchorsOLNameSEVS);
-        String currTopicPAnchorStatus = currTopicOLNameSEStatus[5];
+//        String[] currTopicOLNameSEStatus = rscManager.getCurrTopicAnchorOLNameSEStatusSA(myTopicPane, currTopicID, topicAnchorsOLNameSEVS);
+//        String currTopicPAnchorStatus = currTopicOLNameSEStatus[5];
         // ---------------------------------------------------------------------
         // Get current Link file ID & SCR BEP S, lang, title
         Bep CurrTopicATargetOID = rscManager.getCurrTopicATargetOID(myLinkPane, currTopicID);
@@ -560,7 +560,7 @@ public class LTWAssessmentToolControler {
         setTABLinkPaneContent(currTargetFilePath, currTargetLang);
         // bep_Offset, linkID, Status
         String[] CurrTopicATargetSIDStatus = rscManager.getCurrTopicABepSIDStatusSA(myLinkPane, currTopicID);
-        setLinkBEPIcon(currTopicPAnchorStatus, CurrTopicATargetSIDStatus);
+        setLinkBEPIcon(CurrTopicATargetOID.getAssociatedAnchor().statusToString(), CurrTopicATargetSIDStatus);
 
         
         /*************************************************************************
@@ -569,7 +569,8 @@ public class LTWAssessmentToolControler {
          ************************************************************************/
 //        TopicHighlightManager.getInstance().update(null, CurrTopicATargetOID.getAssociatedAnchor());
         CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(null, CurrTopicATargetOID.getAssociatedAnchor(), CurrTopicATargetOID);
-        goNextLink(false, true);
+        if (CurrTopicATargetOID.getRel() != Bep.UNASSESSED)
+        	goNextLink(false, true);
     }
     
     // Topic Pane: Anchor
