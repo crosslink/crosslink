@@ -381,10 +381,8 @@ public class LTWAssessmentToolControler {
 			    showOnce = true;
 			//  return null;
 			}
-
-//            updateAnchorChanges(nextAnchorBepLinkVSA, currentBep);
-//            return nextAnchorBepLinkVSA;
-            CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(currentBep.getAssociatedAnchor(), nextAnchorBepLinkVSA.getAssociatedAnchor(), nextAnchorBepLinkVSA);
+			else
+				CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(currentBep.getAssociatedAnchor(), nextAnchorBepLinkVSA.getAssociatedAnchor(), nextAnchorBepLinkVSA);
     }
     
 //    public void updateAnchorChanges(Bep nextAnchorBepLinkVSA, Bep currALinkOIDSA) {
