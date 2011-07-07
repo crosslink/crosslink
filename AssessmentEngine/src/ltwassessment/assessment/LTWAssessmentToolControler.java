@@ -584,8 +584,15 @@ public class LTWAssessmentToolControler {
     
     private void setupComponentFont() {
     	AdjustFont.setComponentFont(lblTopicTitle, AppResource.sourceLang);
-    	AdjustFont.setComponentFont(lblPoolAnchor, AppResource.sourceLang, 24);
-    	AdjustFont.setComponentFont(lblAnchor, AppResource.sourceLang, 40);  // subanchor
+    	if (!AppResource.sourceLang.equals("en")) {
+	    	AdjustFont.setComponentFont(lblPoolAnchor, AppResource.sourceLang, 24);
+	    	AdjustFont.setComponentFont(lblAnchor, AppResource.sourceLang, 40);  // subanchor
+    	}
+    	else {
+	    	AdjustFont.setComponentFont(lblPoolAnchor, AppResource.sourceLang, 18);
+	    	AdjustFont.setComponentFont(lblAnchor, AppResource.sourceLang, 24);  // subanchor
+    	}
+    	AdjustFont.setComponentFont(myLinkPane, AppResource.targetLang);
     }
     
     private void setupTopic() {
