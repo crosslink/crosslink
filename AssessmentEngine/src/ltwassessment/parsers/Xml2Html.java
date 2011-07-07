@@ -66,19 +66,22 @@ public class Xml2Html {
         this.htmlFileTopFolder = resourceMap.getString("temp.folder");
 
         this.xmlPath = xmlFilePath;
-        this.appDirectory = System.getProperty("user.dir");
+        this.appDirectory = new File(System.getProperty("user.dir")).getAbsolutePath();
+        
         if (xmlFilePath.lastIndexOf(File.separator) >= 0) {
             this.xmlFileID = xmlFilePath.substring(xmlFilePath.lastIndexOf(File.separator) + 1, xmlFilePath.lastIndexOf(".xml"));
         } else if (xmlFilePath.lastIndexOf("\\") >= 0) {
             this.xmlFileID = xmlFilePath.substring(xmlFilePath.lastIndexOf("\\") + 1, xmlFilePath.lastIndexOf(".xml"));
         }
         if (this.appDirectory.indexOf("/") >= 0) {
-            this.imageDirectory = "file:///" + this.appDirectory + File.separator + "images" + File.separator;
+            this.imageDirectory = "file://" + this.appDirectory + File.separator + "images" + File.separator;
         } else if (this.appDirectory.indexOf("\\") >= 0) {
             this.imageDirectory = "file:\\" + this.appDirectory + "\\images\\";
         } else {
             this.imageDirectory = "file:\\" + this.appDirectory + "\\images\\";
         }
+//        System.err.println(xmlFilePath);
+//        System.err.println(imageDirectory);
         // populate topic HTML
         this.isTopicWikipedia = isWikipedia;
         if (this.isTopicWikipedia) {
