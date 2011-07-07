@@ -26,13 +26,14 @@ if [ -e "$POOL_PATH/$lang" ]; then
 	cat $POOL_PATH/$lang/*.xml | grep "<tobep" | cut -f 2 -d ">" | cut -f 1 -d "<" | while read line
 		#for topic in `cat $TOPICS`
 	do
-		filename=/data/corpus/wikipedia/all/${lang}/`/data/corpus/wikipedia/all/id2path.sh ${line}`
+		extname=`/data/corpus/wikipedia/all/id2path.sh ${line}`
+		filename=/data/corpus/wikipedia/all/${lang}/${extname}
 		#echo $filename
-		#target_file=${COLLECTION_PATH}/
-		#target_path=`dirname $target_file`
-		#mkdir -p $target_path
+		target_file=${COLLECTION_PATH}/${extname}
+		target_path=`dirname $target_file`
+		mkdir -p $target_path
 		#mv -v $filename $target_path
-		cp -v $filename ${COLLECTION_PATH}
+		cp -v $filename ${target_path}
 	done
 fi
 

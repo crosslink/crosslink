@@ -29,6 +29,8 @@ public class Assessment {
 	private static final String ASSESSMENT_POOL_PREFIX = "wikipedia_pool";
 	private static final String ASSESSMENT_POOL_PATH = "resources" + File.separator + "Pool" + File.separator;
 	
+	private static final String ASSESSMENT_LANG_ADDRESS = "http://131.181.88.158/lang.txt";
+	
 	private Hashtable<String, File> topics = new Hashtable<String, File>();
 	private Iterator it  = null;
 	
@@ -59,7 +61,7 @@ public class Assessment {
 	
 	private static void getAssessmentLang() {
 	    try { 
-	        URL url = new URL("http://131.181.88.158/lang.txt"); 
+	        URL url = new URL(ASSESSMENT_LANG_ADDRESS); 
 
 	        HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 	        conn.connect();
@@ -69,9 +71,10 @@ public class Assessment {
 	        line = buff.readLine();
 	        assessmentLang = line.trim();
 	    } catch(Exception e) { 
-	        throw new RuntimeException(e); 
+	        e.printStackTrace();
+	        System.err.println("Can't get the lanuage of the assessment pool from " + ASSESSMENT_LANG_ADDRESS);
+	        assessmentLang = "ja";
 	    } 
-		
 	}
 
 

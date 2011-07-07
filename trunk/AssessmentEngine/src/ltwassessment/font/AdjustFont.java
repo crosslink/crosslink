@@ -50,7 +50,7 @@ public class AdjustFont {
 	}
 	
 	public static void setComponentFont(JComponent jCom, String lang, int size) {
-		if (lang.equals("zh") || lang.equals("jp") || lang.equals("ko")) {
+		if (lang.equals("zh") || lang.equals("ja") || lang.equals("ko")) {
 			enFontOrigin = jCom.getFont();
 			jCom.setFont(zhFontOrigin.deriveFont(Font.PLAIN, size));
 		}
