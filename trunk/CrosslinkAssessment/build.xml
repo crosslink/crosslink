@@ -71,4 +71,25 @@
     nbproject/build-impl.xml file. 
 
     -->
+    <target name="release" depends="CrosslinkAssessment-impl.jar">
+    	  <tstamp>
+    	    <format property="TODAY" pattern="yyyyMMdd"/>
+    	  </tstamp>
+    	  <property name="release.file" value="CrosslinkValidation-${TODAY}.zip" />
+    	  <delete file="${release.file}"/>
+    	  <zip destfile="${release.file}">
+    	  	<zipfileset dir="resources" prefix="resources" excludes="toolResources.xml **/SAMPLE_A2F_RUN_01/ Topics/**/zh/"/>
+    	  	<zipfileset dir="lib" prefix="lib" />
+    	  	<zipfileset dir="." includes="Instruction.pdf"/>
+    	  	<zipfileset dir="." includes="run.sh"/>
+    	  	<zipfileset dir="." includes="run.bat"/>
+    	  	<zipfileset dir="." includes="checkrun.sh"/>
+    	  	<zipfileset dir="." includes="checkrun.bat"/>
+	  		<zipfileset dir="." includes="xml2txt.sh"/>
+    	  	<zipfileset dir="." includes="xml2txt.bat"/>
+    	  	<zipfileset dir="." includes="article.dtd"/>
+    	  	<zipfileset dir="." includes="toolResources.xml" prefix="resources" />
+    	  	<zipfileset dir="${dist.dir}" includes="*.jar"/>
+    	  </zip>
+    </target>
 </project>
