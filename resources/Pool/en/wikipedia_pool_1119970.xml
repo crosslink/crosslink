@@ -4,8 +4,8 @@
 	<collection>Korean Wikipedia 2010 Collection</collection>
 	<topic file="1119970" name="储君">
 		<outgoinglinks>
-			<anchor arel="0" aname="君" aoffset="266" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="君" saoffset="266" salength="1" rank="220">
+			<anchor arel="-1" aname="君" aoffset="266" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="君" saoffset="266" salength="1" rank="220">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Monarch (comics)">5342529</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Monarch">19012</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Monarchy of Canada">56504</tobep>
@@ -13,8 +13,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Monarchy of the United Kingdom">47063</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Miffy" aoffset="390" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="Miffy" saoffset="390" salength="5" rank="138">
+			<anchor arel="-1" aname="Miffy" aoffset="390" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="Miffy" saoffset="390" salength="5" rank="138">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Miffy">48109</tobep>
 				</subanchor>
 			</anchor>
@@ -5288,8 +5288,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Thailand Open (badminton)">12207976</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="考" aoffset="4576" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="考" saoffset="4576" salength="1" rank="183">
+			<anchor arel="-1" aname="考" aoffset="4576" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="考" saoffset="4576" salength="1" rank="183">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Test match (rugby union)">15427586</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Women&apos;s Test cricket">1330193</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Test cricket">30863</tobep>
@@ -5297,8 +5297,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Test match (rugby league)">16926380</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="文" aoffset="4577" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="文" saoffset="4577" salength="1" rank="179">
+			<anchor arel="-1" aname="文" aoffset="4577" alength="1" ext_length="1">
+				<subanchor sarel="-1" saname="文" saoffset="4577" salength="1" rank="179">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="文">13156150</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Chinese cash (currency unit)">3996176</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mill (currency)">328860</tobep>
@@ -5308,7 +5308,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="汉高" aoffset="4616" alength="2" ext_length="3">
-				<subanchor sarel="0" saname="汉高" saoffset="4616" salength="2" rank="132">
+				<subanchor sarel="-1" saname="汉高" saoffset="4616" salength="2" rank="132">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Henkel (disambiguation)">4512182</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Henkel">2092114</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Henner Henkel">5831027</tobep>
