@@ -19,9 +19,9 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="稱謂" aoffset="480" alength="2" ext_length="0">
-				<subanchor sarel="1" saname="稱謂" saoffset="480" salength="2" rank="208">
-					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Title">226160</tobep>
-					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of All That episodes">2655016</tobep>
+				<subanchor sarel="0" saname="稱謂" saoffset="480" salength="2" rank="208">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Title">226160</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of All That episodes">2655016</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Chinese nobility">309437</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Endurance episodes">9840071</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Godzilla Island episodes">9614513</tobep>
@@ -5297,7 +5297,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Test match (rugby league)">16926380</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="文" aoffset="4577" alength="1" ext_length="1">
+			<anchor arel="-1" aname="文" aoffset="4577" alength="1" ext_length="1">
 				<subanchor sarel="-1" saname="文" saoffset="4577" salength="1" rank="179">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="文">13156150</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Chinese cash (currency unit)">3996176</tobep>
