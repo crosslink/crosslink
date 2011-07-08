@@ -15,6 +15,7 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
 import ltwassessment.AppResource;
+import ltwassessment.parsers.ResourcesManager;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -88,7 +89,7 @@ public class Run {
         String lengthAttributeName = forValidationOrAssessment ? "alength" : "length";
         String tboffsetAttributeName = forValidationOrAssessment ? "tboffset" : "bep_offset";
 
-        Document xmlDoc = readingXMLFromFile(runFile);
+        Document xmlDoc = ResourcesManager.readingXMLFromFile(runFile.getAbsolutePath());
 
         NodeList titleNodeList = xmlDoc.getElementsByTagName(afTitleTag);
         byte[] bytes = null;
@@ -197,24 +198,24 @@ public class Run {
 
 	}
 
-	public static Document readingXMLFromFile(File xmlFile) {
-        DocumentBuilderFactory dBF = DocumentBuilderFactory.newInstance();
-        dBF.setIgnoringComments(true);
-        // Ignore the comments present in the XML File when reading the xml
-        DocumentBuilder builder = null;
-        Document doc = null;
-        try {
-            builder = dBF.newDocumentBuilder();
-            doc = builder.parse(xmlFile);
-        } catch (ParserConfigurationException e) {
-            e.printStackTrace();
-        } catch (SAXException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return doc;
-    }
+//	public static Document readingXMLFromFile(File xmlFile) {
+//        DocumentBuilderFactory dBF = DocumentBuilderFactory.newInstance();
+//        dBF.setIgnoringComments(true);
+//        // Ignore the comments present in the XML File when reading the xml
+//        DocumentBuilder builder = null;
+//        Document doc = null;
+//        try {
+//            builder = dBF.newDocumentBuilder();
+//            doc = builder.parse(xmlFile);
+//        } catch (ParserConfigurationException e) {
+//            e.printStackTrace();
+//        } catch (SAXException e) {
+//            e.printStackTrace();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//        return doc;
+//    }
 	
 	public void validate(int showMessage) {
 		Set set = getTopics().entrySet();

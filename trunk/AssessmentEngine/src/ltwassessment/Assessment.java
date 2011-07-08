@@ -1,7 +1,10 @@
 package ltwassessment;
 
+import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 
@@ -43,15 +46,18 @@ public class Assessment {
 	private static String assessmentLang = "";
 	
 	static {
-		poolDirHandler = new File(ASSESSMENT_POOL_PATH);
-		if (!poolDirHandler.exists())
-			poolDirHandler.mkdir();
+		getAssessmentLang();
+		
+		poolDirHandler = new File(ASSESSMENT_POOL_PATH + assessmentLang);
+		if (assessmentLang.length() > 0 && !poolDirHandler.exists()) {
+			assessmentLang = "";
+			poolDirHandler = new File(ASSESSMENT_POOL_PATH);
+		}
+//			poolDirHandler.mkdir();
 			
 		poolBackupDirHandler = new File(ASSESSMENT_POOL_BACKUP_DIR);
 		if (!poolBackupDirHandler.exists())
-			poolBackupDirHandler.mkdir();
-		
-		getAssessmentLang();
+			poolBackupDirHandler.mkdirs();
 	}
 
 	public Assessment() {
@@ -61,11 +67,19 @@ public class Assessment {
 	
 	private static void getAssessmentLang() {
 	    try { 
-	        URL url = new URL(ASSESSMENT_LANG_ADDRESS); 
-
-	        HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-	        conn.connect();
-	        InputStreamReader in = new InputStreamReader(conn.getInputStream());
+	    	File langFile = new File("lang.txt");
+	    	InputStream is = null;
+	    	if (langFile.exists()) {
+	    		is = new BufferedInputStream(new FileInputStream(langFile));
+	    	}
+	    	else {
+		        URL url = new URL(ASSESSMENT_LANG_ADDRESS); 
+	
+		        HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+		        conn.connect();
+		        is = conn.getInputStream();
+	    	}
+	        InputStreamReader in = new InputStreamReader(is);
 	        BufferedReader buff = new BufferedReader(in);
 	        String line;
 	        line = buff.readLine();
@@ -132,9 +146,10 @@ public class Assessment {
 	}
 	
 	public static String getPoolFile(String id) {
-		if (assessmentLang.length() == 0)
-			return ASSESSMENT_POOL_PATH + ASSESSMENT_POOL_PREFIX + "_" + id + ".xml";
-		return ASSESSMENT_POOL_PATH + assessmentLang + File.separator + ASSESSMENT_POOL_PREFIX + "_" + id + ".xml";
+//		if (assessmentLang.length() == 0)
+//			return ASSESSMENT_POOL_PATH + ASSESSMENT_POOL_PREFIX + "_" + id + ".xml";
+//		return ASSESSMENT_POOL_PATH + assessmentLang + File.separator + ASSESSMENT_POOL_PREFIX + "_" + id + ".xml";
+		return poolDirHandler.getAbsolutePath() + File.separator + ASSESSMENT_POOL_PREFIX + "_" + id + ".xml";
 	}
 	
 	public String getNextTopic() {
