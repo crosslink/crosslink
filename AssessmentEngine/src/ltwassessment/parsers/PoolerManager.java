@@ -710,7 +710,7 @@ public class PoolerManager {
         String afFromAnchorTag = "fromanchor";
 
         HashMap<String, Vector<String[]>> bepAnchorsHT = new HashMap<String, Vector<String[]>>();
-        Document xmlDoc = readingXMLFromFile(afXmlPath);
+        Document xmlDoc = ResourcesManager.readingXMLFromFile(afXmlPath);
 
         NodeList titleNodeList = xmlDoc.getElementsByTagName(afTitleTag);
         for (int i = 0; i < titleNodeList.getLength(); i++) {
@@ -785,7 +785,7 @@ public class PoolerManager {
 		int aLength;
         
         HashMap<String, Vector<IndexedAnchor>> anchorBepsHT = new HashMap<String, Vector<IndexedAnchor>>();
-        Document xmlDoc = readingXMLFromFile(afXmlPath);
+        Document xmlDoc = ResourcesManager.readingXMLFromFile(afXmlPath);
 
         NodeList titleNodeList = xmlDoc.getElementsByTagName(afTitleTag);
         for (int i = 0; i < titleNodeList.getLength(); i++) {
@@ -880,26 +880,26 @@ public class PoolerManager {
     // </editor-fold>
 
     // <editor-fold defaultstate="collapsed" desc="Pooling: poolSubmissionRuns()">
-    public Document readingXMLFromFile(String sourceXml) {
-        DocumentBuilderFactory dBF = DocumentBuilderFactory.newInstance();
-        dBF.setIgnoringComments(true);
-        // Ignore the comments present in the XML File when reading the xml
-        DocumentBuilder builder = null;
-        InputSource input = new InputSource(sourceXml);
-        Document doc = null;
-        try {
-            builder = dBF.newDocumentBuilder();
-            doc = builder.parse(input);
-        } catch (ParserConfigurationException e) {
-            e.printStackTrace();
-        } catch (SAXException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return doc;
-
-    }
+//    public Document readingXMLFromFile(String sourceXml) {
+//        DocumentBuilderFactory dBF = DocumentBuilderFactory.newInstance();
+//        dBF.setIgnoringComments(true);
+//        // Ignore the comments present in the XML File when reading the xml
+//        DocumentBuilder builder = null;
+//        InputSource input = new InputSource(sourceXml);
+//        Document doc = null;
+//        try {
+//            builder = dBF.newDocumentBuilder();
+//            doc = builder.parse(input);
+//        } catch (ParserConfigurationException e) {
+//            e.printStackTrace();
+//        } catch (SAXException e) {
+//            e.printStackTrace();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//        return doc;
+//
+//    }
 
     private void getPoolData() {
         try {

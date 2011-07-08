@@ -1,5 +1,6 @@
 package ltwassessment.parsers;
 
+import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileOutputStream;
@@ -174,7 +175,7 @@ public class ResourcesManager {
     {
         Source source = new DOMSource(doc);
         try {
-        	Result result = new StreamResult(new FileWriter(resourceXMLFile));
+        	Result result = new StreamResult(new OutputStreamWriter(new FileOutputStream(resourceXMLFile), "UTF-8"));
             TransformerFactory tFactory = TransformerFactory.newInstance();
             Transformer tformer = tFactory.newTransformer();
         	tformer.transform(source, result);
@@ -705,14 +706,14 @@ public class ResourcesManager {
         return "";
     }
 
-    public synchronized Document readingXMLFromFile(String sourceXml) {
+    public synchronized static Document readingXMLFromFile(String sourceXml) {
         DocumentBuilderFactory dBF = DocumentBuilderFactory.newInstance();
         dBF.setIgnoringComments(true);
         // Ignore the comments present in the XML File when reading the xml
         DocumentBuilder builder = null;
-        InputSource input = new InputSource(sourceXml);
         Document doc = null;
         try {
+            InputSource input = new InputSource(new InputStreamReader(new FileInputStream(sourceXml), "UTF-8"));
             builder = dBF.newDocumentBuilder();
             doc = builder.parse(input);
         } catch (ParserConfigurationException e) {
