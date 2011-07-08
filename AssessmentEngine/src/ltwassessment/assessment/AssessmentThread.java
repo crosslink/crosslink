@@ -46,7 +46,7 @@ public class AssessmentThread extends Thread {
     
     private tabTxtPaneManager myTABTxtPaneManager;
     private tbaTxtPaneManager myTBATxtPaneManager;
-    private String topicID = "";
+    private static String topicID = "";
     private String currTopicName = "";
     private String paneContentType = "";
     private String afTasnCollectionErrors = "";
@@ -126,10 +126,11 @@ public class AssessmentThread extends Thread {
 //        this.currTopicName = topicIDNameVSA.elementAt(0)[1].trim();
 	}
 
-    private void newAssessment() {
-        this.topicID = myRSCManager.getTopicID();
+    public static void newAssessment() {
+    	 myRSCManager = ResourcesManager.getInstance();
+        topicID = myRSCManager.getTopicID();
         myPoolManager = PoolerManager.getInstance();
-        myPoolUpdater = PoolerManager.getPoolUpdater();
+        myPoolUpdater = myPoolManager.getPoolUpdater(); //PoolerManager.getPoolUpdater();
     }
     
     public static void setMyRSCManager(ResourcesManager myRSCManager) {
