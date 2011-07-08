@@ -427,9 +427,10 @@ public class LTWAssessmentToolControler {
         myPooler = PoolerManager.getInstance(poolFile);
         myPUpdater = myPooler.getPoolUpdater();
         
-        AssessmentThread.setMyPoolManager(myPooler);
-        AssessmentThread.setMyRSCManager(rscManager);
-        AssessmentThread.setMyPoolUpdater(myPUpdater);
+//        AssessmentThread.setMyPoolManager(myPooler);
+//        AssessmentThread.setMyRSCManager(rscManager);
+//        AssessmentThread.setMyPoolUpdater(myPUpdater);
+        AssessmentThread.newAssessment();
         
         topicAnchorsHT = myPooler.getTopicAllAnchors();
        
