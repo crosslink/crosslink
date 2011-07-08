@@ -119,7 +119,10 @@ public class TopicHighlightManager {
 		Xml2Html xmlParser = new Xml2Html(bepXmlFilePath, true);
 		String xmlHtmlText = xmlParser.getHtmlContent().toString();
 		
-		linkPane.setText(xmlHtmlText);
+		if (xmlHtmlText != null)
+			linkPane.setText(xmlHtmlText);
+		else
+			linkPane.setText("Can't load the target document");
 		linkPane.getCaret().setDot(Integer.valueOf(bepStartp));
 		linkPane.scrollRectToVisible(linkPane.getVisibleRect());
 		

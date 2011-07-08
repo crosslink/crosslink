@@ -352,8 +352,10 @@ public class LTWAssessmentToolControler {
             //    With TAB Nav Update --> NEXT TAB
             Bep nextAnchorBepLinkVSA = rscManager.getNextTABWithUpdateNAV(currTopicID, currentBep, nextUnassessed);
             
-            if (updateCurrAnchorStatus && (nextAnchorBepLinkVSA.getAssociatedAnchor().getParent() != currentBep.getAssociatedAnchor().getParent()))
+            if (updateCurrAnchorStatus && (nextAnchorBepLinkVSA.getAssociatedAnchor().getParent() != currentBep.getAssociatedAnchor().getParent())) {
             	currentBep.getAssociatedAnchor().getParent().statusCheck();
+            	
+            }
 
             
             // ---------------------------------------------------------------------
