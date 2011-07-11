@@ -333,7 +333,7 @@ public class IndexedAnchor extends Anchor {
 //		if (status == Bep.UNASSESSED) {
 			int rel = status; //Bep.IRRELEVANT;
 			
-			if (offset == 595)
+			if (offset == 870)
 				System.out.println("Stop here");
 			
 			for (AssessedAnchor subanchor : getChildrenAnchors()) {

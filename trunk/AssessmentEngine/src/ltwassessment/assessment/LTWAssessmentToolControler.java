@@ -296,7 +296,7 @@ public class LTWAssessmentToolControler {
 		DateFormat dateFormat = new SimpleDateFormat("yyMMddHHmmss");
 		Date date = new Date();
 		String currentDateTime = dateFormat.format(date).toString();
-		String backupPoolFPath = backupPoolDir + topicID + "_" + currentDateTime + "_Pool.xml";
+		String backupPoolFPath = backupPoolDir + AppResource.targetLang + "_" + topicID + "_" + currentDateTime + "_Pool.xml";
 		File destFile = new File(backupPoolFPath);
 		InputStream in = null;
 		OutputStream out = null;
@@ -352,10 +352,10 @@ public class LTWAssessmentToolControler {
             //    With TAB Nav Update --> NEXT TAB
             Bep nextAnchorBepLinkVSA = rscManager.getNextTABWithUpdateNAV(currTopicID, currentBep, nextUnassessed);
             
-            if (updateCurrAnchorStatus && (nextAnchorBepLinkVSA.getAssociatedAnchor().getParent() != currentBep.getAssociatedAnchor().getParent())) {
-            	currentBep.getAssociatedAnchor().getParent().statusCheck();
-            	
-            }
+//            if (updateCurrAnchorStatus && (nextAnchorBepLinkVSA.getAssociatedAnchor().getParent() != currentBep.getAssociatedAnchor().getParent())) {
+//            	currentBep.getAssociatedAnchor().getParent().statusCheck();
+//            	
+//            }
 
             
             // ---------------------------------------------------------------------
@@ -411,6 +411,7 @@ public class LTWAssessmentToolControler {
     
     
     public void assess(String poolFile) {
+    	backupPool();
     	assess(poolFile, false);
     }
     

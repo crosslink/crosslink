@@ -2,6 +2,9 @@ package ltwassessment.assessment;
 
 import java.util.Vector;
 
+import ltwassessment.parsers.PoolerManager;
+import ltwassessment.parsers.ResourcesManager;
+
 public class AssessedAnchor extends IndexedAnchor {   
 	Vector<Bep> beps = new Vector<Bep>();
 	
@@ -54,13 +57,23 @@ public class AssessedAnchor extends IndexedAnchor {
 			finished = ASSESSMENT_FINISHED_YES;
 		else {
 			finished = ASSESSMENT_FINISHED_YES;
+			int newStatus = Bep.IRRELEVANT;
 			for (Bep link : getBeps()) {
 				if (link.getRel() == Bep.UNASSESSED) {
 					finished = ASSESSMENT_FINISHED_NO;
+					newStatus = Bep.UNASSESSED;
 					break;
 				}
+				else if (link.getRel() == Bep.RELEVANT)
+					newStatus = Bep.RELEVANT;
+			}
+			
+			if (finished == ASSESSMENT_FINISHED_YES && status != newStatus) {
+				status = newStatus;
+				PoolerManager.getPoolUpdater().updatePoolSubanchorStatus(ResourcesManager.getInstance().getTopicID(), this);
 			}
 		}
+
 		return finished;
 	}
 	
