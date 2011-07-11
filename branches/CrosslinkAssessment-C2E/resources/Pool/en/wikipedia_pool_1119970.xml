@@ -877,25 +877,25 @@
 			</anchor>
 			<anchor arel="0" aname="皇儲" aoffset="1019" alength="2" ext_length="0">
 				<subanchor sarel="0" saname="皇儲" saoffset="1019" salength="2" rank="121">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Frederik, Crown Prince of Denmark">339155</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="William, German Crown Prince">594696</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sima Yu">3576881</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Haakon, Crown Prince of Norway">98258</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Frederick III, German Emperor">151116</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tuoba Huang">5148640</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Prince of Wales">46204</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Crown Prince of Thailand">26576678</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Frederik, Crown Prince of Denmark">339155</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="William, German Crown Prince">594696</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sima Yu">3576881</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Haakon, Crown Prince of Norway">98258</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Frederick III, German Emperor">151116</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tuoba Huang">5148640</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Prince of Wales">46204</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Crown Prince of Thailand">26576678</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="制度" aoffset="1049" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="制度" saoffset="1049" salength="2" rank="120">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Berlin S-Bahn stations">525806</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of MBTA Commuter Rail stations">26028235</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Institution">294833</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Berlin U-Bahn stations">3509056</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of MAX Light Rail stations">19322556</tobep>
+			<anchor arel="1" aname="制度" aoffset="1049" alength="2" ext_length="0">
+				<subanchor sarel="1" saname="制度" saoffset="1049" salength="2" rank="120">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Berlin S-Bahn stations">525806</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of MBTA Commuter Rail stations">26028235</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Institution">294833</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Berlin U-Bahn stations">3509056</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of MAX Light Rail stations">19322556</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="度" saoffset="1050" salength="1" rank="187">
+				<subanchor sarel="-1" saname="度" saoffset="1050" salength="1" rank="187">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Degree">844645</tobep>
 				</subanchor>
 			</anchor>
@@ -914,7 +914,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="诏" aoffset="1139" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="诏" saoffset="1139" salength="1" rank="239">
+				<subanchor sarel="-1" saname="诏" saoffset="1139" salength="1" rank="239">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Congee">485011</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Chao (currency)">19545940</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Chao">658086</tobep>
@@ -922,12 +922,12 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Chao (Sonic the Hedgehog)">232857</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="诏书" saoffset="1139" salength="2" rank="138">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Edictum Rothari">3936069</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Praetor&apos;s Edict">11523597</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="EDICT">3889544</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Edict of Roussillon">7146057</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Perpetual Edict">11505824</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Edict of Nantes">50467</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Edictum Rothari">3936069</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Praetor&apos;s Edict">11523597</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="EDICT">3889544</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Edict of Roussillon">7146057</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Perpetual Edict">11505824</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Edict of Nantes">50467</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Edict on Maximum Prices">610820</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Kansei Edict">5356626</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of heroes of Ukraine">2309176</tobep>
