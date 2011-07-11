@@ -133,7 +133,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="1" aname="中" aoffset="607" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="中" saoffset="607" salength="1" rank="220">
+				<subanchor sarel="-1" saname="中" saoffset="607" salength="1" rank="220">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Central">186476</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="China">5042862</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Naka">3997367</tobep>
@@ -282,88 +282,88 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Princess">1624867</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="帝王" aoffset="754" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="帝王" saoffset="754" salength="2" rank="214">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Emperor Sakuramachi">195010</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Holy Roman Emperor">50853</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Emperor Ku">3928458</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Concise list of Roman Emperors">874779</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Nyoin">14625509</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Emperor (band)">140257</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Roman Emperor">219117</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Index of Japan-related articles (E)">4595921</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Japanese monarchs">224374</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="King-Emperor">1974329</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Monarch">19012</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Emperor of Japan">10110</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Emperor">10111</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Jingtai Emperor">995318</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sesshō and Kampaku">347618</tobep>
+			<anchor arel="1" aname="帝王" aoffset="754" alength="2" ext_length="0">
+				<subanchor sarel="1" saname="帝王" saoffset="754" salength="2" rank="214">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Emperor Sakuramachi">195010</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Holy Roman Emperor">50853</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Emperor Ku">3928458</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Concise list of Roman Emperors">874779</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Nyoin">14625509</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Emperor (band)">140257</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Roman Emperor">219117</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Index of Japan-related articles (E)">4595921</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Japanese monarchs">224374</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="King-Emperor">1974329</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Monarch">19012</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Emperor of Japan">10110</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Emperor">10111</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Jingtai Emperor">995318</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sesshō and Kampaku">347618</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="继承" aoffset="757" alength="2" ext_length="1">
-				<subanchor sarel="0" saname="继承" saoffset="757" salength="2" rank="64">
+			<anchor arel="1" aname="继承" aoffset="757" alength="2" ext_length="1">
+				<subanchor sarel="-1" saname="继承" saoffset="757" salength="2" rank="64">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Arven (2003 film)">3796734</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Inheritance">15430</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Inheritance (TV series)">8218272</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Inheritance (short story)">10708400</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Inheritance (object-oriented programming)">2617746</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="继承人" saoffset="757" salength="3" rank="198">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of heirs apparent">814123</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of heirs to the Burmese thrones">26460435</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Heiress (fragrance)">13486803</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of heirs to the Norwegian throne">25516419</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Inheritance">15430</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Line of succession to the Bavarian throne">5702789</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Heir apparent">213047</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of heirs to the Russian throne">17176646</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Heer (clan)">27515168</tobep>
+				<subanchor sarel="1" saname="继承人" saoffset="757" salength="3" rank="198">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of heirs apparent">814123</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of heirs to the Burmese thrones">26460435</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Heiress (fragrance)">13486803</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of heirs to the Norwegian throne">25516419</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Inheritance">15430</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Line of succession to the Bavarian throne">5702789</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Heir apparent">213047</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of heirs to the Russian throne">17176646</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Heer (clan)">27515168</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="人" saoffset="759" salength="1" rank="219">
+				<subanchor sarel="-1" saname="人" saoffset="759" salength="1" rank="219">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Human">682482</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Human (disambiguation)">1028023</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="皇储" aoffset="776" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="皇储" saoffset="776" salength="2" rank="172">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Crown Prince Party">221324</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="William, German Crown Prince">594696</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Frederik, Crown Prince of Denmark">339155</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sima Yu">3576881</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Frederick III, German Emperor">151116</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Haakon, Crown Prince of Norway">98258</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Norwegian Crown Prince&apos;s Crown">16736587</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tuoba Huang">5148640</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Crown Prince Naruhito">266108</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Crown Prince Sado">4898073</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Crown Prince of Thailand">26576678</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Crown (heraldry)">7500452</tobep>
+			<anchor arel="1" aname="皇储" aoffset="776" alength="2" ext_length="0">
+				<subanchor sarel="1" saname="皇储" saoffset="776" salength="2" rank="172">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Crown Prince Party">221324</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="William, German Crown Prince">594696</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Frederik, Crown Prince of Denmark">339155</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sima Yu">3576881</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Frederick III, German Emperor">151116</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Haakon, Crown Prince of Norway">98258</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Norwegian Crown Prince&apos;s Crown">16736587</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tuoba Huang">5148640</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Crown Prince Naruhito">266108</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Crown Prince Sado">4898073</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Crown Prince of Thailand">26576678</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Crown (heraldry)">7500452</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="古代" aoffset="794" alength="2" ext_length="3">
-				<subanchor sarel="0" saname="古代" saoffset="794" salength="2" rank="234">
+			<anchor arel="1" aname="古代" aoffset="794" alength="2" ext_length="3">
+				<subanchor sarel="-1" saname="古代" saoffset="794" salength="2" rank="234">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Archaeological Protected Monuments in Sri Lanka">26152759</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ancient philosophy">1167</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ancient history">51320</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="History of Japan">25890428</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="History of China">5760</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="古代中国" saoffset="794" salength="4" rank="150">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="The Cambridge History of Ancient China">20753300</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Dogs in ancient China">20777185</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="District (China)">525155</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Planning Theory in Ancient China">25959502</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bandit Kings of Ancient China">2270483</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Comparative studies of the Roman and Han empires">26519723</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Timeline of ancient history">17255423</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="History of China">5760</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ancient China&apos;s Protectorate System">17727947</tobep>
+				<subanchor sarel="1" saname="古代中国" saoffset="794" salength="4" rank="150">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="The Cambridge History of Ancient China">20753300</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Dogs in ancient China">20777185</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="District (China)">525155</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Planning Theory in Ancient China">25959502</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bandit Kings of Ancient China">2270483</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Comparative studies of the Roman and Han empires">26519723</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Timeline of ancient history">17255423</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="History of China">5760</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ancient China&apos;s Protectorate System">17727947</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="代" saoffset="795" salength="1" rank="218">
+				<subanchor sarel="-1" saname="代" saoffset="795" salength="1" rank="218">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="State of Dai">3009297</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="中国" saoffset="796" salength="2" rank="115">
+				<subanchor sarel="-1" saname="中国" saoffset="796" salength="2" rank="115">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="EP China / Electrical China 2010">24336784</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Amaurobiidae species">5855594</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:China/China topics">5719948</tobep>
@@ -381,123 +381,123 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="People&apos;s Republic of China">5405</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Chung Kuo, Cina">22114856</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="中国史" saoffset="796" salength="3" rank="61">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="History of China">5760</tobep>
+				<subanchor sarel="1" saname="中国史" saoffset="796" salength="3" rank="61">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="History of China">5760</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="国" saoffset="797" salength="1" rank="204">
+				<subanchor sarel="-1" saname="国" saoffset="797" salength="1" rank="204">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="State">290282</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="封" aoffset="814" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="封" saoffset="814" salength="1" rank="170">
+			<anchor arel="1" aname="封" aoffset="814" alength="1" ext_length="1">
+				<subanchor sarel="-1" saname="封" saoffset="814" salength="1" rank="170">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Pinniped">60261</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seal (musician)">38134</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seal (emblem)">38136</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seal, Kent">1077062</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seals of the U.S. states">853745</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="封号" saoffset="814" salength="2" rank="162">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Title">226160</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of All That episodes">2655016</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Chinese nobility">309437</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Endurance episodes">9840071</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Godzilla Island episodes">9614513</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Babu (title)">11391473</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of professional Go tournaments">3728100</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="WWE Intercontinental Championship">722875</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Allodial title">1342660</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Title (property)">226179</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Title insurance in the United States">563831</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Oklahoma law">22339286</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Title bar">455397</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Title opinion">28199332</tobep>
+				<subanchor sarel="1" saname="封号" saoffset="814" salength="2" rank="162">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Title">226160</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of All That episodes">2655016</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Chinese nobility">309437</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Endurance episodes">9840071</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Godzilla Island episodes">9614513</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Babu (title)">11391473</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of professional Go tournaments">3728100</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="WWE Intercontinental Championship">722875</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Allodial title">1342660</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Title (property)">226179</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Title insurance in the United States">563831</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Oklahoma law">22339286</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Title bar">455397</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Title opinion">28199332</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="号" saoffset="815" salength="1" rank="207">
+				<subanchor sarel="-1" saname="号" saoffset="815" salength="1" rank="207">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of elements by atomic number">63246</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Art-name">300447</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="皇太子" aoffset="818" alength="3" ext_length="0">
+			<anchor arel="-1" aname="皇太子" aoffset="818" alength="3" ext_length="0">
 				<subanchor sarel="0" saname="皇太子" saoffset="818" salength="3" rank="123">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Frederik, Crown Prince of Denmark">339155</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="William, German Crown Prince">594696</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Haakon, Crown Prince of Norway">98258</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Frederick III, German Emperor">151116</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Crown Prince of Thailand">26576678</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Frederik, Crown Prince of Denmark">339155</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="William, German Crown Prince">594696</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Haakon, Crown Prince of Norway">98258</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Frederick III, German Emperor">151116</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Crown Prince of Thailand">26576678</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="太子" saoffset="819" salength="2" rank="109">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Edward I of England">46373</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Prince Edward, Hong Kong">375134</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Prince Edward, Earl of Wessex">125209</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Prince Edward County, Ontario">627793</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Edward VI of England">10245</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Prince Edward (electoral district)">1787431</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Emperor Yuan of Han">339712</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Prince Edward Station">757417</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Xuande Emperor">390537</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Emperor Cheng of Han">339723</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Edward I of England">46373</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Prince Edward, Hong Kong">375134</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Prince Edward, Earl of Wessex">125209</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Prince Edward County, Ontario">627793</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Edward VI of England">10245</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Prince Edward (electoral district)">1787431</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Emperor Yuan of Han">339712</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Prince Edward Station">757417</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Xuande Emperor">390537</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Emperor Cheng of Han">339723</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="子" saoffset="820" salength="1" rank="195">
+				<subanchor sarel="-1" saname="子" saoffset="820" salength="1" rank="195">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Rat (zodiac)">277037</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="简称" aoffset="823" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="简称" saoffset="823" salength="2" rank="112">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Short title">1612978</tobep>
+			<anchor arel="1" aname="简称" aoffset="823" alength="2" ext_length="0">
+				<subanchor sarel="1" saname="简称" saoffset="823" salength="2" rank="112">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Short title">1612978</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="对象" aoffset="836" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="对象" saoffset="836" salength="2" rank="104">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Object (philosophy)">47353</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Object Manager (Windows)">12320794</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Associative array">95154</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Object">453372</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Category theory">5869</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Object (grammar)">201457</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Object (computer science)">169665</tobep>
+			<anchor arel="1" aname="对象" aoffset="836" alength="2" ext_length="0">
+				<subanchor sarel="1" saname="对象" saoffset="836" salength="2" rank="104">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Object (philosophy)">47353</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Object Manager (Windows)">12320794</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Associative array">95154</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Object">453372</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Category theory">5869</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Object (grammar)">201457</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Object (computer science)">169665</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="象" saoffset="837" salength="1" rank="145">
+				<subanchor sarel="-1" saname="象" saoffset="837" salength="1" rank="145">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Elephant">9279</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bishop (chess)">47616</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="类" aoffset="844" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="类" saoffset="844" salength="1" rank="152">
+			<anchor arel="-1" aname="类" aoffset="844" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="类" saoffset="844" salength="1" rank="152">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Class (computer science)">7392</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Class (set theory)">20696</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Class">6282</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="关" aoffset="863" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="关" saoffset="863" salength="1" rank="232">
+			<anchor arel="1" aname="关" aoffset="863" alength="1" ext_length="1">
+				<subanchor sarel="-1" saname="关" saoffset="863" salength="1" rank="232">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Close">4583933</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Close vowel">594771</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Cul-de-sac">390697</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Glenn Close">44459</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Close (album)">12015782</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="关系" saoffset="863" salength="2" rank="123">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Relation (database)">23720058</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Guanxi">48968</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Finitary relation">19509</tobep>
+				<subanchor sarel="1" saname="关系" saoffset="863" salength="2" rank="123">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Relation (database)">23720058</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Guanxi">48968</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Finitary relation">19509</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="皇太弟" aoffset="870" alength="3" ext_length="0">
 				<subanchor sarel="0" saname="皇太弟" saoffset="870" salength="3" rank="71">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Big Brother (UK)">861172</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Brother Against Brother (game)">6661560</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Big Brother (UK) shows">11748792</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Big Brother">19360255</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Big Brother (Bulgaria)">4737453</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Brother to Brother">6493268</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Brother, Brother, Brother">6548921</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Brother against Brother">19391179</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Big Brother housemates">13926473</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Brother against brother">6600436</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Big Brother (UK)">861172</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Brother Against Brother (game)">6661560</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Big Brother (UK) shows">11748792</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Big Brother">19360255</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Big Brother (Bulgaria)">4737453</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Brother to Brother">6493268</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Brother, Brother, Brother">6548921</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Brother against Brother">19391179</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Big Brother housemates">13926473</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Brother against brother">6600436</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="皇太孙" aoffset="874" alength="3" ext_length="0">
-				<subanchor sarel="0" saname="皇太孙" saoffset="874" salength="3" rank="108">
+			<anchor arel="-1" aname="皇太孙" aoffset="874" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="皇太孙" saoffset="874" salength="3" rank="108">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sun Red Sun">23940315</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sun-sun (singer)">18904902</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Wall−Sun−Sun prime">323651</tobep>
@@ -509,7 +509,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Shangfeng">18324730</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of sites in Jinan">19736030</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="孙" saoffset="876" salength="1" rank="194">
+				<subanchor sarel="-1" saname="孙" saoffset="876" salength="1" rank="194">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sun Microsystems">26980</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Grandson">715243</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="The Sun (United Kingdom)">26146987</tobep>
@@ -518,8 +518,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sun (astrology)">2386809</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="皇太叔" aoffset="878" alength="3" ext_length="0">
-				<subanchor sarel="0" saname="皇太叔" saoffset="878" salength="3" rank="61">
+			<anchor arel="-1" aname="皇太叔" aoffset="878" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="皇太叔" saoffset="878" salength="3" rank="61">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tôn Thất Thuyết">14030059</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Combat history of the T-26">25627069</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:World War II/Selected equipment/Layout">17875023</tobep>
@@ -531,7 +531,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of current ships of the United States Navy">1432196</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tôn-Thất Tiết">12780089</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="太叔" saoffset="879" salength="2" rank="210">
+				<subanchor sarel="-1" saname="太叔" saoffset="879" salength="2" rank="210">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Taishu-kai">2866853</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Custom Made 10.30">24733835</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Nonami Takizawa">7102081</tobep>
@@ -629,7 +629,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hou (title)">27005694</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="亲王" aoffset="919" alength="2" ext_length="1">
+			<anchor arel="-1" aname="亲王" aoffset="919" alength="2" ext_length="1">
 				<subanchor sarel="0" saname="亲王" saoffset="919" salength="2" rank="180">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="South Wales Central (National Assembly for Wales electoral region)">5975671</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Wales national rugby league team match results">7392752</tobep>
@@ -639,16 +639,16 @@
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Statutory Instruments of the Welsh Assembly, 2002">4403632</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="History of rugby union matches between Scotland and Wales">25200517</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Wales international footballers born outside of Wales">27908658</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="North Wales (National Assembly for Wales electoral region)">5975556</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Football Association of Wales">300231</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Wales national rugby league team">990439</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Wales/Wales news">14977077</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Prince">51511</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Wales national rugby union team">770930</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Wales">69894</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of years in Wales">1442276</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="North Wales (National Assembly for Wales electoral region)">5975556</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Football Association of Wales">300231</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Wales national rugby league team">990439</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Wales/Wales news">14977077</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Prince">51511</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Wales national rugby union team">770930</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Wales">69894</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of years in Wales">1442276</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="王正" saoffset="920" salength="2" rank="76">
+				<subanchor sarel="-1" saname="王正" saoffset="920" salength="2" rank="76">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Wang Shoucheng">22473211</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Zheng Zhu">24909241</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Wang Zheng">13025747</tobep>
@@ -659,21 +659,21 @@
 			</anchor>
 			<anchor arel="0" aname="世子" aoffset="929" alength="2" ext_length="0">
 				<subanchor sarel="0" saname="世子" saoffset="929" salength="2" rank="112">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seiko Group">6045294</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seiko Hashimoto">8249194</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seiko Films">15867000</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seiko (disambiguation)">2696918</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seiko SA">8655657</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seiko Noda">2683114</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seiko">768912</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seiko Instruments">1011484</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seiko Matsuda">2427930</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seikosha">706357</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seiko Epson">1082784</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seiko Group">6045294</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seiko Hashimoto">8249194</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seiko Films">15867000</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seiko (disambiguation)">2696918</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seiko SA">8655657</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seiko Noda">2683114</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seiko">768912</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seiko Instruments">1011484</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seiko Matsuda">2427930</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seikosha">706357</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seiko Epson">1082784</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="藩" aoffset="937" alength="1" ext_length="2">
-				<subanchor sarel="0" saname="藩" saoffset="937" salength="1" rank="248">
+				<subanchor sarel="-1" saname="藩" saoffset="937" salength="1" rank="248">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Fushigi Mahou Fan Fan Pharmacy">21335855</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Fan (person)">152640</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Fan of a Fan">27370207</tobep>
@@ -688,22 +688,22 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Han (country subdivision)">256547</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="藩屬" saoffset="937" salength="2" rank="129">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="VASSAL Engine">6530757</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="VASSAL Engine">6530757</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Vassal">268717</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="藩屬國" saoffset="937" salength="3" rank="198">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tribute">164392</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Indian princely states (alphabetical)">27383514</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Vassal Benford">27049887</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="VASSAL Engine">6530757</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Vassal (disambiguation)">17460169</tobep>
+				<subanchor sarel="1" saname="藩屬國" saoffset="937" salength="3" rank="198">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tribute">164392</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Indian princely states (alphabetical)">27383514</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Vassal Benford">27049887</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="VASSAL Engine">6530757</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Vassal (disambiguation)">17460169</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of countries in 1901">16890514</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of countries in 1660">14796929</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Vassal">268717</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of rulers of the Yoruba state of Oyo">13647216</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Vassal state">293401</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="屬" saoffset="938" salength="1" rank="236">
+				<subanchor sarel="-1" saname="屬" saoffset="938" salength="1" rank="236">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Isaz">1579113</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Isaiah">15088</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Is Is">11778974</tobep>
@@ -913,7 +913,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Digit">9041</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="诏" aoffset="1139" alength="1" ext_length="1">
+			<anchor arel="1" aname="诏" aoffset="1139" alength="1" ext_length="1">
 				<subanchor sarel="-1" saname="诏" saoffset="1139" salength="1" rank="239">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Congee">485011</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Chao (currency)">19545940</tobep>
@@ -921,32 +921,32 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Chao Yuen Ren">303324</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Chao (Sonic the Hedgehog)">232857</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="诏书" saoffset="1139" salength="2" rank="138">
+				<subanchor sarel="1" saname="诏书" saoffset="1139" salength="2" rank="138">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Edictum Rothari">3936069</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Praetor&apos;s Edict">11523597</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="EDICT">3889544</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Edict of Roussillon">7146057</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Perpetual Edict">11505824</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Edict of Nantes">50467</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Edict on Maximum Prices">610820</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Kansei Edict">5356626</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of heroes of Ukraine">2309176</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Edict">248344</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Edict on Maximum Prices">610820</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Kansei Edict">5356626</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of heroes of Ukraine">2309176</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Edict">248344</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="乾清宫" aoffset="1142" alength="3" ext_length="0">
-				<subanchor sarel="0" saname="乾清宫" saoffset="1142" salength="3" rank="77">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Purity of arms">2045884</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Palace of Heavenly Purity">4790556</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Forbidden City">69123</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="The Palace of Heavenly Pleasure">4062600</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Palace of Earthly Tranquility">12819617</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Purity of Essence">4525563</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Spirit of Purity">15658839</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Grand Council (Qing)">6905638</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hall of Union">12819577</tobep>
+			<anchor arel="1" aname="乾清宫" aoffset="1142" alength="3" ext_length="0">
+				<subanchor sarel="1" saname="乾清宫" saoffset="1142" salength="3" rank="77">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Purity of arms">2045884</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Palace of Heavenly Purity">4790556</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Forbidden City">69123</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="The Palace of Heavenly Pleasure">4062600</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Palace of Earthly Tranquility">12819617</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Purity of Essence">4525563</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Spirit of Purity">15658839</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Grand Council (Qing)">6905638</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hall of Union">12819577</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="清" saoffset="1143" salength="1" rank="179">
+				<subanchor sarel="-1" saname="清" saoffset="1143" salength="1" rank="179">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Clear Body, Clear Mind">7873488</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Clear Lake City (Greater Houston)">325882</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Clear (Scientology)">2353513</tobep>
@@ -966,36 +966,36 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Qing Dynasty">25310</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Clear Channel UK">1756264</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="清宫" saoffset="1143" salength="2" rank="111">
+				<subanchor sarel="-1" saname="清宫" saoffset="1143" salength="2" rank="111">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Qin Dynasty">43461</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Qing Dynasty">25310</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="宫" saoffset="1144" salength="1" rank="191">
+				<subanchor sarel="-1" saname="宫" saoffset="1144" salength="1" rank="191">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Miya">21897443</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="正大" aoffset="1146" alength="2" ext_length="2">
-				<subanchor sarel="0" saname="正大" saoffset="1146" salength="2" rank="246">
+			<anchor arel="-1" aname="正大" aoffset="1146" alength="2" ext_length="2">
+				<subanchor sarel="-1" saname="正大" saoffset="1146" salength="2" rank="246">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Canadian Pacific Railway">5959</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Captain of the Parish">3686620</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Comboios de Portugal">4688585</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="National Party of Australia">21927</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Colombo Plan">260288</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="大光" saoffset="1147" salength="2" rank="103">
+				<subanchor sarel="-1" saname="大光" saoffset="1147" salength="2" rank="103">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Big Light">18052019</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="光" saoffset="1148" salength="1" rank="214">
+				<subanchor sarel="-1" saname="光" saoffset="1148" salength="1" rank="214">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Light">17939</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="光明" saoffset="1148" salength="2" rank="126">
+				<subanchor sarel="-1" saname="光明" saoffset="1148" salength="2" rank="126">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Emperor Kōmyō">229358</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Gwangmyeong">967700</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Guangming">10267336</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bright">3565352</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Johnny Bright">5541836</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="明" saoffset="1149" salength="1" rank="222">
+				<subanchor sarel="-1" saname="明" saoffset="1149" salength="1" rank="222">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ming Ming">10597501</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Emperor Xuanzong of Tang">637134</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mingə">18925499</tobep>
@@ -1015,11 +1015,11 @@
 			</anchor>
 			<anchor arel="0" aname="匾" aoffset="1151" alength="1" ext_length="0">
 				<subanchor sarel="0" saname="匾" saoffset="1151" salength="1" rank="248">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tablet (confectionery)">1239342</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tablet PC">152924</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Token (railway signalling)">702958</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tablet">78000</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tablet (religious)">7285623</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tablet (confectionery)">1239342</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tablet PC">152924</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Token (railway signalling)">702958</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tablet">78000</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tablet (religious)">7285623</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="中国古代" aoffset="1164" alength="4" ext_length="2">
