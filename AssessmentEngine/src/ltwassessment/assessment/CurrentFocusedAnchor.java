@@ -56,6 +56,11 @@ public class CurrentFocusedAnchor {
 	}
 
 	public void setAnchor(AssessedAnchor previous, AssessedAnchor current, Bep bep) {
+		if (previous != null) {
+			if (previous.getParent() != current.getParent())
+				previous.getParent().statusCheck();
+		}
+		
 		this.anchor = current;
 		
 		TopicHighlightManager.getInstance().update(previous, anchor);
