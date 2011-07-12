@@ -43,6 +43,7 @@ import ltwassessment.parsers.PoolerManager;
 import ltwassessment.parsers.ResourcesManager;
 import ltwassessment.parsers.Xml2Html;
 import ltwassessment.utility.BrowserControl;
+import ltwassessment.utility.FileUtil;
 import ltwassessment.utility.PoolUpdater;
 import ltwassessment.view.TopicHighlightManager;
 
@@ -292,29 +293,38 @@ public class LTWAssessmentToolControler {
     	String topicID = rscManager.getTopicID();
 		String sourcePoolFPath = ltwassessment.Assessment.getPoolFile(topicID);
 		File srcFile = new File(sourcePoolFPath);
-		String backupPoolDir = Assessment.ASSESSMENT_POOL_BACKUP_DIR;
+		String backupPoolDir = Assessment.getPoolBackupTempDirHandler().getAbsolutePath();//.ASSESSMENT_POOL_BACKUP_DIR;
 		DateFormat dateFormat = new SimpleDateFormat("yyMMddHHmmss");
 		Date date = new Date();
 		String currentDateTime = dateFormat.format(date).toString();
 		String backupPoolFPath = backupPoolDir + AppResource.targetLang + "_" + topicID + "_" + currentDateTime + "_Pool.xml";
-		File destFile = new File(backupPoolFPath);
-		InputStream in = null;
-		OutputStream out = null;
-		if (!destFile.exists() && srcFile.exists()) {
-		    try {
-		        destFile.createNewFile();
-		        in = new FileInputStream(srcFile);
-		        out = new FileOutputStream(destFile);
-		        byte[] buf = new byte[1024];
-		        int len;
-		        while ((len = in.read(buf)) > 0) {
-		            out.write(buf, 0, len);
-		        }
-		        in.close();
-		        out.close();
-		    } catch (IOException ex) {
-		        Logger.getLogger(LTWAssessmentToolControler.class.getName()).log(Level.SEVERE, null, ex);
-		    }
+//		File destFile = new File(backupPoolFPath);
+//		InputStream in = null;
+//		OutputStream out = null;
+//		if (!destFile.exists() && srcFile.exists()) {
+//		    try {
+//		        destFile.createNewFile();
+//		        in = new FileInputStream(srcFile);
+//		        out = new FileOutputStream(destFile);
+//		        byte[] buf = new byte[1024];
+//		        int len;
+//		        while ((len = in.read(buf)) > 0) {
+//		            out.write(buf, 0, len);
+//		        }
+//		        in.close();
+//		        out.close();
+//		    } catch (IOException ex) {
+//		        Logger.getLogger(LTWAssessmentToolControler.class.getName()).log(Level.SEVERE, null, ex);
+//		    }
+//		}
+		/*
+		 * make two copies, one at the local directory one at the temp dir with every timestam copies
+		 */
+		try {
+			FileUtil.copyFile(sourcePoolFPath, backupPoolFPath);
+			FileUtil.copyFile(sourcePoolFPath, Assessment.getPoolBackupTempDirHandler() + srcFile.getName());
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
     }
     
@@ -411,12 +421,13 @@ public class LTWAssessmentToolControler {
     
     
     public void assess(String poolFile) {
-    	backupPool();
-    	Completion.getInstance().reset();
     	assess(poolFile, false);
     }
     
     private void assess(String poolFile, boolean reset) {
+    	backupPool();
+    	Completion.getInstance().reset();
+    	
     	if (!new File(poolFile).exists()) {
           String errMessage = "Cannot find pool file: " + poolFile + "\r\n";
 			JOptionPane.showMessageDialog(mainFrame, errMessage);    		
