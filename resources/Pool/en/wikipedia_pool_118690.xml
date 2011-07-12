@@ -41,15 +41,15 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Statutory city">1251705</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="New South Wales Department of Health">4399136</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="法定貨幣" saoffset="265" salength="4" rank="28">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Currency">5665</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Legal Tender Modernization Act">4035514</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Legal tender">267793</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Legal Tender (song)">16722577</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Whammy!">1074967</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Legal Tender Cases">9700751</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Non-circulating legal tender">3735153</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="United States Note">180847</tobep>
+				<subanchor sarel="1" saname="法定貨幣" saoffset="265" salength="4" rank="28">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Currency">5665</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Legal Tender Modernization Act">4035514</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Legal tender">267793</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Legal Tender (song)">16722577</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Whammy!">1074967</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Legal Tender Cases">9700751</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Non-circulating legal tender">3735153</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="United States Note">180847</tobep>
 				</subanchor>
 				<subanchor sarel="-1" saname="定" saoffset="266" salength="1" rank="71">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Father Set">2460456</tobep>
@@ -72,7 +72,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Set theory/Selected set">16863880</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Volleyball at the 2008 Summer Olympics – Women&apos;s volleyball">18591713</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="貨幣" saoffset="267" salength="2" rank="5">
+				<subanchor sarel="-1" saname="貨幣" saoffset="267" salength="2" rank="5">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Currency (2009 film)">26614055</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Currency union">1179606</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Alternative currency">2384990</tobep>
@@ -262,22 +262,22 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Generation &quot;П&quot;">5621370</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Generations (book)">277333</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="代表" saoffset="560" salength="2" rank="99">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Representative">329783</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="House of Representatives of the Philippines">293605</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Representative peer">435064</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="United States House of Representatives">19468510</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Representative money">48266</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Representatives and Senators of Arizona Legislature by Districts">9494858</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Promotional representative">17460627</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Barrister">4848</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Resident Representative">13179251</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of foreign-born United States politicians">1650700</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of University of Michigan legislator alumni">7914194</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Congressional Caucus on Turkey and Turkish Americans">17561181</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="House of Representatives of Nigeria">3645403</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Representative Party of Alberta">600302</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of United States political families (A)">18196750</tobep>
+				<subanchor sarel="1" saname="代表" saoffset="560" salength="2" rank="99">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Representative">329783</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="House of Representatives of the Philippines">293605</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Representative peer">435064</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="United States House of Representatives">19468510</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Representative money">48266</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Representatives and Senators of Arizona Legislature by Districts">9494858</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Promotional representative">17460627</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Barrister">4848</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Resident Representative">13179251</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of foreign-born United States politicians">1650700</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of University of Michigan legislator alumni">7914194</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Congressional Caucus on Turkey and Turkish Americans">17561181</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="House of Representatives of Nigeria">3645403</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Representative Party of Alberta">600302</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of United States political families (A)">18196750</tobep>
 				</subanchor>
 				<subanchor sarel="-1" saname="表" saoffset="561" salength="1" rank="67">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Table (furniture)">1147423</tobep>
@@ -299,7 +299,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Table">274698</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="實" aoffset="562" alength="1" ext_length="1">
+			<anchor arel="1" aname="實" aoffset="562" alength="1" ext_length="1">
 				<subanchor sarel="-1" saname="實" saoffset="562" salength="1" rank="61">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Real Real Real">12302593</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Real (hypermarket)">8484200</tobep>
@@ -318,25 +318,25 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="2001–02 Real Madrid C.F. season">18598086</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Real to Real Cacophony">5969688</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="實質" saoffset="562" salength="2" rank="44">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Real Real Real">12302593</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Real (hypermarket)">8484200</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Spanish football champions">20302096</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="El Derbi madrileño">13078006</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Real Recognize Real">21380904</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Brazilian real">692773</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Real Simple Real Life">20909427</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Real">228328</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Real Real Gone">10955457</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Real (L&apos;Arc-en-Ciel album)">1202257</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="De facto">43594</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Real County, Texas">91470</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Real (Belinda Carlisle album)">9546057</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Graduate real estate education">25494160</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="2001–02 Real Madrid C.F. season">18598086</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Real to Real Cacophony">5969688</tobep>
+				<subanchor sarel="1" saname="實質" saoffset="562" salength="2" rank="44">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Real Real Real">12302593</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Real (hypermarket)">8484200</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Spanish football champions">20302096</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="El Derbi madrileño">13078006</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Real Recognize Real">21380904</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Brazilian real">692773</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Real Simple Real Life">20909427</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Real">228328</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Real Real Gone">10955457</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Real (L&apos;Arc-en-Ciel album)">1202257</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="De facto">43594</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Real County, Texas">91470</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Real (Belinda Carlisle album)">9546057</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Graduate real estate education">25494160</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="2001–02 Real Madrid C.F. season">18598086</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Real to Real Cacophony">5969688</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="質" saoffset="563" salength="1" rank="92">
+				<subanchor sarel="-1" saname="質" saoffset="563" salength="1" rank="92">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Quality-Driven Architecture Design and Quality Analysis">14821158</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Quality Comics">279470</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Prime number">23666</tobep>
@@ -353,8 +353,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Quality (album)">2296123</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="商" aoffset="564" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="商" saoffset="564" salength="1" rank="33">
+			<anchor arel="1" aname="商" aoffset="564" alength="1" ext_length="1">
+				<subanchor sarel="-1" saname="商" saoffset="564" salength="1" rank="33">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of business schools in Europe">43360</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of business routes of the Interstate Highway System">3777915</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Business-to-business">1678261</tobep>
@@ -376,21 +376,21 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Business Today (Business Magazine)">18283726</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Businessperson">147292</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="商品" saoffset="564" salength="2" rank="12">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sale of Goods Act 1979">11437361</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Brand">18950900</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Goods station">20691950</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Goods wagon">18693304</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Investment goods">2133685</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Good (economics)">580039</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Competing goods">27682217</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Dangerous goods">1476975</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Goods shed">5947620</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Freight rail transport">2234123</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Goods">279495</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Straight Goods">4508092</tobep>
+				<subanchor sarel="1" saname="商品" saoffset="564" salength="2" rank="12">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sale of Goods Act 1979">11437361</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Brand">18950900</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Goods station">20691950</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Goods wagon">18693304</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Investment goods">2133685</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Good (economics)">580039</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Competing goods">27682217</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Dangerous goods">1476975</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Goods shed">5947620</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Freight rail transport">2234123</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Goods">279495</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Straight Goods">4508092</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="品" saoffset="565" salength="1" rank="108">
+				<subanchor sarel="-1" saname="品" saoffset="565" salength="1" rank="108">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of countries by total length of pipelines">17907684</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Product (business)">240410</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Character education">5119916</tobep>
@@ -410,7 +410,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="或" aoffset="566" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="或" saoffset="566" salength="1" rank="69">
+				<subanchor sarel="-1" saname="或" saoffset="566" salength="1" rank="69">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Demographics of Montenegro">3265937</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of languages by name">167473</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Or (heraldry)">1095461</tobep>
@@ -426,28 +426,28 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Orø">26788514</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="貨物" aoffset="567" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="貨物" saoffset="567" salength="2" rank="23">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sale of Goods Act 1979">11437361</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Goods station">20691950</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Goods wagon">18693304</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Investment goods">2133685</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Good (economics)">580039</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Competing goods">27682217</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Dangerous goods">1476975</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Goods shed">5947620</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Freight rail transport">2234123</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Goods">279495</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Straight Goods">4508092</tobep>
+			<anchor arel="1" aname="貨物" aoffset="567" alength="2" ext_length="0">
+				<subanchor sarel="1" saname="貨物" saoffset="567" salength="2" rank="23">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sale of Goods Act 1979">11437361</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Goods station">20691950</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Goods wagon">18693304</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Investment goods">2133685</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Good (economics)">580039</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Competing goods">27682217</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Dangerous goods">1476975</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Goods shed">5947620</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Freight rail transport">2234123</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Goods">279495</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Straight Goods">4508092</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="，" aoffset="569" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="，" saoffset="569" salength="1" rank="100">
+			<anchor arel="-1" aname="，" aoffset="569" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="，" saoffset="569" salength="1" rank="100">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Comma">59125</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="發" aoffset="570" alength="1" ext_length="2">
-				<subanchor sarel="0" saname="發" saoffset="570" salength="1" rank="91">
+			<anchor arel="-1" aname="發" aoffset="570" alength="1" ext_length="2">
+				<subanchor sarel="-1" saname="發" saoffset="570" salength="1" rank="91">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Terminal hair">2654908</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hair iron">908032</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Killer Hair">23541198</tobep>
@@ -465,7 +465,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hair (song)">11231653</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hair (disambiguation)">19209935</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="發行" saoffset="570" salength="2" rank="75">
+				<subanchor sarel="-1" saname="發行" saoffset="570" salength="2" rank="75">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="The Classic Marvel Figurine Collection">4694261</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Issue">381055</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="DC Comics Super Hero Collection">18999747</tobep>
@@ -483,7 +483,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Issue (magazine)">18471285</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Swan Point, Maryland">21332287</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="行" saoffset="571" salength="1" rank="100">
+				<subanchor sarel="-1" saname="行" saoffset="571" salength="1" rank="100">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Administrative division">27052</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Traffic">43081</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Period (periodic table)">86350</tobep>
@@ -505,7 +505,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Line">76323</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Line (geometry)">946975</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="行者" saoffset="571" salength="2" rank="37">
+				<subanchor sarel="-1" saname="行者" saoffset="571" salength="2" rank="37">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Robert Walker, Baron Walker of Gestingthorpe">7854887</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Walker County, Alabama">81321</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Walker">13189771</tobep>
@@ -523,8 +523,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="John Walker">16466</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="沒有" aoffset="574" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="沒有" saoffset="574" salength="2" rank="97">
+			<anchor arel="-1" aname="沒有" aoffset="574" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="沒有" saoffset="574" salength="2" rank="97">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Royal Air Force wings">10637748</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Open and closed lakes">5837231</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="No, No, No">6654853</tobep>
@@ -542,7 +542,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="No (song)">3079270</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Desert Island Discs episodes (1951 – 1960)">26203772</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="有" saoffset="575" salength="1" rank="118">
+				<subanchor sarel="-1" saname="有" saoffset="575" salength="1" rank="118">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Chinese nobility">309437</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Rings of Saturn">977592</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="There There">5938110</tobep>
@@ -563,8 +563,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Shogi variant">244039</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="將" aoffset="576" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="將" saoffset="576" salength="1" rank="96">
+			<anchor arel="-1" aname="將" aoffset="576" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="將" saoffset="576" salength="1" rank="96">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Apocalypse of Pseudo-Ephraem">5895096</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Will County, Illinois">82176</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Will (comics)">8888732</tobep>
@@ -601,8 +601,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Is Underground">8837068</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="義" aoffset="585" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="義" saoffset="585" salength="1" rank="51">
+			<anchor arel="1" aname="義" aoffset="585" alength="1" ext_length="1">
+				<subanchor sarel="-1" saname="義" saoffset="585" salength="1" rank="51">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Justice?">1586277</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Righteousness">290437</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Vance Astrovik">1162995</tobep>
@@ -622,32 +622,32 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Justice ministry">870407</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sense (molecular biology)">5504842</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="義務" saoffset="585" salength="2" rank="14">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Treaty">30432</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Law of obligations">214035</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Positive obligations">1508180</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Compulsory education">2287044</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Unilateral gratuitous obligations">17717222</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Moody&apos;s">863660</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Obligation">218792</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Domestic Partnership Benefits and Obligations Act">20750250</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Register for Governmental Approval of Financial Obligations">25078280</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ripple monetary system">2392086</tobep>
+				<subanchor sarel="1" saname="義務" saoffset="585" salength="2" rank="14">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Treaty">30432</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Law of obligations">214035</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Positive obligations">1508180</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Compulsory education">2287044</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Unilateral gratuitous obligations">17717222</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Moody&apos;s">863660</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Obligation">218792</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Domestic Partnership Benefits and Obligations Act">20750250</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Register for Governmental Approval of Financial Obligations">25078280</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ripple monetary system">2392086</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="依靠" aoffset="589" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="依靠" saoffset="589" salength="2" rank="53">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Supply and Depend">19429599</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Depend on Me">3902284</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="No One to Depend On">24923235</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="I Don&apos;t Depend on You">12723613</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="(You Can) Depend on Me">24494705</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Depend">892674</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Depend on You">3427359</tobep>
+			<anchor arel="-1" aname="依靠" aoffset="589" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="依靠" saoffset="589" salength="2" rank="53">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Supply and Depend">19429599</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Depend on Me">3902284</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="No One to Depend On">24923235</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="I Don&apos;t Depend on You">12723613</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="(You Can) Depend on Me">24494705</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Depend">892674</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Depend on You">3427359</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="政" aoffset="591" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="政" saoffset="591" salength="1" rank="8">
+			<anchor arel="1" aname="政" aoffset="591" alength="1" ext_length="1">
+				<subanchor sarel="-1" saname="政" saoffset="591" salength="1" rank="8">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="G">12255</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="National Chengchi University">948409</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Administrative division">27052</tobep>
@@ -659,9 +659,9 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Goaltender">567809</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Politics">22986</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="政府" saoffset="591" salength="2" rank="20">
+				<subanchor sarel="1" saname="政府" saoffset="591" salength="2" rank="20">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Government of the People&apos;s Republic of China">3205521</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Government">12229</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Government">12229</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Government Houses of the British Empire and Commonwealth">4160186</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Punjab Government">6376704</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Governments of present-day nations and states">16009423</tobep>
@@ -678,7 +678,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of high schools in Sialkot">14890674</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of colleges in Karachi">9270695</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="府" saoffset="592" salength="1" rank="41">
+				<subanchor sarel="-1" saname="府" saoffset="592" salength="1" rank="41">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Province">15489197</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Pfeiffer House and Carriage House">9211165</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Beeson House and Coach House">11969659</tobep>
@@ -737,8 +737,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of former Local Government Areas of Queensland">24491317</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="合" aoffset="600" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="合" saoffset="600" salength="1" rank="78">
+			<anchor arel="1" aname="合" aoffset="600" alength="1" ext_length="1">
+				<subanchor sarel="-1" saname="合" saoffset="600" salength="1" rank="78">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Richard Marx songwriting and production discography">19065223</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Co-co! Magazine">4098862</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Cobalt">24580536</tobep>
@@ -756,19 +756,19 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Universal Pictures films">445430</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Groupe Latécoère">11578036</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="合法" saoffset="600" salength="2" rank="32">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Legitimate expectation">2967809</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Legitimate theater">11134983</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Legitimacy (political)">574823</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Legitimate use of force">5575382</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Legitime">297147</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Work-at-home scheme">8957449</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Legitimate military target">26780176</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Legitimate peripheral participation">3616215</tobep>
+				<subanchor sarel="-1" saname="合法" saoffset="600" salength="2" rank="32">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Legitimate expectation">2967809</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Legitimate theater">11134983</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Legitimacy (political)">574823</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Legitimate use of force">5575382</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Legitime">297147</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Work-at-home scheme">8957449</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Legitimate military target">26780176</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Legitimate peripheral participation">3616215</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="通" aoffset="602" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="通" saoffset="602" salength="1" rank="105">
+			<anchor arel="1" aname="通" aoffset="602" alength="1" ext_length="1">
+				<subanchor sarel="-1" saname="通" saoffset="602" salength="1" rank="105">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Link rot">365511</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Link+">1571552</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Link (film)">1705406</tobep>
@@ -785,23 +785,23 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Strong link weak link">9990961</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Link">41319</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="通貨" saoffset="602" salength="2" rank="19">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Currency (2009 film)">26614055</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Currency union">1179606</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Alternative currency">2384990</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of countries by GDP (nominal)">380845</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of countries by GDP (nominal) per capita">1050736</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of currencies">3457649</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Singapore Bird Series currency notes">1710445</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Singapore Ship Series currency notes">1710498</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Currency board">418930</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Currency">5665</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Singapore Orchid Series currency notes">1710394</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Roman currency">299259</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of circulating currencies">1315426</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Money">8983183</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Som (currency)">21603160</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Currency Act">937486</tobep>
+				<subanchor sarel="1" saname="通貨" saoffset="602" salength="2" rank="19">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Currency (2009 film)">26614055</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Currency union">1179606</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Alternative currency">2384990</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of countries by GDP (nominal)">380845</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of countries by GDP (nominal) per capita">1050736</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of currencies">3457649</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Singapore Bird Series currency notes">1710445</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Singapore Ship Series currency notes">1710498</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Currency board">418930</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Currency">5665</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Singapore Orchid Series currency notes">1710394</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Roman currency">299259</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of circulating currencies">1315426</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Money">8983183</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Som (currency)">21603160</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Currency Act">937486</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="。" aoffset="607" alength="1" ext_length="0">
@@ -809,8 +809,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Full stop">23523100</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="價" aoffset="613" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="價" saoffset="613" salength="1" rank="88">
+			<anchor arel="1" aname="價" aoffset="613" alength="1" ext_length="1">
+				<subanchor sarel="-1" saname="價" saoffset="613" salength="1" rank="88">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Price Chopper / Price Mart">26026087</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Price County, Wisconsin">90942</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Price (surname)">866239</tobep>
@@ -827,23 +827,23 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Electoral district of Price">22264960</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Price">211295</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="價值" saoffset="613" salength="2" rank="31">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Value (economics)">4095185</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="MediaWiki:Gadget-protection-sidebar.js">14596685</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Java bytecode instruction listings">25284049</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Residual value">615976</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Value">47645</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Value (personal and cultural)">4095460</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="A value">18579693</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Value (ethics)">4095924</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Value theory">32361</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Value (computer science)">338331</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Business value">1967552</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ruin value">1630600</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of postage stamps of Pakistan from 1967 to 1976">11802256</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Value system">1092281</tobep>
+				<subanchor sarel="1" saname="價值" saoffset="613" salength="2" rank="31">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Value (economics)">4095185</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="MediaWiki:Gadget-protection-sidebar.js">14596685</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Java bytecode instruction listings">25284049</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Residual value">615976</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Value">47645</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Value (personal and cultural)">4095460</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="A value">18579693</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Value (ethics)">4095924</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Value theory">32361</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Value (computer science)">338331</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Business value">1967552</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ruin value">1630600</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of postage stamps of Pakistan from 1967 to 1976">11802256</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Value system">1092281</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="值" saoffset="614" salength="1" rank="94">
+				<subanchor sarel="-1" saname="值" saoffset="614" salength="1" rank="94">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Value (economics)">4095185</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Range (mathematics)">275991</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="MediaWiki:Gadget-protection-sidebar.js">14596685</tobep>
@@ -899,23 +899,23 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="History of Switzerland">27461</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="擁有" aoffset="617" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="擁有" saoffset="617" salength="2" rank="72">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="HAS">5887264</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Rumor Has It: Astaroth Has Stolen Your Eyes">14777184</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Numeric Annotation Glyphs">26198613</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Timeline of the 2007–08 South Pacific cyclone season">15203815</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="RSA numbers">511379</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="One Has My Name (The Other Has My Heart)">25002303</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Fighting Mixed Combative">23939263</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Şeref Has">13695056</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Has District">458751</tobep>
+			<anchor arel="-1" aname="擁有" aoffset="617" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="擁有" saoffset="617" salength="2" rank="72">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="HAS">5887264</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Rumor Has It: Astaroth Has Stolen Your Eyes">14777184</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Numeric Annotation Glyphs">26198613</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Timeline of the 2007–08 South Pacific cyclone season">15203815</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="RSA numbers">511379</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="One Has My Name (The Other Has My Heart)">25002303</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Fighting Mixed Combative">23939263</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Şeref Has">13695056</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Has District">458751</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Has Been">1105249</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Foreign relations of Zimbabwe">34409</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="相" aoffset="620" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="相" saoffset="620" salength="1" rank="52">
+			<anchor arel="-1" aname="相" aoffset="620" alength="1" ext_length="1">
+				<subanchor sarel="-1" saname="相" saoffset="620" salength="1" rank="52">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Phase (matter)">23637</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Xiang of Xia">627167</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Phase velocity">25098</tobep>
@@ -934,7 +934,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="North South Foundation">447870</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bartram Springs">17278690</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="相信" saoffset="620" salength="2" rank="50">
+				<subanchor sarel="-1" saname="相信" saoffset="620" salength="2" rank="50">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="I Still Believe">2967328</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="I Believe in You">4506345</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Believe in Angels... Believe in Me">7658227</tobep>
@@ -946,7 +946,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="I Believe in You (You Believe in Me)">18102456</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Believe">4678533</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="信" saoffset="621" salength="1" rank="43">
+				<subanchor sarel="-1" saname="信" saoffset="621" salength="1" rank="43">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Latin Extended Additional Unicode block">23508302</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Letter (alphabet)">3675310</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Letter railway station">27581736</tobep>
@@ -968,25 +968,25 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Belief">102883</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="將來" aoffset="624" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="將來" saoffset="624" salength="2" rank="42">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Futures contract">242855</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Future plc">866949</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Florida State Seminoles head football coaches">4489865</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Memory for the future">26685651</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Future tense">380313</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Future Comics">7588705</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Future Engineers">3487358</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Future">163103</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Rosebud (The Simpsons)">1698376</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Future Future Future Perfect">11690342</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Future2Future">2406960</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Future Trance">24066395</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Future Shocks">3509483</tobep>
+			<anchor arel="1" aname="將來" aoffset="624" alength="2" ext_length="0">
+				<subanchor sarel="1" saname="將來" saoffset="624" salength="2" rank="42">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Futures contract">242855</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Future plc">866949</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Florida State Seminoles head football coaches">4489865</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Memory for the future">26685651</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Future tense">380313</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Future Comics">7588705</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Future Engineers">3487358</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Future">163103</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Rosebud (The Simpsons)">1698376</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Future Future Future Perfect">11690342</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Future2Future">2406960</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Future Trance">24066395</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Future Shocks">3509483</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="能" aoffset="626" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="能" saoffset="626" salength="1" rank="74">
+			<anchor arel="-1" aname="能" aoffset="626" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="能" saoffset="626" salength="1" rank="74">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Can Can (album)">17128021</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Can (band)">251573</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Energy">9649</tobep>
@@ -1005,8 +1005,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Can">407832</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="維" aoffset="627" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="維" saoffset="627" salength="1" rank="89">
+			<anchor arel="-1" aname="維" aoffset="627" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="維" saoffset="627" salength="1" rank="89">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Dimension Records">12696140</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Kodaira dimension">1866873</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Dimension">8398</tobep>
@@ -1022,8 +1022,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Dimension Jump">11700000</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="購買" aoffset="630" alength="2" ext_length="1">
-				<subanchor sarel="0" saname="購買" saoffset="630" salength="2" rank="34">
+			<anchor arel="1" aname="購買" aoffset="630" alength="2" ext_length="1">
+				<subanchor sarel="-1" saname="購買" saoffset="630" salength="2" rank="34">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Pig in a poke">1087117</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Purchasing">1313172</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Buyō">365992</tobep>
@@ -1039,16 +1039,16 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Buy (town)">464025</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Buy (album)">14983841</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="購買力" saoffset="630" salength="3" rank="13">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Purchasing">1313172</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Constant Purchasing Power Accounting">20681325</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Relative Purchasing Power Parity">25041796</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Inflation accounting">12229474</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Group purchasing organization">1660162</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Purchasing power">217149</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Purchasing power parity">64489</tobep>
+				<subanchor sarel="1" saname="購買力" saoffset="630" salength="3" rank="13">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Purchasing">1313172</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Constant Purchasing Power Accounting">20681325</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Relative Purchasing Power Parity">25041796</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Inflation accounting">12229474</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Group purchasing organization">1660162</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Purchasing power">217149</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Purchasing power parity">64489</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="力" saoffset="632" salength="1" rank="40">
+				<subanchor sarel="-1" saname="力" saoffset="632" salength="1" rank="40">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Driving Force (3rd Force album)">11937068</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of United States Air Force Field Operating Agencies">5922061</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Space Force (Action Force)">13130124</tobep>
@@ -1079,8 +1079,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Paul Kerrigan">22575549</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="身" aoffset="638" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="身" saoffset="638" salength="1" rank="64">
+			<anchor arel="-1" aname="身" aoffset="638" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="身" saoffset="638" salength="1" rank="64">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Body (song)">13386200</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Countries in International Organization for Standardization">8951287</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Body fat percentage">3937909</tobep>
@@ -1099,8 +1099,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Grammatical person">42076</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="無" aoffset="640" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="無" saoffset="640" salength="1" rank="81">
+			<anchor arel="-1" aname="無" aoffset="640" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="無" saoffset="640" salength="1" rank="81">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Royal Air Force wings">10637748</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mu (negative)">440118</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="No, No, No">6654853</tobep>
@@ -1120,8 +1120,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Desert Island Discs episodes (1951 – 1960)">26203772</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="內" aoffset="641" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="內" saoffset="641" salength="1" rank="110">
+			<anchor arel="-1" aname="內" aoffset="641" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="內" saoffset="641" salength="1" rank="110">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="The Covenant, The Sword, and the Arm of the Lord">1851602</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Shen Kuo">1102000</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Appenzell Innerrhoden">318487</tobep>
@@ -1199,8 +1199,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of extreme points lists">20089853</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="國" aoffset="677" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="國" saoffset="677" salength="1" rank="77">
+			<anchor arel="1" aname="國" aoffset="677" alength="1" ext_length="1">
+				<subanchor sarel="-1" saname="國" saoffset="677" salength="1" rank="77">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Kuomintang">16903</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Standard Mandarin">24657</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Administrative divisions of Burma">493383</tobep>
@@ -1222,18 +1222,18 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="China">5042862</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="California Freeway and Expressway System">4441115</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="國家" saoffset="677" salength="2" rank="17">
+				<subanchor sarel="1" saname="國家" saoffset="677" salength="2" rank="17">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Administrative divisions of Burma">493383</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Political divisions of Mexico">87990</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="States of Nigeria">226734</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of sovereign states">68253</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Country">5165</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Country">5165</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of numbered highways in Georgia (U.S. state)">1898899</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="State within a state">18880664</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of State Roads in Florida">3397610</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Republic of Ireland national football team">578510</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="States of Brazil">229379</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Nation">21754</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Nation">21754</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="State to State 2">24096969</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Maryland state highways (400–599)">26649588</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="State by State">20161572</tobep>
@@ -1244,7 +1244,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="State to State">24096803</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="California Freeway and Expressway System">4441115</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="家" saoffset="678" salength="1" rank="55">
+				<subanchor sarel="-1" saname="家" saoffset="678" salength="1" rank="55">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="House">13590</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Botany">4183</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="2009 Canadian Championship">19987414</tobep>
@@ -1267,8 +1267,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Home (Home album)">28084111</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="銀" aoffset="680" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="銀" saoffset="680" salength="1" rank="27">
+			<anchor arel="1" aname="銀" aoffset="680" alength="1" ext_length="1">
+				<subanchor sarel="-1" saname="銀" saoffset="680" salength="1" rank="27">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Silver City Historic District (Silver City, New Mexico)">24610972</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Silver medal">526647</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Silver (color)">974623</tobep>
@@ -1283,7 +1283,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="2007 Air New Zealand Cup">8365536</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Silver High School (Silver City, NM)">20578369</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="銀行" saoffset="680" salength="2" rank="9">
+				<subanchor sarel="1" saname="銀行" saoffset="680" salength="2" rank="9">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of banks in the Arab World">27808297</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of bank mergers in the United States">1058241</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bank-Monument station">252295</tobep>
@@ -1291,7 +1291,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="State Bank Building, Decatur Branch (Old State Bank)">3388276</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bank of England">4484</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of banks in Hong Kong">1576456</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bank">19360669</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bank">19360669</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of banks in India">10985409</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bankə">18872171</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Central Bank of Denver v. First Interstate Bank of Denver">19656817</tobep>
@@ -1345,8 +1345,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="First baseman">581933</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="種" aoffset="692" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="種" saoffset="692" salength="1" rank="16">
+			<anchor arel="-1" aname="種" aoffset="692" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="種" saoffset="692" salength="1" rank="16">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Salticidae genera">5823703</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Phytoseiidae">9264393</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Kimera (species)">2512099</tobep>
@@ -1382,8 +1382,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of number fields with class number one">22779719</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="外" aoffset="696" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="外" saoffset="696" salength="1" rank="117">
+			<anchor arel="-1" aname="外" aoffset="696" alength="1" ext_length="1">
+				<subanchor sarel="-1" saname="外" saoffset="696" salength="1" rank="117">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Outside (George Michael song)">3232248</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Outfielder">528703</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Outside">1268088</tobep>
@@ -1400,7 +1400,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Inside/outside">2965877</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Outside (Staind song)">6892882</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="外幣" saoffset="696" salength="2" rank="6">
+				<subanchor sarel="-1" saname="外幣" saoffset="696" salength="2" rank="6">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Currency (2009 film)">26614055</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Currency union">1179606</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Alternative currency">2384990</tobep>
@@ -1417,24 +1417,24 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Currency Act">937486</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="掛鈎" aoffset="698" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="掛鈎" saoffset="698" salength="2" rank="18">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Link rot">365511</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Link+">1571552</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Linked exchange rate">2062685</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Link (film)">1705406</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of diplomatic missions in Russia">13591903</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Johann Heinrich Friedrich Link">1437141</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="South Link (Link Light Rail)">12786645</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Link (comics)">10253644</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of parties to the Biological Weapons Convention">18638946</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Link (The Legend of Zelda)">488714</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Universal theme park attractions">27824227</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Holocaust survivors">1974988</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Mexico City metro stations">23913391</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hyperlink">49547</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Strong link weak link">9990961</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Link">41319</tobep>
+			<anchor arel="1" aname="掛鈎" aoffset="698" alength="2" ext_length="0">
+				<subanchor sarel="1" saname="掛鈎" saoffset="698" salength="2" rank="18">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Link rot">365511</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Link+">1571552</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Linked exchange rate">2062685</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Link (film)">1705406</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of diplomatic missions in Russia">13591903</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Johann Heinrich Friedrich Link">1437141</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="South Link (Link Light Rail)">12786645</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Link (comics)">10253644</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of parties to the Biological Weapons Convention">18638946</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Link (The Legend of Zelda)">488714</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Universal theme park attractions">27824227</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Holocaust survivors">1974988</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Mexico City metro stations">23913391</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hyperlink">49547</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Strong link weak link">9990961</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Link">41319</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="以" aoffset="702" alength="1" ext_length="0">
@@ -1458,17 +1458,17 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Israel">9282173</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="外匯儲備" aoffset="705" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="外匯儲備" saoffset="705" salength="4" rank="1">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of countries by foreign exchange reserves">1569780</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Foreign exchange reserves of the People&apos;s Republic of China">9187042</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Foreign exchange">240722</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Chiang Mai Initiative">17025762</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="State Administration of Foreign Exchange">7489616</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Foreign exchange reserves">1015869</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Foreign exchange service">41164</tobep>
+			<anchor arel="1" aname="外匯儲備" aoffset="705" alength="4" ext_length="0">
+				<subanchor sarel="1" saname="外匯儲備" saoffset="705" salength="4" rank="1">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of countries by foreign exchange reserves">1569780</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Foreign exchange reserves of the People&apos;s Republic of China">9187042</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Foreign exchange">240722</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Chiang Mai Initiative">17025762</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="State Administration of Foreign Exchange">7489616</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Foreign exchange reserves">1015869</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Foreign exchange service">41164</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="儲" saoffset="707" salength="1" rank="62">
+				<subanchor sarel="-1" saname="儲" saoffset="707" salength="1" rank="62">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Retailing">183515</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of IKEA stores">16937934</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Lotte Department Store">4770080</tobep>
@@ -1484,23 +1484,23 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Store brand">876348</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Store">220068</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="儲備" saoffset="707" salength="2" rank="12">
+				<subanchor sarel="-1" saname="儲備" saoffset="707" salength="2" rank="12">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Actuarial reserves">4474244</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="匯價" aoffset="712" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="匯價" saoffset="712" salength="2" rank="15">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Linked exchange rate">2062685</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Floating exchange rate">1412396</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Fixed exchange rate">1412416</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="NATREX">10052715</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mundell–Fleming model">2237734</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Exchange rate regime">1317660</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Exchange rate flexibility">21534953</tobep>
+			<anchor arel="1" aname="匯價" aoffset="712" alength="2" ext_length="0">
+				<subanchor sarel="1" saname="匯價" saoffset="712" salength="2" rank="15">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Linked exchange rate">2062685</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Floating exchange rate">1412396</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Fixed exchange rate">1412416</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="NATREX">10052715</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mundell–Fleming model">2237734</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Exchange rate regime">1317660</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Exchange rate flexibility">21534953</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="水" aoffset="718" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="水" saoffset="718" salength="1" rank="26">
+			<anchor arel="-1" aname="水" aoffset="718" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="水" saoffset="718" salength="1" rank="26">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Water/Water news">3276706</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Water-in-water emulsion">12282627</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Properties of water">24027000</tobep>
@@ -1521,8 +1521,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mercury (planet)">19694</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="平" aoffset="719" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="平" saoffset="719" salength="1" rank="87">
+			<anchor arel="-1" aname="平" aoffset="719" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="平" saoffset="719" salength="1" rank="87">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Jean Ping">767788</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ping An Insurance">1283692</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ngong Ping 360">1840321</tobep>
@@ -1542,8 +1542,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Beijing">18603746</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="任" aoffset="730" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="任" saoffset="730" salength="1" rank="84">
+			<anchor arel="-1" aname="任" aoffset="730" alength="1" ext_length="1">
+				<subanchor sarel="-1" saname="任" saoffset="730" salength="1" rank="84">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Move Any Mountain">6013663</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="How Can Any Thing So Little Be Any More?">4538884</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="The Rich List (New Zealand game show)">11729698</tobep>
@@ -1556,7 +1556,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Yam Kim-fai">9441283</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Říčany">6854028</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="任何" saoffset="730" salength="2" rank="90">
+				<subanchor sarel="-1" saname="任何" saoffset="730" salength="2" rank="90">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Move Any Mountain">6013663</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="How Can Any Thing So Little Be Any More?">4538884</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="The Rich List (New Zealand game show)">11729698</tobep>
@@ -1569,7 +1569,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Any Time, Any Place">1685952</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Říčany">6854028</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="何" saoffset="731" salength="1" rank="48">
+				<subanchor sarel="-1" saname="何" saoffset="731" salength="1" rank="48">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ho language">1519104</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ho, Ghana">697703</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="China Television">2515046</tobep>
@@ -1592,9 +1592,9 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ho ho ho">1823109</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="錨" aoffset="732" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="錨" saoffset="732" salength="1" rank="10">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="WINS (AM)">1841126</tobep>
+			<anchor arel="1" aname="錨" aoffset="732" alength="1" ext_length="0">
+				<subanchor sarel="1" saname="錨" saoffset="732" salength="1" rank="10">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="WINS (AM)">1841126</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Canadian journalists">3283558</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="WDEF-TV">2156509</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Anchor, Illinois">111672</tobep>
@@ -1606,32 +1606,32 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="KYMA-DT">3228139</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of ESPNews personalities">4508490</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Screw anchor">3080984</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Anchor">1358</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Anchor">1358</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Anchor Brewery">928527</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="自由" aoffset="738" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="自由" saoffset="738" salength="2" rank="25">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Liberalism">19280734</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Freedom of the Press (report)">22714797</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Liberty">936385</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Free transfer (football)">1684181</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Freedom in the World 2007 (report)">27578720</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Free (Free album)">2593279</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Freedom in the World 2010 (report)">27578556</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tavisupleba">803493</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Freedom in the World (report)">5250937</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Clothes free/Clothes free topics">4441711</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Free (rapper)">1312353</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Free software">10635</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Free">10636</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Freedom in the World 2009 (report)">27578656</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Free at Last (Free album)">2621562</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Free Free/Super Music Maker">12254008</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Gluten-free, casein-free diet">195522</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Free (band)">269523</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Freelancer">484030</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Free module">326454</tobep>
+			<anchor arel="1" aname="自由" aoffset="738" alength="2" ext_length="0">
+				<subanchor sarel="1" saname="自由" saoffset="738" salength="2" rank="25">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Liberalism">19280734</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Freedom of the Press (report)">22714797</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Liberty">936385</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Free transfer (football)">1684181</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Freedom in the World 2007 (report)">27578720</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Free (Free album)">2593279</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Freedom in the World 2010 (report)">27578556</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tavisupleba">803493</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Freedom in the World (report)">5250937</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Clothes free/Clothes free topics">4441711</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Free (rapper)">1312353</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Free software">10635</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Free">10636</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Freedom in the World 2009 (report)">27578656</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Free at Last (Free album)">2621562</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Free Free/Super Music Maker">12254008</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Gluten-free, casein-free diet">195522</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Free (band)">269523</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Freelancer">484030</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Free module">326454</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="動" aoffset="741" alength="1" ext_length="0">
@@ -1666,8 +1666,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Rely">7025385</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="控" aoffset="748" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="控" saoffset="748" salength="1" rank="93">
+			<anchor arel="-1" aname="控" aoffset="748" alength="1" ext_length="1">
+				<subanchor sarel="-1" saname="控" saoffset="748" salength="1" rank="93">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Control system (disambiguation)">23852937</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Concurrency control">217356</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Control (Puddle of Mudd song)">3057446</tobep>
@@ -1685,14 +1685,14 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Control point (orienteering)">19517364</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of people in systems and control">100643</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="控制" saoffset="748" salength="2" rank="39">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Control system (disambiguation)">23852937</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Concurrency control">217356</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Control (Puddle of Mudd song)">3057446</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Control (2004 film)">13828139</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Control engineering">7011</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Control-\">9211060</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of United States Air Force aircraft control and warning squadrons">23424750</tobep>
+				<subanchor sarel="-1" saname="控制" saoffset="748" salength="2" rank="39">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Control system (disambiguation)">23852937</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Concurrency control">217356</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Control (Puddle of Mudd song)">3057446</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Control (2004 film)">13828139</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Control engineering">7011</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Control-\">9211060</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of United States Air Force aircraft control and warning squadrons">23424750</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="U-Control">4664006</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Control Car Remote Control Locomotive">1440754</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Control (Janet Jackson album)">497639</tobep>
@@ -1702,7 +1702,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Control point (orienteering)">19517364</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of people in systems and control">100643</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="制" saoffset="749" salength="1" rank="109">
+				<subanchor sarel="-1" saname="制" saoffset="749" salength="1" rank="109">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Berlin S-Bahn stations">525806</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="System V printing system">469954</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="System">8286675</tobep>
@@ -1739,15 +1739,15 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Volume Five (Volume magazine album)">6157724</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="歷史" aoffset="768" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="歷史" saoffset="768" salength="2" rank="24">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Design history">8960255</tobep>
+			<anchor arel="1" aname="歷史" aoffset="768" alength="2" ext_length="0">
+				<subanchor sarel="1" saname="歷史" saoffset="768" salength="2" rank="24">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Design history">8960255</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:History of Canada/History of Canada category">27325518</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="History">10772350</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="History">10772350</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Historiography">13276</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="History of Taiwan">53393</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Index of history articles">6830515</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Outline of history">3402732</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Outline of history">3402732</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Video games/Featured article">7145648</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Histories (Herodotus)">752522</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="History (TV channel)">748853</tobep>
@@ -1761,7 +1761,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="History of China">5760</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="History (The Verve song)">2887204</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="史" saoffset="769" salength="1" rank="58">
+				<subanchor sarel="-1" saname="史" saoffset="769" salength="1" rank="58">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Design history">8960255</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:History of Canada/History of Canada category">27325518</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="History">10772350</tobep>
@@ -1781,8 +1781,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="History (The Verve song)">2887204</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="上" aoffset="770" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="上" saoffset="770" salength="1" rank="98">
+			<anchor arel="-1" aname="上" aoffset="770" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="上" saoffset="770" salength="1" rank="98">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Emperor Jing of Han">339079</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="On">2102103</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Lantern Festival">463617</tobep>
@@ -1804,8 +1804,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Songbird: Rare Tracks and Forgotten Gems">13232830</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="強" aoffset="774" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="強" saoffset="774" salength="1" rank="85">
+			<anchor arel="-1" aname="強" aoffset="774" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="強" saoffset="774" salength="1" rank="85">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Strong (song)">2867623</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Strong women strong girls">26126189</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Geoff Strong">2654342</tobep>
@@ -1821,8 +1821,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Strong Bad">258795</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="紙" aoffset="778" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="紙" saoffset="778" salength="1" rank="22">
+			<anchor arel="1" aname="紙" aoffset="778" alength="1" ext_length="1">
+				<subanchor sarel="-1" saname="紙" saoffset="778" salength="1" rank="22">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Continental Paper Bag Co. v. Eastern Paper Bag Co.">4820211</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Paper plane">1129697</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Paper (magazine)">16619622</tobep>
@@ -1837,33 +1837,33 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Paper Blood">18776808</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Papermaking">142475</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="紙鈔" saoffset="778" salength="2" rank="7">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Billé">13536492</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bill (Bill Cosby album)">15965652</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bill Barlee">1979036</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bill (Kill Bill)">919456</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bill">4869</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Banknote">208286</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Act of Parliament">145166</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bill Clinton">3356</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bill (proposed law)">377411</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bill (Show Boat)">19205560</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bill (1981 film)">5319784</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bill Dauterive">20201538</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Legislation of the Provisional Government of Hong Kong">19545431</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of RiffTrax">19367783</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bill and Lizzie">16680717</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Beta Ray Bill">1145037</tobep>
+				<subanchor sarel="1" saname="紙鈔" saoffset="778" salength="2" rank="7">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Billé">13536492</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bill (Bill Cosby album)">15965652</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bill Barlee">1979036</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bill (Kill Bill)">919456</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bill">4869</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Banknote">208286</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Act of Parliament">145166</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bill Clinton">3356</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bill (proposed law)">377411</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bill (Show Boat)">19205560</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bill (1981 film)">5319784</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bill Dauterive">20201538</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Legislation of the Provisional Government of Hong Kong">19545431</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of RiffTrax">19367783</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bill and Lizzie">16680717</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Beta Ray Bill">1145037</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="非" aoffset="782" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="非" saoffset="782" salength="1" rank="36">
+			<anchor arel="-1" aname="非" aoffset="782" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="非" saoffset="782" salength="1" rank="36">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Africa">5334607</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Negation">161019</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="金" aoffset="785" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="金" saoffset="785" salength="1" rank="30">
+			<anchor arel="1" aname="金" aoffset="785" alength="1" ext_length="1">
+				<subanchor sarel="-1" saname="金" saoffset="785" salength="1" rank="30">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Gold (radio)">948066</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="RIAA certification">308159</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Touch Gold">11818576</tobep>
@@ -1883,24 +1883,24 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Gold medal">526488</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Gold Coast">59248</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="金屬" saoffset="785" salength="2" rank="8">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Metallicity">1129919</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Metal (Annihilator album)">9759835</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Metal On Metal">6868174</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Heavy metal subgenres">413723</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Christian metal/Christian metal news">15306476</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Metal (Manilla Road album)">2412709</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Season of Mist">1264630</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Christian metal bands">2155581</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Metal">19042</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of symphonic metal bands">10121324</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Extreme metal">633178</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Heavy metal/Metal WikiProject">25663231</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Heavy metal music">13869</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Metal on Metal">23301436</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Metal (Wu Xing)">659915</tobep>
+				<subanchor sarel="1" saname="金屬" saoffset="785" salength="2" rank="8">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Metallicity">1129919</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Metal (Annihilator album)">9759835</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Metal On Metal">6868174</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Heavy metal subgenres">413723</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Christian metal/Christian metal news">15306476</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Metal (Manilla Road album)">2412709</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Season of Mist">1264630</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Christian metal bands">2155581</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Metal">19042</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of symphonic metal bands">10121324</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Extreme metal">633178</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Heavy metal/Metal WikiProject">25663231</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Heavy metal music">13869</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Metal on Metal">23301436</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Metal (Wu Xing)">659915</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="屬" saoffset="786" salength="1" rank="21">
+				<subanchor sarel="-1" saname="屬" saoffset="786" salength="1" rank="21">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Isaz">1579113</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Is Is">11778974</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Isaiah">15088</tobep>
@@ -1918,10 +1918,10 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Is Underground">8837068</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="銅" aoffset="789" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="銅" saoffset="789" salength="1" rank="38">
+			<anchor arel="1" aname="銅" aoffset="789" alength="1" ext_length="0">
+				<subanchor sarel="1" saname="銅" saoffset="789" salength="1" rank="38">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bronze medal">526648</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Copper">125293</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Copper">125293</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Copper mining in Arizona">12728719</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Copper mining in the United States">11572520</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Chalcolithic">7446</tobep>
@@ -1936,14 +1936,14 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Copper-copper(II) sulfate electrode">1519267</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="鎳" aoffset="791" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="鎳" saoffset="791" salength="1" rank="2">
+			<anchor arel="1" aname="鎳" aoffset="791" alength="1" ext_length="0">
+				<subanchor sarel="1" saname="鎳" saoffset="791" salength="1" rank="2">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Lateritic nickel ore deposits">11927499</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Edith Nickel">23801162</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hyperaccumulators table – 2 : Nickel">7469344</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Nickel titanium">8305325</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="New York, Chicago and St. Louis Railroad">891699</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Nickel">21274</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Nickel">21274</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Nickel (United States coin)">358546</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Elbie Nickel">10211537</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Raney nickel">1706275</tobep>
@@ -1953,14 +1953,14 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hobo nickel">2139673</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="等" aoffset="792" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="等" saoffset="792" salength="1" rank="62">
+			<anchor arel="-1" aname="等" aoffset="792" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="等" saoffset="792" salength="1" rank="62">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Absolute magnitude">1963</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Apparent magnitude">1962</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="材" aoffset="793" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="材" saoffset="793" salength="1" rank="49">
+			<anchor arel="-1" aname="材" aoffset="793" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="材" saoffset="793" salength="1" rank="49">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Goatskin (material)">2982762</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mechanical screening">9567916</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Biotic material">5551560</tobep>
@@ -1977,8 +1977,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ultimate failure">6945717</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="硬" aoffset="797" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="硬" saoffset="797" salength="1" rank="76">
+			<anchor arel="1" aname="硬" aoffset="797" alength="1" ext_length="1">
+				<subanchor sarel="-1" saname="硬" saoffset="797" salength="1" rank="76">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="The Goods: Live Hard, Sell Hard">23292052</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hard money loan">2679986</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Darlene Hard">2299159</tobep>
@@ -1995,8 +1995,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="It Ain&apos;t Hard to Tell">1869508</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hard (song)">24951685</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="硬幣" saoffset="797" salength="2" rank="4">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Nepalese coins">9254769</tobep>
+				<subanchor sarel="1" saname="硬幣" saoffset="797" salength="2" rank="4">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Nepalese coins">9254769</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tintin coins">11274530</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="COinS">8272354</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Coins of the New Zealand dollar">10586177</tobep>
@@ -2005,18 +2005,18 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="First Strike Coins">7018514</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hong Kong dollar">309734</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Coins of the United States dollar">32333</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Commemorative coin">374707</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Coinage of Asia">3673755</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Commemorative coin">374707</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Coinage of Asia">3673755</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Solidus">59353</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Roman currency">299259</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Euro starter kits">17563285</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Coin">7558</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="History of coins">367137</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Coin">7558</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="History of coins">367137</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Euro coins">53939</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="前" aoffset="805" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="前" saoffset="805" salength="1" rank="59">
+			<anchor arel="-1" aname="前" aoffset="805" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="前" saoffset="805" salength="1" rank="59">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of the first X-ray source in a constellation">26532092</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of members of the sixth Knesset">24457044</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Former Shu">2833674</tobep>
@@ -2032,8 +2032,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Front vowel">594845</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="大" aoffset="807" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="大" saoffset="807" salength="1" rank="95">
+			<anchor arel="-1" aname="大" aoffset="807" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="大" saoffset="807" salength="1" rank="95">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Large regiment">19774363</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="At-large">3995387</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Large Tortoiseshell">2221095</tobep>
@@ -2055,8 +2055,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="@Large">21518163</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="多" aoffset="808" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="多" saoffset="808" salength="1" rank="104">
+			<anchor arel="-1" aname="多" aoffset="808" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="多" saoffset="808" salength="1" rank="104">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mòoré language">771783</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Thomas More">30479</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="More! More! More!">21003392</tobep>
@@ -2074,8 +2074,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Thomas More (disambiguation)">24279779</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="流" aoffset="810" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="流" saoffset="810" salength="1" rank="70">
+			<anchor arel="-1" aname="流" aoffset="810" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="流" saoffset="810" salength="1" rank="70">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Flow (video game)">5970645</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Stopped flow">5679766</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Flow limiter">19604059</tobep>
@@ -2092,8 +2092,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Flow measurement">221047</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="兩" aoffset="832" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="兩" saoffset="832" salength="1" rank="54">
+			<anchor arel="-1" aname="兩" aoffset="832" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="兩" saoffset="832" salength="1" rank="54">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="BBC Two">160949</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Jacob Two-Two">4322295</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Redistribution of Seats Act 1885">2821917</tobep>
@@ -2151,17 +2151,17 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="September 11 attacks opinion polls">12711627</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="商品貨幣" aoffset="840" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="商品貨幣" saoffset="840" salength="4" rank="3">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Commodity production">27511822</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="History of money">2763667</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Capital, Volume I">8937649</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Commodity (Marxism)">11290420</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Money, Money, Money">3590021</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Commodity cell">11158526</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Commodity">48218</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Money">8983183</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Commodity money">48152</tobep>
+			<anchor arel="1" aname="商品貨幣" aoffset="840" alength="4" ext_length="0">
+				<subanchor sarel="1" saname="商品貨幣" saoffset="840" salength="4" rank="3">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Commodity production">27511822</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="History of money">2763667</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Capital, Volume I">8937649</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Commodity (Marxism)">11290420</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Money, Money, Money">3590021</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Commodity cell">11158526</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Commodity">48218</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Money">8983183</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Commodity money">48152</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="參" aoffset="885" alength="1" ext_length="0">
@@ -2178,8 +2178,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Japan men&apos;s national water polo team">22384987</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="見" aoffset="886" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="見" saoffset="886" salength="1" rank="106">
+			<anchor arel="-1" aname="見" aoffset="886" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="見" saoffset="886" salength="1" rank="106">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Foreign relations of the United States">24296062</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="See District">26715212</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ambassadors and High Commissioners from Canada">574682</tobep>
@@ -2213,8 +2213,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Estrellas en el Hielo (season 2)">20009094</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="學" aoffset="988" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="學" saoffset="988" salength="1" rank="112">
+			<anchor arel="-1" aname="學" aoffset="988" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="學" saoffset="988" salength="1" rank="112">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Science education">181889</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hugo Award for Best Novelette">418595</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Science in science fiction">13670898</tobep>
