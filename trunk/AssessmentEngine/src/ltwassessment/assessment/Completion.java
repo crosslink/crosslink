@@ -72,6 +72,7 @@ public class Completion implements Observer {
 
 	public void reset() {
 	    totalLinks = 0;
-	    finishedLinks = 0;	
+	    finishedLinks = 0;
+	    displayCompletion();
 	}
 }
