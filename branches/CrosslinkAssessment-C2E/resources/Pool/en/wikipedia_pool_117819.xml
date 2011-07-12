@@ -1603,8 +1603,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Fine, New York">127182</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="拆分" aoffset="739" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="拆分" saoffset="739" salength="2" rank="28">
+			<anchor arel="-1" aname="拆分" aoffset="739" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="拆分" saoffset="739" salength="2" rank="28">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Split">1582200</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Fuck the Facts songs">18852529</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="1992 European Junior Swimming Championships">20162661</tobep>
@@ -1621,7 +1621,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="2006 European Junior Swimming Championships">28017473</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Split billing">24983938</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="分" saoffset="740" salength="1" rank="71">
+				<subanchor sarel="-1" saname="分" saoffset="740" salength="1" rank="71">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of AFL Minor Premiers">24027267</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Minute">19372</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Points, West Virginia">2548396</tobep>
@@ -1669,11 +1669,11 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Districts of Bangladesh">2248943</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="違約機率" aoffset="753" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="違約機率" saoffset="753" salength="4" rank="0">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Probability of default">8543960</tobep>
+			<anchor arel="1" aname="違約機率" aoffset="753" alength="4" ext_length="0">
+				<subanchor sarel="1" saname="違約機率" saoffset="753" salength="4" rank="0">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Probability of default">8543960</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="機" saoffset="755" salength="1" rank="110">
+				<subanchor sarel="-1" saname="機" saoffset="755" salength="1" rank="110">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Abstract machine">60492</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Machine II Machine">26195262</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Machine (Static-X album)">351596</tobep>
@@ -1690,7 +1690,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Time Machine series">27602158</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Machine">51462</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="機率" saoffset="755" salength="2" rank="9">
+				<subanchor sarel="-1" saname="機率" saoffset="755" salength="2" rank="9">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Glossary of probability and statistics">2142850</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Applied probability">366719</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of probability topics">408108</tobep>
@@ -1724,8 +1724,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="After">1629839</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="回" aoffset="784" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="回" saoffset="784" salength="1" rank="55">
+			<anchor arel="-1" aname="回" aoffset="784" alength="1" ext_length="1">
+				<subanchor sarel="-1" saname="回" saoffset="784" salength="1" rank="55">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Back-to-back connection">40765</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Running back">295079</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Human back">3524381</tobep>
@@ -1744,19 +1744,19 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hui people">152830</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Back to Back (album)">5951032</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="回收" saoffset="784" salength="2" rank="21">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ship-Submarine Recycling Program">29091</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Recycling">70157</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Timber recycling">10448817</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Recycling in the United States">7709125</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Electronic waste in the United States">25711799</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Recursive recycling">7099209</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Recycling in the United Kingdom">11866362</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Recycling codes">10699036</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Paint recycling">22886704</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Recycling bin">1953261</tobep>
+				<subanchor sarel="-1" saname="回收" saoffset="784" salength="2" rank="21">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ship-Submarine Recycling Program">29091</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Recycling">70157</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Timber recycling">10448817</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Recycling in the United States">7709125</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Electronic waste in the United States">25711799</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Recursive recycling">7099209</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Recycling in the United Kingdom">11866362</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Recycling codes">10699036</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Paint recycling">22886704</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Recycling bin">1953261</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="收" saoffset="785" salength="1" rank="130">
+				<subanchor sarel="-1" saname="收" saoffset="785" salength="1" rank="130">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="State income tax">1416094</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Income">15037</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of countries by per capita personal income">15045331</tobep>
@@ -1793,10 +1793,10 @@
 			</anchor>
 			<anchor arel="0" aname="本金" aoffset="805" alength="2" ext_length="0">
 				<subanchor sarel="0" saname="本金" saoffset="805" salength="2" rank="20">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Principal boy">1347452</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Head teacher">833159</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Dean (education)">1642893</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Placentia-Yorba Linda Unified School District">1948013</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Principal boy">1347452</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Head teacher">833159</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Dean (education)">1642893</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Placentia-Yorba Linda Unified School District">1948013</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Population Growth of Munich">10775200</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Dean (Christianity)">1961924</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Williamson County Schools">5992694</tobep>
