@@ -4222,7 +4222,7 @@
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Principality of Antioch">256387</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="领土" aoffset="3406" alength="2" ext_length="0">
+			<anchor arel="1" aname="领土" aoffset="3406" alength="2" ext_length="0">
 				<subanchor sarel="1" saname="领土" saoffset="3406" salength="2" rank="200">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of sovereign states in 1949">7422438</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of counties in Colorado">81600</tobep>
@@ -4237,54 +4237,54 @@
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Territory">212970</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Territorial evolution of the United States">6174697</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Territory (album)">24262019</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of former United States counties">583181</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Indian Territory">57193</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of former United States counties">583181</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Indian Territory">57193</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="海" aoffset="3410" alength="1" ext_length="3">
-				<subanchor sarel="0" saname="海" saoffset="3410" salength="1" rank="163">
+			<anchor arel="1" aname="海" aoffset="3410" alength="1" ext_length="3">
+				<subanchor sarel="-1" saname="海" saoffset="3410" salength="1" rank="163">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="SEA">383810</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sea">18842323</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="海峡" saoffset="3410" salength="2" rank="189">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="English Channel">9230</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of television stations in Texas (by channel number)">778721</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Channel (broadcasting)">4051799</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of television stations in Oklahoma (by channel number)">13710016</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Discovery Channel (UK TV channel)">6116329</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Secure channel">592935</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of television stations in New York (by region)">334061</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Strait">58646</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Discovery Channel (South East Asian TV channel)">26368876</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Channel">40860</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of television stations in Florida (by channel number)">1851033</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Channel (geography)">851853</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Television channel">29840</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Channel Five (UK TV channel)">6412330</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Astro channels">13279168</tobep>
+				<subanchor sarel="1" saname="海峡" saoffset="3410" salength="2" rank="189">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="English Channel">9230</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of television stations in Texas (by channel number)">778721</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Channel (broadcasting)">4051799</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of television stations in Oklahoma (by channel number)">13710016</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Discovery Channel (UK TV channel)">6116329</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Secure channel">592935</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of television stations in New York (by region)">334061</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Strait">58646</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Discovery Channel (South East Asian TV channel)">26368876</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Channel">40860</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of television stations in Florida (by channel number)">1851033</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Channel (geography)">851853</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Television channel">29840</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Channel Five (UK TV channel)">6412330</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Astro channels">13279168</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="海峡群岛" saoffset="3410" salength="4" rank="58">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Occupation of the Channel Islands">4194077</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Spotlight (BBC News)">3227205</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Channel Islands Stock Exchange">18375207</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Channels of the Hawaiian Islands">17133</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Channel Islands">5643</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="BBC Channel Islands">23031459</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Pep flags">7527173</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Channel Islands Beach, California">118291</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Channel Islands National Park">330463</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Safeway (Channel Islands)">26447004</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Channel Islands of California">330454</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bailiff (Channel Islands)">358308</tobep>
+				<subanchor sarel="1" saname="海峡群岛" saoffset="3410" salength="4" rank="58">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Occupation of the Channel Islands">4194077</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Spotlight (BBC News)">3227205</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Channel Islands Stock Exchange">18375207</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Channels of the Hawaiian Islands">17133</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Channel Islands">5643</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="BBC Channel Islands">23031459</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Pep flags">7527173</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Channel Islands Beach, California">118291</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Channel Islands National Park">330463</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Safeway (Channel Islands)">26447004</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Channel Islands of California">330454</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bailiff (Channel Islands)">358308</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="群" saoffset="3412" salength="1" rank="150">
+				<subanchor sarel="-1" saname="群" saoffset="3412" salength="1" rank="150">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Topological group">42315</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Utility Group">19062624</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="The Swarm (novel)">9695498</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Group (mathematics)">19447</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Community">5695</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="群岛" saoffset="3412" salength="2" rank="245">
+				<subanchor sarel="-1" saname="群岛" saoffset="3412" salength="2" rank="245">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of archipelagos">9248629</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Southern Gothenburg Archipelago">1835305</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Swan Islands, Falkland Islands">8203491</tobep>
@@ -4305,47 +4305,47 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Leeward Islands (Society Islands)">1602662</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="女王伊丽莎白二世" aoffset="3418" alength="8" ext_length="0">
-				<subanchor sarel="0" saname="女王伊丽莎白二世" saoffset="3418" salength="8" rank="14">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="United Kingdom">31717</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Royal eponyms in Canada">23400070</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Elizabeth II">12153654</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Queen Elizabeth Hospital">2646067</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Queen Elizabeth School">1339595</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Monarchy of New Zealand">720425</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Monarchy of Canada">56504</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="RMS Queen Elizabeth 2">49200</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Cultural depictions of Elizabeth I of England">14303851</tobep>
+			<anchor arel="-1" aname="女王伊丽莎白二世" aoffset="3418" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="女王伊丽莎白二世" saoffset="3418" salength="8" rank="14">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="United Kingdom">31717</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Royal eponyms in Canada">23400070</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Elizabeth II">12153654</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Queen Elizabeth Hospital">2646067</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Queen Elizabeth School">1339595</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Monarchy of New Zealand">720425</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Monarchy of Canada">56504</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="RMS Queen Elizabeth 2">49200</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Cultural depictions of Elizabeth I of England">14303851</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="伊丽莎白二世" saoffset="3420" salength="6" rank="16">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Elizabeth Skinner">12752026</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Royal eponyms in Canada">23400070</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Elizabeth II">12153654</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Elizabeth Webber">11744888</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Elizabeth of Bosnia">5693937</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Title and style of the Canadian monarch">310408</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Monarchy of Canada">56504</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Elizabeth Peacock">4647208</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Elizabeth Wolfgramm">6510897</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Elizabeth Marincola">25933026</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Elizabeth">88283</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Cultural depictions of Elizabeth I of England">14303851</tobep>
+				<subanchor sarel="-1" saname="伊丽莎白二世" saoffset="3420" salength="6" rank="16">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Elizabeth Skinner">12752026</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Royal eponyms in Canada">23400070</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Elizabeth II">12153654</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Elizabeth Webber">11744888</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Elizabeth of Bosnia">5693937</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Title and style of the Canadian monarch">310408</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Monarchy of Canada">56504</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Elizabeth Peacock">4647208</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Elizabeth Wolfgramm">6510897</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Elizabeth Marincola">25933026</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Elizabeth">88283</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Cultural depictions of Elizabeth I of England">14303851</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="头" aoffset="3427" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="头" saoffset="3427" salength="1" rank="198">
+			<anchor arel="1" aname="头" aoffset="3427" alength="1" ext_length="1">
+				<subanchor sarel="-1" saname="头" saoffset="3427" salength="1" rank="198">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Head">1209545</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="头衔" saoffset="3427" salength="2" rank="203">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Title">226160</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="WWE Intercontinental Championship">722875</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of All That episodes">2655016</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Chinese nobility">309437</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Title (property)">226179</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Endurance episodes">9840071</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Title insurance in the United States">563831</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Godzilla Island episodes">9614513</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Oklahoma law">22339286</tobep>
+				<subanchor sarel="1" saname="头衔" saoffset="3427" salength="2" rank="203">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Title">226160</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="WWE Intercontinental Championship">722875</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of All That episodes">2655016</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Chinese nobility">309437</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Title (property)">226179</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Endurance episodes">9840071</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Title insurance in the United States">563831</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Godzilla Island episodes">9614513</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Oklahoma law">22339286</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="1" aname="波" aoffset="3495" alength="1" ext_length="1">
@@ -4527,7 +4527,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tanzania national cricket team">4902076</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="穆斯" aoffset="3715" alength="2" ext_length="1">
+			<anchor arel="1" aname="穆斯" aoffset="3715" alength="2" ext_length="1">
 				<subanchor sarel="-1" saname="穆斯" saoffset="3715" salength="2" rank="159">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Moose (band)">6815619</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Moose, Wyoming">14542091</tobep>
@@ -4550,7 +4550,7 @@
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Muslim ibn Aqeel">2163246</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Muhammad ibn Muslim and Ibraheem ibn Muslim">9010637</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Islam in Sri Lanka">1277499</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Islam in Ethiopia">1274248</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Islam in Ethiopia">1274248</tobep>
 				</subanchor>
 				<subanchor sarel="-1" saname="林" saoffset="3717" salength="1" rank="172">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hayashi">1248427</tobep>
@@ -4558,17 +4558,17 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="日常" aoffset="3718" alength="2" ext_length="2">
-				<subanchor sarel="0" saname="日常" saoffset="3718" salength="2" rank="94">
+				<subanchor sarel="-1" saname="日常" saoffset="3718" salength="2" rank="94">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Nichijou">27435543</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="日常生活" saoffset="3718" salength="4" rank="225">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Newspapers of the Chicago metropolitan area">1265328</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="New York Times Non-Fiction Bestsellers of 2004">18542004</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Dahe Daily">21630283</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Personal life">162456</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Paramhans Swami Maheshwarananda">21919288</tobep>
+				<subanchor sarel="1" saname="日常生活" saoffset="3718" salength="4" rank="225">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Newspapers of the Chicago metropolitan area">1265328</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="New York Times Non-Fiction Bestsellers of 2004">18542004</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Dahe Daily">21630283</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Personal life">162456</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Paramhans Swami Maheshwarananda">21919288</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="生活" saoffset="3720" salength="2" rank="73">
+				<subanchor sarel="-1" saname="生活" saoffset="3720" salength="2" rank="73">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Personal life">162456</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Life (magazine)">187479</tobep>
 				</subanchor>
@@ -4971,7 +4971,7 @@
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Winterton Hospital">22325851</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="阿卜杜拉" aoffset="4072" alength="4" ext_length="2">
+			<anchor arel="1" aname="阿卜杜拉" aoffset="4072" alength="4" ext_length="2">
 				<subanchor sarel="1" saname="阿卜杜拉" saoffset="4072" salength="4" rank="213">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Abdullah Khadr">2103872</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ahmed Ali Abdullah Al Abdullah Tower">17211361</tobep>
@@ -4986,7 +4986,7 @@
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Abdullah Ahmad Badawi">348097</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="‘Abdullah (name)">303864</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="阿卜杜拉亲王" saoffset="4072" salength="6" rank="2">
+				<subanchor sarel="1" saname="阿卜杜拉亲王" saoffset="4072" salength="6" rank="2">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Prince Khalid Abdullah">4129658</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Football at the 2005 Islamic Solidarity Games">19538783</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Prince Abdullah al-Faisal Stadium">2795841</tobep>
@@ -4996,10 +4996,10 @@
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Abdullah I of Jordan">203513</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="2010–11 Saudi Professional League">28054693</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Prince Hashem bin Al Abdullah">8085795</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Prince Abdullah bin Ali">11446059</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Abdullah of Saudi Arabia">19186951</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Prince Abdullah bin Ali">11446059</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Abdullah of Saudi Arabia">19186951</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="杜拉" saoffset="4074" salength="2" rank="186">
+				<subanchor sarel="-1" saname="杜拉" saoffset="4074" salength="2" rank="186">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Dollar, Clackmannanshire">1842232</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ventura (horse)">26106614</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Pontiac Ventura">1375875</tobep>
@@ -5010,20 +5010,20 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ventura County, California">82130</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="副首相" aoffset="4088" alength="3" ext_length="0">
-				<subanchor sarel="0" saname="副首相" saoffset="4088" salength="3" rank="160">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Deputy Prime Minister of New Zealand">333095</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Third Working Cabinet">24274470</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Deputy Prime Minister of Australia">577759</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Deputy Prime Ministers of Luxembourg">6027428</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Deputy Prime Minister">360865</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Deputy Prime Minister of the United Kingdom">162772</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Deputy Prime Minister of Greece">26000295</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Deputy Prime Minister of Canada">255797</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Deputy Prime Minister of Prussia">465401</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Deputy Prime Minister of Malaysia">2218990</tobep>
+			<anchor arel="1" aname="副首相" aoffset="4088" alength="3" ext_length="0">
+				<subanchor sarel="1" saname="副首相" saoffset="4088" salength="3" rank="160">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Deputy Prime Minister of New Zealand">333095</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Third Working Cabinet">24274470</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Deputy Prime Minister of Australia">577759</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Deputy Prime Ministers of Luxembourg">6027428</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Deputy Prime Minister">360865</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Deputy Prime Minister of the United Kingdom">162772</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Deputy Prime Minister of Greece">26000295</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Deputy Prime Minister of Canada">255797</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Deputy Prime Minister of Prussia">465401</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Deputy Prime Minister of Malaysia">2218990</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="首相" saoffset="4089" salength="2" rank="153">
+				<subanchor sarel="-1" saname="首相" saoffset="4089" salength="2" rank="153">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of heads of government of Norway">160261</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of current heads of state and government">380398</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="International Visitor Leadership Program">19202945</tobep>
@@ -5043,23 +5043,23 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Prime Minister of Japan">24833</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="王室" aoffset="4099" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="王室" saoffset="4099" salength="2" rank="235">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Lao Royal Family">17786073</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Spanish Royal Family">2221651</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Royal family">211788</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Nicholas II of Russia">21910</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of French dukedoms">960429</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Greek Royal Family">6212341</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Crown of the Kingdom of Poland">393169</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Royal Family Order">1942554</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="British Royal Family">46542</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="House of Habsburg">13824</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="House of Karađorđević">17294</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Swedish Royal Family">444977</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of French peerages">891581</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Monarchy of Norway">4154892</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Royal house">172832</tobep>
+			<anchor arel="1" aname="王室" aoffset="4099" alength="2" ext_length="0">
+				<subanchor sarel="1" saname="王室" saoffset="4099" salength="2" rank="235">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Lao Royal Family">17786073</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Spanish Royal Family">2221651</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Royal family">211788</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Nicholas II of Russia">21910</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of French dukedoms">960429</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Greek Royal Family">6212341</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Crown of the Kingdom of Poland">393169</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Royal Family Order">1942554</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="British Royal Family">46542</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="House of Habsburg">13824</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="House of Karađorđević">17294</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Swedish Royal Family">444977</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of French peerages">891581</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Monarchy of Norway">4154892</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Royal house">172832</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="1" aname="唐中宗" aoffset="4181" alength="3" ext_length="0">
@@ -5565,22 +5565,22 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Indian wedding photography">22361146</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="歧视" aoffset="4800" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="歧视" saoffset="4800" salength="2" rank="169">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mentalism (discrimination)">19464350</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Religious discrimination">483260</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Price discrimination">156259</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Discrimination">8900</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Employment discrimination">2811532</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Discrimination against atheists">7194871</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Economic discrimination">7989588</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of anti-discrimination acts">2383854</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sectarian Discrimination">25510169</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Anti-Discrimination Act 1977">11283798</tobep>
+			<anchor arel="1" aname="歧视" aoffset="4800" alength="2" ext_length="0">
+				<subanchor sarel="1" saname="歧视" saoffset="4800" salength="2" rank="169">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mentalism (discrimination)">19464350</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Religious discrimination">483260</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Price discrimination">156259</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Discrimination">8900</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Employment discrimination">2811532</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Discrimination against atheists">7194871</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Economic discrimination">7989588</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of anti-discrimination acts">2383854</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sectarian Discrimination">25510169</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Anti-Discrimination Act 1977">11283798</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="基督" aoffset="4828" alength="2" ext_length="3">
-				<subanchor sarel="0" saname="基督" saoffset="4828" salength="2" rank="211">
+			<anchor arel="1" aname="基督" aoffset="4828" alength="2" ext_length="3">
+				<subanchor sarel="-1" saname="基督" saoffset="4828" salength="2" rank="211">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Christ 0">9372870</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Christ. (musician)">314733</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Christ (disambiguation)">11784116</tobep>
@@ -5597,7 +5597,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Christ Church">1188144</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="First Church of Christ, Scientist (disambiguation)">9959386</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="基督教" saoffset="4828" salength="3" rank="88">
+				<subanchor sarel="-1" saname="基督教" saoffset="4828" salength="3" rank="88">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Christian democratic parties">292764</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of members of the Lower Saxon Landtag 2008-present">16310230</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of theological demons">175883</tobep>
@@ -5617,21 +5617,21 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Christian terrorism">566888</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of members of the Lower Saxon Landtag 2003-2008">15297678</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="基督教新教" saoffset="4828" salength="5" rank="122">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="A Protestant Parliament for a Protestant People">16960091</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Protestant Ascendancy">1676049</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Protestant Telegraph">21908841</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Protestantism in China">1715809</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Candidates of the Queensland state election, 1938">25939185</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Protestant Church in the Netherlands">8659</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="P&apos;ent&apos;ay">882152</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Evangelical Church in Germany">213018</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Liverpool Protestant Party">581826</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Church of Ireland">168130</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Protestantism">25814008</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Protestant Wind">725540</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Protestant Bible">27930380</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Protestantism in Cuba">13494208</tobep>
+				<subanchor sarel="1" saname="基督教新教" saoffset="4828" salength="5" rank="122">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="A Protestant Parliament for a Protestant People">16960091</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Protestant Ascendancy">1676049</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Protestant Telegraph">21908841</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Protestantism in China">1715809</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Candidates of the Queensland state election, 1938">25939185</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Protestant Church in the Netherlands">8659</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="P&apos;ent&apos;ay">882152</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Evangelical Church in Germany">213018</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Liverpool Protestant Party">581826</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Church of Ireland">168130</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Protestantism">25814008</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Protestant Wind">725540</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Protestant Bible">27930380</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Protestantism in Cuba">13494208</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="场" aoffset="4840" alength="1" ext_length="0">
@@ -5639,42 +5639,42 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Field (physics)">26998617</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="圣公会" aoffset="4850" alength="3" ext_length="0">
-				<subanchor sarel="0" saname="圣公会" saoffset="4850" salength="3" rank="89">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Fidelity (Anglican)">3199965</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Anglican Mission in the Americas">1684622</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Anglican Church of Australia">556494</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Anglican devotions">12694264</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Anglican churches in Melbourne">24198939</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Continuing Anglican movement">382224</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Anglican Church of Canada">1177740</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Anglican churches in Toronto">22132315</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Anglicanism">1214</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Reform (Anglican)">5141691</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Anglican Communion">909</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Grade I listed buildings in Wiltshire">19624999</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Anglican Breviary">5573391</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Church of England">5955</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Anglican Youthworks">6880069</tobep>
+			<anchor arel="1" aname="圣公会" aoffset="4850" alength="3" ext_length="0">
+				<subanchor sarel="1" saname="圣公会" saoffset="4850" salength="3" rank="89">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Fidelity (Anglican)">3199965</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Anglican Mission in the Americas">1684622</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Anglican Church of Australia">556494</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Anglican devotions">12694264</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Anglican churches in Melbourne">24198939</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Continuing Anglican movement">382224</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Anglican Church of Canada">1177740</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Anglican churches in Toronto">22132315</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Anglicanism">1214</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Reform (Anglican)">5141691</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Anglican Communion">909</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Grade I listed buildings in Wiltshire">19624999</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Anglican Breviary">5573391</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Church of England">5955</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Anglican Youthworks">6880069</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="新唐" aoffset="4974" alength="2" ext_length="1">
-				<subanchor sarel="0" saname="新唐" saoffset="4974" salength="2" rank="96">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Nuvoton">21518805</tobep>
+			<anchor arel="1" aname="新唐" aoffset="4974" alength="2" ext_length="1">
+				<subanchor sarel="-1" saname="新唐" saoffset="4974" salength="2" rank="96">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Nuvoton">21518805</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="新唐书" saoffset="4974" salength="3" rank="43">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Cui Dan">25456367</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Li Jing">1942620</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Canonical Book of the Tang Dynasty">11320938</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Book of Tang">8856076</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Li Chongrun">14495670</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Li Cheng (Tang Dynasty)">24661844</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Yang Zhirou">14916595</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="New Book of Tang">8856044</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Book:Wu-Tang Clan">27983506</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="New Tang Dynasty Television">1608128</tobep>
+				<subanchor sarel="1" saname="新唐书" saoffset="4974" salength="3" rank="43">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Cui Dan">25456367</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Li Jing">1942620</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Canonical Book of the Tang Dynasty">11320938</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Book of Tang">8856076</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Li Chongrun">14495670</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Li Cheng (Tang Dynasty)">24661844</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Yang Zhirou">14916595</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="New Book of Tang">8856044</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Book:Wu-Tang Clan">27983506</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="New Tang Dynasty Television">1608128</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="唐书" saoffset="4975" salength="2" rank="223">
+				<subanchor sarel="-1" saname="唐书" saoffset="4975" salength="2" rank="223">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tang (drink)">864263</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Nyêtang">13279484</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tang of Shang">2970908</tobep>
@@ -5691,17 +5691,17 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tang Choon Keng">12259288</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="中國皇儲列表" aoffset="5215" alength="6" ext_length="0">
-				<subanchor sarel="0" saname="中國皇儲列表" saoffset="5215" salength="6" rank="6">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Crown Prince Party">221324</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of heirs apparent">814123</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Crown Prince Sohyeon">15812645</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Crown Prince Euimin">1923385</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Norwegian Crown Prince&apos;s Crown">16736587</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Monarch">19012</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of state leaders in 1814">613169</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="House of Yi">2310039</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Crown Prince Naruhito">266108</tobep>
+			<anchor arel="-1" aname="中國皇儲列表" aoffset="5215" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="中國皇儲列表" saoffset="5215" salength="6" rank="6">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Crown Prince Party">221324</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of heirs apparent">814123</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Crown Prince Sohyeon">15812645</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Crown Prince Euimin">1923385</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Norwegian Crown Prince&apos;s Crown">16736587</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Monarch">19012</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of state leaders in 1814">613169</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="House of Yi">2310039</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Crown Prince Naruhito">266108</tobep>
 				</subanchor>
 			</anchor>
 		</outgoinglinks>
