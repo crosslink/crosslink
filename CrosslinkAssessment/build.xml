@@ -86,6 +86,7 @@
 	  	  	<zipfileset dir="." includes="run.sh"/>
 	  	  	<zipfileset dir="." includes="run.bat"/>
 	  	  	<zipfileset dir="." includes="article.dtd"/>
+	  	  	<zipfileset dir="." includes="lang.txt"/>
 	  	  	<zipfileset dir="${dist.dir}" includes="*.jar"/>
 	  	  </zip>
     </target>

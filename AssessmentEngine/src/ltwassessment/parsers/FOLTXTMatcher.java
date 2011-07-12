@@ -411,12 +411,19 @@ public class FOLTXTMatcher {
 			sb_len = sb.length();
 			puzzle_len = puzzle.length();
 			if (sb_len >= puzzle_len/* || puzzle.equals(sb.toString())*/) {
-				if (AppResource.debug == true && !Arrays.equals(puzzle.getBytes(), sb.toString().getBytes())/*!puzzle.equals(sb.toString())*/) {
+				try {
+				String newSB = new String(sb.toString().getBytes(), "UTF-8");
+				if (AppResource.debug == true && /*!Arrays.equals(puzzle.getBytes(), sb.toString().getBytes())*/!puzzle.equals(newSB)) {
 					System.err.println("Puzzle:");
 					System.err.println(puzzle);
 					System.err.println("SB:");
-					System.err.println(sb.toString());
+					System.err.println(newSB);
 					System.err.println("");
+				}
+
+					System.err.println();
+				} catch (UnsupportedEncodingException e) {
+					e.printStackTrace();
 				}
 		        break;
 			}

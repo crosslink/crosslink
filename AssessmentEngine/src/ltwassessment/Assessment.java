@@ -39,9 +39,10 @@ public class Assessment {
 	
 	private Topic currentTopic;
 	
-	public static final String ASSESSMENT_POOL_BACKUP_DIR =  ASSESSMENT_POOL_PATH + File.separator + "POOL_BACKUP" + File.separator;
+	private static final String ASSESSMENT_POOL_BACKUP_DIR =  ASSESSMENT_POOL_PATH + File.separator + "POOL_BACKUP" + File.separator;
 	private static File poolDirHandler = null;
 	private static File poolBackupDirHandler = null;
+	private static File poolBackupTempDirHandler = null;
 	
 	private static String assessmentLang = "";
 	
@@ -55,9 +56,16 @@ public class Assessment {
 		}
 //			poolDirHandler.mkdir();
 			
-		poolBackupDirHandler = new File(ASSESSMENT_POOL_BACKUP_DIR);
+		poolBackupDirHandler = new File(ASSESSMENT_POOL_BACKUP_DIR + assessmentLang);
 		if (!poolBackupDirHandler.exists())
 			poolBackupDirHandler.mkdirs();
+		
+		String baseTempPath = System.getProperty("java.io.tmpdir");
+		poolBackupTempDirHandler = new File(baseTempPath + File.separator + "CrosslinkAssesment");
+		if (!poolBackupTempDirHandler.exists())
+			poolBackupTempDirHandler.mkdirs();
+		
+		System.err.println("System temp dir: " + poolBackupTempDirHandler.getAbsolutePath());
 	}
 
 	public Assessment() {
@@ -159,5 +167,13 @@ public class Assessment {
     		topic = (String) entry.getKey();
 		}
 		return topic;
+	}
+
+	public static File getPoolBackupTempDirHandler() {
+		return poolBackupTempDirHandler;
+	}
+	
+	public static File getPoolBackupDirHandler() {
+		return poolBackupDirHandler;
 	}
 }
