@@ -297,7 +297,7 @@ public class LTWAssessmentToolControler {
 		DateFormat dateFormat = new SimpleDateFormat("yyMMddHHmmss");
 		Date date = new Date();
 		String currentDateTime = dateFormat.format(date).toString();
-		String backupPoolFPath = backupPoolDir + AppResource.targetLang + "_" + topicID + "_" + currentDateTime + "_Pool.xml";
+		String backupPoolFPath = backupPoolDir + File.separator + AppResource.targetLang + "_" + topicID + "_" + currentDateTime + "_Pool.xml";
 //		File destFile = new File(backupPoolFPath);
 //		InputStream in = null;
 //		OutputStream out = null;
@@ -322,7 +322,7 @@ public class LTWAssessmentToolControler {
 		 */
 		try {
 			FileUtil.copyFile(sourcePoolFPath, backupPoolFPath);
-			FileUtil.copyFile(sourcePoolFPath, Assessment.getPoolBackupTempDirHandler() + srcFile.getName());
+			FileUtil.copyFile(sourcePoolFPath, Assessment.getPoolBackupDirHandler() + srcFile.getName());
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
