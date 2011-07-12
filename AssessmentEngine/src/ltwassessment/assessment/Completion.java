@@ -69,4 +69,9 @@ public class Completion implements Observer {
 	public boolean isFinished() {
 		return finishedLinks == totalLinks;
 	}
+
+	public void reset() {
+	    totalLinks = 0;
+	    finishedLinks = 0;	
+	}
 }

@@ -412,6 +412,7 @@ public class LTWAssessmentToolControler {
     
     public void assess(String poolFile) {
     	backupPool();
+    	Completion.getInstance().reset();
     	assess(poolFile, false);
     }
     
