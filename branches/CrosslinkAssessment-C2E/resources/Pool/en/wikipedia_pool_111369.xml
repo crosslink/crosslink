@@ -5,18 +5,18 @@
 	<topic file="111369" name="亚洲运动会">
 		<outgoinglinks>
 			<anchor arel="0" aname="亚" aoffset="265" alength="1" ext_length="4">
-				<subanchor sarel="0" saname="亚" saoffset="265" salength="1" rank="192">
+				<subanchor sarel="-1" saname="亚" saoffset="265" salength="1" rank="192">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Asia (Roman province)">1241242</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Asia">689</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Asian Football Confederation">715249</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Asia (band)">55266</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="AFC Champions League">1059743</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="亚洲" saoffset="265" salength="2" rank="97">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Asia">689</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Trish Thuy Trang">2427495</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Asian Hockey Federation">20271557</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Asia/Countries in Asia">4325244</tobep>
+				<subanchor sarel="1" saname="亚洲" saoffset="265" salength="2" rank="97">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Asia">689</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Trish Thuy Trang">2427495</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Asian Hockey Federation">20271557</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Asia/Countries in Asia">4325244</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Asian Football Confederation">715249</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Outline of Asia">16601277</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Asia (band)">55266</tobep>
@@ -4084,8 +4084,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Television program">19508643</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="相加" aoffset="8497" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="相加" saoffset="8497" salength="2" rank="219">
+			<anchor arel="1" aname="相加" aoffset="8497" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="相加" saoffset="8497" salength="2" rank="219">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="ADD">246856</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bebop scale">7235286</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="ADD1">14723583</tobep>
@@ -4099,8 +4099,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of the Syriac New Testament manuscripts">25856117</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="总和" aoffset="8553" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="总和" saoffset="8553" salength="2" rank="245">
+			<anchor arel="1" aname="总和" aoffset="8553" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="总和" saoffset="8553" salength="2" rank="245">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Total (Total album)">8096570</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Diving at the Summer Olympics">6107186</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Total">244445</tobep>
@@ -4155,8 +4155,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Exact statistics">19510610</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="0" aoffset="13092" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="0" saoffset="13092" salength="1" rank="242">
+			<anchor arel="-1" aname="0" aoffset="13092" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="0" saoffset="13092" salength="1" rank="242">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="0">1878498</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="2002">35502</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="0-6-0+0-6-0">15194650</tobep>
@@ -4178,8 +4178,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="0 (number)">34513</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="無" aoffset="13168" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="無" saoffset="13168" salength="1" rank="170">
+			<anchor arel="-1" aname="無" aoffset="13168" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="無" saoffset="13168" salength="1" rank="170">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mu (negative)">440118</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Nothing">72197</tobep>
 				</subanchor>
@@ -4219,8 +4219,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Athletes for Hope">16073912</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="第一屆" aoffset="15129" alength="3" ext_length="0">
-				<subanchor sarel="0" saname="第一屆" saoffset="15129" salength="3" rank="234">
+			<anchor arel="-1" aname="第一屆" aoffset="15129" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="第一屆" saoffset="15129" salength="3" rank="234">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="2006 Lusophony Games">6850115</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="One Million Star (season 1)">14498897</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="1956 AFC Asian Cup">1013446</tobep>
@@ -4228,17 +4228,17 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="1951 Asian Games">935289</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="3月4日" aoffset="15150" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="3月4日" saoffset="15150" salength="4" rank="131">
+			<anchor arel="-1" aname="3月4日" aoffset="15150" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="3月4日" saoffset="15150" salength="4" rank="131">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="March 4 (Eastern Orthodox liturgics)">4271922</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="March 4">20315</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="3月11日" aoffset="15155" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="3月11日" saoffset="15155" salength="5" rank="156">
+			<anchor arel="-1" aname="3月11日" aoffset="15155" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="3月11日" saoffset="15155" salength="5" rank="156">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="March 11">19530</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="" saoffset="15159" salength="0" rank="243">
+				<subanchor sarel="-1" saname="" saoffset="15159" salength="0" rank="243">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Nisshin, Aichi">329083</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Nisshin Station (Hokkaidō)">12452492</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Jit Sin">4887386</tobep>
@@ -4247,8 +4247,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Nisshin Station">13213346</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="第二屆" aoffset="15234" alength="3" ext_length="0">
-				<subanchor sarel="0" saname="第二屆" saoffset="15234" salength="3" rank="221">
+			<anchor arel="-1" aname="第二屆" aoffset="15234" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="第二屆" saoffset="15234" salength="3" rank="221">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="World War II">32927</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Football League Second Division">563379</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Second Doctor">1980551</tobep>
@@ -4261,15 +4261,15 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Second">26873</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="5月1" aoffset="15255" alength="3" ext_length="1">
-				<subanchor sarel="0" saname="5月1" saoffset="15255" salength="3" rank="217">
+			<anchor arel="-1" aname="5月1" aoffset="15255" alength="3" ext_length="1">
+				<subanchor sarel="-1" saname="5月1" saoffset="15255" salength="3" rank="217">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="May 1 (Eastern Orthodox liturgics)">1701192</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="May 1">19348</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="International Workers&apos; Day">4726002</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Labour Day">18051</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="May Day">19829</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="5月1日" saoffset="15255" salength="4" rank="218">
+				<subanchor sarel="-1" saname="5月1日" saoffset="15255" salength="4" rank="218">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="May 1 (Eastern Orthodox liturgics)">1701192</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="May 1">19348</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="International Workers&apos; Day">4726002</tobep>
@@ -4277,31 +4277,31 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="May Day">19829</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="5月9日" aoffset="15260" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="5月9日" saoffset="15260" salength="4" rank="159">
+			<anchor arel="-1" aname="5月9日" aoffset="15260" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="5月9日" saoffset="15260" salength="4" rank="159">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="May 9 (Eastern Orthodox liturgics)">1744817</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Victory Day (9 May)">337670</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="May 9">19524</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="5月24" aoffset="15377" alength="4" ext_length="1">
-				<subanchor sarel="0" saname="5月24" saoffset="15377" salength="4" rank="167">
+			<anchor arel="-1" aname="5月24" aoffset="15377" alength="4" ext_length="1">
+				<subanchor sarel="-1" saname="5月24" saoffset="15377" salength="4" rank="167">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="May 24">19459</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="May 24 (Eastern Orthodox liturgics)">1831454</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="5月24日" saoffset="15377" salength="5" rank="168">
+				<subanchor sarel="-1" saname="5月24日" saoffset="15377" salength="5" rank="168">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="May 24">19459</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="May 24 (Eastern Orthodox liturgics)">1831454</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="6月1日" aoffset="15383" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="6月1日" saoffset="15383" salength="4" rank="201">
+			<anchor arel="-1" aname="6月1日" aoffset="15383" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="6月1日" saoffset="15383" salength="4" rank="201">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="June 1 (Eastern Orthodox liturgics)">1868786</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="June 1">15856</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="第四屆" aoffset="15461" alength="3" ext_length="0">
-				<subanchor sarel="0" saname="第四屆" saoffset="15461" salength="3" rank="214">
+			<anchor arel="-1" aname="第四屆" aoffset="15461" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="第四屆" saoffset="15461" salength="3" rank="214">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Football League Fourth Division">526932</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="2014 Asian Beach Games">8564913</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Fourth Doctor">2062757</tobep>
@@ -4321,16 +4321,16 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Patras Province">12516471</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="8月24日" aoffset="15482" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="8月24日" saoffset="15482" salength="5" rank="179">
+			<anchor arel="-1" aname="8月24日" aoffset="15482" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="8月24日" saoffset="15482" salength="5" rank="179">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="August 24">1629</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="9月4" aoffset="15488" alength="3" ext_length="1">
-				<subanchor sarel="0" saname="9月4" saoffset="15488" salength="3" rank="140">
+			<anchor arel="-1" aname="9月4" aoffset="15488" alength="3" ext_length="1">
+				<subanchor sarel="-1" saname="9月4" saoffset="15488" salength="3" rank="140">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="September 4">27765</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="9月4日" saoffset="15488" salength="4" rank="141">
+				<subanchor sarel="-1" saname="9月4日" saoffset="15488" salength="4" rank="141">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="September 4">27765</tobep>
 				</subanchor>
 			</anchor>
@@ -4355,8 +4355,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Limone sul Garda">1087219</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="第五屆" aoffset="15585" alength="3" ext_length="0">
-				<subanchor sarel="0" saname="第五屆" saoffset="15585" salength="3" rank="249">
+			<anchor arel="-1" aname="第五屆" aoffset="15585" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="第五屆" saoffset="15585" salength="3" rank="249">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Fifth Third Bank">1115218</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="1912 Summer Olympics">180200</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Fifth Avenue">341863</tobep>
@@ -4364,19 +4364,19 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Perfect fifth">143888</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="12月9" aoffset="15606" alength="4" ext_length="1">
-				<subanchor sarel="0" saname="12月9" saoffset="15606" salength="4" rank="100">
+			<anchor arel="-1" aname="12月9" aoffset="15606" alength="4" ext_length="1">
+				<subanchor sarel="-1" saname="12月9" saoffset="15606" salength="4" rank="100">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="December 9">8589</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="12月9日" saoffset="15606" salength="5" rank="99">
+				<subanchor sarel="-1" saname="12月9日" saoffset="15606" salength="5" rank="99">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="December 9">8589</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="12月20" aoffset="15612" alength="5" ext_length="1">
-				<subanchor sarel="0" saname="12月20" saoffset="15612" salength="5" rank="128">
+			<anchor arel="-1" aname="12月20" aoffset="15612" alength="5" ext_length="1">
+				<subanchor sarel="-1" saname="12月20" saoffset="15612" salength="5" rank="128">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="December 20">8849</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="12月20日" saoffset="15612" salength="6" rank="127">
+				<subanchor sarel="-1" saname="12月20日" saoffset="15612" salength="6" rank="127">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="December 20">8849</tobep>
 				</subanchor>
 			</anchor>
@@ -4399,8 +4399,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Miss Thailand Universe 2007">22101521</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="第六屆" aoffset="15692" alength="3" ext_length="0">
-				<subanchor sarel="0" saname="第六屆" saoffset="15692" salength="3" rank="231">
+			<anchor arel="-1" aname="第六屆" aoffset="15692" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="第六屆" saoffset="15692" salength="3" rank="231">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sixth chord">428172</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Augmented sixth chord">424647</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Braintree Sixth Form">25213667</tobep>
@@ -4408,8 +4408,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="1970 Asian Games">3285368</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="9月1日" aoffset="15836" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="9月1日" saoffset="15836" salength="4" rank="212">
+			<anchor arel="-1" aname="9月1日" aoffset="15836" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="9月1日" saoffset="15836" salength="4" rank="212">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="September 1">27530</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="September 1 (Eastern Orthodox liturgics)">1614710</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Invasion of Poland">309288</tobep>
@@ -4417,11 +4417,11 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="September 2004">870542</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="9月16" aoffset="15841" alength="4" ext_length="1">
-				<subanchor sarel="0" saname="9月16" saoffset="15841" salength="4" rank="184">
+			<anchor arel="-1" aname="9月16" aoffset="15841" alength="4" ext_length="1">
+				<subanchor sarel="-1" saname="9月16" saoffset="15841" salength="4" rank="184">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="September 16">27650</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="9月16日" saoffset="15841" salength="5" rank="185">
+				<subanchor sarel="-1" saname="9月16日" saoffset="15841" salength="5" rank="185">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="September 16">27650</tobep>
 				</subanchor>
 			</anchor>
@@ -4444,8 +4444,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Iranian Basketball Super League">13924101</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="第九屆" aoffset="16046" alength="3" ext_length="0">
-				<subanchor sarel="0" saname="第九屆" saoffset="16046" salength="3" rank="248">
+			<anchor arel="-1" aname="第九屆" aoffset="16046" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="第九屆" saoffset="16046" salength="3" rank="248">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ninth Amendment to the United States Constitution">31661</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="United States Court of Appeals for the Ninth Circuit">325378</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ninth">428260</tobep>
@@ -4453,21 +4453,21 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="2001 World Aquatics Championships">2362889</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="11月19日" aoffset="16067" alength="6" ext_length="0">
-				<subanchor sarel="0" saname="11月19日" saoffset="16067" salength="6" rank="143">
+			<anchor arel="-1" aname="11月19日" aoffset="16067" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="11月19日" saoffset="16067" salength="6" rank="143">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="November 19">21574</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="12月4" aoffset="16074" alength="4" ext_length="1">
-				<subanchor sarel="0" saname="12月4" saoffset="16074" salength="4" rank="145">
+			<anchor arel="-1" aname="12月4" aoffset="16074" alength="4" ext_length="1">
+				<subanchor sarel="-1" saname="12月4" saoffset="16074" salength="4" rank="145">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Solar eclipse of December 4, 2021">25235501</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="December 4">8354</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="12月4日" saoffset="16074" salength="5" rank="144">
+				<subanchor sarel="-1" saname="12月4日" saoffset="16074" salength="5" rank="144">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Solar eclipse of December 4, 2021">25235501</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="December 4">8354</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="" saoffset="16078" salength="0" rank="244">
+				<subanchor sarel="-1" saname="" saoffset="16078" salength="0" rank="244">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Nisshin, Aichi">329083</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Nisshin Station (Hokkaidō)">12452492</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Jit Sin">4887386</tobep>
@@ -4476,14 +4476,14 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Nisshin Station">13213346</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="9月20日" aoffset="16175" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="9月20日" saoffset="16175" salength="5" rank="188">
+			<anchor arel="-1" aname="9月20日" aoffset="16175" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="9月20日" saoffset="16175" salength="5" rank="188">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="September 2001">264124</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="September 20">28148</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="10月5日" aoffset="16181" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="10月5日" saoffset="16181" salength="5" rank="162">
+			<anchor arel="-1" aname="10月5日" aoffset="16181" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="10月5日" saoffset="16181" salength="5" rank="162">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Overthrow of Slobodan Milošević">3574898</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="October 5">22536</tobep>
 				</subanchor>
@@ -4542,16 +4542,16 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seoul spring">22101341</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="9月22" aoffset="16305" alength="4" ext_length="1">
-				<subanchor sarel="0" saname="9月22" saoffset="16305" salength="4" rank="176">
+			<anchor arel="-1" aname="9月22" aoffset="16305" alength="4" ext_length="1">
+				<subanchor sarel="-1" saname="9月22" saoffset="16305" salength="4" rank="176">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="September 22">27889</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="9月22日" saoffset="16305" salength="5" rank="177">
+				<subanchor sarel="-1" saname="9月22日" saoffset="16305" salength="5" rank="177">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="September 22">27889</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="10月7日" aoffset="16311" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="10月7日" saoffset="16311" salength="5" rank="164">
+			<anchor arel="-1" aname="10月7日" aoffset="16311" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="10月7日" saoffset="16311" salength="5" rank="164">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="October 2001">264122</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="October 7">22446</tobep>
 				</subanchor>
@@ -4580,8 +4580,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="People&apos;s Republic of China">5405</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="第十二屆" aoffset="16390" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="第十二屆" saoffset="16390" salength="4" rank="241">
+			<anchor arel="-1" aname="第十二屆" aoffset="16390" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="第十二屆" saoffset="16390" salength="4" rank="241">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="2007 World Aquatics Championships">4465998</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Twelfth Air Force">464040</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Twelfth Night">652812</tobep>
@@ -4609,8 +4609,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="October 2">22527</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="10月16日" aoffset="16418" alength="6" ext_length="0">
-				<subanchor sarel="0" saname="10月16日" saoffset="16418" salength="6" rank="153">
+			<anchor arel="-1" aname="10月16日" aoffset="16418" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="10月16日" saoffset="16418" salength="6" rank="153">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="October 16">22556</tobep>
 				</subanchor>
 			</anchor>
@@ -4630,8 +4630,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Atomic bombings of Hiroshima and Nagasaki">11778948</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="第十三屆" aoffset="16516" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="第十三屆" saoffset="16516" salength="4" rank="225">
+			<anchor arel="-1" aname="第十三屆" aoffset="16516" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="第十三屆" saoffset="16516" salength="4" rank="225">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Thirteenth Step">344461</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Thirteenth Air Force">464043</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Thirteenth floor">481188</tobep>
@@ -4646,15 +4646,15 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Thirteenth">428268</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="12月6日" aoffset="16538" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="12月6日" saoffset="16538" salength="5" rank="113">
+			<anchor arel="-1" aname="12月6日" aoffset="16538" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="12月6日" saoffset="16538" salength="5" rank="113">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="December 6 (novel)">8719597</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Independence Day (Finland)">3336304</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="December 6">8352</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="第十四屆" aoffset="16624" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="第十四屆" saoffset="16624" salength="4" rank="237">
+			<anchor arel="-1" aname="第十四屆" aoffset="16624" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="第十四屆" saoffset="16624" salength="4" rank="237">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Katzenbach v. Morgan">4265083</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="The Fourteenth Day">21633048</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Fourteenth Texas Legislature">3849490</tobep>
@@ -4671,13 +4671,13 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="14th Lok Sabha">1291018</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="9月29日" aoffset="16646" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="9月29日" saoffset="16646" salength="5" rank="180">
+			<anchor arel="-1" aname="9月29日" aoffset="16646" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="9月29日" saoffset="16646" salength="5" rank="180">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="September 29">28204</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="10月14日" aoffset="16652" alength="6" ext_length="0">
-				<subanchor sarel="0" saname="10月14日" saoffset="16652" salength="6" rank="157">
+			<anchor arel="-1" aname="10月14日" aoffset="16652" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="10月14日" saoffset="16652" salength="6" rank="157">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="October 14">22525</tobep>
 				</subanchor>
 			</anchor>
@@ -4701,8 +4701,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mountain">37754</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="第十五屆" aoffset="16750" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="第十五屆" saoffset="16750" salength="4" rank="235">
+			<anchor arel="-1" aname="第十五屆" aoffset="16750" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="第十五屆" saoffset="16750" salength="4" rank="235">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="2006 Asian Games">3071193</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Fifteenth Amendment">245611</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Japanese Fifteenth Area Army">14511865</tobep>
@@ -4721,20 +4721,20 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="15th United States Congress">225098</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="12月1日" aoffset="16772" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="12月1日" saoffset="16772" salength="5" rank="173">
+			<anchor arel="-1" aname="12月1日" aoffset="16772" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="12月1日" saoffset="16772" salength="5" rank="173">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="December 1">8357</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="12月15日" aoffset="16778" alength="6" ext_length="0">
-				<subanchor sarel="0" saname="12月15日" saoffset="16778" salength="6" rank="165">
+			<anchor arel="-1" aname="12月15日" aoffset="16778" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="12月15日" saoffset="16778" salength="6" rank="165">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="December 15">8145</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="December 2004">1231242</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Solar eclipse of December 15, 1982">25355151</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="第十六屆" aoffset="16858" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="第十六屆" saoffset="16858" salength="4" rank="224">
+			<anchor arel="-1" aname="第十六屆" aoffset="16858" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="第十六屆" saoffset="16858" salength="4" rank="224">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Brushaber v. Union Pacific Railroad">174591</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="16th Army (Germany)">2021869</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="The Law that Never Was">4857786</tobep>
@@ -4750,8 +4750,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sixteenth Texas Legislature">3852050</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="第十七屆" aoffset="16955" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="第十七屆" saoffset="16955" salength="4" rank="220">
+			<anchor arel="-1" aname="第十七屆" aoffset="16955" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="第十七屆" saoffset="16955" salength="4" rank="220">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ohio&apos;s 17th congressional district">4240088</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="17th United States Congress">225100</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Summer of the Seventeenth Doll">3943027</tobep>
@@ -4765,7 +4765,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seventeenth Army (Japan)">14863074</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seventeenth Summer">9785435</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="十七" saoffset="16956" salength="2" rank="232">
+				<subanchor sarel="-1" saname="十七" saoffset="16956" salength="2" rank="232">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seventeen (Ladytron song)">27725574</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seventeen (Japanese magazine)">21634930</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seventeen (Winger song)">11315178</tobep>
@@ -4773,8 +4773,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seventeen (novel)">12310049</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="09" aoffset="16977" alength="2" ext_length="4">
-				<subanchor sarel="0" saname="09" saoffset="16977" salength="2" rank="239">
+			<anchor arel="-1" aname="09" aoffset="16977" alength="2" ext_length="4">
+				<subanchor sarel="-1" saname="09" saoffset="16977" salength="2" rank="239">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="2009 NCAA Men&apos;s Division I Basketball Tournament">4606216</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="2009 Formula Renault 3.5 Series season">19346730</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="FIFA 09">17909339</tobep>
@@ -4795,7 +4795,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="2009 Australian Open">19370774</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="2009 Eurocup Formula Renault 2.0 season">22736561</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="09月" saoffset="16977" salength="3" rank="155">
+				<subanchor sarel="-1" saname="09月" saoffset="16977" salength="3" rank="155">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="2009 Formula Renault 3.5 Series season">19346730</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="2009 NCAA Men&apos;s Division I Basketball Tournament">4606216</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="FIFA 09">17909339</tobep>
@@ -4813,7 +4813,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="September">27529</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="2009 Eurocup Formula Renault 2.0 season">22736561</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="09月19日" saoffset="16977" salength="6" rank="63">
+				<subanchor sarel="-1" saname="09月19日" saoffset="16977" salength="6" rank="63">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Australia/Anniversaries/September/September 19">5282736</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of asteroids/83501–83600">3490576</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of asteroids/110201–110300">3067643</tobep>
@@ -4828,8 +4828,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Cricket/Anniversaries/September/September 19">12675985</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="10月04日" aoffset="16984" alength="6" ext_length="0">
-				<subanchor sarel="0" saname="10月04日" saoffset="16984" salength="6" rank="197">
+			<anchor arel="-1" aname="10月04日" aoffset="16984" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="10月04日" saoffset="16984" salength="6" rank="197">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="October 4">22454</tobep>
 				</subanchor>
 			</anchor>
@@ -4913,11 +4913,11 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="March 2002">106480</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="3月8" aoffset="17513" alength="3" ext_length="1">
-				<subanchor sarel="0" saname="3月8" saoffset="17513" salength="3" rank="115">
+			<anchor arel="-1" aname="3月8" aoffset="17513" alength="3" ext_length="1">
+				<subanchor sarel="-1" saname="3月8" saoffset="17513" salength="3" rank="115">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="March 8">20053</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="3月8日" saoffset="17513" salength="4" rank="114">
+				<subanchor sarel="-1" saname="3月8日" saoffset="17513" salength="4" rank="114">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="March 8">20053</tobep>
 				</subanchor>
 			</anchor>
@@ -4941,8 +4941,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="March 9">20054</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="3月14日" aoffset="17615" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="3月14日" saoffset="17615" salength="5" rank="158">
+			<anchor arel="-1" aname="3月14日" aoffset="17615" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="3月14日" saoffset="17615" salength="5" rank="158">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="March 14">20199</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="March 14 Alliance">7664836</tobep>
 				</subanchor>
@@ -4953,8 +4953,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="February 4">11359</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="2月11日" aoffset="17737" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="2月11日" saoffset="17737" salength="5" rank="123">
+			<anchor arel="-1" aname="2月11日" aoffset="17737" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="2月11日" saoffset="17737" salength="5" rank="123">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="February 11">11184</tobep>
 				</subanchor>
 			</anchor>
@@ -4973,14 +4973,14 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Type 052 destroyer">1738410</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="1月30日" aoffset="17837" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="1月30日" saoffset="17837" salength="5" rank="124">
+			<anchor arel="-1" aname="1月30日" aoffset="17837" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="1月30日" saoffset="17837" salength="5" rank="124">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="January 1991 lunar eclipse">22022091</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="January 30">15813</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="2月6日" aoffset="17843" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="2月6日" saoffset="17843" salength="4" rank="136">
+			<anchor arel="-1" aname="2月6日" aoffset="17843" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="2月6日" saoffset="17843" salength="4" rank="136">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="February 6">11021</tobep>
 				</subanchor>
 			</anchor>
@@ -5013,13 +5013,13 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="February 1960">24928506</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="2月8" aoffset="17965" alength="3" ext_length="1">
-				<subanchor sarel="0" saname="2月8" saoffset="17965" salength="3" rank="109">
+			<anchor arel="-1" aname="2月8" aoffset="17965" alength="3" ext_length="1">
+				<subanchor sarel="-1" saname="2月8" saoffset="17965" salength="3" rank="109">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="February 8 (Eastern Orthodox liturgics)">3982624</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="February 8">11360</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Scouts&apos; Day">4468390</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="2月8日" saoffset="17965" salength="4" rank="110">
+				<subanchor sarel="-1" saname="2月8日" saoffset="17965" salength="4" rank="110">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="February 8 (Eastern Orthodox liturgics)">3982624</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="February 8">11360</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Scouts&apos; Day">4468390</tobep>
@@ -5040,12 +5040,12 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Aomori Expressway">16739334</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="1月28" aoffset="18063" alength="4" ext_length="1">
-				<subanchor sarel="0" saname="1月28" saoffset="18063" salength="4" rank="125">
+			<anchor arel="-1" aname="1月28" aoffset="18063" alength="4" ext_length="1">
+				<subanchor sarel="-1" saname="1月28" saoffset="18063" salength="4" rank="125">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="January 28">15792</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="January 28 (Eastern Orthodox liturgics)">3905468</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="1月28日" saoffset="18063" salength="5" rank="126">
+				<subanchor sarel="-1" saname="1月28日" saoffset="18063" salength="5" rank="126">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="January 28">15792</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="January 28 (Eastern Orthodox liturgics)">3905468</tobep>
 				</subanchor>
@@ -5190,8 +5190,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Beach volleyball">224587</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="10月18日" aoffset="19575" alength="6" ext_length="0">
-				<subanchor sarel="0" saname="10月18日" saoffset="19575" salength="6" rank="138">
+			<anchor arel="-1" aname="10月18日" aoffset="19575" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="10月18日" saoffset="19575" salength="6" rank="138">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="October 18">22545</tobep>
 				</subanchor>
 			</anchor>
@@ -5427,8 +5427,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Youth Assisting Youth">6340143</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="6月29日" aoffset="20988" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="6月29日" saoffset="20988" salength="5" rank="181">
+			<anchor arel="-1" aname="6月29日" aoffset="20988" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="6月29日" saoffset="20988" salength="5" rank="181">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="June 29 (Eastern Orthodox liturgics)">2103527</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="June 1972">24359248</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="June 29">15842</tobep>
@@ -5505,8 +5505,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Kathmandu Metropolitan City">12228927</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="外部" aoffset="21179" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="外部" saoffset="21179" salength="2" rank="98">
+			<anchor arel="-1" aname="外部" aoffset="21179" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="外部" saoffset="21179" salength="2" rank="98">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Exterior (topology)">985087</tobep>
 				</subanchor>
 			</anchor>
@@ -5537,13 +5537,13 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Olympic Games">22576</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="相关" aoffset="21361" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="相关" saoffset="21361" salength="2" rank="65">
+			<anchor arel="-1" aname="相关" aoffset="21361" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="相关" saoffset="21361" salength="2" rank="65">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Correlation and dependence">157057</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="条目" aoffset="21363" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="条目" saoffset="21363" salength="2" rank="76">
+			<anchor arel="-1" aname="条目" aoffset="21363" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="条目" saoffset="21363" salength="2" rank="76">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Article (publishing)">2633667</tobep>
 				</subanchor>
 			</anchor>
@@ -5637,8 +5637,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Thirteenth Federal Electoral District of the Federal District">20192259</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="粗体" aoffset="21790" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="粗体" saoffset="21790" salength="2" rank="228">
+			<anchor arel="-1" aname="粗体" aoffset="21790" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="粗体" saoffset="21790" salength="2" rank="228">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bold Journey">7754320</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bold (TV channel)">855830</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bold, Merseyside">3282338</tobep>
@@ -5778,8 +5778,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Participatory politics">2450499</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="第8届" aoffset="22102" alength="3" ext_length="0">
-				<subanchor sarel="0" saname="第8届" saoffset="22102" salength="3" rank="212">
+			<anchor arel="-1" aname="第8届" aoffset="22102" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="第8届" saoffset="22102" salength="3" rank="212">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="8th century BC">40173</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="8th millennium">708846</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Eighth Doctor">26564527</tobep>
