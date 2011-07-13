@@ -4,7 +4,7 @@
 	<collection>Korean Wikipedia 2010 Collection</collection>
 	<topic file="111369" name="亚洲运动会">
 		<outgoinglinks>
-			<anchor arel="0" aname="亚" aoffset="265" alength="1" ext_length="4">
+			<anchor arel="1" aname="亚" aoffset="265" alength="1" ext_length="4">
 				<subanchor sarel="-1" saname="亚" saoffset="265" salength="1" rank="192">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Asia (Roman province)">1241242</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Asia">689</tobep>
@@ -12,17 +12,17 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Asia (band)">55266</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="AFC Champions League">1059743</tobep>
 				</subanchor>
-				<subanchor sarel="1" saname="亚洲" saoffset="265" salength="2" rank="97">
+				<subanchor sarel="-1" saname="亚洲" saoffset="265" salength="2" rank="97">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Asia">689</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Trish Thuy Trang">2427495</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Asian Hockey Federation">20271557</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Asia/Countries in Asia">4325244</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Asian Football Confederation">715249</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Outline of Asia">16601277</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Asia (band)">55266</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="AFC Champions League">1059743</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Trans-Asia Shipping Lines">25466680</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Asia-Asia Hotel">11872091</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Asian Football Confederation">715249</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Outline of Asia">16601277</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Asia (band)">55266</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="AFC Champions League">1059743</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Trans-Asia Shipping Lines">25466680</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Asia-Asia Hotel">11872091</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Asia (Roman province)">1241242</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Asia/Asia news/Wikinews">19227509</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Asia/Asia news">4327288</tobep>
@@ -30,28 +30,28 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Asia/Map of Asia">4324414</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of historical countries and empires spanning more than one continent">11491611</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="亚洲运动会" saoffset="265" salength="5" rank="147">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="2006 Asian Games">3071193</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Cycling at the 2002 Asian Games">28228238</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Athletics at the 2006 Asian Games">8080921</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Athletics at the 1998 Asian Games">9461419</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Board games at the Asian Games">14663724</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Indoor athletics at the 2005 Asian Indoor Games">20122771</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Athletics at the 2002 Asian Games">9423147</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="1954 Asian Games">923181</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="1986 Asian Games">3285386</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Short course swimming at the 2005 Asian Indoor Games">20545191</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Iran at the 2007 Asian Indoor Games">14350710</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Football at the Asian Games">8127003</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="2002 Asian Games">1075590</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Asian Para Games">23078239</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Badminton at the Asian Games">8606069</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Iran at the 2009 Asian Indoor Games">24936569</tobep>
+				<subanchor sarel="1" saname="亚洲运动会" saoffset="265" salength="5" rank="147">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="2006 Asian Games">3071193</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Cycling at the 2002 Asian Games">28228238</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Athletics at the 2006 Asian Games">8080921</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Athletics at the 1998 Asian Games">9461419</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Board games at the Asian Games">14663724</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Indoor athletics at the 2005 Asian Indoor Games">20122771</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Athletics at the 2002 Asian Games">9423147</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="1954 Asian Games">923181</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="1986 Asian Games">3285386</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Short course swimming at the 2005 Asian Indoor Games">20545191</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Iran at the 2007 Asian Indoor Games">14350710</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Football at the Asian Games">8127003</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="2002 Asian Games">1075590</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Asian Para Games">23078239</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Badminton at the Asian Games">8606069</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Iran at the 2009 Asian Indoor Games">24936569</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="洲" saoffset="266" salength="1" rank="174">
+				<subanchor sarel="-1" saname="洲" saoffset="266" salength="1" rank="174">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Continent">19630739</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="运动" saoffset="267" salength="2" rank="52">
+				<subanchor sarel="-1" saname="运动" saoffset="267" salength="2" rank="52">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of sports writers">6709272</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sports game">387562</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sports radio">1942253</tobep>
@@ -72,22 +72,22 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Badminton at the Asian Games">8606069</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Athletics at the 2002 Asian Games">9423147</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="亚运会" saoffset="771" salength="3" rank="167">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Cleveland Force (1978–1988) players">19208137</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Strategy games/Strategy games topics">9408860</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Commonwealth Games/Commonwealth Games news">4438580</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Games played">3814</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Lists of video games">387509</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="1990 Asian Games">3285390</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Video game">5363</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Board games at the Asian Games">14663724</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Insomniac Games/Insomniac Games Dates">13933217</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Video games/Featured article">7145648</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="1986 Asian Games">3285386</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="2002 Asian Games">1075590</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Lusophony Games">6056373</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Games (magazine)">1028592</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Aquatics at the 2002 Commonwealth Games">19460294</tobep>
+				<subanchor sarel="1" saname="亚运会" saoffset="771" salength="3" rank="167">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Cleveland Force (1978–1988) players">19208137</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Strategy games/Strategy games topics">9408860</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Commonwealth Games/Commonwealth Games news">4438580</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Games played">3814</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Lists of video games">387509</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="1990 Asian Games">3285390</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Video game">5363</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Board games at the Asian Games">14663724</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Insomniac Games/Insomniac Games Dates">13933217</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Video games/Featured article">7145648</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="1986 Asian Games">3285386</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="2002 Asian Games">1075590</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Lusophony Games">6056373</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Games (magazine)">1028592</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Aquatics at the 2002 Commonwealth Games">19460294</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Video games/Picture">1664009</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Games (film)">11161265</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Zushi Games games">20370587</tobep>
@@ -561,8 +561,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="1951 Asian Games">935289</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="月" aoffset="1250" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="月" saoffset="1250" salength="1" rank="185">
+			<anchor arel="-1" aname="月" aoffset="1250" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="月" saoffset="1250" salength="1" rank="185">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Moon (disambiguation)">336909</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Month">20354</tobep>
 				</subanchor>
@@ -647,8 +647,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Li (unit)">1495421</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Delhi" aoffset="1263" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="Delhi" saoffset="1263" salength="5" rank="168">
+			<anchor arel="-1" aname="Delhi" aoffset="1263" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="Delhi" saoffset="1263" salength="5" rank="168">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Delhi Metro">1780600</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="New Delhi">51585</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Delhi Suburban Railway">19209326</tobep>
@@ -664,21 +664,21 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Feroz Shah Kotla">2101440</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="11月12日" aoffset="1297" alength="6" ext_length="0">
-				<subanchor sarel="0" saname="11月12日" saoffset="1297" salength="6" rank="154">
+			<anchor arel="-1" aname="11月12日" aoffset="1297" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="11月12日" saoffset="1297" salength="6" rank="154">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="November 12">21631</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="日" saoffset="1302" salength="1" rank="187">
+				<subanchor sarel="-1" saname="日" saoffset="1302" salength="1" rank="187">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Day">8376</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="11月27日" aoffset="1304" alength="6" ext_length="0">
-				<subanchor sarel="0" saname="11月27日" saoffset="1304" salength="6" rank="151">
+			<anchor arel="-1" aname="11月27日" aoffset="1304" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="11月27日" saoffset="1304" salength="6" rank="151">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="November 27">21448</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="广" aoffset="1310" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="广" saoffset="1310" salength="1" rank="248">
+				<subanchor sarel="-1" saname="广" saoffset="1310" salength="1" rank="248">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Guangzhou">12537</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Cantons of Switzerland">180752</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Canton, Massachusetts">116870</tobep>
@@ -1091,7 +1091,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="有田" aoffset="1567" alength="2" ext_length="1">
-				<subanchor sarel="0" saname="有田" saoffset="1567" salength="2" rank="187">
+				<subanchor sarel="-1" saname="有田" saoffset="1567" salength="2" rank="187">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hachirō Arita">2147956</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Imari porcelain">713152</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Arita Station">19187774</tobep>
@@ -1266,8 +1266,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Volleyball at the 1984 Summer Olympics – Men&apos;s volleyball">25614069</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="坚持" aoffset="1598" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="坚持" saoffset="1598" salength="2" rank="103">
+			<anchor arel="-1" aname="坚持" aoffset="1598" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="坚持" saoffset="1598" salength="2" rank="103">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Up! (album)">472483</tobep>
 				</subanchor>
 			</anchor>
@@ -1333,8 +1333,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="The Disintegration Loops">12196106</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="人" aoffset="1707" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="人" saoffset="1707" salength="1" rank="235">
+			<anchor arel="-1" aname="人" aoffset="1707" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="人" saoffset="1707" salength="1" rank="235">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Human">682482</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Human (disambiguation)">1028023</tobep>
 				</subanchor>
@@ -1737,8 +1737,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Leadership">130918</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="平和" aoffset="1947" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="平和" saoffset="1947" salength="2" rank="170">
+			<anchor arel="-1" aname="平和" aoffset="1947" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="平和" saoffset="1947" salength="2" rank="170">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mild hybrid">4370310</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="TAM Mild Jalapeño">6466069</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Classically Mild">23943071</tobep>
@@ -1880,8 +1880,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Family (Ba Jin novel)">8170174</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="加奥" aoffset="1992" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="加奥" saoffset="1992" salength="2" rank="143">
+			<anchor arel="-1" aname="加奥" aoffset="1992" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="加奥" saoffset="1992" salength="2" rank="143">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Gao Xiqing">14183802</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Gao Leilei">8377053</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Gao (mansa)">2258914</tobep>
@@ -1962,8 +1962,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Athletic conference">2150465</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="草" aoffset="2059" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="草" saoffset="2059" salength="1" rank="222">
+			<anchor arel="-1" aname="草" aoffset="2059" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="草" saoffset="2059" salength="1" rank="222">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Lawn">317938</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Grass">21380145</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Grass (1925 film)">73900</tobep>
@@ -2199,13 +2199,13 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Canton, Ohio">129826</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="最上" aoffset="2528" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="最上" saoffset="2528" salength="2" rank="77">
+			<anchor arel="-1" aname="最上" aoffset="2528" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="最上" saoffset="2528" salength="2" rank="77">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mogami">1776456</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="方" aoffset="2530" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="方" saoffset="2530" salength="1" rank="189">
+			<anchor arel="-1" aname="方" aoffset="2530" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="方" saoffset="2530" salength="1" rank="189">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Fong">1466214</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Square">28032</tobep>
 				</subanchor>
@@ -2277,8 +2277,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Zushi Games games">20370587</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Asia" aoffset="2604" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="Asia" saoffset="2604" salength="4" rank="191">
+			<anchor arel="-1" aname="Asia" aoffset="2604" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="Asia" saoffset="2604" salength="4" rank="191">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Asia (Roman province)">1241242</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Asia">689</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Asian countries by GDP">25828422</tobep>
@@ -2362,13 +2362,13 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Jiao (currency)">26073330</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="左" aoffset="2689" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="左" saoffset="2689" salength="1" rank="203">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Left">232807</tobep>
+			<anchor arel="1" aname="左" aoffset="2689" alength="1" ext_length="0">
+				<subanchor sarel="1" saname="左" saoffset="2689" salength="1" rank="203">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Left">232807</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="角分" aoffset="2691" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="角分" saoffset="2691" salength="2" rank="103">
+			<anchor arel="-1" aname="角分" aoffset="2691" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="角分" saoffset="2691" salength="2" rank="103">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Minute of arc">2431</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Brillouin zone">562067</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Harris affine region detector">14664078</tobep>
@@ -2381,7 +2381,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Singular points">4625053</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="PC Points">2104258</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="分" saoffset="2692" salength="1" rank="229">
+				<subanchor sarel="-1" saname="分" saoffset="2692" salength="1" rank="229">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Cent (currency)">269035</tobep>
 				</subanchor>
 			</anchor>
@@ -2467,14 +2467,14 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Eagle (disambiguation)">146026</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="團" aoffset="2715" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="團" saoffset="2715" salength="1" rank="215">
+			<anchor arel="-1" aname="團" aoffset="2715" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="團" saoffset="2715" salength="1" rank="215">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Regiment">166653</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Clique (graph theory)">524466</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="但" aoffset="2777" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="但" saoffset="2777" salength="1" rank="232">
+			<anchor arel="-1" aname="但" aoffset="2777" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="但" saoffset="2777" salength="1" rank="232">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tribe of Dan">332563</tobep>
 				</subanchor>
 			</anchor>
@@ -2604,21 +2604,21 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Beijing">18603746</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="数" aoffset="2888" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="数" saoffset="2888" salength="1" rank="191">
+			<anchor arel="-1" aname="数" aoffset="2888" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="数" saoffset="2888" salength="1" rank="191">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Number">21690</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Grammatical number">42296</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="类" aoffset="2908" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="类" saoffset="2908" salength="1" rank="161">
+			<anchor arel="-1" aname="类" aoffset="2908" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="类" saoffset="2908" salength="1" rank="161">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Class (computer science)">7392</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Class (set theory)">20696</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Class">6282</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="两" aoffset="2916" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="两" saoffset="2916" salength="1" rank="239">
+			<anchor arel="-1" aname="两" aoffset="2916" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="两" saoffset="2916" salength="1" rank="239">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tael">65937</tobep>
 				</subanchor>
 			</anchor>
@@ -2767,8 +2767,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Commonwealth">6766</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="相" aoffset="3400" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="相" saoffset="3400" salength="1" rank="164">
+			<anchor arel="-1" aname="相" aoffset="3400" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="相" saoffset="3400" salength="1" rank="164">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Phase (matter)">23637</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Xiang of Xia">627167</tobep>
 				</subanchor>
@@ -2821,21 +2821,21 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of culture topics">7527184</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="点" aoffset="3575" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="点" saoffset="3575" salength="1" rank="171">
+			<anchor arel="-1" aname="点" aoffset="3575" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="点" saoffset="3575" salength="1" rank="171">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Point (geometry)">593693</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="青年" aoffset="3590" alength="2" ext_length="0">
 				<subanchor sarel="0" saname="青年" saoffset="3590" salength="2" rank="218">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Martin Glover">1267247</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="International Union of Socialist Youth">513441</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Youth Without Youth">14010183</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of youth orchestras in the United States">4678497</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="World Federation of Democratic Youth">618114</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Youth (horse)">25563660</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Youth politics">9784299</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Youth (Matisyahu album)">3532837</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Martin Glover">1267247</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="International Union of Socialist Youth">513441</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Youth Without Youth">14010183</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of youth orchestras in the United States">4678497</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="World Federation of Democratic Youth">618114</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Youth (horse)">25563660</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Youth politics">9784299</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Youth (Matisyahu album)">3532837</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Youth Without Youth (film)">5569730</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Youth Without Youth (novella)">13999385</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Youth (Collective Soul album)">1306692</tobep>
@@ -2860,8 +2860,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Study skills">2351973</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="引力" aoffset="3609" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="引力" saoffset="3609" salength="2" rank="134">
+			<anchor arel="-1" aname="引力" aoffset="3609" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="引力" saoffset="3609" salength="2" rank="134">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Gravitational redshift">10346</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Gravitational collapse">619926</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Gravitational lens">48824</tobep>
@@ -2873,7 +2873,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mass">19048</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Gravitation/Mass">2478858</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="力" saoffset="3610" salength="1" rank="228">
+				<subanchor sarel="-1" saname="力" saoffset="3610" salength="1" rank="228">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Force">10902</tobep>
 				</subanchor>
 			</anchor>
@@ -2890,8 +2890,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ministry (government department)">859401</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="一部" aoffset="3620" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="一部" saoffset="3620" salength="2" rank="132">
+			<anchor arel="-1" aname="一部" aoffset="3620" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="一部" saoffset="3620" salength="2" rank="132">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Radical 1">8837527</tobep>
 				</subanchor>
 			</anchor>
@@ -3443,8 +3443,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Chess">5134</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="不舉" aoffset="4955" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="不舉" saoffset="4955" salength="2" rank="131">
+			<anchor arel="-1" aname="不舉" aoffset="4955" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="不舉" saoffset="4955" salength="2" rank="131">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Do Not Erase">10583159</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Contra dance choreography">9010108</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Do not resuscitate">166811</tobep>
@@ -4906,8 +4906,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="William Winter (author)">3943774</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="3月1日" aoffset="17508" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="3月1日" saoffset="17508" salength="4" rank="163">
+			<anchor arel="-1" aname="3月1日" aoffset="17508" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="3月1日" saoffset="17508" salength="4" rank="163">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="March 1 (Eastern Orthodox liturgics)">3999117</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="March 1">19346</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="March 2002">106480</tobep>
@@ -4936,8 +4936,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sasson Expressway">8830580</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="3月9日" aoffset="17610" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="3月9日" saoffset="17610" salength="4" rank="118">
+			<anchor arel="-1" aname="3月9日" aoffset="17610" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="3月9日" saoffset="17610" salength="4" rank="118">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="March 9">20054</tobep>
 				</subanchor>
 			</anchor>
@@ -5003,12 +5003,12 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Gangwon (historical)">4684863</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="2月1" aoffset="17960" alength="3" ext_length="1">
-				<subanchor sarel="0" saname="2月1" saoffset="17960" salength="3" rank="149">
+			<anchor arel="-1" aname="2月1" aoffset="17960" alength="3" ext_length="1">
+				<subanchor sarel="-1" saname="2月1" saoffset="17960" salength="3" rank="149">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="February 1">10846</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="February 1960">24928506</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="2月1日" saoffset="17960" salength="4" rank="148">
+				<subanchor sarel="-1" saname="2月1日" saoffset="17960" salength="4" rank="148">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="February 1">10846</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="February 1960">24928506</tobep>
 				</subanchor>
@@ -5098,14 +5098,14 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tree">18955875</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="10月26日" aoffset="18826" alength="6" ext_length="0">
-				<subanchor sarel="0" saname="10月26日" saoffset="18826" salength="6" rank="155">
+			<anchor arel="-1" aname="10月26日" aoffset="18826" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="10月26日" saoffset="18826" salength="6" rank="155">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="October 2002">106489</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="October 26">22403</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="11月3日" aoffset="18833" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="11月3日" saoffset="18833" salength="5" rank="160">
+			<anchor arel="-1" aname="11月3日" aoffset="18833" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="11月3日" saoffset="18833" salength="5" rank="160">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="November 3">21764</tobep>
 				</subanchor>
 			</anchor>
@@ -5145,8 +5145,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Phylum">19294750</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="10月30日" aoffset="18951" alength="6" ext_length="0">
-				<subanchor sarel="0" saname="10月30日" saoffset="18951" salength="6" rank="198">
+			<anchor arel="-1" aname="10月30日" aoffset="18951" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="10月30日" saoffset="18951" salength="6" rank="198">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="October 30">22436</tobep>
 				</subanchor>
 			</anchor>
@@ -5306,22 +5306,22 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Beach">40630</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="8月1" aoffset="19949" alength="3" ext_length="1">
-				<subanchor sarel="0" saname="8月1" saoffset="19949" salength="3" rank="205">
+			<anchor arel="-1" aname="8月1" aoffset="19949" alength="3" ext_length="1">
+				<subanchor sarel="-1" saname="8月1" saoffset="19949" salength="3" rank="205">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bayi Football Team">6195325</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Nanchang Uprising">400859</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="August 1 (Eastern Orthodox liturgics)">2283208</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="August 1">1254</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="8月1日" saoffset="19949" salength="4" rank="204">
+				<subanchor sarel="-1" saname="8月1日" saoffset="19949" salength="4" rank="204">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bayi Football Team">6195325</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Nanchang Uprising">400859</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="August 1 (Eastern Orthodox liturgics)">2283208</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="August 1">1254</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="8月9日" aoffset="19954" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="8月9日" saoffset="19954" salength="4" rank="182">
+			<anchor arel="-1" aname="8月9日" aoffset="19954" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="8月9日" saoffset="19954" salength="4" rank="182">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="August 9">1027</tobep>
 				</subanchor>
 			</anchor>
@@ -5471,22 +5471,22 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Japanese occupation of Singapore">2263491</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="7月3" aoffset="21094" alength="3" ext_length="1">
-				<subanchor sarel="0" saname="7月3" saoffset="21094" salength="3" rank="203">
+			<anchor arel="-1" aname="7月3" aoffset="21094" alength="3" ext_length="1">
+				<subanchor sarel="-1" saname="7月3" saoffset="21094" salength="3" rank="203">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="July 3">15848</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="July 1999">2722966</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Battle of Gettysburg, Third Day cavalry battles">2593728</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="July 3 (Eastern Orthodox liturgics)">2108059</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="7月3日" saoffset="21094" salength="4" rank="202">
+				<subanchor sarel="-1" saname="7月3日" saoffset="21094" salength="4" rank="202">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="July 3">15848</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="July 1999">2722966</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Battle of Gettysburg, Third Day cavalry battles">2593728</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="July 3 (Eastern Orthodox liturgics)">2108059</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="7月12日" aoffset="21099" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="7月12日" saoffset="21099" salength="5" rank="161">
+			<anchor arel="-1" aname="7月12日" aoffset="21099" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="7月12日" saoffset="21099" salength="5" rank="161">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="July 12 (Eastern Orthodox liturgics)">2220638</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="July 12">15971</tobep>
 				</subanchor>
@@ -5829,16 +5829,16 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Monument Class Description">1816973</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="澳葡" aoffset="22177" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="澳葡" saoffset="22177" salength="2" rank="171">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Macanese Portuguese">12180181</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Macanese">3700207</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Macau">19068</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Macanese cuisine">1690979</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Macanese people">245886</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Macanese language">591239</tobep>
+			<anchor arel="1" aname="澳葡" aoffset="22177" alength="2" ext_length="0">
+				<subanchor sarel="1" saname="澳葡" saoffset="22177" salength="2" rank="171">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Macanese Portuguese">12180181</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Macanese">3700207</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Macau">19068</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Macanese cuisine">1690979</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Macanese people">245886</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Macanese language">591239</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="葡" saoffset="22178" salength="1" rank="79">
+				<subanchor sarel="-1" saname="葡" saoffset="22178" salength="1" rank="79">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portugal">23033</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portugal national football team">576328</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portuguese Empire">230578</tobep>
