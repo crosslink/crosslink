@@ -77,6 +77,7 @@ public class linkPaneMouseListener implements MouseInputListener {
     		return;
     	}
     	
+    	AssessmentThread.setCtrlKeyDown(mce.isControlDown());
         int noOfClicks = mce.getClickCount();
         int button = mce.getButton();
 //        timer = new Timer();

@@ -69,6 +69,8 @@ public class AssessmentThread extends Thread {
     private Hashtable<String, String[]> topicAnchorOLTSENHT = new Hashtable<String, String[]>();
     private Hashtable<String, Object> myTAnchorSEHiObj = new Hashtable<String, Object>();
     
+    private static boolean ctrlKeyDown = false;
+    
 //    private static AssessmentThread instance = null;   
 
     private void log(String txt) {
@@ -169,6 +171,14 @@ public class AssessmentThread extends Thread {
 		task = aTask;
 	}
 
+	public static boolean isCtrlKeyDown() {
+		return ctrlKeyDown;
+	}
+
+	public static void setCtrlKeyDown(boolean ctrlKeyDown) {
+		AssessmentThread.ctrlKeyDown = ctrlKeyDown;
+	}
+
 	public void run() {
 		while (true) {
 			if (getTask() != EVENT_SET_NOTHING) {
@@ -246,7 +256,7 @@ public class AssessmentThread extends Thread {
             this.myPoolUpdater.updateTopicAnchorLinkRel(topicID, currentLink);
             // -----------------------------------------------------------------
             AssessedAnchor previous =  currentLink.getAssociatedAnchor();
-            LTWAssessmentToolControler.getInstance().goNextLink(true, true);
+            LTWAssessmentToolControler.getInstance().goNextLink(true, !isCtrlKeyDown());
 //            CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(previous, link.getAssociatedAnchor(), link);
     }
     
@@ -374,7 +384,7 @@ public class AssessmentThread extends Thread {
 
             
             AssessedAnchor previous =   currentLink.getAssociatedAnchor();
-            LTWAssessmentToolControler.getInstance().goNextLink(true, true);
+            LTWAssessmentToolControler.getInstance().goNextLink(true, !isCtrlKeyDown());
 //            CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(previous, link.getAssociatedAnchor(), link);
 //            os.setTABFieldValues(link);
     }
