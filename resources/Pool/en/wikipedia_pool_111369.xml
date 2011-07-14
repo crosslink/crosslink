@@ -65,7 +65,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="亚运" aoffset="771" alength="2" ext_length="1">
-				<subanchor sarel="0" saname="亚运" saoffset="771" salength="2" rank="219">
+				<subanchor sarel="-1" saname="亚运" saoffset="771" salength="2" rank="219">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Football at the Asian Games">8127003</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Athletics at the 2006 Asian Games">8080921</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Athletics at the 1998 Asian Games">9461419</tobep>
@@ -3059,7 +3059,7 @@
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bicycle lock">1483426</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="乒乓" aoffset="4275" alength="2" ext_length="1">
+			<anchor arel="0" aname="乒乓" aoffset="4275" alength="2" ext_length="1">
 				<subanchor sarel="1" saname="乒乓" saoffset="4275" salength="2" rank="177">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Asian Table Tennis Union">28062238</tobep>
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Table tennis">30589</tobep>
@@ -3201,7 +3201,7 @@
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="National Register of Historic Places listings in Warren County, Kentucky">21127152</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="高尔夫" aoffset="4584" alength="3" ext_length="1">
+			<anchor arel="0" aname="高尔夫" aoffset="4584" alength="3" ext_length="1">
 				<subanchor sarel="1" saname="高尔夫" saoffset="4584" salength="3" rank="125">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of golf courses in Canada">27107276</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Brabazon Trophy">18220643</tobep>
@@ -3861,7 +3861,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="South Asia">21566765</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="中亚" aoffset="7399" alength="2" ext_length="2">
+			<anchor arel="0" aname="中亚" aoffset="7399" alength="2" ext_length="2">
 				<subanchor sarel="1" saname="中亚" saoffset="7399" salength="2" rank="54">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Geoffrey Wheeler">5597842</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Central Asia Insurance">5346536</tobep>
@@ -4380,8 +4380,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="December 20">8849</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="-1" aname="曼谷" aoffset="15631" alength="2" ext_length="0">
-				<subanchor sarel="-1" saname="曼谷" saoffset="15631" salength="2" rank="17">
+			<anchor arel="1" aname="曼谷" aoffset="15631" alength="2" ext_length="0">
+				<subanchor sarel="1" saname="曼谷" saoffset="15631" salength="2" rank="17">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Don Mueang International Airport">266286</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Miss Thailand Universe 2009">22000356</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Miss Thailand Universe 2005">22418931</tobep>
@@ -4390,7 +4390,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bangkok Airways">466995</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bangkok Planetarium">20483665</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="BTS Skytrain">487097</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bangkok">56615</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bangkok">56615</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of tallest buildings in Thailand">18032070</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Miss Thailand Universe 2004">22491181</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Suvarnabhumi Airport">360700</tobep>
@@ -4425,14 +4425,14 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="September 16">27650</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="德黑兰" aoffset="15859" alength="3" ext_length="0">
-				<subanchor sarel="0" saname="德黑兰" saoffset="15859" salength="3" rank="31">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tehran (film)">23150946</tobep>
+			<anchor arel="1" aname="德黑兰" aoffset="15859" alength="3" ext_length="0">
+				<subanchor sarel="1" saname="德黑兰" saoffset="15859" salength="3" rank="31">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tehran (film)">23150946</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Iranian Volleyball Super League">14229646</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tehran Conference">70381</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tehran Province">202698</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tehran Province">202698</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="University of Tehran">159999</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tehran">57654</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tehran">57654</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ali Dehbashi">3719359</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tehran Bureau">23422738</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tehran (disambiguation)">4118238</tobep>
@@ -4488,8 +4488,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="October 5">22536</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="汉" aoffset="16199" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="汉" saoffset="16199" salength="1" rank="183">
+			<anchor arel="1" aname="汉" aoffset="16199" alength="1" ext_length="1">
+				<subanchor sarel="-1" saname="汉" saoffset="16199" salength="1" rank="183">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Han Han">21553573</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Han (surname)">5432856</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Kangxi radicals">1709013</tobep>
@@ -4508,38 +4508,38 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Chinese language">5751</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Han (name)">10171448</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="汉城" saoffset="16199" salength="2" rank="74">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seoul">19159283</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Football in Seoul">23533799</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="1975 President&apos;s Cup Football Tournament">24648542</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of universities and colleges in South Korea">379140</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="FC Seoul">1056336</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seoul Train">6133534</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seoul dialect">1690169</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="1988 Summer Olympics">82757</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hansol Korea Open">6443971</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="1976 President&apos;s Cup Football Tournament">24651205</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seoul Open">16261562</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seoul spring">22101341</tobep>
+				<subanchor sarel="1" saname="汉城" saoffset="16199" salength="2" rank="74">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seoul">19159283</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Football in Seoul">23533799</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="1975 President&apos;s Cup Football Tournament">24648542</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of universities and colleges in South Korea">379140</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="FC Seoul">1056336</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seoul Train">6133534</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seoul dialect">1690169</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="1988 Summer Olympics">82757</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hansol Korea Open">6443971</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="1976 President&apos;s Cup Football Tournament">24651205</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seoul Open">16261562</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seoul spring">22101341</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="首尔" aoffset="16203" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="首尔" saoffset="16203" salength="2" rank="27">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of universities and colleges in South Korea">379140</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="FC Seoul">1056336</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hansol Korea Open">6443971</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seoul Metropolitan Subway">293921</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seoul Open">16261562</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Jung-gu, Seoul">8103950</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Football in Seoul">23533799</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seoul">19159283</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seoul Metro">1440155</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="1975 President&apos;s Cup Football Tournament">24648542</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seoul dialect">1690169</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seoul Train">6133534</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="1988 Summer Olympics">82757</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="1976 President&apos;s Cup Football Tournament">24651205</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seoul spring">22101341</tobep>
+			<anchor arel="1" aname="首尔" aoffset="16203" alength="2" ext_length="0">
+				<subanchor sarel="1" saname="首尔" saoffset="16203" salength="2" rank="27">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of universities and colleges in South Korea">379140</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="FC Seoul">1056336</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hansol Korea Open">6443971</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seoul Metropolitan Subway">293921</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seoul Open">16261562</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Jung-gu, Seoul">8103950</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Football in Seoul">23533799</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seoul">19159283</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seoul Metro">1440155</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="1975 President&apos;s Cup Football Tournament">24648542</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seoul dialect">1690169</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seoul Train">6133534</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="1988 Summer Olympics">82757</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="1976 President&apos;s Cup Football Tournament">24651205</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seoul spring">22101341</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="9月22" aoffset="16305" alength="4" ext_length="1">
@@ -4556,15 +4556,15 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="October 7">22446</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="北" aoffset="16329" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="北" saoffset="16329" salength="1" rank="227">
+			<anchor arel="1" aname="北" aoffset="16329" alength="1" ext_length="1">
+				<subanchor sarel="-1" saname="北" saoffset="16329" salength="1" rank="227">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="North">56478</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="北京" saoffset="16329" salength="2" rank="76">
+				<subanchor sarel="1" saname="北京" saoffset="16329" salength="2" rank="76">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Government of the People&apos;s Republic of China">3205521</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Beijing central business district">1029757</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Beijing Railway Station">803685</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="2008 Summer Olympics">77745</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="2008 Summer Olympics">77745</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Beijing Capital International Airport">291328</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Z-series">6232791</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="China Open (tennis)">2803995</tobep>
@@ -4603,8 +4603,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Twelfth Apostle">187484</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="10月2日" aoffset="16412" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="10月2日" saoffset="16412" salength="5" rank="189">
+			<anchor arel="-1" aname="10月2日" aoffset="16412" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="10月2日" saoffset="16412" salength="5" rank="189">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Gandhi Jayanti">1876176</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="October 2">22527</tobep>
 				</subanchor>
@@ -4614,16 +4614,16 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="October 16">22556</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="广岛" aoffset="16437" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="广岛" saoffset="16437" salength="2" rank="82">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Numakuma, Hiroshima">503656</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hiroshima Telecasting">8312112</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="2006 Asian Men&apos;s Junior Handball Championship">24107093</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hiroshima Dreamination">24132973</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hiroshima Prefecture">179797</tobep>
+			<anchor arel="1" aname="广岛" aoffset="16437" alength="2" ext_length="0">
+				<subanchor sarel="1" saname="广岛" saoffset="16437" salength="2" rank="82">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Numakuma, Hiroshima">503656</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hiroshima Telecasting">8312112</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="2006 Asian Men&apos;s Junior Handball Championship">24107093</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hiroshima Dreamination">24132973</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hiroshima Prefecture">179797</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hiroshima (band)">2349944</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Higashihiroshima, Hiroshima">329342</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hiroshima">59062</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hiroshima">59062</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hiroshima Station">6227028</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hiroshima (film)">3843721</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Astram Line">4263707</tobep>
@@ -4681,8 +4681,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="October 14">22525</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="釜山" aoffset="16671" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="釜山" saoffset="16671" salength="2" rank="58">
+			<anchor arel="1" aname="釜山" aoffset="16671" alength="2" ext_length="0">
+				<subanchor sarel="1" saname="釜山" saoffset="16671" salength="2" rank="58">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Busan Subway">4914568</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Siege of Busan">2611148</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Flea Market Cup">22618776</tobep>
@@ -4690,14 +4690,14 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Air Busan">17942432</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Busan I&apos;Park FC">26733216</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Busan Sangmu">22527595</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Busan">68115</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Busan">68115</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Football at the 1997 East Asian Games">22662743</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Busan Station">3726412</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Gimhae International Airport">291219</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of foreign K-League players">13333010</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Busan Kyotong">6701658</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="山" saoffset="16672" salength="1" rank="205">
+				<subanchor sarel="-1" saname="山" saoffset="16672" salength="1" rank="205">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mountain">37754</tobep>
 				</subanchor>
 			</anchor>
@@ -4833,12 +4833,12 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="October 4">22454</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="仁" aoffset="17003" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="仁" saoffset="17003" salength="1" rank="234">
+			<anchor arel="-1" aname="仁" aoffset="17003" alength="1" ext_length="1">
+				<subanchor sarel="-1" saname="仁" saoffset="17003" salength="1" rank="234">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Benevolence">15244385</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ren (Confucianism)">20112903</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="仁川" saoffset="17003" salength="2" rank="94">
+				<subanchor sarel="-1" saname="仁川" saoffset="17003" salength="2" rank="94">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Incheon">68074</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Battle of Inchon">1055744</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Incheon Chinatown">11550827</tobep>
@@ -4852,7 +4852,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Incheon Bridge">10380125</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="NEXEN Heroes">22641558</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="川" saoffset="17004" salength="1" rank="36">
+				<subanchor sarel="-1" saname="川" saoffset="17004" salength="1" rank="36">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Politics of Sichuan">14644019</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sichuan Guancheng F.C.">3567440</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sichuan">65185</tobep>
@@ -4860,8 +4860,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sichuan FC">9993036</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="亞洲冬季運動會" aoffset="17055" alength="7" ext_length="0">
-				<subanchor sarel="0" saname="亞洲冬季運動會" saoffset="17055" salength="7" rank="139">
+			<anchor arel="1" aname="亞洲冬季運動會" aoffset="17055" alength="7" ext_length="0">
+				<subanchor sarel="1" saname="亞洲冬季運動會" saoffset="17055" salength="7" rank="139">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="2007 Asian Winter Games">3286011</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="2003 Asian Winter Games">3286007</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Figure skating at the Asian Winter Games">12573588</tobep>
@@ -4870,9 +4870,9 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="1990 Asian Winter Games">3286002</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ice hockey at the Asian Winter Games">24909001</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="1986 Asian Winter Games">3285611</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Asian Winter Games">6511088</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Asian Winter Games">6511088</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="冬" saoffset="17057" salength="1" rank="246">
+				<subanchor sarel="-1" saname="冬" saoffset="17057" salength="1" rank="246">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Winter &amp; Winter">1680264</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Winter Olympic Games">34069</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Pedro Winter">8778803</tobep>
@@ -4888,7 +4888,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Alpine skiing at the 2002 Winter Paralympics">19875340</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="William Winter (author)">3943774</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="冬季" saoffset="17057" salength="2" rank="136">
+				<subanchor sarel="-1" saname="冬季" saoffset="17057" salength="2" rank="136">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Winter &amp; Winter">1680264</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Winter Olympic Games">34069</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Pedro Winter">8778803</tobep>
@@ -4922,7 +4922,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="札幌" aoffset="17530" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="札幌" saoffset="17530" salength="2" rank="111">
+				<subanchor sarel="-1" saname="札幌" saoffset="17530" salength="2" rank="111">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sapporo Brewery">1303632</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sapporo Dome">1906497</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sapporo Station">2221506</tobep>
