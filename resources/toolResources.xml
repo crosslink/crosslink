@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><toolResources>
 
-<wikipediaCollectionPath>/data/corpus/wikipedia/all</wikipediaCollectionPath>
+<wikipediaCollectionPath>/sata1/p1/workspace/CrosslinkAssessment-C2E/resources/Collections</wikipediaCollectionPath>
 <ltwTopics>111369:zh</ltwTopics>
 <currTopicXmlFile>resources/Topics/zh/111369.xml</currTopicXmlFile>
 <outgoingCompletion>284 : 4076</outgoingCompletion>

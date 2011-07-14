@@ -183,6 +183,7 @@ public class LTWAssessmentToolView extends FrameView {
         // 0-1) Wikipedia
         File wikiCollectionFolder = new File(defaultWikipediaDirectory);
         if (wikiCollectionFolder.exists()) {
+        	ResourcesManager.getInstance().updateWikipediaCollectionDirectory(wikiCollectionFolder.getAbsolutePath());
             log("The Wikipedia Collection is ready.");
         } else {
         	defaultWikipediaDirectory = ResourcesManager.getInstance().getWikipediaCollectionFolder();
