@@ -382,14 +382,15 @@ public class topicPaneMouseListener implements MouseInputListener {
         // </editor-fold>
     }
 
-    private void topicAnchorClickToToggle(boolean markAllSubanchorsIrrelevant) {
+    private void topicAnchorClickToToggle(boolean ctrlKeyDown) {
     	if (!AssessmentThread.isReadyForNextLink()) {
     		return;
     	}
+    	AssessmentThread.setCtrlKeyDown(ctrlKeyDown);
         // ---------------------------------------------------------------------
         if (preTHyperOLSEStatus.getParent() == currSCRSEName) {
             log("CURR PAnchor is PRE PAnchor...");
-            // CURR PAnchor is PRE PAnchor
+            // CURR PAnchor is PRE PAnchor     
             AssessmentThread.setProcessingAnchor(preTHyperOLSEStatus);
             AssessmentThread.setTask(AssessmentThread.EVENT_SET_SUBANCHOR_IRRELEVANT);
 //            LTWAssessmentToolControler.getInstance().setSubanchorIrrelevant(preTHyperOLSEStatus);

@@ -414,7 +414,7 @@ public class AssessmentThread extends Thread {
     public void markCurrentSubanchorIrrelevant(boolean onlyCurrentAnchor) {
         if (onlyCurrentAnchor) {
         	LTWAssessmentToolControler.getInstance().setSubanchorIrrelevant(processingAnchor);
-            LTWAssessmentToolControler.getInstance().goNextLink(true, true);
+            LTWAssessmentToolControler.getInstance().goNextLink(true, !isCtrlKeyDown());
         }
         else {
         	IndexedAnchor parent = processingAnchor.getParent();
