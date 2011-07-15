@@ -139,14 +139,14 @@
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Programming language">23015</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Programming language theory">3882218</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Computer program">5783</tobep>
-					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="SMX (computer language)">2231975</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="SMX (computer language)">2231975</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Computer-assisted language learning">194053</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Index of computing articles">99965</tobep>
-					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="FACT computer language">20497946</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="FACT computer language">20497946</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Index of software engineering articles">2702229</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Language Computer Corporation">19547397</tobep>
-					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Protium (computer language)">6763518</tobep>
-					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="PLAN (computer language)">22933964</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Protium (computer language)">6763518</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="PLAN (computer language)">22933964</tobep>
 				</subanchor>
 				<subanchor sarel="-1" saname="语" saoffset="479" salength="1" rank="117">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Language">17524</tobep>
@@ -358,8 +358,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="September 11 attacks opinion polls">12711627</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="虚" aoffset="607" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="虚" saoffset="607" salength="1" rank="64">
+			<anchor arel="-1" aname="虚" aoffset="607" alength="1" ext_length="1">
+				<subanchor sarel="-1" saname="虚" saoffset="607" salength="1" rank="64">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Virtual artifact">7708188</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Virtual currency">6796824</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of virtual schools">17692088</tobep>
@@ -375,21 +375,21 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Virtual">693310</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Virtual storage">41853</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="虚拟" saoffset="607" salength="2" rank="28">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Virtual artifact">7708188</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Virtual currency">6796824</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of virtual schools">17692088</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Windows Virtual PC">312015</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Virtual firewall">25787329</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Virtual device">423777</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Virtuality (gaming)">15743966</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Program and System Information Protocol">1486899</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Virtual image">953369</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Virtual reality">32612</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Virtual Interface">21469550</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Virtual channel">1453315</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Virtual">693310</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Virtual storage">41853</tobep>
+				<subanchor sarel="-1" saname="虚拟" saoffset="607" salength="2" rank="28">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Virtual artifact">7708188</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Virtual currency">6796824</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of virtual schools">17692088</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Windows Virtual PC">312015</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Virtual firewall">25787329</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Virtual device">423777</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Virtuality (gaming)">15743966</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Program and System Information Protocol">1486899</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Virtual image">953369</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Virtual reality">32612</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Virtual Interface">21469550</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Virtual channel">1453315</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Virtual">693310</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Virtual storage">41853</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="是" aoffset="616" alength="1" ext_length="0">
@@ -486,8 +486,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bird">3410</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="方" aoffset="627" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="方" saoffset="627" salength="1" rank="106">
+			<anchor arel="-1" aname="方" aoffset="627" alength="1" ext_length="1">
+				<subanchor sarel="-1" saname="方" saoffset="627" salength="1" rank="106">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Side platform">1947144</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Manavgat">4105613</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sideshow">26930</tobep>
@@ -508,32 +508,32 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Square (geometry)">659939</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Fong">1466214</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="方法" saoffset="627" salength="2" rank="45">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Design methods">3443916</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Method (computer science)">232817</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Food preservation">10834</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Decoding methods">1940782</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mortar methods">16254249</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Methodology">620667</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="International Conference on Differential Geometric Methods in Theoretical Physics">8460224</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Scientific method">26833</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Lonnie D. Bentley">22902471</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Unsound Methods">9235311</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Methods for Attaining Extreme Altitudes (EP)">4844645</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="ABS methods">14139597</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Cultural methods">23599525</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Method">43645</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Meshfree methods">6243282</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Iterative method">15237</tobep>
+				<subanchor sarel="-1" saname="方法" saoffset="627" salength="2" rank="45">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Design methods">3443916</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Method (computer science)">232817</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Food preservation">10834</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Decoding methods">1940782</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mortar methods">16254249</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Methodology">620667</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="International Conference on Differential Geometric Methods in Theoretical Physics">8460224</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Scientific method">26833</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Lonnie D. Bentley">22902471</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Unsound Methods">9235311</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Methods for Attaining Extreme Altitudes (EP)">4844645</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="ABS methods">14139597</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Cultural methods">23599525</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Method">43645</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Meshfree methods">6243282</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Iterative method">15237</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="。" aoffset="629" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="。" saoffset="629" salength="1" rank="117">
+			<anchor arel="-1" aname="。" aoffset="629" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="。" saoffset="629" salength="1" rank="117">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Full stop">23523100</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="不" aoffset="631" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="不" saoffset="631" salength="1" rank="148">
+			<anchor arel="-1" aname="不" aoffset="631" alength="1" ext_length="1">
+				<subanchor sarel="-1" saname="不" saoffset="631" salength="1" rank="148">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Not Another Not Another Movie">20169617</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Not!">6678597</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Silver chloride">1085174</tobep>
@@ -552,7 +552,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Not Too Young, Not Too Old">14623684</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Scenthound Group">19071084</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="不是" saoffset="631" salength="2" rank="110">
+				<subanchor sarel="-1" saname="不是" saoffset="631" salength="2" rank="110">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Not Another Not Another Movie">20169617</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Not!">6678597</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Political corruption">66220</tobep>
@@ -568,8 +568,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Scenthound Group">19071084</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="现" aoffset="635" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="现" saoffset="635" salength="1" rank="129">
+			<anchor arel="1" aname="现" aoffset="635" alength="1" ext_length="1">
+				<subanchor sarel="-1" saname="现" saoffset="635" salength="1" rank="129">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Isaz">1579113</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Is Is">11778974</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Isaiah">15088</tobep>
@@ -586,23 +586,23 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mohammadabad, Iran">17332983</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Is Underground">8837068</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="现实" saoffset="635" salength="2" rank="33">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Reality (Smooth album)">21009797</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Reality Checkpoint">842007</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Reality television">38539</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Reality (David Bowie album)">548774</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Computer-mediated reality">623598</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Reality">43854</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mixed reality">877295</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Reality (Dream album)">3372881</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Love Reality">28108703</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Reality undone">11772709</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Reality Obsessed">18952961</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Augmented reality">85631</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Consensus reality">63392</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Virtuality Continuum">8125101</tobep>
+				<subanchor sarel="1" saname="现实" saoffset="635" salength="2" rank="33">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Reality (Smooth album)">21009797</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Reality Checkpoint">842007</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Reality television">38539</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Reality (David Bowie album)">548774</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Computer-mediated reality">623598</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Reality">43854</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mixed reality">877295</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Reality (Dream album)">3372881</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Love Reality">28108703</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Reality undone">11772709</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Reality Obsessed">18952961</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Augmented reality">85631</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Consensus reality">63392</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Virtuality Continuum">8125101</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="实" saoffset="636" salength="1" rank="58">
+				<subanchor sarel="-1" saname="实" saoffset="636" salength="1" rank="58">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Real Real Real">12302593</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Real (hypermarket)">8484200</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Spanish football champions">20302096</tobep>
@@ -622,34 +622,34 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Real to Real Cacophony">5969688</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="存在" aoffset="637" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="存在" saoffset="637" salength="2" rank="48">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Chinese nobility">309437</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="There There">5938110</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tamo daleko">3388934</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="There (virtual world)">463437</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Is There Anybody Out There?">2367026</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Existential quantification">91420</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="There Goes a...">3641804</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Is There Life Out There?">4883476</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="We Were There">16697096</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Up There Down There">16115635</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Existentialism">9593</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Once upon a time">2689132</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="There (film)">26561763</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Existence">9302</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="There">25545790</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="There’s Something Out There">7691695</tobep>
+			<anchor arel="1" aname="存在" aoffset="637" alength="2" ext_length="0">
+				<subanchor sarel="1" saname="存在" saoffset="637" salength="2" rank="48">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Chinese nobility">309437</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="There There">5938110</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tamo daleko">3388934</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="There (virtual world)">463437</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Is There Anybody Out There?">2367026</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Existential quantification">91420</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="There Goes a...">3641804</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Is There Life Out There?">4883476</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="We Were There">16697096</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Up There Down There">16115635</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Existentialism">9593</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Once upon a time">2689132</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="There (film)">26561763</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Existence">9302</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="There">25545790</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="There’s Something Out There">7691695</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="编程" aoffset="640" alength="2" ext_length="2">
-				<subanchor sarel="0" saname="编程" saoffset="640" salength="2" rank="19">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Computer programming">5311</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="2009-2010 United States network television schedule (late night)">25719941</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Programming in the large and programming in the small">1800329</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Programming (music)">585746</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Drum machine">45839</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Optimum programming">2876020</tobep>
+			<anchor arel="1" aname="编程" aoffset="640" alength="2" ext_length="2">
+				<subanchor sarel="-1" saname="编程" saoffset="640" salength="2" rank="19">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Computer programming">5311</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="2009-2010 United States network television schedule (late night)">25719941</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Programming in the large and programming in the small">1800329</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Programming (music)">585746</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Drum machine">45839</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Optimum programming">2876020</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Programming language">23015</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Reactive programming">12291165</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Limnor">2782804</tobep>
@@ -659,18 +659,18 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Audio programming language">910389</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Keith Thomas (producer)">16077931</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="编程语言" saoffset="640" salength="4" rank="6">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Programming language">23015</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ana (programming language)">2914183</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Visual programming language">499268</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Programming language theory">3882218</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="JADE (programming language)">5887624</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Non-English-based programming languages">365497</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Boo (programming language)">1147624</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Snowball programming language">919808</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Programming paradigm">189897</tobep>
+				<subanchor sarel="1" saname="编程语言" saoffset="640" salength="4" rank="6">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Programming language">23015</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ana (programming language)">2914183</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Visual programming language">499268</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Programming language theory">3882218</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="JADE (programming language)">5887624</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Non-English-based programming languages">365497</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Boo (programming language)">1147624</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Snowball programming language">919808</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Programming paradigm">189897</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="程" saoffset="641" salength="1" rank="89">
+				<subanchor sarel="-1" saname="程" saoffset="641" salength="1" rank="89">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Cheng">17754735</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Cheng Wen-hsing">930531</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Cheng Tinghua">8894635</tobep>
@@ -726,8 +726,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="D-subminiature (professional audio)">21106924</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="类" aoffset="650" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="类" saoffset="650" salength="1" rank="59">
+			<anchor arel="-1" aname="类" aoffset="650" alength="1" ext_length="1">
+				<subanchor sarel="-1" saname="类" saoffset="650" salength="1" rank="59">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of destroyer classes">429025</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of North American broadcast station classes">944836</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of United Kingdom locations: J">3785727</tobep>
@@ -745,18 +745,18 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Classé">2847631</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="CLASS">2341147</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="类似" saoffset="650" salength="2" rank="81">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Self-similar process">12394086</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Continental IO-550">20865646</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Gallery of flags by similarity">7356619</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Similar fact evidence">4586343</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Lycoming O-235">1865149</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of optical disc authoring software">2062303</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="The Serpentine Similar">3617318</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Similar matrix">341149</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mick and similar (disambiguation)">17554975</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Similarity (geometry)">39377</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Self-similarity">28782</tobep>
+				<subanchor sarel="-1" saname="类似" saoffset="650" salength="2" rank="81">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Self-similar process">12394086</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Continental IO-550">20865646</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Gallery of flags by similarity">7356619</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Similar fact evidence">4586343</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Lycoming O-235">1865149</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of optical disc authoring software">2062303</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="The Serpentine Similar">3617318</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Similar matrix">341149</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mick and similar (disambiguation)">17554975</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Similarity (geometry)">39377</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Self-similarity">28782</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="参" aoffset="659" alength="1" ext_length="0">
@@ -791,13 +791,13 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Korean musicians">933390</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Nuva" aoffset="661" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="Nuva" saoffset="661" salength="4" rank="0">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Toa (Bionicle)">16807156</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bionicle Legends">1832035</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Bionicle toys">5579246</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bionicle Chronicles">1308882</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Bionicle media">2025394</tobep>
+			<anchor arel="-1" aname="Nuva" aoffset="661" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="Nuva" saoffset="661" salength="4" rank="0">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Toa (Bionicle)">16807156</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bionicle Legends">1832035</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Bionicle toys">5579246</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bionicle Chronicles">1308882</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Bionicle media">2025394</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="能" aoffset="669" alength="1" ext_length="0">
