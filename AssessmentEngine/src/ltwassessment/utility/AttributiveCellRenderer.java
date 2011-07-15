@@ -130,7 +130,7 @@ public class AttributiveCellRenderer extends DefaultTableCellRenderer {
                     newTABFieldValues.add(thisTopicID);
                     newTABFieldValues.add(thisAnchorText);
                     newTABFieldValues.add(thisLinkTitle);
-                    os.setTABFieldValues(newTABFieldValues);
+//                    os.setTABFieldValues(newTABFieldValues);
                 } else {
                     c.setBackground(backColor);
                     c.setForeground(foreColor);
@@ -153,7 +153,7 @@ public class AttributiveCellRenderer extends DefaultTableCellRenderer {
                     newTABFieldValues.add(thisTopicID);
                     newTABFieldValues.add(thisAnchorText);
                     newTABFieldValues.add(thisLinkTitle);
-                    os.setTABFieldValues(newTABFieldValues);
+//                    os.setTABFieldValues(newTABFieldValues);
                 }
             }
         // </editor-fold>
