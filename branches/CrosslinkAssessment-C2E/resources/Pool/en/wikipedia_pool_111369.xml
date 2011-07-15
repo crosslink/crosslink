@@ -995,7 +995,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="People&apos;s Republic of China">5405</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="大阪" aoffset="1469" alength="2" ext_length="0">
+			<anchor arel="0" aname="大阪" aoffset="1469" alength="2" ext_length="0">
 				<subanchor sarel="1" saname="大阪" saoffset="1469" salength="2" rank="108">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Osaka Prefecture">179750</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Shōji Station (Osaka, Osaka)">13087248</tobep>
@@ -3861,7 +3861,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="South Asia">21566765</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="中亚" aoffset="7399" alength="2" ext_length="2">
+			<anchor arel="1" aname="中亚" aoffset="7399" alength="2" ext_length="2">
 				<subanchor sarel="1" saname="中亚" saoffset="7399" salength="2" rank="54">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Geoffrey Wheeler">5597842</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Central Asia Insurance">5346536</tobep>
@@ -4380,7 +4380,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="December 20">8849</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="曼谷" aoffset="15631" alength="2" ext_length="0">
+			<anchor arel="0" aname="曼谷" aoffset="15631" alength="2" ext_length="0">
 				<subanchor sarel="1" saname="曼谷" saoffset="15631" salength="2" rank="17">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Don Mueang International Airport">266286</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Miss Thailand Universe 2009">22000356</tobep>
@@ -4425,7 +4425,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="September 16">27650</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="德黑兰" aoffset="15859" alength="3" ext_length="0">
+			<anchor arel="0" aname="德黑兰" aoffset="15859" alength="3" ext_length="0">
 				<subanchor sarel="1" saname="德黑兰" saoffset="15859" salength="3" rank="31">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tehran (film)">23150946</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Iranian Volleyball Super League">14229646</tobep>
@@ -4556,7 +4556,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="October 7">22446</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="北" aoffset="16329" alength="1" ext_length="1">
+			<anchor arel="0" aname="北" aoffset="16329" alength="1" ext_length="1">
 				<subanchor sarel="-1" saname="北" saoffset="16329" salength="1" rank="227">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="North">56478</tobep>
 				</subanchor>
@@ -4614,7 +4614,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="October 16">22556</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="广岛" aoffset="16437" alength="2" ext_length="0">
+			<anchor arel="0" aname="广岛" aoffset="16437" alength="2" ext_length="0">
 				<subanchor sarel="1" saname="广岛" saoffset="16437" salength="2" rank="82">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Numakuma, Hiroshima">503656</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hiroshima Telecasting">8312112</tobep>
@@ -4681,7 +4681,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="October 14">22525</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="釜山" aoffset="16671" alength="2" ext_length="0">
+			<anchor arel="0" aname="釜山" aoffset="16671" alength="2" ext_length="0">
 				<subanchor sarel="1" saname="釜山" saoffset="16671" salength="2" rank="58">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Busan Subway">4914568</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Siege of Busan">2611148</tobep>
@@ -4860,7 +4860,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sichuan FC">9993036</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="亞洲冬季運動會" aoffset="17055" alength="7" ext_length="0">
+			<anchor arel="0" aname="亞洲冬季運動會" aoffset="17055" alength="7" ext_length="0">
 				<subanchor sarel="1" saname="亞洲冬季運動會" saoffset="17055" salength="7" rank="139">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="2007 Asian Winter Games">3286011</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="2003 Asian Winter Games">3286007</tobep>
@@ -4921,7 +4921,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="March 8">20053</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="札幌" aoffset="17530" alength="2" ext_length="0">
+			<anchor arel="0" aname="札幌" aoffset="17530" alength="2" ext_length="0">
 				<subanchor sarel="1" saname="札幌" saoffset="17530" salength="2" rank="111">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sapporo Brewery">1303632</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sapporo Dome">1906497</tobep>
@@ -4958,7 +4958,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="February 11">11184</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="哈爾濱" aoffset="17755" alength="3" ext_length="0">
+			<anchor arel="0" aname="哈爾濱" aoffset="17755" alength="3" ext_length="0">
 				<subanchor sarel="1" saname="哈爾濱" saoffset="17755" salength="3" rank="51">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ulmus pumila &apos;Harbin&apos;">8034930</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Saint Sophia Cathedral in Harbin">22298477</tobep>
@@ -5025,7 +5025,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Scouts&apos; Day">4468390</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="青森" aoffset="17982" alength="2" ext_length="0">
+			<anchor arel="0" aname="青森" aoffset="17982" alength="2" ext_length="0">
 				<subanchor sarel="1" saname="青森" saoffset="17982" salength="2" rank="166">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hirosaki, Aomori">328182</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hirosaki Station">2865800</tobep>
@@ -5050,7 +5050,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="January 28 (Eastern Orthodox liturgics)">3905468</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="長春" aoffset="18086" alength="2" ext_length="0">
+			<anchor arel="0" aname="長春" aoffset="18086" alength="2" ext_length="0">
 				<subanchor sarel="1" saname="長春" saoffset="18086" salength="2" rank="113">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Changchun Railway Station">26090981</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Changchun Yatai F.C.">3280497</tobep>
@@ -5075,7 +5075,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of sites in Jinan">19736030</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="阿拉" aoffset="18208" alength="2" ext_length="2">
+			<anchor arel="0" aname="阿拉" aoffset="18208" alength="2" ext_length="2">
 				<subanchor sarel="-1" saname="阿拉" saoffset="18208" salength="2" rank="174">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="God in Islam">7515857</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="God">5042765</tobep>
@@ -5109,7 +5109,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="November 3">21764</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="澳" aoffset="18851" alength="1" ext_length="1">
+			<anchor arel="0" aname="澳" aoffset="18851" alength="1" ext_length="1">
 				<subanchor sarel="-1" saname="澳" saoffset="18851" salength="1" rank="204">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="O">22314</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="2008 Australian Grand Prix">12482821</tobep>
@@ -5150,7 +5150,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="October 30">22436</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="河内" aoffset="18976" alength="2" ext_length="0">
+			<anchor arel="0" aname="河内" aoffset="18976" alength="2" ext_length="0">
 				<subanchor sarel="1" saname="河内" saoffset="18976" salength="2" rank="90">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Roman Catholic Archdiocese of Hanoi">11879986</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of tallest buildings in Vietnam">27204809</tobep>
@@ -5168,7 +5168,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Operation Linebacker II">468203</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="沙" aoffset="19125" alength="1" ext_length="1">
+			<anchor arel="0" aname="沙" aoffset="19125" alength="1" ext_length="1">
 				<subanchor sarel="-1" saname="沙" saoffset="19125" salength="1" rank="177">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sand">18994037</tobep>
 				</subanchor>
@@ -5195,7 +5195,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="October 18">22545</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="峇里" aoffset="19601" alength="2" ext_length="1">
+			<anchor arel="0" aname="峇里" aoffset="19601" alength="2" ext_length="1">
 				<subanchor sarel="-1" saname="峇里" saoffset="19601" salength="2" rank="117">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mahabali">757599</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bali">4147</tobep>
@@ -5228,7 +5228,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ngurah Rai International Airport">1965174</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="馬" aoffset="19697" alength="1" ext_length="3">
+			<anchor arel="0" aname="馬" aoffset="19697" alength="1" ext_length="3">
 				<subanchor sarel="-1" saname="馬" saoffset="19697" salength="1" rank="249">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Comparison of 802.15.4 radio modules">22943758</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ma-ma">16299003</tobep>
@@ -5266,7 +5266,7 @@
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Muscat, Oman">57053</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="海阳" aoffset="19782" alength="2" ext_length="0">
+			<anchor arel="0" aname="海阳" aoffset="19782" alength="2" ext_length="0">
 				<subanchor sarel="1" saname="海阳" saoffset="19782" salength="2" rank="132">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hai Hung Province">24811665</tobep>
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Haiyang">7399765</tobep>
@@ -5355,7 +5355,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Thailand Open (badminton)">12207976</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="第一屆亞洲武術運動會" aoffset="19965" alength="10" ext_length="0">
+			<anchor arel="0" aname="第一屆亞洲武術運動會" aoffset="19965" alength="10" ext_length="0">
 				<subanchor sarel="1" saname="第一屆亞洲武術運動會" saoffset="19965" salength="10" rank="0">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="2003 Southeast Asian Games">2879165</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Wushu at the 2009 Asian Indoor Games">24970639</tobep>
@@ -5395,7 +5395,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Wu Bin">5692351</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="亞洲青少年運動會" aoffset="20534" alength="8" ext_length="0">
+			<anchor arel="0" aname="亞洲青少年運動會" aoffset="20534" alength="8" ext_length="0">
 				<subanchor sarel="1" saname="亞洲青少年運動會" saoffset="20534" salength="8" rank="85">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bowling at the 2009 Asian Youth Games">23454640</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="2009 Asian Youth Games">20123232</tobep>
@@ -5450,7 +5450,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Nisshin Station">13213346</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="新加坡" aoffset="21011" alength="3" ext_length="0">
+			<anchor arel="0" aname="新加坡" aoffset="21011" alength="3" ext_length="0">
 				<subanchor sarel="1" saname="新加坡" saoffset="21011" salength="3" rank="30">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of voluntary welfare organisations in Singapore">3904360</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Singapore Cooperation Programme">6760494</tobep>
