@@ -1108,8 +1108,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Israel">9282173</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="书" aoffset="710" alength="1" ext_length="3">
-				<subanchor sarel="0" saname="书" saoffset="710" salength="1" rank="53">
+			<anchor arel="1" aname="书" aoffset="710" alength="1" ext_length="3">
+				<subanchor sarel="-1" saname="书" saoffset="710" salength="1" rank="53">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Books (EP)">3746753</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Books/Books topics">4662048</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Giosafat Barbaro">4603904</tobep>
@@ -1132,29 +1132,29 @@
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Writing">32977</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Medical writing">3045072</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Academy Award for Best Writing (Original Screenplay)">22344579</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Saturn Award for Best Writing">485004</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Latin alphabet">18306</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Asemic writing">3934842</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Writing system">23714788</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Writing center">1235779</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Writing Across the Curriculum">21138276</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Rice writing">14303790</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Nature writing">4368966</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Creative writing">1039873</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Saturn Award for Best Writing">485004</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Latin alphabet">18306</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Asemic writing">3934842</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Writing system">23714788</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Writing center">1235779</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Writing Across the Curriculum">21138276</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Rice writing">14303790</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Nature writing">4368966</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Creative writing">1039873</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="书写形式" saoffset="710" salength="4" rank="17">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Written Cantonese">1593130</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Copy (written)">714335</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Regional handwriting variation">73490</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Piano ballad">19774620</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Standard Written Form">19201298</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Comparison between written English and written Chinese">26700796</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Closet drama">1061223</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="English verbs">436829</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Written Chinese">91225</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Written Lives">20294915</tobep>
+				<subanchor sarel="-1" saname="书写形式" saoffset="710" salength="4" rank="17">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Written Cantonese">1593130</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Copy (written)">714335</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Regional handwriting variation">73490</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Piano ballad">19774620</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Standard Written Form">19201298</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Comparison between written English and written Chinese">26700796</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Closet drama">1061223</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="English verbs">436829</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Written Chinese">91225</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Written Lives">20294915</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="形" saoffset="712" salength="1" rank="136">
+				<subanchor sarel="-1" saname="形" saoffset="712" salength="1" rank="136">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Shape optimization">1271415</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Shape (Frente album)">3957432</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Shape (song)">3348728</tobep>
@@ -1169,24 +1169,24 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Shape grammar">5931350</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Shape context">15281107</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="形式" saoffset="712" salength="2" rank="52">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Volume form">1855811</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Differential form">221519</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="IRS tax forms">9044625</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Form (web)">3422674</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Substantial form">18358161</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Musical form">379560</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Elastic properties of the elements (data page)">1769015</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="FORM">22550424</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Form">171578</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Kamen Rider Den-O (character)">8342098</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mary (given name)">17576312</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Die Form">495109</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Space form">1087009</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Weak form and strong form">2728350</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Platonic realism">24513</tobep>
+				<subanchor sarel="-1" saname="形式" saoffset="712" salength="2" rank="52">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Volume form">1855811</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Differential form">221519</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="IRS tax forms">9044625</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Form (web)">3422674</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Substantial form">18358161</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Musical form">379560</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Elastic properties of the elements (data page)">1769015</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="FORM">22550424</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Form">171578</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Kamen Rider Den-O (character)">8342098</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mary (given name)">17576312</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Die Form">495109</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Space form">1087009</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Weak form and strong form">2728350</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Platonic realism">24513</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="式" saoffset="713" salength="1" rank="104">
+				<subanchor sarel="-1" saname="式" saoffset="713" salength="1" rank="104">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Type 94 Disinfecting Vehicle and Type 94 Gas Scattering Vehicle">1944112</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of weapons of the Japanese Empire during World War II">20463962</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Type (biology)">533069</tobep>
@@ -1302,37 +1302,37 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Madonna del Ghisallo">1116408</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="程序" aoffset="725" alength="2" ext_length="2">
-				<subanchor sarel="0" saname="程序" saoffset="725" salength="2" rank="23">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Analog (program)">10790339</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Computer program">5783</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="PM&amp;R Residency Programs in the United States">5658324</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Lufenuron">2970534</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Stars for Defense">15921762</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Universidade Federal do Rio Grande do Sul">889448</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Programming language">23015</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Transmigration program">586507</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="IBM Advanced Program-to-Program Communication">3273113</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Program">23771</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Program management">282626</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Walt Disney World International Program">2402839</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mars program">47791</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Satya Wacana Christian University">6384586</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Queen&apos;s School of Business">1858156</tobep>
+			<anchor arel="1" aname="程序" aoffset="725" alength="2" ext_length="2">
+				<subanchor sarel="1" saname="程序" saoffset="725" salength="2" rank="23">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Analog (program)">10790339</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Computer program">5783</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="PM&amp;R Residency Programs in the United States">5658324</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Lufenuron">2970534</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Stars for Defense">15921762</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Universidade Federal do Rio Grande do Sul">889448</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Programming language">23015</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Transmigration program">586507</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="IBM Advanced Program-to-Program Communication">3273113</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Program">23771</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Program management">282626</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Walt Disney World International Program">2402839</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mars program">47791</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Satya Wacana Christian University">6384586</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Queen&apos;s School of Business">1858156</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="程序语言" saoffset="725" salength="4" rank="12">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Syntax (programming languages)">3206060</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Functional programming">10933</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Programming language">23015</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Programming language generations">24445885</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Imperative programming">197847</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mohol programming languages">948998</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Book:Programming Languages">22006775</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Comparison of programming languages (object-oriented programming)">16826603</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Chinese programming languages">23740404</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="History of programming languages">896120</tobep>
+				<subanchor sarel="1" saname="程序语言" saoffset="725" salength="4" rank="12">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Syntax (programming languages)">3206060</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Functional programming">10933</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Programming language">23015</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Programming language generations">24445885</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Imperative programming">197847</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mohol programming languages">948998</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Book:Programming Languages">22006775</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Comparison of programming languages (object-oriented programming)">16826603</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Chinese programming languages">23740404</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="History of programming languages">896120</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="序" saoffset="726" salength="1" rank="62">
+				<subanchor sarel="-1" saname="序" saoffset="726" salength="1" rank="62">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Cotolerant sequence">621246</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="On-Line Encyclopedia of Integer Sequences">500004</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Cauchy sequence">6085</tobep>
@@ -1352,16 +1352,16 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Delphi" aoffset="745" alength="6" ext_length="0">
-				<subanchor sarel="0" saname="Delphi" saoffset="745" salength="6" rank="1">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Object Pascal">630175</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Delphi (disambiguation)">859265</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Delphi method">337523</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Delphi Prism">22642108</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Delphi I">18632679</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Delphi, Indiana">112146</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Embarcadero Delphi">349208</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Delphi">7951</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Delphi Corporation">1710507</tobep>
+				<subanchor sarel="1" saname="Delphi" saoffset="745" salength="6" rank="1">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Object Pascal">630175</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Delphi (disambiguation)">859265</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Delphi method">337523</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Delphi Prism">22642108</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Delphi I">18632679</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Delphi, Indiana">112146</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Embarcadero Delphi">349208</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Delphi">7951</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Delphi Corporation">1710507</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="等" aoffset="752" alength="1" ext_length="0">
@@ -1389,25 +1389,25 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Thomas More (disambiguation)">24279779</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="半形" aoffset="766" alength="2" ext_length="2">
-				<subanchor sarel="0" saname="半形" saoffset="766" salength="2" rank="24">
+			<anchor arel="-1" aname="半形" aoffset="766" alength="2" ext_length="2">
+				<subanchor sarel="-1" saname="半形" saoffset="766" salength="2" rank="24">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Half-width kana">3786951</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="形式化" saoffset="767" salength="3" rank="36">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Formal trousers">22814485</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="School formal">5688061</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Prom">238231</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Formal">155197</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Legal formalism">299920</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Formal wear">609144</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Syntax (logic)">546039</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Formal system">396102</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Formal group">480335</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Formal specification">2567707</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Winter Formal">21825840</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Formal semantics">909888</tobep>
+				<subanchor sarel="-1" saname="形式化" saoffset="767" salength="3" rank="36">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Formal trousers">22814485</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="School formal">5688061</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Prom">238231</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Formal">155197</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Legal formalism">299920</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Formal wear">609144</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Syntax (logic)">546039</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Formal system">396102</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Formal group">480335</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Formal specification">2567707</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Winter Formal">21825840</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Formal semantics">909888</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="化" saoffset="769" salength="1" rank="115">
+				<subanchor sarel="-1" saname="化" saoffset="769" salength="1" rank="115">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of speakers of Assembly of Experts of Iran">24407488</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Chairmen of the Chamber of the Republic of the Legislative Assembly of the Republic of Karelia">22776250</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Presidents of the Chamber of Republics of the Federal Assembly of Yugoslavia">21937717</tobep>
@@ -1424,8 +1424,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Owl (hieroglyph)">24870423</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="标" aoffset="772" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="标" saoffset="772" salength="1" rank="111">
+			<anchor arel="1" aname="标" aoffset="772" alength="1" ext_length="1">
+				<subanchor sarel="-1" saname="标" saoffset="772" salength="1" rank="111">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="NZR RM class (Standard)">6305199</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Nursing Standard">2511611</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Standard Mandarin">24657</tobep>
@@ -1441,23 +1441,23 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Standard (disambiguation)">8285698</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Standard Missile">211567</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="标准" saoffset="772" salength="2" rank="32">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="NZR RM class (Standard)">6305199</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Nursing Standard">2511611</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Standard Mandarin">24657</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Standard">18934904</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Standard Motor Company">381699</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Standard Oil">28931</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Standard Liège">990794</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of commonly misused English words">309724</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Standardization">27065</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Royal Standard">13746976</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Standard language">305869</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="International standard">15402</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="RIM-66 Standard">14404631</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Presidential Standard">14753582</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Standard (disambiguation)">8285698</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Standard Missile">211567</tobep>
+				<subanchor sarel="1" saname="标准" saoffset="772" salength="2" rank="32">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="NZR RM class (Standard)">6305199</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Nursing Standard">2511611</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Standard Mandarin">24657</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Standard">18934904</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Standard Motor Company">381699</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Standard Oil">28931</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Standard Liège">990794</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of commonly misused English words">309724</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Standardization">27065</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Royal Standard">13746976</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Standard language">305869</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="International standard">15402</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="RIM-66 Standard">14404631</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Presidential Standard">14753582</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Standard (disambiguation)">8285698</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Standard Missile">211567</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="我" aoffset="778" alength="1" ext_length="1">
@@ -1546,28 +1546,28 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Line (geometry)">946975</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="结构" aoffset="792" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="结构" saoffset="792" salength="2" rank="35">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Almost complex manifold">514258</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Crystal structure">58690</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Biomolecular structure">5054730</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Data structure">8519</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Parasitic structure">3821728</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="G-structure">1277699</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Structure (disambiguation)">1438600</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Chemical structure">474009</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Social structure">634444</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Molecular Structure of Nucleic Acids: A Structure for Deoxyribose Nucleic Acid">2661507</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Structure">93545</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Structure (mathematical logic)">4055928</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mathematical structure">1809181</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Protein tertiary structure">31032</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Structure (journal)">25662069</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Pawn structure">3557576</tobep>
+			<anchor arel="1" aname="结构" aoffset="792" alength="2" ext_length="0">
+				<subanchor sarel="1" saname="结构" saoffset="792" salength="2" rank="35">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Almost complex manifold">514258</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Crystal structure">58690</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Biomolecular structure">5054730</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Data structure">8519</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Parasitic structure">3821728</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="G-structure">1277699</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Structure (disambiguation)">1438600</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Chemical structure">474009</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Social structure">634444</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Molecular Structure of Nucleic Acids: A Structure for Deoxyribose Nucleic Acid">2661507</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Structure">93545</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Structure (mathematical logic)">4055928</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mathematical structure">1809181</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Protein tertiary structure">31032</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Structure (journal)">25662069</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Pawn structure">3557576</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="近" aoffset="796" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="近" saoffset="796" salength="1" rank="137">
+			<anchor arel="-1" aname="近" aoffset="796" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="近" saoffset="796" salength="1" rank="137">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Brian Close">1354577</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Close-up">464601</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Whitestone, Warwickshire">7339020</tobep>
@@ -1740,7 +1740,7 @@
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Yes discography">6846409</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="中文" aoffset="824" alength="2" ext_length="0">
+			<anchor arel="1" aname="中文" aoffset="824" alength="2" ext_length="0">
 				<subanchor sarel="1" saname="中文" saoffset="824" salength="2" rank="14">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Standard Mandarin">24657</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Chinese people">372983</tobep>
@@ -1749,20 +1749,20 @@
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Multiple association of converting Simplified Chinese to Traditional Chinese">23520923</tobep>
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Chinese character">91231</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Chinese Filipino">1167856</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Chinese university ranking (Chinese Academy of Management Science)">21776213</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Taiwanese Mandarin">3614477</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Overseas Chinese">48997</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Thai Chinese">1248746</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Chinese">5347</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Chinese language">5751</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Education in Taoyuan County">18985031</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="British Chinese">1255834</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="China">5042862</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="People&apos;s Republic of China">5405</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Chinese university ranking (Chinese Academy of Management Science)">21776213</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Taiwanese Mandarin">3614477</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Overseas Chinese">48997</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Thai Chinese">1248746</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Chinese">5347</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Chinese language">5751</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Education in Taoyuan County">18985031</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="British Chinese">1255834</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="China">5042862</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="People&apos;s Republic of China">5405</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="英" aoffset="827" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="英" saoffset="827" salength="1" rank="34">
+			<anchor arel="1" aname="英" aoffset="827" alength="1" ext_length="1">
+				<subanchor sarel="-1" saname="英" saoffset="827" salength="1" rank="34">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="2009 British Grand Prix">20821064</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of blogs">19271757</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of English Bible translations">7600694</tobep>
@@ -1783,28 +1783,28 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of multilingual bands and artists">6257037</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="English language">8569916</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="英文" saoffset="827" salength="2" rank="7">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of blogs">19271757</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of English Bible translations">7600694</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Oxford-Hachette French Dictionary: French-English English-French">3377920</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of alternative country names">843347</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of non-English newspapers with English language subsections">17257372</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="English (surname)">24066888</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Compact Oxford English Dictionary of Current English">3783949</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="United Kingdom">31717</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Anglicisation">419808</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="English Wikipedia">328159</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="English">9322</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="English people">18803164</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="English studies">18974570</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="England">9316</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of dialects of the English language">346590</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of multilingual bands and artists">6257037</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="English language">8569916</tobep>
+				<subanchor sarel="1" saname="英文" saoffset="827" salength="2" rank="7">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of blogs">19271757</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of English Bible translations">7600694</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Oxford-Hachette French Dictionary: French-English English-French">3377920</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of alternative country names">843347</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of non-English newspapers with English language subsections">17257372</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="English (surname)">24066888</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Compact Oxford English Dictionary of Current English">3783949</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="United Kingdom">31717</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Anglicisation">419808</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="English Wikipedia">328159</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="English">9322</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="English people">18803164</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="English studies">18974570</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="England">9316</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of dialects of the English language">346590</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of multilingual bands and artists">6257037</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="English language">8569916</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="关" aoffset="833" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="关" saoffset="833" salength="1" rank="91">
+			<anchor arel="-1" aname="关" aoffset="833" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="关" saoffset="833" salength="1" rank="91">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Brian Close">1354577</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Close-up">464601</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Whitestone, Warwickshire">7339020</tobep>
@@ -1822,8 +1822,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Glenn Close">44459</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="键" aoffset="834" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="键" saoffset="834" salength="1" rank="41">
+			<anchor arel="-1" aname="键" aoffset="834" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="键" saoffset="834" salength="1" rank="41">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of islands of Florida">15366580</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Cryptographic key types">2979642</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Skeleton key">4053383</tobep>
@@ -1863,8 +1863,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Maid Sama! characters">27657677</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="意" aoffset="842" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="意" saoffset="842" salength="1" rank="67">
+			<anchor arel="-1" aname="意" aoffset="842" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="意" saoffset="842" salength="1" rank="67">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Meaning (linguistics)">4100885</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Meaning postulate">3294312</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Glossary of manias">2036259</tobep>
@@ -1885,8 +1885,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="The Home Song Stories">12303686</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="思" aoffset="843" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="思" saoffset="843" salength="1" rank="76">
+			<anchor arel="-1" aname="思" aoffset="843" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="思" saoffset="843" salength="1" rank="76">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Let Me Think About It">13616316</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="THINK C">3756993</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Thought">37080</tobep>
@@ -1903,8 +1903,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Think Twice">13279435</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="表" aoffset="844" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="表" saoffset="844" salength="1" rank="80">
+			<anchor arel="-1" aname="表" aoffset="844" alength="1" ext_length="1">
+				<subanchor sarel="-1" saname="表" saoffset="844" salength="1" rank="80">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Table (furniture)">1147423</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of countries and outlying territories by total area">72028</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Table Table">17321550</tobep>
@@ -1923,24 +1923,24 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of countries and dependencies by population density">79370</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Table">274698</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="表达" saoffset="844" salength="2" rank="49">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ground expression">2011627</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Microsoft Expression Studio">2686832</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="X-expression">14014024</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Expression (mathematics)">609125</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Expression crew">22359126</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Microsoft Expression Web">2978895</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Microsoft Expression Media">8286705</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Path expression">3975986</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Expression (album)">8710180</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Gene expression">159266</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Microsoft Expression Design">8278677</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Microsoft Expression Blend">1183125</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Expression Direkt">16242288</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Expression">62439</tobep>
+				<subanchor sarel="-1" saname="表达" saoffset="844" salength="2" rank="49">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ground expression">2011627</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Microsoft Expression Studio">2686832</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="X-expression">14014024</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Expression (mathematics)">609125</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Expression crew">22359126</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Microsoft Expression Web">2978895</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Microsoft Expression Media">8286705</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Path expression">3975986</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Expression (album)">8710180</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Gene expression">159266</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Microsoft Expression Design">8278677</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Microsoft Expression Blend">1183125</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Expression Direkt">16242288</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Expression">62439</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="达" saoffset="845" salength="1" rank="118">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of speakers of Assembly of Experts of Iran">24407488</tobep>
+				<subanchor sarel="-1" saname="达" saoffset="845" salength="1" rank="118">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of speakers of Assembly of Experts of Iran">24407488</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Chairmen of the Chamber of the Republic of the Legislative Assembly of the Republic of Karelia">22776250</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Presidents of the Chamber of Republics of the Federal Assembly of Yugoslavia">21937717</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Chairmen of the Chamber of Representatives of the State Assembly of Bashkortostan">23130451</tobep>
@@ -2089,8 +2089,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of IPC world records in swimming – Men&apos;s short course">24377565</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="意识" aoffset="917" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="意识" saoffset="917" salength="2" rank="22">
+			<anchor arel="-1" aname="意识" aoffset="917" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="意识" saoffset="917" salength="2" rank="22">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Consciousness (album)">23211249</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Political consciousness">12168112</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Eight Consciousnesses">295571</tobep>
@@ -2126,8 +2126,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Emperor He of Han">343339</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="注意" aoffset="927" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="注意" saoffset="927" salength="2" rank="57">
+			<anchor arel="-1" aname="注意" aoffset="927" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="注意" saoffset="927" salength="2" rank="57">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Note by Note: The Making of Steinway L1037">14976657</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of United Kingdom locations: Eat-Ee">12132706</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Note">22026</tobep>
@@ -2197,23 +2197,23 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Charity (practice)">9728362</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="程序员" aoffset="962" alength="3" ext_length="0">
-				<subanchor sarel="0" saname="程序员" saoffset="962" salength="3" rank="9">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Programmer">23716</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Programming (music)">585746</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Jools Jameson">19979124</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="American Programmer">5352943</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Stephen Coleman">23086224</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Flame Programmer">11086565</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tony Warriner">4286262</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Synthesizer programmer">2194971</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Game programmer">311632</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Binary Hammer">24410026</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Programmer (disambiguation)">991049</tobep>
+			<anchor arel="1" aname="程序员" aoffset="962" alength="3" ext_length="0">
+				<subanchor sarel="1" saname="程序员" saoffset="962" salength="3" rank="9">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Programmer">23716</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Programming (music)">585746</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Jools Jameson">19979124</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="American Programmer">5352943</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Stephen Coleman">23086224</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Flame Programmer">11086565</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tony Warriner">4286262</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Synthesizer programmer">2194971</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Game programmer">311632</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Binary Hammer">24410026</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Programmer (disambiguation)">991049</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="理解" aoffset="966" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="理解" saoffset="966" salength="2" rank="39">
+			<anchor arel="-1" aname="理解" aoffset="966" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="理解" saoffset="966" salength="2" rank="39">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Technological literacy">2878029</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Understanding (song)">7164830</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Youth For Understanding">390977</tobep>
@@ -2228,7 +2228,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Understanding by Design">4309707</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Triune Understanding">1704340</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="解" saoffset="967" salength="1" rank="83">
+				<subanchor sarel="-1" saname="解" saoffset="967" salength="1" rank="83">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Solution">28729</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="ASI Solutions">10387659</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="DLT Solutions">25126724</tobep>
@@ -2243,8 +2243,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Villagetech solutions">13751782</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="其他" aoffset="972" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="其他" saoffset="972" salength="2" rank="133">
+			<anchor arel="-1" aname="其他" aoffset="972" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="其他" saoffset="972" salength="2" rank="133">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Other Voices, Other Rooms">8135596</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="ICD-9-CM Volume 3">3003996</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Other">972208</tobep>
@@ -2262,17 +2262,17 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="2009 CONCACAF U-17 Championship squads">20317531</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="编写" aoffset="978" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="编写" saoffset="978" salength="2" rank="60">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Computer programming">5311</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Scout Motto">775344</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Beep Prepared">3337648</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of compositions by John Cage">14163000</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Prepared guitar">648085</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Prepared piano">86050</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Be Prepared">4096180</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Prepared Testimony">4095343</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Works for prepared piano by John Cage">14287463</tobep>
+			<anchor arel="1" aname="编写" aoffset="978" alength="2" ext_length="0">
+				<subanchor sarel="1" saname="编写" saoffset="978" salength="2" rank="60">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Computer programming">5311</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Scout Motto">775344</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Beep Prepared">3337648</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of compositions by John Cage">14163000</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Prepared guitar">648085</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Prepared piano">86050</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Be Prepared">4096180</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Prepared Testimony">4095343</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Works for prepared piano by John Cage">14287463</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="难" aoffset="991" alength="1" ext_length="0">
@@ -2288,25 +2288,25 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Difficult Loves">13224848</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="限制" aoffset="1002" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="限制" saoffset="1002" salength="2" rank="61">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of websites blocked in the People&apos;s Republic of China">10167020</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="No Limit (song)">1268189</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Limit load">22018392</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Spring Championship of Online Poker">22050544</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Limit (category theory)">39248</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="IDA*">2256654</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Limit">18012</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Limit superior and limit inferior">44837</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Floor limit">4040783</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Betting (poker)">75691</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Limit (mathematics)">26551602</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="World Championship of Online Poker">2534387</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Circumscription (logic)">2634917</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Binary relation">3931</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Limit down">19969791</tobep>
+			<anchor arel="-1" aname="限制" aoffset="1002" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="限制" saoffset="1002" salength="2" rank="61">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of websites blocked in the People&apos;s Republic of China">10167020</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="No Limit (song)">1268189</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Limit load">22018392</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Spring Championship of Online Poker">22050544</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Limit (category theory)">39248</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="IDA*">2256654</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Limit">18012</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Limit superior and limit inferior">44837</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Floor limit">4040783</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Betting (poker)">75691</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Limit (mathematics)">26551602</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="World Championship of Online Poker">2534387</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Circumscription (logic)">2634917</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Binary relation">3931</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Limit down">19969791</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="制" saoffset="1003" salength="1" rank="139">
+				<subanchor sarel="-1" saname="制" saoffset="1003" salength="1" rank="139">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Berlin S-Bahn stations">525806</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="System V printing system">469954</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="System">8286675</tobep>
@@ -2324,8 +2324,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Star Wars systems">1470894</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="部" aoffset="1013" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="部" saoffset="1013" salength="1" rank="100">
+			<anchor arel="-1" aname="部" aoffset="1013" alength="1" ext_length="1">
+				<subanchor sarel="-1" saname="部" saoffset="1013" salength="1" rank="100">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Department Secretaries of Cesar Department">14036640</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Departments of Burkina Faso">1995443</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of law enforcement agencies in Kansas">9683901</tobep>
@@ -2344,7 +2344,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Guangyun">475103</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ministry (government department)">859401</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="部分" saoffset="1013" salength="2" rank="125">
+				<subanchor sarel="-1" saname="部分" saoffset="1013" salength="2" rank="125">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Scottish Westminster constituencies 1974 to 1983">13127161</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Part Six Part Two">23445991</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ongjin, South Hwanghae">7770942</tobep>
@@ -2359,7 +2359,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hairstyle">52401</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="ISO 10303 Application Modules">2247380</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="分" saoffset="1014" salength="1" rank="63">
+				<subanchor sarel="-1" saname="分" saoffset="1014" salength="1" rank="63">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of AFL Minor Premiers">24027267</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Minute">19372</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Points, West Virginia">2548396</tobep>
@@ -2526,41 +2526,41 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Dua Sanamain Quraish">2349438</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="应用" aoffset="1067" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="应用" saoffset="1067" salength="2" rank="68">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Missouri Conservation Areas - Southwest Region">28207506</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Computer program">5783</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Missouri Conservation Areas - Central Region">28207319</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Missouri Conservation Areas - Ozark Region">28207493</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Missouri Conservation Areas - Northwest Region">28207403</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Oracle Applications">2504464</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Rich Desktop Applications/Rich Internet Desktop Applications (RDA/RIDA)">15639934</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Patent application">4542266</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="GIS applications">16266129</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="College application">2867043</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Analytic Applications">12712567</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Application software">454746</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Oxbridge Applications">16105570</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Missouri Conservation Areas - Southeast Region">28207936</tobep>
+			<anchor arel="-1" aname="应用" aoffset="1067" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="应用" saoffset="1067" salength="2" rank="68">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Missouri Conservation Areas - Southwest Region">28207506</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Computer program">5783</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Missouri Conservation Areas - Central Region">28207319</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Missouri Conservation Areas - Ozark Region">28207493</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Missouri Conservation Areas - Northwest Region">28207403</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Oracle Applications">2504464</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Rich Desktop Applications/Rich Internet Desktop Applications (RDA/RIDA)">15639934</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Patent application">4542266</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="GIS applications">16266129</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="College application">2867043</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Analytic Applications">12712567</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Application software">454746</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Oxbridge Applications">16105570</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Missouri Conservation Areas - Southeast Region">28207936</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="计算机科学" aoffset="1070" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="计算机科学" saoffset="1070" salength="5" rank="4">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Method (computer science)">232817</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Computer graphics (computer science)">18567168</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Computer Science (UIL)">14988113</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Computer science">5323</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="David R. Cheriton School of Computer Science">4064368</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Advanced Placement Computer Science">4234887</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Carnegie Mellon School of Computer Science">286586</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Computer science in sport">25852537</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bachelor of Computer Science">2701254</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Computer science/Computer science topics">5715446</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="School of Computer Science, University of Manchester">529379</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Thread (computer science)">45303</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Didactics of informatics">13274820</tobep>
+			<anchor arel="1" aname="计算机科学" aoffset="1070" alength="5" ext_length="0">
+				<subanchor sarel="1" saname="计算机科学" saoffset="1070" salength="5" rank="4">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Method (computer science)">232817</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Computer graphics (computer science)">18567168</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Computer Science (UIL)">14988113</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Computer science">5323</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="David R. Cheriton School of Computer Science">4064368</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Advanced Placement Computer Science">4234887</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Carnegie Mellon School of Computer Science">286586</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Computer science in sport">25852537</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bachelor of Computer Science">2701254</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Computer science/Computer science topics">5715446</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="School of Computer Science, University of Manchester">529379</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Thread (computer science)">45303</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Didactics of informatics">13274820</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="科" saoffset="1073" salength="1" rank="31">
+				<subanchor sarel="-1" saname="科" saoffset="1073" salength="1" rank="31">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Handbook On Japanese Military Forces">17254627</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Section line">12272865</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Section blue">20708676</tobep>
@@ -2579,7 +2579,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Kuwait">7515890</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Section (United States land surveying)">861717</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="科学" saoffset="1073" salength="2" rank="20">
+				<subanchor sarel="-1" saname="科学" saoffset="1073" salength="2" rank="20">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Science education">181889</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hugo Award for Best Novelette">418595</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Science in science fiction">13670898</tobep>
@@ -2595,7 +2595,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Materials science in science fiction">13973150</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Science/Science portals">3553451</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="学" saoffset="1074" salength="1" rank="105">
+				<subanchor sarel="-1" saname="学" saoffset="1074" salength="1" rank="105">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Psychopedagogy">18666001</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Science education">181889</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hugo Award for Best Novelette">418595</tobep>
@@ -2613,8 +2613,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Science/Science portals">3553451</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="教" aoffset="1076" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="教" saoffset="1076" salength="1" rank="113">
+			<anchor arel="1" aname="教" aoffset="1076" alength="1" ext_length="1">
+				<subanchor sarel="-1" saname="教" saoffset="1076" salength="1" rank="113">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="United States Department of Education">70919</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Right to education">5047204</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="IDP Education">24852974</tobep>
@@ -2633,22 +2633,22 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Religion">25414</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="State education agency">8789104</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="教学" saoffset="1076" salength="2" rank="71">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Loyalist Teaching">23654656</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Education">9252</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Teaching assistant (United Kingdom)">2113052</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="National History Education Clearinghouse">23764312</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="New York City Teaching Fellows">2930089</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Dharma (Buddhism)">4753638</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Master of Arts in Teaching">6931757</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Teaching method">92028</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Teaching hospital">485700</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Scholarship of Teaching and Learning">4107919</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of hospitals in Iraq">20084925</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Interdisciplinary teaching">4132335</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Teaching Philosophy">26285540</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Precision teaching">3205531</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Teacher">205075</tobep>
+				<subanchor sarel="1" saname="教学" saoffset="1076" salength="2" rank="71">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Loyalist Teaching">23654656</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Education">9252</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Teaching assistant (United Kingdom)">2113052</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="National History Education Clearinghouse">23764312</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="New York City Teaching Fellows">2930089</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Dharma (Buddhism)">4753638</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Master of Arts in Teaching">6931757</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Teaching method">92028</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Teaching hospital">485700</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Scholarship of Teaching and Learning">4107919</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of hospitals in Iraq">20084925</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Interdisciplinary teaching">4132335</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Teaching Philosophy">26285540</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Precision teaching">3205531</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Teacher">205075</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="通" aoffset="1079" alength="1" ext_length="0">
@@ -2730,8 +2730,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Miyako">886833</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="流" aoffset="1174" alength="1" ext_length="2">
-				<subanchor sarel="0" saname="流" saoffset="1174" salength="1" rank="84">
+			<anchor arel="1" aname="流" aoffset="1174" alength="1" ext_length="2">
+				<subanchor sarel="-1" saname="流" saoffset="1174" salength="1" rank="84">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Flow (video game)">5970645</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Stopped flow">5679766</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Flow limiter">19604059</tobep>
@@ -2747,7 +2747,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Flow (album)">2459534</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Flow measurement">221047</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="流程" saoffset="1174" salength="2" rank="55">
+				<subanchor sarel="-1" saname="流程" saoffset="1174" salength="2" rank="55">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Process group">5275179</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Process">4746766</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Semiconductor device fabrication">27696</tobep>
@@ -2765,20 +2765,20 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Process (computing)">45178</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of industrial processes">659359</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="流程图" saoffset="1174" salength="3" rank="5">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="FLOW">2794030</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Flow">466211</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Chart">164460</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Waiting to Exhale: Original Soundtrack Album">2968339</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Even Flow">2859310</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Flowchart">527453</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="QUOROM flow chart">15962973</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="N2 chart">19467971</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Noise chart">2537658</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Orinoco Flow">1880311</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Moody chart">16993001</tobep>
+				<subanchor sarel="1" saname="流程图" saoffset="1174" salength="3" rank="5">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="FLOW">2794030</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Flow">466211</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Chart">164460</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Waiting to Exhale: Original Soundtrack Album">2968339</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Even Flow">2859310</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Flowchart">527453</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="QUOROM flow chart">15962973</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="N2 chart">19467971</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Noise chart">2537658</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Orinoco Flow">1880311</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Moody chart">16993001</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="图" saoffset="1176" salength="1" rank="50">
+				<subanchor sarel="-1" saname="图" saoffset="1176" salength="1" rank="50">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Pokémon Trading Figure Game">5566470</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Figure skating/Figure skating news/archive">8118906</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Graph (mathematics)">325806</tobep>
