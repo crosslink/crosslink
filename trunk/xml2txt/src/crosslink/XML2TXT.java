@@ -202,7 +202,7 @@ public class XML2TXT {
 		try {
 			if (args[0].charAt(0) == '-')
 			{
-				if (args.length < 2 || args[0].length() != 2 || args[0].charAt(1) != 'o' || args[0].charAt(1) != 'O')
+				if (args.length < 2 || args[0].length() < 2 || (args[0].charAt(1) != 'o' && args[0].charAt(1) != 'O'))
 					usage();
 				int pos = 0, pos2 = 0;
 	        	if ((pos = args[0].indexOf(":", pos)) != -1){
