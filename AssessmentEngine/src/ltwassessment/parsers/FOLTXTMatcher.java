@@ -347,6 +347,10 @@ public class FOLTXTMatcher {
     	int anchorTextLength = aLength; //textLength(bytes, aOffset, aLength);
 
     	String aName = fullXmlTxt.substring(textOffset, textOffset + anchorTextLength);
+    	if (!aName.equals(thisAnchorSet.getName())) {
+    		System.err.println("Something serious happened: different anchors for " + thisAnchorSet.toString());
+    	}
+    		
     	String fullName = fullXmlTxt.substring(textOffset, textOffset + anchorTextLength + thisAnchorSet.getExtendedLength());
     	
     	thisAnchorSet.setName(fullName);
@@ -602,8 +606,8 @@ public class FOLTXTMatcher {
         }
         Vector<String[]> screenAnchorPos = new Vector<String[]>();
         for (IndexedAnchor thisAnchorSet : anchorOLV) {
-        	if (thisAnchorSet.getOffset() == 3001)
-        		System.out.println("I got you");
+//        	if (thisAnchorSet.getOffset() == 3001)
+//        		System.out.println("I got you");
             String[] scrFOL = screenOffsetLengthFinder(fullScreenText, fullXmlTxt, thisAnchorSet);
     		scrFOL[3] = thisAnchorSet.extendedLengthToString(); //[4];
             screenAnchorPos.add(scrFOL);
@@ -644,22 +648,6 @@ public class FOLTXTMatcher {
             String bepFilePath = "";
 //            if (isWikipedia) {
             bepFilePath = myRSCManager.getWikipediaFilePathByName(bepFileID + ".xml", AppResource.targetLang);
-//                String subPath = myRSCManager.getWikipediaFilePathByName(bepFileID + ".xml", lang);
-//                if (subPath.equals("FileNotFound.xml")) {
-//                    bepFilePath = "resources" + File.separator + "Tool_Resources" + File.separator + subPath;
-//                } else {
-//                    bepFilePath = myRSCManager.getWikipediaFileFolder(AppResource.targetLang) + subPath;
-//                }
-//                bepFilePath = myRSCManager.getWikipediaFileFolder(AppResource.targetLang) + myRSCManager.getWikipediaFilePathByName(bepFileID + ".xml");
-//            } else {
-//                String subPath = myRSCManager.getTeAraFilePathByName(bepFileID + ".xml");
-//                if (subPath.equals("FileNotFound.xml")) {
-//                    bepFilePath = "resources" + File.separator + "Tool_Resources" + File.separator + subPath;
-//                } else {
-//                    bepFilePath = myRSCManager.getTeAraCollectionFolder() + subPath;
-//                }
-////                bepFilePath = myRSCManager.getTeAraCollectionFolder() + myRSCManager.getTeAraFilePathByName(bepFileID + ".xml");
-//            }
             String targetFilePath = "resources" + File.separator + "Temp" + File.separator + bepFileID + "_pureTxt.txt";
             fullXmlText = ConvertXMLtoTXT(bepFilePath, targetFilePath);
         } catch (BadLocationException ex) {
