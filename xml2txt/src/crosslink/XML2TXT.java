@@ -105,7 +105,8 @@ public class XML2TXT {
 //				else
 //					ch++;
 //				}
-			++count;
+			else
+				++count;
 			}
 
 
@@ -125,6 +126,34 @@ public class XML2TXT {
 		return file;
 	}
 	
+	public String cleanAllTags(byte[] file)
+	{
+		String fulltext = null;
+		try {
+			fulltext = new String(file, "UTF-8");
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+		}
+		StringBuffer sb = new StringBuffer();
+		int count = 0;
+		while (count < fulltext.length())
+		{
+			char ch = fulltext.charAt(count);
+			if (ch == '<')			// then remove the XML tags
+				{
+				while (fulltext.charAt(count++) != '>')
+					sb.append(' ');
+				sb.append(' '); // replace >
+				}
+			else {
+				sb.append(ch);
+				++count;
+			}
+		}
+		return sb.toString();
+	}
+		
+	
 	private byte[] read(String xmlfile) {
 	    int size;
 	    byte[] bytes = null;
@@ -141,11 +170,11 @@ public class XML2TXT {
 	}
 	
 	public byte[] convertFile(String xmlfile) {
-
-
-//	    for (int i = 0; i < size;)
-//	        theChars[i] = (char)(bytes[i++]&0xff);
 		return clean(read(xmlfile));
+	}
+	
+	public String toText(String xmlfile) {
+		return cleanAllTags(read(xmlfile));
 	}
 	
 	public byte[] convert(String xml) {

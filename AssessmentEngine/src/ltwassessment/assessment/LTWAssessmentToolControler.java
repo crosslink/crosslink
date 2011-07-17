@@ -329,21 +329,9 @@ public class LTWAssessmentToolControler {
     }
     
     public void moveBackwardALink() {
-	//      boolean isTABOutgoing = Boolean.valueOf(System.getProperty(sysPropertyIsTABKey));
-	//      if (isTABOutgoing) {
     // <editor-fold defaultstate="collapsed" desc="Update TAB Topic, Link">
-    // =================================================================
-	//  String[] currTopicOLSEStatusSA = CurrentFocusedAnchor.getCurrentFocusedAnchor().toArray();
-	//  String currPAnchorO = currTopicOLSEStatusSA[0];
-	//String currPAnchorL = currTopicOLSEStatusSA[1];
-	//String[] currPAnchorOLSA = new String[]{currPAnchorO, currPAnchorL};
 	//// -----------------------------------------------------------------
 	Bep currALinkOIDSA = CurrentFocusedAnchor.getCurrentFocusedAnchor().getCurrentBep(); //rscManager.getCurrTopicATargetOID(thisLinkTextPane, currTopicID);
-	//String currALinkO = currALinkOIDSA.offsetToString(); //[0];
-	//String currALinkID = currALinkOIDSA.getFileId(); //[1];
-	//String[] currPALinkOIDSA = new String[]{currALinkO, currALinkID};
-	
-	//String currALinkStatus = myPooler.getPoolAnchorBepLinkStatus(currTopicID, currPAnchorOLSA, currALinkID);
 	// =================================================================
 	// 1) Get the NEXT Anchor O, L, S, E, Status + its BEP link O, S, ID, Status
 	//    With TAB Nav Update --> NEXT TAB
@@ -395,30 +383,6 @@ public class LTWAssessmentToolControler {
 			else
 				CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(currentBep.getAssociatedAnchor(), nextAnchorBepLinkVSA.getAssociatedAnchor(), nextAnchorBepLinkVSA);
     }
-    
-//    public void updateAnchorChanges(Bep nextAnchorBepLinkVSA, Bep currALinkOIDSA) {
-//    	String currTopicID = rscManager.getTopicID();
-//    	AssessedAnchor currentAnchor = currALinkOIDSA.getAssociatedAnchor();
-//    	AssessedAnchor nextAnchor = nextAnchorBepLinkVSA.getAssociatedAnchor();
-//    	
-////        updateAnchor(/*currTopicOLSEStatusSA*/, );
-//        int currPAnchorStatus = Integer.parseInt(myPooler.getPoolAnchorStatus(currTopicID, currentAnchor));
-//
-//    if (currentAnchor.getParent() != nextAnchor.getParent()) {
-//        int poolAnchorStatus = 0;
-//        if (currPAnchorStatus != 0){
-//            poolAnchorStatus = currPAnchorStatus;
-//        } else {
-//            poolAnchorStatus = rscManager.getPoolAnchorCompletedStatus(currTopicID, currentAnchor);
-//        }
-//        currentAnchor.getParent().setStatus(poolAnchorStatus);
-//        myPUpdater.updatePoolAnchorStatus(currTopicID, currentAnchor.getParent());
-//
-//    }
-//		CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(currentAnchor, nextAnchor, nextAnchorBepLinkVSA);
-////        updateFields(nextAnchorBepLinkVSA);
-//    }
-    
     
     public void assess(String poolFile) {
     	assess(poolFile, false);
