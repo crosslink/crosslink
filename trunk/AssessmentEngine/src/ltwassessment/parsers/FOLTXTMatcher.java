@@ -602,15 +602,12 @@ public class FOLTXTMatcher {
         }
         Vector<String[]> screenAnchorPos = new Vector<String[]>();
         for (IndexedAnchor thisAnchorSet : anchorOLV) {
-//        	Anchor anchor = new Anchor(Integer.valueOf(thisAnchorSet[0]), Integer.valueOf(thisAnchorSet[1]), thisAnchorSet[2]);
-//        	boolean result = anchor.validate(Assessment.getInstance().getCurrentTopic());
-//        	
-//        	if (result) {
-	            String[] scrFOL = screenOffsetLengthFinder(fullScreenText, fullXmlTxt, thisAnchorSet);
-        		scrFOL[3] = thisAnchorSet.extendedLengthToString(); //[4];
-	            screenAnchorPos.add(scrFOL);
-	            anchorSetV.add(thisAnchorSet.getOffset()/*[0]*/ + " : " + thisAnchorSet.lengthToString()/*[1]*/ + " : " + thisAnchorSet.getName()/*[2]*/ + " : " + scrFOL[1] + " : " + scrFOL[2]  + " : " +  thisAnchorSet.extendedLengthToString()/*[4]*/);
-//        	}
+        	if (thisAnchorSet.getOffset() == 3001)
+        		System.out.println("I got you");
+            String[] scrFOL = screenOffsetLengthFinder(fullScreenText, fullXmlTxt, thisAnchorSet);
+    		scrFOL[3] = thisAnchorSet.extendedLengthToString(); //[4];
+            screenAnchorPos.add(scrFOL);
+            anchorSetV.add(thisAnchorSet.getOffset()/*[0]*/ + " : " + thisAnchorSet.lengthToString()/*[1]*/ + " : " + thisAnchorSet.getName()/*[2]*/ + " : " + scrFOL[1] + " : " + scrFOL[2]  + " : " +  thisAnchorSet.extendedLengthToString()/*[4]*/);
         }
         // ============================
         // record into toolResource.xml
@@ -896,12 +893,12 @@ public class FOLTXTMatcher {
     public static String ConvertXMLtoTXT(String inname, String outname) {
 //        String myPureTxt = convertXMLFileToTxt(inname, outname, isWikipedia);
     	String myPureTxt = "";
-		try {
-			myPureTxt = new String(crosslink.XML2TXT.getInstance().convertFile(inname), "UTF-8");
-		} catch (UnsupportedEncodingException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		}
+//		try {
+			myPureTxt = crosslink.XML2TXT.getInstance().toText(inname); //new String(crosslink.XML2TXT.getInstance().convertFile(inname), "UTF-8");
+//		} catch (UnsupportedEncodingException e1) {
+//			// TODO Auto-generated catch block
+//			e1.printStackTrace();
+//		}
         // write the text to a new file
         try {
 			BufferedWriter out = new BufferedWriter(new OutputStreamWriter(
