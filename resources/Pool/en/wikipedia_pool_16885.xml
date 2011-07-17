@@ -5,7 +5,7 @@
 	<topic file="16885" name="韓國泡菜">
 		<outgoinglinks>
 			<anchor arel="0" aname="韓" aoffset="265" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="韓" saoffset="265" salength="1" rank="170">
+				<subanchor sarel="-1" saname="韓" saoffset="265" salength="1" rank="170">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Korea Football Association">1054711</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Namak, South Korea">3383514</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Nickelodeon (South Korea)">24466470</tobep>
@@ -383,8 +383,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Yeast">34385</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="種" aoffset="632" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="種" saoffset="632" salength="1" rank="117">
+			<anchor arel="-1" aname="種" aoffset="632" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="種" saoffset="632" salength="1" rank="117">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Salticidae genera">5823703</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Phytoseiidae">9264393</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Kimera (species)">2512099</tobep>
@@ -497,8 +497,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="People Like People Like People Like Us">18619434</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="通" aoffset="643" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="通" saoffset="643" salength="1" rank="182">
+			<anchor arel="-1" aname="通" aoffset="643" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="通" saoffset="643" salength="1" rank="182">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hyperlink">49547</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Link (film)">1705406</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Link (comics)">10253644</tobep>
@@ -623,8 +623,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Cabbage">55115</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="儲存" aoffset="789" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="儲存" saoffset="789" salength="2" rank="205">
+			<anchor arel="-1" aname="儲存" aoffset="789" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="儲存" saoffset="789" salength="2" rank="205">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Wonder Pets">4483660</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Picture archiving and communication system">63860</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Save">1016272</tobep>
@@ -637,8 +637,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Save (Garonne)">2832081</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="甕缸" aoffset="794" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="甕缸" saoffset="794" salength="2" rank="76">
+			<anchor arel="-1" aname="甕缸" aoffset="794" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="甕缸" saoffset="794" salength="2" rank="76">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ung Huot">1410025</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ung Thi">25623830</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Pokpung-ho">6757954</tobep>
@@ -649,7 +649,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ung County">925763</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Loung Ung">2332741</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="缸" saoffset="795" salength="1" rank="197">
+				<subanchor sarel="-1" saname="缸" saoffset="795" salength="1" rank="197">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Cylinder (engine)">859284</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Cylinder (locomotive)">10759120</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Cylinder (geometry)">859283</tobep>
@@ -4083,8 +4083,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="History of salt">1555251</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="宜" aoffset="2778" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="宜" saoffset="2778" salength="1" rank="249">
+			<anchor arel="-1" aname="宜" aoffset="2778" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="宜" saoffset="2778" salength="1" rank="249">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Yilan">734031</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Should I Stay or Should I Go">3629521</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="I Should Care">7088420</tobep>
@@ -4098,8 +4098,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ladies Should Listen">22535547</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="量" aoffset="2782" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="量" saoffset="2782" salength="1" rank="75">
+			<anchor arel="-1" aname="量" aoffset="2782" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="量" saoffset="2782" salength="1" rank="75">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Magnitude (mathematics)">577301</tobep>
 				</subanchor>
 			</anchor>
@@ -4261,8 +4261,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Governance">652849</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="近" aoffset="2879" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="近" saoffset="2879" salength="1" rank="126">
+			<anchor arel="-1" aname="近" aoffset="2879" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="近" saoffset="2879" salength="1" rank="126">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Close">4583933</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Close vowel">594771</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Cul-de-sac">390697</tobep>
@@ -4423,8 +4423,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Market Street (Philadelphia)">5821146</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="雙" aoffset="2921" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="雙" saoffset="2921" salength="1" rank="237">
+			<anchor arel="-1" aname="雙" aoffset="2921" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="雙" saoffset="2921" salength="1" rank="237">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Double (baseball)">300740</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Double (association football)">88184</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Double track">1708959</tobep>
@@ -4696,8 +4696,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Community of interest">1161073</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="人民" aoffset="3022" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="人民" saoffset="3022" salength="2" rank="186">
+			<anchor arel="-1" aname="人民" aoffset="3022" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="人民" saoffset="3022" salength="2" rank="186">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="People Helping People">1702911</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Citizenship">6784</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="People (disambiguation)">58923</tobep>
@@ -4720,7 +4720,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="東" aoffset="3033" alength="1" ext_length="3">
-				<subanchor sarel="0" saname="東" saoffset="3033" salength="1" rank="243">
+				<subanchor sarel="-1" saname="東" saoffset="3033" salength="1" rank="243">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Outline of East Timor">16278626</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="East Mains, East Kilbride">5747277</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="East-East">28013942</tobep>
@@ -4740,7 +4740,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="East Africa">260987</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Taitung">941957</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="東亞" saoffset="3033" salength="2" rank="64">
+				<subanchor sarel="-1" saname="東亞" saoffset="3033" salength="2" rank="64">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Asia">689</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Music of Asia">440310</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of overall and regional winning authors of the Commonwealth Writers&apos; Prize">21683516</tobep>
@@ -4758,7 +4758,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="East Asia Hotel">25592140</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="東亞地區" saoffset="3033" salength="4" rank="148">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Asia">689</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Asia">689</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Music of Asia">440310</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of overall and regional winning authors of the Commonwealth Writers&apos; Prize">21683516</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="East Asian Community">8826488</tobep>
@@ -4864,11 +4864,11 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sichuan FC">9993036</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="外部" aoffset="3282" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="外部" saoffset="3282" salength="2" rank="55">
+			<anchor arel="-1" aname="外部" aoffset="3282" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="外部" saoffset="3282" salength="2" rank="55">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Exterior (topology)">985087</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="部" saoffset="3283" salength="1" rank="80">
+				<subanchor sarel="-1" saname="部" saoffset="3283" salength="1" rank="80">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Departments of Colombia">549204</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Departments of Côte d&apos;Ivoire">673520</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Departments of Argentina">2341159</tobep>
