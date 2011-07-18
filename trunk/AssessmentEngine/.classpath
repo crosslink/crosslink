@@ -8,5 +8,6 @@
 	<classpathentry kind="lib" path="/CrosslinkValidation/lib/appframework-1.0.3.jar"/>
 	<classpathentry kind="lib" path="/CrosslinkValidation/lib/xercesImpl.jar"/>
 	<classpathentry kind="lib" path="/CrosslinkValidation/lib/xml-apis.jar"/>
+	<classpathentry kind="lib" path="/CrosslinkAssessment-C2E/lib/appframework-1.0.3.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

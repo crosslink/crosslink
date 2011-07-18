@@ -1351,7 +1351,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sequence (journal)">15737254</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Delphi" aoffset="745" alength="6" ext_length="0">
+			<anchor arel="1" aname="Delphi" aoffset="745" alength="6" ext_length="0">
 				<subanchor sarel="1" saname="Delphi" saoffset="745" salength="6" rank="1">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Object Pascal">630175</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Delphi (disambiguation)">859265</tobep>
