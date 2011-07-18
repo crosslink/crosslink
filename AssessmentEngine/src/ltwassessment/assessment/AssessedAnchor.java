@@ -148,4 +148,9 @@ public class AssessedAnchor extends IndexedAnchor {
     		link = getBeps().get(i);
     	return needNotFinished ? unassessedLink : link;
 	}
+	
+	public void markAssessedAnchorIrrevlent() {
+		for (Bep link : getBeps())
+			link.setRel(Bep.IRRELEVANT);
+	}
 }

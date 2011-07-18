@@ -2,6 +2,8 @@ package ltwassessment.assessment;
 
 import java.util.Observable;
 
+import ltwassessment.parsers.PoolerManager;
+
 public class Bep extends Observable {
 	public static final int IRRELEVANT = -1;
 	public static final int RELEVANT = 1;
@@ -108,7 +110,8 @@ public class Bep extends Observable {
 		int oldRel = this.rel;
 		
 		int value = MARK_ASSESSED;
-		if (this.rel != status && (status == Bep.UNASSESSED || rel == Bep.UNASSESSED)) {
+		if (this.rel != status) {
+			if (status == Bep.UNASSESSED || rel == Bep.UNASSESSED) {
 //			if (oldRel == Bep.UNASSESSED) {
 //				if (status != Bep.UNASSESSED)
 //					value = MARK_ASSESSED;
@@ -130,8 +133,11 @@ public class Bep extends Observable {
 				setChanged();
 				notifyObservers(value);
 //			}
+			}
+			
+			this.rel = status;
+//			PoolerManager.getInstance().getPoolUpdater().updateTopicAnchorLinkRel(this);
 		}
-		this.rel = status;
 	}
 
 	public void setRel(String status) {

@@ -415,6 +415,7 @@ public class LTWAssessmentToolControler {
         setupComponentFont();
         
         Assessment.getInstance().setCurrentTopicWithId(currTopicID);
+        myPUpdater.setTopicID(currTopicID);
         currTopicName = Assessment.getInstance().getCurrentTopic().getTitle();
         rscManager.pullPoolData();
     	

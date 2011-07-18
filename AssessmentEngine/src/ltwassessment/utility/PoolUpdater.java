@@ -16,6 +16,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import ltwassessment.AppResource;
+import ltwassessment.Assessment;
 import ltwassessment.assessment.AssessedAnchor;
 import ltwassessment.assessment.Bep;
 import ltwassessment.assessment.IndexedAnchor;
@@ -26,6 +27,7 @@ import ltwassessment.assessment.IndexedAnchor;
 public class PoolUpdater {
 
     private String poolXMLPath = "";
+    private String topicID = null;
 
     private void log(Object obj) {
         System.out.println(obj.toString());
@@ -37,6 +39,9 @@ public class PoolUpdater {
         poolXMLPath = poolXmlFile;
     }
 
+    public void setTopicID(String id) {
+    	this.topicID = id;
+    }
     // =========================================================================
     // =========================================================================
     public void updateTopicAnchorLinkOS(String topicID, String[] pAnchorOL, String targetID, String[] linkOS) {
@@ -341,7 +346,7 @@ public class PoolUpdater {
         }
     }
 
-    public void updateTopicAnchorLinkRel(String topicID, Bep link) {
+    public void updateTopicAnchorLinkRel(Bep link) {
     	IndexedAnchor poolAnchorOL = link.getAssociatedAnchor().getParent();
         String targetID = link.getFileId();
         String tbRelStatus = link.relString();
