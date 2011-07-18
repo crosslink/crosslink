@@ -230,34 +230,11 @@ public class AssessmentThread extends Thread {
         // 1) BG Colour to RED
         // 2) Update Topic Anchor Link Status to -1
         // 3) GO NEXT
-//        if (this.isTAB) {
-            // For outgoing TAB
-            // -----------------------------------------------------------------
-//            IndexedAnchor currAnchorOLNameStatusSA = this.myRSCManager.getCurrTopicAnchorOLNameStatusSA();
-//            Bep currALinkOIDSA = this.myRSCManager.getCurrTopicATargetOID(this.myLinkPane, this.topicID);
-//            String currALinkID = currALinkOIDSA.getFileId(); //[1];
-//            logger("outgoing_singleRightClick_" + currAnchorOLNameStatusSA.offsetToString() + "-" + currAnchorOLNameStatusSA.lengthToString() + " --> " + currALinkID);
         Bep currentLink = CurrentFocusedAnchor.getCurrentFocusedAnchor().getCurrentBep();
-            // -----------------------------------------------------------------
-//            String currALinkStatus = this.myPoolManager.getPoolAnchorBepLinkStatus(topicID, currentLink);
-//            if (currALinkStatus.equals("0")) {
-//                String[] outCompletion = this.myRSCManager.getOutgoingCompletion();
-//                String completedLinkN = outCompletion[0];
-//                String totalLinkN = outCompletion[1];
-//                completedLinkN = String.valueOf(Integer.valueOf(completedLinkN) + 1);
-//                this.myRSCManager.updateOutgoingCompletion(completedLinkN + " : " + totalLinkN);
-//            }
-            // -----------------------------------------------------------------
-//            this.myLinkPane.setBackground(this.linkPaneNonRelColor);
-//            this.myLinkPane.repaint();
 
-            currentLink.setRel(Bep.IRRELEVANT);
-            String currLinkStatus = currentLink.relString();
-            this.myPoolUpdater.updateTopicAnchorLinkRel(topicID, currentLink);
-            // -----------------------------------------------------------------
-            AssessedAnchor previous =  currentLink.getAssociatedAnchor();
-            LTWAssessmentToolControler.getInstance().goNextLink(true, !isCtrlKeyDown());
-//            CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(previous, link.getAssociatedAnchor(), link);
+        currentLink.setRel(Bep.IRRELEVANT);
+        this.myPoolUpdater.updateTopicAnchorLinkRel(currentLink);
+        LTWAssessmentToolControler.getInstance().goNextLink(true, !isCtrlKeyDown());
     }
     
 //    private void updateRelevantCompletion(Bep link) {
@@ -274,25 +251,31 @@ public class AssessmentThread extends Thread {
     private void setRelevant(Bep currentLink, boolean setBep) {
         String currALinkStatus = AssessmentThread.myPoolManager.getPoolAnchorBepLinkStatus(topicID, currentLink);
 //        if (currALinkStatus.equals("0")) 
-//        	updateRelevantCompletion(currentLink);  	
+//        	updateRelevantCompletion(currentLink); 
+        if (currentLink.getAssociatedAnchor().getParent().getStatus() == Bep.IRRELEVANT) 
+        	currentLink.getAssociatedAnchor().getParent().markIrrevlent();
+        else if (currentLink.getAssociatedAnchor().getStatus() == Bep.IRRELEVANT)
+        	currentLink.getAssociatedAnchor().markAssessedAnchorIrrevlent();
         
         currentLink.setRel(Bep.RELEVANT);
         if (setBep)
         	AssessmentThread.myPoolUpdater.updateTopicAnchorLinkOSStatus(topicID, currentLink.getAssociatedAnchor().getParent(), currentLink);
         else
-        	AssessmentThread.myPoolUpdater.updateTopicAnchorLinkRel(topicID,  currentLink);
+        	AssessmentThread.myPoolUpdater.updateTopicAnchorLinkRel(currentLink);
         
-        int status = currentLink.getAssociatedAnchor().getStatus();
-        if (status != Bep.RELEVANT) {
-        	currentLink.getAssociatedAnchor().setStatus(Bep.RELEVANT);
-        	myPoolUpdater.updatePoolSubanchorStatus(this.topicID, currentLink.getAssociatedAnchor());
-        }
+        currentLink.getAssociatedAnchor().checkStatus();
+//        int status = currentLink.getAssociatedAnchor().getStatus();
+//        if (currentLink.getAssociatedAnchor().checkStatus() == AssessedAnchor.ASSESSMENT_FINISHED_YES && status != Bep.RELEVANT) {
+//        	currentLink.getAssociatedAnchor().setStatus(Bep.RELEVANT);
+//        	myPoolUpdater.updatePoolSubanchorStatus(this.topicID, currentLink.getAssociatedAnchor());
+//        }
         
-        status = currentLink.getAssociatedAnchor().getParent().getStatus();
-        if (status != Bep.RELEVANT) {
-        	currentLink.getAssociatedAnchor().setStatus(Bep.RELEVANT);
-        	myPoolUpdater.updatePoolAnchorStatus(this.topicID, currentLink.getAssociatedAnchor().getParent());
-        }
+        currentLink.getAssociatedAnchor().getParent().statusCheck();
+//        status = currentLink.getAssociatedAnchor().getParent().getStatus();
+//        if (status != Bep.RELEVANT) {
+//        	currentLink.getAssociatedAnchor().setStatus(Bep.RELEVANT);
+//        	myPoolUpdater.updatePoolAnchorStatus(this.topicID, currentLink.getAssociatedAnchor().getParent());
+//        }
     }
 
     private void doubleLeftClickEventAction() {

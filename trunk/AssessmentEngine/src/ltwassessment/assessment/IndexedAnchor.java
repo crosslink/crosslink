@@ -333,8 +333,8 @@ public class IndexedAnchor extends Anchor {
 //		if (status == Bep.UNASSESSED) {
 			int rel = status; //Bep.IRRELEVANT;
 			
-			if (offset == 870)
-				System.out.println("Stop here");
+//			if (offset == 870)
+//				System.out.println("Stop here");
 			
 			for (AssessedAnchor subanchor : getChildrenAnchors()) {
 				if (subanchor.checkStatus() == ASSESSMENT_FINISHED_NO) {
@@ -357,5 +357,10 @@ public class IndexedAnchor extends Anchor {
 			}
 //		}
 //		return finished;
+	}
+
+	public void markIrrevlent() {
+		for (AssessedAnchor anchor : this.getChildrenAnchors())
+			anchor.markAssessedAnchorIrrevlent();
 	}
 }
