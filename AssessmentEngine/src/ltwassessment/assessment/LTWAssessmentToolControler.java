@@ -192,8 +192,9 @@ public class LTWAssessmentToolControler {
     }
     
     public void assessNextTopic() {
-    	if (currTopicID != null && currTopicID.length() > 0)
+    	if (currTopicID != null && currTopicID.length() > 0) {
     		Assessment.getInstance().finishTopic(currTopicID);
+    	}
     	currTopicID = Assessment.getInstance().getNextTopic();
     	if (currTopicID == null)
     		finishAssessment();
@@ -203,11 +204,11 @@ public class LTWAssessmentToolControler {
 
 	public void goNextLink(boolean updateCurrAnchorStatus, boolean nextUnassessed) {
         // ---------------------------------------------------------------------
-        globalPoolBackupCounter++;
-        // Pool Assessment Result Back up
-        if (globalPoolBackupCounter % 10 == 0) {
-            backupPool();
-        }
+//        globalPoolBackupCounter++;
+//        // Pool Assessment Result Back up
+//        if (globalPoolBackupCounter % 10 == 0) {
+//            backupPool();
+//        }
  /*else if (this.isTAB && tabCompletedRatio[0].equals(tabCompletedRatio[1]) && !tbaCompletedRatio[0].equals(tbaCompletedRatio[1])) {
             JOptionPane.showMessageDialog(this.myTopicPane, "The Outgoing Assessment is completed. \r\n" +
                     "Please click \"OK\" button and switch to Incoming Mode to complete the assessment.\r\n" +
@@ -218,14 +219,8 @@ public class LTWAssessmentToolControler {
                     "The progress of Outgoing is " + tabCompletedRatio[0] + " out of " + tabCompletedRatio[1] + ".");
 //        } */
 //        else {
-
-                
+   
         moveForwardALink(updateCurrAnchorStatus, nextUnassessed);
-                // ---------------------------------------------------------------------
-                // ---------------------------------------------------------------------
-                // </editor-fold>
-//                // </editor-fold>
-//        }
     }
     
 	public void setSubanchorIrrelevant(AssessedAnchor anchor) {
@@ -288,7 +283,7 @@ public class LTWAssessmentToolControler {
 //        rscManager.updateOutgoingCompletion(outCompletedLinks + " : " + outCompletionRatio[1]);  
 	}
 	
-    private void backupPool() {
+    public void backupPool() {
 		//      String sourcePoolFPath = "resources" + File.separator + "Pool" + File.separator + "wikipedia_pool.xml";
     	String topicID = rscManager.getTopicID();
 		String sourcePoolFPath = ltwassessment.Assessment.getPoolFile(topicID);
@@ -322,7 +317,7 @@ public class LTWAssessmentToolControler {
 		 */
 		try {
 			FileUtil.copyFile(sourcePoolFPath, backupPoolFPath);
-			FileUtil.copyFile(sourcePoolFPath, Assessment.getPoolBackupDirHandler() + srcFile.getName());
+			FileUtil.copyFile(sourcePoolFPath, Assessment.getPoolBackupDirHandler().getAbsolutePath() + File.separator + srcFile.getName());
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -349,30 +344,21 @@ public class LTWAssessmentToolControler {
             // 1) Get the NEXT Anchor O, L, S, E, Status + its BEP link O, S, ID, Status
             //    With TAB Nav Update --> NEXT TAB
             Bep nextAnchorBepLinkVSA = rscManager.getNextTABWithUpdateNAV(currTopicID, currentBep, nextUnassessed);
-            
-//            if (updateCurrAnchorStatus && (nextAnchorBepLinkVSA.getAssociatedAnchor().getParent() != currentBep.getAssociatedAnchor().getParent())) {
-//            	currentBep.getAssociatedAnchor().getParent().statusCheck();
-//            	
-//            }
-
-            
+                      
             // ---------------------------------------------------------------------
             // 1) check Whether the assessment is Completed
             //    If Yes, pop-up Survey Questionaire
             //           --> Then Link for Upload Result XML, Logger & Questionaires
             // 2) If Not, Go Next
 //          log("COMPLETION ... ");
-//            String[] tabCompletedRatio = this.rscManager.getOutgoingCompletion();
-//            String topicID = rscManager.getTopicID();
-//                  String[] tbaCompletedRatio = this.myRSCManager.getIncomingCompletion();
+
 			if (nextUnassessed && (nextAnchorBepLinkVSA == currentBep || (Completion.getInstance().isFinished() && !showOnce ))) {
+				backupPool();
 				int option  = this.showAssessNextTopicDialog(this.currTopicID);
 			    if (option == JOptionPane.OK_OPTION) {
 			//      BrowserControl openBrowser = new BrowserControl();
 			//openBrowser.displayURL(crosslinkURL);
-
 			    	assessNextTopic();
-			
 			    }
 			    else {
 			    	finishAssessment();
@@ -582,13 +568,6 @@ public class LTWAssessmentToolControler {
 		FOLTXTMatcher.getInstance().getCurrFullXmlText();
     	    	
     	FOLTXTMatcher.getInstance().getSCRAnchorPosV(myTopicPane, currTopicID, topicAnchorsHT);
-//    	Vector<String> topicAnchorsOLNameSEVS = rscManager.getTopicAnchorsOLNameSEV();
-//        int completedAnchor = 0;
-//		//      int totoalAnchorNumber = Integer.valueOf(tabCompletedRatio[1]);
-//		
-//		int totoalAnchorNumberRecored = topicAnchorsOLNameSEVS.size();
-//		
-//		this.rscManager.updateOutgoingCompletion(String.valueOf(completedAnchor) + " : " + String.valueOf(totoalAnchorNumberRecored));
     }
     
     private void resetResouceTopic(String topicLang) {
