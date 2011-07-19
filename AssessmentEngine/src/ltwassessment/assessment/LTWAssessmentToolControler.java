@@ -639,6 +639,9 @@ public class LTWAssessmentToolControler {
     }
 
 	public void start() {
+		
+		
+		
         Hashtable<String, File> topics4Assessment = Assessment.getInstance().getTopics();
         if (topics4Assessment.size() == 0) {
             currTopicID = rscManager.getInstance().getTopicID();
