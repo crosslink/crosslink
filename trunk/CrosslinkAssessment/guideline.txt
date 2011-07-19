@@ -1,0 +1,15 @@
+#
+#  POOLING
+#
+#
+1. The links of same anchors must be pooled together
+
+
+#
+#
+#  ASSESSMENT
+#
+
+1. If the anchor is deemed reasonable (e.g. "Red Square") then each prospective link for the anchor will be assessed.  At that point the "Red" link and the "Square" link will be assessed irrelevant, but "Red Square" link, "the Cafe Pushkin" link and the "Kremlin" link may be assessed as relevant.
+
+2. chronological items should be marked as irrelevant
