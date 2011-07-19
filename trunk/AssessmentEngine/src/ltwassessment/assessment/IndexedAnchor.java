@@ -361,6 +361,6 @@ public class IndexedAnchor extends Anchor {
 
 	public void markIrrevlent() {
 		for (AssessedAnchor anchor : this.getChildrenAnchors())
-			anchor.markAssessedAnchorIrrevlent();
+			anchor.markAllLinksIrrevlent();
 	}
 }

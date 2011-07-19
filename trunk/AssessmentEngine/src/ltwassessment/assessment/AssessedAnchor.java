@@ -149,8 +149,12 @@ public class AssessedAnchor extends IndexedAnchor {
     	return needNotFinished ? unassessedLink : link;
 	}
 	
-	public void markAssessedAnchorIrrevlent() {
-		for (Bep link : getBeps())
-			link.setRel(Bep.IRRELEVANT);
+	public void markAllLinksIrrevlent() {
+		for (Bep link : getBeps()) {
+			if (link.getRel() != Bep.IRRELEVANT) {
+				link.setRel(Bep.IRRELEVANT);
+				PoolerManager.getInstance().getPoolUpdater().updateTopicAnchorLinkRel(link);
+			}
+		}
 	}
 }

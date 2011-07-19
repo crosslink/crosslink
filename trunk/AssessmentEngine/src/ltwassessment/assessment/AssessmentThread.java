@@ -255,7 +255,7 @@ public class AssessmentThread extends Thread {
         if (currentLink.getAssociatedAnchor().getParent().getStatus() == Bep.IRRELEVANT) 
         	currentLink.getAssociatedAnchor().getParent().markIrrevlent();
         else if (currentLink.getAssociatedAnchor().getStatus() == Bep.IRRELEVANT)
-        	currentLink.getAssociatedAnchor().markAssessedAnchorIrrevlent();
+        	currentLink.getAssociatedAnchor().markAllLinksIrrevlent();
         
         currentLink.setRel(Bep.RELEVANT);
         if (setBep)

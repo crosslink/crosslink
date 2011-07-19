@@ -76,6 +76,7 @@ public class LTWAssessmentToolCorpusBox extends javax.swing.JDialog {
     @Action
     public void CancelCorpusBox() {
         dispose();
+        System.exit(-1);
     }
 
     // <editor-fold defaultstate="collapsed" desc="Collection Browse Buttons">
