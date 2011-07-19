@@ -121,8 +121,8 @@
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="East Bay (San Francisco Bay Area)">1307148</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="-1" aname="加州" aoffset="589" alength="2" ext_length="0">
-				<subanchor sarel="-1" saname="加州" saoffset="589" salength="2" rank="231">
+			<anchor arel="0" aname="加州" aoffset="589" alength="2" ext_length="0">
+				<subanchor sarel="0" saname="加州" saoffset="589" salength="2" rank="231">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="University of California, Berkeley">31922</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="California Valley, California">1571632</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="California wine">14660227</tobep>
@@ -142,8 +142,8 @@
 			</anchor>
 			<anchor arel="0" aname="金門" aoffset="667" alength="2" ext_length="0">
 				<subanchor sarel="0" saname="金門" saoffset="667" salength="2" rank="236">
-					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Golden Gate Bridge">12103</tobep>
-					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Golden Gate (disambiguation)">571811</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Golden Gate Bridge">12103</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Golden Gate (disambiguation)">571811</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Golden Gate (soundtrack)">10529708</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Golden Gate (film)">10500185</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Golden Gate">141983</tobep>
