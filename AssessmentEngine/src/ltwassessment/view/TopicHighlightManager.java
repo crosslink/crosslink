@@ -119,6 +119,9 @@ public class TopicHighlightManager {
 		Xml2Html xmlParser = new Xml2Html(bepXmlFilePath, true);
 		String xmlHtmlText = xmlParser.getHtmlContent().toString();
 		
+		if (link.getFileId().equals("12108"))
+			xmlHtmlText = null;
+		
 		if (xmlHtmlText != null)
 			linkPane.setText(xmlHtmlText);
 		else
