@@ -119,7 +119,7 @@ public class TopicHighlightManager {
 		Xml2Html xmlParser = new Xml2Html(bepXmlFilePath, true);
 		String xmlHtmlText = xmlParser.getHtmlContent().toString();
 		
-		try {
+//		try {
 			if (xmlHtmlText != null)
 				linkPane.setText(xmlHtmlText);
 			else
@@ -128,10 +128,10 @@ public class TopicHighlightManager {
 			linkPane.scrollRectToVisible(linkPane.getVisibleRect());
 			
 			updatePaneBepIcon(linkPane, link, false);
-		}
-		catch (Exception ex) {
-			ex.printStackTrace();
-		}
+//		}
+//		catch (Exception ex) {
+//			ex.printStackTrace();
+//		}
 	}
 	
 	public void updateLinkPane(Bep link, boolean updateText) {
