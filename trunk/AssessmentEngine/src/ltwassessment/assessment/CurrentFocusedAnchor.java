@@ -56,17 +56,23 @@ public class CurrentFocusedAnchor {
 	}
 
 	public void setAnchor(AssessedAnchor previous, AssessedAnchor current, Bep bep) {
-		if (previous != null) {
-			if (previous.getParent() != current.getParent())
-				previous.getParent().statusCheck();
+		try {
+			if (previous != null) {
+				if (previous.getParent() != current.getParent())
+					previous.getParent().statusCheck();
+			}
+			
+			this.anchor = current;
+			
+			TopicHighlightManager.getInstance().update(previous, anchor);
+			TopicHighlightManager.getInstance().updateLinkPane(bep, currentBep == null || bep != currentBep);
+			
+			this.currentBep = bep;
 		}
-		
-		this.anchor = current;
-		
-		TopicHighlightManager.getInstance().update(previous, anchor);
-		TopicHighlightManager.getInstance().updateLinkPane(bep, currentBep == null || bep != currentBep);
-		
-		this.currentBep = bep;
+		catch (Exception ex) {
+			ex.printStackTrace();
+			bep.setRel(Bep.IRRELEVANT);
+		}
 	}
 
 	public Bep getCurrentBep() {
