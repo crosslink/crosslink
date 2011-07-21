@@ -252,10 +252,14 @@ public class AssessmentThread extends Thread {
         String currALinkStatus = AssessmentThread.myPoolManager.getPoolAnchorBepLinkStatus(topicID, currentLink);
 //        if (currALinkStatus.equals("0")) 
 //        	updateRelevantCompletion(currentLink); 
-        if (currentLink.getAssociatedAnchor().getParent().getStatus() == Bep.IRRELEVANT) 
+        if (currentLink.getAssociatedAnchor().getParent().getStatus() == Bep.IRRELEVANT) {
         	currentLink.getAssociatedAnchor().getParent().markIrrevlent();
-        else if (currentLink.getAssociatedAnchor().getStatus() == Bep.IRRELEVANT)
+        	currentLink.getAssociatedAnchor().getParent().setStatus(Bep.RELEVANT);
+        }
+        else if (currentLink.getAssociatedAnchor().getStatus() == Bep.IRRELEVANT) {
         	currentLink.getAssociatedAnchor().markAllLinksIrrevlent();
+        	currentLink.getAssociatedAnchor().setStatus(Bep.RELEVANT);
+        }
         
         currentLink.setRel(Bep.RELEVANT);
         if (setBep)
