@@ -602,6 +602,7 @@ public class LTWAssessmentToolControler {
         myTopicPane.setMargin(new Insets(5, 5, 5, 5));
         initTopicDocument(xmlFilePath);
         myTopicPane.setCaretPosition(0);
+        myTopicPane.repaint();
     }
 
     private void initTopicDocument(String xmlFilePath) {
