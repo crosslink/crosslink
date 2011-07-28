@@ -405,6 +405,7 @@ public class AssessmentThread extends Thread {
         }
         else {
         	IndexedAnchor parent = processingAnchor.getParent();
+//        	parent.setStatus(Bep.IRRELEVANT);
             for (AssessedAnchor subanchor : parent.getChildrenAnchors())
             	LTWAssessmentToolControler.getInstance().setSubanchorIrrelevant(subanchor);
             
