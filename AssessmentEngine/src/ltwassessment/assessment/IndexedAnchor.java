@@ -332,6 +332,7 @@ public class IndexedAnchor extends Anchor {
 	public void statusCheck() {
 //		if (status == Bep.UNASSESSED) {
 			int rel = status; //Bep.IRRELEVANT;
+			boolean hasRelevantLink = false;
 			
 //			if (offset == 870)
 //				System.out.println("Stop here");
@@ -346,10 +347,17 @@ public class IndexedAnchor extends Anchor {
 					if (rel == Bep.UNASSESSED)
 						rel = subanchor.getStatus();
 					
-					if (subanchor.getStatus() == Bep.RELEVANT)
+					int subStatus = subanchor.getStatus();
+					
+					if (subStatus == Bep.RELEVANT) {
+						hasRelevantLink = true;
 						rel = Bep.RELEVANT;
+					}
 				}
 			}
+			
+			if (!hasRelevantLink && status == Bep.RELEVANT)
+				rel = Bep.IRRELEVANT;
 		
 			if (rel != status) {
 				status = rel;
