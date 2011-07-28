@@ -963,8 +963,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Health regions of Canada">6401338</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="功" aoffset="748" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="功" saoffset="748" salength="1" rank="245">
+			<anchor arel="-1" aname="功" aoffset="748" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="功" saoffset="748" salength="1" rank="245">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of natural gas power stations">25675599</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Power (physics)">24236</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of coal power stations">25663067</tobep>
@@ -983,7 +983,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Nevada-California Power Company Substation and Auxiliary Power Building">22846460</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="心" aoffset="753" alength="1" ext_length="2">
+			<anchor arel="1" aname="心" aoffset="753" alength="1" ext_length="2">
 				<subanchor sarel="-1" saname="心" saoffset="753" salength="1" rank="138">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Heart (Chinese medicine)">1130471</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Kokoro (disambiguation)">3786993</tobep>
@@ -1011,20 +1011,20 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Heart to Heart (film)">20377205</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Heart (band)">288138</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="心臟病" saoffset="753" salength="3" rank="20">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of ICD-9 codes 390-459: diseases of the circulatory system">3750778</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Myocardial infarction">20556798</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Slapjack">462490</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hypertensive heart disease">3186459</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Valvular heart disease">2532889</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ischaemic heart disease">65853</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Heart disease">69276</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Autoimmune heart disease">15690613</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Cor pulmonale">368300</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="ICD-10 Chapter IX: Diseases of the circulatory system">3528049</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Heart">36808</tobep>
+				<subanchor sarel="1" saname="心臟病" saoffset="753" salength="3" rank="20">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of ICD-9 codes 390-459: diseases of the circulatory system">3750778</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Myocardial infarction">20556798</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Slapjack">462490</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hypertensive heart disease">3186459</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Valvular heart disease">2532889</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ischaemic heart disease">65853</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Heart disease">69276</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Autoimmune heart disease">15690613</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Cor pulmonale">368300</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="ICD-10 Chapter IX: Diseases of the circulatory system">3528049</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Heart">36808</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="病" saoffset="755" salength="1" rank="249">
+				<subanchor sarel="-1" saname="病" saoffset="755" salength="1" rank="249">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Crohn&apos;s disease">63522</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of neurological disorders">56335</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of eponymous diseases">562259</tobep>
@@ -1040,7 +1040,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="WHO Disease Staging System for HIV Infection and Disease">2513680</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="癲癇" aoffset="757" alength="2" ext_length="1">
+			<anchor arel="1" aname="癲癇" aoffset="757" alength="2" ext_length="1">
 				<subanchor sarel="-1" saname="癲癇" saoffset="757" salength="2" rank="10">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Epilepsy Toronto">23971183</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Epilepsy surgery">7215046</tobep>
@@ -1052,31 +1052,31 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Epilepsy">10511</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Citizens United for Research in Epilepsy">17975670</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="癲癇症" saoffset="757" salength="3" rank="37">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Epilepsy Toronto">23971183</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Epilepsy surgery">7215046</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of people with epilepsy">3051611</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sudden unexpected death in epilepsy">5177228</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Epilepsy Action">1510614</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Epilepsy in animals">3498873</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Focal epilepsy">9742557</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Epilepsy">10511</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Citizens United for Research in Epilepsy">17975670</tobep>
+				<subanchor sarel="1" saname="癲癇症" saoffset="757" salength="3" rank="37">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Epilepsy Toronto">23971183</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Epilepsy surgery">7215046</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of people with epilepsy">3051611</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sudden unexpected death in epilepsy">5177228</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Epilepsy Action">1510614</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Epilepsy in animals">3498873</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Focal epilepsy">9742557</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Epilepsy">10511</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Citizens United for Research in Epilepsy">17975670</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="高血壓" aoffset="761" alength="3" ext_length="0">
-				<subanchor sarel="0" saname="高血壓" saoffset="761" salength="3" rank="8">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal hypertension">707615</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Essential hypertension">841093</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Pulmonary hypertension">674529</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ocular hypertension">3541477</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Paroxysmal hypertension">1559068</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Pathophysiology of hypertension">23153682</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Secondary hypertension">2994830</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Systolic hypertension">10675505</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hypertension">77432</tobep>
+				<subanchor sarel="1" saname="高血壓" saoffset="761" salength="3" rank="8">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal hypertension">707615</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Essential hypertension">841093</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Pulmonary hypertension">674529</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ocular hypertension">3541477</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Paroxysmal hypertension">1559068</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Pathophysiology of hypertension">23153682</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Secondary hypertension">2994830</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Systolic hypertension">10675505</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hypertension">77432</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="血壓" saoffset="762" salength="2" rank="48">
+				<subanchor sarel="-1" saname="血壓" saoffset="762" salength="2" rank="48">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Blood Pressure Association">7020665</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Invasive blood pressure">538015</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Baroreceptor">242100</tobep>
@@ -1087,7 +1087,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hypertension">77432</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Complications of hypertension">23371046</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="壓" saoffset="763" salength="1" rank="137">
+				<subanchor sarel="-1" saname="壓" saoffset="763" salength="1" rank="137">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Pressure (Paramore song)">9587741</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Pressure (Belly song)">12190831</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Pressure">23619</tobep>
@@ -2483,35 +2483,35 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Flow (mathematics)">2619735</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="肌肉组织" aoffset="1711" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="肌肉组织" saoffset="1711" salength="4" rank="73">
+			<anchor arel="1" aname="肌肉组织" aoffset="1711" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="肌肉组织" saoffset="1711" salength="4" rank="73">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Muscle tissue neoplasm">21537959</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Soft tissue">288209</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Breast reconstruction">4419</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tissue">31184</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Myeloid tissue">3190206</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="ICD-10 Chapter XIII: Diseases of the musculoskeletal system and connective tissue">3528084</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Soft tissue technique">4441441</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Muscle biopsy">1392444</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Soft tissue therapy">4964335</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tissue digestion">9453375</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Breast reconstruction">4419</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tissue">31184</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Myeloid tissue">3190206</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="ICD-10 Chapter XIII: Diseases of the musculoskeletal system and connective tissue">3528084</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Soft tissue technique">4441441</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Muscle biopsy">1392444</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Soft tissue therapy">4964335</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tissue digestion">9453375</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="组织" saoffset="1713" salength="2" rank="136">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sathya Sai Organization">622068</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Organization of the United States Coast Guard">6204340</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Organization of American States">22788</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Organization">105070</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Progressio (organization)">3116932</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Intermediate sanctions">226770</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Amphoe Don Phut">6167766</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tissue (biology)">103915</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Environment/Selected organization">11929648</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Industrial organization">51249</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Organization (disambiguation)">6284877</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Organization XIII">2034236</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Sustainable development/Selected organization">11321314</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Gemma (organization)">17528522</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Multidimensional organization">16703785</tobep>
+				<subanchor sarel="1" saname="组织" saoffset="1713" salength="2" rank="136">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sathya Sai Organization">622068</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Organization of the United States Coast Guard">6204340</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Organization of American States">22788</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Organization">105070</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Progressio (organization)">3116932</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Intermediate sanctions">226770</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Amphoe Don Phut">6167766</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tissue (biology)">103915</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Environment/Selected organization">11929648</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Industrial organization">51249</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Organization (disambiguation)">6284877</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Organization XIII">2034236</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Sustainable development/Selected organization">11321314</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Gemma (organization)">17528522</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Multidimensional organization">16703785</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="静" aoffset="1717" alength="1" ext_length="0">
@@ -2523,15 +2523,15 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Static (DC Comics)">1118092</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="状态" aoffset="1718" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="状态" saoffset="1718" salength="2" rank="78">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Status (law)">2913870</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Social status">201503</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Administrative divisions of Romania">2264980</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Status">179911</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Status symbol">565501</tobep>
+			<anchor arel="-1" aname="状态" aoffset="1718" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="状态" saoffset="1718" salength="2" rank="78">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Status (law)">2913870</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Social status">201503</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Administrative divisions of Romania">2264980</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Status">179911</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Status symbol">565501</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="态" saoffset="1719" salength="1" rank="176">
+				<subanchor sarel="-1" saname="态" saoffset="1719" salength="1" rank="176">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Administrative divisions of Burma">493383</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Political divisions of the United States">445321</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="States of Nigeria">226734</tobep>
@@ -2539,22 +2539,22 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="States of Brazil">229379</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="沐浴" aoffset="1733" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="沐浴" saoffset="1733" salength="2" rank="80">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Walter Bathe">11072154</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Klaus-Jürgen Bathe">22298687</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bathing">730219</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ryan Michelle Bathe">14591995</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="William Bathe">1351916</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Fireboy">14028203</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Frank Bathe">6944096</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bill Bathe">6037941</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Laxmanpur Bathe">26868202</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="De Bathe Baronets">13876286</tobep>
+			<anchor arel="1" aname="沐浴" aoffset="1733" alength="2" ext_length="0">
+				<subanchor sarel="1" saname="沐浴" saoffset="1733" salength="2" rank="80">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Walter Bathe">11072154</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Klaus-Jürgen Bathe">22298687</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bathing">730219</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ryan Michelle Bathe">14591995</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="William Bathe">1351916</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Fireboy">14028203</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Frank Bathe">6944096</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bill Bathe">6037941</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Laxmanpur Bathe">26868202</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="De Bathe Baronets">13876286</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="后" aoffset="1735" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="后" saoffset="1735" salength="1" rank="154">
+			<anchor arel="-1" aname="后" aoffset="1735" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="后" saoffset="1735" salength="1" rank="154">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Queen (chess)">47505</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hou (title)">27005694</tobep>
 				</subanchor>
@@ -2579,24 +2579,24 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Force">10902</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="健康" aoffset="1744" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="健康" saoffset="1744" salength="2" rank="96">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Health (film)">4544208</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Health and fitness/Health topics">3668314</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Public Health Education and Health Promotion Section">19063688</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="State health agency">20456639</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Department of Health (United Kingdom)">373579</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Health and fitness/Health and fitness news">3668548</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Health disparities">1810614</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Health">80381</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ministry of Health (Romania)">15120372</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="ISO/TC 215">8837975</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Health (magazine)">12099718</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="National Center on Minority Health and Health Disparities">28195387</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Health promotion">3158172</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Health regions of Canada">6401338</tobep>
+			<anchor arel="1" aname="健康" aoffset="1744" alength="2" ext_length="0">
+				<subanchor sarel="1" saname="健康" saoffset="1744" salength="2" rank="96">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Health (film)">4544208</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Health and fitness/Health topics">3668314</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Public Health Education and Health Promotion Section">19063688</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="State health agency">20456639</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Department of Health (United Kingdom)">373579</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Health and fitness/Health and fitness news">3668548</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Health disparities">1810614</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Health">80381</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ministry of Health (Romania)">15120372</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="ISO/TC 215">8837975</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Health (magazine)">12099718</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="National Center on Minority Health and Health Disparities">28195387</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Health promotion">3158172</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Health regions of Canada">6401338</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="康" saoffset="1745" salength="1" rank="211">
+				<subanchor sarel="-1" saname="康" saoffset="1745" salength="1" rank="211">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Kang (tribe)">8750588</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Kang">457091</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Kang the Conqueror">393437</tobep>
@@ -2664,24 +2664,24 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Back to Back (album)">5951032</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="内脏" aoffset="1778" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="内脏" saoffset="1778" salength="2" rank="53">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Visceral gout">9206620</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="The Savage Detectives">11603811</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Glossopharyngeal nerve">243327</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Organ (anatomy)">152776</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Visceral fascia">24645758</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Cordotomy">658196</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Pseudunela cornuta">24727075</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Visceral Games">22702322</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Visceral Evisceration">10014680</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Viscus">67059</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Visceral pleura">4999913</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Motor neuron">152964</tobep>
+			<anchor arel="1" aname="内脏" aoffset="1778" alength="2" ext_length="0">
+				<subanchor sarel="1" saname="内脏" saoffset="1778" salength="2" rank="53">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Visceral gout">9206620</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="The Savage Detectives">11603811</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Glossopharyngeal nerve">243327</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Organ (anatomy)">152776</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Visceral fascia">24645758</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Cordotomy">658196</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Pseudunela cornuta">24727075</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Visceral Games">22702322</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Visceral Evisceration">10014680</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Viscus">67059</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Visceral pleura">4999913</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Motor neuron">152964</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="动脉" aoffset="1807" alength="2" ext_length="2">
-				<subanchor sarel="0" saname="动脉" saoffset="1807" salength="2" rank="67">
+			<anchor arel="1" aname="动脉" aoffset="1807" alength="2" ext_length="2">
+				<subanchor sarel="-1" saname="动脉" saoffset="1807" salength="2" rank="67">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Aortic arches">4041297</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of muscles of the human body">13691619</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of subjects in Gray&apos;s Anatomy: VI. The Arteries">4043571</tobep>
@@ -2695,16 +2695,16 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Scapular artery">8334334</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Elastic artery">8449849</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="动脉硬化" saoffset="1807" salength="4" rank="16">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Arteriograph">18771020</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Arteriosclerosis obliterans">22280444</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Atherosclerosis">85385</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Arteriosclerosis, Thrombosis, and Vascular Biology">24176353</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Monckeberg&apos;s arteriosclerosis">11548745</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Nikolai Nikolaevich Anichkov">10690012</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Arteriosclerosis">188288</tobep>
+				<subanchor sarel="1" saname="动脉硬化" saoffset="1807" salength="4" rank="16">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Arteriograph">18771020</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Arteriosclerosis obliterans">22280444</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Atherosclerosis">85385</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Arteriosclerosis, Thrombosis, and Vascular Biology">24176353</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Monckeberg&apos;s arteriosclerosis">11548745</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Nikolai Nikolaevich Anichkov">10690012</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Arteriosclerosis">188288</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="脉" saoffset="1808" salength="1" rank="160">
+				<subanchor sarel="-1" saname="脉" saoffset="1808" salength="1" rank="160">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Pulse (Toni Braxton album)">25256543</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Pulse (disambiguation)">527783</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Pulse (2006 film)">2903396</tobep>
@@ -2712,8 +2712,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Pulse">41600</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="骨" aoffset="1914" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="骨" saoffset="1914" salength="1" rank="171">
+			<anchor arel="1" aname="骨" aoffset="1914" alength="1" ext_length="1">
+				<subanchor sarel="-1" saname="骨" saoffset="1914" salength="1" rank="171">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Annaba">1251502</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bone state">1305609</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bone (1972 film)">9144190</tobep>
@@ -2728,39 +2728,39 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="BTNH Worldwide">22435963</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bone marrow">196130</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="骨骼" saoffset="1914" salength="2" rank="47">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Algorithmic skeleton">25478461</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Skeleton">27609</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Skeleton at the 2006 Winter Olympics">3490241</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Skeleton Army">696547</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Skeleton (Dungeons &amp; Dragons)">6145110</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Skeleton knife">23165735</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Skeleton at the 2010 Winter Olympics">20119729</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Appendicular skeleton">518893</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bone">4099</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Skeleton at the Winter Olympics">4230745</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Castlevania monsters and bosses">10461736</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Skeleton clock">6008499</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Skeleton (disambiguation)">1743785</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Skeleton (sport)">159776</tobep>
+				<subanchor sarel="1" saname="骨骼" saoffset="1914" salength="2" rank="47">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Algorithmic skeleton">25478461</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Skeleton">27609</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Skeleton at the 2006 Winter Olympics">3490241</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Skeleton Army">696547</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Skeleton (Dungeons &amp; Dragons)">6145110</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Skeleton knife">23165735</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Skeleton at the 2010 Winter Olympics">20119729</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Appendicular skeleton">518893</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bone">4099</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Skeleton at the Winter Olympics">4230745</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Castlevania monsters and bosses">10461736</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Skeleton clock">6008499</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Skeleton (disambiguation)">1743785</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Skeleton (sport)">159776</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="结缔组织" aoffset="1917" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="结缔组织" saoffset="1917" salength="4" rank="22">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Connective tissue">228845</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Reticular connective tissue">2801067</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Connective tissue disease">2083210</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Areolar connective tissue">3322904</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Dense connective tissue">2921991</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Connective tissue nevus">20835648</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Connective tissue neoplasm">21530761</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Fibrous connective tissue">418048</tobep>
+			<anchor arel="1" aname="结缔组织" aoffset="1917" alength="4" ext_length="0">
+				<subanchor sarel="1" saname="结缔组织" saoffset="1917" salength="4" rank="22">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Connective tissue">228845</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Reticular connective tissue">2801067</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Connective tissue disease">2083210</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Areolar connective tissue">3322904</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Dense connective tissue">2921991</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Connective tissue nevus">20835648</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Connective tissue neoplasm">21530761</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Fibrous connective tissue">418048</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="变化" aoffset="1922" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="变化" saoffset="1922" salength="2" rank="228">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Redistribution of Seats Act 1885">2821917</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Things Change">4270959</tobep>
+			<anchor arel="-1" aname="变化" aoffset="1922" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="变化" saoffset="1922" salength="2" rank="228">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Redistribution of Seats Act 1885">2821917</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Things Change">4270959</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Change management (engineering)">4780628</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Change (Sugababes song)">13962604</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Change (Sugababes album)">12860719</tobep>
@@ -2783,8 +2783,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Shadow">217296</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="交感" aoffset="1934" alength="2" ext_length="2">
-				<subanchor sarel="0" saname="交感" saoffset="1934" salength="2" rank="152">
+			<anchor arel="1" aname="交感" aoffset="1934" alength="2" ext_length="2">
+				<subanchor sarel="-1" saname="交感" saoffset="1934" salength="2" rank="152">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sympathetic cooling">11996151</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sympathetic trunk">4533509</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Autonomic nervous system">166189</tobep>
@@ -2795,16 +2795,16 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sympathetic nervous system">193753</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sympathetic resonance">8967705</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="交感神经" saoffset="1934" salength="4" rank="17">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sympathetic cooling">11996151</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sympathetic trunk">4533509</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Autonomic nervous system">166189</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sympathetic string">600535</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sympathetic detonation">26343111</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sympathetic">1297940</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sympathetic ophthalmia">3619927</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sympathetic nervous system">193753</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sympathetic resonance">8967705</tobep>
+				<subanchor sarel="1" saname="交感神经" saoffset="1934" salength="4" rank="17">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sympathetic cooling">11996151</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sympathetic trunk">4533509</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Autonomic nervous system">166189</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sympathetic string">600535</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sympathetic detonation">26343111</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sympathetic">1297940</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sympathetic ophthalmia">3619927</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sympathetic nervous system">193753</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sympathetic resonance">8967705</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="兴" aoffset="1938" alength="1" ext_length="1">
@@ -3745,7 +3745,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of IPC world records in swimming – Men&apos;s short course">24377565</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="电" aoffset="2556" alength="1" ext_length="2">
+			<anchor arel="1" aname="电" aoffset="2556" alength="1" ext_length="2">
 				<subanchor sarel="-1" saname="电" saoffset="2556" salength="1" rank="238">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of natural gas power stations">25675599</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Power (physics)">24236</tobep>
@@ -3764,7 +3764,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Electric power">3270043</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Nevada-California Power Company Substation and Auxiliary Power Building">22846460</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="电解" saoffset="2556" salength="2" rank="50">
+				<subanchor sarel="-1" saname="电解" saoffset="2556" salength="2" rank="50">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Kolbe electrolysis">1675918</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="High pressure electrolysis">18790726</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Electrolysis of water">3206764</tobep>
@@ -3773,15 +3773,15 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bulk electrolysis">19645022</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Electrolysis">38257</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="电解质" saoffset="2556" salength="3" rank="23">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Reserve battery">21059281</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Alkaline fuel cell">1049639</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Electrolyte–insulator–semiconductor sensor">3069854</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Solid oxide fuel cell">1049636</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Beta-alumina solid electrolyte">5173509</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Electrolyte">48336</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Water-electrolyte imbalance">904825</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Strong electrolyte">2645732</tobep>
+				<subanchor sarel="1" saname="电解质" saoffset="2556" salength="3" rank="23">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Reserve battery">21059281</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Alkaline fuel cell">1049639</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Electrolyte–insulator–semiconductor sensor">3069854</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Solid oxide fuel cell">1049636</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Beta-alumina solid electrolyte">5173509</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Electrolyte">48336</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Water-electrolyte imbalance">904825</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Strong electrolyte">2645732</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="相" aoffset="2569" alength="1" ext_length="2">
@@ -3808,32 +3808,32 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Lattice (order)">469304</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="运动员" aoffset="2579" alength="3" ext_length="0">
-				<subanchor sarel="0" saname="运动员" saoffset="2579" salength="3" rank="94">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Summer Paralympic Games">18670273</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Winter Paralympic Games">18670284</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Spain at the 2006 European Championships in Athletics">6859123</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Dynamo Sports Club sportspeople">6868168</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Jewish American sportspeople">3260296</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Healthy Athletes">26385064</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sportsperson">154164</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Challenged Athletes Foundation">26964278</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Athletes Alley">13906869</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Uplifting Athletes">17978885</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Black athletes">26672491</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Athletes for Hope">16073912</tobep>
+			<anchor arel="1" aname="运动员" aoffset="2579" alength="3" ext_length="0">
+				<subanchor sarel="1" saname="运动员" saoffset="2579" salength="3" rank="94">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Summer Paralympic Games">18670273</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Winter Paralympic Games">18670284</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Spain at the 2006 European Championships in Athletics">6859123</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Dynamo Sports Club sportspeople">6868168</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Jewish American sportspeople">3260296</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Healthy Athletes">26385064</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sportsperson">154164</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Challenged Athletes Foundation">26964278</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Athletes Alley">13906869</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Uplifting Athletes">17978885</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Black athletes">26672491</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Athletes for Hope">16073912</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="脱水" aoffset="2593" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="脱水" saoffset="2593" salength="2" rank="63">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Glycol dehydration">14825798</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Rehydration">897094</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Drying (food)">158573</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Osmotic dehydration">23021180</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Dehydration">155056</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Chronic cellular dehydration">1042708</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Dehydration reaction">1566642</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Terminal dehydration">26824878</tobep>
+			<anchor arel="1" aname="脱水" aoffset="2593" alength="2" ext_length="0">
+				<subanchor sarel="1" saname="脱水" saoffset="2593" salength="2" rank="63">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Glycol dehydration">14825798</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Rehydration">897094</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Drying (food)">158573</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Osmotic dehydration">23021180</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Dehydration">155056</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Chronic cellular dehydration">1042708</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Dehydration reaction">1566642</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Terminal dehydration">26824878</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="中风" aoffset="2606" alength="2" ext_length="0">
