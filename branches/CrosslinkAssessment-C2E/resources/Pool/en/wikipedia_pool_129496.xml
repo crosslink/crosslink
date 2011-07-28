@@ -4,7 +4,7 @@
 	<collection>Korean Wikipedia 2010 Collection</collection>
 	<topic file="129496" name="乌贼">
 		<outgoinglinks>
-			<anchor arel="0" aname="乌" aoffset="265" alength="1" ext_length="1">
+			<anchor arel="-1" aname="乌" aoffset="265" alength="1" ext_length="1">
 				<subanchor sarel="-1" saname="乌" saoffset="265" salength="1" rank="154">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Ukraine/Ukraine-related Wikipedia notice board">2012353</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ukraine national football team">1008682</tobep>
@@ -21,20 +21,20 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ukrainian Premier League 1993–94">7002856</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Foreign relations of Ukraine">31833</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="乌贼" saoffset="265" salength="2" rank="32">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Squid (food)">17158538</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Coleoidea">623090</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="SQUID">46178</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Vampire squid">420944</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Giant squid in popular culture">4110107</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Giant squid">215419</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Colossal Squid">20975773</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Squid">38011</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Loliginidae">625912</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Squid (comics)">17774947</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Squid (software)">205620</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Glacial Squid">631166</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Squid (weapon)">1118544</tobep>
+				<subanchor sarel="-1" saname="乌贼" saoffset="265" salength="2" rank="32">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Squid (food)">17158538</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Coleoidea">623090</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="SQUID">46178</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Vampire squid">420944</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Giant squid in popular culture">4110107</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Giant squid">215419</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Colossal Squid">20975773</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Squid">38011</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Loliginidae">625912</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Squid (comics)">17774947</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Squid (software)">205620</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Glacial Squid">631166</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Squid (weapon)">1118544</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="Π" aoffset="389" alength="1" ext_length="0">
@@ -62,40 +62,40 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Iowa Hawkeyes football seasons">15110725</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="總目" aoffset="474" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="總目" saoffset="474" salength="2" rank="92">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of One Life to Live crew">21234647</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Head 2 Head">8418499</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Florida State Seminoles head football coaches">4489865</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Head (film)">693163</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Head (company)">6625061</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Head (Prince song)">6761966</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Death&apos;s Head">1234129</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Head">1209545</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Cylinder head">230978</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Order (biology)">61763</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Teenage Head (Teenage Head album)">22459406</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Antony Head, 1st Viscount Head">2256565</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Head (disambiguation)">13776</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of delegates to the Millennium Summit">9241198</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="George Head Head">18604659</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Head Girl/Head Boy">2322976</tobep>
+			<anchor arel="1" aname="總目" aoffset="474" alength="2" ext_length="0">
+				<subanchor sarel="1" saname="總目" saoffset="474" salength="2" rank="92">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of One Life to Live crew">21234647</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Head 2 Head">8418499</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Florida State Seminoles head football coaches">4489865</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Head (film)">693163</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Head (company)">6625061</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Head (Prince song)">6761966</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Death&apos;s Head">1234129</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Head">1209545</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Cylinder head">230978</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Order (biology)">61763</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Teenage Head (Teenage Head album)">22459406</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Antony Head, 1st Viscount Head">2256565</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Head (disambiguation)">13776</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of delegates to the Millennium Summit">9241198</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="George Head Head">18604659</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Head Girl/Head Boy">2322976</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="目" saoffset="475" salength="1" rank="103">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Phasmatodea">341989</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of One Life to Live crew">21234647</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Head 2 Head">8418499</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Eye">157898</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Florida State Seminoles head football coaches">4489865</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Head (film)">693163</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Head (company)">6625061</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Head (Prince song)">6761966</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Death&apos;s Head">1234129</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Order (group theory)">493527</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Head">1209545</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Cylinder head">230978</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Order">53580</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Teenage Head (Teenage Head album)">22459406</tobep>
+				<subanchor sarel="-1" saname="目" saoffset="475" salength="1" rank="103">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Phasmatodea">341989</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of One Life to Live crew">21234647</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Head 2 Head">8418499</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Eye">157898</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Florida State Seminoles head football coaches">4489865</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Head (film)">693163</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Head (company)">6625061</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Head (Prince song)">6761966</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Death&apos;s Head">1234129</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Order (group theory)">493527</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Head">1209545</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Cylinder head">230978</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Order">53580</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Teenage Head (Teenage Head album)">22459406</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Order (biology)">61763</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Antony Head, 1st Viscount Head">2256565</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Head (disambiguation)">13776</tobep>
@@ -104,8 +104,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Head Girl/Head Boy">2322976</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="烏" aoffset="499" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="烏" saoffset="499" salength="1" rank="157">
+			<anchor arel="-1" aname="烏" aoffset="499" alength="1" ext_length="1">
+				<subanchor sarel="-1" saname="烏" saoffset="499" salength="1" rank="157">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Ukraine/Ukraine-related Wikipedia notice board">2012353</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ukraine national football team">1008682</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Ukraine/Ukraine editions">8706784</tobep>
@@ -122,19 +122,19 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ukrainian Premier League 1993–94">7002856</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Foreign relations of Ukraine">31833</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="烏賊" saoffset="499" salength="2" rank="19">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Squid (food)">17158538</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Giant squid in popular culture">4110107</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Giant squid">215419</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Colossal Squid">20975773</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="SQUID">46178</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Squid">38011</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Loliginidae">625912</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Squid (software)">205620</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Squid (comics)">17774947</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Vampire squid">420944</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Squid (weapon)">1118544</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Glacial Squid">631166</tobep>
+				<subanchor sarel="-1" saname="烏賊" saoffset="499" salength="2" rank="19">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Squid (food)">17158538</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Giant squid in popular culture">4110107</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Giant squid">215419</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Colossal Squid">20975773</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="SQUID">46178</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Squid">38011</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Loliginidae">625912</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Squid (software)">205620</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Squid (comics)">17774947</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Vampire squid">420944</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Squid (weapon)">1118544</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Glacial Squid">631166</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="，" aoffset="645" alength="1" ext_length="0">
@@ -142,8 +142,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Comma">59125</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="本名" aoffset="646" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="本名" saoffset="646" salength="2" rank="84">
+			<anchor arel="-1" aname="本名" aoffset="646" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="本名" saoffset="646" salength="2" rank="84">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Real Real Real">12302593</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Praenomen">244081</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Real Recognize Real">21380904</tobep>
@@ -158,7 +158,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Gee Girls">20924007</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Real to Real Cacophony">5969688</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="名" saoffset="647" salength="1" rank="150">
+				<subanchor sarel="-1" saname="名" saoffset="647" salength="1" rank="150">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of sovereign states">68253</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Table of the highest major summits of Colorado">16260765</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Nashwan (name)">20358706</tobep>
@@ -179,8 +179,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="School of Names">202690</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="俗" aoffset="661" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="俗" saoffset="661" salength="1" rank="184">
+			<anchor arel="-1" aname="俗" aoffset="661" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="俗" saoffset="661" salength="1" rank="184">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Custom (law)">218798</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Kimber Custom">10171631</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Custom-Fit">16929046</tobep>
@@ -254,8 +254,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="September 11 attacks opinion polls">12711627</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="花" aoffset="669" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="花" saoffset="669" salength="1" rank="82">
+			<anchor arel="-1" aname="花" aoffset="669" alength="1" ext_length="1">
+				<subanchor sarel="-1" saname="花" saoffset="669" salength="1" rank="82">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Plant sexuality">971961</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tairia Flowers">5710914</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Larry Flowers">22822155</tobep>
@@ -277,23 +277,23 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Barnaby Flowers">9336729</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Sonoran Desert wildflowers">13301982</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="花枝" saoffset="669" salength="2" rank="47">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Squid (food)">17158538</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Giant squid in popular culture">4110107</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Giant squid">215419</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Colossal Squid">20975773</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="SQUID">46178</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Squid">38011</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Loliginidae">625912</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Squid (software)">205620</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Squid (comics)">17774947</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Vampire squid">420944</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Squid (weapon)">1118544</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Glacial Squid">631166</tobep>
+				<subanchor sarel="-1" saname="花枝" saoffset="669" salength="2" rank="47">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Squid (food)">17158538</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Giant squid in popular culture">4110107</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Giant squid">215419</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Colossal Squid">20975773</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="SQUID">46178</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Squid">38011</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Loliginidae">625912</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Squid (software)">205620</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Squid (comics)">17774947</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Vampire squid">420944</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Squid (weapon)">1118544</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Glacial Squid">631166</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="墨" aoffset="679" alength="1" ext_length="2">
-				<subanchor sarel="0" saname="墨" saoffset="679" salength="1" rank="97">
+				<subanchor sarel="-1" saname="墨" saoffset="679" salength="1" rank="97">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ink (Heroes)">24370647</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Inkstick">22037304</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Virtual Ink">21622662</tobep>
@@ -310,7 +310,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ink cartridge">3787783</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Iron gall ink">659960</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="墨斗" saoffset="679" salength="2" rank="66">
+				<subanchor sarel="-1" saname="墨斗" saoffset="679" salength="2" rank="66">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Absorbent Ink">11997094</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hockey Ink!">22801728</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tattoo ink">12702150</tobep>
@@ -323,14 +323,14 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Thermochromatic ink">2146043</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="墨斗鱼" saoffset="679" salength="3" rank="18">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Orange cuttlefish">12542748</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Pharaoh Cuttlefish">8879563</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sepia vermiculata">25609023</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Common Cuttlefish">8845425</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="USS Cuttlefish (SS-171)">491951</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sepiidae">622208</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="USS B-2 (SS-11)">1460770</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sepia (genus)">9136171</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Orange cuttlefish">12542748</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Pharaoh Cuttlefish">8879563</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sepia vermiculata">25609023</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Common Cuttlefish">8845425</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="USS Cuttlefish (SS-171)">491951</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sepiidae">622208</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="USS B-2 (SS-11)">1460770</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sepia (genus)">9136171</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Broadclub Cuttlefish">8843307</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="斗" saoffset="680" salength="1" rank="112">
@@ -2650,20 +2650,20 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Type">199800</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="墨鱼丸" aoffset="1128" alength="3" ext_length="0">
-				<subanchor sarel="0" saname="墨鱼丸" saoffset="1128" salength="3" rank="0">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Orange cuttlefish">12542748</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Pharaoh Cuttlefish">8879563</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sepia vermiculata">25609023</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Common Cuttlefish">8845425</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="USS Cuttlefish (SS-171)">491951</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sepiidae">622208</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="USS B-2 (SS-11)">1460770</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sepia (genus)">9136171</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Broadclub Cuttlefish">8843307</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Fish ball">2150142</tobep>
+			<anchor arel="1" aname="墨鱼丸" aoffset="1128" alength="3" ext_length="0">
+				<subanchor sarel="1" saname="墨鱼丸" saoffset="1128" salength="3" rank="0">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Orange cuttlefish">12542748</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Pharaoh Cuttlefish">8879563</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sepia vermiculata">25609023</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Common Cuttlefish">8845425</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="USS Cuttlefish (SS-171)">491951</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sepiidae">622208</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="USS B-2 (SS-11)">1460770</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sepia (genus)">9136171</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Broadclub Cuttlefish">8843307</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Fish ball">2150142</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="鱼丸" saoffset="1129" salength="2" rank="13">
+				<subanchor sarel="-1" saname="鱼丸" saoffset="1129" salength="2" rank="13">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Fish/Fish lists">8342476</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Silver fish (fish)">25837520</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="One Fish Two Fish Red Fish Blue Fish">3028535</tobep>
@@ -2681,7 +2681,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Fish (TV series)">543480</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of lakes named Fish Lake">11190392</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="丸" saoffset="1130" salength="1" rank="138">
+				<subanchor sarel="-1" saname="丸" saoffset="1130" salength="1" rank="138">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Pillgwenlly">4796689</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Pill millipede">3622564</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bitter Pill">7504764</tobep>
@@ -2696,38 +2696,38 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Suicide pill">1816480</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="花枝丸" aoffset="1132" alength="3" ext_length="0">
-				<subanchor sarel="0" saname="花枝丸" saoffset="1132" salength="3" rank="10">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hearts and Balls">23467213</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Balls and My Word">5042230</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Game &amp; Watch games">244596</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Lots More Blues, Rags and Hollers">19895540</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of original challenges in brazilian Takeshi&apos;s Castle">24035906</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Oddball (comics)">8017301</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Guys and Balls">1050541</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Shenzhen Tong">1493022</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bizarre Foods with Andrew Zimmern">9578469</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Cups and balls">312836</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Fish ball">2150142</tobep>
+			<anchor arel="1" aname="花枝丸" aoffset="1132" alength="3" ext_length="0">
+				<subanchor sarel="1" saname="花枝丸" saoffset="1132" salength="3" rank="10">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hearts and Balls">23467213</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Balls and My Word">5042230</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Game &amp; Watch games">244596</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Lots More Blues, Rags and Hollers">19895540</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of original challenges in brazilian Takeshi&apos;s Castle">24035906</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Oddball (comics)">8017301</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Guys and Balls">1050541</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Shenzhen Tong">1493022</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bizarre Foods with Andrew Zimmern">9578469</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Cups and balls">312836</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Fish ball">2150142</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="花枝羹" aoffset="1146" alength="3" ext_length="0">
-				<subanchor sarel="0" saname="花枝羹" saoffset="1146" salength="3" rank="7">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Giant squid">215419</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hokkien mee">1173010</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Colossal Squid">20975773</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="SQUID">46178</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Squid">38011</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Iron Chef UK">27191419</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Korean dishes">13777306</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bizarre Foods with Andrew Zimmern">9578469</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Glacial Squid">631166</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Taiwanese cuisine">30528</tobep>
+			<anchor arel="-1" aname="花枝羹" aoffset="1146" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="花枝羹" saoffset="1146" salength="3" rank="7">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Giant squid">215419</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hokkien mee">1173010</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Colossal Squid">20975773</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="SQUID">46178</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Squid">38011</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Iron Chef UK">27191419</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Korean dishes">13777306</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bizarre Foods with Andrew Zimmern">9578469</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Glacial Squid">631166</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Taiwanese cuisine">30528</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="羹" saoffset="1148" salength="1" rank="65">
+				<subanchor sarel="-1" saname="羹" saoffset="1148" salength="1" rank="65">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Soup (disambiguation)">1331425</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of soups">308412</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Soup">19651298</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Soup">19651298</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Chicken soup">46461</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Soup (The Housemartins and The Beautiful South album)">14811962</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Chicken Soup for the Soul books">19066405</tobep>
@@ -2739,8 +2739,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Soup beans">2599835</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="滷" aoffset="1150" alength="1" ext_length="3">
-				<subanchor sarel="0" saname="滷" saoffset="1150" salength="1" rank="49">
+			<anchor arel="1" aname="滷" aoffset="1150" alength="1" ext_length="3">
+				<subanchor sarel="-1" saname="滷" saoffset="1150" salength="1" rank="49">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Halogen bond">14350687</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Halogen">13258</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Halogen lamp">52571</tobep>
@@ -2751,28 +2751,28 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Halogen (band)">613428</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Red cooking">6300703</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="滷水" saoffset="1150" salength="2" rank="16">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Master stock">11197652</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Beverly Brine">16034524</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Droitwich Spa">151934</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Brine (disambiguation)">16230091</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Brine lake">2132497</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Salty Brine">26168073</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Brine pool">7747262</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Brine">70663</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Brine, Corp.">4846168</tobep>
+				<subanchor sarel="1" saname="滷水" saoffset="1150" salength="2" rank="16">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Master stock">11197652</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Beverly Brine">16034524</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Droitwich Spa">151934</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Brine (disambiguation)">16230091</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Brine lake">2132497</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Salty Brine">26168073</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Brine pool">7747262</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Brine">70663</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Brine, Corp.">4846168</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="滷水墨魚" saoffset="1150" salength="4" rank="3">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Orange cuttlefish">12542748</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Chinese dishes">13698810</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Common Cuttlefish">8845425</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="USS Cuttlefish">1460980</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sepiidae">622208</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Anomalocaridid">106060</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Paintpot Cuttlefish">5103247</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sepia (genus)">9136171</tobep>
+				<subanchor sarel="1" saname="滷水墨魚" saoffset="1150" salength="4" rank="3">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Orange cuttlefish">12542748</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Chinese dishes">13698810</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Common Cuttlefish">8845425</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="USS Cuttlefish">1460980</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sepiidae">622208</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Anomalocaridid">106060</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Paintpot Cuttlefish">5103247</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sepia (genus)">9136171</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="水" saoffset="1151" salength="1" rank="81">
+				<subanchor sarel="-1" saname="水" saoffset="1151" salength="1" rank="81">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Water/Water news">3276706</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Water-in-water emulsion">12282627</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Properties of water">24027000</tobep>
@@ -2793,8 +2793,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mercury (planet)">19694</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="西" aoffset="1160" alength="1" ext_length="5">
-				<subanchor sarel="0" saname="西" saoffset="1160" salength="1" rank="129">
+			<anchor arel="1" aname="西" aoffset="1160" alength="1" ext_length="5">
+				<subanchor sarel="-1" saname="西" saoffset="1160" salength="1" rank="129">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="2009 Spanish Grand Prix">22037370</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="West Heath, West Midlands">845070</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="West Hamlin, West Virginia">138464</tobep>
@@ -2816,7 +2816,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="West Africa">67393</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="West (surname)">12875334</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="西班牙" saoffset="1160" salength="3" rank="17">
+				<subanchor sarel="-1" saname="西班牙" saoffset="1160" salength="3" rank="17">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Casasola, Spain">13155434</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Spain">26667</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Royal Spanish Football Federation">3846799</tobep>
@@ -2833,14 +2833,14 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:City of Port of Spain/Port of Spain news">27553387</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Spanish Empire">303062</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="西班牙海鮮飯" saoffset="1160" salength="6" rank="2">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="De Club van Sinterklaas">7549687</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Valencian cuisine">3166349</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Jambalaya">358540</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Arròs negre">2067167</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Paella">47630</tobep>
+				<subanchor sarel="1" saname="西班牙海鮮飯" saoffset="1160" salength="6" rank="2">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="De Club van Sinterklaas">7549687</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Valencian cuisine">3166349</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Jambalaya">358540</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Arròs negre">2067167</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Paella">47630</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="班" saoffset="1161" salength="1" rank="127">
+				<subanchor sarel="-1" saname="班" saoffset="1161" salength="1" rank="127">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of destroyer classes">429025</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of North American broadcast station classes">944836</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of United Kingdom locations: J">3785727</tobep>
@@ -2861,7 +2861,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Classé">2847631</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="CLASS">2341147</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="牙" saoffset="1162" salength="1" rank="126">
+				<subanchor sarel="-1" saname="牙" saoffset="1162" salength="1" rank="126">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Shark tooth">12194830</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tooth eruption">9046614</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tooth (human)">68756</tobep>
@@ -2876,7 +2876,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Deciduous teeth">1732771</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Teeth (film)">21132240</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="飯" saoffset="1165" salength="1" rank="83">
+				<subanchor sarel="-1" saname="飯" saoffset="1165" salength="1" rank="83">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Amy Rice">27440014</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Rice Owls">8886023</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tony Rice (Tony Rice album)">24291864</tobep>
@@ -2893,8 +2893,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Rice University">25813</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="使用" aoffset="1170" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="使用" saoffset="1170" salength="2" rank="204">
+			<anchor arel="-1" aname="使用" aoffset="1170" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="使用" saoffset="1170" salength="2" rank="204">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Land use, land-use change and forestry">4024695</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Control of fire by early humans">14205251</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Land use">56309</tobep>
@@ -2912,8 +2912,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Use case">300006</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="殼" aoffset="1185" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="殼" saoffset="1185" salength="1" rank="111">
+			<anchor arel="-1" aname="殼" aoffset="1185" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="殼" saoffset="1185" salength="1" rank="111">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Shell (computing)">2281397</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Shell Oil Company">468593</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Exoskeleton">145424</tobep>
@@ -2922,7 +2922,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Royal Dutch Shell">23409980</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Shell Turbo Chargers">4092880</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Shell bank">4777555</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seashell">80849</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Seashell">80849</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Shell LiveWIRE">23928848</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="On shell and off shell">866423</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Unix shell">32035</tobep>
@@ -2931,7 +2931,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="碳" aoffset="1188" alength="1" ext_length="2">
-				<subanchor sarel="0" saname="碳" saoffset="1188" salength="1" rank="43">
+				<subanchor sarel="-1" saname="碳" saoffset="1188" salength="1" rank="43">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Carbon monoxide">6136</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Carbon County, Pennsylvania">91972</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Carbon-11">5276923</tobep>
@@ -2946,7 +2946,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Reinforced carbon-carbon">1394398</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Carbon County, Wyoming">90913</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="碳酸" saoffset="1188" salength="2" rank="54">
+				<subanchor sarel="-1" saname="碳酸" saoffset="1188" salength="2" rank="54">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Carbonic anhydrase">434826</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Bicarbonate">3982</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Acetazolamide">366662</tobep>
@@ -3225,8 +3225,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Domain">47714</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="內" aoffset="1230" alength="1" ext_length="2">
-				<subanchor sarel="0" saname="內" saoffset="1230" salength="1" rank="215">
+			<anchor arel="-1" aname="內" aoffset="1230" alength="1" ext_length="2">
+				<subanchor sarel="-1" saname="內" saoffset="1230" salength="1" rank="215">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="The Covenant, The Sword, and the Arm of the Lord">1851602</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Shen Kuo">1102000</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Appenzell Innerrhoden">318487</tobep>
@@ -3245,7 +3245,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="The Faster the Speed, the Bigger the Mess">13408549</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Japan">15573</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="內分泌" saoffset="1230" salength="3" rank="33">
+				<subanchor sarel="-1" saname="內分泌" saoffset="1230" salength="3" rank="33">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Endocrine gland">1223446</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Multiple endocrine neoplasia type 1">2574340</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Endocrine Research">25879568</tobep>
@@ -3256,7 +3256,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Multiple endocrine neoplasia type 2">2574378</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Endocrine system">9312</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="分" saoffset="1231" salength="1" rank="135">
+				<subanchor sarel="-1" saname="分" saoffset="1231" salength="1" rank="135">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of AFL Minor Premiers">24027267</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Minute">19372</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Points, West Virginia">2548396</tobep>
@@ -3279,8 +3279,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of extreme points lists">20089853</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="更" aoffset="1236" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="更" saoffset="1236" salength="1" rank="208">
+			<anchor arel="-1" aname="更" aoffset="1236" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="更" saoffset="1236" salength="1" rank="208">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mòoré language">771783</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Thomas More">30479</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="More! More! More!">21003392</tobep>
@@ -3298,8 +3298,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Thomas More (disambiguation)">24279779</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="多" aoffset="1242" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="多" saoffset="1242" salength="1" rank="203">
+			<anchor arel="-1" aname="多" aoffset="1242" alength="1" ext_length="1">
+				<subanchor sarel="-1" saname="多" saoffset="1242" salength="1" rank="203">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mòoré language">771783</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Thomas More">30479</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="More! More! More!">21003392</tobep>
@@ -3316,7 +3316,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Epistle to Titus">9953</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Thomas More (disambiguation)">24279779</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="多糖" saoffset="1242" salength="2" rank="26">
+				<subanchor sarel="-1" saname="多糖" saoffset="1242" salength="2" rank="26">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Pneumococcal polysaccharide vaccine">1763624</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Hib vaccine">12947407</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Capsular-polysaccharide-transporting ATPase">14337354</tobep>
@@ -3327,7 +3327,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Polysaccharide Peptide">6197572</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="NmVac4-A/C/Y/W-135 – DT">20754169</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="糖" saoffset="1243" salength="1" rank="56">
+				<subanchor sarel="-1" saname="糖" saoffset="1243" salength="1" rank="56">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sugar">27712</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sugar, Sugar">2549928</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sugar Sugar, Inc">8913245</tobep>
@@ -3347,7 +3347,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="實" aoffset="1246" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="實" saoffset="1246" salength="1" rank="147">
+				<subanchor sarel="-1" saname="實" saoffset="1246" salength="1" rank="147">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Real Real Real">12302593</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Real (hypermarket)">8484200</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Spanish football champions">20302096</tobep>
@@ -3402,12 +3402,12 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Songbird: Rare Tracks and Forgotten Gems">13232830</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="小鼠" aoffset="1251" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="小鼠" saoffset="1251" salength="2" rank="37">
+			<anchor arel="-1" aname="小鼠" aoffset="1251" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="小鼠" saoffset="1251" salength="2" rank="37">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Optical mouse">171336</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Wełmice">21363314</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Chotěmice">24076030</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mouse">18845</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mouse">18845</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Peromyscus">1166759</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Brush Mouse">12175167</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Čímice">24052859</tobep>
@@ -3419,14 +3419,14 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Muroidea">495263</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mouse (computing)">7056</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="鼠" saoffset="1252" salength="1" rank="76">
+				<subanchor sarel="-1" saname="鼠" saoffset="1252" salength="1" rank="76">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="3 Deep (group)">17322275</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Murinae">1305118</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="MOUSE">5625793</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="The Town Mouse and the Country Mouse">4244060</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mouse (disambiguation)">3433674</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mouse (manga)">5762479</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mouse">18845</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Mouse">18845</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Apple Mighty Mouse">2363379</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="The Country Mouse and the City Mouse Adventures">10702719</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sigmodontinae">1392575</tobep>
@@ -3541,8 +3541,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Nevada-California Power Company Substation and Auxiliary Power Building">22846460</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="市" aoffset="1359" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="市" saoffset="1359" salength="1" rank="88">
+			<anchor arel="-1" aname="市" aoffset="1359" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="市" saoffset="1359" salength="1" rank="88">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Kansas City City Hall">10062258</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Kelsey City City Hall">7324814</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Tainan">23026062</tobep>
@@ -3565,8 +3565,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of county routes in Hudson County, New Jersey">12540535</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="面" aoffset="1360" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="面" saoffset="1360" salength="1" rank="130">
+			<anchor arel="-1" aname="面" aoffset="1360" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="面" saoffset="1360" salength="1" rank="130">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Surface (band)">3142596</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Plane (geometry)">84029</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Surface-to-surface missile">1483499</tobep>
@@ -3584,21 +3584,21 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Surface modification">486525</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="小菜" aoffset="1365" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="小菜" saoffset="1365" salength="2" rank="35">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Dish">668126</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Nasi Bogana">26130953</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Cassava-based dishes">22527511</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Side dish">2530489</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="House dish">25228021</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Feijoada">623596</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Fried egg">294800</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Inside Dish">1599950</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Dish!">22352352</tobep>
+			<anchor arel="1" aname="小菜" aoffset="1365" alength="2" ext_length="0">
+				<subanchor sarel="1" saname="小菜" saoffset="1365" salength="2" rank="35">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Dish">668126</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Nasi Bogana">26130953</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Cassava-based dishes">22527511</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Side dish">2530489</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="House dish">25228021</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Feijoada">623596</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Fried egg">294800</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Inside Dish">1599950</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Dish!">22352352</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="鮑" aoffset="1372" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="鮑" saoffset="1372" salength="1" rank="96">
+			<anchor arel="1" aname="鮑" aoffset="1372" alength="1" ext_length="1">
+				<subanchor sarel="-1" saname="鮑" saoffset="1372" salength="1" rank="96">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Pleurotomariacea">21040957</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Abalone Alliance">4947810</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Concholepas concholepas">16825369</tobep>
@@ -3610,21 +3610,21 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Black abalone">606466</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="White abalone">8939965</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="鮑魚" saoffset="1372" salength="2" rank="14">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Pleurotomariacea">21040957</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Abalone Alliance">4947810</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Concholepas concholepas">16825369</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Northern abalone">12655556</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Red abalone">13724183</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Abalone (molecular mechanics)">22497840</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Abalone (board game)">43277</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Abalone">1300</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Black abalone">606466</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="White abalone">8939965</tobep>
+				<subanchor sarel="1" saname="鮑魚" saoffset="1372" salength="2" rank="14">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Pleurotomariacea">21040957</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Abalone Alliance">4947810</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Concholepas concholepas">16825369</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Northern abalone">12655556</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Red abalone">13724183</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Abalone (molecular mechanics)">22497840</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Abalone (board game)">43277</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Abalone">1300</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Black abalone">606466</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="White abalone">8939965</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="沙" aoffset="1374" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="沙" saoffset="1374" salength="1" rank="110">
+			<anchor arel="1" aname="沙" aoffset="1374" alength="1" ext_length="1">
+				<subanchor sarel="-1" saname="沙" saoffset="1374" salength="1" rank="110">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sha (comics)">22131886</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sha (singer)">9691474</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Saudi Arabia">349303</tobep>
@@ -3644,20 +3644,20 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="NHS strategic health authority">893392</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Sha">596906</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="沙拉" saoffset="1374" salength="2" rank="48">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Waldorf salad">198466</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Salad cream">2590592</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Salad">61950</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Salad Bowl (game)">1259970</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Salad Days">17378814</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Salad (band)">3174708</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Michigan salad">14650947</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Potato salad">199795</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Greek salad">1034458</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of salads">22690959</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Salad Fingers">1037668</tobep>
+				<subanchor sarel="1" saname="沙拉" saoffset="1374" salength="2" rank="48">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Waldorf salad">198466</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Salad cream">2590592</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Salad">61950</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Salad Bowl (game)">1259970</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Salad Days">17378814</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Salad (band)">3174708</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Michigan salad">14650947</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Potato salad">199795</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Greek salad">1034458</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of salads">22690959</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Salad Fingers">1037668</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="拉" saoffset="1375" salength="1" rank="140">
+				<subanchor sarel="-1" saname="拉" saoffset="1375" salength="1" rank="140">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Pull quote">3067474</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ra">19230848</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Pull-up resistor">1629621</tobep>
@@ -3675,8 +3675,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Latin America">18524</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="墨西哥" aoffset="1386" alength="3" ext_length="0">
-				<subanchor sarel="0" saname="墨西哥" saoffset="1386" salength="3" rank="15">
+			<anchor arel="-1" aname="墨西哥" aoffset="1386" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="墨西哥" saoffset="1386" salength="3" rank="15">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Index of New Mexico-related articles">17345044</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:New Mexico/New Mexico News">15189576</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Mexico/history of Mexico">12127344</tobep>
@@ -3696,7 +3696,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Mexico/July in the history of Mexico">12126805</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Portal:Mexico/History of Mexico">12127296</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="哥" saoffset="1388" salength="1" rank="189">
+				<subanchor sarel="-1" saname="哥" saoffset="1388" salength="1" rank="189">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Big Brother (UK) shows">11748792</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Brother to Brother">6493268</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Brother Industries">1281073</tobep>
@@ -3806,8 +3806,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="List of Korean musicians">933390</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="章" aoffset="1546" alength="1" ext_length="1">
-				<subanchor sarel="0" saname="章" saoffset="1546" salength="1" rank="172">
+			<anchor arel="1" aname="章" aoffset="1546" alength="1" ext_length="1">
+				<subanchor sarel="-1" saname="章" saoffset="1546" salength="1" rank="172">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="DJ Screw">745837</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Chapter">994883</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Zhang (surname)">304061</tobep>
@@ -3825,18 +3825,18 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Lucius Cornelius Sulla">239672</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Emperor Zhang of Han">343319</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="章鱼" saoffset="1546" salength="2" rank="22">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Octopus (The Human League album)">6370556</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Octopus (disambiguation)">1169024</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Octopus (Gentle Giant album)">1783780</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Octopus (genus)">4889202</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Octopus Holdings Limited">12215046</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Octopus (yacht)">865780</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Common Octopus">10129055</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Octopus person">10200027</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Octopus card">267624</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Octopus (ride)">5877475</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Octopus">22780</tobep>
+				<subanchor sarel="1" saname="章鱼" saoffset="1546" salength="2" rank="22">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Octopus (The Human League album)">6370556</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Octopus (disambiguation)">1169024</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Octopus (Gentle Giant album)">1783780</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Octopus (genus)">4889202</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Octopus Holdings Limited">12215046</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Octopus (yacht)">865780</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Common Octopus">10129055</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Octopus person">10200027</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Octopus card">267624</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Octopus (ride)">5877475</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Octopus">22780</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="参考资料" aoffset="1633" alength="4" ext_length="0">
