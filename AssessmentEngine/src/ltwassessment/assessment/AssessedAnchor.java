@@ -57,14 +57,17 @@ public class AssessedAnchor extends IndexedAnchor {
 		int unassessedLinks = 0;
 		
 		for (Bep link : getBeps()) {
-			if (link.getRel() == Bep.UNASSESSED)
+			int rel = link.getRel();
+			if ( rel == Bep.UNASSESSED)
 				++unassessedLinks;
-			else if (link.getRel() == Bep.RELEVANT)
+			else if (rel == Bep.RELEVANT)
 				newStatus = Bep.RELEVANT;
 		}
 		
 		if (unassessedLinks == 0) {
 			finished = ASSESSMENT_FINISHED_YES;
+			if (newStatus == Bep.UNASSESSED)
+				newStatus = Bep.IRRELEVANT;
 		}
 		else {
 			newStatus = Bep.UNASSESSED;
