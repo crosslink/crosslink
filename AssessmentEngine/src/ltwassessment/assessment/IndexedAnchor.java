@@ -334,13 +334,14 @@ public class IndexedAnchor extends Anchor {
 			int rel = status; //Bep.IRRELEVANT;
 			boolean hasRelevantLink = false;
 			
-//			if (offset == 870)
+//			if (offset == 941 || name.equals("平民"))
 //				System.out.println("Stop here");
 			
 			for (AssessedAnchor subanchor : getChildrenAnchors()) {
 				if (subanchor.checkStatus() == ASSESSMENT_FINISHED_NO) {
 	//				finished = ASSESSMENT_FINISHED_NO;
 					rel = Bep.UNASSESSED;
+					hasRelevantLink = true;
 					break;
 				}
 				else {

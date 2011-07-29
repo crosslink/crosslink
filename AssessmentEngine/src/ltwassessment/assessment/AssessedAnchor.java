@@ -170,11 +170,13 @@ public class AssessedAnchor extends IndexedAnchor {
 	}
 	
 	public void markAllLinksIrrevlent() {
-		for (Bep link : getBeps()) {
-			if (link.getRel() != Bep.IRRELEVANT) {
+		Bep link = null;
+		for (int i = 0; i < getBeps().size(); ++i) {
+			link = getBeps().get(i);
+//			if (link.getRel() != Bep.IRRELEVANT) {
 				link.setRel(Bep.IRRELEVANT);
-				PoolerManager.getInstance().getPoolUpdater().updateTopicAnchorLinkRel(link);
-			}
+				PoolerManager.getPoolUpdater().updateTopicAnchorLinkRel(link);
+//			}
 		}
 	}
 }
