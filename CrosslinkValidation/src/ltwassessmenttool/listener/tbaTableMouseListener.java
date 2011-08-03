@@ -9,7 +9,7 @@ import java.util.Vector;
 import javax.swing.JTable;
 import javax.swing.JTextPane;
 
-import ltwassessment.parsers.resourcesManager;
+import ltwassessment.parsers.ResourcesManager;
 import ltwassessment.utility.AttributiveCellRenderer;
 import ltwassessment.utility.PaneTableIndexing;
 import ltwassessment.utility.tbaTxtPaneManager;
@@ -19,7 +19,7 @@ import ltwassessment.utility.tbaTxtPaneManager;
  */
 public class tbaTableMouseListener extends MouseAdapter {
 
-    private resourcesManager rscManager;
+    private ResourcesManager rscManager;
     private tbaTxtPaneManager txtPManager;
     private PaneTableIndexing tbaTableIndexing;
     private JTextPane topicTxtPane;
@@ -51,7 +51,7 @@ public class tbaTableMouseListener extends MouseAdapter {
         this.myTBATable = tbaTable;
         this.poolIncomingData = poolIncomingData;
         // declare External Classes
-        rscManager = resourcesManager.getInstance();
+        rscManager = ResourcesManager.getInstance();
         txtPManager = new tbaTxtPaneManager();
         // indexing
         TBAIndice = new Hashtable<String, String[]>();
