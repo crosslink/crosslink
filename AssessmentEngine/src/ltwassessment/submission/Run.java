@@ -132,8 +132,18 @@ public class Run {
                 LinkedAnchorList anchors = topic.getAnchors();
                 for (int k = 0; k < anchorNodeList.getLength(); k++) {
                     Element anchorElmn = (Element) anchorNodeList.item(k);
-                    aOffset = Integer.parseInt(anchorElmn.getAttribute( offsetAttributeName));
-                    aLength = Integer.parseInt(anchorElmn.getAttribute(lengthAttributeName));
+                    try {
+                    	aOffset = Integer.parseInt(anchorElmn.getAttribute(offsetAttributeName));
+                    }
+                    catch (Exception ex) {
+                    	aOffset = 0;
+                    }
+                    try {
+                    	aLength = Integer.parseInt(anchorElmn.getAttribute(lengthAttributeName));
+                    }
+                    catch (Exception ex) {
+                    	aLength = 0;
+                    }
                     String anchorName = anchorElmn.getAttribute("name");
                     
                     if (convertToTextOffset) {
@@ -174,13 +184,17 @@ public class Run {
                                 String target_lang = toBepElmn.getAttribute("lang");
                                 String target_title = toBepElmn.getAttribute("title");
 
-                                String tbOffset = toBepElmn.getAttribute("bep_offset");
+                                String tbOffset = toBepElmn.getAttribute("bep_offset").trim();
+                                if (tbOffset.length() == 0)
+                                	tbOffset = "0";
                                 Node tbXmlFileIDTextNode = toBepElmn.getFirstChild();
-                                String tbFileID = tbXmlFileIDTextNode.getTextContent();
-                                
-                                //anchorToBEPV.add(new String[]{tbFileID, tbOffset, target_lang, target_title});
-                                target = new Target(target_lang, target_title, tbFileID, Integer.parseInt(tbOffset));
-                                anchor.insertTarget(target);
+                                if (tbXmlFileIDTextNode != null) {
+	                                String tbFileID = tbXmlFileIDTextNode.getTextContent();
+	                                
+	                                //anchorToBEPV.add(new String[]{tbFileID, tbOffset, target_lang, target_title});
+	                                target = new Target(target_lang, target_title, tbFileID, Integer.parseInt(tbOffset));
+	                                anchor.insertTarget(target);
+                                }
                             }
                         }
 //                        anchorBepsHT.put(anchorKey, anchorToBEPV);
