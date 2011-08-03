@@ -199,11 +199,11 @@ public class Anchor {
 				reform = XML.unXMLify(reform);
 //				reform = XML2TXT.getInstance().cleanTag(FOLTXTMatcher.parseXmlText(reform));
 			}
-			valid = reform.equals(name);
+			valid = reform.equalsIgnoreCase(name);
 			if (!valid) {
 				String secondReform = reform.replaceAll("\\s", "");
 				String secondName = name.replaceAll("\\s", "");
-				valid = secondReform.equals(secondName);
+				valid = secondReform.equalsIgnoreCase(secondName);
 			}
 		}
 		
@@ -218,7 +218,7 @@ public class Anchor {
 			else {
 				if ((SHOW_MESSAGE_ERROR & showMessage) == SHOW_MESSAGE_ERROR) {
 		 			message.append(ANCHOR_CHECK_STATUS_ERROR);
-		 			message.append(". Got \"" + name + "\" from topic instead");
+		 			message.append(". Got \"" + result + "\" from topic instead");
 		 			System.err.println(message);
 				}
 			}

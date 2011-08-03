@@ -178,7 +178,7 @@ is divided into following sections:
         </condition>
         <property name="javadoc.encoding.used" value="${source.encoding}"/>
         <property name="includes" value="**"/>
-        <property name="excludes" value=""/>
+        <property name="excludes" value="crosslink/evaluationtool/EvaluationUI.java"/>
         <property name="do.depend" value="false"/>
         <condition property="do.depend.true">
             <istrue value="${do.depend}"/>
@@ -615,7 +615,7 @@ is divided into following sections:
     <target depends="init,deps-jar,-pre-pre-compile" name="-do-compile-single">
         <fail unless="javac.includes">Must select some files in the IDE or set javac.includes</fail>
         <j2seproject3:force-recompile/>
-        <j2seproject3:javac excludes="" gensrcdir="${build.generated.sources.dir}" includes="${javac.includes}" sourcepath="${src.dir}"/>
+        <j2seproject3:javac excludes="crosslink/evaluationtool/EvaluationUI.java" gensrcdir="${build.generated.sources.dir}" includes="${javac.includes}" sourcepath="${src.dir}"/>
     </target>
     <target name="-post-compile-single">
         <!-- Empty placeholder for easier customization. -->
