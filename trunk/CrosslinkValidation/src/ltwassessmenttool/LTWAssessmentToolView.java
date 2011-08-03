@@ -55,12 +55,17 @@ import javax.swing.text.StyledDocument;
 import javax.swing.SwingWorker;
 
 import ltwassessment.AppResource;
+import ltwassessment.assessment.Bep;
+import ltwassessment.assessment.IndexedAnchor;
 import ltwassessment.font.AdjustFont;
+import ltwassessment.listener.CaretListenerLabel;
+import ltwassessment.listener.linkPaneMouseListener;
+import ltwassessment.listener.topicPaneMouseListener;
 import ltwassessment.parsers.FOLTXTMatcher;
 import ltwassessment.parsers.Xml2Html;
 import ltwassessment.parsers.assessmentFormXml;
 import ltwassessment.parsers.PoolerManager;
-import ltwassessment.parsers.resourcesManager;
+import ltwassessment.parsers.ResourcesManager;
 import ltwassessment.utility.AttributiveCellRenderer;
 import ltwassessment.utility.InteractiveRenderer;
 import ltwassessment.utility.ObservableSingleton;
@@ -74,10 +79,7 @@ import ltwassessment.utility.tabTxtPaneManager;
 import ltwassessment.utility.tbaTxtPaneManager;
 import ltwassessment.validation.ValidationMessage;
 import ltwassessment.validation.Validator;
-import ltwassessmenttool.listener.CaretListenerLabel;
-import ltwassessmenttool.listener.linkPaneMouseListener;
 import ltwassessmenttool.listener.paneTableMouseListener;
-import ltwassessmenttool.listener.topicPaneMouseListener;
 
 /**
  * The main frame for the Assessment Tool
@@ -105,7 +107,7 @@ public class LTWAssessmentToolView extends FrameView {
     // -------------------------------------------------------------------------
     // For Outgoing: [0]:Anchor Name, [1]:Offset, [2]:Length
     private Vector<String> topicFileIDsV = new Vector<String>();
-    private Vector<String[]> currAnchorXMLOLPairs = new Vector<String[]>();
+    private Vector<IndexedAnchor> currAnchorXMLOLPairs = new Vector<IndexedAnchor>();
     private Vector<String[]> currAnchorSCROLPairs = new Vector<String[]>();
     private Vector<String[]> currBepXMLOffset = new Vector<String[]>();
     private Vector<String[]> currBepSCROffset = new Vector<String[]>();
@@ -117,7 +119,7 @@ public class LTWAssessmentToolView extends FrameView {
     private FOLTXTMatcher folMatcher;
     private PaneTableManager myPaneTableManager;
     private PaneTableIndexing paneTableIndexing;
-    private resourcesManager rscManager;
+    private ResourcesManager rscManager;
     private tabTxtPaneManager myTABTxtPaneManager;
     private tbaTxtPaneManager myTBATxtPaneManager;
     private highlightPainters painters;
@@ -128,9 +130,9 @@ public class LTWAssessmentToolView extends FrameView {
     //4) record Topic (incoming : topicFile) -> [0]:Offset
     private String[] afProperty = new String[4];
     private Vector<String[]> RunTopics = new Vector<String[]>();
-    private Hashtable<String, Vector<String[]>> topicAnchorsHT = new Hashtable<String, Vector<String[]>>();
+    private Hashtable<String, Vector<IndexedAnchor>> topicAnchorsHT = new Hashtable<String, Vector<IndexedAnchor>>();
     private Hashtable<String, Vector<String[]>> topicBepsHT = new Hashtable<String, Vector<String[]>>();
-    private Hashtable<String, Hashtable<String, Hashtable<String, Vector<String[]>>>> poolOutgoingData = new Hashtable<String, Hashtable<String, Hashtable<String, Vector<String[]>>>>();
+    private Hashtable<String, Hashtable<String, Hashtable<String, Vector<Bep>>>> poolOutgoingData = new Hashtable<String, Hashtable<String, Hashtable<String, Vector<Bep>>>>();
     private Hashtable<String, Hashtable<String, Vector<String[]>>> poolIncomingData = new Hashtable<String, Hashtable<String, Vector<String[]>>>();
     // -------------------------------------------------------------------------
 
@@ -184,7 +186,7 @@ public class LTWAssessmentToolView extends FrameView {
         // =====================================================================
 //        progressBar.setVisible(false);
         // =====================================================================
-        rscManager = resourcesManager.getInstance();
+        rscManager = ResourcesManager.getInstance();
         // =====================================================================
         // 0) check IF Pool XML File in
         String wikiCollectionFolder = rscManager.getWikipediaCollectionFolder();
@@ -2223,7 +2225,7 @@ public class LTWAssessmentToolView extends FrameView {
 				myPooler = PoolerManager.getInstance();
 			else {
 	    		myPooler = PoolerManager.getInstance(poolFile);
-	    		resourcesManager.pooler = myPooler;
+	    		ResourcesManager.pooler = myPooler;
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -2487,12 +2489,12 @@ public class LTWAssessmentToolView extends FrameView {
         // ---------------------------------------------------------------------
         // initialize Topic and Link Content Panels
 //        this.topicTextPane.addCaretListener(caretListenerLabel);
-        topicPaneMouseListener mtTopicPaneListener = new topicPaneMouseListener(this.topicTextPane, this.linkTextPane, this.currAnchorSCROLPairs, this.anchorBepTable, this.paneTableIndexing);
+        topicPaneMouseListener mtTopicPaneListener = new topicPaneMouseListener(this.topicTextPane, this.linkTextPane); //, this.currAnchorSCROLPairs, this.anchorBepTable, this.paneTableIndexing);
         this.topicTextPane.addMouseListener(mtTopicPaneListener);
         this.topicTextPane.addMouseMotionListener(mtTopicPaneListener);
         // ---------------------------------------------------------------------
         // set up linkPaneMouseListener()
-        linkPaneMouseListener myLPMListener = new linkPaneMouseListener(this.topicTextPane, this.linkTextPane, this.anchorBepTable);
+        linkPaneMouseListener myLPMListener = new linkPaneMouseListener(this.topicTextPane, this.linkTextPane); //, this.anchorBepTable);
         this.linkTextPane.addMouseListener(myLPMListener);
         // ---------------------------------------------------------------------
         // According to TAB-Navigation-Indices

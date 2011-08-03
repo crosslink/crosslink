@@ -26,10 +26,12 @@ import javax.swing.text.StyleConstants;
 import javax.swing.text.StyledDocument;
 
 import ltwassessment.AppResource;
+import ltwassessment.assessment.Bep;
+import ltwassessment.assessment.IndexedAnchor;
 import ltwassessment.parsers.FOLTXTMatcher;
 import ltwassessment.parsers.Xml2Html;
 import ltwassessment.parsers.PoolerManager;
-import ltwassessment.parsers.resourcesManager;
+import ltwassessment.parsers.ResourcesManager;
 import ltwassessment.utility.AttributiveCellRenderer;
 import ltwassessment.utility.highlightPainters;
 import ltwassessment.utility.PaneTableIndexing;
@@ -64,14 +66,14 @@ public class topicPaneMouseListener implements MouseInputListener {
     private boolean isOutgoingTAB = false;
     // Declair Anchor Status HashMap & Links HashMap
     HashMap<String, String> anchorSEPosAssStatusHM = new HashMap<String, String>();
-    HashMap<String, Vector<String[]>> bepFileSAVBySCRAnchorOLHM = new HashMap<String, Vector<String[]>>();
+    HashMap<String, Vector<Bep>> bepFileSAVBySCRAnchorOLHM = new HashMap<String, Vector<Bep>>();
     // Declair BEP Status HashMap & Links HashMap
     HashMap<String, String> bepSEPosAssStatusHM = new HashMap<String, String>();
     HashMap<String, Vector<String[]>> anchorFileSAVBySCRBepOLHM = new HashMap<String, Vector<String[]>>();
     // Import Extenal Classes
     private PaneTableIndexing myPaneTableIndexing;
     private PoolerManager myPooler = PoolerManager.getInstance();
-    private resourcesManager myRSCManager = resourcesManager.getInstance();
+    private ResourcesManager myRSCManager = ResourcesManager.getInstance();
     private FOLTXTMatcher myFOLMatcher = FOLTXTMatcher.getInstance();
     // Declair Highlight Painter
     highlightPainters painters = new highlightPainters();;
@@ -157,9 +159,9 @@ public class topicPaneMouseListener implements MouseInputListener {
                     activateTopicAnchorMouseListener();
                     // Outgoing: Detect Anchor Text
                     // <editor-fold defaultstate="collapsed" desc="Click to Open LinkPane & Update TAB Table">
-                    Vector<String[]> bepLinkIDOV = (Vector<String[]>) bepFileSAVBySCRAnchorOLHM.get(scrSEPosKey);
-                    String bepFileID = bepLinkIDOV.elementAt(0)[0];
-                    String bepFileOffset = bepLinkIDOV.elementAt(0)[1];
+                    Vector<Bep> bepLinkIDOV = (Vector<Bep>) bepFileSAVBySCRAnchorOLHM.get(scrSEPosKey);
+                    String bepFileID = bepLinkIDOV.elementAt(0).getFileId(); //[0];
+                    String bepFileOffset = bepLinkIDOV.elementAt(0).offsetToString(); //[1];
                     String bepXmlFilePath = myPooler.getXmlFilePathByTargetID(bepFileID, AppResource.targetLang);
                     // When Errors:
                     // bepXmlPath = afTasnCollectionErrors + " : " + myAFTask + " - " + myAFCollection
@@ -530,16 +532,16 @@ public class topicPaneMouseListener implements MouseInputListener {
         
         String myFullXmlTxt = FOLTXTMatcher.getTopicFullXmlTextByFileID(currTopicID);
 
-        HashMap<String, Vector<String[]>> aLinksHM = myPooler.getBepSetByAnchor(currTopicID);
+        HashMap<String, Vector<Bep>> aLinksHM = myPooler.getBepSetByAnchor(currTopicID);
         // Find screen OL from Xml OL for all Anchors here
         Set keySet = aLinksHM.keySet();
         Iterator thisKey = keySet.iterator();
         while (thisKey.hasNext()) {
             Object keyObj = thisKey.next();
-            Vector<String[]> myVSA = aLinksHM.get(keyObj);
-            String[] keySA = keyObj.toString().split("_");
-            String[] thisAnchorSet = new String[]{keySA[0], String.valueOf(Integer.valueOf(keySA[1]) - Integer.valueOf(keySA[0])), keySA[2]};
-            String[] scrAnchorPosSA = myFOLMatcher.getSCRAnchorPosSA(topicTextPane, currTopicID, thisAnchorSet, myFullXmlTxt, AppResource.sourceLang);
+            Vector<Bep> myVSA = aLinksHM.get(keyObj);
+//            String[] keySA = keyObj.toString().split("_");
+//            IndexedAnchor thisAnchorSet = new String[]{keySA[0], String.valueOf(Integer.valueOf(keySA[1]) - Integer.valueOf(keySA[0])), keySA[2]};
+            String[] scrAnchorPosSA = myFOLMatcher.getSCRAnchorPosSA(topicTextPane, currTopicID, myVSA.get(0).getAssociatedAnchor().getParent(), myFullXmlTxt, AppResource.sourceLang);
             String mySCRAnchorPos = scrAnchorPosSA[1] + "_" + scrAnchorPosSA[2];
             bepFileSAVBySCRAnchorOLHM.put(mySCRAnchorPos, myVSA);
         }

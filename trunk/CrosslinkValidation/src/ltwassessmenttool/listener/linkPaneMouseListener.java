@@ -8,7 +8,7 @@ import javax.swing.JTable;
 import javax.swing.JTextPane;
 import javax.swing.event.MouseInputListener;
 
-import ltwassessment.parsers.resourcesManager;
+import ltwassessment.parsers.ResourcesManager;
 import ltwassessment.utility.AttributiveCellRenderer;
 import ltwassessment.utility.PaneTableIndexing;
 import ltwassessment.utility.tabTxtPaneManager;
@@ -26,7 +26,7 @@ public class linkPaneMouseListener implements MouseInputListener {
     private JTable myPaneTable;
     private Vector<String> topicIDsSA;
     // import External Classes
-    private resourcesManager myRSCManager;
+    private ResourcesManager myRSCManager;
     private tabTxtPaneManager myTABTxtPaneManager;
     private tbaTxtPaneManager myTBATxtPaneManager;
     private PaneTableIndexing myPaneTableIndexing;
@@ -48,7 +48,7 @@ public class linkPaneMouseListener implements MouseInputListener {
         this.myLinkPane = myLinkPane;
         this.myPaneTable = paneTable;
         
-        myRSCManager = resourcesManager.getInstance();
+        myRSCManager = ResourcesManager.getInstance();
         myTABTxtPaneManager = new tabTxtPaneManager();
         myTBATxtPaneManager = new tbaTxtPaneManager();
 

@@ -9,8 +9,9 @@ import java.util.Vector;
 import javax.swing.JTable;
 import javax.swing.JTextPane;
 
+import ltwassessment.assessment.Bep;
 import ltwassessment.parsers.PoolerManager;
-import ltwassessment.parsers.resourcesManager;
+import ltwassessment.parsers.ResourcesManager;
 import ltwassessment.utility.AttributiveCellRenderer;
 import ltwassessment.utility.PaneTableIndexing;
 import ltwassessment.utility.tabTxtPaneManager;
@@ -24,7 +25,7 @@ public class paneTableMouseListener extends MouseAdapter {
     private final String sysPropertyKey = "isTABKey";
     private final String sysPropertyIsTopicWikiKey = "isTopicWikipedia";
     private final String sysPropertyIsLinkWikiKey = "isLinkWikipedia";
-    private resourcesManager rscManager;
+    private ResourcesManager rscManager;
     private tabTxtPaneManager tabSManager;
     private tbaTxtPaneManager tbaSManager;
     private PaneTableIndexing tabTableIndexing;
@@ -33,7 +34,7 @@ public class paneTableMouseListener extends MouseAdapter {
     private JTextPane topicTxtPane;
     private JTextPane linkTxtPane;
     private JTable myPaneTable;
-    private Hashtable<String, Hashtable<String, Hashtable<String, Vector<String[]>>>> poolOutgoingData;
+    private Hashtable<String, Hashtable<String, Hashtable<String, Vector<Bep>>>> poolOutgoingData;
     private Hashtable<String, Hashtable<String, Vector<String[]>>> poolIncomingData;
     private Hashtable<String, String[]> TABIndice;
     private Hashtable<String, String[]> tabNAVIndice;
@@ -66,7 +67,7 @@ public class paneTableMouseListener extends MouseAdapter {
         this.linkTxtPane = linkTextPane;
         this.myPaneTable = paneTable;
         // declare External Classes
-        this.rscManager = resourcesManager.getInstance();
+        this.rscManager = ResourcesManager.getInstance();
         this.myRunsPooler = PoolerManager.getInstance();
 
         this.isTAB = Boolean.valueOf(System.getProperty(sysPropertyKey));
@@ -86,7 +87,7 @@ public class paneTableMouseListener extends MouseAdapter {
         tabNAVIndice = tbaTableIndexing.getRowNAVIndices();
     }
 
-    private void indexTABData(Hashtable<String, Hashtable<String, Hashtable<String, Vector<String[]>>>> poolOutgoingData) {
+    private void indexTABData(Hashtable<String, Hashtable<String, Hashtable<String, Vector<Bep>>>> poolOutgoingData2) {
         // Indexing Format:
         // TopicID(25640), thisPoolAnchorSet(1794_16), thisAnchorSet(1794_8), thisBEPSet(1385_1296879)
         int rowCounter = 0;
@@ -98,7 +99,7 @@ public class paneTableMouseListener extends MouseAdapter {
         Vector<String> myTopicIDsV = new Vector<String>();
         Hashtable<String, Vector<String>> myTopicAnchorOLHT = new Hashtable<String, Vector<String>>();
         Vector<String> myAnchorOLV = new Vector<String>();
-        Enumeration topicKeyEnu = poolOutgoingData.keys();
+        Enumeration topicKeyEnu = poolOutgoingData2.keys();
         while (topicKeyEnu.hasMoreElements()) {
             // Get Topic ID
             Object topicKeyObj = topicKeyEnu.nextElement();
@@ -107,7 +108,7 @@ public class paneTableMouseListener extends MouseAdapter {
             }
             // Get Anchor OL
             myAnchorOLV = new Vector<String>();
-            Hashtable<String, Hashtable<String, Vector<String[]>>> anchorBepsH = poolOutgoingData.get(topicKeyObj);
+            Hashtable<String, Hashtable<String, Vector<Bep>>> anchorBepsH = poolOutgoingData2.get(topicKeyObj);
             Enumeration anchorKeyEnu = anchorBepsH.keys();
             while (anchorKeyEnu.hasMoreElements()) {
                 Object anchorOLObj = anchorKeyEnu.nextElement();
@@ -121,18 +122,18 @@ public class paneTableMouseListener extends MouseAdapter {
         Collections.sort(myTopicIDsV);
         for (String tID : myTopicIDsV) {
             thisTopicID = tID;
-            Hashtable<String, Hashtable<String, Vector<String[]>>> anchorHT = poolOutgoingData.get(thisTopicID);
+            Hashtable<String, Hashtable<String, Vector<Bep>>> anchorHT = poolOutgoingData2.get(thisTopicID);
             Vector<String> anchorOLV = myTopicAnchorOLHT.get(thisTopicID);
             for (String aOL : anchorOLV) {
                 thisPoolAnchorSet = aOL;
-                Hashtable<String, Vector<String[]>> subAnchorHT = anchorHT.get(thisPoolAnchorSet);
+                Hashtable<String, Vector<Bep>> subAnchorHT = anchorHT.get(thisPoolAnchorSet);
                 Enumeration subAnchorKeyEnu = subAnchorHT.keys();
                 while (subAnchorKeyEnu.hasMoreElements()) {
                     Object subAnchorKeyObj = subAnchorKeyEnu.nextElement();
                     thisAnchorSet = subAnchorKeyObj.toString().trim();
-                    Vector<String[]> bepV = subAnchorHT.get(subAnchorKeyObj);
-                    for (String[] thisBepSA : bepV) {
-                        thisBEPSet = thisBepSA[0].trim() + "_" + thisBepSA[1].trim();
+                    Vector<Bep> bepV = subAnchorHT.get(subAnchorKeyObj);
+                    for (Bep thisBepSA : bepV) {
+                        thisBEPSet = thisBepSA.offsetToString() + "_" + thisBepSA.startPToString();
                         String[] tabSA = new String[]{thisTopicID, thisPoolAnchorSet, thisAnchorSet, thisBEPSet};
                         TABIndice.put(String.valueOf(rowCounter), tabSA);
                         rowCounter++;

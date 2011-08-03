@@ -7,7 +7,7 @@ import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 
 import ltwassessment.parsers.PoolerManager;
-import ltwassessment.parsers.resourcesManager;
+import ltwassessment.parsers.ResourcesManager;
 
 import org.jdesktop.application.Action;
 
@@ -16,7 +16,7 @@ import org.jdesktop.application.Action;
  */
 public class LTWAssessmentSetForm extends javax.swing.JDialog {
 
-    private resourcesManager toolRscManager = null;
+    private ResourcesManager toolRscManager = null;
     private String[] afProperty = new String[4];
     private Vector<String[]> RunTopics = new Vector<String[]>();
     private Vector<String> topicFileIDsV = new Vector<String>();
@@ -24,7 +24,7 @@ public class LTWAssessmentSetForm extends javax.swing.JDialog {
     public LTWAssessmentSetForm(java.awt.Frame parent) {
         super(parent);
         initComponents();
-        this.toolRscManager = resourcesManager.getInstance();
+        this.toolRscManager = ResourcesManager.getInstance();
         getRootPane().setDefaultButton(closeBtn);
 
         String currAFFormPath = this.toolRscManager.getPoolXMLFile();
