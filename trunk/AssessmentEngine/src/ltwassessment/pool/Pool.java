@@ -32,8 +32,12 @@ public class Pool {
 	}
 	
 	public void read(String rundir, boolean checkAnchors) {
+		File[] files = null;
 		File runDirHandler = new File(rundir);
-		File[] files = runDirHandler.listFiles();
+		if (runDirHandler.isDirectory())
+			files = runDirHandler.listFiles();
+		else
+			files = new File[] {runDirHandler};
 		
 		for (File file : files) 
 			runs.read(file, checkAnchors, sourceLang, targetLang);

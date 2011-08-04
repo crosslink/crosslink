@@ -1,5 +1,6 @@
 package ltwassessment.submission;
 
+import java.util.HashMap;
 import java.util.LinkedList;
 
 
@@ -9,9 +10,11 @@ import java.util.LinkedList;
  */
 public class LinkedAnchorList {
 	private LinkedList<Anchor> anchorList = null;
+	private HashMap<String, Anchor> anchorMap = null;
 
 	public LinkedAnchorList() {
 		anchorList = new LinkedList<Anchor> ();
+		anchorMap = new HashMap<String, Anchor>();
 	}
 
 	/*
@@ -35,6 +38,13 @@ public class LinkedAnchorList {
 	 * 
 	 */
 	public void insert(Anchor anchor) {
+		if (!anchorMap.containsKey(anchor.getName()))
+			anchorMap.put(anchor.getName(), anchor);
+		else {
+			anchorMap.get(anchor.getName()).addTargets(anchor.getTargets());
+			return;
+		}
+		
 		Anchor theOne = null;
 
 		if (anchorList.size() == 0) {
@@ -46,8 +56,8 @@ public class LinkedAnchorList {
 		boolean overlapping = false;
 		boolean addBefore = false;
 		
-        if ((anchor.getName().equals("古代") && anchor.getOffset() == 596))
-        	System.err.println("I got you!");
+//        if ((anchor.getName().equals("古代") && anchor.getOffset() == 596))
+//        	System.err.println("I got you!");
         
 		index = after(anchor.getOffset(), anchor.getLength());
 		
@@ -56,8 +66,8 @@ public class LinkedAnchorList {
 		else 
 			theOne = anchorList.get(index);
 		
-        if (theOne.getName().equals("古代")  && theOne.getOffset() == 596)
-        	System.err.println("I got you!");
+//        if (theOne.getName().equals("古代")  && theOne.getOffset() == 596)
+//        	System.err.println("I got you!");
         
 		// to see if overlapping
 		overlapping = isOverlapped(anchor, theOne);	
@@ -150,22 +160,31 @@ public class LinkedAnchorList {
 	
 	private void connectAfter(Anchor anchor, Anchor theOne) {
 		assert(anchor != theOne);
-		if (theOne.getNext() != null) {
-			anchor.setNext(theOne.getNext());
-			theOne.getNext().setPrevious(anchor);			
+		if (theOne.getOffset() < anchor.getOffset() || (anchor.getOffset() == theOne.getOffset() && theOne.getLength() < anchor.getLength())) {
+			if (theOne.getNext() != null) {
+				anchor.setNext(theOne.getNext());
+				theOne.getNext().setPrevious(anchor);			
+			}
+			anchor.setPrevious(theOne);
+			theOne.setNext(anchor);		
 		}
-		anchor.setPrevious(theOne);
-		theOne.setNext(anchor);		
+		else {
+			if (theOne.getPrevious() != null && theOne.getPrevious().getOffset() < anchor.getOffset() || (anchor.getOffset() == theOne.getPrevious().getOffset() && theOne.getPrevious().getLength() < anchor.getLength()))
+				connectAfter(anchor, theOne.getPrevious());
+			connectBefore(anchor, theOne);
+		}
 	}
 	
 	private void connectBefore(Anchor anchor, Anchor theOne) {
 		assert(anchor != theOne);
-		if (theOne.getPrevious() != null) {
-			anchor.setPrevious(theOne.getPrevious());
-			theOne.getPrevious().setNext(anchor);			
+		if (anchor.getOffset() < theOne.getOffset() || (anchor.getOffset() == theOne.getOffset() && anchor.getLength() < theOne.getLength())) {
+			if (theOne.getPrevious() != null ) {
+				anchor.setPrevious(theOne.getPrevious());
+				theOne.getPrevious().setNext(anchor);			
+			}
+			anchor.setNext(theOne);
+			theOne.setPrevious(anchor);
 		}
-		anchor.setNext(theOne);
-		theOne.setPrevious(anchor);
 	}
 
 	public void append(Anchor anchor) {
@@ -260,8 +279,9 @@ public class LinkedAnchorList {
 					
 					if (nextEnd <= offsetEnd || isOverlapped(anchor, next)) { // overlapped
 						if ((anchor.getNext() != null && (anchor.getNext() != next))) {
-							System.err.println(anchor.toString() + " has incorrect connection with next one");
+							System.err.println(anchor.toString() + ", has incorrect connection with next one");
 							connectAfter(anchor.getNext(), next);
+							nextEnd = (anchor.getNext().getOffset() + anchor.getNext().getLength());
 						}
 						connectBefore(anchor, next);
 						

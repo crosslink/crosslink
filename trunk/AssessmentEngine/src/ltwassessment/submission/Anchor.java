@@ -180,32 +180,40 @@ public class Anchor {
 
 	public boolean validate(Topic topic, int showMessage, boolean convertToTextOffset) {
 		String result = null;
+		String reform = null;
 		try {
 			if (convertToTextOffset)
 				result = topic.getAnchorWithCharacterOffset(offset, length);
 			else
 				result = topic.getAnchor(offset, length);
-		} catch (UnsupportedEncodingException e) {
-			e.printStackTrace();
-		}
-		
-		valid = result.equals(name);
-		
-		if (!valid) {
-			String reform = result;
+			
+			reform = result;
 			if (reform.contains("<") || reform.contains(">"))
 				reform = XML2TXT.getInstance().cleanTag(reform);
 			if (reform.contains("&")) {
 				reform = XML.unXMLify(reform);
 //				reform = XML2TXT.getInstance().cleanTag(FOLTXTMatcher.parseXmlText(reform));
 			}
+			
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+		}
+		
+//		valid = result.equals(name);
+//		
+//		if (!valid) {
 			valid = reform.equalsIgnoreCase(name);
 			if (!valid) {
-				String secondReform = reform.replaceAll("\\s", "");
-				String secondName = name.replaceAll("\\s", "");
-				valid = secondReform.equalsIgnoreCase(secondName);
+				if (!reform.contains("\n")) {
+					String secondReform = reform.replaceAll("\\s", "");
+					String secondName = name.replaceAll("\\s", "");
+					valid = secondReform.equalsIgnoreCase(secondName);
+				}
 			}
-		}
+//		}
+		
+		if (valid && !name.equals(reform))
+			name = reform;
 		
 		if (showMessage > SHOW_MESSAGE_NONE) {
 			StringBuffer message = new StringBuffer(String.format(ANCHOR_CHECK_MESSAGE, topic.getTitle(), topic.getId(), name, this.getOffset(), this.getLength()));
@@ -229,7 +237,7 @@ public class Anchor {
 
 	@Override
 	public String toString() {
-		return "Anchor: " + getName() + " Offset: " + getOffset();
+		return "Anchor: " + getName() + ", Offset: " + getOffset();
 	}
 	
 	public String offsetToString() {
@@ -244,5 +252,16 @@ public class Anchor {
 
 	public String extendedLengthToString() {
 		return String.valueOf(extendedLength);
+	}
+
+	public int compareTo(Anchor anchor2) {
+		if (this.getOffset() < anchor2.getOffset())
+			return -1;
+		if (this.getOffset() == anchor2.getOffset()) {
+			if (this.getLength() < anchor2.getLength())
+				return -1;
+			return 1;
+		}
+		return 1;
 	}
 }

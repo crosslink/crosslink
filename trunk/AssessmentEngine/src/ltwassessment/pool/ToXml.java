@@ -87,8 +87,8 @@ public class ToXml {
 		int offsetSofar = 0;
 		
 //		topic.getAnchors().calculateOverlappedAnchorExtensionLength();
-		topic.getAnchors().connectIfOverlapped();
-		LinkedList<Anchor> anchorList = topic.getAnchors().getAnchorList();
+//		topic.getAnchors().connectIfOverlapped();
+		LinkedList<Anchor> anchorList = topic.getAnchors(); //.getAnchorList();
 		
 		String anchorElementEnd = "\t\t\t</anchor>\n";
 		
@@ -98,20 +98,24 @@ public class ToXml {
 //		anchorToXml(pre, xmlText);
 		StringBuffer subanchorXmlText = new StringBuffer();
 		int offsetEnd = start.getOffset() + start.getLength(); // = offset + length;
-		int newOffsetEnd = 0;
+		int nextEnd = 0;
 		
 		for (int i = 1; i < anchorList.size(); ++i) {
 			anchor = anchorList.get(i);
+			nextEnd = anchor.getOffset() + anchor.getLength();
+			
+			if (anchor.getName().equals("Holy"))
+				System.err.println("Stop here");
 			
 			if (anchor.getOffset() < offsetSofar) {
 				System.err.println("Topic id:" + topic.getId() + " " + anchor.toString());
 //				throw new Exception("Incorrect anch
 			}
 			subAnchorToXml(pre, subanchorXmlText);
-			if (pre.getNext() != null && pre.getNext() == anchor) {
-				newOffsetEnd = anchor.getOffset() + anchor.getLength();
-				if (newOffsetEnd > offsetEnd)
-					offsetEnd = newOffsetEnd;
+//			if (pre.getNext() != null && pre.getNext() == anchor) {
+			if (anchor.getOffset() <= offsetEnd/* || anchor.isOverlapped(pre)*/) {		
+				if (nextEnd > offsetEnd)
+					offsetEnd = nextEnd;
 			}
 			else {
 				start.setExtendedLength(offsetEnd - start.getOffset() - start.getLength());
@@ -129,9 +133,9 @@ public class ToXml {
 			offsetSofar = pre.getOffset();
 		}
 		subAnchorToXml(anchor, subanchorXmlText);
-		newOffsetEnd = anchor.getOffset() + anchor.getLength();
-		if (newOffsetEnd > offsetEnd)
-			offsetEnd = newOffsetEnd;
+		nextEnd = anchor.getOffset() + anchor.getLength();
+		if (nextEnd > offsetEnd)
+			offsetEnd = nextEnd;
 		start.setExtendedLength(offsetEnd - start.getOffset() - start.getLength());
 		
 		anchorToXml(start, xmlText);
