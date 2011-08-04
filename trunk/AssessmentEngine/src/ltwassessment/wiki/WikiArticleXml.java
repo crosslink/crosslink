@@ -78,9 +78,9 @@ public class WikiArticleXml {
 		extractTitle(xmlFile);
 	}
 	
-	public WikiArticleXml(String id) {
-		this.id = id;
-	}
+//	public WikiArticleXml(String id) {
+//		this.id = id;
+//	}
 
 	public WikiArticleXml(String id, String name) {
 		this.id = id;

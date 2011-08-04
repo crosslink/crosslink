@@ -26,8 +26,8 @@ public class Topic extends WikiArticleXml {
 //		this.anchors = anchors;
 //	}
 
-	public Topic(String id) {
-		super(id);
+	public Topic(File file) {
+		super(file);
 		
 		load();
 	}

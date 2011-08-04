@@ -118,7 +118,7 @@ public class Assessment {
 	}
 
 
-	public void setCurrentTopicWithId(String currentTopicId) {
+	public void setCurrentTopic(File currentTopicId) {
 		setCurrentTopic(new Topic(currentTopicId));
 	}
 	

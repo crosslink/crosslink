@@ -55,10 +55,11 @@ public class XML2TXT {
 		pos = content.indexOf(TAG_START_OPEN, pre_pos);
 		if (pos > -1) {
 			sb.append(content.substring(pre_pos, pos));
-			while(pos > -1) {
-				while (content.charAt(pos) != TAG_CLOSE)
+			while(pos > -1 && pos < content.length()) {
+				while (pos < (content.length() - 1 ) && content.charAt(pos) != TAG_CLOSE)
 					++pos;
-				++pos;
+//				if (pos < content.length())
+					++pos;
 				
 				pre_pos = pos;
 				

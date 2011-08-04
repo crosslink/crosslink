@@ -15,7 +15,7 @@ import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
 import ltwassessment.utility.WildcardFiles;
-import monolink.WikiArticleXml;
+import ltwassessment.wiki.WikiArticleXml;
 
 public class WikiConvertor {
 	
@@ -62,7 +62,7 @@ public class WikiConvertor {
 	}
 	
 	protected String getContent(String file) {
-		WikiArticleXml article = new WikiArticleXml(file);
+		WikiArticleXml article = new ltwassessment.wiki.WikiArticleXml(new File(file));
 		return article.getTitle();
 	}
 
