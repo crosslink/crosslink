@@ -221,6 +221,11 @@ public class Run {
                         anchors.insert(anchor);
                     }
                 }
+                
+                /**
+                 * REMEMBER, it has to be sorted before being used
+                 */
+                anchors.sort();
 //                }
                     
 

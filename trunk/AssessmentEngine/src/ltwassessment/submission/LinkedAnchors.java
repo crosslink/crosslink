@@ -16,6 +16,8 @@ public class LinkedAnchors extends LinkedList<Anchor> {
 
 	public LinkedAnchors() {
 		super();
+		
+		anchorMap = new HashMap<String, Anchor>();
 	}
 	
 	public void insert(Anchor anchor) {

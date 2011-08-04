@@ -104,8 +104,8 @@ public class ToXml {
 			anchor = anchorList.get(i);
 			nextEnd = anchor.getOffset() + anchor.getLength();
 			
-			if (anchor.getName().equals("Holy"))
-				System.err.println("Stop here");
+//			if (anchor.getName().equals("Holy"))
+//				System.err.println("Stop here");
 			
 			if (anchor.getOffset() < offsetSofar) {
 				System.err.println("Topic id:" + topic.getId() + " " + anchor.toString());
@@ -113,7 +113,7 @@ public class ToXml {
 			}
 			subAnchorToXml(pre, subanchorXmlText);
 //			if (pre.getNext() != null && pre.getNext() == anchor) {
-			if (anchor.getOffset() <= offsetEnd/* || anchor.isOverlapped(pre)*/) {		
+			if (anchor.getOffset() < offsetEnd/* || anchor.isOverlapped(pre)*/) {		
 				if (nextEnd > offsetEnd)
 					offsetEnd = nextEnd;
 			}
