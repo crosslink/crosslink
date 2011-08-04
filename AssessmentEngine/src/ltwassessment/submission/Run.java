@@ -36,6 +36,12 @@ public class Run {
 		init();
 	}
     
+    public Run(File runFile) {
+		init();
+		
+		read(runFile, false, null, null);    	
+    }
+    
 	public Run(File runFile, String sourceLang, String targetLang) {
 		init();
 		
@@ -99,8 +105,10 @@ public class Run {
         for (int i = 0; i < titleNodeList.getLength(); i++) {
             Element titleElmn = (Element) titleNodeList.item(i);
             runName =  titleElmn.getAttribute("run-id");
-            String runSourceLang = titleElmn.getAttribute("source_lang");
-            String runTargetLang = titleElmn.getAttribute("default_lang");
+            String runSourceLang = titleElmn.getAttribute("source_lang").trim();
+            if (runSourceLang.length() == 0)
+            	runSourceLang = "en";
+            String runTargetLang = titleElmn.getAttribute("default_lang").trim();
             
             if (sourceLang == null && targetLang == null) {
 	            if (runSourceLang.length() > 0)
@@ -112,7 +120,7 @@ public class Run {
 	            	AppResource.targetLang = targetLang;
             }
             else {
-            	if (!runSourceLang.equalsIgnoreCase(sourceLang) && !runTargetLang.equalsIgnoreCase(targetLang)) {
+            	if (!runSourceLang.equalsIgnoreCase(sourceLang) || !runTargetLang.equalsIgnoreCase(targetLang)) {
             		System.err.println("Different source/target lang: " + runSourceLang + "/" + runTargetLang + " for run file " + runFile.getName());
             		break;
             	}
@@ -138,7 +146,7 @@ public class Run {
                 NodeList anchorNodeList = outgoingElmn.getElementsByTagName(afAnchorTag);
                 String anchorKey = "";
 //                    Vector<String[]> anchorToBEPV;
-                LinkedAnchorList anchors = topic.getAnchors();
+                LinkedAnchors anchors = topic.getAnchors();
                 for (int k = 0; k < anchorNodeList.getLength(); k++) {
                     Element anchorElmn = (Element) anchorNodeList.item(k);
                     try {

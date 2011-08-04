@@ -13,7 +13,7 @@ public class Topic extends WikiArticleXml {
 
 	private boolean valid = false;
 		
-	private LinkedAnchorList anchors = null;
+	private LinkedAnchors anchors = null;
 		
 	public Topic(String id, String name) {
 		super(id, name);
@@ -21,7 +21,7 @@ public class Topic extends WikiArticleXml {
 		load();
 	}
 //	
-//	public Topic(String id, LinkedAnchorList anchors) {
+//	public Topic(String id, LinkedAnchors anchors) {
 //		this.id = id;
 //		this.anchors = anchors;
 //	}
@@ -67,9 +67,9 @@ public class Topic extends WikiArticleXml {
 		return fullText.substring(offset, offset + length);
 	}
 
-	public LinkedAnchorList getAnchors() {
+	public LinkedAnchors getAnchors() {
 		if (anchors == null)
-			 anchors = new LinkedAnchorList();
+			 anchors = new LinkedAnchors();
 		return anchors;
 	}
 }
