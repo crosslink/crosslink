@@ -50,7 +50,8 @@ public class ToXml {
 	    while(i.hasNext()) {
 	    	Map.Entry me = (Map.Entry)i.next();
 	    	Target target = (Target)me.getValue();
-	    	targetToXml(target, xmlText);
+	    	if (target.exists())
+	    		targetToXml(target, xmlText);
 	    }
 //		for (Target target : anchor.getTargets())
 //			targetToXml(target, xmlText);
