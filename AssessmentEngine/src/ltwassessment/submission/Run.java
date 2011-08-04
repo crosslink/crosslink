@@ -36,10 +36,10 @@ public class Run {
 		init();
 	}
     
-	public Run(File runFile) {
+	public Run(File runFile, String sourceLang, String targetLang) {
 		init();
 		
-		read(runFile, false);
+		read(runFile, false, sourceLang, targetLang);
 	}
 	
 	public String getRunName() {
@@ -77,7 +77,7 @@ public class Run {
 		topics.put(topic.getId(), topic);
 	}
 	
-	public void read(File runFile, boolean checkAnchors) {
+	public void read(File runFile, boolean checkAnchors, String sourceLang, String targetLang) {
         boolean forValidationOrAssessment = AppResource.forValidationOrAssessment;
         String afTitleTag = forValidationOrAssessment ? "crosslink-assessment" : "crosslink-submission";
         String afTopicTag = "topic";
@@ -99,15 +99,24 @@ public class Run {
         for (int i = 0; i < titleNodeList.getLength(); i++) {
             Element titleElmn = (Element) titleNodeList.item(i);
             runName =  titleElmn.getAttribute("run-id");
-            String sourceLang = titleElmn.getAttribute("source_lang");
-            String targetLang = titleElmn.getAttribute("default_lang");
-            if (sourceLang.length() > 0)
-            	AppResource.sourceLang = sourceLang;
+            String runSourceLang = titleElmn.getAttribute("source_lang");
+            String runTargetLang = titleElmn.getAttribute("default_lang");
             
-            if (targetLang.length() == 0)
-            	System.err.println("Error: no \"default_lang\" attribute given in " + afTitleTag + " tag");
-            else
-            	AppResource.targetLang = targetLang;
+            if (sourceLang == null && targetLang == null) {
+	            if (runSourceLang.length() > 0)
+	            	AppResource.sourceLang = runSourceLang;
+	            
+	            if (targetLang.length() == 0)
+	            	System.err.println("Error: no \"default_lang\" attribute given in " + afTitleTag + " tag");
+	            else
+	            	AppResource.targetLang = targetLang;
+            }
+            else {
+            	if (!runSourceLang.equalsIgnoreCase(sourceLang) && !runTargetLang.equalsIgnoreCase(targetLang)) {
+            		System.err.println("Different source/target lang: " + runSourceLang + "/" + runTargetLang + " for run file " + runFile.getName());
+            		break;
+            	}
+            }
             
             NodeList topicNodeList = titleElmn.getElementsByTagName(afTopicTag);
             for (int j = 0; j < topicNodeList.getLength(); j++) {
@@ -153,7 +162,7 @@ public class Run {
                     	
 //                        anchorToBEPV = new Vector<String[]>();
                     Anchor anchor = new Anchor(aOffset, aLength, anchorName);
-                    if (checkAnchors == false || (checkAnchors && anchor.validate(topic, Anchor.SHOW_MESSAGE_ERROR, convertToTextOffset))) {
+                    if (checkAnchors == false || (checkAnchors && anchor.validate(topic, Anchor.SHOW_MESSAGE_NONE, convertToTextOffset))) {
                         Target target = null;
                         if (forValidationOrAssessment) {
                         	anchorKey = aOffset + "_" + aLength;
