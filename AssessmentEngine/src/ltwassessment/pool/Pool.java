@@ -20,14 +20,16 @@ public class Pool {
 	private String targetLang;
 	
 	public Pool() {
-		this.sourceLang = AppResource.targetLang;
-		this.targetLang = AppResource.sourceLang;
+		this.sourceLang = AppResource.sourceLang;
+		this.targetLang = AppResource.targetLang;
 		runs = new Run();
 	}
 	
 	public Pool(String sourceLang, String targetLang) {
 		this.sourceLang = sourceLang;
 		this.targetLang = targetLang;
+		AppResource.targetLang = this.targetLang;
+		AppResource.sourceLang = this.sourceLang; 		
 		runs = new Run();
 	}
 	
