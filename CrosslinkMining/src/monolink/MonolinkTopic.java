@@ -1,5 +1,6 @@
 package monolink;
 
+import java.io.File;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
@@ -25,7 +26,11 @@ public class MonolinkTopic extends WikiArticleXml {
 		links.add(id);
 	}
 	
-	public MonolinkTopic(String xmlFile) {
+//	public MonolinkTopic(String xmlFile) {
+//		super(xmlFile);
+//	}
+	
+	public MonolinkTopic(File xmlFile) {
 		super(xmlFile);
 	}
 }

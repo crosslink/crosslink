@@ -13,7 +13,6 @@ import ltwassessment.utility.WildcardFiles;
 
 //import org.apache.tools.bzip2.CBZip2InputStream;
 
-import com.spreada.utils.chinese.ZHConverter;
 
 /*
  * 	# the link table created from any link extraction software which produce following format

@@ -196,7 +196,7 @@ public class CrosslinkMining extends MonolinkMining {
             ++filecount;
         	try {
 	        	String inputfile = onefile.getCanonicalPath();
-	        	CrosslinkTopic topic = new CrosslinkTopic(inputfile);
+	        	CrosslinkTopic topic = new CrosslinkTopic(new File(inputfile));
 	        	if (topic.getId().equals("583701"))
 	        		System.err.println("I got you");
 	        	topics.add(topic);
@@ -205,7 +205,7 @@ public class CrosslinkMining extends MonolinkMining {
 	        	getIndirectLinks(links, topic);
 	        	
 	        	String counterPartTopicFile = findCounterPartTopic(topic);
-	        	topic.setCounterTopic(new CrosslinkTopic(counterPartTopicFile));
+	        	topic.setCounterTopic(new CrosslinkTopic(new File(counterPartTopicFile)));
 	        	ArrayList<String> directLinks = extractLinksFromTopics(counterPartTopicFile);
 	        	getDirectLinks(directLinks, topic.getCounterPart());
         	}

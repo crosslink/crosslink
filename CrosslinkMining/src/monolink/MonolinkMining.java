@@ -138,7 +138,7 @@ public class MonolinkMining {
             ++filecount;
         	try {
 	        	String inputfile = onefile.getCanonicalPath();
-	        	MonolinkTopic topic = new MonolinkTopic(inputfile);
+	        	MonolinkTopic topic = new MonolinkTopic(new File(inputfile));
 	        	topics.add(topic);
         	
 	        	ArrayList<String> directLinks = extractLinksFromTopics(inputfile);

@@ -1,5 +1,6 @@
 package crosslink;
 
+import java.io.File;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.HashSet;
@@ -15,11 +16,11 @@ public class CrosslinkTopic extends MonolinkTopic {
 	
 	private CrosslinkTopic counterPart;
 
-	public CrosslinkTopic(String xmlFile) {
+	public CrosslinkTopic(File xmlFile) {
 		super(xmlFile);
 	}
 
-	public CrosslinkTopic(String xmlFile, String counterPartXml) {
+	public CrosslinkTopic(File xmlFile, File counterPartXml) {
 		super(xmlFile);
 		
 		counterPart = new CrosslinkTopic(counterPartXml);
