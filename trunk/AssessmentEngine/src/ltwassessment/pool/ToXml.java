@@ -69,8 +69,8 @@ public class ToXml {
 		xmlText.append(String.format(targetElement, target.getBepOffset(), target.getLang(), XML.XMLify(target.getTitle()), target.getId()));
 	}
 	
-	public static void startRootElement(StringBuffer xmlText) {
-		String tagAssessment = String.format(ASSESSMENT_TAG, AppResource.targetLang, AppResource.sourceLang);
+	public static void startRootElement(StringBuffer xmlText, String sourceLang, String targetLang) {
+		String tagAssessment = String.format(ASSESSMENT_TAG, targetLang, sourceLang);
 		xmlText.append(tagAssessment);
 	}
 	

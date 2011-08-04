@@ -18,8 +18,14 @@ public class PoolManager {
 		this.validateAnchors = validateAnchors;
 	}
 
-	public void genPool(String submissionsPath, boolean splitTopic) {
-		Pool pool = new Pool();
+	public void genPool(String submissionsPath, boolean splitTopic, String langPair) {
+		Pool pool = null;
+		if (langPair != null) {
+			String[] arr = langPair.split(":");
+			pool = new Pool(arr[0], arr[1]);
+		}
+		else
+			pool = new Pool();
 		pool.read(submissionsPath, validateAnchors);
 		
 //		if (validateAnchors)
@@ -37,7 +43,10 @@ public class PoolManager {
 	}
 	
 	public static void usage() {
-		System.err.println("Usage: [-s] [-c] [-p topic_path] program submissions_path");
+		System.err.println("Usage: [-s] [-c] [-p topic_path] [-l source_lang:target_lang] program submissions_path");
+		System.err.println("		-s output will be generated in seperated files");
+		System.err.println("		-c check whether anchors have correct offset");
+		System.err.println("		-l language pair, zh:en, en:zh, en:ja, en:ko ...");
 		System.exit(-1);	
 	}
 	
@@ -52,6 +61,7 @@ public class PoolManager {
 		PoolManager manager = new PoolManager();
 		
 		String path = null;
+		String langPair = null;
 		boolean splitTopic = false;
 		
 		int param_start = 0;
@@ -77,7 +87,11 @@ public class PoolManager {
 				else if (args[i].charAt(1) == 'c' ) {
 					manager.setValidateAnchors(true);
 					++param_start;
-				}				
+				}
+				else if (args[i].charAt(1) == 'l' ) {
+					langPair = args[++i];
+					param_start += 2;
+				}
 				else
 					usage();
 			}
@@ -89,7 +103,7 @@ public class PoolManager {
 		
 		path = args[param_start];
 
-		manager.genPool(path, splitTopic);
+		manager.genPool(path, splitTopic, langPair);
 	}
 
 }

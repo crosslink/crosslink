@@ -10,13 +10,24 @@ import java.util.Map;
 import java.util.Set;
 import java.util.Vector;
 
+import ltwassessment.AppResource;
 import ltwassessment.submission.Run;
 import ltwassessment.submission.Topic;
 
 public class Pool {
 	private Run runs = null;
+	private String sourceLang;
+	private String targetLang;
 	
 	public Pool() {
+		this.sourceLang = AppResource.targetLang;
+		this.targetLang = AppResource.sourceLang;
+		runs = new Run();
+	}
+	
+	public Pool(String sourceLang, String targetLang) {
+		this.sourceLang = sourceLang;
+		this.targetLang = targetLang;
 		runs = new Run();
 	}
 	
@@ -25,13 +36,13 @@ public class Pool {
 		File[] files = runDirHandler.listFiles();
 		
 		for (File file : files) 
-			runs.read(file, checkAnchors);
+			runs.read(file, checkAnchors, sourceLang, targetLang);
 	}
 	
 	public void output(boolean splitTopic) throws Exception {
 		StringBuffer poolXml = new StringBuffer();
 		
-		ToXml.startRootElement(poolXml);
+		ToXml.startRootElement(poolXml, sourceLang, targetLang);
 		
 		Set set = runs.getTopics().entrySet();
 
@@ -46,7 +57,7 @@ public class Pool {
 				ToXml.endRootElement(poolXml);
 				output2File(poolXml, "wikipedia_pool_" + topic.getId() + ".xml");
 				poolXml.setLength(0);
-				ToXml.startRootElement(poolXml);
+				ToXml.startRootElement(poolXml, sourceLang, targetLang);
 			}
 	    }
 		ToXml.endRootElement(poolXml);
