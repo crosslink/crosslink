@@ -1,10 +1,10 @@
 package crosslink;
 
-import monolink.WikiArticleXml;
+import java.io.File;
 
-public class WikiAbstract extends WikiArticleXml {
+public class WikiAbstract extends ltwassessment.wiki.WikiArticleXml {
 
-	public WikiAbstract(String xmlFile) {
+	public WikiAbstract(File xmlFile) {
 		super(xmlFile);
 
 	}
