@@ -1,0 +1,1661 @@
+<crosslink-assessment participant-id="2273087" run-id="2273087_A2B" task="A2B" default_lang="ko" source_lang="en">
+	<collection>Chinese Wikipedia 2010 Collection</collection>
+	<collection>Japanese Wikipedia 2010 Collection</collection>
+	<collection>Korean Wikipedia 2010 Collection</collection>
+	<topic file="54912" name="Dew point">
+		<outgoinglinks>
+			<anchor arel="0" aname="TF" aoffset="31" alength="2" ext_length="0">
+				<subanchor sarel="0" saname="TF" saoffset="31" salength="2" rank="51">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="TF">161097</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Dew" aoffset="266" alength="3" ext_length="6">
+				<subanchor sarel="0" saname="Dew" saoffset="266" salength="3" rank="28">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="캐너비스">73245</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="이슬">262705</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Dew point" saoffset="266" salength="9" rank="4">
+				</subanchor>
+				<subanchor sarel="0" saname="point" saoffset="270" salength="5" rank="108">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="포인트">111780</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Atmospheric" aoffset="522" alength="11" ext_length="15">
+				<subanchor sarel="0" saname="Atmospheric" saoffset="522" salength="11" rank="101">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="대기">3720</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Atmospheric thermodynamics" saoffset="522" salength="26" rank="27">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="대기">3720</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="thermodynamics" saoffset="534" salength="14" rank="10">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="열역학">5167</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="열역학">271624</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="dew" aoffset="598" alength="3" ext_length="0">
+				<subanchor sarel="0" saname="dew" saoffset="598" salength="3" rank="15">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="이슬">262705</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="temperature" aoffset="619" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="temperature" saoffset="619" salength="11" rank="22">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="온도">3724</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="열도">56908</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="기온">215708</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="발열">506412</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="열">3729</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="체온">454586</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="parcel" aoffset="648" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="parcel" saoffset="648" salength="6" rank="93">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="패키지">420704</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="소포">48702</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="시냅틱 꾸러미 관리자">201125</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="짐">49221</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="air" aoffset="658" alength="3" ext_length="0">
+				<subanchor sarel="0" saname="air" saoffset="658" salength="3" rank="68">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="에어 (게임)">84062</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="라디오">9820</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="텔레비전">21951</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="에어뉴질랜드">117314</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="바람">107221</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="태도">338716</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="빛">20576</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="cooled" aoffset="670" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="cooled" saoffset="670" salength="6" rank="248">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="컴퓨터 냉각">257463</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="constant" aoffset="681" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="constant" saoffset="681" salength="8" rank="83">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="상수">83107</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="barometric" aoffset="690" alength="10" ext_length="9">
+				<subanchor sarel="0" saname="barometric" saoffset="690" salength="10" rank="68">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="기압">42029</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="barometric pressure" saoffset="690" salength="19" rank="0">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="대기압">13938</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="기압">42029</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="pressure" saoffset="701" salength="8" rank="30">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="전압">62378</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="압력">7755</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="마우스 클릭">157232</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="water" aoffset="715" alength="5" ext_length="6">
+				<subanchor sarel="0" saname="water" saoffset="715" salength="5" rank="29">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="바다">23282</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="오줌">128079</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="물">315</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="위 (삼국)">4156</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="용수">112753</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="water vapor" saoffset="715" salength="11" rank="0">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="수증기">3722</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="물">315</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="vapor" saoffset="721" salength="5" rank="21">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="증발">107308</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="수증기">3722</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="망상">489424</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="김">71941</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="condense" aoffset="730" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="condense" saoffset="730" salength="8" rank="20">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="응축">270741</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="condensed" aoffset="755" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="condensed" saoffset="755" salength="9" rank="125">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="농축 우라늄">106259</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="called" aoffset="774" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="called" saoffset="774" salength="6" rank="136">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="전화">77178</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="saturation" aoffset="805" alength="10" ext_length="6">
+				<subanchor sarel="0" saname="saturation" saoffset="805" salength="10" rank="5">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="채도">110068</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="saturation point" saoffset="805" salength="16" rank="6">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="포화 속으로">465869</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="극한">61103</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="associated" aoffset="844" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="associated" saoffset="844" salength="10" rank="243">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="고려대학교 관련 논란">321239</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="relative" aoffset="860" alength="8" ext_length="9">
+				<subanchor sarel="0" saname="relative" saoffset="860" salength="8" rank="176">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="친족">228627</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="relative humidity" saoffset="860" salength="17" rank="9">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="상대 평가">145963</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="습도">151021</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="humidity" saoffset="869" salength="8" rank="11">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="습도">151021</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="A" aoffset="879" alength="1" ext_length="0">
+				<subanchor sarel="0" saname="A" saoffset="879" salength="1" rank="22">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="라 (계이름)">135343</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="A">668</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="あ">74795</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="아">290543</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="А">14382</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="high" aoffset="881" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="high" saoffset="881" salength="4" rank="195">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="인간개발지수순 나라 목록">425384</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="closer" aoffset="936" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="closer" saoffset="936" salength="6" rank="44">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="행위">450294</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="Closer">353503</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="to the" aoffset="943" alength="6" ext_length="8">
+				<subanchor sarel="0" saname="to the" saoffset="943" salength="6" rank="156">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="에">290544</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="the current" saoffset="946" salength="11" rank="112">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="현재">111231</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="current" saoffset="950" salength="7" rank="85">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="현재">111231</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="air temperature" aoffset="958" alength="15" ext_length="0">
+				<subanchor sarel="0" saname="air temperature" saoffset="958" salength="15" rank="17">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="공기">107432</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="온도">3724</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="equal" aoffset="1028" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="equal" saoffset="1028" salength="5" rank="198">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="소비에트 연방의 공화국">68981</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="saturated" aoffset="1086" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="saturated" saoffset="1086" salength="9" rank="69">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="포화 속으로">465869</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="포화 지방산">465014</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="remains" aoffset="1127" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="remains" saoffset="1127" salength="7" rank="124">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="유적">140796</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="decrease" aoffset="1194" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="decrease" saoffset="1194" salength="8" rank="171">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="체중">379485</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="statistic" aoffset="1329" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="statistic" saoffset="1329" salength="9" rank="21">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="통계학">141</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="general" aoffset="1343" alength="7" ext_length="9">
+				<subanchor sarel="0" saname="general" saoffset="1343" salength="7" rank="64">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="장군">129138</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="일반 상대론">151045</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="장성군">33043</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="장">121756</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="일반의">9706</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="총">168677</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="general aviation" saoffset="1343" salength="16" rank="4">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="일반 상대론">151045</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="aviation" saoffset="1351" salength="8" rank="20">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="비행">370737</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="항공">240261</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="항공기">30040</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="항법">234714</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="pilots" aoffset="1360" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="pilots" saoffset="1360" salength="6" rank="84">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="조인">169059</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="도선사">62827</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="항공사">29411</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="calculate" aoffset="1385" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="calculate" saoffset="1385" salength="9" rank="119">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="계산">15953</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="likelihood" aoffset="1399" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="likelihood" saoffset="1399" salength="10" rank="32">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="충족 가능성 문제">150232</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="확률">108753</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="줄">90277</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="icing" aoffset="1424" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="icing" saoffset="1424" salength="5" rank="25">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="결빙">196931</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="아이싱">402418</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="fog" aoffset="1434" alength="3" ext_length="0">
+				<subanchor sarel="0" saname="fog" saoffset="1434" salength="3" rank="13">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="수증기">3722</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="김">71941</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="연무">184890</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="안개">183066</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the height" aoffset="1452" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="the height" saoffset="1452" salength="10" rank="138">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="높이">199037</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="height" saoffset="1456" salength="6" rank="50">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="높이">199037</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="of the" aoffset="1463" alength="6" ext_length="11">
+				<subanchor sarel="0" saname="of the" saoffset="1463" salength="6" rank="147">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="의">296533</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="the cloud" saoffset="1466" salength="9" rank="72">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="구름">39416</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="cloud" saoffset="1470" salength="5" rank="19">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="어둠">155509</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="먼지">304033</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="T">50685</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="홈">197394</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="구름">39416</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="cloud base" saoffset="1470" salength="10" rank="18">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="구름">39416</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="base" saoffset="1476" salength="4" rank="99">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="베이스">28089</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="베이스 (성악)">27002</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Constant" aoffset="1500" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="Constant" saoffset="1500" salength="8" rank="7">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="상수">83107</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="graph" aoffset="1616" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="graph" saoffset="1616" salength="5" rank="12">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="그래프 이론">7278</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="도">6300</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="슈테피 그라프">305948</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="회화">198390</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="문자">7239</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="그래프 (동음이의)">199040</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="그래프">33711</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="maximum" aoffset="1632" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="maximum" saoffset="1632" salength="7" rank="186">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="지상 최대의 작전">55945</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="percentage" aoffset="1640" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="percentage" saoffset="1640" salength="10" rank="90">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="백분율">91172</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="by mass" aoffset="1652" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="by mass" saoffset="1652" salength="7" rank="94">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="대량 살상 무기">333695</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="mass" saoffset="1655" salength="4" rank="18">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="질량">3336</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="exist" aoffset="1685" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="exist" saoffset="1685" salength="5" rank="128">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="존재">153057</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="at sea" aoffset="1698" alength="6" ext_length="6">
+				<subanchor sarel="0" saname="at sea" saoffset="1698" salength="6" rank="10">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="바다">23282</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="대양">34156</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="sea" saoffset="1701" salength="3" rank="62">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="바다">23282</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="sea level" saoffset="1701" salength="9" rank="10">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="해수면">438466</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="level" saoffset="1705" salength="5" rank="182">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="멀티 레벨 셀">154029</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="range" aoffset="1720" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="range" saoffset="1720" salength="5" rank="106">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="범위의 경제">198059</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="temperatures" aoffset="1729" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="temperatures" saoffset="1729" salength="12" rank="107">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="온도">3724</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="behavior" aoffset="1747" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="behavior" saoffset="1747" salength="8" rank="38">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="작용">498012</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="행동">273831</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="does" aoffset="1771" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="does" saoffset="1771" salength="4" rank="140">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="Does This Look Infected?">406326</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="DOES">181641</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="on the" aoffset="1787" alength="6" ext_length="9">
+				<subanchor sarel="0" saname="on the" saoffset="1787" salength="6" rank="142">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="에">290544</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="the presence" saoffset="1790" salength="12" rank="114">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="존재">153057</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="presence" saoffset="1794" salength="8" rank="88">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="존재">153057</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="gases" aoffset="1812" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="gases" saoffset="1812" salength="5" rank="31">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="기체">33408</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="휘발유">143619</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="방귀">146998</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="온실 기체">56795</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="가스 작동식">43036</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="기름">143986</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="천연 가스">144312</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="formation" aoffset="1830" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="formation" saoffset="1830" salength="9" rank="155">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="축구의 포메이션">172106</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="진용">419458</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="합의 형성">239817</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="열">3729</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="층">318157</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="구조">275013</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="at the" aoffset="1859" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="at the" saoffset="1859" salength="6" rank="150">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="에">290544</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="even if" aoffset="1876" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="even if" saoffset="1876" salength="7" rank="165">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="시효">79800</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the only" aoffset="1884" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="the only" saoffset="1884" salength="8" rank="132">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="유일한">89956</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="gas" aoffset="1893" alength="3" ext_length="0">
+				<subanchor sarel="0" saname="gas" saoffset="1893" salength="3" rank="24">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="기체">33408</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="GA">161085</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="타분">290338</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="조지아 주">15597</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="갈륨">51463</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="present" aoffset="1897" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="present" saoffset="1897" salength="7" rank="106">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="현재">111231</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the mole" aoffset="2007" alength="8" ext_length="9">
+				<subanchor sarel="0" saname="the mole" saoffset="2007" salength="8" rank="28">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="사마귀">78492</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="mole" saoffset="2011" salength="4" rank="13">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="간첩 행위">10080</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="사마귀">78492</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="두더지">140873</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="점">21013</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="방사제">91682</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="mole fraction" saoffset="2011" salength="13" rank="8">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="몰농도">178939</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="in the" aoffset="2040" alength="6" ext_length="4">
+				<subanchor sarel="0" saname="in the" saoffset="2040" salength="6" rank="148">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="에">290544</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="in the air" saoffset="2040" salength="10" rank="225">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="바빌론의 공중 정원">99514</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="determines" aoffset="2073" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="determines" saoffset="2073" salength="10" rank="141">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="결정">100127</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="specific" aoffset="2088" alength="8" ext_length="9">
+				<subanchor sarel="0" saname="specific" saoffset="2088" salength="8" rank="180">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="특정 위험 물질">198718</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="specific humidity" saoffset="2088" salength="17" rank="6">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="습도">151021</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="특정 위험 물질">198718</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="If" aoffset="2118" alength="2" ext_length="0">
+				<subanchor sarel="0" saname="If" saoffset="2118" salength="2" rank="20">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="IF">21258</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="temperature rises" aoffset="2125" alength="17" ext_length="0">
+				<subanchor sarel="0" saname="temperature rises" saoffset="2125" salength="17" rank="189">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="온도">3724</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="rises" saoffset="2137" salength="5" rank="249">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="혈압">9810</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="changing" aoffset="2151" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="changing" saoffset="2151" salength="8" rank="143">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="변경">445759</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="back up" aoffset="2429" alength="7" ext_length="3">
+				<subanchor sarel="0" saname="back up" saoffset="2429" salength="7" rank="14">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="백업">145166</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="up to" saoffset="2434" salength="5" rank="216">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="최대 절전 모드">186272</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="initial" aoffset="2444" alength="7" ext_length="6">
+				<subanchor sarel="0" saname="initial" saoffset="2444" salength="7" rank="178">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="초기 발생">483757</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="initial value" saoffset="2444" salength="13" rank="168">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="초기 발생">483757</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="value" saoffset="2452" salength="5" rank="93">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="가치">142929</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="가치 (경제)">143037</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="way" aoffset="2471" alength="3" ext_length="0">
+				<subanchor sarel="0" saname="way" saoffset="2471" salength="3" rank="115">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="방법">277069</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="과학적 방법">9586</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="decreasing" aoffset="2476" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="decreasing" saoffset="2476" salength="10" rank="237">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="체중">379485</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="reason" aoffset="2600" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="reason" saoffset="2600" salength="6" rank="80">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="이성">43621</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="day" aoffset="2640" alength="3" ext_length="0">
+				<subanchor sarel="0" saname="day" saoffset="2640" salength="3" rank="84">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="국군의 날">27951</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="날">39834</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="°" aoffset="2656" alength="1" ext_length="1">
+				<subanchor sarel="0" saname="°" saoffset="2656" salength="1" rank="97">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="도 (행정 구역)">6706</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="도 기호">93966</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="°F" saoffset="2656" salength="2" rank="52">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="°">307439</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="fraction" aoffset="2714" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="fraction" saoffset="2714" salength="8" rank="29">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="분수">133554</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="분수 (수학)">27811</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="air on" aoffset="2730" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="air on" saoffset="2730" salength="6" rank="246">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="에어퍼시픽">244003</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the cooler" aoffset="2784" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="the cooler" saoffset="2784" salength="10" rank="58">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="쿨러">473156</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="cooler" saoffset="2788" salength="6" rank="194">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="교도소">106740</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="청량 음료">148342</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="노트북 냉각기">153872</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="유치장">444476</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="영창">271140</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="쿨러">473156</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="independent" aoffset="2914" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="independent" saoffset="2914" salength="11" rank="39">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="독립">276329</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the absolute" aoffset="2979" alength="12" ext_length="9">
+				<subanchor sarel="0" saname="the absolute" saoffset="2979" salength="12" rank="183">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="절대 반지">401044</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="absolute" saoffset="2983" salength="8" rank="116">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="절대 반지">401044</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="absolute humidity" saoffset="2983" salength="17" rank="5">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="절대 반지">401044</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="습도">151021</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="rise" aoffset="3097" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="rise" saoffset="3097" salength="4" rank="179">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="혈압">9810</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="condenses" aoffset="3125" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="condenses" saoffset="3125" salength="9" rank="66">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="보즈-아인슈타인 응축">495087</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="응축">270741</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Reducing" aoffset="3157" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="Reducing" saoffset="3157" salength="8" rank="221">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="체중">379485</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="New" aoffset="3383" alength="3" ext_length="5">
+				<subanchor sarel="0" saname="New" saoffset="3383" salength="3" rank="208">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="스티치! 새로운 모험">474025</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="New York" saoffset="3383" salength="8" rank="16">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="뉴욕">11361</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="뉴욕 (동음이의)">775</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="뉴욕 주">11949</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="뉴욕시">54993</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="York" saoffset="3387" salength="4" rank="64">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="요크">109560</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Denver" aoffset="3396" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="Denver" saoffset="3396" salength="6" rank="17">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="덴버">15920</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="example" aoffset="3408" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="example" saoffset="3408" salength="7" rank="123">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="예">83868</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="means" aoffset="3422" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="means" saoffset="3422" salength="5" rank="116">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="방법">277069</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="과학적 방법">9586</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="cities" aoffset="3474" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="cities" saoffset="3474" salength="6" rank="33">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="거리">79147</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="중심 업무 지구">96992</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="도시">86333</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="수도">2467</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="장소">94221</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="마거릿 대처">32298</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="are the" aoffset="3481" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="are the" saoffset="3481" salength="7" rank="158">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="아르">102595</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the mass" aoffset="3500" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="the mass" saoffset="3500" salength="8" rank="18">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="미사">41665</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="질량">3336</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="cubic meter" aoffset="3528" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="cubic meter" saoffset="3528" salength="11" rank="15">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="세제곱 미터">318996</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="세제곱미터">33914</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="meter" saoffset="3534" salength="5" rank="35">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="미터">717</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="운율">72706</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Comfort" aoffset="3610" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="Comfort" saoffset="3610" salength="7" rank="110">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="행복">114015</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="이불">148307</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="중화인민공화국 위안">103187</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="위 (기관)">314281</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Humans" aoffset="3635" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="Humans" saoffset="3635" salength="6" rank="38">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="사람">307</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="인형">262375</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="tend" aoffset="3642" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="tend" saoffset="3642" salength="4" rank="220">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="국제 사회주의자 경향">327165</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="react" aoffset="3650" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="react" saoffset="3650" salength="5" rank="161">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="화학 반응">31102</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="discomfort" aoffset="3661" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="discomfort" saoffset="3661" salength="10" rank="75">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="불안">501963</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="to a" aoffset="3672" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="to a" saoffset="3672" salength="4" rank="153">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="에">290544</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="greater" aoffset="3699" alength="7" ext_length="5">
+				<subanchor sarel="0" saname="greater" saoffset="3699" salength="7" rank="209">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="큰 언니">357481</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="greater than" saoffset="3699" salength="12" rank="219">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="천등산">13269</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="interferes" aoffset="3721" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="interferes" saoffset="3721" salength="10" rank="224">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="통일민주당 창당 방해 사건">51255</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="body's" aoffset="3741" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="body's" saoffset="3741" salength="6" rank="213">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="신체">375459</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="normal" aoffset="3748" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="normal" saoffset="3748" salength="6" rank="84">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="평균">163937</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="2000년 남북 정상 회담">23097</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="기준">429684</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="process" aoffset="3755" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="process" saoffset="3755" salength="7" rank="92">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="프로세스">144784</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="프로세스 (동음이의)">154915</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="perspiring" aoffset="3766" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="perspiring" saoffset="3766" salength="10" rank="129">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="땀">198785</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="producing" aoffset="3778" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="producing" saoffset="3778" salength="9" rank="117">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="생산">156265</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="sweat" aoffset="3788" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="sweat" saoffset="3788" salength="5" rank="22">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="불안">501963</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="수증기">3722</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="땀">198785</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="습도">151021</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="문제">306706</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="cool" aoffset="3798" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="cool" saoffset="3798" salength="4" rank="77">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="쿨 (동음이의)">125711</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="쿨">230807</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="results" aoffset="3839" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="results" saoffset="3839" salength="7" rank="207">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="검색 엔진">15553</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="전보람">267794</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="결과">467739</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="in a" aoffset="3847" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="in a" saoffset="3847" salength="4" rank="149">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="에">290544</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="evaporation" aoffset="3880" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="evaporation" saoffset="3880" salength="11" rank="18">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="증발">107308</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="탈수">297323</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="기화">311781</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="effectiveness" aoffset="3917" alength="13" ext_length="0">
+				<subanchor sarel="0" saname="effectiveness" saoffset="3917" salength="13" rank="163">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="유효 사거리">53644</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="힘">115409</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="evaporative" aoffset="3934" alength="11" ext_length="8">
+				<subanchor sarel="0" saname="evaporative" saoffset="3934" salength="11" rank="92">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="증발">107308</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="evaporative cooling" saoffset="3934" salength="19" rank="105">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="증발">107308</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="cooling" saoffset="3946" salength="7" rank="80">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="컴퓨터 냉각">257463</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="As a" aoffset="3955" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="As a" saoffset="3955" salength="4" rank="146">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="로">51746</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="result" aoffset="3960" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="result" saoffset="3960" salength="6" rank="135">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="결과">467739</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the body" aoffset="3967" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="the body" saoffset="3967" salength="8" rank="109">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="AGM-114 헬파이어">119263</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="본문">420825</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="body" saoffset="3971" salength="4" rank="82">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="몸">28890</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="rh" aoffset="3983" alength="2" ext_length="0">
+				<subanchor sarel="0" saname="rh" saoffset="3983" salength="2" rank="40">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="오른손잡이">111437</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="RH">21508</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="로듐">54147</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="resulting" aoffset="3990" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="resulting" saoffset="3990" salength="9" rank="131">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="결과">467739</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="exists" aoffset="4040" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="exists" saoffset="4040" salength="6" rank="137">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="존재">153057</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="low" aoffset="4065" alength="3" ext_length="0">
+				<subanchor sarel="0" saname="low" saoffset="4065" salength="3" rank="141">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="낮은 전압 차분 신호">95007</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="points" aoffset="4073" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="points" saoffset="4073" salength="6" rank="95">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="효용">8807</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="집">111215</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="이익">167177</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="포인트">111780</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="구석">176923</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="drier" aoffset="4100" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="drier" saoffset="4100" salength="5" rank="133">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="빨래 건조기">425750</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="air can" aoffset="4106" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="air can" saoffset="4106" salength="7" rank="144">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="공기">107432</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="cause" aoffset="4114" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="cause" saoffset="4114" salength="5" rank="232">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="베이징 원인">195713</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="skin" aoffset="4120" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="skin" saoffset="4120" salength="4" rank="27">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="증여">102972</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="피부">151538</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="사람">307</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="생명">12818</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="콘돔">14194</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="crack" aoffset="4128" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="crack" saoffset="4128" salength="5" rank="74">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="여가">152939</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="소식">193089</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="기도">142269</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="금">55123</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="강도">80351</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="크랙">390408</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="irritated" aoffset="4142" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="irritated" saoffset="4142" salength="9" rank="110">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="염증">420420</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="dry" aoffset="4173" alength="3" ext_length="4">
+				<subanchor sarel="0" saname="dry" saoffset="4173" salength="3" rank="145">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="1차 마른 전투">60470</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="가뭄">220032</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="샴페인">289140</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="강">32356</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="사막">34132</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="dry out" saoffset="4173" salength="7" rank="214">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="어떻게 밖으로 나갈까">147119</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="respiratory" aoffset="4185" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="respiratory" saoffset="4185" salength="11" rank="61">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="호흡">258393</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="paths" aoffset="4197" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="paths" saoffset="4197" salength="5" rank="211">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="하야시 경로">241876</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="correlate" aoffset="4243" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="correlate" saoffset="4243" salength="9" rank="30">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="상관분석">154481</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="상호">397479</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="ambient" aoffset="4264" alength="7" ext_length="13">
+				<subanchor sarel="0" saname="ambient" saoffset="4264" salength="7" rank="18">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="환경">151099</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="실온">31134</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="ambient temperatures" saoffset="4264" salength="20" rank="200">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="별주위 원반">231244</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="effective" aoffset="4457" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="effective" saoffset="4457" salength="9" rank="234">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="제만 효과">46515</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="continental" aoffset="4505" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="continental" saoffset="4505" salength="11" rank="39">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="미국">754</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="대륙">33082</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="climates" aoffset="4517" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="climates" saoffset="4517" salength="8" rank="113">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="기후">38990</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="begin" aoffset="4532" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="begin" saoffset="4532" salength="5" rank="244">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="시작 메뉴">121636</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="feel" aoffset="4541" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="feel" saoffset="4541" salength="4" rank="102">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="느낌 (드라마)">343453</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="느낌">359056</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="inhabitants" aoffset="4602" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="inhabitants" saoffset="4602" salength="11" rank="197">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="주민 감사 청구제">301612</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="areas" aoffset="4623" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="areas" saoffset="4623" salength="5" rank="120">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="지역">318859</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="consider" aoffset="4634" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="consider" saoffset="4634" salength="8" rank="155">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="고려">74136</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Point" aoffset="4727" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="Point" saoffset="4727" salength="5" rank="11">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="포인트">111780</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="점 (기하)">21014</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="°C" aoffset="4733" alength="2" ext_length="0">
+				<subanchor sarel="0" saname="°C" saoffset="4733" salength="2" rank="73">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="°">307439</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Human" aoffset="4785" alength="5" ext_length="11">
+				<subanchor sarel="0" saname="Human" saoffset="4785" salength="5" rank="65">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="복있는 사람">76088</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="사람">307</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="인형">262375</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Human Perception" saoffset="4785" salength="16" rank="86">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="사람">307</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Perception" saoffset="4791" salength="10" rank="25">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="직관">276573</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="지각 (지질학)">290794</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="지각">79841</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="지각 (심리학)">276571</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="amp" aoffset="4954" alength="3" ext_length="0">
+				<subanchor sarel="0" saname="amp" saoffset="4954" salength="3" rank="21">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="AMP">156742</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="gt" aoffset="4958" alength="2" ext_length="0">
+				<subanchor sarel="0" saname="gt" saoffset="4958" salength="2" rank="81">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="GT">21222</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="시난주 (모빌슈트)">320597</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Higher" aoffset="4961" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="Higher" saoffset="4961" salength="6" rank="139">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="더 후">206893</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="nbsp" aoffset="4976" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="nbsp" saoffset="4976" salength="4" rank="7">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="NBSP">299678</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="illnesses" aoffset="5085" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="illnesses" saoffset="5085" salength="9" rank="241">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="유전성 질환">477249</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="-" aoffset="5150" alength="1" ext_length="0">
+				<subanchor sarel="0" saname="-" saoffset="5150" salength="1" rank="23">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="-">93086</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="people" aoffset="5510" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="people" saoffset="5510" salength="6" rank="114">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="물꽃마을 사람들">404123</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="upper" aoffset="5520" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="upper" saoffset="5520" salength="5" rank="97">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="어퍼 반도">124748</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="edge" aoffset="5526" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="edge" saoffset="5526" salength="4" rank="32">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="유리">45138</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="똥">127397</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="날">39834</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="귀">324899</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="OK" aoffset="5634" alength="2" ext_length="0">
+				<subanchor sarel="0" saname="OK" saoffset="5634" salength="2" rank="28">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="OK">21428</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="OK Computer">195224</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="오클라호마 주">14034</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="perceive" aoffset="5655" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="perceive" saoffset="5655" salength="8" rank="69">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="앎">119136</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="bit" aoffset="6021" alength="3" ext_length="0">
+				<subanchor sarel="0" saname="bit" saoffset="6021" salength="3" rank="24">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="비트">7004</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Calculating" aoffset="6101" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="Calculating" saoffset="6101" salength="11" rank="13">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="계산">15953</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Graph" aoffset="6211" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="Graph" saoffset="6211" salength="5" rank="13">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="그래프 (동음이의)">199040</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="그래프">33711</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="dependence" aoffset="6224" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="dependence" saoffset="6224" salength="10" rank="68">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="의지">276632</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="dewpoint" aoffset="6242" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="dewpoint" saoffset="6242" salength="8" rank="19">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="듀 모리에">202577</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="levels" aoffset="6284" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="levels" saoffset="6284" salength="6" rank="199">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="멀티 레벨 셀">154029</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Based on" aoffset="6313" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="Based on" saoffset="6313" salength="8" rank="240">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="에어퍼시픽">244003</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="approximation" aoffset="6346" alength="13" ext_length="0">
+				<subanchor sarel="0" saname="approximation" saoffset="6346" salength="13" rank="69">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="근삿값">175057</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Td" aoffset="6445" alength="2" ext_length="0">
+				<subanchor sarel="0" saname="Td" saoffset="6445" salength="2" rank="37">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="TD">21556</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="TD 평행카르단 구동방식">384353</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="열대 저기압">298522</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="RH" aoffset="6485" alength="2" ext_length="0">
+				<subanchor sarel="0" saname="RH" saoffset="6485" salength="2" rank="8">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="RH">21508</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="로듐">54147</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the actual" aoffset="6497" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="the actual" saoffset="6497" salength="10" rank="215">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="리얼 모드">139269</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="actual" saoffset="6501" salength="6" rank="206">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="리얼 모드">139269</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="T" aoffset="6524" alength="1" ext_length="8">
+				<subanchor sarel="0" saname="T" saoffset="6524" salength="1" rank="21">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="T">50685</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="T of" saoffset="6524" salength="9" rank="134">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="의">296533</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="gamma" aoffset="6595" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="gamma" saoffset="6595" salength="5" rank="31">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="Γ">37977</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="ln" aoffset="6715" alength="2" ext_length="0">
+				<subanchor sarel="0" saname="ln" saoffset="6715" salength="2" rank="30">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="LN">162714</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="자연로그">10966</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="degrees" aoffset="6775" alength="7" ext_length="8">
+				<subanchor sarel="0" saname="degrees" saoffset="6775" salength="7" rank="96">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="급수">233900</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="도 (행정 구역)">6706</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="정도">159568</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="도">6300</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="등">277679</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="점">21013</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="degrees Celsius" saoffset="6775" salength="15" rank="8">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="섭씨">3734</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Celsius" saoffset="6783" salength="7" rank="21">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="섭씨">3734</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the natural" aoffset="6810" alength="11" ext_length="10">
+				<subanchor sarel="0" saname="the natural" saoffset="6810" salength="11" rank="63">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="자연">151097</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="natural" saoffset="6814" salength="7" rank="143">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="자연">151097</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="natural logarithm" saoffset="6814" salength="17" rank="11">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="자연로그">10966</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="logarithm" saoffset="6822" salength="9" rank="19">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="로그">45343</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="constants" aoffset="6837" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="constants" saoffset="6837" salength="9" rank="121">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="계수">126461</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="정수">5464</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="상수">83107</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="항수">169426</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="율">288346</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="This expression" aoffset="6939" alength="15" ext_length="0">
+				<subanchor sarel="0" saname="This expression" saoffset="6939" salength="15" rank="201">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="군 표현론">118481</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="expression" saoffset="6944" salength="10" rank="124">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="군 표현론">118481</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="빛">20576</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="말">7939</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="가야">5378</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="구">7081</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="형상">314564</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="saturation vapor pressure" aoffset="7013" alength="25" ext_length="9">
+				<subanchor sarel="0" saname="saturation vapor pressure" saoffset="7013" salength="25" rank="3">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="포화 속으로">465869</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="증기압">30490</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="vapor pressure" saoffset="7024" salength="14" rank="1">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="증기압">30490</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="vapor pressure of water" saoffset="7024" salength="23" rank="82">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="물의 순환">215911</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="function" aoffset="7060" alength="8" ext_length="15">
+				<subanchor sarel="0" saname="function" saoffset="7060" salength="8" rank="33">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="단백질">1409</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="함수">41544</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="함수 (동음이의)">41539</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="function of temperature" saoffset="7060" salength="23" rank="138">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="온도">3724</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="It" aoffset="7170" alength="2" ext_length="0">
+				<subanchor sarel="0" saname="It" saoffset="7170" salength="2" rank="19">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="It">21271</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="considered" aoffset="7176" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="considered" saoffset="7176" salength="10" rank="139">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="고려">74136</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="C  T" aoffset="7225" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="C  T" saoffset="7225" salength="8" rank="147">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="중부 인도아리아어군">82812</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="allows" aoffset="7446" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="allows" saoffset="7446" salength="6" rank="154">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="수">14337</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="conversion" aoffset="7453" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="conversion" saoffset="7453" salength="10" rank="113">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="컨버전">270971</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="화">144814</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="전종">400107</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="푸리에 변환">115387</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="환가">453049</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="역">86094</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="between the" aoffset="7464" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="between the" saoffset="7464" salength="11" rank="152">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="사이">489767</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="dry bulb temperature" aoffset="7491" alength="20" ext_length="0">
+				<subanchor sarel="0" saname="dry bulb temperature" saoffset="7491" salength="20" rank="34">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="드라이 에칭">96892</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="bulb" saoffset="7495" salength="4" rank="41">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="알뿌리">428012</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="approach" aoffset="7545" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="approach" saoffset="7545" salength="8" rank="236">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="접근 제어">163644</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="will be" aoffset="7554" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="will be" saoffset="7554" salength="7" rank="145">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="수">14337</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="accurate" aoffset="7562" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="accurate" saoffset="7562" salength="8" rank="203">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="큐티 하니 (동음이의)">167114</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="long" aoffset="7601" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="long" saoffset="7601" salength="4" rank="126">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="긴 정">472023</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="as the" aoffset="7606" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="as the" saoffset="7606" salength="6" rank="157">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="로">51746</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="The equation" aoffset="7654" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="The equation" saoffset="7654" salength="12" rank="125">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="방정식">83</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="equation" saoffset="7658" salength="8" rank="35">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="식">29781</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="차">23132</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="평균">163937</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="방정식">83</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="오차">175067</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="슈뢰딩거 방정식">156</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="{5" aoffset="7736" alength="2" ext_length="1">
+				<subanchor sarel="0" saname="{5" saoffset="7736" salength="2" rank="202">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="5">14355</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="{5}" saoffset="7736" salength="3" rank="112">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="5">14355</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="expressed" aoffset="7853" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="expressed" saoffset="7853" salength="9" rank="228">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="군 표현론">118481</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="rule" aoffset="7875" alength="4" ext_length="3">
+				<subanchor sarel="0" saname="rule" saoffset="7875" salength="4" rank="98">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="규칙">158327</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="rule of" saoffset="7875" salength="7" rank="242">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="의">296533</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="difference" aoffset="7923" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="difference" saoffset="7923" salength="10" rank="101">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="한국어의 남북 간 차이">82215</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="차이">353692</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="starting" aoffset="8017" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="starting" saoffset="8017" salength="8" rank="210">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="시작 메뉴">121636</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="in this" aoffset="8112" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="in this" saoffset="8112" salength="7" rank="151">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="이">10144</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="case" aoffset="8120" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="case" saoffset="8120" salength="4" rank="89">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="케이스">247241</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="컴퓨터 케이스">154564</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="percent" aoffset="8143" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="percent" saoffset="8143" salength="7" rank="174">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="백분율">91172</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="and T" aoffset="8152" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="and T" saoffset="8152" salength="9" rank="212">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="노동조합 및 노동관계조정법">267621</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="derivation" aoffset="8220" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="derivation" saoffset="8220" salength="10" rank="36">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="미분">34115</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="내림">344965</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="유도">29638</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="discussion" aoffset="8251" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="discussion" saoffset="8251" salength="10" rank="205">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="MBC 100분 토론">199290</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="accuracy" aoffset="8269" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="accuracy" saoffset="8269" salength="8" rank="128">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="창조과학">53715</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="정도">159568</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="정밀도">159557</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="정확도와 정밀도">159527</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="information" aoffset="8325" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="information" saoffset="8325" salength="11" rank="91">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="정보">324</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the history" aoffset="8340" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="the history" saoffset="8340" salength="11" rank="133">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="역사">543</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="history" saoffset="8344" salength="7" rank="43">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="역사">543</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="사">144993</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="사극">100260</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="기">31803</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="applications" aoffset="8356" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="applications" saoffset="8356" salength="12" rank="153">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="애플 (기업)">11190</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the Bulletin" aoffset="8399" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="the Bulletin" saoffset="8399" salength="12" rank="25">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="게시판">33366</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Bulletin" saoffset="8403" salength="8" rank="100">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="기관지">168120</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="게시판">33366</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="고등고시">112107</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="메시지">145856</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the American" aoffset="8415" alength="12" ext_length="23">
+				<subanchor sarel="0" saname="the American" saoffset="8415" salength="12" rank="127">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="미국">754</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="American" saoffset="8419" salength="8" rank="24">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="미국 축구 국가대표팀">71971</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="미국">754</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="미국 영어">14896</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="아메리카 원주민">52042</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="American Meteorological Society" saoffset="8419" salength="31" rank="14">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="미국 축구 국가대표팀">71971</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Meteorological" saoffset="8428" salength="14" rank="72">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="기상">204596</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Meteorological Society" saoffset="8428" salength="22" rank="166">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="기상">204596</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Society" saoffset="8443" salength="7" rank="76">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="사회">141467</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="회">48732</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="공동체">157132</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="세계">14827</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="개체군">485992</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Fahrenheit" aoffset="8549" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="Fahrenheit" saoffset="8549" salength="10" rank="13">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="화씨">31128</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="다니엘 가브리엘 파렌하이트">298123</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="페이룬하이">182373</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Tf" aoffset="8604" alength="2" ext_length="0">
+				<subanchor sarel="0" saname="Tf" saoffset="8604" salength="2" rank="23">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="TF">161097</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="temp" aoffset="8731" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="temp" saoffset="8731" salength="4" rank="55">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="온도">3724</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="degrees Fahrenheit" aoffset="8765" alength="18" ext_length="0">
+				<subanchor sarel="0" saname="degrees Fahrenheit" saoffset="8765" salength="18" rank="9">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="화씨">31128</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="as above" aoffset="8925" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="as above" saoffset="8925" salength="8" rank="239">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="위 (기관)">314281</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Closer" aoffset="8959" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="Closer" saoffset="8959" salength="6" rank="162">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="클로저">74733</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="Closer">353503</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="5월 29일">1809</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="calculation" aoffset="8993" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="calculation" saoffset="8993" salength="11" rank="79">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="계수">126461</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="계산">15953</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="김창숙">42292</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="NOAA" aoffset="9013" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="NOAA" saoffset="9013" salength="4" rank="18">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="NOAA">505567</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="exp" aoffset="9156" alength="3" ext_length="0">
+				<subanchor sarel="0" saname="exp" saoffset="9156" salength="3" rank="22">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="Exp">107968</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="left" aoffset="9161" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="left" saoffset="9161" salength="4" rank="71">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="왼쪽">111567</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="right" aoffset="9191" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="right" saoffset="9191" salength="5" rank="94">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="권리">107965</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="sta" aoffset="9327" alength="3" ext_length="0">
+				<subanchor sarel="0" saname="sta" saoffset="9327" salength="3" rank="0">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="스타">60997</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="스타 워즈">33062</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="wet-bulb" aoffset="9716" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="wet-bulb" saoffset="9716" salength="8" rank="4">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="건습구 습도계">473739</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="웨트 에칭">97339</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="saturated water" aoffset="9814" alength="15" ext_length="0">
+				<subanchor sarel="0" saname="saturated water" saoffset="9814" salength="15" rank="71">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="포화 속으로">465869</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="units" aoffset="9849" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="units" saoffset="9849" salength="5" rank="103">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="단위">5141</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="millibar" aoffset="9858" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="millibar" saoffset="9858" salength="8" rank="7">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="바 (단위)">131420</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="밀리바">473435</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="wet-bulb temperature" aoffset="9992" alength="20" ext_length="0">
+				<subanchor sarel="0" saname="wet-bulb temperature" saoffset="9992" salength="20" rank="0">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="웨트 에칭">97339</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="station" aoffset="10140" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="station" saoffset="10140" salength="7" rank="70">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="전철역">93247</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="역사">543</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="신분">113813</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="우체국">121274</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="소">11587</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="단식">49419</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="역">86094</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the site" aoffset="10191" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="the site" saoffset="10191" salength="8" rank="118">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="사이트">304971</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="site" saoffset="10195" salength="4" rank="122">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="사이트">304971</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="hPa" aoffset="10275" alength="3" ext_length="0">
+				<subanchor sarel="0" saname="hPa" saoffset="10275" salength="3" rank="6">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="고전">48469</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="파스칼 (단위)">14886</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="use" aoffset="10322" alength="3" ext_length="0">
+				<subanchor sarel="0" saname="use" saoffset="10322" salength="3" rank="130">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="사용">506837</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the Arden" aoffset="10326" alength="9" ext_length="14">
+				<subanchor sarel="0" saname="the Arden" saoffset="10326" salength="9" rank="87">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="아덴">14050</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Arden" saoffset="10330" salength="5" rank="26">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="아덴">14050</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Arden Buck Equation" saoffset="10330" salength="19" rank="8">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="아덴">14050</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Buck" saoffset="10336" salength="4" rank="56">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="수컷">264674</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="달러">11474</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="책임">113563</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Equation" saoffset="10341" salength="8" rank="6">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="방정식">83</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="find" aoffset="10353" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="find" saoffset="10353" salength="4" rank="233">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="생활의 발견 (영화)">169778</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the water" aoffset="10358" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="the water" saoffset="10358" salength="9" rank="126">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="물">315</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="vapor pressures" aoffset="10368" alength="15" ext_length="0">
+				<subanchor sarel="0" saname="vapor pressures" saoffset="10368" salength="15" rank="2">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="증기 기관차">108027</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="증기압">30490</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="pressures" saoffset="10374" salength="9" rank="129">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="압력">7755</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Bubble" aoffset="10487" alength="6" ext_length="6">
+				<subanchor sarel="0" saname="Bubble" saoffset="10487" salength="6" rank="98">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="거품 정렬">130670</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Bubble point" saoffset="10487" salength="12" rank="35">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="닷컴 버블">497214</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="heat" aoffset="10553" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="heat" saoffset="10553" salength="4" rank="47">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="온도">3724</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="강화군">85450</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="열">3729</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="체온">454586</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="히트">115336</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Hydrocarbon" aoffset="10600" alength="11" ext_length="10">
+				<subanchor sarel="0" saname="Hydrocarbon" saoffset="10600" salength="11" rank="14">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="탄화수소">57215</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Hydrocarbon dew point" saoffset="10600" salength="21" rank="10">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="탄화 칼슘">422349</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Thermodynamic" aoffset="10721" alength="13" ext_length="9">
+				<subanchor sarel="0" saname="Thermodynamic" saoffset="10721" salength="13" rank="56">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="열역학">5167</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Thermodynamic diagrams" saoffset="10721" salength="22" rank="2">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="열역학">5167</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="diagrams" saoffset="10735" salength="8" rank="104">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="다이어그램">473513</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="References" aoffset="10785" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="References" saoffset="10785" salength="10" rank="235">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="참조 투명성">83726</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="links" aoffset="10832" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="links" saoffset="10832" salength="5" rank="134">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="링크 (웹 브라우저)">147017</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="glossary" aoffset="11110" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="glossary" saoffset="11110" salength="8" rank="23">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="사전">776</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="자해">458793</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="definition" aoffset="11156" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="definition" saoffset="11156" salength="10" rank="86">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="정의 (논리학)">277363</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="정의">104747</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Glossary" aoffset="11182" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="Glossary" saoffset="11182" salength="8" rank="42">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="어휘 마크업 틀">237274</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="formula" aoffset="11329" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="formula" saoffset="11329" salength="7" rank="36">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="오일러의 공식">7625</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="화학식">211590</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="정석">416422</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="식">29781</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="방법론">265096</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Humidity" aoffset="11517" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="Humidity" saoffset="11517" salength="8" rank="5">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="습도">151021</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Usenet" aoffset="11581" alength="6" ext_length="10">
+				<subanchor sarel="0" saname="Usenet" saoffset="11581" salength="6" rank="20">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="유즈넷">29655</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Usenet newsgroup" saoffset="11581" salength="16" rank="12">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="뉴스그룹">152235</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="newsgroup" saoffset="11588" salength="9" rank="16">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="뉴스">113128</tobep>
+				</subanchor>
+			</anchor>
+		</outgoinglinks>
+	</topic>
+</crosslink-assessment>

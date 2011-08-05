@@ -1,0 +1,2083 @@
+<crosslink-assessment participant-id="2273087" run-id="2273087_A2B" task="A2B" default_lang="ko" source_lang="en">
+	<collection>Chinese Wikipedia 2010 Collection</collection>
+	<collection>Japanese Wikipedia 2010 Collection</collection>
+	<collection>Korean Wikipedia 2010 Collection</collection>
+	<topic file="27661" name="Source code">
+		<outgoinglinks>
+			<anchor arel="0" aname="Wiki" aoffset="62" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="Wiki" saoffset="62" salength="4" rank="108">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="위키">49</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="art" aoffset="164" alength="3" ext_length="0">
+				<subanchor sarel="0" saname="art" saoffset="164" salength="3" rank="85">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="술">12026</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="법">15921</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="조선인민공화국">43892</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="미술">2136</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Source code" aoffset="266" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="Source code" saoffset="266" salength="11" rank="15">
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Source" aoffset="489" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="Source" saoffset="489" salength="6" rank="19">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="소스 엔진">202575</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="수원">445755</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="소스">278417</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="code" aoffset="496" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="code" saoffset="496" salength="4" rank="20">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="암호">150606</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="부호">63550</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Image" aoffset="549" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="Image" saoffset="549" salength="5" rank="156">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="상 (시각)">155289</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="svg" aoffset="567" alength="3" ext_length="0">
+				<subanchor sarel="0" saname="svg" saoffset="567" salength="3" rank="60">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="SVG">39470</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="right" aoffset="577" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="right" saoffset="577" salength="5" rank="167">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="권리">107965</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="illustration" aoffset="592" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="illustration" saoffset="592" salength="12" rank="48">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="삽화">293350</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="일러스트레이션">293348</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Java" aoffset="608" alength="4" ext_length="12">
+				<subanchor sarel="0" saname="Java" saoffset="608" salength="4" rank="18">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="자바">2365</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="자바 플랫폼">155189</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="자바 (프로그래밍 언어)">4084</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="자와 섬">35977</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Java source code" saoffset="608" salength="16" rank="41">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="자바 (프로그래밍 언어)">4084</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="prologue" aoffset="630" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="prologue" saoffset="630" salength="8" rank="46">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="프롤로그">13949</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="comments" aoffset="639" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="comments" saoffset="639" salength="8" rank="222">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="댓글">796</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="red" aoffset="661" alength="3" ext_length="0">
+				<subanchor sarel="0" saname="red" saoffset="661" salength="3" rank="82">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="빨강">85813</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="inline" aoffset="666" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="inline" saoffset="666" salength="6" rank="125">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="인라인 스피드 스케이팅">233205</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="green" aoffset="695" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="green" saoffset="695" salength="5" rank="47">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="초록">86144</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="program" aoffset="706" alength="7" ext_length="5">
+				<subanchor sarel="0" saname="program" saoffset="706" salength="7" rank="59">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프로그램">551</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="program code" saoffset="706" salength="12" rank="155">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="프로그램">551</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="in blue" aoffset="729" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="in blue" saoffset="729" salength="7" rank="187">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="파랑">85937</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="blue" saoffset="732" salength="4" rank="58">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="파랑">85937</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="computer" aoffset="743" alength="8" ext_length="8">
+				<subanchor sarel="0" saname="computer" saoffset="743" salength="8" rank="50">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="계산기">87764</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="컴퓨터">87460</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="computer science" saoffset="743" salength="16" rank="20">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="컴퓨터 과학">143</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="컴퓨터 공학">34178</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="전산학">431246</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="컴퓨터">87460</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="science" saoffset="752" salength="7" rank="70">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="과학">95883</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="human-readable" aoffset="844" alength="14" ext_length="0">
+				<subanchor sarel="0" saname="human-readable" saoffset="844" salength="14" rank="52">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="복있는 사람">76088</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="computer programming" aoffset="859" alength="20" ext_length="9">
+				<subanchor sarel="0" saname="computer programming" saoffset="859" salength="20" rank="14">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="컴퓨터 프로그래밍">22756</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="컴퓨터 프로그램">11707</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="컴퓨터">87460</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="computer programming language" saoffset="859" salength="29" rank="19">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프로그래밍 언어">1841</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="컴퓨터">87460</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="programming" saoffset="868" salength="11" rank="53">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="차례">446571</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="각본">261555</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="컴퓨터 프로그래밍">22756</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="교육 과정">155106</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="방송">75544</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="컴퓨터 프로그램">11707</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프로그램">551</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="programming language" saoffset="868" salength="20" rank="13">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프로그래밍 언어">1841</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="컴퓨터 프로그래밍">22756</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="language" saoffset="880" salength="8" rank="62">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="노랫말">152950</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="국어">39344</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="언어">680</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="말">7939</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="영어">2177</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="언어 능력">215946</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="means" aoffset="910" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="means" saoffset="910" salength="5" rank="134">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="방법">277069</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="과학적 방법">9586</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="programmers" aoffset="935" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="programmers" saoffset="935" salength="11" rank="49">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="소자 프로그래머">213692</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="컴퓨터 프로그래밍">22756</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="컴퓨터 프로그램">11707</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프로그래머">22754</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="actions" aoffset="962" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="actions" saoffset="962" salength="7" rank="237">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="행위">450294</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="to be" aoffset="970" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="to be" saoffset="970" salength="5" rank="239">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="수">14337</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="The source" aoffset="1010" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="The source" saoffset="1010" salength="10" rank="37">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="거리">79147</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="text" aoffset="1085" alength="4" ext_length="6">
+				<subanchor sarel="0" saname="text" saoffset="1085" salength="4" rank="182">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="텍스트">420824</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="text files" saoffset="1085" salength="10" rank="43">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="텍스트 파일">154651</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="텍스트">420824</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="files" saoffset="1090" salength="5" rank="197">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="파일">147996</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="databases" aoffset="1117" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="databases" saoffset="1117" salength="9" rank="61">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="데이터베이스">38001</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="stored procedures" aoffset="1130" alength="17" ext_length="0">
+				<subanchor sarel="0" saname="stored procedures" saoffset="1130" salength="17" rank="49">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="저장 프로시저">147491</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="저장 성">34733</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="procedures" saoffset="1137" salength="10" rank="217">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="적법 절차">335576</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="code snippets" aoffset="1171" alength="13" ext_length="0">
+				<subanchor sarel="0" saname="code snippets" saoffset="1171" salength="13" rank="104">
+				</subanchor>
+				<subanchor sarel="0" saname="snippets" saoffset="1176" salength="8" rank="130">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="조각">273842</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="books" aoffset="1196" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="books" saoffset="1196" salength="5" rank="203">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="책">66370</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="other media" aoffset="1205" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="other media" saoffset="1205" salength="11" rank="151">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="서울대학교 도서관">311225</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="media" saoffset="1211" salength="5" rank="77">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="대중 매체">504600</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="전자 매체">180997</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="매체">144831</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="메디아">116282</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="대중 전달">50894</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="A" aoffset="1219" alength="1" ext_length="0">
+				<subanchor sarel="0" saname="A" saoffset="1219" salength="1" rank="43">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="라 (계이름)">135343</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="A">668</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="あ">74795</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="아">290543</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="А">14382</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="organized" aoffset="1266" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="organized" saoffset="1266" salength="9" rank="228">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="조직">276371</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="directory" aoffset="1283" alength="9" ext_length="5">
+				<subanchor sarel="0" saname="directory" saoffset="1283" salength="9" rank="76">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="디렉터리 (동음이의)">156252</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="디렉터리">139286</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="directory tree" saoffset="1283" salength="14" rank="44">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="디렉터리">139286</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="tree" saoffset="1293" salength="4" rank="41">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="성탄목">278488</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="트리">81615</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="나무">81619</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="교수대">478495</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="십자가">75679</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="case" aoffset="1308" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="case" saoffset="1308" salength="4" rank="145">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="케이스">247241</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="컴퓨터 케이스">154564</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="source tree" aoffset="1342" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="source tree" saoffset="1342" salength="11" rank="16">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="소스 (음식)">278417</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="computer program" aoffset="1370" alength="16" ext_length="2">
+				<subanchor sarel="0" saname="computer program" saoffset="1370" salength="16" rank="23">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="컴퓨터 프로그램">11707</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="computer program's" saoffset="1370" salength="18" rank="39">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="컴퓨터 프로그램">11707</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="컴퓨터">87460</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the collection" aoffset="1404" alength="14" ext_length="0">
+				<subanchor sarel="0" saname="the collection" saoffset="1404" salength="14" rank="123">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="크라이테리언 컬렉션">447887</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="convert" aoffset="1438" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="convert" saoffset="1438" salength="7" rank="128">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="매매">201338</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="form" aoffset="1466" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="form" saoffset="1466" salength="4" rank="211">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="형식">277341</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="폼">397064</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="executable" aoffset="1555" alength="10" ext_length="5">
+				<subanchor sarel="0" saname="executable" saoffset="1555" salength="10" rank="30">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="실행 파일">146829</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="executable file" saoffset="1555" salength="15" rank="53">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="실행 파일">146829</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="file" saoffset="1566" salength="4" rank="65">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="파일">147996</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="컴퓨터 파일">448</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="compiler" aoffset="1576" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="compiler" saoffset="1576" salength="8" rank="29">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="컴파일러">13379</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="executed" aoffset="1589" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="executed" saoffset="1589" salength="8" rank="193">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="실행 파일">146829</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the fly" aoffset="1601" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="the fly" saoffset="1601" salength="7" rank="45">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="혼인 비행">441656</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="비행">370737</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="fly" saoffset="1605" salength="3" rank="46">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="파리 (도시)">7567</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="파리목">83639</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="파리 (동물)">8201</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="human" aoffset="1618" alength="5" ext_length="9">
+				<subanchor sarel="0" saname="human" saoffset="1618" salength="5" rank="57">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="복있는 사람">76088</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="사람">307</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="인형">262375</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="human readable" saoffset="1618" salength="14" rank="149">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="복있는 사람">76088</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="readable" saoffset="1624" salength="8" rank="206">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="판독">353215</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="interpreter" aoffset="1657" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="interpreter" saoffset="1657" salength="11" rank="14">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="통역사">278368</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="해석기">428613</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="통역">9931</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="인터프리터">626</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="The code" aoffset="1679" alength="11" ext_length="5">
+				<subanchor sarel="0" saname="The code" saoffset="1679" salength="11" rank="195">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="코드">26553</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="code base" saoffset="1686" salength="9" rank="138">
+				</subanchor>
+				<subanchor sarel="0" saname="base" saoffset="1691" salength="4" rank="178">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="베이스">28089</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="project" aoffset="1717" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="project" saoffset="1717" salength="7" rank="189">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="프로젝트">150395</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the source" aoffset="1757" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="the source" saoffset="1757" salength="10" rank="101">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="소스">147503</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="소스 (음식)">278417</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="code of" aoffset="1768" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="code of" saoffset="1768" salength="7" rank="242">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="코드">26553</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the computer" aoffset="1780" alength="12" ext_length="9">
+				<subanchor sarel="0" saname="the computer" saoffset="1780" salength="12" rank="173">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="컴퓨터">87460</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="computer programs" saoffset="1784" salength="17" rank="18">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="컴퓨터 소프트웨어">22495</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="컴퓨터 프로그램">11707</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="컴퓨터">87460</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="programs" saoffset="1793" salength="8" rank="200">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="프로그램">551</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="make" aoffset="1808" alength="4" ext_length="3">
+				<subanchor sarel="0" saname="make" saoffset="1808" salength="4" rank="17">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="make (소프트웨어)">275345</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="make up" saoffset="1808" salength="7" rank="0">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="화장 (미용)">362592</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the project" aoffset="1816" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="the project" saoffset="1816" salength="11" rank="234">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="프로젝트">150395</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Organization" aoffset="1846" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="Organization" saoffset="1846" salength="12" rank="75">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="제도">92776</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="제">121593</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="조직">276371</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="구성">266991</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="조직 (사회과학)">156263</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="조합">29392</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="생물">19940</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="code for" aoffset="1881" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="code for" saoffset="1881" salength="8" rank="36">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="유전학">2715</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="particular" aoffset="1892" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="particular" saoffset="1892" salength="10" rank="230">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="특수 효과">182264</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="특수">450517</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="piece" aoffset="1903" alength="5" ext_length="3">
+				<subanchor sarel="0" saname="piece" saoffset="1903" salength="5" rank="214">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="조각">273842</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="piece of" saoffset="1903" salength="8" rank="243">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="조각">273842</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="software" aoffset="1912" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="software" saoffset="1912" salength="8" rank="100">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="연료">3762</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="컴퓨터 소프트웨어">22495</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="single" aoffset="1943" alength="6" ext_length="5">
+				<subanchor sarel="0" saname="single" saoffset="1943" salength="6" rank="56">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="싱글">157238</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="싱글 (음악)">186288</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="single file" saoffset="1943" salength="11" rank="133">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="단일 유닉스 규격">153014</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the practice" aoffset="1977" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="the practice" saoffset="1977" salength="12" rank="168">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="한글과컴퓨터 타자 연습">81531</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="programming languages" aoffset="2055" alength="21" ext_length="0">
+				<subanchor sarel="0" saname="programming languages" saoffset="2055" salength="21" rank="3">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프로그래밍 언어">1841</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="컴퓨터 프로그래밍">22756</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="languages" saoffset="2067" salength="9" rank="90">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="노랫말">152950</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="국어">39344</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="언어">680</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="말">7939</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="영어">2177</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="언어 능력">215946</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="type" aoffset="2088" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="type" saoffset="2088" salength="4" rank="74">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="형">490076</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="example" aoffset="2167" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="example" saoffset="2167" salength="7" rank="232">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="예">83868</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the C" aoffset="2207" alength="5" ext_length="21">
+				<subanchor sarel="0" saname="the C" saoffset="2207" salength="5" rank="169">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="C">15147</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="the C programming language" saoffset="2207" salength="26" rank="122">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="컴퓨터 프로그래밍">22756</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="C" saoffset="2211" salength="1" rank="42">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="도 (계이름)">135342</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="C (프로그래밍 언어)">2681</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="C">15147</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="C programming" saoffset="2211" salength="13" rank="197">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="컴퓨터 프로그래밍">22756</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="C programming language" saoffset="2211" salength="22" rank="0">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="컴퓨터 프로그래밍">22756</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="C (프로그래밍 언어)">2681</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Assembly" aoffset="2266" alength="8" ext_length="9">
+				<subanchor sarel="0" saname="Assembly" saoffset="2266" salength="8" rank="70">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="의회">10916</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="회">48732</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="의원">208352</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="입법부">111902</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Assembly language" saoffset="2266" salength="17" rank="3">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="어셈블리어">20868</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="optimization" aoffset="2288" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="optimization" saoffset="2288" salength="12" rank="31">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="최적화 문제">151080</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="최적화 (정보 공학)">150788</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="최적화">150786</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="It" aoffset="2311" alength="2" ext_length="0">
+				<subanchor sarel="0" saname="It" saoffset="2311" salength="2" rank="41">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="It">21271</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="components" aoffset="2340" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="components" saoffset="2340" salength="10" rank="148">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="구성 요소">145006</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="a piece" aoffset="2354" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="a piece" saoffset="2354" salength="7" rank="249">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="조각">273842</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="compiled" aoffset="2392" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="compiled" saoffset="2392" salength="8" rank="144">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="컴파일">89887</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="later" aoffset="2455" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="later" saoffset="2455" salength="5" rank="246">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="후">430493</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="technique" aoffset="2498" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="technique" saoffset="2498" salength="9" rank="181">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="기술">2122</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="called" aoffset="2508" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="called" saoffset="2508" salength="6" rank="245">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="전화">77178</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="library" aoffset="2515" alength="7" ext_length="8">
+				<subanchor sarel="0" saname="library" saoffset="2515" salength="7" rank="55">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="라이브러리">48711</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="도서관">5144</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="장서">502464</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="문고">447737</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="library linking" saoffset="2515" salength="15" rank="30">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="라이브러리">48711</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="도서관">5144</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the case" aoffset="2540" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="the case" saoffset="2540" salength="8" rank="244">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="케이스">247241</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="class" aoffset="2587" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="class" saoffset="2587" salength="5" rank="122">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="클래스">200457</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="클래스 (컴퓨터 과학)">338446</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the interpreter" aoffset="2642" alength="15" ext_length="0">
+				<subanchor sarel="0" saname="the interpreter" saoffset="2642" salength="15" rank="34">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="인터프리터">626</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="at runtime" aoffset="2658" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="at runtime" saoffset="2658" salength="10" rank="31">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="런타임">150847</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="runtime" saoffset="2661" salength="7" rank="49">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="런타임 라이브러리">150851</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="런타임">150847</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="method" aoffset="2692" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="method" saoffset="2692" salength="6" rank="175">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="방법">277069</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="main" aoffset="2714" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="main" saoffset="2714" salength="4" rank="158">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="마인 강">155076</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="a programming language" aoffset="2746" alength="22" ext_length="0">
+				<subanchor sarel="0" saname="a programming language" saoffset="2746" salength="22" rank="42">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="프로그래밍 언어">1841</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="APL">283760</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="designed" aoffset="2777" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="designed" saoffset="2777" salength="8" rank="229">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="디자인">9652</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="application" aoffset="2807" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="application" saoffset="2807" salength="11" rank="74">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="약">117007</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="응용 소프트웨어">22480</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="청구">143085</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="응용">147773</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="이용">127379</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="question" aoffset="2822" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="question" saoffset="2822" salength="8" rank="198">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="문제">306706</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="general-purpose" aoffset="2834" alength="15" ext_length="0">
+				<subanchor sarel="0" saname="general-purpose" saoffset="2834" salength="15" rank="225">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="범용 부호">77760</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="user" aoffset="2889" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="user" saoffset="2889" salength="4" rank="161">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="사용자">144920</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="사용자 (컴퓨터)">143738</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="macros" aoffset="2911" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="macros" saoffset="2911" salength="6" rank="30">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="매크로 (컴퓨터 과학)">372902</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="매크로">372901</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="add-ins" aoffset="2936" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="add-ins" saoffset="2936" salength="7" rank="45">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="칼루자-클라인 이론">504261</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="플러그인">182877</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="GNU" aoffset="2999" alength="3" ext_length="6">
+				<subanchor sarel="0" saname="GNU" saoffset="2999" salength="3" rank="40">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="누">375341</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="GNU">312</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="GNU Emacs" saoffset="2999" salength="9" rank="22">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="이맥스">122751</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Emacs" saoffset="3003" salength="5" rank="12">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="이맥스">122751</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="text editor" aoffset="3009" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="text editor" saoffset="3009" salength="11" rank="16">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="문서 편집기">2427</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="문서">148351</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="editor" saoffset="3014" salength="6" rank="91">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="편집자">81911</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="complex" aoffset="3042" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="complex" saoffset="3042" salength="7" rank="123">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="복">163633</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the compilation" aoffset="3080" alength="15" ext_length="0">
+				<subanchor sarel="0" saname="the compilation" saoffset="3080" salength="15" rank="226">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="편집">143181</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="compilation" saoffset="3084" salength="11" rank="107">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="선">32826</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="편집">143181</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="assembly" aoffset="3099" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="assembly" saoffset="3099" salength="8" rank="101">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="어셈블리어">20868</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="instructions" aoffset="3203" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="instructions" saoffset="3203" salength="12" rank="179">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="명령">158326</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="compilations" aoffset="3220" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="compilations" saoffset="3220" salength="12" rank="95">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="선">32826</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="편집">143181</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Makefile" aoffset="3244" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="Makefile" saoffset="3244" salength="8" rank="12">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="의">296533</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="Make (소프트웨어)">275345</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="information" aoffset="3363" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="information" saoffset="3363" salength="11" rank="60">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="정보">324</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="revision control" aoffset="3424" alength="16" ext_length="7">
+				<subanchor sarel="0" saname="revision control" saoffset="3424" salength="16" rank="2">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="버전">245829</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="버전 관리">86502</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="revision control system" saoffset="3424" salength="23" rank="33">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="2007 개정 교육과정">382739</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="버전 관리">86502</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="control system" saoffset="3433" salength="14" rank="157">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="파푸아 제어">91374</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="tool" aoffset="3459" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="tool" saoffset="3459" salength="4" rank="54">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="개">8040</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="음경">106535</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="기계">134119</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="도구">108543</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="구">7081</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="developers" aoffset="3483" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="developers" saoffset="3483" salength="10" rank="62">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="소프트웨어 공학">146535</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프로그래머">22754</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="개발자">151088</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="maintenance" aoffset="3510" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="maintenance" saoffset="3510" salength="11" rank="73">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="정비">108281</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="input" aoffset="3600" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="input" saoffset="3600" salength="5" rank="58">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="입력">147063</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the process" aoffset="3609" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="the process" saoffset="3609" salength="11" rank="194">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="과정">495184</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="process" saoffset="3613" salength="7" rank="56">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프로세스">144784</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="프로세스 (동음이의)">154915</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="produces" aoffset="3626" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="produces" saoffset="3626" salength="8" rank="248">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="생산">156265</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="executable program" aoffset="3638" alength="18" ext_length="0">
+				<subanchor sarel="0" saname="executable program" saoffset="3638" salength="18" rank="54">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="실행 파일">146829</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="interpreted" aoffset="3681" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="interpreted" saoffset="3681" salength="11" rank="159">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="해석">277366</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="communicating" aoffset="3726" alength="13" ext_length="0">
+				<subanchor sarel="0" saname="communicating" saoffset="3726" salength="13" rank="215">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="통신">10468</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="algorithms" aoffset="3740" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="algorithms" saoffset="3740" salength="10" rank="69">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="알고리즘">727</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="연산">49789</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="people" aoffset="3759" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="people" saoffset="3759" salength="6" rank="179">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="물꽃마을 사람들">404123</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Programmers" aoffset="3891" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="Programmers" saoffset="3891" salength="11" rank="54">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프로그래머">22754</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="review" aoffset="3928" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="review" saoffset="3928" salength="6" rank="180">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="비평">280656</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="techniques" aoffset="3983" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="techniques" saoffset="3983" salength="10" rank="191">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="담금질 기법">111968</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="The sharing" aoffset="4080" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="The sharing" saoffset="4080" salength="11" rank="164">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="공유">140316</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="sharing" saoffset="4084" salength="7" rank="135">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="공유 (배우)">140298</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="공유">140316</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="cited" aoffset="4140" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="cited" saoffset="4140" salength="5" rank="225">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="인용">60296</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="factor" aoffset="4164" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="factor" saoffset="4164" salength="6" rank="176">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="인자">147241</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="maturation" aoffset="4178" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="maturation" saoffset="4178" salength="10" rank="67">
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="skills" aoffset="4210" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="skills" saoffset="4210" salength="6" rank="192">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="기술">2122</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="artistic" aoffset="4350" alength="8" ext_length="7">
+				<subanchor sarel="0" saname="artistic" saoffset="4350" salength="8" rank="218">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="예술">32679</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="artistic medium" saoffset="4350" salength="15" rank="177">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="예술">32679</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="medium" saoffset="4359" salength="6" rank="234">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="대중 매체">504600</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="수단">9533</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="중 구">492306</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="중용">106264</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="박수">62182</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="승려">112594</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Porting" aoffset="4461" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="Porting" saoffset="4461" salength="7" rank="31">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="태도">338716</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="창">41461</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="크로스 플랫폼">139008</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="이식">264566</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="항구">41483</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="가방">467599</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="computer platforms" aoffset="4487" alength="18" ext_length="0">
+				<subanchor sarel="0" saname="computer platforms" saoffset="4487" salength="18" rank="50">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="개인용 컴퓨터">451</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="컴퓨터">87460</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="platforms" saoffset="4496" salength="9" rank="54">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="승강장">93304</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="플랫폼">104525</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="고대">74245</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="portability" aoffset="4622" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="portability" saoffset="4622" salength="11" rank="38">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="이식">264566</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="computationally" aoffset="4647" alength="15" ext_length="10">
+				<subanchor sarel="0" saname="computationally" saoffset="4647" salength="15" rank="203">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="계산">15953</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="computationally expensive" saoffset="4647" salength="25" rank="51">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="계산">15953</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="알고리즘 분석">220298</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="options" aoffset="4693" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="options" saoffset="4693" salength="7" rank="136">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="옵션 (금융)">185324</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="옵션">185333</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="린이 시">112325</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="수의">116702</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="binary" aoffset="4709" alength="6" ext_length="12">
+				<subanchor sarel="0" saname="binary" saoffset="4709" salength="6" rank="34">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="이진">102126</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="이진법">20756</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="이진">481091</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="이진 (가수)">158913</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="이원">198928</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="binary translation" saoffset="4709" salength="18" rank="11">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="이진 (가수)">158913</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="translation" saoffset="4716" salength="11" rank="53">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="번역">9930</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="해석">277366</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="이전">226604</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="역">86094</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="emulation" aoffset="4732" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="emulation" saoffset="4732" salength="9" rank="32">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="기승">336929</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="경쟁">151620</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="에뮬레이터">139039</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="platform" aoffset="4758" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="platform" saoffset="4758" salength="8" rank="52">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="승강장">93304</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="플랫폼">104525</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="고대">74245</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="운영 체제">778</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="assembly code" aoffset="4863" alength="13" ext_length="0">
+				<subanchor sarel="0" saname="assembly code" saoffset="4863" salength="13" rank="11">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="어셈블리어">20868</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="high level language" aoffset="4885" alength="19" ext_length="0">
+				<subanchor sarel="0" saname="high level language" saoffset="4885" salength="19" rank="38">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="인간개발지수순 나라 목록">425384</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="고수준 언어">310352</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="고급 프로그래밍 언어">4087</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="adapt" aoffset="4938" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="adapt" saoffset="4938" salength="5" rank="209">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="적응">381564</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="from one" aoffset="4956" alength="8" ext_length="6">
+				<subanchor sarel="0" saname="from one" saoffset="4956" salength="8" rank="247">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="하나">202206</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="one piece" saoffset="4961" salength="9" rank="25">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="원피스">163620</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="원피스 (애니메이션)">191736</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="원피스 (만화)">163386</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="use" aoffset="4986" alength="3" ext_length="0">
+				<subanchor sarel="0" saname="use" saoffset="4986" salength="3" rank="236">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="사용">506837</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="other projects" aoffset="4993" alength="14" ext_length="0">
+				<subanchor sarel="0" saname="other projects" saoffset="4993" salength="14" rank="188">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="서울대학교 도서관">311225</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="projects" saoffset="4999" salength="8" rank="227">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="프로젝트">150395</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="concept" aoffset="5011" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="concept" saoffset="5011" salength="7" rank="72">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="개념">276655</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="software reusability" aoffset="5028" alength="20" ext_length="0">
+				<subanchor sarel="0" saname="software reusability" saoffset="5028" salength="20" rank="2">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="컴퓨터 소프트웨어">22495</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Licensing" aoffset="5074" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="Licensing" saoffset="5074" salength="9" rank="27">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="승낙">271440</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="면허">144251</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="특허">196299</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="falls" aoffset="5150" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="falls" saoffset="5150" salength="5" rank="187">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="폭포">91876</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="two" aoffset="5170" alength="3" ext_length="0">
+				<subanchor sarel="0" saname="two" saoffset="5170" salength="3" rank="223">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="두">388786</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="licensing" aoffset="5174" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="licensing" saoffset="5174" salength="9" rank="59">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="저작권">6366</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="면허">144251</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="paradigms" aoffset="5184" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="paradigms" saoffset="5184" salength="9" rank="48">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="패러다임">205909</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프로그래밍 패러다임">61953</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="free" aoffset="5195" alength="4" ext_length="9">
+				<subanchor sarel="0" saname="free" saoffset="5195" salength="4" rank="71">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="프리웨어">20895</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="공">79463</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="자유">33862</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="해방">321082</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="자유">364415</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="free software" saoffset="5195" salength="13" rank="11">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="자유 소프트웨어">352</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="자유">33862</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="proprietary" aoffset="5213" alength="11" ext_length="9">
+				<subanchor sarel="0" saname="proprietary" saoffset="5213" salength="11" rank="44">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="소유권">101121</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="소유">373266</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="proprietary software" saoffset="5213" salength="20" rank="8">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="클로즈드 소스">78727</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="클로즈드 볼트">46352</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="modify" aoffset="5329" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="modify" saoffset="5329" salength="6" rank="224">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="수정">100188</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="study" aoffset="5340" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="study" saoffset="5340" salength="5" rank="212">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="연구">185335</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="수학">9</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="secret" aoffset="5399" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="secret" saoffset="5399" salength="6" rank="130">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="비밀">164892</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="privately owned" aoffset="5413" alength="15" ext_length="0">
+				<subanchor sarel="0" saname="privately owned" saoffset="5413" salength="15" rank="221">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="개인">201490</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="owned" saoffset="5423" salength="5" rank="233">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="소유">373266</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Note" aoffset="5445" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="Note" saoffset="5445" salength="4" rank="193">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="노트">114328</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="음표">130826</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="freedom" aoffset="5472" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="freedom" saoffset="5472" salength="7" rank="66">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="자주성 (주체사상)">9858</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="불멸기원">67778</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="해제">102974</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="해방">321082</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="자유">33862</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="자유">364415</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="price" aoffset="5485" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="price" saoffset="5485" salength="5" rank="71">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="가">47856</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="금">55123</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="가치">142929</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="가격">150350</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="charge" aoffset="5532" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="charge" saoffset="5532" salength="6" rank="68">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="캐너비스">73245</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="탄약">110674</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="료">401516</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="전하">809</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="책">66370</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="세금">164201</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="free software license" aoffset="5570" alength="21" ext_length="0">
+				<subanchor sarel="0" saname="free software license" saoffset="5570" salength="21" rank="35">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="자유">33862</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="software license" saoffset="5575" salength="16" rank="23">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="컴퓨터 소프트웨어">22495</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="소프트웨어 라이선스">113881</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="license" saoffset="5584" salength="7" rank="70">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="자동차 운전면허">84464</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="승낙">271440</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="면허">144251</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="특허">196299</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="published" aoffset="5598" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="published" saoffset="5598" salength="9" rank="188">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="출판">186797</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="grant" aoffset="5626" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="grant" saoffset="5626" salength="5" rank="45">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="허가">261460</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="특허">196299</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="그랜트">35209</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="율리시스 그랜트">321889</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="부여">5138</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="교부">13357</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="하사">105152</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="freedoms" aoffset="5638" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="freedoms" saoffset="5638" salength="8" rank="21">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="표현의 자유">52193</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="자주성 (주체사상)">9858</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="불멸기원">67778</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="해제">102974</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="해방">321082</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="자유">33862</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="GNU General Public License" aoffset="5655" alength="26" ext_length="0">
+				<subanchor sarel="0" saname="GNU General Public License" saoffset="5655" salength="26" rank="1">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="GNU 일반 공중 사용 허가서">354</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="General" saoffset="5659" salength="7" rank="141">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="일반 상대론">151045</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="General Public" saoffset="5659" salength="14" rank="228">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="일반 상대론">151045</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="General Public License" saoffset="5659" salength="22" rank="9">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="GNU 일반 공중 사용 허가서">354</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Public" saoffset="5667" salength="6" rank="65">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="사회">141467</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="민중">81851</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="대중">344706</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="세계">14827</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="국민">47507</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="License" saoffset="5674" salength="7" rank="25">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="면허">144251</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="The GNU" aoffset="5691" alength="7" ext_length="4">
+				<subanchor sarel="0" saname="The GNU" saoffset="5691" salength="7" rank="185">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="GNU">312</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="GNU GPL" saoffset="5695" salength="7" rank="4">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="GNU 일반 공중 사용 허가서">354</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="GNU">312</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="GPL" saoffset="5699" salength="3" rank="18">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="GNU 일반 공중 사용 허가서">354</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the GNU operating system" aoffset="5743" alength="24" ext_length="0">
+				<subanchor sarel="0" saname="the GNU operating system" saoffset="5743" salength="24" rank="21">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="GNU">312</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="GNU operating system" saoffset="5747" salength="20" rank="20">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="GNU">312</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="operating system" saoffset="5751" salength="16" rank="24">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="실시간 운영 체제">2207</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="운영 체제">778</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="adopted" aoffset="5791" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="adopted" saoffset="5791" salength="7" rank="166">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="채택">227629</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="software projects" aoffset="5816" alength="17" ext_length="0">
+				<subanchor sarel="0" saname="software projects" saoffset="5816" salength="17" rank="165">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="컴퓨터 소프트웨어">22495</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Linux" aoffset="5846" alength="5" ext_length="7">
+				<subanchor sarel="0" saname="Linux" saoffset="5846" salength="5" rank="33">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="리눅스 배포판">56810</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="리눅스">753</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Linux kernel" saoffset="5846" salength="12" rank="4">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="리눅스 배포판">56810</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="리눅스 커널">157589</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="kernel" saoffset="5852" salength="6" rank="37">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="커널">363</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="커널">3398</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="copyright" aoffset="5916" alength="9" ext_length="5">
+				<subanchor sarel="0" saname="copyright" saoffset="5916" salength="9" rank="69">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="판권">463661</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="저작권">6366</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="copyright laws" saoffset="5916" salength="14" rank="5">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="저작권">6366</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="저작권법">6367</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="laws" saoffset="5926" salength="4" rank="142">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="법률">96071</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="trade" aoffset="5932" alength="5" ext_length="8">
+				<subanchor sarel="0" saname="trade" saoffset="5932" salength="5" rank="68">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="성매매">254999</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="매매">201338</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="교역">263128</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="카르텔">92311</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="시장">111005</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="난창 시">299186</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="trade secrecy" saoffset="5932" salength="13" rank="14">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="국제 무역">97207</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="secrecy" saoffset="5938" salength="7" rank="51">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="비밀">164892</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="사">144993</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="음">450204</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="베일">128882</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="patents" aoffset="5950" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="patents" saoffset="5950" salength="7" rank="44">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="특허">196299</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="특허법">196525</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="many pieces" aoffset="6014" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="many pieces" saoffset="6014" salength="11" rank="153">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="인구순 미국의 도시 목록">403971</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="pieces" saoffset="6019" salength="6" rank="172">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="조각">273842</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="retail" aoffset="6029" alength="6" ext_length="9">
+				<subanchor sarel="0" saname="retail" saoffset="6029" salength="6" rank="56">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="소매">294682</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="retail software" saoffset="6029" salength="15" rank="8">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="윈도 정품 혜택">178766</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="come" aoffset="6045" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="come" saoffset="6045" salength="4" rank="217">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="온">72113</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="end-user" aoffset="6058" alength="8" ext_length="18">
+				<subanchor sarel="0" saname="end-user" saoffset="6058" salength="8" rank="64">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="최종 사용자">89137</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="end-user license" saoffset="6058" salength="16" rank="129">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="최종 사용자">89137</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="end-user license agreement" saoffset="6058" salength="26" rank="9">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="최종 사용자">89137</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="license agreement" saoffset="6067" salength="17" rank="28">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="면허">144251</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="EULA" aoffset="6086" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="EULA" saoffset="6086" salength="4" rank="22">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="소프트웨어 라이선스 동의">142250</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="reverse" aoffset="6133" alength="7" ext_length="12">
+				<subanchor sarel="0" saname="reverse" saoffset="6133" salength="7" rank="118">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="전철역">93247</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="역">86094</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="reverse engineering" saoffset="6133" salength="19" rank="6">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="리버스 엔지니어링">196997</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="engineering" saoffset="6141" salength="11" rank="63">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="공학">432</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="analysis" aoffset="6154" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="analysis" saoffset="6154" salength="8" rank="67">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="분석">277364</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="해석">277366</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="회귀 분석">303110</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="정신분석학">9017</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="해석학">29586</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="modification" aoffset="6164" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="modification" saoffset="6164" salength="12" rank="163">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="수정">100188</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="변화">154916</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="움라우트">104559</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="copy" aoffset="6198" alength="4" ext_length="11">
+				<subanchor sarel="0" saname="copy" saoffset="6198" salength="4" rank="202">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="부">254039</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="copy protection" saoffset="6198" salength="15" rank="15">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="복사 방지">185723</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="복사 (물리학)">160174</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Types" aoffset="6216" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="Types" saoffset="6216" salength="5" rank="190">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="유형">105221</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="traditional" aoffset="6258" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="traditional" saoffset="6258" salength="11" rank="235">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="전통">265094</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="object" aoffset="6285" alength="6" ext_length="5">
+				<subanchor sarel="0" saname="object" saoffset="6285" salength="6" rank="66">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="오브젝트 파스칼">15813</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="오브젝트">152751</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="객체">221195</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="object code" saoffset="6285" salength="11" rank="13">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="목적 파일">150793</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="객체 (전산학)">221195</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="encryption" aoffset="6313" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="encryption" saoffset="6313" salength="10" rank="55">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="암호화">404550</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="부호화">453419</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="code obfuscation" aoffset="6325" alength="16" ext_length="0">
+				<subanchor sarel="0" saname="code obfuscation" saoffset="6325" salength="16" rank="8">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="난독화">471611</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="morphing" aoffset="6350" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="morphing" saoffset="6350" salength="8" rank="40">
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Legal" aoffset="6384" alength="5" ext_length="7">
+				<subanchor sarel="0" saname="Legal" saoffset="6384" salength="5" rank="114">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="법률">96071</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Legal issues" saoffset="6384" salength="12" rank="55">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="법률">96071</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="issues" saoffset="6390" salength="6" rank="165">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="문제">306706</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the United States" aoffset="6400" alength="17" ext_length="0">
+				<subanchor sarel="0" saname="the United States" saoffset="6400" salength="17" rank="32">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="미국">754</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="United" saoffset="6404" salength="6" rank="210">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="미국">754</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="United States" saoffset="6404" salength="13" rank="7">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="미국 축구 국가대표팀">71971</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="미국">754</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="위키백과:사랑방/2006년 1월">43238</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="States" saoffset="6411" salength="6" rank="150">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="미국">754</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="court" aoffset="6440" alength="5" ext_length="5">
+				<subanchor sarel="0" saname="court" saoffset="6440" salength="5" rank="65">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="법원">100713</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="의회">10916</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="아악">478364</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="구애">346756</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="궁전">28222</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="건축물">128492</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="미국 연방 대법원">124013</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="court case" saoffset="6440" salength="10" rank="60">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="법원">100713</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="민사소송법">15192</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the court" aoffset="6473" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="the court" saoffset="6473" salength="9" rank="218">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="법원">100713</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Constitutionally" aoffset="6529" alength="16" ext_length="10">
+				<subanchor sarel="0" saname="Constitutionally" saoffset="6529" salength="16" rank="34">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="미국의 헌법">125379</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="헌법">93330</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Constitutionally protected" saoffset="6529" salength="26" rank="239">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="헌법">93330</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="free speech" aoffset="6564" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="free speech" saoffset="6564" salength="11" rank="47">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="표현의 자유">52193</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="speech" saoffset="6569" salength="6" rank="184">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="게티즈버그 연설">77670</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="argued" aoffset="6603" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="argued" saoffset="6603" salength="6" rank="240">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="주장">288772</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="share" aoffset="6716" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="share" saoffset="6716" salength="5" rank="183">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="셰어 (소프트웨어)">282165</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="humour" aoffset="6722" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="humour" saoffset="6722" salength="6" rank="103">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="기분 좋은 날">362568</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="communication" aoffset="6784" alength="13" ext_length="0">
+				<subanchor sarel="0" saname="communication" saoffset="6784" salength="13" rank="44">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="통신">10468</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="통지">360674</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="말">7939</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="의사소통">152462</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="편지">23267</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="One" aoffset="6808" alength="3" ext_length="0">
+				<subanchor sarel="0" saname="One" saoffset="6808" salength="3" rank="38">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="One ~빛나는 계절로~">269152</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="nature" aoffset="6851" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="nature" saoffset="6851" salength="6" rank="43">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="자연">151097</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="University" aoffset="6897" alength="10" ext_length="14">
+				<subanchor sarel="0" saname="University" saoffset="6897" salength="10" rank="121">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="대학 (책)">106241</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="대학">29700</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="University of" saoffset="6897" salength="13" rank="231">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="대학">29700</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="University of California" saoffset="6897" salength="24" rank="22">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="캘리포니아 대학교">45278</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="캘리포니아 대학교 버클리">45169</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="캘리포니아 주">14285</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="California" saoffset="6911" salength="10" rank="27">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="아주 큰 파도 타기">123671</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="캘리포니아 주">14285</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="mathematics" aoffset="6922" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="mathematics" saoffset="6922" salength="11" rank="26">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="수리">473542</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="수학">9</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="professor" aoffset="6934" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="professor" saoffset="6934" salength="9" rank="40">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="교수">159463</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="교사">117152</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="피아노 연주자">21001</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Dan" aoffset="6944" alength="3" ext_length="10">
+				<subanchor sarel="0" saname="Dan" saoffset="6944" salength="3" rank="180">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="주공">102949</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Dan Bernstein" saoffset="6944" salength="13" rank="66">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="댄 브라운">63696</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Bernstein" saoffset="6948" salength="9" rank="36">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="레너드 번스타인">5905</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="번스타인">41035</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the internet" aoffset="6980" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="the internet" saoffset="6980" salength="12" rank="52">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="인터넷">93333</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="internet" saoffset="6984" salength="8" rank="33">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="인터넷">93333</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the time" aoffset="7055" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="the time" saoffset="7055" salength="8" rank="201">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="시간">31852</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="time" saoffset="7059" salength="4" rank="64">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="서머 타임">37947</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="시간">31852</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="타임">98856</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="encryption algorithms" aoffset="7065" alength="21" ext_length="0">
+				<subanchor sarel="0" saname="encryption algorithms" saoffset="7065" salength="21" rank="55">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="암호화">404550</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="classified" aoffset="7092" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="classified" saoffset="7092" salength="10" rank="125">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="분류">155087</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="munitions" aoffset="7106" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="munitions" saoffset="7106" salength="9" rank="66">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="군수품">466227</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="병기">168241</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="United States government" aoffset="7123" alength="24" ext_length="0">
+				<subanchor sarel="0" saname="United States government" saoffset="7123" salength="24" rank="26">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="미국 축구 국가대표팀">71971</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="미국 연방 정부">227982</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="government" saoffset="7137" salength="10" rank="63">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="이사회">336188</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="행정">215943</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="국가">47491</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="정치학">2822</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="정부">5210</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="exporting" aoffset="7149" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="exporting" saoffset="7149" salength="9" rank="221">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="수출">245490</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="other countries" aoffset="7173" alength="15" ext_length="0">
+				<subanchor sarel="0" saname="other countries" saoffset="7173" salength="15" rank="154">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="기타">588</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="countries" saoffset="7179" salength="9" rank="133">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="국가 (노래)">3963</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="국가">47491</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="issue" aoffset="7207" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="issue" saoffset="7207" salength="5" rank="235">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="문제">306706</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="national" aoffset="7216" alength="8" ext_length="9">
+				<subanchor sarel="0" saname="national" saoffset="7216" salength="8" rank="112">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="콘퍼런스 내셔널">259829</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="내셔널">142401</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="national security" saoffset="7216" salength="17" rank="32">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="국가 (노래)">3963</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="국방">2714</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="security" saoffset="7225" salength="8" rank="99">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="보안">152511</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the State Department" aoffset="7261" alength="20" ext_length="0">
+				<subanchor sarel="0" saname="the State Department" saoffset="7261" salength="20" rank="207">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="국무부">352562</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="State" saoffset="7265" salength="5" rank="61">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="국가 (노래)">3963</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="국가 (동음이의)">47522</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="State Department" saoffset="7265" salength="16" rank="27">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="국무부">352562</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="주 현">349985</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="나라 현">26665</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="미국 국무부">53320</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Department" saoffset="7271" salength="10" rank="51">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="학부">245933</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="학부 (대한제국)">476292</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Electronic" aoffset="7287" alength="10" ext_length="20">
+				<subanchor sarel="0" saname="Electronic" saoffset="7287" salength="10" rank="74">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="전자">10200</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Electronic Frontier Foundation" saoffset="7287" salength="30" rank="6">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="전자">10200</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Frontier" saoffset="7298" salength="8" rank="39">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="디지몬 프론티어">236587</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프론티어">389120</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="강계시">90010</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="카이펑 시">42377</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="국경">38661</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Foundation" saoffset="7307" salength="10" rank="210">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="심">153085</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="증여">102972</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="정관">369666</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="재단법인">111040</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="바닥">330050</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="연애의 기초">401520</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="파운데이션">106694</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="sued" aoffset="7318" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="sued" saoffset="7318" salength="4" rank="131">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="민사소송법">15192</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="고소">263180</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="U.S" aoffset="7327" alength="3" ext_length="12">
+				<subanchor sarel="0" saname="U.S" saoffset="7327" salength="3" rank="205">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="미국">754</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="U.S. government" saoffset="7327" salength="15" rank="25">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="미국">754</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Bernstein's" aoffset="7346" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="Bernstein's" saoffset="7346" salength="11" rank="58">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="레너드 번스타인">5905</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="First Amendment" aoffset="7433" alength="15" ext_length="0">
+				<subanchor sarel="0" saname="First Amendment" saoffset="7433" salength="15" rank="29">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="RBC">241588</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Amendment" saoffset="7439" salength="9" rank="224">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="개선">151092</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="2007 개정 교육과정">382739</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Quality" aoffset="7474" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="Quality" saoffset="7474" salength="7" rank="22">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="질 (철학)">450580</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="The way" aoffset="7494" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="The way" saoffset="7494" salength="7" rank="216">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="방법">277069</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="way" saoffset="7498" salength="3" rank="219">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="방법">277069</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="consequences" aoffset="7542" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="consequences" saoffset="7542" salength="12" rank="162">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="결과">467739</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="programming style" aoffset="7593" alength="17" ext_length="7">
+				<subanchor sarel="0" saname="programming style" saoffset="7593" salength="17" rank="70">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="컴퓨터 프로그래밍">22756</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="style" saoffset="7605" salength="5" rank="186">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="스타일 (드라마)">354559</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="스타일">211703</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="style guides" saoffset="7605" salength="12" rank="199">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="스타일 (드라마)">354559</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="guides" saoffset="7611" salength="6" rank="208">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="가이드">157240</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="stress" aoffset="7625" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="stress" saoffset="7625" salength="6" rank="38">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="무게">56405</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="변형력">179</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="악센트">22935</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="스트레스 (동음이의)">114000</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="스트레스">455941</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="고조">82405</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="readability" aoffset="7632" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="readability" saoffset="7632" salength="11" rank="50">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="가독성">115916</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="conventions" aoffset="7671" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="conventions" saoffset="7671" salength="11" rank="124">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="컨벤션">484882</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="국제조약">476753</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="회">48732</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="조약">146265</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="규칙">158327</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="상례">277445</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="debugging" aoffset="7756" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="debugging" saoffset="7756" salength="9" rank="28">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="디버그">736</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="speed" aoffset="7810" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="speed" saoffset="7810" salength="5" rank="62">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="SPEED">288008</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="셔터 속도">203714</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="메스암페타민">152408</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="속력">14257</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="속도">274</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="취미">20839</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="execution" aoffset="7832" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="execution" saoffset="7832" salength="9" rank="57">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="실행">151065</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="실행 파일">146829</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="강제집행">266700</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="사형">12692</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="compile" aoffset="7861" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="compile" saoffset="7861" salength="7" rank="46">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="컴파일">89887</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the program" aoffset="7869" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="the program" saoffset="7869" salength="11" rank="204">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="프로그램">551</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="architectures" aoffset="7894" alength="13" ext_length="0">
+				<subanchor sarel="0" saname="architectures" saoffset="7894" salength="13" rank="55">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="컴퓨터 구조">146962</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="명령어 집합">195514</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="건축학">96509</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="구성">266991</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="건축물">128492</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="건축">96512</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="code readability" aoffset="7920" alength="16" ext_length="0">
+				<subanchor sarel="0" saname="code readability" saoffset="7920" salength="16" rank="38">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="가독성">115916</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="consideration" aoffset="7954" alength="13" ext_length="0">
+				<subanchor sarel="0" saname="consideration" saoffset="7954" salength="13" rank="140">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="사례금">151617</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="고려">74136</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="동기">271447</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="심리학">681</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="가치">142929</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="고사">288290</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="purpose" aoffset="8025" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="purpose" saoffset="8025" salength="7" rank="196">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="목적">183181</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="China" aoffset="8125" alength="5" ext_length="23">
+				<subanchor sarel="0" saname="China" saoffset="8125" salength="5" rank="21">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="도자기">169343</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="중국 (동음이의)">85808</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="이 (해부학)">28892</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="타이완">4959</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="중국">2206</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="중화인민공화국">2205</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="지나">101627</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="China Compulsory Certificate" saoffset="8125" salength="28" rank="3">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="중국">2206</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Compulsory" saoffset="8131" salength="10" rank="232">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="다하우 강제 수용소">175366</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Certificate" saoffset="8142" salength="11" rank="97">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="주권">56811</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="허가">261460</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="인증">150922</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="유가증권">201534</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="사증">84652</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Legacy" aoffset="8196" alength="6" ext_length="5">
+				<subanchor sarel="0" saname="Legacy" saoffset="8196" salength="6" rank="117">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="유물">140797</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="유산">267134</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Legacy code" saoffset="8196" salength="11" rank="54">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="윈도 구형 PC를 위한 펀더멘털">114139</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Machine" aoffset="8250" alength="7" ext_length="5">
+				<subanchor sarel="0" saname="Machine" saoffset="8250" salength="7" rank="128">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="기계">134119</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Machine code" saoffset="8250" salength="12" rank="17">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="기계어">8993</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Open-source" aoffset="8305" alength="11" ext_length="9">
+				<subanchor sarel="0" saname="Open-source" saoffset="8305" salength="11" rank="33">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="오픈 소스">502</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Open-source software" saoffset="8305" salength="20" rank="23">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="오픈 소스 소프트웨어">143106</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="오픈 소스">502</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Obfuscated" aoffset="8368" alength="10" ext_length="5">
+				<subanchor sarel="0" saname="Obfuscated" saoffset="8368" salength="10" rank="33">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="버림">78729</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Obfuscated code" saoffset="8368" salength="15" rank="0">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="난독화">471611</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Object" aoffset="8426" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="Object" saoffset="8426" salength="6" rank="29">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="객관">276625</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="오브젝트">152751</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="객체 (전산학)">221195</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Programming" aoffset="8480" alength="11" ext_length="9">
+				<subanchor sarel="0" saname="Programming" saoffset="8480" salength="11" rank="10">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프로그래밍 (동음이의)">144269</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Programming language" saoffset="8480" salength="20" rank="2">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프로그래밍 언어">1841</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Source code repository" aoffset="8603" alength="22" ext_length="0">
+				<subanchor sarel="0" saname="Source code repository" saoffset="8603" salength="22" rank="74">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="소스 (음식)">278417</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="code repository" saoffset="8610" salength="15" rank="198">
+				</subanchor>
+				<subanchor sarel="0" saname="repository" saoffset="8615" salength="10" rank="121">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="저장 성">34733</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="박물관">168544</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="봉안당">63372</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="곳간">443260</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Syntax" aoffset="8668" alength="6" ext_length="13">
+				<subanchor sarel="0" saname="Syntax" saoffset="8668" salength="6" rank="35">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="통사론">8948</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Syntax highlighting" saoffset="8668" salength="19" rank="10">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="구문 강조">150821</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="구문 오류">239829</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Extending" aoffset="8776" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="Extending" saoffset="8776" salength="9" rank="171">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="물리 주소 확장">150819</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Python" aoffset="8804" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="Python" saoffset="8804" salength="6" rank="31">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="신탁">323575</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="예언자">77678</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="파이톤 5 미사일">63328</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="피톤">282619</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="이무기">124723</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="파이썬">6653</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Interpreter" aoffset="8811" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="Interpreter" saoffset="8811" salength="11" rank="12">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="인터프리터">626</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Documentation" aoffset="8837" alength="13" ext_length="0">
+				<subanchor sarel="0" saname="Documentation" saoffset="8837" salength="13" rank="113">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="고증학">276395</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="자료">777</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="문서">148351</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="http" aoffset="8928" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="http" saoffset="8928" salength="4" rank="191">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="HTTP">2149</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Code Reading" aoffset="9013" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="Code Reading" saoffset="9013" salength="12" rank="56">
+				</subanchor>
+				<subanchor sarel="0" saname="Reading" saoffset="9018" salength="7" rank="53">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="레딩">101517</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="레딩 FC">106496</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="읽기">176025</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Open Source" aoffset="9031" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="Open Source" saoffset="9031" salength="11" rank="25">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="오픈 소스">502</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Perspective" aoffset="9043" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="Perspective" saoffset="9043" salength="11" rank="211">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="원근법">15941</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="기후 전망 (대한민국)">424952</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="시각">110370</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Professional" aoffset="9076" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="Professional" saoffset="9076" salength="12" rank="183">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="가">47856</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="직업">81848</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="ISBN" aoffset="9096" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="ISBN" saoffset="9096" salength="4" rank="184">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="국제 표준 도서 번호">78875</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Art" aoffset="9143" alength="3" ext_length="0">
+				<subanchor sarel="0" saname="Art" saoffset="9143" salength="3" rank="83">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="예술">32679</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Computer" aoffset="9151" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="Computer" saoffset="9151" salength="8" rank="21">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="컴퓨터">87460</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Recovery" aoffset="9422" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="Recovery" saoffset="9422" salength="8" rank="123">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="간척">151324</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="회복">488659</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="화이허">293827</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="원상회복">119593</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Van" aoffset="9436" alength="3" ext_length="0">
+				<subanchor sarel="0" saname="Van" saoffset="9436" salength="3" rank="108">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="선구자">11462</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="반">417709</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="전위">817</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="키">379467</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="라선특별시">90014</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="날개">141276</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Waddington" aoffset="9455" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="Waddington" saoffset="9455" salength="10" rank="71">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="웨딩 드레스">403053</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Conference" aoffset="9483" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="Conference" saoffset="9483" salength="10" rank="129">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="콘퍼런스">181336</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="풋볼 콘퍼런스">191240</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Engineering" aoffset="9505" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="Engineering" saoffset="9505" salength="11" rank="14">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="공학">432</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Delft" aoffset="9523" alength="5" ext_length="13">
+				<subanchor sarel="0" saname="Delft" saoffset="9523" salength="5" rank="48">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="델프트">105761</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Delft, Netherlands" saoffset="9523" salength="18" rank="40">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="델프트">105761</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Netherlands" saoffset="9530" salength="11" rank="26">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="네덜란드">7757</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="홀란트">120192</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Extended" aoffset="9661" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="Extended" saoffset="9661" salength="8" rank="247">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="물리 주소 확장">150819</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="version" aoffset="9670" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="version" saoffset="9670" salength="7" rank="213">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="버전">245829</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the paper" aoffset="9681" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="the paper" saoffset="9681" salength="9" rank="154">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="종이">20808</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="paper" saoffset="9685" salength="5" rank="104">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="종이">20808</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="숙제">149278</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="보">223259</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="유가증권">201534</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="신문">46967</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="links" aoffset="9752" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="links" saoffset="9752" salength="5" rank="241">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="링크 (웹 브라우저)">147017</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Definition" aoffset="9903" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="Definition" saoffset="9903" salength="10" rank="146">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="정의 (논리학)">277363</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="정의">104747</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="-" aoffset="9924" alength="1" ext_length="0">
+				<subanchor sarel="0" saname="-" saoffset="9924" salength="1" rank="44">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="-">93086</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Information" aoffset="9939" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="Information" saoffset="9939" salength="11" rank="13">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="정보">324</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Project" aoffset="9951" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="Project" saoffset="9951" salength="7" rank="23">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프로젝트">150395</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="google" aoffset="10061" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="google" saoffset="10061" salength="6" rank="72">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="구글">187</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="구글링">463669</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Google" aoffset="10086" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="Google" saoffset="10086" salength="6" rank="67">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="구글">187</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="구글 (동음이의)">11010</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="구글링">463669</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="public" aoffset="10093" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="public" saoffset="10093" salength="6" rank="137">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="공개 API">317748</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="code search" aoffset="10107" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="code search" saoffset="10107" salength="11" rank="167">
+				</subanchor>
+				<subanchor sarel="0" saname="search" saoffset="10112" salength="6" rank="160">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="수색">331135</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="wiki" aoffset="10266" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="wiki" saoffset="10266" salength="4" rank="72">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="위키">49</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Online" aoffset="10407" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="Online" saoffset="10407" salength="6" rank="220">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="온라인과 오프라인">163315</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="이음">23017</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="code sharing" aoffset="10421" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="code sharing" saoffset="10421" salength="12" rank="61">
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Programmer" aoffset="10622" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="Programmer" saoffset="10622" salength="10" rank="13">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프로그래머">22754</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Live" aoffset="10650" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="Live" saoffset="10650" salength="4" rank="170">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="라이브">178337</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Ko" title="윈도 라이브">155117</tobep>
+				</subanchor>
+			</anchor>
+		</outgoinglinks>
+	</topic>
+</crosslink-assessment>
