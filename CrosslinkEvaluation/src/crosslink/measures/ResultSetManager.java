@@ -71,11 +71,11 @@ public class ResultSetManager {
 //        
         resultsetPath.append(RESULTSET_PARENT_PATH  + File.separator);
         
-        String resultsetFormalPath = resultsetPath.toString() + "formal";
+        String resultsetFormalPath = resultsetPath.toString() + "test";
         if (!new File(resultsetFormalPath).exists())
         	resultsetPath.append("training");
         else
-        	resultsetPath.append("formal");
+        	resultsetPath.append("test");
         
         resultsetPath.append(File.separator);
 	}
