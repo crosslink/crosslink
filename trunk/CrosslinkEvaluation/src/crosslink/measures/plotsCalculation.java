@@ -20,6 +20,7 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 
+import crosslink.measures.metricsCalculation.EvaluationResult;
 import crosslink.resultsetGenerator.LtwResultsetType;
 import crosslink.rungenerator.InexSubmission;
 
@@ -60,7 +61,7 @@ public final class plotsCalculation extends Data {
         isAnchorGToFile = useAnchorToFile ? true : false;
         isAnchorGToBEP = useAnchorToBEP ? true : false;
 
-        PRCurveResult plotResult = new PRCurveResult();
+        PRCurveResult plotResult = null;
         // resultTable: <topicID_outgoing, link> & <topicID_incoming, link>
         // runTable: <topicID_outgoing, link> & <topicID_incoming, link>
         Hashtable resultTable = null;
@@ -71,187 +72,191 @@ public final class plotsCalculation extends Data {
 
         } else {
             runTable = getRunSet(runfile, lang);
-            resultTable = getResultSetLinks(/*resultfile*/);
-
-            // =================================================================
-            // get Run ID: QUT_LTW_RUN_003
-            plotResult.plotRunId = runId;
-
-            // =================================================================
-//            HashMap incomingPRData = new HashMap();
-            HashMap outgoingPRData = new HashMap();
-
-            double incomingAPs = 0.0;
-            double outgoingAPs = 0.0;
-            double recallLevel = 0.0;
-            double precAtR = 0.0;
-            // =================================================================
-
-            // Loop each Topic: all Topics in each Run
-            int runcount = 0;
-            for (Enumeration e = runTable.keys(); e.hasMoreElements();) {
-
-                runcount++;
-                double mCount = 0;
-                double anchorScore = 0.0;
-                // key is Topic ID_outgoing/incoming
-                String key = e.nextElement().toString();
-                if (key.endsWith(incomingTag))
-                	continue;
-
-                // get RUN link ID Array according to key
-                String[] runValues = (String[]) runTable.get(key);
-                // get ResultSet link ID Array according to key
-                String[] resultSet = (String[]) resultTable.get(key);
-
-                // =============================================================
-                // Run:
-                // group BEP links by Anchor
-                // ResultSet:
-                // get total number of Anchors for this Topic: key: Outgoing / Incoming
-                int rsAnchorNoPerTopic = 0;
-                Hashtable<String, Vector> runHT = new Hashtable<String, Vector>();
-                Vector runIndexV = new Vector();
-                // =============================================================
-                // =============================================================
-                double APinR = 0.0;
-                HashMap<Double, Double> RPmap = new HashMap<Double, Double>();
-                if (runValues[0].equals("") && runValues.length == 1) {
-                    if (resultSet[0].equals("") && resultSet.length == 1) {
-                        for (int k = 0; k < FormalRecallLevel.length; k++) {
-                            precAtR = 1.0;
-                            RPmap.put(FormalRecallLevel[k], precAtR);
-                        }
-                    } else {
-                        for (int m = 0; m < FormalRecallLevel.length; m++) {
-                            precAtR = 0.0;
-                            RPmap.put(FormalRecallLevel[m], precAtR);
-                        }
-                    }
-                } else {
-                    // Get non-duplicate run items
-                    List plotItemsList = new ArrayList();
-                    for (int i = 0; i < runValues.length; i++) {
-                        String item = runValues[i];
-                        if (!plotItemsList.contains(item)) {
-                            plotItemsList.add(item);
-                        }
-                    }
-                    String[] plotItems = (String[]) plotItemsList.toArray(new String[plotItemsList.size()]);
-                    // =========================================================
-                    // Loop each BEP link inside a Topic
-                    int k = 0;
-                    for (int i = 0; i < plotItems.length; i++) {
-                        k = k + 1;
-                        // get link ID at position i
-                        String link = plotItems[i].toString().trim();
-                        boolean isMatched = false;
-                        // Check the (incoming/outgoing) link with Result Set
-                        for (int j = 0; j < resultSet.length; j++) {
-                            if (link.equalsIgnoreCase(resultSet[j].trim())) {
-                                isMatched = true;
-                                break;
-                            }
-                        }
-                        if (isMatched) {
-                            mCount = mCount + 1;   // matched count: # of documents @ N
-                            // =================================================
-                            precAtR = (double) mCount / (k);
-//                            APinR += (double) mCount / (k);
-//                            if (mCount > 0) {
-//                                precAtR = (double) APinR / (mCount);
-//                            } else {
-//                                precAtR = 0;
-//                            }
-                            // -------------------------------------------------
-                            if (useRestrictedNum) {
-                                // restrict the number of outgoing/incoming links
-                                //
-                                if (key.endsWith(outgoingTag)) {
-                                    int minResultNum = Math.min(limitedOutLinks, resultSet.length);
-                                    recallLevel = (double) mCount / minResultNum;
-                                } else {
-                                    int minResultNum = Math.min(limitedInLinks, resultSet.length);
-                                    recallLevel = (double) mCount / minResultNum;
-                                }
-                            } else {
-                                recallLevel = (double) mCount / resultSet.length;
-                            }
-                            // -------------------------------------------------
-                            RPmap.put(recallLevel, precAtR);
-                        }
-                    }
-                    
-                    log(key + " found " + mCount + " matches");
-                }
-                HashMap InterpolatedPR = PRPairFormalization(RPmap);
-                if (key.endsWith(outgoingTag)) {
-                    outgoingPRData.put(key, InterpolatedPR);
-                } /*else if (key.endsWith(incomingTag)) {
-                    incomingPRData.put(key, InterpolatedPR);
-                }*/
-            }
-            // =================================================================
-            // For incoming links: calculate the average precision score
-            //                     for each submission
-//            for (int j = 0; j < FormalRecallLevel.length; j++) {
-//                int inCount = 0;
-//                double inaveP = 0.0;
-//                Iterator in = incomingPRData.keySet().iterator();
-//                while (in.hasNext()) {
-//                    Object inKey = in.next();
-//                    HashMap inAvePR = (HashMap) incomingPRData.get(inKey);
-//                    Double v = (Double) inAvePR.get(FormalRecallLevel[j]);
-//                    inaveP += v;
-//                    inCount++;
-//                }
-//                // -------------------------------------------------------------
-//                double inAP = 0.0;
-//                if (isUseAllTopics) {
-//                    inAP = (double) inaveP / (resultTable.size() / 2);
-//                } else {
-//                    inAP = (double) inaveP / inCount;
-//                }
-//                // -------------------------------------------------------------
-//                plotResult.incomming[j] = inAP;
-//            }
-            // =================================================================
-            // For outgoing links: calculate the average precision score
-            //                     for each submission
-            for (int k = 0; k < FormalRecallLevel.length; k++) {
-                int otCount = 0;
-                double otaveP = 0.0;
-                Iterator ot = outgoingPRData.keySet().iterator();
-                while (ot.hasNext()) {
-                    Object otKey = ot.next();
-                    HashMap otAvePR = (HashMap) outgoingPRData.get(otKey);
-                    otaveP += (Double) otAvePR.get(FormalRecallLevel[k]);
-                    otCount++;
-                }
-                // -------------------------------------------------------------
-                // resultTable contains topics of outgoing and incoming
-                double otAP = 0.0;
-                if (isUseAllTopics) {
-                    otAP = (double) otaveP / (resultTable.size() / 2);
-                } else {
-                    otAP = (double) otaveP / otCount;
-                }
-                // -------------------------------------------------------------
-                plotResult.outgoing[k] = otAP;
-            }
-            // =================================================================
-            // For F-Score (combination of outgoing and incoming)
-            for (int m = 0; m < FormalRecallLevel.length; m++) {
-                if ((plotResult.incomming[m] + plotResult.outgoing[m]) > 0) {
-                    plotResult.combination[m] =
-                            (2 * (plotResult.incomming[m] * plotResult.outgoing[m])) / (plotResult.incomming[m] + plotResult.outgoing[m]);
-                } else {
-                    plotResult.combination[m] = 0.0;
-                }
-            }
-            // =================================================================
-            // =================================================================
-            // End of File-To-File Plot calculation
+            
+            if (runTable != null) {
+            	plotResult = new PRCurveResult();
+	            resultTable = getResultSetLinks(/*resultfile*/);
+	
+	            // =================================================================
+	            // get Run ID: QUT_LTW_RUN_003
+	            plotResult.plotRunId = runId;
+	
+	            // =================================================================
+	//            HashMap incomingPRData = new HashMap();
+	            HashMap outgoingPRData = new HashMap();
+	
+	            double incomingAPs = 0.0;
+	            double outgoingAPs = 0.0;
+	            double recallLevel = 0.0;
+	            double precAtR = 0.0;
+	            // =================================================================
+	
+	            // Loop each Topic: all Topics in each Run
+	            int runcount = 0;
+	            for (Enumeration e = runTable.keys(); e.hasMoreElements();) {
+	
+	                runcount++;
+	                double mCount = 0;
+	                double anchorScore = 0.0;
+	                // key is Topic ID_outgoing/incoming
+	                String key = e.nextElement().toString();
+	                if (key.endsWith(incomingTag))
+	                	continue;
+	
+	                // get RUN link ID Array according to key
+	                String[] runValues = (String[]) runTable.get(key);
+	                // get ResultSet link ID Array according to key
+	                String[] resultSet = (String[]) resultTable.get(key);
+	
+	                // =============================================================
+	                // Run:
+	                // group BEP links by Anchor
+	                // ResultSet:
+	                // get total number of Anchors for this Topic: key: Outgoing / Incoming
+	                int rsAnchorNoPerTopic = 0;
+	                Hashtable<String, Vector> runHT = new Hashtable<String, Vector>();
+	                Vector runIndexV = new Vector();
+	                // =============================================================
+	                // =============================================================
+	                double APinR = 0.0;
+	                HashMap<Double, Double> RPmap = new HashMap<Double, Double>();
+	                if (runValues[0].equals("") && runValues.length == 1) {
+	                    if (resultSet[0].equals("") && resultSet.length == 1) {
+	                        for (int k = 0; k < FormalRecallLevel.length; k++) {
+	                            precAtR = 1.0;
+	                            RPmap.put(FormalRecallLevel[k], precAtR);
+	                        }
+	                    } else {
+	                        for (int m = 0; m < FormalRecallLevel.length; m++) {
+	                            precAtR = 0.0;
+	                            RPmap.put(FormalRecallLevel[m], precAtR);
+	                        }
+	                    }
+	                } else {
+	                    // Get non-duplicate run items
+	                    List plotItemsList = new ArrayList();
+	                    for (int i = 0; i < runValues.length; i++) {
+	                        String item = runValues[i];
+	                        if (!plotItemsList.contains(item)) {
+	                            plotItemsList.add(item);
+	                        }
+	                    }
+	                    String[] plotItems = (String[]) plotItemsList.toArray(new String[plotItemsList.size()]);
+	                    // =========================================================
+	                    // Loop each BEP link inside a Topic
+	                    int k = 0;
+	                    for (int i = 0; i < plotItems.length; i++) {
+	                        k = k + 1;
+	                        // get link ID at position i
+	                        String link = plotItems[i].toString().trim();
+	                        boolean isMatched = false;
+	                        // Check the (incoming/outgoing) link with Result Set
+	                        for (int j = 0; j < resultSet.length; j++) {
+	                            if (link.equalsIgnoreCase(resultSet[j].trim())) {
+	                                isMatched = true;
+	                                break;
+	                            }
+	                        }
+	                        if (isMatched) {
+	                            mCount = mCount + 1;   // matched count: # of documents @ N
+	                            // =================================================
+	                            precAtR = (double) mCount / (k);
+	//                            APinR += (double) mCount / (k);
+	//                            if (mCount > 0) {
+	//                                precAtR = (double) APinR / (mCount);
+	//                            } else {
+	//                                precAtR = 0;
+	//                            }
+	                            // -------------------------------------------------
+	                            if (useRestrictedNum) {
+	                                // restrict the number of outgoing/incoming links
+	                                //
+	                                if (key.endsWith(outgoingTag)) {
+	                                    int minResultNum = Math.min(limitedOutLinks, resultSet.length);
+	                                    recallLevel = (double) mCount / minResultNum;
+	                                } else {
+	                                    int minResultNum = Math.min(limitedInLinks, resultSet.length);
+	                                    recallLevel = (double) mCount / minResultNum;
+	                                }
+	                            } else {
+	                                recallLevel = (double) mCount / resultSet.length;
+	                            }
+	                            // -------------------------------------------------
+	                            RPmap.put(recallLevel, precAtR);
+	                        }
+	                    }
+	                    
+	                    log(key + " found " + mCount + " matches");
+	                }
+	                HashMap InterpolatedPR = PRPairFormalization(RPmap);
+	                if (key.endsWith(outgoingTag)) {
+	                    outgoingPRData.put(key, InterpolatedPR);
+	                } /*else if (key.endsWith(incomingTag)) {
+	                    incomingPRData.put(key, InterpolatedPR);
+	                }*/
+	            }
+	            // =================================================================
+	            // For incoming links: calculate the average precision score
+	            //                     for each submission
+	//            for (int j = 0; j < FormalRecallLevel.length; j++) {
+	//                int inCount = 0;
+	//                double inaveP = 0.0;
+	//                Iterator in = incomingPRData.keySet().iterator();
+	//                while (in.hasNext()) {
+	//                    Object inKey = in.next();
+	//                    HashMap inAvePR = (HashMap) incomingPRData.get(inKey);
+	//                    Double v = (Double) inAvePR.get(FormalRecallLevel[j]);
+	//                    inaveP += v;
+	//                    inCount++;
+	//                }
+	//                // -------------------------------------------------------------
+	//                double inAP = 0.0;
+	//                if (isUseAllTopics) {
+	//                    inAP = (double) inaveP / (resultTable.size() / 2);
+	//                } else {
+	//                    inAP = (double) inaveP / inCount;
+	//                }
+	//                // -------------------------------------------------------------
+	//                plotResult.incomming[j] = inAP;
+	//            }
+	            // =================================================================
+	            // For outgoing links: calculate the average precision score
+	            //                     for each submission
+	            for (int k = 0; k < FormalRecallLevel.length; k++) {
+	                int otCount = 0;
+	                double otaveP = 0.0;
+	                Iterator ot = outgoingPRData.keySet().iterator();
+	                while (ot.hasNext()) {
+	                    Object otKey = ot.next();
+	                    HashMap otAvePR = (HashMap) outgoingPRData.get(otKey);
+	                    otaveP += (Double) otAvePR.get(FormalRecallLevel[k]);
+	                    otCount++;
+	                }
+	                // -------------------------------------------------------------
+	                // resultTable contains topics of outgoing and incoming
+	                double otAP = 0.0;
+	                if (isUseAllTopics) {
+	                    otAP = (double) otaveP / (resultTable.size() / 2);
+	                } else {
+	                    otAP = (double) otaveP / otCount;
+	                }
+	                // -------------------------------------------------------------
+	                plotResult.outgoing[k] = otAP;
+	            }
+	            // =================================================================
+	            // For F-Score (combination of outgoing and incoming)
+	            for (int m = 0; m < FormalRecallLevel.length; m++) {
+	                if ((plotResult.incomming[m] + plotResult.outgoing[m]) > 0) {
+	                    plotResult.combination[m] =
+	                            (2 * (plotResult.incomming[m] * plotResult.outgoing[m])) / (plotResult.incomming[m] + plotResult.outgoing[m]);
+	                } else {
+	                    plotResult.combination[m] = 0.0;
+	                }
+	            }
+	            // =================================================================
+	            // =================================================================
+	            // End of File-To-File Plot calculation
+	        }
         }
         return plotResult;
     }
