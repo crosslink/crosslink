@@ -5,6 +5,10 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.LinkedList;
 
+import com.spreada.utils.chinese.ZHConverter;
+
+import ltwassessment.AppResource;
+
 public class LinkedAnchors extends LinkedList<Anchor> {
 
 	/**
@@ -21,10 +25,17 @@ public class LinkedAnchors extends LinkedList<Anchor> {
 	}
 	
 	public void insert(Anchor anchor) {
-		if (!anchorMap.containsKey(anchor.getName()))
-			anchorMap.put(anchor.getName(), anchor);
+		String key = anchor.getName();
+		if (AppResource.sourceLang.equalsIgnoreCase("zh")) {
+			key = ZHConverter.convert(key, ZHConverter.SIMPLIFIED);
+			
+			if (!key.equals(anchor.getName()))
+				System.err.println("Converted anchor name from: " + anchor.getName() + ", to " + key);
+		}
+		if (!anchorMap.containsKey(key))
+			anchorMap.put(key, anchor);
 		else {
-			anchorMap.get(anchor.getName()).addTargets(anchor.getTargets());
+			anchorMap.get(key).addTargets(anchor.getTargets());
 			return;
 		}
 		
