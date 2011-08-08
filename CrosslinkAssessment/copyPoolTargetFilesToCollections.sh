@@ -4,11 +4,11 @@ HOME_PATH=`dirname $0`
 
 #langs="ja"
 lang=$1
-POOL_PATH=$2
+POOL_PATH=resources/Pool
 
 
 if ! [ -n "$POOL_PATH" ]; then
-	echo "Usage: $0 [CJK document collections path]"
+	echo "Usage: $0 [lang] [pool path]"
 	exit -1
 fi
 
