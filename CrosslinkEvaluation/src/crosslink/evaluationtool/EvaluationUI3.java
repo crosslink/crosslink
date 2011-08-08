@@ -5,6 +5,7 @@
  */
 package crosslink.evaluationtool;
 
+import crosslink.measures.Data;
 import crosslink.measures.ResultSetManager;
 import java.awt.Color;
 import java.awt.Point;
@@ -64,6 +65,7 @@ public class EvaluationUI3 extends JFrame {
     private static void errlog(Object aObject) {
         System.err.println(String.valueOf(aObject));
     }
+    private int langSelected = Data.LANGUAGE_CHINESE;
 
     /** Creates new form EvaluationUI */
     public EvaluationUI3() {
@@ -73,6 +75,8 @@ public class EvaluationUI3 extends JFrame {
 
 
         initComponents();
+        
+        jRadioLangZh.setSelected(true);
 
         jRBA2BWikirs.setVisible(false);
         if (!ResultSetManager.getInstance().checkIfManualResultSetAvailable())
@@ -97,6 +101,7 @@ public class EvaluationUI3 extends JFrame {
         buttonGroup1 = new javax.swing.ButtonGroup();
         buttonGroup2 = new javax.swing.ButtonGroup();
         rsGroup = new javax.swing.ButtonGroup();
+        langButtonGroup = new javax.swing.ButtonGroup();
         openfilesPanel = new javax.swing.JPanel();
         filedirectoryTextField = new javax.swing.JTextField();
         openfilesButton = new javax.swing.JButton();
@@ -128,6 +133,11 @@ public class EvaluationUI3 extends JFrame {
         jRBFileToFile = new javax.swing.JRadioButton();
         jRBAnchorToBEP = new javax.swing.JRadioButton();
         evaluateButton = new javax.swing.JButton();
+        langSelectionPanel = new javax.swing.JPanel();
+        jRadioLangZh = new javax.swing.JRadioButton();
+        jRadioLangJa = new javax.swing.JRadioButton();
+        jRadioLangAll = new javax.swing.JRadioButton();
+        jRadioLangJa1 = new javax.swing.JRadioButton();
         fileMenuBar = new javax.swing.JMenuBar();
         fileMenu = new javax.swing.JMenu();
         aboutMenuItem = new javax.swing.JMenuItem();
@@ -452,6 +462,71 @@ public class EvaluationUI3 extends JFrame {
                 .addContainerGap())
         );
 
+        langSelectionPanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Language Selection", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
+
+        langButtonGroup.add(jRadioLangZh);
+        jRadioLangZh.setSelected(true);
+        jRadioLangZh.setText("Chinese");
+        jRadioLangZh.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
+        jRadioLangZh.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioLangZhActionPerformed(evt);
+            }
+        });
+
+        langButtonGroup.add(jRadioLangJa);
+        jRadioLangJa.setText("Japanese");
+        jRadioLangJa.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
+        jRadioLangJa.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioLangJaActionPerformed(evt);
+            }
+        });
+
+        langButtonGroup.add(jRadioLangAll);
+        jRadioLangAll.setText("All");
+        jRadioLangAll.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
+        jRadioLangAll.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioLangAllActionPerformed(evt);
+            }
+        });
+
+        langButtonGroup.add(jRadioLangJa1);
+        jRadioLangJa1.setText("Korean");
+        jRadioLangJa1.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
+        jRadioLangJa1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioLangJa1ActionPerformed(evt);
+            }
+        });
+
+        org.jdesktop.layout.GroupLayout langSelectionPanelLayout = new org.jdesktop.layout.GroupLayout(langSelectionPanel);
+        langSelectionPanel.setLayout(langSelectionPanelLayout);
+        langSelectionPanelLayout.setHorizontalGroup(
+            langSelectionPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(langSelectionPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .add(jRadioLangZh)
+                .add(18, 18, 18)
+                .add(jRadioLangJa)
+                .add(18, 18, 18)
+                .add(jRadioLangJa1)
+                .add(18, 18, 18)
+                .add(jRadioLangAll)
+                .addContainerGap(360, Short.MAX_VALUE))
+        );
+        langSelectionPanelLayout.setVerticalGroup(
+            langSelectionPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(langSelectionPanelLayout.createSequentialGroup()
+                .add(langSelectionPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(jRadioLangZh)
+                    .add(jRadioLangJa)
+                    .add(jRadioLangJa1)
+                    .add(jRadioLangAll))
+                .addContainerGap(16, Short.MAX_VALUE))
+        );
+
         fileMenu.setMnemonic('F');
         fileMenu.setText("File");
 
@@ -481,22 +556,25 @@ public class EvaluationUI3 extends JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(org.jdesktop.layout.GroupLayout.TRAILING, layout.createSequentialGroup()
-                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                    .add(openfilesPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, layout.createSequentialGroup()
+            .add(layout.createSequentialGroup()
+                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(org.jdesktop.layout.GroupLayout.TRAILING, openfilesPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .add(layout.createSequentialGroup()
                         .add(12, 12, 12)
                         .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                             .add(org.jdesktop.layout.GroupLayout.TRAILING, topicSelectionPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .add(runtablePanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, layout.createSequentialGroup()
+                    .add(layout.createSequentialGroup()
                         .addContainerGap()
                         .add(jPanel1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, layout.createSequentialGroup()
+                    .add(layout.createSequentialGroup()
                         .addContainerGap()
                         .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                             .add(org.jdesktop.layout.GroupLayout.TRAILING, plotPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .add(evatablePanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .add(evatablePanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .add(org.jdesktop.layout.GroupLayout.TRAILING, layout.createSequentialGroup()
+                        .addContainerGap()
+                        .add(langSelectionPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -505,7 +583,9 @@ public class EvaluationUI3 extends JFrame {
                 .add(openfilesPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(runtablePanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .add(18, 18, 18)
+                .add(4, 4, 4)
+                .add(langSelectionPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(topicSelectionPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(jPanel1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -515,6 +595,8 @@ public class EvaluationUI3 extends JFrame {
                 .add(plotPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
+
+        langSelectionPanel.getAccessibleContext().setAccessibleName("Lang Selection");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -591,7 +673,7 @@ public class EvaluationUI3 extends JFrame {
                 for (int i = 0; i < this.runFileCache.length; i++) {
                     plotsCalculation.PRCurveResult pcr;
 					try {
-						pcr = plotsCalculation.plotCalculate(/*resultFile, */this.runFileCache[i], useAllTopics, useFileToBep, useAnchorToFile, useAnchorToBEP);
+						pcr = plotsCalculation.plotCalculate(/*resultFile, */this.runFileCache[i], useAllTopics, useFileToBep, useAnchorToFile, useAnchorToBEP, langSelected);
 
 	                    if (plotHashmap.containsKey((Object) pcr.plotRunId)) {
 	
@@ -951,7 +1033,10 @@ public class EvaluationUI3 extends JFrame {
 
                 metricsCalculation.EvaluationResult er;
 
-                er = metricsCalculation.calculate(/*resultFile, */this.runFileCache[i], useAllTopics, useFileToBep, useAnchorGToFile, useAnchorGToBEP);
+                er = metricsCalculation.calculate(/*resultFile, */this.runFileCache[i], useAllTopics, useFileToBep, useAnchorGToFile, useAnchorGToBEP, langSelected);
+                
+                if (er == null)
+                	continue;
 
 //                if (i < 5) {
 //                    result.add(new Object[]{
@@ -1109,6 +1194,22 @@ public class EvaluationUI3 extends JFrame {
         ResultSetManager.getInstance().setEveluationType(ResultSetManager.A2B_WIKI_MANUAL);
     }//GEN-LAST:event_jRBA2BManualrsActionPerformed
 
+    private void jRadioLangZhActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioLangZhActionPerformed
+        langSelected = Data.LANGUAGE_CHINESE;
+    }//GEN-LAST:event_jRadioLangZhActionPerformed
+
+    private void jRadioLangJaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioLangJaActionPerformed
+        langSelected = Data.LANGUAGE_JAPANESE;
+    }//GEN-LAST:event_jRadioLangJaActionPerformed
+
+    private void jRadioLangJa1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioLangJa1ActionPerformed
+        langSelected = Data.LANGUAGE_KOREAN;
+    }//GEN-LAST:event_jRadioLangJa1ActionPerformed
+
+    private void jRadioLangAllActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioLangAllActionPerformed
+        langSelected = Data.LANGUAGE_ALL;
+    }//GEN-LAST:event_jRadioLangAllActionPerformed
+
     private ArrayList<String[]> retrieveRunData(File[] file) throws Exception {
 
         int runInfoColumnLength = 8;
@@ -1117,9 +1218,11 @@ public class EvaluationUI3 extends JFrame {
 //        Hashtable resultLinks = ResultSetLinksNo(new File(resultFilePath));
 
         ArrayList<String[]> bigResult = new ArrayList<String[]>();
+        String[] result = null;
+        TopicType topicType = null;
         // String[] result = null;
         for (int i = 0; i < file.length; i++) {
-            String[] result = null;
+            
             try {
                 JAXBContext jc = JAXBContext.newInstance("crosslink.rungenerator");
                 Unmarshaller um = jc.createUnmarshaller();
@@ -1141,6 +1244,7 @@ public class EvaluationUI3 extends JFrame {
                     String id = bt.getParticipantId();
                     String rid = bt.getRunId();
                     for (TopicType topic : bt.getTopic()) {
+                    	topicType = topic;
                         result = new String[runInfoColumnLength];
                         result[0] = id;
                         result[1] = rid;
@@ -1157,7 +1261,7 @@ public class EvaluationUI3 extends JFrame {
                         if (topic.getOutgoing().getAnchor().isEmpty()) {
                             result[4] = "0";
                         } else {
-                            if (topic.getOutgoing().getAnchor().get(0).getTofile().isEmpty()) {
+                            if (topic.getOutgoing().getAnchor().get(0).getTofile() == null || topic.getOutgoing().getAnchor().get(0).getTofile().isEmpty()) {
                                 result[4] = "0";
                             } else {
                                 // ============================
@@ -1219,6 +1323,10 @@ public class EvaluationUI3 extends JFrame {
                 }
             } catch (JAXBException ex) {
                 ex.printStackTrace();
+            } 
+            catch (Exception ex) {
+            	System.err.println("Something serious happens with run: " + file[i].getAbsolutePath());
+            	ex.printStackTrace();
             }
         }
         return bigResult;
@@ -1345,6 +1453,12 @@ public class EvaluationUI3 extends JFrame {
     private javax.swing.JRadioButton jRBFileToFile;
     private javax.swing.JRadioButton jRBalltopics;
     private javax.swing.JRadioButton jRBonlysubmitted;
+    private javax.swing.JRadioButton jRadioLangAll;
+    private javax.swing.JRadioButton jRadioLangJa;
+    private javax.swing.JRadioButton jRadioLangJa1;
+    private javax.swing.JRadioButton jRadioLangZh;
+    private javax.swing.ButtonGroup langButtonGroup;
+    private javax.swing.JPanel langSelectionPanel;
     private javax.swing.JButton openfilesButton;
     private javax.swing.JPanel openfilesPanel;
     private javax.swing.JPanel plotPanel;

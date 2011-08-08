@@ -59,14 +59,14 @@ public final class metricsCalculation extends Data {
         public double[] combination = new double[metricsCalculation.COL_NUM];
     }
 
-    public static EvaluationResult calculate(/*File resultfiles, */File runfiles, boolean isAllTopics, boolean useFileToBep, boolean useAnchorToFile, boolean useAnchorToBEP) throws Exception {
+    public static EvaluationResult calculate(/*File resultfiles, */File runfiles, boolean isAllTopics, boolean useFileToBep, boolean useAnchorToFile, boolean useAnchorToBEP, int lang) throws Exception {
 
         isUseAllTopics = isAllTopics ? true : false;
         isFileToBEP = useFileToBep ? true : false;
         isAnchorGToFile = useAnchorToFile ? true : false;
         isAnchorGToBEP = useAnchorToBEP ? true : false;
 
-        EvaluationResult result = new EvaluationResult();
+        EvaluationResult result = null;
         Hashtable resultTable = null;
         Hashtable runTable = null;
 
@@ -75,57 +75,62 @@ public final class metricsCalculation extends Data {
             result = fileToBepMeasures.getFileToBepResult(/*resultfiles, */runfiles, isAllTopics, useFileToBep, useAnchorToFile, useAnchorToBEP);
 
         } else {
-            runTable = getRunSet(runfiles);
-            resultTable = getResultSetLinks(); //getResultSet(resultfiles);
-
-            result.runId = runId;
-            // =================================================================
-            String tempRunID = result.runId;
-            // =================================================================
-            // <editor-fold defaultstate="collapsed" desc="MAP: Mean Average Precision">
-            // Get MAP
-            double[] oiMAP = getOutInMAP(tempRunID, resultTable, runTable);
-
-            double outgoingMAP = oiMAP[0];
-            double outMAP = 0.00001 * Math.random();
-            if (outgoingMAP > 0) {
-                outgoingMAP = outMAP + outgoingMAP;
-            }
-
-            double incomingMAP = oiMAP[1];
-            double MAP = 0.00001 * Math.random();
-            if ((outgoingMAP + incomingMAP) > 0) {
-                MAP = MAP + (double) 2 * (outgoingMAP * incomingMAP) / (outgoingMAP + incomingMAP);
-            }
-            result.outgoing[metricsCalculation.R_MAP] = outgoingMAP;
-            result.incomming[metricsCalculation.R_MAP] = incomingMAP;
-            result.combination[metricsCalculation.R_MAP] = MAP;
-            // </editor-fold>
-            // =====================================================================
-            // Get R-Precision
-            double[] oiRPrecs = getOutInRPrecs(resultTable, runTable);
-            double AveoutgoingRPrec = oiRPrecs[0];
-            double AveincomingRPrecs = oiRPrecs[1];
-            double AveRPrecs = 0.0;
-            if ((AveoutgoingRPrec + AveincomingRPrecs) > 0) {
-                AveRPrecs = (double) 2 * (AveoutgoingRPrec * AveincomingRPrecs) / (AveoutgoingRPrec + AveincomingRPrecs);
-            }
-            result.outgoing[metricsCalculation.R_RPREC] = AveoutgoingRPrec;
-            result.incomming[metricsCalculation.R_RPREC] = AveincomingRPrecs;
-            result.combination[metricsCalculation.R_RPREC] = AveRPrecs;
-            // =====================================================================
-            // Get Precision@
-            double[][] oiPrecsAT = getOutInPrecsAT(resultTable, runTable);
-            double[] AveoutgoingPrecsAt = {oiPrecsAT[0][0], oiPrecsAT[0][1], oiPrecsAT[0][2], oiPrecsAT[0][3], oiPrecsAT[0][4], oiPrecsAT[0][5]};
-            double[] AveincomingPrecsAt = {oiPrecsAT[1][0], oiPrecsAT[1][1], oiPrecsAT[1][2], oiPrecsAT[1][3], oiPrecsAT[1][4], oiPrecsAT[1][5]};
-            for (int i = 0; i < 6; i++) {
-                double AvePrecsAt = 0.0;
-                if ((AveoutgoingPrecsAt[i] + AveincomingPrecsAt[i]) > 0) {
-                    AvePrecsAt = (double) 2 * (AveoutgoingPrecsAt[i] * AveincomingPrecsAt[i]) / (AveoutgoingPrecsAt[i] + AveincomingPrecsAt[i]);
-                }
-                result.outgoing[metricsCalculation.R_P5 + i] = AveoutgoingPrecsAt[i];
-                result.incomming[metricsCalculation.R_P5 + i] = AveincomingPrecsAt[i];
-                result.combination[metricsCalculation.R_P5 + i] = AvePrecsAt;
+            runTable = getRunSet(runfiles, lang);
+            
+            if (runTable != null) {
+            	result = new EvaluationResult();
+            
+	            resultTable = getResultSetLinks(); //getResultSet(resultfiles);
+	
+	            result.runId = runId;
+	            // =================================================================
+	            String tempRunID = result.runId;
+	            // =================================================================
+	            // <editor-fold defaultstate="collapsed" desc="MAP: Mean Average Precision">
+	            // Get MAP
+	            double[] oiMAP = getOutInMAP(tempRunID, resultTable, runTable);
+	
+	            double outgoingMAP = oiMAP[0];
+	            double outMAP = 0.00001 * Math.random();
+	            if (outgoingMAP > 0) {
+	                outgoingMAP = outMAP + outgoingMAP;
+	            }
+	
+	            double incomingMAP = oiMAP[1];
+	            double MAP = 0.00001 * Math.random();
+	            if ((outgoingMAP + incomingMAP) > 0) {
+	                MAP = MAP + (double) 2 * (outgoingMAP * incomingMAP) / (outgoingMAP + incomingMAP);
+	            }
+	            result.outgoing[metricsCalculation.R_MAP] = outgoingMAP;
+	            result.incomming[metricsCalculation.R_MAP] = incomingMAP;
+	            result.combination[metricsCalculation.R_MAP] = MAP;
+	            // </editor-fold>
+	            // =====================================================================
+	            // Get R-Precision
+	            double[] oiRPrecs = getOutInRPrecs(resultTable, runTable);
+	            double AveoutgoingRPrec = oiRPrecs[0];
+	            double AveincomingRPrecs = oiRPrecs[1];
+	            double AveRPrecs = 0.0;
+	            if ((AveoutgoingRPrec + AveincomingRPrecs) > 0) {
+	                AveRPrecs = (double) 2 * (AveoutgoingRPrec * AveincomingRPrecs) / (AveoutgoingRPrec + AveincomingRPrecs);
+	            }
+	            result.outgoing[metricsCalculation.R_RPREC] = AveoutgoingRPrec;
+	            result.incomming[metricsCalculation.R_RPREC] = AveincomingRPrecs;
+	            result.combination[metricsCalculation.R_RPREC] = AveRPrecs;
+	            // =====================================================================
+	            // Get Precision@
+	            double[][] oiPrecsAT = getOutInPrecsAT(resultTable, runTable);
+	            double[] AveoutgoingPrecsAt = {oiPrecsAT[0][0], oiPrecsAT[0][1], oiPrecsAT[0][2], oiPrecsAT[0][3], oiPrecsAT[0][4], oiPrecsAT[0][5]};
+	            double[] AveincomingPrecsAt = {oiPrecsAT[1][0], oiPrecsAT[1][1], oiPrecsAT[1][2], oiPrecsAT[1][3], oiPrecsAT[1][4], oiPrecsAT[1][5]};
+	            for (int i = 0; i < 6; i++) {
+	                double AvePrecsAt = 0.0;
+	                if ((AveoutgoingPrecsAt[i] + AveincomingPrecsAt[i]) > 0) {
+	                    AvePrecsAt = (double) 2 * (AveoutgoingPrecsAt[i] * AveincomingPrecsAt[i]) / (AveoutgoingPrecsAt[i] + AveincomingPrecsAt[i]);
+	                }
+	                result.outgoing[metricsCalculation.R_P5 + i] = AveoutgoingPrecsAt[i];
+	                result.incomming[metricsCalculation.R_P5 + i] = AveincomingPrecsAt[i];
+	                result.combination[metricsCalculation.R_P5 + i] = AvePrecsAt;
+	            }
             }
         }
 
