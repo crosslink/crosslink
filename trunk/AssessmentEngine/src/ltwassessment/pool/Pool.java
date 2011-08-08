@@ -16,12 +16,12 @@ import ltwassessment.submission.Topic;
 
 public class Pool {
 	private Run runs = null;
-	private String sourceLang;
-	private String targetLang;
+	private String sourceLang = null;
+	private String targetLang = null;
 	
 	public Pool() {
-		this.sourceLang = AppResource.sourceLang;
-		this.targetLang = AppResource.targetLang;
+//		this.sourceLang = AppResource.sourceLang;
+//		this.targetLang = AppResource.targetLang;
 		runs = new Run();
 	}
 	
