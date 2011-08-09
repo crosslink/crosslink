@@ -539,7 +539,10 @@ public class LTWAssessmentToolControler {
     
     // Topic Pane: Anchor
     private void setTopicPaneContent(String xmlFilePath, String lang) {
-    	AdjustFont.setComponentFont(myTopicPane, lang);
+    	if (lang.equalsIgnoreCase("en"))
+    		AdjustFont.setComponentFont(myTopicPane, AppResource.targetLang);
+    	else
+    		AdjustFont.setComponentFont(myTopicPane, lang);
         if (!xmlFilePath.equals("")) {
             createTopicTextPane(xmlFilePath);
         } else {
