@@ -25,17 +25,23 @@ public class XML2TXT {
 		return instance;
 	}
 	
+	@SuppressWarnings("finally")
 	public static int textLength(byte[] bytes, int byteOffset, int length) {
 		byte[] newBytes = new byte[length];
-		System.arraycopy(bytes, byteOffset, newBytes, 0, length);
-		String source = null;
+		String source = "";
 		try {
+			System.arraycopy(bytes, byteOffset, newBytes, 0, length);
 			source = new String(newBytes, "UTF-8");
 		} catch (UnsupportedEncodingException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		} 
+		catch (Exception ex) {
+			ex.printStackTrace();
 		}
-		return source.length();
+		finally {
+			return source.length();
+		}
 	}
 	
 	public static int byteOffsetToTextOffset(byte[] bytes, int byteOffset) {
