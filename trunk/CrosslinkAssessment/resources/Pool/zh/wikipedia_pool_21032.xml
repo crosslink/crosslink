@@ -87,13 +87,13 @@
 			</anchor>
 			<anchor arel="0" aname="Chinese thought" aoffset="563" alength="15" ext_length="0">
 				<subanchor sarel="0" saname="Chinese thought" saoffset="563" salength="15" rank="161">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="中国">263</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中国">263</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="thought" saoffset="571" salength="7" rank="136">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="五見">395724</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="夏侯楙">138263</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="越石父">1184880</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="思维">193630</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="思维">193630</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="詹代法則">609368</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="傅說">1086280</tobep>
 				</subanchor>
@@ -139,7 +139,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="も">101365</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="莫斯科">2734</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="莫家拳">471527</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="钼">83108</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="钼">83108</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="莫·希斯拉克">696174</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="莫姓">574602</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="摩城">526255</tobep>
@@ -163,7 +163,7 @@
 			</anchor>
 			<anchor arel="0" aname="Master" aoffset="751" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="Master" saoffset="751" salength="6" rank="139">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="世嘉Master System">318534</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="世嘉Master System">318534</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Master">1299881</tobep>
 				</subanchor>
 			</anchor>
@@ -208,7 +208,7 @@
 				<subanchor sarel="0" saname="time" saoffset="846" salength="4" rank="131">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="时间 (专辑)">1084504</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="time">11795</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="时间">2786</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="时间">2786</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Taoism" aoffset="868" alength="6" ext_length="0">
@@ -235,7 +235,7 @@
 			</anchor>
 			<anchor arel="0" aname="main" aoffset="912" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="main" saoffset="912" salength="4" rank="157">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="美因河">272575</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="美因河">272575</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="philosophic" aoffset="917" alength="11" ext_length="8">
@@ -256,7 +256,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="高等師範學校">1048845</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="三豐市">669682</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="佛教宗派">387082</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="学校">87895</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="学校">87895</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="須磨區">667414</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中国大陆的外籍人员子女学校列表">1012416</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="郡山市">558373</tobep>
@@ -361,19 +361,19 @@
 			</anchor>
 			<anchor arel="0" aname="墨" aoffset="1167" alength="1" ext_length="0">
 				<subanchor sarel="0" saname="墨" saoffset="1167" salength="1" rank="180">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="墨">53196</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="墨">53196</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="a major" aoffset="1194" alength="7" ext_length="0">
 				<subanchor sarel="0" saname="a major" saoffset="1194" salength="7" rank="174">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="A大調">631900</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="自然大调">628517</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="A大調">631900</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="自然大调">628517</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="major" saoffset="1196" salength="5" rank="107">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="少校">75942</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="少校">75942</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title=".hack系列角色列表">1148082</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="主角">642773</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="棒球大聯盟">460516</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="棒球大聯盟">460516</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="墨学国际研讨会">286046</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="都道府縣道">415195</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="李振石">664511</tobep>
@@ -427,7 +427,7 @@
 				<subanchor sarel="0" saname="Qin dynasty" saoffset="1245" salength="11" rank="0">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="To_burn_the_classics_and_to_bury_the_scholars">39970</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="To_burn_the_classics_and_to_bury_the_scholars">958</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="秦朝">10903</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="秦朝">10903</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="dynasty" saoffset="1249" salength="7" rank="67">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="穆罕默德·阿里王朝">1065454</tobep>
@@ -436,7 +436,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="古埃及历史">582801</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="王后谷">1256979</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="幼龙王朝">790578</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="朝代">52645</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="朝代">52645</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="日本皇室">372904</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="德国君主列表">38824</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="dynasty">594655</tobep>
@@ -458,7 +458,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="清朝">2090</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2008年夏季奥林匹克运动会中国代表团">792484</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中国">263</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="2005年中國大獎賽">396715</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2005年中國大獎賽">396715</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中国国家足球队">139297</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="城关镇">580205</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中国联通">179232</tobep>
@@ -496,7 +496,7 @@
 			</anchor>
 			<anchor arel="0" aname="government" aoffset="1322" alength="10" ext_length="0">
 				<subanchor sarel="0" saname="government" saoffset="1322" salength="10" rank="56">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="政府">3670</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="政府">3670</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="政府首脑">270897</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="地方政府區域">1006479</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="美国联邦政府">181883</tobep>
@@ -541,12 +541,12 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="韩">187564</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="Han dynasty" saoffset="1394" salength="11" rank="1">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="汉朝">1661</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="汉朝">1661</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="state" aoffset="1457" alength="5" ext_length="0">
 				<subanchor sarel="0" saname="state" saoffset="1457" salength="5" rank="41">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="国">790019</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="国">790019</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="政府">3670</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="国家">4158</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="澳大利亚行政区划">176759</tobep>
@@ -570,11 +570,11 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="連續函數 (拓撲學)">462323</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="successive dynasties" saoffset="1493" salength="20" rank="123">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="歷代志">152836</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="歷代志">152836</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="dynasties" saoffset="1504" salength="9" rank="121">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="阿契美尼德王朝">426933</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="朝代">52645</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="朝代">52645</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="disappeared" aoffset="1534" alength="11" ext_length="0">
@@ -591,8 +591,8 @@
 			</anchor>
 			<anchor arel="0" aname="separate school" aoffset="1551" alength="15" ext_length="11">
 				<subanchor sarel="0" saname="separate school" saoffset="1551" salength="15" rank="116">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="独立学校">874034</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="独立">16327</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="独立学校">874034</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="独立">16327</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="school" saoffset="1560" salength="6" rank="122">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="高等師範學校">1048845</tobep>
@@ -631,7 +631,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="concept">119813</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="天下">204258</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="概念图">52888</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="概念">110947</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="概念">110947</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="數羊晚安系列">926727</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="軍事戰略">236718</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="終焉的年代記">950086</tobep>
@@ -646,11 +646,11 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="universities">24993</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="universe">37338</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="univers ">663026</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="通用">282514</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="通用">282514</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="universities">1438</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="universal love" saoffset="1679" salength="14" rank="146">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="广义化">504739</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="广义化">504739</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="love" saoffset="1689" salength="4" rank="108">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="爱沙尼亚">5418</tobep>
@@ -660,7 +660,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="国家卫生城市">1215775</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="兒童性行為">155166</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="愛">233839</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="愛 (民視電視劇)">700064</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="愛 (民視電視劇)">700064</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="爱德华">75634</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="维纳斯">24856</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="北爱尔兰">43204</tobep>
@@ -674,7 +674,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="book">72772</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="四大书院">85534</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="尚书 (经)">64823</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="图书">64446</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="图书">64446</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="全国古籍重点保护单位">730598</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="魔戒">8195</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="音樂劇">3175</tobep>
@@ -753,12 +753,12 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="体感">439170</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="口感">1133117</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="绝对音高">911173</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="氈">318671</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="氈">318671</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="the norm" aoffset="1898" alength="8" ext_length="0">
 				<subanchor sarel="0" saname="the norm" saoffset="1898" salength="8" rank="202">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="标准化">487970</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="标准化">487970</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="norm" saoffset="1902" salength="4" rank="110">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="正體">68549</tobep>
@@ -770,7 +770,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="賦範向量空間">674063</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="心理统计学">159363</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="现代汉语规范词典">145865</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="标准化">487970</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="标准化">487970</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="社會規範">78371</tobep>
 				</subanchor>
 			</anchor>
@@ -812,7 +812,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="根室市">439089</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="平方根">52558</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="原始印歐詞根">795261</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="根">751318</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="根">751318</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="poverty" aoffset="2022" alength="7" ext_length="0">
@@ -821,7 +821,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="印度生活水准">508218</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="阿马蒂亚·库马尔·森">13665</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="国家级贫困县">1069769</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="貧窮">78095</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="貧窮">78095</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="爱德基金会">688853</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="貧窮門檻">496026</tobep>
 				</subanchor>
@@ -843,7 +843,7 @@
 			</anchor>
 			<anchor arel="0" aname="long" aoffset="2062" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="long" saoffset="2062" salength="4" rank="189">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="长">314126</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="长">314126</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="person" aoffset="2072" alength="6" ext_length="0">
@@ -866,7 +866,7 @@
 			<anchor arel="0" aname="blood" aoffset="2153" alength="5" ext_length="10">
 				<subanchor sarel="0" saname="blood" saoffset="2153" salength="5" rank="64">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="红血球">1195</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="血液">104523</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="血液">104523</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="基督的血">708151</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="恐血症">275979</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="循环系统">273737</tobep>
@@ -910,20 +910,20 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="ruler ">7984</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="沙阿">803988</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="國家元首">47391</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="尺子">70548</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="尺子">70548</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="摩尔多瓦统治者列表">108660</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="to be" aoffset="2256" alength="5" ext_length="0">
 				<subanchor sarel="0" saname="to be" saoffset="2256" salength="5" rank="178">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="Time to Destination">1095222</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="TO BE">1018830</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Time to Destination">1095222</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="TO BE">1018830</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="power" aoffset="2336" alength="5" ext_length="0">
 				<subanchor sarel="0" saname="power" saoffset="2336" salength="5" rank="115">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="IBM POWER">149669</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="IBM">3860</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="IBM POWER">149669</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="IBM">3860</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Power_(sociology)">458958</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Power_(sociology)">455477</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="電源">605014</tobep>
@@ -931,7 +931,7 @@
 			</anchor>
 			<anchor arel="0" aname="analogy" aoffset="2366" alength="7" ext_length="0">
 				<subanchor sarel="0" saname="analogy" saoffset="2366" salength="7" rank="69">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="類比">544665</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="類比">544665</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="analogy">561265</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="耶稣的比喻">550907</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="寡妇和不义的官的比喻">550982</tobep>
@@ -965,7 +965,7 @@
 			</anchor>
 			<anchor arel="0" aname="people" aoffset="2432" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="people" saoffset="2432" salength="6" rank="109">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="人民">184649</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="人民">184649</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="人">37075</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="香港人">66904</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="people">912213</tobep>
@@ -999,7 +999,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="神學">92872</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="解釋學">254826</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="方言">4454</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="理解">970471</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="理解">970471</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="自然语言理解">131300</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="understanding">115026</tobep>
 				</subanchor>
@@ -1012,7 +1012,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中国湿地公园">202947</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中国国家地质公园列表">82087</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="西班牙">971</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="世界地理索引">320</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="世界地理索引">320</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="各国宗教">1064539</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="主权国">38584</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中国国家级自然保护区">19150</tobep>
@@ -1041,7 +1041,7 @@
 			</anchor>
 			<anchor arel="0" aname="saw" aoffset="2616" alength="3" ext_length="0">
 				<subanchor sarel="0" saname="saw" saoffset="2616" salength="3" rank="177">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="鋸">320191</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="鋸">320191</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="strengths" aoffset="2711" alength="9" ext_length="0">
@@ -1084,7 +1084,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="名驹">420253</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="马克思主义">9236</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="西班牙语姓名列表/M">1192972</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="马">39564</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="马">39564</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="連江縣 (中華民國)">672211</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="骑兵">25408</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中国象棋开局编号">709241</tobep>
@@ -1100,7 +1100,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="依凡德·何利菲德">593985</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="最大起飞重量">325424</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="体重">341582</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="重量">35884</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="重量">35884</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="体重级别">606257</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="基 (拓撲學)">477284</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="負重訓練">1161930</tobep>
@@ -1139,7 +1139,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="法律">16717</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="Law and order" saoffset="2944" salength="13" rank="92">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="法律">16717</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="法律">16717</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="order" saoffset="2952" salength="5" rank="140">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="杜垩登家族">533643</tobep>
@@ -1148,7 +1148,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="德尔·哈里斯">646733</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="目 (群論)">463218</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="为了非洲也为了你，马里">803504</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="目">15789</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="目">15789</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="政治">2737</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="序理论">372360</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="罗伯特·马尔登">264805</tobep>
@@ -1170,12 +1170,12 @@
 			</anchor>
 			<anchor arel="0" aname="theology" aoffset="2992" alength="8" ext_length="0">
 				<subanchor sarel="0" saname="theology" saoffset="2992" salength="8" rank="27">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="神學">92872</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="神學">92872</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="the carpenter" aoffset="3014" alength="13" ext_length="0">
 				<subanchor sarel="0" saname="the carpenter" saoffset="3014" salength="13" rank="54">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="木匠">507176</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="木匠">507176</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="carpenter" saoffset="3018" salength="9" rank="20">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="劳工之爱情">106778</tobep>
@@ -1189,7 +1189,7 @@
 			<anchor arel="0" aname="standard" aoffset="3037" alength="8" ext_length="0">
 				<subanchor sarel="0" saname="standard" saoffset="3037" salength="8" rank="125">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="标准化">487970</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="标准">153976</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="标准">153976</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="tools" aoffset="3046" alength="5" ext_length="0">
@@ -1207,7 +1207,7 @@
 			<anchor arel="0" aname="work" aoffset="3062" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="work" saoffset="3062" salength="4" rank="171">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="童工">449130</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="工作">173345</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="工作">173345</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="standards" aoffset="3105" alength="9" ext_length="0">
@@ -1222,8 +1222,8 @@
 			</anchor>
 			<anchor arel="0" aname="rule" aoffset="3118" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="rule" saoffset="3118" salength="4" rank="165">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="尺">1095524</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="尺 (消歧義)">746665</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="尺">1095524</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="尺 (消歧義)">746665</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="emotions" aoffset="3210" alength="8" ext_length="0">
@@ -1234,16 +1234,16 @@
 			<anchor arel="0" aname="man" aoffset="3329" alength="3" ext_length="0">
 				<subanchor sarel="0" saname="man" saoffset="3329" salength="3" rank="151">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2008年夏季奧林匹克運動會男子沙灘排球比賽">818538</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="MAN">11152</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="MAN">11152</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2008年夏季奧林匹克運動會男子排球比賽">788954</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="單性別教育">512731</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2008年夏季奧林匹克運動會棒球比賽">357512</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="男性">33925</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="男性">33925</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="only Heaven" aoffset="3431" alength="11" ext_length="3">
 				<subanchor sarel="0" saname="only Heaven" saoffset="3431" salength="11" rank="31">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="軍事">49975</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="軍事">49975</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="Heaven" saoffset="3436" salength="6" rank="23">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="任天堂">43165</tobep>
@@ -1261,7 +1261,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="天堂 (伊斯蘭教)">1276620</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="Heaven is" saoffset="3436" salength="9" rank="98">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="天國">129009</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="天國">129009</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="law" aoffset="3460" alength="3" ext_length="0">
@@ -1279,7 +1279,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="伊斯蘭教法">32933</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="摩西五经">110934</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="倫敦大學學院法學院">1004105</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="法律">16717</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="法律">16717</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="法">70139</tobep>
 				</subanchor>
 			</anchor>
@@ -1324,14 +1324,14 @@
 			</anchor>
 			<anchor arel="0" aname="meritocracy" aoffset="3617" alength="11" ext_length="0">
 				<subanchor sarel="0" saname="meritocracy" saoffset="3617" salength="11" rank="6">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="精英政治">59444</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="精英政治">59444</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="belief" aoffset="3663" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="belief" saoffset="3663" salength="6" rank="126">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="信心">313841</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="宗教自由">93998</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="信仰">22401</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="信仰">22401</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="台灣宗教">274728</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="仪式">502850</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="摩門信仰和基督信仰">509450</tobep>
@@ -1370,7 +1370,7 @@
 				<subanchor sarel="0" saname="corruption" saoffset="3797" salength="10" rank="43">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="警察腐败">1164342</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="政治腐敗">84746</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="腐败">734158</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="腐败">734158</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="賄賂">278050</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="周久耕">1148692</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="国家预防腐败局">623413</tobep>
@@ -1393,7 +1393,7 @@
 				<subanchor sarel="0" saname="tool" saoffset="3844" salength="4" rank="96">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="綠色軟體">226187</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="交通工具">453017</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="工具">162713</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="工具">162713</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Adobe Fireworks">853801</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="工具栏">1007667</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="软件开发工具">19292</tobep>
@@ -1406,7 +1406,7 @@
 			<anchor arel="0" aname="oppression" aoffset="3853" alength="10" ext_length="0">
 				<subanchor sarel="0" saname="oppression" saoffset="3853" salength="10" rank="60">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="帝国主义">19028</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="迫害">346422</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="迫害">346422</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="disasters" aoffset="3913" alength="9" ext_length="0">
@@ -1426,7 +1426,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="nationality">770740</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="美國">481</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Nationalism">49413</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="民族">39</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="民族">39</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Nationalism">275165</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="China_proper">138181</tobep>
 				</subanchor>
@@ -1442,12 +1442,12 @@
 			</anchor>
 			<anchor arel="0" aname="defense" aoffset="4009" alength="7" ext_length="0">
 				<subanchor sarel="0" saname="defense" saoffset="4009" salength="7" rank="94">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="防守">735515</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="防守">735515</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="palace" aoffset="4050" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="palace" saoffset="4050" salength="6" rank="74">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="宮殿">471473</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="宮殿">471473</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="countries" aoffset="4105" alength="9" ext_length="0">
@@ -1470,7 +1470,7 @@
 			</anchor>
 			<anchor arel="0" aname="useless" aoffset="4196" alength="7" ext_length="0">
 				<subanchor sarel="0" saname="useless" saoffset="4196" salength="7" rank="218">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="无用">998866</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="无用">998866</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="bums" aoffset="4204" alength="4" ext_length="0">
@@ -1505,7 +1505,7 @@
 				<subanchor sarel="0" saname="fear" saoffset="4294" salength="4" rank="124">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="恐惧">80891</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="恐懼症">278076</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="敬畏">605792</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="敬畏">605792</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="特殊恐惧症">1077634</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="小艾伯特实验">1039240</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="同性恋恐惧症">2816</tobep>
@@ -1527,8 +1527,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="明度">46951</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="错视">223813</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Portal:心理学/Picture">276970</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="ILLUSION">205768</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="錯覺">1111824</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="ILLUSION">205768</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="錯覺">1111824</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Trusted" aoffset="4436" alength="7" ext_length="0">
@@ -1550,7 +1550,7 @@
 			</anchor>
 			<anchor arel="0" aname="food" aoffset="4513" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="food" saoffset="4513" salength="4" rank="92">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="食物">10535</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="食物">10535</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="food ">3509</tobep>
 				</subanchor>
 			</anchor>
@@ -1594,7 +1594,7 @@
 			</anchor>
 			<anchor arel="0" aname="happiness" aoffset="4624" alength="9" ext_length="0">
 				<subanchor sarel="0" saname="happiness" saoffset="4624" salength="9" rank="45">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="快樂">336385</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="快樂">336385</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="happiness">904350</tobep>
 				</subanchor>
 			</anchor>
@@ -1685,11 +1685,11 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="对外经济贸易大学">82611</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="皮草貿易">657270</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="公平贸易城镇">703756</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="贸易">78496</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="贸易">78496</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="trade surplus" saoffset="4884" salength="13" rank="26">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="淨出口">799249</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="贸易">78496</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="贸易">78496</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="surplus" saoffset="4890" salength="7" rank="76">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="赤字">497152</tobep>
@@ -1705,7 +1705,7 @@
 			</anchor>
 			<anchor arel="0" aname="deficit" aoffset="4901" alength="7" ext_length="0">
 				<subanchor sarel="0" saname="deficit" saoffset="4901" salength="7" rank="76">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="赤字">497152</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="赤字">497152</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="measure" aoffset="4914" alength="7" ext_length="0">
@@ -1738,7 +1738,7 @@
 			</anchor>
 			<anchor arel="0" aname="population" aoffset="5002" alength="10" ext_length="0">
 				<subanchor sarel="0" saname="population" saoffset="5002" salength="10" rank="50">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="人口">1247</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="人口">1247</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Populism">156002</tobep>
 				</subanchor>
 			</anchor>
@@ -1746,9 +1746,9 @@
 				<subanchor sarel="0" saname="key" saoffset="5044" salength="3" rank="111">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="关键阶段">586620</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Google炸弹">54551</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="Key">448619</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Key">448619</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="哈希表">12452</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="Key (公司)">444290</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Key (公司)">444290</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="關鍵詞過濾">682800</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="关键路径">68637</tobep>
 				</subanchor>
@@ -1773,14 +1773,14 @@
 			</anchor>
 			<anchor arel="0" aname="free" aoffset="5116" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="free" saoffset="5116" salength="4" rank="127">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="Vogue">1018485</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Vogue">1018485</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="压缩软件列表">433080</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="免費軟體">113327</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="网络游戏免费模式">789498</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="义务教育">73902</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="VoIP軟體的比較">1088611</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="免费">180043</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="Free">584625</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Free">584625</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="游戏引擎列表">557562</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Wiki软件比较">461277</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="自由软件">9403</tobep>
@@ -1789,7 +1789,7 @@
 			<anchor arel="0" aname="labour" aoffset="5136" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="labour" saoffset="5136" salength="6" rank="15">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Labor_movement">553398</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="劳动力">173328</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="劳动力">173328</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Labor_movement">105831</tobep>
 				</subanchor>
 			</anchor>
@@ -1799,7 +1799,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="俄土战争 (1877年-1878年)">528857</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="战争列表 (1800年-1899年)">207756</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="战争列表">207407</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="战争">16800</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="战争">16800</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="第二次世界大战">305</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="宗教战争">441527</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="战争借口">681999</tobep>
@@ -1826,11 +1826,11 @@
 				</subanchor>
 				<subanchor sarel="0" saname="income gap" saoffset="5175" salength="10" rank="23">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="倒U曲线">230745</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="收入">72564</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="收入">72564</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="gap" saoffset="5182" salength="3" rank="73">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="Gap (服飾)">674432</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="Gap">686044</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Gap (服飾)">674432</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Gap">686044</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="birth" aoffset="5214" alength="5" ext_length="5">
@@ -1838,7 +1838,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="大爆炸">37338</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="birth rate" saoffset="5214" salength="10" rank="15">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="出生率">410238</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="出生率">410238</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="各国生育率列表">1055775</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="各国人口出生率列表">1044477</tobep>
 				</subanchor>
@@ -1848,7 +1848,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="童婚">1252327</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="marriage" saoffset="5265" salength="8" rank="71">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="婚姻">25757</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="婚姻">25757</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="marriage">1070566</tobep>
 				</subanchor>
 			</anchor>
@@ -1943,7 +1943,7 @@
 				<subanchor sarel="0" saname="advocacy" saoffset="5600" salength="8" rank="92">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="无偿献血宣传志愿者">1197195</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="學生運動">515439</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="宣传">808273</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="宣传">808273</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中华人民共和国的宣传活动">309239</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="刘诗诗">948321</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="魔彈理論">759814</tobep>
@@ -2030,7 +2030,7 @@
 			</anchor>
 			<anchor arel="0" aname="strangers" aoffset="5890" alength="9" ext_length="0">
 				<subanchor sarel="0" saname="strangers" saoffset="5890" salength="9" rank="177">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="陌生人">560007</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="陌生人">560007</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="material" aoffset="5994" alength="8" ext_length="0">
@@ -2042,12 +2042,12 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="材料科学">157</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="高分子材料">21116</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="建筑材料">35376</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="物料">20697</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="物料">20697</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="benefit" aoffset="6003" alength="7" ext_length="0">
 				<subanchor sarel="0" saname="benefit" saoffset="6003" salength="7" rank="164">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="福利">811894</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="福利">811894</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="physical" aoffset="6036" alength="8" ext_length="0">
@@ -2065,7 +2065,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="柯尔伯格道德发展阶段">601445</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="道德经">35816</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="主人-奴隸道德說">504701</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="道德">12325</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="道德">12325</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="贞操">818063</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="道德相对主义">602462</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="伦理学">12252</tobep>
@@ -2128,7 +2128,7 @@
 			</anchor>
 			<anchor arel="0" aname="utilitarianism" aoffset="6163" alength="14" ext_length="0">
 				<subanchor sarel="0" saname="utilitarianism" saoffset="6163" salength="14" rank="3">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="功利主义">75635</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="功利主义">75635</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Tradition" aoffset="6179" alength="9" ext_length="0">
@@ -2148,12 +2148,12 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="各国文化列表">594624</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="文化社会学">40353</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="香港文化">95914</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="文化">1174</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="文化">1174</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="human" aoffset="6234" alength="5" ext_length="7">
 				<subanchor sarel="0" saname="human" saoffset="6234" salength="5" rank="87">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="人">37075</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="人">37075</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="人权">23739</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="人類演化">24671</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="人力资源">13368</tobep>
@@ -2193,7 +2193,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="伦理学">12252</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="morally acceptable" saoffset="6312" salength="18" rank="243">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="道德">12325</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="道德">12325</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="social" aoffset="6380" alength="6" ext_length="0">
@@ -2227,10 +2227,10 @@
 			<anchor arel="0" aname="general" aoffset="6415" alength="7" ext_length="0">
 				<subanchor sarel="0" saname="general" saoffset="6415" salength="7" rank="55">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="台灣旅館列表">567023</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="上将">141645</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="上将">141645</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="將軍 (中國古代)">107213</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="廣義相對論">6906</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="大将">68460</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="大将">68460</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="講談社漫畫賞">554111</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="大公書信">31092</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="內科學">27038</tobep>
@@ -2246,7 +2246,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="公用事业">552435</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="功利主义">75635</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="软件开发工具">19292</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="效用">54977</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="效用">54977</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Society" aoffset="6489" alength="7" ext_length="0">
@@ -2270,7 +2270,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="宇宙">3574</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="马丁·海德格尔">252377</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="存在與時間">1121695</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="存在">259482</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="存在">259482</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="存在性定理">1069328</tobep>
 				</subanchor>
 			</anchor>
@@ -2283,7 +2283,7 @@
 			<anchor arel="0" aname="organism" aoffset="6566" alength="8" ext_length="0">
 				<subanchor sarel="0" saname="organism" saoffset="6566" salength="8" rank="54">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="分类学">186072</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="生物">1359</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="生物">1359</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="模式生物">678744</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="单细胞生物">220750</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="有機體">294406</tobep>
@@ -2296,8 +2296,8 @@
 			</anchor>
 			<anchor arel="0" aname="the natural" aoffset="6622" alength="11" ext_length="0">
 				<subanchor sarel="0" saname="the natural" saoffset="6622" salength="11" rank="215">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="自然">4125</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="自然 (期刊)">185813</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="自然">4125</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="自然 (期刊)">185813</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="natural" saoffset="6626" salength="7" rank="151">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Natural_rights">764461</tobep>
@@ -2347,12 +2347,12 @@
 			</anchor>
 			<anchor arel="0" aname="the definition" aoffset="6753" alength="14" ext_length="0">
 				<subanchor sarel="0" saname="the definition" saoffset="6753" salength="14" rank="203">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="定义">275839</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="定义">275839</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="definition" saoffset="6757" salength="10" rank="147">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="描述法 (集合论)">970726</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="行星定義">354639</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="定义">275839</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="定义">275839</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="熵">26040</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="显示分辨率">131077</tobep>
 				</subanchor>
@@ -2384,7 +2384,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="等级制度">139364</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="亚伯拉罕·马斯洛">91452</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="天主教会圣统制">1030224</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="制度">761973</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="制度">761973</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="树 (数据结构)">7796</tobep>
 				</subanchor>
 			</anchor>
@@ -2395,17 +2395,17 @@
 			</anchor>
 			<anchor arel="0" aname="Shi" aoffset="6959" alength="3" ext_length="0">
 				<subanchor sarel="0" saname="Shi" saoffset="6959" salength="3" rank="135">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="施姓">129520</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="施姓">129520</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Fei" aoffset="6963" alength="3" ext_length="0">
 				<subanchor sarel="0" saname="Fei" saoffset="6963" salength="3" rank="103">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="费利克斯·布洛赫">537082</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="费利克斯·布洛赫">537082</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="sense" aoffset="6976" alength="5" ext_length="0">
 				<subanchor sarel="0" saname="sense" saoffset="6976" salength="5" rank="160">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="阿勒河">111650</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="阿勒河">111650</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="sens ">1049071</tobep>
 				</subanchor>
 			</anchor>
@@ -2449,7 +2449,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="语音识别">48769</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="艾伦·格林斯潘">25816</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="江八点">31524</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="辭職">693919</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="辭職">693919</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="方言">4454</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="五一八讲话">1198815</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="吉奥瓦尼·特拉帕托尼">317384</tobep>
@@ -2495,13 +2495,13 @@
 				<subanchor sarel="0" saname="freedom of speech" saoffset="7244" salength="17" rank="22">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="美国宪法第一修正案">895059</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Freedom_of_speech">487415</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="言論自由">35388</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="言論自由">35388</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="model" aoffset="7270" alength="5" ext_length="0">
 				<subanchor sarel="0" saname="model" saoffset="7270" salength="5" rank="91">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Computer_model">8390</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="模型">242404</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="模型">242404</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="element" aoffset="7313" alength="7" ext_length="0">
@@ -2513,7 +2513,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="元素周期律">85142</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="3族元素">1088306</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="四元素说">6711</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="元素">1404</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="元素">1404</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="族 (化学)">39046</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="元素周期表">1229</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="HTML元素">1093234</tobep>
@@ -2534,7 +2534,7 @@
 				<subanchor sarel="0" saname="communication" saoffset="7348" salength="13" rank="72">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中兴通讯">247749</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="community">527034</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="通信">19295</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="通信">19295</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="传播学">16308</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Communism">6007</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="community">39344</tobep>
@@ -2557,30 +2557,30 @@
 			</anchor>
 			<anchor arel="0" aname="bad" aoffset="7453" alength="3" ext_length="0">
 				<subanchor sarel="0" saname="bad" saoffset="7453" salength="3" rank="104">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="Bad (迈克尔·杰克逊专辑)">1151773</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Bad (迈克尔·杰克逊专辑)">1151773</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="form" aoffset="7499" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="form" saoffset="7499" salength="4" rank="173">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="theory_of_forms">637</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="形式">920584</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="形式">920584</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="aggression" aoffset="7507" alength="10" ext_length="0">
 				<subanchor sarel="0" saname="aggression" saoffset="7507" salength="10" rank="75">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="入侵">518129</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="入侵">518129</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="侵略 (社會科學)">518151</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="states" aoffset="7542" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="states" saoffset="7542" salength="6" rank="216">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="国家">4158</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="国家">4158</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="force" aoffset="7597" alength="5" ext_length="0">
 				<subanchor sarel="0" saname="force" saoffset="7597" salength="5" rank="158">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Nei_Jing">519849</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="力">17385</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="力">17385</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="机动车交通事故责任强制保险">262976</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Nei_Jing">308543</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="英國陸軍">467120</tobep>
@@ -2602,7 +2602,7 @@
 			<anchor arel="0" aname="ideology" aoffset="7633" alength="8" ext_length="0">
 				<subanchor sarel="0" saname="ideology" saoffset="7633" salength="8" rank="61">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="纳粹主义">9182</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="意識形態">53044</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="意識形態">53044</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="ideologies">17657</tobep>
 				</subanchor>
 			</anchor>
@@ -2640,7 +2640,7 @@
 			</anchor>
 			<anchor arel="0" aname="addition" aoffset="7727" alength="8" ext_length="0">
 				<subanchor sarel="0" saname="addition" saoffset="7727" salength="8" rank="172">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="加法">48433</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="加法">48433</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="school of philosophy" aoffset="7750" alength="20" ext_length="0">
@@ -2697,7 +2697,7 @@
 				<subanchor sarel="0" saname="organization" saoffset="7821" salength="12" rank="116">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="分生组织">127918</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="慈善机构">296898</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="组织 (生物学)">21072</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="组织 (生物学)">21072</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="组织 (社会学)">165303</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="非營利組織">20369</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="薄壁组织">127395</tobep>
@@ -2711,7 +2711,7 @@
 			<anchor arel="0" aname="ideas" aoffset="7860" alength="5" ext_length="0">
 				<subanchor sarel="0" saname="ideas" saoffset="7860" salength="5" rank="175">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="idea ">1249174</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="IDeaS">943832</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="IDeaS">943832</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="idea">122207</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="idea ">130204</tobep>
 				</subanchor>
@@ -2807,7 +2807,7 @@
 			<anchor arel="0" aname="unit" aoffset="8062" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="unit" saoffset="8062" salength="4" rank="156">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="原子单位制">1082286</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="单位">579147</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="单位">579147</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="孔廟列表">1191040</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="单位圆盘">1059978</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="单位球面">396922</tobep>
@@ -2826,7 +2826,7 @@
 			<anchor arel="0" aname="juzi" aoffset="8084" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="juzi" saoffset="8084" salength="4" rank="25">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="罗马尼亚行政区划">597595</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="橘">170254</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="橘">170254</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="image" aoffset="8118" alength="5" ext_length="0">
@@ -2861,7 +2861,7 @@
 			</anchor>
 			<anchor arel="0" aname="the unit" aoffset="8151" alength="8" ext_length="0">
 				<subanchor sarel="0" saname="the unit" saoffset="8151" salength="8" rank="179">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="单位">579147</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="单位">579147</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="frugal" aoffset="8163" alength="6" ext_length="0">
@@ -2889,8 +2889,8 @@
 			</anchor>
 			<anchor arel="0" aname="central" aoffset="8280" alength="7" ext_length="0">
 				<subanchor sarel="0" saname="central" saoffset="8280" salength="7" rank="58">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="中央">215197</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="中">248191</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中央">215197</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中">248191</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="authority" aoffset="8288" alength="9" ext_length="0">
@@ -2898,7 +2898,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="传统权威">487975</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="按命名人缩写排列的植物命名人列表">1013114</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="数字证书认证中心">547407</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="权威">607175</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="权威">607175</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="author">910396</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="道德绝对主义">1108392</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="管理局">28080</tobep>
@@ -2936,7 +2936,7 @@
 			</anchor>
 			<anchor arel="0" aname="fortification" aoffset="8361" alength="13" ext_length="0">
 				<subanchor sarel="0" saname="fortification" saoffset="8361" salength="13" rank="66">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="要塞">36039</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="要塞">36039</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="碉堡">564774</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="平戶城">750646</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="石田城">1010480</tobep>
@@ -3008,10 +3008,10 @@
 				</subanchor>
 				<subanchor sarel="0" saname="laws of inheritance" saoffset="8489" salength="19" rank="30">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="孟德尔定律">365985</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="法律">16717</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="法律">16717</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="inheritance" saoffset="8497" salength="11" rank="51">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="继承">36133</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="继承">36133</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="inheritance">289975</tobep>
 				</subanchor>
 			</anchor>
@@ -3033,7 +3033,7 @@
 				<subanchor sarel="0" saname="philosophers" saoffset="8640" salength="12" rank="15">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中国哲学">348634</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="哲学">19</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="哲学家">585</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="哲学家">585</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="伊斯兰哲学">193475</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="前苏格拉底哲学">380881</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="法家">5828</tobep>
@@ -3046,14 +3046,14 @@
 			</anchor>
 			<anchor arel="0" aname="services" aoffset="8763" alength="8" ext_length="0">
 				<subanchor sarel="0" saname="services" saoffset="8763" salength="8" rank="168">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="服务">436369</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="服务">436369</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Web服务">57088</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="第三产业">20358</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="gain" aoffset="8785" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="gain" saoffset="8785" salength="4" rank="166">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="增益">322848</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="增益">322848</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="ethical" aoffset="8830" alength="7" ext_length="0">
@@ -3095,13 +3095,13 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="基督升天日">292660</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="天堂 (歌曲)">1066125</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="天方">194286</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="天國">129009</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="天國">129009</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="天">574676</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="任天堂">43165</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="學園天堂">364279</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="天堂 (遊戲)">12336</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="任天堂DS">68590</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="天堂 (消歧义)">124101</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="天堂 (消歧义)">124101</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="天堂 (伊斯蘭教)">1276620</tobep>
 				</subanchor>
 			</anchor>
@@ -3114,12 +3114,12 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="上帝">1165353</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="圣职人员">1155576</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="聖公宗">52702</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="神圣同盟">4895</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="神圣同盟">4895</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="天" aoffset="8945" alength="1" ext_length="0">
 				<subanchor sarel="0" saname="天" saoffset="8945" salength="1" rank="181">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="天">574676</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="天">574676</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Tian" aoffset="8951" alength="4" ext_length="0">
@@ -3152,13 +3152,13 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="恒星">7490</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="celestial bureaucracy" saoffset="8967" salength="21" rank="46">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="天國">129009</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="天國">129009</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="bureaucracy" saoffset="8977" salength="11" rank="31">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="技術官僚">288051</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="第2次近衛內閣">814405</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="公務員">175295</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="官僚制">72026</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="官僚制">72026</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="革新官僚">1277334</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Bureaucracy">58149</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="李约瑟难题">6709</tobep>
@@ -3182,7 +3182,7 @@
 			<anchor arel="0" aname="immoral" aoffset="9022" alength="7" ext_length="0">
 				<subanchor sarel="0" saname="immoral" saoffset="9022" salength="7" rank="213">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="惡">1007476</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="不賽因">361548</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="不賽因">361548</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="性道德">80379</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="道德">12325</tobep>
 				</subanchor>
@@ -3204,7 +3204,7 @@
 			</anchor>
 			<anchor arel="0" aname="righteousness" aoffset="9079" alength="13" ext_length="0">
 				<subanchor sarel="0" saname="righteousness" saoffset="9079" salength="13" rank="80">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="義">581235</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="義">581235</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="vague" aoffset="9105" alength="5" ext_length="0">
@@ -3218,7 +3218,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="自然环境">518982</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="自然">4125</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="一致性质">702648</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="自然 (期刊)">185813</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="自然 (期刊)">185813</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="罗素公理体系">33164</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="元素周期表">1229</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="狹義相對論中的質量">150236</tobep>
@@ -3229,7 +3229,7 @@
 			</anchor>
 			<anchor arel="0" aname="records" aoffset="9125" alength="7" ext_length="0">
 				<subanchor sarel="0" saname="records" saoffset="9125" salength="7" rank="206">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="欧洲">1728</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="欧洲">1728</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="scribes" aoffset="9173" alength="7" ext_length="0">
@@ -3261,7 +3261,7 @@
 			</anchor>
 			<anchor arel="0" aname="Han Fei" aoffset="9325" alength="7" ext_length="0">
 				<subanchor sarel="0" saname="Han Fei" saoffset="9325" salength="7" rank="13">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="韩非">1109577</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="韩非">1109577</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Han_Fei">5828</tobep>
 				</subanchor>
 			</anchor>
@@ -3284,7 +3284,7 @@
 				</subanchor>
 				<subanchor sarel="0" saname="historical records" saoffset="9341" salength="18" rank="13">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="历史">23</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="史料">90938</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="史料">90938</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="innocent" aoffset="9396" alength="8" ext_length="0">
@@ -3360,7 +3360,7 @@
 			</anchor>
 			<anchor arel="0" aname="justice" aoffset="9550" alength="7" ext_length="0">
 				<subanchor sarel="0" saname="justice" saoffset="9550" salength="7" rank="52">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="公正">38692</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="公正">38692</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="迈克尔·桑德尔">1236146</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="義 (分子生物學)">560221</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="黄金后援">912885</tobep>
@@ -3425,13 +3425,13 @@
 			<anchor arel="0" aname="garner" aoffset="9697" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="garner" saoffset="9697" salength="6" rank="5">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="迦納國家足球隊">187579</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="加纳">46224</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="加纳">46224</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="attention" aoffset="9708" alength="9" ext_length="0">
 				<subanchor sarel="0" saname="attention" saoffset="9708" salength="9" rank="161">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="三大纪律八项注意">87149</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="注意">262014</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="注意">262014</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="警告標誌">744175</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="注意广度">614318</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2006年千岛群岛地震">436632</tobep>
@@ -3466,7 +3466,7 @@
 			</anchor>
 			<anchor arel="0" aname="left" aoffset="9861" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="left" saoffset="9861" salength="4" rank="168">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="左">153073</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="左">153073</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="利手">502223</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="左派">179744</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="左外野手">148382</tobep>
@@ -3485,7 +3485,7 @@
 			<anchor arel="0" aname="bamboo" aoffset="9888" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="bamboo" saoffset="9888" salength="6" rank="24">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="bamboo">396542</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="竹">45532</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="竹">45532</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="stones" aoffset="9907" alength="6" ext_length="0">
@@ -3516,7 +3516,7 @@
 			</anchor>
 			<anchor arel="0" aname="future" aoffset="9957" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="future" saoffset="9957" salength="6" rank="141">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="未来">50676</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="未来">50676</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="科幻">77989</tobep>
 				</subanchor>
 			</anchor>
@@ -3573,19 +3573,19 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="八十八顆芭樂籽">1023488</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="春天百貨">942818</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="1995年香港電影金像獎">561609</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="Spring Framework">276345</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Spring Framework">276345</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="弹簧">114851</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="春季">17422</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="泉">351815</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="晝夜平分點">364255</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="spring and autumn" saoffset="10102" salength="17" rank="85">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="春秋">187460</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="春秋">187460</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="autumn" saoffset="10113" salength="6" rank="79">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="秋姓">604292</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="應天風秋八月">424994</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="秋季">43955</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="秋季">43955</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中秋节">4258</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="秋田自動車道">1150936</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="许国">177952</tobep>
@@ -3594,15 +3594,15 @@
 			<anchor arel="0" aname="seasons" aoffset="10120" alength="7" ext_length="0">
 				<subanchor sarel="0" saname="seasons" saoffset="10120" salength="7" rank="77">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="season ">42690</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="SEASONS">1017814</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="初音島">187381</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="SEASONS">1017814</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="初音島">187381</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="primal" aoffset="10174" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="primal" saoffset="10174" salength="6" rank="205">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="原始递归函数">258558</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="原始凱爾特語">178292</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="原始森林">297818</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="原始森林">297818</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="开源软件">35429</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="原始祖鸟">510232</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="原始日耳曼語">796531</tobep>
@@ -3655,7 +3655,7 @@
 			</anchor>
 			<anchor arel="0" aname="rituals" aoffset="10317" alength="7" ext_length="0">
 				<subanchor sarel="0" saname="rituals" saoffset="10317" salength="7" rank="208">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="仪式">502850</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="仪式">502850</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="austerity" aoffset="10341" alength="9" ext_length="0">
@@ -3671,8 +3671,8 @@
 			</anchor>
 			<anchor arel="0" aname="life" aoffset="10354" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="life" saoffset="10354" salength="4" rank="134">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="生命">161</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="LIFE">634301</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="生命">161</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="LIFE">634301</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="人类性行为">3010</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="生活">575856</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="生活 (雜誌)">177089</tobep>
@@ -3681,12 +3681,12 @@
 			<anchor arel="0" aname="governance" aoffset="10366" alength="10" ext_length="0">
 				<subanchor sarel="0" saname="governance" saoffset="10366" salength="10" rank="78">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="政府">3670</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="治理">188102</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="治理">188102</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="hand" aoffset="10391" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="hand" saoffset="10391" salength="4" rank="130">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="手">95361</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="手">95361</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="spiritual" aoffset="10397" alength="9" ext_length="0">
@@ -3734,7 +3734,7 @@
 			</anchor>
 			<anchor arel="0" aname="attitude" aoffset="10633" alength="8" ext_length="0">
 				<subanchor sarel="0" saname="attitude" saoffset="10633" salength="8" rank="235">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="态度">152824</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="态度">152824</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="criteria" aoffset="10659" alength="8" ext_length="0">
@@ -3749,8 +3749,8 @@
 			</anchor>
 			<anchor arel="0" aname="San" aoffset="10673" alength="3" ext_length="0">
 				<subanchor sarel="0" saname="San" saoffset="10673" salength="3" rank="133">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="国际贸易">86046</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="San">144293</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="国际贸易">86046</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="San">144293</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Biao" aoffset="10677" alength="4" ext_length="0">
@@ -3806,14 +3806,14 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="香港政治">64165</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="台灣政治">46415</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中華民國政治">11113</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="政治">2737</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="政治">2737</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中国人民大学国际关系学院">719251</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中华人民共和国政治">999</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="fatalism" aoffset="11218" alength="8" ext_length="0">
 				<subanchor sarel="0" saname="fatalism" saoffset="11218" salength="8" rank="8">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="宿命论">909720</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="宿命论">909720</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="predestined" aoffset="11261" alength="11" ext_length="0">
@@ -3841,7 +3841,7 @@
 				<subanchor sarel="0" saname="sinfulness" saoffset="11378" salength="10" rank="113">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="罪 (宗教)">611489</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="sin">472881</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="江青">86555</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="江青">86555</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="caused" aoffset="11393" alength="6" ext_length="0">
@@ -3873,7 +3873,7 @@
 				<subanchor sarel="0" saname="virtue" saoffset="11488" salength="6" rank="86">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="李米的猜想">1013089</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="保罗·寇恩">972252</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="美德">190687</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="美德">190687</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2002年世界盃足球賽決賽週賽程紀錄">117526</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="七美德">165674</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="陶红">164501</tobep>
@@ -3890,7 +3890,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="不信者">1300765</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="卡特里派">340162</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="异端尖叉">1265749</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="異端">113740</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="異端">113740</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="heresy">389061</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="马赛的根拿丢">152064</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="異端裁判所">93641</tobep>
@@ -3929,8 +3929,8 @@
 			</anchor>
 			<anchor arel="0" aname="the practice" aoffset="11720" alength="12" ext_length="0">
 				<subanchor sarel="0" saname="the practice" saoffset="11720" salength="12" rank="105">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="豪情">971546</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="法網豪情">1245186</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="豪情">971546</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="法網豪情">1245186</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="burial" aoffset="11748" alength="6" ext_length="8">
@@ -3938,7 +3938,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="burial ">1021222</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="天葬">210562</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="火葬">576113</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="土葬">1127240</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="土葬">1127240</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中國殯葬史">652701</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="坟墓">267710</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="圣墓教堂">532929</tobep>
@@ -3951,7 +3951,7 @@
 			</anchor>
 			<anchor arel="0" aname="the dead" aoffset="11792" alength="8" ext_length="0">
 				<subanchor sarel="0" saname="the dead" saoffset="11792" salength="8" rank="203">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="死亡">12046</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="死亡">12046</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="ritualistic" aoffset="11806" alength="11" ext_length="0">
@@ -3977,8 +3977,8 @@
 			</anchor>
 			<anchor arel="0" aname="extreme" aoffset="11839" alength="7" ext_length="0">
 				<subanchor sarel="0" saname="extreme" saoffset="11839" salength="7" rank="129">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="AirPort">132088</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="Extreme">1202736</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="AirPort">132088</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Extreme">1202736</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="walking" aoffset="11850" alength="7" ext_length="0">
@@ -4052,14 +4052,14 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中国农业科学院">878941</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中国农业税">246155</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="农业机">924331</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="农业">100</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="农业">100</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="农业科学">573286</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="families" aoffset="12014" alength="8" ext_length="0">
 				<subanchor sarel="0" saname="families" saoffset="12014" salength="8" rank="217">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="family">84634</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="家庭">25749</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="家庭">25749</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="family">189974</tobep>
 				</subanchor>
 			</anchor>
@@ -4090,7 +4090,7 @@
 				<subanchor sarel="0" saname="resentment" saoffset="12137" salength="10" rank="190">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="復仇主義">280303</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="地獄少女角色列表">558788</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="怨恨">336394</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="怨恨">336394</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="赵文翙">1274201</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="格鬥天王 (電視劇)">756422</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="地狱少女">175984</tobep>
@@ -4099,7 +4099,7 @@
 			<anchor arel="0" aname="aesthetics" aoffset="12186" alength="10" ext_length="0">
 				<subanchor sarel="0" saname="aesthetics" saoffset="12186" salength="10" rank="103">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中国学科分类国家标准/720">2484</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="美学">59368</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="美学">59368</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="全美中国学生学者自治联合会">190997</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="朱光潜">129483</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="潘知常">338217</tobep>
@@ -4109,7 +4109,7 @@
 				<subanchor sarel="0" saname="Confucius" saoffset="12220" salength="9" rank="14">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Confucius_(2010_film)">1140812</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Confucius_(2010_film)">461742</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="孔子">484</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="孔子">484</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="repulsion" aoffset="12254" alength="9" ext_length="0">
@@ -4124,7 +4124,7 @@
 			<anchor arel="0" aname="development" aoffset="12276" alength="11" ext_length="0">
 				<subanchor sarel="0" saname="development" saoffset="12276" salength="11" rank="246">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="經濟發展">433911</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="发展">229597</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="发展">229597</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="music" aoffset="12291" alength="5" ext_length="0">
@@ -4160,7 +4160,7 @@
 				</subanchor>
 				<subanchor sarel="0" saname="arts" saoffset="12303" salength="4" rank="173">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="art">194358</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="艺术">2117</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="艺术">2117</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="named" aoffset="12340" alength="5" ext_length="0">
@@ -4183,7 +4183,7 @@
 			</anchor>
 			<anchor arel="0" aname="common people" aoffset="12531" alength="13" ext_length="0">
 				<subanchor sarel="0" saname="common people" saoffset="12531" salength="13" rank="145">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="人民">184649</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="人民">184649</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="appreciation" aoffset="12648" alength="12" ext_length="0">
@@ -4215,7 +4215,7 @@
 			</anchor>
 			<anchor arel="0" aname="anarchism" aoffset="12789" alength="9" ext_length="0">
 				<subanchor sarel="0" saname="anarchism" saoffset="12789" salength="9" rank="19">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="无领袖抵抗">451210</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="无领袖抵抗">451210</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="无政府主义">87200</tobep>
 				</subanchor>
 			</anchor>
@@ -4269,7 +4269,7 @@
 				<subanchor sarel="0" saname="idea" saoffset="13019" salength="4" rank="146">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="美国版权法">72780</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="露德温·塞尼耶">1262950</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="想法">1249174</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="想法">1249174</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="腦力激盪法">10559</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="紅唇族">486078</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="丁柔安">485957</tobep>
@@ -4277,12 +4277,12 @@
 			</anchor>
 			<anchor arel="0" aname="response" aoffset="13027" alength="8" ext_length="0">
 				<subanchor sarel="0" saname="response" saoffset="13027" salength="8" rank="176">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="回應">278044</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="回應">278044</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Warring States period" aoffset="13064" alength="21" ext_length="0">
 				<subanchor sarel="0" saname="Warring States period" saoffset="13064" salength="21" rank="2">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="戰國">83239</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="戰國">83239</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Zhou" aoffset="13087" alength="4" ext_length="0">
@@ -4307,7 +4307,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="君主">163319</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="King&apos;s_College,_Cambridge">36748</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="王">163374</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="王青">503620</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="王青">503620</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="英国人列表">5478</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="柬埔寨君主列表">80957</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="王 (消歧義)">586687</tobep>
@@ -4371,7 +4371,7 @@
 			<anchor arel="0" aname="subsistence" aoffset="13221" alength="11" ext_length="0">
 				<subanchor sarel="0" saname="subsistence" saoffset="13221" salength="11" rank="192">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="狩猎收集者">508773</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="生活">575856</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="生活">575856</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="bare" aoffset="13249" alength="4" ext_length="12">
@@ -4380,7 +4380,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Stripped">493779</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="bare necessities" saoffset="13249" salength="16" rank="79">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="必需品">67688</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="必需品">67688</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="necessities" saoffset="13254" salength="11" rank="68">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="必需品">67688</tobep>
@@ -4525,7 +4525,7 @@
 				<subanchor sarel="0" saname="science" saoffset="13751" salength="7" rank="47">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="科学哲学">31742</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中国人文社会科学期刊列表">143998</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="科学">4224</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="科学">4224</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="科学 (杂志)">133426</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="湖南人列表">9572</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中国科学院研究机构列表">1237879</tobep>
@@ -4546,7 +4546,7 @@
 			</anchor>
 			<anchor arel="0" aname="too much" aoffset="13869" alength="8" ext_length="0">
 				<subanchor sarel="0" saname="too much" saoffset="13869" salength="8" rank="228">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="張嘉年">503366</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="張嘉年">503366</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="bias" aoffset="13890" alength="4" ext_length="0">
@@ -4572,7 +4572,7 @@
 			<anchor arel="0" aname="canon" aoffset="13952" alength="5" ext_length="0">
 				<subanchor sarel="0" saname="canon" saoffset="13952" salength="5" rank="20">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="教会法">725375</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="Canon">174569</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Canon">174569</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="教会法 (天主教会)">1044571</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="佳能EOS 5D Mark II">959680</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="法政牧師">132336</tobep>
@@ -4586,7 +4586,7 @@
 			</anchor>
 			<anchor arel="0" aname="the Mo" aoffset="13961" alength="10" ext_length="5">
 				<subanchor sarel="0" saname="the Mo" saoffset="13961" salength="10" rank="201">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="莫姓">574602</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="莫姓">574602</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="Mo Jing" saoffset="13969" salength="7" rank="52">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="墨子">5850</tobep>
@@ -4630,7 +4630,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="信息技术">17654</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="信息设计">1018081</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="XML信息集">1164601</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="信息">22128</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="信息">22128</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="mathematics" aoffset="14103" alength="11" ext_length="0">
@@ -4648,7 +4648,7 @@
 			</anchor>
 			<anchor arel="0" aname="atomic" aoffset="14140" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="atomic" saoffset="14140" salength="6" rank="165">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="原子">3817</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="原子">3817</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="geometric" aoffset="14166" alength="9" ext_length="0">
@@ -4668,13 +4668,13 @@
 			<anchor arel="0" aname="point" aoffset="14176" alength="5" ext_length="0">
 				<subanchor sarel="0" saname="point" saoffset="14176" salength="5" rank="169">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="顶点">90512</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="點 (消歧義)">597635</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="點 (消歧義)">597635</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Fixed_point_(mathematics)">930648</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="点球">119359</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Fixed_point_(mathematics)">101191</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="糕点">139045</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="笔画">225339</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="收視點">39644</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="收視點">39644</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="separated" aoffset="14206" alength="9" ext_length="0">
@@ -4708,8 +4708,8 @@
 			</anchor>
 			<anchor arel="0" aname="the end" aoffset="14589" alength="7" ext_length="0">
 				<subanchor sarel="0" saname="the end" saoffset="14589" salength="7" rank="163">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="THE END">495893</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="Keep the faith">645055</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="THE END">495893</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Keep the faith">645055</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="head" aoffset="14636" alength="4" ext_length="0">
@@ -4725,13 +4725,13 @@
 			</anchor>
 			<anchor arel="0" aname="childbirth" aoffset="14657" alength="10" ext_length="0">
 				<subanchor sarel="0" saname="childbirth" saoffset="14657" salength="10" rank="36">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="分娩">268214</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="分娩">268214</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="invisibility" aoffset="14680" alength="12" ext_length="0">
 				<subanchor sarel="0" saname="invisibility" saoffset="14680" salength="12" rank="42">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="隱形能力">1287626</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="低可偵測性">213446</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="低可偵測性">213446</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Similar" aoffset="14812" alength="7" ext_length="0">
@@ -4746,7 +4746,7 @@
 			</anchor>
 			<anchor arel="0" aname="the atomists" aoffset="14823" alength="12" ext_length="0">
 				<subanchor sarel="0" saname="the atomists" saoffset="14823" salength="12" rank="73">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="LAMOST">284637</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="LAMOST">284637</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="atomists" saoffset="14827" salength="8" rank="7">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="原子論">151951</tobep>
@@ -4754,13 +4754,13 @@
 			</anchor>
 			<anchor arel="0" aname="Democritus" aoffset="14839" alength="10" ext_length="0">
 				<subanchor sarel="0" saname="Democritus" saoffset="14839" salength="10" rank="7">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="德谟克利特">39049</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="德谟克利特">39049</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="cut" aoffset="14928" alength="3" ext_length="0">
 				<subanchor sarel="0" saname="cut" saoffset="14928" salength="3" rank="150">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="Final Cut Pro">118444</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="Cut (Unix)">898029</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Final Cut Pro">118444</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Cut (Unix)">898029</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="equal" aoffset="15088" alength="5" ext_length="0">
@@ -4775,7 +4775,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="人类阴茎长度">512260</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="范数">312505</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="张健">1296050</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="长度">35776</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="长度">35776</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="length ">26428</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="德拜长度">566156</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="LZ77与LZ78">364672</tobep>
@@ -4787,7 +4787,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="比较级">755500</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="比較法">920764</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="网页浏览器比较">85132</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="比较文学">14037</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="比较文学">14037</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="比较优势">530888</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Batcher归并网络">47359</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="不等">85794</tobep>
@@ -4843,7 +4843,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="世界语">1999</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Portal:國際足協世界盃/分类">605411</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="世界錦標賽">358467</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="界">15785</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="界">15785</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="planes" aoffset="15571" alength="6" ext_length="0">
@@ -4863,23 +4863,23 @@
 			</anchor>
 			<anchor arel="0" aname="circumference" aoffset="15783" alength="13" ext_length="0">
 				<subanchor sarel="0" saname="circumference" saoffset="15783" salength="13" rank="109">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="周长">135998</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="周长">135998</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="diameter" aoffset="15798" alength="8" ext_length="0">
 				<subanchor sarel="0" saname="diameter" saoffset="15798" salength="8" rank="42">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="直径">111636</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="直径">111636</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="radius" aoffset="15812" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="radius" saoffset="15812" salength="6" rank="32">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="半径">30185</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="RADIUS">404483</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="RADIUS">404483</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="volume" aoffset="15849" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="volume" saoffset="15849" salength="6" rank="143">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="体积">50544</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="体积">50544</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="volume">9972</tobep>
 				</subanchor>
 			</anchor>
@@ -4902,7 +4902,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="百部爱国主义教育影片">971986</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="電影年鑑">383284</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="卡罗维发利电影节">135361</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="电影">48</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="电影">48</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="美国电影">1196601</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="黃金羅盤">739794</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="印度电影">50251</tobep>
@@ -4934,25 +4934,25 @@
 			</anchor>
 			<anchor arel="0" aname="Logic in China" aoffset="16282" alength="14" ext_length="0">
 				<subanchor sarel="0" saname="Logic in China" saoffset="16282" salength="14" rank="3">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="中国">263</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中国">263</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="reading" aoffset="16345" alength="7" ext_length="0">
 				<subanchor sarel="0" saname="reading" saoffset="16345" salength="7" rank="97">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="雷丁">761535</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="雷丁">761535</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="閱讀">212796</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="雷丁 (消歧義)">189132</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="雷丁 (消歧義)">189132</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Graham" aoffset="16404" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="Graham" saoffset="16404" salength="6" rank="110">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="格雷">540050</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="格雷">540050</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="TAO" aoffset="16439" alength="3" ext_length="0">
 				<subanchor sarel="0" saname="TAO" saoffset="16439" salength="3" rank="63">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Tao">574561</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="道">36965</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="道">36965</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Philosophical" aoffset="16444" alength="13" ext_length="9">
@@ -5012,7 +5012,7 @@
 				<subanchor sarel="0" saname="ISBN" saoffset="16508" salength="4" rank="167">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="国际标准书号">33693</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="isbn">36556</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="标准">153976</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="标准">153976</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Philip" aoffset="16753" alength="6" ext_length="0">
@@ -5052,15 +5052,15 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="凡湖">631416</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="Van Norden" saoffset="16777" salength="10" rank="167">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="范姓">271315</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="范姓">271315</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="Norden" saoffset="16781" salength="6" rank="64">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="北歐">22474</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="北歐">22474</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Eds" aoffset="16789" alength="3" ext_length="0">
 				<subanchor sarel="0" saname="Eds" saoffset="16789" salength="3" rank="155">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="EDS">814001</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="EDS">814001</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Readings" aoffset="16799" alength="8" ext_length="0">
@@ -5081,7 +5081,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="古希腊">7665</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="古典主义音乐">158417</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Classicism">668287</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="魏玛的古典主义">158758</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="魏玛的古典主义">158758</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="新古典主义建筑">1051917</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="古典音乐">155689</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Classics">238460</tobep>
@@ -5115,18 +5115,18 @@
 			</anchor>
 			<anchor arel="0" aname="Indianapolis" aoffset="16847" alength="12" ext_length="0">
 				<subanchor sarel="0" saname="Indianapolis" saoffset="16847" salength="12" rank="28">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="印第安納波利斯">424805</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="印第安納波利斯">424805</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="New Haven" aoffset="16984" alength="9" ext_length="4">
 				<subanchor sarel="0" saname="New Haven" saoffset="16984" salength="9" rank="61">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="纽黑文">119147</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="纽黑文">119147</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="New Haven, CT" saoffset="16984" salength="13" rank="60">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="纽黑文">119147</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="CT" saoffset="16995" salength="2" rank="83">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="Product Red">559662</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Product Red">559662</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Seven" aoffset="16999" alength="5" ext_length="0">
@@ -5187,7 +5187,7 @@
 			</anchor>
 			<anchor arel="0" aname="West" aoffset="17111" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="West" saoffset="17111" salength="4" rank="119">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="西">13408</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="西">13408</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Western_countries">163529</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Western_countries">521939</tobep>
 				</subanchor>
@@ -5206,7 +5206,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="西學東漸">6707</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Western_hemisphere">37774</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="西方世界">521939</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="西部">141337</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="西部">141337</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="西">13408</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="西部省 (肯尼亚)">729896</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="西欧">37703</tobep>
@@ -5231,7 +5231,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="道家">2157</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="韩国行政区划">16613</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="新巴15A線">809588</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="道">36965</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="道">36965</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="過海隧道巴士973線">803063</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="道 (行政区划)">36966</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="國道39號">1130733</tobep>
@@ -5241,15 +5241,15 @@
 			</anchor>
 			<anchor arel="0" aname="New York" aoffset="17159" alength="8" ext_length="0">
 				<subanchor sarel="0" saname="New York" saoffset="17159" salength="8" rank="37">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="纽约州">26262</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="纽约州">26262</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="York" saoffset="17163" salength="4" rank="106">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="約克">117595</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="約克">117595</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Routledge" aoffset="17169" alength="9" ext_length="0">
 				<subanchor sarel="0" saname="Routledge" saoffset="17169" salength="9" rank="53">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="英属印度">463209</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="英属印度">463209</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="External" aoffset="17240" alength="8" ext_length="0">
@@ -5259,7 +5259,7 @@
 			</anchor>
 			<anchor arel="0" aname="links" aoffset="17249" alength="5" ext_length="0">
 				<subanchor sarel="0" saname="links" saoffset="17249" salength="5" rank="179">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="Links">65615</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Links">65615</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Stanford" aoffset="17409" alength="8" ext_length="27">
@@ -5271,7 +5271,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="帕羅奧圖 (加利福尼亞州)">397285</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="Stanford Encyclopedia of Philosophy" saoffset="17409" salength="35" rank="32">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="斯坦福">947135</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="斯坦福">947135</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="Encyclopedia" saoffset="17418" salength="12" rank="8">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="百科 (消歧義)">1265604</tobep>

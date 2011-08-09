@@ -105,10 +105,10 @@ public class Run {
         for (int i = 0; i < titleNodeList.getLength(); i++) {
             Element titleElmn = (Element) titleNodeList.item(i);
             runName =  titleElmn.getAttribute("run-id");
-            String runSourceLang = titleElmn.getAttribute("source_lang").trim();
+            String runSourceLang = titleElmn.getAttribute("source_lang").trim().toLowerCase();
             if (runSourceLang.length() == 0)
             	runSourceLang = "en";
-            String runTargetLang = titleElmn.getAttribute("default_lang").trim();
+            String runTargetLang = titleElmn.getAttribute("default_lang").trim().toLowerCase();
             
             if (sourceLang == null && targetLang == null) {
 	            if (runSourceLang.length() > 0)
@@ -199,7 +199,7 @@ public class Run {
 	                                Element toBepElmn = (Element) toBepNodeList.item(m);
 	                                
 	                                // new
-	                                String target_lang = toBepElmn.getAttribute("lang");
+	                                String target_lang = toBepElmn.getAttribute("lang").trim().toLowerCase();
 	                                String target_title = toBepElmn.getAttribute("title");
 	
 	                                String tbOffset = toBepElmn.getAttribute("bep_offset").trim();

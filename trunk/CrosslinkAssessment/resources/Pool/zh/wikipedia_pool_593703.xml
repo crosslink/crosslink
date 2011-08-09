@@ -33,7 +33,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="心绞痛">194080</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Thomas_Paine">34868</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="經痛">136117</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="疼痛">789912</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="疼痛">789912</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="酷刑">968422</tobep>
 				</subanchor>
 			</anchor>
@@ -44,7 +44,7 @@
 			<anchor arel="0" aname="Gynecology" aoffset="526" alength="10" ext_length="0">
 				<subanchor sarel="0" saname="Gynecology" saoffset="526" salength="10" rank="111">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="gynecology">523355</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="婦科學">653799</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="婦科學">653799</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="ICD9" aoffset="648" alength="4" ext_length="0">
@@ -55,7 +55,7 @@
 			<anchor arel="0" aname="stomach" aoffset="697" alength="7" ext_length="0">
 				<subanchor sarel="0" saname="stomach" saoffset="697" salength="7" rank="59">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="胃切除術">366289</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="胃">183250</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="胃">183250</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="胃癌">588114</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="胃宿">127721</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Stomach">334679</tobep>
@@ -152,7 +152,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="NASTRAN">414659</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中高层大气闪电">1174782</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="TRPV1">1176327</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="暫態">328148</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="暫態">328148</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="TRPA1">1178698</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="离子通道">1137442</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="无常 (佛教)">23587</tobep>
@@ -193,7 +193,7 @@
 			<anchor arel="0" aname="disease" aoffset="789" alength="7" ext_length="0">
 				<subanchor sarel="0" saname="disease" saoffset="789" salength="7" rank="78">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="ICD-10 第六章：神经系统疾病">1073108</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="疾病">25161</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="疾病">25161</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="ICD-10 第十四章：泌尿生殖系统疾病">1093831</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="心脏病">322928</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="ICD-10 第十一章：消化系统疾病">1093825</tobep>
@@ -331,7 +331,7 @@
 			</anchor>
 			<anchor arel="0" aname="symptom" aoffset="918" alength="7" ext_length="0">
 				<subanchor sarel="0" saname="symptom" saoffset="918" salength="7" rank="74">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="症狀">218043</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="症狀">218043</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="is" aoffset="942" alength="2" ext_length="0">
@@ -363,7 +363,7 @@
 			</anchor>
 			<anchor arel="0" aname="problem" aoffset="954" alength="7" ext_length="0">
 				<subanchor sarel="0" saname="problem" saoffset="954" salength="7" rank="114">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="问题">35381</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="问题">35381</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="problem ">132337</tobep>
 				</subanchor>
 			</anchor>
@@ -473,17 +473,17 @@
 			<anchor arel="0" aname="gastroenteritis" aoffset="1233" alength="15" ext_length="0">
 				<subanchor sarel="0" saname="gastroenteritis" saoffset="1233" salength="15" rank="3">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="gastroenteritis">78825</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="腸胃炎">396269</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="腸胃炎">396269</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="appendicitis" aoffset="1250" alength="12" ext_length="0">
 				<subanchor sarel="0" saname="appendicitis" saoffset="1250" salength="12" rank="4">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="闌尾炎">730578</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="闌尾炎">730578</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="gastritis" aoffset="1264" alength="9" ext_length="0">
 				<subanchor sarel="0" saname="gastritis" saoffset="1264" salength="9" rank="1">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="胃炎">88332</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="胃炎">88332</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Gastritis">485573</tobep>
 				</subanchor>
 			</anchor>
@@ -521,7 +521,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="单细胞生物">220750</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="microscopic colitis" saoffset="1341" salength="19" rank="33">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="顯微鏡">65134</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="顯微鏡">65134</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="colitis" saoffset="1353" salength="7" rank="54">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="偽膜性結腸炎">785815</tobep>
@@ -534,7 +534,7 @@
 			</anchor>
 			<anchor arel="0" aname="hernia" aoffset="1415" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="hernia" saoffset="1415" salength="6" rank="37">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="疝">1116910</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="疝">1116910</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="hernia">224405</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="膽石症">356732</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="先天性橫膈疝氣">484367</tobep>
@@ -549,7 +549,7 @@
 			</anchor>
 			<anchor arel="0" aname="volvulus" aoffset="1440" alength="8" ext_length="0">
 				<subanchor sarel="0" saname="volvulus" saoffset="1440" salength="8" rank="24">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="腸">537554</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="腸">537554</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="post" aoffset="1450" alength="4" ext_length="0">
@@ -583,7 +583,7 @@
 			<anchor arel="0" aname="artery" aoffset="1504" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="artery" saoffset="1504" salength="6" rank="75">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="冠状血管">280327</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="动脉">263295</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="动脉">263295</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="主動脈">272056</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="动脉硬化">192922</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="深渊上的火">434215</tobep>
@@ -592,7 +592,7 @@
 			</anchor>
 			<anchor arel="0" aname="syndrome" aoffset="1511" alength="8" ext_length="0">
 				<subanchor sarel="0" saname="syndrome" saoffset="1511" salength="8" rank="87">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="症候群">639952</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="症候群">639952</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="syndrome">289518</tobep>
 				</subanchor>
 			</anchor>
@@ -607,7 +607,7 @@
 			</anchor>
 			<anchor arel="0" aname="constipation" aoffset="1528" alength="12" ext_length="0">
 				<subanchor sarel="0" saname="constipation" saoffset="1528" salength="12" rank="16">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="便秘">147343</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="便秘">147343</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="hemorrhoids" aoffset="1542" alength="11" ext_length="0">
@@ -635,7 +635,7 @@
 				<subanchor sarel="0" saname="sickle" saoffset="1639" salength="6" rank="60">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中國共產黨黨旗黨徽">243872</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="苏联国旗">244756</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="镰刀">669602</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="镰刀">669602</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="锤子与镰刀">200595</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="达西安镰刀">53241</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="罗纹鸭">71518</tobep>
@@ -661,7 +661,7 @@
 			</anchor>
 			<anchor arel="0" aname="abdominal angina" aoffset="1660" alength="16" ext_length="0">
 				<subanchor sarel="0" saname="abdominal angina" saoffset="1660" salength="16" rank="211">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="腹">138082</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="腹">138082</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="angina" saoffset="1670" salength="6" rank="98">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="心绞痛">194080</tobep>
@@ -669,7 +669,7 @@
 			</anchor>
 			<anchor arel="0" aname="blood" aoffset="1678" alength="5" ext_length="7">
 				<subanchor sarel="0" saname="blood" saoffset="1678" salength="5" rank="73">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="血液">104523</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="血液">104523</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="红血球">1195</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="恐血症">275979</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="基督的血">708151</tobep>
@@ -683,7 +683,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="血部">714447</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="blood vessel" saoffset="1678" salength="12" rank="54">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="血管">64505</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="血管">64505</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="vessel" saoffset="1684" salength="6" rank="140">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="两埃及的荣耀">1161654</tobep>
@@ -736,7 +736,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="小肠">175753</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="celiac artery" saoffset="1712" salength="13" rank="34">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="腹">138082</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="腹">138082</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="orthostatic" aoffset="1758" alength="11" ext_length="0">
@@ -756,7 +756,7 @@
 			</anchor>
 			<anchor arel="0" aname="digestive" aoffset="1832" alength="9" ext_length="0">
 				<subanchor sarel="0" saname="digestive" saoffset="1832" salength="9" rank="159">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="消化系统">96262</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="消化系统">96262</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="peptic" aoffset="1843" alength="6" ext_length="6">
@@ -764,7 +764,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="胃及十二指肠潰瘍">485573</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="peptic ulcer" saoffset="1843" salength="12" rank="25">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="胃">183250</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="胃">183250</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="胃及十二指肠潰瘍">485573</tobep>
 				</subanchor>
 			</anchor>
@@ -774,15 +774,15 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="乳糖操縱子">485605</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="乳糖酶">649723</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="半乳糖">68879</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="乳糖">341066</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="乳糖">341066</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="乳糖不耐症">341255</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="lactose intolerance" saoffset="1857" salength="19" rank="8">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="lactose_intolerance">154469</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="乳糖不耐症">341255</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="乳糖不耐症">341255</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="intolerance" saoffset="1865" salength="11" rank="130">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="不賽因">361548</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="不賽因">361548</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="忍無可忍">939673</tobep>
 				</subanchor>
 			</anchor>
@@ -796,7 +796,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="小肠">175753</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="coeliac disease" saoffset="1878" salength="15" rank="11">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="腹">138082</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="腹">138082</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="小麦">32558</tobep>
 				</subanchor>
 			</anchor>
@@ -805,7 +805,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="苏丹红事件">93342</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="食品科学与工程">138630</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="食品产业">471076</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="食物">10535</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="食物">10535</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="食品科學">697043</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="绿色食品">149357</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="烹饪">3509</tobep>
@@ -816,7 +816,7 @@
 				<subanchor sarel="0" saname="food allergies" saoffset="1895" salength="14" rank="21">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="組織胺">204106</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="食物敏感">740938</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="食物">10535</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="食物">10535</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Food_allergy">81897</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="allergies" saoffset="1900" salength="9" rank="36">
@@ -879,12 +879,12 @@
 			</anchor>
 			<anchor arel="0" aname="hepatitis" aoffset="2225" alength="9" ext_length="0">
 				<subanchor sarel="0" saname="hepatitis" saoffset="2225" salength="9" rank="40">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="肝炎">321709</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="肝炎">321709</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="liver" aoffset="2236" alength="5" ext_length="0">
 				<subanchor sarel="0" saname="liver" saoffset="2236" salength="5" rank="47">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="肝臟">79683</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="肝臟">79683</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="肝炎">321709</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="鵝肝">271183</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="乙肝歧视">333542</tobep>
@@ -897,7 +897,7 @@
 				<subanchor sarel="0" saname="abscess" saoffset="2242" salength="7" rank="53">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="咽喉痈">58942</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="ICD-10 第十章：呼吸系统疾病">1077068</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="膿瘡">1119385</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="膿瘡">1119385</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="肛瘘">1133161</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="溶组织内阿米巴">986819</tobep>
 				</subanchor>
@@ -952,7 +952,7 @@
 			</anchor>
 			<anchor arel="0" aname="Inflammation" aoffset="2473" alength="12" ext_length="0">
 				<subanchor sarel="0" saname="Inflammation" saoffset="2473" salength="12" rank="46">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="炎症">113618</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="炎症">113618</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="bladder" aoffset="2503" alength="7" ext_length="10">
@@ -968,11 +968,11 @@
 				<subanchor sarel="0" saname="bladder infection" saoffset="2503" salength="17" rank="47">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="膀胱炎">229376</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="泌尿道感染">686480</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="膀胱">44248</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="膀胱">44248</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="infection" saoffset="2511" salength="9" rank="62">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="ICD-10 第一章：某些传染病和寄生虫病">1060998</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="感染">462935</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="感染">462935</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="念珠菌症">1075767</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="性傳播疾病">40705</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="海洋分支桿菌">614815</tobep>
@@ -990,7 +990,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="后肾管">218448</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="菜豆">818128</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="肾上腺素">68275</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="腎">183418</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="腎">183418</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="kidney stones" saoffset="2575" salength="13" rank="5">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="腎結石">244643</tobep>
@@ -1010,16 +1010,16 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="尿路動力學">120751</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="Urinary retention" saoffset="2604" salength="17" rank="20">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="尿瀦留">265933</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="尿瀦留">265933</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="urinary_retention">686480</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="retention" saoffset="2612" salength="9" rank="244">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="英格兰足球超级联赛">18715</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="英格兰足球超级联赛">18715</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="left" aoffset="2682" alength="4" ext_length="22">
 				<subanchor sarel="0" saname="left" saoffset="2682" salength="4" rank="108">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="左">153073</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="左">153073</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="極左派">946283</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="道路通行方向">256176</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中国象棋开局编号">709241</tobep>
@@ -1032,13 +1032,13 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="左姓">604262</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="left renal" saoffset="2682" salength="10" rank="222">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="左">153073</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="左">153073</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="left renal vein" saoffset="2682" salength="15" rank="209">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="左">153073</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="左">153073</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="left renal vein entrapment" saoffset="2682" salength="26" rank="15">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="左">153073</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="左">153073</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="renal" saoffset="2687" salength="5" rank="68">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="ICD-10 第十四章：泌尿生殖系统疾病">1093831</tobep>
@@ -1059,13 +1059,13 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="冠状血管">280327</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="靜脈注射">874037</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="vein">273737</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="静脉">56238</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="静脉">56238</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="鱗翅目術語表">517923</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="entrapment" saoffset="2698" salength="10" rank="45">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="聚对二甲苯">1154229</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="同步光网络">64624</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="執法">263605</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="執法">263605</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="脂质体">64796</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="硬山顶">350239</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="逆向转发">1234330</tobep>
@@ -1147,18 +1147,18 @@
 			</anchor>
 			<anchor arel="0" aname="menstruation" aoffset="2988" alength="12" ext_length="0">
 				<subanchor sarel="0" saname="menstruation" saoffset="2988" salength="12" rank="23">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="月經">100969</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="月經">100969</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Tumors" aoffset="3057" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="Tumors" saoffset="3057" salength="6" rank="31">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="肿瘤">442111</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="肿瘤">442111</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="endometriosis" aoffset="3065" alength="13" ext_length="0">
 				<subanchor sarel="0" saname="endometriosis" saoffset="3065" salength="13" rank="12">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="endometriosis">523355</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="膜">961017</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="膜">961017</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="子宮內膜異位症">525152</tobep>
 				</subanchor>
 			</anchor>
@@ -1170,12 +1170,12 @@
 			</anchor>
 			<anchor arel="0" aname="ovarian cyst" aoffset="3090" alength="12" ext_length="0">
 				<subanchor sarel="0" saname="ovarian cyst" saoffset="3090" salength="12" rank="55">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="卵巢">150639</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="卵巢">150639</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="ovarian cancer" aoffset="3104" alength="14" ext_length="0">
 				<subanchor sarel="0" saname="ovarian cancer" saoffset="3104" salength="14" rank="22">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="卵巢癌">523355</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="卵巢癌">523355</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="卵巢">150639</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="cancer" saoffset="3112" salength="6" rank="55">
@@ -1184,7 +1184,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="癌幹細胞">764174</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="國家癌症研究中心">375725</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="癌">12140</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="癌症">84100</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="癌症">84100</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="癌症疫苗">916489</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="乳癌">244394</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="肿瘤">442111</tobep>
@@ -1217,7 +1217,7 @@
 				</subanchor>
 				<subanchor sarel="0" saname="ectopic pregnancy" saoffset="3180" salength="17" rank="13">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="異位妊娠">242358</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="妊娠">212806</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="妊娠">212806</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="pregnancy" saoffset="3188" salength="9" rank="66">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="怀孕母猪">692555</tobep>
@@ -1226,7 +1226,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="复合口服避孕药">1233036</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="妊娠定位栏">669108</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="未成年懷孕">1078338</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="妊娠">212806</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="妊娠">212806</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="threatened" aoffset="3199" alength="10" ext_length="9">
@@ -1240,7 +1240,7 @@
 				</subanchor>
 				<subanchor sarel="0" saname="threatened abortion" saoffset="3199" salength="19" rank="55">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="流产">19141</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="先兆流产">1288386</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="先兆流产">1288386</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="abortion" saoffset="3210" salength="8" rank="26">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="ICD-10 第十五章：妊娠、分娩和产褥期">1093833</tobep>
@@ -1274,10 +1274,10 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="肌肉崇拜">1280876</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="杜興氏肌肉營養不良症">339780</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="肌肉系统">621378</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="肌肉">190564</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="肌肉">190564</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="muscle strain" saoffset="3316" salength="13" rank="143">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="肌肉">190564</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="肌肉">190564</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="strain" saoffset="3323" salength="6" rank="88">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="胡克定律">9202</tobep>
@@ -1325,10 +1325,10 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="生殖器皰疹">482198</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="herpes zoster" saoffset="3458" salength="13" rank="5">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="带状疱疹">335795</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="带状疱疹">335795</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="zoster" saoffset="3465" salength="6" rank="177">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="带状疱疹">335795</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="带状疱疹">335795</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="radiculitis" aoffset="3473" alength="11" ext_length="0">
@@ -1349,7 +1349,7 @@
 			</anchor>
 			<anchor arel="0" aname="abdominal cutaneous nerve entrapment syndrome" aoffset="3502" alength="45" ext_length="0">
 				<subanchor sarel="0" saname="abdominal cutaneous nerve entrapment syndrome" saoffset="3502" salength="45" rank="59">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="腹">138082</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="腹">138082</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="cutaneous" saoffset="3512" salength="9" rank="31">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="皮肤科">1136735</tobep>
@@ -1360,12 +1360,12 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="白癜风">413602</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="cutaneous nerve" saoffset="3512" salength="15" rank="83">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="皮">1204950</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="皮">1204950</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="nerve" saoffset="3522" salength="5" rank="63">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="ICD-10 第六章：神经系统疾病">1073108</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="神经系统">90127</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="神经">184901</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="神经">184901</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="植物神经系统">333398</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="nerve">329857</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="nerves">152825</tobep>
@@ -1376,13 +1376,13 @@
 			</anchor>
 			<anchor arel="0" aname="thorax" aoffset="3677" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="thorax" saoffset="3677" salength="6" rank="29">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="胸">213372</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="胸">213372</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="pneumonia" aoffset="3685" alength="9" ext_length="0">
 				<subanchor sarel="0" saname="pneumonia" saoffset="3685" salength="9" rank="27">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="pneumonia">598</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="肺炎">72490</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="肺炎">72490</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="pulmonary" aoffset="3696" alength="9" ext_length="9">
@@ -1398,7 +1398,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="肺癌">265174</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="pulmonary embolism" saoffset="3696" salength="18" rank="6">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="肺栓塞">908663</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="肺栓塞">908663</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="pulmonary_embolism">110485</tobep>
 				</subanchor>
 			</anchor>
@@ -1424,7 +1424,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="心形符號">280868</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="ICD-10 第九章：循环系统疾病">1075712</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Heart_(Chinese_medicine)">208273</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="心臟">54426</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="心臟">54426</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="heart disease" saoffset="3725" salength="13" rank="43">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="心脏病">322928</tobep>
@@ -1434,12 +1434,12 @@
 			<anchor arel="0" aname="pericarditis" aoffset="3740" alength="12" ext_length="0">
 				<subanchor sarel="0" saname="pericarditis" saoffset="3740" salength="12" rank="0">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="pericarditis">461057</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="心包炎">460885</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="心包炎">460885</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="the spine" aoffset="3799" alength="9" ext_length="0">
 				<subanchor sarel="0" saname="the spine" saoffset="3799" salength="9" rank="182">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="脊椎">219557</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="脊椎">219557</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="spine" saoffset="3803" salength="5" rank="84">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Spinal_cord">333439</tobep>
@@ -1463,7 +1463,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="睾丸">32908</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="testicular torsion" saoffset="3882" salength="18" rank="23">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="睾丸">32908</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="睾丸">32908</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Metabolic" aoffset="3942" alength="9" ext_length="12">
@@ -1489,7 +1489,7 @@
 			</anchor>
 			<anchor arel="0" aname="uremia" aoffset="4005" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="uremia" saoffset="4005" salength="6" rank="21">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="尿毒症">498963</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="尿毒症">498963</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="uremia ">944957</tobep>
 				</subanchor>
 			</anchor>
@@ -1500,7 +1500,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="糖尿病">48615</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="diabetic ketoacidosis" saoffset="4013" salength="21" rank="11">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="酮酸">311358</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="酮酸">311358</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="酮酸中毒">1179227</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="ketoacidosis" saoffset="4022" salength="12" rank="126">
@@ -1509,18 +1509,18 @@
 			</anchor>
 			<anchor arel="0" aname="porphyria" aoffset="4036" alength="9" ext_length="0">
 				<subanchor sarel="0" saname="porphyria" saoffset="4036" salength="9" rank="19">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="紫質症">946533</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="紫質症">946533</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="porphyria">659074</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="C1" aoffset="4047" alength="2" ext_length="30">
 				<subanchor sarel="0" saname="C1" saoffset="4047" salength="2" rank="96">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="C1">1039468</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="C1">1039468</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="C1-esterase inhibitor deficiency" saoffset="4047" salength="32" rank="36">
 				</subanchor>
 				<subanchor sarel="0" saname="esterase" saoffset="4050" salength="8" rank="31">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="酯酶">677903</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="酯酶">677903</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="inhibitor" saoffset="4059" salength="9" rank="96">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="酶抑制剂">643994</tobep>
@@ -1534,11 +1534,11 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="腎上腺">791457</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="adrenal insufficiency" saoffset="4081" salength="21" rank="20">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="腎上腺">791457</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="腎上腺">791457</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="愛迪生氏病">426004</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="insufficiency" saoffset="4089" salength="13" rank="45">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="不賽因">361548</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="不賽因">361548</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="lead" aoffset="4104" alength="4" ext_length="10">
@@ -1554,20 +1554,20 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="风险">58529</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="视网膜脱落">960851</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="假丝酵母属">1133066</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="Lead">540769</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Lead">540769</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="lead poisoning" saoffset="4104" salength="14" rank="17">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="鉛中毒">769829</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="鉛中毒">769829</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="poisoning" saoffset="4109" salength="9" rank="203">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="poison">132407</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="毒物">377080</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="毒物">377080</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="black" aoffset="4120" alength="5" ext_length="18">
 				<subanchor sarel="0" saname="black" saoffset="4120" salength="5" rank="61">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="黑人">37144</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="黑色">86619</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="黑色">86619</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="黑色素体">1214298</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="红黑树">55999</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="黑金屬音樂">531232</tobep>
@@ -1601,7 +1601,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="蜘蛛猴">389669</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="敞篷车">419948</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="笊篱">911461</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="蜘蛛">22801</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="蜘蛛">22801</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="蜘蛛絲">1293384</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="網路蜘蛛">873148</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="蜘蛛人2">532907</tobep>
@@ -1609,14 +1609,14 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="蜘蛛人">77708</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="spider bite" saoffset="4132" salength="11" rank="106">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="蜘蛛">22801</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="蜘蛛">22801</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="bite" saoffset="4139" salength="4" rank="49">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="narcotic" aoffset="4145" alength="8" ext_length="0">
 				<subanchor sarel="0" saname="narcotic" saoffset="4145" salength="8" rank="67">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="麻醉药品">377993</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="麻醉药品">377993</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="精神药品">377927</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="麻醉學">10638</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="氮醉">1267945</tobep>
@@ -1672,11 +1672,11 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="深渊上的火">434215</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="aortic dissection" saoffset="4261" salength="17" rank="26">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="主動脈">272056</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="主動脈">272056</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="dissection" saoffset="4268" salength="10" rank="87">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="dissection">911803</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="解剖">933592</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="解剖">933592</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Immune" aoffset="4347" alength="6" ext_length="7">
@@ -1689,7 +1689,7 @@
 				</subanchor>
 				<subanchor sarel="0" saname="Immune system" saoffset="4347" salength="13" rank="1">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="免疫系统">1194</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="免疫">119854</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="免疫">119854</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="vasculitis" aoffset="4455" alength="10" ext_length="0">
@@ -1711,7 +1711,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="八順二十五炳">965069</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="familial Mediterranean fever" saoffset="4507" salength="28" rank="6">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="家族">189974</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="家族">189974</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="Mediterranean" saoffset="4516" salength="13" rank="17">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="地中海">19035</tobep>
@@ -1721,7 +1721,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="地中海式气候">116670</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="Mediterranean fever" saoffset="4516" salength="19" rank="220">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="地中海">19035</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="地中海">19035</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="fever" saoffset="4530" salength="5" rank="57">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="热设计功耗">635973</tobep>
@@ -1748,7 +1748,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="大丹狗">593318</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="irritable bowel syndrome" saoffset="4629" salength="24" rank="17">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="腸">537554</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="腸">537554</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="bowel" saoffset="4639" salength="5" rank="94">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="bowel">96262</tobep>
@@ -1772,7 +1772,7 @@
 				</subanchor>
 				<subanchor sarel="0" saname="up to" saoffset="4665" salength="5" rank="113">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Up to">169273</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="戀愛Make up">653698</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="戀愛Make up">653698</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="to" saoffset="4668" salength="2" rank="172">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="新竹縣鄉道列表">1026537</tobep>
@@ -1787,10 +1787,10 @@
 			</anchor>
 			<anchor arel="0" aname="the population" aoffset="4678" alength="14" ext_length="0">
 				<subanchor sarel="0" saname="the population" saoffset="4678" salength="14" rank="186">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="人口">1247</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="人口">1247</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="population" saoffset="4682" salength="10" rank="69">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="人口">1247</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="人口">1247</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="IBS" aoffset="4694" alength="3" ext_length="0">
@@ -1817,7 +1817,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="原尾目">155145</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="亚夫方罍">1049532</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Abdomenizer">599862</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="腹">138082</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="腹">138082</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="普通黃道蟹">1306062</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="鱗翅目術語表">517923</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Abdomenizer">142540</tobep>
@@ -1915,7 +1915,7 @@
 			</anchor>
 			<anchor arel="0" aname="The pain" aoffset="4980" alength="8" ext_length="0">
 				<subanchor sarel="0" saname="The pain" saoffset="4980" salength="8" rank="182">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="疼痛">789912</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="疼痛">789912</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="nausea" aoffset="5023" alength="6" ext_length="0">
@@ -1925,7 +1925,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="孙云丰">1202685</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="恶心 (小说)">123141</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="一氧化碳中毒">769845</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="恶心">673633</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="恶心">673633</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="蠟樣芽孢桿菌">699641</tobep>
 				</subanchor>
 			</anchor>
@@ -1956,7 +1956,7 @@
 			<anchor arel="0" aname="shock" aoffset="5085" alength="5" ext_length="0">
 				<subanchor sarel="0" saname="shock" saoffset="5085" salength="5" rank="83">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="休克">283989</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="SHOCK">651924</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="SHOCK">651924</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="One" aoffset="5092" alength="3" ext_length="0">
@@ -2019,7 +2019,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="条件运算符">1125369</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="严格条件">195579</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="条件数">278332</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="条件">213317</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="条件">213317</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="实质条件">202958</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="古典制約">262983</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="生活质量">532313</tobep>
@@ -2034,7 +2034,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="崂山嗜粘液蛞蝓">1137627</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="鼻涕">325018</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="黏膜">1151809</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="黏液">510960</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="黏液">510960</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="mucus">35236</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="副黏液病毒科">69858</tobep>
 				</subanchor>
@@ -2129,7 +2129,7 @@
 			</anchor>
 			<anchor arel="0" aname="the stomach" aoffset="5419" alength="11" ext_length="0">
 				<subanchor sarel="0" saname="the stomach" saoffset="5419" salength="11" rank="176">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="胃">183250</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="胃">183250</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="spleen" aoffset="5439" alength="6" ext_length="0">
@@ -2183,13 +2183,13 @@
 			<anchor arel="0" aname="inflammatory bowel disease" aoffset="5893" alength="26" ext_length="0">
 				<subanchor sarel="0" saname="inflammatory bowel disease" saoffset="5893" salength="26" rank="15">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="炎症性肠病">768488</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="腸">537554</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="腸">537554</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Crohn's disease" aoffset="5928" alength="15" ext_length="0">
 				<subanchor sarel="0" saname="Crohn's disease" saoffset="5928" salength="15" rank="0">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="克隆氏症">524943</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="克隆">202199</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="克隆">202199</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Mechanical" aoffset="6007" alength="10" ext_length="0">
@@ -2228,10 +2228,10 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="小肠">175753</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="Small bowel obstruction" saoffset="6061" salength="23" rank="53">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="小部">534460</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="小部">534460</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="bowel obstruction" saoffset="6067" salength="17" rank="3">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="腸">537554</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="腸">537554</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="obstruction" saoffset="6073" salength="11" rank="155">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="ICD-10 第十五章：妊娠、分娩和产褥期">1093833</tobep>
@@ -2335,29 +2335,29 @@
 				<subanchor sarel="0" saname="Large bowel" saoffset="6235" salength="11" rank="58">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Colon_(anatomy)">518298</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Colon_(anatomy)">147343</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="大">554195</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="大">554195</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="Large bowel obstruction" saoffset="6235" salength="23" rank="86">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="大">554195</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="大">554195</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="colorectal" aoffset="6269" alength="10" ext_length="7">
 				<subanchor sarel="0" saname="colorectal" saoffset="6269" salength="10" rank="0">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="大腸癌">371992</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="大">554195</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="大">554195</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="colorectal cancer" saoffset="6269" salength="17" rank="42">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="大腸癌">371992</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="大腸癌">371992</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="fecal impaction" aoffset="6326" alength="15" ext_length="0">
 				<subanchor sarel="0" saname="fecal impaction" saoffset="6326" salength="15" rank="18">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="糞便">159457</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="糞便">159457</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="impaction" saoffset="6332" salength="9" rank="37">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="智齿">146867</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="灌肠 (医学)">318127</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="嵌入">45648</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="嵌入">45648</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Vascular" aoffset="6393" alength="8" ext_length="0">
@@ -2388,7 +2388,7 @@
 			</anchor>
 			<anchor arel="0" aname="intestinal ischemia" aoffset="6414" alength="19" ext_length="0">
 				<subanchor sarel="0" saname="intestinal ischemia" saoffset="6414" salength="19" rank="76">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="腸">537554</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="腸">537554</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="usually" aoffset="6435" alength="7" ext_length="0">
@@ -2447,7 +2447,7 @@
 			</anchor>
 			<anchor arel="0" aname="in 5" aoffset="6644" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="in 5" saoffset="6644" salength="4" rank="184">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="5">23382</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="5">23382</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="years" aoffset="6670" alength="5" ext_length="4">
@@ -2465,7 +2465,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="年">11955</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="years old" saoffset="6670" salength="9" rank="185">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="岁">565613</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="岁">565613</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="In" aoffset="6681" alength="2" ext_length="0">
@@ -2607,7 +2607,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="沙盒 (計算機安全)">1299277</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="德國娛樂軟件檢驗局">153555</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="娛樂軟件分級委員會">153592</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="本田飞度">280267</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="本田飞度">280267</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Fit">499477</tobep>
 				</subanchor>
 			</anchor>
@@ -2620,7 +2620,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="日本成人遊戲">87302</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="色情">553381</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="成人紙尿片">393524</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="成年人">684560</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="成年人">684560</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="成人電子遊戲">767430</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Hentai">346579</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="半条命历史事件表">306606</tobep>
@@ -2755,7 +2755,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="量子数">636224</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="電話號碼">1097085</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="各国天然气出口量列表">1070855</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="数">48461</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="数">48461</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="各国天然气产量列表">1066487</tobep>
 				</subanchor>
 			</anchor>
@@ -2765,7 +2765,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Microsoft Office">1351</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="晉升體系">112914</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="衙門">1040326</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="辦公室">416219</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="辦公室">416219</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Microsoft Office 2007">434626</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Office助手">347537</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="政治人物">212585</tobep>
@@ -2831,14 +2831,14 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="保險金信託">891649</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="共同基金">326926</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="人壽保險">105740</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="福利">811894</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="福利">811894</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="techniques" aoffset="7165" alength="10" ext_length="0">
 				<subanchor sarel="0" saname="techniques" saoffset="7165" salength="10" rank="107">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中国科学院院士列表">80366</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="国家级经济技术开发区">220429</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="技术">26221</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="技术">26221</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="科学方法">38594</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="外科学">15646</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="计算机动画">155772</tobep>
@@ -2875,7 +2875,7 @@
 				<subanchor sarel="0" saname="stress" saoffset="7198" salength="6" rank="88">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="stress_(biological)">690352</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="一般适应综合症">898384</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="压力">489882</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="压力">489882</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="are" aoffset="7212" alength="3" ext_length="0">
@@ -2931,7 +2931,7 @@
 				<subanchor sarel="0" saname="physician" saoffset="7320" salength="9" rank="58">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="無國界醫生">39226</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="物理学">68</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="医生 (星际旅行)">520820</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="医生 (星际旅行)">520820</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="安乐死 (美国)">1238778</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="医生">6049</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="生理学">37715</tobep>
@@ -2954,7 +2954,7 @@
 			<anchor arel="0" aname="patient" aoffset="7341" alength="7" ext_length="0">
 				<subanchor sarel="0" saname="patient" saoffset="7341" salength="7" rank="94">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="病人安全">948787</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="患者">322256</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="患者">322256</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="氣管切開術">182491</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="病人傅油聖事">89902</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="病歷隱私權">573033</tobep>
@@ -2977,7 +2977,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="凝血因子">227891</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="病毒性">1136513</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="腸胃炎">396269</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="原因論">461039</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="原因論">461039</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="subsequent" aoffset="7379" alength="10" ext_length="0">
@@ -3026,7 +3026,7 @@
 				<subanchor sarel="0" saname="history of" saoffset="7432" salength="10" rank="241">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="法制史">332206</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="病史">540626</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="历史">23</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="历史">23</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="葡萄牙历史">495360</tobep>
 				</subanchor>
 			</anchor>
@@ -3049,7 +3049,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="complaint ">940201</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="国家信访局">943318</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="国家投诉受理办公室">952458</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="投訴">1089546</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="投訴">1089546</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="本地电话特种业务列表 (中国大陆)">111777</tobep>
 				</subanchor>
 			</anchor>
@@ -3071,7 +3071,7 @@
 				<subanchor sarel="0" saname="physical examination" saoffset="7472" salength="20" rank="50">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="体格检查">120974</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="physical_exam">540626</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="检查文化">637410</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="检查文化">637410</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="examination" saoffset="7481" salength="11" rank="91">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="体格检查">120974</tobep>
@@ -3200,7 +3200,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="史塔克家族">1040900</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="馬禮遜美國學校">955885</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2007年">31064</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="今天 (杂志)">159700</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="今天 (杂志)">159700</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="今天">626681</tobep>
 				</subanchor>
 			</anchor>
@@ -3222,7 +3222,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="美国国际开发署">1025859</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="法律援助署">274552</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="人道援助">1013766</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="外援">541853</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="外援">541853</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="汶川大地震捐款列表">1268801</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="政府开发援助">142800</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="援助非洲医疗队">736009</tobep>
@@ -3236,7 +3236,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="AVCP">1239240</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="软件测试模型">225089</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="IEEE 829">976311</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="测试">279704</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="测试">279704</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="測驗">140140</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="麋鹿测试">603909</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="智商">146095</tobep>
@@ -3261,14 +3261,14 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="国家安全生产监督管理总局">518744</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="full blood count" saoffset="7875" salength="16" rank="33">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="全姓">604445</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="全姓">604445</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="全血细胞计数">948018</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="full_blood_count">397925</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="blood count" saoffset="7880" salength="11" rank="186">
 				</subanchor>
 				<subanchor sarel="0" saname="count" saoffset="7886" salength="5" rank="91">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="伯爵">665263</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="伯爵">665263</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="electrolytes" aoffset="7893" alength="12" ext_length="0">
@@ -3278,13 +3278,13 @@
 			</anchor>
 			<anchor arel="0" aname="urea" aoffset="7907" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="urea" saoffset="7907" salength="4" rank="18">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="尿素">107764</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="尿素">107764</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="creatinine" aoffset="7913" alength="10" ext_length="0">
 				<subanchor sarel="0" saname="creatinine" saoffset="7913" salength="10" rank="9">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="creatinine">498963</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="肌酸酐">1112587</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="肌酸酐">1112587</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="liver function" aoffset="7925" alength="14" ext_length="0">
@@ -3301,17 +3301,17 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2012年香港政治制度改革">1228554</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="性腺功能低下症">396574</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="子程序">74654</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="函数">20811</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="函数">20811</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="国家级生态功能保护区">277900</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="pregnancy test" aoffset="7947" alength="14" ext_length="0">
 				<subanchor sarel="0" saname="pregnancy test" saoffset="7947" salength="14" rank="51">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="妊娠试验">546579</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="试验">153219</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="试验">153219</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="test" saoffset="7957" salength="4" rank="84">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="Test">1163146</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Test">1163146</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="单元测试">454229</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="实验">153215</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="软件测试">18739</tobep>
@@ -3326,12 +3326,12 @@
 			</anchor>
 			<anchor arel="0" aname="lipase" aoffset="7966" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="lipase" saoffset="7966" salength="6" rank="28">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="脂酶">955273</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="脂酶">955273</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Urinalysis" aoffset="8015" alength="10" ext_length="0">
 				<subanchor sarel="0" saname="Urinalysis" saoffset="8015" salength="10" rank="3">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="尿">100855</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="尿">100855</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="urinalysis">229431</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="尿液分析">953227</tobep>
 				</subanchor>
@@ -3372,11 +3372,11 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="胸大肌">581830</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="chest X-ray" saoffset="8091" salength="11" rank="67">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="胸">213372</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="胸">213372</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="X-ray" saoffset="8097" salength="5" rank="7">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="X射线">20221</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="射线">66742</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="射线">66742</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="ray" saoffset="8099" salength="3" rank="141">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="rai ">972289</tobep>
@@ -3391,7 +3391,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="单纯形">894256</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="大平原">1023464</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="化学试剂">1118436</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="平原">74158</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="平原">74158</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="地方话">316185</tobep>
 				</subanchor>
 			</anchor>
@@ -3440,7 +3440,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="治理">188102</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="实质条件">202958</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="关联式规则">483776</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="尺">1095524</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="尺">1095524</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="足球比赛规则">1122090</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="五子棋">19624</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="尺 (消歧義)">746665</tobep>
@@ -3519,7 +3519,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="PH值">83025</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Base_(chemistry)">33069</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="基本權 (憲法學)">585364</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="Visual Basic">1151</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Visual Basic">1151</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="基本權第三人效力">585376</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="鹽基">254138</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="德国基本法">516314</tobep>
@@ -3565,32 +3565,32 @@
 			</anchor>
 			<anchor arel="0" aname="Computed" aoffset="8516" alength="8" ext_length="11">
 				<subanchor sarel="0" saname="Computed" saoffset="8516" salength="8" rank="202">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="计算">112</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="计算">112</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="computer">30063</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="computer">948780</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="Computed Tomography" saoffset="8516" salength="19" rank="14">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="核医学">911071</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="電子計算機">30063</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="電子計算機">30063</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="X射线断层成像">114908</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="Tomography" saoffset="8525" salength="10" rank="166">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="斷層">186374</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="斷層">186374</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="pelvis" aoffset="8551" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="pelvis" saoffset="8551" salength="6" rank="24">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="髖">551331</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="髖">551331</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="pelvic ultrasound" aoffset="8612" alength="17" ext_length="0">
 				<subanchor sarel="0" saname="pelvic ultrasound" saoffset="8612" salength="17" rank="33">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="医学超声检查">280824</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="髖">551331</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="髖">551331</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="ultrasound" saoffset="8619" salength="10" rank="32">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="超声造影成像">520983</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="超聲波">11488</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="超聲波">11488</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="应崇福">453056</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="医学超声检查">280824</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="超声造影剂">504933</tobep>
@@ -3603,7 +3603,7 @@
 			</anchor>
 			<anchor arel="0" aname="colonoscopy" aoffset="8685" alength="11" ext_length="0">
 				<subanchor sarel="0" saname="colonoscopy" saoffset="8685" salength="11" rank="16">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="結式">968366</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="結式">968366</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="used" aoffset="8702" alength="4" ext_length="0">
@@ -3640,7 +3640,7 @@
 			</anchor>
 			<anchor arel="0" aname="Abdominal examination" aoffset="8833" alength="21" ext_length="0">
 				<subanchor sarel="0" saname="Abdominal examination" saoffset="8833" salength="21" rank="39">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="腹">138082</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="腹">138082</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Apley" aoffset="8959" alength="5" ext_length="0">
@@ -3707,7 +3707,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="橋">64902</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="提图斯凯旋门">1024393</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Arch Linux">148208</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="拱">378661</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="拱">378661</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="脚">320481</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="景觀拱門">486483</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="拱桥">280358</tobep>
@@ -3717,7 +3717,7 @@
 			<anchor arel="0" aname="Dis" aoffset="9054" alength="3" ext_length="0">
 				<subanchor sarel="0" saname="Dis" saoffset="9054" salength="3" rank="15">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="狄斯">812995</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="探索頻道">267476</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="探索頻道">267476</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Child" aoffset="9058" alength="5" ext_length="0">
@@ -3751,7 +3751,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="髖">551331</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="Pelvic Pain" saoffset="9230" salength="11" rank="164">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="髖">551331</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="髖">551331</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="Pain" saoffset="9237" salength="4" rank="11">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="内痔">1042398</tobep>
@@ -3790,25 +3790,25 @@
 			<anchor arel="0" aname="Boyle" aoffset="9345" alength="5" ext_length="0">
 				<subanchor sarel="0" saname="Boyle" saoffset="9345" salength="5" rank="52">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="罗伯特·波义耳">131023</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="博君">967421</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="博君">967421</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="博伊爾縣 (肯塔基州)">582871</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="丹尼·鮑伊">232041</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="JT" aoffset="9351" alength="2" ext_length="0">
 				<subanchor sarel="0" saname="JT" saoffset="9351" salength="2" rank="150">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="日本煙草產業">520456</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="日本煙草產業">520456</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Biopsychosocial" aoffset="9372" alength="15" ext_length="0">
 				<subanchor sarel="0" saname="Biopsychosocial" saoffset="9372" salength="15" rank="152">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="生物">1359</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="生物">1359</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="issues" aoffset="9388" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="issues" saoffset="9388" salength="6" rank="202">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="动态规划">18976</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="问题">35381</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="问题">35381</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="日本民族問題">1151347</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="背包问题">522826</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="环境问题">207351</tobep>
@@ -3821,7 +3821,7 @@
 			</anchor>
 			<anchor arel="0" aname="functional" aoffset="9398" alength="10" ext_length="0">
 				<subanchor sarel="0" saname="functional" saoffset="9398" salength="10" rank="158">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="五散人 (香港立法會)">1148874</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="五散人 (香港立法會)">1148874</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="功能主義建築">198480</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="功能主义">198482</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="函數程式語言">201405</tobep>
@@ -3841,7 +3841,7 @@
 			</anchor>
 			<anchor arel="0" aname="Ann" aoffset="9437" alength="3" ext_length="0">
 				<subanchor sarel="0" saname="Ann" saoffset="9437" salength="3" rank="92">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="安·馬基">207044</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="安·馬基">207044</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="安定邨">219890</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="安姓">91138</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="联合国安全理事会决议 (1960年代)">284251</tobep>
@@ -3856,8 +3856,8 @@
 			</anchor>
 			<anchor arel="0" aname="http" aoffset="9632" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="http" saoffset="9632" salength="4" rank="110">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="传输">512242</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="超文本传输协议">1114</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="传输">512242</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="超文本传输协议">1114</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="lifestyles" aoffset="9678" alength="10" ext_length="0">
@@ -3867,7 +3867,7 @@
 			</anchor>
 			<anchor arel="0" aname="article" aoffset="9715" alength="7" ext_length="0">
 				<subanchor sarel="0" saname="article" saoffset="9715" salength="7" rank="180">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="文章">1102492</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="文章">1102492</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Stomach" aoffset="9733" alength="7" ext_length="0">
@@ -3906,7 +3906,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="ER">18968</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="仁心仁術">18967</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="内质网">10042</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="辛·艾斯丁">816847</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="辛·艾斯丁">816847</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="doctor" aoffset="9828" alength="6" ext_length="0">
@@ -3937,17 +3937,17 @@
 			</anchor>
 			<anchor arel="0" aname="day" aoffset="9864" alength="3" ext_length="0">
 				<subanchor sarel="0" saname="day" saoffset="9864" salength="3" rank="100">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="日">20233</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="日">20233</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Stomach Pain" aoffset="10053" alength="12" ext_length="0">
 				<subanchor sarel="0" saname="Stomach Pain" saoffset="10053" salength="12" rank="154">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="胃痛">58820</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="胃痛">58820</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Conditions" aoffset="10070" alength="10" ext_length="0">
 				<subanchor sarel="0" saname="Conditions" saoffset="10070" salength="10" rank="215">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="条件">213317</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="条件">213317</tobep>
 				</subanchor>
 			</anchor>
 		</outgoinglinks>
