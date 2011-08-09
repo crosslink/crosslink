@@ -149,7 +149,7 @@ public class Bep extends Observable {
 	}
 	
 	public String getTargetLang() {
-		return targetLang;
+		return targetLang.toLowerCase();
 	}
 
 	public void setTargetLang(String targetLang) {

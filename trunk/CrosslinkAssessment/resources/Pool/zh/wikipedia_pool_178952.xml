@@ -43,8 +43,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Wiki">165</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="-1" aname="TYPE" aoffset="159" alength="4" ext_length="0">
-				<subanchor sarel="-1" saname="TYPE" saoffset="159" salength="4" rank="144">
+			<anchor arel="0" aname="TYPE" aoffset="159" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="TYPE" saoffset="159" salength="4" rank="144">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Kimchi" aoffset="266" alength="6" ext_length="0">
@@ -84,7 +84,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="dish" aoffset="568" alength="4" ext_length="2">
-				<subanchor sarel="-1" saname="dish" saoffset="568" salength="4" rank="162">
+				<subanchor sarel="0" saname="dish" saoffset="568" salength="4" rank="162">
 				</subanchor>
 				<subanchor sarel="0" saname="dishes" saoffset="568" salength="6" rank="178">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="粤菜">22503</tobep>
@@ -274,13 +274,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="未">218276</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="" aoffset="1129" alength="0" ext_length="0">
-				<subanchor sarel="0" saname="" saoffset="1129" salength="0" rank="207">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="阋神星">138813</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2月3日">11792</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="AMD K6-2">351270</tobep>
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="hundreds" aoffset="1234" alength="8" ext_length="0">
 				<subanchor sarel="0" saname="hundreds" saoffset="1234" salength="8" rank="244">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="大电影之数百亿">467467</tobep>
@@ -382,8 +375,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="黄瓜">145952</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="-1" aname="banchan" aoffset="1471" alength="7" ext_length="0">
-				<subanchor sarel="-1" saname="banchan" saoffset="1471" salength="7" rank="9">
+			<anchor arel="0" aname="banchan" aoffset="1471" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="banchan" saoffset="1471" salength="7" rank="9">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="side dish" aoffset="1483" alength="9" ext_length="0">
@@ -2400,8 +2393,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="時代劇">168833</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="-1" aname="facts" aoffset="7076" alength="5" ext_length="0">
-				<subanchor sarel="-1" saname="facts" saoffset="7076" salength="5" rank="111">
+			<anchor arel="0" aname="facts" aoffset="7076" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="facts" saoffset="7076" salength="5" rank="111">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="trends" aoffset="7113" alength="6" ext_length="0">
@@ -2562,8 +2555,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="Zh" title="忠">560769</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="-1" aname="fermented fish" aoffset="8280" alength="14" ext_length="0">
-				<subanchor sarel="-1" saname="fermented fish" saoffset="8280" salength="14" rank="163">
+			<anchor arel="0" aname="fermented fish" aoffset="8280" alength="14" ext_length="0">
+				<subanchor sarel="0" saname="fermented fish" saoffset="8280" salength="14" rank="163">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="fermentation" aoffset="8334" alength="12" ext_length="0">
