@@ -6,8 +6,8 @@ do
   do
 	filename=`echo $i | cut -f 1 -d "."`
 	zip -u $filename lib/*
-	zip -u $filename resources/Pool/zh/*
-	zip -u $filename resources/Pool/ja/*
-	zip -u $filename resources/Pool/ko/*
+	#zip -u $filename resources/Pool/zh/*
+	#zip -u $filename resources/Pool/ja/*
+	#zip -u $filename resources/Pool/ko/*
   done
 done

@@ -332,33 +332,38 @@ public class IndexedAnchor extends Anchor {
 	public void statusCheck() {
 //		if (status == Bep.UNASSESSED) {
 			int rel = status; //Bep.IRRELEVANT;
-			boolean hasRelevantLink = false;
 			
-			if (offset == 1750 || name.equals("試驗"))
-				System.out.println("Stop here");
-			
-			for (AssessedAnchor subanchor : getChildrenAnchors()) {
-				if (subanchor.checkStatus() == ASSESSMENT_FINISHED_NO) {
-	//				finished = ASSESSMENT_FINISHED_NO;
-					rel = Bep.UNASSESSED;
-					hasRelevantLink = true;
-					break;
-				}
-				else {
-					if (rel == Bep.UNASSESSED)
-						rel = subanchor.getStatus();
-					
-					int subStatus = subanchor.getStatus();
-					
-					if (subStatus == Bep.RELEVANT) {
+			if (name.trim().length() == 0)
+				rel = Bep.IRRELEVANT;
+			else {
+				boolean hasRelevantLink = false;
+				
+				if (offset == 1750 || name.equals("試驗"))
+					System.out.println("Stop here");
+				
+				for (AssessedAnchor subanchor : getChildrenAnchors()) {
+					if (subanchor.checkStatus() == ASSESSMENT_FINISHED_NO) {
+		//				finished = ASSESSMENT_FINISHED_NO;
+						rel = Bep.UNASSESSED;
 						hasRelevantLink = true;
-						rel = Bep.RELEVANT;
+						break;
+					}
+					else {
+						if (rel == Bep.UNASSESSED)
+							rel = subanchor.getStatus();
+						
+						int subStatus = subanchor.getStatus();
+						
+						if (subStatus == Bep.RELEVANT) {
+							hasRelevantLink = true;
+							rel = Bep.RELEVANT;
+						}
 					}
 				}
+				
+				if (!hasRelevantLink && status == Bep.RELEVANT)
+					rel = Bep.IRRELEVANT;
 			}
-			
-			if (!hasRelevantLink && status == Bep.RELEVANT)
-				rel = Bep.IRRELEVANT;
 		
 			if (rel != status) {
 				status = rel;
