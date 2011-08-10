@@ -1404,12 +1404,12 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="嘔吐">84542</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="abdominal" aoffset="8719" alength="9" ext_length="5">
+			<anchor arel="0" aname="abdominal" aoffset="8719" alength="9" ext_length="0">
 				<subanchor sarel="0" saname="abdominal" saoffset="8719" salength="9" rank="175">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="腹">579766</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="abdominal pain" saoffset="8719" salength="14" rank="69">
-				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="pain" aoffset="8729" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="pain" saoffset="8729" salength="4" rank="141">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="疼痛">796873</tobep>
 				</subanchor>

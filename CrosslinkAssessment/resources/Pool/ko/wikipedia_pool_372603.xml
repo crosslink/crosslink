@@ -1208,10 +1208,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="투자">204468</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Counterparty risk" aoffset="5298" alength="17" ext_length="0">
-				<subanchor sarel="0" saname="Counterparty risk" saoffset="5298" salength="17" rank="4">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="an organization" aoffset="5397" alength="15" ext_length="0">
 				<subanchor sarel="0" saname="an organization" saoffset="5397" salength="15" rank="172">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="조직">276371</tobep>
@@ -1387,10 +1383,6 @@
 				<subanchor sarel="0" saname="correlated" saoffset="6258" salength="10" rank="22">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="상관분석">154481</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="상호">397479</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="direction" aoffset="6289" alength="9" ext_length="0">
-				<subanchor sarel="0" saname="direction" saoffset="6289" salength="9" rank="243">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="correlation" aoffset="6310" alength="11" ext_length="0">

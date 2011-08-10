@@ -1620,10 +1620,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="진지">390464</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="physical" aoffset="9182" alength="8" ext_length="0">
-				<subanchor sarel="0" saname="physical" saoffset="9182" salength="8" rank="172">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="meatloaf" aoffset="9197" alength="8" ext_length="0">
 				<subanchor sarel="0" saname="meatloaf" saoffset="9197" salength="8" rank="15">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="미트 롬니">168436</tobep>
@@ -2019,12 +2015,10 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="실재">273854</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="poverty" aoffset="12248" alength="7" ext_length="7">
+			<anchor arel="0" aname="poverty" aoffset="12248" alength="7" ext_length="0">
 				<subanchor sarel="0" saname="poverty" saoffset="12248" salength="7" rank="155">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="궁">31523</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="빈곤">290799</tobep>
-				</subanchor>
-				<subanchor sarel="0" saname="poverty levels" saoffset="12248" salength="14" rank="70">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Asia" aoffset="12287" alength="4" ext_length="0">
@@ -2318,10 +2312,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="김밥">64502</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="sushi" aoffset="13965" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="sushi" saoffset="13965" salength="5" rank="57">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="more fish" aoffset="13986" alength="9" ext_length="0">
 				<subanchor sarel="0" saname="more fish" saoffset="13986" salength="9" rank="33">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="더 후">206893</tobep>
@@ -2386,9 +2376,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="전">211348</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Spam Museum" aoffset="14427" alength="11" ext_length="0">
-				<subanchor sarel="0" saname="Spam Museum" saoffset="14427" salength="11" rank="19">
-				</subanchor>
+			<anchor arel="0" aname="Museum" aoffset="14432" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="Museum" saoffset="14432" salength="6" rank="170">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="박물관">168544</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="뮤지엄 역 (TTC)">382831</tobep>

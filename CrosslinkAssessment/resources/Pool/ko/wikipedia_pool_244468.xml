@@ -211,11 +211,9 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="화 산">190581</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Zhū" aoffset="1176" alength="3" ext_length="5">
+			<anchor arel="0" aname="Zhū" aoffset="1176" alength="3" ext_length="0">
 				<subanchor sarel="0" saname="Zhū" saoffset="1176" salength="3" rank="146">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="주">38363</tobep>
-				</subanchor>
-				<subanchor sarel="0" saname="Zhū​ Xī​" saoffset="1176" salength="8" rank="24">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Chu Hsi" aoffset="1196" alength="7" ext_length="0">
@@ -389,10 +387,6 @@
 				<subanchor sarel="0" saname="Pinyin" saoffset="2118" salength="6" rank="29">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="한어">470080</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="한어 병음">21872</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="Zhū Xī" aoffset="2138" alength="6" ext_length="0">
-				<subanchor sarel="0" saname="Zhū Xī" saoffset="2138" salength="6" rank="23">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Wade-Giles" aoffset="2184" alength="10" ext_length="0">
@@ -798,10 +792,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="LI">162709</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Ultimate" aoffset="4699" alength="8" ext_length="0">
-				<subanchor sarel="0" saname="Ultimate" saoffset="4699" salength="8" rank="197">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="taiji" aoffset="4713" alength="5" ext_length="0">
 				<subanchor sarel="0" saname="taiji" saoffset="4713" salength="5" rank="18">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="태극">6275</tobep>
@@ -826,10 +816,6 @@
 				<subanchor sarel="0" saname="reality" saoffset="4846" salength="7" rank="144">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="존재론">276591</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="실재">273854</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="physical" aoffset="4902" alength="8" ext_length="0">
-				<subanchor sarel="0" saname="physical" saoffset="4902" salength="8" rank="196">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="rational" aoffset="4970" alength="8" ext_length="0">
@@ -1812,10 +1798,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="일본 열도">35318</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Shushigaku" aoffset="13026" alength="10" ext_length="0">
-				<subanchor sarel="0" saname="Shushigaku" saoffset="13026" salength="10" rank="1">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="Zhu" aoffset="13053" alength="3" ext_length="0">
 				<subanchor sarel="0" saname="Zhu" saoffset="13053" salength="3" rank="52">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="명나라">31853</tobep>
@@ -2322,10 +2304,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="경주로">319017</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="선">32826</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="대각합">231908</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="elegance" aoffset="15857" alength="8" ext_length="0">
-				<subanchor sarel="0" saname="elegance" saoffset="15857" salength="8" rank="153">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="construction" aoffset="15869" alength="12" ext_length="0">

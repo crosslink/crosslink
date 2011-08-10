@@ -390,6 +390,12 @@ public class LTWAssessmentToolControler {
         myPooler = PoolerManager.getInstance(poolFile);
         myPUpdater = myPooler.getPoolUpdater();
         
+        /**
+         * This has to be done before anything else
+         */
+        rscManager.pullPoolData();
+        rscManager.checkAnchorStatus();
+        
 //        AssessmentThread.setMyPoolManager(myPooler);
 //        AssessmentThread.setMyRSCManager(rscManager);
 //        AssessmentThread.setMyPoolUpdater(myPUpdater);
@@ -397,7 +403,7 @@ public class LTWAssessmentToolControler {
         
         topicAnchorsHT = myPooler.getTopicAllAnchors();
        
-        if (reset) {
+        if (reset || rscManager.getPoolAnchorsOLNameStatusV().size() != rscManager.getTopicAnchorsOLNameSEV().size()) {
         	resetResouceTopic(AppResource.sourceLang);
         } 
         else {
@@ -417,7 +423,6 @@ public class LTWAssessmentToolControler {
         Assessment.getInstance().setCurrentTopic(new File(rscManager.getCurrTopicXmlFile()));
         myPUpdater.setTopicID(currTopicID);
         currTopicName = Assessment.getInstance().getCurrentTopic().getTitle();
-        rscManager.pullPoolData();
     	
         // -------------------------------------------------------------
         // scrSE, String[]{O,L,TXT,S,E,num}
@@ -472,8 +477,6 @@ public class LTWAssessmentToolControler {
         	FOLTXTMatcher.getInstance().getSCRAnchorPosV(myTopicPane, currTopicID, topicAnchorsHT);
         	topicAnchorsOLNameSEVS = rscManager.getTopicAnchorsOLNameSEV();
         }
-        
-        rscManager.checkAnchorStatus();
         
         /*************************************************************************
          * Step 2

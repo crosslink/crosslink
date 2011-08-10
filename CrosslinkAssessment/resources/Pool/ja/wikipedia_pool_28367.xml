@@ -1466,10 +1466,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Kingdom (倖田來未のアルバム)">1242009</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="spam" aoffset="11042" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="spam" saoffset="11042" salength="4" rank="64">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="deep-fried" aoffset="11072" alength="10" ext_length="0">
 				<subanchor sarel="0" saname="deep-fried" saoffset="11072" salength="10" rank="65">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="揚げる">85776</tobep>
@@ -1611,9 +1607,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="口語">41078</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Spam valley" aoffset="12123" alength="11" ext_length="0">
-				<subanchor sarel="0" saname="Spam valley" saoffset="12123" salength="11" rank="30">
-				</subanchor>
+			<anchor arel="0" aname="valley" aoffset="12128" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="valley" saoffset="12128" salength="6" rank="125">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="谷 (流山市)">1684636</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="谷">44954</tobep>

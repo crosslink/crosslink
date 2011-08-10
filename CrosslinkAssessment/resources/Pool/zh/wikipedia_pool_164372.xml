@@ -14,10 +14,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="倍耐力">460975</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="TYPE" aoffset="159" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="TYPE" saoffset="159" salength="4" rank="92">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="pastry" aoffset="500" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="pastry" saoffset="500" salength="6" rank="46">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="糕点战争">1278199</tobep>
@@ -1010,10 +1006,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="豆皮">106413</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="rugelach" aoffset="3140" alength="8" ext_length="0">
-				<subanchor sarel="0" saname="rugelach" saoffset="3140" salength="8" rank="58">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="form" aoffset="3151" alength="4" ext_length="3">
 				<subanchor sarel="0" saname="form" saoffset="3151" salength="4" rank="94">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="向量值微分形式">1042986</tobep>
@@ -1029,10 +1021,6 @@
 				</subanchor>
 				<subanchor sarel="0" saname="form of" saoffset="3151" salength="7" rank="199">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="形式">920584</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="Boulangerie" aoffset="3289" alength="11" ext_length="0">
-				<subanchor sarel="0" saname="Boulangerie" saoffset="3289" salength="11" rank="54">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Zang" aoffset="3320" alength="4" ext_length="0">
@@ -1093,9 +1081,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="羅馬之劫 (1527年)">1163292</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="The bakery" aoffset="3449" alength="10" ext_length="0">
-				<subanchor sarel="0" saname="The bakery" saoffset="3449" salength="10" rank="129">
-				</subanchor>
+			<anchor arel="0" aname="bakery" aoffset="3453" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="bakery" saoffset="3453" salength="6" rank="51">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="西餅店">681693</tobep>
 				</subanchor>
@@ -1155,10 +1141,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="阿里埃勒·沙龙">34956</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="沙龙">48620</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="阿克萨群众起义">436661</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="right" aoffset="3499" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="right" saoffset="3499" salength="5" rank="229">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="that" aoffset="3565" alength="4" ext_length="0">
@@ -1259,16 +1241,16 @@
 			<anchor arel="0" aname="Austrian" aoffset="3752" alength="8" ext_length="0">
 				<subanchor sarel="0" saname="Austrian" saoffset="3752" salength="8" rank="17">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Austro-Bavarian">20552</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="哈布斯堡君主國">1137232</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="神圣罗马帝国">7980</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Austro-Bavarian">736651</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="哈布斯堡君主國">1137232</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Austrian_Empire">119739</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="奧地利帝國">103277</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="奥匈帝国">54715</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="奧地利航空">493369</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="奧地利國家足球隊">278180</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="奥地利">6270</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="奧地利國家足球隊">278180</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="奧地利經濟學派">338709</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="神圣罗马帝国">7980</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Austrian_Empire">119739</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="奧地利足球超級聯賽">128203</tobep>
 				</subanchor>
 			</anchor>
@@ -2043,10 +2025,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="三菱東京UFJ銀行">535964</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="as if" aoffset="5767" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="as if" saoffset="5767" salength="5" rank="227">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="on" aoffset="5806" alength="2" ext_length="0">
 				<subanchor sarel="0" saname="on" saoffset="5806" salength="2" rank="186">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="汉武帝">9444</tobep>
@@ -2128,9 +2106,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="利率掉期交易">1235655</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="All the Year Round" aoffset="6160" alength="18" ext_length="0">
-				<subanchor sarel="0" saname="All the Year Round" saoffset="6160" salength="18" rank="42">
-				</subanchor>
+			<anchor arel="0" aname="Year" aoffset="6168" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="Year" saoffset="6168" salength="4" rank="20">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="春节">6976</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="天保 (西梁)">223947</tobep>
@@ -2590,7 +2566,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="奥斯曼帝国">1846</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Polish" aoffset="7458" alength="6" ext_length="7">
+			<anchor arel="0" aname="Polish" aoffset="7458" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="Polish" saoffset="7458" salength="6" rank="8">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="波蘭國家足球隊">185353</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="波蘭立陶宛聯邦">378221</tobep>
@@ -2602,15 +2578,15 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Polish_language">475257</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Poland">364451</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Portal:波兰/同行高标">1038807</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Portal:波兰/新闻存档">1037640</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="波兰语">76673</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Portal:波兰/新闻存档">1037640</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="俄罗斯波兰领地">1103276</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="波兰">4285</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="波蘭國旗">368178</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="波兰第二共和国">514363</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="Polish forces" saoffset="7458" salength="13" rank="203">
-				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="forces" aoffset="7465" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="forces" saoffset="7465" salength="6" rank="114">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="三角洲特种部队：终极目标">1061278</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="力">17385</tobep>
@@ -4241,10 +4217,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="教育传播学">16632</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="网络传播学">20772</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="南京大学新闻传播学院">78101</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="Historically" aoffset="11098" alength="12" ext_length="0">
-				<subanchor sarel="0" saname="Historically" saoffset="11098" salength="12" rank="189">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="commonplace" aoffset="11134" alength="11" ext_length="0">

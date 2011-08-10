@@ -11,9 +11,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="ER">21169</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Abdominal pain" aoffset="266" alength="14" ext_length="0">
-				<subanchor sarel="0" saname="Abdominal pain" saoffset="266" salength="14" rank="6">
-				</subanchor>
+			<anchor arel="0" aname="pain" aoffset="276" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="pain" saoffset="276" salength="4" rank="84">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="벌">147833</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="고">375464</tobep>
@@ -35,7 +33,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="9">14423</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="stomach" aoffset="697" alength="7" ext_length="5">
+			<anchor arel="0" aname="stomach" aoffset="697" alength="7" ext_length="0">
 				<subanchor sarel="0" saname="stomach" saoffset="697" salength="7" rank="40">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="배">54652</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="비의">99695</tobep>
@@ -47,8 +45,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="위">6346</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="위 (기관)">314281</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="stomach ache" saoffset="697" salength="12" rank="7">
-				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="of the" aoffset="726" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="of the" saoffset="726" salength="6" rank="179">
@@ -59,10 +55,6 @@
 				<subanchor sarel="0" saname="symptoms" saoffset="733" salength="8" rank="226">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="표">299947</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="신체화 증상">473250</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="transient" aoffset="758" alength="9" ext_length="0">
-				<subanchor sarel="0" saname="transient" saoffset="758" salength="9" rank="90">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="dis" aoffset="768" alength="3" ext_length="0">

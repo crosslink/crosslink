@@ -75,9 +75,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="オブジェクト">12881</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="puzzle pieces" aoffset="717" alength="13" ext_length="0">
-				<subanchor sarel="0" saname="puzzle pieces" saoffset="717" salength="13" rank="210">
-				</subanchor>
+			<anchor arel="0" aname="pieces" aoffset="724" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="pieces" saoffset="724" salength="6" rank="134">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Pieces (w-inds.)">1395768</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Pieces (L&amp;apos;Arc〜en〜Cielの曲)">676421</tobep>
@@ -161,10 +159,6 @@
 			<anchor arel="0" aname="research" aoffset="1043" alength="8" ext_length="0">
 				<subanchor sarel="0" saname="research" saoffset="1043" salength="8" rank="82">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="研究">5178</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="puzzles" aoffset="1160" alength="7" ext_length="0">
-				<subanchor sarel="0" saname="puzzles" saoffset="1160" salength="7" rank="209">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="recognizing" aoffset="1180" alength="11" ext_length="0">
@@ -1526,10 +1520,6 @@
 			<anchor arel="0" aname="Collection" aoffset="7084" alength="10" ext_length="0">
 				<subanchor sarel="0" saname="Collection" saoffset="7084" salength="10" rank="174">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="コレクション">3626</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="Presented" aoffset="7105" alength="9" ext_length="0">
-				<subanchor sarel="0" saname="Presented" saoffset="7105" salength="9" rank="195">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="by the" aoffset="7115" alength="6" ext_length="0">

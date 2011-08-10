@@ -81,11 +81,9 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="알리 이븐 아비 탈리브">31050</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="types" aoffset="801" alength="5" ext_length="9">
+			<anchor arel="0" aname="types" aoffset="801" alength="5" ext_length="0">
 				<subanchor sarel="0" saname="types" saoffset="801" salength="5" rank="217">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="유형">105221</tobep>
-				</subanchor>
-				<subanchor sarel="0" saname="types of pasta" saoffset="801" salength="14" rank="178">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="display" aoffset="819" alength="7" ext_length="0">
@@ -252,10 +250,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="샐러드">229748</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="shapes of pasta" aoffset="1367" alength="15" ext_length="0">
-				<subanchor sarel="0" saname="shapes of pasta" saoffset="1367" salength="15" rank="100">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="recognized" aoffset="1405" alength="10" ext_length="0">
 				<subanchor sarel="0" saname="recognized" saoffset="1405" salength="10" rank="237">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="앎">119136</tobep>
@@ -354,10 +348,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="날">39834</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="새">2251</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="돌풍">183735</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="Dried pasta" aoffset="1859" alength="11" ext_length="0">
-				<subanchor sarel="0" saname="Dried pasta" saoffset="1859" salength="11" rank="3">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="years" aoffset="1917" alength="5" ext_length="0">
@@ -653,10 +643,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="특수">450517</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="varieties of pasta" aoffset="3569" alength="18" ext_length="0">
-				<subanchor sarel="0" saname="varieties of pasta" saoffset="3569" salength="18" rank="88">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="grains" aoffset="3607" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="grains" saoffset="3607" salength="6" rank="79">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="곡식">245255</tobep>
@@ -681,10 +667,6 @@
 			<anchor arel="0" aname="make" aoffset="3637" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="make" saoffset="3637" salength="4" rank="143">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="Make (소프트웨어)">275345</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="pasta varieties" aoffset="3772" alength="15" ext_length="0">
-				<subanchor sarel="0" saname="pasta varieties" saoffset="3772" salength="15" rank="70">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="pizzoccheri" aoffset="3797" alength="11" ext_length="0">
@@ -1397,9 +1379,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="감자 튀김">146661</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="everyday" aoffset="8727" alength="8" ext_length="5">
-				<subanchor sarel="0" saname="everyday" saoffset="8727" salength="8" rank="150">
-				</subanchor>
+			<anchor arel="0" aname="everyday food" aoffset="8727" alength="13" ext_length="0">
 				<subanchor sarel="0" saname="everyday food" saoffset="8727" salength="13" rank="48">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="매일 그대와">409895</tobep>
 				</subanchor>
@@ -1695,12 +1675,12 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="경도">81442</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Common" aoffset="11059" alength="6" ext_length="13">
+			<anchor arel="0" aname="Common" aoffset="11059" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="Common" saoffset="11059" salength="6" rank="22">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="커먼">348615</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="Common pasta" saoffset="11059" salength="12" rank="4">
-				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="pasta sauces" aoffset="11066" alength="12" ext_length="0">
 				<subanchor sarel="0" saname="pasta sauces" saoffset="11066" salength="12" rank="93">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="토마토 소스">328181</tobep>
 				</subanchor>
@@ -1720,10 +1700,6 @@
 				<subanchor sarel="0" saname="Northern Italy" saoffset="11082" salength="14" rank="51">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="북부 인도아리아어군">87272</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="이탈리아">2870</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="pesto" aoffset="11105" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="pesto" saoffset="11105" salength="5" rank="7">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="alla" aoffset="11120" alength="4" ext_length="10">
@@ -2364,12 +2340,10 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="링크 (웹 브라우저)">147017</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="list" aoffset="14398" alength="4" ext_length="9">
+			<anchor arel="0" aname="list" aoffset="14398" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="list" saoffset="14398" salength="4" rank="162">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="리스트">202381</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프란츠 리스트">90832</tobep>
-				</subanchor>
-				<subanchor sarel="0" saname="list of pasta" saoffset="14398" salength="13" rank="2">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Dumplings" aoffset="14774" alength="9" ext_length="0">

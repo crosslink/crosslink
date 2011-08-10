@@ -9,7 +9,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="碳">1340</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="g" aoffset="27" alength="1" ext_length="0">
+			<anchor arel="-1" aname="g" aoffset="27" alength="1" ext_length="0">
 				<subanchor sarel="0" saname="g" saoffset="27" salength="1" rank="113">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="超人前传">493669</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="南方四賤客動畫集數列表">1103095</tobep>
@@ -41,10 +41,6 @@
 			<anchor arel="0" aname="Wiki" aoffset="62" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="Wiki" saoffset="62" salength="4" rank="46">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Wiki">165</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="TYPE" aoffset="159" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="TYPE" saoffset="159" salength="4" rank="144">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Kimchi" aoffset="266" alength="6" ext_length="0">
@@ -83,9 +79,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="All Rights Reversed">954376</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="dish" aoffset="568" alength="4" ext_length="2">
-				<subanchor sarel="0" saname="dish" saoffset="568" salength="4" rank="162">
-				</subanchor>
+			<anchor arel="0" aname="dishes" aoffset="568" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="dishes" saoffset="568" salength="6" rank="178">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="粤菜">22503</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="recipe">637761</tobep>
@@ -119,15 +113,15 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中国菜">66664</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Fermented" aoffset="634" alength="9" ext_length="6">
+			<anchor arel="0" aname="Fermented" aoffset="634" alength="9" ext_length="0">
 				<subanchor sarel="0" saname="Fermented" saoffset="634" salength="9" rank="67">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Fermentation_(food)">286270</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Vitalism">1126220</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Fermentation_(food)">55652</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Vitalism">107758</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="Fermented foods" saoffset="634" salength="15" rank="204">
-				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="foods" aoffset="644" alength="5" ext_length="0">
 				<subanchor sarel="0" saname="foods" saoffset="644" salength="5" rank="69">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="苏丹红事件">93342</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="食品科学与工程">138630</tobep>
@@ -340,16 +334,16 @@
 			<anchor arel="0" aname="green" aoffset="1335" alength="5" ext_length="6">
 				<subanchor sarel="0" saname="green" saoffset="1335" salength="5" rank="79">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="綠色">49695</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="綠色建築">710088</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="第一套人民币">119023</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="绿色食品">149357</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="环境保护主义">518975</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="green ">92097</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="三相交流电">278682</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="綠色建築">710088</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="三原色光模式">153714</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="green ">92097</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="环境保护主义">518975</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="绿色和平">66028</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="綠色政治">889056</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="綠黨">65377</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="綠色政治">889056</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="綠茶">25723</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="green onion" saoffset="1335" salength="11" rank="49">
@@ -373,10 +367,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="酱菜">308104</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="心叶黄瓜菜">991095</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="黄瓜">145952</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="banchan" aoffset="1471" alength="7" ext_length="0">
-				<subanchor sarel="0" saname="banchan" saoffset="1471" salength="7" rank="9">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="side dish" aoffset="1483" alength="9" ext_length="0">
@@ -635,17 +625,17 @@
 			<anchor arel="0" aname="History" aoffset="2021" alength="7" ext_length="0">
 				<subanchor sarel="0" saname="History" saoffset="2021" salength="7" rank="27">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="以色列历史">18899</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="佛教历史">201195</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="拉克倫·麥覺理">1213529</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="历史">23</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="天文学史">33083</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="加利福尼亞州歷史">1103116</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="心理学史">5621</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="HIStory/Ghosts">1186809</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="歷史頻道">728644</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="佛教历史">201195</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="history">5620</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="拉克倫·麥覺理">1213529</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Portal:电子游戏/特色图片">156179</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Portal:电子游戏/优良条目">1032635</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="天文学史">33083</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="历史">23</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="加利福尼亞州歷史">1103116</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="HIStory/Ghosts">1186809</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="心理学史">5621</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Ancient" aoffset="2147" alength="7" ext_length="0">
@@ -1211,8 +1201,8 @@
 			<anchor arel="0" aname="white" aoffset="3314" alength="5" ext_length="0">
 				<subanchor sarel="0" saname="white" saoffset="3314" salength="5" rank="35">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="白姓">95759</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="蛋白质列表">1297715</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="白色">86873</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="蛋白质列表">1297715</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="白族">827</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="白雜訊">120023</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="白雪仙">174174</tobep>
@@ -2187,8 +2177,8 @@
 				<subanchor sarel="0" saname="cold" saoffset="6714" salength="4" rank="249">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="低温物理学">41929</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="傷風">309395</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="鋒 (氣象)">623862</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="common_cold">35236</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="鋒 (氣象)">623862</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="冷杉属">562410</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="低体温症">974054</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="凝固">1016857</tobep>
@@ -2393,10 +2383,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="時代劇">168833</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="facts" aoffset="7076" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="facts" saoffset="7076" salength="5" rank="111">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="trends" aoffset="7113" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="trends" saoffset="7113" salength="6" rank="163">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="道氏理论">110216</tobep>
@@ -2553,10 +2539,6 @@
 				</subanchor>
 				<subanchor sarel="0" saname="Chungcheong-do" saoffset="8190" salength="14" rank="128">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="忠">560769</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="fermented fish" aoffset="8280" alength="14" ext_length="0">
-				<subanchor sarel="0" saname="fermented fish" saoffset="8280" salength="14" rank="163">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="fermentation" aoffset="8334" alength="12" ext_length="0">
@@ -3625,15 +3607,15 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="species">468369</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="人">37075</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="赤腹松鼠">1015527</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="8472种族">526303</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="褐头雀鹛">1022063</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="物种形成">235282</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="8472种族">526303</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="濒危野生动植物种国际贸易公约中国动物物种">285272</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="褐头雀鹛">1022063</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="形式">920584</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="數碼寶貝列表">327673</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="棕头鸦雀">1022165</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="物种">34427</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="數碼寶貝列表">327673</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="先锋物种">227911</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="物种">34427</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Lactobacillus" aoffset="13199" alength="13" ext_length="0">

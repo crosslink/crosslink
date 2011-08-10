@@ -70,18 +70,18 @@
 			</anchor>
 			<anchor arel="0" aname="sports" aoffset="505" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="sports" saoffset="505" salength="6" rank="89">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="山东鲁能泰山足球俱乐部数据与纪录">1069626</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="冰球">114756</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="奥运会项目">272758</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="綜合運動會">1230863</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="体育">493</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="射擊運動">168423</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="哥斯达黎加足球甲级联赛">737697</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="山东鲁能泰山足球俱乐部数据与纪录">1069626</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="国家体育总局">183572</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="埃及足球杯">493235</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="體育類遊戲">131680</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="跑车">130391</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="冰球">114756</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="奥运会项目">272758</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="綜合運動會">1230863</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="埃及足球甲级联赛">493128</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="跑车">130391</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="體育類遊戲">131680</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="competitions" aoffset="512" alength="12" ext_length="0">
@@ -1531,14 +1531,14 @@
 			<anchor arel="0" aname="World" aoffset="3104" alength="5" ext_length="7">
 				<subanchor sarel="0" saname="World" saoffset="3104" salength="5" rank="70">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="可能世界">204447</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="行星">4698</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="国家人口列表">852</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="世界人口">433426</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Portal:國際足協世界盃/分类">605411</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="世界錦標賽">358467</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="行星">4698</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="世界">13711</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="世界人口">433426</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="世界语">1999</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="世界室內排球冠軍列表">616519</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Portal:國際足協世界盃/分类">605411</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="世界錦標賽">358467</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="人口史">306961</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="World War" saoffset="3104" salength="9" rank="130">
@@ -2044,10 +2044,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="速度 (音樂)">563748</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Asian Games Federation" aoffset="3801" alength="22" ext_length="0">
-				<subanchor sarel="0" saname="Asian Games Federation" saoffset="3801" salength="22" rank="139">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="decided" aoffset="3832" alength="7" ext_length="0">
 				<subanchor sarel="0" saname="decided" saoffset="3832" salength="7" rank="223">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="蛋白质折叠">86987</tobep>
@@ -2106,10 +2102,6 @@
 				</subanchor>
 				<subanchor sarel="0" saname="India in" saoffset="3907" salength="8" rank="224">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="印度">450221</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="Yadavindra Singh" aoffset="3937" alength="16" ext_length="0">
-				<subanchor sarel="0" saname="Yadavindra Singh" saoffset="3937" salength="16" rank="173">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Maharaja" aoffset="3955" alength="8" ext_length="11">
@@ -3336,17 +3328,17 @@
 			<anchor arel="0" aname="Swimming" aoffset="7911" alength="8" ext_length="0">
 				<subanchor sarel="0" saname="Swimming" saoffset="7911" salength="8" rank="58">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2008年夏季殘奧會烏克蘭代表團">941156</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2009年東亞運動會游泳比賽">1171662</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2008年夏季残奥会游泳比赛">798900</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="夏季奥林匹克运动会游泳比赛">40881</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2004年夏季奥林匹克运动会游泳比赛">39537</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2008年夏季奧林匹克運動會游泳比賽">439897</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="游泳">95563</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2008年夏季殘奧會英國代表團">941201</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2009年東亞運動會游泳比賽">1171662</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="夏季奥林匹克运动会游泳比赛">40881</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Swimming_at_the_1896_Summer_Olympics">141474</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="游泳裁判">910573</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Swimming_at_the_1896_Summer_Olympics">141474</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2008年夏季殘奧會美國代表團">941216</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2008年夏季殘奧會英國代表團">941201</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Swimming_at_the_Summer_Olympics">565962</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="游泳">95563</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Synchronized" aoffset="8075" alength="12" ext_length="9">
@@ -3867,10 +3859,10 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="安许茨">471261</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2008年夏季奧林匹克運動會射擊比賽">444627</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2008年夏季残奥会射击比赛">798870</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="开源游戏列表">1013866</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2004年夏季奥林匹克运动会射击比赛">39897</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="夏季奥林匹克运动会射击比赛">1001057</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Shooting_at_the_1906_Intercalated_Games">219999</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="开源游戏列表">1013866</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="支持DirectX 10游戏列表">959785</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="射擊運動">168423</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="世界射擊錦標賽">975829</tobep>
@@ -3908,17 +3900,17 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Soft_Tennis">532779</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="tennis" saoffset="13428" salength="6" rank="60">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="劳伦斯世界体育奖">219560</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2008年夏季奧林匹克運動會網球比賽">353877</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2008年夏季奥林匹克运动会中国网球队">816619</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="关联式规则">483776</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2010年亞洲運動會網球比賽">968521</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2004年夏季奥林匹克运动会网球比赛">40728</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="夏季奧林匹克運動會網球比賽">898854</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="1896年夏季奥林匹克运动会网球比赛">900448</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="網球場">752977</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="网球">78590</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="克里斯·埃弗特">582185</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2008年夏季奧林匹克運動會網球比賽">353877</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="劳伦斯世界体育奖">219560</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2010年亞洲運動會網球比賽">968521</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="关联式规则">483776</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="1896年夏季奥林匹克运动会网球比赛">900448</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2000年夏季奧林匹克運動會網球比賽">905943</tobep>
 				</subanchor>
 			</anchor>
@@ -4012,8 +4004,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="夏季奥林匹克运动会排球比赛">24174</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2004年夏季奥林匹克运动会排球比赛">39872</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="排球">24172</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="欧洲排球联合会">1169842</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中北美洲及加勒比地区排球联合会">1169824</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="欧洲排球联合会">1169842</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Volleyball_at_the_2006_Asian_Games">459747</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="亚洲排球联合会">1169061</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Volleyball_at_the_2006_Asian_Games">525053</tobep>
@@ -4022,14 +4014,14 @@
 			<anchor arel="0" aname="Weightlifting" aoffset="14428" alength="13" ext_length="0">
 				<subanchor sarel="0" saname="Weightlifting" saoffset="14428" salength="13" rank="32">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中国国家举重队">1159917</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="夏季奥林匹克运动会举重比赛">566158</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2004年夏季奥林匹克运动会拳击比赛">42005</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="陈艳青">178523</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2004年夏季奥林匹克运动会举重比赛">39923</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="国际举重联合会">1170983</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2008年夏季奧林匹克運動會舉重比賽">413257</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2008年夏季残奥会举重比赛">798815</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2008年夏季奧林匹克運動會舉重比賽">413257</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2004年夏季奥运会中国举重队">42142</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2004年夏季奥林匹克运动会拳击比赛">42005</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="夏季奥林匹克运动会举重比赛">566158</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="陈艳青">178523</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="举重">134357</tobep>
 				</subanchor>
 			</anchor>
@@ -4363,9 +4355,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="前元音">724760</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="the sixteen" aoffset="15511" alength="11" ext_length="0">
-				<subanchor sarel="0" saname="the sixteen" saoffset="15511" salength="11" rank="187">
-				</subanchor>
+			<anchor arel="0" aname="sixteen" aoffset="15515" alength="7" ext_length="0">
 				<subanchor sarel="0" saname="sixteen" saoffset="15515" salength="7" rank="235">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="16世纪">5369</tobep>
 				</subanchor>

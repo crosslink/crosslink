@@ -36,10 +36,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="생각">152451</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Moism" aoffset="642" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="Moism" saoffset="642" salength="5" rank="1">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="philosophy" aoffset="669" alength="10" ext_length="0">
 				<subanchor sarel="0" saname="philosophy" saoffset="669" salength="10" rank="36">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="형이상학">276589</tobep>
@@ -934,12 +930,10 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="악마">92514</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="national" aoffset="4756" alength="8" ext_length="7">
+			<anchor arel="0" aname="national" aoffset="4756" alength="8" ext_length="0">
 				<subanchor sarel="0" saname="national" saoffset="4756" salength="8" rank="145">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="콘퍼런스 내셔널">259829</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="내셔널">142401</tobep>
-				</subanchor>
-				<subanchor sarel="0" saname="national wealth" saoffset="4756" salength="15" rank="30">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="first-world" aoffset="4807" alength="11" ext_length="0">
@@ -1183,10 +1177,6 @@
 				<subanchor sarel="0" saname="strangers" saoffset="5890" salength="9" rank="122">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="남">111031</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="신참자">474938</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="physical" aoffset="6036" alength="8" ext_length="0">
-				<subanchor sarel="0" saname="physical" saoffset="6036" salength="8" rank="170">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="morality" aoffset="6062" alength="8" ext_length="0">
@@ -1520,10 +1510,6 @@
 			<anchor arel="0" aname="addition" aoffset="7727" alength="8" ext_length="0">
 				<subanchor sarel="0" saname="addition" saoffset="7727" salength="8" rank="150">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="덧셈">28869</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="Mohists" aoffset="7776" alength="7" ext_length="0">
-				<subanchor sarel="0" saname="Mohists" saoffset="7776" salength="7" rank="4">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="structured" aoffset="7800" alength="10" ext_length="0">

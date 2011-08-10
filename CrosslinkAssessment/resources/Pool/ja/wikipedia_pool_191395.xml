@@ -54,9 +54,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="宝石">125</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Silicate minerals" aoffset="685" alength="17" ext_length="0">
-				<subanchor sarel="0" saname="Silicate minerals" saoffset="685" salength="17" rank="156">
-				</subanchor>
+			<anchor arel="0" aname="minerals" aoffset="694" alength="8" ext_length="0">
 				<subanchor sarel="0" saname="minerals" saoffset="694" salength="8" rank="249">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ミネラル">29447</tobep>
 				</subanchor>
@@ -78,9 +76,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="輝石">54401</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Jade City" aoffset="1048" alength="9" ext_length="0">
-				<subanchor sarel="0" saname="Jade City" saoffset="1048" salength="9" rank="104">
-				</subanchor>
+			<anchor arel="0" aname="City" aoffset="1053" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="City" saoffset="1053" salength="4" rank="186">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="都市">21767</tobep>
 				</subanchor>
@@ -844,11 +840,9 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="砂漠">26833</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="River jade" aoffset="6187" alength="10" ext_length="11">
+			<anchor arel="0" aname="River jade" aoffset="6187" alength="10" ext_length="0">
 				<subanchor sarel="0" saname="River jade" saoffset="6187" salength="10" rank="116">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="川">2316</tobep>
-				</subanchor>
-				<subanchor sarel="0" saname="jade collection" saoffset="6193" salength="15" rank="197">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Yarkand" aoffset="6233" alength="7" ext_length="0">

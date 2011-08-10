@@ -28,10 +28,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="부엌">247156</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="nigiri-zushi" aoffset="695" alength="12" ext_length="0">
-				<subanchor sarel="0" saname="nigiri-zushi" saoffset="695" salength="12" rank="151">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="eat" aoffset="720" alength="3" ext_length="0">
 				<subanchor sarel="0" saname="eat" saoffset="720" salength="3" rank="146">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="음식">42343</tobep>
@@ -43,9 +39,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="일본 요리">188838</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="vinegared rice" aoffset="902" alength="14" ext_length="0">
-				<subanchor sarel="0" saname="vinegared rice" saoffset="902" salength="14" rank="13">
-				</subanchor>
+			<anchor arel="0" aname="rice" aoffset="912" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="rice" saoffset="912" salength="4" rank="101">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="밥솥">172499</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="쌀">23366</tobep>
@@ -123,10 +117,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="あ">74795</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="아">290543</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="А">14382</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="sushi rice" aoffset="1400" alength="10" ext_length="0">
-				<subanchor sarel="0" saname="sushi rice" saoffset="1400" salength="10" rank="14">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="History" aoffset="1495" alength="7" ext_length="0">
@@ -262,17 +252,9 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="일본열도">35318</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Narezushi" aoffset="2477" alength="9" ext_length="0">
-				<subanchor sarel="0" saname="Narezushi" saoffset="2477" salength="9" rank="12">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="evolved" aoffset="2556" alength="7" ext_length="0">
 				<subanchor sarel="0" saname="evolved" saoffset="2556" salength="7" rank="220">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="진화">333807</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="Oshizushi" aoffset="2569" alength="9" ext_length="0">
-				<subanchor sarel="0" saname="Oshizushi" saoffset="2569" salength="9" rank="1">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="the world" aoffset="2628" alength="9" ext_length="0">
@@ -461,10 +443,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="분">27981</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="구성 요소">145006</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="점심">188719</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="kinds of sushi" aoffset="4429" alength="14" ext_length="0">
-				<subanchor sarel="0" saname="kinds of sushi" saoffset="4429" salength="14" rank="236">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="variety" aoffset="4472" alength="7" ext_length="0">
@@ -768,10 +746,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="매트 라이트">480804</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="omelette" aoffset="7718" alength="8" ext_length="0">
-				<subanchor sarel="0" saname="omelette" saoffset="7718" salength="8" rank="59">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="soy" aoffset="7728" alength="3" ext_length="0">
 				<subanchor sarel="0" saname="soy" saoffset="7728" salength="3" rank="143">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="장유">276161</tobep>
@@ -816,10 +790,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="목 (생물학)">104840</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Futomaki" aoffset="7943" alength="8" ext_length="0">
-				<subanchor sarel="0" saname="Futomaki" saoffset="7943" salength="8" rank="2">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="fat" aoffset="7983" alength="3" ext_length="0">
 				<subanchor sarel="0" saname="fat" saoffset="7983" salength="3" rank="174">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="지방">64350</tobep>
@@ -849,10 +819,6 @@
 			<anchor arel="0" aname="complementary" aoffset="8207" alength="13" ext_length="0">
 				<subanchor sarel="0" saname="complementary" saoffset="8207" salength="13" rank="249">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="보색">110197</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="Setsubun" aoffset="8251" alength="8" ext_length="0">
-				<subanchor sarel="0" saname="Setsubun" saoffset="8251" salength="8" rank="19">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="festival" aoffset="8260" alength="8" ext_length="0">
@@ -893,12 +859,10 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="아보카도">277095</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Kappa" aoffset="8851" alength="5" ext_length="4">
+			<anchor arel="0" aname="Kappa" aoffset="8851" alength="5" ext_length="0">
 				<subanchor sarel="0" saname="Kappa" saoffset="8851" salength="5" rank="204">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="Κ">48211</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="갓파">189926</tobep>
-				</subanchor>
-				<subanchor sarel="0" saname="Kappamaki" saoffset="8851" salength="9" rank="3">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="water" aoffset="8961" alength="5" ext_length="0">
@@ -1039,10 +1003,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="수증기">3722</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="수분">499270</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="습도">151021</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="Uramaki" aoffset="10461" alength="7" ext_length="0">
-				<subanchor sarel="0" saname="Uramaki" saoffset="10461" salength="7" rank="4">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="the center" aoffset="10694" alength="10" ext_length="0">
@@ -1300,10 +1260,6 @@
 				<subanchor sarel="0" saname="top" saoffset="13879" salength="3" rank="241">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="TOP">252440</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="팽이">84281</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="Gomokuzushi" aoffset="13916" alength="11" ext_length="0">
-				<subanchor sarel="0" saname="Gomokuzushi" saoffset="13916" salength="11" rank="5">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="body" aoffset="14002" alength="4" ext_length="0">
@@ -1689,10 +1645,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="검">171048</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="maki sushi" aoffset="17155" alength="10" ext_length="0">
-				<subanchor sarel="0" saname="maki sushi" saoffset="17155" salength="10" rank="10">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="shoyu" aoffset="17180" alength="5" ext_length="0">
 				<subanchor sarel="0" saname="shoyu" saoffset="17180" salength="5" rank="32">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="간장">48730</tobep>
@@ -1954,10 +1906,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="더 스탠더드">136491</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="full size" aoffset="19680" alength="9" ext_length="0">
-				<subanchor sarel="0" saname="full size" saoffset="19680" salength="9" rank="113">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="To" aoffset="19757" alength="2" ext_length="0">
 				<subanchor sarel="0" saname="To" saoffset="19757" salength="2" rank="61">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="と">393485</tobep>
@@ -2084,10 +2032,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="종 (생물학)">104835</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="nigiri sushi" aoffset="21530" alength="12" ext_length="0">
-				<subanchor sarel="0" saname="nigiri sushi" saoffset="21530" salength="12" rank="15">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="pike" aoffset="21747" alength="4" ext_length="7">
 				<subanchor sarel="0" saname="pike" saoffset="21747" salength="4" rank="129">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="파이크">177005</tobep>
@@ -2176,10 +2120,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="쓰케모노">404080</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="pickled vegetables" aoffset="22548" alength="18" ext_length="0">
-				<subanchor sarel="0" saname="pickled vegetables" saoffset="22548" salength="18" rank="90">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="tsukemono" aoffset="22568" alength="9" ext_length="0">
 				<subanchor sarel="0" saname="tsukemono" saoffset="22568" salength="9" rank="0">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="쓰케모노">404080</tobep>
@@ -2250,10 +2190,6 @@
 			<anchor arel="0" aname="Tofu" aoffset="22781" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="Tofu" saoffset="22781" salength="4" rank="46">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="두부">48731</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="tamagoyaki" aoffset="22851" alength="10" ext_length="0">
-				<subanchor sarel="0" saname="tamagoyaki" saoffset="22851" salength="10" rank="10">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="shōyu" aoffset="23201" alength="5" ext_length="0">
@@ -2378,10 +2314,6 @@
 			<anchor arel="0" aname="Japanese Horseradish" aoffset="23872" alength="20" ext_length="0">
 				<subanchor sarel="0" saname="Japanese Horseradish" saoffset="23872" salength="20" rank="32">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="일본어">355</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="Gari" aoffset="23991" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="Gari" saoffset="23991" salength="4" rank="170">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="ginger" aoffset="24012" alength="6" ext_length="0">
@@ -2933,10 +2865,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="초록">86144</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="sushi ginger" aoffset="29932" alength="12" ext_length="0">
-				<subanchor sarel="0" saname="sushi ginger" saoffset="29932" salength="12" rank="153">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="standard Japanese" aoffset="29960" alength="17" ext_length="0">
 				<subanchor sarel="0" saname="standard Japanese" saoffset="29960" salength="17" rank="38">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="일본어">355</tobep>
@@ -3003,11 +2931,9 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="고추냉이">48729</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Vinegar" aoffset="30917" alength="7" ext_length="5">
+			<anchor arel="0" aname="Vinegar" aoffset="30917" alength="7" ext_length="0">
 				<subanchor sarel="0" saname="Vinegar" saoffset="30917" salength="7" rank="19">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="식초">102704</tobep>
-				</subanchor>
-				<subanchor sarel="0" saname="Vinegar rice" saoffset="30917" salength="12" rank="6">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Sanskrit" aoffset="30965" alength="8" ext_length="0">
@@ -3134,10 +3060,6 @@
 			<anchor arel="0" aname="Sasa" aoffset="33606" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="Sasa" saoffset="33606" salength="4" rank="197">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="아오키 사야카 (성우)">155618</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="Experimental" aoffset="33911" alength="12" ext_length="0">
-				<subanchor sarel="0" saname="Experimental" saoffset="33911" salength="12" rank="184">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Carrot" aoffset="33938" alength="6" ext_length="0">

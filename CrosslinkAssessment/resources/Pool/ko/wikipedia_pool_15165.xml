@@ -61,10 +61,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="가즈나 왕조">206635</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="carved ivory" aoffset="864" alength="12" ext_length="0">
-				<subanchor sarel="0" saname="carved ivory" saoffset="864" salength="12" rank="157">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="decoration" aoffset="877" alength="10" ext_length="0">
 				<subanchor sarel="0" saname="decoration" saoffset="877" salength="10" rank="172">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="훈장">343534</tobep>
@@ -233,10 +229,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="치아">107312</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="tusks" aoffset="1384" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="tusks" saoffset="1384" salength="5" rank="108">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="animals" aoffset="1393" alength="7" ext_length="0">
 				<subanchor sarel="0" saname="animals" saoffset="1393" salength="7" rank="154">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="동물">7287</tobep>
@@ -354,10 +346,6 @@
 				<subanchor sarel="0" saname="ban" saoffset="2010" salength="3" rank="178">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="저주">288313</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="반">417709</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="Poaching" aoffset="2077" alength="8" ext_length="0">
-				<subanchor sarel="0" saname="Poaching" saoffset="2077" salength="8" rank="45">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="smuggling" aoffset="2090" alength="9" ext_length="0">
@@ -1981,9 +1969,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="어정">303097</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="ivory nut palm" aoffset="9879" alength="14" ext_length="0">
-				<subanchor sarel="0" saname="ivory nut palm" saoffset="9879" salength="14" rank="10">
-				</subanchor>
+			<anchor arel="0" aname="palm" aoffset="9889" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="palm" saoffset="9889" salength="4" rank="64">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="팜 OS">44848</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="팜 파일럿">572</tobep>

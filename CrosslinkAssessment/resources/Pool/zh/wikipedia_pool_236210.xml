@@ -640,8 +640,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="皇后">107615</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="第一夫人">4079</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="親屬">158383</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="美国第一夫人">1093454</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="婚姻">25757</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="美国第一夫人">1093454</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="七出">115177</tobep>
 				</subanchor>
 			</anchor>
@@ -693,18 +693,18 @@
 			</anchor>
 			<anchor arel="0" aname="Thailand" aoffset="1209" alength="8" ext_length="0">
 				<subanchor sarel="0" saname="Thailand" saoffset="1209" salength="8" rank="13">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="塔塔杨">533201</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="泰国足球超级联赛">976866</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="自由泰人运动">206304</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2008年夏季殘奧會泰國代表團">898016</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2008年夏季奥林匹克运动会泰国代表团">819472</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="泰国">10926</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="泰国亚洲航空">658527</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="泰国足球超级联赛">976866</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="塔塔杨">533201</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="泰国皇家军队">805956</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="东南亚运动会篮球比赛">424414</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="自由泰人运动">206304</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="泰国历史">365323</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="泰國地理">899459</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2008年夏季殘奧會泰國代表團">898016</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="泰國國家足球隊">479789</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="泰國地理">899459</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2008年夏季奥林匹克运动会泰国代表团">819472</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="and" aoffset="1218" alength="3" ext_length="0">
@@ -1845,9 +1845,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="基础">152684</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Crown Prince Hassan" aoffset="3071" alength="19" ext_length="20">
-				<subanchor sarel="0" saname="Crown Prince Hassan" saoffset="3071" salength="19" rank="117">
-				</subanchor>
+			<anchor arel="0" aname="Prince Hassan" aoffset="3077" alength="13" ext_length="20">
 				<subanchor sarel="0" saname="Prince Hassan" saoffset="3077" salength="13" rank="226">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="邱勝翊">524831</tobep>
 				</subanchor>
@@ -2805,14 +2803,14 @@
 			<anchor arel="0" aname="unification" aoffset="5897" alength="11" ext_length="0">
 				<subanchor sarel="0" saname="unification" saoffset="5897" salength="11" rank="123">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="经典统一场论">1048491</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="大统一理论">35670</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中国统一">12841</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="大韩民国统一部">1254369</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="兩德統一">167042</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中共中央统一战线工作部">534054</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="大统一理论">35670</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="合一">163665</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="統一企業">12708</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="统一资源定位符">106</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中共中央统一战线工作部">534054</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="兩德統一">167042</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="意大利統一">350890</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="政治统一">1259149</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="统一">30865</tobep>
@@ -3361,18 +3359,18 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Holy_Roman_Empire">167514</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="Roman" saoffset="7524" salength="5" rank="55">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="罗马共和国">119960</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="不列顛尼亞行省">493570</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="教皇国">466986</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="罗曼式建筑">590366</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="罗马法">93713</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="古罗马">10309</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="火影忍者动画集数列表">526356</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="罗马市">39129</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="罗马">6490</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="罗马市">39129</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="罗马共和国">119960</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="羅馬帝國">459860</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="教皇国">466986</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="不列顛尼亞行省">493570</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="羅馬足球俱樂部">191082</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="美国主教座堂列表">918721</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="罗马法">93713</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="罗曼式建筑">590366</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="Roman Empire" saoffset="7524" salength="12" rank="94">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="羅馬帝國">459860</tobep>
@@ -3461,9 +3459,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="法兰西第一帝国">106217</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Duke of Sparta" aoffset="7902" alength="14" ext_length="0">
-				<subanchor sarel="0" saname="Duke of Sparta" saoffset="7902" salength="14" rank="166">
-				</subanchor>
+			<anchor arel="0" aname="of Sparta" aoffset="7907" alength="9" ext_length="0">
 				<subanchor sarel="0" saname="of Sparta" saoffset="7907" salength="9" rank="221">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="斯巴达">54460</tobep>
 				</subanchor>
@@ -3674,7 +3670,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="4">23381</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Terra" aoffset="8566" alength="5" ext_length="7">
+			<anchor arel="0" aname="Terra" aoffset="8566" alength="5" ext_length="0">
 				<subanchor sarel="0" saname="Terra" saoffset="8566" salength="5" rank="144">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="土地法 (中華民國)">497029</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="土星的卫星">55051</tobep>
@@ -3686,8 +3682,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2006年土耳其大奖赛">817812</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="古風土記">319892</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2010年土耳其大奖赛">1281959</tobep>
-				</subanchor>
-				<subanchor sarel="0" saname="Terra Scania" saoffset="8566" salength="12" rank="105">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Ani" aoffset="8631" alength="3" ext_length="0">
@@ -3844,23 +3838,21 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="意大利統一">350890</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="Italy" saoffset="9063" salength="5" rank="53">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Vittorio_Emanuele,_Prince_of_Naples">129089</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="意大利國家足球隊">149548</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="義大利人">811490</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Vittorio_Emanuele,_Prince_of_Naples">309854</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="意大利篮球甲级联赛">1242829</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Vittorio_Emanuele,_Prince_of_Naples">129089</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Kingdom_of_Italy_(Napoleonic)">903993</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="意大利篮球甲级联赛">1242829</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2008年夏季奥林匹克运动会意大利代表团">818754</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="意大利">3448</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="義大利 (消歧義)">940484</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="意大利国家男子篮球队">905934</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="義大利 (消歧義)">940484</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="意大利语">42696</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="意大利國家足球隊">149548</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="意大利足球總會">664408</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="義大利人">811490</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Duke of Calabria" aoffset="9110" alength="16" ext_length="0">
-				<subanchor sarel="0" saname="Duke of Calabria" saoffset="9110" salength="16" rank="199">
-				</subanchor>
+			<anchor arel="0" aname="of Calabria" aoffset="9115" alength="11" ext_length="0">
 				<subanchor sarel="0" saname="of Calabria" saoffset="9115" salength="11" rank="235">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="卡拉布里亚">326788</tobep>
 				</subanchor>
@@ -3879,8 +3871,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中国爵位">605351</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="相交">1171035</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="两英镇">1122513</tobep>
-				</subanchor>
-				<subanchor sarel="0" saname="Two Sicilies" saoffset="9143" salength="12" rank="141">
 				</subanchor>
 				<subanchor sarel="0" saname="Sicilies" saoffset="9147" salength="8" rank="146">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Sicily">11407</tobep>
@@ -4239,13 +4229,13 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="星空學園角色列表">487682</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="nineteenth" aoffset="9974" alength="10" ext_length="8">
+			<anchor arel="0" aname="nineteenth" aoffset="9974" alength="10" ext_length="0">
 				<subanchor sarel="0" saname="nineteenth" saoffset="9974" salength="10" rank="170">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="19世纪">4708</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="19">23396</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="nineteenth century" saoffset="9974" salength="18" rank="215">
-				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="century" aoffset="9985" alength="7" ext_length="0">
 				<subanchor sarel="0" saname="century" saoffset="9985" salength="7" rank="170">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="世纪">5166</tobep>
 				</subanchor>
@@ -4949,10 +4939,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="文莱历史">365346</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="文莱政治">144799</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="浡泥国王墓">1046434</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="Equivalents" aoffset="12292" alength="11" ext_length="0">
-				<subanchor sarel="0" saname="Equivalents" saoffset="12292" salength="11" rank="203">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Jaguar" aoffset="12363" alength="6" ext_length="0">

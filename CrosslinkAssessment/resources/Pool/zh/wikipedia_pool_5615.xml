@@ -38,16 +38,12 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="氢">664</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="TYPE" aoffset="159" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="TYPE" saoffset="159" salength="4" rank="181">
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="Creta" aoffset="266" alength="5" ext_length="5">
+			<anchor arel="0" aname="Creta" aoffset="266" alength="5" ext_length="0">
 				<subanchor sarel="0" saname="Creta" saoffset="266" salength="5" rank="144">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="克里特">49363</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="Cretaceous" saoffset="266" salength="10" rank="9">
-				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="us" aoffset="274" alength="2" ext_length="0">
 				<subanchor sarel="0" saname="us" saoffset="274" salength="2" rank="5">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="美國">481</tobep>
 				</subanchor>
@@ -189,9 +185,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Quakecon">147609</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="J" aoffset="833" alength="1" ext_length="14">
-				<subanchor sarel="0" saname="J" saoffset="833" salength="1" rank="235">
-				</subanchor>
+			<anchor arel="0" aname="Jurassic" aoffset="833" alength="8" ext_length="7">
 				<subanchor sarel="0" saname="Jurassic" saoffset="833" salength="8" rank="30">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Jurassic">726093</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="侏罗纪">40201</tobep>
@@ -280,10 +274,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="美洲原住民語言">57040</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="语言">961</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="汉语">243421</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="warm" aoffset="1225" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="warm" saoffset="1225" salength="4" rank="65">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="climate" aoffset="1230" alength="7" ext_length="0">
@@ -375,10 +365,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="小榄菊花会">385304</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Ammonitina">1194452</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="菊池市">618911</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="rudists" aoffset="1350" alength="7" ext_length="0">
-				<subanchor sarel="0" saname="rudists" saoffset="1350" salength="7" rank="60">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="land" aoffset="1367" alength="4" ext_length="0">
@@ -478,8 +464,6 @@
 				<subanchor sarel="0" saname="mass extinctions" saoffset="1519" salength="16" rank="148">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="生物集群灭绝">7820</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="extinctions" saoffset="1524" salength="11" rank="40">
-				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Earth" aoffset="1539" alength="5" ext_length="8">
 				<subanchor sarel="0" saname="Earth" saoffset="1539" salength="5" rank="70">
@@ -539,10 +523,6 @@
 				<subanchor sarel="0" saname="pterosaurs" saoffset="1618" salength="10" rank="8">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="翼龍目">580598</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="pterosaur">951880</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="disappeared" aoffset="1657" alength="11" ext_length="0">
-				<subanchor sarel="0" saname="disappeared" saoffset="1657" salength="11" rank="139">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="world" aoffset="1701" alength="5" ext_length="0">
@@ -1083,18 +1063,14 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="stratum">897492</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="transgression" aoffset="3009" alength="13" ext_length="0">
-				<subanchor sarel="0" saname="transgression" saoffset="3009" salength="13" rank="216">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="area" aoffset="3058" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="area" saoffset="3058" salength="4" rank="197">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="葡萄牙行政區劃">626781</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="阿爾巴尼亞行政區劃">321999</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中华人民共和国行政区划代码 (3区)">284233</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="北京东城区行政区划列表">1254353</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="区 (法国)">175675</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="葡萄牙行政區劃">626781</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="area ">949285</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="阿爾巴尼亞行政區劃">321999</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="北京东城区行政区划列表">1254353</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中华人民共和国行政区划代码 (3区)">284233</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="巴西天主教教区列表">918007</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="北京丰台区行政区划列表">1166079</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="北京西城区行政区划列表">1254351</tobep>
@@ -2188,10 +2164,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="地质学">78</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Jean d'Omalius d'Halloy" aoffset="6987" alength="23" ext_length="0">
-				<subanchor sarel="0" saname="Jean d'Omalius d'Halloy" saoffset="6987" salength="23" rank="47">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="strata" aoffset="7026" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="strata" saoffset="7026" salength="6" rank="199">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="社会语言学">42023</tobep>
@@ -2639,8 +2611,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Portal:荷兰/分类">507294</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="荷兰足球甲级联赛">76558</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="荷蘭國家足球隊">149896</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="大荷兰">1145073</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="飞翔的荷兰人">736872</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="大荷兰">1145073</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="荷蘭帝國">372742</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Netherlands">148448</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="荷蘭 (地區)">561306</tobep>
@@ -2849,9 +2821,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="西北欧">1223037</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="the white cliffs of Dover" aoffset="9848" alength="25" ext_length="0">
-				<subanchor sarel="0" saname="the white cliffs of Dover" saoffset="9848" salength="25" rank="5">
-				</subanchor>
+			<anchor arel="0" aname="white" aoffset="9852" alength="5" ext_length="16">
 				<subanchor sarel="0" saname="white" saoffset="9852" salength="5" rank="66">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="白姓">95759</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="蛋白质列表">1297715</tobep>
@@ -2865,8 +2835,6 @@
 				</subanchor>
 				<subanchor sarel="0" saname="white cliffs" saoffset="9852" salength="12" rank="127">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="白色">86873</tobep>
-				</subanchor>
-				<subanchor sarel="0" saname="white cliffs of Dover" saoffset="9852" salength="21" rank="6">
 				</subanchor>
 				<subanchor sarel="0" saname="cliffs" saoffset="9858" salength="6" rank="152">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="維羅納斷崖">1051312</tobep>
@@ -3081,10 +3049,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="太陽圈電流片">558573</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="middle Cretaceous" aoffset="10738" alength="17" ext_length="0">
-				<subanchor sarel="0" saname="middle Cretaceous" saoffset="10738" salength="17" rank="182">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="sea water" aoffset="10797" alength="9" ext_length="0">
 				<subanchor sarel="0" saname="sea water" saoffset="10797" salength="9" rank="242">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="海水">116836</tobep>
@@ -3203,10 +3167,6 @@
 				<subanchor sarel="0" saname="bees" saoffset="11356" salength="4" rank="168">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="蜜蜂">72894</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="蜂族">1182240</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="fact" aoffset="11365" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="fact" saoffset="11365" salength="4" rank="145">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="angiosperms" aoffset="11370" alength="11" ext_length="0">
@@ -3418,10 +3378,6 @@
 				<subanchor sarel="0" saname="emerging" saoffset="12274" salength="8" rank="211">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="新兴县">198872</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="新兴">201118</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="Cretaceous period" aoffset="12295" alength="17" ext_length="0">
-				<subanchor sarel="0" saname="Cretaceous period" saoffset="12295" salength="17" rank="220">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="archosaurian" aoffset="12341" alength="12" ext_length="0">
@@ -3954,7 +3910,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="生物多樣性">225481</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="ecological" aoffset="14813" alength="10" ext_length="7">
+			<anchor arel="0" aname="ecological" aoffset="14813" alength="10" ext_length="0">
 				<subanchor sarel="0" saname="ecological" saoffset="14813" salength="10" rank="171">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="全国生态脆弱区重点保护区域">929327</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="生態運動">974853</tobep>
@@ -3965,8 +3921,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="綠黨">65377</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="国家级生态功能保护区">277900</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="ecological crisis" saoffset="14813" salength="17" rank="190">
-				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="crisis" aoffset="14824" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="crisis" saoffset="14824" salength="6" rank="181">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="危機">659217</tobep>
 				</subanchor>
@@ -4266,9 +4222,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="carrion ">844825</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="the extinction event" aoffset="16443" alength="20" ext_length="0">
-				<subanchor sarel="0" saname="the extinction event" saoffset="16443" salength="20" rank="191">
-				</subanchor>
+			<anchor arel="0" aname="extinction event" aoffset="16447" alength="16" ext_length="0">
 				<subanchor sarel="0" saname="extinction event" saoffset="16447" salength="16" rank="124">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="生物集群灭绝">7820</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="生物">1359</tobep>
@@ -4833,7 +4787,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="国家地理杂志">157347</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Organic" aoffset="19861" alength="7" ext_length="13">
+			<anchor arel="0" aname="Organic" aoffset="19861" alength="7" ext_length="0">
 				<subanchor sarel="0" saname="Organic" saoffset="19861" salength="7" rank="202">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="有机合成">476470</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="总有机碳量">593149</tobep>
@@ -4842,8 +4796,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="有机反应">762103</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="有机化学">10405</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="Organic Geochemistry" saoffset="19861" salength="20" rank="123">
-				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Geochemistry" aoffset="19869" alength="12" ext_length="0">
 				<subanchor sarel="0" saname="Geochemistry" saoffset="19869" salength="12" rank="7">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="地球化学">76489</tobep>
 				</subanchor>

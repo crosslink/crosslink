@@ -85,8 +85,11 @@ public class TopicHighlightManager {
 	public void initializeHighlighter(Vector<IndexedAnchor> anchors) {
 //    	txtPaneHighlighter.removeAllHighlights();
 
-        for (IndexedAnchor anchor : anchors)
+        for (IndexedAnchor anchor : anchors) {
+//        	if (anchor.getName().equalsIgnoreCase("fermented fish"))
+//        		System.out.println("I got you");
         	anchor.setHighlighter(txtPaneHighlighter, painters);
+        }
 	}
 	
 	public void update(IndexedAnchor preAnchor) {

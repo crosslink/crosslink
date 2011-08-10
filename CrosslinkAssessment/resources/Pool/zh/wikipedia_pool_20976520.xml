@@ -150,9 +150,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Taxonomic_rank">109538</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Cephalopod" aoffset="768" alength="10" ext_length="1">
-				<subanchor sarel="0" saname="Cephalopod" saoffset="768" salength="10" rank="51">
-				</subanchor>
+			<anchor arel="0" aname="Cephalopoda" aoffset="768" alength="11" ext_length="0">
 				<subanchor sarel="0" saname="Cephalopoda" saoffset="768" salength="11" rank="30">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Cephalopod">340306</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="头足纲">32016</tobep>
@@ -450,10 +448,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="莱比锡大学">493263</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="pouch" aoffset="1483" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="pouch" saoffset="1483" salength="5" rank="206">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="a" aoffset="1491" alength="1" ext_length="0">
 				<subanchor sarel="0" saname="a" saoffset="1491" salength="1" rank="188">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="作客入球優惠制">218498</tobep>
@@ -744,15 +738,15 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="species">468369</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="人">37075</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="赤腹松鼠">1015527</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="8472种族">526303</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="褐头雀鹛">1022063</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="物种形成">235282</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="8472种族">526303</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="濒危野生动植物种国际贸易公约中国动物物种">285272</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="褐头雀鹛">1022063</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="形式">920584</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="數碼寶貝列表">327673</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="棕头鸦雀">1022165</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="物种">34427</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="數碼寶貝列表">327673</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="先锋物种">227911</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="物种">34427</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Sepia" aoffset="2067" alength="5" ext_length="0">
@@ -984,9 +978,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="南极领地">158553</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="internal structure" aoffset="2662" alength="18" ext_length="0">
-				<subanchor sarel="0" saname="internal structure" saoffset="2662" salength="18" rank="174">
-				</subanchor>
+			<anchor arel="0" aname="structure" aoffset="2671" alength="9" ext_length="0">
 				<subanchor sarel="0" saname="structure" saoffset="2671" salength="9" rank="165">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="杂环化合物">192221</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="晶体结构">120766</tobep>
@@ -1499,9 +1491,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="膚色">550626</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="color and light" aoffset="4129" alength="15" ext_length="0">
-				<subanchor sarel="0" saname="color and light" saoffset="4129" salength="15" rank="25">
-				</subanchor>
+			<anchor arel="0" aname="light" aoffset="4139" alength="5" ext_length="0">
 				<subanchor sarel="0" saname="light" saoffset="4139" salength="5" rank="131">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="光">58625</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="光號列車">387658</tobep>
@@ -1667,18 +1657,18 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="色素">54917</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="cells" saoffset="4453" salength="5" rank="41">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="先天免疫系統">1004759</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Cell_(biology)">96610</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="全血细胞计数">948018</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="细胞分裂">136113</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中性白血球">174318</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="细胞因子">507457</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="胞">462485</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="先天免疫系統">1004759</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="全血细胞计数">948018</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="電化電池">754002</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="盲文">57283</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="細胞 (期刊)">535906</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="细胞生物学">56394</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="細胞 (期刊)">535906</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="细胞">6427</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="胞">462485</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="square" aoffset="4463" alength="6" ext_length="11">
@@ -2055,10 +2045,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="能量">22852</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="influence" aoffset="5448" alength="9" ext_length="0">
-				<subanchor sarel="0" saname="influence" saoffset="5448" salength="9" rank="185">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="the color of light" aoffset="5458" alength="18" ext_length="0">
 				<subanchor sarel="0" saname="the color of light" saoffset="5458" salength="18" rank="132">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="光">58625</tobep>
@@ -2389,10 +2375,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="前锋">401623</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="backwards" aoffset="6633" alength="9" ext_length="0">
-				<subanchor sarel="0" saname="backwards" saoffset="6633" salength="9" rank="79">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="lenses" aoffset="6648" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="lenses" saoffset="6648" salength="6" rank="91">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="鏡頭">25089</tobep>
@@ -2484,12 +2466,12 @@
 				<subanchor sarel="0" saname="team" saoffset="6927" salength="4" rank="84">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="团队之星">304289</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Duckling">1299106</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="团队">69132</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="德國足球俱樂部列表">929050</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2008年夏季奧林匹克運動會馬術比賽－團體三項賽">818327</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="团队">69132</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="足球俱乐部">463556</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2008年夏季奧林匹克運動會馬術比賽－團體盛裝舞步賽">818321</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Scrum">830978</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2008年夏季奧林匹克運動會馬術比賽－團體盛裝舞步賽">818321</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="德國足球俱樂部列表">929050</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2008年夏季奧林匹克運動會馬術比賽－團體場地障礙賽">818325</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="DKP">595943</tobep>
 				</subanchor>
@@ -2566,18 +2548,18 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="血液">104523</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="blood" saoffset="7216" salength="5" rank="92">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="血液">104523</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="红血球">1195</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="恐血症">275979</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="血液">104523</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="基督的血">708151</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="恐血症">275979</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="循环系统">273737</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="血型">76991</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="blood ">175390</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="贫血">243473</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="血友病">39773</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="献血">118207</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="出血">1068573</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="循环系统">273737</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="血型">76991</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="血部">714447</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="出血">1068573</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="shade" aoffset="7252" alength="5" ext_length="0">
@@ -2979,10 +2961,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="唐世凤">1028925</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="waters" aoffset="8468" alength="6" ext_length="0">
-				<subanchor sarel="0" saname="waters" saoffset="8468" salength="6" rank="123">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="biogeographic" aoffset="8671" alength="13" ext_length="0">
 				<subanchor sarel="0" saname="biogeographic" saoffset="8671" salength="13" rank="144">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="生物地理学">153634</tobep>
@@ -3240,10 +3218,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="深坑鄉">49550</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="warm" aoffset="8991" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="warm" saoffset="8991" salength="4" rank="86">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="water" aoffset="8996" alength="5" ext_length="0">
 				<subanchor sarel="0" saname="water" saoffset="8996" salength="5" rank="107">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="福建水库列表">1172622</tobep>
@@ -3399,7 +3373,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="但">185747</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Mark" aoffset="9571" alength="4" ext_length="7">
+			<anchor arel="0" aname="Mark" aoffset="9571" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="Mark" saoffset="9571" salength="4" rank="38">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Mark">556782</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="马克伯爵领地">541058</tobep>
@@ -3417,8 +3391,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="mark ">919878</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="马克市">969084</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="Mark Norman" saoffset="9571" salength="11" rank="37">
-				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Norman" aoffset="9576" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="Norman" saoffset="9576" salength="6" rank="22">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="马格努斯·诺曼">1149516</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="諾曼人">657212</tobep>
@@ -3505,8 +3479,6 @@
 			<anchor arel="0" aname="blue-ringed octopus" aoffset="9700" alength="19" ext_length="0">
 				<subanchor sarel="0" saname="blue-ringed octopus" saoffset="9700" salength="19" rank="5">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="藍圈章魚">715703</tobep>
-				</subanchor>
-				<subanchor sarel="0" saname="ringed" saoffset="9705" salength="6" rank="199">
 				</subanchor>
 				<subanchor sarel="0" saname="octopus" saoffset="9712" salength="7" rank="37">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="章鱼">129494</tobep>
@@ -3621,10 +3593,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="属">42680</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="属 (生物)">34425</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="genus">3506</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="Sepiadariidae" aoffset="10137" alength="13" ext_length="0">
-				<subanchor sarel="0" saname="Sepiadariidae" saoffset="10137" salength="13" rank="131">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="seven" aoffset="10160" alength="5" ext_length="8">
@@ -4003,10 +3971,6 @@
 			<anchor arel="0" aname="containing" aoffset="11836" alength="10" ext_length="0">
 				<subanchor sarel="0" saname="containing" saoffset="11836" salength="10" rank="199">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="子集">74916</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="linguini" aoffset="11847" alength="8" ext_length="0">
-				<subanchor sarel="0" saname="linguini" saoffset="11847" salength="8" rank="43">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Italy" aoffset="11903" alength="5" ext_length="0">
@@ -4496,7 +4460,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="20世纪">1412</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Italian" aoffset="13077" alength="7" ext_length="7">
+			<anchor arel="0" aname="Italian" aoffset="13077" alength="7" ext_length="0">
 				<subanchor sarel="0" saname="Italian" saoffset="13077" salength="7" rank="9">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="義大利語維基百科">291955</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="義大利菜">661529</tobep>
@@ -4508,8 +4472,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="意大利足球總會">664408</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="意大利國家足球隊">149548</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="義大利人">811490</tobep>
-				</subanchor>
-				<subanchor sarel="0" saname="Italian poetry" saoffset="13077" salength="14" rank="97">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="important" aoffset="13163" alength="9" ext_length="0">

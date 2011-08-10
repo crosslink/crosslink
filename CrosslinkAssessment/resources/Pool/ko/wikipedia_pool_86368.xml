@@ -86,9 +86,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="사물">277764</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="puzzle pieces" aoffset="717" alength="13" ext_length="0">
-				<subanchor sarel="0" saname="puzzle pieces" saoffset="717" salength="13" rank="188">
-				</subanchor>
+			<anchor arel="0" aname="pieces" aoffset="724" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="pieces" saoffset="724" salength="6" rank="121">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="조각">273842</tobep>
 				</subanchor>
@@ -210,10 +208,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="연마">348206</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="빙고">135014</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="조사">81466</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="puzzles" aoffset="1160" alength="7" ext_length="0">
-				<subanchor sarel="0" saname="puzzles" saoffset="1160" salength="7" rank="187">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="recognizing" aoffset="1180" alength="11" ext_length="0">
@@ -739,9 +733,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="예">83868</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="puzzle box" aoffset="2804" alength="10" ext_length="0">
-				<subanchor sarel="0" saname="puzzle box" saoffset="2804" salength="10" rank="53">
-				</subanchor>
+			<anchor arel="0" aname="box" aoffset="2811" alength="3" ext_length="0">
 				<subanchor sarel="0" saname="box" saoffset="2811" salength="3" rank="91">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="상자">92978</tobep>
 				</subanchor>
