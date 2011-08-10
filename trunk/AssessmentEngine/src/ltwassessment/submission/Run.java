@@ -210,8 +210,10 @@ public class Run {
 		                                String tbFileID = tbXmlFileIDTextNode.getTextContent();
 		                                
 		                                //anchorToBEPV.add(new String[]{tbFileID, tbOffset, target_lang, target_title});
-		                                target = new Target(target_lang, target_title, tbFileID, Integer.parseInt(tbOffset));
-		                                anchor.insertTarget(target);
+		                                if (Target.exist(tbFileID, target_lang)) {
+			                                target = new Target(target_lang, target_title, tbFileID, Integer.parseInt(tbOffset));
+			                                anchor.insertTarget(target);
+		                                }
 	                                }
 	                            }
 	                        }

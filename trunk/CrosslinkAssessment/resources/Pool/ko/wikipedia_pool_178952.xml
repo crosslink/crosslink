@@ -4,7 +4,7 @@
 	<collection>Korean Wikipedia 2010 Collection</collection>
 	<topic file="178952" name="Kimchi">
 		<outgoinglinks>
-			<anchor arel="-1" aname="TYPE" aoffset="159" alength="4" ext_length="0">
+			<anchor arel="0" aname="TYPE" aoffset="159" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="TYPE" saoffset="159" salength="4" rank="202">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="종">104834</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="활자">40701</tobep>
@@ -13,12 +13,10 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="글꼴">70965</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Kim" aoffset="266" alength="3" ext_length="3">
+			<anchor arel="0" aname="Kim" aoffset="266" alength="3" ext_length="0">
 				<subanchor sarel="0" saname="Kim" saoffset="266" salength="3" rank="136">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="킴">23130</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="김">71941</tobep>
-				</subanchor>
-				<subanchor sarel="0" saname="Kimchi" saoffset="266" salength="6" rank="42">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Korean" aoffset="483" alength="6" ext_length="0">
@@ -63,18 +61,14 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="소금">46867</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="-1" aname="kimchee" aoffset="779" alength="7" ext_length="0">
-				<subanchor sarel="-1" saname="kimchee" saoffset="779" salength="7" rank="98">
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="kim" aoffset="798" alength="3" ext_length="5">
+			<anchor arel="0" aname="kim" aoffset="798" alength="3" ext_length="0">
 				<subanchor sarel="0" saname="kim" saoffset="798" salength="3" rank="101">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="김">465881</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="킴 캠벨">164496</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="킴">23130</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="kim chee" saoffset="798" salength="8" rank="2">
-				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="chee" aoffset="802" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="chee" saoffset="802" salength="4" rank="3">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="정관의 치">134855</tobep>
 				</subanchor>
@@ -284,8 +278,6 @@
 				</subanchor>
 				<subanchor sarel="0" saname="Research" saoffset="1791" salength="8" rank="23">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="연구">185335</tobep>
-				</subanchor>
-				<subanchor sarel="0" saname="Research Institute" saoffset="1791" salength="18" rank="58">
 				</subanchor>
 				<subanchor sarel="0" saname="Institute" saoffset="1800" salength="9" rank="20">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="인스티튜트">102613</tobep>
@@ -1592,10 +1584,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="오이">122814</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="-1" aname="yeolmu kimchi" aoffset="10585" alength="13" ext_length="0">
-				<subanchor sarel="-1" saname="yeolmu kimchi" saoffset="10585" salength="13" rank="49">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="bites" aoffset="10645" alength="5" ext_length="0">
 				<subanchor sarel="0" saname="bites" saoffset="10645" salength="5" rank="210">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="음식">42343</tobep>
@@ -1910,14 +1898,12 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="은화">128231</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="lactic" aoffset="13141" alength="6" ext_length="14">
+			<anchor arel="0" aname="lactic" aoffset="13141" alength="6" ext_length="5">
 				<subanchor sarel="0" saname="lactic" saoffset="13141" salength="6" rank="202">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="젖">6215</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="lactic acid" saoffset="13141" salength="11" rank="41">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="젖산">483854</tobep>
-				</subanchor>
-				<subanchor sarel="0" saname="lactic acid bacteria" saoffset="13141" salength="20" rank="4">
 				</subanchor>
 				<subanchor sarel="0" saname="acid" saoffset="13148" salength="4" rank="103">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="산">22033</tobep>
@@ -1925,6 +1911,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="산">463424</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="산 (화학)">32326</tobep>
 				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="bacteria" aoffset="13153" alength="8" ext_length="0">
 				<subanchor sarel="0" saname="bacteria" saoffset="13153" salength="8" rank="72">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="균">38122</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="세균">8859</tobep>
@@ -1935,10 +1923,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="동전">111032</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="현금">236239</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="종 (생물학)">104835</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="-1" aname="Lactobacillus" aoffset="13199" alength="13" ext_length="0">
-				<subanchor sarel="-1" saname="Lactobacillus" saoffset="13199" salength="13" rank="31">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="magazine" aoffset="13493" alength="8" ext_length="0">

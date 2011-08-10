@@ -13,10 +13,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="글꼴">70965</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Croissant" aoffset="266" alength="9" ext_length="0">
-				<subanchor sarel="0" saname="Croissant" saoffset="266" salength="9" rank="19">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="French" aoffset="493" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="French" saoffset="493" salength="6" rank="28">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프랑스어">2914</tobep>
@@ -124,16 +120,10 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="전화">77178</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="crescent roll" aoffset="1214" alength="13" ext_length="0">
-				<subanchor sarel="0" saname="crescent roll" saoffset="1214" salength="13" rank="3">
-				</subanchor>
+			<anchor arel="0" aname="roll" aoffset="1223" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="roll" saoffset="1223" salength="4" rank="126">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="미셸 롤">28736</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="롤">257138</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="Croissants" aoffset="1318" alength="10" ext_length="0">
-				<subanchor sarel="0" saname="Croissants" saoffset="1318" salength="10" rank="0">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="of a" aoffset="1338" alength="4" ext_length="0">
@@ -1787,10 +1777,6 @@
 				</subanchor>
 				<subanchor sarel="0" saname="Switzerland" saoffset="10030" salength="11" rank="11">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="스위스">9825</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="Gipfeli" aoffset="10082" alength="7" ext_length="0">
-				<subanchor sarel="0" saname="Gipfeli" saoffset="10082" salength="7" rank="1">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="crust" aoffset="10125" alength="5" ext_length="0">

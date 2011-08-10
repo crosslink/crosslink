@@ -163,10 +163,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ソース">389904</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="shapes of pasta" aoffset="1367" alength="15" ext_length="0">
-				<subanchor sarel="0" saname="shapes of pasta" saoffset="1367" salength="15" rank="109">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="recognized" aoffset="1405" alength="10" ext_length="0">
 				<subanchor sarel="0" saname="recognized" saoffset="1405" salength="10" rank="197">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="認識">53635</tobep>
@@ -302,10 +298,6 @@
 			<anchor arel="0" aname="barley" aoffset="2457" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="barley" saoffset="2457" salength="6" rank="42">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="オオムギ">22905</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="porridge" aoffset="2464" alength="8" ext_length="0">
-				<subanchor sarel="0" saname="porridge" saoffset="2464" salength="8" rank="42">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="salt" aoffset="2533" alength="4" ext_length="0">
@@ -459,10 +451,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="特別">1342425</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="varieties of pasta" aoffset="3569" alength="18" ext_length="0">
-				<subanchor sarel="0" saname="varieties of pasta" saoffset="3569" salength="18" rank="97">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="grains" aoffset="3607" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="grains" saoffset="3607" salength="6" rank="101">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="穀物">3124</tobep>
@@ -477,10 +465,6 @@
 				<subanchor sarel="0" saname="make" saoffset="3637" salength="4" rank="218">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="メイク">302193</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Make">60511</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="pasta varieties" aoffset="3772" alength="15" ext_length="0">
-				<subanchor sarel="0" saname="pasta varieties" saoffset="3772" salength="15" rank="79">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="pizzoccheri" aoffset="3797" alength="11" ext_length="0">
@@ -1946,11 +1930,9 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Links">579434</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="list" aoffset="14398" alength="4" ext_length="9">
+			<anchor arel="0" aname="list" aoffset="14398" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="list" saoffset="14398" salength="4" rank="160">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="リスト">12886</tobep>
-				</subanchor>
-				<subanchor sarel="0" saname="list of pasta" saoffset="14398" salength="13" rank="2">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Dumplings" aoffset="14774" alength="9" ext_length="0">

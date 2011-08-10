@@ -1575,11 +1575,9 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="구역질">455150</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="abdominal" aoffset="8719" alength="9" ext_length="5">
+			<anchor arel="0" aname="abdominal" aoffset="8719" alength="9" ext_length="0">
 				<subanchor sarel="0" saname="abdominal" saoffset="8719" salength="9" rank="113">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="복부">277663</tobep>
-				</subanchor>
-				<subanchor sarel="0" saname="abdominal pain" saoffset="8719" salength="14" rank="23">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="breathing" aoffset="8777" alength="9" ext_length="13">
@@ -1680,10 +1678,6 @@
 				</subanchor>
 				<subanchor sarel="0" saname="proteins" saoffset="9223" salength="8" rank="163">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="단백질">1409</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="gelatin" aoffset="9249" alength="7" ext_length="0">
-				<subanchor sarel="0" saname="gelatin" saoffset="9249" salength="7" rank="34">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="dissolve" aoffset="9303" alength="8" ext_length="0">

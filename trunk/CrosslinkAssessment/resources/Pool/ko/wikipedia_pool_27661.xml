@@ -17,10 +17,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="미술">2136</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Source code" aoffset="266" alength="11" ext_length="0">
-				<subanchor sarel="0" saname="Source code" saoffset="266" salength="11" rank="15">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="Source" aoffset="489" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="Source" saoffset="489" salength="6" rank="19">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="소스 엔진">202575</tobep>
@@ -214,9 +210,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="적법 절차">335576</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="code snippets" aoffset="1171" alength="13" ext_length="0">
-				<subanchor sarel="0" saname="code snippets" saoffset="1171" salength="13" rank="104">
-				</subanchor>
+			<anchor arel="0" aname="snippets" aoffset="1176" alength="8" ext_length="0">
 				<subanchor sarel="0" saname="snippets" saoffset="1176" salength="8" rank="130">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="조각">273842</tobep>
 				</subanchor>
@@ -358,12 +352,12 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="인터프리터">626</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="The code" aoffset="1679" alength="11" ext_length="5">
+			<anchor arel="0" aname="The code" aoffset="1679" alength="11" ext_length="0">
 				<subanchor sarel="0" saname="The code" saoffset="1679" salength="11" rank="195">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="코드">26553</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="code base" saoffset="1686" salength="9" rank="138">
-				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="base" aoffset="1691" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="base" saoffset="1691" salength="4" rank="178">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="베이스">28089</tobep>
 				</subanchor>
@@ -825,10 +819,6 @@
 			<anchor arel="0" aname="factor" aoffset="4164" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="factor" saoffset="4164" salength="6" rank="176">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="인자">147241</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="maturation" aoffset="4178" alength="10" ext_length="0">
-				<subanchor sarel="0" saname="maturation" saoffset="4178" salength="10" rank="67">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="skills" aoffset="4210" alength="6" ext_length="0">
@@ -1348,10 +1338,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="난독화">471611</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="morphing" aoffset="6350" alength="8" ext_length="0">
-				<subanchor sarel="0" saname="morphing" saoffset="6350" salength="8" rank="40">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="Legal" aoffset="6384" alength="5" ext_length="7">
 				<subanchor sarel="0" saname="Legal" saoffset="6384" salength="5" rank="114">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="법률">96071</tobep>
@@ -1841,8 +1827,6 @@
 				<subanchor sarel="0" saname="Source code repository" saoffset="8603" salength="22" rank="74">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="소스 (음식)">278417</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="code repository" saoffset="8610" salength="15" rank="198">
-				</subanchor>
 				<subanchor sarel="0" saname="repository" saoffset="8615" salength="10" rank="121">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="저장 성">34733</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="박물관">168544</tobep>
@@ -1891,9 +1875,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="HTTP">2149</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Code Reading" aoffset="9013" alength="12" ext_length="0">
-				<subanchor sarel="0" saname="Code Reading" saoffset="9013" salength="12" rank="56">
-				</subanchor>
+			<anchor arel="0" aname="Reading" aoffset="9018" alength="7" ext_length="0">
 				<subanchor sarel="0" saname="Reading" saoffset="9018" salength="7" rank="53">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="레딩">101517</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="레딩 FC">106496</tobep>
@@ -2045,9 +2027,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="공개 API">317748</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="code search" aoffset="10107" alength="11" ext_length="0">
-				<subanchor sarel="0" saname="code search" saoffset="10107" salength="11" rank="167">
-				</subanchor>
+			<anchor arel="0" aname="search" aoffset="10112" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="search" saoffset="10112" salength="6" rank="160">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="수색">331135</tobep>
 				</subanchor>
@@ -2061,10 +2041,6 @@
 				<subanchor sarel="0" saname="Online" saoffset="10407" salength="6" rank="220">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="온라인과 오프라인">163315</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="이음">23017</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="code sharing" aoffset="10421" alength="12" ext_length="0">
-				<subanchor sarel="0" saname="code sharing" saoffset="10421" salength="12" rank="61">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Programmer" aoffset="10622" alength="10" ext_length="0">

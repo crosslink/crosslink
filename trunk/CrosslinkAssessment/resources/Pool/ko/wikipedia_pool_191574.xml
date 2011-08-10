@@ -490,10 +490,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="퀴륨">55129</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="stiletto" aoffset="2136" alength="8" ext_length="0">
-				<subanchor sarel="0" saname="stiletto" saoffset="2136" salength="8" rank="11">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="heels" aoffset="2145" alength="5" ext_length="0">
 				<subanchor sarel="0" saname="heels" saoffset="2145" salength="5" rank="97">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="단말기">228418</tobep>
@@ -1746,10 +1742,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="아무로 레이">49091</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Moccasins" aoffset="7973" alength="9" ext_length="0">
-				<subanchor sarel="0" saname="Moccasins" saoffset="7973" salength="9" rank="26">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="Styles" aoffset="8023" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="Styles" saoffset="8023" salength="6" rank="71">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="스타일 (드라마)">354559</tobep>
@@ -1789,10 +1781,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="고고 댄서">335082</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Hessian" aoffset="8411" alength="7" ext_length="0">
-				<subanchor sarel="0" saname="Hessian" saoffset="8411" salength="7" rank="14">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="Rigger" aoffset="8518" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="Rigger" saoffset="8518" salength="6" rank="131">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="임시의정원">408205</tobep>
@@ -1828,10 +1816,6 @@
 				</subanchor>
 				<subanchor sarel="0" saname="Football boots" saoffset="8792" salength="14" rank="6">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="축구">1455</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="Hiking" aoffset="8849" alength="6" ext_length="0">
-				<subanchor sarel="0" saname="Hiking" saoffset="8849" salength="6" rank="18">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Motorcycle" aoffset="8903" alength="10" ext_length="6">
@@ -1958,13 +1942,11 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="징">188105</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Jump" aoffset="9818" alength="4" ext_length="6">
+			<anchor arel="0" aname="Jump" aoffset="9818" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="Jump" saoffset="9818" salength="4" rank="102">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="인터럽트">167993</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="오르다 칸">238054</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="장애인">269599</tobep>
-				</subanchor>
-				<subanchor sarel="0" saname="Jump boots" saoffset="9818" salength="10" rank="66">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="paratrooper" aoffset="9830" alength="11" ext_length="0">
@@ -2091,10 +2073,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="라마">7901</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="라마속">278917</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="라마 (동음이의)">7955</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="Ugg boots" aoffset="11282" alength="9" ext_length="0">
-				<subanchor sarel="0" saname="Ugg boots" saoffset="11282" salength="9" rank="14">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Christian" aoffset="11433" alength="9" ext_length="10">

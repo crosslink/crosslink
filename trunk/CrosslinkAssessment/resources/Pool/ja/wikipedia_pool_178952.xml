@@ -28,10 +28,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ピックルス">1517451</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="kimchee" aoffset="779" alength="7" ext_length="0">
-				<subanchor sarel="0" saname="kimchee" saoffset="779" salength="7" rank="97">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="kim" aoffset="798" alength="3" ext_length="5">
 				<subanchor sarel="0" saname="kim" saoffset="798" salength="3" rank="0">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ジョアキン・シルヴァ">597258</tobep>
@@ -166,10 +162,6 @@
 				</subanchor>
 				<subanchor sarel="0" saname="fried rice" saoffset="1672" salength="10" rank="52">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="チャーハン">35901</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="kimchi bokkeumbap" aoffset="1695" alength="17" ext_length="0">
-				<subanchor sarel="0" saname="kimchi bokkeumbap" saoffset="1695" salength="17" rank="11">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Korea" aoffset="1775" alength="5" ext_length="36">
@@ -589,9 +581,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="エゴマ">305122</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Kimchi Field Museum" aoffset="4307" alength="19" ext_length="0">
-				<subanchor sarel="0" saname="Kimchi Field Museum" saoffset="4307" salength="19" rank="21">
-				</subanchor>
+			<anchor arel="0" aname="Field" aoffset="4314" alength="5" ext_length="7">
 				<subanchor sarel="0" saname="Field" saoffset="4314" salength="5" rank="179">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="フィールド (計算機科学)">939184</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="フィールド (紋章学)">1492275</tobep>
@@ -1868,14 +1858,6 @@
 				<subanchor sarel="0" saname="IU" saoffset="15531" salength="2" rank="10">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="IU">154255</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="国際単位">154254</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="Vitamin B1" aoffset="15559" alength="10" ext_length="0">
-				<subanchor sarel="0" saname="Vitamin B1" saoffset="15559" salength="10" rank="16">
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="Vitamin B2" aoffset="15607" alength="10" ext_length="0">
-				<subanchor sarel="0" saname="Vitamin B2" saoffset="15607" salength="10" rank="39">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Niacin" aoffset="15668" alength="6" ext_length="0">

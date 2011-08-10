@@ -531,9 +531,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="先例">1483971</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Crown Prince Hassan" aoffset="3071" alength="19" ext_length="20">
-				<subanchor sarel="0" saname="Crown Prince Hassan" saoffset="3071" salength="19" rank="123">
-				</subanchor>
+			<anchor arel="0" aname="Prince Hassan" aoffset="3077" alength="13" ext_length="20">
 				<subanchor sarel="0" saname="Prince Hassan" saoffset="3077" salength="13" rank="244">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="王子">130694</tobep>
 				</subanchor>
@@ -1170,12 +1168,10 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="点滴静脈注射">334337</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="HH" aoffset="7160" alength="2" ext_length="17">
+			<anchor arel="0" aname="HH" aoffset="7160" alength="2" ext_length="0">
 				<subanchor sarel="0" saname="HH" saoffset="7160" salength="2" rank="119">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="HH">152881</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="H">13664</tobep>
-				</subanchor>
-				<subanchor sarel="0" saname="HH the Crown Prince" saoffset="7160" salength="19" rank="11">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Kuwait" aoffset="7181" alength="6" ext_length="0">

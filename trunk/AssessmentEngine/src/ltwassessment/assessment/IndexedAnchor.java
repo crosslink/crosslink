@@ -333,13 +333,16 @@ public class IndexedAnchor extends Anchor {
 //		if (status == Bep.UNASSESSED) {
 			int rel = status; //Bep.IRRELEVANT;
 			
+//	    	if (getName().equalsIgnoreCase("fermented fish"))
+//	    		System.out.println("I got you");
+	    	
 			if (name.trim().length() == 0)
 				rel = Bep.IRRELEVANT;
 			else {
 				boolean hasRelevantLink = false;
 				
-				if (offset == 1750 || name.equals("試驗"))
-					System.out.println("Stop here");
+//				if (offset == 1750 || name.equals("試驗"))
+//					System.out.println("Stop here");
 				
 				for (AssessedAnchor subanchor : getChildrenAnchors()) {
 					if (subanchor.checkStatus() == ASSESSMENT_FINISHED_NO) {
@@ -366,7 +369,7 @@ public class IndexedAnchor extends Anchor {
 			}
 		
 			if (rel != status) {
-				status = rel;
+				setStatus(rel);
 				PoolerManager.getPoolUpdater().updatePoolAnchorStatus(ResourcesManager.getInstance().getTopicID(), this);
 			}
 //		}

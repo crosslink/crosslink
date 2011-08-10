@@ -50,7 +50,7 @@ public class ToXml {
 	    while(i.hasNext()) {
 	    	Map.Entry me = (Map.Entry)i.next();
 	    	Target target = (Target)me.getValue();
-	    	if (target.exists())
+//	    	if (target.exists())
 	    		targetToXml(target, xmlText);
 	    }
 //		for (Target target : anchor.getTargets())
@@ -103,6 +103,8 @@ public class ToXml {
 		
 		for (int i = 1; i < anchorList.size(); ++i) {
 			anchor = anchorList.get(i);
+			if (anchor.getTargets().size() == 0)
+				continue;
 			nextEnd = anchor.getOffset() + anchor.getLength();
 			
 //			if (anchor.getName().equals("Holy"))

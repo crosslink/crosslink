@@ -1090,9 +1090,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="바닥">330050</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="oracle bone inscriptions" aoffset="7496" alength="24" ext_length="0">
-				<subanchor sarel="0" saname="oracle bone inscriptions" saoffset="7496" salength="24" rank="5">
-				</subanchor>
+			<anchor arel="0" aname="inscriptions" aoffset="7508" alength="12" ext_length="0">
 				<subanchor sarel="0" saname="inscriptions" saoffset="7508" salength="12" rank="70">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="금석학">289511</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="서명">182522</tobep>
@@ -2088,10 +2086,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="일">39860</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Replica" aoffset="15715" alength="7" ext_length="0">
-				<subanchor sarel="0" saname="Replica" saoffset="15715" salength="7" rank="110">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="ancient Chinese" aoffset="15726" alength="15" ext_length="0">
 				<subanchor sarel="0" saname="ancient Chinese" saoffset="15726" salength="15" rank="59">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="중국어">2304</tobep>
@@ -2712,7 +2706,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="데이터베이스">38001</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Richard" aoffset="19938" alength="7" ext_length="6">
+			<anchor arel="0" aname="Richard" aoffset="19938" alength="7" ext_length="200">
 				<subanchor sarel="0" saname="Richard" saoffset="19938" salength="7" rank="175">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="리처드 1세">118157</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="리처드">189495</tobep>
@@ -2722,11 +2716,6 @@
 				<subanchor sarel="0" saname="Richard Sears" saoffset="19938" salength="13" rank="21">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="리차드 톰슨">264692</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="Sears" saoffset="19946" salength="5" rank="17">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="시어스">220307</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="oracle characters" aoffset="20128" alength="17" ext_length="0">
 				<subanchor sarel="0" saname="oracle characters" saoffset="20128" salength="17" rank="3">
 				</subanchor>
 			</anchor>

@@ -72,7 +72,7 @@ public class Target {
 		this.bepOffset = bepOffset;
 	}
 
-	public static String id2Path(String fileId) {
+	public static String id2Path(String fileId, String targetLang) {
 		if (corpusHomeHandler == null)
 			return null;
 		
@@ -81,13 +81,17 @@ public class Target {
         	subFolder = String.format("%03d", Integer.parseInt(fileId));
         else
         	subFolder = fileId.substring(fileId.length() - 3);
-		return corpusHome + File.separator + AppResource.targetLang + File.separator + "pages" + File.separator + subFolder + File.separator +  fileId + ".xml";
+		return corpusHome + File.separator + targetLang + File.separator + "pages" + File.separator + subFolder + File.separator +  fileId + ".xml";
 	}
 	
 	public boolean exists() {
-		String filePath = id2Path(id);
+		return exist(id, lang);
+	}
+	
+	public static boolean exist(String id, String target_lang) {
+		String filePath = id2Path(id, target_lang);
 		if (filePath != null)
 			return new File(filePath).exists();
-		return false;
+		return false;		
 	}
 }

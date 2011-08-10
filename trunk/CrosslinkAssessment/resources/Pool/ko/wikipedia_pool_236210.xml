@@ -781,10 +781,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="바덴뷔르템베르크 주">95085</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="grand duchies" aoffset="3721" alength="13" ext_length="0">
-				<subanchor sarel="0" saname="grand duchies" saoffset="3721" salength="13" rank="61">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="duchies" aoffset="3749" alength="7" ext_length="0">
 				<subanchor sarel="0" saname="duchies" saoffset="3749" salength="7" rank="100">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="공국">51396</tobep>
@@ -1362,11 +1358,9 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="영웅전설 IV 주홍물방울">334815</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="HH" aoffset="7160" alength="2" ext_length="17">
+			<anchor arel="0" aname="HH" aoffset="7160" alength="2" ext_length="0">
 				<subanchor sarel="0" saname="HH" saoffset="7160" salength="2" rank="104">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="HH">162945</tobep>
-				</subanchor>
-				<subanchor sarel="0" saname="HH the Crown Prince" saoffset="7160" salength="19" rank="10">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Kuwait" aoffset="7181" alength="6" ext_length="0">
@@ -1867,10 +1861,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="힌두교">12670</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Trailokya" aoffset="9943" alength="9" ext_length="0">
-				<subanchor sarel="0" saname="Trailokya" saoffset="9943" salength="9" rank="53">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="nineteenth century" aoffset="9974" alength="18" ext_length="0">
 				<subanchor sarel="0" saname="nineteenth century" saoffset="9974" salength="18" rank="222">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="19">14454</tobep>
@@ -1959,10 +1949,6 @@
 			<anchor arel="0" aname="Nepal" aoffset="10464" alength="5" ext_length="0">
 				<subanchor sarel="0" saname="Nepal" saoffset="10464" salength="5" rank="38">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="네팔">9162</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="Sri" aoffset="10589" alength="3" ext_length="0">
-				<subanchor sarel="0" saname="Sri" saoffset="10589" salength="3" rank="155">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Sri Sri" aoffset="10601" alength="7" ext_length="0">
@@ -2295,9 +2281,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="혈액">3772</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Crown Prince Party" aoffset="12772" alength="18" ext_length="0">
-				<subanchor sarel="0" saname="Crown Prince Party" saoffset="12772" salength="18" rank="11">
-				</subanchor>
+			<anchor arel="0" aname="Party" aoffset="12785" alength="5" ext_length="0">
 				<subanchor sarel="0" saname="Party" saoffset="12785" salength="5" rank="180">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="잔치">320078</tobep>
 				</subanchor>

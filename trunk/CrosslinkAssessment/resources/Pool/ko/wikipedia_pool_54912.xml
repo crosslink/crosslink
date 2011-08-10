@@ -9,13 +9,13 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="TF">161097</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Dew" aoffset="266" alength="3" ext_length="6">
+			<anchor arel="0" aname="Dew" aoffset="266" alength="3" ext_length="0">
 				<subanchor sarel="0" saname="Dew" saoffset="266" salength="3" rank="28">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="캐너비스">73245</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="이슬">262705</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="Dew point" saoffset="266" salength="9" rank="4">
-				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="point" aoffset="270" alength="5" ext_length="0">
 				<subanchor sarel="0" saname="point" saoffset="270" salength="5" rank="108">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="포인트">111780</tobep>
 				</subanchor>

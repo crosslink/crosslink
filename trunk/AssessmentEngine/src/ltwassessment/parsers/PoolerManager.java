@@ -946,7 +946,7 @@ public class PoolerManager {
             int index = 0;
 
 //            byte[] bytes = null;
-            
+            String aName;
     		int aExtLength = 0;
     		int aOffset = 0;
     		int aLength = 0;
@@ -1022,9 +1022,11 @@ public class PoolerManager {
                     } else if (tagName.equals("anchor")) {
                         thisAnchorProperty = new String[5];
                         for (int i = 0; i < xsr.getAttributeCount(); i++) {
-                            String aName = xsr.getAttributeLocalName(i);
+                            aName = xsr.getAttributeLocalName(i);
                             if (aName.equals("aname") || aName.equals("name")) {
                                 thisAnchorProperty[2] = xsr.getAttributeValue(i);
+//                            	if (thisAnchorProperty[2].equalsIgnoreCase("fermented fish"))
+//                            		System.out.println("I got you");
                             } else if (aName.equals("aoffset") || aName.equals("offset")) {
                             	aOffset = Integer.valueOf(xsr.getAttributeValue(i));
                                 
@@ -1035,8 +1037,10 @@ public class PoolerManager {
                                 thisAnchorProperty[3] = xsr.getAttributeValue(i);
                             } else if (xsr.getAttributeLocalName(i).equals("ext_length")) {
                             	aExtLength = Integer.valueOf(xsr.getAttributeValue(i));
-                                
                             }
+//                            else {
+//                            	System.out.println("Can't be");
+//                            }
                             
                         }
                         thisAnchorProperty[0] = String.valueOf(aOffset);
@@ -1050,9 +1054,6 @@ public class PoolerManager {
 //                        anchorsVbyTopic.add(thisAnchorProperty);
                         thisAnchorSet = thisAnchorProperty[0] + "_" + thisAnchorProperty[1];
                         subAnchorsToBepsHT = new Hashtable<String, Vector<Bep>>();
-                        
-                        
-                        
                         
                         if (!AppResource.forValidationOrAssessment) { // validation
 //                            thisSubAnchorProperty = new String[4];

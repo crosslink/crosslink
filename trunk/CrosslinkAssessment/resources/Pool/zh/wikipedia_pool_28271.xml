@@ -14,14 +14,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Wiki">165</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="TYPE" aoffset="159" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="TYPE" saoffset="159" salength="4" rank="153">
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="Sushi" aoffset="266" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="Sushi" saoffset="266" salength="5" rank="41">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="Number" aoffset="398" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="Number" saoffset="398" salength="6" rank="38">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="数">48461</tobep>
@@ -143,10 +135,6 @@
 				<subanchor sarel="0" saname="topped" saoffset="935" salength="6" rank="120">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="top ">562427</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="top ">611868</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="ingredients" aoffset="953" alength="11" ext_length="0">
-				<subanchor sarel="0" saname="ingredients" saoffset="953" salength="11" rank="87">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="fish" aoffset="974" alength="4" ext_length="0">
@@ -838,10 +826,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="逆合成分析">743383</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="kinds of sushi" aoffset="4429" alength="14" ext_length="0">
-				<subanchor sarel="0" saname="kinds of sushi" saoffset="4429" salength="14" rank="218">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="condiments" aoffset="4538" alength="10" ext_length="0">
 				<subanchor sarel="0" saname="condiments" saoffset="4538" salength="10" rank="98">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="condiment">1287697</tobep>
@@ -898,10 +882,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="輔音變化">117603</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="基因">24117</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="遗传学">4730</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="rendaku" aoffset="4968" alength="7" ext_length="0">
-				<subanchor sarel="0" saname="rendaku" saoffset="4968" salength="7" rank="66">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="mound" aoffset="5236" alength="5" ext_length="0">
@@ -1296,10 +1276,6 @@
 			<anchor arel="0" aname="starting" aoffset="6750" alength="8" ext_length="0">
 				<subanchor sarel="0" saname="starting" saoffset="6750" salength="8" rank="187">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="start ">1202759</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="point" aoffset="6759" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="point" saoffset="6759" salength="5" rank="188">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Rolling" aoffset="6991" alength="7" ext_length="0">
@@ -1718,10 +1694,6 @@
 				<subanchor sarel="0" saname="Fatty" saoffset="9788" salength="5" rank="50">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="脂肪族化合物">745650</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="脂肪">33221</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="style" aoffset="9821" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="style" saoffset="9821" salength="5" rank="191">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="canned" aoffset="9903" alength="6" ext_length="0">
@@ -2351,11 +2323,9 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="先进超导托卡马克实验装置">306297</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="imitation" aoffset="15248" alength="9" ext_length="5">
+			<anchor arel="0" aname="imitation" aoffset="15248" alength="9" ext_length="0">
 				<subanchor sarel="0" saname="imitation" saoffset="15248" salength="9" rank="196">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="模仿">606297</tobep>
-				</subanchor>
-				<subanchor sarel="0" saname="imitation crab" saoffset="15248" salength="14" rank="25">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Caterpillar" aoffset="15397" alength="11" ext_length="0">
@@ -4438,10 +4408,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="维生素B12缺乏症">956764</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="cestode" aoffset="27409" alength="7" ext_length="0">
-				<subanchor sarel="0" saname="cestode" saoffset="27409" salength="7" rank="162">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="tapeworm" aoffset="27417" alength="8" ext_length="0">
 				<subanchor sarel="0" saname="tapeworm" saoffset="27417" salength="8" rank="44">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="tapeworm">84940</tobep>
@@ -4877,10 +4843,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="綠">111694</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="sushi ginger" aoffset="29932" alength="12" ext_length="0">
-				<subanchor sarel="0" saname="sushi ginger" saoffset="29932" salength="12" rank="148">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="standard Japanese" aoffset="29960" alength="17" ext_length="0">
 				<subanchor sarel="0" saname="standard Japanese" saoffset="29960" salength="17" rank="209">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="日语">2281</tobep>
@@ -5202,10 +5164,6 @@
 			<anchor arel="0" aname="Ikura" aoffset="33556" alength="5" ext_length="0">
 				<subanchor sarel="0" saname="Ikura" saoffset="33556" salength="5" rank="124">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="鱼子酱">191015</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="Sasa" aoffset="33606" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="Sasa" saoffset="33606" salength="4" rank="184">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="sale" aoffset="33791" alength="4" ext_length="0">

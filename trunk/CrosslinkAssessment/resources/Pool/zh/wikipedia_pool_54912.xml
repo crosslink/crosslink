@@ -14,10 +14,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="E">6131</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="i" aoffset="10" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="i" saoffset="10" salength="1" rank="15">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="TF" aoffset="31" alength="2" ext_length="0">
 				<subanchor sarel="0" saname="TF" saoffset="31" salength="2" rank="25">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中国图书馆分类法 (TF)">208406</tobep>
@@ -810,26 +806,26 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="北爱尔兰问题">505253</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="the cloud" aoffset="1466" alength="9" ext_length="5">
+			<anchor arel="0" aname="the cloud" aoffset="1466" alength="9" ext_length="0">
 				<subanchor sarel="0" saname="the cloud" saoffset="1466" salength="9" rank="116">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="云">2160</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="cloud" saoffset="1470" salength="5" rank="34">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="cloud">67741</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="云孙随笔">152680</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="雲州">295406</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="雲端運算">701603</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="积雨云">1066143</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="cloud">67741</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中云">280133</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="积雨云">1066143</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="雲州">295406</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="云 (游戏)">1096860</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="慕容雲">133646</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="離域電子">253825</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="雲端運算">701603</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="云">2160</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="云姓">271303</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="離域電子">253825</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="慕容雲">133646</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="弥漫星云">127854</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="云姓">271303</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="cloud base" saoffset="1470" salength="10" rank="17">
-				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="base" aoffset="1476" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="base" saoffset="1476" salength="4" rank="44">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="基地">18405</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Base_(mathematics)">1259723</tobep>
@@ -1517,9 +1513,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Wallop">67894</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="this reason" aoffset="2595" alength="11" ext_length="0">
-				<subanchor sarel="0" saname="this reason" saoffset="2595" salength="11" rank="249">
-				</subanchor>
+			<anchor arel="0" aname="reason" aoffset="2600" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="reason" saoffset="2600" salength="6" rank="128">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="休斯頓彗星">764257</tobep>
 				</subanchor>
@@ -1541,14 +1535,12 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="完美的一天">160832</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="80°" aoffset="2654" alength="3" ext_length="1">
+			<anchor arel="0" aname="80°" aoffset="2654" alength="3" ext_length="0">
 				<subanchor sarel="0" saname="80°" saoffset="2654" salength="3" rank="232">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="80">23457</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="°" saoffset="2656" salength="1" rank="158">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="度">180030</tobep>
-				</subanchor>
-				<subanchor sarel="0" saname="°F" saoffset="2656" salength="2" rank="51">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="100°" aoffset="2683" alength="4" ext_length="0">
@@ -1916,10 +1908,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="RNA干扰">395239</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="body's" aoffset="3741" alength="6" ext_length="0">
-				<subanchor sarel="0" saname="body's" saoffset="3741" salength="6" rank="195">
-				</subanchor>
-			</anchor>
 			<anchor arel="0" aname="normal" aoffset="3748" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="normal" saoffset="3748" salength="6" rank="151">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2005年航天活動列表">747742</tobep>
@@ -1964,10 +1952,6 @@
 			<anchor arel="0" aname="producing" aoffset="3778" alength="9" ext_length="0">
 				<subanchor sarel="0" saname="producing" saoffset="3778" salength="9" rank="210">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="生产">72571</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="cool down" aoffset="3798" alength="9" ext_length="0">
-				<subanchor sarel="0" saname="cool down" saoffset="3798" salength="9" rank="183">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="High" aoffset="3809" alength="4" ext_length="0">
@@ -2047,15 +2031,13 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="資訊科技教育卓越中心">136408</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="evaporative" aoffset="3934" alength="11" ext_length="8">
+			<anchor arel="0" aname="evaporative" aoffset="3934" alength="11" ext_length="0">
 				<subanchor sarel="0" saname="evaporative" saoffset="3934" salength="11" rank="65">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="吸附式制冷">1206960</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="蒸发">34980</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="加湿器">1175643</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="旋转蒸发仪">1096561</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="沸腾">37352</tobep>
-				</subanchor>
-				<subanchor sarel="0" saname="evaporative cooling" saoffset="3934" salength="19" rank="103">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="As" aoffset="3955" alength="2" ext_length="0">
@@ -2082,9 +2064,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="數值修約規則">208585</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="the body" aoffset="3967" alength="8" ext_length="0">
-				<subanchor sarel="0" saname="the body" saoffset="3967" salength="8" rank="176">
-				</subanchor>
+			<anchor arel="0" aname="body" aoffset="3971" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="body" saoffset="3971" salength="4" rank="129">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="物体">608434</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="人体">15644</tobep>
@@ -2491,18 +2471,18 @@
 			</anchor>
 			<anchor arel="0" aname="areas" aoffset="4623" alength="5" ext_length="0">
 				<subanchor sarel="0" saname="areas" saoffset="4623" salength="5" rank="68">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="地区 (中国行政区划)">13532</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="安省市镇列表">900695</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="地区 (中国行政区划)">13532</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="依善地区">536641</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="成渝地区">180865</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="乌干达行政区划">597857</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="不列颠哥伦比亚省行政区划">1080625</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="巴西行政区划">322603</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="area">949285</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="臺灣地區">26129</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="成渝地区">180865</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="乌干达行政区划">597857</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="地区">928859</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="地区办事处">172767</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="area">552</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="不列颠哥伦比亚省行政区划">1080625</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="巴西行政区划">322603</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="above" aoffset="4654" alength="5" ext_length="0">
@@ -2668,8 +2648,8 @@
 				<subanchor sarel="0" saname="upper" saoffset="5520" salength="5" rank="145">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="汉武帝">9444</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="上海汽车工业（集团）总公司">181567</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Portal:上海/需要进行的工作">237527</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="元宵节">36134</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Portal:上海/需要进行的工作">237527</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="上肢">317171</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="汉成帝">50536</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="國道273號">1130452</tobep>
@@ -2777,10 +2757,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Make">273432</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="統計獨立性">420936</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="不依赖空气推进">511791</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="dewpoint" aoffset="6242" alength="8" ext_length="0">
-				<subanchor sarel="0" saname="dewpoint" saoffset="6242" salength="8" rank="18">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="levels" aoffset="6284" alength="6" ext_length="0">
@@ -2987,9 +2963,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="印度城市地位">507914</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="This expression" aoffset="6939" alength="15" ext_length="0">
-				<subanchor sarel="0" saname="This expression" saoffset="6939" salength="15" rank="182">
-				</subanchor>
+			<anchor arel="0" aname="expression" aoffset="6944" alength="10" ext_length="0">
 				<subanchor sarel="0" saname="expression" saoffset="6944" salength="10" rank="130">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="波兰表示法">957956</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="表示式">393193</tobep>
@@ -3490,8 +3464,6 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中國氣象頻道">951403</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="世界气象日">21289</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="Meteorological Society" saoffset="8428" salength="22" rank="154">
-				</subanchor>
 				<subanchor sarel="0" saname="Society" saoffset="8443" salength="7" rank="52">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Society">58149</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="社会">329031</tobep>
@@ -3584,10 +3556,6 @@
 			<anchor arel="0" aname="left" aoffset="9161" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="left" saoffset="9161" salength="4" rank="50">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="左">153073</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="right" aoffset="9191" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="right" saoffset="9191" salength="5" rank="152">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="sta" aoffset="9327" alength="3" ext_length="0">
@@ -3838,13 +3806,13 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="IUPAC有机物命名法 (A部)">196782</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Thermodynamic" aoffset="10721" alength="13" ext_length="9">
+			<anchor arel="0" aname="Thermodynamic" aoffset="10721" alength="13" ext_length="0">
 				<subanchor sarel="0" saname="Thermodynamic" saoffset="10721" salength="13" rank="7">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="热力学">6218</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="非平衡態熱力學">421438</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="Thermodynamic diagrams" saoffset="10721" salength="22" rank="1">
-				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="diagrams" aoffset="10735" alength="8" ext_length="0">
 				<subanchor sarel="0" saname="diagrams" saoffset="10735" salength="8" rank="91">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="国家一级图书馆">1122503</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="瑜伽体位集">1232532</tobep>

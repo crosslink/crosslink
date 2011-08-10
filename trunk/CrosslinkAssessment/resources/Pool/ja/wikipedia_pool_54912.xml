@@ -16,11 +16,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ポイント (曖昧さ回避)">391730</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Atmospheric" aoffset="522" alength="11" ext_length="15">
-				<subanchor sarel="0" saname="Atmospheric" saoffset="522" salength="11" rank="114">
-				</subanchor>
-				<subanchor sarel="0" saname="Atmospheric thermodynamics" saoffset="522" salength="26" rank="32">
-				</subanchor>
+			<anchor arel="0" aname="thermodynamics" aoffset="534" alength="14" ext_length="0">
 				<subanchor sarel="0" saname="thermodynamics" saoffset="534" salength="14" rank="10">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="熱力学">1120</tobep>
 				</subanchor>
@@ -148,10 +144,6 @@
 			<anchor arel="0" aname="saturated" aoffset="1086" alength="9" ext_length="0">
 				<subanchor sarel="0" saname="saturated" saoffset="1086" salength="9" rank="77">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="飽和">73373</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="decrease" aoffset="1194" alength="8" ext_length="0">
-				<subanchor sarel="0" saname="decrease" saoffset="1194" salength="8" rank="190">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="statistic" aoffset="1329" alength="9" ext_length="0">
@@ -921,10 +913,6 @@
 			<anchor arel="0" aname="dependence" aoffset="6224" alength="10" ext_length="0">
 				<subanchor sarel="0" saname="dependence" saoffset="6224" salength="10" rank="137">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="依存症">63540</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="dewpoint" aoffset="6242" alength="8" ext_length="0">
-				<subanchor sarel="0" saname="dewpoint" saoffset="6242" salength="8" rank="23">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="levels" aoffset="6284" alength="6" ext_length="0">
