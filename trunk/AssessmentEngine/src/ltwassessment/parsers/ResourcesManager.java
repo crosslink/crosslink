@@ -2124,13 +2124,23 @@ public class ResourcesManager {
         String[] tabIndexSA = this.getTABNavigationIndex();
         String topicIndex = tabIndexSA[0].trim();
         String[] abIndex = tabIndexSA[1].trim().split(" , ");
-        String poolAnchorIndex = abIndex[0].trim();
+        int poolAnchorIndex = 0;
+        try {
+        	poolAnchorIndex = Integer.valueOf(abIndex[0].trim());
+        }
+        catch (Exception ex) {
+        	poolAnchorIndex = 0;
+        }
         String bepLinkIndex = abIndex[1].trim();
         // ---------------------------------------------------------------------
         // 2) Get current Anchor OL
         // String[]{anchor Offset, Length, Name, arel}
         Vector<IndexedAnchor> poolAnchorsOLNameStatusVSA = getPoolAnchorsOLNameStatusV();
-        IndexedAnchor currAnchorOLNameStatusSA = poolAnchorsOLNameStatusVSA.elementAt(Integer.valueOf(poolAnchorIndex));
+        if (poolAnchorIndex < 0 || poolAnchorIndex >= poolAnchorsOLNameStatusVSA.size())
+        	poolAnchorIndex = 0;
+        IndexedAnchor currAnchorOLNameStatusSA = poolAnchorsOLNameStatusVSA.elementAt(poolAnchorIndex);
+        if (currAnchorOLNameStatusSA.getName().trim().length() == 0)
+        	currAnchorOLNameStatusSA = ResourcesManager.getInstance().getNextAnchor(currAnchorOLNameStatusSA, false);
 //        currTopicAnchorOLNameStatus = new String[]{currAnchorOLNameStatusSA.offsetToString(), currAnchorOLNameStatusSA.lengthToString(), currAnchorOLNameStatusSA.getName(), currAnchorOLNameStatusSA.statusToString()};
         return currAnchorOLNameStatusSA;
 //        return currTopicAnchorOLNameStatus;
@@ -2285,9 +2295,8 @@ public class ResourcesManager {
     }
     
     public void checkAnchorStatus() {
-    	Vector<IndexedAnchor> poolAnchorsOLV = getPoolAnchorsOLNameStatusV();
-    	for (IndexedAnchor anchor : poolAnchorsOLV)
-    		anchor.statusCheck();
+        String topicID = this.getTopicID();
+    	PoolerManager.getInstance().checkAnchorSatus(topicID);
     }
 
 //    public String[] getTopicAnchorOLStatusBySE(String topicID, IndexedAnchor currSCRSEName) {

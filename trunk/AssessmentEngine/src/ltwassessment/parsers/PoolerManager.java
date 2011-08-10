@@ -17,6 +17,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Hashtable;
+import java.util.Iterator;
 import java.util.Vector;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -1239,8 +1240,17 @@ public class PoolerManager {
         }
     }
 
-	public String getPoolTopicLang() {
-		// TODO Auto-generated method stub
-		return null;
+	public void checkAnchorSatus(String topicID) {
+    	Vector<IndexedAnchor> poolAnchorsOLV = getTopicAllAnchors().get(PoolerManager.OUTGOING_KEY + topicID);
+    	Iterator it = poolAnchorsOLV.iterator();
+    	while (it.hasNext()) {
+    		IndexedAnchor anchor = (IndexedAnchor) it.next();
+//    	for (IndexedAnchor anchor : poolAnchorsOLV) {
+    		anchor.statusCheck();
+    		if (anchor.getName().trim().length() == 0)
+    			it.remove();
+//    			poolAnchorsOLV.remove(anchor);
+    	}
+		
 	}
 }

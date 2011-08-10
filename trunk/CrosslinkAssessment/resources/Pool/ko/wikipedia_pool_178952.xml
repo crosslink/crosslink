@@ -4,7 +4,7 @@
 	<collection>Korean Wikipedia 2010 Collection</collection>
 	<topic file="178952" name="Kimchi">
 		<outgoinglinks>
-			<anchor arel="0" aname="TYPE" aoffset="159" alength="4" ext_length="0">
+			<anchor arel="-1" aname="TYPE" aoffset="159" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="TYPE" saoffset="159" salength="4" rank="202">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="종">104834</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="활자">40701</tobep>
@@ -63,8 +63,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="소금">46867</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="kimchee" aoffset="779" alength="7" ext_length="0">
-				<subanchor sarel="0" saname="kimchee" saoffset="779" salength="7" rank="98">
+			<anchor arel="-1" aname="kimchee" aoffset="779" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="kimchee" saoffset="779" salength="7" rank="98">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="kim" aoffset="798" alength="3" ext_length="5">
@@ -1592,8 +1592,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="오이">122814</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="yeolmu kimchi" aoffset="10585" alength="13" ext_length="0">
-				<subanchor sarel="0" saname="yeolmu kimchi" saoffset="10585" salength="13" rank="49">
+			<anchor arel="-1" aname="yeolmu kimchi" aoffset="10585" alength="13" ext_length="0">
+				<subanchor sarel="-1" saname="yeolmu kimchi" saoffset="10585" salength="13" rank="49">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="bites" aoffset="10645" alength="5" ext_length="0">
@@ -1937,8 +1937,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="종 (생물학)">104835</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Lactobacillus" aoffset="13199" alength="13" ext_length="0">
-				<subanchor sarel="0" saname="Lactobacillus" saoffset="13199" salength="13" rank="31">
+			<anchor arel="-1" aname="Lactobacillus" aoffset="13199" alength="13" ext_length="0">
+				<subanchor sarel="-1" saname="Lactobacillus" saoffset="13199" salength="13" rank="31">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="magazine" aoffset="13493" alength="8" ext_length="0">
