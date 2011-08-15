@@ -1,7 +1,7 @@
 package ltwassessment.parsers;
 
-import com.sun.org.apache.xerces.internal.parsers.DOMParser;
-import com.sun.org.apache.xpath.internal.XPathAPI;
+//import com.sun.org.apache.xerces.internal.parsers.DOMParser;
+//import com.sun.org.apache.xpath.internal.XPathAPI;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.OutputStreamWriter;
@@ -856,10 +856,13 @@ public class FOLTXTMatcher {
             InputSource inputSource = new InputSource(inputStreamReader);
 
             // Parse the XML File
-            DOMParser parser = new DOMParser();
-            parser.parse(inputSource);
-            Document tempDoc = parser.getDocument();
-
+//            DOMParser parser = new DOMParser();
+//            parser.parse(inputSource);
+//            Document tempDoc = parser.getDocument();
+            DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+            DocumentBuilder db = dbf.newDocumentBuilder();
+            Document tempDoc = db.parse(inputSource);
+            
             out = getNodeText(tempDoc, "article");
             String content = "<html><body>" + out + "</body></html>";
             dummyPane.setText(content);
@@ -936,13 +939,13 @@ public class FOLTXTMatcher {
      * @return - the text of the xpath
      */
     private static String getNodeText(Document sourceDoc, String xpath) {
-
         NodeList nodelist;
         Element elem;
         String text = "";
 
+        Node root = sourceDoc.getDocumentElement(); //sourceDoc.getFirstChild();
         try {
-            nodelist = XPathAPI.selectNodeList(sourceDoc, xpath);
+            nodelist = root.getChildNodes(); //XPathAPI.selectNodeList(sourceDoc, xpath);
 
             // Process the elements in the nodelist
             // note that because we usually specify a particular node we get the text of one node only
