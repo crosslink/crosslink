@@ -198,8 +198,10 @@ public class LTWAssessmentToolControler {
     	currTopicID = Assessment.getInstance().getNextTopic();
     	if (currTopicID == null)
     		finishAssessment();
-    	else
-    		assess(Assessment.getPoolFile(currTopicID), true);
+    	else {
+    		rscManager.updateTopicID(currTopicID);
+    		assess(currTopicID, true);
+    	}
     }
 
 	public void goNextLink(boolean updateCurrAnchorStatus, boolean nextUnassessed) {
@@ -283,9 +285,13 @@ public class LTWAssessmentToolControler {
 //        rscManager.updateOutgoingCompletion(outCompletedLinks + " : " + outCompletionRatio[1]);  
 	}
 	
-    public void backupPool() {
+    public void backupPool(String ID) {
 		//      String sourcePoolFPath = "resources" + File.separator + "Pool" + File.separator + "wikipedia_pool.xml";
-    	String topicID = rscManager.getTopicID();
+    	String topicID = null;
+    	if (ID != null)
+    		topicID = ID;
+    	else
+    		topicID = rscManager.getTopicID();
 		String sourcePoolFPath = ltwassessment.Assessment.getPoolFile(topicID);
 		File srcFile = new File(sourcePoolFPath);
 		String backupPoolDir = Assessment.getPoolBackupTempDirHandler().getAbsolutePath();//.ASSESSMENT_POOL_BACKUP_DIR;
@@ -353,7 +359,7 @@ public class LTWAssessmentToolControler {
 //          log("COMPLETION ... ");
 
 			if (nextUnassessed && (nextAnchorBepLinkVSA == currentBep || (Completion.getInstance().isFinished() && !showOnce ))) {
-				backupPool();
+				backupPool(this.currTopicID);
 				int option  = this.showAssessNextTopicDialog(this.currTopicID);
 			    if (option == JOptionPane.OK_OPTION) {
 			//      BrowserControl openBrowser = new BrowserControl();
@@ -370,12 +376,13 @@ public class LTWAssessmentToolControler {
 				CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(currentBep.getAssociatedAnchor(), nextAnchorBepLinkVSA.getAssociatedAnchor(), nextAnchorBepLinkVSA);
     }
     
-    public void assess(String poolFile) {
-    	assess(poolFile, false);
+    public void assess(String topicID) {
+    	assess(topicID, false);
     }
     
-    private void assess(String poolFile, boolean reset) {
-    	backupPool();
+    private void assess(String topicID, boolean reset) {
+    	String poolFile = Assessment.getPoolFile(topicID);
+    	backupPool(topicID);
     	Completion.getInstance().reset();
     	
     	if (!new File(poolFile).exists()) {
@@ -385,8 +392,6 @@ public class LTWAssessmentToolControler {
     	}
     	
     	currAssessingPoolFile = poolFile;
-    	
-        rscManager = ResourcesManager.getInstance();
         myPooler = PoolerManager.getInstance(poolFile);
         myPUpdater = myPooler.getPoolUpdater();
         
@@ -394,7 +399,6 @@ public class LTWAssessmentToolControler {
          * This has to be done before anything else
          */
         rscManager.pullPoolData();
-        rscManager.checkAnchorStatus();
         
 //        AssessmentThread.setMyPoolManager(myPooler);
 //        AssessmentThread.setMyRSCManager(rscManager);
@@ -403,7 +407,7 @@ public class LTWAssessmentToolControler {
         
         topicAnchorsHT = myPooler.getTopicAllAnchors();
        
-        if (reset || rscManager.getPoolAnchorsOLNameStatusV().size() != rscManager.getTopicAnchorsOLNameSEV().size()) {
+        if (reset) {
         	resetResouceTopic(AppResource.sourceLang);
         } 
         else {
@@ -419,6 +423,11 @@ public class LTWAssessmentToolControler {
 
         setupTopic();        
         setupComponentFont();
+        
+        rscManager.checkAnchorStatus();
+        if (rscManager.getPoolAnchorsOLNameStatusV().size() != rscManager.getTopicAnchorsOLNameSEV().size())
+        	rscManager.updateAnchorScreenOffset();
+        
         
         Assessment.getInstance().setCurrentTopic(new File(rscManager.getCurrTopicXmlFile()));
         myPUpdater.setTopicID(currTopicID);
@@ -572,9 +581,11 @@ public class LTWAssessmentToolControler {
 		//      currTopicName = new WikiArticleXml(currTopicFilePath).getTitle();
 		String topicLang = rscManager.getTopicLang();
 		setTopicPaneContent(currTopicFilePath, topicLang);
+		
 		FOLTXTMatcher.getInstance().getCurrFullXmlText();
-    	    	
     	FOLTXTMatcher.getInstance().getSCRAnchorPosV(myTopicPane, currTopicID, topicAnchorsHT);
+    	
+    	rscManager.updateAnchorScreenOffset();
     }
     
     private void resetResouceTopic(String topicLang) {
@@ -646,17 +657,15 @@ public class LTWAssessmentToolControler {
     }
 
 	public void start() {
-		
-		
-		
+        rscManager = ResourcesManager.getInstance();
         Hashtable<String, File> topics4Assessment = Assessment.getInstance().getTopics();
         if (topics4Assessment.size() == 0) {
-            currTopicID = rscManager.getInstance().getTopicID();
+            currTopicID = ResourcesManager.getInstance().getTopicID();
             if (currTopicID.length() == 0) {
             	//TODO : fix this
             }
             else
-            	LTWAssessmentToolControler.getInstance().assess(Assessment.getPoolFile(currTopicID));
+            	LTWAssessmentToolControler.getInstance().assess(currTopicID);
         }
         else {
         	LTWAssessmentToolControler.getInstance().setCurrTopicID(null); //currTopicID = null;

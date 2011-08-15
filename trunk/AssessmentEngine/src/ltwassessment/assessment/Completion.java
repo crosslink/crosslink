@@ -36,7 +36,7 @@ public class Completion implements Observer {
 			++finishedLinks;
 			
 			if ((finishedLinks % 10) == 0)
-				LTWAssessmentToolControler.getInstance().backupPool();
+				LTWAssessmentToolControler.getInstance().backupPool(null);
 		}
 		else if (value == Bep.MARK_UNASSESSED) {
 			--finishedLinks;
