@@ -31,6 +31,8 @@ public class IndexedAnchor extends Anchor {
 	private Vector<AssessedAnchor> childrenAnchors = new Vector<AssessedAnchor>();
 	
 	private Vector<Object> anchorHighlightReferences = new Vector<Object>();
+	
+	String[] scrFOL = null;
 
 	public IndexedAnchor(int offset, int length, String name) {
 		super(offset, length, name);
@@ -165,6 +167,14 @@ public class IndexedAnchor extends Anchor {
 		return childrenAnchors;
 	}
 	
+	public String[] getScrFOL() {
+		return scrFOL;
+	}
+
+	public void setScrFOL(String[] scrFOL) {
+		this.scrFOL = scrFOL;
+	}
+
 	public String toKey() {
 		return this.offsetToString() + "_" +  this.lengthToString();
 	}
