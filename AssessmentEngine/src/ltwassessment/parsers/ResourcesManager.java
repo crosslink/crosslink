@@ -2227,15 +2227,17 @@ public class ResourcesManager {
         // anchor-bep Index: 0 , 0 , 0 , 0 --> pool_Anchor , bep_Link , non-used , non-used
         String[] tabIndexSA = this.getTABNavigationIndex();
         String[] abIndex = tabIndexSA[1].trim().split(" , ");
-        String bepLinkIndex = abIndex[1].trim();
+        int bepLinkIndex = Integer.valueOf(abIndex[1].trim());
         // ---------------------------------------------------------------------
         // Get current Anchor SE
         // Pool_Anchor OL, BEPLinks V<String[]{Offset, fileID, tbrel/status}
         IndexedAnchor currAnchorOLSA = getCurrTopicAnchorOLNameStatusSA();
-        String currAnchorOL = currAnchorOLSA.toKey(); //[0] + "_" + currAnchorOLSA[1];
-        Hashtable<String, Vector<Bep>> poolAnchorBepLinksHT = getPoolAnchorBepLinksHashtable();
-        Vector<Bep> currBepVSA = poolAnchorBepLinksHT.get(currAnchorOL);
-        Bep currBepSA = currBepVSA.elementAt(Integer.valueOf(bepLinkIndex));
+//        String currAnchorOL = currAnchorOLSA.toKey(); //[0] + "_" + currAnchorOLSA[1];
+//        Hashtable<String, Vector<Bep>> poolAnchorBepLinksHT = getPoolAnchorBepLinksHashtable();
+//        Vector<Bep> currBepVSA = poolAnchorBepLinksHT.get(currAnchorOL);
+        if (bepLinkIndex < 0 || bepLinkIndex >= currAnchorOLSA.getChildrenAnchors().get(0).getBeps().size())
+        	bepLinkIndex = 0;
+        Bep currBepSA = currAnchorOLSA.getChildrenAnchors().get(0).getBeps().get(bepLinkIndex); //currBepVSA.elementAt(bepLinkIndex);
         return currBepSA;
     }
 

@@ -1072,7 +1072,7 @@ public class PoolerManager {
                         	parsedAnchor = new IndexedAnchor(aOffset, aLength, thisAnchorProperty[2]);
                         	parsedAnchor.setStatus(Integer.valueOf(thisAnchorProperty[3]));
                         	parsedAnchor.setExtendedLength(aExtLength); 	
-                        	anchorsVbyTopic.add(parsedAnchor);
+//                        	anchorsVbyTopic.add(parsedAnchor);
                         }
                         	
                         index = 0;
@@ -1104,9 +1104,9 @@ public class PoolerManager {
                         parsedSubanchor.setOffsetIndex(Integer.valueOf(thisAnchorProperty[0]));
                         parsedSubanchor.setLengthIndex(Integer.valueOf(thisAnchorProperty[1]));
                         
-                        subAnchorsVbyTopic.add(parsedSubanchor);
-                        parsedAnchor.addChildAnchor(parsedSubanchor);
-                        parsedSubanchor.setParent(parsedAnchor);
+//                        subAnchorsVbyTopic.add(parsedSubanchor);
+//                        parsedAnchor.addChildAnchor(parsedSubanchor);
+//                        parsedSubanchor.setParent(parsedAnchor);
 //                        toBepsVbySubAnchor.add
                     } else if (tagName.equals(SubmissionFormat.getAftobeptag())) { // tobep , now tofile
                         String[] thisToBepProperty = null;
@@ -1211,9 +1211,23 @@ public class PoolerManager {
                         anchorsHT.put(thisAnchorSet, subAnchorsToBepsHT);
                         if (!AppResource.forValidationOrAssessment) {
                         	subAnchorsToBepsHT.put(thisSubAnchorSet, parsedSubanchor.getBeps()/*toBepsVbySubAnchor*/);
-                        	parsedAnchor = null;
                         }
+                        else {
+                        	if (parsedAnchor.getChildrenAnchors().size() > 0)
+                        		anchorsVbyTopic.add(parsedAnchor);
+                        	else
+                        		System.err.println("Empty anchor: " + parsedAnchor.toString());
+                        }
+                    	parsedAnchor = null;	
                     } else if (tagName.equals("subanchor")) {
+                    	if (parsedSubanchor.getBeps().size() > 0) {
+	                        subAnchorsVbyTopic.add(parsedSubanchor);
+	                        parsedAnchor.addChildAnchor(parsedSubanchor);
+	                        parsedSubanchor.setParent(parsedAnchor);
+                    	}
+                    	else
+                    		System.err.println("Empty subanchor: " + parsedSubanchor.toString());
+                    	
                         subAnchorsToBepsHT.put(thisSubAnchorSet, parsedSubanchor.getBeps()/*toBepsVbySubAnchor*/);
                     	thisSubAnchorSet = "";
                     	thisSubAnchorProperty = null;
