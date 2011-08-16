@@ -4,8 +4,8 @@
 	<collection>Korean Wikipedia 2010 Collection</collection>
 	<topic file="28271" name="Sushi">
 		<outgoinglinks>
-			<anchor arel="0" aname="Sushi" aoffset="266" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="Sushi" saoffset="266" salength="5" rank="96">
+			<anchor arel="-1" aname="Sushi" aoffset="266" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="Sushi" saoffset="266" salength="5" rank="96">
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Number" aoffset="398" alength="6" ext_length="0">
@@ -2496,7 +2496,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="체력 (게임)">105018</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="infection" aoffset="26158" alength="9" ext_length="0">
+			<anchor arel="-1" aname="infection" aoffset="26158" alength="9" ext_length="0">
 				<subanchor sarel="0" saname="infection" saoffset="26158" salength="9" rank="176">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="감염병">53469</tobep>
 				</subanchor>

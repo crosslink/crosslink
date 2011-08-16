@@ -101,7 +101,8 @@ public class FOLTXTMatcher {
             this.isLinkWikipedia = false;
         }
         
-        dummyPane.setContentType("text/html; charset=UTF-8");
+        //dummyPane.setContentType("text/html; charset=UTF-8");
+        dummyPane.setContentType("text/html");
         
         populateEntityV();
 //        getCurrFullXmlText();
