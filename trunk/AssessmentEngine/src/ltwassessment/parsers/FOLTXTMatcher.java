@@ -1,7 +1,7 @@
 package ltwassessment.parsers;
 
-//import com.sun.org.apache.xerces.internal.parsers.DOMParser;
-//import com.sun.org.apache.xpath.internal.XPathAPI;
+import com.sun.org.apache.xerces.internal.parsers.DOMParser;
+import com.sun.org.apache.xpath.internal.XPathAPI;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.OutputStreamWriter;
@@ -392,14 +392,11 @@ public class FOLTXTMatcher {
     		bepOffsetStr = "0";
 
     	int bepOffset = Integer.parseInt(bepOffsetStr);
-    	if (bepOffset == 399)
-    		System.err.println("I got you");
+//    	if (bepOffset == 399)
+//    		System.err.println("I got you");
         String source = null;
-        try {
-			source = new String(parseXmlText(fullXmlTxt.substring(bepOffset)), "UTF-8");
-		} catch (UnsupportedEncodingException e1) {
-			e1.printStackTrace();
-		}
+        //source = new String(parseXmlText(fullXmlTxt.substring(bepOffset)), "UTF-8");
+		source = parseXmlText(fullXmlTxt.substring(bepOffset));
 
 //      List<String> puzzles = new Vector<String>();
 //      source = DeXMLify(source);
@@ -437,7 +434,7 @@ public class FOLTXTMatcher {
 					System.err.println("");
 				}
 
-					System.err.println();
+//					System.err.println();
 				} catch (UnsupportedEncodingException e) {
 					e.printStackTrace();
 				}
@@ -854,31 +851,29 @@ public class FOLTXTMatcher {
     }
     
     @SuppressWarnings("finally")
-	public static byte[] parseXmlText(String input) {
+	public static String parseXmlText(String input) {
     	StringBuffer sb = new StringBuffer("<?xml version=\"1.0\" encoding=\"UTF-8\"?><!DOCTYPE article SYSTEM \"article.dtd\"><article>");
     	sb.append(input);
     	sb.append("</article>");
-    	byte[] out = null;
-    	Charset defaultChartSet = Charset.defaultCharset();
+    	String out = input;
         InputStreamReader inputStreamReader = null;
         try {
-        	out = input.getBytes("UTF-8");
             ByteArrayInputStream bais = new ByteArrayInputStream(sb.toString().getBytes());
             inputStreamReader = new InputStreamReader(bais, "UTF-8");
             InputSource inputSource = new InputSource(inputStreamReader);
 
             // Parse the XML File
-//            DOMParser parser = new DOMParser();
-//            parser.parse(inputSource);
-//            Document tempDoc = parser.getDocument();
-            DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
-            DocumentBuilder db = dbf.newDocumentBuilder();
-            Document tempDoc = db.parse(inputSource);
+            DOMParser parser = new DOMParser();
+            parser.parse(inputSource);
+            Document tempDoc = parser.getDocument();
+//            DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+//            DocumentBuilder db = dbf.newDocumentBuilder();
+//            Document tempDoc = db.parse(inputSource);
             
-            String text = getNodeText(tempDoc, "article");
-            String content = "<html><body>" + text + "</body></html>";
+            out = getNodeText(tempDoc, "article");
+            String content = "<html><body>" + out + "</body></html>";
             dummyPane.setText(content);
-            out = dummyPane.getDocument().getText(0, dummyPane.getDocument().getLength()).getBytes(defaultChartSet);
+            out = dummyPane.getDocument().getText(0, dummyPane.getDocument().getLength());
 
         } catch (SAXException ex) {
         	ex.printStackTrace();
@@ -955,9 +950,10 @@ public class FOLTXTMatcher {
         Element elem;
         StringBuffer text = new StringBuffer();
 
-        Node root = sourceDoc.getDocumentElement(); //sourceDoc.getFirstChild();
+//        Node root = sourceDoc.getDocumentElement(); //sourceDoc.getFirstChild();
         try {
-            nodelist = root.getChildNodes(); //XPathAPI.selectNodeList(sourceDoc, xpath);
+//            nodelist = root.getChildNodes(); 
+            nodelist = XPathAPI.selectNodeList(sourceDoc, xpath);
 
             // Process the elements in the nodelist
             // note that because we usually specify a particular node we get the text of one node only
