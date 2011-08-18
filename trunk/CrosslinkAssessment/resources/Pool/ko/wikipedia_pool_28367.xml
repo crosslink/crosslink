@@ -4,12 +4,12 @@
 	<collection>Korean Wikipedia 2010 Collection</collection>
 	<topic file="28367" name="Spam (food)">
 		<outgoinglinks>
-			<anchor arel="0" aname="Cha" aoffset="96" alength="3" ext_length="0">
+			<anchor arel="-1" aname="Cha" aoffset="96" alength="3" ext_length="0">
 				<subanchor sarel="0" saname="Cha" saoffset="96" salength="3" rank="123">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="차">23132</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="TYPE" aoffset="159" alength="4" ext_length="0">
+			<anchor arel="-1" aname="TYPE" aoffset="159" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="TYPE" saoffset="159" salength="4" rank="206">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="식">29781</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="활자">40701</tobep>
@@ -95,7 +95,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="스팸 광고">11761</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="cans" aoffset="1148" alength="4" ext_length="0">
+			<anchor arel="-1" aname="cans" aoffset="1148" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="cans" saoffset="1148" salength="4" rank="222">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="ㄹ">23498</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="깡통">340582</tobep>
