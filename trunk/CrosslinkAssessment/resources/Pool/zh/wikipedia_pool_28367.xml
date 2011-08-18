@@ -4,7 +4,7 @@
 	<collection>Korean Wikipedia 2010 Collection</collection>
 	<topic file="28367" name="Spam (food)">
 		<outgoinglinks>
-			<anchor arel="0" aname="s" aoffset="9" alength="1" ext_length="0">
+			<anchor arel="-1" aname="s" aoffset="9" alength="1" ext_length="0">
 				<subanchor sarel="0" saname="s" saoffset="9" salength="1" rank="208">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="ISS集團">946270</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="星期日">19635</tobep>
@@ -12,12 +12,12 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="S">10669</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="c" aoffset="22" alength="1" ext_length="0">
+			<anchor arel="-1" aname="c" aoffset="22" alength="1" ext_length="0">
 				<subanchor sarel="0" saname="c" saoffset="22" salength="1" rank="142">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="碳">1340</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Wiki" aoffset="62" alength="4" ext_length="0">
+			<anchor arel="-1" aname="Wiki" aoffset="62" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="Wiki" saoffset="62" salength="4" rank="42">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Wiki">165</tobep>
 				</subanchor>
@@ -159,13 +159,13 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="永南食品">715680</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="center" aoffset="1007" alength="6" ext_length="0">
+			<anchor arel="-1" aname="center" aoffset="1007" alength="6" ext_length="0">
 				<subanchor sarel="0" saname="center" saoffset="1007" salength="6" rank="27">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中央">215197</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中心">911254</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="cans" aoffset="1148" alength="4" ext_length="0">
+			<anchor arel="-1" aname="cans" aoffset="1148" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="cans" saoffset="1148" salength="4" rank="159">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="罐頭">439389</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="開罐器">466788</tobep>
