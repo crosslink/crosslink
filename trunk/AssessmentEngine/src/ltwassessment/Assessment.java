@@ -79,19 +79,22 @@ public class Assessment {
 	    	InputStream is = null;
 	    	if (langFile.exists()) {
 	    		is = new BufferedInputStream(new FileInputStream(langFile));
+		        InputStreamReader in = new InputStreamReader(is);
+		        BufferedReader buff = new BufferedReader(in);
+		        String line;
+		        line = buff.readLine();
+		        assessmentLang = line.trim();
 	    	}
-	    	else {
-		        URL url = new URL(ASSESSMENT_LANG_ADDRESS); 
-	
-		        HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-		        conn.connect();
-		        is = conn.getInputStream();
-	    	}
-	        InputStreamReader in = new InputStreamReader(is);
-	        BufferedReader buff = new BufferedReader(in);
-	        String line;
-	        line = buff.readLine();
-	        assessmentLang = line.trim();
+	    	else
+	    		assessmentLang = "zh";
+//	    	else {
+//		        URL url = new URL(ASSESSMENT_LANG_ADDRESS); 
+//	
+//		        HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+//		        conn.connect();
+//		        is = conn.getInputStream();
+//	    	}
+
 	    } catch(Exception e) { 
 	        e.printStackTrace();
 	        System.err.println("Can't get the lanuage of the assessment pool from " + ASSESSMENT_LANG_ADDRESS);

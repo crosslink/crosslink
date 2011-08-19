@@ -5,6 +5,9 @@ package ltwassessmenttool;
 
 import java.awt.Color;
 import java.awt.Insets;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.text.BadLocationException;
@@ -235,7 +238,18 @@ public class LTWAssessmentToolView extends FrameView {
     	
     	LTWAssessmentToolControler.getInstance().setTextContentType(textContentType);
 		
-    	this.getFrame().setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//    	this.getFrame().setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    	this.getFrame().setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+    	WindowAdapter windowListener = new WindowAdapter()
+    	   {
+    	   // anonymous WindowAdapter class
+    	   public void windowClosing ( WindowEvent w )
+    	      {
+    		   	LTWAssessmentToolControler.getInstance().backupPool(null);
+    		   	System.exit(0);
+    	      } // end windowClosing
+    	   };// end anonymous class
+    	this.getFrame().addWindowListener( windowListener );
 	}
 
 	private void setAnchorColorHints() {
@@ -920,7 +934,8 @@ public class LTWAssessmentToolView extends FrameView {
 }//GEN-LAST:event_jRadioButtonMenuItemKoActionPerformed
 
     private void exitMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitMenuItemActionPerformed
-        System.exit(0);
+//        System.exit(0);
+        LTWAssessmentToolControler.getInstance().finishAssessment();
     }//GEN-LAST:event_exitMenuItemActionPerformed
     // </editor-fold>
 
