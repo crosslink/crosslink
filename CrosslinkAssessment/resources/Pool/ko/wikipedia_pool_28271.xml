@@ -110,8 +110,8 @@
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="두부">48731</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="A" aoffset="1390" alength="1" ext_length="0">
-				<subanchor sarel="1" saname="A" saoffset="1390" salength="1" rank="67">
+			<anchor arel="-1" aname="A" aoffset="1390" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="A" saoffset="1390" salength="1" rank="67">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="라 (계이름)">135343</tobep>
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="A">668</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="あ">74795</tobep>
@@ -2757,7 +2757,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="wood" aoffset="28744" alength="4" ext_length="0">
-				<subanchor sarel="-1" saname="wood" saoffset="28744" salength="4" rank="165">
+				<subanchor sarel="1" saname="wood" saoffset="28744" salength="4" rank="165">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="숲">147707</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="목재">250821</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="나무">81619</tobep>
@@ -3003,7 +3003,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="부엌">247156</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="cloth" aoffset="32529" alength="5" ext_length="0">
+			<anchor arel="-1" aname="cloth" aoffset="32529" alength="5" ext_length="0">
 				<subanchor sarel="-1" saname="cloth" saoffset="32529" salength="5" rank="170">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="옷감">298975</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="천">119638</tobep>
@@ -3018,7 +3018,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="Bamboo" aoffset="32694" alength="6" ext_length="0">
-				<subanchor sarel="-1" saname="Bamboo" saoffset="32694" salength="6" rank="35">
+				<subanchor sarel="1" saname="Bamboo" saoffset="32694" salength="6" rank="35">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="대나무">219347</tobep>
 				</subanchor>
 			</anchor>

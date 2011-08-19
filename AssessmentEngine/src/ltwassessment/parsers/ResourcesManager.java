@@ -38,6 +38,7 @@ import ltwassessment.assessment.CurrentFocusedAnchor;
 import ltwassessment.assessment.IndexedAnchor;
 import ltwassessment.parsers.ResourcesManager;
 import ltwassessment.parsers.FOLTXTMatcher;
+import ltwassessment.utility.FileUtil;
 
 import org.apache.xerces.parsers.DOMParser;
 import org.w3c.dom.CharacterData;
@@ -121,10 +122,9 @@ public class ResourcesManager {
     }
     
     private void init() {
-        resourceXMLFile = AppResource.getInstance().getResourceMap().getString("ResourceXMLFilePath");
-        afTasnCollectionErrors = AppResource.getInstance().getResourceMap().getString("AssFormXml.taskCollectionError");
-        afErrorsFilePath = AppResource.getInstance().getResourceMap().getString("bepFile.ErrorXmlPath");
-        wikipediaCollTitle = AppResource.getInstance().getResourceMap().getString("collectionType.Wikipedia");
+//        resourceXMLFile = AppResource.getInstance().getResourceMap().getString("ResourceXMLFilePath");
+//        afTasnCollectionErrors = AppResource.getInstance().getResourceMap().getString("AssFormXml.taskCollectionError");
+//        afErrorsFilePath = AppResource.getInstance().getResourceMap().getString("bepFile.ErrorXmlPath");
         //teAraCollTitle = AppResource.getInstance().getResourceMap().getString("collectionType.TeAra");
         
         org.jdesktop.application.ResourceMap resourceMap = AppResource.getInstance().getResourceMap();
@@ -132,6 +132,15 @@ public class ResourcesManager {
         resourceXMLFile = resourceMap.getString("ResourceXMLFilePath");
         afTasnCollectionErrors = resourceMap.getString("AssFormXml.taskCollectionError");
         afErrorsFilePath = resourceMap.getString("bepFile.ErrorXmlPath");
+        wikipediaCollTitle = resourceMap.getString("collectionType.Wikipedia");
+        
+        File resourceXMLFileHander = new File(resourceXMLFile);
+        if (!resourceXMLFileHander.exists())
+			try {
+				FileUtil.copyFile(new File("resources" + File.separator + "Tool_Resources" + File.separator + resourceXMLFileHander.getName()), resourceXMLFileHander);
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
         // resource constants for tool setting up property
         fileNotFoundXmlPath = resourceMap.getString("fileNotFound.ReplacedXmlPath");
         defaultWikipediaDirectory = resourceMap.getString("directory.Wikipedia");

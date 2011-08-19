@@ -605,9 +605,11 @@ public class FOLTXTMatcher {
             Logger.getLogger(FOLTXTMatcher.class.getName()).log(Level.SEVERE, null, ex);
         }
         Vector<String[]> screenAnchorPos = new Vector<String[]>();
+        int counter = 0;
         for (IndexedAnchor thisAnchorSet : anchorOLV) {
 //        	if (thisAnchorSet.getOffset() == 3001)
 //        		System.out.println("I got you");
+    		System.err.println("# " + String.valueOf(++counter) + ": initialising " + thisAnchorSet.toString());
             String[] scrFOL = screenOffsetLengthFinder(fullScreenText, fullXmlTxt, thisAnchorSet);
     		scrFOL[3] = thisAnchorSet.extendedLengthToString(); //[4];
     		thisAnchorSet.setScrFOL(scrFOL);
@@ -862,9 +864,9 @@ public class FOLTXTMatcher {
             Document tempDoc = parser.getDocument();
 
             out = getNodeText(tempDoc, "article");
-            String content = "<html><body>" + out + "</body></html>";
-            dummyPane.setText(content);
-            out = dummyPane.getDocument().getText(0, dummyPane.getDocument().getLength());
+//            String content = "<html><body>" + out + "</body></html>";
+//            dummyPane.setText(content);
+//            out = dummyPane.getDocument().getText(0, dummyPane.getDocument().getLength());
 
         } catch (SAXException ex) {
         	ex.printStackTrace();

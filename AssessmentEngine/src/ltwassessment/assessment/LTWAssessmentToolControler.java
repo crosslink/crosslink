@@ -184,7 +184,9 @@ public class LTWAssessmentToolControler {
 			            JOptionPane.INFORMATION_MESSAGE);    
     }
     
-    private void finishAssessment() {
+    public void finishAssessment() {
+    	if (currTopicID != null)
+    		backupPool(currTopicID);
     	showAssessmentCompletionDialog();
 		javax.swing.SwingUtilities.getWindowAncestor(this.myLinkPane).setVisible(false);
 		javax.swing.SwingUtilities.getWindowAncestor(this.myLinkPane).dispose();		    
@@ -358,7 +360,7 @@ public class LTWAssessmentToolControler {
             // 2) If Not, Go Next
 //          log("COMPLETION ... ");
 
-			if (nextUnassessed && (nextAnchorBepLinkVSA == currentBep || (Completion.getInstance().isFinished() && !showOnce ))) {
+			if (!showOnce && nextUnassessed && (nextAnchorBepLinkVSA == currentBep || Completion.getInstance().isFinished())) {
 				backupPool(this.currTopicID);
 				int option  = this.showAssessNextTopicDialog(this.currTopicID);
 			    if (option == JOptionPane.OK_OPTION) {
@@ -367,9 +369,10 @@ public class LTWAssessmentToolControler {
 			    	assessNextTopic();
 			    }
 			    else {
-			    	finishAssessment();
+				    showOnce = true;
+			    	//finishAssessment();
 			    }
-			    showOnce = true;
+
 			//  return null;
 			}
 			else

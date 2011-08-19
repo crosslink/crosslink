@@ -103,10 +103,14 @@
 	  	  		<exclude name="Collections/ja/"/>
 	  	  		<exclude name="Collections/ko/"/>
 	  	  		<exclude name="toolResources.xml"/>
-	  	  		<exclude name="Pool/POOL_BACKUP"/>
+	  	  		<exclude name="Pool/POOL_BACKUP/"/>
+	  	  		<exclude name="Pool/POOL_BACKUP/*"/>
 	  	  		<exclude name="Pool/*.log"/>
 	  	  	</zipfileset>
-	  	  	<zipfileset dir="assessment" prefix="assessment"/>
+	  	  	<zipfileset dir="assessment" prefix="assessment">
+	  	  		<exclude name="inbox/*"/>
+	  	  		<exclude name="outbox/*"/>
+	  	  	</zipfileset>
 	  	  	<zipfileset dir="images" prefix="images"/>
 	  	  	<zipfileset dir="lib" prefix="lib" />
 	  	  	<zipfileset dir="." includes="Instruction.pdf"/>
@@ -130,10 +134,14 @@
 	  	  		<exclude name="Collections/zh/"/>
 	  	  		<exclude name="Collections/ko/"/>
 	  	  		<exclude name="toolResources.xml"/>
-	  	  		<exclude name="Pool/POOL_BACKUP"/>
+	  	  		<exclude name="Pool/POOL_BACKUP/"/>
+	  	  		<exclude name="Pool/POOL_BACKUP/*"/>
 	  	  		<exclude name="Pool/*.log"/>
 	  	  	</zipfileset>
-	  	  	<zipfileset dir="assessment" prefix="assessment"/>
+	  	  	<zipfileset dir="assessment" prefix="assessment">
+	  	  		<exclude name="inbox/*"/>
+	  	  		<exclude name="outbox/*"/>
+	  	  	</zipfileset>
 	  	  	<zipfileset dir="images" prefix="images"/>
 	  	  	<zipfileset dir="lib" prefix="lib" />
 	  	  	<zipfileset dir="." includes="Instruction.pdf"/>
@@ -157,10 +165,14 @@
 	  	  		<exclude name="Collections/zh/"/>
 	  	  		<exclude name="Collections/ja/"/>
 	  	  	    <exclude name="toolResources.xml"/>
-	  	  		<exclude name="Pool/POOL_BACKUP"/>
+	  	  		<exclude name="Pool/POOL_BACKUP/"/>
+	  	  		<exclude name="Pool/POOL_BACKUP/*"/>
 	  	  		<exclude name="Pool/*.log"/>
 	  	  	</zipfileset>
-	  	  	<zipfileset dir="assessment" prefix="assessment"/>
+	  	  	<zipfileset dir="assessment" prefix="assessment">
+	  	  		<exclude name="inbox/*"/>
+	  	  		<exclude name="outbox/*"/>
+	  	  	</zipfileset>
 	  	  	<zipfileset dir="images" prefix="images"/>
 	  	  	<zipfileset dir="lib" prefix="lib" />
 	  	  	<zipfileset dir="." includes="Instruction.pdf"/>
