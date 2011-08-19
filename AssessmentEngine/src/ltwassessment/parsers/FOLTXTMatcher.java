@@ -14,11 +14,9 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
-import java.nio.charset.Charset;
 import java.util.Arrays;
 import java.util.Enumeration;
 import java.util.Hashtable;
-import java.util.Locale;
 import java.util.Vector;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -101,7 +99,6 @@ public class FOLTXTMatcher {
             this.isLinkWikipedia = false;
         }
         
-        //dummyPane.setContentType("text/html; charset=UTF-8");
         dummyPane.setContentType("text/html");
         
         populateEntityV();
@@ -363,17 +360,15 @@ public class FOLTXTMatcher {
 	        myScreenPosition[1] = String.valueOf(0);
 	        myScreenPosition[2] = String.valueOf(0);
 	
-	        if (aName.trim().length() > 0) {
-	        	int offset = Integer.parseInt(screenBepOffsetFinder(fullScreenTxt, fullXmlTxt, Integer.toString(textOffset)));
+	        int offset = Integer.parseInt(screenBepOffsetFinder(fullScreenTxt, fullXmlTxt, Integer.toString(textOffset)));
 	//        if (Character.isWhitespace(fullScreenTxt.charAt(offset))) {
 	//	        while (Character.isWhitespace(fullScreenTxt.charAt(offset)))
 	//	        	--offset;
 	//	        ++offset;
 	//        }
-		        myScreenPosition[1] = String.valueOf(offset);
-		        myScreenPosition[2] = String.valueOf(offset + anchorTextLength);
-		        myScreenPosition[0] = fullScreenTxt.substring(offset, offset + aName.length());
-	        }
+	        myScreenPosition[1] = String.valueOf(offset);
+	        myScreenPosition[2] = String.valueOf(offset + anchorTextLength);
+	        myScreenPosition[0] = fullScreenTxt.substring(offset, offset + aName.length());
 //	        myScreenPosition[3] = String.valueOf(anchorTextExtLength);
     	}
     	catch (InvalidOffsetException ioe) {
@@ -388,16 +383,11 @@ public class FOLTXTMatcher {
     }
     // =========================================================================
 
-    private String screenBepOffsetFinder(String fullScreenTxt, String fullXmlTxt, String bepOffsetStr) throws InvalidOffsetException {
-    	if (bepOffsetStr.length() == 0)
-    		bepOffsetStr = "0";
+    private String screenBepOffsetFinder(String fullScreenTxt, String fullXmlTxt, String bepOffset) throws InvalidOffsetException {
+    	if (bepOffset.length() == 0)
+    		bepOffset = "0";
 
-    	int bepOffset = Integer.parseInt(bepOffsetStr);
-//    	if (bepOffset == 399)
-//    		System.err.println("I got you");
-        String source = null;
-        //source = new String(parseXmlText(fullXmlTxt.substring(bepOffset)), "UTF-8");
-		source = parseXmlText(fullXmlTxt.substring(bepOffset));
+        String source = this.parseXmlText(fullXmlTxt.substring(Integer.parseInt(bepOffset)));
 
 //      List<String> puzzles = new Vector<String>();
 //      source = DeXMLify(source);
@@ -431,7 +421,7 @@ public class FOLTXTMatcher {
 					System.err.println("Puzzle:");
 					System.err.println(puzzle);
 					System.err.println("SB:");
-					System.err.println(newSB.substring(newSB.length() - puzzle_len));
+					System.err.println(newSB);
 					System.err.println("");
 				}
 
@@ -625,6 +615,9 @@ public class FOLTXTMatcher {
 //            anchorSetV.add(thisAnchorSet.getOffset()/*[0]*/ + " : " + thisAnchorSet.lengthToString()/*[1]*/ + " : " + thisAnchorSet.getName()/*[2]*/ + " : " + scrFOL[1] + " : " + scrFOL[2]  + " : " +  thisAnchorSet.extendedLengthToString()/*[4]*/);
         }
         // ============================
+//        // record into toolResource.xml
+//        myRSCManager.updateCurrAnchorFOL(anchorSetV);
+        // ============================
         return screenAnchorPos;
     }
 
@@ -688,7 +681,7 @@ public class FOLTXTMatcher {
     
     public Vector<String[]> getSCRBepPosV(JTextPane txtPane, String xmlFileID, Vector<String[]> xmlBepOffsetV, boolean isWikipedia) {
         Vector<String[]> scrBepOffsetV = new Vector<String[]>();
-        Vector<String> bepSetV = new Vector<String>();
+//        Vector<String> bepSetV = new Vector<String>();
         String fullScreenText = "";
         String fullXmlText = "";
         try {
@@ -722,11 +715,11 @@ public class FOLTXTMatcher {
 				e.printStackTrace();
 			}
             scrBepOffsetV.add(new String[]{scrBepOffset, String.valueOf(Integer.valueOf(scrBepOffset) + 4)});
-            bepSetV.add(thisXmlBepOffset + " : " + scrBepOffset);
+//            bepSetV.add(thisXmlBepOffset + " : " + scrBepOffset);
         }
-        // ============================
-        // record into toolResource.xml
-        myRSCManager.updateCurrBepOffsetList(bepSetV);
+//        // ============================
+//        // record into toolResource.xml
+//        myRSCManager.updateCurrBepOffsetList(bepSetV);
         // ============================
         return scrBepOffsetV;
     }
@@ -867,10 +860,7 @@ public class FOLTXTMatcher {
             DOMParser parser = new DOMParser();
             parser.parse(inputSource);
             Document tempDoc = parser.getDocument();
-//            DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
-//            DocumentBuilder db = dbf.newDocumentBuilder();
-//            Document tempDoc = db.parse(inputSource);
-            
+
             out = getNodeText(tempDoc, "article");
             String content = "<html><body>" + out + "</body></html>";
             dummyPane.setText(content);
@@ -947,13 +937,12 @@ public class FOLTXTMatcher {
      * @return - the text of the xpath
      */
     private static String getNodeText(Document sourceDoc, String xpath) {
+
         NodeList nodelist;
         Element elem;
-        StringBuffer text = new StringBuffer();
+        String text = "";
 
-//        Node root = sourceDoc.getDocumentElement(); //sourceDoc.getFirstChild();
         try {
-//            nodelist = root.getChildNodes(); 
             nodelist = XPathAPI.selectNodeList(sourceDoc, xpath);
 
             // Process the elements in the nodelist
@@ -963,14 +952,14 @@ public class FOLTXTMatcher {
             for (int i = 0; i < nodelist.getLength(); i++) {
                 // Get element
                 org.w3c.dom.Node n = nodelist.item(i);
-                text.append(n.getTextContent());
+                text += n.getTextContent();
 
                 //text += text;
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return text.toString();
+        return text;
     }
 
     /** gets the text for a given xpath from a given start position
