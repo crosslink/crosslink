@@ -1,0 +1,1735 @@
+<crosslink-assessment participant-id="2273087" run-id="2273087_A2B" task="A2B" default_lang="ja" source_lang="en">
+	<collection>Chinese Wikipedia 2010 Collection</collection>
+	<collection>Japanese Wikipedia 2010 Collection</collection>
+	<collection>Korean Wikipedia 2010 Collection</collection>
+	<topic file="593703" name="Abdominal pain">
+		<outgoinglinks>
+			<anchor arel="0" aname="pain" aoffset="276" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="pain" saoffset="276" salength="4" rank="110">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="疼痛">796873</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Gynecology" aoffset="526" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="Gynecology" saoffset="526" salength="10" rank="155">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="婦人科学">428230</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Gastroenterology" aoffset="559" alength="16" ext_length="0">
+				<subanchor sarel="0" saname="Gastroenterology" saoffset="559" salength="16" rank="60">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="消化">24372</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="消化器学">203230</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="ICD9" aoffset="648" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="ICD9" saoffset="648" salength="4" rank="220">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ICD">402262</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="stomach ache" aoffset="697" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="stomach ache" saoffset="697" salength="12" rank="191">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="胃">24373</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="ache" saoffset="705" salength="4" rank="130">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="痛み">511131</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="symptoms" aoffset="733" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="symptoms" saoffset="733" salength="8" rank="98">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="症候学">62657</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="disorders" aoffset="768" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="disorders" saoffset="768" salength="9" rank="207">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="障害">28843</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="disease" aoffset="789" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="disease" saoffset="789" salength="7" rank="113">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="病気">8831</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="diagnosis" aoffset="818" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="diagnosis" saoffset="818" salength="9" rank="76">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="甲殻類">38502</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="診断">803571</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the cause" aoffset="831" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="the cause" saoffset="831" salength="9" rank="248">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="原因">17284</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="cause" saoffset="835" salength="5" rank="153">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="原因">17284</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="abdominal" aoffset="844" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="abdominal" saoffset="844" salength="9" rank="219">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="腹">579766</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="diseases" aoffset="890" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="diseases" saoffset="890" salength="8" rank="204">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="病気">8831</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="result" aoffset="903" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="result" saoffset="903" salength="6" rank="154">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="結果">673429</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="symptom" aoffset="918" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="symptom" saoffset="918" salength="7" rank="106">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="症候学">62657</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="problem" aoffset="954" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="problem" saoffset="954" salength="7" rank="152">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="問題">698668</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Most" aoffset="963" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="Most" saoffset="963" salength="4" rank="17">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="モスト">1321942</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="benign" aoffset="992" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="benign" saoffset="992" salength="6" rank="204">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="良性腫瘍">145039</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="causes" aoffset="1037" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="causes" saoffset="1037" salength="6" rank="225">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="原因">17284</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Differential" aoffset="1088" alength="12" ext_length="10">
+				<subanchor sarel="0" saname="Differential" saoffset="1088" salength="12" rank="112">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="差動">1563749</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="平衡接続">467990</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="差動装置">281137</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Differential diagnosis" saoffset="1088" salength="22" rank="143">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ゲーム差">177093</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Gastrointestinal" aoffset="1161" alength="16" ext_length="0">
+				<subanchor sarel="0" saname="Gastrointestinal" saoffset="1161" salength="16" rank="117">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="消化器">44262</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="消化">24372</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Inflammatory" aoffset="1219" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="Inflammatory" saoffset="1219" salength="12" rank="78">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="炎症">239576</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="gastroenteritis" aoffset="1233" alength="15" ext_length="0">
+				<subanchor sarel="0" saname="gastroenteritis" saoffset="1233" salength="15" rank="15">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="嘔吐">84542</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="下痢">140562</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="嘔吐下痢症">785090</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="赤痢">95865</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="appendicitis" aoffset="1250" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="appendicitis" saoffset="1250" salength="12" rank="17">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="虫垂炎">17384</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="gastritis" aoffset="1264" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="gastritis" saoffset="1264" salength="9" rank="6">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="胃炎">1271162</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="esophagitis" aoffset="1275" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="esophagitis" saoffset="1275" salength="11" rank="3">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="食道">44225</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Crohn's" aoffset="1304" alength="7" ext_length="8">
+				<subanchor sarel="0" saname="Crohn's" saoffset="1304" salength="7" rank="184">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="クローン病">211049</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Crohn's disease" saoffset="1304" salength="15" rank="3">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="クローン病">211049</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="ulcerative" aoffset="1321" alength="10" ext_length="8">
+				<subanchor sarel="0" saname="ulcerative" saoffset="1321" salength="10" rank="58">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="潰瘍">234602</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="ulcerative colitis" saoffset="1321" salength="18" rank="11">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="潰瘍性大腸炎">51303</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="大腸">35800</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="colitis" saoffset="1332" salength="7" rank="30">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="大腸炎">2002937</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="大腸">35800</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="microscopic" aoffset="1341" alength="11" ext_length="8">
+				<subanchor sarel="0" saname="microscopic" saoffset="1341" salength="11" rank="116">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="微視的">15030</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="microscopic colitis" saoffset="1341" salength="19" rank="53">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="顕微鏡">14445</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Obstruction" aoffset="1402" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="Obstruction" saoffset="1402" salength="11" rank="123">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="黄疸">232253</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="hernia" aoffset="1415" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="hernia" saoffset="1415" salength="6" rank="70">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヘルニア">78562</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="intussusception" aoffset="1423" alength="15" ext_length="0">
+				<subanchor sarel="0" saname="intussusception" saoffset="1423" salength="15" rank="36">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="腸重積">1600408</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="volvulus" aoffset="1440" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="volvulus" saoffset="1440" salength="8" rank="38">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="腸">165379</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="adhesions" aoffset="1464" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="adhesions" saoffset="1464" salength="9" rank="59">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="癒着">694200</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="tumours" aoffset="1475" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="tumours" saoffset="1475" salength="7" rank="116">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="腫瘍">144940</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="superior" aoffset="1484" alength="8" ext_length="27">
+				<subanchor sarel="0" saname="superior" saoffset="1484" salength="8" rank="96">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="スペリオル (ウィスコンシン州)">954026</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="スペリオル">955324</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Superior">748715</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="superior mesenteric" saoffset="1484" salength="19" rank="10">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="上下">26343</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="superior mesenteric artery syndrome" saoffset="1484" salength="35" rank="53">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="腸">165379</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="上腸間膜動脈症候群">1970399</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="mesenteric" saoffset="1493" salength="10" rank="214">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="腸">165379</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="artery" saoffset="1504" salength="6" rank="107">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="動脈">40257</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="constipation" aoffset="1528" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="constipation" saoffset="1528" salength="12" rank="7">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="便秘">204851</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="hemorrhoids" aoffset="1542" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="hemorrhoids" saoffset="1542" salength="11" rank="30">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="痔">145900</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Vascular" aoffset="1595" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="Vascular" saoffset="1595" salength="8" rank="117">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="血管">46906</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="embolism" aoffset="1605" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="embolism" saoffset="1605" salength="8" rank="91">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="塞栓">489475</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="thrombosis" aoffset="1615" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="thrombosis" saoffset="1615" salength="10" rank="20">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="血栓">163759</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="hemorrhage" aoffset="1627" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="hemorrhage" saoffset="1627" salength="10" rank="96">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="出血">592758</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="sickle" aoffset="1639" alength="6" ext_length="13">
+				<subanchor sarel="0" saname="sickle" saoffset="1639" salength="6" rank="87">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="鎌">73845</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="sickle cell" saoffset="1639" salength="11" rank="189">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="鎌">73845</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="sickle cell disease" saoffset="1639" salength="19" rank="8">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="鎌状赤血球症">266088</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="cell" saoffset="1646" salength="4" rank="114">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="セル">104549</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Cell computing">390466</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Cell Broadband Engine">204411</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="angina" aoffset="1670" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="angina" saoffset="1670" salength="6" rank="94">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="狭心症">17683</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="blood" aoffset="1678" alength="5" ext_length="7">
+				<subanchor sarel="0" saname="blood" saoffset="1678" salength="5" rank="104">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="血液">40011</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="blood vessel" saoffset="1678" salength="12" rank="10">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="血管">46906</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="vessel" saoffset="1684" salength="6" rank="203">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="容器">381104</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="compression" aoffset="1691" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="compression" saoffset="1691" salength="11" rank="132">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="圧縮">12795</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="celiac" aoffset="1712" alength="6" ext_length="7">
+				<subanchor sarel="0" saname="celiac" saoffset="1712" salength="6" rank="85">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="腹腔">997156</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="celiac artery" saoffset="1712" salength="13" rank="56">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="腹腔">997156</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="syndrome" aoffset="1738" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="syndrome" saoffset="1738" salength="8" rank="114">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="症候群">125289</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Postural orthostatic tachycardia syndrome" aoffset="1749" alength="41" ext_length="0">
+				<subanchor sarel="0" saname="Postural orthostatic tachycardia syndrome" saoffset="1749" salength="41" rank="49">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="姿勢反射">1702663</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="tachycardia" saoffset="1770" salength="11" rank="33">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="頻脈">321940</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="digestive" aoffset="1832" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="digestive" saoffset="1832" salength="9" rank="135">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="消化">24372</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="peptic ulcer" aoffset="1843" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="peptic ulcer" saoffset="1843" salength="12" rank="27">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="消化性潰瘍">843553</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="胃潰瘍">95992</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="ulcer" saoffset="1850" salength="5" rank="86">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="潰瘍">234602</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="lactose" aoffset="1857" alength="7" ext_length="12">
+				<subanchor sarel="0" saname="lactose" saoffset="1857" salength="7" rank="47">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ラクトース">86422</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="lactose intolerance" saoffset="1857" salength="19" rank="12">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="乳糖不耐症">503797</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="intolerance" saoffset="1865" salength="11" rank="100">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="不耐">434468</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="coeliac" aoffset="1878" alength="7" ext_length="8">
+				<subanchor sarel="0" saname="coeliac" saoffset="1878" salength="7" rank="67">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="腹腔">997156</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="coeliac disease" saoffset="1878" salength="15" rank="16">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="セリアック病">566573</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="food" aoffset="1895" alength="4" ext_length="10">
+				<subanchor sarel="0" saname="food" saoffset="1895" salength="4" rank="117">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="食品">24201</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="food allergies" saoffset="1895" salength="14" rank="26">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="食物アレルギー">45650</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="allergies" saoffset="1900" salength="9" rank="123">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アレルギー">5883</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Bile" aoffset="1951" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="Bile" saoffset="1951" salength="4" rank="87">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="胆汁">376734</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="cholecystitis" aoffset="2018" alength="13" ext_length="0">
+				<subanchor sarel="0" saname="cholecystitis" saoffset="2018" salength="13" rank="4">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="胆嚢炎">358473</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="cholangitis" aoffset="2033" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="cholangitis" saoffset="2033" salength="11" rank="34">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="胆嚢">277340</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="原発性硬化性胆管炎">517445</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="cholelithiasis" aoffset="2099" alength="14" ext_length="0">
+				<subanchor sarel="0" saname="cholelithiasis" saoffset="2099" salength="14" rank="25">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="胆石">354496</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Liver" aoffset="2164" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="Liver" saoffset="2164" salength="5" rank="95">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="肝 (五臓)">1163870</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="肝臓">18814</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="hepatitis" aoffset="2225" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="hepatitis" saoffset="2225" salength="9" rank="32">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="肝炎">24733</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="liver" aoffset="2236" alength="5" ext_length="8">
+				<subanchor sarel="0" saname="liver" saoffset="2236" salength="5" rank="67">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="肝臓">18814</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="liver abscess" saoffset="2236" salength="13" rank="28">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="膿瘍">366502</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="肝膿瘍">1660210</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Pancreatic" aoffset="2291" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="Pancreatic" saoffset="2291" salength="10" rank="122">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="膵臓">19428</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="pancreatitis" aoffset="2357" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="pancreatitis" saoffset="2357" salength="12" rank="47">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="膵炎">394912</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Renal" aoffset="2411" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="Renal" saoffset="2411" salength="5" rank="75">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="腎臓">46898</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="urological" aoffset="2421" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="urological" saoffset="2421" salength="10" rank="68">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="泌尿器科学">266263</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="泌尿器">108590</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Inflammation" aoffset="2473" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="Inflammation" saoffset="2473" salength="12" rank="66">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="炎症">239576</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="pyelonephritis" aoffset="2487" alength="14" ext_length="0">
+				<subanchor sarel="0" saname="pyelonephritis" saoffset="2487" salength="14" rank="14">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="腎盂腎炎">1101258</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="bladder" aoffset="2503" alength="7" ext_length="10">
+				<subanchor sarel="0" saname="bladder" saoffset="2503" salength="7" rank="98">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="膀胱">46970</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="bladder infection" saoffset="2503" salength="17" rank="85">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="膀胱">46970</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="尿路感染症">626468</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="kidney" aoffset="2575" alength="6" ext_length="7">
+				<subanchor sarel="0" saname="kidney" saoffset="2575" salength="6" rank="69">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="腎臓">46898</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="kidney stones" saoffset="2575" salength="13" rank="5">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="尿路結石">82812</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="腎臓">46898</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="stones" saoffset="2582" salength="6" rank="214">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="石">12569</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="urolithiasis" aoffset="2590" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="urolithiasis" saoffset="2590" salength="12" rank="19">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="尿">46899</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Urinary" aoffset="2604" alength="7" ext_length="10">
+				<subanchor sarel="0" saname="Urinary" saoffset="2604" salength="7" rank="200">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="尿">46899</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Urinary retention" saoffset="2604" salength="17" rank="29">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="尿閉">1929265</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="left" aoffset="2682" alength="4" ext_length="22">
+				<subanchor sarel="0" saname="left" saoffset="2682" salength="4" rank="147">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="レフト">103807</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="左翼手">103759</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="left renal vein" saoffset="2682" salength="15" rank="62">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="腎静脈">1996431</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="left renal vein entrapment" saoffset="2682" salength="26" rank="29">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="左">26230</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="renal" saoffset="2687" salength="5" rank="108">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="腎 (五臓)">1161992</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="renal vein" saoffset="2687" salength="10" rank="88">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="腎静脈">1996431</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="vein" saoffset="2693" salength="4" rank="101">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="静脈">48019</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Gynecological" aoffset="2750" alength="13" ext_length="0">
+				<subanchor sarel="0" saname="Gynecological" saoffset="2750" salength="13" rank="111">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="婦人">306222</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="婦人科学">428230</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="obstetric" aoffset="2767" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="obstetric" saoffset="2767" salength="9" rank="71">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="産科学">428231</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="pelvic" aoffset="2832" alength="6" ext_length="21">
+				<subanchor sarel="0" saname="pelvic" saoffset="2832" salength="6" rank="244">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="骨盤">650972</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="pelvic inflammatory disease" saoffset="2832" salength="27" rank="51">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="骨盤">650972</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="inflammatory" saoffset="2839" salength="12" rank="100">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="炎症">239576</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="ovarian" aoffset="2913" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="ovarian" saoffset="2913" salength="7" rank="172">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="卵巣">96958</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="torsion" aoffset="2921" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="torsion" saoffset="2921" salength="7" rank="120">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ねじれ">866205</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Endocrinological" aoffset="2970" alength="16" ext_length="0">
+				<subanchor sarel="0" saname="Endocrinological" saoffset="2970" salength="16" rank="161">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ホルモン">255723</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="menstruation" aoffset="2988" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="menstruation" saoffset="2988" salength="12" rank="127">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="月経">110362</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Tumors" aoffset="3057" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="Tumors" saoffset="3057" salength="6" rank="32">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="腫瘍">144940</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="endometriosis" aoffset="3065" alength="13" ext_length="0">
+				<subanchor sarel="0" saname="endometriosis" saoffset="3065" salength="13" rank="33">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="子宮内膜症">758361</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="fibroids" aoffset="3080" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="fibroids" saoffset="3080" salength="8" rank="107">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="子宮筋腫">1625325</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="子宮">29587</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="ovarian cyst" aoffset="3090" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="ovarian cyst" saoffset="3090" salength="12" rank="23">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="卵巣">96958</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="卵巣嚢腫">976630</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="cyst" saoffset="3098" salength="4" rank="81">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="嚢胞">379250</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="ovarian cancer" aoffset="3104" alength="14" ext_length="0">
+				<subanchor sarel="0" saname="ovarian cancer" saoffset="3104" salength="14" rank="22">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="卵巣">96958</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="卵巣腫瘍">1625392</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="cancer" saoffset="3112" salength="6" rank="78">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="腫瘍">144940</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="悪性腫瘍">18287</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Pregnancy" aoffset="3160" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="Pregnancy" saoffset="3160" salength="9" rank="102">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="妊娠">94719</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="ruptured" aoffset="3171" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="ruptured" saoffset="3171" salength="8" rank="229">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="破裂">1753502</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="ectopic" aoffset="3180" alength="7" ext_length="10">
+				<subanchor sarel="0" saname="ectopic" saoffset="3180" salength="7" rank="236">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="異種姦">980714</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="ectopic pregnancy" saoffset="3180" salength="17" rank="24">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="子宮外妊娠">854244</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="pregnancy" saoffset="3188" salength="9" rank="94">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="妊娠">94719</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="threatened abortion" aoffset="3199" alength="19" ext_length="0">
+				<subanchor sarel="0" saname="threatened abortion" saoffset="3199" salength="19" rank="79">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="流産">471802</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="abortion" saoffset="3210" salength="8" rank="44">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="妊娠中絶">60119</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="人工妊娠中絶">194430</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="wall" aoffset="3270" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="wall" saoffset="3270" salength="4" rank="122">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="壁">157056</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="muscle" aoffset="3316" alength="6" ext_length="7">
+				<subanchor sarel="0" saname="muscle" saoffset="3316" salength="6" rank="97">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="筋肉">75801</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="muscle strain" saoffset="3316" salength="13" rank="115">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="筋肉">75801</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="肉離れ">985040</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="strain" saoffset="3323" salength="6" rank="172">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ひずみ">46509</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="trauma" aoffset="3333" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="trauma" saoffset="3333" salength="6" rank="101">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="外傷">498010</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="muscular" aoffset="3381" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="muscular" saoffset="3381" salength="8" rank="125">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="筋肉">75801</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="infection" aoffset="3390" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="infection" saoffset="3390" salength="9" rank="58">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="感染">179924</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="neurogenic" aoffset="3441" alength="10" ext_length="5">
+				<subanchor sarel="0" saname="neurogenic" saoffset="3441" salength="10" rank="118">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="神経">26047</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="neurogenic pain" saoffset="3441" salength="15" rank="55">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="神経">26047</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="疼痛">796873</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="herpes" aoffset="3458" alength="6" ext_length="7">
+				<subanchor sarel="0" saname="herpes" saoffset="3458" salength="6" rank="106">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヘルペス">390712</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="herpes zoster" saoffset="3458" salength="13" rank="31">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="帯状疱疹">389447</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="zoster" saoffset="3465" salength="6" rank="150">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="帯状疱疹">389447</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="radiculitis" aoffset="3473" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="radiculitis" saoffset="3473" salength="11" rank="136">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="神経">26047</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Lyme" aoffset="3488" alength="4" ext_length="8">
+				<subanchor sarel="0" saname="Lyme" saoffset="3488" salength="4" rank="96">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ライム">130307</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Lyme disease" saoffset="3488" salength="12" rank="0">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ライム病">358929</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="abdominal cutaneous nerve entrapment syndrome" aoffset="3502" alength="45" ext_length="0">
+				<subanchor sarel="0" saname="abdominal cutaneous nerve entrapment syndrome" saoffset="3502" salength="45" rank="88">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="腹">579766</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="cutaneous" saoffset="3512" salength="9" rank="109">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="皮膚">28424</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="cutaneous nerve" saoffset="3512" salength="15" rank="194">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="皮">194635</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="nerve" saoffset="3522" salength="5" rank="92">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="神経">26047</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="tabes dorsalis" aoffset="3557" alength="14" ext_length="0">
+				<subanchor sarel="0" saname="tabes dorsalis" saoffset="3557" salength="14" rank="11">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="脊髄">25869</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Referred pain" aoffset="3613" alength="13" ext_length="0">
+				<subanchor sarel="0" saname="Referred pain" saoffset="3613" salength="13" rank="39">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="関連痛">592548</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="thorax" aoffset="3677" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="thorax" saoffset="3677" salength="6" rank="94">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="胸">202531</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="pneumonia" aoffset="3685" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="pneumonia" saoffset="3685" salength="9" rank="21">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="肺炎">14114</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="pulmonary" aoffset="3696" alength="9" ext_length="9">
+				<subanchor sarel="0" saname="pulmonary" saoffset="3696" salength="9" rank="165">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="肺">47270</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="pulmonary embolism" saoffset="3696" salength="18" rank="27">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="肺">47270</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="ischemic" aoffset="3716" alength="8" ext_length="14">
+				<subanchor sarel="0" saname="ischemic" saoffset="3716" salength="8" rank="113">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="虚 (BLEACH)">1915481</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="ischemic heart disease" saoffset="3716" salength="22" rank="73">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="心筋梗塞">75887</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="虚血性心疾患">14630</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="heart" saoffset="3725" salength="5" rank="113">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="心臓">40009</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="heart disease" saoffset="3725" salength="13" rank="63">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="心臓病">383764</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="pericarditis" aoffset="3740" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="pericarditis" saoffset="3740" salength="12" rank="8">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="心">48092</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the spine" aoffset="3799" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="the spine" saoffset="3799" salength="9" rank="153">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="脊椎">69747</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="spine" saoffset="3803" salength="5" rank="104">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="脊椎">69747</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="genitals" aoffset="3872" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="genitals" saoffset="3872" salength="8" rank="105">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="性器">15455</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="testicular" aoffset="3882" alength="10" ext_length="8">
+				<subanchor sarel="0" saname="testicular" saoffset="3882" salength="10" rank="188">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="精巣">46256</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="testicular torsion" saoffset="3882" salength="18" rank="37">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="精巣">46256</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Metabolic" aoffset="3942" alength="9" ext_length="12">
+				<subanchor sarel="0" saname="Metabolic" saoffset="3942" salength="9" rank="121">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="代謝">301543</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Metabolic disturbance" saoffset="3942" salength="21" rank="181">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="代謝">301543</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="uremia" aoffset="4005" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="uremia" saoffset="4005" salength="6" rank="18">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="尿毒症">1342827</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="diabetic" aoffset="4013" alength="8" ext_length="13">
+				<subanchor sarel="0" saname="diabetic" saoffset="4013" salength="8" rank="184">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="糖尿病">29596</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="diabetic ketoacidosis" saoffset="4013" salength="21" rank="13">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="糖尿病性ケトアシドーシス">55857</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="porphyria" aoffset="4036" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="porphyria" saoffset="4036" salength="9" rank="43">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ポルフィリン">56360</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ポルフィリン症">1028757</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="C1" aoffset="4047" alength="2" ext_length="0">
+				<subanchor sarel="0" saname="C1" saoffset="4047" salength="2" rank="76">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="主将">197146</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="C1">45390</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="esterase" aoffset="4050" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="esterase" saoffset="4050" salength="8" rank="84">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="加水分解酵素">1096997</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="inhibitor" aoffset="4059" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="inhibitor" saoffset="4059" salength="9" rank="110">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="酵素阻害剤">1516031</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="adrenal insufficiency" aoffset="4081" alength="21" ext_length="0">
+				<subanchor sarel="0" saname="adrenal insufficiency" saoffset="4081" salength="21" rank="40">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="副腎">63230</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="慢性原発性副腎皮質機能低下症">474024</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="副腎皮質ホルモン">474042</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="insufficiency" saoffset="4089" salength="13" rank="196">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="機能主義">81602</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="lead" aoffset="4104" alength="4" ext_length="10">
+				<subanchor sarel="0" saname="lead" saoffset="4104" salength="4" rank="140">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Lead">107263</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="鉛">7993</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="lead poisoning" saoffset="4104" salength="14" rank="37">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="鉛中毒">1037333</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="poisoning" saoffset="4109" salength="9" rank="170">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="中毒">154678</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="black" aoffset="4120" alength="5" ext_length="18">
+				<subanchor sarel="0" saname="black" saoffset="4120" salength="5" rank="90">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="黒">57504</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="black widow" saoffset="4120" salength="11" rank="6">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ブラックウィドウ">1118464</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="P-61 (航空機)">150408</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="black widow spider" saoffset="4120" salength="18" rank="46">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="タランチュラ">168391</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="セアカゴケグモ">17657</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="widow" saoffset="4126" salength="5" rank="116">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="寡婦">223761</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="widow spider" saoffset="4126" salength="12" rank="138">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="セアカゴケグモ">17657</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="spider" saoffset="4132" salength="6" rank="64">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="クモ">72669</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="spider bite" saoffset="4132" salength="11" rank="83">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="クモ">72669</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="bite" saoffset="4139" salength="4" rank="136">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="動物咬傷">831791</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="narcotic" aoffset="4145" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="narcotic" saoffset="4145" salength="8" rank="81">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="麻薬">17068</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="withdrawal" aoffset="4154" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="withdrawal" saoffset="4154" salength="10" rank="120">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="撤退">706062</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="小斎">70434</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Blood" aoffset="4206" alength="5" ext_length="8">
+				<subanchor sarel="0" saname="Blood" saoffset="4206" salength="5" rank="14">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="血液">40011</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="BLOOD THE LAST VAMPIRE">1735679</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ブラッド">719593</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Blood vessels" saoffset="4206" salength="13" rank="8">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="血管">46906</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="vessels" saoffset="4212" salength="7" rank="190">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="船">59532</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="aortic" aoffset="4261" alength="6" ext_length="11">
+				<subanchor sarel="0" saname="aortic" saoffset="4261" salength="6" rank="166">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="大動脈">124728</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="aortic dissection" saoffset="4261" salength="17" rank="1">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="大動脈解離">170281</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="dissection" saoffset="4268" salength="10" rank="68">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="解剖">67757</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="abdominal aortic aneurysm" aoffset="4280" alength="25" ext_length="0">
+				<subanchor sarel="0" saname="abdominal aortic aneurysm" saoffset="4280" salength="25" rank="49">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="大動脈瘤">1973983</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="腹">579766</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="aortic aneurysm" saoffset="4290" salength="15" rank="39">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="大動脈">124728</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="大動脈瘤">1973983</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="aneurysm" saoffset="4297" salength="8" rank="61">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="動脈瘤">1630062</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Immune" aoffset="4347" alength="6" ext_length="7">
+				<subanchor sarel="0" saname="Immune" saoffset="4347" salength="6" rank="158">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="免疫">1548733</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Immune system" saoffset="4347" salength="13" rank="60">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="免疫 (旧版)">5785</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="免疫系">446774</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="免疫">1548733</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="sarcoidosis" aoffset="4402" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="sarcoidosis" saoffset="4402" salength="11" rank="35">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="サルコイドーシス">584265</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="vasculitis" aoffset="4455" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="vasculitis" saoffset="4455" salength="10" rank="38">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="血管炎">647734</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="familial" aoffset="4507" alength="8" ext_length="20">
+				<subanchor sarel="0" saname="familial" saoffset="4507" salength="8" rank="230">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="家族">104482</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="familial Mediterranean fever" saoffset="4507" salength="28" rank="41">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="FMF">58305</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="家族">104482</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Mediterranean" saoffset="4516" salength="13" rank="74">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="地中海">13370</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="irritable bowel syndrome" aoffset="4629" alength="24" ext_length="0">
+				<subanchor sarel="0" saname="irritable bowel syndrome" saoffset="4629" salength="24" rank="19">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="過敏性腸症候群">372098</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="population" aoffset="4682" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="population" saoffset="4682" salength="10" rank="123">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="個体群">33116</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="人口">5936</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="IBS" aoffset="4694" alength="3" ext_length="0">
+				<subanchor sarel="0" saname="IBS" saoffset="4694" salength="3" rank="54">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Integrated Broadcast Service">1659838</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="IBS">152589</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="common cause" aoffset="4710" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="common cause" saoffset="4710" salength="12" rank="238">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="一般">1944102</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Acute" aoffset="4799" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="Acute" saoffset="4799" salength="5" rank="15">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="急性疾患">954345</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Acute abdomen" aoffset="4830" alength="13" ext_length="0">
+				<subanchor sarel="0" saname="Acute abdomen" saoffset="4830" salength="13" rank="9">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="急性腹症">877111</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="surgical" aoffset="4938" alength="8" ext_length="13">
+				<subanchor sarel="0" saname="surgical" saoffset="4938" salength="8" rank="211">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="手術">112993</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="surgical intervention" saoffset="4938" salength="21" rank="126">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="外科学">266571</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="The pain" aoffset="4980" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="The pain" saoffset="4980" salength="8" rank="243">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="痛み">511131</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="nausea" aoffset="5023" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="nausea" saoffset="5023" salength="6" rank="64">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="吐き気">507863</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="vomiting" aoffset="5034" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="vomiting" saoffset="5034" salength="8" rank="57">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="嘔吐">84542</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="distention" aoffset="5054" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="distention" saoffset="5054" salength="10" rank="175">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="膨張">1705954</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="fever" aoffset="5066" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="fever" saoffset="5066" salength="5" rank="88">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="発熱">232241</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="shock" aoffset="5085" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="shock" saoffset="5085" salength="5" rank="120">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="SHOCK">902214</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ショック">28572</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="One" aoffset="5092" alength="3" ext_length="0">
+				<subanchor sarel="0" saname="One" saoffset="5092" salength="3" rank="22">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="One (嵐のアルバム)">1052227</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ONE (BONNIE PINKのアルバム)">1775052</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ONE 〜輝く季節へ〜">74420</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ONE (アンジェラ・アキのアルバム)">585049</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ONE (鈴木亜美の曲)">1472668</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="acute" aoffset="5142" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="acute" saoffset="5142" salength="5" rank="216">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="急性疾患">954345</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="acute appendicitis" aoffset="5166" alength="18" ext_length="0">
+				<subanchor sarel="0" saname="acute appendicitis" saoffset="5166" salength="18" rank="174">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="急性疾患">954345</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="condition" aoffset="5188" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="condition" saoffset="5188" salength="9" rank="151">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="条件">119305</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="mucus" aoffset="5204" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="mucus" saoffset="5204" salength="5" rank="63">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="鼻水">488720</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="粘液">651094</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="fecal" aoffset="5213" alength="5" ext_length="7">
+				<subanchor sarel="0" saname="fecal" saoffset="5213" salength="5" rank="239">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="糞">379040</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="fecal matter" saoffset="5213" salength="12" rank="89">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="糞">379040</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="matter" saoffset="5219" salength="6" rank="135">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="物質">4590</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="blocks" aoffset="5258" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="blocks" saoffset="5258" salength="6" rank="179">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ブロック">3162</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the opening" aoffset="5265" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="the opening" saoffset="5265" salength="11" rank="245">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="オープニング">922022</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="opening" saoffset="5269" salength="7" rank="217">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="オープニング">922022</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Selected" aoffset="5290" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="Selected" saoffset="5290" salength="8" rank="239">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="選択">835506</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="acute abdomen" aoffset="5309" alength="13" ext_length="0">
+				<subanchor sarel="0" saname="acute abdomen" saoffset="5309" salength="13" rank="29">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="急性腹症">877111</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="perforating" aoffset="5397" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="perforating" saoffset="5397" salength="11" rank="112">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="切手">27802</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the stomach" aoffset="5419" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="the stomach" saoffset="5419" salength="11" rank="238">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="胃">24373</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="stomach" saoffset="5423" salength="7" rank="80">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="胃">24373</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="bowel" aoffset="5432" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="bowel" saoffset="5432" salength="5" rank="92">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="腸">165379</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="spleen" aoffset="5439" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="spleen" saoffset="5439" salength="6" rank="74">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="脾臓">24835</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Infections" aoffset="5562" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="Infections" saoffset="5562" salength="10" rank="197">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="感染症">43532</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="mesenteric adenitis" aoffset="5680" alength="19" ext_length="0">
+				<subanchor sarel="0" saname="mesenteric adenitis" saoffset="5680" salength="19" rank="70">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="腸">165379</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="adenitis" saoffset="5691" salength="8" rank="133">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="腺">687948</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="abscess" aoffset="5723" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="abscess" saoffset="5723" salength="7" rank="50">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="膿瘍">366502</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Perforation" aoffset="5773" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="Perforation" saoffset="5773" salength="11" rank="212">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ミシン">135512</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="caecum" aoffset="5827" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="caecum" saoffset="5827" salength="6" rank="51">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="盲腸">276285</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Complications" aoffset="5876" alength="13" ext_length="0">
+				<subanchor sarel="0" saname="Complications" saoffset="5876" salength="13" rank="189">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="合併症">376072</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="inflammatory bowel disease" aoffset="5893" alength="26" ext_length="0">
+				<subanchor sarel="0" saname="inflammatory bowel disease" saoffset="5893" salength="26" rank="84">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="炎症性腸疾患">808215</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="炎症">239576</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Small bowel" aoffset="6061" alength="11" ext_length="12">
+				<subanchor sarel="0" saname="Small bowel" saoffset="6061" salength="11" rank="58">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="小腸">24285</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Small bowel obstruction" saoffset="6061" salength="23" rank="72">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="小腸">24285</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="イレウス">433798</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="bowel obstruction" saoffset="6067" salength="17" rank="13">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="イレウス">433798</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="obstruction" saoffset="6073" salength="11" rank="147">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="閉塞">54202</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="caused" aoffset="6108" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="caused" saoffset="6108" salength="6" rank="247">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="原因">17284</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="surgeries" aoffset="6127" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="surgeries" saoffset="6127" salength="9" rank="205">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="手術">112993</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="hernias" aoffset="6155" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="hernias" saoffset="6155" salength="7" rank="210">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヘルニア">78562</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="malignant" aoffset="6174" alength="9" ext_length="10">
+				<subanchor sarel="0" saname="malignant" saoffset="6174" salength="9" rank="82">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="悪性 (医学)">811799</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="malignant neoplasms" saoffset="6174" salength="19" rank="213">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="悪性 (医学)">811799</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="neoplasms" saoffset="6184" salength="9" rank="141">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="腫瘍">144940</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Large bowel" aoffset="6235" alength="11" ext_length="12">
+				<subanchor sarel="0" saname="Large bowel" saoffset="6235" salength="11" rank="55">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="大腸">35800</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Large bowel obstruction" saoffset="6235" salength="23" rank="123">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="大">667854</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="colorectal cancer" aoffset="6269" alength="17" ext_length="0">
+				<subanchor sarel="0" saname="colorectal cancer" saoffset="6269" salength="17" rank="65">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="大腸癌">152153</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="大腸">35800</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="fecal impaction" aoffset="6326" alength="15" ext_length="0">
+				<subanchor sarel="0" saname="fecal impaction" saoffset="6326" salength="15" rank="48">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="宿便">175766</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="occlusive" aoffset="6404" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="occlusive" saoffset="6404" salength="9" rank="98">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="破裂音">227592</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="閉塞">54202</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="intestinal" aoffset="6414" alength="10" ext_length="9">
+				<subanchor sarel="0" saname="intestinal" saoffset="6414" salength="10" rank="164">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="腸">165379</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="intestinal ischemia" saoffset="6414" salength="19" rank="110">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="腸">165379</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="ischemia" saoffset="6425" salength="8" rank="50">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="虚血">1063918</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="thromboembolism" aoffset="6453" alength="15" ext_length="0">
+				<subanchor sarel="0" saname="thromboembolism" saoffset="6453" salength="15" rank="140">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="血栓">163759</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="superior mesenteric artery" aoffset="6476" alength="26" ext_length="0">
+				<subanchor sarel="0" saname="superior mesenteric artery" saoffset="6476" salength="26" rank="45">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="上腸間膜動脈">1901426</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="RAP" aoffset="6632" alength="3" ext_length="0">
+				<subanchor sarel="0" saname="RAP" saoffset="6632" salength="3" rank="75">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ラップ (曖昧さ回避)">401061</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ラップ">22242</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="old" aoffset="6676" alength="3" ext_length="0">
+				<subanchor sarel="0" saname="old" saoffset="6676" salength="3" rank="143">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="オールド">380297</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="サントリーオールド">389997</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="high" aoffset="6722" alength="4" ext_length="7">
+				<subanchor sarel="0" saname="high" saoffset="6722" salength="4" rank="230">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="高">1816772</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="high school" saoffset="6722" salength="11" rank="73">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="高等学校">1755094</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ハイスクール・ミュージカル ザ・ムービー">1588254</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="school" saoffset="6727" salength="6" rank="126">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="学校">1420036</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="weekly" aoffset="6755" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="weekly" saoffset="6755" salength="6" rank="213">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="週">9277</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="middle school" aoffset="6867" alength="13" ext_length="0">
+				<subanchor sarel="0" saname="middle school" saoffset="6867" salength="13" rank="97">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="中学校">4753</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="fit" aoffset="6890" alength="3" ext_length="0">
+				<subanchor sarel="0" saname="fit" saoffset="6890" salength="3" rank="138">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Wii Fit">1290383</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="FIT">126126</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="adult" aoffset="6911" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="adult" saoffset="6911" salength="5" rank="132">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="大人">15080</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="As" aoffset="6922" alength="2" ext_length="0">
+				<subanchor sarel="0" saname="As" saoffset="6922" salength="2" rank="28">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アス (青銅貨)">2028024</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="diagnose" aoffset="6949" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="diagnose" saoffset="6949" salength="8" rank="118">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="診断">803571</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="chronic medical" aoffset="6958" alength="15" ext_length="0">
+				<subanchor sarel="0" saname="chronic medical" saoffset="6958" salength="15" rank="124">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="持病">472510</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="medical" saoffset="6966" salength="7" rank="162">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="医療">8903</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="problems" aoffset="6974" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="problems" saoffset="6974" salength="8" rank="244">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="問題">698668</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="patients" aoffset="6984" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="patients" saoffset="6984" salength="8" rank="227">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="患者">12750</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="account" aoffset="7002" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="account" saoffset="7002" salength="7" rank="220">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アカウント">491025</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="number" aoffset="7027" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="number" saoffset="7027" salength="6" rank="148">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="数">4647</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="office" aoffset="7037" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="office" saoffset="7037" salength="6" rank="139">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="オフィス (曖昧さ回避)">653701</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="オフィス">16117</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="resources" aoffset="7063" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="resources" saoffset="7063" salength="9" rank="192">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="リソース">1053269</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="proportion" aoffset="7076" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="proportion" saoffset="7076" salength="10" rank="209">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="割合">597452</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="numbers" aoffset="7103" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="numbers" saoffset="7103" salength="7" rank="142">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ナンバーズ">105771</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Numbers (ソフトウェア)">1108077</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="manage" aoffset="7179" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="manage" saoffset="7179" salength="6" rank="233">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="管理">1735381</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="anxiety" aoffset="7186" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="anxiety" saoffset="7186" salength="7" rank="86">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="不安">436313</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="stress" aoffset="7198" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="stress" saoffset="7198" salength="6" rank="108">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ストレス">1752</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ストレス (生体)">588311</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="episodes" aoffset="7243" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="episodes" saoffset="7243" salength="8" rank="140">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="エピソード">270351</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Diagnostic" aoffset="7283" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="Diagnostic" saoffset="7283" salength="10" rank="171">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="診断">803571</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="physician" aoffset="7320" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="physician" saoffset="7320" salength="9" rank="100">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="医師">23675</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="patient" aoffset="7341" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="patient" saoffset="7341" salength="7" rank="119">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="患者">12750</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="determine" aoffset="7352" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="determine" saoffset="7352" salength="9" rank="231">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="決定">411408</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="etiology" aoffset="7366" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="etiology" saoffset="7366" salength="8" rank="77">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="病因学">1934658</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="原因療法">1487208</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="treatment" aoffset="7390" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="treatment" saoffset="7390" salength="9" rank="199">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="治療">492151</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="history" aoffset="7432" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="history" saoffset="7432" salength="7" rank="102">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="歴史">1899</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="presenting complaint" aoffset="7447" alength="20" ext_length="0">
+				<subanchor sarel="0" saname="presenting complaint" saoffset="7447" salength="20" rank="249">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="クレーム">264081</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="complaint" saoffset="7458" salength="9" rank="134">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="クレーム">264081</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="physical examination" aoffset="7472" alength="20" ext_length="0">
+				<subanchor sarel="0" saname="physical examination" saoffset="7472" salength="20" rank="66">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="診察">168208</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="examination" saoffset="7481" salength="11" rank="133">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="試験">26322</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="It" aoffset="7550" alength="2" ext_length="0">
+				<subanchor sarel="0" saname="It" saoffset="7550" salength="2" rank="25">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="IT (映画)">1208839</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="IT">68520</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="remember" aoffset="7590" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="remember" saoffset="7590" salength="8" rank="145">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="I remember you">658451</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Remember">1416985</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="abdomen" aoffset="7657" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="abdomen" saoffset="7657" salength="7" rank="82">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="腹">579766</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="heart attacks" aoffset="7677" alength="13" ext_length="0">
+				<subanchor sarel="0" saname="heart attacks" saoffset="7677" salength="13" rank="42">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="心臓発作">32913</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="心筋梗塞">75887</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="attacks" saoffset="7683" salength="7" rank="232">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="攻撃">1142963</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="present" aoffset="7729" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="present" saoffset="7729" salength="7" rank="150">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="現在">538568</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="aid" aoffset="7791" alength="3" ext_length="0">
+				<subanchor sarel="0" saname="aid" saoffset="7791" salength="3" rank="144">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Little Aid">776698</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="AID">437624</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="外国援助">1582204</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Blood tests" aoffset="7853" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="Blood tests" saoffset="7853" salength="11" rank="69">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="血液検査">69873</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="tests" saoffset="7859" salength="5" rank="174">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="テスト">234879</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="full" aoffset="7875" alength="4" ext_length="12">
+				<subanchor sarel="0" saname="full" saoffset="7875" salength="4" rank="234">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="全">1337103</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="full blood count" saoffset="7875" salength="16" rank="45">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="NP完全問題">10595</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="count" saoffset="7886" salength="5" rank="124">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="伯爵">15839</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="electrolytes" aoffset="7893" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="electrolytes" saoffset="7893" salength="12" rank="90">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="電解液">237692</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="電解質">124705</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="urea" aoffset="7907" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="urea" saoffset="7907" salength="4" rank="67">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="尿素">62464</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="creatinine" aoffset="7913" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="creatinine" saoffset="7913" salength="10" rank="61">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="クレアチニン">1502567</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="糸球体濾過量">1417289</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="liver function" aoffset="7925" alength="14" ext_length="6">
+				<subanchor sarel="0" saname="liver function" saoffset="7925" salength="14" rank="248">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="肝">64881</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="liver function tests" saoffset="7925" salength="20" rank="71">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="肝">64881</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="function" saoffset="7931" salength="8" rank="128">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="関数">7886</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="関数 (数学)">144107</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="pregnancy test" aoffset="7947" alength="14" ext_length="0">
+				<subanchor sarel="0" saname="pregnancy test" saoffset="7947" salength="14" rank="93">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="妊娠">94719</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="妊娠検査薬">1640936</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="test" saoffset="7957" salength="4" rank="121">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アンドリュー・マーチン">441368</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="テスト">234879</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="lipase" aoffset="7966" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="lipase" saoffset="7966" salength="6" rank="52">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="リパーゼ">251577</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Urinalysis" aoffset="8015" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="Urinalysis" saoffset="8015" salength="10" rank="44">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="尿検査">1055498</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="尿">46899</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Imaging" aoffset="8067" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="Imaging" saoffset="8067" salength="7" rank="168">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="イメージング">816097</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="chest" aoffset="8091" alength="5" ext_length="6">
+				<subanchor sarel="0" saname="chest" saoffset="8091" salength="5" rank="109">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="胸">202531</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="chest X-ray" saoffset="8091" salength="11" rank="65">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="胸部X線">1591318</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="X-ray" saoffset="8097" salength="5" rank="70">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="X線">8534</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="plain" aoffset="8107" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="plain" saoffset="8107" salength="5" rank="118">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="平野">2789</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="films" aoffset="8113" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="films" saoffset="8113" salength="5" rank="191">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="フィルム">744220</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="electrocardiograph" aoffset="8178" alength="18" ext_length="0">
+				<subanchor sarel="0" saname="electrocardiograph" saoffset="8178" salength="18" rank="56">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="心電図">82579</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="heart attack" aoffset="8211" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="heart attack" saoffset="8211" salength="12" rank="119">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="心臓">40009</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="attack" saoffset="8217" salength="6" rank="146">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="攻撃">1142963</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="If" aoffset="8299" alength="2" ext_length="0">
+				<subanchor sarel="0" saname="If" saoffset="8299" salength="2" rank="26">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="IF">143841</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="イフ (雑誌)">1893575</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="イフ (ブレッドの曲)">1860960</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="basic" aoffset="8359" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="basic" saoffset="8359" salength="5" rank="123">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="BASIC">1487</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ベーシック">699122</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="investigations" aoffset="8365" alength="14" ext_length="0">
+				<subanchor sarel="0" saname="investigations" saoffset="8365" salength="14" rank="228">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="調査">478150</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Computed Tomography" aoffset="8516" alength="19" ext_length="0">
+				<subanchor sarel="0" saname="Computed Tomography" saoffset="8516" salength="19" rank="83">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="コンピュータ">1679</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="コンピュータ断層撮影">63613</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Tomography" saoffset="8525" salength="10" rank="105">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="トモグラフィー">1384741</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="pelvis" aoffset="8551" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="pelvis" saoffset="8551" salength="6" rank="42">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="骨盤">650972</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="pelvic ultrasound" aoffset="8612" alength="17" ext_length="0">
+				<subanchor sarel="0" saname="pelvic ultrasound" saoffset="8612" salength="17" rank="2">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="骨盤">650972</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="超音波検査">124747</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="ultrasound" saoffset="8619" salength="10" rank="48">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="超音波">28037</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Endoscopy" aoffset="8671" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="Endoscopy" saoffset="8671" salength="9" rank="99">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="内視鏡検査 (前立腺肥大症)">90481</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="内視鏡">380772</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="colonoscopy" aoffset="8685" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="colonoscopy" saoffset="8685" salength="11" rank="54">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="大腸内視鏡">1318893</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="大腸">35800</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="used" aoffset="8702" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="used" saoffset="8702" salength="4" rank="249">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="使用">1520958</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="diagnosing" aoffset="8711" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="diagnosing" saoffset="8711" salength="10" rank="235">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="診断">803571</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="acute pain" aoffset="8722" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="acute pain" saoffset="8722" salength="10" rank="197">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="急性疾患">954345</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="See" aoffset="8774" alength="3" ext_length="0">
+				<subanchor sarel="0" saname="See" saoffset="8774" salength="3" rank="20">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="シー">1300327</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Abdominal examination" aoffset="8833" alength="21" ext_length="0">
+				<subanchor sarel="0" saname="Abdominal examination" saoffset="8833" salength="21" rank="64">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="腹">579766</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="References" aoffset="8895" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="References" saoffset="8895" salength="10" rank="241">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="参考文献">47665</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="pains" aoffset="8997" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="pains" saoffset="8997" salength="5" rank="242">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="痛み">511131</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="A" aoffset="9004" alength="1" ext_length="0">
+				<subanchor sarel="0" saname="A" saoffset="9004" salength="1" rank="29">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="A (シングル)">467526</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="A">13618</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="イ (音名)">689883</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="А">62862</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="あ">1182606</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="field" aoffset="9006" alength="5" ext_length="7">
+				<subanchor sarel="0" saname="field" saoffset="9006" salength="5" rank="129">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="フィールド">273692</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="field survey" saoffset="9006" salength="12" rank="106">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="一般調査">613520</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="survey" saoffset="9012" salength="6" rank="195">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="調査">478150</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Arch" aoffset="9049" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="Arch" saoffset="9049" salength="4" rank="119">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アーチ">100612</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Dis" aoffset="9054" alength="3" ext_length="0">
+				<subanchor sarel="0" saname="Dis" saoffset="9054" salength="3" rank="131">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="DIS">817739</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Child" aoffset="9058" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="Child" saoffset="9058" salength="5" rank="141">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="子供">7281</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Chronic" aoffset="9222" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="Chronic" saoffset="9222" salength="7" rank="8">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="持病">472510</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Pelvic Pain" aoffset="9230" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="Pelvic Pain" saoffset="9230" salength="11" rank="223">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="骨盤">650972</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Pain" saoffset="9237" salength="4" rank="16">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="痛み">511131</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="疼痛">796873</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Female" aoffset="9274" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="Female" saoffset="9274" salength="6" rank="130">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="メス (動物)">231471</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Adolescents" aoffset="9281" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="Adolescents" saoffset="9281" salength="11" rank="103">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="青年">295278</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Boyle" aoffset="9345" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="Boyle" saoffset="9345" salength="5" rank="89">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ボイル">33440</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="JT" aoffset="9351" alength="2" ext_length="0">
+				<subanchor sarel="0" saname="JT" saoffset="9351" salength="2" rank="99">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="JT硬式野球部">165359</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="JT">49789</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Biopsychosocial" aoffset="9372" alength="15" ext_length="0">
+				<subanchor sarel="0" saname="Biopsychosocial" saoffset="9372" salength="15" rank="207">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="生物">42</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="issues" aoffset="9388" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="issues" saoffset="9388" salength="6" rank="211">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="問題">698668</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Ann" aoffset="9437" alength="3" ext_length="0">
+				<subanchor sarel="0" saname="Ann" saoffset="9437" salength="3" rank="125">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ANN">447866</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ジェリー・モス">1630217</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="http" aoffset="9632" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="http" saoffset="9632" salength="4" rank="149">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Hypertext Editing System">773413</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Hypertext Transfer Protocol">1444</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Stomach" aoffset="9733" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="Stomach" saoffset="9733" salength="7" rank="7">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="胃宿">68496</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="胃">24373</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Gastroenterologist" aoffset="9794" alength="18" ext_length="0">
+				<subanchor sarel="0" saname="Gastroenterologist" saoffset="9794" salength="18" rank="103">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="消化器">44262</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="消化器学">203230</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="ER" aoffset="9825" alength="2" ext_length="0">
+				<subanchor sarel="0" saname="ER" saoffset="9825" salength="2" rank="103">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ER緊急救命室">31703</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ER">97519</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="クタマク">960359</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="doctor" aoffset="9828" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="doctor" saoffset="9828" salength="6" rank="108">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ドクター">180117</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="医学">174</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="day" aoffset="9864" alength="3" ext_length="0">
+				<subanchor sarel="0" saname="day" saoffset="9864" salength="3" rank="137">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="日">18330</tobep>
+				</subanchor>
+			</anchor>
+		</outgoinglinks>
+	</topic>
+</crosslink-assessment>

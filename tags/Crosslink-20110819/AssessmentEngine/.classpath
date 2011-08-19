@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/xml2txt"/>
+	<classpathentry kind="lib" path="/CrosslinkValidation/lib/vtd-xml.jar"/>
+	<classpathentry kind="lib" path="/CrosslinkValidation/lib/jdom.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/CrosslinkValidation/lib/appframework-1.0.3.jar"/>
+	<classpathentry kind="lib" path="/CrosslinkValidation/lib/xercesImpl.jar"/>
+	<classpathentry kind="lib" path="/CrosslinkValidation/lib/xml-apis.jar"/>
+	<classpathentry kind="lib" path="/CrosslinkAssessment-C2E/lib/appframework-1.0.3.jar"/>
+	<classpathentry kind="lib" path="/CrosslinkAssessment-C2E/lib/vtd-xml.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/ZHConverter"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

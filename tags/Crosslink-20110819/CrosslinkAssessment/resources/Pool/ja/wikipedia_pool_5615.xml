@@ -1,0 +1,2687 @@
+<crosslink-assessment participant-id="2273087" run-id="2273087_A2B" task="A2B" default_lang="ja" source_lang="en">
+	<collection>Chinese Wikipedia 2010 Collection</collection>
+	<collection>Japanese Wikipedia 2010 Collection</collection>
+	<collection>Korean Wikipedia 2010 Collection</collection>
+	<topic file="5615" name="Cretaceous">
+		<outgoinglinks>
+			<anchor arel="0" aname="Mesozoic" aoffset="521" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="Mesozoic" saoffset="521" salength="8" rank="59">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="中生代">69897</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Latin" aoffset="599" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="Latin" saoffset="599" salength="5" rank="148">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ラテン語">6932</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ラテン">549564</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="K" aoffset="642" alength="1" ext_length="0">
+				<subanchor sarel="0" saname="K" saoffset="642" salength="1" rank="122">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="K">16752</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="K (歌手)">214947</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="German" aoffset="656" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="German" saoffset="656" salength="6" rank="95">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ゲルマン">135350</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="translation" aoffset="663" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="translation" saoffset="663" salength="11" rank="215">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="英語">3377</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="翻訳 (生物学)">82348</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="翻訳">6194</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="chalk" aoffset="692" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="chalk" saoffset="692" salength="5" rank="110">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="チョーク (岩石)">398475</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="チョーク">21769</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="geologic period and system" aoffset="705" alength="26" ext_length="0">
+				<subanchor sarel="0" saname="geologic period and system" saoffset="705" salength="26" rank="16">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="地球">491051</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="circa" aoffset="737" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="circa" saoffset="737" salength="5" rank="212">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Circa">1928395</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Ma" aoffset="767" alength="2" ext_length="0">
+				<subanchor sarel="0" saname="Ma" saoffset="767" salength="2" rank="117">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="年">3629</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Ji ma ma">757760</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="MA">76875</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="geologic timescale" aoffset="783" alength="18" ext_length="0">
+				<subanchor sarel="0" saname="geologic timescale" saoffset="783" salength="18" rank="46">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="地質">1010459</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Jurassic" aoffset="833" alength="8" ext_length="7">
+				<subanchor sarel="0" saname="Jurassic" saoffset="833" salength="8" rank="94">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ジュラ紀">35475</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Jurassic Period" saoffset="833" salength="15" rank="11">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ジュラ紀">35475</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Period" saoffset="842" salength="6" rank="68">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="元素の周期">27832</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ピリオド">97877</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Paleogene" aoffset="872" alength="9" ext_length="7">
+				<subanchor sarel="0" saname="Paleogene" saoffset="872" salength="9" rank="49">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="古第三紀">1849110</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Paleogene Period" saoffset="872" salength="16" rank="38">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="古第三紀">1849110</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Cenozoic" aoffset="896" alength="8" ext_length="4">
+				<subanchor sarel="0" saname="Cenozoic" saoffset="896" salength="8" rank="68">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="新生代">93653</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Cenozoic Era" saoffset="896" salength="12" rank="59">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="新生代">93653</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Era" saoffset="905" salength="3" rank="190">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ERa (バンド)">1972818</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ERA">71434</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="It" aoffset="910" alength="2" ext_length="0">
+				<subanchor sarel="0" saname="It" saoffset="910" salength="2" rank="118">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="IT (映画)">1208839</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="IT">68520</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Mesozoic Era" aoffset="943" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="Mesozoic Era" saoffset="943" salength="12" rank="57">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="中生代">69897</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="long" aoffset="981" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="long" saoffset="981" salength="4" rank="240">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ロング">772520</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ロング アゴー">373227</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Phanerozoic" aoffset="1013" alength="11" ext_length="4">
+				<subanchor sarel="0" saname="Phanerozoic" saoffset="1013" salength="11" rank="58">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="顕生代">464950</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Phanerozoic Eon" saoffset="1013" salength="15" rank="86">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="顕本寺 (堺市)">328294</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Eon" saoffset="1025" salength="3" rank="152">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="累代">995275</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="end of the Cretaceous" aoffset="1034" alength="21" ext_length="0">
+				<subanchor sarel="0" saname="end of the Cretaceous" saoffset="1034" salength="21" rank="33">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="K-T境界">324568</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="climate" aoffset="1230" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="climate" saoffset="1230" salength="7" rank="174">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="気候">19221</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="eustatic sea level" aoffset="1247" alength="18" ext_length="0">
+				<subanchor sarel="0" saname="eustatic sea level" saoffset="1247" salength="18" rank="68">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="海面">126338</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="sea" saoffset="1256" salength="3" rank="212">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="海">2237</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="SEA">152037</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="sea level" saoffset="1256" salength="9" rank="138">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="海面">126338</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="oceans" aoffset="1271" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="oceans" saoffset="1271" salength="6" rank="206">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="大洋">2162</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="extinct" aoffset="1311" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="extinct" saoffset="1311" salength="7" rank="63">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="絶滅">62014</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="marine" aoffset="1319" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="marine" saoffset="1319" salength="6" rank="135">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="マリン">639068</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Marin.">894422</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="reptiles" aoffset="1326" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="reptiles" saoffset="1326" salength="8" rank="76">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="爬虫類">12246</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="ammonites" aoffset="1336" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="ammonites" saoffset="1336" salength="9" rank="1">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アンモナイト">69893</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="dinosaurs" aoffset="1375" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="dinosaurs" saoffset="1375" salength="9" rank="43">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="恐竜">1417402</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="At" aoffset="1386" alength="2" ext_length="0">
+				<subanchor sarel="0" saname="At" saoffset="1386" salength="2" rank="119">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="At (UNIX)">1523028</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="time" aoffset="1398" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="time" saoffset="1398" salength="4" rank="247">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="時間">3974</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="mammals" aoffset="1418" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="mammals" saoffset="1418" salength="7" rank="142">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="哺乳類">2885</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="birds" aoffset="1430" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="birds" saoffset="1430" salength="5" rank="185">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="鳥類">19589</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="flowering plants" aoffset="1447" alength="16" ext_length="0">
+				<subanchor sarel="0" saname="flowering plants" saoffset="1447" salength="16" rank="89">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="被子植物">35208</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="largest mass extinctions" aoffset="1511" alength="24" ext_length="0">
+				<subanchor sarel="0" saname="largest mass extinctions" saoffset="1511" salength="24" rank="242">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="最大と最小">50101</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="mass" saoffset="1519" salength="4" rank="155">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="質量">6684</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="mass extinctions" saoffset="1519" salength="16" rank="51">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="大量絶滅">48423</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Earth history" aoffset="1539" alength="13" ext_length="0">
+				<subanchor sarel="0" saname="Earth history" saoffset="1539" salength="13" rank="156">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="地球史年表">235273</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="history" saoffset="1545" salength="7" rank="170">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="歴史">1899</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="K-T extinction" aoffset="1558" alength="14" ext_length="0">
+				<subanchor sarel="0" saname="K-T extinction" saoffset="1558" salength="14" rank="159">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ノット">28756</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="extinction" saoffset="1562" salength="10" rank="137">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="絶滅">62014</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="species" aoffset="1584" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="species" saoffset="1584" salength="7" rank="54">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="種 (分類学)">51340</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="pterosaurs" aoffset="1618" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="pterosaurs" saoffset="1618" salength="10" rank="7">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="翼竜">120624</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="world" aoffset="1701" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="world" saoffset="1701" salength="5" rank="243">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="世界">8720</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Paleogeography" aoffset="1724" alength="14" ext_length="0">
+				<subanchor sarel="0" saname="Paleogeography" saoffset="1724" salength="14" rank="202">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="古田元夫">1234100</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Paleozoic" aoffset="1781" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="Paleozoic" saoffset="1781" salength="9" rank="24">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="古生代">89550</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="supercontinent" aoffset="1814" alength="14" ext_length="0">
+				<subanchor sarel="0" saname="supercontinent" saoffset="1814" salength="14" rank="121">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="超大陸">8669</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Pangaea" aoffset="1832" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="Pangaea" saoffset="1832" salength="7" rank="46">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="パンゲア (アルバム)">1142619</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="パンゲア">23477</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="パンゲア大陸">8708</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="tectonic" aoffset="1854" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="tectonic" saoffset="1854" salength="8" rank="140">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="プレートテクトニクス">8721</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="地殻変動">670477</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="continents" aoffset="1888" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="continents" saoffset="1888" salength="10" rank="196">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="大陸">1746</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="As" aoffset="1967" alength="2" ext_length="0">
+				<subanchor sarel="0" saname="As" saoffset="1967" salength="2" rank="120">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アス (青銅貨)">2028024</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Atlantic" aoffset="1974" alength="8" ext_length="6">
+				<subanchor sarel="0" saname="Atlantic" saoffset="1974" salength="8" rank="169">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アトランティック">502147</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Atlantic Ocean" saoffset="1974" salength="14" rank="19">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="大西洋">8742</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Ocean" saoffset="1983" salength="5" rank="85">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="オーシャン">773118</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="大洋">2162</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="OCEAN (B&apos;zの曲)">455074</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="orogenies" aoffset="2020" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="orogenies" saoffset="2020" salength="9" rank="52">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="造山運動">1085842</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="North" aoffset="2082" alength="5" ext_length="20">
+				<subanchor sarel="0" saname="North" saoffset="2082" salength="5" rank="86">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ノース 小さな旅人">1574032</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ノース">856348</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ノース (アルバム)">1227504</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="北 (曖昧さ回避)">805315</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="北">8752</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="North American Cordillera" saoffset="2082" salength="25" rank="115">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="北">8752</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="American" saoffset="2088" salength="8" rank="134">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アメリカン">825994</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="American Cordillera" saoffset="2088" salength="19" rank="8">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アメリカ (バンド)">704228</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="orogeny" aoffset="2124" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="orogeny" saoffset="2124" salength="7" rank="113">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="造山運動">1085842</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Laramide orogenies" aoffset="2163" alength="18" ext_length="0">
+				<subanchor sarel="0" saname="Laramide orogenies" saoffset="2163" salength="18" rank="31">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ララミー変動">1372564</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Geography" aoffset="2270" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="Geography" saoffset="2270" salength="9" rank="136">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="地理学">12</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="US" aoffset="2287" alength="2" ext_length="0">
+				<subanchor sarel="0" saname="US" saoffset="2287" salength="2" rank="184">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="US">84607</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アメリカ合衆国">1698838</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Gondwana" aoffset="2348" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="Gondwana" saoffset="2348" salength="8" rank="48">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ゴンドワナ大陸">5395</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="South" aoffset="2425" alength="5" ext_length="8">
+				<subanchor sarel="0" saname="South" saoffset="2425" salength="5" rank="80">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="南">1689536</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="South America" saoffset="2425" salength="13" rank="34">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アメリカ大陸">8551</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="南アメリカ大陸">8679</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="南">1689536</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="南アメリカ">8667</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ブラジル">442519</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Antarctica" aoffset="2440" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="Antarctica" saoffset="2440" salength="10" rank="85">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="南極物語 (ヴァンゲリス)">1372705</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="南極の地理">1244465</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="チリ大学">1974424</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="南極大陸">4395</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Australia" aoffset="2455" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="Australia" saoffset="2455" salength="9" rank="60">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="オーストラリア (映画)">1570827</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="オーストラリア大陸">665035</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="AMPプレイス">328004</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="オーストラリア (曖昧さ回避)">1543211</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="オーストラリア">1119369</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="rifted" aoffset="2465" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="rifted" saoffset="2465" salength="6" rank="163">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="キャズム">695016</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Africa" aoffset="2482" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="Africa" saoffset="2482" salength="6" rank="70">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アフリカ属州">957152</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アフリカ">7005</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アフリカ (曖昧さ回避)">1498659</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="India" aoffset="2497" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="India" saoffset="2497" salength="5" rank="47">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="インド">2009</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="インド (曖昧さ回避)">900073</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Madagascar" aoffset="2507" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="Madagascar" saoffset="2507" salength="10" rank="21">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="マダガスカル">28651</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="マダガスカル2">1646499</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="マダガスカル (映画)">538922</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="South Atlantic" aoffset="2562" alength="14" ext_length="0">
+				<subanchor sarel="0" saname="South Atlantic" saoffset="2562" salength="14" rank="215">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="南">1689536</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Indian" aoffset="2581" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="Indian" saoffset="2581" salength="6" rank="244">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="インド">2009</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="インディアン (オートバイ)">666755</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="undersea" aoffset="2647" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="undersea" saoffset="2647" salength="8" rank="194">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="海底ケーブル">347109</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="mountain" aoffset="2656" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="mountain" saoffset="2656" salength="8" rank="157">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="山">11736</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="welts" aoffset="2682" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="welts" saoffset="2682" salength="5" rank="173">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="糜爛">849066</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="eustatic sea levels" aoffset="2697" alength="19" ext_length="0">
+				<subanchor sarel="0" saname="eustatic sea levels" saoffset="2697" salength="19" rank="182">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="海水">46299</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="To" aoffset="2728" alength="2" ext_length="0">
+				<subanchor sarel="0" saname="To" saoffset="2728" salength="2" rank="115">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="と">94012</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="north" aoffset="2735" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="north" saoffset="2735" salength="5" rank="196">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="北">8752</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Tethys" aoffset="2755" alength="6" ext_length="4">
+				<subanchor sarel="0" saname="Tethys" saoffset="2755" salength="6" rank="40">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="テーテュース">50651</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="テティス (衛星)">244199</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="テチス">245077</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="テチス海">48508</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Tethys Sea" saoffset="2755" salength="10" rank="2">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="テチス海">48508</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Sea" saoffset="2762" salength="3" rank="110">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="海">2237</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="central" aoffset="2822" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="central" saoffset="2822" salength="7" rank="171">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="セントラル">593257</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="コカ・コーラ セントラル ジャパン">317692</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="North America" aoffset="2830" alength="13" ext_length="0">
+				<subanchor sarel="0" saname="North America" saoffset="2830" salength="13" rank="124">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="北アメリカ大陸">8681</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="北アメリカ">9228</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="国の面積順リスト">28479</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="America" saoffset="2836" salength="7" rank="59">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アメリカ (バンド)">704228</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Western" aoffset="2849" alength="7" ext_length="16">
+				<subanchor sarel="0" saname="Western" saoffset="2849" salength="7" rank="41">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="西部劇">3111</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ウエスタン">621394</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Western Interior Seaway" saoffset="2849" salength="23" rank="20">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="西洋">25680</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Interior" saoffset="2857" salength="8" rank="32">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="内面">831108</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Europe" aoffset="2878" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="Europe" saoffset="2878" salength="6" rank="129">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヨーロッパ">32</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヨーロッパ (バンド)">313679</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="coal" aoffset="2968" alength="4" ext_length="5">
+				<subanchor sarel="0" saname="coal" saoffset="2968" salength="4" rank="116">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="石炭">39142</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="coal beds" saoffset="2968" salength="9" rank="197">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="コールベッドメタン">1681669</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="transgression" aoffset="3009" alength="13" ext_length="0">
+				<subanchor sarel="0" saname="transgression" saoffset="3009" salength="13" rank="196">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="罪">21246</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Earth" aoffset="3037" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="Earth" saoffset="3037" salength="5" rank="117">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="EARTH">251712</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アース (2007年の映画)">1300556</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アース (ヴァンゲリス)">1379152</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アース">289461</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="地球">491051</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="自然">8858</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="area" aoffset="3058" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="area" saoffset="3058" salength="4" rank="232">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アレア (バンド)">737682</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Mid-ocean ridge" aoffset="3393" alength="15" ext_length="0">
+				<subanchor sarel="0" saname="Mid-ocean ridge" saoffset="3393" salength="15" rank="3">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="海嶺">75713</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="ridge" saoffset="3403" salength="5" rank="168">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="尾根">36698</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="circulation" aoffset="3433" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="circulation" saoffset="3433" salength="11" rank="210">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="新聞">1741</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="seawater" aoffset="3448" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="seawater" saoffset="3448" salength="8" rank="40">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="海水">46299</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="calcium" aoffset="3508" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="calcium" saoffset="3508" salength="7" rank="102">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="カルシウム">8642</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="more saturated" aoffset="3538" alength="14" ext_length="0">
+				<subanchor sarel="0" saname="more saturated" saoffset="3538" salength="14" rank="195">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="彩度">1578577</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="bioavailability" aoffset="3579" alength="15" ext_length="0">
+				<subanchor sarel="0" saname="bioavailability" saoffset="3579" salength="15" rank="183">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="生物学的利用能">1094953</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="element" aoffset="3602" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="element" saoffset="3602" salength="7" rank="211">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="元素">7295</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="calcareous" aoffset="3614" alength="10" ext_length="13">
+				<subanchor sarel="0" saname="calcareous" saoffset="3614" salength="10" rank="144">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="石灰">94025</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="calcareous nanoplankton" saoffset="3614" salength="23" rank="45">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="石灰">94025</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="円石藻">833263</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="carbonates" aoffset="3741" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="carbonates" saoffset="3741" salength="10" rank="60">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="炭酸塩">9330</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="炭酸カルシウム">9861</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="sedimentary" aoffset="3762" alength="11" ext_length="9">
+				<subanchor sarel="0" saname="sedimentary" saoffset="3762" salength="11" rank="142">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="堆積">567024</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="sedimentary deposits" saoffset="3762" salength="20" rank="96">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="堆積岩">53280</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="rock" aoffset="3803" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="rock" saoffset="3803" salength="4" rank="120">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ロック">8326</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ロック (音楽)">1039</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="rich" aoffset="3881" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="rich" saoffset="3881" salength="4" rank="226">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="リッチ">800618</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Kansas's" aoffset="3904" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="Kansas's" saoffset="3904" salength="8" rank="192">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="トピカ (カンザス州)">421649</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Hill" aoffset="3919" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="Hill" saoffset="3919" salength="4" rank="208">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="丘">305212</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヒル">520202</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Chalk" aoffset="3924" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="Chalk" saoffset="3924" salength="5" rank="96">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="チョーク (岩石)">398475</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Member" aoffset="3930" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="Member" saoffset="3930" salength="6" rank="70">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="社員">79638</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="メンバー">520631</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="terrestrial" aoffset="3945" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="terrestrial" saoffset="3945" salength="11" rank="194">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="地上">1060646</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="fauna" aoffset="3957" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="fauna" saoffset="3957" salength="5" rank="90">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="動物">9721</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="動物相">1161067</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="late Cretaceous" aoffset="3970" alength="15" ext_length="0">
+				<subanchor sarel="0" saname="late Cretaceous" saoffset="3970" salength="15" rank="50">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="後期チャールキヤ朝">118665</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Hell" aoffset="3986" alength="4" ext_length="16">
+				<subanchor sarel="0" saname="Hell" saoffset="3986" salength="4" rank="167">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="美しき運命の傷痕">774385</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="地獄">24876</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Hell Creek Formation" saoffset="3986" salength="20" rank="37">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヘル">35557</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="China" aoffset="4083" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="China" saoffset="4083" salength="5" rank="77">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="チャイナ (ヴァンゲリス)">1162453</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="中国 (曖昧さ回避)">400306</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="中国">270031</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="チャイナ">452517</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Yixian" aoffset="4094" alength="6" ext_length="10">
+				<subanchor sarel="0" saname="Yixian" saoffset="4094" salength="6" rank="189">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="易県">1640642</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Yixian Formation" saoffset="4094" salength="16" rank="23">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="逸見のその時何が!">174127</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="lava" aoffset="4152" alength="4" ext_length="5">
+				<subanchor sarel="0" saname="lava" saoffset="4152" salength="4" rank="73">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="溶岩">53284</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="lava beds" saoffset="4152" salength="9" rank="7">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="溶岩">53284</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Deccan" aoffset="4173" alength="6" ext_length="6">
+				<subanchor sarel="0" saname="Deccan" saoffset="4173" salength="6" rank="140">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="デカン">73387</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Deccan Traps" saoffset="4173" salength="12" rank="6">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="デカントラップ">1524490</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Paleocene" aoffset="4237" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="Paleocene" saoffset="4237" salength="9" rank="9">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="暁新世">70076</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Climate" aoffset="4271" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="Climate" saoffset="4271" salength="7" rank="56">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="気候">19221</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="epoch" aoffset="4304" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="epoch" saoffset="4304" salength="5" rank="5">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="エポック">381995</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="cooling trend" aoffset="4319" alength="13" ext_length="0">
+				<subanchor sarel="0" saname="cooling trend" saoffset="4319" salength="13" rank="171">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="日傘効果">716107</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="evidence" aoffset="4396" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="evidence" saoffset="4396" salength="8" rank="210">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="エビデンス">127843</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="latitudes" aoffset="4446" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="latitudes" saoffset="4446" salength="9" rank="193">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="緯度">37157</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="tropics" aoffset="4464" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="tropics" saoffset="4464" salength="7" rank="146">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="熱帯">60022</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Triassic" aoffset="4502" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="Triassic" saoffset="4502" salength="8" rank="20">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="三畳紀">146639</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Glaciation" aoffset="4610" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="Glaciation" saoffset="4610" salength="10" rank="147">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="氷河">212012</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="alpine" aoffset="4647" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="alpine" saoffset="4647" salength="6" rank="58">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アルパイン">163104</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アルパイン (企業)">522800</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="seasonal snow" aoffset="4703" alength="13" ext_length="0">
+				<subanchor sarel="0" saname="seasonal snow" saoffset="4703" salength="13" rank="178">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="雪">19196</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="snow" saoffset="4712" salength="4" rank="127">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="雪">19196</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="south" aoffset="4742" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="south" saoffset="4742" salength="5" rank="200">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="南">1689536</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Rafting" aoffset="4749" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="Rafting" saoffset="4749" salength="7" rank="123">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ラフティング">261539</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="ice" aoffset="4760" alength="3" ext_length="0">
+				<subanchor sarel="0" saname="ice" saoffset="4760" salength="3" rank="183">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="氷">2174</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ウーゴ・フリジェリオ">923893</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="deposition" aoffset="4854" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="deposition" saoffset="4854" salength="10" rank="158">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="堆積物">775917</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Early" aoffset="4906" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="Early" saoffset="4906" salength="5" rank="91">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アーリー">424536</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Eromanga" aoffset="4930" alength="8" ext_length="6">
+				<subanchor sarel="0" saname="Eromanga" saoffset="4930" salength="8" rank="92">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="エロマンガ">49946</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Eromanga Basin" saoffset="4930" salength="14" rank="39">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="エロス (曖昧さ回避)">20375</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="グレートアーテジアン盆地">486597</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Basin" saoffset="4939" salength="5" rank="211">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="盆地">54667</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="southern" aoffset="4948" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="southern" saoffset="4948" salength="8" rank="181">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="サザン (列車)">103031</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="サザン">68216</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="After" aoffset="5147" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="After" saoffset="5147" salength="5" rank="99">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アフター">889879</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="volcanic" aoffset="5405" alength="8" ext_length="9">
+				<subanchor sarel="0" saname="volcanic" saoffset="5405" salength="8" rank="211">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="火山">7693</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="volcanic activity" saoffset="5405" salength="17" rank="109">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ストロンボリ島">1398325</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="carbon dioxide" aoffset="5458" alength="14" ext_length="0">
+				<subanchor sarel="0" saname="carbon dioxide" saoffset="5458" salength="14" rank="50">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="二酸化炭素">6958</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="development" aoffset="5478" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="development" saoffset="5478" salength="11" rank="236">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="発達">132283</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="mantle" aoffset="5505" alength="6" ext_length="7">
+				<subanchor sarel="0" saname="mantle" saoffset="5505" salength="6" rank="112">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="マント">333390</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="mantle plumes" saoffset="5505" salength="13" rank="80">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="プルームテクトニクス">8740</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the continental" aoffset="5609" alength="15" ext_length="6">
+				<subanchor sarel="0" saname="the continental" saoffset="5609" salength="15" rank="235">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="コンチネンタル">193539</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="continental" saoffset="5613" salength="11" rank="156">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="コンチネンタル">193539</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="コンチネンタル (パチスロ)">911424</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="continental crust" saoffset="5613" salength="17" rank="77">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="大陸">1746</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="crust" saoffset="5625" salength="5" rank="166">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="地殻">27313</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="covered" aoffset="5636" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="covered" saoffset="5636" salength="7" rank="219">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="カバー">9554</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="tropical" aoffset="5693" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="tropical" saoffset="5693" salength="8" rank="240">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="熱帯">60022</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="east" aoffset="5709" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="east" saoffset="5709" salength="4" rank="189">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="東">7173</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="west" aoffset="5717" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="west" saoffset="5717" salength="4" rank="178">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="西">7155</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="plant" aoffset="5778" alength="5" ext_length="8">
+				<subanchor sarel="0" saname="plant" saoffset="5778" salength="5" rank="109">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="植物">5071</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="plant fossils" saoffset="5778" salength="13" rank="75">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="化石">4979</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="localities" aoffset="5807" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="localities" saoffset="5807" salength="10" rank="220">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="地方">149982</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Alaska" aoffset="5834" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="Alaska" saoffset="5834" salength="6" rank="42">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アラスカ (曖昧さ回避)">1531673</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アラスカ州">55513</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Greenland" aoffset="5845" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="Greenland" saoffset="5845" salength="9" rank="0">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="グリーンランド">1698863</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="dinosaur" aoffset="5862" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="dinosaur" saoffset="5862" salength="8" rank="64">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="恐竜">1417402</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="south pole" aoffset="5931" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="south pole" saoffset="5931" salength="10" rank="150">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="南極点">102660</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="pole" saoffset="5937" salength="4" rank="185">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="極">70576</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="A" aoffset="6037" alength="1" ext_length="0">
+				<subanchor sarel="0" saname="A" saoffset="6037" salength="1" rank="124">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="A (シングル)">467526</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="A">13618</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="イ (音名)">689883</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="А">62862</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="あ">1182606</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="temperature" aoffset="6051" alength="11" ext_length="9">
+				<subanchor sarel="0" saname="temperature" saoffset="6051" salength="11" rank="146">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="気温">12140</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="温度">5965</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="temperature gradient" saoffset="6051" salength="20" rank="94">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="温度勾配">1922374</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="gradient" saoffset="6063" salength="8" rank="158">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="勾配 (ベクトル解析)">39217</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="equator" aoffset="6081" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="equator" saoffset="6081" salength="7" rank="79">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="赤道">14542</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="poles" aoffset="6096" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="poles" saoffset="6096" salength="5" rank="150">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ポーランド人">199628</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="upwelling" aoffset="6150" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="upwelling" saoffset="6150" salength="9" rank="149">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="湧昇">961674</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="stagnant" aoffset="6169" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="stagnant" saoffset="6169" salength="8" rank="189">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="止水域">1388427</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="black" aoffset="6229" alength="5" ext_length="6">
+				<subanchor sarel="0" saname="black" saoffset="6229" salength="5" rank="142">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="黒">57504</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="black shale" saoffset="6229" salength="11" rank="84">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="頁岩">53372</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="黒 (国鉄制定色)">983351</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="shale" saoffset="6235" salength="5" rank="74">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="頁岩">53372</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="anoxic" aoffset="6265" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="anoxic" saoffset="6265" salength="6" rank="155">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="貧酸素水塊">225686</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="無">67607</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="酸素">7369</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Sediment" aoffset="6365" alength="8" ext_length="6">
+				<subanchor sarel="0" saname="Sediment" saoffset="6365" salength="8" rank="126">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="堆積物">775917</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Sediment cores" saoffset="6365" salength="14" rank="92">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="堆積">567024</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="cores" saoffset="6374" salength="5" rank="203">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="氷床コア">239540</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="sea surface temperatures" aoffset="6399" alength="24" ext_length="0">
+				<subanchor sarel="0" saname="sea surface temperatures" saoffset="6399" salength="24" rank="91">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="海面">126338</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="海水温">769202</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="surface" saoffset="6403" salength="7" rank="230">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="表面">7049</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="曲面">498355</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="°C" aoffset="6460" alength="2" ext_length="0">
+				<subanchor sarel="0" saname="°C" saoffset="6460" salength="2" rank="77">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="セルシウス度">4970</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="°F" aoffset="6468" alength="2" ext_length="0">
+				<subanchor sarel="0" saname="°F" saoffset="6468" salength="2" rank="78">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="華氏">5118</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="°">516256</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="ocean" aoffset="6571" alength="5" ext_length="13">
+				<subanchor sarel="0" saname="ocean" saoffset="6571" salength="5" rank="154">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="大洋">2162</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="ocean temperatures" saoffset="6571" salength="18" rank="180">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="地球温暖化">1474417</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Geology" aoffset="6858" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="Geology" saoffset="6858" salength="7" rank="51">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="地質学">1390</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Research" aoffset="6883" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="Research" saoffset="6883" salength="8" rank="233">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="研究">5178</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Belgian" aoffset="6969" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="Belgian" saoffset="6969" salength="7" rank="92">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ベルギーの映画">1029258</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ベルギー">1698824</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="geologist" aoffset="6977" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="geologist" saoffset="6977" salength="9" rank="56">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="地質学">1390</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Jean" aoffset="6987" alength="4" ext_length="19">
+				<subanchor sarel="0" saname="Jean" saoffset="6987" salength="4" rank="104">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ジャン">292313</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Jean d'Omalius d'Halloy" saoffset="6987" salength="23" rank="47">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Blue Jean">644025</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="strata" aoffset="7026" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="strata" saoffset="7026" salength="6" rank="36">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="地層">185380</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Paris" aoffset="7040" alength="5" ext_length="6">
+				<subanchor sarel="0" saname="Paris" saoffset="7040" salength="5" rank="83">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="パリス">7060</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="パリス (曖昧さ回避)">666168</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="PARIS">1809203</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="パリ">31</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="パリ (ディーリアス)">918405</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Paris Basin" saoffset="7040" salength="11" rank="135">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="パリ盆地">1889177</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="calcium carbonate" aoffset="7182" alength="17" ext_length="0">
+				<subanchor sarel="0" saname="calcium carbonate" saoffset="7182" salength="17" rank="30">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="炭酸カルシウム">9861</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="carbonate" saoffset="7190" salength="9" rank="118">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="炭酸塩">9330</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="炭酸">652627</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="upper Cretaceous" aoffset="7287" alength="16" ext_length="0">
+				<subanchor sarel="0" saname="upper Cretaceous" saoffset="7287" salength="16" rank="4">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="白">20977</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="western" aoffset="7307" alength="7" ext_length="7">
+				<subanchor sarel="0" saname="western" saoffset="7307" salength="7" rank="163">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ウエスタン">621394</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ウエスタン (映画)">1083977</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="western Europe" saoffset="7307" salength="14" rank="113">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="西ヨーロッパ">16463</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="creta" aoffset="7370" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="creta" saoffset="7370" salength="5" rank="0">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="クレタ島">54473</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="island" aoffset="7509" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="island" saoffset="7509" salength="6" rank="173">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="島嶼">13310</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="島">1749</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Crete" aoffset="7516" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="Crete" saoffset="7516" salength="5" rank="8">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="クレタ島">54473</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="origin" aoffset="7535" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="origin" saoffset="7535" salength="6" rank="248">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Origin">24616</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="エレメンタル ジェレイド">220673</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Stratigraphic" aoffset="7566" alength="13" ext_length="0">
+				<subanchor sarel="0" saname="Stratigraphic" saoffset="7566" salength="13" rank="180">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="層 (数学)">413553</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="epochs" aoffset="7660" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="epochs" saoffset="7660" salength="6" rank="247">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="エポック">381995</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="literature" aoffset="7714" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="literature" saoffset="7714" salength="10" rank="125">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="文学">139</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Gallic" aoffset="7805" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="Gallic" saoffset="7805" salength="6" rank="222">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="フランス・ギャル">599900</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="eleven" aoffset="7865" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="eleven" saoffset="7865" salength="6" rank="246">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="イレブン (漫画)">1354793</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="イレブン">226745</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="stratigraphy" aoffset="7908" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="stratigraphy" saoffset="7908" salength="12" rank="64">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="層序学">427073</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="alternative" aoffset="7973" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="alternative" saoffset="7973" salength="11" rank="192">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="オルタナティブ">498522</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the rock" aoffset="8069" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="the rock" saoffset="8069" salength="8" rank="161">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ザ・ロック">44318</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ザ・ロック (プロレスラー)">44427</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="No" aoffset="8207" alength="2" ext_length="0">
+				<subanchor sarel="0" saname="No" saoffset="8207" salength="2" rank="117">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="NO">114873</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="の">99559</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="diversity" aoffset="8239" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="diversity" saoffset="8239" salength="9" rank="137">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="生物多様性">41173</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="多様性">33012</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="impact crater" aoffset="8451" alength="13" ext_length="0">
+				<subanchor sarel="0" saname="impact crater" saoffset="8451" salength="13" rank="29">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="クレーター">77418</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="crater" saoffset="8458" salength="6" rank="119">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="クレーター (曖昧さ回避)">1655447</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="クレーター">77418</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Yucatan" aoffset="8468" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="Yucatan" saoffset="8468" salength="7" rank="145">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ユカタン">1214639</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ユカタン州">384777</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Gulf" aoffset="8484" alength="4" ext_length="10">
+				<subanchor sarel="0" saname="Gulf" saoffset="8484" salength="4" rank="206">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ガルフ">1617899</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Gulf of Mexico" saoffset="8484" salength="14" rank="12">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="GOM Player">471181</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="GOM">1980758</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="メキシコ湾">125485</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Mexico" saoffset="8492" salength="6" rank="80">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="メキシコ">2878</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Rock" aoffset="8656" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="Rock" saoffset="8656" salength="4" rank="100">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ロック">8326</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="岩石">24824</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="thumb" aoffset="8711" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="thumb" saoffset="8711" salength="5" rank="187">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="親指">4212</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="left" aoffset="8717" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="left" saoffset="8717" salength="4" rank="227">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="レフト">103807</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="左翼手">103759</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Drawing" aoffset="8722" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="Drawing" saoffset="8722" salength="7" rank="179">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="デッサン">172173</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="デッサン (テレビドラマ)">641928</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="fossil" aoffset="8733" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="fossil" saoffset="8733" salength="6" rank="96">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="化石">4979</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="jaws" aoffset="8740" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="jaws" saoffset="8740" salength="4" rank="208">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="顎">475868</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Mosasaurus" aoffset="8752" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="Mosasaurus" saoffset="8752" salength="10" rank="55">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="モササウルス">498649</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Maastrichtian" aoffset="8788" alength="13" ext_length="0">
+				<subanchor sarel="0" saname="Maastrichtian" saoffset="8788" salength="13" rank="25">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="マストリヒシアン">422160</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Dutch" aoffset="8805" alength="5" ext_length="8">
+				<subanchor sarel="0" saname="Dutch" saoffset="8805" salength="5" rank="102">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="オランダ">1698820</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Dutch Limburg" saoffset="8805" salength="13" rank="160">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="リンブルフ州 (オランダ)">321514</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Limburg" saoffset="8811" salength="7" rank="84">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="リンブルフ">270222</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="major" aoffset="9148" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="major" saoffset="9148" salength="5" rank="216">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="少佐">132028</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="メジャー">21768</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="limestone" aoffset="9169" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="limestone" saoffset="9169" salength="9" rank="118">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="石灰岩">53377</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="石灰石">53840</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="rock type" aoffset="9182" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="rock type" saoffset="9182" salength="9" rank="182">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="鉱床学">154831</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="type" saoffset="9187" salength="4" rank="217">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="型">28695</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="タイプ">22483</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Due" aoffset="9249" alength="3" ext_length="0">
+				<subanchor sarel="0" saname="Due" saoffset="9249" salength="3" rank="113">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="DUE">1006419</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="accommodation" aoffset="9295" alength="13" ext_length="0">
+				<subanchor sarel="0" saname="accommodation" saoffset="9295" salength="13" rank="215">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ホテル">23609</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="space" aoffset="9309" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="space" saoffset="9309" salength="5" rank="205">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="空間">8191</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="sedimentation" aoffset="9319" alength="13" ext_length="0">
+				<subanchor sarel="0" saname="sedimentation" saoffset="9319" salength="13" rank="110">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="堆積">567024</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Because" aoffset="9368" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="Because" saoffset="9368" salength="7" rank="57">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ビコーズ">362930</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="young" aoffset="9394" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="young" saoffset="9394" salength="5" rank="221">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヤング">297026</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="crop" aoffset="9456" alength="4" ext_length="4">
+				<subanchor sarel="0" saname="crop" saoffset="9456" salength="4" rank="223">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="農産物">25408</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="crop out" saoffset="9456" salength="8" rank="98">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="露頭">296669</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="microscopically" aoffset="9606" alength="15" ext_length="0">
+				<subanchor sarel="0" saname="microscopically" saoffset="9606" salength="15" rank="159">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="顕微鏡">14445</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="calcite" aoffset="9628" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="calcite" saoffset="9628" salength="7" rank="35">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="方解石">54857</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="skeletons" aoffset="9636" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="skeletons" saoffset="9636" salength="9" rank="190">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="骨格">114706</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="algae" aoffset="9677" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="algae" saoffset="9677" salength="5" rank="61">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="藻類">25006</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the white cliffs of Dover" aoffset="9848" alength="25" ext_length="0">
+				<subanchor sarel="0" saname="the white cliffs of Dover" saoffset="9848" salength="25" rank="5">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ドーバー (デラウェア州)">428317</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="white" saoffset="9852" salength="5" rank="67">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="白">20977</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="white cliffs" saoffset="9852" salength="12" rank="130">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="白い恐怖">779150</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="white cliffs of Dover" saoffset="9852" salength="21" rank="32">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ドーバー (デラウェア州)">428317</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="28週後...">1269210</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="cliffs of Dover" saoffset="9858" salength="15" rank="158">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ドーバー (デラウェア州)">428317</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Dover" saoffset="9868" salength="5" rank="101">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ドーバー (デラウェア州)">428317</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ドーベル">410968</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ドーバー (イギリス)">422941</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ドーバー">413811</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the south coast" aoffset="9877" alength="15" ext_length="0">
+				<subanchor sarel="0" saname="the south coast" saoffset="9877" salength="15" rank="204">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="サウス・ウェスト・イングランド">1762348</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="south coast" saoffset="9881" salength="11" rank="111">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="南">1689536</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="England" aoffset="9896" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="England" saoffset="9896" salength="7" rank="72">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="イングランド (曖昧さ回避)">799302</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="イングランド">16627</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="cliffs" aoffset="9916" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="cliffs" saoffset="9916" salength="6" rank="209">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="崖">656134</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="French" aoffset="9930" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="French" saoffset="9930" salength="6" rank="111">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="フレンチ">397268</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Normandian" aoffset="9937" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="Normandian" saoffset="9937" salength="10" rank="18">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ノルマンディー">190166</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="coast" aoffset="9948" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="coast" saoffset="9948" salength="5" rank="214">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="太平洋">5330</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="海岸">74002</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="France" aoffset="9995" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="France" saoffset="9995" salength="6" rank="57">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="フランス">1698872</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the low countries" aoffset="10003" alength="17" ext_length="0">
+				<subanchor sarel="0" saname="the low countries" saoffset="10003" salength="17" rank="202">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ネーデルラント">65639</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="low countries" saoffset="10007" salength="13" rank="0">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ネーデルラント">65639</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="northern Germany" aoffset="10022" alength="16" ext_length="0">
+				<subanchor sarel="0" saname="northern Germany" saoffset="10022" salength="16" rank="154">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ドイツ">1698878</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Germany" saoffset="10031" salength="7" rank="75">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ドイツ">1698878</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Denmark" aoffset="10040" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="Denmark" saoffset="10040" salength="7" rank="45">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="デンマーク">1698850</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="subsurface" aoffset="10059" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="subsurface" saoffset="10059" salength="10" rank="226">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="地下">159675</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="North Sea" aoffset="10098" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="North Sea" saoffset="10098" salength="9" rank="62">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="北海">26747</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="consolidated" aoffset="10129" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="consolidated" saoffset="10129" salength="12" rank="224">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="連結">557256</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Group" aoffset="10156" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="Group" saoffset="10156" salength="5" rank="89">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="グループ">236102</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="群 (数学)">1976</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="元素の族">27843</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="loose" aoffset="10180" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="loose" saoffset="10180" salength="5" rank="222">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ルース">862500</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ルース (アルバム)">1070898</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="sea urchins" aoffset="10296" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="sea urchins" saoffset="10296" salength="11" rank="106">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ウニ">84740</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="belemnites" aoffset="10309" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="belemnites" saoffset="10309" salength="10" rank="15">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ベレムナイト">816215</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="southern Europe" aoffset="10389" alength="15" ext_length="0">
+				<subanchor sarel="0" saname="southern Europe" saoffset="10389" salength="15" rank="116">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="南ヨーロッパ">71034</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Alpine" aoffset="10521" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="Alpine" saoffset="10521" salength="6" rank="152">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アルパイン">163104</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アルピーヌ">345267</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アルペンスキー">17598</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="edge" aoffset="10619" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="edge" saoffset="10619" salength="4" rank="204">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アダム・コープランド">320206</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="エッジ">163805</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="European continental" aoffset="10631" alength="20" ext_length="6">
+				<subanchor sarel="0" saname="European continental" saoffset="10631" salength="20" rank="199">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="大陸ヨーロッパ">180034</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="continental shelf" saoffset="10640" salength="17" rank="63">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="大陸棚">57942</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Tethys Ocean" aoffset="10680" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="Tethys Ocean" saoffset="10680" salength="12" rank="12">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="テチス海">48508</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="deep sea" aoffset="10717" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="deep sea" saoffset="10717" salength="8" rank="151">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="深海">119452</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="currents" aoffset="10726" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="currents" saoffset="10726" salength="8" rank="199">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="海流">27193</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="middle Cretaceous" aoffset="10738" alength="17" ext_length="0">
+				<subanchor sarel="0" saname="middle Cretaceous" saoffset="10738" salength="17" rank="189">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="白">20977</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="sea water" aoffset="10797" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="sea water" saoffset="10797" salength="9" rank="181">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="海水">46299</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="water" saoffset="10801" salength="5" rank="193">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="水">1732</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="around the world" aoffset="10823" alength="16" ext_length="0">
+				<subanchor sarel="0" saname="around the world" saoffset="10823" salength="16" rank="242">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アラウンド・ザ・ワールド">1161373</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Around the world/KANDATA">1176906</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="source rock" aoffset="11011" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="source rock" saoffset="11011" salength="11" rank="145">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ソース (調味料)">30068</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="oil" aoffset="11027" alength="3" ext_length="8">
+				<subanchor sarel="0" saname="oil" saoffset="11027" salength="3" rank="166">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="油">27628</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="oil and gas" saoffset="11027" salength="11" rank="208">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="石油">1540503</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="gas" saoffset="11035" salength="3" rank="177">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="気体">7483</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Life" aoffset="11118" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="Life" saoffset="11118" salength="4" rank="102">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="LIFE (YUIの曲)">857318</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Life 真実へのパズル">1909133</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="生命">4035</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="LIFE (中島美嘉の曲)">1144650</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ライフ">76322</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Plants" aoffset="11140" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="Plants" saoffset="11140" salength="6" rank="195">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="植物">5071</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Flowering plants" aoffset="11157" alength="16" ext_length="0">
+				<subanchor sarel="0" saname="Flowering plants" saoffset="11157" salength="16" rank="1">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="種子植物">13952</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="angiosperms" aoffset="11175" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="angiosperms" saoffset="11175" salength="11" rank="38">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="被子植物">35208</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Campanian" aoffset="11266" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="Campanian" saoffset="11266" salength="9" rank="71">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="カンパニアン">1876113</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="stage" aoffset="11276" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="stage" saoffset="11276" salength="5" rank="229">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ステージ (コンピュータゲーム)">496003</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ステージ">496004</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="evolution" aoffset="11315" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="evolution" saoffset="11315" salength="9" rank="148">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ウィキ">18645</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="進化">14415</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="bees" aoffset="11356" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="bees" saoffset="11356" salength="4" rank="165">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ハナバチ">243272</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="insects" aoffset="11386" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="insects" saoffset="11386" salength="7" rank="107">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="昆虫">14362</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="coevolution" aoffset="11416" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="coevolution" saoffset="11416" salength="11" rank="73">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="共進化">777377</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="figs" aoffset="11486" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="figs" saoffset="11486" salength="4" rank="131">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="イチジク属">248523</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="FIGS">657402</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="magnolias" aoffset="11503" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="magnolias" saoffset="11503" salength="9" rank="152">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="モクレン属">609813</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="gymnosperms" aoffset="11582" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="gymnosperms" saoffset="11582" salength="11" rank="14">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="裸子植物">23339</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Conifers" aoffset="11599" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="Conifers" saoffset="11599" salength="8" rank="120">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="針葉樹">78177</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="コニファー">164132</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Monkey" aoffset="11638" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="Monkey" saoffset="11638" salength="6" rank="175">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="サル">80755</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Puzzle" aoffset="11645" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="Puzzle" saoffset="11645" salength="6" rank="66">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="PUZZLE (関ジャニ∞のアルバム)">1736358</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="パズル (曖昧さ回避)">819790</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Araucaria" aoffset="11663" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="Araucaria" saoffset="11663" salength="9" rank="119">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ナンヨウスギ属">777638</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="gymnosperm" aoffset="11753" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="gymnosperm" saoffset="11753" salength="10" rank="44">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="裸子植物">23339</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="taxa" aoffset="11764" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="taxa" saoffset="11764" salength="4" rank="101">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="タクソン">304642</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Bennettitales" aoffset="11774" alength="13" ext_length="0">
+				<subanchor sarel="0" saname="Bennettitales" saoffset="11774" salength="13" rank="4">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ベネチテス目">1549883</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Tyrannosaurus" aoffset="11889" alength="13" ext_length="0">
+				<subanchor sarel="0" saname="Tyrannosaurus" saoffset="11889" salength="13" rank="97">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ティラノサウルス">34392</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Tyrannosaurus rex" aoffset="11916" alength="17" ext_length="0">
+				<subanchor sarel="0" saname="Tyrannosaurus rex" saoffset="11916" salength="17" rank="41">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ティラノサウルス">34392</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="rex" saoffset="11930" salength="3" rank="198">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="レックス">102372</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="predators" aoffset="11964" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="predators" saoffset="11964" salength="9" rank="200">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="肉食動物">14149</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="pterosaur" aoffset="12073" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="pterosaur" saoffset="12073" salength="9" rank="23">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="翼竜">120624</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Anhanguera" aoffset="12088" alength="10" ext_length="9">
+				<subanchor sarel="0" saname="Anhanguera" saoffset="12088" salength="10" rank="17">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アンハングエラ">788015</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Anhanguera piscator" saoffset="12088" salength="19" rank="170">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アンハングエラ">788015</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="On" aoffset="12115" alength="2" ext_length="0">
+				<subanchor sarel="0" saname="On" saoffset="12115" salength="2" rank="116">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ON (アルバム)">1948393</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ON">151109</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="minor" aoffset="12166" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="minor" saoffset="12166" salength="5" rank="218">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="マイナー">705394</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="marsupial" aoffset="12202" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="marsupial" saoffset="12202" salength="9" rank="81">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="有袋類">46843</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Early Cretaceous" aoffset="12235" alength="16" ext_length="0">
+				<subanchor sarel="0" saname="Early Cretaceous" saoffset="12235" salength="16" rank="45">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="白">20977</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="placentals" aoffset="12263" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="placentals" saoffset="12263" salength="10" rank="74">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="真獣下綱">64445</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="archosaurian" aoffset="12341" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="archosaurian" saoffset="12341" salength="12" rank="191">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="主竜類">337470</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="adaptive radiation" aoffset="12557" alength="18" ext_length="0">
+				<subanchor sarel="0" saname="adaptive radiation" saoffset="12557" salength="18" rank="49">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="適応放散">446614</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="radiation" saoffset="12566" salength="9" rank="140">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="放射">43528</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Liaoning" aoffset="12675" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="Liaoning" saoffset="12675" salength="8" rank="17">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="遼寧省 (中華民国)">1829447</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="遼寧省">24970</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="lagerstätte" aoffset="12684" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="lagerstätte" saoffset="12684" salength="11" rank="5">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ラーガーシュテッテ">1879475</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="life" aoffset="12752" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="life" saoffset="12752" salength="4" rank="249">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="LIFE (YUIの曲)">857318</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="生命">4035</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="coelurosaur" aoffset="12884" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="coelurosaur" saoffset="12884" salength="11" rank="27">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="コエルロサウルス類">388201</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Maniraptora" aoffset="12947" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="Maniraptora" saoffset="12947" salength="11" rank="29">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アロサウルス">325131</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="オルニトレステス">341255</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="feathers" aoffset="13057" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="feathers" saoffset="13057" salength="8" rank="213">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="風切羽">723488</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="ants" aoffset="13148" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="ants" saoffset="13148" salength="4" rank="139">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アリ">84171</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="termites" aoffset="13154" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="termites" saoffset="13154" salength="8" rank="100">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="シロアリ">87812</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="lepidopterans" aoffset="13172" alength="13" ext_length="0">
+				<subanchor sarel="0" saname="lepidopterans" saoffset="13172" salength="13" rank="93">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="チョウ目">121886</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="butterflies" aoffset="13195" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="butterflies" saoffset="13195" salength="11" rank="243">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="チョウ">84856</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Aphids" aoffset="13228" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="Aphids" saoffset="13228" salength="6" rank="127">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アブラムシ">244920</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="grasshoppers" aoffset="13236" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="grasshoppers" saoffset="13236" salength="12" rank="176">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="バッタ目">14416</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="バッタ">25406</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="gall" aoffset="13254" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="gall" saoffset="13254" salength="4" rank="114">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="虫こぶ">784591</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="wasps" aoffset="13259" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="wasps" saoffset="13259" salength="5" rank="183">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="スズメバチ">261520</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Marine" aoffset="13298" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="Marine" saoffset="13298" salength="6" rank="71">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="マリン">639068</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="iris" aoffset="13425" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="iris" saoffset="13425" salength="4" rank="164">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Iris 〜イリス〜">227067</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="虹彩">599257</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Iris">226599</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="IRIS">455649</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Owl" aoffset="13436" alength="3" ext_length="0">
+				<subanchor sarel="0" saname="Owl" saoffset="13436" salength="3" rank="166">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="フクロウ目">67436</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Creek" aoffset="13440" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="Creek" saoffset="13440" salength="5" rank="177">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="渓流">816176</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="クリーク">1060885</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Formation" aoffset="13446" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="Formation" saoffset="13446" salength="9" rank="21">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="フォーメーション">370748</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="サッカーのフォーメーション">416153</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Ripley" aoffset="13476" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="Ripley" saoffset="13476" salength="6" rank="86">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="リプリー (映画)">2088763</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="リプリー">1267144</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Mississippi" aoffset="13484" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="Mississippi" saoffset="13484" salength="11" rank="91">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ミシシッピ州">56556</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="rays" aoffset="13531" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="rays" saoffset="13531" salength="4" rank="224">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="条鰭綱">205709</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="modern sharks" aoffset="13537" alength="13" ext_length="0">
+				<subanchor sarel="0" saname="modern sharks" saoffset="13537" salength="13" rank="168">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="サメ">25665</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="sharks" saoffset="13544" salength="6" rank="229">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="サメ">25665</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="teleosts" aoffset="13555" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="teleosts" saoffset="13555" salength="8" rank="99">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="真骨類">610136</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="魚類">3063</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="ichthyosaurs" aoffset="13691" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="ichthyosaurs" saoffset="13691" salength="12" rank="86">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="魚竜">401667</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="plesiosaurs" aoffset="13792" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="plesiosaurs" saoffset="13792" salength="11" rank="132">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="プレシオサウルス">449539</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="ammonite" aoffset="13914" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="ammonite" saoffset="13914" salength="8" rank="2">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アンモナイト">69893</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="genus" aoffset="13923" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="genus" saoffset="13923" salength="5" rank="126">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="属 (分類学)">399615</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="straight" aoffset="13936" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="straight" saoffset="13936" salength="8" rank="231">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ストレート">76390</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="shell" aoffset="13945" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="shell" saoffset="13945" salength="5" rank="153">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="シェル (曖昧さ回避)">934158</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="シェル">2696</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="軟体動物">21058</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="clams" aoffset="14007" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="clams" saoffset="14007" salength="5" rank="65">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="二枚貝">270341</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Hesperornithiformes" aoffset="14018" alength="19" ext_length="0">
+				<subanchor sarel="0" saname="Hesperornithiformes" saoffset="14018" salength="19" rank="28">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヘスペロルニス">159899</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="flightless" aoffset="14043" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="flightless" saoffset="14043" salength="10" rank="138">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="飛べない鳥">895928</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="diving" aoffset="14062" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="diving" saoffset="14062" salength="6" rank="88">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="飛込競技">197877</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="grebes" aoffset="14090" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="grebes" saoffset="14090" salength="6" rank="105">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="カイツブリ科">80922</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Foraminifera" aoffset="14113" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="Foraminifera" saoffset="14113" salength="12" rank="47">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="有孔虫">78505</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="echinoderms" aoffset="14130" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="echinoderms" saoffset="14130" salength="11" rank="83">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="棘皮動物">36513</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="starfish" aoffset="14166" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="starfish" saoffset="14166" salength="8" rank="87">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヒトデ">25675</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="sea stars" aoffset="14176" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="sea stars" saoffset="14176" salength="9" rank="93">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヒトデ">25675</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="海">2237</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="diatoms" aoffset="14223" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="diatoms" saoffset="14223" salength="7" rank="66">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="珪藻">1870012</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="siliceous" aoffset="14242" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="siliceous" saoffset="14242" salength="9" rank="130">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="シリカ">33828</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="二酸化ケイ素">6934</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="freshwater" aoffset="14323" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="freshwater" saoffset="14323" salength="10" rank="103">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="淡水">224895</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Miocene" aoffset="14367" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="Miocene" saoffset="14367" salength="7" rank="13">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="中新世">70085</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="production" aoffset="14545" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="production" saoffset="14545" salength="10" rank="237">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="プロダクション">238652</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Taylor" aoffset="14615" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="Taylor" saoffset="14615" salength="6" rank="147">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="テイラー">78397</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="テイラー (フリゲート)">856883</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Wilson" aoffset="14626" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="Wilson" saoffset="14626" salength="6" rank="152">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ウィルソン (ノースカロライナ州)">757381</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ウィルソン">216122</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Extinction" aoffset="14664" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="Extinction" saoffset="14664" salength="10" rank="15">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="絶滅">62014</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="progressive" aoffset="14698" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="progressive" saoffset="14698" salength="11" rank="144">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="プログレッシブ">154570</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Progressive">1939770</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="biodiversity" aoffset="14721" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="biodiversity" saoffset="14721" salength="12" rank="19">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="生物多様性">41173</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="ecological crisis" aoffset="14813" alength="17" ext_length="0">
+				<subanchor sarel="0" saname="ecological crisis" saoffset="14813" salength="17" rank="199">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="生態学">32922</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="K-T boundary" aoffset="14856" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="K-T boundary" saoffset="14856" salength="12" rank="53">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ノット">28756</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="ecological niches" aoffset="15022" alength="17" ext_length="0">
+				<subanchor sarel="0" saname="ecological niches" saoffset="15022" salength="17" rank="10">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ニッチ">83929</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="clades" aoffset="15271" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="clades" saoffset="15271" salength="6" rank="134">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="分岐学">489657</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="単系統群">925573</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Species" aoffset="15279" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="Species" saoffset="15279" salength="7" rank="43">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="種 (分類学)">51340</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="スピーシーズ 種の起源">627783</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="photosynthesis" aoffset="15305" alength="14" ext_length="0">
+				<subanchor sarel="0" saname="photosynthesis" saoffset="15305" salength="14" rank="22">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="光合成">1860132</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="reduction" aoffset="15362" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="reduction" saoffset="15362" salength="9" rank="207">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="還元剤">191085</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="solar" aoffset="15375" alength="5" ext_length="7">
+				<subanchor sarel="0" saname="solar" saoffset="15375" salength="5" rank="227">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="太陽">544666</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="solar energy" saoffset="15375" salength="12" rank="108">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="太陽エネルギー">1303999</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="energy" saoffset="15381" salength="6" rank="172">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="エネルギー">5397</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="atmospheric" aoffset="15424" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="atmospheric" saoffset="15424" salength="11" rank="172">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="大気圏">72956</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="地球の大気">11420</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="particles" aoffset="15436" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="particles" saoffset="15436" salength="9" rank="198">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="素粒子物理学">15992</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="sunlight" aoffset="15459" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="sunlight" saoffset="15459" salength="8" rank="153">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="太陽定数">488576</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="日光">81258</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="photosynthesizing" aoffset="15491" alength="17" ext_length="0">
+				<subanchor sarel="0" saname="photosynthesizing" saoffset="15491" salength="17" rank="178">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="光合成">1860132</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="organisms" aoffset="15509" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="organisms" saoffset="15509" salength="9" rank="198">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="生物">42</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="phytoplankton" aoffset="15528" alength="13" ext_length="0">
+				<subanchor sarel="0" saname="phytoplankton" saoffset="15528" salength="13" rank="30">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="植物プランクトン">780499</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="land plants" aoffset="15546" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="land plants" saoffset="15546" salength="11" rank="115">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="陸上植物">107810</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="植物">5071</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="primary" aoffset="15570" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="primary" saoffset="15570" salength="7" rank="219">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="プライマリー">1963336</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="プライマリー (映画)">1187313</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="food" aoffset="15590" alength="4" ext_length="6">
+				<subanchor sarel="0" saname="food" saoffset="15590" salength="4" rank="201">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="食品">24201</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="food chain" saoffset="15590" salength="10" rank="82">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="食物連鎖">39867</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="chain" saoffset="15595" salength="5" rank="224">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="鎖">572495</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Evidence" aoffset="15625" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="Evidence" saoffset="15625" salength="8" rank="34">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="証拠">118362</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="エビデンス">127843</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="herbivorous" aoffset="15648" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="herbivorous" saoffset="15648" salength="11" rank="97">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="草食動物">201249</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="animals" aoffset="15660" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="animals" saoffset="15660" salength="7" rank="235">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アニマルズ (アルバム)">432418</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="plankton" aoffset="15698" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="plankton" saoffset="15698" salength="8" rank="53">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="プランクトン">46703</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="top predators" aoffset="15782" alength="13" ext_length="0">
+				<subanchor sarel="0" saname="top predators" saoffset="15782" salength="13" rank="141">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="頂点捕食者">1839867</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="molluscs" aoffset="15964" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="molluscs" saoffset="15964" salength="8" rank="122">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="軟体動物">21058</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="mussels" aoffset="16026" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="mussels" saoffset="16026" salength="7" rank="128">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="イガイ属">1955641</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="マルスダレガイ科">1947512</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="giant" aoffset="16236" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="giant" saoffset="16236" salength="5" rank="186">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ジャイアント">133243</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Omnivores" aoffset="16391" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="Omnivores" saoffset="16391" salength="9" rank="111">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="雑食">213071</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the extinction event" aoffset="16443" alength="20" ext_length="0">
+				<subanchor sarel="0" saname="the extinction event" saoffset="16443" salength="20" rank="200">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="絶滅">62014</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="extinction event" saoffset="16447" salength="16" rank="130">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="大量絶滅">48423</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="carnivorous" aoffset="16612" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="carnivorous" saoffset="16612" salength="11" rank="184">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="肉食">51983</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="larvae" aoffset="16697" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="larvae" saoffset="16697" salength="6" rank="205">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="幼虫">167651</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="worms" aoffset="16705" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="worms" saoffset="16705" salength="5" rank="220">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="寄生虫">25325</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="寄生">105460</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="animal" aoffset="16760" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="animal" saoffset="16760" salength="6" rank="81">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="鳥頸類">710086</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="動物">9721</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="detritus" aoffset="16885" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="detritus" saoffset="16885" salength="8" rank="67">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="デトリタス">366265</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="stream" aoffset="17168" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="stream" saoffset="17168" salength="6" rank="191">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="渓流">816176</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Stream" aoffset="17226" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="Stream" saoffset="17226" salength="6" rank="62">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ストリーム">93992</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="渓流">816176</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ストリーム (プログラミング)">596894</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="washes" aoffset="17308" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="washes" saoffset="17308" salength="6" rank="187">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="峡谷">59053</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="ecological niche" aoffset="17345" alength="16" ext_length="0">
+				<subanchor sarel="0" saname="ecological niche" saoffset="17345" salength="16" rank="71">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ニッチ">83929</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="buffered" aoffset="17362" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="buffered" saoffset="17362" salength="8" rank="169">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="緩衝液">332580</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="water column" aoffset="17601" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="water column" saoffset="17601" salength="12" rank="209">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="水">1732</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="column" saoffset="17607" salength="6" rank="215">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="柱">61472</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="sea floor" aoffset="17654" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="sea floor" saoffset="17654" salength="9" rank="125">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="海底">27855</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Animals" aoffset="17665" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="Animals" saoffset="17665" salength="7" rank="58">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アニマルズ (アルバム)">432418</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="primary production" aoffset="17726" alength="18" ext_length="0">
+				<subanchor sarel="0" saname="primary production" saoffset="17726" salength="18" rank="124">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="基礎生産">261131</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="ocean floor" aoffset="17806" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="ocean floor" saoffset="17806" salength="11" rank="222">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="海底">27855</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="switch" aoffset="17842" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="switch" saoffset="17842" salength="6" rank="220">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="開閉器">17016</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="crocodilians" aoffset="18016" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="crocodilians" saoffset="18016" salength="12" rank="114">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ワニ">64684</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="champsosaurs" aoffset="18033" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="champsosaurs" saoffset="18033" salength="12" rank="44">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="チャンプソサウルス">1330776</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="semi-aquatic" aoffset="18052" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="semi-aquatic" saoffset="18052" salength="12" rank="162">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="水草">215632</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="scavengers" aoffset="18125" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="scavengers" saoffset="18125" salength="10" rank="167">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="腐肉食">1527684</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="invertebrates" aoffset="18237" alength="13" ext_length="0">
+				<subanchor sarel="0" saname="invertebrates" saoffset="18237" salength="13" rank="112">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="無脊椎動物">121097</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="crocodilian" aoffset="18365" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="crocodilian" saoffset="18365" salength="11" rank="142">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ワニ">64684</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="survival" aoffset="18377" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="survival" saoffset="18377" salength="8" rank="209">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="サバイバル (曖昧さ回避)">1141993</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="サバイバル">134241</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="cobble" aoffset="18571" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="cobble" saoffset="18571" salength="6" rank="203">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="石畳">727070</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Texas" aoffset="18711" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="Texas" saoffset="18711" salength="5" rank="90">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="テキサス州">5146</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="テキサス (曖昧さ回避)">52225</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="oysters" aoffset="18733" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="oysters" saoffset="18733" salength="7" rank="72">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="カキ">23030</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="カキ (貝)">25560</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="scale" aoffset="18758" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="scale" saoffset="18758" salength="5" rank="225">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="スケール">440646</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="bar" aoffset="18764" alength="3" ext_length="0">
+				<subanchor sarel="0" saname="bar" saoffset="18764" salength="3" rank="164">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="バール (単位)">115522</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="BAR">1016118</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="バー">41627</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="バール">30369</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="nbsp" aoffset="18774" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="nbsp" saoffset="18774" salength="4" rank="86">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ニッポン放送">36598</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="mm" aoffset="18779" alength="2" ext_length="0">
+				<subanchor sarel="0" saname="mm" saoffset="18779" salength="2" rank="194">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="MM">12885</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ミリメートル">11158</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Omani" aoffset="18858" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="Omani" saoffset="18858" salength="5" rank="133">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="オマーン">6337</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Mountains" aoffset="18864" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="Mountains" saoffset="18864" salength="9" rank="246">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="山">11736</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="United Arab Emirates" aoffset="18875" alength="20" ext_length="0">
+				<subanchor sarel="0" saname="United Arab Emirates" saoffset="18875" salength="20" rank="95">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アラブ首長国連邦">6406</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Arab" saoffset="18882" salength="4" rank="108">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アラブ (曖昧さ回避)">7337</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Scale" aoffset="18897" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="Scale" saoffset="18897" salength="5" rank="81">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="スケール">440646</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="鱗">347038</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="縮尺">658186</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="South Dakota" aoffset="19009" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="South Dakota" saoffset="19009" salength="12" rank="88">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="サウスダコタ州">49924</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Dakota" saoffset="19015" salength="6" rank="179">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ダコタ">1944529</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="サウスダコタ (戦艦)">262726</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="サウスダコタ (曖昧さ回避)">231734</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="See" aoffset="19056" alength="3" ext_length="0">
+				<subanchor sarel="0" saname="See" saoffset="19056" salength="3" rank="109">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="シー">1300327</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Chalk Formation" aoffset="19117" alength="15" ext_length="0">
+				<subanchor sarel="0" saname="Chalk Formation" saoffset="19117" salength="15" rank="151">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="チョーク">21769</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="List" aoffset="19175" alength="4" ext_length="16">
+				<subanchor sarel="0" saname="List" saoffset="19175" salength="4" rank="101">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="リスト (抽象データ型)">821161</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="リスト">12886</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="List of fossil sites" saoffset="19175" salength="20" rank="8">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アウストラロピテクス・アフリカヌス">1785421</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="パリ盆地">1889177</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="directory" aoffset="19211" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="directory" saoffset="19211" salength="9" rank="180">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ディレクトリ (曖昧さ回避)">1479510</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ディレクトリ">28319</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Polar" aoffset="19277" alength="5" ext_length="10">
+				<subanchor sarel="0" saname="Polar" saoffset="19277" salength="5" rank="82">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Polar (人工衛星)">2000070</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Polar dinosaurs" saoffset="19277" salength="15" rank="213">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="極地">713235</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Kashiyama" aoffset="19520" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="Kashiyama" saoffset="19520" salength="9" rank="181">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="オンワード樫山">91780</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="樫山駅">337239</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Yuichiro" aoffset="19540" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="Yuichiro" saoffset="19540" salength="8" rank="188">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ロックマンエグゼシリーズ">196621</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Nanako" aoffset="19563" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="Nanako" saoffset="19563" salength="6" rank="69">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ななこ">1041042</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Ogawa" aoffset="19573" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="Ogawa" saoffset="19573" salength="5" rank="104">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="小川">1501613</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="日本">1864744</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Kuroda" aoffset="19590" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="Kuroda" saoffset="19590" salength="6" rank="240">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="黒田 (小惑星)">354488</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Shiro" aoffset="19604" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="Shiro" saoffset="19604" salength="5" rank="244">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="シロ (クレヨンしんちゃん)">1434589</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="シロ">331342</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Shinya" aoffset="19611" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="Shinya" saoffset="19611" salength="6" rank="64">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Shinya">151037</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Hiroshi" aoffset="19638" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="Hiroshi" saoffset="19638" salength="7" rank="213">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ひろし">592007</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヒロシ">356430</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="野原ひろし">192030</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="cyanobacteria" aoffset="19696" alength="13" ext_length="0">
+				<subanchor sarel="0" saname="cyanobacteria" saoffset="19696" salength="13" rank="23">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="藍藻">9626</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="oceanic" aoffset="19761" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="oceanic" saoffset="19761" salength="7" rank="174">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="海">2237</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Nitrogen" aoffset="19784" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="Nitrogen" saoffset="19784" salength="8" rank="136">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="窒素">8216</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="carbon" aoffset="19797" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="carbon" saoffset="19797" salength="6" rank="143">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="炭素">252672</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="isotopic" aoffset="19804" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="isotopic" saoffset="19804" salength="8" rank="144">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="同位体">6683</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="porphyrin" aoffset="19839" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="porphyrin" saoffset="19839" salength="9" rank="26">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ポルフィリン">56360</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="journal" aoffset="19851" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="journal" saoffset="19851" salength="7" rank="199">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="仕訳">99362</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Organic" aoffset="19861" alength="7" ext_length="13">
+				<subanchor sarel="0" saname="Organic" saoffset="19861" salength="7" rank="47">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="近代陸軍の編制">73406</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Organic Geochemistry" saoffset="19861" salength="20" rank="123">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="地球化学">237796</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Geochemistry" saoffset="19869" salength="12" rank="133">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="地球化学">237796</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="doi" aoffset="19971" alength="3" ext_length="0">
+				<subanchor sarel="0" saname="doi" saoffset="19971" salength="3" rank="9">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="DOI">285444</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="デジタルオブジェクト識別子">285441</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="url" aoffset="20012" alength="3" ext_length="0">
+				<subanchor sarel="0" saname="url" saoffset="20012" salength="3" rank="103">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Uniform Office Format">1432876</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Uniform Resource Locator">4101</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="science" aoffset="20047" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="science" saoffset="20047" salength="7" rank="157">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="科学">5964</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="ob" aoffset="20056" alength="2" ext_length="0">
+				<subanchor sarel="0" saname="ob" saoffset="20056" salength="2" rank="4">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="OB">122171</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="オーボエ">25464</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="amp" aoffset="20070" alength="3" ext_length="0">
+				<subanchor sarel="0" saname="amp" saoffset="20070" salength="3" rank="129">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="AMP (鹿児島讀賣テレビ)">139905</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="AMP">191697</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="udi" aoffset="20075" alength="3" ext_length="0">
+				<subanchor sarel="0" saname="udi" saoffset="20075" salength="3" rank="87">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ウーディネ">68732</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="md5" aoffset="20253" alength="3" ext_length="0">
+				<subanchor sarel="0" saname="md5" saoffset="20253" salength="3" rank="28">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="MD5">10179</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="L" aoffset="20339" alength="1" ext_length="0">
+				<subanchor sarel="0" saname="L" saoffset="20339" salength="1" rank="121">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="L">16761</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="L (DEATH NOTE)">967322</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="L (計算複雑性理論)">983955</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Steven" aoffset="20349" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="Steven" saoffset="20349" salength="6" rank="63">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="スティーブ">1083107</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="D" aoffset="20356" alength="1" ext_length="0">
+				<subanchor sarel="0" saname="D" saoffset="20356" salength="1" rank="123">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ニ (音名)">689752</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="D言語">31034</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="D (バンド)">1249420</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="D">13651</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="D (データベース言語仕様)">1400992</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Robert" aoffset="20369" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="Robert" saoffset="20369" salength="6" rank="65">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ロバート">75051</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ロベール (歌手)">1421673</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Peter" aoffset="20389" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="Peter" saoffset="20389" salength="5" rank="241">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ペトロス">1801209</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="池畑慎之介">281966</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ピーター">174690</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Cephalopods" aoffset="20433" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="Cephalopods" saoffset="20433" salength="11" rank="186">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="頭足類">361157</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Pierre" aoffset="20452" alength="6" ext_length="7">
+				<subanchor sarel="0" saname="Pierre" saoffset="20452" salength="6" rank="182">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ピエール">370845</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Pierre Seaway" saoffset="20452" salength="13" rank="166">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ピエール">370845</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Geoscience" aoffset="20472" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="Geoscience" saoffset="20472" salength="10" rank="175">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="地球科学">3927</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ダイナモ理論">1552468</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Ogg" aoffset="20538" alength="3" ext_length="0">
+				<subanchor sarel="0" saname="Ogg" saoffset="20538" salength="3" rank="69">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Ogg Media">109839</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Ogg">207258</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="OGG">618421</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Boundary" aoffset="20583" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="Boundary" saoffset="20583" salength="8" rank="37">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="境界 (位相空間論)">1716204</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Points" aoffset="20616" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="Points" saoffset="20616" salength="6" rank="234">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ポイント">36726</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Saratov" aoffset="20835" alength="7" ext_length="7">
+				<subanchor sarel="0" saname="Saratov" saoffset="20835" salength="7" rank="31">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ロシアの都市の一覧">1941104</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="サラトフ">196898</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Saratov region" saoffset="20835" salength="14" rank="37">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="サラトフ">196898</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="サラトフ州">196884</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="region" saoffset="20843" salength="6" rank="143">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="地域">30063</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Russian" aoffset="20851" alength="7" ext_length="9">
+				<subanchor sarel="0" saname="Russian" saoffset="20851" salength="7" rank="104">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ロシア語">8685</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Russian Platform" saoffset="20851" salength="16" rank="161">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヤコブ・ゼーデルホルム">1753984</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Platform" saoffset="20859" salength="8" rank="195">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="プラットフォーム">280033</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="プラットフォーム (自動車)">612812</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="late Maastrichtian" aoffset="20880" alength="18" ext_length="0">
+				<subanchor sarel="0" saname="late Maastrichtian" saoffset="20880" salength="18" rank="165">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="マストリヒシアン">422160</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="後期チャールキヤ朝">118665</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Journal" aoffset="20918" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="Journal" saoffset="20918" salength="7" rank="48">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="仕訳">99362</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ジャーナル">820740</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Iberian" aoffset="20929" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="Iberian" saoffset="20929" salength="7" rank="234">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="イベリア">860679</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Skinner" aoffset="21252" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="Skinner" saoffset="21252" salength="7" rank="194">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="スキナー">186965</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Brian" aoffset="21261" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="Brian" saoffset="21261" salength="5" rank="97">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ブライアン">800022</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Stephen" aoffset="21275" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="Stephen" saoffset="21275" salength="7" rank="245">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="スティーヴン">1083103</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="スティーブン (イングランド王)">16452</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="エティエンヌ">501939</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="C. Porter" aoffset="21283" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="C. Porter" saoffset="21283" salength="9" rank="201">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="コール・ポーター">1133660</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Porter" saoffset="21286" salength="6" rank="139">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ポーター">78202</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Introduction" aoffset="21320" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="Introduction" saoffset="21320" salength="12" rank="9">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="導入部">930477</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Physical" aoffset="21336" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="Physical" saoffset="21336" salength="8" rank="173">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="物理学">112</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="ed" aoffset="21363" alength="2" ext_length="0">
+				<subanchor sarel="0" saname="ed" saoffset="21363" salength="2" rank="234">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ED">136738</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="エド (テレビドラマ)">118664</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="New" aoffset="21367" alength="3" ext_length="5">
+				<subanchor sarel="0" saname="New" saoffset="21367" salength="3" rank="112">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="New演算子">1125539</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="NEW">1151062</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="New York" saoffset="21367" salength="8" rank="128">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ニューヨーク州">5040</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="York" saoffset="21371" salength="4" rank="214">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヨーク (イングランド)">626410</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="John" aoffset="21377" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="John" saoffset="21377" salength="4" rank="103">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ジョン (人名)">293510</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヨハネ">17161</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Wiley" aoffset="21382" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="Wiley" saoffset="21382" salength="5" rank="238">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ワイリー">1891580</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Stanley" aoffset="21474" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="Stanley" saoffset="21474" salength="7" rank="174">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="スタンリー">514111</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="スタンリー (ゲームキャラクター)">942998</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="System" aoffset="21503" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="System" saoffset="21503" salength="6" rank="61">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="システム">6041</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="History" aoffset="21510" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="History" saoffset="21510" salength="7" rank="49">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="歴史 (曖昧さ回避)">1788841</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヒストリー (TVチャンネル)">1697899</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="歴史">1899</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Freeman" aoffset="21539" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="Freeman" saoffset="21539" salength="7" rank="184">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="フリーマン">729036</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="フリーマン (餓狼MOW)">794678</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="substrate" aoffset="21707" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="substrate" saoffset="21707" salength="9" rank="249">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="基 (僧)">66922</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="geology" aoffset="21891" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="geology" saoffset="21891" salength="7" rank="79">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="地質学">1390</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="pdf" aoffset="21919" alength="3" ext_length="0">
+				<subanchor sarel="0" saname="pdf" saoffset="21919" salength="3" rank="70">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="PNM (画像フォーマット)">1846443</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Portable Document Format">37813</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Berkeley" aoffset="22154" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="Berkeley" saoffset="22154" salength="8" rank="145">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="バークリー">76356</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="website" aoffset="22344" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="website" saoffset="22344" salength="7" rank="239">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ウェブサイト">2131</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="The College of Wooster" aoffset="22355" alength="22" ext_length="0">
+				<subanchor sarel="0" saname="The College of Wooster" saoffset="22355" salength="22" rank="98">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ウースター大学">1985605</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ウー (ウルトラ怪獣)">91929</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="College" saoffset="22359" salength="7" rank="188">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="単科大学と総合大学">66655</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="College of Wooster" saoffset="22359" salength="18" rank="38">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ウースター大学">1985605</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ウー (ウルトラ怪獣)">91929</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Wooster" saoffset="22370" salength="7" rank="167">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ウースター (マサチューセッツ州)">615034</tobep>
+				</subanchor>
+			</anchor>
+		</outgoinglinks>
+	</topic>
+</crosslink-assessment>
