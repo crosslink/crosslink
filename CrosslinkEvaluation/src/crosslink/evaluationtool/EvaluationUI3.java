@@ -1027,7 +1027,7 @@ public class EvaluationUI3 extends JFrame {
                 {new Color(200, 0, 200), new Color(200, 0, 200), new Color(200, 0, 200)}
             };
 
-
+            Random generator = new Random();
 
             for (int i = 0; i < this.runFileCache.length; i++) {
 
@@ -1156,9 +1156,13 @@ public class EvaluationUI3 extends JFrame {
 	                Object key = (Object) e.nextElement();
 	                ArrayList<Object[]> sortColl = (ArrayList<Object[]>) compareHash.get(key);
 	                evaData[sortIndex] = sortColl.get(0);
+	                evaData[sortIndex][11] = Boolean.TRUE;
+	                evaData[sortIndex][12] = Boolean.TRUE;
 	                if (colorCount < 5) {
 	                    evaData[sortIndex][10] = spColor[colorCount][0];
-	                    evaData[sortIndex][11] = Boolean.TRUE;
+	                }
+	                else {
+	                	evaData[sortIndex][10] = new Color(generator.nextInt(255) + 1, generator.nextInt(255) + 1, generator.nextInt(255) + 1);
 	                }
 	                colorCount++;
 	                sortIndex++;
