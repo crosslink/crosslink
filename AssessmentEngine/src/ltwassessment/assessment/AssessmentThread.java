@@ -204,12 +204,12 @@ public class AssessmentThread extends Thread {
 						break;
 					}
 					
-					Thread.sleep(100);
-					Thread.sleep(1000);
+//					Thread.sleep(100);
+//					Thread.sleep(1000);
 				}
-				catch (InterruptedException e) {
-						e.printStackTrace();
-				}
+//				catch (InterruptedException e) {
+//						e.printStackTrace();
+//				}
 				catch (Exception ex) {
 					ex.printStackTrace();
 				}
