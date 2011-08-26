@@ -4,7 +4,7 @@
 	<collection>Korean Wikipedia 2010 Collection</collection>
 	<topic file="54912" name="Dew point">
 		<outgoinglinks>
-			<anchor arel="0" aname="e" aoffset="7" alength="1" ext_length="0">
+			<anchor arel="-1" aname="e" aoffset="7" alength="1" ext_length="0">
 				<subanchor sarel="0" saname="e" saoffset="7" salength="1" rank="64">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="E小調">745006</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Ë">220651</tobep>
@@ -14,19 +14,19 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="E">6131</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="TF" aoffset="31" alength="2" ext_length="0">
+			<anchor arel="-1" aname="TF" aoffset="31" alength="2" ext_length="0">
 				<subanchor sarel="0" saname="TF" saoffset="31" salength="2" rank="25">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中国图书馆分类法 (TF)">208406</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="運鐵蛋白">926360</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="法属南部领地">93384</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Wiki" aoffset="62" alength="4" ext_length="0">
+			<anchor arel="-1" aname="Wiki" aoffset="62" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="Wiki" saoffset="62" salength="4" rank="13">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Wiki">165</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="td" aoffset="192" alength="2" ext_length="0">
+			<anchor arel="-1" aname="td" aoffset="192" alength="2" ext_length="0">
 				<subanchor sarel="0" saname="td" saoffset="192" salength="2" rank="55">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="達陣">401668</tobep>
 				</subanchor>
@@ -60,21 +60,21 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="收視點">39644</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Atmospheric" aoffset="522" alength="11" ext_length="15">
-				<subanchor sarel="0" saname="Atmospheric" saoffset="522" salength="11" rank="99">
+			<anchor arel="-1" aname="Atmospheric" aoffset="522" alength="11" ext_length="15">
+				<subanchor sarel="-1" saname="Atmospheric" saoffset="522" salength="11" rank="99">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Earth&apos;s_atmosphere">89681</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Earth&apos;s_atmosphere">38476</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="atmospheres">106114</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="atmosphere">12606</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="大气层">65408</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="Atmospheric thermodynamics" saoffset="522" salength="26" rank="28">
+				<subanchor sarel="-1" saname="Atmospheric thermodynamics" saoffset="522" salength="26" rank="28">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="大气层">65408</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="thermodynamic" saoffset="534" salength="13" rank="40">
+				<subanchor sarel="-1" saname="thermodynamic" saoffset="534" salength="13" rank="40">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="热力学">6218</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="thermodynamics" saoffset="534" salength="14" rank="3">
+				<subanchor sarel="-1" saname="thermodynamics" saoffset="534" salength="14" rank="3">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="熱平衡">615602</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="黑洞热力学">911311</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="能量守恒定律">35930</tobep>
@@ -84,8 +84,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="非平衡態熱力學">421438</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="dew" aoffset="598" alength="3" ext_length="0">
-				<subanchor sarel="0" saname="dew" saoffset="598" salength="3" rank="8">
+			<anchor arel="-1" aname="dew" aoffset="598" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="dew" saoffset="598" salength="3" rank="8">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="寒露">71252</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="露水">241738</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="花露水">109168</tobep>
@@ -130,8 +130,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="温度">4460</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="to" aoffset="631" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="to" saoffset="631" salength="2" rank="155">
+			<anchor arel="-1" aname="to" aoffset="631" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="to" saoffset="631" salength="2" rank="155">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="新竹縣鄉道列表">1026537</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="花蓮縣鄉道列表">1067987</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="と">242573</tobep>
@@ -158,8 +158,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="美国总统1美元纪念币">673593</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="given" aoffset="642" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="given" saoffset="642" salength="5" rank="220">
+			<anchor arel="-1" aname="given" aoffset="642" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="given" saoffset="642" salength="5" rank="220">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="同餘關係">403284</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="統計獨立性">420936</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="活动标架法">259770</tobep>
@@ -167,8 +167,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="偏序关系">35329</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="parcel" aoffset="648" alength="6" ext_length="0">
-				<subanchor sarel="0" saname="parcel" saoffset="648" salength="6" rank="60">
+			<anchor arel="-1" aname="parcel" aoffset="648" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="parcel" saoffset="648" salength="6" rank="60">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="赵承熙">527952</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="电子邮封">949903</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="张季鸾">873826</tobep>
