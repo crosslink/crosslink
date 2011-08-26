@@ -2479,18 +2479,18 @@
 				<subanchor sarel="1" saname="Battle" saoffset="7195" salength="6" rank="13">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="戰鬥">519665</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="巴特尔 (英国城镇)">1248994</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中国国民革命军第十八集團軍">1263159</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="美國海軍戰鬥機武器學校">1128516</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="亞克興角戰役">772010</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="勇者斗恶龙IV 被引导的人们">1006708</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="施勞弗高地戰役">1253511</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="陣風戰鬥機">317491</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="第343海军航空队">1086473</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="战役">76473</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="条顿堡森林战役">962735</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中国国民革命军第十八集團軍">1263159</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="美國海軍戰鬥機武器學校">1128516</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="亞克興角戰役">772010</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="勇者斗恶龙IV 被引导的人们">1006708</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="施勞弗高地戰役">1253511</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="陣風戰鬥機">317491</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="第343海军航空队">1086473</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="战役">76473</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="条顿堡森林战役">962735</tobep>
 				</subanchor>
 				<subanchor sarel="-1" saname="Battle of" saoffset="7195" salength="9" rank="176">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="战役">76473</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="战役">76473</tobep>
 				</subanchor>
 				<subanchor sarel="1" saname="Battle of Tours" saoffset="7195" salength="15" rank="4">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="圖爾 (小說人物)">94989</tobep>
@@ -3108,7 +3108,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="無">515544</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="period" aoffset="8202" alength="6" ext_length="0">
+			<anchor arel="-1" aname="period" aoffset="8202" alength="6" ext_length="0">
 				<subanchor sarel="-1" saname="period" saoffset="8202" salength="6" rank="237">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中華民國歷任政務委員">1266952</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="趙珮">1259800</tobep>
