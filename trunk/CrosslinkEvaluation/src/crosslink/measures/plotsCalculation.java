@@ -68,7 +68,7 @@ public final class plotsCalculation extends Data {
         Hashtable runTable = null;
         if (isFileToBEP || isAnchorGToFile || isAnchorGToBEP) {
 
-            plotResult = fileToBepPlotMeasures.getFileToBepPlotResult(/*resultfile, */runfile, isAllTopics, useFileToBep, useAnchorToFile, useAnchorToBEP);
+            plotResult = fileToBepPlotMeasures.getFileToBepPlotResult(/*resultfile, */runfile, isAllTopics, useFileToBep, useAnchorToFile, useAnchorToBEP, lang);
 
         } else {
             runTable = getRunSet(runfile, lang);

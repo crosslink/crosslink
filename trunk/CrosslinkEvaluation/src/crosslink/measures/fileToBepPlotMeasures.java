@@ -41,7 +41,7 @@ public final class fileToBepPlotMeasures extends Measures {
     public fileToBepPlotMeasures() {
     }
 
-    public static plotsCalculation.PRCurveResult getFileToBepPlotResult(/*File resultfile, */File runfile, boolean isAllTopics, boolean useFileToBep, boolean useAnchorToFile, boolean useAnchorToBEP)
+    public static plotsCalculation.PRCurveResult getFileToBepPlotResult(/*File resultfile, */File runfile, boolean isAllTopics, boolean useFileToBep, boolean useAnchorToFile, boolean useAnchorToBEP, int lang)
     	throws Exception {
 
         isUseAllTopics = isAllTopics ? true : false;
@@ -56,7 +56,7 @@ public final class fileToBepPlotMeasures extends Measures {
         if (isFileToBEP) {
             // the performance is measured by each File-to-BEP
             // so the result is calculated by each File-to-BEP in Run against the ONE in ResultSet
-            runTable = getF2BRunSet(runfile);
+            runTable = getF2BRunSet(runfile, lang);
             resultfile = ResultSetManager.getInstance().getResultSetPathFile(currentSourceLang, currentTargetLang);
             resultTable = ResultSetManager.getInstance().getResultSet(resultfile);
             if (resultTable == null) {
@@ -64,7 +64,7 @@ public final class fileToBepPlotMeasures extends Measures {
             	ResultSetManager.getInstance().addResultSet(resultfile, resultTable);
             }
         } else if (isAnchorGToFile || isAnchorGToBEP) {
-            runTable = getF2BRunSetByGroup(runfile);
+            runTable = getF2BRunSetByGroup(runfile, lang);
             resultfile = ResultSetManager.getInstance().getResultSetPathFile(currentSourceLang, currentTargetLang);
             resultTable = ResultSetManager.getInstance().getResultSet(resultfile);
             if (resultTable == null) {

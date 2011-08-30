@@ -72,7 +72,7 @@ public final class metricsCalculation extends Data {
 
         if (isFileToBEP || isAnchorGToFile || isAnchorGToBEP) {
 
-            result = fileToBepMeasures.getFileToBepResult(/*resultfiles, */runfiles, isAllTopics, useFileToBep, useAnchorToFile, useAnchorToBEP);
+            result = fileToBepMeasures.getFileToBepResult(/*resultfiles, */runfiles, isAllTopics, useFileToBep, useAnchorToFile, useAnchorToBEP, lang);
 
         } else {
             runTable = getRunSet(runfiles, lang);

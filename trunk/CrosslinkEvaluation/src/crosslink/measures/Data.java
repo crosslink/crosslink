@@ -26,7 +26,7 @@ public class Data {
     public static final int LANGUAGE_ENGLISH = 16;
     public static final int LANGUAGE_ALL = 14;
     
-    private static Map<String, Integer> langMatchMap = new HashMap<String, Integer>();
+    protected static Map<String, Integer> langMatchMap = new HashMap<String, Integer>();
     
     protected static String runId = "";
     
@@ -46,9 +46,11 @@ public class Data {
     
     // -------------------------------------------------------------------------
     // fro anchor to bep evaluation using manual assessment result
-    protected static int[] pAtValue = {5, 10, 20, 30, 50, 250};
+//    protected static int[] pAtValue = {5, 10, 20, 30, 50, 250};
+    protected static int[] pAtValue = {100, 200, 300, 500, 750, 1250};
     // fro anchor to file (file to file) evaluation using Wikipedia ground truth
-    protected static int[] pAtValue_A2F = {5, 10, 20, 30, 50, 100};
+//    protected static int[] pAtValue_A2F = {5, 10, 20, 30, 50, 100};
+    protected static int[] pAtValue_A2F = {5, 10, 20, 30, 50, 250};
     
     
     static {

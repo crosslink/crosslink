@@ -43,14 +43,14 @@ public final class fileToBepMeasures extends Measures {
     public fileToBepMeasures() {
     }
 
-    public static metricsCalculation.EvaluationResult getFileToBepResult(/*File resultfiles, */File runfile, boolean isAllTopics, boolean useFileToBep, boolean useAnchorToFile, boolean useAnchorToBEP) throws Exception {
+    public static metricsCalculation.EvaluationResult getFileToBepResult(/*File resultfiles, */File runfile, boolean isAllTopics, boolean useFileToBep, boolean useAnchorToFile, boolean useAnchorToBEP, int lang) throws Exception {
 
         isUseAllTopics = isAllTopics ? true : false;
         isFileToBEP = useFileToBep ? true : false;
         isAnchorGToFile = useAnchorToFile ? true : false;
         isAnchorGToBEP = useAnchorToBEP ? true : false;
 
-        metricsCalculation.EvaluationResult result = new metricsCalculation.EvaluationResult();
+        metricsCalculation.EvaluationResult result = null;
         Hashtable resultTable = null;
         Hashtable runTable = null;
 
@@ -69,75 +69,82 @@ public final class fileToBepMeasures extends Measures {
         if (isFileToBEP) {
             // the performance is measured by each File-to-BEP
             // so the result is calculated by each File-to-BEP in Run against the ONE in ResultSet
-            runTable = getF2BRunSet(runfile);
-            resultfile = ResultSetManager.getInstance().getResultSetPathFile(currentSourceLang, currentTargetLang);
-            resultTable = ResultSetManager.getInstance().getResultSet(resultfile);
-            if (resultTable == null) {
-            	resultTable = getF2BResultSet(new File(resultfile));
-            	ResultSetManager.getInstance().addResultSet(resultfile, resultTable);
+            runTable = getF2BRunSet(runfile, lang);
+            if (runTable != null) {
+	            resultfile = ResultSetManager.getInstance().getResultSetPathFile(currentSourceLang, currentTargetLang);
+	            resultTable = ResultSetManager.getInstance().getResultSet(resultfile);
+	            if (resultTable == null) {
+	            	resultTable = getF2BResultSet(new File(resultfile));
+	            	ResultSetManager.getInstance().addResultSet(resultfile, resultTable);
+	            }
             }
         } else if (isAnchorGToFile || isAnchorGToBEP) {
-            runTable = getF2BRunSetByGroup(runfile);
-            resultfile = ResultSetManager.getInstance().getResultSetPathFile(currentSourceLang, currentTargetLang);
-            resultTable = ResultSetManager.getInstance().getResultSet(resultfile);
-            if (resultTable == null) {
-            	resultTable = getF2BResultSetByGroup(new File(resultfile));
-            	ResultSetManager.getInstance().addResultSet(resultfile, resultTable);
+            runTable = getF2BRunSetByGroup(runfile, lang);
+            if (runTable != null) {
+	            resultfile = ResultSetManager.getInstance().getResultSetPathFile(currentSourceLang, currentTargetLang);
+	            resultTable = ResultSetManager.getInstance().getResultSet(resultfile);
+	            if (resultTable == null) {
+	            	resultTable = getF2BResultSetByGroup(new File(resultfile));
+	            	ResultSetManager.getInstance().addResultSet(resultfile, resultTable);
+	            }
             }
         } else {
         	throw new Exception("Uncertain evaluation type");
         }
-
-        // =====================================================================
-        // 1) result: get run ID
-        result.runId = runId;
-
-        String tempRunID = result.runId;
-        // =====================================================================
-        // Get MAP
-        double[] oiMAP = getMAP(tempRunID, resultTable, runTable);
-
-        double outgoingMAP = oiMAP[0];
-        double outMAP = 0.00001 * Math.random();
-        if (outgoingMAP > 0) {
-            outgoingMAP = outMAP + outgoingMAP;
-        }
-
-        double incomingMAP = oiMAP[1];
-        double MAP = 0.0001 * Math.random();
-
-        if ((outgoingMAP + incomingMAP) > 0) {
-            MAP = MAP + (double) 2 * (outgoingMAP * incomingMAP) / (outgoingMAP + incomingMAP);
-        }
-        result.outgoing[metricsCalculation.R_MAP] = outgoingMAP;
-        result.incomming[metricsCalculation.R_MAP] = incomingMAP;
-        result.combination[metricsCalculation.R_MAP] = MAP;
-
-        // =====================================================================
-        // Get R-Precision
-        double[] oiRPrecs = getRPrecs(resultTable, runTable);
-        double AveoutgoingRPrec = oiRPrecs[0];
-        double AveincomingRPrecs = oiRPrecs[1];
-        double AveRPrecs = 0.0;
-        if ((AveoutgoingRPrec + AveincomingRPrecs) > 0) {
-            AveRPrecs = (double) 2 * (AveoutgoingRPrec * AveincomingRPrecs) / (AveoutgoingRPrec + AveincomingRPrecs);
-        }
-        result.outgoing[metricsCalculation.R_RPREC] = AveoutgoingRPrec;
-        result.incomming[metricsCalculation.R_RPREC] = AveincomingRPrecs;
-        result.combination[metricsCalculation.R_RPREC] = AveRPrecs;
-        // =====================================================================
-        // Get Precision@
-        double[][] oiPrecsAT = getPrecsAT(resultTable, runTable);
-        double[] AveoutgoingPrecsAt = {oiPrecsAT[0][0], oiPrecsAT[0][1], oiPrecsAT[0][2], oiPrecsAT[0][3], oiPrecsAT[0][4], oiPrecsAT[0][5]};
-        double[] AveincomingPrecsAt = {oiPrecsAT[1][0], oiPrecsAT[1][1], oiPrecsAT[1][2], oiPrecsAT[1][3], oiPrecsAT[1][4], oiPrecsAT[1][5]};
-        for (int i = 0; i < 6; i++) {
-            double AvePrecsAt = 0.0;
-            if ((AveoutgoingPrecsAt[i] + AveincomingPrecsAt[i]) > 0) {
-                AvePrecsAt = (double) 2 * (AveoutgoingPrecsAt[i] * AveincomingPrecsAt[i]) / (AveoutgoingPrecsAt[i] + AveincomingPrecsAt[i]);
-            }
-            result.outgoing[metricsCalculation.R_P5 + i] = AveoutgoingPrecsAt[i];
-            result.incomming[metricsCalculation.R_P5 + i] = AveincomingPrecsAt[i];
-            result.combination[metricsCalculation.R_P5 + i] = AvePrecsAt;
+        
+        if (runTable != null) {
+        	result = new metricsCalculation.EvaluationResult();
+	        // =====================================================================
+	        // 1) result: get run ID
+	        result.runId = runId;
+	
+	        String tempRunID = result.runId;
+	        // =====================================================================
+	        // Get MAP
+	        double[] oiMAP = getMAP(tempRunID, resultTable, runTable);
+	
+	        double outgoingMAP = oiMAP[0];
+	        double outMAP = 0.00001 * Math.random();
+	        if (outgoingMAP > 0) {
+	            outgoingMAP = outMAP + outgoingMAP;
+	        }
+	
+	        double incomingMAP = oiMAP[1];
+	        double MAP = 0.0001 * Math.random();
+	
+	        if ((outgoingMAP + incomingMAP) > 0) {
+	            MAP = MAP + (double) 2 * (outgoingMAP * incomingMAP) / (outgoingMAP + incomingMAP);
+	        }
+	        result.outgoing[metricsCalculation.R_MAP] = outgoingMAP;
+	        result.incomming[metricsCalculation.R_MAP] = incomingMAP;
+	        result.combination[metricsCalculation.R_MAP] = MAP;
+	
+	        // =====================================================================
+	        // Get R-Precision
+	        double[] oiRPrecs = getRPrecs(resultTable, runTable);
+	        double AveoutgoingRPrec = oiRPrecs[0];
+	        double AveincomingRPrecs = oiRPrecs[1];
+	        double AveRPrecs = 0.0;
+	        if ((AveoutgoingRPrec + AveincomingRPrecs) > 0) {
+	            AveRPrecs = (double) 2 * (AveoutgoingRPrec * AveincomingRPrecs) / (AveoutgoingRPrec + AveincomingRPrecs);
+	        }
+	        result.outgoing[metricsCalculation.R_RPREC] = AveoutgoingRPrec;
+	        result.incomming[metricsCalculation.R_RPREC] = AveincomingRPrecs;
+	        result.combination[metricsCalculation.R_RPREC] = AveRPrecs;
+	        // =====================================================================
+	        // Get Precision@
+	        double[][] oiPrecsAT = getPrecsAT(resultTable, runTable);
+	        double[] AveoutgoingPrecsAt = {oiPrecsAT[0][0], oiPrecsAT[0][1], oiPrecsAT[0][2], oiPrecsAT[0][3], oiPrecsAT[0][4], oiPrecsAT[0][5]};
+	        double[] AveincomingPrecsAt = {oiPrecsAT[1][0], oiPrecsAT[1][1], oiPrecsAT[1][2], oiPrecsAT[1][3], oiPrecsAT[1][4], oiPrecsAT[1][5]};
+	        for (int i = 0; i < 6; i++) {
+	            double AvePrecsAt = 0.0;
+	            if ((AveoutgoingPrecsAt[i] + AveincomingPrecsAt[i]) > 0) {
+	                AvePrecsAt = (double) 2 * (AveoutgoingPrecsAt[i] * AveincomingPrecsAt[i]) / (AveoutgoingPrecsAt[i] + AveincomingPrecsAt[i]);
+	            }
+	            result.outgoing[metricsCalculation.R_P5 + i] = AveoutgoingPrecsAt[i];
+	            result.incomming[metricsCalculation.R_P5 + i] = AveincomingPrecsAt[i];
+	            result.combination[metricsCalculation.R_P5 + i] = AvePrecsAt;
+	        }
         }
 
         return result;
@@ -232,14 +239,19 @@ public final class fileToBepMeasures extends Measures {
                     Vector aaptV = new Vector();
                     for (int l = 0; l < resultSet.length; l++) {
                         String[] rsSet = resultSet[l].trim().split("_");
-                        String rsAnchorOffset = rsSet[0].trim();
-                        String rsAnchorLength = rsSet[1].trim();
-                        String rsbFileID = rsSet[2].trim();
-                        int rsbBEP = 0;
-                        if (rsSet.length > 3)
-                        	rsbBEP = Integer.valueOf(rsSet[3].trim());
-                        if (!aaptV.contains(rsAnchorOffset + "_" + rsAnchorLength)) {
-                            aaptV.add(rsAnchorOffset + "_" + rsAnchorLength);
+                        if (rsSet.length == 4) {
+	                        String rsAnchorOffset = rsSet[0].trim();
+	                        String rsAnchorLength = rsSet[1].trim();
+	                        String rsbFileID = rsSet[2].trim();
+	                        int rsbBEP = 0;
+	                        if (rsSet.length > 3)
+	                        	rsbBEP = Integer.valueOf(rsSet[3].trim());
+	                        if (!aaptV.contains(rsAnchorOffset + "_" + rsAnchorLength)) {
+	                            aaptV.add(rsAnchorOffset + "_" + rsAnchorLength);
+	                        }
+                        }
+                        else {
+                        	System.err.println("Error: " + resultSet[l]);
                         }
                     }
                     // ---------------------------------------------------------
