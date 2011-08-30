@@ -298,6 +298,9 @@ public final class fileToBepMeasures extends Measures {
                             Object runAnchorSet = runAnchorEnu.nextElement();
                             Vector runBepSetV = (Vector) runHT.get(runAnchorSet.toString());
                             String[] runAnchorOL = runAnchorSet.toString().split("_");
+                            if (runBepSetV == null || runAnchorOL == null || runAnchorOL[0].equalsIgnoreCase("null")) {
+                            	System.err.println("Error: " + runAnchorSet.toString());
+                            }
 //                            log("runAnchorSet: " + runAnchorSet.toString());
                             int runAStartPoint = Integer.valueOf(runAnchorOL[0]);
                             int runAEndPoint = Integer.valueOf(runAnchorOL[0]) + Integer.valueOf(runAnchorOL[1]);
