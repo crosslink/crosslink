@@ -442,7 +442,7 @@ public class Measures extends Data {
 	                        // to get AnchorInfo: File, Offset & Length ------------
 	                        String aFile = "";
 	                        String aOffset = "";
-	                        String aLength = "";
+	                        String aLength = "0";
 	
 	//                        aFile = is.getTopic().get(i).getOutgoing().getAnchor().get(j).getAnchor().getFile();
 	                        aOffset = is.getTopic().get(i).getOutgoing().getAnchor().get(j).getOffset();
@@ -467,26 +467,31 @@ public class Measures extends Data {
 	                        // -----------------------------------------------------
 	                        // see below: an Anchor may be pointed to a number of BEP links
 	                        // <link><anchor></anchor><linkto></linkto><linkto></linkto>...</link>
-	                        for (int k = 0; k < maxBepsPerAnchor; k++) {
-	                            toFile = linkTo.get(k).getFile().toString().trim();
-	                            if (toFile.equals("")) {
-	                                int endop = toFile.toLowerCase().indexOf(".xml");
-	                                if (endop != -1) {
-	                                    toFile = toFile.substring(0, endop);
-	                                }
-	                            }
-	                            if (linkTo.get(k).getBep_offset() == null) {
-	                                toBep = "0";
-	                            } else {
-	                                toBep = linkTo.get(k).getBep_offset().toString().trim();
-	                            }
-	                            // -------------------------------------------------
-	                            // to eliminate duplicate Anchor-BEP links
-	                            // aOffset_aLength_bFileID_bBep
-	                            // 99_13_1234_58
-	                            if (!outF2GroupBepV.contains(aOffset + "_" + aLength + "_" + toFile + "_" + toBep)) {
-	                                outF2GroupBepV.add(aOffset + "_" + aLength + "_" + toFile + "_" + toBep);
-	                            }
+	                        if (aLength != null && Integer.parseInt(aLength) > 0) {
+	                        	for (int k = 0; k < maxBepsPerAnchor; k++) {
+		                            toFile = linkTo.get(k).getFile().toString().trim();
+		                            if (toFile.equals("")) {
+		                                int endop = toFile.toLowerCase().indexOf(".xml");
+		                                if (endop != -1) {
+		                                    toFile = toFile.substring(0, endop);
+		                                }
+		                            }
+		                            if (linkTo.get(k).getBep_offset() == null) {
+		                                toBep = "0";
+		                            } else {
+		                                toBep = linkTo.get(k).getBep_offset().toString().trim();
+		                            }
+		                            // -------------------------------------------------
+		                            // to eliminate duplicate Anchor-BEP links
+		                            // aOffset_aLength_bFileID_bBep
+		                            // 99_13_1234_58
+		                            if (!outF2GroupBepV.contains(aOffset + "_" + aLength + "_" + toFile + "_" + toBep)) {
+		                                outF2GroupBepV.add(aOffset + "_" + aLength + "_" + toFile + "_" + toBep);
+		                            }
+		                        }
+	                        }
+	                        else {
+	                        	System.err.println("Error: empty anchor");
 	                        }
 	                        // ---------------------------------------------------------
 	                        // we can see a problem here WHEN the run format is incorrect
