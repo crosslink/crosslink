@@ -28,7 +28,7 @@ public class Measures extends Data {
     // 2) set Up Max Anchors per Topic is 50. 
     //    If maxAnchors = 0 or a number that is greater than the total returned Anchors
     //    the Anchors retrived will be "the total returned Anchors"
-    protected static int defaultMaxAnchorsPerTopic = 50;
+    protected static int defaultMaxAnchorsPerTopic = 250;
     // 3) set Up Max BEP links per Anchor is 5. 
     //    If maxBepsPerAnchor = 0 or a number that is greater than the total returned BEPs
     //    the BEPs retrived will be "the total returned BEPs"
@@ -273,8 +273,8 @@ public class Measures extends Data {
     //          but compare them one by one as "BepFileID-Offset".
     //          We do not limit the number of Anchors per Topic as well as BEPs per Anchor
     // notes02: Incoming links should be further modified
-    protected static Hashtable getF2BRunSet(File runfiles) throws Exception {
-        Hashtable f2bRunTable = new Hashtable();
+    protected static Hashtable getF2BRunSet(File runfiles, int lang) throws Exception {
+        Hashtable f2bRunTable = null;
 
         try {
 
@@ -292,89 +292,92 @@ public class Measures extends Data {
             if (currentTargetLang == null || currentTargetLang.length() == 0)
             	throw new Exception(String.format("Incorrect run file - %s which dosen't provide the target language", runfiles.getAbsoluteFile()));
 
-            runId = is.getRunId();
-            for (int i = 0; i < is.getTopic().size(); i++) {
-
-                int endP = is.getTopic().get(i).getFile().toLowerCase().indexOf(".xml");
-                String topicID = is.getTopic().get(i).getFile().substring(0, endP);
-                // -------------------------------------------------------------
-                // populate Outgoing Link Data from the submission Run
-                String[] outLinks = null;
-                if (!is.getTopic().get(i).getOutgoing().getAnchor().isEmpty()) {
-
-                    Vector outF2BV = new Vector();
-                    for (int j = 0; j < is.getTopic().get(i).getOutgoing().getAnchor().size(); j++) {
-
-                        String toFile = "";
-                        String toFileID = "";
-                        String toBep = "";
-                        List<crosslink.rungenerator.ToFileType> linkTo = is.getTopic().get(i).getOutgoing().getAnchor().get(j).getTofile();
-                        for (int k = 0; k < linkTo.size(); k++) {
-                            toFile = linkTo.get(k).getFile().toString().trim();
-                            if (!toFile.equals("")) {
-                                int endop = toFile.toLowerCase().indexOf(".xml");
-                                if (endop != -1) {
-                                    toFileID = toFile.substring(0, endop);
-                                }
-                            }
-                            if (linkTo.get(k).getBep_offset() == null) {
-                                toBep = "0";
-                            } else {
-                                toBep = linkTo.get(k).getBep_offset().toString().trim();
-                            }
-                            // ---------------------------------------------
-                            // 1234_58
-                            if (!outF2BV.contains(toFileID + "_" + toBep)) {
-                                outF2BV.add(toFileID + "_" + toBep);
-                            }
-                        }
-                    }
-
-                    if (outF2BV.size() >= 1) {
-                        outLinks = new String[outF2BV.size()];
-                        int olCounter = 0;
-                        Enumeration olEnu = outF2BV.elements();
-                        while (olEnu.hasMoreElements()) {
-                            Object olObj = olEnu.nextElement();
-                            outLinks[olCounter] = olObj.toString().trim();
-                            olCounter++;
-                        }
-                    } else {
-                        outLinks = new String[1];
-                        outLinks[0] = "";
-                    }
-
-                } else {
-                    outLinks = new String[1];
-                    outLinks[0] = "";
-                }
-                f2bRunTable.put(topicID + "_" + outgoingTag, outLinks);
-
-                // -------------------------------------------------------------
-                // populate Incoming Link Data in the submission Run
-                // (XXX) There is NO Incoming Links Currently.
-                // (XXX) Thus, this part should be further modified in the future
-//                String[] inLinks = new String[is.getTopic().get(i).getIncoming(getAnchor()().size()];
-//                if (!is.getTopic().get(i).getIncoming().getLink().isEmpty()) {
-//                    for (int k = 0; k < is.getTopic().get(i).getIncoming().getLink().size(); k++) {
-//                        String fromFile = is.getTopic().get(i).getIncoming().getLink().get(k).getAnchor().getFile().toString().trim();
-//                        if (!fromFile.equals("")) {
-//                            int endip = fromFile.toLowerCase().indexOf(".xml");
-//                            if (endip != -1) {
-//                                inLinks[k] = fromFile.substring(0, endip);
-//                            }
-//                        }
-//                    }
-//                    if (inLinks[0] == null) {
-//                        inLinks = new String[1];
-//                        inLinks[0] = "";
-//                    }
-//                } else {
-//                    inLinks = new String[1];
-//                    inLinks[0] = "";
-//                }
-//                f2bRunTable.put(topicID + "_" + incomingTag, inLinks);
-                // =============================================================
+            if ((langMatchMap.get(currentTargetLang) & lang) > 0) {
+            	f2bRunTable = new Hashtable();
+	            runId = is.getRunId();
+	            for (int i = 0; i < is.getTopic().size(); i++) {
+	
+	                int endP = is.getTopic().get(i).getFile().toLowerCase().indexOf(".xml");
+	                String topicID = is.getTopic().get(i).getFile().substring(0, endP);
+	                // -------------------------------------------------------------
+	                // populate Outgoing Link Data from the submission Run
+	                String[] outLinks = null;
+	                if (!is.getTopic().get(i).getOutgoing().getAnchor().isEmpty()) {
+	
+	                    Vector outF2BV = new Vector();
+	                    for (int j = 0; j < is.getTopic().get(i).getOutgoing().getAnchor().size(); j++) {
+	
+	                        String toFile = "";
+	                        String toFileID = "";
+	                        String toBep = "";
+	                        List<crosslink.rungenerator.ToFileType> linkTo = is.getTopic().get(i).getOutgoing().getAnchor().get(j).getTofile();
+	                        for (int k = 0; k < linkTo.size(); k++) {
+	                            toFile = linkTo.get(k).getFile().toString().trim();
+	                            if (!toFile.equals("")) {
+	                                int endop = toFile.toLowerCase().indexOf(".xml");
+	                                if (endop != -1) {
+	                                    toFileID = toFile.substring(0, endop);
+	                                }
+	                            }
+	                            if (linkTo.get(k).getBep_offset() == null) {
+	                                toBep = "0";
+	                            } else {
+	                                toBep = linkTo.get(k).getBep_offset().toString().trim();
+	                            }
+	                            // ---------------------------------------------
+	                            // 1234_58
+	                            if (!outF2BV.contains(toFileID + "_" + toBep)) {
+	                                outF2BV.add(toFileID + "_" + toBep);
+	                            }
+	                        }
+	                    }
+	
+	                    if (outF2BV.size() >= 1) {
+	                        outLinks = new String[outF2BV.size()];
+	                        int olCounter = 0;
+	                        Enumeration olEnu = outF2BV.elements();
+	                        while (olEnu.hasMoreElements()) {
+	                            Object olObj = olEnu.nextElement();
+	                            outLinks[olCounter] = olObj.toString().trim();
+	                            olCounter++;
+	                        }
+	                    } else {
+	                        outLinks = new String[1];
+	                        outLinks[0] = "";
+	                    }
+	
+	                } else {
+	                    outLinks = new String[1];
+	                    outLinks[0] = "";
+	                }
+	                f2bRunTable.put(topicID + "_" + outgoingTag, outLinks);
+	
+	                // -------------------------------------------------------------
+	                // populate Incoming Link Data in the submission Run
+	                // (XXX) There is NO Incoming Links Currently.
+	                // (XXX) Thus, this part should be further modified in the future
+	//                String[] inLinks = new String[is.getTopic().get(i).getIncoming(getAnchor()().size()];
+	//                if (!is.getTopic().get(i).getIncoming().getLink().isEmpty()) {
+	//                    for (int k = 0; k < is.getTopic().get(i).getIncoming().getLink().size(); k++) {
+	//                        String fromFile = is.getTopic().get(i).getIncoming().getLink().get(k).getAnchor().getFile().toString().trim();
+	//                        if (!fromFile.equals("")) {
+	//                            int endip = fromFile.toLowerCase().indexOf(".xml");
+	//                            if (endip != -1) {
+	//                                inLinks[k] = fromFile.substring(0, endip);
+	//                            }
+	//                        }
+	//                    }
+	//                    if (inLinks[0] == null) {
+	//                        inLinks = new String[1];
+	//                        inLinks[0] = "";
+	//                    }
+	//                } else {
+	//                    inLinks = new String[1];
+	//                    inLinks[0] = "";
+	//                }
+	//                f2bRunTable.put(topicID + "_" + incomingTag, inLinks);
+	                // =============================================================
+	            }
             }
 
         } catch (JAXBException ex) {
@@ -390,9 +393,9 @@ public class Measures extends Data {
     //          maxAnchors == 0 or > size(): equal to size(), otherwise, specified number (e.g. 50)
     //          maxBepsPerAnchor == 0 or > size(): equal to size(), otherwise, specified number (e.g. 5)
     // notes02: Incoming links should be further modified
-    protected static Hashtable getF2BRunSetByGroup(File runfiles) throws Exception {
+    protected static Hashtable getF2BRunSetByGroup(File runfiles, int lang) throws Exception {
 
-        Hashtable f2bRunTableByGroup = new Hashtable();
+        Hashtable f2bRunTableByGroup = null;
         try {
             JAXBContext jc;
             jc = JAXBContext.newInstance("crosslink.rungenerator");
@@ -408,139 +411,144 @@ public class Measures extends Data {
             if (currentTargetLang == null || currentTargetLang.length() == 0)
             	throw new Exception(String.format("Incorrect run file - %s which dosen't provide the target language", runfiles.getAbsoluteFile()));
 
-            
-            runId = is.getRunId();
-            // Loop Different Topics
-            for (int i = 0; i < is.getTopic().size(); i++) {
-
-                int endP = is.getTopic().get(i).getFile().toLowerCase().indexOf(".xml");
-                String topicID = is.getTopic().get(i).getFile().substring(0, endP);
-                // -------------------------------------------------------------
-                // Inside Outgoing Links
-                String[] outLinks = null;
-                if (!is.getTopic().get(i).getOutgoing().getAnchor().isEmpty()) {
-
-                    Vector outF2GroupBepV = new Vector();
-                    // Loop Each Group by Anchor
-                    // BUT the same anchor may distribute in different groups
-                    int maxAnchors = defaultMaxAnchorsPerTopic;
-                    if (maxAnchors == 0) {
-                        maxAnchors = is.getTopic().get(i).getOutgoing().getAnchor().size();
-                    } else if (maxAnchors >= is.getTopic().get(i).getOutgoing().getAnchor().size()) {
-                        maxAnchors = is.getTopic().get(i).getOutgoing().getAnchor().size();
-                    }
-                    for (int j = 0; j < maxAnchors; j++) {
-
-                        // to get AnchorInfo: File, Offset & Length ------------
-                        String aFile = "";
-                        String aOffset = "";
-                        String aLength = "";
-
-//                        aFile = is.getTopic().get(i).getOutgoing().getAnchor().get(j).getAnchor().getFile();
-                        aOffset = is.getTopic().get(i).getOutgoing().getAnchor().get(j).getOffset();
-//                        aOffset = String.valueOf(Math.floor(1000000000 * Math.random()));
-                        if (is.getTopic().get(i).getOutgoing().getAnchor().get(j) == null) {
-                            aLength = "10"; //kludge - when there is no anchor in the submission, just F2F
-                        } else {
-                            aLength = is.getTopic().get(i).getOutgoing().getAnchor().get(j).getLength();
-                        }
-                        // -----------------------------------------------------
-                        String toFile = "";
-                        String toFileID = "";
-                        String toBep = "";
-                        List<crosslink.rungenerator.ToFileType> linkTo = is.getTopic().get(i).getOutgoing().getAnchor().get(j).getTofile();
-                        // -----------------------------------------------------
-                        int maxBepsPerAnchor = defaultMaxBepsPerAnchor;
-                        if (maxBepsPerAnchor == 0) {
-                            maxBepsPerAnchor = linkTo.size();
-                        } else if (maxBepsPerAnchor >= linkTo.size()) {
-                            maxBepsPerAnchor = linkTo.size();
-                        }
-                        // -----------------------------------------------------
-                        // see below: an Anchor may be pointed to a number of BEP links
-                        // <link><anchor></anchor><linkto></linkto><linkto></linkto>...</link>
-                        for (int k = 0; k < maxBepsPerAnchor; k++) {
-                            toFile = linkTo.get(k).getFile().toString().trim();
-                            if (!toFile.equals("")) {
-                                int endop = toFile.toLowerCase().indexOf(".xml");
-                                if (endop != -1) {
-                                    toFileID = toFile.substring(0, endop);
-                                }
-                            }
-                            if (linkTo.get(k).getBep_offset() == null) {
-                                toBep = "0";
-                            } else {
-                                toBep = linkTo.get(k).getBep_offset().toString().trim();
-                            }
-                            // -------------------------------------------------
-                            // to eliminate duplicate Anchor-BEP links
-                            // aOffset_aLength_bFileID_bBep
-                            // 99_13_1234_58
-                            if (!outF2GroupBepV.contains(aOffset + "_" + aLength + "_" + toFileID + "_" + toBep)) {
-                                outF2GroupBepV.add(aOffset + "_" + aLength + "_" + toFileID + "_" + toBep);
-                            }
-                        }
-                        // ---------------------------------------------------------
-                        // we can see a problem here WHEN the run format is incorrect
-                        // by distributing the same Anchor into different <link></link> tags
-                        // For each <link> tag, the program will get "maxBepsPerAnchor" BEPs
-                        // for each anchor, even they are the same anchor (offset-length)
-                        // *** We can resolve this PROBLEM
-                        // when we calculate the performance (measurement) ***
-                        // ---------------------------------------------------------
-                    }
-                    // ---------------------------------------------------------
-                    // transfer Vector data into String Array for returning
-                    if (outF2GroupBepV.size() >= 1) {
-                        outLinks = new String[outF2GroupBepV.size()];
-                        int olCounter = 0;
-                        Enumeration olEnu = outF2GroupBepV.elements();
-                        while (olEnu.hasMoreElements()) {
-                            Object olObj = olEnu.nextElement();
-                            outLinks[olCounter] = olObj.toString().trim();
-                            olCounter++;
-                        }
-                    } else {
-                        outLinks = new String[1];
-                        outLinks[0] = "";
-                    }
-                    // ---------------------------------------------------------
-                    outF2GroupBepV.clear();
-
-                } else {
-                    outLinks = new String[1];
-                    outLinks[0] = "";
-                }
-                f2bRunTableByGroup.put(topicID + "_" + outgoingTag, outLinks);
-                // =============================================================
-
-                // -------------------------------------------------------------
-                // Inside Incoming Links
-                // (XXX) There is NO Incoming Links Currently.
-                //       Thus, this part should be further modified in the future
-//                String[] inLinks = new String[is.getTopic().get(i).getIncoming().getLink().size()];
-//                if (!is.getTopic().get(i).getIncoming().getLink().isEmpty()) {
-//                    for (int k = 0; k < is.getTopic().get(i).getIncoming().getLink().size(); k++) {
-//                        String fromFile = is.getTopic().get(i).getIncoming().getLink().get(k).getAnchor().getFile().toString().trim();
-//                        if (!fromFile.equals("")) {
-//                            int endip = fromFile.toLowerCase().indexOf(".xml");
-//                            if (endip != -1) {
-//                                inLinks[k] = fromFile.substring(0, endip);
-//                            }
-//                        }
-//                    }
-//                    if (inLinks[0] == null) {
-//                        inLinks = new String[1];
-//                        inLinks[0] = "";
-//                    }
-//                } else {
-//                    inLinks = new String[1];
-//                    inLinks[0] = "";
-//                }
-//                f2bRunTableByGroup.put(topicID + "_" + incomingTag, inLinks);
-                // =================================================================
+            if ((langMatchMap.get(currentTargetLang) & lang) > 0) {
+	            f2bRunTableByGroup = new Hashtable();
+	            runId = is.getRunId();
+	            // Loop Different Topics
+	            for (int i = 0; i < is.getTopic().size(); i++) {
+	
+	                int endP = is.getTopic().get(i).getFile().toLowerCase().indexOf(".xml");
+	                String topicID;
+	                if (endP > -1)
+	                	topicID = is.getTopic().get(i).getFile().substring(0, endP);
+	                else
+	                	topicID = is.getTopic().get(i).getFile();
+	                // -------------------------------------------------------------
+	                // Inside Outgoing Links
+	                String[] outLinks = null;
+	                if (!is.getTopic().get(i).getOutgoing().getAnchor().isEmpty()) {
+	
+	                    Vector outF2GroupBepV = new Vector();
+	                    // Loop Each Group by Anchor
+	                    // BUT the same anchor may distribute in different groups
+	                    int maxAnchors = defaultMaxAnchorsPerTopic;
+	                    if (maxAnchors == 0) {
+	                        maxAnchors = is.getTopic().get(i).getOutgoing().getAnchor().size();
+	                    } else if (maxAnchors >= is.getTopic().get(i).getOutgoing().getAnchor().size()) {
+	                        maxAnchors = is.getTopic().get(i).getOutgoing().getAnchor().size();
+	                    }
+	                    for (int j = 0; j < maxAnchors; j++) {
+	
+	                        // to get AnchorInfo: File, Offset & Length ------------
+	                        String aFile = "";
+	                        String aOffset = "";
+	                        String aLength = "";
+	
+	//                        aFile = is.getTopic().get(i).getOutgoing().getAnchor().get(j).getAnchor().getFile();
+	                        aOffset = is.getTopic().get(i).getOutgoing().getAnchor().get(j).getOffset();
+	//                        aOffset = String.valueOf(Math.floor(1000000000 * Math.random()));
+	                        if (is.getTopic().get(i).getOutgoing().getAnchor().get(j) == null) {
+	                            aLength = "10"; //kludge - when there is no anchor in the submission, just F2F
+	                        } else {
+	                            aLength = is.getTopic().get(i).getOutgoing().getAnchor().get(j).getLength();
+	                        }
+	                        // -----------------------------------------------------
+	                        String toFile = "";
+	                        String toFileID = "";
+	                        String toBep = "";
+	                        List<crosslink.rungenerator.ToFileType> linkTo = is.getTopic().get(i).getOutgoing().getAnchor().get(j).getTofile();
+	                        // -----------------------------------------------------
+	                        int maxBepsPerAnchor = defaultMaxBepsPerAnchor;
+	                        if (maxBepsPerAnchor == 0) {
+	                            maxBepsPerAnchor = linkTo.size();
+	                        } else if (maxBepsPerAnchor >= linkTo.size()) {
+	                            maxBepsPerAnchor = linkTo.size();
+	                        }
+	                        // -----------------------------------------------------
+	                        // see below: an Anchor may be pointed to a number of BEP links
+	                        // <link><anchor></anchor><linkto></linkto><linkto></linkto>...</link>
+	                        for (int k = 0; k < maxBepsPerAnchor; k++) {
+	                            toFile = linkTo.get(k).getFile().toString().trim();
+	                            if (toFile.equals("")) {
+	                                int endop = toFile.toLowerCase().indexOf(".xml");
+	                                if (endop != -1) {
+	                                    toFile = toFile.substring(0, endop);
+	                                }
+	                            }
+	                            if (linkTo.get(k).getBep_offset() == null) {
+	                                toBep = "0";
+	                            } else {
+	                                toBep = linkTo.get(k).getBep_offset().toString().trim();
+	                            }
+	                            // -------------------------------------------------
+	                            // to eliminate duplicate Anchor-BEP links
+	                            // aOffset_aLength_bFileID_bBep
+	                            // 99_13_1234_58
+	                            if (!outF2GroupBepV.contains(aOffset + "_" + aLength + "_" + toFile + "_" + toBep)) {
+	                                outF2GroupBepV.add(aOffset + "_" + aLength + "_" + toFile + "_" + toBep);
+	                            }
+	                        }
+	                        // ---------------------------------------------------------
+	                        // we can see a problem here WHEN the run format is incorrect
+	                        // by distributing the same Anchor into different <link></link> tags
+	                        // For each <link> tag, the program will get "maxBepsPerAnchor" BEPs
+	                        // for each anchor, even they are the same anchor (offset-length)
+	                        // *** We can resolve this PROBLEM
+	                        // when we calculate the performance (measurement) ***
+	                        // ---------------------------------------------------------
+	                    }
+	                    // ---------------------------------------------------------
+	                    // transfer Vector data into String Array for returning
+	                    if (outF2GroupBepV.size() >= 1) {
+	                        outLinks = new String[outF2GroupBepV.size()];
+	                        int olCounter = 0;
+	                        Enumeration olEnu = outF2GroupBepV.elements();
+	                        while (olEnu.hasMoreElements()) {
+	                            Object olObj = olEnu.nextElement();
+	                            outLinks[olCounter] = olObj.toString().trim();
+	                            olCounter++;
+	                        }
+	                    } else {
+	                        outLinks = new String[1];
+	                        outLinks[0] = "";
+	                    }
+	                    // ---------------------------------------------------------
+	                    outF2GroupBepV.clear();
+	
+	                } else {
+	                    outLinks = new String[1];
+	                    outLinks[0] = "";
+	                }
+	                f2bRunTableByGroup.put(topicID + "_" + outgoingTag, outLinks);
+	                // =============================================================
+	
+	                // -------------------------------------------------------------
+	                // Inside Incoming Links
+	                // (XXX) There is NO Incoming Links Currently.
+	                //       Thus, this part should be further modified in the future
+	//                String[] inLinks = new String[is.getTopic().get(i).getIncoming().getLink().size()];
+	//                if (!is.getTopic().get(i).getIncoming().getLink().isEmpty()) {
+	//                    for (int k = 0; k < is.getTopic().get(i).getIncoming().getLink().size(); k++) {
+	//                        String fromFile = is.getTopic().get(i).getIncoming().getLink().get(k).getAnchor().getFile().toString().trim();
+	//                        if (!fromFile.equals("")) {
+	//                            int endip = fromFile.toLowerCase().indexOf(".xml");
+	//                            if (endip != -1) {
+	//                                inLinks[k] = fromFile.substring(0, endip);
+	//                            }
+	//                        }
+	//                    }
+	//                    if (inLinks[0] == null) {
+	//                        inLinks = new String[1];
+	//                        inLinks[0] = "";
+	//                    }
+	//                } else {
+	//                    inLinks = new String[1];
+	//                    inLinks[0] = "";
+	//                }
+	//                f2bRunTableByGroup.put(topicID + "_" + incomingTag, inLinks);
+	                // =================================================================
+	            }
             }
-
         } catch (JAXBException ex) {
             ex.printStackTrace();
         }
