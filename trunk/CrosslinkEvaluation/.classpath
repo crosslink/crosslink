@@ -22,7 +22,7 @@
 	<classpathentry kind="lib" path="lib/xercesImpl.jar"/>
 	<classpathentry kind="lib" path="lib/xml-apis.jar"/>
 	<classpathentry kind="lib" path="lib/xor.jar"/>
-	<classpathentry kind="lib" path="lib/assessment-engine.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/AssessmentEngine"/>
+	<classpathentry kind="src" path="/xml2txt"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

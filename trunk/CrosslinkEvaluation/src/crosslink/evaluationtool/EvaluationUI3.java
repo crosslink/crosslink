@@ -76,6 +76,8 @@ public class EvaluationUI3 extends JFrame {
 
         initComponents();
         
+        jRBAnchorToFile.setEnabled(false);
+        
         jRadioLangZh.setSelected(true);
 
         jRBA2BWikirs.setVisible(false);
@@ -131,7 +133,9 @@ public class EvaluationUI3 extends JFrame {
         jPanel1 = new javax.swing.JPanel();
         calculationPanel1 = new javax.swing.JPanel();
         jRBFileToFile = new javax.swing.JRadioButton();
+        jRBAnchorToFile = new javax.swing.JRadioButton();
         jRBAnchorToBEP = new javax.swing.JRadioButton();
+        jRBAnchorToBEP.setVisible(false);
         evaluateButton = new javax.swing.JButton();
         langSelectionPanel = new javax.swing.JPanel();
         jRadioLangZh = new javax.swing.JRadioButton();
@@ -413,7 +417,10 @@ public class EvaluationUI3 extends JFrame {
 
         buttonGroup2.add(jRBFileToFile);
         jRBFileToFile.setSelected(true);
-        jRBFileToFile.setText("Anchor to File (File to File)");
+        jRBFileToFile.setText("File to File");
+
+        buttonGroup2.add(jRBAnchorToFile);
+        jRBAnchorToFile.setText("Anchor to File");
 
         buttonGroup2.add(jRBAnchorToBEP);
         jRBAnchorToBEP.setText("Anchor to Bep");
@@ -426,16 +433,19 @@ public class EvaluationUI3 extends JFrame {
                 .addContainerGap()
                 .add(jRBFileToFile)
                 .add(45, 45, 45)
+                .add(jRBAnchorToFile)
+                .add(30, 30, 30)
                 .add(jRBAnchorToBEP)
-                .addContainerGap(323, Short.MAX_VALUE))
+                .addContainerGap(283, Short.MAX_VALUE))
         );
         calculationPanel1Layout.setVerticalGroup(
             calculationPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(calculationPanel1Layout.createSequentialGroup()
                 .add(calculationPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(jRBFileToFile)
+                    .add(jRBAnchorToFile)
                     .add(jRBAnchorToBEP))
-                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(14, Short.MAX_VALUE))
         );
 
         evaluateButton.setText("Evaluate");
@@ -1012,10 +1022,10 @@ public class EvaluationUI3 extends JFrame {
 //            if (this.jRBFileToFile.getModel().isSelected()) {
 //            	useFileToBep = true;
 //            }
-//            else if (this.jRBAnchorToFile.getModel().isSelected()) {
-//                useAnchorGToFile = true;
-//            } 
-            /*else*/ if (this.jRBAnchorToBEP.getModel().isSelected()) {
+            if (this.jRBAnchorToFile.getModel().isSelected()) {
+                useAnchorGToFile = true;
+            } 
+            else if (this.jRBAnchorToBEP.getModel().isSelected()) {
                 useAnchorGToBEP = true;
             }
 
@@ -1188,13 +1198,13 @@ public class EvaluationUI3 extends JFrame {
     }//GEN-LAST:event_filecleanButton1ActionPerformed
 
     private void jRBF2FWikirsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRBF2FWikirsActionPerformed
-        jRBAnchorToBEP.setEnabled(false);
+        jRBAnchorToFile.setEnabled(false);
         jRBFileToFile.setSelected(true);
         ResultSetManager.getInstance().setEveluationType(ResultSetManager.A2F_WIKI_GROUNDTRUTH);
     }//GEN-LAST:event_jRBF2FWikirsActionPerformed
 
     private void jRBA2BManualrsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRBA2BManualrsActionPerformed
-        jRBAnchorToBEP.setEnabled(true);
+        jRBAnchorToFile.setEnabled(true);
         ResultSetManager.getInstance().setEveluationType(ResultSetManager.A2B_WIKI_MANUAL);
     }//GEN-LAST:event_jRBA2BManualrsActionPerformed
 
@@ -1453,6 +1463,7 @@ public class EvaluationUI3 extends JFrame {
     private javax.swing.JRadioButton jRBA2BManualrs;
     private javax.swing.JRadioButton jRBA2BWikirs;
     private javax.swing.JRadioButton jRBAnchorToBEP;
+    private javax.swing.JRadioButton jRBAnchorToFile;
     private javax.swing.JRadioButton jRBF2FWikirs;
     private javax.swing.JRadioButton jRBFileToFile;
     private javax.swing.JRadioButton jRBalltopics;

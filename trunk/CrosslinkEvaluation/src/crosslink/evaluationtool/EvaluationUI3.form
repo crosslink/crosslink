@@ -596,8 +596,10 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jRBFileToFile" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jRBAnchorToFile" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                       <Component id="jRBAnchorToBEP" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="323" max="32767" attributes="0"/>
+                      <EmptySpace pref="283" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -606,9 +608,10 @@
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jRBFileToFile" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jRBAnchorToFile" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jRBAnchorToBEP" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace pref="14" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -620,7 +623,15 @@
                   <ComponentRef name="buttonGroup2"/>
                 </Property>
                 <Property name="selected" type="boolean" value="true"/>
-                <Property name="text" type="java.lang.String" value="Anchor to File (File to File)"/>
+                <Property name="text" type="java.lang.String" value="File to File"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JRadioButton" name="jRBAnchorToFile">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="buttonGroup2"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Anchor to File"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JRadioButton" name="jRBAnchorToBEP">
@@ -630,6 +641,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Anchor to Bep"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="jRBAnchorToBEP.setVisible(false);"/>
+              </AuxValues>
             </Component>
           </SubComponents>
         </Container>

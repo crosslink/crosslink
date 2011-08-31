@@ -19,6 +19,9 @@ import javax.xml.stream.XMLStreamConstants;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
 
+import ltwassessment.submission.Topic;
+
+import crosslink.XML2TXT;
 import crosslink.rungenerator.InexSubmission;
 
 public class Measures extends Data {
@@ -40,6 +43,7 @@ public class Measures extends Data {
     // -------------------------------------------------------------------------
     protected static boolean useOnlyAnchorGroup = false;
     
+	private static boolean convertToTextOffset = true;
     
     // =========================================================================
     // -------------------------------------------------------------------------
@@ -402,6 +406,8 @@ public class Measures extends Data {
             Unmarshaller um = jc.createUnmarshaller();
             InexSubmission is = (InexSubmission) ((um.unmarshal(runfiles)));
 
+            byte[] bytes = null;
+            
             currentSourceLang = is.getSourceLang();
             if (currentSourceLang == null || currentSourceLang.length() == 0)
             	currentSourceLang = "en";
@@ -423,6 +429,15 @@ public class Measures extends Data {
 	                	topicID = is.getTopic().get(i).getFile().substring(0, endP);
 	                else
 	                	topicID = is.getTopic().get(i).getFile();
+	                
+	                Topic topic = null;
+	                if (topic == null) {
+	                	String thisTopicName = is.getTopic().get(i).getName();
+						topic = new Topic(topicID, thisTopicName);
+	                }
+	                if (convertToTextOffset) {
+	                    bytes = topic.getBytes();
+	                }
 	                // -------------------------------------------------------------
 	                // Inside Outgoing Links
 	                String[] outLinks = null;
@@ -441,16 +456,26 @@ public class Measures extends Data {
 	
 	                        // to get AnchorInfo: File, Offset & Length ------------
 	                        String aFile = "";
-	                        String aOffset = "";
-	                        String aLength = "0";
+	                        int aOffset = 0;
+	                        int aLength = 0;
 	
 	//                        aFile = is.getTopic().get(i).getOutgoing().getAnchor().get(j).getAnchor().getFile();
-	                        aOffset = is.getTopic().get(i).getOutgoing().getAnchor().get(j).getOffset();
-	//                        aOffset = String.valueOf(Math.floor(1000000000 * Math.random()));
-	                        if (is.getTopic().get(i).getOutgoing().getAnchor().get(j) == null) {
-	                            aLength = "10"; //kludge - when there is no anchor in the submission, just F2F
-	                        } else {
-	                            aLength = is.getTopic().get(i).getOutgoing().getAnchor().get(j).getLength();
+	                        try {
+		                        aOffset = Integer.parseInt(is.getTopic().get(i).getOutgoing().getAnchor().get(j).getOffset());
+		//                        aOffset = String.valueOf(Math.floor(1000000000 * Math.random()));
+		                        if (is.getTopic().get(i).getOutgoing().getAnchor().get(j) == null) {
+		                            aLength = 10; //kludge - when there is no anchor in the submission, just F2F
+		                        } else {
+		                            aLength = Integer.parseInt(is.getTopic().get(i).getOutgoing().getAnchor().get(j).getLength());
+		                        }
+		                        
+		                        if (convertToTextOffset) {
+		                        	aLength = XML2TXT.textLength(bytes, aOffset, aLength);
+		                        	aOffset = XML2TXT.byteOffsetToTextOffset(bytes, aOffset);
+		                        }
+	                        }
+	                        catch (Exception ex) {
+	                        	ex.printStackTrace();
 	                        }
 	                        // -----------------------------------------------------
 	                        String toFile = "";
@@ -467,7 +492,7 @@ public class Measures extends Data {
 	                        // -----------------------------------------------------
 	                        // see below: an Anchor may be pointed to a number of BEP links
 	                        // <link><anchor></anchor><linkto></linkto><linkto></linkto>...</link>
-	                        if (aLength != null && Integer.parseInt(aLength) > 0) {
+	                        if (aLength  > 0) {
 	                        	for (int k = 0; k < maxBepsPerAnchor; k++) {
 		                            toFile = linkTo.get(k).getFile().toString().trim();
 		                            if (toFile.equals("")) {

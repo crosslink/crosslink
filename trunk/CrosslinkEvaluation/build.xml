@@ -79,6 +79,7 @@
     	  <delete file="${release.file}"/>
     	  <zip destfile="${release.file}">
     	  	<zipfileset dir="resultsets" prefix="resultsets"/>
+    	  	<zipfileset dir="resources" prefix="resources"/>
     	  	<zipfileset dir="lib" prefix="lib" />
     	  	<zipfileset dir="." includes="Instruction.pdf"/>
     	  	<zipfileset dir="." includes="CrosslinkSubmissionSchema.xsd"/>
