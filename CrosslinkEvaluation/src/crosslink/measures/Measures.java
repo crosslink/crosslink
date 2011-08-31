@@ -513,18 +513,23 @@ public class Measures extends Data {
 	                            outLinks[olCounter] = olObj.toString().trim();
 	                            olCounter++;
 	                        }
-	                    } else {
-	                        outLinks = new String[1];
-	                        outLinks[0] = "";
-	                    }
+	                        
+	                        f2bRunTableByGroup.put(topicID + "_" + outgoingTag, outLinks);
+	                    } 
+//	                    else {
+//	                        outLinks = new String[1];
+//	                        outLinks[0] = "";
+//	                    }
 	                    // ---------------------------------------------------------
 	                    outF2GroupBepV.clear();
 	
-	                } else {
-	                    outLinks = new String[1];
-	                    outLinks[0] = "";
-	                }
-	                f2bRunTableByGroup.put(topicID + "_" + outgoingTag, outLinks);
+	                } 
+//	                    else {
+//	                    outLinks = new String[1];
+//	                    outLinks[0] = "";
+//	                }
+	                
+	                
 	                // =============================================================
 	
 	                // -------------------------------------------------------------
@@ -558,6 +563,8 @@ public class Measures extends Data {
             ex.printStackTrace();
         }
 
+        if (f2bRunTableByGroup != null && f2bRunTableByGroup.size() == 0)
+        	f2bRunTableByGroup = null;
         return f2bRunTableByGroup;
     }
 

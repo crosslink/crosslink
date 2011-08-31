@@ -1176,7 +1176,7 @@ public class EvaluationUI3 extends JFrame {
             // =================================================================
             // -----------------------------------------------------------------
 
-            this.realEvaTablePanel.evaluateRunsToTable(evaData);
+            this.realEvaTablePanel.evaluateRunsToTable(evaData, useAnchorGToBEP ? Data.pAtValue_A2F : Data.pAtValue);
         } catch (Exception ex) {
             ex.printStackTrace();
 //            JOptionPane.showMessageDialog(this, ex.toString(), "Exception Board", JOptionPane.ERROR_MESSAGE);

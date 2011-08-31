@@ -833,6 +833,7 @@ public final class fileToBepMeasures extends Measures {
         //        int[] pAtValue = {10, 30, 50, 100, 200};
       
 //      int[] pAtValue = {5, 10, 20, 30, 50, 250};
+        int[] pAtN = Data.pAtValue_A2F;
         
         double[][] oiprecsat = new double[2][recallDegree];
         double[] outgoingPrecsAt = new double[recallDegree];
@@ -1051,76 +1052,76 @@ public final class fileToBepMeasures extends Measures {
                             // ONLY Calculate Precision @5, 10, 20, 30, 50, 250
                             if (runIndexV.size() <= pAtValue[0]) {
                                 if ((i + 1) == runIndexV.size()) {
-                                    outgoingPrecsAt[0] += (double) anchorScore / pAtValue[0];
-                                    outgoingPrecsAt[1] += (double) anchorScore / pAtValue[1];
-                                    outgoingPrecsAt[2] += (double) anchorScore / pAtValue[2];
-                                    outgoingPrecsAt[3] += (double) anchorScore / pAtValue[3];
-                                    outgoingPrecsAt[4] += (double) anchorScore / pAtValue[4];
-                                    outgoingPrecsAt[5] += (double) anchorScore / pAtValue[5];
+                                    outgoingPrecsAt[0] += (double) anchorScore / pAtN[0];
+                                    outgoingPrecsAt[1] += (double) anchorScore / pAtN[1];
+                                    outgoingPrecsAt[2] += (double) anchorScore / pAtN[2];
+                                    outgoingPrecsAt[3] += (double) anchorScore / pAtN[3];
+                                    outgoingPrecsAt[4] += (double) anchorScore / pAtN[4];
+                                    outgoingPrecsAt[5] += (double) anchorScore / pAtN[5];
                                 }
-                            } else if (runIndexV.size() <= pAtValue[1]) {
-                                if ((i + 1) == pAtValue[0]) {
+                            } else if (runIndexV.size() <= pAtN[1]) {
+                                if ((i + 1) == pAtN[0]) {
                                     outgoingPrecsAt[0] += (double) anchorScore / (i + 1);
                                 } else {
                                     if ((i + 1) == runIndexV.size()) {
-                                        outgoingPrecsAt[1] += (double) anchorScore / pAtValue[1];
-                                        outgoingPrecsAt[2] += (double) anchorScore / pAtValue[2];
-                                        outgoingPrecsAt[3] += (double) anchorScore / pAtValue[3];
-                                        outgoingPrecsAt[4] += (double) anchorScore / pAtValue[4];
-                                        outgoingPrecsAt[5] += (double) anchorScore / pAtValue[5];
+                                        outgoingPrecsAt[1] += (double) anchorScore / pAtN[1];
+                                        outgoingPrecsAt[2] += (double) anchorScore / pAtN[2];
+                                        outgoingPrecsAt[3] += (double) anchorScore / pAtN[3];
+                                        outgoingPrecsAt[4] += (double) anchorScore / pAtN[4];
+                                        outgoingPrecsAt[5] += (double) anchorScore / pAtN[5];
                                     }
                                 }
-                            } else if (runIndexV.size() <= pAtValue[2]) {
-                                if ((i + 1) == pAtValue[0]) {
+                            } else if (runIndexV.size() <= pAtN[2]) {
+                                if ((i + 1) == pAtN[0]) {
                                     outgoingPrecsAt[0] += (double) anchorScore / (i + 1);
-                                } else if ((i + 1) == pAtValue[1]) {
+                                } else if ((i + 1) == pAtN[1]) {
                                     outgoingPrecsAt[1] += (double) anchorScore / (i + 1);
                                 } else if ((i + 1) == runIndexV.size()) {
-                                    outgoingPrecsAt[2] += (double) anchorScore / pAtValue[2];
-                                    outgoingPrecsAt[3] += (double) anchorScore / pAtValue[3];
-                                    outgoingPrecsAt[4] += (double) anchorScore / pAtValue[4];
-                                    outgoingPrecsAt[5] += (double) anchorScore / pAtValue[5];
+                                    outgoingPrecsAt[2] += (double) anchorScore / pAtN[2];
+                                    outgoingPrecsAt[3] += (double) anchorScore / pAtN[3];
+                                    outgoingPrecsAt[4] += (double) anchorScore / pAtN[4];
+                                    outgoingPrecsAt[5] += (double) anchorScore / pAtN[5];
                                 }
-                            } else if (runIndexV.size() <= pAtValue[3]) {
-                                if ((i + 1) == pAtValue[0]) {
+                            } else if (runIndexV.size() <= pAtN[3]) {
+                                if ((i + 1) == pAtN[0]) {
                                     outgoingPrecsAt[0] += (double) anchorScore / (i + 1);
-                                } else if ((i + 1) == pAtValue[1]) {
+                                } else if ((i + 1) == pAtN[1]) {
                                     outgoingPrecsAt[1] += (double) anchorScore / (i + 1);
-                                } else if ((i + 1) == pAtValue[2]) {
+                                } else if ((i + 1) == pAtN[2]) {
                                     outgoingPrecsAt[2] += (double) anchorScore / (i + 1);
                                 } else if ((i + 1) == runIndexV.size()) {
-                                    outgoingPrecsAt[3] += (double) anchorScore / pAtValue[3];
-                                    outgoingPrecsAt[4] += (double) anchorScore / pAtValue[4];
-                                    outgoingPrecsAt[5] += (double) anchorScore / pAtValue[5];
+                                    outgoingPrecsAt[3] += (double) anchorScore / pAtN[3];
+                                    outgoingPrecsAt[4] += (double) anchorScore / pAtN[4];
+                                    outgoingPrecsAt[5] += (double) anchorScore / pAtN[5];
                                 }
-                            } else if (runIndexV.size() <= pAtValue[4]) {
-                                if ((i + 1) == pAtValue[0]) {
+                            } else if (runIndexV.size() <= pAtN[4]) {
+                                if ((i + 1) == pAtN[0]) {
                                     outgoingPrecsAt[0] += (double) anchorScore / (i + 1);
-                                } else if ((i + 1) == pAtValue[1]) {
+                                } else if ((i + 1) == pAtN[1]) {
                                     outgoingPrecsAt[1] += (double) anchorScore / (i + 1);
-                                } else if ((i + 1) == pAtValue[2]) {
+                                } else if ((i + 1) == pAtN[2]) {
                                     outgoingPrecsAt[2] += (double) anchorScore / (i + 1);
-                                } else if ((i + 1) == pAtValue[3]) {
+                                } else if ((i + 1) == pAtN[3]) {
                                     outgoingPrecsAt[3] += (double) anchorScore / (i + 1);
                                 } else if ((i + 1) == runIndexV.size()) {
-                                    outgoingPrecsAt[4] += (double) anchorScore / pAtValue[4];
-                                    outgoingPrecsAt[5] += (double) anchorScore / pAtValue[5];
+                                    outgoingPrecsAt[4] += (double) anchorScore / pAtN[4];
+                                    outgoingPrecsAt[5] += (double) anchorScore / pAtN[5];
                                 }
                             } else {
-                                if ((i + 1) == pAtValue[0]) {
+                                if ((i + 1) == pAtN[0]) {
                                     outgoingPrecsAt[0] += (double) anchorScore / (i + 1);
-                                } else if ((i + 1) == pAtValue[1]) {
+                                } else if ((i + 1) == pAtN[1]) {
                                     outgoingPrecsAt[1] += (double) anchorScore / (i + 1);
-                                } else if ((i + 1) == pAtValue[2]) {
+                                } else if ((i + 1) == pAtN[2]) {
                                     outgoingPrecsAt[2] += (double) anchorScore / (i + 1);
-                                } else if ((i + 1) == pAtValue[3]) {
+                                } else if ((i + 1) == pAtN[3]) {
                                     outgoingPrecsAt[3] += (double) anchorScore / (i + 1);
-                                } else if ((i + 1) == pAtValue[4]) {
-                                    outgoingPrecsAt[4] += (double) anchorScore / pAtValue[4];
-                                } else if ((i + 1) == runIndexV.size() && (i + 1) < pAtValue[5]) {
-                                    outgoingPrecsAt[5] += (double) anchorScore / pAtValue[5];
-                                } else if ((i + 1) == pAtValue[5]) {
-                                    outgoingPrecsAt[5] += (double) anchorScore / pAtValue[5];
+                                } else if ((i + 1) == pAtN[4]) {
+                                    outgoingPrecsAt[4] += (double) anchorScore / pAtN[4];
+                                } else if ((i + 1) == runIndexV.size() && (i + 1) < pAtN[5]) {
+                                    outgoingPrecsAt[5] += (double) anchorScore / pAtN[5];
+                                } else if ((i + 1) == pAtN[5]) {
+                                    outgoingPrecsAt[5] += (double) anchorScore / pAtN[5];
                                 }
                             }
 
@@ -1183,26 +1184,26 @@ public final class fileToBepMeasures extends Measures {
                         }
                         // Loop each Topic for Incoming & Outgoing
                         // ONLY Calculate Precision @5, 10, 20, 30, 50, 250
-                        if (runItems.length <= pAtValue[0]) {
+                        if (runItems.length <= pAtN[0]) {
                             if ((i + 1) == runItems.length) {
                                 if (key.endsWith(outgoingTag)) {
-                                    outgoingPrecsAt[0] += (double) mCount / pAtValue[0];
-                                    outgoingPrecsAt[1] += (double) mCount / pAtValue[1];
-                                    outgoingPrecsAt[2] += (double) mCount / pAtValue[2];
-                                    outgoingPrecsAt[3] += (double) mCount / pAtValue[3];
-                                    outgoingPrecsAt[4] += (double) mCount / pAtValue[4];
-                                    outgoingPrecsAt[5] += (double) mCount / pAtValue[5];
+                                    outgoingPrecsAt[0] += (double) mCount / pAtN[0];
+                                    outgoingPrecsAt[1] += (double) mCount / pAtN[1];
+                                    outgoingPrecsAt[2] += (double) mCount / pAtN[2];
+                                    outgoingPrecsAt[3] += (double) mCount / pAtN[3];
+                                    outgoingPrecsAt[4] += (double) mCount / pAtN[4];
+                                    outgoingPrecsAt[5] += (double) mCount / pAtN[5];
                                 } else if (key.endsWith(incomingTag)) {
-                                    incomingPrecsAt[0] += (double) mCount / pAtValue[0];
-                                    incomingPrecsAt[1] += (double) mCount / pAtValue[1];
-                                    incomingPrecsAt[2] += (double) mCount / pAtValue[2];
-                                    incomingPrecsAt[3] += (double) mCount / pAtValue[3];
-                                    incomingPrecsAt[4] += (double) mCount / pAtValue[4];
-                                    incomingPrecsAt[5] += (double) mCount / pAtValue[5];
+                                    incomingPrecsAt[0] += (double) mCount / pAtN[0];
+                                    incomingPrecsAt[1] += (double) mCount / pAtN[1];
+                                    incomingPrecsAt[2] += (double) mCount / pAtN[2];
+                                    incomingPrecsAt[3] += (double) mCount / pAtN[3];
+                                    incomingPrecsAt[4] += (double) mCount / pAtN[4];
+                                    incomingPrecsAt[5] += (double) mCount / pAtN[5];
                                 }
                             }
-                        } else if (runItems.length <= pAtValue[1]) {
-                            if ((i + 1) == pAtValue[0]) {
+                        } else if (runItems.length <= pAtN[1]) {
+                            if ((i + 1) == pAtN[0]) {
                                 if (key.endsWith(outgoingTag)) {
                                     outgoingPrecsAt[0] += (double) mCount / (i + 1);
                                 } else if (key.endsWith(incomingTag)) {
@@ -1211,28 +1212,28 @@ public final class fileToBepMeasures extends Measures {
                             } else {
                                 if ((i + 1) == runItems.length) {
                                     if (key.endsWith(outgoingTag)) {
-                                        outgoingPrecsAt[1] += (double) mCount / pAtValue[1];
-                                        outgoingPrecsAt[2] += (double) mCount / pAtValue[2];
-                                        outgoingPrecsAt[3] += (double) mCount / pAtValue[3];
-                                        outgoingPrecsAt[4] += (double) mCount / pAtValue[4];
-                                        outgoingPrecsAt[5] += (double) mCount / pAtValue[5];
+                                        outgoingPrecsAt[1] += (double) mCount / pAtN[1];
+                                        outgoingPrecsAt[2] += (double) mCount / pAtN[2];
+                                        outgoingPrecsAt[3] += (double) mCount / pAtN[3];
+                                        outgoingPrecsAt[4] += (double) mCount / pAtN[4];
+                                        outgoingPrecsAt[5] += (double) mCount / pAtN[5];
                                     } else if (key.endsWith(incomingTag)) {
-                                        incomingPrecsAt[1] += (double) mCount / pAtValue[1];
-                                        incomingPrecsAt[2] += (double) mCount / pAtValue[2];
-                                        incomingPrecsAt[3] += (double) mCount / pAtValue[3];
-                                        incomingPrecsAt[4] += (double) mCount / pAtValue[4];
-                                        incomingPrecsAt[5] += (double) mCount / pAtValue[5];
+                                        incomingPrecsAt[1] += (double) mCount / pAtN[1];
+                                        incomingPrecsAt[2] += (double) mCount / pAtN[2];
+                                        incomingPrecsAt[3] += (double) mCount / pAtN[3];
+                                        incomingPrecsAt[4] += (double) mCount / pAtN[4];
+                                        incomingPrecsAt[5] += (double) mCount / pAtN[5];
                                     }
                                 }
                             }
-                        } else if (runItems.length <= pAtValue[2]) {
-                            if ((i + 1) == pAtValue[0]) {
+                        } else if (runItems.length <= pAtN[2]) {
+                            if ((i + 1) == pAtN[0]) {
                                 if (key.endsWith(outgoingTag)) {
                                     outgoingPrecsAt[0] += (double) mCount / (i + 1);
                                 } else if (key.endsWith(incomingTag)) {
                                     incomingPrecsAt[0] += (double) mCount / (i + 1);
                                 }
-                            } else if ((i + 1) == pAtValue[1]) {
+                            } else if ((i + 1) == pAtN[1]) {
                                 if (key.endsWith(outgoingTag)) {
                                     outgoingPrecsAt[1] += (double) mCount / (i + 1);
                                 } else if (key.endsWith(incomingTag)) {
@@ -1240,31 +1241,31 @@ public final class fileToBepMeasures extends Measures {
                                 }
                             } else if ((i + 1) == runItems.length) {
                                 if (key.endsWith(outgoingTag)) {
-                                    outgoingPrecsAt[2] += (double) mCount / pAtValue[2];
-                                    outgoingPrecsAt[3] += (double) mCount / pAtValue[3];
-                                    outgoingPrecsAt[4] += (double) mCount / pAtValue[4];
-                                    outgoingPrecsAt[5] += (double) mCount / pAtValue[5];
+                                    outgoingPrecsAt[2] += (double) mCount / pAtN[2];
+                                    outgoingPrecsAt[3] += (double) mCount / pAtN[3];
+                                    outgoingPrecsAt[4] += (double) mCount / pAtN[4];
+                                    outgoingPrecsAt[5] += (double) mCount / pAtN[5];
                                 } else if (key.endsWith(incomingTag)) {
-                                    incomingPrecsAt[2] += (double) mCount / pAtValue[2];
-                                    incomingPrecsAt[3] += (double) mCount / pAtValue[3];
-                                    incomingPrecsAt[4] += (double) mCount / pAtValue[4];
-                                    incomingPrecsAt[5] += (double) mCount / pAtValue[5];
+                                    incomingPrecsAt[2] += (double) mCount / pAtN[2];
+                                    incomingPrecsAt[3] += (double) mCount / pAtN[3];
+                                    incomingPrecsAt[4] += (double) mCount / pAtN[4];
+                                    incomingPrecsAt[5] += (double) mCount / pAtN[5];
                                 }
                             }
-                        } else if (runItems.length <= pAtValue[3]) {
-                            if ((i + 1) == pAtValue[0]) {
+                        } else if (runItems.length <= pAtN[3]) {
+                            if ((i + 1) == pAtN[0]) {
                                 if (key.endsWith(outgoingTag)) {
                                     outgoingPrecsAt[0] += (double) mCount / (i + 1);
                                 } else if (key.endsWith(incomingTag)) {
                                     incomingPrecsAt[0] += (double) mCount / (i + 1);
                                 }
-                            } else if ((i + 1) == pAtValue[1]) {
+                            } else if ((i + 1) == pAtN[1]) {
                                 if (key.endsWith(outgoingTag)) {
                                     outgoingPrecsAt[1] += (double) mCount / (i + 1);
                                 } else if (key.endsWith(incomingTag)) {
                                     incomingPrecsAt[1] += (double) mCount / (i + 1);
                                 }
-                            } else if ((i + 1) == pAtValue[2]) {
+                            } else if ((i + 1) == pAtN[2]) {
                                 if (key.endsWith(outgoingTag)) {
                                     outgoingPrecsAt[2] += (double) mCount / (i + 1);
                                 } else if (key.endsWith(incomingTag)) {
@@ -1272,35 +1273,35 @@ public final class fileToBepMeasures extends Measures {
                                 }
                             } else if ((i + 1) == runItems.length) {
                                 if (key.endsWith(outgoingTag)) {
-                                    outgoingPrecsAt[3] += (double) mCount / pAtValue[3];
-                                    outgoingPrecsAt[4] += (double) mCount / pAtValue[4];
-                                    outgoingPrecsAt[5] += (double) mCount / pAtValue[5];
+                                    outgoingPrecsAt[3] += (double) mCount / pAtN[3];
+                                    outgoingPrecsAt[4] += (double) mCount / pAtN[4];
+                                    outgoingPrecsAt[5] += (double) mCount / pAtN[5];
                                 } else if (key.endsWith(incomingTag)) {
-                                    incomingPrecsAt[3] += (double) mCount / pAtValue[3];
-                                    incomingPrecsAt[4] += (double) mCount / pAtValue[4];
-                                    incomingPrecsAt[5] += (double) mCount / pAtValue[5];
+                                    incomingPrecsAt[3] += (double) mCount / pAtN[3];
+                                    incomingPrecsAt[4] += (double) mCount / pAtN[4];
+                                    incomingPrecsAt[5] += (double) mCount / pAtN[5];
                                 }
                             }
-                        } else if (runItems.length <= pAtValue[4]) {
-                            if ((i + 1) == pAtValue[0]) {
+                        } else if (runItems.length <= pAtN[4]) {
+                            if ((i + 1) == pAtN[0]) {
                                 if (key.endsWith(outgoingTag)) {
                                     outgoingPrecsAt[0] += (double) mCount / (i + 1);
                                 } else if (key.endsWith(incomingTag)) {
                                     incomingPrecsAt[0] += (double) mCount / (i + 1);
                                 }
-                            } else if ((i + 1) == pAtValue[1]) {
+                            } else if ((i + 1) == pAtN[1]) {
                                 if (key.endsWith(outgoingTag)) {
                                     outgoingPrecsAt[1] += (double) mCount / (i + 1);
                                 } else if (key.endsWith(incomingTag)) {
                                     incomingPrecsAt[1] += (double) mCount / (i + 1);
                                 }
-                            } else if ((i + 1) == pAtValue[2]) {
+                            } else if ((i + 1) == pAtN[2]) {
                                 if (key.endsWith(outgoingTag)) {
                                     outgoingPrecsAt[2] += (double) mCount / (i + 1);
                                 } else if (key.endsWith(incomingTag)) {
                                     incomingPrecsAt[2] += (double) mCount / (i + 1);
                                 }
-                            } else if ((i + 1) == pAtValue[3]) {
+                            } else if ((i + 1) == pAtN[3]) {
                                 if (key.endsWith(outgoingTag)) {
                                     outgoingPrecsAt[3] += (double) mCount / (i + 1);
                                 } else if (key.endsWith(incomingTag)) {
@@ -1308,55 +1309,55 @@ public final class fileToBepMeasures extends Measures {
                                 }
                             } else if ((i + 1) == runItems.length) {
                                 if (key.endsWith(outgoingTag)) {
-                                    outgoingPrecsAt[4] += (double) mCount / pAtValue[4];
-                                    outgoingPrecsAt[5] += (double) mCount / pAtValue[5];
+                                    outgoingPrecsAt[4] += (double) mCount / pAtN[4];
+                                    outgoingPrecsAt[5] += (double) mCount / pAtN[5];
                                 } else if (key.endsWith(incomingTag)) {
-                                    incomingPrecsAt[4] += (double) mCount / pAtValue[4];
-                                    incomingPrecsAt[5] += (double) mCount / pAtValue[5];
+                                    incomingPrecsAt[4] += (double) mCount / pAtN[4];
+                                    incomingPrecsAt[5] += (double) mCount / pAtN[5];
                                 }
                             }
                         } else {
-                            if ((i + 1) == pAtValue[0]) {
+                            if ((i + 1) == pAtN[0]) {
                                 if (key.endsWith(outgoingTag)) {
                                     outgoingPrecsAt[0] += (double) mCount / (i + 1);
                                 } else if (key.endsWith(incomingTag)) {
                                     incomingPrecsAt[0] += (double) mCount / (i + 1);
                                 }
-                            } else if ((i + 1) == pAtValue[1]) {
+                            } else if ((i + 1) == pAtN[1]) {
                                 if (key.endsWith(outgoingTag)) {
                                     outgoingPrecsAt[1] += (double) mCount / (i + 1);
                                 } else if (key.endsWith(incomingTag)) {
                                     incomingPrecsAt[1] += (double) mCount / (i + 1);
                                 }
-                            } else if ((i + 1) == pAtValue[2]) {
+                            } else if ((i + 1) == pAtN[2]) {
                                 if (key.endsWith(outgoingTag)) {
                                     outgoingPrecsAt[2] += (double) mCount / (i + 1);
                                 } else if (key.endsWith(incomingTag)) {
                                     incomingPrecsAt[2] += (double) mCount / (i + 1);
                                 }
-                            } else if ((i + 1) == pAtValue[3]) {
+                            } else if ((i + 1) == pAtN[3]) {
                                 if (key.endsWith(outgoingTag)) {
                                     outgoingPrecsAt[3] += (double) mCount / (i + 1);
                                 } else if (key.endsWith(incomingTag)) {
                                     incomingPrecsAt[3] += (double) mCount / (i + 1);
                                 }
-                            } else if ((i + 1) == pAtValue[4]) {
+                            } else if ((i + 1) == pAtN[4]) {
                                 if (key.endsWith(outgoingTag)) {
-                                    outgoingPrecsAt[4] += (double) mCount / pAtValue[4];
+                                    outgoingPrecsAt[4] += (double) mCount / pAtN[4];
                                 } else if (key.endsWith(incomingTag)) {
-                                    incomingPrecsAt[4] += (double) mCount / pAtValue[4];
+                                    incomingPrecsAt[4] += (double) mCount / pAtN[4];
                                 }
-                            } else if ((i + 1) == runItems.length && (i + 1) < pAtValue[5]) {
+                            } else if ((i + 1) == runItems.length && (i + 1) < pAtN[5]) {
                                 if (key.endsWith(outgoingTag)) {
-                                    outgoingPrecsAt[5] += (double) mCount / pAtValue[5];
+                                    outgoingPrecsAt[5] += (double) mCount / pAtN[5];
                                 } else if (key.endsWith(incomingTag)) {
-                                    incomingPrecsAt[5] += (double) mCount / pAtValue[5];
+                                    incomingPrecsAt[5] += (double) mCount / pAtN[5];
                                 }
-                            } else if ((i + 1) == pAtValue[5]) {
+                            } else if ((i + 1) == pAtN[5]) {
                                 if (key.endsWith(outgoingTag)) {
-                                    outgoingPrecsAt[5] += (double) mCount / pAtValue[5];
+                                    outgoingPrecsAt[5] += (double) mCount / pAtN[5];
                                 } else if (key.endsWith(incomingTag)) {
-                                    incomingPrecsAt[5] += (double) mCount / pAtValue[5];
+                                    incomingPrecsAt[5] += (double) mCount / pAtN[5];
                                 }
                             }
                         }
