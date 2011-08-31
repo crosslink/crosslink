@@ -28,6 +28,7 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 import javax.swing.table.TableRowSorter;
 
+import crosslink.measures.Data;
 import crosslink.util.ltwColorEditor;
 import crosslink.util.ltwColorRenderer;
 
@@ -37,12 +38,14 @@ import crosslink.util.ltwColorRenderer;
  */
 public class EvaTablePanel extends JPanel {
     
-    private TableRowSorter<DefaultTableModel> sorter;
+    private TableRowSorter sorter;
+    
+    private int[] pAtN = Data.pAtValue;
     
     /** Creates new form EvaTablePanel */
     public EvaTablePanel() {
         initComponents();
-        this.evaluateRunsToTable(new Object[][]{});
+        this.evaluateRunsToTable(new Object[][]{}, Data.pAtValue);
         
         this.evasTable.setDefaultRenderer(Color.class, new ltwColorRenderer(true));
         this.evasTable.setDefaultEditor(Color.class, new ltwColorEditor());
@@ -53,9 +56,8 @@ public class EvaTablePanel extends JPanel {
         this.evasTable.setDefaultRenderer(Color.class, new ltwColorRenderer(true));
         this.evasTable.setDefaultEditor(Color.class, new ltwColorEditor());
         this.evasTable.setModel(ecopy.evasTable.getModel());
-        this.sorter = new TableRowSorter<DefaultTableModel>((DefaultTableModel)this.evasTable.getModel());
+        this.sorter = new TableRowSorter((DefaultTableModel)this.evasTable.getModel());
         this.evasTable.setRowSorter(this.sorter);
-        
     }
     
     /** This method is called from within the constructor to
@@ -127,8 +129,9 @@ public class EvaTablePanel extends JPanel {
     }//GEN-LAST:event_etpMenuItemDeleteActionPerformed
     
     boolean colorChange = false; 
-    void evaluateRunsToTable(Object[][] evaData){
-        final TableModel emodel = EvaTablePanel.createCustomEvaTableModel(evaData);
+    void evaluateRunsToTable(Object[][] evaData, int[] pAtN){
+    	this.pAtN = pAtN;
+        final TableModel emodel = EvaTablePanel.createCustomEvaTableModel(evaData, pAtN);
         emodel.addTableModelListener(
             // listen to Color value change
             new TableModelListener(){
@@ -162,7 +165,7 @@ public class EvaTablePanel extends JPanel {
     
     void cleanAllEvaTable(){
         Object[][] emptyEvaData = {{"", "", "", "", "", "", "", "", "", "", "", "", ""}};
-        this.evaluateRunsToTable(emptyEvaData);
+        this.evaluateRunsToTable(emptyEvaData, Data.pAtValue);
     }
     
     void printEvaluationTable(){
@@ -223,18 +226,18 @@ public class EvaTablePanel extends JPanel {
         }
     }
     
-    private final static DefaultTableModel createCustomEvaTableModel(Object[][] evaData){
+    private final static DefaultTableModel createCustomEvaTableModel(Object[][] evaData, int[] pAtN){
         
         String[] columnNames = {"Run ID",
         "Type",
         "MAP",
         "R-Prec",
-        "P5",
-        "P10",
-        "P20",
-        "P30",
-        "P50",
-        "P250",
+        "P" + pAtN[0],
+        "P" + pAtN[1],
+        "P" + pAtN[2],
+        "P" + pAtN[3],
+        "P" + pAtN[4],
+        "P" + pAtN[5],
         "Color",
         "Thick",
         "Plot"

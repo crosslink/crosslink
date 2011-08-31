@@ -47,11 +47,12 @@ public class Data {
     // -------------------------------------------------------------------------
     // fro anchor to bep evaluation using manual assessment result
 //    protected static int[] pAtValue = {5, 10, 20, 30, 50, 250};
-    protected static int[] pAtValue = {100, 200, 300, 500, 750, 1250};
+    public final static int[] pAtValue = {100, 200, 300, 500, 750, 1250};
     // fro anchor to file (file to file) evaluation using Wikipedia ground truth
 //    protected static int[] pAtValue_A2F = {5, 10, 20, 30, 50, 100};
-    protected static int[] pAtValue_A2F = {5, 10, 20, 30, 50, 250};
+    public final static int[] pAtValue_A2F = {5, 10, 20, 30, 50, 250};
     
+    private static int[] pAtN = null; 
     
     static {
 		langMatchMap.put("zh", LANGUAGE_CHINESE);
@@ -196,4 +197,12 @@ public class Data {
 
         return runTable;
     }
+
+	public static int[] getpAtN() {
+		return pAtN;
+	}
+
+	public static void setpAtN(int[] pAtN) {
+		Data.pAtN = pAtN;
+	}
 }
