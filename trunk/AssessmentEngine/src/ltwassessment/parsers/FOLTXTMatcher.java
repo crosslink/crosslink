@@ -864,9 +864,9 @@ public class FOLTXTMatcher {
             Document tempDoc = parser.getDocument();
 
             out = getNodeText(tempDoc, "article");
-//            String content = "<html><body>" + out + "</body></html>";
-//            dummyPane.setText(content);
-//            out = dummyPane.getDocument().getText(0, dummyPane.getDocument().getLength());
+            String content = "<html><body>" + out + "</body></html>";
+            dummyPane.setText(content);
+            out = dummyPane.getDocument().getText(0, dummyPane.getDocument().getLength());
 
         } catch (SAXException ex) {
         	ex.printStackTrace();
