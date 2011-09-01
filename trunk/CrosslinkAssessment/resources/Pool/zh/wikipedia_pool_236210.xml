@@ -519,7 +519,7 @@
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Mary,_Crown_Princess_of_Denmark">610697</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Mette-Marit,_Crown_Princess_of_Norway">130722</tobep>
 				</subanchor>
-				<subanchor sarel="-1" saname="princess" saoffset="999" salength="8" rank="129">
+				<subanchor sarel="1" saname="princess" saoffset="999" salength="8" rank="129">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="清朝公主列表">710651</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="公主 (東亞)">446877</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="隋唐公主列表">710657</tobep>
@@ -1341,7 +1341,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="place" aoffset="2269" alength="5" ext_length="0">
-				<subanchor sarel="-1" saname="place" saoffset="2269" salength="5" rank="129">
+				<subanchor sarel="1" saname="place" saoffset="2269" salength="5" rank="129">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="地方">151393</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="地方政府區域">1006479</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="昆士蘭州地方政府區域">914537</tobep>
@@ -1989,7 +1989,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="1" aname="kingdoms of Bavaria" aoffset="3646" alength="19" ext_length="0">
-				<subanchor sarel="-1" saname="kingdoms of Bavaria" saoffset="3646" salength="19" rank="28">
+				<subanchor sarel="1" saname="kingdoms of Bavaria" saoffset="3646" salength="19" rank="28">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Kingdom_of_Bavaria">268091</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Kingdom_of_Bavaria">267318</tobep>
 				</subanchor>
@@ -2300,7 +2300,7 @@
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="拿破崙·歐仁·路易·波拿巴">311411</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Empire of Brazil" aoffset="4478" alength="16" ext_length="0">
+			<anchor arel="1" aname="Empire of Brazil" aoffset="4478" alength="16" ext_length="0">
 				<subanchor sarel="1" saname="Empire of Brazil" saoffset="4478" salength="16" rank="1">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="巴西歷史">802439</tobep>
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="巴西帝國">586095</tobep>
@@ -3079,7 +3079,7 @@
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="布拉班特公爵">812191</tobep>
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="布拉班特公国">757691</tobep>
 				</subanchor>
-				<subanchor sarel="-1" saname="Brabant" saoffset="6816" salength="7" rank="85">
+				<subanchor sarel="1" saname="Brabant" saoffset="6816" salength="7" rank="85">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="北布拉班特省">340673</tobep>
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="布拉班特公爵">812191</tobep>
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="布拉班特公国">757691</tobep>
@@ -3494,7 +3494,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="1" aname="King George" aoffset="8030" alength="11" ext_length="2">
-				<subanchor sarel="-1" saname="King George" saoffset="8030" salength="11" rank="118">
+				<subanchor sarel="1" saname="King George" saoffset="8030" salength="11" rank="118">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="英国君主列表">3917</tobep>
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="George_II_of_Greece">739702</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="喬治王縣 (維吉尼亞州)">562907</tobep>
