@@ -430,10 +430,10 @@ public final class fileToBepMeasures extends Measures {
 	                                // To calculate Precision Score for this Anchor
 	                                // runBepSetV.size() cannot be 0
 	                                if (bepDenominator <= 0) {
-//	                                    if (runBepSetV.size() != 0) {
-	                                        int Denominator = resultBeps.size() > 5 ? 5 : resultBeps.size(); //runBepSetV.size();
+	                                    if (runBepSetV.size() != 0) {
+	                                        int Denominator = runBepSetV.size(); //resultBeps.size() > 5 ? 5 : resultBeps.size(); 
 	                                        anchorScore += (double) bepScore / Denominator;
-//	                                    }
+	                                    }
 	                                } else {
 	                                    anchorScore += (double) bepScore / bepDenominator;
 	                                }
@@ -634,88 +634,99 @@ public final class fileToBepMeasures extends Measures {
                             Vector bepSetV = (Vector) runHT.get(runAnchorSet.toString());  // get BEP links inside Each Anchor
                             int runAStartPoint = Integer.valueOf(runAnchorOL[0]);
                             int runAEndPoint = Integer.valueOf(runAnchorOL[0]) + Integer.valueOf(runAnchorOL[1]);
-                            // Loop each BEP link in an Anchor
-                            boolean isMatched = false;
-                            double bepScore = 0.0;
-                            Enumeration bSetEnu = bepSetV.elements();
-                            while (bSetEnu.hasMoreElements()) {
-                                Object runBepSet = bSetEnu.nextElement();
-                                // bFileID_bOffset
-                                String[] bepLink = runBepSet.toString().split("_");
-                                String runBepID = bepLink[0].trim();
-                                int runBepOffset = Integer.valueOf(bepLink[1].trim());
-
-                                Vector<Double> bepsDisV = new Vector<Double>();
-                                for (int m = 0; m < resultSet.length; m++) {
-                                    String[] rsSet = resultSet[m].trim().split("_");
-                                    int rsaStartPoint = Integer.valueOf(rsSet[0].trim());
-                                    int rsaEndPoint = Integer.valueOf(rsSet[0].trim()) + Integer.valueOf(rsSet[1].trim());
-                                    // -----------------------------------------
-                                    if (useOnlyAnchorGroup) {
-                                        // 2) to find matched BEP file ID in RS
-                                        String rsbFileID = rsSet[2].trim();
-                                        int rsbBEP = Integer.valueOf(rsSet[3].trim());
-                                        if (runBepID.equalsIgnoreCase(rsbFileID)) {
-                                            if (Math.abs(runBepOffset - rsbBEP) <= distanceFactor) {
-                                                double bd = 0;
-                                                if (isAnchorGToBEP) {
-                                                    bd = Math.abs(runBepOffset - rsbBEP);
-                                                }
-                                                bepsDisV.add(bd);
-                                            } else {
-                                                double bd = 0;
-                                                if (isAnchorGToBEP) {
-                                                    bd = distanceFactor;
-                                                }
-                                                bepsDisV.add(bd);
-                                            }
-                                        }
-                                    } else {
-                                        // 1) to match Anchor Offset & Length
-                                        if ((runAStartPoint >= rsaStartPoint && runAStartPoint <= rsaEndPoint) ||
-                                                (runAEndPoint >= rsaStartPoint && runAEndPoint <= rsaEndPoint)) {
-                                            // -------------------------------------
-                                            // 2) to find matched BEP file ID in RS
-                                            String rsbFileID = rsSet[2].trim();
-                                            int rsbBEP = Integer.valueOf(rsSet[3].trim());
-                                            if (runBepID.equalsIgnoreCase(rsbFileID)) {
-                                                if (Math.abs(runBepOffset - rsbBEP) <= distanceFactor) {
-                                                    double bd = 0;
-                                                    if (isAnchorGToBEP) {
-                                                        bd = Math.abs(runBepOffset - rsbBEP);
-                                                    }
-                                                    bepsDisV.add(bd);
-                                                } else {
-                                                    double bd = 0;
-                                                    if (isAnchorGToBEP) {
-                                                        bd = distanceFactor;
-                                                    }
-                                                    bepsDisV.add(bd);
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                                // ---------------------------------------------
-                                if (bepsDisV.size() > 0) {
-                                    double shortestDis = Collections.min(bepsDisV);
-                                    double bs = (distanceFactor - 0.9 * shortestDis) / distanceFactor;
-                                    bepScore = bepScore + bs;
-                                    isMatched = true;
-                                }
-                            }
-
-                            if (isMatched) {
-                                if (bepDenominator == 0) {
-                                    if (bepSetV.size() != 0) {
-                                        int Denominator = bepSetV.size();
-                                        anchorScore += (double) bepScore / Denominator;   // score for each Anchor
-                                    }
-                                } else {
-                                    anchorScore += (double) bepScore / bepDenominator;      // score for each Anchor
-                                }
-                                isMatched = false;
-                            }
+                            
+                            Vector resultBeps = resultLinks.get(runAnchorSet);
+                            if (resultBeps != null) {
+	                            // Loop each BEP link in an Anchor
+	                            boolean isMatched = false;
+	                            double bepScore = 0.0;
+	                            Enumeration bSetEnu = bepSetV.elements();
+	                            while (bSetEnu.hasMoreElements()) {
+	                                Object runBepSet = bSetEnu.nextElement();
+	                                // bFileID_bOffset
+	                                String[] bepLink = runBepSet.toString().split("_");
+	                                String runBepID = bepLink[0].trim();
+	                                int runBepOffset = Integer.valueOf(bepLink[1].trim());
+	
+	                                Vector<Double> bepsDisV = new Vector<Double>();
+	                                
+	                                if (!isAnchorGToBEP) {
+		                            	if (resultBeps.contains(runBepID + "_0"))
+		                            		bepsDisV.add(0.0);
+	                                }
+	                                else {
+		                                for (int m = 0; m < resultSet.length; m++) {
+		                                    String[] rsSet = resultSet[m].trim().split("_");
+		                                    int rsaStartPoint = Integer.valueOf(rsSet[0].trim());
+		                                    int rsaEndPoint = Integer.valueOf(rsSet[0].trim()) + Integer.valueOf(rsSet[1].trim());
+		                                    // -----------------------------------------
+		                                    if (useOnlyAnchorGroup) {
+		                                        // 2) to find matched BEP file ID in RS
+		                                        String rsbFileID = rsSet[2].trim();
+		                                        int rsbBEP = Integer.valueOf(rsSet[3].trim());
+		                                        if (runBepID.equalsIgnoreCase(rsbFileID)) {
+		                                            if (Math.abs(runBepOffset - rsbBEP) <= distanceFactor) {
+		                                                double bd = 0;
+		                                                if (isAnchorGToBEP) {
+		                                                    bd = Math.abs(runBepOffset - rsbBEP);
+		                                                }
+		                                                bepsDisV.add(bd);
+		                                            } else {
+		                                                double bd = 0;
+		                                                if (isAnchorGToBEP) {
+		                                                    bd = distanceFactor;
+		                                                }
+		                                                bepsDisV.add(bd);
+		                                            }
+		                                        }
+		                                    } else {
+		                                        // 1) to match Anchor Offset & Length
+		                                        if ((runAStartPoint >= rsaStartPoint && runAStartPoint <= rsaEndPoint) ||
+		                                                (runAEndPoint >= rsaStartPoint && runAEndPoint <= rsaEndPoint)) {
+		                                            // -------------------------------------
+		                                            // 2) to find matched BEP file ID in RS
+		                                            String rsbFileID = rsSet[2].trim();
+		                                            int rsbBEP = Integer.valueOf(rsSet[3].trim());
+		                                            if (runBepID.equalsIgnoreCase(rsbFileID)) {
+		                                                if (Math.abs(runBepOffset - rsbBEP) <= distanceFactor) {
+		                                                    double bd = 0;
+		                                                    if (isAnchorGToBEP) {
+		                                                        bd = Math.abs(runBepOffset - rsbBEP);
+		                                                    }
+		                                                    bepsDisV.add(bd);
+		                                                } else {
+		                                                    double bd = 0;
+		                                                    if (isAnchorGToBEP) {
+		                                                        bd = distanceFactor;
+		                                                    }
+		                                                    bepsDisV.add(bd);
+		                                                }
+		                                            }
+		                                        }
+		                                    }
+		                                }
+	                                }
+	                                // ---------------------------------------------
+	                                if (bepsDisV.size() > 0) {
+	                                    double shortestDis = Collections.min(bepsDisV);
+	                                    double bs = (distanceFactor - 0.9 * shortestDis) / distanceFactor;
+	                                    bepScore = bepScore + bs;
+	                                    isMatched = true;
+	                                }
+	                            }
+	
+	                            if (isMatched) {
+	                                if (bepDenominator == 0) {
+	                                    if (bepSetV.size() != 0) {
+	                                        int Denominator = bepSetV.size();
+	                                        anchorScore += (double) bepScore / Denominator;   // score for each Anchor
+	                                    }
+	                                } else {
+	                                    anchorScore += (double) bepScore / bepDenominator;      // score for each Anchor
+	                                }
+	                                isMatched = false;
+	                            }
+	                        }
                         }
 
                         int N = Math.max(250, resultSet.length);
@@ -977,7 +988,7 @@ public final class fileToBepMeasures extends Measures {
 	                            if (isMatched) {
 	                                if (bepDenominator <= 0) {
 	                                    if (bepSetV.size() != 0) {
-	                                        int Denominator = resultBeps.size() > 5 ? 5 : resultBeps.size(); //bepSetV.size();
+	                                        int Denominator =  bepSetV.size(); //resultBeps.size() > 5 ? 5 : resultBeps.size();
 	                                        anchorScore += (double) bepScore / Denominator;   // score for each Anchor
 	                                    }
 	                                } else {
