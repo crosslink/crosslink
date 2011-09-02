@@ -961,14 +961,14 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="베드로의 둘째 편지">342075</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="AD" aoffset="5865" alength="2" ext_length="0">
+			<anchor arel="-1" aname="AD" aoffset="5865" alength="2" ext_length="0">
 				<subanchor sarel="-1" saname="AD" saoffset="5865" salength="2" rank="130">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="AD">21050</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="투하트2">116010</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="1" aname="Greek physician" aoffset="5868" alength="15" ext_length="0">
-				<subanchor sarel="-1" saname="Greek physician" saoffset="5868" salength="15" rank="245">
+				<subanchor sarel="1" saname="Greek physician" saoffset="5868" salength="15" rank="245">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="그리스어">12363</tobep>
 				</subanchor>
 				<subanchor sarel="1" saname="physician" saoffset="5874" salength="9" rank="83">
@@ -1422,7 +1422,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="조각">273842</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="-1" aname="lettuce" aoffset="9038" alength="7" ext_length="0">
+			<anchor arel="1" aname="lettuce" aoffset="9038" alength="7" ext_length="0">
 				<subanchor sarel="1" saname="lettuce" saoffset="9038" salength="7" rank="60">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="상추 (1982년)">475167</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="씀바귀">85954</tobep>

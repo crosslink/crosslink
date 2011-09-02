@@ -198,7 +198,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="gold" aoffset="1351" alength="4" ext_length="2">
-				<subanchor sarel="-1" saname="gold" saoffset="1351" salength="4" rank="90">
+				<subanchor sarel="1" saname="gold" saoffset="1351" salength="4" rank="90">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="금색">97720</tobep>
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="황금">87731</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="금">55123</tobep>
@@ -333,7 +333,7 @@
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="레바논">9173</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Chinese" aoffset="1654" alength="7" ext_length="11">
+			<anchor arel="1" aname="Chinese" aoffset="1654" alength="7" ext_length="11">
 				<subanchor sarel="1" saname="Chinese" saoffset="1654" salength="7" rank="62">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="중국어">2304</tobep>
 				</subanchor>
@@ -496,7 +496,7 @@
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="피드백">88042</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="-1" aname="global" aoffset="2487" alength="6" ext_length="0">
+			<anchor arel="1" aname="global" aoffset="2487" alength="6" ext_length="0">
 				<subanchor sarel="1" saname="global" saoffset="2487" salength="6" rank="195">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="지구본">207760</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="글로벌 세계대백과">255870</tobep>

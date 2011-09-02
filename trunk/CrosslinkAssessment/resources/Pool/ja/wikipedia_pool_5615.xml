@@ -117,7 +117,7 @@
 				<subanchor sarel="-1" saname="Phanerozoic Eon" saoffset="1013" salength="15" rank="86">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="顕本寺 (堺市)">328294</tobep>
 				</subanchor>
-				<subanchor sarel="-1" saname="Eon" saoffset="1025" salength="3" rank="152">
+				<subanchor sarel="1" saname="Eon" saoffset="1025" salength="3" rank="152">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="累代">995275</tobep>
 				</subanchor>
 			</anchor>
@@ -933,7 +933,7 @@
 				<subanchor sarel="-1" saname="Sediment" saoffset="6365" salength="8" rank="126">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="堆積物">775917</tobep>
 				</subanchor>
-				<subanchor sarel="-1" saname="Sediment cores" saoffset="6365" salength="14" rank="92">
+				<subanchor sarel="1" saname="Sediment cores" saoffset="6365" salength="14" rank="92">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="堆積">567024</tobep>
 				</subanchor>
 				<subanchor sarel="-1" saname="cores" saoffset="6374" salength="5" rank="203">
@@ -1584,7 +1584,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="Tyrannosaurus" aoffset="11889" alength="13" ext_length="0">
-				<subanchor sarel="-1" saname="Tyrannosaurus" saoffset="11889" salength="13" rank="97">
+				<subanchor sarel="1" saname="Tyrannosaurus" saoffset="11889" salength="13" rank="97">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ティラノサウルス">34392</tobep>
 				</subanchor>
 			</anchor>
@@ -2511,7 +2511,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="1" aname="Saratov" aoffset="20835" alength="7" ext_length="7">
-				<subanchor sarel="-1" saname="Saratov" saoffset="20835" salength="7" rank="31">
+				<subanchor sarel="1" saname="Saratov" saoffset="20835" salength="7" rank="31">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ロシアの都市の一覧">1941104</tobep>
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="サラトフ">196898</tobep>
 				</subanchor>
@@ -2666,7 +2666,7 @@
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ウェブサイト">2131</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="The College of Wooster" aoffset="22355" alength="22" ext_length="0">
+			<anchor arel="-1" aname="The College of Wooster" aoffset="22355" alength="22" ext_length="0">
 				<subanchor sarel="-1" saname="The College of Wooster" saoffset="22355" salength="22" rank="98">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ウースター大学">1985605</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ウー (ウルトラ怪獣)">91929</tobep>

@@ -636,7 +636,7 @@
 				<subanchor sarel="-1" saname="herpes" saoffset="3458" salength="6" rank="106">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヘルペス">390712</tobep>
 				</subanchor>
-				<subanchor sarel="-1" saname="herpes zoster" saoffset="3458" salength="13" rank="31">
+				<subanchor sarel="1" saname="herpes zoster" saoffset="3458" salength="13" rank="31">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="帯状疱疹">389447</tobep>
 				</subanchor>
 				<subanchor sarel="-1" saname="zoster" saoffset="3465" salength="6" rank="150">
@@ -748,7 +748,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="uremia" aoffset="4005" alength="6" ext_length="0">
-				<subanchor sarel="-1" saname="uremia" saoffset="4005" salength="6" rank="18">
+				<subanchor sarel="1" saname="uremia" saoffset="4005" salength="6" rank="18">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="尿毒症">1342827</tobep>
 				</subanchor>
 			</anchor>
@@ -1113,7 +1113,7 @@
 				<subanchor sarel="-1" saname="Small bowel" saoffset="6061" salength="11" rank="58">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="小腸">24285</tobep>
 				</subanchor>
-				<subanchor sarel="-1" saname="Small bowel obstruction" saoffset="6061" salength="23" rank="72">
+				<subanchor sarel="1" saname="Small bowel obstruction" saoffset="6061" salength="23" rank="72">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="小腸">24285</tobep>
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="イレウス">433798</tobep>
 				</subanchor>
@@ -1725,7 +1725,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="医学">174</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="day" aoffset="9864" alength="3" ext_length="0">
+			<anchor arel="-1" aname="day" aoffset="9864" alength="3" ext_length="0">
 				<subanchor sarel="-1" saname="day" saoffset="9864" salength="3" rank="137">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="日">18330</tobep>
 				</subanchor>

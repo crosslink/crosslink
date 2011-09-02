@@ -1612,7 +1612,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="国土">904388</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="カントリー">128866</tobep>
 				</subanchor>
-				<subanchor sarel="-1" saname="Country Risk" saoffset="9955" salength="12" rank="31">
+				<subanchor sarel="1" saname="Country Risk" saoffset="9955" salength="12" rank="31">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="カントリーリスク">290405</tobep>
 				</subanchor>
 				<subanchor sarel="-1" saname="Risk" saoffset="9963" salength="4" rank="25">
@@ -1630,7 +1630,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ビジョン・フォー・スペース・エクスプロレーション">1745059</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ダイレクト (ヴァンゲリス)">1157633</tobep>
 				</subanchor>
-				<subanchor sarel="-1" saname="Direct Investment" saoffset="9980" salength="17" rank="162">
+				<subanchor sarel="1" saname="Direct Investment" saoffset="9980" salength="17" rank="162">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="直接投資">383455</tobep>
 				</subanchor>
 			</anchor>
@@ -1757,7 +1757,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ペーパー">648074</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="modelling" aoffset="11400" alength="9" ext_length="0">
+			<anchor arel="-1" aname="modelling" aoffset="11400" alength="9" ext_length="0">
 				<subanchor sarel="-1" saname="modelling" saoffset="11400" salength="9" rank="190">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="モデル">37292</tobep>
 				</subanchor>

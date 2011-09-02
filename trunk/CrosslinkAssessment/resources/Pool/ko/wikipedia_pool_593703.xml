@@ -1538,7 +1538,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="1" aname="pregnancy test" aoffset="7947" alength="14" ext_length="0">
-				<subanchor sarel="-1" saname="pregnancy test" saoffset="7947" salength="14" rank="93">
+				<subanchor sarel="1" saname="pregnancy test" saoffset="7947" salength="14" rank="93">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="임신">14218</tobep>
 				</subanchor>
 				<subanchor sarel="-1" saname="test" saoffset="7957" salength="4" rank="109">
@@ -1800,7 +1800,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="ER (드라마)">35109</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="doctor" aoffset="9828" alength="6" ext_length="0">
+			<anchor arel="1" aname="doctor" aoffset="9828" alength="6" ext_length="0">
 				<subanchor sarel="1" saname="doctor" saoffset="9828" salength="6" rank="71">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="의사">2836</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="닥터 (닥터 후)">436854</tobep>

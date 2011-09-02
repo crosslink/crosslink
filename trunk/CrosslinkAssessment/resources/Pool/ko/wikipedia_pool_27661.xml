@@ -17,7 +17,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="미술">2136</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="-1" aname="Source" aoffset="489" alength="6" ext_length="0">
+			<anchor arel="1" aname="Source" aoffset="489" alength="6" ext_length="0">
 				<subanchor sarel="1" saname="Source" saoffset="489" salength="6" rank="19">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="소스 엔진">202575</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="수원">445755</tobep>
@@ -998,7 +998,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="1" aname="free" aoffset="5195" alength="4" ext_length="9">
-				<subanchor sarel="-1" saname="free" saoffset="5195" salength="4" rank="71">
+				<subanchor sarel="1" saname="free" saoffset="5195" salength="4" rank="71">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프리웨어">20895</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="공">79463</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="자유">33862</tobep>
