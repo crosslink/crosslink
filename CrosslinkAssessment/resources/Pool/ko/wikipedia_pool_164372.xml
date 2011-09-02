@@ -1324,7 +1324,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="1" aname="the alarm" aoffset="7632" alength="9" ext_length="0">
-				<subanchor sarel="-1" saname="the alarm" saoffset="7632" salength="9" rank="65">
+				<subanchor sarel="1" saname="the alarm" saoffset="7632" salength="9" rank="65">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="알람">200479</tobep>
 				</subanchor>
 				<subanchor sarel="1" saname="alarm" saoffset="7636" salength="5" rank="79">
@@ -1592,7 +1592,7 @@
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="독일">56412</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="남부 연합">174520</tobep>
 				</subanchor>
-				<subanchor sarel="-1" saname="Germany" saoffset="9057" salength="7" rank="12">
+				<subanchor sarel="1" saname="Germany" saoffset="9057" salength="7" rank="12">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="독일">56412</tobep>
 				</subanchor>
 			</anchor>
@@ -1613,7 +1613,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="1" aname="almond paste" aoffset="9282" alength="12" ext_length="0">
-				<subanchor sarel="-1" saname="almond paste" saoffset="9282" salength="12" rank="49">
+				<subanchor sarel="1" saname="almond paste" saoffset="9282" salength="12" rank="49">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="아몬드">304121</tobep>
 				</subanchor>
 				<subanchor sarel="1" saname="paste" saoffset="9289" salength="5" rank="94">
@@ -1970,7 +1970,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="1" aname="chocolate cream" aoffset="10972" alength="15" ext_length="0">
-				<subanchor sarel="-1" saname="chocolate cream" saoffset="10972" salength="15" rank="111">
+				<subanchor sarel="1" saname="chocolate cream" saoffset="10972" salength="15" rank="111">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="초콜릿">44293</tobep>
 				</subanchor>
 				<subanchor sarel="1" saname="cream" saoffset="10982" salength="5" rank="62">
@@ -2144,7 +2144,7 @@
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="모로코">9272</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Baguette" aoffset="11729" alength="8" ext_length="0">
+			<anchor arel="-1" aname="Baguette" aoffset="11729" alength="8" ext_length="0">
 				<subanchor sarel="-1" saname="Baguette" saoffset="11729" salength="8" rank="2">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프랑스 빵">81636</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프랑스">95069</tobep>

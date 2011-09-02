@@ -51,7 +51,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="Java" aoffset="608" alength="4" ext_length="12">
-				<subanchor sarel="-1" saname="Java" saoffset="608" salength="4" rank="24">
+				<subanchor sarel="1" saname="Java" saoffset="608" salength="4" rank="24">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Javaプラットフォーム">876134</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ジャバ">3733</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ジャワ島">3737</tobep>
@@ -93,7 +93,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="1" aname="program" aoffset="706" alength="7" ext_length="5">
-				<subanchor sarel="-1" saname="program" saoffset="706" salength="7" rank="141">
+				<subanchor sarel="1" saname="program" saoffset="706" salength="7" rank="141">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="プログラム">1393</tobep>
 				</subanchor>
 				<subanchor sarel="1" saname="program code" saoffset="706" salength="12" rank="161">
@@ -199,7 +199,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="code snippets" aoffset="1171" alength="13" ext_length="0">
-				<subanchor sarel="-1" saname="code snippets" saoffset="1171" salength="13" rank="36">
+				<subanchor sarel="1" saname="code snippets" saoffset="1171" salength="13" rank="36">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ニイウス コー">527331</tobep>
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="スニペット">1702882</tobep>
 				</subanchor>
@@ -560,7 +560,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="1" aname="GNU" aoffset="2999" alength="3" ext_length="6">
-				<subanchor sarel="-1" saname="GNU" saoffset="2999" salength="3" rank="44">
+				<subanchor sarel="1" saname="GNU" saoffset="2999" salength="3" rank="44">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="GNU (曖昧さ回避)">1997807</tobep>
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="GNU">1172</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="GNU Octave">840526</tobep>
@@ -1021,7 +1021,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="1" aname="copyright" aoffset="5916" alength="9" ext_length="5">
-				<subanchor sarel="-1" saname="copyright" saoffset="5916" salength="9" rank="52">
+				<subanchor sarel="1" saname="copyright" saoffset="5916" salength="9" rank="52">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="著作権">161</tobep>
 				</subanchor>
 				<subanchor sarel="1" saname="copyright laws" saoffset="5916" salength="14" rank="66">
@@ -1814,7 +1814,7 @@
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ニイウス コー">527331</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Live" aoffset="10650" alength="4" ext_length="0">
+			<anchor arel="-1" aname="Live" aoffset="10650" alength="4" ext_length="0">
 				<subanchor sarel="-1" saname="Live" saoffset="10650" salength="4" rank="140">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="フリートウッド・マック・ライヴ">1524293</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ワイト島ライブ">467448</tobep>

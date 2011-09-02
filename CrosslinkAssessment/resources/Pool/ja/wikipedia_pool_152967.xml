@@ -348,7 +348,7 @@
 				<subanchor sarel="1" saname="Jeolla" saoffset="2246" salength="6" rank="54">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="全羅道">715028</tobep>
 				</subanchor>
-				<subanchor sarel="-1" saname="Jeolla province" saoffset="2246" salength="15" rank="41">
+				<subanchor sarel="1" saname="Jeolla province" saoffset="2246" salength="15" rank="41">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="全羅道">715028</tobep>
 				</subanchor>
 				<subanchor sarel="-1" saname="province" saoffset="2253" salength="8" rank="49">
@@ -2273,7 +2273,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="オビチュアリー">633108</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="the Associated Press" aoffset="15880" alength="20" ext_length="0">
+			<anchor arel="-1" aname="the Associated Press" aoffset="15880" alength="20" ext_length="0">
 				<subanchor sarel="-1" saname="the Associated Press" saoffset="15880" salength="20" rank="135">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="AP通信">135848</tobep>
 				</subanchor>

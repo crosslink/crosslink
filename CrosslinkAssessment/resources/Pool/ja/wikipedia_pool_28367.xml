@@ -183,7 +183,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="gelatinous" aoffset="1966" alength="10" ext_length="0">
-				<subanchor sarel="-1" saname="gelatinous" saoffset="1966" salength="10" rank="136">
+				<subanchor sarel="1" saname="gelatinous" saoffset="1966" salength="10" rank="136">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ゼラチン">332677</tobep>
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ゲル">30024</tobep>
 				</subanchor>
@@ -257,7 +257,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ホット">1363962</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="amp" aoffset="2327" alength="3" ext_length="0">
+			<anchor arel="-1" aname="amp" aoffset="2327" alength="3" ext_length="0">
 				<subanchor sarel="-1" saname="amp" saoffset="2327" salength="3" rank="87">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="AMP (鹿児島讀賣テレビ)">139905</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="AMP">191697</tobep>
@@ -1165,7 +1165,7 @@
 				<subanchor sarel="1" saname="McDonald's" saoffset="8032" salength="10" rank="29">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="マクドナルド">1750</tobep>
 				</subanchor>
-				<subanchor sarel="-1" saname="McDonald's restaurants" saoffset="8032" salength="22" rank="33">
+				<subanchor sarel="1" saname="McDonald's restaurants" saoffset="8032" salength="22" rank="33">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="マクドナルド">1750</tobep>
 				</subanchor>
 			</anchor>

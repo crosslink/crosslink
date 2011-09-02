@@ -1208,7 +1208,7 @@
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="シュメール">22697</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="古代">27549</tobep>
 				</subanchor>
-				<subanchor sarel="-1" saname="Sumer" saoffset="6050" salength="5" rank="4">
+				<subanchor sarel="1" saname="Sumer" saoffset="6050" salength="5" rank="4">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="シュメール">22697</tobep>
 				</subanchor>
 			</anchor>
@@ -1240,7 +1240,7 @@
 				<subanchor sarel="-1" saname="Standard" saoffset="6111" salength="8" rank="207">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ブラジル時間">542469</tobep>
 				</subanchor>
-				<subanchor sarel="-1" saname="Standard of Ur" saoffset="6111" salength="14" rank="2">
+				<subanchor sarel="1" saname="Standard of Ur" saoffset="6111" salength="14" rank="2">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="モザイク">38032</tobep>
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ウル">16893</tobep>
 				</subanchor>
@@ -1362,7 +1362,7 @@
 				<subanchor sarel="1" saname="threat of extinction" saoffset="6783" salength="20" rank="23">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="レッドリスト">20656</tobep>
 				</subanchor>
-				<subanchor sarel="-1" saname="extinction" saoffset="6793" salength="10" rank="41">
+				<subanchor sarel="1" saname="extinction" saoffset="6793" salength="10" rank="41">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="絶滅">62014</tobep>
 				</subanchor>
 			</anchor>
@@ -1753,7 +1753,7 @@
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="仕事">27638</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="programmes" aoffset="9621" alength="10" ext_length="0">
+			<anchor arel="-1" aname="programmes" aoffset="9621" alength="10" ext_length="0">
 				<subanchor sarel="-1" saname="programmes" saoffset="9621" salength="10" rank="240">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="プログラム">1393</tobep>
 				</subanchor>

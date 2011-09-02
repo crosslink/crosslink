@@ -663,7 +663,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="first Asian Games" aoffset="3852" alength="17" ext_length="0">
-				<subanchor sarel="-1" saname="first Asian Games" saoffset="3852" salength="17" rank="69">
+				<subanchor sarel="1" saname="first Asian Games" saoffset="3852" salength="17" rank="69">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="1951年アジア競技大会">462309</tobep>
 				</subanchor>
 			</anchor>
@@ -1937,7 +1937,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="19">14470</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="links" aoffset="21638" alength="5" ext_length="0">
+			<anchor arel="-1" aname="links" aoffset="21638" alength="5" ext_length="0">
 				<subanchor sarel="-1" saname="links" saoffset="21638" salength="5" rank="231">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Links">579434</tobep>
 				</subanchor>

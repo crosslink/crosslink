@@ -1277,7 +1277,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="1" aname="Time magazine" aoffset="7287" alength="18" ext_length="0">
-				<subanchor sarel="-1" saname="Time magazine" saoffset="7287" salength="18" rank="30">
+				<subanchor sarel="1" saname="Time magazine" saoffset="7287" salength="18" rank="30">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="타임 (잡지)">44918</tobep>
 				</subanchor>
 				<subanchor sarel="-1" saname="magazine" saoffset="7297" salength="8" rank="152">

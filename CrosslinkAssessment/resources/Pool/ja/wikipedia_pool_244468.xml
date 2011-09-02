@@ -124,7 +124,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="Toegye" aoffset="1106" alength="6" ext_length="0">
-				<subanchor sarel="-1" saname="Toegye" saoffset="1106" salength="6" rank="56">
+				<subanchor sarel="1" saname="Toegye" saoffset="1106" salength="6" rank="56">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="李滉">442336</tobep>
 				</subanchor>
 			</anchor>
@@ -335,7 +335,7 @@
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="江西省 (中華民国)">1853080</tobep>
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="江西省">140053</tobep>
 				</subanchor>
-				<subanchor sarel="-1" saname="Jiangxi Province" saoffset="2348" salength="16" rank="21">
+				<subanchor sarel="1" saname="Jiangxi Province" saoffset="2348" salength="16" rank="21">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="江西省 (中華民国)">1853080</tobep>
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="江西省">140053</tobep>
 				</subanchor>
@@ -685,13 +685,13 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="1" aname="metaphysical" aoffset="5239" alength="12" ext_length="7">
-				<subanchor sarel="-1" saname="metaphysical" saoffset="5239" salength="12" rank="58">
+				<subanchor sarel="1" saname="metaphysical" saoffset="5239" salength="12" rank="58">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="形而上学">34102</tobep>
 				</subanchor>
 				<subanchor sarel="1" saname="metaphysical monist" saoffset="5239" salength="19" rank="12">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="形而上学">34102</tobep>
 				</subanchor>
-				<subanchor sarel="-1" saname="monist" saoffset="5252" salength="6" rank="48">
+				<subanchor sarel="1" saname="monist" saoffset="5252" salength="6" rank="48">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="一元論">737605</tobep>
 				</subanchor>
 			</anchor>
@@ -934,7 +934,7 @@
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヒト">560366</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="人間">3041</tobep>
 				</subanchor>
-				<subanchor sarel="-1" saname="Human nature" saoffset="7212" salength="12" rank="10">
+				<subanchor sarel="1" saname="Human nature" saoffset="7212" salength="12" rank="10">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="本性">1737391</tobep>
 				</subanchor>
 				<subanchor sarel="-1" saname="nature" saoffset="7218" salength="6" rank="173">
@@ -2015,7 +2015,7 @@
 				<subanchor sarel="1" saname="Tokugawa shogunate" saoffset="19325" salength="18" rank="10">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="江戸幕府">8455</tobep>
 				</subanchor>
-				<subanchor sarel="-1" saname="shogunate" saoffset="19334" salength="9" rank="132">
+				<subanchor sarel="1" saname="shogunate" saoffset="19334" salength="9" rank="132">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="幕府">8848</tobep>
 				</subanchor>
 			</anchor>
@@ -2418,7 +2418,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="活量">55290</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="First" aoffset="23248" alength="5" ext_length="0">
+			<anchor arel="-1" aname="First" aoffset="23248" alength="5" ext_length="0">
 				<subanchor sarel="-1" saname="First" saoffset="23248" salength="5" rank="100">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ファースト">159576</tobep>
 				</subanchor>

@@ -648,7 +648,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="1" aname="retail" aoffset="2661" alength="6" ext_length="7">
-				<subanchor sarel="-1" saname="retail" saoffset="2661" salength="6" rank="45">
+				<subanchor sarel="1" saname="retail" saoffset="2661" salength="6" rank="45">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="소매">294682</tobep>
 				</subanchor>
 				<subanchor sarel="1" saname="retail stores" saoffset="2661" salength="13" rank="0">
@@ -2146,7 +2146,7 @@
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="역사">543</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="The History" aoffset="12477" alength="11" ext_length="3">
+			<anchor arel="1" aname="The History" aoffset="12477" alength="11" ext_length="3">
 				<subanchor sarel="1" saname="The History" saoffset="12477" salength="11" rank="181">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="역사">543</tobep>
 				</subanchor>

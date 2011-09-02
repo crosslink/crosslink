@@ -2325,7 +2325,7 @@
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="현재">111231</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="country" aoffset="13098" alength="7" ext_length="0">
+			<anchor arel="1" aname="country" aoffset="13098" alength="7" ext_length="0">
 				<subanchor sarel="1" saname="country" saoffset="13098" salength="7" rank="120">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="지방">64350</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="민중">81851</tobep>

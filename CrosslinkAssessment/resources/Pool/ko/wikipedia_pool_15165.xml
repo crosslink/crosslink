@@ -4,7 +4,7 @@
 	<collection>Korean Wikipedia 2010 Collection</collection>
 	<topic file="15165" name="Ivory">
 		<outgoinglinks>
-			<anchor arel="0" aname="Ivory" aoffset="266" alength="5" ext_length="0">
+			<anchor arel="1" aname="Ivory" aoffset="266" alength="5" ext_length="0">
 				<subanchor sarel="1" saname="Ivory" saoffset="266" salength="5" rank="58">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="이 (해부학)">28892</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="주사위">30222</tobep>
@@ -1860,7 +1860,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="1" aname="special session" aoffset="9105" alength="15" ext_length="0">
-				<subanchor sarel="-1" saname="special session" saoffset="9105" salength="15" rank="180">
+				<subanchor sarel="1" saname="special session" saoffset="9105" salength="15" rank="180">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="해외진출선수 특별지명회의">288783</tobep>
 				</subanchor>
 				<subanchor sarel="1" saname="session" saoffset="9113" salength="7" rank="149">
@@ -2033,7 +2033,7 @@
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="옥스퍼드">46576</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="옥스퍼드대학교">46573</tobep>
 				</subanchor>
-				<subanchor sarel="-1" saname="Oxford English Dictionary" saoffset="10427" salength="25" rank="23">
+				<subanchor sarel="1" saname="Oxford English Dictionary" saoffset="10427" salength="25" rank="23">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="옥스퍼드">46576</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="옥스퍼드 영어 사전">304941</tobep>
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="옥스퍼드 영어사전">9012</tobep>

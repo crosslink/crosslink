@@ -1359,7 +1359,7 @@
 				<subanchor sarel="1" saname="the Levant" saoffset="9760" salength="10" rank="77">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="レバント">215936</tobep>
 				</subanchor>
-				<subanchor sarel="-1" saname="Levant" saoffset="9764" salength="6" rank="19">
+				<subanchor sarel="1" saname="Levant" saoffset="9764" salength="6" rank="19">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="レバント">215936</tobep>
 				</subanchor>
 			</anchor>
@@ -1708,7 +1708,7 @@
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="参考文献">47665</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="links" aoffset="12034" alength="5" ext_length="0">
+			<anchor arel="-1" aname="links" aoffset="12034" alength="5" ext_length="0">
 				<subanchor sarel="-1" saname="links" saoffset="12034" salength="5" rank="147">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Links">579434</tobep>
 				</subanchor>

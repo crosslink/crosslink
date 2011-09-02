@@ -38,7 +38,7 @@
 				<subanchor sarel="-1" saname="Early" saoffset="611" salength="5" rank="48">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アーリー">424536</tobep>
 				</subanchor>
-				<subanchor sarel="-1" saname="Early Modern" saoffset="611" salength="12" rank="118">
+				<subanchor sarel="1" saname="Early Modern" saoffset="611" salength="12" rank="118">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="近世">27551</tobep>
 				</subanchor>
 				<subanchor sarel="1" saname="Early Modern era" saoffset="611" salength="16" rank="137">
@@ -90,7 +90,7 @@
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="重騎兵">279146</tobep>
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="騎兵">113981</tobep>
 				</subanchor>
-				<subanchor sarel="-1" saname="cavalry" saoffset="911" salength="7" rank="48">
+				<subanchor sarel="1" saname="cavalry" saoffset="911" salength="7" rank="48">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="騎兵">113981</tobep>
 				</subanchor>
 			</anchor>
@@ -1990,7 +1990,7 @@
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="連隊">729905</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Association" aoffset="13290" alength="11" ext_length="0">
+			<anchor arel="-1" aname="Association" aoffset="13290" alength="11" ext_length="0">
 				<subanchor sarel="-1" saname="Association" saoffset="13290" salength="11" rank="164">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="連想">1409142</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アソシエーション (天文学)">1108854</tobep>

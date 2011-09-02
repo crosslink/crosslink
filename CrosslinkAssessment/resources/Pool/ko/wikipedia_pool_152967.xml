@@ -209,7 +209,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="1" aname="Japanese" aoffset="1571" alength="8" ext_length="11">
-				<subanchor sarel="-1" saname="Japanese" saoffset="1571" salength="8" rank="87">
+				<subanchor sarel="1" saname="Japanese" saoffset="1571" salength="8" rank="87">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="일본어">355</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="왜">5673</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="일본인">13794</tobep>
@@ -491,7 +491,7 @@
 				<subanchor sarel="-1" saname="shipping company" saoffset="2432" salength="16" rank="162">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="해주부">140819</tobep>
 				</subanchor>
-				<subanchor sarel="-1" saname="company" saoffset="2441" salength="7" rank="230">
+				<subanchor sarel="1" saname="company" saoffset="2441" salength="7" rank="230">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="회사">118045</tobep>
 				</subanchor>
 			</anchor>
@@ -559,7 +559,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="1" aname="Syngman Rhee" aoffset="2683" alength="12" ext_length="0">
-				<subanchor sarel="-1" saname="Syngman Rhee" saoffset="2683" salength="12" rank="4">
+				<subanchor sarel="1" saname="Syngman Rhee" saoffset="2683" salength="12" rank="4">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="이승만">6533</tobep>
 				</subanchor>
 				<subanchor sarel="-1" saname="Rhee" saoffset="2691" salength="4" rank="145">
@@ -1115,7 +1115,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="clemency" aoffset="5452" alength="8" ext_length="0">
-				<subanchor sarel="-1" saname="clemency" saoffset="5452" salength="8" rank="49">
+				<subanchor sarel="1" saname="clemency" saoffset="5452" salength="8" rank="49">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="사면">112777</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="관용">305005</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="사">144993</tobep>
@@ -1316,7 +1316,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="1" aname="the United Kingdom" aoffset="6887" alength="18" ext_length="0">
-				<subanchor sarel="-1" saname="the United Kingdom" saoffset="6887" salength="18" rank="59">
+				<subanchor sarel="1" saname="the United Kingdom" saoffset="6887" salength="18" rank="59">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="연합 왕국">127786</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="영국">449729</tobep>
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="영국">2182</tobep>
@@ -1754,11 +1754,11 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="economic reform" aoffset="9802" alength="15" ext_length="0">
-				<subanchor sarel="-1" saname="economic reform" saoffset="9802" salength="15" rank="76">
+				<subanchor sarel="1" saname="economic reform" saoffset="9802" salength="15" rank="76">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="개혁개방">303505</tobep>
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="경제">472745</tobep>
 				</subanchor>
-				<subanchor sarel="-1" saname="reform" saoffset="9811" salength="6" rank="215">
+				<subanchor sarel="1" saname="reform" saoffset="9811" salength="6" rank="215">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="이노베이션">40484</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="종교 개혁">39881</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="개성특급시">6382</tobep>
@@ -2582,7 +2582,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="BBC">47631</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Library" aoffset="15286" alength="7" ext_length="0">
+			<anchor arel="-1" aname="Library" aoffset="15286" alength="7" ext_length="0">
 				<subanchor sarel="-1" saname="Library" saoffset="15286" salength="7" rank="45">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="라이브러리">48711</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="도서관">5144</tobep>

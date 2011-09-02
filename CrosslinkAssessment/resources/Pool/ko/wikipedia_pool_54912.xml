@@ -961,7 +961,7 @@
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="°">307439</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Human" aoffset="4785" alength="5" ext_length="11">
+			<anchor arel="1" aname="Human" aoffset="4785" alength="5" ext_length="11">
 				<subanchor sarel="-1" saname="Human" saoffset="4785" salength="5" rank="65">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="복있는 사람">76088</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="사람">307</tobep>
@@ -1087,7 +1087,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="RH" aoffset="6485" alength="2" ext_length="0">
-				<subanchor sarel="-1" saname="RH" saoffset="6485" salength="2" rank="8">
+				<subanchor sarel="1" saname="RH" saoffset="6485" salength="2" rank="8">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="RH">21508</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="로듐">54147</tobep>
 				</subanchor>
@@ -1453,7 +1453,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="exp" aoffset="9156" alength="3" ext_length="0">
-				<subanchor sarel="-1" saname="exp" saoffset="9156" salength="3" rank="22">
+				<subanchor sarel="1" saname="exp" saoffset="9156" salength="3" rank="22">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="Exp">107968</tobep>
 				</subanchor>
 			</anchor>

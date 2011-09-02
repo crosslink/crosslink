@@ -1094,7 +1094,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="1" aname="Andhra Pradesh" aoffset="7823" alength="14" ext_length="7">
-				<subanchor sarel="-1" saname="Andhra Pradesh" saoffset="7823" salength="14" rank="225">
+				<subanchor sarel="1" saname="Andhra Pradesh" saoffset="7823" salength="14" rank="225">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アーンドラ・プラデーシュ州">447936</tobep>
 				</subanchor>
 				<subanchor sarel="1" saname="Andhra Pradesh, India" saoffset="7823" salength="21" rank="88">
@@ -1235,7 +1235,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="1" aname="Middle Mumun Pottery Period" aoffset="8565" alength="27" ext_length="0">
-				<subanchor sarel="-1" saname="Middle Mumun Pottery Period" saoffset="8565" salength="27" rank="1">
+				<subanchor sarel="1" saname="Middle Mumun Pottery Period" saoffset="8565" salength="27" rank="1">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ミドルキック">910573</tobep>
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="無文土器時代">270746</tobep>
 				</subanchor>
@@ -2373,7 +2373,7 @@
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="測定">17618</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="table" aoffset="19780" alength="5" ext_length="0">
+			<anchor arel="-1" aname="table" aoffset="19780" alength="5" ext_length="0">
 				<subanchor sarel="-1" saname="table" saoffset="19780" salength="5" rank="159">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="テーブル">21791</tobep>
 				</subanchor>

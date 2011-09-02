@@ -241,7 +241,7 @@
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="공룡">8085</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="time" aoffset="1398" alength="4" ext_length="0">
+			<anchor arel="-1" aname="time" aoffset="1398" alength="4" ext_length="0">
 				<subanchor sarel="-1" saname="time" saoffset="1398" salength="4" rank="155">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="서머 타임">37947</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="시간">31852</tobep>
@@ -300,7 +300,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="history" aoffset="1545" alength="7" ext_length="0">
-				<subanchor sarel="-1" saname="history" saoffset="1545" salength="7" rank="154">
+				<subanchor sarel="1" saname="history" saoffset="1545" salength="7" rank="154">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="역사">543</tobep>
 				</subanchor>
 			</anchor>
@@ -424,7 +424,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="1" aname="Nevadan orogeny" aoffset="2116" alength="15" ext_length="0">
-				<subanchor sarel="-1" saname="Nevadan orogeny" saoffset="2116" salength="15" rank="22">
+				<subanchor sarel="1" saname="Nevadan orogeny" saoffset="2116" salength="15" rank="22">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="조산">267151</tobep>
 				</subanchor>
 				<subanchor sarel="1" saname="orogeny" saoffset="2124" salength="7" rank="67">
@@ -920,7 +920,7 @@
 				<subanchor sarel="-1" saname="Eromanga" saoffset="4930" salength="8" rank="117">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="해피 에로 크리스마스">217005</tobep>
 				</subanchor>
-				<subanchor sarel="-1" saname="Eromanga Basin" saoffset="4930" salength="14" rank="83">
+				<subanchor sarel="1" saname="Eromanga Basin" saoffset="4930" salength="14" rank="83">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="해피 에로 크리스마스">217005</tobep>
 				</subanchor>
 				<subanchor sarel="1" saname="Basin" saoffset="4939" salength="5" rank="215">
@@ -1809,7 +1809,7 @@
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="돈">9925</tobep>
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="기름">143986</tobep>
 				</subanchor>
-				<subanchor sarel="-1" saname="oil and gas" saoffset="11027" salength="11" rank="163">
+				<subanchor sarel="1" saname="oil and gas" saoffset="11027" salength="11" rank="163">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="석유">23391</tobep>
 				</subanchor>
 				<subanchor sarel="-1" saname="gas" saoffset="11035" salength="3" rank="175">
@@ -2199,7 +2199,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="clams" aoffset="14007" alength="5" ext_length="0">
-				<subanchor sarel="-1" saname="clams" saoffset="14007" salength="5" rank="90">
+				<subanchor sarel="1" saname="clams" saoffset="14007" salength="5" rank="90">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="조개">266274</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="클램프">136537</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="실수">381</tobep>

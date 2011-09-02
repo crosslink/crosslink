@@ -633,7 +633,7 @@
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="電子フロンティア財団">446551</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="-1" aname="grand duchies" aoffset="3721" alength="13" ext_length="0">
+			<anchor arel="1" aname="grand duchies" aoffset="3721" alength="13" ext_length="0">
 				<subanchor sarel="1" saname="grand duchies" saoffset="3721" salength="13" rank="69">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="大公国">1436256</tobep>
 				</subanchor>
@@ -649,7 +649,7 @@
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="公国">70584</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="-1" aname="mediatized" aoffset="3784" alength="10" ext_length="0">
+			<anchor arel="1" aname="mediatized" aoffset="3784" alength="10" ext_length="0">
 				<subanchor sarel="1" saname="mediatized" saoffset="3784" salength="10" rank="99">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="帝国代表者会議主要決議">1273294</tobep>
 				</subanchor>
@@ -1423,7 +1423,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="1" aname="Kingdom of Bulgaria" aoffset="8721" alength="19" ext_length="0">
-				<subanchor sarel="-1" saname="Kingdom of Bulgaria" saoffset="8721" salength="19" rank="50">
+				<subanchor sarel="1" saname="Kingdom of Bulgaria" saoffset="8721" salength="19" rank="50">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ブルガリア王国 (近代)">1518763</tobep>
 				</subanchor>
 				<subanchor sarel="-1" saname="Bulgaria" saoffset="8732" salength="8" rank="20">
@@ -1528,7 +1528,7 @@
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="エジプト">49</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="Prince of the Sa'id" aoffset="9305" alength="19" ext_length="0">
+			<anchor arel="-1" aname="Prince of the Sa'id" aoffset="9305" alength="19" ext_length="0">
 				<subanchor sarel="-1" saname="Prince of the Sa'id" saoffset="9305" salength="19" rank="19">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="エドワード・サイード">18346</tobep>
 				</subanchor>
@@ -2104,7 +2104,7 @@
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="現在">538568</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="country" aoffset="13098" alength="7" ext_length="0">
+			<anchor arel="-1" aname="country" aoffset="13098" alength="7" ext_length="0">
 				<subanchor sarel="-1" saname="country" saoffset="13098" salength="7" rank="101">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="国土">904388</tobep>
 				</subanchor>

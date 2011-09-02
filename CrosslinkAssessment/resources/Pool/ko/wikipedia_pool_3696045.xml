@@ -28,7 +28,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="1" aname="Donkey" aoffset="535" alength="6" ext_length="1">
-				<subanchor sarel="-1" saname="Donkey" saoffset="535" salength="6" rank="30">
+				<subanchor sarel="1" saname="Donkey" saoffset="535" salength="6" rank="30">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="쑥">299916</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="뒤쪽">111569</tobep>
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="당나귀">8052</tobep>
@@ -98,7 +98,7 @@
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="마력">78733</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="기병">13414</tobep>
 				</subanchor>
-				<subanchor sarel="-1" saname="horse family" saoffset="868" salength="12" rank="36">
+				<subanchor sarel="1" saname="horse family" saoffset="868" salength="12" rank="36">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="말 (동물)">7928</tobep>
 				</subanchor>
 				<subanchor sarel="-1" saname="family" saoffset="874" salength="6" rank="32">
@@ -474,7 +474,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="폰 (체스)">92575</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="an animal" aoffset="2336" alength="9" ext_length="0">
+			<anchor arel="1" aname="an animal" aoffset="2336" alength="9" ext_length="0">
 				<subanchor sarel="-1" saname="an animal" saoffset="2336" salength="9" rank="188">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="동물">7287</tobep>
 				</subanchor>
