@@ -1794,8 +1794,8 @@
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2008年夏季残奥会中国代表团">872383</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Guru" aoffset="3439" alength="4" ext_length="5">
-				<subanchor sarel="-1" saname="Guru" saoffset="3439" salength="4" rank="88">
+			<anchor arel="1" aname="Guru" aoffset="3439" alength="4" ext_length="5">
+				<subanchor sarel="1" saname="Guru" saoffset="3439" salength="4" rank="88">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="上师">246955</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="无领袖抵抗">451210</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="領袖">318463</tobep>
@@ -2916,11 +2916,11 @@
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="運動 (物理學)">122053</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="Oceania" aoffset="5913" alength="7" ext_length="0">
+			<anchor arel="0" aname="Oceania" aoffset="5913" alength="7" ext_length="0">
 				<subanchor sarel="1" saname="Oceania" saoffset="5913" salength="7" rank="62">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="大洋洲">3202</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="大洋洲旗帜">961158</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2006年世界盃外圍賽 (大洋洲區)">148220</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2006年世界盃外圍賽 (大洋洲區)">148220</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2010年世界盃外圍賽 (大洋洲區)">767846</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="大洋洲足球協會">187255</tobep>
 				</subanchor>
@@ -3478,7 +3478,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="1" aname="Board" aoffset="8990" alength="5" ext_length="6">
-				<subanchor sarel="-1" saname="Board" saoffset="8990" salength="5" rank="195">
+				<subanchor sarel="1" saname="Board" saoffset="8990" salength="5" rank="195">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="董事会">508067</tobep>
 				</subanchor>
 				<subanchor sarel="1" saname="Board games" saoffset="8990" salength="11" rank="28">

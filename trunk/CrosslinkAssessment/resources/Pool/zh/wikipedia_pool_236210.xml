@@ -1340,18 +1340,18 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="同一性">234249</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="-1" aname="place" aoffset="2269" alength="5" ext_length="0">
+			<anchor arel="1" aname="place" aoffset="2269" alength="5" ext_length="0">
 				<subanchor sarel="1" saname="place" saoffset="2269" salength="5" rank="129">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="地方">151393</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="地方政府區域">1006479</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="昆士蘭州地方政府區域">914537</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="五星物語地方列表">264377</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="滿洲國法院">855066</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="地方教会的争议">548631</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="香港地方列表">207391</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="福建省高速公路列表">1000930</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中華民國行政區劃">26572</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="地方政府">151390</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="地方政府區域">1006479</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="昆士蘭州地方政府區域">914537</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="五星物語地方列表">264377</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="滿洲國法院">855066</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="地方教会的争议">548631</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="香港地方列表">207391</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="福建省高速公路列表">1000930</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中華民國行政區劃">26572</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="地方政府">151390</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="1" aname="the line of succession" aoffset="2278" alength="22" ext_length="0">
@@ -3084,7 +3084,7 @@
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="布拉班特公爵">812191</tobep>
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="布拉班特公国">757691</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="瓦隆-布拉班特省">487870</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="法蘭德斯-布拉班特省">489115</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="法蘭德斯-布拉班特省">489115</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="Kingdom of Belgium" aoffset="6825" alength="18" ext_length="0">
@@ -3493,8 +3493,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="南北朝藩王列表">1137402</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="King George" aoffset="8030" alength="11" ext_length="2">
-				<subanchor sarel="1" saname="King George" saoffset="8030" salength="11" rank="118">
+			<anchor arel="0" aname="King George" aoffset="8030" alength="11" ext_length="2">
+				<subanchor sarel="-1" saname="King George" saoffset="8030" salength="11" rank="118">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="英国君主列表">3917</tobep>
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="George_II_of_Greece">739702</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="喬治王縣 (維吉尼亞州)">562907</tobep>

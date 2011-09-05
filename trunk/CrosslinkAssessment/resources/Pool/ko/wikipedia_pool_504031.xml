@@ -903,7 +903,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="1" aname="the Earl of Essex" aoffset="3901" alength="17" ext_length="0">
-				<subanchor sarel="-1" saname="the Earl of Essex" saoffset="3901" salength="17" rank="89">
+				<subanchor sarel="1" saname="the Earl of Essex" saoffset="3901" salength="17" rank="89">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="USS 에식스 (LHD-2)">337756</tobep>
 				</subanchor>
 				<subanchor sarel="1" saname="Earl" saoffset="3905" salength="4" rank="94">
@@ -2325,7 +2325,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프랑스어">2914</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="North" aoffset="13122" alength="5" ext_length="0">
+			<anchor arel="1" aname="North" aoffset="13122" alength="5" ext_length="0">
 				<subanchor sarel="1" saname="North" saoffset="13122" salength="5" rank="119">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="북쪽">91538</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="자">9723</tobep>

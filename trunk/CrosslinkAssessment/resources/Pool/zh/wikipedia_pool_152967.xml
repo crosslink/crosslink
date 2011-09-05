@@ -1306,7 +1306,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="seat" aoffset="2981" alength="4" ext_length="0">
-				<subanchor sarel="-1" saname="seat" saoffset="2981" salength="4" rank="161">
+				<subanchor sarel="1" saname="seat" saoffset="2981" salength="4" rank="161">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="西亚特">1120674</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="兒童安全座椅">496544</tobep>
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="椅">205711</tobep>
@@ -2305,7 +2305,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="波普縣 (明尼蘇達州)">511953</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="對立教宗">182869</tobep>
 				</subanchor>
-				<subanchor sarel="-1" saname="Pope John Paul II" saoffset="5342" salength="17" rank="1">
+				<subanchor sarel="1" saname="Pope John Paul II" saoffset="5342" salength="17" rank="1">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="若昂四世">261372</tobep>
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="若望·保祿二世">1173159</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="驺望">1248624</tobep>
@@ -2649,7 +2649,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="merged" aoffset="6536" alength="6" ext_length="0">
-				<subanchor sarel="-1" saname="merged" saoffset="6536" salength="6" rank="227">
+				<subanchor sarel="1" saname="merged" saoffset="6536" salength="6" rank="227">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="美国领土">763391</tobep>
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="陈立功事件">160251</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="南葛饰郡">1129410</tobep>
@@ -2726,7 +2726,7 @@
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="大国家党">340403</tobep>
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="民主党 (美国)">3102</tobep>
 				</subanchor>
-				<subanchor sarel="-1" saname="Democratic Liberal Party" saoffset="6606" salength="24" rank="26">
+				<subanchor sarel="1" saname="Democratic Liberal Party" saoffset="6606" salength="24" rank="26">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Grand_National_Party">280825</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="大国家党">340403</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="民主">10863</tobep>
@@ -2799,7 +2799,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="hiatus" aoffset="6849" alength="6" ext_length="0">
-				<subanchor sarel="-1" saname="hiatus" saoffset="6849" salength="6" rank="174">
+				<subanchor sarel="1" saname="hiatus" saoffset="6849" salength="6" rank="174">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="抗反轉錄病毒藥物">253971</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="第三套人民币">124247</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="不间断电源">251812</tobep>
@@ -4110,7 +4110,7 @@
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="山">19550</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Pyongyang" aoffset="10803" alength="9" ext_length="0">
+			<anchor arel="1" aname="Pyongyang" aoffset="10803" alength="9" ext_length="0">
 				<subanchor sarel="1" saname="Pyongyang" saoffset="10803" salength="9" rank="29">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="平壤城 (高句丽)">1186467</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="朝鲜民主主义人民共和国交通">155282</tobep>
@@ -5421,7 +5421,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="1" aname="the Associated Press" aoffset="15880" alength="20" ext_length="0">
-				<subanchor sarel="-1" saname="the Associated Press" saoffset="15880" salength="20" rank="179">
+				<subanchor sarel="1" saname="the Associated Press" saoffset="15880" salength="20" rank="179">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="美联社">39676</tobep>
 				</subanchor>
 				<subanchor sarel="-1" saname="Associated" saoffset="15884" salength="10" rank="237">

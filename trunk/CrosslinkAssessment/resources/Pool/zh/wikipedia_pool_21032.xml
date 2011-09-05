@@ -2133,22 +2133,22 @@
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="文化">1174</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="1" aname="human" aoffset="6234" alength="5" ext_length="7">
+			<anchor arel="0" aname="human" aoffset="6234" alength="5" ext_length="7">
 				<subanchor sarel="1" saname="human" saoffset="6234" salength="5" rank="87">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="人">37075</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="人权">23739</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="人類演化">24671</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="人力资源">13368</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="humanism">64020</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="人类帝国">96305</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="吴定良">38724</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="人型机器人学">507343</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="人类基因组计划">97057</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="人類發展指數列表">509425</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="人族 (星海爭霸)">221235</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="compassion">791431</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Human">721446</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="人体解剖学">4167</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="人力资源">13368</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="humanism">64020</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="人类帝国">96305</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="吴定良">38724</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="人型机器人学">507343</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="人类基因组计划">97057</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="人類發展指數列表">509425</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="人族 (星海爭霸)">221235</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="compassion">791431</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Human">721446</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="人体解剖学">4167</tobep>
 				</subanchor>
 				<subanchor sarel="1" saname="human beings" saoffset="6234" salength="12" rank="142">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="人">37075</tobep>
@@ -3544,7 +3544,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="1" aname="spring" aoffset="10102" alength="6" ext_length="11">
-				<subanchor sarel="-1" saname="spring" saoffset="10102" salength="6" rank="82">
+				<subanchor sarel="1" saname="spring" saoffset="10102" salength="6" rank="82">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="春天湖 (桂林)">141132</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="春… 遲來的春天">981018</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Spring">276347</tobep>
@@ -3560,7 +3560,7 @@
 				<subanchor sarel="1" saname="spring and autumn" saoffset="10102" salength="17" rank="85">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="春秋">187460</tobep>
 				</subanchor>
-				<subanchor sarel="-1" saname="autumn" saoffset="10113" salength="6" rank="79">
+				<subanchor sarel="1" saname="autumn" saoffset="10113" salength="6" rank="79">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="秋姓">604292</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="應天風秋八月">424994</tobep>
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="秋季">43955</tobep>
@@ -3663,7 +3663,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="hand" aoffset="10391" alength="4" ext_length="0">
-				<subanchor sarel="-1" saname="hand" saoffset="10391" salength="4" rank="130">
+				<subanchor sarel="1" saname="hand" saoffset="10391" salength="4" rank="130">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="手">95361</tobep>
 				</subanchor>
 			</anchor>

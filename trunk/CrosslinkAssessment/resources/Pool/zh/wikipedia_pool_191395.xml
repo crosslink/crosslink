@@ -1625,7 +1625,7 @@
 				<subanchor sarel="1" saname="Liaoning province" saoffset="5254" salength="17" rank="102">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="辽宁省">306</tobep>
 				</subanchor>
-				<subanchor sarel="-1" saname="province" saoffset="5263" salength="8" rank="84">
+				<subanchor sarel="1" saname="province" saoffset="5263" salength="8" rank="84">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="省">107594</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Provinces_of_China">221619</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="欧洲天主教教区列表">909241</tobep>
@@ -2337,7 +2337,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="colours" aoffset="7041" alength="7" ext_length="0">
-				<subanchor sarel="-1" saname="colours" saoffset="7041" salength="7" rank="48">
+				<subanchor sarel="1" saname="colours" saoffset="7041" salength="7" rank="48">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="颜色">37842</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="旗幟">207282</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="光学">153465</tobep>
@@ -3668,7 +3668,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="jewelry" aoffset="11420" alength="7" ext_length="0">
-				<subanchor sarel="-1" saname="jewelry" saoffset="11420" salength="7" rank="85">
+				<subanchor sarel="1" saname="jewelry" saoffset="11420" salength="7" rank="85">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="张培莉">71650</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="历峰集团">183183</tobep>
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="珠寶">286284</tobep>
@@ -3907,7 +3907,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="yu" aoffset="12375" alength="2" ext_length="0">
-				<subanchor sarel="-1" saname="yu" saoffset="12375" salength="2" rank="246">
+				<subanchor sarel="1" saname="yu" saoffset="12375" salength="2" rank="246">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="玉名市">618910</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="賈寶玉">47596</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="河南省">427</tobep>
@@ -5241,7 +5241,7 @@
 				<subanchor sarel="1" saname="The British Museum" saoffset="18801" salength="18" rank="93">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="大英博物馆">4579</tobep>
 				</subanchor>
-				<subanchor sarel="-1" saname="British Museum" saoffset="18805" salength="14" rank="9">
+				<subanchor sarel="1" saname="British Museum" saoffset="18805" salength="14" rank="9">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="大英图书馆">58751</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="英国自然历史博物馆">1095255</tobep>
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="大英博物馆">4579</tobep>
@@ -5333,7 +5333,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="官立學校">660656</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="producers" aoffset="19833" alength="9" ext_length="0">
+			<anchor arel="-1" aname="producers" aoffset="19833" alength="9" ext_length="0">
 				<subanchor sarel="-1" saname="producers" saoffset="19833" salength="9" rank="173">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Film_producer">41052</tobep>
 				</subanchor>
