@@ -1522,39 +1522,39 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="GPS卫星发射列表">1262940</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="the enemy" aoffset="3421" alength="9" ext_length="0">
-				<subanchor sarel="0" saname="the enemy" saoffset="3421" salength="9" rank="215">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="敵人">913681</tobep>
+			<anchor arel="1" aname="the enemy" aoffset="3421" alength="9" ext_length="0">
+				<subanchor sarel="1" saname="the enemy" saoffset="3421" salength="9" rank="215">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="敵人">913681</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="retired" aoffset="3437" alength="7" ext_length="0">
-				<subanchor sarel="0" saname="retired" saoffset="3437" salength="7" rank="82">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="出局 (棒球)">600428</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="退休">524788</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="梁銘彥">661926</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="美国人口历史">5348</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="手袋黨">183076</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="香港大專院校校長列表">654486</tobep>
+			<anchor arel="-1" aname="retired" aoffset="3437" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="retired" saoffset="3437" salength="7" rank="82">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="出局 (棒球)">600428</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="退休">524788</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="梁銘彥">661926</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="美国人口历史">5348</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="手袋黨">183076</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="香港大專院校校長列表">654486</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="reload" aoffset="3448" alength="6" ext_length="0">
-				<subanchor sarel="0" saname="reload" saoffset="3448" salength="6" rank="101">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="大秦铁路">101775</tobep>
+			<anchor arel="-1" aname="reload" aoffset="3448" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="reload" saoffset="3448" salength="6" rank="101">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="大秦铁路">101775</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="东风7B型柴油机车">1241501</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中国铁路HXD2型电力机车">638079</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="C++类">1125580</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="运算符重载">43548</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="comrades" aoffset="3468" alength="8" ext_length="0">
-				<subanchor sarel="0" saname="comrades" saoffset="3468" salength="8" rank="75">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="台灣同性戀權利運動">52920</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="同性戀">2634</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="同志">105295</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="台灣同志諮詢熱線">131425</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="同志村">2628</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="男同性戀">58956</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="台灣同志遊行">152244</tobep>
+			<anchor arel="1" aname="comrades" aoffset="3468" alength="8" ext_length="0">
+				<subanchor sarel="1" saname="comrades" saoffset="3468" salength="8" rank="75">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="台灣同性戀權利運動">52920</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="同性戀">2634</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="同志">105295</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="台灣同志諮詢熱線">131425</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="同志村">2628</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="男同性戀">58956</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="台灣同志遊行">152244</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="turn" aoffset="3489" alength="4" ext_length="0">
@@ -1569,12 +1569,12 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="极限保持函数">682348</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="the firing" aoffset="3506" alength="10" ext_length="0">
-				<subanchor sarel="0" saname="the firing" saoffset="3506" salength="10" rank="209">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="射击">637924</tobep>
+			<anchor arel="1" aname="the firing" aoffset="3506" alength="10" ext_length="0">
+				<subanchor sarel="1" saname="the firing" saoffset="3506" salength="10" rank="209">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="射击">637924</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="firing" saoffset="3510" salength="6" rank="234">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="射击">637924</tobep>
+				<subanchor sarel="1" saname="firing" saoffset="3510" salength="6" rank="234">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="射击">637924</tobep>
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="recorded" aoffset="3537" alength="8" ext_length="0">
@@ -1599,34 +1599,34 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="form ">920584</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="regiments" aoffset="3584" alength="9" ext_length="0">
-				<subanchor sarel="0" saname="regiments" saoffset="3584" salength="9" rank="173">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="管弦乐团列表">3173</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="团">612598</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中国中央企业">196556</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="團 (軍隊)">20935</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中国共产主义青年团">97535</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="越剧剧团列表">1225157</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="潮剧剧团列表">1279730</tobep>
+			<anchor arel="1" aname="regiments" aoffset="3584" alength="9" ext_length="0">
+				<subanchor sarel="1" saname="regiments" saoffset="3584" salength="9" rank="173">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="管弦乐团列表">3173</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="团">612598</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中国中央企业">196556</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="團 (軍隊)">20935</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中国共产主义青年团">97535</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="越剧剧团列表">1225157</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="潮剧剧团列表">1279730</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Austrian" aoffset="3597" alength="8" ext_length="0">
-				<subanchor sarel="0" saname="Austrian" saoffset="3597" salength="8" rank="53">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="神圣罗马帝国">7980</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Holy_Roman_Empire">167514</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="哈布斯堡君主國">1137232</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="奧地利帝國">103277</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="奥匈帝国">54715</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="奧地利航空">493369</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Habsburg_Monarchy">658457</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="奥地利">6270</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="奧地利國家足球隊">278180</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="奧地利經濟學派">338709</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="奧地利足球超級聯賽">128203</tobep>
+			<anchor arel="-1" aname="Austrian" aoffset="3597" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="Austrian" saoffset="3597" salength="8" rank="53">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="神圣罗马帝国">7980</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Holy_Roman_Empire">167514</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="哈布斯堡君主國">1137232</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="奧地利帝國">103277</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="奥匈帝国">54715</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="奧地利航空">493369</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Habsburg_Monarchy">658457</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="奥地利">6270</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="奧地利國家足球隊">278180</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="奧地利經濟學派">338709</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="奧地利足球超級聯賽">128203</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="recruited" aoffset="3625" alength="9" ext_length="0">
-				<subanchor sarel="0" saname="recruited" saoffset="3625" salength="9" rank="54">
+			<anchor arel="-1" aname="recruited" aoffset="3625" alength="9" ext_length="0">
+				<subanchor sarel="-1" saname="recruited" saoffset="3625" salength="9" rank="54">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="北京大学工学院">279032</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="招聘">700012</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="網路招募">193204</tobep>
@@ -1635,26 +1635,26 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="recruitment">707468</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Croatia" aoffset="3640" alength="7" ext_length="0">
-				<subanchor sarel="0" saname="Croatia" saoffset="3640" salength="7" rank="20">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="克羅地亞國家足球隊">184122</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="克罗地亚国家男子篮球队">905921</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="奥林匹克运动会克罗地亚代表团">1212442</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="克羅埃西亞獨立國">682436</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="克罗地亚足球甲级联赛">662561</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="克羅埃西亞地理">982348</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="War_in_Croatia">807377</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="War_in_Croatia">501032</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2008年夏季殘奧會克羅地亞代表團">901162</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="克罗地亚">38309</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2008年夏季奥林匹克运动会克罗地亚代表团">818554</tobep>
+			<anchor arel="1" aname="Croatia" aoffset="3640" alength="7" ext_length="0">
+				<subanchor sarel="1" saname="Croatia" saoffset="3640" salength="7" rank="20">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="克羅地亞國家足球隊">184122</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="克罗地亚国家男子篮球队">905921</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="奥林匹克运动会克罗地亚代表团">1212442</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="克羅埃西亞獨立國">682436</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="克罗地亚足球甲级联赛">662561</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="克羅埃西亞地理">982348</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="War_in_Croatia">807377</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="War_in_Croatia">501032</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2008年夏季殘奧會克羅地亞代表團">901162</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="克罗地亚">38309</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2008年夏季奥林匹克运动会克罗地亚代表团">818554</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="to serve" aoffset="3656" alength="8" ext_length="0">
-				<subanchor sarel="0" saname="to serve" saoffset="3656" salength="8" rank="242">
+			<anchor arel="-1" aname="to serve" aoffset="3656" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="to serve" saoffset="3656" salength="8" rank="242">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="服务">436369</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="serve" saoffset="3659" salength="5" rank="112">
+				<subanchor sarel="-1" saname="serve" saoffset="3659" salength="5" rank="112">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="无偿献血宣传志愿者">1197195</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="代理服务器">150589</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="SOA治理">1263233</tobep>
@@ -1664,11 +1664,11 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="服务器">12372</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="the future" aoffset="3665" alength="10" ext_length="0">
-				<subanchor sarel="0" saname="the future" saoffset="3665" salength="10" rank="152">
+			<anchor arel="-1" aname="the future" aoffset="3665" alength="10" ext_length="0">
+				<subanchor sarel="-1" saname="the future" saoffset="3665" salength="10" rank="152">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="未来">50676</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="future" saoffset="3669" salength="6" rank="102">
+				<subanchor sarel="-1" saname="future" saoffset="3669" salength="6" rank="102">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="小灵通漫游未来">74621</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="期货">49647</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="資產">232891</tobep>
@@ -1682,8 +1682,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="未来学家">971295</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Holy" aoffset="3676" alength="4" ext_length="25">
-				<subanchor sarel="0" saname="Holy" saoffset="3676" salength="4" rank="196">
+			<anchor arel="1" aname="Holy" aoffset="3676" alength="4" ext_length="25">
+				<subanchor sarel="-1" saname="Holy" saoffset="3676" salength="4" rank="196">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中国天主教堂列表">295256</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="神圣罗马帝国">7980</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="意大利天主教宗座圣殿列表">925090</tobep>
@@ -1694,22 +1694,22 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="美国主教座堂列表">918721</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="天主教宗座圣殿列表/A-E">1089738</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="Holy Roman" saoffset="3676" salength="10" rank="213">
+				<subanchor sarel="-1" saname="Holy Roman" saoffset="3676" salength="10" rank="213">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="神圣罗马帝国">7980</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="神圣罗马帝国皇帝列表">167514</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="Holy Roman Emperor" saoffset="3676" salength="18" rank="0">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="西吉斯蒙德 (神圣罗马帝国)">303168</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="神圣罗马帝国">7980</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="神圣罗马帝国皇帝列表">167514</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="腓特烈一世 (神圣罗马帝国)">67334</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="神聖羅馬皇帝">68350</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="腓特烈二世 (神圣罗马帝国)">72329</tobep>
+				<subanchor sarel="1" saname="Holy Roman Emperor" saoffset="3676" salength="18" rank="0">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="西吉斯蒙德 (神圣罗马帝国)">303168</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="神圣罗马帝国">7980</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="神圣罗马帝国皇帝列表">167514</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="腓特烈一世 (神圣罗马帝国)">67334</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="神聖羅馬皇帝">68350</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="腓特烈二世 (神圣罗马帝国)">72329</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="Holy Roman Emperor Maximilian" saoffset="3676" salength="29" rank="197">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="神圣同盟">4895</tobep>
+				<subanchor sarel="1" saname="Holy Roman Emperor Maximilian" saoffset="3676" salength="29" rank="197">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="神圣同盟">4895</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="Roman" saoffset="3681" salength="5" rank="44">
+				<subanchor sarel="-1" saname="Roman" saoffset="3681" salength="5" rank="44">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="罗马共和国">119960</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="不列顛尼亞行省">493570</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="教皇国">466986</tobep>
@@ -1725,7 +1725,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Book_of_Romans">112031</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Rome">980589</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="Roman Emperor" saoffset="3681" salength="13" rank="4">
+				<subanchor sarel="-1" saname="Roman Emperor" saoffset="3681" salength="13" rank="4">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="羅馬皇帝">373253</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="羅馬帝國">459860</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="神圣罗马帝国皇帝列表">167514</tobep>
@@ -1733,7 +1733,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="羅馬皇帝列表">10270</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="拜占庭皇帝列表">16029</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="Emperor" saoffset="3687" salength="7" rank="19">
+				<subanchor sarel="-1" saname="Emperor" saoffset="3687" salength="7" rank="19">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中国皇帝">15861</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="羅馬皇帝">373253</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="越南君主列表">96459</tobep>
@@ -1749,52 +1749,52 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="皇帝：龙之崛起">525690</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="拜占庭皇帝列表">16029</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="Emperor Maximilian" saoffset="3687" salength="18" rank="40">
+				<subanchor sarel="-1" saname="Emperor Maximilian" saoffset="3687" salength="18" rank="40">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="马西米连诺一世 (墨西哥)">127402</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="皇帝">6186</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="fought" aoffset="3712" alength="6" ext_length="0">
-				<subanchor sarel="0" saname="fought" saoffset="3712" salength="6" rank="107">
+			<anchor arel="-1" aname="fought" aoffset="3712" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="fought" saoffset="3712" salength="6" rank="107">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="戰鬥">519665</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Indian_Wars">49038</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="the Swedes" aoffset="3719" alength="10" ext_length="0">
-				<subanchor sarel="0" saname="the Swedes" saoffset="3719" salength="10" rank="240">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="瑞典人">903766</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="瑞典地區">730463</tobep>
+			<anchor arel="1" aname="the Swedes" aoffset="3719" alength="10" ext_length="0">
+				<subanchor sarel="1" saname="the Swedes" saoffset="3719" salength="10" rank="240">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="瑞典人">903766</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="瑞典地區">730463</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="Swedes" saoffset="3723" salength="6" rank="24">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="瑞典">7197</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="瑞典帝國">999600</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="瑞典人">903766</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="allies" aoffset="3740" alength="6" ext_length="0">
-				<subanchor sarel="0" saname="allies" saoffset="3740" salength="6" rank="193">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="同盟國 (第二次世界大戰)">248266</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Seventh_Coalition">248267</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="北大西洋公约组织">1280</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="行际盟友奖">1038717</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="杨永信">1036009</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="借刀杀人">480911</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="康边停战协定">263472</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="三国同盟条约">286229</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="同盟國 (第一次世界大戰)">259979</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="協約國列表">221378</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Allies_of_World_War_II">38228</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="豺狼人">610301</tobep>
+				<subanchor sarel="1" saname="Swedes" saoffset="3723" salength="6" rank="24">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="瑞典">7197</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="瑞典帝國">999600</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="瑞典人">903766</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Lützen" aoffset="3758" alength="6" ext_length="0">
-				<subanchor sarel="0" saname="Lützen" saoffset="3758" salength="6" rank="17">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="呂岑會戰 (1813年)">1008028</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="吕岑">1008332</tobep>
+			<anchor arel="-1" aname="allies" aoffset="3740" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="allies" saoffset="3740" salength="6" rank="193">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="同盟國 (第二次世界大戰)">248266</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Seventh_Coalition">248267</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="北大西洋公约组织">1280</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="行际盟友奖">1038717</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="杨永信">1036009</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="借刀杀人">480911</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="康边停战协定">263472</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="三国同盟条约">286229</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="同盟國 (第一次世界大戰)">259979</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="協約國列表">221378</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Allies_of_World_War_II">38228</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="豺狼人">610301</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="killed" aoffset="3769" alength="6" ext_length="0">
-				<subanchor sarel="0" saname="killed" saoffset="3769" salength="6" rank="247">
+			<anchor arel="1" aname="Lützen" aoffset="3758" alength="6" ext_length="0">
+				<subanchor sarel="1" saname="Lützen" saoffset="3758" salength="6" rank="17">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="呂岑會戰 (1813年)">1008028</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="吕岑">1008332</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="killed" aoffset="3769" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="killed" saoffset="3769" salength="6" rank="247">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="杀害尊亲属罪">791112</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="不杀生">1118454</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="最高機密 (漫畫)">739812</tobep>
@@ -1802,24 +1802,24 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="稽查專用">1155131</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="the Swedish" aoffset="3776" alength="11" ext_length="23">
-				<subanchor sarel="0" saname="the Swedish" saoffset="3776" salength="11" rank="233">
+			<anchor arel="1" aname="the Swedish" aoffset="3776" alength="11" ext_length="23">
+				<subanchor sarel="-1" saname="the Swedish" saoffset="3776" salength="11" rank="233">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="瑞典">7197</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="Swedish" saoffset="3780" salength="7" rank="3">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="瑞典語">49330</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Sweden">967705</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="瑞典">7197</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="瑞典語維基百科">291966</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="瑞典語發音">533353</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="瑞典殖民地">439448</tobep>
+				<subanchor sarel="1" saname="Swedish" saoffset="3780" salength="7" rank="3">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="瑞典語">49330</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Sweden">967705</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="瑞典">7197</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="瑞典語維基百科">291966</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="瑞典語發音">533353</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="瑞典殖民地">439448</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="Swedish king" saoffset="3780" salength="12" rank="116">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="瑞典君主">204186</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="瑞典">7197</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="瑞典君主列表">68474</tobep>
+				<subanchor sarel="1" saname="Swedish king" saoffset="3780" salength="12" rank="116">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="瑞典君主">204186</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="瑞典">7197</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="瑞典君主列表">68474</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="king" saoffset="3788" salength="4" rank="42">
+				<subanchor sarel="-1" saname="king" saoffset="3788" salength="4" rank="42">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="法国王太子">545702</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="君主">163319</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="王">163374</tobep>
@@ -1837,27 +1837,27 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="尼泊尔君主列表">123496</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="king">594655</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="king Gustavus" saoffset="3788" salength="13" rank="97">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="王">163374</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="古斯塔夫二世·阿道夫">324343</tobep>
+				<subanchor sarel="1" saname="king Gustavus" saoffset="3788" salength="13" rank="97">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="王">163374</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="古斯塔夫二世·阿道夫">324343</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="king Gustavus Adolphus" saoffset="3788" salength="22" rank="122">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="王">163374</tobep>
+				<subanchor sarel="-1" saname="king Gustavus Adolphus" saoffset="3788" salength="22" rank="122">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="王">163374</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="Gustavus" saoffset="3793" salength="8" rank="155">
+				<subanchor sarel="-1" saname="Gustavus" saoffset="3793" salength="8" rank="155">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="颶風古斯塔夫">875347</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="古斯塔夫·赫兹">526477</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="古斯塔夫二世·阿道夫">324343</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="古斯塔夫五世">1038050</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="Gustavus Adolphus" saoffset="3793" salength="17" rank="18">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Gustavus_Adolphus">1106970</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="古斯塔夫·赫兹">526477</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="古斯塔夫二世·阿道夫">324343</tobep>
+				<subanchor sarel="1" saname="Gustavus Adolphus" saoffset="3793" salength="17" rank="18">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Gustavus_Adolphus">1106970</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="古斯塔夫·赫兹">526477</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="古斯塔夫二世·阿道夫">324343</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Only" aoffset="3812" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="Only" saoffset="3812" salength="4" rank="171">
+			<anchor arel="-1" aname="Only" aoffset="3812" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="Only" saoffset="3812" salength="4" rank="171">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="只有你聽到 CALLING YOU">1008854</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="榮歸主頌">85061</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2R">218446</tobep>
@@ -1865,8 +1865,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="1919年－1945年德國軍用飛機列表">1095312</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="two" aoffset="3817" alength="3" ext_length="0">
-				<subanchor sarel="0" saname="two" saoffset="3817" salength="3" rank="206">
+			<anchor arel="-1" aname="two" aoffset="3817" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="two" saoffset="3817" salength="3" rank="206">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="两">1290475</tobep>
 				</subanchor>
 			</anchor>
@@ -2022,8 +2022,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="步兵">113199</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="introduction" aoffset="4071" alength="12" ext_length="0">
-				<subanchor sarel="0" saname="introduction" saoffset="4071" salength="12" rank="220">
+			<anchor arel="-1" aname="introduction" aoffset="4071" alength="12" ext_length="0">
+				<subanchor sarel="-1" saname="introduction" saoffset="4071" salength="12" rank="220">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="数学著作列表">156108</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="红楼梦人物列表">691194</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Portal:電子學/简介/Image">1225143</tobep>
