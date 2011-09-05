@@ -475,7 +475,6 @@ public class EvaluationUI3 extends JFrame {
         langSelectionPanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Language Selection", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
 
         langButtonGroup.add(jRadioLangZh);
-        jRadioLangZh.setSelected(true);
         jRadioLangZh.setText("Chinese");
         jRadioLangZh.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
         jRadioLangZh.addActionListener(new java.awt.event.ActionListener() {
@@ -494,6 +493,7 @@ public class EvaluationUI3 extends JFrame {
         });
 
         langButtonGroup.add(jRadioLangAll);
+        jRadioLangAll.setSelected(true);
         jRadioLangAll.setText("All");
         jRadioLangAll.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
         jRadioLangAll.addActionListener(new java.awt.event.ActionListener() {
@@ -685,25 +685,27 @@ public class EvaluationUI3 extends JFrame {
 					try {
 						pcr = plotsCalculation.plotCalculate(/*resultFile, */this.runFileCache[i], useAllTopics, useFileToBep, useAnchorToFile, useAnchorToBEP, langSelected);
 
-	                    if (plotHashmap.containsKey((Object) pcr.plotRunId)) {
-	
-	                        HashMap hmap = (HashMap) plotHashmap.get((Object) pcr.plotRunId);
-	                        if (hmap.containsKey("incoming")) {
-	                            incommingPlotData.add(new Object[]{
-	                                        pcr.incomming, hmap.get("incoming"), pcr.plotRunId
-	                                    });
-	                        }
-	                        if (hmap.containsKey("outgoing")) {
-	                            outgoingPlotData.add(new Object[]{
-	                                        pcr.outgoing, hmap.get("outgoing"), pcr.plotRunId
-	                                    });
-	                        }
-	                        if (hmap.containsKey("f_score")) {
-	                            combinationPlotData.add(new Object[]{
-	                                        pcr.combination, hmap.get("f_score"), pcr.plotRunId
-	                                    });
-	                        }
-	                    }
+						if (pcr != null) {
+		                    if (plotHashmap.containsKey((Object) pcr.plotRunId)) {
+		
+		                        HashMap hmap = (HashMap) plotHashmap.get((Object) pcr.plotRunId);
+		                        if (hmap.containsKey("incoming")) {
+		                            incommingPlotData.add(new Object[]{
+		                                        pcr.incomming, hmap.get("incoming"), pcr.plotRunId
+		                                    });
+		                        }
+		                        if (hmap.containsKey("outgoing")) {
+		                            outgoingPlotData.add(new Object[]{
+		                                        pcr.outgoing, hmap.get("outgoing"), pcr.plotRunId
+		                                    });
+		                        }
+		                        if (hmap.containsKey("f_score")) {
+		                            combinationPlotData.add(new Object[]{
+		                                        pcr.combination, hmap.get("f_score"), pcr.plotRunId
+		                                    });
+		                        }
+		                    }
+						}
 	                } catch (PropertyException ex) {
 	                    ex.printStackTrace();
 	                } catch (ChartDataException ex) {
