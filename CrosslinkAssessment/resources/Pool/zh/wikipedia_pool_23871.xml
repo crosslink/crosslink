@@ -271,7 +271,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="1" aname="unleavened" aoffset="925" alength="10" ext_length="6">
-				<subanchor sarel="-1" saname="unleavened" saoffset="925" salength="10" rank="177">
+				<subanchor sarel="1" saname="unleavened" saoffset="925" salength="10" rank="177">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="大果咖啡">38909</tobep>
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="無酵餅">732160</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="長臀光鰓魚">964552</tobep>
@@ -2774,7 +2774,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="1" aname="Marco" aoffset="7649" alength="5" ext_length="5">
-				<subanchor sarel="-1" saname="Marco" saoffset="7649" salength="5" rank="28">
+				<subanchor sarel="1" saname="Marco" saoffset="7649" salength="5" rank="28">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="马尔科·博列洛">541463</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="熱帶風暴馬可">1112068</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="希奥利艾">595045</tobep>
@@ -3571,7 +3571,7 @@
 				<subanchor sarel="1" saname="of Calabria" saoffset="9965" salength="11" rank="228">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="卡拉布里亚">326788</tobep>
 				</subanchor>
-				<subanchor sarel="-1" saname="Calabria" saoffset="9968" salength="8" rank="27">
+				<subanchor sarel="1" saname="Calabria" saoffset="9968" salength="8" rank="27">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="卡拉布里亚">326788</tobep>
 				</subanchor>
 			</anchor>
@@ -4089,7 +4089,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="1" aname="the world" aoffset="12019" alength="9" ext_length="0">
-				<subanchor sarel="-1" saname="the world" saoffset="12019" salength="9" rank="215">
+				<subanchor sarel="1" saname="the world" saoffset="12019" salength="9" rank="215">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="世界">13711</tobep>
 				</subanchor>
 				<subanchor sarel="1" saname="world" saoffset="12023" salength="5" rank="132">
@@ -4186,7 +4186,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="1" aname="Hong Kong-style" aoffset="12279" alength="15" ext_length="16">
-				<subanchor sarel="-1" saname="Hong Kong-style" saoffset="12279" salength="15" rank="179">
+				<subanchor sarel="1" saname="Hong Kong-style" saoffset="12279" salength="15" rank="179">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="港式快餐">357675</tobep>
 				</subanchor>
 				<subanchor sarel="-1" saname="Hong Kong-style Western cuisine" saoffset="12279" salength="31" rank="6">
@@ -4893,7 +4893,7 @@
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="莫比乌斯带">150144</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="colored" aoffset="14863" alength="7" ext_length="0">
+			<anchor arel="-1" aname="colored" aoffset="14863" alength="7" ext_length="0">
 				<subanchor sarel="-1" saname="colored" saoffset="14863" salength="7" rank="162">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="吉姆·克勞法">706381</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="湖南有色金屬">250837</tobep>

@@ -4,7 +4,7 @@
 	<collection>Korean Wikipedia 2010 Collection</collection>
 	<topic file="178952" name="Kimchi">
 		<outgoinglinks>
-			<anchor arel="0" aname="c" aoffset="22" alength="1" ext_length="0">
+			<anchor arel="-1" aname="c" aoffset="22" alength="1" ext_length="0">
 				<subanchor sarel="0" saname="c" saoffset="22" salength="1" rank="72">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="碳">1340</tobep>
 				</subanchor>
@@ -26,7 +26,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2006年国际象棋世界冠军对抗赛">916311</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="era" aoffset="47" alength="3" ext_length="0">
+			<anchor arel="-1" aname="era" aoffset="47" alength="3" ext_length="0">
 				<subanchor sarel="0" saname="era" saoffset="47" salength="3" rank="160">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="史前時代">1016590</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="全国十大考古新发现">948786</tobep>
@@ -38,7 +38,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="時代">547168</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Wiki" aoffset="62" alength="4" ext_length="0">
+			<anchor arel="-1" aname="Wiki" aoffset="62" alength="4" ext_length="0">
 				<subanchor sarel="0" saname="Wiki" saoffset="62" salength="4" rank="46">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Wiki">165</tobep>
 				</subanchor>

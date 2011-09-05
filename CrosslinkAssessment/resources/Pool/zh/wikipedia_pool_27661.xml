@@ -20,7 +20,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Wiki">165</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="-1" aname="Source" aoffset="266" alength="6" ext_length="5">
+			<anchor arel="0" aname="Source" aoffset="266" alength="6" ext_length="5">
 				<subanchor sarel="-1" saname="Source" saoffset="266" salength="6" rank="27">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="蒂薩河">686559</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="猿猴河">1225508</tobep>
@@ -39,17 +39,17 @@
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="国际电话区号列表">854</tobep>
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="channel_coding">909355</tobep>
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="language_code">998942</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="法典">636879</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="車輛國籍代碼列表">34206</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="机器语言">5350</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="machine_code">31485</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="channel_coding">956068</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="代码混淆">1170929</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="microcode">25535</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="國際航空運輸協會航空公司代碼">173444</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="目标代码">157562</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="language_code">284588</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="国际足联国家代码列表">655184</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="法典">636879</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="車輛國籍代碼列表">34206</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="机器语言">5350</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="machine_code">31485</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="channel_coding">956068</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="代码混淆">1170929</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="microcode">25535</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="國際航空運輸協會航空公司代碼">173444</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="目标代码">157562</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="language_code">284588</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="国际足联国家代码列表">655184</tobep>
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="代码重构">35187</tobep>
 				</subanchor>
 			</anchor>
@@ -4599,7 +4599,7 @@
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="net ">36797</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Live" aoffset="10650" alength="4" ext_length="0">
+			<anchor arel="1" aname="Live" aoffset="10650" alength="4" ext_length="0">
 				<subanchor sarel="1" saname="Live" saoffset="10650" salength="4" rank="38">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="现场八方">124818</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="百事群音">1117668</tobep>

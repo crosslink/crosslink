@@ -3035,7 +3035,7 @@
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="深海鱼类">1094860</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="海洋生物学">35868</tobep>
 				</subanchor>
-				<subanchor sarel="-1" saname="sea currents" saoffset="10722" salength="12" rank="222">
+				<subanchor sarel="1" saname="sea currents" saoffset="10722" salength="12" rank="222">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="洋流">193725</tobep>
 				</subanchor>
 				<subanchor sarel="1" saname="currents" saoffset="10726" salength="8" rank="80">
@@ -5252,7 +5252,7 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="網站">36797</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="The College of Wooster" aoffset="22355" alength="22" ext_length="0">
+			<anchor arel="-1" aname="The College of Wooster" aoffset="22355" alength="22" ext_length="0">
 				<subanchor sarel="-1" saname="The College of Wooster" saoffset="22355" salength="22" rank="125">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="伍斯特">760976</tobep>
 				</subanchor>

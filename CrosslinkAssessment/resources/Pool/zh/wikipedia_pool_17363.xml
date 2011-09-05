@@ -713,7 +713,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="-1" aname="Chinese" aoffset="1654" alength="7" ext_length="0">
-				<subanchor sarel="-1" saname="Chinese" saoffset="1654" salength="7" rank="42">
+				<subanchor sarel="1" saname="Chinese" saoffset="1654" salength="7" rank="42">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="清朝">2090</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中国">263</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中国国家足球队">139297</tobep>
@@ -1423,7 +1423,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="1" aname="People's Republic" aoffset="3972" alength="17" ext_length="9">
-				<subanchor sarel="-1" saname="People's Republic" saoffset="3972" salength="17" rank="3">
+				<subanchor sarel="1" saname="People's Republic" saoffset="3972" salength="17" rank="3">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="人民">184649</tobep>
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="人民共和国">64931</tobep>
 				</subanchor>
@@ -1442,7 +1442,7 @@
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="俄罗斯行政区划">88100</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="理想国">17725</tobep>
 				</subanchor>
-				<subanchor sarel="-1" saname="Republic of China" saoffset="3981" salength="17" rank="76">
+				<subanchor sarel="1" saname="Republic of China" saoffset="3981" salength="17" rank="76">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中華民國">271</tobep>
 				</subanchor>
 			</anchor>
@@ -2250,7 +2250,7 @@
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="格洛斯特郡花猪">654706</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="切斯特白猪">654471</tobep>
 				</subanchor>
-				<subanchor sarel="-1" saname="Cultivar Group" saoffset="6172" salength="14" rank="2">
+				<subanchor sarel="1" saname="Cultivar Group" saoffset="6172" salength="14" rank="2">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="栽培種">676381</tobep>
 				</subanchor>
 				<subanchor sarel="1" saname="Group" saoffset="6181" salength="5" rank="30">
@@ -3461,7 +3461,7 @@
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="乳">154469</tobep>
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="奶制品">5508</tobep>
 				</subanchor>
-				<subanchor sarel="-1" saname="dairy products" saoffset="9115" salength="14" rank="90">
+				<subanchor sarel="1" saname="dairy products" saoffset="9115" salength="14" rank="90">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="乳牛">320954</tobep>
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="奶制品">5508</tobep>
 				</subanchor>
@@ -3574,7 +3574,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="1" aname="U.S. Department of Agriculture" aoffset="9438" alength="30" ext_length="0">
-				<subanchor sarel="-1" saname="U.S. Department of Agriculture" saoffset="9438" salength="30" rank="32">
+				<subanchor sarel="1" saname="U.S. Department of Agriculture" saoffset="9438" salength="30" rank="32">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="美国农业部">116581</tobep>
 				</subanchor>
 				<subanchor sarel="1" saname="Department" saoffset="9443" salength="10" rank="88">
@@ -3764,7 +3764,7 @@
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="univers ">663026</tobep>
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中国成人高等学校列表">802842</tobep>
 				</subanchor>
-				<subanchor sarel="-1" saname="University of Oslo" saoffset="10000" salength="18" rank="0">
+				<subanchor sarel="1" saname="University of Oslo" saoffset="10000" salength="18" rank="0">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="奥斯陆大学">948044</tobep>
 				</subanchor>
 				<subanchor sarel="1" saname="Oslo" saoffset="10014" salength="4" rank="37">
@@ -3851,7 +3851,7 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="1" aname="28 days" aoffset="10143" alength="7" ext_length="0">
-				<subanchor sarel="-1" saname="28 days" saoffset="10143" salength="7" rank="245">
+				<subanchor sarel="1" saname="28 days" saoffset="10143" salength="7" rank="245">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="28天">762301</tobep>
 				</subanchor>
 				<subanchor sarel="1" saname="days" saoffset="10146" salength="4" rank="194">
@@ -4782,7 +4782,7 @@
 				<subanchor sarel="1" saname="flight distance" saoffset="13645" salength="15" rank="221">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="飛行">537911</tobep>
 				</subanchor>
-				<subanchor sarel="-1" saname="distance" saoffset="13652" salength="8" rank="80">
+				<subanchor sarel="1" saname="distance" saoffset="13652" salength="8" rank="80">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="距离">35783</tobep>
 				</subanchor>
 			</anchor>
@@ -4895,7 +4895,7 @@
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="日用品">644048</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Purdue" aoffset="14265" alength="6" ext_length="11">
+			<anchor arel="1" aname="Purdue" aoffset="14265" alength="6" ext_length="11">
 				<subanchor sarel="1" saname="Purdue" saoffset="14265" salength="6" rank="1">
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="普渡大學">394731</tobep>
 				</subanchor>
