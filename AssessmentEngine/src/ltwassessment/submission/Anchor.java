@@ -34,11 +34,11 @@ public class Anchor {
 	
 	protected boolean valid = false;
 	
-	// for the overlapping Anchors
-	protected Anchor first = null;
-	protected Anchor last = null;
-	protected Anchor next = null;
-	protected Anchor previous = null;
+//	// for the overlapping Anchors
+//	protected Anchor first = null;
+//	protected Anchor last = null;
+//	protected Anchor next = null;
+//	protected Anchor previous = null;
 
 //	protected Vector<Target> targets = null;
 	protected Map<String, Target>	targets = null;
@@ -69,37 +69,37 @@ public class Anchor {
 		this.extendedLength = extendedLength;
 	}
 
-	public Anchor getFirst() {
-		return first;
-	}
-
-	public void setFirst(Anchor first) {
-		this.first = first;
-	}
-
-	public Anchor getLast() {
-		return last;
-	}
-
-	public void setLast(Anchor last) {
-		this.last = last;
-	}
-	
-	public Anchor getNext() {
-		return next;
-	}
-
-	public void setNext(Anchor next) {
-		this.next = next;
-	}
-
-	public Anchor getPrevious() {
-		return previous;
-	}
-
-	public void setPrevious(Anchor previous) {
-		this.previous = previous;
-	}
+//	public Anchor getFirst() {
+//		return first;
+//	}
+//
+//	public void setFirst(Anchor first) {
+//		this.first = first;
+//	}
+//
+//	public Anchor getLast() {
+//		return last;
+//	}
+//
+//	public void setLast(Anchor last) {
+//		this.last = last;
+//	}
+//	
+//	public Anchor getNext() {
+//		return next;
+//	}
+//
+//	public void setNext(Anchor next) {
+//		this.next = next;
+//	}
+//
+//	public Anchor getPrevious() {
+//		return previous;
+//	}
+//
+//	public void setPrevious(Anchor previous) {
+//		this.previous = previous;
+//	}
 
 	public int getOffset() {
 		return offset;
