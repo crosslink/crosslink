@@ -26,7 +26,7 @@ public class Data {
     public static final int LANGUAGE_ENGLISH = 16;
     public static final int LANGUAGE_ALL = 14;
     
-    protected static Map<String, Integer> langMatchMap = new HashMap<String, Integer>();
+    public static Map<String, Integer> langMatchMap = new HashMap<String, Integer>();
     
     protected static String runId = "";
     
