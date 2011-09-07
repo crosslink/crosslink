@@ -482,6 +482,8 @@ public class Measures extends Data {
 	                        String toFileID = "";
 	                        String toBep = "";
 	                        List<crosslink.rungenerator.ToFileType> linkTo = is.getTopic().get(i).getOutgoing().getAnchor().get(j).getTofile();
+	                        if (linkTo == null)
+	                        	continue;
 	                        // -----------------------------------------------------
 	                        int maxBepsPerAnchor = defaultMaxBepsPerAnchor;
 	                        if (maxBepsPerAnchor == 0) {
