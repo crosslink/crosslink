@@ -78,7 +78,9 @@
     	  <property name="release.file" value="CrosslinkEvaluation-${TODAY}.zip" />
     	  <delete file="${release.file}"/>
     	  <zip destfile="${release.file}">
-    	  	<zipfileset dir="resultsets" prefix="resultsets"/>
+    	  	<zipfileset dir="resultsets" prefix="resultsets">
+	  	  		<exclude name="test/A2BWikiManualResultSet*.xml"/>
+    	  	</zipfileset>
     	  	<zipfileset dir="resources" prefix="resources"/>
     	  	<zipfileset dir="lib" prefix="lib" />
     	  	<zipfileset dir="." includes="Instruction.pdf"/>
@@ -87,4 +89,22 @@
     	  	<zipfileset dir="${dist.dir}" includes="*.jar"/>
     	  </zip>
     </target>
+	
+    <target name="release-all" depends="CrosslinkEvaluation-impl.jar">
+    	  <tstamp>
+    	    <format property="TODAY" pattern="yyyyMMdd"/>
+    	  </tstamp>
+    	  <property name="release.file" value="CrosslinkEvaluation-RS-${TODAY}.zip" />
+    	  <delete file="${release.file}"/>
+    	  <zip destfile="${release.file}">
+    	  	<zipfileset dir="resultsets" prefix="resultsets">
+    	  	</zipfileset>
+    	  	<zipfileset dir="resources" prefix="resources"/>
+    	  	<zipfileset dir="lib" prefix="lib" />
+    	  	<zipfileset dir="." includes="Instruction.pdf"/>
+    	  	<zipfileset dir="." includes="CrosslinkSubmissionSchema.xsd"/>
+    	  	<zipfileset dir="." includes="run.*"/>
+    	  	<zipfileset dir="${dist.dir}" includes="*.jar"/>
+    	  </zip>
+    </target>	
 </project>

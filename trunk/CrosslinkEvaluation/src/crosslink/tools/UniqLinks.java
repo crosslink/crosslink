@@ -254,11 +254,12 @@ public class UniqLinks {
 		UniqLinks uniqLinks = new UniqLinks(runfileStart, args);
 
 		int param_start = 0;
+		String resultSetFile;
 		
-		for (int i = 0; i < args.length; ++i) {
-			if (args[i].charAt(0) == '-') {
-				if (args[i].charAt(1) == 't' ) {
-					String task = args[++i];
+		for (; param_start < args.length; ++param_start) {
+			if (args[param_start].charAt(0) == '-') {
+				if (args[param_start].charAt(1) == 't' ) {
+					String task = args[++param_start];
 					if (task.equalsIgnoreCase("a2f"))
 						uniqLinks.setTask(TASK_A2F);
 					else
@@ -283,6 +284,9 @@ public class UniqLinks {
 		}
 		if (param_start >= args.length)
 			usage();
+		
+		resultSetFile = args[param_start];
+		uniqLinks
 	}
 
 }

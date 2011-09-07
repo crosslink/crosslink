@@ -252,6 +252,8 @@ public final class fileToBepMeasures extends Measures {
             double anchorScore = 0.0;
             String key = e.nextElement().toString();
             log("Topic: " + key);
+//            if (key.contains("22156522"))
+//            	System.err.println("Got you");
             // get RUN (incoming or outgoing) links array for each Topic
             String[] runValues = (String[]) runTable.get(key);
             // get Result (incoming or outgoing) links array for each Topic
