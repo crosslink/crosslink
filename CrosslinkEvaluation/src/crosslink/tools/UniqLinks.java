@@ -186,6 +186,8 @@ public class UniqLinks {
 	                        String toFileID = "";
 	                        String toBep = "";
 	                        List<crosslink.rungenerator.ToFileType> linkTo = is.getTopic().get(i).getOutgoing().getAnchor().get(j).getTofile();
+	                        if (linkTo == null)
+	                        	return;
 	                        // -----------------------------------------------------
 	                        int maxBepsPerAnchor = defaultMaxBepsPerAnchor;
 	                        if (maxBepsPerAnchor == 0) {
@@ -227,9 +229,9 @@ public class UniqLinks {
 	                        	if (resultSet.containTopicAnchor(anchor))
 	                        		resultSet.addAnchorParticipantId(anchor, participantId);
 	                        }
-	                        else {
-	                        	System.err.println("Error: empty anchor");
-	                        }
+//	                        else {
+//	                        	System.err.println("Error: empty anchor");
+//	                        }
 	                    }
 	
 	                } // get topic
