@@ -6,6 +6,8 @@ import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Hashtable;
+import java.util.Iterator;
+import java.util.Map;
 import java.util.Set;
 import java.util.Vector;
 
@@ -16,7 +18,6 @@ import javax.xml.bind.Unmarshaller;
 import crosslink.measures.Data;
 import crosslink.resultsetGenerator.LtwResultsetType;
 import crosslink.resultsetGenerator.OutLink;
-import crosslink.tools.UniqLinks.Team;
 
 public class ResultSet {
 
@@ -105,8 +106,34 @@ public class ResultSet {
 
 	public ArrayList<Team> getTeamLinkCount() {
 		ArrayList<Team> teams = new ArrayList<Team>();
-		
+		HashMap<String, Team> teamMap = new HashMap<String, Team>();
+		Set set = linkSet.entrySet();
+		Iterator it = set.iterator();
+		Team team = null;
+		while (it.hasNext()) {
+			Map.Entry entry = (Map.Entry) it.next();
+			String key = (String) entry.getKey();
+			HashSet<String> participants = (HashSet<String>) entry.getValue();
+			
+			if (participants.size() == 1) {
+				String teamId = (String) participants.toArray()[0];
+
+				if (teamMap.containsKey(teamId))
+					team = teamMap.get(teamId);
+				else {
+					team = new Team(teamId);
+					teamMap.put(teamId, team);
+					teams.add(team);
+				}
+				team.increaseLinkCount(1);
+			}
+		}
 		return teams;
 	}
 	
+	public ArrayList<Team> getTeamAnchorCount() {
+		ArrayList<Team> teams = new ArrayList<Team>();
+		
+		return teams;
+	}
 }
