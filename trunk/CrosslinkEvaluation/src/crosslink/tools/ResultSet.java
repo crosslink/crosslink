@@ -1,6 +1,7 @@
 package crosslink.tools;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -15,13 +16,32 @@ import javax.xml.bind.Unmarshaller;
 import crosslink.measures.Data;
 import crosslink.resultsetGenerator.LtwResultsetType;
 import crosslink.resultsetGenerator.OutLink;
+import crosslink.tools.UniqLinks.Team;
 
 public class ResultSet {
 
-	HashSet<String>		linkSet = new HashSet<String>();
-	HashMap<String, HashSet<String>> anchorSet = new HashMap<String, HashSet<String>>();
+	HashMap<String, HashSet<String>>		linkSet = new HashMap<String, HashSet<String>>(); // link, participant id
+	HashMap<String, HashSet<String>> anchorSet = new HashMap<String, HashSet<String>>(); //key = topicid_anchoroffset_anchor_length
 	
-	private void load(String resultSetPathFile) {
+	public boolean containLink(String link) {
+		return linkSet.containsKey(link);
+	}
+	
+	public void addLinkParticipantId(String link, String id) {
+		if (!linkSet.get(link).contains(id))
+			linkSet.get(link).add(id);
+	}
+	
+	public boolean containTopicAnchor(String anchor) {
+		return anchorSet.containsKey(anchor);
+	}
+	
+	public void addAnchorParticipantId(String anchor, String id) {
+		if (!anchorSet.get(anchor).contains(id))
+			anchorSet.get(anchor).add(id);
+	}
+	
+	public void load(String resultSetPathFile) {
 		
 //        Hashtable resultTable = new Hashtable();
 //        Hashtable resultLinksTable = new Hashtable();
@@ -40,8 +60,8 @@ public class ResultSet {
 
                     String topicID = lrs.getLtwTopic().get(i).getId().trim();
 
-                    HashSet<String> anchorsSet = new HashSet<String>();
-                    anchorSet.put(topicID, anchorsSet);
+//                    HashSet<String> anchorsSet = new HashSet<String>();
+//                    anchorSet.put(topicID, anchorsSet);
                     
                     String[] outLinks = null;
 	                String[] emptyLinks = {""};
@@ -52,10 +72,10 @@ public class ResultSet {
                         for (int j = 0; j < lrs.getLtwTopic().get(i).getOutgoingLinks().getOutLink().size(); j++) {
                         	OutLink link = lrs.getLtwTopic().get(i).getOutgoingLinks().getOutLink().get(j);
                             String outLinkStr = link.getValue().toString().trim();
-	                        if (!linkSet.contains(outLinkStr)) {
-			                     linkSet.add(outLinkStr);
+	                        if (!linkSet.containsKey(outLinkStr)) {
+			                     linkSet.put(outLinkStr, new HashSet<String>());
 			                }
-	                        anchorsSet.add(link.getAoffset() + "_" + link.getAlength());
+	                        anchorSet.put(topicID + "_" + link.getAoffset() + "_" + link.getAlength(), new HashSet<String>());
 //                            if (!outLinksV.contains(outLinkStr)) {
 ////                                outLinksV.add(outLinkStr);
 //                            }
@@ -81,6 +101,12 @@ public class ResultSet {
             ex.printStackTrace();
         }
         
+	}
+
+	public ArrayList<Team> getTeamLinkCount() {
+		ArrayList<Team> teams = new ArrayList<Team>();
+		
+		return teams;
 	}
 	
 }
