@@ -2,6 +2,7 @@ package crosslink.tools;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Hashtable;
@@ -38,15 +39,6 @@ public class UniqLinks {
 	ResultSet resultSet = new ResultSet();
 	
 	private int task;
-	
-	public class Team {
-		String 			teamName;
-//		HashMap<String, Set<String>> topicLinks = new HashMap<String, Set<String>>();  //only keep the links that is in the result set
-//		HashMap<String, Set<String>> topicAnchors = new HashMap<String, Set<String>>();  //only keep the links that is in the result set
-//		Set<String>		linkSet;
-		
-		int 			uniqLinkCount;
-	}
 	
 	private File[] runFileCache;
 	
@@ -92,8 +84,8 @@ public class UniqLinks {
 	public static void usage() {
 		System.out.println("Usage: program [options] result_file run_file1 run_file2 ...");
 		System.out.println("options: ");
-		System.out.println("         -t f2f|a2f");
-		System.out.println("		 -l language zh | en | ja | ko");
+		System.out.println("	-t f2f|a2f");
+		System.out.println("	-l language zh | en | ja | ko");
 		System.exit(-1);
 	}
 	
@@ -123,12 +115,13 @@ public class UniqLinks {
             if (currentTargetLang == null || currentTargetLang.length() == 0)
             	throw new Exception(String.format("Incorrect run file - %s which dosen't provide the target language", runfiles.getAbsoluteFile()));
 
+            runId = is.getRunId();
+            participantId = is.getParticipantId();
+            
             if ((Data.langMatchMap.get(currentTargetLang) & lang) > 0) {
 //	            f2bRunTableByGroup = new Hashtable();
-	            runId = is.getRunId();
-	            participantId = is.getParticipantId();
 	            
-	            Team team = new Team();
+//	            Team team = new Team();
 	            // Loop Different Topics
 	            for (int i = 0; i < is.getTopic().size(); i++) {
 	
@@ -184,7 +177,9 @@ public class UniqLinks {
 		                        }
 	                        }
 	                        catch (Exception ex) {
-	                        	ex.printStackTrace();
+	                        	aOffset = 0;
+	                        	aLength = 0;
+//	                        	ex.printStackTrace();
 	                        }
 	                        // -----------------------------------------------------
 	                        String toFile = "";
@@ -238,10 +233,13 @@ public class UniqLinks {
 	                    }
 	
 	                } // get topic
-	                teams.add(team);
+//	                teams.add(team);
 	
 	            }
             }
+            else
+            	System.err.println("Run ignored: " + runId);
+            	
         } catch (JAXBException ex) {
             ex.printStackTrace();
         }
@@ -252,6 +250,14 @@ public class UniqLinks {
 
     public void anaysis() {
     	teams = resultSet.getTeamLinkCount();
+    	Collections.sort(teams);
+    	
+    	for (Team team : teams) {
+    		String line = String.format("%s: \t%d", team.teamName, team.uniqLinkCount);
+    		System.out.println(line);
+    	}
+    	
+    	System.out.println();
     }
 	
 	/**
