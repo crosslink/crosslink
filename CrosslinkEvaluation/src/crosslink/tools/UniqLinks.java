@@ -35,21 +35,30 @@ public class UniqLinks {
 	private boolean convertToTextOffset = true;
 	private String runId;
 	
+	ResultSet resultSet = new ResultSet();
+	
 	private int task;
 	
 	public class Team {
 		String 			teamName;
-		HashMap<String, Set<String>> topicLinks = new HashMap<String, Set<String>>();  //only keep the links that is in the result set
-		HashMap<String, Set<String>> topicAnchors = new HashMap<String, Set<String>>();  //only keep the links that is in the result set
-		Set<String>		linkSet;
+//		HashMap<String, Set<String>> topicLinks = new HashMap<String, Set<String>>();  //only keep the links that is in the result set
+//		HashMap<String, Set<String>> topicAnchors = new HashMap<String, Set<String>>();  //only keep the links that is in the result set
+//		Set<String>		linkSet;
+		
+		int 			uniqLinkCount;
 	}
 	
 	private File[] runFileCache;
 	
-	private ArrayList<Team> teams = new ArrayList<Team>();
+	private ArrayList<Team> teams = null; //new ArrayList<Team>();
+	private int lang;
 	
 	public UniqLinks(int index, String[] fl) {
 		this.init(index, fl);
+	}
+	
+	public void loadResultSet(String file) {
+		resultSet.load(file);
 	}
 	
 	public int getTask() {
@@ -60,6 +69,10 @@ public class UniqLinks {
 		this.task = task;
 	}
 
+	public void setLang(String langStr) {
+		lang = Data.langMatchMap.get(langStr);
+	}
+	
 	private void init(int index, String[] fl) {
         ArrayList<File> fileList = new ArrayList<File>();
         for (int l = index; l < fl.length; l++) {
@@ -80,10 +93,16 @@ public class UniqLinks {
 		System.out.println("Usage: program [options] result_file run_file1 run_file2 ...");
 		System.out.println("options: ");
 		System.out.println("         -t f2f|a2f");
+		System.out.println("		 -l language zh | en | ja | ko");
 		System.exit(-1);
 	}
 	
-    protected void loadRunFile(File runfiles, int lang) throws Exception {
+	public void loadRunFiles() {
+		for (File file : runFileCache)
+			loadRunFile(file, lang);
+	}
+	
+    protected void loadRunFile(File runfiles, int lang) {
 
 //        Hashtable f2bRunTableByGroup = null;
         try {
@@ -91,6 +110,7 @@ public class UniqLinks {
             jc = JAXBContext.newInstance("crosslink.rungenerator");
             Unmarshaller um = jc.createUnmarshaller();
             InexSubmission is = (InexSubmission) ((um.unmarshal(runfiles)));
+            String participantId;
 
             byte[] bytes = null;
             
@@ -106,6 +126,7 @@ public class UniqLinks {
             if ((Data.langMatchMap.get(currentTargetLang) & lang) > 0) {
 //	            f2bRunTableByGroup = new Hashtable();
 	            runId = is.getRunId();
+	            participantId = is.getParticipantId();
 	            
 	            Team team = new Team();
 	            // Loop Different Topics
@@ -180,62 +201,43 @@ public class UniqLinks {
 	                        // -----------------------------------------------------
 	                        // see below: an Anchor may be pointed to a number of BEP links
 	                        // <link><anchor></anchor><linkto></linkto><linkto></linkto>...</link>
-	                        if (aLength  > 0) {
-	                        	for (int k = 0; k < maxBepsPerAnchor; k++) {
-		                            toFile = linkTo.get(k).getFile().toString().trim();
-		                            if (toFile.equals("")) {
-		                                int endop = toFile.toLowerCase().indexOf(".xml");
-		                                if (endop != -1) {
-		                                    toFile = toFile.substring(0, endop);
-		                                }
-		                            }
-		                            if (linkTo.get(k).getBep_offset() == null) {
-		                                toBep = "0";
-		                            } else {
-		                                toBep = linkTo.get(k).getBep_offset().toString().trim();
-		                            }
-		                            // -------------------------------------------------
-		                            // to eliminate duplicate Anchor-BEP links
-		                            // aOffset_aLength_bFileID_bBep
-		                            // 99_13_1234_58
-//		                            if (!outF2GroupBepV.contains(aOffset + "_" + aLength + "_" + toFile + "_" + toBep)) {
-//		                                outF2GroupBepV.add(aOffset + "_" + aLength + "_" + toFile + "_" + toBep);
-//		                            }
-		                            if (!team.linkSet.contains(toFile))
-		                            	team.linkSet.add(toFile);
-		                        }
+                        	for (int k = 0; k < maxBepsPerAnchor; k++) {
+	                            toFile = linkTo.get(k).getFile().toString().trim();
+	                            if (toFile.equals("")) {
+	                                int endop = toFile.toLowerCase().indexOf(".xml");
+	                                if (endop != -1) {
+	                                    toFile = toFile.substring(0, endop);
+	                                }
+	                            }
+	                            if (linkTo.get(k).getBep_offset() == null) {
+	                                toBep = "0";
+	                            } else {
+	                                toBep = linkTo.get(k).getBep_offset().toString().trim();
+	                            }
+	                            // -------------------------------------------------
+	                            // to eliminate duplicate Anchor-BEP links
+	                            // aOffset_aLength_bFileID_bBep
+	                            // 99_13_1234_58
+//	                            if (!outF2GroupBepV.contains(aOffset + "_" + aLength + "_" + toFile + "_" + toBep)) {
+//	                                outF2GroupBepV.add(aOffset + "_" + aLength + "_" + toFile + "_" + toBep);
+//	                            }
+	                            if (resultSet.containLink(toFile))
+	                            	resultSet.addLinkParticipantId(toFile, participantId);
+	                            
+//	                            if (!team.linkSet.contains(toFile))
+//	                            	team.linkSet.add(toFile);
+	                        }
+	                        if (task == TASK_A2F && aLength  > 0) {
+	                        	String anchor = String.format("%s_%s_%s", topicID, aOffset, aLength);
+	                        	if (resultSet.containTopicAnchor(anchor))
+	                        		resultSet.addAnchorParticipantId(anchor, participantId);
 	                        }
 	                        else {
 	                        	System.err.println("Error: empty anchor");
 	                        }
 	                    }
-	                    // ---------------------------------------------------------
-	                    // transfer Vector data into String Array for returning
-//	                    if (outF2GroupBepV.size() >= 1) {
-//	                        outLinks = new String[outF2GroupBepV.size()];
-//	                        int olCounter = 0;
-//	                        Enumeration olEnu = outF2GroupBepV.elements();
-//	                        while (olEnu.hasMoreElements()) {
-//	                            Object olObj = olEnu.nextElement();
-//	                            outLinks[olCounter] = olObj.toString().trim();
-//	                            olCounter++;
-//	                        }
-//	                        
-////	                        f2bRunTableByGroup.put(topicID + "_" + outgoingTag, outLinks);
-//	                    } 
-//	                    else {
-//	                        outLinks = new String[1];
-//	                        outLinks[0] = "";
-//	                    }
-	                    // ---------------------------------------------------------
-//	                    outF2GroupBepV.clear();
 	
 	                } // get topic
-	                
-//	                    else {
-//	                    outLinks = new String[1];
-//	                    outLinks[0] = "";
-//	                }
 	                teams.add(team);
 	
 	            }
@@ -243,8 +245,14 @@ public class UniqLinks {
         } catch (JAXBException ex) {
             ex.printStackTrace();
         }
+        catch (Exception ex) {
+        	ex.printStackTrace();
+        }
     }
 
+    public void anaysis() {
+    	teams = resultSet.getTeamLinkCount();
+    }
 	
 	/**
 	 * @param args
@@ -252,7 +260,8 @@ public class UniqLinks {
 	public static void main(String[] args) {
 		int runfileStart = 2;
 		UniqLinks uniqLinks = new UniqLinks(runfileStart, args);
-
+		uniqLinks.setLang("zh");
+		
 		int param_start = 0;
 		String resultSetFile;
 		
@@ -272,10 +281,10 @@ public class UniqLinks {
 //					manager.setValidateAnchors(true);
 //					++param_start;
 //				}
-//				else if (args[i].charAt(1) == 'l' ) {
-//					langPair = args[++i];
-//					param_start += 2;
-//				}
+				else if (args[param_start].charAt(1) == 'l' ) {
+					uniqLinks.setLang(args[++param_start]);
+//					param_start;
+				}
 				else
 					usage();
 			}
@@ -285,8 +294,11 @@ public class UniqLinks {
 		if (param_start >= args.length)
 			usage();
 		
-		resultSetFile = args[param_start];
-		uniqLinks
+		resultSetFile = args[param_start++];
+		uniqLinks.loadResultSet(resultSetFile);
+		uniqLinks.init(param_start, args);
+		uniqLinks.loadRunFiles();
+		uniqLinks.anaysis();
 	}
 
 }
