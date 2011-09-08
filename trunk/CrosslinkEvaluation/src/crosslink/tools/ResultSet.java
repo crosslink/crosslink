@@ -21,8 +21,9 @@ import crosslink.resultsetGenerator.OutLink;
 
 public class ResultSet {
 
-	HashMap<String, HashSet<String>>		linkSet = new HashMap<String, HashSet<String>>(); // link, participant id
+	HashMap<String, HashSet<String>> linkSet = new HashMap<String, HashSet<String>>(); // link, participant id
 	HashMap<String, HashSet<String>> anchorSet = new HashMap<String, HashSet<String>>(); //key = topicid_anchoroffset_anchor_length
+	File resultSetFile = null; 
 	
 	public boolean containLink(String link) {
 		return linkSet.containsKey(link);
@@ -46,11 +47,12 @@ public class ResultSet {
 		
 //        Hashtable resultTable = new Hashtable();
 //        Hashtable resultLinksTable = new Hashtable();
+		this.resultSetFile = new File(resultSetPathFile);
         try {
             JAXBContext jc;
             jc = JAXBContext.newInstance("crosslink.resultsetGenerator");
             Unmarshaller um = jc.createUnmarshaller();
-            LtwResultsetType lrs = (LtwResultsetType) ((um.unmarshal(new File(resultSetPathFile))));
+            LtwResultsetType lrs = (LtwResultsetType) ((um.unmarshal(resultSetFile)));
 
             
             if (lrs.getLtwTopic().size() > 0) {
@@ -135,5 +137,30 @@ public class ResultSet {
 		ArrayList<Team> teams = new ArrayList<Team>();
 		
 		return teams;
+	}
+	
+	public void compareTo(ResultSet rs) {
+		HashMap<String, HashSet<String>> rsLinkSet = rs.getLinkSet();
+		Set thisLinkSet = linkSet.keySet();
+		Set thatLinkSet = rsLinkSet.keySet();
+		int count = 0;
+		Iterator it  = thisLinkSet.iterator();
+		while (it.hasNext()) {
+			String thisLink = (String)it.next();
+			if (thatLinkSet.contains(thisLink))
+				++count;
+		}
+		
+		System.out.println(this.resultSetFile.getName() + ": " + thisLinkSet.size());
+		System.out.println(rs.getResultSetFile().getName() + ": " + thatLinkSet.size());
+		System.out.println("Overlapping: " + count);
+	}
+
+	private HashMap<String, HashSet<String>> getLinkSet() {
+		return linkSet;
+	}
+
+	public File getResultSetFile() {
+		return resultSetFile;
 	}
 }
