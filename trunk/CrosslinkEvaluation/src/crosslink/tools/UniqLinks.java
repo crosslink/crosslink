@@ -219,7 +219,7 @@ public class UniqLinks {
 //	                                outF2GroupBepV.add(aOffset + "_" + aLength + "_" + toFile + "_" + toBep);
 //	                            }
 	                            if (resultSet.containLink(toFile))
-	                            	resultSet.addLinkParticipantId(toFile, participantId);
+	                            	resultSet.addLinkParticipantId(toFile, participantId, runId);
 	                            
 //	                            if (!team.linkSet.contains(toFile))
 //	                            	team.linkSet.add(toFile);
@@ -255,8 +255,9 @@ public class UniqLinks {
     	Collections.sort(teams);
     	
     	for (Team team : teams) {
-    		String line = String.format("%s: \t%d", team.teamName, team.uniqLinkCount);
+    		String line = String.format("%s, %d", team.id, team.uniqLinkCount);
     		System.out.println(line);
+    		team.printRunLinks();
     	}
     	
     	System.out.println();
