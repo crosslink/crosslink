@@ -21,7 +21,7 @@ import crosslink.resultsetGenerator.OutLink;
 
 public class ResultSet {
 
-	HashMap<String, HashSet<String>> linkSet = new HashMap<String, HashSet<String>>(); // link, participant id
+	HashMap<String, HashSet<Team>> linkSet = new HashMap<String, HashSet<Team>>(); // link, participant id, run id
 	HashMap<String, HashSet<String>> anchorSet = new HashMap<String, HashSet<String>>(); //key = topicid_anchoroffset_anchor_length
 	File resultSetFile = null; 
 	
@@ -29,9 +29,28 @@ public class ResultSet {
 		return linkSet.containsKey(link);
 	}
 	
-	public void addLinkParticipantId(String link, String id) {
-		if (!linkSet.get(link).contains(id))
-			linkSet.get(link).add(id);
+	HashMap<String, Team> teams = new HashMap<String, Team>();
+	
+	public void addLinkParticipantId(String link, String participantId, String runId) {
+//		String[] ids = id.split(";");
+//		String participantId =  ids[0];
+//		String runId = ids[1];
+		Team team = null;
+		if (!teams.containsKey(participantId)) {
+			team = new Team(participantId);
+			teams.put(participantId, team);
+		}
+		else
+			team = teams.get(participantId);
+		
+		if (!linkSet.get(link).contains(team)) {
+
+			linkSet.get(link).add(team);
+		}
+//		else {
+//			team = linkSet.get(link).get(participantId);
+//		}
+		team.addRunId(runId, link);
 	}
 	
 	public boolean containTopicAnchor(String anchor) {
@@ -76,7 +95,7 @@ public class ResultSet {
                         	OutLink link = lrs.getLtwTopic().get(i).getOutgoingLinks().getOutLink().get(j);
                             String outLinkStr = link.getValue().toString().trim();
 	                        if (!linkSet.containsKey(outLinkStr)) {
-			                     linkSet.put(outLinkStr, new HashSet<String>());
+			                     linkSet.put(outLinkStr, new HashSet<Team>());
 			                }
 	                        anchorSet.put(topicID + "_" + link.getAoffset() + "_" + link.getAlength(), new HashSet<String>());
 //                            if (!outLinksV.contains(outLinkStr)) {
@@ -108,26 +127,30 @@ public class ResultSet {
 
 	public ArrayList<Team> getTeamLinkCount() {
 		ArrayList<Team> teams = new ArrayList<Team>();
-		HashMap<String, Team> teamMap = new HashMap<String, Team>();
+//		HashMap<String, Team> teamMap = new HashMap<String, Team>();
+		HashSet<String> teamIds = new HashSet<String>();
+		HashSet<Team> teamsSet =  null;
 		Set set = linkSet.entrySet();
 		Iterator it = set.iterator();
 		Team team = null;
 		while (it.hasNext()) {
 			Map.Entry entry = (Map.Entry) it.next();
 			String key = (String) entry.getKey();
-			HashSet<String> participants = (HashSet<String>) entry.getValue();
+			//HashSet<String> participants = (HashSet<String>) entry.getValue();
+			teamsSet = (HashSet<Team>) entry.getValue();
 			
-			if (participants.size() == 1) {
-				String teamId = (String) participants.toArray()[0];
-
-				if (teamMap.containsKey(teamId))
-					team = teamMap.get(teamId);
-				else {
-					team = new Team(teamId);
-					teamMap.put(teamId, team);
+			if (teamsSet.size() == 1) {
+				team = (Team) teamsSet.toArray()[0];
+				String teamId = team.id;
+//				String teamId = (String) participants.toArray()[0];
+//				team.increaseLinkCount();
+				team.setUniqLink(key);
+				
+				if (!teamIds.contains(teamId)) {
 					teams.add(team);
+					teamIds.add(teamId);
+//					teamMap.put(teamId, team);
 				}
-				team.increaseLinkCount(1);
 			}
 		}
 		return teams;
@@ -140,7 +163,7 @@ public class ResultSet {
 	}
 	
 	public void compareTo(ResultSet rs) {
-		HashMap<String, HashSet<String>> rsLinkSet = rs.getLinkSet();
+		HashMap<String, HashSet<Team>> rsLinkSet = rs.getLinkSet();
 		Set thisLinkSet = linkSet.keySet();
 		Set thatLinkSet = rsLinkSet.keySet();
 		int count = 0;
@@ -156,7 +179,7 @@ public class ResultSet {
 		System.out.println("Overlapping: " + count);
 	}
 
-	private HashMap<String, HashSet<String>> getLinkSet() {
+	private HashMap<String, HashSet<Team>> getLinkSet() {
 		return linkSet;
 	}
 
