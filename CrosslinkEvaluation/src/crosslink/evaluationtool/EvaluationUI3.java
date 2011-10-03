@@ -1006,6 +1006,10 @@ public class EvaluationUI3 extends JFrame {
     }//GEN-LAST:event_openfilesButtonActionPerformed
 
     private void evaluateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_evaluateButtonActionPerformed
+        evaluate();
+    }//GEN-LAST:event_evaluateButtonActionPerformed
+
+    public void evaluate() {
         try {
 //            resultFilePath = getResultSetPath();
 //            File resultFile = new File(resultFilePath);
@@ -1027,7 +1031,7 @@ public class EvaluationUI3 extends JFrame {
 //            }
             if (this.jRBAnchorToFile.getModel().isSelected()) {
                 useAnchorGToFile = true;
-            } 
+            }
             else if (this.jRBAnchorToBEP.getModel().isSelected()) {
                 useAnchorGToBEP = true;
             }
@@ -1037,7 +1041,7 @@ public class EvaluationUI3 extends JFrame {
                 metricsCalculation.EvaluationResult er;
 
                 er = metricsCalculation.calculate(/*resultFile, */this.runFileCache[i], useAllTopics, useFileToBep, useAnchorGToFile, useAnchorGToBEP, langSelected);
-                
+
                 if (er == null)
                 	continue;
 
@@ -1159,13 +1163,14 @@ public class EvaluationUI3 extends JFrame {
 	                Object key = (Object) e.nextElement();
 	                ArrayList<Object[]> sortColl = (ArrayList<Object[]>) compareHash.get(key);
 	                evaData[sortIndex] = sortColl.get(0);
-	                evaData[sortIndex][11] = Boolean.TRUE;
 	                evaData[sortIndex][12] = Boolean.TRUE;
-	                
+	                if (colorCount < 5)
+	                	evaData[sortIndex][11] = Boolean.TRUE;
+
 	                if (ColorCache.getInstance() == null) {
 	                	ColorCache.newInstance();
-		                if (colorCount < 5) {		
-		                	evaData[sortIndex][10] = ColorCache.getInstance().getPredefinedColor((String)evaData[sortIndex][0], colorCount); 
+		                if (colorCount < 5) {
+		                	evaData[sortIndex][10] = ColorCache.getInstance().getPredefinedColor((String)evaData[sortIndex][0], colorCount);
 		                }
 		                else {
 		                	evaData[sortIndex][10] = ColorCache.getInstance().getRandomColor((String)evaData[sortIndex][0]);
@@ -1191,7 +1196,7 @@ public class EvaluationUI3 extends JFrame {
             ex.printStackTrace();
 //            JOptionPane.showMessageDialog(this, ex.toString(), "Exception Board", JOptionPane.ERROR_MESSAGE);
         }
-    }//GEN-LAST:event_evaluateButtonActionPerformed
+    }
 
     private void uploadButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_filecleanButton1ActionPerformed
     	load();
