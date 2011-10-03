@@ -36,6 +36,7 @@ import crosslink.resultsetGenerator.LtwResultsetType;
 import crosslink.rungenerator.InexSubmission;
 import crosslink.rungenerator.ToFileType;
 import crosslink.rungenerator.TopicType;
+import crosslink.util.ColorCache;
 import crosslink.util.JChartDialog;
 import crosslink.util.ioFileFilter;
 import crosslink.util.jfcFileFilter;
@@ -1031,16 +1032,6 @@ public class EvaluationUI3 extends JFrame {
                 useAnchorGToBEP = true;
             }
 
-            Color[][] spColor = {
-                {new Color(150, 0, 0), new Color(150, 0, 0), new Color(150, 0, 0)},
-                {new Color(0, 150, 0), new Color(0, 150, 0), new Color(0, 150, 0)},
-                {new Color(0, 0, 150), new Color(0, 0, 150), new Color(0, 0, 150)},
-                {new Color(150, 150, 0), new Color(150, 150, 0), new Color(150, 150, 0)},
-                {new Color(200, 0, 200), new Color(200, 0, 200), new Color(200, 0, 200)}
-            };
-
-            Random generator = new Random();
-
             for (int i = 0; i < this.runFileCache.length; i++) {
 
                 metricsCalculation.EvaluationResult er;
@@ -1170,19 +1161,26 @@ public class EvaluationUI3 extends JFrame {
 	                evaData[sortIndex] = sortColl.get(0);
 	                evaData[sortIndex][11] = Boolean.TRUE;
 	                evaData[sortIndex][12] = Boolean.TRUE;
-	                if (colorCount < 5) {
-	                    evaData[sortIndex][10] = spColor[colorCount][0];
+	                
+	                if (ColorCache.getInstance() == null) {
+	                	ColorCache.newInstance();
+		                if (colorCount < 5) {		
+		                	evaData[sortIndex][10] = ColorCache.getInstance().getPredefinedColor((String)evaData[sortIndex][0], colorCount); 
+		                }
+		                else {
+		                	evaData[sortIndex][10] = ColorCache.getInstance().getRandomColor((String)evaData[sortIndex][0]);
+		                }
 	                }
-	                else {
-	                	evaData[sortIndex][10] = new Color(generator.nextInt(255) + 1, generator.nextInt(255) + 1, generator.nextInt(255) + 1);
-	                }
+	            	else {
+	            		evaData[sortIndex][10] = ColorCache.getInstance().getColor((String)evaData[sortIndex][0]);
+	            	}
 	                colorCount++;
 	                sortIndex++;
 	            }
             }
             else {
             	evaData = objData;
-            	evaData[0][10] = spColor[0][0];
+            	evaData[0][10] = ColorCache.spColor[0][0];
             }
             // END of sort the result
             // =================================================================
