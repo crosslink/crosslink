@@ -67,6 +67,9 @@ public class EvaluationUI3 extends JFrame {
         System.err.println(String.valueOf(aObject));
     }
     private int langSelected = Data.LANGUAGE_CHINESE;
+    
+    private boolean emphasizeTeam = true;
+    private String emphasizeTeamName = "QUT";
 
     /** Creates new form EvaluationUI */
     public EvaluationUI3() {
@@ -1164,22 +1167,38 @@ public class EvaluationUI3 extends JFrame {
 	                ArrayList<Object[]> sortColl = (ArrayList<Object[]>) compareHash.get(key);
 	                evaData[sortIndex] = sortColl.get(0);
 	                evaData[sortIndex][12] = Boolean.TRUE;
-	                if (colorCount < 5)
-	                	evaData[sortIndex][11] = Boolean.TRUE;
 
-	                if (ColorCache.getInstance() == null) {
-	                	ColorCache.newInstance();
-		                if (colorCount < 5) {
-		                	evaData[sortIndex][10] = ColorCache.getInstance().getPredefinedColor((String)evaData[sortIndex][0], colorCount);
-		                }
-		                else {
-		                	evaData[sortIndex][10] = ColorCache.getInstance().getRandomColor((String)evaData[sortIndex][0]);
-		                }
+	                boolean setColor = false;
+	                if (this.emphasizeTeam) {
+	                	String runName = (String)evaData[sortIndex][0];
+	                	if (runName.startsWith(this.emphasizeTeamName)) {
+	                		setColor = true;
+	                	}
 	                }
-	            	else {
-	            		evaData[sortIndex][10] = ColorCache.getInstance().getColor((String)evaData[sortIndex][0]);
-	            	}
-	                colorCount++;
+	                else {  
+	                	setColor = true;
+	                }
+	                
+	                if (setColor) {
+		                if (ColorCache.getInstance() == null) {
+		                	ColorCache.newInstance();
+			                if (colorCount < 5) {
+			                	evaData[sortIndex][10] = ColorCache.getInstance().getPredefinedColor((String)evaData[sortIndex][0], colorCount);
+			                }
+			                else {
+			                	evaData[sortIndex][10] = ColorCache.getInstance().getRandomColor((String)evaData[sortIndex][0]);
+			                }
+		                }
+		            	else {
+		            		evaData[sortIndex][10] = ColorCache.getInstance().getColor((String)evaData[sortIndex][0]);
+		            	}
+		                
+		                if (colorCount < 5)
+		                	evaData[sortIndex][11] = Boolean.TRUE;
+		                
+		                colorCount++;
+	                }
+	                setColor = false;
 	                sortIndex++;
 	            }
             }
