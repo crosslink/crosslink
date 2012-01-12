@@ -23,6 +23,9 @@ import monolink.MonolinkMining;
  */
 public class CrosslinkMining extends MonolinkMining {
 
+	public static final int OUTPUT_FORMAT_RESULTSET = 0;
+	public static final int OUTPUT_FORMAT_SUBMISSION = 1;
+	
 	private String otherLang = "";
 //			OUTPUT=
 
@@ -222,15 +225,29 @@ public class CrosslinkMining extends MonolinkMining {
 
  	
 
-	public void findWikiGroundTruth() {
+	public void findWikiGroundTruth(int format) {
 
 		getTopicLinks(sourceTopicPath, sourceLang);
 //		getTopicLinks(targetTopicPath, targetLang, true);
-		createResultSet();
+		switch (format) {
+		case OUTPUT_FORMAT_SUBMISSION:
+			createSubmission();
+			break;
+		
+		case OUTPUT_FORMAT_RESULTSET:
+		default:
+			createResultSet();
+			break;
+		}
 		
 		System.out.println(resultSetOut.toString());
 	}
 	
+	private void createSubmission() {
+
+		
+	}
+
 	public void createResultSet() {
 		resultSetOut.open();
 		for (CrosslinkTopic topic : topics) {
@@ -259,6 +276,7 @@ public class CrosslinkMining extends MonolinkMining {
 		System.out.println("arg[2] source topics path");
 		System.out.println("arg[3] target topics path");
 		System.out.println("arg[4] corpora home");
+		System.out.println("arg[5] run|rs");
 		System.exit(-1);
 	}
 	
@@ -268,6 +286,9 @@ public class CrosslinkMining extends MonolinkMining {
 	public static void main(String[] args) {
 		if (args.length < 4)
 			usage();
+		
+		int format = CrosslinkMining.OUTPUT_FORMAT_RESULTSET;
+		
 		// TODO Auto-generated method stub
 		CrosslinkMining mining = new CrosslinkMining();
 		String[] arr = args[0].split(":");
@@ -281,10 +302,19 @@ public class CrosslinkMining extends MonolinkMining {
 		mining.setSourceTopicPath(args[2]);
 		mining.setTargetTopicPath(args[3]);
 		
-		if (args.length > 5)
+		if (args.length > 4)
 			mining.setCorpusHome(args[4]);
 		
-		mining.findWikiGroundTruth();
+		if (args.length > 5) {
+			if (args[5].equalsIgnoreCase("run"))
+				format = CrosslinkMining.OUTPUT_FORMAT_SUBMISSION;
+			else if ((args[5].equalsIgnoreCase("rs")))
+				;
+			else
+				usage();
+		}
+		
+		mining.findWikiGroundTruth(format);
 	}
 
 }
