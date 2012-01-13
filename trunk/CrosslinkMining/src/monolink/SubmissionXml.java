@@ -1,6 +1,6 @@
 package monolink;
 
-public class SubmissionXml {
+public class SubmissionXml extends OutputXml implements OutputXmlInterface {
 	public static final String START = "<crosslink-submission participant-id=\"GT\" run-id=\"GroundTruth\" task=\"F2F\" default_lang=\"%s\" source_lang=\"%s\">" +
 	"<details>\n " +
 		"<machine>\n" +
@@ -22,14 +22,63 @@ public class SubmissionXml {
 	
 	public static final String TOPIC_START = "\t<topic file=\"%s\" name=\"%s\"> \n" + 
 			"\t\t<outgoing>\n" +
-			"<anchor offset=\"-1\" length=\"0\" name=\"\">";
+			"";
 	
-	public static final String TOPIC_END =	"\t\t\t</anchor>" +
+	public static final String TOPIC_END =	"" +
 				"\t\t</outgoing>\n" + 
 				"\t</topic>\n";
 	
+	public static final String ANCHOR_START_BLANK = "<anchor offset=\"-1\" length=\"0\" name=\"\">";
+	
+	public static final String ANCHOR_END = "\t\t\t</anchor>";
+			
+	
 	public static final String LINK = "\t\t\t<tofile>%s</tofile>\n";
 	
-	public static final String LINK2 = "\t\t\t<tofile aname=\"\" aoffset=\"%s\" alength=\"%d\" boffset=\"%d\">%s</tofile>\n";
+	public static final String LINK2 = "\t\t\t<tofile bep_offset=\"%d\" lang=\"%s\" title=\"%s\">%s</tofile>\n";
+
+	public void open() {
+		xmlbuf.append(START);
+	}
+
+	public void outputTopicStart(String name, String id) {
+		String temp = String.format(TOPIC_START, name, id);
+		xmlbuf.append(temp);
+		outputAnchorStart();
+	}
+
+	public void outputLink(String targetId) {
+//		String temp = String.format(LINK, targetId);
+		String title = null;
+		
+		String temp = String.format(LINK2, 0, targetLang, title, id);
+		xmlbuf.append(temp);
+	}
+
+	public void outputLink(String id, String title, int length, int bep) {
+		String temp = String.format(LINK2, bep, targetLang, title, id);
+		xmlbuf.append(temp);
+	}
+
+	public void outputTopicEnd() {
+		outputAnchorEnd();
+		xmlbuf.append(TOPIC_END);	
+	}
+
+	public void close() {
+		xmlbuf.append(END);	
+	}
+
+	@Override
+	public void outputAnchorStart() {
+		xmlbuf.append(ANCHOR_START_BLANK);
+	}
+
+	@Override
+	public void outputAnchorEnd() {
+		xmlbuf.append(ANCHOR_END);
+	}
+	
+	
 	
 }
