@@ -17,6 +17,9 @@ import org.xml.sax.SAXException;
 import ltwassessment.utility.FileUtil;
 import ltwassessment.utility.WildcardFiles;
 import monolink.MonolinkMining;
+import monolink.OutputXmlInterface;
+import monolink.ResultSetXml;
+import monolink.SubmissionXml;
 
 /*
  * converted from the bash script, so mainly the naming is not changed
@@ -229,45 +232,47 @@ public class CrosslinkMining extends MonolinkMining {
 
 		getTopicLinks(sourceTopicPath, sourceLang);
 //		getTopicLinks(targetTopicPath, targetLang, true);
+		
+		OutputXmlInterface xml = null;
 		switch (format) {
 		case OUTPUT_FORMAT_SUBMISSION:
-			createSubmission();
+			xml = new SubmissionXml();
 			break;
 		
 		case OUTPUT_FORMAT_RESULTSET:
 		default:
-			createResultSet();
+			xml = new ResultSetXml();
 			break;
 		}
-		
-		System.out.println(resultSetOut.toString());
+		createOutput(xml);
+		System.out.println(xml.toString());
 	}
 	
-	private void createSubmission() {
-
-		
-	}
-
-	public void createResultSet() {
-		resultSetOut.open();
+	private void createOutput(OutputXmlInterface xml) {
+		xml.open();
 		for (CrosslinkTopic topic : topics) {
-			resultSetOut.outputTopicStart(topic.getTitle(), topic.getId());
+			xml.outputTopicStart(topic.getTitle(), topic.getId());
 			Set<String> indirectLinks = topic.getLinks();
 			Iterator it = indirectLinks.iterator();
 			while (it.hasNext()) {
 			    // Get element
-				resultSetOut.outputLink((String) it.next());
+				xml.outputLink((String) it.next());
 			}
 			Set<String> directLinks = topic.getCounterPart().getLinks();
 			it = directLinks.iterator();
 			while (it.hasNext()) {
 			    String id = (String) it.next();
 			    if (!indirectLinks.contains(id))
-			    	resultSetOut.outputLink(id);
+			    	xml.outputLink(id, );
 			}		
-        	resultSetOut.outputTopicEnd();	
+        	xml.outputTopicEnd();	
 		}
-		resultSetOut.close();
+		xml.close();
+		
+	}
+
+	public void createResultSet() {
+
 	}
 	
 	public static void usage() {
