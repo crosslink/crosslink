@@ -40,7 +40,7 @@ import ltwassessment.parsers.ResourcesManager;
 import ltwassessment.parsers.FOLTXTMatcher;
 import ltwassessment.utility.FileUtil;
 
-import org.apache.xerces.parsers.DOMParser;
+//import org.apache.xerces.parsers.DOMParser;
 import org.w3c.dom.CharacterData;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -825,7 +825,7 @@ public class ResourcesManager {
             InputSource inputSource = new InputSource(inputStreamReader);
 
             // Parse the XML File
-            DOMParser parser = new DOMParser();
+            com.sun.org.apache.xerces.internal.parsers.DOMParser parser = new com.sun.org.apache.xerces.internal.parsers.DOMParser();
             parser.parse(inputSource);
             Document doc = parser.getDocument();
 

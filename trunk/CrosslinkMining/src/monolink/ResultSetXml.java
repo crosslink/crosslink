@@ -13,6 +13,9 @@ public class ResultSetXml extends OutputXml implements OutputXmlInterface {
 	public static final String LINK = "\t\t\t<outLink>%s</outLink>\n";
 	public static final String LINK2 = "\t\t\t<outLink aname=\"\" aoffset=\"%s\" alength=\"%d\" boffset=\"%d\">%s</outLink>\n";
 	
+	public ResultSetXml(String sourceLang, String targetLang) {
+		super(sourceLang, targetLang);
+	}
 	
 	public void outputTopicStart(String name, String id) {
 		String temp = String.format(TOPIC_START, name, id);
