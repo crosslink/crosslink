@@ -10,6 +10,7 @@ import java.util.Set;
 import java.util.Stack;
 
 import ltwassessment.utility.WildcardFiles;
+import ltwassessment.wiki.Corpora;
 
 public class MonolinkMining {
 	
@@ -20,7 +21,7 @@ public class MonolinkMining {
 	
 	protected String corpusHome = "/data/corpus/wikipedia/all/";
 	
-	protected ResultSetXml resultSetOut = new ResultSetXml();
+	protected ResultSetXml resultSetOut = null;
 	
 	private ArrayList<MonolinkTopic> topics = new ArrayList<MonolinkTopic>();
 	
@@ -205,8 +206,11 @@ public class MonolinkMining {
 		
 		mining.setSourceTopicPath(args[2]);
 		
-		if (args.length > 5)
-			mining.setCorpusHome(args[4]);
+		Corpora.initialize();
+		if (args.length > 4) 
+			Corpora.getInstance().setHome(args[4]);
+		else
+			Corpora.getInstance().setHome(mining.getCorpusHome());
 		
 		mining.findWikiGroundTruth();
 

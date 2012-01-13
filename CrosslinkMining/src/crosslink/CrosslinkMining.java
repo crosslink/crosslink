@@ -16,6 +16,7 @@ import org.xml.sax.SAXException;
 
 import ltwassessment.utility.FileUtil;
 import ltwassessment.utility.WildcardFiles;
+import ltwassessment.wiki.Corpora;
 import monolink.MonolinkMining;
 import monolink.OutputXmlInterface;
 import monolink.ResultSetXml;
@@ -236,12 +237,12 @@ public class CrosslinkMining extends MonolinkMining {
 		OutputXmlInterface xml = null;
 		switch (format) {
 		case OUTPUT_FORMAT_SUBMISSION:
-			xml = new SubmissionXml();
+			xml = new SubmissionXml(sourceLang, targetLang);
 			break;
 		
 		case OUTPUT_FORMAT_RESULTSET:
 		default:
-			xml = new ResultSetXml();
+			xml = new ResultSetXml(sourceLang, targetLang);
 			break;
 		}
 		createOutput(xml);
@@ -263,7 +264,7 @@ public class CrosslinkMining extends MonolinkMining {
 			while (it.hasNext()) {
 			    String id = (String) it.next();
 			    if (!indirectLinks.contains(id))
-			    	xml.outputLink(id, );
+			    	xml.outputLink(id);
 			}		
         	xml.outputTopicEnd();	
 		}
@@ -307,8 +308,13 @@ public class CrosslinkMining extends MonolinkMining {
 		mining.setSourceTopicPath(args[2]);
 		mining.setTargetTopicPath(args[3]);
 		
+		Corpora.initialize();
+		Corpora.getInstance().setLang(mining.getTargetLang());
+		
 		if (args.length > 4)
-			mining.setCorpusHome(args[4]);
+			Corpora.getInstance().setHome(args[4]);
+		else
+			Corpora.getInstance().setHome(mining.getCorpusHome());
 		
 		if (args.length > 5) {
 			if (args[5].equalsIgnoreCase("run"))

@@ -7,6 +7,11 @@ public class OutputXml {
 	protected String sourceLang;
 	protected String targetLang;
 	
+	public OutputXml(String sourceLang, String targetLang) {
+		this.sourceLang = sourceLang;
+		this.targetLang = targetLang;
+	}
+	
 	public String toString() {
 		return xmlbuf.toString();
 	}
