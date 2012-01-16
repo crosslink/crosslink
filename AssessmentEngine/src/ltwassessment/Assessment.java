@@ -46,6 +46,8 @@ public class Assessment {
 	
 	private static String assessmentLang = "";
 	
+	private boolean assessmentType = false; // false: pool assessment; true: ground-truth assessment 
+	
 	static {
 		getAssessmentLang();
 		
@@ -178,5 +180,15 @@ public class Assessment {
 	
 	public static File getPoolBackupDirHandler() {
 		return poolBackupDirHandler;
+	}
+
+
+	public boolean getAssessmentType() {
+		return assessmentType;
+	}
+
+
+	public void setAssessmentType(boolean assessmentType) {
+		this.assessmentType = assessmentType;
 	}
 }
