@@ -12,6 +12,8 @@ import java.awt.event.WindowListener;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
+import ltwassessment.Assessment;
+
 import org.jdesktop.application.Application;
 import org.jdesktop.application.SingleFrameApplication;
 
@@ -78,6 +80,8 @@ public class LTWAssessmentToolApp extends SingleFrameApplication {
      * Main method launching the application.
      */
     public static void main(String[] args) {
+    	if (args.length > 0 && args[0].equalsIgnoreCase("run"))
+    		Assessment.getInstance().setAssessmentType(true);    	
         launch(LTWAssessmentToolApp.class, args);
     }
     
