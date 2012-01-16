@@ -227,8 +227,6 @@ public class CrosslinkMining extends MonolinkMining {
  
  	}
 
- 	
-
 	public void findWikiGroundTruth(int format) {
 
 		getTopicLinks(sourceTopicPath, sourceLang);
@@ -271,17 +269,13 @@ public class CrosslinkMining extends MonolinkMining {
 		xml.close();
 		
 	}
-
-	public void createResultSet() {
-
-	}
 	
 	public static void usage() {
 		System.out.println("arg[0] source and target language pair, e.g en:zh");
 		System.out.println("arg[1] crosslink tables path");
 		System.out.println("arg[2] source topics path");
 		System.out.println("arg[3] target topics path");
-		System.out.println("arg[4] corpora home");
+		System.out.println("arg[4] corpora home: e.g. /corpus");
 		System.out.println("arg[5] run|rs");
 		System.exit(-1);
 	}
@@ -295,7 +289,6 @@ public class CrosslinkMining extends MonolinkMining {
 		
 		int format = CrosslinkMining.OUTPUT_FORMAT_RESULTSET;
 		
-		// TODO Auto-generated method stub
 		CrosslinkMining mining = new CrosslinkMining();
 		String[] arr = args[0].split(":");
 		if (arr.length != 2)
