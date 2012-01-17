@@ -26,15 +26,18 @@ public class Assessment {
 
 	private static Assessment instance;
 
-	private static final String ASSESSMENT_TOPIC_PATH = "assessment";
-	private static final String ASSESSMENT_TOPIC_INBOX_PATH = ASSESSMENT_TOPIC_PATH + File.separator + "inbox" + File.separator;
-	private static final String ASSESSMENT_TOPIC_OUTBOX_PATH = ASSESSMENT_TOPIC_PATH + File.separator + "outbox" + File.separator;
+	private static final String ASSESSMENT_TOPIC_ASSESSMENT_PATH = "assessment";
+	private static final String ASSESSMENT_TOPIC_INBOX_PATH = ASSESSMENT_TOPIC_ASSESSMENT_PATH + File.separator + "inbox" + File.separator;
+	private static final String ASSESSMENT_TOPIC_OUTBOX_PATH = ASSESSMENT_TOPIC_ASSESSMENT_PATH + File.separator + "outbox" + File.separator;
+	private static final String ASSESSMENT_TOPIC_TOPIC_PATH = "resources" + File.separator + "Topics" + File.separator;
+	
 	private static final String ASSESSMENT_POOL_PREFIX = "wikipedia_pool";
 	private static final String ASSESSMENT_POOL_PATH = "resources" + File.separator + "Pool" + File.separator;
 	
 	private static final String ASSESSMENT_LANG_ADDRESS = "http://131.181.88.158/lang.txt";
 	
 	private Hashtable<String, File> topics = new Hashtable<String, File>();
+	private Hashtable<String, File> finishedTopics = new Hashtable<String, File>();
 	private Iterator it  = null;
 	
 	private Topic currentTopic;
@@ -43,6 +46,10 @@ public class Assessment {
 	private static File poolDirHandler = null;
 	private static File poolBackupDirHandler = null;
 	private static File poolBackupTempDirHandler = null;
+	
+	private static String topicPath = null;
+	private static String finishedTopicPath = null;
+	private static File finishedTopicPathHandler = null;
 	
 	private static String assessmentLang = "";
 	
@@ -68,6 +75,8 @@ public class Assessment {
 			poolBackupTempDirHandler.mkdirs();
 		
 		System.err.println("System temp dir: " + poolBackupTempDirHandler.getAbsolutePath());
+		
+		finishedTopicPath = ASSESSMENT_TOPIC_OUTBOX_PATH;
 	}
 
 	public Assessment() {
@@ -133,12 +142,28 @@ public class Assessment {
 
 
 	private void loadTopicsForAssessment() {
-		Stack<File> stack = WildcardFiles.listFilesInStack(ASSESSMENT_TOPIC_INBOX_PATH + "*.xml");
+		
+		Stack<File> stack = WildcardFiles.listFilesInStack(ASSESSMENT_TOPIC_OUTBOX_PATH + "*.xml");
+		for (File file: stack) {
+    		String filename =  file.getName();
+        	String	topicID = filename.substring(0, filename.indexOf('.'));
+			finishedTopics.put(topicID, file);
+		}	
+		
+		if (assessmentType) {// assess Wikipedia ground-truth
+			topicPath = ASSESSMENT_TOPIC_INBOX_PATH;
+		}
+		else {
+			topicPath = ASSESSMENT_TOPIC_TOPIC_PATH;
+		}
+		
+		stack = WildcardFiles.listFilesInStack(topicPath + "*.xml");
 		
 		for (File file: stack) {
     		String filename =  file.getName();
         	String	topicID = filename.substring(0, filename.indexOf('.'));
-			topics.put(topicID, file);
+        	if (!finishedTopics.contains(topicID))
+        		topics.put(topicID, file);
 		}
 		
 		it = topics.entrySet().iterator();
@@ -152,7 +177,7 @@ public class Assessment {
 	
 	public void finishTopic(File topicFile) {
 		try {
-			FileUtil.moveFile(topicFile, new File(ASSESSMENT_TOPIC_OUTBOX_PATH + topicFile.getName()));
+			FileUtil.copyFile(topicFile, new File(ASSESSMENT_TOPIC_OUTBOX_PATH + topicFile.getName()));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

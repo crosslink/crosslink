@@ -17,13 +17,16 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 public class WikiArticleXml {
-
+	public static final String TITLE_TAG_START = "<title>";
+	
 	protected String xmlFile;
 
 	protected String title;
 	protected String id;
 	
 	protected int currentPos = 0;
+	protected int titlePos = 0; // in bytes
+	protected int titleLength = 0; // in bytes
 	
 	protected byte[] bytes = null; // the text in bytes
 	protected String fullText = null;
@@ -72,6 +75,14 @@ public class WikiArticleXml {
 	 */
 	public void setFullText(String fullText) {
 		this.fullText = fullText;
+	}
+
+	public int getTitlePos() {
+		return titlePos;
+	}
+
+	public int getTitleLength() {
+		return titleLength;
 	}
 
 	public WikiArticleXml(File xmlFile) {
@@ -126,11 +137,15 @@ public class WikiArticleXml {
 			        new InputStreamReader(new ByteArrayInputStream(content), "UTF-8"));
 			String strLine;
 			while ((strLine = br.readLine()) != null) {
-			    if ((pos = strLine.indexOf("<title>")) > -1) {
+			    if ((pos = strLine.indexOf(TITLE_TAG_START)) > -1) {
+			    	titlePos += TITLE_TAG_START.getBytes().length;
 			    	pos += 7;
 			    	title = strLine.substring(pos, strLine.indexOf('<', pos));
+			    	titleLength = title.getBytes().length;
 			    	break;
 			    }
+			    else
+			    	titlePos += strLine.getBytes().length;
 			}
 			br.close();
 		} catch (UnsupportedEncodingException e) {
