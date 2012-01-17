@@ -11,7 +11,7 @@ public interface OutputXmlInterface {
 	
 	public void outputTopicEnd();
 	
-	public void outputAnchorStart();
+	public void outputAnchorStart(String anchor, int pos, int length);
 	
 	public void outputAnchorEnd();
 
