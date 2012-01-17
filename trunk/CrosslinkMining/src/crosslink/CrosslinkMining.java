@@ -251,6 +251,8 @@ public class CrosslinkMining extends MonolinkMining {
 		xml.open();
 		for (CrosslinkTopic topic : topics) {
 			xml.outputTopicStart(topic.getTitle(), topic.getId());
+			xml.outputAnchorStart(topic.getTitle(), topic.getTitlePos(), topic.getTitleLength());
+			
 			Set<String> indirectLinks = topic.getLinks();
 			Iterator it = indirectLinks.iterator();
 			while (it.hasNext()) {
@@ -264,6 +266,7 @@ public class CrosslinkMining extends MonolinkMining {
 			    if (!indirectLinks.contains(id))
 			    	xml.outputLink(id);
 			}		
+			xml.outputAnchorEnd();
         	xml.outputTopicEnd();	
 		}
 		xml.close();
