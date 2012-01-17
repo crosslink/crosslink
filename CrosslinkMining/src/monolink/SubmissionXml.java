@@ -38,9 +38,9 @@ public class SubmissionXml extends OutputXml implements OutputXmlInterface {
 	public static final String ANCHOR_END = "\t\t\t</anchor>\n";
 			
 	
-	public static final String LINK = "\t\t\t<tofile>%s</tofile>\n";
+	public static final String LINK = "\t\t\t\t<tofile>%s</tofile>\n";
 	
-	public static final String LINK2 = "\t\t\t<tofile bep_offset=\"%d\" lang=\"%s\" title=\"%s\">%s</tofile>\n";
+	public static final String LINK2 = "\t\t\t\t<tofile bep_offset=\"%d\" lang=\"%s\" title=\"%s\">%s</tofile>\n";
 	
 	public SubmissionXml(String sourceLang, String targetLang) {
 		super(sourceLang, targetLang);
@@ -79,7 +79,6 @@ public class SubmissionXml extends OutputXml implements OutputXmlInterface {
 	}
 
 	public void outputTopicEnd() {
-		outputAnchorEnd();
 		xmlbuf.append(TOPIC_END);	
 	}
 
@@ -90,7 +89,7 @@ public class SubmissionXml extends OutputXml implements OutputXmlInterface {
 	@Override
 	public void outputAnchorStart(String anchor, int pos, int length) {
 		String temp = String.format(ANCHOR_START_BLANK, pos, length, anchor);
-		xmlbuf.append(ANCHOR_START_BLANK);
+		xmlbuf.append(temp);
 	}
 
 	@Override
