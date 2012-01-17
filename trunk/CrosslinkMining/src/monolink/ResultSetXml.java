@@ -45,7 +45,7 @@ public class ResultSetXml extends OutputXml implements OutputXmlInterface {
 	}
 
 	@Override
-	public void outputAnchorStart() {
+	public void outputAnchorStart(String anchor, int pos, int length) {
 		
 	}
 

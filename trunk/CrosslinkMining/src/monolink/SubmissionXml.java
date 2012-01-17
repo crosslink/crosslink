@@ -33,7 +33,7 @@ public class SubmissionXml extends OutputXml implements OutputXmlInterface {
 				"\t\t</outgoing>\n" + 
 				"\t</topic>\n";
 	
-	public static final String ANCHOR_START_BLANK = "\t\t\t<anchor offset=\"-1\" length=\"0\" name=\"\">\n";
+	public static final String ANCHOR_START_BLANK = "\t\t\t<anchor offset=\"%d\" length=\"%d\" name=\"%s\">\n";
 	
 	public static final String ANCHOR_END = "\t\t\t</anchor>\n";
 			
@@ -54,7 +54,6 @@ public class SubmissionXml extends OutputXml implements OutputXmlInterface {
 	public void outputTopicStart(String name, String id) {
 		String temp = String.format(TOPIC_START, name, id);
 		xmlbuf.append(temp);
-		outputAnchorStart();
 	}
 
 	public void outputLink(String targetId) {
@@ -89,7 +88,8 @@ public class SubmissionXml extends OutputXml implements OutputXmlInterface {
 	}
 
 	@Override
-	public void outputAnchorStart() {
+	public void outputAnchorStart(String anchor, int pos, int length) {
+		String temp = String.format(ANCHOR_START_BLANK, pos, length, anchor);
 		xmlbuf.append(ANCHOR_START_BLANK);
 	}
 
