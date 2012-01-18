@@ -25,6 +25,8 @@ import ltwassessment.submission.Topic;
 public class Assessment {
 
 	private static Assessment instance;
+	
+	private static final String RESOURCES_PATH = "resources" + File.separator ;
 
 	private static final String ASSESSMENT_TOPIC_ASSESSMENT_PATH = "assessment";
 	private static final String ASSESSMENT_TOPIC_INBOX_PATH = ASSESSMENT_TOPIC_ASSESSMENT_PATH + File.separator + "inbox" + File.separator;
@@ -32,7 +34,8 @@ public class Assessment {
 	private static final String ASSESSMENT_TOPIC_TOPIC_PATH = "resources" + File.separator + "Topics" + File.separator;
 	
 	private static final String ASSESSMENT_POOL_PREFIX = "wikipedia_pool";
-	private static final String ASSESSMENT_POOL_PATH = "resources" + File.separator + "Pool" + File.separator;
+	private static final String ASSESSMENT_POOL_SUBMISSION_PATH = "Pool" + File.separator;
+	private static final String ASSESSMENT_POOL_GROUNDTRUTH_PATH = "GroundTruthPool" + File.separator;
 	
 	private static final String ASSESSMENT_LANG_ADDRESS = "http://131.181.88.158/lang.txt";
 	
@@ -42,30 +45,46 @@ public class Assessment {
 	
 	private Topic currentTopic;
 	
-	private static final String ASSESSMENT_POOL_BACKUP_DIR =  ASSESSMENT_POOL_PATH + File.separator + "POOL_BACKUP" + File.separator;
-	private static File poolDirHandler = null;
-	private static File poolBackupDirHandler = null;
-	private static File poolBackupTempDirHandler = null;
+	private static final String ASSESSMENT_POOL_BACKUP_DIR =  "POOL_BACKUP" + File.separator;
 	
-	private static String topicPath = null;
-	private static String finishedTopicPath = null;
-	private static File finishedTopicPathHandler = null;
+	private StringBuffer poolDir = null;
+	private File poolDirHandler = null;
+	private File poolBackupDirHandler = null;
+	private File poolBackupTempDirHandler = null;
 	
-	private static String assessmentLang = "";
+	private String topicPath = null;
+	private String finishedTopicPath = null;
+	private File finishedTopicPathHandler = null;
+	
+	private String assessmentLang = "";
 	
 	private boolean assessmentType = false; // false: pool assessment; true: ground-truth assessment 
 	
 	static {
+
+	}
+
+	public Assessment() {
 		getAssessmentLang();
 		
-		poolDirHandler = new File(ASSESSMENT_POOL_PATH + assessmentLang);
+		poolDir = new StringBuffer(RESOURCES_PATH);
+		if (!assessmentType) {
+			poolDir.append(ASSESSMENT_POOL_SUBMISSION_PATH);
+		}
+		else { // assess Wikipedia ground-truth
+			poolDir.append(ASSESSMENT_POOL_GROUNDTRUTH_PATH);
+		}
+		
+		poolDirHandler = new File(poolDir.toString() + assessmentLang);
 		if (assessmentLang.length() > 0 && !poolDirHandler.exists()) {
 			assessmentLang = "";
-			poolDirHandler = new File(ASSESSMENT_POOL_PATH);
+			poolDirHandler = new File(poolDir.toString());
 		}
+		poolDir.append(File.separator);
+
 //			poolDirHandler.mkdir();
 			
-		poolBackupDirHandler = new File(ASSESSMENT_POOL_BACKUP_DIR + assessmentLang);
+		poolBackupDirHandler = new File(poolDir.toString() + ASSESSMENT_POOL_BACKUP_DIR + assessmentLang);
 		if (!poolBackupDirHandler.exists())
 			poolBackupDirHandler.mkdirs();
 		
@@ -77,14 +96,12 @@ public class Assessment {
 		System.err.println("System temp dir: " + poolBackupTempDirHandler.getAbsolutePath());
 		
 		finishedTopicPath = ASSESSMENT_TOPIC_OUTBOX_PATH;
-	}
-
-	public Assessment() {
+		
 		loadTopicsForAssessment();
 	}
 
 	
-	private static void getAssessmentLang() {
+	private void getAssessmentLang() {
 	    try { 
 	    	File langFile = new File("lang.txt");
 	    	InputStream is = null;
@@ -150,10 +167,10 @@ public class Assessment {
 			finishedTopics.put(topicID, file);
 		}	
 		
-		if (assessmentType) {// assess Wikipedia ground-truth
+		if (!assessmentType) {
 			topicPath = ASSESSMENT_TOPIC_INBOX_PATH;
 		}
-		else {
+		else { // assess Wikipedia ground-truth
 			topicPath = ASSESSMENT_TOPIC_TOPIC_PATH;
 		}
 		
@@ -183,7 +200,7 @@ public class Assessment {
 		}
 	}
 	
-	public static String getPoolFile(String id) {
+	public String getPoolFile(String id) {
 //		if (assessmentLang.length() == 0)
 //			return ASSESSMENT_POOL_PATH + ASSESSMENT_POOL_PREFIX + "_" + id + ".xml";
 //		return ASSESSMENT_POOL_PATH + assessmentLang + File.separator + ASSESSMENT_POOL_PREFIX + "_" + id + ".xml";
@@ -199,11 +216,11 @@ public class Assessment {
 		return topic;
 	}
 
-	public static File getPoolBackupTempDirHandler() {
+	public File getPoolBackupTempDirHandler() {
 		return poolBackupTempDirHandler;
 	}
 	
-	public static File getPoolBackupDirHandler() {
+	public File getPoolBackupDirHandler() {
 		return poolBackupDirHandler;
 	}
 
