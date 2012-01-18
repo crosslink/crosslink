@@ -73,7 +73,6 @@ public class PoolManager {
 					++param_start;
 				}
 				else if (args[i].charAt(1) == 'p' ) {
-					manager.setValidateAnchors(true);
 					String topicPath = args[++i];
 					if (!new File(topicPath).exists()) {
 						System.err.println("Incorrect topic path: " + topicPath);
