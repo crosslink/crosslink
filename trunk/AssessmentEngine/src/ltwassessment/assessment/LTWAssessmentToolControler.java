@@ -294,9 +294,9 @@ public class LTWAssessmentToolControler {
     		topicID = ID;
     	else
     		topicID = rscManager.getTopicID();
-		String sourcePoolFPath = ltwassessment.Assessment.getPoolFile(topicID);
+		String sourcePoolFPath = ltwassessment.Assessment.getInstance().getPoolFile(topicID);
 		File srcFile = new File(sourcePoolFPath);
-		String backupPoolDir = Assessment.getPoolBackupTempDirHandler().getAbsolutePath();//.ASSESSMENT_POOL_BACKUP_DIR;
+		String backupPoolDir = Assessment.getInstance().getPoolBackupTempDirHandler().getAbsolutePath();//.ASSESSMENT_POOL_BACKUP_DIR;
 		DateFormat dateFormat = new SimpleDateFormat("yyMMddHHmmss");
 		Date date = new Date();
 		String currentDateTime = dateFormat.format(date).toString();
@@ -325,7 +325,7 @@ public class LTWAssessmentToolControler {
 		 */
 		try {
 			FileUtil.copyFile(sourcePoolFPath, backupPoolFPath);
-			FileUtil.copyFile(sourcePoolFPath, Assessment.getPoolBackupDirHandler().getAbsolutePath() + File.separator + srcFile.getName());
+			FileUtil.copyFile(sourcePoolFPath, Assessment.getInstance().getPoolBackupDirHandler().getAbsolutePath() + File.separator + srcFile.getName());
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -384,7 +384,7 @@ public class LTWAssessmentToolControler {
     }
     
     private void assess(String topicID, boolean reset) {
-    	String poolFile = Assessment.getPoolFile(topicID);
+    	String poolFile = Assessment.getInstance().getPoolFile(topicID);
     	backupPool(topicID);
     	Completion.getInstance().reset();
     	
