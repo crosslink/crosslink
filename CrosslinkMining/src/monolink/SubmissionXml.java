@@ -52,7 +52,7 @@ public class SubmissionXml extends OutputXml implements OutputXmlInterface {
 	}
 
 	public void outputTopicStart(String name, String id) {
-		String temp = String.format(TOPIC_START, name, id);
+		String temp = String.format(TOPIC_START, id, name);
 		xmlbuf.append(temp);
 	}
 
