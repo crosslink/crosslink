@@ -81,7 +81,8 @@ public class LTWAssessmentToolApp extends SingleFrameApplication {
      */
     public static void main(String[] args) {
     	if (args.length > 0 && args[0].equalsIgnoreCase("run"))
-    		Assessment.getInstance().setAssessmentType(true);    	
+    		Assessment.getInstance().setAssessmentType(true);
+    	Assessment.getInstance().initialize();
         launch(LTWAssessmentToolApp.class, args);
     }
     
