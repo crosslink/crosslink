@@ -26,16 +26,16 @@ public class Assessment {
 
 	private static Assessment instance;
 	
-	private static final String RESOURCES_PATH = "resources" + File.separator ;
+	public static final String RESOURCES_PATH = "resources" + File.separator ;
 
-	private static final String ASSESSMENT_TOPIC_ASSESSMENT_PATH = "assessment";
-	private static final String ASSESSMENT_TOPIC_INBOX_PATH = ASSESSMENT_TOPIC_ASSESSMENT_PATH + File.separator + "inbox" + File.separator;
-	private static final String ASSESSMENT_TOPIC_OUTBOX_PATH = ASSESSMENT_TOPIC_ASSESSMENT_PATH + File.separator + "outbox" + File.separator;
-	private static final String ASSESSMENT_TOPIC_TOPIC_PATH = "resources" + File.separator + "Topics" + File.separator;
+	public static final String ASSESSMENT_TOPIC_ASSESSMENT_PATH = "assessment";
+	public static final String ASSESSMENT_TOPIC_INBOX_PATH = ASSESSMENT_TOPIC_ASSESSMENT_PATH + File.separator + "inbox" + File.separator;
+	public static final String ASSESSMENT_TOPIC_OUTBOX_PATH = ASSESSMENT_TOPIC_ASSESSMENT_PATH + File.separator + "outbox" + File.separator;
+	public static final String ASSESSMENT_TOPIC_TOPIC_PATH = RESOURCES_PATH + "Topics" + File.separator;
 	
-	private static final String ASSESSMENT_POOL_PREFIX = "wikipedia_pool";
-	private static final String ASSESSMENT_POOL_SUBMISSION_PATH = "Pool" + File.separator;
-	private static final String ASSESSMENT_POOL_GROUNDTRUTH_PATH = "GroundTruthPool" + File.separator;
+	public static final String ASSESSMENT_POOL_PREFIX = "wikipedia_pool";
+	public static final String ASSESSMENT_POOL_SUBMISSION_PATH = "Pool" + File.separator;
+	public static final String ASSESSMENT_POOL_GROUNDTRUTH_PATH = "GroundTruthPool" + File.separator;
 	
 	private static final String ASSESSMENT_LANG_ADDRESS = "http://131.181.88.158/lang.txt";
 	
@@ -57,6 +57,7 @@ public class Assessment {
 	private File finishedTopicPathHandler = null;
 	
 	private String assessmentLang = "";
+	private String sourcelang = "";
 	
 	private boolean assessmentType = false; // false: pool assessment; true: ground-truth assessment 
 	
@@ -176,7 +177,7 @@ public class Assessment {
 			topicPath = ASSESSMENT_TOPIC_INBOX_PATH;
 		}
 		else { // assess Wikipedia ground-truth
-			topicPath = ASSESSMENT_TOPIC_TOPIC_PATH;
+			topicPath = ASSESSMENT_TOPIC_TOPIC_PATH + AppResource.getInstance().sourceLang + File.separator;
 		}
 		
 		stack = WildcardFiles.listFilesInStack(topicPath + "*.xml");
