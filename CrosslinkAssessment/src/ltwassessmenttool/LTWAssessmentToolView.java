@@ -71,7 +71,7 @@ public class LTWAssessmentToolView extends FrameView {
 //    private String wikipediaTopicFileDir = "";
 //    private String topicAnchorsHTPrefix = "";
 //    private String topicBepsHTPrefix = "";
-    private String defaultWikipediaDirectory = "Collections" + File.separator;
+    private String defaultWikipediaDirectory = Assessment.RESOURCES_PATH + "Collections" + File.separator;
     private String defaultTeAraDirectory = "";
     private static String afTasnCollectionErrors = "";
     private String defaultPoolXmlFilePath = "";
@@ -170,7 +170,7 @@ public class LTWAssessmentToolView extends FrameView {
 //        defaultTeAraDirectory = resourceMap.getString("directory.TeAra");
 //        defaultPoolXmlFilePath = resourceMap.getString("pooling.AFXmlFolder");
         if (Assessment.getInstance().assessingGroundTruthLinks())
-        	defaultWikipediaDirectory = "Collections.gt" + File.separator;
+        	defaultWikipediaDirectory = Assessment.RESOURCES_PATH + "Collections.gt" + File.separator;
         // =====================================================================
         // TODO: activate/fix the Progress Bar
         progressBar.setVisible(false);
