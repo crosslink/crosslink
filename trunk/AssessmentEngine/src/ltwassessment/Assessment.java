@@ -65,6 +65,10 @@ public class Assessment {
 	}
 
 	public Assessment() {
+
+	}
+	
+	public void initialize() {
 		getAssessmentLang();
 		
 		poolDir = new StringBuffer(RESOURCES_PATH);
@@ -80,7 +84,8 @@ public class Assessment {
 			assessmentLang = "";
 			poolDirHandler = new File(poolDir.toString());
 		}
-		poolDir.append(File.separator);
+//		else
+//			poolDir.append(assessmentLang + File.separator);
 
 //			poolDirHandler.mkdir();
 			
@@ -232,5 +237,9 @@ public class Assessment {
 
 	public void setAssessmentType(boolean assessmentType) {
 		this.assessmentType = assessmentType;
+	}
+	
+	public boolean assessingGroundTruthLinks() {
+		return assessmentType;
 	}
 }

@@ -166,9 +166,11 @@ public class LTWAssessmentToolView extends FrameView {
         bepIconHighlight = resourceMap.getString("bepHighlightIcon.imageFilePath");
         // =====================================================================
         // In Assessment, Collections and Pool have been located in a default directory
-        defaultWikipediaDirectory = resourceMap.getString("directory.Wikipedia");
-        defaultTeAraDirectory = resourceMap.getString("directory.TeAra");
-        defaultPoolXmlFilePath = resourceMap.getString("pooling.AFXmlFolder");
+//        defaultWikipediaDirectory = resourceMap.getString("directory.Wikipedia");
+//        defaultTeAraDirectory = resourceMap.getString("directory.TeAra");
+//        defaultPoolXmlFilePath = resourceMap.getString("pooling.AFXmlFolder");
+        if (Assessment.getInstance().assessingGroundTruthLinks())
+        	defaultWikipediaDirectory = "Collections.gt" + File.separator;
         // =====================================================================
         // TODO: activate/fix the Progress Bar
         progressBar.setVisible(false);

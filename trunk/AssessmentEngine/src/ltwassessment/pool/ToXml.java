@@ -135,13 +135,18 @@ public class ToXml {
 			pre = anchor;
 			offsetSofar = pre.getOffset();
 		}
-		subAnchorToXml(anchor, subanchorXmlText);
-		nextEnd = anchor.getOffset() + anchor.getLength();
-		if (nextEnd > offsetEnd)
-			offsetEnd = nextEnd;
+		if (anchor != null) {
+			subAnchorToXml(anchor, subanchorXmlText);
+			nextEnd = anchor.getOffset() + anchor.getLength();
+			if (nextEnd > offsetEnd)
+				offsetEnd = nextEnd;
+		}
+		else {
+			subAnchorToXml(start, subanchorXmlText);
+		}
+		anchorToXml(start, xmlText);
 		start.setExtendedLength(offsetEnd - start.getOffset() - start.getLength());
 		
-		anchorToXml(start, xmlText);
 		xmlText.append(subanchorXmlText);
 		xmlText.append(anchorElementEnd);
 		
