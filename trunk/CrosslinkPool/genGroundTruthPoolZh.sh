@@ -1,4 +1,4 @@
 path=`dirname $0`
 
-${path}/genPool.sh -s -l en:zh ~/experiments/ntcir-9-clld/submissions/ground-truth
+${path}/genPool.sh -s -l en:zh -p /home/monfee/experiments/ntcir-9-clld/topics/test/en-no-links/ ~/experiments/ntcir-9-clld/submissions/ground-truth
 
