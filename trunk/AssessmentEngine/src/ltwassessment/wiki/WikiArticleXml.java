@@ -11,6 +11,9 @@ import java.io.UnsupportedEncodingException;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
+
+import ltwassessment.utility.ByteArrayKMP;
+
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -18,6 +21,9 @@ import org.w3c.dom.NodeList;
 
 public class WikiArticleXml {
 	public static final String TITLE_TAG_START = "<title>";
+	public static final String TITLE_TAG_END = "</title>";
+	public static final byte[] TITLE_TAG_START_BYTES = TITLE_TAG_START.getBytes();
+	public static final byte[] TITLE_TAG_END_BYTES = TITLE_TAG_END.getBytes();
 	
 	protected String xmlFile;
 
@@ -127,7 +133,21 @@ public class WikiArticleXml {
 	}
 	
 	public void extractTitle() {
-		extractTitle(bytes);
+		extractTitleByBytes(bytes);
+	}
+	
+	public void extractTitleByBytes(byte[] content) {
+		ByteArrayKMP kmpSearch = new ByteArrayKMP(TITLE_TAG_START_BYTES);
+		int indexStart = kmpSearch.search(content);
+		indexStart += TITLE_TAG_START_BYTES.length;
+		kmpSearch = new ByteArrayKMP(TITLE_TAG_END_BYTES);
+		int indexEnd = kmpSearch.search(content, indexStart);
+		byte titleBytes[] = new byte[indexEnd - indexStart];
+		titleLength = indexEnd - indexStart;
+		System.arraycopy(content, indexStart, titleBytes, 0, titleLength);
+		titlePos = indexStart;
+		title = new String (titleBytes);
+		
 	}
 	
 	public void extractTitle(byte[] content) {
