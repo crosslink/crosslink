@@ -3,6 +3,7 @@
 	<name>CrosslinkAssessment</name>
 	<comment></comment>
 	<projects>
+		<project>AssessmentEngine</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

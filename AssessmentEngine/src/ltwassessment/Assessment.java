@@ -185,8 +185,10 @@ public class Assessment {
 		for (File file: stack) {
     		String filename =  file.getName();
         	String	topicID = filename.substring(0, filename.indexOf('.'));
-        	if (!finishedTopics.contains(topicID))
+        	if (!finishedTopics.containsKey(topicID))
         		topics.put(topicID, file);
+        	else
+        		System.err.println(topicID + " already assessed!");
 		}
 		
 		it = topics.entrySet().iterator();
