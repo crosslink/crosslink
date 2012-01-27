@@ -23,7 +23,7 @@ public class ResultSetXml extends OutputXml implements OutputXmlInterface {
 	}
 	
 	public void outputLink(String targetId) {
-		String temp = String.format(LINK2, targetId);
+		String temp = String.format(LINK, targetId);
 		xmlbuf.append(temp);
 	}
 	
