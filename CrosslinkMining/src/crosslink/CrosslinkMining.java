@@ -259,13 +259,15 @@ public class CrosslinkMining extends MonolinkMining {
 			    // Get element
 				xml.outputLink((String) it.next());
 			}
+			if (topic.getCounterPart() != null) {
 			Set<String> directLinks = topic.getCounterPart().getLinks();
-			it = directLinks.iterator();
-			while (it.hasNext()) {
-			    String id = (String) it.next();
-			    if (!indirectLinks.contains(id))
-			    	xml.outputLink(id);
-			}		
+				it = directLinks.iterator();
+				while (it.hasNext()) {
+				    String id = (String) it.next();
+				    if (!indirectLinks.contains(id))
+				    	xml.outputLink(id);
+				}		
+			}
 			xml.outputAnchorEnd();
         	xml.outputTopicEnd();	
 		}
