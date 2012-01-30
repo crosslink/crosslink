@@ -9,11 +9,11 @@ import ltwassessment.AppResource;
 import ltwassessment.wiki.WikiArticleXml;
 
 
-public class Topic extends WikiArticleXml {
+public class Topic<AnchorSet> extends WikiArticleXml {
 
 	private boolean valid = false;
 		
-	private LinkedAnchors anchors = null;
+	private AnchorSet anchors = null;
 		
 	public Topic(String id, String name) {
 		super(id, name);
@@ -21,7 +21,7 @@ public class Topic extends WikiArticleXml {
 		load();
 	}
 //	
-//	public Topic(String id, LinkedAnchors anchors) {
+//	public Topic(String id, AnchorSet anchors) {
 //		this.id = id;
 //		this.anchors = anchors;
 //	}
@@ -45,7 +45,7 @@ public class Topic extends WikiArticleXml {
 	public boolean validateIt(int showMessage, boolean convertToTextOffset) {
 		load();
 		
-		valid = anchors.validateAll(this, showMessage, convertToTextOffset);
+//		valid = anchors.validateAll(this, showMessage, convertToTextOffset);
 		
 		return valid;
 	}
@@ -66,10 +66,12 @@ public class Topic extends WikiArticleXml {
 	public String getAnchorWithCharacterOffset(int offset, int length) {
 		return fullText.substring(offset, offset + length);
 	}
+	
+	public void setAnchors(AnchorSet anchors) {
+		this.anchors = anchors;
+	}
 
-	public LinkedAnchors getAnchors() {
-		if (anchors == null)
-			 anchors = new LinkedAnchors();
+	public AnchorSet getAnchors() {
 		return anchors;
 	}
 }

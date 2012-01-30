@@ -11,6 +11,8 @@ public class Target {
 	private int bepOffset = 0;
 	private boolean relevant = false;
 	
+//	private String 
+	
 	public static String corpusHome = "/data/corpus/wikipedia/all/";
 	public static File corpusHomeHandler = null;
 	
