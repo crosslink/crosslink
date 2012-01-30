@@ -9,7 +9,7 @@ import com.spreada.utils.chinese.ZHConverter;
 
 import ltwassessment.AppResource;
 
-public class LinkedAnchors extends LinkedList<Anchor> {
+public class LinkedAnchors extends LinkedList<Anchor> implements AnchorSetInterface {
 
 	/**
 	 * 

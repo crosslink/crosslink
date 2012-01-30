@@ -26,7 +26,7 @@ import org.xml.sax.SAXException;
 
 import crosslink.XML2TXT;
 
-public class Run {
+public class Run<AnchorSet>{
 	
 	private HashMap<String, Topic> topics = null;
 	private String runName = null;
@@ -34,6 +34,7 @@ public class Run {
 	private String runSourceLang = null;
 	private String runTargetLang = null;
 	private boolean checkAnchors = false;
+	private boolean needSorted = false;
 	
     public Run() {
 		init();
@@ -146,7 +147,7 @@ public class Run {
                 String thisTopicName = topicElmn.getAttribute("name");
                 Topic topic = topics.get(thisTopicID);
                 if (topic == null) {
-                	topic = new Topic(thisTopicID, thisTopicName);
+                	topic = new Topic<AnchorSet>(thisTopicID, thisTopicName);
                 	topics.put(thisTopicID, topic);
                 }
                 if (convertToTextOffset) {
@@ -159,7 +160,7 @@ public class Run {
                 NodeList anchorNodeList = outgoingElmn.getElementsByTagName(afAnchorTag);
                 String anchorKey = "";
 //                    Vector<String[]> anchorToBEPV;
-                LinkedAnchors anchors = topic.getAnchors();
+                AnchorSet anchors = (AnchorSet) topic.getAnchors();
                 for (int k = 0; k < anchorNodeList.getLength(); k++) {
                     Element anchorElmn = (Element) anchorNodeList.item(k);
                     try {
@@ -234,7 +235,7 @@ public class Run {
 	                        anchor.setRank(k);
 	//                        if (anchor.getName().equals("古代") && anchor.getTargets().containsKey("4946747"))
 	//                        	System.err.println("I got you!");
-	                        anchors.insert(anchor);
+	                        ((AnchorSetInterface)anchors).insert(anchor);
 	                    }
                     }
                 }
@@ -243,7 +244,7 @@ public class Run {
                  * REMEMBER, it has to be sorted before being used
                  */
                 if (needSorted)
-                	anchors.sort();
+                	((AnchorSetInterface)anchors).sort();
 //                }
                     
 

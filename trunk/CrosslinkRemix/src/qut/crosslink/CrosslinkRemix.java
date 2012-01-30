@@ -3,18 +3,25 @@ package qut.crosslink;
 import java.io.File;
 import java.util.HashMap;
 
+import ltwassessment.submission.MappedAnchors;
 import ltwassessment.submission.Run;
+import ltwassessment.submission.Topic;
 
 
 public class CrosslinkRemix {
 	private HashMap<String, Run> runs = new HashMap<String, Run>();
+	private HashMap<String, Topic> topics = new HashMap<String, Topic>();
 	
 	public void load(String[] args, int start, int len) {
 		for (int i = start; i < len; ++i) {
-			Run run = new Run();
+			Run<MappedAnchors> run = new Run<MappedAnchors>();
 			run.read(new File(args[i]));
 			runs.put(run.getRunName(), run);
 		}
+	}
+	
+	public void merge() {
+		
 	}
 
 	/**
