@@ -31,21 +31,22 @@ public class Run {
 	private HashMap<String, Topic> topics = null;
 	private String runName = null;
 	private boolean convertToTextOffset = true;
+	private String runSourceLang = null;
+	private String runTargetLang = null;
+	private boolean checkAnchors = false;
 	
     public Run() {
 		init();
 	}
     
     public Run(File runFile) {
-		init();
-		
-		read(runFile, false, null, null);    	
+		init();	
     }
     
 	public Run(File runFile, String sourceLang, String targetLang) {
+		runSourceLang = sourceLang;
+		runTargetLang = targetLang;
 		init();
-		
-		read(runFile, false, sourceLang, targetLang);
 	}
 	
 	public String getRunName() {
@@ -83,7 +84,19 @@ public class Run {
 		topics.put(topic.getId(), topic);
 	}
 	
+	public void read(File runFile) {
+		read(runFile, checkAnchors, runSourceLang, runTargetLang, true);
+	}
+	
+	public void read(File runFile, boolean needSorted) {
+		read(runFile, checkAnchors, runSourceLang, runTargetLang, needSorted);
+	}
+	
 	public void read(File runFile, boolean checkAnchors, String sourceLang, String targetLang) {
+		read(runFile, checkAnchors, sourceLang, targetLang, true);
+	}
+	
+	public void read(File runFile, boolean checkAnchors, String sourceLang, String targetLang, boolean needSorted) {
         boolean forValidationOrAssessment = AppResource.forValidationOrAssessment;
         String afTitleTag = forValidationOrAssessment ? "crosslink-assessment" : "crosslink-submission";
         String afTopicTag = "topic";
@@ -105,10 +118,10 @@ public class Run {
         for (int i = 0; i < titleNodeList.getLength(); i++) {
             Element titleElmn = (Element) titleNodeList.item(i);
             runName =  titleElmn.getAttribute("run-id");
-            String runSourceLang = titleElmn.getAttribute("source_lang").trim().toLowerCase();
+            runSourceLang = titleElmn.getAttribute("source_lang").trim().toLowerCase();
             if (runSourceLang.length() == 0)
             	runSourceLang = "en";
-            String runTargetLang = titleElmn.getAttribute("default_lang").trim().toLowerCase();
+            runTargetLang = titleElmn.getAttribute("default_lang").trim().toLowerCase();
             
             if (sourceLang == null && targetLang == null) {
 	            if (runSourceLang.length() > 0)
@@ -229,7 +242,8 @@ public class Run {
                 /**
                  * REMEMBER, it has to be sorted before being used
                  */
-                anchors.sort();
+                if (needSorted)
+                	anchors.sort();
 //                }
                     
 
