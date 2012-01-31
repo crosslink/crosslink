@@ -89,7 +89,7 @@ public class ToXml {
 		
 //		topic.getAnchors().calculateOverlappedAnchorExtensionLength();
 //		topic.getAnchors().connectIfOverlapped();
-		LinkedList<Anchor> anchorList = topic.getAnchors(); //.getAnchorList();
+		LinkedList<Anchor> anchorList = (LinkedList<Anchor>) topic.getAnchors(); //.getAnchorList();
 		
 		String anchorElementEnd = "\t\t\t</anchor>\n";
 		

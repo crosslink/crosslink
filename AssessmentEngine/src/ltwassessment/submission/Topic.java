@@ -18,7 +18,7 @@ public class Topic<AnchorSet> extends WikiArticleXml {
 	public Topic(String id, String name) {
 		super(id, name);
 		
-		load();
+//		load();
 	}
 //	
 //	public Topic(String id, AnchorSet anchors) {
@@ -29,7 +29,7 @@ public class Topic<AnchorSet> extends WikiArticleXml {
 	public Topic(File file) {
 		super(file);
 		
-		load();
+//		load();
 	}
 
 	public void load() {
