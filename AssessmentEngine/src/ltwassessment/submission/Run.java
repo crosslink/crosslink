@@ -36,6 +36,8 @@ public class Run<AnchorSet>{
 	private boolean checkAnchors = false;
 	private boolean needSorted = false;
 	
+	private Class<AnchorSet> factory = null;
+	
     public Run() {
 		init();
 	}
@@ -83,6 +85,22 @@ public class Run<AnchorSet>{
 
 	public void add(Topic topic) {
 		topics.put(topic.getId(), topic);
+	}
+	
+	public void setAnchorSetFactory(Class<AnchorSet> factory) {
+		this.factory = factory;
+	}
+	
+	public AnchorSet createAnchorSet() {
+		AnchorSet instance = null;
+		try {
+			instance = factory.newInstance();
+		} catch (InstantiationException e) {
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			e.printStackTrace();
+		}
+		return instance;
 	}
 	
 	public void read(File runFile) {
@@ -145,9 +163,12 @@ public class Run<AnchorSet>{
                 Element topicElmn = (Element) topicNodeList.item(j);
                 String thisTopicID = topicElmn.getAttribute("file");
                 String thisTopicName = topicElmn.getAttribute("name");
-                Topic topic = topics.get(thisTopicID);
+                Topic<AnchorSet> topic = topics.get(thisTopicID);
+
                 if (topic == null) {
                 	topic = new Topic<AnchorSet>(thisTopicID, thisTopicName);
+                	topic.setParent(this);
+                	topic.setAnchors(this.createAnchorSet());
                 	topics.put(thisTopicID, topic);
                 }
                 if (convertToTextOffset) {
@@ -185,6 +206,7 @@ public class Run<AnchorSet>{
 //                        anchorToBEPV = new Vector<String[]>();
                     if (aLength > 0) {
 	                    Anchor anchor = new Anchor(aOffset, aLength, anchorName);
+	                    anchor.setAssociatedTopic(topic);
 	                    if (checkAnchors == false || (checkAnchors && anchor.validate(topic, Anchor.SHOW_MESSAGE_NONE, convertToTextOffset))) {
 	                        Target target = null;
 	                        if (forValidationOrAssessment) {
@@ -226,6 +248,8 @@ public class Run<AnchorSet>{
 		                                //anchorToBEPV.add(new String[]{tbFileID, tbOffset, target_lang, target_title});
 		                                if (Target.exist(tbFileID, target_lang)) {
 			                                target = new Target(target_lang, target_title, tbFileID, Integer.parseInt(tbOffset));
+			                                target.setParent(anchor);
+			                                target.setRank(m);
 			                                anchor.insertTarget(target);
 		                                }
 	                                }

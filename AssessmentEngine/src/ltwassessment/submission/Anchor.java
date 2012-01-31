@@ -34,6 +34,8 @@ public class Anchor {
 	
 	protected boolean valid = false;
 	
+	private Topic parent = null;
+	
 //	// for the overlapping Anchors
 //	protected Anchor first = null;
 //	protected Anchor last = null;
@@ -177,6 +179,14 @@ public class Anchor {
 //	public boolean matchAnchor(int offset, int length, String name) {
 //
 //	}
+
+	public Topic getAssociatedTopic() {
+		return parent;
+	}
+
+	public void setAssociatedTopic(Topic parent) {
+		this.parent = parent;
+	}
 
 	public boolean validate(Topic topic, int showMessage, boolean convertToTextOffset) {
 		String result = null;

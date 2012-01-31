@@ -3,20 +3,27 @@ package qut.crosslink;
 import java.io.File;
 import java.util.Collection;
 import java.util.HashMap;
+import java.util.HashSet;
 
+import ltwassessment.submission.Anchor;
 import ltwassessment.submission.MappedAnchors;
 import ltwassessment.submission.Run;
+import ltwassessment.submission.Target;
 import ltwassessment.submission.Topic;
+import ltwassessment.submission.TopicLink;
 
 
 public class CrosslinkRemix {
 	private HashMap<String, Run> runs = new HashMap<String, Run>();
-	private HashMap<String, Topic> topics = new HashMap<String, Topic>();
+	private HashMap<String, TopicLink> topics = new HashMap<String, TopicLink>();
+//	private HashMap<String, HashSet<Target>> topicLinks = new HashMap<String, HashSet<Target>>();
 	
 	public void load(String[] args, int start, int len) {
 		for (int i = start; i < len; ++i) {
 			Run<MappedAnchors> run = new Run<MappedAnchors>();
-			run.read(new File(args[i]));
+			run.setAnchorSetFactory(MappedAnchors.class);
+			run.setConvertToTextOffset(false);
+			run.read(new File(args[i]), false);
 			runs.put(run.getRunName(), run);
 		}
 	}
@@ -26,14 +33,29 @@ public class CrosslinkRemix {
 		for (Run run : allRuns) {
 			Collection<Topic> allTopics = run.getTopics().values();
 			
-			for (Topic topic : allTopics) {
+			for (Topic<MappedAnchors> topic : allTopics) {
 				String topicId = topic.getId();
+				TopicLink topicLink = new TopicLink(topicId);
 				
-				Topic newTopic = null;
-				if (topics.containsKey(topicId))
-					newTopic = topics.get(topicId);
-				else
-					newTopic = new Topic(topic.getId(), topic.getTitle());
+				Collection<Anchor> anchors = topic.getAnchors().values();
+				for (Anchor anchor : anchors) {
+					Collection<Target> targets = anchor.getTargets().values();
+					
+					for (Target target : targets) {
+						topicLink.addLink(target);
+					}
+				}
+				
+//				Topic<MappedAnchors> newTopic = null;
+//				if (topics.containsKey(topicId))
+//					newTopic = topics.get(topicId);
+//				else {
+//					newTopic = new Topic(topic.getId(), topic.getTitle());
+//					newTopic.load();
+//				}
+//				
+//				newTopic.getAnchors().putAll(topic.getAnchors());
+				
 				
 			}
 		}
@@ -70,6 +92,7 @@ public class CrosslinkRemix {
 		}
 		
 		mixer.load(args, i, args.length - i);
+		mixer.merge();
 			
 //		for (; i < args.length; ++i) {
 //			String file = args[i];

@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import java.util.Collection;
 
 import ltwassessment.AppResource;
 import ltwassessment.wiki.WikiArticleXml;
@@ -14,9 +15,12 @@ public class Topic<AnchorSet> extends WikiArticleXml {
 	private boolean valid = false;
 		
 	private AnchorSet anchors = null;
+	
+	private Run parent;
 		
 	public Topic(String id, String name) {
 		super(id, name);
+		
 		
 //		load();
 	}
@@ -73,5 +77,13 @@ public class Topic<AnchorSet> extends WikiArticleXml {
 
 	public AnchorSet getAnchors() {
 		return anchors;
+	}
+
+	public Run getParent() {
+		return parent;
+	}
+
+	public void setParent(Run parent) {
+		this.parent = parent;
 	}
 }

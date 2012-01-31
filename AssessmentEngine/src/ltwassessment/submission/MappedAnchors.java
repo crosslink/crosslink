@@ -18,5 +18,4 @@ public class MappedAnchors extends HashMap<String, Anchor>  implements AnchorSet
 	public void sort() {
 		
 	}
-	
 }

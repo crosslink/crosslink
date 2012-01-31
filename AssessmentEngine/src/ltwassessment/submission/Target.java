@@ -11,10 +11,14 @@ public class Target {
 	private int bepOffset = 0;
 	private boolean relevant = false;
 	
+	private Anchor parent = null;
+	
 //	private String 
 	
 	public static String corpusHome = "/data/corpus/wikipedia/all/";
 	public static File corpusHomeHandler = null;
+	
+	private int rank = -1;
 	
 	static {
 		if (new File(corpusHome).exists()) {
@@ -95,5 +99,21 @@ public class Target {
 		if (filePath != null)
 			return new File(filePath).exists();
 		return false;		
+	}
+	
+	public void setParent(Anchor anchor) {
+		parent = anchor;
+	}
+	
+	public Anchor getParent() {
+		return parent;
+	}
+
+	public int getRank() {
+		return rank;
+	}
+
+	public void setRank(int rank) {
+		this.rank = rank;
 	}
 }

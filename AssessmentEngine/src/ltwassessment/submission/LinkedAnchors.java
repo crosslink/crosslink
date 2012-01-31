@@ -60,5 +60,4 @@ public class LinkedAnchors extends LinkedList<Anchor> implements AnchorSetInterf
 		}
 		return result;
 	}
-
 }
