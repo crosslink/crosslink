@@ -1,6 +1,7 @@
 package qut.crosslink;
 
 import java.io.File;
+import java.util.Collection;
 import java.util.HashMap;
 
 import ltwassessment.submission.MappedAnchors;
@@ -21,7 +22,21 @@ public class CrosslinkRemix {
 	}
 	
 	public void merge() {
-		
+		Collection<Run> allRuns = runs.values();
+		for (Run run : allRuns) {
+			Collection<Topic> allTopics = run.getTopics().values();
+			
+			for (Topic topic : allTopics) {
+				String topicId = topic.getId();
+				
+				Topic newTopic = null;
+				if (topics.containsKey(topicId))
+					newTopic = topics.get(topicId);
+				else
+					newTopic = new Topic(topic.getId(), topic.getTitle());
+				
+			}
+		}
 	}
 
 	/**
@@ -46,6 +61,10 @@ public class CrosslinkRemix {
 //				AppResource.getInstance().setTopicPath(topicPath);
 				i += 2;
 			}
+			else if (args[0].charAt(1) == 'r') {
+
+				i += 2;
+			}
 			else
 				usage();
 		}
@@ -59,7 +78,7 @@ public class CrosslinkRemix {
 	}
 
 	private static void usage() {
-		System.err.println("Usage: program [-c topic_path] run1 [run 2] [run 3] ...");
+		System.err.println("Usage: program [-r qrel] run1 [run 2] [run 3] ...");
 		System.exit(-1);	
 	}
 
