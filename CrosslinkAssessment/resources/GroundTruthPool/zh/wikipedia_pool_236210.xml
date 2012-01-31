@@ -4,7 +4,7 @@
 	<collection>Korean Wikipedia 2010 Collection</collection>
 	<topic file="236210" name="Crown prince">
 		<outgoinglinks>
-			<anchor arel="0" aname="Crown prince" aoffset="266" alength="12" ext_length="0">
+			<anchor arel="1" aname="Crown prince" aoffset="266" alength="12" ext_length="0">
 				<subanchor sarel="1" saname="Crown prince" saoffset="266" salength="12" rank="0">
 					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="唐朝">686</tobep>
 					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="皇太孫">229401</tobep>
