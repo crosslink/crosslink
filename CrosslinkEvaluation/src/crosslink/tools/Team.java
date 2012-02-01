@@ -69,8 +69,8 @@ public class Team extends LinkCountTemplate {
 		if (runIdLinkSet.containsKey(link)) {
 			if (!runIdLinkSet.get(link).contains(runId))
 				runIdLinkSet.get(link).add(runId);
-			else
-				System.out.println("Something wrong here");
+//			else
+//				System.out.println("Something wrong here");
 //			runLink  = runIdLinkSet.get(link);
 //			runLink.addLink(link); 
 		}
@@ -100,7 +100,8 @@ public class Team extends LinkCountTemplate {
 	public void setUniqLink(String link) {
 		this.increaseLinkCount();
 		for (Object obj : runIdLinkSet.get(link).toArray()) {
-			RunLink runLink = (RunLink)obj;
+			String runId = (String)obj;
+			RunLink runLink = runLinks.get(runId);
 			runLink.increaseLinkCount();
 			if (!runIdLinkSet.containsKey(link) && runIdLinkSet.get(link).size() == 1) {
 				((RunLink)runIdLinkSet.get(link).toArray()[0]).addLink(link);
