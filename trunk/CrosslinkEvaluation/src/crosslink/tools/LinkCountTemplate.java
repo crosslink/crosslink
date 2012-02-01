@@ -3,7 +3,7 @@ package crosslink.tools;
 public class LinkCountTemplate<E> implements Comparable {
 
 	protected String		id;
-	protected int 			uniqLinkCount = 0;
+	protected int 	uniqLinkCount = 0;
 	
 	public String getId() {
 		return id;
