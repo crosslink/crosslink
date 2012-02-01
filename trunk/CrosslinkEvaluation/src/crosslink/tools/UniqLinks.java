@@ -36,6 +36,8 @@ public class UniqLinks {
 	private boolean convertToTextOffset = true;
 	private String runId;
 	
+	private boolean printOutLinks = false;
+	
 	ResultSet resultSet = new ResultSet();
 	
 	private int task;
@@ -65,6 +67,14 @@ public class UniqLinks {
 		lang = Data.langMatchMap.get(langStr);
 	}
 	
+	public boolean isPrintOutLinks() {
+		return printOutLinks;
+	}
+
+	public void setPrintOutLinks(boolean printOutLinks) {
+		this.printOutLinks = printOutLinks;
+	}
+
 	private void init(int index, String[] fl) {
         ArrayList<File> fileList = new ArrayList<File>();
         for (int l = index; l < fl.length; l++) {
@@ -86,6 +96,7 @@ public class UniqLinks {
 		System.out.println("options: ");
 		System.out.println("	-t f2f|a2f");
 		System.out.println("	-l language zh | en | ja | ko");
+		System.out.println("	-p print out the links ( there should be a run at a time");
 		System.exit(-1);
 	}
 	
@@ -110,11 +121,15 @@ public class UniqLinks {
             if (currentSourceLang == null || currentSourceLang.length() == 0)
             	currentSourceLang = "en";
             
+            AppResource.sourceLang = currentSourceLang;
+            
             // default lang is the target lang
             currentTargetLang = is.getDefaultLang();
             if (currentTargetLang == null || currentTargetLang.length() == 0)
             	throw new Exception(String.format("Incorrect run file - %s which dosen't provide the target language", runfiles.getAbsoluteFile()));
 
+            AppResource.targetLang = currentTargetLang;
+            
             runId = is.getRunId();
             participantId = is.getParticipantId();
             
@@ -136,6 +151,7 @@ public class UniqLinks {
 	                if (topic == null) {
 	                	String thisTopicName = is.getTopic().get(i).getName();
 						topic = new Topic(topicID, thisTopicName);
+						topic.load();
 	                }
 	                if (convertToTextOffset) {
 	                    bytes = topic.getBytes();
@@ -257,7 +273,7 @@ public class UniqLinks {
     	for (Team team : teams) {
     		String line = String.format("%s, %d", team.id, team.uniqLinkCount);
     		System.out.println(line);
-    		team.printRunLinks();
+    		team.printRunLinks(printOutLinks);
     	}
     	
     	System.out.println();
@@ -283,9 +299,9 @@ public class UniqLinks {
 					else
 						uniqLinks.setTask(TASK_F2F);
 				}
-//				else if (args[i].charAt(1) == 'p' ) {
-//
-//				}
+				else if (args[param_start].charAt(1) == 'p' ) {
+					uniqLinks.setPrintOutLinks(true);
+				}
 //				else if (args[i].charAt(1) == 'c' ) {
 //					manager.setValidateAnchors(true);
 //					++param_start;

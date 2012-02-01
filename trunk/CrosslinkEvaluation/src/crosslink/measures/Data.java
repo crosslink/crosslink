@@ -59,6 +59,7 @@ public class Data {
 		langMatchMap.put("zh", LANGUAGE_CHINESE);
 		langMatchMap.put("ko", LANGUAGE_KOREAN);
 		langMatchMap.put("ja", LANGUAGE_JAPANESE);
+		langMatchMap.put("en", LANGUAGE_ENGLISH);
 		langMatchMap.put("all", LANGUAGE_ALL);
     }
     

@@ -1,6 +1,7 @@
 package crosslink.tools;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -11,7 +12,7 @@ public class Team extends LinkCountTemplate {
 //	HashMap<String, Set<String>> topicAnchors = new HashMap<String, Set<String>>();  //only keep the links that is in the result set
 //	Set<String>		linkSet;
 	public class RunLink extends LinkCountTemplate {
-//		HashSet<String> uniqLinks = new HashSet<String>();
+		HashSet<String> uniqLinks = new HashSet<String>();
 		
 		public RunLink(String runId, String link) {
 			super(runId);
@@ -27,12 +28,19 @@ public class Team extends LinkCountTemplate {
 //				uniqLinks.add(link);
 //			}
 //		}
+		public void setUniqLink(String link) {
+			uniqLinks.add(link);
+		}
 		
+		public HashSet<String> getUniqLinks() {
+			return uniqLinks;
+		}
 	}
 	
 	HashMap<String, RunLink> runLinks = new HashMap<String, RunLink>(); //run
 	
-	private HashMap<String, HashSet<RunLink>> runIdLinkSet = new HashMap<String, HashSet<RunLink>>(); // link id, run (id, count)
+	protected HashMap<String, HashSet<RunLink>> runIdLinkSet = new HashMap<String, HashSet<RunLink>>(); // link id, run (id, count)
+
 	private ArrayList<RunLink> runLinkArray = new ArrayList<RunLink>();
 
 	public Team(String teamId) {
@@ -74,16 +82,26 @@ public class Team extends LinkCountTemplate {
 		}
 	}
 
-	public void printRunLinks() {
+	public void printRunLinks(boolean printOutLinks) {
 		this.sortRunId();
-		for (RunLink runLink : runLinkArray)
+		for (RunLink runLink : runLinkArray) {
 			System.out.println(runLink.getId() + ", " + runLink.getUniqLinkCount());
+			if (printOutLinks) {
+				System.err.print("###################################################################-");
+				System.err.print(runLink.getId());
+				System.err.println("-###################################################################");
+				Collection<String> links = runLink.getUniqLinks();
+				for (String link : links)
+					System.err.println(link);
+			}
+		}
 	}
 	
 	public void setUniqLink(String link) {
 		this.increaseLinkCount();
 		for (Object obj : runIdLinkSet.get(link).toArray()) {
 			RunLink runLink = (RunLink)obj;
+			runLink.setUniqLink(link);
 			runLink.increaseLinkCount();
 		}
 	}
