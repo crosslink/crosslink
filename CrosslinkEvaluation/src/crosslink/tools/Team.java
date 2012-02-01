@@ -13,21 +13,16 @@ public class Team extends LinkCountTemplate {
 //	Set<String>		linkSet;
 	public class RunLink extends LinkCountTemplate {
 		HashSet<String> uniqLinks = new HashSet<String>();
-		
-		public RunLink(String runId, String link) {
-			super(runId);
-//			addLink(link);
-		}
 
 		public RunLink(String runId) {
 			super(runId);
 		}
 
-//		public void addLink(String link) {
-//			if (!uniqLinks.contains(link)) {
-//				uniqLinks.add(link);
-//			}
-//		}
+		public void addLink(String link) {
+			if (!uniqLinks.contains(link)) {
+				uniqLinks.add(link);
+			}
+		}
 		public void setUniqLink(String link) {
 			uniqLinks.add(link);
 		}
@@ -39,9 +34,11 @@ public class Team extends LinkCountTemplate {
 	
 	HashMap<String, RunLink> runLinks = new HashMap<String, RunLink>(); //run
 	
-	protected HashMap<String, HashSet<RunLink>> runIdLinkSet = new HashMap<String, HashSet<RunLink>>(); // link id, run (id, count)
+	protected HashMap<String, HashSet<String>> runIdLinkSet = new HashMap<String, HashSet<String>>(); // link id, run id
 
 	private ArrayList<RunLink> runLinkArray = new ArrayList<RunLink>();
+	
+//	private HashMap<String, HashSet<String>> runUniqLinks = new HashMap<String, HashSet<String>>();
 
 	public Team(String teamId) {
 		super(teamId);
@@ -66,18 +63,20 @@ public class Team extends LinkCountTemplate {
 		if (runLinks.containsKey(runId))
 			runLink = runLinks.get(runId);
 		else {
-			runLink = new RunLink(runId, link);
+			runLink = new RunLink(runId);
 			runLinks.put(runId, runLink);
 		}
 		if (runIdLinkSet.containsKey(link)) {
-			if (!runIdLinkSet.get(link).contains(runLink))
-				runIdLinkSet.get(link).add(runLink);
+			if (!runIdLinkSet.get(link).contains(runId))
+				runIdLinkSet.get(link).add(runId);
+			else
+				System.out.println("Something wrong here");
 //			runLink  = runIdLinkSet.get(link);
 //			runLink.addLink(link); 
 		}
 		else {
-			HashSet<RunLink> runs = new HashSet<RunLink>();
-			runs.add(runLink);
+			HashSet<String> runs = new HashSet<String>();
+			runs.add(runId);
 			runIdLinkSet.put(link, runs);
 		}
 	}
@@ -85,7 +84,8 @@ public class Team extends LinkCountTemplate {
 	public void printRunLinks(boolean printOutLinks) {
 		this.sortRunId();
 		for (RunLink runLink : runLinkArray) {
-			System.out.println(runLink.getId() + ", " + runLink.getUniqLinkCount());
+			//											number of unique comparing with other teams, number of unique links comparing other runs of the same team
+			System.out.println(runLink.getId() + ", " + runLink.getUniqLinkCount()+ ", " + runLink.getUniqLinks().size());
 			if (printOutLinks) {
 				System.err.print("###################################################################-");
 				System.err.print(runLink.getId());
@@ -101,8 +101,12 @@ public class Team extends LinkCountTemplate {
 		this.increaseLinkCount();
 		for (Object obj : runIdLinkSet.get(link).toArray()) {
 			RunLink runLink = (RunLink)obj;
-			runLink.setUniqLink(link);
 			runLink.increaseLinkCount();
+			if (!runIdLinkSet.containsKey(link) && runIdLinkSet.get(link).size() == 1) {
+				((RunLink)runIdLinkSet.get(link).toArray()[0]).addLink(link);
+//				runUniqLinks.get(runLink.getId()).add(link);
+			}
+
 		}
 	}
 }
