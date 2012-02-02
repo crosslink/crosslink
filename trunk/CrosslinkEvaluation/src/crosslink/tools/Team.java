@@ -23,9 +23,10 @@ public class Team extends LinkCountTemplate {
 				uniqLinks.add(link);
 			}
 		}
-		public void setUniqLink(String link) {
-			uniqLinks.add(link);
-		}
+		
+//		public void setUniqLink(String link) {
+//			uniqLinks.add(link);
+//		}
 		
 		public HashSet<String> getUniqLinks() {
 			return uniqLinks;
