@@ -98,16 +98,20 @@ public class Team extends LinkCountTemplate {
 	}
 	
 	public void setUniqLink(String link) {
+		RunLink runLink = null;
 		this.increaseLinkCount();
-		for (Object obj : runIdLinkSet.get(link).toArray()) {
-			String runId = (String)obj;
-			RunLink runLink = runLinks.get(runId);
+		Collection<String> runIds = runIdLinkSet.get(link);
+		if (runIdLinkSet.get(link).size() == 1) {
+			runLink = runLinks.get(runIds.toArray()[0]);
+			runLink.addLink(link);
 			runLink.increaseLinkCount();
-			if (!runIdLinkSet.containsKey(link) && runIdLinkSet.get(link).size() == 1) {
-				((RunLink)runIdLinkSet.get(link).toArray()[0]).addLink(link);
-//				runUniqLinks.get(runLink.getId()).add(link);
-			}
-
+//			runUniqLinks.get(runLink.getId()).add(link);
 		}
+		else
+			for (Object obj : runIdLinkSet.get(link).toArray()) {
+				String runId = (String)obj;
+				runLink = runLinks.get(runId);
+				runLink.increaseLinkCount();
+			}
 	}
 }
