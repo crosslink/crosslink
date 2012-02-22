@@ -21,10 +21,10 @@ import java.util.regex.Pattern;
 
 public class WildcardFiles implements FilenameFilter, FileFilter
 {
-	   private Pattern pattern = null;
-	   private static String wildcard = "";
-	   private static String inputFileDir = ".";
-	   private static WildcardFiles wildcardfiles = null; //new WildcardFiles(wildcard);
+	   protected Pattern pattern = null;
+	   protected static String wildcard = "";
+	   protected static String inputFileDir = ".";
+	   protected static WildcardFiles wildcardfiles = null; //new WildcardFiles(wildcard);
 	   
 	   WildcardFiles(){
 		   createPattern("*.*");   
@@ -35,7 +35,7 @@ public class WildcardFiles implements FilenameFilter, FileFilter
 		   createPattern(search);      
 	   }
 	   
-	   private void createPattern(String search) {
+	   protected void createPattern(String search) {
 		   String reform = search;
 		   //reform = reform.replaceAll("\\.", "\\.");  
 		   //reform = reform.replaceAll("\\?", "."); 
@@ -49,7 +49,7 @@ public class WildcardFiles implements FilenameFilter, FileFilter
 		   return inputFileDir;
 	   }
 	   
-	   private static void breakFile(String inputfile)
+	   protected static void breakFile(String inputfile)
 	   {
 			if (new File(inputfile).isDirectory()) {
 				inputFileDir = inputfile;
