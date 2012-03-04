@@ -41,11 +41,16 @@ public class Corpora {
     }
     
     public String getWikiFilePath(String id) {
+    	
+        return getWikipediaFileFolder() + getIdWithParentDir(id) + File.separator + id + ".xml";
+    }
+    
+    public static String getIdWithParentDir(String id) {
         String subFolder;
         if (id.length() < 3)
         	subFolder = String.format("%03d", Integer.parseInt(id));
         else
         	subFolder = id.substring(id.length() - 3);
-        return getWikipediaFileFolder() + subFolder + File.separator + id + ".xml";
+        return subFolder;
     }
 }
