@@ -26,11 +26,11 @@ public class WildcardFiles implements FilenameFilter, FileFilter
 	   protected static String inputFileDir = ".";
 	   protected static WildcardFiles wildcardfiles = null; //new WildcardFiles(wildcard);
 	   
-	   WildcardFiles(){
+	   public WildcardFiles(){
 		   createPattern("*.*");   
 	   }
 	   
-	   WildcardFiles(String search)
+	   public WildcardFiles(String search)
 	   {
 		   createPattern(search);      
 	   }
@@ -74,7 +74,7 @@ public class WildcardFiles implements FilenameFilter, FileFilter
 //			stack.addAll(Arrays.asList(arrFile));
 //	   }
 	   
-	   public static Stack listFilesInStack(String inputfile, boolean includeSubFolder) 
+	   public Stack listFilesInStack(String inputfile, boolean includeSubFolder) 
 	   {
 		   wildcardfiles = new WildcardFiles();
 		   Stack<File> stack = new Stack();
@@ -99,17 +99,19 @@ public class WildcardFiles implements FilenameFilter, FileFilter
 				        else if (wildcardfiles.accept(f))
 				        	stack.push(f);
 				    }
-				    return stack;
 			   }
-			   File[] arrFile = new File(inputFileDir).listFiles((FileFilter)wildcardfiles);
-			   stack.addAll(Arrays.asList(arrFile));
+			   else {
+				   File[] arrFile = new File(inputFileDir).listFiles((FileFilter)this);
+				   if (arrFile != null)
+					   stack.addAll(Arrays.asList(arrFile));
+			   }
 		   }
 		   return stack;
 	   }
 	   
-	   public static Stack listFilesInStack(String inputfile) 
+	   public Stack listFilesInStack(String inputfile) 
 	   {
-		   breakFile(inputfile);
+//		   breakFile(inputfile);
 		   return listFilesInStack(inputfile, false);
 	   }
 	   
@@ -153,12 +155,13 @@ public class WildcardFiles implements FilenameFilter, FileFilter
 		   return matcher.matches();		   
 	   }
 	   
+	   @Override
 	   public boolean accept(File file)
 	   {
 		   return match(file.getName());
 	   }
 
-		//@Override
+		@Override
 		public boolean accept(File dir, String name) {
 			return match(name);
 		}	   
