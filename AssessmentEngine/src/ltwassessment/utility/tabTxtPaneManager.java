@@ -96,7 +96,7 @@ public class tabTxtPaneManager {
         // update Anchor OL highlight & Auto scrolling to Curr Anchor Position
         if (paneUpdateLevel == 1 || paneUpdateLevel == 2) {
             String[] currAnchorXmlSet = this.rowAnchorSet.split("_");
-//            updateTopicPaneAnchorStatus(this.rowTopicID, new IndexedAnchor(currAnchorXmlSet[0], currAnchorXmlSet[1], "")/*String[]{currAnchorXmlSet[0], currAnchorXmlSet[1], ""}*/, AppResource.sourceLang);
+            updateTopicPaneAnchorStatus(this.rowTopicID, new IndexedAnchor(currAnchorXmlSet[0], currAnchorXmlSet[1], "")/*String[]{currAnchorXmlSet[0], currAnchorXmlSet[1], ""}*/, AppResource.sourceLang);
         }
         // update 1st Link/Pane & BEP Offset
         if (paneUpdateLevel == 1 || paneUpdateLevel == 2 || paneUpdateLevel == 3) {
@@ -139,17 +139,17 @@ public class tabTxtPaneManager {
     }
     // 4) Highlight Anchor and Selected Anchor
 
-//    private void updateTopicPaneAnchorStatus(String topicID, IndexedAnchor selectedAnchorOLNameSA, String lang) {
-//        // currAnchorSCRSet: [0]:Anchor_Name, [1]:Offset, [2]:Offset + Length
-////        String[] currAnchorSCRSet = myFOLMatcher.getSCRAnchorPosSA(this.myTopicPane, topicID, selectedAnchorOLNameSA, myFOLMatcher.getFullXmlTxt(), lang);
-////        String sPos = currAnchorSCRSet[1];
-////        String ePos = currAnchorSCRSet[2];
-////        updateTopicHighlighter(sPos + "_" + ePos);
-////        // Auto Scrolling to Anchor Position
-////        this.myTopicPane.getCaret().setDot(Integer.valueOf(ePos));
-////        this.myTopicPane.scrollRectToVisible(this.myTopicPane.getVisibleRect());
-////        this.myTopicPane.repaint();
-//    }
+    private void updateTopicPaneAnchorStatus(String topicID, IndexedAnchor selectedAnchorOLNameSA, String lang) {
+        // currAnchorSCRSet: [0]:Anchor_Name, [1]:Offset, [2]:Offset + Length
+        String[] currAnchorSCRSet = myFOLMatcher.getSCRAnchorPosSA(this.myTopicPane, topicID, selectedAnchorOLNameSA, myFOLMatcher.getFullXmlTxt(), lang);
+        String sPos = currAnchorSCRSet[1];
+        String ePos = currAnchorSCRSet[2];
+        updateTopicHighlighter(sPos + "_" + ePos);
+        // Auto Scrolling to Anchor Position
+        this.myTopicPane.getCaret().setDot(Integer.valueOf(ePos));
+        this.myTopicPane.scrollRectToVisible(this.myTopicPane.getVisibleRect());
+        this.myTopicPane.repaint();
+    }
     // 5) Update Link Text Pane & BEP
 
     private void updateLinkPaneBepStatus(String[] BepOIDSA) {
@@ -196,28 +196,28 @@ public class tabTxtPaneManager {
 //        }
 //    }
 
-//    private void updateTopicHighlighter(String currSCRSEPos) {
-//        String[] scrPosSA = currSCRSEPos.split("_");
-//        Highlighter topicHighlighter = this.myTopicPane.getHighlighter();
-//        Highlight[] highlights = topicHighlighter.getHighlights();
-//        int[] achorSCRPos = new int[]{Integer.valueOf(scrPosSA[0]), Integer.valueOf(scrPosSA[1])};
-//        for (int i = 0; i < highlights.length; i++) {
-//            try {
-//                int sPos = highlights[i].getStartOffset();
-//                int ePos = highlights[i].getEndOffset();
-//                if (achorSCRPos[0] == sPos && achorSCRPos[1] == ePos) {
-//                    topicHighlighter.removeHighlight(highlights[i]);
-//                    Object anchorHighlightRef = topicHighlighter.addHighlight(sPos, ePos, painters.getSelectedPainter());
-//                } else {
-//                    topicHighlighter.removeHighlight(highlights[i]);
-//                    Object anchorHighlightRef = topicHighlighter.addHighlight(sPos, ePos, painters.getAnchorPainter());
-//                }
-//            } catch (BadLocationException ex) {
-//                Logger.getLogger(tabTxtPaneManager.class.getName()).log(Level.SEVERE, null, ex);
-//            }
-//        }
-//        this.myTopicPane.repaint();
-//    }
+    private void updateTopicHighlighter(String currSCRSEPos) {
+        String[] scrPosSA = currSCRSEPos.split("_");
+        Highlighter topicHighlighter = this.myTopicPane.getHighlighter();
+        Highlight[] highlights = topicHighlighter.getHighlights();
+        int[] achorSCRPos = new int[]{Integer.valueOf(scrPosSA[0]), Integer.valueOf(scrPosSA[1])};
+        for (int i = 0; i < highlights.length; i++) {
+            try {
+                int sPos = highlights[i].getStartOffset();
+                int ePos = highlights[i].getEndOffset();
+                if (achorSCRPos[0] == sPos && achorSCRPos[1] == ePos) {
+                    topicHighlighter.removeHighlight(highlights[i]);
+                    Object anchorHighlightRef = topicHighlighter.addHighlight(sPos, ePos, painters.getSelectedPainter());
+                } else {
+                    topicHighlighter.removeHighlight(highlights[i]);
+                    Object anchorHighlightRef = topicHighlighter.addHighlight(sPos, ePos, painters.getAnchorPainter());
+                }
+            } catch (BadLocationException ex) {
+                Logger.getLogger(tabTxtPaneManager.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+        this.myTopicPane.repaint();
+    }
 
     private void setTextPaneContent(String xmlFilePath, boolean isTopicText) {
         if (!xmlFilePath.equals("")) {

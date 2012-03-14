@@ -520,7 +520,7 @@ public class topicPaneMouseListener implements MouseInputListener {
             int aEndPoint = Integer.valueOf(thisAnchorSA[4]);
             int extLength = 0;
             
-            if (thisAnchorSA[5] != null)
+            if (thisAnchorSA[5] != null && !thisAnchorSA[5].equals("null"))
             	extLength = Integer.valueOf(thisAnchorSA[5]);
             
             if (extLength > 0)
