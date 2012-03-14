@@ -133,7 +133,7 @@ public class paneTableMouseListener extends MouseAdapter {
                     thisAnchorSet = subAnchorKeyObj.toString().trim();
                     Vector<Bep> bepV = subAnchorHT.get(subAnchorKeyObj);
                     for (Bep thisBepSA : bepV) {
-                        thisBEPSet = thisBepSA.offsetToString() + "_" + thisBepSA.startPToString();
+                        thisBEPSet = thisBepSA.offsetToString() + "_" + thisBepSA.getFileId()/*thisBepSA.startPToString()*/;
                         String[] tabSA = new String[]{thisTopicID, thisPoolAnchorSet, thisAnchorSet, thisBEPSet};
                         TABIndice.put(String.valueOf(rowCounter), tabSA);
                         rowCounter++;

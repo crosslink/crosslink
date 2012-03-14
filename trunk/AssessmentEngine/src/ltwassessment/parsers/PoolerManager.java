@@ -1064,25 +1064,27 @@ public class PoolerManager {
                         thisAnchorSet = thisAnchorProperty[0] + "_" + thisAnchorProperty[1];
                         subAnchorsToBepsHT = new Hashtable<String, Vector<Bep>>();
                         
-//                        if (!AppResource.forAssessment) { // validation
-////                            thisSubAnchorProperty = new String[4];
-////                            System.arraycopy(thisAnchorProperty, 0, thisSubAnchorProperty, 0, 4);
-////                            subAnchorsVbyTopic.add(thisSubAnchorProperty);
-////                            thisSubAnchorSet = thisSubAnchorProperty[0] + "_" + thisSubAnchorProperty[1];
-////                            toBepsVbySubAnchor = new Vector<IndexedAnchor>();                        	
-//
-//                        	parsedSubanchor = new AssessedAnchor(aOffset, aLength, thisAnchorProperty[2]);
-//                        	parsedSubanchor.setStatus(Integer.valueOf(0));
-//                        	parsedSubanchor.setExtendedLength(aExtLength);
-//                        	subAnchorsVbyTopic.add(parsedSubanchor);
-//                        }
-//                        else {
+//                       else {
 //                        	parsedAnchor = new IndexedAnchor(aOffset, aLength, thisAnchorProperty[2]);
                         	parsedAnchor = new IndexedAnchor(aOffset, aLength, anchorText);
                         	parsedAnchor.setStatus(Integer.valueOf(status));
                         	parsedAnchor.setExtendedLength(aExtLength); 	
 //                        	anchorsVbyTopic.add(parsedAnchor);
 //                        }
+                        	
+                        if (!AppResource.forAssessment) { // validation
+////                            thisSubAnchorProperty = new String[4];
+////                            System.arraycopy(thisAnchorProperty, 0, thisSubAnchorProperty, 0, 4);
+////                            subAnchorsVbyTopic.add(thisSubAnchorProperty);
+////                            thisSubAnchorSet = thisSubAnchorProperty[0] + "_" + thisSubAnchorProperty[1];
+////                            toBepsVbySubAnchor = new Vector<IndexedAnchor>();                        	
+//
+                        	parsedSubanchor = new AssessedAnchor(aOffset, aLength, anchorText);
+	                       	parsedSubanchor.setStatus(Integer.valueOf(0));
+                        	parsedSubanchor.setExtendedLength(aExtLength);
+                        	subAnchorsVbyTopic.add(parsedSubanchor);
+                        	parsedAnchor.addChildAnchor(parsedSubanchor);
+                        }
                         	
                         index = 0;
                     } else if (tagName.equals("subanchor")) {
@@ -1164,18 +1166,18 @@ public class PoolerManager {
                         bep.setFileId(thisToBepProperty[1]);
                         bep.setIndex(index++);
                         
-                        if (AppResource.forAssessment) {
+//                       if (AppResource.forAssessment) {
 	                        if (parsedSubanchor.getStatus() == -1) {
 		                        if (bep.getRel() == 0)
 		                        		bep.setRel(Bep.IRRELEVANT);
 	                        }
 	                        parsedSubanchor.addBep(bep);
 	                        bep.setAssociatedAnchor(parsedSubanchor);
-                        }
-                        else {
-	                        parsedAnchor.addBep(bep);
-	                        bep.setAssociatedAnchor(parsedAnchor);
-                        }
+//                        }
+//                        else {
+//	                        parsedAnchor.addBep(bep);
+//	                        bep.setAssociatedAnchor(parsedAnchor);
+//                        }
                     } else if (tagName.equals("incominglinks")) {
                         isIncoming = true;
                         bepOffsetVbyTopic = new Vector<String[]>();
@@ -1227,11 +1229,13 @@ public class PoolerManager {
                     } else if (tagName.equals("anchor")) {
                     	assert (anchorsHT.get(thisAnchorSet) == null);
                         anchorsHT.put(thisAnchorSet, subAnchorsToBepsHT);
-                        if (AppResource.forAssessment) {
+                        if (!AppResource.forAssessment) {
                         	subAnchorsToBepsHT.put(parsedSubanchor.getOffset() + "_" + parsedSubanchor.getLength(), parsedSubanchor.getBeps()/*toBepsVbySubAnchor*/);
                         }
 //                        else {
-                        	if (parsedAnchor.getChildrenAnchors().size() > 0)
+//                        	if ((AppResource.forAssessment && parsedAnchor.getChildrenAnchors().size() > 0)
+//                        			|| (!AppResource.forAssessment && parsedAnchor.getBeps().size() > 0))
+							if (parsedAnchor.getChildrenAnchors().size() > 0)
                         		anchorsVbyTopic.add(parsedAnchor);
                         	else
                         		System.err.println("Empty anchor: " + parsedAnchor.toString());

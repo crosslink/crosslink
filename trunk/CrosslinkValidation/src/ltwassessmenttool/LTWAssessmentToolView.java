@@ -2455,6 +2455,8 @@ public class LTWAssessmentToolView extends FrameView {
 //            currTopicFilePath = rscManager.getTeAraCollectionFolder() + rscManager.getTeAraFilePathByName(currTopicID + ".xml");
 //        }
         rscManager.updateCurrTopicFilePath(currTopicFilePath);
+        rscManager.updateTopicID(currTopicID);
+        FOLTXTMatcher.getInstance().getCurrFullXmlText();
         // ---------------------------------------------------------------------
         // SET Topic Text Pane Content
         setTextPaneContent(currTopicFilePath);

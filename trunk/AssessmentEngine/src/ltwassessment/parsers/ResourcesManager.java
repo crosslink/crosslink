@@ -1828,7 +1828,8 @@ public class ResourcesManager {
     
     public IndexedAnchor getBepsPoolByAnchor(int index) {
     	String topicKey = PoolerManager.OUTGOING_KEY + getTopicID();
-    	return pooler.getTopicAllAnchors().get(topicKey).get(index);
+    	Hashtable<String, Vector<IndexedAnchor>> anchors = pooler.getTopicAllAnchors();
+    	return anchors.get(topicKey).get(index);
     }
     
     public Hashtable<String, Hashtable<String, Vector<Bep>>> getBepsByTopic(String topicKey) {
