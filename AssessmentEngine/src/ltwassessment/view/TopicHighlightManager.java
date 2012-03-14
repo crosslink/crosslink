@@ -169,7 +169,7 @@ public class TopicHighlightManager {
 //          String prePBepL = preBepOLSEStatusSA[1];
 //String prePBepS = preBepOLSEStatusSA[2];
 //String prePBepE = preBepOLSEStatusSA[3];
-			AssessedAnchor currentAnchor = link.getAssociatedAnchor();
+			AssessedAnchor currentAnchor = (AssessedAnchor)link.getAssociatedAnchor();
 			String prePBepO = currentAnchor.offsetToString(); //preAnchorOLSEStatusSA[0];
 			String prePBepL = currentAnchor.lengthToString(); //preAnchorOLSEStatusSA[1];
 			String prePBepS = currentAnchor.screenPosStartToString(); //preAnchorOLSEStatusSA[2];

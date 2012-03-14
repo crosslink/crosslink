@@ -36,6 +36,7 @@ import ltwassessment.assessment.AssessedAnchor;
 import ltwassessment.assessment.Bep;
 import ltwassessment.assessment.CurrentFocusedAnchor;
 import ltwassessment.assessment.IndexedAnchor;
+import ltwassessment.assessment.InterfaceAnchor;
 import ltwassessment.parsers.ResourcesManager;
 import ltwassessment.parsers.FOLTXTMatcher;
 import ltwassessment.utility.FileUtil;
@@ -148,7 +149,7 @@ public class ResourcesManager {
 //        wikipediaPool = resourceMap.getString("pool.wikipedia");
 //        teAraPool = resourceMap.getString("pool.teara");     
         
-//        if (AppResource.forValidationOrAssessment)
+//        if (AppResource.forAssessment)
 //        	pooler = PoolerManager.getInstance();
     }
     
@@ -1434,7 +1435,7 @@ public class ResourcesManager {
     	
     	link = forwardOrBackward ? currentLink.getAssociatedAnchor().getNextLink(currentLink, nextUnassessed) : currentLink.getAssociatedAnchor().getPreviousLink(currentLink, nextUnassessed);
     	if (link == null) {
-    		subanchor = forwardOrBackward ? currentLink.getAssociatedAnchor().getParent().getNext(currentLink.getAssociatedAnchor(), nextUnassessed) : currentLink.getAssociatedAnchor().getParent().getPrevious(currentLink.getAssociatedAnchor(), nextUnassessed);
+    		subanchor = (AssessedAnchor) (forwardOrBackward ? currentLink.getAssociatedAnchor().getParent().getNext(currentLink.getAssociatedAnchor(), nextUnassessed) : currentLink.getAssociatedAnchor().getParent().getPrevious(currentLink.getAssociatedAnchor(), nextUnassessed));
     		if (subanchor != null)
     			link = forwardOrBackward ? subanchor.getNextLink(null, nextUnassessed) : subanchor.getPreviousLink(null, nextUnassessed);
     	}
@@ -1447,7 +1448,7 @@ public class ResourcesManager {
     	if (link == null) {
 			anchor = forwardOrBackward ? getNextAnchor(currentLink.getAssociatedAnchor().getParent(), nextUnassessed) : getPreviousAnchor(currentLink.getAssociatedAnchor().getParent(), nextUnassessed);
 			if (anchor != null) {
-				subanchor = forwardOrBackward ? anchor.getNext(null, nextUnassessed) : anchor.getPrevious(null, nextUnassessed);
+				subanchor = (AssessedAnchor) (forwardOrBackward ? anchor.getNext(null, nextUnassessed) : anchor.getPrevious(null, nextUnassessed));
 				if (subanchor != null)
 					link = forwardOrBackward ? subanchor.getNextLink(null, nextUnassessed) : subanchor.getPreviousLink(null, nextUnassessed);
 			}
@@ -1616,7 +1617,7 @@ public class ResourcesManager {
 //                log("bepLinksOSIDStatusVSA: " + bepLinksOSIDStatusVSA.size());
                
                 int subanchorIndex = 0;
-                for (AssessedAnchor subanchor : pAnchorOLSA.getParent().getChildrenAnchors()) {
+                for (InterfaceAnchor subanchor : pAnchorOLSA.getParent().getChildrenAnchors()) {
                 	if (subanchor == pAnchorOLSA)
                 		break;
                 	++subanchorIndex;
@@ -1946,8 +1947,8 @@ public class ResourcesManager {
         // RETURN new String[]{Completed, Total}
     	int status = poolAnchorOL.getStatus();
     	int subStatus = Bep.UNASSESSED;
-    	for (AssessedAnchor subanchor : poolAnchorOL.getChildrenAnchors()) {
-    		subStatus = getPoolSubanchorCompletedStatus(topicID, subanchor);
+    	for (InterfaceAnchor subanchor : poolAnchorOL.getChildrenAnchors()) {
+    		subStatus = getPoolSubanchorCompletedStatus(topicID, (AssessedAnchor)subanchor);
     			
     		if (subStatus == Bep.UNASSESSED) {
     			status = Bep.UNASSESSED;
@@ -2273,7 +2274,7 @@ public class ResourcesManager {
         // ---------------------------------------------------------------------
         // Link BEP
         // convery BEP Offset into SCR Start Point
-        String currBepSCRS = this.pooler.getPoolAnchorBepLinkStartP(topicID, currBepSA.getAssociatedAnchor()/*new String[]{currAnchorOLSA[0], currAnchorOLSA[1]}*/, bepFileID);
+        String currBepSCRS = this.pooler.getPoolAnchorBepLinkStartP(topicID, (AssessedAnchor)currBepSA.getAssociatedAnchor()/*new String[]{currAnchorOLSA[0], currAnchorOLSA[1]}*/, bepFileID);
         currTopicABepSIDStatus = new String[]{currBepSCRS, bepFileID, bepStatus};
 
 //        FOLTXTMatcher folMatcher = FOLTXTMatcher.getInstance();

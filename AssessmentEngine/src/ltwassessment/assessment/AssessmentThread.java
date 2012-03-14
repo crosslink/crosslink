@@ -267,7 +267,7 @@ public class AssessmentThread extends Thread {
         else
         	AssessmentThread.myPoolUpdater.updateTopicAnchorLinkRel(currentLink);
         
-        currentLink.getAssociatedAnchor().checkStatus();
+        currentLink.getAssociatedAnchor().getStatus();
 //        int status = currentLink.getAssociatedAnchor().getStatus();
 //        if (currentLink.getAssociatedAnchor().checkStatus() == AssessedAnchor.ASSESSMENT_FINISHED_YES && status != Bep.RELEVANT) {
 //        	currentLink.getAssociatedAnchor().setStatus(Bep.RELEVANT);
@@ -370,7 +370,7 @@ public class AssessmentThread extends Thread {
             
 
             
-            AssessedAnchor previous =   currentLink.getAssociatedAnchor();
+            AssessedAnchor previous =   (AssessedAnchor) currentLink.getAssociatedAnchor();
             LTWAssessmentToolControler.getInstance().goNextLink(true, !isCtrlKeyDown());
 //            CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(previous, link.getAssociatedAnchor(), link);
 //            os.setTABFieldValues(link);
@@ -406,8 +406,8 @@ public class AssessmentThread extends Thread {
         else {
         	IndexedAnchor parent = processingAnchor.getParent();
 //        	parent.setStatus(Bep.IRRELEVANT);
-            for (AssessedAnchor subanchor : parent.getChildrenAnchors())
-            	LTWAssessmentToolControler.getInstance().setSubanchorIrrelevant(subanchor);
+            for (InterfaceAnchor subanchor : parent.getChildrenAnchors())
+            	LTWAssessmentToolControler.getInstance().setSubanchorIrrelevant((AssessedAnchor)subanchor);
             
             parent.statusCheck();
     		TopicHighlightManager.getInstance().update(parent);

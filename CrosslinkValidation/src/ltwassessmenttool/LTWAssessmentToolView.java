@@ -157,7 +157,7 @@ public class LTWAssessmentToolView extends FrameView {
         super(app);
         
         // update resource manager first thing with the app starting up
-        AppResource.forValidationOrAssessment = false;
+        AppResource.forAssessment = false;
         AppResource.getInstance().setResourceMap(org.jdesktop.application.Application.getInstance(ltwassessmenttool.LTWAssessmentToolApp.class).getContext().getResourceMap(ltwassessmenttool.LTWAssessmentToolView.class));
 
         initComponents();
@@ -2449,7 +2449,7 @@ public class LTWAssessmentToolView extends FrameView {
         currTopicID = topicFileIDsV.elementAt(Integer.valueOf(lastTopicIDIndex));
 //        if (isTopicWikipedia) {
             // current Topic
-            currTopicFilePath = wikipediaTopicFileDir + AppResource.sourceLang + File.separator +  currTopicID + ".xml";
+         currTopicFilePath = AppResource.getInstance().getTopicXmlPathNameByFileID(currTopicID);//wikipediaTopicFileDir + AppResource.sourceLang + File.separator +  currTopicID + ".xml";
 //        } else {
 //            // need to find out from TeAra Collection Folders
 //            currTopicFilePath = rscManager.getTeAraCollectionFolder() + rscManager.getTeAraFilePathByName(currTopicID + ".xml");

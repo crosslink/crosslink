@@ -401,7 +401,7 @@ public class PoolUpdater {
     }
 
     public void updateTopicSubAnchorLinkRel(String topicID, Bep link) {
-    	AssessedAnchor poolAnchorOL = link.getAssociatedAnchor();
+    	AssessedAnchor poolAnchorOL = (AssessedAnchor) link.getAssociatedAnchor();
         String targetID = link.getFileId();
         String tbRelStatus = link.relString();
 

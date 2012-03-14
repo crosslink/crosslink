@@ -438,7 +438,7 @@ public class PaneTableIndexing {
 	                            String[] myTABLine = new String[4];
 	                            myTABLine[0] = getTopicIDNamePair(thisTopic);
 	                            myTABLine[1] = getAnchorOLNamePair(thisTopic, thisAnchor);
-	                            if (AppResource.forValidationOrAssessment)
+	                            if (AppResource.forAssessment)
 	                            	myTABLine[2] = getAnchorOLNamePair(thisTopic, thisSubAnchor);
 	                            else
 	                            	myTABLine[2] = bepSA.getTargetLang(); //[3];
@@ -448,7 +448,7 @@ public class PaneTableIndexing {
 	                            String[] myTABWOTextLine = new String[4];
 	                            myTABWOTextLine[0] = thisTopic;
 	                            myTABWOTextLine[1] = thisAnchor;
-	                            if (AppResource.forValidationOrAssessment)
+	                            if (AppResource.forAssessment)
 	                            	 myTABWOTextLine[2] = thisSubAnchor;
 	                            else
 	                            	 myTABWOTextLine[2] = bepSA.getTargetLang(); //[3];
@@ -458,63 +458,6 @@ public class PaneTableIndexing {
                     }
                 }
             }
-//        } else {
-//            // Topic --> incoming --> bep --> anchorOL --> fileID
-//            // Hashtable<outgoing : topicFileID, Vector<[0]:Offset, [1]:Length, [2]:Anchor_Name>>
-//            Hashtable<String, Vector<String>> myTopicBepOHT = new Hashtable<String, Vector<String>>();
-//            Vector<String> myBepOV = new Vector<String>();
-//            Enumeration topicKeyEnu = poolIncomingData.keys();
-//            while (topicKeyEnu.hasMoreElements()) {
-//                // Get Topic ID
-//                Object topicKeyObj = topicKeyEnu.nextElement();
-//                if (!myTopicIDsV.contains(topicKeyObj.toString())) {
-//                    myTopicIDsV.add(topicKeyObj.toString());
-//                }
-//                // Get BEP Offset
-//                myBepOV = new Vector<String>();
-//                Hashtable<String, Vector<String[]>> bepAnchorsHT = poolIncomingData.get(topicKeyObj);
-//                Enumeration bepKeyEnu = bepAnchorsHT.keys();
-//                while (bepKeyEnu.hasMoreElements()) {
-//                    Object bepOObj = bepKeyEnu.nextElement();
-//                    if (!myBepOV.contains(bepOObj.toString())) {
-//                        myBepOV.add(bepOObj.toString());
-//                    }
-//                }
-//                Vector<String> mySortedBepOV = sortVectorNumbers(myBepOV);
-//                myTopicBepOHT.put(topicKeyObj.toString(), mySortedBepOV);
-//            }
-//            Collections.sort(myTopicIDsV);
-//            for (String thisTopicID : myTopicIDsV) {
-//                Hashtable<String, Vector<String[]>> bepAnchorsHT = poolIncomingData.get(thisTopicID);
-//                Vector<String> bepOV = myTopicBepOHT.get(thisTopicID);
-//                for (String thisBepOffset : bepOV) {
-//                    // Bep(1256)
-//                    Vector<String[]> bepAnchorsV = bepAnchorsHT.get(thisBepOffset);
-//                    for (String[] anchorSetSA : bepAnchorsV) {
-//                        String anchorOffset = anchorSetSA[0];
-//                        String anchorLength = anchorSetSA[1];
-//                        String anchorName = anchorSetSA[2];
-//                        String xmlFileID = anchorSetSA[3];
-//                        // add to TABSet
-//                        // Topic(22560) : Anchor(1114_19) : Subanchor(1114_13) : BEP([0]:1538, [1]:123017)
-//                        // With Text
-//                        String[] myTBALine = new String[4];
-//                        myTBALine[0] = getTopicIDNamePair(thisTopicID);
-//                        myTBALine[1] = thisBepOffset;
-//                        myTBALine[2] = anchorOffset + "_" + anchorLength + " : " + anchorName;
-//                        myTBALine[3] = getLinkXmlFileIdNamePair(xmlFileID);
-//                        myTableSetV.add(myTBALine);
-//                        // Without Text
-//                        String[] myTBAWOTextLine = new String[4];
-//                        myTBAWOTextLine[0] = thisTopicID;
-//                        myTBAWOTextLine[1] = thisBepOffset;
-//                        myTBAWOTextLine[2] = anchorOffset + "_" + anchorLength;
-//                        myTBAWOTextLine[3] = xmlFileID;
-//                        paneTableRowIndexWOText.add(myTBAWOTextLine);
-//                    }
-//                }
-//            }
-//        }
         return myTableSetV;
     }
     // </editor-fold>
@@ -634,22 +577,10 @@ public class PaneTableIndexing {
                     String OLSet = thisAnchorSA.offsetToString().trim() + "_" + thisAnchorSA.lengthToString().trim();
                     if (OLSet.equals(anchorOL)) //{
                         return myPair = anchorOL + " : " + thisAnchorSA.getName()/*[2]*/.trim();
-//                    } else {
-////                        String[] anchorOLSA = anchorOL.split("_");
-////                        int sPoint = Integer.valueOf(thisAnchorSA[0].trim());
-////                        int ePoint = Integer.valueOf(thisAnchorSA[0].trim()) + Integer.valueOf(thisAnchorSA[1].trim());
-////                        int thisPoint = Integer.valueOf(anchorOLSA[0].trim());
-////                        int thisLength = Integer.valueOf(anchorOLSA[1].trim());
-////                        if (thisPoint >= sPoint && thisPoint <= ePoint) {
-////                            String anchorName = thisAnchorSA[2].trim().substring(thisPoint - sPoint, (thisPoint - sPoint) + thisLength);
-////                            return myPair = anchorOL + " : " + anchorName;
-////                        }
-//                    }
-//                    return myPair = anchorOL + " : " + thisAnchorSA[2].trim();
                 }
             }
         }
-        return myPair = "Error: " + anchorOL + " not found! ";
+        return myPair = "Error, " + anchorOL + " not found! ";
     }
 
     private String getTopicIDNamePair(String topicFileID) {

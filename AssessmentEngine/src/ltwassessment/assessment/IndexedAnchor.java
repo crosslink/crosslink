@@ -14,7 +14,7 @@ import ltwassessment.utility.PoolUpdater;
 import ltwassessment.utility.highlightPainters;
 import ltwassessment.view.TopicHighlightManager;
 
-public class IndexedAnchor extends Anchor {
+public class IndexedAnchor extends Anchor implements InterfaceAnchor {
 	public final static int UNINITIALIZED_VALUE = -1; 
 	
 	public static final int ASSESSMENT_FINISHED_YES = 4;
@@ -28,11 +28,13 @@ public class IndexedAnchor extends Anchor {
     protected int screenPosStart = -1;
     protected int screenPosEnd = -1;
 	
-	private Vector<AssessedAnchor> childrenAnchors = new Vector<AssessedAnchor>();
+	private Vector<InterfaceAnchor> childrenAnchors = new Vector<InterfaceAnchor>();
 	
 	private Vector<Object> anchorHighlightReferences = new Vector<Object>();
 	
 	String[] scrFOL = null;
+	
+	protected Vector<Bep> beps = new Vector<Bep>();
 
 	public IndexedAnchor(int offset, int length, String name) {
 		super(offset, length, name);
@@ -56,6 +58,14 @@ public class IndexedAnchor extends Anchor {
 		super(0, 0, "");
 	}
 
+	public void addBep(Bep bep) {
+		beps.add(bep);
+	}
+	
+	public Vector<Bep> getBeps() {
+		return beps;
+	}	
+	
 	/**
 	 * @return the status
 	 */
@@ -160,10 +170,10 @@ public class IndexedAnchor extends Anchor {
 	}
 	
 	public void addChildAnchor(IndexedAnchor anchor) {
-		childrenAnchors.add((AssessedAnchor) anchor);
+		childrenAnchors.add((InterfaceAnchor) anchor);
 	}
 
-	public Vector<AssessedAnchor> getChildrenAnchors() {
+	public Vector<InterfaceAnchor> getChildrenAnchors() {
 		return childrenAnchors;
 	}
 	
@@ -215,7 +225,7 @@ public class IndexedAnchor extends Anchor {
 		}	
 	}
 	
-	public void setToCurrentAnchor(Highlighter txtPaneHighlighter, highlightPainters painters, AssessedAnchor currAnchorSE) {	
+	public void setToCurrentAnchor(Highlighter txtPaneHighlighter, highlightPainters painters, InterfaceAnchor currAnchorSE) {	
     	int subanchorScreenStart = currAnchorSE.getScreenPosStart(); 
     	int subanchorScreenEnd = currAnchorSE.getScreenPosEnd(); 
     	Object anchorHighlightReference = null;
@@ -273,10 +283,10 @@ public class IndexedAnchor extends Anchor {
 	    } 
 	}
 	
-	public AssessedAnchor getNext(AssessedAnchor currentAnchor, boolean needNotFinished) {
+	public InterfaceAnchor getNext(InterfaceAnchor currentAnchor, boolean needNotFinished) {
     	int i = 0;
-    	AssessedAnchor anchor = null;
-    	AssessedAnchor  unassessedAnchor = null;
+    	InterfaceAnchor anchor = null;
+    	InterfaceAnchor  unassessedAnchor = null;
     	if (currentAnchor != null)
 	    	for (; i < getChildrenAnchors().size(); ++i) {
 	    		anchor = getChildrenAnchors().get(i);
@@ -306,10 +316,10 @@ public class IndexedAnchor extends Anchor {
     	return needNotFinished ? unassessedAnchor : anchor;
 	}
 	
-	public AssessedAnchor getPrevious(AssessedAnchor currentAnchor, boolean needNotFinished) {		
+	public InterfaceAnchor getPrevious(InterfaceAnchor currentAnchor, boolean needNotFinished) {		
     	int i = getChildrenAnchors().size() - 1;
-    	AssessedAnchor anchor = null;
-    	AssessedAnchor  unassessedAnchor = null;
+    	InterfaceAnchor anchor = null;
+    	InterfaceAnchor  unassessedAnchor = null;
     	if (currentAnchor != null)
 	    	for (; i > -1; --i) {
 	    		anchor = getChildrenAnchors().get(i);
@@ -354,7 +364,7 @@ public class IndexedAnchor extends Anchor {
 //				if (offset == 1750 || name.equals("試驗"))
 //					System.out.println("Stop here");
 				
-				for (AssessedAnchor subanchor : getChildrenAnchors()) {
+				for (InterfaceAnchor subanchor : getChildrenAnchors()) {
 					if (subanchor.checkStatus() == ASSESSMENT_FINISHED_NO) {
 		//				finished = ASSESSMENT_FINISHED_NO;
 						rel = Bep.UNASSESSED;
@@ -387,7 +397,35 @@ public class IndexedAnchor extends Anchor {
 	}
 
 	public void markIrrevlent() {
-		for (AssessedAnchor anchor : this.getChildrenAnchors())
+		for (InterfaceAnchor anchor : this.getChildrenAnchors())
 			anchor.markAllLinksIrrevlent();
+	}
+
+	@Override
+	public IndexedAnchor getParent() {
+		return null;
+	}
+
+	@Override
+	public void markAllLinksIrrevlent() {
+		
+	}
+
+	@Override
+	public int checkStatus() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public Bep getPreviousLink(Bep currentLink, boolean nextUnassessed) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Bep getNextLink(Bep currentLink, boolean nextUnassessed) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }
