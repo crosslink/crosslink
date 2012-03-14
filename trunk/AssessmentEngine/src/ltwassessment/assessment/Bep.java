@@ -26,7 +26,7 @@ public class Bep extends Observable {
 	
 	private int index;
 	
-	AssessedAnchor associatedAnchor = null;
+	InterfaceAnchor associatedAnchor = null;
 	
 	public Bep(int offset, int startP, String tbFileID, int rel) {
 		init();
@@ -172,11 +172,11 @@ public class Bep extends Observable {
 		this.index = index;
 	}
 
-	public AssessedAnchor getAssociatedAnchor() {
+	public InterfaceAnchor getAssociatedAnchor() {
 		return associatedAnchor;
 	}
 
-	public void setAssociatedAnchor(AssessedAnchor associatedAnchor) {
+	public void setAssociatedAnchor(InterfaceAnchor associatedAnchor) {
 		this.associatedAnchor = associatedAnchor;
 	}
 

@@ -6,7 +6,7 @@ import ltwassessment.parsers.PoolerManager;
 import ltwassessment.parsers.ResourcesManager;
 
 public class AssessedAnchor extends IndexedAnchor {   
-	Vector<Bep> beps = new Vector<Bep>();
+	
 	
 	IndexedAnchor parent = null;
 
@@ -27,13 +27,6 @@ public class AssessedAnchor extends IndexedAnchor {
 		this.parent = parent;
 	}
 
-	public void addBep(Bep bep) {
-		beps.add(bep);
-	}
-	
-	public Vector<Bep> getBeps() {
-		return beps;
-	}	
 	
 	@Override
 	public int getScreenPosStart() {

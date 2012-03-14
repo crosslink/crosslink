@@ -228,10 +228,10 @@ public class topicPaneMouseListener implements MouseInputListener {
                 
                 AssessedAnchor next = null;
                 if (preTHyperOLSEStatus.getParent() == currSCRSEName) {
-                	next = preTHyperOLSEStatus.getParent().getNext(preTHyperOLSEStatus, false);
+                	next = (AssessedAnchor) preTHyperOLSEStatus.getParent().getNext(preTHyperOLSEStatus, false);
                 }
                 else {
-					next = currSCRSEName.getChildrenAnchors().get(0);
+					next = (AssessedAnchor) currSCRSEName.getChildrenAnchors().get(0);
                 }
 	                // -------------------------------------------------------------
 	                // 1) Highlight Anchor/BEP + Auto Scrolling
@@ -372,7 +372,7 @@ public class topicPaneMouseListener implements MouseInputListener {
         // ---------------------------------------------------------------------
         // 3) update NAV Indices in toolResources XML
         this.myRSCManager.updateTABNavIndex(this.currTopicID, bepInfo.getAssociatedAnchor().getParent(), bepInfo);
-        CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(preTHyperOLSEStatus, bepInfo.getAssociatedAnchor(), bepInfo);
+        CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(preTHyperOLSEStatus, (AssessedAnchor)bepInfo.getAssociatedAnchor(), bepInfo);
 //        CurrentFocusedAnchor.getCurrentFocusedAnchor().setCurrentAnchorProperty(pAnchorO, pAnchorOL, currSCRSEName.screenPosStartToString(), currSCRSEName.screenPosStartToString(), pAnchorStatus, currSCRSEName.extendedLengthToString()/*, currSCRSEName.offsetIndexToString()*/);
         // ---------------------------------------------------------------------
 
@@ -399,7 +399,7 @@ public class topicPaneMouseListener implements MouseInputListener {
         } else {
             log("CURR PAnchor is NOT PRE PAnchor...");
             
-            AssessmentThread.setProcessingAnchor(currSCRSEName.getChildrenAnchors().firstElement());
+            AssessmentThread.setProcessingAnchor((AssessedAnchor) currSCRSEName.getChildrenAnchors().firstElement());
             AssessmentThread.setTask(AssessmentThread.EVENT_SET_SUBANCHORS_IRRELEVANT);
             // CURR PAnchor is NOT PRE PAnchor
             // -----------------------------------------------------------------
@@ -518,7 +518,10 @@ public class topicPaneMouseListener implements MouseInputListener {
         	// this is screen pos
             int aStartPoint = Integer.valueOf(thisAnchorSA[3]);
             int aEndPoint = Integer.valueOf(thisAnchorSA[4]);
-            int extLength = Integer.valueOf(thisAnchorSA[5]);
+            int extLength = 0;
+            
+            if (thisAnchorSA[5] != null)
+            	extLength = Integer.valueOf(thisAnchorSA[5]);
             
             if (extLength > 0)
             	aEndPoint += extLength;

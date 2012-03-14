@@ -18,7 +18,7 @@ import ltwassessment.font.AdjustFont;;
 public class AppResource {
 	
 	public static AppResource instance = null;
-    public static boolean forValidationOrAssessment = false;
+    public static boolean forAssessment = false;
     public static String targetLang = "zh"; // zh, ja, ko
     public static String sourceLang = "en"; // zh, ja, ko
     

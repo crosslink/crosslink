@@ -339,7 +339,7 @@ public class LTWAssessmentToolControler {
 	// 1) Get the NEXT Anchor O, L, S, E, Status + its BEP link O, S, ID, Status
 	//    With TAB Nav Update --> NEXT TAB
 	Bep nextAnchorBepLinkVSA = rscManager.getPreTABWithUpdateNAV(currTopicID, currALinkOIDSA, false);
-	CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(currALinkOIDSA.getAssociatedAnchor(), nextAnchorBepLinkVSA.getAssociatedAnchor(), nextAnchorBepLinkVSA);
+	CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor((AssessedAnchor)currALinkOIDSA.getAssociatedAnchor(), (AssessedAnchor)nextAnchorBepLinkVSA.getAssociatedAnchor(), nextAnchorBepLinkVSA);
 
     }
     
@@ -376,7 +376,7 @@ public class LTWAssessmentToolControler {
 			//  return null;
 			}
 			else
-				CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(currentBep.getAssociatedAnchor(), nextAnchorBepLinkVSA.getAssociatedAnchor(), nextAnchorBepLinkVSA);
+				CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor((AssessedAnchor)currentBep.getAssociatedAnchor(), (AssessedAnchor)nextAnchorBepLinkVSA.getAssociatedAnchor(), nextAnchorBepLinkVSA);
     }
     
     public void assess(String topicID) {
@@ -547,7 +547,7 @@ public class LTWAssessmentToolControler {
          * 
          ************************************************************************/
 //        TopicHighlightManager.getInstance().update(null, CurrTopicATargetOID.getAssociatedAnchor());
-        CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(null, CurrTopicATargetOID.getAssociatedAnchor(), CurrTopicATargetOID);
+        CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(null, (AssessedAnchor)CurrTopicATargetOID.getAssociatedAnchor(), CurrTopicATargetOID);
         if (CurrTopicATargetOID.getRel() != Bep.UNASSESSED)
         	goNextLink(false, true);
     }

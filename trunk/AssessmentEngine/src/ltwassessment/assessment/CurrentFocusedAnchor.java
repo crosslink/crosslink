@@ -8,7 +8,7 @@ public class CurrentFocusedAnchor {
     
     private String screenAnchorText;
     
-    private AssessedAnchor anchor = null;
+    private InterfaceAnchor anchor = null;
     private Bep currentBep = null;
 
     private static CurrentFocusedAnchor currentFocusedAnchor = null;
@@ -52,7 +52,7 @@ public class CurrentFocusedAnchor {
 	}
 	    
     public AssessedAnchor getAnchor() {
-		return anchor;
+		return (AssessedAnchor) anchor;
 	}
 
 	public void setAnchor(AssessedAnchor previous, AssessedAnchor current, Bep bep) {
@@ -64,7 +64,7 @@ public class CurrentFocusedAnchor {
 			
 			this.anchor = current;
 			
-			TopicHighlightManager.getInstance().update(previous, anchor);
+			TopicHighlightManager.getInstance().update(previous, (AssessedAnchor)anchor);
 			TopicHighlightManager.getInstance().updateLinkPane(bep, currentBep == null || bep != currentBep);
 			
 			this.currentBep = bep;

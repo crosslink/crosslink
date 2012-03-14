@@ -23,11 +23,11 @@ public class SubmissionFormat {
 	}
 	
 	public static String getRootTag() {
-		return AppResource.forValidationOrAssessment ? "crosslink-assessment" : "crosslink-submission";
+		return AppResource.forAssessment ? "crosslink-assessment" : "crosslink-submission";
 	}
 	
 	public static String getOutgoingTag() {
-		return AppResource.forValidationOrAssessment ? "outgoinglinks" : "outgoing";
+		return AppResource.forAssessment ? "outgoinglinks" : "outgoing";
 	}
 	
 	public static String getOutgoingLinksTag() {
@@ -51,19 +51,19 @@ public class SubmissionFormat {
 	}
 
 	public static String getAftobeptag() {
-		return AppResource.forValidationOrAssessment ? "tobep" : afToBepTag;
+		return AppResource.forAssessment ? "tobep" : afToBepTag;
 	}
 
 	public static String getOffsetAttributeName() {
-		return AppResource.forValidationOrAssessment ? "aoffset" : "offset";
+		return AppResource.forAssessment ? "aoffset" : "offset";
 	}
 
 	public static String getLengthAttributeName() {
-		return AppResource.forValidationOrAssessment ? "alength" : "length";
+		return AppResource.forAssessment ? "alength" : "length";
 	}
 
 	public static String getTboffsetAttributeName() {
-		return AppResource.forValidationOrAssessment ? "tboffset" : "bep_offset";
+		return AppResource.forAssessment ? "tboffset" : "bep_offset";
 	}
 
 	public SubmissionFormat getInstance() {

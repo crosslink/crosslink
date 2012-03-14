@@ -116,7 +116,7 @@ public class Run<AnchorSet>{
 	}
 	
 	public void read(File runFile, boolean checkAnchors, String sourceLang, String targetLang, boolean needSorted) {
-        boolean forValidationOrAssessment = AppResource.forValidationOrAssessment;
+        boolean forValidationOrAssessment = AppResource.forAssessment;
         String afTitleTag = forValidationOrAssessment ? "crosslink-assessment" : "crosslink-submission";
         String afTopicTag = "topic";
         String afOutgoingTag = forValidationOrAssessment ? "outgoinglinks" : "outgoing";
