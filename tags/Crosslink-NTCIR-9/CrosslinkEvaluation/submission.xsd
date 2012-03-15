@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<schema targetNamespace="http://www.submissionRun.com" 
+        xmlns="http://www.w3.org/1999/XMLSchema" 
+        xmlns:submission="http://www.submissionRun.com" 
+> 
+
+  <attribute name="shoeSize"> 
+    <simpleType baseType="integer"> 
+      <minExclusive value="0" /> 
+      <maxInclusive value="20" /> 
+    </simpleType> 
+  </attribute> 
+
+  <attribute name="width"> 
+    <simpleType baseType="string"> 
+      <enumeration value="A" /> 
+      <enumeration value="B" /> 
+      <enumeration value="C" /> 
+      <enumeration value="D" /> 
+      <enumeration value="DD" /> 
+    </simpleType> 
+  </attribute>
+
+  <attribute name="brand"> 
+    <simpleType baseType="string"> 
+      <enumeration value="Nike" /> 
+      <enumeration value="Adidas" /> 
+      <enumeration value="Dr. Marten" /> 
+      <enumeration value="V-Form" /> 
+      <enumeration value="Mission" /> 
+    </simpleType> 
+  </attribute> 
+
+  <attribute name="numEyelets">
+    <simpleType baseType="integer">
+      <minInclusive value="0" />
+    </simpleType>
+  </attribute>
+
+</schema>

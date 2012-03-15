@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+    TODO define vocabulary identification
+    PUBLIC ID: -//vendor//vocabulary//EN
+    SYSTEM ID: http://server/path/submissionDTD99.dtd
+
+-->
+
+<!--
+    An example how to use this DTD from your XML document:
+
+    <?xml version="1.0"?>
+
+    <!DOCTYPE crosslink-submission SYSTEM "submissionDTD99.dtd">
+
+    <crosslink-submission>
+    ...
+    </crosslink-submission>
+-->
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT crosslink-submission (topic|collections|description|details)*>
+<!ATTLIST crosslink-submission
+    task CDATA #IMPLIED
+    run-id CDATA #IMPLIED
+    participant-id CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT details (time|machine)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT machine (memory|hyperthreads|cores|speed|cpu)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT cpu (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT speed (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT cores (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT hyperthreads (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT memory (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT time (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT description (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT collections (collection)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT collection (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT topic (incoming|outgoing)*>
+<!ATTLIST topic
+    name CDATA #IMPLIED
+    file CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT outgoing (anchor)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT anchor (tobep)*>
+<!ATTLIST anchor
+    length CDATA #IMPLIED
+    offset CDATA #IMPLIED
+    name CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT tobep (#PCDATA)>
+<!ATTLIST tobep
+    offset CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT incoming (bep)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT bep (fromanchor)*>
+<!ATTLIST bep
+    offset CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT fromanchor (#PCDATA)>
+<!ATTLIST fromanchor
+    anchor CDATA #IMPLIED
+    length CDATA #IMPLIED
+    offset CDATA #IMPLIED
+  >

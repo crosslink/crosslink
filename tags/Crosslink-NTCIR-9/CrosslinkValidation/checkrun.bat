@@ -1,0 +1,1 @@
+java -cp CrosslinkValidation.jar;lib/assessment-engine.jar;lib/xml2txt.jar ltwassessmenttool.submission.RunChecker %*
