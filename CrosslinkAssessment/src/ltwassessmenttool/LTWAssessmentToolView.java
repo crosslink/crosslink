@@ -135,7 +135,7 @@ public class LTWAssessmentToolView extends FrameView {
         super(app);
         
      	// update resource manager first thing with the app starting up
-        AppResource.forValidationOrAssessment = true;
+        AppResource.forAssessment = true;
         AppResource.getInstance().setResourceMap(org.jdesktop.application.Application.getInstance(ltwassessmenttool.LTWAssessmentToolApp.class).getContext().getResourceMap(ltwassessmenttool.LTWAssessmentToolView.class));
 
         initComponents();

@@ -56,10 +56,11 @@ public class Assessment {
 	private String finishedTopicPath = null;
 	private File finishedTopicPathHandler = null;
 	
-	private String assessmentLang = "";
-	private String sourcelang = "";
+	private String targetLang = "";
+	private String sourceLang = "";
 	
-	private boolean assessmentType = false; // false: pool assessment; true: ground-truth assessment 
+	private boolean assessmentType = false; //  false: pool assessment; true: ground-truth assessment 
+	private String whereAreTopics;
 	
 	static {
 
@@ -80,17 +81,21 @@ public class Assessment {
 			poolDir.append(ASSESSMENT_POOL_GROUNDTRUTH_PATH);
 		}
 		
-		poolDirHandler = new File(poolDir.toString() + assessmentLang);
-		if (assessmentLang.length() > 0 && !poolDirHandler.exists()) {
-			assessmentLang = "";
+		if (sourceLang.length() > 0)
+			poolDirHandler = new File(poolDir.toString() + sourceLang + "-" + targetLang);
+		else
+			poolDirHandler = new File(poolDir.toString() + targetLang);
+		
+		if (targetLang.length() > 0 && !poolDirHandler.exists()) {
+			targetLang = "";
 			poolDirHandler = new File(poolDir.toString());
 		}
 //		else
-//			poolDir.append(assessmentLang + File.separator);
+//			poolDir.append(targetLang + File.separator);
 
 //			poolDirHandler.mkdir();
 			
-		poolBackupDirHandler = new File(poolDir.toString() + ASSESSMENT_POOL_BACKUP_DIR + assessmentLang);
+		poolBackupDirHandler = new File(poolDir.toString() + ASSESSMENT_POOL_BACKUP_DIR + targetLang);
 		if (!poolBackupDirHandler.exists())
 			poolBackupDirHandler.mkdirs();
 		
@@ -117,10 +122,18 @@ public class Assessment {
 		        BufferedReader buff = new BufferedReader(in);
 		        String line;
 		        line = buff.readLine();
-		        assessmentLang = line.trim();
+		        if (!line.contains(":"))
+		        	targetLang = line.trim();
+		        else {
+		        	String[] langPair = line.split(":");
+		        	targetLang = langPair[1];
+		        	sourceLang = langPair[0];
+		        }
+		        whereAreTopics = buff.readLine();
+		        		
 	    	}
 	    	else
-	    		assessmentLang = "zh";
+	    		targetLang = "zh";
 //	    	else {
 //		        URL url = new URL(ASSESSMENT_LANG_ADDRESS); 
 //	
@@ -132,7 +145,7 @@ public class Assessment {
 	    } catch(Exception e) { 
 	        e.printStackTrace();
 	        System.err.println("Can't get the lanuage of the assessment pool from " + ASSESSMENT_LANG_ADDRESS);
-	        assessmentLang = "ja";
+	        targetLang = "ja";
 	    } 
 	}
 
@@ -171,13 +184,17 @@ public class Assessment {
     		String filename =  file.getName();
         	String	topicID = filename.substring(0, filename.indexOf('.'));
 			finishedTopics.put(topicID, file);
-		}	
+		}
 		
-		if (!assessmentType) {
+//		stack = WildcardFiles.listFilesInStack(ASSESSMENT_TOPIC_INBOX_PATH + "*.xml");
+//		stack.size() > 0
+		
+//		if (!assessmentType) {
+        if (whereAreTopics != null && whereAreTopics.equalsIgnoreCase("inbox")) {
 			topicPath = ASSESSMENT_TOPIC_INBOX_PATH;
 		}
 		else { // assess Wikipedia ground-truth
-			topicPath = ASSESSMENT_TOPIC_TOPIC_PATH + AppResource.getInstance().sourceLang + File.separator;
+			topicPath = ASSESSMENT_TOPIC_TOPIC_PATH + sourceLang/*AppResource.getInstance().sourceLang*/ + File.separator;
 		}
 		
 		stack = WildcardFiles.listFilesInStack(topicPath + "*.xml");
@@ -209,9 +226,9 @@ public class Assessment {
 	}
 	
 	public String getPoolFile(String id) {
-//		if (assessmentLang.length() == 0)
+//		if (targetLang.length() == 0)
 //			return ASSESSMENT_POOL_PATH + ASSESSMENT_POOL_PREFIX + "_" + id + ".xml";
-//		return ASSESSMENT_POOL_PATH + assessmentLang + File.separator + ASSESSMENT_POOL_PREFIX + "_" + id + ".xml";
+//		return ASSESSMENT_POOL_PATH + targetLang + File.separator + ASSESSMENT_POOL_PREFIX + "_" + id + ".xml";
 		return poolDirHandler.getAbsolutePath() + File.separator + ASSESSMENT_POOL_PREFIX + "_" + id + ".xml";
 	}
 	
