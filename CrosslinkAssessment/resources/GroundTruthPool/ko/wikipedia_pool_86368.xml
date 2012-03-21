@@ -4,36 +4,36 @@
 	<collection>Korean Wikipedia 2010 Collection</collection>
 	<topic file="86368" name="Puzzle">
 		<outgoinglinks>
-			<anchor arel="0" aname="Puzzle" aoffset="266" alength="6" ext_length="0">
-				<subanchor sarel="0" saname="Puzzle" saoffset="266" salength="6" rank="0">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="연구">185335</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="애너그램">75283</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="동사 (품사)">115303</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="하노이의 탑">38319</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="모래시계 문제">258225</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="장난감">128405</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="리포그램">77411</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="십자말">153633</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="미로찾기">359644</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="기사의 여행">93643</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="수수께끼">263165</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="쾨니히스베르크의 다리 문제">35779</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="퍼즐 게임">446734</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="근접어">77737</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="팬그램">77379</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="아인슈타인의 퍼즐">47402</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="몬티 홀 문제">83052</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="소마 큐브">21772</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="칠교놀이">363059</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="아이서그램">77405</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="루빅스 큐브">49076</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="마틴 가드너">296</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="스도쿠">62077</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="창고지기">194976</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="테트리스">133605</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="게임">29745</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="옥스퍼드 영어사전">9012</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="문제">306706</tobep>
+			<anchor arel="1" aname="Puzzle" aoffset="266" alength="6" ext_length="0">
+				<subanchor sarel="1" saname="Puzzle" saoffset="266" salength="6" rank="0">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="연구">185335</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="애너그램">75283</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="동사 (품사)">115303</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="하노이의 탑">38319</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="모래시계 문제">258225</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="장난감">128405</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="리포그램">77411</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="십자말">153633</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="미로찾기">359644</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="기사의 여행">93643</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="수수께끼">263165</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="쾨니히스베르크의 다리 문제">35779</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="퍼즐 게임">446734</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="근접어">77737</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="팬그램">77379</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="아인슈타인의 퍼즐">47402</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="몬티 홀 문제">83052</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="소마 큐브">21772</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="칠교놀이">363059</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="아이서그램">77405</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="루빅스 큐브">49076</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="마틴 가드너">296</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="스도쿠">62077</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="창고지기">194976</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="테트리스">133605</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="게임">29745</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="옥스퍼드 영어사전">9012</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="문제">306706</tobep>
 				</subanchor>
 			</anchor>
 		</outgoinglinks>
