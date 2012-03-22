@@ -54,7 +54,7 @@ public class PoolManager {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-//		AppResource.forValidationOrAssessment = true;
+//		AppResource.forAssessment = true;
 		
 		if (args.length < 1) {
 			usage();

@@ -69,7 +69,7 @@
     the compile target as the regular run target does. Again, for a list of available 
     properties which you can use, check the target you are overriding in the
     nbproject/build-impl.xml file. 
-
+	  	  	<zipfileset dir="." includes="lang.txt"/>
     -->
     <target name="release" depends="CrosslinkAssessment-impl.jar">
     	  <tstamp>
@@ -79,14 +79,16 @@
     	  <delete file="${release.file}"/>
 	  	  <zip destfile="${release.file}">
 	  	  	<zipfileset dir="resources" excludes="toolResources.xml" prefix="resources"/>
-	  	  	<zipfileset dir="assessment" prefix="assessment"/>
+	  	  	<zipfileset dir="assessment" prefix="assessment">
+	  	  		<exclude name="inbox/*"/>
+	  	  		<exclude name="outbox/*"/>
+	  	  	</zipfileset>
 	  	  	<zipfileset dir="images" prefix="images"/>
 	  	  	<zipfileset dir="lib" prefix="lib" />
 	  	  	<zipfileset dir="." includes="Instruction.pdf"/>
 	  	  	<zipfileset dir="." includes="run.sh"/>
 	  	  	<zipfileset dir="." includes="run.bat"/>
 	  	  	<zipfileset dir="." includes="article.dtd"/>
-	  	  	<zipfileset dir="." includes="lang.txt"/>
     	  	<zipfileset dir="." includes="toolResources.xml" prefix="resources" />
 	  	  	<zipfileset dir="${dist.dir}" includes="*.jar"/>
 	  	  </zip>
