@@ -22,6 +22,8 @@ public class ResultSetManager {
 	public static final int A2B_WIKI_GROUNDTRUTH = 1;
 	public static final int A2B_WIKI_MANUAL = 2;
 	
+	public static boolean isGroundTruthManualAssessment = false;
+	
 	private static final String[] resultSetNameArray = {"A2FWikiGroundTruthResultSet", "A2FWikiGroundTruthResultSet", "A2BWikiManualResultSet"};
 	
 	private int evaluationType = A2F_WIKI_GROUNDTRUTH;
@@ -68,7 +70,7 @@ public class ResultSetManager {
 	
 	public void setResultSetPath() {
 //        String resultsetPath = ;
-//        
+//      
         resultsetPath.append(RESULTSET_PARENT_PATH  + File.separator);
         
         String resultsetFormalPath = resultsetPath.toString() + "test";
@@ -103,7 +105,11 @@ public class ResultSetManager {
 //        String resultSetType = "";
         String resultSetFile = null;
 
-        resultSetFile = String.format("%s%s-%s2%s.xml", resultsetPath.toString(), resultSetNameArray[evaluationType], langMap.get(sourceLang), langMap.get(targetLang));
+        resultSetFile = null;
+        if (isGroundTruthManualAssessment)
+        	resultSetFile = String.format("%s%s-MA-%s2%s.xml", resultsetPath.toString(), resultSetNameArray[evaluationType], langMap.get(sourceLang), langMap.get(targetLang));
+        else
+        	resultSetFile = String.format("%s%s-%s2%s.xml", resultsetPath.toString(), resultSetNameArray[evaluationType], langMap.get(sourceLang), langMap.get(targetLang));
         return resultSetFile;
     }
 	
