@@ -80,7 +80,7 @@ public class WikiConvertor {
       	Stack<File> stack = null;
       	
 //      	for (String input : args) {
-          	stack = WildcardFiles.listFilesInStack(input, true);
+          	stack = new WildcardFiles().listFilesInStack(input, true);
           	while (!stack.isEmpty())
             {
 //          		good = true;
