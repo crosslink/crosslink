@@ -98,7 +98,7 @@ public class ResultSetManager {
 
 	public boolean checkIfManualResultSetAvailable() {
 		String manulResultSetWildcard = resultsetPath + "*" + RESULTSET_MANUAL_NAME + "*.xml";
-		return WildcardFiles.listFilesInStack(manulResultSetWildcard).size() > 0;
+		return new WildcardFiles().listFilesInStack(manulResultSetWildcard).size() > 0;
 	}
 	
 	public String getResultSetPathFile(String sourceLang, String targetLang) {

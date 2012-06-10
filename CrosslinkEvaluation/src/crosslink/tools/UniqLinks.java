@@ -82,7 +82,7 @@ public class UniqLinks {
             if (afile.length() > 0) {
             	File aFile = new File(afile);
             	if (aFile.isDirectory())
-            		fileList.addAll(WildcardFiles.listFilesInStack(afile));
+            		fileList.addAll(new WildcardFiles().listFilesInStack(afile));
             	else
             		fileList.add(aFile);  	
             }
