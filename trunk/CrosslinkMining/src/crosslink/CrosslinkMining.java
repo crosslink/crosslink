@@ -195,7 +195,7 @@ public class CrosslinkMining extends MonolinkMining {
         int filecount = 0;
       	Stack<File> stack = null;
       	
-      	stack = WildcardFiles.listFilesInStack(topicPath);
+      	stack = new WildcardFiles().listFilesInStack(topicPath);
       	while (!stack.isEmpty())
         {
 //          		good = true;
