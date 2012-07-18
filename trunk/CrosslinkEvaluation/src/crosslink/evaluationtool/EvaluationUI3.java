@@ -1451,8 +1451,12 @@ public class EvaluationUI3 extends JFrame {
     * @param args the command line arguments
     */
     public static void main(String args[]) {
-    	if (args.length > 0 && args[0].equalsIgnoreCase("gt"))
-    		ResultSetManager.isGroundTruthManualAssessment = true;
+    	if (args.length > 0) {
+    		if (args[0].equalsIgnoreCase("gt"))
+    			ResultSetManager.isGroundTruthManualAssessment = true;
+    		else if (args[0].equalsIgnoreCase("training"))
+    			ResultSetManager.useTestDataset = false;
+    	}
         java.awt.EventQueue.invokeLater(new Runnable() {
 
             public void run() {

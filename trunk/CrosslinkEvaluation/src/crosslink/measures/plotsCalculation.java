@@ -183,6 +183,8 @@ public final class plotsCalculation extends Data {
 	                            }
 	                            // -------------------------------------------------
 	                            RPmap.put(recallLevel, precAtR);
+//	                            if (precAtR == 0.0)
+//	                            	System.err.println("Recall at " + recallLevel + "has zero precision"); 
 	                        }
 	                    }
 	                    

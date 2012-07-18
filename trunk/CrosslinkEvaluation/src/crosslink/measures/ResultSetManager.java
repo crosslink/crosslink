@@ -23,6 +23,7 @@ public class ResultSetManager {
 	public static final int A2B_WIKI_MANUAL = 2;
 	
 	public static boolean isGroundTruthManualAssessment = false;
+	public static boolean useTestDataset = true;
 	
 	private static final String[] resultSetNameArray = {"A2FWikiGroundTruthResultSet", "A2FWikiGroundTruthResultSet", "A2BWikiManualResultSet"};
 	
@@ -74,7 +75,7 @@ public class ResultSetManager {
         resultsetPath.append(RESULTSET_PARENT_PATH  + File.separator);
         
         String resultsetFormalPath = resultsetPath.toString() + "test";
-        if (!new File(resultsetFormalPath).exists())
+        if (!new File(resultsetFormalPath).exists() || !useTestDataset)
         	resultsetPath.append("training");
         else
         	resultsetPath.append("test");

@@ -24,7 +24,7 @@ public class Data {
     public static final int LANGUAGE_JAPANESE = 4;
     public static final int LANGUAGE_KOREAN = 8;
     public static final int LANGUAGE_ENGLISH = 16;
-    public static final int LANGUAGE_ALL = 14;
+    public static final int LANGUAGE_ALL = 30;
     
     public static Map<String, Integer> langMatchMap = new HashMap<String, Integer>();
     
