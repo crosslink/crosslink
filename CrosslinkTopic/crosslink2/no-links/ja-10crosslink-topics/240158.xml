@@ -22,24 +22,9 @@
 
 
 
-<b>x264</b>(エックスニーロクヨン)は、動画を<link xlink:type="simple" xlink:href="../../pages/096/165096.xml">
-H.264</link> (<link xlink:type="simple" xlink:href="../../pages/053/3053.xml">
-MPEG-4</link> AVC)ビデオストリームへ<link xlink:type="simple" xlink:href="../../pages/323/84323.xml">
-エンコード</link>するための<link xlink:type="simple" xlink:href="../../pages/737/42737.xml">
-プログラム</link>である。<link xlink:type="simple" xlink:href="../../pages/841/2841.xml">
-GPL</link>ライセンスの下でリリースされている。<p>
+<b>x264</b>(エックスニーロクヨン)は、動画をH.264 (MPEG-4 AVC)ビデオストリームへエンコードするためのプログラムである。GPLライセンスの下でリリースされている。<p>
 
-x264にはコマンドラインプログラムの通称x264cliと<link xlink:type="simple" xlink:href="../../pages/918/2918.xml">
-ライブラリ</link>のlibx264が含まれている。コマンドラインプログラムはコンパイルオプションによっては<link xlink:type="simple" xlink:href="../../pages/491/924491.xml">
-FFmpeg</link>を利用したデコードに対応している。また、libx264を利用した多数の<link xlink:type="simple" xlink:href="../../pages/786/51786.xml">
-フロントエンド</link>やプラグインなどが存在する (<link xlink:type="simple" xlink:href="../../pages/068/450068.xml">
-VLC</link>・<link xlink:type="simple" xlink:href="../../pages/079/1309079.xml">
-HandBrake</link>・<link xlink:type="simple" xlink:href="../../pages/491/924491.xml">
-FFmpeg</link>・<link>
-ffdshow</link>・<link xlink:type="simple" xlink:href="../../pages/536/1008536.xml">
-Windows VFW</link>向けの<link xlink:type="simple" xlink:href="#xpointer(//*[./st=%22x264vfw%22])">
-x264vfw</link>・<link>
-x264gui</link>など)。</p>
+x264にはコマンドラインプログラムの通称x264cliとライブラリのlibx264が含まれている。コマンドラインプログラムはコンパイルオプションによってはFFmpegを利用したデコードに対応している。また、libx264を利用した多数のフロントエンドやプラグインなどが存在する (VLC・HandBrake・FFmpeg・ffdshow・Windows VFW向けのx264vfw・x264guiなど)。</p>
 
 <sec>
 <st>
@@ -49,20 +34,16 @@ x264gui</link>など)。</p>
 <list>
 <entry level="1" type="bullet">
 
-フリーで<link xlink:type="simple" xlink:href="../../pages/422/1422.xml">
-オープンソース</link></entry>
+フリーでオープンソース</entry>
 <entry level="1" type="bullet">
 
 高画質</entry>
 <entry level="2" type="bullet">
 
-MSU MPEG-4 AVC/H.264 Video Codec Comparison 2011 において商用や<link xlink:type="simple" xlink:href="../../pages/844/2099844.xml">
-WebM</link>などの他のエンコードも含め最も高画質・高圧縮率と評価されている<ref xlink:type="simple" xlink:href="#xpointer(//reflist/entry[@id=%222%22])">2</ref></entry>
+MSU MPEG-4 AVC/H.264 Video Codec Comparison 2011 において商用やWebMなどの他のエンコードも含め最も高画質・高圧縮率と評価されている<ref xlink:type="simple" xlink:href="#xpointer(//reflist/entry[@id=%222%22])">2</ref></entry>
 <entry level="2" type="bullet">
 
-<link>
-PSNR</link>や<link>
-SSIM</link>だけでなく、心理視覚も重視している。</entry>
+PSNRやSSIMだけでなく、心理視覚も重視している。</entry>
 <entry level="2" type="bullet">
 
 一般的に使われている8ビット深度だけでなく、9ビット深度や10ビット深度でのエンコードにも対応している。</entry>
@@ -74,17 +55,10 @@ SSIM</link>だけでなく、心理視覚も重視している。</entry>
 高速</entry>
 <entry level="2" type="bullet">
 
-<link xlink:type="simple" xlink:href="../../pages/738/5738.xml">
-マルチスレッド</link>対応</entry>
+マルチスレッド対応</entry>
 <entry level="2" type="bullet">
 
-各種CPUの<link xlink:type="simple" xlink:href="../../pages/432/227432.xml">
-SIMD</link>に対応 (<link xlink:type="simple" xlink:href="../../pages/204/251204.xml">
-MMX</link>,<link xlink:type="simple" xlink:href="../../pages/456/478456.xml">
-SSE</link>, SSE2, SSE3, SSSE3, SSE4, AVX, <link xlink:type="simple" xlink:href="../../pages/908/475908.xml">
-3DNow!</link>, <link xlink:type="simple" xlink:href="../../pages/139/47139.xml">
-Altivec</link>, <link>
-NEON</link>など)</entry>
+各種CPUのSIMDに対応 (MMX,SSE, SSE2, SSE3, SSSE3, SSE4, AVX, 3DNow!, Altivec, NEONなど)</entry>
 <entry level="1" type="bullet">
 
 低レイテンシ</entry>
@@ -105,8 +79,7 @@ NEON</link>など)</entry>
 プロファイル制限・レベル制限に対応している。これにより制限の多いデバイス向けにエンコードすることができる。</entry>
 <entry level="2" type="bullet">
 
-<link xlink:type="simple" xlink:href="../../pages/768/3768.xml">
-Blu-ray Disc</link>互換のエンコードが可能である。オーサリングソフトと組み合わせれば、Blu-ray Discを作ることができる。</entry>
+Blu-ray Disc互換のエンコードが可能である。オーサリングソフトと組み合わせれば、Blu-ray Discを作ることができる。</entry>
 <entry level="2" type="bullet">
 
 Iフレームのみでエンコードが可能である(--keyint 1)。任意の箇所でカットできるようになるので、プロ向けに使うことができる。</entry>
@@ -124,11 +97,7 @@ Iフレームのみでエンコードが可能である(--keyint 1)。任意の�
 YoutubeやFacebookを含む多数のWebサイトにより使われている。</entry>
 <entry level="2" type="bullet">
 
-<link xlink:type="simple" xlink:href="../../pages/068/450068.xml">
-VLC</link>や<link xlink:type="simple" xlink:href="../../pages/079/1309079.xml">
-HandBrake</link>、<link xlink:type="simple" xlink:href="../../pages/010/1171010.xml">
-MediaCoder</link>、<link xlink:type="simple" xlink:href="../../pages/638/352638.xml">
-TMPGEnc XPress</link>など多くのエンコーディングソフトウェアに含まれている。</entry>
+VLCやHandBrake、MediaCoder、TMPGEnc XPressなど多くのエンコーディングソフトウェアに含まれている。</entry>
 </list>
 </p>
 
@@ -141,15 +110,13 @@ TMPGEnc XPress</link>など多くのエンコーディングソフトウェア�
 <list>
 <entry level="1" type="bullet">
 
-r  240：<link xlink:type="simple" xlink:href="../../pages/738/5738.xml">
-マルチスレッド</link>に対応</entry>
+r  240：マルチスレッドに対応</entry>
 <entry level="1" type="bullet">
 
 r  264：ロスレスエンコードに対応</entry>
 <entry level="1" type="bullet">
 
-r  570：<link xlink:type="simple" xlink:href="../../pages/573/154573.xml">
-インターレース</link>に対応</entry>
+r  570：インターレースに対応</entry>
 <entry level="1" type="bullet">
 
 r  581：Video for Windowsの公式対応削除</entry>
@@ -158,9 +125,7 @@ r  581：Video for Windowsの公式対応削除</entry>
 r  607：マルチスレッド時の分割方法を変更（スライスベースからフレームベースへ）</entry>
 <entry level="1" type="bullet">
 
-r  733：<link xlink:type="simple" xlink:href="../../pages/201/12201.xml">
-YV12</link>への変換機能を削除（あらかじめYV12形式に変換しておく必要がある、<link xlink:type="simple" xlink:href="../../pages/069/1398069.xml">
-AviSynth</link>を使う）</entry>
+r  733：YV12への変換機能を削除（あらかじめYV12形式に変換しておく必要がある、AviSynthを使う）</entry>
 <entry level="1" type="bullet">
 
 r1177：新しいプリセットシステムを導入</entry>
@@ -169,8 +134,7 @@ r1177：新しいプリセットシステムを導入</entry>
 r1327：重み付けPフレーム予測に対応</entry>
 <entry level="1" type="bullet">
 
-r1379：<link xlink:type="simple" xlink:href="../../pages/491/924491.xml">
-FFmpeg</link>を介した入力をサポート</entry>
+r1379：FFmpegを介した入力をサポート</entry>
 <entry level="1" type="bullet">
 
 r1380：周期的イントラ更新を追加</entry>
@@ -234,8 +198,7 @@ x264のVfW(Video for Windows)版であったが、r581において削除され�
  分散エンコード </st>
 <p>
 
-x264は直接は分散エンコードをサポートしていない。しかし、x264をバックエンドとして使う分散エンコードソフトウェアのx264farm及びその派生の1passに特化したx264farm-spが存在する。ライセンスはx264と同じくGPLライセンスであり、言語は<link xlink:type="simple" xlink:href="../../pages/472/1472.xml">
-OCaml</link>で書かれている。</p>
+x264は直接は分散エンコードをサポートしていない。しかし、x264をバックエンドとして使う分散エンコードソフトウェアのx264farm及びその派生の1passに特化したx264farm-spが存在する。ライセンスはx264と同じくGPLライセンスであり、言語はOCamlで書かれている。</p>
 
 </sec>
 <sec>
@@ -326,48 +289,37 @@ Weight-Pに関しては、既に最新版で問題のあるデコーダは残っ
 <list>
 <entry level="1" type="bullet">
 
-<link xlink:type="simple" xlink:href="../../pages/578/109578.xml">
-MP4</link></entry>
+MP4</entry>
 <entry level="1" type="bullet">
 
-<link xlink:type="simple" xlink:href="../../pages/096/165096.xml">
-H.264</link></entry>
+H.264</entry>
 <entry level="1" type="bullet">
 
-<link>
-ffdshow</link></entry>
+ffdshow</entry>
 <entry level="1" type="bullet">
 
-<link xlink:type="simple" xlink:href="../../pages/417/1197417.xml">
-AviUtl</link></entry>
+AviUtl</entry>
 <entry level="1" type="bullet">
 
-<link xlink:type="simple" xlink:href="../../pages/068/450068.xml">
-VLCメディアプレーヤー</link></entry>
+VLCメディアプレーヤー</entry>
 <entry level="1" type="bullet">
 
-<link xlink:type="simple" xlink:href="../../pages/508/112508.xml">
-Xvid</link></entry>
+Xvid</entry>
 <entry level="1" type="bullet">
 
-<link xlink:type="simple" xlink:href="../../pages/973/170973.xml">
-ソフトウェア特許</link></entry>
+ソフトウェア特許</entry>
 <entry level="1" type="bullet">
 
-<link>
-MPEG LA</link></entry>
+MPEG LA</entry>
 <entry level="1" type="bullet">
 
-<link>
-MeGUI</link></entry>
+MeGUI</entry>
 <entry level="1" type="bullet">
 
-<link xlink:type="simple" xlink:href="../../pages/858/2351858.xml">
-MEncoder</link></entry>
+MEncoder</entry>
 <entry level="1" type="bullet">
 
-<link xlink:type="simple" xlink:href="../../pages/530/1495530.xml">
-オープンソースのコーデックとコンテナフォーマット一覧</link></entry>
+オープンソースのコーデックとコンテナフォーマット一覧</entry>
 </list>
 </p>
 
@@ -412,20 +364,7 @@ x264.nl</weblink> - x264コーデックWindows版バイナリ配布サイト</en
 
 <p>
 
-<link xlink:label="bg" xlink:type="none" xlink:title="X264"></link>
-<link xlink:label="de" xlink:type="none" xlink:title="X264"></link>
-<link xlink:label="en" xlink:type="simple" xlink:href="../../../en/pages/265/1419265.xml" xlink:title="X264"></link>
-<link xlink:label="es" xlink:type="none" xlink:title="X264"></link>
-<link xlink:label="fr" xlink:type="none" xlink:title="X264"></link>
-<link xlink:label="id" xlink:type="none" xlink:title="X264"></link>
-<link xlink:label="it" xlink:type="none" xlink:title="X264"></link>
-<link xlink:label="ko" xlink:type="simple" xlink:href="../../../ko/pages/121/211121.xml" xlink:title="X264"></link>
-<link xlink:label="pl" xlink:type="none" xlink:title="X264"></link>
-<link xlink:label="pt" xlink:type="none" xlink:title="H.264#x264"></link>
-<link xlink:label="ru" xlink:type="none" xlink:title="X264"></link>
-<link xlink:label="sk" xlink:type="none" xlink:title="X264"></link>
-<link xlink:label="sv" xlink:type="none" xlink:title="X264"></link>
-<link xlink:label="zh" xlink:type="simple" xlink:href="../../../zh/pages/099/972099.xml" xlink:title="X264編碼器"></link></p>
+</p>
 </sec>
 </bdy>
 </article>

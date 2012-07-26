@@ -23,18 +23,12 @@
 
 
 
-<b>x264</b>是一個採用<link xlink:type="simple" xlink:href="../../pages/658/658.xml">
-GPL授權</link>的視頻編碼<link xlink:type="simple" xlink:href="../../pages/403/9403.xml">
-自由軟體</link>。x264的主要功能在於進行<link xlink:type="simple" xlink:href="../../pages/432/111432.xml">
-H.264/MPEG-4 AVC</link>的視頻編碼，而不是作為解碼器（decoder）之用。<p>
+<b>x264</b>是一個採用GPL授權的視頻編碼自由軟體。x264的主要功能在於進行H.264/MPEG-4 AVC的視頻編碼，而不是作為解碼器（decoder）之用。<p>
 
-自<link xlink:type="simple" xlink:href="../../pages/632/136632.xml">
-藍光光碟</link>推出以來，要製作藍光光碟產品都需要利用昂貴的軟體，例如索尼的Blu-code。而x264是一款基於<link xlink:type="simple" xlink:href="../../pages/432/111432.xml">
-H.264</link>標準的编码器，此外它是免费开源的<ref xlink:type="simple" xlink:href="#xpointer(//reflist/entry[@id=%221%22])">1</ref>。透過x264，藍光光碟影片就可以存放在不同的媒體中，例如普通的DVD碟片上。只要播放裝置集成了適當的解碼器，就可以播放這些藍光兼容光碟，而不是只限播放藍光光碟。</p>
+自藍光光碟推出以來，要製作藍光光碟產品都需要利用昂貴的軟體，例如索尼的Blu-code。而x264是一款基於H.264標準的编码器，此外它是免费开源的<ref xlink:type="simple" xlink:href="#xpointer(//reflist/entry[@id=%221%22])">1</ref>。透過x264，藍光光碟影片就可以存放在不同的媒體中，例如普通的DVD碟片上。只要播放裝置集成了適當的解碼器，就可以播放這些藍光兼容光碟，而不是只限播放藍光光碟。</p>
 <p>
 
-將來，藍光光碟播放機會將這些兼容碟視為真正的藍光光碟，而不是普通的數據光碟。所以，菜单等其他效果都可以實現，光碟所能承載的再不只是影片。相關的蓝光文件架构製作軟體正在開發中，而最關鍵的視頻和音頻編碼已經弄好。音頻編碼方面，可以繼續選用DVD的<link xlink:type="simple" xlink:href="../../pages/457/597457.xml">
-AC3</link>編碼器。</p>
+將來，藍光光碟播放機會將這些兼容碟視為真正的藍光光碟，而不是普通的數據光碟。所以，菜单等其他效果都可以實現，光碟所能承載的再不只是影片。相關的蓝光文件架构製作軟體正在開發中，而最關鍵的視頻和音頻編碼已經弄好。音頻編碼方面，可以繼續選用DVD的AC3編碼器。</p>
 
 <sec>
 <st>
@@ -45,20 +39,16 @@ AC3</link>編碼器。</p>
 <list>
 <entry level="1" type="bullet">
 
- <link xlink:type="simple" xlink:href="../../pages/432/111432.xml">
-H.264</link>可通過部份支援硬解的顯卡來播放,從而減低cpu的負載及提高畫面之流暢度.</entry>
+ H.264可通過部份支援硬解的顯卡來播放,從而減低cpu的負載及提高畫面之流暢度.</entry>
 <entry level="1" type="bullet">
 
- <link xlink:type="simple" xlink:href="../../pages/530/120530.xml">
-MPEG-4</link> </entry>
+ MPEG-4 </entry>
 <entry level="1" type="bullet">
 
- <link xlink:type="simple" xlink:href="../../pages/594/165594.xml">
-Xvid</link> </entry>
+ Xvid </entry>
 <entry level="1" type="bullet">
 
- <link xlink:type="simple" xlink:href="../../pages/005/119005.xml">
-视频编解码器</link></entry>
+ 视频编解码器</entry>
 </list>
 </p>
 
@@ -99,20 +89,7 @@ x264 CLI binaries for Windows</weblink></entry>
 
 <p>
 
-<link xlink:label="bg" xlink:type="none" xlink:title="X264"></link>
-<link xlink:label="de" xlink:type="none" xlink:title="X264"></link>
-<link xlink:label="en" xlink:type="simple" xlink:href="../../../en/pages/265/1419265.xml" xlink:title="X264"></link>
-<link xlink:label="es" xlink:type="none" xlink:title="X264"></link>
-<link xlink:label="fr" xlink:type="none" xlink:title="X264"></link>
-<link xlink:label="id" xlink:type="none" xlink:title="X264"></link>
-<link xlink:label="it" xlink:type="none" xlink:title="X264"></link>
-<link xlink:label="ja" xlink:type="simple" xlink:href="../../../ja/pages/158/240158.xml" xlink:title="X264"></link>
-<link xlink:label="ko" xlink:type="simple" xlink:href="../../../ko/pages/121/211121.xml" xlink:title="X264"></link>
-<link xlink:label="pl" xlink:type="none" xlink:title="X264"></link>
-<link xlink:label="pt" xlink:type="none" xlink:title="H.264#x264"></link>
-<link xlink:label="ru" xlink:type="none" xlink:title="X264"></link>
-<link xlink:label="sk" xlink:type="none" xlink:title="X264"></link>
-<link xlink:label="sv" xlink:type="none" xlink:title="X264"></link></p>
+</p>
 </sec>
 </bdy>
 </article>
