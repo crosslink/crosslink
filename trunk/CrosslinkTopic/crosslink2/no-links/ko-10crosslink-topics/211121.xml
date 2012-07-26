@@ -22,24 +22,9 @@
 
 
 
-<b>x264</b>는 <link xlink:type="simple" xlink:href="../../pages/361/63361.xml">
-H.264/AVC</link> <link xlink:type="simple" xlink:href="../../pages/725/144725.xml">
-비디오</link> <link xlink:type="simple" xlink:href="../../pages/631/705631.xml">
-스트림</link>을 <link xlink:type="simple" xlink:href="../../pages/419/453419.xml">
-인코딩</link>하는 <link xlink:type="simple" xlink:href="../../pages/352/352.xml">
-자유 소프트웨어</link> <link xlink:type="simple" xlink:href="../../pages/711/48711.xml">
-라이브러리</link>다.<ref xlink:type="simple" xlink:href="#xpointer(//reflist/entry[@id=%221%22])">1</ref> 참고로 이것은 <link xlink:type="simple" xlink:href="../../pages/420/453420.xml">
-디코딩</link> 기능은 포함하고 있지 않다. <link xlink:type="simple" xlink:href="../../pages/354/354.xml">
-GPL</link> 라이선스<ref xlink:type="simple" xlink:href="#xpointer(//reflist/entry[@id=%221%22])">1</ref>로 배포되며 이는 <link xlink:type="simple" xlink:href="../../pages/502/502.xml">
-오픈 소스</link>이므로 이용에 특별한 제약은 없다.<p>
+<b>x264</b>는 H.264/AVC 비디오 스트림을 인코딩하는 자유 소프트웨어 라이브러리다.<ref xlink:type="simple" xlink:href="#xpointer(//reflist/entry[@id=%221%22])">1</ref> 참고로 이것은 디코딩 기능은 포함하고 있지 않다. GPL 라이선스<ref xlink:type="simple" xlink:href="#xpointer(//reflist/entry[@id=%221%22])">1</ref>로 배포되며 이는 오픈 소스이므로 이용에 특별한 제약은 없다.<p>
 
-<link xlink:type="simple" xlink:href="../../pages/331/117331.xml">
-SIMD</link> (<link xlink:type="simple" xlink:href="../../pages/755/147755.xml">
-MMX</link>,<link xlink:type="simple" xlink:href="../../pages/540/195540.xml">
-SSE</link>, <link xlink:type="simple" xlink:href="../../pages/771/268771.xml">
-SSE2</link>, <link xlink:type="simple" xlink:href="../../pages/996/268996.xml">
-SSE3</link>, <link xlink:type="simple" xlink:href="../../pages/543/195543.xml">
-3DNow!</link> 등) 환경에서도 최적화되어 있다.</p>
+SIMD (MMX,SSE, SSE2, SSE3, 3DNow! 등) 환경에서도 최적화되어 있다.</p>
 
 <sec>
 <st>
@@ -69,32 +54,25 @@ x264은 Laurent Aimar이 처음으로 만들기 시작했다. 현재 oren Merrit
 <list>
 <entry level="1" type="bullet">
 
- <link xlink:type="simple" xlink:href="../../pages/324/89324.xml">
-MP4</link></entry>
+ MP4</entry>
 <entry level="1" type="bullet">
 
- <link xlink:type="simple" xlink:href="../../pages/361/63361.xml">
-H.264</link></entry>
+ H.264</entry>
 <entry level="1" type="bullet">
 
- <link>
-ffdshow</link></entry>
+ ffdshow</entry>
 <entry level="1" type="bullet">
 
- <link xlink:type="simple" xlink:href="../../pages/213/104213.xml">
-Xvid</link></entry>
+ Xvid</entry>
 <entry level="1" type="bullet">
 
- <link xlink:type="simple" xlink:href="../../pages/339/198339.xml">
-MPEG LA</link></entry>
+ MPEG LA</entry>
 <entry level="1" type="bullet">
 
- <link>
-MeGUI</link></entry>
+ MeGUI</entry>
 <entry level="1" type="bullet">
 
- <link>
-MEncoder</link></entry>
+ MEncoder</entry>
 </list>
 </p>
 
@@ -120,20 +98,7 @@ x264코덱 라이브러리 배포 사이트</weblink></entry>
 
 <p>
 
-<link xlink:label="bg" xlink:type="none" xlink:title="X264"></link>
-<link xlink:label="de" xlink:type="none" xlink:title="X264"></link>
-<link xlink:label="en" xlink:type="simple" xlink:href="../../../en/pages/265/1419265.xml" xlink:title="X264"></link>
-<link xlink:label="es" xlink:type="none" xlink:title="X264"></link>
-<link xlink:label="fr" xlink:type="none" xlink:title="X264"></link>
-<link xlink:label="id" xlink:type="none" xlink:title="X264"></link>
-<link xlink:label="it" xlink:type="none" xlink:title="X264"></link>
-<link xlink:label="ja" xlink:type="simple" xlink:href="../../../ja/pages/158/240158.xml" xlink:title="X264"></link>
-<link xlink:label="pl" xlink:type="none" xlink:title="X264"></link>
-<link xlink:label="pt" xlink:type="none" xlink:title="H.264#x264"></link>
-<link xlink:label="ru" xlink:type="none" xlink:title="X264"></link>
-<link xlink:label="sk" xlink:type="none" xlink:title="X264"></link>
-<link xlink:label="sv" xlink:type="none" xlink:title="X264"></link>
-<link xlink:label="zh" xlink:type="simple" xlink:href="../../../zh/pages/099/972099.xml" xlink:title="X264編碼器"></link></p>
+</p>
 </sec>
 </bdy>
 </article>
