@@ -5,7 +5,8 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
-import ltwassessment.wiki.WikiArticleXml;
+import crosslink.wiki.WikiArticleXml;
+
 
 public class MonolinkTopic extends WikiArticleXml {
 	// the existing or recommended links in the topics

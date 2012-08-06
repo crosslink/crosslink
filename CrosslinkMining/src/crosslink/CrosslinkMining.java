@@ -14,9 +14,10 @@ import org.w3c.dom.Document;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
-import ltwassessment.utility.FileUtil;
-import ltwassessment.utility.WildcardFiles;
-import ltwassessment.wiki.Corpora;
+import crosslink.utility.FileUtil;
+import crosslink.utility.WildcardFiles;
+import crosslink.wiki.Corpora;
+
 import monolink.MonolinkMining;
 import monolink.OutputXmlInterface;
 import monolink.ResultSetXml;

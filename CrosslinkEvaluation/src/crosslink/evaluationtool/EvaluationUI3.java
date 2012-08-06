@@ -23,7 +23,6 @@ import javax.xml.bind.Unmarshaller;
 import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 
-import ltwassessment.utility.WildcardFiles;
 
 import org.jCharts.chartData.ChartDataException;
 import org.jCharts.properties.PropertyException;
@@ -41,6 +40,7 @@ import crosslink.util.JChartDialog;
 import crosslink.util.ioFileFilter;
 import crosslink.util.jfcFileFilter;
 import crosslink.util.runsXMLConvertors;
+import crosslink.utility.WildcardFiles;
 
 /**
  * Created on 7 September 2007, 09:58

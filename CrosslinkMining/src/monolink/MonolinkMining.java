@@ -9,8 +9,9 @@ import java.util.Iterator;
 import java.util.Set;
 import java.util.Stack;
 
-import ltwassessment.utility.WildcardFiles;
-import ltwassessment.wiki.Corpora;
+import crosslink.utility.WildcardFiles;
+import crosslink.wiki.Corpora;
+
 
 public class MonolinkMining {
 	

@@ -5,9 +5,10 @@ import javax.swing.JFileChooser;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
-import ltwassessment.parsers.ResourcesManager;
 
 import org.jdesktop.application.Action;
+
+import crosslink.parsers.ResourcesManager;
 
 /**
  * LTWAssessmentToolCorpusBox.java

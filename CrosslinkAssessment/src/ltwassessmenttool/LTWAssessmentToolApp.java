@@ -12,10 +12,11 @@ import java.awt.event.WindowListener;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
-import ltwassessment.Assessment;
 
 import org.jdesktop.application.Application;
 import org.jdesktop.application.SingleFrameApplication;
+
+import crosslink.Assessment;
 
 /**
  * The main class of the application.
