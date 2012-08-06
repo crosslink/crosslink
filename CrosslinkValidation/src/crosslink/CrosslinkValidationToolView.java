@@ -1919,7 +1919,7 @@ public class CrosslinkValidationToolView extends FrameView {
 		    subDirOK = true;
 		}
 		if (subDirOK) {
-			Run<ArrayList> run = new Run<ArrayList>(new File(runFileAbsPath));
+			Run run = new Run(new File(runFileAbsPath), ArrayList.class, true);
 			run.split(subDirectory);
 		    return subDirectory;
 		} else {

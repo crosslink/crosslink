@@ -60,6 +60,8 @@ public class WikiArticleXml {
 	 * @return the bytes
 	 */
 	public byte[] getBytes() {
+		if (bytes == null)
+			read();
 		return bytes;
 	}
 
