@@ -100,7 +100,7 @@
     <Component class="javax.swing.JButton" name="assBrowseBtn">
       <Properties>
         <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
-          <action class="ltwassessment.LTWAssessmentSetForm" id="browseAssessXMLSet" methodName="browseAssessXMLSet"/>
+          <action class="crosslink.LTWAssessmentSetForm" id="browseAssessXMLSet" methodName="browseAssessXMLSet"/>
         </Property>
         <Property name="text" type="java.lang.String" resourceKey="assBrowseBtn.text"/>
         <Property name="name" type="java.lang.String" value="assBrowseBtn" noResource="true"/>
@@ -109,7 +109,7 @@
     <Component class="javax.swing.JButton" name="closeBtn">
       <Properties>
         <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
-          <action class="ltwassessment.LTWAssessmentSetForm" id="OKAssFormBox" methodName="OKAssFormBox"/>
+          <action class="crosslink.LTWAssessmentSetForm" id="OKAssFormBox" methodName="OKAssFormBox"/>
         </Property>
         <Property name="text" type="java.lang.String" resourceKey="closeBtn.text"/>
         <Property name="name" type="java.lang.String" value="closeBtn" noResource="true"/>

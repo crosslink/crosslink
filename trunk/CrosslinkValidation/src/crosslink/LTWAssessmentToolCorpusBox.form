@@ -96,7 +96,7 @@
     <Component class="javax.swing.JButton" name="OkBtn">
       <Properties>
         <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
-          <action class="ltwassessment.LTWAssessmentToolCorpusBox" id="OKCorpusBox" methodName="OKCorpusBox"/>
+          <action class="crosslink.LTWAssessmentToolCorpusBox" id="OKCorpusBox" methodName="OKCorpusBox"/>
         </Property>
         <Property name="text" type="java.lang.String" resourceKey="OkBtn.text"/>
         <Property name="name" type="java.lang.String" value="OkBtn" noResource="true"/>
@@ -127,7 +127,7 @@
     <Component class="javax.swing.JButton" name="wikiBBtn">
       <Properties>
         <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
-          <action class="ltwassessment.LTWAssessmentToolCorpusBox" id="browseWikiCorpus" methodName="browseWikiCorpus"/>
+          <action class="crosslink.LTWAssessmentToolCorpusBox" id="browseWikiCorpus" methodName="browseWikiCorpus"/>
         </Property>
         <Property name="text" type="java.lang.String" resourceKey="wikiBBtn.text"/>
         <Property name="name" type="java.lang.String" value="wikiBBtn" noResource="true"/>
@@ -136,7 +136,7 @@
     <Component class="javax.swing.JButton" name="cancelBtn">
       <Properties>
         <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
-          <action class="ltwassessment.LTWAssessmentToolCorpusBox" id="CancelCorpusBox" methodName="CancelCorpusBox"/>
+          <action class="crosslink.LTWAssessmentToolCorpusBox" id="CancelCorpusBox" methodName="CancelCorpusBox"/>
         </Property>
         <Property name="text" type="java.lang.String" resourceKey="cancelBtn.text"/>
         <Property name="name" type="java.lang.String" value="cancelBtn" noResource="true"/>

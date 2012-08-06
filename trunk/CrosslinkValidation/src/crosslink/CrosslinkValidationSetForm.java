@@ -1,4 +1,4 @@
-package ltwassessmenttool;
+package crosslink;
 
 import java.io.File;
 import java.util.Collections;
@@ -6,22 +6,23 @@ import java.util.Vector;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 
-import ltwassessment.parsers.PoolerManager;
-import ltwassessment.parsers.ResourcesManager;
 
 import org.jdesktop.application.Action;
+
+import crosslink.parsers.PoolerManager;
+import crosslink.parsers.ResourcesManager;
 
 /**
  * @author Darren HUANG
  */
-public class LTWAssessmentSetForm extends javax.swing.JDialog {
+public class CrosslinkValidationSetForm extends javax.swing.JDialog {
 
     private ResourcesManager toolRscManager = null;
     private String[] afProperty = new String[4];
     private Vector<String[]> RunTopics = new Vector<String[]>();
     private Vector<String> topicFileIDsV = new Vector<String>();
 
-    public LTWAssessmentSetForm(java.awt.Frame parent) {
+    public CrosslinkValidationSetForm(java.awt.Frame parent) {
         super(parent);
         initComponents();
         this.toolRscManager = ResourcesManager.getInstance();
@@ -107,7 +108,7 @@ public class LTWAssessmentSetForm extends javax.swing.JDialog {
 
         imageLabel.setName("imageLabel"); // NOI18N
 
-        org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(ltwassessmenttool.LTWAssessmentToolApp.class).getContext().getResourceMap(LTWAssessmentSetForm.class);
+        org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(crosslink.CrosslinkValidationToolApp.class).getContext().getResourceMap(CrosslinkValidationSetForm.class);
         jLabel1.setFont(resourceMap.getFont("jLabel1.font")); // NOI18N
         jLabel1.setText(resourceMap.getString("jLabel1.text")); // NOI18N
         jLabel1.setName("jLabel1"); // NOI18N
@@ -119,7 +120,7 @@ public class LTWAssessmentSetForm extends javax.swing.JDialog {
         assXmlSetTxtField.setEnabled(false);
         assXmlSetTxtField.setName("assXmlSetTxtField"); // NOI18N
 
-        javax.swing.ActionMap actionMap = org.jdesktop.application.Application.getInstance(ltwassessmenttool.LTWAssessmentToolApp.class).getContext().getActionMap(LTWAssessmentSetForm.class, this);
+        javax.swing.ActionMap actionMap = org.jdesktop.application.Application.getInstance(crosslink.CrosslinkValidationToolApp.class).getContext().getActionMap(CrosslinkValidationSetForm.class, this);
         assBrowseBtn.setAction(actionMap.get("browseAssessXMLSet")); // NOI18N
         assBrowseBtn.setText(resourceMap.getString("assBrowseBtn.text")); // NOI18N
         assBrowseBtn.setName("assBrowseBtn"); // NOI18N
@@ -182,7 +183,7 @@ public class LTWAssessmentSetForm extends javax.swing.JDialog {
     // End of variables declaration//GEN-END:variables
 
     private void updatePoolerToResourceXML() {
-        org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(ltwassessmenttool.LTWAssessmentToolApp.class).getContext().getResourceMap(LTWAssessmentToolView.class);
+        org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(crosslink.CrosslinkValidationToolApp.class).getContext().getResourceMap(CrosslinkValidationToolView.class);
         PoolerManager myPooler = PoolerManager.getInstance();
         afProperty = myPooler.getPoolProperty();    // [0]:participant-id, [1]:run-id, [2]:task, [3]:collection
         RunTopics = myPooler.getAllTopicsInPool();  // Vector<String[]>: [0]:File, [1]:Name

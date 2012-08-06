@@ -1,4 +1,4 @@
-package ltwassessmenttool.listener;
+package crosslink.listener;
 
 import java.awt.event.MouseEvent;
 import java.util.Collections;
@@ -8,11 +8,12 @@ import javax.swing.JTable;
 import javax.swing.JTextPane;
 import javax.swing.event.MouseInputListener;
 
-import ltwassessment.parsers.ResourcesManager;
-import ltwassessment.utility.AttributiveCellRenderer;
-import ltwassessment.utility.PaneTableIndexing;
-import ltwassessment.utility.tabTxtPaneManager;
-import ltwassessment.utility.tbaTxtPaneManager;
+import crosslink.parsers.ResourcesManager;
+import crosslink.utility.AttributiveCellRenderer;
+import crosslink.utility.PaneTableIndexing;
+import crosslink.utility.tabTxtPaneManager;
+import crosslink.utility.tbaTxtPaneManager;
+
 
 /**
  * @author Darren HUANG

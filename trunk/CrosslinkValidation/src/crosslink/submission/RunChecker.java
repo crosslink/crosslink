@@ -1,10 +1,11 @@
-package ltwassessmenttool.submission;
+package crosslink.submission;
 
 import java.io.File;
 
-import ltwassessment.AppResource;
-import ltwassessment.submission.Anchor;
-import ltwassessment.submission.Run;
+import crosslink.AppResource;
+import crosslink.submission.Anchor;
+import crosslink.submission.Run;
+
 
 public class RunChecker {
 	

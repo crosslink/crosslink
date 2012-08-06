@@ -1,7 +1,7 @@
 /*
- * LTWAssessmentToolView.java
+ * CrosslinkValidationToolView.java
  */
-package ltwassessmenttool;
+package crosslink;
 
 import java.awt.Dimension;
 import java.awt.Font;
@@ -22,6 +22,34 @@ import org.jdesktop.application.Action;
 import org.jdesktop.application.ResourceMap;
 import org.jdesktop.application.SingleFrameApplication;
 import org.jdesktop.application.FrameView;
+
+import crosslink.AppResource;
+import crosslink.assessment.Bep;
+import crosslink.assessment.IndexedAnchor;
+import crosslink.font.AdjustFont;
+import crosslink.listener.CaretListenerLabel;
+import crosslink.listener.linkPaneMouseListener;
+import crosslink.listener.paneTableMouseListener;
+import crosslink.listener.topicPaneMouseListener;
+import crosslink.parsers.FOLTXTMatcher;
+import crosslink.parsers.PoolerManager;
+import crosslink.parsers.ResourcesManager;
+import crosslink.parsers.Xml2Html;
+import crosslink.parsers.assessmentFormXml;
+import crosslink.utility.AttributiveCellRenderer;
+import crosslink.utility.InteractiveRenderer;
+import crosslink.utility.ObservableSingleton;
+import crosslink.utility.PaneTableIndexing;
+import crosslink.utility.PaneTableManager;
+import crosslink.utility.TABInteractiveTableModel;
+import crosslink.utility.TBAInteractiveTableModel;
+import crosslink.utility.fieldUpdateObserver;
+import crosslink.utility.highlightPainters;
+import crosslink.utility.tabTxtPaneManager;
+import crosslink.utility.tbaTxtPaneManager;
+import crosslink.validation.ValidationMessage;
+import crosslink.validation.Validator;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileWriter;
@@ -54,37 +82,11 @@ import javax.swing.text.StyledDocument;
 
 import javax.swing.SwingWorker;
 
-import ltwassessment.AppResource;
-import ltwassessment.assessment.Bep;
-import ltwassessment.assessment.IndexedAnchor;
-import ltwassessment.font.AdjustFont;
-import ltwassessment.listener.CaretListenerLabel;
-import ltwassessment.listener.linkPaneMouseListener;
-import ltwassessment.listener.topicPaneMouseListener;
-import ltwassessment.parsers.FOLTXTMatcher;
-import ltwassessment.parsers.Xml2Html;
-import ltwassessment.parsers.assessmentFormXml;
-import ltwassessment.parsers.PoolerManager;
-import ltwassessment.parsers.ResourcesManager;
-import ltwassessment.utility.AttributiveCellRenderer;
-import ltwassessment.utility.InteractiveRenderer;
-import ltwassessment.utility.ObservableSingleton;
-import ltwassessment.utility.TABInteractiveTableModel;
-import ltwassessment.utility.TBAInteractiveTableModel;
-import ltwassessment.utility.fieldUpdateObserver;
-import ltwassessment.utility.highlightPainters;
-import ltwassessment.utility.PaneTableIndexing;
-import ltwassessment.utility.PaneTableManager;
-import ltwassessment.utility.tabTxtPaneManager;
-import ltwassessment.utility.tbaTxtPaneManager;
-import ltwassessment.validation.ValidationMessage;
-import ltwassessment.validation.Validator;
-import ltwassessmenttool.listener.paneTableMouseListener;
 
 /**
  * The main frame for the Assessment Tool
  */
-public class LTWAssessmentToolView extends FrameView {
+public class CrosslinkValidationToolView extends FrameView {
 
     // -------------------------------------------------------------------------
     // constant variables
@@ -153,12 +155,12 @@ public class LTWAssessmentToolView extends FrameView {
     protected TBAInteractiveTableModel tbaTableModel;
     ButtonGroup group = new ButtonGroup();
 
-    public LTWAssessmentToolView(SingleFrameApplication app) {
+    public CrosslinkValidationToolView(SingleFrameApplication app) {
         super(app);
         
         // update resource manager first thing with the app starting up
         AppResource.forAssessment = false;
-        AppResource.getInstance().setResourceMap(org.jdesktop.application.Application.getInstance(ltwassessmenttool.LTWAssessmentToolApp.class).getContext().getResourceMap(ltwassessmenttool.LTWAssessmentToolView.class));
+        AppResource.getInstance().setResourceMap(org.jdesktop.application.Application.getInstance(crosslink.CrosslinkValidationToolApp.class).getContext().getResourceMap(crosslink.CrosslinkValidationToolView.class));
 
         initComponents();
         customiseComponents();
@@ -300,7 +302,7 @@ public class LTWAssessmentToolView extends FrameView {
         javax.swing.JMenuItem aboutMenuItem = new javax.swing.JMenuItem();
         buttonGroup1 = new javax.swing.ButtonGroup();
 
-        org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(ltwassessmenttool.LTWAssessmentToolApp.class).getContext().getResourceMap(LTWAssessmentToolView.class);
+        org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(crosslink.CrosslinkValidationToolApp.class).getContext().getResourceMap(CrosslinkValidationToolView.class);
         mainPanel.setBackground(resourceMap.getColor("mainPanel.background")); // NOI18N
         mainPanel.setName("mainPanel"); // NOI18N
         mainPanel.setPreferredSize(new java.awt.Dimension(1032, 780));
@@ -1787,7 +1789,7 @@ public class LTWAssessmentToolView extends FrameView {
         fileMenu.setText(resourceMap.getString("fileMenu.text")); // NOI18N
         fileMenu.setName("fileMenu"); // NOI18N
 
-        javax.swing.ActionMap actionMap = org.jdesktop.application.Application.getInstance(ltwassessmenttool.LTWAssessmentToolApp.class).getContext().getActionMap(LTWAssessmentToolView.class, this);
+        javax.swing.ActionMap actionMap = org.jdesktop.application.Application.getInstance(crosslink.CrosslinkValidationToolApp.class).getContext().getActionMap(CrosslinkValidationToolView.class, this);
         exitMenuItem.setAction(actionMap.get("quit")); // NOI18N
         exitMenuItem.setName("exitMenuItem"); // NOI18N
         fileMenu.add(exitMenuItem);
@@ -2024,19 +2026,19 @@ public class LTWAssessmentToolView extends FrameView {
                     String msgFromValidation = validator.validateSubmissionXML(fileList);
                     if (msgFromValidation.trim().startsWith("Err Msg:")) {
                         // Errors: well-form or xml data
-                        JOptionPane.showMessageDialog(LTWAssessmentToolApp.getApplication().getMainFrame(), msgFromValidation);
+                        JOptionPane.showMessageDialog(CrosslinkValidationToolApp.getApplication().getMainFrame(), msgFromValidation);
                     } else {
                         // split the submission run into different XML files by each Topic
                         String backMsg = splitSubmissionByTopics(absFilePath);
                         if (backMsg.startsWith("Error Msg:")) {
-                            JOptionPane.showMessageDialog(LTWAssessmentToolApp.getApplication().getMainFrame(), backMsg);
+                            JOptionPane.showMessageDialog(CrosslinkValidationToolApp.getApplication().getMainFrame(), backMsg);
                         } else {
                             String subRunDirectory = "Submission has been splited into the directory, \r\n" + backMsg + "\r\n Please load these subdivided runs one by one using the tool.";
-                            JOptionPane.showMessageDialog(LTWAssessmentToolApp.getApplication().getMainFrame(), subRunDirectory);
+                            JOptionPane.showMessageDialog(CrosslinkValidationToolApp.getApplication().getMainFrame(), subRunDirectory);
                         }
                     }
                 } catch (IOException ex) {
-                    Logger.getLogger(LTWAssessmentToolView.class.getName()).log(Level.SEVERE, null, ex);
+                    Logger.getLogger(CrosslinkValidationToolView.class.getName()).log(Level.SEVERE, null, ex);
                 }
             } else {
                 String notXMLMsg = "Error Msg: The submission run must be an XML file.\r\n" +
@@ -2084,7 +2086,7 @@ public class LTWAssessmentToolView extends FrameView {
                     String msgFromValidation = validator.validateSubmissionXML(fileList);
                     if (msgFromValidation.startsWith("Err Msg:")) {
                         // Errors: well-form or xml data
-                        JOptionPane.showMessageDialog(LTWAssessmentToolApp.getApplication().getMainFrame(), msgFromValidation);
+                        JOptionPane.showMessageDialog(CrosslinkValidationToolApp.getApplication().getMainFrame(), msgFromValidation);
                     } else {
                     	// clear up all the contents 
                     	clearCompents();
@@ -2098,7 +2100,7 @@ public class LTWAssessmentToolView extends FrameView {
                         
                         ValidationMessage.getInstance().append(poolingMsg);
                         ValidationMessage.getInstance().flush();
-                        //JOptionPane.showMessageDialog(LTWAssessmentToolApp.getApplication().getMainFrame(), poolingMsg);
+                        //JOptionPane.showMessageDialog(CrosslinkValidationToolApp.getApplication().getMainFrame(), poolingMsg);
                         // =====================================================
                         updatePoolerToResourceXML(thisXMLFile.getAbsolutePath());
                         
@@ -2144,7 +2146,7 @@ public class LTWAssessmentToolView extends FrameView {
                         
                     }
                 } catch (IOException ex) {
-                    Logger.getLogger(LTWAssessmentToolView.class.getName()).log(Level.SEVERE, null, ex);
+                    Logger.getLogger(CrosslinkValidationToolView.class.getName()).log(Level.SEVERE, null, ex);
                 } catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -2159,22 +2161,22 @@ public class LTWAssessmentToolView extends FrameView {
     @Action
     public void showCorpusBox() {
         if (corpusBox == null) {
-            JFrame mainFrame = LTWAssessmentToolApp.getApplication().getMainFrame();
-            corpusBox = new LTWAssessmentToolCorpusBox(mainFrame);
+            JFrame mainFrame = CrosslinkValidationToolApp.getApplication().getMainFrame();
+            corpusBox = new CrosslinkValidationToolCorpusBox(mainFrame);
             corpusBox.setLocationRelativeTo(mainFrame);
-            ((LTWAssessmentToolCorpusBox) corpusBox).setJLableCollection(this.jLabelCollection);
+            ((CrosslinkValidationToolCorpusBox) corpusBox).setJLableCollection(this.jLabelCollection);
         }
-        LTWAssessmentToolApp.getApplication().show(corpusBox);
+        CrosslinkValidationToolApp.getApplication().show(corpusBox);
     }
 
     @Action
     public void showAboutBox() {
         if (aboutBox == null) {
-            JFrame mainFrame = LTWAssessmentToolApp.getApplication().getMainFrame();
-            aboutBox = new LTWAssessmentToolAboutBox(mainFrame);
+            JFrame mainFrame = CrosslinkValidationToolApp.getApplication().getMainFrame();
+            aboutBox = new CrosslinkValidationToolAboutBox(mainFrame);
             aboutBox.setLocationRelativeTo(mainFrame);
         }
-        LTWAssessmentToolApp.getApplication().show(aboutBox);
+        CrosslinkValidationToolApp.getApplication().show(aboutBox);
     }
 
     private void outRadioBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_outRadioBtnActionPerformed
@@ -2212,11 +2214,11 @@ public class LTWAssessmentToolView extends FrameView {
     @Action
     public void showAssessmentSetBox() {
         if (assessmentSetBox == null) {
-            JFrame mainFrame = LTWAssessmentToolApp.getApplication().getMainFrame();
-            assessmentSetBox = new LTWAssessmentSetForm(mainFrame);
+            JFrame mainFrame = CrosslinkValidationToolApp.getApplication().getMainFrame();
+            assessmentSetBox = new CrosslinkValidationSetForm(mainFrame);
             assessmentSetBox.setLocationRelativeTo(mainFrame);
         }
-        LTWAssessmentToolApp.getApplication().show(assessmentSetBox);
+        CrosslinkValidationToolApp.getApplication().show(assessmentSetBox);
     }
 
     private void updatePoolerToResourceXML(String poolFile) {
@@ -2491,12 +2493,12 @@ public class LTWAssessmentToolView extends FrameView {
         // ---------------------------------------------------------------------
         // initialize Topic and Link Content Panels
 //        this.topicTextPane.addCaretListener(caretListenerLabel);
-        topicPaneMouseListener mtTopicPaneListener = new topicPaneMouseListener(this.topicTextPane, this.linkTextPane); //, this.currAnchorSCROLPairs, this.anchorBepTable, this.paneTableIndexing);
+        topicPaneMouseListener mtTopicPaneListener = new topicPaneMouseListener(this.topicTextPane, this.linkTextPane, this.currAnchorSCROLPairs, this.anchorBepTable, this.paneTableIndexing);
         this.topicTextPane.addMouseListener(mtTopicPaneListener);
         this.topicTextPane.addMouseMotionListener(mtTopicPaneListener);
         // ---------------------------------------------------------------------
         // set up linkPaneMouseListener()
-        linkPaneMouseListener myLPMListener = new linkPaneMouseListener(this.topicTextPane, this.linkTextPane); //, this.anchorBepTable);
+        linkPaneMouseListener myLPMListener = new linkPaneMouseListener(this.topicTextPane, this.linkTextPane, this.anchorBepTable);
         this.linkTextPane.addMouseListener(myLPMListener);
         // ---------------------------------------------------------------------
         // According to TAB-Navigation-Indices
@@ -2548,7 +2550,7 @@ public class LTWAssessmentToolView extends FrameView {
 //            java.net.URL htmlFileURL = new File(xmlParser.getHtmlPath().toString()).toURI().toURL();
 //            this.topicTextPane.setPage(htmlFileURL);
 //        } catch (IOException ex) {
-//            Logger.getLogger(LTWAssessmentToolView.class.getName()).log(Level.SEVERE, null, ex);
+//            Logger.getLogger(CrosslinkValidationToolView.class.getName()).log(Level.SEVERE, null, ex);
 //        }
     }
 
@@ -2562,7 +2564,7 @@ public class LTWAssessmentToolView extends FrameView {
                 anchorHighlightReference = highlighter.addHighlight(Integer.valueOf(alPair[1]), Integer.valueOf(alPair[2]), painters.getAnchorPainter());
             }
         } catch (BadLocationException ex) {
-            Logger.getLogger(LTWAssessmentToolView.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(CrosslinkValidationToolView.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
