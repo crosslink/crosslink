@@ -18,6 +18,7 @@ import crosslink.submission.Anchor;
 import crosslink.submission.AnchorSetInterface;
 import crosslink.submission.Target;
 import crosslink.submission.Topic;
+import crosslink.utility.FileUtil;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -32,6 +33,9 @@ import crosslink.parsers.ResourcesManager;
 
 public class Run<AnchorSet>{
 	
+	private static final String rootOpen = "<crosslink-submission participant-id=\"%s\" run-id=\"%s\" task=\"%s\" default_lang=\"%s\" source_lang=\"%s\">";
+	private static final String rootClosed = "</crosslink-submission>";
+	
 	private HashMap<String, Topic> topics = null;
 	private String runName = null;
 	private boolean convertToTextOffset = true;
@@ -39,6 +43,10 @@ public class Run<AnchorSet>{
 	private String runTargetLang = null;
 	private boolean checkAnchors = false;
 	private boolean needSorted = false;
+	
+	private String runId;
+	private String affilication;
+	private String task;
 	
 	private Class<AnchorSet> factory = null;
 	
@@ -117,6 +125,26 @@ public class Run<AnchorSet>{
 	
 	public void read(File runFile, boolean checkAnchors, String sourceLang, String targetLang) {
 		read(runFile, checkAnchors, sourceLang, targetLang, true);
+	}
+	
+	private String xmlRootTagOpen() {
+		String openTag = String.format(rootOpen, affilication, runId, task, runTargetLang, runSourceLang);
+		return openTag;
+	}
+	
+	private String xmlRootTagClose() {
+		return rootClosed;
+	}
+	
+	public void split(String path) {
+		for (Topic<AnchorSet> topic: topics.values()) {
+			StringBuffer content = new StringBuffer();
+			content.append(xmlRootTagOpen());
+			String topicXml = topic.anchorsToXml();
+			content.append(topicXml);
+			content.append(xmlRootTagClose());
+			FileUtil.writeFile(new File(path + File.separator + topic.getId() + ".xml"), topicXml);
+		}
 	}
 	
 	public void read(File runFile, boolean checkAnchors, String sourceLang, String targetLang, boolean needSorted) {

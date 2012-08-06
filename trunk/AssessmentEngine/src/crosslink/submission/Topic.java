@@ -88,4 +88,17 @@ public class Topic<AnchorSet> extends WikiArticleXml {
 	public void setParent(Run parent) {
 		this.parent = parent;
 	}
+
+	public String anchorsToXml() {
+		StringBuffer sb = new StringBuffer();
+		sb.append(String.format("\t<topic file=\"%s\" name=\"%s\">", id, title));
+		if (anchors instanceof Collection) {
+			Anchor[] anchorArray = (Anchor[]) ((Collection<Anchor>)anchors).toArray();
+			for (Anchor anchor : anchorArray) {
+				sb.append(anchor.toXml());
+			}
+		}
+		sb.append("\t</topic>\n");
+		return sb.toString();
+	}
 }

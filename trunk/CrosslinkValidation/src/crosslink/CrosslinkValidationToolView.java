@@ -36,6 +36,7 @@ import crosslink.parsers.PoolerManager;
 import crosslink.parsers.ResourcesManager;
 import crosslink.parsers.Xml2Html;
 import crosslink.parsers.assessmentFormXml;
+import crosslink.submission.Run;
 import crosslink.utility.AttributiveCellRenderer;
 import crosslink.utility.InteractiveRenderer;
 import crosslink.utility.ObservableSingleton;
@@ -1891,101 +1892,39 @@ public class CrosslinkValidationToolView extends FrameView {
         String isSplitOK = "Error Msg: ";
         StringBuffer sb = new StringBuffer();
         FileInputStream fstream = null;
-        try {
-            // 0) get the ROOT directory and create a sub folder 
-            //    underneath the ROOT to store sub-division topic runs
-            String submissionFileName = "";
-            String subDirectory = "";
-            String rootDirectory = "";
-            if (runFileAbsPath.lastIndexOf(File.separator) >= 0) {
-                submissionFileName = runFileAbsPath.substring(runFileAbsPath.lastIndexOf(File.separator) + 1, runFileAbsPath.toLowerCase().lastIndexOf(".xml"));
-                rootDirectory = runFileAbsPath.substring(0, runFileAbsPath.lastIndexOf(File.separator) + 1);
-                subDirectory = rootDirectory + submissionFileName + File.separator;
-            } else if (runFileAbsPath.lastIndexOf(File.separator) >= 0) {
-                submissionFileName = runFileAbsPath.substring(runFileAbsPath.lastIndexOf(File.separator) + 1, runFileAbsPath.toLowerCase().lastIndexOf(".xml"));
-                rootDirectory = runFileAbsPath.substring(0, runFileAbsPath.lastIndexOf(File.separator) + 1);
-                subDirectory = rootDirectory + submissionFileName + File.separator;
-            }
-            
-            File thisSubFolder = new File(subDirectory);
-            boolean subDirOK = false;
-            if (!thisSubFolder.exists()){
-                if (thisSubFolder.mkdir()){
-                    subDirOK = true;
-                } else {
-                    subDirOK = false;
-                }
-            } else {
-                subDirOK = true;
-            }
-            if (subDirOK) {
-                // -----------------------------------------------------------------
-//                fstream = new FileInputStream(runFileAbsPath);
-//                DataInputStream in = new DataInputStream(fstream, "UTF-8");
-//                BufferedReader br = new BufferedReader(new InputStreamReader(in));
-            	BufferedReader br = new BufferedReader(
-            	        new InputStreamReader(new FileInputStream(runFileAbsPath), "UTF-8"));
-                String strLine;
-                while ((strLine = br.readLine()) != null) {
-                    sb.append(strLine);
-                }
-                // -----------------------------------------------------------------
-                String runProperty = "";
-                String endTag = "</crosslink-submission>";
-                Vector<String> topicBodyV = new Vector<String>();
-                Vector<String> topicFileIDV = new Vector<String>();
-                String thisRunContent = sb.toString();
-                // 1) get run Property
-                String root = "<crosslink-submission";
-                runProperty = thisRunContent.substring(thisRunContent.indexOf(root), thisRunContent.indexOf("</collections>") + 14);
-                boolean loopFlag = true;
-                int fromCounter = 0;
-                while (loopFlag) {
-                    int startPoint = thisRunContent.indexOf("<topic", fromCounter);
-                    int endPoint = thisRunContent.indexOf("</topic>", startPoint);
-                    int fileIDSP = thisRunContent.indexOf("file=", startPoint + 6);
-                    int fileIDEP = thisRunContent.indexOf("\"", fileIDSP + 6);
-                    String topicFileIDS = thisRunContent.substring(fileIDSP + 6, fileIDEP);
-                    topicFileIDV.add(topicFileIDS);
-                    String topicBodyS = thisRunContent.substring(startPoint, endPoint + 8);
-                    topicBodyV.add(topicBodyS);
-                    fromCounter = endPoint;
-                    int checkPoint = thisRunContent.indexOf("<topic", fromCounter);
-                    if (checkPoint < 0) {
-                        loopFlag = false;
-                    }
-                }
-                // -----------------------------------------------------------------
-                if (topicBodyV.size() == topicFileIDV.size()) {
-                    for (int i = 0; i < topicBodyV.size(); i++) {
-                        String thisTopic = topicBodyV.elementAt(i);
-                        String thisTopicID = topicFileIDV.elementAt(i);
-                        StringBuffer topicSB = new StringBuffer();
-                        topicSB.append(runProperty);
-                        topicSB.append(thisTopic);
-                        topicSB.append(endTag);
-                        String thisTopicRun = subDirectory + thisTopicID + ".xml";
-//                        FileWriter fw = new FileWriter(thisTopicRun, "UTF-8");
-//                        BufferedWriter out = new BufferedWriter(fw);
-                        BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(thisTopicRun),"UTF-8")); 
-                        out.write(topicSB.toString());
-                        out.close();
-                    }
-                } else {
-                    return isSplitOK + "Topics might be dupicated! Please check...";
-                }
-                // -----------------------------------------------------------------
-//                fstream.close();
-//                in.close();
-                br.close();
-                return subDirectory;
-            } else {
-                return isSplitOK + "Create Folder False: " + subDirectory + ".\r\n Check Directory status!";
-            }
-
-        } catch (IOException ex) {
-            return isSplitOK + ex.getMessage();
-        }
+        // 0) get the ROOT directory and create a sub folder 
+		//    underneath the ROOT to store sub-division topic runs
+		String submissionFileName = "";
+		String subDirectory = "";
+		String rootDirectory = "";
+		if (runFileAbsPath.lastIndexOf(File.separator) >= 0) {
+		    submissionFileName = runFileAbsPath.substring(runFileAbsPath.lastIndexOf(File.separator) + 1, runFileAbsPath.toLowerCase().lastIndexOf(".xml"));
+		    rootDirectory = runFileAbsPath.substring(0, runFileAbsPath.lastIndexOf(File.separator) + 1);
+		    subDirectory = rootDirectory + submissionFileName + File.separator;
+		} else if (runFileAbsPath.lastIndexOf(File.separator) >= 0) {
+		    submissionFileName = runFileAbsPath.substring(runFileAbsPath.lastIndexOf(File.separator) + 1, runFileAbsPath.toLowerCase().lastIndexOf(".xml"));
+		    rootDirectory = runFileAbsPath.substring(0, runFileAbsPath.lastIndexOf(File.separator) + 1);
+		    subDirectory = rootDirectory + submissionFileName + File.separator;
+		}
+		
+		File thisSubFolder = new File(subDirectory);
+		boolean subDirOK = false;
+		if (!thisSubFolder.exists()){
+		    if (thisSubFolder.mkdir()){
+		        subDirOK = true;
+		    } else {
+		        subDirOK = false;
+		    }
+		} else {
+		    subDirOK = true;
+		}
+		if (subDirOK) {
+			Run<ArrayList> run = new Run<ArrayList>(new File(runFileAbsPath));
+			run.split(subDirectory);
+		    return subDirectory;
+		} else {
+		    return isSplitOK + "Create Folder False: " + subDirectory + ".\r\n Check Directory status!";
+		}
     }
 
     @Action

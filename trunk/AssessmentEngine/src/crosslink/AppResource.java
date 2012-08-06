@@ -35,7 +35,7 @@ public class AppResource {
 	public static final String TOPIC_LIST_FILE = "topics.txt";
 	
 	public static Hashtable<String, String> topics = new Hashtable<String, String>();
-	public static int crosslinkTask; 
+	public static int crosslinkTask = CROSSLINK_TASK_2; 
 
 	
 	public AppResource() {
