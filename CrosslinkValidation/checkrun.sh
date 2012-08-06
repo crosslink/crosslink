@@ -14,4 +14,4 @@ else
 	fi
 fi
 
-java -cp $CLASSPATH ltwassessmenttool.submission.RunChecker "$@"
+java -cp $CLASSPATH crosslink.submission.RunChecker "$@"
