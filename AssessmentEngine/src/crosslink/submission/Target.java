@@ -118,4 +118,9 @@ public class Target {
 	public void setRank(int rank) {
 		this.rank = rank;
 	}
+
+	public String toXml() {
+		String element = "\t\t\t<tofile bep_offset=\"%d\" lang=\"%s\" title=\"%s\">%s/tofile>";
+		return String.format(element, this.bepOffset, this.lang, this.title, this.id);
+	}
 }

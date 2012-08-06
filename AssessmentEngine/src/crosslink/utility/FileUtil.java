@@ -1,9 +1,13 @@
 package crosslink.utility;
 
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.io.UnsupportedEncodingException;
 import java.nio.channels.FileChannel;
 
 /*
@@ -47,5 +51,25 @@ public class FileUtil {
 		copyFile(sourceFile, destFile);
 		
 		sourceFile.delete();
+	}
+	 
+	public static void writeFile(File file, String content) {
+		writeFile(file, content, "UTF-8");
+	}
+	
+	public static void writeFile(File file, String content, String charset) {
+        BufferedWriter out;
+		try {
+			out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file), charset));
+	        out.write(content);
+	        out.close();
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} 
+
 	}
 }

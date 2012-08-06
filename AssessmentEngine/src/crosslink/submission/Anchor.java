@@ -245,7 +245,7 @@ public class Anchor {
 			}
 		}
 		
-		return valid;
+		return valid;			// TODO Auto-generated method stub
 	}
 
 	@Override
@@ -276,5 +276,17 @@ public class Anchor {
 			return 1;
 		}
 		return 1;
+	}
+
+	public String toXml() {
+		StringBuffer sb = new StringBuffer();
+		String openTag = "\t\t<anchor offset=\"%d\" length=\"%d\" name=\"%s\">";
+		sb.append(String.format(openTag, this.offset, this.length, this.name));
+		for (Target target : targets.values()) {
+			sb.append(target.toXml());
+		}
+		String closeTag = "\t\t</anchor>";
+		sb.append(closeTag);
+		return sb.toString();
 	}
 }
