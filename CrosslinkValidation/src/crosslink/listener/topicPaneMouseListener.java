@@ -1,4 +1,4 @@
-package ltwassessmenttool.listener;
+package crosslink.listener;
 
 import java.awt.Cursor;
 import java.awt.Point;
@@ -25,17 +25,18 @@ import javax.swing.text.Style;
 import javax.swing.text.StyleConstants;
 import javax.swing.text.StyledDocument;
 
-import ltwassessment.AppResource;
-import ltwassessment.assessment.Bep;
-import ltwassessment.assessment.IndexedAnchor;
-import ltwassessment.parsers.FOLTXTMatcher;
-import ltwassessment.parsers.Xml2Html;
-import ltwassessment.parsers.PoolerManager;
-import ltwassessment.parsers.ResourcesManager;
-import ltwassessment.utility.AttributiveCellRenderer;
-import ltwassessment.utility.highlightPainters;
-import ltwassessment.utility.PaneTableIndexing;
-import ltwassessmenttool.LTWAssessmentToolView;
+import crosslink.AppResource;
+import crosslink.CrosslinkValidationToolView;
+import crosslink.assessment.Bep;
+import crosslink.assessment.IndexedAnchor;
+import crosslink.parsers.FOLTXTMatcher;
+import crosslink.parsers.PoolerManager;
+import crosslink.parsers.ResourcesManager;
+import crosslink.parsers.Xml2Html;
+import crosslink.utility.AttributiveCellRenderer;
+import crosslink.utility.PaneTableIndexing;
+import crosslink.utility.highlightPainters;
+
 
 /**
  * @author Darren HUANG
@@ -83,7 +84,7 @@ public class topicPaneMouseListener implements MouseInputListener {
     }
 
     public topicPaneMouseListener(JTextPane topicPane, JTextPane linkPane, Vector<String[]> scrSEPosVSA, JTable paneTable, PaneTableIndexing paneTableIndexing) {
-        org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(ltwassessmenttool.LTWAssessmentToolApp.class).getContext().getResourceMap(LTWAssessmentToolView.class);
+        org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(crosslink.CrosslinkValidationToolApp.class).getContext().getResourceMap(CrosslinkValidationToolView.class);
         afTasnCollectionErrors = resourceMap.getString("AssFormXml.taskCollectionError");
         bepIconImageFilePath = resourceMap.getString("bepIcon.imageFilePath");
         bepHighlightIconImageFilePath = resourceMap.getString("bepHighlightIcon.imageFilePath");

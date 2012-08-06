@@ -1,4 +1,4 @@
-package ltwassessmenttool.listener;
+package crosslink.listener;
 
 import java.awt.Rectangle;
 import javax.swing.JLabel;
@@ -8,7 +8,8 @@ import javax.swing.event.CaretEvent;
 import javax.swing.event.CaretListener;
 import javax.swing.text.BadLocationException;
 
-import ltwassessment.parsers.FOLTXTMatcher;
+import crosslink.parsers.FOLTXTMatcher;
+
 
 /**
  * @author Darren HUANG
