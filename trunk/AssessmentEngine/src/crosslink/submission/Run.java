@@ -54,8 +54,11 @@ public class Run<AnchorSet>{
 		init();
 	}
     
-    public Run(File runFile) {
+    public Run(File runFile, Class<AnchorSet> factory, boolean convertToTextOffset) {
+    	this.setAnchorSetFactory(factory);
+    	this.convertToTextOffset = convertToTextOffset;
 		init();	
+		read(runFile);
     }
     
 	public Run(File runFile, String sourceLang, String targetLang) {
@@ -116,7 +119,7 @@ public class Run<AnchorSet>{
 	}
 	
 	public void read(File runFile) {
-		read(runFile, checkAnchors, runSourceLang, runTargetLang, true);
+		read(runFile, checkAnchors, runSourceLang, runTargetLang, false);
 	}
 	
 	public void read(File runFile, boolean needSorted) {
@@ -299,7 +302,7 @@ public class Run<AnchorSet>{
                 /**
                  * REMEMBER, it has to be sorted before being used
                  */
-                if (needSorted)
+                if (needSorted && anchors instanceof LinkedAnchors)
                 	((AnchorSetInterface)anchors).sort();
 //                }
                     
