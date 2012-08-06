@@ -9,7 +9,8 @@ import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.Map;
 
-import ltwassessment.utility.WildcardFiles;
+import crosslink.utility.WildcardFiles;
+
 
 //import org.apache.tools.bzip2.CBZip2InputStream;
 

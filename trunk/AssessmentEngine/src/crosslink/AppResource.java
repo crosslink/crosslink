@@ -18,6 +18,8 @@ import crosslink.font.AdjustFont;
 import crosslink.AppResource;
 
 public class AppResource {
+	public static final int CROSSLINK_TASK_2 = 1;
+	public static final int CROSSLINK_TASK_1 = 0; 
 	
 	public static AppResource instance = null;
     public static boolean forAssessment = false;
@@ -30,9 +32,10 @@ public class AppResource {
 	
 	public static String DEFAULT_TOPIC_PATH = "resources" + File.separator + "Topics";
 	private String topicPath = null;
-	public static final String TOPIC_LIST_FILE = "topics.txt"; 
+	public static final String TOPIC_LIST_FILE = "topics.txt";
 	
-	public static Hashtable<String, String> topics = new Hashtable<String, String>(); 
+	public static Hashtable<String, String> topics = new Hashtable<String, String>();
+	public static int crosslinkTask; 
 
 	
 	public AppResource() {
@@ -111,17 +114,24 @@ public class AppResource {
 	public String getTopicDirectory(String lang, String fileID) {
 		String key = fileID + ".xml";
 		StringBuffer dir = new StringBuffer(getTopicPathWithLang(lang));
-		if (topics.size() > 0) {
-			if (topics.containsKey(key)) {
-				dir.append(topics.get(key)); 
+		
+		if (AppResource.crosslinkTask == AppResource.CROSSLINK_TASK_1) {		
+			if (topics.size() > 0) {
+				if (topics.containsKey(key)) {
+					dir.append(topics.get(key)); 
+				}
+				else
+					dir.append("test");
+				dir.append(File.separator);
 			}
-			else
-				dir.append("test");
-			dir.append(File.separator);
 		}
 		return dir.toString();
     }
 	
+	private String getLangPath(String lang) {
+		return lang + File.separator;
+	}
+
 	public String getTopicDirectory(String fileID) {
 		if (!topicPath.equals(DEFAULT_TOPIC_PATH))
 			return topicPath;
@@ -129,7 +139,17 @@ public class AppResource {
     }
 	
 	private String getTopicPathWithLang(String lang) {
-		return topicPath + File.separator + lang + File.separator;
+		StringBuffer dir = new StringBuffer(topicPath + File.separator);
+		if (AppResource.crosslinkTask == AppResource.CROSSLINK_TASK_1) {
+			dir.append("crosslink1");
+			dir.append(File.separator);
+		}
+		else if (AppResource.crosslinkTask == AppResource.CROSSLINK_TASK_2) {
+			dir.append("crosslink2");
+			dir.append(File.separator);
+		}
+		dir.append(getLangPath(lang));
+		return dir.toString();
 	}
 	
 	private String getTopicPathWithLang() {

@@ -168,9 +168,8 @@ public class CrosslinkValidationToolView extends FrameView {
         group.add(outRadioBtn);
         group.add(inRadioBtn);
 
-        buttonGroup1.add(jRadioButtonMenuItemZh);
-        buttonGroup1.add(jRadioButtonMenuItemJa);
-        buttonGroup1.add(jRadioButtonMenuItemKo);
+        buttonGroup1.add(jRadioButtonMenuItemCrosslink2);
+        buttonGroup1.add(jRadioButtonMenuItemCrosslink1);
 
 //        ObservableSingleton os = ObservableSingleton.getInstance();
 //        fieldUpdateObserver fuObserver = new fieldUpdateObserver(os, this.lblTopicTitle, this.lblTopicID, this.lblPoolAnchor, this.lblTargetPage);
@@ -295,9 +294,8 @@ public class CrosslinkValidationToolView extends FrameView {
         outRadioBtn = new javax.swing.JRadioButtonMenuItem();
         inRadioBtn = new javax.swing.JRadioButtonMenuItem();
         jMenuLang = new javax.swing.JMenu();
-        jRadioButtonMenuItemZh = new javax.swing.JRadioButtonMenuItem();
-        jRadioButtonMenuItemJa = new javax.swing.JRadioButtonMenuItem();
-        jRadioButtonMenuItemKo = new javax.swing.JRadioButtonMenuItem();
+        jRadioButtonMenuItemCrosslink2 = new javax.swing.JRadioButtonMenuItem();
+        jRadioButtonMenuItemCrosslink1 = new javax.swing.JRadioButtonMenuItem();
         javax.swing.JMenu helpMenu = new javax.swing.JMenu();
         javax.swing.JMenuItem aboutMenuItem = new javax.swing.JMenuItem();
         buttonGroup1 = new javax.swing.ButtonGroup();
@@ -362,6 +360,7 @@ public class CrosslinkValidationToolView extends FrameView {
         anchorBepTablePane.setViewportBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         anchorBepTablePane.setAutoscrolls(true);
         anchorBepTablePane.setDebugGraphicsOptions(javax.swing.DebugGraphics.BUFFERED_OPTION);
+        anchorBepTablePane.setHorizontalScrollBar(null);
         anchorBepTablePane.setMinimumSize(new java.awt.Dimension(410, 22432));
         anchorBepTablePane.setName("anchorBepTablePane");
         anchorBepTablePane.setPreferredSize(new java.awt.Dimension(210, 28720));
@@ -1779,7 +1778,7 @@ public class CrosslinkValidationToolView extends FrameView {
             .addGroup(mainPanelLayout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jSplitPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 713, Short.MAX_VALUE))
+                .addComponent(jSplitPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 717, Short.MAX_VALUE))
         );
 
         menuBar.setBackground(resourceMap.getColor("menuBar.background")); // NOI18N
@@ -1846,35 +1845,28 @@ public class CrosslinkValidationToolView extends FrameView {
         jMenuLang.setText(resourceMap.getString("jMenuLang.text")); // NOI18N
         jMenuLang.setName("jMenuLang"); // NOI18N
 
-        jRadioButtonMenuItemZh.setSelected(true);
-        jRadioButtonMenuItemZh.setText(resourceMap.getString("jRadioButtonMenuItemZh.text")); // NOI18N
-        jRadioButtonMenuItemZh.setName("jRadioButtonMenuItemZh"); // NOI18N
-        jRadioButtonMenuItemZh.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup1.add(jRadioButtonMenuItemCrosslink2);
+        jRadioButtonMenuItemCrosslink2.setSelected(true);
+        jRadioButtonMenuItemCrosslink2.setText(resourceMap.getString("jRadioButtonMenuItemCrosslink2.text")); // NOI18N
+        jRadioButtonMenuItemCrosslink2.setToolTipText(resourceMap.getString("jRadioButtonMenuItemCrosslink2.toolTipText")); // NOI18N
+        jRadioButtonMenuItemCrosslink2.setIcon(resourceMap.getIcon("jRadioButtonMenuItemCrosslink2.icon")); // NOI18N
+        jRadioButtonMenuItemCrosslink2.setName("jRadioButtonMenuItemCrosslink2"); // NOI18N
+        jRadioButtonMenuItemCrosslink2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButtonMenuItemZhActionPerformed(evt);
+                jRadioButtonMenuItemCrosslink2ActionPerformed(evt);
             }
         });
-        jMenuLang.add(jRadioButtonMenuItemZh);
+        jMenuLang.add(jRadioButtonMenuItemCrosslink2);
 
-        jRadioButtonMenuItemJa.setSelected(true);
-        jRadioButtonMenuItemJa.setText(resourceMap.getString("jRadioButtonMenuItemJa.text")); // NOI18N
-        jRadioButtonMenuItemJa.setName("jRadioButtonMenuItemJa"); // NOI18N
-        jRadioButtonMenuItemJa.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup1.add(jRadioButtonMenuItemCrosslink1);
+        jRadioButtonMenuItemCrosslink1.setText(resourceMap.getString("jRadioButtonMenuItemCrosslink1.text")); // NOI18N
+        jRadioButtonMenuItemCrosslink1.setName("jRadioButtonMenuItemCrosslink1"); // NOI18N
+        jRadioButtonMenuItemCrosslink1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButtonMenuItemJaActionPerformed(evt);
+                jRadioButtonMenuItemCrosslink1ActionPerformed(evt);
             }
         });
-        jMenuLang.add(jRadioButtonMenuItemJa);
-
-        jRadioButtonMenuItemKo.setSelected(true);
-        jRadioButtonMenuItemKo.setText(resourceMap.getString("jRadioButtonMenuItemKo.text")); // NOI18N
-        jRadioButtonMenuItemKo.setName("jRadioButtonMenuItemKo"); // NOI18N
-        jRadioButtonMenuItemKo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButtonMenuItemKoActionPerformed(evt);
-            }
-        });
-        jMenuLang.add(jRadioButtonMenuItemKo);
+        jMenuLang.add(jRadioButtonMenuItemCrosslink1);
 
         menuBar.add(jMenuLang);
 
@@ -2189,17 +2181,13 @@ public class CrosslinkValidationToolView extends FrameView {
 //        setIncomingTBA();
 }//GEN-LAST:event_inRadioBtnActionPerformed
 
-    private void jRadioButtonMenuItemZhActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonMenuItemZhActionPerformed
-        AppResource.targetLang = "zh";
-    }//GEN-LAST:event_jRadioButtonMenuItemZhActionPerformed
+    private void jRadioButtonMenuItemCrosslink2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonMenuItemCrosslink2ActionPerformed
+        AppResource.crosslinkTask = AppResource.CROSSLINK_TASK_2;
+    }//GEN-LAST:event_jRadioButtonMenuItemCrosslink2ActionPerformed
 
-    private void jRadioButtonMenuItemJaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonMenuItemJaActionPerformed
-        AppResource.targetLang = "ja";
-    }//GEN-LAST:event_jRadioButtonMenuItemJaActionPerformed
-
-    private void jRadioButtonMenuItemKoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonMenuItemKoActionPerformed
-        AppResource.targetLang = "ko";
-    }//GEN-LAST:event_jRadioButtonMenuItemKoActionPerformed
+    private void jRadioButtonMenuItemCrosslink1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonMenuItemCrosslink1ActionPerformed
+        AppResource.crosslinkTask = AppResource.CROSSLINK_TASK_1;
+    }//GEN-LAST:event_jRadioButtonMenuItemCrosslink1ActionPerformed
 
     public void highlightLastRow(int row) {
         int lastRow = tabTableModel.getRowCount();
@@ -2313,9 +2301,8 @@ public class CrosslinkValidationToolView extends FrameView {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItemJa;
-    private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItemKo;
-    private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItemZh;
+    private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItemCrosslink1;
+    private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItemCrosslink2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSplitPane jSplitPane1;
     private javax.swing.JSplitPane jSplitPane2;

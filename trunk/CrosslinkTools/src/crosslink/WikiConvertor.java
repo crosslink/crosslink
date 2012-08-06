@@ -14,8 +14,9 @@ import org.w3c.dom.Document;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
-import ltwassessment.utility.WildcardFiles;
-import ltwassessment.wiki.WikiArticleXml;
+import crosslink.utility.WildcardFiles;
+import crosslink.wiki.WikiArticleXml;
+
 
 public class WikiConvertor {
 	
@@ -62,7 +63,7 @@ public class WikiConvertor {
 	}
 	
 	protected String getContent(String file) {
-		WikiArticleXml article = new ltwassessment.wiki.WikiArticleXml(new File(file));
+		WikiArticleXml article = new crosslink.wiki.WikiArticleXml(new File(file));
 		return article.getTitle();
 	}
 

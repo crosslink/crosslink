@@ -2,17 +2,18 @@ package crosslink;
 
 import java.io.File;
 
-import ltwassessment.AppResource;
-import ltwassessment.parsers.ResourcesManager;
-import ltwassessment.submission.Anchor;
-import ltwassessment.submission.LinkedAnchors;
-import ltwassessment.submission.Target;
-import ltwassessment.submission.Topic;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
+
+import crosslink.AppResource;
+import crosslink.parsers.ResourcesManager;
+import crosslink.submission.Anchor;
+import crosslink.submission.LinkedAnchors;
+import crosslink.submission.Target;
+import crosslink.submission.Topic;
 
 public class RunDescription2Table {
 

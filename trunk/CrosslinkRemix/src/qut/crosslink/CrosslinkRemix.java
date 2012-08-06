@@ -5,12 +5,13 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
 
-import ltwassessment.submission.Anchor;
-import ltwassessment.submission.MappedAnchors;
-import ltwassessment.submission.Run;
-import ltwassessment.submission.Target;
-import ltwassessment.submission.Topic;
-import ltwassessment.submission.TopicLink;
+import crosslink.submission.Anchor;
+import crosslink.submission.MappedAnchors;
+import crosslink.submission.Run;
+import crosslink.submission.Target;
+import crosslink.submission.Topic;
+import crosslink.submission.TopicLink;
+
 
 
 public class CrosslinkRemix {

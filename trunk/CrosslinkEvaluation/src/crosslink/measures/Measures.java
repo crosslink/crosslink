@@ -19,10 +19,10 @@ import javax.xml.stream.XMLStreamConstants;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
 
-import ltwassessment.submission.Topic;
 
 import crosslink.XML2TXT;
 import crosslink.rungenerator.InexSubmission;
+import crosslink.submission.Topic;
 
 public class Measures extends Data {
     // -------------------------------------------------------------------------

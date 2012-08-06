@@ -2,7 +2,8 @@ package wikipedia;
 
 import java.io.File;
 
-import ltwassessment.wiki.WikiArticleXml;
+import crosslink.wiki.WikiArticleXml;
+
 
 public class GetTitle {
 	public static void usage() {

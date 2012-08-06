@@ -13,8 +13,8 @@ import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 
 import crosslink.resultsetGenerator.LtwResultsetType;
+import crosslink.utility.WildcardFiles;
 
-import ltwassessment.utility.WildcardFiles;
 
 public class ResultSetManager {
 	

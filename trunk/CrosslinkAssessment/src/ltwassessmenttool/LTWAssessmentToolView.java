@@ -15,6 +15,32 @@ import org.jdesktop.application.Action;
 import org.jdesktop.application.ResourceMap;
 import org.jdesktop.application.SingleFrameApplication;
 import org.jdesktop.application.FrameView;
+
+import crosslink.AppResource;
+import crosslink.Assessment;
+import crosslink.assessment.AssessedAnchor;
+import crosslink.assessment.AssessmentThread;
+import crosslink.assessment.Bep;
+import crosslink.assessment.CurrentFocusedAnchor;
+import crosslink.assessment.IndexedAnchor;
+import crosslink.assessment.LTWAssessmentToolControler;
+import crosslink.font.AdjustFont;
+import crosslink.listener.CaretListenerLabel;
+import crosslink.listener.linkPaneMouseListener;
+import crosslink.listener.topicPaneMouseListener;
+import crosslink.parsers.FOLTXTMatcher;
+import crosslink.parsers.PoolerManager;
+import crosslink.parsers.ResourcesManager;
+import crosslink.parsers.Xml2Html;
+import crosslink.utility.ObservableSingleton;
+import crosslink.utility.PoolUpdater;
+import crosslink.utility.fieldUpdateObserver;
+import crosslink.utility.highlightPainters;
+import crosslink.view.Link;
+import crosslink.view.ScreenAnchor;
+import crosslink.view.TopicHighlightManager;
+import crosslink.wiki.WikiArticleXml;
+
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Hashtable;
@@ -36,30 +62,6 @@ import javax.swing.text.Style;
 import javax.swing.text.StyleConstants;
 import javax.swing.text.StyledDocument;
 
-import ltwassessment.AppResource;
-import ltwassessment.Assessment;
-import ltwassessment.assessment.AssessedAnchor;
-import ltwassessment.assessment.AssessmentThread;
-import ltwassessment.assessment.Bep;
-import ltwassessment.assessment.CurrentFocusedAnchor;
-import ltwassessment.assessment.IndexedAnchor;
-import ltwassessment.assessment.LTWAssessmentToolControler;
-import ltwassessment.font.AdjustFont;
-import ltwassessment.listener.CaretListenerLabel;
-import ltwassessment.listener.linkPaneMouseListener;
-import ltwassessment.listener.topicPaneMouseListener;
-import ltwassessment.parsers.Xml2Html;
-import ltwassessment.parsers.FOLTXTMatcher;
-import ltwassessment.parsers.PoolerManager;
-import ltwassessment.parsers.ResourcesManager;
-import ltwassessment.utility.ObservableSingleton;
-import ltwassessment.utility.fieldUpdateObserver;
-import ltwassessment.utility.highlightPainters;
-import ltwassessment.utility.PoolUpdater;
-import ltwassessment.view.Link;
-import ltwassessment.view.ScreenAnchor;
-import ltwassessment.view.TopicHighlightManager;
-import ltwassessment.wiki.WikiArticleXml;
 
 /**
  * The main frame for the Assessment Tool

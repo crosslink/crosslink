@@ -2,8 +2,9 @@ package monolink;
 
 import java.io.File;
 
-import ltwassessment.wiki.Corpora;
-import ltwassessment.wiki.WikiArticleXml;
+import crosslink.wiki.Corpora;
+import crosslink.wiki.WikiArticleXml;
+
 
 public class SubmissionXml extends OutputXml implements OutputXmlInterface {
 	public static final String START = "<crosslink-submission participant-id=\"GT\" run-id=\"GroundTruth\" task=\"F2F\" default_lang=\"%s\" source_lang=\"%s\">" +
