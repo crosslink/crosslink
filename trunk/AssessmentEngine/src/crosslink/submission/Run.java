@@ -146,7 +146,7 @@ public class Run<AnchorSet>{
 			String topicXml = topic.anchorsToXml();
 			content.append(topicXml);
 			content.append(xmlRootTagClose());
-			FileUtil.writeFile(new File(path + File.separator + topic.getId() + ".xml"), topicXml);
+			FileUtil.writeFile(new File(path + File.separator + topic.getId() + ".xml"), content.toString());
 		}
 	}
 	
