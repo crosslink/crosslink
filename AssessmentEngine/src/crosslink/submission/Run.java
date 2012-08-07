@@ -3,6 +3,7 @@ package crosslink.submission;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -33,8 +34,8 @@ import crosslink.parsers.ResourcesManager;
 
 public class Run<AnchorSet>{
 	
-	private static final String rootOpen = "<crosslink-submission participant-id=\"%s\" run-id=\"%s\" task=\"%s\" default_lang=\"%s\" source_lang=\"%s\">";
-	private static final String rootClosed = "</crosslink-submission>";
+	private static final String rootOpen = "<crosslink-submission participant-id=\"%s\" run-id=\"%s\" task=\"%s\" default_lang=\"%s\" source_lang=\"%s\">\n";
+	private static final String rootClosed = "</crosslink-submission>\n";
 	
 	private HashMap<String, Topic> topics = null;
 	private String runName = null;
@@ -44,7 +45,6 @@ public class Run<AnchorSet>{
 	private boolean checkAnchors = false;
 	private boolean needSorted = false;
 	
-	private String runId;
 	private String affilication;
 	private String task;
 	
@@ -131,7 +131,7 @@ public class Run<AnchorSet>{
 	}
 	
 	private String xmlRootTagOpen() {
-		String openTag = String.format(rootOpen, affilication, runId, task, runTargetLang, runSourceLang);
+		String openTag = String.format(rootOpen, affilication, runName, task, runTargetLang, runSourceLang);
 		return openTag;
 	}
 	
@@ -171,6 +171,8 @@ public class Run<AnchorSet>{
 		int aLength = 0;
         for (int i = 0; i < titleNodeList.getLength(); i++) {
             Element titleElmn = (Element) titleNodeList.item(i);
+            this.affilication = titleElmn.getAttribute("participant-id");
+            this.task = titleElmn.getAttribute("task");
             runName =  titleElmn.getAttribute("run-id");
             runSourceLang = titleElmn.getAttribute("source_lang").trim().toLowerCase();
             if (runSourceLang.length() == 0)
@@ -201,7 +203,7 @@ public class Run<AnchorSet>{
                 Topic<AnchorSet> topic = topics.get(thisTopicID);
 
                 if (topic == null) {
-                	topic = new Topic<AnchorSet>(thisTopicID, thisTopicName);
+                	topic = new Topic<AnchorSet>(thisTopicID, thisTopicName, runSourceLang);
                 	topic.setParent(this);
                 	topic.setAnchors(this.createAnchorSet());
                 	topics.put(thisTopicID, topic);
@@ -294,7 +296,10 @@ public class Run<AnchorSet>{
 	                        anchor.setRank(k);
 	//                        if (anchor.getName().equals("古代") && anchor.getTargets().containsKey("4946747"))
 	//                        	System.err.println("I got you!");
-	                        ((AnchorSetInterface)anchors).insert(anchor);
+	                        if (anchors instanceof AnchorSetInterface)
+	                        	((AnchorSetInterface)anchors).insert(anchor);
+	                        else if (anchors instanceof Collection)
+	                        	((Collection)anchors).add(anchor);
 	                    }
                     }
                 }
@@ -302,7 +307,7 @@ public class Run<AnchorSet>{
                 /**
                  * REMEMBER, it has to be sorted before being used
                  */
-                if (needSorted && anchors instanceof LinkedAnchors)
+                if (needSorted && anchors instanceof AnchorSetInterface)
                 	((AnchorSetInterface)anchors).sort();
 //                }
                     

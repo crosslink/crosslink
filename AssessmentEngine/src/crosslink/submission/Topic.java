@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.util.Collection;
+import java.util.Iterator;
 
 import crosslink.AppResource;
 import crosslink.wiki.WikiArticleXml;
@@ -26,16 +27,30 @@ public class Topic<AnchorSet> extends WikiArticleXml {
 		
 //		load();
 	}
+	
+	
 //	
 //	public Topic(String id, AnchorSet anchors) {
 //		this.id = id;
 //		this.anchors = anchors;
 //	}
 
+	public Topic(String id, String name, String lang) {
+		super(id, name, lang);
+	}
+
+
 	public Topic(File file) {
 		super(file);
 		
 //		load();
+	}
+	
+	@Override
+	public void read() {
+		if (this.xmlFile == null)
+			xmlFile = AppResource.getInstance().getTopicXmlPathNameByFileID(id, lang);
+		super.read();
 	}
 
 	public void load() {
@@ -91,10 +106,13 @@ public class Topic<AnchorSet> extends WikiArticleXml {
 
 	public String anchorsToXml() {
 		StringBuffer sb = new StringBuffer();
-		sb.append(String.format("\t<topic file=\"%s\" name=\"%s\">", id, title));
+		sb.append(String.format("\t<topic file=\"%s\" name=\"%s\">\n", id, title));
 		if (anchors instanceof Collection) {
-			Anchor[] anchorArray = (Anchor[]) ((Collection<Anchor>)anchors).toArray();
-			for (Anchor anchor : anchorArray) {
+//			Anchor[] anchorArray = (Anchor[]) ((Collection<Anchor>)anchors).toArray();
+			Collection anchorCollection = (Collection)anchors;
+			Iterator<Anchor> it = anchorCollection.iterator();
+			while (it.hasNext()) {
+				Anchor anchor = it.next();
 				sb.append(anchor.toXml());
 			}
 		}

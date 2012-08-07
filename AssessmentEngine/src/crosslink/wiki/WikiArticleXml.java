@@ -18,6 +18,7 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
+import crosslink.AppResource;
 import crosslink.utility.ByteArrayKMP;
 
 public class WikiArticleXml {
@@ -30,6 +31,7 @@ public class WikiArticleXml {
 
 	protected String title;
 	protected String id;
+	protected String lang;
 	
 	protected int currentPos = 0;
 	protected int titlePos = 0; // in bytes
@@ -38,6 +40,25 @@ public class WikiArticleXml {
 	protected byte[] bytes = null; // the text in bytes
 	protected String fullText = null;
 	
+
+	public WikiArticleXml(File xmlFile) {
+		extractTitle(xmlFile);
+	}
+	
+//	public WikiArticleXml(String id) {
+//		this.id = id;
+//	}
+
+	public WikiArticleXml(String id, String name) {
+		this.id = id;
+		this.title = name;
+	}
+
+	public WikiArticleXml(String id, String name, String lang) {
+		this.id = id;
+		this.title = name;
+		this.lang = lang;
+	}
 	/**
 	 * @return the title
 	 */
@@ -60,8 +81,9 @@ public class WikiArticleXml {
 	 * @return the bytes
 	 */
 	public byte[] getBytes() {
-		if (bytes == null)
+		if (bytes == null) {
 			read();
+		}
 		return bytes;
 	}
 
@@ -94,17 +116,12 @@ public class WikiArticleXml {
 		return titleLength;
 	}
 
-	public WikiArticleXml(File xmlFile) {
-		extractTitle(xmlFile);
+	public String getLang() {
+		return lang;
 	}
-	
-//	public WikiArticleXml(String id) {
-//		this.id = id;
-//	}
 
-	public WikiArticleXml(String id, String name) {
-		this.id = id;
-		this.title = name;
+	public void setLang(String lang) {
+		this.lang = lang;
 	}
 
 	public void read() {	
