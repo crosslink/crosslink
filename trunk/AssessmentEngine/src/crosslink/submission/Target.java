@@ -120,7 +120,7 @@ public class Target {
 	}
 
 	public String toXml() {
-		String element = "\t\t\t<tofile bep_offset=\"%d\" lang=\"%s\" title=\"%s\">%s/tofile>";
+		String element = "\t\t\t<tofile bep_offset=\"%d\" lang=\"%s\" title=\"%s\">%s/tofile>\n";
 		return String.format(element, this.bepOffset, this.lang, this.title, this.id);
 	}
 }
