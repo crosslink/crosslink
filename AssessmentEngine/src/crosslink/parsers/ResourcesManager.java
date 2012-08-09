@@ -2794,7 +2794,7 @@ public class ResourcesManager {
         for (IndexedAnchor thisAnchorSet : poolAnchorsOLNameStatusVSA) {
         	String[] scrFOL = thisAnchorSet.getScrFOL();
     		scrFOL[3] = thisAnchorSet.extendedLengthToString(); //[4];
-            anchorSetV.add(thisAnchorSet.getOffset()/*[0]*/ + " : " + thisAnchorSet.lengthToString()/*[1]*/ + " : " + thisAnchorSet.getName()/*[2]*/ + " : " + scrFOL[1] + " : " + scrFOL[2]  + " : " +  thisAnchorSet.extendedLengthToString()/*[4]*/);	
+            anchorSetV.add(thisAnchorSet.getScreenPosStart()/*[0]*/ + " : " + thisAnchorSet.lengthToString()/*[1]*/ + " : " + thisAnchorSet.getName()/*[2]*/ + " : " + scrFOL[1] + " : " + scrFOL[2]  + " : " +  thisAnchorSet.extendedLengthToString()/*[4]*/);	
         }
         // ============================
         // record into toolResource.xml

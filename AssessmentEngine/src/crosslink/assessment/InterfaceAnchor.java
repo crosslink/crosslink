@@ -45,4 +45,8 @@ public interface InterfaceAnchor {
 
 	String getName();
 
+	int getOffset();
+
+	int getLength();
+
 }

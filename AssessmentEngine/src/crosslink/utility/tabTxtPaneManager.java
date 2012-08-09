@@ -16,7 +16,10 @@ import javax.swing.text.Style;
 import javax.swing.text.StyleConstants;
 import javax.swing.text.StyledDocument;
 
+import org.jdesktop.application.Application;
+
 import crosslink.AppResource;
+import crosslink.assessment.CurrentFocusedAnchor;
 import crosslink.assessment.IndexedAnchor;
 import crosslink.parsers.FOLTXTMatcher;
 import crosslink.parsers.PoolerManager;
@@ -97,7 +100,7 @@ public class tabTxtPaneManager {
         // update Anchor OL highlight & Auto scrolling to Curr Anchor Position
         if (paneUpdateLevel == 1 || paneUpdateLevel == 2) {
             String[] currAnchorXmlSet = this.rowAnchorSet.split("_");
-            updateTopicPaneAnchorStatus(this.rowTopicID, new IndexedAnchor(currAnchorXmlSet[0], currAnchorXmlSet[1], "")/*String[]{currAnchorXmlSet[0], currAnchorXmlSet[1], ""}*/, AppResource.sourceLang);
+            updateTopicPaneAnchorStatus(this.rowTopicID, this.rowAnchorSet/*String[]{currAnchorXmlSet[0], currAnchorXmlSet[1], ""}*/, this.rowBEPSet.split("_")[1]);
         }
         // update 1st Link/Pane & BEP Offset
         if (paneUpdateLevel == 1 || paneUpdateLevel == 2 || paneUpdateLevel == 3) {
@@ -140,14 +143,16 @@ public class tabTxtPaneManager {
     }
     // 4) Highlight Anchor and Selected Anchor
 
-    private void updateTopicPaneAnchorStatus(String topicID, IndexedAnchor selectedAnchorOLNameSA, String lang) {
+    private void updateTopicPaneAnchorStatus(String topicID, String offsetKey, String target) {
         // currAnchorSCRSet: [0]:Anchor_Name, [1]:Offset, [2]:Offset + Length
-        String[] currAnchorSCRSet = myFOLMatcher.getSCRAnchorPosSA(this.myTopicPane, topicID, selectedAnchorOLNameSA, myFOLMatcher.getFullXmlTxt(), lang);
-        String sPos = currAnchorSCRSet[1];
-        String ePos = currAnchorSCRSet[2];
-        updateTopicHighlighter(sPos + "_" + ePos);
+//        String[] currAnchorSCRSet = myFOLMatcher.getSCRAnchorPosSA(this.myTopicPane, topicID, selectedAnchorOLNameSA, myFOLMatcher.getFullXmlTxt(), lang);
+//        String sPos = currAnchorSCRSet[1];
+//        String ePos = currAnchorSCRSet[2];
+//        CurrentFocusedAnchor.getCurrentFocusedAnchor().updateHigherter(Integer.parseInt(sPos), Integer.parseInt(ePos));
+        CurrentFocusedAnchor.getCurrentFocusedAnchor().updateHigherter(offsetKey, target);
+//        updateTopicHighlighter();
         // Auto Scrolling to Anchor Position
-        this.myTopicPane.getCaret().setDot(Integer.valueOf(ePos));
+        this.myTopicPane.getCaret().setDot(Integer.valueOf(CurrentFocusedAnchor.getCurrentFocusedAnchor().getAnchor().getScreenPosStart()));
         this.myTopicPane.scrollRectToVisible(this.myTopicPane.getVisibleRect());
         this.myTopicPane.repaint();
     }

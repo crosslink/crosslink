@@ -25,6 +25,7 @@ import org.jdesktop.application.FrameView;
 
 import crosslink.AppResource;
 import crosslink.assessment.Bep;
+import crosslink.assessment.CurrentFocusedAnchor;
 import crosslink.assessment.IndexedAnchor;
 import crosslink.font.AdjustFont;
 import crosslink.listener.CaretListenerLabel;
@@ -134,8 +135,8 @@ public class CrosslinkValidationToolView extends FrameView {
     //4) record Topic (incoming : topicFile) -> [0]:Offset
     private String[] afProperty = new String[4];
     private Vector<String[]> RunTopics = new Vector<String[]>();
-    private Hashtable<String, Vector<IndexedAnchor>> topicAnchorsHT = new Hashtable<String, Vector<IndexedAnchor>>();
-    private Hashtable<String, Vector<String[]>> topicBepsHT = new Hashtable<String, Vector<String[]>>();
+    private Hashtable<String, Vector<IndexedAnchor>> topicAnchorsHT; // = new Hashtable<String, Vector<IndexedAnchor>>();
+    private Hashtable<String, Vector<String[]>> topicBepsHT; // = new Hashtable<String, Vector<String[]>>();
     private Hashtable<String, Hashtable<String, Hashtable<String, Vector<Bep>>>> poolOutgoingData = new Hashtable<String, Hashtable<String, Hashtable<String, Vector<Bep>>>>();
     private Hashtable<String, Hashtable<String, Vector<String[]>>> poolIncomingData = new Hashtable<String, Hashtable<String, Vector<String[]>>>();
     // -------------------------------------------------------------------------
@@ -222,6 +223,7 @@ public class CrosslinkValidationToolView extends FrameView {
     	TopicHighlightManager.getInstance().setPane(topicTextPane);
     	TopicHighlightManager.getInstance().setLinkPane(linkTextPane);
     	
+    	linkTextPane.setContentType(textContentType);
         // when the tool firstly starts
         System.setProperty(sysPropertyIsTABKey, "true");
     }
@@ -2402,8 +2404,10 @@ public class CrosslinkValidationToolView extends FrameView {
         // create the status pane
 //        CaretListenerLabel caretListenerLabel = new CaretListenerLabel("Caret Status", this.topicTextPane, this.statusMessageLabel);
         // initialize HighlightPainter
-        painters = new highlightPainters();
-        setTopicTextHighlighter(currAnchorSCROLPairs);
+//        painters = new highlightPainters();
+//        setTopicTextHighlighter(currAnchorSCROLPairs);
+        TopicHighlightManager.getInstance().initializeHighlighter(currAnchorXMLOLPairs);
+        CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchors(currAnchorXMLOLPairs);
         // ---------------------------------------------------------------------
         
         // populate SRC JTable
