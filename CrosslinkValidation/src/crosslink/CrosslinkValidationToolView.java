@@ -271,10 +271,10 @@ public class CrosslinkValidationToolView extends FrameView {
         topicTextScrollPane = new javax.swing.JScrollPane();
         topicTextPane = new javax.swing.JTextPane();
         rightSplitPane = new javax.swing.JSplitPane();
-        linkTextScrollPane = new javax.swing.JScrollPane();
-        linkTextPane = new javax.swing.JTextPane();
         anchorBepTablePane = new javax.swing.JScrollPane();
         anchorBepTable = new javax.swing.JTable();
+        linkTextScrollPane = new javax.swing.JScrollPane();
+        linkTextPane = new javax.swing.JTextPane();
         jPanel3 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         msgTxtPane = new javax.swing.JTextPane();
@@ -337,32 +337,15 @@ public class CrosslinkValidationToolView extends FrameView {
 
         jSplitPane1.setLeftComponent(topicTextScrollPane);
 
-        rightSplitPane.setBackground(resourceMap.getColor("rightSplitPane.background")); // NOI18N
+        rightSplitPane.setDividerLocation(278);
         rightSplitPane.setOrientation(javax.swing.JSplitPane.VERTICAL_SPLIT);
         rightSplitPane.setName("rightSplitPane"); // NOI18N
-        rightSplitPane.setOneTouchExpandable(true);
-        rightSplitPane.setPreferredSize(new java.awt.Dimension(257, 18720));
-
-        linkTextScrollPane.setMinimumSize(new java.awt.Dimension(20, 20));
-        linkTextScrollPane.setName("linkTextScrollPane"); // NOI18N
-        linkTextScrollPane.setPreferredSize(new java.awt.Dimension(257, 400));
-
-        linkTextPane.setBackground(resourceMap.getColor("linkTextPane.background")); // NOI18N
-        linkTextPane.setEditable(false);
-        linkTextPane.setFont(resourceMap.getFont("linkTextPane.font")); // NOI18N
-        linkTextPane.setMaximumSize(new java.awt.Dimension(21444, 21647));
-        linkTextPane.setMinimumSize(new java.awt.Dimension(125, 444));
-        linkTextPane.setName("linkTextPane"); // NOI18N
-        linkTextPane.setPreferredSize(new java.awt.Dimension(225, 444));
-        linkTextScrollPane.setViewportView(linkTextPane);
-
-        rightSplitPane.setTopComponent(linkTextScrollPane);
 
         anchorBepTablePane.setViewportBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         anchorBepTablePane.setAutoscrolls(true);
         anchorBepTablePane.setDebugGraphicsOptions(javax.swing.DebugGraphics.BUFFERED_OPTION);
         anchorBepTablePane.setHorizontalScrollBar(null);
-        anchorBepTablePane.setMinimumSize(new java.awt.Dimension(410, 22432));
+        anchorBepTablePane.setMinimumSize(new java.awt.Dimension(410, 132));
         anchorBepTablePane.setName("anchorBepTablePane");
         anchorBepTablePane.setPreferredSize(new java.awt.Dimension(210, 28720));
         anchorBepTablePane.setRequestFocusEnabled(false);
@@ -1641,10 +1624,10 @@ public class CrosslinkValidationToolView extends FrameView {
         });
         anchorBepTable.setColumnSelectionAllowed(true);
         anchorBepTable.setFillsViewportHeight(true);
-        anchorBepTable.setMaximumSize(new java.awt.Dimension(32767, 32767));
-        anchorBepTable.setMinimumSize(new java.awt.Dimension(409, 431));
+        anchorBepTable.setMaximumSize(new java.awt.Dimension(32767, 367));
+        anchorBepTable.setMinimumSize(new java.awt.Dimension(409, 231));
         anchorBepTable.setName("anchorBepTable"); // NOI18N
-        anchorBepTable.setPreferredSize(new java.awt.Dimension(210, 1872));
+        anchorBepTable.setPreferredSize(new java.awt.Dimension(210, 272));
         anchorBepTable.setRequestFocusEnabled(false);
         anchorBepTable.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         anchorBepTable.getTableHeader().setReorderingAllowed(false);
@@ -1664,6 +1647,21 @@ public class CrosslinkValidationToolView extends FrameView {
         anchorBepTable.getColumnModel().getColumn(4).setHeaderValue(resourceMap.getString("anchorBepTable.columnModel.title3")); // NOI18N
 
         rightSplitPane.setBottomComponent(anchorBepTablePane);
+
+        linkTextScrollPane.setMinimumSize(new java.awt.Dimension(20, 20));
+        linkTextScrollPane.setName("linkTextScrollPane"); // NOI18N
+        linkTextScrollPane.setPreferredSize(new java.awt.Dimension(257, 400));
+
+        linkTextPane.setBackground(resourceMap.getColor("linkTextPane.background")); // NOI18N
+        linkTextPane.setEditable(false);
+        linkTextPane.setFont(resourceMap.getFont("linkTextPane.font")); // NOI18N
+        linkTextPane.setMaximumSize(new java.awt.Dimension(21444, 21647));
+        linkTextPane.setMinimumSize(new java.awt.Dimension(125, 1000));
+        linkTextPane.setName("linkTextPane"); // NOI18N
+        linkTextPane.setPreferredSize(new java.awt.Dimension(225, 444));
+        linkTextScrollPane.setViewportView(linkTextPane);
+
+        rightSplitPane.setTopComponent(linkTextScrollPane);
 
         jSplitPane1.setRightComponent(rightSplitPane);
 
