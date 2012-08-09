@@ -1089,6 +1089,8 @@ public class PoolerManager {
                         	parsedSubanchor.setExtendedLength(aExtLength);
                         	subAnchorsVbyTopic.add(parsedSubanchor);
                         	parsedAnchor.addChildAnchor(parsedSubanchor);
+                        	parsedSubanchor.setParent(parsedAnchor);
+//                        	parsedAnchor.addChildAnchor(parsedAnchor); // parent and child are the same;
                         }
                         	
                         index = 0;
@@ -1172,7 +1174,7 @@ public class PoolerManager {
                         bep.setIndex(index++);
                         
 //                       if (AppResource.forAssessment) {
-	                        if (parsedSubanchor.getStatus() == -1) {
+	                        if (parsedSubanchor != null && parsedSubanchor.getStatus() == -1) {
 		                        if (bep.getRel() == 0)
 		                        		bep.setRel(Bep.IRRELEVANT);
 	                        }
@@ -1234,7 +1236,7 @@ public class PoolerManager {
                     } else if (tagName.equals("anchor")) {
                     	assert (anchorsHT.get(thisAnchorSet) == null);
                         anchorsHT.put(thisAnchorSet, subAnchorsToBepsHT);
-                        if (!AppResource.forAssessment) {
+                        if (!AppResource.forAssessment) { //validation
                         	subAnchorsToBepsHT.put(parsedSubanchor.getOffset() + "_" + parsedSubanchor.getLength(), parsedSubanchor.getBeps()/*toBepsVbySubAnchor*/);
                         }
 //                        else {

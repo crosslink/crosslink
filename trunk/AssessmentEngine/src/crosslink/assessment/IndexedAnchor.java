@@ -135,6 +135,8 @@ public class IndexedAnchor extends Anchor implements InterfaceAnchor {
 	
 
 	public int getScreenPosStart() {
+		if (screenPosStart == UNINITIALIZED_VALUE)
+			screenPosStart = offset;
 		return screenPosStart;
 	}
 
@@ -143,6 +145,8 @@ public class IndexedAnchor extends Anchor implements InterfaceAnchor {
 	}
 
 	public int getScreenPosEnd() {
+		if (screenPosEnd == UNINITIALIZED_VALUE)
+			screenPosEnd = offset + length;
 		return screenPosEnd;
 	}
 
@@ -158,8 +162,8 @@ public class IndexedAnchor extends Anchor implements InterfaceAnchor {
 	public void setCurrentAnchorProperty(int offset, int length, int screenPosStart, int screenPosEnd, int status, int extLength) {
 		setOffset(offset);
 		setLength(length);
-		screenPosStart = screenPosStart;
-		screenPosEnd = screenPosEnd;
+		this.screenPosStart = screenPosStart;
+		this.screenPosEnd = screenPosEnd;
 		
 		setStatus(status);
 		

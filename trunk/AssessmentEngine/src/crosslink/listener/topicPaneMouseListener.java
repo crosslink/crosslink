@@ -230,7 +230,7 @@ public class topicPaneMouseListener implements MouseInputListener {
                 this.preTHyperOLSEStatus = CurrentFocusedAnchor.getCurrentFocusedAnchor().getAnchor(); //.toArray();
                 
                 AssessedAnchor next = null;
-                if (preTHyperOLSEStatus.getParent() == currSCRSEName) {
+                if (preTHyperOLSEStatus != null && preTHyperOLSEStatus.getParent() == currSCRSEName) {
                 	next = (AssessedAnchor) preTHyperOLSEStatus.getParent().getNext(preTHyperOLSEStatus, false);
                 }
                 else {

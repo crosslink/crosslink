@@ -108,10 +108,10 @@ public class TopicHighlightManager {
 		}
 		
 		if (currAnchor != null) {
-			if (currAnchor.getParent() != null)
-				currAnchor.getParent().setToCurrentAnchor(txtPaneHighlighter, painters, currAnchor);
-			else
-				currAnchor.setToCurrentAnchor(txtPaneHighlighter, painters, currAnchor);
+//			if (currAnchor.getParent() != null)
+			currAnchor.getParent().setToCurrentAnchor(txtPaneHighlighter, painters, currAnchor);
+//			else
+//				currAnchor.setToCurrentAnchor(txtPaneHighlighter, painters, currAnchor);
 		}
 		if (pane != null) {
 	        pane.getCaret().setDot(currAnchor.getScreenPosEnd());

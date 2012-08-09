@@ -368,6 +368,8 @@ public class FOLTXTMatcher {
 	//	        	--offset;
 	//	        ++offset;
 	//        }
+	        thisAnchorSet.setScreenPosStart(offset);
+	        thisAnchorSet.setScreenPosEnd(offset + anchorTextLength);
 	        myScreenPosition[1] = String.valueOf(offset);
 	        myScreenPosition[2] = String.valueOf(offset + anchorTextLength);
 	        myScreenPosition[0] = fullScreenTxt.substring(offset, offset + aName.length());
