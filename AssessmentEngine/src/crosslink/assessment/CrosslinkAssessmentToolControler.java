@@ -50,9 +50,9 @@ import crosslink.view.TopicHighlightManager;
 import crosslink.assessment.AssessedAnchor;
 import crosslink.assessment.AssessmentThread;
 import crosslink.assessment.Completion;
-import crosslink.assessment.LTWAssessmentToolControler;
+import crosslink.assessment.CrosslinkAssessmentToolControler;
 
-public class LTWAssessmentToolControler {
+public class CrosslinkAssessmentToolControler {
 	public final static String sysPropertyIsTABKey = "isTABKey";
 	public final static String sysPropertyIsTopicWikiKey = "isTopicWikipedia";
     public final static String sysPropertyIsLinkWikiKey = "isLinkWikipedia";
@@ -105,7 +105,7 @@ public class LTWAssessmentToolControler {
 
     private Completion linkCompletion = null;
     		
-	private static LTWAssessmentToolControler instance = null;
+	private static CrosslinkAssessmentToolControler instance = null;
     
     public void setContainter(JFrame mainView, JTextPane myTopicPane, JTextPane myLinkPane) {
     	this.mainFrame = mainView;
@@ -114,11 +114,11 @@ public class LTWAssessmentToolControler {
     }
     
     public static void setCurrTopicID(String currTopicID) {
-		LTWAssessmentToolControler.currTopicID = currTopicID;
+		CrosslinkAssessmentToolControler.currTopicID = currTopicID;
 	}
 
 	public static void setTextContentType(String textContentType) {
-		LTWAssessmentToolControler.textContentType = textContentType;
+		CrosslinkAssessmentToolControler.textContentType = textContentType;
 	}
     
     public void setLblTargetTitle(JComponent lblTargetTitle) {
@@ -145,13 +145,13 @@ public class LTWAssessmentToolControler {
 		Completion.getInstance().setLblCompletion(lblCompletion);
 	}
 
-	public static LTWAssessmentToolControler getInstance() {
+	public static CrosslinkAssessmentToolControler getInstance() {
         if (instance == null)
-            instance = new LTWAssessmentToolControler();
+            instance = new CrosslinkAssessmentToolControler();
         return instance;
     }
     
-    public LTWAssessmentToolControler() {
+    public CrosslinkAssessmentToolControler() {
     	resourceMap = AppResource.getInstance().getResourceMap();
     	
         rscManager = ResourcesManager.getInstance();
@@ -322,7 +322,7 @@ public class LTWAssessmentToolControler {
 //		        in.close();
 //		        out.close();
 //		    } catch (IOException ex) {
-//		        Logger.getLogger(LTWAssessmentToolControler.class.getName()).log(Level.SEVERE, null, ex);
+//		        Logger.getLogger(CrosslinkAssessmentToolControler.class.getName()).log(Level.SEVERE, null, ex);
 //		    }
 //		}
 		/*
@@ -465,7 +465,7 @@ public class LTWAssessmentToolControler {
         // 2) --> Check AnchorOL Status
         // 3) highlight Topic Pane Anchors
         // 4) indciate CURRENT Topic Anchor Text & Target Link
-        System.setProperty(LTWAssessmentToolControler.sysPropertyIsTABKey, "true");
+        System.setProperty(CrosslinkAssessmentToolControler.sysPropertyIsTABKey, "true");
         rscManager.updateLinkingMode("outgoing");
         // ---------------------------------------------------------------------
         // Get Pool Properties
@@ -517,7 +517,7 @@ public class LTWAssessmentToolControler {
         
 //        String[] tabCompletedRatio = this.rscManager.getTABCompletedRatio();
 //        this.rscManager.updateOutgoingCompletion(tabCompletedRatio[0] + " : " + tabCompletedRatio[1]);
-//        System.setProperty(LTWAssessmentToolControler.sysPropertyTABCompletedRatioKey, String.valueOf(tabCompletedRatio[0]) + "_" + String.valueOf(tabCompletedRatio[1]));
+//        System.setProperty(CrosslinkAssessmentToolControler.sysPropertyTABCompletedRatioKey, String.valueOf(tabCompletedRatio[0]) + "_" + String.valueOf(tabCompletedRatio[1]));
         // ---------------------------------------------------------------------
         
         // String[]{Anchor_O, L, SP, EP, Status}
@@ -673,11 +673,11 @@ public class LTWAssessmentToolControler {
             	//TODO : fix this
             }
             else
-            	LTWAssessmentToolControler.getInstance().assess(currTopicID);
+            	CrosslinkAssessmentToolControler.getInstance().assess(currTopicID);
         }
         else {
-        	LTWAssessmentToolControler.getInstance().setCurrTopicID(null); //currTopicID = null;
-    		LTWAssessmentToolControler.getInstance().assessNextTopic();
+        	CrosslinkAssessmentToolControler.getInstance().setCurrTopicID(null); //currTopicID = null;
+    		CrosslinkAssessmentToolControler.getInstance().assessNextTopic();
         }
 		
 	}

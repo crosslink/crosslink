@@ -1,8 +1,8 @@
 /*
- * LTWAssessmentToolApp.java
+ * CrosslinkAssessmentToolApp.java
  */
 
-package ltwassessmenttool;
+package crosslink;
 
 import java.awt.Dialog.ModalityType;
 import java.awt.event.ActionEvent;
@@ -21,9 +21,9 @@ import crosslink.Assessment;
 /**
  * The main class of the application.
  */
-public class LTWAssessmentToolApp extends SingleFrameApplication {
+public class CrosslinkAssessmentToolApp extends SingleFrameApplication {
 	
-	private LTWAssessmentToolCorpusBox corpusBox = null;
+	private CrosslinkAssessmentToolCorpusBox corpusBox = null;
 	
 	class MyWindowListener implements WindowListener {
 
@@ -55,10 +55,10 @@ public class LTWAssessmentToolApp extends SingleFrameApplication {
      * At startup create and show the main frame of the application.
      */
     @Override protected void startup() {
-//        JFrame mainFrame = LTWAssessmentToolApp.getApplication().getMainFrame();
+//        JFrame mainFrame = CrosslinkAssessmentToolApp.getApplication().getMainFrame();
 //        mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 //        mainFrame.addWindowListener(new MyWindowListener());
-        show(new LTWAssessmentToolView(this));
+        show(new CrosslinkAssessmentToolView(this));
     }
 
     /**
@@ -71,10 +71,10 @@ public class LTWAssessmentToolApp extends SingleFrameApplication {
 
     /**
      * A convenient static getter for the application instance.
-     * @return the instance of LTWAssessmentToolApp
+     * @return the instance of CrosslinkAssessmentToolApp
      */
-    public static LTWAssessmentToolApp getApplication() {
-        return Application.getInstance(LTWAssessmentToolApp.class);
+    public static CrosslinkAssessmentToolApp getApplication() {
+        return Application.getInstance(CrosslinkAssessmentToolApp.class);
     }
 
     /**
@@ -84,14 +84,14 @@ public class LTWAssessmentToolApp extends SingleFrameApplication {
     	if (args.length > 0 && args[0].equalsIgnoreCase("run"))
     		Assessment.getInstance().setAssessmentType(true);
     	Assessment.getInstance().initialize();
-        launch(LTWAssessmentToolApp.class, args);
+        launch(CrosslinkAssessmentToolApp.class, args);
     }
     
     public void showCorpusBox() {
         if (corpusBox == null) {
-            JFrame mainFrame = LTWAssessmentToolApp.getApplication().getMainFrame();
+            JFrame mainFrame = CrosslinkAssessmentToolApp.getApplication().getMainFrame();
             
-            corpusBox = new LTWAssessmentToolCorpusBox(mainFrame);
+            corpusBox = new CrosslinkAssessmentToolCorpusBox(mainFrame);
             //corpusBox.setModal(true);
 //            corpusBox.setModalityType(ModalityType.APPLICATION_MODAL);
 //            JOptionPane optionPane = new JOptionPane(
@@ -102,10 +102,10 @@ public class LTWAssessmentToolApp extends SingleFrameApplication {
 //            corpusBox.setContentPane(optionPane);
             corpusBox.setLocationRelativeTo(mainFrame);
             corpusBox.pack();
-//            ((LTWAssessmentToolCorpusBox) corpusBox).setJLableCollection(this.jLabelCollection);
+//            ((CrosslinkAssessmentToolCorpusBox) corpusBox).setJLableCollection(this.jLabelCollection);
         }
         corpusBox.setVisible(true);
-        //LTWAssessmentToolApp.getApplication().show(corpusBox);
+        //CrosslinkAssessmentToolApp.getApplication().show(corpusBox);
     }
 
 	@Override

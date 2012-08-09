@@ -36,7 +36,7 @@ import crosslink.assessment.Bep;
 import crosslink.assessment.CurrentFocusedAnchor;
 import crosslink.assessment.IndexedAnchor;
 import crosslink.assessment.InterfaceAnchor;
-import crosslink.assessment.LTWAssessmentToolControler;
+import crosslink.assessment.CrosslinkAssessmentToolControler;
 
 
 
@@ -242,7 +242,7 @@ public class AssessmentThread extends Thread {
 
         currentLink.setRel(Bep.IRRELEVANT);
         this.myPoolUpdater.updateTopicAnchorLinkRel(currentLink);
-        LTWAssessmentToolControler.getInstance().goNextLink(true, !isCtrlKeyDown());
+        CrosslinkAssessmentToolControler.getInstance().goNextLink(true, !isCtrlKeyDown());
     }
     
 //    private void updateRelevantCompletion(Bep link) {
@@ -379,7 +379,7 @@ public class AssessmentThread extends Thread {
 
             
             AssessedAnchor previous =   (AssessedAnchor) currentLink.getAssociatedAnchor();
-            LTWAssessmentToolControler.getInstance().goNextLink(true, !isCtrlKeyDown());
+            CrosslinkAssessmentToolControler.getInstance().goNextLink(true, !isCtrlKeyDown());
 //            CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(previous, link.getAssociatedAnchor(), link);
 //            os.setTABFieldValues(link);
     }
@@ -408,14 +408,14 @@ public class AssessmentThread extends Thread {
     
     public void markCurrentSubanchorIrrelevant(boolean onlyCurrentAnchor) {
         if (onlyCurrentAnchor) {
-        	LTWAssessmentToolControler.getInstance().setSubanchorIrrelevant(processingAnchor);
-            LTWAssessmentToolControler.getInstance().goNextLink(true, !isCtrlKeyDown());
+        	CrosslinkAssessmentToolControler.getInstance().setSubanchorIrrelevant(processingAnchor);
+            CrosslinkAssessmentToolControler.getInstance().goNextLink(true, !isCtrlKeyDown());
         }
         else {
         	IndexedAnchor parent = processingAnchor.getParent();
 //        	parent.setStatus(Bep.IRRELEVANT);
             for (InterfaceAnchor subanchor : parent.getChildrenAnchors())
-            	LTWAssessmentToolControler.getInstance().setSubanchorIrrelevant((AssessedAnchor)subanchor);
+            	CrosslinkAssessmentToolControler.getInstance().setSubanchorIrrelevant((AssessedAnchor)subanchor);
             
             parent.statusCheck();
     		TopicHighlightManager.getInstance().update(parent);

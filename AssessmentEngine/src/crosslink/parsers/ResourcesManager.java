@@ -740,6 +740,9 @@ public class ResourcesManager {
     }
     
     public void updateTABNavIndex(String topicID, IndexedAnchor currSCRSEName, Bep bepInfo) {
+    	if (currSCRSEName == null)
+    		return;
+    	
         // Format: new String[]{0, 1_2_0_0}
         String pAnchorO = currSCRSEName.offsetToString();
         String pAnchorL = currSCRSEName.lengthToString();

@@ -41,7 +41,7 @@ import crosslink.utility.highlightPainters;
 /**
  * @author Darren HUANG
  */
-public class topicPaneMouseListener implements MouseInputListener {
+public class topicPaneMouseListenerOld implements MouseInputListener {
 
     // Constant Variables
     private final String sysPropertyKey = "isTABKey";
@@ -83,7 +83,7 @@ public class topicPaneMouseListener implements MouseInputListener {
         System.out.println(String.valueOf(txt));
     }
 
-    public topicPaneMouseListener(JTextPane topicPane, JTextPane linkPane, Vector<String[]> scrSEPosVSA, JTable paneTable, PaneTableIndexing paneTableIndexing) {
+    public topicPaneMouseListenerOld(JTextPane topicPane, JTextPane linkPane, Vector<String[]> scrSEPosVSA, JTable paneTable, PaneTableIndexing paneTableIndexing) {
         org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(crosslink.CrosslinkValidationToolApp.class).getContext().getResourceMap(CrosslinkValidationToolView.class);
         afTasnCollectionErrors = resourceMap.getString("AssFormXml.taskCollectionError");
         bepIconImageFilePath = resourceMap.getString("bepIcon.imageFilePath");
@@ -332,7 +332,7 @@ public class topicPaneMouseListener implements MouseInputListener {
             int[] achorSCRPos = new int[]{Integer.valueOf(anchorSEPosSA[1]), Integer.valueOf(anchorSEPosSA[2])};
             Object anchorHighlightRef = txtPaneHighlighter.addHighlight(achorSCRPos[0], achorSCRPos[1], painters.getAnchorPainter());
         } catch (BadLocationException ex) {
-            Logger.getLogger(topicPaneMouseListener.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(topicPaneMouseListenerOld.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
@@ -364,7 +364,7 @@ public class topicPaneMouseListener implements MouseInputListener {
 
             }
         } catch (BadLocationException ex) {
-            Logger.getLogger(topicPaneMouseListener.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(topicPaneMouseListenerOld.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
@@ -404,7 +404,7 @@ public class topicPaneMouseListener implements MouseInputListener {
                 }
             }
         } catch (BadLocationException ex) {
-            Logger.getLogger(topicPaneMouseListener.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(topicPaneMouseListenerOld.class.getName()).log(Level.SEVERE, null, ex);
         }
         txtPane.repaint();
     }

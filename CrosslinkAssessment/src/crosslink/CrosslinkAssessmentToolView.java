@@ -1,7 +1,7 @@
 /*
- * LTWAssessmentToolView.java
+ * CrosslinkAssessmentToolView.java
  */
-package ltwassessmenttool;
+package crosslink;
 
 import java.awt.Color;
 import java.awt.Insets;
@@ -23,7 +23,7 @@ import crosslink.assessment.AssessmentThread;
 import crosslink.assessment.Bep;
 import crosslink.assessment.CurrentFocusedAnchor;
 import crosslink.assessment.IndexedAnchor;
-import crosslink.assessment.LTWAssessmentToolControler;
+import crosslink.assessment.CrosslinkAssessmentToolControler;
 import crosslink.font.AdjustFont;
 import crosslink.listener.CaretListenerLabel;
 import crosslink.listener.linkPaneMouseListener;
@@ -66,7 +66,7 @@ import javax.swing.text.StyledDocument;
 /**
  * The main frame for the Assessment Tool
  */
-public class LTWAssessmentToolView extends FrameView {
+public class CrosslinkAssessmentToolView extends FrameView {
 
     private static ResourceMap resourceMap;
     private static String textContentType = "";
@@ -133,12 +133,12 @@ public class LTWAssessmentToolView extends FrameView {
 
 	private static String currTopicID;
     
-    public LTWAssessmentToolView(SingleFrameApplication app) {
+    public CrosslinkAssessmentToolView(SingleFrameApplication app) {
         super(app);
         
      	// update resource manager first thing with the app starting up
         AppResource.forAssessment = true;
-        AppResource.getInstance().setResourceMap(org.jdesktop.application.Application.getInstance(ltwassessmenttool.LTWAssessmentToolApp.class).getContext().getResourceMap(ltwassessmenttool.LTWAssessmentToolView.class));
+        AppResource.getInstance().setResourceMap(org.jdesktop.application.Application.getInstance(CrosslinkAssessmentToolApp.class).getContext().getResourceMap(crosslink.CrosslinkAssessmentToolView.class));
 
         initComponents();
 
@@ -183,8 +183,8 @@ public class LTWAssessmentToolView extends FrameView {
         // For Link-the-Wikipedia A2B
         this.isTopicWikipedia = true;
         this.isLinkWikipedia = true;
-        System.setProperty(LTWAssessmentToolControler.sysPropertyIsTopicWikiKey, "true");
-        System.setProperty(LTWAssessmentToolControler.sysPropertyIsLinkWikiKey, "true");
+        System.setProperty(CrosslinkAssessmentToolControler.sysPropertyIsTopicWikiKey, "true");
+        System.setProperty(CrosslinkAssessmentToolControler.sysPropertyIsLinkWikiKey, "true");
         // =====================================================================
         // 0) Check Pool and Corpus are ready
         // 0-1) Wikipedia
@@ -195,7 +195,7 @@ public class LTWAssessmentToolView extends FrameView {
         } else {
         	defaultWikipediaDirectory = ResourcesManager.getInstance().getWikipediaCollectionFolder();
         	if (!new File(defaultWikipediaDirectory).exists())
-        		LTWAssessmentToolApp.getApplication().showCorpusBox();
+        		CrosslinkAssessmentToolApp.getApplication().showCorpusBox();
         	wikiCollectionFolder = new File(ResourcesManager.getInstance().getWikipediaCollectionFolder());
         }
         
@@ -222,7 +222,7 @@ public class LTWAssessmentToolView extends FrameView {
 //            if (rscManager.getLinkingMode().toLowerCase().equals("outgoing")) {
             
 //            threadAssessment.start();
-            LTWAssessmentToolControler.getInstance().start();
+            CrosslinkAssessmentToolControler.getInstance().start();
             
             assessmentThread = new AssessmentThread(thisTopicTextPane, thisLinkTextPane);
             assessmentThread.start();
@@ -232,15 +232,15 @@ public class LTWAssessmentToolView extends FrameView {
     	TopicHighlightManager.getInstance().setPane(thisTopicTextPane);
     	TopicHighlightManager.getInstance().setLinkPane(thisLinkTextPane);
     	
-    	LTWAssessmentToolControler.getInstance().setContainter(app.getMainFrame(), thisTopicTextPane, thisLinkTextPane);
-    	LTWAssessmentToolControler.getInstance().setStatusMessageLabel(statusMessageLabel);
-    	LTWAssessmentToolControler.getInstance().setLblPoolAnchor(lblAnchor);
-    	LTWAssessmentToolControler.getInstance().setLblAnchor(lblPoolAnchor);
-    	LTWAssessmentToolControler.getInstance().setLblTargetTitle(lblTargetTitle);
-    	LTWAssessmentToolControler.getInstance().setLblTopicTitle(lblTopicTitle);
-    	LTWAssessmentToolControler.getInstance().setLblCompletion(lblCompletion);
+    	CrosslinkAssessmentToolControler.getInstance().setContainter(app.getMainFrame(), thisTopicTextPane, thisLinkTextPane);
+    	CrosslinkAssessmentToolControler.getInstance().setStatusMessageLabel(statusMessageLabel);
+    	CrosslinkAssessmentToolControler.getInstance().setLblPoolAnchor(lblAnchor);
+    	CrosslinkAssessmentToolControler.getInstance().setLblAnchor(lblPoolAnchor);
+    	CrosslinkAssessmentToolControler.getInstance().setLblTargetTitle(lblTargetTitle);
+    	CrosslinkAssessmentToolControler.getInstance().setLblTopicTitle(lblTopicTitle);
+    	CrosslinkAssessmentToolControler.getInstance().setLblCompletion(lblCompletion);
     	
-    	LTWAssessmentToolControler.getInstance().setTextContentType(textContentType);
+    	CrosslinkAssessmentToolControler.getInstance().setTextContentType(textContentType);
 		
 //    	this.getFrame().setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     	this.getFrame().setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
@@ -249,7 +249,7 @@ public class LTWAssessmentToolView extends FrameView {
     	   // anonymous WindowAdapter class
     	   public void windowClosing ( WindowEvent w )
     	      {
-    		   	LTWAssessmentToolControler.getInstance().backupPool(null);
+    		   	CrosslinkAssessmentToolControler.getInstance().backupPool(null);
     		   	System.exit(0);
     	      } // end windowClosing
     	   };// end anonymous class
@@ -353,7 +353,7 @@ public class LTWAssessmentToolView extends FrameView {
         jLabel8 = new javax.swing.JLabel();
         buttonGroup1 = new javax.swing.ButtonGroup();
 
-        org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(ltwassessmenttool.LTWAssessmentToolApp.class).getContext().getResourceMap(LTWAssessmentToolView.class);
+        org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(crosslink.CrosslinkAssessmentToolApp.class).getContext().getResourceMap(CrosslinkAssessmentToolView.class);
         mainPanel.setBackground(resourceMap.getColor("mainPanel.background")); // NOI18N
         mainPanel.setAutoscrolls(true);
         mainPanel.setName("mainPanel"); // NOI18N
@@ -664,7 +664,7 @@ public class LTWAssessmentToolView extends FrameView {
         fileMenu.setText(resourceMap.getString("fileMenu.text")); // NOI18N
         fileMenu.setName("fileMenu"); // NOI18N
 
-        javax.swing.ActionMap actionMap = org.jdesktop.application.Application.getInstance(ltwassessmenttool.LTWAssessmentToolApp.class).getContext().getActionMap(LTWAssessmentToolView.class, this);
+        javax.swing.ActionMap actionMap = org.jdesktop.application.Application.getInstance(crosslink.CrosslinkAssessmentToolApp.class).getContext().getActionMap(CrosslinkAssessmentToolView.class, this);
         exitMenuItem.setAction(actionMap.get("quit")); // NOI18N
         exitMenuItem.setName("exitMenuItem"); // NOI18N
         exitMenuItem.addActionListener(new java.awt.event.ActionListener() {
@@ -895,12 +895,12 @@ public class LTWAssessmentToolView extends FrameView {
     public void btnGoBackALink() {
         // Click the button to Go Back one Link
         
-        LTWAssessmentToolControler.getInstance().moveBackwardALink();
+        CrosslinkAssessmentToolControler.getInstance().moveBackwardALink();
     }
 
     @Action
     public void btnGoForwardALink() {
-    	LTWAssessmentToolControler.getInstance().moveForwardALink(false, false);
+    	CrosslinkAssessmentToolControler.getInstance().moveForwardALink(false, false);
     }
 
     // </editor-fold>
@@ -908,11 +908,11 @@ public class LTWAssessmentToolView extends FrameView {
     @Action
     public void showAboutBox() {
         if (aboutBox == null) {
-            JFrame mainFrame = LTWAssessmentToolApp.getApplication().getMainFrame();
-            aboutBox = new LTWAssessmentToolAboutBox(mainFrame);
+            JFrame mainFrame = CrosslinkAssessmentToolApp.getApplication().getMainFrame();
+            aboutBox = new CrosslinkAssessmentToolAboutBox(mainFrame);
             aboutBox.setLocationRelativeTo(mainFrame);
         }
-        LTWAssessmentToolApp.getApplication().show(aboutBox);
+        CrosslinkAssessmentToolApp.getApplication().show(aboutBox);
     }
 
     private void outRadioBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_outRadioBtnActionPerformed
@@ -939,7 +939,7 @@ public class LTWAssessmentToolView extends FrameView {
 
     private void exitMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitMenuItemActionPerformed
 //        System.exit(0);
-        LTWAssessmentToolControler.getInstance().finishAssessment();
+        CrosslinkAssessmentToolControler.getInstance().finishAssessment();
     }//GEN-LAST:event_exitMenuItemActionPerformed
     // </editor-fold>
 
@@ -1116,7 +1116,7 @@ public class LTWAssessmentToolView extends FrameView {
 //                anchorHighlightReference = highlighter.addHighlight(Integer.valueOf(CurrTopicBTargetSEIDStatus[0]), Integer.valueOf(CurrTopicBTargetSEIDStatus[1]), painters.getIrrelevantPainter());
 //            }
 //        } catch (BadLocationException ex) {
-//            Logger.getLogger(LTWAssessmentToolView.class.getName()).log(Level.SEVERE, null, ex);
+//            Logger.getLogger(CrosslinkAssessmentToolView.class.getName()).log(Level.SEVERE, null, ex);
 //        }
 //    }
     // </editor-fold>

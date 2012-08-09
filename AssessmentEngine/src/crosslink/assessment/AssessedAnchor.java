@@ -33,7 +33,7 @@ public class AssessedAnchor extends IndexedAnchor {
 	
 	@Override
 	public int getScreenPosStart() {
-		if (screenPosStart == UNINITIALIZED_VALUE) {
+		if (screenPosStart == UNINITIALIZED_VALUE && parent != null) {
 			screenPosStart = offset - parent.getOffset() + parent.getScreenPosStart(); 
 		}
 		return screenPosStart;

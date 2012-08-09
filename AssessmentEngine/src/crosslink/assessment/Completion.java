@@ -7,7 +7,7 @@ import javax.swing.JLabel;
 
 import crosslink.assessment.Bep;
 import crosslink.assessment.Completion;
-import crosslink.assessment.LTWAssessmentToolControler;
+import crosslink.assessment.CrosslinkAssessmentToolControler;
 
 public class Completion implements Observer {
 	private JLabel lblCompletion = null;
@@ -40,7 +40,7 @@ public class Completion implements Observer {
 			++finishedLinks;
 			
 			if ((finishedLinks % 10) == 0)
-				LTWAssessmentToolControler.getInstance().backupPool(null);
+				CrosslinkAssessmentToolControler.getInstance().backupPool(null);
 		}
 		else if (value == Bep.MARK_UNASSESSED) {
 			--finishedLinks;
