@@ -1656,9 +1656,9 @@ public class CrosslinkValidationToolView extends FrameView {
         linkTextPane.setEditable(false);
         linkTextPane.setFont(resourceMap.getFont("linkTextPane.font")); // NOI18N
         linkTextPane.setMaximumSize(new java.awt.Dimension(21444, 21647));
-        linkTextPane.setMinimumSize(new java.awt.Dimension(125, 1000));
+        linkTextPane.setMinimumSize(new java.awt.Dimension(125, 300));
         linkTextPane.setName("linkTextPane"); // NOI18N
-        linkTextPane.setPreferredSize(new java.awt.Dimension(225, 444));
+        linkTextPane.setPreferredSize(new java.awt.Dimension(225, 344));
         linkTextScrollPane.setViewportView(linkTextPane);
 
         rightSplitPane.setTopComponent(linkTextScrollPane);
@@ -2364,6 +2364,9 @@ public class CrosslinkValidationToolView extends FrameView {
         // Topic --> outgoing --> anchor --> subanchor --> BEPs
         topicAnchorsHT = myPooler.getTopicAllAnchors();
         poolOutgoingData = myPooler.getOutgoingPool();
+        
+        rscManager.pullPoolData();
+        
         // ---------------------------------------------------------------------
         // Get Last Indices
         String[] lastTABIndices = rscManager.getTABNavigationIndex();
@@ -2382,6 +2385,7 @@ public class CrosslinkValidationToolView extends FrameView {
 //        }
         rscManager.updateCurrTopicFilePath(currTopicFilePath);
         rscManager.updateTopicID(currTopicID);
+
         FOLTXTMatcher.getInstance().getCurrFullXmlText();
         // ---------------------------------------------------------------------
         // SET Topic Text Pane Content
@@ -2391,6 +2395,7 @@ public class CrosslinkValidationToolView extends FrameView {
         currAnchorXMLOLPairs = topicAnchorsHT.get(topicAnchorsHTPrefix + currTopicID);
         folMatcher = FOLTXTMatcher.getInstance();
         currAnchorSCROLPairs = folMatcher.getSCRAnchorPosV(this.topicTextPane, currTopicID, topicAnchorsHT);
+        rscManager.updateAnchorScreenOffset();
         // create the status pane
 //        CaretListenerLabel caretListenerLabel = new CaretListenerLabel("Caret Status", this.topicTextPane, this.statusMessageLabel);
         // initialize HighlightPainter
@@ -2417,7 +2422,7 @@ public class CrosslinkValidationToolView extends FrameView {
         // ---------------------------------------------------------------------
         // initialize Topic and Link Content Panels
 //        this.topicTextPane.addCaretListener(caretListenerLabel);
-        topicPaneMouseListener mtTopicPaneListener = new topicPaneMouseListener(this.topicTextPane, this.linkTextPane, this.currAnchorSCROLPairs, this.anchorBepTable, this.paneTableIndexing);
+        topicPaneMouseListener mtTopicPaneListener = new topicPaneMouseListener(this.topicTextPane, this.linkTextPane); //, this.currAnchorSCROLPairs, this.anchorBepTable, this.paneTableIndexing);
         this.topicTextPane.addMouseListener(mtTopicPaneListener);
         this.topicTextPane.addMouseMotionListener(mtTopicPaneListener);
         // ---------------------------------------------------------------------

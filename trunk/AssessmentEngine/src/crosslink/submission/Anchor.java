@@ -280,12 +280,12 @@ public class Anchor {
 
 	public String toXml() {
 		StringBuffer sb = new StringBuffer();
-		String openTag = "\t\t<anchor offset=\"%d\" length=\"%d\" name=\"%s\">\n";
+		String openTag = "\t\t\t<anchor offset=\"%d\" length=\"%d\" name=\"%s\">\n";
 		sb.append(String.format(openTag, this.offset, this.length, this.name));
 		for (Target target : targets.values()) {
 			sb.append(target.toXml());
 		}
-		String closeTag = "\t\t</anchor>\n";
+		String closeTag = "\t\t\t</anchor>\n";
 		sb.append(closeTag);
 		return sb.toString();
 	}

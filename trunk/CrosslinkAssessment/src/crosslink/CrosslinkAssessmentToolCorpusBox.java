@@ -1,4 +1,4 @@
-package ltwassessmenttool;
+package crosslink;
 
 import java.io.File;
 import javax.swing.JFileChooser;
@@ -11,16 +11,16 @@ import org.jdesktop.application.Action;
 import crosslink.parsers.ResourcesManager;
 
 /**
- * LTWAssessmentToolCorpusBox.java
+ * CrosslinkAssessmentToolCorpusBox.java
  * Created on 28/07/2009, 08:57:13
  * @author Darren Huang
  */
-public class LTWAssessmentToolCorpusBox extends javax.swing.JDialog {
+public class CrosslinkAssessmentToolCorpusBox extends javax.swing.JDialog {
 
     ResourcesManager toolRscManager = null;
 //    private JLabel jLableCollection = null;
 
-    public LTWAssessmentToolCorpusBox(java.awt.Frame parent) {
+    public CrosslinkAssessmentToolCorpusBox(java.awt.Frame parent) {
         super(parent, true);
         initComponents();
         toolRscManager = ResourcesManager.getInstance();
@@ -160,9 +160,9 @@ public class LTWAssessmentToolCorpusBox extends javax.swing.JDialog {
 
         imageLabel.setName("imageLabel"); // NOI18N
 
-        javax.swing.ActionMap actionMap = org.jdesktop.application.Application.getInstance(ltwassessmenttool.LTWAssessmentToolApp.class).getContext().getActionMap(LTWAssessmentToolCorpusBox.class, this);
+        javax.swing.ActionMap actionMap = org.jdesktop.application.Application.getInstance(crosslink.CrosslinkAssessmentToolApp.class).getContext().getActionMap(CrosslinkAssessmentToolCorpusBox.class, this);
         OkBtn.setAction(actionMap.get("OKCorpusBox")); // NOI18N
-        org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(ltwassessmenttool.LTWAssessmentToolApp.class).getContext().getResourceMap(LTWAssessmentToolCorpusBox.class);
+        org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(crosslink.CrosslinkAssessmentToolApp.class).getContext().getResourceMap(CrosslinkAssessmentToolCorpusBox.class);
         OkBtn.setText(resourceMap.getString("OkBtn.text")); // NOI18N
         OkBtn.setName("OkBtn"); // NOI18N
 

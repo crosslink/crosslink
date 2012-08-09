@@ -3,6 +3,7 @@ package crosslink.submission;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
@@ -19,6 +20,7 @@ import crosslink.submission.Anchor;
 import crosslink.submission.AnchorSetInterface;
 import crosslink.submission.Target;
 import crosslink.submission.Topic;
+
 import crosslink.utility.FileUtil;
 
 import org.w3c.dom.Document;
@@ -67,6 +69,11 @@ public class Run<AnchorSet>{
 		init();
 	}
 	
+	public Run(File file) {
+		this.convertToTextOffset = false;
+		read(file);
+	}
+
 	public String getRunName() {
 		return runName;
 	}
@@ -109,6 +116,9 @@ public class Run<AnchorSet>{
 	public AnchorSet createAnchorSet() {
 		AnchorSet instance = null;
 		try {
+			if (factory != null)
+				factory = (Class<AnchorSet>) ArrayList.class;
+			
 			instance = factory.newInstance();
 		} catch (InstantiationException e) {
 			e.printStackTrace();

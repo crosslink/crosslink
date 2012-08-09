@@ -37,7 +37,7 @@ import crosslink.assessment.AssessmentThread;
 import crosslink.assessment.Bep;
 import crosslink.assessment.CurrentFocusedAnchor;
 import crosslink.assessment.IndexedAnchor;
-import crosslink.assessment.LTWAssessmentToolControler;
+import crosslink.assessment.CrosslinkAssessmentToolControler;
 import crosslink.parsers.FOLTXTMatcher;
 import crosslink.parsers.PoolerManager;
 import crosslink.parsers.ResourcesManager;
@@ -102,7 +102,7 @@ public class topicPaneMouseListener implements MouseInputListener {
 
     private void logger(Object aObj) {
         try {
-            String targetFile = "resources" + File.separator + "Pool" + File.separator + "T" + this.currTopicID + "_ltwAssessTool2009.log";
+            String targetFile = "resources" + File.separator + "Temp" + File.separator + "T" + this.currTopicID + "_ltwAssessTool2009.log";
             File poolFileWithName = new File(targetFile);
             BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(
 			        new FileOutputStream(poolFileWithName), "UTF8")); //new BufferedWriter(new FileWriter(poolFileWithName, true));
@@ -322,7 +322,7 @@ public class topicPaneMouseListener implements MouseInputListener {
 ////        if (bepXmlFilePath.startsWith(afTasnCollectionErrors)) {
 ////            bepXmlFilePath = myRSCManager.getErrorXmlFilePath(bepXmlFilePath);
 ////        }
-////        Xml2Html xmlParser = new Xml2Html(bepXmlFilePath, Boolean.valueOf(System.getProperty(LTWAssessmentToolControler.sysPropertyIsLinkWikiKey)));
+////        Xml2Html xmlParser = new Xml2Html(bepXmlFilePath, Boolean.valueOf(System.getProperty(CrosslinkAssessmentToolControler.sysPropertyIsLinkWikiKey)));
 ////        String xmlHtmlText = xmlParser.getHtmlContent().toString();
 ////        this.linkTextPane.setContentType(paneContentType);
 ////        this.linkTextPane.setText(xmlHtmlText);
@@ -342,7 +342,7 @@ public class topicPaneMouseListener implements MouseInputListener {
 ////                if (unAssLinkFPath.startsWith(afTasnCollectionErrors)) {
 ////                    unAssLinkFPath = myRSCManager.getErrorXmlFilePath(unAssLinkFPath);
 ////                }
-////                Xml2Html unAssXmlParser = new Xml2Html(unAssLinkFPath, Boolean.valueOf(System.getProperty(LTWAssessmentToolControler.sysPropertyIsLinkWikiKey)));
+////                Xml2Html unAssXmlParser = new Xml2Html(unAssLinkFPath, Boolean.valueOf(System.getProperty(CrosslinkAssessmentToolControler.sysPropertyIsLinkWikiKey)));
 ////                String unAssXmlHtmlText = unAssXmlParser.getHtmlContent().toString();
 ////                this.linkTextPane.setContentType(paneContentType);
 ////                this.linkTextPane.setText(unAssXmlHtmlText);
@@ -373,9 +373,11 @@ public class topicPaneMouseListener implements MouseInputListener {
 //        }
         // ---------------------------------------------------------------------
         // ---------------------------------------------------------------------
+
+        CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(preTHyperOLSEStatus, (AssessedAnchor)bepInfo.getAssociatedAnchor(), bepInfo);
+        
         // 3) update NAV Indices in toolResources XML
         this.myRSCManager.updateTABNavIndex(this.currTopicID, bepInfo.getAssociatedAnchor().getParent(), bepInfo);
-        CurrentFocusedAnchor.getCurrentFocusedAnchor().setAnchor(preTHyperOLSEStatus, (AssessedAnchor)bepInfo.getAssociatedAnchor(), bepInfo);
 //        CurrentFocusedAnchor.getCurrentFocusedAnchor().setCurrentAnchorProperty(pAnchorO, pAnchorOL, currSCRSEName.screenPosStartToString(), currSCRSEName.screenPosStartToString(), pAnchorStatus, currSCRSEName.extendedLengthToString()/*, currSCRSEName.offsetIndexToString()*/);
         // ---------------------------------------------------------------------
 
@@ -396,8 +398,8 @@ public class topicPaneMouseListener implements MouseInputListener {
             // CURR PAnchor is PRE PAnchor     
             AssessmentThread.setProcessingAnchor(preTHyperOLSEStatus);
             AssessmentThread.setTask(AssessmentThread.EVENT_SET_SUBANCHOR_IRRELEVANT);
-//            LTWAssessmentToolControler.getInstance().setSubanchorIrrelevant(preTHyperOLSEStatus);
-//            LTWAssessmentToolControler.getInstance().goNextLink(true, true);
+//            CrosslinkAssessmentToolControler.getInstance().setSubanchorIrrelevant(preTHyperOLSEStatus);
+//            CrosslinkAssessmentToolControler.getInstance().goNextLink(true, true);
             
         } else {
             log("CURR PAnchor is NOT PRE PAnchor...");
@@ -411,7 +413,7 @@ public class topicPaneMouseListener implements MouseInputListener {
             // Originally, "Highlight CURR PAnchor as YELLOW", but we don't need that
             // -----------------------------------------------------------------
 //            for (AssessedAnchor subanchor : currSCRSEName.getChildrenAnchors())
-//            	LTWAssessmentToolControler.getInstance().setSubanchorIrrelevant(subanchor);
+//            	CrosslinkAssessmentToolControler.getInstance().setSubanchorIrrelevant(subanchor);
 //            
 //            currSCRSEName.statusCheck();
 //    		TopicHighlightManager.getInstance().update(currSCRSEName);
