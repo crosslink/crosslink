@@ -23,7 +23,7 @@ public class AssessedAnchor extends IndexedAnchor {
 	}
 	
 	public IndexedAnchor getParent() {
-		return parent;
+		return parent == null ? this : parent;
 	}
 
 	public void setParent(IndexedAnchor parent) {
@@ -33,8 +33,11 @@ public class AssessedAnchor extends IndexedAnchor {
 	
 	@Override
 	public int getScreenPosStart() {
-		if (screenPosStart == UNINITIALIZED_VALUE && parent != null) {
-			screenPosStart = offset - parent.getOffset() + parent.getScreenPosStart(); 
+		if (screenPosStart == UNINITIALIZED_VALUE) {
+			if (parent != null)
+				screenPosStart = offset - parent.getOffset() + parent.getScreenPosStart(); 
+			else
+				screenPosStart = offset;
 		}
 		return screenPosStart;
 	}

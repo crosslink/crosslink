@@ -50,6 +50,7 @@ import crosslink.utility.tabTxtPaneManager;
 import crosslink.utility.tbaTxtPaneManager;
 import crosslink.validation.ValidationMessage;
 import crosslink.validation.Validator;
+import crosslink.view.TopicHighlightManager;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -218,7 +219,9 @@ public class CrosslinkValidationToolView extends FrameView {
 
 //        anchorBepTable.addMouseListener(new paneTableMouseListener(this.topicTextPane, this.linkTextPane, this.anchorBepTable));
 
-
+    	TopicHighlightManager.getInstance().setPane(topicTextPane);
+    	TopicHighlightManager.getInstance().setLinkPane(linkTextPane);
+    	
         // when the tool firstly starts
         System.setProperty(sysPropertyIsTABKey, "true");
     }

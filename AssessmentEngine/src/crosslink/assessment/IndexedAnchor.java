@@ -208,8 +208,9 @@ public class IndexedAnchor extends Anchor implements InterfaceAnchor {
     	int sp = getScreenPosStart(); 
     	int se = getScreenPosEnd() + ext_length;
     	
-    	for (Object theHighlightReference : anchorHighlightReferences)
+    	for (Object theHighlightReference : anchorHighlightReferences) 
     		txtPaneHighlighter.removeHighlight(theHighlightReference);
+    	anchorHighlightReferences.clear();
     			
     	try {
     		if (status == 1) {

@@ -110,8 +110,8 @@ public class TopicHighlightManager {
 		if (currAnchor != null) {
 			if (currAnchor.getParent() != null)
 				currAnchor.getParent().setToCurrentAnchor(txtPaneHighlighter, painters, currAnchor);
-//			else
-//				currAnchor.setToCurrentAnchor(txtPaneHighlighter, painters, currAnchor);
+			else
+				currAnchor.setToCurrentAnchor(txtPaneHighlighter, painters, currAnchor);
 		}
 		if (pane != null) {
 	        pane.getCaret().setDot(currAnchor.getScreenPosEnd());
@@ -191,13 +191,20 @@ public class TopicHighlightManager {
 			StyledDocument styDoc = (StyledDocument) txtPane.getDocument();
 			
 			Style bepHStyle = styDoc.addStyle("bepHIcon", null);
-			StyleConstants.setIcon(bepHStyle, new ImageIcon(bepHighlightIconImageFilePath));
+			if (bepHighlightIconImageFilePath != null)
+				StyleConstants.setIcon(bepHStyle, new ImageIcon(bepHighlightIconImageFilePath));
+			
 			Style bepCStyle = styDoc.addStyle("bepCIcon", null);
-			StyleConstants.setIcon(bepCStyle, new ImageIcon(bepCompletedIconImageFilePath));
+			if (bepCompletedIconImageFilePath != null)
+				StyleConstants.setIcon(bepCStyle, new ImageIcon(bepCompletedIconImageFilePath));
+			
 			Style bepNStyle = styDoc.addStyle("bepNIcon", null);
+			if (bepNonrelevantIconImageFilePath != null)
 			StyleConstants.setIcon(bepNStyle, new ImageIcon(bepNonrelevantIconImageFilePath));
+				
 			Style bepStyle = styDoc.addStyle("bepIcon", null);
-			StyleConstants.setIcon(bepStyle, new ImageIcon(bepIconImageFilePath));
+			if (bepIconImageFilePath != null)
+				StyleConstants.setIcon(bepStyle, new ImageIcon(bepIconImageFilePath));
 			
 			if (isTopicBEP) {
 			    // PRE-BEP Icon back to its ORIGINAL
