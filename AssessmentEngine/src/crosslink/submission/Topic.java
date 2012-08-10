@@ -66,6 +66,20 @@ public class Topic<AnchorSet> extends WikiArticleXml {
 	public boolean validateIt(int showMessage, boolean convertToTextOffset) {
 		load();
 		
+		valid = true;
+		
+		if (anchors instanceof Collection) {
+			Collection<Anchor> anchorSet = (Collection<Anchor>) anchors;
+			for (Anchor anchor : anchorSet) {
+				if (!anchor.validate(this, showMessage, convertToTextOffset))
+					valid = false;
+			}
+		}
+		else {
+			System.err.println("Unsupported implementation of AnchorSet type");
+			System.exit(-1);
+		}
+			
 //		valid = anchors.validateAll(this, showMessage, convertToTextOffset);
 		
 		return valid;
