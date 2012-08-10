@@ -1,6 +1,7 @@
 package crosslink.submission;
 
 import java.io.File;
+import java.util.ArrayList;
 
 import crosslink.AppResource;
 import crosslink.submission.Anchor;
@@ -10,7 +11,7 @@ import crosslink.submission.Run;
 public class RunChecker {
 	
 	public void checkRun(String file) {
-		Run run = new Run(new File(file));
+		Run<ArrayList> run = new Run<ArrayList>(new File(file));
 		
 		System.err.println("Checking run: " + run.getRunName());
 		System.err.println("===========================================================================");

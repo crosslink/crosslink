@@ -2490,19 +2490,19 @@ public class CrosslinkValidationToolView extends FrameView {
 //        }
     }
 
-    private void setTopicTextHighlighter(Vector<String[]> anchorLPairs) {
-        try {
-            // 1) get Anchor Text Offset & Length from the XML file
-            Highlighter highlighter = this.topicTextPane.getHighlighter();
-            Object anchorHighlightReference;
-            for (String[] alPair : anchorLPairs) {
-                // Active faults_669_682
-                anchorHighlightReference = highlighter.addHighlight(Integer.valueOf(alPair[1]), Integer.valueOf(alPair[2]), painters.getAnchorPainter());
-            }
-        } catch (BadLocationException ex) {
-            Logger.getLogger(CrosslinkValidationToolView.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }
+//    private void setTopicTextHighlighter(Vector<String[]> anchorLPairs) {
+//        try {
+//            // 1) get Anchor Text Offset & Length from the XML file
+//            Highlighter highlighter = this.topicTextPane.getHighlighter();
+//            Object anchorHighlightReference;
+//            for (String[] alPair : anchorLPairs) {
+//                // Active faults_669_682
+//                anchorHighlightReference = highlighter.addHighlight(Integer.valueOf(alPair[1]), Integer.valueOf(alPair[2]), painters.getAnchorPainter());
+//            }
+//        } catch (BadLocationException ex) {
+//            Logger.getLogger(CrosslinkValidationToolView.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//    }
 
     private void setTopicBEPIcon(Vector<String[]> currBepSCRO) {
         // Insert into Doc in JTextPane
