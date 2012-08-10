@@ -244,6 +244,7 @@ public class IndexedAnchor extends Anchor implements InterfaceAnchor {
     	
     	for (Object theHighlightReference : currAnchorSE.getParent().getAnchorHighlightReference())
     		txtPaneHighlighter.removeHighlight(theHighlightReference);
+    	currAnchorSE.getParent().getAnchorHighlightReference().clear();
     	
         int sp1 = 0, se1 = 0;
         int sp2 = 0, se2 = 0;

@@ -71,6 +71,7 @@ public class Run<AnchorSet>{
 	
 	public Run(File file) {
 		this.convertToTextOffset = false;
+		init();
 		read(file);
 	}
 
@@ -116,7 +117,7 @@ public class Run<AnchorSet>{
 	public AnchorSet createAnchorSet() {
 		AnchorSet instance = null;
 		try {
-			if (factory != null)
+			if (factory == null)
 				factory = (Class<AnchorSet>) ArrayList.class;
 			
 			instance = factory.newInstance();

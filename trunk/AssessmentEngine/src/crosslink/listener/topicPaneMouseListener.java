@@ -570,34 +570,34 @@ public class topicPaneMouseListener implements MouseInputListener {
         return hoveredAnchor; //.toArray(); //selectedAnchorSEName;
     }
 
-    private void restorePrePoolAnchorHighlight(String prePAnchorS, String prePAnchorE, String prePAnchorStatus) {
-        try {
-            Highlighter txtPaneHighlighter = this.topicTextPane.getHighlighter();
-            Highlight[] highlights = txtPaneHighlighter.getHighlights();
-            Object anchorHighlightRef = null;
-            int[] preAnchorSEPos = new int[]{Integer.valueOf(prePAnchorS), Integer.valueOf(prePAnchorE)};
-            for (int i = 0; i <
-                    highlights.length; i++) {
-                int sPos = highlights[i].getStartOffset();
-                int ePos = highlights[i].getEndOffset();
-                if (preAnchorSEPos[0] == sPos && preAnchorSEPos[1] == ePos) {
-                    txtPaneHighlighter.removeHighlight(highlights[i]);
-                    if (Integer.valueOf(prePAnchorStatus) == 0) {
-                        anchorHighlightRef = txtPaneHighlighter.addHighlight(sPos, ePos, painters.getAnchorPainter());
-                    } else if (Integer.valueOf(prePAnchorStatus) == 1) {
-                        anchorHighlightRef = txtPaneHighlighter.addHighlight(sPos, ePos, painters.getCompletePainter());
-                    } else if (Integer.valueOf(prePAnchorStatus) == -1) {
-                        anchorHighlightRef = txtPaneHighlighter.addHighlight(sPos, ePos, painters.getIrrelevantPainter());
-                    }
-
-
-                }
-
-            }
-        } catch (BadLocationException ex) {
-            Logger.getLogger(topicPaneMouseListener.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }
+//    private void restorePrePoolAnchorHighlight(String prePAnchorS, String prePAnchorE, String prePAnchorStatus) {
+//        try {
+//            Highlighter txtPaneHighlighter = this.topicTextPane.getHighlighter();
+//            Highlight[] highlights = txtPaneHighlighter.getHighlights();
+//            Object anchorHighlightRef = null;
+//            int[] preAnchorSEPos = new int[]{Integer.valueOf(prePAnchorS), Integer.valueOf(prePAnchorE)};
+//            for (int i = 0; i <
+//                    highlights.length; i++) {
+//                int sPos = highlights[i].getStartOffset();
+//                int ePos = highlights[i].getEndOffset();
+//                if (preAnchorSEPos[0] == sPos && preAnchorSEPos[1] == ePos) {
+//                    txtPaneHighlighter.removeHighlight(highlights[i]);
+//                    if (Integer.valueOf(prePAnchorStatus) == 0) {
+//                        anchorHighlightRef = txtPaneHighlighter.addHighlight(sPos, ePos, painters.getAnchorPainter());
+//                    } else if (Integer.valueOf(prePAnchorStatus) == 1) {
+//                        anchorHighlightRef = txtPaneHighlighter.addHighlight(sPos, ePos, painters.getCompletePainter());
+//                    } else if (Integer.valueOf(prePAnchorStatus) == -1) {
+//                        anchorHighlightRef = txtPaneHighlighter.addHighlight(sPos, ePos, painters.getIrrelevantPainter());
+//                    }
+//
+//
+//                }
+//
+//            }
+//        } catch (BadLocationException ex) {
+//            Logger.getLogger(topicPaneMouseListener.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//    }
 
     private void toggleTopicBepIcon(String scrSEPosKey, String toBepStatus) {
         // change that position BEP to "toBepStatus"
