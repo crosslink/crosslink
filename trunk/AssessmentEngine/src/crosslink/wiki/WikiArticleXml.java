@@ -124,6 +124,14 @@ public class WikiArticleXml {
 		this.lang = lang;
 	}
 
+	public String getXmlFile() {
+		return xmlFile;
+	}
+
+	public void setXmlFile(String xmlFile) {
+		this.xmlFile = xmlFile;
+	}
+
 	public void read() {	
 		readInBytes(new File(xmlFile));
 	}
