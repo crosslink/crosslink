@@ -84,14 +84,14 @@ public class MonolinkMining {
 	}
 	
 	protected ArrayList<String>extractLinksFromTopics(String inputfile) {
-		return extractLinksFromTopics(inputfile, "");
+		return extractLinksFromTopics(inputfile, "", 1);
 	}
 	
-	protected ArrayList<String> extractLinksFromTopics(String inputfile, String parameter) {
+	protected ArrayList<String> extractLinksFromTopics(String inputfile, String parameter, int pos) {
 		ArrayList<String> links = new ArrayList<String>();
         String osName = System.getProperty("os.name");
 		//      String Command = Command2;
-		String Command = "/usr/local/bin/link_extract " + parameter + inputfile;
+		String Command = "/usr/local/bin/link_extract " + parameter + " " + inputfile;
 		Process runCommand;
 		//if (osName.equalsIgnoreCase("Linux")) {
 		//  Command = Command2;
@@ -114,10 +114,19 @@ public class MonolinkMining {
 			String line;
 			while ((line = Resultset.readLine()) != null) {
 	 			String[] arr = line.split(":");
-	 			String sourceId = arr[0];
-	 			String targetId = arr[1];
+	 			String link = null;
+	 			switch (pos) {
+	 			case 0:
+	 				link = arr[0];
+	 				break;
+	 			case 1:
+	 				link = arr[1];
+	 				break;
+	 			}
+//	 			String sourceId = arr[0];
+//	 			String targetId = arr[1];
 
-				links.add(targetId);
+				links.add(link);
 			}
 		} catch (IOException e) {
 			// TODO Auto-generated catch block

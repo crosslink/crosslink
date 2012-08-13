@@ -160,16 +160,18 @@ public class CrosslinkMining extends MonolinkMining {
 	
 	private String findCounterPartTopic(CrosslinkTopic topic) throws Exception {
 		counterTopicId = extractCrosslinkFromTopics(topic.getXmlFile());
-		String id = topic.getId();
-		if (enCorpusCrosslinkTable.hasSourceId(id)) {
-			counterTopicId = enCorpusCrosslinkTable.getTargetId(id);
-			if (!wikiPageExists(counterTopicId, targetLang))
-				counterTopicId = null;
+		if (counterTopicId == null) {
+			String id = topic.getId();
+			if (enCorpusCrosslinkTable.hasSourceId(id)) {
+				counterTopicId = enCorpusCrosslinkTable.getTargetId(id);
+				if (!wikiPageExists(counterTopicId, targetLang))
+					counterTopicId = null;
+			}
+			if (counterTopicId == null && otherCorpusCrosslinkTable.hasSourceId(id))
+				counterTopicId = otherCorpusCrosslinkTable.getTargetId(id);
+			if (counterTopicId == null)
+				throw new Exception("No counterpart find for " + topic.getTitle() + " : " + id);
 		}
-		if (counterTopicId == null && otherCorpusCrosslinkTable.hasSourceId(id))
-			counterTopicId = otherCorpusCrosslinkTable.getTargetId(id);
-		if (counterTopicId == null)
-			throw new Exception("No counterpart find for " + topic.getTitle() + " : " + id);
 		
 		String targetTopicFile = targetTopicPath + File.separator + counterTopicId + ".xml";
 		
@@ -330,7 +332,7 @@ public class CrosslinkMining extends MonolinkMining {
 	}
 
 	protected String extractCrosslinkFromTopics(String inputfile) {
-		ArrayList<String> links = extractLinksFromTopics(inputfile, "-valid-target-only -crosslink:" + targetLang);
+		ArrayList<String> links = extractLinksFromTopics(inputfile, "-valid-target-only -crosslink:" + targetLang, 0);
 		if (links.size() > 0) {
 			if (links.size() > 1)
 				System.err.println("Alter: more than 1 language links were found.");
@@ -338,5 +340,4 @@ public class CrosslinkMining extends MonolinkMining {
 		}
 		return null;
 	}
-
 }
