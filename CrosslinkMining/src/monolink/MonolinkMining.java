@@ -83,11 +83,15 @@ public class MonolinkMining {
 		this.sourceTopicPath = sourceTopicPath;
 	}
 	
-	protected ArrayList<String> extractLinksFromTopics(String inputfile) {
+	protected ArrayList<String>extractLinksFromTopics(String inputfile) {
+		return extractLinksFromTopics(inputfile, "");
+	}
+	
+	protected ArrayList<String> extractLinksFromTopics(String inputfile, String parameter) {
 		ArrayList<String> links = new ArrayList<String>();
         String osName = System.getProperty("os.name");
 		//      String Command = Command2;
-		String Command = "/usr/local/bin/link_extract " + inputfile;
+		String Command = "/usr/local/bin/link_extract " + parameter + inputfile;
 		Process runCommand;
 		//if (osName.equalsIgnoreCase("Linux")) {
 		//  Command = Command2;
@@ -125,7 +129,7 @@ public class MonolinkMining {
 	protected void getDirectLinks(ArrayList<String> links, MonolinkTopic topic) {
     	for (String link : links)
     		topic.addLink(link);
-    	System.err.println(String.format("Found %d direct links", topic.getLinks().size()));
+    	System.err.println(String.format("Found %d direct links for topic %s - %s", topic.getLinks().size(), topic.getId(), topic.getTitle()));
 	}
 	
  	private void getTopicLinks(String topicPath, String lang) {

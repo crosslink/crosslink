@@ -42,7 +42,9 @@ public class CrosslinkMining extends MonolinkMining {
 	private CrosslinkTable otherCorpusCrosslinkTable;
 
 	private ArrayList<CrosslinkTopic> topics = new ArrayList<CrosslinkTopic>();
-
+	
+	String counterTopicId = null;
+	
 	/**
 	 * @param targetLang the targetLang to set
 	 */
@@ -147,32 +149,32 @@ public class CrosslinkMining extends MonolinkMining {
 
 	private void createCrosslinkTable(String crosslinkTablePath) {
 		setCrosslinkTablePath(crosslinkTablePath);
-		enCorpusCrosslinkTable = new CrosslinkTable(String.format("%sen_corpus_%s2en.txt", crosslinkTablePath + File.separator, otherLang), sourceLang);
+		enCorpusCrosslinkTable = new CrosslinkTable(String.format("%sen2%s_lang_links.txt", crosslinkTablePath + File.separator, otherLang), sourceLang);
 		enCorpusCrosslinkTable.setLang("en");
 		enCorpusCrosslinkTable.read();
 		
-		otherCorpusCrosslinkTable = new CrosslinkTable(String.format("%s%s_corpus_en2%s.txt", crosslinkTablePath + File.separator, otherLang, otherLang), sourceLang);
+		otherCorpusCrosslinkTable = new CrosslinkTable(String.format("%s%s2en_lang_links.txt", crosslinkTablePath + File.separator, otherLang), sourceLang);
 		otherCorpusCrosslinkTable.setLang(otherLang);
 		otherCorpusCrosslinkTable.read();
 	}
 	
 	private String findCounterPartTopic(CrosslinkTopic topic) throws Exception {
-		String topicId = null;
+		counterTopicId = extractCrosslinkFromTopics(topic.getXmlFile());
 		String id = topic.getId();
 		if (enCorpusCrosslinkTable.hasSourceId(id)) {
-			topicId = enCorpusCrosslinkTable.getTargetId(id);
-			if (!wikiPageExists(topicId, targetLang))
-				topicId = null;
+			counterTopicId = enCorpusCrosslinkTable.getTargetId(id);
+			if (!wikiPageExists(counterTopicId, targetLang))
+				counterTopicId = null;
 		}
-		if (topicId == null && otherCorpusCrosslinkTable.hasSourceId(id))
-			topicId = otherCorpusCrosslinkTable.getTargetId(id);
-		if (topicId == null)
+		if (counterTopicId == null && otherCorpusCrosslinkTable.hasSourceId(id))
+			counterTopicId = otherCorpusCrosslinkTable.getTargetId(id);
+		if (counterTopicId == null)
 			throw new Exception("No counterpart find for " + topic.getTitle() + " : " + id);
 		
-		String targetTopicFile = targetTopicPath + File.separator + topicId + ".xml";
+		String targetTopicFile = targetTopicPath + File.separator + counterTopicId + ".xml";
 		
 		if (! new File(targetTopicFile).exists()) {
-			String wikiFilePath = getWikiPagePath(topicId, targetLang);
+			String wikiFilePath = getWikiPagePath(counterTopicId, targetLang);
 			FileUtil.copyFile(wikiFilePath, targetTopicFile);
 		}
 		return targetTopicFile;
@@ -189,7 +191,7 @@ public class CrosslinkMining extends MonolinkMining {
 			if (targetId != null)
 				topic.addLink(targetId);
         }		
-    	System.err.println(String.format("Found %d indirect links", topic.getLinks().size()));
+    	System.err.println(String.format("Found %d indirect links for topic %s - %s", topic.getLinks().size(), topic.getId(), topic.getTitle()));
 	}
 	
  	private void getTopicLinks(String topicPath, String lang) {
@@ -204,9 +206,9 @@ public class CrosslinkMining extends MonolinkMining {
             ++filecount;
         	try {
 	        	String inputfile = onefile.getCanonicalPath();
-	        	CrosslinkTopic topic = new CrosslinkTopic(new File(inputfile));
-	        	if (topic.getId().equals("583701"))
+	        	if (inputfile.indexOf("101991.xml") > -1)
 	        		System.err.println("I got you");
+	        	CrosslinkTopic topic = new CrosslinkTopic(new File(inputfile));
 	        	topics.add(topic);
         	
 	        	ArrayList<String> links = extractLinksFromTopics(inputfile);
@@ -325,6 +327,16 @@ public class CrosslinkMining extends MonolinkMining {
 		}
 		
 		mining.findWikiGroundTruth(format);
+	}
+
+	protected String extractCrosslinkFromTopics(String inputfile) {
+		ArrayList<String> links = extractLinksFromTopics(inputfile, "-valid-target-only -crosslink:" + targetLang);
+		if (links.size() > 0) {
+			if (links.size() > 1)
+				System.err.println("Alter: more than 1 language links were found.");
+			return links.get(links.size() - 1);
+		}
+		return null;
 	}
 
 }
