@@ -208,7 +208,7 @@ public class CrosslinkMining extends MonolinkMining {
             ++filecount;
         	try {
 	        	String inputfile = onefile.getCanonicalPath();
-	        	if (inputfile.indexOf("101991.xml") > -1)
+	        	if (inputfile.indexOf("133770.xml") > -1)
 	        		System.err.println("I got you");
 	        	CrosslinkTopic topic = new CrosslinkTopic(new File(inputfile));
 	        	topics.add(topic);
