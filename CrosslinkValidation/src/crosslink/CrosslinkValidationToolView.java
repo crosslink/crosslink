@@ -176,6 +176,9 @@ public class CrosslinkValidationToolView extends FrameView {
         buttonGroup1.add(jRadioButtonMenuItemCrosslink2);
         buttonGroup1.add(jRadioButtonMenuItemCrosslink1);
 
+        btnPrevTopic.setVisible(false);
+        btnNextTopic.setVisible(false);
+        
 //        ObservableSingleton os = ObservableSingleton.getInstance();
 //        fieldUpdateObserver fuObserver = new fieldUpdateObserver(os, this.lblTopicTitle, this.lblTopicID, this.lblPoolAnchor, this.lblTargetPage);
 //        os.addObserver(fuObserver);
@@ -291,6 +294,8 @@ public class CrosslinkValidationToolView extends FrameView {
         jLabel3 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
+        btnPrevTopic = new javax.swing.JButton();
+        btnNextTopic = new javax.swing.JButton();
         menuBar = new javax.swing.JMenuBar();
         javax.swing.JMenu fileMenu = new javax.swing.JMenu();
         javax.swing.JMenuItem exitMenuItem = new javax.swing.JMenuItem();
@@ -1753,12 +1758,24 @@ public class CrosslinkValidationToolView extends FrameView {
         jLabel2.setText(resourceMap.getString("jLabel2.text")); // NOI18N
         jLabel2.setName("jLabel2"); // NOI18N
 
+        javax.swing.ActionMap actionMap = org.jdesktop.application.Application.getInstance(crosslink.CrosslinkValidationToolApp.class).getContext().getActionMap(CrosslinkValidationToolView.class, this);
+        btnPrevTopic.setAction(actionMap.get("goToPrevTopic")); // NOI18N
+        btnPrevTopic.setText(resourceMap.getString("btnPrevTopic.text")); // NOI18N
+        btnPrevTopic.setName("btnPrevTopic"); // NOI18N
+
+        btnNextTopic.setAction(actionMap.get("goToNextTopic")); // NOI18N
+        btnNextTopic.setText(resourceMap.getString("btnNextTopic.text")); // NOI18N
+        btnNextTopic.setName("btnNextTopic"); // NOI18N
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(771, 771, 771)
+                .addComponent(btnPrevTopic)
+                .addGap(18, 18, 18)
+                .addComponent(btnNextTopic)
+                .addGap(565, 565, 565)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 517, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(316, 316, 316))
         );
@@ -1766,7 +1783,10 @@ public class CrosslinkValidationToolView extends FrameView {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(5, 5, 5)
-                .addComponent(jLabel2)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(btnPrevTopic)
+                    .addComponent(btnNextTopic))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -1794,7 +1814,6 @@ public class CrosslinkValidationToolView extends FrameView {
         fileMenu.setText(resourceMap.getString("fileMenu.text")); // NOI18N
         fileMenu.setName("fileMenu"); // NOI18N
 
-        javax.swing.ActionMap actionMap = org.jdesktop.application.Application.getInstance(crosslink.CrosslinkValidationToolApp.class).getContext().getActionMap(CrosslinkValidationToolView.class, this);
         exitMenuItem.setAction(actionMap.get("quit")); // NOI18N
         exitMenuItem.setName("exitMenuItem"); // NOI18N
         fileMenu.add(exitMenuItem);
@@ -1979,6 +1998,7 @@ public class CrosslinkValidationToolView extends FrameView {
                             	File fileHandler = new File(firstFile);
                             	ArrayList<File> fristFileList = new ArrayList<File>();
                             	fristFileList.add(fileHandler);
+                            	onTopicsLoading(true);
                             	load(fileHandler, fristFileList);
                             }
 
@@ -2038,6 +2058,7 @@ public class CrosslinkValidationToolView extends FrameView {
                         // Errors: well-form or xml data
                         JOptionPane.showMessageDialog(CrosslinkValidationToolApp.getApplication().getMainFrame(), msgFromValidation);
                     } else {
+                    	onTopicsLoading(true);
                     	load(thisXMLFile, fileList);
 //                                setOutgoingTAB();
 //                            } else if (inRadioBtn.isSelected()) {
@@ -2251,6 +2272,8 @@ public class CrosslinkValidationToolView extends FrameView {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTable anchorBepTable;
     private javax.swing.JScrollPane anchorBepTablePane;
+    private javax.swing.JButton btnNextTopic;
+    private javax.swing.JButton btnPrevTopic;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JMenuItem corpusMenuItem;
     private javax.swing.JRadioButtonMenuItem inRadioBtn;
@@ -2586,6 +2609,33 @@ public class CrosslinkValidationToolView extends FrameView {
         ValidationMessage.getInstance().setOutputPane(msgTxtPane);
         msgTxtPane.setContentType("text/html");
         msgTxtPane.setText("This is an information pane");	
+    }
+
+    @Action
+    public void goToPrevTopic() {
+        String prevFile = validation.prev();
+        if (prevFile != null) {
+            File fileHandler = new File(prevFile);
+            ArrayList<File> fristFileList = new ArrayList<File>();
+            fristFileList.add(fileHandler);
+            load(fileHandler, fristFileList);
+        }
+    }
+
+    @Action
+    public void goToNextTopic() {
+        String nextFile = validation.next();
+        if (nextFile != null) {
+            File fileHandler = new File(nextFile);
+            ArrayList<File> fristFileList = new ArrayList<File>();
+            fristFileList.add(fileHandler);
+            load(fileHandler, fristFileList);
+        }
+    }
+    
+    private void onTopicsLoading(boolean visiable) {
+        btnPrevTopic.setVisible(visiable);
+        btnNextTopic.setVisible(visiable);
     }
 }
 

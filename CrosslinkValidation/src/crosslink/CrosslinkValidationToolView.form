@@ -415,7 +415,10 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="771" max="-2" attributes="0"/>
+                      <Component id="btnPrevTopic" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="btnNextTopic" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="565" max="-2" attributes="0"/>
                       <Component id="jLabel2" min="-2" pref="517" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="316" max="-2" attributes="0"/>
                   </Group>
@@ -425,7 +428,11 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
-                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnPrevTopic" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnNextTopic" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -438,6 +445,24 @@
                 <Property name="foreground" type="java.awt.Color" resourceKey="jLabel2.foreground"/>
                 <Property name="text" type="java.lang.String" resourceKey="jLabel2.text"/>
                 <Property name="name" type="java.lang.String" value="jLabel2" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnPrevTopic">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="crosslink.CrosslinkValidationToolView" id="goToPrevTopic" methodName="goToPrevTopic"/>
+                </Property>
+                <Property name="text" type="java.lang.String" resourceKey="btnPrevTopic.text"/>
+                <Property name="name" type="java.lang.String" value="btnPrevTopic" noResource="true"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnNextTopic">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="crosslink.CrosslinkValidationToolView" id="goToNextTopic" methodName="goToNextTopic"/>
+                </Property>
+                <Property name="text" type="java.lang.String" resourceKey="btnNextTopic.text"/>
+                <Property name="name" type="java.lang.String" value="btnNextTopic" noResource="true"/>
               </Properties>
             </Component>
           </SubComponents>
