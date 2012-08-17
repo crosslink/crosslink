@@ -5,6 +5,7 @@
  */
 package crosslink.evaluationtool;
 
+import crosslink.AppResource;
 import crosslink.measures.Data;
 import crosslink.measures.ResultSetManager;
 import java.awt.Color;
@@ -76,6 +77,7 @@ public class EvaluationUI3 extends JFrame {
     private boolean emphasizeTeam = true;
     private String emphasizeTeamName = "QUT";
     private org.jdesktop.application.ResourceMap resourceMap;
+    private ImageIcon tickIcon;
 
     /** Creates new form EvaluationUI */
     public EvaluationUI3() {
@@ -85,7 +87,8 @@ public class EvaluationUI3 extends JFrame {
         this.realRunTablePanel = new RunTablePanel();
         this.realEvaTablePanel = new EvaTablePanel();
 
-
+        tickIcon = new javax.swing.ImageIcon(getClass().getResource("/crosslink/evaluationtool/resources/tick.png"));
+        
         initComponents();
         
         jRBAnchorToFile.setEnabled(false);
@@ -631,6 +634,7 @@ public class EvaluationUI3 extends JFrame {
         crosslinkTaskMenu.add(crosslink1MenuItem);
 
         crosslink2MenuItem.setAction(actionMap.get("setCrosslinkTask")); // NOI18N
+        crosslink2MenuItem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/crosslink/evaluationtool/resources/tick.png"))); // NOI18N
         crosslink2MenuItem.setText("Crosslink 2");
         crosslink2MenuItem.setToolTipText("");
         buttonGroupCrosslinkTaskMenu.add(crosslink2MenuItem);
@@ -1561,12 +1565,17 @@ private void jRBCJK2EnglishStateChanged(javax.swing.event.ChangeEvent evt) {//GE
     @org.jdesktop.application.Action
     public void setCrosslinkTask() {
 //        crosslink2MenuItem.se
+        crosslink1MenuItem.setIcon(null);
+        crosslink2MenuItem.setIcon(tickIcon);
+        AppResource.crosslinkTask = AppResource.CROSSLINK_TASK_2;
     }
 
     @org.jdesktop.application.Action
     public void setCrosslinTask1() {
 //         crosslink1MenuItem.setIcon(resourceMap.getIcon("crosslink2MenuItem.icon")); // NOI18N
-//         crosslink1MenuItem.
+        crosslink2MenuItem.setIcon(null);
+        crosslink1MenuItem.setIcon(tickIcon);
+        AppResource.crosslinkTask = AppResource.CROSSLINK_TASK_1;
     }
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
