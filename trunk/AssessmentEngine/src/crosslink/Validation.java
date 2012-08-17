@@ -9,14 +9,21 @@ public class Validation {
 	private int index = -1;
 	
 	public void addTopics(String folder) {
+		topics = new ArrayList<String>();
 		File folderHandler = new File(folder);
-		for (String file : folderHandler.list()) 
-			topics.add(file);
+		if (folderHandler.isDirectory()) {
+			String[] files = folderHandler.list();
+			if (files != null)
+				for (String file : files) 
+					topics.add(folderHandler.getAbsolutePath() + File.separator + file);
+		}
+		else
+			topics.add(folder);
 	}
 	
-	public void addTopic(String file) {
-		topics.add(file);
-	}
+//	public void addTopic(String file) {
+//		topics.add(file);
+//	}
 	
 	public String first() {
 		if (topics.size() > 0) {
