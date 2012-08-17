@@ -48,7 +48,10 @@ import crosslink.utility.WildcardFiles;
  */
 public class EvaluationUI3 extends JFrame {
 
-    private RunTablePanel realRunTablePanel;
+    private static final int ENGLISH_TO_CJK = 0;
+    private static final int CJK_TO_ENGLISH = 1;
+    
+	private RunTablePanel realRunTablePanel;
     private EvaTablePanel realEvaTablePanel;
     private File[] runFileCache = null;
     // For 2008
@@ -66,14 +69,19 @@ public class EvaluationUI3 extends JFrame {
     private static void errlog(Object aObject) {
         System.err.println(String.valueOf(aObject));
     }
-    private int langSelected = Data.LANGUAGE_CHINESE;
+    private int langSelected = Data.LANGUAGE_ALL;
+    
+    private int linkDirection = ENGLISH_TO_CJK;
     
     private boolean emphasizeTeam = true;
     private String emphasizeTeamName = "QUT";
+    private org.jdesktop.application.ResourceMap resourceMap;
 
     /** Creates new form EvaluationUI */
     public EvaluationUI3() {
 
+        resourceMap = org.jdesktop.application.Application.getInstance().getContext().getResourceMap(EvaluationUI3.class);
+        
         this.realRunTablePanel = new RunTablePanel();
         this.realEvaTablePanel = new EvaTablePanel();
 
@@ -82,7 +90,8 @@ public class EvaluationUI3 extends JFrame {
         
         jRBAnchorToFile.setEnabled(false);
         
-        jRadioLangZh.setSelected(true);
+//        jRadioLangZh.setSelected(true);
+        
 
         jRBA2BWikirs.setVisible(false);
         if (!ResultSetManager.getInstance().checkIfManualResultSetAvailable())
@@ -108,6 +117,8 @@ public class EvaluationUI3 extends JFrame {
         buttonGroup2 = new javax.swing.ButtonGroup();
         rsGroup = new javax.swing.ButtonGroup();
         langButtonGroup = new javax.swing.ButtonGroup();
+        buttonGroupLinkDirection = new javax.swing.ButtonGroup();
+        buttonGroupCrosslinkTaskMenu = new javax.swing.ButtonGroup();
         openfilesPanel = new javax.swing.JPanel();
         filedirectoryTextField = new javax.swing.JTextField();
         openfilesButton = new javax.swing.JButton();
@@ -138,9 +149,9 @@ public class EvaluationUI3 extends JFrame {
         jRBAnchorToBEP = new javax.swing.JRadioButton();
         jRBAnchorToBEP.setVisible(false);
         evaluateButton = new javax.swing.JButton();
-        topicSelectionPanel1 = new javax.swing.JPanel();
-        jRBalltopics1 = new javax.swing.JRadioButton();
-        jRBonlysubmitted1 = new javax.swing.JRadioButton();
+        linkDirectionPanel = new javax.swing.JPanel();
+        jRBEnglish2CJK = new javax.swing.JRadioButton();
+        jRBCJK2English = new javax.swing.JRadioButton();
         langSelectionPanel = new javax.swing.JPanel();
         jRadioLangZh = new javax.swing.JRadioButton();
         jRadioLangJa = new javax.swing.JRadioButton();
@@ -153,6 +164,9 @@ public class EvaluationUI3 extends JFrame {
         fileMenu = new javax.swing.JMenu();
         aboutMenuItem = new javax.swing.JMenuItem();
         exitMenuItem = new javax.swing.JMenuItem();
+        crosslinkTaskMenu = new javax.swing.JMenu();
+        crosslink1MenuItem = new javax.swing.JMenuItem();
+        crosslink2MenuItem = new javax.swing.JMenuItem();
 
         jMenuItemDelete.setText("delete");
         jMenuItemDelete.addActionListener(new java.awt.event.ActionListener() {
@@ -220,7 +234,7 @@ public class EvaluationUI3 extends JFrame {
                 .add(jRBA2BWikirs)
                 .add(45, 45, 45)
                 .add(jRBA2BManualrs)
-                .addContainerGap(97, Short.MAX_VALUE))
+                .addContainerGap(85, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
@@ -247,24 +261,23 @@ public class EvaluationUI3 extends JFrame {
             .add(openfilesPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .add(openfilesPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(org.jdesktop.layout.GroupLayout.TRAILING, jPanel6, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .add(openfilesPanelLayout.createSequentialGroup()
-                        .add(openfilesPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(openfilesPanelLayout.createSequentialGroup()
-                                .add(filecleanButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 90, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                .add(18, 18, 18)
-                                .add(uploadButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 90, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                            .add(openfilesPanelLayout.createSequentialGroup()
-                                .add(filedirectoryTextField, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 638, Short.MAX_VALUE)
-                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                                .add(openfilesButton)))
-                        .addContainerGap())))
+                        .add(filecleanButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 90, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(18, 18, 18)
+                        .add(uploadButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 90, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                    .add(openfilesPanelLayout.createSequentialGroup()
+                        .add(filedirectoryTextField, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 638, Short.MAX_VALUE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(openfilesButton))
+                    .add(jPanel6, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
         openfilesPanelLayout.setVerticalGroup(
             openfilesPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(openfilesPanelLayout.createSequentialGroup()
+                .addContainerGap()
                 .add(jPanel6, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .add(18, 18, 18)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(openfilesPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(openfilesButton)
                     .add(filedirectoryTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
@@ -431,34 +444,44 @@ public class EvaluationUI3 extends JFrame {
             }
         });
 
-        topicSelectionPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Topic Selection", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
+        linkDirectionPanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Link Direction", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
 
-        buttonGroup1.add(jRBalltopics1);
-        jRBalltopics1.setSelected(true);
-        jRBalltopics1.setText("Use all topics");
-        jRBalltopics1.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
+        buttonGroupLinkDirection.add(jRBEnglish2CJK);
+        jRBEnglish2CJK.setSelected(true);
+        jRBEnglish2CJK.setText("English to CJK");
+        jRBEnglish2CJK.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
+        jRBEnglish2CJK.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                jRBEnglish2CJKStateChanged(evt);
+            }
+        });
 
-        buttonGroup1.add(jRBonlysubmitted1);
-        jRBonlysubmitted1.setText("Use only submitted topics");
-        jRBonlysubmitted1.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
+        buttonGroupLinkDirection.add(jRBCJK2English);
+        jRBCJK2English.setText("CJK to English");
+        jRBCJK2English.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
+        jRBCJK2English.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                jRBCJK2EnglishStateChanged(evt);
+            }
+        });
 
-        org.jdesktop.layout.GroupLayout topicSelectionPanel1Layout = new org.jdesktop.layout.GroupLayout(topicSelectionPanel1);
-        topicSelectionPanel1.setLayout(topicSelectionPanel1Layout);
-        topicSelectionPanel1Layout.setHorizontalGroup(
-            topicSelectionPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(topicSelectionPanel1Layout.createSequentialGroup()
+        org.jdesktop.layout.GroupLayout linkDirectionPanelLayout = new org.jdesktop.layout.GroupLayout(linkDirectionPanel);
+        linkDirectionPanel.setLayout(linkDirectionPanelLayout);
+        linkDirectionPanelLayout.setHorizontalGroup(
+            linkDirectionPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(linkDirectionPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .add(jRBalltopics1)
+                .add(jRBEnglish2CJK)
                 .add(26, 26, 26)
-                .add(jRBonlysubmitted1)
-                .addContainerGap(404, Short.MAX_VALUE))
+                .add(jRBCJK2English)
+                .addContainerGap(491, Short.MAX_VALUE))
         );
-        topicSelectionPanel1Layout.setVerticalGroup(
-            topicSelectionPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(topicSelectionPanel1Layout.createSequentialGroup()
-                .add(topicSelectionPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(jRBalltopics1)
-                    .add(jRBonlysubmitted1))
+        linkDirectionPanelLayout.setVerticalGroup(
+            linkDirectionPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(linkDirectionPanelLayout.createSequentialGroup()
+                .add(linkDirectionPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(jRBEnglish2CJK)
+                    .add(jRBCJK2English))
                 .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -467,13 +490,13 @@ public class EvaluationUI3 extends JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(evaluateButton, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 765, Short.MAX_VALUE)
-            .add(topicSelectionPanel1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .add(linkDirectionPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .add(calculationPanel1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(org.jdesktop.layout.GroupLayout.TRAILING, jPanel1Layout.createSequentialGroup()
-                .add(topicSelectionPanel1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(linkDirectionPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .add(18, 18, 18)
                 .add(calculationPanel1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 18, Short.MAX_VALUE)
@@ -549,6 +572,7 @@ public class EvaluationUI3 extends JFrame {
         topicSelectionPanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Topic Selection", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
 
         buttonGroup1.add(jRBalltopics);
+        jRBalltopics.setSelected(true);
         jRBalltopics.setText("Use all topics");
         jRBalltopics.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
 
@@ -598,6 +622,26 @@ public class EvaluationUI3 extends JFrame {
         fileMenu.add(exitMenuItem);
 
         fileMenuBar.add(fileMenu);
+
+        crosslinkTaskMenu.setText("Crosslink Task");
+
+        javax.swing.ActionMap actionMap = org.jdesktop.application.Application.getInstance().getContext().getActionMap(EvaluationUI3.class, this);
+        crosslink1MenuItem.setAction(actionMap.get("setCrosslinTask1")); // NOI18N
+        crosslink1MenuItem.setText("Crosslink 1");
+        crosslinkTaskMenu.add(crosslink1MenuItem);
+
+        crosslink2MenuItem.setAction(actionMap.get("setCrosslinkTask")); // NOI18N
+        crosslink2MenuItem.setText("Crosslink 2");
+        crosslink2MenuItem.setToolTipText("");
+        buttonGroupCrosslinkTaskMenu.add(crosslink2MenuItem);
+        crosslink2MenuItem.setFocusable(true);
+        crosslink2MenuItem.setSelected(true);
+        org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance().getContext().getResourceMap(EvaluationUI3.class);
+        crosslink2MenuItem.setSelectedIcon(resourceMap.getIcon("crosslink2MenuItem.selectedIcon")); // NOI18N
+        crosslink2MenuItem.setVerifyInputWhenFocusTarget(false);
+        crosslinkTaskMenu.add(crosslink2MenuItem);
+
+        fileMenuBar.add(crosslinkTaskMenu);
 
         setJMenuBar(fileMenuBar);
 
@@ -1284,6 +1328,14 @@ public class EvaluationUI3 extends JFrame {
         langSelected = Data.LANGUAGE_ALL;
     }//GEN-LAST:event_jRadioLangAllActionPerformed
 
+private void jRBEnglish2CJKStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jRBEnglish2CJKStateChanged
+    linkDirection = ENGLISH_TO_CJK;
+}//GEN-LAST:event_jRBEnglish2CJKStateChanged
+
+private void jRBCJK2EnglishStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jRBCJK2EnglishStateChanged
+    linkDirection = CJK_TO_ENGLISH;
+}//GEN-LAST:event_jRBCJK2EnglishStateChanged
+
     private ArrayList<String[]> retrieveRunData(File[] file) throws Exception {
 
         int runInfoColumnLength = 8;
@@ -1505,12 +1557,29 @@ public class EvaluationUI3 extends JFrame {
         // To convert submitted runs from/into local XML files
         runsXMLConvertors xmlConverter = new runsXMLConvertors(runsHashData);
     }
+
+    @org.jdesktop.application.Action
+    public void setCrosslinkTask() {
+//        crosslink2MenuItem.se
+    }
+
+    @org.jdesktop.application.Action
+    public void setCrosslinTask1() {
+//         crosslink1MenuItem.setIcon(resourceMap.getIcon("crosslink2MenuItem.icon")); // NOI18N
+//         crosslink1MenuItem.
+    }
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JRadioButton RPCurveRadioButton;
     private javax.swing.JMenuItem aboutMenuItem;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;
+    private javax.swing.ButtonGroup buttonGroupCrosslinkTaskMenu;
+    private javax.swing.ButtonGroup buttonGroupLinkDirection;
     private javax.swing.JPanel calculationPanel1;
+    private javax.swing.JMenuItem crosslink1MenuItem;
+    private javax.swing.JMenuItem crosslink2MenuItem;
+    private javax.swing.JMenu crosslinkTaskMenu;
     private javax.swing.JPanel evaTablePanelHolder;
     private javax.swing.JButton evaluateButton;
     private javax.swing.JPanel evatablePanel;
@@ -1530,18 +1599,19 @@ public class EvaluationUI3 extends JFrame {
     private javax.swing.JRadioButton jRBA2BWikirs;
     private javax.swing.JRadioButton jRBAnchorToBEP;
     private javax.swing.JRadioButton jRBAnchorToFile;
+    private javax.swing.JRadioButton jRBCJK2English;
+    private javax.swing.JRadioButton jRBEnglish2CJK;
     private javax.swing.JRadioButton jRBF2FWikirs;
     private javax.swing.JRadioButton jRBFileToFile;
     private javax.swing.JRadioButton jRBalltopics;
-    private javax.swing.JRadioButton jRBalltopics1;
     private javax.swing.JRadioButton jRBonlysubmitted;
-    private javax.swing.JRadioButton jRBonlysubmitted1;
     private javax.swing.JRadioButton jRadioLangAll;
     private javax.swing.JRadioButton jRadioLangJa;
     private javax.swing.JRadioButton jRadioLangJa1;
     private javax.swing.JRadioButton jRadioLangZh;
     private javax.swing.ButtonGroup langButtonGroup;
     private javax.swing.JPanel langSelectionPanel;
+    private javax.swing.JPanel linkDirectionPanel;
     private javax.swing.JButton openfilesButton;
     private javax.swing.JPanel openfilesPanel;
     private javax.swing.JPanel plotPanel;
@@ -1551,7 +1621,6 @@ public class EvaluationUI3 extends JFrame {
     private javax.swing.JPanel runtablePanel;
     private javax.swing.JButton runtablecleanallButton;
     private javax.swing.JPanel topicSelectionPanel;
-    private javax.swing.JPanel topicSelectionPanel1;
     private javax.swing.JButton uploadButton;
     // End of variables declaration//GEN-END:variables
 
