@@ -143,6 +143,8 @@ public class CrosslinkValidationToolView extends FrameView {
 
     public static boolean forValidationOrAssessment = false; // false validation; true assessment
     
+    private String topicFolder;
+    private Validation validation = new Validation();
     private String currentTopicXmlText = null;
 
     static void log(Object content) {
@@ -1892,6 +1894,7 @@ public class CrosslinkValidationToolView extends FrameView {
     String currentOpenDir = "";
 
     private String splitSubmissionByTopics(String runFileAbsPath) {
+    	topicFolder = null;
         String isSplitOK = "Error Msg: ";
         StringBuffer sb = new StringBuffer();
         FileInputStream fstream = null;
@@ -1924,6 +1927,7 @@ public class CrosslinkValidationToolView extends FrameView {
 		if (subDirOK) {
 			Run run = new Run(new File(runFileAbsPath), ArrayList.class, true);
 			run.split(subDirectory);
+			topicFolder = subDirectory;
 		    return subDirectory;
 		} else {
 		    return isSplitOK + "Create Folder False: " + subDirectory + ".\r\n Check Directory status!";
@@ -1969,6 +1973,18 @@ public class CrosslinkValidationToolView extends FrameView {
                         } else {
                             String subRunDirectory = "Submission has been splited into the directory, \r\n" + backMsg + "\r\n Please load these subdivided runs one by one using the tool.";
                             JOptionPane.showMessageDialog(CrosslinkValidationToolApp.getApplication().getMainFrame(), subRunDirectory);
+                            validation.addTopics(topicFolder);
+                            String firstFile = validation.first();
+                            if (firstFile != null) {
+                            	File fileHandler = new File(firstFile);
+                            	ArrayList<File> fristFileList = new ArrayList<File>();
+                            	fristFileList.add(fileHandler);
+                            	load(fileHandler, fristFileList);
+                            }
+
+//                                List<File> tmp = Arrays.asList(xmlFiles);
+//                                ArrayList<File> fileList = new ArrayList<File>(tmp);
+//                            }
                         }
                     }
                 } catch (IOException ex) {
@@ -2022,56 +2038,7 @@ public class CrosslinkValidationToolView extends FrameView {
                         // Errors: well-form or xml data
                         JOptionPane.showMessageDialog(CrosslinkValidationToolApp.getApplication().getMainFrame(), msgFromValidation);
                     } else {
-                    	// clear up all the contents 
-                    	clearCompents();
-                    	
-                    	// clear the previous validation message
-//                    	ValidationMessage.getInstance().flush();
-                    	
-                        // Get returned valid file    
-                        assessmentFormXml toPooling = new assessmentFormXml(fileList);
-                        String poolingMsg = "Submission for topic " + thisXMLFile.getName() + " is successful loaded: \r\n" + toPooling.getPoolingMsg() + "\r\n Please be patient, it may take a few minutes to discovery all the links";
-                        
-                        ValidationMessage.getInstance().append(poolingMsg);
-                        ValidationMessage.getInstance().flush();
-                        //JOptionPane.showMessageDialog(CrosslinkValidationToolApp.getApplication().getMainFrame(), poolingMsg);
-                        // =====================================================
-                        updatePoolerToResourceXML(thisXMLFile.getAbsolutePath());
-                        
-                    	// set UI font
-                        AdjustFont.setComponentFont(topicTextPane, AppResource.sourceLang);
-                        if (!AppResource.sourceLang.equals("en"))
-                        	AdjustFont.setComponentFont(anchorBepTable, AppResource.sourceLang);
-                        else
-                        	AdjustFont.setComponentFont(anchorBepTable, AppResource.targetLang);
-                    	AdjustFont.setComponentFont(linkTextPane, AppResource.targetLang);
-                    	
-                        myTABTxtPaneManager = new tabTxtPaneManager();
-                        myTBATxtPaneManager = new tbaTxtPaneManager();
-                        // =====================================================
-//                        boolean rightCorpusDir = true; //corpusDirChecker(isTopicWikipedia);
-//                        if (rightCorpusDir) {
-//                            if (outRadioBtn.isSelected()) {
-                        SwingWorker worker = new SwingWorker<Void, Void>() {
-                            @Override
-                            public Void doInBackground() {
-                            	setOutgoingTAB();
-                            	ValidationMessage.getInstance().append("Finished loading.");
-                            	return null;
-                            }
-                            
-                            @Override
-                            protected void done() {
-                                try { 
-                                    // flush error message if there is any
-                                	ValidationMessage.getInstance().flush();
-                                } catch (Exception ignore) {
-                                }
-                            }
-
-                        };
-                        
-                        worker.execute();
+                    	load(thisXMLFile, fileList);
 //                                setOutgoingTAB();
 //                            } else if (inRadioBtn.isSelected()) {
 //                                setIncomingTBA();
@@ -2092,7 +2059,60 @@ public class CrosslinkValidationToolView extends FrameView {
         }
     }
 
-    @Action
+    private void load(File thisXMLFile, ArrayList<File> fileList) {
+    	// clear up all the contents 
+    	clearCompents();
+    	
+    	// clear the previous validation message
+//    	ValidationMessage.getInstance().flush();
+    	
+        // Get returned valid file    
+        assessmentFormXml toPooling = new assessmentFormXml(fileList);
+        String poolingMsg = "Submission for topic " + thisXMLFile.getName() + " is successful loaded: \r\n" + toPooling.getPoolingMsg() + "\r\n Please be patient, it may take a few minutes to discovery all the links";
+        
+        ValidationMessage.getInstance().append(poolingMsg);
+        ValidationMessage.getInstance().flush();
+        //JOptionPane.showMessageDialog(CrosslinkValidationToolApp.getApplication().getMainFrame(), poolingMsg);
+        // =====================================================
+        updatePoolerToResourceXML(thisXMLFile.getAbsolutePath());
+        
+    	// set UI font
+        AdjustFont.setComponentFont(topicTextPane, AppResource.sourceLang);
+        if (!AppResource.sourceLang.equals("en"))
+        	AdjustFont.setComponentFont(anchorBepTable, AppResource.sourceLang);
+        else
+        	AdjustFont.setComponentFont(anchorBepTable, AppResource.targetLang);
+    	AdjustFont.setComponentFont(linkTextPane, AppResource.targetLang);
+    	
+        myTABTxtPaneManager = new tabTxtPaneManager();
+        myTBATxtPaneManager = new tbaTxtPaneManager();
+        // =====================================================
+//        boolean rightCorpusDir = true; //corpusDirChecker(isTopicWikipedia);
+//        if (rightCorpusDir) {
+//            if (outRadioBtn.isSelected()) {
+        SwingWorker worker = new SwingWorker<Void, Void>() {
+            @Override
+            public Void doInBackground() {
+            	setOutgoingTAB();
+            	ValidationMessage.getInstance().append("Finished loading.");
+            	return null;
+            }
+            
+            @Override
+            protected void done() {
+                try { 
+                    // flush error message if there is any
+                	ValidationMessage.getInstance().flush();
+                } catch (Exception ignore) {
+                }
+            }
+
+        };
+        
+        worker.execute();
+	}
+
+	@Action
     public void showCorpusBox() {
         if (corpusBox == null) {
             JFrame mainFrame = CrosslinkValidationToolApp.getApplication().getMainFrame();

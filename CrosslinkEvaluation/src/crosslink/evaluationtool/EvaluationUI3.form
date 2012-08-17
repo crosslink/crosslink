@@ -79,6 +79,9 @@
                 <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
                   <action class="crosslink.evaluationtool.EvaluationUI3" id="setCrosslinkTask" methodName="setCrosslinkTask"/>
                 </Property>
+                <Property name="icon" type="javax.swing.Icon" noResource="true" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/crosslink/evaluationtool/resources/tick.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Crosslink 2"/>
                 <Property name="toolTipText" type="java.lang.String" value=""/>
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
