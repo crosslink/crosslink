@@ -11,11 +11,10 @@ import java.util.Vector;
 
 import crosslink.XML2TXT;
 import crosslink.parsers.FOLTXTMatcher;
-import de.mpii.clix.support.XML;
-
 import crosslink.submission.Anchor;
 import crosslink.submission.Target;
 import crosslink.submission.Topic;
+import crosslink.utility.XML;
 
 
 public class Anchor {
@@ -281,7 +280,7 @@ public class Anchor {
 	public String toXml() {
 		StringBuffer sb = new StringBuffer();
 		String openTag = "\t\t\t<anchor offset=\"%d\" length=\"%d\" name=\"%s\">\n";
-		sb.append(String.format(openTag, this.offset, this.length, this.name));
+		sb.append(String.format(openTag, this.offset, this.length, XML.XMLify(this.name)));
 		for (Target target : targets.values()) {
 			sb.append(target.toXml());
 		}

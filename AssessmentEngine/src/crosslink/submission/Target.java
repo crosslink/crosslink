@@ -5,6 +5,7 @@ import java.io.File;
 import crosslink.AppResource;
 
 import crosslink.submission.Anchor;
+import crosslink.utility.XML;
 
 public class Target {
 	private String lang = "";
@@ -121,6 +122,6 @@ public class Target {
 
 	public String toXml() {
 		String element = "\t\t\t\t<tofile bep_offset=\"%d\" lang=\"%s\" title=\"%s\">%s</tofile>\n";
-		return String.format(element, this.bepOffset, this.lang, this.title, this.id);
+		return String.format(element, this.bepOffset, this.lang, XML.XMLify(this.title), this.id);
 	}
 }

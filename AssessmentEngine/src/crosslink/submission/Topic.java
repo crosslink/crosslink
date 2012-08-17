@@ -8,10 +8,10 @@ import java.util.Collection;
 import java.util.Iterator;
 
 import crosslink.AppResource;
+import crosslink.utility.XML;
 import crosslink.wiki.WikiArticleXml;
 
 import crosslink.submission.Run;
-
 
 public class Topic<AnchorSet> extends WikiArticleXml {
 
@@ -120,7 +120,7 @@ public class Topic<AnchorSet> extends WikiArticleXml {
 
 	public String anchorsToXml() {
 		StringBuffer sb = new StringBuffer();
-		sb.append(String.format("\t<topic file=\"%s\" name=\"%s\">\n", id, title));
+		sb.append(String.format("\t<topic file=\"%s\" name=\"%s\">\n", id, XML.XMLify(title)));
 		sb.append("\t\t<outgoing>\n");
 		if (anchors instanceof Collection) {
 //			Anchor[] anchorArray = (Anchor[]) ((Collection<Anchor>)anchors).toArray();
