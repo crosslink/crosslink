@@ -152,17 +152,17 @@ public class EvaluationUI3 extends JFrame {
         jRBAnchorToBEP = new javax.swing.JRadioButton();
         jRBAnchorToBEP.setVisible(false);
         evaluateButton = new javax.swing.JButton();
-        linkDirectionPanel = new javax.swing.JPanel();
-        jRBEnglish2CJK = new javax.swing.JRadioButton();
-        jRBCJK2English = new javax.swing.JRadioButton();
+        topicSelectionPanel = new javax.swing.JPanel();
+        jRBalltopics = new javax.swing.JRadioButton();
+        jRBonlysubmitted = new javax.swing.JRadioButton();
         langSelectionPanel = new javax.swing.JPanel();
         jRadioLangZh = new javax.swing.JRadioButton();
         jRadioLangJa = new javax.swing.JRadioButton();
         jRadioLangAll = new javax.swing.JRadioButton();
         jRadioLangJa1 = new javax.swing.JRadioButton();
-        topicSelectionPanel = new javax.swing.JPanel();
-        jRBalltopics = new javax.swing.JRadioButton();
-        jRBonlysubmitted = new javax.swing.JRadioButton();
+        linkDirectionPanel = new javax.swing.JPanel();
+        jRBEnglish2CJK = new javax.swing.JRadioButton();
+        jRBCJK2English = new javax.swing.JRadioButton();
         fileMenuBar = new javax.swing.JMenuBar();
         fileMenu = new javax.swing.JMenu();
         aboutMenuItem = new javax.swing.JMenuItem();
@@ -367,8 +367,9 @@ public class EvaluationUI3 extends JFrame {
         evatablePanelLayout.setVerticalGroup(
             evatablePanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(org.jdesktop.layout.GroupLayout.TRAILING, evatablePanelLayout.createSequentialGroup()
-                .add(evaTablePanelHolder, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 203, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 18, Short.MAX_VALUE)
+                .addContainerGap()
+                .add(evaTablePanelHolder, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 274, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .add(evatablePanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(evatablecleanallButton)
                     .add(fullevatableButton)))
@@ -447,44 +448,34 @@ public class EvaluationUI3 extends JFrame {
             }
         });
 
-        linkDirectionPanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Link Direction", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
+        topicSelectionPanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Topic Selection", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
 
-        buttonGroupLinkDirection.add(jRBEnglish2CJK);
-        jRBEnglish2CJK.setSelected(true);
-        jRBEnglish2CJK.setText("English to CJK");
-        jRBEnglish2CJK.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
-        jRBEnglish2CJK.addChangeListener(new javax.swing.event.ChangeListener() {
-            public void stateChanged(javax.swing.event.ChangeEvent evt) {
-                jRBEnglish2CJKStateChanged(evt);
-            }
-        });
+        buttonGroup1.add(jRBalltopics);
+        jRBalltopics.setSelected(true);
+        jRBalltopics.setText("Use all topics");
+        jRBalltopics.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
 
-        buttonGroupLinkDirection.add(jRBCJK2English);
-        jRBCJK2English.setText("CJK to English");
-        jRBCJK2English.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
-        jRBCJK2English.addChangeListener(new javax.swing.event.ChangeListener() {
-            public void stateChanged(javax.swing.event.ChangeEvent evt) {
-                jRBCJK2EnglishStateChanged(evt);
-            }
-        });
+        buttonGroup1.add(jRBonlysubmitted);
+        jRBonlysubmitted.setText("Use only submitted topics");
+        jRBonlysubmitted.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
 
-        org.jdesktop.layout.GroupLayout linkDirectionPanelLayout = new org.jdesktop.layout.GroupLayout(linkDirectionPanel);
-        linkDirectionPanel.setLayout(linkDirectionPanelLayout);
-        linkDirectionPanelLayout.setHorizontalGroup(
-            linkDirectionPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(linkDirectionPanelLayout.createSequentialGroup()
+        org.jdesktop.layout.GroupLayout topicSelectionPanelLayout = new org.jdesktop.layout.GroupLayout(topicSelectionPanel);
+        topicSelectionPanel.setLayout(topicSelectionPanelLayout);
+        topicSelectionPanelLayout.setHorizontalGroup(
+            topicSelectionPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(topicSelectionPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .add(jRBEnglish2CJK)
+                .add(jRBalltopics)
                 .add(26, 26, 26)
-                .add(jRBCJK2English)
-                .addContainerGap(491, Short.MAX_VALUE))
+                .add(jRBonlysubmitted)
+                .addContainerGap(404, Short.MAX_VALUE))
         );
-        linkDirectionPanelLayout.setVerticalGroup(
-            linkDirectionPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(linkDirectionPanelLayout.createSequentialGroup()
-                .add(linkDirectionPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(jRBEnglish2CJK)
-                    .add(jRBCJK2English))
+        topicSelectionPanelLayout.setVerticalGroup(
+            topicSelectionPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(topicSelectionPanelLayout.createSequentialGroup()
+                .add(topicSelectionPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(jRBalltopics)
+                    .add(jRBonlysubmitted))
                 .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -493,18 +484,19 @@ public class EvaluationUI3 extends JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(evaluateButton, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 765, Short.MAX_VALUE)
-            .add(linkDirectionPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .add(calculationPanel1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .add(topicSelectionPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(org.jdesktop.layout.GroupLayout.TRAILING, jPanel1Layout.createSequentialGroup()
-                .add(linkDirectionPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+            .add(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .add(topicSelectionPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .add(18, 18, 18)
                 .add(calculationPanel1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 18, Short.MAX_VALUE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
                 .add(evaluateButton)
-                .addContainerGap())
+                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         langSelectionPanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Language Selection", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
@@ -572,34 +564,44 @@ public class EvaluationUI3 extends JFrame {
                 .addContainerGap(16, Short.MAX_VALUE))
         );
 
-        topicSelectionPanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Topic Selection", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
+        linkDirectionPanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Link Direction", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
 
-        buttonGroup1.add(jRBalltopics);
-        jRBalltopics.setSelected(true);
-        jRBalltopics.setText("Use all topics");
-        jRBalltopics.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
+        buttonGroupLinkDirection.add(jRBEnglish2CJK);
+        jRBEnglish2CJK.setSelected(true);
+        jRBEnglish2CJK.setText("English to CJK");
+        jRBEnglish2CJK.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
+        jRBEnglish2CJK.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                jRBEnglish2CJKStateChanged(evt);
+            }
+        });
 
-        buttonGroup1.add(jRBonlysubmitted);
-        jRBonlysubmitted.setText("Use only submitted topics");
-        jRBonlysubmitted.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
+        buttonGroupLinkDirection.add(jRBCJK2English);
+        jRBCJK2English.setText("CJK to English");
+        jRBCJK2English.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
+        jRBCJK2English.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                jRBCJK2EnglishStateChanged(evt);
+            }
+        });
 
-        org.jdesktop.layout.GroupLayout topicSelectionPanelLayout = new org.jdesktop.layout.GroupLayout(topicSelectionPanel);
-        topicSelectionPanel.setLayout(topicSelectionPanelLayout);
-        topicSelectionPanelLayout.setHorizontalGroup(
-            topicSelectionPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(topicSelectionPanelLayout.createSequentialGroup()
+        org.jdesktop.layout.GroupLayout linkDirectionPanelLayout = new org.jdesktop.layout.GroupLayout(linkDirectionPanel);
+        linkDirectionPanel.setLayout(linkDirectionPanelLayout);
+        linkDirectionPanelLayout.setHorizontalGroup(
+            linkDirectionPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(linkDirectionPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .add(jRBalltopics)
+                .add(jRBEnglish2CJK)
                 .add(26, 26, 26)
-                .add(jRBonlysubmitted)
-                .addContainerGap(404, Short.MAX_VALUE))
+                .add(jRBCJK2English)
+                .addContainerGap(491, Short.MAX_VALUE))
         );
-        topicSelectionPanelLayout.setVerticalGroup(
-            topicSelectionPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(topicSelectionPanelLayout.createSequentialGroup()
-                .add(topicSelectionPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(jRBalltopics)
-                    .add(jRBonlysubmitted))
+        linkDirectionPanelLayout.setVerticalGroup(
+            linkDirectionPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(linkDirectionPanelLayout.createSequentialGroup()
+                .add(linkDirectionPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(jRBEnglish2CJK)
+                    .add(jRBCJK2English))
                 .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -630,13 +632,9 @@ public class EvaluationUI3 extends JFrame {
 
         javax.swing.ActionMap actionMap = org.jdesktop.application.Application.getInstance().getContext().getActionMap(EvaluationUI3.class, this);
         crosslink1MenuItem.setAction(actionMap.get("setCrosslinTask1")); // NOI18N
-        crosslink1MenuItem.setText("Crosslink 1");
         crosslinkTaskMenu.add(crosslink1MenuItem);
 
         crosslink2MenuItem.setAction(actionMap.get("setCrosslinkTask")); // NOI18N
-        crosslink2MenuItem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/crosslink/evaluationtool/resources/tick.png"))); // NOI18N
-        crosslink2MenuItem.setText("Crosslink 2");
-        crosslink2MenuItem.setToolTipText("");
         buttonGroupCrosslinkTaskMenu.add(crosslink2MenuItem);
         crosslink2MenuItem.setFocusable(true);
         crosslink2MenuItem.setSelected(true);
@@ -662,12 +660,12 @@ public class EvaluationUI3 extends JFrame {
                     .add(org.jdesktop.layout.GroupLayout.LEADING, layout.createSequentialGroup()
                         .add(12, 12, 12)
                         .add(runtablePanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .add(layout.createSequentialGroup()
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, layout.createSequentialGroup()
                         .addContainerGap()
                         .add(langSelectionPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .add(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .add(topicSelectionPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, layout.createSequentialGroup()
+                        .add(12, 12, 12)
+                        .add(linkDirectionPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .add(org.jdesktop.layout.GroupLayout.LEADING, layout.createSequentialGroup()
                         .addContainerGap()
                         .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
@@ -681,15 +679,15 @@ public class EvaluationUI3 extends JFrame {
                 .add(openfilesPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(runtablePanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .add(4, 4, 4)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
+                .add(linkDirectionPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(17, 17, 17)
                 .add(langSelectionPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .add(19, 19, 19)
-                .add(topicSelectionPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .add(18, 18, 18)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
                 .add(jPanel1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(evatablePanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(evatablePanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 289, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .add(plotPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );

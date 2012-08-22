@@ -12,6 +12,7 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 
+import crosslink.AppResource;
 import crosslink.resultsetGenerator.LtwResultsetType;
 import crosslink.utility.WildcardFiles;
 
@@ -74,12 +75,17 @@ public class ResultSetManager {
 //      
         resultsetPath.append(RESULTSET_PARENT_PATH  + File.separator);
         
-        String resultsetFormalPath = resultsetPath.toString() + "test";
-        if (!new File(resultsetFormalPath).exists() || !useTestDataset)
-        	resultsetPath.append("training");
-        else
-        	resultsetPath.append("test");
-        
+    	if (AppResource.crosslinkTask == AppResource.CROSSLINK_TASK_1) {
+    		resultsetPath.append("crosslink1");
+	        String resultsetFormalPath = resultsetPath.toString() + "test";
+	        if (!new File(resultsetFormalPath).exists() || !useTestDataset)
+	        	resultsetPath.append("training");
+	        else
+	        	resultsetPath.append("test");
+    	}
+    	else {
+    		resultsetPath.append("crosslink2");
+    	}
         resultsetPath.append(File.separator);
 	}
 	
@@ -107,9 +113,9 @@ public class ResultSetManager {
         String resultSetFile = null;
 
         resultSetFile = null;
-        if (isGroundTruthManualAssessment)
+        if (isGroundTruthManualAssessment) 
         	resultSetFile = String.format("%s%s-MA-%s2%s.xml", resultsetPath.toString(), resultSetNameArray[evaluationType], langMap.get(sourceLang), langMap.get(targetLang));
-        else
+        else 
         	resultSetFile = String.format("%s%s-%s2%s.xml", resultsetPath.toString(), resultSetNameArray[evaluationType], langMap.get(sourceLang), langMap.get(targetLang));
         return resultSetFile;
     }
