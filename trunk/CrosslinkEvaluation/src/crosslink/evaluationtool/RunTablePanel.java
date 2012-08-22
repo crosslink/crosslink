@@ -20,6 +20,9 @@ import javax.swing.table.TableModel;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableRowSorter;
 
+import crosslink.AppResource;
+import crosslink.font.AdjustFont;
+
 /**
  * Created on September 15, 2007, 2:39 PM
  * @author  Darren Huang
@@ -32,13 +35,22 @@ public class RunTablePanel extends JPanel {
     public RunTablePanel() {
         initComponents();
         this.uploadFileToTable(new Object[][]{});
+        
+        setup();
     }
     
-    public RunTablePanel(RunTablePanel copy){
+    private void setup() {
+		if (AppResource.isCrosslink2())
+			AdjustFont.setComponentFont(runsTable, "zh");
+	}
+
+	public RunTablePanel(RunTablePanel copy){
         this();
         this.runsTable.setModel(copy.runsTable.getModel());
         this.sorter = new TableRowSorter<DefaultTableModel>((DefaultTableModel)this.runsTable.getModel());
         this.runsTable.setRowSorter(this.sorter);
+        
+        setup();
     }
     
     /** This method is called from within the constructor to

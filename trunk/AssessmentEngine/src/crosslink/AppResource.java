@@ -171,4 +171,8 @@ public class AppResource {
 			String topicLang) {
     	return getTopicDirectory(topicLang, topicID) + topicID + ".xml";
 	}
+	
+	public static boolean isCrosslink2() {
+		return crosslinkTask == CROSSLINK_TASK_2;
+	}
 }
