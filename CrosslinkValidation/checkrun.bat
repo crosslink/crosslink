@@ -1,1 +1,1 @@
-java -cp CrosslinkValidation.jar;lib/assessment-engine.jar;lib/xml2txt.jar crosslink.submission.RunChecker %*
+java -Dfile.encoding=UTF-8 -cp CrosslinkValidation.jar;lib/assessment-engine.jar;lib/xml2txt.jar crosslink.submission.RunChecker %*
