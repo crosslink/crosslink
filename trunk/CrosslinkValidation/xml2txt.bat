@@ -1,1 +1,1 @@
-java -cp lib/xml2txt.jar crosslink.XML2TXT %* 
+java -Dfile.encoding=UTF-8 -cp lib/xml2txt.jar crosslink.XML2TXT %* 
