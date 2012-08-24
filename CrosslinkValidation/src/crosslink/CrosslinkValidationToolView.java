@@ -220,6 +220,7 @@ public class CrosslinkValidationToolView extends FrameView {
 //        	jLabelCollection.setText(wikiCollectionFolder + "   " +
 //                  "Please re-specify the directories if collections have been moved.");
         	jLabelCollection.setText(wikiCollectionFolder);
+        	AppResource.corpusHome = wikiCollectionFolder;
 //        }
         // =====================================================================
 

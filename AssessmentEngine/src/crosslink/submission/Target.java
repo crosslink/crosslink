@@ -27,7 +27,12 @@ public class Target {
 		if (new File(corpusHome).exists()) {
 			corpusHomeHandler = new File(corpusHome);
 		}
+		else if (new File(AppResource.corpusHome).exists()) {
+			corpusHome = AppResource.corpusHome;
+			corpusHomeHandler = new File(corpusHome);
+		}
 		else {
+			
 			System.err.println("Cannot find CORPUS: " + corpusHome);
 			System.err.println("Are you sure that you want to continue?");
 		}
