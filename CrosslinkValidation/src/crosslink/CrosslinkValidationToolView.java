@@ -2058,7 +2058,7 @@ public class CrosslinkValidationToolView extends FrameView {
                         // Errors: well-form or xml data
                         JOptionPane.showMessageDialog(CrosslinkValidationToolApp.getApplication().getMainFrame(), msgFromValidation);
                     } else {
-                    	onTopicsLoading(true);
+//                    	onTopicsLoading(true);
                     	load(thisXMLFile, fileList);
 //                                setOutgoingTAB();
 //                            } else if (inRadioBtn.isSelected()) {
