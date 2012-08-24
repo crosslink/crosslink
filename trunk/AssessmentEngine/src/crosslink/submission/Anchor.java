@@ -1,5 +1,6 @@
 package crosslink.submission;
 
+import java.io.PrintStream;
 import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -227,20 +228,32 @@ public class Anchor {
 		if (valid && !name.equals(reform))
 			name = reform;
 		
+		PrintStream out = null;
+		StringBuffer message = null;
 		if (showMessage > SHOW_MESSAGE_NONE) {
-			StringBuffer message = new StringBuffer(String.format(ANCHOR_CHECK_MESSAGE, topic.getTitle(), topic.getId(), name, this.getOffset(), this.getLength()));
+			message = new StringBuffer(String.format(ANCHOR_CHECK_MESSAGE, topic.getTitle(), topic.getId(), name, this.getOffset(), this.getLength()));
 			if (valid) {
 				if ((SHOW_MESSAGE_OK & showMessage) == SHOW_MESSAGE_OK) {
 					message.append(ANCHOR_CHECK_STATUS_OK);
-					System.out.println(message);
+					out = System.out;
+//					System.out.println(message);
 				}
 			}
 			else {
 				if ((SHOW_MESSAGE_ERROR & showMessage) == SHOW_MESSAGE_ERROR) {
 		 			message.append(ANCHOR_CHECK_STATUS_ERROR);
 		 			message.append(". Got \"" + result + "\" from topic instead");
-		 			System.err.println(message);
+		 			out = System.err;
+//		 			System.err.println(message);
 				}
+			}
+		}
+		if (out != null) {
+			try {
+				PrintStream ps = new PrintStream(out, true, "UTF-8");
+				ps.println(message);
+			} catch (UnsupportedEncodingException e) {
+				e.printStackTrace();
 			}
 		}
 		
