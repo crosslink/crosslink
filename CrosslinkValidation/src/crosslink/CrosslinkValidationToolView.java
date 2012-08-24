@@ -2111,26 +2111,26 @@ public class CrosslinkValidationToolView extends FrameView {
 //        boolean rightCorpusDir = true; //corpusDirChecker(isTopicWikipedia);
 //        if (rightCorpusDir) {
 //            if (outRadioBtn.isSelected()) {
-        SwingWorker worker = new SwingWorker<Void, Void>() {
-            @Override
-            public Void doInBackground() {
+//        SwingWorker worker = new SwingWorker<Void, Void>() {
+//            @Override
+//            public Void doInBackground() {
             	setOutgoingTAB();
             	ValidationMessage.getInstance().append("Finished loading.");
-            	return null;
-            }
-            
-            @Override
-            protected void done() {
-                try { 
-                    // flush error message if there is any
-                	ValidationMessage.getInstance().flush();
-                } catch (Exception ignore) {
-                }
-            }
-
-        };
-        
-        worker.execute();
+//            	return null;
+//            }
+//            
+//            @Override
+//            protected void done() {
+//                try { 
+//                    // flush error message if there is any
+//                	ValidationMessage.getInstance().flush();
+//                } catch (Exception ignore) {
+//                }
+//            }
+//
+//        };
+//        
+//        worker.execute();
 	}
 
 	@Action
@@ -2477,7 +2477,7 @@ public class CrosslinkValidationToolView extends FrameView {
         this.topicTextPane.addMouseMotionListener(mtTopicPaneListener);
         // ---------------------------------------------------------------------
         // set up linkPaneMouseListener()
-        linkPaneMouseListener myLPMListener = new linkPaneMouseListener(this.topicTextPane, this.linkTextPane, this.anchorBepTable);
+        linkPaneMouseListener myLPMListener = new linkPaneMouseListener(this.topicTextPane, this.linkTextPane, this.anchorBepTable, currTopicID);
         this.linkTextPane.addMouseListener(myLPMListener);
         // ---------------------------------------------------------------------
         // According to TAB-Navigation-Indices

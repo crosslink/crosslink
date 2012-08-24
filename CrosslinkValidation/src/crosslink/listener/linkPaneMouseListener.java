@@ -44,7 +44,7 @@ public class linkPaneMouseListener implements MouseInputListener {
         System.out.println(txt);
     }
 
-    public linkPaneMouseListener(JTextPane myTopicPane, JTextPane myLinkPane, JTable paneTable) {
+    public linkPaneMouseListener(JTextPane myTopicPane, JTextPane myLinkPane, JTable paneTable, String topic) {
         this.myTopicPane = myTopicPane;
         this.myLinkPane = myLinkPane;
         this.myPaneTable = paneTable;
@@ -54,8 +54,9 @@ public class linkPaneMouseListener implements MouseInputListener {
         myTBATxtPaneManager = new tbaTxtPaneManager();
 
         // Get Current TopicID Index
-        this.topicIDsSA = myRSCManager.getTopicIDsV();
-        Collections.sort(topicIDsSA);
+        this.topicIDsSA = new Vector<String>(); //myRSCManager.getTopicIDsV();
+        this.topicIDsSA.add(topic);
+//        Collections.sort(topicIDsSA);
     }
 
     // <editor-fold defaultstate="collapsed" desc="Right/Left Mouse Events: Next/Previous">
