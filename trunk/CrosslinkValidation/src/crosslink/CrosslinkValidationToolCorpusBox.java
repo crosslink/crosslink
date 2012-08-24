@@ -68,6 +68,7 @@ public class CrosslinkValidationToolCorpusBox extends javax.swing.JDialog {
             } */else {
             	jLableCollection.setText(myWikipediaPath);
                 toolRscManager.updateWikipediaCollectionDirectory(myWikipediaPath);
+                AppResource.corpusHome = myWikipediaPath;
 //                toolRscManager.updateTeAraCollectionDirectory(myTeAraPath);
                 dispose();
             }

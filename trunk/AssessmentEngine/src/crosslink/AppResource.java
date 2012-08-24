@@ -37,6 +37,7 @@ public class AppResource {
 	public static Hashtable<String, String> topics = new Hashtable<String, String>();
 	public static int crosslinkTask = CROSSLINK_TASK_2; 
 
+	public static String corpusHome;
 	
 	public AppResource() {
 		adjustFont = AdjustFont.getInstance();
