@@ -1,5 +1,20 @@
 =How is Chinese/English crosslink table created?=
 
+Step 1:
+
+Mine the corpus with link_extract
+
+1) get the Chinese lang links from English Wikipedia
+{{{
+link_extract -crosslink:zh -append-source-title -keep-anchor-intact /data/corpus/wikipedia/all/zh/pages/ > en2zh_lang_links.txt
+/wikipedia/all/zh/pages > zh2en_lang_links.txt
+}}}
+
+2) get the English lang links from Chinese Wikipedia
+{{{
+link_extract -crosslink -append-source-title -keep-anchor-intact /data/corpus/wikipedia/all/zh/pages > zh2en_lang_links.txt
+}}}
+
 {{{
 wc -l ../en-zh/zh2en_table.txt 
 169974 ../en-zh/zh2en_table.txt
