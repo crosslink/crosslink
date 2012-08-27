@@ -15,6 +15,9 @@ link_extract -crosslink:zh -append-source-title -keep-anchor-intact /data/corpus
 link_extract -crosslink -append-source-title -keep-anchor-intact /data/corpus/wikipedia/all/zh/pages > zh2en_lang_links.txt
 }}}
 
+Note:
+The link_extract code can be obtained from https://github.com/crosslink/Link-the-Wiki
+
 ==Step 2:==
 
 
