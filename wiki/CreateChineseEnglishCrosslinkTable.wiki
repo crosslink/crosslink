@@ -20,8 +20,29 @@ The link_extract code can be obtained from https://github.com/crosslink/Link-the
 
 ==Step 2:==
 
+split those tables and create a title-to-target only table.
+
+{{{
+create_crosslink_table.sh zh2en_lang_links.txt 1>zh2en_lang_links_E2C.txt 2>zh2en_lang_links_C2E.txt
+}}}
+
+{{{
+}}}
+
+Note:
+create_crosslink_table.sh is available from:
+https://code.google.com/p/crosslink/source/browse/trunk/CrosslinkMining/create_crosslink_table.sh
 
 ==Step 3:==
+
+Merge those two tables together.
+
+{{{
+}}}
+
+{{{
+}}}
+==Step 4:==
 {{{
 wc -l ../en-zh/zh2en_table.txt 
 169974 ../en-zh/zh2en_table.txt
