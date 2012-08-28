@@ -12,7 +12,9 @@ link_extract -crosslink:zh -append-source-title -keep-anchor-intact /data/corpus
 
 2) get the English lang links from Chinese Wikipedia
 {{{
+
 link_extract -crosslink -append-source-title -keep-anchor-intact /data/corpus/wikipedia/all/zh/pages > zh2en_lang_links.txt
+
 }}}
 
 Note:
@@ -23,10 +25,13 @@ The link_extract code can be obtained from https://github.com/crosslink/Link-the
 split those tables and create a title-to-target only table.
 
 {{{
+
 create_crosslink_table.sh zh2en_lang_links.txt 1>zh2en_lang_links_E2C.txt 2>zh2en_lang_links_C2E.txt
+
 }}}
 
 {{{
+
 }}}
 
 Note:
@@ -38,11 +43,26 @@ https://code.google.com/p/crosslink/source/browse/trunk/CrosslinkMining/create_c
 Merge those two tables together.
 
 {{{
+
+cat ../chinese/zh2en_lang_links_C2E.txt ../english/en2zh_lang_links_C2E.txt > lang_links_C2E_concate.txt
+
 }}}
 
-{{{
-}}}
+
 ==Step 4:==
+
+Option 1:
+
+{{{
+
+link_index lang_links_C2E_concate.txt -pagename -chinese > lang_links_C2E_indexed.txt
+
+}}}
+
+or
+
+Option 2:
+
 {{{
 wc -l ../en-zh/zh2en_table.txt 
 169974 ../en-zh/zh2en_table.txt
