@@ -20,6 +20,10 @@ public class Data {
     public static String outgoingTag = "Outgoing_Links";
     public static String incomingTag = "Incoming_Links";
     
+    public static final int ENGLISH_TO_CJK = 1;
+    public static final int CJK_TO_ENGLISH = 2;
+    public static final int LINK_CJKE = 3;
+    
     public static final int LANGUAGE_CHINESE = 2;
     public static final int LANGUAGE_JAPANESE = 4;
     public static final int LANGUAGE_KOREAN = 8;
@@ -93,7 +97,7 @@ public class Data {
 		return sum / (double)dividedBy;
     }
 
-    protected static Hashtable getRunSet(File runfiles, int lang) throws Exception {
+    protected static Hashtable getRunSet(File runfiles, int lang, int linkDirection) throws Exception {
         Hashtable runTable = null;
 
         try {
@@ -105,14 +109,16 @@ public class Data {
 
             currentSourceLang = is.getSourceLang();
             if (currentSourceLang == null || currentSourceLang.length() == 0)
-            	currentSourceLang = "en";
+            	throw new Exception(String.format("Incorrect run file - %s which dosen't provide the source language", runfiles.getAbsoluteFile()));
             
             // default lang is the target lang
             currentTargetLang = is.getDefaultLang();
             if (currentTargetLang == null || currentTargetLang.length() == 0)
             	throw new Exception(String.format("Incorrect run file - %s which dosen't provide the target language", runfiles.getAbsoluteFile()));
+            
+            int thisRunLinkDirection = currentSourceLang.equalsIgnoreCase("en") ? ENGLISH_TO_CJK : CJK_TO_ENGLISH;
 
-            if ((langMatchMap.get(currentTargetLang) & lang) > 0) {
+            if ((langMatchMap.get(currentTargetLang) & lang) > 0 && (linkDirection & thisRunLinkDirection) > 0) {
             	runTable = new Hashtable();
 	            runId = is.getRunId();
 	            for (int i = 0; i < is.getTopic().size(); i++) {

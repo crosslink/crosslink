@@ -56,6 +56,8 @@ import crosslink.utility.FileUtil;
  * @author Darren HUANG
  */
 public class ResourcesManager {
+	
+	public static final String RESOURCE_MANAGER_FILE = "toolResources.xml";
 
     private static ResourcesManager instance;
 	private final String sysPropertyKey = "isTABKey";
@@ -102,6 +104,9 @@ public class ResourcesManager {
     
     private Hashtable<String, Vector<Bep>> poolAnchorBepLinksHT = null;
     
+    private static final String TEMPLATE_STRING = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n" +
+			"<toolResources>\n\n " + "</toolResources>\n";
+    
     public static ResourcesManager getInstance() {
         if (instance == null)
             instance = new ResourcesManager();
@@ -132,7 +137,9 @@ public class ResourcesManager {
         
         org.jdesktop.application.ResourceMap resourceMap = AppResource.getInstance().getResourceMap();
         // resource constants for this Class
-        resourceXMLFile = resourceMap.getString("ResourceXMLFilePath");
+        resourceXMLFile = resourceMap != null ? resourceMap.getString("ResourceXMLFilePath") : null;
+        if (resourceXMLFile == null || resourceXMLFile.length() == 0)
+        	resourceXMLFile = "resources" + File.separator + RESOURCE_MANAGER_FILE;
         afTasnCollectionErrors = resourceMap.getString("AssFormXml.taskCollectionError");
         afErrorsFilePath = resourceMap.getString("bepFile.ErrorXmlPath");
         wikipediaCollTitle = resourceMap.getString("collectionType.Wikipedia");
@@ -140,7 +147,11 @@ public class ResourcesManager {
         File resourceXMLFileHander = new File(resourceXMLFile);
         if (!resourceXMLFileHander.exists())
 			try {
-				FileUtil.copyFile(new File("resources" + File.separator + "Tool_Resources" + File.separator + resourceXMLFileHander.getName()), resourceXMLFileHander);
+				File alternative = new File("resources" + File.separator + "Tool_Resources" + File.separator + resourceXMLFileHander.getName());
+				if (alternative.exists())
+					FileUtil.copyFile(alternative, resourceXMLFileHander);
+				else
+					FileUtil.writeFile(resourceXMLFileHander, TEMPLATE_STRING);
 			} catch (IOException e) {
 				e.printStackTrace();
 			}

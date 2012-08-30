@@ -46,11 +46,11 @@ public class AdjustFont {
 		return instance;
 	}
 
-	public static void setComponentFont(JComponent jCom, String lang) {
+	public void setComponentFont(JComponent jCom, String lang) {
 		setComponentFont(jCom, lang, 13);
 	}
 	
-	public static void setComponentFont(JComponent jCom, String lang, int size) {
+	public void setComponentFont(JComponent jCom, String lang, int size) {
 		if (lang.equals("zh") || lang.equals("ja") || lang.equals("ko")) {
 			enFontOrigin = jCom.getFont();
 			jCom.setFont(zhFontOrigin.deriveFont(Font.PLAIN, size));

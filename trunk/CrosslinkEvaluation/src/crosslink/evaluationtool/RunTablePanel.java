@@ -41,7 +41,7 @@ public class RunTablePanel extends JPanel {
     
     private void setup() {
 		if (AppResource.isCrosslink2())
-			AdjustFont.setComponentFont(runsTable, "zh");
+			AdjustFont.getInstance().setComponentFont(runsTable, "zh");
 	}
 
 	public RunTablePanel(RunTablePanel copy){

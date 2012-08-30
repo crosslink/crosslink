@@ -41,7 +41,7 @@ public final class fileToBepPlotMeasures extends Measures {
     public fileToBepPlotMeasures() {
     }
 
-    public static plotsCalculation.PRCurveResult getFileToBepPlotResult(/*File resultfile, */File runfile, boolean isAllTopics, boolean useFileToBep, boolean useAnchorToFile, boolean useAnchorToBEP, int lang)
+    public static plotsCalculation.PRCurveResult getFileToBepPlotResult(/*File resultfile, */File runfile, boolean isAllTopics, boolean useFileToBep, boolean useAnchorToFile, boolean useAnchorToBEP, int lang, int linkDirection)
     	throws Exception {
 
         isUseAllTopics = isAllTopics ? true : false;
