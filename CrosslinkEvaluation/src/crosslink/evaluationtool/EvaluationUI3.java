@@ -76,6 +76,8 @@ public class EvaluationUI3 extends JFrame {
     private String emphasizeTeamName = "QUT";
     private org.jdesktop.application.ResourceMap resourceMap;
     private ImageIcon tickIcon;
+    
+    private HashSet<String> teamSet;
 
     /** Creates new form EvaluationUI */
     public EvaluationUI3() {
@@ -85,6 +87,8 @@ public class EvaluationUI3 extends JFrame {
         
         this.realRunTablePanel = new RunTablePanel();
         this.realEvaTablePanel = new EvaTablePanel();
+        
+        teamSet = new HashSet<String>();
 
         tickIcon = new javax.swing.ImageIcon(getClass().getResource("/crosslink/evaluationtool/resources/tick.png"));
         
@@ -99,6 +103,7 @@ public class EvaluationUI3 extends JFrame {
         if (!ResultSetManager.getInstance().checkIfManualResultSetAvailable())
         	jRBA2BManualrs.setEnabled(false);
         
+        this.showTeamEmphasisGroup(teamSet);
         // ------------------------------------------
 //        resultFilePath = getResultSetPath();
         // ------------------------------------------
@@ -1394,9 +1399,12 @@ public class EvaluationUI3 extends JFrame {
                     InexSubmission bt = (InexSubmission) unmarshal;
 
                     String currentSourceLang = bt.getSourceLang();
-                    if (currentSourceLang == null || currentSourceLang.length() == 0)
-                    	currentSourceLang = "en";
-                    
+                    if (currentSourceLang == null || currentSourceLang.length() == 0) {
+                    	if (AppResource.isCrosslink2())
+                    		throw new Exception(String.format("Incorrect run file - %s which dosen't provide the source language", file[i]));
+                    	else
+                    		currentSourceLang = "en";
+                    }
                     // default lang is the target lang
                     String currentTargetLang = bt.getDefaultLang();
                     if (currentTargetLang == null || currentTargetLang.length() == 0)
@@ -1405,6 +1413,8 @@ public class EvaluationUI3 extends JFrame {
                     Hashtable resultLinks = ResultSetManager.getInstance().getResultSetLinksNo(currentSourceLang, currentTargetLang);
                     
                     String id = bt.getParticipantId();
+                    teamSet.add(id);
+                    
                     String rid = bt.getRunId();
                     for (TopicType topic : bt.getTopic()) {
                     	topicType = topic;
@@ -1539,6 +1549,18 @@ public class EvaluationUI3 extends JFrame {
         }
 
         return resultLinksTable;
+    }
+    
+    private void showTeamEmphasisGroup() {
+    	boolean b = false;
+    	
+    	if (teamSet.size() > 0) {
+    		for (String teamId : teamSet)
+    			this.jComboBoxTeamList.addItem(teamId);
+    	}
+    	
+    	this.jLabelTeamEmphasis.setVisible(b);
+    	this.jComboBoxTeamList.setVisible(b);
     }
 
     private static String StackTraceToString(JAXBException jaxbe) {
