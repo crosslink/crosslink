@@ -121,7 +121,7 @@ public final class fileToBepMeasures extends Measures {
         }
     }
     
-    public static metricsCalculation.EvaluationResult getFileToBepResult(/*File resultfiles, */File runfile, boolean isAllTopics, boolean useFileToBep, boolean useAnchorToFile, boolean useAnchorToBEP, int lang) throws Exception {
+    public static metricsCalculation.EvaluationResult getFileToBepResult(/*File resultfiles, */File runfile, boolean isAllTopics, boolean useFileToBep, boolean useAnchorToFile, boolean useAnchorToBEP, int lang, int linkDirection) throws Exception {
 
         isUseAllTopics = isAllTopics ? true : false;
         isFileToBEP = useFileToBep ? true : false;

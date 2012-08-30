@@ -32,6 +32,7 @@ import org.xml.sax.SAXException;
 
 import crosslink.measures.metricsCalculation;
 import crosslink.measures.plotsCalculation;
+import crosslink.parsers.ResourcesManager;
 import crosslink.resultsetGenerator.LtwResultsetType;
 import crosslink.rungenerator.InexSubmission;
 import crosslink.rungenerator.ToFileType;
@@ -48,9 +49,6 @@ import crosslink.utility.WildcardFiles;
  * @author  Darren Huang, Eric
  */
 public class EvaluationUI3 extends JFrame {
-
-    private static final int ENGLISH_TO_CJK = 0;
-    private static final int CJK_TO_ENGLISH = 1;
     
 	private RunTablePanel realRunTablePanel;
     private EvaTablePanel realEvaTablePanel;
@@ -72,7 +70,7 @@ public class EvaluationUI3 extends JFrame {
     }
     private int langSelected = Data.LANGUAGE_ALL;
     
-    private int linkDirection = ENGLISH_TO_CJK;
+    private int linkDirection = Data.LINK_CJKE;
     
     private boolean emphasizeTeam = true;
     private String emphasizeTeamName = "QUT";
@@ -83,6 +81,7 @@ public class EvaluationUI3 extends JFrame {
     public EvaluationUI3() {
 
         resourceMap = org.jdesktop.application.Application.getInstance().getContext().getResourceMap(EvaluationUI3.class);
+        AppResource.getInstance().setResourceMap(resourceMap);
         
         this.realRunTablePanel = new RunTablePanel();
         this.realEvaTablePanel = new EvaTablePanel();
@@ -132,6 +131,8 @@ public class EvaluationUI3 extends JFrame {
 
         jRBA2BManualrs = new javax.swing.JRadioButton();
         uploadButton = new javax.swing.JButton();
+        jLabelTeamEmphasis = new javax.swing.JLabel();
+        jComboBoxTeamList = new javax.swing.JComboBox();
         runtablePanel = new javax.swing.JPanel();
         fullruntableButton = new javax.swing.JButton();
         runtablecleanallButton = new javax.swing.JButton();
@@ -163,6 +164,7 @@ public class EvaluationUI3 extends JFrame {
         linkDirectionPanel = new javax.swing.JPanel();
         jRBEnglish2CJK = new javax.swing.JRadioButton();
         jRBCJK2English = new javax.swing.JRadioButton();
+        jRadioLinkDirectionAll = new javax.swing.JRadioButton();
         fileMenuBar = new javax.swing.JMenuBar();
         fileMenu = new javax.swing.JMenu();
         aboutMenuItem = new javax.swing.JMenuItem();
@@ -237,7 +239,7 @@ public class EvaluationUI3 extends JFrame {
                 .add(jRBA2BWikirs)
                 .add(45, 45, 45)
                 .add(jRBA2BManualrs)
-                .addContainerGap(85, Short.MAX_VALUE))
+                .addContainerGap(105, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
@@ -257,6 +259,10 @@ public class EvaluationUI3 extends JFrame {
             }
         });
 
+        jLabelTeamEmphasis.setText("Choose the team you want emphasis on"); // NOI18N
+
+        jComboBoxTeamList.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
         org.jdesktop.layout.GroupLayout openfilesPanelLayout = new org.jdesktop.layout.GroupLayout(openfilesPanel);
         openfilesPanel.setLayout(openfilesPanelLayout);
         openfilesPanelLayout.setHorizontalGroup(
@@ -264,16 +270,21 @@ public class EvaluationUI3 extends JFrame {
             .add(openfilesPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .add(openfilesPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(jPanel6, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .add(openfilesPanelLayout.createSequentialGroup()
-                        .add(filecleanButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 90, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                        .add(18, 18, 18)
-                        .add(uploadButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 90, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                    .add(openfilesPanelLayout.createSequentialGroup()
-                        .add(filedirectoryTextField, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 638, Short.MAX_VALUE)
+                        .add(openfilesPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(filedirectoryTextField, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 646, Short.MAX_VALUE)
+                            .add(openfilesPanelLayout.createSequentialGroup()
+                                .add(filecleanButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 90, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                .add(18, 18, 18)
+                                .add(uploadButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 90, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                .add(96, 96, 96)
+                                .add(jLabelTeamEmphasis, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 346, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(openfilesButton))
-                    .add(jPanel6, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
+                        .add(openfilesPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
+                            .add(openfilesButton, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .add(jComboBoxTeamList, 0, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addContainerGap())))
         );
         openfilesPanelLayout.setVerticalGroup(
             openfilesPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
@@ -284,14 +295,14 @@ public class EvaluationUI3 extends JFrame {
                 .add(openfilesPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(openfilesButton)
                     .add(filedirectoryTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .add(openfilesPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(openfilesPanelLayout.createSequentialGroup()
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(uploadButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                    .add(openfilesPanelLayout.createSequentialGroup()
-                        .add(6, 6, 6)
-                        .add(filecleanButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .add(6, 6, 6)
+                .add(openfilesPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
+                    .add(openfilesPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                        .add(jLabelTeamEmphasis, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 19, Short.MAX_VALUE)
+                        .add(jComboBoxTeamList, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                    .add(uploadButton, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .add(filecleanButton, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(6, Short.MAX_VALUE))
         );
 
         runtablePanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Run Information", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
@@ -318,11 +329,11 @@ public class EvaluationUI3 extends JFrame {
         runtablePanelLayout.setHorizontalGroup(
             runtablePanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(runtablePanelLayout.createSequentialGroup()
-                .addContainerGap(470, Short.MAX_VALUE)
+                .addContainerGap(478, Short.MAX_VALUE)
                 .add(fullruntableButton)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(runtablecleanallButton))
-            .add(org.jdesktop.layout.GroupLayout.TRAILING, runTablePanelHolder, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 755, Short.MAX_VALUE)
+            .add(org.jdesktop.layout.GroupLayout.TRAILING, runTablePanelHolder, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 763, Short.MAX_VALUE)
         );
         runtablePanelLayout.setVerticalGroup(
             runtablePanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
@@ -357,20 +368,20 @@ public class EvaluationUI3 extends JFrame {
         evatablePanelLayout.setHorizontalGroup(
             evatablePanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(org.jdesktop.layout.GroupLayout.TRAILING, evatablePanelLayout.createSequentialGroup()
-                .addContainerGap(411, Short.MAX_VALUE)
+                .addContainerGap(419, Short.MAX_VALUE)
                 .add(fullevatableButton)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(evatablecleanallButton)
                 .addContainerGap())
-            .add(org.jdesktop.layout.GroupLayout.TRAILING, evaTablePanelHolder, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 755, Short.MAX_VALUE)
+            .add(org.jdesktop.layout.GroupLayout.TRAILING, evaTablePanelHolder, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 763, Short.MAX_VALUE)
         );
         evatablePanelLayout.setVerticalGroup(
             evatablePanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(org.jdesktop.layout.GroupLayout.TRAILING, evatablePanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .add(evaTablePanelHolder, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 203, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
-                .add(evatablePanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(evatablePanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
                     .add(evatablecleanallButton)
                     .add(fullevatableButton))
                 .addContainerGap())
@@ -384,7 +395,6 @@ public class EvaluationUI3 extends JFrame {
 
         javax.swing.ActionMap actionMap = org.jdesktop.application.Application.getInstance().getContext().getActionMap(EvaluationUI3.class, this);
         getplotsButton.setAction(actionMap.get("getPlot")); // NOI18N
-        getplotsButton.setText("Get Plots");
         getplotsButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 getplotsButtonActionPerformed(evt);
@@ -395,18 +405,20 @@ public class EvaluationUI3 extends JFrame {
         plotPanel.setLayout(plotPanelLayout);
         plotPanelLayout.setHorizontalGroup(
             plotPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(org.jdesktop.layout.GroupLayout.TRAILING, plotPanelLayout.createSequentialGroup()
+            .add(plotPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .add(RPCurveRadioButton)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 451, Short.MAX_VALUE)
-                .add(getplotsButton)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 454, Short.MAX_VALUE)
+                .add(getplotsButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 104, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         plotPanelLayout.setVerticalGroup(
             plotPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(plotPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                .add(getplotsButton)
-                .add(RPCurveRadioButton))
+            .add(plotPanelLayout.createSequentialGroup()
+                .add(plotPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(getplotsButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 22, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(RPCurveRadioButton))
+                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         calculationPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Task Selection", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
@@ -432,16 +444,14 @@ public class EvaluationUI3 extends JFrame {
                 .add(jRBAnchorToFile)
                 .add(30, 30, 30)
                 .add(jRBAnchorToBEP)
-                .addContainerGap(328, Short.MAX_VALUE))
+                .addContainerGap(336, Short.MAX_VALUE))
         );
         calculationPanel1Layout.setVerticalGroup(
             calculationPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(calculationPanel1Layout.createSequentialGroup()
-                .add(calculationPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(jRBFileToFile)
-                    .add(jRBAnchorToFile)
-                    .add(jRBAnchorToBEP))
-                .addContainerGap(14, Short.MAX_VALUE))
+            .add(calculationPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                .add(jRBFileToFile)
+                .add(jRBAnchorToFile)
+                .add(jRBAnchorToBEP))
         );
 
         evaluateButton.setText("Evaluate");
@@ -471,35 +481,31 @@ public class EvaluationUI3 extends JFrame {
                 .add(jRBalltopics)
                 .add(26, 26, 26)
                 .add(jRBonlysubmitted)
-                .addContainerGap(404, Short.MAX_VALUE))
+                .addContainerGap(412, Short.MAX_VALUE))
         );
         topicSelectionPanelLayout.setVerticalGroup(
             topicSelectionPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(topicSelectionPanelLayout.createSequentialGroup()
-                .add(topicSelectionPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(jRBalltopics)
-                    .add(jRBonlysubmitted))
-                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .add(topicSelectionPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                .add(jRBalltopics)
+                .add(jRBonlysubmitted))
         );
 
         org.jdesktop.layout.GroupLayout jPanel1Layout = new org.jdesktop.layout.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(evaluateButton, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 765, Short.MAX_VALUE)
+            .add(org.jdesktop.layout.GroupLayout.TRAILING, topicSelectionPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .add(calculationPanel1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .add(topicSelectionPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .add(org.jdesktop.layout.GroupLayout.TRAILING, evaluateButton, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 773, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
                 .add(topicSelectionPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .add(18, 18, 18)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(calculationPanel1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
-                .add(evaluateButton)
-                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(evaluateButton, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 25, Short.MAX_VALUE))
         );
 
         langSelectionPanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Language Selection", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
@@ -554,23 +560,20 @@ public class EvaluationUI3 extends JFrame {
                 .add(jRadioLangJa1)
                 .add(18, 18, 18)
                 .add(jRadioLangAll)
-                .addContainerGap(430, Short.MAX_VALUE))
+                .addContainerGap(438, Short.MAX_VALUE))
         );
         langSelectionPanelLayout.setVerticalGroup(
             langSelectionPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(langSelectionPanelLayout.createSequentialGroup()
-                .add(langSelectionPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(jRadioLangZh)
-                    .add(jRadioLangJa)
-                    .add(jRadioLangJa1)
-                    .add(jRadioLangAll))
-                .addContainerGap(16, Short.MAX_VALUE))
+            .add(langSelectionPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                .add(jRadioLangZh)
+                .add(jRadioLangJa)
+                .add(jRadioLangJa1)
+                .add(jRadioLangAll))
         );
 
         linkDirectionPanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Link Direction", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
 
         buttonGroupLinkDirection.add(jRBEnglish2CJK);
-        jRBEnglish2CJK.setSelected(true);
         jRBEnglish2CJK.setText("English to CJK");
         jRBEnglish2CJK.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
         jRBEnglish2CJK.addChangeListener(new javax.swing.event.ChangeListener() {
@@ -588,6 +591,16 @@ public class EvaluationUI3 extends JFrame {
             }
         });
 
+        buttonGroupLinkDirection.add(jRadioLinkDirectionAll);
+        jRadioLinkDirectionAll.setSelected(true);
+        jRadioLinkDirectionAll.setText("All");
+        jRadioLinkDirectionAll.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
+        jRadioLinkDirectionAll.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioLinkDirectionAllActionPerformed(evt);
+            }
+        });
+
         org.jdesktop.layout.GroupLayout linkDirectionPanelLayout = new org.jdesktop.layout.GroupLayout(linkDirectionPanel);
         linkDirectionPanel.setLayout(linkDirectionPanelLayout);
         linkDirectionPanelLayout.setHorizontalGroup(
@@ -597,15 +610,16 @@ public class EvaluationUI3 extends JFrame {
                 .add(jRBEnglish2CJK)
                 .add(26, 26, 26)
                 .add(jRBCJK2English)
-                .addContainerGap(491, Short.MAX_VALUE))
+                .add(18, 18, 18)
+                .add(jRadioLinkDirectionAll)
+                .addContainerGap(447, Short.MAX_VALUE))
         );
         linkDirectionPanelLayout.setVerticalGroup(
             linkDirectionPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(linkDirectionPanelLayout.createSequentialGroup()
-                .add(linkDirectionPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(jRBEnglish2CJK)
-                    .add(jRBCJK2English))
-                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .add(linkDirectionPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                .add(jRBEnglish2CJK)
+                .add(jRBCJK2English)
+                .add(jRadioLinkDirectionAll))
         );
 
         fileMenu.setMnemonic('F');
@@ -653,46 +667,46 @@ public class EvaluationUI3 extends JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(layout.createSequentialGroup()
-                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(layout.createSequentialGroup()
+            .add(org.jdesktop.layout.GroupLayout.TRAILING, layout.createSequentialGroup()
+                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, layout.createSequentialGroup()
                         .addContainerGap()
                         .add(jPanel1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .add(org.jdesktop.layout.GroupLayout.TRAILING, openfilesPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .add(layout.createSequentialGroup()
-                        .add(12, 12, 12)
-                        .add(runtablePanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .add(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .add(langSelectionPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .add(layout.createSequentialGroup()
-                        .add(12, 12, 12)
-                        .add(linkDirectionPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .add(layout.createSequentialGroup()
+                    .add(openfilesPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, layout.createSequentialGroup()
                         .addContainerGap()
                         .add(evatablePanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .add(layout.createSequentialGroup()
                         .addContainerGap()
-                        .add(plotPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .add(plotPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, layout.createSequentialGroup()
+                        .addContainerGap()
+                        .add(runtablePanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, layout.createSequentialGroup()
+                        .addContainerGap()
+                        .add(linkDirectionPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, layout.createSequentialGroup()
+                        .addContainerGap()
+                        .add(langSelectionPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(layout.createSequentialGroup()
-                .add(openfilesPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(openfilesPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 119, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(runtablePanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(linkDirectionPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .add(17, 17, 17)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
                 .add(langSelectionPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
                 .add(jPanel1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(evatablePanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 272, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
-                .add(plotPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .add(evatablePanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 265, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(plotPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         langSelectionPanel.getAccessibleContext().setAccessibleName("Lang Selection");
@@ -716,8 +730,7 @@ public class EvaluationUI3 extends JFrame {
             getPlot();
     }
     
-    @org.jdesktop.application.Action
-    private void getPlot() {
+    private void createPlot() {
             boolean useAllTopics = true;
             boolean useFileToBep = false;
             boolean useAnchorToFile = false;
@@ -777,7 +790,7 @@ public class EvaluationUI3 extends JFrame {
                 for (int i = 0; i < this.runFileCache.length; i++) {
                     plotsCalculation.PRCurveResult pcr;
 					try {
-						pcr = plotsCalculation.plotCalculate(/*resultFile, */this.runFileCache[i], useAllTopics, useFileToBep, useAnchorToFile, useAnchorToBEP, langSelected);
+						pcr = plotsCalculation.plotCalculate(/*resultFile, */this.runFileCache[i], useAllTopics, useFileToBep, useAnchorToFile, useAnchorToBEP, langSelected, linkDirection);
 
 						if (pcr != null) {
 		                    if (plotHashmap.containsKey((Object) pcr.plotRunId)) {
@@ -817,7 +830,7 @@ public class EvaluationUI3 extends JFrame {
                     plotTitle = new String[]{"InteP-R Curve: Combination"};
                 } else if (incommingPlotData.isEmpty() && combinationPlotData.isEmpty()) {
                     plotDatas = new Vector[]{outgoingPlotData};
-                    plotTitle = new String[]{"InteP-R Curve: Outgoing"};
+                    plotTitle = new String[]{"Interpolated Precision-Recall"};
                 } else if (outgoingPlotData.isEmpty() && combinationPlotData.isEmpty()) {
                     plotDatas = new Vector[]{incommingPlotData};
                     plotTitle = new String[]{"InteP-R Curve: Incoming"};
@@ -825,7 +838,7 @@ public class EvaluationUI3 extends JFrame {
                     plotDatas = new Vector[]{
                                 outgoingPlotData, combinationPlotData
                             };
-                    plotTitle = new String[]{"InteP-R Curve: Outgoing", "InteP-R Curve: Combination"};
+                    plotTitle = new String[]{"Interpolated Precision-Recall", "InteP-R Curve: Combination"};
                 } else if (outgoingPlotData.isEmpty()) {
                     plotDatas = new Vector[]{
                                 incommingPlotData, combinationPlotData
@@ -835,12 +848,12 @@ public class EvaluationUI3 extends JFrame {
                     plotDatas = new Vector[]{
                                 incommingPlotData, outgoingPlotData
                             };
-                    plotTitle = new String[]{"InteP-R Curve: Incoming", "InteP-R Curve: Outgoing"};
+                    plotTitle = new String[]{"InteP-R Curve: Incoming", "Interpolated Precision-Recall"};
                 } else {
                     plotDatas = new Vector[]{
                                 incommingPlotData, outgoingPlotData, combinationPlotData
                             };
-                    plotTitle = new String[]{"InteP-R Curve: Incoming", "InteP-R Curve: Outgoing", "InteP-R Curve: Combination"};
+                    plotTitle = new String[]{"InteP-R Curve: Incoming", "Interpolated Precision-Recall", "InteP-R Curve: Combination"};
                 }
 
                 for (int j = 0; j < plotDatas.length; j++) {
@@ -999,10 +1012,16 @@ public class EvaluationUI3 extends JFrame {
     private void exitMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitMenuItemActionPerformed
         System.exit(0);
     }//GEN-LAST:event_exitMenuItemActionPerformed
-    String currentOpenDir = "C:\\";
+    String currentOpenDir = null;
     private void openfilesButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_openfilesButtonActionPerformed
 
         String newline = "\n";
+        if (currentOpenDir == null)
+        		currentOpenDir = ResourcesManager.getInstance().getLastSeenSubmissionDirectory();
+
+        if (currentOpenDir.length() == 0)
+        	currentOpenDir = ".";
+        
         JFileChooser fc = new JFileChooser(currentOpenDir);
         // To allow both (multiple) files and directories to be selected
         fc.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
@@ -1026,7 +1045,11 @@ public class EvaluationUI3 extends JFrame {
 
 //                this.runFileCache = files;  // remember to delete
                 String absFilePath = files[0].getAbsolutePath();
-                currentOpenDir = absFilePath.substring(0, absFilePath.lastIndexOf(File.separator));
+                String openedDir = absFilePath.substring(0, absFilePath.lastIndexOf(File.separator));
+                if (!openedDir.equalsIgnoreCase(currentOpenDir)) {
+                	currentOpenDir  = openedDir;
+                	ResourcesManager.getInstance().updateLastSeenSumbmissionDirectory(currentOpenDir);
+                }
 
                 if (files[0].isDirectory() && files[0].exists()) {
                     // get all files in directory
@@ -1133,7 +1156,7 @@ public class EvaluationUI3 extends JFrame {
 
                 metricsCalculation.EvaluationResult er;
 
-                er = metricsCalculation.calculate(/*resultFile, */this.runFileCache[i], useAllTopics, useFileToBep, useAnchorGToFile, useAnchorGToBEP, langSelected);
+                er = metricsCalculation.calculate(/*resultFile, */this.runFileCache[i], useAllTopics, useFileToBep, useAnchorGToFile, useAnchorGToBEP, langSelected, linkDirection);
 
                 if (er == null)
                 	continue;
@@ -1338,13 +1361,17 @@ public class EvaluationUI3 extends JFrame {
         langSelected = Data.LANGUAGE_ALL;
     }//GEN-LAST:event_jRadioLangAllActionPerformed
 
-private void jRBEnglish2CJKStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jRBEnglish2CJKStateChanged
-    linkDirection = ENGLISH_TO_CJK;
-}//GEN-LAST:event_jRBEnglish2CJKStateChanged
-
-private void jRBCJK2EnglishStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jRBCJK2EnglishStateChanged
-    linkDirection = CJK_TO_ENGLISH;
-}//GEN-LAST:event_jRBCJK2EnglishStateChanged
+	private void jRBEnglish2CJKStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jRBEnglish2CJKStateChanged
+	    linkDirection = Data.ENGLISH_TO_CJK;
+	}//GEN-LAST:event_jRBEnglish2CJKStateChanged
+	
+	private void jRBCJK2EnglishStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jRBCJK2EnglishStateChanged
+	    linkDirection = Data.CJK_TO_ENGLISH;
+	}//GEN-LAST:event_jRBCJK2EnglishStateChanged
+	
+	private void jRadioLinkDirectionAllActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioLinkDirectionAllActionPerformed
+	    linkDirection = Data.LINK_CJKE;
+	}//GEN-LAST:event_jRadioLinkDirectionAllActionPerformed
 
     private ArrayList<String[]> retrieveRunData(File[] file) throws Exception {
 
@@ -1583,6 +1610,11 @@ private void jRBCJK2EnglishStateChanged(javax.swing.event.ChangeEvent evt) {//GE
         crosslink1MenuItem.setIcon(tickIcon);
         AppResource.crosslinkTask = AppResource.CROSSLINK_TASK_1;
     }
+
+    @org.jdesktop.application.Action
+    public void getPlot() {
+        createPlot();
+    }
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JRadioButton RPCurveRadioButton;
@@ -1607,6 +1639,8 @@ private void jRBCJK2EnglishStateChanged(javax.swing.event.ChangeEvent evt) {//GE
     private javax.swing.JButton fullevatableButton;
     private javax.swing.JButton fullruntableButton;
     private javax.swing.JButton getplotsButton;
+    private javax.swing.JComboBox jComboBoxTeamList;
+    private javax.swing.JLabel jLabelTeamEmphasis;
     private javax.swing.JMenuItem jMenuItemDelete;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel6;
@@ -1624,6 +1658,7 @@ private void jRBCJK2EnglishStateChanged(javax.swing.event.ChangeEvent evt) {//GE
     private javax.swing.JRadioButton jRadioLangJa;
     private javax.swing.JRadioButton jRadioLangJa1;
     private javax.swing.JRadioButton jRadioLangZh;
+    private javax.swing.JRadioButton jRadioLinkDirectionAll;
     private javax.swing.ButtonGroup langButtonGroup;
     private javax.swing.JPanel langSelectionPanel;
     private javax.swing.JPanel linkDirectionPanel;
