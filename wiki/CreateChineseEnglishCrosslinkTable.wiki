@@ -31,7 +31,7 @@ create_crosslink_table.sh zh2en_lang_links.txt 1>zh2en_lang_links_E2C.txt 2>zh2e
 }}}
 
 {{{
-
+create_crosslink_table.sh en2zh_lang_links.txt 1>en2zh_lang_links_C2E.txt 2>en2zh_lang_links_E2C.txt
 }}}
 
 Note:
