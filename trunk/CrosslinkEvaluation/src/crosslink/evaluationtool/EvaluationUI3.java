@@ -103,7 +103,7 @@ public class EvaluationUI3 extends JFrame {
         if (!ResultSetManager.getInstance().checkIfManualResultSetAvailable())
         	jRBA2BManualrs.setEnabled(false);
         
-        this.showTeamEmphasisGroup(teamSet);
+        this.showTeamEmphasisGroup();
         // ------------------------------------------
 //        resultFilePath = getResultSetPath();
         // ------------------------------------------
@@ -1554,10 +1554,10 @@ public class EvaluationUI3 extends JFrame {
     private void showTeamEmphasisGroup() {
     	boolean b = false;
     	
-    	if (teamSet.size() > 0) {
-    		for (String teamId : teamSet)
-    			this.jComboBoxTeamList.addItem(teamId);
-    	}
+//    	if (teamSet.size() > 0) {
+//    		for (String teamId : teamSet)
+//    			this.jComboBoxTeamList.addItem(teamId);
+//    	}
     	
     	this.jLabelTeamEmphasis.setVisible(b);
     	this.jComboBoxTeamList.setVisible(b);

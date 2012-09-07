@@ -201,6 +201,17 @@ public class Anchor {
 				result = topic.getAnchor(offset, length);
 			
 			reform = result;
+			
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+		}
+		
+		valid = reform.equals(name);
+		
+//		if (name.equals("Standard &amp; Poor's"))
+//			System.err.println("I got you");
+//		
+		if (!valid) {
 			if (reform.contains("<") || reform.contains(">"))
 				reform = XML2TXT.getInstance().cleanTag(reform);
 			if (reform.contains("&")) {
@@ -208,13 +219,6 @@ public class Anchor {
 //				reform = XML2TXT.getInstance().cleanTag(FOLTXTMatcher.parseXmlText(reform));
 			}
 			
-		} catch (UnsupportedEncodingException e) {
-			e.printStackTrace();
-		}
-		
-//		valid = result.equals(name);
-//		
-//		if (!valid) {
 			valid = reform.equalsIgnoreCase(name);
 			if (!valid) {
 				if (!reform.contains("\n")) {
@@ -223,7 +227,7 @@ public class Anchor {
 					valid = secondReform.equalsIgnoreCase(secondName);
 				}
 			}
-//		}
+		}
 		
 		if (valid && !name.equals(reform))
 			name = reform;
