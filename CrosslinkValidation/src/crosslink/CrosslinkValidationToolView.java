@@ -2099,12 +2099,12 @@ public class CrosslinkValidationToolView extends FrameView {
         updatePoolerToResourceXML(thisXMLFile.getAbsolutePath());
         
     	// set UI font
-        AdjustFont.setComponentFont(topicTextPane, AppResource.sourceLang);
+        AdjustFont.getInstance().setComponentFont(topicTextPane, AppResource.sourceLang);
         if (!AppResource.sourceLang.equals("en"))
-        	AdjustFont.setComponentFont(anchorBepTable, AppResource.sourceLang);
+        	AdjustFont.getInstance().setComponentFont(anchorBepTable, AppResource.sourceLang);
         else
-        	AdjustFont.setComponentFont(anchorBepTable, AppResource.targetLang);
-    	AdjustFont.setComponentFont(linkTextPane, AppResource.targetLang);
+        	AdjustFont.getInstance().setComponentFont(anchorBepTable, AppResource.targetLang);
+    	AdjustFont.getInstance().getInstance().setComponentFont(linkTextPane, AppResource.targetLang);
     	
         myTABTxtPaneManager = new tabTxtPaneManager();
         myTBATxtPaneManager = new tbaTxtPaneManager();
