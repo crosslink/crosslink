@@ -52,7 +52,7 @@ public class About extends JDialog {
         copyrightTextArea.setEditable(false);
         copyrightTextArea.setLineWrap(true);
         copyrightTextArea.setRows(8);
-        copyrightTextArea.setText("Crosslink Evaluation @NTCIR 9\n\nVersion: 2.1\n\nCopyright (c) 2007-2011\nQueensland University of Technology\n\t\nOrganizers: Shlomo Geva, Andrew Trotman, Yue Xu, Eric Tang,  Kelly Itakura and Darren Huang");
+        copyrightTextArea.setText("Crosslink Evaluation @NTCIR10\n\nVersion: 4.0.1\n\nCopyright (c) 2007-2011\nQueensland University of Technology\n\t\nOrganizers: Shlomo Geva,  In-Su Kang,  Fuminori Kimura,  Yi-Hsun, Lee,  Eric Tang,  Andrew Trotman,  Yue Xu");
         copyrightTextArea.setWrapStyleWord(true);
         copyrightTextArea.setBorder(null);
         copyrightTextArea.setFocusable(false);

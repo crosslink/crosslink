@@ -190,7 +190,7 @@ public class EvaluationUI3 extends JFrame {
         add(jRBonlysubmitted);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("NTCIR 9: Crosslink Evaluation"); // NOI18N
+        setTitle("NTCIR 10: Crosslink Evaluation Tool"); // NOI18N
 
         openfilesButton.setText("Open Files");
         openfilesButton.addActionListener(new java.awt.event.ActionListener() {
@@ -1426,71 +1426,49 @@ public class EvaluationUI3 extends JFrame {
                         log(result[0] + " - " + result[1] + " - " + result[2] + " - " + result[3]);
                         log(resultLinks.size());
                         // -----------------------------------------------------
-                        String[] topicLinks = ((String) resultLinks.get(result[2])).split(";");
-                        result[5] = topicLinks[0];
-                        result[7] = topicLinks[1];
-                        // -----------------------------------------------------
-//                        result[3] = topic.getName();
-                        if (topic.getOutgoing().getAnchor().isEmpty()) {
-                            result[4] = "0";
-                        } else {
-                            if (topic.getOutgoing().getAnchor().get(0).getTofile() == null || topic.getOutgoing().getAnchor().get(0).getTofile().isEmpty()) {
-                                result[4] = "0";
-                            } else {
-                                // ============================
-                                int outLinkCount = 0;
-                                int outNonduplicateCount = 0;
-                                List outItemsList = new ArrayList();
-                                for (int j = 0; j < topic.getOutgoing().getAnchor().size(); j++) {
-                                    List<crosslink.rungenerator.ToFileType> linkTo = topic.getOutgoing().getAnchor().get(j).getTofile();
-                                    if (linkTo == null) {
-                                    	System.err.println("Empty anchor:" + topic.getOutgoing().getAnchor().get(j).getName());
-                                    	continue;
-                                    }
-                                    for (int k = 0; k < linkTo.size(); k++) {
-                                        outLinkCount++;
-                                        ToFileType tofile = linkTo.get(k);
-//                                        int endop = tofile.toString().toLowerCase().trim().indexOf(".xml");
-//                                        if (endop != -1) {
-                                            String outFile = tofile.toString(); //.toString();
-                                            if (!outItemsList.contains(outFile)) {
-                                                outItemsList.add(outFile);
-                                                outNonduplicateCount++;
-                                            }
-//                                        }
-                                    }
-                                }
-                                // ============================
-                                // totalFiles:nonDuplicateFiles
-//                                result[4] = "" + topic.getOutgoing().getLink().size() + "(" + outNonduplicateCount + ")";
-                                result[4] = "" + outLinkCount + "(" + outNonduplicateCount + ")";
-                            }
+                        String links = (String) resultLinks.get(result[2]);
+                        if (links != null) {
+	                        String[] topicLinks = links.split(";");
+	                        result[5] = topicLinks[0];
+	                        result[7] = topicLinks[1];
+	                        // -----------------------------------------------------
+	//                        result[3] = topic.getName();
+	                        if (topic.getOutgoing().getAnchor().isEmpty()) {
+	                            result[4] = "0";
+	                        } else {
+	                            if (topic.getOutgoing().getAnchor().get(0).getTofile() == null || topic.getOutgoing().getAnchor().get(0).getTofile().isEmpty()) {
+	                                result[4] = "0";
+	                            } else {
+	                                // ============================
+	                                int outLinkCount = 0;
+	                                int outNonduplicateCount = 0;
+	                                List outItemsList = new ArrayList();
+	                                for (int j = 0; j < topic.getOutgoing().getAnchor().size(); j++) {
+	                                    List<crosslink.rungenerator.ToFileType> linkTo = topic.getOutgoing().getAnchor().get(j).getTofile();
+	                                    if (linkTo == null) {
+	                                    	System.err.println("Empty anchor:" + topic.getOutgoing().getAnchor().get(j).getName());
+	                                    	continue;
+	                                    }
+	                                    for (int k = 0; k < linkTo.size(); k++) {
+	                                        outLinkCount++;
+	                                        ToFileType tofile = linkTo.get(k);
+	//                                        int endop = tofile.toString().toLowerCase().trim().indexOf(".xml");
+	//                                        if (endop != -1) {
+	                                            String outFile = tofile.toString(); //.toString();
+	                                            if (!outItemsList.contains(outFile)) {
+	                                                outItemsList.add(outFile);
+	                                                outNonduplicateCount++;
+	                                            }
+	//                                        }
+	                                    }
+	                                }
+	                                // ============================
+	                                // totalFiles:nonDuplicateFiles
+	//                                result[4] = "" + topic.getOutgoing().getLink().size() + "(" + outNonduplicateCount + ")";
+	                                result[4] = "" + outLinkCount + "(" + outNonduplicateCount + ")";
+	                            }
+	                        }
                         }
-//                        if (topic.getIncoming().getLink().isEmpty()) {
-//                            result[6] = "0";
-//                        } else {
-//                            if (topic.getIncoming().getLink().get(0).getAnchor().getFile().toString().equalsIgnoreCase("")) {
-//                                result[6] = "0";
-//                            } else {
-//                                // ============================
-//                                int inLinkCount = 0;
-//                                int inNonduplicateCount = 0;
-//                                List inItemsList = new ArrayList();
-//                                for (int j = 0; j < topic.getIncoming().getLink().size(); j++) {
-//                                    int endop = topic.getIncoming().getLink().get(j).getAnchor().getFile().toString().toLowerCase().indexOf(".xml");
-//                                    if (endop != -1) {
-//                                        String inFile = topic.getIncoming().getLink().get(j).getAnchor().getFile().toString();
-//                                        if (!inItemsList.contains(inFile)) {
-//                                            inItemsList.add(inFile);
-//                                            inNonduplicateCount++;
-//                                        }
-//                                    }
-//                                }
-//                                // ============================
-//                                // totalFiles:nonDuplicateFiles
-//                                result[6] = "" + topic.getIncoming().getLink().size() + "(" + inNonduplicateCount + ")";
-//                            }
-//                        }
                         bigResult.add(result);
                     }
                 }

@@ -560,9 +560,9 @@ public class CrosslinkAssessmentToolControler {
     // Topic Pane: Anchor
     private void setTopicPaneContent(String xmlFilePath, String lang) {
     	if (lang.equalsIgnoreCase("en"))
-    		AdjustFont.setComponentFont(myTopicPane, AppResource.targetLang);
+    		AdjustFont.getInstance().setComponentFont(myTopicPane, AppResource.targetLang);
     	else
-    		AdjustFont.setComponentFont(myTopicPane, lang);
+    		AdjustFont.getInstance().setComponentFont(myTopicPane, lang);
         if (!xmlFilePath.equals("")) {
             createTopicTextPane(xmlFilePath);
         } else {
@@ -572,16 +572,16 @@ public class CrosslinkAssessmentToolControler {
     }
     
     private void setupComponentFont() {
-    	AdjustFont.setComponentFont(lblTopicTitle, AppResource.sourceLang);
+    	AdjustFont.getInstance().setComponentFont(lblTopicTitle, AppResource.sourceLang);
     	if (!AppResource.sourceLang.equals("en")) {
-	    	AdjustFont.setComponentFont(lblPoolAnchor, AppResource.sourceLang, 24);
-	    	AdjustFont.setComponentFont(lblAnchor, AppResource.sourceLang, 40);  // subanchor
+	    	AdjustFont.getInstance().setComponentFont(lblPoolAnchor, AppResource.sourceLang, 24);
+	    	AdjustFont.getInstance().setComponentFont(lblAnchor, AppResource.sourceLang, 40);  // subanchor
     	}
     	else {
-	    	AdjustFont.setComponentFont(lblPoolAnchor, AppResource.sourceLang, 18);
-	    	AdjustFont.setComponentFont(lblAnchor, AppResource.sourceLang, 24);  // subanchor
+	    	AdjustFont.getInstance().setComponentFont(lblPoolAnchor, AppResource.sourceLang, 18);
+	    	AdjustFont.getInstance().setComponentFont(lblAnchor, AppResource.sourceLang, 24);  // subanchor
     	}
-    	AdjustFont.setComponentFont(myLinkPane, AppResource.targetLang);
+    	AdjustFont.getInstance().setComponentFont(myLinkPane, AppResource.targetLang);
     }
     
     private void setupTopic() {
