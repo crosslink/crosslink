@@ -49,13 +49,13 @@ public class Topic<AnchorSet> extends WikiArticleXml {
 	@Override
 	public void read() {
 		if (this.xmlFile == null)
-			xmlFile = AppResource.getInstance().getTopicXmlPathNameByFileID(id, lang);
+			setXmlFile(AppResource.getInstance().getTopicXmlPathNameByFileID(id, lang));
 		super.read();
 	}
 
 	public void load() {
 		if (bytes == null) {
-			xmlFile = AppResource.getInstance().getTopicXmlPathNameByFileID(id);
+			setXmlFile(AppResource.getInstance().getTopicXmlPathNameByFileID(id));
 			if (new File(xmlFile).exists()) {
 				read();
 				extractTitle();

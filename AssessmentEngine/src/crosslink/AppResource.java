@@ -121,10 +121,11 @@ public class AppResource {
 				if (topics.containsKey(key)) {
 					dir.append(topics.get(key)); 
 				}
-				else
-					dir.append("test");
-				dir.append(File.separator);
 			}
+			else
+				dir.append("test");
+			dir.append(File.separator);
+
 		}
 		return dir.toString();
     }

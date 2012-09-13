@@ -433,7 +433,7 @@ public class Measures extends Data {
 	                Topic topic = null;
 	                if (topic == null) {
 	                	String thisTopicName = is.getTopic().get(i).getName();
-						topic = new Topic(topicID, thisTopicName);
+						topic = new Topic(topicID, thisTopicName, currentSourceLang);
 	                }
 	                if (convertToTextOffset) {
 	                    bytes = topic.getBytes();
