@@ -80,6 +80,7 @@
     	  <zip destfile="${release.file}">
     	  	<zipfileset dir="resultsets" prefix="resultsets">
 	  	  		<exclude name="test/A2BWikiManualResultSet*.xml"/>
+	  	  		<exclude name="test/A2FWikiGroundTruthResultSet-MA*.xml"/>
     	  	</zipfileset>
     	  	<zipfileset dir="resources" prefix="resources"/>
     	  	<zipfileset dir="lib" prefix="lib" />

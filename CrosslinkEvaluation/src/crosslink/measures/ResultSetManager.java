@@ -72,6 +72,7 @@ public class ResultSetManager {
 	
 	public void setResultSetPath() {
 //        String resultsetPath = ;
+		resultsetPath.setLength(0);
 //      
         resultsetPath.append(RESULTSET_PARENT_PATH  + File.separator);
         

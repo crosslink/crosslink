@@ -104,6 +104,8 @@ public class EvaluationUI3 extends JFrame {
         	jRBA2BManualrs.setEnabled(false);
         
         this.showTeamEmphasisGroup();
+        
+        setCrosslinkTask();
         // ------------------------------------------
 //        resultFilePath = getResultSetPath();
         // ------------------------------------------
@@ -373,20 +375,18 @@ public class EvaluationUI3 extends JFrame {
         evatablePanelLayout.setHorizontalGroup(
             evatablePanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(org.jdesktop.layout.GroupLayout.TRAILING, evatablePanelLayout.createSequentialGroup()
-                .addContainerGap(419, Short.MAX_VALUE)
+                .addContainerGap(425, Short.MAX_VALUE)
                 .add(fullevatableButton)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(evatablecleanallButton)
-                .addContainerGap())
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
+                .add(evatablecleanallButton))
             .add(org.jdesktop.layout.GroupLayout.TRAILING, evaTablePanelHolder, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 763, Short.MAX_VALUE)
         );
         evatablePanelLayout.setVerticalGroup(
             evatablePanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(org.jdesktop.layout.GroupLayout.TRAILING, evatablePanelLayout.createSequentialGroup()
-                .addContainerGap()
                 .add(evaTablePanelHolder, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 203, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(evatablePanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .add(evatablePanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(evatablecleanallButton)
                     .add(fullevatableButton))
                 .addContainerGap())
@@ -676,11 +676,11 @@ public class EvaluationUI3 extends JFrame {
                 .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
                     .add(org.jdesktop.layout.GroupLayout.LEADING, layout.createSequentialGroup()
                         .addContainerGap()
-                        .add(jPanel1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .add(openfilesPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .add(evatablePanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .add(org.jdesktop.layout.GroupLayout.LEADING, layout.createSequentialGroup()
                         .addContainerGap()
-                        .add(evatablePanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .add(jPanel1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .add(openfilesPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .add(layout.createSequentialGroup()
                         .addContainerGap()
                         .add(plotPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -1595,20 +1595,24 @@ public class EvaluationUI3 extends JFrame {
         runsXMLConvertors xmlConverter = new runsXMLConvertors(runsHashData);
     }
 
-    @org.jdesktop.application.Action
+        @org.jdesktop.application.Action
     public void setCrosslinkTask() {
 //        crosslink2MenuItem.se
         crosslink1MenuItem.setIcon(null);
         crosslink2MenuItem.setIcon(tickIcon);
         AppResource.crosslinkTask = AppResource.CROSSLINK_TASK_2;
+        
+        ResultSetManager.getInstance().setResultSetPath();
     }
 
-    @org.jdesktop.application.Action
+        @org.jdesktop.application.Action
     public void setCrosslinTask1() {
 //         crosslink1MenuItem.setIcon(resourceMap.getIcon("crosslink2MenuItem.icon")); // NOI18N
         crosslink2MenuItem.setIcon(null);
         crosslink1MenuItem.setIcon(tickIcon);
         AppResource.crosslinkTask = AppResource.CROSSLINK_TASK_1;
+        
+        ResultSetManager.getInstance().setResultSetPath();
     }
 
     @org.jdesktop.application.Action
