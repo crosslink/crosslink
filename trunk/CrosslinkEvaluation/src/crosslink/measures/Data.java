@@ -13,6 +13,7 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 
+import crosslink.AppResource;
 import crosslink.resultsetGenerator.LtwResultsetType;
 import crosslink.rungenerator.InexSubmission;
 
@@ -108,9 +109,12 @@ public class Data {
             InexSubmission is = (InexSubmission) ((um.unmarshal(runfiles)));
 
             currentSourceLang = is.getSourceLang();
-            if (currentSourceLang == null || currentSourceLang.length() == 0)
-            	throw new Exception(String.format("Incorrect run file - %s which dosen't provide the source language", runfiles.getAbsoluteFile()));
-            
+            if (currentSourceLang == null || currentSourceLang.length() == 0) {
+            	if (AppResource.crosslinkTask == AppResource.CROSSLINK_TASK_1)
+            		currentSourceLang = "en";
+            	else
+            		throw new Exception(String.format("Incorrect run file - %s which dosen't provide the source language", runfiles.getAbsoluteFile()));
+            }
             // default lang is the target lang
             currentTargetLang = is.getDefaultLang();
             if (currentTargetLang == null || currentTargetLang.length() == 0)

@@ -77,7 +77,7 @@ public class ResultSetManager {
         resultsetPath.append(RESULTSET_PARENT_PATH  + File.separator);
         
     	if (AppResource.crosslinkTask == AppResource.CROSSLINK_TASK_1) {
-    		resultsetPath.append("crosslink1");
+    		resultsetPath.append("crosslink1" + File.separator);
 	        String resultsetFormalPath = resultsetPath.toString() + "test";
 	        if (!new File(resultsetFormalPath).exists() || !useTestDataset)
 	        	resultsetPath.append("training");

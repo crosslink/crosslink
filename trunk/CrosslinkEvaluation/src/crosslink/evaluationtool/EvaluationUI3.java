@@ -72,7 +72,7 @@ public class EvaluationUI3 extends JFrame {
     
     private int linkDirection = Data.LINK_CJKE;
     
-    private boolean emphasizeTeam = true;
+    private boolean emphasizeTeam;
     private String emphasizeTeamName = "QUT";
     private org.jdesktop.application.ResourceMap resourceMap;
     private ImageIcon tickIcon;
@@ -104,7 +104,7 @@ public class EvaluationUI3 extends JFrame {
         	jRBA2BManualrs.setEnabled(false);
         
         this.showTeamEmphasisGroup();
-        
+
         setCrosslinkTask();
         // ------------------------------------------
 //        resultFilePath = getResultSetPath();
@@ -138,8 +138,8 @@ public class EvaluationUI3 extends JFrame {
 
         jRBA2BManualrs = new javax.swing.JRadioButton();
         uploadButton = new javax.swing.JButton();
-        jLabelTeamEmphasis = new javax.swing.JLabel();
         jComboBoxTeamList = new javax.swing.JComboBox();
+        cbHighlightTeam = new javax.swing.JCheckBox();
         runtablePanel = new javax.swing.JPanel();
         fullruntableButton = new javax.swing.JButton();
         runtablecleanallButton = new javax.swing.JButton();
@@ -266,9 +266,19 @@ public class EvaluationUI3 extends JFrame {
             }
         });
 
-        jLabelTeamEmphasis.setText("Choose the team you want emphasis on"); // NOI18N
+        jComboBoxTeamList.setEnabled(false);
+        jComboBoxTeamList.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBoxTeamListActionPerformed(evt);
+            }
+        });
 
-        jComboBoxTeamList.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cbHighlightTeam.setText("Hightlight Team ->");
+        cbHighlightTeam.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cbHighlightTeamActionPerformed(evt);
+            }
+        });
 
         org.jdesktop.layout.GroupLayout openfilesPanelLayout = new org.jdesktop.layout.GroupLayout(openfilesPanel);
         openfilesPanel.setLayout(openfilesPanelLayout);
@@ -280,14 +290,16 @@ public class EvaluationUI3 extends JFrame {
                     .add(jPanel6, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .add(openfilesPanelLayout.createSequentialGroup()
                         .add(openfilesPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(filedirectoryTextField, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 646, Short.MAX_VALUE)
+                            .add(openfilesPanelLayout.createSequentialGroup()
+                                .add(filedirectoryTextField, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 646, Short.MAX_VALUE)
+                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED))
                             .add(openfilesPanelLayout.createSequentialGroup()
                                 .add(filecleanButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 90, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                                 .add(18, 18, 18)
                                 .add(uploadButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 90, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                .add(96, 96, 96)
-                                .add(jLabelTeamEmphasis, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 346, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 265, Short.MAX_VALUE)
+                                .add(cbHighlightTeam)
+                                .add(33, 33, 33)))
                         .add(openfilesPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
                             .add(openfilesButton, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .add(jComboBoxTeamList, 0, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -305,8 +317,8 @@ public class EvaluationUI3 extends JFrame {
                 .add(6, 6, 6)
                 .add(openfilesPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
                     .add(openfilesPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                        .add(jLabelTeamEmphasis, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 19, Short.MAX_VALUE)
-                        .add(jComboBoxTeamList, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                        .add(jComboBoxTeamList, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .add(cbHighlightTeam))
                     .add(uploadButton, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .add(filecleanButton, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(6, Short.MAX_VALUE))
@@ -1018,6 +1030,7 @@ public class EvaluationUI3 extends JFrame {
         System.exit(0);
     }//GEN-LAST:event_exitMenuItemActionPerformed
     String currentOpenDir = null;
+	private String emphasisedTeamName;
     private void openfilesButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_openfilesButtonActionPerformed
 
         String newline = "\n";
@@ -1378,6 +1391,16 @@ public class EvaluationUI3 extends JFrame {
 	    linkDirection = Data.LINK_CJKE;
 	}//GEN-LAST:event_jRadioLinkDirectionAllActionPerformed
 
+private void cbHighlightTeamActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbHighlightTeamActionPerformed
+	emphasizeTeam = cbHighlightTeam.isSelected();
+
+    this.jComboBoxTeamList.setEnabled(this.emphasizeTeam && teamSet.size() > 0);
+}//GEN-LAST:event_cbHighlightTeamActionPerformed
+
+private void jComboBoxTeamListActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBoxTeamListActionPerformed
+    emphasisedTeamName = (String)jComboBoxTeamList.getSelectedItem(); 
+}//GEN-LAST:event_jComboBoxTeamListActionPerformed
+
     private ArrayList<String[]> retrieveRunData(File[] file) throws Exception {
 
         int runInfoColumnLength = 8;
@@ -1389,6 +1412,7 @@ public class EvaluationUI3 extends JFrame {
         String[] result = null;
         TopicType topicType = null;
         // String[] result = null;
+        teamSet.clear();
         for (int i = 0; i < file.length; i++) {
             
             try {
@@ -1480,6 +1504,9 @@ public class EvaluationUI3 extends JFrame {
             	ex.printStackTrace();
             }
         }
+        
+        showTeamEmphasisGroup();
+        
         return bigResult;
     }
 
@@ -1530,15 +1557,16 @@ public class EvaluationUI3 extends JFrame {
     }
     
     private void showTeamEmphasisGroup() {
-    	boolean b = false;
+//    	boolean b = false;
+        emphasizeTeam = this.cbHighlightTeam.isSelected();
+    	if (teamSet.size() > 0) {
+    		this.jComboBoxTeamList.removeAllItems();
+    		for (String teamId : teamSet)
+    			this.jComboBoxTeamList.addItem(teamId);
+    	}
     	
-//    	if (teamSet.size() > 0) {
-//    		for (String teamId : teamSet)
-//    			this.jComboBoxTeamList.addItem(teamId);
-//    	}
-    	
-    	this.jLabelTeamEmphasis.setVisible(b);
-    	this.jComboBoxTeamList.setVisible(b);
+//    	this.jLabelTeamEmphasis.setVisible(b);
+    	this.jComboBoxTeamList.setEnabled(this.emphasizeTeam & teamSet.size() > 0);//setVisible(b);
     }
 
     private static String StackTraceToString(JAXBException jaxbe) {
@@ -1628,6 +1656,7 @@ public class EvaluationUI3 extends JFrame {
     private javax.swing.ButtonGroup buttonGroupCrosslinkTaskMenu;
     private javax.swing.ButtonGroup buttonGroupLinkDirection;
     private javax.swing.JPanel calculationPanel1;
+    private javax.swing.JCheckBox cbHighlightTeam;
     private javax.swing.JMenuItem crosslink1MenuItem;
     private javax.swing.JMenuItem crosslink2MenuItem;
     private javax.swing.JMenu crosslinkTaskMenu;
@@ -1644,7 +1673,6 @@ public class EvaluationUI3 extends JFrame {
     private javax.swing.JButton fullruntableButton;
     private javax.swing.JButton getplotsButton;
     private javax.swing.JComboBox jComboBoxTeamList;
-    private javax.swing.JLabel jLabelTeamEmphasis;
     private javax.swing.JMenuItem jMenuItemDelete;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel6;
