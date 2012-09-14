@@ -3,6 +3,9 @@ package crosslink.util;
 import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Paint;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
 import java.util.Vector;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -10,6 +13,8 @@ import javax.swing.JScrollPane;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
+import org.jfree.chart.LegendItem;
+import org.jfree.chart.LegendItemCollection;
 import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.chart.plot.XYPlot;
 import org.jfree.chart.renderer.xy.XYLineAndShapeRenderer;
@@ -21,15 +26,57 @@ public class JChartDialog {
 
     private Vector<Object[]> plotDataSet = null;
     private String plotTitle = "";
+    
+    private HashMap<String, Double> runScores;
+    
+    public class SortedRunWithLMAP implements Comparable {
+    	
+    	String runName;
+    	double lmap;
+    	int index;
+    	
+		@Override
+		public int compareTo(Object o) {
+			SortedRunWithLMAP another = (SortedRunWithLMAP)o;
+			if (this.lmap > another.lmap)
+				return 1;
+			else if (this.lmap < another.lmap)
+				return -1;
+			return 0;
+		}
+    	
+    }
 
     public JChartDialog(java.awt.Frame parent, boolean modal,
-            String pTitle, Vector<Object[]> dataSet) {
+            String pTitle, Vector<Object[]> dataSet, HashMap<String, Double> runScores) {
 
         plotTitle = pTitle;
         plotDataSet = dataSet;
+        this.runScores = runScores;
 
         showPlotReport(plotTitle, plotDataSet);
 
+    }
+    
+    public LegendItemCollection sortLegendItems(LegendItemCollection legendItems) {
+    	LegendItemCollection sortedLegendItems = new LegendItemCollection();
+    	
+    	ArrayList<SortedRunWithLMAP> runs = new ArrayList<SortedRunWithLMAP>();
+    	for (int i = 0; i < legendItems.getItemCount(); ++i) {
+    		LegendItem item = legendItems.get(i);
+    		SortedRunWithLMAP run = new SortedRunWithLMAP();
+    		run.index = i;
+    		run.runName = item.getLabel();
+    		run.lmap = runScores.get(run.runName);
+    		runs.add(run);
+    	}
+    	Collections.sort(runs, Collections.reverseOrder());
+    	
+    	for (SortedRunWithLMAP run : runs) {
+    		LegendItem item = legendItems.get(run.index);
+    		sortedLegendItems.add(item);
+    	}
+		return sortedLegendItems; 	
     }
 
 //    public static void main(String[] args) {
@@ -45,6 +92,7 @@ public class JChartDialog {
                 xyData, PlotOrientation.VERTICAL, true, true, false);
 
         XYPlot pp = (XYPlot) jfc.getPlot();
+
         pp.setBackgroundPaint(Color.WHITE);
         XYLineAndShapeRenderer renderer = new XYLineAndShapeRenderer();
         for (int i = 0; i < dataSet.size(); i++) {
@@ -66,6 +114,11 @@ public class JChartDialog {
         }
         pp.setRenderer(renderer);
 
+        
+        if (this.runScores != null && runScores.size() > 0) {
+	        LegendItemCollection sortedLegendItems = this.sortLegendItems(pp.getLegendItems());      
+	        pp.setFixedLegendItems(sortedLegendItems);
+	    }
         // display a report in JPanel
 //        JPanel reportPanel = new ChartPanel(jfc);
         JPanel reportPanel = new toolTipChartPanel(jfc);
@@ -73,7 +126,7 @@ public class JChartDialog {
         JScrollPane scrollPane = new JScrollPane(reportPanel);
         // display the scroll pane in a frame
         JFrame frame = new JFrame();
-        frame.setTitle("Link-The-Wiki Evaluation Charts");
+        frame.setTitle("Crosslink Evaluation Charts");
         frame.getContentPane().add(scrollPane);
         
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
