@@ -78,6 +78,12 @@ public class EvaluationUI3 extends JFrame {
     private ImageIcon tickIcon;
     
     private HashSet<String> teamSet;
+    
+    private HashMap<String, Double> runScoresForSorting = new HashMap<String, Double>();
+    
+	private void setLinkDirection(int direction) {
+		this.linkDirection = direction;
+	}
 
     /** Creates new form EvaluationUI */
     public EvaluationUI3() {
@@ -593,18 +599,18 @@ public class EvaluationUI3 extends JFrame {
         buttonGroupLinkDirection.add(jRBEnglish2CJK);
         jRBEnglish2CJK.setText("English to CJK");
         jRBEnglish2CJK.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
-        jRBEnglish2CJK.addChangeListener(new javax.swing.event.ChangeListener() {
-            public void stateChanged(javax.swing.event.ChangeEvent evt) {
-                jRBEnglish2CJKStateChanged(evt);
+        jRBEnglish2CJK.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRBEnglish2CJKActionPerformed(evt);
             }
         });
 
         buttonGroupLinkDirection.add(jRBCJK2English);
         jRBCJK2English.setText("CJK to English");
         jRBCJK2English.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
-        jRBCJK2English.addChangeListener(new javax.swing.event.ChangeListener() {
-            public void stateChanged(javax.swing.event.ChangeEvent evt) {
-                jRBCJK2EnglishStateChanged(evt);
+        jRBCJK2English.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRBCJK2EnglishActionPerformed(evt);
             }
         });
 
@@ -875,7 +881,7 @@ public class EvaluationUI3 extends JFrame {
 
                 for (int j = 0; j < plotDatas.length; j++) {
                     Vector<Object[]> cool_data_points = (Vector<Object[]>) plotDatas[j];
-                    JChartDialog jplot = new JChartDialog(this, false, plotTitle[j], cool_data_points);
+                    JChartDialog jplot = new JChartDialog(this, false, plotTitle[j], cool_data_points, runScoresForSorting);
 
                     // Export Selected Row Data to .CSV
                     this.exportPlotDatatoCSV(plotTitle[j], cool_data_points);
@@ -1148,6 +1154,7 @@ public class EvaluationUI3 extends JFrame {
 //            resultFilePath = getResultSetPath();
 //            File resultFile = new File(resultFilePath);
             ArrayList<Object[]> result = new ArrayList<Object[]>();
+            runScoresForSorting.clear();
 
             boolean useAllTopics = false;
             boolean useFileToBep = false;
@@ -1299,9 +1306,18 @@ public class EvaluationUI3 extends JFrame {
 	                evaData[sortIndex] = sortColl.get(0);
 	                evaData[sortIndex][12] = Boolean.TRUE;
 
+                	String runName = (String)evaData[sortIndex][0];
+                	Double score = 0.0;
+                	try {
+                		score = (Double) key;
+                	}
+                	catch (Exception e1) {
+                		e1.printStackTrace();
+                	}
+                	runScoresForSorting.put(runName, score);
+                	
 	                boolean setColor = false;
 	                if (this.emphasizeTeam) {
-	                	String runName = (String)evaData[sortIndex][0];
 	                	if (runName.startsWith(this.emphasizeTeamName)) {
 	                		setColor = true;
 	                	}
@@ -1378,28 +1394,28 @@ public class EvaluationUI3 extends JFrame {
     private void jRadioLangAllActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioLangAllActionPerformed
         langSelected = Data.LANGUAGE_ALL;
     }//GEN-LAST:event_jRadioLangAllActionPerformed
-
-	private void jRBEnglish2CJKStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jRBEnglish2CJKStateChanged
-	    linkDirection = Data.ENGLISH_TO_CJK;
-	}//GEN-LAST:event_jRBEnglish2CJKStateChanged
-	
-	private void jRBCJK2EnglishStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jRBCJK2EnglishStateChanged
-	    linkDirection = Data.CJK_TO_ENGLISH;
-	}//GEN-LAST:event_jRBCJK2EnglishStateChanged
 	
 	private void jRadioLinkDirectionAllActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioLinkDirectionAllActionPerformed
-	    linkDirection = Data.LINK_CJKE;
+	    setLinkDirection(Data.LINK_CJKE);
 	}//GEN-LAST:event_jRadioLinkDirectionAllActionPerformed
 
-private void cbHighlightTeamActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbHighlightTeamActionPerformed
-	emphasizeTeam = cbHighlightTeam.isSelected();
-
-    this.jComboBoxTeamList.setEnabled(this.emphasizeTeam && teamSet.size() > 0);
-}//GEN-LAST:event_cbHighlightTeamActionPerformed
-
-private void jComboBoxTeamListActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBoxTeamListActionPerformed
-    emphasisedTeamName = (String)jComboBoxTeamList.getSelectedItem(); 
-}//GEN-LAST:event_jComboBoxTeamListActionPerformed
+	private void cbHighlightTeamActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbHighlightTeamActionPerformed
+		emphasizeTeam = cbHighlightTeam.isSelected();
+	
+	    this.jComboBoxTeamList.setEnabled(this.emphasizeTeam && teamSet.size() > 0);
+	}//GEN-LAST:event_cbHighlightTeamActionPerformed
+	
+	private void jComboBoxTeamListActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBoxTeamListActionPerformed
+	    emphasisedTeamName = (String)jComboBoxTeamList.getSelectedItem(); 
+	}//GEN-LAST:event_jComboBoxTeamListActionPerformed
+	
+	private void jRBCJK2EnglishActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRBCJK2EnglishActionPerformed
+	    setLinkDirection(Data.CJK_TO_ENGLISH);
+	}//GEN-LAST:event_jRBCJK2EnglishActionPerformed
+	
+	private void jRBEnglish2CJKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRBEnglish2CJKActionPerformed
+	    setLinkDirection(Data.ENGLISH_TO_CJK);
+	}//GEN-LAST:event_jRBEnglish2CJKActionPerformed
 
     private ArrayList<String[]> retrieveRunData(File[] file) throws Exception {
 
