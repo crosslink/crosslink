@@ -200,11 +200,12 @@ public final class fileToBepMeasures extends Measures {
 	        result.outgoing[metricsCalculation.R_MAP] = outgoingMAP;
 	        result.incomming[metricsCalculation.R_MAP] = incomingMAP;
 	        result.combination[metricsCalculation.R_MAP] = MAP;
+	        
 	
 	        // =====================================================================
 	        // Get R-Precision
             System.err.println("Calculating the R-Precision:");
-	        double[] oiRPrecs = getRPrecs(resultTable, runTable);
+	        double[] oiRPrecs = getRPrecs(tempRunID, resultTable, runTable);
 	        double AveoutgoingRPrec = oiRPrecs[0];
 	        double AveincomingRPrecs = oiRPrecs[1];
 	        double AveRPrecs = 0.0;
@@ -214,10 +215,12 @@ public final class fileToBepMeasures extends Measures {
 	        result.outgoing[metricsCalculation.R_RPREC] = AveoutgoingRPrec;
 	        result.incomming[metricsCalculation.R_RPREC] = AveincomingRPrecs;
 	        result.combination[metricsCalculation.R_RPREC] = AveRPrecs;
+	        
+	        
 	        // =====================================================================
 	        // Get Precision@
             System.err.println("Calculating the Precision @ N:");
-	        double[][] oiPrecsAT = getPrecsAT(resultTable, runTable);
+	        double[][] oiPrecsAT = getPrecsAT(tempRunID, resultTable, runTable);
 	        double[] AveoutgoingPrecsAt = {oiPrecsAT[0][0], oiPrecsAT[0][1], oiPrecsAT[0][2], oiPrecsAT[0][3], oiPrecsAT[0][4], oiPrecsAT[0][5]};
 	        double[] AveincomingPrecsAt = {oiPrecsAT[1][0], oiPrecsAT[1][1], oiPrecsAT[1][2], oiPrecsAT[1][3], oiPrecsAT[1][4], oiPrecsAT[1][5]};
 	        for (int i = 0; i < 6; i++) {
@@ -558,7 +561,9 @@ public final class fileToBepMeasures extends Measures {
             }
         }   // End of Looping All Topics
 
+        Data.runTopicScores.get(Data.MEASURE_LMAP).put(tempRunId, topicScores);
         outputTopicScore(topicScores);
+        
         // =====================================================================
         // The submission run may only contains a certain number of Topics (NOT all Topics in there)
         // case1: using All Topics by dividing by all ResultSet Topics
@@ -573,7 +578,7 @@ public final class fileToBepMeasures extends Measures {
         return oimap;
     }
 
-    private static double[] getRPrecs(Hashtable resultTable, Hashtable runTable) {
+    private static double[] getRPrecs(String tempRunID, Hashtable resultTable, Hashtable runTable) {
         double[] oirprecs = new double[2];
         double outgoingRPrecs = 0.0;
         double incomingRPrecs = 0.0;
@@ -822,6 +827,7 @@ public final class fileToBepMeasures extends Measures {
             // =================================================================
         }
         
+        Data.runTopicScores.get(Data.MEASURE_R_PREC).put(tempRunID, topicScores);
         outputTopicScore(topicScores);
 
         if (isUseAllTopics) {
@@ -835,7 +841,7 @@ public final class fileToBepMeasures extends Measures {
         return oirprecs;
     }
 
-    private static double[][] getPrecsAT(Hashtable resultTable, Hashtable runTable) {
+    private static double[][] getPrecsAT(String tempRunID, Hashtable resultTable, Hashtable runTable) {
         // Declare [2]: as Outgoing & Incoming
         // Declare [2]: as AT levels: 5, 10, 20, 30, 50, 250
         // Precision@: ONLY Caculate Precision value at the @5, 10, 20, 30, 50, 250 values
@@ -1359,6 +1365,7 @@ public final class fileToBepMeasures extends Measures {
         
         System.err.println("P@5 scores:");
         outputTopicScore(topicScores);
+        Data.runTopicScores.get(Data.MEASURE_P_AT_5).put(tempRunID, topicScores);
 
         if (isUseAllTopics) {
             // Outgoing

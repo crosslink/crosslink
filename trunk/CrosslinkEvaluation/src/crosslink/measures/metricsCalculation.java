@@ -57,6 +57,7 @@ public final class metricsCalculation extends Data {
         public double[] incomming = new double[metricsCalculation.COL_NUM];
         public double[] outgoing = new double[metricsCalculation.COL_NUM];
         public double[] combination = new double[metricsCalculation.COL_NUM];
+		public String teamId;
     }
 
     public static EvaluationResult calculate(/*File resultfiles, */File runfiles, boolean isAllTopics, boolean useFileToBep, boolean useAnchorToFile, boolean useAnchorToBEP, int lang, int linkDirection) throws Exception {
@@ -83,6 +84,7 @@ public final class metricsCalculation extends Data {
 	            resultTable = getResultSetLinks(); //getResultSet(resultfiles);
 	
 	            result.runId = runId;
+	            result.teamId = teamId;
 	            // =================================================================
 	            String tempRunID = result.runId;
 	            // =================================================================
@@ -109,10 +111,12 @@ public final class metricsCalculation extends Data {
 	            result.incomming[metricsCalculation.R_MAP] = incomingMAP;
 	            result.combination[metricsCalculation.R_MAP] = MAP;
 	            // </editor-fold>
+	            
+	            
 	            // =====================================================================
 	            // Get R-Precision
 	            System.err.println("Calculating the R-Precision:");
-	            double[] oiRPrecs = getOutInRPrecs(resultTable, runTable);
+	            double[] oiRPrecs = getOutInRPrecs(tempRunID, resultTable, runTable);
 	            double AveoutgoingRPrec = oiRPrecs[0];
 	            double AveincomingRPrecs = oiRPrecs[1];
 	            double AveRPrecs = 0.0;
@@ -122,10 +126,12 @@ public final class metricsCalculation extends Data {
 	            result.outgoing[metricsCalculation.R_RPREC] = AveoutgoingRPrec;
 	            result.incomming[metricsCalculation.R_RPREC] = AveincomingRPrecs;
 	            result.combination[metricsCalculation.R_RPREC] = AveRPrecs;
+	            
+	            
 	            // =====================================================================
 	            // Get Precision@
 	            System.err.println("Calculating the Precision @ N:");
-	            double[][] oiPrecsAT = getOutInPrecsAT(resultTable, runTable);
+	            double[][] oiPrecsAT = getOutInPrecsAT(tempRunID, resultTable, runTable);
 	            double[] AveoutgoingPrecsAt = {oiPrecsAT[0][0], oiPrecsAT[0][1], oiPrecsAT[0][2], oiPrecsAT[0][3], oiPrecsAT[0][4], oiPrecsAT[0][5]};
 	            double[] AveincomingPrecsAt = {oiPrecsAT[1][0], oiPrecsAT[1][1], oiPrecsAT[1][2], oiPrecsAT[1][3], oiPrecsAT[1][4], oiPrecsAT[1][5]};
 	            for (int i = 0; i < 6; i++) {
@@ -257,6 +263,7 @@ public final class metricsCalculation extends Data {
                 incomingAPs += aTopicAvePrecision;
             }
         }
+        Data.runTopicScores.get(Data.MEASURE_LMAP).put(tempRunId, averagePrecision);
         
         if (isUseAllTopics) {
 //            oimap[0] = (double) outgoingAPs / (resultTable.size() / 2);
@@ -270,7 +277,7 @@ public final class metricsCalculation extends Data {
         return oimap;
     }
 
-    private static double[] getOutInRPrecs(Hashtable resultTable, Hashtable runTable) {
+    private static double[] getOutInRPrecs(String tempRunId, Hashtable resultTable, Hashtable runTable) {
         double[] oirprecs = new double[2];
         double outgoingRPrecs = 0.0;
         double incomingRPrecs = 0.0;
@@ -373,6 +380,7 @@ public final class metricsCalculation extends Data {
             }
             // =================================================================
         }   // End of Loop all Topics
+        Data.runTopicScores.get(Data.MEASURE_R_PREC).put(tempRunId, topicScores);
         
         outputTopicScore(topicScores);
         
@@ -386,7 +394,7 @@ public final class metricsCalculation extends Data {
         return oirprecs;
     }
 
-    private static double[][] getOutInPrecsAT(Hashtable resultTable, Hashtable runTable) {
+    private static double[][] getOutInPrecsAT(String tempRunId, Hashtable resultTable, Hashtable runTable) {
         // Declare [2]: as Outgoing & Incoming
         // Declare [2]: as AT levels: 5, 10, 20, 30, 50, 250
         // Precision@: ONLY Caculate Precision value at the @5, 10, 20, 30, 50, 250 values
@@ -687,6 +695,8 @@ public final class metricsCalculation extends Data {
                 }
             }
         }
+        
+        Data.runTopicScores.get(Data.MEASURE_P_AT_5).put(tempRunId, precisionAt5);
 
         if (isUseAllTopics) { 	
             // Outgoing
