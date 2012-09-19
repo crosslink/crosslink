@@ -9,6 +9,11 @@ public class TopicScore {
 		this.score = score;
 	}
 	
+	public TopicScore(String topicId) {
+		this.topicId = topicId;
+		score = 0.0;
+	}
+
 	/**
 	 * @return the topicId
 			 */

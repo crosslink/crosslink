@@ -1441,7 +1441,7 @@ public class EvaluationUI3 extends JFrame {
                     String currentSourceLang = bt.getSourceLang();
                     if (currentSourceLang == null || currentSourceLang.length() == 0) {
                     	if (AppResource.isCrosslink2())
-                    		throw new Exception(String.format("Incorrect run file - %s which dosen't provide the source language", file[i]));
+                    		throw new Exception(String.format("Incorrect run file - %s which dosen't provide the source language, do you what to evaluate it with crosslink 1 data?\n To do so, select Crosslink 1 item on the Crosslink Task menu", file[i]));
                     	else
                     		currentSourceLang = "en";
                     }

@@ -83,6 +83,17 @@ public class Data {
 //        return resultTable;
     }
     
+    protected static void outputTopicScore(ArrayList<TopicScore> table) {
+    	for (TopicScore score : table)
+    		System.err.print(score.getTopicId() + ", ");
+		System.err.println();
+    			
+    	for (TopicScore score : table) {
+    		System.err.print(score.getScore() + ", ");
+    	}
+    	System.err.println();
+    }
+    
     protected static double average(ArrayList<TopicScore> table, int dividedBy) {
     	double sum = 0.0;
 
