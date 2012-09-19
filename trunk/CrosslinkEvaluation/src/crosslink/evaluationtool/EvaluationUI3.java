@@ -8,6 +8,7 @@ package crosslink.evaluationtool;
 import crosslink.AppResource;
 import crosslink.measures.Data;
 import crosslink.measures.ResultSetManager;
+import crosslink.measures.RunTopicScore;
 import crosslink.measures.TopicScore;
 
 import java.awt.Color;
@@ -904,10 +905,10 @@ public class EvaluationUI3 extends JFrame {
 //    	HashMap<Integer, String> topicOrder = null; //new HashMap<String, Integer>();
     	
     	while (it.hasNext()) {
-    		Entry<String, HashMap<String, ArrayList<TopicScore>>> entry = (Entry<String, HashMap<String, ArrayList<TopicScore>>>) it.next();
+    		Entry<String, ArrayList<RunTopicScore>> entry = (Entry<String, ArrayList<RunTopicScore>>) it.next();
     		String measure = entry.getKey();
             String pdFileName = measure + ".CSV";
-            HashMap<String, ArrayList<TopicScore>> runScores = entry.getValue();
+            ArrayList<RunTopicScore> runScores = entry.getValue();
             
 //            if (topicOrder == null) {
 //            	topicOrder = new HashMap<Integer, String>();
@@ -925,7 +926,24 @@ public class EvaluationUI3 extends JFrame {
 	            BufferedWriter bw = new BufferedWriter(new FileWriter(csvFile, true));
 	            PrintWriter pw = new PrintWriter(bw);
 	            
-
+	            Collections.sort(runScores);
+	            
+	            for (int i = 0; i < runScores.size(); ++i) {
+	            	RunTopicScore runTopicScore = runScores.get(i);
+	            	String team;
+	            	try {
+	            		team = runTopicScore.getRunId().split("_")[0];
+	            	}
+	            	catch (Exception e) {
+	            		team = runTopicScore.getRunId();
+	            	}
+	            	
+	            	pw.print(team);
+	            	for (TopicScore topicScore : runTopicScore.getTopicScores()) {
+	            		pw.print("," + topicScore.getScore());
+	            	}
+	            	pw.println("");
+	            }
 	            
 	            pw.close();
             }
@@ -1405,6 +1423,8 @@ public class EvaluationUI3 extends JFrame {
             ex.printStackTrace();
 //            JOptionPane.showMessageDialog(this, ex.toString(), "Exception Board", JOptionPane.ERROR_MESSAGE);
         }
+        
+        exportDataForTtest();
     }
 
     private void uploadButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_filecleanButton1ActionPerformed

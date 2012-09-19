@@ -263,7 +263,7 @@ public final class metricsCalculation extends Data {
                 incomingAPs += aTopicAvePrecision;
             }
         }
-        Data.runTopicScores.get(Data.MEASURE_LMAP).put(tempRunId, averagePrecision);
+//        Data.runTopicScores.get(Data.MEASURE_LMAP).put(tempRunId, averagePrecision);
         
         if (isUseAllTopics) {
 //            oimap[0] = (double) outgoingAPs / (resultTable.size() / 2);
@@ -274,6 +274,11 @@ public final class metricsCalculation extends Data {
         	oimap[0] = average(averagePrecision, runTable.size() / 2);
             oimap[1] = (double) incomingAPs / (runTable.size() / 2);
         }
+        
+        RunTopicScore runTopicScore = new RunTopicScore(tempRunId, oimap[0]);
+        runTopicScore.setTopicScores(averagePrecision);
+        
+        Data.runTopicScores.get(Data.MEASURE_LMAP).add(runTopicScore);
         return oimap;
     }
 
@@ -380,7 +385,7 @@ public final class metricsCalculation extends Data {
             }
             // =================================================================
         }   // End of Loop all Topics
-        Data.runTopicScores.get(Data.MEASURE_R_PREC).put(tempRunId, topicScores);
+//        Data.runTopicScores.get(Data.MEASURE_R_PREC).put(tempRunId, topicScores);
         
         outputTopicScore(topicScores);
         
@@ -391,6 +396,11 @@ public final class metricsCalculation extends Data {
             oirprecs[0] = (double) outgoingRPrecs / (runTable.size() / 2);
             oirprecs[1] = (double) incomingRPrecs / (runTable.size() / 2);
         }
+        
+        RunTopicScore runTopicScore = new RunTopicScore(tempRunId, oirprecs[0]);
+        runTopicScore.setTopicScores(topicScores);
+        
+        Data.runTopicScores.get(Data.MEASURE_R_PREC).add(runTopicScore);
         return oirprecs;
     }
 
@@ -696,7 +706,7 @@ public final class metricsCalculation extends Data {
             }
         }
         
-        Data.runTopicScores.get(Data.MEASURE_P_AT_5).put(tempRunId, precisionAt5);
+//        Data.runTopicScores.get(Data.MEASURE_P_AT_5).put(tempRunId, precisionAt5);
 
         if (isUseAllTopics) { 	
             // Outgoing
@@ -736,6 +746,10 @@ public final class metricsCalculation extends Data {
             oiprecsat[1][5] = (double) incomingPrecsAt[5] / (runTable.size() / 2);
         }
 
+        RunTopicScore runTopicScore = new RunTopicScore(tempRunId, oiprecsat[0][0]);
+        runTopicScore.setTopicScores(precisionAt5);
+        
+        Data.runTopicScores.get(Data.MEASURE_P_AT_5).add(runTopicScore);
         return oiprecsat;
     }
 }
