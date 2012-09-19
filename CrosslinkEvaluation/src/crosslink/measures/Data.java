@@ -66,7 +66,7 @@ public class Data {
     
     private static int[] pAtN = null; 
     
-    public static HashMap<String, HashMap<String, ArrayList<TopicScore>>> runTopicScores;
+    public static HashMap<String, ArrayList<RunTopicScore>> runTopicScores;
     
     static {
 		langMatchMap.put("zh", LANGUAGE_CHINESE);
@@ -232,10 +232,10 @@ public class Data {
     }
 
     public static void initRunTopicScores() {
-    	runTopicScores = new HashMap<String, HashMap<String, ArrayList<TopicScore>>>();
-    	runTopicScores.put(Data.MEASURE_LMAP, new HashMap<String, ArrayList<TopicScore>>());
-    	runTopicScores.put(Data.MEASURE_P_AT_5, new HashMap<String, ArrayList<TopicScore>>());
-    	runTopicScores.put(Data.MEASURE_R_PREC, new HashMap<String, ArrayList<TopicScore>>());
+    	runTopicScores = new HashMap<String, ArrayList<RunTopicScore>>();
+    	runTopicScores.put(Data.MEASURE_LMAP, new ArrayList<RunTopicScore>());
+    	runTopicScores.put(Data.MEASURE_P_AT_5, new ArrayList<RunTopicScore>());
+    	runTopicScores.put(Data.MEASURE_R_PREC, new ArrayList<RunTopicScore>());
     }
     
 	public static int[] getpAtN() {

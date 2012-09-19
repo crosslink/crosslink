@@ -561,7 +561,6 @@ public final class fileToBepMeasures extends Measures {
             }
         }   // End of Looping All Topics
 
-        Data.runTopicScores.get(Data.MEASURE_LMAP).put(tempRunId, topicScores);
         outputTopicScore(topicScores);
         
         // =====================================================================
@@ -575,6 +574,10 @@ public final class fileToBepMeasures extends Measures {
             oimap[0] = (double) outgoingAPs / (runTable.size() / 2);
             oimap[1] = (double) incomingAPs / (runTable.size() / 2);
         }
+        RunTopicScore runTopicScore = new RunTopicScore(tempRunId, oimap[0]);
+        runTopicScore.setTopicScores(topicScores);
+        
+        Data.runTopicScores.get(Data.MEASURE_LMAP).add(runTopicScore);
         return oimap;
     }
 
@@ -827,7 +830,7 @@ public final class fileToBepMeasures extends Measures {
             // =================================================================
         }
         
-        Data.runTopicScores.get(Data.MEASURE_R_PREC).put(tempRunID, topicScores);
+//        Data.runTopicScores.get(Data.MEASURE_R_PREC).put(tempRunID, topicScores);
         outputTopicScore(topicScores);
 
         if (isUseAllTopics) {
@@ -838,6 +841,10 @@ public final class fileToBepMeasures extends Measures {
             oirprecs[1] = (double) incomingRPrecs / (runTable.size() / 2);
         }
 
+        RunTopicScore runTopicScore = new RunTopicScore(tempRunID, oirprecs[0]);
+        runTopicScore.setTopicScores(topicScores);
+        
+        Data.runTopicScores.get(Data.MEASURE_R_PREC).add(runTopicScore);
         return oirprecs;
     }
 
@@ -1365,7 +1372,7 @@ public final class fileToBepMeasures extends Measures {
         
         System.err.println("P@5 scores:");
         outputTopicScore(topicScores);
-        Data.runTopicScores.get(Data.MEASURE_P_AT_5).put(tempRunID, topicScores);
+//        Data.runTopicScores.get(Data.MEASURE_P_AT_5).put(tempRunID, topicScores);
 
         if (isUseAllTopics) {
             // Outgoing
@@ -1399,6 +1406,10 @@ public final class fileToBepMeasures extends Measures {
             oiprecsat[1][5] = (double) incomingPrecsAt[5] / (runTable.size() / 2);
         }
 
+        RunTopicScore runTopicScore = new RunTopicScore(tempRunID, oiprecsat[0][0]);
+        runTopicScore.setTopicScores(topicScores);
+        
+        Data.runTopicScores.get(Data.MEASURE_P_AT_5).add(runTopicScore);
         return oiprecsat;
     }
 }
