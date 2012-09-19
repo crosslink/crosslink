@@ -34,6 +34,7 @@ public class Data {
     public static Map<String, Integer> langMatchMap = new HashMap<String, Integer>();
     
     protected static String runId = "";
+	protected static String teamId;
     
     protected static String currentSourceLang = null;
     protected static String currentTargetLang = null;
@@ -49,6 +50,11 @@ public class Data {
     protected static boolean isAnchorGToFile = false;
     protected static boolean isAnchorGToBEP = false;
     
+    
+    public static final String MEASURE_LMAP = "LMAP";
+    public static final String MEASURE_P_AT_5 = "p@5";
+    public static final String MEASURE_R_PREC = "R-PREC";
+    
     // -------------------------------------------------------------------------
     // fro anchor to bep evaluation using manual assessment result
 //    protected static int[] pAtValue = {5, 10, 20, 30, 50, 250};
@@ -59,6 +65,8 @@ public class Data {
     public final static int[] pAtValue_A2F = {5, 10, 20, 30, 50, 250};
     
     private static int[] pAtN = null; 
+    
+    public static HashMap<String, HashMap<String, ArrayList<TopicScore>>> runTopicScores;
     
     static {
 		langMatchMap.put("zh", LANGUAGE_CHINESE);
@@ -136,6 +144,8 @@ public class Data {
             if ((langMatchMap.get(currentTargetLang) & lang) > 0 && (linkDirection & thisRunLinkDirection) > 0) {
             	runTable = new Hashtable();
 	            runId = is.getRunId();
+	            teamId = is.getParticipantId();
+	            
 	            for (int i = 0; i < is.getTopic().size(); i++) {
 	
 	//                int endP = is.getTopic().get(i).getFile().toLowerCase().indexOf(".xml");
@@ -221,6 +231,13 @@ public class Data {
         return runTable;
     }
 
+    public static void initRunTopicScores() {
+    	runTopicScores = new HashMap<String, HashMap<String, ArrayList<TopicScore>>>();
+    	runTopicScores.put(Data.MEASURE_LMAP, new HashMap<String, ArrayList<TopicScore>>());
+    	runTopicScores.put(Data.MEASURE_P_AT_5, new HashMap<String, ArrayList<TopicScore>>());
+    	runTopicScores.put(Data.MEASURE_R_PREC, new HashMap<String, ArrayList<TopicScore>>());
+    }
+    
 	public static int[] getpAtN() {
 		return pAtN;
 	}

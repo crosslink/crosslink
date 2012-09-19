@@ -8,12 +8,15 @@ package crosslink.evaluationtool;
 import crosslink.AppResource;
 import crosslink.measures.Data;
 import crosslink.measures.ResultSetManager;
+import crosslink.measures.TopicScore;
+
 import java.awt.Color;
 import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.*;
+import java.util.Map.Entry;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.*;
@@ -895,6 +898,44 @@ public class EvaluationUI3 extends JFrame {
    
     }//GEN-LAST:event_getplotsButtonActionPerformed
 
+    void exportDataForTtest() {
+    	Set set = Data.runTopicScores.entrySet();
+    	Iterator it = set.iterator();
+//    	HashMap<Integer, String> topicOrder = null; //new HashMap<String, Integer>();
+    	
+    	while (it.hasNext()) {
+    		Entry<String, HashMap<String, ArrayList<TopicScore>>> entry = (Entry<String, HashMap<String, ArrayList<TopicScore>>>) it.next();
+    		String measure = entry.getKey();
+            String pdFileName = measure + ".CSV";
+            HashMap<String, ArrayList<TopicScore>> runScores = entry.getValue();
+            
+//            if (topicOrder == null) {
+//            	topicOrder = new HashMap<Integer, String>();
+//            	ArrayList<TopicScore> topics = (ArrayList<TopicScore>) runScores.values().toArray()[0];
+//            	int k = 0;
+//            	System.err.println(measure + " order: ");
+//            	for (String key : keySet) {
+//            		topicOrder.put(k++, key);
+//            		System.err.print(key + ",");
+//            	}
+//            	System.err.println();
+//            }
+            try {
+	            File csvFile = new File(pdFileName);
+	            BufferedWriter bw = new BufferedWriter(new FileWriter(csvFile, true));
+	            PrintWriter pw = new PrintWriter(bw);
+	            
+
+	            
+	            pw.close();
+            }
+            catch (Exception exc) {
+                System.out.println("Error While Exporting Measure Data to CSV file: /n" + exc.toString());
+            }
+    	}
+
+    }
+    
     void exportPlotDatatoCSV(String plotType, Vector<Object[]> cool_data_points) {
         try {
             String pdFileName = plotType.substring(plotType.indexOf(":") + 1) + this.getNowTime("MMddmmss") + ".CSV";
@@ -1153,6 +1194,8 @@ public class EvaluationUI3 extends JFrame {
         try {
 //            resultFilePath = getResultSetPath();
 //            File resultFile = new File(resultFilePath);
+        	Data.initRunTopicScores();
+        	
             ArrayList<Object[]> result = new ArrayList<Object[]>();
             runScoresForSorting.clear();
 
