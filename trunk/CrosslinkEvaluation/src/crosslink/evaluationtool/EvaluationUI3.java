@@ -923,7 +923,7 @@ public class EvaluationUI3 extends JFrame {
 //            }
             try {
 	            File csvFile = new File(pdFileName);
-	            BufferedWriter bw = new BufferedWriter(new FileWriter(csvFile, true));
+	            BufferedWriter bw = new BufferedWriter(new FileWriter(csvFile, false));
 	            PrintWriter pw = new PrintWriter(bw);
 	            
 	            Collections.sort(runScores);
