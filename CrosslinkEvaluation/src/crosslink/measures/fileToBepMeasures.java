@@ -177,8 +177,12 @@ public final class fileToBepMeasures extends Measures {
 	        result.runId = runId;
 	
 	        String tempRunID = result.runId;
+            System.err.println("================================================================================");
+            System.err.println("==================  Doing calculation for " + tempRunID);
+            System.err.println("================================================================================");
 	        // =====================================================================
 	        // Get MAP
+            System.err.println("Calculating the Link Mean Average Precision:");
 	        double[] oiMAP = getMAP(tempRunID, resultTable, runTable);
 	
 	        double outgoingMAP = oiMAP[0];
@@ -199,6 +203,7 @@ public final class fileToBepMeasures extends Measures {
 	
 	        // =====================================================================
 	        // Get R-Precision
+            System.err.println("Calculating the R-Precision:");
 	        double[] oiRPrecs = getRPrecs(resultTable, runTable);
 	        double AveoutgoingRPrec = oiRPrecs[0];
 	        double AveincomingRPrecs = oiRPrecs[1];
@@ -211,6 +216,7 @@ public final class fileToBepMeasures extends Measures {
 	        result.combination[metricsCalculation.R_RPREC] = AveRPrecs;
 	        // =====================================================================
 	        // Get Precision@
+            System.err.println("Calculating the Precision @ N:");
 	        double[][] oiPrecsAT = getPrecsAT(resultTable, runTable);
 	        double[] AveoutgoingPrecsAt = {oiPrecsAT[0][0], oiPrecsAT[0][1], oiPrecsAT[0][2], oiPrecsAT[0][3], oiPrecsAT[0][4], oiPrecsAT[0][5]};
 	        double[] AveincomingPrecsAt = {oiPrecsAT[1][0], oiPrecsAT[1][1], oiPrecsAT[1][2], oiPrecsAT[1][3], oiPrecsAT[1][4], oiPrecsAT[1][5]};
@@ -241,7 +247,7 @@ public final class fileToBepMeasures extends Measures {
         double aTopicAvePrecision = 0.0;
         double outgoingAPs = 0.0;
         double incomingAPs = 0.0;
-
+        ArrayList<TopicScore> topicScores = new ArrayList<TopicScore>();
         // =============================================================
         Hashtable outgoingHt = new Hashtable();
         Hashtable incomingHt = new Hashtable();
@@ -251,7 +257,7 @@ public final class fileToBepMeasures extends Measures {
             int ffmCount = 0;
             double anchorScore = 0.0;
             String key = e.nextElement().toString();
-            log("Topic: " + key);
+//            log("Topic: " + key);
 //            if (key.contains("22156522"))
 //            	System.err.println("Got you");
             // get RUN (incoming or outgoing) links array for each Topic
@@ -270,6 +276,7 @@ public final class fileToBepMeasures extends Measures {
             //    runIndexV: that stores All Anchor pairs (aOffset_aLength)
             //    runHT: that stores All BEP pairs for each AnchorIndex (aOffset_aLength, Vector<bFileID_bOffset>)
             //           eliminate All duplicate Data
+            String topicId = key.substring(0, key.indexOf("_"));
             if (isAnchorGToFile || isAnchorGToBEP) {
                 if (key.endsWith("Outgoing_Links")) {
                 	init(runValues, resultSet);
@@ -543,12 +550,15 @@ public final class fileToBepMeasures extends Measures {
 
             // Add "aTopicAvePrecision" to related APs
             if (key.endsWith(outgoingTag)) {
+            	TopicScore score = new TopicScore(topicId, aTopicAvePrecision); 
+                topicScores.add(score);
                 outgoingAPs += aTopicAvePrecision;
             } else if (key.endsWith(incomingTag)) {
                 incomingAPs += aTopicAvePrecision;
             }
         }   // End of Looping All Topics
 
+        outputTopicScore(topicScores);
         // =====================================================================
         // The submission run may only contains a certain number of Topics (NOT all Topics in there)
         // case1: using All Topics by dividing by all ResultSet Topics
@@ -569,6 +579,8 @@ public final class fileToBepMeasures extends Measures {
         double incomingRPrecs = 0.0;
 
         // Loop all submitted run Topics
+        ArrayList<TopicScore> topicScores = new ArrayList<TopicScore>();
+        
         for (Enumeration e = runTable.keys(); e.hasMoreElements();) {
             double anchorScore = 0.0;
             String key = e.nextElement().toString();
@@ -585,6 +597,7 @@ public final class fileToBepMeasures extends Measures {
 //            int rsAnchorNoPerTopic = 0;
 //
 //            Vector runIndexV = new Vector();
+            String topicId = key.substring(0, key.indexOf("_"));
             if (isAnchorGToFile || isAnchorGToBEP) {
                 if (key.endsWith("Outgoing_Links")) {
                 	init(runValues, resultSet);
@@ -739,7 +752,8 @@ public final class fileToBepMeasures extends Measures {
                         incomingRPrecs += 0;
                     }
 
-                } else {
+                }
+                else {
                     // File-To-BEP without Grouping
                     // Get non-duplicate items =====================================
                     if (key.endsWith(outgoingTag)) {
@@ -800,10 +814,15 @@ public final class fileToBepMeasures extends Measures {
                         incomingRPrecs += 0;
                     }
                 }
+                
+                TopicScore topicScore = new TopicScore(topicId, outgoingRPrecs);
+                topicScores.add(topicScore);
             }
 
             // =================================================================
         }
+        
+        outputTopicScore(topicScores);
 
         if (isUseAllTopics) {
             oirprecs[0] = (double) outgoingRPrecs / (resultTable.size() / 2);
@@ -829,7 +848,9 @@ public final class fileToBepMeasures extends Measures {
         double[][] oiprecsat = new double[2][recallDegree];
         double[] outgoingPrecsAt = new double[recallDegree];
         double[] incomingPrecsAt = new double[recallDegree];
-
+        
+        ArrayList<TopicScore> topicScores = new ArrayList<TopicScore>();
+        
         for (Enumeration e = runTable.keys(); e.hasMoreElements();) {
             double mCount = 0.;
             double anchorScore = 0.0;
@@ -847,6 +868,7 @@ public final class fileToBepMeasures extends Measures {
 //            int rsAnchorNoPerTopic = 0;
 //            Hashtable<String, Vector> runHT = new Hashtable<String, Vector>();
 //            Vector runIndexV = new Vector();
+            String topicId = key.substring(0, key.indexOf("_"));
             if (isAnchorGToFile || isAnchorGToBEP) {
                 if (key.endsWith("Outgoing_Links")) {
                 	init(runValues, resultSet);
@@ -855,10 +877,12 @@ public final class fileToBepMeasures extends Measures {
             }
             // =================================================================
 
-
+            TopicScore topicScore = new TopicScore(topicId);
+            
             if (runValues.length == 1 && runValues[0].equalsIgnoreCase("")) {
                 if (resultSet.length == 1 && resultSet[0].equalsIgnoreCase("")) {
                     if (key.endsWith(outgoingTag)) {
+                    	topicScore.setScore(1.0);
                         outgoingPrecsAt[0] += 1.0;
                         outgoingPrecsAt[1] += 1.0;
                         outgoingPrecsAt[2] += 1.0;
@@ -875,6 +899,7 @@ public final class fileToBepMeasures extends Measures {
                     }
                 } else {
                     if (key.endsWith(outgoingTag)) {
+                    	topicScore.setScore(0.0);
                         outgoingPrecsAt[0] += 0;
                         outgoingPrecsAt[1] += 0;
                         outgoingPrecsAt[2] += 0;
@@ -908,6 +933,7 @@ public final class fileToBepMeasures extends Measures {
                             int runAEndPoint = Integer.valueOf(runAnchorOL[0]) + Integer.valueOf(runAnchorOL[1]);
 
                             Vector resultBeps = resultLinks.get(runAnchorSet);
+                            
                             if (resultBeps != null) {
 	                            // Loop each BEP link in an Anchor
 	                            boolean isMatched = false;
@@ -1004,6 +1030,7 @@ public final class fileToBepMeasures extends Measures {
                             // ONLY Calculate Precision @5, 10, 20, 30, 50, 250
                             if (runIndexV.size() <= pAtN[0]) {
                                 if ((i + 1) == runIndexV.size()) {
+                                	topicScore.setScore(topicScore.getScore() + (double) anchorScore / pAtN[0]);
                                     outgoingPrecsAt[0] += (double) anchorScore / pAtN[0];
                                     outgoingPrecsAt[1] += (double) anchorScore / pAtN[1];
                                     outgoingPrecsAt[2] += (double) anchorScore / pAtN[2];
@@ -1025,6 +1052,7 @@ public final class fileToBepMeasures extends Measures {
                                 }
                             } else if (runIndexV.size() <= pAtN[2]) {
                                 if ((i + 1) == pAtN[0]) {
+                                	topicScore.setScore(topicScore.getScore() + (double) anchorScore / (i + 1));
                                     outgoingPrecsAt[0] += (double) anchorScore / (i + 1);
                                 } else if ((i + 1) == pAtN[1]) {
                                     outgoingPrecsAt[1] += (double) anchorScore / (i + 1);
@@ -1036,6 +1064,7 @@ public final class fileToBepMeasures extends Measures {
                                 }
                             } else if (runIndexV.size() <= pAtN[3]) {
                                 if ((i + 1) == pAtN[0]) {
+                                	topicScore.setScore(topicScore.getScore() + (double) anchorScore / (i + 1));
                                     outgoingPrecsAt[0] += (double) anchorScore / (i + 1);
                                 } else if ((i + 1) == pAtN[1]) {
                                     outgoingPrecsAt[1] += (double) anchorScore / (i + 1);
@@ -1048,6 +1077,7 @@ public final class fileToBepMeasures extends Measures {
                                 }
                             } else if (runIndexV.size() <= pAtN[4]) {
                                 if ((i + 1) == pAtN[0]) {
+                                	topicScore.setScore(topicScore.getScore() + (double) anchorScore / (i + 1));
                                     outgoingPrecsAt[0] += (double) anchorScore / (i + 1);
                                 } else if ((i + 1) == pAtN[1]) {
                                     outgoingPrecsAt[1] += (double) anchorScore / (i + 1);
@@ -1061,6 +1091,7 @@ public final class fileToBepMeasures extends Measures {
                                 }
                             } else {
                                 if ((i + 1) == pAtN[0]) {
+                                	topicScore.setScore(topicScore.getScore() + (double) anchorScore / (i + 1));
                                     outgoingPrecsAt[0] += (double) anchorScore / (i + 1);
                                 } else if ((i + 1) == pAtN[1]) {
                                     outgoingPrecsAt[1] += (double) anchorScore / (i + 1);
@@ -1139,6 +1170,7 @@ public final class fileToBepMeasures extends Measures {
                         if (runItems.length <= pAtN[0]) {
                             if ((i + 1) == runItems.length) {
                                 if (key.endsWith(outgoingTag)) {
+                                	topicScore.setScore(topicScore.getScore() + (double) mCount / pAtN[0]);
                                     outgoingPrecsAt[0] += (double) mCount / pAtN[0];
                                     outgoingPrecsAt[1] += (double) mCount / pAtN[1];
                                     outgoingPrecsAt[2] += (double) mCount / pAtN[2];
@@ -1157,6 +1189,7 @@ public final class fileToBepMeasures extends Measures {
                         } else if (runItems.length <= pAtN[1]) {
                             if ((i + 1) == pAtN[0]) {
                                 if (key.endsWith(outgoingTag)) {
+                                	topicScore.setScore(topicScore.getScore() + (double) mCount / (i + 1));
                                     outgoingPrecsAt[0] += (double) mCount / (i + 1);
                                 } else if (key.endsWith(incomingTag)) {
                                     incomingPrecsAt[0] += (double) mCount / (i + 1);
@@ -1181,6 +1214,7 @@ public final class fileToBepMeasures extends Measures {
                         } else if (runItems.length <= pAtN[2]) {
                             if ((i + 1) == pAtN[0]) {
                                 if (key.endsWith(outgoingTag)) {
+                                	topicScore.setScore(topicScore.getScore() + (double) mCount / (i + 1));
                                     outgoingPrecsAt[0] += (double) mCount / (i + 1);
                                 } else if (key.endsWith(incomingTag)) {
                                     incomingPrecsAt[0] += (double) mCount / (i + 1);
@@ -1207,6 +1241,7 @@ public final class fileToBepMeasures extends Measures {
                         } else if (runItems.length <= pAtN[3]) {
                             if ((i + 1) == pAtN[0]) {
                                 if (key.endsWith(outgoingTag)) {
+                                	topicScore.setScore(topicScore.getScore() + (double) mCount / (i + 1));
                                     outgoingPrecsAt[0] += (double) mCount / (i + 1);
                                 } else if (key.endsWith(incomingTag)) {
                                     incomingPrecsAt[0] += (double) mCount / (i + 1);
@@ -1237,6 +1272,7 @@ public final class fileToBepMeasures extends Measures {
                         } else if (runItems.length <= pAtN[4]) {
                             if ((i + 1) == pAtN[0]) {
                                 if (key.endsWith(outgoingTag)) {
+                                	topicScore.setScore(topicScore.getScore() + (double) mCount / (i + 1));
                                     outgoingPrecsAt[0] += (double) mCount / (i + 1);
                                 } else if (key.endsWith(incomingTag)) {
                                     incomingPrecsAt[0] += (double) mCount / (i + 1);
@@ -1271,6 +1307,7 @@ public final class fileToBepMeasures extends Measures {
                         } else {
                             if ((i + 1) == pAtN[0]) {
                                 if (key.endsWith(outgoingTag)) {
+                                	topicScore.setScore(topicScore.getScore() + (double) mCount / (i + 1));
                                     outgoingPrecsAt[0] += (double) mCount / (i + 1);
                                 } else if (key.endsWith(incomingTag)) {
                                     incomingPrecsAt[0] += (double) mCount / (i + 1);
@@ -1317,7 +1354,11 @@ public final class fileToBepMeasures extends Measures {
                     }
                 }
             }
+            topicScores.add(topicScore);
         }
+        
+        System.err.println("P@5 scores:");
+        outputTopicScore(topicScores);
 
         if (isUseAllTopics) {
             // Outgoing

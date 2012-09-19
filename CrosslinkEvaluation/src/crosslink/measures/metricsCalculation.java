@@ -86,8 +86,12 @@ public final class metricsCalculation extends Data {
 	            // =================================================================
 	            String tempRunID = result.runId;
 	            // =================================================================
+	            System.err.println("================================================================================");
+	            System.err.println("==================  Doing calculation for " + tempRunID);
+	            System.err.println("================================================================================");
 	            // <editor-fold defaultstate="collapsed" desc="MAP: Mean Average Precision">
 	            // Get MAP
+	            System.err.println("Calculating the Link Mean Average Precision:");
 	            double[] oiMAP = getOutInMAP(tempRunID, resultTable, runTable);
 	
 	            double outgoingMAP = oiMAP[0];
@@ -107,6 +111,7 @@ public final class metricsCalculation extends Data {
 	            // </editor-fold>
 	            // =====================================================================
 	            // Get R-Precision
+	            System.err.println("Calculating the R-Precision:");
 	            double[] oiRPrecs = getOutInRPrecs(resultTable, runTable);
 	            double AveoutgoingRPrec = oiRPrecs[0];
 	            double AveincomingRPrecs = oiRPrecs[1];
@@ -119,6 +124,7 @@ public final class metricsCalculation extends Data {
 	            result.combination[metricsCalculation.R_RPREC] = AveRPrecs;
 	            // =====================================================================
 	            // Get Precision@
+	            System.err.println("Calculating the Precision @ N:");
 	            double[][] oiPrecsAT = getOutInPrecsAT(resultTable, runTable);
 	            double[] AveoutgoingPrecsAt = {oiPrecsAT[0][0], oiPrecsAT[0][1], oiPrecsAT[0][2], oiPrecsAT[0][3], oiPrecsAT[0][4], oiPrecsAT[0][5]};
 	            double[] AveincomingPrecsAt = {oiPrecsAT[1][0], oiPrecsAT[1][1], oiPrecsAT[1][2], oiPrecsAT[1][3], oiPrecsAT[1][4], oiPrecsAT[1][5]};
@@ -252,8 +258,6 @@ public final class metricsCalculation extends Data {
             }
         }
         
-        System.err.println("Calculating the Average Precision:");
-        
         if (isUseAllTopics) {
 //            oimap[0] = (double) outgoingAPs / (resultTable.size() / 2);
         	oimap[0] = average(averagePrecision, resultTable.size() / 2);
@@ -270,7 +274,8 @@ public final class metricsCalculation extends Data {
         double[] oirprecs = new double[2];
         double outgoingRPrecs = 0.0;
         double incomingRPrecs = 0.0;
-
+        ArrayList<TopicScore> topicScores = new ArrayList<TopicScore>();
+        
         // Loop all submitted run Topics
         for (Enumeration e = runTable.keys(); e.hasMoreElements();) {
             double mCount = 0.0;
@@ -279,6 +284,8 @@ public final class metricsCalculation extends Data {
             String[] runValues = (String[]) runTable.get(key);
             // get Result (incoming or outgoing) links array for each Topic
             String[] resultSet = (String[]) resultTable.get(key);
+            
+            String[] tokens = key.split("_");
 
             //R-Precision: ONLY Caculate Precision value at the resultSet.length position
             double APinR = 0.0;
@@ -325,6 +332,7 @@ public final class metricsCalculation extends Data {
                     }
                     // In R_Precision, R is the number of relevant document for a given query
                     // Here, R is resultSet.length
+                    
                     if ((resultSet.length <= rpRunItems.length) && (i + 1) == resultSet.length) {
                         if (key.endsWith(outgoingTag)) {
                             if (useRestrictedNum) {
@@ -359,9 +367,15 @@ public final class metricsCalculation extends Data {
                         }
                     }
                 }   // End of Loop links in a Topic
+                
+                TopicScore topicScore = new TopicScore(tokens[0], outgoingRPrecs);
+                topicScores.add(topicScore);
             }
             // =================================================================
         }   // End of Loop all Topics
+        
+        outputTopicScore(topicScores);
+        
         if (isUseAllTopics) {
             oirprecs[0] = (double) outgoingRPrecs / (resultTable.size() / 2);
             oirprecs[1] = (double) incomingRPrecs / (resultTable.size() / 2);
@@ -673,13 +687,14 @@ public final class metricsCalculation extends Data {
                 }
             }
         }
-        System.err.println("Calculating the Precision @ N:");
+
         if (isUseAllTopics) { 	
             // Outgoing
 //            oiprecsat[0][0] = (double) outgoingPrecsAt[0] / (resultTable.size() / 2);
 //            oiprecsat[0][1] = (double) outgoingPrecsAt[1] / (resultTable.size() / 2);
-            
+            System.err.println("Calculating the Precision @ 5:");
             oiprecsat[0][0] = average(precisionAt5, resultTable.size() / 2);
+            System.err.println("Calculating the Precision @ 10:");
             oiprecsat[0][1] = average(precisionAt10, resultTable.size() / 2);
             oiprecsat[0][2] = (double) outgoingPrecsAt[2] / (resultTable.size() / 2);
             oiprecsat[0][3] = (double) outgoingPrecsAt[3] / (resultTable.size() / 2);
