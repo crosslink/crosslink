@@ -907,7 +907,7 @@ public class EvaluationUI3 extends JFrame {
     	while (it.hasNext()) {
     		Entry<String, ArrayList<RunTopicScore>> entry = (Entry<String, ArrayList<RunTopicScore>>) it.next();
     		String measure = entry.getKey();
-            String pdFileName = measure + ".CSV";
+            String pdFileName = (jRBA2BManualrs.isSelected() ? "ManulAssessment" : "AutoAssessment") + "-" + (jRBFileToFile.isSelected() ? "F2F" : "A2F") + "-" + measure + ".CSV";
             ArrayList<RunTopicScore> runScores = entry.getValue();
             
 //            if (topicOrder == null) {
