@@ -14,6 +14,7 @@ import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
 import org.jfree.chart.LegendItem;
+import org.jfree.chart.title.LegendTitle;
 import org.jfree.chart.LegendItemCollection;
 import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.chart.plot.XYPlot;
@@ -64,6 +65,8 @@ public class JChartDialog {
     	ArrayList<SortedRunWithLMAP> runs = new ArrayList<SortedRunWithLMAP>();
     	for (int i = 0; i < legendItems.getItemCount(); ++i) {
     		LegendItem item = legendItems.get(i);
+    		item.setLabelFont(LegendTitle.DEFAULT_ITEM_FONT.deriveFont(LegendTitle.DEFAULT_ITEM_FONT.getSize() + 20));
+    		
     		SortedRunWithLMAP run = new SortedRunWithLMAP();
     		run.index = i;
     		run.runName = item.getLabel();
