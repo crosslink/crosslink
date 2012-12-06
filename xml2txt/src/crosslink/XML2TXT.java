@@ -48,13 +48,13 @@ public class XML2TXT {
 		return textLength(bytes, 0, byteOffset);
 	}
 	
-	public String replaceNonAlphabet(String source, String with)
+	public static String replaceNonAlphabet(String source, String with)
 	{
 		source.replaceAll("[\\W]", with);
 		return source;
 	}
 	
-	public String cleanTag(String content/*, String tagName*/) {
+	public static String cleanTag(String content/*, String tagName*/) {
 		int pos = 0;
 		int pre_pos = 0;
 		StringBuffer sb = new StringBuffer();
@@ -80,18 +80,23 @@ public class XML2TXT {
 		return content;
 	}
 	
+
+	public static byte[] clean(byte[] bytes) {
+		return clean(bytes, 0, bytes.length);
+	}
+	
 	/*
 	 * This snippet code is written by Andrew Trotman initially
 	 */
-	public byte[] clean(byte[] file)
+	public static byte[] clean(byte[] file, int index, int end)
 	{
 		//byte[] ch; //, *from, *to;
 		/*
 			remove XML tags and remove all non-alnum (but keep case)
 		*/
 		//ch = file;
-		int count = 0;
-		while (count < file.length)
+		int count = index;
+		while (count < end && count < file.length)
 			{
 			byte ch = file[count];
 			if (ch == '<')			// then remove the XML tags
@@ -133,7 +138,7 @@ public class XML2TXT {
 		return file;
 	}
 	
-	public String cleanAllTags(byte[] file)
+	public static String cleanAllTags(byte[] file)
 	{
 		String fulltext = null;
 		try {
@@ -141,6 +146,12 @@ public class XML2TXT {
 		} catch (UnsupportedEncodingException e) {
 			e.printStackTrace();
 		}
+
+		return cleanAllTags(fulltext);
+	}
+	
+	public static String cleanAllTags(String fulltext)
+	{
 		StringBuffer sb = new StringBuffer();
 		int count = 0;
 		while (count < fulltext.length())
@@ -291,5 +302,4 @@ public class XML2TXT {
 		//System.out.print("\n");
 
 	}
-
 }
