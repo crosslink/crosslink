@@ -18,21 +18,20 @@ public class Target {
 	
 //	private String 
 	
-	public static String corpusHome = "/data/corpus/wikipedia/all/";
+	public static String corpusHome; // = "/data/corpus/wikipedia/all/";
 	public static File corpusHomeHandler = null;
 	
 	private int rank = -1;
 	
 	static {
-		if (new File(corpusHome).exists()) {
+		if (corpusHome != null && new File(corpusHome).exists()) {
 			corpusHomeHandler = new File(corpusHome);
 		}
 		else if (new File(AppResource.corpusHome).exists()) {
 			corpusHome = AppResource.corpusHome;
 			corpusHomeHandler = new File(corpusHome);
 		}
-		else {
-			
+		else {		
 			System.err.println("Cannot find CORPUS: " + corpusHome);
 			System.err.println("Are you sure that you want to continue?");
 		}

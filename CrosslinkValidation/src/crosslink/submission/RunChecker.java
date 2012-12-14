@@ -28,20 +28,46 @@ public class RunChecker {
 
 		RunChecker checker = new RunChecker();
 		int i = 0;
-		if (args[0].charAt(0) == '-') {
-			if (args[0].charAt(1) == 'c') {
-				String topicPath = args[1];
-				if (!new File(topicPath).exists()) {
-					System.err.println("Incorrect topic path: " + topicPath);
-					usage();						
+		String topicPath = null;
+		String corpusPath = null;
+		
+		while (args[i].charAt(0) == '-' && i < args.length) {
+//			if (args[0].charAt(0) == '-') {
+				if (args[i].charAt(1) == 't') {
+					topicPath = args[++i];
+					if (!new File(topicPath).exists()) {
+						System.err.println("Incorrect topic path: " + topicPath);
+						usage();						
+					}
+					if (!topicPath.endsWith(File.separator))
+						topicPath = topicPath + File.separator;
+					AppResource.getInstance().setTopicPath(topicPath);
+//					i += 2;
 				}
-				if (!topicPath.endsWith(File.separator))
-					topicPath = topicPath + File.separator;
-				AppResource.getInstance().setTopicPath(topicPath);
-				i += 2;
-			}
-			else
-				usage();
+				else if (args[i].charAt(1) == 'c') {
+					corpusPath = args[++i];
+					if (!new File(corpusPath).exists()) {
+						System.err.println("Incorrect topic path: " + corpusPath);
+						usage();						
+					}
+					if (!corpusPath.endsWith(File.separator))
+						corpusPath = corpusPath + File.separator;
+					AppResource.corpusHome = corpusPath;
+//					i += 2;
+				}
+				else
+					usage();
+//			}
+				++i;
+		}
+		
+		if (topicPath == null) {
+			System.err.println("Please specify the path for topics");
+			usage();
+		}
+		else if (corpusPath == null) {
+			System.err.println("Please specify the path for corpus");
+			usage();
 		}
 			
 		for (; i < args.length; ++i) {
@@ -51,7 +77,8 @@ public class RunChecker {
 	}
 
 	private static void usage() {
-		System.err.println("Usage: program [-c topic_path] run1 [run 2] [run 3] ...");
+		System.err.println("Usage: program -c corpus_path -t topic_path run1 [run 2] [run 3] ...");
+		System.err.println("\t [corpus_path] is a path (folder) where all the directories (zh, en, ja, ko) of the Wikipedia collections located");
 		System.exit(-1);	
 	}
 
