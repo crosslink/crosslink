@@ -110,7 +110,8 @@ public class CrosslinkTable {
 	    			continue;
 	    		
     			entry = new CrosslinkTableEntry(sourceId, targetId, sourceTitle, targetTitle);
-	    		mapForSourceId.put(sourceId, entry);
+    			if (!hasSourceId(sourceId))
+    				mapForSourceId.put(sourceId, entry);
 //	    		mapForTargetId.put(targetId, entry);
 				
 	//    		if (lang.equals("zh"))

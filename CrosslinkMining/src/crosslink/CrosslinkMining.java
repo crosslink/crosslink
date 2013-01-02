@@ -149,11 +149,11 @@ public class CrosslinkMining extends MonolinkMining {
 
 	private void createCrosslinkTable(String crosslinkTablePath) {
 		setCrosslinkTablePath(crosslinkTablePath);
-		enCorpusCrosslinkTable = new CrosslinkTable(String.format("%sen2%s_lang_links.txt", crosslinkTablePath + File.separator, otherLang), sourceLang);
+		enCorpusCrosslinkTable = new CrosslinkTable(String.format("%sen2%s_lang_links.txt", crosslinkTablePath + File.separator + "en" + File.separator, otherLang), sourceLang);
 		enCorpusCrosslinkTable.setLang("en");
 		enCorpusCrosslinkTable.read();
 		
-		otherCorpusCrosslinkTable = new CrosslinkTable(String.format("%s%s2en_lang_links.txt", crosslinkTablePath + File.separator, otherLang), sourceLang);
+		otherCorpusCrosslinkTable = new CrosslinkTable(String.format("%s%s2en_lang_links.txt", crosslinkTablePath + File.separator  + otherLang + File.separator, otherLang), sourceLang);
 		otherCorpusCrosslinkTable.setLang(otherLang);
 		otherCorpusCrosslinkTable.read();
 	}

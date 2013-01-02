@@ -62,13 +62,13 @@ then
 fi
 
 task=${S_CODE}2${T_CODE}
-out_file=GroundTruth${task}.xml
+out_file=CrossLink2GroundTruth${task}.xml
 
-topic_path=`ls -d ~/experiments/ntcir-10-crosslink/topics/official/${SOURCE_LANG}*`
-counter_path=`ls -d ~/experiments/ntcir-10-crosslink/topics/official/${TARGET_LANG}*`
+topic_path=`ls -d ~/experiments/ntcir-10-crosslink/topics/with-links/${SOURCE_LANG}*`
+counter_path=`ls -d ~/experiments/ntcir-10-crosslink/topics/with-links/${TARGET_LANG}*`
 
 java -cp bin:lib/assessment-engine.jar crosslink.CrosslinkMining ${SOURCE_LANG}:${TARGET_LANG} \
- ~/experiments/ntcir-10-crosslink/assessment/wikipedia_groundtruth/link-mining/all \
+ /users/tables/all \
   $topic_path \
  $counter_path  /data/corpus/wikipedia/all/ run  1>$out_file
 

@@ -1,0 +1,1508 @@
+<crosslink-submission participant-id="GT" run-id="GroundTruth" task="F2F" default_lang="zh" source_lang="en"><details>
+ <machine>
+	<cpu>Core 2 Duo</cpu>
+	<speed>2.33 MHz</speed>
+	<cores>2</cores>
+	<hyperthreads>1</hyperthreads>
+	<memory>8GB</memory>
+</machine>
+<time>TBC</time>
+</details>
+<description>
+This is the ground truth run
+</description>
+<collections><collection>CJK Wikipedia</collection></collections>
+	<topic file="33637" name="Wasabi"> 
+		<outgoing>
+			<anchor offset="290" length="6" name="Wasabi">
+				<tofile bep_offset="0" lang="zh" title="伊豆半島">249285</tofile>
+				<tofile bep_offset="0" lang="zh" title="微生物">18441</tofile>
+				<tofile bep_offset="0" lang="zh" title="九州 (日本)">26240</tofile>
+				<tofile bep_offset="0" lang="zh" title="京都市">38932</tofile>
+				<tofile bep_offset="0" lang="zh" title="捲心菜">213001</tofile>
+				<tofile bep_offset="0" lang="zh" title="异硫氰酸酯">950501</tofile>
+				<tofile bep_offset="0" lang="zh" title="辣椒素">230511</tofile>
+				<tofile bep_offset="0" lang="zh" title="阿里山國家風景區">610300</tofile>
+				<tofile bep_offset="0" lang="zh" title="十字花科">3623</tofile>
+				<tofile bep_offset="0" lang="zh" title="中华人民共和国">118</tofile>
+				<tofile bep_offset="0" lang="zh" title="辣根">178837</tofile>
+				<tofile bep_offset="0" lang="zh" title="新西兰">532</tofile>
+				<tofile bep_offset="0" lang="zh" title="寿司">40425</tofile>
+				<tofile bep_offset="0" lang="zh" title="岛根县">259544</tofile>
+				<tofile bep_offset="0" lang="zh" title="芥菜类蔬菜">178274</tofile>
+				<tofile bep_offset="0" lang="zh" title="靜岡縣">184545</tofile>
+				<tofile bep_offset="0" lang="zh" title="潔齒劑">285034</tofile>
+				<tofile bep_offset="0" lang="zh" title="加拿大">44850</tofile>
+				<tofile bep_offset="0" lang="zh" title="长野县">168004</tofile>
+				<tofile bep_offset="0" lang="zh" title="太平洋西北地区">388018</tofile>
+				<tofile bep_offset="0" lang="zh" title="荚果">187773</tofile>
+				<tofile bep_offset="0" lang="zh" title="芥末醬">450667</tofile>
+				<tofile bep_offset="0" lang="zh" title="山梨县">21568</tofile>
+				<tofile bep_offset="0" lang="zh" title="日本汉字">64127</tofile>
+				<tofile bep_offset="0" lang="zh" title="藍嶺山脈">1206967</tofile>
+				<tofile bep_offset="0" lang="zh" title="水解">88022</tofile>
+				<tofile bep_offset="0" lang="zh" title="岩手县">4621</tofile>
+				<tofile bep_offset="0" lang="zh" title="栽培品种">676381</tofile>
+				<tofile bep_offset="0" lang="zh" title="借字">1266872</tofile>
+				<tofile bep_offset="0" lang="zh" title="不列颠哥伦比亚">47840</tofile>
+				<tofile bep_offset="0" lang="zh" title="溫室">317859</tofile>
+				<tofile bep_offset="0" lang="zh" title="调味料">369237</tofile>
+				<tofile bep_offset="0" lang="zh" title="北海道">6106</tofile>
+				<tofile bep_offset="0" lang="zh" title="台灣">690</tofile>
+				<tofile bep_offset="0" lang="zh" title="嘉義縣">26659</tofile>
+				<tofile bep_offset="0" lang="zh" title="九州">26088</tofile>
+				<tofile bep_offset="0" lang="zh" title="鲨鱼">40592</tofile>
+				<tofile bep_offset="0" lang="zh" title="1828年">15354</tofile>
+				<tofile bep_offset="0" lang="zh" title="海鮮">130242</tofile>
+				<tofile bep_offset="0" lang="zh" title="欧洲">1728</tofile>
+				<tofile bep_offset="0" lang="zh" title="美國">481</tofile>
+				<tofile bep_offset="0" lang="zh" title="生魚片">40304</tofile>
+				<tofile bep_offset="0" lang="zh" title="阿里山鄉">75404</tofile>
+				<tofile bep_offset="0" lang="zh" title="鄺兆昌">540948</tofile>
+				<tofile bep_offset="0" lang="zh" title="糞便">159457</tofile>
+				<tofile bep_offset="0" lang="zh" title="芥菜">197764</tofile>
+				<tofile bep_offset="0" lang="zh" title="肥料">481543</tofile>
+				<tofile bep_offset="0" lang="zh" title="918年">14443</tofile>
+				<tofile bep_offset="0" lang="zh" title="水生植物">631853</tofile>
+				<tofile bep_offset="0" lang="zh" title="萝卜">91195</tofile>
+				<tofile bep_offset="0" lang="zh" title="食物中毒">25024</tofile>
+				<tofile bep_offset="0" lang="zh" title="鼻竇">118396</tofile>
+				<tofile bep_offset="0" lang="zh" title="水">3449</tofile>
+				<tofile bep_offset="0" lang="zh" title="俄勒冈州">76137</tofile>
+				<tofile bep_offset="0" lang="zh" title="荞麦面条">35160</tofile>
+				<tofile bep_offset="0" lang="zh" title="鳄梨酱">490232</tofile>
+				<tofile bep_offset="0" lang="zh" title="中國">263</tofile>
+				<tofile bep_offset="0" lang="zh" title="大王山葵農場">163935</tofile>
+				<tofile bep_offset="0" lang="zh" title="酱油">33062</tofile>
+				<tofile bep_offset="0" lang="zh" title="日本">247418</tofile>
+				<tofile bep_offset="0" lang="zh" title="水田山葵">573289</tofile>
+				<tofile bep_offset="0" lang="zh" title="天婦羅">35157</tofile>
+				<tofile bep_offset="0" lang="zh" title="河流">6134</tofile>
+				<tofile bep_offset="0" lang="zh" title="锦葵科">75733</tofile>
+				<tofile bep_offset="0" lang="zh" title="辣椒">33071</tofile>
+				<tofile bep_offset="0" lang="zh" title="谷地">194863</tofile>
+				<tofile bep_offset="0" lang="zh" title="日语">2281</tofile>
+				<tofile bep_offset="0" lang="zh" title="京都">396215</tofile>
+				<tofile bep_offset="0" lang="zh" title="熟字訓">929026</tofile>
+				<tofile bep_offset="0" lang="zh" title="鸡">15554</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="1261868" name="Tom yum"> 
+		<outgoing>
+			<anchor offset="290" length="7" name="Tom yum">
+				<tofile bep_offset="0" lang="zh" title="泰國菜">1051770</tofile>
+				<tofile bep_offset="0" lang="zh" title="椰浆">509205</tofile>
+				<tofile bep_offset="0" lang="zh" title="明蝦">1674569</tofile>
+				<tofile bep_offset="0" lang="zh" title="平菇">270607</tofile>
+				<tofile bep_offset="0" lang="zh" title="曼谷">3135</tofile>
+				<tofile bep_offset="0" lang="zh" title="酸豆">393444</tofile>
+				<tofile bep_offset="0" lang="zh" title="芫荽">24652</tofile>
+				<tofile bep_offset="0" lang="zh" title="新加坡">247875</tofile>
+				<tofile bep_offset="0" lang="zh" title="亞洲金融危機">38926</tofile>
+				<tofile bep_offset="0" lang="zh" title="马来西亚">5025</tofile>
+				<tofile bep_offset="0" lang="zh" title="程逸">499034</tofile>
+				<tofile bep_offset="0" lang="zh" title="香茅">469501</tofile>
+				<tofile bep_offset="0" lang="zh" title="魚露">278843</tofile>
+				<tofile bep_offset="0" lang="zh" title="泰国">10926</tofile>
+				<tofile bep_offset="0" lang="zh" title="高良薑">1187673</tofile>
+				<tofile bep_offset="0" lang="zh" title="爆炒">17271</tofile>
+				<tofile bep_offset="0" lang="zh" title="草菇">594869</tofile>
+				<tofile bep_offset="0" lang="zh" title="老挝语">20684</tofile>
+				<tofile bep_offset="0" lang="zh" title="鸡">15554</tofile>
+				<tofile bep_offset="0" lang="zh" title="印度尼西亚">4506</tofile>
+				<tofile bep_offset="0" lang="zh" title="青檸">469559</tofile>
+				<tofile bep_offset="0" lang="zh" title="老挝">21908</tofile>
+				<tofile bep_offset="0" lang="zh" title="椰">137942</tofile>
+				<tofile bep_offset="0" lang="zh" title="汤">372915</tofile>
+				<tofile bep_offset="0" lang="zh" title="港澳地區">388369</tofile>
+				<tofile bep_offset="0" lang="zh" title="辣椒">33071</tofile>
+				<tofile bep_offset="0" lang="zh" title="酸辣湯">718374</tofile>
+				<tofile bep_offset="0" lang="zh" title="虾">79091</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="33822" name="Westwood Studios"> 
+		<outgoing>
+			<anchor offset="290" length="16" name="Westwood Studios">
+				<tofile bep_offset="0" lang="zh" title="Microsoft Windows">1306</tofile>
+				<tofile bep_offset="0" lang="zh" title="BattleTech">311208</tofile>
+				<tofile bep_offset="0" lang="zh" title="龙与地下城">2376</tofile>
+				<tofile bep_offset="0" lang="zh" title="吉尼斯世界纪录大全">52731</tofile>
+				<tofile bep_offset="0" lang="zh" title="生化危機">494197</tofile>
+				<tofile bep_offset="0" lang="zh" title="歐文 (加利福尼亞州)">743063</tofile>
+				<tofile bep_offset="0" lang="zh" title="岩石壁畫">766069</tofile>
+				<tofile bep_offset="0" lang="zh" title="游戏开发者">1054506</tofile>
+				<tofile bep_offset="0" lang="zh" title="拉斯维加斯">37974</tofile>
+				<tofile bep_offset="0" lang="zh" title="即时战略游戏">47048</tofile>
+				<tofile bep_offset="0" lang="zh" title="冒险游戏">12215</tofile>
+				<tofile bep_offset="0" lang="zh" title="调制解调器">94158</tofile>
+				<tofile bep_offset="0" lang="zh" title="第一人称射击游戏">25035</tofile>
+				<tofile bep_offset="0" lang="zh" title="美国艺电">49216</tofile>
+				<tofile bep_offset="0" lang="zh" title="华特迪士尼公司">20643</tofile>
+				<tofile bep_offset="0" lang="zh" title="亞特蘭大勇士">193390</tofile>
+				<tofile bep_offset="0" lang="zh" title="沙丘 (电影)">230438</tofile>
+				<tofile bep_offset="0" lang="zh" title="MMORPG">37485</tofile>
+				<tofile bep_offset="0" lang="zh" title="Strategic Simulations">1186287</tofile>
+				<tofile bep_offset="0" lang="zh" title="Amiga">595785</tofile>
+				<tofile bep_offset="0" lang="zh" title="8位元">134702</tofile>
+				<tofile bep_offset="0" lang="zh" title="16位元">134686</tofile>
+				<tofile bep_offset="0" lang="zh" title="救世傳說">146983</tofile>
+				<tofile bep_offset="0" lang="zh" title="終極動員令系列">247771</tofile>
+				<tofile bep_offset="0" lang="zh" title="电脑游戏">668</tofile>
+				<tofile bep_offset="0" lang="zh" title="命令与征服：红色警报">47536</tofile>
+				<tofile bep_offset="0" lang="zh" title="終極動員令：叛國者">1199084</tofile>
+				<tofile bep_offset="0" lang="zh" title="1992年">5146</tofile>
+				<tofile bep_offset="0" lang="zh" title="2003年">4178</tofile>
+				<tofile bep_offset="0" lang="zh" title="1985年">6028</tofile>
+				<tofile bep_offset="0" lang="zh" title="加利福尼亞 (消歧義)">59165</tofile>
+				<tofile bep_offset="0" lang="zh" title="沙丘系列">516525</tofile>
+				<tofile bep_offset="0" lang="zh" title="美國">481</tofile>
+				<tofile bep_offset="0" lang="zh" title="1988年">6026</tofile>
+				<tofile bep_offset="0" lang="zh" title="内华达州">13599</tofile>
+				<tofile bep_offset="0" lang="zh" title="市場佔有率">515297</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="484999" name="Youtiao"> 
+		<outgoing>
+			<anchor offset="290" length="7" name="Youtiao">
+				<tofile bep_offset="0" lang="zh" title="炸">16685</tofile>
+				<tofile bep_offset="0" lang="zh" title="小販">647665</tofile>
+				<tofile bep_offset="0" lang="zh" title="煉奶">283280</tofile>
+				<tofile bep_offset="0" lang="zh" title="马来西亚">5025</tofile>
+				<tofile bep_offset="0" lang="zh" title="澳大利亚">1930</tofile>
+				<tofile bep_offset="0" lang="zh" title="中国北方与南方">138133</tofile>
+				<tofile bep_offset="0" lang="zh" title="泰国">10926</tofile>
+				<tofile bep_offset="0" lang="zh" title="西班牙油條">930559</tofile>
+				<tofile bep_offset="0" lang="zh" title="臺灣話">740</tofile>
+				<tofile bep_offset="0" lang="zh" title="中华文化">6499</tofile>
+				<tofile bep_offset="0" lang="zh" title="广州话">170593</tofile>
+				<tofile bep_offset="0" lang="zh" title="越南菜">925835</tofile>
+				<tofile bep_offset="0" lang="zh" title="生麵團">899072</tofile>
+				<tofile bep_offset="0" lang="zh" title="汉越词">217654</tofile>
+				<tofile bep_offset="0" lang="zh" title="闽南语">4652</tofile>
+				<tofile bep_offset="0" lang="zh" title="众数 (语言学)">220121</tofile>
+				<tofile bep_offset="0" lang="zh" title="泰国南部地区">1093502</tofile>
+				<tofile bep_offset="0" lang="zh" title="肉骨茶">283960</tofile>
+				<tofile bep_offset="0" lang="zh" title="法式长棍面包">1172939</tofile>
+				<tofile bep_offset="0" lang="zh" title="东南亚">1034</tofile>
+				<tofile bep_offset="0" lang="zh" title="粥">20277</tofile>
+				<tofile bep_offset="0" lang="zh" title="粤语">16386</tofile>
+				<tofile bep_offset="0" lang="zh" title="岳飞">7133</tofile>
+				<tofile bep_offset="0" lang="zh" title="愛國主義">13672</tofile>
+				<tofile bep_offset="0" lang="zh" title="白糖糕">282059</tofile>
+				<tofile bep_offset="0" lang="zh" title="柬埔寨人口">1762206</tofile>
+				<tofile bep_offset="0" lang="zh" title="印度尼西亚">4506</tofile>
+				<tofile bep_offset="0" lang="zh" title="油酥烧饼">975079</tofile>
+				<tofile bep_offset="0" lang="zh" title="炸兩">39993</tofile>
+				<tofile bep_offset="0" lang="zh" title="牛脷酥">556467</tofile>
+				<tofile bep_offset="0" lang="zh" title="早餐">66253</tofile>
+				<tofile bep_offset="0" lang="zh" title="秦桧">43263</tofile>
+				<tofile bep_offset="0" lang="zh" title="贝奈特饼">722838</tofile>
+				<tofile bep_offset="0" lang="zh" title="宋朝">922</tofile>
+				<tofile bep_offset="0" lang="zh" title="东亚">1032</tofile>
+				<tofile bep_offset="0" lang="zh" title="筷子">20027</tofile>
+				<tofile bep_offset="0" lang="zh" title="泉漳片">1020915</tofile>
+				<tofile bep_offset="0" lang="zh" title="中国菜">66664</tofile>
+				<tofile bep_offset="0" lang="zh" title="粢饭团">228355</tofile>
+				<tofile bep_offset="0" lang="zh" title="三明治">108071</tofile>
+				<tofile bep_offset="0" lang="zh" title="马来语">76548</tofile>
+				<tofile bep_offset="0" lang="zh" title="兩相好">914371</tofile>
+				<tofile bep_offset="0" lang="zh" title="上海菜">220762</tofile>
+				<tofile bep_offset="0" lang="zh" title="新加坡">247875</tofile>
+				<tofile bep_offset="0" lang="zh" title="缅甸">26508</tofile>
+				<tofile bep_offset="0" lang="zh" title="豆浆">40802</tofile>
+				<tofile bep_offset="0" lang="zh" title="潮州话">90504</tofile>
+				<tofile bep_offset="0" lang="zh" title="拉腸粉">89451</tofile>
+				<tofile bep_offset="0" lang="zh" title="董里府">511969</tofile>
+				<tofile bep_offset="0" lang="zh" title="菲律宾">2134</tofile>
+				<tofile bep_offset="0" lang="zh" title="台灣">690</tofile>
+				<tofile bep_offset="0" lang="zh" title="中國">263</tofile>
+				<tofile bep_offset="0" lang="zh" title="煎饼">41541</tofile>
+				<tofile bep_offset="0" lang="zh" title="煎饼果子">35790</tofile>
+				<tofile bep_offset="0" lang="zh" title="明矾">118179</tofile>
+				<tofile bep_offset="0" lang="zh" title="大餅">281217</tofile>
+				<tofile bep_offset="0" lang="zh" title="油炸麵食">557218</tofile>
+				<tofile bep_offset="0" lang="zh" title="临安市">18956</tofile>
+				<tofile bep_offset="0" lang="zh" title="平底锅">237286</tofile>
+				<tofile bep_offset="0" lang="zh" title="西湖">56455</tofile>
+				<tofile bep_offset="0" lang="zh" title="朝鲜战争">3074</tofile>
+				<tofile bep_offset="0" lang="zh" title="广东省">412</tofile>
+				<tofile bep_offset="0" lang="zh" title="鱼肠">835135</tofile>
+				<tofile bep_offset="0" lang="zh" title="辣醬">1287772</tofile>
+				<tofile bep_offset="0" lang="zh" title="豆花">40942</tofile>
+				<tofile bep_offset="0" lang="zh" title="杭州市">4651</tofile>
+				<tofile bep_offset="0" lang="zh" title="杏仁奶">623355</tofile>
+				<tofile bep_offset="0" lang="zh" title="膨松剂">1527926</tofile>
+				<tofile bep_offset="0" lang="zh" title="二氧化碳">46313</tofile>
+				<tofile bep_offset="0" lang="zh" title="碳酸钠">139298</tofile>
+				<tofile bep_offset="0" lang="zh" title="南宋">16650</tofile>
+				<tofile bep_offset="0" lang="zh" title="氨">80391</tofile>
+				<tofile bep_offset="0" lang="zh" title="香港">247430</tofile>
+				<tofile bep_offset="0" lang="zh" title="油">124127</tofile>
+				<tofile bep_offset="0" lang="zh" title="河南省">427</tofile>
+				<tofile bep_offset="0" lang="zh" title="酒石酸氢钾">894645</tofile>
+				<tofile bep_offset="0" lang="zh" title="胡辣汤">428904</tofile>
+				<tofile bep_offset="0" lang="zh" title="天津市">467</tofile>
+				<tofile bep_offset="0" lang="zh" title="福建省">406</tofile>
+				<tofile bep_offset="0" lang="zh" title="蛋">44395</tofile>
+				<tofile bep_offset="0" lang="zh" title="道格拉斯·麦克阿瑟">9605</tofile>
+				<tofile bep_offset="0" lang="zh" title="飯糰">271004</tofile>
+				<tofile bep_offset="0" lang="zh" title="上海市">235</tofile>
+				<tofile bep_offset="0" lang="zh" title="金朝">36985</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="2872586" name="Tsundere"> 
+		<outgoing>
+			<anchor offset="290" length="8" name="Tsundere">
+				<tofile bep_offset="0" lang="zh" title="火影忍者">48272</tofile>
+				<tofile bep_offset="0" lang="zh" title="日本文化">517133</tofile>
+				<tofile bep_offset="0" lang="zh" title="御宅族">74172</tofile>
+				<tofile bep_offset="0" lang="zh" title="純情房東俏房客">11542</tofile>
+				<tofile bep_offset="0" lang="zh" title="福星小子">59625</tofile>
+				<tofile bep_offset="0" lang="zh" title="你所期望的永遠">324171</tofile>
+				<tofile bep_offset="0" lang="zh" title="萌">163714</tofile>
+				<tofile bep_offset="0" lang="zh" title="釘宮理惠">233918</tofile>
+				<tofile bep_offset="0" lang="zh" title="TIGER×DRAGON！">465247</tofile>
+				<tofile bep_offset="0" lang="zh" title="日本漫画">54794</tofile>
+				<tofile bep_offset="0" lang="zh" title="化物語">1648844</tofile>
+				<tofile bep_offset="0" lang="zh" title="日本动画">19538</tofile>
+				<tofile bep_offset="0" lang="zh" title="Comic Market">212959</tofile>
+				<tofile bep_offset="0" lang="zh" title="美少女遊戲">56541</tofile>
+				<tofile bep_offset="0" lang="zh" title="女僕咖啡廳">274090</tofile>
+				<tofile bep_offset="0" lang="zh" title="秋葉原">58896</tofile>
+				<tofile bep_offset="0" lang="zh" title="幸運☆星">470643</tofile>
+				<tofile bep_offset="0" lang="zh" title="大眾媒體">250153</tofile>
+				<tofile bep_offset="0" lang="zh" title="守護甜心!">1691020</tofile>
+				<tofile bep_offset="0" lang="zh" title="涼宮春日 (角色)">794998</tofile>
+				<tofile bep_offset="0" lang="zh" title="出包王女">569396</tofile>
+				<tofile bep_offset="0" lang="zh" title="學生會長是女僕！">681162</tofile>
+				<tofile bep_offset="0" lang="zh" title="类型">283615</tofile>
+				<tofile bep_offset="0" lang="zh" title="雙馬尾">188262</tofile>
+				<tofile bep_offset="0" lang="zh" title="我的妹妹哪有這麼可愛！">887833</tofile>
+				<tofile bep_offset="0" lang="zh" title="我的朋友很少">1161361</tofile>
+				<tofile bep_offset="0" lang="zh" title="秋櫻之空">461439</tofile>
+				<tofile bep_offset="0" lang="zh" title="漫画">2746</tofile>
+				<tofile bep_offset="0" lang="zh" title="K-ON！輕音部">1013545</tofile>
+				<tofile bep_offset="0" lang="zh" title="綽號">170829</tofile>
+				<tofile bep_offset="0" lang="zh" title="馬尾">188259</tofile>
+				<tofile bep_offset="0" lang="zh" title="緋彈的亞莉亞">1155110</tofile>
+				<tofile bep_offset="0" lang="zh" title="旋風管家">238367</tofile>
+				<tofile bep_offset="0" lang="zh" title="蘿黛的後宮玩具">1121706</tofile>
+				<tofile bep_offset="0" lang="zh" title="2000年">5136</tofile>
+				<tofile bep_offset="0" lang="zh" title="清濁音">338385</tofile>
+				<tofile bep_offset="0" lang="zh" title="迷茫管家與膽怯的我">1259359</tofile>
+				<tofile bep_offset="0" lang="zh" title="薔薇少女">188075</tofile>
+				<tofile bep_offset="0" lang="zh" title="心理防卫机制">328782</tofile>
+				<tofile bep_offset="0" lang="zh" title="嬌蠻貓娘大橫行">1189742</tofile>
+				<tofile bep_offset="0" lang="zh" title="戀愛遊戲">87677</tofile>
+				<tofile bep_offset="0" lang="zh" title="Kanon">144208</tofile>
+				<tofile bep_offset="0" lang="zh" title="魔法老师">184655</tofile>
+				<tofile bep_offset="0" lang="zh" title="學園默示錄">686614</tofile>
+				<tofile bep_offset="0" lang="zh" title="神樂坂明日菜">1095928</tofile>
+				<tofile bep_offset="0" lang="zh" title="病嬌">809749</tofile>
+				<tofile bep_offset="0" lang="zh" title="義呆利 Axis Powers">941753</tofile>
+				<tofile bep_offset="0" lang="zh" title="灰姑娘">203324</tofile>
+				<tofile bep_offset="0" lang="zh" title="惣流·明日香·蘭格雷">936394</tofile>
+				<tofile bep_offset="0" lang="zh" title="1997年">5141</tofile>
+				<tofile bep_offset="0" lang="zh" title="新世纪福音战士">144762</tofile>
+				<tofile bep_offset="0" lang="zh" title="傳說的勇者的傳說">1203350</tofile>
+				<tofile bep_offset="0" lang="zh" title="科學超電磁砲">1105546</tofile>
+				<tofile bep_offset="0" lang="zh" title="CLANNAD">146528</tofile>
+				<tofile bep_offset="0" lang="zh" title="日本">247418</tofile>
+				<tofile bep_offset="0" lang="zh" title="次文化">78608</tofile>
+				<tofile bep_offset="0" lang="zh" title="人格障礙">413318</tofile>
+				<tofile bep_offset="0" lang="zh" title="灼眼的夏娜">185132</tofile>
+				<tofile bep_offset="0" lang="zh" title="BLEACH">124680</tofile>
+				<tofile bep_offset="0" lang="zh" title="三千院凪">1224803</tofile>
+				<tofile bep_offset="0" lang="zh" title="To Heart">171358</tofile>
+				<tofile bep_offset="0" lang="zh" title="零之使魔">471482</tofile>
+				<tofile bep_offset="0" lang="zh" title="缘之空">936383</tofile>
+				<tofile bep_offset="0" lang="zh" title="校園迷糊大王">170542</tofile>
+				<tofile bep_offset="0" lang="zh" title="ACG">75922</tofile>
+				<tofile bep_offset="0" lang="zh" title="动画">19524</tofile>
+				<tofile bep_offset="0" lang="zh" title="妹">710520</tofile>
+				<tofile bep_offset="0" lang="zh" title="驚爆危機">142518</tofile>
+				<tofile bep_offset="0" lang="zh" title="七龙珠">10742</tofile>
+				<tofile bep_offset="0" lang="zh" title="零之使魔角色列表">1333756</tofile>
+				<tofile bep_offset="0" lang="zh" title="青梅竹馬">197844</tofile>
+				<tofile bep_offset="0" lang="zh" title="格林童話">200978</tofile>
+				<tofile bep_offset="0" lang="zh" title="朽木露琪亞">504643</tofile>
+				<tofile bep_offset="0" lang="zh" title="涼宮春日系列">185411</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="1148973" name="Song Hye-kyo"> 
+		<outgoing>
+			<anchor offset="290" length="12" name="Song Hye-kyo">
+				<tofile bep_offset="0" lang="zh" title="秋日童話">309523</tofile>
+				<tofile bep_offset="0" lang="zh" title="金唱片獎">1771534</tofile>
+				<tofile bep_offset="0" lang="zh" title="葉問">455460</tofile>
+				<tofile bep_offset="0" lang="zh" title="All In 真愛賭注">707040</tofile>
+				<tofile bep_offset="0" lang="zh" title="任天堂DS">68590</tofile>
+				<tofile bep_offset="0" lang="zh" title="Levi&apos;s">308501</tofile>
+				<tofile bep_offset="0" lang="zh" title="在世界的中心呼喊愛情">117081</tofile>
+				<tofile bep_offset="0" lang="zh" title="Music Bank">1307328</tofile>
+				<tofile bep_offset="0" lang="zh" title="大邱廣域市">84033</tofile>
+				<tofile bep_offset="0" lang="zh" title="浪漫满屋">168122</tofile>
+				<tofile bep_offset="0" lang="zh" title="元斌">524266</tofile>
+				<tofile bep_offset="0" lang="zh" title="釜山廣域市">16892</tofile>
+				<tofile bep_offset="0" lang="zh" title="守護天使">692195</tofile>
+				<tofile bep_offset="0" lang="zh" title="車太鉉">81814</tofile>
+				<tofile bep_offset="0" lang="zh" title="麦当劳">40990</tofile>
+				<tofile bep_offset="0" lang="zh" title="王家卫">1596954</tofile>
+				<tofile bep_offset="0" lang="zh" title="模特兒">129286</tofile>
+				<tofile bep_offset="0" lang="zh" title="愛茉莉太平洋">1203262</tofile>
+				<tofile bep_offset="0" lang="zh" title="国共内战">5583</tofile>
+				<tofile bep_offset="0" lang="zh" title="演員">9428</tofile>
+				<tofile bep_offset="0" lang="zh" title="黃真伊 (2007年電影)">658103</tofile>
+				<tofile bep_offset="0" lang="zh" title="百想藝術大賞">647632</tofile>
+				<tofile bep_offset="0" lang="zh" title="韓國放送公社">477926</tofile>
+				<tofile bep_offset="0" lang="zh" title="李小龙">6783</tofile>
+				<tofile bep_offset="0" lang="zh" title="李炳憲">88144</tofile>
+				<tofile bep_offset="0" lang="zh" title="富士電視台">36302</tofile>
+				<tofile bep_offset="0" lang="zh" title="第二次世界大战">305</tofile>
+				<tofile bep_offset="0" lang="zh" title="校服">359675</tofile>
+				<tofile bep_offset="0" lang="zh" title="妓生">974669</tofile>
+				<tofile bep_offset="0" lang="zh" title="SK集团">648627</tofile>
+				<tofile bep_offset="0" lang="zh" title="黃真伊">531826</tofile>
+				<tofile bep_offset="0" lang="zh" title="宋承憲">413699</tofile>
+				<tofile bep_offset="0" lang="zh" title="他們的世界">1252059</tofile>
+				<tofile bep_offset="0" lang="zh" title="東亞日報">647610</tofile>
+				<tofile bep_offset="0" lang="zh" title="韩国">3121</tofile>
+				<tofile bep_offset="0" lang="zh" title="玄彬">1178032</tofile>
+				<tofile bep_offset="0" lang="zh" title="韓國日報">70723</tofile>
+				<tofile bep_offset="0" lang="zh" title="情定大飯店">1066052</tofile>
+				<tofile bep_offset="0" lang="zh" title="韓國電視劇">34435</tofile>
+				<tofile bep_offset="0" lang="zh" title="吴宇森">103835</tofile>
+				<tofile bep_offset="0" lang="zh" title="Mnet亞洲音樂大獎">1573832</tofile>
+				<tofile bep_offset="0" lang="zh" title="Rain (韓國藝人)">329248</tofile>
+				<tofile bep_offset="0" lang="zh" title="劉智泰">728407</tofile>
+				<tofile bep_offset="0" lang="zh" title="2001年">4353</tofile>
+				<tofile bep_offset="0" lang="zh" title="宋允兒">1707754</tofile>
+				<tofile bep_offset="0" lang="zh" title="2006年">73278</tofile>
+				<tofile bep_offset="0" lang="zh" title="金勝友">695047</tofile>
+				<tofile bep_offset="0" lang="zh" title="电视剧">18885</tofile>
+				<tofile bep_offset="0" lang="zh" title="趙顯宰">678908</tofile>
+				<tofile bep_offset="0" lang="zh" title="2000年">5136</tofile>
+				<tofile bep_offset="0" lang="zh" title="艺妓">190487</tofile>
+				<tofile bep_offset="0" lang="zh" title="2004年">5159</tofile>
+				<tofile bep_offset="0" lang="zh" title="8月1日">3099</tofile>
+				<tofile bep_offset="0" lang="zh" title="SBS (韓國)">539981</tofile>
+				<tofile bep_offset="0" lang="zh" title="7月14日">2427</tofile>
+				<tofile bep_offset="0" lang="zh" title="英语">1180</tofile>
+				<tofile bep_offset="0" lang="zh" title="朝鲜族">5361</tofile>
+				<tofile bep_offset="0" lang="zh" title="好莱坞">41983</tofile>
+				<tofile bep_offset="0" lang="zh" title="裴勇俊">51263</tofile>
+				<tofile bep_offset="0" lang="zh" title="2007年">31064</tofile>
+				<tofile bep_offset="0" lang="zh" title="厘米">5278</tofile>
+				<tofile bep_offset="0" lang="zh" title="9月18日">4608</tofile>
+				<tofile bep_offset="0" lang="zh" title="1996年">5142</tofile>
+				<tofile bep_offset="0" lang="zh" title="1998年">5140</tofile>
+				<tofile bep_offset="0" lang="zh" title="6月6日">24195</tofile>
+				<tofile bep_offset="0" lang="zh" title="4月4日">20550</tofile>
+				<tofile bep_offset="0" lang="zh" title="1981年">22651</tofile>
+				<tofile bep_offset="0" lang="zh" title="世宗大學">727376</tofile>
+				<tofile bep_offset="0" lang="zh" title="2005年">47562</tofile>
+				<tofile bep_offset="0" lang="zh" title="11月22日">7630</tofile>
+				<tofile bep_offset="0" lang="zh" title="順風婦產科">1041515</tofile>
+				<tofile bep_offset="0" lang="zh" title="1999年">5137</tofile>
+				<tofile bep_offset="0" lang="zh" title="朝鲜王朝">1069451</tofile>
+				<tofile bep_offset="0" lang="zh" title="喜劇">754</tofile>
+				<tofile bep_offset="0" lang="zh" title="文化廣播 (韓國)">89497</tofile>
+				<tofile bep_offset="0" lang="zh" title="诗人">655</tofile>
+				<tofile bep_offset="0" lang="zh" title="首爾">142076</tofile>
+				<tofile bep_offset="0" lang="zh" title="李丞涓">13417</tofile>
+				<tofile bep_offset="0" lang="zh" title="朝鮮語">903149</tofile>
+				<tofile bep_offset="0" lang="zh" title="千克">21707</tofile>
+				<tofile bep_offset="0" lang="zh" title="總有艷陽天">726952</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="1429653" name="Lee Young Ae"> 
+		<outgoing>
+			<anchor offset="290" length="12" name="Lee Young Ae">
+				<tofile bep_offset="0" lang="zh" title="SBS (韓國)">539981</tofile>
+				<tofile bep_offset="0" lang="zh" title="友情客串">1497404</tofile>
+				<tofile bep_offset="0" lang="zh" title="文化廣播 (韓國)">89497</tofile>
+				<tofile bep_offset="0" lang="zh" title="韓國放送公社">477926</tofile>
+				<tofile bep_offset="0" lang="zh" title="联合国儿童基金会">253647</tofile>
+				<tofile bep_offset="0" lang="zh" title="大長今 (電視劇)">83898</tofile>
+				<tofile bep_offset="0" lang="zh" title="劉德華">5913</tofile>
+				<tofile bep_offset="0" lang="zh" title="JSA安全地帶">108977</tofile>
+				<tofile bep_offset="0" lang="zh" title="青龍電影獎">647585</tofile>
+				<tofile bep_offset="0" lang="zh" title="非政府组织">20452</tofile>
+				<tofile bep_offset="0" lang="zh" title="首爾">142076</tofile>
+				<tofile bep_offset="0" lang="zh" title="中国哈尔滨国际冰雪节">664556</tofile>
+				<tofile bep_offset="0" lang="zh" title="种姓制度">5574</tofile>
+				<tofile bep_offset="0" lang="zh" title="乐金">265743</tofile>
+				<tofile bep_offset="0" lang="zh" title="美國">481</tofile>
+				<tofile bep_offset="0" lang="zh" title="親切的金子">1551356</tofile>
+				<tofile bep_offset="0" lang="zh" title="韩国">3121</tofile>
+				<tofile bep_offset="0" lang="zh" title="演員">9428</tofile>
+				<tofile bep_offset="0" lang="zh" title="日本放送協會">48644</tofile>
+				<tofile bep_offset="0" lang="zh" title="車仁杓">1179478</tofile>
+				<tofile bep_offset="0" lang="zh" title="2001年">4353</tofile>
+				<tofile bep_offset="0" lang="zh" title="2006年">73278</tofile>
+				<tofile bep_offset="0" lang="zh" title="1990年">4309</tofile>
+				<tofile bep_offset="0" lang="zh" title="2011年">186380</tofile>
+				<tofile bep_offset="0" lang="zh" title="初吻">897261</tofile>
+				<tofile bep_offset="0" lang="zh" title="欧洲">1728</tofile>
+				<tofile bep_offset="0" lang="zh" title="只愛陌生人">599199</tofile>
+				<tofile bep_offset="0" lang="zh" title="贱民">322772</tofile>
+				<tofile bep_offset="0" lang="zh" title="南亚">1053</tofile>
+				<tofile bep_offset="0" lang="zh" title="2000年">5136</tofile>
+				<tofile bep_offset="0" lang="zh" title="梅賽德斯-賓士">38472</tofile>
+				<tofile bep_offset="0" lang="zh" title="韓流">247201</tofile>
+				<tofile bep_offset="0" lang="zh" title="2004年">5159</tofile>
+				<tofile bep_offset="0" lang="zh" title="中东">5881</tofile>
+				<tofile bep_offset="0" lang="zh" title="硕士">52758</tofile>
+				<tofile bep_offset="0" lang="zh" title="李炳憲">88144</tofile>
+				<tofile bep_offset="0" lang="zh" title="英语">1180</tofile>
+				<tofile bep_offset="0" lang="zh" title="朝鲜族">5361</tofile>
+				<tofile bep_offset="0" lang="zh" title="車神傳說">1572974</tofile>
+				<tofile bep_offset="0" lang="zh" title="东南亚">1034</tofile>
+				<tofile bep_offset="0" lang="zh" title="禮物">622124</tofile>
+				<tofile bep_offset="0" lang="zh" title="淳安县">183386</tofile>
+				<tofile bep_offset="0" lang="zh" title="中央大學 (韓國)">93547</tofile>
+				<tofile bep_offset="0" lang="zh" title="德语">3491</tofile>
+				<tofile bep_offset="0" lang="zh" title="摄氏温标">4456</tofile>
+				<tofile bep_offset="0" lang="zh" title="8月24日">3952</tofile>
+				<tofile bep_offset="0" lang="zh" title="父親">158376</tofile>
+				<tofile bep_offset="0" lang="zh" title="愛情小說">552888</tofile>
+				<tofile bep_offset="0" lang="zh" title="2007年">31064</tofile>
+				<tofile bep_offset="0" lang="zh" title="雙胞胎">205029</tofile>
+				<tofile bep_offset="0" lang="zh" title="1995年">5143</tofile>
+				<tofile bep_offset="0" lang="zh" title="中國">263</tofile>
+				<tofile bep_offset="0" lang="zh" title="1997年">5141</tofile>
+				<tofile bep_offset="0" lang="zh" title="伊朗">5870</tofile>
+				<tofile bep_offset="0" lang="zh" title="韓亞航空">147527</tofile>
+				<tofile bep_offset="0" lang="zh" title="2009年">145744</tofile>
+				<tofile bep_offset="0" lang="zh" title="1991年">5147</tofile>
+				<tofile bep_offset="0" lang="zh" title="9月3日">4188</tofile>
+				<tofile bep_offset="0" lang="zh" title="學士">190766</tofile>
+				<tofile bep_offset="0" lang="zh" title="埃塞俄比亚">6342</tofile>
+				<tofile bep_offset="0" lang="zh" title="印度">450221</tofile>
+				<tofile bep_offset="0" lang="zh" title="西宮">523793</tofile>
+				<tofile bep_offset="0" lang="zh" title="2005年">47562</tofile>
+				<tofile bep_offset="0" lang="zh" title="东亚">1032</tofile>
+				<tofile bep_offset="0" lang="zh" title="浙江省">451</tofile>
+				<tofile bep_offset="0" lang="zh" title="日本">247418</tofile>
+				<tofile bep_offset="0" lang="zh" title="哈尔滨市">3515</tofile>
+				<tofile bep_offset="0" lang="zh" title="导演">16877</tofile>
+				<tofile bep_offset="0" lang="zh" title="盧武鉉">10111</tofile>
+				<tofile bep_offset="0" lang="zh" title="宋康昊">1180308</tofile>
+				<tofile bep_offset="0" lang="zh" title="漢陽大學">181135</tofile>
+				<tofile bep_offset="0" lang="zh" title="廣告">41091</tofile>
+				<tofile bep_offset="0" lang="zh" title="非洲">2394</tofile>
+				<tofile bep_offset="0" lang="zh" title="塔尔沙漠">1089160</tofile>
+				<tofile bep_offset="0" lang="zh" title="2003年">4178</tofile>
+				<tofile bep_offset="0" lang="zh" title="新加坡">247875</tofile>
+				<tofile bep_offset="0" lang="zh" title="諺文">329646</tofile>
+				<tofile bep_offset="0" lang="zh" title="香港">247430</tofile>
+				<tofile bep_offset="0" lang="zh" title="中央大学">30060</tofile>
+				<tofile bep_offset="0" lang="zh" title="博士">1116</tofile>
+				<tofile bep_offset="0" lang="zh" title="辛巴威">44902</tofile>
+				<tofile bep_offset="0" lang="zh" title="朝鮮語">903149</tofile>
+				<tofile bep_offset="0" lang="zh" title="陈可辛">105154</tofile>
+				<tofile bep_offset="0" lang="zh" title="台灣">690</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="174528" name="Saṃsāra"> 
+		<outgoing>
+			<anchor offset="290" length="10" name="Saṃsāra">
+				<tofile bep_offset="0" lang="zh" title="火影忍者">48272</tofile>
+				<tofile bep_offset="0" lang="zh" title="自在">204565</tofile>
+				<tofile bep_offset="0" lang="zh" title="意识">118086</tofile>
+				<tofile bep_offset="0" lang="zh" title="锡克教">23513</tofile>
+				<tofile bep_offset="0" lang="zh" title="自由">38680</tofile>
+				<tofile bep_offset="0" lang="zh" title="柏拉图主义">3386</tofile>
+				<tofile bep_offset="0" lang="zh" title="行 (佛教)">1486253</tofile>
+				<tofile bep_offset="0" lang="zh" title="佛教">847</tofile>
+				<tofile bep_offset="0" lang="zh" title="禁慾主義">163814</tofile>
+				<tofile bep_offset="0" lang="zh" title="六道">224296</tofile>
+				<tofile bep_offset="0" lang="zh" title="灵魂">12191</tofile>
+				<tofile bep_offset="0" lang="zh" title="耆那教">73036</tofile>
+				<tofile bep_offset="0" lang="zh" title="大圆满">1247854</tofile>
+				<tofile bep_offset="0" lang="zh" title="唐卡">98876</tofile>
+				<tofile bep_offset="0" lang="zh" title="印度教">4312</tofile>
+				<tofile bep_offset="0" lang="zh" title="梵语">57359</tofile>
+				<tofile bep_offset="0" lang="zh" title="马来语">76548</tofile>
+				<tofile bep_offset="0" lang="zh" title="苯教">18778</tofile>
+				<tofile bep_offset="0" lang="zh" title="轉世">98378</tofile>
+				<tofile bep_offset="0" lang="zh" title="涅槃">33748</tofile>
+				<tofile bep_offset="0" lang="zh" title="奥义书">448918</tofile>
+				<tofile bep_offset="0" lang="zh" title="生命">161</tofile>
+				<tofile bep_offset="0" lang="zh" title="日本漫画">54794</tofile>
+				<tofile bep_offset="0" lang="zh" title="業">263786</tofile>
+				<tofile bep_offset="0" lang="zh" title="死亡">12046</tofile>
+				<tofile bep_offset="0" lang="zh" title="罪 (宗教)">611489</tofile>
+				<tofile bep_offset="0" lang="zh" title="中陰">183432</tofile>
+				<tofile bep_offset="0" lang="zh" title="藏语">6013</tofile>
+				<tofile bep_offset="0" lang="zh" title="神">1166743</tofile>
+				<tofile bep_offset="0" lang="zh" title="鬼">83629</tofile>
+				<tofile bep_offset="0" lang="zh" title="地獄">185910</tofile>
+				<tofile bep_offset="0" lang="zh" title="IAST">479546</tofile>
+				<tofile bep_offset="0" lang="zh" title="佛">17227</tofile>
+				<tofile bep_offset="0" lang="zh" title="程式迴圈">1537024</tofile>
+				<tofile bep_offset="0" lang="zh" title="妙法莲华经">142449</tofile>
+				<tofile bep_offset="0" lang="zh" title="动物">25033</tofile>
+				<tofile bep_offset="0" lang="zh" title="德魯伊">118685</tofile>
+				<tofile bep_offset="0" lang="zh" title="五趣">1013071</tofile>
+				<tofile bep_offset="0" lang="zh" title="毕达哥拉斯">609</tofile>
+				<tofile bep_offset="0" lang="zh" title="三界">229986</tofile>
+				<tofile bep_offset="0" lang="zh" title="阿罗汉">36422</tofile>
+				<tofile bep_offset="0" lang="zh" title="柏拉图">637</tofile>
+				<tofile bep_offset="0" lang="zh" title="古希腊">7665</tofile>
+				<tofile bep_offset="0" lang="zh" title="生态学">48330</tofile>
+				<tofile bep_offset="0" lang="zh" title="復活">534537</tofile>
+				<tofile bep_offset="0" lang="zh" title="原始佛教">270630</tofile>
+				<tofile bep_offset="0" lang="zh" title="祖古">1244734</tofile>
+				<tofile bep_offset="0" lang="zh" title="婆罗门教">18870</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="3989039" name="Mawangdui"> 
+		<outgoing>
+			<anchor offset="290" length="9" name="Mawangdui">
+				<tofile bep_offset="0" lang="zh" title="前168年">35298</tofile>
+				<tofile bep_offset="0" lang="zh" title="南越国">45207</tofile>
+				<tofile bep_offset="0" lang="zh" title="戰國策">4042</tofile>
+				<tofile bep_offset="0" lang="zh" title="禁止出国（境）展览文物">1038994</tofile>
+				<tofile bep_offset="0" lang="zh" title="湖南省博物馆">218827</tofile>
+				<tofile bep_offset="0" lang="zh" title="丝绸历史">1790767</tofile>
+				<tofile bep_offset="0" lang="zh" title="中华人民共和国">118</tofile>
+				<tofile bep_offset="0" lang="zh" title="汉朝">1661</tofile>
+				<tofile bep_offset="0" lang="zh" title="广西壮族自治区">453</tofile>
+				<tofile bep_offset="0" lang="zh" title="心肌梗死">161198</tofile>
+				<tofile bep_offset="0" lang="zh" title="辛追">1475661</tofile>
+				<tofile bep_offset="0" lang="zh" title="易经">4326</tofile>
+				<tofile bep_offset="0" lang="zh" title="广东省">412</tofile>
+				<tofile bep_offset="0" lang="zh" title="木乃伊">39961</tofile>
+				<tofile bep_offset="0" lang="zh" title="丝绸">108721</tofile>
+				<tofile bep_offset="0" lang="zh" title="漆器">166912</tofile>
+				<tofile bep_offset="0" lang="zh" title="木炭">589861</tofile>
+				<tofile bep_offset="0" lang="zh" title="嫦娥">19969</tofile>
+				<tofile bep_offset="0" lang="zh" title="曾侯乙墓">97607</tofile>
+				<tofile bep_offset="0" lang="zh" title="汉文帝">38105</tofile>
+				<tofile bep_offset="0" lang="zh" title="黄老道">545473</tofile>
+				<tofile bep_offset="0" lang="zh" title="遺跡">433679</tofile>
+				<tofile bep_offset="0" lang="zh" title="长沙市">4664</tofile>
+				<tofile bep_offset="0" lang="zh" title="马王堆帛书">473042</tofile>
+				<tofile bep_offset="0" lang="zh" title="湖南省">2946</tofile>
+				<tofile bep_offset="0" lang="zh" title="云">2160</tofile>
+				<tofile bep_offset="0" lang="zh" title="气功">43831</tofile>
+				<tofile bep_offset="0" lang="zh" title="秦国">9158</tofile>
+				<tofile bep_offset="0" lang="zh" title="占卜">67549</tofile>
+				<tofile bep_offset="0" lang="zh" title="科学">4224</tofile>
+				<tofile bep_offset="0" lang="zh" title="占星学">15567</tofile>
+				<tofile bep_offset="0" lang="zh" title="考古学">1145</tofile>
+				<tofile bep_offset="0" lang="zh" title="坟墓">267710</tofile>
+				<tofile bep_offset="0" lang="zh" title="劉發">756901</tofile>
+				<tofile bep_offset="0" lang="zh" title="五代十国">921</tofile>
+				<tofile bep_offset="0" lang="zh" title="马楚">7257</tofile>
+				<tofile bep_offset="0" lang="zh" title="家族">189974</tofile>
+				<tofile bep_offset="0" lang="zh" title="房中术">116453</tofile>
+				<tofile bep_offset="0" lang="zh" title="紙錢">111129</tofile>
+				<tofile bep_offset="0" lang="zh" title="浏阳河">173310</tofile>
+				<tofile bep_offset="0" lang="zh" title="陪葬品">228575</tofile>
+				<tofile bep_offset="0" lang="zh" title="郊区 (长沙市)">150999</tofile>
+				<tofile bep_offset="0" lang="zh" title="芙蓉区">55466</tofile>
+				<tofile bep_offset="0" lang="zh" title="1972年">12029</tofile>
+				<tofile bep_offset="0" lang="zh" title="长沙国">38465</tofile>
+				<tofile bep_offset="0" lang="zh" title="马殷">7260</tofile>
+				<tofile bep_offset="0" lang="zh" title="文物">1278</tofile>
+				<tofile bep_offset="0" lang="zh" title="鞍">1443470</tofile>
+				<tofile bep_offset="0" lang="zh" title="医学">2373</tofile>
+				<tofile bep_offset="0" lang="zh" title="西汉">19350</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="249299" name="Zhu Bajie"> 
+		<outgoing>
+			<anchor offset="290" length="9" name="Zhu Bajie">
+				<tofile bep_offset="0" lang="zh" title="猪属">20704</tofile>
+				<tofile bep_offset="0" lang="zh" title="孙悟空">11200</tofile>
+				<tofile bep_offset="0" lang="zh" title="人">37075</tofile>
+				<tofile bep_offset="0" lang="zh" title="觀世音菩薩">180638</tofile>
+				<tofile bep_offset="0" lang="zh" title="阿罗汉">36422</tofile>
+				<tofile bep_offset="0" lang="zh" title="英语">1180</tofile>
+				<tofile bep_offset="0" lang="zh" title="菩萨">17228</tofile>
+				<tofile bep_offset="0" lang="zh" title="嫦娥">19969</tofile>
+				<tofile bep_offset="0" lang="zh" title="沙僧">25974</tofile>
+				<tofile bep_offset="0" lang="zh" title="佛">17227</tofile>
+				<tofile bep_offset="0" lang="zh" title="玉皇大帝">54918</tofile>
+				<tofile bep_offset="0" lang="zh" title="西游记">11199</tofile>
+				<tofile bep_offset="0" lang="zh" title="耙">941008</tofile>
+				<tofile bep_offset="0" lang="zh" title="外丹术">1104709</tofile>
+				<tofile bep_offset="0" lang="zh" title="春光灿烂猪八戒">1271247</tofile>
+				<tofile bep_offset="0" lang="zh" title="法号">606480</tofile>
+				<tofile bep_offset="0" lang="zh" title="鲁迅">693</tofile>
+				<tofile bep_offset="0" lang="zh" title="福星高照猪八戒">1263192</tofile>
+				<tofile bep_offset="0" lang="zh" title="蟠桃会">68970</tofile>
+				<tofile bep_offset="0" lang="zh" title="天蓬元帥">258500</tofile>
+				<tofile bep_offset="0" lang="zh" title="太上老君">66067</tofile>
+				<tofile bep_offset="0" lang="zh" title="月球">3376</tofile>
+				<tofile bep_offset="0" lang="zh" title="天國">129009</tofile>
+				<tofile bep_offset="0" lang="zh" title="陈寅恪">17254</tofile>
+				<tofile bep_offset="0" lang="zh" title="西游记角色列表">53748</tofile>
+				<tofile bep_offset="0" lang="zh" title="干宝">75938</tofile>
+				<tofile bep_offset="0" lang="zh" title="下凡">154453</tofile>
+				<tofile bep_offset="0" lang="zh" title="家猪">1711590</tofile>
+				<tofile bep_offset="0" lang="zh" title="斤">35885</tofile>
+				<tofile bep_offset="0" lang="zh" title="搜神记">70515</tofile>
+				<tofile bep_offset="0" lang="zh" title="喜气洋洋猪八戒">1263279</tofile>
+				<tofile bep_offset="0" lang="zh" title="吳自牧">1116329</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="4898073" name="Crown Prince Sado"> 
+		<outgoing>
+			<anchor offset="290" length="17" name="Crown Prince Sado">
+				<tofile bep_offset="0" lang="zh" title="君主">163319</tofile>
+				<tofile bep_offset="0" lang="zh" title="朝鮮正祖">132050</tofile>
+				<tofile bep_offset="0" lang="zh" title="朝鲜 (称谓)">1314</tofile>
+				<tofile bep_offset="0" lang="zh" title="水原市">188925</tofile>
+				<tofile bep_offset="0" lang="zh" title="精神病">486093</tofile>
+				<tofile bep_offset="0" lang="zh" title="朝鮮英祖">132036</tofile>
+				<tofile bep_offset="0" lang="zh" title="华城">950208</tofile>
+				<tofile bep_offset="0" lang="zh" title="延齡君">267666</tofile>
+				<tofile bep_offset="0" lang="zh" title="文孝世子">1292154</tofile>
+				<tofile bep_offset="0" lang="zh" title="孝懿王后">1040808</tofile>
+				<tofile bep_offset="0" lang="zh" title="首爾大學">35714</tofile>
+				<tofile bep_offset="0" lang="zh" title="东京大学">33901</tofile>
+				<tofile bep_offset="0" lang="zh" title="朝鮮高宗">10089</tofile>
+				<tofile bep_offset="0" lang="zh" title="世子">104425</tofile>
+				<tofile bep_offset="0" lang="zh" title="1735年">15256</tofile>
+				<tofile bep_offset="0" lang="zh" title="南延君">123863</tofile>
+				<tofile bep_offset="0" lang="zh" title="恩信君">259017</tofile>
+				<tofile bep_offset="0" lang="zh" title="日本">247418</tofile>
+				<tofile bep_offset="0" lang="zh" title="全溪大院君">1334388</tofile>
+				<tofile bep_offset="0" lang="zh" title="1762年">15284</tofile>
+				<tofile bep_offset="0" lang="zh" title="朝鲜王朝">1069451</tofile>
+				<tofile bep_offset="0" lang="zh" title="朝鮮真宗">132101</tofile>
+				<tofile bep_offset="0" lang="zh" title="昌慶宮">706994</tofile>
+				<tofile bep_offset="0" lang="zh" title="朝鮮王朝實錄">93872</tofile>
+				<tofile bep_offset="0" lang="zh" title="朝鮮哲宗">132125</tofile>
+				<tofile bep_offset="0" lang="zh" title="谥号">6737</tofile>
+				<tofile bep_offset="0" lang="zh" title="朝鮮純祖">113263</tofile>
+				<tofile bep_offset="0" lang="zh" title="兴宣大院君">10099</tofile>
+				<tofile bep_offset="0" lang="zh" title="景嬪朴氏">1278661</tofile>
+				<tofile bep_offset="0" lang="zh" title="貞純王后">718200</tofile>
+				<tofile bep_offset="0" lang="zh" title="暎嬪李氏">712821</tofile>
+				<tofile bep_offset="0" lang="zh" title="贞圣王后">1331167</tofile>
+				<tofile bep_offset="0" lang="zh" title="獻敬王后">768301</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="961283" name="Tieguanyin"> 
+		<outgoing>
+			<anchor offset="290" length="10" name="Tieguanyin">
+				<tofile bep_offset="0" lang="zh" title="浙江省">451</tofile>
+				<tofile bep_offset="0" lang="zh" title="觀世音菩薩">180638</tofile>
+				<tofile bep_offset="0" lang="zh" title="乌龙茶">25726</tofile>
+				<tofile bep_offset="0" lang="zh" title="乾隆帝">2664</tofile>
+				<tofile bep_offset="0" lang="zh" title="福建省">406</tofile>
+				<tofile bep_offset="0" lang="zh" title="安溪县">1169161</tofile>
+				<tofile bep_offset="0" lang="zh" title="綠茶">25723</tofile>
+				<tofile bep_offset="0" lang="zh" title="南投">41662</tofile>
+				<tofile bep_offset="0" lang="zh" title="中华人民共和国">118</tofile>
+				<tofile bep_offset="0" lang="zh" title="台灣">690</tofile>
+				<tofile bep_offset="0" lang="zh" title="普陀山">21985</tofile>
+				<tofile bep_offset="0" lang="zh" title="毛蟹">1230956</tofile>
+				<tofile bep_offset="0" lang="zh" title="中國">263</tofile>
+				<tofile bep_offset="0" lang="zh" title="立夏">71240</tofile>
+				<tofile bep_offset="0" lang="zh" title="泉州市">16623</tofile>
+				<tofile bep_offset="0" lang="zh" title="漳州市">19936</tofile>
+				<tofile bep_offset="0" lang="zh" title="永春县">98325</tofile>
+				<tofile bep_offset="0" lang="zh" title="季">801453</tofile>
+				<tofile bep_offset="0" lang="zh" title="处暑">71249</tofile>
+				<tofile bep_offset="0" lang="zh" title="黄金桂">1230935</tofile>
+				<tofile bep_offset="0" lang="zh" title="1950年">24170</tofile>
+				<tofile bep_offset="0" lang="zh" title="1979年">26283</tofile>
+				<tofile bep_offset="0" lang="zh" title="立秋">71246</tofile>
+				<tofile bep_offset="0" lang="zh" title="红茶">25727</tofile>
+				<tofile bep_offset="0" lang="zh" title="潮州市">18978</tofile>
+				<tofile bep_offset="0" lang="zh" title="泰国">10926</tofile>
+				<tofile bep_offset="0" lang="zh" title="漳平市">87783</tofile>
+				<tofile bep_offset="0" lang="zh" title="日本">247418</tofile>
+				<tofile bep_offset="0" lang="zh" title="石門區">26599</tofile>
+				<tofile bep_offset="0" lang="zh" title="臺北市">748590</tofile>
+				<tofile bep_offset="0" lang="zh" title="新北市">20029</tofile>
+				<tofile bep_offset="0" lang="zh" title="本山">1370412</tofile>
+				<tofile bep_offset="0" lang="zh" title="南靖县">73101</tofile>
+				<tofile bep_offset="0" lang="zh" title="广东省">412</tofile>
+				<tofile bep_offset="0" lang="zh" title="闽">1168924</tofile>
+				<tofile bep_offset="0" lang="zh" title="寒露">71252</tofile>
+				<tofile bep_offset="0" lang="zh" title="新加坡">247875</tofile>
+				<tofile bep_offset="0" lang="zh" title="香港">247430</tofile>
+				<tofile bep_offset="0" lang="zh" title="1984年">6029</tofile>
+				<tofile bep_offset="0" lang="zh" title="1945年">18474</tofile>
+				<tofile bep_offset="0" lang="zh" title="汕头市">24816</tofile>
+				<tofile bep_offset="0" lang="zh" title="清水巖">772092</tofile>
+				<tofile bep_offset="0" lang="zh" title="文山區">734</tofile>
+				<tofile bep_offset="0" lang="zh" title="厦门市">12160</tofile>
+				<tofile bep_offset="0" lang="zh" title="华安县">72334</tofile>
+				<tofile bep_offset="0" lang="zh" title="谷雨">71239</tofile>
+				<tofile bep_offset="0" lang="zh" title="工夫茶">162431</tofile>
+				<tofile bep_offset="0" lang="zh" title="越南">1715</tofile>
+				<tofile bep_offset="0" lang="zh" title="澳門">16175</tofile>
+				<tofile bep_offset="0" lang="zh" title="秋分">2535</tofile>
+				<tofile bep_offset="0" lang="zh" title="1982年">22648</tofile>
+				<tofile bep_offset="0" lang="zh" title="印度尼西亚">4506</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="279684" name="Chef"> 
+		<outgoing>
+			<anchor offset="290" length="4" name="Chef">
+				<tofile bep_offset="0" lang="zh" title="家禽">39341</tofile>
+				<tofile bep_offset="0" lang="zh" title="煸">637750</tofile>
+				<tofile bep_offset="0" lang="zh" title="沙律">107683</tofile>
+				<tofile bep_offset="0" lang="zh" title="木鞋">656091</tofile>
+				<tofile bep_offset="0" lang="zh" title="纸杯蛋糕">422235</tofile>
+				<tofile bep_offset="0" lang="zh" title="法语">1442</tofile>
+				<tofile bep_offset="0" lang="zh" title="北京烤鸭">35280</tofile>
+				<tofile bep_offset="0" lang="zh" title="煎">16627</tofile>
+				<tofile bep_offset="0" lang="zh" title="巧克力">41836</tofile>
+				<tofile bep_offset="0" lang="zh" title="烧 (中餐)">637756</tofile>
+				<tofile bep_offset="0" lang="zh" title="英语">1180</tofile>
+				<tofile bep_offset="0" lang="zh" title="同源词">901458</tofile>
+				<tofile bep_offset="0" lang="zh" title="前菜">1284896</tofile>
+				<tofile bep_offset="0" lang="zh" title="醬">41621</tofile>
+				<tofile bep_offset="0" lang="zh" title="墨西哥">6928</tofile>
+				<tofile bep_offset="0" lang="zh" title="人民">184649</tofile>
+				<tofile bep_offset="0" lang="zh" title="蔬菜">1510186</tofile>
+				<tofile bep_offset="0" lang="zh" title="廚房">184143</tofile>
+				<tofile bep_offset="0" lang="zh" title="拉丁语">1970</tofile>
+				<tofile bep_offset="0" lang="zh" title="饼干">336649</tofile>
+				<tofile bep_offset="0" lang="zh" title="肉类食物">93844</tofile>
+				<tofile bep_offset="0" lang="zh" title="鱼">25117</tofile>
+				<tofile bep_offset="0" lang="zh" title="飯廳">184148</tofile>
+				<tofile bep_offset="0" lang="zh" title="馬卡龍">268923</tofile>
+				<tofile bep_offset="0" lang="zh" title="清朝">2090</tofile>
+				<tofile bep_offset="0" lang="zh" title="波登不設限">744565</tofile>
+				<tofile bep_offset="0" lang="zh" title="楚辞">26085</tofile>
+				<tofile bep_offset="0" lang="zh" title="貴族">193702</tofile>
+				<tofile bep_offset="0" lang="zh" title="杰米·奧利弗">273534</tofile>
+				<tofile bep_offset="0" lang="zh" title="安東尼·波登">156464</tofile>
+				<tofile bep_offset="0" lang="zh" title="汉朝">1661</tofile>
+				<tofile bep_offset="0" lang="zh" title="鄭衍基">767385</tofile>
+				<tofile bep_offset="0" lang="zh" title="欧洲">1728</tofile>
+				<tofile bep_offset="0" lang="zh" title="16世纪">5369</tofile>
+				<tofile bep_offset="0" lang="zh" title="職業">162183</tofile>
+				<tofile bep_offset="0" lang="zh" title="春秋">187460</tofile>
+				<tofile bep_offset="0" lang="zh" title="甄文達">328551</tofile>
+				<tofile bep_offset="0" lang="zh" title="陳東">566404</tofile>
+				<tofile bep_offset="0" lang="zh" title="巴比·福雷">387363</tofile>
+				<tofile bep_offset="0" lang="zh" title="易牙">305332</tofile>
+				<tofile bep_offset="0" lang="zh" title="甄能煮">286760</tofile>
+				<tofile bep_offset="0" lang="zh" title="尧">14183</tofile>
+				<tofile bep_offset="0" lang="zh" title="管理学">2326</tofile>
+				<tofile bep_offset="0" lang="zh" title="地狱厨房">1209083</tofile>
+				<tofile bep_offset="0" lang="zh" title="法国大革命">12513</tofile>
+				<tofile bep_offset="0" lang="zh" title="法国">543</tofile>
+				<tofile bep_offset="0" lang="zh" title="作家">4161</tofile>
+				<tofile bep_offset="0" lang="zh" title="中国传说时代">233202</tofile>
+				<tofile bep_offset="0" lang="zh" title="中國">263</tofile>
+				<tofile bep_offset="0" lang="zh" title="舜">4332</tofile>
+				<tofile bep_offset="0" lang="zh" title="商业">22028</tofile>
+				<tofile bep_offset="0" lang="zh" title="蔡明昊">387339</tofile>
+				<tofile bep_offset="0" lang="zh" title="人">37075</tofile>
+				<tofile bep_offset="0" lang="zh" title="庄子">2168</tofile>
+				<tofile bep_offset="0" lang="zh" title="彭城郡">1129397</tofile>
+				<tofile bep_offset="0" lang="zh" title="19世纪">4708</tofile>
+				<tofile bep_offset="0" lang="zh" title="齐桓公">38008</tofile>
+				<tofile bep_offset="0" lang="zh" title="茱莉亞·蔡爾德">387334</tofile>
+				<tofile bep_offset="0" lang="zh" title="大長今 (電視劇)">83898</tofile>
+				<tofile bep_offset="0" lang="zh" title="烹饪">3509</tofile>
+				<tofile bep_offset="0" lang="zh" title="伊尹">109452</tofile>
+				<tofile bep_offset="0" lang="zh" title="楊貫一">143278</tofile>
+				<tofile bep_offset="0" lang="zh" title="印度">450221</tofile>
+				<tofile bep_offset="0" lang="zh" title="鐵人料理">677433</tofile>
+				<tofile bep_offset="0" lang="zh" title="社会">329031</tofile>
+				<tofile bep_offset="0" lang="zh" title="傅培梅">167240</tofile>
+				<tofile bep_offset="0" lang="zh" title="王逸">235983</tofile>
+				<tofile bep_offset="0" lang="zh" title="宋高宗">18954</tofile>
+				<tofile bep_offset="0" lang="zh" title="雅克·貝潘">387381</tofile>
+				<tofile bep_offset="0" lang="zh" title="電視廣播有限公司">7085</tofile>
+				<tofile bep_offset="0" lang="zh" title="周中">353883</tofile>
+				<tofile bep_offset="0" lang="zh" title="袁枚">109469</tofile>
+				<tofile bep_offset="0" lang="zh" title="南宋">16650</tofile>
+				<tofile bep_offset="0" lang="zh" title="商汤">6813</tofile>
+				<tofile bep_offset="0" lang="zh" title="馬利歐·巴塔利">387365</tofile>
+				<tofile bep_offset="0" lang="zh" title="行政主廚">1551435</tofile>
+				<tofile bep_offset="0" lang="zh" title="鍾錦">699402</tofile>
+				<tofile bep_offset="0" lang="zh" title="帽子">310748</tofile>
+				<tofile bep_offset="0" lang="zh" title="刀削面">42609</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="6326659" name="Japanese giant salamander"> 
+		<outgoing>
+			<anchor offset="290" length="25" name="Japanese giant salamander">
+				<tofile bep_offset="0" lang="zh" title="代谢">1370</tofile>
+				<tofile bep_offset="0" lang="zh" title="九州 (日本)">26240</tofile>
+				<tofile bep_offset="0" lang="zh" title="特有種">70169</tofile>
+				<tofile bep_offset="0" lang="zh" title="莱顿">572725</tofile>
+				<tofile bep_offset="0" lang="zh" title="小鲵">607160</tofile>
+				<tofile bep_offset="0" lang="zh" title="國際自然保護聯盟">184342</tofile>
+				<tofile bep_offset="0" lang="zh" title="武士 (日本)">99124</tofile>
+				<tofile bep_offset="0" lang="zh" title="浮世繪">154555</tofile>
+				<tofile bep_offset="0" lang="zh" title="日本">247418</tofile>
+				<tofile bep_offset="0" lang="zh" title="体侧线">235281</tofile>
+				<tofile bep_offset="0" lang="zh" title="鳃">226197</tofile>
+				<tofile bep_offset="0" lang="zh" title="有尾目">135038</tofile>
+				<tofile bep_offset="0" lang="zh" title="溪">8282</tofile>
+				<tofile bep_offset="0" lang="zh" title="四國">351647</tofile>
+				<tofile bep_offset="0" lang="zh" title="荷兰">4090</tofile>
+				<tofile bep_offset="0" lang="zh" title="卵">153894</tofile>
+				<tofile bep_offset="0" lang="zh" title="出島">586987</tofile>
+				<tofile bep_offset="0" lang="zh" title="菲利普·弗蘭茲·馮·西博爾德">930070</tofile>
+				<tofile bep_offset="0" lang="zh" title="本州">38324</tofile>
+				<tofile bep_offset="0" lang="zh" title="瀕危野生動植物種國際貿易公約">111601</tofile>
+				<tofile bep_offset="0" lang="zh" title="氧">2738</tofile>
+				<tofile bep_offset="0" lang="zh" title="水生動物">943464</tofile>
+				<tofile bep_offset="0" lang="zh" title="中國大鯢">260097</tofile>
+				<tofile bep_offset="0" lang="zh" title="近危物种">975468</tofile>
+				<tofile bep_offset="0" lang="zh" title="歌川國芳">315754</tofile>
+				<tofile bep_offset="0" lang="zh" title="棲息地破壞">1457345</tofile>
+				<tofile bep_offset="0" lang="zh" title="夜行性">741477</tofile>
+				<tofile bep_offset="0" lang="zh" title="山椒魚">399983</tofile>
+				<tofile bep_offset="0" lang="zh" title="肢">772200</tofile>
+				<tofile bep_offset="0" lang="zh" title="腳趾">801561</tofile>
+				<tofile bep_offset="0" lang="zh" title="米 (单位)">3640</tofile>
+				<tofile bep_offset="0" lang="zh" title="九州">26088</tofile>
+				<tofile bep_offset="0" lang="zh" title="大鯢">262599</tofile>
+				<tofile bep_offset="0" lang="zh" title="双名法">3506</tofile>
+				<tofile bep_offset="0" lang="zh" title="國寶">566628</tofile>
+				<tofile bep_offset="0" lang="zh" title="尾">391386</tofile>
+				<tofile bep_offset="0" lang="zh" title="手指">134597</tofile>
+				<tofile bep_offset="0" lang="zh" title="花椒">33079</tofile>
+				<tofile bep_offset="0" lang="zh" title="鱼">25117</tofile>
+				<tofile bep_offset="0" lang="zh" title="厘米">5278</tofile>
+				<tofile bep_offset="0" lang="zh" title="物种">34427</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="744553" name="Tolui"> 
+		<outgoing>
+			<anchor offset="290" length="5" name="Tolui">
+				<tofile bep_offset="0" lang="zh" title="蒙古侵略歐洲">1186943</tofile>
+				<tofile bep_offset="0" lang="zh" title="伊朗">5870</tofile>
+				<tofile bep_offset="0" lang="zh" title="贵由">184494</tofile>
+				<tofile bep_offset="0" lang="zh" title="朮赤">39500</tofile>
+				<tofile bep_offset="0" lang="zh" title="蒙古帝国">109435</tofile>
+				<tofile bep_offset="0" lang="zh" title="姓氏">2289</tofile>
+				<tofile bep_offset="0" lang="zh" title="元朝">923</tofile>
+				<tofile bep_offset="0" lang="zh" title="皇帝">6186</tofile>
+				<tofile bep_offset="0" lang="zh" title="北元">45354</tofile>
+				<tofile bep_offset="0" lang="zh" title="大呼罗珊">1213865</tofile>
+				<tofile bep_offset="0" lang="zh" title="唆鲁禾帖尼">1420269</tofile>
+				<tofile bep_offset="0" lang="zh" title="庙号">3107</tofile>
+				<tofile bep_offset="0" lang="zh" title="伊兒汗國">106305</tofile>
+				<tofile bep_offset="0" lang="zh" title="蒙古国">5308</tofile>
+				<tofile bep_offset="0" lang="zh" title="可汗">105818</tofile>
+				<tofile bep_offset="0" lang="zh" title="王汗">403238</tofile>
+				<tofile bep_offset="0" lang="zh" title="蒙古秘史">527493</tofile>
+				<tofile bep_offset="0" lang="zh" title="蒙哥">46213</tofile>
+				<tofile bep_offset="0" lang="zh" title="梅尔夫">593341</tofile>
+				<tofile bep_offset="0" lang="zh" title="阿里不哥">100232</tofile>
+				<tofile bep_offset="0" lang="zh" title="博爾濟吉特氏">503242</tofile>
+				<tofile bep_offset="0" lang="zh" title="西夏">8231</tofile>
+				<tofile bep_offset="0" lang="zh" title="军事家">1416649</tofile>
+				<tofile bep_offset="0" lang="zh" title="鞑靼人">219146</tofile>
+				<tofile bep_offset="0" lang="zh" title="旭烈兀">196240</tofile>
+				<tofile bep_offset="0" lang="zh" title="忽必烈">5527</tofile>
+				<tofile bep_offset="0" lang="zh" title="孛兒帖">189427</tofile>
+				<tofile bep_offset="0" lang="zh" title="窝阔台">37584</tofile>
+				<tofile bep_offset="0" lang="zh" title="华北地区">42837</tofile>
+				<tofile bep_offset="0" lang="zh" title="德兴市">89438</tofile>
+				<tofile bep_offset="0" lang="zh" title="成吉思汗">5319</tofile>
+				<tofile bep_offset="0" lang="zh" title="金朝">36985</tofile>
+				<tofile bep_offset="0" lang="zh" title="康里">561615</tofile>
+				<tofile bep_offset="0" lang="zh" title="7月1日">2004</tofile>
+				<tofile bep_offset="0" lang="zh" title="大元">561073</tofile>
+				<tofile bep_offset="0" lang="zh" title="1260年">14780</tofile>
+				<tofile bep_offset="0" lang="zh" title="戊子">46619</tofile>
+				<tofile bep_offset="0" lang="zh" title="布哈拉">377189</tofile>
+				<tofile bep_offset="0" lang="zh" title="呼罗珊">58666</tofile>
+				<tofile bep_offset="0" lang="zh" title="察合台">133875</tofile>
+				<tofile bep_offset="0" lang="zh" title="1192年">14713</tofile>
+				<tofile bep_offset="0" lang="zh" title="1266年">14786</tofile>
+				<tofile bep_offset="0" lang="zh" title="武装力量">19493</tofile>
+				<tofile bep_offset="0" lang="zh" title="民國">187498</tofile>
+				<tofile bep_offset="0" lang="zh" title="三峰山之战">453349</tofile>
+				<tofile bep_offset="0" lang="zh" title="公元">6453</tofile>
+				<tofile bep_offset="0" lang="zh" title="至大">193714</tofile>
+				<tofile bep_offset="0" lang="zh" title="谥号">6737</tofile>
+				<tofile bep_offset="0" lang="zh" title="1251年">14771</tofile>
+				<tofile bep_offset="0" lang="zh" title="1259年">14779</tofile>
+				<tofile bep_offset="0" lang="zh" title="1月7日">10666</tofile>
+				<tofile bep_offset="0" lang="zh" title="8月25日">3953</tofile>
+				<tofile bep_offset="0" lang="zh" title="斡耳朵">651284</tofile>
+				<tofile bep_offset="0" lang="zh" title="陕西省">441</tofile>
+				<tofile bep_offset="0" lang="zh" title="山东省">443</tofile>
+				<tofile bep_offset="0" lang="zh" title="洋县">110837</tofile>
+				<tofile bep_offset="0" lang="zh" title="柯劭忞">135749</tofile>
+				<tofile bep_offset="0" lang="zh" title="汉中市">100342</tofile>
+				<tofile bep_offset="0" lang="zh" title="1310年">14833</tofile>
+				<tofile bep_offset="0" lang="zh" title="元武宗">185834</tofile>
+				<tofile bep_offset="0" lang="zh" title="蒙古">1050351</tofile>
+				<tofile bep_offset="0" lang="zh" title="完顏陳和尚">132012</tofile>
+				<tofile bep_offset="0" lang="zh" title="9月13日">4427</tofile>
+				<tofile bep_offset="0" lang="zh" title="海山">196626</tofile>
+				<tofile bep_offset="0" lang="zh" title="至元">53046</tofile>
+				<tofile bep_offset="0" lang="zh" title="1213年">14734</tofile>
+				<tofile bep_offset="0" lang="zh" title="禹州市">152335</tofile>
+				<tofile bep_offset="0" lang="zh" title="库力台大会">442123</tofile>
+				<tofile bep_offset="0" lang="zh" title="撒馬爾罕">15930</tofile>
+				<tofile bep_offset="0" lang="zh" title="南宋">16650</tofile>
+				<tofile bep_offset="0" lang="zh" title="易县">241982</tofile>
+				<tofile bep_offset="0" lang="zh" title="新元史">135751</tofile>
+				<tofile bep_offset="0" lang="zh" title="1229年">14750</tofile>
+				<tofile bep_offset="0" lang="zh" title="1221年">14742</tofile>
+				<tofile bep_offset="0" lang="zh" title="河南省">427</tofile>
+				<tofile bep_offset="0" lang="zh" title="正史">228595</tofile>
+				<tofile bep_offset="0" lang="zh" title="1232年">14753</tofile>
+				<tofile bep_offset="0" lang="zh" title="1219年">14740</tofile>
+				<tofile bep_offset="0" lang="zh" title="1231年">14752</tofile>
+				<tofile bep_offset="0" lang="zh" title="湖北省">429</tofile>
+				<tofile bep_offset="0" lang="zh" title="干支">429275</tofile>
+				<tofile bep_offset="0" lang="zh" title="涿州市">152436</tofile>
+				<tofile bep_offset="0" lang="zh" title="1227年">14748</tofile>
+				<tofile bep_offset="0" lang="zh" title="1228年">14749</tofile>
+				<tofile bep_offset="0" lang="zh" title="河北省">423</tofile>
+				<tofile bep_offset="0" lang="zh" title="均州">1242877</tofile>
+				<tofile bep_offset="0" lang="zh" title="光化">302482</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="220432" name="Xylitol"> 
+		<outgoing>
+			<anchor offset="290" length="7" name="Xylitol">
+				<tofile bep_offset="0" lang="zh" title="升糖指数">804582</tofile>
+				<tofile bep_offset="0" lang="zh" title="甘露醇">203583</tofile>
+				<tofile bep_offset="0" lang="zh" title="中性白血球">174318</tofile>
+				<tofile bep_offset="0" lang="zh" title="骨骼">96251</tofile>
+				<tofile bep_offset="0" lang="zh" title="糖尿病">48615</tofile>
+				<tofile bep_offset="0" lang="zh" title="食糖">794234</tofile>
+				<tofile bep_offset="0" lang="zh" title="甜味剂">211915</tofile>
+				<tofile bep_offset="0" lang="zh" title="中华人民共和国">118</tofile>
+				<tofile bep_offset="0" lang="zh" title="胰岛素">135572</tofile>
+				<tofile bep_offset="0" lang="zh" title="欧洲">1728</tofile>
+				<tofile bep_offset="0" lang="zh" title="口香糖">384522</tofile>
+				<tofile bep_offset="0" lang="zh" title="同分異構">100806</tofile>
+				<tofile bep_offset="0" lang="zh" title="毒性">561067</tofile>
+				<tofile bep_offset="0" lang="zh" title="木糖">1049714</tofile>
+				<tofile bep_offset="0" lang="zh" title="潔齒劑">285034</tofile>
+				<tofile bep_offset="0" lang="zh" title="果实">34240</tofile>
+				<tofile bep_offset="0" lang="zh" title="醛">117701</tofile>
+				<tofile bep_offset="0" lang="zh" title="卡路里">7036</tofile>
+				<tofile bep_offset="0" lang="zh" title="麵包">80319</tofile>
+				<tofile bep_offset="0" lang="zh" title="细菌">4849</tofile>
+				<tofile bep_offset="0" lang="zh" title="甘蔗">157597</tofile>
+				<tofile bep_offset="0" lang="zh" title="美国食品药品监督管理局">289280</tofile>
+				<tofile bep_offset="0" lang="zh" title="手性">288167</tofile>
+				<tofile bep_offset="0" lang="zh" title="蔬菜">1510186</tofile>
+				<tofile bep_offset="0" lang="zh" title="玉米">39251</tofile>
+				<tofile bep_offset="0" lang="zh" title="牙菌斑">523634</tofile>
+				<tofile bep_offset="0" lang="zh" title="中耳">399162</tofile>
+				<tofile bep_offset="0" lang="zh" title="腹瀉">78825</tofile>
+				<tofile bep_offset="0" lang="zh" title="硬木">196146</tofile>
+				<tofile bep_offset="0" lang="zh" title="果糖">72879</tofile>
+				<tofile bep_offset="0" lang="zh" title="甜菊屬">1641433</tofile>
+				<tofile bep_offset="0" lang="zh" title="敗血症">479870</tofile>
+				<tofile bep_offset="0" lang="zh" title="山梨糖醇">265342</tofile>
+				<tofile bep_offset="0" lang="zh" title="漱口水">815021</tofile>
+				<tofile bep_offset="0" lang="zh" title="氢化">87710</tofile>
+				<tofile bep_offset="0" lang="zh" title="浆果">187480</tofile>
+				<tofile bep_offset="0" lang="zh" title="蕈類">537533</tofile>
+				<tofile bep_offset="0" lang="zh" title="耳垢">410117</tofile>
+				<tofile bep_offset="0" lang="zh" title="燕麦">206639</tofile>
+				<tofile bep_offset="0" lang="zh" title="狮子狗">117550</tofile>
+				<tofile bep_offset="0" lang="zh" title="克">21710</tofile>
+				<tofile bep_offset="0" lang="zh" title="屁">396820</tofile>
+				<tofile bep_offset="0" lang="zh" title="葡萄糖">68877</tofile>
+				<tofile bep_offset="0" lang="zh" title="血糖">803286</tofile>
+				<tofile bep_offset="0" lang="zh" title="半乳糖">68879</tofile>
+				<tofile bep_offset="0" lang="zh" title="蔗糖">42131</tofile>
+				<tofile bep_offset="0" lang="zh" title="假丝酵母属">1133066</tofile>
+				<tofile bep_offset="0" lang="zh" title="中耳炎">365733</tofile>
+				<tofile bep_offset="0" lang="zh" title="龋齿">58983</tofile>
+				<tofile bep_offset="0" lang="zh" title="内源">791041</tofile>
+				<tofile bep_offset="0" lang="zh" title="犬">4769</tofile>
+				<tofile bep_offset="0" lang="zh" title="食物熱量">1444211</tofile>
+				<tofile bep_offset="0" lang="zh" title="酵母">178105</tofile>
+				<tofile bep_offset="0" lang="zh" title="糖醇">1119658</tofile>
+				<tofile bep_offset="0" lang="zh" title="赤藓醇">1538323</tofile>
+				<tofile bep_offset="0" lang="zh" title="PH值">83025</tofile>
+				<tofile bep_offset="0" lang="zh" title="泻药">318139</tofile>
+				<tofile bep_offset="0" lang="zh" title="阿斯巴甜">259008</tofile>
+				<tofile bep_offset="0" lang="zh" title="三氯蔗糖">796046</tofile>
+				<tofile bep_offset="0" lang="zh" title="牙结石">814872</tofile>
+				<tofile bep_offset="0" lang="zh" title="骨質疏鬆症">376395</tofile>
+				<tofile bep_offset="0" lang="zh" title="有机化合物">2139</tofile>
+				<tofile bep_offset="0" lang="zh" title="纤维">196127</tofile>
+				<tofile bep_offset="0" lang="zh" title="代謝症候群">56082</tofile>
+				<tofile bep_offset="0" lang="zh" title="代谢">1370</tofile>
+				<tofile bep_offset="0" lang="zh" title="中國">263</tofile>
+				<tofile bep_offset="0" lang="zh" title="氧化">84496</tofile>
+				<tofile bep_offset="0" lang="zh" title="益達">1035662</tofile>
+				<tofile bep_offset="0" lang="zh" title="白桦">984345</tofile>
+				<tofile bep_offset="0" lang="zh" title="戊糖">739810</tofile>
+				<tofile bep_offset="0" lang="zh" title="脂肪酸">149963</tofile>
+				<tofile bep_offset="0" lang="zh" title="肝臟">79683</tofile>
+				<tofile bep_offset="0" lang="zh" title="甘油">73961</tofile>
+				<tofile bep_offset="0" lang="zh" title="甜味">108010</tofile>
+				<tofile bep_offset="0" lang="zh" title="芬兰">1622</tofile>
+				<tofile bep_offset="0" lang="zh" title="脂肪">33221</tofile>
+				<tofile bep_offset="0" lang="zh" title="熱量">161387</tofile>
+				<tofile bep_offset="0" lang="zh" title="艾奥瓦大学">69802</tofile>
+				<tofile bep_offset="0" lang="zh" title="乳酸">200518</tofile>
+				<tofile bep_offset="0" lang="zh" title="心臟">54426</tofile>
+				<tofile bep_offset="0" lang="zh" title="肺">88021</tofile>
+				<tofile bep_offset="0" lang="zh" title="呼吸道">291443</tofile>
+				<tofile bep_offset="0" lang="zh" title="牙齒">191558</tofile>
+				<tofile bep_offset="0" lang="zh" title="醣類">597651</tofile>
+				<tofile bep_offset="0" lang="zh" title="细胞">6427</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="1791383" name="Pentaceratops"> 
+		<outgoing>
+			<anchor offset="290" length="13" name="Pentaceratops">
+				<tofile bep_offset="0" lang="zh" title="恐龙">7597</tofile>
+				<tofile bep_offset="0" lang="zh" title="北美洲">3420</tofile>
+				<tofile bep_offset="0" lang="zh" title="结节头龙">507763</tofile>
+				<tofile bep_offset="0" lang="zh" title="脊椎动物">23687</tofile>
+				<tofile bep_offset="0" lang="zh" title="开角龙">506929</tofile>
+				<tofile bep_offset="0" lang="zh" title="角龍科">589657</tofile>
+				<tofile bep_offset="0" lang="zh" title="骨骼系統">248234</tofile>
+				<tofile bep_offset="0" lang="zh" title="哺乳动物">11705</tofile>
+				<tofile bep_offset="0" lang="zh" title="颅骨">147715</tofile>
+				<tofile bep_offset="0" lang="zh" title="食草动物">90528</tofile>
+				<tofile bep_offset="0" lang="zh" title="牛角龙">510368</tofile>
+				<tofile bep_offset="0" lang="zh" title="小贵族龙">610818</tofile>
+				<tofile bep_offset="0" lang="zh" title="角龍下目">598227</tofile>
+				<tofile bep_offset="0" lang="zh" title="属 (生物)">34425</tofile>
+				<tofile bep_offset="0" lang="zh" title="美國自然史博物館">291462</tofile>
+				<tofile bep_offset="0" lang="zh" title="古希臘語">407716</tofile>
+				<tofile bep_offset="0" lang="zh" title="三角龙">246638</tofile>
+				<tofile bep_offset="0" lang="zh" title="白垩纪">42661</tofile>
+				<tofile bep_offset="0" lang="zh" title="新墨西哥州">47094</tofile>
+				<tofile bep_offset="0" lang="zh" title="圆头龙">510311</tofile>
+				<tofile bep_offset="0" lang="zh" title="副栉龙">507799</tofile>
+				<tofile bep_offset="0" lang="zh" title="科羅拉多州">76143</tofile>
+				<tofile bep_offset="0" lang="zh" title="暴龍超科">613964</tofile>
+				<tofile bep_offset="0" lang="zh" title="準角龍">506755</tofile>
+				<tofile bep_offset="0" lang="zh" title="蕨类植物">80758</tofile>
+				<tofile bep_offset="0" lang="zh" title="松柏目">84106</tofile>
+				<tofile bep_offset="0" lang="zh" title="惧龙">506959</tofile>
+				<tofile bep_offset="0" lang="zh" title="草食性">1783024</tofile>
+				<tofile bep_offset="0" lang="zh" title="厚頭龍下目">589702</tofile>
+				<tofile bep_offset="0" lang="zh" title="琉球苏铁">83486</tofile>
+				<tofile bep_offset="0" lang="zh" title="甲龍下目">531056</tofile>
+				<tofile bep_offset="0" lang="zh" title="開花植物">18348</tofile>
+				<tofile bep_offset="0" lang="zh" title="角龍亞科">936105</tofile>
+				<tofile bep_offset="0" lang="zh" title="美國">481</tofile>
+				<tofile bep_offset="0" lang="zh" title="倾头龙">510225</tofile>
+				<tofile bep_offset="0" lang="zh" title="暴龍科">592873</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="2974637" name="Nanako Matsushima"> 
+		<outgoing>
+			<anchor offset="290" length="17" name="Nanako Matsushima">
+				<tofile bep_offset="0" lang="zh" title="家政婦三田">1694891</tofile>
+				<tofile bep_offset="0" lang="zh" title="真田廣之">682909</tofile>
+				<tofile bep_offset="0" lang="zh" title="萤火虫之墓">82681</tofile>
+				<tofile bep_offset="0" lang="zh" title="神奈川縣">73085</tofile>
+				<tofile bep_offset="0" lang="zh" title="反町隆史">139319</tofile>
+				<tofile bep_offset="0" lang="zh" title="流星花園 (日本電視劇)">895390</tofile>
+				<tofile bep_offset="0" lang="zh" title="午夜凶鈴">226177</tofile>
+				<tofile bep_offset="0" lang="zh" title="日本">247418</tofile>
+				<tofile bep_offset="0" lang="zh" title="横滨市">82729</tofile>
+				<tofile bep_offset="0" lang="zh" title="魔女的條件">278256</tofile>
+				<tofile bep_offset="0" lang="zh" title="麻辣教師GTO">176480</tofile>
+				<tofile bep_offset="0" lang="zh" title="大和撫子">951039</tofile>
+				<tofile bep_offset="0" lang="zh" title="尼康">56204</tofile>
+				<tofile bep_offset="0" lang="zh" title="大和拜金女">977646</tofile>
+				<tofile bep_offset="0" lang="zh" title="大澤隆夫">1178005</tofile>
+				<tofile bep_offset="0" lang="zh" title="相武紗季">960428</tofile>
+				<tofile bep_offset="0" lang="zh" title="2001年">4353</tofile>
+				<tofile bep_offset="0" lang="zh" title="東寶株式會社">444536</tofile>
+				<tofile bep_offset="0" lang="zh" title="堤真一">254118</tofile>
+				<tofile bep_offset="0" lang="zh" title="流星花園">107506</tofile>
+				<tofile bep_offset="0" lang="zh" title="日本電影金像獎">689266</tofile>
+				<tofile bep_offset="0" lang="zh" title="宝洁公司">65640</tofile>
+				<tofile bep_offset="0" lang="zh" title="模特兒">129286</tofile>
+				<tofile bep_offset="0" lang="zh" title="GTO">177146</tofile>
+				<tofile bep_offset="0" lang="zh" title="日本放送協會">48644</tofile>
+				<tofile bep_offset="0" lang="zh" title="2004年">5159</tofile>
+				<tofile bep_offset="0" lang="zh" title="井上真央">480413</tofile>
+				<tofile bep_offset="0" lang="zh" title="日本电视剧">72153</tofile>
+				<tofile bep_offset="0" lang="zh" title="松竹">444621</tofile>
+				<tofile bep_offset="0" lang="zh" title="富士電視台">36302</tofile>
+				<tofile bep_offset="0" lang="zh" title="座間市">511515</tofile>
+				<tofile bep_offset="0" lang="zh" title="宋承憲">413699</tofile>
+				<tofile bep_offset="0" lang="zh" title="TBS電視台">294097</tofile>
+				<tofile bep_offset="0" lang="zh" title="2007年">31064</tofile>
+				<tofile bep_offset="0" lang="zh" title="1996年">5142</tofile>
+				<tofile bep_offset="0" lang="zh" title="唐澤壽明">125113</tofile>
+				<tofile bep_offset="0" lang="zh" title="1998年">5140</tofile>
+				<tofile bep_offset="0" lang="zh" title="富士電視台週一晚間九點連續劇">532218</tofile>
+				<tofile bep_offset="0" lang="zh" title="日剧女王">159978</tofile>
+				<tofile bep_offset="0" lang="zh" title="江口洋介">146374</tofile>
+				<tofile bep_offset="0" lang="zh" title="Wii Fit Plus">1263207</tofile>
+				<tofile bep_offset="0" lang="zh" title="高絲">973005</tofile>
+				<tofile bep_offset="0" lang="zh" title="福山雅治">814025</tofile>
+				<tofile bep_offset="0" lang="zh" title="任天堂">43165</tofile>
+				<tofile bep_offset="0" lang="zh" title="森永製菓">1244982</tofile>
+				<tofile bep_offset="0" lang="zh" title="派拉蒙電影公司">277438</tofile>
+				<tofile bep_offset="0" lang="zh" title="NTT">335255</tofile>
+				<tofile bep_offset="0" lang="zh" title="5月31日">3991</tofile>
+				<tofile bep_offset="0" lang="zh" title="向日葵">22345</tofile>
+				<tofile bep_offset="0" lang="zh" title="松本潤">155414</tofile>
+				<tofile bep_offset="0" lang="zh" title="利家與松">112722</tofile>
+				<tofile bep_offset="0" lang="zh" title="人鬼情未了">1289625</tofile>
+				<tofile bep_offset="0" lang="zh" title="NTV">615893</tofile>
+				<tofile bep_offset="0" lang="zh" title="美女或野獸">1510854</tofile>
+				<tofile bep_offset="0" lang="zh" title="1999年">5137</tofile>
+				<tofile bep_offset="0" lang="zh" title="眉山市">95449</tofile>
+				<tofile bep_offset="0" lang="zh" title="演員">9428</tofile>
+				<tofile bep_offset="0" lang="zh" title="日本電視台">42514</tofile>
+				<tofile bep_offset="0" lang="zh" title="日劇學院賞">179703</tofile>
+				<tofile bep_offset="0" lang="zh" title="花王株式會社">454203</tofile>
+				<tofile bep_offset="0" lang="zh" title="日產汽車">88507</tofile>
+				<tofile bep_offset="0" lang="zh" title="田村正和">350791</tofile>
+				<tofile bep_offset="0" lang="zh" title="瑛太">424111</tofile>
+				<tofile bep_offset="0" lang="zh" title="大泉洋">1555453</tofile>
+				<tofile bep_offset="0" lang="zh" title="Lucky Seven">1741703</tofile>
+				<tofile bep_offset="0" lang="zh" title="2月21日">23004</tofile>
+				<tofile bep_offset="0" lang="zh" title="公司">25713</tofile>
+				<tofile bep_offset="0" lang="zh" title="世界奇妙物語">853499</tofile>
+				<tofile bep_offset="0" lang="zh" title="日语">2281</tofile>
+				<tofile bep_offset="0" lang="zh" title="住友生命保險">468978</tofile>
+				<tofile bep_offset="0" lang="zh" title="冰的世界">1282576</tofile>
+				<tofile bep_offset="0" lang="zh" title="11月30日">7757</tofile>
+				<tofile bep_offset="0" lang="zh" title="淀殿">98183</tofile>
+				<tofile bep_offset="0" lang="zh" title="ViVi">865742</tofile>
+				<tofile bep_offset="0" lang="zh" title="急症群英">1081386</tofile>
+				<tofile bep_offset="0" lang="zh" title="明治製菓">502506</tofile>
+				<tofile bep_offset="0" lang="zh" title="黛米·摩尔">1023478</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="1419265" name="X264"> 
+		<outgoing>
+			<anchor offset="290" length="4" name="X264">
+				<tofile bep_offset="0" lang="zh" title="Tandberg">1300436</tofile>
+				<tofile bep_offset="0" lang="zh" title="GNU通用公共许可证">658</tofile>
+				<tofile bep_offset="0" lang="zh" title="心理物理学">1184447</tofile>
+				<tofile bep_offset="0" lang="zh" title="ARM架構">492464</tofile>
+				<tofile bep_offset="0" lang="zh" title="自由软件">9403</tofile>
+				<tofile bep_offset="0" lang="zh" title="Ateme">361230</tofile>
+				<tofile bep_offset="0" lang="zh" title="PowerPC">34295</tofile>
+				<tofile bep_offset="0" lang="zh" title="Altivec">714283</tofile>
+				<tofile bep_offset="0" lang="zh" title="思科系统">130905</tofile>
+				<tofile bep_offset="0" lang="zh" title="Libav">689213</tofile>
+				<tofile bep_offset="0" lang="zh" title="单指令流多数据流">45501</tofile>
+				<tofile bep_offset="0" lang="zh" title="MediaCoder">287092</tofile>
+				<tofile bep_offset="0" lang="zh" title="Avidemux">974787</tofile>
+				<tofile bep_offset="0" lang="zh" title="X86">105794</tofile>
+				<tofile bep_offset="0" lang="zh" title="函式庫">18599</tofile>
+				<tofile bep_offset="0" lang="zh" title="图形用户界面">12441</tofile>
+				<tofile bep_offset="0" lang="zh" title="H.264/MPEG-4 AVC">111432</tofile>
+				<tofile bep_offset="0" lang="zh" title="应用程序接口">19119</tofile>
+				<tofile bep_offset="0" lang="zh" title="MPEG-4">120530</tofile>
+				<tofile bep_offset="0" lang="zh" title="藍光光碟">136632</tofile>
+				<tofile bep_offset="0" lang="zh" title="杜比数字">597457</tofile>
+				<tofile bep_offset="0" lang="zh" title="视频编解码器">119005</tofile>
+				<tofile bep_offset="0" lang="zh" title="Xvid">165594</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="611752" name="Ravioli"> 
+		<outgoing>
+			<anchor offset="290" length="7" name="Ravioli">
+				<tofile bep_offset="0" lang="zh" title="芜菁">219536</tofile>
+				<tofile bep_offset="0" lang="zh" title="意式麵食">84315</tofile>
+				<tofile bep_offset="0" lang="zh" title="諾曼人">657212</tofile>
+				<tofile bep_offset="0" lang="zh" title="普拉托">292446</tofile>
+				<tofile bep_offset="0" lang="zh" title="威尼斯">87413</tofile>
+				<tofile bep_offset="0" lang="zh" title="纽约州">26262</tofile>
+				<tofile bep_offset="0" lang="zh" title="胡里节">1007423</tofile>
+				<tofile bep_offset="0" lang="zh" title="意大利语">42696</tofile>
+				<tofile bep_offset="0" lang="zh" title="波士顿">23848</tofile>
+				<tofile bep_offset="0" lang="zh" title="義大利人">811490</tofile>
+				<tofile bep_offset="0" lang="zh" title="玉棋">714642</tofile>
+				<tofile bep_offset="0" lang="zh" title="蕈類">537533</tofile>
+				<tofile bep_offset="0" lang="zh" title="枕頭">223072</tofile>
+				<tofile bep_offset="0" lang="zh" title="博洛尼亚">268525</tofile>
+				<tofile bep_offset="0" lang="zh" title="摩德納">614068</tofile>
+				<tofile bep_offset="0" lang="zh" title="番茄">100389</tofile>
+				<tofile bep_offset="0" lang="zh" title="馄饨">110327</tofile>
+				<tofile bep_offset="0" lang="zh" title="艾米利亚-罗马涅">120177</tofile>
+				<tofile bep_offset="0" lang="zh" title="茄">150461</tofile>
+				<tofile bep_offset="0" lang="zh" title="热那亚">23872</tofile>
+				<tofile bep_offset="0" lang="zh" title="意式肉腸">449159</tofile>
+				<tofile bep_offset="0" lang="zh" title="蒜">59578</tofile>
+				<tofile bep_offset="0" lang="zh" title="火腿">194903</tofile>
+				<tofile bep_offset="0" lang="zh" title="柠檬">46789</tofile>
+				<tofile bep_offset="0" lang="zh" title="雞肉">211338</tofile>
+				<tofile bep_offset="0" lang="zh" title="第二次世界大战">305</tofile>
+				<tofile bep_offset="0" lang="zh" title="迷迭香">381631</tofile>
+				<tofile bep_offset="0" lang="zh" title="菠菜">24169</tofile>
+				<tofile bep_offset="0" lang="zh" title="饺子">40456</tofile>
+				<tofile bep_offset="0" lang="zh" title="洋蔥">13566</tofile>
+				<tofile bep_offset="0" lang="zh" title="德国馄饨">269158</tofile>
+				<tofile bep_offset="0" lang="zh" title="意大利">3448</tofile>
+				<tofile bep_offset="0" lang="zh" title="羅勒">205785</tofile>
+				<tofile bep_offset="0" lang="zh" title="蛋黃">693491</tofile>
+				<tofile bep_offset="0" lang="zh" title="橄欖油">449706</tofile>
+				<tofile bep_offset="0" lang="zh" title="麵粉">270056</tofile>
+				<tofile bep_offset="0" lang="zh" title="紅酒">1774982</tofile>
+				<tofile bep_offset="0" lang="zh" title="蛋">44395</tofile>
+				<tofile bep_offset="0" lang="zh" title="麵食">55015</tofile>
+				<tofile bep_offset="0" lang="zh" title="1842年">15368</tofile>
+				<tofile bep_offset="0" lang="zh" title="帕馬森乾酪">144732</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="1039570" name="Traveler&apos;s cheque"> 
+		<outgoing>
+			<anchor offset="290" length="22" name="Traveler&apos;s cheque">
+				<tofile bep_offset="0" lang="zh" title="證明支票">1193309</tofile>
+				<tofile bep_offset="0" lang="zh" title="信用证">547447</tofile>
+				<tofile bep_offset="0" lang="zh" title="支票">314881</tofile>
+				<tofile bep_offset="0" lang="zh" title="美國運通">415801</tofile>
+				<tofile bep_offset="0" lang="zh" title="銀行本票">217933</tofile>
+				<tofile bep_offset="0" lang="zh" title="英镑">13544</tofile>
+				<tofile bep_offset="0" lang="zh" title="身分證">130336</tofile>
+				<tofile bep_offset="0" lang="zh" title="Visa">167802</tofile>
+				<tofile bep_offset="0" lang="zh" title="汇票">99591</tofile>
+				<tofile bep_offset="0" lang="zh" title="加拿大元">393537</tofile>
+				<tofile bep_offset="0" lang="zh" title="日圓">16893</tofile>
+				<tofile bep_offset="0" lang="zh" title="欧元">13545</tofile>
+				<tofile bep_offset="0" lang="zh" title="美國">481</tofile>
+				<tofile bep_offset="0" lang="zh" title="美元">2981</tofile>
+				<tofile bep_offset="0" lang="zh" title="自然人">248199</tofile>
+				<tofile bep_offset="0" lang="zh" title="签名">547381</tofile>
+				<tofile bep_offset="0" lang="zh" title="花旗银行">23548</tofile>
+				<tofile bep_offset="0" lang="zh" title="銀行">42573</tofile>
+				<tofile bep_offset="0" lang="zh" title="信用卡">67102</tofile>
+				<tofile bep_offset="0" lang="zh" title="佣金">1279964</tofile>
+				<tofile bep_offset="0" lang="zh" title="1月1日">1915</tofile>
+				<tofile bep_offset="0" lang="zh" title="1891年">11978</tofile>
+				<tofile bep_offset="0" lang="zh" title="1874年">15403</tofile>
+				<tofile bep_offset="0" lang="zh" title="欧洲">1728</tofile>
+				<tofile bep_offset="0" lang="zh" title="1772年">15293</tofile>
+				<tofile bep_offset="0" lang="zh" title="貨幣">4243</tofile>
+				<tofile bep_offset="0" lang="zh" title="2007年">31064</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="1821208" name="Cellophane noodles"> 
+		<outgoing>
+			<anchor offset="290" length="18" name="Cellophane noodles">
+				<tofile bep_offset="0" lang="zh" title="唐朝">686</tofile>
+				<tofile bep_offset="0" lang="zh" title="太白粉">308015</tofile>
+				<tofile bep_offset="0" lang="zh" title="铝">33542</tofile>
+				<tofile bep_offset="0" lang="zh" title="汉语">243421</tofile>
+				<tofile bep_offset="0" lang="zh" title="马来西亚">5025</tofile>
+				<tofile bep_offset="0" lang="zh" title="中华人民共和国">118</tofile>
+				<tofile bep_offset="0" lang="zh" title="面条">168249</tofile>
+				<tofile bep_offset="0" lang="zh" title="烟台市">3109</tofile>
+				<tofile bep_offset="0" lang="zh" title="广州话">170593</tofile>
+				<tofile bep_offset="0" lang="zh" title="越南菜">925835</tofile>
+				<tofile bep_offset="0" lang="zh" title="稻">19874</tofile>
+				<tofile bep_offset="0" lang="zh" title="泰國菜">1051770</tofile>
+				<tofile bep_offset="0" lang="zh" title="龙口市">152504</tofile>
+				<tofile bep_offset="0" lang="zh" title="地级市">13530</tofile>
+				<tofile bep_offset="0" lang="zh" title="招远市">152506</tofile>
+				<tofile bep_offset="0" lang="zh" title="中国东北地区">509</tofile>
+				<tofile bep_offset="0" lang="zh" title="米粉">40306</tofile>
+				<tofile bep_offset="0" lang="zh" title="火鍋">80535</tofile>
+				<tofile bep_offset="0" lang="zh" title="饺子">40456</tofile>
+				<tofile bep_offset="0" lang="zh" title="夏威夷州">38440</tofile>
+				<tofile bep_offset="0" lang="zh" title="素食主義">76176</tofile>
+				<tofile bep_offset="0" lang="zh" title="山东省">443</tofile>
+				<tofile bep_offset="0" lang="zh" title="李鸿章杂碎">117892</tofile>
+				<tofile bep_offset="0" lang="zh" title="甲醛次硫酸氢钠">1125590</tofile>
+				<tofile bep_offset="0" lang="zh" title="雜菜 (朝鮮)">1596322</tofile>
+				<tofile bep_offset="0" lang="zh" title="巴基斯坦">9268</tofile>
+				<tofile bep_offset="0" lang="zh" title="印度">450221</tofile>
+				<tofile bep_offset="0" lang="zh" title="萨摩亚">7474</tofile>
+				<tofile bep_offset="0" lang="zh" title="韓國料理">658520</tofile>
+				<tofile bep_offset="0" lang="zh" title="越南语">6909</tofile>
+				<tofile bep_offset="0" lang="zh" title="朝鮮漢字">10731</tofile>
+				<tofile bep_offset="0" lang="zh" title="淀粉">128919</tofile>
+				<tofile bep_offset="0" lang="zh" title="日本料理">35016</tofile>
+				<tofile bep_offset="0" lang="zh" title="美人蕉科">80431</tofile>
+				<tofile bep_offset="0" lang="zh" title="木薯">616132</tofile>
+				<tofile bep_offset="0" lang="zh" title="無酵餅">732160</tofile>
+				<tofile bep_offset="0" lang="zh" title="番薯">120371</tofile>
+				<tofile bep_offset="0" lang="zh" title="魚翅">101526</tofile>
+				<tofile bep_offset="0" lang="zh" title="螞蟻上樹">413528</tofile>
+				<tofile bep_offset="0" lang="zh" title="汉语拼音">4481</tofile>
+				<tofile bep_offset="0" lang="zh" title="中式面饼">436965</tofile>
+				<tofile bep_offset="0" lang="zh" title="諺文">329646</tofile>
+				<tofile bep_offset="0" lang="zh" title="玉米粉">1754069</tofile>
+				<tofile bep_offset="0" lang="zh" title="铅">70587</tofile>
+				<tofile bep_offset="0" lang="zh" title="春卷">41054</tofile>
+				<tofile bep_offset="0" lang="zh" title="爆炒">17271</tofile>
+				<tofile bep_offset="0" lang="zh" title="川菜">17677</tofile>
+				<tofile bep_offset="0" lang="zh" title="马铃薯">95393</tofile>
+				<tofile bep_offset="0" lang="zh" title="绿豆">372880</tofile>
+				<tofile bep_offset="0" lang="zh" title="漂白劑">288744</tofile>
+				<tofile bep_offset="0" lang="zh" title="櫻井市">597498</tofile>
+				<tofile bep_offset="0" lang="zh" title="中國">263</tofile>
+				<tofile bep_offset="0" lang="zh" title="直鏈澱粉">437416</tofile>
+				<tofile bep_offset="0" lang="zh" title="御所市">597508</tofile>
+				<tofile bep_offset="0" lang="zh" title="食物">10535</tofile>
+				<tofile bep_offset="0" lang="zh" title="朝鲜半岛">46099</tofile>
+				<tofile bep_offset="0" lang="zh" title="奈良县">8106</tofile>
+				<tofile bep_offset="0" lang="zh" title="品牌">140730</tofile>
+				<tofile bep_offset="0" lang="zh" title="港口">152576</tofile>
+				<tofile bep_offset="0" lang="zh" title="越南">1715</tofile>
+				<tofile bep_offset="0" lang="zh" title="米线">134491</tofile>
+				<tofile bep_offset="0" lang="zh" title="台灣">690</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="305152" name="Papaver rhoeas"> 
+		<outgoing>
+			<anchor offset="290" length="14" name="Papaver rhoeas">
+				<tofile bep_offset="0" lang="zh" title="旧大陆">97467</tofile>
+				<tofile bep_offset="0" lang="zh" title="罌粟">931078</tofile>
+				<tofile bep_offset="0" lang="zh" title="罌粟屬">1516489</tofile>
+				<tofile bep_offset="0" lang="zh" title="野草">531583</tofile>
+				<tofile bep_offset="0" lang="zh" title="堑壕战">526866</tofile>
+				<tofile bep_offset="0" lang="zh" title="西方戰線 (第一次世界大戰)">439995</tofile>
+				<tofile bep_offset="0" lang="zh" title="放牧">1413055</tofile>
+				<tofile bep_offset="0" lang="zh" title="罂粟目">83974</tofile>
+				<tofile bep_offset="0" lang="zh" title="第一次世界大战">8301</tofile>
+				<tofile bep_offset="0" lang="zh" title="國殤紀念日">639652</tofile>
+				<tofile bep_offset="0" lang="zh" title="埃塞克斯郡">752580</tofile>
+				<tofile bep_offset="0" lang="zh" title="罂粟科">485554</tofile>
+				<tofile bep_offset="0" lang="zh" title="在法蘭德斯戰場">1461776</tofile>
+				<tofile bep_offset="0" lang="zh" title="纪念碑">483220</tofile>
+				<tofile bep_offset="0" lang="zh" title="新西兰">532</tofile>
+				<tofile bep_offset="0" lang="zh" title="诺福克郡">610950</tofile>
+				<tofile bep_offset="0" lang="zh" title="乳胶">301284</tofile>
+				<tofile bep_offset="0" lang="zh" title="澳新军团日">98114</tofile>
+				<tofile bep_offset="0" lang="zh" title="农业">100</tofile>
+				<tofile bep_offset="0" lang="zh" title="北美洲">3420</tofile>
+				<tofile bep_offset="0" lang="zh" title="虞姬">146351</tofile>
+				<tofile bep_offset="0" lang="zh" title="鸦片战争">37934</tofile>
+				<tofile bep_offset="0" lang="zh" title="人民大会堂">70986</tofile>
+				<tofile bep_offset="0" lang="zh" title="協約國">221378</tofile>
+				<tofile bep_offset="0" lang="zh" title="第二次世界大战">305</tofile>
+				<tofile bep_offset="0" lang="zh" title="双名法">3506</tofile>
+				<tofile bep_offset="0" lang="zh" title="南唐">44246</tofile>
+				<tofile bep_offset="0" lang="zh" title="澳大利亚">1930</tofile>
+				<tofile bep_offset="0" lang="zh" title="宋朝">922</tofile>
+				<tofile bep_offset="0" lang="zh" title="北京市">463</tofile>
+				<tofile bep_offset="0" lang="zh" title="宋太宗">59496</tofile>
+				<tofile bep_offset="0" lang="zh" title="草本植物">75641</tofile>
+				<tofile bep_offset="0" lang="zh" title="温带">71043</tofile>
+				<tofile bep_offset="0" lang="zh" title="2010年">153717</tofile>
+				<tofile bep_offset="0" lang="zh" title="李煜">35263</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="67050" name="Tutsi"> 
+		<outgoing>
+			<anchor offset="290" length="5" name="Tutsi">
+				<tofile bep_offset="0" lang="zh" title="Y染色體">509765</tofile>
+				<tofile bep_offset="0" lang="zh" title="大湖地区">586637</tofile>
+				<tofile bep_offset="0" lang="zh" title="乌干达">47133</tofile>
+				<tofile bep_offset="0" lang="zh" title="班圖人">1096233</tofile>
+				<tofile bep_offset="0" lang="zh" title="北基伍省">491156</tofile>
+				<tofile bep_offset="0" lang="zh" title="卢旺达爱国阵线">680511</tofile>
+				<tofile bep_offset="0" lang="zh" title="埃塞俄比亚">6342</tofile>
+				<tofile bep_offset="0" lang="zh" title="族群">172486</tofile>
+				<tofile bep_offset="0" lang="zh" title="德国">986</tofile>
+				<tofile bep_offset="0" lang="zh" title="天主教">9826</tofile>
+				<tofile bep_offset="0" lang="zh" title="衣索比亞人種">1418973</tofile>
+				<tofile bep_offset="0" lang="zh" title="第一次世界大战">8301</tofile>
+				<tofile bep_offset="0" lang="zh" title="非洲之角">437202</tofile>
+				<tofile bep_offset="0" lang="zh" title="特瓦族">636989</tofile>
+				<tofile bep_offset="0" lang="zh" title="胡图族">636932</tofile>
+				<tofile bep_offset="0" lang="zh" title="比利时">3961</tofile>
+				<tofile bep_offset="0" lang="zh" title="第二次刚果战争">425377</tofile>
+				<tofile bep_offset="0" lang="zh" title="以色列人">8288</tofile>
+				<tofile bep_offset="0" lang="zh" title="以色列王國">169850</tofile>
+				<tofile bep_offset="0" lang="zh" title="蒲隆地">43413</tofile>
+				<tofile bep_offset="0" lang="zh" title="撒哈拉以南非洲">509770</tofile>
+				<tofile bep_offset="0" lang="zh" title="卢旺达大屠杀">114919</tofile>
+				<tofile bep_offset="0" lang="zh" title="內團體與外團體">1620990</tofile>
+				<tofile bep_offset="0" lang="zh" title="布干达">590904</tofile>
+				<tofile bep_offset="0" lang="zh" title="盧安達-烏隆地">1043378</tofile>
+				<tofile bep_offset="0" lang="zh" title="第一次刚果战争">425361</tofile>
+				<tofile bep_offset="0" lang="zh" title="殖民地">35080</tofile>
+				<tofile bep_offset="0" lang="zh" title="种姓制度">5574</tofile>
+				<tofile bep_offset="0" lang="zh" title="北部非洲">2256</tofile>
+				<tofile bep_offset="0" lang="zh" title="高加索民族">683535</tofile>
+				<tofile bep_offset="0" lang="zh" title="中部非洲">20082</tofile>
+				<tofile bep_offset="0" lang="zh" title="南基伍省">491664</tofile>
+				<tofile bep_offset="0" lang="zh" title="班图语支">896907</tofile>
+				<tofile bep_offset="0" lang="zh" title="公民投票">24700</tofile>
+				<tofile bep_offset="0" lang="zh" title="卢旺达">44945</tofile>
+				<tofile bep_offset="0" lang="zh" title="刚果民主共和国">20057</tofile>
+				<tofile bep_offset="0" lang="zh" title="1994年">5144</tofile>
+				<tofile bep_offset="0" lang="zh" title="人权观察">213911</tofile>
+				<tofile bep_offset="0" lang="zh" title="青尼罗河">710569</tofile>
+				<tofile bep_offset="0" lang="zh" title="地中海人種">1419756</tofile>
+				<tofile bep_offset="0" lang="zh" title="种族清洗">23070</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="323276" name="Toi invasion"> 
+		<outgoing>
+			<anchor offset="290" length="12" name="Toi invasion">
+				<tofile bep_offset="0" lang="zh" title="朝鲜">1698</tofile>
+				<tofile bep_offset="0" lang="zh" title="女真族">37398</tofile>
+				<tofile bep_offset="0" lang="zh" title="海盗">53695</tofile>
+				<tofile bep_offset="0" lang="zh" title="元山市">145115</tofile>
+				<tofile bep_offset="0" lang="zh" title="朝鮮語">903149</tofile>
+				<tofile bep_offset="0" lang="zh" title="九州 (日本)">26240</tofile>
+				<tofile bep_offset="0" lang="zh" title="高麗">49302</tofile>
+				<tofile bep_offset="0" lang="zh" title="新罗">37741</tofile>
+				<tofile bep_offset="0" lang="zh" title="壹岐國">293788</tofile>
+				<tofile bep_offset="0" lang="zh" title="鬱陵島">242389</tofile>
+				<tofile bep_offset="0" lang="zh" title="對馬國">330516</tofile>
+				<tofile bep_offset="0" lang="zh" title="豪族">1452797</tofile>
+				<tofile bep_offset="0" lang="zh" title="對馬島">92721</tofile>
+				<tofile bep_offset="0" lang="zh" title="1019年">14545</tofile>
+				<tofile bep_offset="0" lang="zh" title="國分寺">1187793</tofile>
+				<tofile bep_offset="0" lang="zh" title="北九州">308590</tofile>
+				<tofile bep_offset="0" lang="zh" title="國司">890184</tofile>
+				<tofile bep_offset="0" lang="zh" title="日本">247418</tofile>
+				<tofile bep_offset="0" lang="zh" title="4月7日">20858</tofile>
+				<tofile bep_offset="0" lang="zh" title="怡土郡">1264859</tofile>
+				<tofile bep_offset="0" lang="zh" title="4月8日">20859</tofile>
+				<tofile bep_offset="0" lang="zh" title="3月27日">16836</tofile>
+				<tofile bep_offset="0" lang="zh" title="4月12日">21830</tofile>
+				<tofile bep_offset="0" lang="zh" title="高麗史">510114</tofile>
+				<tofile bep_offset="0" lang="zh" title="壹岐島">113124</tofile>
+				<tofile bep_offset="0" lang="zh" title="武士">227211</tofile>
+				<tofile bep_offset="0" lang="zh" title="7月7日">2159</tofile>
+				<tofile bep_offset="0" lang="zh" title="筑前國">330538</tofile>
+				<tofile bep_offset="0" lang="zh" title="韓寇">801520</tofile>
+				<tofile bep_offset="0" lang="zh" title="奴隶制度">16692</tofile>
+				<tofile bep_offset="0" lang="zh" title="应永外寇">472962</tofile>
+				<tofile bep_offset="0" lang="zh" title="日本人">73665</tofile>
+				<tofile bep_offset="0" lang="zh" title="东夷">360004</tofile>
+				<tofile bep_offset="0" lang="zh" title="统一新罗">51099</tofile>
+				<tofile bep_offset="0" lang="zh" title="大宰府">493592</tofile>
+				<tofile bep_offset="0" lang="zh" title="辽朝">36969</tofile>
+				<tofile bep_offset="0" lang="zh" title="元日战争">199457</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+</crosslink-submission>
