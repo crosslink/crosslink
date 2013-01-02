@@ -1,0 +1,1643 @@
+<crosslink-submission participant-id="GT" run-id="GroundTruth" task="F2F" default_lang="en" source_lang="zh"><details>
+ <machine>
+	<cpu>Core 2 Duo</cpu>
+	<speed>2.33 MHz</speed>
+	<cores>2</cores>
+	<hyperthreads>1</hyperthreads>
+	<memory>8GB</memory>
+</machine>
+<time>TBC</time>
+</details>
+<description>
+This is the ground truth run
+</description>
+<collections><collection>CJK Wikipedia</collection></collections>
+	<topic file="133770" name="拖雷"> 
+		<outgoing>
+			<anchor offset="290" length="6" name="拖雷">
+				<tofile bep_offset="0" lang="en" title="Ögedei Khan">739857</tofile>
+				<tofile bep_offset="0" lang="en" title="Kublai Khan">20754760</tofile>
+				<tofile bep_offset="0" lang="en" title="Yuzhou, Henan">7583125</tofile>
+				<tofile bep_offset="0" lang="en" title="Bukhara">86807</tofile>
+				<tofile bep_offset="0" lang="en" title="Ariq Böke">1489230</tofile>
+				<tofile bep_offset="0" lang="en" title="Khorasan Province">371256</tofile>
+				<tofile bep_offset="0" lang="en" title="Sorghaghtani Beki">1554826</tofile>
+				<tofile bep_offset="0" lang="en" title="Jin Dynasty (1115–1234)">55023</tofile>
+				<tofile bep_offset="0" lang="en" title="Genghis Khan">17414699</tofile>
+				<tofile bep_offset="0" lang="en" title="Hebei">72664</tofile>
+				<tofile bep_offset="0" lang="en" title="Armed forces">18905</tofile>
+				<tofile bep_offset="0" lang="en" title="1192">38572</tofile>
+				<tofile bep_offset="0" lang="en" title="Hanzhong">1097492</tofile>
+				<tofile bep_offset="0" lang="en" title="1221">36189</tofile>
+				<tofile bep_offset="0" lang="en" title="Shaanxi">155520</tofile>
+				<tofile bep_offset="0" lang="en" title="Shandong">105032</tofile>
+				<tofile bep_offset="0" lang="en" title="August 25">1519</tofile>
+				<tofile bep_offset="0" lang="en" title="1266">42501</tofile>
+				<tofile bep_offset="0" lang="en" title="Kankalis">19786282</tofile>
+				<tofile bep_offset="0" lang="en" title="Yi County, Hebei">18054160</tofile>
+				<tofile bep_offset="0" lang="en" title="Samarkand">51491</tofile>
+				<tofile bep_offset="0" lang="en" title="Temple name">68314</tofile>
+				<tofile bep_offset="0" lang="en" title="1219">39994</tofile>
+				<tofile bep_offset="0" lang="en" title="1213">39995</tofile>
+				<tofile bep_offset="0" lang="en" title="1231">40063</tofile>
+				<tofile bep_offset="0" lang="en" title="Külüg Khan, Emperor Wuzong of Yuan">1088731</tofile>
+				<tofile bep_offset="0" lang="en" title="Chagatai Khan">795693</tofile>
+				<tofile bep_offset="0" lang="en" title="Henan">166408</tofile>
+				<tofile bep_offset="0" lang="en" title="Sexagenary cycle">477968</tofile>
+				<tofile bep_offset="0" lang="en" title="Yang County">20695631</tofile>
+				<tofile bep_offset="0" lang="en" title="Hubei">83319</tofile>
+				<tofile bep_offset="0" lang="en" title="1310">39957</tofile>
+				<tofile bep_offset="0" lang="en" title="Mongol Empire">240146</tofile>
+				<tofile bep_offset="0" lang="en" title="September 13">28030</tofile>
+				<tofile bep_offset="0" lang="en" title="1227">36262</tofile>
+				<tofile bep_offset="0" lang="en" title="Zhuozhou">8932516</tofile>
+				<tofile bep_offset="0" lang="en" title="1228">36263</tofile>
+				<tofile bep_offset="0" lang="en" title="Hulagu Khan">354356</tofile>
+				<tofile bep_offset="0" lang="en" title="Anno Domini">1400</tofile>
+				<tofile bep_offset="0" lang="en" title="Möngke Khan">742605</tofile>
+				<tofile bep_offset="0" lang="en" title="January 7">15987</tofile>
+				<tofile bep_offset="0" lang="en" title="Kurultai">381446</tofile>
+				<tofile bep_offset="0" lang="en" title="Posthumous name">113190</tofile>
+				<tofile bep_offset="0" lang="en" title="Yuan Dynasty">19606306</tofile>
+				<tofile bep_offset="0" lang="en" title="Ilkhanate">542300</tofile>
+				<tofile bep_offset="0" lang="en" title="1259">42494</tofile>
+				<tofile bep_offset="0" lang="en" title="1232">36068</tofile>
+				<tofile bep_offset="0" lang="en" title="1260">42495</tofile>
+				<tofile bep_offset="0" lang="en" title="1229">36067</tofile>
+				<tofile bep_offset="0" lang="en" title="1251">38709</tofile>
+				<tofile bep_offset="0" lang="en" title="July 1">15844</tofile>
+				<tofile bep_offset="0" lang="en" title="Ata-Malik Juvayni">1269598</tofile>
+				<tofile bep_offset="0" lang="en" title="Khagan">533383</tofile>
+				<tofile bep_offset="0" lang="en" title="Appanage">266499</tofile>
+				<tofile bep_offset="0" lang="en" title="Dexing, Jiangxi">22889202</tofile>
+				<tofile bep_offset="0" lang="en" title="Jochi">745324</tofile>
+				<tofile bep_offset="0" lang="en" title="Emperor">10111</tofile>
+				<tofile bep_offset="0" lang="en" title="Güyük Khan">742592</tofile>
+				<tofile bep_offset="0" lang="en" title="Merv">252067</tofile>
+				<tofile bep_offset="0" lang="en" title="Northern Yuan Dynasty">20640254</tofile>
+				<tofile bep_offset="0" lang="en" title="Khan (title)">185015</tofile>
+				<tofile bep_offset="0" lang="en" title="Greater Khorasan">1379246</tofile>
+				<tofile bep_offset="0" lang="en" title="Strategist">779652</tofile>
+				<tofile bep_offset="0" lang="en" title="Khwarazmian dynasty">582458</tofile>
+				<tofile bep_offset="0" lang="en" title="Era">9758</tofile>
+				<tofile bep_offset="0" lang="en" title="Given name">247991</tofile>
+				<tofile bep_offset="0" lang="en" title="Mongolia">19271</tofile>
+				<tofile bep_offset="0" lang="en" title="Tatars">56877</tofile>
+				<tofile bep_offset="0" lang="en" title="Iran">14653</tofile>
+				<tofile bep_offset="0" lang="en" title="Börte">489477</tofile>
+				<tofile bep_offset="0" lang="en" title="The Secret History of the Mongols">1337682</tofile>
+				<tofile bep_offset="0" lang="en" title="Nishapur">377427</tofile>
+				<tofile bep_offset="0" lang="en" title="North China">923364</tofile>
+				<tofile bep_offset="0" lang="en" title="Borjigin">1105940</tofile>
+				<tofile bep_offset="0" lang="en" title="Mongol invasion of Europe">1569009</tofile>
+				<tofile bep_offset="0" lang="en" title="Field Commander">5509964</tofile>
+				<tofile bep_offset="0" lang="en" title="Ong Khan">1671834</tofile>
+				<tofile bep_offset="0" lang="en" title="Family name">10814</tofile>
+				<tofile bep_offset="0" lang="en" title="Western Xia">58495</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="972099" name="X264編碼器"> 
+		<outgoing>
+			<anchor offset="290" length="13" name="X264編碼器">
+				<tofile bep_offset="0" lang="en" title="Video codec">54475</tofile>
+				<tofile bep_offset="0" lang="en" title="H.264/MPEG-4 AVC">237036</tofile>
+				<tofile bep_offset="0" lang="en" title="GNU General Public License">18938683</tofile>
+				<tofile bep_offset="0" lang="en" title="MPEG-4">20063</tofile>
+				<tofile bep_offset="0" lang="en" title="Blu-ray Disc">11015826</tofile>
+				<tofile bep_offset="0" lang="en" title="Free software">10635</tofile>
+				<tofile bep_offset="0" lang="en" title="Xvid">201544</tofile>
+				<tofile bep_offset="0" lang="en" title="Dolby Digital">82898</tofile>
+				<tofile bep_offset="0" lang="en" title="Graphical user interface">12293</tofile>
+				<tofile bep_offset="0" lang="en" title="Rate–distortion optimization">12721146</tofile>
+				<tofile bep_offset="0" lang="en" title="Sum of squares">31005435</tofile>
+				<tofile bep_offset="0" lang="en" title="FFmpeg">214657</tofile>
+				<tofile bep_offset="0" lang="en" title="Avidemux">2598929</tofile>
+				<tofile bep_offset="0" lang="en" title="MediaCoder">5175898</tofile>
+				<tofile bep_offset="0" lang="en" title="Sum of absolute transformed differences">13178514</tofile>
+				<tofile bep_offset="0" lang="en" title="HandBrake">8431123</tofile>
+				<tofile bep_offset="0" lang="en" title="XMedia Recode">27438755</tofile>
+				<tofile bep_offset="0" lang="en" title="ARM architecture">60558</tofile>
+				<tofile bep_offset="0" lang="en" title="X86">34198</tofile>
+				<tofile bep_offset="0" lang="en" title="SIMD">55359</tofile>
+				<tofile bep_offset="0" lang="en" title="Doom9">11060935</tofile>
+				<tofile bep_offset="0" lang="en" title="Variance Adaptive Quantization">28227121</tofile>
+				<tofile bep_offset="0" lang="en" title="SUPER (software)">25655744</tofile>
+				<tofile bep_offset="0" lang="en" title="PowerPC">24281</tofile>
+				<tofile bep_offset="0" lang="en" title="Application programming interface">27697009</tofile>
+				<tofile bep_offset="0" lang="en" title="Psychophysics">438004</tofile>
+				<tofile bep_offset="0" lang="en" title="AltiVec">55360</tofile>
+				<tofile bep_offset="0" lang="en" title="Cisco Systems">51746</tofile>
+				<tofile bep_offset="0" lang="en" title="Library (computing)">106421</tofile>
+				<tofile bep_offset="0" lang="en" title="Patent application">4542266</tofile>
+				<tofile bep_offset="0" lang="en" title="MEncoder">1980775</tofile>
+				<tofile bep_offset="0" lang="en" title="HD media player">12398042</tofile>
+				<tofile bep_offset="0" lang="en" title="Subjective video quality">2944901</tofile>
+				<tofile bep_offset="0" lang="en" title="Ateme">1489011</tofile>
+				<tofile bep_offset="0" lang="en" title="Tandberg">194781</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="175384" name="山葵"> 
+		<outgoing>
+			<anchor offset="290" length="6" name="山葵">
+				<tofile bep_offset="0" lang="en" title="Tempura">147804</tofile>
+				<tofile bep_offset="0" lang="en" title="Capsicum frutescens">2161790</tofile>
+				<tofile bep_offset="0" lang="en" title="Hokkaido">58092</tofile>
+				<tofile bep_offset="0" lang="en" title="Aquatic plant">151922</tofile>
+				<tofile bep_offset="0" lang="en" title="Daio Wasabi Farm">4677018</tofile>
+				<tofile bep_offset="0" lang="en" title="Nagano Prefecture">179782</tofile>
+				<tofile bep_offset="0" lang="en" title="Water">33306</tofile>
+				<tofile bep_offset="0" lang="en" title="Izu Peninsula">595744</tofile>
+				<tofile bep_offset="0" lang="en" title="Mustard (condiment)">30860614</tofile>
+				<tofile bep_offset="0" lang="en" title="Shimane Prefecture">183469</tofile>
+				<tofile bep_offset="0" lang="en" title="Brassica juncea">2033735</tofile>
+				<tofile bep_offset="0" lang="en" title="Valley">32416</tofile>
+				<tofile bep_offset="0" lang="en" title="Taiwan">30107</tofile>
+				<tofile bep_offset="0" lang="en" title="918">51090</tofile>
+				<tofile bep_offset="0" lang="en" title="Brassicaceae">3794</tofile>
+				<tofile bep_offset="0" lang="en" title="Soba">147812</tofile>
+				<tofile bep_offset="0" lang="en" title="Soy sauce">62153</tofile>
+				<tofile bep_offset="0" lang="en" title="Microorganism">20377</tofile>
+				<tofile bep_offset="0" lang="en" title="Shizuoka Prefecture">180999</tofile>
+				<tofile bep_offset="0" lang="en" title="New Zealand">4913064</tofile>
+				<tofile bep_offset="0" lang="en" title="Isothiocyanate">377230</tofile>
+				<tofile bep_offset="0" lang="en" title="Feces">24536042</tofile>
+				<tofile bep_offset="0" lang="en" title="Chicken">37402</tofile>
+				<tofile bep_offset="0" lang="en" title="Fertilizer">37401</tofile>
+				<tofile bep_offset="0" lang="en" title="River">18842395</tofile>
+				<tofile bep_offset="0" lang="en" title="Wasabi Mizuta">12552817</tofile>
+				<tofile bep_offset="0" lang="en" title="Seafood">26866</tofile>
+				<tofile bep_offset="0" lang="en" title="Iwate Prefecture">183477</tofile>
+				<tofile bep_offset="0" lang="en" title="Japan">15573</tofile>
+				<tofile bep_offset="0" lang="en" title="Japanese language">15606</tofile>
+				<tofile bep_offset="0" lang="en" title="Nine Provinces (China)">4010404</tofile>
+				<tofile bep_offset="0" lang="en" title="Radish">164497</tofile>
+				<tofile bep_offset="0" lang="en" title="Alishan, Chiayi">24112052</tofile>
+				<tofile bep_offset="0" lang="en" title="Kanji">37604</tofile>
+				<tofile bep_offset="0" lang="en" title="Yamanashi Prefecture">181035</tofile>
+				<tofile bep_offset="0" lang="en" title="Paranasal sinuses">24437</tofile>
+				<tofile bep_offset="0" lang="en" title="Foodborne illness">531611</tofile>
+				<tofile bep_offset="0" lang="en" title="Shark">43617</tofile>
+				<tofile bep_offset="0" lang="en" title="Horseradish">45714</tofile>
+				<tofile bep_offset="0" lang="en" title="Europe">9239</tofile>
+				<tofile bep_offset="0" lang="en" title="Guacamole">484865</tofile>
+				<tofile bep_offset="0" lang="en" title="Toothpaste">147735</tofile>
+				<tofile bep_offset="0" lang="en" title="Oregon">26811621</tofile>
+				<tofile bep_offset="0" lang="en" title="Sushi">28271</tofile>
+				<tofile bep_offset="0" lang="en" title="United States">3434750</tofile>
+				<tofile bep_offset="0" lang="en" title="Kuai (dish)">19003136</tofile>
+				<tofile bep_offset="0" lang="en" title="Chiayi County">715472</tofile>
+				<tofile bep_offset="0" lang="en" title="Malvaceae">246940</tofile>
+				<tofile bep_offset="0" lang="en" title="1828">34620</tofile>
+				<tofile bep_offset="0" lang="en" title="Canada">5042916</tofile>
+				<tofile bep_offset="0" lang="en" title="Mustard plant">2028368</tofile>
+				<tofile bep_offset="0" lang="en" title="Smelling salts">1156067</tofile>
+				<tofile bep_offset="0" lang="en" title="Greenhouse">86996</tofile>
+				<tofile bep_offset="0" lang="en" title="Cultivar">167906</tofile>
+				<tofile bep_offset="0" lang="en" title="Alishan National Scenic Area">989846</tofile>
+				<tofile bep_offset="0" lang="en" title="Asarum">460879</tofile>
+				<tofile bep_offset="0" lang="en" title="Cabbage">55115</tofile>
+				<tofile bep_offset="0" lang="en" title="Allyl isothiocyanate">1576787</tofile>
+				<tofile bep_offset="0" lang="en" title="Nishiki Market">14538385</tofile>
+				<tofile bep_offset="0" lang="en" title="Pacific Northwest">78147</tofile>
+				<tofile bep_offset="0" lang="en" title="Blue Ridge Mountains">462535</tofile>
+				<tofile bep_offset="0" lang="en" title="Sharkskin">16834386</tofile>
+				<tofile bep_offset="0" lang="en" title="Kyushu">16914</tofile>
+				<tofile bep_offset="0" lang="en" title="Condiment">62155</tofile>
+				<tofile bep_offset="0" lang="en" title="British Columbia">3392</tofile>
+				<tofile bep_offset="0" lang="en" title="Ateji">1790878</tofile>
+				<tofile bep_offset="0" lang="en" title="Oroshigane">519657</tofile>
+				<tofile bep_offset="0" lang="en" title="Kyoto">37652</tofile>
+				<tofile bep_offset="0" lang="en" title="Capsaicin">57421</tofile>
+				<tofile bep_offset="0" lang="en" title="Hydrolysis">14385</tofile>
+				<tofile bep_offset="0" lang="en" title="Human nose">9387918</tofile>
+				<tofile bep_offset="0" lang="en" title="Legume">305286</tofile>
+				<tofile bep_offset="0" lang="en" title="Chili pepper">74225</tofile>
+				<tofile bep_offset="0" lang="en" title="China">5405</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="191497" name="松嶋菜菜子"> 
+		<outgoing>
+			<anchor offset="290" length="15" name="松嶋菜菜子">
+				<tofile bep_offset="0" lang="en" title="Actor">21504235</tofile>
+				<tofile bep_offset="0" lang="en" title="Toshiaki Karasawa">4240278</tofile>
+				<tofile bep_offset="0" lang="en" title="Yo Oizumi">2542672</tofile>
+				<tofile bep_offset="0" lang="en" title="1996">34636</tofile>
+				<tofile bep_offset="0" lang="en" title="Meishan">1861967</tofile>
+				<tofile bep_offset="0" lang="en" title="November 30">21577</tofile>
+				<tofile bep_offset="0" lang="en" title="February 21">11010</tofile>
+				<tofile bep_offset="0" lang="en" title="Company">4918223</tofile>
+				<tofile bep_offset="0" lang="en" title="Vivi (magazine)">14650651</tofile>
+				<tofile bep_offset="0" lang="en" title="Majo no Jōken">11375151</tofile>
+				<tofile bep_offset="0" lang="en" title="Zama, Kanagawa">451304</tofile>
+				<tofile bep_offset="0" lang="en" title="Nissan Motors">21240</tofile>
+				<tofile bep_offset="0" lang="en" title="Song Seung-heon">1102118</tofile>
+				<tofile bep_offset="0" lang="en" title="May 31">19653</tofile>
+				<tofile bep_offset="0" lang="en" title="Nikon">916132</tofile>
+				<tofile bep_offset="0" lang="en" title="Kanagawa Prefecture">61757</tofile>
+				<tofile bep_offset="0" lang="en" title="Kose">18003664</tofile>
+				<tofile bep_offset="0" lang="en" title="Yōsuke Eguchi">22838658</tofile>
+				<tofile bep_offset="0" lang="en" title="Sunflower">57622</tofile>
+				<tofile bep_offset="0" lang="en" title="1998">34647</tofile>
+				<tofile bep_offset="0" lang="en" title="NTT (disambiguation)">334709</tofile>
+				<tofile bep_offset="0" lang="en" title="Boys Over Flowers">147810</tofile>
+				<tofile bep_offset="0" lang="en" title="GTO">179068</tofile>
+				<tofile bep_offset="0" lang="en" title="2001">34551</tofile>
+				<tofile bep_offset="0" lang="en" title="Model (person)">48916</tofile>
+				<tofile bep_offset="0" lang="en" title="Eita">11241208</tofile>
+				<tofile bep_offset="0" lang="en" title="1999">34553</tofile>
+				<tofile bep_offset="0" lang="en" title="Wii Fit Plus">23067669</tofile>
+				<tofile bep_offset="0" lang="en" title="Shinichi Tsutsumi">6775476</tofile>
+				<tofile bep_offset="0" lang="en" title="Sumitomo Life">1904132</tofile>
+				<tofile bep_offset="0" lang="en" title="Masaharu Fukuyama">30874426</tofile>
+				<tofile bep_offset="0" lang="en" title="Meiji Seika">1617073</tofile>
+				<tofile bep_offset="0" lang="en" title="Japan Academy Prize (film)">303981</tofile>
+				<tofile bep_offset="0" lang="en" title="Japanese television drama">796129</tofile>
+				<tofile bep_offset="0" lang="en" title="Japan">15573</tofile>
+				<tofile bep_offset="0" lang="en" title="Ring (film)">180785</tofile>
+				<tofile bep_offset="0" lang="en" title="Japanese language">15606</tofile>
+				<tofile bep_offset="0" lang="en" title="Fuji Television">193225</tofile>
+				<tofile bep_offset="0" lang="en" title="Takao Osawa">25416625</tofile>
+				<tofile bep_offset="0" lang="en" title="Jun Matsumoto">1864002</tofile>
+				<tofile bep_offset="0" lang="en" title="Procter &amp; Gamble">19629560</tofile>
+				<tofile bep_offset="0" lang="en" title="Paramount Pictures">22918</tofile>
+				<tofile bep_offset="0" lang="en" title="Takashi Sorimachi">2814388</tofile>
+				<tofile bep_offset="0" lang="en" title="NTV">193220</tofile>
+				<tofile bep_offset="0" lang="en" title="NHK">147782</tofile>
+				<tofile bep_offset="0" lang="en" title="Shochiku">1933246</tofile>
+				<tofile bep_offset="0" lang="en" title="Yodo-dono">1781172</tofile>
+				<tofile bep_offset="0" lang="en" title="Nippon Television">33564849</tofile>
+				<tofile bep_offset="0" lang="en" title="Ghost (1990 film)">129619</tofile>
+				<tofile bep_offset="0" lang="en" title="Nintendo">21197</tofile>
+				<tofile bep_offset="0" lang="en" title="Getsuku">21276031</tofile>
+				<tofile bep_offset="0" lang="en" title="Morinaga &amp; Company">4738867</tofile>
+				<tofile bep_offset="0" lang="en" title="Tokyo Broadcasting System Television">25067268</tofile>
+				<tofile bep_offset="0" lang="en" title="Mao Inoue">11034066</tofile>
+				<tofile bep_offset="0" lang="en" title="Saki Aibu">16026196</tofile>
+				<tofile bep_offset="0" lang="en" title="2007">36165</tofile>
+				<tofile bep_offset="0" lang="en" title="2004">35524</tofile>
+				<tofile bep_offset="0" lang="en" title="Great Teacher Onizuka">223042</tofile>
+				<tofile bep_offset="0" lang="en" title="Toho">30683</tofile>
+				<tofile bep_offset="0" lang="en" title="Kaseifu no Mita">33412680</tofile>
+				<tofile bep_offset="0" lang="en" title="Masakazu Tamura">4241685</tofile>
+				<tofile bep_offset="0" lang="en" title="Kao Corporation">3429390</tofile>
+				<tofile bep_offset="0" lang="en" title="Demi Moore">187807</tofile>
+				<tofile bep_offset="0" lang="en" title="Grave of the Fireflies">182164</tofile>
+				<tofile bep_offset="0" lang="en" title="Midnight Express">5617291</tofile>
+				<tofile bep_offset="0" lang="en" title="Konna Koi no Hanashi">4207921</tofile>
+				<tofile bep_offset="0" lang="en" title="Yamato nadeshiko">12990727</tofile>
+				<tofile bep_offset="0" lang="en" title="Hana Yori Dango Returns (TV series)">21410488</tofile>
+				<tofile bep_offset="0" lang="en" title="Ring 2">1188832</tofile>
+				<tofile bep_offset="0" lang="en" title="Hiroyuki Sanada">1031626</tofile>
+				<tofile bep_offset="0" lang="en" title="Himawari">6363555</tofile>
+				<tofile bep_offset="0" lang="en" title="Yokohama">80313</tofile>
+				<tofile bep_offset="0" lang="en" title="Hana Yori Dango (TV series)">21408516</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="622764" name="旅行支票"> 
+		<outgoing>
+			<anchor offset="290" length="12" name="旅行支票">
+				<tofile bep_offset="0" lang="en" title="Citibank">231026</tofile>
+				<tofile bep_offset="0" lang="en" title="2007">36165</tofile>
+				<tofile bep_offset="0" lang="en" title="1891">34794</tofile>
+				<tofile bep_offset="0" lang="en" title="Pound sterling">270673</tofile>
+				<tofile bep_offset="0" lang="en" title="Credit card">17182301</tofile>
+				<tofile bep_offset="0" lang="en" title="1772">35818</tofile>
+				<tofile bep_offset="0" lang="en" title="Europe">9239</tofile>
+				<tofile bep_offset="0" lang="en" title="Cheque">1267494</tofile>
+				<tofile bep_offset="0" lang="en" title="January 1">15787</tofile>
+				<tofile bep_offset="0" lang="en" title="Canadian dollar">101846</tofile>
+				<tofile bep_offset="0" lang="en" title="American Express">326512</tofile>
+				<tofile bep_offset="0" lang="en" title="Euro">9472</tofile>
+				<tofile bep_offset="0" lang="en" title="Bank">19360669</tofile>
+				<tofile bep_offset="0" lang="en" title="1874">34770</tofile>
+				<tofile bep_offset="0" lang="en" title="Japanese yen">34392</tofile>
+				<tofile bep_offset="0" lang="en" title="Commission (remuneration)">6976469</tofile>
+				<tofile bep_offset="0" lang="en" title="Money">8983183</tofile>
+				<tofile bep_offset="0" lang="en" title="Certified check">3027717</tofile>
+				<tofile bep_offset="0" lang="en" title="United States dollar">18717338</tofile>
+				<tofile bep_offset="0" lang="en" title="Eurocheque">3981475</tofile>
+				<tofile bep_offset="0" lang="en" title="Natural person">361406</tofile>
+				<tofile bep_offset="0" lang="en" title="Thomas Cook Group">9460581</tofile>
+				<tofile bep_offset="0" lang="en" title="Check 21 Act">643508</tofile>
+				<tofile bep_offset="0" lang="en" title="Marcellus Flemming Berry">31457914</tofile>
+				<tofile bep_offset="0" lang="en" title="Check verification service">1044720</tofile>
+				<tofile bep_offset="0" lang="en" title="Countersign (legal)">17130411</tofile>
+				<tofile bep_offset="0" lang="en" title="Letter of credit">844265</tofile>
+				<tofile bep_offset="0" lang="en" title="Signature">26753</tofile>
+				<tofile bep_offset="0" lang="en" title="J. C. Fargo">8787153</tofile>
+				<tofile bep_offset="0" lang="en" title="Identity document">364578</tofile>
+				<tofile bep_offset="0" lang="en" title="Stored-value card">298804</tofile>
+				<tofile bep_offset="0" lang="en" title="Chinese yuan">2279472</tofile>
+				<tofile bep_offset="0" lang="en" title="Cashier&apos;s check">1608407</tofile>
+				<tofile bep_offset="0" lang="en" title="Money order">458096</tofile>
+				<tofile bep_offset="0" lang="en" title="Visa Inc.">246920</tofile>
+				<tofile bep_offset="0" lang="en" title="United States">3434750</tofile>
+				<tofile bep_offset="0" lang="en" title="Thomas Cook">404367</tofile>
+				<tofile bep_offset="0" lang="en" title="Circular note">4031925</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="234299" name="宋惠教"> 
+		<outgoing>
+			<anchor offset="290" length="9" name="宋惠教">
+				<tofile bep_offset="0" lang="en" title="Actor">21504235</tofile>
+				<tofile bep_offset="0" lang="en" title="1996">34636</tofile>
+				<tofile bep_offset="0" lang="en" title="1981">34776</tofile>
+				<tofile bep_offset="0" lang="en" title="Munhwa Broadcasting Corporation">1673907</tofile>
+				<tofile bep_offset="0" lang="en" title="Lee Seung-yeon">3065959</tofile>
+				<tofile bep_offset="0" lang="en" title="Hotelier (TV series)">1290281</tofile>
+				<tofile bep_offset="0" lang="en" title="Poet">25353172</tofile>
+				<tofile bep_offset="0" lang="en" title="Song Seung-heon">1102118</tofile>
+				<tofile bep_offset="0" lang="en" title="Kim Seung-woo">8446560</tofile>
+				<tofile bep_offset="0" lang="en" title="Korean language">16756</tofile>
+				<tofile bep_offset="0" lang="en" title="English language">8569916</tofile>
+				<tofile bep_offset="0" lang="en" title="Rain (entertainer)">1536200</tofile>
+				<tofile bep_offset="0" lang="en" title="The World That They Live In">27495906</tofile>
+				<tofile bep_offset="0" lang="en" title="1998">34647</tofile>
+				<tofile bep_offset="0" lang="en" title="Hyun Bin">5503499</tofile>
+				<tofile bep_offset="0" lang="en" title="2001">34551</tofile>
+				<tofile bep_offset="0" lang="en" title="1999">34553</tofile>
+				<tofile bep_offset="0" lang="en" title="Full House (2004 TV series)">3277676</tofile>
+				<tofile bep_offset="0" lang="en" title="November 22">21526</tofile>
+				<tofile bep_offset="0" lang="en" title="Hollywood">53849</tofile>
+				<tofile bep_offset="0" lang="en" title="Won Bin">1447057</tofile>
+				<tofile bep_offset="0" lang="en" title="April 4">18951826</tofile>
+				<tofile bep_offset="0" lang="en" title="South Korea">27019</tofile>
+				<tofile bep_offset="0" lang="en" title="Guardian Angel (TV series)">12078159</tofile>
+				<tofile bep_offset="0" lang="en" title="2005">35984</tofile>
+				<tofile bep_offset="0" lang="en" title="Autumn in My Heart">2339839</tofile>
+				<tofile bep_offset="0" lang="en" title="Koreans">335941</tofile>
+				<tofile bep_offset="0" lang="en" title="Seoul">19159283</tofile>
+				<tofile bep_offset="0" lang="en" title="Bae Yong Joon">30874652</tofile>
+				<tofile bep_offset="0" lang="en" title="2000">34548</tofile>
+				<tofile bep_offset="0" lang="en" title="Korean Broadcasting System">341969</tofile>
+				<tofile bep_offset="0" lang="en" title="Centimetre">7669</tofile>
+				<tofile bep_offset="0" lang="en" title="PaekSang Arts Awards">21797520</tofile>
+				<tofile bep_offset="0" lang="en" title="September 18">28146</tofile>
+				<tofile bep_offset="0" lang="en" title="Geisha">18617998</tofile>
+				<tofile bep_offset="0" lang="en" title="Lee Byung-hun">1328834</tofile>
+				<tofile bep_offset="0" lang="en" title="2006">36164</tofile>
+				<tofile bep_offset="0" lang="en" title="2007">36165</tofile>
+				<tofile bep_offset="0" lang="en" title="Jo Hyeon-jae">3070040</tofile>
+				<tofile bep_offset="0" lang="en" title="2004">35524</tofile>
+				<tofile bep_offset="0" lang="en" title="Comedy">20914042</tofile>
+				<tofile bep_offset="0" lang="en" title="Cha Tae-hyun">3982826</tofile>
+				<tofile bep_offset="0" lang="en" title="Kilogram">16619</tofile>
+				<tofile bep_offset="0" lang="en" title="Yoo Ji-tae">3121214</tofile>
+				<tofile bep_offset="0" lang="en" title="Sejong University">28817546</tofile>
+				<tofile bep_offset="0" lang="en" title="All In (TV series)">1338522</tofile>
+				<tofile bep_offset="0" lang="en" title="Seoul Broadcasting System">341975</tofile>
+				<tofile bep_offset="0" lang="en" title="June 6">15794</tofile>
+				<tofile bep_offset="0" lang="en" title="August 1">1254</tofile>
+				<tofile bep_offset="0" lang="en" title="Hwang Jini">3746941</tofile>
+				<tofile bep_offset="0" lang="en" title="July 14">16018</tofile>
+				<tofile bep_offset="0" lang="en" title="Bruce Lee">37313</tofile>
+				<tofile bep_offset="0" lang="en" title="Music Bank (TV series)">24575041</tofile>
+				<tofile bep_offset="0" lang="en" title="McDonald&apos;s">2480627</tofile>
+				<tofile bep_offset="0" lang="en" title="Korean Film Awards">20541287</tofile>
+				<tofile bep_offset="0" lang="en" title="Yip Man">158664</tofile>
+				<tofile bep_offset="0" lang="en" title="Nintendo DS">438022</tofile>
+				<tofile bep_offset="0" lang="en" title="My Girl and I">4410476</tofile>
+				<tofile bep_offset="0" lang="en" title="Chinese Civil War">54422</tofile>
+				<tofile bep_offset="0" lang="en" title="All In">10666440</tofile>
+				<tofile bep_offset="0" lang="en" title="Sunlight Pours Down">9475930</tofile>
+				<tofile bep_offset="0" lang="en" title="A Reason to Live (2011 film)">33150616</tofile>
+				<tofile bep_offset="0" lang="en" title="Terence Chang">6653675</tofile>
+				<tofile bep_offset="0" lang="en" title="Model (person)">48916</tofile>
+				<tofile bep_offset="0" lang="en" title="Busan">68115</tofile>
+				<tofile bep_offset="0" lang="en" title="Hankook Ilbo">1224499</tofile>
+				<tofile bep_offset="0" lang="en" title="Korean drama">2327048</tofile>
+				<tofile bep_offset="0" lang="en" title="School uniform">55615</tofile>
+				<tofile bep_offset="0" lang="en" title="John Woo">15571</tofile>
+				<tofile bep_offset="0" lang="en" title="KBS Drama Acting Awards">15245632</tofile>
+				<tofile bep_offset="0" lang="en" title="The Dong-a Ilbo">2017422</tofile>
+				<tofile bep_offset="0" lang="en" title="Fuji Television">193225</tofile>
+				<tofile bep_offset="0" lang="en" title="First Love (1996 TV series)">3546766</tofile>
+				<tofile bep_offset="0" lang="en" title="The Grandmasters">32963963</tofile>
+				<tofile bep_offset="0" lang="en" title="Mnet Asian Music Awards">23174512</tofile>
+				<tofile bep_offset="0" lang="en" title="World War II">32927</tofile>
+				<tofile bep_offset="0" lang="en" title="SK Group">1174665</tofile>
+				<tofile bep_offset="0" lang="en" title="Kang Dong-Won">2704831</tofile>
+				<tofile bep_offset="0" lang="en" title="Daegu">323135</tofile>
+				<tofile bep_offset="0" lang="en" title="Wong Kar-wai">213362</tofile>
+				<tofile bep_offset="0" lang="en" title="Kim Bum Soo">5216150</tofile>
+				<tofile bep_offset="0" lang="en" title="Taepyeongyang Corporation">3575487</tofile>
+				<tofile bep_offset="0" lang="en" title="Hwang Jin Yi (film)">12809766</tofile>
+				<tofile bep_offset="0" lang="en" title="Socrates in Love">2056423</tofile>
+				<tofile bep_offset="0" lang="en" title="Kisaeng">3271409</tofile>
+				<tofile bep_offset="0" lang="en" title="Golden Disk Awards">23629396</tofile>
+				<tofile bep_offset="0" lang="en" title="Levi Strauss &amp; Co.">503153</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="400005" name="日本大鲵"> 
+		<outgoing>
+			<anchor offset="290" length="12" name="日本大鲵">
+				<tofile bep_offset="0" lang="en" title="Nine Provinces (China)">4010404</tofile>
+				<tofile bep_offset="0" lang="en" title="Sichuan pepper">60190</tofile>
+				<tofile bep_offset="0" lang="en" title="Andrias">16822957</tofile>
+				<tofile bep_offset="0" lang="en" title="Finger">37618</tofile>
+				<tofile bep_offset="0" lang="en" title="Binomial nomenclature">39736</tofile>
+				<tofile bep_offset="0" lang="en" title="Tail">2260429</tofile>
+				<tofile bep_offset="0" lang="en" title="Toe">211397</tofile>
+				<tofile bep_offset="0" lang="en" title="Chinese giant salamander">9428033</tofile>
+				<tofile bep_offset="0" lang="en" title="Metre">18947</tofile>
+				<tofile bep_offset="0" lang="en" title="Asiatic salamander">400342</tofile>
+				<tofile bep_offset="0" lang="en" title="Limb (anatomy)">13280372</tofile>
+				<tofile bep_offset="0" lang="en" title="Cryptobranchoidea">10993062</tofile>
+				<tofile bep_offset="0" lang="en" title="Species">21780446</tofile>
+				<tofile bep_offset="0" lang="en" title="Fish">4699587</tofile>
+				<tofile bep_offset="0" lang="en" title="Honshu">59057</tofile>
+				<tofile bep_offset="0" lang="en" title="National treasure">2178318</tofile>
+				<tofile bep_offset="0" lang="en" title="Centimetre">7669</tofile>
+				<tofile bep_offset="0" lang="en" title="Shikoku">61722</tofile>
+				<tofile bep_offset="0" lang="en" title="Japan">15573</tofile>
+				<tofile bep_offset="0" lang="en" title="Utagawa Kuniyoshi">300309</tofile>
+				<tofile bep_offset="0" lang="en" title="Egg (biology)">484939</tofile>
+				<tofile bep_offset="0" lang="en" title="Silt">170406</tofile>
+				<tofile bep_offset="0" lang="en" title="Oxygen">22303</tofile>
+				<tofile bep_offset="0" lang="en" title="Netherlands">21148</tofile>
+				<tofile bep_offset="0" lang="en" title="Philipp Franz von Siebold">23537</tofile>
+				<tofile bep_offset="0" lang="en" title="Aquatic animal">314928</tofile>
+				<tofile bep_offset="0" lang="en" title="Dejima">8185</tofile>
+				<tofile bep_offset="0" lang="en" title="Near Threatened">5544616</tofile>
+				<tofile bep_offset="0" lang="en" title="List of Special Places of Scenic Beauty, Special Historic Sites and Special Natural Monuments">25489159</tofile>
+				<tofile bep_offset="0" lang="en" title="Salamander">29657</tofile>
+				<tofile bep_offset="0" lang="en" title="Samurai">28288</tofile>
+				<tofile bep_offset="0" lang="en" title="Habitat destruction">1707053</tofile>
+				<tofile bep_offset="0" lang="en" title="Lateral line">534435</tofile>
+				<tofile bep_offset="0" lang="en" title="Hair cell">890232</tofile>
+				<tofile bep_offset="0" lang="en" title="Endemism">937971</tofile>
+				<tofile bep_offset="0" lang="en" title="Nocturnality">63011</tofile>
+				<tofile bep_offset="0" lang="en" title="Kyushu">16914</tofile>
+				<tofile bep_offset="0" lang="en" title="Metabolism">20374</tofile>
+				<tofile bep_offset="0" lang="en" title="Leiden">46599</tofile>
+				<tofile bep_offset="0" lang="en" title="CITES">6201</tofile>
+				<tofile bep_offset="0" lang="en" title="Artis">98652</tofile>
+				<tofile bep_offset="0" lang="en" title="Ukiyo-e">43351</tofile>
+				<tofile bep_offset="0" lang="en" title="Gill">40579</tofile>
+				<tofile bep_offset="0" lang="en" title="International Union for Conservation of Nature">101884</tofile>
+				<tofile bep_offset="0" lang="en" title="Stream">18842308</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="101991" name="意大利餃"> 
+		<outgoing>
+			<anchor offset="290" length="12" name="意大利餃">
+				<tofile bep_offset="0" lang="en" title="Pillow">706020</tofile>
+				<tofile bep_offset="0" lang="en" title="Lemon">21299730</tofile>
+				<tofile bep_offset="0" lang="en" title="Mushroom">20264</tofile>
+				<tofile bep_offset="0" lang="en" title="Emilia-Romagna">162715</tofile>
+				<tofile bep_offset="0" lang="en" title="Genoa">66513</tofile>
+				<tofile bep_offset="0" lang="en" title="Egg yolk">472293</tofile>
+				<tofile bep_offset="0" lang="en" title="World War II">32927</tofile>
+				<tofile bep_offset="0" lang="en" title="Parmigiano-Reggiano">304667</tofile>
+				<tofile bep_offset="0" lang="en" title="Chicken (food)">5741239</tofile>
+				<tofile bep_offset="0" lang="en" title="Rosemary">25484</tofile>
+				<tofile bep_offset="0" lang="en" title="Wonton">1191883</tofile>
+				<tofile bep_offset="0" lang="en" title="Onion">51258</tofile>
+				<tofile bep_offset="0" lang="en" title="Garlic">50469</tofile>
+				<tofile bep_offset="0" lang="en" title="Gnocchi">95411</tofile>
+				<tofile bep_offset="0" lang="en" title="Maultasche">602599</tofile>
+				<tofile bep_offset="0" lang="en" title="Mortadella">44831</tofile>
+				<tofile bep_offset="0" lang="en" title="1842">34922</tofile>
+				<tofile bep_offset="0" lang="en" title="Italy">14532</tofile>
+				<tofile bep_offset="0" lang="en" title="Prosciutto">746225</tofile>
+				<tofile bep_offset="0" lang="en" title="Eggplant">45712</tofile>
+				<tofile bep_offset="0" lang="en" title="Jiaozi">11880644</tofile>
+				<tofile bep_offset="0" lang="en" title="Spinach">169734</tofile>
+				<tofile bep_offset="0" lang="en" title="Flour">56232</tofile>
+				<tofile bep_offset="0" lang="en" title="Olive oil">22478</tofile>
+				<tofile bep_offset="0" lang="en" title="Basil">346865</tofile>
+				<tofile bep_offset="0" lang="en" title="Tomato">9940234</tofile>
+				<tofile bep_offset="0" lang="en" title="Italian language">14708</tofile>
+				<tofile bep_offset="0" lang="en" title="Modena">62418</tofile>
+				<tofile bep_offset="0" lang="en" title="Egg (food)">19196010</tofile>
+				<tofile bep_offset="0" lang="en" title="Bologna">21069333</tofile>
+				<tofile bep_offset="0" lang="en" title="Francesco di Marco Datini">10184627</tofile>
+				<tofile bep_offset="0" lang="en" title="Ravioli (TV series)">33148490</tofile>
+				<tofile bep_offset="0" lang="en" title="Ostoni">11745035</tofile>
+				<tofile bep_offset="0" lang="en" title="Bartolomeo Scappi">8645561</tofile>
+				<tofile bep_offset="0" lang="en" title="Italian American">125320</tofile>
+				<tofile bep_offset="0" lang="en" title="Vellum">32435</tofile>
+				<tofile bep_offset="0" lang="en" title="Shishbarak">20467764</tofile>
+				<tofile bep_offset="0" lang="en" title="Marinara sauce">16965534</tofile>
+				<tofile bep_offset="0" lang="en" title="Toasted ravioli">1066826</tofile>
+				<tofile bep_offset="0" lang="en" title="Gujia">16606395</tofile>
+				<tofile bep_offset="0" lang="en" title="New York">8210131</tofile>
+				<tofile bep_offset="0" lang="en" title="Boston">24437894</tofile>
+				<tofile bep_offset="0" lang="en" title="Italians">385155</tofile>
+				<tofile bep_offset="0" lang="en" title="Turnip">46576</tofile>
+				<tofile bep_offset="0" lang="en" title="Forme of Cury">239788</tofile>
+				<tofile bep_offset="0" lang="en" title="Normans">21476352</tofile>
+				<tofile bep_offset="0" lang="en" title="Pasta">23871</tofile>
+				<tofile bep_offset="0" lang="en" title="Holi">489575</tofile>
+				<tofile bep_offset="0" lang="en" title="Papal conclave, 1549–1550">12057232</tofile>
+				<tofile bep_offset="0" lang="en" title="Prato">1821975</tofile>
+				<tofile bep_offset="0" lang="en" title="Venice">32616</tofile>
+				<tofile bep_offset="0" lang="en" title="Chef Boyardee">1032674</tofile>
+				<tofile bep_offset="0" lang="en" title="Ricotta">708679</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="1118333" name="女真入侵日本"> 
+		<outgoing>
+			<anchor offset="290" length="18" name="女真入侵日本">
+				<tofile bep_offset="0" lang="en" title="Tsushima Island">1630110</tofile>
+				<tofile bep_offset="0" lang="en" title="Goryeosa">3940747</tofile>
+				<tofile bep_offset="0" lang="en" title="Slavery">27992</tofile>
+				<tofile bep_offset="0" lang="en" title="April 12">1009</tofile>
+				<tofile bep_offset="0" lang="en" title="Unified Silla">447736</tofile>
+				<tofile bep_offset="0" lang="en" title="Goryeo">188435</tofile>
+				<tofile bep_offset="0" lang="en" title="Wonsan">527626</tofile>
+				<tofile bep_offset="0" lang="en" title="April 8">2224</tofile>
+				<tofile bep_offset="0" lang="en" title="Iki Province">431446</tofile>
+				<tofile bep_offset="0" lang="en" title="Chikuzen Province">431407</tofile>
+				<tofile bep_offset="0" lang="en" title="Japanese people">186932</tofile>
+				<tofile bep_offset="0" lang="en" title="Liao Dynasty">23508247</tofile>
+				<tofile bep_offset="0" lang="en" title="Ōei Invasion">1822338</tofile>
+				<tofile bep_offset="0" lang="en" title="Dongyi">3618351</tofile>
+				<tofile bep_offset="0" lang="en" title="Piracy">50715</tofile>
+				<tofile bep_offset="0" lang="en" title="April 7">2735</tofile>
+				<tofile bep_offset="0" lang="en" title="Kokushi (official)">3703015</tofile>
+				<tofile bep_offset="0" lang="en" title="March 27">20585</tofile>
+				<tofile bep_offset="0" lang="en" title="Mongol invasions of Japan">1603110</tofile>
+				<tofile bep_offset="0" lang="en" title="1019">36084</tofile>
+				<tofile bep_offset="0" lang="en" title="Jurchen people">166321</tofile>
+				<tofile bep_offset="0" lang="en" title="Gōzoku">1605318</tofile>
+				<tofile bep_offset="0" lang="en" title="Iki Island">1674343</tofile>
+				<tofile bep_offset="0" lang="en" title="Provincial temple">1464437</tofile>
+				<tofile bep_offset="0" lang="en" title="Japan">15573</tofile>
+				<tofile bep_offset="0" lang="en" title="July 7">15863</tofile>
+				<tofile bep_offset="0" lang="en" title="Hakata Bay">10444218</tofile>
+				<tofile bep_offset="0" lang="en" title="Kyushu">16914</tofile>
+				<tofile bep_offset="0" lang="en" title="Dazaifu (term)">32383362</tofile>
+				<tofile bep_offset="0" lang="en" title="Ulleungdo">1067058</tofile>
+				<tofile bep_offset="0" lang="en" title="Silla">324217</tofile>
+				<tofile bep_offset="0" lang="en" title="Tsushima Province">333992</tofile>
+				<tofile bep_offset="0" lang="en" title="Korean language">16756</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="59316" name="木糖醇"> 
+		<outgoing>
+			<anchor offset="290" length="9" name="木糖醇">
+				<tofile bep_offset="0" lang="en" title="Betula platyphylla">13983504</tofile>
+				<tofile bep_offset="0" lang="en" title="Xylose">846761</tofile>
+				<tofile bep_offset="0" lang="en" title="Diabetes mellitus">44677</tofile>
+				<tofile bep_offset="0" lang="en" title="Heat">19593167</tofile>
+				<tofile bep_offset="0" lang="en" title="Fatty acid">10975</tofile>
+				<tofile bep_offset="0" lang="en" title="Glucose">12950</tofile>
+				<tofile bep_offset="0" lang="en" title="Osteoporosis">22461</tofile>
+				<tofile bep_offset="0" lang="en" title="Chewing gum">288636</tofile>
+				<tofile bep_offset="0" lang="en" title="Bone">4099</tofile>
+				<tofile bep_offset="0" lang="en" title="Liver">17384301</tofile>
+				<tofile bep_offset="0" lang="en" title="Cell (biology)">4230</tofile>
+				<tofile bep_offset="0" lang="en" title="University of Iowa">241119</tofile>
+				<tofile bep_offset="0" lang="en" title="Glycerol">172732</tofile>
+				<tofile bep_offset="0" lang="en" title="Sucrose">50563</tofile>
+				<tofile bep_offset="0" lang="en" title="Blood sugar">289406</tofile>
+				<tofile bep_offset="0" lang="en" title="Extra (gum)">1375015</tofile>
+				<tofile bep_offset="0" lang="en" title="Dental caries">414350</tofile>
+				<tofile bep_offset="0" lang="en" title="Fat">11042</tofile>
+				<tofile bep_offset="0" lang="en" title="Metabolism">20374</tofile>
+				<tofile bep_offset="0" lang="en" title="Tooth (human)">68756</tofile>
+				<tofile bep_offset="0" lang="en" title="Lactic acid">172474</tofile>
+				<tofile bep_offset="0" lang="en" title="Respiratory tract">287885</tofile>
+				<tofile bep_offset="0" lang="en" title="Heart">36808</tofile>
+				<tofile bep_offset="0" lang="en" title="Pentose">23640</tofile>
+				<tofile bep_offset="0" lang="en" title="Finland">10577</tofile>
+				<tofile bep_offset="0" lang="en" title="Sweetness">1781797</tofile>
+				<tofile bep_offset="0" lang="en" title="Lung">36863</tofile>
+				<tofile bep_offset="0" lang="en" title="Sugar alcohol">562526</tofile>
+				<tofile bep_offset="0" lang="en" title="Carbohydrate">5932</tofile>
+				<tofile bep_offset="0" lang="en" title="Insulin">14895</tofile>
+				<tofile bep_offset="0" lang="en" title="Bagasse">607470</tofile>
+				<tofile bep_offset="0" lang="en" title="Mouthwash">782</tofile>
+				<tofile bep_offset="0" lang="en" title="Glycemic index">404226</tofile>
+				<tofile bep_offset="0" lang="en" title="Hypoglycemia">13315</tofile>
+				<tofile bep_offset="0" lang="en" title="Bacteria">9028799</tofile>
+				<tofile bep_offset="0" lang="en" title="Vegetable">5791492</tofile>
+				<tofile bep_offset="0" lang="en" title="Diarrhea">53951</tofile>
+				<tofile bep_offset="0" lang="en" title="Fiber">140558</tofile>
+				<tofile bep_offset="0" lang="en" title="Hardwood">371197</tofile>
+				<tofile bep_offset="0" lang="en" title="Calorie">6423</tofile>
+				<tofile bep_offset="0" lang="en" title="Neutrophil granulocyte">256162</tofile>
+				<tofile bep_offset="0" lang="en" title="Husk">689561</tofile>
+				<tofile bep_offset="0" lang="en" title="Dog">4269567</tofile>
+				<tofile bep_offset="0" lang="en" title="Food and Drug Administration">11632</tofile>
+				<tofile bep_offset="0" lang="en" title="Hydrogenation">235968</tofile>
+				<tofile bep_offset="0" lang="en" title="Streptococcus mutans">1917077</tofile>
+				<tofile bep_offset="0" lang="en" title="Berry">52948</tofile>
+				<tofile bep_offset="0" lang="en" title="Candida (fungus)">758403</tofile>
+				<tofile bep_offset="0" lang="en" title="Earwax">425379</tofile>
+				<tofile bep_offset="0" lang="en" title="Turku University">9041714</tofile>
+				<tofile bep_offset="0" lang="en" title="Eustachian tube">233586</tofile>
+				<tofile bep_offset="0" lang="en" title="PH">24530</tofile>
+				<tofile bep_offset="0" lang="en" title="Sugar">27712</tofile>
+				<tofile bep_offset="0" lang="en" title="Hyperglycemia">78226</tofile>
+				<tofile bep_offset="0" lang="en" title="Fructose">50337</tofile>
+				<tofile bep_offset="0" lang="en" title="Oat">46573</tofile>
+				<tofile bep_offset="0" lang="en" title="Erythritol">668700</tofile>
+				<tofile bep_offset="0" lang="en" title="Toxicity">170567</tofile>
+				<tofile bep_offset="0" lang="en" title="Aspartame">2752</tofile>
+				<tofile bep_offset="0" lang="en" title="Food energy">182303</tofile>
+				<tofile bep_offset="0" lang="en" title="Maize">20656228</tofile>
+				<tofile bep_offset="0" lang="en" title="Stevia">28152</tofile>
+				<tofile bep_offset="0" lang="en" title="Chirality (chemistry)">1170166</tofile>
+				<tofile bep_offset="0" lang="en" title="Flatulence">11240</tofile>
+				<tofile bep_offset="0" lang="en" title="Bread">36969</tofile>
+				<tofile bep_offset="0" lang="en" title="China">5405</tofile>
+				<tofile bep_offset="0" lang="en" title="Yeast">34385</tofile>
+				<tofile bep_offset="0" lang="en" title="Sugarcane">13873779</tofile>
+				<tofile bep_offset="0" lang="en" title="Metabolic syndrome">54439</tofile>
+				<tofile bep_offset="0" lang="en" title="Mushroom">20264</tofile>
+				<tofile bep_offset="0" lang="en" title="Sugar substitute">58880</tofile>
+				<tofile bep_offset="0" lang="en" title="Organic compound">22203</tofile>
+				<tofile bep_offset="0" lang="en" title="Aftertaste">2121098</tofile>
+				<tofile bep_offset="0" lang="en" title="Xylonic acid">22036581</tofile>
+				<tofile bep_offset="0" lang="en" title="Polyol">1554995</tofile>
+				<tofile bep_offset="0" lang="en" title="Sepsis">158400</tofile>
+				<tofile bep_offset="0" lang="en" title="Pekingese">456079</tofile>
+				<tofile bep_offset="0" lang="en" title="Gram">146839</tofile>
+				<tofile bep_offset="0" lang="en" title="Sorbitol">56360</tofile>
+				<tofile bep_offset="0" lang="en" title="Pastille">3496191</tofile>
+				<tofile bep_offset="0" lang="en" title="Sucralose">48463</tofile>
+				<tofile bep_offset="0" lang="en" title="Endogeny">790808</tofile>
+				<tofile bep_offset="0" lang="en" title="Middle ear">55972</tofile>
+				<tofile bep_offset="0" lang="en" title="L-xylulose reductase">10942725</tofile>
+				<tofile bep_offset="0" lang="en" title="Fruit">10843</tofile>
+				<tofile bep_offset="0" lang="en" title="Europe">9239</tofile>
+				<tofile bep_offset="0" lang="en" title="Toothpaste">147735</tofile>
+				<tofile bep_offset="0" lang="en" title="Calculus (dental)">252812</tofile>
+				<tofile bep_offset="0" lang="en" title="Aldehyde">37329</tofile>
+				<tofile bep_offset="0" lang="en" title="Galactose">56527</tofile>
+				<tofile bep_offset="0" lang="en" title="Dental plaque">2323622</tofile>
+				<tofile bep_offset="0" lang="en" title="Otitis media">215199</tofile>
+				<tofile bep_offset="0" lang="en" title="Isomer">20648024</tofile>
+				<tofile bep_offset="0" lang="en" title="Danisco">892555</tofile>
+				<tofile bep_offset="0" lang="en" title="Bloating">2200874</tofile>
+				<tofile bep_offset="0" lang="en" title="Mannitol">1015846</tofile>
+				<tofile bep_offset="0" lang="en" title="Laxative">168526</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="510121" name="五角龙"> 
+		<outgoing>
+			<anchor offset="290" length="9" name="五角龙">
+				<tofile bep_offset="0" lang="en" title="Pachycephalosauria">1624916</tofile>
+				<tofile bep_offset="0" lang="en" title="Anchiceratops">3533455</tofile>
+				<tofile bep_offset="0" lang="en" title="Pinales">68094</tofile>
+				<tofile bep_offset="0" lang="en" title="Ceratopsia">1288805</tofile>
+				<tofile bep_offset="0" lang="en" title="Parasaurolophus">1973155</tofile>
+				<tofile bep_offset="0" lang="en" title="Nodocephalosaurus">4469022</tofile>
+				<tofile bep_offset="0" lang="en" title="Daspletosaurus">195485</tofile>
+				<tofile bep_offset="0" lang="en" title="Cretaceous">5615</tofile>
+				<tofile bep_offset="0" lang="en" title="Fern">66512</tofile>
+				<tofile bep_offset="0" lang="en" title="Prenocephale">3548483</tofile>
+				<tofile bep_offset="0" lang="en" title="Chasmosaurus">1005302</tofile>
+				<tofile bep_offset="0" lang="en" title="Ceratopsidae">1560265</tofile>
+				<tofile bep_offset="0" lang="en" title="Vertebrate">36856</tofile>
+				<tofile bep_offset="0" lang="en" title="New Mexico">21649</tofile>
+				<tofile bep_offset="0" lang="en" title="Dinosaur">8311</tofile>
+				<tofile bep_offset="0" lang="en" title="United States">3434750</tofile>
+				<tofile bep_offset="0" lang="en" title="Ankylosauria">860921</tofile>
+				<tofile bep_offset="0" lang="en" title="Flowering plant">18967</tofile>
+				<tofile bep_offset="0" lang="en" title="Torosaurus">683917</tofile>
+				<tofile bep_offset="0" lang="en" title="Colorado">5399</tofile>
+				<tofile bep_offset="0" lang="en" title="Cycas revoluta">1613356</tofile>
+				<tofile bep_offset="0" lang="en" title="Tyrannosauridae">195479</tofile>
+				<tofile bep_offset="0" lang="en" title="Triceratops">54410</tofile>
+				<tofile bep_offset="0" lang="en" title="Sam Noble Oklahoma Museum of Natural History">2119326</tofile>
+				<tofile bep_offset="0" lang="en" title="Ah-Shi-Sle-Pah Wilderness Study Area">30411898</tofile>
+				<tofile bep_offset="0" lang="en" title="Fenestra">2730533</tofile>
+				<tofile bep_offset="0" lang="en" title="Skeleton">27609</tofile>
+				<tofile bep_offset="0" lang="en" title="Carl Wiman">12300545</tofile>
+				<tofile bep_offset="0" lang="en" title="Henry Fairfield Osborn">437891</tofile>
+				<tofile bep_offset="0" lang="en" title="Bistahieversor">25988394</tofile>
+				<tofile bep_offset="0" lang="en" title="Sphaerotholus">4480625</tofile>
+				<tofile bep_offset="0" lang="en" title="Genus">38493</tofile>
+				<tofile bep_offset="0" lang="en" title="Judithian">31439228</tofile>
+				<tofile bep_offset="0" lang="en" title="1923 in paleontology">15689762</tofile>
+				<tofile bep_offset="0" lang="en" title="Kritosaurus">2821220</tofile>
+				<tofile bep_offset="0" lang="en" title="Mammal">18838</tofile>
+				<tofile bep_offset="0" lang="en" title="Titanoceratops">30238468</tofile>
+				<tofile bep_offset="0" lang="en" title="Kirtland Formation">5282242</tofile>
+				<tofile bep_offset="0" lang="en" title="North America">21139</tofile>
+				<tofile bep_offset="0" lang="en" title="Tyrannosauroidea">3628220</tofile>
+				<tofile bep_offset="0" lang="en" title="Type locality (geology)">5030515</tofile>
+				<tofile bep_offset="0" lang="en" title="Skull">168859</tofile>
+				<tofile bep_offset="0" lang="en" title="Ancient Greek">148363</tofile>
+				<tofile bep_offset="0" lang="en" title="Charles Hazelius Sternberg">1624370</tofile>
+				<tofile bep_offset="0" lang="en" title="American Museum of Natural History">399990</tofile>
+				<tofile bep_offset="0" lang="en" title="Herbivore">44568</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="323856" name="冬蔭"> 
+		<outgoing>
+			<anchor offset="290" length="6" name="冬蔭">
+				<tofile bep_offset="0" lang="en" title="Tamarind">227931</tofile>
+				<tofile bep_offset="0" lang="en" title="Capsicum frutescens">2161790</tofile>
+				<tofile bep_offset="0" lang="en" title="Galangal">65452</tofile>
+				<tofile bep_offset="0" lang="en" title="Shrimp">52138</tofile>
+				<tofile bep_offset="0" lang="en" title="Thailand">30128</tofile>
+				<tofile bep_offset="0" lang="en" title="Hot and sour soup">2778848</tofile>
+				<tofile bep_offset="0" lang="en" title="Cymbopogon">194883</tofile>
+				<tofile bep_offset="0" lang="en" title="Soup">19651298</tofile>
+				<tofile bep_offset="0" lang="en" title="Fish sauce">46482</tofile>
+				<tofile bep_offset="0" lang="en" title="Chicken">37402</tofile>
+				<tofile bep_offset="0" lang="en" title="Lime (fruit)">261456</tofile>
+				<tofile bep_offset="0" lang="en" title="Coconut">51346</tofile>
+				<tofile bep_offset="0" lang="en" title="Volvariella volvacea">4234786</tofile>
+				<tofile bep_offset="0" lang="en" title="Malaysia">3607937</tofile>
+				<tofile bep_offset="0" lang="en" title="Lao language">140914</tofile>
+				<tofile bep_offset="0" lang="en" title="Stir frying">53000</tofile>
+				<tofile bep_offset="0" lang="en" title="Bangkok">56615</tofile>
+				<tofile bep_offset="0" lang="en" title="List of Thai ingredients">25246067</tofile>
+				<tofile bep_offset="0" lang="en" title="Singapore">27318</tofile>
+				<tofile bep_offset="0" lang="en" title="Coconut milk">743327</tofile>
+				<tofile bep_offset="0" lang="en" title="Lao cuisine">210008</tofile>
+				<tofile bep_offset="0" lang="en" title="Prawn">52171</tofile>
+				<tofile bep_offset="0" lang="en" title="Coriander">341640</tofile>
+				<tofile bep_offset="0" lang="en" title="Nam phrik">32748843</tofile>
+				<tofile bep_offset="0" lang="en" title="Laos">17752</tofile>
+				<tofile bep_offset="0" lang="en" title="Indonesia">14579</tofile>
+				<tofile bep_offset="0" lang="en" title="Kaffir lime">196782</tofile>
+				<tofile bep_offset="0" lang="en" title="Pleurotus ostreatus">1473803</tofile>
+				<tofile bep_offset="0" lang="en" title="Uttaradit">1283559</tofile>
+				<tofile bep_offset="0" lang="en" title="Tom kha gai">404895</tofile>
+				<tofile bep_offset="0" lang="en" title="1997 Asian financial crisis">262233</tofile>
+				<tofile bep_offset="0" lang="en" title="Chili pepper">74225</tofile>
+				<tofile bep_offset="0" lang="en" title="Thai cuisine">30529</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="472361" name="傲嬌"> 
+		<outgoing>
+			<anchor offset="290" length="6" name="傲嬌">
+				<tofile bep_offset="0" lang="en" title="Nickname">53430</tofile>
+				<tofile bep_offset="0" lang="en" title="Asuka Langley Soryu">1138988</tofile>
+				<tofile bep_offset="0" lang="en" title="Kanon">288001</tofile>
+				<tofile bep_offset="0" lang="en" title="Personality disorder">21378217</tofile>
+				<tofile bep_offset="0" lang="en" title="Genre">44706</tofile>
+				<tofile bep_offset="0" lang="en" title="K-On!">20570726</tofile>
+				<tofile bep_offset="0" lang="en" title="Yosuga no Sora">28830768</tofile>
+				<tofile bep_offset="0" lang="en" title="Subculture">150349</tofile>
+				<tofile bep_offset="0" lang="en" title="Cinderella">73453</tofile>
+				<tofile bep_offset="0" lang="en" title="Mayo Chiki!">31918779</tofile>
+				<tofile bep_offset="0" lang="en" title="Rukia Kuchiki">2356421</tofile>
+				<tofile bep_offset="0" lang="en" title="To Love-Ru">10089270</tofile>
+				<tofile bep_offset="0" lang="en" title="Comics">145443</tofile>
+				<tofile bep_offset="0" lang="en" title="Defence mechanism">465009</tofile>
+				<tofile bep_offset="0" lang="en" title="Rozen Maiden">1736971</tofile>
+				<tofile bep_offset="0" lang="en" title="Haruhi Suzumiya">11500693</tofile>
+				<tofile bep_offset="0" lang="en" title="School Rumble">1082759</tofile>
+				<tofile bep_offset="0" lang="en" title="Dragon Ball">11091078</tofile>
+				<tofile bep_offset="0" lang="en" title="Haruhi Suzumiya (character)">4751286</tofile>
+				<tofile bep_offset="0" lang="en" title="Ponytail">425716</tofile>
+				<tofile bep_offset="0" lang="en" title="Grimms&apos; Fairy Tales">3017525</tofile>
+				<tofile bep_offset="0" lang="en" title="Bunches">5594074</tofile>
+				<tofile bep_offset="0" lang="en" title="List of The Familiar of Zero characters">12306054</tofile>
+				<tofile bep_offset="0" lang="en" title="Mass media">19641</tofile>
+				<tofile bep_offset="0" lang="en" title="Voice (phonetics)">598329</tofile>
+				<tofile bep_offset="0" lang="en" title="Negima! Magister Negi Magi">325724</tofile>
+				<tofile bep_offset="0" lang="en" title="Mayoi Neko Overrun!">26264816</tofile>
+				<tofile bep_offset="0" lang="en" title="1997">34601</tofile>
+				<tofile bep_offset="0" lang="en" title="Japan">15573</tofile>
+				<tofile bep_offset="0" lang="en" title="Toradora!">11672162</tofile>
+				<tofile bep_offset="0" lang="en" title="Clannad (visual novel)">983972</tofile>
+				<tofile bep_offset="0" lang="en" title="Lucky Star (manga)">4778915</tofile>
+				<tofile bep_offset="0" lang="en" title="Ore no Imōto ga Konna ni Kawaii Wake ga Nai">20206150</tofile>
+				<tofile bep_offset="0" lang="en" title="Lotte no Omocha!">30977197</tofile>
+				<tofile bep_offset="0" lang="en" title="Moe (slang)">1066721</tofile>
+				<tofile bep_offset="0" lang="en" title="Aria the Scarlet Ammo">27126690</tofile>
+				<tofile bep_offset="0" lang="en" title="2000">34548</tofile>
+				<tofile bep_offset="0" lang="en" title="Highschool of the Dead">8749628</tofile>
+				<tofile bep_offset="0" lang="en" title="Hayate the Combat Butler">5112150</tofile>
+				<tofile bep_offset="0" lang="en" title="Neon Genesis Evangelion (anime)">21711</tofile>
+				<tofile bep_offset="0" lang="en" title="The Legend of the Legendary Heroes">27936244</tofile>
+				<tofile bep_offset="0" lang="en" title="Bleach (manga)">660333</tofile>
+				<tofile bep_offset="0" lang="en" title="Boku wa Tomodachi ga Sukunai">31952451</tofile>
+				<tofile bep_offset="0" lang="en" title="Shakugan no Shana">2548832</tofile>
+				<tofile bep_offset="0" lang="en" title="Full Metal Panic!">390250</tofile>
+				<tofile bep_offset="0" lang="en" title="Bakemonogatari">19072303</tofile>
+				<tofile bep_offset="0" lang="en" title="Hetalia: Axis Powers">20883447</tofile>
+				<tofile bep_offset="0" lang="en" title="To Heart">740211</tofile>
+				<tofile bep_offset="0" lang="en" title="Otaku">22722</tofile>
+				<tofile bep_offset="0" lang="en" title="Kimi ga Nozomu Eien">424580</tofile>
+				<tofile bep_offset="0" lang="en" title="Maid Sama!">19071359</tofile>
+				<tofile bep_offset="0" lang="en" title="Bishōjo game">723633</tofile>
+				<tofile bep_offset="0" lang="en" title="The Familiar of Zero">5982921</tofile>
+				<tofile bep_offset="0" lang="en" title="Animation">593</tofile>
+				<tofile bep_offset="0" lang="en" title="Comiket">722467</tofile>
+				<tofile bep_offset="0" lang="en" title="Takara Tomy">2400746</tofile>
+				<tofile bep_offset="0" lang="en" title="Naruto">232190</tofile>
+				<tofile bep_offset="0" lang="en" title="Culture of Japan">167104</tofile>
+				<tofile bep_offset="0" lang="en" title="Anime">800</tofile>
+				<tofile bep_offset="0" lang="en" title="Lum Invader">950815</tofile>
+				<tofile bep_offset="0" lang="en" title="Glossary of anime and manga">3127260</tofile>
+				<tofile bep_offset="0" lang="en" title="Akihabara">2802</tofile>
+				<tofile bep_offset="0" lang="en" title="Manga">18985</tofile>
+				<tofile bep_offset="0" lang="en" title="Love Hina">76793</tofile>
+				<tofile bep_offset="0" lang="en" title="Rie Kugimiya">1608646</tofile>
+				<tofile bep_offset="0" lang="en" title="Bome (sculptor)">8766094</tofile>
+				<tofile bep_offset="0" lang="en" title="Urusei Yatsura">156694</tofile>
+				<tofile bep_offset="0" lang="en" title="Maid café">5834396</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="12201" name="輪迴"> 
+		<outgoing>
+			<anchor offset="290" length="6" name="輪迴">
+				<tofile bep_offset="0" lang="en" title="Animal">11039790</tofile>
+				<tofile bep_offset="0" lang="en" title="Ancient Greece">66540</tofile>
+				<tofile bep_offset="0" lang="en" title="Nirvana">21233</tofile>
+				<tofile bep_offset="0" lang="en" title="Pre-sectarian Buddhism">6941197</tofile>
+				<tofile bep_offset="0" lang="en" title="Buddhism">3267529</tofile>
+				<tofile bep_offset="0" lang="en" title="Upanishads">80666</tofile>
+				<tofile bep_offset="0" lang="en" title="Desire realm">1029074</tofile>
+				<tofile bep_offset="0" lang="en" title="Druid">33931676</tofile>
+				<tofile bep_offset="0" lang="en" title="Trailokya">1245495</tofile>
+				<tofile bep_offset="0" lang="en" title="Plato">22954</tofile>
+				<tofile bep_offset="0" lang="en" title="Hell">5098574</tofile>
+				<tofile bep_offset="0" lang="en" title="Pythagoras">23275</tofile>
+				<tofile bep_offset="0" lang="en" title="Reincarnation">25806</tofile>
+				<tofile bep_offset="0" lang="en" title="Ghost">12514</tofile>
+				<tofile bep_offset="0" lang="en" title="Shen (Chinese religion)">11759764</tofile>
+				<tofile bep_offset="0" lang="en" title="Buddhahood">174976</tofile>
+				<tofile bep_offset="0" lang="en" title="Resurrection">26447</tofile>
+				<tofile bep_offset="0" lang="en" title="Lotus Sutra">298363</tofile>
+				<tofile bep_offset="0" lang="en" title="Brahmanism">173521</tofile>
+				<tofile bep_offset="0" lang="en" title="Soul">28297</tofile>
+				<tofile bep_offset="0" lang="en" title="International Alphabet of Sanskrit Transliteration">557097</tofile>
+				<tofile bep_offset="0" lang="en" title="Arhat (Buddhism)">21996250</tofile>
+				<tofile bep_offset="0" lang="en" title="Ecology">9630</tofile>
+				<tofile bep_offset="0" lang="en" title="Tulku">513972</tofile>
+				<tofile bep_offset="0" lang="en" title="Kama">1434556</tofile>
+				<tofile bep_offset="0" lang="en" title="Birth">83443</tofile>
+				<tofile bep_offset="0" lang="en" title="Death">8221</tofile>
+				<tofile bep_offset="0" lang="en" title="Raja Yoga">628346</tofile>
+				<tofile bep_offset="0" lang="en" title="Jiva">331398</tofile>
+				<tofile bep_offset="0" lang="en" title="Altered state of consciousness">252866</tofile>
+				<tofile bep_offset="0" lang="en" title="Saṅkhāra">2935684</tofile>
+				<tofile bep_offset="0" lang="en" title="Asceticism">83484</tofile>
+				<tofile bep_offset="0" lang="en" title="Bhavacakra">33305</tofile>
+				<tofile bep_offset="0" lang="en" title="Dzogchen">197383</tofile>
+				<tofile bep_offset="0" lang="en" title="Involution (esoterism)">1456593</tofile>
+				<tofile bep_offset="0" lang="en" title="Karma yoga">1381751</tofile>
+				<tofile bep_offset="0" lang="en" title="Yuga">175075</tofile>
+				<tofile bep_offset="0" lang="en" title="Naruto">232190</tofile>
+				<tofile bep_offset="0" lang="en" title="Ishvara">1201811</tofile>
+				<tofile bep_offset="0" lang="en" title="Manga">18985</tofile>
+				<tofile bep_offset="0" lang="en" title="Spiritual evolution">535928</tofile>
+				<tofile bep_offset="0" lang="en" title="Life">18393</tofile>
+				<tofile bep_offset="0" lang="en" title="Karma">16864</tofile>
+				<tofile bep_offset="0" lang="en" title="Hinduism">13543</tofile>
+				<tofile bep_offset="0" lang="en" title="Moksa (Jainism)">14657979</tofile>
+				<tofile bep_offset="0" lang="en" title="Malay language">126630</tofile>
+				<tofile bep_offset="0" lang="en" title="Emanationism">206553</tofile>
+				<tofile bep_offset="0" lang="en" title="Jnana yoga">744158</tofile>
+				<tofile bep_offset="0" lang="en" title="Surat Shabd Yoga">1017009</tofile>
+				<tofile bep_offset="0" lang="en" title="Sanskrit">27698</tofile>
+				<tofile bep_offset="0" lang="en" title="Ego (spirituality)">8382857</tofile>
+				<tofile bep_offset="0" lang="en" title="Sin">28307</tofile>
+				<tofile bep_offset="0" lang="en" title="Maya (illusion)">77041</tofile>
+				<tofile bep_offset="0" lang="en" title="Consciousness">5664</tofile>
+				<tofile bep_offset="0" lang="en" title="Metempsychosis">53141</tofile>
+				<tofile bep_offset="0" lang="en" title="Rebirth (Buddhism)">456706</tofile>
+				<tofile bep_offset="0" lang="en" title="Macrocosm and microcosm">247908</tofile>
+				<tofile bep_offset="0" lang="en" title="Avidyā">699441</tofile>
+				<tofile bep_offset="0" lang="en" title="Subtle body">395965</tofile>
+				<tofile bep_offset="0" lang="en" title="Orphism">4354597</tofile>
+				<tofile bep_offset="0" lang="en" title="Brahmacharya">373023</tofile>
+				<tofile bep_offset="0" lang="en" title="Meera">309110</tofile>
+				<tofile bep_offset="0" lang="en" title="Bhakti movement">175568</tofile>
+				<tofile bep_offset="0" lang="en" title="Nondualism">577035</tofile>
+				<tofile bep_offset="0" lang="en" title="Saṃsāra">174528</tofile>
+				<tofile bep_offset="0" lang="en" title="Jutsu">22465575</tofile>
+				<tofile bep_offset="0" lang="en" title="Liberty">936385</tofile>
+				<tofile bep_offset="0" lang="en" title="Bon">197394</tofile>
+				<tofile bep_offset="0" lang="en" title="Platonism">2221011</tofile>
+				<tofile bep_offset="0" lang="en" title="Standard Tibetan">5451939</tofile>
+				<tofile bep_offset="0" lang="en" title="Vedism">10373576</tofile>
+				<tofile bep_offset="0" lang="en" title="Bardo">327632</tofile>
+				<tofile bep_offset="0" lang="en" title="Volition (psychology)">317508</tofile>
+				<tofile bep_offset="0" lang="en" title="Indian religions">14605</tofile>
+				<tofile bep_offset="0" lang="en" title="Sikhism">27964</tofile>
+				<tofile bep_offset="0" lang="en" title="Moksha">175918</tofile>
+				<tofile bep_offset="0" lang="en" title="Thangka">1334163</tofile>
+				<tofile bep_offset="0" lang="en" title="Rebirth">98008</tofile>
+				<tofile bep_offset="0" lang="en" title="Jainism">16016</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="330631" name="廚師"> 
+		<outgoing>
+			<anchor offset="290" length="6" name="廚師">
+				<tofile bep_offset="0" lang="en" title="Ming Tsai">1473250</tofile>
+				<tofile bep_offset="0" lang="en" title="Mario Batali">666973</tofile>
+				<tofile bep_offset="0" lang="en" title="Yi Yin">8467239</tofile>
+				<tofile bep_offset="0" lang="en" title="Bobby Flay">1495923</tofile>
+				<tofile bep_offset="0" lang="en" title="Management">19881</tofile>
+				<tofile bep_offset="0" lang="en" title="Emperor Yao">491273</tofile>
+				<tofile bep_offset="0" lang="en" title="Zhuangzi">166152</tofile>
+				<tofile bep_offset="0" lang="en" title="19th century">28419612</tofile>
+				<tofile bep_offset="0" lang="en" title="Shun (Chinese leader)">491272</tofile>
+				<tofile bep_offset="0" lang="en" title="Duke Huan of Qi">1444284</tofile>
+				<tofile bep_offset="0" lang="en" title="Cooking">5355</tofile>
+				<tofile bep_offset="0" lang="en" title="Emperor Gaozong of Song">1159465</tofile>
+				<tofile bep_offset="0" lang="en" title="Han Dynasty">43460</tofile>
+				<tofile bep_offset="0" lang="en" title="Jamie Oliver">262464</tofile>
+				<tofile bep_offset="0" lang="en" title="Anthony Bourdain">595394</tofile>
+				<tofile bep_offset="0" lang="en" title="Julia Child">16441</tofile>
+				<tofile bep_offset="0" lang="en" title="Human">682482</tofile>
+				<tofile bep_offset="0" lang="en" title="TVB">343968</tofile>
+				<tofile bep_offset="0" lang="en" title="Writer">45353</tofile>
+				<tofile bep_offset="0" lang="en" title="16th century">34568</tofile>
+				<tofile bep_offset="0" lang="en" title="France">5843419</tofile>
+				<tofile bep_offset="0" lang="en" title="Dae Jang Geum">1561094</tofile>
+				<tofile bep_offset="0" lang="en" title="Anthony Bourdain: No Reservations">3415409</tofile>
+				<tofile bep_offset="0" lang="en" title="English language">8569916</tofile>
+				<tofile bep_offset="0" lang="en" title="Society">37235</tofile>
+				<tofile bep_offset="0" lang="en" title="Profession">24460</tofile>
+				<tofile bep_offset="0" lang="en" title="Nobility">28978421</tofile>
+				<tofile bep_offset="0" lang="en" title="Iron Chef">36540</tofile>
+				<tofile bep_offset="0" lang="en" title="India">14533</tofile>
+				<tofile bep_offset="0" lang="en" title="Martin Yan">343536</tofile>
+				<tofile bep_offset="0" lang="en" title="Yuan Mei">937268</tofile>
+				<tofile bep_offset="0" lang="en" title="Europe">9239</tofile>
+				<tofile bep_offset="0" lang="en" title="Yan Can Cook">1527276</tofile>
+				<tofile bep_offset="0" lang="en" title="Commerce">39208</tofile>
+				<tofile bep_offset="0" lang="en" title="French Revolution">11188</tofile>
+				<tofile bep_offset="0" lang="en" title="Jacques Pépin">863223</tofile>
+				<tofile bep_offset="0" lang="en" title="Cap">468323</tofile>
+				<tofile bep_offset="0" lang="en" title="Chu Ci">1731839</tofile>
+				<tofile bep_offset="0" lang="en" title="Qing Dynasty">25310</tofile>
+				<tofile bep_offset="0" lang="en" title="French language">10597</tofile>
+				<tofile bep_offset="0" lang="en" title="Auguste Escoffier">339637</tofile>
+				<tofile bep_offset="0" lang="en" title="Aboyeur">33767411</tofile>
+				<tofile bep_offset="0" lang="en" title="Vegetable">5791492</tofile>
+				<tofile bep_offset="0" lang="en" title="People">3488351</tofile>
+				<tofile bep_offset="0" lang="en" title="Hors d&apos;oeuvre">101151</tofile>
+				<tofile bep_offset="0" lang="en" title="Rubber glove">2395811</tofile>
+				<tofile bep_offset="0" lang="en" title="Houndstooth">3068097</tofile>
+				<tofile bep_offset="0" lang="en" title="World Association of Chefs Societies">9563232</tofile>
+				<tofile bep_offset="0" lang="en" title="Biscuit">314994</tofile>
+				<tofile bep_offset="0" lang="en" title="Saucier">1750984</tofile>
+				<tofile bep_offset="0" lang="en" title="Mexico">3966054</tofile>
+				<tofile bep_offset="0" lang="en" title="Dining room">801763</tofile>
+				<tofile bep_offset="0" lang="en" title="List of chefs (antiquity to the 20th century)">18900075</tofile>
+				<tofile bep_offset="0" lang="en" title="Kitchen">49404</tofile>
+				<tofile bep_offset="0" lang="en" title="Peking Duck">282854</tofile>
+				<tofile bep_offset="0" lang="en" title="Brigade de cuisine">3690518</tofile>
+				<tofile bep_offset="0" lang="en" title="Garde manger">3495688</tofile>
+				<tofile bep_offset="0" lang="en" title="Charcuterie">2617132</tofile>
+				<tofile bep_offset="0" lang="en" title="Roasting">52993</tofile>
+				<tofile bep_offset="0" lang="en" title="Macaron">2005216</tofile>
+				<tofile bep_offset="0" lang="en" title="Development chef">17671371</tofile>
+				<tofile bep_offset="0" lang="en" title="Meat">18940</tofile>
+				<tofile bep_offset="0" lang="en" title="Braising">52869</tofile>
+				<tofile bep_offset="0" lang="en" title="Double-breasted">3312098</tofile>
+				<tofile bep_offset="0" lang="en" title="Pâté">842227</tofile>
+				<tofile bep_offset="0" lang="en" title="Frying">26301130</tofile>
+				<tofile bep_offset="0" lang="en" title="Scullery">1158638</tofile>
+				<tofile bep_offset="0" lang="en" title="Sauce">61937</tofile>
+				<tofile bep_offset="0" lang="en" title="Great Chefs">21849042</tofile>
+				<tofile bep_offset="0" lang="en" title="Poultry">23197</tofile>
+				<tofile bep_offset="0" lang="en" title="Chocolate">7089</tofile>
+				<tofile bep_offset="0" lang="en" title="Personal chef">2625722</tofile>
+				<tofile bep_offset="0" lang="en" title="Haute cuisine">334079</tofile>
+				<tofile bep_offset="0" lang="en" title="International Association of Culinary Professionals">9558798</tofile>
+				<tofile bep_offset="0" lang="en" title="Pastry chef">718821</tofile>
+				<tofile bep_offset="0" lang="en" title="Salad">61950</tofile>
+				<tofile bep_offset="0" lang="en" title="Entrée">879384</tofile>
+				<tofile bep_offset="0" lang="en" title="Cupcake">910272</tofile>
+				<tofile bep_offset="0" lang="en" title="Clog (shoe)">358727</tofile>
+				<tofile bep_offset="0" lang="en" title="Cognate">6328</tofile>
+				<tofile bep_offset="0" lang="en" title="Grilling">52987</tofile>
+				<tofile bep_offset="0" lang="en" title="Sautéing">52986</tofile>
+				<tofile bep_offset="0" lang="en" title="Théodule Ribot">4397592</tofile>
+				<tofile bep_offset="0" lang="en" title="Fish">4699587</tofile>
+				<tofile bep_offset="0" lang="en" title="American Culinary Federation">7582448</tofile>
+				<tofile bep_offset="0" lang="en" title="Latin">17730</tofile>
+				<tofile bep_offset="0" lang="en" title="Butcher">495814</tofile>
+				<tofile bep_offset="0" lang="en" title="Marie-Antoine Carême">327960</tofile>
+				<tofile bep_offset="0" lang="en" title="Tandoor">30875830</tofile>
+				<tofile bep_offset="0" lang="en" title="Tenzo">7104354</tofile>
+				<tofile bep_offset="0" lang="en" title="Culinary art">2597318</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="7481" name="马王堆汉墓"> 
+		<outgoing>
+			<anchor offset="290" length="15" name="马王堆汉墓">
+				<tofile bep_offset="0" lang="en" title="Archaeology">18951655</tofile>
+				<tofile bep_offset="0" lang="en" title="Astrology">2122</tofile>
+				<tofile bep_offset="0" lang="en" title="Charcoal">21193982</tofile>
+				<tofile bep_offset="0" lang="en" title="Saddle">6373390</tofile>
+				<tofile bep_offset="0" lang="en" title="Hell bank note">2135106</tofile>
+				<tofile bep_offset="0" lang="en" title="Five Dynasties and Ten Kingdoms Period">58079</tofile>
+				<tofile bep_offset="0" lang="en" title="Divination">8691</tofile>
+				<tofile bep_offset="0" lang="en" title="Medicine">18957</tofile>
+				<tofile bep_offset="0" lang="en" title="Family">10401954</tofile>
+				<tofile bep_offset="0" lang="en" title="Xin Zhui">32480513</tofile>
+				<tofile bep_offset="0" lang="en" title="Hunan">166409</tofile>
+				<tofile bep_offset="0" lang="en" title="Furong District">24701072</tofile>
+				<tofile bep_offset="0" lang="en" title="Grave goods">723048</tofile>
+				<tofile bep_offset="0" lang="en" title="Changsha">203299</tofile>
+				<tofile bep_offset="0" lang="en" title="Science">26700</tofile>
+				<tofile bep_offset="0" lang="en" title="1972">34671</tofile>
+				<tofile bep_offset="0" lang="en" title="Hunan Provincial Museum">13141191</tofile>
+				<tofile bep_offset="0" lang="en" title="Taoist sexual practices">4180022</tofile>
+				<tofile bep_offset="0" lang="en" title="Grave">323679</tofile>
+				<tofile bep_offset="0" lang="en" title="Antique">346477</tofile>
+				<tofile bep_offset="0" lang="en" title="Ma Yin">2833928</tofile>
+				<tofile bep_offset="0" lang="en" title="Chu (Ten Kingdoms)">1728604</tofile>
+				<tofile bep_offset="0" lang="en" title="Lacquerware">879441</tofile>
+				<tofile bep_offset="0" lang="en" title="Guangxi">183525</tofile>
+				<tofile bep_offset="0" lang="en" title="Chunqiu shiyu">16761421</tofile>
+				<tofile bep_offset="0" lang="en" title="Qigong">21556371</tofile>
+				<tofile bep_offset="0" lang="en" title="Archaeological site">147625</tofile>
+				<tofile bep_offset="0" lang="en" title="Han Dynasty">43460</tofile>
+				<tofile bep_offset="0" lang="en" title="Divination by Astrological and Meteorological Phenomena">1947769</tofile>
+				<tofile bep_offset="0" lang="en" title="Taoism">30365</tofile>
+				<tofile bep_offset="0" lang="en" title="I Ching">26335002</tofile>
+				<tofile bep_offset="0" lang="en" title="Edward L. Shaughnessy">20754201</tofile>
+				<tofile bep_offset="0" lang="en" title="Nuwa">652391</tofile>
+				<tofile bep_offset="0" lang="en" title="Silk">51510</tofile>
+				<tofile bep_offset="0" lang="en" title="Mummy">20224</tofile>
+				<tofile bep_offset="0" lang="en" title="Huang-Lao">32145192</tofile>
+				<tofile bep_offset="0" lang="en" title="Myocardial infarction">20556798</tofile>
+				<tofile bep_offset="0" lang="en" title="168 BC">61673</tofile>
+				<tofile bep_offset="0" lang="en" title="Nanyue">1932209</tofile>
+				<tofile bep_offset="0" lang="en" title="Emperor Wen of Han">338540</tofile>
+				<tofile bep_offset="0" lang="en" title="Zhan Guo Ce">305373</tofile>
+				<tofile bep_offset="0" lang="en" title="Mawangdui Silk Texts">317342</tofile>
+				<tofile bep_offset="0" lang="en" title="History of silk">10783723</tofile>
+				<tofile bep_offset="0" lang="en" title="Glossary of shapes with metaphorical names">7041824</tofile>
+				<tofile bep_offset="0" lang="en" title="List of Chinese cultural relics forbidden to be exhibited abroad">33109636</tofile>
+				<tofile bep_offset="0" lang="en" title="Chang&apos;e">369971</tofile>
+				<tofile bep_offset="0" lang="en" title="Lacquer">216140</tofile>
+				<tofile bep_offset="0" lang="en" title="Tomb of Marquis Yi of Zeng">30865662</tofile>
+				<tofile bep_offset="0" lang="en" title="Cupressus">436114</tofile>
+				<tofile bep_offset="0" lang="en" title="Qin (state)">361005</tofile>
+				<tofile bep_offset="0" lang="en" title="Guangdong">65109</tofile>
+				<tofile bep_offset="0" lang="en" title="China">5405</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="132107" name="朝鮮莊祖"> 
+		<outgoing>
+			<anchor offset="290" length="12" name="朝鮮莊祖">
+				<tofile bep_offset="0" lang="en" title="Cheoljong of Joseon">385855</tofile>
+				<tofile bep_offset="0" lang="en" title="Heungseon Daewongun">2252929</tofile>
+				<tofile bep_offset="0" lang="en" title="Queen Jeongsun">27204375</tofile>
+				<tofile bep_offset="0" lang="en" title="Jeongjo of Joseon">2558508</tofile>
+				<tofile bep_offset="0" lang="en" title="Changgyeonggung">901712</tofile>
+				<tofile bep_offset="0" lang="en" title="Annals of the Joseon Dynasty">481128</tofile>
+				<tofile bep_offset="0" lang="en" title="Yeongjo of Joseon">1119957</tofile>
+				<tofile bep_offset="0" lang="en" title="1762">34977</tofile>
+				<tofile bep_offset="0" lang="en" title="Posthumous name">113190</tofile>
+				<tofile bep_offset="0" lang="en" title="Sunjo of Joseon">2008442</tofile>
+				<tofile bep_offset="0" lang="en" title="1735">34727</tofile>
+				<tofile bep_offset="0" lang="en" title="University of Tokyo">166215</tofile>
+				<tofile bep_offset="0" lang="en" title="Queen Jeongseong">30777331</tofile>
+				<tofile bep_offset="0" lang="en" title="Queen Hyoui">33561617</tofile>
+				<tofile bep_offset="0" lang="en" title="Seoul National University">196029</tofile>
+				<tofile bep_offset="0" lang="en" title="Gojong of the Korean Empire">341949</tofile>
+				<tofile bep_offset="0" lang="en" title="Japan">15573</tofile>
+				<tofile bep_offset="0" lang="en" title="Hwaseong Fortress">3879882</tofile>
+				<tofile bep_offset="0" lang="en" title="Yungneung and Geolleung">29163139</tofile>
+				<tofile bep_offset="0" lang="en" title="Suwon">502693</tofile>
+				<tofile bep_offset="0" lang="en" title="Monarch">19012</tofile>
+				<tofile bep_offset="0" lang="en" title="Mental disorder">19356</tofile>
+				<tofile bep_offset="0" lang="en" title="Crown Prince Sado">4898073</tofile>
+				<tofile bep_offset="0" lang="en" title="Korea">16749</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="87213" name="粉丝"> 
+		<outgoing>
+			<anchor offset="290" length="6" name="粉丝">
+				<tofile bep_offset="0" lang="en" title="Amylose">542645</tofile>
+				<tofile bep_offset="0" lang="en" title="Taiwan">30107</tofile>
+				<tofile bep_offset="0" lang="en" title="Port">97169</tofile>
+				<tofile bep_offset="0" lang="en" title="Zhaoyuan, Shandong">8449911</tofile>
+				<tofile bep_offset="0" lang="en" title="Noodle">90267</tofile>
+				<tofile bep_offset="0" lang="en" title="Mi xian">15621829</tofile>
+				<tofile bep_offset="0" lang="en" title="Yantai">261441</tofile>
+				<tofile bep_offset="0" lang="en" title="Korean Peninsula">247273</tofile>
+				<tofile bep_offset="0" lang="en" title="Brand">18950900</tofile>
+				<tofile bep_offset="0" lang="en" title="Gose, Nara">329288</tofile>
+				<tofile bep_offset="0" lang="en" title="Nara Prefecture">179765</tofile>
+				<tofile bep_offset="0" lang="en" title="Vietnam">202354</tofile>
+				<tofile bep_offset="0" lang="en" title="Rice vermicelli">3254924</tofile>
+				<tofile bep_offset="0" lang="en" title="Shandong">105032</tofile>
+				<tofile bep_offset="0" lang="en" title="Mung bean">465839</tofile>
+				<tofile bep_offset="0" lang="en" title="Food">10646</tofile>
+				<tofile bep_offset="0" lang="en" title="Longkou">3658642</tofile>
+				<tofile bep_offset="0" lang="en" title="Sakurai, Nara">329285</tofile>
+				<tofile bep_offset="0" lang="en" title="Malaysia">3607937</tofile>
+				<tofile bep_offset="0" lang="en" title="Indonesian cuisine">406363</tofile>
+				<tofile bep_offset="0" lang="en" title="Wood ear">3543675</tofile>
+				<tofile bep_offset="0" lang="en" title="Prefecture-level city">368703</tofile>
+				<tofile bep_offset="0" lang="en" title="Tibetan cuisine">5154680</tofile>
+				<tofile bep_offset="0" lang="en" title="Pakistan">23235</tofile>
+				<tofile bep_offset="0" lang="en" title="Hanja">158772</tofile>
+				<tofile bep_offset="0" lang="en" title="Sweet potato">51628</tofile>
+				<tofile bep_offset="0" lang="en" title="Arrowroot">105875</tofile>
+				<tofile bep_offset="0" lang="en" title="Ants climbing a tree">2349678</tofile>
+				<tofile bep_offset="0" lang="en" title="Samoa">27238</tofile>
+				<tofile bep_offset="0" lang="en" title="Lead">17747</tofile>
+				<tofile bep_offset="0" lang="en" title="Japanese cuisine">15976</tofile>
+				<tofile bep_offset="0" lang="en" title="Corn starch">473540</tofile>
+				<tofile bep_offset="0" lang="en" title="Korean cuisine">16793</tofile>
+				<tofile bep_offset="0" lang="en" title="Cantonese">1092292</tofile>
+				<tofile bep_offset="0" lang="en" title="Falooda">1947171</tofile>
+				<tofile bep_offset="0" lang="en" title="Potato ricer">1970574</tofile>
+				<tofile bep_offset="0" lang="en" title="Starch">27711</tofile>
+				<tofile bep_offset="0" lang="en" title="Vegetarianism">32591</tofile>
+				<tofile bep_offset="0" lang="en" title="Hot pot">1379950</tofile>
+				<tofile bep_offset="0" lang="en" title="Bing (bread)">6740115</tofile>
+				<tofile bep_offset="0" lang="en" title="India">14533</tofile>
+				<tofile bep_offset="0" lang="en" title="Canna (plant)">65316</tofile>
+				<tofile bep_offset="0" lang="en" title="Potato">23501</tofile>
+				<tofile bep_offset="0" lang="en" title="Yam (vegetable)">3152275</tofile>
+				<tofile bep_offset="0" lang="en" title="Jiaozi">11880644</tofile>
+				<tofile bep_offset="0" lang="en" title="Vietnamese language">32511</tofile>
+				<tofile bep_offset="0" lang="en" title="Tang Dynasty">43455</tofile>
+				<tofile bep_offset="0" lang="en" title="Flatbread">2493459</tofile>
+				<tofile bep_offset="0" lang="en" title="Chinese language">5751</tofile>
+				<tofile bep_offset="0" lang="en" title="Thai cuisine">30529</tofile>
+				<tofile bep_offset="0" lang="en" title="China">5405</tofile>
+				<tofile bep_offset="0" lang="en" title="Japchae">2971869</tofile>
+				<tofile bep_offset="0" lang="en" title="Hawaii">13270</tofile>
+				<tofile bep_offset="0" lang="en" title="Bleach">12873937</tofile>
+				<tofile bep_offset="0" lang="en" title="Vietnamese cuisine">32546</tofile>
+				<tofile bep_offset="0" lang="en" title="Szechuan cuisine">27908</tofile>
+				<tofile bep_offset="0" lang="en" title="Hangul">14451</tofile>
+				<tofile bep_offset="0" lang="en" title="Chop suey">68284</tofile>
+				<tofile bep_offset="0" lang="en" title="Stir frying">53000</tofile>
+				<tofile bep_offset="0" lang="en" title="Kulfi">872876</tofile>
+				<tofile bep_offset="0" lang="en" title="Rice">36979</tofile>
+				<tofile bep_offset="0" lang="en" title="Pinyin">23588</tofile>
+				<tofile bep_offset="0" lang="en" title="Shark fin soup">879354</tofile>
+				<tofile bep_offset="0" lang="en" title="Cellophane">162015</tofile>
+				<tofile bep_offset="0" lang="en" title="Potato starch">23926998</tofile>
+				<tofile bep_offset="0" lang="en" title="Rongalite">4932031</tofile>
+				<tofile bep_offset="0" lang="en" title="Spring roll">1139529</tofile>
+				<tofile bep_offset="0" lang="en" title="Northeast China">788662</tofile>
+				<tofile bep_offset="0" lang="en" title="Mung bean sheets">13187567</tofile>
+				<tofile bep_offset="0" lang="en" title="Aluminium">904</tofile>
+				<tofile bep_offset="0" lang="en" title="Cassava">56465</tofile>
+				<tofile bep_offset="0" lang="en" title="Luau">624600</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="24648" name="猪八戒"> 
+		<outgoing>
+			<anchor offset="290" length="9" name="猪八戒">
+				<tofile bep_offset="0" lang="en" title="Heaven">13811</tofile>
+				<tofile bep_offset="0" lang="en" title="Daode Tianzun">23942251</tofile>
+				<tofile bep_offset="0" lang="en" title="Rake (tool)">1157601</tofile>
+				<tofile bep_offset="0" lang="en" title="Sun Wukong">231503</tofile>
+				<tofile bep_offset="0" lang="en" title="Dharma name">2304463</tofile>
+				<tofile bep_offset="0" lang="en" title="Gan Bao">17342938</tofile>
+				<tofile bep_offset="0" lang="en" title="Catty">2351950</tofile>
+				<tofile bep_offset="0" lang="en" title="List of Journey to the West characters">24917388</tofile>
+				<tofile bep_offset="0" lang="en" title="Domestic pig">2391490</tofile>
+				<tofile bep_offset="0" lang="en" title="Human">682482</tofile>
+				<tofile bep_offset="0" lang="en" title="Chang&apos;e">369971</tofile>
+				<tofile bep_offset="0" lang="en" title="Chen Yinke">12544999</tofile>
+				<tofile bep_offset="0" lang="en" title="Moon">19331</tofile>
+				<tofile bep_offset="0" lang="en" title="Guanyin">17063</tofile>
+				<tofile bep_offset="0" lang="en" title="In Search of the Supernatural">18268292</tofile>
+				<tofile bep_offset="0" lang="en" title="Lu Xun">65861</tofile>
+				<tofile bep_offset="0" lang="en" title="Journey to the West">232367</tofile>
+				<tofile bep_offset="0" lang="en" title="Zhu Bajie">249299</tofile>
+				<tofile bep_offset="0" lang="en" title="Xuanzang (fictional character)">232372</tofile>
+				<tofile bep_offset="0" lang="en" title="Satori">237526</tofile>
+				<tofile bep_offset="0" lang="en" title="Chinese alchemy">1947455</tofile>
+				<tofile bep_offset="0" lang="en" title="Jade Emperor">312285</tofile>
+				<tofile bep_offset="0" lang="en" title="Sha Wujing">708102</tofile>
+				<tofile bep_offset="0" lang="en" title="Buddhahood">174976</tofile>
+				<tofile bep_offset="0" lang="en" title="Journey to the West in popular culture">23516799</tofile>
+				<tofile bep_offset="0" lang="en" title="Pig">25142</tofile>
+				<tofile bep_offset="0" lang="en" title="Arhat (Buddhism)">21996250</tofile>
+				<tofile bep_offset="0" lang="en" title="English language">8569916</tofile>
+				<tofile bep_offset="0" lang="en" title="Bodhisattva">3968</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="72797" name="西木工作室"> 
+		<outgoing>
+			<anchor offset="290" length="15" name="西木工作室">
+				<tofile bep_offset="0" lang="en" title="The Walt Disney Company">37398</tofile>
+				<tofile bep_offset="0" lang="en" title="1985">34846</tofile>
+				<tofile bep_offset="0" lang="en" title="Video game developer">32399</tofile>
+				<tofile bep_offset="0" lang="en" title="2003">36163</tofile>
+				<tofile bep_offset="0" lang="en" title="Dungeons &amp; Dragons">7940</tofile>
+				<tofile bep_offset="0" lang="en" title="1992">34669</tofile>
+				<tofile bep_offset="0" lang="en" title="PC game">1336512</tofile>
+				<tofile bep_offset="0" lang="en" title="Nevada">21216</tofile>
+				<tofile bep_offset="0" lang="en" title="Market share">8012445</tofile>
+				<tofile bep_offset="0" lang="en" title="United States">3434750</tofile>
+				<tofile bep_offset="0" lang="en" title="Strategic Simulations, Inc.">357893</tofile>
+				<tofile bep_offset="0" lang="en" title="1988">34670</tofile>
+				<tofile bep_offset="0" lang="en" title="Las Vegas, Nevada">47737</tofile>
+				<tofile bep_offset="0" lang="en" title="Command &amp; Conquer: Red Alert">1913170</tofile>
+				<tofile bep_offset="0" lang="en" title="Command &amp; Conquer">207666</tofile>
+				<tofile bep_offset="0" lang="en" title="Irvine, California">5201333</tofile>
+				<tofile bep_offset="0" lang="en" title="Adventure game">26757970</tofile>
+				<tofile bep_offset="0" lang="en" title="Electronic Arts">262933</tofile>
+				<tofile bep_offset="0" lang="en" title="Nox (video game)">867841</tofile>
+				<tofile bep_offset="0" lang="en" title="Command &amp; Conquer: Renegade">2339335</tofile>
+				<tofile bep_offset="0" lang="en" title="MobyGames">610522</tofile>
+				<tofile bep_offset="0" lang="en" title="The Lion King (video game)">3809465</tofile>
+				<tofile bep_offset="0" lang="en" title="DragonStrike (video game)">678205</tofile>
+				<tofile bep_offset="0" lang="en" title="Monopoly (video game)">5834681</tofile>
+				<tofile bep_offset="0" lang="en" title="Young Merlin">6689300</tofile>
+				<tofile bep_offset="0" lang="en" title="Lands of Lore series">3082495</tofile>
+				<tofile bep_offset="0" lang="en" title="Guinness World Records">100796</tofile>
+				<tofile bep_offset="0" lang="en" title="List of acquisitions by Electronic Arts">16912133</tofile>
+				<tofile bep_offset="0" lang="en" title="The Legend of Kyrandia">1619452</tofile>
+				<tofile bep_offset="0" lang="en" title="Infocom">14788</tofile>
+				<tofile bep_offset="0" lang="en" title="Eye of the Beholder (video game)">253868</tofile>
+				<tofile bep_offset="0" lang="en" title="BattleTech">206330</tofile>
+				<tofile bep_offset="0" lang="en" title="16-bit">23592304</tofile>
+				<tofile bep_offset="0" lang="en" title="Virgin Interactive">1027852</tofile>
+				<tofile bep_offset="0" lang="en" title="Modem">20647197</tofile>
+				<tofile bep_offset="0" lang="en" title="Dune II">2239721</tofile>
+				<tofile bep_offset="0" lang="en" title="Louis Castle">1534701</tofile>
+				<tofile bep_offset="0" lang="en" title="Atlanta Braves">2140</tofile>
+				<tofile bep_offset="0" lang="en" title="Mars Saga">3082651</tofile>
+				<tofile bep_offset="0" lang="en" title="Resident Evil (video game)">1789064</tofile>
+				<tofile bep_offset="0" lang="en" title="Dune (film)">71415</tofile>
+				<tofile bep_offset="0" lang="en" title="Petroglyph Games">1337597</tofile>
+				<tofile bep_offset="0" lang="en" title="EA Los Angeles">1119475</tofile>
+				<tofile bep_offset="0" lang="en" title="Cancelled Command &amp; Conquer games">20967485</tofile>
+				<tofile bep_offset="0" lang="en" title="Role-playing video game">356777</tofile>
+				<tofile bep_offset="0" lang="en" title="Command &amp; Conquer (video game)">2053053</tofile>
+				<tofile bep_offset="0" lang="en" title="Blade Runner (1997 video game)">455898</tofile>
+				<tofile bep_offset="0" lang="en" title="Amiga">1980</tofile>
+				<tofile bep_offset="0" lang="en" title="Massively multiplayer online role-playing game">20844</tofile>
+				<tofile bep_offset="0" lang="en" title="Epyx">760813</tofile>
+				<tofile bep_offset="0" lang="en" title="Earth &amp; Beyond">208057</tofile>
+				<tofile bep_offset="0" lang="en" title="8-bit">45148</tofile>
+				<tofile bep_offset="0" lang="en" title="When Gravity Fails">3839954</tofile>
+				<tofile bep_offset="0" lang="en" title="Microsoft Windows">18890</tofile>
+				<tofile bep_offset="0" lang="en" title="First-person shooter">25395149</tofile>
+				<tofile bep_offset="0" lang="en" title="Circuit&apos;s Edge">1835612</tofile>
+				<tofile bep_offset="0" lang="en" title="Brett Sperry">2414841</tofile>
+				<tofile bep_offset="0" lang="en" title="Real-time strategy">77251</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="56352" name="铁观音"> 
+		<outgoing>
+			<anchor offset="290" length="9" name="铁观音">
+				<tofile bep_offset="0" lang="en" title="Black tea">435223</tofile>
+				<tofile bep_offset="0" lang="en" title="Chushu">2839771</tofile>
+				<tofile bep_offset="0" lang="en" title="Hanlu">2839772</tofile>
+				<tofile bep_offset="0" lang="en" title="Liqiu">2839774</tofile>
+				<tofile bep_offset="0" lang="en" title="1982">34756</tofile>
+				<tofile bep_offset="0" lang="en" title="Shimen District">1496131</tofile>
+				<tofile bep_offset="0" lang="en" title="New Taipei">333440</tofile>
+				<tofile bep_offset="0" lang="en" title="1979">34754</tofile>
+				<tofile bep_offset="0" lang="en" title="Gongfu tea ceremony">3816800</tofile>
+				<tofile bep_offset="0" lang="en" title="Chaozhou">147447</tofile>
+				<tofile bep_offset="0" lang="en" title="Zhangzhou">869215</tofile>
+				<tofile bep_offset="0" lang="en" title="Wenshan District">676332</tofile>
+				<tofile bep_offset="0" lang="en" title="Xiamen">143881</tofile>
+				<tofile bep_offset="0" lang="en" title="Green tea">262676</tofile>
+				<tofile bep_offset="0" lang="en" title="Singapore">27318</tofile>
+				<tofile bep_offset="0" lang="en" title="Macau">19068</tofile>
+				<tofile bep_offset="0" lang="en" title="Yongchun County">23981937</tofile>
+				<tofile bep_offset="0" lang="en" title="Qiufen">2839526</tofile>
+				<tofile bep_offset="0" lang="en" title="Fujian">88585</tofile>
+				<tofile bep_offset="0" lang="en" title="Hong Kong">13404</tofile>
+				<tofile bep_offset="0" lang="en" title="1950">19283873</tofile>
+				<tofile bep_offset="0" lang="en" title="Zhangping">23981971</tofile>
+				<tofile bep_offset="0" lang="en" title="Taiwan">30107</tofile>
+				<tofile bep_offset="0" lang="en" title="Guyu">2839595</tofile>
+				<tofile bep_offset="0" lang="en" title="Thailand">30128</tofile>
+				<tofile bep_offset="0" lang="en" title="Indonesia">14579</tofile>
+				<tofile bep_offset="0" lang="en" title="Lixia">2839591</tofile>
+				<tofile bep_offset="0" lang="en" title="Shantou">268030</tofile>
+				<tofile bep_offset="0" lang="en" title="Nanjing County">23872529</tofile>
+				<tofile bep_offset="0" lang="en" title="1984">34578</tofile>
+				<tofile bep_offset="0" lang="en" title="Anxi County">3236520</tofile>
+				<tofile bep_offset="0" lang="en" title="Vietnam">202354</tofile>
+				<tofile bep_offset="0" lang="en" title="Hua&apos;an County">20102584</tofile>
+				<tofile bep_offset="0" lang="en" title="1945">34624</tofile>
+				<tofile bep_offset="0" lang="en" title="Quanzhou">503737</tofile>
+				<tofile bep_offset="0" lang="en" title="Guangdong">65109</tofile>
+				<tofile bep_offset="0" lang="en" title="Japan">15573</tofile>
+				<tofile bep_offset="0" lang="en" title="Oolong">22707</tofile>
+				<tofile bep_offset="0" lang="en" title="Qianlong Emperor">265949</tofile>
+				<tofile bep_offset="0" lang="en" title="Taiwanese tea">31075245</tofile>
+				<tofile bep_offset="0" lang="en" title="Mount Putuo">438709</tofile>
+				<tofile bep_offset="0" lang="en" title="Zhejiang">96602</tofile>
+				<tofile bep_offset="0" lang="en" title="Nantou">303651</tofile>
+				<tofile bep_offset="0" lang="en" title="Avalokiteśvara">241425</tofile>
+				<tofile bep_offset="0" lang="en" title="Guanyin">17063</tofile>
+				<tofile bep_offset="0" lang="en" title="China">5405</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="636978" name="图西族"> 
+		<outgoing>
+			<anchor offset="290" length="9" name="图西族">
+				<tofile bep_offset="0" lang="en" title="Rwanda">25645</tofile>
+				<tofile bep_offset="0" lang="en" title="Great Lakes Twa">32432605</tofile>
+				<tofile bep_offset="0" lang="en" title="Burundi">21490998</tofile>
+				<tofile bep_offset="0" lang="en" title="Rwandan Genocide">676659</tofile>
+				<tofile bep_offset="0" lang="en" title="Central Africa">539606</tofile>
+				<tofile bep_offset="0" lang="en" title="Rwandan Patriotic Front">622763</tofile>
+				<tofile bep_offset="0" lang="en" title="Mediterranean race">1631669</tofile>
+				<tofile bep_offset="0" lang="en" title="Ethnic cleansing">61098</tofile>
+				<tofile bep_offset="0" lang="en" title="Hutu">59537</tofile>
+				<tofile bep_offset="0" lang="en" title="Human Rights Watch">46530</tofile>
+				<tofile bep_offset="0" lang="en" title="1994">18948337</tofile>
+				<tofile bep_offset="0" lang="en" title="Blue Nile">158338</tofile>
+				<tofile bep_offset="0" lang="en" title="Uganda">31816</tofile>
+				<tofile bep_offset="0" lang="en" title="Second Congo War">877492</tofile>
+				<tofile bep_offset="0" lang="en" title="Democratic Republic of the Congo">76762</tofile>
+				<tofile bep_offset="0" lang="en" title="Haplogroup E1b1a (Y-DNA)">4148318</tofile>
+				<tofile bep_offset="0" lang="en" title="First Congo War">1273364</tofile>
+				<tofile bep_offset="0" lang="en" title="South Kivu">446959</tofile>
+				<tofile bep_offset="0" lang="en" title="Ethiopid race">3867779</tofile>
+				<tofile bep_offset="0" lang="en" title="North Kivu">446958</tofile>
+				<tofile bep_offset="0" lang="en" title="Horn of Africa">62142</tofile>
+				<tofile bep_offset="0" lang="en" title="Sub-Saharan Africa">27067</tofile>
+				<tofile bep_offset="0" lang="en" title="Haplogroup B (Y-DNA)">4148083</tofile>
+				<tofile bep_offset="0" lang="en" title="Hamitic">21492793</tofile>
+				<tofile bep_offset="0" lang="en" title="Ethiopia">187749</tofile>
+				<tofile bep_offset="0" lang="en" title="Belgium">3343</tofile>
+				<tofile bep_offset="0" lang="en" title="Haplogroup E1b1 (Y-DNA)">23638193</tofile>
+				<tofile bep_offset="0" lang="en" title="Y chromosome">246891</tofile>
+				<tofile bep_offset="0" lang="en" title="Israelites">52949</tofile>
+				<tofile bep_offset="0" lang="en" title="Caste">7257</tofile>
+				<tofile bep_offset="0" lang="en" title="Itombwe Mountains">34114733</tofile>
+				<tofile bep_offset="0" lang="en" title="Melchior Ndadaye">762713</tofile>
+				<tofile bep_offset="0" lang="en" title="Ethnic group">105004</tofile>
+				<tofile bep_offset="0" lang="en" title="North Africa">21714</tofile>
+				<tofile bep_offset="0" lang="en" title="Ingroups and outgroups">2533750</tofile>
+				<tofile bep_offset="0" lang="en" title="Referendum">51582</tofile>
+				<tofile bep_offset="0" lang="en" title="Ruanda-Urundi">1255396</tofile>
+				<tofile bep_offset="0" lang="en" title="Haplogroup E1b1b (Y-DNA)">3605155</tofile>
+				<tofile bep_offset="0" lang="en" title="Buganda">297540</tofile>
+				<tofile bep_offset="0" lang="en" title="Kingdom of Israel (united monarchy)">1515679</tofile>
+				<tofile bep_offset="0" lang="en" title="Germany">11867</tofile>
+				<tofile bep_offset="0" lang="en" title="African Great Lakes">512047</tofile>
+				<tofile bep_offset="0" lang="en" title="Bantu peoples">34055635</tofile>
+				<tofile bep_offset="0" lang="en" title="Bantu languages">4124</tofile>
+				<tofile bep_offset="0" lang="en" title="Ugandan Bush War">7260442</tofile>
+				<tofile bep_offset="0" lang="en" title="Colony">6916</tofile>
+				<tofile bep_offset="0" lang="en" title="World War I">4764461</tofile>
+				<tofile bep_offset="0" lang="en" title="Caucasian peoples">3631006</tofile>
+				<tofile bep_offset="0" lang="en" title="Religious conversion">25597</tofile>
+				<tofile bep_offset="0" lang="en" title="Catholicism">4559718</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="83950" name="李英愛"> 
+		<outgoing>
+			<anchor offset="290" length="9" name="李英愛">
+				<tofile bep_offset="0" lang="en" title="Actor">21504235</tofile>
+				<tofile bep_offset="0" lang="en" title="Doctor (title)">8881</tofile>
+				<tofile bep_offset="0" lang="en" title="Andy Lau">310210</tofile>
+				<tofile bep_offset="0" lang="en" title="1990">34635</tofile>
+				<tofile bep_offset="0" lang="en" title="Twin">79238</tofile>
+				<tofile bep_offset="0" lang="en" title="Munhwa Broadcasting Corporation">1673907</tofile>
+				<tofile bep_offset="0" lang="en" title="Ethiopia">187749</tofile>
+				<tofile bep_offset="0" lang="en" title="August 24">1629</tofile>
+				<tofile bep_offset="0" lang="en" title="Master&apos;s degree">170346</tofile>
+				<tofile bep_offset="0" lang="en" title="Dae Jang Geum">1561094</tofile>
+				<tofile bep_offset="0" lang="en" title="Sympathy for Lady Vengeance">1751944</tofile>
+				<tofile bep_offset="0" lang="en" title="Celsius">19593040</tofile>
+				<tofile bep_offset="0" lang="en" title="Korean language">16756</tofile>
+				<tofile bep_offset="0" lang="en" title="English language">8569916</tofile>
+				<tofile bep_offset="0" lang="en" title="Asiana Airlines">331239</tofile>
+				<tofile bep_offset="0" lang="en" title="Southeast Asia">28741</tofile>
+				<tofile bep_offset="0" lang="en" title="Thar Desert">31174</tofile>
+				<tofile bep_offset="0" lang="en" title="Chun&apos;an County">17744405</tofile>
+				<tofile bep_offset="0" lang="en" title="Song Kang-ho">2768068</tofile>
+				<tofile bep_offset="0" lang="en" title="India">14533</tofile>
+				<tofile bep_offset="0" lang="en" title="Taiwan">30107</tofile>
+				<tofile bep_offset="0" lang="en" title="Cha In-Pyo">25114314</tofile>
+				<tofile bep_offset="0" lang="en" title="2001">34551</tofile>
+				<tofile bep_offset="0" lang="en" title="Mercedes-Benz">18564164</tofile>
+				<tofile bep_offset="0" lang="en" title="East Asia">19605700</tofile>
+				<tofile bep_offset="0" lang="en" title="Bachelor&apos;s degree">188874</tofile>
+				<tofile bep_offset="0" lang="en" title="1991">34703</tofile>
+				<tofile bep_offset="0" lang="en" title="Non-governmental organization">46539</tofile>
+				<tofile bep_offset="0" lang="en" title="September 3">27989</tofile>
+				<tofile bep_offset="0" lang="en" title="1997">34601</tofile>
+				<tofile bep_offset="0" lang="en" title="Japan">15573</tofile>
+				<tofile bep_offset="0" lang="en" title="Hanyang University">1715219</tofile>
+				<tofile bep_offset="0" lang="en" title="UNICEF">19698110</tofile>
+				<tofile bep_offset="0" lang="en" title="South Korea">27019</tofile>
+				<tofile bep_offset="0" lang="en" title="Father">83427</tofile>
+				<tofile bep_offset="0" lang="en" title="Hangul">14451</tofile>
+				<tofile bep_offset="0" lang="en" title="2009">35983</tofile>
+				<tofile bep_offset="0" lang="en" title="Zimbabwe">34399</tofile>
+				<tofile bep_offset="0" lang="en" title="NHK">147782</tofile>
+				<tofile bep_offset="0" lang="en" title="Korean wave">2265764</tofile>
+				<tofile bep_offset="0" lang="en" title="2005">35984</tofile>
+				<tofile bep_offset="0" lang="en" title="1995">34658</tofile>
+				<tofile bep_offset="0" lang="en" title="Koreans">335941</tofile>
+				<tofile bep_offset="0" lang="en" title="Joint Security Area (film)">1751923</tofile>
+				<tofile bep_offset="0" lang="en" title="Middle East">19323</tofile>
+				<tofile bep_offset="0" lang="en" title="Seoul">19159283</tofile>
+				<tofile bep_offset="0" lang="en" title="2000">34548</tofile>
+				<tofile bep_offset="0" lang="en" title="Singapore">27318</tofile>
+				<tofile bep_offset="0" lang="en" title="Only Love Strangers">13088704</tofile>
+				<tofile bep_offset="0" lang="en" title="Hong Kong">13404</tofile>
+				<tofile bep_offset="0" lang="en" title="Staging (theatre)">2032456</tofile>
+				<tofile bep_offset="0" lang="en" title="Lee Byung-hun">1328834</tofile>
+				<tofile bep_offset="0" lang="en" title="2006">36164</tofile>
+				<tofile bep_offset="0" lang="en" title="Peter Chan">3797154</tofile>
+				<tofile bep_offset="0" lang="en" title="2007">36165</tofile>
+				<tofile bep_offset="0" lang="en" title="2004">35524</tofile>
+				<tofile bep_offset="0" lang="en" title="2003">36163</tofile>
+				<tofile bep_offset="0" lang="en" title="Europe">9239</tofile>
+				<tofile bep_offset="0" lang="en" title="2011">36225</tofile>
+				<tofile bep_offset="0" lang="en" title="Roh Moo-hyun">24050318</tofile>
+				<tofile bep_offset="0" lang="en" title="Zhejiang">96602</tofile>
+				<tofile bep_offset="0" lang="en" title="Iran">14653</tofile>
+				<tofile bep_offset="0" lang="en" title="Romance novel">293632</tofile>
+				<tofile bep_offset="0" lang="en" title="Advertising">2861</tofile>
+				<tofile bep_offset="0" lang="en" title="Cheonmin">3833246</tofile>
+				<tofile bep_offset="0" lang="en" title="Chung-Ang University">1328321</tofile>
+				<tofile bep_offset="0" lang="en" title="Harbin">143373</tofile>
+				<tofile bep_offset="0" lang="en" title="Central University">615471</tofile>
+				<tofile bep_offset="0" lang="en" title="Gift">50021</tofile>
+				<tofile bep_offset="0" lang="en" title="German language">11884</tofile>
+				<tofile bep_offset="0" lang="en" title="South Asia">21566765</tofile>
+				<tofile bep_offset="0" lang="en" title="Fireworks (2000 TV series)">12093143</tofile>
+				<tofile bep_offset="0" lang="en" title="Papa (TV series)">1301399</tofile>
+				<tofile bep_offset="0" lang="en" title="LG Electronics">656589</tofile>
+				<tofile bep_offset="0" lang="en" title="Last Present">1844300</tofile>
+				<tofile bep_offset="0" lang="en" title="Caste">7257</tofile>
+				<tofile bep_offset="0" lang="en" title="One Fine Spring Day">1843900</tofile>
+				<tofile bep_offset="0" lang="en" title="Harbin International Ice and Snow Sculpture Festival">4501844</tofile>
+				<tofile bep_offset="0" lang="en" title="Korean Broadcasting System">341969</tofile>
+				<tofile bep_offset="0" lang="en" title="Seoul Broadcasting System">341975</tofile>
+				<tofile bep_offset="0" lang="en" title="United States">3434750</tofile>
+				<tofile bep_offset="0" lang="en" title="Asphalt Man">31683831</tofile>
+				<tofile bep_offset="0" lang="en" title="Blue Dragon Film Awards">8462139</tofile>
+				<tofile bep_offset="0" lang="en" title="Cameo appearance">275882</tofile>
+				<tofile bep_offset="0" lang="en" title="LG Corp">1225743</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="977790" name="虞美人 (花卉)"> 
+		<outgoing>
+			<anchor offset="290" length="18" name="虞美人 (花卉)">
+				<tofile bep_offset="0" lang="en" title="In Flanders Fields">69259</tofile>
+				<tofile bep_offset="0" lang="en" title="2010">43226</tofile>
+				<tofile bep_offset="0" lang="en" title="Emperor Taizong of Song">1070391</tofile>
+				<tofile bep_offset="0" lang="en" title="Papaver">918843</tofile>
+				<tofile bep_offset="0" lang="en" title="Consort Yu">25822387</tofile>
+				<tofile bep_offset="0" lang="en" title="Great Hall of the People">553623</tofile>
+				<tofile bep_offset="0" lang="en" title="Southern Tang">1742039</tofile>
+				<tofile bep_offset="0" lang="en" title="Binomial nomenclature">39736</tofile>
+				<tofile bep_offset="0" lang="en" title="Australia">4689264</tofile>
+				<tofile bep_offset="0" lang="en" title="Song Dynasty">56978</tofile>
+				<tofile bep_offset="0" lang="en" title="North America">21139</tofile>
+				<tofile bep_offset="0" lang="en" title="World War II">32927</tofile>
+				<tofile bep_offset="0" lang="en" title="New Zealand">4913064</tofile>
+				<tofile bep_offset="0" lang="en" title="Opium poppy">1071613</tofile>
+				<tofile bep_offset="0" lang="en" title="Li Houzhu">248405</tofile>
+				<tofile bep_offset="0" lang="en" title="Remembrance Day">60800</tofile>
+				<tofile bep_offset="0" lang="en" title="Papaveraceae">966029</tofile>
+				<tofile bep_offset="0" lang="en" title="Allies of World War I">2198871</tofile>
+				<tofile bep_offset="0" lang="en" title="Opium Wars">169962</tofile>
+				<tofile bep_offset="0" lang="en" title="Herbaceous plant">234098</tofile>
+				<tofile bep_offset="0" lang="en" title="World War I">4764461</tofile>
+				<tofile bep_offset="0" lang="en" title="Temperateness">67026</tofile>
+				<tofile bep_offset="0" lang="en" title="Beijing">18603746</tofile>
+				<tofile bep_offset="0" lang="en" title="White poppy (symbol)">3077197</tofile>
+				<tofile bep_offset="0" lang="en" title="Quarter (Canadian coin)">1237029</tofile>
+				<tofile bep_offset="0" lang="en" title="Norfolk">37605</tofile>
+				<tofile bep_offset="0" lang="en" title="Western Front (World War I)">51499</tofile>
+				<tofile bep_offset="0" lang="en" title="Old World">143913</tofile>
+				<tofile bep_offset="0" lang="en" title="Anzac Day">48034</tofile>
+				<tofile bep_offset="0" lang="en" title="Agriculture">627</tofile>
+				<tofile bep_offset="0" lang="en" title="County flowers of the United Kingdom">4698597</tofile>
+				<tofile bep_offset="0" lang="en" title="Poppy">161758</tofile>
+				<tofile bep_offset="0" lang="en" title="Trench warfare">182259</tofile>
+				<tofile bep_offset="0" lang="en" title="Soil seed bank">4695949</tofile>
+				<tofile bep_offset="0" lang="en" title="Shirley Poppy">10214828</tofile>
+				<tofile bep_offset="0" lang="en" title="Latex">19159702</tofile>
+				<tofile bep_offset="0" lang="en" title="Royal New Zealand Returned and Services&apos; Association">243887</tofile>
+				<tofile bep_offset="0" lang="en" title="No man&apos;s land">994499</tofile>
+				<tofile bep_offset="0" lang="en" title="Plantlife">4589922</tofile>
+				<tofile bep_offset="0" lang="en" title="Common name">331921</tofile>
+				<tofile bep_offset="0" lang="en" title="Canadian ten-dollar bill">1586711</tofile>
+				<tofile bep_offset="0" lang="en" title="Essex">9568</tofile>
+				<tofile bep_offset="0" lang="en" title="Weed">19653902</tofile>
+				<tofile bep_offset="0" lang="en" title="Grazing">854453</tofile>
+				<tofile bep_offset="0" lang="en" title="Coquelicot">5313160</tofile>
+				<tofile bep_offset="0" lang="en" title="Two hundred lei">21746709</tofile>
+				<tofile bep_offset="0" lang="en" title="Cenotaph">249164</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="43249" name="油条"> 
+		<outgoing>
+			<anchor offset="290" length="6" name="油条">
+				<tofile bep_offset="0" lang="en" title="Malaysia">3607937</tofile>
+				<tofile bep_offset="0" lang="en" title="Hangzhou">158185</tofile>
+				<tofile bep_offset="0" lang="en" title="Potassium alum">917400</tofile>
+				<tofile bep_offset="0" lang="en" title="Shanghai">27643</tofile>
+				<tofile bep_offset="0" lang="en" title="Leavening agent">198059</tofile>
+				<tofile bep_offset="0" lang="en" title="Tianjin">50821</tofile>
+				<tofile bep_offset="0" lang="en" title="西湖">16310342</tofile>
+				<tofile bep_offset="0" lang="en" title="Almond milk">692372</tofile>
+				<tofile bep_offset="0" lang="en" title="Shaobing">2933364</tofile>
+				<tofile bep_offset="0" lang="en" title="Douhua">1505891</tofile>
+				<tofile bep_offset="0" lang="en" title="Congee">485011</tofile>
+				<tofile bep_offset="0" lang="en" title="Henan">166408</tofile>
+				<tofile bep_offset="0" lang="en" title="Sodium carbonate">155726</tofile>
+				<tofile bep_offset="0" lang="en" title="Oil">4207510</tofile>
+				<tofile bep_offset="0" lang="en" title="Jin Dynasty (1115–1234)">55023</tofile>
+				<tofile bep_offset="0" lang="en" title="Ammonia">1365</tofile>
+				<tofile bep_offset="0" lang="en" title="Onigiri">147796</tofile>
+				<tofile bep_offset="0" lang="en" title="Korean War">16772</tofile>
+				<tofile bep_offset="0" lang="en" title="Fujian">88585</tofile>
+				<tofile bep_offset="0" lang="en" title="Yue Fei">422308</tofile>
+				<tofile bep_offset="0" lang="en" title="Hong Kong">13404</tofile>
+				<tofile bep_offset="0" lang="en" title="Bak kut teh">1175370</tofile>
+				<tofile bep_offset="0" lang="en" title="Carbon dioxide">5906</tofile>
+				<tofile bep_offset="0" lang="en" title="Taiwan">30107</tofile>
+				<tofile bep_offset="0" lang="en" title="Hulatang">21629922</tofile>
+				<tofile bep_offset="0" lang="en" title="Soy milk">474943</tofile>
+				<tofile bep_offset="0" lang="en" title="Lin&apos;an City">17555646</tofile>
+				<tofile bep_offset="0" lang="en" title="Zhaliang">11827767</tofile>
+				<tofile bep_offset="0" lang="en" title="Douglas MacArthur">48596</tofile>
+				<tofile bep_offset="0" lang="en" title="Hot sauce">1223529</tofile>
+				<tofile bep_offset="0" lang="en" title="Senbei">2213814</tofile>
+				<tofile bep_offset="0" lang="en" title="Frying pan">26301156</tofile>
+				<tofile bep_offset="0" lang="en" title="Rice noodle roll">4992439</tofile>
+				<tofile bep_offset="0" lang="en" title="Egg (food)">19196010</tofile>
+				<tofile bep_offset="0" lang="en" title="Potassium bitartrate">720240</tofile>
+				<tofile bep_offset="0" lang="en" title="Guangdong">65109</tofile>
+				<tofile bep_offset="0" lang="en" title="Ci fan tuan">4103108</tofile>
+				<tofile bep_offset="0" lang="en" title="Qin Hui (Song Dynasty)">9639239</tofile>
+				<tofile bep_offset="0" lang="en" title="Burma">19457</tofile>
+				<tofile bep_offset="0" lang="en" title="Philippines">23440</tofile>
+				<tofile bep_offset="0" lang="en" title="Ox-tongue pastry">15402546</tofile>
+				<tofile bep_offset="0" lang="en" title="Plural">148424</tofile>
+				<tofile bep_offset="0" lang="en" title="Buñuelo">3258172</tofile>
+				<tofile bep_offset="0" lang="en" title="Australia">4689264</tofile>
+				<tofile bep_offset="0" lang="en" title="List of snack foods">5618454</tofile>
+				<tofile bep_offset="0" lang="en" title="Shuangbaotai">15402739</tofile>
+				<tofile bep_offset="0" lang="en" title="Churro">359423</tofile>
+				<tofile bep_offset="0" lang="en" title="Cantonese">1092292</tofile>
+				<tofile bep_offset="0" lang="en" title="Southeast Asia">28741</tofile>
+				<tofile bep_offset="0" lang="en" title="Trang Province">194043</tofile>
+				<tofile bep_offset="0" lang="en" title="Dough">334546</tofile>
+				<tofile bep_offset="0" lang="en" title="Baguette">299848</tofile>
+				<tofile bep_offset="0" lang="en" title="Teochew dialect">1095005</tofile>
+				<tofile bep_offset="0" lang="en" title="Indonesia">14579</tofile>
+				<tofile bep_offset="0" lang="en" title="Cruller">601859</tofile>
+				<tofile bep_offset="0" lang="en" title="Hokkien">18978679</tofile>
+				<tofile bep_offset="0" lang="en" title="Chinese culture">156154</tofile>
+				<tofile bep_offset="0" lang="en" title="Sino-Vietnamese vocabulary">3618401</tofile>
+				<tofile bep_offset="0" lang="en" title="Malay language">126630</tofile>
+				<tofile bep_offset="0" lang="en" title="East Asia">19605700</tofile>
+				<tofile bep_offset="0" lang="en" title="Northern and southern China">923361</tofile>
+				<tofile bep_offset="0" lang="en" title="Patriotism">24552</tofile>
+				<tofile bep_offset="0" lang="en" title="Southern Thailand">1453076</tofile>
+				<tofile bep_offset="0" lang="en" title="Shanghai cuisine">27909</tofile>
+				<tofile bep_offset="0" lang="en" title="Breakfast">68768</tofile>
+				<tofile bep_offset="0" lang="en" title="Vietnamese cuisine">32546</tofile>
+				<tofile bep_offset="0" lang="en" title="Beignet">331204</tofile>
+				<tofile bep_offset="0" lang="en" title="White sugar sponge cake">10470673</tofile>
+				<tofile bep_offset="0" lang="en" title="Tenkasu">828697</tofile>
+				<tofile bep_offset="0" lang="en" title="Singapore">27318</tofile>
+				<tofile bep_offset="0" lang="en" title="Chinese cuisine">6583</tofile>
+				<tofile bep_offset="0" lang="en" title="Taiwanese Hokkien">58791</tofile>
+				<tofile bep_offset="0" lang="en" title="List of fried dough foods">1805430</tofile>
+				<tofile bep_offset="0" lang="en" title="Sandwich">82425</tofile>
+				<tofile bep_offset="0" lang="en" title="Yue Chinese">147533</tofile>
+				<tofile bep_offset="0" lang="en" title="Condensed milk">427924</tofile>
+				<tofile bep_offset="0" lang="en" title="Min Nan">198045</tofile>
+				<tofile bep_offset="0" lang="en" title="Mohinga">2581657</tofile>
+				<tofile bep_offset="0" lang="en" title="Thailand">30128</tofile>
+				<tofile bep_offset="0" lang="en" title="Song Dynasty">56978</tofile>
+				<tofile bep_offset="0" lang="en" title="Chopsticks">24346064</tofile>
+				<tofile bep_offset="0" lang="en" title="Deep frying">52982</tofile>
+				<tofile bep_offset="0" lang="en" title="Demographics of Cambodia">5430</tofile>
+				<tofile bep_offset="0" lang="en" title="Hawker (trade)">1497253</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+</crosslink-submission>

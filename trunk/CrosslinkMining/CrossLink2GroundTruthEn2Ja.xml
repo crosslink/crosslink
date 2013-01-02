@@ -1,0 +1,2078 @@
+<crosslink-submission participant-id="GT" run-id="GroundTruth" task="F2F" default_lang="ja" source_lang="en"><details>
+ <machine>
+	<cpu>Core 2 Duo</cpu>
+	<speed>2.33 MHz</speed>
+	<cores>2</cores>
+	<hyperthreads>1</hyperthreads>
+	<memory>8GB</memory>
+</machine>
+<time>TBC</time>
+</details>
+<description>
+This is the ground truth run
+</description>
+<collections><collection>CJK Wikipedia</collection></collections>
+	<topic file="33637" name="Wasabi"> 
+		<outgoing>
+			<anchor offset="290" length="6" name="Wasabi">
+				<tofile bep_offset="0" lang="ja" title="カナダ">1698830</tofile>
+				<tofile bep_offset="0" lang="ja" title="アブラナ科">3149</tofile>
+				<tofile bep_offset="0" lang="ja" title="寿司">254373</tofile>
+				<tofile bep_offset="0" lang="ja" title="アリルイソチオシアネート">955602</tofile>
+				<tofile bep_offset="0" lang="ja" title="キャベツ">667393</tofile>
+				<tofile bep_offset="0" lang="ja" title="豆果">496095</tofile>
+				<tofile bep_offset="0" lang="ja" title="カラシナ">410157</tofile>
+				<tofile bep_offset="0" lang="ja" title="カプサイシン">188126</tofile>
+				<tofile bep_offset="0" lang="ja" title="カンアオイ属">690295</tofile>
+				<tofile bep_offset="0" lang="ja" title="北海道">436</tofile>
+				<tofile bep_offset="0" lang="ja" title="当て字">215322</tofile>
+				<tofile bep_offset="0" lang="ja" title="ホースラディッシュ">156416</tofile>
+				<tofile bep_offset="0" lang="ja" title="伊豆半島">26878</tofile>
+				<tofile bep_offset="0" lang="ja" title="太平洋岸北西部">1175563</tofile>
+				<tofile bep_offset="0" lang="ja" title="京都市">7212</tofile>
+				<tofile bep_offset="0" lang="ja" title="歯磨剤">533613</tofile>
+				<tofile bep_offset="0" lang="ja" title="温室">199887</tofile>
+				<tofile bep_offset="0" lang="ja" title="ブリティッシュコロンビア州">18471</tofile>
+				<tofile bep_offset="0" lang="ja" title="唐辛子">1138770</tofile>
+				<tofile bep_offset="0" lang="ja" title="錦市場">1006244</tofile>
+				<tofile bep_offset="0" lang="ja" title="おろし器">92193</tofile>
+				<tofile bep_offset="0" lang="ja" title="中華人民共和国">1903</tofile>
+				<tofile bep_offset="0" lang="ja" title="ブルーリッジ山脈">1115641</tofile>
+				<tofile bep_offset="0" lang="ja" title="岩手県">271</tofile>
+				<tofile bep_offset="0" lang="ja" title="イソチオシアネート">1300364</tofile>
+				<tofile bep_offset="0" lang="ja" title="ニュージーランド">6361</tofile>
+				<tofile bep_offset="0" lang="ja" title="マスタード">25712</tofile>
+				<tofile bep_offset="0" lang="ja" title="栽培品種">2235</tofile>
+				<tofile bep_offset="0" lang="ja" title="日本における漢字">334154</tofile>
+				<tofile bep_offset="0" lang="ja" title="加水分解">33452</tofile>
+				<tofile bep_offset="0" lang="ja" title="島根県">405</tofile>
+				<tofile bep_offset="0" lang="ja" title="台湾">882663</tofile>
+				<tofile bep_offset="0" lang="ja" title="九州">6106</tofile>
+				<tofile bep_offset="0" lang="ja" title="静岡県">403</tofile>
+				<tofile bep_offset="0" lang="ja" title="長野県">421</tofile>
+				<tofile bep_offset="0" lang="ja" title="微生物">54675</tofile>
+				<tofile bep_offset="0" lang="ja" title="山梨県">448</tofile>
+				<tofile bep_offset="0" lang="ja" title="調味料">3123</tofile>
+				<tofile bep_offset="0" lang="ja" title="阿里山">707619</tofile>
+				<tofile bep_offset="0" lang="ja" title="防虫剤">356668</tofile>
+				<tofile bep_offset="0" lang="ja" title="シイタケ">25798</tofile>
+				<tofile bep_offset="0" lang="ja" title="江戸時代">2740</tofile>
+				<tofile bep_offset="0" lang="ja" title="スパゲッティ">5543</tofile>
+				<tofile bep_offset="0" lang="ja" title="茶漬け">29710</tofile>
+				<tofile bep_offset="0" lang="ja" title="メチオノール">2276605</tofile>
+				<tofile bep_offset="0" lang="ja" title="煎餅">52490</tofile>
+				<tofile bep_offset="0" lang="ja" title="奥多摩">168206</tofile>
+				<tofile bep_offset="0" lang="ja" title="最高級品種">503147</tofile>
+				<tofile bep_offset="0" lang="ja" title="長野電波技術研究所">686791</tofile>
+				<tofile bep_offset="0" lang="ja" title="野桜本店">625412</tofile>
+				<tofile bep_offset="0" lang="ja" title="わさび漬け">159067</tofile>
+				<tofile bep_offset="0" lang="ja" title="奈良時代">3202</tofile>
+				<tofile bep_offset="0" lang="ja" title="符牒">108616</tofile>
+				<tofile bep_offset="0" lang="ja" title="WASABI">365891</tofile>
+				<tofile bep_offset="0" lang="ja" title="農耕">58913</tofile>
+				<tofile bep_offset="0" lang="ja" title="葵区">157742</tofile>
+				<tofile bep_offset="0" lang="ja" title="わさビーフ">701737</tofile>
+				<tofile bep_offset="0" lang="ja" title="辛味">513046</tofile>
+				<tofile bep_offset="0" lang="ja" title="薬味">151879</tofile>
+				<tofile bep_offset="0" lang="ja" title="ソフトクリーム">332856</tofile>
+				<tofile bep_offset="0" lang="ja" title="ユリワサビ">2066969</tofile>
+				<tofile bep_offset="0" lang="ja" title="平安時代">1302925</tofile>
+				<tofile bep_offset="0" lang="ja" title="米">7516</tofile>
+				<tofile bep_offset="0" lang="ja" title="金印 (企業)">823853</tofile>
+				<tofile bep_offset="0" lang="ja" title="住宅用火災警報器">1315667</tofile>
+				<tofile bep_offset="0" lang="ja" title="朝鮮語">7630</tofile>
+				<tofile bep_offset="0" lang="ja" title="農産物">25408</tofile>
+				<tofile bep_offset="0" lang="ja" title="うずめ飯">1479054</tofile>
+				<tofile bep_offset="0" lang="ja" title="地下茎">331053</tofile>
+				<tofile bep_offset="0" lang="ja" title="ワサビ属">2066102</tofile>
+				<tofile bep_offset="0" lang="ja" title="モンシロチョウ">260282</tofile>
+				<tofile bep_offset="0" lang="ja" title="シームス">1638063</tofile>
+				<tofile bep_offset="0" lang="ja" title="防腐剤">362415</tofile>
+				<tofile bep_offset="0" lang="ja" title="サメ">25665</tofile>
+				<tofile bep_offset="0" lang="ja" title="延享">48705</tofile>
+				<tofile bep_offset="0" lang="ja" title="おひたし">299566</tofile>
+				<tofile bep_offset="0" lang="ja" title="フランス語">90</tofile>
+				<tofile bep_offset="0" lang="ja" title="シニグリン">954880</tofile>
+				<tofile bep_offset="0" lang="ja" title="918年">41052</tofile>
+				<tofile bep_offset="0" lang="ja" title="アイスクリーム">20943</tofile>
+				<tofile bep_offset="0" lang="ja" title="大御所 (江戸時代)">1446668</tofile>
+				<tofile bep_offset="0" lang="ja" title="東京都">774362</tofile>
+				<tofile bep_offset="0" lang="ja" title="天ぷら">254520</tofile>
+				<tofile bep_offset="0" lang="ja" title="徳川家康">4855</tofile>
+				<tofile bep_offset="0" lang="ja" title="香辛料">17845</tofile>
+				<tofile bep_offset="0" lang="ja" title="細胞">3639</tofile>
+				<tofile bep_offset="0" lang="ja" title="英語">3377</tofile>
+				<tofile bep_offset="0" lang="ja" title="アオムシ">559679</tofile>
+				<tofile bep_offset="0" lang="ja" title="アラレ">37142</tofile>
+				<tofile bep_offset="0" lang="ja" title="台湾語">14065</tofile>
+				<tofile bep_offset="0" lang="ja" title="幼虫">167651</tofile>
+				<tofile bep_offset="0" lang="ja" title="718年">54268</tofile>
+				<tofile bep_offset="0" lang="ja" title="雲南省">186678</tofile>
+				<tofile bep_offset="0" lang="ja" title="聴覚障害者">49951</tofile>
+				<tofile bep_offset="0" lang="ja" title="アレルギー">5883</tofile>
+				<tofile bep_offset="0" lang="ja" title="酵素">7781</tofile>
+				<tofile bep_offset="0" lang="ja" title="弁当">24931</tofile>
+				<tofile bep_offset="0" lang="ja" title="刺身">25603</tofile>
+				<tofile bep_offset="0" lang="ja" title="安曇野市">327316</tofile>
+				<tofile bep_offset="0" lang="ja" title="ワサビノキ">893678</tofile>
+				<tofile bep_offset="0" lang="ja" title="和名類聚抄">435278</tofile>
+				<tofile bep_offset="0" lang="ja" title="1744年">5591</tofile>
+				<tofile bep_offset="0" lang="ja" title="広東語">14053</tofile>
+				<tofile bep_offset="0" lang="ja" title="フランス料理">19055</tofile>
+				<tofile bep_offset="0" lang="ja" title="大王わさび農場">329964</tofile>
+				<tofile bep_offset="0" lang="ja" title="粕漬け">1600131</tofile>
+				<tofile bep_offset="0" lang="ja" title="借用語">179813</tofile>
+				<tofile bep_offset="0" lang="ja" title="室町時代">299797</tofile>
+				<tofile bep_offset="0" lang="ja" title="殺菌">195197</tofile>
+				<tofile bep_offset="0" lang="ja" title="わび・さび">351468</tofile>
+				<tofile bep_offset="0" lang="ja" title="蕎麦">265215</tofile>
+				<tofile bep_offset="0" lang="ja" title="伊豆市">71842</tofile>
+				<tofile bep_offset="0" lang="ja" title="酒粕">207100</tofile>
+				<tofile bep_offset="0" lang="ja" title="静岡市">1131895</tofile>
+				<tofile bep_offset="0" lang="ja" title="ローストビーフ">66063</tofile>
+				<tofile bep_offset="0" lang="ja" title="日本">1864744</tofile>
+				<tofile bep_offset="0" lang="ja" title="酸素">7369</tofile>
+				<tofile bep_offset="0" lang="ja" title="駿府城">50646</tofile>
+				<tofile bep_offset="0" lang="ja" title="エチレン">21346</tofile>
+				<tofile bep_offset="0" lang="ja" title="本草和名">933309</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="1261868" name="Tom yum"> 
+		<outgoing>
+			<anchor offset="290" length="7" name="Tom yum">
+				<tofile bep_offset="0" lang="ja" title="ラオス">1468</tofile>
+				<tofile bep_offset="0" lang="ja" title="オガルカヤ属">2165321</tofile>
+				<tofile bep_offset="0" lang="ja" title="バンコク">67666</tofile>
+				<tofile bep_offset="0" lang="ja" title="唐辛子">1138770</tofile>
+				<tofile bep_offset="0" lang="ja" title="タイ王国">52745</tofile>
+				<tofile bep_offset="0" lang="ja" title="ラオス料理">911774</tofile>
+				<tofile bep_offset="0" lang="ja" title="タマリンド">172625</tofile>
+				<tofile bep_offset="0" lang="ja" title="コリアンダー">31937</tofile>
+				<tofile bep_offset="0" lang="ja" title="ヒラタケ">694385</tofile>
+				<tofile bep_offset="0" lang="ja" title="シンガポール">2121918</tofile>
+				<tofile bep_offset="0" lang="ja" title="ニワトリ">26284</tofile>
+				<tofile bep_offset="0" lang="ja" title="ラーオ語">145041</tofile>
+				<tofile bep_offset="0" lang="ja" title="コブミカン">1587260</tofile>
+				<tofile bep_offset="0" lang="ja" title="炒める">57224</tofile>
+				<tofile bep_offset="0" lang="ja" title="タイ料理">27610</tofile>
+				<tofile bep_offset="0" lang="ja" title="魚醤">17855</tofile>
+				<tofile bep_offset="0" lang="ja" title="マレーシア">2121942</tofile>
+				<tofile bep_offset="0" lang="ja" title="ココナッツミルク">314000</tofile>
+				<tofile bep_offset="0" lang="ja" title="アジア通貨危機">94426</tofile>
+				<tofile bep_offset="0" lang="ja" title="インドネシア">100</tofile>
+				<tofile bep_offset="0" lang="ja" title="フクロタケ">1826903</tofile>
+				<tofile bep_offset="0" lang="ja" title="クルマエビ亜目">908616</tofile>
+				<tofile bep_offset="0" lang="ja" title="ライム">130307</tofile>
+				<tofile bep_offset="0" lang="ja" title="ボルシチ">68336</tofile>
+				<tofile bep_offset="0" lang="ja" title="イカ">24323</tofile>
+				<tofile bep_offset="0" lang="ja" title="ブイヤベース">34755</tofile>
+				<tofile bep_offset="0" lang="ja" title="チキンスープ">185295</tofile>
+				<tofile bep_offset="0" lang="ja" title="スープ">25026</tofile>
+				<tofile bep_offset="0" lang="ja" title="クノール (食品ブランド)">1071634</tofile>
+				<tofile bep_offset="0" lang="ja" title="香辛料">17845</tofile>
+				<tofile bep_offset="0" lang="ja" title="レモングラス">214366</tofile>
+				<tofile bep_offset="0" lang="ja" title="エビ">22372</tofile>
+				<tofile bep_offset="0" lang="ja" title="ふかひれ">119907</tofile>
+				<tofile bep_offset="0" lang="ja" title="鶏肉">27318</tofile>
+				<tofile bep_offset="0" lang="ja" title="ショウガ">23795</tofile>
+				<tofile bep_offset="0" lang="ja" title="調味料">3123</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="33822" name="Westwood Studios"> 
+		<outgoing>
+			<anchor offset="290" length="16" name="Westwood Studios">
+				<tofile bep_offset="0" lang="ja" title="8ビット">1486012</tofile>
+				<tofile bep_offset="0" lang="ja" title="コンピュータRPG">802</tofile>
+				<tofile bep_offset="0" lang="ja" title="ファーストパーソン・シューティングゲーム">93937</tofile>
+				<tofile bep_offset="0" lang="ja" title="アーバイン (カリフォルニア州)">631345</tofile>
+				<tofile bep_offset="0" lang="ja" title="ウォルト・ディズニー・カンパニー">122531</tofile>
+				<tofile bep_offset="0" lang="ja" title="ゲームクリエイター">313312</tofile>
+				<tofile bep_offset="0" lang="ja" title="コマンド&amp;コンカー">682193</tofile>
+				<tofile bep_offset="0" lang="ja" title="アドベンチャーゲーム">7952</tofile>
+				<tofile bep_offset="0" lang="ja" title="ギネス世界記録">23188</tofile>
+				<tofile bep_offset="0" lang="ja" title="アトランタ・ブレーブス">140910</tofile>
+				<tofile bep_offset="0" lang="ja" title="バトルテック">1096342</tofile>
+				<tofile bep_offset="0" lang="ja" title="Amiga">21175</tofile>
+				<tofile bep_offset="0" lang="ja" title="モデム">2965</tofile>
+				<tofile bep_offset="0" lang="ja" title="ラスベガス">83960</tofile>
+				<tofile bep_offset="0" lang="ja" title="MMORPG">11390</tofile>
+				<tofile bep_offset="0" lang="ja" title="バイオハザード (ゲーム)">558995</tofile>
+				<tofile bep_offset="0" lang="ja" title="デューン/砂の惑星">1663674</tofile>
+				<tofile bep_offset="0" lang="ja" title="リアルタイムストラテジー">45976</tofile>
+				<tofile bep_offset="0" lang="ja" title="ダンジョンズ&amp;ドラゴンズ">63097</tofile>
+				<tofile bep_offset="0" lang="ja" title="アース・アンド・ビヨンド">9675</tofile>
+				<tofile bep_offset="0" lang="ja" title="Microsoft Windows">1696</tofile>
+				<tofile bep_offset="0" lang="ja" title="エレクトロニック・アーツ">110496</tofile>
+				<tofile bep_offset="0" lang="ja" title="16ビット">1487830</tofile>
+				<tofile bep_offset="0" lang="ja" title="Nox">242454</tofile>
+				<tofile bep_offset="0" lang="ja" title="2001年">813</tofile>
+				<tofile bep_offset="0" lang="ja" title="FM TOWNS">1309</tofile>
+				<tofile bep_offset="0" lang="ja" title="1997年">2025310</tofile>
+				<tofile bep_offset="0" lang="ja" title="Nintendo Entertainment System">24916</tofile>
+				<tofile bep_offset="0" lang="ja" title="アメリカ合衆国">1698838</tofile>
+				<tofile bep_offset="0" lang="ja" title="1989年">1578</tofile>
+				<tofile bep_offset="0" lang="ja" title="3次元コンピュータグラフィックス">2075</tofile>
+				<tofile bep_offset="0" lang="ja" title="1995年">2025673</tofile>
+				<tofile bep_offset="0" lang="ja" title="ブレードランナー">2942</tofile>
+				<tofile bep_offset="0" lang="ja" title="1992年">1349811</tofile>
+				<tofile bep_offset="0" lang="ja" title="2002年">1532</tofile>
+				<tofile bep_offset="0" lang="ja" title="コンピュータゲーム">231</tofile>
+				<tofile bep_offset="0" lang="ja" title="1993年">1565</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="484999" name="Youtiao"> 
+		<outgoing>
+			<anchor offset="290" length="7" name="Youtiao">
+				<tofile bep_offset="0" lang="ja" title="焼餅 (中国)">1981878</tofile>
+				<tofile bep_offset="0" lang="ja" title="複数">319664</tofile>
+				<tofile bep_offset="0" lang="ja" title="粥">191666</tofile>
+				<tofile bep_offset="0" lang="ja" title="ベトナム料理">253252</tofile>
+				<tofile bep_offset="0" lang="ja" title="加糖練乳">209355</tofile>
+				<tofile bep_offset="0" lang="ja" title="タイ南部">103319</tofile>
+				<tofile bep_offset="0" lang="ja" title="タイ王国">52745</tofile>
+				<tofile bep_offset="0" lang="ja" title="サンドイッチ">26827</tofile>
+				<tofile bep_offset="0" lang="ja" title="シンガポール">2121918</tofile>
+				<tofile bep_offset="0" lang="ja" title="パン生地">2128811</tofile>
+				<tofile bep_offset="0" lang="ja" title="宋 (王朝)">57982</tofile>
+				<tofile bep_offset="0" lang="ja" title="トラン県">129495</tofile>
+				<tofile bep_offset="0" lang="ja" title="フィリピン">252152</tofile>
+				<tofile bep_offset="0" lang="ja" title="オーストラリア">1119369</tofile>
+				<tofile bep_offset="0" lang="ja" title="中華文化">1428701</tofile>
+				<tofile bep_offset="0" lang="ja" title="マレー語">83945</tofile>
+				<tofile bep_offset="0" lang="ja" title="揚げる">85776</tofile>
+				<tofile bep_offset="0" lang="ja" title="中華料理">9852</tofile>
+				<tofile bep_offset="0" lang="ja" title="豆乳">25030</tofile>
+				<tofile bep_offset="0" lang="ja" title="東南アジア">3881</tofile>
+				<tofile bep_offset="0" lang="ja" title="マレーシア">2121942</tofile>
+				<tofile bep_offset="0" lang="ja" title="台湾語">14065</tofile>
+				<tofile bep_offset="0" lang="ja" title="腸粉">628941</tofile>
+				<tofile bep_offset="0" lang="ja" title="露天商">93242</tofile>
+				<tofile bep_offset="0" lang="ja" title="上海料理">139366</tofile>
+				<tofile bep_offset="0" lang="ja" title="フランスパン">76997</tofile>
+				<tofile bep_offset="0" lang="ja" title="クラップフェン">208009</tofile>
+				<tofile bep_offset="0" lang="ja" title="インドネシア">100</tofile>
+				<tofile bep_offset="0" lang="ja" title="チュロス">548433</tofile>
+				<tofile bep_offset="0" lang="ja" title="愛国心">158196</tofile>
+				<tofile bep_offset="0" lang="ja" title="東アジア">539918</tofile>
+				<tofile bep_offset="0" lang="ja" title="クルーラー">2247229</tofile>
+				<tofile bep_offset="0" lang="ja" title="ベニエ">2299207</tofile>
+				<tofile bep_offset="0" lang="ja" title="潮州語">716156</tofile>
+				<tofile bep_offset="0" lang="ja" title="ミャンマー">1185408</tofile>
+				<tofile bep_offset="0" lang="ja" title="天かす">335510</tofile>
+				<tofile bep_offset="0" lang="ja" title="ビン南語">62091</tofile>
+				<tofile bep_offset="0" lang="ja" title="秦檜">42096</tofile>
+				<tofile bep_offset="0" lang="ja" title="箸">22099</tofile>
+				<tofile bep_offset="0" lang="ja" title="台湾">882663</tofile>
+				<tofile bep_offset="0" lang="ja" title="肉骨茶">627909</tofile>
+				<tofile bep_offset="0" lang="ja" title="広東語">14053</tofile>
+				<tofile bep_offset="0" lang="ja" title="岳飛">107266</tofile>
+				<tofile bep_offset="0" lang="ja" title="朝食">5454</tofile>
+				<tofile bep_offset="0" lang="ja" title="包丁">22222</tofile>
+				<tofile bep_offset="0" lang="ja" title="南宋">14072</tofile>
+				<tofile bep_offset="0" lang="ja" title="油">27628</tofile>
+				<tofile bep_offset="0" lang="ja" title="飲茶">578934</tofile>
+				<tofile bep_offset="0" lang="ja" title="炭酸水素アンモニウム">395669</tofile>
+				<tofile bep_offset="0" lang="ja" title="香港">1607313</tofile>
+				<tofile bep_offset="0" lang="ja" title="金 (王朝)">13714</tofile>
+				<tofile bep_offset="0" lang="ja" title="塩">255539</tofile>
+				<tofile bep_offset="0" lang="ja" title="小麦粉">1854550</tofile>
+				<tofile bep_offset="0" lang="ja" title="北京語">14240</tofile>
+				<tofile bep_offset="0" lang="ja" title="中華圏">2008675</tofile>
+				<tofile bep_offset="0" lang="ja" title="おにぎり">2228882</tofile>
+				<tofile bep_offset="0" lang="ja" title="パン">21799</tofile>
+				<tofile bep_offset="0" lang="ja" title="天津煎餅">416160</tofile>
+				<tofile bep_offset="0" lang="ja" title="製パン">494101</tofile>
+				<tofile bep_offset="0" lang="ja" title="揚げパン">512258</tofile>
+				<tofile bep_offset="0" lang="ja" title="点心">216168</tofile>
+				<tofile bep_offset="0" lang="ja" title="中国">270031</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="2872586" name="Tsundere"> 
+		<outgoing>
+			<anchor offset="290" length="8" name="Tsundere">
+				<tofile bep_offset="0" lang="ja" title="NARUTO -ナルト-">306481</tofile>
+				<tofile bep_offset="0" lang="ja" title="ラブひな">52642</tofile>
+				<tofile bep_offset="0" lang="ja" title="うる星やつら">225</tofile>
+				<tofile bep_offset="0" lang="ja" title="美少女ゲーム">119507</tofile>
+				<tofile bep_offset="0" lang="ja" title="アニメ">1113</tofile>
+				<tofile bep_offset="0" lang="ja" title="タカラトミー">447691</tofile>
+				<tofile bep_offset="0" lang="ja" title="君が望む永遠">12960</tofile>
+				<tofile bep_offset="0" lang="ja" title="日本の文化">188753</tofile>
+				<tofile bep_offset="0" lang="ja" title="秋葉原">1725166</tofile>
+				<tofile bep_offset="0" lang="ja" title="コミックマーケット">13552</tofile>
+				<tofile bep_offset="0" lang="ja" title="日本の漫画">1737924</tofile>
+				<tofile bep_offset="0" lang="ja" title="萌え">849965</tofile>
+				<tofile bep_offset="0" lang="ja" title="らき☆すた">1075844</tofile>
+				<tofile bep_offset="0" lang="ja" title="〈物語〉シリーズ">762576</tofile>
+				<tofile bep_offset="0" lang="ja" title="とらドラ!">600922</tofile>
+				<tofile bep_offset="0" lang="ja" title="ラム (うる星やつら)">708117</tofile>
+				<tofile bep_offset="0" lang="ja" title="おたく">11305</tofile>
+				<tofile bep_offset="0" lang="ja" title="マスメディア">9301</tofile>
+				<tofile bep_offset="0" lang="ja" title="釘宮理恵">1836951</tofile>
+				<tofile bep_offset="0" lang="ja" title="ギャグ">40048</tofile>
+				<tofile bep_offset="0" lang="ja" title="クレヨンしんちゃん 伝説を呼ぶ 踊れ!アミーゴ!">619373</tofile>
+				<tofile bep_offset="0" lang="ja" title="ニュース速報(VIP)板">713862</tofile>
+				<tofile bep_offset="0" lang="ja" title="ダ・ヴィンチ">294929</tofile>
+				<tofile bep_offset="0" lang="ja" title="エロゲー掲示板">1228253</tofile>
+				<tofile bep_offset="0" lang="ja" title="ギャルサー">1021380</tofile>
+				<tofile bep_offset="0" lang="ja" title="猫耳">19386</tofile>
+				<tofile bep_offset="0" lang="ja" title="DEARS">1359845</tofile>
+				<tofile bep_offset="0" lang="ja" title="あやしいわーるど@暫定">879449</tofile>
+				<tofile bep_offset="0" lang="ja" title="女性">6282</tofile>
+				<tofile bep_offset="0" lang="ja" title="インターネットスラング">294165</tofile>
+				<tofile bep_offset="0" lang="ja" title="週刊誌">65010</tofile>
+				<tofile bep_offset="0" lang="ja" title="新語・流行語大賞">2250892</tofile>
+				<tofile bep_offset="0" lang="ja" title="ギャルゲー">12541</tofile>
+				<tofile bep_offset="0" lang="ja" title="2006年">793034</tofile>
+				<tofile bep_offset="0" lang="ja" title="杉浦由美子">2183138</tofile>
+				<tofile bep_offset="0" lang="ja" title="美人">46331</tofile>
+				<tofile bep_offset="0" lang="ja" title="定義">8529</tofile>
+				<tofile bep_offset="0" lang="ja" title="イベント系サークル">331252</tofile>
+				<tofile bep_offset="0" lang="ja" title="2005年">332554</tofile>
+				<tofile bep_offset="0" lang="ja" title="随筆家">44582</tofile>
+				<tofile bep_offset="0" lang="ja" title="アホ毛">90677</tofile>
+				<tofile bep_offset="0" lang="ja" title="ヤンデレ">1872483</tofile>
+				<tofile bep_offset="0" lang="ja" title="天邪鬼">253363</tofile>
+				<tofile bep_offset="0" lang="ja" title="用語">33884</tofile>
+				<tofile bep_offset="0" lang="ja" title="性格">28694</tofile>
+				<tofile bep_offset="0" lang="ja" title="萌え要素">1003448</tofile>
+				<tofile bep_offset="0" lang="ja" title="恋愛ゲーム (ゲームジャンル)">92095</tofile>
+				<tofile bep_offset="0" lang="ja" title="2ちゃんねる">815613</tofile>
+				<tofile bep_offset="0" lang="ja" title="ツンデレタロット">1813782</tofile>
+				<tofile bep_offset="0" lang="ja" title="らき☆すた (アニメ)">1881969</tofile>
+				<tofile bep_offset="0" lang="ja" title="キャラクター">8630</tofile>
+				<tofile bep_offset="0" lang="ja" title="現代用語の基礎知識">176131</tofile>
+				<tofile bep_offset="0" lang="ja" title="8月29日">1592</tofile>
+				<tofile bep_offset="0" lang="ja" title="辞典">29173</tofile>
+				<tofile bep_offset="0" lang="ja" title="ツンデレカルタ">1341536</tofile>
+				<tofile bep_offset="0" lang="ja" title="ワンセグ">318255</tofile>
+				<tofile bep_offset="0" lang="ja" title="ツンデレラ">726121</tofile>
+				<tofile bep_offset="0" lang="ja" title="2002年">1532</tofile>
+				<tofile bep_offset="0" lang="ja" title="知恵蔵">355066</tofile>
+				<tofile bep_offset="0" lang="ja" title="ファッション雑誌">93213</tofile>
+				<tofile bep_offset="0" lang="ja" title="ツインテール">107284</tofile>
+				<tofile bep_offset="0" lang="ja" title="東京国際展示場">17305</tofile>
+				<tofile bep_offset="0" lang="ja" title="柴咲コウ">1657723</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="1148973" name="Song Hye-kyo"> 
+		<outgoing>
+			<anchor offset="290" length="12" name="Song Hye-kyo">
+				<tofile bep_offset="0" lang="ja" title="ゴールデンディスク賞">882299</tofile>
+				<tofile bep_offset="0" lang="ja" title="キム・ボムス">424082</tofile>
+				<tofile bep_offset="0" lang="ja" title="韓国放送公社">1354052</tofile>
+				<tofile bep_offset="0" lang="ja" title="俳優">2008</tofile>
+				<tofile bep_offset="0" lang="ja" title="黄真伊">1458202</tofile>
+				<tofile bep_offset="0" lang="ja" title="チャ・テヒョン">913859</tofile>
+				<tofile bep_offset="0" lang="ja" title="ブルース・リー">25583</tofile>
+				<tofile bep_offset="0" lang="ja" title="リーバイス">715064</tofile>
+				<tofile bep_offset="0" lang="ja" title="秋の童話">149754</tofile>
+				<tofile bep_offset="0" lang="ja" title="妓生">188783</tofile>
+				<tofile bep_offset="0" lang="ja" title="ウォンビン">53641</tofile>
+				<tofile bep_offset="0" lang="ja" title="ピ (歌手)">322400</tofile>
+				<tofile bep_offset="0" lang="ja" title="カン・ドンウォン">497561</tofile>
+				<tofile bep_offset="0" lang="ja" title="ホテリアー">166319</tofile>
+				<tofile bep_offset="0" lang="ja" title="大邱広域市">23752</tofile>
+				<tofile bep_offset="0" lang="ja" title="ヒョンビン">1005686</tofile>
+				<tofile bep_offset="0" lang="ja" title="オールイン 運命の愛">250148</tofile>
+				<tofile bep_offset="0" lang="ja" title="ミュージックバンク">2391635</tofile>
+				<tofile bep_offset="0" lang="ja" title="第二次世界大戦">1205720</tofile>
+				<tofile bep_offset="0" lang="ja" title="KBS演技大賞">1971192</tofile>
+				<tofile bep_offset="0" lang="ja" title="学校制服">2482686</tofile>
+				<tofile bep_offset="0" lang="ja" title="大韓民国">382006</tofile>
+				<tofile bep_offset="0" lang="ja" title="ソン・スンホン">281344</tofile>
+				<tofile bep_offset="0" lang="ja" title="ニンテンドーDS">91606</tofile>
+				<tofile bep_offset="0" lang="ja" title="フジテレビジョン">329714</tofile>
+				<tofile bep_offset="0" lang="ja" title="マクドナルド">1750</tofile>
+				<tofile bep_offset="0" lang="ja" title="Mnet Asian Music Awards">808822</tofile>
+				<tofile bep_offset="0" lang="ja" title="ジョン・ウー">144917</tofile>
+				<tofile bep_offset="0" lang="ja" title="百想芸術大賞">1574104</tofile>
+				<tofile bep_offset="0" lang="ja" title="SKグループ">349429</tofile>
+				<tofile bep_offset="0" lang="ja" title="彼らが生きる世界">2151923</tofile>
+				<tofile bep_offset="0" lang="ja" title="フルハウス (韓国のテレビドラマ)">912998</tofile>
+				<tofile bep_offset="0" lang="ja" title="モデル (職業)">569594</tofile>
+				<tofile bep_offset="0" lang="ja" title="ウォン・カーウァイ">138714</tofile>
+				<tofile bep_offset="0" lang="ja" title="東亜日報">222274</tofile>
+				<tofile bep_offset="0" lang="ja" title="韓国日報">532787</tofile>
+				<tofile bep_offset="0" lang="ja" title="アモーレパシフィック">1985015</tofile>
+				<tofile bep_offset="0" lang="ja" title="イ・ビョンホン">155131</tofile>
+				<tofile bep_offset="0" lang="ja" title="世界の中心で、愛をさけぶ">101435</tofile>
+				<tofile bep_offset="0" lang="ja" title="初恋 (1996年のテレビドラマ)">740837</tofile>
+				<tofile bep_offset="0" lang="ja" title="国共内戦">32096</tofile>
+				<tofile bep_offset="0" lang="ja" title="韓国ドラマ">149753</tofile>
+				<tofile bep_offset="0" lang="ja" title="大韓民国映画大賞">1617839</tofile>
+				<tofile bep_offset="0" lang="ja" title="釜山広域市">54111</tofile>
+				<tofile bep_offset="0" lang="ja" title="SBS (韓国)">112963</tofile>
+				<tofile bep_offset="0" lang="ja" title="文化放送 (韓国)">112960</tofile>
+				<tofile bep_offset="0" lang="ja" title="スリーサイズ">200422</tofile>
+				<tofile bep_offset="0" lang="ja" title="2010年">2053712</tofile>
+				<tofile bep_offset="0" lang="ja" title="ABO式血液型">754515</tofile>
+				<tofile bep_offset="0" lang="ja" title="リズム・アンド・ブルース">1998</tofile>
+				<tofile bep_offset="0" lang="ja" title="1996年">1520</tofile>
+				<tofile bep_offset="0" lang="ja" title="世宗大学校">996272</tofile>
+				<tofile bep_offset="0" lang="ja" title="2005年">332554</tofile>
+				<tofile bep_offset="0" lang="ja" title="ソウル特別市">255677</tofile>
+				<tofile bep_offset="0" lang="ja" title="2月26日">1162424</tofile>
+				<tofile bep_offset="0" lang="ja" title="ヴォーグ (雑誌)">334743</tofile>
+				<tofile bep_offset="0" lang="ja" title="2007年">1069779</tofile>
+				<tofile bep_offset="0" lang="ja" title="カメリア (映画)">2454901</tofile>
+				<tofile bep_offset="0" lang="ja" title="1982年">897</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="1429653" name="Lee Young Ae"> 
+		<outgoing>
+			<anchor offset="290" length="12" name="Lee Young Ae">
+				<tofile bep_offset="0" lang="ja" title="韓国放送公社">1354052</tofile>
+				<tofile bep_offset="0" lang="ja" title="俳優">2008</tofile>
+				<tofile bep_offset="0" lang="ja" title="パパ (テレビドラマ)">297688</tofile>
+				<tofile bep_offset="0" lang="ja" title="SBS (韓国)">112963</tofile>
+				<tofile bep_offset="0" lang="ja" title="JSA (映画)">155782</tofile>
+				<tofile bep_offset="0" lang="ja" title="カースト">10334</tofile>
+				<tofile bep_offset="0" lang="ja" title="ソウル特別市">255677</tofile>
+				<tofile bep_offset="0" lang="ja" title="文化放送 (韓国)">112960</tofile>
+				<tofile bep_offset="0" lang="ja" title="アメリカ合衆国">1698838</tofile>
+				<tofile bep_offset="0" lang="ja" title="国際連合児童基金">31974</tofile>
+				<tofile bep_offset="0" lang="ja" title="カメオ出演">14143</tofile>
+				<tofile bep_offset="0" lang="ja" title="宮廷女官チャングムの誓い">145777</tofile>
+				<tofile bep_offset="0" lang="ja" title="LGグループ">309401</tofile>
+				<tofile bep_offset="0" lang="ja" title="ラスト・プレゼント (韓国映画)">147061</tofile>
+				<tofile bep_offset="0" lang="ja" title="日本放送協会">2051272</tofile>
+				<tofile bep_offset="0" lang="ja" title="ハルビン氷祭り">1599766</tofile>
+				<tofile bep_offset="0" lang="ja" title="アンディ・ラウ">443162</tofile>
+				<tofile bep_offset="0" lang="ja" title="青龍映画賞">807036</tofile>
+				<tofile bep_offset="0" lang="ja" title="大韓民国">382006</tofile>
+				<tofile bep_offset="0" lang="ja" title="LGエレクトロニクス">128924</tofile>
+				<tofile bep_offset="0" lang="ja" title="非政府組織">5750</tofile>
+				<tofile bep_offset="0" lang="ja" title="親切なクムジャさん">380002</tofile>
+				<tofile bep_offset="0" lang="ja" title="漢陽大学校">155787</tofile>
+				<tofile bep_offset="0" lang="ja" title="R15">851968</tofile>
+				<tofile bep_offset="0" lang="ja" title="東京ドーム">15945</tofile>
+				<tofile bep_offset="0" lang="ja" title="MBC演技大賞">1657565</tofile>
+				<tofile bep_offset="0" lang="ja" title="朝鮮民主主義人民共和国">907180</tofile>
+				<tofile bep_offset="0" lang="ja" title="会社">7796</tofile>
+				<tofile bep_offset="0" lang="ja" title="金正日">1746589</tofile>
+				<tofile bep_offset="0" lang="ja" title="二見書房">142920</tofile>
+				<tofile bep_offset="0" lang="ja" title="南北首脳会談">80885</tofile>
+				<tofile bep_offset="0" lang="ja" title="ドイツ語">3870</tofile>
+				<tofile bep_offset="0" lang="ja" title="大統領">4446</tofile>
+				<tofile bep_offset="0" lang="ja" title="1996年">1520</tofile>
+				<tofile bep_offset="0" lang="ja" title="2005年">332554</tofile>
+				<tofile bep_offset="0" lang="ja" title="1993年">1565</tofile>
+				<tofile bep_offset="0" lang="ja" title="雑誌">1828</tofile>
+				<tofile bep_offset="0" lang="ja" title="復刊ドットコム">229358</tofile>
+				<tofile bep_offset="0" lang="ja" title="SMAP×SMAP">6780</tofile>
+				<tofile bep_offset="0" lang="ja" title="1994年">1560</tofile>
+				<tofile bep_offset="0" lang="ja" title="2008年">1448844</tofile>
+				<tofile bep_offset="0" lang="ja" title="フジテレビジョン">329714</tofile>
+				<tofile bep_offset="0" lang="ja" title="百想芸術大賞">1574104</tofile>
+				<tofile bep_offset="0" lang="ja" title="1995年">2025673</tofile>
+				<tofile bep_offset="0" lang="ja" title="コマーシャルメッセージ">1192296</tofile>
+				<tofile bep_offset="0" lang="ja" title="映画">163</tofile>
+				<tofile bep_offset="0" lang="ja" title="学習参考書">199084</tofile>
+				<tofile bep_offset="0" lang="ja" title="スタジオパークからこんにちは">107939</tofile>
+				<tofile bep_offset="0" lang="ja" title="BISTRO SMAP">925942</tofile>
+				<tofile bep_offset="0" lang="ja" title="10月2日">3545</tofile>
+				<tofile bep_offset="0" lang="ja" title="2003年">1491</tofile>
+				<tofile bep_offset="0" lang="ja" title="イ・ビョンホン">155131</tofile>
+				<tofile bep_offset="0" lang="ja" title="盧武鉉">27492</tofile>
+				<tofile bep_offset="0" lang="ja" title="大韓民国映画大賞">1617839</tofile>
+				<tofile bep_offset="0" lang="ja" title="チョナン・カン">29429</tofile>
+				<tofile bep_offset="0" lang="ja" title="1997年">2025310</tofile>
+				<tofile bep_offset="0" lang="ja" title="ニュースステーション">3464</tofile>
+				<tofile bep_offset="0" lang="ja" title="テレビ朝日">1187903</tofile>
+				<tofile bep_offset="0" lang="ja" title="1999年">1548</tofile>
+				<tofile bep_offset="0" lang="ja" title="1998年">2025684</tofile>
+				<tofile bep_offset="0" lang="ja" title="1971年">1895692</tofile>
+				<tofile bep_offset="0" lang="ja" title="大学院">4901</tofile>
+				<tofile bep_offset="0" lang="ja" title="ドラマ">25909</tofile>
+				<tofile bep_offset="0" lang="ja" title="関西テレビ放送">26734</tofile>
+				<tofile bep_offset="0" lang="ja" title="ドクターズ">359943</tofile>
+				<tofile bep_offset="0" lang="ja" title="KBS演技大賞">1971192</tofile>
+				<tofile bep_offset="0" lang="ja" title="2006年">793034</tofile>
+				<tofile bep_offset="0" lang="ja" title="大学">30345</tofile>
+				<tofile bep_offset="0" lang="ja" title="2000年">1547</tofile>
+				<tofile bep_offset="0" lang="ja" title="中央大学校">155657</tofile>
+				<tofile bep_offset="0" lang="ja" title="2001年">813</tofile>
+				<tofile bep_offset="0" lang="ja" title="1990年">1450076</tofile>
+				<tofile bep_offset="0" lang="ja" title="1月31日">4728</tofile>
+				<tofile bep_offset="0" lang="ja" title="デビュー">103761</tofile>
+				<tofile bep_offset="0" lang="ja" title="1月">2093207</tofile>
+				<tofile bep_offset="0" lang="ja" title="8月11日">5426</tofile>
+				<tofile bep_offset="0" lang="ja" title="SBS演技大賞">1657556</tofile>
+				<tofile bep_offset="0" lang="ja" title="シッチェス・カタロニア国際映画祭">1124738</tofile>
+				<tofile bep_offset="0" lang="ja" title="総書記">628960</tofile>
+				<tofile bep_offset="0" lang="ja" title="ロマンス (2002年のテレビドラマ)">359225</tofile>
+				<tofile bep_offset="0" lang="ja" title="NHK出版">72647</tofile>
+				<tofile bep_offset="0" lang="ja" title="宮廷女官キム尚宮">1896548</tofile>
+				<tofile bep_offset="0" lang="ja" title="NHK総合テレビジョン">142809</tofile>
+				<tofile bep_offset="0" lang="ja" title="2007年">1069779</tofile>
+				<tofile bep_offset="0" lang="ja" title="モデル (職業)">569594</tofile>
+				<tofile bep_offset="0" lang="ja" title="日本">1864744</tofile>
+				<tofile bep_offset="0" lang="ja" title="テレビドラマ">25910</tofile>
+				<tofile bep_offset="0" lang="ja" title="10月">2093216</tofile>
+				<tofile bep_offset="0" lang="ja" title="卒業">21700</tofile>
+				<tofile bep_offset="0" lang="ja" title="2月">2093211</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="174528" name="Saṃsāra"> 
+		<outgoing>
+			<anchor offset="290" length="10" name="Saṃsāra">
+				<tofile bep_offset="0" lang="ja" title="ジャイナ教">13121</tofile>
+				<tofile bep_offset="0" lang="ja" title="行 (仏教)">51537</tofile>
+				<tofile bep_offset="0" lang="ja" title="霊魂">54539</tofile>
+				<tofile bep_offset="0" lang="ja" title="NARUTO -ナルト-">306481</tofile>
+				<tofile bep_offset="0" lang="ja" title="ラージャ・ヨーガ">2386263</tofile>
+				<tofile bep_offset="0" lang="ja" title="意識">53729</tofile>
+				<tofile bep_offset="0" lang="ja" title="仏教">4182</tofile>
+				<tofile bep_offset="0" lang="ja" title="マレー語">83945</tofile>
+				<tofile bep_offset="0" lang="ja" title="ヒンドゥー教">3775</tofile>
+				<tofile bep_offset="0" lang="ja" title="変性意識状態">686398</tofile>
+				<tofile bep_offset="0" lang="ja" title="中陰">316685</tofile>
+				<tofile bep_offset="0" lang="ja" title="シク教">3379</tofile>
+				<tofile bep_offset="0" lang="ja" title="誕生">536087</tofile>
+				<tofile bep_offset="0" lang="ja" title="禁欲主義">321156</tofile>
+				<tofile bep_offset="0" lang="ja" title="宗教における罪">1338743</tofile>
+				<tofile bep_offset="0" lang="ja" title="ウパニシャッド">10771</tofile>
+				<tofile bep_offset="0" lang="ja" title="ユガ">2249014</tofile>
+				<tofile bep_offset="0" lang="ja" title="涅槃">12730</tofile>
+				<tofile bep_offset="0" lang="ja" title="ボン教">6569</tofile>
+				<tofile bep_offset="0" lang="ja" title="死">356397</tofile>
+				<tofile bep_offset="0" lang="ja" title="解脱">12969</tofile>
+				<tofile bep_offset="0" lang="ja" title="生命">4035</tofile>
+				<tofile bep_offset="0" lang="ja" title="無明">141532</tofile>
+				<tofile bep_offset="0" lang="ja" title="マーヤー">597716</tofile>
+				<tofile bep_offset="0" lang="ja" title="転生">73288</tofile>
+				<tofile bep_offset="0" lang="ja" title="流出説">25531</tofile>
+				<tofile bep_offset="0" lang="ja" title="日本の漫画">1737924</tofile>
+				<tofile bep_offset="0" lang="ja" title="タンカ">2090354</tofile>
+				<tofile bep_offset="0" lang="ja" title="ゾクチェン">1795746</tofile>
+				<tofile bep_offset="0" lang="ja" title="自由">25834</tofile>
+				<tofile bep_offset="0" lang="ja" title="業">74344</tofile>
+				<tofile bep_offset="0" lang="ja" title="チベット語">13172</tofile>
+				<tofile bep_offset="0" lang="ja" title="サンスクリット">6910</tofile>
+				<tofile bep_offset="0" lang="ja" title="欲界">16158</tofile>
+				<tofile bep_offset="0" lang="ja" title="ホラー小説">19596</tofile>
+				<tofile bep_offset="0" lang="ja" title="地">270584</tofile>
+				<tofile bep_offset="0" lang="ja" title="インド">2009</tofile>
+				<tofile bep_offset="0" lang="ja" title="三島由紀夫">13314</tofile>
+				<tofile bep_offset="0" lang="ja" title="声聞">51571</tofile>
+				<tofile bep_offset="0" lang="ja" title="筑摩書房">128644</tofile>
+				<tofile bep_offset="0" lang="ja" title="ビームラーオ・アンベードカル">497381</tofile>
+				<tofile bep_offset="0" lang="ja" title="プラトン">8578</tofile>
+				<tofile bep_offset="0" lang="ja" title="スッタニパータ">141298</tofile>
+				<tofile bep_offset="0" lang="ja" title="部派仏教">12895</tofile>
+				<tofile bep_offset="0" lang="ja" title="死生観">110059</tofile>
+				<tofile bep_offset="0" lang="ja" title="豊饒の海">366713</tofile>
+				<tofile bep_offset="0" lang="ja" title="方便">149115</tofile>
+				<tofile bep_offset="0" lang="ja" title="我">51422</tofile>
+				<tofile bep_offset="0" lang="ja" title="月">2020012</tofile>
+				<tofile bep_offset="0" lang="ja" title="復活 (キリスト教)">113395</tofile>
+				<tofile bep_offset="0" lang="ja" title="性行為">1370701</tofile>
+				<tofile bep_offset="0" lang="ja" title="無常">582876</tofile>
+				<tofile bep_offset="0" lang="ja" title="ミルチャ・エリアーデ">360649</tofile>
+				<tofile bep_offset="0" lang="ja" title="オルペウス教">1153832</tofile>
+				<tofile bep_offset="0" lang="ja" title="カースト">10334</tofile>
+				<tofile bep_offset="0" lang="ja" title="佐々井秀嶺">868305</tofile>
+				<tofile bep_offset="0" lang="ja" title="仏典">12651</tofile>
+				<tofile bep_offset="0" lang="ja" title="大乗仏教">1898</tofile>
+				<tofile bep_offset="0" lang="ja" title="植物">5071</tofile>
+				<tofile bep_offset="0" lang="ja" title="法句経">69483</tofile>
+				<tofile bep_offset="0" lang="ja" title="世親">11529</tofile>
+				<tofile bep_offset="0" lang="ja" title="ブラーフマナ">278918</tofile>
+				<tofile bep_offset="0" lang="ja" title="倶舎論">50764</tofile>
+				<tofile bep_offset="0" lang="ja" title="辛島昇">388609</tofile>
+				<tofile bep_offset="0" lang="ja" title="縁覚">13906</tofile>
+				<tofile bep_offset="0" lang="ja" title="千年女優">180715</tofile>
+				<tofile bep_offset="0" lang="ja" title="如来">10476</tofile>
+				<tofile bep_offset="0" lang="ja" title="胎児">194093</tofile>
+				<tofile bep_offset="0" lang="ja" title="十界">118002</tofile>
+				<tofile bep_offset="0" lang="ja" title="異端">25735</tofile>
+				<tofile bep_offset="0" lang="ja" title="古代ギリシア">21697</tofile>
+				<tofile bep_offset="0" lang="ja" title="バラモン教">10321</tofile>
+				<tofile bep_offset="0" lang="ja" title="穀物">3124</tofile>
+				<tofile bep_offset="0" lang="ja" title="連声">721497</tofile>
+				<tofile bep_offset="0" lang="ja" title="今敏">94492</tofile>
+				<tofile bep_offset="0" lang="ja" title="阿修羅">740791</tofile>
+				<tofile bep_offset="0" lang="ja" title="島田裕巳">47131</tofile>
+				<tofile bep_offset="0" lang="ja" title="六道">87195</tofile>
+				<tofile bep_offset="0" lang="ja" title="動物">9721</tofile>
+				<tofile bep_offset="0" lang="ja" title="無我">17112</tofile>
+				<tofile bep_offset="0" lang="ja" title="女性">6282</tofile>
+				<tofile bep_offset="0" lang="ja" title="神秘学">8905</tofile>
+				<tofile bep_offset="0" lang="ja" title="地獄 (仏教)">119266</tofile>
+				<tofile bep_offset="0" lang="ja" title="前世">165500</tofile>
+				<tofile bep_offset="0" lang="ja" title="男性">7272</tofile>
+				<tofile bep_offset="0" lang="ja" title="平凡社">40540</tofile>
+				<tofile bep_offset="0" lang="ja" title="精子">23877</tofile>
+				<tofile bep_offset="0" lang="ja" title="菩薩">11619</tofile>
+				<tofile bep_offset="0" lang="ja" title="死と再生の神">314664</tofile>
+				<tofile bep_offset="0" lang="ja" title="新仏教運動">2223623</tofile>
+				<tofile bep_offset="0" lang="ja" title="釈迦">1704777</tofile>
+				<tofile bep_offset="0" lang="ja" title="エネルギー保存の法則">10218</tofile>
+				<tofile bep_offset="0" lang="ja" title="文化庁メディア芸術祭">132401</tofile>
+				<tofile bep_offset="0" lang="ja" title="ピタゴラス教団">14987</tofile>
+				<tofile bep_offset="0" lang="ja" title="輪廻転生">208527</tofile>
+				<tofile bep_offset="0" lang="ja" title="ヴェーダ">10681</tofile>
+				<tofile bep_offset="0" lang="ja" title="苦 (仏教)">13030</tofile>
+				<tofile bep_offset="0" lang="ja" title="来世">211356</tofile>
+				<tofile bep_offset="0" lang="ja" title="雨">16194</tofile>
+				<tofile bep_offset="0" lang="ja" title="ノイズ">2000</tofile>
+				<tofile bep_offset="0" lang="ja" title="アートマン">10781</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="3989039" name="Mawangdui"> 
+		<outgoing>
+			<anchor offset="290" length="9" name="Mawangdui">
+				<tofile bep_offset="0" lang="ja" title="ミイラ">30443</tofile>
+				<tofile bep_offset="0" lang="ja" title="心筋梗塞">75887</tofile>
+				<tofile bep_offset="0" lang="ja" title="黄老思想">225482</tofile>
+				<tofile bep_offset="0" lang="ja" title="秦">20417</tofile>
+				<tofile bep_offset="0" lang="ja" title="易経">1806</tofile>
+				<tofile bep_offset="0" lang="ja" title="ラッカー">469119</tofile>
+				<tofile bep_offset="0" lang="ja" title="イトスギ">1005028</tofile>
+				<tofile bep_offset="0" lang="ja" title="道教">1281837</tofile>
+				<tofile bep_offset="0" lang="ja" title="嫦娥">1287202</tofile>
+				<tofile bep_offset="0" lang="ja" title="広東省">25826</tofile>
+				<tofile bep_offset="0" lang="ja" title="曾侯乙墓">2299076</tofile>
+				<tofile bep_offset="0" lang="ja" title="気功">71678</tofile>
+				<tofile bep_offset="0" lang="ja" title="湖南省">132068</tofile>
+				<tofile bep_offset="0" lang="ja" title="文帝 (漢)">42007</tofile>
+				<tofile bep_offset="0" lang="ja" title="漢">14080</tofile>
+				<tofile bep_offset="0" lang="ja" title="中華人民共和国">1903</tofile>
+				<tofile bep_offset="0" lang="ja" title="長沙市">203710</tofile>
+				<tofile bep_offset="0" lang="ja" title="広西チワン族自治区">139923</tofile>
+				<tofile bep_offset="0" lang="ja" title="戦国策">77563</tofile>
+				<tofile bep_offset="0" lang="ja" title="遺跡">39434</tofile>
+				<tofile bep_offset="0" lang="ja" title="木炭">52377</tofile>
+				<tofile bep_offset="0" lang="ja" title="漆器">73523</tofile>
+				<tofile bep_offset="0" lang="ja" title="絹">144730</tofile>
+				<tofile bep_offset="0" lang="ja" title="南越国">150919</tofile>
+				<tofile bep_offset="0" lang="ja" title="紀元前168年">68362</tofile>
+				<tofile bep_offset="0" lang="ja" title="ケシ">14176</tofile>
+				<tofile bep_offset="0" lang="ja" title="経絡">8884</tofile>
+				<tofile bep_offset="0" lang="ja" title="血液型">23511</tofile>
+				<tofile bep_offset="0" lang="ja" title="目">26801</tofile>
+				<tofile bep_offset="0" lang="ja" title="鼓膜">177291</tofile>
+				<tofile bep_offset="0" lang="ja" title="奇形">20249</tofile>
+				<tofile bep_offset="0" lang="ja" title="オオムギ">22905</tofile>
+				<tofile bep_offset="0" lang="ja" title="故事">1414308</tofile>
+				<tofile bep_offset="0" lang="ja" title="シカ">27262</tofile>
+				<tofile bep_offset="0" lang="ja" title="ジャーキー">179208</tofile>
+				<tofile bep_offset="0" lang="ja" title="錬丹術">104166</tofile>
+				<tofile bep_offset="0" lang="ja" title="冠動脈">124720</tofile>
+				<tofile bep_offset="0" lang="ja" title="筋肉">75801</tofile>
+				<tofile bep_offset="0" lang="ja" title="手袋">165241</tofile>
+				<tofile bep_offset="0" lang="ja" title="ショウガ">23795</tofile>
+				<tofile bep_offset="0" lang="ja" title="鳩">15216</tofile>
+				<tofile bep_offset="0" lang="ja" title="太守">143595</tofile>
+				<tofile bep_offset="0" lang="ja" title="儒教">2017</tofile>
+				<tofile bep_offset="0" lang="ja" title="水銀中毒">932534</tofile>
+				<tofile bep_offset="0" lang="ja" title="水飴">85533</tofile>
+				<tofile bep_offset="0" lang="ja" title="楚 (春秋)">69281</tofile>
+				<tofile bep_offset="0" lang="ja" title="伸展葬">115478</tofile>
+				<tofile bep_offset="0" lang="ja" title="屈原">73401</tofile>
+				<tofile bep_offset="0" lang="ja" title="銀">1398812</tofile>
+				<tofile bep_offset="0" lang="ja" title="果実">3719</tofile>
+				<tofile bep_offset="0" lang="ja" title="金星">1636178</tofile>
+				<tofile bep_offset="0" lang="ja" title="紀元前165年">125245</tofile>
+				<tofile bep_offset="0" lang="ja" title="ウシ">18498</tofile>
+				<tofile bep_offset="0" lang="ja" title="豆">25027</tofile>
+				<tofile bep_offset="0" lang="ja" title="梅干し">27277</tofile>
+				<tofile bep_offset="0" lang="ja" title="酒">4602</tofile>
+				<tofile bep_offset="0" lang="ja" title="礼記">59486</tofile>
+				<tofile bep_offset="0" lang="ja" title="孟子">1810</tofile>
+				<tofile bep_offset="0" lang="ja" title="ウメ">27275</tofile>
+				<tofile bep_offset="0" lang="ja" title="ジョーゼット">2271694</tofile>
+				<tofile bep_offset="0" lang="ja" title="房中術">826637</tofile>
+				<tofile bep_offset="0" lang="ja" title="佚書">1696313</tofile>
+				<tofile bep_offset="0" lang="ja" title="武器">16209</tofile>
+				<tofile bep_offset="0" lang="ja" title="紡績">401736</tofile>
+				<tofile bep_offset="0" lang="ja" title="餅">25676</tofile>
+				<tofile bep_offset="0" lang="ja" title="絵画">1435</tofile>
+				<tofile bep_offset="0" lang="ja" title="鶴間和幸">2070494</tofile>
+				<tofile bep_offset="0" lang="ja" title="骨折">117798</tofile>
+				<tofile bep_offset="0" lang="ja" title="老荘思想">53008</tofile>
+				<tofile bep_offset="0" lang="ja" title="青銅器">194442</tofile>
+				<tofile bep_offset="0" lang="ja" title="鍔">591765</tofile>
+				<tofile bep_offset="0" lang="ja" title="諸侯相">1741972</tofile>
+				<tofile bep_offset="0" lang="ja" title="医学">174</tofile>
+				<tofile bep_offset="0" lang="ja" title="華南">215380</tofile>
+				<tofile bep_offset="0" lang="ja" title="笙">204834</tofile>
+				<tofile bep_offset="0" lang="ja" title="医学書の一覧">674602</tofile>
+				<tofile bep_offset="0" lang="ja" title="防腐剤">362415</tofile>
+				<tofile bep_offset="0" lang="ja" title="カオリナイト">114295</tofile>
+				<tofile bep_offset="0" lang="ja" title="山川出版社">153756</tofile>
+				<tofile bep_offset="0" lang="ja" title="サトイモ">28714</tofile>
+				<tofile bep_offset="0" lang="ja" title="朱雀">18078</tofile>
+				<tofile bep_offset="0" lang="ja" title="楚辞">215947</tofile>
+				<tofile bep_offset="0" lang="ja" title="平凡社">40540</tofile>
+				<tofile bep_offset="0" lang="ja" title="住血吸虫症">1602306</tofile>
+				<tofile bep_offset="0" lang="ja" title="呂雉">35094</tofile>
+				<tofile bep_offset="0" lang="ja" title="心臓病">383764</tofile>
+				<tofile bep_offset="0" lang="ja" title="衣類">28138</tofile>
+				<tofile bep_offset="0" lang="ja" title="貨幣">21302</tofile>
+				<tofile bep_offset="0" lang="ja" title="雄山閣">981755</tofile>
+				<tofile bep_offset="0" lang="ja" title="鼎">1319832</tofile>
+				<tofile bep_offset="0" lang="ja" title="訓詁学">235946</tofile>
+				<tofile bep_offset="0" lang="ja" title="出産">563973</tofile>
+				<tofile bep_offset="0" lang="ja" title="斯波義信">388621</tofile>
+				<tofile bep_offset="0" lang="ja" title="鉋">142807</tofile>
+				<tofile bep_offset="0" lang="ja" title="列侯">1386765</tofile>
+				<tofile bep_offset="0" lang="ja" title="版築">760241</tofile>
+				<tofile bep_offset="0" lang="ja" title="竹細工">985455</tofile>
+				<tofile bep_offset="0" lang="ja" title="クリ">2435231</tofile>
+				<tofile bep_offset="0" lang="ja" title="山海経">310115</tofile>
+				<tofile bep_offset="0" lang="ja" title="扶桑">82302</tofile>
+				<tofile bep_offset="0" lang="ja" title="簪">485660</tofile>
+				<tofile bep_offset="0" lang="ja" title="顔料">50541</tofile>
+				<tofile bep_offset="0" lang="ja" title="哲学">110</tofile>
+				<tofile bep_offset="0" lang="ja" title="銅">7988</tofile>
+				<tofile bep_offset="0" lang="ja" title="針">222598</tofile>
+				<tofile bep_offset="0" lang="ja" title="ビスケット">23170</tofile>
+				<tofile bep_offset="0" lang="ja" title="成都市">1867252</tofile>
+				<tofile bep_offset="0" lang="ja" title="フナ">260970</tofile>
+				<tofile bep_offset="0" lang="ja" title="孔子">13959</tofile>
+				<tofile bep_offset="0" lang="ja" title="文字">8639</tofile>
+				<tofile bep_offset="0" lang="ja" title="皮膚">28424</tofile>
+				<tofile bep_offset="0" lang="ja" title="木星">3967</tofile>
+				<tofile bep_offset="0" lang="ja" title="隠公 (魯)">2043189</tofile>
+				<tofile bep_offset="0" lang="ja" title="中国の歴史">9494</tofile>
+				<tofile bep_offset="0" lang="ja" title="周恩来">32083</tofile>
+				<tofile bep_offset="0" lang="ja" title="呉ゼイ">1402134</tofile>
+				<tofile bep_offset="0" lang="ja" title="真正細菌">9596</tofile>
+				<tofile bep_offset="0" lang="ja" title="アオイ科">263125</tofile>
+				<tofile bep_offset="0" lang="ja" title="マツ">25566</tofile>
+				<tofile bep_offset="0" lang="ja" title="冥銭">1082230</tofile>
+				<tofile bep_offset="0" lang="ja" title="もち米">202025</tofile>
+				<tofile bep_offset="0" lang="ja" title="病理解剖">374958</tofile>
+				<tofile bep_offset="0" lang="ja" title="ヒキガエル科">189609</tofile>
+				<tofile bep_offset="0" lang="ja" title="土星">3968</tofile>
+				<tofile bep_offset="0" lang="ja" title="文化">3617</tofile>
+				<tofile bep_offset="0" lang="ja" title="古代の音楽">1532070</tofile>
+				<tofile bep_offset="0" lang="ja" title="紗">821159</tofile>
+				<tofile bep_offset="0" lang="ja" title="病気">8831</tofile>
+				<tofile bep_offset="0" lang="ja" title="関節">269035</tofile>
+				<tofile bep_offset="0" lang="ja" title="政治">3953</tofile>
+				<tofile bep_offset="0" lang="ja" title="結合組織">675616</tofile>
+				<tofile bep_offset="0" lang="ja" title="靴">64830</tofile>
+				<tofile bep_offset="0" lang="ja" title="ウリ">212657</tofile>
+				<tofile bep_offset="0" lang="ja" title="黄帝">17252</tofile>
+				<tofile bep_offset="0" lang="ja" title="日本放送出版協会">2407375</tofile>
+				<tofile bep_offset="0" lang="ja" title="宦官">2067035</tofile>
+				<tofile bep_offset="0" lang="ja" title="1956年">2564</tofile>
+				<tofile bep_offset="0" lang="ja" title="カモ">17656</tofile>
+				<tofile bep_offset="0" lang="ja" title="老子道徳経">304900</tofile>
+				<tofile bep_offset="0" lang="ja" title="公転周期">105135</tofile>
+				<tofile bep_offset="0" lang="ja" title="式占">1145115</tofile>
+				<tofile bep_offset="0" lang="ja" title="宰相">914363</tofile>
+				<tofile bep_offset="0" lang="ja" title="1951年">2561</tofile>
+				<tofile bep_offset="0" lang="ja" title="文学">139</tofile>
+				<tofile bep_offset="0" lang="ja" title="傘">22496</tofile>
+				<tofile bep_offset="0" lang="ja" title="精神科">1157288</tofile>
+				<tofile bep_offset="0" lang="ja" title="天文学">988027</tofile>
+				<tofile bep_offset="0" lang="ja" title="ナツメ">265606</tofile>
+				<tofile bep_offset="0" lang="ja" title="動物">9721</tofile>
+				<tofile bep_offset="0" lang="ja" title="山東省">20415</tofile>
+				<tofile bep_offset="0" lang="ja" title="ヒ素中毒">1654266</tofile>
+				<tofile bep_offset="0" lang="ja" title="三日月">505363</tofile>
+				<tofile bep_offset="0" lang="ja" title="レンコン">27424</tofile>
+				<tofile bep_offset="0" lang="ja" title="恵帝 (漢)">43227</tofile>
+				<tofile bep_offset="0" lang="ja" title="按摩">15785</tofile>
+				<tofile bep_offset="0" lang="ja" title="葬儀">59604</tofile>
+				<tofile bep_offset="0" lang="ja" title="織物">182583</tofile>
+				<tofile bep_offset="0" lang="ja" title="鏡">26577</tofile>
+				<tofile bep_offset="0" lang="ja" title="櫛">365007</tofile>
+				<tofile bep_offset="0" lang="ja" title="1971年">1895692</tofile>
+				<tofile bep_offset="0" lang="ja" title="辰砂">359553</tofile>
+				<tofile bep_offset="0" lang="ja" title="消化器">44262</tofile>
+				<tofile bep_offset="0" lang="ja" title="土器">108652</tofile>
+				<tofile bep_offset="0" lang="ja" title="刷毛">1004918</tofile>
+				<tofile bep_offset="0" lang="ja" title="ゲイ (中国神話)">394063</tofile>
+				<tofile bep_offset="0" lang="ja" title="釘">96247</tofile>
+				<tofile bep_offset="0" lang="ja" title="盗掘">252576</tofile>
+				<tofile bep_offset="0" lang="ja" title="瀟水">1786981</tofile>
+				<tofile bep_offset="0" lang="ja" title="人形">15361</tofile>
+				<tofile bep_offset="0" lang="ja" title="刺繍">26819</tofile>
+				<tofile bep_offset="0" lang="ja" title="四神">1120285</tofile>
+				<tofile bep_offset="0" lang="ja" title="お守り">286184</tofile>
+				<tofile bep_offset="0" lang="ja" title="墓">30579</tofile>
+				<tofile bep_offset="0" lang="ja" title="ブタ">1931329</tofile>
+				<tofile bep_offset="0" lang="ja" title="魯">40056</tofile>
+				<tofile bep_offset="0" lang="ja" title="音楽史">17771</tofile>
+				<tofile bep_offset="0" lang="ja" title="真綿">715376</tofile>
+				<tofile bep_offset="0" lang="ja" title="竜">14121</tofile>
+				<tofile bep_offset="0" lang="ja" title="キビ">400232</tofile>
+				<tofile bep_offset="0" lang="ja" title="アズキ">23149</tofile>
+				<tofile bep_offset="0" lang="ja" title="毛抜き">481328</tofile>
+				<tofile bep_offset="0" lang="ja" title="骨格">114706</tofile>
+				<tofile bep_offset="0" lang="ja" title="琴">47365</tofile>
+				<tofile bep_offset="0" lang="ja" title="音韻学">193762</tofile>
+				<tofile bep_offset="0" lang="ja" title="漢書">58137</tofile>
+				<tofile bep_offset="0" lang="ja" title="椎間板ヘルニア">991418</tofile>
+				<tofile bep_offset="0" lang="ja" title="大麻">1828132</tofile>
+				<tofile bep_offset="0" lang="ja" title="子思">17084</tofile>
+				<tofile bep_offset="0" lang="ja" title="矢">40837</tofile>
+				<tofile bep_offset="0" lang="ja" title="初元">213618</tofile>
+				<tofile bep_offset="0" lang="ja" title="銅鏡">536466</tofile>
+				<tofile bep_offset="0" lang="ja" title="紀元前196年">68359</tofile>
+				<tofile bep_offset="0" lang="ja" title="国史">497300</tofile>
+				<tofile bep_offset="0" lang="ja" title="篆書体">17607</tofile>
+				<tofile bep_offset="0" lang="ja" title="国語 (歴史書)">271141</tofile>
+				<tofile bep_offset="0" lang="ja" title="ウサギ">1396</tofile>
+				<tofile bep_offset="0" lang="ja" title="飴">22327</tofile>
+				<tofile bep_offset="0" lang="ja" title="歯">34477</tofile>
+				<tofile bep_offset="0" lang="ja" title="史記">2746</tofile>
+				<tofile bep_offset="0" lang="ja" title="竹簡">125823</tofile>
+				<tofile bep_offset="0" lang="ja" title="春秋時代">23856</tofile>
+				<tofile bep_offset="0" lang="ja" title="キジ">1869899</tofile>
+				<tofile bep_offset="0" lang="ja" title="楽器">7943</tofile>
+				<tofile bep_offset="0" lang="ja" title="フクロウ">1980136</tofile>
+				<tofile bep_offset="0" lang="ja" title="スズメ">76381</tofile>
+				<tofile bep_offset="0" lang="ja" title="占星術">3534</tofile>
+				<tofile bep_offset="0" lang="ja" title="フランネル">1826337</tofile>
+				<tofile bep_offset="0" lang="ja" title="イネ">7807</tofile>
+				<tofile bep_offset="0" lang="ja" title="アズサ">171193</tofile>
+				<tofile bep_offset="0" lang="ja" title="鑿">857933</tofile>
+				<tofile bep_offset="0" lang="ja" title="紀元前177年">89948</tofile>
+				<tofile bep_offset="0" lang="ja" title="十二律">311948</tofile>
+				<tofile bep_offset="0" lang="ja" title="馬殷">931756</tofile>
+				<tofile bep_offset="0" lang="ja" title="講談社">7688</tofile>
+				<tofile bep_offset="0" lang="ja" title="燻蒸">2059328</tofile>
+				<tofile bep_offset="0" lang="ja" title="スミレ">86798</tofile>
+				<tofile bep_offset="0" lang="ja" title="塩">255539</tofile>
+				<tofile bep_offset="0" lang="ja" title="瀉血">251359</tofile>
+				<tofile bep_offset="0" lang="ja" title="脂肪">24209</tofile>
+				<tofile bep_offset="0" lang="ja" title="軟骨">332273</tofile>
+				<tofile bep_offset="0" lang="ja" title="編年体">157271</tofile>
+				<tofile bep_offset="0" lang="ja" title="胆石">354496</tofile>
+				<tofile bep_offset="0" lang="ja" title="漆">73540</tofile>
+				<tofile bep_offset="0" lang="ja" title="平織り">185649</tofile>
+				<tofile bep_offset="0" lang="ja" title="百度百科">541516</tofile>
+				<tofile bep_offset="0" lang="ja" title="食品">24201</tofile>
+				<tofile bep_offset="0" lang="ja" title="肥満">113263</tofile>
+				<tofile bep_offset="0" lang="ja" title="鉛中毒">1037333</tofile>
+				<tofile bep_offset="0" lang="ja" title="歴史学">533961</tofile>
+				<tofile bep_offset="0" lang="ja" title="矛">42579</tofile>
+				<tofile bep_offset="0" lang="ja" title="足袋">73754</tofile>
+				<tofile bep_offset="0" lang="ja" title="綺">904047</tofile>
+				<tofile bep_offset="0" lang="ja" title="麺">21975</tofile>
+				<tofile bep_offset="0" lang="ja" title="脳">7692</tofile>
+				<tofile bep_offset="0" lang="ja" title="感覚器">79296</tofile>
+				<tofile bep_offset="0" lang="ja" title="副葬品">1789258</tofile>
+				<tofile bep_offset="0" lang="ja" title="利蒼">2302827</tofile>
+				<tofile bep_offset="0" lang="ja" title="甘徳">706365</tofile>
+				<tofile bep_offset="0" lang="ja" title="アサ">497051</tofile>
+				<tofile bep_offset="0" lang="ja" title="頭髪">338577</tofile>
+				<tofile bep_offset="0" lang="ja" title="霊魂">54539</tofile>
+				<tofile bep_offset="0" lang="ja" title="めっき">17157</tofile>
+				<tofile bep_offset="0" lang="ja" title="穀物">3124</tofile>
+				<tofile bep_offset="0" lang="ja" title="雁">18285</tofile>
+				<tofile bep_offset="0" lang="ja" title="米">7516</tofile>
+				<tofile bep_offset="0" lang="ja" title="紀元前186年">183217</tofile>
+				<tofile bep_offset="0" lang="ja" title="五代十国時代">13570</tofile>
+				<tofile bep_offset="0" lang="ja" title="璧">2261987</tofile>
+				<tofile bep_offset="0" lang="ja" title="鉱物">22995</tofile>
+				<tofile bep_offset="0" lang="ja" title="枕">2764</tofile>
+				<tofile bep_offset="0" lang="ja" title="隷書体">67901</tofile>
+				<tofile bep_offset="0" lang="ja" title="ニワトリ">26284</tofile>
+				<tofile bep_offset="0" lang="ja" title="カラムシ">423388</tofile>
+				<tofile bep_offset="0" lang="ja" title="調理">3028</tofile>
+				<tofile bep_offset="0" lang="ja" title="ナシ">3316</tofile>
+				<tofile bep_offset="0" lang="ja" title="マクワウリ">210248</tofile>
+				<tofile bep_offset="0" lang="ja" title="蜂蜜">92597</tofile>
+				<tofile bep_offset="0" lang="ja" title="木器">1584123</tofile>
+				<tofile bep_offset="0" lang="ja" title="ヤマモモ">89259</tofile>
+				<tofile bep_offset="0" lang="ja" title="紀元前246年">23589</tofile>
+				<tofile bep_offset="0" lang="ja" title="科学">5964</tofile>
+				<tofile bep_offset="0" lang="ja" title="創文社">473524</tofile>
+				<tofile bep_offset="0" lang="ja" title="音楽">99</tofile>
+				<tofile bep_offset="0" lang="ja" title="戦争">1508</tofile>
+				<tofile bep_offset="0" lang="ja" title="モモ">42860</tofile>
+				<tofile bep_offset="0" lang="ja" title="死体">34368</tofile>
+				<tofile bep_offset="0" lang="ja" title="ヒツジ">9619</tofile>
+				<tofile bep_offset="0" lang="ja" title="血管">46906</tofile>
+				<tofile bep_offset="0" lang="ja" title="織機">862056</tofile>
+				<tofile bep_offset="0" lang="ja" title="淮南子">194997</tofile>
+				<tofile bep_offset="0" lang="ja" title="器官">39458</tofile>
+				<tofile bep_offset="0" lang="ja" title="神話学">1377621</tofile>
+				<tofile bep_offset="0" lang="ja" title="1972年">1922</tofile>
+				<tofile bep_offset="0" lang="ja" title="コイ">7429</tofile>
+				<tofile bep_offset="0" lang="ja" title="帛">1145344</tofile>
+				<tofile bep_offset="0" lang="ja" title="考古学">1118</tofile>
+				<tofile bep_offset="0" lang="ja" title="彗星">1398</tofile>
+				<tofile bep_offset="0" lang="ja" title="王弼">1851206</tofile>
+				<tofile bep_offset="0" lang="ja" title="戈">288297</tofile>
+				<tofile bep_offset="0" lang="ja" title="五星">1460188</tofile>
+				<tofile bep_offset="0" lang="ja" title="鍼灸">339399</tofile>
+				<tofile bep_offset="0" lang="ja" title="薬草">349382</tofile>
+				<tofile bep_offset="0" lang="ja" title="調味料">3123</tofile>
+				<tofile bep_offset="0" lang="ja" title="香料">140023</tofile>
+				<tofile bep_offset="0" lang="ja" title="野菜">2915</tofile>
+				<tofile bep_offset="0" lang="ja" title="おしろい">783897</tofile>
+				<tofile bep_offset="0" lang="ja" title="侍女">366985</tofile>
+				<tofile bep_offset="0" lang="ja" title="農学">1763</tofile>
+				<tofile bep_offset="0" lang="ja" title="髢">890241</tofile>
+				<tofile bep_offset="0" lang="ja" title="仙人">98369</tofile>
+				<tofile bep_offset="0" lang="ja" title="黄帝内経">343646</tofile>
+				<tofile bep_offset="0" lang="ja" title="染色">78183</tofile>
+				<tofile bep_offset="0" lang="ja" title="思想">72979</tofile>
+				<tofile bep_offset="0" lang="ja" title="ヒョウ">37143</tofile>
+				<tofile bep_offset="0" lang="ja" title="印章">200134</tofile>
+				<tofile bep_offset="0" lang="ja" title="発酵">14439</tofile>
+				<tofile bep_offset="0" lang="ja" title="庶民">195928</tofile>
+				<tofile bep_offset="0" lang="ja" title="前漢">14068</tofile>
+				<tofile bep_offset="0" lang="ja" title="中国科学院">1292860</tofile>
+				<tofile bep_offset="0" lang="ja" title="伊尹">62632</tofile>
+				<tofile bep_offset="0" lang="ja" title="縦横家">16301</tofile>
+				<tofile bep_offset="0" lang="ja" title="ハンカチ">11569</tofile>
+				<tofile bep_offset="0" lang="ja" title="論創社">869111</tofile>
+				<tofile bep_offset="0" lang="ja" title="風呂敷">432179</tofile>
+				<tofile bep_offset="0" lang="ja" title="陳舜臣">55299</tofile>
+				<tofile bep_offset="0" lang="ja" title="蘇秦">69389</tofile>
+				<tofile bep_offset="0" lang="ja" title="寄生虫病">1459334</tofile>
+				<tofile bep_offset="0" lang="ja" title="気象">15961</tofile>
+				<tofile bep_offset="0" lang="ja" title="晋 (春秋)">41780</tofile>
+				<tofile bep_offset="0" lang="ja" title="紀元前180年">23602</tofile>
+				<tofile bep_offset="0" lang="ja" title="トラ">29172</tofile>
+				<tofile bep_offset="0" lang="ja" title="鋸">1945957</tofile>
+				<tofile bep_offset="0" lang="ja" title="濱下武志">161201</tofile>
+				<tofile bep_offset="0" lang="ja" title="六芸">47818</tofile>
+				<tofile bep_offset="0" lang="ja" title="戦国時代 (中国)">37029</tofile>
+				<tofile bep_offset="0" lang="ja" title="中国社会科学院">225761</tofile>
+				<tofile bep_offset="0" lang="ja" title="セミ">25384</tofile>
+				<tofile bep_offset="0" lang="ja" title="斧">42561</tofile>
+				<tofile bep_offset="0" lang="ja" title="入浴">221535</tofile>
+				<tofile bep_offset="0" lang="ja" title="食事">1950</tofile>
+				<tofile bep_offset="0" lang="ja" title="剣">33926</tofile>
+				<tofile bep_offset="0" lang="ja" title="コムギ">8797</tofile>
+				<tofile bep_offset="0" lang="ja" title="呉氏長沙国">1978914</tofile>
+				<tofile bep_offset="0" lang="ja" title="太陽">544666</tofile>
+				<tofile bep_offset="0" lang="ja" title="軍事">15994</tofile>
+				<tofile bep_offset="0" lang="ja" title="履物">164714</tofile>
+				<tofile bep_offset="0" lang="ja" title="脂肪組織">271171</tofile>
+				<tofile bep_offset="0" lang="ja" title="ニラ">145464</tofile>
+				<tofile bep_offset="0" lang="ja" title="胆嚢">277340</tofile>
+				<tofile bep_offset="0" lang="ja" title="麹">27636</tofile>
+				<tofile bep_offset="0" lang="ja" title="三国時代 (中国)">135856</tofile>
+				<tofile bep_offset="0" lang="ja" title="劉邦">30021</tofile>
+				<tofile bep_offset="0" lang="ja" title="報道機関">53580</tofile>
+				<tofile bep_offset="0" lang="ja" title="手術">112993</tofile>
+				<tofile bep_offset="0" lang="ja" title="イヌ">1337121</tofile>
+				<tofile bep_offset="0" lang="ja" title="インディカ種">2256427</tofile>
+				<tofile bep_offset="0" lang="ja" title="ダイズ">14468</tofile>
+				<tofile bep_offset="0" lang="ja" title="楚 (十国)">131732</tofile>
+				<tofile bep_offset="0" lang="ja" title="春秋">39946</tofile>
+				<tofile bep_offset="0" lang="ja" title="スズ">8274</tofile>
+				<tofile bep_offset="0" lang="ja" title="金貨">6913</tofile>
+				<tofile bep_offset="0" lang="ja" title="ジャポニカ種">2256425</tofile>
+				<tofile bep_offset="0" lang="ja" title="サル">80755</tofile>
+				<tofile bep_offset="0" lang="ja" title="紀元前2世紀">11884</tofile>
+				<tofile bep_offset="0" lang="ja" title="酢">4914</tofile>
+				<tofile bep_offset="0" lang="ja" title="胃">24373</tofile>
+				<tofile bep_offset="0" lang="ja" title="ツル">329900</tofile>
+				<tofile bep_offset="0" lang="ja" title="夏">15825</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="249299" name="Zhu Bajie"> 
+		<outgoing>
+			<anchor offset="290" length="9" name="Zhu Bajie">
+				<tofile bep_offset="0" lang="ja" title="孫悟空">5269</tofile>
+				<tofile bep_offset="0" lang="ja" title="阿羅漢">12683</tofile>
+				<tofile bep_offset="0" lang="ja" title="仏陀">4205</tofile>
+				<tofile bep_offset="0" lang="ja" title="悟り">8732</tofile>
+				<tofile bep_offset="0" lang="ja" title="観音菩薩">3739</tofile>
+				<tofile bep_offset="0" lang="ja" title="英語">3377</tofile>
+				<tofile bep_offset="0" lang="ja" title="イノシシ属">2199692</tofile>
+				<tofile bep_offset="0" lang="ja" title="嫦娥">1287202</tofile>
+				<tofile bep_offset="0" lang="ja" title="錬丹術">104166</tofile>
+				<tofile bep_offset="0" lang="ja" title="沙悟浄">6051</tofile>
+				<tofile bep_offset="0" lang="ja" title="熊手">380197</tofile>
+				<tofile bep_offset="0" lang="ja" title="人間">3041</tofile>
+				<tofile bep_offset="0" lang="ja" title="玉皇大帝">1827166</tofile>
+				<tofile bep_offset="0" lang="ja" title="西遊記">5329</tofile>
+				<tofile bep_offset="0" lang="ja" title="菩薩">11619</tofile>
+				<tofile bep_offset="0" lang="ja" title="通称">101970</tofile>
+				<tofile bep_offset="0" lang="ja" title="仏教">4182</tofile>
+				<tofile bep_offset="0" lang="ja" title="妖怪">56299</tofile>
+				<tofile bep_offset="0" lang="ja" title="弓館小鰐">1104369</tofile>
+				<tofile bep_offset="0" lang="ja" title="四大奇書">18148</tofile>
+				<tofile bep_offset="0" lang="ja" title="元 (王朝)">13713</tofile>
+				<tofile bep_offset="0" lang="ja" title="ことわざ">108613</tofile>
+				<tofile bep_offset="0" lang="ja" title="天竺">35252</tofile>
+				<tofile bep_offset="0" lang="ja" title="馬鹿">28006</tofile>
+				<tofile bep_offset="0" lang="ja" title="梅山豚">1333213</tofile>
+				<tofile bep_offset="0" lang="ja" title="太上老君">14228</tofile>
+				<tofile bep_offset="0" lang="ja" title="摩利支天">133766</tofile>
+				<tofile bep_offset="0" lang="ja" title="玄奘三蔵">718071</tofile>
+				<tofile bep_offset="0" lang="ja" title="明">8581</tofile>
+				<tofile bep_offset="0" lang="ja" title="ブタ">1931329</tofile>
+				<tofile bep_offset="0" lang="ja" title="八斎戒">307951</tofile>
+				<tofile bep_offset="0" lang="ja" title="小説">4295</tofile>
+				<tofile bep_offset="0" lang="ja" title="僧">12907</tofile>
+				<tofile bep_offset="0" lang="ja" title="皇帝">11662</tofile>
+				<tofile bep_offset="0" lang="ja" title="イノシシ">61393</tofile>
+				<tofile bep_offset="0" lang="ja" title="雑劇">347316</tofile>
+				<tofile bep_offset="0" lang="ja" title="経典">12846</tofile>
+				<tofile bep_offset="0" lang="ja" title="女犯">23847</tofile>
+				<tofile bep_offset="0" lang="ja" title="キャラクター">8630</tofile>
+				<tofile bep_offset="0" lang="ja" title="1677年">4835</tofile>
+				<tofile bep_offset="0" lang="ja" title="天の川">3955</tofile>
+				<tofile bep_offset="0" lang="ja" title="中国">270031</tofile>
+				<tofile bep_offset="0" lang="ja" title="日本">1864744</tofile>
+				<tofile bep_offset="0" lang="ja" title="1858年">11882</tofile>
+				<tofile bep_offset="0" lang="ja" title="1931年">2536</tofile>
+				<tofile bep_offset="0" lang="ja" title="農具">83759</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="4898073" name="Crown Prince Sado"> 
+		<outgoing>
+			<anchor offset="290" length="17" name="Crown Prince Sado">
+				<tofile bep_offset="0" lang="ja" title="華城 (世界遺産)">107839</tofile>
+				<tofile bep_offset="0" lang="ja" title="水原市">43233</tofile>
+				<tofile bep_offset="0" lang="ja" title="精神疾患">45857</tofile>
+				<tofile bep_offset="0" lang="ja" title="正祖">698130</tofile>
+				<tofile bep_offset="0" lang="ja" title="朝鮮">253731</tofile>
+				<tofile bep_offset="0" lang="ja" title="英祖 (朝鮮王)">1070883</tofile>
+				<tofile bep_offset="0" lang="ja" title="君主">11923</tofile>
+				<tofile bep_offset="0" lang="ja" title="恵慶宮洪氏">1191508</tofile>
+				<tofile bep_offset="0" lang="ja" title="1899年">4204</tofile>
+				<tofile bep_offset="0" lang="ja" title="廟号">59697</tofile>
+				<tofile bep_offset="0" lang="ja" title="乾隆">62498</tofile>
+				<tofile bep_offset="0" lang="ja" title="諡">34342</tofile>
+				<tofile bep_offset="0" lang="ja" title="イ・サン">1440536</tofile>
+				<tofile bep_offset="0" lang="ja" title="1735年">8943</tofile>
+				<tofile bep_offset="0" lang="ja" title="2月13日">1788</tofile>
+				<tofile bep_offset="0" lang="ja" title="少論派">1850872</tofile>
+				<tofile bep_offset="0" lang="ja" title="恩彦君">1307306</tofile>
+				<tofile bep_offset="0" lang="ja" title="李氏朝鮮">5260</tofile>
+				<tofile bep_offset="0" lang="ja" title="1749年">4821</tofile>
+				<tofile bep_offset="0" lang="ja" title="東大門区">657764</tofile>
+				<tofile bep_offset="0" lang="ja" title="1777年">4784</tofile>
+				<tofile bep_offset="0" lang="ja" title="雍正">62480</tofile>
+				<tofile bep_offset="0" lang="ja" title="1762年">4780</tofile>
+				<tofile bep_offset="0" lang="ja" title="ソウル特別市">255677</tofile>
+				<tofile bep_offset="0" lang="ja" title="5月21日 (旧暦)">66524</tofile>
+				<tofile bep_offset="0" lang="ja" title="士禍">95768</tofile>
+				<tofile bep_offset="0" lang="ja" title="8月12日">5623</tofile>
+				<tofile bep_offset="0" lang="ja" title="老論派">1840518</tofile>
+				<tofile bep_offset="0" lang="ja" title="高宗 (朝鮮王)">124078</tofile>
+				<tofile bep_offset="0" lang="ja" title="大河ドラマ">11281</tofile>
+				<tofile bep_offset="0" lang="ja" title="世子">390350</tofile>
+				<tofile bep_offset="0" lang="ja" title="1月21日 (旧暦)">63780</tofile>
+				<tofile bep_offset="0" lang="ja" title="貞純王后">1339683</tofile>
+				<tofile bep_offset="0" lang="ja" title="米櫃">2068889</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="961283" name="Tieguanyin"> 
+		<outgoing>
+			<anchor offset="290" length="10" name="Tieguanyin">
+				<tofile bep_offset="0" lang="ja" title="乾隆帝">62494</tofile>
+				<tofile bep_offset="0" lang="ja" title="普陀山">1809080</tofile>
+				<tofile bep_offset="0" lang="ja" title="安渓県">1582345</tofile>
+				<tofile bep_offset="0" lang="ja" title="聖観音">123336</tofile>
+				<tofile bep_offset="0" lang="ja" title="烏龍茶">134878</tofile>
+				<tofile bep_offset="0" lang="ja" title="南投">1966002</tofile>
+				<tofile bep_offset="0" lang="ja" title="台湾">882663</tofile>
+				<tofile bep_offset="0" lang="ja" title="観音菩薩">3739</tofile>
+				<tofile bep_offset="0" lang="ja" title="中華人民共和国">1903</tofile>
+				<tofile bep_offset="0" lang="ja" title="福建省">24784</tofile>
+				<tofile bep_offset="0" lang="ja" title="浙江省">54433</tofile>
+				<tofile bep_offset="0" lang="ja" title="緑茶">18602</tofile>
+				<tofile bep_offset="0" lang="ja" title="20世紀">1477</tofile>
+				<tofile bep_offset="0" lang="ja" title="油">27628</tofile>
+				<tofile bep_offset="0" lang="ja" title="挿し木">40212</tofile>
+				<tofile bep_offset="0" lang="ja" title="発酵">14439</tofile>
+				<tofile bep_offset="0" lang="ja" title="広東省">25826</tofile>
+				<tofile bep_offset="0" lang="ja" title="柑橘類">3190</tofile>
+				<tofile bep_offset="0" lang="ja" title="モモ">42860</tofile>
+				<tofile bep_offset="0" lang="ja" title="清涼飲料水">32033</tofile>
+				<tofile bep_offset="0" lang="ja" title="便秘">204851</tofile>
+				<tofile bep_offset="0" lang="ja" title="酵素">7781</tofile>
+				<tofile bep_offset="0" lang="ja" title="中国茶">256726</tofile>
+				<tofile bep_offset="0" lang="ja" title="金色">177245</tofile>
+				<tofile bep_offset="0" lang="ja" title="ラン科">203736</tofile>
+				<tofile bep_offset="0" lang="ja" title="チャノキ">156407</tofile>
+				<tofile bep_offset="0" lang="ja" title="伊藤園">166206</tofile>
+				<tofile bep_offset="0" lang="ja" title="文山区">584752</tofile>
+				<tofile bep_offset="0" lang="ja" title="アプリコット (色)">2033495</tofile>
+				<tofile bep_offset="0" lang="ja" title="キンモクセイ">90548</tofile>
+				<tofile bep_offset="0" lang="ja" title="日本">1864744</tofile>
+				<tofile bep_offset="0" lang="ja" title="光緒帝">63287</tofile>
+				<tofile bep_offset="0" lang="ja" title="木部 (部首)">772945</tofile>
+				<tofile bep_offset="0" lang="ja" title="鉄">7090</tofile>
+				<tofile bep_offset="0" lang="ja" title="オレンジ色">236400</tofile>
+				<tofile bep_offset="0" lang="ja" title="冷え性">1600480</tofile>
+				<tofile bep_offset="0" lang="ja" title="1980年代">902</tofile>
+				<tofile bep_offset="0" lang="ja" title="台北市">20964</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="279684" name="Chef"> 
+		<outgoing>
+			<anchor offset="290" length="4" name="Chef">
+				<tofile bep_offset="0" lang="ja" title="野菜">2915</tofile>
+				<tofile bep_offset="0" lang="ja" title="アントレ">376780</tofile>
+				<tofile bep_offset="0" lang="ja" title="食堂">117164</tofile>
+				<tofile bep_offset="0" lang="ja" title="蒸し煮">2251461</tofile>
+				<tofile bep_offset="0" lang="ja" title="食肉">175712</tofile>
+				<tofile bep_offset="0" lang="ja" title="パテ (料理)">1559949</tofile>
+				<tofile bep_offset="0" lang="ja" title="ビスケット">23170</tofile>
+				<tofile bep_offset="0" lang="ja" title="パティシエ">177081</tofile>
+				<tofile bep_offset="0" lang="ja" title="英語">3377</tofile>
+				<tofile bep_offset="0" lang="ja" title="メキシコ">2878</tofile>
+				<tofile bep_offset="0" lang="ja" title="フライ (料理)">1233632</tofile>
+				<tofile bep_offset="0" lang="ja" title="アントナン・カレーム">736763</tofile>
+				<tofile bep_offset="0" lang="ja" title="サラダ">25276</tofile>
+				<tofile bep_offset="0" lang="ja" title="同根語">1042820</tofile>
+				<tofile bep_offset="0" lang="ja" title="精肉店">1759665</tofile>
+				<tofile bep_offset="0" lang="ja" title="マカロン">202308</tofile>
+				<tofile bep_offset="0" lang="ja" title="北京ダック">46243</tofile>
+				<tofile bep_offset="0" lang="ja" title="台所">23781</tofile>
+				<tofile bep_offset="0" lang="ja" title="家禽">80576</tofile>
+				<tofile bep_offset="0" lang="ja" title="人民">66527</tofile>
+				<tofile bep_offset="0" lang="ja" title="フランス語">90</tofile>
+				<tofile bep_offset="0" lang="ja" title="オーギュスト・エスコフィエ">831762</tofile>
+				<tofile bep_offset="0" lang="ja" title="チョコレート">1684664</tofile>
+				<tofile bep_offset="0" lang="ja" title="ソース (調味料)">30068</tofile>
+				<tofile bep_offset="0" lang="ja" title="オードブル">34129</tofile>
+				<tofile bep_offset="0" lang="ja" title="ソテー">1078864</tofile>
+				<tofile bep_offset="0" lang="ja" title="グリル">2232563</tofile>
+				<tofile bep_offset="0" lang="ja" title="タンドール">1174843</tofile>
+				<tofile bep_offset="0" lang="ja" title="ラテン語">6932</tofile>
+				<tofile bep_offset="0" lang="ja" title="ブリゲード・ド・キュイジーヌ">1576676</tofile>
+				<tofile bep_offset="0" lang="ja" title="魚類">3063</tofile>
+				<tofile bep_offset="0" lang="ja" title="デザート">27685</tofile>
+				<tofile bep_offset="0" lang="ja" title="菓子">22324</tofile>
+				<tofile bep_offset="0" lang="ja" title="日本軍と自衛隊の階級">1586078</tofile>
+				<tofile bep_offset="0" lang="ja" title="給食">64052</tofile>
+				<tofile bep_offset="0" lang="ja" title="船舶料理士">314242</tofile>
+				<tofile bep_offset="0" lang="ja" title="旧制中学校">177746</tofile>
+				<tofile bep_offset="0" lang="ja" title="中学校">4753</tofile>
+				<tofile bep_offset="0" lang="ja" title="病院">24320</tofile>
+				<tofile bep_offset="0" lang="ja" title="揚げる">85776</tofile>
+				<tofile bep_offset="0" lang="ja" title="食中毒">1889066</tofile>
+				<tofile bep_offset="0" lang="ja" title="製菓衛生師">196835</tofile>
+				<tofile bep_offset="0" lang="ja" title="地方公共団体">98788</tofile>
+				<tofile bep_offset="0" lang="ja" title="専門調理師・調理技能士">419140</tofile>
+				<tofile bep_offset="0" lang="ja" title="栄養士">1301207</tofile>
+				<tofile bep_offset="0" lang="ja" title="服部幸應">628738</tofile>
+				<tofile bep_offset="0" lang="ja" title="調理師法">397698</tofile>
+				<tofile bep_offset="0" lang="ja" title="飲食店">156819</tofile>
+				<tofile bep_offset="0" lang="ja" title="パイ">179020</tofile>
+				<tofile bep_offset="0" lang="ja" title="保健所">55659</tofile>
+				<tofile bep_offset="0" lang="ja" title="コック">591739</tofile>
+				<tofile bep_offset="0" lang="ja" title="ヨーロッパ">32</tofile>
+				<tofile bep_offset="0" lang="ja" title="ふぐ調理師">425991</tofile>
+				<tofile bep_offset="0" lang="ja" title="管理栄養士">245871</tofile>
+				<tofile bep_offset="0" lang="ja" title="フグ">18539</tofile>
+				<tofile bep_offset="0" lang="ja" title="医師">23675</tofile>
+				<tofile bep_offset="0" lang="ja" title="旅館">214006</tofile>
+				<tofile bep_offset="0" lang="ja" title="学校">1420036</tofile>
+				<tofile bep_offset="0" lang="ja" title="寮">520531</tofile>
+				<tofile bep_offset="0" lang="ja" title="厚生労働大臣">217402</tofile>
+				<tofile bep_offset="0" lang="ja" title="ペイストリー">1932916</tofile>
+				<tofile bep_offset="0" lang="ja" title="食品衛生責任者">205793</tofile>
+				<tofile bep_offset="0" lang="ja" title="日本料理">5388</tofile>
+				<tofile bep_offset="0" lang="ja" title="船">59532</tofile>
+				<tofile bep_offset="0" lang="ja" title="都道府県知事">49794</tofile>
+				<tofile bep_offset="0" lang="ja" title="厚生労働省">3416</tofile>
+				<tofile bep_offset="0" lang="ja" title="アメリカ州">5963</tofile>
+				<tofile bep_offset="0" lang="ja" title="メッシュ">45942</tofile>
+				<tofile bep_offset="0" lang="ja" title="板前">502401</tofile>
+				<tofile bep_offset="0" lang="ja" title="衛生">29973</tofile>
+				<tofile bep_offset="0" lang="ja" title="簡易宿所">359856</tofile>
+				<tofile bep_offset="0" lang="ja" title="小学校">1331823</tofile>
+				<tofile bep_offset="0" lang="ja" title="パン">21799</tofile>
+				<tofile bep_offset="0" lang="ja" title="国民学校">88972</tofile>
+				<tofile bep_offset="0" lang="ja" title="タルト (洋菓子)">138737</tofile>
+				<tofile bep_offset="0" lang="ja" title="安全靴">332182</tofile>
+				<tofile bep_offset="0" lang="ja" title="大日本帝国海軍">35915</tofile>
+				<tofile bep_offset="0" lang="ja" title="養成施設">1160413</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="6326659" name="Japanese giant salamander"> 
+		<outgoing>
+			<anchor offset="290" length="25" name="Japanese giant salamander">
+				<tofile bep_offset="0" lang="ja" title="浮世絵">12688</tofile>
+				<tofile bep_offset="0" lang="ja" title="側線">56650</tofile>
+				<tofile bep_offset="0" lang="ja" title="えら">202584</tofile>
+				<tofile bep_offset="0" lang="ja" title="武士">15894</tofile>
+				<tofile bep_offset="0" lang="ja" title="チュウゴクオオサンショウウオ">1559830</tofile>
+				<tofile bep_offset="0" lang="ja" title="フィリップ・フランツ・フォン・シーボルト">30365</tofile>
+				<tofile bep_offset="0" lang="ja" title="準絶滅危惧">2395790</tofile>
+				<tofile bep_offset="0" lang="ja" title="オランダ">1698820</tofile>
+				<tofile bep_offset="0" lang="ja" title="本州">6021</tofile>
+				<tofile bep_offset="0" lang="ja" title="出島">32862</tofile>
+				<tofile bep_offset="0" lang="ja" title="卵">22962</tofile>
+				<tofile bep_offset="0" lang="ja" title="代謝">301543</tofile>
+				<tofile bep_offset="0" lang="ja" title="有尾目">502000</tofile>
+				<tofile bep_offset="0" lang="ja" title="国際自然保護連合">117354</tofile>
+				<tofile bep_offset="0" lang="ja" title="歌川国芳">161762</tofile>
+				<tofile bep_offset="0" lang="ja" title="夜行性">477280</tofile>
+				<tofile bep_offset="0" lang="ja" title="固有種">187185</tofile>
+				<tofile bep_offset="0" lang="ja" title="シルト">188829</tofile>
+				<tofile bep_offset="0" lang="ja" title="渓流">816176</tofile>
+				<tofile bep_offset="0" lang="ja" title="絶滅のおそれのある野生動植物の種の国際取引に関する条約">24875</tofile>
+				<tofile bep_offset="0" lang="ja" title="サンショウウオ科">1635526</tofile>
+				<tofile bep_offset="0" lang="ja" title="四国">6108</tofile>
+				<tofile bep_offset="0" lang="ja" title="日本">1864744</tofile>
+				<tofile bep_offset="0" lang="ja" title="九州">6106</tofile>
+				<tofile bep_offset="0" lang="ja" title="酸素">7369</tofile>
+				<tofile bep_offset="0" lang="ja" title="ライデン">653092</tofile>
+				<tofile bep_offset="0" lang="ja" title="甲殻類">38502</tofile>
+				<tofile bep_offset="0" lang="ja" title="山椒魚 (小説)">493680</tofile>
+				<tofile bep_offset="0" lang="ja" title="両生類">4492</tofile>
+				<tofile bep_offset="0" lang="ja" title="交雑">81978</tofile>
+				<tofile bep_offset="0" lang="ja" title="カレル・チャペック">132560</tofile>
+				<tofile bep_offset="0" lang="ja" title="カエル">27602</tofile>
+				<tofile bep_offset="0" lang="ja" title="中和村 (岡山県)">222257</tofile>
+				<tofile bep_offset="0" lang="ja" title="コンラート・ヤコブ・テミンク">1093884</tofile>
+				<tofile bep_offset="0" lang="ja" title="岐阜県">387</tofile>
+				<tofile bep_offset="0" lang="ja" title="井伏鱒二">19699</tofile>
+				<tofile bep_offset="0" lang="ja" title="希少野生動植物種">1064808</tofile>
+				<tofile bep_offset="0" lang="ja" title="1836年">5131</tofile>
+				<tofile bep_offset="0" lang="ja" title="絶滅のおそれのある野生動植物の種の保存に関する法律">191836</tofile>
+				<tofile bep_offset="0" lang="ja" title="出石川">326667</tofile>
+				<tofile bep_offset="0" lang="ja" title="大分県">372</tofile>
+				<tofile bep_offset="0" lang="ja" title="共食い">705027</tofile>
+				<tofile bep_offset="0" lang="ja" title="白土三平">2328</tofile>
+				<tofile bep_offset="0" lang="ja" title="三重県">1378874</tofile>
+				<tofile bep_offset="0" lang="ja" title="真庭市">213946</tofile>
+				<tofile bep_offset="0" lang="ja" title="岡山県">377</tofile>
+				<tofile bep_offset="0" lang="ja" title="八束村 (岡山県)">45622</tofile>
+				<tofile bep_offset="0" lang="ja" title="和良村">61747</tofile>
+				<tofile bep_offset="0" lang="ja" title="湯布院町">198951</tofile>
+				<tofile bep_offset="0" lang="ja" title="貝類">27495</tofile>
+				<tofile bep_offset="0" lang="ja" title="1952年">2562</tofile>
+				<tofile bep_offset="0" lang="ja" title="1951年">2561</tofile>
+				<tofile bep_offset="0" lang="ja" title="北大路魯山人">2446193</tofile>
+				<tofile bep_offset="0" lang="ja" title="オオサンショウウオ属">1436169</tofile>
+				<tofile bep_offset="0" lang="ja" title="川">2316</tofile>
+				<tofile bep_offset="0" lang="ja" title="湯原町">221995</tofile>
+				<tofile bep_offset="0" lang="ja" title="センチメートル">11304</tofile>
+				<tofile bep_offset="0" lang="ja" title="ミミズ">176544</tofile>
+				<tofile bep_offset="0" lang="ja" title="京都府">774371</tofile>
+				<tofile bep_offset="0" lang="ja" title="つげ義春">49826</tofile>
+				<tofile bep_offset="0" lang="ja" title="サンショウ">34908</tofile>
+				<tofile bep_offset="0" lang="ja" title="レッドリスト">20656</tofile>
+				<tofile bep_offset="0" lang="ja" title="鴨川 (淀川水系)">53871</tofile>
+				<tofile bep_offset="0" lang="ja" title="カムイ外伝">549935</tofile>
+				<tofile bep_offset="0" lang="ja" title="天然記念物">25596</tofile>
+				<tofile bep_offset="0" lang="ja" title="オオサンショウウオ科">1436023</tofile>
+				<tofile bep_offset="0" lang="ja" title="山椒魚戦争">1688917</tofile>
+				<tofile bep_offset="0" lang="ja" title="愛知県">934064</tofile>
+				<tofile bep_offset="0" lang="ja" title="兵庫県">426</tofile>
+				<tofile bep_offset="0" lang="ja" title="1933年">2539</tofile>
+				<tofile bep_offset="0" lang="ja" title="1932年">2538</tofile>
+				<tofile bep_offset="0" lang="ja" title="サンショウウオ">89722</tofile>
+				<tofile bep_offset="0" lang="ja" title="外来種">109359</tofile>
+				<tofile bep_offset="0" lang="ja" title="本草和名">933309</tofile>
+				<tofile bep_offset="0" lang="ja" title="魚類">3063</tofile>
+				<tofile bep_offset="0" lang="ja" title="1927年">2532</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="744553" name="Tolui"> 
+		<outgoing>
+			<anchor offset="290" length="5" name="Tolui">
+				<tofile bep_offset="0" lang="ja" title="オゴデイ">58052</tofile>
+				<tofile bep_offset="0" lang="ja" title="オン・ハン">156230</tofile>
+				<tofile bep_offset="0" lang="ja" title="グユク">58055</tofile>
+				<tofile bep_offset="0" lang="ja" title="モンゴル国">13219</tofile>
+				<tofile bep_offset="0" lang="ja" title="ニーシャープール">1905499</tofile>
+				<tofile bep_offset="0" lang="ja" title="廟号">59697</tofile>
+				<tofile bep_offset="0" lang="ja" title="モンケ">58056</tofile>
+				<tofile bep_offset="0" lang="ja" title="ソルコクタニ・ベキ">1877017</tofile>
+				<tofile bep_offset="0" lang="ja" title="タタール">61849</tofile>
+				<tofile bep_offset="0" lang="ja" title="徳興市">1659982</tofile>
+				<tofile bep_offset="0" lang="ja" title="紀元">32716</tofile>
+				<tofile bep_offset="0" lang="ja" title="姓">1033831</tofile>
+				<tofile bep_offset="0" lang="ja" title="ボルジギン氏">318911</tofile>
+				<tofile bep_offset="0" lang="ja" title="メルブ遺跡">115715</tofile>
+				<tofile bep_offset="0" lang="ja" title="元 (王朝)">13713</tofile>
+				<tofile bep_offset="0" lang="ja" title="金 (王朝)">13714</tofile>
+				<tofile bep_offset="0" lang="ja" title="元朝秘史">661840</tofile>
+				<tofile bep_offset="0" lang="ja" title="ハーン">23094</tofile>
+				<tofile bep_offset="0" lang="ja" title="イラン">102</tofile>
+				<tofile bep_offset="0" lang="ja" title="アラーウッディーン・アターマリク・ジュヴァイニー">1515293</tofile>
+				<tofile bep_offset="0" lang="ja" title="北元">62179</tofile>
+				<tofile bep_offset="0" lang="ja" title="フレグ">543352</tofile>
+				<tofile bep_offset="0" lang="ja" title="モンゴル帝国">28673</tofile>
+				<tofile bep_offset="0" lang="ja" title="チンギス・カン">10078</tofile>
+				<tofile bep_offset="0" lang="ja" title="クビライ">54384</tofile>
+				<tofile bep_offset="0" lang="ja" title="西夏">29034</tofile>
+				<tofile bep_offset="0" lang="ja" title="皇帝">11662</tofile>
+				<tofile bep_offset="0" lang="ja" title="アリクブケ">87142</tofile>
+				<tofile bep_offset="0" lang="ja" title="イルハン朝">84682</tofile>
+				<tofile bep_offset="0" lang="ja" title="華北">215377</tofile>
+				<tofile bep_offset="0" lang="ja" title="ジョチ">135939</tofile>
+				<tofile bep_offset="0" lang="ja" title="ボルテ">180168</tofile>
+				<tofile bep_offset="0" lang="ja" title="ホラズム・シャー朝">58024</tofile>
+				<tofile bep_offset="0" lang="ja" title="1221年">4498</tofile>
+				<tofile bep_offset="0" lang="ja" title="黄河">29298</tofile>
+				<tofile bep_offset="0" lang="ja" title="トクタ">217567</tofile>
+				<tofile bep_offset="0" lang="ja" title="完顔陳和尚">86857</tofile>
+				<tofile bep_offset="0" lang="ja" title="ヘラート">143206</tofile>
+				<tofile bep_offset="0" lang="ja" title="ガズニー">610011</tofile>
+				<tofile bep_offset="0" lang="ja" title="アフガニスタン">4512</tofile>
+				<tofile bep_offset="0" lang="ja" title="ウルス">57761</tofile>
+				<tofile bep_offset="0" lang="ja" title="カイドゥ">87129</tofile>
+				<tofile bep_offset="0" lang="ja" title="1212年">12799</tofile>
+				<tofile bep_offset="0" lang="ja" title="ジェベ">1455906</tofile>
+				<tofile bep_offset="0" lang="ja" title="チンギス・カンの西征">1830384</tofile>
+				<tofile bep_offset="0" lang="ja" title="アラーウッディーン・ムハンマド">147957</tofile>
+				<tofile bep_offset="0" lang="ja" title="集史">768823</tofile>
+				<tofile bep_offset="0" lang="ja" title="末子相続">56395</tofile>
+				<tofile bep_offset="0" lang="ja" title="スブタイ">111694</tofile>
+				<tofile bep_offset="0" lang="ja" title="モンゴル高原">31400</tofile>
+				<tofile bep_offset="0" lang="ja" title="諡">34342</tofile>
+				<tofile bep_offset="0" lang="ja" title="1192年">4229</tofile>
+				<tofile bep_offset="0" lang="ja" title="山東省">20415</tofile>
+				<tofile bep_offset="0" lang="ja" title="ノムガン">158042</tofile>
+				<tofile bep_offset="0" lang="ja" title="ケレイト">57986</tofile>
+				<tofile bep_offset="0" lang="ja" title="日本語">11</tofile>
+				<tofile bep_offset="0" lang="ja" title="第一次対金戦争">1764540</tofile>
+				<tofile bep_offset="0" lang="ja" title="アムダリヤ川">118416</tofile>
+				<tofile bep_offset="0" lang="ja" title="トランスオクシアナ">165459</tofile>
+				<tofile bep_offset="0" lang="ja" title="ジャラールッディーン">147967</tofile>
+				<tofile bep_offset="0" lang="ja" title="モンゴル語">84881</tofile>
+				<tofile bep_offset="0" lang="ja" title="元史">414895</tofile>
+				<tofile bep_offset="0" lang="ja" title="中国語">5698</tofile>
+				<tofile bep_offset="0" lang="ja" title="ニサ (トルクメニスタン)">1504878</tofile>
+				<tofile bep_offset="0" lang="ja" title="1232年">39073</tofile>
+				<tofile bep_offset="0" lang="ja" title="三峰山の戦い">1136210</tofile>
+				<tofile bep_offset="0" lang="ja" title="1219年">17675</tofile>
+				<tofile bep_offset="0" lang="ja" title="1225年">39077</tofile>
+				<tofile bep_offset="0" lang="ja" title="1220年">39078</tofile>
+				<tofile bep_offset="0" lang="ja" title="モンケ・テムル">217553</tofile>
+				<tofile bep_offset="0" lang="ja" title="チャガタイ">205682</tofile>
+				<tofile bep_offset="0" lang="ja" title="サマルカンド">45991</tofile>
+				<tofile bep_offset="0" lang="ja" title="1227年">14606</tofile>
+				<tofile bep_offset="0" lang="ja" title="河北省">55489</tofile>
+				<tofile bep_offset="0" lang="ja" title="ブハラ">317411</tofile>
+				<tofile bep_offset="0" lang="ja" title="シリギ">154170</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="220432" name="Xylitol"> 
+		<outgoing>
+			<anchor offset="290" length="7" name="Xylitol">
+				<tofile bep_offset="0" lang="ja" title="野菜">2915</tofile>
+				<tofile bep_offset="0" lang="ja" title="う蝕">45721</tofile>
+				<tofile bep_offset="0" lang="ja" title="水素化">140850</tofile>
+				<tofile bep_offset="0" lang="ja" title="グリセミック指数">1228637</tofile>
+				<tofile bep_offset="0" lang="ja" title="骨">28326</tofile>
+				<tofile bep_offset="0" lang="ja" title="糖尿病">29596</tofile>
+				<tofile bep_offset="0" lang="ja" title="ガラクトース">329321</tofile>
+				<tofile bep_offset="0" lang="ja" title="ミュータンス菌">783303</tofile>
+				<tofile bep_offset="0" lang="ja" title="エンバク">107354</tofile>
+				<tofile bep_offset="0" lang="ja" title="トウモロコシ">23371</tofile>
+				<tofile bep_offset="0" lang="ja" title="異性体">76096</tofile>
+				<tofile bep_offset="0" lang="ja" title="真正細菌">9596</tofile>
+				<tofile bep_offset="0" lang="ja" title="水素イオン指数">24072</tofile>
+				<tofile bep_offset="0" lang="ja" title="歯磨剤">533613</tofile>
+				<tofile bep_offset="0" lang="ja" title="バガス">1625437</tofile>
+				<tofile bep_offset="0" lang="ja" title="グルコース">24938</tofile>
+				<tofile bep_offset="0" lang="ja" title="籾殻">723277</tofile>
+				<tofile bep_offset="0" lang="ja" title="下痢">140562</tofile>
+				<tofile bep_offset="0" lang="ja" title="甘味料">33090</tofile>
+				<tofile bep_offset="0" lang="ja" title="ペキニーズ">391805</tofile>
+				<tofile bep_offset="0" lang="ja" title="果実">3719</tofile>
+				<tofile bep_offset="0" lang="ja" title="繊維">64063</tofile>
+				<tofile bep_offset="0" lang="ja" title="中華人民共和国">1903</tofile>
+				<tofile bep_offset="0" lang="ja" title="耳管">2280345</tofile>
+				<tofile bep_offset="0" lang="ja" title="酵母">25378</tofile>
+				<tofile bep_offset="0" lang="ja" title="好中球">190200</tofile>
+				<tofile bep_offset="0" lang="ja" title="スクラロース">227715</tofile>
+				<tofile bep_offset="0" lang="ja" title="カンジダ">470492</tofile>
+				<tofile bep_offset="0" lang="ja" title="堅木">1582878</tofile>
+				<tofile bep_offset="0" lang="ja" title="ヨーロッパ">32</tofile>
+				<tofile bep_offset="0" lang="ja" title="ソルビトール">431883</tofile>
+				<tofile bep_offset="0" lang="ja" title="耳垢">171467</tofile>
+				<tofile bep_offset="0" lang="ja" title="インスリン">33495</tofile>
+				<tofile bep_offset="0" lang="ja" title="有機化合物">6937</tofile>
+				<tofile bep_offset="0" lang="ja" title="糖アルコール">495532</tofile>
+				<tofile bep_offset="0" lang="ja" title="砂糖">21970</tofile>
+				<tofile bep_offset="0" lang="ja" title="キラリティー">26312</tofile>
+				<tofile bep_offset="0" lang="ja" title="瀉下薬">980889</tofile>
+				<tofile bep_offset="0" lang="ja" title="ステビア">33770</tofile>
+				<tofile bep_offset="0" lang="ja" title="中耳">177232</tofile>
+				<tofile bep_offset="0" lang="ja" title="ベリー">900538</tofile>
+				<tofile bep_offset="0" lang="ja" title="サトウキビ">27764</tofile>
+				<tofile bep_offset="0" lang="ja" title="アメリカ食品医薬品局">166318</tofile>
+				<tofile bep_offset="0" lang="ja" title="歯石">684947</tofile>
+				<tofile bep_offset="0" lang="ja" title="屁">1249536</tofile>
+				<tofile bep_offset="0" lang="ja" title="アスパルテーム">62447</tofile>
+				<tofile bep_offset="0" lang="ja" title="生理的熱量">140236</tofile>
+				<tofile bep_offset="0" lang="ja" title="L-キシルロースレダクターゼ">1906567</tofile>
+				<tofile bep_offset="0" lang="ja" title="骨粗鬆症">357803</tofile>
+				<tofile bep_offset="0" lang="ja" title="高血糖症">1934163</tofile>
+				<tofile bep_offset="0" lang="ja" title="メタボリックシンドローム">512724</tofile>
+				<tofile bep_offset="0" lang="ja" title="マンニトール">495443</tofile>
+				<tofile bep_offset="0" lang="ja" title="洗口液">769491</tofile>
+				<tofile bep_offset="0" lang="ja" title="中耳炎">177283</tofile>
+				<tofile bep_offset="0" lang="ja" title="チューインガム">33823</tofile>
+				<tofile bep_offset="0" lang="ja" title="血糖値">193437</tofile>
+				<tofile bep_offset="0" lang="ja" title="グラム">9085</tofile>
+				<tofile bep_offset="0" lang="ja" title="歯垢">183619</tofile>
+				<tofile bep_offset="0" lang="ja" title="パン">21799</tofile>
+				<tofile bep_offset="0" lang="ja" title="キシロース">484822</tofile>
+				<tofile bep_offset="0" lang="ja" title="エリトリトール">696877</tofile>
+				<tofile bep_offset="0" lang="ja" title="カロリー">58432</tofile>
+				<tofile bep_offset="0" lang="ja" title="イヌ">1337121</tofile>
+				<tofile bep_offset="0" lang="ja" title="スクロース">24425</tofile>
+				<tofile bep_offset="0" lang="ja" title="フルクトース">1259888</tofile>
+				<tofile bep_offset="0" lang="ja" title="キノコ">32675</tofile>
+				<tofile bep_offset="0" lang="ja" title="アルデヒド">27347</tofile>
+				<tofile bep_offset="0" lang="ja" title="敗血症">153411</tofile>
+				<tofile bep_offset="0" lang="ja" title="ギリシア語">7673</tofile>
+				<tofile bep_offset="0" lang="ja" title="ニンニク">22798</tofile>
+				<tofile bep_offset="0" lang="ja" title="メソ化合物">1853119</tofile>
+				<tofile bep_offset="0" lang="ja" title="ウサギ">1396</tofile>
+				<tofile bep_offset="0" lang="ja" title="カバノキ属">344003</tofile>
+				<tofile bep_offset="0" lang="ja" title="ヤギ">2027988</tofile>
+				<tofile bep_offset="0" lang="ja" title="化学合成">371441</tofile>
+				<tofile bep_offset="0" lang="ja" title="ネズミ">84989</tofile>
+				<tofile bep_offset="0" lang="ja" title="ヒヒ">472923</tofile>
+				<tofile bep_offset="0" lang="ja" title="毒">41952</tofile>
+				<tofile bep_offset="0" lang="ja" title="化学式">1497689</tofile>
+				<tofile bep_offset="0" lang="ja" title="厚生省">82069</tofile>
+				<tofile bep_offset="0" lang="ja" title="国立健康・栄養研究所">500871</tofile>
+				<tofile bep_offset="0" lang="ja" title="フィンランド">147836</tofile>
+				<tofile bep_offset="0" lang="ja" title="タマネギ">1308228</tofile>
+				<tofile bep_offset="0" lang="ja" title="イヌ科">20561</tofile>
+				<tofile bep_offset="0" lang="ja" title="唾液">202410</tofile>
+				<tofile bep_offset="0" lang="ja" title="ウシ">18498</tofile>
+				<tofile bep_offset="0" lang="ja" title="肝臓">18814</tofile>
+				<tofile bep_offset="0" lang="ja" title="口">17351</tofile>
+				<tofile bep_offset="0" lang="ja" title="分子量">28450</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="1791383" name="Pentaceratops"> 
+		<outgoing>
+			<anchor offset="290" length="13" name="Pentaceratops">
+				<tofile bep_offset="0" lang="ja" title="ニューメキシコ州">54258</tofile>
+				<tofile bep_offset="0" lang="ja" title="アメリカ自然史博物館">177494</tofile>
+				<tofile bep_offset="0" lang="ja" title="属 (分類学)">399615</tofile>
+				<tofile bep_offset="0" lang="ja" title="恐竜">1417402</tofile>
+				<tofile bep_offset="0" lang="ja" title="トリケラトプス">70438</tofile>
+				<tofile bep_offset="0" lang="ja" title="草食動物">201249</tofile>
+				<tofile bep_offset="0" lang="ja" title="カスモサウルス">603167</tofile>
+				<tofile bep_offset="0" lang="ja" title="アンキケラトプス">1323339</tofile>
+				<tofile bep_offset="0" lang="ja" title="脊椎動物">3463</tofile>
+				<tofile bep_offset="0" lang="ja" title="北アメリカ">9228</tofile>
+				<tofile bep_offset="0" lang="ja" title="古代ギリシア語">337833</tofile>
+				<tofile bep_offset="0" lang="ja" title="白亜紀">13949</tofile>
+				<tofile bep_offset="0" lang="ja" title="トロサウルス">497918</tofile>
+				<tofile bep_offset="0" lang="ja" title="角竜類">329876</tofile>
+				<tofile bep_offset="0" lang="ja" title="哺乳類">2885</tofile>
+				<tofile bep_offset="0" lang="ja" title="骨格">114706</tofile>
+				<tofile bep_offset="0" lang="ja" title="頭蓋骨">329397</tofile>
+				<tofile bep_offset="0" lang="ja" title="ケラトプス科">1334464</tofile>
+				<tofile bep_offset="0" lang="ja" title="コロラド州">53915</tofile>
+				<tofile bep_offset="0" lang="ja" title="パラサウロロフス">325179</tofile>
+				<tofile bep_offset="0" lang="ja" title="ヘンリー・フェアフィールド・オズボーン">344558</tofile>
+				<tofile bep_offset="0" lang="ja" title="カスモサウルス亜科">1609279</tofile>
+				<tofile bep_offset="0" lang="ja" title="アメリカ合衆国">1698838</tofile>
+				<tofile bep_offset="0" lang="ja" title="角脚類">1831048</tofile>
+				<tofile bep_offset="0" lang="ja" title="2011年">7829</tofile>
+				<tofile bep_offset="0" lang="ja" title="種 (分類学)">51340</tofile>
+				<tofile bep_offset="0" lang="ja" title="イェール大学">20095</tofile>
+				<tofile bep_offset="0" lang="ja" title="1923年">2528</tofile>
+				<tofile bep_offset="0" lang="ja" title="2006年">793034</tofile>
+				<tofile bep_offset="0" lang="ja" title="標本">448634</tofile>
+				<tofile bep_offset="0" lang="ja" title="ダスプレトサウルス">376342</tofile>
+				<tofile bep_offset="0" lang="ja" title="中生代">69897</tofile>
+				<tofile bep_offset="0" lang="ja" title="1941年">2550</tofile>
+				<tofile bep_offset="0" lang="ja" title="タイプ (分類学)">416208</tofile>
+				<tofile bep_offset="0" lang="ja" title="周飾頭亜目">1275404</tofile>
+				<tofile bep_offset="0" lang="ja" title="ノドサウルス">341490</tofile>
+				<tofile bep_offset="0" lang="ja" title="フリル">2436441</tofile>
+				<tofile bep_offset="0" lang="ja" title="1995年">2025673</tofile>
+				<tofile bep_offset="0" lang="ja" title="学名">2025639</tofile>
+				<tofile bep_offset="0" lang="ja" title="装盾亜目">494607</tofile>
+				<tofile bep_offset="0" lang="ja" title="カール・ワイマン">438741</tofile>
+				<tofile bep_offset="0" lang="ja" title="角">177926</tofile>
+				<tofile bep_offset="0" lang="ja" title="1930年">2535</tofile>
+				<tofile bep_offset="0" lang="ja" title="学芸員">26495</tofile>
+				<tofile bep_offset="0" lang="ja" title="ティラノサウルス科">325439</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="2974637" name="Nanako Matsushima"> 
+		<outgoing>
+			<anchor offset="290" length="17" name="Nanako Matsushima">
+				<tofile bep_offset="0" lang="ja" title="神奈川県">1917527</tofile>
+				<tofile bep_offset="0" lang="ja" title="やまとなでしこ">54051</tofile>
+				<tofile bep_offset="0" lang="ja" title="魔女の条件">294016</tofile>
+				<tofile bep_offset="0" lang="ja" title="国の一覧">23</tofile>
+				<tofile bep_offset="0" lang="ja" title="真田広之">96415</tofile>
+				<tofile bep_offset="0" lang="ja" title="家政婦のミタ">2435728</tofile>
+				<tofile bep_offset="0" lang="ja" title="リング2">980828</tofile>
+				<tofile bep_offset="0" lang="ja" title="リング (映画)">1388304</tofile>
+				<tofile bep_offset="0" lang="ja" title="横浜市">852212</tofile>
+				<tofile bep_offset="0" lang="ja" title="火垂るの墓">52999</tofile>
+				<tofile bep_offset="0" lang="ja" title="ミッドナイト・エクスプレス">2189665</tofile>
+				<tofile bep_offset="0" lang="ja" title="日本">1864744</tofile>
+				<tofile bep_offset="0" lang="ja" title="GTO (漫画)">21043</tofile>
+				<tofile bep_offset="0" lang="ja" title="反町隆史">37211</tofile>
+				<tofile bep_offset="0" lang="ja" title="俳優">2008</tofile>
+				<tofile bep_offset="0" lang="ja" title="ワールド (企業)">706574</tofile>
+				<tofile bep_offset="0" lang="ja" title="こんな恋のはなし">472315</tofile>
+				<tofile bep_offset="0" lang="ja" title="日本マクドナルド">81198</tofile>
+				<tofile bep_offset="0" lang="ja" title="明治製菓">83770</tofile>
+				<tofile bep_offset="0" lang="ja" title="芳春院">166193</tofile>
+				<tofile bep_offset="0" lang="ja" title="小枝">338200</tofile>
+				<tofile bep_offset="0" lang="ja" title="ABO式血液型">754515</tofile>
+				<tofile bep_offset="0" lang="ja" title="パラマウント映画">129344</tofile>
+				<tofile bep_offset="0" lang="ja" title="織田裕二">34677</tofile>
+				<tofile bep_offset="0" lang="ja" title="深夜特急">158222</tofile>
+				<tofile bep_offset="0" lang="ja" title="GTO (テレビドラマ)">951053</tofile>
+				<tofile bep_offset="0" lang="ja" title="石坂浩二">63757</tofile>
+				<tofile bep_offset="0" lang="ja" title="ジャングル大帝">38239</tofile>
+				<tofile bep_offset="0" lang="ja" title="1996年">1520</tofile>
+				<tofile bep_offset="0" lang="ja" title="井上真央">321191</tofile>
+				<tofile bep_offset="0" lang="ja" title="普通自動二輪車">20508</tofile>
+				<tofile bep_offset="0" lang="ja" title="山之内製薬">140601</tofile>
+				<tofile bep_offset="0" lang="ja" title="ニコン">66576</tofile>
+				<tofile bep_offset="0" lang="ja" title="讀賣テレビ放送">49294</tofile>
+				<tofile bep_offset="0" lang="ja" title="2005年">332554</tofile>
+				<tofile bep_offset="0" lang="ja" title="2008年">1448844</tofile>
+				<tofile bep_offset="0" lang="ja" title="深浦加奈子">338728</tofile>
+				<tofile bep_offset="0" lang="ja" title="心療内科医・涼子">485323</tofile>
+				<tofile bep_offset="0" lang="ja" title="キャッチコピー">57665</tofile>
+				<tofile bep_offset="0" lang="ja" title="フラン">35225</tofile>
+				<tofile bep_offset="0" lang="ja" title="犬神家の一族 (2006年の映画)">700290</tofile>
+				<tofile bep_offset="0" lang="ja" title="妊娠">94719</tofile>
+				<tofile bep_offset="0" lang="ja" title="第24回日本アカデミー賞">1697987</tofile>
+				<tofile bep_offset="0" lang="ja" title="大正製薬">108953</tofile>
+				<tofile bep_offset="0" lang="ja" title="映画">163</tofile>
+				<tofile bep_offset="0" lang="ja" title="世にも奇妙な物語">2226439</tofile>
+				<tofile bep_offset="0" lang="ja" title="大河ドラマ">11281</tofile>
+				<tofile bep_offset="0" lang="ja" title="コーセー">101313</tofile>
+				<tofile bep_offset="0" lang="ja" title="ひまわり (朝ドラ)">297275</tofile>
+				<tofile bep_offset="0" lang="ja" title="1992年">1349811</tofile>
+				<tofile bep_offset="0" lang="ja" title="ゴースト もういちど抱きしめたい">2156139</tofile>
+				<tofile bep_offset="0" lang="ja" title="松本潤">58402</tofile>
+				<tofile bep_offset="0" lang="ja" title="土曜ワイド劇場">85000</tofile>
+				<tofile bep_offset="0" lang="ja" title="福山雅治">64872</tofile>
+				<tofile bep_offset="0" lang="ja" title="美女か野獣">65874</tofile>
+				<tofile bep_offset="0" lang="ja" title="5月21日">4934</tofile>
+				<tofile bep_offset="0" lang="ja" title="エランドール賞">862307</tofile>
+				<tofile bep_offset="0" lang="ja" title="眉山 (さだまさし)">987143</tofile>
+				<tofile bep_offset="0" lang="ja" title="百年の物語">736397</tofile>
+				<tofile bep_offset="0" lang="ja" title="運転免許">68973</tofile>
+				<tofile bep_offset="0" lang="ja" title="座間市">58808</tofile>
+				<tofile bep_offset="0" lang="ja" title="2012年">7831</tofile>
+				<tofile bep_offset="0" lang="ja" title="2009年">1917</tofile>
+				<tofile bep_offset="0" lang="ja" title="ボディコン">178520</tofile>
+				<tofile bep_offset="0" lang="ja" title="MISIA">2257037</tofile>
+				<tofile bep_offset="0" lang="ja" title="1998年">2025684</tofile>
+				<tofile bep_offset="0" lang="ja" title="恋と花火と観覧車">402108</tofile>
+				<tofile bep_offset="0" lang="ja" title="花より男子">115545</tofile>
+				<tofile bep_offset="0" lang="ja" title="2011年">7829</tofile>
+				<tofile bep_offset="0" lang="ja" title="旭化成せんいキャンペーンモデル">449039</tofile>
+				<tofile bep_offset="0" lang="ja" title="高嶋政伸">157967</tofile>
+				<tofile bep_offset="0" lang="ja" title="麒麟麦酒">66913</tofile>
+				<tofile bep_offset="0" lang="ja" title="関西テレビ放送">26734</tofile>
+				<tofile bep_offset="0" lang="ja" title="日本電信電話">310124</tofile>
+				<tofile bep_offset="0" lang="ja" title="2001年">813</tofile>
+				<tofile bep_offset="0" lang="ja" title="連続テレビ小説">31926</tofile>
+				<tofile bep_offset="0" lang="ja" title="やまとなでしこ (テレビドラマ)">54053</tofile>
+				<tofile bep_offset="0" lang="ja" title="第22回日本アカデミー賞">1698703</tofile>
+				<tofile bep_offset="0" lang="ja" title="生茶">782537</tofile>
+				<tofile bep_offset="0" lang="ja" title="ホワイトアウト (小説)">127604</tofile>
+				<tofile bep_offset="0" lang="ja" title="唐沢寿明">30936</tofile>
+				<tofile bep_offset="0" lang="ja" title="日本放送協会">2051272</tofile>
+				<tofile bep_offset="0" lang="ja" title="Seventh avenue">777242</tofile>
+				<tofile bep_offset="0" lang="ja" title="君の名前を呼んだ後に">1696669</tofile>
+				<tofile bep_offset="0" lang="ja" title="ロッテ">55386</tofile>
+				<tofile bep_offset="0" lang="ja" title="2007年">1069779</tofile>
+				<tofile bep_offset="0" lang="ja" title="プロクター・アンド・ギャンブル・ジャパン">1200021</tofile>
+				<tofile bep_offset="0" lang="ja" title="森永製菓">52353</tofile>
+				<tofile bep_offset="0" lang="ja" title="竹野内豊">69947</tofile>
+				<tofile bep_offset="0" lang="ja" title="テレビドラマ">25910</tofile>
+				<tofile bep_offset="0" lang="ja" title="古畑任三郎">79778</tofile>
+				<tofile bep_offset="0" lang="ja" title="加賀百万石-母と子の戦国サバイバル">2301948</tofile>
+				<tofile bep_offset="0" lang="ja" title="DRAMA COMPLEX">344180</tofile>
+				<tofile bep_offset="0" lang="ja" title="普通自動車">485155</tofile>
+				<tofile bep_offset="0" lang="ja" title="ボクたちのドラマシリーズ">108879</tofile>
+				<tofile bep_offset="0" lang="ja" title="1973年">898</tofile>
+				<tofile bep_offset="0" lang="ja" title="2月">2093211</tofile>
+				<tofile bep_offset="0" lang="ja" title="日本中央競馬会">2580</tofile>
+				<tofile bep_offset="0" lang="ja" title="ラッキーセブン (テレビドラマ)">2463433</tofile>
+				<tofile bep_offset="0" lang="ja" title="任天堂">1149</tofile>
+				<tofile bep_offset="0" lang="ja" title="住友生命保険">254351</tofile>
+				<tofile bep_offset="0" lang="ja" title="ハートにS">1189158</tofile>
+				<tofile bep_offset="0" lang="ja" title="TBSテレビ">1206266</tofile>
+				<tofile bep_offset="0" lang="ja" title="ファッションモデル">281236</tofile>
+				<tofile bep_offset="0" lang="ja" title="1月5日">4560</tofile>
+				<tofile bep_offset="0" lang="ja" title="お願いダーリン!">623325</tofile>
+				<tofile bep_offset="0" lang="ja" title="10月13日">698788</tofile>
+				<tofile bep_offset="0" lang="ja" title="日産・アベニール">67564</tofile>
+				<tofile bep_offset="0" lang="ja" title="金曜ドラマ">107510</tofile>
+				<tofile bep_offset="0" lang="ja" title="2004年">935867</tofile>
+				<tofile bep_offset="0" lang="ja" title="松竹">61589</tofile>
+				<tofile bep_offset="0" lang="ja" title="花王">54850</tofile>
+				<tofile bep_offset="0" lang="ja" title="タイアップ">135219</tofile>
+				<tofile bep_offset="0" lang="ja" title="江口洋介">91069</tofile>
+				<tofile bep_offset="0" lang="ja" title="キリン一番搾り生ビール">71139</tofile>
+				<tofile bep_offset="0" lang="ja" title="ViVi">503245</tofile>
+				<tofile bep_offset="0" lang="ja" title="名古屋テレビ放送">49314</tofile>
+				<tofile bep_offset="0" lang="ja" title="フジテレビジョン">329714</tofile>
+				<tofile bep_offset="0" lang="ja" title="槇原敬之">68772</tofile>
+				<tofile bep_offset="0" lang="ja" title="木曜劇場">126670</tofile>
+				<tofile bep_offset="0" lang="ja" title="大沢たかお">71339</tofile>
+				<tofile bep_offset="0" lang="ja" title="パナソニック電工">105232</tofile>
+				<tofile bep_offset="0" lang="ja" title="1995年">2025673</tofile>
+				<tofile bep_offset="0" lang="ja" title="救命病棟24時">133217</tofile>
+				<tofile bep_offset="0" lang="ja" title="大森南朋">94240</tofile>
+				<tofile bep_offset="0" lang="ja" title="NHK正月時代劇">597030</tofile>
+				<tofile bep_offset="0" lang="ja" title="日本テレビ放送網">2882</tofile>
+				<tofile bep_offset="0" lang="ja" title="ホワイトバンドプロジェクト">285937</tofile>
+				<tofile bep_offset="0" lang="ja" title="マックスファクター">125279</tofile>
+				<tofile bep_offset="0" lang="ja" title="高橋由美子">274902</tofile>
+				<tofile bep_offset="0" lang="ja" title="Sweet Season">136976</tofile>
+				<tofile bep_offset="0" lang="ja" title="キリンビバレッジ">69473</tofile>
+				<tofile bep_offset="0" lang="ja" title="旭化成">524325</tofile>
+				<tofile bep_offset="0" lang="ja" title="1997年">2025310</tofile>
+				<tofile bep_offset="0" lang="ja" title="田村正和">71342</tofile>
+				<tofile bep_offset="0" lang="ja" title="氷の世界 (テレビドラマ)">889282</tofile>
+				<tofile bep_offset="0" lang="ja" title="社長になった若大将">681200</tofile>
+				<tofile bep_offset="0" lang="ja" title="加山雄三">69500</tofile>
+				<tofile bep_offset="0" lang="ja" title="テレビ朝日">1187903</tofile>
+				<tofile bep_offset="0" lang="ja" title="ザテレビジョンドラマアカデミー賞">1934058</tofile>
+				<tofile bep_offset="0" lang="ja" title="君が人生の時">571721</tofile>
+				<tofile bep_offset="0" lang="ja" title="1999年">1548</tofile>
+				<tofile bep_offset="0" lang="ja" title="センチメートル">11304</tofile>
+				<tofile bep_offset="0" lang="ja" title="長塚京三">150039</tofile>
+				<tofile bep_offset="0" lang="ja" title="バブル景気">36879</tofile>
+				<tofile bep_offset="0" lang="ja" title="淀殿">22546</tofile>
+				<tofile bep_offset="0" lang="ja" title="2006年">793034</tofile>
+				<tofile bep_offset="0" lang="ja" title="きれいなおねえさん">445443</tofile>
+				<tofile bep_offset="0" lang="ja" title="2000年">1547</tofile>
+				<tofile bep_offset="0" lang="ja" title="ベストドレッサー賞">346641</tofile>
+				<tofile bep_offset="0" lang="ja" title="ニンテンドーDS">91606</tofile>
+				<tofile bep_offset="0" lang="ja" title="アスミック・エース エンタテインメント">156673</tofile>
+				<tofile bep_offset="0" lang="ja" title="ニベア花王">349998</tofile>
+				<tofile bep_offset="0" lang="ja" title="利家とまつ〜加賀百万石物語〜">194560</tofile>
+				<tofile bep_offset="0" lang="ja" title="とんねるずのみなさんのおかげです">2496</tofile>
+				<tofile bep_offset="0" lang="ja" title="2002年">1532</tofile>
+				<tofile bep_offset="0" lang="ja" title="渡部伸">1823532</tofile>
+				<tofile bep_offset="0" lang="ja" title="あの戦争は何だったのか 日米開戦と東条英機">1645151</tofile>
+				<tofile bep_offset="0" lang="ja" title="ベストジーニスト">669009</tofile>
+				<tofile bep_offset="0" lang="ja" title="国際宝飾展">944056</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="1419265" name="X264"> 
+		<outgoing>
+			<anchor offset="290" length="4" name="X264">
+				<tofile bep_offset="0" lang="ja" title="MEncoder">2351858</tofile>
+				<tofile bep_offset="0" lang="ja" title="Avidemux">1665443</tofile>
+				<tofile bep_offset="0" lang="ja" title="シスコシステムズ">144830</tofile>
+				<tofile bep_offset="0" lang="ja" title="ライブラリ">2918</tofile>
+				<tofile bep_offset="0" lang="ja" title="SIMD">227432</tofile>
+				<tofile bep_offset="0" lang="ja" title="SUPER (ソフトウェア)">1181738</tofile>
+				<tofile bep_offset="0" lang="ja" title="ARMアーキテクチャ">288737</tofile>
+				<tofile bep_offset="0" lang="ja" title="FFmpeg">924491</tofile>
+				<tofile bep_offset="0" lang="ja" title="グラフィカルユーザインタフェース">3289</tofile>
+				<tofile bep_offset="0" lang="ja" title="フリーソフトウェア">1399</tofile>
+				<tofile bep_offset="0" lang="ja" title="アプリケーションプログラミングインタフェース">2963</tofile>
+				<tofile bep_offset="0" lang="ja" title="精神物理学">304058</tofile>
+				<tofile bep_offset="0" lang="ja" title="H.264">165096</tofile>
+				<tofile bep_offset="0" lang="ja" title="HandBrake">1309079</tofile>
+				<tofile bep_offset="0" lang="ja" title="X86">7181</tofile>
+				<tofile bep_offset="0" lang="ja" title="MPEG-4">3053</tofile>
+				<tofile bep_offset="0" lang="ja" title="PowerPC">1543</tofile>
+				<tofile bep_offset="0" lang="ja" title="GNU General Public License">2841</tofile>
+				<tofile bep_offset="0" lang="ja" title="MediaCoder">1171010</tofile>
+				<tofile bep_offset="0" lang="ja" title="AltiVec">47139</tofile>
+				<tofile bep_offset="0" lang="ja" title="Video for Windows">1008536</tofile>
+				<tofile bep_offset="0" lang="ja" title="MMX">251204</tofile>
+				<tofile bep_offset="0" lang="ja" title="スレッド (コンピュータ)">5738</tofile>
+				<tofile bep_offset="0" lang="ja" title="WebM">2099844</tofile>
+				<tofile bep_offset="0" lang="ja" title="MP4">109578</tofile>
+				<tofile bep_offset="0" lang="ja" title="VLCメディアプレーヤー">450068</tofile>
+				<tofile bep_offset="0" lang="ja" title="エンコード">84323</tofile>
+				<tofile bep_offset="0" lang="ja" title="インターレース">154573</tofile>
+				<tofile bep_offset="0" lang="ja" title="AviUtl">1197417</tofile>
+				<tofile bep_offset="0" lang="ja" title="Streaming SIMD Extensions">478456</tofile>
+				<tofile bep_offset="0" lang="ja" title="TMPGEnc">352638</tofile>
+				<tofile bep_offset="0" lang="ja" title="色空間">12201</tofile>
+				<tofile bep_offset="0" lang="ja" title="ソフトウェア特許">170973</tofile>
+				<tofile bep_offset="0" lang="ja" title="オープンソース">1422</tofile>
+				<tofile bep_offset="0" lang="ja" title="オープンソースのコーデックとコンテナフォーマット一覧">1495530</tofile>
+				<tofile bep_offset="0" lang="ja" title="Xvid">112508</tofile>
+				<tofile bep_offset="0" lang="ja" title="プログラム (コンピュータ)">42737</tofile>
+				<tofile bep_offset="0" lang="ja" title="3DNow!">475908</tofile>
+				<tofile bep_offset="0" lang="ja" title="フロントエンド">51786</tofile>
+				<tofile bep_offset="0" lang="ja" title="Blu-ray Disc">3768</tofile>
+				<tofile bep_offset="0" lang="ja" title="OCaml">1472</tofile>
+				<tofile bep_offset="0" lang="ja" title="AviSynth">1398069</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="611752" name="Ravioli"> 
+		<outgoing>
+			<anchor offset="290" length="7" name="Ravioli">
+				<tofile bep_offset="0" lang="ja" title="ニューヨーク州">5040</tofile>
+				<tofile bep_offset="0" lang="ja" title="ホーリー祭">1749816</tofile>
+				<tofile bep_offset="0" lang="ja" title="カブ">20612</tofile>
+				<tofile bep_offset="0" lang="ja" title="イタリア語">91</tofile>
+				<tofile bep_offset="0" lang="ja" title="ノルマン人">23813</tofile>
+				<tofile bep_offset="0" lang="ja" title="イタリア人">68990</tofile>
+				<tofile bep_offset="0" lang="ja" title="ボストン">72931</tofile>
+				<tofile bep_offset="0" lang="ja" title="パスタ">5542</tofile>
+				<tofile bep_offset="0" lang="ja" title="ヴェネツィア">30053</tofile>
+				<tofile bep_offset="0" lang="ja" title="リコッタ">62442</tofile>
+				<tofile bep_offset="0" lang="ja" title="イタリア系アメリカ人">484702</tofile>
+				<tofile bep_offset="0" lang="ja" title="マリナーラソース">256582</tofile>
+				<tofile bep_offset="0" lang="ja" title="プラート">100081</tofile>
+				<tofile bep_offset="0" lang="ja" title="フランチェスコ・ディ・マルコ・ダティーニ">1811088</tofile>
+				<tofile bep_offset="0" lang="ja" title="サルデーニャ">58803</tofile>
+				<tofile bep_offset="0" lang="ja" title="タマネギ">1308228</tofile>
+				<tofile bep_offset="0" lang="ja" title="ホウレンソウ">3146</tofile>
+				<tofile bep_offset="0" lang="ja" title="チーズ">7141</tofile>
+				<tofile bep_offset="0" lang="ja" title="ワイン">10328</tofile>
+				<tofile bep_offset="0" lang="ja" title="オリーブ・オイル">3386</tofile>
+				<tofile bep_offset="0" lang="ja" title="イタリア料理">5544</tofile>
+				<tofile bep_offset="0" lang="ja" title="アーティチョーク">245216</tofile>
+				<tofile bep_offset="0" lang="ja" title="カラスミ">54217</tofile>
+				<tofile bep_offset="0" lang="ja" title="トマトソース">18071</tofile>
+				<tofile bep_offset="0" lang="ja" title="クリーム (食品)">4919</tofile>
+				<tofile bep_offset="0" lang="ja" title="クリームソース">195632</tofile>
+				<tofile bep_offset="0" lang="ja" title="ベジタリアニズム">39836</tofile>
+				<tofile bep_offset="0" lang="ja" title="餃子">25718</tofile>
+				<tofile bep_offset="0" lang="ja" title="小麦粉">1854550</tofile>
+				<tofile bep_offset="0" lang="ja" title="ジャガイモ">3140</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="1039570" name="Traveler&apos;s cheque"> 
+		<outgoing>
+			<anchor offset="290" length="22" name="Traveler&apos;s cheque">
+				<tofile bep_offset="0" lang="ja" title="アメリカン・エキスプレス">65995</tofile>
+				<tofile bep_offset="0" lang="ja" title="ビザ">369765</tofile>
+				<tofile bep_offset="0" lang="ja" title="小切手">81451</tofile>
+				<tofile bep_offset="0" lang="ja" title="自然人">65615</tofile>
+				<tofile bep_offset="0" lang="ja" title="アメリカ合衆国">1698838</tofile>
+				<tofile bep_offset="0" lang="ja" title="連署・副署">131450</tofile>
+				<tofile bep_offset="0" lang="ja" title="署名">8380</tofile>
+				<tofile bep_offset="0" lang="ja" title="プリペイドカード">3718</tofile>
+				<tofile bep_offset="0" lang="ja" title="アメリカ合衆国ドル">83517</tofile>
+				<tofile bep_offset="0" lang="ja" title="トーマス・クック">817223</tofile>
+				<tofile bep_offset="0" lang="ja" title="身分証明書">117770</tofile>
+				<tofile bep_offset="0" lang="ja" title="スターリング・ポンド">33570</tofile>
+				<tofile bep_offset="0" lang="ja" title="信用状">265584</tofile>
+				<tofile bep_offset="0" lang="ja" title="円 (通貨)">6470</tofile>
+				<tofile bep_offset="0" lang="ja" title="トーマス・クック社">1861412</tofile>
+				<tofile bep_offset="0" lang="ja" title="カナダドル">215176</tofile>
+				<tofile bep_offset="0" lang="ja" title="ユーロ">3256</tofile>
+				<tofile bep_offset="0" lang="ja" title="コーポレートアイデンティティ">271244</tofile>
+				<tofile bep_offset="0" lang="ja" title="海外旅行">18163</tofile>
+				<tofile bep_offset="0" lang="ja" title="イギリス">1698893</tofile>
+				<tofile bep_offset="0" lang="ja" title="三菱東京UFJ銀行">1442029</tofile>
+				<tofile bep_offset="0" lang="ja" title="英語">3377</tofile>
+				<tofile bep_offset="0" lang="ja" title="三井住友銀行">5847</tofile>
+				<tofile bep_offset="0" lang="ja" title="トーマス・クック・グループ">70104</tofile>
+				<tofile bep_offset="0" lang="ja" title="ユーロ圏">1150440</tofile>
+				<tofile bep_offset="0" lang="ja" title="クレジットカード">13253</tofile>
+				<tofile bep_offset="0" lang="ja" title="スイス・フラン">99918</tofile>
+				<tofile bep_offset="0" lang="ja" title="トラベレックス">1893153</tofile>
+				<tofile bep_offset="0" lang="ja" title="富士銀行">13679</tofile>
+				<tofile bep_offset="0" lang="ja" title="マスターカード">74295</tofile>
+				<tofile bep_offset="0" lang="ja" title="ドイツマルク">148299</tofile>
+				<tofile bep_offset="0" lang="ja" title="地方銀行">24248</tofile>
+				<tofile bep_offset="0" lang="ja" title="第一勧業銀行">7835</tofile>
+				<tofile bep_offset="0" lang="ja" title="三菱銀行">48574</tofile>
+				<tofile bep_offset="0" lang="ja" title="インバウンド">806836</tofile>
+				<tofile bep_offset="0" lang="ja" title="中華人民共和国">1903</tofile>
+				<tofile bep_offset="0" lang="ja" title="セシール">354386</tofile>
+				<tofile bep_offset="0" lang="ja" title="電信">34515</tofile>
+				<tofile bep_offset="0" lang="ja" title="全国地方銀行協会">161534</tofile>
+				<tofile bep_offset="0" lang="ja" title="カナダ">1698830</tofile>
+				<tofile bep_offset="0" lang="ja" title="ジェイティービー">39061</tofile>
+				<tofile bep_offset="0" lang="ja" title="外貨預金">1007487</tofile>
+				<tofile bep_offset="0" lang="ja" title="住友財閥">100537</tofile>
+				<tofile bep_offset="0" lang="ja" title="開発途上国">6579</tofile>
+				<tofile bep_offset="0" lang="ja" title="香港上海銀行">201877</tofile>
+				<tofile bep_offset="0" lang="ja" title="シティバンク銀行">230810</tofile>
+				<tofile bep_offset="0" lang="ja" title="国際通貨">636184</tofile>
+				<tofile bep_offset="0" lang="ja" title="資金洗浄">172950</tofile>
+				<tofile bep_offset="0" lang="ja" title="タイ王国">52745</tofile>
+				<tofile bep_offset="0" lang="ja" title="旅行">1744</tofile>
+				<tofile bep_offset="0" lang="ja" title="みずほ銀行">3898</tofile>
+				<tofile bep_offset="0" lang="ja" title="銀行">3899</tofile>
+				<tofile bep_offset="0" lang="ja" title="イタリア・リラ">256447</tofile>
+				<tofile bep_offset="0" lang="ja" title="オーストラリア">1119369</tofile>
+				<tofile bep_offset="0" lang="ja" title="オーストラリア・ドル">99674</tofile>
+				<tofile bep_offset="0" lang="ja" title="スリーダイヤ">970480</tofile>
+				<tofile bep_offset="0" lang="ja" title="ゆうちょ銀行">354658</tofile>
+				<tofile bep_offset="0" lang="ja" title="東京銀行">58419</tofile>
+				<tofile bep_offset="0" lang="ja" title="スタンダードチャータード銀行">787790</tofile>
+				<tofile bep_offset="0" lang="ja" title="フランス・フラン">1080950</tofile>
+				<tofile bep_offset="0" lang="ja" title="住友銀行">58410</tofile>
+				<tofile bep_offset="0" lang="ja" title="さくら銀行">8403</tofile>
+				<tofile bep_offset="0" lang="ja" title="旅行代理店">11265</tofile>
+				<tofile bep_offset="0" lang="ja" title="バーツ">42593</tofile>
+				<tofile bep_offset="0" lang="ja" title="パスポート">1923168</tofile>
+				<tofile bep_offset="0" lang="ja" title="債券">102764</tofile>
+				<tofile bep_offset="0" lang="ja" title="トラベレックスジャパン">967200</tofile>
+				<tofile bep_offset="0" lang="ja" title="大韓民国ウォン">1717527</tofile>
+				<tofile bep_offset="0" lang="ja" title="現金">64459</tofile>
+				<tofile bep_offset="0" lang="ja" title="プライベートバンク">1659327</tofile>
+				<tofile bep_offset="0" lang="ja" title="東京三菱銀行">17773</tofile>
+				<tofile bep_offset="0" lang="ja" title="商品券">41725</tofile>
+				<tofile bep_offset="0" lang="ja" title="ニュー台湾ドル">27773</tofile>
+				<tofile bep_offset="0" lang="ja" title="台湾">882663</tofile>
+				<tofile bep_offset="0" lang="ja" title="外国為替">196827</tofile>
+				<tofile bep_offset="0" lang="ja" title="東京クレジットサービス">523253</tofile>
+				<tofile bep_offset="0" lang="ja" title="為替レート">86946</tofile>
+				<tofile bep_offset="0" lang="ja" title="国際キャッシュカード">291805</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="1821208" name="Cellophane noodles"> 
+		<outgoing>
+			<anchor offset="290" length="18" name="Cellophane noodles">
+				<tofile bep_offset="0" lang="ja" title="サモア">53994</tofile>
+				<tofile bep_offset="0" lang="ja" title="インド">2009</tofile>
+				<tofile bep_offset="0" lang="ja" title="中国東北部">278806</tofile>
+				<tofile bep_offset="0" lang="ja" title="煙台市">229724</tofile>
+				<tofile bep_offset="0" lang="ja" title="チャプチェ">176329</tofile>
+				<tofile bep_offset="0" lang="ja" title="ベトナム語">72882</tofile>
+				<tofile bep_offset="0" lang="ja" title="マレーシア">2121942</tofile>
+				<tofile bep_offset="0" lang="ja" title="鉛">7993</tofile>
+				<tofile bep_offset="0" lang="ja" title="リョクトウ">390695</tofile>
+				<tofile bep_offset="0" lang="ja" title="ヤム">908721</tofile>
+				<tofile bep_offset="0" lang="ja" title="アルミニウム">7901</tofile>
+				<tofile bep_offset="0" lang="ja" title="ベジタリアニズム">39836</tofile>
+				<tofile bep_offset="0" lang="ja" title="漂白剤">363539</tofile>
+				<tofile bep_offset="0" lang="ja" title="ピン音">17493</tofile>
+				<tofile bep_offset="0" lang="ja" title="韓国における漢字">30655</tofile>
+				<tofile bep_offset="0" lang="ja" title="ハワイ州">3208</tofile>
+				<tofile bep_offset="0" lang="ja" title="韓国料理">5690</tofile>
+				<tofile bep_offset="0" lang="ja" title="片栗粉">48265</tofile>
+				<tofile bep_offset="0" lang="ja" title="中華人民共和国">1903</tofile>
+				<tofile bep_offset="0" lang="ja" title="タイ料理">27610</tofile>
+				<tofile bep_offset="0" lang="ja" title="ふかひれ">119907</tofile>
+				<tofile bep_offset="0" lang="ja" title="麺">21975</tofile>
+				<tofile bep_offset="0" lang="ja" title="火鍋">580423</tofile>
+				<tofile bep_offset="0" lang="ja" title="ハングル">12384</tofile>
+				<tofile bep_offset="0" lang="ja" title="クズウコン">1395891</tofile>
+				<tofile bep_offset="0" lang="ja" title="ジャガイモ">3140</tofile>
+				<tofile bep_offset="0" lang="ja" title="デンプン">24193</tofile>
+				<tofile bep_offset="0" lang="ja" title="唐">11919</tofile>
+				<tofile bep_offset="0" lang="ja" title="チベット料理">1410576</tofile>
+				<tofile bep_offset="0" lang="ja" title="ベトナム料理">253252</tofile>
+				<tofile bep_offset="0" lang="ja" title="米">7516</tofile>
+				<tofile bep_offset="0" lang="ja" title="チャプスイ">173814</tofile>
+				<tofile bep_offset="0" lang="ja" title="地級市">209825</tofile>
+				<tofile bep_offset="0" lang="ja" title="山東省">20415</tofile>
+				<tofile bep_offset="0" lang="ja" title="竜口市">1631859</tofile>
+				<tofile bep_offset="0" lang="ja" title="炒める">57224</tofile>
+				<tofile bep_offset="0" lang="ja" title="コーンスターチ">48988</tofile>
+				<tofile bep_offset="0" lang="ja" title="ルアウ">1086459</tofile>
+				<tofile bep_offset="0" lang="ja" title="日本料理">5388</tofile>
+				<tofile bep_offset="0" lang="ja" title="パキスタン">6139</tofile>
+				<tofile bep_offset="0" lang="ja" title="招遠市">1631895</tofile>
+				<tofile bep_offset="0" lang="ja" title="中国語">5698</tofile>
+				<tofile bep_offset="0" lang="ja" title="キャッサバ">79674</tofile>
+				<tofile bep_offset="0" lang="ja" title="ビーフン">48458</tofile>
+				<tofile bep_offset="0" lang="ja" title="セロファン">141982</tofile>
+				<tofile bep_offset="0" lang="ja" title="サツマイモ">50811</tofile>
+				<tofile bep_offset="0" lang="ja" title="四川料理">69610</tofile>
+				<tofile bep_offset="0" lang="ja" title="インドネシア料理">73875</tofile>
+				<tofile bep_offset="0" lang="ja" title="春巻き">48515</tofile>
+				<tofile bep_offset="0" lang="ja" title="カンナ (植物)">324868</tofile>
+				<tofile bep_offset="0" lang="ja" title="餃子">25718</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="305152" name="Papaver rhoeas"> 
+		<outgoing>
+			<anchor offset="290" length="14" name="Papaver rhoeas">
+				<tofile bep_offset="0" lang="ja" title="ケシ">14176</tofile>
+				<tofile bep_offset="0" lang="ja" title="放牧">425677</tofile>
+				<tofile bep_offset="0" lang="ja" title="第一次世界大戦">5331</tofile>
+				<tofile bep_offset="0" lang="ja" title="ANZACの日">763621</tofile>
+				<tofile bep_offset="0" lang="ja" title="慰霊碑">712271</tofile>
+				<tofile bep_offset="0" lang="ja" title="ケシ目">832212</tofile>
+				<tofile bep_offset="0" lang="ja" title="ノーフォーク">1253066</tofile>
+				<tofile bep_offset="0" lang="ja" title="塹壕">246341</tofile>
+				<tofile bep_offset="0" lang="ja" title="ニュージーランド">6361</tofile>
+				<tofile bep_offset="0" lang="ja" title="エセックス">1291898</tofile>
+				<tofile bep_offset="0" lang="ja" title="一般名">488029</tofile>
+				<tofile bep_offset="0" lang="ja" title="ケシ科">278023</tofile>
+				<tofile bep_offset="0" lang="ja" title="西部戦線 (第一次世界大戦)">525735</tofile>
+				<tofile bep_offset="0" lang="ja" title="パリ">31</tofile>
+				<tofile bep_offset="0" lang="ja" title="旧世界">15523</tofile>
+				<tofile bep_offset="0" lang="ja" title="雑草">188958</tofile>
+				<tofile bep_offset="0" lang="ja" title="土壌シードバンク">1893673</tofile>
+				<tofile bep_offset="0" lang="ja" title="ケシ属">968182</tofile>
+				<tofile bep_offset="0" lang="ja" title="ラテックス">725223</tofile>
+				<tofile bep_offset="0" lang="ja" title="カナダ">1698830</tofile>
+				<tofile bep_offset="0" lang="ja" title="虞美人">226327</tofile>
+				<tofile bep_offset="0" lang="ja" title="覆土 (園芸)">2072005</tofile>
+				<tofile bep_offset="0" lang="ja" title="北宋">14070</tofile>
+				<tofile bep_offset="0" lang="ja" title="史記">2746</tofile>
+				<tofile bep_offset="0" lang="ja" title="秦">20417</tofile>
+				<tofile bep_offset="0" lang="ja" title="シベリアヒナゲシ">1631111</tofile>
+				<tofile bep_offset="0" lang="ja" title="1918年">2523</tofile>
+				<tofile bep_offset="0" lang="ja" title="長野電波技術研究所">686791</tofile>
+				<tofile bep_offset="0" lang="ja" title="詩人">4311</tofile>
+				<tofile bep_offset="0" lang="ja" title="ナガミヒナゲシ">560039</tofile>
+				<tofile bep_offset="0" lang="ja" title="フランスの国旗">34667</tofile>
+				<tofile bep_offset="0" lang="ja" title="項籍">49680</tofile>
+				<tofile bep_offset="0" lang="ja" title="垓下の歌">232608</tofile>
+				<tofile bep_offset="0" lang="ja" title="劉邦">30021</tofile>
+				<tofile bep_offset="0" lang="ja" title="オニゲシ">966115</tofile>
+				<tofile bep_offset="0" lang="ja" title="垓下">270658</tofile>
+				<tofile bep_offset="0" lang="ja" title="耐寒性">835883</tofile>
+				<tofile bep_offset="0" lang="ja" title="漢書">58137</tofile>
+				<tofile bep_offset="0" lang="ja" title="イギリス連邦">8352</tofile>
+				<tofile bep_offset="0" lang="ja" title="ハナビシソウ">934461</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="67050" name="Tutsi"> 
+		<outgoing>
+			<anchor offset="290" length="5" name="Tutsi">
+				<tofile bep_offset="0" lang="ja" title="イスラエル (民族)">95607</tofile>
+				<tofile bep_offset="0" lang="ja" title="ルワンダ">29123</tofile>
+				<tofile bep_offset="0" lang="ja" title="コンゴ民主共和国">8593</tofile>
+				<tofile bep_offset="0" lang="ja" title="ルワンダ愛国戦線">1264623</tofile>
+				<tofile bep_offset="0" lang="ja" title="フツ">77351</tofile>
+				<tofile bep_offset="0" lang="ja" title="植民地">25563</tofile>
+				<tofile bep_offset="0" lang="ja" title="アフリカの角">96097</tofile>
+				<tofile bep_offset="0" lang="ja" title="第一次世界大戦">5331</tofile>
+				<tofile bep_offset="0" lang="ja" title="ドイツ">1698878</tofile>
+				<tofile bep_offset="0" lang="ja" title="エチオピア">1443906</tofile>
+				<tofile bep_offset="0" lang="ja" title="メルシオル・ンダダイエ">135592</tofile>
+				<tofile bep_offset="0" lang="ja" title="ブラックアフリカ">46508</tofile>
+				<tofile bep_offset="0" lang="ja" title="トゥワ">1465981</tofile>
+				<tofile bep_offset="0" lang="ja" title="中部アフリカ">69004</tofile>
+				<tofile bep_offset="0" lang="ja" title="南キヴ州">1503085</tofile>
+				<tofile bep_offset="0" lang="ja" title="ブガンダ">1569924</tofile>
+				<tofile bep_offset="0" lang="ja" title="ベルギー">1698824</tofile>
+				<tofile bep_offset="0" lang="ja" title="ルアンダ＝ウルンディ">1980369</tofile>
+				<tofile bep_offset="0" lang="ja" title="カースト">10334</tofile>
+				<tofile bep_offset="0" lang="ja" title="アフリカ大湖沼">1057580</tofile>
+				<tofile bep_offset="0" lang="ja" title="民族">7565</tofile>
+				<tofile bep_offset="0" lang="ja" title="改宗">477902</tofile>
+				<tofile bep_offset="0" lang="ja" title="カトリシズム">996</tofile>
+				<tofile bep_offset="0" lang="ja" title="ウガンダ">6956</tofile>
+				<tofile bep_offset="0" lang="ja" title="バントゥー系民族">1946091</tofile>
+				<tofile bep_offset="0" lang="ja" title="住民投票">134326</tofile>
+				<tofile bep_offset="0" lang="ja" title="バントゥー語群">860950</tofile>
+				<tofile bep_offset="0" lang="ja" title="ルワンダ虐殺">362259</tofile>
+				<tofile bep_offset="0" lang="ja" title="北キヴ州">1502198</tofile>
+				<tofile bep_offset="0" lang="ja" title="北アフリカ">19216</tofile>
+				<tofile bep_offset="0" lang="ja" title="ブルンジ">28747</tofile>
+				<tofile bep_offset="0" lang="ja" title="Y染色体">56542</tofile>
+				<tofile bep_offset="0" lang="ja" title="18世紀">2782</tofile>
+				<tofile bep_offset="0" lang="ja" title="ルワンダ紛争">198047</tofile>
+				<tofile bep_offset="0" lang="ja" title="ヒューマン・ライツ・ウォッチ">436483</tofile>
+				<tofile bep_offset="0" lang="ja" title="バントゥー">1033256</tofile>
+				<tofile bep_offset="0" lang="ja" title="15世紀">2450</tofile>
+				<tofile bep_offset="0" lang="ja" title="武内進一">2253188</tofile>
+				<tofile bep_offset="0" lang="ja" title="ジョン・ハニング・スピーク">758777</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="323276" name="Toi invasion"> 
+		<outgoing>
+			<anchor offset="290" length="12" name="Toi invasion">
+				<tofile bep_offset="0" lang="ja" title="壱岐国">17555</tofile>
+				<tofile bep_offset="0" lang="ja" title="鬱陵島">102243</tofile>
+				<tofile bep_offset="0" lang="ja" title="対馬国">17544</tofile>
+				<tofile bep_offset="0" lang="ja" title="女真">12770</tofile>
+				<tofile bep_offset="0" lang="ja" title="海賊">84170</tofile>
+				<tofile bep_offset="0" lang="ja" title="高麗">19818</tofile>
+				<tofile bep_offset="0" lang="ja" title="九州">6106</tofile>
+				<tofile bep_offset="0" lang="ja" title="博多湾">189709</tofile>
+				<tofile bep_offset="0" lang="ja" title="元山市">209580</tofile>
+				<tofile bep_offset="0" lang="ja" title="新羅">30930</tofile>
+				<tofile bep_offset="0" lang="ja" title="朝鮮民主主義人民共和国">907180</tofile>
+				<tofile bep_offset="0" lang="ja" title="朝鮮語">7630</tofile>
+				<tofile bep_offset="0" lang="ja" title="高麗史">596969</tofile>
+				<tofile bep_offset="0" lang="ja" title="藤原行成">319010</tofile>
+				<tofile bep_offset="0" lang="ja" title="藤原定子">64448</tofile>
+				<tofile bep_offset="0" lang="ja" title="大宰権帥">231276</tofile>
+				<tofile bep_offset="0" lang="ja" title="長嶺諸近">1435907</tofile>
+				<tofile bep_offset="0" lang="ja" title="朝廷">23859</tofile>
+				<tofile bep_offset="0" lang="ja" title="対馬">19657</tofile>
+				<tofile bep_offset="0" lang="ja" title="満州">12898</tofile>
+				<tofile bep_offset="0" lang="ja" title="怡土郡">275851</tofile>
+				<tofile bep_offset="0" lang="ja" title="博多">59821</tofile>
+				<tofile bep_offset="0" lang="ja" title="藤原道長">19702</tofile>
+				<tofile bep_offset="0" lang="ja" title="金 (王朝)">13714</tofile>
+				<tofile bep_offset="0" lang="ja" title="朝貢">1873765</tofile>
+				<tofile bep_offset="0" lang="ja" title="藤原純友">124549</tofile>
+				<tofile bep_offset="0" lang="ja" title="塙保己一">149039</tofile>
+				<tofile bep_offset="0" lang="ja" title="石井進 (歴史学者)">653589</tofile>
+				<tofile bep_offset="0" lang="ja" title="粛慎">128319</tofile>
+				<tofile bep_offset="0" lang="ja" title="遼">13719</tofile>
+				<tofile bep_offset="0" lang="ja" title="菊池氏">172635</tofile>
+				<tofile bep_offset="0" lang="ja" title="清少納言">1860124</tofile>
+				<tofile bep_offset="0" lang="ja" title="朝野群載">1244817</tofile>
+				<tofile bep_offset="0" lang="ja" title="藤原理忠">1435235</tofile>
+				<tofile bep_offset="0" lang="ja" title="応永の外寇">18949</tofile>
+				<tofile bep_offset="0" lang="ja" title="契丹">78527</tofile>
+				<tofile bep_offset="0" lang="ja" title="枕草子">15809</tofile>
+				<tofile bep_offset="0" lang="ja" title="松浦党">117209</tofile>
+				<tofile bep_offset="0" lang="ja" title="源俊賢">224009</tofile>
+				<tofile bep_offset="0" lang="ja" title="ハングル">12384</tofile>
+				<tofile bep_offset="0" lang="ja" title="日本史の出来事一覧">4084</tofile>
+				<tofile bep_offset="0" lang="ja" title="弩">90757</tofile>
+				<tofile bep_offset="0" lang="ja" title="カニバリズム">5217</tofile>
+				<tofile bep_offset="0" lang="ja" title="藤原公任">84711</tofile>
+				<tofile bep_offset="0" lang="ja" title="筑前国">18182</tofile>
+				<tofile bep_offset="0" lang="ja" title="元寇">34251</tofile>
+				<tofile bep_offset="0" lang="ja" title="捕虜">133329</tofile>
+				<tofile bep_offset="0" lang="ja" title="承平天慶の乱">312082</tofile>
+				<tofile bep_offset="0" lang="ja" title="訓民正音">85757</tofile>
+				<tofile bep_offset="0" lang="ja" title="国分寺">56884</tofile>
+				<tofile bep_offset="0" lang="ja" title="北宋">14070</tofile>
+				<tofile bep_offset="0" lang="ja" title="防人">265444</tofile>
+				<tofile bep_offset="0" lang="ja" title="石井正敏">1100724</tofile>
+				<tofile bep_offset="0" lang="ja" title="武士">15894</tofile>
+				<tofile bep_offset="0" lang="ja" title="大宰府">123413</tofile>
+				<tofile bep_offset="0" lang="ja" title="寛仁">96343</tofile>
+				<tofile bep_offset="0" lang="ja" title="1019年">13934</tofile>
+				<tofile bep_offset="0" lang="ja" title="藤原隆家">137981</tofile>
+				<tofile bep_offset="0" lang="ja" title="農耕民族">178146</tofile>
+				<tofile bep_offset="0" lang="ja" title="3月27日 (旧暦)">64868</tofile>
+				<tofile bep_offset="0" lang="ja" title="清">7723</tofile>
+				<tofile bep_offset="0" lang="ja" title="藤原実資">223397</tofile>
+				<tofile bep_offset="0" lang="ja" title="平将門">1549431</tofile>
+				<tofile bep_offset="0" lang="ja" title="民族">7565</tofile>
+				<tofile bep_offset="0" lang="ja" title="満州民族">12773</tofile>
+				<tofile bep_offset="0" lang="ja" title="水軍">165106</tofile>
+				<tofile bep_offset="0" lang="ja" title="壱岐島">28481</tofile>
+				<tofile bep_offset="0" lang="ja" title="東京大学史料編纂所">149480</tofile>
+				<tofile bep_offset="0" lang="ja" title="豪族">161599</tofile>
+				<tofile bep_offset="0" lang="ja" title="小右記">282726</tofile>
+				<tofile bep_offset="0" lang="ja" title="新羅の入寇">842355</tofile>
+				<tofile bep_offset="0" lang="ja" title="日本">1864744</tofile>
+				<tofile bep_offset="0" lang="ja" title="15世紀">2450</tofile>
+				<tofile bep_offset="0" lang="ja" title="12世紀">2452</tofile>
+				<tofile bep_offset="0" lang="ja" title="犬食文化">134834</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+</crosslink-submission>

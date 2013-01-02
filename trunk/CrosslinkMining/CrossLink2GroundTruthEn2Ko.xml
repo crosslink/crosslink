@@ -1,0 +1,1198 @@
+<crosslink-submission participant-id="GT" run-id="GroundTruth" task="F2F" default_lang="ko" source_lang="en"><details>
+ <machine>
+	<cpu>Core 2 Duo</cpu>
+	<speed>2.33 MHz</speed>
+	<cores>2</cores>
+	<hyperthreads>1</hyperthreads>
+	<memory>8GB</memory>
+</machine>
+<time>TBC</time>
+</details>
+<description>
+This is the ground truth run
+</description>
+<collections><collection>CJK Wikipedia</collection></collections>
+	<topic file="33637" name="Wasabi"> 
+		<outgoing>
+			<anchor offset="290" length="6" name="Wasabi">
+				<tofile bep_offset="0" lang="ko" title="겨자">112039</tofile>
+				<tofile bep_offset="0" lang="ko" title="십자화과">130700</tofile>
+				<tofile bep_offset="0" lang="ko" title="블루리지 산맥">84579</tofile>
+				<tofile bep_offset="0" lang="ko" title="이즈 반도">103585</tofile>
+				<tofile bep_offset="0" lang="ko" title="온실">41456</tofile>
+				<tofile bep_offset="0" lang="ko" title="조미료">252410</tofile>
+				<tofile bep_offset="0" lang="ko" title="치약">235831</tofile>
+				<tofile bep_offset="0" lang="ko" title="이와테 현">24797</tofile>
+				<tofile bep_offset="0" lang="ko" title="가수분해">12893</tofile>
+				<tofile bep_offset="0" lang="ko" title="고추">125491</tofile>
+				<tofile bep_offset="0" lang="ko" title="뉴질랜드">9164</tofile>
+				<tofile bep_offset="0" lang="ko" title="족도리풀속">390203</tofile>
+				<tofile bep_offset="0" lang="ko" title="중화인민공화국">2205</tofile>
+				<tofile bep_offset="0" lang="ko" title="규슈">13961</tofile>
+				<tofile bep_offset="0" lang="ko" title="일본어의 한자">11906</tofile>
+				<tofile bep_offset="0" lang="ko" title="미생물">4214</tofile>
+				<tofile bep_offset="0" lang="ko" title="캡사이신">504989</tofile>
+				<tofile bep_offset="0" lang="ko" title="시즈오카 현">25606</tofile>
+				<tofile bep_offset="0" lang="ko" title="캐나다">1464</tofile>
+				<tofile bep_offset="0" lang="ko" title="초밥">48727</tofile>
+				<tofile bep_offset="0" lang="ko" title="나가노 현">24590</tofile>
+				<tofile bep_offset="0" lang="ko" title="시마네 현">8935</tofile>
+				<tofile bep_offset="0" lang="ko" title="아테지">385173</tofile>
+				<tofile bep_offset="0" lang="ko" title="머스터드">612829</tofile>
+				<tofile bep_offset="0" lang="ko" title="야마나시 현">23360</tofile>
+				<tofile bep_offset="0" lang="ko" title="교토 시">6670</tofile>
+				<tofile bep_offset="0" lang="ko" title="타이완">4959</tofile>
+				<tofile bep_offset="0" lang="ko" title="양배추">134509</tofile>
+				<tofile bep_offset="0" lang="ko" title="브리티시컬럼비아 주">5294</tofile>
+				<tofile bep_offset="0" lang="ko" title="홋카이도">6607</tofile>
+				<tofile bep_offset="0" lang="ko" title="간장">48730</tofile>
+				<tofile bep_offset="0" lang="ko" title="뿌리">282377</tofile>
+				<tofile bep_offset="0" lang="ko" title="갓 (식물)">291763</tofile>
+				<tofile bep_offset="0" lang="ko" title="세포">47385</tofile>
+				<tofile bep_offset="0" lang="ko" title="효소">12913</tofile>
+				<tofile bep_offset="0" lang="ko" title="산소">66823</tofile>
+				<tofile bep_offset="0" lang="ko" title="작용기">34276</tofile>
+				<tofile bep_offset="0" lang="ko" title="상추">144375</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="1261868" name="Tom yum"> 
+		<outgoing>
+			<anchor offset="290" length="7" name="Tom yum">
+				<tofile bep_offset="0" lang="ko" title="인도네시아">10235</tofile>
+				<tofile bep_offset="0" lang="ko" title="라임">71350</tofile>
+				<tofile bep_offset="0" lang="ko" title="고수 (식물)">33726</tofile>
+				<tofile bep_offset="0" lang="ko" title="말레이시아">9268</tofile>
+				<tofile bep_offset="0" lang="ko" title="싱가포르">77754</tofile>
+				<tofile bep_offset="0" lang="ko" title="아시아 금융 위기">71167</tofile>
+				<tofile bep_offset="0" lang="ko" title="타이">95488</tofile>
+				<tofile bep_offset="0" lang="ko" title="타이 요리">172852</tofile>
+				<tofile bep_offset="0" lang="ko" title="방콕">34883</tofile>
+				<tofile bep_offset="0" lang="ko" title="어장 (음식)">144428</tofile>
+				<tofile bep_offset="0" lang="ko" title="라오어">9683</tofile>
+				<tofile bep_offset="0" lang="ko" title="라오스">9170</tofile>
+				<tofile bep_offset="0" lang="ko" title="고추">125491</tofile>
+				<tofile bep_offset="0" lang="ko" title="닭">10021</tofile>
+				<tofile bep_offset="0" lang="ko" title="코코넛 밀크">144575</tofile>
+				<tofile bep_offset="0" lang="ko" title="라오스 요리">158500</tofile>
+				<tofile bep_offset="0" lang="ko" title="우따라딧">506437</tofile>
+				<tofile bep_offset="0" lang="ko" title="왕새우">303865</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="33822" name="Westwood Studios"> 
+		<outgoing>
+			<anchor offset="290" length="16" name="Westwood Studios">
+				<tofile bep_offset="0" lang="ko" title="월트 디즈니 컴퍼니">69816</tofile>
+				<tofile bep_offset="0" lang="ko" title="기네스 세계 기록">128322</tofile>
+				<tofile bep_offset="0" lang="ko" title="8비트">21807</tofile>
+				<tofile bep_offset="0" lang="ko" title="라스베이거스">472066</tofile>
+				<tofile bep_offset="0" lang="ko" title="EA 로스앤젤레스">92282</tofile>
+				<tofile bep_offset="0" lang="ko" title="녹스">315450</tofile>
+				<tofile bep_offset="0" lang="ko" title="게임 개발자">177545</tofile>
+				<tofile bep_offset="0" lang="ko" title="실시간 전략 게임">166878</tofile>
+				<tofile bep_offset="0" lang="ko" title="1인칭 슈팅 게임">10199</tofile>
+				<tofile bep_offset="0" lang="ko" title="던전 앤 드래곤">61208</tofile>
+				<tofile bep_offset="0" lang="ko" title="아미가">74763</tofile>
+				<tofile bep_offset="0" lang="ko" title="일렉트로닉 아츠">58960</tofile>
+				<tofile bep_offset="0" lang="ko" title="대규모 다중 사용자 온라인 롤플레잉 게임">5261</tofile>
+				<tofile bep_offset="0" lang="ko" title="어드벤처 게임">61813</tofile>
+				<tofile bep_offset="0" lang="ko" title="커맨드 앤 컨커: 타이베리안 돈">134606</tofile>
+				<tofile bep_offset="0" lang="ko" title="마스 사가">539940</tofile>
+				<tofile bep_offset="0" lang="ko" title="애틀랜타 브레이브스">68039</tofile>
+				<tofile bep_offset="0" lang="ko" title="마이크로소프트 윈도우">730498</tofile>
+				<tofile bep_offset="0" lang="ko" title="16비트">246249</tofile>
+				<tofile bep_offset="0" lang="ko" title="중력이 사라질 때">159083</tofile>
+				<tofile bep_offset="0" lang="ko" title="모뎀">497</tofile>
+				<tofile bep_offset="0" lang="ko" title="배틀테크">116809</tofile>
+				<tofile bep_offset="0" lang="ko" title="페트로그래피">560722</tofile>
+				<tofile bep_offset="0" lang="ko" title="어바인">142659</tofile>
+				<tofile bep_offset="0" lang="ko" title="커맨드 앤 컨커 시리즈">94382</tofile>
+				<tofile bep_offset="0" lang="ko" title="듄II">50127</tofile>
+				<tofile bep_offset="0" lang="ko" title="월트 디즈니 회사">354315</tofile>
+				<tofile bep_offset="0" lang="ko" title="사운드트랙">363481</tofile>
+				<tofile bep_offset="0" lang="ko" title="1990년">2657</tofile>
+				<tofile bep_offset="0" lang="ko" title="듄 2000">315452</tofile>
+				<tofile bep_offset="0" lang="ko" title="1995년">2612</tofile>
+				<tofile bep_offset="0" lang="ko" title="2003년">373</tofile>
+				<tofile bep_offset="0" lang="ko" title="캘리포니아 주">14285</tofile>
+				<tofile bep_offset="0" lang="ko" title="게임 개발사">512794</tofile>
+				<tofile bep_offset="0" lang="ko" title="1988년">4974</tofile>
+				<tofile bep_offset="0" lang="ko" title="1998년">2689</tofile>
+				<tofile bep_offset="0" lang="ko" title="1985년">6942</tofile>
+				<tofile bep_offset="0" lang="ko" title="네바다 주">11618</tofile>
+				<tofile bep_offset="0" lang="ko" title="컴퓨터·비디오 게임">447939</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="484999" name="Youtiao"> 
+		<outgoing>
+			<anchor offset="290" length="7" name="Youtiao">
+				<tofile bep_offset="0" lang="ko" title="동아시아">5736</tofile>
+				<tofile bep_offset="0" lang="ko" title="진회">201589</tofile>
+				<tofile bep_offset="0" lang="ko" title="두유">33482</tofile>
+				<tofile bep_offset="0" lang="ko" title="튀김">486729</tofile>
+				<tofile bep_offset="0" lang="ko" title="애국주의">138336</tofile>
+				<tofile bep_offset="0" lang="ko" title="말레이시아">9268</tofile>
+				<tofile bep_offset="0" lang="ko" title="노점 (가게)">547489</tofile>
+				<tofile bep_offset="0" lang="ko" title="미얀마">9280</tofile>
+				<tofile bep_offset="0" lang="ko" title="한월어">133794</tofile>
+				<tofile bep_offset="0" lang="ko" title="동남아시아">5739</tofile>
+				<tofile bep_offset="0" lang="ko" title="민난어">3624</tofile>
+				<tofile bep_offset="0" lang="ko" title="죽">211373</tofile>
+				<tofile bep_offset="0" lang="ko" title="타이">95488</tofile>
+				<tofile bep_offset="0" lang="ko" title="상하이 요리">298040</tofile>
+				<tofile bep_offset="0" lang="ko" title="모힝가">580195</tofile>
+				<tofile bep_offset="0" lang="ko" title="필리핀">103720</tofile>
+				<tofile bep_offset="0" lang="ko" title="베트남 요리">80315</tofile>
+				<tofile bep_offset="0" lang="ko" title="반죽">73786</tofile>
+				<tofile bep_offset="0" lang="ko" title="오스트레일리아">1461</tofile>
+				<tofile bep_offset="0" lang="ko" title="타이 남부">505701</tofile>
+				<tofile bep_offset="0" lang="ko" title="젓가락">32943</tofile>
+				<tofile bep_offset="0" lang="ko" title="뜨랑 주">508866</tofile>
+				<tofile bep_offset="0" lang="ko" title="조주어">104532</tofile>
+				<tofile bep_offset="0" lang="ko" title="중화요리">596</tofile>
+				<tofile bep_offset="0" lang="ko" title="악비">67715</tofile>
+				<tofile bep_offset="0" lang="ko" title="인도네시아">10235</tofile>
+				<tofile bep_offset="0" lang="ko" title="샌드위치">144930</tofile>
+				<tofile bep_offset="0" lang="ko" title="싱가포르">77754</tofile>
+				<tofile bep_offset="0" lang="ko" title="아침밥">193511</tofile>
+				<tofile bep_offset="0" lang="ko" title="대만어">734753</tofile>
+				<tofile bep_offset="0" lang="ko" title="광둥어">13091</tofile>
+				<tofile bep_offset="0" lang="ko" title="연유">294365</tofile>
+				<tofile bep_offset="0" lang="ko" title="바게트">81636</tofile>
+				<tofile bep_offset="0" lang="ko" title="타이완">4959</tofile>
+				<tofile bep_offset="0" lang="ko" title="송나라">40558</tofile>
+				<tofile bep_offset="0" lang="ko" title="말레이어">38708</tofile>
+				<tofile bep_offset="0" lang="ko" title="항저우">311842</tofile>
+				<tofile bep_offset="0" lang="ko" title="남송">31868</tofile>
+				<tofile bep_offset="0" lang="ko" title="저장 성">34733</tofile>
+				<tofile bep_offset="0" lang="ko" title="광둥 성">34704</tofile>
+				<tofile bep_offset="0" lang="ko" title="소금">46867</tofile>
+				<tofile bep_offset="0" lang="ko" title="밀가루">159266</tofile>
+				<tofile bep_offset="0" lang="ko" title="중국어">2304</tofile>
+				<tofile bep_offset="0" lang="ko" title="팽형">152963</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="2872586" name="Tsundere"> 
+		<outgoing>
+			<anchor offset="290" length="8" name="Tsundere">
+				<tofile bep_offset="0" lang="ko" title="나루토">65777</tofile>
+				<tofile bep_offset="0" lang="ko" title="아키하바라">72192</tofile>
+				<tofile bep_offset="0" lang="ko" title="오타쿠">31944</tofile>
+				<tofile bep_offset="0" lang="ko" title="메이드 카페">553649</tofile>
+				<tofile bep_offset="0" lang="ko" title="시끌별 녀석들">68638</tofile>
+				<tofile bep_offset="0" lang="ko" title="구기미야 리에">355710</tofile>
+				<tofile bep_offset="0" lang="ko" title="미소녀 게임">11183</tofile>
+				<tofile bep_offset="0" lang="ko" title="괴물 이야기">352923</tofile>
+				<tofile bep_offset="0" lang="ko" title="모에">42956</tofile>
+				<tofile bep_offset="0" lang="ko" title="일본의 만화">30384</tofile>
+				<tofile bep_offset="0" lang="ko" title="대중 매체">504600</tofile>
+				<tofile bep_offset="0" lang="ko" title="러키☆스타">118510</tofile>
+				<tofile bep_offset="0" lang="ko" title="러브히나">410866</tofile>
+				<tofile bep_offset="0" lang="ko" title="일본의 문화">460817</tofile>
+				<tofile bep_offset="0" lang="ko" title="일본의 애니메이션">559</tofile>
+				<tofile bep_offset="0" lang="ko" title="네가 바라는 영원">150447</tofile>
+				<tofile bep_offset="0" lang="ko" title="토라도라!">170516</tofile>
+				<tofile bep_offset="0" lang="ko" title="코믹 마켓">94385</tofile>
+				<tofile bep_offset="0" lang="ko" title="쿨데레">119353</tofile>
+				<tofile bep_offset="0" lang="ko" title="도짓코">177113</tofile>
+				<tofile bep_offset="0" lang="ko" title="엔젤하이로">258407</tofile>
+				<tofile bep_offset="0" lang="ko" title="의태어">300104</tofile>
+				<tofile bep_offset="0" lang="ko" title="일본어">355</tofile>
+				<tofile bep_offset="0" lang="ko" title="2채널">30479</tofile>
+				<tofile bep_offset="0" lang="ko" title="인터넷 유행어">564547</tofile>
+				<tofile bep_offset="0" lang="ko" title="일본">241789</tofile>
+				<tofile bep_offset="0" lang="ko" title="얀데레">138272</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="1148973" name="Song Hye-kyo"> 
+		<outgoing>
+			<anchor offset="290" length="12" name="Song Hye-kyo">
+				<tofile bep_offset="0" lang="ko" title="첫사랑 (KBS)">68645</tofile>
+				<tofile bep_offset="0" lang="ko" title="닌텐도 DS">13295</tofile>
+				<tofile bep_offset="0" lang="ko" title="후지 TV">20809</tofile>
+				<tofile bep_offset="0" lang="ko" title="파랑주의보">80449</tofile>
+				<tofile bep_offset="0" lang="ko" title="풀하우스 (드라마)">10341</tofile>
+				<tofile bep_offset="0" lang="ko" title="현빈">57033</tofile>
+				<tofile bep_offset="0" lang="ko" title="오우삼">664005</tofile>
+				<tofile bep_offset="0" lang="ko" title="황진이 (2007년 영화)">403840</tofile>
+				<tofile bep_offset="0" lang="ko" title="국공 내전">31591</tofile>
+				<tofile bep_offset="0" lang="ko" title="그들이 사는 세상">472743</tofile>
+				<tofile bep_offset="0" lang="ko" title="수호천사 (드라마)">320716</tofile>
+				<tofile bep_offset="0" lang="ko" title="원빈">68449</tofile>
+				<tofile bep_offset="0" lang="ko" title="대구광역시">707</tofile>
+				<tofile bep_offset="0" lang="ko" title="대한민국">249</tofile>
+				<tofile bep_offset="0" lang="ko" title="한국방송공사">191525</tofile>
+				<tofile bep_offset="0" lang="ko" title="배우">95174</tofile>
+				<tofile bep_offset="0" lang="ko" title="올인">67972</tofile>
+				<tofile bep_offset="0" lang="ko" title="대한민국 영화대상">50653</tofile>
+				<tofile bep_offset="0" lang="ko" title="제2차 세계 대전">10336</tofile>
+				<tofile bep_offset="0" lang="ko" title="세상의 중심에서 사랑을 외치다">94112</tofile>
+				<tofile bep_offset="0" lang="ko" title="Mnet 아시안 뮤직 어워드">136483</tofile>
+				<tofile bep_offset="0" lang="ko" title="리바이 스트라우스 앤드 컴퍼니">310339</tofile>
+				<tofile bep_offset="0" lang="ko" title="대한민국의 텔레비전 드라마">272393</tofile>
+				<tofile bep_offset="0" lang="ko" title="황진이">85213</tofile>
+				<tofile bep_offset="0" lang="ko" title="송승헌">216314</tofile>
+				<tofile bep_offset="0" lang="ko" title="김범수 (가수)">97751</tofile>
+				<tofile bep_offset="0" lang="ko" title="가을동화">68047</tofile>
+				<tofile bep_offset="0" lang="ko" title="기생">106497</tofile>
+				<tofile bep_offset="0" lang="ko" title="이병헌">8617</tofile>
+				<tofile bep_offset="0" lang="ko" title="강동원">68002</tofile>
+				<tofile bep_offset="0" lang="ko" title="아모레퍼시픽">173045</tofile>
+				<tofile bep_offset="0" lang="ko" title="SK그룹">30989</tofile>
+				<tofile bep_offset="0" lang="ko" title="비 (가수)">9632</tofile>
+				<tofile bep_offset="0" lang="ko" title="맥도날드">12272</tofile>
+				<tofile bep_offset="0" lang="ko" title="엽문 (무술가)">490723</tofile>
+				<tofile bep_offset="0" lang="ko" title="동아일보">126282</tofile>
+				<tofile bep_offset="0" lang="ko" title="호텔리어">194399</tofile>
+				<tofile bep_offset="0" lang="ko" title="이소룡">2553</tofile>
+				<tofile bep_offset="0" lang="ko" title="모델 (직업)">440343</tofile>
+				<tofile bep_offset="0" lang="ko" title="부산광역시">5155</tofile>
+				<tofile bep_offset="0" lang="ko" title="뮤직뱅크">231264</tofile>
+				<tofile bep_offset="0" lang="ko" title="왕가위">731347</tofile>
+				<tofile bep_offset="0" lang="ko" title="교복">90286</tofile>
+				<tofile bep_offset="0" lang="ko" title="햇빛 쏟아지다">398410</tofile>
+				<tofile bep_offset="0" lang="ko" title="한국일보">66855</tofile>
+				<tofile bep_offset="0" lang="ko" title="차태현">12188</tofile>
+				<tofile bep_offset="0" lang="ko" title="골든 디스크">68418</tofile>
+				<tofile bep_offset="0" lang="ko" title="KBS 연기대상">270439</tofile>
+				<tofile bep_offset="0" lang="ko" title="백상예술대상">142295</tofile>
+				<tofile bep_offset="0" lang="ko" title="유튜브">84071</tofile>
+				<tofile bep_offset="0" lang="ko" title="웅진코웨이">474006</tofile>
+				<tofile bep_offset="0" lang="ko" title="비씨카드">175738</tofile>
+				<tofile bep_offset="0" lang="ko" title="풀하우스">10891</tofile>
+				<tofile bep_offset="0" lang="ko" title="제주">316050</tofile>
+				<tofile bep_offset="0" lang="ko" title="김수근">193084</tofile>
+				<tofile bep_offset="0" lang="ko" title="아시아">5733</tofile>
+				<tofile bep_offset="0" lang="ko" title="신세대 보고서 어른들은 몰라요">404120</tofile>
+				<tofile bep_offset="0" lang="ko" title="일대종사">544793</tofile>
+				<tofile bep_offset="0" lang="ko" title="순풍산부인과">75413</tofile>
+				<tofile bep_offset="0" lang="ko" title="남영">445927</tofile>
+				<tofile bep_offset="0" lang="ko" title="행진 (시트콤)">452939</tofile>
+				<tofile bep_offset="0" lang="ko" title="2000년">530</tofile>
+				<tofile bep_offset="0" lang="ko" title="하이닉스반도체">145067</tofile>
+				<tofile bep_offset="0" lang="ko" title="2월 26일">1568</tofile>
+				<tofile bep_offset="0" lang="ko" title="현대정유">328471</tofile>
+				<tofile bep_offset="0" lang="ko" title="SK">21537</tofile>
+				<tofile bep_offset="0" lang="ko" title="2004년">2191</tofile>
+				<tofile bep_offset="0" lang="ko" title="교사">117152</tofile>
+				<tofile bep_offset="0" lang="ko" title="2003년">373</tofile>
+				<tofile bep_offset="0" lang="ko" title="황진이 (영화)">630257</tofile>
+				<tofile bep_offset="0" lang="ko" title="2007년">11623</tofile>
+				<tofile bep_offset="0" lang="ko" title="웅진식품">483851</tofile>
+				<tofile bep_offset="0" lang="ko" title="2012년">12025</tofile>
+				<tofile bep_offset="0" lang="ko" title="2001년">378</tofile>
+				<tofile bep_offset="0" lang="ko" title="2011년">12024</tofile>
+				<tofile bep_offset="0" lang="ko" title="리바이스">310340</tofile>
+				<tofile bep_offset="0" lang="ko" title="신성우">173128</tofile>
+				<tofile bep_offset="0" lang="ko" title="서울우유">67240</tofile>
+				<tofile bep_offset="0" lang="ko" title="카멜리아">624598</tofile>
+				<tofile bep_offset="0" lang="ko" title="달콤한 신부">402616</tofile>
+				<tofile bep_offset="0" lang="ko" title="은광여자고등학교">9311</tofile>
+				<tofile bep_offset="0" lang="ko" title="롯데제과">255719</tofile>
+				<tofile bep_offset="0" lang="ko" title="세종대학교">7141</tofile>
+				<tofile bep_offset="0" lang="ko" title="LG전자">30946</tofile>
+				<tofile bep_offset="0" lang="ko" title="진로">691816</tofile>
+				<tofile bep_offset="0" lang="ko" title="1982년">6282</tofile>
+				<tofile bep_offset="0" lang="ko" title="페티시즘">138841</tofile>
+				<tofile bep_offset="0" lang="ko" title="SBS">14210</tofile>
+				<tofile bep_offset="0" lang="ko" title="2009년">11923</tofile>
+				<tofile bep_offset="0" lang="ko" title="닌텐도">11928</tofile>
+				<tofile bep_offset="0" lang="ko" title="농심">35094</tofile>
+				<tofile bep_offset="0" lang="ko" title="Mnet">147870</tofile>
+				<tofile bep_offset="0" lang="ko" title="2005년">10311</tofile>
+				<tofile bep_offset="0" lang="ko" title="해태음료">287688</tofile>
+				<tofile bep_offset="0" lang="ko" title="2008년">11640</tofile>
+				<tofile bep_offset="0" lang="ko" title="육남매 (드라마)">429929</tofile>
+				<tofile bep_offset="0" lang="ko" title="1997년">2691</tofile>
+				<tofile bep_offset="0" lang="ko" title="CJ">35200</tofile>
+				<tofile bep_offset="0" lang="ko" title="백야 3.98">397837</tofile>
+				<tofile bep_offset="0" lang="ko" title="1996년">2693</tofile>
+				<tofile bep_offset="0" lang="ko" title="1998년">2689</tofile>
+				<tofile bep_offset="0" lang="ko" title="2010년">11970</tofile>
+				<tofile bep_offset="0" lang="ko" title="첫사랑 (드라마)">561196</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="1429653" name="Lee Young Ae"> 
+		<outgoing>
+			<anchor offset="290" length="12" name="Lee Young Ae">
+				<tofile bep_offset="0" lang="ko" title="미국">754</tofile>
+				<tofile bep_offset="0" lang="ko" title="일본방송협회">39653</tofile>
+				<tofile bep_offset="0" lang="ko" title="유덕화">832</tofile>
+				<tofile bep_offset="0" lang="ko" title="봄날은 간다 (영화)">255855</tofile>
+				<tofile bep_offset="0" lang="ko" title="비정부 기구">148214</tofile>
+				<tofile bep_offset="0" lang="ko" title="파파 (드라마)">52125</tofile>
+				<tofile bep_offset="0" lang="ko" title="카메오">610830</tofile>
+				<tofile bep_offset="0" lang="ko" title="국제 연합 아동 기금">86854</tofile>
+				<tofile bep_offset="0" lang="ko" title="LG전자">30946</tofile>
+				<tofile bep_offset="0" lang="ko" title="공동경비구역 JSA">55373</tofile>
+				<tofile bep_offset="0" lang="ko" title="아스팔트 사나이">398973</tofile>
+				<tofile bep_offset="0" lang="ko" title="불꽃 (드라마)">397553</tofile>
+				<tofile bep_offset="0" lang="ko" title="대장금">42374</tofile>
+				<tofile bep_offset="0" lang="ko" title="LG그룹">130904</tofile>
+				<tofile bep_offset="0" lang="ko" title="친절한 금자씨">30904</tofile>
+				<tofile bep_offset="0" lang="ko" title="청룡영화상">89381</tofile>
+				<tofile bep_offset="0" lang="ko" title="SBS">14210</tofile>
+				<tofile bep_offset="0" lang="ko" title="문화방송">11883</tofile>
+				<tofile bep_offset="0" lang="ko" title="서울특별시">259</tofile>
+				<tofile bep_offset="0" lang="ko" title="한국방송공사">191525</tofile>
+				<tofile bep_offset="0" lang="ko" title="대한민국">249</tofile>
+				<tofile bep_offset="0" lang="ko" title="카스트">196658</tofile>
+				<tofile bep_offset="0" lang="ko" title="배우">95174</tofile>
+				<tofile bep_offset="0" lang="ko" title="동기간">400759</tofile>
+				<tofile bep_offset="0" lang="ko" title="의가형제">68504</tofile>
+				<tofile bep_offset="0" lang="ko" title="혼인">43146</tofile>
+				<tofile bep_offset="0" lang="ko" title="2002년">39</tofile>
+				<tofile bep_offset="0" lang="ko" title="스페인">9826</tofile>
+				<tofile bep_offset="0" lang="ko" title="2000년">530</tofile>
+				<tofile bep_offset="0" lang="ko" title="언론">2507</tofile>
+				<tofile bep_offset="0" lang="ko" title="RNA">700</tofile>
+				<tofile bep_offset="0" lang="ko" title="중앙대학교">124548</tofile>
+				<tofile bep_offset="0" lang="ko" title="앙드레 김">13251</tofile>
+				<tofile bep_offset="0" lang="ko" title="잠실여자고등학교">525046</tofile>
+				<tofile bep_offset="0" lang="ko" title="파도 (드라마)">400191</tofile>
+				<tofile bep_offset="0" lang="ko" title="1990년">2657</tofile>
+				<tofile bep_offset="0" lang="ko" title="1993년">2654</tofile>
+				<tofile bep_offset="0" lang="ko" title="1994년">2653</tofile>
+				<tofile bep_offset="0" lang="ko" title="사랑하니까 (드라마)">394770</tofile>
+				<tofile bep_offset="0" lang="ko" title="1995년">2612</tofile>
+				<tofile bep_offset="0" lang="ko" title="2003년">373</tofile>
+				<tofile bep_offset="0" lang="ko" title="2001년">378</tofile>
+				<tofile bep_offset="0" lang="ko" title="1월 31일">1512</tofile>
+				<tofile bep_offset="0" lang="ko" title="초대 (드라마)">402381</tofile>
+				<tofile bep_offset="0" lang="ko" title="9월 16일">1714</tofile>
+				<tofile bep_offset="0" lang="ko" title="애드버킷">401835</tofile>
+				<tofile bep_offset="0" lang="ko" title="서궁">400750</tofile>
+				<tofile bep_offset="0" lang="ko" title="무한도전">98864</tofile>
+				<tofile bep_offset="0" lang="ko" title="댁의 남편은 어떠십니까">399378</tofile>
+				<tofile bep_offset="0" lang="ko" title="8월 24일">1692</tofile>
+				<tofile bep_offset="0" lang="ko" title="재밌는 영화">67994</tofile>
+				<tofile bep_offset="0" lang="ko" title="1984년">6944</tofile>
+				<tofile bep_offset="0" lang="ko" title="2009년">11923</tofile>
+				<tofile bep_offset="0" lang="ko" title="1999년">2557</tofile>
+				<tofile bep_offset="0" lang="ko" title="MBC 연기대상">160943</tofile>
+				<tofile bep_offset="0" lang="ko" title="대종상영화제">403420</tofile>
+				<tofile bep_offset="0" lang="ko" title="1971년">2928</tofile>
+				<tofile bep_offset="0" lang="ko" title="2005년">10311</tofile>
+				<tofile bep_offset="0" lang="ko" title="로맨스 (1998년 드라마)">149302</tofile>
+				<tofile bep_offset="0" lang="ko" title="출발! 모닝와이드">179987</tofile>
+				<tofile bep_offset="0" lang="ko" title="박찬욱">31157</tofile>
+				<tofile bep_offset="0" lang="ko" title="1997년">2691</tofile>
+				<tofile bep_offset="0" lang="ko" title="1996년">2693</tofile>
+				<tofile bep_offset="0" lang="ko" title="한양대학교">92942</tofile>
+				<tofile bep_offset="0" lang="ko" title="그들의 포옹">489694</tofile>
+				<tofile bep_offset="0" lang="ko" title="내가 사는 이유">402553</tofile>
+				<tofile bep_offset="0" lang="ko" title="1998년">2689</tofile>
+				<tofile bep_offset="0" lang="ko" title="2010년">11970</tofile>
+				<tofile bep_offset="0" lang="ko" title="KBS 연기대상">270439</tofile>
+				<tofile bep_offset="0" lang="ko" title="백상예술대상">142295</tofile>
+				<tofile bep_offset="0" lang="ko" title="SBS 연기대상">270435</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="174528" name="Saṃsāra"> 
+		<outgoing>
+			<anchor offset="290" length="10" name="Saṃsāra">
+				<tofile bep_offset="0" lang="ko" title="나루토">65777</tofile>
+				<tofile bep_offset="0" lang="ko" title="자이나교">206236</tofile>
+				<tofile bep_offset="0" lang="ko" title="탄생">146762</tofile>
+				<tofile bep_offset="0" lang="ko" title="죄">146781</tofile>
+				<tofile bep_offset="0" lang="ko" title="생명">12818</tofile>
+				<tofile bep_offset="0" lang="ko" title="금욕주의">276840</tofile>
+				<tofile bep_offset="0" lang="ko" title="일본의 만화">30384</tofile>
+				<tofile bep_offset="0" lang="ko" title="라자 요가">551796</tofile>
+				<tofile bep_offset="0" lang="ko" title="영혼">155221</tofile>
+				<tofile bep_offset="0" lang="ko" title="티베트어">89081</tofile>
+				<tofile bep_offset="0" lang="ko" title="의식 (신경심리학)">276559</tofile>
+				<tofile bep_offset="0" lang="ko" title="산스크리트어">39442</tofile>
+				<tofile bep_offset="0" lang="ko" title="카르마 요가">210867</tofile>
+				<tofile bep_offset="0" lang="ko" title="열반">127844</tofile>
+				<tofile bep_offset="0" lang="ko" title="우파니샤드">6626</tofile>
+				<tofile bep_offset="0" lang="ko" title="업">155146</tofile>
+				<tofile bep_offset="0" lang="ko" title="무명 (불교)">296520</tofile>
+				<tofile bep_offset="0" lang="ko" title="즈냐나 요가">213025</tofile>
+				<tofile bep_offset="0" lang="ko" title="시크교">158411</tofile>
+				<tofile bep_offset="0" lang="ko" title="플라톤주의">502963</tofile>
+				<tofile bep_offset="0" lang="ko" title="행 (불교)">296525</tofile>
+				<tofile bep_offset="0" lang="ko" title="자유">33862</tofile>
+				<tofile bep_offset="0" lang="ko" title="불교">426</tofile>
+				<tofile bep_offset="0" lang="ko" title="해탈">283532</tofile>
+				<tofile bep_offset="0" lang="ko" title="발출론">277090</tofile>
+				<tofile bep_offset="0" lang="ko" title="힌두교">12670</tofile>
+				<tofile bep_offset="0" lang="ko" title="환생">94267</tofile>
+				<tofile bep_offset="0" lang="ko" title="말레이어">38708</tofile>
+				<tofile bep_offset="0" lang="ko" title="죽음">111054</tofile>
+				<tofile bep_offset="0" lang="ko" title="축생도">610999</tofile>
+				<tofile bep_offset="0" lang="ko" title="아수라">474106</tofile>
+				<tofile bep_offset="0" lang="ko" title="서양">212259</tofile>
+				<tofile bep_offset="0" lang="ko" title="교의">277411</tofile>
+				<tofile bep_offset="0" lang="ko" title="삼계">609443</tofile>
+				<tofile bep_offset="0" lang="ko" title="교부">13357</tofile>
+				<tofile bep_offset="0" lang="ko" title="미계">624878</tofile>
+				<tofile bep_offset="0" lang="ko" title="인과응보">343242</tofile>
+				<tofile bep_offset="0" lang="ko" title="육도">585778</tofile>
+				<tofile bep_offset="0" lang="ko" title="악">241089</tofile>
+				<tofile bep_offset="0" lang="ko" title="지옥">142312</tofile>
+				<tofile bep_offset="0" lang="ko" title="부처">4785</tofile>
+				<tofile bep_offset="0" lang="ko" title="깨달음">575579</tofile>
+				<tofile bep_offset="0" lang="ko" title="도덕">208801</tofile>
+				<tofile bep_offset="0" lang="ko" title="아귀도">503103</tofile>
+				<tofile bep_offset="0" lang="ko" title="감각 기관">60787</tofile>
+				<tofile bep_offset="0" lang="ko" title="기독교">8394</tofile>
+				<tofile bep_offset="0" lang="ko" title="믿음">146787</tofile>
+				<tofile bep_offset="0" lang="ko" title="색, 계">145498</tofile>
+				<tofile bep_offset="0" lang="ko" title="피타고라스 학파">306771</tofile>
+				<tofile bep_offset="0" lang="ko" title="물질계">604613</tofile>
+				<tofile bep_offset="0" lang="ko" title="중생">296519</tofile>
+				<tofile bep_offset="0" lang="ko" title="6도">626997</tofile>
+				<tofile bep_offset="0" lang="ko" title="도리천">427105</tofile>
+				<tofile bep_offset="0" lang="ko" title="3계">611921</tofile>
+				<tofile bep_offset="0" lang="ko" title="결과">467739</tofile>
+				<tofile bep_offset="0" lang="ko" title="바실리데스">497151</tofile>
+				<tofile bep_offset="0" lang="ko" title="마음">148311</tofile>
+				<tofile bep_offset="0" lang="ko" title="구원">142999</tofile>
+				<tofile bep_offset="0" lang="ko" title="도솔천">427094</tofile>
+				<tofile bep_offset="0" lang="ko" title="천신">656892</tofile>
+				<tofile bep_offset="0" lang="ko" title="연기 (불교)">104757</tofile>
+				<tofile bep_offset="0" lang="ko" title="오리게네스">13370</tofile>
+				<tofile bep_offset="0" lang="ko" title="선">32826</tofile>
+				<tofile bep_offset="0" lang="ko" title="바실리데스파">524125</tofile>
+				<tofile bep_offset="0" lang="ko" title="원인과 결과의 법칙">630772</tofile>
+				<tofile bep_offset="0" lang="ko" title="인과법칙">630771</tofile>
+				<tofile bep_offset="0" lang="ko" title="지옥도">611911</tofile>
+				<tofile bep_offset="0" lang="ko" title="두려움">275979</tofile>
+				<tofile bep_offset="0" lang="ko" title="글로벌 세계 대백과사전">255598</tofile>
+				<tofile bep_offset="0" lang="ko" title="사왕천">427114</tofile>
+				<tofile bep_offset="0" lang="ko" title="헤르메스주의">599290</tofile>
+				<tofile bep_offset="0" lang="ko" title="영지주의자">630774</tofile>
+				<tofile bep_offset="0" lang="ko" title="육체">375460</tofile>
+				<tofile bep_offset="0" lang="ko" title="힌두 철학">609612</tofile>
+				<tofile bep_offset="0" lang="ko" title="인과관계">112584</tofile>
+				<tofile bep_offset="0" lang="ko" title="고대 이집트 종교">417225</tofile>
+				<tofile bep_offset="0" lang="ko" title="내세">142308</tofile>
+				<tofile bep_offset="0" lang="ko" title="성인 (종교)">32773</tofile>
+				<tofile bep_offset="0" lang="ko" title="과보">631017</tofile>
+				<tofile bep_offset="0" lang="ko" title="축생">503111</tofile>
+				<tofile bep_offset="0" lang="ko" title="수라도">503110</tofile>
+				<tofile bep_offset="0" lang="ko" title="재탄생">626710</tofile>
+				<tofile bep_offset="0" lang="ko" title="영지주의">13427</tofile>
+				<tofile bep_offset="0" lang="ko" title="인간도">503115</tofile>
+				<tofile bep_offset="0" lang="ko" title="기독교인">76844</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="3989039" name="Mawangdui"> 
+		<outgoing>
+			<anchor offset="290" length="9" name="Mawangdui">
+				<tofile bep_offset="0" lang="ko" title="창사 시">290330</tofile>
+				<tofile bep_offset="0" lang="ko" title="광시 좡족 자치구">34757</tofile>
+				<tofile bep_offset="0" lang="ko" title="역경">32693</tofile>
+				<tofile bep_offset="0" lang="ko" title="전한 문제">371460</tofile>
+				<tofile bep_offset="0" lang="ko" title="상아 (전설)">200227</tofile>
+				<tofile bep_offset="0" lang="ko" title="도교">9547</tofile>
+				<tofile bep_offset="0" lang="ko" title="기원전 168년">59381</tofile>
+				<tofile bep_offset="0" lang="ko" title="칠기">303388</tofile>
+				<tofile bep_offset="0" lang="ko" title="숯">114932</tofile>
+				<tofile bep_offset="0" lang="ko" title="전국책">663929</tofile>
+				<tofile bep_offset="0" lang="ko" title="명주">199133</tofile>
+				<tofile bep_offset="0" lang="ko" title="한나라">29495</tofile>
+				<tofile bep_offset="0" lang="ko" title="후난 성">34753</tofile>
+				<tofile bep_offset="0" lang="ko" title="사이프러스">56586</tofile>
+				<tofile bep_offset="0" lang="ko" title="광둥 성">34704</tofile>
+				<tofile bep_offset="0" lang="ko" title="유적">140796</tofile>
+				<tofile bep_offset="0" lang="ko" title="중화인민공화국">2205</tofile>
+				<tofile bep_offset="0" lang="ko" title="래커">405895</tofile>
+				<tofile bep_offset="0" lang="ko" title="증후을묘">280135</tofile>
+				<tofile bep_offset="0" lang="ko" title="미라">73359</tofile>
+				<tofile bep_offset="0" lang="ko" title="남월국">338648</tofile>
+				<tofile bep_offset="0" lang="ko" title="심근 경색">705</tofile>
+				<tofile bep_offset="0" lang="ko" title="진 (춘추 전국)">86483</tofile>
+				<tofile bep_offset="0" lang="ko" title="전한">13177</tofile>
+				<tofile bep_offset="0" lang="ko" title="창사">311540</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="249299" name="Zhu Bajie"> 
+		<outgoing>
+			<anchor offset="290" length="9" name="Zhu Bajie">
+				<tofile bep_offset="0" lang="ko" title="멧돼지속">95817</tofile>
+				<tofile bep_offset="0" lang="ko" title="부처">4785</tofile>
+				<tofile bep_offset="0" lang="ko" title="상아 (전설)">200227</tofile>
+				<tofile bep_offset="0" lang="ko" title="갈퀴">263901</tofile>
+				<tofile bep_offset="0" lang="ko" title="사람">307</tofile>
+				<tofile bep_offset="0" lang="ko" title="손오공">35103</tofile>
+				<tofile bep_offset="0" lang="ko" title="보살">164901</tofile>
+				<tofile bep_offset="0" lang="ko" title="옥황상제">8463</tofile>
+				<tofile bep_offset="0" lang="ko" title="서유기">9663</tofile>
+				<tofile bep_offset="0" lang="ko" title="연단술">365315</tofile>
+				<tofile bep_offset="0" lang="ko" title="영어">2177</tofile>
+				<tofile bep_offset="0" lang="ko" title="사오정">319819</tofile>
+				<tofile bep_offset="0" lang="ko" title="아라한">283535</tofile>
+				<tofile bep_offset="0" lang="ko" title="불교">426</tofile>
+				<tofile bep_offset="0" lang="ko" title="날아라 슈퍼보드">296530</tofile>
+				<tofile bep_offset="0" lang="ko" title="여성">81900</tofile>
+				<tofile bep_offset="0" lang="ko" title="석가모니">16010</tofile>
+				<tofile bep_offset="0" lang="ko" title="불경">9627</tofile>
+				<tofile bep_offset="0" lang="ko" title="돼지">8035</tofile>
+				<tofile bep_offset="0" lang="ko" title="돈">9925</tofile>
+				<tofile bep_offset="0" lang="ko" title="현장">65172</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="4898073" name="Crown Prince Sado"> 
+		<outgoing>
+			<anchor offset="290" length="17" name="Crown Prince Sado">
+				<tofile bep_offset="0" lang="ko" title="정신 질환">169010</tofile>
+				<tofile bep_offset="0" lang="ko" title="조선 정조">11099</tofile>
+				<tofile bep_offset="0" lang="ko" title="조선 영조">11098</tofile>
+				<tofile bep_offset="0" lang="ko" title="군주">10813</tofile>
+				<tofile bep_offset="0" lang="ko" title="한국">280</tofile>
+				<tofile bep_offset="0" lang="ko" title="융건릉">268495</tofile>
+				<tofile bep_offset="0" lang="ko" title="수원시">6333</tofile>
+				<tofile bep_offset="0" lang="ko" title="수원 화성">6343</tofile>
+				<tofile bep_offset="0" lang="ko" title="홍봉한">285796</tofile>
+				<tofile bep_offset="0" lang="ko" title="조선 진종">62770</tofile>
+				<tofile bep_offset="0" lang="ko" title="화평옹주">643999</tofile>
+				<tofile bep_offset="0" lang="ko" title="2월 13일">1574</tofile>
+				<tofile bep_offset="0" lang="ko" title="영빈 이씨">182969</tofile>
+				<tofile bep_offset="0" lang="ko" title="1735년">16801</tofile>
+				<tofile bep_offset="0" lang="ko" title="조문명">314395</tofile>
+				<tofile bep_offset="0" lang="ko" title="음력 1월">19007</tofile>
+				<tofile bep_offset="0" lang="ko" title="정성왕후">51085</tofile>
+				<tofile bep_offset="0" lang="ko" title="조선 경종">11097</tofile>
+				<tofile bep_offset="0" lang="ko" title="경복궁">6611</tofile>
+				<tofile bep_offset="0" lang="ko" title="6월 14일">1823</tofile>
+				<tofile bep_offset="0" lang="ko" title="부윤">341750</tofile>
+				<tofile bep_offset="0" lang="ko" title="한중록">76300</tofile>
+				<tofile bep_offset="0" lang="ko" title="한국방송공사">191525</tofile>
+				<tofile bep_offset="0" lang="ko" title="이종성">150645</tofile>
+				<tofile bep_offset="0" lang="ko" title="윤달">15093</tofile>
+				<tofile bep_offset="0" lang="ko" title="1692년">16760</tofile>
+				<tofile bep_offset="0" lang="ko" title="경모궁">301724</tofile>
+				<tofile bep_offset="0" lang="ko" title="무 (종교)">8540</tofile>
+				<tofile bep_offset="0" lang="ko" title="1990년">2657</tofile>
+				<tofile bep_offset="0" lang="ko" title="1694년">16762</tofile>
+				<tofile bep_offset="0" lang="ko" title="1800년">16862</tofile>
+				<tofile bep_offset="0" lang="ko" title="1801년">16863</tofile>
+				<tofile bep_offset="0" lang="ko" title="5월">408</tofile>
+				<tofile bep_offset="0" lang="ko" title="2011년">12024</tofile>
+				<tofile bep_offset="0" lang="ko" title="춘천시">737</tofile>
+				<tofile bep_offset="0" lang="ko" title="대한제국 고종">6608</tofile>
+				<tofile bep_offset="0" lang="ko" title="화협옹주">644001</tofile>
+				<tofile bep_offset="0" lang="ko" title="1696년">16764</tofile>
+				<tofile bep_offset="0" lang="ko" title="1764년">6182</tofile>
+				<tofile bep_offset="0" lang="ko" title="임호 (배우)">235268</tofile>
+				<tofile bep_offset="0" lang="ko" title="숙의 문씨">643770</tofile>
+				<tofile bep_offset="0" lang="ko" title="조재호">196792</tofile>
+				<tofile bep_offset="0" lang="ko" title="노론">194443</tofile>
+				<tofile bep_offset="0" lang="ko" title="은언군">51106</tofile>
+				<tofile bep_offset="0" lang="ko" title="무속">16937</tofile>
+				<tofile bep_offset="0" lang="ko" title="이이명">267380</tofile>
+				<tofile bep_offset="0" lang="ko" title="무사 백동수">647899</tofile>
+				<tofile bep_offset="0" lang="ko" title="정보석">169083</tofile>
+				<tofile bep_offset="0" lang="ko" title="1815년">16875</tofile>
+				<tofile bep_offset="0" lang="ko" title="SBS">14210</tofile>
+				<tofile bep_offset="0" lang="ko" title="은신군">51407</tofile>
+				<tofile bep_offset="0" lang="ko" title="1661년">16731</tofile>
+				<tofile bep_offset="0" lang="ko" title="화성">518</tofile>
+				<tofile bep_offset="0" lang="ko" title="온양시">94297</tofile>
+				<tofile bep_offset="0" lang="ko" title="오만석">154259</tofile>
+				<tofile bep_offset="0" lang="ko" title="1901년">9994</tofile>
+				<tofile bep_offset="0" lang="ko" title="은전군">51214</tofile>
+				<tofile bep_offset="0" lang="ko" title="효순왕후">216373</tofile>
+				<tofile bep_offset="0" lang="ko" title="정순왕후">127382</tofile>
+				<tofile bep_offset="0" lang="ko" title="화완옹주">414966</tofile>
+				<tofile bep_offset="0" lang="ko" title="김귀주">169762</tofile>
+				<tofile bep_offset="0" lang="ko" title="이창훈">68617</tofile>
+				<tofile bep_offset="0" lang="ko" title="조재호 (1702년)">626958</tofile>
+				<tofile bep_offset="0" lang="ko" title="조선 숙종">6385</tofile>
+				<tofile bep_offset="0" lang="ko" title="광무 (연호)">41252</tofile>
+				<tofile bep_offset="0" lang="ko" title="융릉">328866</tofile>
+				<tofile bep_offset="0" lang="ko" title="건릉">328863</tofile>
+				<tofile bep_offset="0" lang="ko" title="최수종">124732</tofile>
+				<tofile bep_offset="0" lang="ko" title="광주">697848</tofile>
+				<tofile bep_offset="0" lang="ko" title="7월 12일">1763</tofile>
+				<tofile bep_offset="0" lang="ko" title="정조">21930</tofile>
+				<tofile bep_offset="0" lang="ko" title="이건명">307964</tofile>
+				<tofile bep_offset="0" lang="ko" title="1754년">16819</tofile>
+				<tofile bep_offset="0" lang="ko" title="1752년">16817</tofile>
+				<tofile bep_offset="0" lang="ko" title="1750년">16815</tofile>
+				<tofile bep_offset="0" lang="ko" title="1749년">16814</tofile>
+				<tofile bep_offset="0" lang="ko" title="이산">129887</tofile>
+				<tofile bep_offset="0" lang="ko" title="창경궁">82114</tofile>
+				<tofile bep_offset="0" lang="ko" title="숙빈 최씨">190440</tofile>
+				<tofile bep_offset="0" lang="ko" title="이덕일">81952</tofile>
+				<tofile bep_offset="0" lang="ko" title="김창집">287863</tofile>
+				<tofile bep_offset="0" lang="ko" title="2007년">11623</tofile>
+				<tofile bep_offset="0" lang="ko" title="아산시">35060</tofile>
+				<tofile bep_offset="0" lang="ko" title="조선왕조실록">9589</tofile>
+				<tofile bep_offset="0" lang="ko" title="1988년">4974</tofile>
+				<tofile bep_offset="0" lang="ko" title="이인좌의 난">223017</tofile>
+				<tofile bep_offset="0" lang="ko" title="홍계희">6248</tofile>
+				<tofile bep_offset="0" lang="ko" title="1755년">16820</tofile>
+				<tofile bep_offset="0" lang="ko" title="화성시">8984</tofile>
+				<tofile bep_offset="0" lang="ko" title="양주시">8986</tofile>
+				<tofile bep_offset="0" lang="ko" title="1757년">16822</tofile>
+				<tofile bep_offset="0" lang="ko" title="김종수">199933</tofile>
+				<tofile bep_offset="0" lang="ko" title="탕평책">260207</tofile>
+				<tofile bep_offset="0" lang="ko" title="충청남도">6191</tofile>
+				<tofile bep_offset="0" lang="ko" title="1759년">16824</tofile>
+				<tofile bep_offset="0" lang="ko" title="대왕의 길">401831</tofile>
+				<tofile bep_offset="0" lang="ko" title="1758년">16823</tofile>
+				<tofile bep_offset="0" lang="ko" title="1762년">16826</tofile>
+				<tofile bep_offset="0" lang="ko" title="전라남도">6194</tofile>
+				<tofile bep_offset="0" lang="ko" title="조태채">319723</tofile>
+				<tofile bep_offset="0" lang="ko" title="조선왕조 오백년 (드라마)">656324</tofile>
+				<tofile bep_offset="0" lang="ko" title="10월 17일">1744</tofile>
+				<tofile bep_offset="0" lang="ko" title="1777년">8093</tofile>
+				<tofile bep_offset="0" lang="ko" title="의소세손">163726</tofile>
+				<tofile bep_offset="0" lang="ko" title="배봉산">9093</tofile>
+				<tofile bep_offset="0" lang="ko" title="선의왕후">266090</tofile>
+				<tofile bep_offset="0" lang="ko" title="조선 철종">11102</tofile>
+				<tofile bep_offset="0" lang="ko" title="경기도">5511</tofile>
+				<tofile bep_offset="0" lang="ko" title="조선">74134</tofile>
+				<tofile bep_offset="0" lang="ko" title="경의왕후">494650</tofile>
+				<tofile bep_offset="0" lang="ko" title="1776년">16839</tofile>
+				<tofile bep_offset="0" lang="ko" title="1771년">16834</tofile>
+				<tofile bep_offset="0" lang="ko" title="추존">227459</tofile>
+				<tofile bep_offset="0" lang="ko" title="1899년">11897</tofile>
+				<tofile bep_offset="0" lang="ko" title="현륭원">482973</tofile>
+				<tofile bep_offset="0" lang="ko" title="홍인한">156077</tofile>
+				<tofile bep_offset="0" lang="ko" title="1778년">16840</tofile>
+				<tofile bep_offset="0" lang="ko" title="1720년">16786</tofile>
+				<tofile bep_offset="0" lang="ko" title="김상로">397674</tofile>
+				<tofile bep_offset="0" lang="ko" title="대리청정">198635</tofile>
+				<tofile bep_offset="0" lang="ko" title="유척기">564850</tofile>
+				<tofile bep_offset="0" lang="ko" title="김한구">225020</tofile>
+				<tofile bep_offset="0" lang="ko" title="7월 4일">1682</tofile>
+				<tofile bep_offset="0" lang="ko" title="헌경왕후">136412</tofile>
+				<tofile bep_offset="0" lang="ko" title="뒤주">267295</tofile>
+				<tofile bep_offset="0" lang="ko" title="평안도">69787</tofile>
+				<tofile bep_offset="0" lang="ko" title="1998년">2689</tofile>
+				<tofile bep_offset="0" lang="ko" title="소론">194171</tofile>
+				<tofile bep_offset="0" lang="ko" title="양주군">193047</tofile>
+				<tofile bep_offset="0" lang="ko" title="문화방송">11883</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="961283" name="Tieguanyin"> 
+		<outgoing>
+			<anchor offset="290" length="10" name="Tieguanyin">
+				<tofile bep_offset="0" lang="ko" title="안시 현">345917</tofile>
+				<tofile bep_offset="0" lang="ko" title="푸젠 성">34742</tofile>
+				<tofile bep_offset="0" lang="ko" title="저장 성">34733</tofile>
+				<tofile bep_offset="0" lang="ko" title="건륭제">29590</tofile>
+				<tofile bep_offset="0" lang="ko" title="타이완">4959</tofile>
+				<tofile bep_offset="0" lang="ko" title="중화인민공화국">2205</tofile>
+				<tofile bep_offset="0" lang="ko" title="난터우">307989</tofile>
+				<tofile bep_offset="0" lang="ko" title="푸퉈 산">199251</tofile>
+				<tofile bep_offset="0" lang="ko" title="관세음보살">142880</tofile>
+				<tofile bep_offset="0" lang="ko" title="우롱차">145023</tofile>
+				<tofile bep_offset="0" lang="ko" title="녹차">145021</tofile>
+				<tofile bep_offset="0" lang="ko" title="백차">193274</tofile>
+				<tofile bep_offset="0" lang="ko" title="백호은침">196016</tofile>
+				<tofile bep_offset="0" lang="ko" title="차 (음료)">23131</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="279684" name="Chef"> 
+		<outgoing>
+			<anchor offset="290" length="4" name="Chef">
+				<tofile bep_offset="0" lang="ko" title="프랑스어">2914</tofile>
+				<tofile bep_offset="0" lang="ko" title="식당 (주택)">636495</tofile>
+				<tofile bep_offset="0" lang="ko" title="컵케이크">154284</tofile>
+				<tofile bep_offset="0" lang="ko" title="북경오리">242344</tofile>
+				<tofile bep_offset="0" lang="ko" title="초콜릿">44293</tofile>
+				<tofile bep_offset="0" lang="ko" title="마카롱">126093</tofile>
+				<tofile bep_offset="0" lang="ko" title="물고기">1441</tofile>
+				<tofile bep_offset="0" lang="ko" title="멕시코">9270</tofile>
+				<tofile bep_offset="0" lang="ko" title="고무장갑">342849</tofile>
+				<tofile bep_offset="0" lang="ko" title="부엌">247156</tofile>
+				<tofile bep_offset="0" lang="ko" title="샐러드">229748</tofile>
+				<tofile bep_offset="0" lang="ko" title="라틴어">8184</tofile>
+				<tofile bep_offset="0" lang="ko" title="고기">111436</tofile>
+				<tofile bep_offset="0" lang="ko" title="나막신">267338</tofile>
+				<tofile bep_offset="0" lang="ko" title="동계어">82591</tofile>
+				<tofile bep_offset="0" lang="ko" title="정육점">155908</tofile>
+				<tofile bep_offset="0" lang="ko" title="파티시에">343429</tofile>
+				<tofile bep_offset="0" lang="ko" title="비스킷">294662</tofile>
+				<tofile bep_offset="0" lang="ko" title="소스 (음식)">278417</tofile>
+				<tofile bep_offset="0" lang="ko" title="채소">82410</tofile>
+				<tofile bep_offset="0" lang="ko" title="영어">2177</tofile>
+				<tofile bep_offset="0" lang="ko" title="파테">456757</tofile>
+				<tofile bep_offset="0" lang="ko" title="직업">81848</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="6326659" name="Japanese giant salamander"> 
+		<outgoing>
+			<anchor offset="290" length="25" name="Japanese giant salamander">
+				<tofile bep_offset="0" lang="ko" title="국제 자연 보호 연맹">224956</tofile>
+				<tofile bep_offset="0" lang="ko" title="아가미">291220</tofile>
+				<tofile bep_offset="0" lang="ko" title="규슈">13961</tofile>
+				<tofile bep_offset="0" lang="ko" title="시코쿠">14822</tofile>
+				<tofile bep_offset="0" lang="ko" title="고유종">134633</tofile>
+				<tofile bep_offset="0" lang="ko" title="알">106378</tofile>
+				<tofile bep_offset="0" lang="ko" title="실트">447518</tofile>
+				<tofile bep_offset="0" lang="ko" title="야행성">485857</tofile>
+				<tofile bep_offset="0" lang="ko" title="물질대사">2911</tofile>
+				<tofile bep_offset="0" lang="ko" title="우키요에">116862</tofile>
+				<tofile bep_offset="0" lang="ko" title="도롱뇽목">133341</tofile>
+				<tofile bep_offset="0" lang="ko" title="데지마">100900</tofile>
+				<tofile bep_offset="0" lang="ko" title="산소">66823</tofile>
+				<tofile bep_offset="0" lang="ko" title="네덜란드">7757</tofile>
+				<tofile bep_offset="0" lang="ko" title="혼슈">20974</tofile>
+				<tofile bep_offset="0" lang="ko" title="측선">539414</tofile>
+				<tofile bep_offset="0" lang="ko" title="사무라이">168685</tofile>
+				<tofile bep_offset="0" lang="ko" title="일본">241789</tofile>
+				<tofile bep_offset="0" lang="ko" title="필리프 프란츠 폰 지볼트">291447</tofile>
+				<tofile bep_offset="0" lang="ko" title="레이던">289743</tofile>
+				<tofile bep_offset="0" lang="ko" title="멸종위기에 처한 야생동식물종의 국제거래에 관한 협약">85709</tofile>
+				<tofile bep_offset="0" lang="ko" title="중국장수도롱뇽">231010</tofile>
+				<tofile bep_offset="0" lang="ko" title="1820년대">19577</tofile>
+				<tofile bep_offset="0" lang="ko" title="1837년">16897</tofile>
+				<tofile bep_offset="0" lang="ko" title="양서류">469570</tofile>
+				<tofile bep_offset="0" lang="ko" title="척삭동물">7580</tofile>
+				<tofile bep_offset="0" lang="ko" title="동물">7287</tofile>
+				<tofile bep_offset="0" lang="ko" title="장수도롱뇽속">240054</tofile>
+				<tofile bep_offset="0" lang="ko" title="장수도롱뇽과">240055</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="744553" name="Tolui"> 
+		<outgoing>
+			<anchor offset="290" length="5" name="Tolui">
+				<tofile bep_offset="0" lang="ko" title="칭기즈 칸">2604</tofile>
+				<tofile bep_offset="0" lang="ko" title="묘호">92086</tofile>
+				<tofile bep_offset="0" lang="ko" title="메르브">181460</tofile>
+				<tofile bep_offset="0" lang="ko" title="보르지긴">233885</tofile>
+				<tofile bep_offset="0" lang="ko" title="쿠빌라이 칸">31594</tofile>
+				<tofile bep_offset="0" lang="ko" title="타타르족">22370</tofile>
+				<tofile bep_offset="0" lang="ko" title="원나라">31869</tofile>
+				<tofile bep_offset="0" lang="ko" title="북원">235327</tofile>
+				<tofile bep_offset="0" lang="ko" title="니샤푸르">679622</tofile>
+				<tofile bep_offset="0" lang="ko" title="귀위크 칸">207686</tofile>
+				<tofile bep_offset="0" lang="ko" title="성씨">267414</tofile>
+				<tofile bep_offset="0" lang="ko" title="서하">99794</tofile>
+				<tofile bep_offset="0" lang="ko" title="아리크 부케">235518</tofile>
+				<tofile bep_offset="0" lang="ko" title="이란">10011</tofile>
+				<tofile bep_offset="0" lang="ko" title="주치 (몽골)">179069</tofile>
+				<tofile bep_offset="0" lang="ko" title="토그릴 완 칸">142818</tofile>
+				<tofile bep_offset="0" lang="ko" title="보르테">236032</tofile>
+				<tofile bep_offset="0" lang="ko" title="칸 (칭호)">105196</tofile>
+				<tofile bep_offset="0" lang="ko" title="몽골비사">280636</tofile>
+				<tofile bep_offset="0" lang="ko" title="몽골">9279</tofile>
+				<tofile bep_offset="0" lang="ko" title="훌라구">206669</tofile>
+				<tofile bep_offset="0" lang="ko" title="우구데이 칸">178410</tofile>
+				<tofile bep_offset="0" lang="ko" title="일 칸국">165067</tofile>
+				<tofile bep_offset="0" lang="ko" title="황제">6277</tofile>
+				<tofile bep_offset="0" lang="ko" title="몽케 칸">206603</tofile>
+				<tofile bep_offset="0" lang="ko" title="더싱 시">347906</tofile>
+				<tofile bep_offset="0" lang="ko" title="몽골 제국">144005</tofile>
+				<tofile bep_offset="0" lang="ko" title="호라즘 샤 왕조">295437</tofile>
+				<tofile bep_offset="0" lang="ko" title="소르칵타니">236040</tofile>
+				<tofile bep_offset="0" lang="ko" title="화베이">87095</tofile>
+				<tofile bep_offset="0" lang="ko" title="금나라">81927</tofile>
+				<tofile bep_offset="0" lang="ko" title="바그다드">14686</tofile>
+				<tofile bep_offset="0" lang="ko" title="1227년">16307</tofile>
+				<tofile bep_offset="0" lang="ko" title="쿠릴타이">180942</tofile>
+				<tofile bep_offset="0" lang="ko" title="1229년">16309</tofile>
+				<tofile bep_offset="0" lang="ko" title="차가타이">178408</tofile>
+				<tofile bep_offset="0" lang="ko" title="다마스쿠스">46371</tofile>
+				<tofile bep_offset="0" lang="ko" title="쿠빌라이">396421</tofile>
+				<tofile bep_offset="0" lang="ko" title="네스토리우스">31155</tofile>
+				<tofile bep_offset="0" lang="ko" title="오고타이">204921</tofile>
+				<tofile bep_offset="0" lang="ko" title="1192년">16272</tofile>
+				<tofile bep_offset="0" lang="ko" title="1232년">16312</tofile>
+				<tofile bep_offset="0" lang="ko" title="송나라">40558</tofile>
+				<tofile bep_offset="0" lang="ko" title="일 한국">539922</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="220432" name="Xylitol"> 
+		<outgoing>
+			<anchor offset="290" length="7" name="Xylitol">
+				<tofile bep_offset="0" lang="ko" title="미국 식품의약국">242957</tofile>
+				<tofile bep_offset="0" lang="ko" title="섬유">189043</tofile>
+				<tofile bep_offset="0" lang="ko" title="솔비톨">252759</tofile>
+				<tofile bep_offset="0" lang="ko" title="수크랄로스">252758</tofile>
+				<tofile bep_offset="0" lang="ko" title="열매">42342</tofile>
+				<tofile bep_offset="0" lang="ko" title="수크로스">13003</tofile>
+				<tofile bep_offset="0" lang="ko" title="음식 에너지">153165</tofile>
+				<tofile bep_offset="0" lang="ko" title="중화인민공화국">2205</tofile>
+				<tofile bep_offset="0" lang="ko" title="귀지">154717</tofile>
+				<tofile bep_offset="0" lang="ko" title="방귀">146998</tofile>
+				<tofile bep_offset="0" lang="ko" title="감미료">13143</tofile>
+				<tofile bep_offset="0" lang="ko" title="옥수수">129417</tofile>
+				<tofile bep_offset="0" lang="ko" title="중이염">284244</tofile>
+				<tofile bep_offset="0" lang="ko" title="버섯">9354</tofile>
+				<tofile bep_offset="0" lang="ko" title="저혈당증">358751</tofile>
+				<tofile bep_offset="0" lang="ko" title="귀리">145216</tofile>
+				<tofile bep_offset="0" lang="ko" title="페키니즈">263027</tofile>
+				<tofile bep_offset="0" lang="ko" title="유럽">1852</tofile>
+				<tofile bep_offset="0" lang="ko" title="글루코스">37874</tofile>
+				<tofile bep_offset="0" lang="ko" title="설탕">46866</tofile>
+				<tofile bep_offset="0" lang="ko" title="플라크">403743</tofile>
+				<tofile bep_offset="0" lang="ko" title="아스파탐">12161</tofile>
+				<tofile bep_offset="0" lang="ko" title="알데하이드">7246</tofile>
+				<tofile bep_offset="0" lang="ko" title="프럭토스">157954</tofile>
+				<tofile bep_offset="0" lang="ko" title="골다공증">149028</tofile>
+				<tofile bep_offset="0" lang="ko" title="유기 화합물">100935</tofile>
+				<tofile bep_offset="0" lang="ko" title="이성질체">39824</tofile>
+				<tofile bep_offset="0" lang="ko" title="충치">426266</tofile>
+				<tofile bep_offset="0" lang="ko" title="대사 증후군">123690</tofile>
+				<tofile bep_offset="0" lang="ko" title="치석">143989</tofile>
+				<tofile bep_offset="0" lang="ko" title="껌">235933</tofile>
+				<tofile bep_offset="0" lang="ko" title="치약">235831</tofile>
+				<tofile bep_offset="0" lang="ko" title="세균">8859</tofile>
+				<tofile bep_offset="0" lang="ko" title="빵">66498</tofile>
+				<tofile bep_offset="0" lang="ko" title="완하제">708747</tofile>
+				<tofile bep_offset="0" lang="ko" title="수소 이온 농도">38044</tofile>
+				<tofile bep_offset="0" lang="ko" title="칼로리">3733</tofile>
+				<tofile bep_offset="0" lang="ko" title="사탕수수">295565</tofile>
+				<tofile bep_offset="0" lang="ko" title="독성도">724400</tofile>
+				<tofile bep_offset="0" lang="ko" title="개">8040</tofile>
+				<tofile bep_offset="0" lang="ko" title="당뇨병">9239</tofile>
+				<tofile bep_offset="0" lang="ko" title="혈당지수">150524</tofile>
+				<tofile bep_offset="0" lang="ko" title="뼈">31159</tofile>
+				<tofile bep_offset="0" lang="ko" title="갈락토스">466359</tofile>
+				<tofile bep_offset="0" lang="ko" title="스트렙토코쿠스 뮤탄스">638174</tofile>
+				<tofile bep_offset="0" lang="ko" title="인슐린">97241</tofile>
+				<tofile bep_offset="0" lang="ko" title="효모">146618</tofile>
+				<tofile bep_offset="0" lang="ko" title="혈당">97242</tofile>
+				<tofile bep_offset="0" lang="ko" title="그램">22728</tofile>
+				<tofile bep_offset="0" lang="ko" title="채소">82410</tofile>
+				<tofile bep_offset="0" lang="ko" title="설사">152474</tofile>
+				<tofile bep_offset="0" lang="ko" title="카이랄성 (화학)">154115</tofile>
+				<tofile bep_offset="0" lang="ko" title="자당">238216</tofile>
+				<tofile bep_offset="0" lang="ko" title="산소">66823</tofile>
+				<tofile bep_offset="0" lang="ko" title="수소">3540</tofile>
+				<tofile bep_offset="0" lang="ko" title="알코올">44245</tofile>
+				<tofile bep_offset="0" lang="ko" title="탄소">95496</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="1791383" name="Pentaceratops"> 
+		<outgoing>
+			<anchor offset="290" length="13" name="Pentaceratops">
+				<tofile bep_offset="0" lang="ko" title="크리토사우루스">384101</tofile>
+				<tofile bep_offset="0" lang="ko" title="콜로라도 주">15923</tofile>
+				<tofile bep_offset="0" lang="ko" title="포유류">7709</tofile>
+				<tofile bep_offset="0" lang="ko" title="머리뼈">75075</tofile>
+				<tofile bep_offset="0" lang="ko" title="각룡류">138848</tofile>
+				<tofile bep_offset="0" lang="ko" title="북아메리카">13463</tofile>
+				<tofile bep_offset="0" lang="ko" title="안키케라톱스">383736</tofile>
+				<tofile bep_offset="0" lang="ko" title="트리케라톱스">305876</tofile>
+				<tofile bep_offset="0" lang="ko" title="공룡">8085</tofile>
+				<tofile bep_offset="0" lang="ko" title="티라노사우루스상과">580226</tofile>
+				<tofile bep_offset="0" lang="ko" title="뉴멕시코 주">11762</tofile>
+				<tofile bep_offset="0" lang="ko" title="초식성">519783</tofile>
+				<tofile bep_offset="0" lang="ko" title="카스모사우루스">380133</tofile>
+				<tofile bep_offset="0" lang="ko" title="속 (생물학)">104836</tofile>
+				<tofile bep_offset="0" lang="ko" title="파라사우롤로푸스">475287</tofile>
+				<tofile bep_offset="0" lang="ko" title="고대 그리스어">22626</tofile>
+				<tofile bep_offset="0" lang="ko" title="뼈대">31054</tofile>
+				<tofile bep_offset="0" lang="ko" title="백악기">105489</tofile>
+				<tofile bep_offset="0" lang="ko" title="척추동물">6003</tofile>
+				<tofile bep_offset="0" lang="ko" title="RNA">700</tofile>
+				<tofile bep_offset="0" lang="ko" title="캐나다">1464</tofile>
+				<tofile bep_offset="0" lang="ko" title="중생대">43352</tofile>
+				<tofile bep_offset="0" lang="ko" title="알래스카 주">14026</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="2974637" name="Nanako Matsushima"> 
+		<outgoing>
+			<anchor offset="290" length="17" name="Nanako Matsushima">
+				<tofile bep_offset="0" lang="ko" title="꽃보다 남자 (일본의 드라마)">710821</tofile>
+				<tofile bep_offset="0" lang="ko" title="히마와리">306713</tofile>
+				<tofile bep_offset="0" lang="ko" title="가나가와 현">25618</tofile>
+				<tofile bep_offset="0" lang="ko" title="요코하마 시">26965</tofile>
+				<tofile bep_offset="0" lang="ko" title="소리마치 다카시">381701</tofile>
+				<tofile bep_offset="0" lang="ko" title="꽃보다 남자 (TBS)">175616</tofile>
+				<tofile bep_offset="0" lang="ko" title="반항하지마">354886</tofile>
+				<tofile bep_offset="0" lang="ko" title="일본">241789</tofile>
+				<tofile bep_offset="0" lang="ko" title="가정부 미타">699923</tofile>
+				<tofile bep_offset="0" lang="ko" title="10월 13일">1740</tofile>
+				<tofile bep_offset="0" lang="ko" title="2006년">11599</tofile>
+				<tofile bep_offset="0" lang="ko" title="2002년">39</tofile>
+				<tofile bep_offset="0" lang="ko" title="럭키 세븐 (드라마)">727395</tofile>
+				<tofile bep_offset="0" lang="ko" title="이노우에 마오">101932</tofile>
+				<tofile bep_offset="0" lang="ko" title="광고">151075</tofile>
+				<tofile bep_offset="0" lang="ko" title="2000년">530</tofile>
+				<tofile bep_offset="0" lang="ko" title="영화">95513</tofile>
+				<tofile bep_offset="0" lang="ko" title="NHK">199805</tofile>
+				<tofile bep_offset="0" lang="ko" title="내사랑 사쿠라코">298700</tofile>
+				<tofile bep_offset="0" lang="ko" title="5월 31일">41</tofile>
+				<tofile bep_offset="0" lang="ko" title="초등학교">48649</tofile>
+				<tofile bep_offset="0" lang="ko" title="반항하지마 (드라마)">345321</tofile>
+				<tofile bep_offset="0" lang="ko" title="2009년">11923</tofile>
+				<tofile bep_offset="0" lang="ko" title="1999년">2557</tofile>
+				<tofile bep_offset="0" lang="ko" title="11월 30일">1642</tofile>
+				<tofile bep_offset="0" lang="ko" title="2004년">2191</tofile>
+				<tofile bep_offset="0" lang="ko" title="배우">95174</tofile>
+				<tofile bep_offset="0" lang="ko" title="자마 시">399088</tofile>
+				<tofile bep_offset="0" lang="ko" title="중학교">29348</tofile>
+				<tofile bep_offset="0" lang="ko" title="미녀 혹은 야수">383471</tofile>
+				<tofile bep_offset="0" lang="ko" title="NHK 종합 텔레비전">160243</tofile>
+				<tofile bep_offset="0" lang="ko" title="2005년">10311</tofile>
+				<tofile bep_offset="0" lang="ko" title="GTO (만화)">394043</tofile>
+				<tofile bep_offset="0" lang="ko" title="1973년">7743</tofile>
+				<tofile bep_offset="0" lang="ko" title="2월">474</tofile>
+				<tofile bep_offset="0" lang="ko" title="1995년">2612</tofile>
+				<tofile bep_offset="0" lang="ko" title="2003년">373</tofile>
+				<tofile bep_offset="0" lang="ko" title="1997년">2691</tofile>
+				<tofile bep_offset="0" lang="ko" title="1992년">2694</tofile>
+				<tofile bep_offset="0" lang="ko" title="8월">479</tofile>
+				<tofile bep_offset="0" lang="ko" title="1996년">2693</tofile>
+				<tofile bep_offset="0" lang="ko" title="2007년">11623</tofile>
+				<tofile bep_offset="0" lang="ko" title="2001년">378</tofile>
+				<tofile bep_offset="0" lang="ko" title="1998년">2689</tofile>
+				<tofile bep_offset="0" lang="ko" title="후쿠야마 마사하루">282353</tofile>
+				<tofile bep_offset="0" lang="ko" title="드라마">110335</tofile>
+				<tofile bep_offset="0" lang="ko" title="야마토 나데시코">719082</tofile>
+				<tofile bep_offset="0" lang="ko" title="후루하타 닌자부로">580547</tofile>
+				<tofile bep_offset="0" lang="ko" title="니혼 TV 방송망">391645</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="1419265" name="X264"> 
+		<outgoing>
+			<anchor offset="290" length="4" name="X264">
+				<tofile bep_offset="0" lang="ko" title="라이브러리">48711</tofile>
+				<tofile bep_offset="0" lang="ko" title="SIMD">117331</tofile>
+				<tofile bep_offset="0" lang="ko" title="슈퍼 (소프트웨어)">150980</tofile>
+				<tofile bep_offset="0" lang="ko" title="API">88644</tofile>
+				<tofile bep_offset="0" lang="ko" title="MPEG-4">21938</tofile>
+				<tofile bep_offset="0" lang="ko" title="H.264/AVC">63361</tofile>
+				<tofile bep_offset="0" lang="ko" title="자유 소프트웨어">352</tofile>
+				<tofile bep_offset="0" lang="ko" title="정신물리학">422808</tofile>
+				<tofile bep_offset="0" lang="ko" title="파워PC">130144</tofile>
+				<tofile bep_offset="0" lang="ko" title="GNU 일반 공중 사용 허가서">354</tofile>
+				<tofile bep_offset="0" lang="ko" title="시스코 시스템즈">381273</tofile>
+				<tofile bep_offset="0" lang="ko" title="그래픽 사용자 인터페이스">2239</tofile>
+				<tofile bep_offset="0" lang="ko" title="ARM 아키텍처">73138</tofile>
+				<tofile bep_offset="0" lang="ko" title="X86">47145</tofile>
+				<tofile bep_offset="0" lang="ko" title="Avidemux">261738</tofile>
+				<tofile bep_offset="0" lang="ko" title="FFmpeg">178804</tofile>
+				<tofile bep_offset="0" lang="ko" title="SSE2">268771</tofile>
+				<tofile bep_offset="0" lang="ko" title="MPEG LA">198339</tofile>
+				<tofile bep_offset="0" lang="ko" title="스트림 (컴퓨터)">705631</tofile>
+				<tofile bep_offset="0" lang="ko" title="MP4">89324</tofile>
+				<tofile bep_offset="0" lang="ko" title="복호화">453420</tofile>
+				<tofile bep_offset="0" lang="ko" title="SSE3">268996</tofile>
+				<tofile bep_offset="0" lang="ko" title="부호화">453419</tofile>
+				<tofile bep_offset="0" lang="ko" title="오픈 소스">502</tofile>
+				<tofile bep_offset="0" lang="ko" title="Xvid">104213</tofile>
+				<tofile bep_offset="0" lang="ko" title="비디오">144725</tofile>
+				<tofile bep_offset="0" lang="ko" title="스트리밍 SIMD 확장">195540</tofile>
+				<tofile bep_offset="0" lang="ko" title="3D나우!">195543</tofile>
+				<tofile bep_offset="0" lang="ko" title="MMX">147755</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="611752" name="Ravioli"> 
+		<outgoing>
+			<anchor offset="290" length="7" name="Ravioli">
+				<tofile bep_offset="0" lang="ko" title="베네치아">11770</tofile>
+				<tofile bep_offset="0" lang="ko" title="바르톨미오 스카피">303503</tofile>
+				<tofile bep_offset="0" lang="ko" title="프라토">236580</tofile>
+				<tofile bep_offset="0" lang="ko" title="이탈리아어">6017</tofile>
+				<tofile bep_offset="0" lang="ko" title="파스타">151386</tofile>
+				<tofile bep_offset="0" lang="ko" title="보스턴">32808</tofile>
+				<tofile bep_offset="0" lang="ko" title="노르만족">116876</tofile>
+				<tofile bep_offset="0" lang="ko" title="뉴욕 주">11949</tofile>
+				<tofile bep_offset="0" lang="ko" title="이탈리아인">355655</tofile>
+				<tofile bep_offset="0" lang="ko" title="순무">382372</tofile>
+				<tofile bep_offset="0" lang="ko" title="감자">64656</tofile>
+				<tofile bep_offset="0" lang="ko" title="몰타">9278</tofile>
+				<tofile bep_offset="0" lang="ko" title="버섯">9354</tofile>
+				<tofile bep_offset="0" lang="ko" title="시칠리아">32089</tofile>
+				<tofile bep_offset="0" lang="ko" title="15세기">3601</tofile>
+				<tofile bep_offset="0" lang="ko" title="이탈리아">2870</tofile>
+				<tofile bep_offset="0" lang="ko" title="노르만 족">459025</tofile>
+				<tofile bep_offset="0" lang="ko" title="14세기">3600</tofile>
+				<tofile bep_offset="0" lang="ko" title="만두">29725</tofile>
+				<tofile bep_offset="0" lang="ko" title="수프">248026</tofile>
+				<tofile bep_offset="0" lang="ko" title="토마토">31599</tofile>
+				<tofile bep_offset="0" lang="ko" title="호박">45122</tofile>
+				<tofile bep_offset="0" lang="ko" title="마르코 폴로">81724</tofile>
+				<tofile bep_offset="0" lang="ko" title="중국">2206</tofile>
+				<tofile bep_offset="0" lang="ko" title="대한민국">249</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="1039570" name="Traveler&apos;s cheque"> 
+		<outgoing>
+			<anchor offset="290" length="22" name="Traveler&apos;s cheque">
+				<tofile bep_offset="0" lang="ko" title="미국">754</tofile>
+				<tofile bep_offset="0" lang="ko" title="일본 엔">4798</tofile>
+				<tofile bep_offset="0" lang="ko" title="수표">150923</tofile>
+				<tofile bep_offset="0" lang="ko" title="아메리칸 엑스프레스">175914</tofile>
+				<tofile bep_offset="0" lang="ko" title="유로">10185</tofile>
+				<tofile bep_offset="0" lang="ko" title="서명">182522</tofile>
+				<tofile bep_offset="0" lang="ko" title="중화인민공화국 위안">717925</tofile>
+				<tofile bep_offset="0" lang="ko" title="비자카드">175763</tofile>
+				<tofile bep_offset="0" lang="ko" title="신용장">251153</tofile>
+				<tofile bep_offset="0" lang="ko" title="선불카드">207665</tofile>
+				<tofile bep_offset="0" lang="ko" title="미국 달러">79329</tofile>
+				<tofile bep_offset="0" lang="ko" title="캐나다 달러">88702</tofile>
+				<tofile bep_offset="0" lang="ko" title="영국 파운드">103117</tofile>
+				<tofile bep_offset="0" lang="ko" title="부서">344724</tofile>
+				<tofile bep_offset="0" lang="ko" title="현금">236239</tofile>
+				<tofile bep_offset="0" lang="ko" title="환율">31070</tofile>
+				<tofile bep_offset="0" lang="ko" title="여행">317214</tofile>
+				<tofile bep_offset="0" lang="ko" title="여권">4806</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="1821208" name="Cellophane noodles"> 
+		<outgoing>
+			<anchor offset="290" length="18" name="Cellophane noodles">
+				<tofile bep_offset="0" lang="ko" title="감자">64656</tofile>
+				<tofile bep_offset="0" lang="ko" title="베트남어">35295</tofile>
+				<tofile bep_offset="0" lang="ko" title="티베트 요리">150733</tofile>
+				<tofile bep_offset="0" lang="ko" title="말레이시아">9268</tofile>
+				<tofile bep_offset="0" lang="ko" title="둥베이">87089</tofile>
+				<tofile bep_offset="0" lang="ko" title="셀로판">349031</tofile>
+				<tofile bep_offset="0" lang="ko" title="알루미늄">5479</tofile>
+				<tofile bep_offset="0" lang="ko" title="녹말">129677</tofile>
+				<tofile bep_offset="0" lang="ko" title="잡채">8575</tofile>
+				<tofile bep_offset="0" lang="ko" title="미뻔">654743</tofile>
+				<tofile bep_offset="0" lang="ko" title="옌타이 시">112323</tofile>
+				<tofile bep_offset="0" lang="ko" title="지급시">127766</tofile>
+				<tofile bep_offset="0" lang="ko" title="타이 요리">172852</tofile>
+				<tofile bep_offset="0" lang="ko" title="훠궈">289779</tofile>
+				<tofile bep_offset="0" lang="ko" title="베트남 요리">80315</tofile>
+				<tofile bep_offset="0" lang="ko" title="한글">487516</tofile>
+				<tofile bep_offset="0" lang="ko" title="자오위안 시">348929</tofile>
+				<tofile bep_offset="0" lang="ko" title="인도">8814</tofile>
+				<tofile bep_offset="0" lang="ko" title="산둥 성">34711</tofile>
+				<tofile bep_offset="0" lang="ko" title="중화인민공화국">2205</tofile>
+				<tofile bep_offset="0" lang="ko" title="납">55025</tofile>
+				<tofile bep_offset="0" lang="ko" title="카사바">641627</tofile>
+				<tofile bep_offset="0" lang="ko" title="룽커우 시">348921</tofile>
+				<tofile bep_offset="0" lang="ko" title="당나라">7080</tofile>
+				<tofile bep_offset="0" lang="ko" title="사모아">9521</tofile>
+				<tofile bep_offset="0" lang="ko" title="고구마">93092</tofile>
+				<tofile bep_offset="0" lang="ko" title="한어 병음">21872</tofile>
+				<tofile bep_offset="0" lang="ko" title="맥스웰 방정식">24</tofile>
+				<tofile bep_offset="0" lang="ko" title="쌀">23366</tofile>
+				<tofile bep_offset="0" lang="ko" title="홍초과">297640</tofile>
+				<tofile bep_offset="0" lang="ko" title="한국 요리">3830</tofile>
+				<tofile bep_offset="0" lang="ko" title="춘권">29724</tofile>
+				<tofile bep_offset="0" lang="ko" title="한국어의 한자">70090</tofile>
+				<tofile bep_offset="0" lang="ko" title="교자">523903</tofile>
+				<tofile bep_offset="0" lang="ko" title="일본 요리">188838</tofile>
+				<tofile bep_offset="0" lang="ko" title="녹두">267328</tofile>
+				<tofile bep_offset="0" lang="ko" title="인도네시아 요리">150765</tofile>
+				<tofile bep_offset="0" lang="ko" title="채식주의">41137</tofile>
+				<tofile bep_offset="0" lang="ko" title="표백제">294349</tofile>
+				<tofile bep_offset="0" lang="ko" title="하와이 주">15864</tofile>
+				<tofile bep_offset="0" lang="ko" title="국수">108624</tofile>
+				<tofile bep_offset="0" lang="ko" title="쓰촨 요리">204516</tofile>
+				<tofile bep_offset="0" lang="ko" title="파키스탄">10763</tofile>
+				<tofile bep_offset="0" lang="ko" title="대한민국">249</tofile>
+				<tofile bep_offset="0" lang="ko" title="소면">148751</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="305152" name="Papaver rhoeas"> 
+		<outgoing>
+			<anchor offset="290" length="14" name="Papaver rhoeas">
+				<tofile bep_offset="0" lang="ko" title="기념비">634221</tofile>
+				<tofile bep_offset="0" lang="ko" title="양귀비과">1414</tofile>
+				<tofile bep_offset="0" lang="ko" title="양귀비속">22787</tofile>
+				<tofile bep_offset="0" lang="ko" title="서부 전선 (제1차 세계 대전)">72791</tofile>
+				<tofile bep_offset="0" lang="ko" title="영령 기념일">40596</tofile>
+				<tofile bep_offset="0" lang="ko" title="구세계">290654</tofile>
+				<tofile bep_offset="0" lang="ko" title="노퍽 주">679134</tofile>
+				<tofile bep_offset="0" lang="ko" title="뉴질랜드">9164</tofile>
+				<tofile bep_offset="0" lang="ko" title="제1차 세계 대전">9203</tofile>
+				<tofile bep_offset="0" lang="ko" title="잡초">402316</tofile>
+				<tofile bep_offset="0" lang="ko" title="참호전">720153</tofile>
+				<tofile bep_offset="0" lang="ko" title="양귀비 (식물)">22790</tofile>
+				<tofile bep_offset="0" lang="ko" title="개양귀비 들판에서">265532</tofile>
+				<tofile bep_offset="0" lang="ko" title="에식스 주">683584</tofile>
+				<tofile bep_offset="0" lang="ko" title="농업">1451</tofile>
+				<tofile bep_offset="0" lang="ko" title="라텍스">673209</tofile>
+				<tofile bep_offset="0" lang="ko" title="영국 연방">5785</tofile>
+				<tofile bep_offset="0" lang="ko" title="한서">89141</tofile>
+				<tofile bep_offset="0" lang="ko" title="개양귀비 들판에서 (시)">708710</tofile>
+				<tofile bep_offset="0" lang="ko" title="항우">159293</tofile>
+				<tofile bep_offset="0" lang="ko" title="전한 고조">88980</tofile>
+				<tofile bep_offset="0" lang="ko" title="사마천의 사기">12173</tofile>
+				<tofile bep_offset="0" lang="ko" title="아편">41041</tofile>
+				<tofile bep_offset="0" lang="ko" title="북송">31867</tofile>
+				<tofile bep_offset="0" lang="ko" title="존 맥크래">265523</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="67050" name="Tutsi"> 
+		<outgoing>
+			<anchor offset="290" length="5" name="Tutsi">
+				<tofile bep_offset="0" lang="ko" title="북키부 주">646910</tofile>
+				<tofile bep_offset="0" lang="ko" title="벨기에">823</tofile>
+				<tofile bep_offset="0" lang="ko" title="남키부 주">646914</tofile>
+				<tofile bep_offset="0" lang="ko" title="후투족">393610</tofile>
+				<tofile bep_offset="0" lang="ko" title="르완다 집단 학살">364527</tofile>
+				<tofile bep_offset="0" lang="ko" title="아프리카 대호수">32152</tofile>
+				<tofile bep_offset="0" lang="ko" title="이스라엘 민족">28211</tofile>
+				<tofile bep_offset="0" lang="ko" title="아프리카의 뿔">32408</tofile>
+				<tofile bep_offset="0" lang="ko" title="연합 이스라엘 왕국">38078</tofile>
+				<tofile bep_offset="0" lang="ko" title="식민지">45824</tofile>
+				<tofile bep_offset="0" lang="ko" title="반투족">290643</tofile>
+				<tofile bep_offset="0" lang="ko" title="국민투표">217152</tofile>
+				<tofile bep_offset="0" lang="ko" title="제1차 세계 대전">9203</tofile>
+				<tofile bep_offset="0" lang="ko" title="독일">56412</tofile>
+				<tofile bep_offset="0" lang="ko" title="트와족">393618</tofile>
+				<tofile bep_offset="0" lang="ko" title="반투어군">81436</tofile>
+				<tofile bep_offset="0" lang="ko" title="제1차 콩고 내전">603940</tofile>
+				<tofile bep_offset="0" lang="ko" title="중앙아프리카">15223</tofile>
+				<tofile bep_offset="0" lang="ko" title="우간다">10230</tofile>
+				<tofile bep_offset="0" lang="ko" title="부룬디">9442</tofile>
+				<tofile bep_offset="0" lang="ko" title="에티오피아">10054</tofile>
+				<tofile bep_offset="0" lang="ko" title="민족">48390</tofile>
+				<tofile bep_offset="0" lang="ko" title="사하라 이남 아프리카">273183</tofile>
+				<tofile bep_offset="0" lang="ko" title="가톨릭주의">175142</tofile>
+				<tofile bep_offset="0" lang="ko" title="북아프리카">14652</tofile>
+				<tofile bep_offset="0" lang="ko" title="콩고 민주 공화국">10740</tofile>
+				<tofile bep_offset="0" lang="ko" title="르완다">9176</tofile>
+				<tofile bep_offset="0" lang="ko" title="함족">292961</tofile>
+				<tofile bep_offset="0" lang="ko" title="간다인">267326</tofile>
+				<tofile bep_offset="0" lang="ko" title="카스트">196658</tofile>
+				<tofile bep_offset="0" lang="ko" title="아프리카">5732</tofile>
+				<tofile bep_offset="0" lang="ko" title="르완다 학살">626803</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+	<topic file="323276" name="Toi invasion"> 
+		<outgoing>
+			<anchor offset="290" length="12" name="Toi invasion">
+				<tofile bep_offset="0" lang="ko" title="울릉도">4466</tofile>
+				<tofile bep_offset="0" lang="ko" title="규슈">13961</tofile>
+				<tofile bep_offset="0" lang="ko" title="쓰시마 국">55611</tofile>
+				<tofile bep_offset="0" lang="ko" title="이키 국">104059</tofile>
+				<tofile bep_offset="0" lang="ko" title="고려">74136</tofile>
+				<tofile bep_offset="0" lang="ko" title="해적">388616</tofile>
+				<tofile bep_offset="0" lang="ko" title="여진">80629</tofile>
+				<tofile bep_offset="0" lang="ko" title="맥스웰 방정식">24</tofile>
+				<tofile bep_offset="0" lang="ko" title="신라">5262</tofile>
+				<tofile bep_offset="0" lang="ko" title="조선민주주의인민공화국">495</tofile>
+				<tofile bep_offset="0" lang="ko" title="원산시">34738</tofile>
+				<tofile bep_offset="0" lang="ko" title="다자이후">335616</tofile>
+				<tofile bep_offset="0" lang="ko" title="쓰시마 섬">12455</tofile>
+				<tofile bep_offset="0" lang="ko" title="여진족">281031</tofile>
+				<tofile bep_offset="0" lang="ko" title="이키">183568</tofile>
+				<tofile bep_offset="0" lang="ko" title="후쿠오카">407641</tofile>
+				<tofile bep_offset="0" lang="ko" title="고쿠분지">422356</tofile>
+				<tofile bep_offset="0" lang="ko" title="금나라">81927</tofile>
+				<tofile bep_offset="0" lang="ko" title="지쿠젠 국">104050</tofile>
+			</anchor>
+		</outgoing>
+	</topic>
+</crosslink-submission>
