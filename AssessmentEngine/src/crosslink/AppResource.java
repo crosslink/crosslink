@@ -140,8 +140,8 @@ public class AppResource {
 		return getTopicDirectory(sourceLang, fileID);
     }
 	
-	private String getTopicPathWithLang(String lang) {
-		StringBuffer dir = new StringBuffer(topicPath + File.separator);
+	public static String getCrosslinkPath() {
+		StringBuffer dir = new StringBuffer();
 		if (AppResource.crosslinkTask == AppResource.CROSSLINK_TASK_1) {
 			dir.append("crosslink1");
 			dir.append(File.separator);
@@ -150,11 +150,17 @@ public class AppResource {
 			dir.append("crosslink2");
 			dir.append(File.separator);
 		}
+		return dir.toString();
+	}
+	
+	public String getTopicPathWithLang(String lang) {
+		StringBuffer dir = new StringBuffer(topicPath + File.separator);
+		dir.append(getCrosslinkPath());
 		dir.append(getLangPath(lang));
 		return dir.toString();
 	}
 	
-	private String getTopicPathWithLang() {
+	public String getTopicPathWithLang() {
 		return getTopicPathWithLang(sourceLang);
 	}
 
@@ -172,6 +178,10 @@ public class AppResource {
 	public String getTopicXmlPathNameByFileID(String topicID,
 			String topicLang) {
     	return getTopicDirectory(topicLang, topicID) + topicID + ".xml";
+	}
+	
+	public static String  makeLangPair() {
+		return sourceLang + "-" + targetLang;
 	}
 	
 	public static boolean isCrosslink2() {

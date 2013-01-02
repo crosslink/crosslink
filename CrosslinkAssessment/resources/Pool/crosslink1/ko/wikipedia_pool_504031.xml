@@ -1,0 +1,2349 @@
+<crosslink-assessment participant-id="2273087" run-id="2273087_A2B" task="A2B" default_lang="ko" source_lang="en">
+	<collection>Chinese Wikipedia 2010 Collection</collection>
+	<collection>Japanese Wikipedia 2010 Collection</collection>
+	<collection>Korean Wikipedia 2010 Collection</collection>
+	<topic file="504031" name="Cuirassier">
+		<outgoinglinks>
+			<anchor arel="-1" aname="La" aoffset="92" alength="2" ext_length="0">
+				<subanchor sarel="0" saname="La" saoffset="92" salength="2" rank="102">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="가">47856</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="루이지애나 주">12464</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="보라">86202</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="LA">21333</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="란타넘">55014</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="TYPE" aoffset="159" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="TYPE" saoffset="159" salength="4" rank="133">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="활자">40701</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="혈액형">3773</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="형제">326158</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="상징">146995</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="글꼴">70965</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Cuirassier" aoffset="266" alength="10" ext_length="0">
+				<subanchor sarel="1" saname="Cuirassier" saoffset="266" salength="10" rank="11">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="중장기병">446626</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Cavalry" aoffset="486" alength="7" ext_length="0">
+				<subanchor sarel="1" saname="Cavalry" saoffset="486" salength="7" rank="10">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="승마">319190</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="기병">13414</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="century" aoffset="530" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="century" saoffset="530" salength="7" rank="175">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="세기">30198</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="warrior" aoffset="538" alength="7" ext_length="0">
+				<subanchor sarel="1" saname="warrior" saoffset="538" salength="7" rank="68">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="전사 (생물학)">12910</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="전사">83085</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="types" aoffset="546" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="types" saoffset="546" salength="5" rank="178">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="유형">105221</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Military" aoffset="574" alength="8" ext_length="0">
+				<subanchor sarel="1" saname="Military" saoffset="574" salength="8" rank="63">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="군사">146790</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="units" aoffset="583" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="units" saoffset="583" salength="5" rank="179">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="단위">5141</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Early Modern" aoffset="611" alength="12" ext_length="4">
+				<subanchor sarel="1" saname="Early Modern" saoffset="611" salength="12" rank="160">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="초기 발생">483757</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Early Modern era" saoffset="611" salength="16" rank="25">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="근세">112672</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="현대 (시대)">194563</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Modern" saoffset="617" salength="6" rank="139">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="현대">16007</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Modern era" saoffset="617" salength="10" rank="165">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="현대 (시대)">194563</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="era" saoffset="624" salength="3" rank="149">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="에도 시대">6102</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="19th" aoffset="659" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="19th" saoffset="659" salength="4" rank="218">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="열아홉 순정 (드라마)">68616</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Combat" aoffset="708" alength="6" ext_length="0">
+				<subanchor sarel="1" saname="Combat" saoffset="708" salength="6" rank="115">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="전투">190234</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="occupations" aoffset="715" alength="11" ext_length="0">
+				<subanchor sarel="1" saname="occupations" saoffset="715" salength="11" rank="136">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="직업">81848</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Cuirass" aoffset="883" alength="7" ext_length="0">
+				<subanchor sarel="1" saname="Cuirass" saoffset="883" salength="7" rank="4">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="장갑">141890</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="갑옷">105065</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="the French" aoffset="894" alength="10" ext_length="0">
+				<subanchor sarel="1" saname="the French" saoffset="894" salength="10" rank="226">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프랑스">95069</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="French" saoffset="898" salength="6" rank="47">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프랑스어">2914</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프랑스의 대통령">320223</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="펠라치오">123618</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="구강성교">123617</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="heavy cavalry" aoffset="905" alength="13" ext_length="0">
+				<subanchor sarel="1" saname="heavy cavalry" saoffset="905" salength="13" rank="20">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="중장기병">446626</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="중장">105165</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="기병">13414</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="cavalry" saoffset="911" salength="7" rank="32">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="기병">13414</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Cuirassiers" aoffset="950" alength="11" ext_length="0">
+				<subanchor sarel="1" saname="Cuirassiers" saoffset="950" salength="11" rank="6">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="중장기병">446626</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="중기병">458471</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="mounted" aoffset="971" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="mounted" saoffset="971" salength="7" rank="194">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="마운트">213652</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="soldiers" aoffset="987" alength="8" ext_length="0">
+				<subanchor sarel="1" saname="soldiers" saoffset="987" salength="8" rank="152">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="군인">40165</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="armour" aoffset="1010" alength="6" ext_length="0">
+				<subanchor sarel="1" saname="armour" saoffset="1010" salength="6" rank="37">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="기갑">352980</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="갑옷">105065</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="firearms" aoffset="1021" alength="8" ext_length="0">
+				<subanchor sarel="1" saname="firearms" saoffset="1021" salength="8" rank="40">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="연천군부대 총기 난사사건">479111</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="화기">111240</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="소화기">39764</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="15th-century" aoffset="1055" alength="12" ext_length="0">
+				<subanchor sarel="-1" saname="15th-century" saoffset="1055" salength="12" rank="162">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="15">14450</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Europe" aoffset="1068" alength="6" ext_length="0">
+				<subanchor sarel="1" saname="Europe" saoffset="1068" salength="6" rank="19">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="유럽">396542</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="구주">84974</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="유럽 (동음이의)">398670</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="코소보의 국가">211970</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="유럽 연합">2719</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="유럽 경제 공동체">19829</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="유럽">1852</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="the medieval" aoffset="1104" alength="12" ext_length="0">
+				<subanchor sarel="1" saname="the medieval" saoffset="1104" salength="12" rank="238">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="중세">112671</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="medieval" saoffset="1108" salength="8" rank="28">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="중세">112671</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="armoured" aoffset="1117" alength="8" ext_length="0">
+				<subanchor sarel="1" saname="armoured" saoffset="1117" salength="8" rank="94">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="기갑">352980</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="갑옷">105065</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="knights" aoffset="1126" alength="7" ext_length="0">
+				<subanchor sarel="1" saname="knights" saoffset="1126" salength="7" rank="53">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="나이트">120471</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="기사">110266</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="사무라이">168685</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="기사 (간지)">14993</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="기사 (군사)">145876</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="means" aoffset="1152" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="means" saoffset="1152" salength="5" rank="208">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="방법">277069</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="the one" aoffset="1159" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="the one" saoffset="1159" salength="7" rank="110">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="더 원 (가수)">258620</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="더 후">206893</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="더 원">243308</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="breastplate" aoffset="1208" alength="11" ext_length="0">
+				<subanchor sarel="-1" saname="breastplate" saoffset="1208" salength="11" rank="34">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="플레이트 아머">158277</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="plate" saoffset="1214" salength="5" rank="136">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="갑">156294</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="접시">294655</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="전극">313647</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="패">144835</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="The 16th" aoffset="1340" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="The 16th" saoffset="1340" salength="8" rank="242">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="16">14451</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="17th century" aoffset="1353" alength="12" ext_length="0">
+				<subanchor sarel="-1" saname="17th century" saoffset="1353" salength="12" rank="73">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="17세기">3603</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="cuirassier" aoffset="1366" alength="10" ext_length="0">
+				<subanchor sarel="1" saname="cuirassier" saoffset="1366" salength="10" rank="28">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="중기병">458471</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Image" aoffset="1387" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="Image" saoffset="1387" salength="5" rank="156">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="상 (시각)">155289</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="left" aoffset="1431" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="left" saoffset="1431" salength="4" rank="105">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="왼쪽">111567</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="fire" aoffset="1461" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="fire" saoffset="1461" salength="4" rank="71">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="불">5581</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="pistols" aoffset="1477" alength="7" ext_length="0">
+				<subanchor sarel="1" saname="pistols" saoffset="1477" salength="7" rank="46">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="리볼버">43257</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="권총">43255</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="총">168677</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Gottfried" aoffset="1501" alength="9" ext_length="28">
+				<subanchor sarel="-1" saname="Gottfried" saoffset="1501" salength="9" rank="166">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="무지개가 피어나는 곳">214428</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Gottfried Heinrich" saoffset="1501" salength="18" rank="124">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="무지개가 피어나는 곳">214428</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Gottfried Heinrich Graf zu Pappenheim" saoffset="1501" salength="37" rank="0">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="고트프리드 하인리히 그라프 주 파펜하임">212400</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="하인리히 힘러">50902</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="고트 문자">68166</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Heinrich" saoffset="1511" salength="8" rank="158">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="하인리히">69826</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Graf" saoffset="1520" salength="4" rank="26">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="백작">195323</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="그래프">33711</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="zu" saoffset="1525" salength="2" rank="106">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="ZU">162676</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="did" aoffset="1564" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="did" saoffset="1564" salength="3" rank="239">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="한">80268</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Late Medieval" aoffset="1618" alength="13" ext_length="0">
+				<subanchor sarel="-1" saname="Late Medieval" saoffset="1618" salength="13" rank="109">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="중세">112671</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="man-at-arms" aoffset="1632" alength="11" ext_length="0">
+				<subanchor sarel="1" saname="man-at-arms" saoffset="1632" salength="11" rank="2">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="중장기병">446626</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="중기병">458471</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="병사">468040</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="병사">149978</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="왕의 남자">54415</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="covered" aoffset="1682" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="covered" saoffset="1682" salength="7" rank="131">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="식물">8554</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="북위 (북조)">121327</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="보험">131643</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="위 (해부학)">97394</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="개">8040</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="upper" aoffset="1701" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="upper" saoffset="1701" salength="5" rank="188">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="어퍼 반도">124748</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="body" aoffset="1707" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="body" saoffset="1707" salength="4" rank="134">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="몸">28890</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="front" aoffset="1727" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="front" saoffset="1727" salength="5" rank="237">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="메이다이 앞역">109779</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="half" aoffset="1733" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="half" saoffset="1733" salength="4" rank="228">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="반">417709</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="legs" aoffset="1745" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="legs" saoffset="1745" salength="4" rank="144">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="다리">38658</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="knee" aoffset="1762" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="knee" saoffset="1762" salength="4" rank="43">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="무릎">153105</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="The head" aoffset="1768" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="The head" saoffset="1768" salength="8" rank="224">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="머리">141456</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="head" saoffset="1772" salength="4" rank="111">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="머리">141456</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="Head">264321</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="helm" aoffset="1802" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="helm" saoffset="1802" salength="4" rank="66">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="지도">80105</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="키">379467</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="lobster" aoffset="1820" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="lobster" saoffset="1820" salength="7" rank="48">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="새우">146776</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="음경">106535</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="tail" aoffset="1828" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="tail" saoffset="1828" salength="4" rank="84">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="Tail">272341</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="pot" aoffset="1833" alength="3" ext_length="7">
+				<subanchor sarel="1" saname="pot" saoffset="1833" salength="3" rank="76">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="술">12026</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="바구니">264689</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="캐너비스">73245</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="냄비">334375</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="분">27981</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="삼 (식물)">281184</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="pot helmet" saoffset="1833" salength="10" rank="33">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="냄비">334375</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="helmet" saoffset="1837" salength="6" rank="30">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="마스크">149245</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="방탄 헬멧">486808</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="헬멧">294332</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="면">106012</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="gorget" aoffset="1865" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="gorget" saoffset="1865" salength="6" rank="31">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="목">104843</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="the neck" aoffset="1876" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="the neck" saoffset="1876" salength="8" rank="199">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="목">104843</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="neck" saoffset="1880" salength="4" rank="53">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="목">104843</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="torso" aoffset="1890" alength="5" ext_length="0">
+				<subanchor sarel="1" saname="torso" saoffset="1890" salength="5" rank="32">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="몸통">504628</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="breast" aoffset="1915" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="breast" saoffset="1915" salength="6" rank="42">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="유방">239009</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="유방암">150865</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="reinforced" aoffset="1948" alength="10" ext_length="0">
+				<subanchor sarel="-1" saname="reinforced" saoffset="1948" salength="10" rank="198">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="강화">171946</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="The arms" aoffset="1975" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="The arms" saoffset="1975" salength="8" rank="240">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="팔">23133</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="arms" saoffset="1979" salength="4" rank="60">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="무기">8820</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="문장 (상징)">381136</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="shoulders" aoffset="1988" alength="9" ext_length="0">
+				<subanchor sarel="-1" saname="shoulders" saoffset="1988" salength="9" rank="168">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="지다">107850</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="어깨">150854</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="elbow" aoffset="2046" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="elbow" saoffset="2046" salength="5" rank="40">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="형사">393783</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="gauntlets" aoffset="2084" alength="9" ext_length="0">
+				<subanchor sarel="-1" saname="gauntlets" saoffset="2084" salength="9" rank="92">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="장갑">141890</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="the right" aoffset="2133" alength="9" ext_length="5">
+				<subanchor sarel="-1" saname="the right" saoffset="2133" salength="9" rank="186">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="오른쪽">111438</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="the right hand" saoffset="2133" salength="14" rank="217">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="오른쪽">111438</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="right" saoffset="2137" salength="5" rank="164">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="권리">107965</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="right hand" saoffset="2137" salength="10" rank="14">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="손쓰임">266787</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="hand" saoffset="2143" salength="4" rank="121">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="손">108544</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Long" aoffset="2197" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="Long" saoffset="2197" salength="4" rank="29">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="용 (성씨)">440342</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="combination" aoffset="2224" alength="11" ext_length="0">
+				<subanchor sarel="-1" saname="combination" saoffset="2224" salength="11" rank="177">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="조합">29392</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="short" aoffset="2240" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="short" saoffset="2240" salength="5" rank="247">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="단편 소설">389407</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="유격수">52184</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="짧은 간섭 RNA">474662</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="단모음">398986</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="knees" aoffset="2306" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="knees" saoffset="2306" salength="5" rank="64">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="무릎">153105</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Riding" aoffset="2313" alength="6" ext_length="6">
+				<subanchor sarel="-1" saname="Riding" saoffset="2313" salength="6" rank="53">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="승마">319190</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Riding boots" saoffset="2313" salength="12" rank="9">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="승마">319190</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="substituted" aoffset="2331" alength="11" ext_length="0">
+				<subanchor sarel="1" saname="substituted" saoffset="2331" salength="11" rank="126">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="대물">493511</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="대리">79750</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="용병">363492</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="부">254039</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="대역폭">67057</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="lower leg" aoffset="2347" alength="9" ext_length="0">
+				<subanchor sarel="-1" saname="lower leg" saoffset="2347" salength="9" rank="147">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="밤과 낮">170120</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="leg" saoffset="2353" salength="3" rank="70">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="다리">38658</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="다리 (해부학)">88024</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="greaves" aoffset="2365" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="greaves" saoffset="2365" salength="7" rank="3">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="기름">143986</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Weapon" aoffset="2474" alength="6" ext_length="1">
+				<subanchor sarel="-1" saname="Weapon" saoffset="2474" salength="6" rank="90">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="음경">106535</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="무기">8820</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="병기">168241</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Weapons" saoffset="2474" salength="7" rank="34">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="무기">8820</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="saddle" aoffset="2512" alength="6" ext_length="0">
+				<subanchor sarel="1" saname="saddle" saoffset="2512" salength="6" rank="39">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="마구">282509</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="안장">336809</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="primary" aoffset="2544" alength="7" ext_length="0">
+				<subanchor sarel="1" saname="primary" saoffset="2544" salength="7" rank="209">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="기본 전하">48326</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="lance" aoffset="2573" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="lance" saoffset="2573" salength="5" rank="41">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="병과">218874</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="랜스">177020</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="창">41461</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="창기병">483827</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="horse" aoffset="2583" alength="5" ext_length="0">
+				<subanchor sarel="1" saname="horse" saoffset="2583" salength="5" rank="63">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="사람">307</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="1">14345</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="경주마">317356</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="마력">78733</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="기병">13414</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="pick" aoffset="2594" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="pick" saoffset="2594" salength="4" rank="182">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="선택">164260</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="type" aoffset="2603" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="type" saoffset="2603" salength="4" rank="99">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="유형">105221</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="war" aoffset="2611" alength="3" ext_length="7">
+				<subanchor sarel="1" saname="war" saoffset="2611" salength="3" rank="69">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="전쟁">77198</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="병">143346</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="군사학">462474</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="싸움 (영화)">189050</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="전쟁의 역사">13124</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="전투">190234</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="war hammer" saoffset="2611" salength="10" rank="27">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="전쟁">77198</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="hammer" saoffset="2615" salength="6" rank="40">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="망치">170040</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="employed" aoffset="2637" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="employed" saoffset="2637" salength="8" rank="218">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="고용">162410</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="sword" aoffset="2652" alength="5" ext_length="0">
+				<subanchor sarel="1" saname="sword" saoffset="2652" salength="5" rank="39">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="군도">56910</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="검">171048</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="칼">152947</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Horse" aoffset="2659" alength="5" ext_length="7">
+				<subanchor sarel="1" saname="Horse" saoffset="2659" salength="5" rank="36">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="말 (동물)">7928</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="오 (지지)">334233</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Horse armour" saoffset="2659" salength="12" rank="103">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="호스 군">436778</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="in England" aoffset="2742" alength="10" ext_length="0">
+				<subanchor sarel="1" saname="in England" saoffset="2742" salength="10" rank="249">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="영국">2182</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="England" saoffset="2745" salength="7" rank="14">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="잉글랜드">14797</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="영국">449729</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="영국">2182</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="equipment" aoffset="2778" alength="9" ext_length="0">
+				<subanchor sarel="1" saname="equipment" saoffset="2778" salength="9" rank="118">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="장비">70940</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="cost" aoffset="2788" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="cost" saoffset="2788" salength="4" rank="170">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="비용">243462</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="four pounds" aoffset="2793" alength="11" ext_length="0">
+				<subanchor sarel="-1" saname="four pounds" saoffset="2793" salength="11" rank="19">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="영국 파운드">103117</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="pounds" saoffset="2798" salength="6" rank="88">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="영화">95513</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="난타">357789</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="달란트">83802</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="돈">9925</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="파운드">19863</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="파운드 (질량)">105173</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="shillings" aoffset="2812" alength="9" ext_length="0">
+				<subanchor sarel="-1" saname="shillings" saoffset="2812" salength="9" rank="35">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="실링">200390</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="밥">70176</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="lighter" aoffset="2850" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="lighter" saoffset="2850" salength="7" rank="68">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="라이터">336500</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="one pound" aoffset="2886" alength="9" ext_length="0">
+				<subanchor sarel="-1" saname="one pound" saoffset="2886" salength="9" rank="87">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="일 (물리)">72585</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="pound" saoffset="2890" salength="5" rank="35">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="파운드">19863</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="파운드 (질량)">105173</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="16th century" aoffset="3039" alength="12" ext_length="4">
+				<subanchor sarel="-1" saname="16th century" saoffset="3039" salength="12" rank="72">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="16세기">3602</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="century the" saoffset="3044" salength="11" rank="245">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="세기">30198</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="knightly" aoffset="3063" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="knightly" saoffset="3063" salength="8" rank="229">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="기사 (간지)">14993</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="fell" aoffset="3089" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="fell" saoffset="3089" salength="4" rank="124">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="출산">146211</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="가을">55482</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="박명">238728</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="경사">498040</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="use" aoffset="3101" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="use" saoffset="3101" salength="3" rank="230">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="사용">506837</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="adoption" aoffset="3140" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="adoption" saoffset="3140" salength="8" rank="48">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="빨간 머리 앤">34203</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="입양">227471</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="infantry" aoffset="3156" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="infantry" saoffset="3156" salength="8" rank="29">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="보병">158080</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="pike" aoffset="3165" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="pike" saoffset="3165" salength="4" rank="52">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="바늘">281510</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="창">41461</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="곡괭이">268366</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="핼버드">177001</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="파이크">177005</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="lancer" aoffset="3175" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="lancer" saoffset="3175" salength="6" rank="21">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="창기병">483827</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="demi-lancer" aoffset="3185" alength="11" ext_length="0">
+				<subanchor sarel="-1" saname="demi-lancer" saoffset="3185" salength="11" rank="1">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="반">417709</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="reiter" aoffset="3269" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="reiter" saoffset="3269" salength="6" rank="8">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="라이터">336500</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="the pistol" aoffset="3293" alength="10" ext_length="0">
+				<subanchor sarel="-1" saname="the pistol" saoffset="3293" salength="10" rank="176">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="권총">43255</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="pistol" saoffset="3297" salength="6" rank="46">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="리볼버">43257</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="권총">43255</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="총">168677</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="피스톨">307402</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="weapon" aoffset="3319" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="weapon" saoffset="3319" salength="6" rank="52">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="무기">8820</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="development" aoffset="3337" alength="11" ext_length="0">
+				<subanchor sarel="-1" saname="development" saoffset="3337" salength="11" rank="113">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="개발">151081</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="the enemy" aoffset="3421" alength="9" ext_length="0">
+				<subanchor sarel="-1" saname="the enemy" saoffset="3421" salength="9" rank="28">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="악마">92514</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="retired" aoffset="3437" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="retired" saoffset="3437" salength="7" rank="234">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="은퇴한 태풍 이름의 목록">220445</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="reload" aoffset="3448" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="reload" saoffset="3448" salength="6" rank="75">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="새">2251</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="comrades" aoffset="3468" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="comrades" saoffset="3468" salength="8" rank="183">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="동지">15569</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="친구">154239</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="the firing" aoffset="3506" alength="10" ext_length="0">
+				<subanchor sarel="-1" saname="the firing" saoffset="3506" salength="10" rank="216">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="사격">51347</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="recorded" aoffset="3537" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="recorded" saoffset="3537" salength="8" rank="73">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="기록">155894</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="regiments" aoffset="3584" alength="9" ext_length="0">
+				<subanchor sarel="-1" saname="regiments" saoffset="3584" salength="9" rank="33">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="대군">130018</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="연대 (군사)">452007</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="연대">35626</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Austrian" aoffset="3597" alength="8" ext_length="0">
+				<subanchor sarel="1" saname="Austrian" saoffset="3597" salength="8" rank="57">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="오스트리아의 군주">307444</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="오스트리아">504406</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Croatia" aoffset="3640" alength="7" ext_length="0">
+				<subanchor sarel="1" saname="Croatia" saoffset="3640" salength="7" rank="9">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="크로아티아">10291</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="the future" aoffset="3665" alength="10" ext_length="0">
+				<subanchor sarel="-1" saname="the future" saoffset="3665" salength="10" rank="26">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="미래">111234</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="future" saoffset="3669" salength="6" rank="135">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="미래">111234</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Holy Roman" aoffset="3676" alength="10" ext_length="19">
+				<subanchor sarel="1" saname="Holy Roman" saoffset="3676" salength="10" rank="150">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="신성 로마">329954</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Holy Roman Emperor" saoffset="3676" salength="18" rank="8">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="신성 로마 제국의 황제">118492</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="신성 (천체)">142270</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="신성 로마 제국">48325</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Holy Roman Emperor Maximilian" saoffset="3676" salength="29" rank="215">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="신성 (천체)">142270</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Roman" saoffset="3681" salength="5" rank="58">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="로마">3228</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="로만 아브라모비치">52192</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="로만">505301</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Roman Emperor" saoffset="3681" salength="13" rank="15">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="로마">3228</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="신성로마황제">190528</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="로마 황제">3657</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Emperor" saoffset="3687" salength="7" rank="51">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="황제 (동음이의)">6278</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="황제">6277</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="엠페러: 배틀 포 듄">157013</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Emperor Maximilian" saoffset="3687" salength="18" rank="80">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="황제">6277</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Maximilian" saoffset="3695" salength="10" rank="28">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="막시밀리안">324316</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="막시 로드리게스">189089</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="the Swedes" aoffset="3719" alength="10" ext_length="0">
+				<subanchor sarel="1" saname="the Swedes" saoffset="3719" salength="10" rank="189">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="스웨덴">5382</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Swedes" saoffset="3723" salength="6" rank="41">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="스웨덴">5382</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="스베아족">456089</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="무">8462</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="allies" aoffset="3740" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="allies" saoffset="3740" salength="6" rank="33">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="친족">228627</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="연합국">35804</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="동맹국">35799</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Lützen" aoffset="3758" alength="6" ext_length="0">
+				<subanchor sarel="1" saname="Lützen" saoffset="3758" salength="6" rank="18">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="뤼첸 전투 (1813년)">293812</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="killed" aoffset="3769" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="killed" saoffset="3769" salength="6" rank="205">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="살해">147038</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Swedish" aoffset="3780" alength="7" ext_length="23">
+				<subanchor sarel="1" saname="Swedish" saoffset="3780" salength="7" rank="54">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="스웨덴어">19700</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Swedish king" saoffset="3780" salength="12" rank="22">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="스웨덴어">19700</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="스웨덴의 군주">29605</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="king" saoffset="3788" salength="4" rank="39">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="장군">129138</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="장">121756</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="대한민국 국군">6106</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="왕">47160</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="신">13231</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="king Gustavus" saoffset="3788" salength="13" rank="189">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="왕">47160</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="king Gustavus Adolphus" saoffset="3788" salength="22" rank="133">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="왕">47160</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Gustavus" saoffset="3793" salength="8" rank="134">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="구스타프 플라토브">489283</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Gustavus Adolphus" saoffset="3793" salength="17" rank="15">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="구스타브 2세 아돌프">275458</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="구스타프 플라토브">489283</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="two" aoffset="3817" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="two" saoffset="3817" salength="3" rank="212">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="두">388786</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="English" aoffset="3865" alength="7" ext_length="10">
+				<subanchor sarel="-1" saname="English" saoffset="3865" salength="7" rank="44">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="영어">2177</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="English Civil War" saoffset="3865" salength="17" rank="21">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="잉글랜드">14797</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="잉글랜드 내전">256970</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Civil War" saoffset="3873" salength="9" rank="19">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="내전">183436</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="스페인 내전">125479</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="남북전쟁">39645</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="the Life" aoffset="3884" alength="8" ext_length="5">
+				<subanchor sarel="-1" saname="the Life" saoffset="3884" salength="8" rank="0">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="Life">135143</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Lifeguard" saoffset="3888" salength="9" rank="61">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="친위대">49953</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="친위대">49961</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="생명">12818</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="guard" saoffset="3892" salength="5" rank="54">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="경계">474035</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="경비원">393776</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="오펜시브 가드">228743</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="경호">450699</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="교도관">444487</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="the Earl of Essex" aoffset="3901" alength="17" ext_length="0">
+				<subanchor sarel="1" saname="the Earl of Essex" saoffset="3901" salength="17" rank="89">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="USS 에식스 (LHD-2)">337756</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Earl" saoffset="3905" salength="4" rank="94">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="백">119639</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="백작">195323</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Earl of Essex" saoffset="3905" salength="13" rank="46">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="USS 에식스 (LHD-2)">337756</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Essex" saoffset="3913" salength="5" rank="39">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="USS 에식스 (LHD-2)">337756</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="London" aoffset="3928" alength="6" ext_length="9">
+				<subanchor sarel="1" saname="London" saoffset="3928" salength="6" rank="22">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="런던">14284</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="London lobsters" saoffset="3928" salength="15" rank="15">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="런던">14284</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="lobsters" saoffset="3935" salength="8" rank="170">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="랍티미스트">344151</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="individuals" aoffset="3953" alength="11" ext_length="0">
+				<subanchor sarel="-1" saname="individuals" saoffset="3953" salength="11" rank="222">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="개인">201490</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="full armour" aoffset="4001" alength="11" ext_length="0">
+				<subanchor sarel="-1" saname="full armour" saoffset="4001" salength="11" rank="16">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="플레이트 아머">158277</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="완전 경쟁">165330</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="refinement" aoffset="4023" alength="10" ext_length="0">
+				<subanchor sarel="-1" saname="refinement" saoffset="4023" salength="10" rank="245">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="우문연">232034</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="정련">346813</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="infantry firearms" aoffset="4037" alength="17" ext_length="0">
+				<subanchor sarel="1" saname="infantry firearms" saoffset="4037" salength="17" rank="95">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="보병">158080</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="musket" aoffset="4100" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="musket" saoffset="4100" salength="6" rank="33">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="머스켓">124897</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="총">168677</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="By" aoffset="4190" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="By" saoffset="4190" salength="2" rank="35">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="BY">21099</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="mid" aoffset="4197" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="mid" saoffset="4197" salength="3" rank="132">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="Mid">299474</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="MID">299464</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="anachronistic" aoffset="4270" alength="13" ext_length="0">
+				<subanchor sarel="1" saname="anachronistic" saoffset="4270" salength="13" rank="84">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="에도 시대">6102</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="lost" aoffset="4300" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="lost" saoffset="4300" salength="4" rank="123">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="진">14960</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="로스트">84813</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="limb" aoffset="4309" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="limb" saoffset="4309" salength="4" rank="58">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="사지">277710</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="수족">334647</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="다리">38658</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="분자">3696</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="구">7081</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="날개">141276</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="다리 (해부학)">88024</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="the breast" aoffset="4360" alength="10" ext_length="0">
+				<subanchor sarel="-1" saname="the breast" saoffset="4360" salength="10" rank="100">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="유방">239009</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="젖">6215</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="가슴">230049</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Harness" aoffset="4421" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="Harness" saoffset="4421" salength="7" rank="49">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="마구">282509</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="안전띠">351723</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="장구">99394</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="갑옷">105065</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Evolution" aoffset="4429" alength="9" ext_length="0">
+				<subanchor sarel="-1" saname="Evolution" saoffset="4429" salength="9" rank="51">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="고안">192969</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="Evolution (보이즈 투 멘의 음반)">462232</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="Evolution">462400</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="진보">427287</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="발생">266007</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="진화">333807</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="development of firearms" aoffset="4454" alength="23" ext_length="0">
+				<subanchor sarel="-1" saname="development of firearms" saoffset="4454" salength="23" rank="31">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="탄자">70652</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="efficiency" aoffset="4497" alength="10" ext_length="0">
+				<subanchor sarel="-1" saname="efficiency" saoffset="4497" salength="10" rank="118">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="발">97387</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="성능">155142</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="가야">5378</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="heavy armour" aoffset="4521" alength="12" ext_length="0">
+				<subanchor sarel="-1" saname="heavy armour" saoffset="4521" salength="12" rank="23">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="세상에서 가장 무거운 싸움">148159</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="기갑">352980</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="reduction" aoffset="4557" alength="9" ext_length="0">
+				<subanchor sarel="-1" saname="reduction" saoffset="4557" salength="9" rank="61">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="짧은반지름">229208</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="화학 반응">31102</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="감 (식물)">42329</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="군비 경쟁">366465</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="감수 분열">267300</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="complexity" aoffset="4583" alength="10" ext_length="0">
+				<subanchor sarel="-1" saname="complexity" saoffset="4583" salength="10" rank="87">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="교착 상태">37997</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="form" aoffset="4614" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="form" saoffset="4614" salength="4" rank="196">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="형식">277341</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="폼">397064</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="the helmet" aoffset="4689" alength="10" ext_length="0">
+				<subanchor sarel="-1" saname="the helmet" saoffset="4689" salength="10" rank="200">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="헬멧">294332</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="16c" aoffset="4834" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="16c" saoffset="4834" salength="3" rank="175">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="16">14451</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="17c" aoffset="4844" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="17c" saoffset="4844" salength="3" rank="136">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="글록 17">113635</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Later" aoffset="5012" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="Later" saoffset="5012" salength="5" rank="248">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="후">430493</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Body" aoffset="5200" alength="4" ext_length="7">
+				<subanchor sarel="1" saname="Body" saoffset="5200" salength="4" rank="31">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="몸">28890</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Body armour" saoffset="5200" salength="11" rank="42">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="방탄복">46598</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="갑옷">105065</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="example" aoffset="5303" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="example" saoffset="5303" salength="7" rank="223">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="예">83868</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="British" aoffset="5311" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="British" saoffset="5311" salength="7" rank="53">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="영어">2177</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="영국의 총리">170527</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="War" aoffset="5339" alength="3" ext_length="26">
+				<subanchor sarel="1" saname="War" saoffset="5339" salength="3" rank="33">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="전쟁">77198</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="War of" saoffset="5339" salength="6" rank="219">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="전쟁">77198</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="War of the" saoffset="5339" salength="10" rank="193">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="전쟁">77198</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="War of the Spanish Succession" saoffset="5339" salength="29" rank="2">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="스페인 왕위 계승 전쟁">40281</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="스페인">9826</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="the Spanish" saoffset="5346" salength="11" rank="243">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="스페인">9826</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Spanish" saoffset="5350" salength="7" rank="59">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="스페인어">19852</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="스페인사람">338760</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Spanish Succession" saoffset="5350" salength="18" rank="24">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="스페인의 군주">119938</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Succession" saoffset="5358" salength="10" rank="102">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="계승">29343</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="the conflict" aoffset="5421" alength="12" ext_length="0">
+				<subanchor sarel="-1" saname="the conflict" saoffset="5421" salength="12" rank="203">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="충돌">147027</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="conflict" saoffset="5425" salength="8" rank="133">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="병과">218874</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="싸움 (영화)">189050</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="갈등">10956</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="전투">190234</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="role" aoffset="5466" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="role" saoffset="5466" salength="4" rank="197">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="역할">151492</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="armies" aoffset="5478" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="armies" saoffset="5478" salength="6" rank="184">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="간성">131971</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="조직체">149997</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="육군">88876</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="군">3406</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="군대">146791</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Austria" aoffset="5488" alength="7" ext_length="0">
+				<subanchor sarel="1" saname="Austria" saoffset="5488" salength="7" rank="20">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="오스트리아">504406</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Frederick" aoffset="5504" alength="9" ext_length="21">
+				<subanchor sarel="-1" saname="Frederick" saoffset="5504" salength="9" rank="89">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프레드릭 융베리">500602</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프레드릭">503092</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Frederick the Great" saoffset="5504" salength="19" rank="10">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프리드리히 2세">159205</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프레드릭 융베리">500602</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프리드리히 2세 (프로이센)">159146</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Frederick the Great of Prussia" saoffset="5504" salength="30" rank="11">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프러시아 왕국">416136</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프리드리히 2세 (프로이센)">159146</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Prussia" saoffset="5527" salength="7" rank="22">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프로이센">10380</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="the time" aoffset="5548" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="the time" saoffset="5548" salength="8" rank="185">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="시간">31852</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="time" saoffset="5552" salength="4" rank="122">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="서머 타임">37947</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="시간">31852</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="타임">98856</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="French Revolutionary" aoffset="5564" alength="20" ext_length="4">
+				<subanchor sarel="1" saname="French Revolutionary" saoffset="5564" salength="20" rank="9">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프랑스어">2914</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프랑스 혁명">33177</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="French Revolutionary War" saoffset="5564" salength="24" rank="6">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프랑스어">2914</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프랑스 혁명 전쟁">173286</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Revolutionary" saoffset="5571" salength="13" rank="96">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="혁명">60307</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Revolutionary War" saoffset="5571" salength="17" rank="15">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="미국 독립 전쟁">96869</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="독립">276329</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="cavalry regiments" aoffset="5599" alength="17" ext_length="0">
+				<subanchor sarel="1" saname="cavalry regiments" saoffset="5599" salength="17" rank="5">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="기병">13414</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="campaign" aoffset="5666" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="campaign" saoffset="5666" salength="8" rank="124">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="선거 운동">443652</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="원정">259145</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="운동">20752</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="운동 (물리학)">128475</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="캄파니아 주">116853</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="사파리">108163</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="this time" aoffset="5698" alength="9" ext_length="0">
+				<subanchor sarel="-1" saname="this time" saoffset="5698" salength="9" rank="191">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="이번">490055</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="cocked hat" aoffset="5728" alength="10" ext_length="0">
+				<subanchor sarel="-1" saname="cocked hat" saoffset="5728" salength="10" rank="62">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="삼각 함수">247212</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="hat" saoffset="5735" salength="3" rank="70">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="뇌물">194509</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="쓰개">295645</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="모자">252316</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="아내">147848</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="뇌물죄">265442</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="A" aoffset="5761" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="A" saoffset="5761" salength="1" rank="37">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="라 (계이름)">135343</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="A">668</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="あ">74795</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="아">290543</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="А">14382</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="resurgence" aoffset="5763" alength="10" ext_length="0">
+				<subanchor sarel="-1" saname="resurgence" saoffset="5763" salength="10" rank="112">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="부활">53339</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="armoured cavalry" aoffset="5777" alength="16" ext_length="0">
+				<subanchor sarel="-1" saname="armoured cavalry" saoffset="5777" salength="16" rank="116">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="장갑">141890</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="place" aoffset="5799" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="place" saoffset="5799" salength="5" rank="214">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="장소">94221</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="in France" aoffset="5805" alength="9" ext_length="0">
+				<subanchor sarel="1" saname="in France" saoffset="5805" salength="9" rank="236">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프랑스">95069</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="France" saoffset="5808" salength="6" rank="21">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프랑스">95069</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="불">5581</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="the rule" aoffset="5821" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="the rule" saoffset="5821" salength="8" rank="225">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="규칙">158327</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="rule" saoffset="5825" salength="4" rank="172">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="규칙">158327</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Napoleon" aoffset="5833" alength="8" ext_length="10">
+				<subanchor sarel="1" saname="Napoleon" saoffset="5833" salength="8" rank="27">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="나폴레옹">67664</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="나폴레옹 (동음이의)">67659</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="나폴레옹 보나파르트">12308</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Napoleon Bonaparte" saoffset="5833" salength="18" rank="8">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="나폴레옹 보나파르트">12308</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Bonaparte" saoffset="5842" salength="9" rank="43">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="보나파르트">318125</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="보나파르트 (동음이의)">318126</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="도기 보나">13282</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="number" aoffset="5870" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="number" saoffset="5870" salength="6" rank="180">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="수 (수학)">29428</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="armoured regiments" aoffset="5880" alength="18" ext_length="0">
+				<subanchor sarel="-1" saname="armoured regiments" saoffset="5880" salength="18" rank="202">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="장갑">141890</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="plus" aoffset="5962" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="plus" saoffset="5962" salength="4" rank="140">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="플러스">420619</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="carabinier" aoffset="5971" alength="10" ext_length="0">
+				<subanchor sarel="1" saname="carabinier" saoffset="5971" salength="10" rank="20">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="대육군">173421</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="nineteenth century" aoffset="6030" alength="18" ext_length="0">
+				<subanchor sarel="-1" saname="nineteenth century" saoffset="6030" salength="18" rank="115">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="19">14454</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="the states" aoffset="6057" alength="10" ext_length="0">
+				<subanchor sarel="-1" saname="the states" saoffset="6057" salength="10" rank="220">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="미국">754</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="states" saoffset="6061" salength="6" rank="69">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="미국">754</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="emulation" aoffset="6204" alength="9" ext_length="0">
+				<subanchor sarel="-1" saname="emulation" saoffset="6204" salength="9" rank="102">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="기승">336929</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="에뮬레이터">139039</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Helmets" aoffset="6229" alength="7" ext_length="0">
+				<subanchor sarel="1" saname="Helmets" saoffset="6229" salength="7" rank="85">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="마스크">149245</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="방탄 헬멧">486808</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="면">106012</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="hardened" aoffset="6247" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="hardened" saoffset="6247" salength="8" rank="111">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="오르다 칸">238054</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="leather" aoffset="6256" alength="7" ext_length="0">
+				<subanchor sarel="1" saname="leather" saoffset="6256" salength="7" rank="25">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="공">79463</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="지갑">241043</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="가죽">170292</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="brass" aoffset="6269" alength="5" ext_length="0">
+				<subanchor sarel="1" saname="brass" saoffset="6269" salength="5" rank="34">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="금관 악기">88737</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="성 근로자">326828</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="철">106746</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="황동">20145</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="놋그릇">244136</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="reinforcement" aoffset="6275" alength="13" ext_length="0">
+				<subanchor sarel="-1" saname="reinforcement" saoffset="6275" salength="13" rank="114">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="강화">171946</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="helmets" aoffset="6326" alength="7" ext_length="0">
+				<subanchor sarel="1" saname="helmets" saoffset="6326" salength="7" rank="137">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="헬멧">294332</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="bicorne hat" aoffset="6371" alength="11" ext_length="0">
+				<subanchor sarel="-1" saname="bicorne hat" saoffset="6371" salength="11" rank="96">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="모자">252316</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="debate" aoffset="6394" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="debate" saoffset="6394" salength="6" rank="219">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="MBC 100분 토론">199290</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="value" aoffset="6410" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="value" saoffset="6410" salength="5" rank="154">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="가치">142929</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="가치 (경제)">143037</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="does" aoffset="6451" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="does" saoffset="6451" salength="4" rank="113">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="Does This Look Infected?">406326</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="DOES">181641</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="flintlock" aoffset="6499" alength="9" ext_length="12">
+				<subanchor sarel="-1" saname="flintlock" saoffset="6499" salength="9" rank="24">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="플린트">82867</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="flintlock musket" saoffset="6499" salength="16" rank="176">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="플린트">82867</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="musket fire" saoffset="6509" salength="11" rank="143">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="사격">51347</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="It" aoffset="6522" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="It" saoffset="6522" salength="2" rank="34">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="It">21271</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="psychological" aoffset="6555" alength="13" ext_length="0">
+				<subanchor sarel="1" saname="psychological" saoffset="6555" salength="13" rank="44">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="심리학">681</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="심리">277071</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="weight" aoffset="6683" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="weight" saoffset="6683" salength="6" rank="87">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="형법">95505</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="힘">115409</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="무게">56405</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="중력">20671</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="책임">113563</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="actions" aoffset="6740" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="actions" saoffset="6740" salength="7" rank="231">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="행위">450294</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="addition" aoffset="6752" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="addition" saoffset="6752" salength="8" rank="195">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="덧셈">28869</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="bullet-proof" aoffset="6791" alength="12" ext_length="0">
+				<subanchor sarel="1" saname="bullet-proof" saoffset="6791" salength="12" rank="48">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="방탄 헬멧">486808</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="김연아">89771</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="breastplates" aoffset="6809" alength="12" ext_length="0">
+				<subanchor sarel="-1" saname="breastplates" saoffset="6809" salength="12" rank="227">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="가슴">230049</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="swords" aoffset="6865" alength="6" ext_length="0">
+				<subanchor sarel="1" saname="swords" saoffset="6865" salength="6" rank="117">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="검">171048</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="군도">56910</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="도검">442154</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="칼">152947</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="lances" aoffset="6876" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="lances" saoffset="6876" salength="6" rank="84">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="병과">218874</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="랜스">177020</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="창">41461</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="창기병">483827</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Saxon" aoffset="6942" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="Saxon" saoffset="6942" salength="5" rank="50">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="색슨 족">459012</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="앵글로 색슨">324593</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Polish" aoffset="6964" alength="6" ext_length="8">
+				<subanchor sarel="1" saname="Polish" saoffset="6964" salength="6" rank="38">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="약">186321</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="폴란드의 국기">56955</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="니스">9794</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Polish lancers" saoffset="6964" salength="14" rank="52">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="폴란드어">33439</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="lancers" saoffset="6971" salength="7" rank="10">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="커플링 곡">189158</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="clash" aoffset="6979" alength="5" ext_length="0">
+				<subanchor sarel="1" saname="clash" saoffset="6979" salength="5" rank="142">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="충돌">147027</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Russian" aoffset="6990" alength="7" ext_length="0">
+				<subanchor sarel="1" saname="Russian" saoffset="6990" salength="7" rank="56">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="러시아">95504</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="러시아어">12615</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="러시아의 국기">72863</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="the Battle" aoffset="7018" alength="10" ext_length="12">
+				<subanchor sarel="-1" saname="the Battle" saoffset="7018" salength="10" rank="202">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="전투">190234</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Battle" saoffset="7022" salength="6" rank="109">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="전역">138230</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="전">211348</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="경쟁">151620</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="싸움 (영화)">189050</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="전투">190234</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="배틀 (음악 그룹)">113949</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Battle of" saoffset="7022" salength="9" rank="207">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="전투">190234</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Battle of Borodino" saoffset="7022" salength="18" rank="1">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="보로디노 전투">270886</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Borodino" saoffset="7032" salength="8" rank="31">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="보로디노전투">270886</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="utility" aoffset="7057" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="utility" saoffset="7057" salength="7" rank="83">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="행복">114015</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="효용">8807</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="유틸리티">151077</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="공리">9847</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="복지">275792</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="to be" aoffset="7090" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="to be" saoffset="7090" salength="5" rank="234">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="수">14337</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="a matter" aoffset="7096" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="a matter" saoffset="7096" salength="8" rank="247">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="문제">306706</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="matter" saoffset="7098" salength="6" rank="138">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="물질">91356</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Prussian" aoffset="7117" alength="8" ext_length="0">
+				<subanchor sarel="1" saname="Prussian" saoffset="7117" salength="8" rank="36">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프로이센">10380</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프러시아 왕국">416136</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="the Napoleonic Wars" aoffset="7180" alength="19" ext_length="0">
+				<subanchor sarel="1" saname="the Napoleonic Wars" saoffset="7180" salength="19" rank="4">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="나폴레옹 전쟁">118862</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Napoleonic" saoffset="7184" salength="10" rank="163">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="나폴레옹 보나파르트">12308</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Napoleonic Wars" saoffset="7184" salength="15" rank="1">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="나폴레옹 전쟁">118862</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="period" aoffset="7248" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="period" saoffset="7248" salength="6" rank="160">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="주기율표 주기">15094</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="주기">69976</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="cuirasses" aoffset="7276" alength="9" ext_length="0">
+				<subanchor sarel="-1" saname="cuirasses" saoffset="7276" salength="9" rank="47">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="장갑">141890</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="the Netherlands" aoffset="7298" alength="15" ext_length="0">
+				<subanchor sarel="1" saname="the Netherlands" saoffset="7298" salength="15" rank="27">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="황금 당나귀">265394</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="네덜란드">7757</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="홀란트">120192</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Netherlands" saoffset="7302" salength="11" rank="23">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="네덜란드">7757</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="trade" aoffset="7493" alength="5" ext_length="11">
+				<subanchor sarel="-1" saname="trade" saoffset="7493" salength="5" rank="104">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="교역">263128</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="trade protection" saoffset="7493" salength="16" rank="187">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="국제 무역">97207</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="mobility" aoffset="7514" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="mobility" saoffset="7514" salength="8" rank="91">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="전자 이동도">319462</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="모빌리티">166977</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="이동">332519</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="wear" aoffset="7526" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="wear" saoffset="7526" salength="4" rank="107">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="옷">202924</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="thought" aoffset="7693" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="thought" saoffset="7693" salength="7" rank="188">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="생각">152451</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Battle of Wagram" aoffset="7818" alength="16" ext_length="0">
+				<subanchor sarel="1" saname="Battle of Wagram" saoffset="7818" salength="16" rank="17">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="바그람 전투">270469</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Wagram" saoffset="7828" salength="6" rank="32">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="바그람전투">270469</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="component" aoffset="7981" alength="9" ext_length="0">
+				<subanchor sarel="-1" saname="component" saoffset="7981" salength="9" rank="165">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="구성 요소">145006</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="in Paris" aoffset="8178" alength="8" ext_length="0">
+				<subanchor sarel="1" saname="in Paris" saoffset="8178" salength="8" rank="246">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="파리">7563</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Paris" saoffset="8181" salength="5" rank="30">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="파리">7563</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="파리 (도시)">7567</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="파리스">13265</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="파리">8201</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="service" aoffset="8238" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="service" saoffset="8238" salength="7" rank="169">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="서비스 (동음이의)">161904</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="서비스">147384</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="months" aoffset="8282" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="months" saoffset="8282" salength="6" rank="229">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="개월">247632</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="World" aoffset="8292" alength="5" ext_length="6">
+				<subanchor sarel="1" saname="World" saoffset="8292" salength="5" rank="162">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="세계">14827</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="월드">242825</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="World War" saoffset="8292" salength="9" rank="116">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="세계 대전">48107</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="제2차 세계 대전">10336</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="세계">14827</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="World War I" saoffset="8292" salength="11" rank="17">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="제1차 세계 대전">9203</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="I" saoffset="8302" salength="1" rank="36">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="I">56575</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="い">79058</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="И">150008</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="senior" aoffset="8450" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="senior" saoffset="8450" salength="6" rank="228">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="소프트웨어 공학">146535</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="형제">326158</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="상사">105154</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="branch" aoffset="8457" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="branch" saoffset="8457" salength="6" rank="203">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="분기 한정법">142134</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="arm" aoffset="8479" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="arm" saoffset="8479" salength="3" rank="112">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="전쟁">77198</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="표지">473193</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="병과">218874</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="ARM">28839</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="음경">106535</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="무기">8820</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="팔">23133</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="an army" aoffset="8486" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="an army" saoffset="8486" salength="7" rank="244">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="군대">146791</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="army" saoffset="8489" salength="4" rank="54">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="간성">131971</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="조직체">149997</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="군대">146791</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="군">3406</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="육군">88876</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="men" aoffset="8546" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="men" saoffset="8546" salength="3" rank="226">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="군사">146790</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="왕의 남자">54415</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="horses" aoffset="8557" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="horses" saoffset="8557" salength="6" rank="52">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="경마">190413</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="사람">307</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="말">7939</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="1">14345</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="경주마">317356</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="말 (동물)">7928</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="마력">78733</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="기병">13414</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="striking" aoffset="8595" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="striking" saoffset="8595" salength="8" rank="195">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="내 눈에 콩깍지">360476</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="force" aoffset="8604" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="force" saoffset="8604" salength="5" rank="157">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="힘 (물리)">7435</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Napoleon's" aoffset="8613" alength="10" ext_length="0">
+				<subanchor sarel="1" saname="Napoleon's" saoffset="8613" salength="10" rank="131">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="나폴레옹 보나파르트">12308</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="French and Prussian armies" aoffset="8703" alength="26" ext_length="0">
+				<subanchor sarel="1" saname="French and Prussian armies" saoffset="8703" salength="26" rank="34">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프랑스와 이로쿼이족의 전쟁">201282</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="expense" aoffset="8765" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="expense" saoffset="8765" salength="7" rank="167">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="누">375341</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="용비">276858</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="비용">243462</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="허파">96389</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="arm limited" aoffset="8799" alength="11" ext_length="0">
+				<subanchor sarel="-1" saname="arm limited" saoffset="8799" salength="11" rank="2">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="팔">23133</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="existence" aoffset="8817" alength="9" ext_length="0">
+				<subanchor sarel="-1" saname="existence" saoffset="8817" salength="9" rank="147">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="존재">153057</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="other countries" aoffset="8830" alength="15" ext_length="0">
+				<subanchor sarel="-1" saname="other countries" saoffset="8830" salength="15" rank="179">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="기타">588</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="countries" saoffset="8836" salength="9" rank="128">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="국가">47491</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Guard" aoffset="8849" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="Guard" saoffset="8849" salength="5" rank="26">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="오펜시브 가드">228743</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Household" aoffset="8942" alength="9" ext_length="8">
+				<subanchor sarel="-1" saname="Household" saoffset="8942" salength="9" rank="146">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="집">111215</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="집안">293225</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="가재">141181</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="가정">143630</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="가족">107156</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="세대">435769</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Household Cavalry" saoffset="8942" salength="17" rank="32">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="가정">143630</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="ceremonial" aoffset="8981" alength="10" ext_length="0">
+				<subanchor sarel="-1" saname="ceremonial" saoffset="8981" salength="10" rank="182">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="의식">276559</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="duty" aoffset="8992" alength="4" ext_length="0">
+				<subanchor sarel="1" saname="duty" saoffset="8992" salength="4" rank="159">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="의무">146268</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Whitehall" aoffset="9000" alength="9" ext_length="0">
+				<subanchor sarel="1" saname="Whitehall" saoffset="9000" salength="9" rank="15">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="화이트홀">194389</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="German" aoffset="9071" alength="6" ext_length="5">
+				<subanchor sarel="1" saname="German" saoffset="9071" salength="6" rank="49">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="독일의 군주">117330</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="민족">48390</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="게르만족">26631</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="독일어">4809</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="German army" saoffset="9071" salength="11" rank="38">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="나치 독일">50438</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="독일어">4809</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="ten" aoffset="9084" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="ten" saoffset="9084" salength="3" rank="130">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="열">3729</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Gardes du Corps" aoffset="9112" alength="15" ext_length="0">
+				<subanchor sarel="-1" saname="Gardes du Corps" saoffset="9112" salength="15" rank="132">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="베틴 가">291340</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="du" saoffset="9119" salength="2" rank="98">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="DU">21146</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="후나기 토모스케">299867</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Corps" saoffset="9122" salength="5" rank="18">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="군단">398516</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="법인">129236</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="주식회사">39890</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="the Russian" aoffset="9189" alength="11" ext_length="0">
+				<subanchor sarel="1" saname="the Russian" saoffset="9189" salength="11" rank="181">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="러시아">95504</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="the Imperial" aoffset="9225" alength="12" ext_length="6">
+				<subanchor sarel="1" saname="the Imperial" saoffset="9225" salength="12" rank="209">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="황제">6277</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Imperial" saoffset="9229" salength="8" rank="55">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="황제">7788</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="황제">6277</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="니케아 제국">195591</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="황후">85756</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Imperial Guard" saoffset="9229" salength="14" rank="51">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="임페리얼 칼리지 런던">145592</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="come" aoffset="9324" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="come" saoffset="9324" salength="4" rank="206">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="온">72113</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="parade" aoffset="9390" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="parade" saoffset="9390" salength="6" rank="48">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="행렬">594</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="광장">277696</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="정원">193461</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="시위">297057</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="dress" aoffset="9397" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="dress" saoffset="9397" salength="5" rank="62">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="의상 (신라)">68681</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="드레스">294552</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="장정">44250</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="원피스">163620</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="옷">202924</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="의">296533</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="cloth" aoffset="9454" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="cloth" saoffset="9454" salength="5" rank="50">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="옷감">298975</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="천">119638</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="성직자">94094</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="나사">33014</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="직물">298969</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="cover" aoffset="9460" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="cover" saoffset="9460" salength="5" rank="148">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="커버">431096</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="커버 플로">170235</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="plumed" aoffset="9471" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="plumed" saoffset="9471" salength="6" rank="100">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="관모">336102</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="weeks" aoffset="9520" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="weeks" saoffset="9520" salength="5" rank="171">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="주">38363</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="the British" aoffset="9583" alength="11" ext_length="5">
+				<subanchor sarel="1" saname="the British" saoffset="9583" salength="11" rank="241">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="영국">2182</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="British Army" saoffset="9587" salength="12" rank="26">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="영국">2182</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Army" saoffset="9595" salength="4" rank="32">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="육군">88876</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="1st" aoffset="9601" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="1st" saoffset="9601" salength="3" rank="197">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="은하수를 여행하는 히치하이커를 위한 안내서 (책)">90541</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="2nd" aoffset="9609" alength="3" ext_length="12">
+				<subanchor sarel="-1" saname="2nd" saoffset="9609" salength="3" rank="221">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="베드로의 둘째 편지">342075</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="2nd Life Guards" saoffset="9609" salength="15" rank="30">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="두번째 프러포즈">403868</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Life" saoffset="9613" salength="4" rank="141">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="라이프">268897</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="Life">135143</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="생명">12818</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Life Guards" saoffset="9613" salength="11" rank="48">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="생활 시뮬레이션 게임">12020</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Guards" saoffset="9618" salength="6" rank="93">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="경비">475993</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Royal Horse Guards" aoffset="9629" alength="18" ext_length="0">
+				<subanchor sarel="-1" saname="Royal Horse Guards" saoffset="9629" salength="18" rank="21">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="대우 로얄">259802</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Horse Guards" saoffset="9635" salength="12" rank="94">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="영국">2182</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="adopted" aoffset="9653" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="adopted" saoffset="9653" salength="7" rank="163">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="채택">227629</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="full dress" aoffset="9714" alength="10" ext_length="0">
+				<subanchor sarel="-1" saname="full dress" saoffset="9714" salength="10" rank="14">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="전례복">123895</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="정장석">67516</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="예복">300350</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="uniforms" aoffset="9725" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="uniforms" saoffset="9725" salength="8" rank="66">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="제복">360711</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="옷">202924</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="유니폼">360715</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="서서">73329</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="정복">78859</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="battle" aoffset="9781" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="battle" saoffset="9781" salength="6" rank="107">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="전투">190234</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="retention" aoffset="9803" alength="9" ext_length="0">
+				<subanchor sarel="-1" saname="retention" saoffset="9803" salength="9" rank="98">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="보존">105997</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="obsolete" aoffset="9845" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="obsolete" saoffset="9845" salength="8" rank="97">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="폐어류">81362</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="the French Army" aoffset="9883" alength="15" ext_length="0">
+				<subanchor sarel="1" saname="the French Army" saoffset="9883" salength="15" rank="221">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프랑스 육군">506992</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="French Army" saoffset="9887" salength="11" rank="20">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프랑스">95069</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프랑스 육군">506992</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="prestige" aoffset="9930" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="prestige" saoffset="9930" salength="8" rank="90">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="무게">56405</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="얼굴">145713</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="명성">156260</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="dating" aoffset="9970" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="dating" saoffset="9970" salength="6" rank="211">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="데이트">485524</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Franco-Prussian War" aoffset="9994" alength="19" ext_length="0">
+				<subanchor sarel="1" saname="Franco-Prussian War" saoffset="9994" salength="19" rank="3">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="보불전쟁">295070</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프로이센-프랑스 전쟁">39578</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="outbreak of war" aoffset="10076" alength="15" ext_length="0">
+				<subanchor sarel="-1" saname="outbreak of war" saoffset="10076" salength="15" rank="70">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="제2차 세계 대전">10336</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="mobilisation" aoffset="10149" alength="12" ext_length="0">
+				<subanchor sarel="-1" saname="mobilisation" saoffset="10149" salength="12" rank="161">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="동원역">77116</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="the only" aoffset="10171" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="the only" saoffset="10171" salength="8" rank="232">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="유일한">89956</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="concession" aoffset="10180" alength="10" ext_length="0">
+				<subanchor sarel="-1" saname="concession" saoffset="10180" salength="10" rank="164">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="이권">411516</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="양보역">150049</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="면허">144251</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="조차지">112492</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="조계">298264</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="용인시">8443</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="brown" aoffset="10219" alength="5" ext_length="0">
+				<subanchor sarel="1" saname="brown" saoffset="10219" salength="5" rank="10">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="브라운 대학교">22932</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="밤색">99830</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="갈색">88845</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="blue" aoffset="10228" alength="4" ext_length="0">
+				<subanchor sarel="1" saname="blue" saoffset="10228" salength="4" rank="57">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="하늘">12430</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="사막">34132</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="청나라">81926</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="경찰">116240</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="파랑">85937</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="the shining" aoffset="10244" alength="11" ext_length="0">
+				<subanchor sarel="-1" saname="the shining" saoffset="10244" salength="11" rank="28">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="별이 빛나는 밤에">29836</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="샤이닝">79286</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="샤이닝">449578</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="shining" saoffset="10248" salength="7" rank="127">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="샤이닝">449578</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="steel" aoffset="10256" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="steel" saoffset="10256" salength="5" rank="29">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="검">171048</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="철">106746</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="칼">152947</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="부시">8151</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="강철">91120</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="make" aoffset="10298" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="make" saoffset="10298" salength="4" rank="233">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="Make (소프트웨어)">275345</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="withdrawn" aoffset="10453" alength="9" ext_length="0">
+				<subanchor sarel="-1" saname="withdrawn" saoffset="10453" salength="9" rank="161">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="취소">261023</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="exist" aoffset="10622" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="exist" saoffset="10622" salength="5" rank="227">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="존재">153057</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="the overthrow" aoffset="10633" alength="13" ext_length="0">
+				<subanchor sarel="-1" saname="the overthrow" saoffset="10633" salength="13" rank="213">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="전복">321342</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="overthrow" saoffset="10637" salength="9" rank="139">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="전복">321342</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="정복">78859</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="regimes" aoffset="10663" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="regimes" saoffset="10663" salength="7" rank="237">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="정권">337306</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="numbers" aoffset="10817" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="numbers" saoffset="10817" salength="7" rank="174">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="넘버스">145737</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="넘버">125666</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="decorated" aoffset="10874" alength="9" ext_length="0">
+				<subanchor sarel="-1" saname="decorated" saoffset="10874" salength="9" rank="153">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="장식">230210</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="the war" aoffset="10891" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="the war" saoffset="10891" salength="7" rank="166">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="전쟁">77198</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Ironically" aoffset="10900" alength="10" ext_length="0">
+				<subanchor sarel="-1" saname="Ironically" saoffset="10900" salength="10" rank="13">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="반어">349773</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="dismounted cavalry" aoffset="11001" alength="18" ext_length="0">
+				<subanchor sarel="-1" saname="dismounted cavalry" saoffset="11001" salength="18" rank="65">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="분리 독립 운동 목록">268154</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="이장원">34824</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="trenches" aoffset="11027" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="trenches" saoffset="11027" salength="8" rank="51">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="서부 전선 (제1차 세계 대전)">72791</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="해구">169912</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="호">126398</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="전선">91955</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="굴">3269</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="mechanised" aoffset="11136" alength="10" ext_length="0">
+				<subanchor sarel="-1" saname="mechanised" saoffset="11136" salength="10" rank="82">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="기갑척탄병">355858</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="기계">134119</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="-" aoffset="11225" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="-" saoffset="11225" salength="1" rank="38">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="-">93086</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="11e" aoffset="11235" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="11e" saoffset="11235" salength="3" rank="180">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="11">14446</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Régiment" aoffset="11239" alength="8" ext_length="0">
+				<subanchor sarel="1" saname="Régiment" saoffset="11239" salength="8" rank="192">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="대군">130018</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="연대">35626</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="6e" aoffset="11290" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="6e" saoffset="11290" salength="2" rank="216">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="6">14356</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="12e" aoffset="11293" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="12e" saoffset="11293" salength="3" rank="190">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="12">14447</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Olivet" aoffset="11330" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="Olivet" saoffset="11330" salength="6" rank="69">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="박스 오피스 모조">340518</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Italian" aoffset="11434" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="Italian" saoffset="11434" salength="7" rank="35">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="이탈리아어">6017</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="이탈리아의 군주">120088</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="public" aoffset="11462" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="public" saoffset="11462" salength="6" rank="156">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="사회">141467</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="민중">81851</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="대중">344706</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="공개 API">317748</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="세계">14827</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="국민">47507</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="bore" aoffset="11699" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="bore" saoffset="11699" salength="4" rank="215">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="러시아">95504</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="지다">107850</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="보어">83681</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="곰">8037</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="the Life Guards" aoffset="11737" alength="15" ext_length="0">
+				<subanchor sarel="-1" saname="the Life Guards" saoffset="11737" salength="15" rank="99">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="생활 시뮬레이션 게임">12020</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Blues" aoffset="11757" alength="5" ext_length="11">
+				<subanchor sarel="1" saname="Blues" saoffset="11757" salength="5" rank="45">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="하늘">12430</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="블루스">276787</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="블루스 (럭비)">485891</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="사막">34132</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="청나라">81926</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="경찰">116240</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="파랑">85937</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Blues and Royals" saoffset="11757" salength="16" rank="17">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="블루스">276787</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Royals" saoffset="11767" salength="6" rank="172">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="캔자스시티 로열스">68806</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="la" aoffset="11825" alength="2" ext_length="8">
+				<subanchor sarel="-1" saname="la" saoffset="11825" salength="2" rank="50">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="Viva la Vida or Death and All His Friends">306160</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="LA">21333</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="la Guardia" saoffset="11825" salength="10" rank="5">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="라 (신화)">13520</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Guardia" saoffset="11828" salength="7" rank="187">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="가디">122864</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Real" aoffset="11836" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="Real" saoffset="11836" salength="4" rank="129">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="현실">277269</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Spanish Royal" aoffset="11848" alength="13" ext_length="6">
+				<subanchor sarel="-1" saname="Spanish Royal" saoffset="11848" salength="13" rank="193">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="스페인어">19852</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Spanish Royal Guard" saoffset="11848" salength="19" rank="42">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="스페인어">19852</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Royal Guard" saoffset="11856" salength="11" rank="117">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="왕실 국가 목록">117420</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="the Italian" aoffset="11891" alength="11" ext_length="0">
+				<subanchor sarel="1" saname="the Italian" saoffset="11891" salength="11" rank="201">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="이탈리아">2870</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="honour" aoffset="11919" alength="6" ext_length="6">
+				<subanchor sarel="-1" saname="honour" saoffset="11919" salength="6" rank="137">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="이름">83723</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="처녀성">124364</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="honour guard" saoffset="11919" salength="12" rank="29">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="의장대">444456</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="명예의 전당">317621</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="President" aoffset="11939" alength="9" ext_length="24">
+				<subanchor sarel="1" saname="President" saoffset="11939" salength="9" rank="46">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="대통령">3411</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="President of the Italian Republic" saoffset="11939" salength="33" rank="12">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="이탈리아">2870</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Italian Republic" saoffset="11956" salength="16" rank="29">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="이탈리아어">6017</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="이탈리아">2870</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Republic" saoffset="11964" salength="8" rank="95">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="공화제">10812</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="officer" aoffset="12077" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="officer" saoffset="12077" salength="7" rank="125">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="장교">119319</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Lieutenant" aoffset="12091" alength="10" ext_length="0">
+				<subanchor sarel="-1" saname="Lieutenant" saoffset="12091" salength="10" rank="125">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="군인 계급">5995</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Charles" aoffset="12102" alength="7" ext_length="0">
+				<subanchor sarel="1" saname="Charles" saoffset="12102" salength="7" rank="126">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="찰스 1세">100382</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="찰스">11415</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="c." aoffset="12146" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="c." saoffset="12146" salength="2" rank="67">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="인구 조사">40192</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Gros" aoffset="12171" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="Gros" saoffset="12171" salength="4" rank="68">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="빌 그로스">143827</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프랑스">95069</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="links" aoffset="12213" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="links" saoffset="12213" salength="5" rank="235">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="링크 (웹 브라우저)">147017</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Dragoons" aoffset="12401" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="Dragoons" saoffset="12401" salength="8" rank="53">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="드라군">34071</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="기병">13414</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Painting" aoffset="12566" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="Painting" saoffset="12566" salength="8" rank="71">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="화">144814</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="단청">244006</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="옻칠">290118</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="타블로">61396</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="회화">198390</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="regiment" aoffset="12591" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="regiment" saoffset="12591" salength="8" rank="45">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="대군">130018</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="연대 (군사)">452007</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="연대">35626</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="연대 (연도)">86519</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="the Napoleonic wars" aoffset="12607" alength="19" ext_length="0">
+				<subanchor sarel="1" saname="the Napoleonic wars" saoffset="12607" salength="19" rank="210">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="나폴레옹 전쟁">118862</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Napoleonic wars" saoffset="12611" salength="15" rank="8">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="나폴레옹 보나파르트">12308</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="나폴레옹 전쟁">118862</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="wars" saoffset="12622" salength="4" rank="151">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="전쟁">77198</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="history" aoffset="12810" alength="7" ext_length="10">
+				<subanchor sarel="-1" saname="history" saoffset="12810" salength="7" rank="56">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="역사">543</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="사">144993</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="사극">100260</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="기">31803</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="history of" saoffset="12810" salength="10" rank="190">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="역사">543</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="history of French" saoffset="12810" salength="17" rank="171">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="프랑스어">2914</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="North" aoffset="13122" alength="5" ext_length="0">
+				<subanchor sarel="1" saname="North" saoffset="13122" salength="5" rank="119">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="북쪽">91538</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="자">9723</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="수">14337</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="북극">35887</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="방위">270689</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="3rd" aoffset="13139" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="3rd" saoffset="13139" salength="3" rank="213">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="요한의 셋째 서간">419848</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Regiment" aoffset="13143" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="Regiment" saoffset="13143" salength="8" rank="11">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ko" title="연대 (군사)">452007</tobep>
+				</subanchor>
+			</anchor>
+		</outgoinglinks>
+	</topic>
+</crosslink-assessment>

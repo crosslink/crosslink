@@ -196,7 +196,8 @@ public class Assessment {
 			topicPath = ASSESSMENT_TOPIC_INBOX_PATH;
 		}
 		else { // assess Wikipedia ground-truth
-			topicPath = ASSESSMENT_TOPIC_TOPIC_PATH + sourceLang/*AppResource.getInstance().sourceLang*/ + File.separator;
+//			topicPath = ASSESSMENT_TOPIC_TOPIC_PATH + sourceLang/*AppResource.getInstance().sourceLang*/ + File.separator;
+			topicPath = AppResource.getInstance().getTopicPathWithLang();
 		}
 		
 		stack = new WildcardFiles().listFilesInStack(topicPath + "*.xml");
@@ -231,7 +232,7 @@ public class Assessment {
 //		if (targetLang.length() == 0)
 //			return ASSESSMENT_POOL_PATH + ASSESSMENT_POOL_PREFIX + "_" + id + ".xml";
 //		return ASSESSMENT_POOL_PATH + targetLang + File.separator + ASSESSMENT_POOL_PREFIX + "_" + id + ".xml";
-		return poolDirHandler.getAbsolutePath() + File.separator + ASSESSMENT_POOL_PREFIX + "_" + id + ".xml";
+		return poolDirHandler.getAbsolutePath() + File.separator + AppResource.getCrosslinkPath() + AppResource.makeLangPair() + File.separator + ASSESSMENT_POOL_PREFIX + "_" + id + ".xml";
 	}
 	
 	public String getNextTopic() {

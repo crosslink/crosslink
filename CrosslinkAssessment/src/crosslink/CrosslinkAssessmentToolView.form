@@ -549,7 +549,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="loadMenuItem">
               <Properties>
                 <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
-                  <action class="ltwassessmenttool.LTWAssessmentToolView" id="loadSubmissionXML" methodName="loadSubmissionXML"/>
+                  <action class="crosslink.CrosslinkAssessmentToolView" id="loadSubmissionXML" methodName="loadSubmissionXML"/>
                 </Property>
                 <Property name="text" type="java.lang.String" resourceKey="loadMenuItem.text"/>
                 <Property name="name" type="java.lang.String" value="loadMenuItem" noResource="true"/>
@@ -643,7 +643,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="aboutMenuItem">
               <Properties>
                 <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
-                  <action class="ltwassessmenttool.LTWAssessmentToolView" id="showAboutBox" methodName="showAboutBox"/>
+                  <action class="crosslink.CrosslinkAssessmentToolView" id="showAboutBox" methodName="showAboutBox"/>
                 </Property>
                 <Property name="name" type="java.lang.String" value="aboutMenuItem" noResource="true"/>
               </Properties>
@@ -757,7 +757,7 @@
         <Component class="javax.swing.JButton" name="btnGoBack">
           <Properties>
             <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
-              <action class="ltwassessmenttool.LTWAssessmentToolView" id="btnGoBackALink" methodName="btnGoBackALink"/>
+              <action class="crosslink.CrosslinkAssessmentToolView" id="btnGoBackALink" methodName="btnGoBackALink"/>
             </Property>
             <Property name="text" type="java.lang.String" resourceKey="btnGoBack.text"/>
             <Property name="name" type="java.lang.String" value="btnGoBack" noResource="true"/>
@@ -766,7 +766,7 @@
         <Component class="javax.swing.JButton" name="jButton1">
           <Properties>
             <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
-              <action class="ltwassessmenttool.LTWAssessmentToolView" id="btnGoForwardALink" methodName="btnGoForwardALink"/>
+              <action class="crosslink.CrosslinkAssessmentToolView" id="btnGoForwardALink" methodName="btnGoForwardALink"/>
             </Property>
             <Property name="text" type="java.lang.String" resourceKey="jButton1.text"/>
             <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
