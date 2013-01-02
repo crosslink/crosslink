@@ -1,0 +1,2428 @@
+<crosslink-assessment participant-id="2273087" run-id="2273087_A2B" task="A2B" default_lang="ja" source_lang="en">
+	<collection>Chinese Wikipedia 2010 Collection</collection>
+	<collection>Japanese Wikipedia 2010 Collection</collection>
+	<collection>Korean Wikipedia 2010 Collection</collection>
+	<topic file="244468" name="Zhu Xi">
+		<outgoinglinks>
+			<anchor arel="-1" aname="Xi" aoffset="270" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="Xi" saoffset="270" salength="2" rank="76">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="XI">151119</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="DAN DOH!!">421423</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Ξ">88709</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Song" aoffset="483" alength="4" ext_length="0">
+				<subanchor sarel="1" saname="Song" saoffset="483" salength="4" rank="181">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="宋 (春秋)">39961</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ソング">162536</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="歌">14205</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="宋">14066</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ソング (航空会社)">411302</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Dynasty" aoffset="488" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="Dynasty" saoffset="488" salength="7" rank="68">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="王朝">23910</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="地獄からの脱出">1683977</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Sanming" aoffset="615" alength="7" ext_length="0">
+				<subanchor sarel="1" saname="Sanming" saoffset="615" salength="7" rank="25">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="三明市">1338111</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Chinese" aoffset="645" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="Chinese" saoffset="645" salength="7" rank="72">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="支那人">546786</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Confucianists" aoffset="769" alength="13" ext_length="0">
+				<subanchor sarel="1" saname="Confucianists" saoffset="769" salength="13" rank="194">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="儒教">2017</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="12th-century" aoffset="805" alength="12" ext_length="0">
+				<subanchor sarel="-1" saname="12th-century" saoffset="805" salength="12" rank="204">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="12世紀">2452</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Confucianism" aoffset="920" alength="12" ext_length="0">
+				<subanchor sarel="1" saname="Confucianism" saoffset="920" salength="12" rank="24">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="儒教">2017</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Neo-Confucianism" aoffset="934" alength="16" ext_length="0">
+				<subanchor sarel="1" saname="Neo-Confucianism" saoffset="934" salength="16" rank="22">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="宋明理学">225952</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Confucius" aoffset="994" alength="9" ext_length="0">
+				<subanchor sarel="1" saname="Confucius" saoffset="994" salength="9" rank="5">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="孔子">13959</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Mencius" aoffset="1005" alength="7" ext_length="0">
+				<subanchor sarel="1" saname="Mencius" saoffset="1005" salength="7" rank="37">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="孟子">1810</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Cheng" aoffset="1014" alength="5" ext_length="4">
+				<subanchor sarel="-1" saname="Cheng" saoffset="1014" salength="5" rank="213">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ブルース・チェン">641906</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="チェン">1846711</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Cheng Hao" saoffset="1014" salength="9" rank="44">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="程顥">697685</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Zhou" aoffset="1025" alength="4" ext_length="6">
+				<subanchor sarel="-1" saname="Zhou" saoffset="1025" salength="4" rank="174">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="州">30044</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="周">16636</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="周 (曖昧さ回避)">580958</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Zhou Dunyi" saoffset="1025" salength="10" rank="7">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="周敦頤">316181</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Cheng Yi" aoffset="1037" alength="8" ext_length="0">
+				<subanchor sarel="1" saname="Cheng Yi" saoffset="1037" salength="8" rank="57">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="城一">1354157</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="程頤">697797</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Zhang" aoffset="1047" alength="5" ext_length="4">
+				<subanchor sarel="-1" saname="Zhang" saoffset="1047" salength="5" rank="124">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="河南省">93175</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Zhang Zai" saoffset="1047" salength="9" rank="21">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="張載">699192</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Zai" saoffset="1053" salength="3" rank="233">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="競走馬の血統">473979</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Joseph" aoffset="1075" alength="6" ext_length="8">
+				<subanchor sarel="-1" saname="Joseph" saoffset="1075" salength="6" rank="210">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ナザレのヨセフ">121800</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ジュゼッペ">501926</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヨセフ (ヤコブの子)">979083</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ジョゼフ">499359</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヨセフ">120661</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Joseph Needham" saoffset="1075" salength="14" rank="38">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ジョゼフ・ニーダム">1036072</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Needham" saoffset="1082" salength="7" rank="140">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ニーダム">1697064</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ニーダム (小惑星)">1187904</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Wang Yangming" aoffset="1091" alength="13" ext_length="0">
+				<subanchor sarel="1" saname="Wang Yangming" saoffset="1091" salength="13" rank="1">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="王陽明">14077</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Toegye" aoffset="1106" alength="6" ext_length="0">
+				<subanchor sarel="1" saname="Toegye" saoffset="1106" salength="6" rank="56">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="李滉">442336</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Wang Fuzhi" aoffset="1114" alength="10" ext_length="0">
+				<subanchor sarel="-1" saname="Wang Fuzhi" saoffset="1114" salength="10" rank="15">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="王">23912</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Qian Mu" aoffset="1126" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="Qian Mu" saoffset="1126" salength="7" rank="39">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="銭 (曖昧さ回避)">1057567</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Mu" saoffset="1131" salength="2" rank="74">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="特別席">73218</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="MU">112442</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Tu" aoffset="1135" alength="2" ext_length="9">
+				<subanchor sarel="-1" saname="Tu" saoffset="1135" salength="2" rank="134">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Tuoカード">73362</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="TU">381295</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Tu Wei-ming" saoffset="1135" salength="11" rank="6">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="杜維明">701596</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Chu" aoffset="1196" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="Chu" saoffset="1196" salength="3" rank="136">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="楚 (春秋)">69281</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="湖南省">132068</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="楚 (十国)">131732</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="CHU">206337</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="楚">49394</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Youxi" aoffset="1231" alength="5" ext_length="0">
+				<subanchor sarel="1" saname="Youxi" saoffset="1231" salength="5" rank="49">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="尤渓県">1579512</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Fujian" aoffset="1238" alength="6" ext_length="9">
+				<subanchor sarel="1" saname="Fujian" saoffset="1238" salength="6" rank="43">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="福建省">24784</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="福建省 (中華民国)">1862336</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Fujian province" saoffset="1238" salength="15" rank="12">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="福建省">24784</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="福建省 (中華民国)">1862336</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="province" saoffset="1245" salength="8" rank="71">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="プロヴィンス">1329186</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="China" aoffset="1255" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="China" saoffset="1255" salength="5" rank="53">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="チャイナ (ヴァンゲリス)">1162453</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="中国 (曖昧さ回避)">400306</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="中国">270031</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="チャイナ">452517</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Confucian" aoffset="1316" alength="9" ext_length="0">
+				<subanchor sarel="-1" saname="Confucian" saoffset="1316" salength="9" rank="86">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="儒教">2017</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="scholar" aoffset="1326" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="scholar" saoffset="1326" salength="7" rank="107">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="学者">95400</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="School" aoffset="1371" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="School" saoffset="1371" salength="6" rank="75">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="スクール">35062</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="学校">1420036</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Principle" aoffset="1381" alength="9" ext_length="0">
+				<subanchor sarel="-1" saname="Principle" saoffset="1381" salength="9" rank="34">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="原理">1869552</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="rationalist" aoffset="1416" alength="11" ext_length="0">
+				<subanchor sarel="-1" saname="rationalist" saoffset="1416" salength="11" rank="59">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="合理主義">62898</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="合理主義哲学">215</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Neo-Confucian" aoffset="1428" alength="13" ext_length="0">
+				<subanchor sarel="-1" saname="Neo-Confucian" saoffset="1428" salength="13" rank="42">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="新">31503</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Chinese philosophy" aoffset="1472" alength="18" ext_length="0">
+				<subanchor sarel="-1" saname="Chinese philosophy" saoffset="1472" salength="18" rank="103">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="中国">270031</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="the Analects" aoffset="1538" alength="16" ext_length="13">
+				<subanchor sarel="1" saname="the Analects" saoffset="1538" salength="16" rank="123">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="論語">1808</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="the Analects of Confucius" saoffset="1538" salength="29" rank="165">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="論語">1808</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Analects" saoffset="1546" salength="8" rank="62">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="論語">1808</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Analects of Confucius" saoffset="1546" salength="21" rank="50">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="論語">1808</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="the Mencius" aoffset="1574" alength="15" ext_length="0">
+				<subanchor sarel="1" saname="the Mencius" saoffset="1574" salength="15" rank="48">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="孟子">1810</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="the Great Learning" aoffset="1596" alength="22" ext_length="0">
+				<subanchor sarel="1" saname="the Great Learning" saoffset="1596" salength="22" rank="80">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="大学 (書物)">496576</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Great" saoffset="1604" salength="5" rank="99">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="グレート">1700942</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Great Learning" saoffset="1604" salength="14" rank="119">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="大学 (書物)">496576</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="大学">30345</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Learning" saoffset="1610" salength="8" rank="205">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="学習">2671</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="the Doctrine of the Mean" aoffset="1629" alength="28" ext_length="0">
+				<subanchor sarel="1" saname="the Doctrine of the Mean" saoffset="1629" salength="28" rank="82">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="平均">8328</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Doctrine" saoffset="1637" salength="8" rank="54">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ドクトリン">850773</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Doctrine of the Mean" saoffset="1637" salength="20" rank="35">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="中庸">44332</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Four Books" aoffset="1668" alength="10" ext_length="0">
+				<subanchor sarel="1" saname="Four Books" saoffset="1668" salength="10" rank="109">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="四書">37658</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="synthesis" aoffset="1750" alength="9" ext_length="0">
+				<subanchor sarel="-1" saname="synthesis" saoffset="1750" salength="9" rank="164">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="合成">157944</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Life" aoffset="1817" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="Life" saoffset="1817" salength="4" rank="114">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="LIFE (YUIの曲)">857318</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Life 真実へのパズル">1909133</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="生命">4035</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="LIFE (中島美嘉の曲)">1144650</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ライフ">76322</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Chinese:" aoffset="2055" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="Chinese:" saoffset="2055" salength="8" rank="55">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="中国語">5698</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Pinyin" aoffset="2118" alength="6" ext_length="0">
+				<subanchor sarel="1" saname="Pinyin" saoffset="2118" salength="6" rank="69">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ピン音">17493</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ピン">241893</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Wade-Giles" aoffset="2184" alength="10" ext_length="0">
+				<subanchor sarel="1" saname="Wade-Giles" saoffset="2184" salength="10" rank="26">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ウェード式">759373</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="family" aoffset="2262" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="family" saoffset="2262" salength="6" rank="179">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="科 (分類学)">608885</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="家族">104482</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="County" aoffset="2291" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="County" saoffset="2291" salength="6" rank="90">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="県 (中華人民共和国)">1013600</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="郡 (アメリカ合衆国)">192537</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="県">271065</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="カウンティ">1043792</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Hui" aoffset="2301" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="Hui" saoffset="2301" salength="3" rank="77">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="回族">16355</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アドルフ・ホイジンガー">1264108</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Prefecture" aoffset="2305" alength="10" ext_length="0">
+				<subanchor sarel="-1" saname="Prefecture" saoffset="2305" salength="10" rank="151">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="地区 (中華人民共和国)">371571</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="県 (中華人民共和国)">1013600</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="県">271065</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Jiangxi" aoffset="2348" alength="7" ext_length="9">
+				<subanchor sarel="1" saname="Jiangxi" saoffset="2348" salength="7" rank="28">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="江西省 (中華民国)">1853080</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="江西省">140053</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Jiangxi Province" saoffset="2348" salength="16" rank="21">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="江西省 (中華民国)">1853080</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="江西省">140053</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="sheriff" aoffset="2433" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="sheriff" saoffset="2433" salength="7" rank="57">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="保安官">48866</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="After" aoffset="2442" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="After" saoffset="2442" salength="5" rank="105">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アフター">889879</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="opposition" aoffset="2493" alength="10" ext_length="0">
+				<subanchor sarel="-1" saname="opposition" saoffset="2493" salength="10" rank="175">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="オポジション">1458891</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="government" aoffset="2511" alength="10" ext_length="0">
+				<subanchor sarel="-1" saname="government" saoffset="2511" salength="10" rank="127">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="政府">46424</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="appeasement" aoffset="2522" alength="11" ext_length="7">
+				<subanchor sarel="1" saname="appeasement" saoffset="2522" salength="11" rank="51">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="宥和政策">71683</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="appeasement policy" saoffset="2522" salength="18" rank="70">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="宥和政策">71683</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Jurchen" aoffset="2553" alength="7" ext_length="0">
+				<subanchor sarel="1" saname="Jurchen" saoffset="2553" salength="7" rank="40">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="金 (王朝)">13714</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="home" aoffset="2617" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="home" saoffset="2617" salength="4" rank="245">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="家庭">85411</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="death" aoffset="2641" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="death" saoffset="2641" salength="5" rank="247">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="死">356397</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="friends" aoffset="2685" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="friends" saoffset="2685" salength="7" rank="219">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="フレンズ (1994年のテレビドラマ)">221970</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Hu" aoffset="2693" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="Hu" saoffset="2693" salength="2" rank="131">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ハンガリー語">12966</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="中国">270031</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="HU">100087</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Xian" aoffset="2696" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="Xian" saoffset="2696" salength="4" rank="83">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="西安市">26248</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="長安">13212</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Liu" aoffset="2702" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="Liu" saoffset="2702" salength="3" rank="111">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="劉氏">661186</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="劉邦">30021</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Zihui" aoffset="2706" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="Zihui" saoffset="2706" salength="5" rank="39">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="字彙">500498</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="the age" aoffset="2742" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="the age" saoffset="2742" salength="7" rank="208">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ジ・エイジ">1229158</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Imperial" aoffset="2775" alength="8" ext_length="12">
+				<subanchor sarel="-1" saname="Imperial" saoffset="2775" salength="8" rank="52">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="インペリアル (ビール)">1767732</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="インペリアル (自動車)">1813200</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Imperial Examination" saoffset="2775" salength="20" rank="17">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="科挙">41734</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Examination" saoffset="2784" salength="11" rank="249">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="試験">26322</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Registrar" aoffset="2892" alength="9" ext_length="0">
+				<subanchor sarel="-1" saname="Registrar" saoffset="2892" salength="9" rank="169">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="レジストラ">1457912</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Tong'an" aoffset="2905" alength="7" ext_length="0">
+				<subanchor sarel="1" saname="Tong'an" saoffset="2905" salength="7" rank="43">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="同安区">1568745</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Li" aoffset="2990" alength="2" ext_length="5">
+				<subanchor sarel="-1" saname="Li" saoffset="2990" salength="2" rank="144">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="LI">100438</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="李氏">941720</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="里">25295</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="礼">232674</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Li Tong" saoffset="2990" salength="7" rank="60">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="李通 (文達)">244152</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="李カク">122836</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Tong" saoffset="2993" salength="4" rank="216">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="トン">9129</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="tradition" aoffset="3030" alength="9" ext_length="0">
+				<subanchor sarel="-1" saname="tradition" saoffset="3030" salength="9" rank="214">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="伝統">239237</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="student" aoffset="3091" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="student" saoffset="3091" salength="7" rank="246">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="在籍 (学習者)">1203354</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="在籍者 (学習者)">65071</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="capacity" aoffset="3150" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="capacity" saoffset="3150" salength="8" rank="112">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="容量">252001</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Prefect" aoffset="3192" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="Prefect" saoffset="3192" salength="7" rank="86">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="プラエフェクトゥス">960088</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Nankang" aoffset="3203" alength="7" ext_length="0">
+				<subanchor sarel="1" saname="Nankang" saoffset="3203" salength="7" rank="103">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="南康市">1659599</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ナンカン">1032882</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ナン">45689</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Military" aoffset="3211" alength="8" ext_length="9">
+				<subanchor sarel="-1" saname="Military" saoffset="3211" salength="8" rank="147">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="軍事">15994</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Military District" saoffset="3211" salength="17" rank="139">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="軍管区">532550</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="District" saoffset="3220" salength="8" rank="223">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="市轄区">425418</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="地区">1008438</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="White" aoffset="3253" alength="5" ext_length="5">
+				<subanchor sarel="-1" saname="White" saoffset="3253" salength="5" rank="94">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="白">20977</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ホワイト">17470</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="White Deer" saoffset="3253" salength="10" rank="232">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="白鹿グループ">688937</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Deer" saoffset="3259" salength="4" rank="121">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="シカ">27262</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Hollow" aoffset="3264" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="Hollow" saoffset="3264" salength="6" rank="83">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="虚 (BLEACH)">1915481</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Academy" aoffset="3271" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="Academy" saoffset="3271" salength="7" rank="71">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アカデミー">194173</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="people" aoffset="3640" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="people" saoffset="3640" salength="6" rank="199">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="人民">66527</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="funeral" aoffset="3660" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="funeral" saoffset="3660" salength="7" rank="148">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="火葬">59611</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="葬儀">59604</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="tablet" aoffset="3766" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="tablet" saoffset="3766" salength="6" rank="153">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="錠剤">394321</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Confucian Temple" aoffset="3791" alength="16" ext_length="0">
+				<subanchor sarel="1" saname="Confucian Temple" saoffset="3791" salength="16" rank="42">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="孔子廟">197916</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="孔廟">421876</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Temple" saoffset="3801" salength="6" rank="124">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="寺院">13275</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="The Four Books" aoffset="3859" alength="14" ext_length="0">
+				<subanchor sarel="1" saname="The Four Books" saoffset="3859" salength="14" rank="61">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="四書">37658</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Song Dynasty" aoffset="3895" alength="12" ext_length="0">
+				<subanchor sarel="1" saname="Song Dynasty" saoffset="3895" salength="12" rank="0">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="宋 (春秋)">39961</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="宋 (王朝)">57982</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="I" aoffset="3994" alength="1" ext_length="6">
+				<subanchor sarel="-1" saname="I" saoffset="3994" salength="1" rank="151">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="I&quot;s">36016</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="一人称">1332368</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="И">121765</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="I">16236</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="い">42697</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="I Ching" saoffset="3994" salength="7" rank="20">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="易経">1806</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="義浄">514409</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Neo-Confucians" aoffset="4018" alength="14" ext_length="0">
+				<subanchor sarel="-1" saname="Neo-Confucians" saoffset="4018" salength="14" rank="125">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="シャイニング・フォース ネオ">786536</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="core" aoffset="4204" alength="4" ext_length="11">
+				<subanchor sarel="-1" saname="core" saoffset="4204" salength="4" rank="190">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="コア">37205</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="core curriculum" saoffset="4204" salength="15" rank="78">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="カリキュラム">201161</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="curriculum" saoffset="4209" salength="10" rank="156">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="カリキュラム">201161</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="classics" aoffset="4266" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="classics" saoffset="4266" salength="8" rank="187">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="西洋古典学">507555</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="commentaries" aoffset="4294" alength="12" ext_length="0">
+				<subanchor sarel="-1" saname="commentaries" saoffset="4294" salength="12" rank="137">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="聖書釈義">1922106</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="time" aoffset="4346" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="time" saoffset="4346" salength="4" rank="233">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="時間">3974</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="civil service" aoffset="4458" alength="13" ext_length="13">
+				<subanchor sarel="-1" saname="civil service" saoffset="4458" salength="13" rank="63">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="公務員">81398</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="civil service examinations" saoffset="4458" salength="26" rank="145">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="公務員試験">123229</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Vital" aoffset="4619" alength="5" ext_length="6">
+				<subanchor sarel="-1" saname="Vital" saoffset="4619" salength="5" rank="91">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヴィタール">900697</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Vital force" saoffset="4619" salength="11" rank="234">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="生命">4035</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="qi" aoffset="4641" alength="2" ext_length="0">
+				<subanchor sarel="1" saname="qi" saoffset="4641" salength="2" rank="4">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="気">233685</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="li" aoffset="4673" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="li" saoffset="4673" salength="2" rank="3">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="LI">100438</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ブルーノ・サッコ">1559077</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Ultimate" aoffset="4699" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="Ultimate" saoffset="4699" salength="8" rank="42">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アルティメット">139889</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="taiji" aoffset="4713" alength="5" ext_length="0">
+				<subanchor sarel="1" saname="taiji" saoffset="4713" salength="5" rank="0">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="太極">199443</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="union" aoffset="4812" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="union" saoffset="4812" salength="5" rank="66">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="フレッシュプラザ ユニオン">695103</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ユニオン (曖昧さ回避)">1289924</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="universal" aoffset="4825" alength="9" ext_length="0">
+				<subanchor sarel="-1" saname="universal" saoffset="4825" salength="9" rank="98">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ユニバーサル">562421</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="reality" aoffset="4846" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="reality" saoffset="4846" salength="7" rank="116">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="実在">392462</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="現実">304311</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="存在論">108739</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="law" aoffset="4993" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="law" saoffset="4993" salength="3" rank="142">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="法 (法学)">739217</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="カーヌーン (イスラーム法)">1837690</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="カーヌーン">23504</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Taiji" aoffset="5044" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="Taiji" saoffset="5044" salength="5" rank="101">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="太極拳">14801</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="沢田泰司">187995</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="太極">199443</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="ai" aoffset="5070" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="ai" saoffset="5070" salength="2" rank="27">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="AI">43232</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="This Night">1077237</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Chi" aoffset="5073" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="Chi" saoffset="5073" salength="3" rank="82">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="豊田工業大学シカゴ校">921096</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="CHI">384665</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="ch" aoffset="5146" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="ch" saoffset="5146" salength="2" rank="58">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="CH">96778</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Tomorrow&amp;apos;s chance">1779209</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Ch">73149</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="metaphysical" aoffset="5239" alength="12" ext_length="7">
+				<subanchor sarel="1" saname="metaphysical" saoffset="5239" salength="12" rank="58">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="形而上学">34102</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="metaphysical monist" saoffset="5239" salength="19" rank="12">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="形而上学">34102</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="monist" saoffset="5252" salength="6" rank="48">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="一元論">737605</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="metaphysical dualist" aoffset="5296" alength="20" ext_length="0">
+				<subanchor sarel="-1" saname="metaphysical dualist" saoffset="5296" salength="20" rank="75">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="形而上学">34102</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="dualist" saoffset="5309" salength="7" rank="74">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="二元論">64588</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="theory" aoffset="5349" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="theory" saoffset="5349" salength="6" rank="220">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="理論">15025</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="政治哲学">165970</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="physical object" aoffset="5363" alength="15" ext_length="0">
+				<subanchor sarel="-1" saname="physical object" saoffset="5363" salength="15" rank="79">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="物体">8442</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="object" saoffset="5372" salength="6" rank="244">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="オブジェクト (プログラミング)">849887</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="オブジェクト">12881</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="human" aoffset="5519" alength="5" ext_length="5">
+				<subanchor sarel="-1" saname="human" saoffset="5519" salength="5" rank="163">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヒト">560366</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="人間">3041</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="human soul" saoffset="5519" salength="10" rank="110">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="霊魂">54539</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="soul" saoffset="5525" salength="4" rank="77">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="霊魂">54539</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="mind" aoffset="5531" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="mind" saoffset="5531" salength="4" rank="130">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="心">48092</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="spirit" aoffset="5540" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="spirit" saoffset="5540" salength="6" rank="128">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="精神">81822</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Qi" aoffset="5669" alength="2" ext_length="0">
+				<subanchor sarel="1" saname="Qi" saoffset="5669" salength="2" rank="63">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="岐">342589</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="杞">89966</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="気">233685</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="斉">53514</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="斉 (春秋)">53562</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="mutual dependence" aoffset="5713" alength="17" ext_length="0">
+				<subanchor sarel="-1" saname="mutual dependence" saoffset="5713" salength="17" rank="67">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="共生">105466</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="相互依存論">749594</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="all creatures" aoffset="5763" alength="13" ext_length="0">
+				<subanchor sarel="-1" saname="all creatures" saoffset="5763" salength="13" rank="135">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="衆生">15464</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="universe" aoffset="5784" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="universe" saoffset="5784" salength="8" rank="102">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="宇宙">3957</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="yang" aoffset="5932" alength="4" ext_length="0">
+				<subanchor sarel="1" saname="yang" saoffset="5932" salength="4" rank="44">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヤン">544146</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="陰陽">14008</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="energy" aoffset="5937" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="energy" saoffset="5937" salength="6" rank="133">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="エネルギー">5397</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="mode" aoffset="5944" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="mode" saoffset="5944" salength="4" rank="200">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="モード">1569225</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="contractive" aoffset="5989" alength="11" ext_length="0">
+				<subanchor sarel="-1" saname="contractive" saoffset="5989" salength="11" rank="61">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="収縮">1905235</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="収縮写像">1365686</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="the yin" aoffset="6011" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="the yin" saoffset="6011" salength="7" rank="130">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="殷">21320</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="yang and yin" aoffset="6036" alength="12" ext_length="0">
+				<subanchor sarel="-1" saname="yang and yin" saoffset="6036" salength="12" rank="171">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ムン陽駅">1361439</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="interact" aoffset="6067" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="interact" saoffset="6067" salength="8" rank="96">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="タンパク質間相互作用">1078194</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="waxing and waning" aoffset="6149" alength="17" ext_length="0">
+				<subanchor sarel="-1" saname="waxing and waning" saoffset="6149" salength="17" rank="123">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="月相">31170</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="vibrations" aoffset="6205" alength="10" ext_length="0">
+				<subanchor sarel="-1" saname="vibrations" saoffset="6205" salength="10" rank="185">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="振動">716808</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="five elements" aoffset="6231" alength="13" ext_length="0">
+				<subanchor sarel="1" saname="five elements" saoffset="6231" salength="13" rank="72">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="5">11223</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="五行思想">1600389</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="fire" aoffset="6246" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="fire" saoffset="6246" salength="4" rank="193">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="火">12978</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="water" aoffset="6252" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="water" saoffset="6252" salength="5" rank="161">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="水">1732</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="wood" aoffset="6259" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="wood" saoffset="6259" salength="4" rank="99">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="木材">84530</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="metal" aoffset="6265" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="metal" saoffset="6265" salength="5" rank="140">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="金属">3674</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="earth" aoffset="6276" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="earth" saoffset="6276" salength="5" rank="87">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="地球">491051</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="自然">8858</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Buddhist" aoffset="6377" alength="8" ext_length="0">
+				<subanchor sarel="1" saname="Buddhist" saoffset="6377" salength="8" rank="28">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="仏教">4182</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="shi" aoffset="6421" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="shi" saoffset="6421" salength="3" rank="189">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="市">19068</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="long" aoffset="6597" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="long" saoffset="6597" salength="4" rank="226">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ロング">772520</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ロング アゴー">373227</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Taoism" aoffset="6733" alength="6" ext_length="0">
+				<subanchor sarel="1" saname="Taoism" saoffset="6733" salength="6" rank="13">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="道教">1281837</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Tao" aoffset="6819" alength="3" ext_length="0">
+				<subanchor sarel="1" saname="Tao" saoffset="6819" salength="3" rank="95">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="TAO">441763</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="道 (哲学)">234194</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="タオ">40549</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="TAO (Do As Infinityの曲)">825678</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Daoism" aoffset="6831" alength="6" ext_length="0">
+				<subanchor sarel="1" saname="Daoism" saoffset="6831" salength="6" rank="53">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="道教">1281837</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="differentiating" aoffset="6865" alength="15" ext_length="0">
+				<subanchor sarel="-1" saname="differentiating" saoffset="6865" salength="15" rank="138">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="解析学">1117</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="emergence" aoffset="6911" alength="9" ext_length="0">
+				<subanchor sarel="-1" saname="emergence" saoffset="6911" salength="9" rank="184">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="創発">759682</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="something new" aoffset="6924" alength="13" ext_length="0">
+				<subanchor sarel="-1" saname="something new" saoffset="6924" salength="13" rank="97">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="新語">640488</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Dao" aoffset="6939" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="Dao" saoffset="6939" salength="3" rank="104">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="DAO">953783</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="中国刀">298941</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Data Access Objects">1554971</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="silent" aoffset="6956" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="silent" saoffset="6956" salength="6" rank="76">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="サイレント映画">10764</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="equality" aoffset="6998" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="equality" saoffset="6998" salength="8" rank="143">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="平等主義">2023029</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="平等">88267</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="He" aoffset="7033" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="He" saoffset="7033" salength="2" rank="147">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="HE">87259</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="へ">93000</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="central" aoffset="7059" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="central" saoffset="7059" salength="7" rank="132">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="セントラル">593257</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="コカ・コーラ セントラル ジャパン">317692</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="harmony" aoffset="7067" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="harmony" saoffset="7067" salength="7" rank="98">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="和声">37391</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Human" aoffset="7212" alength="5" ext_length="7">
+				<subanchor sarel="-1" saname="Human" saoffset="7212" salength="5" rank="98">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヒューマン">539325</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヒト">560366</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="人間">3041</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Human nature" saoffset="7212" salength="12" rank="10">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="本性">1737391</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="nature" saoffset="7218" salength="6" rank="173">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="自然">8858</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Xun" aoffset="7275" alength="3" ext_length="3">
+				<subanchor sarel="-1" saname="Xun" saoffset="7275" salength="3" rank="162">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="シュン (楽器)">1549294</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="魯迅">53111</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Xun Zi" saoffset="7275" salength="6" rank="8">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="荀子">30436</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Zi" saoffset="7279" salength="2" rank="59">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="字">53093</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ZI:KILL">127664</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="字 (曖昧さ回避)">762380</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="heretic" aoffset="7290" alength="7" ext_length="0">
+				<subanchor sarel="1" saname="heretic" saoffset="7290" salength="7" rank="73">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="異端">25735</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="goodness" aoffset="7347" alength="8" ext_length="0">
+				<subanchor sarel="1" saname="goodness" saoffset="7347" salength="8" rank="224">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="善">142390</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="immoral" aoffset="7382" alength="7" ext_length="0">
+				<subanchor sarel="1" saname="immoral" saoffset="7382" salength="7" rank="94">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="道徳">52906</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="behaviour" aoffset="7390" alength="9" ext_length="0">
+				<subanchor sarel="-1" saname="behaviour" saoffset="7390" salength="9" rank="160">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="行動">491705</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="regulative" aoffset="7413" alength="10" ext_length="10">
+				<subanchor sarel="-1" saname="regulative" saoffset="7413" salength="10" rank="113">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="規制">51574</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="regulative principle" saoffset="7413" salength="20" rank="45">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="規制">51574</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="metaphysics" aoffset="7490" alength="11" ext_length="0">
+				<subanchor sarel="-1" saname="metaphysics" saoffset="7490" salength="11" rank="5">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="形而上学">34102</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="As" aoffset="7669" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="As" saoffset="7669" salength="2" rank="150">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アス (青銅貨)">2028024</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="act" aoffset="7697" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="act" saoffset="7697" salength="3" rank="222">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ACT">238898</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アクト">402260</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="morality" aoffset="7728" alength="8" ext_length="0">
+				<subanchor sarel="1" saname="morality" saoffset="7728" salength="8" rank="113">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="倫理学">50426</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="道徳">52906</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="moral" aoffset="7860" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="moral" saoffset="7860" salength="5" rank="106">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="倫理学">50426</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="道徳">52906</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="cultivation" aoffset="7893" alength="11" ext_length="0">
+				<subanchor sarel="-1" saname="cultivation" saoffset="7893" salength="11" rank="128">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="農業">3059</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="If" aoffset="7926" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="If" saoffset="7926" salength="2" rank="146">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="IF">143841</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="イフ (雑誌)">1893575</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="イフ (ブレッドの曲)">1860960</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Heart" aoffset="8034" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="Heart" saoffset="8034" salength="5" rank="185">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="心臓">40009</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Knowledge" aoffset="8069" alength="9" ext_length="0">
+				<subanchor sarel="-1" saname="Knowledge" saoffset="8069" salength="9" rank="37">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ナレッジ">1397301</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="知">1803235</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="知識">7825</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="action" aoffset="8083" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="action" saoffset="8083" salength="6" rank="169">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アクション">452166</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="epistemology" aoffset="8122" alength="12" ext_length="0">
+				<subanchor sarel="1" saname="epistemology" saoffset="8122" salength="12" rank="32">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="認識論">1002</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="knowledge" aoffset="8136" alength="9" ext_length="0">
+				<subanchor sarel="-1" saname="knowledge" saoffset="8136" salength="9" rank="203">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="知識">7825</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="It" aoffset="8453" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="It" saoffset="8453" salength="2" rank="145">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="IT (映画)">1208839</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="IT">68520</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="extension" aoffset="8828" alength="9" ext_length="0">
+				<subanchor sarel="-1" saname="extension" saoffset="8828" salength="9" rank="231">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="エクステンション">316810</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="debate" aoffset="8993" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="debate" saoffset="8993" salength="6" rank="211">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ディベート">98476</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="To" aoffset="9001" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="To" saoffset="9001" salength="2" rank="139">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="と">94012</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Religion" aoffset="9377" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="Religion" saoffset="9377" salength="8" rank="107">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="宗教">848612</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="God" aoffset="9440" alength="3" ext_length="0">
+				<subanchor sarel="1" saname="God" saoffset="9440" salength="3" rank="93">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="英語">3377</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ゴッド (ジョン・レノン)">484940</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="神">3990</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Heaven" aoffset="9447" alength="6" ext_length="0">
+				<subanchor sarel="1" saname="Heaven" saoffset="9447" salength="6" rank="100">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヘヴン (映画)">1580418</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="HEAVEN">480564</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="天国">24881</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="HEAVEN (浜崎あゆみの曲)">478724</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Tian" aoffset="9459" alength="4" ext_length="0">
+				<subanchor sarel="1" saname="Tian" saoffset="9459" salength="4" rank="122">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="天">47754</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="agnostic" aoffset="9561" alength="8" ext_length="0">
+				<subanchor sarel="1" saname="agnostic" saoffset="9561" salength="8" rank="45">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="不可知論">793448</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Earth" aoffset="9778" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="Earth" saoffset="9778" salength="5" rank="101">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="EARTH">251712</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アース (2007年の映画)">1300556</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アース (ヴァンゲリス)">1379152</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アース">289461</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="地球">491051</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="function" aoffset="9836" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="function" saoffset="9836" salength="8" rank="223">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="関数">7886</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="関数 (数学)">144107</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="conscious" aoffset="9902" alength="9" ext_length="0">
+				<subanchor sarel="-1" saname="conscious" saoffset="9902" salength="9" rank="129">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="意識">53729</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="worship" aoffset="9981" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="worship" saoffset="9981" salength="7" rank="128">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="礼拝">5703</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="spirits" aoffset="9992" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="spirits" saoffset="9992" salength="7" rank="129">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アニミズム">151919</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="ancestor" aoffset="10061" alength="8" ext_length="8">
+				<subanchor sarel="-1" saname="ancestor" saoffset="10061" salength="8" rank="232">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="先祖">1215614</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="ancestor worship" saoffset="10061" salength="16" rank="30">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="祖霊信仰">966655</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="先祖">1215614</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="gratitude" aoffset="10198" alength="9" ext_length="0">
+				<subanchor sarel="-1" saname="gratitude" saoffset="10198" salength="9" rank="211">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ピカチュウ">758715</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Meditation" aoffset="10232" alength="10" ext_length="0">
+				<subanchor sarel="1" saname="Meditation" saoffset="10232" salength="10" rank="31">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="瞑想">141617</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="黙想">1207171</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="meditation" aoffset="10286" alength="10" ext_length="0">
+				<subanchor sarel="-1" saname="meditation" saoffset="10286" salength="10" rank="68">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="禅">521362</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="瞑想">141617</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="黙想">1207171</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="chan" aoffset="10377" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="chan" saoffset="10377" salength="4" rank="2">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="チャン">753922</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="ding" aoffset="10382" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="ding" saoffset="10382" salength="4" rank="115">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="鼎">1319832</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Buddhism" aoffset="10494" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="Buddhism" saoffset="10494" salength="8" rank="38">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="仏教">4182</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="introspection" aoffset="10542" alength="13" ext_length="0">
+				<subanchor sarel="-1" saname="introspection" saoffset="10542" salength="13" rank="105">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="内観">186710</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="personality" aoffset="10604" alength="11" ext_length="0">
+				<subanchor sarel="-1" saname="personality" saoffset="10604" salength="11" rank="225">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="性格">28694</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="thought" aoffset="10640" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="thought" saoffset="10640" salength="7" rank="243">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="思考">155395</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="思想">72979</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="concentration" aoffset="10652" alength="13" ext_length="0">
+				<subanchor sarel="-1" saname="concentration" saoffset="10652" salength="13" rank="180">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="濃度">5376</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="reason" aoffset="10801" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="reason" saoffset="10801" salength="6" rank="241">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="理性">14238</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="type" aoffset="10869" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="type" saoffset="10869" salength="4" rank="195">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="型">28695</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="タイプ">22483</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="humanity" aoffset="10896" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="humanity" saoffset="10896" salength="8" rank="127">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="オス">231463</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="人間性">1580901</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="closer" aoffset="10905" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="closer" saoffset="10905" salength="6" rank="149">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="クローサー">560111</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="クローサー (ジョイ・ディヴィジョン)">1608213</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="On" aoffset="10967" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="On" saoffset="10967" salength="2" rank="141">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ON (アルバム)">1948393</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ON">151109</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="academy" aoffset="11013" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="academy" saoffset="11013" salength="7" rank="116">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アカデミー">194173</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="printing" aoffset="11230" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="printing" saoffset="11230" salength="8" rank="118">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="印刷">2673</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="版画">89505</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="proliferation" aoffset="11258" alength="13" ext_length="0">
+				<subanchor sarel="-1" saname="proliferation" saoffset="11258" salength="13" rank="205">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="増殖">489513</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="fashion" aoffset="11656" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="fashion" saoffset="11656" salength="7" rank="151">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ファッション">16097</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Taoist" aoffset="11695" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="Taoist" saoffset="11695" salength="6" rank="60">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="道教">1281837</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="orthodox" aoffset="11781" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="orthodox" saoffset="11781" salength="8" rank="33">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="オーソドックス">931188</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="interpretation" aoffset="11800" alength="14" ext_length="0">
+				<subanchor sarel="-1" saname="interpretation" saoffset="11800" salength="14" rank="238">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="インタープリタ (曖昧さ回避)">425619</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="解釈">34765</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="doctrine" aoffset="12016" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="doctrine" saoffset="12016" salength="8" rank="105">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ドクトリン">850773</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="human relations" aoffset="12237" alength="15" ext_length="0">
+				<subanchor sarel="-1" saname="human relations" saoffset="12237" salength="15" rank="144">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="人間関係">1904884</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="dominate" aoffset="12614" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="dominate" saoffset="12614" salength="8" rank="229">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ドミナートゥス">858018</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Mind" aoffset="12735" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="Mind" saoffset="12735" salength="4" rank="113">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="心">48092</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="philosophy" aoffset="12785" alength="10" ext_length="0">
+				<subanchor sarel="-1" saname="philosophy" saoffset="12785" salength="10" rank="65">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="哲学 (学術雑誌)">1844187</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="哲学">110</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Intellectual" aoffset="12809" alength="12" ext_length="0">
+				<subanchor sarel="-1" saname="Intellectual" saoffset="12809" salength="12" rank="182">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="知識人">297393</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Revolution" aoffset="12822" alength="10" ext_length="0">
+				<subanchor sarel="-1" saname="Revolution" saoffset="12822" salength="10" rank="172">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="レボリューション (楽曲)">496255</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="革命">1779003</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="レボリューション">520387</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="革命 (曖昧さ回避)">885864</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="レボリューション1">336363</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Feng Youlan" aoffset="12852" alength="11" ext_length="0">
+				<subanchor sarel="1" saname="Feng Youlan" saoffset="12852" salength="11" rank="31">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="馮友蘭">701598</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="conception" aoffset="12884" alength="10" ext_length="0">
+				<subanchor sarel="-1" saname="conception" saoffset="12884" salength="10" rank="146">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="概念">59228</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="受精">245915</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Japan" aoffset="13011" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="Japan" saoffset="13011" salength="5" rank="37">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="日本">1864744</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ジャパン (曖昧さ回避)">592830</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ジャパン (バンド)">284935</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Zhu" aoffset="13053" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="Zhu" saoffset="13053" salength="3" rank="62">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="朱">11478</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="順治帝">45748</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Korea" aoffset="13069" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="Korea" saoffset="13069" salength="5" rank="83">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="朝鮮">253731</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="韓国 (曖昧さ回避)">253736</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="orthodoxy" aoffset="13118" alength="9" ext_length="0">
+				<subanchor sarel="-1" saname="orthodoxy" saoffset="13118" salength="9" rank="89">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="キリスト教">2016</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="正統教義">58714</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Life magazine" aoffset="13142" alength="18" ext_length="0">
+				<subanchor sarel="-1" saname="Life magazine" saoffset="13142" salength="18" rank="9">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ライフ (雑誌)">698297</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="magazine" saoffset="13152" salength="8" rank="155">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="雑誌">1828</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="forty-fifth" aoffset="13182" alength="11" ext_length="0">
+				<subanchor sarel="-1" saname="forty-fifth" saoffset="13182" salength="11" rank="96">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヘンリー六世 第3部">1502403</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="millennium" aoffset="13228" alength="10" ext_length="0">
+				<subanchor sarel="-1" saname="millennium" saoffset="13228" salength="10" rank="103">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ミレニアム">51506</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="art" aoffset="13293" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="art" saoffset="13293" salength="3" rank="123">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="技術知">52244</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ART">839953</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="芸術">8692</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="calligraphy" aoffset="13300" alength="11" ext_length="0">
+				<subanchor sarel="-1" saname="calligraphy" saoffset="13300" salength="11" rank="45">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="カリグラフィー">988687</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="neo-Confucianist" aoffset="13336" alength="16" ext_length="0">
+				<subanchor sarel="-1" saname="neo-Confucianist" saoffset="13336" salength="16" rank="10">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="新">31503</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="educator" aoffset="13354" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="educator" saoffset="13354" salength="8" rank="85">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="教員">74338</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="教育">8638</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="thinker" aoffset="13367" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="thinker" saoffset="13367" salength="7" rank="186">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="思想家">15316</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Southern" aoffset="13380" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="Southern" saoffset="13380" salength="8" rank="194">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="サザン (列車)">103031</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="サザン">68216</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Sung" aoffset="13389" alength="4" ext_length="8">
+				<subanchor sarel="-1" saname="Sung" saoffset="13389" salength="4" rank="210">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="宋">14066</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Sung dynasty" saoffset="13389" salength="12" rank="9">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="宋 (王朝)">57982</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="dynasty" saoffset="13394" salength="7" rank="146">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ハリソン・フォード">119484</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="王朝">23910</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="calligraphers" aoffset="13468" alength="13" ext_length="0">
+				<subanchor sarel="1" saname="calligraphers" saoffset="13468" salength="13" rank="47">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="書家">265393</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="カリグラフィー">988687</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="At" aoffset="13519" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="At" saoffset="13519" salength="2" rank="149">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="At (UNIX)">1523028</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Cao" aoffset="13552" alength="3" ext_length="4">
+				<subanchor sarel="-1" saname="Cao" saoffset="13552" salength="3" rank="208">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="曹 (春秋)">809561</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="曹氏">142355</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="曹">459384</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Cao Cao" saoffset="13552" salength="7" rank="4">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="曹操">18545</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="regular script" aoffset="13590" alength="14" ext_length="0">
+				<subanchor sarel="1" saname="regular script" saoffset="13590" salength="14" rank="27">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="楷書体">84760</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="script" saoffset="13598" salength="6" rank="212">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="スクリプト">93150</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Zhong Yao" aoffset="13608" alength="9" ext_length="0">
+				<subanchor sarel="1" saname="Zhong Yao" saoffset="13608" salength="9" rank="53">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="鍾乳石">588560</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="鍾ヨウ">154262</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヨウィアヌス">756645</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Yao" saoffset="13614" salength="3" rank="117">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="八尾">809776</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="cursive" aoffset="13634" alength="7" ext_length="7">
+				<subanchor sarel="1" saname="cursive" saoffset="13634" salength="7" rank="35">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="筆記体">773777</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="cursive script" saoffset="13634" salength="14" rank="25">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="草書体">41468</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Yan" aoffset="13652" alength="3" ext_length="9">
+				<subanchor sarel="-1" saname="Yan" saoffset="13652" salength="3" rank="200">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="桀燕">547063</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヤン">544146</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="燕 (春秋)">73650</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Yan Zhenqing" saoffset="13652" salength="12" rank="2">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="顔真卿">201030</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="manuscripts" aoffset="13797" alength="11" ext_length="0">
+				<subanchor sarel="-1" saname="manuscripts" saoffset="13797" salength="11" rank="148">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="写本">159670</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="world" aoffset="13821" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="world" saoffset="13821" salength="5" rank="230">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="世界">8720</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="bequeathed" aoffset="13920" alength="10" ext_length="0">
+				<subanchor sarel="-1" saname="bequeathed" saoffset="13920" salength="10" rank="125">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="遺言">32870</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="bit" aoffset="13952" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="bit" saoffset="13952" salength="3" rank="159">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ビット">6751</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ビット (曖昧さ回避)">391848</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="history" aoffset="14006" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="history" saoffset="14006" salength="7" rank="130">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="歴史">1899</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Yuan" aoffset="14084" alength="4" ext_length="8">
+				<subanchor sarel="1" saname="Yuan" saoffset="14084" salength="4" rank="150">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="元">12288</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ユアン">1180943</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="袁氏">235830</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Yuan dynasty" saoffset="14084" salength="12" rank="15">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="元 (王朝)">13713</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="school" aoffset="14102" alength="6" ext_length="14">
+				<subanchor sarel="-1" saname="school" saoffset="14102" salength="6" rank="215">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="学校">1420036</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="school of philosophy" saoffset="14102" salength="20" rank="109">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ギリシア哲学">252129</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="ideology" aoffset="14156" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="ideology" saoffset="14156" salength="8" rank="99">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="イデオロギー">57458</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ナチズム">131943</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="traditional Chinese" aoffset="14219" alength="19" ext_length="0">
+				<subanchor sarel="-1" saname="traditional Chinese" saoffset="14219" salength="19" rank="84">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="繁体字">50638</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="中国">270031</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="culture" aoffset="14252" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="culture" saoffset="14252" salength="7" rank="95">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="文化">3617</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="ten" aoffset="14351" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="ten" saoffset="14351" salength="3" rank="248">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Ten (アルバム)">1771254</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="テン (曖昧さ回避)">708300</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="key" aoffset="14355" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="key" saoffset="14355" salength="3" rank="204">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="鍵">70615</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="fame" aoffset="14401" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="fame" saoffset="14401" salength="4" rank="192">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="フェイム">1505358</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="short" aoffset="14636" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="short" saoffset="14636" salength="5" rank="236">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ショート">22837</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="running script" aoffset="14659" alength="14" ext_length="0">
+				<subanchor sarel="1" saname="running script" saoffset="14659" salength="14" rank="46">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="三条実行">530350</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="行書体">76461</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Nanjing" aoffset="14749" alength="7" ext_length="7">
+				<subanchor sarel="-1" saname="Nanjing" saoffset="14749" salength="7" rank="40">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="南京 (曖昧さ回避)">1449643</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="南京市">252553</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ナンキン">549353</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Nanjing Museum" saoffset="14749" salength="14" rank="23">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="南京博物院">515454</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Museum" saoffset="14757" salength="6" rank="170">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="チリ大学">1974424</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="博物館">19539</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Beijing" aoffset="14765" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="Beijing" saoffset="14765" salength="7" rank="36">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="北京市">6025</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="中国国鉄北京3型ディーゼル機関車">1528886</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Palace" aoffset="14773" alength="6" ext_length="7">
+				<subanchor sarel="-1" saname="Palace" saoffset="14773" salength="6" rank="198">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="宮殿">228855</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="パレス">1641332</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Palace Museum" saoffset="14773" salength="13" rank="52">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="宮殿">228855</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="紫禁城">120135</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Liao" aoffset="14788" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="Liao" saoffset="14788" salength="4" rank="71">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="遼">13719</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Ning" aoffset="14793" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="Ning" saoffset="14793" salength="4" rank="118">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="南京市">252553</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Ning">2065398</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Province" aoffset="14798" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="Province" saoffset="14798" salength="8" rank="47">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="プロヴィンス">1329186</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Taipei" aoffset="14822" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="Taipei" saoffset="14822" salength="6" rank="51">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="中華民国">279710</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="台北">1855705</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="台北市">20964</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="the National Museum of Tokyo" aoffset="14847" alength="28" ext_length="7">
+				<subanchor sarel="1" saname="the National Museum of Tokyo" saoffset="14847" salength="28" rank="82">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="東京国立博物館">20031</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="National" saoffset="14851" salength="8" rank="49">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ナショナル">45986</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="National Museum" saoffset="14851" salength="15" rank="101">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="国立博物館 (曖昧さ回避)">1273924</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="国立博物館">83842</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Tokyo" saoffset="14870" salength="5" rank="61">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="TOKYO">1131065</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="東京">1287762</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="青い空の下…">1782517</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="TOKYO (YUIの曲)">752460</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Tokyo, Japan" saoffset="14870" salength="12" rank="54">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="東京都">774362</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="private" aoffset="14903" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="private" saoffset="14903" salength="7" rank="131">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="プライベート">775907</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Thatched" aoffset="14951" alength="8" ext_length="4">
+				<subanchor sarel="-1" saname="Thatched" saoffset="14951" salength="8" rank="197">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="藁">31527</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Thatched Hut" saoffset="14951" salength="12" rank="172">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="藁">31527</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Hut" saoffset="14960" salength="3" rank="69">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="小屋">475342</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="イングランド">16627</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Hand" aoffset="14964" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="Hand" saoffset="14964" salength="4" rank="240">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="手">58365</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ハンド (単位)">1689032</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ハンド">611104</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="masterpieces" aoffset="14994" alength="12" ext_length="0">
+				<subanchor sarel="-1" saname="masterpieces" saoffset="14994" salength="12" rank="188">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="傑作 (ボブ・ディランのアルバム)">1661019</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="thumb" aoffset="15127" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="thumb" saoffset="15127" salength="5" rank="157">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="親指">4212</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Title" aoffset="15238" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="Title" saoffset="15238" salength="5" rank="92">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="タイトル">35588</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="称号">93068</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Wen" aoffset="15339" alength="3" ext_length="10">
+				<subanchor sarel="-1" saname="Wen" saoffset="15339" salength="3" rank="241">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="こぶ">1094938</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Wen Tianxiang" saoffset="15339" salength="13" rank="3">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="文天祥">125930</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Fang" aoffset="15382" alength="4" ext_length="7">
+				<subanchor sarel="-1" saname="Fang" saoffset="15382" salength="4" rank="219">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="牙">678473</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ファン (曖昧さ回避)">784686</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Fang Xiaoru" saoffset="15382" salength="11" rank="34">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="方孝孺">218708</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Tang" aoffset="15432" alength="4" ext_length="4">
+				<subanchor sarel="-1" saname="Tang" saoffset="15432" salength="4" rank="158">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="唐">11919</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Tang Yin" saoffset="15432" salength="8" rank="16">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="唐">11919</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="中国の書家一覧">1318422</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Hai" aoffset="15457" alength="3" ext_length="4">
+				<subanchor sarel="-1" saname="Hai" saoffset="15457" salength="3" rank="125">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="HAI">1964462</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Hai Rui" saoffset="15457" salength="7" rank="64">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="海瑞">236476</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Rui" saoffset="15461" salength="3" rank="183">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="RUI">71710</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Ming" aoffset="15484" alength="4" ext_length="8">
+				<subanchor sarel="1" saname="Ming" saoffset="15484" salength="4" rank="172">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="明">8581</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="明朝体">28883</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Ming dynasty" saoffset="15484" salength="12" rank="2">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="明">8581</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Calligraphy" aoffset="15515" alength="11" ext_length="0">
+				<subanchor sarel="-1" saname="Calligraphy" saoffset="15515" salength="11" rank="26">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="カリグラフィー">988687</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Style" aoffset="15527" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="Style" saoffset="15527" salength="5" rank="94">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="STYLE (LUNA SEA)">752189</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="STYLE (安室奈美恵のアルバム)">1589525</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="文体">45738</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="STYLE 〜get glory in this hand〜">1029419</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="スタイル">700371</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Han" aoffset="15618" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="Han" saoffset="15618" salength="3" rank="114">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="藩">301313</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="韓">67947</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ハン">23095</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="恨">1878783</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Wei" aoffset="15626" alength="3" ext_length="0">
+				<subanchor sarel="1" saname="Wei" saoffset="15626" salength="3" rank="104">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="衛">112824</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="北魏">66325</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="魏">12937</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="テキ魏">981836</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="魏 (戦国)">65504</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="魏 (三国)">8128</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="dynasties" aoffset="15630" alength="9" ext_length="0">
+				<subanchor sarel="-1" saname="dynasties" saoffset="15630" salength="9" rank="112">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="イッソスの戦い">308572</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="brush" aoffset="15687" alength="5" ext_length="8">
+				<subanchor sarel="-1" saname="brush" saoffset="15687" salength="5" rank="114">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="刷毛">1004918</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="筆">156522</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ブラシ">277279</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="brush strokes" saoffset="15687" salength="13" rank="168">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ブラシ">277279</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="smooth" aoffset="15705" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="smooth" saoffset="15705" salength="6" rank="191">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="滑らか">1569184</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="trace" aoffset="15771" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="trace" saoffset="15771" salength="5" rank="234">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="トレース">189101</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="stability" aoffset="15843" alength="9" ext_length="0">
+				<subanchor sarel="-1" saname="stability" saoffset="15843" salength="9" rank="160">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="安定">569076</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="construction" aoffset="15869" alength="12" ext_length="0">
+				<subanchor sarel="-1" saname="construction" saoffset="15869" salength="12" rank="201">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="建設">841797</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="continuous flow" aoffset="15889" alength="15" ext_length="0">
+				<subanchor sarel="-1" saname="continuous flow" saoffset="15889" salength="15" rank="187">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="連続 (数学)">10191</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="written characters" aoffset="15970" alength="18" ext_length="0">
+				<subanchor sarel="-1" saname="written characters" saoffset="15970" salength="18" rank="66">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="漢字">2794</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="patriarch" aoffset="16048" alength="9" ext_length="0">
+				<subanchor sarel="-1" saname="patriarch" saoffset="16048" salength="9" rank="73">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="総大司教">63664</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="総主教">47384</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="コンスタンディノス6世 (コンスタンディヌーポリ総主教)">1450915</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="word" aoffset="16261" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="word" saoffset="16261" salength="4" rank="235">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="語">113283</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="tolerance" aoffset="16293" alength="9" ext_length="0">
+				<subanchor sarel="-1" saname="tolerance" saoffset="16293" salength="9" rank="114">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="寛容">1358082</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="multiplicity" aoffset="16305" alength="12" ext_length="0">
+				<subanchor sarel="-1" saname="multiplicity" saoffset="16305" salength="12" rank="154">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="源多">549518</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="express" aoffset="16436" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="express" saoffset="16436" salength="7" rank="227">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="いしづち (列車)">78573</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="small wonder" aoffset="16478" alength="12" ext_length="0">
+				<subanchor sarel="-1" saname="small wonder" saoffset="16478" salength="12" rank="16">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="小さな兵隊">1828889</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Yi" aoffset="16614" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="Yi" saoffset="16614" salength="2" rank="102">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="YIVOユダヤ調査研究所">301475</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="李氏朝鮮">5260</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="YI">1749457</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Ї">122824</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Master" aoffset="16671" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="Master" saoffset="16671" salength="6" rank="81">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="マスター">180124</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="propagated" aoffset="16719" alength="10" ext_length="0">
+				<subanchor sarel="-1" saname="propagated" saoffset="16719" salength="10" rank="152">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="プロパガンダ">76398</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="execution" aoffset="16854" alength="9" ext_length="0">
+				<subanchor sarel="-1" saname="execution" saoffset="16854" salength="9" rank="113">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="死刑">4980</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="However" aoffset="16902" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="However" saoffset="16902" salength="7" rank="64">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="HOWEVER">386209</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Sai" aoffset="17010" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="Sai" saoffset="17010" salength="3" rank="117">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="釵">485646</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="SAI">753914</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Ching" aoffset="17014" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="Ching" saoffset="17014" salength="5" rank="121">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="チン">889668</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="清">7723</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="swift" aoffset="17102" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="swift" saoffset="17102" salength="5" rank="108">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アマツバメ科">356116</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="postscript" aoffset="17274" alength="10" ext_length="0">
+				<subanchor sarel="-1" saname="postscript" saoffset="17274" salength="10" rank="52">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="PostScript">1152</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="追伸">1273404</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="People" aoffset="17340" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="People" saoffset="17340" salength="6" rank="77">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ピープル">497387</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ピープル (雑誌)">1176034</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="人民">66527</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="olden" aoffset="17354" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="olden" saoffset="17354" salength="5" rank="160">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ドラえもん (1979年のテレビアニメ)">254185</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="bones" aoffset="17398" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="bones" saoffset="17398" salength="5" rank="167">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ボンズ (アニメ制作プロダクション)">157305</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="骨">28326</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="BONES">553505</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="the truth" aoffset="17534" alength="9" ext_length="0">
+				<subanchor sarel="-1" saname="the truth" saoffset="17534" salength="9" rank="226">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="真実">99265</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="truth" saoffset="17538" salength="5" rank="119">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="サウル">124876</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="真実">99265</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="真理">4015</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Sze" aoffset="17902" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="Sze" saoffset="17902" salength="3" rank="228">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="セーデル・シェル・ペサハ">432861</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Ma" aoffset="17906" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="Ma" saoffset="17906" salength="2" rank="81">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="間">12293</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Ji ma ma">757760</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ま">101068</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="MA">76875</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="lucky" aoffset="18107" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="lucky" saoffset="18107" salength="5" rank="154">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ラッキー (ポケモン)">647640</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ラッキー">661995</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="master" aoffset="18187" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="master" saoffset="18187" salength="6" rank="209">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="マスター">180124</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="See" aoffset="18502" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="See" saoffset="18502" salength="3" rank="123">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="シー">1300327</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Yuelu Academy" aoffset="18833" alength="13" ext_length="0">
+				<subanchor sarel="-1" saname="Yuelu Academy" saoffset="18833" salength="13" rank="33">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="岳 みんなの山">1022552</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="White Deer Grotto" aoffset="18888" alength="17" ext_length="8">
+				<subanchor sarel="-1" saname="White Deer Grotto" saoffset="18888" salength="17" rank="203">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="白">20977</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="White Deer Grotto Academy" saoffset="18888" salength="25" rank="46">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="白">20977</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Grotto" saoffset="18899" salength="6" rank="120">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="洞窟">72720</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Classical" aoffset="18955" alength="9" ext_length="16">
+				<subanchor sarel="-1" saname="Classical" saoffset="18955" salength="9" rank="129">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="古典">220492</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Classical Chinese" saoffset="18955" salength="17" rank="9">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="漢文">60343</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Classical Chinese writers" saoffset="18955" salength="25" rank="49">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="古典">220492</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Lu" aoffset="19022" alength="2" ext_length="8">
+				<subanchor sarel="-1" saname="Lu" saoffset="19022" salength="2" rank="48">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="魯">40056</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ル (イタリア)">901590</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ルテチウム">10440</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="LU">100445</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Lu Jiuyuan" saoffset="19022" salength="10" rank="14">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="陸象山">44470</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Fujiwara" aoffset="19100" alength="8" ext_length="6">
+				<subanchor sarel="-1" saname="Fujiwara" saoffset="19100" salength="8" rank="177">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="藤原">27806</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="FUJIWARA">66580</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Fujiwara Seika" saoffset="19100" salength="14" rank="19">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="藤原惺窩">383456</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Japanese" aoffset="19116" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="Japanese" saoffset="19116" salength="8" rank="118">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="日本">1864744</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Hayashi" aoffset="19204" alength="7" ext_length="6">
+				<subanchor sarel="-1" saname="Hayashi" saoffset="19204" salength="7" rank="145">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="林">300328</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Hayashi Razan" saoffset="19204" salength="13" rank="11">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="林羅山">135955</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Seika" aoffset="19219" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="Seika" saoffset="19219" salength="5" rank="75">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="精華町">25157</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="amp" aoffset="19236" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="amp" saoffset="19236" salength="3" rank="91">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="AMP (鹿児島讀賣テレビ)">139905</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="AMP">191697</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Tokugawa" aoffset="19241" alength="8" ext_length="0">
+				<subanchor sarel="1" saname="Tokugawa" saoffset="19241" salength="8" rank="88">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="徳川">556211</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="江戸時代">2740</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="political theorist" aoffset="19250" alength="18" ext_length="0">
+				<subanchor sarel="1" saname="political theorist" saoffset="19250" salength="18" rank="88">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="政治">3953</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="政治哲学">165970</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Hayashi Gahō" aoffset="19311" alength="12" ext_length="0">
+				<subanchor sarel="1" saname="Hayashi Gahō" saoffset="19311" salength="12" rank="29">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="林鵞峰">382349</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Tokugawa shogunate" aoffset="19325" alength="18" ext_length="0">
+				<subanchor sarel="1" saname="Tokugawa shogunate" saoffset="19325" salength="18" rank="10">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="江戸幕府">8455</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="shogunate" saoffset="19334" salength="9" rank="132">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="幕府">8848</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="academician" aoffset="19344" alength="11" ext_length="0">
+				<subanchor sarel="-1" saname="academician" saoffset="19344" salength="11" rank="97">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="学者">95400</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="bureaucrat" aoffset="19364" alength="10" ext_length="0">
+				<subanchor sarel="-1" saname="bureaucrat" saoffset="19364" salength="10" rank="122">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="官僚">88211</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="1" aname="Kaibara" aoffset="19417" alength="7" ext_length="6">
+				<subanchor sarel="-1" saname="Kaibara" saoffset="19417" salength="7" rank="98">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="貝原益軒">189219</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Kaibara Ekken" saoffset="19417" salength="13" rank="41">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="貝原益軒">189219</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Edo" aoffset="19432" alength="3" ext_length="7">
+				<subanchor sarel="-1" saname="Edo" saoffset="19432" salength="3" rank="79">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="江戸">8731</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="EDO">1006410</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Edo period" saoffset="19432" salength="10" rank="18">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="江戸時代">2740</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="writer" aoffset="19443" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="writer" saoffset="19443" salength="6" rank="137">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="著作家">23807</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="botanist" aoffset="19450" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="botanist" saoffset="19450" salength="8" rank="119">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="植物学">32924</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="philosopher" aoffset="19459" alength="11" ext_length="0">
+				<subanchor sarel="-1" saname="philosopher" saoffset="19459" salength="11" rank="153">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="哲学">110</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Classified" aoffset="19601" alength="10" ext_length="0">
+				<subanchor sarel="-1" saname="Classified" saoffset="19601" salength="10" rank="177">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="分類">106595</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="chapter" aoffset="19646" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="chapter" saoffset="19646" salength="7" rank="239">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="チャプター">425482</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Gardner" aoffset="19768" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="Gardner" saoffset="19768" salength="7" rank="103">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ジョン・ガードナー (作曲家)">1251354</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ガードナー">1220983</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="pp" aoffset="19777" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="pp" saoffset="19777" salength="2" rank="216">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Pp (奥井亜紀のアルバム)">1779323</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="PP">148530</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Works" aoffset="19905" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="Works" saoffset="19905" salength="5" rank="197">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ワークス〜ピンク・フロイドの遺産">578139</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ワークス">99914</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="A" aoffset="20439" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="A" saoffset="20439" salength="1" rank="152">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="A (シングル)">467526</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="A">13618</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="イ (音名)">689883</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="А">62862</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="あ">1182606</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Source" aoffset="20441" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="Source" saoffset="20441" salength="6" rank="74">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Source Engine">879889</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="水源">954945</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ソース">389904</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="根源">65682</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Book" aoffset="20448" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="Book" saoffset="20448" salength="4" rank="118">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="本">2570</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Philosophy" aoffset="20464" alength="10" ext_length="0">
+				<subanchor sarel="-1" saname="Philosophy" saoffset="20464" salength="10" rank="30">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="哲学">110</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Princeton" aoffset="20481" alength="9" ext_length="4">
+				<subanchor sarel="-1" saname="Princeton" saoffset="20481" salength="9" rank="100">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="プリンストン (ニュージャージー州)">754637</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="プリンストン">641158</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Princeton, NJ" saoffset="20481" salength="13" rank="97">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="プリンストン (ニュージャージー州)">754637</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="NJ" saoffset="20492" salength="2" rank="84">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="NJ">87297</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Princeton University" aoffset="20496" alength="20" ext_length="6">
+				<subanchor sarel="-1" saname="Princeton University" saoffset="20496" salength="20" rank="55">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="プリンストン大学">16219</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Princeton University Press" saoffset="20496" salength="26" rank="81">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="リシュリュー">142750</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ジョージ・ルスティック">337227</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="University" saoffset="20506" salength="10" rank="228">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="大学">30345</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Daniel" aoffset="20611" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="Daniel" saoffset="20611" salength="6" rank="206">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ダニエル書">126435</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ダニエル (曖昧さ回避)">539765</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ダニエル">123524</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="主代郁夫">1341655</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="To Be" aoffset="20640" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="To Be" saoffset="20640" salength="5" rank="242">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Born to be Free">1076891</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="TO BE">467300</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Be" saoffset="20643" salength="2" rank="148">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Б">121903</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Arranged" aoffset="20703" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="Arranged" saoffset="20703" salength="8" rank="120">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アレンジ">571850</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="編曲">2704</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Berkeley" aoffset="20724" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="Berkeley" saoffset="20724" salength="8" rank="90">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="バークリー">76356</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="カリフォルニア大学バークレー校">62270</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="University of California" aoffset="20734" alength="24" ext_length="6">
+				<subanchor sarel="-1" saname="University of California" saoffset="20734" salength="24" rank="120">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="カリフォルニア大学">67844</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="University of California Press" saoffset="20734" salength="30" rank="178">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="カリフォルニア (戦艦)">262692</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="California" saoffset="20748" salength="10" rank="67">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="カリフォルニア (曖昧さ回避)">26015</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="カリフォルニア州">8956</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Further" aoffset="20812" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="Further" saoffset="20812" salength="7" rank="67">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="時空の彼方へ">2111294</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Percy" aoffset="20881" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="Percy" saoffset="20881" salength="5" rank="152">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="パーシー (アルバム)">351757</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="パーシー">976621</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Bruce" aoffset="20887" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="Bruce" saoffset="20887" salength="5" rank="213">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ブルース">3875</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ブルース (人名)">794428</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Masters" aoffset="20915" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="Masters" saoffset="20915" salength="7" rank="209">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="マスター">180124</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Co" aoffset="20946" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="Co" saoffset="20946" salength="2" rank="126">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ホンダ・CBR400F">640924</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="CO">87235</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="London" aoffset="20951" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="London" saoffset="20951" salength="6" rank="68">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ロンドン">7317</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="sage" aoffset="21046" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="sage" saoffset="21046" salength="4" rank="78">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Sage">133443</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="SAGE">246007</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Carpenter" aoffset="21177" alength="9" ext_length="0">
+				<subanchor sarel="-1" saname="Carpenter" saoffset="21177" salength="9" rank="134">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="カーペンター">685666</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Art" aoffset="21205" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="Art" saoffset="21205" salength="3" rank="135">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="技術知">52244</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="芸術">8692</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Reading" aoffset="21212" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="Reading" saoffset="21212" salength="7" rank="142">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="読書">3304</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Tezukayama" aoffset="21228" alength="10" ext_length="11">
+				<subanchor sarel="-1" saname="Tezukayama" saoffset="21228" salength="10" rank="55">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="帝塚山">140632</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Tezukayama University" saoffset="21228" salength="21" rank="92">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="帝塚山大学">229089</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Review" aoffset="21250" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="Review" saoffset="21250" salength="6" rank="76">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="REVIEW-BEST OF GLAY">357947</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Nara" aoffset="21292" alength="4" ext_length="7">
+				<subanchor sarel="-1" saname="Nara" saoffset="21292" salength="4" rank="69">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ナラ (曖昧さ回避)">851191</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ナラ">27394</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="奈良 (曖昧さ回避)">40748</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Nara, Japan" saoffset="21292" salength="11" rank="91">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="奈良市">1836228</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="nbsp" aoffset="21323" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="nbsp" saoffset="21323" salength="4" rank="69">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ニッポン放送">36598</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="ISSN" aoffset="21335" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="ISSN" saoffset="21335" salength="4" rank="117">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ISSN">244325</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Wing-tsit Chan" aoffset="21391" alength="14" ext_length="0">
+				<subanchor sarel="-1" saname="Wing-tsit Chan" saoffset="21391" salength="14" rank="32">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="翼">8256</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Thought" aoffset="21429" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="Thought" saoffset="21429" salength="7" rank="58">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="思考">155395</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="思想">72979</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="New" aoffset="21541" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="New" saoffset="21541" salength="3" rank="126">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="New演算子">1125539</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="NEW">1151062</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Cleveland" aoffset="21611" alength="9" ext_length="0">
+				<subanchor sarel="-1" saname="Cleveland" saoffset="21611" salength="9" rank="64">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="クリーブランド (オハイオ州)">1285126</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="クリーブランド (曖昧さ回避)">212786</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Tillman" aoffset="21621" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="Tillman" saoffset="21621" salength="7" rank="118">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="サウスカロライナ州の歴史">1397037</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Utilitarian" aoffset="21634" alength="11" ext_length="0">
+				<subanchor sarel="-1" saname="Utilitarian" saoffset="21634" salength="11" rank="82">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="功利主義">29270</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="実用">645176</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="en" aoffset="21663" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="en" saoffset="21663" salength="2" rank="202">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="EN">123359</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Dir en grey">1961943</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Liang" aoffset="21666" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="Liang" saoffset="21666" salength="5" rank="126">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="山西省">92937</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Challenge" aoffset="21674" alength="9" ext_length="0">
+				<subanchor sarel="-1" saname="Challenge" saoffset="21674" salength="9" rank="41">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="チャレンジ">2060071</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Wm" aoffset="21748" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="Wm" saoffset="21748" salength="2" rank="111">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ウェスタン・メリーランド鉄道">1450159</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="WM">714402</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Theodore" aoffset="21752" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="Theodore" saoffset="21752" salength="8" rank="168">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="テオドール">499497</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="フョードル">500972</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Orthodoxy" aoffset="21788" alength="9" ext_length="0">
+				<subanchor sarel="-1" saname="Orthodoxy" saoffset="21788" salength="9" rank="94">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="正統とは何か">1428257</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="正統教義">58714</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="東方教会">18242</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="development" aoffset="21857" alength="11" ext_length="0">
+				<subanchor sarel="-1" saname="development" saoffset="21857" salength="11" rank="224">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="発達">132283</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="ed" aoffset="21962" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="ed" saoffset="21962" salength="2" rank="221">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ED">136738</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="エド (テレビドラマ)">118664</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="conference" aoffset="22023" alength="10" ext_length="0">
+				<subanchor sarel="-1" saname="conference" saoffset="22023" salength="10" rank="196">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="カンファレンス">929463</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Donald" aoffset="22082" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="Donald" saoffset="22082" salength="6" rank="217">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ドナルド">693652</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Images" aoffset="22103" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="Images" saoffset="22103" salength="6" rank="203">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="画像">172</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Portrait" aoffset="22134" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="Portrait" saoffset="22134" salength="8" rank="132">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="肖像">183429</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ポートレイト">195337</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ニューヨーク・タイムズ">117507</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="human nature" aoffset="22186" alength="12" ext_length="0">
+				<subanchor sarel="-1" saname="human nature" saoffset="22186" salength="12" rank="33">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヒューマン・ネイチャー">1174325</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="本性">1737391</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Translations" aoffset="22252" alength="12" ext_length="0">
+				<subanchor sarel="-1" saname="Translations" saoffset="22252" salength="12" rank="150">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="翻訳 (生物学)">82348</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="翻訳">6194</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="New York" aoffset="22372" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="New York" saoffset="22372" salength="8" rank="89">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ニューヨーク州">5040</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="York" saoffset="22376" salength="4" rank="189">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヨーク (イングランド)">626410</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Gallery" aoffset="22627" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="Gallery" saoffset="22627" salength="7" rank="66">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ギャラリー">60389</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Online" aoffset="22654" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="Online" saoffset="22654" salength="6" rank="237">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="オンライン">22947</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Divination" aoffset="22836" alength="10" ext_length="0">
+				<subanchor sarel="-1" saname="Divination" saoffset="22836" salength="10" rank="50">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="占い">6994</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Adler" aoffset="22869" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="Adler" saoffset="22869" salength="5" rank="127">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アドラー (機関車)">1490509</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アドラー">174415</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ドイツ">1698878</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Activity" aoffset="23045" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="Activity" saoffset="23045" salength="8" rank="57">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="活量">55290</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="First" aoffset="23248" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="First" saoffset="23248" salength="5" rank="100">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ファースト">159576</tobep>
+				</subanchor>
+			</anchor>
+		</outgoinglinks>
+	</topic>
+</crosslink-assessment>

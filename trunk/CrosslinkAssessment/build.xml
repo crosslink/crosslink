@@ -187,17 +187,18 @@
 	  	  </zip>
     </target>	
 	
-    <target name="release-zh-gt" depends="CrosslinkAssessment-impl.jar">
+    <target name="release-en2zh-gt" depends="CrosslinkAssessment-impl.jar">
     	  <tstamp>
     	    <format property="TODAY" pattern="yyyyMMdd"/>
     	  </tstamp>
-    	  <property name="release.file" value="CrosslinkAssessment-${TODAY}-zh.zip" />
+    	  <property name="release.file" value="CrosslinkAssessment-${TODAY}-en2zh.zip" />
     	  <delete file="${release.file}"/>
 	  	  <zip destfile="${release.file}">
 	  	  	<zipfileset dir="resources" prefix="resources">
 	  	  		<exclude name="Collections/"/>
 	  	  		<exclude name="Collections.gt/ja/"/>
 	  	  		<exclude name="Collections.gt/ko/"/>
+	  	  		<exclude name="Collections.gt/en/"/>
 	  	  		<exclude name="toolResources.xml"/>
 	  	  		<exclude name="Pool/POOL_BACKUP/"/>
 	  	  		<exclude name="Pool/POOL_BACKUP/*"/>
@@ -219,17 +220,18 @@
 	  	  </zip>
     </target>
 	
-    <target name="release-ja-gt" depends="CrosslinkAssessment-impl.jar">
+    <target name="release-en2ja-gt" depends="CrosslinkAssessment-impl.jar">
     	  <tstamp>
     	    <format property="TODAY" pattern="yyyyMMdd"/>
     	  </tstamp>
-    	  <property name="release.file" value="CrosslinkAssessment-${TODAY}-ja.zip" />
+    	  <property name="release.file" value="CrosslinkAssessment-${TODAY}-en2ja.zip" />
     	  <delete file="${release.file}"/>
 	  	  <zip destfile="${release.file}">
 	  	  	<zipfileset dir="resources" prefix="resources">
 	  	  		<exclude name="Collections/"/>
 	  	  		<exclude name="Collections.gt/zh/"/>
 	  	  		<exclude name="Collections.gt/ko/"/>
+	  	  		<exclude name="Collections.gt/en/"/>
 	  	  		<exclude name="toolResources.xml"/>
 	  	  		<exclude name="Pool/POOL_BACKUP/"/>
 	  	  		<exclude name="Pool/POOL_BACKUP/*"/>
@@ -251,17 +253,116 @@
 	  	  </zip>
     </target>	
 	
-    <target name="release-ko-gt" depends="CrosslinkAssessment-impl.jar">
+    <target name="release-en2ko-gt" depends="CrosslinkAssessment-impl.jar">
     	  <tstamp>
     	    <format property="TODAY" pattern="yyyyMMdd"/>
     	  </tstamp>
-    	  <property name="release.file" value="CrosslinkAssessment-${TODAY}-ko.zip" />
+    	  <property name="release.file" value="CrosslinkAssessment-${TODAY}-en2ko.zip" />
     	  <delete file="${release.file}"/>
 	  	  <zip destfile="${release.file}">
 	  	  	<zipfileset dir="resources" prefix="resources">
 	  	  		<exclude name="Collections/"/>
 	  	  		<exclude name="Collections.gt/zh/"/>
 	  	  		<exclude name="Collections.gt/ja/"/>
+	  	  		<exclude name="Collections.gt/en/"/>
+	  	  	    <exclude name="toolResources.xml"/>
+	  	  		<exclude name="Pool/POOL_BACKUP/"/>
+	  	  		<exclude name="Pool/POOL_BACKUP/*"/>
+	  	  		<exclude name="Pool/*.log"/>
+	  	  	</zipfileset>
+	  	  	<zipfileset dir="assessment" prefix="assessment">
+	  	  		<exclude name="inbox/*"/>
+	  	  		<exclude name="outbox/*"/>
+	  	  	</zipfileset>
+	  	  	<zipfileset dir="images" prefix="images"/>
+	  	  	<zipfileset dir="lib" prefix="lib" />
+	  	  	<zipfileset dir="." includes="Instruction.pdf"/>
+	  	  	<zipfileset dir="." includes="runGT.sh"/>
+	  	  	<zipfileset dir="." includes="runGT.bat"/>
+	  	  	<zipfileset dir="." includes="article.dtd"/>
+	  	  	<zipfileset dir="." includes="lang.txt"/>
+    	  	<zipfileset dir="." includes="toolResources.xml" prefix="resources" />
+	  	  	<zipfileset dir="${dist.dir}" includes="*.jar"/>
+	  	  </zip>
+    </target>
+        <target name="release-zh2en-gt" depends="CrosslinkAssessment-impl.jar">
+    	  <tstamp>
+    	    <format property="TODAY" pattern="yyyyMMdd"/>
+    	  </tstamp>
+    	  <property name="release.file" value="CrosslinkAssessment-${TODAY}-zh2en.zip" />
+    	  <delete file="${release.file}"/>
+	  	  <zip destfile="${release.file}">
+	  	  	<zipfileset dir="resources" prefix="resources">
+	  	  		<exclude name="Collections/"/>
+	  	  		<exclude name="Collections.gt/ja/"/>
+	  	  		<exclude name="Collections.gt/ko/"/>
+	  	  		<exclude name="Collections.gt/zh/"/>
+	  	  		<exclude name="toolResources.xml"/>
+	  	  		<exclude name="Pool/POOL_BACKUP/"/>
+	  	  		<exclude name="Pool/POOL_BACKUP/*"/>
+	  	  		<exclude name="Pool/*.log"/>
+	  	  	</zipfileset>
+	  	  	<zipfileset dir="assessment" prefix="assessment">
+	  	  		<exclude name="inbox/*"/>
+	  	  		<exclude name="outbox/*"/>
+	  	  	</zipfileset>
+	  	  	<zipfileset dir="images" prefix="images"/>
+	  	  	<zipfileset dir="lib" prefix="lib" />
+	  	  	<zipfileset dir="." includes="Instruction.pdf"/>
+	  	  	<zipfileset dir="." includes="runGT.sh"/>
+	  	  	<zipfileset dir="." includes="runGT.bat"/>
+	  	  	<zipfileset dir="." includes="article.dtd"/>
+	  	  	<zipfileset dir="." includes="lang.txt"/>
+    	  	<zipfileset dir="." includes="toolResources.xml" prefix="resources" />
+	  	  	<zipfileset dir="${dist.dir}" includes="*.jar"/>
+	  	  </zip>
+    </target>
+	
+    <target name="release-ja2en-gt" depends="CrosslinkAssessment-impl.jar">
+    	  <tstamp>
+    	    <format property="TODAY" pattern="yyyyMMdd"/>
+    	  </tstamp>
+    	  <property name="release.file" value="CrosslinkAssessment-${TODAY}-ja2en.zip" />
+    	  <delete file="${release.file}"/>
+	  	  <zip destfile="${release.file}">
+	  	  	<zipfileset dir="resources" prefix="resources">
+	  	  		<exclude name="Collections/"/>
+	  	  		<exclude name="Collections.gt/zh/"/>
+	  	  		<exclude name="Collections.gt/ko/"/>
+	  	  		<exclude name="Collections.gt/ja/"/>
+	  	  		<exclude name="toolResources.xml"/>
+	  	  		<exclude name="Pool/POOL_BACKUP/"/>
+	  	  		<exclude name="Pool/POOL_BACKUP/*"/>
+	  	  		<exclude name="Pool/*.log"/>
+	  	  	</zipfileset>
+	  	  	<zipfileset dir="assessment" prefix="assessment">
+	  	  		<exclude name="inbox/*"/>
+	  	  		<exclude name="outbox/*"/>
+	  	  	</zipfileset>
+	  	  	<zipfileset dir="images" prefix="images"/>
+	  	  	<zipfileset dir="lib" prefix="lib" />
+	  	  	<zipfileset dir="." includes="Instruction.pdf"/>
+	  	  	<zipfileset dir="." includes="runGT.sh"/>
+	  	  	<zipfileset dir="." includes="runGT.bat"/>
+	  	  	<zipfileset dir="." includes="article.dtd"/>
+	  	  	<zipfileset dir="." includes="lang.txt"/>
+    	  	<zipfileset dir="." includes="toolResources.xml" prefix="resources" />
+	  	  	<zipfileset dir="${dist.dir}" includes="*.jar"/>
+	  	  </zip>
+    </target>	
+	
+    <target name="release-ko2en-gt" depends="CrosslinkAssessment-impl.jar">
+    	  <tstamp>
+    	    <format property="TODAY" pattern="yyyyMMdd"/>
+    	  </tstamp>
+    	  <property name="release.file" value="CrosslinkAssessment-${TODAY}-ko2en.zip" />
+    	  <delete file="${release.file}"/>
+	  	  <zip destfile="${release.file}">
+	  	  	<zipfileset dir="resources" prefix="resources">
+	  	  		<exclude name="Collections/"/>
+	  	  		<exclude name="Collections.gt/zh/"/>
+	  	  		<exclude name="Collections.gt/ja/"/>
+	  	  		<exclude name="Collections.gt/ko/"/>
 	  	  	    <exclude name="toolResources.xml"/>
 	  	  		<exclude name="Pool/POOL_BACKUP/"/>
 	  	  		<exclude name="Pool/POOL_BACKUP/*"/>
