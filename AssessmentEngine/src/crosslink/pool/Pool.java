@@ -11,6 +11,7 @@ import java.util.Set;
 import java.util.Vector;
 
 import crosslink.AppResource;
+import crosslink.submission.LinkedAnchors;
 import crosslink.submission.Run;
 import crosslink.submission.Topic;
 
@@ -25,6 +26,7 @@ public class Pool {
 //		this.sourceLang = AppResource.sourceLang;
 //		this.targetLang = AppResource.targetLang;
 		runs = new Run();
+		init();
 	}
 	
 	public Pool(String sourceLang, String targetLang) {
@@ -33,8 +35,13 @@ public class Pool {
 		AppResource.targetLang = this.targetLang;
 		AppResource.sourceLang = this.sourceLang; 		
 		runs = new Run();
+		init();
 	}
 	
+	private void init() {
+		runs.setAnchorSetFactory(LinkedAnchors.class);
+	}
+
 	public void read(String rundir, boolean checkAnchors) {
 		File[] files = null;
 		File runDirHandler = new File(rundir);
@@ -47,7 +54,7 @@ public class Pool {
 			runs.read(file, checkAnchors, sourceLang, targetLang);
 	}
 	
-	public void output(boolean splitTopic) throws Exception {
+	public void output(boolean splitTopic, String targetPath) throws Exception {
 		StringBuffer poolXml = new StringBuffer();
 		
 		ToXml.startRootElement(poolXml, sourceLang, targetLang);
@@ -63,7 +70,7 @@ public class Pool {
 			
 			if (splitTopic) {
 				ToXml.endRootElement(poolXml);
-				output2File(poolXml, "wikipedia_pool_" + topic.getId() + ".xml");
+				output2File(poolXml, targetPath + File.separator + "wikipedia_pool_" + topic.getId() + ".xml");
 				poolXml.setLength(0);
 				ToXml.startRootElement(poolXml, sourceLang, targetLang);
 			}
