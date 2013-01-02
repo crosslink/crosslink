@@ -84,7 +84,7 @@ public class Assessment {
 		}
 		
 		if (sourceLang.length() > 0)
-			poolDirHandler = new File(poolDir.toString() + sourceLang + "-" + targetLang);
+			poolDirHandler = new File(poolDir.toString() + AppResource.getCrosslinkPath() + sourceLang + "-" + targetLang);
 		else
 			poolDirHandler = new File(poolDir.toString() + targetLang);
 		
@@ -130,6 +130,9 @@ public class Assessment {
 		        	String[] langPair = line.split(":");
 		        	targetLang = langPair[1];
 		        	sourceLang = langPair[0];
+		        	
+		        	AppResource.sourceLang = sourceLang;
+		        	AppResource.targetLang = targetLang;
 		        }
 		        whereAreTopics = buff.readLine();
 		        		
@@ -197,7 +200,7 @@ public class Assessment {
 		}
 		else { // assess Wikipedia ground-truth
 //			topicPath = ASSESSMENT_TOPIC_TOPIC_PATH + sourceLang/*AppResource.getInstance().sourceLang*/ + File.separator;
-			topicPath = AppResource.getInstance().getTopicPathWithLang();
+			topicPath = AppResource.getInstance().getTopicPathWithLang(sourceLang);
 		}
 		
 		stack = new WildcardFiles().listFilesInStack(topicPath + "*.xml");
@@ -232,7 +235,7 @@ public class Assessment {
 //		if (targetLang.length() == 0)
 //			return ASSESSMENT_POOL_PATH + ASSESSMENT_POOL_PREFIX + "_" + id + ".xml";
 //		return ASSESSMENT_POOL_PATH + targetLang + File.separator + ASSESSMENT_POOL_PREFIX + "_" + id + ".xml";
-		return poolDirHandler.getAbsolutePath() + File.separator + AppResource.getCrosslinkPath() + AppResource.makeLangPair() + File.separator + ASSESSMENT_POOL_PREFIX + "_" + id + ".xml";
+		return poolDirHandler.getAbsolutePath() + File.separator + ASSESSMENT_POOL_PREFIX + "_" + id + ".xml";
 	}
 	
 	public String getNextTopic() {
