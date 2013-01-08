@@ -33,11 +33,11 @@ public class XML2TXT {
 			System.arraycopy(bytes, byteOffset, newBytes, 0, length);
 			source = new String(newBytes, "UTF-8");
 		} catch (UnsupportedEncodingException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} 
 		catch (Exception ex) {
-			ex.printStackTrace();
+//			ex.printStackTrace();
+			throw ex;
 		}
 		finally {
 			return source.length();
