@@ -1,0 +1,871 @@
+<crosslink-assessment participant-id="2273087" run-id="2273087_A2B" task="A2B" default_lang="zh" source_lang="en">
+	<collection>Chinese Wikipedia 2010 Collection</collection>
+	<collection>Japanese Wikipedia 2010 Collection</collection>
+	<collection>Korean Wikipedia 2010 Collection</collection>
+	<topic file="4898073" name="Crown Prince Sado">
+		<outgoinglinks>
+			<anchor arel="0" aname="people" aoffset="628" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="people" saoffset="628" salength="6" rank="53">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="人民">184649</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="人">37075</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="族群">172486</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="民族">39</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="個人">793323</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Dynasty" aoffset="732" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="Dynasty" saoffset="732" salength="7" rank="20">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="穆罕默德·阿里王朝">1065454</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中国朝代">3071</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="罗曼诺夫王朝">109479</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="朝代">52645</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="科穆宁王朝">812552</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Crown" aoffset="797" alength="5" ext_length="7">
+				<subanchor sarel="0" saname="Crown" saoffset="797" salength="5" rank="33">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="冕牌玻璃">661666</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="丰田皇冠">280338</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="牙冠">464376</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="奧匈帝國克朗">804350</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="皇冠">219164</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="加冕">1037362</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Crown Prince" saoffset="797" salength="12" rank="18">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="費利佩 (阿斯圖里亞斯親王)">903992</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="弗雷德里克九世">10304</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="威廉皇储 (德国)">385293</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="储君">1119970</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="古斯塔夫三世">1131448</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Prince" saoffset="803" salength="6" rank="25">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="瓦拉几亚统治者列表">409664</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="列支敦士登大公列表">175255</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="罗曼诺夫王朝">109479</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="亲王">1680974</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="保加利亚君主列表">66624</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="王子_(音樂家)">302139</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="摩尔多瓦统治者列表">108660</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Sado" aoffset="810" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="Sado" saoffset="810" salength="4" rank="15">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="薩多河">1245277</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="born" aoffset="841" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="born" saoffset="841" salength="4" rank="67">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="分娩">268214</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="本名">595033</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="屬地主義">770740</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="马克斯·玻恩">427862</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="耶稣降生">713431</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="as" aoffset="846" alength="2" ext_length="0">
+				<subanchor sarel="0" saname="as" saoffset="846" salength="2" rank="79">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="AS">622710</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="變身">1105992</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="ActionScript">115488</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="阿斯 (硬币)">1188687</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title=".as">286394</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the second" aoffset="849" alength="10" ext_length="4">
+				<subanchor sarel="0" saname="the second" saoffset="849" salength="10" rank="72">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2005年至2006年意大利足球甲级联赛">1099469</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="第二次阿拉曼战役">505425</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="葡萄牙足球超级联赛2008–2009赛季">1258592</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="意大利足球乙级联赛">260237</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2008年至2009年西班牙足球甲級聯賽">893097</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="second" saoffset="853" salength="6" rank="46">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="二壘手">53815</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="秒">3371</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="第二次世界大战">305</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="热力学第二定律">42749</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="迷失 (第二季)">431276</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="second son" saoffset="853" salength="10" rank="59">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="安哈尔特统治者列表">390213</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="罗伊斯统治者列表">889513</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="路易十七">128148</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="梅克伦堡统治者列表">345510</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="結城秀康">159071</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="son" saoffset="860" salength="3" rank="50">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="希拉克略">804471</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="朝鮮景宗">132035</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="爱德华二世 (英格兰)">64584</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="喬治三世 (英國)">15468</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="詹姆斯·弗朗西斯·爱德华·斯图亚特">1238165</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Korean" aoffset="871" alength="6" ext_length="5">
+				<subanchor sarel="0" saname="Korean" saoffset="871" salength="6" rank="19">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="朝鲜文化">945591</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="李姓 (韓國)">1418875</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="朝鮮語">903149</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="朝鲜族">5361</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中國朝鮮族">1682261</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Korean king" saoffset="871" salength="11" rank="21">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="朝鲜半岛君主列表">97297</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="朝鮮高宗">10089</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="king" saoffset="878" salength="4" rank="23">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="格鲁吉亚君主列表">121416</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="君主">163319</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="法国君主列表">46587</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="法老">39958</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="王 (國際象棋)">598048</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Yeongjo" aoffset="883" alength="7" ext_length="10">
+				<subanchor sarel="0" saname="Yeongjo" saoffset="883" salength="7" rank="5">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="朝鮮英祖">132036</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Yeongjo of Joseon" saoffset="883" salength="17" rank="0">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="朝鮮英祖">132036</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Joseon" saoffset="894" salength="6" rank="14">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="古朝鮮">766470</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="李氏朝鲜">9989</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="in" aoffset="961" alength="2" ext_length="0">
+				<subanchor sarel="0" saname="in" saoffset="961" salength="2" rank="70">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="英寸">66976</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="阴阳">31002</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="IN">1234168</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title=".in">286641</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="单射">169017</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the royal" aoffset="991" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="the royal" saoffset="991" salength="9" rank="64">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="巴塞隆拿打吡">1655801</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="皇室">736230</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="波兰君主列表">71214</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="日本皇室">372904</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="贵妃">500442</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="royal" saoffset="995" salength="5" rank="45">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="英国君主">261450</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="君主">163319</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="皇室">736230</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="帝王谷">21784</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="希臘王國">757488</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="heir" aoffset="1001" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="heir" saoffset="1001" salength="4" rank="32">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="继承">36133</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="储君">1119970</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="it" aoffset="1016" alength="2" ext_length="0">
+				<subanchor sarel="0" saname="it" saoffset="1016" salength="2" rank="73">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="阴茎">18821</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="信息技术">17654</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="IT">17652</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title=".it">286653</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="意大利语">42696</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="had been" aoffset="1019" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="had been" saoffset="1019" salength="8" rank="83">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="James while John had had had had had had had had had had had a better effect on the teacher">1787759</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="曾姓">170854</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="歐洲國家在印度的殖民地">162319</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="曾省吾">912701</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="變身">1105992</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="his father" aoffset="1040" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="his father" saoffset="1040" salength="10" rank="66">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="老艾伯特·戈尔">952290</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="金日成">6545</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="綠惡魔">791587</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="亚伯拉罕·辛普森">696113</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="亚历山大三世 (俄国)">10164</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="father" saoffset="1044" salength="6" rank="39">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="列奧波爾德·莫扎特">516164</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="约翰·亚当斯">3031</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="阿历克塞一世">145085</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="威廉二世 (德国)">165024</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="阿爸 (阿蘭語)">399142</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="he" aoffset="1056" alength="2" ext_length="0">
+				<subanchor sarel="0" saname="he" saoffset="1056" salength="2" rank="76">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="麥克·邁爾斯">688786</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="埃諾奇·鮑威爾">1654864</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="菲德尔·卡斯特罗">39565</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="希伯来语">21842</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="查理·布朗">91463</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="mentally ill" aoffset="1063" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="mentally ill" saoffset="1063" salength="12" rank="16">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="精神病">486093</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="a" aoffset="1132" alength="1" ext_length="0">
+				<subanchor sarel="0" saname="a" saoffset="1132" salength="1" rank="55">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="作客入球優惠制">218498</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="業餘愛好者">1317301</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="半長軸">695069</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="儒略年">107058</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="A">1801</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="disappointment" aoffset="1134" alength="14" ext_length="0">
+				<subanchor sarel="0" saname="disappointment" saoffset="1134" salength="14" rank="42">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="痛苦">1648134</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="再生论">411582</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="上海一九四九">1541960</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="鄧浩光">500054</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="甲方乙方">1348504</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="consent" aoffset="1177" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="consent" saoffset="1177" salength="7" rank="41">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="主權在民">894414</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="美國國會聽證會">741117</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="最低合法性交年齡">78452</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="歐洲各國同意年齡">1567052</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="知情同意">1743384</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Yi" aoffset="1193" alength="2" ext_length="0">
+				<subanchor sarel="0" saname="Yi" saoffset="1193" salength="2" rank="28">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="彝族">861</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="李义旼">950401</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="青衣島">67114</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Ї">88664</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="云南省彝族乡列表">1255093</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="彝语北部方言">1024900</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="to be" aoffset="1225" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="to be" saoffset="1225" salength="5" rank="75">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="倒立鯰科">571655</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="互助會">336011</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="印歐系詞">1006698</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="存在">259482</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="徽章 (神奇寶貝)">821028</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="be" saoffset="1228" salength="2" rank="80">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="BE">1256786</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="印歐系詞">1006698</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="白俄罗斯语">218561</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title=".be">286412</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Б">87027</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="large" aoffset="1249" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="large" saoffset="1249" salength="5" rank="74">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="数据挖掘">103029</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="巨型動物群">1129204</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="大白猪">1445862</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="标准车">57767</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="大数 (数学)">1091140</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="rice" aoffset="1255" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="rice" saoffset="1255" salength="4" rank="17">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="米象">755265</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="稻田">320025</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="稻">19874</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="稻属">17298</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="米酒">444972</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="chest" aoffset="1260" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="chest" saoffset="1260" salength="5" rank="40">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="胸">213372</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="胸大肌">581830</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="eight" aoffset="1288" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="eight" saoffset="1288" salength="5" rank="49">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="八人单桨有舵手">1072162</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="八叛逆">329185</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="八年级">513657</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="8">23385</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="美國憲法第八修正案">1240700</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="His son" aoffset="1300" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="His son" saoffset="1300" salength="7" rank="60">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="弗谢沃洛德一世·雅罗斯拉维奇">271425</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="克里斯托夫·托爾金">677400</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="巴德爾">414960</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="乔治·沃克·布什">2822</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="切萨雷·博吉亚">469102</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Yi San" aoffset="1308" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="Yi San" saoffset="1308" salength="6" rank="3">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="朝鮮正祖">132050</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="李祘_(電視劇)">640434</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="King" aoffset="1322" alength="4" ext_length="8">
+				<subanchor sarel="0" saname="King" saoffset="1322" salength="4" rank="29">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="君主">163319</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="罗马尼亚君主">165029</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="King Jeongjo" saoffset="1322" salength="12" rank="2">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="朝鮮正祖">132050</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Jeongjo" saoffset="1327" salength="7" rank="7">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="朝鮮正祖">132050</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="King Yeongjo's" aoffset="1350" alength="14" ext_length="0">
+				<subanchor sarel="0" saname="King Yeongjo's" saoffset="1350" salength="14" rank="20">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="朝鮮英祖">132036</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="century" aoffset="1394" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="century" saoffset="1394" salength="7" rank="37">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="21世纪">3512</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="19世纪">4708</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="百人队">966019</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="板球术语列表">176287</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="世纪列表">1060870</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="there" aoffset="1402" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="there" saoffset="1402" salength="5" rank="84">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Microsoft Office 2000">1480773</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="维多利亚瀑布">101814</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="乳房">122495</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="埃忒耳">215338</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="半岛战争">271704</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="are" aoffset="1507" alength="3" ext_length="0">
+				<subanchor sarel="0" saname="are" saoffset="1507" salength="3" rank="77">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="民都洛水牛">1014317</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="明朝尚书与都御史年表">1568399</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="明朝官職表">672003</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="公顷">24824</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="前軍都督府">1613497</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Queen" aoffset="1646" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="Queen" saoffset="1646" salength="5" rank="23">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="皇后">107615</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="皇后乐队">152196</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="君主">163319</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="蜂后">90281</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="真社會性">669529</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="伊丽莎白二世">23084</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="女皇帝">509260</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="known as" aoffset="1669" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="known as" saoffset="1669" salength="8" rank="81">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="川口開治">285189</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="廈門潤">748725</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="遠藤淑子">739917</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="東里桐子">966510</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="藝名">530523</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="still" aoffset="1701" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="still" saoffset="1701" salength="5" rank="54">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="零點能量">246207</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="静物画">1504727</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="照相機">16988</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="气泡酒">1060507</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="摄影">7069</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="up to" aoffset="1718" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="up to" saoffset="1718" salength="5" rank="48">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Up to">169273</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="NBA紀錄">724183</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中華職棒重要紀錄">1461171</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="日本城市列表">64167</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中華職棒例行賽個人記錄">673565</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="now" aoffset="1724" alength="3" ext_length="0">
+				<subanchor sarel="0" saname="now" saoffset="1724" salength="3" rank="78">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="1959年">11453</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2000年代">26742</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="联邦州 (德国)">297193</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="今天">626681</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="1979年">26283</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="his death" aoffset="1731" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="his death" saoffset="1731" salength="9" rank="58">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="大勳位菊花章頸飾">810567</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="弗里德里希·克里斯蒂安 (萨克森选侯)">497437</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="奥萨马·本·拉登之死">1568590</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="耶稣复活">625948</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="哥伦比亚号航天飞机灾难">661658</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="death" saoffset="1735" salength="5" rank="29">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="自閉症">72463</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="死亡金屬音樂">594879</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="死亡">12046</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="奥萨马·本·拉登之死">1568590</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="死刑">16696</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="retribution" aoffset="1747" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="retribution" saoffset="1747" salength="11" rank="31">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="以眼还眼">1274749</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="水姬羞辱马来西亚华人事件">1652437</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="又吉榮喜">1522162</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="應報理論">267855</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="果報">394617</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="報復">693371</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="misconduct" aoffset="1774" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="misconduct" saoffset="1774" salength="10" rank="39">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="職業道德">564421</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="拉失德">1276422</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="滿洲國監察院">877500</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="学术腐败">496342</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="行為改變技術">906220</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="or" aoffset="1785" alength="2" ext_length="0">
+				<subanchor sarel="0" saname="or" saoffset="1785" salength="2" rank="62">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="逻辑或">693672</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="动画物理学">79819</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="或门">1263469</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="緊急救助電話">615098</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="金色">313668</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="conspiracy" aoffset="1818" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="conspiracy" saoffset="1818" salength="10" rank="36">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="卡特尔">892763</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="肯尼迪遇刺阴谋论">1118383</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="陰謀論">71115</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="副总统伯尔叛国案">1103340</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="7月20日密谋案">292084</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="was buried" aoffset="1884" alength="10" ext_length="0">
+				<subanchor sarel="0" saname="was buried" saoffset="1884" salength="10" rank="71">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="生前葬">1070701</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="妇好墓">286300</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="玉陵">585757</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="葬火龙">506939</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="国葬">207862</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Mr" aoffset="1898" alength="2" ext_length="0">
+				<subanchor sarel="0" saname="Mr" saoffset="1898" salength="2" rank="32">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="香港1999年度授勳及嘉獎名單">1593066</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="香港2002年度授勳及嘉獎名單">1595872</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="香港2001年度授勳及嘉獎名單">1594807</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title=".mr">290158</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="香港2010年度授勳及嘉獎名單">1601106</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Yangju" aoffset="1915" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="Yangju" saoffset="1915" salength="6" rank="8">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="楊州站">1224444</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="楊州市">760664</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="his body" aoffset="1932" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="his body" saoffset="1932" salength="8" rank="57">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="獵命師傳奇角色列表">1261558</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="恐怖三桅帆船">814052</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="基督的身体">548513</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="阿塔纳斯·珂雪">713004</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="父親大人 (鋼之鍊金術師)">1193219</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="body" saoffset="1936" salength="4" rank="36">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="物体">608434</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="身體">1566795</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="水體">411657</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="人体解剖学">4167</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="車體風格">541110</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="his son" aoffset="1954" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="his son" saoffset="1954" salength="7" rank="61">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="弗谢沃洛德一世·雅罗斯拉维奇">271425</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="克里斯托夫·托爾金">677400</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="巴德爾">414960</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="乔治·沃克·布什">2822</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="切萨雷·博吉亚">469102</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="current" aoffset="1982" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="current" saoffset="1982" salength="7" rank="35">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="洋流">193725</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="电流源">129005</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="安培">39930</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="2009年">145744</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="今天">626681</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Suwon" aoffset="2031" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="Suwon" saoffset="2031" salength="5" rank="9">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="水原市">188925</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="水原站_(京畿道)">1721077</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="south" aoffset="2052" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="south" saoffset="2052" salength="5" rank="41">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="泰国南部地区">1093502</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="南极">6854</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="意大利南部">899832</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="南">21421</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="印度南部">803193</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Seoul" aoffset="2061" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="Seoul" saoffset="2061" salength="5" rank="6">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="首爾">142076</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Hwaseong" aoffset="2086" alength="8" ext_length="9">
+				<subanchor sarel="0" saname="Hwaseong" saoffset="2086" salength="8" rank="1">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="華城市">201596</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Hwaseong Fortress" saoffset="2086" salength="17" rank="125">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="韩国国际广播电台">1229942</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="華城市">201596</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="水原市">188925</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="华城">950208</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Fortress" saoffset="2095" salength="8" rank="8">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="要塞">36039</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="彼得保罗要塞">1634760</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="如梅利堡垒">1506881</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="斯德零故宫">96594</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="城堡">151016</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="honor" aoffset="2131" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="honor" saoffset="2131" salength="5" rank="33">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="名誉学位">948463</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="拉丁文學位榮譽">235162</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="采邑制">67761</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="名譽">1306644</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="第6屆金馬獎">1740481</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="tomb" aoffset="2142" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="tomb" saoffset="2142" salength="4" rank="26">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="KV2">960049</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="現存教宗塚墓列表">1478275</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="圣墓教堂">532929</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="拱北 (伊斯兰教)">281424</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="浡泥国王墓">1046434</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="摩索拉斯王陵墓">547514</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="posthumously" aoffset="2341" alength="12" ext_length="0">
+				<subanchor sarel="0" saname="posthumously" saoffset="2341" salength="12" rank="37">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="谥号">6737</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="elevated" aoffset="2354" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="elevated" saoffset="2354" salength="8" rank="31">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="上海北翟高架路">919490</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="高速公路">21797</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="使用者帳戶控制">693737</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="城市軌道交通系統">42471</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="臺鐵高架化">359632</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="status" aoffset="2366" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="status" saoffset="2366" salength="6" rank="44">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="美國社會階層">884841</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="社會地位">1777640</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="保护状况">42811</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="英國城市地位">247459</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="亚目">109538</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="given" aoffset="2377" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="given" saoffset="2377" salength="5" rank="69">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="威爾曼1">751783</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="番紅花">632673</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="紅矩形星雲">1542314</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="小路之歌">1082879</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="条件概率">443079</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Emperor" aoffset="2394" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="Emperor" saoffset="2394" salength="7" rank="24">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="羅馬皇帝">373253</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中国君主列表">112455</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="宋徽宗">37057</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="皇帝">6186</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="拜占庭皇帝列表">16029</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Empress" aoffset="2413" alength="7" ext_length="0">
+				<subanchor sarel="0" saname="Empress" saoffset="2413" salength="7" rank="27">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="皇后">107615</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="推古天皇">41514</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="卞皇后 (魏高貴鄉公)">615527</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="女性天皇">589875</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="皇帝">6186</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Family" aoffset="2592" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="Family" saoffset="2592" salength="6" rank="6">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="科 (生物)">34424</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="语言系属分类">21880</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="家族">189974</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="辛普森家族">691395</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="集合族">693146</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Royal Noble Consort" aoffset="2724" alength="19" ext_length="0">
+				<subanchor sarel="0" saname="Royal Noble Consort" saoffset="2724" salength="19" rank="13">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="皇后">107615</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="恩斯特·奧古斯特二世 (漢諾威)">340316</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="蕭淑妃">210494</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="陈国公主与驸马墓">206337</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="郭曖">977464</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Noble" saoffset="2730" salength="5" rank="35">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="諾布爾縣_(印地安納州)">449970</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="稀有气体">1244</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="貴族">193702</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="抗腐蚀金属">1064542</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="施拉赫塔">1112991</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="贵族制">565629</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Consort" saoffset="2736" salength="7" rank="26">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="皇后">107615</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="英国君主配偶列表">1135637</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="王夫">1236971</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="婚姻">25757</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="妃">506125</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="clan" aoffset="2768" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="clan" saoffset="2768" salength="4" rank="22">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="宗族">189764</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="氏族">167136</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="索馬里人">1036739</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="藩 (日本)">241177</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="祖籍">543167</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Suk" aoffset="3277" alength="3" ext_length="0">
+				<subanchor sarel="0" saname="Suk" saoffset="3277" salength="3" rank="30">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="约瑟夫·苏克">1157709</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="西羅·薩克">1788989</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="the Park" aoffset="3376" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="the Park" saoffset="3376" salength="8" rank="63">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="乞力马扎罗国家公园">1624636</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中国国家湿地公园列表">1491758</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中国国家地质公园列表">82087</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="彰化縣公園列表">1058508</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="台灣運動公園列表">503716</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Park" saoffset="3380" salength="4" rank="19">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="體育場">551784</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="泊車">535481</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中央公園">247060</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="棒球場">53859</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="公园">6234</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Successor" aoffset="3495" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="Successor" saoffset="3495" salength="9" rank="52">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="腓特烈一世 (普鲁士)">69284</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="原始递归函数">258558</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="后继序数">81805</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Dreamcast">23046</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="图论术语">1664712</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Royal Prince Successor" aoffset="3617" alength="22" ext_length="11">
+				<subanchor sarel="0" saname="Royal Prince Successor" saoffset="3617" salength="22" rank="11">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="朝鮮純祖">113263</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Royal Prince Successor Descendant" saoffset="3617" salength="33" rank="10">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="朝鮮正祖">132050</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="Descendant" saoffset="3640" salength="10" rank="34">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="明善 (觉罗)">1684473</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="祖先">470009</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="文化遗产">198623</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="親屬">158383</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="卡尔十六世·古斯塔夫">130205</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Only Son" aoffset="4041" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="Only Son" saoffset="4041" salength="8" rank="56">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中國皇儲列表">944905</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="阿列克谢·尼古拉耶维奇·罗曼诺夫">477392</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="獨子蒜">1738630</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="一人息子">1105572</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="懷嬴">184272</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Princess" aoffset="4140" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="Princess" saoffset="4140" salength="8" rank="34">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="格格">643957</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="英格丽德公主 (瑞典)">1526045</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="公主">1276661</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="王妃_(專輯)">1070982</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="美智子">120931</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="迪士尼公主">955239</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Daughter" aoffset="4172" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="Daughter" saoffset="4172" salength="8" rank="43">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="明德马皇后">1065943</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="可足渾皇后 (慕容暐)">1095978</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="王皇后 (漢平帝)">443179</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="胡皇后 (北齐后主)">1057052</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="阿史那皇后">817149</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="full" aoffset="4538" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="full" saoffset="4538" salength="4" rank="65">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="管弦樂團">146660</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="葡萄牙國家足球隊">150932</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="满月">113691</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="月相">8335</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="子範疇">712090</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="posthumous" aoffset="4543" alength="10" ext_length="5">
+				<subanchor sarel="0" saname="posthumous" saoffset="4543" salength="10" rank="38">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="谥号">6737</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="遺腹子">986278</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="posthumous name" saoffset="4543" salength="15" rank="0">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="北朝藩王列表">1558625</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="三國藩王列表">1230379</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="谥号">6737</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="中國追尊君主列表">217703</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="南朝藩王列表">1558198</tobep>
+				</subanchor>
+				<subanchor sarel="0" saname="name" saoffset="4554" salength="4" rank="51">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="學名 (植物)">1580810</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="人名">12081</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="双名法">3506</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title=".name">917818</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="藝名">530523</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="imperial" aoffset="4885" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="imperial" saoffset="4885" salength="8" rank="30">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="哈布斯堡君主國">1137232</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="俄罗斯帝国">5388</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="羅馬帝國">459860</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="大日本帝国">104197</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="皇帝">6186</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Ancestry" aoffset="5115" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="Ancestry" saoffset="5115" salength="8" rank="22">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="系譜學">565616</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="祖先">470009</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="親屬">158383</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="格紋日">1021259</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="石油縣 (蒙大拿州)">464414</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="an" aoffset="5216" alength="2" ext_length="0">
+				<subanchor sarel="0" saname="an" saoffset="5216" salength="2" rank="82">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title=".an">286388</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="紅豆沙">625965</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="夢角鮟鱇科">547334</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="數碼寶貝列表">327673</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="應安">334572</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="autobiography" aoffset="5219" alength="13" ext_length="0">
+				<subanchor sarel="0" saname="autobiography" saoffset="5219" salength="13" rank="4">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="回忆录">613188</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="自传">89035</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="智慧的七柱">457464</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="瞧！这个人">439097</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="王裕民">78835</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="life" aoffset="5298" alength="4" ext_length="0">
+				<subanchor sarel="0" saname="life" saoffset="5298" salength="4" rank="40">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="生命值">938073</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="生命">161</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="外星生命">173587</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="無期徒刑">69812</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="人壽保險">105740</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Crown Princess" aoffset="5320" alength="14" ext_length="0">
+				<subanchor sarel="0" saname="Crown Princess" saoffset="5320" salength="14" rank="5">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="寶冠章">809496</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="太子妃">501955</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="笄禮">468331</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="月野兔">128950</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="储君">1119970</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Madame" aoffset="5450" alength="6" ext_length="0">
+				<subanchor sarel="0" saname="Madame" saoffset="5450" salength="6" rank="14">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="盖恩夫人">173220</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="包法利夫人">382732</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="操控性工作者">182083</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="龐巴度夫人">803267</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="杜莎夫人">750788</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="External" aoffset="5783" alength="8" ext_length="0">
+				<subanchor sarel="0" saname="External" saoffset="5783" salength="8" rank="47">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="外燃机">24255</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="外弹道">1181466</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="外斜肌">582298</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="外部性">139012</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="少林功夫">1486222</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="links" aoffset="5792" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="links" saoffset="5792" salength="5" rank="68">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="链接器">18594</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="数据链路">154526</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="澳門有線電視">1296292</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="Links">65615</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="共主邦聯">121074</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Biography" aoffset="5953" alength="9" ext_length="0">
+				<subanchor sarel="0" saname="Biography" saoffset="5953" salength="9" rank="21">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="查理大帝传">1488018</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="傳記">3936</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="数学家列表">1463</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="阿古利可拉傳">1495259</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="德怀特·艾森豪威尔">5479</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="0" aname="Korea" aoffset="5987" alength="5" ext_length="0">
+				<subanchor sarel="0" saname="Korea" saoffset="5987" salength="5" rank="1">
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="蒙古入侵高丽">860948</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="國際團體圍棋比賽優勝國列表">1528173</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="朝鲜 (称谓)">1314</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="麗的電視外購動畫列表">715749</tobep>
+					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="zh" title="东国十八贤">1235220</tobep>
+				</subanchor>
+			</anchor>
+		</outgoinglinks>
+	</topic>
+</crosslink-assessment>

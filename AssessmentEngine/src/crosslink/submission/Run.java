@@ -232,86 +232,101 @@ public class Run<AnchorSet>{
                 AnchorSet anchors = (AnchorSet) topic.getAnchors();
                 for (int k = 0; k < anchorNodeList.getLength(); k++) {
                     Element anchorElmn = (Element) anchorNodeList.item(k);
-                    try {
-                    	aOffset = Integer.parseInt(anchorElmn.getAttribute(offsetAttributeName));
-                    }
-                    catch (Exception ex) {
-                    	aOffset = 0;
-                    }
-                    try {
-                    	aLength = Integer.parseInt(anchorElmn.getAttribute(lengthAttributeName));
-                    }
-                    catch (Exception ex) {
-                    	aLength = 0;
-                    }
+//                    try {
+//                    	
+//                    }
+//                    catch (Exception ex) {
+//                    	aOffset = 0;
+//                    }
+//                    try {
+//                    	
+//                    }
+//                    catch (Exception ex) {
+//                    	aLength = 0;
+//                    }
                     String anchorName = anchorElmn.getAttribute("name");
+                    String offsetStr = anchorElmn.getAttribute(offsetAttributeName);
+                    String lengthStr = anchorElmn.getAttribute(lengthAttributeName);
                     
-                    if (convertToTextOffset) {
-                    	aLength = XML2TXT.textLength(bytes, aOffset, aLength);
-                    	aOffset = XML2TXT.byteOffsetToTextOffset(bytes, aOffset);
-                    }
+                    try {
+                    	aOffset = Integer.parseInt(offsetStr);
+                    	aLength = Integer.parseInt(lengthStr);
+                    	
+	                    if (convertToTextOffset) {
+	                    	aLength = XML2TXT.textLength(bytes, aOffset, aLength);
+	                    	aOffset = XML2TXT.byteOffsetToTextOffset(bytes, aOffset);
+	                    }
                     	
 //                        anchorToBEPV = new Vector<String[]>();
-                    if (aLength > 0) {
-	                    Anchor anchor = new Anchor(aOffset, aLength, anchorName);
-	                    anchor.setAssociatedTopic(topic);
-	                    if (checkAnchors == false || (checkAnchors && anchor.validate(topic, Anchor.SHOW_MESSAGE_NONE, convertToTextOffset))) {
-	                        Target target = null;
-	                        if (forValidationOrAssessment) {
-	                        	anchorKey = aOffset + "_" + aLength;
-	                            NodeList subAnchorNodeList = anchorElmn.getElementsByTagName(afSubAnchorTag);
-	                            for (int l = 0; l < subAnchorNodeList.getLength(); l++) {
-	                                Element subAnchorElmn = (Element) subAnchorNodeList.item(l);
-	                                NodeList toBepNodeList = subAnchorElmn.getElementsByTagName(afToBepTag);
-	                                for (int m = 0; m < toBepNodeList.getLength(); m++) {
-	                                    Element toBepElmn = (Element) toBepNodeList.item(m);
-	                                    String tbOffset = toBepElmn.getAttribute(tboffsetAttributeName);                                
-	                                    String tbStartP = toBepElmn.getAttribute("tbstartp");
-	                                    String tbRel = toBepElmn.getAttribute("tbrel");
-	
-	                                    Node tbXmlFileIDTextNode = toBepElmn.getFirstChild();
-	                                    String tbFileID = tbXmlFileIDTextNode.getTextContent();
-	                                    
-	                                   // anchorToBEPV.add(new String[]{tbOffset, tbStartP, tbFileID, tbRel});
-	                                }
-	                            }
-	                        }
-	                        else {
-	                        	anchorKey = aOffset + "_" + (Integer.valueOf(aOffset) + Integer.valueOf(aLength)) + "_" + anchorName;
-	                            NodeList toBepNodeList = anchorElmn.getElementsByTagName(afToBepTag);
-	                            for (int m = 0; m < toBepNodeList.getLength(); m++) {
-	                                Element toBepElmn = (Element) toBepNodeList.item(m);
-	                                
-	                                // new
-	                                String target_lang = toBepElmn.getAttribute("lang").trim().toLowerCase();
-	                                String target_title = toBepElmn.getAttribute("title");
-	
-	                                String tbOffset = toBepElmn.getAttribute("bep_offset").trim();
-	                                if (tbOffset.length() == 0)
-	                                	tbOffset = "0";
-	                                Node tbXmlFileIDTextNode = toBepElmn.getFirstChild();
-	                                if (tbXmlFileIDTextNode != null) {
-		                                String tbFileID = tbXmlFileIDTextNode.getTextContent();
-		                                
-		                                //anchorToBEPV.add(new String[]{tbFileID, tbOffset, target_lang, target_title});
-		                                if (Target.exist(tbFileID, target_lang)) {
-			                                target = new Target(target_lang, target_title, tbFileID, Integer.parseInt(tbOffset));
-			                                target.setParent(anchor);
-			                                target.setRank(m);
-			                                anchor.insertTarget(target);
+	                    if (aLength > 0) {
+		                    Anchor anchor = new Anchor(aOffset, aLength, anchorName);
+		                    anchor.setAssociatedTopic(topic);
+		                    if (checkAnchors == false || (checkAnchors && anchor.validate(topic, Anchor.SHOW_MESSAGE_NONE, convertToTextOffset))) {
+		                        Target target = null;
+		                        if (forValidationOrAssessment) {
+		                        	anchorKey = aOffset + "_" + aLength;
+		                            NodeList subAnchorNodeList = anchorElmn.getElementsByTagName(afSubAnchorTag);
+		                            for (int l = 0; l < subAnchorNodeList.getLength(); l++) {
+		                                Element subAnchorElmn = (Element) subAnchorNodeList.item(l);
+		                                NodeList toBepNodeList = subAnchorElmn.getElementsByTagName(afToBepTag);
+		                                for (int m = 0; m < toBepNodeList.getLength(); m++) {
+		                                    Element toBepElmn = (Element) toBepNodeList.item(m);
+		                                    String tbOffset = toBepElmn.getAttribute(tboffsetAttributeName);                                
+		                                    String tbStartP = toBepElmn.getAttribute("tbstartp");
+		                                    String tbRel = toBepElmn.getAttribute("tbrel");
+		
+		                                    Node tbXmlFileIDTextNode = toBepElmn.getFirstChild();
+		                                    String tbFileID = tbXmlFileIDTextNode.getTextContent();
+		                                    
+		                                   // anchorToBEPV.add(new String[]{tbOffset, tbStartP, tbFileID, tbRel});
 		                                }
-	                                }
-	                            }
-	                        }
-	//                        anchorBepsHT.put(anchorKey, anchorToBEPV);
-	                        anchor.setRank(k);
-	//                        if (anchor.getName().equals("古代") && anchor.getTargets().containsKey("4946747"))
-	//                        	System.err.println("I got you!");
-	                        if (anchors instanceof AnchorSetInterface)
-	                        	((AnchorSetInterface)anchors).insert(anchor);
-	                        else if (anchors instanceof Collection)
-	                        	((Collection)anchors).add(anchor);
+		                            }
+		                        }
+		                        else {
+		                        	anchorKey = aOffset + "_" + (Integer.valueOf(aOffset) + Integer.valueOf(aLength)) + "_" + anchorName;
+		                            NodeList toBepNodeList = anchorElmn.getElementsByTagName(afToBepTag);
+		                            for (int m = 0; m < toBepNodeList.getLength(); m++) {
+		                                Element toBepElmn = (Element) toBepNodeList.item(m);
+		                                
+		                                // new
+		                                String target_lang = toBepElmn.getAttribute("lang").trim().toLowerCase();
+		                                String target_title = toBepElmn.getAttribute("title");
+		
+		                                String tbOffset = toBepElmn.getAttribute("bep_offset").trim();
+		                                if (tbOffset.length() == 0)
+		                                	tbOffset = "0";
+		                                Node tbXmlFileIDTextNode = toBepElmn.getFirstChild();
+		                                if (tbXmlFileIDTextNode != null) {
+			                                String tbFileID = tbXmlFileIDTextNode.getTextContent();
+			                                
+			                                //anchorToBEPV.add(new String[]{tbFileID, tbOffset, target_lang, target_title});
+			                                if (Target.exist(tbFileID, target_lang)) {
+				                                target = new Target(target_lang, target_title, tbFileID, Integer.parseInt(tbOffset));
+				                                target.setParent(anchor);
+				                                target.setRank(m);
+				                                anchor.insertTarget(target);
+			                                }
+		                                }
+		                            }
+		                        }
+		//                        anchorBepsHT.put(anchorKey, anchorToBEPV);
+		                        anchor.setRank(k);
+		//                        if (anchor.getName().equals("古代") && anchor.getTargets().containsKey("4946747"))
+		//                        	System.err.println("I got you!");
+		                        if (anchors instanceof AnchorSetInterface)
+		                        	((AnchorSetInterface)anchors).insert(anchor);
+		                        else if (anchors instanceof Collection)
+		                        	((Collection)anchors).add(anchor);
+		                    }
 	                    }
+                    } //try
+//                    catch (ArrayIndexOutOfBoundsException ex) {
+//                    	System.err.println(String.format("Error in reading %s, anchor (%s : %s, %s)", runName, anchorName, offsetStr, lengthStr));
+//                    	ex.printStackTrace();
+//                    }
+                    catch (Exception ex) {
+                    	System.err.println(String.format("Error in reading %s, anchor (%s : %s, %s)", runName, anchorName, offsetStr, lengthStr));
+                    	ex.printStackTrace();
                     }
                 }
                 
