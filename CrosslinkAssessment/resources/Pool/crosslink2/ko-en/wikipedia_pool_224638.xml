@@ -535,8 +535,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="What Is and What Should Never Be">2291506</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname=""" aoffset="901" alength="1" ext_length="0">
-				<subanchor sarel="0" saname=""" saoffset="901" salength="1" rank="156">
+			<anchor arel="0" aname="&quot;" aoffset="901" alength="1" ext_length="0">
+				<subanchor sarel="0" saname="&quot;" saoffset="901" salength="1" rank="156">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Inch">14775</tobep>
 				</subanchor>
 			</anchor>
@@ -724,13 +724,13 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Ring_(mathematics)">48404</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="sec" aoffset="1000" alength="3" ext_length="0">
+			<anchor arel="-1" aname="sec" aoffset="1000" alength="3" ext_length="0">
 				<subanchor sarel="0" saname="sec" saoffset="1000" salength="3" rank="79">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="SEC">390925</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="Second">26873</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="st" aoffset="1006" alength="2" ext_length="0">
+			<anchor arel="-1" aname="st" aoffset="1006" alength="2" ext_length="0">
 				<subanchor sarel="0" saname="st" saoffset="1006" salength="2" rank="80">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="en" title="ST">269632</tobep>
 				</subanchor>

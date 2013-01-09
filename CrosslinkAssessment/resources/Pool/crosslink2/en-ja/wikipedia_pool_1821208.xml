@@ -1023,8 +1023,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="テクスチャ">1009108</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="shark's fin" aoffset="3961" alength="11" ext_length="0">
-				<subanchor sarel="0" saname="shark's fin" saoffset="3961" salength="11" rank="58">
+			<anchor arel="0" aname="shark&apos;s fin" aoffset="3961" alength="11" ext_length="0">
+				<subanchor sarel="0" saname="shark&apos;s fin" saoffset="3961" salength="11" rank="58">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ふかひれ">119907</tobep>
 				</subanchor>
 				<subanchor sarel="0" saname="fin" saoffset="3969" salength="3" rank="84">
@@ -1041,12 +1041,12 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="変種">883635</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="China's" aoffset="4029" alength="7" ext_length="10">
-				<subanchor sarel="0" saname="China's" saoffset="4029" salength="7" rank="128">
+			<anchor arel="0" aname="China&apos;s" aoffset="4029" alength="7" ext_length="10">
+				<subanchor sarel="0" saname="China&apos;s" saoffset="4029" salength="7" rank="128">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="中国の歴史">9494</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="中華人民共和国">1903</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="China's northeast" saoffset="4029" salength="17" rank="47">
+				<subanchor sarel="0" saname="China&apos;s northeast" saoffset="4029" salength="17" rank="47">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="満州">12898</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="中国東北部">278806</tobep>
 				</subanchor>
