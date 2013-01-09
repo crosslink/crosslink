@@ -6,6 +6,7 @@ HOME_PATH=`dirname $0`
 lang=$1
 POOL_PATH=resources/Pool/crosslink2
 
+target_lang=`echo $lang | cut -f 2 -d "-"`
 
 if ! [ -n "$POOL_PATH" ]; then
 	echo "Usage: $0 [lang] [pool path]"
@@ -25,17 +26,17 @@ if [ "$?" -eq "0" ]; then
 	
 	mkdir -v -p $COLLECTION_PATH
 
+	#for topic in `cat $TOPICS`
 	cat $POOL_PATH/*${lang}/*.xml | grep "<tobep" | cut -f 2 -d ">" | cut -f 1 -d "<" | while read line
-		#for topic in `cat $TOPICS`
 	do
 		extname=`/data/corpus/wikipedia/all/id2path.sh ${line}`
-		filename=/data/corpus/wikipedia/all/${lang}/${extname}
+		filename=/data/corpus/wikipedia/all/${target_lang}/${extname}
 		#echo $filename
 		target_file=${COLLECTION_PATH}/${extname}
 		target_path=`dirname $target_file`
 		mkdir -p $target_path
 		#mv -v $filename $target_path
-		cp -v $filename ${target_path}
+		cp -vu $filename ${target_path}
 	done
 fi
 

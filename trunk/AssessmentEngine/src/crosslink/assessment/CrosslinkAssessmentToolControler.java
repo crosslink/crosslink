@@ -638,9 +638,14 @@ public class CrosslinkAssessmentToolControler {
     
 
     private void initLinkDocument(String xmlFilePath) {
-        Xml2Html xmlParser = new Xml2Html(xmlFilePath, true);
-        myLinkPane.setContentType(textContentType);
-        myLinkPane.setText(xmlParser.getHtmlContent().toString());
+    	try {
+    		Xml2Html xmlParser = new Xml2Html(xmlFilePath, true);
+            myLinkPane.setContentType(textContentType);
+            myLinkPane.setText(xmlParser.getHtmlContent().toString());
+    	}
+    	catch (Exception ex) {
+    		ex.printStackTrace();
+    	}
     }
     
     private void setLinkBEPIcon(String currTopicPAnchorStatus, String[] CurrTopicATargetSIDStatus) {
