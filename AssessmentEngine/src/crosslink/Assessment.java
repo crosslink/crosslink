@@ -97,7 +97,7 @@ public class Assessment {
 
 //			poolDirHandler.mkdir();
 			
-		poolBackupDirHandler = new File(poolDir.toString() + ASSESSMENT_POOL_BACKUP_DIR + targetLang);
+		poolBackupDirHandler = new File(poolDir.toString() + ASSESSMENT_POOL_BACKUP_DIR + sourceLang + "-" + targetLang);
 		if (!poolBackupDirHandler.exists())
 			poolBackupDirHandler.mkdirs();
 		

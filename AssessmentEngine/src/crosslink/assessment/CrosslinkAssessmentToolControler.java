@@ -305,7 +305,7 @@ public class CrosslinkAssessmentToolControler {
 		DateFormat dateFormat = new SimpleDateFormat("yyMMddHHmmss");
 		Date date = new Date();
 		String currentDateTime = dateFormat.format(date).toString();
-		String backupPoolFPath = backupPoolDir + File.separator + AppResource.targetLang + "_" + topicID + "_" + currentDateTime + "_Pool.xml";
+		String backupPoolFPath = backupPoolDir + File.separator + AppResource.sourceLang + "_" + AppResource.targetLang + "_" + topicID + "_" + currentDateTime + "_Pool.xml";
 //		File destFile = new File(backupPoolFPath);
 //		InputStream in = null;
 //		OutputStream out = null;
