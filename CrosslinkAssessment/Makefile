@@ -1,31 +1,32 @@
 
 
-all: packageZh packageJa packageKo
+all-cjk2e: packageZh2En packageJa2En packageKo2En
+all-e2cjk: packageEn2Zh packageEn2Ja packageEn2Ko
 	
 	
 packageEn2Zh:
-	echo "en:zh" > lang.txt
-	ant release-zh
+	printf "en:zh\ninbox\n" > lang.txt
+	ant release-en2zh
 	
 packageEn2Ja:
-	echo "en:ja" > lang.txt
-	ant release-ja
+	printf "en:ja\ninbox\n" > lang.txt
+	ant release-en2ja
 	
 packageEn2Ko:
-	echo "en:ko" > lang.txt
-	ant release-ko
+	printf "en:ko\ninbox\n" > lang.txt
+	ant release-en2ko
 	
 packageZh2En:
-	echo "en:zh" > lang.txt
-	ant release-zh
+	printf "zh:en\ninbox\n" > lang.txt
+	ant release-zh2en
 	
 packageJa2En:
-	echo "en:ja" > lang.txt
-	ant release-ja
+	printf "ja:en\ninbox\n" > lang.txt
+	ant release-ja2en
 	
 packageKo2En:
-	echo "en:ko" > lang.txt
-	ant release-ko	
+	printf "ko:en\ninbox\n" > lang.txt
+	ant release-ko2en
 	
 en2zh-gt:
 	echo "en:zh" > lang.txt
