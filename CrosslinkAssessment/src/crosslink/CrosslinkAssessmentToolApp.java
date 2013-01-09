@@ -58,7 +58,12 @@ public class CrosslinkAssessmentToolApp extends SingleFrameApplication {
 //        JFrame mainFrame = CrosslinkAssessmentToolApp.getApplication().getMainFrame();
 //        mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 //        mainFrame.addWindowListener(new MyWindowListener());
+    	try {
         show(new CrosslinkAssessmentToolView(this));
+    	}
+    	catch (Exception ex) {
+    		ex.printStackTrace();
+    	}
     }
 
     /**
