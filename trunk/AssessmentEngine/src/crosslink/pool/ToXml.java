@@ -31,7 +31,7 @@ public class ToXml {
 		String anchorElementStart = "\t\t\t<anchor arel=\"0\" aname=\"%s\" aoffset=\"%d\" alength=\"%d\" ext_length=\"%d\">\n";
 //		String anchorElementEnd = "\t\t\t\t\t</subanchor>\n";
 		
-		xmlText.append(String.format(anchorElementStart, anchor.getName(), anchor.getOffset(), anchor.getLength(), anchor.getExtendedLength()));
+		xmlText.append(String.format(anchorElementStart,  XML.XMLify(XML.unXMLify(anchor.getName())), anchor.getOffset(), anchor.getLength(), anchor.getExtendedLength()));
 		
 //		for (Target target : anchor.getTargets())
 //			targetToXml(target, xmlText);
@@ -43,7 +43,7 @@ public class ToXml {
 		String anchorElementStart = "\t\t\t\t<subanchor sarel=\"0\" saname=\"%s\" saoffset=\"%d\" salength=\"%d\" rank=\"%d\">\n";
 		String anchorElementEnd = "\t\t\t\t</subanchor>\n";
 		
-		xmlText.append(String.format(anchorElementStart, anchor.getName(), anchor.getOffset(), anchor.getLength(), anchor.getRank()));
+		xmlText.append(String.format(anchorElementStart, XML.XMLify(XML.unXMLify(anchor.getName())), anchor.getOffset(), anchor.getLength(), anchor.getRank()));
 		
 		Set set = anchor.getTargets().entrySet();
 		Iterator i = set.iterator();
