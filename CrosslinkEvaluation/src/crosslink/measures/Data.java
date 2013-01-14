@@ -139,9 +139,16 @@ public class Data {
             if (currentTargetLang == null || currentTargetLang.length() == 0)
             	throw new Exception(String.format("Incorrect run file - %s which dosen't provide the target language", runfiles.getAbsoluteFile()));
             
+            String langNeedsChecked;
+            
+            if (linkDirection == ENGLISH_TO_CJK)
+            	langNeedsChecked = currentTargetLang;
+            else
+            	langNeedsChecked = currentSourceLang;
+            
             int thisRunLinkDirection = currentSourceLang.equalsIgnoreCase("en") ? ENGLISH_TO_CJK : CJK_TO_ENGLISH;
 
-            if ((langMatchMap.get(currentTargetLang) & lang) > 0 && (linkDirection & thisRunLinkDirection) > 0) {
+            if ((langMatchMap.get(langNeedsChecked) & lang) > 0 && (linkDirection & thisRunLinkDirection) > 0) {
             	runTable = new Hashtable();
 	            runId = is.getRunId();
 	            teamId = is.getParticipantId();
