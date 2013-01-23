@@ -139,12 +139,19 @@ public class Data {
             if (currentTargetLang == null || currentTargetLang.length() == 0)
             	throw new Exception(String.format("Incorrect run file - %s which dosen't provide the target language", runfiles.getAbsoluteFile()));
             
-            String langNeedsChecked;
+            String langNeedsChecked = null;
             
             if (linkDirection == ENGLISH_TO_CJK)
             	langNeedsChecked = currentTargetLang;
-            else
+            else if (linkDirection == CJK_TO_ENGLISH)
             	langNeedsChecked = currentSourceLang;
+            else {
+            	if (currentTargetLang.equalsIgnoreCase("en"))
+            		langNeedsChecked = currentSourceLang;
+            	else
+            		langNeedsChecked = currentTargetLang;
+            }
+            
             
             int thisRunLinkDirection = currentSourceLang.equalsIgnoreCase("en") ? ENGLISH_TO_CJK : CJK_TO_ENGLISH;
 
