@@ -754,7 +754,7 @@ public class EvaluationUI3 extends JFrame {
     }
 
     private void getplotsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_getplotsButtonActionPerformed
-            getPlot();
+    	createPlot();
     }
     
     private void createPlot() {
@@ -1720,11 +1720,6 @@ public class EvaluationUI3 extends JFrame {
         AppResource.crosslinkTask = AppResource.CROSSLINK_TASK_1;
         
         ResultSetManager.getInstance().setResultSetPath();
-    }
-
-    @org.jdesktop.application.Action
-    public void getPlot() {
-        createPlot();
     }
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
