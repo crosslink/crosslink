@@ -184,7 +184,12 @@ public class Assessment {
 
 	private void loadTopicsForAssessment() {
 		
-		Stack<File> stack = new WildcardFiles().listFilesInStack(ASSESSMENT_TOPIC_OUTBOX_PATH + "*.xml");
+		Stack<File> stack = null;
+		try {
+			stack = new WildcardFiles().listFilesInStack(ASSESSMENT_TOPIC_OUTBOX_PATH + "*.xml");
+		} catch (Exception e1) {
+			e1.printStackTrace();
+		}
 		for (File file: stack) {
     		String filename =  file.getName();
         	String	topicID = filename.substring(0, filename.indexOf('.'));
@@ -203,7 +208,11 @@ public class Assessment {
 			topicPath = AppResource.getInstance().getTopicPathWithLang(sourceLang);
 		}
 		
-		stack = new WildcardFiles().listFilesInStack(topicPath + "*.xml");
+		try {
+			stack = new WildcardFiles().listFilesInStack(topicPath + "*.xml");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		
 		for (File file: stack) {
     		String filename =  file.getName();

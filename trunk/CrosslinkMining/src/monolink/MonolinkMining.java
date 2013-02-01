@@ -87,7 +87,7 @@ public class MonolinkMining {
 		return extractLinksFromTopics(inputfile, "", 1);
 	}
 	
-	protected ArrayList<String> extractLinksFromTopics(String inputfile, String parameter, int pos) {
+	public static ArrayList<String> extractLinksFromTopics(String inputfile, String parameter, int pos) {
 		ArrayList<String> links = new ArrayList<String>();
         String osName = System.getProperty("os.name");
 		//      String Command = Command2;

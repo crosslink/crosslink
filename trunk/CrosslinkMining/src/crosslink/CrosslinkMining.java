@@ -158,8 +158,8 @@ public class CrosslinkMining extends MonolinkMining {
 		otherCorpusCrosslinkTable.read();
 	}
 	
-	private String findCounterPartTopic(CrosslinkTopic topic) throws Exception {
-		counterTopicId = extractCrosslinkFromTopics(topic.getXmlFile());
+	public String findCounterPartTopic(CrosslinkTopic topic) throws Exception {
+		counterTopicId = extractCrosslinkFromTopics(topic.getXmlFile(), targetLang);
 		if (counterTopicId == null) {
 			String id = topic.getId();
 			if (enCorpusCrosslinkTable.hasSourceId(id)) {
@@ -335,8 +335,8 @@ public class CrosslinkMining extends MonolinkMining {
 		mining.findWikiGroundTruth(format);
 	}
 
-	protected String extractCrosslinkFromTopics(String inputfile) {
-		ArrayList<String> links = extractLinksFromTopics(inputfile, "-valid-target-only -crosslink:" + targetLang, 0);
+	public static String extractCrosslinkFromTopics(String inputfile, String lang) {
+		ArrayList<String> links = extractLinksFromTopics(inputfile, "-valid-target-only -crosslink:" + lang, 0);
 		if (links.size() > 0) {
 			if (links.size() > 1)
 				System.err.println("Alter: more than 1 language links were found.");
