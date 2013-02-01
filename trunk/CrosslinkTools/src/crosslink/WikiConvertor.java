@@ -81,7 +81,11 @@ public class WikiConvertor {
       	Stack<File> stack = null;
       	
 //      	for (String input : args) {
-          	stack = new WildcardFiles().listFilesInStack(input, true);
+          	try {
+				stack = new WildcardFiles().listFilesInStack(input, true);
+			} catch (Exception e1) {
+				e1.printStackTrace();
+			}
           	while (!stack.isEmpty())
             {
 //          		good = true;

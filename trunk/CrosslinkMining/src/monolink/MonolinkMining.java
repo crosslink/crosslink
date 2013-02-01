@@ -145,7 +145,11 @@ public class MonolinkMining {
         int filecount = 0;
       	Stack<File> stack = null;
       	
-      	stack = new WildcardFiles().listFilesInStack(topicPath);
+      	try {
+			stack = new WildcardFiles().listFilesInStack(topicPath);
+		} catch (Exception e1) {
+			e1.printStackTrace();
+		}
       	while (!stack.isEmpty())
         {
 //          		good = true;

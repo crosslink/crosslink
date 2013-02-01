@@ -6,6 +6,7 @@ import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.Map;
+import java.util.Stack;
 import java.util.Vector;
 
 import javax.xml.bind.JAXBContext;
@@ -106,7 +107,13 @@ public class ResultSetManager {
 
 	public boolean checkIfManualResultSetAvailable() {
 		String manulResultSetWildcard = resultsetPath + "*" + RESULTSET_MANUAL_NAME + "*.xml";
-		return new WildcardFiles().listFilesInStack(manulResultSetWildcard).size() > 0;
+		Stack stack = null;
+		try {
+			stack = new WildcardFiles().listFilesInStack(manulResultSetWildcard);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return stack.size() > 0;
 	}
 	
 	public String getResultSetPathFile(String sourceLang, String targetLang) {
