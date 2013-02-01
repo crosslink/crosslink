@@ -1034,8 +1034,12 @@ public class EvaluationUI3 extends JFrame {
             if (afile.length() > 0) {
             	File aFile = new File(afile);
             	if (aFile.isDirectory())
-            		fileList.addAll(new WildcardFiles().listFilesInStack(afile));
-            	else
+					try {
+						fileList.addAll(new WildcardFiles().listFilesInStack(afile));
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
+				else
             		fileList.add(aFile);  	
             }
         }
