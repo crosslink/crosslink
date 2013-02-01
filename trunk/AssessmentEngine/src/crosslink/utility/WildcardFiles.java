@@ -24,8 +24,8 @@ import crosslink.utility.WildcardFiles;
 public class WildcardFiles implements FilenameFilter, FileFilter
 {
 	   protected Pattern pattern = null;
-	   protected static String wildcard = "";
-	   protected static String inputFileDir = ".";
+	   protected String wildcard = "";
+	   protected String inputFileDir = ".";
 	   protected static WildcardFiles wildcardfiles = null; //new WildcardFiles(wildcard);
 	   
 	   public WildcardFiles(){
@@ -46,28 +46,34 @@ public class WildcardFiles implements FilenameFilter, FileFilter
 		   pattern = Pattern.compile(reform);
 	   }
 	   
-	   public static String getDirectory()
+	   public String getDirectory()
 	   {
 		   return inputFileDir;
 	   }
 	   
-	   protected static void breakFile(String inputfile)
+	   protected void breakFile(String inputfile) throws Exception
 	   {
+		   String dir;
 			if (new File(inputfile).isDirectory()) {
-				inputFileDir = inputfile;
 				wildcard = "*";		
+				dir = inputfile;
 			}
 			else {
 				wildcard = inputfile;
 				int lastIndex = 0;
 				if ((lastIndex = inputfile.lastIndexOf(File.separator)) > -1) {
-					inputFileDir = inputfile.substring(0, lastIndex);
+					dir = inputfile.substring(0, lastIndex);
 					wildcard = inputfile.substring(lastIndex + 1);
 					wildcard.trim();
 					if (wildcard.length() == 0)
 						wildcard = "*";
 				}
+				else {
+					dir = ".";
+					wildcard = inputfile;
+				}
 			}
+			setDirectory(dir);
 	   }
 	   
 //	   private static void listFiles(String inputfile, Stack stack) 
@@ -76,7 +82,26 @@ public class WildcardFiles implements FilenameFilter, FileFilter
 //			stack.addAll(Arrays.asList(arrFile));
 //	   }
 	   
-	   public Stack listFilesInStack(String inputfile, boolean includeSubFolder) 
+	protected void setDirectory(String dir) throws Exception {
+		inputFileDir = dir;
+		if (!new File(inputFileDir).exists()){
+			throw new Exception("No such file: " + inputFileDir);
+		}
+	}
+
+	public static WildcardFiles getWildcardfiles() {
+		return wildcardfiles;
+	}
+
+	public static void setWildcardfiles(WildcardFiles wildcardfiles) {
+		WildcardFiles.wildcardfiles = wildcardfiles;
+	}
+	
+	public Stack list() throws Exception {
+		return listFilesInStack(inputFileDir, false);
+	}
+
+	public Stack listFilesInStack(String inputfile, boolean includeSubFolder) throws Exception 
 	   {
 		   wildcardfiles = new WildcardFiles();
 		   Stack<File> stack = new Stack();
@@ -111,7 +136,7 @@ public class WildcardFiles implements FilenameFilter, FileFilter
 		   return stack;
 	   }
 	   
-	   public Stack listFilesInStack(String inputfile) 
+	   public Stack listFilesInStack(String inputfile) throws Exception 
 	   {
 //		   breakFile(inputfile);
 		   return listFilesInStack(inputfile, false);
@@ -120,15 +145,15 @@ public class WildcardFiles implements FilenameFilter, FileFilter
 	   /**
 	 * @return the wildcard
 	 */
-	public static String getWildcard() {
+	public String getWildcard() {
 		return wildcard;
 	}
 
 	/**
 	 * @param wildcard the wildcard to set
 	 */
-	public static void setWildcard(String wildcard) {
-		WildcardFiles.wildcard = wildcard;
+	public void setWildcard(String wildcard) {
+		this.wildcard = wildcard;
 	}
 
 	/**
@@ -144,7 +169,7 @@ public class WildcardFiles implements FilenameFilter, FileFilter
 		return arrFile;
 	}
 	
-	public static String[] list(String inputfile) 
+	public String[] list(String inputfile) throws Exception 
 	{
 		breakFile(inputfile);
 		String[] arrFile = new File(inputFileDir).list(new WildcardFiles(wildcard));

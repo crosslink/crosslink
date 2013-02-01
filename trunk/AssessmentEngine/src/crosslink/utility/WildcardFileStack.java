@@ -11,7 +11,7 @@ public class WildcardFileStack extends WildcardFiles {
 	
 	private boolean includeAllSubfolders = false;
 	
-	public WildcardFileStack(String inputfile) throws IOException {
+	public WildcardFileStack(String inputfile) throws Exception {
 		File file = new File(inputfile);
 		
 		if (file.exists()) {
@@ -24,8 +24,8 @@ public class WildcardFileStack extends WildcardFiles {
 		}
 	}
 	
-	public WildcardFileStack(String inputfile, String pattern) throws IOException {
-		breakFile(inputfile);
+	public WildcardFileStack(String inputfile, String pattern) throws Exception {
+		this.setDirectory(inputfile);
 		createPattern(pattern);
 		listInputFolder();
 	}
