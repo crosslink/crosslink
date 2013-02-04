@@ -7,27 +7,27 @@ import java.util.Stack;
 import crosslink.utility.WildcardFiles;
 
 public class WildcardFileStack extends WildcardFiles {
-	private Stack<File> stack = new Stack<File>();
+	private Stack<File> stack;// = new Stack<File>();
 	
 	private boolean includeAllSubfolders = false;
 	
 	public WildcardFileStack(String inputfile) throws Exception {
 		File file = new File(inputfile);
 		
-		if (file.exists()) {
+		if (file.exists() && file.isFile()) {
 			stack.add(file);
 		}
 		else {
 			breakFile(inputfile);
 			createPattern(wildcard);
-			listInputFolder();
+//			listInputFolder();
 		}
 	}
 	
 	public WildcardFileStack(String inputfile, String pattern) throws Exception {
 		this.setDirectory(inputfile);
 		createPattern(pattern);
-		listInputFolder();
+//		listInputFolder();
 	}
 	
 	public boolean isIncludeAllSubfolders() {
@@ -38,7 +38,7 @@ public class WildcardFileStack extends WildcardFiles {
 		this.includeAllSubfolders = includeAllSubfolders;
 	}
 
-	private void listInputFolder() throws IOException {
+	private void listFile() throws IOException {
 		File folder = new File(inputFileDir);
 		if (folder.exists())
 			listFiles(folder);
@@ -49,6 +49,7 @@ public class WildcardFileStack extends WildcardFiles {
 	}
 	
 	private void listFiles(File parentDirHandler) throws IOException {
+		stack = new Stack<File>();
 		if (parentDirHandler.exists()) {
 		   File[] allFiles = parentDirHandler.listFiles();
 		    for (File f : allFiles) {
