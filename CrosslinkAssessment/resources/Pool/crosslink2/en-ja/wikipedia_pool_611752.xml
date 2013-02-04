@@ -4,8 +4,8 @@
 	<collection>Korean Wikipedia 2010 Collection</collection>
 	<topic file="611752" name="Ravioli">
 		<outgoinglinks>
-			<anchor arel="0" aname="cuisine" aoffset="517" alength="7" ext_length="0">
-				<subanchor sarel="0" saname="cuisine" saoffset="517" salength="7" rank="29">
+			<anchor arel="-1" aname="cuisine" aoffset="517" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="cuisine" saoffset="517" salength="7" rank="29">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ユダヤ教関連用語一覧">117320</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="日本料理">5388</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="中華料理">9852</tobep>
@@ -13,18 +13,18 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ドイツ料理">27612</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="German" aoffset="699" alength="6" ext_length="10">
-				<subanchor sarel="0" saname="German" saoffset="699" salength="6" rank="64">
+			<anchor arel="-1" aname="German" aoffset="699" alength="6" ext_length="10">
+				<subanchor sarel="-1" saname="German" saoffset="699" salength="6" rank="64">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ドイツ人">222765</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ドイツ語">3870</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ハイデ・ウォラート">2037075</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="クラウディア・マルツァン">2037163</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ドイツ">1698878</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="German TV" saoffset="699" salength="9" rank="79">
+				<subanchor sarel="-1" saname="German TV" saoffset="699" salength="9" rank="79">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ドイツ公共放送連盟">310177</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="TV" saoffset="706" salength="2" rank="76">
+				<subanchor sarel="-1" saname="TV" saoffset="706" salength="2" rank="76">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="テレビ番組">297</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title=".tv">960301</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="テレビジョン放送局">1634</tobep>
@@ -33,14 +33,14 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="司会">160601</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="テレビ映画">224616</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="TV series" saoffset="706" salength="9" rank="44">
+				<subanchor sarel="-1" saname="TV series" saoffset="706" salength="9" rank="44">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ゲームデザイナーズ・ワークショップ">2308157</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="プライムタイム・エミー賞">1375464</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="テレビ番組">297</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="仮面ライダー COMPLETE SONG COLLECTION SERIES">2313503</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="FOMAハイスピード">821277</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="series" saoffset="709" salength="6" rank="58">
+				<subanchor sarel="-1" saname="series" saoffset="709" salength="6" rank="58">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="級数">66339</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="世">1612528</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="直列回路と並列回路">1022949</tobep>
@@ -48,8 +48,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="テレビ番組">297</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="see" aoffset="716" alength="3" ext_length="0">
-				<subanchor sarel="0" saname="see" saoffset="716" salength="3" rank="52">
+			<anchor arel="-1" aname="see" aoffset="716" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="see" saoffset="716" salength="3" rank="52">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="シー">1300327</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="聖座">34313</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="視覚">76433</tobep>
@@ -57,19 +57,19 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="コンピュータビジョン">1358</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="filled pasta" aoffset="858" alength="12" ext_length="0">
-				<subanchor sarel="0" saname="filled pasta" saoffset="858" salength="12" rank="21">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="パスタ">5542</tobep>
+			<anchor arel="1" aname="filled pasta" aoffset="858" alength="12" ext_length="0">
+				<subanchor sarel="-1" saname="filled pasta" saoffset="858" salength="12" rank="21">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="パスタ">5542</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="pasta" saoffset="865" salength="5" rank="1">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="パスタ">5542</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="日欧商事">1847381</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="素麺">48275</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Sausage Butterfly Pasta Festa">925708</tobep>
+				<subanchor sarel="1" saname="pasta" saoffset="865" salength="5" rank="1">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="パスタ">5542</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="日欧商事">1847381</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="素麺">48275</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Sausage Butterfly Pasta Festa">925708</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="are" aoffset="935" alength="3" ext_length="0">
-				<subanchor sarel="0" saname="are" saoffset="935" salength="3" rank="87">
+			<anchor arel="-1" aname="are" aoffset="935" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="are" saoffset="935" salength="3" rank="87">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ChIA-PET">2038829</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="JFN共通ジングル">195461</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヘクタール">11291</tobep>
@@ -77,8 +77,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ARE">268639</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="a" aoffset="939" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="a" saoffset="939" salength="1" rank="67">
+			<anchor arel="-1" aname="a" aoffset="939" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="a" saoffset="939" salength="1" rank="67">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アウェーゴール">188604</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="軌道長半径">379233</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="A">13618</tobep>
@@ -86,8 +86,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ユリウス年">639813</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="type" aoffset="953" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="type" saoffset="953" salength="4" rank="44">
+			<anchor arel="-1" aname="type" aoffset="953" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="type" saoffset="953" salength="4" rank="44">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="予型論的解釈">1895646</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="書体">41158</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="データ型">147913</tobep>
@@ -95,17 +95,17 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="組版">24534</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Italian" aoffset="961" alength="7" ext_length="0">
-				<subanchor sarel="0" saname="Italian" saoffset="961" salength="7" rank="10">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="イタリア人">68990</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="イタリア語">91</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="イタリアン">24802</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ドイツアフリカ軍団">558259</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="イタリア">3374</tobep>
+			<anchor arel="1" aname="Italian" aoffset="961" alength="7" ext_length="0">
+				<subanchor sarel="1" saname="Italian" saoffset="961" salength="7" rank="10">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="イタリア人">68990</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="イタリア語">91</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="イタリアン">24802</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ドイツアフリカ軍団">558259</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="イタリア">3374</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="They are" aoffset="983" alength="8" ext_length="0">
-				<subanchor sarel="0" saname="They are" saoffset="983" salength="8" rank="92">
+			<anchor arel="-1" aname="They are" aoffset="983" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="They are" saoffset="983" salength="8" rank="92">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ニュルンベルク法">84566</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Think Different">2477311</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="無政府共産主義">44820</tobep>
@@ -113,17 +113,17 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="OS2200">2367933</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="filling" aoffset="1006" alength="7" ext_length="0">
-				<subanchor sarel="0" saname="filling" saoffset="1006" salength="7" rank="59">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ファルス (料理)">105872</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="21cm Mrs 10">1527901</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="40mmグレネード">2280938</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ガソリンスタンド">22480</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="72-K 25mm対空砲">2442433</tobep>
+			<anchor arel="1" aname="filling" aoffset="1006" alength="7" ext_length="0">
+				<subanchor sarel="1" saname="filling" saoffset="1006" salength="7" rank="59">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ファルス (料理)">105872</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="21cm Mrs 10">1527901</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="40mmグレネード">2280938</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ガソリンスタンド">22480</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="72-K 25mm対空砲">2442433</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="two" aoffset="1029" alength="3" ext_length="0">
-				<subanchor sarel="0" saname="two" saoffset="1029" salength="3" rank="83">
+			<anchor arel="-1" aname="two" aoffset="1029" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="two" saoffset="1029" salength="3" rank="83">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="二大政党制">217837</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="2">11226</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="10年紀">7675</tobep>
@@ -131,26 +131,26 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="2次元">242047</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="egg" aoffset="1048" alength="3" ext_length="0">
-				<subanchor sarel="0" saname="egg" saoffset="1048" salength="3" rank="31">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="卵">22962</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="鶏卵">1150881</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="エッグ">1031399</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="卵細胞">99310</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="オーバル">1011941</tobep>
+			<anchor arel="1" aname="egg" aoffset="1048" alength="3" ext_length="0">
+				<subanchor sarel="1" saname="egg" saoffset="1048" salength="3" rank="31">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="卵">22962</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="鶏卵">1150881</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="エッグ">1031399</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="卵細胞">99310</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="オーバル">1011941</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="dough" aoffset="1058" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="dough" saoffset="1058" salength="5" rank="70">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="貨幣">21302</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ハッラー">166725</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="パン生地">2128811</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="マサ">318091</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Plus-Tech Squeeze Box">1493365</tobep>
+			<anchor arel="-1" aname="dough" aoffset="1058" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="dough" saoffset="1058" salength="5" rank="70">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="貨幣">21302</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ハッラー">166725</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="パン生地">2128811</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="マサ">318091</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Plus-Tech Squeeze Box">1493365</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="in" aoffset="1086" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="in" saoffset="1086" salength="2" rank="78">
+			<anchor arel="-1" aname="in" aoffset="1086" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="in" saoffset="1086" salength="2" rank="78">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ソルトレイクシティオリンピック">16684</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="インチ">12142</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title=".in">1536201</tobep>
@@ -158,18 +158,18 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="単射">7864</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="broth" aoffset="1089" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="broth" saoffset="1089" salength="5" rank="19">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="出汁">23931</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ホウオウゴケ属">2285887</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="フサゴケ">2457304</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ブイヨン">179434</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="LB培地">566963</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="吸い物">210260</tobep>
+			<anchor arel="-1" aname="broth" aoffset="1089" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="broth" saoffset="1089" salength="5" rank="19">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="出汁">23931</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ホウオウゴケ属">2285887</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="フサゴケ">2457304</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ブイヨン">179434</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="LB培地">566963</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="吸い物">210260</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="or" aoffset="1095" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="or" saoffset="1095" salength="2" rank="74">
+			<anchor arel="-1" aname="or" aoffset="1095" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="or" saoffset="1095" salength="2" rank="74">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ティンクチャー (紋章学)">1512500</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="OR">16422</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="論理和">9737</tobep>
@@ -177,42 +177,42 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="金色">177245</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="pasta sauce" aoffset="1105" alength="11" ext_length="0">
-				<subanchor sarel="0" saname="pasta sauce" saoffset="1105" salength="11" rank="28">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="パスタ">5542</tobep>
+			<anchor arel="1" aname="pasta sauce" aoffset="1105" alength="11" ext_length="0">
+				<subanchor sarel="1" saname="pasta sauce" saoffset="1105" salength="11" rank="28">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="パスタ">5542</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="sauce" saoffset="1111" salength="5" rank="39">
+				<subanchor sarel="-1" saname="sauce" saoffset="1111" salength="5" rank="39">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ガルム_(調味料)">2249102</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="トマトソース">18071</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="The word" aoffset="1118" alength="8" ext_length="0">
-				<subanchor sarel="0" saname="The word" saoffset="1118" salength="8" rank="80">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="MORE FUN-KEY-WORD">2027625</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="軍団">255121</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="福音書">8585</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="スーザン・ケイグル">1438168</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="S-WORD">668989</tobep>
+			<anchor arel="-1" aname="The word" aoffset="1118" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="The word" saoffset="1118" salength="8" rank="80">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="MORE FUN-KEY-WORD">2027625</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="軍団">255121</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="福音書">8585</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="スーザン・ケイグル">1438168</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="S-WORD">668989</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="word" saoffset="1122" salength="4" rank="50">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="整数型">216426</tobep>
+				<subanchor sarel="-1" saname="word" saoffset="1122" salength="4" rank="50">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="整数型">216426</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="語">113283</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ワード">8006</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="文字列">225994</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="エルフ語">11080</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="verb" aoffset="1174" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="verb" saoffset="1174" salength="4" rank="69">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="動詞">35775</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="SAY YOUR DREAM">1717663</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Rare collectives vol.4">2294033</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="VERB">1443362</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="活用">79543</tobep>
+			<anchor arel="-1" aname="verb" aoffset="1174" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="verb" saoffset="1174" salength="4" rank="69">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="動詞">35775</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="SAY YOUR DREAM">1717663</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Rare collectives vol.4">2294033</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="VERB">1443362</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="活用">79543</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="words" aoffset="1228" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="words" saoffset="1228" salength="5" rank="60">
+			<anchor arel="-1" aname="words" aoffset="1228" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="words" saoffset="1228" salength="5" rank="60">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="語">113283</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="言語">10</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ワード">8006</tobep>
@@ -220,13 +220,13 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="歌詞">41672</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="etymologically" aoffset="1242" alength="14" ext_length="0">
-				<subanchor sarel="0" saname="etymologically" saoffset="1242" salength="14" rank="34">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="語源">37853</tobep>
+			<anchor arel="-1" aname="etymologically" aoffset="1242" alength="14" ext_length="0">
+				<subanchor sarel="-1" saname="etymologically" saoffset="1242" salength="14" rank="34">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="語源">37853</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="be" aoffset="1286" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="be" saoffset="1286" salength="2" rank="90">
+			<anchor arel="-1" aname="be" aoffset="1286" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="be" saoffset="1286" salength="2" rank="90">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="BE">87224</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ベラルーシ語">194766</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="存在動詞">183706</tobep>
@@ -234,28 +234,28 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title=".be">1040344</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="diminutive" aoffset="1291" alength="10" ext_length="0">
-				<subanchor sarel="0" saname="diminutive" saoffset="1291" salength="10" rank="22">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="DIM">1052757</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="愛称">11463</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="人名の短縮形">803757</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="縮小辞">393350</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="小人症">542423</tobep>
+			<anchor arel="-1" aname="diminutive" aoffset="1291" alength="10" ext_length="0">
+				<subanchor sarel="-1" saname="diminutive" saoffset="1291" salength="10" rank="22">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="DIM">1052757</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="愛称">11463</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="人名の短縮形">803757</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="縮小辞">393350</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="小人症">542423</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="dialectal" aoffset="1313" alength="9" ext_length="0">
-				<subanchor sarel="0" saname="dialectal" saoffset="1313" salength="9" rank="75">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="方言">8883</tobep>
+			<anchor arel="-1" aname="dialectal" aoffset="1313" alength="9" ext_length="0">
+				<subanchor sarel="-1" saname="dialectal" saoffset="1313" salength="9" rank="75">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="方言">8883</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="turnip" aoffset="1341" alength="6" ext_length="0">
-				<subanchor sarel="0" saname="turnip" saoffset="1341" salength="6" rank="7">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ルタバガ">308630</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="カブ">20612</tobep>
+			<anchor arel="-1" aname="turnip" aoffset="1341" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="turnip" saoffset="1341" salength="6" rank="7">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ルタバガ">308630</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="カブ">20612</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="History" aoffset="1360" alength="7" ext_length="0">
-				<subanchor sarel="0" saname="History" saoffset="1360" salength="7" rank="35">
+			<anchor arel="-1" aname="History" aoffset="1360" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="History" saoffset="1360" salength="7" rank="35">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="科学史">173451</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アメリカ合衆国の歴史">85202</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="日本の歴史">3964</tobep>
@@ -263,45 +263,45 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="歴史">1899</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="writings" aoffset="1424" alength="8" ext_length="0">
-				<subanchor sarel="0" saname="writings" saoffset="1424" salength="8" rank="70">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="本">2570</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="散文">13251</tobep>
+			<anchor arel="-1" aname="writings" aoffset="1424" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="writings" saoffset="1424" salength="8" rank="70">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="本">2570</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="散文">13251</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="楔形文字">10283</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="諸書">1392773</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヨハネの黙示録">253670</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Francesco" aoffset="1436" alength="9" ext_length="0">
-				<subanchor sarel="0" saname="Francesco" saoffset="1436" salength="9" rank="61">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="フランチェスコ">369134</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="フランチェスコ_(映画)">1621155</tobep>
+			<anchor arel="-1" aname="Francesco" aoffset="1436" alength="9" ext_length="0">
+				<subanchor sarel="-1" saname="Francesco" saoffset="1436" salength="9" rank="61">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="フランチェスコ">369134</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="フランチェスコ_(映画)">1621155</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Marco" aoffset="1449" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="Marco" saoffset="1449" salength="5" rank="51">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="マルコ・アンドレッティ">1520677</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="母をたずねて三千里">120144</tobep>
+			<anchor arel="-1" aname="Marco" aoffset="1449" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="Marco" saoffset="1449" salength="5" rank="51">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="マルコ・アンドレッティ">1520677</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="母をたずねて三千里">120144</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="merchant" aoffset="1458" alength="8" ext_length="0">
-				<subanchor sarel="0" saname="merchant" saoffset="1458" salength="8" rank="47">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="商人">1457011</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="海運">356667</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="MACシップ">356673</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="貨物船">44423</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="小売">3168</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="シルクロード">17124</tobep>
+			<anchor arel="-1" aname="merchant" aoffset="1458" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="merchant" saoffset="1458" salength="8" rank="47">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="商人">1457011</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="海運">356667</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="MACシップ">356673</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="貨物船">44423</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="小売">3168</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="シルクロード">17124</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Venice" aoffset="1470" alength="6" ext_length="0">
-				<subanchor sarel="0" saname="Venice" saoffset="1470" salength="6" rank="6">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヴェネツィア">30053</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヴェネツィア共和国">66511</tobep>
+			<anchor arel="-1" aname="Venice" aoffset="1470" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="Venice" saoffset="1470" salength="6" rank="6">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヴェネツィア">30053</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヴェネツィア共和国">66511</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="the 14th" aoffset="1480" alength="8" ext_length="0">
-				<subanchor sarel="0" saname="the 14th" saoffset="1480" salength="8" rank="76">
+			<anchor arel="-1" aname="the 14th" aoffset="1480" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="the 14th" saoffset="1480" salength="8" rank="76">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="2010年コピアポ鉱山落盤事故への反応">2223520</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="8月14日">5609</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="イギリス統治下のビルマ">2121382</tobep>
@@ -309,26 +309,26 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="G-8">1093545</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="century" aoffset="1607" alength="7" ext_length="0">
-				<subanchor sarel="0" saname="century" saoffset="1607" salength="7" rank="55">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="センチュリー">115208</tobep>
+			<anchor arel="-1" aname="century" aoffset="1607" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="century" saoffset="1607" salength="7" rank="55">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="センチュリー">115208</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="21世紀">1983</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="19世紀">1615</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ケントゥリア">496471</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="キューティーハニー (21st century ver.)">2205333</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="manuscript" aoffset="1615" alength="10" ext_length="0">
-				<subanchor sarel="0" saname="manuscript" saoffset="1615" salength="10" rank="68">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="脚本">15968</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="電子書籍">103896</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="写本">159670</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="貝葉">868369</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="装飾写本">174738</tobep>
+			<anchor arel="-1" aname="manuscript" aoffset="1615" alength="10" ext_length="0">
+				<subanchor sarel="-1" saname="manuscript" saoffset="1615" salength="10" rank="68">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="脚本">15968</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="電子書籍">103896</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="写本">159670</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="貝葉">868369</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="装飾写本">174738</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="green" aoffset="1669" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="green" saoffset="1669" salength="5" rank="34">
+			<anchor arel="-1" aname="green" aoffset="1669" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="green" saoffset="1669" salength="5" rank="34">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="みどりの政治">1665415</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="緑の建築">815667</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="環境主義">1324459</tobep>
@@ -336,53 +336,53 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="緑茶">18602</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="minced" aoffset="1694" alength="6" ext_length="0">
-				<subanchor sarel="0" saname="minced" saoffset="1694" salength="6" rank="73">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="挽肉">81076</tobep>
+			<anchor arel="1" aname="minced" aoffset="1694" alength="6" ext_length="0">
+				<subanchor sarel="1" saname="minced" saoffset="1694" salength="6" rank="73">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="挽肉">81076</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="beaten egg" aoffset="1713" alength="10" ext_length="0">
-				<subanchor sarel="0" saname="beaten egg" saoffset="1713" salength="10" rank="28">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="鶏卵">1150881</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="デイヴ・コーズ">446348</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Men&apos;s egg">599942</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="プレミアム・ピクチャー・プロダクションズ">2187404</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="スレイヴ・レイバー・グラフィックス">1890951</tobep>
+			<anchor arel="-1" aname="beaten egg" aoffset="1713" alength="10" ext_length="0">
+				<subanchor sarel="-1" saname="beaten egg" saoffset="1713" salength="10" rank="28">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="鶏卵">1150881</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="デイヴ・コーズ">446348</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Men&apos;s egg">599942</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="プレミアム・ピクチャー・プロダクションズ">2187404</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="スレイヴ・レイバー・グラフィックス">1890951</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="cheese" aoffset="1734" alength="6" ext_length="0">
-				<subanchor sarel="0" saname="cheese" saoffset="1734" salength="6" rank="66">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ゴルゴンゾーラ">62925</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="シェーブルチーズ">2220364</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="チーズ">7141</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="スイスのチーズ">2250522</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="グリュイエールチーズ">599384</tobep>
+			<anchor arel="1" aname="cheese" aoffset="1734" alength="6" ext_length="0">
+				<subanchor sarel="1" saname="cheese" saoffset="1734" salength="6" rank="66">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ゴルゴンゾーラ">62925</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="シェーブルチーズ">2220364</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="チーズ">7141</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="スイスのチーズ">2250522</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="グリュイエールチーズ">599384</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="simmered" aoffset="1742" alength="8" ext_length="0">
-				<subanchor sarel="0" saname="simmered" saoffset="1742" salength="8" rank="42">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="煮る">31796</tobep>
+			<anchor arel="-1" aname="simmered" aoffset="1742" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="simmered" saoffset="1742" salength="8" rank="42">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="煮る">31796</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="recipe" aoffset="1763" alength="6" ext_length="0">
-				<subanchor sarel="0" saname="recipe" saoffset="1763" salength="6" rank="46">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Recipe SHIMOKITA">1483446</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Microsoft Developer Network">810887</tobep>
+			<anchor arel="-1" aname="recipe" aoffset="1763" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="recipe" saoffset="1763" salength="6" rank="46">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Recipe SHIMOKITA">1483446</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Microsoft Developer Network">810887</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="レシピ">32710</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Elan Vital">938122</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="familiar" aoffset="1784" alength="8" ext_length="0">
-				<subanchor sarel="0" saname="familiar" saoffset="1784" salength="8" rank="46">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="親称">497406</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ファミリア (アパレルメーカー)">886174</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Halestorm">2184997</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Familiar Linux">1791694</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="使い魔">26948</tobep>
+			<anchor arel="-1" aname="familiar" aoffset="1784" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="familiar" saoffset="1784" salength="8" rank="46">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="親称">497406</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ファミリア (アパレルメーカー)">886174</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Halestorm">2184997</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Familiar Linux">1791694</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="使い魔">26948</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="today" aoffset="1793" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="today" saoffset="1793" salength="5" rank="86">
+			<anchor arel="-1" aname="today" aoffset="1793" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="today" saoffset="1793" salength="5" rank="86">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="近代建築">236053</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="2011年">7829</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="完新世">20412</tobep>
@@ -390,8 +390,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="2010年代">2610</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="save" aoffset="1799" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="save" saoffset="1799" salength="4" rank="41">
+			<anchor arel="-1" aname="save" aoffset="1799" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="save" saoffset="1799" salength="4" rank="41">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アライド・フォース作戦">2034465</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="コンピュータのファイル管理">1408390</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="節約">1185813</tobep>
@@ -399,30 +399,30 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="セーブ">78902</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="medieval" aoffset="1812" alength="8" ext_length="0">
-				<subanchor sarel="0" saname="medieval" saoffset="1812" salength="8" rank="30">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="中世西洋音楽">15710</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="中世">27550</tobep>
+			<anchor arel="-1" aname="medieval" aoffset="1812" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="medieval" saoffset="1812" salength="8" rank="30">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="中世西洋音楽">15710</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="中世">27550</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Tuscany" aoffset="1949" alength="7" ext_length="0">
-				<subanchor sarel="0" saname="Tuscany" saoffset="1949" salength="7" rank="1">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="トスカーナ州">63308</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="トスカーナ大公国">116931</tobep>
+			<anchor arel="-1" aname="Tuscany" aoffset="1949" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="Tuscany" saoffset="1949" salength="7" rank="1">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="トスカーナ州">63308</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="トスカーナ大公国">116931</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="dish" aoffset="1995" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="dish" saoffset="1995" salength="4" rank="80">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ディッシュ">1020024</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="レシピ">32710</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヒル_(動物)">494993</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="食品">24201</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="調理">3028</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="パラボラアンテナ">34513</tobep>
+			<anchor arel="-1" aname="dish" aoffset="1995" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="dish" saoffset="1995" salength="4" rank="80">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ディッシュ">1020024</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="レシピ">32710</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヒル_(動物)">494993</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="食品">24201</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="調理">3028</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="パラボラアンテナ">34513</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="come" aoffset="2000" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="come" saoffset="2000" salength="4" rank="93">
+			<anchor arel="-1" aname="come" aoffset="2000" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="come" saoffset="2000" salength="4" rank="93">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ビル・ベイリーよ、家へ帰っておくれ">1848214</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="射精">1534890</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="FUNK THE PEANUTS">246124</tobep>
@@ -430,8 +430,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="DREAMS COME TRUE">65409</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="personal" aoffset="2014" alength="8" ext_length="0">
-				<subanchor sarel="0" saname="personal" saoffset="2014" salength="8" rank="71">
+			<anchor arel="-1" aname="personal" aoffset="2014" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="personal" saoffset="2014" salength="8" rank="71">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="同君連合">203796</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="人称">80654</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="パーソナルコンピュータ">1297</tobep>
@@ -439,8 +439,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="自己同一性">109048</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="letters" aoffset="2023" alength="7" ext_length="0">
-				<subanchor sarel="0" saname="letters" saoffset="2023" salength="7" rank="54">
+			<anchor arel="-1" aname="letters" aoffset="2023" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="letters" saoffset="2023" salength="7" rank="54">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="郵便">1849029</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="文学">139</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="手紙">184493</tobep>
@@ -448,62 +448,62 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="レター">1273087</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Francesco di Marco Datini" aoffset="2034" alength="25" ext_length="0">
-				<subanchor sarel="0" saname="Francesco di Marco Datini" saoffset="2034" salength="25" rank="0">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="フランチェスコ・ディ・マルコ・ダティーニ">1811088</tobep>
+			<anchor arel="1" aname="Francesco di Marco Datini" aoffset="2034" alength="25" ext_length="0">
+				<subanchor sarel="1" saname="Francesco di Marco Datini" saoffset="2034" salength="25" rank="0">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="フランチェスコ・ディ・マルコ・ダティーニ">1811088</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Prato" aoffset="2075" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="Prato" saoffset="2075" salength="5" rank="4">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="プラート県">100076</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="プラート">100081</tobep>
+			<anchor arel="1" aname="Prato" aoffset="2075" alength="5" ext_length="0">
+				<subanchor sarel="1" saname="Prato" saoffset="2075" salength="5" rank="4">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="プラート県">100076</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="プラート">100081</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Rome" aoffset="2105" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="Rome" saoffset="2105" salength="4" rank="63">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="古代ローマ">13208</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="BNLイタリア国際">579835</tobep>
+			<anchor arel="-1" aname="Rome" aoffset="2105" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="Rome" saoffset="2105" salength="4" rank="63">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="古代ローマ">13208</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="BNLイタリア国際">579835</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Bartolomeo" aoffset="2148" alength="10" ext_length="0">
-				<subanchor sarel="0" saname="Bartolomeo" saoffset="2148" salength="10" rank="77">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="バルトロメーオ・コッレオーニ">1092323</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="バルトロマイ">123531</tobep>
+			<anchor arel="-1" aname="Bartolomeo" aoffset="2148" alength="10" ext_length="0">
+				<subanchor sarel="-1" saname="Bartolomeo" saoffset="2148" salength="10" rank="77">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="バルトロメーオ・コッレオーニ">1092323</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="バルトロマイ">123531</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="boiled" aoffset="2183" alength="6" ext_length="8">
-				<subanchor sarel="0" saname="boiled" saoffset="2183" salength="6" rank="58">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="茹でる">31791</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ゆで卵">260271</tobep>
+			<anchor arel="1" aname="boiled" aoffset="2183" alength="6" ext_length="8">
+				<subanchor sarel="-1" saname="boiled" saoffset="2183" salength="6" rank="58">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="茹でる">31791</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ゆで卵">260271</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="boiled chicken" saoffset="2183" salength="14" rank="45">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="W-B-X 〜W-Boiled Extreme〜">1929484</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="HARD-BOILED CITY">835325</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ARB (バンド)">240275</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="サムゲタン">38483</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="W-B-X 〜W Boiled Extreme〜">1930636</tobep>
+				<subanchor sarel="-1" saname="boiled chicken" saoffset="2183" salength="14" rank="45">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="W-B-X 〜W-Boiled Extreme〜">1929484</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="HARD-BOILED CITY">835325</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ARB (バンド)">240275</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="サムゲタン">38483</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="W-B-X 〜W Boiled Extreme〜">1930636</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="chicken" saoffset="2190" salength="7" rank="27">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="鶏卵">1150881</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="家禽">80576</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="鶏肉">27318</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="チキンゲーム">146177</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ニワトリ">26284</tobep>
+				<subanchor sarel="1" saname="chicken" saoffset="2190" salength="7" rank="27">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="鶏卵">1150881</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="家禽">80576</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="鶏肉">27318</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="チキンゲーム">146177</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ニワトリ">26284</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="papal" aoffset="2205" alength="5" ext_length="9">
-				<subanchor sarel="0" saname="papal" saoffset="2205" salength="5" rank="48">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="聖座">34313</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="教皇">28667</tobep>
+			<anchor arel="1" aname="papal" aoffset="2205" alength="5" ext_length="9">
+				<subanchor sarel="-1" saname="papal" saoffset="2205" salength="5" rank="48">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="聖座">34313</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="教皇">28667</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="papal conclave" saoffset="2205" salength="14" rank="3">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="教皇領">71797</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ジェフリー・バラクロウ">1830208</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="コンクラーヴェ">44034</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="教皇勅書">2148056</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ローマ共和国 (19世紀)">80017</tobep>
+				<subanchor sarel="1" saname="papal conclave" saoffset="2205" salength="14" rank="3">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="教皇領">71797</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ジェフリー・バラクロウ">1830208</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="コンクラーヴェ">44034</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="教皇勅書">2148056</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ローマ共和国 (19世紀)">80017</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="conclave" saoffset="2211" salength="8" rank="26">
+				<subanchor sarel="-1" saname="conclave" saoffset="2211" salength="8" rank="26">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="デヴィッド・S・ゴイヤー">1770989</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ハンク・モブレー">632344</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="コンクラーヴェ">44034</tobep>
@@ -511,14 +511,14 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="コンクラーベ (カクテル)">44044</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="England" aoffset="2357" alength="7" ext_length="0">
-				<subanchor sarel="0" saname="England" saoffset="2357" salength="7" rank="9">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="サッカーイングランド代表">489636</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="イングランド">16627</tobep>
+			<anchor arel="1" aname="England" aoffset="2357" alength="7" ext_length="0">
+				<subanchor sarel="1" saname="England" saoffset="2357" salength="7" rank="9">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="サッカーイングランド代表">489636</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="イングランド">16627</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="appearing" aoffset="2366" alength="9" ext_length="0">
-				<subanchor sarel="0" saname="appearing" saoffset="2366" salength="9" rank="82">
+			<anchor arel="-1" aname="appearing" aoffset="2366" alength="9" ext_length="0">
+				<subanchor sarel="-1" saname="appearing" saoffset="2366" salength="9" rank="82">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="聖母の出現">232610</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アメノタヂカラオ">178009</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="グリム童話">73544</tobep>
@@ -526,15 +526,15 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ジェイク・シアーズ">2224376</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="the name" aoffset="2434" alength="8" ext_length="0">
-				<subanchor sarel="0" saname="the name" saoffset="2434" salength="8" rank="89">
+			<anchor arel="-1" aname="the name" aoffset="2434" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="the name" saoffset="2434" salength="8" rank="89">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="In the name of justice">2384288</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="国貿駅 (北京市)">1667376</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ミサイル一覧">1296989</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="SXML">1905670</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヴェストファーレン">269863</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="name" saoffset="2438" salength="4" rank="63">
+				<subanchor sarel="-1" saname="name" saoffset="2438" salength="4" rank="63">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="リングネーム">113787</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title=".name">413970</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="名前">6180</tobep>
@@ -542,47 +542,47 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="学名">2025639</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Sicilian" aoffset="2635" alength="8" ext_length="0">
-				<subanchor sarel="0" saname="Sicilian" saoffset="2635" salength="8" rank="13">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ジェームズ・マリタート">349936</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="シシリアン・キッス">2199316</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="シチリア">58383</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="シチリア語">467288</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="フランソワーズ・ボノー">1947614</tobep>
+			<anchor arel="1" aname="Sicilian" aoffset="2635" alength="8" ext_length="0">
+				<subanchor sarel="1" saname="Sicilian" saoffset="2635" salength="8" rank="13">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ジェームズ・マリタート">349936</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="シシリアン・キッス">2199316</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="シチリア">58383</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="シチリア語">467288</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="フランソワーズ・ボノー">1947614</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Malta&apos;s" aoffset="2656" alength="7" ext_length="0">
-				<subanchor sarel="0" saname="Malta&apos;s" saoffset="2656" salength="7" rank="53">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="マルタ">10129</tobep>
+			<anchor arel="1" aname="Malta&apos;s" aoffset="2656" alength="7" ext_length="0">
+				<subanchor sarel="1" saname="Malta&apos;s" saoffset="2656" salength="7" rank="53">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="マルタ">10129</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="North" aoffset="2703" alength="5" ext_length="8">
-				<subanchor sarel="0" saname="North" saoffset="2703" salength="5" rank="62">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="北極点">74277</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="北インド">2086262</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="北部州 (スリランカ)">1209839</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="北">8752</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="真北">330604</tobep>
+			<anchor arel="1" aname="North" aoffset="2703" alength="5" ext_length="8">
+				<subanchor sarel="-1" saname="North" saoffset="2703" salength="5" rank="62">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="北極点">74277</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="北インド">2086262</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="北部州 (スリランカ)">1209839</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="北">8752</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="真北">330604</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="North Italian" saoffset="2703" salength="13" rank="59">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="イタリア人">68990</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="北イタリア">94559</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="Maltese" aoffset="2723" alength="7" ext_length="0">
-				<subanchor sarel="0" saname="Maltese" saoffset="2723" salength="7" rank="15">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="マルタ">10129</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="マルチーズ">391842</tobep>
+				<subanchor sarel="1" saname="North Italian" saoffset="2703" salength="13" rank="59">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="イタリア人">68990</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="北イタリア">94559</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="stuffed" aoffset="2751" alength="7" ext_length="0">
-				<subanchor sarel="0" saname="stuffed" saoffset="2751" salength="7" rank="54">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ぬいぐるみ">121128</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="剥製">143336</tobep>
+			<anchor arel="1" aname="Maltese" aoffset="2723" alength="7" ext_length="0">
+				<subanchor sarel="1" saname="Maltese" saoffset="2723" salength="7" rank="15">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="マルタ">10129</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="マルチーズ">391842</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Making" aoffset="3134" alength="6" ext_length="0">
-				<subanchor sarel="0" saname="Making" saoffset="3134" salength="6" rank="94">
+			<anchor arel="-1" aname="stuffed" aoffset="2751" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="stuffed" saoffset="2751" salength="7" rank="54">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ぬいぐるみ">121128</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="剥製">143336</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Making" aoffset="3134" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="Making" saoffset="3134" salength="6" rank="94">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="5 ROUND">1329763</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="創造力">606050</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="製鋼">102753</tobep>
@@ -590,21 +590,21 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="地図学">381339</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="industrial" aoffset="3210" alength="10" ext_length="6">
-				<subanchor sarel="0" saname="industrial" saoffset="3210" salength="10" rank="49">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="インダストリアル">315778</tobep>
+			<anchor arel="-1" aname="industrial" aoffset="3210" alength="10" ext_length="6">
+				<subanchor sarel="-1" saname="industrial" saoffset="3210" salength="10" rank="49">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="インダストリアル">315778</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="産業">14399</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="industrial lines" saoffset="3210" salength="16" rank="71">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ロバート・コンクエスト">1020215</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="専用鉄道">222632</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="国際電気標準会議">461838</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アメリカ合衆国の鉄道運営組織一覧">1285450</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="貨物列車">80268</tobep>
+				<subanchor sarel="-1" saname="industrial lines" saoffset="3210" salength="16" rank="71">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ロバート・コンクエスト">1020215</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="専用鉄道">222632</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="国際電気標準会議">461838</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アメリカ合衆国の鉄道運営組織一覧">1285450</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="貨物列車">80268</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="as" aoffset="3262" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="as" saoffset="3262" salength="2" rank="88">
+			<anchor arel="-1" aname="as" aoffset="3262" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="as" saoffset="3262" salength="2" rank="88">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title=".as">938827</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="GNUアセンブラ">1444895</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アス (青銅貨)">2028024</tobep>
@@ -612,18 +612,18 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="変身譚">648132</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Ima" aoffset="3289" alength="3" ext_length="0">
-				<subanchor sarel="0" saname="Ima" saoffset="3289" salength="3" rank="74">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Ima">259940</tobep>
+			<anchor arel="-1" aname="Ima" aoffset="3289" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="Ima" saoffset="3289" salength="3" rank="74">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Ima">259940</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Zamboni" aoffset="3306" alength="7" ext_length="0">
-				<subanchor sarel="0" saname="Zamboni" saoffset="3306" salength="7" rank="12">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="整氷車">313684</tobep>
+			<anchor arel="-1" aname="Zamboni" aoffset="3306" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="Zamboni" saoffset="3306" salength="7" rank="12">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="整氷車">313684</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="has a" aoffset="3335" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="has a" saoffset="3335" salength="5" rank="84">
+			<anchor arel="-1" aname="has a" aoffset="3335" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="has a" saoffset="3335" salength="5" rank="84">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アグスタウェストランド リンクス">528272</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Has-a">917363</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="シコルスキー S-61">515549</tobep>
@@ -631,8 +631,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="MediaWiki:Gadget-JSL.js">1356071</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="have" aoffset="3474" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="have" saoffset="3474" salength="4" rank="96">
+			<anchor arel="-1" aname="have" aoffset="3474" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="have" saoffset="3474" salength="4" rank="96">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ソフトさ〜くるクレージュ">1006366</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="所有権">144840</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="I Have a Dream">2040533</tobep>
@@ -640,67 +640,67 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="妊娠">94719</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="USA" aoffset="3482" alength="3" ext_length="0">
-				<subanchor sarel="0" saname="USA" saoffset="3482" salength="3" rank="36">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="北米フィギュアスケート選手権">1395209</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ポストパンク・リバイバル・バンドの一覧">2399491</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アメリカ合衆国">1698838</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="全米オープン男子シングルス優勝者一覧">328721</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="全米オープン女子シングルス優勝者一覧">329061</tobep>
+			<anchor arel="1" aname="USA" aoffset="3482" alength="3" ext_length="0">
+				<subanchor sarel="1" saname="USA" saoffset="3482" salength="3" rank="36">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="北米フィギュアスケート選手権">1395209</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ポストパンク・リバイバル・バンドの一覧">2399491</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アメリカ合衆国">1698838</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="全米オープン男子シングルス優勝者一覧">328721</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="全米オープン女子シングルス優勝者一覧">329061</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="seven" aoffset="3486" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="seven" saoffset="3486" salength="5" rank="73">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ハリー・ポッターと死の秘宝">2242717</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="7人制ラグビー">326141</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="7弦ギター">2340047</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="7">7975</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="セブン・ネットワーク">341064</tobep>
+			<anchor arel="-1" aname="seven" aoffset="3486" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="seven" saoffset="3486" salength="5" rank="73">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ハリー・ポッターと死の秘宝">2242717</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="7人制ラグビー">326141</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="7弦ギター">2340047</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="7">7975</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="セブン・ネットワーク">341064</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="shelf" aoffset="3501" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="shelf" saoffset="3501" salength="5" rank="49">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="藤井麻由">1909315</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ラーセン棚氷">1409230</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="大陸棚">57942</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="氷河の一覧">816848</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="オーラン・ジョーンズ">1428554</tobep>
+			<anchor arel="-1" aname="shelf" aoffset="3501" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="shelf" saoffset="3501" salength="5" rank="49">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="藤井麻由">1909315</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ラーセン棚氷">1409230</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="大陸棚">57942</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="氷河の一覧">816848</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="オーラン・ジョーンズ">1428554</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Chef" aoffset="3545" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="Chef" saoffset="3545" salength="4" rank="52">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ベルギー海軍">1974030</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="日本料理">5388</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="フランス軍の階級">1586134</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ベルギー空軍">339532</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アイザック・ヘイズ">1685681</tobep>
+			<anchor arel="-1" aname="Chef" aoffset="3545" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="Chef" saoffset="3545" salength="4" rank="52">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ベルギー海軍">1974030</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="日本料理">5388</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="フランス軍の階級">1586134</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ベルギー空軍">339532</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アイザック・ヘイズ">1685681</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="クック">191876</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="beef" aoffset="3604" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="beef" saoffset="3604" salength="4" rank="67">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="挽肉">81076</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="松阪牛">290073</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ローストビーフ">66063</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="牛肉">628574</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="コンビーフ">64281</tobep>
+			<anchor arel="1" aname="beef" aoffset="3604" alength="4" ext_length="0">
+				<subanchor sarel="1" saname="beef" saoffset="3604" salength="4" rank="67">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="挽肉">81076</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="松阪牛">290073</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ローストビーフ">66063</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="牛肉">628574</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="コンビーフ">64281</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="processed cheese" aoffset="3612" alength="16" ext_length="0">
-				<subanchor sarel="0" saname="processed cheese" saoffset="3612" salength="16" rank="0">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="カサビアンの作品">2073314</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="椎名チカ">2373981</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="藤間麗">1807220</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="プロセスチーズ">59905</tobep>
+			<anchor arel="1" aname="processed cheese" aoffset="3612" alength="16" ext_length="0">
+				<subanchor sarel="1" saname="processed cheese" saoffset="3612" salength="16" rank="0">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="カサビアンの作品">2073314</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="椎名チカ">2373981</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="藤間麗">1807220</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="プロセスチーズ">59905</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="tomato" aoffset="3645" alength="6" ext_length="0">
-				<subanchor sarel="0" saname="tomato" saoffset="3645" salength="6" rank="11">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="トマト">3051</tobep>
+			<anchor arel="1" aname="tomato" aoffset="3645" alength="6" ext_length="0">
+				<subanchor sarel="1" saname="tomato" saoffset="3645" salength="6" rank="11">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="トマト">3051</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="more" aoffset="3710" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="more" saoffset="3710" salength="4" rank="85">
+			<anchor arel="-1" aname="more" aoffset="3710" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="more" saoffset="3710" salength="4" rank="85">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="フレッド・クラーク">917881</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ジャワハルラール・ネルー">150714</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ラビンドラナート・タゴール">373939</tobep>
@@ -708,63 +708,63 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="クリケット">69596</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="common" aoffset="3718" alength="6" ext_length="0">
-				<subanchor sarel="0" saname="common" saoffset="3718" salength="6" rank="65">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="資本金">73885</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="総頸動脈">1531329</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="一般名">488029</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="コモン・ロー">126531</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="性 (文法)">85178</tobep>
+			<anchor arel="-1" aname="common" aoffset="3718" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="common" saoffset="3718" salength="6" rank="65">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="資本金">73885</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="総頸動脈">1531329</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="一般名">488029</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="コモン・ロー">126531</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="性 (文法)">85178</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="roots" aoffset="3793" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="roots" saoffset="3793" salength="5" rank="53">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="函数の根">2136937</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ワールドミュージック">64490</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="語根">644398</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ルーツロックレゲエ">679202</tobep>
+			<anchor arel="-1" aname="roots" aoffset="3793" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="roots" saoffset="3793" salength="5" rank="53">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="函数の根">2136937</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ワールドミュージック">64490</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="語根">644398</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ルーツロックレゲエ">679202</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="冪根">74549</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="American" aoffset="3818" alength="8" ext_length="0">
-				<subanchor sarel="0" saname="American" saoffset="3818" salength="8" rank="65">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="バンクロフト賞">890667</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="フレデリック・ターナー">1767510</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アメリカ合衆国の詩">1943299</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アメリカ合衆国">1698838</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="三世 (日系人)">2269017</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アメリカンスクール">926281</tobep>
+			<anchor arel="-1" aname="American" aoffset="3818" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="American" saoffset="3818" salength="8" rank="65">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="バンクロフト賞">890667</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="フレデリック・ターナー">1767510</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アメリカ合衆国の詩">1943299</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アメリカ合衆国">1698838</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="三世 (日系人)">2269017</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アメリカンスクール">926281</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="restaurants" aoffset="3856" alength="11" ext_length="0">
-				<subanchor sarel="0" saname="restaurants" saoffset="3856" salength="11" rank="57">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="中華料理">9852</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="レストラン">21845</tobep>
+			<anchor arel="1" aname="restaurants" aoffset="3856" alength="11" ext_length="0">
+				<subanchor sarel="1" saname="restaurants" saoffset="3856" salength="11" rank="57">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="中華料理">9852</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="レストラン">21845</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Italian immigrants" aoffset="3878" alength="18" ext_length="0">
-				<subanchor sarel="0" saname="Italian immigrants" saoffset="3878" salength="18" rank="72">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="イタリア系アルゼンチン人">2020822</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="イタリア系アメリカ人">484702</tobep>
+			<anchor arel="-1" aname="Italian immigrants" aoffset="3878" alength="18" ext_length="0">
+				<subanchor sarel="-1" saname="Italian immigrants" saoffset="3878" salength="18" rank="72">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="イタリア系アルゼンチン人">2020822</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="イタリア系アメリカ人">484702</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="immigrants" saoffset="3886" salength="10" rank="43">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アリーヤー">1783171</tobep>
+				<subanchor sarel="-1" saname="immigrants" saoffset="3886" salength="10" rank="43">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アリーヤー">1783171</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="移民">177939</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Boston" aoffset="3900" alength="6" ext_length="0">
-				<subanchor sarel="0" saname="Boston" saoffset="3900" salength="6" rank="17">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ボストン・セルティックス">174400</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ボストン">72931</tobep>
+			<anchor arel="1" aname="Boston" aoffset="3900" alength="6" ext_length="0">
+				<subanchor sarel="1" saname="Boston" saoffset="3900" salength="6" rank="17">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ボストン・セルティックス">174400</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ボストン">72931</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="New York" aoffset="3908" alength="8" ext_length="0">
-				<subanchor sarel="0" saname="New York" saoffset="3908" salength="8" rank="20">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ニューヨーク州">5040</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ニューヨーク">507175</tobep>
+			<anchor arel="1" aname="New York" aoffset="3908" alength="8" ext_length="0">
+				<subanchor sarel="1" saname="New York" saoffset="3908" salength="8" rank="20">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ニューヨーク州">5040</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ニューヨーク">507175</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="York" saoffset="3912" salength="4" rank="55">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="トレヴァー・デュピュイ">1600436</tobep>
+				<subanchor sarel="-1" saname="York" saoffset="3912" salength="4" rank="55">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="トレヴァー・デュピュイ">1600436</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アーロン・オグデン・デイトン">952580</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="J.R.モンテローズ">536263</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヨーク_(ペンシルベニア州)">987327</tobep>
@@ -772,39 +772,39 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ニューヨーク州の歴史">1588395</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="cities" aoffset="3927" alength="6" ext_length="0">
-				<subanchor sarel="0" saname="cities" saoffset="3927" salength="6" rank="81">
+			<anchor arel="-1" aname="cities" aoffset="3927" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="cities" saoffset="3927" salength="6" rank="81">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="クロアチアの都市の一覧">49549</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="フィリピンの都市の一覧">1925330</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="breaded" aoffset="3975" alength="7" ext_length="0">
-				<subanchor sarel="0" saname="breaded" saoffset="3975" salength="7" rank="29">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="パン粉">25708</tobep>
+			<anchor arel="-1" aname="breaded" aoffset="3975" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="breaded" saoffset="3975" salength="7" rank="29">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="パン粉">25708</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="deep" aoffset="3987" alength="4" ext_length="6">
-				<subanchor sarel="0" saname="deep" saoffset="3987" salength="4" rank="72">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="DEEP">491458</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="トンネルボーリングマシン">1129681</tobep>
+			<anchor arel="-1" aname="deep" aoffset="3987" alength="4" ext_length="6">
+				<subanchor sarel="-1" saname="deep" saoffset="3987" salength="4" rank="72">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="DEEP">491458</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="トンネルボーリングマシン">1129681</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="深指屈筋">1017497</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ディープ・ハウス">858273</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="深腓骨神経">2089372</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="deep fried" saoffset="3987" salength="10" rank="32">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヘンリー・ギブソン">1364983</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="YELLOW FRIED CHICKENz">2481803</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="揚げる">85776</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="フライ (料理)">1233632</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ティーンエイジ・ファンクラブ">493717</tobep>
+				<subanchor sarel="-1" saname="deep fried" saoffset="3987" salength="10" rank="32">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヘンリー・ギブソン">1364983</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="YELLOW FRIED CHICKENz">2481803</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="揚げる">85776</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="フライ (料理)">1233632</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ティーンエイジ・ファンクラブ">493717</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="fried" saoffset="3992" salength="5" rank="50">
+				<subanchor sarel="-1" saname="fried" saoffset="3992" salength="5" rank="50">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="揚げる">85776</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="フライ_(料理)">1233632</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="first" aoffset="4004" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="first" saoffset="4004" salength="5" rank="79">
+			<anchor arel="-1" aname="first" aoffset="4004" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="first" saoffset="4004" salength="5" rank="79">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ファーストパーソン・シューティングゲーム">93937</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="第一次世界大戦">5331</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ファースト">159576</tobep>
@@ -812,31 +812,31 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="母語">108638</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Missouri" aoffset="4034" alength="8" ext_length="0">
-				<subanchor sarel="0" saname="Missouri" saoffset="4034" salength="8" rank="14">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ミズーリ州">54197</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ミズーリ大学コロンビア校">668516</tobep>
+			<anchor arel="1" aname="Missouri" aoffset="4034" alength="8" ext_length="0">
+				<subanchor sarel="1" saname="Missouri" saoffset="4034" salength="8" rank="14">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ミズーリ州">54197</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ミズーリ大学コロンビア校">668516</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="appetizer" aoffset="4062" alength="9" ext_length="0">
-				<subanchor sarel="0" saname="appetizer" saoffset="4062" salength="9" rank="16">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="吉川綾乃">635837</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="オードブル">34129</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="フリーク・キッチン">1157099</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="松村太郎">1667678</tobep>
+			<anchor arel="1" aname="appetizer" aoffset="4062" alength="9" ext_length="0">
+				<subanchor sarel="1" saname="appetizer" saoffset="4062" salength="9" rank="16">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="吉川綾乃">635837</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="オードブル">34129</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="フリーク・キッチン">1157099</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="松村太郎">1667678</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="snack" aoffset="4075" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="snack" saoffset="4075" salength="5" rank="37">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="スナック菓子">924188</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="サンドイッチ">26827</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="点心">216168</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ポテトチップス">21788</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="軽食">32067</tobep>
+			<anchor arel="-1" aname="snack" aoffset="4075" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="snack" saoffset="4075" salength="5" rank="37">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="スナック菓子">924188</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="サンドイッチ">26827</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="点心">216168</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ポテトチップス">21788</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="軽食">32067</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="food" aoffset="4081" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="food" saoffset="4081" salength="4" rank="56">
+			<anchor arel="-1" aname="food" aoffset="4081" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="food" saoffset="4081" salength="4" rank="56">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="食品工学">1584840</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="中華料理">9852</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="日本料理">5388</tobep>
@@ -845,88 +845,88 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="食品">24201</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="India" aoffset="4226" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="India" saoffset="4226" salength="5" rank="62">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="クリケットインド代表">2331036</tobep>
+			<anchor arel="-1" aname="India" aoffset="4226" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="India" saoffset="4226" salength="5" rank="62">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="クリケットインド代表">2331036</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="filing" aoffset="4319" alength="6" ext_length="0">
-				<subanchor sarel="0" saname="filing" saoffset="4319" salength="6" rank="56">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="やすり">22657</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="リーマン・ショック">1610911</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ファイル (コンピュータ)">492864</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ファイル">6508</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ネイルファイル">989656</tobep>
+			<anchor arel="-1" aname="filing" aoffset="4319" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="filing" saoffset="4319" salength="6" rank="56">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="やすり">22657</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="リーマン・ショック">1610911</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ファイル (コンピュータ)">492864</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ファイル">6508</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ネイルファイル">989656</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="dry" aoffset="4329" alength="3" ext_length="7">
-				<subanchor sarel="0" saname="dry" saoffset="4329" salength="3" rank="47">
+			<anchor arel="1" aname="dry" aoffset="4329" alength="3" ext_length="7">
+				<subanchor sarel="-1" saname="dry" saoffset="4329" salength="3" rank="47">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="禁酒郡">2439227</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="禁酒令">1654408</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="乾季">92358</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="乾量単位・液量単位">692987</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ドライ">1403686</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="dry fruits" saoffset="4329" salength="10" rank="41">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ドライフルーツ">179000</tobep>
+				<subanchor sarel="1" saname="dry fruits" saoffset="4329" salength="10" rank="41">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ドライフルーツ">179000</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="fruits" saoffset="4333" salength="6" rank="78">
+				<subanchor sarel="-1" saname="fruits" saoffset="4333" salength="6" rank="78">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="豆果">496095</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="sugar" aoffset="4341" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="sugar" saoffset="4341" salength="5" rank="33">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="スクロース">24425</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="単糖">52130</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="炭水化物">24196</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="サトウカエデ">74617</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="サトウキビ">27764</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="砂糖">21970</tobep>
+			<anchor arel="1" aname="sugar" aoffset="4341" alength="5" ext_length="0">
+				<subanchor sarel="1" saname="sugar" saoffset="4341" salength="5" rank="33">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="スクロース">24425</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="単糖">52130</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="炭水化物">24196</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="サトウカエデ">74617</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="サトウキビ">27764</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="砂糖">21970</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="mixture" aoffset="4353" alength="7" ext_length="0">
-				<subanchor sarel="0" saname="mixture" saoffset="4353" salength="7" rank="48">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="クレオール言語">22151</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="多国籍料理">2462133</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="近親相姦">123318</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="空燃比">62982</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="混合物">9965</tobep>
+			<anchor arel="-1" aname="mixture" aoffset="4353" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="mixture" saoffset="4353" salength="7" rank="48">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="クレオール言語">22151</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="多国籍料理">2462133</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="近親相姦">123318</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="空燃比">62982</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="混合物">9965</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="sweet" aoffset="4364" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="sweet" saoffset="4364" salength="5" rank="39">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="デザート">27685</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="菓子">22324</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ミタイ">1835851</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="キャンディ">84521</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="甘味">23242</tobep>
+			<anchor arel="-1" aname="sweet" aoffset="4364" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="sweet" saoffset="4364" salength="5" rank="39">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="デザート">27685</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="菓子">22324</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ミタイ">1835851</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="キャンディ">84521</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="甘味">23242</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="spices" aoffset="4370" alength="6" ext_length="0">
-				<subanchor sarel="0" saname="spices" saoffset="4370" salength="6" rank="35">
+			<anchor arel="-1" aname="spices" aoffset="4370" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="spices" saoffset="4370" salength="6" rank="35">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="香辛料">17845</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="香辛料貿易">2217747</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="vegetable" aoffset="4397" alength="9" ext_length="4">
-				<subanchor sarel="0" saname="vegetable" saoffset="4397" salength="9" rank="23">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="昏睡">560939</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="遷延性意識障害">1619818</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アスパラガス">23018</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="植物性脂肪">1934898</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ひまし油">351647</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="植物">5071</tobep>
+			<anchor arel="1" aname="vegetable" aoffset="4397" alength="9" ext_length="4">
+				<subanchor sarel="-1" saname="vegetable" saoffset="4397" salength="9" rank="23">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="昏睡">560939</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="遷延性意識障害">1619818</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アスパラガス">23018</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="植物性脂肪">1934898</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ひまし油">351647</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="植物">5071</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="vegetable oil" saoffset="4397" salength="13" rank="5">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="植物性脂肪">1934898</tobep>
+				<subanchor sarel="1" saname="vegetable oil" saoffset="4397" salength="13" rank="5">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="植物性脂肪">1934898</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="oil" saoffset="4407" salength="3" rank="40">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="石油">1540503</tobep>
+				<subanchor sarel="-1" saname="oil" saoffset="4407" salength="3" rank="40">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="石油">1540503</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="油彩">26731</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="is a" aoffset="4421" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="is a" saoffset="4421" salength="4" rank="95">
+			<anchor arel="-1" aname="is a" aoffset="4421" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="is a" saoffset="4421" salength="4" rank="95">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="SXML">1905670</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ジェリー・フォーダー">1053838</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="OS2200">2367933</tobep>
@@ -934,29 +934,29 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ブルガリアの都市の一覧">1637497</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Holi" aoffset="4459" alength="4" ext_length="9">
-				<subanchor sarel="0" saname="Holi" saoffset="4459" salength="4" rank="2">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ホーリー祭">1749816</tobep>
+			<anchor arel="1" aname="Holi" aoffset="4459" alength="4" ext_length="9">
+				<subanchor sarel="-1" saname="Holi" saoffset="4459" salength="4" rank="2">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ホーリー祭">1749816</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="Holi festival" saoffset="4459" salength="13" rank="38">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ホーリー祭">1749816</tobep>
+				<subanchor sarel="1" saname="Holi festival" saoffset="4459" salength="13" rank="38">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ホーリー祭">1749816</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="festival" saoffset="4464" salength="8" rank="60">
+				<subanchor sarel="-1" saname="festival" saoffset="4464" salength="8" rank="60">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="音楽祭">124417</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="祭">1174737</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="central" aoffset="4515" alength="7" ext_length="0">
-				<subanchor sarel="0" saname="central" saoffset="4515" salength="7" rank="64">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="中部アフリカ">69004</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="中央ヨーロッパ">158302</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="中枢神経系">225110</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="中線音">378822</tobep>
+			<anchor arel="-1" aname="central" aoffset="4515" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="central" saoffset="4515" salength="7" rank="64">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="中部アフリカ">69004</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="中央ヨーロッパ">158302</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="中枢神経系">225110</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="中線音">378822</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="中舌母音">367797</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="parts" aoffset="4523" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="parts" saoffset="4523" salength="5" rank="75">
+			<anchor arel="-1" aname="parts" aoffset="4523" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="parts" saoffset="4523" salength="5" rank="75">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="キャラクター">8630</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Ppm">27279</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="メロディ">4739</tobep>
@@ -964,8 +964,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="声部">40135</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Chinese" aoffset="4593" alength="7" ext_length="0">
-				<subanchor sarel="0" saname="Chinese" saoffset="4593" salength="7" rank="18">
+			<anchor arel="-1" aname="Chinese" aoffset="4593" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="Chinese" saoffset="4593" salength="7" rank="18">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ジョン・キング・フェアバンク">2272642</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="中華料理">9852</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="中国人">216518</tobep>
@@ -973,13 +973,13 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="中国語">5698</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="jiaozi" aoffset="4601" alength="6" ext_length="0">
-				<subanchor sarel="0" saname="jiaozi" saoffset="4601" salength="6" rank="3">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="交子">1280410</tobep>
+			<anchor arel="-1" aname="jiaozi" aoffset="4601" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="jiaozi" saoffset="4601" salength="6" rank="3">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="交子">1280410</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="referred to" aoffset="4678" alength="11" ext_length="0">
-				<subanchor sarel="0" saname="referred to" saoffset="4678" salength="11" rank="91">
+			<anchor arel="-1" aname="referred to" aoffset="4678" alength="11" ext_length="0">
+				<subanchor sarel="-1" saname="referred to" saoffset="4678" salength="11" rank="91">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アリゾナ・リパブリック">1640369</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="エポニム">414414</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="NNN">977717</tobep>
@@ -987,31 +987,31 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ケニング">1499811</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="minced beef" aoffset="4822" alength="11" ext_length="0">
-				<subanchor sarel="0" saname="minced beef" saoffset="4822" salength="11" rank="25">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="挽肉">81076</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Beef or Fish ?">1661984</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="OKI (ヒップホップ・ミュージシャン)">2281628</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="BEEF or CHICKEN">1076625</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="近田春夫&amp;BEEF">1753280</tobep>
+			<anchor arel="1" aname="minced beef" aoffset="4822" alength="11" ext_length="0">
+				<subanchor sarel="1" saname="minced beef" saoffset="4822" salength="11" rank="25">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="挽肉">81076</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Beef or Fish ?">1661984</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="OKI (ヒップホップ・ミュージシャン)">2281628</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="BEEF or CHICKEN">1076625</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="近田春夫&amp;BEEF">1753280</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="meat" aoffset="4834" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="meat" saoffset="4834" salength="4" rank="36">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="鯨肉">287936</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="鶏肉">27318</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="羊肉">13895</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="馬肉">498561</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="食肉">175712</tobep>
+			<anchor arel="-1" aname="meat" aoffset="4834" alength="4" ext_length="0">
+				<subanchor sarel="1" saname="meat" saoffset="4834" salength="4" rank="36">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="鯨肉">287936</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="鶏肉">27318</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="羊肉">13895</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="馬肉">498561</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="食肉">175712</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="yogurt" aoffset="4857" alength="6" ext_length="0">
-				<subanchor sarel="0" saname="yogurt" saoffset="4857" salength="6" rank="8">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヨーグルト">7342</tobep>
+			<anchor arel="1" aname="yogurt" aoffset="4857" alength="6" ext_length="0">
+				<subanchor sarel="1" saname="yogurt" saoffset="4857" salength="6" rank="8">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヨーグルト">7342</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="See also" aoffset="4888" alength="8" ext_length="0">
-				<subanchor sarel="0" saname="See also" saoffset="4888" salength="8" rank="66">
+			<anchor arel="-1" aname="See also" aoffset="4888" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="See also" saoffset="4888" salength="8" rank="66">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="NEUROMANTIC">739790</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="オージーフットボール">86255</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="スロバキア語の歴史">835640</tobep>
@@ -1019,8 +1019,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="航空機の一覧 (D)">1622756</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="editor" aoffset="5063" alength="6" ext_length="0">
-				<subanchor sarel="0" saname="editor" saoffset="5063" salength="6" rank="27">
+			<anchor arel="-1" aname="editor" aoffset="5063" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="editor" saoffset="5063" salength="6" rank="27">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="編集">12486</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ソースコードエディタ">1782083</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="テキストエディタ">22492</tobep>
@@ -1028,15 +1028,15 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="主筆">731238</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="A Book" aoffset="5119" alength="6" ext_length="0">
-				<subanchor sarel="0" saname="A Book" saoffset="5119" salength="6" rank="81">
+			<anchor arel="-1" aname="A Book" aoffset="5119" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="A Book" saoffset="5119" salength="6" rank="81">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Grails">1558685</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ミシュネー・トーラー">437355</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="東方見聞録">85437</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="パーフェクト・ワールド What a perfect world!">1366604</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="マウロ・ジュリアーニ">1482098</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="Book" saoffset="5121" salength="4" rank="40">
+				<subanchor sarel="-1" saname="Book" saoffset="5121" salength="4" rank="40">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="オズの魔法使い">20265</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ミュージカル">32735</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="リブレット (音楽)">1456555</tobep>
@@ -1044,22 +1044,22 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="失われた私">1976258</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="External" aoffset="5207" alength="8" ext_length="6">
-				<subanchor sarel="0" saname="External" saoffset="5207" salength="8" rank="61">
+			<anchor arel="-1" aname="External" aoffset="5207" alength="8" ext_length="6">
+				<subanchor sarel="-1" saname="External" saoffset="5207" salength="8" rank="61">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="外交政策">818329</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="外腹斜筋">547212</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="体外受精 (生物)">944323</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="外肋間筋">547021</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="外部性">148576</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="External links" saoffset="5207" salength="14" rank="68">
+				<subanchor sarel="-1" saname="External links" saoffset="5207" salength="14" rank="68">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヴィタウタス・ランズベルギス/履歴">388760</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="鼻背動脈">2296723</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="MediaWiki:Common.css">386092</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ハイパーリンク">26918</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="対外債務">2302387</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="links" saoffset="5216" salength="5" rank="77">
+				<subanchor sarel="-1" saname="links" saoffset="5216" salength="5" rank="77">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ハードリンク">271312</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ハイパーリンク">26918</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="データ通信">192786</tobep>
@@ -1067,8 +1067,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="リンク">8840</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="How to" aoffset="5384" alength="6" ext_length="0">
-				<subanchor sarel="0" saname="How to" saoffset="5384" salength="6" rank="57">
+			<anchor arel="-1" aname="How to" aoffset="5384" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="How to" saoffset="5384" salength="6" rank="57">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ハウツー">815410</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="HOW TO GO">1182474</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Material Exchange Format">1156583</tobep>
@@ -1076,8 +1076,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="クレシッダ・コーウェル">2162774</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="make" aoffset="5391" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="make" saoffset="5391" salength="4" rank="69">
+			<anchor arel="-1" aname="make" aoffset="5391" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="make" saoffset="5391" salength="4" rank="69">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ブランド">16178</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="メイク">302193</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Make">60511</tobep>
@@ -1085,15 +1085,15 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="製造業">65687</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="from scratch" aoffset="5404" alength="12" ext_length="0">
-				<subanchor sarel="0" saname="from scratch" saoffset="5404" salength="12" rank="51">
+			<anchor arel="-1" aname="from scratch" aoffset="5404" alength="12" ext_length="0">
+				<subanchor sarel="-1" saname="from scratch" saoffset="5404" salength="12" rank="51">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="DJ BAKU">662728</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="START FROM SCRATCH">996189</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Linux from Scratch">87413</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="リー・ペリー">702689</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="スクラッチビルド">694205</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="scratch" saoffset="5409" salength="7" rank="38">
+				<subanchor sarel="-1" saname="scratch" saoffset="5409" salength="7" rank="38">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Scratch! (ラジオ番組)">2225509</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="痒み">1228580</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="スクラッチ">529430</tobep>

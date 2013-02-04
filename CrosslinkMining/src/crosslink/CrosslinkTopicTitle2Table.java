@@ -15,6 +15,7 @@ public class CrosslinkTopicTitle2Table {
 	public static final String[] langs = {"zh", "ja", "ko"};
 	
 	private String topicPath;
+	private HashMap<String, String> langTopicPathMap = new HashMap<String, String>();
 	
 	private CrosslinkTable enCorpusCrosslinkTable; 
 	private CrosslinkTable otherCorpusCrosslinkTable;
@@ -31,7 +32,7 @@ public class CrosslinkTopicTitle2Table {
 		HashMap<String, String> titleMap = new HashMap<String, String>(); 
 		
 		public String toString() {
-			return String.format("%d%s\t%s\t%s\t%s", titleMap.get("en"), titleMap.get("zh"), titleMap.get("ja"), titleMap.get("ko"));
+			return String.format("%d\t%s\t%s\t%s\t%s", row, titleMap.get("en"), titleMap.get("zh"), titleMap.get("ja"), titleMap.get("ko"));
 		}
 	}
 	
@@ -45,7 +46,7 @@ public class CrosslinkTopicTitle2Table {
 	}
 
 	public String getWikiPagePath(String id, String lang) {
-		return corpusHome  + File.separator + lang + File.separator + CrosslinkMining.wikiIdToPath(id) + ".xml";
+		return langTopicPathMap.get(lang)  + File.separator +id + ".xml";
 	}
 	
 	public boolean wikiPageExists(String id, String lang) {
@@ -74,33 +75,46 @@ public class CrosslinkTopicTitle2Table {
 		return topicId;
 	}
 	
+	public void assignLangTopicPath(String lang) {
+		WildcardFileStack filestack;
+		try {
+			filestack = new WildcardFileStack(topicPath, String.format("*%s*", lang));
+			Stack<File> stack = filestack.list();
+			for (File file : stack) {
+				langTopicPathMap.put(lang, file.getAbsolutePath());
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
 	public void createTable() {
 		
 		try {
-			WildcardFileStack filestack = new WildcardFileStack(topicPath, "*en*");
-			Stack<File> stack = filestack.list();
-					
-			for (File file : stack) {
-				WildcardFileStack topicStack = new WildcardFileStack(file.getAbsolutePath());
-				Stack<File> topicFiles = topicStack.list();
+			this.assignLangTopicPath("en");
+			for (String lang: langs)
+				this.assignLangTopicPath(lang);
+
+			
+			WildcardFileStack topicStack = new WildcardFileStack(langTopicPathMap.get("en"));
+			Stack<File> topicFiles = topicStack.list();
+			
+			int count = 0;
+			for (File topicFile: topicFiles) {
+				CrosslinkTopic topic = new CrosslinkTopic(topicFile);
+				TopicTitles titles = new TopicTitles();
+				titles.row = ++count;
+				titles.titleMap.put("en", topic.getTitle());
 				
-				int count = 0;
-				for (File topicFile: topicFiles) {
-					CrosslinkTopic topic = new CrosslinkTopic(topicFile);
-					TopicTitles titles = new TopicTitles();
-					titles.row = ++count;
-					titles.titleMap.put("en", topic.getTitle());
-					
-					for (String lang : langs) {
-						String counterTopicId = findCounterPartTopic(topic, lang);
-						WikiArticleXml xml = new WikiArticleXml(new File(CrosslinkMining.wikiIdToPath(counterTopicId)));
-						titles.titleMap.put(lang, xml.getTitle());
-					}
-					
-					System.out.println(titles.toString());
+				for (String lang : langs) {
+					String counterTopicId = findCounterPartTopic(topic, lang);
+					WikiArticleXml xml = new WikiArticleXml(new File(this.getWikiPagePath(counterTopicId, lang)));
+					titles.titleMap.put(lang, xml.getTitle());
 				}
 				
+				System.out.println(titles.toString());
 			}
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
