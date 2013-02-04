@@ -4,8 +4,8 @@
 	<collection>Korean Wikipedia 2010 Collection</collection>
 	<topic file="2974637" name="Nanako Matsushima">
 		<outgoinglinks>
-			<anchor arel="0" aname="people" aoffset="603" alength="6" ext_length="0">
-				<subanchor sarel="0" saname="people" saoffset="603" salength="6" rank="46">
+			<anchor arel="-1" aname="people" aoffset="603" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="people" saoffset="603" salength="6" rank="46">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="国民">8183</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="人 (法律)">1583159</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="民族">7565</tobep>
@@ -13,8 +13,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="人間">3041</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Yokohama" aoffset="762" alength="8" ext_length="0">
-				<subanchor sarel="0" saname="Yokohama" saoffset="762" salength="8" rank="10">
+			<anchor arel="-1" aname="Yokohama" aoffset="762" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="Yokohama" saoffset="762" salength="8" rank="10">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アローヒューマンリソース">1263948</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Fm yokohama 25th ANNIVERSARY SPECIAL">2257616</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="YOKOHAMA TOP 30">2281971</tobep>
@@ -23,35 +23,35 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="横浜FC">4757</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Kanagawa" aoffset="772" alength="8" ext_length="11">
-				<subanchor sarel="0" saname="Kanagawa" saoffset="772" salength="8" rank="17">
+			<anchor arel="-1" aname="Kanagawa" aoffset="772" alength="8" ext_length="11">
+				<subanchor sarel="-1" saname="Kanagawa" saoffset="772" salength="8" rank="17">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="神奈川県">1917527</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="神奈川区">28762</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="Kanagawa Prefecture" saoffset="772" salength="19" rank="4">
+				<subanchor sarel="-1" saname="Kanagawa Prefecture" saoffset="772" salength="19" rank="4">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="神奈川県">1917527</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="height" aoffset="880" alength="6" ext_length="0">
-				<subanchor sarel="0" saname="height" saoffset="880" salength="6" rank="40">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="GOトランジット">1790592</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="北アイルランド問題">715379</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="高さ">156381</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="身長">213970</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="鳳バス">1923452</tobep>
+			<anchor arel="-1" aname="height" aoffset="880" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="height" saoffset="880" salength="6" rank="40">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="GOトランジット">1790592</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="北アイルランド問題">715379</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="高さ">156381</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="身長">213970</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="鳳バス">1923452</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="weight" aoffset="907" alength="6" ext_length="0">
-				<subanchor sarel="0" saname="weight" saoffset="907" salength="6" rank="29">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="質量">6684</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="オモリ (釣具)">1994852</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ウエイトトレーニング">338744</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="体重">213974</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="重さ">25358</tobep>
+			<anchor arel="-1" aname="weight" aoffset="907" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="weight" saoffset="907" salength="6" rank="29">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="質量">6684</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="オモリ (釣具)">1994852</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ウエイトトレーニング">338744</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="体重">213974</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="重さ">25358</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="present" aoffset="963" alength="7" ext_length="0">
-				<subanchor sarel="0" saname="present" saoffset="963" salength="7" rank="45">
+			<anchor arel="-1" aname="present" aoffset="963" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="present" saoffset="963" salength="7" rank="45">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="現在時制">1878743</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="2007年">1069779</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="現在">538568</tobep>
@@ -59,8 +59,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="完新世">20412</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="spouse" aoffset="973" alength="6" ext_length="0">
-				<subanchor sarel="0" saname="spouse" saoffset="973" salength="6" rank="32">
+			<anchor arel="-1" aname="spouse" aoffset="973" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="spouse" saoffset="973" salength="6" rank="32">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="結婚">29657</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="イーゴリ1世">914385</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="リューリク">269186</tobep>
@@ -68,16 +68,16 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="配偶者">24508</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Takashi Sorimachi" aoffset="997" alength="17" ext_length="0">
-				<subanchor sarel="0" saname="Takashi Sorimachi" saoffset="997" salength="17" rank="0">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="FOREVER DREAM">1233947</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Arp">889653</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ビーチボーイズ (テレビドラマ)">275866</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="反町隆史">37211</tobep>
+			<anchor arel="1" aname="Takashi Sorimachi" aoffset="997" alength="17" ext_length="0">
+				<subanchor sarel="1" saname="Takashi Sorimachi" saoffset="997" salength="17" rank="0">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="FOREVER DREAM">1233947</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Arp">889653</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ビーチボーイズ (テレビドラマ)">275866</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="反町隆史">37211</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="partner" aoffset="1032" alength="7" ext_length="0">
-				<subanchor sarel="0" saname="partner" saoffset="1032" salength="7" rank="32">
+			<anchor arel="-1" aname="partner" aoffset="1032" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="partner" saoffset="1032" salength="7" rank="32">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="友情">976201</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="パートナーシップ">33102</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="オーストラリア自由党">1188674</tobep>
@@ -85,17 +85,17 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="事実婚">85643</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="residence" aoffset="1084" alength="9" ext_length="0">
-				<subanchor sarel="0" saname="residence" saoffset="1084" salength="9" rank="39">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="家屋">22371</tobep>
+			<anchor arel="-1" aname="residence" aoffset="1084" alength="9" ext_length="0">
+				<subanchor sarel="-1" saname="residence" saoffset="1084" salength="9" rank="39">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="家屋">22371</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="世界の官邸">1302033</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="家庭">85411</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="居住">261108</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="寮">520531</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="website" aoffset="1162" alength="7" ext_length="0">
-				<subanchor sarel="0" saname="website" saoffset="1162" salength="7" rank="24">
+			<anchor arel="-1" aname="website" aoffset="1162" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="website" saoffset="1162" salength="7" rank="24">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ニュースサイト">6067</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="電子商取引">43430</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="オンラインストレージ">410870</tobep>
@@ -103,8 +103,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="H2g2">4371</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="role" aoffset="1196" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="role" saoffset="1196" salength="4" rank="44">
+			<anchor arel="-1" aname="role" aoffset="1196" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="role" saoffset="1196" salength="4" rank="44">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="キャラクター">8630</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="戦闘教義">561845</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="主題役割">848814</tobep>
@@ -112,63 +112,63 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="役割">1818646</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="is a" aoffset="1216" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="is a" saoffset="1216" salength="4" rank="65">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="SXML">1905670</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ジェリー・フォーダー">1053838</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="OS2200">2367933</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Is-a">917405</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ブルガリアの都市の一覧">1637497</tobep>
+			<anchor arel="-1" aname="is a" aoffset="1216" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="is a" saoffset="1216" salength="4" rank="65">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="SXML">1905670</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ジェリー・フォーダー">1053838</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="OS2200">2367933</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Is-a">917405</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ブルガリアの都市の一覧">1637497</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="a" saoffset="1219" salength="1" rank="47">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アウェーゴール">188604</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="軌道長半径">379233</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="A">13618</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アマチュア">15331</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ユリウス年">639813</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="Japanese" aoffset="1221" alength="8" ext_length="8">
-				<subanchor sarel="0" saname="Japanese" saoffset="1221" salength="8" rank="22">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="馬場菊太郎">1455153</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="日本">1864744</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="日本人">25007</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="日本語">11</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="日印関係">2482453</tobep>
-				</subanchor>
-				<subanchor sarel="0" saname="Japanese actress" saoffset="1221" salength="16" rank="67">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="プライムタイム・エミー賞">1375464</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ゴールデングローブ賞">8149</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="日本の女優一覧">65258</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="MELTY BLOOD">560354</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="NAACPイメージ・アワード">1309783</tobep>
-				</subanchor>
-				<subanchor sarel="0" saname="actress" saoffset="1230" salength="7" rank="21">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="芝居">26932</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="俳優">2008</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ポルノ女優">1506028</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="子役">14197</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ジョーン・クロフォード">368436</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アカデミー主演女優賞">136683</tobep>
+				<subanchor sarel="-1" saname="a" saoffset="1219" salength="1" rank="47">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アウェーゴール">188604</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="軌道長半径">379233</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="A">13618</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アマチュア">15331</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ユリウス年">639813</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="model" aoffset="1327" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="model" saoffset="1327" salength="5" rank="29">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="モデル_(職業)">569594</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="モデリング_(科学的)">2378302</tobep>
+			<anchor arel="1" aname="Japanese" aoffset="1221" alength="8" ext_length="8">
+				<subanchor sarel="-1" saname="Japanese" saoffset="1221" salength="8" rank="22">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="馬場菊太郎">1455153</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="日本">1864744</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="日本人">25007</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="日本語">11</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="日印関係">2482453</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Japanese actress" saoffset="1221" salength="16" rank="67">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="プライムタイム・エミー賞">1375464</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ゴールデングローブ賞">8149</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="日本の女優一覧">65258</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="MELTY BLOOD">560354</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="NAACPイメージ・アワード">1309783</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="actress" saoffset="1230" salength="7" rank="21">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="芝居">26932</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="俳優">2008</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ポルノ女優">1506028</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="子役">14197</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ジョーン・クロフォード">368436</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アカデミー主演女優賞">136683</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="outside" aoffset="1347" alength="7" ext_length="0">
-				<subanchor sarel="0" saname="outside" saoffset="1347" salength="7" rank="61">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="宇宙遊泳">483419</tobep>
+			<anchor arel="1" aname="model" aoffset="1327" alength="5" ext_length="0">
+				<subanchor sarel="1" saname="model" saoffset="1327" salength="5" rank="29">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="モデル_(職業)">569594</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="モデリング_(科学的)">2378302</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="outside" aoffset="1347" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="outside" saoffset="1347" salength="7" rank="61">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="宇宙遊泳">483419</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Gossip Candy">2102036</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Inside Outside U・M・I">784581</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="外世界からの漁師">2071320</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Come Outside">2157497</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Japan" aoffset="1355" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="Japan" saoffset="1355" salength="5" rank="11">
+			<anchor arel="-1" aname="Japan" aoffset="1355" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="Japan" saoffset="1355" salength="5" rank="11">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="馬場菊太郎">1455153</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="日本">1864744</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="半導体メーカー売上高ランキング">1703267</tobep>
@@ -176,8 +176,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="JAPAN CIRCUIT">997684</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="in" aoffset="1374" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="in" saoffset="1374" salength="2" rank="56">
+			<anchor arel="-1" aname="in" aoffset="1374" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="in" saoffset="1374" salength="2" rank="56">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ソルトレイクシティオリンピック">16684</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="インチ">12142</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title=".in">1536201</tobep>
@@ -185,108 +185,108 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="単射">7864</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="horror" aoffset="1381" alength="6" ext_length="5">
-				<subanchor sarel="0" saname="horror" saoffset="1381" salength="6" rank="23">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ホラー小説">19596</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヨーロッパ">32</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="サバイバルホラー">1294174</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ホラー">68364</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ホラー映画">3102</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="漫画雑誌">1270872</tobep>
+			<anchor arel="1" aname="horror" aoffset="1381" alength="6" ext_length="5">
+				<subanchor sarel="-1" saname="horror" saoffset="1381" salength="6" rank="23">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ホラー小説">19596</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヨーロッパ">32</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="サバイバルホラー">1294174</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ホラー">68364</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ホラー映画">3102</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="漫画雑誌">1270872</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="horror film" saoffset="1381" salength="11" rank="13">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ホラー小説">19596</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヨーロッパ">32</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="溝口友作">1459915</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="フランケンシュタイン (1910年の映画)">1441655</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ハロウィン (映画)">313812</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ホラー映画">3102</tobep>
+				<subanchor sarel="1" saname="horror film" saoffset="1381" salength="11" rank="13">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ホラー小説">19596</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヨーロッパ">32</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="溝口友作">1459915</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="フランケンシュタイン (1910年の映画)">1441655</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ハロウィン (映画)">313812</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ホラー映画">3102</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="film" saoffset="1388" salength="4" rank="27">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="俳優">2008</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="映画">163</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="映画プロデューサー">8157</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="映画監督">24608</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="写真フィルム">2808</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="Ring" aoffset="1397" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="Ring" saoffset="1397" salength="4" rank="17">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="指輪">2012987</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="環 (天体)">402039</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="基">36163</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="環 (数学)">7418</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="リング (格闘技)">276968</tobep>
+				<subanchor sarel="-1" saname="film" saoffset="1388" salength="4" rank="27">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="俳優">2008</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="映画">163</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="映画プロデューサー">8157</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="映画監督">24608</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="写真フィルム">2808</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="main" aoffset="1423" alength="4" ext_length="10">
-				<subanchor sarel="0" saname="main" saoffset="1423" salength="4" rank="59">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="主配線盤">238397</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="主人公">149610</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="中央駅">755670</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="鉄道">537</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="マスト">380834</tobep>
-				</subanchor>
-				<subanchor sarel="0" saname="main character" saoffset="1423" salength="14" rank="34">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ブギーマン_(殺人鬼)">636632</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="エド・ウッド">73361</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="タイトル・ロール">555368</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="主人公">149610</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="プレイヤーキャラクター">11186</tobep>
-				</subanchor>
-				<subanchor sarel="0" saname="character" saoffset="1428" salength="9" rank="27">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="キャラクター">8630</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="書記素">1071747</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="キャラクター (曖昧さ回避)">579549</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="キャラクタ (コンピュータ)">8015</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="プレイヤーキャラクター">11186</tobep>
+			<anchor arel="-1" aname="Ring" aoffset="1397" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="Ring" saoffset="1397" salength="4" rank="17">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="指輪">2012987</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="環 (天体)">402039</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="基">36163</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="環 (数学)">7418</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="リング (格闘技)">276968</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="A Story" aoffset="1445" alength="7" ext_length="0">
-				<subanchor sarel="0" saname="A Story" saoffset="1445" salength="7" rank="53">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="STORY/SUMMER LIGHT">1797247</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="うみねこのなく頃に翼">2271065</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="不思議の国のアリス">190461</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="0号室の客">1873373</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ラブストーリー">605014</tobep>
+			<anchor arel="-1" aname="main" aoffset="1423" alength="4" ext_length="10">
+				<subanchor sarel="-1" saname="main" saoffset="1423" salength="4" rank="59">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="主配線盤">238397</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="主人公">149610</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="中央駅">755670</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="鉄道">537</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="マスト">380834</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="Story" saoffset="1447" salength="5" rank="31">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="プロット (物語)">44117</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ストーリー (曖昧さ回避)">1737903</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="階">1301388</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ストーリー">45740</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="短編小説">158541</tobep>
+				<subanchor sarel="1" saname="main character" saoffset="1423" salength="14" rank="34">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ブギーマン_(殺人鬼)">636632</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="エド・ウッド">73361</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="タイトル・ロール">555368</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="主人公">149610</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="プレイヤーキャラクター">11186</tobep>
 				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="Love" aoffset="1456" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="Love" saoffset="1456" salength="4" rank="19">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ロマンチック・ラブ">548199</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アガペー">507563</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ミンネ">195194</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="チャリティー">129515</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="愛">10445</tobep>
+				<subanchor sarel="-1" saname="character" saoffset="1428" salength="9" rank="27">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="キャラクター">8630</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="書記素">1071747</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="キャラクター (曖昧さ回避)">579549</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="キャラクタ (コンピュータ)">8015</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="プレイヤーキャラクター">11186</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="next to" aoffset="1485" alength="7" ext_length="0">
-				<subanchor sarel="0" saname="next to" saoffset="1485" salength="7" rank="60">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Ready to be a lady">2200767</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Chain of Responsibility パターン">1401220</tobep>
+			<anchor arel="-1" aname="A Story" aoffset="1445" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="A Story" saoffset="1445" salength="7" rank="53">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="STORY/SUMMER LIGHT">1797247</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="うみねこのなく頃に翼">2271065</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="不思議の国のアリス">190461</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="0号室の客">1873373</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ラブストーリー">605014</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Story" saoffset="1447" salength="5" rank="31">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="プロット (物語)">44117</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ストーリー (曖昧さ回避)">1737903</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="階">1301388</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ストーリー">45740</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="短編小説">158541</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Love" aoffset="1456" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="Love" saoffset="1456" salength="4" rank="19">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ロマンチック・ラブ">548199</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アガペー">507563</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ミンネ">195194</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="チャリティー">129515</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="愛">10445</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="next to" aoffset="1485" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="next to" saoffset="1485" salength="7" rank="60">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Ready to be a lady">2200767</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Chain of Responsibility パターン">1401220</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="第63回トニー賞">1772941</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="踏切">17044</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="To LOVEる -とらぶる-のディスコグラフィ">1872654</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Hiroyuki Sanada" aoffset="1493" alength="15" ext_length="0">
-				<subanchor sarel="0" saname="Hiroyuki Sanada" saoffset="1493" salength="15" rank="1">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="真田広之">96415</tobep>
+			<anchor arel="1" aname="Hiroyuki Sanada" aoffset="1493" alength="15" ext_length="0">
+				<subanchor sarel="1" saname="Hiroyuki Sanada" saoffset="1493" salength="15" rank="1">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="真田広之">96415</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="Sanada" saoffset="1502" salength="6" rank="39">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="真田町">114899</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="真田氏">217540</tobep>
+				<subanchor sarel="-1" saname="Sanada" saoffset="1502" salength="6" rank="39">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="真田町">114899</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="真田氏">217540</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="who" aoffset="1510" alength="3" ext_length="0">
-				<subanchor sarel="0" saname="who" saoffset="1510" salength="3" rank="64">
+			<anchor arel="-1" aname="who" aoffset="1510" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="who" saoffset="1510" salength="3" rank="64">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="リリアン・J・ブラウン">2435055</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Who&apos;s Who">710460</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Who (UNIX)">1718262</tobep>
@@ -294,8 +294,8 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Marquis Who&apos;s Who">710289</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="also played" aoffset="1514" alength="11" ext_length="0">
-				<subanchor sarel="0" saname="also played" saoffset="1514" salength="11" rank="58">
+			<anchor arel="-1" aname="also played" aoffset="1514" alength="11" ext_length="0">
+				<subanchor sarel="-1" saname="also played" saoffset="1514" salength="11" rank="58">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="一人二役">1245055</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="SONPUB">1348830</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="2010年コピアポ鉱山落盤事故への反応">2223520</tobep>
@@ -303,45 +303,45 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="キャット・スティーヴンス">1306404</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Takayama" aoffset="1532" alength="8" ext_length="0">
-				<subanchor sarel="0" saname="Takayama" saoffset="1532" salength="8" rank="20">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="高山善廣">103354</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="高山村_(長野県)">161074</tobep>
+			<anchor arel="-1" aname="Takayama" aoffset="1532" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="Takayama" saoffset="1532" salength="8" rank="20">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="高山善廣">103354</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="高山村_(長野県)">161074</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="married" aoffset="1589" alength="7" ext_length="0">
-				<subanchor sarel="0" saname="married" saoffset="1589" salength="7" rank="33">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="同性結婚">156589</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="結婚">29657</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="結婚式">45133</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヒエロス・ガモス">1039035</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="いとこ婚">792648</tobep>
+			<anchor arel="-1" aname="married" aoffset="1589" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="married" saoffset="1589" salength="7" rank="33">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="同性結婚">156589</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="結婚">29657</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="結婚式">45133</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヒエロス・ガモス">1039035</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="いとこ婚">792648</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Great" aoffset="1642" alength="5" ext_length="16">
-				<subanchor sarel="0" saname="Great" saoffset="1642" salength="5" rank="63">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="オオアオサギ">2043855</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="列強">252633</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="オックスフォード大学">15520</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アカゲラ">89353</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="サンカノゴイ">85163</tobep>
+			<anchor arel="1" aname="Great" aoffset="1642" alength="5" ext_length="16">
+				<subanchor sarel="-1" saname="Great" saoffset="1642" salength="5" rank="63">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="オオアオサギ">2043855</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="列強">252633</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="オックスフォード大学">15520</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アカゲラ">89353</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="サンカノゴイ">85163</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="Great Teacher Onizuka" saoffset="1642" salength="21" rank="3">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="GTO_(漫画)">21043</tobep>
+				<subanchor sarel="1" saname="Great Teacher Onizuka" saoffset="1642" salength="21" rank="3">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="GTO_(漫画)">21043</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="Teacher" saoffset="1648" salength="7" rank="7">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="教員">74338</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="音楽教育">212987</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ラマ (チベット)">1767718</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="教育">8638</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="教授">1153243</tobep>
+				<subanchor sarel="-1" saname="Teacher" saoffset="1648" salength="7" rank="7">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="教員">74338</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="音楽教育">212987</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ラマ (チベット)">1767718</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="教育">8638</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="教授">1153243</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="Onizuka" saoffset="1656" salength="7" rank="41">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="鬼塚駅">210853</tobep>
+				<subanchor sarel="-1" saname="Onizuka" saoffset="1656" salength="7" rank="41">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="鬼塚駅">210853</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="have" aoffset="1670" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="have" saoffset="1670" salength="4" rank="66">
+			<anchor arel="-1" aname="have" aoffset="1670" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="have" saoffset="1670" salength="4" rank="66">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ソフトさ〜くるクレージュ">1006366</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="所有権">144840</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="I Have a Dream">2040533</tobep>
@@ -349,17 +349,17 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="妊娠">94719</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="two" aoffset="1675" alength="3" ext_length="0">
-				<subanchor sarel="0" saname="two" saoffset="1675" salength="3" rank="62">
+			<anchor arel="-1" aname="two" aoffset="1675" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="two" saoffset="1675" salength="3" rank="62">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="二大政党制">217837</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="2">11226</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="10年紀">7675</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="セグンダ・ディビシオン">1079455</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="2次元">242047</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="2次元">242047</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="born" aoffset="1699" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="born" saoffset="1699" salength="4" rank="54">
+			<anchor arel="-1" aname="born" aoffset="1699" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="born" saoffset="1699" salength="4" rank="54">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="処女懐胎">1838100</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="分娩">127423</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="誕生">536087</tobep>
@@ -367,50 +367,50 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ボーン">725820</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="TV" aoffset="1759" alength="2" ext_length="6">
-				<subanchor sarel="0" saname="TV" saoffset="1759" salength="2" rank="42">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="テレビ番組">297</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title=".tv">960301</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="テレビジョン放送局">1634</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="テレビ">296</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="リモコンキーID">73189</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="司会">160601</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="テレビ映画">224616</tobep>
+			<anchor arel="1" aname="TV" aoffset="1759" alength="2" ext_length="6">
+				<subanchor sarel="-1" saname="TV" saoffset="1759" salength="2" rank="42">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="テレビ番組">297</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title=".tv">960301</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="テレビジョン放送局">1634</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="テレビ">296</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="リモコンキーID">73189</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="司会">160601</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="テレビ映画">224616</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="TV Drama" saoffset="1759" salength="8" rank="43">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="テレビドラマ">25910</tobep>
+				<subanchor sarel="1" saname="TV Drama" saoffset="1759" salength="8" rank="43">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="テレビドラマ">25910</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="Drama" saoffset="1762" salength="5" rank="40">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ドラマ">25909</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ピューリッツァー賞_戯曲部門">503496</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ラジオドラマ">187325</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="テレビドラマ">25910</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="韓国ドラマ">149753</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="昼ドラ">42169</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="Kaseifu no Mita" aoffset="1823" alength="15" ext_length="0">
-				<subanchor sarel="0" saname="Kaseifu no Mita" saoffset="1823" salength="15" rank="2">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="家政婦のミタ">2435728</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ミタ制">2056259</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="三田通り">844721</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アプランタ">1002065</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="御田八幡神社">246517</tobep>
-				</subanchor>
-				<subanchor sarel="0" saname="no" saoffset="1831" salength="2" rank="57">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ノルウェー語">92543</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="大野町">189607</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title=".no">932255</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="大野市">117211</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="大野町 (大分県)">210074</tobep>
-				</subanchor>
-				<subanchor sarel="0" saname="Mita" saoffset="1834" salength="4" rank="28">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="三田_(目黒区)">1322271</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="三田駅_(東京都)">13852</tobep>
+				<subanchor sarel="-1" saname="Drama" saoffset="1762" salength="5" rank="40">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ドラマ">25909</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ピューリッツァー賞_戯曲部門">503496</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ラジオドラマ">187325</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="テレビドラマ">25910</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="韓国ドラマ">149753</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="昼ドラ">42169</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Ji" aoffset="1936" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="Ji" saoffset="1936" salength="2" rank="35">
+			<anchor arel="1" aname="Kaseifu no Mita" aoffset="1823" alength="15" ext_length="0">
+				<subanchor sarel="1" saname="Kaseifu no Mita" saoffset="1823" salength="15" rank="2">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="家政婦のミタ">2435728</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ミタ制">2056259</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="三田通り">844721</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アプランタ">1002065</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="御田八幡神社">246517</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="no" saoffset="1831" salength="2" rank="57">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ノルウェー語">92543</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="大野町">189607</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title=".no">932255</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="大野市">117211</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="大野町 (大分県)">210074</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Mita" saoffset="1834" salength="4" rank="28">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="三田_(目黒区)">1322271</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="三田駅_(東京都)">13852</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Ji" aoffset="1936" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="Ji" saoffset="1936" salength="2" rank="35">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="王寺町">102332</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="戟">288294</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="JI">126059</tobep>
@@ -418,66 +418,66 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="善通寺">88547</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Hour" aoffset="1950" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="Hour" saoffset="1950" salength="4" rank="28">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="時課">1658032</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="時間">3974</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="MediaWiki:Gadget-CommentsInLocalTime.js">1856642</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="水星の日面通過 (金星)">924445</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="時間 (単位)">11335</tobep>
+			<anchor arel="-1" aname="Hour" aoffset="1950" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="Hour" saoffset="1950" salength="4" rank="28">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="時課">1658032</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="時間">3974</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="MediaWiki:Gadget-CommentsInLocalTime.js">1856642</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="水星の日面通過 (金星)">924445</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="時間 (単位)">11335</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Emergency" aoffset="1955" alength="9" ext_length="5">
-				<subanchor sarel="0" saname="Emergency" saoffset="1955" salength="9" rank="26">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="非常事態宣言">463562</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="緊急">1400453</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="救急救命室">794939</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="救急医学">204435</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="防災">63150</tobep>
+			<anchor arel="1" aname="Emergency" aoffset="1955" alength="9" ext_length="5">
+				<subanchor sarel="-1" saname="Emergency" saoffset="1955" salength="9" rank="26">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="非常事態宣言">463562</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="緊急">1400453</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="救急救命室">794939</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="救急医学">204435</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="防災">63150</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="Emergency Ward" saoffset="1955" salength="14" rank="10">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="静かな緊急事態">1903934</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="救急救命室">794939</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヨーロッパ救急医学会">2381147</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アジア救急医学会">2381131</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ニーナ・シモン">796837</tobep>
+				<subanchor sarel="1" saname="Emergency Ward" saoffset="1955" salength="14" rank="10">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="静かな緊急事態">1903934</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="救急救命室">794939</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヨーロッパ救急医学会">2381147</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アジア救急医学会">2381131</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ニーナ・シモン">796837</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="Ward" saoffset="1965" salength="4" rank="33">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="病院">24320</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ウォード">274785</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="東京都区部">1303617</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="魔術">23757</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="区_(行政区画)">1576038</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="Hana" aoffset="2026" alength="4" ext_length="11">
-				<subanchor sarel="0" saname="Hana" saoffset="2026" salength="4" rank="38">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="花_(ORANGE_RANGEの曲)">449738</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="花よりもなほ">488307</tobep>
-				</subanchor>
-				<subanchor sarel="0" saname="Hana Yori Dango" saoffset="2026" salength="15" rank="6">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="花より男子">115545</tobep>
-				</subanchor>
-				<subanchor sarel="0" saname="Dango" saoffset="2036" salength="5" rank="26">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="団子">192246</tobep>
+				<subanchor sarel="-1" saname="Ward" saoffset="1965" salength="4" rank="33">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="病院">24320</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ウォード">274785</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="東京都区部">1303617</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="魔術">23757</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="区_(行政区画)">1576038</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Over" aoffset="2061" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="Over" saoffset="2061" salength="4" rank="49">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="跨線橋">180886</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="球面調和関数表">671595</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ベクトル束">982152</tobep>
+			<anchor arel="1" aname="Hana" aoffset="2026" alength="4" ext_length="11">
+				<subanchor sarel="-1" saname="Hana" saoffset="2026" salength="4" rank="38">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="花_(ORANGE_RANGEの曲)">449738</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="花よりもなほ">488307</tobep>
+				</subanchor>
+				<subanchor sarel="1" saname="Hana Yori Dango" saoffset="2026" salength="15" rank="6">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="花より男子">115545</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Dango" saoffset="2036" salength="5" rank="26">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="団子">192246</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Over" aoffset="2061" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="Over" saoffset="2061" salength="4" rank="49">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="跨線橋">180886</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="球面調和関数表">671595</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ベクトル束">982152</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="分数">8076</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="独占禁止法">1343190</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Furuhata Ninzaburo" aoffset="2128" alength="18" ext_length="0">
-				<subanchor sarel="0" saname="Furuhata Ninzaburo" saoffset="2128" salength="18" rank="5">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="古畑任三郎">79778</tobep>
+			<anchor arel="1" aname="Furuhata Ninzaburo" aoffset="2128" alength="18" ext_length="0">
+				<subanchor sarel="1" saname="Furuhata Ninzaburo" saoffset="2128" salength="18" rank="5">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="古畑任三郎">79778</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Final" aoffset="2147" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="Final" saoffset="2147" salength="5" rank="50">
+			<anchor arel="-1" aname="Final" aoffset="2147" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="Final" saoffset="2147" salength="5" rank="50">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="2006 FIFAワールドカップ・決勝">594309</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="2010 FIFAワールドカップ・決勝">2122087</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="韻母">193682</tobep>
@@ -485,39 +485,39 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="決勝戦">177156</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Hotaru" aoffset="2305" alength="6" ext_length="8">
-				<subanchor sarel="0" saname="Hotaru" saoffset="2305" salength="6" rank="37">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="蛍/少年">2140509</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="土萠ほたる">937026</tobep>
+			<anchor arel="1" aname="Hotaru" aoffset="2305" alength="6" ext_length="8">
+				<subanchor sarel="-1" saname="Hotaru" saoffset="2305" salength="6" rank="37">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="蛍/少年">2140509</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="土萠ほたる">937026</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="Hotaru no Haka" saoffset="2305" salength="14" rank="8">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="火垂るの墓">52999</tobep>
+				<subanchor sarel="1" saname="Hotaru no Haka" saoffset="2305" salength="14" rank="8">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="火垂るの墓">52999</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="Haka" saoffset="2315" salength="4" rank="19">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ハカ_(ダンス)">206592</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="FCハカ">1444854</tobep>
+				<subanchor sarel="-1" saname="Haka" saoffset="2315" salength="4" rank="19">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ハカ_(ダンス)">206592</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="FCハカ">1444854</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="ka" aoffset="2514" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="ka" saoffset="2514" salength="2" rank="25">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="年">3629</tobep>
+			<anchor arel="-1" aname="ka" aoffset="2514" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="ka" saoffset="2514" salength="2" rank="25">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="年">3629</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="KA">154243</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="花押">267705</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="カ (ファラオ)">2109647</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="古代エジプト人の魂">2309417</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Beauty" aoffset="2533" alength="6" ext_length="0">
-				<subanchor sarel="0" saname="Beauty" saoffset="2533" salength="6" rank="16">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="美">26826</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="数学的な美">1880727</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ボトムネス">1050519</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="美容所">211415</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="化粧品">45914</tobep>
+			<anchor arel="-1" aname="Beauty" aoffset="2533" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="Beauty" saoffset="2533" salength="6" rank="16">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="美">26826</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="数学的な美">1880727</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ボトムネス">1050519</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="美容所">211415</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="化粧品">45914</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="or" aoffset="2540" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="or" saoffset="2540" salength="2" rank="51">
+			<anchor arel="-1" aname="or" aoffset="2540" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="or" saoffset="2540" salength="2" rank="51">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ティンクチャー (紋章学)">1512500</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="OR">16422</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="論理和">9737</tobep>
@@ -525,94 +525,94 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="金色">177245</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Matsu" aoffset="2618" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="Matsu" saoffset="2618" salength="5" rank="16">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="媽祖">147485</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="松型駆逐艦">340183</tobep>
+			<anchor arel="-1" aname="Matsu" aoffset="2618" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="Matsu" saoffset="2618" salength="5" rank="16">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="媽祖">147485</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="松型駆逐艦">340183</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Yamato" aoffset="2702" alength="6" ext_length="10">
-				<subanchor sarel="0" saname="Yamato" saoffset="2702" salength="6" rank="18">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="大和国">5187</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="YAMATO_(プロレスラー)">1019373</tobep>
+			<anchor arel="-1" aname="Yamato" aoffset="2702" alength="6" ext_length="10">
+				<subanchor sarel="-1" saname="Yamato" saoffset="2702" salength="6" rank="18">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="大和国">5187</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="YAMATO_(プロレスラー)">1019373</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="Yamato Nadeshiko" saoffset="2702" salength="16" rank="14">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="NO.NEW YORK">2367657</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="小野今日子">773494</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="やまとなでしこ">54051</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="大和撫子魂">967333</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="立花綾乃">2367979</tobep>
+				<subanchor sarel="-1" saname="Yamato Nadeshiko" saoffset="2702" salength="16" rank="14">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="NO.NEW YORK">2367657</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="小野今日子">773494</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="やまとなでしこ">54051</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="大和撫子魂">967333</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="立花綾乃">2367979</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="Nadeshiko" saoffset="2709" salength="9" rank="31">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="やまとなでしこ">54051</tobep>
+				<subanchor sarel="1" saname="Nadeshiko" saoffset="2709" salength="9" rank="31">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="やまとなでしこ">54051</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="One" aoffset="2835" alength="3" ext_length="0">
-				<subanchor sarel="0" saname="One" saoffset="2835" salength="3" rank="52">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="UEFA欧州選手権1996">151981</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="1">11227</tobep>
+			<anchor arel="-1" aname="One" aoffset="2835" alength="3" ext_length="0">
+				<subanchor sarel="-1" saname="One" saoffset="2835" salength="3" rank="52">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="UEFA欧州選手権1996">151981</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="1">11227</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="UEFA欧州選手権1988">347826</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="1986 FIFAワールドカップ">76468</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="UEFA欧州選手権1984">1108362</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Ringu" aoffset="2986" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="Ringu" saoffset="2986" salength="5" rank="12">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="リング_(映画)">1388304</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="リング_(鈴木光司の小説)">290118</tobep>
+			<anchor arel="1" aname="Ringu" aoffset="2986" alength="5" ext_length="0">
+				<subanchor sarel="1" saname="Ringu" saoffset="2986" salength="5" rank="12">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="リング_(映画)">1388304</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="リング_(鈴木光司の小説)">290118</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Majo no Jouken" aoffset="3052" alength="14" ext_length="0">
-				<subanchor sarel="0" saname="Majo no Jouken" saoffset="3052" salength="14" rank="7">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="魔女の条件">294016</tobep>
+			<anchor arel="1" aname="Majo no Jouken" aoffset="3052" alength="14" ext_length="0">
+				<subanchor sarel="1" saname="Majo no Jouken" saoffset="3052" salength="14" rank="7">
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="魔女の条件">294016</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Sweet" aoffset="3324" alength="5" ext_length="7">
-				<subanchor sarel="0" saname="Sweet" saoffset="3324" salength="5" rank="20">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="デザート">27685</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="菓子">22324</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ミタイ">1835851</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="キャンディ">84521</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="甘味">23242</tobep>
+			<anchor arel="-1" aname="Sweet" aoffset="3324" alength="5" ext_length="7">
+				<subanchor sarel="-1" saname="Sweet" saoffset="3324" salength="5" rank="20">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="デザート">27685</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="菓子">22324</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ミタイ">1835851</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="キャンディ">84521</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="甘味">23242</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="Sweet Season" saoffset="3324" salength="12" rank="15">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="L_(浜崎あゆみのシングル)">2183102</tobep>
+				<subanchor sarel="-1" saname="Sweet Season" saoffset="3324" salength="12" rank="15">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="L_(浜崎あゆみのシングル)">2183102</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="Season" saoffset="3330" salength="6" rank="22">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="季節">10335</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="2010年のNASCARスプリントカップ・シリーズ">2087212</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="リーガ・エスパニョーラ2008-2009">1834563</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="1994年のメジャーリーグベースボール">1709643</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="リーガ・エスパニョーラ2009-2010">1836556</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="Midnight" aoffset="3395" alength="8" ext_length="8">
-				<subanchor sarel="0" saname="Midnight" saoffset="3395" salength="8" rank="44">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="MIDNIGHT HALLELUJAH">2282940</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="真夜中">243950</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="MIDNIGHT 2 CALL">1624115</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="深夜">1521392</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Midnight Commander">1792623</tobep>
-				</subanchor>
-				<subanchor sarel="0" saname="Midnight Express" saoffset="3395" salength="16" rank="9">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ミッドナイト・エクスプレス_(プロレス)">2182122</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ミッドナイト・エクスプレス">2189665</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="MIDNIGHT EXPRESS～天涯へ">1967310</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="MIDNIGHT EXPRESS〜天涯へ">1964364</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ミッドナイト・エクスプレス_(映画)">2329614</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="J-WAVE HOLIDAY SPECIAL">251686</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="シッチェス・カタロニア国際映画祭">1124738</tobep>
-				</subanchor>
-				<subanchor sarel="0" saname="Express" saoffset="3404" salength="7" rank="42">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="急行バス">100941</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="遺伝子発現">457396</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="速達郵便">313875</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="急行列車">13496</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="エクスプレス">144316</tobep>
+				<subanchor sarel="-1" saname="Season" saoffset="3330" salength="6" rank="22">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="季節">10335</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="2010年のNASCARスプリントカップ・シリーズ">2087212</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="リーガ・エスパニョーラ2008-2009">1834563</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="1994年のメジャーリーグベースボール">1709643</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="リーガ・エスパニョーラ2009-2010">1836556</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Doctor" aoffset="3566" alength="6" ext_length="0">
-				<subanchor sarel="0" saname="Doctor" saoffset="3566" salength="6" rank="36">
+			<anchor arel="-1" aname="Midnight" aoffset="3395" alength="8" ext_length="8">
+				<subanchor sarel="-1" saname="Midnight" saoffset="3395" salength="8" rank="44">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="MIDNIGHT HALLELUJAH">2282940</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="真夜中">243950</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="MIDNIGHT 2 CALL">1624115</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="深夜">1521392</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Midnight Commander">1792623</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Midnight Express" saoffset="3395" salength="16" rank="9">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ミッドナイト・エクスプレス_(プロレス)">2182122</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ミッドナイト・エクスプレス">2189665</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="MIDNIGHT EXPRESS～天涯へ">1967310</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="MIDNIGHT EXPRESS〜天涯へ">1964364</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ミッドナイト・エクスプレス_(映画)">2329614</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="J-WAVE HOLIDAY SPECIAL">251686</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="シッチェス・カタロニア国際映画祭">1124738</tobep>
+				</subanchor>
+				<subanchor sarel="-1" saname="Express" saoffset="3404" salength="7" rank="42">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="急行バス">100941</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="遺伝子発現">457396</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="速達郵便">313875</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="急行列車">13496</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="エクスプレス">144316</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="Doctor" aoffset="3566" alength="6" ext_length="0">
+				<subanchor sarel="-1" saname="Doctor" saoffset="3566" salength="6" rank="36">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="博士">65243</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ドクター">180117</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="医師">23675</tobep>
@@ -622,91 +622,91 @@
 				</subanchor>
 			</anchor>
 			<anchor arel="0" aname="Koi" aoffset="3639" alength="3" ext_length="0">
-				<subanchor sarel="0" saname="Koi" saoffset="3639" salength="3" rank="30">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="コイ#観賞魚・錦鯉（ニシキゴイ）">7429</tobep>
+				<subanchor sarel="-1" saname="Koi" saoffset="3639" salength="3" rank="30">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="コイ#観賞魚・錦鯉（ニシキゴイ）">7429</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="ga" aoffset="3828" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="ga" saoffset="3828" salength="2" rank="36">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="大神駅">210477</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ガリシア語">71478</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ガロン">224632</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title=".ga">1092940</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アイルランド語">27825</tobep>
+			<anchor arel="1" aname="ga" aoffset="3828" alength="2" ext_length="0">
+				<subanchor sarel="1" saname="ga" saoffset="3828" salength="2" rank="36">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="大神駅">210477</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ガリシア語">71478</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ガロン">224632</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title=".ga">1092940</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="アイルランド語">27825</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Toki" aoffset="3841" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="Toki" saoffset="3841" salength="4" rank="24">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="とき_(列車)">43325</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="JuJu伝説">2379311</tobep>
+			<anchor arel="-1" aname="Toki" aoffset="3841" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="Toki" saoffset="3841" salength="4" rank="24">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="とき_(列車)">43325</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="JuJu伝説">2379311</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Time" aoffset="3856" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="Time" saoffset="3856" salength="4" rank="35">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="システム時刻">1771739</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="時間">3974</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="時間領域">1260197</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="タイムトラベル">1971274</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Time (UNIX)">1770820</tobep>
+			<anchor arel="-1" aname="Time" aoffset="3856" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="Time" saoffset="3856" salength="4" rank="35">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="システム時刻">1771739</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="時間">3974</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="時間領域">1260197</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="タイムトラベル">1971274</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Time (UNIX)">1770820</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Himawari" aoffset="3928" alength="8" ext_length="0">
-				<subanchor sarel="0" saname="Himawari" saoffset="3928" salength="8" rank="25">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ひまわりっ!">821908</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ひまわり_(気象衛星)">9876</tobep>
+			<anchor arel="-1" aname="Himawari" aoffset="3928" alength="8" ext_length="0">
+				<subanchor sarel="-1" saname="Himawari" saoffset="3928" salength="8" rank="25">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ひまわりっ!">821908</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ひまわり_(気象衛星)">9876</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Heart" aoffset="4007" alength="5" ext_length="0">
-				<subanchor sarel="0" saname="Heart" saoffset="4007" salength="5" rank="12">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="心不全">81691</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="心血管疾患">2107529</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="心臓移植">738244</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ハート (シンボル)">369968</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="心臓">40009</tobep>
+			<anchor arel="-1" aname="Heart" aoffset="4007" alength="5" ext_length="0">
+				<subanchor sarel="-1" saname="Heart" saoffset="4007" salength="5" rank="12">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="心不全">81691</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="心血管疾患">2107529</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="心臓移植">738244</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ハート (シンボル)">369968</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="心臓">40009</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="ni" aoffset="4013" alength="2" ext_length="0">
-				<subanchor sarel="0" saname="ni" saoffset="4013" salength="2" rank="38">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="金剛力士">123748</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ニッケルの同位体">1689865</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title=".ni">1692893</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ISO 3166-2:NI">2380366</tobep>
+			<anchor arel="-1" aname="ni" aoffset="4013" alength="2" ext_length="0">
+				<subanchor sarel="-1" saname="ni" saoffset="4013" salength="2" rank="38">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="金剛力士">123748</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ニッケルの同位体">1689865</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title=".ni">1692893</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ISO 3166-2:NI">2380366</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="S" aoffset="4016" alength="1" ext_length="0">
-				<subanchor sarel="0" saname="S" saoffset="4016" salength="1" rank="34">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="秒">4497</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="シリング">932312</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="簡体字">49835</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="S">16743</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="固体">7096</tobep>
+			<anchor arel="-1" aname="S" aoffset="4016" alength="1" ext_length="0">
+				<subanchor sarel="-1" saname="S" saoffset="4016" salength="1" rank="34">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="秒">4497</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="シリング">932312</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="簡体字">49835</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="S">16743</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="固体">7096</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Arms" aoffset="4325" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="Arms" saoffset="4325" salength="4" rank="14">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="紋章学">44061</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="銃">24364</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="武器">16209</tobep>
+			<anchor arel="-1" aname="Arms" aoffset="4325" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="Arms" saoffset="4325" salength="4" rank="14">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="紋章学">44061</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="銃">24364</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="武器">16209</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="イギリスの国章">565463</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="紋章">34694</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="紋章">34694</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="External" aoffset="4569" alength="8" ext_length="6">
-				<subanchor sarel="0" saname="External" saoffset="4569" salength="8" rank="41">
+			<anchor arel="-1" aname="External" aoffset="4569" alength="8" ext_length="6">
+				<subanchor sarel="-1" saname="External" saoffset="4569" salength="8" rank="41">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="外交政策">818329</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="外腹斜筋">547212</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="体外受精 (生物)">944323</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="外肋間筋">547021</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="外部性">148576</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="External links" saoffset="4569" salength="14" rank="48">
+				<subanchor sarel="-1" saname="External links" saoffset="4569" salength="14" rank="48">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヴィタウタス・ランズベルギス/履歴">388760</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="鼻背動脈">2296723</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="MediaWiki:Common.css">386092</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ハイパーリンク">26918</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="対外債務">2302387</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="links" saoffset="4578" salength="5" rank="55">
+				<subanchor sarel="-1" saname="links" saoffset="4578" salength="5" rank="55">
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ハードリンク">271312</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ハイパーリンク">26918</tobep>
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="データ通信">192786</tobep>
@@ -714,38 +714,38 @@
 					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="リンク">8840</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="Sumitomo Life" aoffset="4808" alength="13" ext_length="0">
-				<subanchor sarel="0" saname="Sumitomo Life" saoffset="4808" salength="13" rank="131">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="住友化学">72375</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="住友生命保険">254351</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="SLM">535473</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="三井住友">296394</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="住友ベークライト">592133</tobep>
+			<anchor arel="1" aname="Sumitomo Life" aoffset="4808" alength="13" ext_length="0">
+				<subanchor sarel="1" saname="Sumitomo Life" saoffset="4808" salength="13" rank="131">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="住友化学">72375</tobep>
+					<tobep tbrel="1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="住友生命保険">254351</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="SLM">535473</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="三井住友">296394</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="住友ベークライト">592133</tobep>
 				</subanchor>
-				<subanchor sarel="0" saname="Life" saoffset="4817" salength="4" rank="37">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="地球外生命">1476</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="生命">4035</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="生命保険">96129</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="無期刑">586602</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヒットポイント">25929</tobep>
-				</subanchor>
-			</anchor>
-			<anchor arel="0" aname="English" aoffset="5015" alength="7" ext_length="0">
-				<subanchor sarel="0" saname="English" saoffset="5015" salength="7" rank="11">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="イギリス">1698893</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="イングランド">16627</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="英語">3377</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="英語学">130577</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ブルドッグ">577636</tobep>
+				<subanchor sarel="-1" saname="Life" saoffset="4817" salength="4" rank="37">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="地球外生命">1476</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="生命">4035</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="生命保険">96129</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="無期刑">586602</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ヒットポイント">25929</tobep>
 				</subanchor>
 			</anchor>
-			<anchor arel="0" aname="info" aoffset="5023" alength="4" ext_length="0">
-				<subanchor sarel="0" saname="info" saoffset="5023" salength="4" rank="30">
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="情報技術">68519</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Texinfo">850621</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="情報">1598402</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="リトアニアの都市の一覧">1287708</tobep>
-					<tobep tbrel="0" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title=".info">413967</tobep>
+			<anchor arel="-1" aname="English" aoffset="5015" alength="7" ext_length="0">
+				<subanchor sarel="-1" saname="English" saoffset="5015" salength="7" rank="11">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="イギリス">1698893</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="イングランド">16627</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="英語">3377</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="英語学">130577</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="ブルドッグ">577636</tobep>
+				</subanchor>
+			</anchor>
+			<anchor arel="-1" aname="info" aoffset="5023" alength="4" ext_length="0">
+				<subanchor sarel="-1" saname="info" saoffset="5023" salength="4" rank="30">
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="情報技術">68519</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="Texinfo">850621</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="情報">1598402</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title="リトアニアの都市の一覧">1287708</tobep>
+					<tobep tbrel="-1" timein="" timeout="" tboffset="0" tbstartp="0" lang="ja" title=".info">413967</tobep>
 				</subanchor>
 			</anchor>
 		</outgoinglinks>
