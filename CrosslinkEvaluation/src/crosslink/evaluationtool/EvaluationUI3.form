@@ -513,8 +513,8 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="RPCurveRadioButton" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="454" max="32767" attributes="0"/>
-                  <Component id="getplotsButton" min="-2" pref="104" max="-2" attributes="0"/>
+                  <EmptySpace pref="440" max="32767" attributes="0"/>
+                  <Component id="getplotsButton" min="-2" pref="118" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -523,7 +523,7 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="getplotsButton" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
+                      <Component id="getplotsButton" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
                       <Component id="RPCurveRadioButton" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>

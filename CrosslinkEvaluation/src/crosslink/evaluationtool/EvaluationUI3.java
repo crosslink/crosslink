@@ -435,15 +435,15 @@ public class EvaluationUI3 extends JFrame {
             .add(plotPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .add(RPCurveRadioButton)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 454, Short.MAX_VALUE)
-                .add(getplotsButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 104, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 440, Short.MAX_VALUE)
+                .add(getplotsButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 118, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         plotPanelLayout.setVerticalGroup(
             plotPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(plotPanelLayout.createSequentialGroup()
                 .add(plotPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(getplotsButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 22, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(getplotsButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 25, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                     .add(RPCurveRadioButton))
                 .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
