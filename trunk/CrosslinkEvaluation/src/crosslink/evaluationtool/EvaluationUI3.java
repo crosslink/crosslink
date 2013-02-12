@@ -610,6 +610,7 @@ public class EvaluationUI3 extends JFrame {
         });
 
         buttonGroupLinkDirection.add(jRBCJK2English);
+        jRBCJK2English.setSelected(true);
         jRBCJK2English.setText("CJK to English");
         jRBCJK2English.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
         jRBCJK2English.addActionListener(new java.awt.event.ActionListener() {
@@ -619,9 +620,9 @@ public class EvaluationUI3 extends JFrame {
         });
 
         buttonGroupLinkDirection.add(jRadioLinkDirectionAll);
-        jRadioLinkDirectionAll.setSelected(true);
         jRadioLinkDirectionAll.setText("All");
         jRadioLinkDirectionAll.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
+        jRadioLinkDirectionAll.setEnabled(false);
         jRadioLinkDirectionAll.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioLinkDirectionAllActionPerformed(evt);
@@ -764,6 +765,7 @@ public class EvaluationUI3 extends JFrame {
             boolean useAnchorToBEP = false;
             int colorColumnNo = 10;
             int linewidthColumnNo = 11;
+            StringBuffer evaluationTypeStr = new StringBuffer();
 
             if (this.jRBalltopics.getModel().isSelected()) {
                 useAllTopics = true;
@@ -780,10 +782,35 @@ public class EvaluationUI3 extends JFrame {
 //            } else {
 //                useAnchorToFile = false;
 //            }
-            if (this.jRBAnchorToBEP.getModel().isSelected()) {
+            if (ResultSetManager.getInstance().getEveluationType() == ResultSetManager.A2B_WIKI_MANUAL)
+            	evaluationTypeStr.append("-MA-");
+            else
+            	evaluationTypeStr.append("-GT-");
+            
+            String cjkLang;
+            if (langSelected == Data.LANGUAGE_CHINESE)
+            	cjkLang = "J";
+            else if (langSelected == Data.LANGUAGE_CHINESE)
+            	cjkLang = "K";
+            else if (langSelected == Data.LANGUAGE_CHINESE)
+            	cjkLang = "C";
+            else
+            	cjkLang = "CJK";
+            if (linkDirection == Data.CJK_TO_ENGLISH) {
+            	evaluationTypeStr.append(cjkLang + "2E");
+            }
+            else {
+            	evaluationTypeStr.append("E2" + cjkLang );
+            }
+            
+            if (this.jRBAnchorToBEP.getModel().isSelected() || this.jRBAnchorToFile.getModel().isSelected()) {
                 useAnchorToBEP = true;
+                evaluationTypeStr.append("-A2F");
+                useAnchorToFile = true;
             } else {
                 useAnchorToBEP = false;
+                evaluationTypeStr.append("-F2F");
+                useAnchorToFile = false;
             }
 
             Vector data = this.realEvaTablePanel.getModelData();
@@ -886,12 +913,13 @@ public class EvaluationUI3 extends JFrame {
                 for (int j = 0; j < plotDatas.length; j++) {
                     Vector<Object[]> cool_data_points = (Vector<Object[]>) plotDatas[j];
                     JChartDialog jplot = new JChartDialog(this, false, plotTitle[j], cool_data_points, runScoresForSorting);
+                    jplot.showPlot();
 
                     // Export Selected Row Data to .CSV
-                    this.exportPlotDatatoCSV(plotTitle[j], cool_data_points);
+                    this.exportPlotDatatoCSV(plotTitle[j], cool_data_points, evaluationTypeStr.toString());
                     // End of Export to .CSV
 
-                    Point ploca = this.getLocation();
+//                    Point ploca = this.getLocation();
 //                    jplot.setLocation(ploca.x + j * 30, ploca.y + j * 30);
 //                    jplot.setVisible(true);
                 }
@@ -954,9 +982,9 @@ public class EvaluationUI3 extends JFrame {
 
     }
     
-    void exportPlotDatatoCSV(String plotType, Vector<Object[]> cool_data_points) {
+    void exportPlotDatatoCSV(String plotType, Vector<Object[]> cool_data_points, String evaluationTypeStr) {
         try {
-            String pdFileName = plotType.substring(plotType.indexOf(":") + 1) + this.getNowTime("MMddmmss") + ".CSV";
+            String pdFileName = plotType.substring(plotType.indexOf(":") + 1) + evaluationTypeStr/*this.getNowTime("MMddmmss")*/ + ".CSV";
             File csvFile = new File(pdFileName);
             BufferedWriter bw = new BufferedWriter(new FileWriter(csvFile, true));
             PrintWriter pw = new PrintWriter(bw);

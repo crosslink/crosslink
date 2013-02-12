@@ -7,6 +7,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Vector;
+
+import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
@@ -55,8 +57,12 @@ public class JChartDialog {
         plotDataSet = dataSet;
         this.runScores = runScores;
 
-        showPlotReport(plotTitle, plotDataSet);
+//        showPlotReport(plotTitle, plotDataSet);
 
+    }
+    
+    public void showPlot() {
+    	showPlotReport(plotTitle, plotDataSet);
     }
     
     public LegendItemCollection sortLegendItems(LegendItemCollection legendItems) {
