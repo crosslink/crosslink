@@ -397,7 +397,7 @@ public class Measures extends Data {
     //          maxAnchors == 0 or > size(): equal to size(), otherwise, specified number (e.g. 50)
     //          maxBepsPerAnchor == 0 or > size(): equal to size(), otherwise, specified number (e.g. 5)
     // notes02: Incoming links should be further modified
-    protected static Hashtable getF2BRunSetByGroup(File runfiles, int lang) throws Exception {
+    protected static Hashtable getF2BRunSetByGroup(File runfiles, int lang, int linkDirection) throws Exception {
 
         Hashtable f2bRunTableByGroup = null;
         try {
@@ -417,7 +417,24 @@ public class Measures extends Data {
             if (currentTargetLang == null || currentTargetLang.length() == 0)
             	throw new Exception(String.format("Incorrect run file - %s which dosen't provide the target language", runfiles.getAbsoluteFile()));
 
-            if ((langMatchMap.get(currentTargetLang) & lang) > 0) {
+            String langNeedsChecked = null;
+            
+            if (linkDirection == ENGLISH_TO_CJK)
+            	langNeedsChecked = currentTargetLang;
+            else if (linkDirection == CJK_TO_ENGLISH)
+            	langNeedsChecked = currentSourceLang;
+            else {
+            	if (currentTargetLang.equalsIgnoreCase("en"))
+            		langNeedsChecked = currentSourceLang;
+            	else
+            		langNeedsChecked = currentTargetLang;
+            }
+            
+            
+            int thisRunLinkDirection = currentSourceLang.equalsIgnoreCase("en") ? ENGLISH_TO_CJK : CJK_TO_ENGLISH;
+
+            if ((langMatchMap.get(langNeedsChecked) & lang) > 0 && (linkDirection & thisRunLinkDirection) > 0) {
+//            if ((langMatchMap.get(currentTargetLang) & lang) > 0) {
 	            f2bRunTableByGroup = new Hashtable();
 	            runId = is.getRunId();
 	            // Loop Different Topics

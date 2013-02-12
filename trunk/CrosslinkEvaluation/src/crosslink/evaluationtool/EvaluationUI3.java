@@ -421,13 +421,12 @@ public class EvaluationUI3 extends JFrame {
         RPCurveRadioButton.setText("Recall-Precision Curves");
         RPCurveRadioButton.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
 
-        javax.swing.ActionMap actionMap = org.jdesktop.application.Application.getInstance().getContext().getActionMap(EvaluationUI3.class, this);
-//        getplotsButton.setAction(actionMap.get("getPlot")); // NOI18N
-//        getplotsButton.addActionListener(new java.awt.event.ActionListener() {
-//            public void actionPerformed(java.awt.event.ActionEvent evt) {
-//                getplotsButtonActionPerformed(evt);
-//            }
-//        });
+        getplotsButton.setText("Gen Plot");
+        getplotsButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                getplotsButtonActionPerformed(evt);
+            }
+        });
 
         org.jdesktop.layout.GroupLayout plotPanelLayout = new org.jdesktop.layout.GroupLayout(plotPanel);
         plotPanel.setLayout(plotPanelLayout);
@@ -673,6 +672,7 @@ public class EvaluationUI3 extends JFrame {
 
         crosslinkTaskMenu.setText("Crosslink Task");
 
+        javax.swing.ActionMap actionMap = org.jdesktop.application.Application.getInstance().getContext().getActionMap(EvaluationUI3.class, this);
         crosslink1MenuItem.setAction(actionMap.get("setCrosslinTask1")); // NOI18N
         crosslinkTaskMenu.add(crosslink1MenuItem);
 
