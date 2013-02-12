@@ -42,6 +42,9 @@ public class EvaTablePanel extends JPanel {
     
     private int[] pAtN = Data.pAtValue;
     
+	private String evaluationTypeStr;
+
+    
     /** Creates new form EvaTablePanel */
     public EvaTablePanel() {
         initComponents();
@@ -179,7 +182,7 @@ public class EvaTablePanel extends JPanel {
     
     void exportEvaTableToCSV() {
         try {
-            String fileName = "EvaluationTable_" + this.getNow("MMddmmss") + ".CSV";
+            String fileName = "EvaluationTable_" + evaluationTypeStr/*this.getNow("MMddmmss")*/ + ".CSV";
             File csvFile = new File(fileName);
             String[] columnTitle = new String[this.evasTable.getColumnCount()];
             for (int i=0; i<this.evasTable.getColumnCount(); i++) {
@@ -302,5 +305,9 @@ public class EvaTablePanel extends JPanel {
     private javax.swing.JTable evasTable;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
+
+	public void setEvaluationTypeString(String evaluationTypeString) {
+		this.evaluationTypeStr = evaluationTypeString;
+	}
     
 }

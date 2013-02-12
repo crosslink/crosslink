@@ -105,6 +105,7 @@ public class EvaluationUI3 extends JFrame {
         initComponents();
         
         jRBAnchorToFile.setEnabled(false);
+        jRadioLinkDirectionAll.setVisible(false);
         
 //        jRadioLangZh.setSelected(true);
         
@@ -421,12 +422,12 @@ public class EvaluationUI3 extends JFrame {
         RPCurveRadioButton.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
 
         javax.swing.ActionMap actionMap = org.jdesktop.application.Application.getInstance().getContext().getActionMap(EvaluationUI3.class, this);
-        getplotsButton.setAction(actionMap.get("getPlot")); // NOI18N
-        getplotsButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                getplotsButtonActionPerformed(evt);
-            }
-        });
+//        getplotsButton.setAction(actionMap.get("getPlot")); // NOI18N
+//        getplotsButton.addActionListener(new java.awt.event.ActionListener() {
+//            public void actionPerformed(java.awt.event.ActionEvent evt) {
+//                getplotsButtonActionPerformed(evt);
+//            }
+//        });
 
         org.jdesktop.layout.GroupLayout plotPanelLayout = new org.jdesktop.layout.GroupLayout(plotPanel);
         plotPanel.setLayout(plotPanelLayout);
@@ -435,17 +436,14 @@ public class EvaluationUI3 extends JFrame {
             .add(plotPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .add(RPCurveRadioButton)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 440, Short.MAX_VALUE)
-                .add(getplotsButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 118, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 379, Short.MAX_VALUE)
+                .add(getplotsButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 191, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
         );
         plotPanelLayout.setVerticalGroup(
             plotPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(plotPanelLayout.createSequentialGroup()
-                .add(plotPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(getplotsButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 25, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                    .add(RPCurveRadioButton))
-                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .add(plotPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                .add(getplotsButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 26, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(RPCurveRadioButton))
         );
 
         calculationPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Task Selection", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
@@ -699,14 +697,14 @@ public class EvaluationUI3 extends JFrame {
                 .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
                     .add(org.jdesktop.layout.GroupLayout.LEADING, layout.createSequentialGroup()
                         .addContainerGap()
+                        .add(plotPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, layout.createSequentialGroup()
+                        .addContainerGap()
                         .add(evatablePanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .add(org.jdesktop.layout.GroupLayout.LEADING, layout.createSequentialGroup()
                         .addContainerGap()
                         .add(jPanel1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .add(openfilesPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .add(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .add(plotPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .add(org.jdesktop.layout.GroupLayout.LEADING, layout.createSequentialGroup()
                         .addContainerGap()
                         .add(runtablePanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -758,6 +756,38 @@ public class EvaluationUI3 extends JFrame {
     	createPlot();
     }
     
+    private String genEvaluationTypeString() {
+        StringBuffer evaluationTypeStr = new StringBuffer();
+        if (ResultSetManager.getInstance().getEveluationType() == ResultSetManager.A2B_WIKI_MANUAL)
+        	evaluationTypeStr.append("MA-");
+        else
+        	evaluationTypeStr.append("GT-");
+        
+        String cjkLang;
+        if (langSelected == Data.LANGUAGE_JAPANESE)
+        	cjkLang = "J";
+        else if (langSelected == Data.LANGUAGE_KOREAN)
+        	cjkLang = "K";
+        else if (langSelected == Data.LANGUAGE_CHINESE)
+        	cjkLang = "C";
+        else
+        	cjkLang = "CJK";
+        if (linkDirection == Data.CJK_TO_ENGLISH) {
+        	evaluationTypeStr.append(cjkLang + "2E");
+        }
+        else {
+        	evaluationTypeStr.append("E2" + cjkLang );
+        }
+        
+        if (this.jRBAnchorToBEP.getModel().isSelected() || this.jRBAnchorToFile.getModel().isSelected()) {
+            evaluationTypeStr.append("-A2F");
+        } else {
+            evaluationTypeStr.append("-F2F");
+        }
+        
+        return evaluationTypeStr.toString();
+    }
+    
     private void createPlot() {
             boolean useAllTopics = true;
             boolean useFileToBep = false;
@@ -765,7 +795,7 @@ public class EvaluationUI3 extends JFrame {
             boolean useAnchorToBEP = false;
             int colorColumnNo = 10;
             int linewidthColumnNo = 11;
-            StringBuffer evaluationTypeStr = new StringBuffer();
+
 
             if (this.jRBalltopics.getModel().isSelected()) {
                 useAllTopics = true;
@@ -782,34 +812,12 @@ public class EvaluationUI3 extends JFrame {
 //            } else {
 //                useAnchorToFile = false;
 //            }
-            if (ResultSetManager.getInstance().getEveluationType() == ResultSetManager.A2B_WIKI_MANUAL)
-            	evaluationTypeStr.append("-MA-");
-            else
-            	evaluationTypeStr.append("-GT-");
-            
-            String cjkLang;
-            if (langSelected == Data.LANGUAGE_CHINESE)
-            	cjkLang = "J";
-            else if (langSelected == Data.LANGUAGE_CHINESE)
-            	cjkLang = "K";
-            else if (langSelected == Data.LANGUAGE_CHINESE)
-            	cjkLang = "C";
-            else
-            	cjkLang = "CJK";
-            if (linkDirection == Data.CJK_TO_ENGLISH) {
-            	evaluationTypeStr.append(cjkLang + "2E");
-            }
-            else {
-            	evaluationTypeStr.append("E2" + cjkLang );
-            }
             
             if (this.jRBAnchorToBEP.getModel().isSelected() || this.jRBAnchorToFile.getModel().isSelected()) {
                 useAnchorToBEP = true;
-                evaluationTypeStr.append("-A2F");
                 useAnchorToFile = true;
             } else {
                 useAnchorToBEP = false;
-                evaluationTypeStr.append("-F2F");
                 useAnchorToFile = false;
             }
 
@@ -916,7 +924,7 @@ public class EvaluationUI3 extends JFrame {
                     jplot.showPlot();
 
                     // Export Selected Row Data to .CSV
-                    this.exportPlotDatatoCSV(plotTitle[j], cool_data_points, evaluationTypeStr.toString());
+                    this.exportPlotDatatoCSV(plotTitle[j], cool_data_points, this.genEvaluationTypeString());
                     // End of Export to .CSV
 
 //                    Point ploca = this.getLocation();
@@ -935,7 +943,8 @@ public class EvaluationUI3 extends JFrame {
     	while (it.hasNext()) {
     		Entry<String, ArrayList<RunTopicScore>> entry = (Entry<String, ArrayList<RunTopicScore>>) it.next();
     		String measure = entry.getKey();
-            String pdFileName = (jRBA2BManualrs.isSelected() ? "ManulAssessment" : "AutoAssessment") + "-" + (jRBFileToFile.isSelected() ? "F2F" : "A2F") + "-" + measure + ".CSV";
+//            String pdFileName = (jRBA2BManualrs.isSelected() ? "ManulAssessment" : "AutoAssessment") + "-" + (jRBFileToFile.isSelected() ? "F2F" : "A2F") + "-" + measure + ".CSV";
+            String pdFileName = this.genEvaluationTypeString() + "-" + measure + ".CSV";
             ArrayList<RunTopicScore> runScores = entry.getValue();
             
 //            if (topicOrder == null) {
@@ -984,7 +993,7 @@ public class EvaluationUI3 extends JFrame {
     
     void exportPlotDatatoCSV(String plotType, Vector<Object[]> cool_data_points, String evaluationTypeStr) {
         try {
-            String pdFileName = plotType.substring(plotType.indexOf(":") + 1) + evaluationTypeStr/*this.getNowTime("MMddmmss")*/ + ".CSV";
+            String pdFileName = plotType.substring(plotType.indexOf(":") + 1) + "-" + evaluationTypeStr/*this.getNowTime("MMddmmss")*/ + ".CSV";
             File csvFile = new File(pdFileName);
             BufferedWriter bw = new BufferedWriter(new FileWriter(csvFile, true));
             PrintWriter pw = new PrintWriter(bw);
@@ -1029,8 +1038,10 @@ public class EvaluationUI3 extends JFrame {
     }
 
     private void fullevatableButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fullevatableButtonActionPerformed
+    	EvaTablePanel panel = new EvaTablePanel(this.realEvaTablePanel);
+    	panel.setEvaluationTypeString(this.genEvaluationTypeString());
         JDialog showFullEvaTable = new FullEvaTable(this);
-        ((FullEvaTable) showFullEvaTable).setTable(new EvaTablePanel(this.realEvaTablePanel));
+        ((FullEvaTable) showFullEvaTable).setTable(panel);
         showFullEvaTable.setVisible(true);
     }//GEN-LAST:event_fullevatableButtonActionPerformed
 
@@ -1318,7 +1329,9 @@ public class EvaluationUI3 extends JFrame {
 //                            Color.LIGHT_GRAY, Boolean.FALSE, Boolean.FALSE
 //                        });
                 result.add(new Object[]{
-                            er.runId, "outgoing", er.outgoing[metricsCalculation.R_MAP],
+                            er.runId, 
+                            "outgoing", 
+                            er.outgoing[metricsCalculation.R_MAP],
                             er.outgoing[metricsCalculation.R_RPREC], er.outgoing[metricsCalculation.R_P5],
                             er.outgoing[metricsCalculation.R_P10],
                             er.outgoing[metricsCalculation.R_P20],
