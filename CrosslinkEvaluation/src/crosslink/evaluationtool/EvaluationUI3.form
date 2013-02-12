@@ -541,9 +541,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="getplotsButton">
           <Properties>
-            <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
-              <action class="crosslink.evaluationtool.EvaluationUI3" id="getPlot" methodName="getPlot"/>
-            </Property>
+            <Property name="text" type="java.lang.String" value="Gen Plot"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="getplotsButtonActionPerformed"/>

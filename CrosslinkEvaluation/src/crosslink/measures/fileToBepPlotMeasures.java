@@ -66,7 +66,7 @@ public final class fileToBepPlotMeasures extends Measures {
 	            }
             }
         } else if (isAnchorGToFile || isAnchorGToBEP) {
-            runTable = getF2BRunSetByGroup(runfile, lang);
+            runTable = getF2BRunSetByGroup(runfile, lang, linkDirection);
             if (runTable != null) {
 	            resultfile = ResultSetManager.getInstance().getResultSetPathFile(currentSourceLang, currentTargetLang);
 	            resultTable = ResultSetManager.getInstance().getResultSet(resultfile);
