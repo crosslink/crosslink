@@ -21,6 +21,7 @@ import javax.xml.stream.XMLStreamReader;
 
 
 import crosslink.XML2TXT;
+import crosslink.rungenerator.AnchorType;
 import crosslink.rungenerator.InexSubmission;
 import crosslink.submission.Topic;
 
@@ -447,9 +448,10 @@ public class Measures extends Data {
 	                else
 	                	topicID = is.getTopic().get(i).getFile();
 	                
+	                String thisTopicName = null;
 	                Topic topic = null;
 	                if (topic == null) {
-	                	String thisTopicName = is.getTopic().get(i).getName();
+	                	thisTopicName = is.getTopic().get(i).getName();
 						topic = new Topic(topicID, thisTopicName, currentSourceLang);
 	                }
 	                if (convertToTextOffset) {
@@ -470,7 +472,7 @@ public class Measures extends Data {
 	                        maxAnchors = is.getTopic().get(i).getOutgoing().getAnchor().size();
 	                    }
 	                    for (int j = 0; j < maxAnchors; j++) {
-	
+	                    	AnchorType anchor = is.getTopic().get(i).getOutgoing().getAnchor().get(j);
 	                        // to get AnchorInfo: File, Offset & Length ------------
 	                        String aFile = "";
 	                        int aOffset = 0;
@@ -478,13 +480,16 @@ public class Measures extends Data {
 	
 	//                        aFile = is.getTopic().get(i).getOutgoing().getAnchor().get(j).getAnchor().getFile();
 	                        try {
-		                        aOffset = Integer.parseInt(is.getTopic().get(i).getOutgoing().getAnchor().get(j).getOffset());
+		                        aOffset = Integer.parseInt(anchor.getOffset());
 		//                        aOffset = String.valueOf(Math.floor(1000000000 * Math.random()));
 		                        if (is.getTopic().get(i).getOutgoing().getAnchor().get(j) == null) {
 		                            aLength = 10; //kludge - when there is no anchor in the submission, just F2F
 		                        } else {
-		                            aLength = Integer.parseInt(is.getTopic().get(i).getOutgoing().getAnchor().get(j).getLength());
+		                            aLength = Integer.parseInt(anchor.getLength());
 		                        }
+		                        
+		                        if (aOffset < 0 || aLength < 1)
+		                        	continue;
 		                        
 		                        if (convertToTextOffset) {
 		                        	aLength = XML2TXT.textLength(bytes, aOffset, aLength);
@@ -492,7 +497,9 @@ public class Measures extends Data {
 		                        }
 	                        }
 	                        catch (Exception ex) {
+	                        	System.err.println(thisTopicName + ": " + anchor.getName() + ", " + aOffset + ", " + aLength);
 	                        	ex.printStackTrace();
+	                        	continue;
 	                        }
 	                        // -----------------------------------------------------
 	                        String toFile = "";
