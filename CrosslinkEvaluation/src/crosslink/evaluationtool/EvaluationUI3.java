@@ -1250,6 +1250,24 @@ public class EvaluationUI3 extends JFrame {
     private void evaluateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_evaluateButtonActionPerformed
         evaluate();
     }//GEN-LAST:event_evaluateButtonActionPerformed
+    
+    private class RowComparator implements Comparator<ArrayList<Object[]>> {
+
+		@Override
+		public int compare(ArrayList<Object[]> o1, ArrayList<Object[]> o2) {
+			if (o1.get(0).length > 2 && o2.get(0).length > 2) {
+				double lmap1 = (Double) o1.get(0)[2]; //Double.parseDouble((String) o1.get(0)[2]);
+				double lmap2 = (Double) o2.get(0)[2]; //Double.parseDouble((String) o2.get(0)[2]); 
+				if (lmap1 > lmap2)
+					return -1;
+				else if (lmap1 < lmap2)
+					return 1;
+			}
+				
+			return 0;
+		}
+
+    }
 
     public void evaluate() {
         try {
@@ -1360,7 +1378,7 @@ public class EvaluationUI3 extends JFrame {
 
             Object[][] evaData = null;
             if (result.size() > 1) {
-	            Hashtable compareHash = new Hashtable();
+//	            Hashtable compareHash = new Hashtable();
 
 //	            int j = 2;
 //	            for (; j < objData.length; j = j + 2) {
@@ -1395,21 +1413,27 @@ public class EvaluationUI3 extends JFrame {
 //	            }
 
 	            int j = 0;
+	            Vector<ArrayList<Object[]>> v = new Vector<ArrayList<Object[]>>();
 	            for (; j < objData.length; ++j) {
 	                ArrayList<Object[]> threeColl = new ArrayList<Object[]>();
 	                threeColl.add(objData[j]);
-	                compareHash.put(objData[j][2], threeColl);
+//	                compareHash.put(objData[j][0], threeColl);
+//	            	v.add(objData[j]);
+	                v.add(threeColl);
 	            }
-	            Vector v = new Vector(compareHash.keySet());
-	            Collections.sort(v, Collections.reverseOrder());
+//	            Vector v = new Vector(compareHash.keySet());
+//	            Collections.sort(v, Collections.reverseOrder());
+	            Collections.sort(v, new RowComparator());
 
 	            evaData = new Object[result.size()][];
 	            int sortIndex = 0;
 	            int colorCount = 0;
-	            for (Enumeration e = v.elements(); e.hasMoreElements();) {
-	                Object key = (Object) e.nextElement();
-	                ArrayList<Object[]> sortColl = (ArrayList<Object[]>) compareHash.get(key);
+//	            for (Enumeration e = v.elements(); e.hasMoreElements();) {
+//                Object key = (Object) e.nextElement();
+//                ArrayList<Object[]> sortColl = (ArrayList<Object[]>) compareHash.get(key);
+	            for (ArrayList<Object[]> sortColl : v) {
 	                evaData[sortIndex] = sortColl.get(0);
+	            	Object key = evaData[sortIndex][2];
 	                evaData[sortIndex][12] = Boolean.TRUE;
 
                 	String runName = (String)evaData[sortIndex][0];
