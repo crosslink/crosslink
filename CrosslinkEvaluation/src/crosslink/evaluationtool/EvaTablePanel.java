@@ -189,7 +189,7 @@ public class EvaTablePanel extends JPanel {
                 columnTitle[i] = this.evasTable.getColumnModel().getColumn(i).getHeaderValue().toString();
             }
             String rowdata;
-            BufferedWriter bw = new BufferedWriter(new FileWriter(csvFile, true));
+            BufferedWriter bw = new BufferedWriter(new FileWriter(csvFile, false));
             PrintWriter pw = new PrintWriter(bw);
             for (int j=0; j<this.evasTable.getColumnCount()-3; j++) {
                 pw.print(columnTitle[j] + ",");

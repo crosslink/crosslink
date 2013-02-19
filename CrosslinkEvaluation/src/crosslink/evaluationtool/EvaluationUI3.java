@@ -74,7 +74,7 @@ public class EvaluationUI3 extends JFrame {
     }
     private int langSelected = Data.LANGUAGE_ALL;
     
-    private int linkDirection = Data.LINK_CJKE;
+    private int linkDirection = Data.CJK_TO_ENGLISH;
     
     private boolean emphasizeTeam;
     private String emphasizeTeamName = "QUT";
@@ -1528,7 +1528,7 @@ public class EvaluationUI3 extends JFrame {
     }//GEN-LAST:event_jRadioLangAllActionPerformed
 	
 	private void jRadioLinkDirectionAllActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioLinkDirectionAllActionPerformed
-	    setLinkDirection(Data.LINK_CJKE);
+//	    setLinkDirection(Data.LINK_CJKE);
 	}//GEN-LAST:event_jRadioLinkDirectionAllActionPerformed
 
 	private void cbHighlightTeamActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbHighlightTeamActionPerformed

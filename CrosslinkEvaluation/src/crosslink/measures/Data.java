@@ -23,7 +23,7 @@ public class Data {
     
     public static final int ENGLISH_TO_CJK = 1;
     public static final int CJK_TO_ENGLISH = 2;
-    public static final int LINK_CJKE = 3;
+//    public static final int LINK_CJKE = 3;
     
     public static final int LANGUAGE_CHINESE = 2;
     public static final int LANGUAGE_JAPANESE = 4;
