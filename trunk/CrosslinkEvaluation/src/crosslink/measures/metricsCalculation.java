@@ -524,7 +524,8 @@ public final class metricsCalculation extends Data {
                     } else if (runItems.length <= pAtValue[1]) {
                         if ((i + 1) == pAtValue[0]) {
                             if (key.endsWith(outgoingTag)) {
-                                outgoingPrecsAt[0] += (double) mCount / (i + 1);
+                            	precisionAt5.add(new TopicScore(topicId, (double) mCount / (i + 1)));
+//                                outgoingPrecsAt[0] += (double) mCount / (i + 1);
                             } else if (key.endsWith(incomingTag)) {
                                 incomingPrecsAt[0] += (double) mCount / (i + 1);
                             }
@@ -532,10 +533,10 @@ public final class metricsCalculation extends Data {
                         } else {
                             if ((i + 1) == runItems.length) {
                                 if (key.endsWith(outgoingTag)) {
+//                                	precisionAt5.add(new TopicScore(topicId, (double) mCount / pAtValue[1]));
+                                	precisionAt10.add(new TopicScore(topicId, (double) mCount / pAtValue[2]));                                 	
 //                                    outgoingPrecsAt[1] += (double) mCount / pAtValue[1];
-//                                    outgoingPrecsAt[2] += (double) mCount / pAtValue[2];
-                                	precisionAt5.add(new TopicScore(topicId, (double) mCount / pAtValue[0]));
-                                	precisionAt10.add(new TopicScore(topicId, (double) mCount / pAtValue[1]));                                      
+                                    outgoingPrecsAt[2] += (double) mCount / pAtValue[2];                                     
                                     outgoingPrecsAt[3] += (double) mCount / pAtValue[3];
                                     outgoingPrecsAt[4] += (double) mCount / pAtValue[4];
                                     outgoingPrecsAt[5] += (double) mCount / pAtValue[5];

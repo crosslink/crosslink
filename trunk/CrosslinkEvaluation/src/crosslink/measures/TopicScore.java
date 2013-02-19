@@ -5,6 +5,10 @@ public class TopicScore {
 	double score;
 	
 	public TopicScore(String topicId, double score) {
+		// DEBUG
+		if (topicId.equals("961283"))
+			System.err.println("Got you");
+		
 		this.topicId = topicId;
 		this.score = score;
 	}
