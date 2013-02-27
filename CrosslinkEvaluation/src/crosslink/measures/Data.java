@@ -41,8 +41,8 @@ public class Data {
     
     // -------------------------------------------------------------------------
     // define the number of links accepted in Incoming & Outgoing
-    protected static boolean useRestrictedNum = false;
-    protected static int limitedOutLinks = 50;
+    protected static boolean useRestrictedNum = true;
+    protected static int limitedOutLinks = 1250;
     protected static int limitedInLinks = 250;
     
     protected static boolean isUseAllTopics = false;

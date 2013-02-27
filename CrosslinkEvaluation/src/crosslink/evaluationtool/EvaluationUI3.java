@@ -203,7 +203,7 @@ public class EvaluationUI3 extends JFrame {
         add(jRBonlysubmitted);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("NTCIR 10: Crosslink Evaluation Tool"); // NOI18N
+        setTitle("NTCIR 10: Crosslink Evaluation Tool - V6.0"); // NOI18N
 
         openfilesButton.setText("Open Files");
         openfilesButton.addActionListener(new java.awt.event.ActionListener() {

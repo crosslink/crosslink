@@ -94,7 +94,7 @@
   </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
-    <Property name="title" type="java.lang.String" value="NTCIR 10: Crosslink Evaluation Tool" noResource="true"/>
+    <Property name="title" type="java.lang.String" value="NTCIR 10: Crosslink Evaluation Tool - V6.0" noResource="true"/>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="menuBar" type="java.lang.String" value="fileMenuBar"/>

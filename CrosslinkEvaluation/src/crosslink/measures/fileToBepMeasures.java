@@ -443,7 +443,7 @@ public final class fileToBepMeasures extends Measures {
 	                                // runBepSetV.size() cannot be 0
 	                                if (bepDenominator <= 0) {
 	                                    if (runBepSetV.size() != 0) {
-	                                        int Denominator = runBepSetV.size(); //resultBeps.size() > 5 ? 5 : resultBeps.size(); 
+	                                        int Denominator = Math.min(5, runBepSetV.size()); //resultBeps.size() > 5 ? 5 : resultBeps.size(); 
 	                                        anchorScore += (double) bepScore / Denominator;
 	                                    }
 	                                } else {
@@ -468,7 +468,7 @@ public final class fileToBepMeasures extends Measures {
                         // to prevent from producing funny result
 //                         aTopicAvePrecision = (double) APinR / rsAnchorNoPerTopic;
 //                        aTopicAvePrecision = (double) APinR / anchorCounter;
-                        int N = Math.min(250, resultSet.length);
+                        int N = Math.min(250, resultLinks.size()/*resultSet.length*/);
 //                        log("N: " + N);
                         aTopicAvePrecision = (double) APinR / N;
 
@@ -741,7 +741,8 @@ public final class fileToBepMeasures extends Measures {
 	                            if (isMatched) {
 	                                if (bepDenominator == 0) {
 	                                    if (bepSetV.size() != 0) {
-	                                        int Denominator = bepSetV.size();
+	                                        int Denominator;
+	                                        Denominator = Math.min(5, bepSetV.size());
 	                                        anchorScore += (double) bepScore / Denominator;   // score for each Anchor
 	                                    }
 	                                } else {
@@ -752,7 +753,7 @@ public final class fileToBepMeasures extends Measures {
 	                        }
                         }
 
-                        int N = Math.max(250, resultSet.length);
+                        int N = Math.min(250, resultLinks.size()/*resultSet.length*/);
                         outgoingRPrecs += (double) anchorScore / N;
 //                        outgoingRPrecs += (double) anchorScore / Rvalue;
 
@@ -1029,7 +1030,7 @@ public final class fileToBepMeasures extends Measures {
 	                            if (isMatched) {
 	                                if (bepDenominator <= 0) {
 	                                    if (bepSetV.size() != 0) {
-	                                        int Denominator =  bepSetV.size(); //resultBeps.size() > 5 ? 5 : resultBeps.size();
+	                                        int Denominator =  Math.min(5, bepSetV.size()); //resultBeps.size() > 5 ? 5 : resultBeps.size();
 	                                        anchorScore += (double) bepScore / Denominator;   // score for each Anchor
 	                                    }
 	                                } else {
