@@ -17,6 +17,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.text.DecimalFormat;
 import java.text.MessageFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -222,7 +223,9 @@ public class EvaTablePanel extends JPanel {
             	
                 for (int l=start; l < (end + 1)/*this.evasTable.getColumnCount()-3*/; l++) {
                     rowdata = this.evasTable.getValueAt(k, l).toString();
-                    pw.print("," + rowdata);
+                    DecimalFormat df = new DecimalFormat("0.000");
+                    String result = df.format(Double.valueOf(rowdata));
+                    pw.print("," + result);
                 }
                 pw.println("");
             }

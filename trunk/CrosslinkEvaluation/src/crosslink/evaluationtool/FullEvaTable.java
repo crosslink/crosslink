@@ -23,7 +23,8 @@ public class FullEvaTable extends JDialog {
         initComponents();
         this.etParent = parent;
         
-        jButtonExportCSV.setVisible(false);
+//        jButtonExportCSV.setVisible(false);
+        jButton1.setVisible(false);
     }
     
     /** This method is called from within the constructor to

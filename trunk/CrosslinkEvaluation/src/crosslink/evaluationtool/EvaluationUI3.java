@@ -1490,7 +1490,6 @@ public class EvaluationUI3 extends JFrame {
             // -----------------------------------------------------------------
 
             realEvaTablePanel.evaluateRunsToTable(evaData, useAnchorGToBEP ? Data.pAtValue_A2F : Data.pAtValue);
-            realEvaTablePanel.exportEvaTableToCSV();
         } catch (Exception ex) {
             ex.printStackTrace();
 //            JOptionPane.showMessageDialog(this, ex.toString(), "Exception Board", JOptionPane.ERROR_MESSAGE);
