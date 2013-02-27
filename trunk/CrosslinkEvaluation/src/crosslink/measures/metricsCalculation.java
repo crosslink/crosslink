@@ -201,6 +201,17 @@ public final class metricsCalculation extends Data {
                  * Recall = Relevant Documents Retrieved / Total Relevant Docuements
                  */
                 int k = 0;
+                int rsNumber = 0;
+                if (useRestrictedNum) {
+                    if (key.endsWith("Outgoing_Links")) {
+                        rsNumber = Math.min(limitedOutLinks, resultSet.length);
+                    } else if (key.endsWith("Incoming_Links")) {
+                        rsNumber = Math.min(limitedInLinks, resultSet.length);
+                    }
+                } 
+                else
+                	rsNumber = resultSet.length;
+                
                 List relData = new ArrayList();
                 for (int i = 0; i < runValues.length; i++) {
                     String link = runValues[i].trim();
@@ -212,7 +223,7 @@ public final class metricsCalculation extends Data {
                         k = k + 1;
                         // To caculate Average Precision for each topic
                         boolean isMatched = false;
-                        for (int j = 0; j < resultSet.length; j++) {
+                        for (int j = 0; j < rsNumber; j++) {
                             // To find out if a RUN link in the Result Set (links)
                             if (link.equalsIgnoreCase(resultSet[j].trim())) {
                                 isMatched = true;
@@ -235,17 +246,17 @@ public final class metricsCalculation extends Data {
                 //     and this Number may be meaningless
                 // Here, we temporarily use "anchorCounter" in Run to replace it
                 // to prevent from producing funny result
-                if (useRestrictedNum) {
-                    if (key.endsWith("Outgoing_Links")) {
-                        int rsNumber = Math.min(limitedOutLinks, resultSet.length);
-                        aTopicAvePrecision = (double) APinR / (rsNumber);
-                    } else if (key.endsWith("Incoming_Links")) {
-                        int rsNumber = Math.min(limitedInLinks, resultSet.length);
-                        aTopicAvePrecision = (double) APinR / (rsNumber);
-                    }
-                } else {
-                    aTopicAvePrecision = (double) APinR / (resultSet.length);
-                }
+//                if (useRestrictedNum) {
+//                    if (key.endsWith("Outgoing_Links")) {
+//                        int rsNumber = Math.min(limitedOutLinks, resultSet.length);
+//                        aTopicAvePrecision = (double) APinR / (rsNumber);
+//                    } else if (key.endsWith("Incoming_Links")) {
+//                        int rsNumber = Math.min(limitedInLinks, resultSet.length);
+//                        aTopicAvePrecision = (double) APinR / (rsNumber);
+//                    }
+//                } else {
+                  aTopicAvePrecision = (double) APinR / (rsNumber);
+//                }
                 // =============================================================
                 if (key.endsWith("Outgoing_Links")) {
                     outgoingHt.put(key.substring(0, key.indexOf("_Outgoing_Links")), relData.size());
