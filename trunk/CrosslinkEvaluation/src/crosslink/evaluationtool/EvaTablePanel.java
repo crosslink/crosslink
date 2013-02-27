@@ -181,24 +181,48 @@ public class EvaTablePanel extends JPanel {
     }
     
     void exportEvaTableToCSV() {
+    	exportPatNCSV();
+    	exportLmapCSV();
+    }
+    
+    void exportPatNCSV() {
+        String fileNamePatN = "EvaluationTable_" + evaluationTypeStr/*this.getNow("MMddmmss")*/ + "_PatN.CSV";
+        exportCSV(fileNamePatN, 4, 9);
+    }
+    
+    void exportLmapCSV() {
+        String fileNameLmap = "EvaluationTable_" + evaluationTypeStr/*this.getNow("MMddmmss")*/ + "_LMAP.CSV";
+        exportCSV(fileNameLmap, 2, 3);
+    }
+    
+    void exportCSV(String fileName, int start, int end) {
         try {
-            String fileName = "EvaluationTable_" + evaluationTypeStr/*this.getNow("MMddmmss")*/ + ".CSV";
             File csvFile = new File(fileName);
-            String[] columnTitle = new String[this.evasTable.getColumnCount()];
-            for (int i=0; i<this.evasTable.getColumnCount(); i++) {
-                columnTitle[i] = this.evasTable.getColumnModel().getColumn(i).getHeaderValue().toString();
+            int count = 1; 
+            int span = end - start + 1;
+            
+            String[] columnTitle = new String[span + 1];  //new String[this.evasTable.getColumnCount()];
+            columnTitle[0] = this.evasTable.getColumnModel().getColumn(0).getHeaderValue().toString();
+
+            for (int i=start; i < (end + 1) && i < this.evasTable.getColumnCount(); i++) {
+                columnTitle[count++] = this.evasTable.getColumnModel().getColumn(i).getHeaderValue().toString();
             }
             String rowdata;
             BufferedWriter bw = new BufferedWriter(new FileWriter(csvFile, false));
             PrintWriter pw = new PrintWriter(bw);
-            for (int j=0; j<this.evasTable.getColumnCount()-3; j++) {
-                pw.print(columnTitle[j] + ",");
+            for (int j=0; j < columnTitle.length/*this.evasTable.getColumnCount()-3*/; j++) {
+            	if (j > 0)
+            		pw.print(",");
+                pw.print(columnTitle[j]);
             }
             pw.println("");
             for (int k=0; k<this.evasTable.getRowCount(); k++) {
-                for (int l=0; l<this.evasTable.getColumnCount()-3; l++) {
+            	rowdata = this.evasTable.getValueAt(k, 0).toString();
+            	pw.print(rowdata);
+            	
+                for (int l=start; l < (end + 1)/*this.evasTable.getColumnCount()-3*/; l++) {
                     rowdata = this.evasTable.getValueAt(k, l).toString();
-                    pw.print(rowdata + ",");
+                    pw.print("," + rowdata);
                 }
                 pw.println("");
             }
