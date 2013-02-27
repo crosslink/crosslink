@@ -22,6 +22,8 @@ public class FullEvaTable extends JDialog {
         super(parent, true);
         initComponents();
         this.etParent = parent;
+        
+        jButtonExportCSV.setVisible(false);
     }
     
     /** This method is called from within the constructor to
@@ -200,7 +202,7 @@ public class FullEvaTable extends JDialog {
     }//GEN-LAST:event_etcloseButtonActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        ((EvaluationUI3)etParent).evaluate();
+        ((EvaluationUI3)etParent).createPlot();
     }//GEN-LAST:event_jButton1ActionPerformed
     
     void setTable(EvaTablePanel etp){

@@ -758,10 +758,6 @@ public class EvaluationUI3 extends JFrame {
     
     private String genEvaluationTypeString() {
         StringBuffer evaluationTypeStr = new StringBuffer();
-        if (ResultSetManager.getInstance().getEveluationType() == ResultSetManager.A2B_WIKI_MANUAL)
-        	evaluationTypeStr.append("MA-");
-        else
-        	evaluationTypeStr.append("GT-");
         
         String cjkLang;
         if (langSelected == Data.LANGUAGE_JAPANESE)
@@ -779,6 +775,12 @@ public class EvaluationUI3 extends JFrame {
         	evaluationTypeStr.append("E2" + cjkLang );
         }
         
+        if (ResultSetManager.getInstance().getEveluationType() == ResultSetManager.A2B_WIKI_MANUAL)
+        	evaluationTypeStr.append("-MA");
+        else
+        	evaluationTypeStr.append("-GT");
+        
+        
         if (this.jRBAnchorToBEP.getModel().isSelected() || this.jRBAnchorToFile.getModel().isSelected()) {
             evaluationTypeStr.append("-A2F");
         } else {
@@ -788,7 +790,7 @@ public class EvaluationUI3 extends JFrame {
         return evaluationTypeStr.toString();
     }
     
-    private void createPlot() {
+    public void createPlot() {
             boolean useAllTopics = true;
             boolean useFileToBep = false;
             boolean useAnchorToFile = false;
@@ -892,7 +894,7 @@ public class EvaluationUI3 extends JFrame {
                     plotTitle = new String[]{"InteP-R Curve: Combination"};
                 } else if (incommingPlotData.isEmpty() && combinationPlotData.isEmpty()) {
                     plotDatas = new Vector[]{outgoingPlotData};
-                    plotTitle = new String[]{"Interpolated Precision-Recall"};
+                    plotTitle = new String[]{"Interpolated Precision-Recall (" + this.genEvaluationTypeString().replace("-", " ") + ")"};
                 } else if (outgoingPlotData.isEmpty() && combinationPlotData.isEmpty()) {
                     plotDatas = new Vector[]{incommingPlotData};
                     plotTitle = new String[]{"InteP-R Curve: Incoming"};
@@ -924,7 +926,7 @@ public class EvaluationUI3 extends JFrame {
                     jplot.showPlot();
 
                     // Export Selected Row Data to .CSV
-                    this.exportPlotDatatoCSV(plotTitle[j], cool_data_points, this.genEvaluationTypeString());
+                    this.exportPlotDatatoCSV(plotTitle[j].replace("(", "").replace(")", "").trim().replace(" ", "-"), cool_data_points, "");
                     // End of Export to .CSV
 
 //                    Point ploca = this.getLocation();
@@ -1487,7 +1489,8 @@ public class EvaluationUI3 extends JFrame {
             // =================================================================
             // -----------------------------------------------------------------
 
-            this.realEvaTablePanel.evaluateRunsToTable(evaData, useAnchorGToBEP ? Data.pAtValue_A2F : Data.pAtValue);
+            realEvaTablePanel.evaluateRunsToTable(evaData, useAnchorGToBEP ? Data.pAtValue_A2F : Data.pAtValue);
+            realEvaTablePanel.exportEvaTableToCSV();
         } catch (Exception ex) {
             ex.printStackTrace();
 //            JOptionPane.showMessageDialog(this, ex.toString(), "Exception Board", JOptionPane.ERROR_MESSAGE);
