@@ -180,7 +180,7 @@ public class EvaTablePanel extends JPanel {
         }
     }
     
-    void exportEvaTableToCSV() {
+    public void exportEvaTableToCSV() {
     	exportPatNCSV();
     	exportLmapCSV();
     }
