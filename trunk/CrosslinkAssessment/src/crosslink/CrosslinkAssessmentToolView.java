@@ -3,11 +3,8 @@
  */
 package crosslink;
 
-import java.awt.Color;
-import java.awt.Insets;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import java.awt.event.WindowListener;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.text.BadLocationException;
@@ -18,46 +15,24 @@ import org.jdesktop.application.FrameView;
 
 import crosslink.AppResource;
 import crosslink.Assessment;
-import crosslink.assessment.AssessedAnchor;
 import crosslink.assessment.AssessmentThread;
-import crosslink.assessment.Bep;
-import crosslink.assessment.CurrentFocusedAnchor;
-import crosslink.assessment.IndexedAnchor;
 import crosslink.assessment.CrosslinkAssessmentToolControler;
-import crosslink.font.AdjustFont;
-import crosslink.listener.CaretListenerLabel;
-import crosslink.listener.linkPaneMouseListener;
 import crosslink.listener.topicPaneMouseListener;
-import crosslink.parsers.FOLTXTMatcher;
 import crosslink.parsers.PoolerManager;
 import crosslink.parsers.ResourcesManager;
-import crosslink.parsers.Xml2Html;
 import crosslink.utility.ObservableSingleton;
 import crosslink.utility.PoolUpdater;
 import crosslink.utility.fieldUpdateObserver;
 import crosslink.utility.highlightPainters;
-import crosslink.view.Link;
-import crosslink.view.ScreenAnchor;
 import crosslink.view.TopicHighlightManager;
-import crosslink.wiki.WikiArticleXml;
-
 import java.io.File;
-import java.util.ArrayList;
-import java.util.Hashtable;
-import java.util.Iterator;
-import java.util.Map.Entry;
-import java.util.Set;
 import java.util.Vector;
 import javax.swing.ButtonGroup;
 import javax.swing.ImageIcon;
 import javax.swing.JDialog;
 import javax.swing.JFrame;
 
-import javax.swing.JOptionPane;
 import javax.swing.JTextPane;
-import javax.swing.text.Highlighter;
-// import Classes
-import javax.swing.text.Highlighter.Highlight;
 import javax.swing.text.Style;
 import javax.swing.text.StyleConstants;
 import javax.swing.text.StyledDocument;
@@ -329,6 +304,8 @@ public class CrosslinkAssessmentToolView extends FrameView {
         javax.swing.JMenuItem exitMenuItem = new javax.swing.JMenuItem();
         utilMenu = new javax.swing.JMenu();
         loadMenuItem = new javax.swing.JMenuItem();
+        jSeparator1 = new javax.swing.JPopupMenu.Separator();
+        jMenuItemNextTopic = new javax.swing.JMenuItem();
         linkMenu = new javax.swing.JMenu();
         outRadioBtn = new javax.swing.JRadioButtonMenuItem();
         inRadioBtn = new javax.swing.JRadioButtonMenuItem();
@@ -654,7 +631,7 @@ public class CrosslinkAssessmentToolView extends FrameView {
             .addGroup(mainPanelLayout.createSequentialGroup()
                 .addComponent(jInfoPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jSplitPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 731, Short.MAX_VALUE))
+                .addComponent(jSplitPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 737, Short.MAX_VALUE))
         );
 
         menuBar.setBackground(resourceMap.getColor("menuBar.background")); // NOI18N
@@ -684,6 +661,19 @@ public class CrosslinkAssessmentToolView extends FrameView {
         loadMenuItem.setText(resourceMap.getString("loadMenuItem.text")); // NOI18N
         loadMenuItem.setName("loadMenuItem"); // NOI18N
         utilMenu.add(loadMenuItem);
+
+        jSeparator1.setName("jSeparator1"); // NOI18N
+        utilMenu.add(jSeparator1);
+
+        jMenuItemNextTopic.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_N, java.awt.event.InputEvent.ALT_MASK));
+        jMenuItemNextTopic.setText(resourceMap.getString("jMenuItemNextTopic.text")); // NOI18N
+        jMenuItemNextTopic.setName("jMenuItemNextTopic"); // NOI18N
+        jMenuItemNextTopic.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemNextTopicActionPerformed(evt);
+            }
+        });
+        utilMenu.add(jMenuItemNextTopic);
 
         menuBar.add(utilMenu);
 
@@ -810,7 +800,7 @@ public class CrosslinkAssessmentToolView extends FrameView {
             statusPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(statusPanelSeparator, javax.swing.GroupLayout.DEFAULT_SIZE, 2347, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, statusPanelLayout.createSequentialGroup()
-                .addContainerGap(916, Short.MAX_VALUE)
+                .addContainerGap(871, Short.MAX_VALUE)
                 .addComponent(jLabel8)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jlblColorCurrentAnchor, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -941,6 +931,10 @@ public class CrosslinkAssessmentToolView extends FrameView {
 //        System.exit(0);
         CrosslinkAssessmentToolControler.getInstance().finishAssessment();
     }//GEN-LAST:event_exitMenuItemActionPerformed
+
+private void jMenuItemNextTopicActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemNextTopicActionPerformed
+    CrosslinkAssessmentToolControler.getInstance().assessNextTopic();
+}//GEN-LAST:event_jMenuItemNextTopicActionPerformed
     // </editor-fold>
 
     // <editor-fold defaultstate="collapsed" desc="Pre-Variables-Declaration">
@@ -961,10 +955,12 @@ public class CrosslinkAssessmentToolView extends FrameView {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JMenuItem jMenuItemNextTopic;
     private javax.swing.JMenu jMenuLang;
     private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItemJa;
     private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItemKo;
     private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItemZh;
+    private javax.swing.JPopupMenu.Separator jSeparator1;
     private javax.swing.JSplitPane jSplitPane1;
     private javax.swing.JLabel jlblColorCurrentAnchor;
     private javax.swing.JLabel jlblColorIncomplete;

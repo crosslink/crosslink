@@ -24,7 +24,7 @@
               <Group type="102" alignment="0" attributes="0">
                   <Component id="jInfoPanel" min="-2" pref="87" max="-2" attributes="0"/>
                   <EmptySpace min="-2" max="-2" attributes="0"/>
-                  <Component id="jSplitPane1" pref="731" max="32767" attributes="0"/>
+                  <Component id="jSplitPane1" pref="737" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -555,6 +555,23 @@
                 <Property name="name" type="java.lang.String" value="loadMenuItem" noResource="true"/>
               </Properties>
             </MenuItem>
+            <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator1">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="jSeparator1" noResource="true"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemNextTopic">
+              <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Alt+N"/>
+                </Property>
+                <Property name="text" type="java.lang.String" resourceKey="jMenuItemNextTopic.text"/>
+                <Property name="name" type="java.lang.String" value="jMenuItemNextTopic" noResource="true"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItemNextTopicActionPerformed"/>
+              </Events>
+            </MenuItem>
           </SubComponents>
         </Menu>
         <Menu class="javax.swing.JMenu" name="linkMenu">
@@ -667,7 +684,7 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Component id="statusPanelSeparator" alignment="0" pref="2347" max="32767" attributes="0"/>
               <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace pref="916" max="32767" attributes="0"/>
+                  <EmptySpace pref="871" max="32767" attributes="0"/>
                   <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jlblColorCurrentAnchor" linkSize="1" min="-2" pref="110" max="-2" attributes="0"/>
