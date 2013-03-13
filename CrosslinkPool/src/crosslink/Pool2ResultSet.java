@@ -55,7 +55,7 @@ public class Pool2ResultSet {
     private static void populateTopicOutInData(String poolFileDir) {
 
         File poolFDir = new File(poolFileDir);
-        File[] poolFiles;
+        File[] poolFiles = null;
         if (poolFDir.exists()) {
 	        if (poolFDir.isDirectory()) {
 	            poolFiles = poolFDir.listFiles();
@@ -73,14 +73,14 @@ public class Pool2ResultSet {
 
                 VTDGen vg = new VTDGen();
                 if (vg.parseFile(thisPoolFPath, true)) {
-                    FileOutputStream fos = null;
+//                    FileOutputStream fos = null;
                     try {
                         VTDNav vn = vg.getNav();
-                        File fo = new File(thisPoolFPath);
-                        fos = new FileOutputStream(fo);
+//                        File fo = new File(thisPoolFPath);
+//                        fos = new FileOutputStream(fo);
 
                         AutoPilot ap = new AutoPilot(vn);
-                        XMLModifier xm = new XMLModifier(vn);
+//                        XMLModifier xm = new XMLModifier(vn);
                         // -------------------------------------------------
                         String fileTxt = "";
                         String nameTxt = "";
@@ -114,10 +114,10 @@ public class Pool2ResultSet {
                                 String aNameTxt = vn.toRawString(k1).trim().toString();
                                 String aOffsetTxt = vn.toRawString(l1).trim().toString();
                                 String aLengthTxt = vn.toRawString(m1).trim().toString();
-                                if (aRelTxt.equals("1")) {
-                                    pAnchorSet.add(new String[]{aOffsetTxt, aLengthTxt, aNameTxt});
-                                    log(aRelTxt + " - " + aOffsetTxt + " - " + aLengthTxt + " - " + aNameTxt);
-                                }
+//                                if (aRelTxt.equals("1")) {
+                                pAnchorSet.add(new String[]{aOffsetTxt, aLengthTxt, aNameTxt});
+                                log(aRelTxt + " - " + aOffsetTxt + " - " + aLengthTxt + " - " + aNameTxt);
+//                                }
                             }
                         }
                         // -------------------------------------------------
@@ -196,21 +196,27 @@ public class Pool2ResultSet {
                         }
                         topicInData.put(fileTxt, myTIncomingData);
                         // =================================================
-                        xm.output(fos);
-                        fos.close();
-                    } catch (IOException ex) {
+//                        xm.output(fos);
+//                        fos.close();
+                    } 
+//                    catch (IOException ex) {
+//                        Logger.getLogger(Pool2ResultSet.class.getName()).log(Level.SEVERE, null, ex);
+//                    } 
+//                    catch (TranscodeException ex) {
+//                        Logger.getLogger(Pool2ResultSet.class.getName()).log(Level.SEVERE, null, ex);
+//                    } 
+                    catch (XPathEvalException ex) {
                         Logger.getLogger(Pool2ResultSet.class.getName()).log(Level.SEVERE, null, ex);
-                    } catch (TranscodeException ex) {
+                    } 
+                    catch (NavException ex) {
                         Logger.getLogger(Pool2ResultSet.class.getName()).log(Level.SEVERE, null, ex);
-                    } catch (XPathEvalException ex) {
+                    } 
+                    catch (XPathParseException ex) {
                         Logger.getLogger(Pool2ResultSet.class.getName()).log(Level.SEVERE, null, ex);
-                    } catch (NavException ex) {
-                        Logger.getLogger(Pool2ResultSet.class.getName()).log(Level.SEVERE, null, ex);
-                    } catch (XPathParseException ex) {
-                        Logger.getLogger(Pool2ResultSet.class.getName()).log(Level.SEVERE, null, ex);
-                    } catch (ModifyException ex) {
-                        Logger.getLogger(Pool2ResultSet.class.getName()).log(Level.SEVERE, null, ex);
-                    }
+                    } 
+//                    catch (ModifyException ex) {
+//                        Logger.getLogger(Pool2ResultSet.class.getName()).log(Level.SEVERE, null, ex);
+//                    }
                 }
             }
         }
