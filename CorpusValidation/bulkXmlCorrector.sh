@@ -12,7 +12,7 @@ base=`pwd`
 corpus_home=$1
 target_path=$2
  
-LOG_FILE=errorfiles.log
+LOG_FILE=${cwd}/errorfiles.log
 
 \rm -rf $LOG_FILE
 
