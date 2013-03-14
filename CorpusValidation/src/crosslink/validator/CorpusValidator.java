@@ -72,6 +72,7 @@ public class CorpusValidator {
             
 //          	String[] arrFile = WildcardFiles.list(args[0]);
         int filecount = 0;
+        int errorcount = 0;
       	Stack<File> stack = null;
       	
       	for (String input : args) {
@@ -84,24 +85,36 @@ public class CorpusValidator {
                 	stack.addAll(Arrays.asList(WildcardFiles.getInstance().listSubfolderFiles(onefile)));
                 	continue;
                 }
-                System.err.println("validating " + onefile.getAbsolutePath() + "...");
+                System.err.print("validating " + onefile.getAbsolutePath() + "..., ");
                 errorHandler.setFilename(onefile.getAbsolutePath());
                 ++filecount;
                 try {
                 	inputfile = onefile.getCanonicalPath();
                 	Document document = builder.parse(new InputSource(inputfile)); //dom
+                    System.err.println("good");
 //                reader.parse(new InputSource(inputfile)); //SAX
                 	// do whatever you want with the input file...
                 }
-                catch (SAXException e) {
-                    e.printStackTrace();
-                } catch (IOException e) {
-					//recordError(inputfile, "IOException");
-					e.printStackTrace();
-                } 
+//                catch (SAXException e) {
+//                    e.printStackTrace();
+//                	++errorcount;
+//                	
+//                } 
+//                catch (IOException e) {
+//					e.printStackTrace();
+//                	++errorcount;
+//                }
+                catch (Exception e) {
+//                	System.err.println("bad");
+//                	System.err.println(e.toString());
+//                	e.printStackTrace();
+                	++errorcount;
+                }
             }
       	}
       	
-      	System.err.println("Xml file(s) validation finished: " + filecount);
+//      	System.err.println("Xml file(s) validation finished: " + filecount);
+      	if (errorcount > 0)
+      		System.exit(-1);
 	}
 }

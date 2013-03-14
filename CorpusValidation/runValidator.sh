@@ -1,5 +1,7 @@
 #!/bin/bash
 
+home=`dirname $0`
+
 cp=
 
 append_jars_to_cp() {
@@ -18,6 +20,6 @@ append_jars_to_cp() {
     done
 }
 
-append_jars_to_cp lib
+append_jars_to_cp ${home}/lib
 
-java -cp $cp:./bin crosslink.validator.CorpusValidator "$@"
+java -cp $cp:${home}/bin crosslink.validator.CorpusValidator "$@"
