@@ -19,6 +19,8 @@ import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
 
+import crosslink.utility.WildcardFiles;
+
 public class CorpusValidator {
 
 //	static boolean good = true;
@@ -28,7 +30,7 @@ public class CorpusValidator {
 	 */
 	public static void main(String[] args) {
 		if (args.length == 0) {
-			System.out.println("Usage: proram inputfile");
+			System.out.println("Usage: program inputfile");
 			System.exit(-1);
 		}
 		
@@ -76,7 +78,12 @@ public class CorpusValidator {
       	Stack<File> stack = null;
       	
       	for (String input : args) {
-          	stack = WildcardFiles.listFilesInStack(input, true);
+          	try {
+				stack = new WildcardFiles().listFilesInStack(input, true);
+			} catch (Exception e1) {
+				e1.printStackTrace();
+				System.exit(-2);
+			}
           	while (!stack.isEmpty())
             {
 //          		good = true;
