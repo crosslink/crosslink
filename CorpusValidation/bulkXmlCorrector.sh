@@ -55,7 +55,7 @@ do
     then
       mv -f ${tmp_good} ${dest_file}
     else
-      echo ${source_file} >$LOG_FILE_BAD  
+      echo ${source_file} >>$LOG_FILE_BAD  
     fi
   fi  
 done
