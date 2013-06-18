@@ -94,8 +94,11 @@ public class Topic<AnchorSet> extends WikiArticleXml {
 		if ((offset + length) > bytes.length)
 			return "EXCEEDED TOPIC LENGTH";
 		byte[] result = new byte[length];
-		System.arraycopy(bytes, offset, result, 0, length);
-		return new String(result, "UTF-8");
+		if (offset > -1 && length > 0) {
+			System.arraycopy(bytes, offset, result, 0, length);
+			return new String(result, "UTF-8");
+		}
+		return "";
 	}
 	
 	public String getAnchorWithCharacterOffset(int offset, int length) {
