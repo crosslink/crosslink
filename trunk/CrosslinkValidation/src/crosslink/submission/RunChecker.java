@@ -35,26 +35,19 @@ public class RunChecker {
 //			if (args[0].charAt(0) == '-') {
 				if (args[i].charAt(1) == 't') {
 					topicPath = args[++i];
-					if (!new File(topicPath).exists()) {
-						System.err.println("Incorrect topic path: " + topicPath);
-						usage();						
-					}
-					if (!topicPath.endsWith(File.separator))
-						topicPath = topicPath + File.separator;
-					AppResource.getInstance().setTopicPath(topicPath);
 //					i += 2;
 				}
-//				else if (args[i].charAt(1) == 'c') {
-//					corpusPath = args[++i];
-//					if (!new File(corpusPath).exists()) {
-//						System.err.println("Incorrect corpus path: " + corpusPath);
-//						usage();						
-//					}
-//					if (!corpusPath.endsWith(File.separator))
-//						corpusPath = corpusPath + File.separator;
-//					AppResource.corpusHome = corpusPath;
-////					i += 2;
-//				}
+				else if (args[i].charAt(1) == 'c') {
+					corpusPath = args[++i];
+					if (!new File(corpusPath).exists()) {
+						System.err.println("Incorrect corpus path: " + corpusPath);
+						usage();						
+					}
+					if (!corpusPath.endsWith(File.separator))
+						corpusPath = corpusPath + File.separator;
+					AppResource.corpusHome = corpusPath;
+//					i += 2;
+				}
 				else
 					usage();
 //			}
@@ -65,10 +58,19 @@ public class RunChecker {
 			System.err.println("Please specify the path for topics");
 			usage();
 		}
-/*		else if (corpusPath == null) {
-			System.err.println("Please specify the path for corpus");
-			usage();
-		}*/
+		else {
+			if (!new File(topicPath).exists()) {
+				System.err.println("Incorrect topic path: " + topicPath);
+				usage();						
+			}
+			if (!topicPath.endsWith(File.separator))
+				topicPath = topicPath + File.separator;
+			AppResource.getInstance().setTopicPath(topicPath);
+		}
+		
+		if (corpusPath == null) {
+			System.err.println("warining: no path specified for corpus, the target file won't be checked");
+		}
 			
 		for (; i < args.length; ++i) {
 			String file = args[i];
@@ -77,8 +79,8 @@ public class RunChecker {
 	}
 
 	private static void usage() {
-		System.err.println("Usage: program -c corpus_path -t topic_path run1 [run 2] [run 3] ...");
-		System.err.println("\t [corpus_path] is a path (folder) where all the directories (zh, en, ja, ko) of the Wikipedia collections located");
+		System.err.println("Usage: program -t topic_path [-c corpus_path] run1 [run 2] [run 3] ...");
+		System.err.println("\t Optional: [corpus_path] is a path (folder) where all the directories (zh, en, ja, ko) of the Wikipedia collections located");
 		System.exit(-1);	
 	}
 
