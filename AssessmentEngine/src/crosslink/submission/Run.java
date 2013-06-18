@@ -300,7 +300,7 @@ public class Run<AnchorSet>{
 			                                String tbFileID = tbXmlFileIDTextNode.getTextContent();
 			                                
 			                                //anchorToBEPV.add(new String[]{tbFileID, tbOffset, target_lang, target_title});
-			                                if (Target.exist(tbFileID, target_lang)) {
+			                                if (AppResource.corpusHome != null && Target.exist(tbFileID, target_lang)) {
 				                                target = new Target(target_lang, target_title, tbFileID, Integer.parseInt(tbOffset));
 				                                target.setParent(anchor);
 				                                target.setRank(m);

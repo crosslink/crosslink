@@ -72,10 +72,8 @@ public class ZHConverter {
 
 	    InputStream is = null;
 
-
 	    is = getClass().getResourceAsStream(propertyFile);
 
-		//File propertyFile = new File("C:/Temp/testMDB/TestTranslator/abc.txt");
 		if (is != null) {
 			BufferedReader reader = null;
 			try {
@@ -83,7 +81,6 @@ public class ZHConverter {
 				charMap.load(reader);
 			} catch (FileNotFoundException e) {
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			} finally {
 				try {

@@ -44,17 +44,17 @@ public class RunChecker {
 					AppResource.getInstance().setTopicPath(topicPath);
 //					i += 2;
 				}
-				else if (args[i].charAt(1) == 'c') {
-					corpusPath = args[++i];
-					if (!new File(corpusPath).exists()) {
-						System.err.println("Incorrect topic path: " + corpusPath);
-						usage();						
-					}
-					if (!corpusPath.endsWith(File.separator))
-						corpusPath = corpusPath + File.separator;
-					AppResource.corpusHome = corpusPath;
-//					i += 2;
-				}
+//				else if (args[i].charAt(1) == 'c') {
+//					corpusPath = args[++i];
+//					if (!new File(corpusPath).exists()) {
+//						System.err.println("Incorrect corpus path: " + corpusPath);
+//						usage();						
+//					}
+//					if (!corpusPath.endsWith(File.separator))
+//						corpusPath = corpusPath + File.separator;
+//					AppResource.corpusHome = corpusPath;
+////					i += 2;
+//				}
 				else
 					usage();
 //			}
@@ -65,10 +65,10 @@ public class RunChecker {
 			System.err.println("Please specify the path for topics");
 			usage();
 		}
-		else if (corpusPath == null) {
+/*		else if (corpusPath == null) {
 			System.err.println("Please specify the path for corpus");
 			usage();
-		}
+		}*/
 			
 		for (; i < args.length; ++i) {
 			String file = args[i];

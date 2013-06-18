@@ -222,10 +222,10 @@ public class XML2TXT {
 	static void usage() {
 		System.out.println("Usage: ");
 		System.out.println("	XML2TXT [-o:offset:length] input_xml");
-		System.out.println("		return the text with given offset and length.");
+		System.out.println("		return the text with the given offset and length.");
 		System.out.println("Or ");
 		System.out.println("	XML2TXT [-O:offset:length] input_xml");
-		System.out.println("		return the text with given character offset and length.");
+		System.out.println("		return the text with the given character offset and length.");
 		System.out.println("Or ");		
 		System.out.println("	XML2TXT input_xml");
 		System.out.println("		remove all the tags");
