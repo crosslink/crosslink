@@ -152,6 +152,11 @@ public class XML2TXT {
 	
 	public static String cleanAllTags(String fulltext)
 	{
+		return cleanAllTags(fulltext, false);
+	}
+	
+	public static String cleanAllTags(String fulltext, boolean replaceWithSpace)
+	{
 		StringBuffer sb = new StringBuffer();
 		int count = 0;
 		while (count < fulltext.length())
@@ -159,9 +164,13 @@ public class XML2TXT {
 			char ch = fulltext.charAt(count);
 			if (ch == '<')			// then remove the XML tags
 				{
-				while (fulltext.charAt(count++) != '>')
-					sb.append(' ');
-				sb.append(' '); // replace >
+				while (fulltext.charAt(count++) != '>') {
+					if (replaceWithSpace)
+						sb.append(' ');
+				}
+				
+				if (replaceWithSpace)
+					sb.append(' '); // replace >
 				}
 			else {
 				sb.append(ch);
@@ -171,7 +180,6 @@ public class XML2TXT {
 		return sb.toString();
 	}
 		
-	
 	private byte[] read(String xmlfile) {
 	    int size;
 	    byte[] bytes = null;
