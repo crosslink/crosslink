@@ -1,4 +1,5 @@
 package crosslink;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -302,12 +303,6 @@ public class XML2TXT {
  			// TODO Auto-generated catch block
 			e.printStackTrace();
  		}
-//		int count = 0;
-//		while (count < length) {
-//			System.out.print(new String(new byte[]{bytes[count + offset]}));
-//			++count;
-//		}
-		//System.out.print("\n");
 
 	}
 }
